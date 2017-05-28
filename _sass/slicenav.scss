@@ -1,0 +1,119 @@
+h2, h3, h4, h5 {color:#000; background:inherit;}
+
+h2 {font-size: 1.3em;}
+
+h3.small-head {font-style: italic;}
+
+p, td {margin-left: 1em; color: #000; font-weight: normal}
+li {margin-top: 0; margin-bottom: 0.25em; padding-top: 0; padding-bottom: 0;}
+li p {font-size: 1em; margin-top: 0; margin-bottom: 0; padding-top: 0; padding-bottom: 0}
+li li {font-size: 1em; margin-top: 0.25em;}
+
+dl.slicerefs {margin-left: 1em;}
+dl.slicerefs dd {margin-left: 1em;}
+
+abbr, acronym {border-bottom: dotted #ccc 1px; cursor: help}
+
+
+  
+  /* Underline headings with .section class */
+  
+h2 {
+border-bottom:thin solid #666666;
+display:block;
+padding-bottom:0.25em;
+}
+
+p.prefix {margin-bottom: 0.5em}
+
+/*masthead*/
+
+#masthead {
+    margin-top:-.5em; 
+    position: relative;
+    display: block;
+}
+
+p.collectiontitle {
+    text-align: right;
+    font-size: 135%; 
+    font-style: oblique;
+    color: #005A9C;
+    padding-top: .5em;
+}
+
+p.collectiontitle a{
+    text-decoration:none;
+    color:#005A9C;
+    border-bottom:dotted #585858 1px;/* glossary ref */
+    background-color: #FFFFFF;
+}
+
+p.collectiontitle a:hover, p.collectiontitle a:focus{
+text-decoration:none;
+color:#005A9C;
+border-bottom:dotted #585858 1px;/* glossary ref */
+background-color: inherit;
+}
+
+
+p.logo {
+  float: left;
+  margin: 0;
+  margin-bottom: .5em;
+}
+
+/* Skip nav styles from Liam */
+.skipnav {position: absolute; display: none; text-align: left; margin: 0; padding: 0} /*For all, including Opera. Display:none used to switch off the skip links for Opera users (it's redundant, Opera has excellent keyboard navigation)*/
+* html .skipnav {display: block} /*Switch on for IE6 and below*/
+*+html .skipnav {display: block} /*Switch on for IE7*/
+:root .skipnav {display: block} /*Switch on for Moz, FF and Safari*/
+.skipnav p {margin: 5px 0 0 0; padding: 0; position: absolute; font-size: 2em}
+.skipnav a {width: 26em; display:block; color: #fff; background: #333; text-decoration: none; padding: 5px; position: absolute; left: -1000em; top: 0; font-weight: bold}
+.skipnav a:visited {color: #fff}
+.skipnav a:focus, .skipnav a:active {z-index: 99; top: -3em; left: 0; border: solid #777 2px; color: #fff; background: #333 !important} /*Note IE bug that requires use of :active to mimic effect of :focus*/
+
+.skipnav a:hover {cursor: default}  
+
+
+.skiptarget {width: 1px; height: 1px; overflow: hidden; float: right} /*this seems to be the optimum implementation of a target*/
+
+/* Navigation styles originally from Eric Meyer */
+/* http://www.complexspiral.com/events/archive/2003/seybold/cssnav.html */
+/* Revised by Liam McGee */
+/* tabbed styles */
+#navigation {padding: 3px 0 0.5em 0; margin: 0 0.25em 0; border-bottom: 2px solid #778; float: left; width: 100%; clear: both;}
+#navigation li {list-style: none; margin: 0; display: inline; float: left; font-size: 0.8125em;}
+#navigation li a {padding: 3px 0.5em; margin-left: 3px; border: 1px solid #778; background: #dde; text-decoration: none; float: left}
+#navigation li a:link {color: #404040}
+#navigation li a:visited {color: #404040}
+#navigation li a:hover, #navigation li a:focus, #navigation li a:active {color: #000; background: #aae; border-color: #227; float: left}
+
+ /* page contents */
+.navtoc {float:right; margin: 1.25em 0 1em 1em; border: 1px solid #aab}
+div.navtoc p {color: #005a9c; font-size: 0.8125em; padding: 0.25em; margin: 0; font-weight: bold}
+
+/* page contents highlighting and border effects */
+#navbar {padding: 0; margin: 0; font-weight: bold; background: #fff}
+#navbar li {list-style: none; margin: 0; padding: 0; font-size: 0.75em}
+#navbar li a {display: block; margin: 0; padding: 0.25em; border-left: 1em solid #aab; text-decoration: none; width: 100%; color: #000; border-top: solid #ccc 1px; width: 12em}
+#navbar li a:hover, #navbar li a:focus, #navbar li a:active {border-color: #66c; color: #000; background: #eee}
+  
+  /* tabbed styles */
+#navigationbottom {padding: .5em 0 0 0; margin: 2em 0 10px 0; border-top: 2px solid #778; float: right; width: 100%;} /* top, right, bottom, left */
+#navigationbottom li {list-style: none; margin: 0; display: inline; float: left; font-size: 0.8125em;}
+#navigationbottom li a {padding: 3px 0.5em; margin-left: 3px; border: 1px solid #778; background: #dde; text-decoration: none; float: left}
+#navigationbottom li a:link {color: #404040}
+#navigationbottom li a:visited {color: #404040}
+#navigationbottom li a:hover, #navigationbottom li a:focus, #navigationbottom li a:active {color: #000; background: #aae; border-color: #227; float: left}
+
+div.footer {margin-top: 1em;}
+
+div.mainbody {margin: 0 0 0 0.5em;}
+
+hr.divider {display: none;}
+
+.div1 
+{
+  background: inherit;
+}

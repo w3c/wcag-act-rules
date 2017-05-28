@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+{% include rule-navigation.html %}
+
+{% include rule-toc.html navType="top" %}
+
+<div class="skiptarget"><a id="maincontent">-</a></div>
+
+<h1>{{ page.rule_id }}: {{ page.name }}</h1>
+
+<h2 id="disclaimer">
+  Important Information about 
+  <abbr title="Accessibility Conforance Test">ACT</abbr>
+  Rules
+</h2>
+
+<p>...</p>
+
+{% include rule-applicability.html %}
+
+{{ content }}
+
+{% include rule-navigation.html navType="bottom" %}

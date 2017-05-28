@@ -1,0 +1,22 @@
+<h2 id="applicability">Applicability</h2>
+
+<p>This conformance rule relates to:</p>
+
+<ul>
+  {% for critId in page.success_criterion %}
+    {% assign criterion = site.data.wcag2[critId] %}
+    <li>
+      <a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#{{ critId }}">
+        Success Criterion {{ criterion.num }} ({{ criterion.handle }})
+      </a>
+      <ul>
+        <li><a href="http://www.w3.org/WAI/WCAG20/quickref/20160105/#{{ critId }}">
+          How to Meet {{ criterion.num }} ({{ criterion.handle }})
+        </a></li>
+        <li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20161007/{{ critId }}.html">
+          Understanding Success Criterion {{ criterion.num }} ({{ criterion.handle }})
+        </a></li>
+      </ul>
+  </li>
+  {% endfor %}
+</ul>

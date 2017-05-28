@@ -1,0 +1,97 @@
+---
+layout: rule
+---
+<h1><a name="G1" id="G1"> </a>G1: Adding a link at the top of each page that goes directly to the main content area</h1>
+<div id="G1-disclaimer">
+   <h2>Important Information about Techniques</h2>
+   <p>See <a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20161007/understanding-techniques.html">Understanding Techniques for WCAG Success Criteria</a> for important information about the usage of these informative techniques and how they relate to the normative WCAG 2.0 success criteria. The Applicability section explains the scope of the technique, and the presence of techniques for a specific technology does not imply that the technology can be used in all situations to create content that meets WCAG 2.0.</p>
+</div>
+<div class="applicability">
+   <h2 id="G1-applicability">Applicability</h2>
+   <div class="textbody">
+      <p>All technologies that contain links</p>
+   </div>
+</div>
+<p class="referenced">This technique relates to:</p>
+<ul>
+   <li>
+      <a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#navigation-mechanisms-skip">
+      Success Criterion 2.4.1 (Bypass Blocks)</a>
+      <ul>
+         <li><a href="http://www.w3.org/WAI/WCAG20/quickref/20160105/#navigation-mechanisms-skip">
+            How to Meet 2.4.1 (Bypass Blocks)
+            </a>
+         </li>
+         <li><a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20161007/navigation-mechanisms-skip.html">
+            Understanding Success Criterion 2.4.1 (Bypass Blocks)
+            </a>
+         </li>
+      </ul>
+   </li>
+</ul>
+<h2 id="G1-description">Description</h2>
+<div class="textbody">
+   <p>The objective of this technique is to provide a mechanism to bypass blocks of material that are repeated on multiple Web pages by skipping directly to the main content of the Web page. The first interactive item in the Web page is a link to the beginning of the main content. Activating the link sets focus beyond the other content to the main content. This technique is most useful when a Web page has one main content area, rather than a set of content areas that are equally important, and when there are not multiple navigation sections on the page.</p>
+   <div class="note">
+      <p class="prefix"><em>Note: </em>It is preferable for links to be visible at all times, since users navigating via the keyboard include switch users, those using techniques that generate keyboard strokes slowly, screen magnification software users, screen reader users working with sighted colleagues, keyboard only users and those navigating using voice recognition software. However, <a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/#navigation-mechanisms-skip" class="gl-ref">Success Criterion 2.4.1</a> does not require that they be visible when they do not have focus, and links that are visible only when they have focus can meet this success criterion.</p>
+   </div>
+</div>
+<h2 class="small-head" id="G1-examples">Examples</h2>
+<h3 class="small-head" id="G1-ex1">Example 1: An online newspaper</h3>
+<div class="example">
+   <div class="textbody">
+      <p>An on-line newspaper contains many sections of information: a search function, a corporate banner, sidebars, minor stories, how to contact the newspaper, etc. The lead story is located in the middle of the page. The first link that the user reaches when tabbing through the page is titled "Skip to Lead Story". Activating the link moves visual focus to the story. Pressing tab again takes the user to the first link in the main story.</p>
+   </div>
+</div>
+<h3 class="small-head" id="G1-ex2">Example 2: A "Skip to main content" link</h3>
+<div class="example">
+   <div class="textbody">
+      <p>A Web page includes a variety of navigation techniques on each page: a bread crumb trail, a search tool, a site map, and a list of related resources. The first link on the page is titled "Skip to Main Content". A user activates the link to skip over the navigation tools.</p>
+   </div>
+</div>
+<h2 id="G1-resources">Resources</h2>
+<div class="textbody">
+   <p>Resources are for information purposes only, no endorsement implied.</p>
+   <ul>
+      <li>
+         <p>
+            <a href="http://www.jimthatcher.com/skipnav.htm">Skip Navigation Links</a>
+         </p>
+      </li>
+   </ul>
+</div>
+<h2 id="G1-related-techs">Related Techniques</h2>
+<div class="textbody">
+   <ul>
+      <li><a href="G123.html">G123: Adding a link at the beginning of a block of repeated content to go to the end of the block</a></li>
+      <li><a href="G124.html">G124: Adding links at the top of the page to each area of the content</a></li>
+   </ul>
+</div>
+<h2 id="G1-tests">Tests</h2>
+<div class="textbody">
+   <h3 class="small-head" id="G1-procedure">Procedure</h3>
+   <ol class="enumar">
+      <li>
+         <p>Check that a link is the first focusable control on the Web page.</p>
+      </li>
+      <li>
+         <p>Check that the description of the link communicates that it links to the main content.</p>
+      </li>
+      <li>
+         <p>Check that the link is either always visible or visible when it has keyboard focus.</p>
+      </li>
+      <li>
+         <p>Check that activating the link moves the focus to the main content.</p>
+      </li>
+      <li>
+         <p>Check that after activating the link, the keyboard focus has moved to the main content.</p>
+      </li>
+   </ol>
+   <h3 class="small-head" id="G1-results">Expected Results</h3>
+   <ul>
+      <li>
+         <p>All checks above are true.</p>
+      </li>
+   </ul>
+   <p>If this is a sufficient technique for a success criterion, failing this test procedure does not necessarily mean that the success criterion has not been satisfied in some other way, only that this technique has not been successfully implemented and can not be used to claim conformance.</p>
+</div>
