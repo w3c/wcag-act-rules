@@ -1,1 +1,36 @@
-<meta http-equiv="refresh" content="0; url=rules/ACT-R1.html" />
+---
+layout: default
+title: ACT Rules Overview (Demo)
+---
+
+<nav><ul id="navigation">
+  {% if include.navType == "bottom" %}
+  <li><strong>
+    <a href="#top">Top</a>
+  </strong></li>
+  {% endif %}
+  <li><strong>
+    <a href="/" title="Table of Contents">Contents</a>
+  </strong></li>
+  <!-- <li><strong>
+    <a href="/" title="Introduction to Techniques for WCAG 2.0"><abbr title="Introduction">Intro</abbr></a>
+  </strong></li> -->
+  <li>
+    <a href="/rules/ACT-R1.html"><strong>Next: </strong> ACT-R1</a>
+  </li>
+</ul></nav>
+
+<h1>ACT Rules Overview (Demo)</h1>
+
+{% include review-note.html %}
+
+<h2>ACT Rules</h2>
+
+<ul>
+  {% for rule in site.rules %}
+    <li><a href="{{ rule.url | prepend: site.baseurl }}">
+      <strong>{{ rule.rule_id }}</strong>: {{ rule.name }}
+    </a></li>
+  {% endfor %}
+</ul>
+

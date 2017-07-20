@@ -2,7 +2,7 @@
 rule_id: ACT-R1
 name: Proper use of aria-describedby
 test_mode: semi-automatic
-environment: Web Browser
+environment: Rendered page
 
 success_criterion:
 - text-equiv-all # 1.1.1
@@ -11,8 +11,8 @@ success_criterion:
 ## Description
 
 This test checks the sufficient provision of a long text description for elements using the `aria-describedby` attribute.
-
-## Background
+<!-- 
+### Background
 
 - [ARIA15: Using aria-describedby to provide descriptions of images](http://www.w3.org/TR/2014/NOTE-WCAG20-TECHS-20140916/ARIA15)
 - [G73: Providing a long description in another location with a link to it that is immediately adjacent to the non-text content](http://www.w3.org/TR/2014/NOTE-WCAG20-TECHS-20140916/G73)
@@ -20,6 +20,10 @@ This test checks the sufficient provision of a long text description for element
 - [G92: Providing long description for non-text content that serves the same purpose and presents the same information](http://www.w3.org/TR/2014/NOTE-WCAG20-TECHS-20140916/G92)
 - [F67: Failure of Success Criterion 1.1.1 and 1.2.1 due to providing long descriptions for non-text content that does not serve the same purpose or does not present the same information](http://www.w3.org/TR/2014/NOTE-WCAG20-TECHS-20140916/F67)
 - The proper provision of a short text alternative is checked in [SC1-1-1-text-alternative](SC1-1-1-text-alternative.html).
+ -->
+## Accessibility Requirements
+
+@@ TODO @@
 
 ## Assumptions
 
@@ -79,6 +83,8 @@ else return [step3-fail](#step3-fail)
 
 ## Outcomes
 
+<div class="collapsing" markdown="1" id="outcome-data">
+
 The resulting assertion is as follows,
 
 | Property | Value
@@ -87,7 +93,7 @@ The resulting assertion is as follows,
 | test     | auto-wcag:{{ page.rule_id }}
 | subject  | *the selected element*
 | mode     | auto-wcag:{{ page.test_mode }}
-| result   | <One TestResult from below>
+| result   | << One TestResult from below >>
 
 ### step1-fail
 
@@ -120,5 +126,23 @@ The resulting assertion is as follows,
 | type        | TestResult
 | outcome     | Failed
 | description | The long description provided using aria-describedby is not sufficiently descriptive.
+
+</div>
+
+## Changelog
+
+<div class="collapsing" markdown="1" id="changelog-area">
+
+...
+
+</div>
+
+## Implementtion Test Cases
+
+<div class="collapsing" markdown="1" id="testcases-area">
+
+...
+
+</div>
 
 [TXTALT]: ../pages/algorithms/text-alternative-compute.html

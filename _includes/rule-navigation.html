@@ -5,19 +5,29 @@
   </strong></li>
   {% endif %}
   <li><strong>
-    <a href="Overview.html#contents" title="Table of Contents">Contents</a>
+    <a href="/" title="Table of Contents">Contents</a>
   </strong></li>
-  <li><strong>
+  <!-- <li><strong>
     <a href="/" title="Introduction to Techniques for WCAG 2.0"><abbr title="Introduction">Intro</abbr></a>
-  </strong></li>
+  </strong></li> -->
   <li>
-    <a title="ACT-R1: Proper use of aria-describedby" href="/rules/ACT-R1.html">
-      <strong>Previous: </strong>Rule ACT-R1
-    </a>
+    {% if page.previous %}
+      <a href="{{ page.previous.url }}"
+        title="{{ page.previous.number }} {{ page.previous.name }}">
+        <strong>Previous: </strong>{{ page.previous.name }}
+      </a>
+    {% else %}
+      <a href="/"><strong>Previous: </strong> Overview</a>
+    {% endif %}
   </li>
   <li>
-    <a title="ACT-R2: Button has name" href="/rules/ACT-R2.html">
-      <strong>Next: </strong>Rule ACT-R2
-    </a>
+    {% if page.next %}
+      <a href="{{ page.next.url }}"
+        title="{{ page.next.number }} {{ page.next.name }}">
+        <strong>Next: </strong>{{ page.next.name }}
+      </a>
+    {% else %}
+      <a href="/"><strong>Next: </strong> Overview</a>
+    {% endif %}
   </li>
 </ul></nav>

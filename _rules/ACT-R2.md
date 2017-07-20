@@ -7,6 +7,9 @@ environment: DOM Structure
 success_criterion:
 - 4.1.2 # Name, Role, Value (Level A)
 
+previous: rules/ACT-R1
+next: rules/ACT-R3
+
 author:
 - Wilco Fiers
 ---
@@ -28,7 +31,7 @@ This test checks if every button element has a name.
 
 ### Selector
 
-Select all elements that match the following XPATH selector:
+Select all elements that match the following CSS selector:
 
     button
 
@@ -44,6 +47,8 @@ Else, return [step1-fail][#step1-fail]
 
 ## Outcomes
 
+<div class="collapsing" markdown="1" id="outcome-data">
+
 The resulting assertion is as follows,
 
 | Property | Value
@@ -52,7 +57,7 @@ The resulting assertion is as follows,
 | test     | auto-wcag:{{ page.rule_id }}
 | subject  | *the selected element*
 | mode     | {{ page.test_mode }}
-| result   | <One TestResult from below>
+| result   | << One TestResult from below >>
 
 ### step1-fail
 
@@ -70,12 +75,23 @@ The resulting assertion is as follows,
 | type        | TestResult
 | outcome     | Passed
 
-## Implementation Tests
-
-There are currently no tests
+</div>
 
 ## Change log
+
+<div class="collapsing" markdown="1" id="changelog-area">
 
 ### Version 1.1
 
 - Edit to fit revised format for rules
+
+</div>
+
+
+## Implementtion Test Cases
+
+<div class="collapsing" markdown="1" id="testcases-area">
+
+There are currently no tests
+
+</div>
