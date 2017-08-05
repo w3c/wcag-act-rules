@@ -1,6 +1,6 @@
 {
-  "text-equiv-all": {
-    "id": "WCAG2:text-equiv-all",
+  "1.1.1": {
+    "id": "text-equiv-all",
     "num": "1.1.1",
     "handle": "Non-text Content",
     "text": "All non-text content that is presented to the user has a text alternative that serves the equivalent purpose, except for the situations listed below.",
@@ -28,8 +28,8 @@
       }]
     }]
   },
-  "media-equiv-av-only-alt": {
-    "id": "WCAG2:media-equiv-av-only-alt",
+  "1.2.1": {
+    "id": "media-equiv-av-only-alt",
     "num": "1.2.1",
     "handle": "Audio-only and Video-only (Prerecorded)",
     "text": "For prerecorded audio-only and prerecorded video-only media, the following are true, except when the audio or video is a media alternative for text and is clearly labeled as such:",
@@ -45,78 +45,78 @@
       }]
     }]
   },
-  "media-equiv-captions": {
-    "id": "WCAG2:media-equiv-captions",
+  "1.2.2": {
+    "id": "media-equiv-captions",
     "num": "1.2.2",
     "handle": "Captions (Prerecorded)",
     "text": "Captions are provided for all prerecorded audio content in synchronized media, except when the media is a media alternative for text and is clearly labeled as such.",
     "level": "A"
   },
-  "media-equiv-audio-desc": {
-    "id": "WCAG2:media-equiv-audio-desc",
+  "1.2.3": {
+    "id": "media-equiv-audio-desc",
     "num": "1.2.3",
     "handle": "Audio Description or Media Alternative (Prerecorded)",
     "text": "An alternative for time-based media or audio description of the prerecorded video content is provided for synchronized media, except when the media is a media alternative for text and is clearly labeled as such.",
     "level": "A"
   },
-  "media-equiv-real-time-captions": {
-    "id": "WCAG2:media-equiv-real-time-captions",
+  "1.2.4": {
+    "id": "media-equiv-real-time-captions",
     "num": "1.2.4",
     "handle": "Captions (Live)",
     "text": "Captions are provided for all live audio content in synchronized media.",
     "level": "AA"
   },
-  "media-equiv-audio-desc-only": {
-    "id": "WCAG2:media-equiv-audio-desc-only",
+  "1.2.5": {
+    "id": "media-equiv-audio-desc-only",
     "num": "1.2.5",
     "handle": "Audio Description (Prerecorded)",
     "text": "Audio description is provided for all prerecorded video content in synchronized media.",
     "level": "AA"
   },
-  "media-equiv-sign": {
-    "id": "WCAG2:media-equiv-sign",
+  "1.2.6": {
+    "id": "media-equiv-sign",
     "num": "1.2.6",
     "handle": "Sign Language (Prerecorded)",
     "text": "Sign language interpretation is provided for all prerecorded audio content in synchronized media.",
     "level": "AAA"
   },
-  "media-equiv-extended-ad": {
-    "id": "WCAG2:media-equiv-extended-ad",
+  "1.2.7": {
+    "id": "media-equiv-extended-ad",
     "num": "1.2.7",
     "handle": "Extended Audio Description (Prerecorded)",
     "text": "Where pauses in foreground audio are insufficient to allow audio descriptions to convey the sense of the video, extended audio description is provided for all prerecorded video content in synchronized media.",
     "level": "AAA"
   },
-  "media-equiv-text-doc": {
-    "id": "WCAG2:media-equiv-text-doc",
+  "1.2.8": {
+    "id": "media-equiv-text-doc",
     "num": "1.2.8",
     "handle": "Media Alternative (Prerecorded)",
     "text": "An alternative for time-based media is provided for all prerecorded synchronized media and for all prerecorded video-only media.",
     "level": "AAA"
   },
-  "media-equiv-live-audio-only": {
-    "id": "WCAG2:media-equiv-live-audio-only",
+  "1.2.9": {
+    "id": "media-equiv-live-audio-only",
     "num": "1.2.9",
     "handle": "Audio-only (Live)",
     "text": "An alternative for time-based media that presents equivalent information for live audio-only content is provided.",
     "level": "AAA"
   },
-  "content-structure-separation-programmatic": {
-    "id": "WCAG2:content-structure-separation-programmatic",
+  "1.3.1": {
+    "id": "content-structure-separation-programmatic",
     "num": "1.3.1",
     "handle": "Info and Relationships",
     "text": "Information, structure, and relationships conveyed through presentation can be programmatically determined or are available in text.",
     "level": "A"
   },
-  "content-structure-separation-sequence": {
-    "id": "WCAG2:content-structure-separation-sequence",
+  "1.3.2": {
+    "id": "content-structure-separation-sequence",
     "num": "1.3.2",
     "handle": "Meaningful Sequence",
     "text": "When the sequence in which content is presented affects its meaning, a correct reading sequence can be programmatically determined.",
     "level": "A"
   },
-  "content-structure-separation-understanding": {
-    "id": "WCAG2:content-structure-separation-understanding",
+  "1.3.3": {
+    "id": "content-structure-separation-understanding",
     "num": "1.3.3",
     "handle": "Sensory Characteristics",
     "text": "Instructions provided for understanding and operating content do not rely solely on sensory characteristics of components such as shape, size, visual location, orientation, or sound.",
@@ -127,8 +127,8 @@
       "text": "For requirements related to color, refer to Guideline 1.4."
     }]
   },
-  "visual-audio-contrast-without-color": {
-    "id": "WCAG2:visual-audio-contrast-without-color",
+  "1.4.1": {
+    "id": "visual-audio-contrast-without-color",
     "num": "1.4.1",
     "handle": "Use of Color",
     "text": "Color is not used as the only visual means of conveying information, indicating an action, prompting a response, or distinguishing a visual element.",
@@ -139,8 +139,8 @@
       "text": "This success criterion addresses color perception specifically. Other forms of perception are covered in Guideline 1.3 including programmatic access to color and other visual presentation coding."
     }]
   },
-  "visual-audio-contrast-dis-audio": {
-    "id": "WCAG2:visual-audio-contrast-dis-audio",
+  "1.4.2": {
+    "id": "visual-audio-contrast-dis-audio",
     "num": "1.4.2",
     "handle": "Audio Control",
     "text": "If any audio on a Web page plays automatically for more than 3 seconds, either a mechanism is available to pause or stop the audio, or a mechanism is available to control audio volume independently from the overall system volume level.",
@@ -151,8 +151,8 @@
       "text": "Since any content that does not meet this success criterion can interfere with a user's ability to use the whole page, all content on the Web page (whether or not it is used to meet other success criteria) must meet this success criterion. See Conformance Requirement 5: Non-Interference."
     }]
   },
-  "visual-audio-contrast-contrast": {
-    "id": "WCAG2:visual-audio-contrast-contrast",
+  "1.4.3": {
+    "id": "visual-audio-contrast-contrast",
     "num": "1.4.3",
     "handle": "Contrast (Minimum)",
     "text": "The visual presentation of text and images of text has a contrast ratio of at least 4.5:1, except for the following:",
@@ -171,15 +171,15 @@
       }]
     }]
   },
-  "visual-audio-contrast-scale": {
-    "id": "WCAG2:visual-audio-contrast-scale",
+  "1.4.4": {
+    "id": "visual-audio-contrast-scale",
     "num": "1.4.4",
     "handle": "Resize text",
     "text": "Except for captions and images of text, text can be resized without assistive technology up to 200 percent without loss of content or functionality.",
     "level": "AA"
   },
-  "visual-audio-contrast-text-presentation": {
-    "id": "WCAG2:visual-audio-contrast-text-presentation",
+  "1.4.5": {
+    "id": "visual-audio-contrast-text-presentation",
     "num": "1.4.5",
     "handle": "Images of Text",
     "text": "If the technologies being used can achieve the visual presentation, text is used to convey information rather than images of text except for the following:",
@@ -199,8 +199,8 @@
       "text": "Logotypes (text that is part of a logo or brand name) are considered essential."
     }]
   },
-  "visual-audio-contrast7": {
-    "id": "WCAG2:visual-audio-contrast7",
+  "1.4.6": {
+    "id": "visual-audio-contrast7",
     "num": "1.4.6",
     "handle": "Contrast (Enhanced)",
     "text": "The visual presentation of text and images of text has a contrast ratio of at least 7:1, except for the following:",
@@ -219,8 +219,8 @@
       }]
     }]
   },
-  "visual-audio-contrast-noaudio": {
-    "id": "WCAG2:visual-audio-contrast-noaudio",
+  "1.4.7": {
+    "id": "visual-audio-contrast-noaudio",
     "num": "1.4.7",
     "handle": "Low or No Background Audio",
     "text": "For prerecorded audio-only content that (1) contains primarily speech in the foreground, (2) is not an audio CAPTCHA or audio logo, and (3) is not vocalization intended to be primarily musical expression such as singing or rapping, at least one of the following is true:",
@@ -243,8 +243,8 @@
       "text": "Per the definition of \"decibel,\" background sound that meets this requirement will be approximately four times quieter than the foreground speech content."
     }]
   },
-  "visual-audio-contrast-visual-presentation": {
-    "id": "WCAG2:visual-audio-contrast-visual-presentation",
+  "1.4.8": {
+    "id": "visual-audio-contrast-visual-presentation",
     "num": "1.4.8",
     "handle": "Visual Presentation",
     "text": "For the visual presentation of blocks of text, a mechanism is available to achieve the following:",
@@ -269,8 +269,8 @@
       }]
     }]
   },
-  "visual-audio-contrast-text-images": {
-    "id": "WCAG2:visual-audio-contrast-text-images",
+  "1.4.9": {
+    "id": "visual-audio-contrast-text-images",
     "num": "1.4.9",
     "handle": "Images of Text (No Exception)",
     "text": "Images of text are only used for pure decoration or where a particular presentation of text is essential to the information being conveyed.",
@@ -281,8 +281,8 @@
       "text": "Logotypes (text that is part of a logo or brand name) are considered essential."
     }]
   },
-  "keyboard-operation-keyboard-operable": {
-    "id": "WCAG2:keyboard-operation-keyboard-operable",
+  "2.1.1": {
+    "id": "keyboard-operation-keyboard-operable",
     "num": "2.1.1",
     "handle": "Keyboard",
     "text": "All functionality of the content is operable through a keyboard interface without requiring specific timings for individual keystrokes, except where the underlying function requires input that depends on the path of the user's movement and not just the endpoints.",
@@ -297,8 +297,8 @@
       "text": "This does not forbid and should not discourage providing mouse input or other input methods in addition to keyboard operation."
     }]
   },
-  "keyboard-operation-trapping": {
-    "id": "WCAG2:keyboard-operation-trapping",
+  "2.1.2": {
+    "id": "keyboard-operation-trapping",
     "num": "2.1.2",
     "handle": "No Keyboard Trap",
     "text": "If keyboard focus can be moved to a component of the page using a keyboard interface, then focus can be moved away from that component using only a keyboard interface, and, if it requires more than unmodified arrow or tab keys or other standard exit methods, the user is advised of the method for moving focus away.",
@@ -309,15 +309,15 @@
       "text": "Since any content that does not meet this success criterion can interfere with a user's ability to use the whole page, all content on the Web page (whether it is used to meet other success criteria or not) must meet this success criterion. See Conformance Requirement 5: Non-Interference."
     }]
   },
-  "keyboard-operation-all-funcs": {
-    "id": "WCAG2:keyboard-operation-all-funcs",
+  "2.1.3": {
+    "id": "keyboard-operation-all-funcs",
     "num": "2.1.3",
     "handle": "Keyboard (No Exception)",
     "text": "All functionality of the content is operable through a keyboard interface without requiring specific timings for individual keystrokes.",
     "level": "AAA"
   },
-  "time-limits-required-behaviors": {
-    "id": "WCAG2:time-limits-required-behaviors",
+  "2.2.1": {
+    "id": "time-limits-required-behaviors",
     "num": "2.2.1",
     "handle": "Timing Adjustable",
     "text": "For each time limit that is set by the content, at least one of the following is true:",
@@ -349,8 +349,8 @@
       "text": "This success criterion helps ensure that users can complete tasks without unexpected changes in content or context that are a result of a time limit. This success criterion should be considered in conjunction with Success Criterion 3.2.1, which puts limits on changes of content or context as a result of user action."
     }]
   },
-  "time-limits-pause": {
-    "id": "WCAG2:time-limits-pause",
+  "2.2.2": {
+    "id": "time-limits-pause",
     "num": "2.2.2",
     "handle": "Pause, Stop, Hide",
     "text": "For moving, blinking, scrolling, or auto-updating information, all of the following are true:",
@@ -382,29 +382,29 @@
       "text": "An animation that occurs as part of a preload phase or similar situation can be considered essential if interaction cannot occur during that phase for all users and if not indicating progress could confuse users or cause them to think that content was frozen or broken."
     }]
   },
-  "time-limits-no-exceptions": {
-    "id": "WCAG2:time-limits-no-exceptions",
+  "2.2.3": {
+    "id": "time-limits-no-exceptions",
     "num": "2.2.3",
     "handle": "No Timing",
     "text": "Timing is not an essential part of the event or activity presented by the content, except for non-interactive synchronized media and real-time events.",
     "level": "AAA"
   },
-  "time-limits-postponed": {
-    "id": "WCAG2:time-limits-postponed",
+  "2.2.4": {
+    "id": "time-limits-postponed",
     "num": "2.2.4",
     "handle": "Interruptions",
     "text": "Interruptions can be postponed or suppressed by the user, except interruptions involving an emergency.",
     "level": "AAA"
   },
-  "time-limits-server-timeout": {
-    "id": "WCAG2:time-limits-server-timeout",
+  "2.2.5": {
+    "id": "time-limits-server-timeout",
     "num": "2.2.5",
     "handle": "Re-authenticating",
     "text": "When an authenticated session expires, the user can continue the activity without loss of data after re-authenticating.",
     "level": "AAA"
   },
-  "seizure-does-not-violate": {
-    "id": "WCAG2:seizure-does-not-violate",
+  "2.3.1": {
+    "id": "seizure-does-not-violate",
     "num": "2.3.1",
     "handle": "Three Flashes or Below Threshold",
     "text": "Web pages do not contain anything that flashes more than three times in any one second period, or the flash is below the general flash and red flash thresholds.",
@@ -415,78 +415,78 @@
       "text": "Since any content that does not meet this success criterion can interfere with a user's ability to use the whole page, all content on the Web page (whether it is used to meet other success criteria or not) must meet this success criterion. See Conformance Requirement 5: Non-Interference."
     }]
   },
-  "seizure-three-times": {
-    "id": "WCAG2:seizure-three-times",
+  "2.3.2": {
+    "id": "seizure-three-times",
     "num": "2.3.2",
     "handle": "Three Flashes",
     "text": "Web pages do not contain anything that flashes more than three times in any one second period.",
     "level": "AAA"
   },
-  "navigation-mechanisms-skip": {
-    "id": "WCAG2:navigation-mechanisms-skip",
+  "2.4.1": {
+    "id": "navigation-mechanisms-skip",
     "num": "2.4.1",
     "handle": "Bypass Blocks",
     "text": "A mechanism is available to bypass blocks of content that are repeated on multiple Web pages.",
     "level": "A"
   },
-  "navigation-mechanisms-title": {
-    "id": "WCAG2:navigation-mechanisms-title",
+  "2.4.2": {
+    "id": "navigation-mechanisms-title",
     "num": "2.4.2",
     "handle": "Page Titled",
     "text": "Web pages have titles that describe topic or purpose.",
     "level": "A"
   },
-  "navigation-mechanisms-focus-order": {
-    "id": "WCAG2:navigation-mechanisms-focus-order",
+  "2.4.3": {
+    "id": "navigation-mechanisms-focus-order",
     "num": "2.4.3",
     "handle": "Focus Order",
     "text": "If a Web page can be navigated sequentially and the navigation sequences affect meaning or operation, focusable components receive focus in an order that preserves meaning and operability.",
     "level": "A"
   },
-  "navigation-mechanisms-refs": {
-    "id": "WCAG2:navigation-mechanisms-refs",
+  "2.4.4": {
+    "id": "navigation-mechanisms-refs",
     "num": "2.4.4",
     "handle": "Link Purpose (In Context)",
     "text": "The purpose of each link can be determined from the link text alone or from the link text together with its programmatically determined link context, except where the purpose of the link would be ambiguous to users in general.",
     "level": "A"
   },
-  "navigation-mechanisms-mult-loc": {
-    "id": "WCAG2:navigation-mechanisms-mult-loc",
+  "2.4.5": {
+    "id": "navigation-mechanisms-mult-loc",
     "num": "2.4.5",
     "handle": "Multiple Ways",
     "text": "More than one way is available to locate a Web page within a set of Web pages except where the Web Page is the result of, or a step in, a process.",
     "level": "AA"
   },
-  "navigation-mechanisms-descriptive": {
-    "id": "WCAG2:navigation-mechanisms-descriptive",
+  "2.4.6": {
+    "id": "navigation-mechanisms-descriptive",
     "num": "2.4.6",
     "handle": "Headings and Labels",
     "text": "Headings and labels describe topic or purpose.",
     "level": "AA"
   },
-  "navigation-mechanisms-focus-visible": {
-    "id": "WCAG2:navigation-mechanisms-focus-visible",
+  "2.4.7": {
+    "id": "navigation-mechanisms-focus-visible",
     "num": "2.4.7",
     "handle": "Focus Visible",
     "text": "Any keyboard operable user interface has a mode of operation where the keyboard focus indicator is visible.",
     "level": "AA"
   },
-  "navigation-mechanisms-location": {
-    "id": "WCAG2:navigation-mechanisms-location",
+  "2.4.8": {
+    "id": "navigation-mechanisms-location",
     "num": "2.4.8",
     "handle": "Location",
     "text": "Information about the user's location within a set of Web pages is available.",
     "level": "AAA"
   },
-  "navigation-mechanisms-link": {
-    "id": "WCAG2:navigation-mechanisms-link",
+  "2.4.9": {
+    "id": "navigation-mechanisms-link",
     "num": "2.4.9",
     "handle": "Link Purpose (Link Only)",
     "text": "A mechanism is available to allow the purpose of each link to be identified from link text alone, except where the purpose of the link would be ambiguous to users in general.",
     "level": "AAA"
   },
-  "navigation-mechanisms-headings": {
-    "id": "WCAG2:navigation-mechanisms-headings",
+  "2.4.10": {
+    "id": "navigation-mechanisms-headings",
     "num": "2.4.10",
     "handle": "Section Headings",
     "text": "Section headings are used to organize the content.",
@@ -501,106 +501,106 @@
       "text": "This success criterion covers sections within writing, not user interface components. User Interface components are covered under Success Criterion 4.1.2."
     }]
   },
-  "meaning-doc-lang-id": {
-    "id": "WCAG2:meaning-doc-lang-id",
+  "3.1.1": {
+    "id": "meaning-doc-lang-id",
     "num": "3.1.1",
     "handle": "Language of Page",
     "text": "The default human language of each Web page can be programmatically determined.",
     "level": "A"
   },
-  "meaning-other-lang-id": {
-    "id": "WCAG2:meaning-other-lang-id",
+  "3.1.2": {
+    "id": "meaning-other-lang-id",
     "num": "3.1.2",
     "handle": "Language of Parts",
     "text": "The human language of each passage or phrase in the content can be programmatically determined except for proper names, technical terms, words of indeterminate language, and words or phrases that have become part of the vernacular of the immediately surrounding text.",
     "level": "AA"
   },
-  "meaning-idioms": {
-    "id": "WCAG2:meaning-idioms",
+  "3.1.3": {
+    "id": "meaning-idioms",
     "num": "3.1.3",
     "handle": "Unusual Words",
     "text": "A mechanism is available for identifying specific definitions of words or phrases used in an unusual or restricted way, including idioms and jargon.",
     "level": "AAA"
   },
-  "meaning-located": {
-    "id": "WCAG2:meaning-located",
+  "3.1.4": {
+    "id": "meaning-located",
     "num": "3.1.4",
     "handle": "Abbreviations",
     "text": "A mechanism for identifying the expanded form or meaning of abbreviations is available.",
     "level": "AAA"
   },
-  "meaning-supplements": {
-    "id": "WCAG2:meaning-supplements",
+  "3.1.5": {
+    "id": "meaning-supplements",
     "num": "3.1.5",
     "handle": "Reading Level",
     "text": "When text requires reading ability more advanced than the lower secondary education level after removal of proper names and titles, supplemental content, or a version that does not require reading ability more advanced than the lower secondary education level, is available.",
     "level": "AAA"
   },
-  "meaning-pronunciation": {
-    "id": "WCAG2:meaning-pronunciation",
+  "3.1.6": {
+    "id": "meaning-pronunciation",
     "num": "3.1.6",
     "handle": "Pronunciation",
     "text": "A mechanism is available for identifying specific pronunciation of words where meaning of the words, in context, is ambiguous without knowing the pronunciation.",
     "level": "AAA"
   },
-  "consistent-behavior-receive-focus": {
-    "id": "WCAG2:consistent-behavior-receive-focus",
+  "3.2.1": {
+    "id": "consistent-behavior-receive-focus",
     "num": "3.2.1",
     "handle": "On Focus",
     "text": "When any component receives focus, it does not initiate a change of context.",
     "level": "A"
   },
-  "consistent-behavior-unpredictable-change": {
-    "id": "WCAG2:consistent-behavior-unpredictable-change",
+  "3.2.2": {
+    "id": "consistent-behavior-unpredictable-change",
     "num": "3.2.2",
     "handle": "On Input",
     "text": "Changing the setting of any user interface component does not automatically cause a change of context unless the user has been advised of the behavior before using the component.",
     "level": "A"
   },
-  "consistent-behavior-consistent-locations": {
-    "id": "WCAG2:consistent-behavior-consistent-locations",
+  "3.2.3": {
+    "id": "consistent-behavior-consistent-locations",
     "num": "3.2.3",
     "handle": "Consistent Navigation",
     "text": "Navigational mechanisms that are repeated on multiple Web pages within a set of Web pages occur in the same relative order each time they are repeated, unless a change is initiated by the user.",
     "level": "AA"
   },
-  "consistent-behavior-consistent-functionality": {
-    "id": "WCAG2:consistent-behavior-consistent-functionality",
+  "3.2.4": {
+    "id": "consistent-behavior-consistent-functionality",
     "num": "3.2.4",
     "handle": "Consistent Identification",
     "text": "Components that have the same functionality within a set of Web pages are identified consistently.",
     "level": "AA"
   },
-  "consistent-behavior-no-extreme-changes-context": {
-    "id": "WCAG2:consistent-behavior-no-extreme-changes-context",
+  "3.2.5": {
+    "id": "consistent-behavior-no-extreme-changes-context",
     "num": "3.2.5",
     "handle": "Change on Request",
     "text": "Changes of context are initiated only by user request or a mechanism is available to turn off such changes.",
     "level": "AAA"
   },
-  "minimize-error-identified": {
-    "id": "WCAG2:minimize-error-identified",
+  "3.3.1": {
+    "id": "minimize-error-identified",
     "num": "3.3.1",
     "handle": "Error Identification",
     "text": "If an input error is automatically detected, the item that is in error is identified and the error is described to the user in text.",
     "level": "A"
   },
-  "minimize-error-cues": {
-    "id": "WCAG2:minimize-error-cues",
+  "3.3.2": {
+    "id": "minimize-error-cues",
     "num": "3.3.2",
     "handle": "Labels or Instructions",
     "text": "Labels or instructions are provided when content requires user input.",
     "level": "A"
   },
-  "minimize-error-suggestions": {
-    "id": "WCAG2:minimize-error-suggestions",
+  "3.3.3": {
+    "id": "minimize-error-suggestions",
     "num": "3.3.3",
     "handle": "Error Suggestion",
     "text": "If an input error is automatically detected and suggestions for correction are known, then the suggestions are provided to the user, unless it would jeopardize the security or purpose of the content.",
     "level": "AA"
   },
-  "minimize-error-reversible": {
-    "id": "WCAG2:minimize-error-reversible",
+  "3.3.4": {
+    "id": "minimize-error-reversible",
     "num": "3.3.4",
     "handle": "Error Prevention (Legal, Financial, Data)",
     "text": "For Web pages that cause legal commitments or financial transactions for the user to occur, that modify or delete user-controllable data in data storage systems, or that submit user test responses, at least one of the following is true:",
@@ -619,15 +619,15 @@
       }]
     }]
   },
-  "minimize-error-context-help": {
-    "id": "WCAG2:minimize-error-context-help",
+  "3.3.5": {
+    "id": "minimize-error-context-help",
     "num": "3.3.5",
     "handle": "Help",
     "text": "Context-sensitive help is available.",
     "level": "AAA"
   },
-  "minimize-error-reversible-all": {
-    "id": "WCAG2:minimize-error-reversible-all",
+  "3.3.6": {
+    "id": "minimize-error-reversible-all",
     "num": "3.3.6",
     "handle": "Error Prevention (All)",
     "text": "For Web pages that require the user to submit information, at least one of the following is true:",
@@ -646,8 +646,8 @@
       }]
     }]
   },
-  "ensure-compat-parses": {
-    "id": "WCAG2:ensure-compat-parses",
+  "4.1.1": {
+    "id": "ensure-compat-parses",
     "num": "4.1.1",
     "handle": "Parsing",
     "text": "In content implemented using markup languages, elements have complete start and end tags, elements are nested according to their specifications, elements do not contain duplicate attributes, and any IDs are unique, except where the specifications allow these features.",
@@ -658,8 +658,8 @@
       "text": "Start and end tags that are missing a critical character in their formation, such as a closing angle bracket or a mismatched attribute value quotation mark are not complete."
     }]
   },
-  "ensure-compat-rsv": {
-    "id": "WCAG2:ensure-compat-rsv",
+  "4.1.2": {
+    "id": "ensure-compat-rsv",
     "num": "4.1.2",
     "handle": "Name, Role, Value",
     "text": "For all user interface components (including but not limited to: form elements, links and components generated by scripts), the name and role can be programmatically determined; states, properties, and values that can be set by the user can be programmatically set; and notification of changes to these items is available to user agents, including assistive technologies.",

@@ -15,7 +15,7 @@ authors:
 
 This test checks that the primary language of the web content can be programmatically determined.
 
-## Background
+### Background
 
 - [H57: Using language attributes on the html element](http://www.w3.org/TR/2014/NOTE-WCAG20-TECHS-20140408/H57)
 - [eGovMon test for H57](http://wiki.egovmon.no/wiki/SC3.1.1#Element_html)

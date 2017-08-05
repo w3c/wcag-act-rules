@@ -11,7 +11,7 @@ success_criterion:
 ## Description
 
 This test checks the sufficient provision of a long text description for elements using the `aria-describedby` attribute.
-<!-- 
+
 ### Background
 
 - [ARIA15: Using aria-describedby to provide descriptions of images](http://www.w3.org/TR/2014/NOTE-WCAG20-TECHS-20140916/ARIA15)
@@ -20,10 +20,6 @@ This test checks the sufficient provision of a long text description for element
 - [G92: Providing long description for non-text content that serves the same purpose and presents the same information](http://www.w3.org/TR/2014/NOTE-WCAG20-TECHS-20140916/G92)
 - [F67: Failure of Success Criterion 1.1.1 and 1.2.1 due to providing long descriptions for non-text content that does not serve the same purpose or does not present the same information](http://www.w3.org/TR/2014/NOTE-WCAG20-TECHS-20140916/F67)
 - The proper provision of a short text alternative is checked in [SC1-1-1-text-alternative](SC1-1-1-text-alternative.html).
- -->
-## Accessibility Requirements
-
-@@ TODO @@
 
 ## Assumptions
 

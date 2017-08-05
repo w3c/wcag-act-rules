@@ -4,8 +4,6 @@ description: >
   Demo implementation of Accessibility Conformance Testing Rules Format 1.0
 baseurl: "/act-rules"
 url: "https://wilcofiers.github.io"
-twitter_username: jekyllrb
-github_username:  jekyll
 
 # Build settings
 markdown: kramdown
