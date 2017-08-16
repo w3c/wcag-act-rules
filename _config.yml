@@ -11,6 +11,8 @@ markdown: kramdown
 collections:
   rules:
     output: true
+  rule-tests:
+    output: true
 
 defaults:
   - scope:
@@ -22,3 +24,8 @@ defaults:
       type: rules
     values:
       layout: rule
+  - scope:
+      path: ""
+      type: rule-tests
+    values:
+      layout: testcase

@@ -7,3 +7,24 @@
 @import './additional.scss';
 @import './slicenav.scss';
 @import './rules.scss';
+
+.testcase {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  pre {
+    background: #EEE;
+    border: solid 1px #ccc;
+    padding: 3px;
+    flex: 1;
+    margin: 8px;
+  }
+
+  [data-outcome] {
+    border: solid 1px red;
+    padding: 8px;
+    flex: 1;
+    margin: 8px;
+  }
+}

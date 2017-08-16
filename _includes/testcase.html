@@ -1,0 +1,22 @@
+{% if include.testname contains "pass" %}
+  {% assign result = 'passed' %}
+{% elsif include.testname contains "fail" %}
+  {% assign result = 'failed' %}
+{% else %}
+  {% assign result = 'inapplicable' %}
+{% endif %}
+
+<h2>{{ include.testname }}</h2>
+
+{% for test in include.tests %}
+  <div class="testcase">
+    <pre><code>{{
+      test | xml_escape
+    }}</code></pre>
+
+    <div data-outcome="{{ result }}" data-outcome-id="{{ testName }}">
+      {{ test }}
+    </div>
+  </div>
+
+{% endfor %}

@@ -1,62 +1,116 @@
 ---
 rule_id: ACT-R3
-name: Primary language of page
-test_mode: automatic
+name: Audio control
+test_mode: semi-automatic
 environment: DOM Structure
 
 success_criterion:
-- 3.1.1 # Language of Page (Level A)
+- 1.4.2 # Audio Control (level A)
 
 authors:
-- Annika Nietzio
+- Frank Berker
 ---
 
 ## Description
 
-This test checks that the primary language of the web content can be programmatically determined.
+This test checks that there isn't an automatically started sound after the web page is loaded. If the sound plays automatically this test checks that the sound is no longer than 3 seconds or that there is at the top of the web page a mechanism to control the sound.
 
-### Background
+## Background
 
-- [H57: Using language attributes on the html element](http://www.w3.org/TR/2014/NOTE-WCAG20-TECHS-20140408/H57)
-- [eGovMon test for H57](http://wiki.egovmon.no/wiki/SC3.1.1#Element_html)
-- [BCP 47: Tags for the Identification of Languages](http://www.rfc-editor.org/rfc/bcp/bcp47.txt)
+- [G60: Playing a sound that turns off automatically within three seconds](http://www.w3.org/TR/2014/NOTE-WCAG20-TECHS-20140916/G60)
+- [G170: Providing a control near the beginning of the Web page that turns off sounds that play automatically](http://www.w3.org/TR/2014/NOTE-WCAG20-TECHS-20140916/G170)
+- [G171: Playing sounds only on user request](http://www.w3.org/TR/2014/NOTE-WCAG20-TECHS-20140916/G171)
+- [F23: Failure of 1.4.2 due to playing a sound longer than 3 seconds where there is no mechanism to turn it off](http://www.w3.org/TR/2014/NOTE-WCAG20-TECHS-20140916/F23)
+- [F93: Failure of Success Criterion 1.4.2 for absence of a way to pause or stop an HTML5 media element that autoplays](http://www.w3.org/TR/2014/NOTE-WCAG20-TECHS-20140916/F93)
 
 ## Assumptions
 
-- The comparison of language codes does not look for exact matches. Technique H57 states: "Use of the primary code is important for this technique." which means that region subtags can be ignored in the comparison, i.e. "en-GB" is the same as "en".
-- This test checks the `lang` attribute of the `html` element. The xml:lang attribute is not taken into account because tests have shown, that xml:lang is ignored by screenreaders. (Both Jaws 15 with FF and IE and NVDA with FF go by lang attribute, xml:lang is ignored.) The `xml:lang` attribute is checked by a separate test: [SC3-1-1-xml-lang](SC3-1-1-xml-lang.html).
+- The test assumes that audio is rendered in the `audio` element. Therefore this test checks exclusive audio content in the `audio` element.
+- The test assumes that video is rendered in the `video` element. Therefore this test checks exclusive video content in the `video` element.
+- This test states that the links or buttons for the mechanism to control the sound is one of the first five links or buttons on the web page. This is more specific then the WCAG documentation.
 
 ## Test procedure
 
 ### Selector
 
-Select the `html` element.
+Select all elements that match the following XPATH selector(s):
+
+- `//*[self::audio` or
+- `self::video]`
 
 ### Step 1
 
-If `lang` attribute exists:
+Check if the `audio` or `video` is paused. Check `paused` property.
 
-L1 = value of `lang` attribute.
+If true, return [step1-pass](#step1-pass)
 
-Continue with [Step2](#step-2).
-
-else if neither `lang` nor `xml:lang` are specified, return [step1-fail](#step1-fail)
-
-else (only `xml:lang` exists)
-
-*Do nothing. (This case is covered by [SC3-1-1-xml-lang](SC3-1-1-xml-lang.html).)*
+Else continue with [step 2](#step-2)
 
 ### Step 2
 
-Compare L1 to BCP 47.
+Check if the sound is muted. Check `muted` property.
 
-If L1 is not on the list, return [step2-fail](#step2-fail)
+If true, return [step2-pass](#step2-pass)
 
-*Note that this step also fails if L1 contains only whitespace or is empty.*
+Else continue with [step 3](#step-3)
 
-Else, return [step2-pass](#step2-pass)
+### Step 3
 
-## Outcome
+Check that the sound is no longer than 3 seconds.
+
+Check `duration` property is no longer than 3 seconds.
+
+If true, continue with [step 4](#step-4)
+
+Else continue with [Step 5](#step-5)
+
+### Step 4
+
+Check if the sound has a loop. Check `loop` property.
+
+If true, continue with [Step 5](#step-5)
+
+Else, return [step4-pass](#step4-pass)
+
+### Step 5
+
+Check if the video plays audio.
+
+**User Input Question:**
+
+| Property     | Value
+|--------------|---------
+| highlight    | Web page with an automatically started sound.
+| question     | Is there audio playing on the web page?
+| help         | There should not be audio playing automatically on the web page loads.
+| user_profile | Requires hearing
+| context      | yes
+| interaction  | no
+
+If yes, continue with [Step 6](#step-6).
+
+Else, return [step5-pass](#step5-pass)
+
+### Step 6
+
+Check if a mechanism to control the sound is provided as one of the first five links or buttons on the web page.
+
+**User Input Question:**
+
+| Property     | Value
+|--------------|---------
+| highlight    | Web page with an automatically started sound.
+| question     | Does the web page provide a mechanism to control the sound as one of the first five links or buttons?
+| help         | A mechanism to pause or stop the video or audio, or control the volume or mute the audio must be available on the web page. The mechanism must be located as one of the first five links or buttons of the web page. This way people (with screen readers) can turn off the sound before reading the web page. To inspect this, use the tab key to navigate through the web page.
+| user_profile | Requires hearing
+| context      | yes
+| interaction  | yes
+
+If yes, return [step6-pass](#step6-pass)
+
+Else, return [step6-fail](#step6-fail)
+
+## Outcomes
 
 <div class="collapsing" markdown="1" id="outcome-data">
 
@@ -65,26 +119,18 @@ The resulting assertion is as follows,
 | Property | Value
 |----------|----------
 | type     | Assertion
-| test     | auto-wcag:{{ page.rule_id }}
+| test     | act:{{ page.rule_id }}
 | subject  | *the selected element*
-| mode     | auto-wcag:{{ page.test_mode }}
+| mode     | earl:{{ page.test_mode }}
 | result   | << One TestResult from below >>
 
-### step1-fail
+### step1-pass
 
 | Property    | Value
 |-------------|----------
 | type        | TestResult
-| outcome     | Failed
-| description | No language attribute found.
-
-### step2-fail
-
-| Property    | Value
-|-------------|----------
-| type        | TestResult
-| outcome     | Failed
-| description | Unknown language code.
+| outcome     | Passed
+| description | << todo >>
 
 ### step2-pass
 
@@ -92,22 +138,42 @@ The resulting assertion is as follows,
 |-------------|----------
 | type        | TestResult
 | outcome     | Passed
-| description |
+| description | << todo >>
+
+### step4-pass
+
+| Property    | Value
+|-------------|----------
+| type        | TestResult
+| outcome     | Passed
+| description | << todo >>
+
+### step5-pass
+
+| Property    | Value
+|-------------|----------
+| type        | TestResult
+| outcome     | Passed
+| description | << todo >>
+
+### step6-pass
+
+| Property    | Value
+|-------------|----------
+| type        | TestResult
+| outcome     | Passed
+| description | << todo >>
+
+### step6-fail
+
+| Property    | Value
+|-------------|----------
+| type        | TestResult
+| outcome     | Failed
+| description | No mechanism to control the automaticaly started sound available at the top of the web page.
 
 </div>
 
 ## Changelog
 
-<div class="collapsing" markdown="1" id="changelog-area">
-
-...
-
-</div>
-
-## Implementtion Test Cases
-
-<div class="collapsing" markdown="1" id="testcases-area">
-
-...
-
-</div>
+This is the first version of this rule.

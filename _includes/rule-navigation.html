@@ -1,5 +1,8 @@
-<nav><ul id="navigation">
-  {% if include.navType == "bottom" %}
+<nav>
+  {% if include.navType != "bottom" %}
+  <ul id="navigation">
+  {% else %}
+  <ul id="navigationbottom">
   <li><strong>
     <a href="#top">Top</a>
   </strong></li>
