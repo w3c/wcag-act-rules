@@ -1,6 +1,6 @@
 ---
 rule_id: ACT-R3
-name: Audio control
+name: Audio and video auto-play
 test_mode: semi-automatic
 environment: DOM Structure
 
@@ -9,11 +9,12 @@ success_criterion:
 
 authors:
 - Frank Berker
+- Wilco Fiers
 ---
 
 ## Description
 
-This test checks that there isn't an automatically started sound after the web page is loaded. If the sound plays automatically this test checks that the sound is no longer than 3 seconds or that there is at the top of the web page a mechanism to control the sound.
+This test checks that any sound that plays automatically when a web page is loaded stops after 3 seconds or the web page provides a user control to turn off the sound.
 
 ## Background
 
@@ -25,18 +26,16 @@ This test checks that there isn't an automatically started sound after the web p
 
 ## Assumptions
 
-- The test assumes that audio is rendered in the `audio` element. Therefore this test checks exclusive audio content in the `audio` element.
-- The test assumes that video is rendered in the `video` element. Therefore this test checks exclusive video content in the `video` element.
-- This test states that the links or buttons for the mechanism to control the sound is one of the first five links or buttons on the web page. This is more specific then the WCAG documentation.
+- This rule states that the links or buttons for the mechanism to control the sound is one of the first five links or buttons on the web page. This is more specific then the WCAG documentation.
 
 ## Test procedure
 
 ### Selector
 
-Select all elements that match the following XPATH selector(s):
+Select all elements that match the following CSS Selector:
 
-- `//*[self::audio` or
-- `self::video]`
+    audio[src], audio > source[src],
+    video[src], video > source[src]
 
 ### Step 1
 
@@ -74,18 +73,16 @@ Else, return [step4-pass](#step4-pass)
 
 ### Step 5
 
-Check if the video plays audio.
+Check if the page is playing audio.
 
 **User Input Question:**
 
 | Property     | Value
 |--------------|---------
-| highlight    | Web page with an automatically started sound.
-| question     | Is there audio playing on the web page?
+| highlight    | The selected audio / video element
+| question     | Is there audio playing in the media player?
 | help         | There should not be audio playing automatically on the web page loads.
-| user_profile | Requires hearing
-| context      | yes
-| interaction  | no
+| user profile | Requires hearing
 
 If yes, continue with [Step 6](#step-6).
 
@@ -99,12 +96,9 @@ Check if a mechanism to control the sound is provided as one of the first five l
 
 | Property     | Value
 |--------------|---------
-| highlight    | Web page with an automatically started sound.
 | question     | Does the web page provide a mechanism to control the sound as one of the first five links or buttons?
 | help         | A mechanism to pause or stop the video or audio, or control the volume or mute the audio must be available on the web page. The mechanism must be located as one of the first five links or buttons of the web page. This way people (with screen readers) can turn off the sound before reading the web page. To inspect this, use the tab key to navigate through the web page.
 | user_profile | Requires hearing
-| context      | yes
-| interaction  | yes
 
 If yes, return [step6-pass](#step6-pass)
 
@@ -130,7 +124,7 @@ The resulting assertion is as follows,
 |-------------|----------
 | type        | TestResult
 | outcome     | Passed
-| description | << todo >>
+| description | The video / audio is paused
 
 ### step2-pass
 
@@ -138,7 +132,7 @@ The resulting assertion is as follows,
 |-------------|----------
 | type        | TestResult
 | outcome     | Passed
-| description | << todo >>
+| description | The video / audio is muted
 
 ### step4-pass
 
@@ -146,7 +140,7 @@ The resulting assertion is as follows,
 |-------------|----------
 | type        | TestResult
 | outcome     | Passed
-| description | << todo >>
+| description | The video / audio is shorter than 3 seconds
 
 ### step5-pass
 
@@ -154,7 +148,7 @@ The resulting assertion is as follows,
 |-------------|----------
 | type        | TestResult
 | outcome     | Passed
-| description | << todo >>
+| description | No sound is coming from the audio / video element
 
 ### step6-pass
 
@@ -162,7 +156,7 @@ The resulting assertion is as follows,
 |-------------|----------
 | type        | TestResult
 | outcome     | Passed
-| description | << todo >>
+| description | The sound in the audio / video can easily be stopped.
 
 ### step6-fail
 
@@ -170,7 +164,7 @@ The resulting assertion is as follows,
 |-------------|----------
 | type        | TestResult
 | outcome     | Failed
-| description | No mechanism to control the automaticaly started sound available at the top of the web page.
+| description | There is no mechanism to stop the auto-playing sound of the audio / video.
 
 </div>
 

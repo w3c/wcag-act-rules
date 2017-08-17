@@ -12,14 +12,70 @@ rule_id: ACT-R3
 # Lines starting with "#" are comments and will be ignored
 
 inapplicables:
-  - |
-    << test case here >>
-  - |
-    << test case here >>
+  - <audio controls><!-- no source --></audio>
+  - <video controls><!-- no source --></video>
 
 testcases:
-  step-1-pass1: | 
-    << test case here >>
+  step-1-pass:
+    - |
+      <audio src="../assets/sample-audio.mp3"
+        id="step1-aud" autoplay controls></audio>
+      <script>
+        document.querySelector('#step1-aud').pause()
+      </script>
+    - |
+      <video src="../assets/sample-video.mp4"
+        id="step1-vid" autoplay controls></video>
+      <script>
+        document.querySelector('#step1-vid').pause()
+      </script>
 
+  step-2-pass:
+    - |
+      <audio src="../assets/sample-audio.mp3"
+        muted autoplay controls></audio>
+    - |
+      <video src="../assets/sample-video.mp4"
+        muted autoplay controls></video>
+
+  step-4-pass:
+    - |
+      <audio src="../assets/sample-audio-short.mp3"
+        autoplay controls></audio>
+    - |
+      <video src="../assets/sample-video-short.mp4"
+        autoplay controls></video>
+
+  step-5-pass: |
+      <video src="../assets/sample-video-silent.mp4"
+        autoplay controls></video>
+
+  step-6-pass:
+    - |
+      <audio src="../assets/sample-audio.mp3"
+        id="step6-aud" autoplay controls></audio>
+      <button tabindex="1" onclick="
+        document.querySelector('#step6-aud').pause()
+      "> Stop! </button>
+    - |
+      <video src="../assets/sample-video.mp4"
+        id="step6-vid" autoplay controls></video>
+      <button tabindex="1" onclick="
+        document.querySelector('#step6-vid').pause()
+      "> Stop! </button>
+
+  step-6-fail:
+    - |
+      <audio src="../assets/sample-audio.mp3"
+        autoplay controls></audio>
+    - |
+      <video src="../assets/sample-video.mp4"
+        autoplay controls></video>
+    - |
+      <audio src="../assets/sample-audio-short.mp3"
+        autoplay loop controls></audio>
+    - |
+      <video src="../assets/sample-video-short.mp4"
+        autoplay loop controls></video>
 
 ---
