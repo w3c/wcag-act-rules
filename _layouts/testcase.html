@@ -9,16 +9,16 @@ layout: default
 
 <p>Elements with <code>data-outcome="inapplicable"</code> should be ignored by the rule. Elements with <code>data-outcome="failed"</code> should be returned as failed, and those with <code>data-outcome="passed"</code> should be passed. Other elements may match other rules, these results should be ignored for the purpose of this test file.</p>
 
-{% include testcase.html 
-  testname="Inapplicable"
-  tests=page.inapplicables
-%}
-
 {% for testcases in page.testcases %}
   {% assign testname = testcases[0] %}
   {% assign tests = testcases[1] %}
   {% include testcase.html tests=tests testname=testname %}
 {% endfor %}
+
+{% include testcase.html 
+  testname="Inapplicable"
+  tests=page.inapplicables
+%}
 
 <p>Back to rule:
   <a href="../rules/{{ page.rule_id }}.html">{{ page.rule_id }}</a>

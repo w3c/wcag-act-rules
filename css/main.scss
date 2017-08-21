@@ -19,10 +19,12 @@
     padding: 3px;
     flex: 1;
     margin: 8px;
+    border-radius: 4px;
   }
 
   [data-outcome] {
-    border: solid 1px red;
+    border: solid 1px #005A9C;
+    border-radius: 4px;
     padding: 8px;
     flex: 1;
     margin: 8px;
