@@ -25,7 +25,11 @@ layout: default
 <h2 id="validation-tests">Validation Tests</h2>
 
 <p>To validate the implementation of this rule, all 
-  <a href="{{ '/rule-tests/' | append: page.rule_id | append: '-tests.html' | prepend: site.baseurl }}">test cases for {{ page.rule_id }}</a>
+  <a href="{% if page.tests != nil %}{{
+    page.tests | prepend: site.baseurl
+  }}{% else %}{{
+    '/rule-tests/' | append: page.rule_id | append: '-tests.html' | prepend: site.baseurl
+  }}{% endif %}">test cases for {{ page.rule_id }}</a>
   must be passed.</p> 
 
 {% include rule-navigation.html navType="bottom" %}

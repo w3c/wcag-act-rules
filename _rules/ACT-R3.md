@@ -3,6 +3,7 @@ rule_id: ACT-R3
 name: Audio and video auto-play
 test_mode: semi-automatic
 environment: DOM Structure
+tests: /rule-tests/ACT-R3-warning.html
 
 success_criterion:
 - 1.4.2 # Audio Control (level A)
@@ -16,7 +17,7 @@ authors:
 
 This test checks that any sound that plays automatically when a web page is loaded stops after 3 seconds or the web page provides a user control to turn off the sound.
 
-## Background
+### Background
 
 - [G60: Playing a sound that turns off automatically within three seconds](http://www.w3.org/TR/2014/NOTE-WCAG20-TECHS-20140916/G60)
 - [G170: Providing a control near the beginning of the Web page that turns off sounds that play automatically](http://www.w3.org/TR/2014/NOTE-WCAG20-TECHS-20140916/G170)
