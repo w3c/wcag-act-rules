@@ -12,14 +12,56 @@ rule_id: ACT-R2
 # Lines starting with "#" are comments and will be ignored
 
 inapplicables:
+  - <img src="../assets/sample-image.jpg">
   - |
-    << test case here >>
+    <img src="../assets/sample-image.jpg"
+      alt="The image is described in the text below">
   - |
-    << test case here >>
+    <div aria-describedby="divdesc"></div>
+    <div id="divdesc">Description</div>
 
 testcases:
-  step-1-pass1: | 
-    << test case here >>
+  step-1-pass:
+    - |
+      <img src="../assets/sample-image.jpg"
+        aria-describedby="imgdesc1">
+    - |
+      <img src="../assets/sample-image.jpg"
+        aria-describedby="imgdesc1 imgdesc1-a">
 
+  step-1-fail:
+    - |
+      <img src="../assets/sample-image.jpg"
+        aria-describedby="imgdesc1-fail">
+
+  step-2-pass:
+    - |
+      <img src="../assets/sample-image.jpg"
+        aria-describedby="imgdesc2-a imgdesc2-b">
+      <div id="imgdesc2-b">Description</div>
+
+  step-2-fail:
+    - |
+      <img src="../assets/sample-image.jpg"
+        aria-describedby="imgdesc2-a imgdesc2-b">
+      <div id="imgdesc2-c">Description</div>
+    - |
+      <img src="../assets/sample-image.jpg"
+        aria-describedby="">
+
+  step-3-pass:
+    - |
+      <img src="../assets/sample-image.jpg"
+        alt="Sunrise"
+        aria-describedby="imgdesc3-a">
+      <div id="imgdesc3-a">The sun is rising 
+        over a jetty by a lake</div>
+
+  step-3-fail:
+    - |
+      <img src="../assets/sample-image.jpg"
+        alt="Sunrise"
+        aria-describedby="imgdesc3-b">
+      <div id="imgdesc3-b">Rabbits</div>
 
 ---

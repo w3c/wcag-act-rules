@@ -10,10 +10,13 @@ success_criterion:
 
 ## Description
 
-This test checks the sufficient provision of a long text description for elements using the `aria-describedby` attribute.
+This rule checks the sufficient provision of a long text description for images that are using the `aria-describedby` attribute.
+
+Elements are not checked for references to long text descriptions within short text alternatives such as "The image is described in text below".
 
 ### Background
 
+This rule maps to WCAG 2.0 success criterion 1.1.1 and checks the following techniques and failures:
 - [ARIA15: Using aria-describedby to provide descriptions of images](http://www.w3.org/TR/2014/NOTE-WCAG20-TECHS-20140916/ARIA15)
 - [G73: Providing a long description in another location with a link to it that is immediately adjacent to the non-text content](http://www.w3.org/TR/2014/NOTE-WCAG20-TECHS-20140916/G73)
 - [G74: Providing a long description in text near the non-text content, with a reference to the location of the long description in the short description](http://www.w3.org/TR/2014/NOTE-WCAG20-TECHS-20140916/G74)
@@ -23,9 +26,13 @@ This test checks the sufficient provision of a long text description for element
 
 ## Assumptions
 
-- It is not checked for references to long text descriptions within short text alternatives such as "The image is described in text below".
 - If the `aria-describedby` attribute is provided, a long description was intended and is needed for the element.
-- This test assumes that `role="img"` is properly used.
+- This test assumes that `role="img"` is used exclusively on elements that represent graphical content.
+
+## Test Subject Type
+
+The following test subject types are used in this rule:
+- DOM Tree
 
 ## Test Procedure
 
@@ -39,43 +46,49 @@ input[type="image"][aria-describedby],
 [role="img"][aria-describedby]
 ```
 
+Exclude any elements that are not visible to screen-readers.
+
 For each selected element, go through the following steps:
 
-### Step 1
+### Test Case
 
-Check if at least one of the `aria-describedby` attribute values is a valid identifier.
+#### Step 1
 
-if yes, continue with [step 2](#step-2)
+Check if at least one of the `aria-describedby` attribute values are [valid identifiers](https://www.w3.org/TR/html5/dom.html#the-id-attribute).
 
-else, return [step1-fail](#step1-fail)
+If yes, continue with [step 2](#step-2).
 
-### Step 2
+Else, return [step1-fail](#step1-fail).
 
-Check if at least one of the elements referenced by the valid `aria-describedby` attribute values exists.
+#### Step 2
 
-if yes, continue with [step 3](#step-3)
+Check if at least one of the elements referenced by valid `aria-describedby` attribute values exists.
 
-else, return [step2-fail](#step2-fail)
+If yes, continue with [step 3](#step-3).
 
-### Step 3
+Else, return [step2-fail](#step2-fail).
 
-Concatenate the results of [Text Alternative Computation][TXTALT] Algorithm run on the element itself and assign it to variable T1 and on all elements referenced by the `aria-describedby` attribute and assign it to variable T2.
+#### Step 3
+
+- Concatenate the results of [Text Alternative Computation][TXTALT] Algorithm run on the element itself and assign it to variable `T1`
+- Concatenate the results of [Text Alternative Computation][TXTALT] Algorithm run on all elements referenced by the `aria-describedby` attribute and assign it to variable `T2`
+
+Check if `T2` provides an extended description of the image complementary to `T1`.
 
 **User Input Question:**
 
 | Property     | Value
 |--------------|---------
-| highlight    | Element with T1 and T2
-| question     | Does T2 provide an extended description of the image additionally to T1?
-| help         | If the image contributes meaning to the page or provide any functionality or conveys information additional to the pages text, this must be described.
-| repair       | If no, could you suggest an long text alternative, which would sufficiently describe the image?
+| highlight    | Element with `T1` and element with `T2`
+| question     | Does `T2` provide an extended description of the image complementary to `T1`?
+| help         | If the image contributes meaning to the page or provide any functionality or conveys information additional to the text of the page, this must be described.
+| repair       | If no, could you suggest a long text alternative, which would sufficiently describe the image?
 | user_profile | Requires sight
 | context      | yes
-| interaction  | yes
 
-if yes, return [step3-pass](#step3-pass)
+If yes, return [step3-pass](#step3-pass).
 
-else return [step3-fail](#step3-fail)
+Else return [step3-fail](#step3-fail).
 
 ## Outcomes
 
@@ -97,7 +110,7 @@ The resulting assertion is as follows,
 |-------------|----------
 | type        | TestResult
 | outcome     | Failed
-| description | None of the aria-describedby attribute values is a valid identifier.
+| description | None of the `aria-describedby` attribute values are valid identifiers.
 
 ### step2-fail
 
@@ -105,7 +118,7 @@ The resulting assertion is as follows,
 |-------------|----------
 | type        | TestResult
 | outcome     | Failed
-| description | None of the elements referenced by aria-describedby exists.
+| description | None of the elements referenced by `aria-describedby` exist.
 
 ### step3-pass
 
@@ -113,7 +126,7 @@ The resulting assertion is as follows,
 |-------------|----------
 | type        | TestResult
 | outcome     | Passed
-| description | << todo >>
+| description | The long description provided using `aria-describedby` is sufficiently descriptive.
 
 ### step3-fail
 
@@ -121,13 +134,12 @@ The resulting assertion is as follows,
 |-------------|----------
 | type        | TestResult
 | outcome     | Failed
-| description | The long description provided using aria-describedby is not sufficiently descriptive.
+| description | The long description provided using `aria-describedby` is not sufficiently descriptive.
 
 </div>
 
 ## Changelog
 
 This is the first version of this rule.
-
 
 [TXTALT]: ../definitions/text-alternative-compute.html
