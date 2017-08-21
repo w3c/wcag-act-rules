@@ -11,15 +11,6 @@ rule_id: ACT-R2
 
 # Lines starting with "#" are comments and will be ignored
 
-inapplicables:
-  - <img src="../assets/sample-image.jpg">
-  - |
-    <img src="../assets/sample-image.jpg"
-      alt="The image is described in the text below">
-  - |
-    <div aria-describedby="divdesc"></div>
-    <div id="divdesc">Description</div>
-
 testcases:
   step-1-pass:
     - |
@@ -63,5 +54,14 @@ testcases:
         alt="Sunrise"
         aria-describedby="imgdesc3-b">
       <div id="imgdesc3-b">Rabbits</div>
+
+inapplicables:
+  - <img src="../assets/sample-image.jpg">
+  - |
+    <img src="../assets/sample-image.jpg"
+      alt="The image is described in the text below">
+  - |
+    <div aria-describedby="divdesc"></div>
+    <div id="divdesc">Description</div>
 
 ---

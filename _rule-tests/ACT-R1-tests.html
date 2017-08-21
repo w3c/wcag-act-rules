@@ -11,15 +11,44 @@ rule_id: ACT-R1
 
 # Lines starting with "#" are comments and will be ignored
 
-inapplicables:
-  - |
-    << test case here >>
-  - |
-    << test case here >>
-
 testcases:
-  step-1-pass1: | 
-    << test case here >>
+  step-1-pass:
+    - # Different HTML from code:
+      code: |
+        <iframe src="ACT-R1/pass.html">
+          <html lang="en"><head>
+            <meta charset="utf-8">
+            <meta http-equiv="refresh" conten="">
+            <title>ACT-R2 incomplete testcase</title>
+          </head></html>
+        </iframe>
+      html: |
+        <iframe src="ACT-R1/pass.html"></iframe>
 
+  step-1-fail:
+    - # Different HTML from code:
+      code: |
+        <iframe src="ACT-R1/fail.html">
+          <html lang="en"><head>
+            <meta charset="utf-8">
+            <meta http-equiv="refresh"
+              content="5;URL='fail.html'">
+            <title>ACT-R2 incomplete testcase</title>
+          </head></html>
+        </iframe>
+      html: |
+        <iframe src="ACT-R1/fail.html"></iframe>
+
+inapplicables:
+  - # Different HTML from code:
+    code: |
+      <iframe src="ACT-R1/inapplicable.html">
+        <html lang="en"><head>
+          <meta charset="utf-8">
+          <title>ACT-R2 incomplete testcase</title>
+        </head></html>
+      </iframe>
+    html: |
+      <iframe src="ACT-R1/inapplicable.html"></iframe>
 
 ---

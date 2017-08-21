@@ -9,13 +9,18 @@
 <h2>{{ include.testname }}</h2>
 
 {% for test in include.tests %}
-  <div class="testcase">
-    <pre><code>{{
-      test | xml_escape
-    }}</code></pre>
+  {% if test.code != nil %}
+    {% assign code = test.code | xml_escape %}
+    {% assign html = test.html %}
+  {% else %}
+    {% assign code = test | xml_escape %}
+    {% assign html = test %}
+  {% endif %}
 
+  <div class="testcase">
+    <pre><code>{{ code }}</code></pre>
     <div data-outcome="{{ result }}" data-outcome-id="{{ testName }}">
-      {{ test }}
+      {{ html }}
     </div>
   </div>
 

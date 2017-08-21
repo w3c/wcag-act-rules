@@ -11,10 +11,6 @@ rule_id: ACT-R3
 
 # Lines starting with "#" are comments and will be ignored
 
-inapplicables:
-  - <audio controls><!-- no source --></audio>
-  - <video controls><!-- no source --></video>
-
 testcases:
   step-1-pass:
     - |
@@ -77,5 +73,9 @@ testcases:
     - |
       <video src="../assets/sample-video-short.mp4"
         autoplay loop controls></video>
+
+inapplicables:
+  - <audio controls><!-- no source --></audio>
+  - <video controls><!-- no source --></video>
 
 ---

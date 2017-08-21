@@ -17,6 +17,7 @@ Elements are not checked for references to long text descriptions within short t
 ### Background
 
 This rule maps to WCAG 2.0 success criterion 1.1.1 and checks the following techniques and failures:
+
 - [ARIA15: Using aria-describedby to provide descriptions of images](http://www.w3.org/TR/2014/NOTE-WCAG20-TECHS-20140916/ARIA15)
 - [G73: Providing a long description in another location with a link to it that is immediately adjacent to the non-text content](http://www.w3.org/TR/2014/NOTE-WCAG20-TECHS-20140916/G73)
 - [G74: Providing a long description in text near the non-text content, with a reference to the location of the long description in the short description](http://www.w3.org/TR/2014/NOTE-WCAG20-TECHS-20140916/G74)
