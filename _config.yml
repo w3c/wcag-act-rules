@@ -2,8 +2,8 @@ title: ACT Rules demo
 email: wilco.fiers@deque.com
 description: >
   Demo implementation of Accessibility Conformance Testing Rules Format 1.0
-baseurl: "/act-rules"
-url: "https://wilcofiers.github.io"
+baseurl: "/wcag-act-rules"
+url: "https://w3c.github.io"
 
 # Build settings
 markdown: kramdown
