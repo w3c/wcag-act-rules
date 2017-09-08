@@ -26,12 +26,37 @@ title: ACT Rules Overview (Demo)
 
 <h2>ACT Rules</h2>
 
-<ul>
+<table class="rules-table">
+  <thead>
+    <tr>
+      <th>Number</th>
+      <th>Rule name</th>
+      <th>Test mode</th>
+      <th>WCAG criterion</th>
+    </tr>
+  </thead>
   {% for rule in site.rules %}
-    <li><a href="{{ rule.url | prepend: site.baseurl }}">
-      <strong>{{ rule.rule_id }}</strong>: {{ rule.name }}
-    </a></li>
+  <tr>
+    <th><a href="{{ rule.url | prepend: site.baseurl }}">{{
+      rule.rule_id 
+    }}</a></th>
+    <td>{{ rule.name }}</td>
+    <td>{{ rule.test_mode }}</td>
+    <td><ul>
+      {% for critId in rule.success_criterion %}
+        <li>
+          {% assign criterion = site.data.wcag2[critId] %}
+          <a href="{{ criterion.url }}" target="_blank">
+          {{ criterion.num }}
+          {{ criterion.handle }}
+          (Level {{ criterion.level }})
+          </a>
+        </li>
+      {% endfor %}
+    </ul></td>
+  </tr>
   {% endfor %}
-</ul>
+</table>
+
 
 <hr>

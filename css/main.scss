@@ -30,3 +30,18 @@
     margin: 8px;
   }
 }
+
+.rules-table {
+  border-collapse: collapse;
+
+  td, th {
+    padding: .5em .5em;
+  }
+  ul {
+    margin: 0;
+    padding-left: .5em;
+  }
+  tr {
+    border-bottom:solid 1px #ccc;
+  }
+}
