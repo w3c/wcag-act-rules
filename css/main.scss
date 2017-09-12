@@ -8,6 +8,10 @@
 @import './slicenav.scss';
 @import './rules.scss';
 
+body {
+  background: none !important;
+}
+
 .testcase {
   display: flex;
   flex-direction: row;
