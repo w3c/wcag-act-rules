@@ -34,7 +34,7 @@ For help creating an issue, see [GitHub Help, creating an issue](https://help.gi
 The purpose of the Accessibility Conformance Testing (ACT) effort is to establish and document rules for testing the conformance of web content to accessibility standards, such as WCAG 2.0 and future versions. For details on how to participate in the ACT Task Force, see [How to Comment, Contribute and Participate](https://www.w3.org/WAI/GL/task-forces/conformance-testing/#contribute). 
 
 ## Participate in the Automated WCAG Monitoring Community Group
-The Automated WCAG Monitoring community group, founded in 2014, is a W3C community with the focus to develop reliable rules for WCAG testing, both automated and semi-automated. We aim to assist developers of test tools to improve the accuracy and completeness of their tools. For more information on how to participate, visit the [Auto-WCAG Community Group website] (https://auto-wcag.github.io/auto-wcag/).
+The Automated WCAG Monitoring community group, founded in 2014, is a W3C community with the focus to develop reliable rules for WCAG testing, both automated and semi-automated. We aim to assist developers of test tools to improve the accuracy and completeness of their tools. For more information on how to participate, visit the [Auto-WCAG Community Group website](https://auto-wcag.github.io/auto-wcag/).
 
 ## Using GitHub
 
