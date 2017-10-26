@@ -44,7 +44,7 @@ To contribute work to the ACT Rules repository, you will need a GitHub account. 
 
 ### Submit A Pull Request
 
-A pull request is a request to pull changes that have been made in one place, and merge them into another. Contributors each maintain a local copy, a fork, of the project (the repository). Changes and contributions should be made in a new branch in the user's fork and then sent in as a pull request to the main project. See [GitHub Help] (https://help.github.com/) for more information on forks and branches.
+A pull request is a request to pull changes that have been made in one place, and merge them into another. Contributors each maintain a local copy, a fork, of the project (the repository). Changes and contributions should be made in a new branch in the user's fork and then sent in as a pull request to the main project. See [GitHub Help](https://help.github.com/) for more information on forks and branches.
 
 Pull requests labeled *ready for review* will be submitted for peer review by the ACT Task Force, after which, one of three things may happen:
 
