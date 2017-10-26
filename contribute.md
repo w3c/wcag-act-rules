@@ -22,7 +22,7 @@ For help creating a fork, branch and pull request, see Using [GitHub](#using-git
 
 ## Submit An Issue
 
-Before submitting an issue, we ask that you look through existing issues to ensure that there isn't already an issue that addresses this topic, either open or closed. You can find a list of all issues at: [w3c/wcag-act Issues tab](https://github.com/w3c/wcag-act/issues).
+Before submitting an issue, we ask that you look through existing issues to ensure that there isn't already an issue that addresses this topic, either open or closed. You can find a list of all issues at: [w3c/wcag-act-rules Issues tab](https://github.com/w3c/wcag-act-rules/issues).
 
 For help creating an issue, see [GitHub Help, creating an issue](https://help.github.com/articles/creating-an-issue/).
 
