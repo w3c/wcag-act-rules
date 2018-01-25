@@ -12,7 +12,7 @@ rule_id: ACT-R1
 # Lines starting with "#" are comments and will be ignored
 
 testcases:
-  step-1-pass:
+  expectation-pass:
     - # Different HTML from code:
       code: |
         <iframe src="ACT-R1/pass.html">
@@ -25,7 +25,7 @@ testcases:
       html: |
         <iframe src="ACT-R1/pass.html"></iframe>
 
-  step-1-fail:
+  expectation-fail:
     - # Different HTML from code:
       code: |
         <iframe src="ACT-R1/fail.html">
