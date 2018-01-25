@@ -1,8 +1,6 @@
 ---
 rule_id: ACT-R2
 name: Proper use of aria-describedby
-test_mode: semi-automatic
-environment: Rendered page
 
 success_criterion:
 - 1.1.1 # Non-text Content (Level A)
@@ -30,117 +28,33 @@ This rule maps to WCAG 2.0 success criterion 1.1.1 and checks the following tech
 - If the `aria-describedby` attribute is provided, a long description was intended and is needed for the element.
 - This test assumes that `role="img"` is used exclusively on elements that represent graphical content.
 
-## Test Subject Type
+## Aspects Under Test
 
-The following test subject types are used in this rule:
-- DOM Tree
+- [DOM Tree](https://www.w3.org/TR/act-rules-format/#input-aspects-dom)
+- [CSS Styling](https://www.w3.org/TR/act-rules-format/#input-aspects-css)
 
 ## Test Procedure
 
-### Selector
+### Applicability
 
-Select all elements that match the following CSS selector:
+This rule applies to any element with a [semantic role](#definitions) of `img` that has a [non-empty](#definitions) `aria-describedby` attribute and is [perceivable by assistive technologies](#definitions).
 
-```css:
-img[aria-describedby],
-input[type="image"][aria-describedby],
-[role="img"][aria-describedby]
-```
+### Expectation 1 
 
-Exclude any elements that are not visible to screen-readers.
+Each *target element* has at least one of the identifiers in the `aria-describedby` attribute that is a [valid identifier](#).
 
-For each selected element, go through the following steps:
+### Expectation 2
 
-### Test Case
+Each *target element* refers to at least one existing element with the `aria-describedby` attribute.
 
-#### Step 1
+### Expectation 3
 
-Check if at least one of the `aria-describedby` attribute values are [valid identifiers](https://www.w3.org/TR/html5/dom.html#the-id-attribute).
+The element(s) targeted by the `aria-describedby` attribute of each *target element* provides an extended description of the *target element* complementing the [accessible name](#definitions).
 
-If yes, continue with [step 2](#step-2).
+## Definitions
 
-Else, return [step1-fail](#step1-fail).
-
-#### Step 2
-
-Check if at least one of the elements referenced by valid `aria-describedby` attribute values exists.
-
-If yes, continue with [step 3](#step-3).
-
-Else, return [step2-fail](#step2-fail).
-
-#### Step 3
-
-- Concatenate the results of [Text Alternative Computation][TXTALT] Algorithm run on the element itself and assign it to variable `T1`
-- Concatenate the results of [Text Alternative Computation][TXTALT] Algorithm run on all elements referenced by the `aria-describedby` attribute and assign it to variable `T2`
-
-Check if `T2` provides an extended description of the image complementary to `T1`.
-
-**User Input Question:**
-
-| Property     | Value
-|--------------|---------
-| highlight    | Element with `T1` and element with `T2`
-| question     | Does `T2` provide an extended description of the image complementary to `T1`?
-| help         | If the image contributes meaning to the page or provide any functionality or conveys information additional to the text of the page, this must be described.
-| repair       | If no, could you suggest a long text alternative, which would sufficiently describe the image?
-| user_profile | Requires sight
-| context      | yes
-
-If yes, return [step3-pass](#step3-pass).
-
-Else return [step3-fail](#step3-fail).
-
-## Outcomes
-
-<div class="collapsing" markdown="1" id="outcome-data">
-
-The resulting assertion is as follows,
-
-| Property | Value
-|----------|----------
-| type     | Assertion
-| test     | act:{{ page.rule_id }}
-| subject  | *the selected element*
-| mode     | earl:{{ page.test_mode }}
-| result   | << One TestResult from below >>
-
-### step1-fail
-
-| Property    | Value
-|-------------|----------
-| type        | TestResult
-| outcome     | Failed
-| description | None of the `aria-describedby` attribute values are valid identifiers.
-
-### step2-fail
-
-| Property    | Value
-|-------------|----------
-| type        | TestResult
-| outcome     | Failed
-| description | None of the elements referenced by `aria-describedby` exist.
-
-### step3-pass
-
-| Property    | Value
-|-------------|----------
-| type        | TestResult
-| outcome     | Passed
-| description | The long description provided using `aria-describedby` is sufficiently descriptive.
-
-### step3-fail
-
-| Property    | Value
-|-------------|----------
-| type        | TestResult
-| outcome     | Failed
-| description | The long description provided using `aria-describedby` is not sufficiently descriptive.
-
-</div>
+*This rule is an example, precise definitions will be added before publication.*
 
 ## Changelog
 
-This is the first version of this rule.
-
-[TXTALT]: ../definitions/text-alternative-compute.html
+- Rule is updated to applicability / expectations format
