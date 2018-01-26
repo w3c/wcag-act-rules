@@ -41,15 +41,15 @@ This rule applies to any element with a [semantic role](#definitions) of `img` t
 
 ### Expectation 1 
 
-Each *target element* has at least one of the identifiers in the `aria-describedby` attribute that is a [valid identifier](#).
+For each *target element*, at least one of the identifiers in the `aria-describedby` attribute is a [valid identifier](#definitions).
 
 ### Expectation 2
 
-Each *target element* refers to at least one existing element with the `aria-describedby` attribute.
+For each *target element* that fulfills Expectation 1, at least one of the elements referenced by the `aria-describedby` attribute exists.
 
 ### Expectation 3
 
-The element(s) targeted by the `aria-describedby` attribute of each *target element* provides an extended description of the *target element* complementing the [accessible name](#definitions).
+For each *target element* that fulfills Expectation 2, the [accessible description](#definitions) provides an extended description of the image complementing the [accessible name](#definitions).
 
 ## Definitions
 
