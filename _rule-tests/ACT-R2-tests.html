@@ -12,56 +12,47 @@ rule_id: ACT-R2
 # Lines starting with "#" are comments and will be ignored
 
 testcases:
-  step-1-pass:
+  pass:
     - |
       <img src="../assets/sample-image.jpg"
-        aria-describedby="imgdesc1">
+        aria-describedby="img-desc1">
+      <div id="img-desc1">The sun is rising 
+        over a jetty by a lake</div>
     - |
       <img src="../assets/sample-image.jpg"
-        aria-describedby="imgdesc1 imgdesc1-a">
-
-  step-1-fail:
+        aria-describedby="img-desc1 non-existing">
+      <div id="img-desc1">The sun is rising 
+        over a jetty by a lake</div>
     - |
-      <img src="../assets/sample-image.jpg"
-        aria-describedby="imgdesc1-fail">
-
-  step-2-pass:
-    - |
-      <img src="../assets/sample-image.jpg"
-        aria-describedby="imgdesc2-a imgdesc2-b">
-      <div id="imgdesc2-b">Description</div>
-
-  step-2-fail:
-    - |
-      <img src="../assets/sample-image.jpg"
-        aria-describedby="imgdesc2-a imgdesc2-b">
-      <div id="imgdesc2-c">Description</div>
-    - |
-      <img src="../assets/sample-image.jpg"
-        aria-describedby="">
-
-  step-3-pass:
-    - |
-      <img src="../assets/sample-image.jpg"
-        alt="Sunrise"
-        aria-describedby="imgdesc3-a">
-      <div id="imgdesc3-a">The sun is rising 
+      <object data="../assets/sample-image.jpg"
+        aria-describedby="img-desc1"
+        role="img"></object>
+      <div id="img-desc1">The sun is rising 
         over a jetty by a lake</div>
 
-  step-3-fail:
+  expectation-1-fail:
     - |
       <img src="../assets/sample-image.jpg"
-        alt="Sunrise"
-        aria-describedby="imgdesc3-b">
-      <div id="imgdesc3-b">Rabbits</div>
+        aria-describedby="123-invalid-ID">
+
+  expectation-2-fail:
+    - |
+      <img src="../assets/sample-image.jpg"
+        aria-describedby="non-existing">
+
+  expectation-3-fail:
+    - |
+      <img src="../assets/sample-image.jpg"
+        aria-describedby="bad-description">
+      <div id="bad-description">sample-image.jpg</div>
 
 inapplicables:
-  - <img src="../assets/sample-image.jpg">
+  - <img src="../assets/sample-image.jpg" alt="">
   - |
     <img src="../assets/sample-image.jpg"
       alt="The image is described in the text below">
   - |
-    <div aria-describedby="divdesc"></div>
+    <button aria-describedby="divdesc">Not an img</button>
     <div id="divdesc">Description</div>
 
 ---
