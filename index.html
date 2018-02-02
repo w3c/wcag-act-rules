@@ -10,7 +10,6 @@ title: ACT Rules Overview (Demo)
     <tr>
       <th>Number</th>
       <th>Rule name</th>
-      <th>Test mode</th>
       <th>WCAG criterion</th>
     </tr>
   </thead>
@@ -20,7 +19,6 @@ title: ACT Rules Overview (Demo)
       rule.rule_id 
     }}</a></th>
     <td>{{ rule.name }}</td>
-    <td>{{ rule.test_mode }}</td>
     <td><ul>
       {% for critId in rule.success_criterion %}
         <li>

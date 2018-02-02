@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<h1>Noise warning</h1>
+
+<div class="note">
+  <p><strong>Warning:</strong> The following page contains <strong>multiple auto-playing audio and video</strong>, which can unpleasant, and violates the <a href="https://www.w3.org/TR/WCAG20/#cc5">Non-interference conformance requirement of WCAG 2.0</a>.</p>
+
+  <ul>
+    <li><a href="#" id="continue">I understand the warning, take me to the tests</a></li>
+    <li><a href="#" onclick="window.history.back();">Take me back.</a></li>
+  </ul>
+</div>
+
+<hr>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  var page = window.location.search.split('page=')[1]
+  document.querySelector('#continue').href = page
+});
+</script>
