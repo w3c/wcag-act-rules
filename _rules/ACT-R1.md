@@ -1,7 +1,6 @@
 ---
 rule_id: ACT-R1
 name: Meta refresh and redirect is not used
-test_mode: automatic
 environment: DOM Structure
 
 success_criterion:
@@ -26,58 +25,26 @@ This test checks if meta element is not used for delayed redirecting or refreshi
 
 - This test assumes no functionality was provided by the website for the user to adjust the timer.
 
+## Aspects Under Test
+
+- [DOM Tree](https://www.w3.org/TR/act-rules-format/#input-aspects-dom)
+
 ## Test procedure
 
-### Selector
+### Applicability
 
-Select all elements that match the following CSS selector:
+The rule applies to any `meta` element with the value of the `http-equiv` attribute set to `refresh`. This can be found using the following CSS selector: `meta[http-equiv="refresh"]`.
 
-    meta[http-equiv="refresh"][content]
+### Expectation
 
-### Step 1
-
-Take the value of the content attribute of the selected element.
-
-Remove any characters starting after the first comma or semicolon from the value.
-
-Parse the remainder to an integer.
-
-If the integer is invalid or 0, return [step1-pass](#step1-pass)
-
-Else return [step1-fail](#step1-fail)
-
-## Outcomes
-
-<div class="collapsing" markdown="1" id="outcome-data">
-
-The resulting assertion is as follows,
-
-| Property | Value
-|----------|----------
-| type     | Assertion
-| test     | act:{{ page.rule_id }}
-| subject  | *the selected element*
-| mode     | earl:{{ page.test_mode }}
-| result   | << One TestResult from below >>
-
-### step1-pass
-
-| Property    | Value
-|-------------|----------
-| type        | TestResult
-| outcome     | Passed
-| description | << todo >>
-
-### step1-fail
-
-| Property    | Value
-|-------------|----------
-| type        | TestResult
-| outcome     | Failed
-| description | Meta refresh should not be used unless it is instantaneous.
-
-</div>
+The text before the first comma or semicolon is either `0` or not a number (ignore any whitespace characters).
 
 ## Changelog
 
-This is the first version of this rule.
+Changes since the [previous version](https://github.com/w3c/wcag-act-rules/blob/73ed1156e84b44b97f383d214da7791e5c11b76c/_rules/ACT-R1.md)
+
+- Rule is updated to applicability / expectations format
+
+## Acknowledgment
+
+This ACT rule was created by [Wilco Fiers](https://github.com/WilcoFiers).
