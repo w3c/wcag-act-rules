@@ -56,4 +56,10 @@ The mechanism must be in a media player in the main section of the page, which i
 
 ## Changelog
 
-This is the first version of this rule.
+Changes since the [previous version](https://github.com/w3c/wcag-act-rules/blob/73ed1156e84b44b97f383d214da7791e5c11b76c/_rules/ACT-R3.md)
+
+- Rule ACT-R3 is broken up into a rule group ACT-G1
+
+## Acknowledgment
+
+This ACT rule was created by Frank Berker and [Wilco Fiers](https://github.com/WilcoFiers).
