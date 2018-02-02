@@ -57,4 +57,10 @@ For each *target element* that fulfills Expectation 2, the [accessible descripti
 
 ## Changelog
 
+Changes since the [previous version](https://github.com/w3c/wcag-act-rules/blob/9f0b0b5b357db67e09faa85fd7a54bb4a957d95d/_rules/ACT-R2.md)
+
 - Rule is updated to applicability / expectations format
+
+## Acknowledgment
+
+This ACT rule was created by Frank Berker and Kasper Isager.
