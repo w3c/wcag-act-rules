@@ -33,7 +33,7 @@ This test checks if meta element is not used for delayed redirecting or refreshi
 
 ### Applicability
 
-The rule applies to any meta element with the value of the `http-equiv` attribute set to `refresh`.
+The rule applies to any `meta` element with the value of the `http-equiv` attribute set to `refresh`. This can be found using the following CSS selector: `meta[http-equiv="refresh"]`.
 
 ### Expectation
 
@@ -41,4 +41,10 @@ The text before the first comma or semicolon is either `0` or not a number (igno
 
 ## Changelog
 
+Changes since the [previous version](https://github.com/w3c/wcag-act-rules/blob/73ed1156e84b44b97f383d214da7791e5c11b76c/_rules/ACT-R1.md)
+
 - Rule is updated to applicability / expectations format
+
+## Acknowledgment
+
+This ACT rule was created by [Wilco Fiers](https://github.com/WilcoFiers).
