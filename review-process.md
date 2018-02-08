@@ -1,9 +1,11 @@
 ---
 layout: default
-title: ACT Review process
+title: ACT Review Rrocess
 ---
 
-*Note: This is a draft proposal for discussion. It has not yet been reviewed by ACT TF, AG WG, and Auto-WCAG CG. It currently has no formal standing in W3C, and can only be considered as such.*
+# ACT Review Process
+
+*Note: This is a draft proposal for discussion. It has not yet been reviewed by ACT TF, AG WG, and Auto-WCAG CG. It currently has no formal standing in W3C, and can only be considered as such. If you have feedback, please comment by filing [https://github.com/w3c/wcag-act/issues/ GitHub issues in the WCAG ACT repository], if this is not feasible, by email to [mailto:public-wcag-act-comments@w3.org public-wcag-act-comments@w3.org].*
 
 ## Introduction
 
@@ -57,6 +59,6 @@ An ACT Rule may be overhauled through a comprehensive pull request covering the 
 
 In case of disagreement, the community group Chairs and, if available, the W3C Staff Contacts are responsible for conflict resolution.
 
-# Step 6: ACT Rule Acceptance
+## Step 6: ACT Rule Acceptance
 
 The [W3C Accessibility Guidelines Working Group (AGWG)](https://www.w3.org/WAI/GL/) may at any time choose to accept, modify, or remove ACT Rules developed through this process, as part of the authoritative set of W3C ACT Rules for the W3C Web Content Accessibility Guidelines (WCAG). AGWG may delegate this decision or coordinate with other relevant groups, such as the [W3C Accessibility Conformance Testing (ACT) Task Force](http://www.w3.org/wai/gl/task-forces/conformance-testing/) or the [W3C Publishing Working Group](https://www.w3.org/publishing/groups/publ-wg/). In this process, AGWG may adopt additional quality criteria for the test rules or community group, such as on the extent of review, consensus, and type of participation reflected in the development and review process. In case of disagreement, the AGWG Chairs and W3C Staff Contacts are responsible for conflict resolution. They may coordinate with the relevant community group Chairs and, if available, the W3C Staff Contacts.
