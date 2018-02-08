@@ -1,42 +1,20 @@
 ---
 layout: default
-title: ACT Rules Overview (Demo)
+title: ACT Rules Overview
 ---
 
-<h1>ACT Rules (Demo)</h1>
+<h1>ACT Rules Overview</h1>
 
-<table class="rules-table">
-  <thead>
-    <tr>
-      <th>Number</th>
-      <th>Rule name</th>
-      <th>WCAG criterion</th>
-    </tr>
-  </thead>
-  {% for rule in site.rules %}
-  <tr>
-    <th><a href="{{ rule.url | prepend: site.baseurl }}">{{
-      rule.rule_id 
-    }}</a></th>
-    <td>{{ rule.name }}</td>
-    <td><ul>
-      {% for critId in rule.success_criterion %}
-        <li>
-          {% assign criterion = site.data.wcag2[critId] %}
-          <a href="https://www.w3.org/TR/WCAG20/#{{ criterion.id }}" 
-            title="Opens a new window" target="_blank">
-          {{ criterion.num }}
-          {{ criterion.handle }}
-          (Level {{ criterion.level }})
-          </a>
-        </li>
-      {% endfor %}
-    </ul></td>
-  </tr>
-  {% endfor %}
-</table>
+<p>W3C Accessibility Conformance Testing (ACT) Rules are publicy documented ways for testing the conformance of content to the <a href="https://www.w3.org/WAI/intro/wcag">Web Content Accessibility Guidelines (WCAG)</a>. ACT Rules are contributed, developed, and vetted by the community, to support transparency and consensus. They are intended to be used in the development of fully- and semi-automated testing tools, and manual evaluation methodologies for web accessibility.</p>
 
-<p>To contribute new rules, please follow the <a href="review-process.html">ACT Review process</a>.</p>
+<h2>List of ACT Rules</h2>
+<p><strong><a href="https://w3c.github.io/wcag-act-rules/rules.html">List of ACT Rules</a></strong> is currently only for demonstration purposes, to show how such ACT Rules could look like.</p>
 
-<hr >
-{% include review-note.html %}
+<h2>ACT Review Process</h2>
+<p><strong><a href="https://w3c.github.io/wcag-act-rules/review-process.html">ACT Review Process</a></strong> defines the community process for contributing, developing, and reviewing ACT Rules.</p>
+
+<h2>ACT Rules Development</h2>
+<p>ACT Rules can be developed by different communities. Currently the <strong><a href="https://auto-wcag.github.io/auto-wcag/">Auto-WCAG Community Group</a></strong> is an active place of rules development.</p>
+
+<h2>ACT Rules Format</h2>
+<p>The <strong><a href="https://www.w3.org/TR/act-rules-format/">ACT Rules Format</a></strong> specification defines the requirements for writing accessibility test rules, and is the basis for ACT.</p>
