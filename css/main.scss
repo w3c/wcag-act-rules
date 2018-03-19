@@ -17,10 +17,23 @@ body {
   flex-direction: row;
   justify-content: space-between;
 
-  article {
-    header {
-      background-color: initial;
-      color: initial;
+    // style rests of semantic element to achieve look and feel.
+    figure {
+      margin: initial;
+      text-align: initial;
+      >figcaption {
+        background-color: initial;
+        color: initial;
+        font-size: initial;
+        font-style: initial;
+      }
+    }
+
+    section {
+      >header {
+        background-color: initial;
+        color: initial;
+      }
     }
 
     pre {
@@ -39,7 +52,7 @@ body {
       flex: 1;
       margin: 8px;
     }
-  }
+  
 }
 
 .rules-table {
