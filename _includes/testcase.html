@@ -18,10 +18,16 @@
   {% endif %}
 
   <div class="testcase">
-    <pre><code>{{ code }}</code></pre>
-    <div data-outcome="{{ result }}" data-outcome-id="{{ testName }}">
-      {{ html }}
-    </div>
+      <article>
+            <header>Code Snippet:</header>
+            <pre aria-label="Code Snippet for {{ testname }}"><code>{{ code }}</code></pre>
+      </article>
+      <article>
+            <header>Example Output:</header>
+            <div aria-label="Example Output for {{ testname }}" data-outcome="{{ result }}" data-outcome-id="{{ testname }}">
+              {{ html }}
+            </div>
+      </article>
   </div>
 
 {% endfor %}

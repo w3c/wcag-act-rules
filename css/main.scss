@@ -17,21 +17,28 @@ body {
   flex-direction: row;
   justify-content: space-between;
 
-  pre {
-    background: #EEE;
-    border: solid 1px #ccc;
-    padding: 3px;
-    flex: 1;
-    margin: 8px;
-    border-radius: 4px;
-  }
+  article {
+    header {
+      background-color: initial;
+      color: initial;
+    }
 
-  [data-outcome] {
-    border: solid 1px #005A9C;
-    border-radius: 4px;
-    padding: 8px;
-    flex: 1;
-    margin: 8px;
+    pre {
+      background: #EEE;
+      border: solid 1px #ccc;
+      padding: 3px;
+      flex: 1;
+      margin: 8px;
+      border-radius: 4px;
+    }
+
+    [data-outcome] {
+      border: solid 1px #005A9C;
+      border-radius: 4px;
+      padding: 8px;
+      flex: 1;
+      margin: 8px;
+    }
   }
 }
 
