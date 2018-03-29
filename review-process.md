@@ -1,11 +1,11 @@
 ---
 layout: default
-title: ACT Review Rrocess
+title: ACT Review Process
 ---
 
 # ACT Review Process
 
-*Note: This is a draft proposal for discussion. It has not yet been reviewed by ACT TF, AG WG, and Auto-WCAG CG. It currently has no formal standing in W3C, and can only be considered as such. If you have feedback, please comment by filing [https://github.com/w3c/wcag-act/issues/ GitHub issues in the WCAG ACT repository], if this is not feasible, by email to [mailto:public-wcag-act-comments@w3.org public-wcag-act-comments@w3.org].*
+*Note: This is a draft proposal for discussion. It has not yet been reviewed by ACT TF, AG WG, and Auto-WCAG CG. It currently has no formal standing in W3C, and can only be considered as such. If you have feedback, please comment by filing [GitHub issues in the WCAG ACT repository](https://github.com/w3c/wcag-act/issues/), if this is not feasible, by email to [public-wcag-act-comments@w3.org](mailto:public-wcag-act-comments@w3.org).*
 
 ## Introduction
 
