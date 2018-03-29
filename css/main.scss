@@ -61,7 +61,7 @@ body {
   margin: 0 auto;
 }
 
-header, footer {
+header {
   background-color: #003366;
   color: #fff;
   div {
@@ -94,6 +94,31 @@ header, footer {
       img {
         display: inline;
       }
+    }
+  }
+}
+
+footer {
+  background-color: #003366;
+  color: #fff;
+  div {
+    color: #fff;
+    max-width: 50em;
+    margin: 0 auto;
+    a {
+      color: #fff !important;
+      margin: 0 !important;
+      border-bottom: 1px solid #036 !important;
+      &:hover, &:focus {
+        border-bottom: 1px solid #fff !important;
+        margin: 0 !important;
+      }
+      img {
+        display: inline;
+      }
+    }
+    p {
+      color: #fff !important;
     }
   }
 }
