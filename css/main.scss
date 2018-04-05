@@ -17,22 +17,42 @@ body {
   flex-direction: row;
   justify-content: space-between;
 
-  pre {
-    background: #EEE;
-    border: solid 1px #ccc;
-    padding: 3px;
-    flex: 1;
-    margin: 8px;
-    border-radius: 4px;
-  }
+    // style rests of semantic element to achieve look and feel.
+    figure {
+      margin: initial;
+      text-align: initial;
+      >figcaption {
+        background-color: initial;
+        color: initial;
+        font-size: initial;
+        font-style: initial;
+      }
+    }
 
-  [data-outcome] {
-    border: solid 1px #005A9C;
-    border-radius: 4px;
-    padding: 8px;
-    flex: 1;
-    margin: 8px;
-  }
+    section {
+      >header {
+        background-color: initial;
+        color: initial;
+      }
+    }
+
+    pre {
+      background: #EEE;
+      border: solid 1px #ccc;
+      padding: 3px;
+      flex: 1;
+      margin: 8px;
+      border-radius: 4px;
+    }
+
+    [data-outcome] {
+      border: solid 1px #005A9C;
+      border-radius: 4px;
+      padding: 8px;
+      flex: 1;
+      margin: 8px;
+    }
+  
 }
 
 .rules-table {
