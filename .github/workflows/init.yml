@@ -1,0 +1,33 @@
+name: Update Submodules
+
+on:
+  push
+  
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+      with:
+        submodules: true
+    - name: Update Externals
+      run: |
+        git submodule update --remote
+        cd _data
+        rm lang.json techniques.yml translations.yml wcag.yml
+        ln -s ../_external/data/lang.json
+        ln -s ../_external/data/techniques.yml
+        ln -s ../_external/data/translations.yml
+        ln -s ../_external/data/wcag.yml
+        cd ..
+#        REPONAME = $GITHUB_REPOSITORY | sed -e "s|w3c/||"
+#        find ./myFolder -type f -exec sed -i "s/wai-resource/${REPONAME}/g" '{}' \;
+    - name: commit changed files
+      uses: stefanzweifel/git-auto-commit-action@v2.1.0
+      with:
+        commit_message: Apply automatic changes
+        branch: master
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
