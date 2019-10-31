@@ -326,6 +326,9 @@
     pages:
     - name: Accessibility Conformance Testing – ACT
       url: "/standards-guidelines/act/"
+      pages:
+      - name: "Rule: HTML page has title"
+        url: "/standards-guidelines/act/rules/html-page-has-title-2779a5/"
     - name: Evaluation and Report Language – EARL
       url: "/standards-guidelines/earl/"
   - name: Personalization
