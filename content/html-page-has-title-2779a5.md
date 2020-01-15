@@ -3,20 +3,14 @@ title: "HTML page has title"
 permalink: /standards-guidelines/act/rules/html-page-has-title-2779a5/
 ref: /standards-guidelines/act/rules/html-page-has-title-2779a5/
 lang: en
-# translators: # Uncomment (remove #) for translations, one - name line per translator.
-# - name: Translator 1
-# - name: Translator 2
-# contributors:
-# - name: Contributor 1
-# - name: Contributor 2
 github:
   repository: w3c/wcag-act-rules
   path: content/html-page-has-title-2779a5.md
-footer: > # Text in footer in HTML
-  <p> This is the text in the footer </p>
+# footer: > # Text in footer in HTML
+#   <p> This is the text in the footer </p>
 ---
 
-Rule Type
+Rule Type:
 :   atomic
 
 Rule ID:
@@ -47,8 +41,7 @@ The root element of the [web page](https://www.w3.org/TR/WCAG21/#dfn-web-page-s)
 
 **Note**: Documents embedded into other documents, such as through `iframe` or `object` elements are not applicable because they are not web pages according to the definition in WCAG.
 
-Expectation 1
--------------
+## Expectation 1
 
 Each target element has at least one [descendant](https://dom.spec.whatwg.org/#concept-tree-descendant) that is an HTML `title` element.
 
@@ -56,30 +49,25 @@ Each target element has at least one [descendant](https://dom.spec.whatwg.org/#c
 
 **Note**: The [HTML 5.2 specification](https://www.w3.org/TR/html52/document-metadata.html#the-title-element) requires that a document only has one title element, and that it is a child of the head element of a document. However, HTML 5.2 also describes what should happen in case of multiple titles, and titles outside the head element. Because of this, neither of these validation issues causes a conformance problem for WCAG.
 
-Expectation 2
--------------
+## Expectation 2
 
 For each target element, the first HTML `title` element that is a [descendant](https://dom.spec.whatwg.org/#concept-tree-descendant) of the [document element](https://dom.spec.whatwg.org/#document-element) has [children](https://dom.spec.whatwg.org/#concept-tree-child) that are [text nodes](https://dom.spec.whatwg.org/#text) that are not only [whitespace](#whitespace).
 
-Assumptions
------------
+## Assumptions
 
 *There are currently no assumptions*
 
-Accessibility Support
----------------------
+## Accessibility Support
 
 *There are no major accessibility support issues known for this rule.*
 
-Background
-----------
+## Background
 
 - [Understanding Success Criterion 2.4.2: Page Titled](https://www.w3.org/WAI/WCAG21/Understanding/page-titled)
 - [G88: Providing descriptive titles for Web pages](https://www.w3.org/WAI/WCAG21/Techniques/general/G88)
 - [H25: Providing a title using the title element](https://www.w3.org/WAI/WCAG21/Techniques/html/H25)
 
-Test Cases
-----------
+## Test Cases
 
 ### Passed
 
