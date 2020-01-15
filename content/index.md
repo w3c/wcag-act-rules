@@ -27,3 +27,4 @@ All ACT Rules:
 {:/}
 
 * [HTML page has title](/standards-guidelines/act/rules/html-page-has-title-2779a5/)
+* [Image button has accessible name](/standards-guidelines/act/rules/rules/image-button-accessible-name-59796f/)
