@@ -20,13 +20,12 @@ Last modified:
 :   Sep 25, 2019
 
 Accessibility Requirements Mapping
-:   2.4.2 Page Titled (Level: A)
-    - [Learn More about 2.4.2 (Page Titled)](https://www.w3.org/TR/WCAG21/#page-titled)
+:   [2.4.2 Page Titled (Level A)](https://www.w3.org/TR/WCAG21/#page-titled)
     - **Required for conformance** to WCAG 2.0 and above on level A and above
     - [Outcome](#outcome) mapping:
-    - Any `failed` outcomes: not satisfied
-    - All `passed` outcomes: further testing is needed
-    - An `inapplicable` outcome: further testing is needed
+      - Any `failed` outcomes: not satisfied
+      - All `passed` outcomes: further testing is needed
+      - An `inapplicable` outcome: further testing is needed
 
 Input Aspects
 : [DOM Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom)

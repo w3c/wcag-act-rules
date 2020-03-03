@@ -28,3 +28,6 @@ All ACT Rules:
 
 * [HTML page has title](/standards-guidelines/act/rules/html-page-has-title-2779a5/)
 * [Image button has accessible name](/standards-guidelines/act/rules/rules/image-button-accessible-name-59796f/)
+* [HTML page has `lang` attribute](/standards-guidelines/act/rules/rules/html-page-lang-b5c3f8/)
+* [HTML page language is valid](/standards-guidelines/act/rules/rules/html-page-lang-valid-bf051a/)
+* [HTML page lang and xml:lang attributes have matching values](/standards-guidelines/act/rules/rules/html-page-lang-xml-lang-match-5b7ae0/)
