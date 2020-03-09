@@ -21,15 +21,15 @@ Accessibility Requirements Mapping
 :   [3.1.1 Language of Page (Level A)](https://www.w3.org/TR/WCAG21/#language-of-page)
     - **Required for conformance** to WCAG 2.0 and above on level A and above
     - [Outcome](#outcome) mapping:
-        - Any `failed` outcomes: not satisfied
-        - All `passed` outcomes: further testing is needed
-        - An `inapplicable` outcome: further testing is needed
+        - Any `failed` outcomes: success criterion is not satisfied
+        - All `passed` outcomes: success criterion needs further testing
+        - An `inapplicable` outcome: success criterion needs further testing
 :   [H57: Using the language attribute on the HTML element](https://www.w3.org/WAI/WCAG21/Techniques/html/H57)
     - **Required for conformance** to WCAG 2.0 and above on level A and above
     - [Outcome](#outcome) mapping:
-        - Any `failed` outcomes: not satisfied
-        - All `passed` outcomes: further testing is needed
-        - An `inapplicable` outcome: further testing is needed
+        - Any `failed` outcomes: technique is not satisfied
+        - All `passed` outcomes: technique needs further testing
+        - An `inapplicable` outcome: technique needs further testing
 
 Input Aspects
 : [DOM Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom)

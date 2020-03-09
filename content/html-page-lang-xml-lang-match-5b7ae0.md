@@ -21,9 +21,9 @@ Accessibility Requirements Mapping
 :   [3.1.1 Language of Page (Level A)](https://www.w3.org/TR/WCAG21/#language-of-page)
     - **Required for conformance** to WCAG 2.0 and above on level A and above
     - [Outcome](#outcome) mapping:
-        - Any `failed` outcomes: not satisfied
-        - All `passed` outcomes: further testing is needed
-        - An `inapplicable` outcome: further testing is needed
+        - Any `failed` outcomes: success criterion is not satisfied
+        - All `passed` outcomes: success criterion needs further testing
+        - An `inapplicable` outcome: success criterion needs further testing
 
 Input Aspects
 : [DOM Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom)
@@ -59,7 +59,7 @@ For each test target, the values of the [primary language subtags][], if any exi
 
 ## Accessibility Support
 
-Since most assistive technologies will consistently use `lang` over `xml:lang` when both are used, violation of this rule may not necessarily be a violation of WCAG 2. Only when there are inconsistencies between assistive technologies, as to which attribute is used to determine the language, does this lead to a violation of SC 3.1.1.
+Since most assistive technologies will consistently use `lang` over `xml:lang` when both are used, violation of this rule may not necessarily be a violation of WCAG 2. Only when there are inconsistencies between assistive technologies as to which attribute is used to determine the language does this lead to a violation of SC 3.1.1.
 
 ## Background
 

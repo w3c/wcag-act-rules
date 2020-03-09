@@ -21,15 +21,15 @@ Accessibility Requirements Mapping
 :   [1.1.1 Non-Text Content (Level A)](https://www.w3.org/TR/WCAG21/#non-text-content)
     - **Required for conformance** to WCAG 2.0 and above on level A and above
     - [Outcome](#outcome) mapping:
-        - Any `failed` outcomes: not satisfied
-        - All `passed` outcomes: further testing is needed
-        - An `inapplicable` outcome: further testing is needed
+        - Any `failed` outcomes: success criterion is not satisfied
+        - All `passed` outcomes: success criterion needs further testing
+        - An `inapplicable` outcome: success criterion needs further testing
 :   [4.1.2 Name, Role, Value (Level A)](https://www.w3.org/TR/WCAG21/#name-role-value)
     - **Required for conformance** to WCAG 2.0 and above on level A and above
     - [Outcome](#outcome) mapping:
-        - Any `failed` outcomes: not satisfied
-        - All `passed` outcomes: further testing is needed
-        - An `inapplicable` outcome: further testing is needed
+        - Any `failed` outcomes: success criterion is not satisfied
+        - All `passed` outcomes: success criterion needs further testing
+        - An `inapplicable` outcome: success criterion needs further testing
 
 Input Aspects
 : [DOM Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom)
@@ -88,6 +88,8 @@ The image button has an [accessible name][] through the `aria-label` attribute.
 #### Passed Example 3
 
 The image button has an [accessible name][] through the `title` attribute.
+
+**note**: The `title` may not always be [accessibility supported](#accessibility-support).
 
 ```html
 <input type="image" src="/test-assets/shared/search-icon.svg" title="Search" />
