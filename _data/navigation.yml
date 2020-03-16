@@ -329,6 +329,14 @@
       pages:
       - name: "Rule: HTML page has title"
         url: "/standards-guidelines/act/rules/html-page-has-title-2779a5/"
+      - name: "Image button has accessible name"
+        url: "/standards-guidelines/act/rules/image-button-accessible-name-59796f/"
+      - name: "HTML page has `lang` attribute"
+        url: "/standards-guidelines/act/rules/html-page-lang-b5c3f8/"
+      - name: "HTML page language is valid"
+        url: "/standards-guidelines/act/rules/html-page-lang-valid-bf051a/"
+      - name: "HTML page lang and xml:lang attributes have matching values"
+        url: "/standards-guidelines/act/rules/html-page-lang-xml-lang-match-5b7ae0/"
     - name: Evaluation and Report Language – EARL
       url: "/standards-guidelines/earl/"
   - name: Personalization
