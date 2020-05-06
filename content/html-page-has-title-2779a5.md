@@ -245,8 +245,12 @@ This includes:
 
 ### Authors
 
-- [Wilco Fiers](https://github.com/wilcofiers)
-- [Stein Erik Skotkjerra](https://github.com/skotkjerra)
-- [Bryn Anderson](https://github.com/brynanders)
+This rule was written in the [ACT Rules community group](https://w3.org/community/act-r/), by:
+
 - [Anne Thyme Nørregaard](https://github.com/annethyme)
+- [Bryn Anderson](https://github.com/brynanders)
 - [Jey Nandakumar](https://github.com/jkodu)
+- [Stein Erik Skotkjerra](https://github.com/skotkjerra)
+- [Wilco Fiers](https://github.com/wilcofiers)
+
+Developed with the support of the EU-funded [WAI-Tools Project](https://www.w3.org/WAI/about/projects/wai-tools/).

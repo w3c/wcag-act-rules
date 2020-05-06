@@ -148,8 +148,9 @@ A conclusion that comes from evaluating an ACT Rule on a [test subject](https://
 
 ### Authors
 
+This rule was written in the [ACT Rules community group](https://w3.org/community/act-r/), by:
+
 - [Jey Nandakumar](https://github.com/jkodu)
+- [Annika Nietzio](https://github.com/annika-FTB) (previous author)
 
-### Previous Authors
-
-- [Annika Nietzio](https://github.com/annika-FTB)
+Developed with the support of the EU-funded [WAI-Tools Project](https://www.w3.org/WAI/about/projects/wai-tools/).

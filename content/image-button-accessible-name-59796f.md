@@ -338,8 +338,11 @@ This includes:
 
 ### Authors
 
+This rule was written in the [ACT Rules community group](https://w3.org/community/act-r/), by:
+
 - [Anne Thyme Nørregaard](https://github.com/annethyme)
 
+Developed with the support of the EU-funded [WAI-Tools Project](https://www.w3.org/WAI/about/projects/wai-tools/).
 
 [included in the accessibility tree]: #included-in-the-accessibility-tree 'Definition of included in the accessibility tree'
 [accessible name]: #accessible-name 'Definition of accessible name'
