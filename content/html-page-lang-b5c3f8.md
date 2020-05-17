@@ -1,5 +1,5 @@
 ---
-title: "HTML page has `lang` attribute"
+title: "HTML page has lang attribute"
 permalink: /standards-guidelines/act/rules/html-page-lang-b5c3f8/
 ref: /standards-guidelines/act/rules/html-page-lang-b5c3f8/
 lang: en
