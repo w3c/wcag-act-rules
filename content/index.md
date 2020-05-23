@@ -1,5 +1,5 @@
 ---
-title: "WCAG Rules"
+title: "WCAG ACT Rules"
 permalink: /standards-guidelines/act/rules/
 ref: /standards-guidelines/act/rules/
 lang: en
@@ -20,11 +20,13 @@ footer: > # Text in footer in HTML
 {% include box.html type="start" title="Summary" class="" %}
 {:/}
 
-All ACT Rules:
+This page lists [Accessibility Conformance Testing (ACT) Rules](https://www.w3.org/WAI/standards-guidelines/act/) formally published by the W3C Accessibility Guidelines Working Group (AGWG). Further rules are in development and will be published on this page once completed.
 
 {::nomarkdown}
 {% include box.html type="end" %}
 {:/}
+
+List of WCAG ACT Rules:
 
 * [HTML page has title](/standards-guidelines/act/rules/html-page-has-title-2779a5/)
 * [Image button has accessible name](/standards-guidelines/act/rules/image-button-accessible-name-59796f/)
