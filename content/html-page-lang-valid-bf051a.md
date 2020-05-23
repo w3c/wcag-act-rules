@@ -143,11 +143,12 @@ _Note:_ This definition intentionally differs from the [BCP 47][] syntax as user
 
 ### Authors
 
+This rule was written in the [ACT Rules community group](https://w3.org/community/act-r/), by:
+
 - [Jey Nandakumar](https://github.com/jkodu)
+- [Annika Nietzio](https://github.com/annika-FTB) (previous author)
 
-### Previous Authors
-
-- [Annika Nietzio](https://github.com/annika-FTB)
+Developed with the support of the EU-funded [WAI-Tools Project](https://www.w3.org/WAI/about/projects/wai-tools/).
 
 [primary language subtag]: https://tools.ietf.org/html/bcp47#section-2.2.1 'Definition of primary language subtag'
 [region subtag]: https://tools.ietf.org/html/bcp47#section-2.2.4 'Definition of region subtag'
