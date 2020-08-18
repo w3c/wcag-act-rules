@@ -1,11 +1,13 @@
 ---
-title: "Image button has accessible name"
-permalink: /standards-guidelines/act/rules/image-button-accessible-name-59796f/
-ref: /standards-guidelines/act/rules/image-button-accessible-name-59796f/
+title: "Image button has non-empty accessible name"
+permalink: /standards-guidelines/act/rules/image-button-non-empty-accessible-name-59796f/
+ref: /standards-guidelines/act/rules/image-button-non-empty-accessible-name-59796f/
 lang: en
 github:
   repository: w3c/wcag-act-rules
-  path: content/image-button-accessible-name-59796f.md
+  path: content/image-button-non-empty-accessible-name-59796f.md
+# footer: > # Text in footer in HTML
+#   <p> This is the text in the footer </p>
 ---
 
 Rule Type:
@@ -14,42 +16,50 @@ Rule Type:
 Rule ID:
 :   59796f
 
-Last modified:
-:   March 5, 2020
+Last Modified:
+:   Aug 17, 2020
 
-Accessibility Requirements Mapping
-:   [1.1.1 Non-Text Content (Level A)](https://www.w3.org/TR/WCAG21/#non-text-content)
-    - **Required for conformance** to WCAG 2.0 and above on level A and above
+Accessibility Requirements Mapping:
+:   [1.1.1 Non-text Content (Level A)](https://www.w3.org/TR/WCAG21/#non-text-content)
+    - **Required for conformance** to WCAG 2.0 and later on level A and higher
     - [Outcome](#outcome) mapping:
-        - Any `failed` outcomes: success criterion is not satisfied
-        - All `passed` outcomes: success criterion needs further testing
-        - An `inapplicable` outcome: success criterion needs further testing
+      - Any `failed` outcomes: success criterion is not satisfied
+      - All `passed` outcomes: success criterion needs further testing
+      - An `inapplicable` outcome: success criterion needs further testing
 :   [4.1.2 Name, Role, Value (Level A)](https://www.w3.org/TR/WCAG21/#name-role-value)
-    - **Required for conformance** to WCAG 2.0 and above on level A and above
+    - **Required for conformance** to WCAG 2.0 and later on level A and higher
     - [Outcome](#outcome) mapping:
-        - Any `failed` outcomes: success criterion is not satisfied
-        - All `passed` outcomes: success criterion needs further testing
-        - An `inapplicable` outcome: success criterion needs further testing
+      - Any `failed` outcomes: success criterion is not satisfied
+      - All `passed` outcomes: success criterion needs further testing
+      - An `inapplicable` outcome: success criterion needs further testing
+:   [G94: Providing short text alternative for non-text content that serves the same purpose and presents the same information as the non-text content](https://www.w3.org/WAI/WCAG21/Techniques/general/G94)
+    - Not required to conformance to any W3C accessibility recommendation.
+    - [Outcome](#outcome) mapping:
+      - Any `failed` outcomes: technique is not satisfied
+      - All `passed` outcomes: technique needs further testing
+      - An `inapplicable` outcome: technique needs further testing
+:   [G95: Providing short text alternatives that provide a brief description of the non-text content](https://www.w3.org/WAI/WCAG21/Techniques/general/G95)
+    - Not required to conformance to any W3C accessibility recommendation.
+    - [Outcome](#outcome) mapping:
+      - Any `failed` outcomes: technique is not satisfied
+      - All `passed` outcomes: technique needs further testing
+      - An `inapplicable` outcome: technique needs further testing
 
-Input Aspects
-: [DOM Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom)
-: [CSS Styling](https://www.w3.org/TR/act-rules-aspects/#input-aspects-css)
+Input Aspects:
+:   [DOM Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom)
+:   [CSS Styling](https://www.w3.org/TR/act-rules-aspects/#input-aspects-css)
 
 ## Description
 
-This rule checks that each image button element has an accessible name.
+This rule checks that each image button element has a non-empty accessible name.
 
 ## Applicability
 
-The rule applies to any HTML `input` element with a `type` attribute in the [`Image Button` state](<https://html.spec.whatwg.org/#image-button-state-(type=image)>), that is [included in the accessibility tree][].
-
-**Note:** The specification of the [`type`](https://html.spec.whatwg.org/#states-of-the-type-attribute) attribute describes in detail how to map the value of the attribute to its corresponding state.
+The rule applies to any `input` element where the [state of the `type` attribute](https://html.spec.whatwg.org/multipage/input.html#states-of-the-type-attribute) is `image`, and that is [included in the accessibility tree][].
 
 ## Expectation
 
 Each target element has an [accessible name][] that is not empty (`""`).
-
-**Note:** Testing that the [accessible name][] is descriptive is not part of this rule and must be tested separately.
 
 ## Assumptions
 
@@ -89,7 +99,7 @@ The image button has an [accessible name][] through the `aria-label` attribute.
 
 The image button has an [accessible name][] through the `title` attribute.
 
-**note**: The `title` may not always be [accessibility supported](#accessibility-support).
+**note**: The `title` attribute may not always be [accessibility supported](#accessibility-support).
 
 ```html
 <input type="image" src="/test-assets/shared/search-icon.svg" title="Search" />
@@ -176,15 +186,15 @@ The image button is ignored by assistive technologies because it is not [include
 
 ### Accessible Name
 
-The programmatically determined name of a user interface element that is [included in the accessibility tree](#included-in-the-accessibility-tree).
+The _accessible name_ is the programmatically determined name of a user interface element that is [included in the accessibility tree](#included-in-the-accessibility-tree).
 
 The accessible name is calculated using the [accessible name and description computation](https://www.w3.org/TR/accname).
 
 For native markup languages, such as HTML and SVG, additional information on how to calculate the accessible name can be found in [HTML Accessibility API Mappings 1.0, Accessible Name and Description Computation (working draft)](https://www.w3.org/TR/html-aam/#accessible-name-and-description-computation) and [SVG Accessibility API Mappings, Name and Description (working draft)](https://www.w3.org/TR/svg-aam/#mapping_additional).
 
-**Note**: As per the [accessible name and description computation](https://www.w3.org/TR/accname), each element always has an accessible name. When no accessible name is provided, the element will nonetheless be assigned an empty (`""`) one.
+**Note:** As per the [accessible name and description computation](https://www.w3.org/TR/accname), each element always has an accessible name. When no accessible name is provided, the element will nonetheless be assigned an empty (`""`) one.
 
-**Note**: As per the [accessible name and description computation](https://www.w3.org/TR/accname), accessible names are [flat string](https://www.w3.org/TR/accname-1.1/#terminology) trimmed of leading and trailing whitespace. Notably, it is not possible for a non-empty accessible name to be composed only of whitespace since these must be trimmed.
+**Note:** As per the [accessible name and description computation](https://www.w3.org/TR/accname), accessible names are [flat string](https://www.w3.org/TR/accname-1.1/#terminology) trimmed of leading and trailing whitespace. Notably, it is not possible for a non-empty accessible name to be composed only of whitespace since these must be trimmed.
 
 #### Accessibility Support
 
@@ -194,7 +204,7 @@ For native markup languages, such as HTML and SVG, additional information on how
 
 #### Examples
 
-**Note**: The examples presented here are non-normative and not testable. They serve to illustrate some common pitfalls about the definition and to help implementers of ACT rules understand it.
+**Note:** The examples presented here are non-normative and not testable. They serve to illustrate some common pitfalls about the definition and to help implementers of ACT rules understand it.
 
 The `input` elements have an accessible name of, respectively, "Billing Name" and "Billing Address". These accessible names are given by the `aria-labelledby` attributes and associated elements.
 
@@ -253,22 +263,58 @@ This `span` element has an empty accessible name (`""`) because `span` is not a 
 <label>ACT rules<span></span></label>
 ```
 
-**Note**: When the same element can have an accessible name from several sources, the order of precedence is: `aria-labelledby`, `aria-label`, own attributes, `label` element, name from content. The examples here are listed in the same order.
+**Note:** When the same element can have an accessible name from several sources, the order of precedence is: `aria-labelledby`, `aria-label`, own attributes, `label` element, name from content. The examples here are listed in the same order.
 
-**Note**: For more examples of accessible name computation, including many tricky cases, check the [Accessible Name Testable Statements](https://www.w3.org/wiki/AccName_1.1_Testable_Statements).
+**Note:** For more examples of accessible name computation, including many tricky cases, check the [Accessible Name Testable Statements](https://www.w3.org/wiki/AccName_1.1_Testable_Statements).
 
+### Explicit Semantic Role
 
-### Included In The Accessibility Tree
+The _explicit semantic role_ of an element is determined by its [role attribute][] (if any).
+
+The [role attribute][] takes a list of tokens. The explicit semantic role is the first valid role in this list. The valid roles are all non-abstract roles from [WAI-ARIA Specifications][]. If the element has no [role attribute][], or if it has one with no valid role, then this element has no explicit semantic role.
+
+Other roles may be added as they become available. Not all roles will be supported in all assistive technologies. Testers are encouraged to adjust which roles are allowed according to the [accessibility support base line][]. For the purposes of executing test cases in all rules, it should be assumed that all roles are supported by assistive technologies so that none of the roles fail due to lack of accessibility support.
+
+#### Accessibility Support
+
+Some browsers and assistive technologies treat the tokens of the `role` attribute as case-sensitive. Unless lowercase letters are used for the value of the `role` attribute, not all user agents will be able to interpret the tokens correctly. [ARIA in HTML (working draft)](https://www.w3.org/TR/html-aria/) also specifies that [authors must use lowercase letters for the `role` and `aria-*` attributes](https://www.w3.org/TR/html-aria/#case-sensitivity).
+
+### Focusable
+
+Elements that can become the target of keyboard input as described in the [HTML](https://www.w3.org/TR/html) specification of [focusable](https://html.spec.whatwg.org/#focusable-area) and [can be focused](https://html.spec.whatwg.org/#specially-focusable).
+
+### Hidden State
+
+An HTML element's _hidden state_ is "true" if at least one of the following is true for itself or any of its [ancestors][] in the [flat tree][]:
+
+- has a `hidden` attribute; or
+- has a [computed][] CSS property `display` of `none`; or
+- has a [computed][] CSS property `visibility` of `hidden`; or
+- has an `aria-hidden` attribute set to `true`
+
+In any other case, the element's _hidden state_ is "false".
+
+### Implicit Semantic Role
+
+The _implicit semantic role_ of an element is a pre-defined value given by the host language which depends on the element and its ancestors.
+
+Implicit roles for HTML and SVG, are documented in the [HTML accessibility API mappings (working draft)](https://www.w3.org/TR/html-aam/#html-element-role-mappings) and the [SVG accessibility API mappings (working draft)](https://www.w3.org/TR/svg-aam/#mapping_role_table).
+
+#### Accessibility Support
+
+- Images with an empty `alt` attribute should have an implicit role of `presentation`, according to the [HTML Accessibility API Mapping (work in progress)](https://www.w3.org/TR/html-aam-1.0/#html-element-role-mappings). However, there are several popular browsers that do not treat images with empty `alt` attribute as having a role of `presentation`. Instead, they add the `img` element to the accessibility tree with a role of either `img` or `graphic`.
+
+### Included in the accessibility tree
 
 Elements included in the accessibility tree of platform specific accessibility APIs. Elements in the accessibility tree are exposed to assistive technologies, allowing users to interact with the elements in a way that meet the requirements of the individual user.
 
 The general rules for when elements are included in the accessibility tree are defined in the [core accessibility API mappings](https://www.w3.org/TR/core-aam/). For native markup languages, such as HTML and SVG, additional rules for when elements are included in the accessibility tree can be found in the [HTML accessibility API mappings (working draft)](https://www.w3.org/TR/html-aam/) and the [SVG accessibility API mappings (working draft)](https://www.w3.org/TR/svg-aam/).
 
-> **Note:** Users of assistive technologies might still be able to interact with elements that are not included in the accessibility tree. An example of this is a [focusable](#focusable) element with an `aria-hidden` attribute with a value of `true`. Such an element could still be interacted with using sequential keyboard navigation regardless of the assistive technologies used, even though the element would not be included in the accessibility tree.
+**Note:** Users of assistive technologies might still be able to interact with elements that are not included in the accessibility tree. An example of this is a [focusable](#focusable) element with an `aria-hidden` attribute with a value of `true`. Such an element could still be interacted with using sequential keyboard navigation regardless of the assistive technologies used, even though the element would not be included in the accessibility tree.
 
 #### Examples
 
-**Note**: The examples presented here are non-normative and not testable. They serve to illustrate some common pitfalls about the definition and to help implementers of ACT rules understand it.
+**Note:** The examples presented here are non-normative and not testable. They serve to illustrate some common pitfalls about the definition and to help implementers of ACT rules understand it.
 
 This `span` element is included in the accessibility tree (by default, elements are included in the accessibility tree).
 
@@ -309,41 +355,118 @@ Although this `input` element is not included in the accessibility tree, it is s
 
 ### Outcome
 
-A conclusion that comes from evaluating an ACT Rule on a [test subject](https://www.w3.org/TR/act-rules-format/#test-subject) or one of its constituent [test target](https://www.w3.org/TR/act-rules-format/#test-target). An outcome can be one of the three following types:
+An _outcome_ is a conclusion that comes from evaluating an ACT Rule on a [test subject](https://www.w3.org/TR/act-rules-format/#test-subject) or one of its constituent [test target](https://www.w3.org/TR/act-rules-format/#test-target). An outcome can be one of the three following types:
 
 - **Inapplicable:** No part of the test subject matches the applicability
 - **Passed:** A [test target](https://www.w3.org/TR/act-rules-format/#test-target) meets all expectations
 - **Failed:** A [test target](https://www.w3.org/TR/act-rules-format/#test-target) does not meet all expectations
 
-**Note:** A rule has one `passed` or `failed` outcome for every [test target](https://www.w3.org/TR/act-rules-format/#test-target). When there are no test targets the rule has one inapplicable outcome. This means that each [test subject](https://www.w3.org/TR/act-rules-format/#test-subject) will have one or more outcomes.
+**Note:** A rule has one `passed` or `failed` outcome for every [test target](https://www.w3.org/TR/act-rules-format/#test-target). When there are no test targets the rule has one `inapplicable` outcome. This means that each [test subject](https://www.w3.org/TR/act-rules-format/#test-subject) will have one or more outcomes.
 
-**Note:** Implementers using the [EARL10-Schema](https://www.w3.org/TR/EARL10-Schema/) can express the outcome with the [outcome property](https://www.w3.org/TR/EARL10-Schema/#outcome). In addition to `passed`, `failed` and `inapplicable`, EARL 1.0 also defined an `incomplete` outcome. While this cannot be the outcome of an ACT Rule when applied in its entirety, it often happens that rules are only partially evaluated. For example, when applicability was automated, but the expectations have to be evaluated manually. Such "interim" results can be expressed with the incomplete outcome.
+**Note:** Implementations using the [EARL10-Schema](https://www.w3.org/TR/EARL10-Schema/) can express the outcome with the [outcome property](https://www.w3.org/TR/EARL10-Schema/#outcome). In addition to `passed`, `failed` and `inapplicable`, EARL 1.0 also defined an `incomplete` outcome. While this cannot be the outcome of an ACT Rule when applied in its entirety, it often happens that rules are only partially evaluated. For example, when applicability was automated, but the expectations have to be evaluated manually. Such "interim" results can be expressed with the `incomplete` outcome.
 
-### Whitespace
+### Semantic Role
 
-Characters that have the Unicode "White_Space" property in the [Unicode properties list](https://www.unicode.org/Public/UCD/latest/ucd/PropList.txt).
+The _semantic role_ of an element is determined by the first of these cases that applies:
 
-This includes:
+1. **Conflict** If the element is [marked as decorative][], but the element is [included in the accessibility tree][]; or would be [included in the accessibility tree][] when its [hidden state][] is false, then its _semantic role_ is its **[implicit role][]**.
+1. **Explicit** If the element has an [explicit role][], then its _semantic role_ is its [explicit role][].
+1. **Implicit** The _semantic role_ of the element is its [implicit role][].
 
-- all characters in the [Unicode Separator categories](https://www.unicode.org/versions/Unicode11.0.0/ch04.pdf#G134153), and
-- the following characters in the [Other, Control](https://www.unicode.org/versions/Unicode11.0.0/ch04.pdf#G134153) category:
-  - Character tabulation (`U+0009`)
-  - Line Feed (LF) (`U+000A`)
-  - Line Tabulation (`U+000B`)
-  - Form Feed (FF) (`U+000C`)
-  - Carriage Return (CR) (`U+000D`)
-  - Next Line (NEL) (`U+0085`)
+#### Accessibility Support for Definition of Semantic Role
+
+- There exist popular web browsers and assistive technologies which do not correctly implement [Presentational Roles Conflict Resolution][]. These technologies will not [include in the accessibility tree][included in the accessibility tree] elements that should be, according to Specifications. Thus, some elements that should have their _semantic role_ fixed by case **Conflict** above are instead falling into case **Explicit** and are hidden for users of assistive technologies.
+- A similar conflict exists for [focusable][] elements with a `aria-hidden="true"` attribute. The WAI ARIA specification does not explain how to solve it. Some browsers give precedence to the element being focusable (and expose it in the accessibility tree) while some give precedence to the `aria-hidden` attribute (and hide the element).
+
+### Visible
+
+Content perceivable through sight.
+
+Content is considered _visible_ if making it fully transparent would result in a difference in the pixels rendered for any part of the document that is currently within the viewport or can be brought into the viewport via scrolling.
+
+[Content is defined in WCAG](https://www.w3.org/TR/WCAG21/#dfn-content).
+
+#### Examples
+
+**Note:** The examples presented here are non-normative and not testable. They serve to illustrate some common pitfalls about the definition and to help the implementers of ACT rules understand it.
+
+This `span` element is visible (by default, elements are visible).
+
+```html
+<span>Now you can see me!</span>
+```
+
+This `span` element is not visible because of the CSS `visibility` property.
+
+```html
+<span style="visibility: hidden">I'm the invisible man</span>
+```
+
+This `span` element is not visible because of the CSS `display` property.
+
+```html
+<span style="display: none">I'm the invisible man</span>
+```
+
+This `span` element is not visible because it is positioned off-screen
+
+```html
+<span style="position: absolute; top: -9999px; left: -9999px;">Incredible how you can</span>
+```
+
+This `span` element is not visible because it contains only whitespace and line breaks.
+
+```html
+<span>
+	<br />
+	&nbsp;
+</span>
+```
+
+This `span` element is not visible because it has the exact same color as its background.
+
+```html
+<span style="color: #00F; background: #00F;">See right through me</span>
+```
+
+### WAI-ARIA specifications
+
+The _WAI ARIA Specifications_ group both the WAI ARIA W3C Recommendation and ARIA modules, namely:
+
+- [Accessible Rich Internet Applications (WAI-ARIA) 1.1](https://www.w3.org/TR/wai-aria-1.1/)
+- [WAI-ARIA Graphics Module 1.0](https://www.w3.org/TR/graphics-aria-1.0/)
+- [Digital Publishing WAI-ARIA Module 1.0](https://www.w3.org/TR/dpub-aria-1.0/)
+
+**Note:** depending on the type of content being evaluated, part of the specifications might be irrelevant and should be ignored.
 
 ## Acknowledgements
 
-### Authors
+This rule was written in the [ACT Rules community group](https://w3.org/community/act-r/), 
+with the support of the EU-funded [WAI-Tools Project](https://www.w3.org/WAI/about/projects/wai-tools/).
 
-This rule was written in the [ACT Rules community group](https://w3.org/community/act-r/), by:
+### Authors
 
 - [Anne Thyme Nørregaard](https://github.com/annethyme)
 
-Developed with the support of the EU-funded [WAI-Tools Project](https://www.w3.org/WAI/about/projects/wai-tools/).
+## Changelog
 
-[included in the accessibility tree]: #included-in-the-accessibility-tree 'Definition of included in the accessibility tree'
+- Aug 17, 2020
+  - Clarify the rule checks for "non-empty" only
+  - Add mapping to technique G94 and G95
+  - Remove some unnecessary notes
+  - Fix missing definitions
+
+[accessibility support base line]: https://www.w3.org/TR/WCAG-EM/#step1c 'Definition of accessibility support base line'
 [accessible name]: #accessible-name 'Definition of accessible name'
-[whitespace]: #whitespace 'Definition of whitespace'
+[ancestors]: https://dom.spec.whatwg.org/#concept-tree-ancestor 'Definition Ancestor'
+[computed]: https://www.w3.org/TR/css-cascade/#computed-value 'CSS definition of computed value'
+[explicit role]: #explicit-role 'Definition of Explicit Role'
+[flat tree]: https://drafts.csswg.org/css-scoping/#flat-tree 'Definition of flat tree'
+[focusable]: #focusable 'Definition of Focusable'
+[hidden state]: #hidden-state 'Definition of hidden state'
+[implicit role]: #implicit-role 'Definition of Implicit Role'
+[included in the accessibility tree]: #included-in-the-accessibility-tree 'Definition of included in the accessibility tree'
+[marked as decorative]: marked-as-decorative.md 'Definition of Marked as Decorative'
+[presentational roles conflict resolution]: https://www.w3.org/TR/wai-aria-1.1/#conflict_resolution_presentation_none 'Presentational Roles Conflict Resolution'
+[role attribute]: https://www.w3.org/TR/role-attribute/ 'Specification of the role attribute'
+[wai-aria specifications]: #wai-aria-specifications 'Definition of WAI-ARIA specifications'
