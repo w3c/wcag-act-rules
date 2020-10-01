@@ -29,6 +29,7 @@ This page lists [Accessibility Conformance Testing (ACT) Rules](https://www.w3.o
 List of WCAG ACT Rules:
 
 * [HTML page has non-empty title](/standards-guidelines/act/rules/html-page-non-empty-title-2779a5/)
+* [Image has non-empty accessible name](/standards-guidelines/act/rules/image-non-empty-accessible-name-23a2a8/)
 * [Image button has accessible name](/standards-guidelines/act/rules/image-button-accessible-name-59796f/)
 * [HTML page has `lang` attribute](/standards-guidelines/act/rules/html-page-lang-b5c3f8/)
 * [HTML page language is valid](/standards-guidelines/act/rules/html-page-lang-valid-bf051a/)
