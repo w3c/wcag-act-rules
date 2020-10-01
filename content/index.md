@@ -33,6 +33,7 @@ List of WCAG ACT Rules:
 * [Image button has accessible name](/standards-guidelines/act/rules/image-button-accessible-name-59796f/)
 * [Button has non-empty accessible name](/standards-guidelines/act/rules/button-non-empty-accessible-name-97a4e1/)
 * [Form field has non-empty accessible name](/standards-guidelines/act/rules/form-field-non-empty-accessible-name-e086e5/)
+* [meta viewport allows for zoom](/standards-guidelines/act/rules/meta-viewport-b4f0c3/)
 * [HTML page has `lang` attribute](/standards-guidelines/act/rules/html-page-lang-b5c3f8/)
 * [HTML page language is valid](/standards-guidelines/act/rules/html-page-lang-valid-bf051a/)
 * [HTML page lang and xml:lang attributes have matching values](/standards-guidelines/act/rules/html-page-lang-xml-lang-match-5b7ae0/)
