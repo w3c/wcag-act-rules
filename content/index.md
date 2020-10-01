@@ -31,6 +31,7 @@ List of WCAG ACT Rules:
 * [HTML page has non-empty title](/standards-guidelines/act/rules/html-page-non-empty-title-2779a5/)
 * [Image has non-empty accessible name](/standards-guidelines/act/rules/image-non-empty-accessible-name-23a2a8/)
 * [Image button has accessible name](/standards-guidelines/act/rules/image-button-accessible-name-59796f/)
+* [Button has non-empty accessible name](/standards-guidelines/act/rules/button-non-empty-accessible-name-97a4e1/)
 * [HTML page has `lang` attribute](/standards-guidelines/act/rules/html-page-lang-b5c3f8/)
 * [HTML page language is valid](/standards-guidelines/act/rules/html-page-lang-valid-bf051a/)
 * [HTML page lang and xml:lang attributes have matching values](/standards-guidelines/act/rules/html-page-lang-xml-lang-match-5b7ae0/)
