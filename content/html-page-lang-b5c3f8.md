@@ -1,11 +1,13 @@
 ---
-title: "HTML page has `lang` attribute"
+title: "HTML page has lang attribute"
 permalink: /standards-guidelines/act/rules/html-page-lang-b5c3f8/
 ref: /standards-guidelines/act/rules/html-page-lang-b5c3f8/
 lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/html-page-lang-b5c3f8.md
+# footer: > # Text in footer in HTML
+#   <p> This is the text in the footer </p>
 ---
 
 Rule Type:
@@ -14,25 +16,25 @@ Rule Type:
 Rule ID:
 :   b5c3f8
 
-Last modified:
+Last Modified:
 :   March 5, 2020
 
-Accessibility Requirements Mapping
+Accessibility Requirements Mapping:
 :   [3.1.1 Language of Page (Level A)](https://www.w3.org/TR/WCAG21/#language-of-page)
-    - **Required for conformance** to WCAG 2.0 and above on level A and above
+    - **Required for conformance** to WCAG 2.0 and later on level A and higher
     - [Outcome](#outcome) mapping:
         - Any `failed` outcomes: success criterion is not satisfied
         - All `passed` outcomes: success criterion needs further testing
         - An `inapplicable` outcome: success criterion needs further testing
-:   [H57: Using the language attribute on the HTML element](https://www.w3.org/WAI/WCAG21/Techniques/html/H57)
-    - **Required for conformance** to WCAG 2.0 and above on level A and above
+:   [H57: Using language attributes on the html element](https://www.w3.org/WAI/WCAG21/Techniques/html/H57)
+    - Not required to conformance to any W3C accessibility recommendation.
     - [Outcome](#outcome) mapping:
         - Any `failed` outcomes: technique is not satisfied
         - All `passed` outcomes: technique needs further testing
         - An `inapplicable` outcome: technique needs further testing
 
-Input Aspects
-: [DOM Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom)
+Input Aspects:
+:   [DOM Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom)
 
 ## Description
 
@@ -132,25 +134,22 @@ This rule does not apply to `math` element.
 
 ## Glossary
 
-### Outcome
-
-A conclusion that comes from evaluating an ACT Rule on a [test subject](https://www.w3.org/TR/act-rules-format/#test-subject) or one of its constituent [test target](https://www.w3.org/TR/act-rules-format/#test-target). An outcome can be one of the three following types:
-
-- **Inapplicable:** No part of the test subject matches the applicability
-- **Passed:** A [test target](https://www.w3.org/TR/act-rules-format/#test-target) meets all expectations
-- **Failed:** A [test target](https://www.w3.org/TR/act-rules-format/#test-target) does not meet all expectations
-
-**Note:** A rule has one `passed` or `failed` outcome for every [test target](https://www.w3.org/TR/act-rules-format/#test-target). When there are no test targets the rule has one inapplicable outcome. This means that each [test subject](https://www.w3.org/TR/act-rules-format/#test-subject) will have one or more outcomes.
-
-**Note:** Implementers using the [EARL10-Schema](https://www.w3.org/TR/EARL10-Schema/) can express the outcome with the [outcome property](https://www.w3.org/TR/EARL10-Schema/#outcome). In addition to `passed`, `failed` and `inapplicable`, EARL 1.0 also defined an `incomplete` outcome. While this cannot be the outcome of an ACT Rule when applied in its entirety, it often happens that rules are only partially evaluated. For example, when applicability was automated, but the expectations have to be evaluated manually. Such "interim" results can be expressed with the incomplete outcome.
+{% include_relative glossary/outcome.md %}
 
 ## Acknowledgements
 
+This rule was written in the [ACT Rules community group](https://w3.org/community/act-r/), 
+with the support of the EU-funded [WAI-Tools Project](https://www.w3.org/WAI/about/projects/wai-tools/).
+
 ### Authors
 
-This rule was written in the [ACT Rules community group](https://w3.org/community/act-r/), by:
-
 - [Jey Nandakumar](https://github.com/jkodu)
-- [Annika Nietzio](https://github.com/annika-FTB) (previous author)
 
-Developed with the support of the EU-funded [WAI-Tools Project](https://www.w3.org/WAI/about/projects/wai-tools/).
+### Previous Authors
+
+- [Annika Nietzio](https://github.com/annika-FTB)
+
+## Changelog
+
+This is the first version of this ACT rule.
+
