@@ -31,6 +31,7 @@ List of WCAG ACT Rules:
 * [HTML page has non-empty title](/standards-guidelines/act/rules/html-page-non-empty-title-2779a5/)
 * [Image has non-empty accessible name](/standards-guidelines/act/rules/image-non-empty-accessible-name-23a2a8/)
 * [Image button has accessible name](/standards-guidelines/act/rules/image-button-accessible-name-59796f/)
+* [Link has non-empty accessible name](/standards-guidelines/act/rules/link-non-empty-accessible-name-c487ae/)
 * [Button has non-empty accessible name](/standards-guidelines/act/rules/button-non-empty-accessible-name-97a4e1/)
 * [Form field has non-empty accessible name](/standards-guidelines/act/rules/form-field-non-empty-accessible-name-e086e5/)
 * [meta viewport allows for zoom](/standards-guidelines/act/rules/meta-viewport-b4f0c3/)
