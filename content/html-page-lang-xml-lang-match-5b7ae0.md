@@ -6,6 +6,8 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/html-page-lang-xml-lang-match-5b7ae0.md
+# footer: > # Text in footer in HTML
+#   <p> This is the text in the footer </p>
 ---
 
 Rule Type:
@@ -14,23 +16,23 @@ Rule Type:
 Rule ID:
 :   5b7ae0
 
-Last modified:
-:   March 5, 2020
+Last Modified:
+:   Oct 6st, 2020
 
-Accessibility Requirements Mapping
+Accessibility Requirements Mapping:
 :   [3.1.1 Language of Page (Level A)](https://www.w3.org/TR/WCAG21/#language-of-page)
-    - **Required for conformance** to WCAG 2.0 and above on level A and above
+    - **Required for conformance** to WCAG 2.0 and later on level A and higher
     - [Outcome](#outcome) mapping:
         - Any `failed` outcomes: success criterion is not satisfied
         - All `passed` outcomes: success criterion needs further testing
         - An `inapplicable` outcome: success criterion needs further testing
 
-Input Aspects
-: [DOM Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom)
+Input Aspects:
+:   [DOM Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom)
 
 ## Description
 
-This rule checks that all HTML pages with both a `lang` and `xml:lang` attributes on the root element, have the same primary language subtag.
+This rule checks that both `lang` and `xml:lang` attributes on the root element of a non-embedded HTML page, have the same primary language subtag.
 
 ## Applicability
 
@@ -38,30 +40,30 @@ This rule applies to any [document element](https://dom.spec.whatwg.org/#documen
 
 - is in a [top-level browsing context][]; and
 - has a [node document](https://dom.spec.whatwg.org/#concept-node-document) with a [content type][] of `text/html`; and
-- has a `lang` attribute that has a [valid language subtag][]; and
+- has a `lang` attribute that has a [valid language tag][]; and
 - has a non-empty `xml:lang` attribute.
-
-**Note:** `html` elements within `iframe` and `object` elements are not applicable as `iframe` and `object` elements create [nested browsing contexts](https://html.spec.whatwg.org/#nested-browsing-context). However, as these elements are meant to provide a layer of isolation, the declared language of their [parent browsing context](https://html.spec.whatwg.org/#parent-browsing-context) will likely not be inherited, making it possible for non-matching `lang` and `xml:lang` attributes in [nested browsing contexts](https://html.spec.whatwg.org/#nested-browsing-context) to also cause accessibility issues.
 
 ## Expectation
 
 For each test target, the values of the [primary language subtags][], if any exist, for the `lang` and `xml:lang` attributes are the same.
 
-**Note:** Having matching [primary language subtags][] of the `lang` and `xml:lang` attribute, but non-matching [language tags](https://tools.ietf.org/html/bcp47#section-2) overall, will not cause accessibility issues unless there's a sufficiently large difference between the two [language tags](https://tools.ietf.org/html/bcp47#section-2). One notable case is the [language tags](https://tools.ietf.org/html/bcp47#section-2) for Cantonese (`zh-yue`) and Mandarin (`zh-cmn`) where the [primary language subtags][] match, but the [extended language subtags][] don't. Such a case would not fail this rule, but could lead to accessibility issues in practice.
-
 ## Assumptions
 
 - The language of the page can be set by other methods than the `lang` attribute, for example using HTTP headers or the `meta` element. These methods are not supported by all assistive technologies. This rule assumes that these other methods are insufficient to satisfying [Success Criterion 3.1.1: Language of Page](https://www.w3.org/TR/WCAG21/#language-of-page).
 
-- This rule assumes that user agents and assistive technologies can programmatically determine [valid language subtags](#valid-language-subtag) even if these do not conform to the [BCP 47][] syntax.
+- This rule assumes that user agents and assistive technologies can programmatically determine [valid language tags](#valid-language-tag) even if these do not conform to the [BCP 47][] syntax.
 
-- This rule assumes that [grandfathered tags][] are not used as these will not be recognized as [valid language subtags](#valid-language-subtag).
+- This rule assumes that [grandfathered tags][] are not used as these will not be recognized as [valid language tags](#valid-language-tag).
+
+- The rule assumes that having `lang` and `xml:lang` attributes with matching [primary language subtags][] but non-matching [language tags](https://tools.ietf.org/html/bcp47#section-2) overall, will not cause accessibility issues. This is not necessarily the case for all languages. One notable case is the [language tags](https://tools.ietf.org/html/bcp47#section-2) for Cantonese (`zh-yue`) and Mandarin (`zh-cmn`) where the [primary language subtags][] match, but the [extended language subtags][] don't. Such a case would not fail this rule, but could lead to accessibility issues.
 
 ## Accessibility Support
 
 Since most assistive technologies will consistently use `lang` over `xml:lang` when both are used, violation of this rule may not necessarily be a violation of WCAG 2. Only when there are inconsistencies between assistive technologies as to which attribute is used to determine the language does this lead to a violation of SC 3.1.1.
 
 ## Background
+
+This rule is only applicable to non-embedded HTML pages. HTML pages embedded into other documents, such as through `iframe` or `object` elements are not applicable because they are not [web pages](https://www.w3.org/TR/WCAG21/#dfn-web-page-s) according to the definition in WCAG.
 
 - [H57: Using language attributes on the html element](https://www.w3.org/WAI/WCAG21/Techniques/html/H57)
 - [BCP 47: Tags for Identifying Languages](https://www.ietf.org/rfc/bcp/bcp47.txt)
@@ -154,7 +156,7 @@ This rule only applies to documents with a [content type][] of `text/html`
 
 #### Inapplicable Example 5
 
-This rule does not apply to `html` elements whose `lang` attribute is not a [valid language subtag][].
+This rule does not apply to `html` elements whose `lang` attribute is not a [valid language tag][].
 
 ```html
 <html lang="em" xml:lang="en"></html>
@@ -188,25 +190,13 @@ This rule does not apply to `html` elements with an empty (`""`) `xml:lang` attr
 
 ## Glossary
 
-### Outcome
-
-A conclusion that comes from evaluating an ACT Rule on a [test subject](https://www.w3.org/TR/act-rules-format/#test-subject) or one of its constituent [test target](https://www.w3.org/TR/act-rules-format/#test-target). An outcome can be one of the three following types:
-
-- **Inapplicable:** No part of the test subject matches the applicability
-- **Passed:** A [test target](https://www.w3.org/TR/act-rules-format/#test-target) meets all expectations
-- **Failed:** A [test target](https://www.w3.org/TR/act-rules-format/#test-target) does not meet all expectations
-
-**Note:** A rule has one `passed` or `failed` outcome for every [test target](https://www.w3.org/TR/act-rules-format/#test-target). When there are no test targets the rule has one inapplicable outcome. This means that each [test subject](https://www.w3.org/TR/act-rules-format/#test-subject) will have one or more outcomes.
-
-**Note:** Implementers using the [EARL10-Schema](https://www.w3.org/TR/EARL10-Schema/) can express the outcome with the [outcome property](https://www.w3.org/TR/EARL10-Schema/#outcome). In addition to `passed`, `failed` and `inapplicable`, EARL 1.0 also defined an `incomplete` outcome. While this cannot be the outcome of an ACT Rule when applied in its entirety, it often happens that rules are only partially evaluated. For example, when applicability was automated, but the expectations have to be evaluated manually. Such "interim" results can be expressed with the incomplete outcome.
-
-### Valid Language Subtag
-
-A language tag consists of a [primary language subtag][] from the [language subtag registry][], optionally followed by a hyphen (`-`) and any sequence of characters.
-
-_Note:_ This definition intentionally differs from the [BCP 47][] syntax as user agents and assistive technologies are more lenient in what they accept. The definition is however consistent with the behavior of the `:lang()` pseudo-selector as defined by [Selectors Level 3][]. For example, `de-hello` would be an accepted way to indicate German in current user agents and assistive technologies, despite not being valid according to [BCP 47][]. As a consequence of this definition, however, [grandfathered tags][] are not correctly recognized as valid language subtags.
+{% include_relative glossary/outcome.md %}
+{% include_relative glossary/valid-language-tag.md %}
 
 ## Acknowledgements
+
+This rule was written in the [ACT Rules community group](https://w3.org/community/act-r/), 
+with the support of the EU-funded [WAI-Tools Project](https://www.w3.org/WAI/about/projects/wai-tools/).
 
 ### Authors
 
@@ -216,13 +206,19 @@ _Note:_ This definition intentionally differs from the [BCP 47][] syntax as user
 
 - [Annika Nietzio](https://github.com/annika-FTB)
 
+## Changelog
+
+- **October 6st**
+  - Add an assumption about matching tags
+  - Move a note from the applicability to the background
+  - Use "non-embedded" in the description
+  - Rename "valid language subtag" to Valid language tag"
+
 [content type]: https://dom.spec.whatwg.org/#concept-document-content-type 'Definition of content type'
 [extended language subtags]: https://tools.ietf.org/html/bcp47#section-2.2.2 'Definition of extended language subtag'
 [nested browsing context]: https://html.spec.whatwg.org/#nested-browsing-context 'Definition of nested browsing context'
 [primary language subtags]: https://tools.ietf.org/html/bcp47#section-2.2.1 'Definition of primary language subtag'
 [top-level browsing context]: https://html.spec.whatwg.org/#top-level-browsing-context 'Definition of top-level browsing context'
-[valid language subtag]: #valid-language-subtag 'Definition of valid language subtag'
+[valid language tag]: #valid-language-tag 'Definition of valid language tag'
 [grandfathered tags]: https://tools.ietf.org/html/bcp47#section-2.2.8
 [bcp 47]: https://tools.ietf.org/html/bcp47#section-2.1
-[language subtag registry]: http://www.iana.org/assignments/language-subtag-registry/language-subtag-registry
-[selectors level 3]: https://drafts.csswg.org/selectors-3/#lang-pseudo
