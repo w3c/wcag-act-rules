@@ -1,12 +1,15 @@
-[Settings]
-
-ID = "wcag-act-rules"
-
 [build]
-
-command = "bundle exec jekyll build --config '_config.yml,_config_staging.yml'"
+command = "git submodule update --init --remote && bundle exec jekyll build --config '_config.yml,_config_staging.yml'"
 publish = "_site"
+
+[build.environment]
+RUBY_VERSION = "2.6.2" 
 
 [[redirects]]
   from = "/"
   to = "/standards-guidelines/act/rules/"
+
+[dev]
+publish = "_site"
+framework = "#static"
+
