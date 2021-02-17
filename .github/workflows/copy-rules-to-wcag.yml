@@ -14,5 +14,36 @@ jobs:
     steps:
       - name: Fetch file
         run: |
-          wget https://raw.githubusercontent.com/w3c/wcag-act-rules/steve-action-test/wcag-mapping.json
-          cat wcag-mapping.json
+          # A modification of Action dmnemec /copy_file_to_another_repo_action 
+          set -e
+          # set -x
+          GIT_USER_EMAIL="stevelee@w3.org"
+          GIT_USER_NAME="steve lee"
+          WCAG_CLONE_DIR=$(mktemp -d)
+          SOURCE_FILENAME="wcag-mapping.json"
+          SOURCE_BRANCH="steve-action-test"
+          SOURCE_REPO="w3c/wcag-act-rules"
+          SOURCE_REPO_URI="https://raw.githubusercontent.com/$SOURCE_REPO/$SOURCE_BRANCH"
+          DESTINATION_FILENAME="act-mapping.json"
+          DESTINATION_BRANCH="steve-action-test"
+          DESTINATION_REPO="w3c/wcag"
+          COMMIT_MESSAGE="ACT rules update from https://github.com/${GITHUB_REPOSITORY}/commit/${GITHUB_SHA}"
+
+          echo "Cloning $DESTINATION_REPO git repository"
+          git config --global user.email "$GIT_USER_EMAIL"
+          git config --global user.name "$GIT_USER_NAME"
+          git clone --single-branch --branch $DESTINATION_BRANCH "https://x-access-token:$API_TOKEN_GITHUB@github.com/$DESTINATION_REPO.git" "$WCAG_CLONE_DIR"
+
+          echo "Getting $SOURCE_FILENAME as $DESTINATION_FILENAME"
+          cd "$WCAG_CLONE_DIR"
+          wget -P "$WCAG_CLONE_DIR" -O "$DESTINATION_FILENAME" "$SOURCE_REPO_URI/$SOURCE_FILENAME"
+
+          git add .
+          if git status | grep -q "Changes to be committed"
+          then
+            git commit --message "$COMMIT_MESSAGE"
+            echo "Pushing git commit"
+            git push -u origin HEAD:$DESTINATION_BRANCH
+          else
+            echo "No changes detected"
+          fi
