@@ -12,9 +12,7 @@ jobs:
     name: Copy rules
     runs-on: ubuntu-latest
     steps:
-      - name: Fetch file
-        env:
-          API_TOKEN_GITHUB: ${{ secrets.GITHUB_TOKEN }}
+      - name: CLone and Fetch file
         run: |
           # A modification of Action dmnemec /copy_file_to_another_repo_action 
           set -e
@@ -32,21 +30,28 @@ jobs:
           COMMIT_MESSAGE="ACT rules update from https://github.com/${GITHUB_REPOSITORY}/commit/${GITHUB_SHA}"
 
           echo "Cloning $DESTINATION_REPO git repository"
-          git config --global user.email "$GIT_USER_EMAIL"
-          git config --global user.name "$GIT_USER_NAME"
-          echo git clone --single-branch --branch $DESTINATION_BRANCH "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/$DESTINATION_REPO.git" "$WCAG_CLONE_DIR"
-          git clone --single-branch --branch $DESTINATION_BRANCH "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/$DESTINATION_REPO.git" "$WCAG_CLONE_DIR"
-
+          git clone --single-branch --branch $DESTINATION_BRANCH "https://github.com/$DESTINATION_REPO.git" "$WCAG_CLONE_DIR"  
+      
+ #     - uses: actions/checkout@v2
+ #       with:
+ #         persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal token
+ #         fetch-depth: 0 # otherwise, you will fail to push refs to dest repo
+      
+      - name: Create local changes
           echo "Getting $SOURCE_FILENAME as $DESTINATION_FILENAME"
           cd "$WCAG_CLONE_DIR"
           wget -P "$WCAG_CLONE_DIR" -O "$DESTINATION_FILENAME" "$SOURCE_REPO_URI/$SOURCE_FILENAME"
-
-          git add .
-          if git status | grep -q "Changes to be committed"
-          then
-            git commit --message "$COMMIT_MESSAGE"
-            echo "Pushing git commit"
-            git push -u origin HEAD:$DESTINATION_BRANCH
-          else
-            echo "No changes detected"
-          fi
+      
+      - name: Commit files
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git commit -m "Add changes" -a
+      
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+        # PAT from https://github.com/settings/tokens
+          github_token: '44a76f1f66a240d1a06bfda0cb73291562080888'
+          branch: ${{ github.ref }}
+          repository: 'w3c/wcag'
