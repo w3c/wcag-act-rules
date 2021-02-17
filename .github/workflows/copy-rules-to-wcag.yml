@@ -29,7 +29,7 @@ jobs:
           COMMIT_MESSAGE="ACT rules update from https://github.com/${GITHUB_REPOSITORY}/commit/${GITHUB_SHA}"
 
           echo "Cloning $DESTINATION_REPO git repository"
-          git clone --single-branch --branch $DESTINATION_BRANCH "$API_TOKEN_GITHUB@https://github.com/$DESTINATION_REPO.git" "$WCAG_CLONE_DIR"  
+          git clone --single-branch --branch $DESTINATION_BRANCH "https://$API_TOKEN_GITHUB@github.com/$DESTINATION_REPO.git" "$WCAG_CLONE_DIR"  
           
           echo "Getting $SOURCE_FILENAME as $DESTINATION_FILENAME"
           cd "$WCAG_CLONE_DIR"
