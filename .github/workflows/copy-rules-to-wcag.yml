@@ -14,7 +14,7 @@ jobs:
     steps:
       - name: Fetch file
         env:
-          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+          API_TOKEN_GITHUB: ${{ secrets.GITHUB_TOKEN }}
         run: |
           # A modification of Action dmnemec /copy_file_to_another_repo_action 
           set -e
@@ -34,8 +34,8 @@ jobs:
           echo "Cloning $DESTINATION_REPO git repository"
           git config --global user.email "$GIT_USER_EMAIL"
           git config --global user.name "$GIT_USER_NAME"
-          echo git clone --single-branch --branch $DESTINATION_BRANCH "https://x-access-token:API_TOKEN_GITHUB@github.com/$DESTINATION_REPO.git" "$WCAG_CLONE_DIR"
-          git clone --single-branch --branch $DESTINATION_BRANCH "https://x-access-token:API_TOKEN_GITHUB@github.com/$DESTINATION_REPO.git" "$WCAG_CLONE_DIR"
+          echo git clone --single-branch --branch $DESTINATION_BRANCH "https://x-access-token:$API_TOKEN_GITHUB@github.com/$DESTINATION_REPO.git" "$WCAG_CLONE_DIR"
+          git clone --single-branch --branch $DESTINATION_BRANCH "https://x-access-token:$API_TOKEN_GITHUB@github.com/$DESTINATION_REPO.git" "$WCAG_CLONE_DIR"
 
           echo "Getting $SOURCE_FILENAME as $DESTINATION_FILENAME"
           cd "$WCAG_CLONE_DIR"
