@@ -12,7 +12,7 @@ jobs:
     name: Copy rules
     runs-on: ubuntu-latest
     steps:
-      - name: CLone and Fetch file
+      - name: Clone and Fetch file
         run: |
           # A modification of Action dmnemec /copy_file_to_another_repo_action 
           set -e
@@ -31,14 +31,7 @@ jobs:
 
           echo "Cloning $DESTINATION_REPO git repository"
           git clone --single-branch --branch $DESTINATION_BRANCH "https://github.com/$DESTINATION_REPO.git" "$WCAG_CLONE_DIR"  
-      
- #     - uses: actions/checkout@v2
- #       with:
- #         persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal token
- #         fetch-depth: 0 # otherwise, you will fail to push refs to dest repo
-      
-      - name: Create local changes
-        run: |
+          
           echo "Getting $SOURCE_FILENAME as $DESTINATION_FILENAME"
           cd "$WCAG_CLONE_DIR"
           wget -P "$WCAG_CLONE_DIR" -O "$DESTINATION_FILENAME" "$SOURCE_REPO_URI/$SOURCE_FILENAME"
