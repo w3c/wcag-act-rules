@@ -32,7 +32,7 @@ jobs:
           echo "Cloning $DESTINATION_REPO git repository"
           git config --global user.email "$GIT_USER_EMAIL"
           git config --global user.name "$GIT_USER_NAME"
-          git clone --single-branch --branch $DESTINATION_BRANCH "https://x-access-token:$API_TOKEN_GITHUB@github.com/$DESTINATION_REPO.git" "$WCAG_CLONE_DIR"
+          git clone --single-branch --branch $DESTINATION_BRANCH "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$DESTINATION_REPO.git" "$WCAG_CLONE_DIR"
 
           echo "Getting $SOURCE_FILENAME as $DESTINATION_FILENAME"
           cd "$WCAG_CLONE_DIR"
