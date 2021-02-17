@@ -36,8 +36,6 @@ jobs:
           cd "$WCAG_CLONE_DIR"
           wget -P "$WCAG_CLONE_DIR" -O "$DESTINATION_FILENAME" "$SOURCE_REPO_URI/$SOURCE_FILENAME"
       
-      - name: Commit files
-        run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
           git commit -m "Add changes" -a
