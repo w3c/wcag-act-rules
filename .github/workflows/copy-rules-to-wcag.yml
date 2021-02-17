@@ -2,11 +2,7 @@ name: Copy-rules-to-WCAG
 
 on: 
   push:
-    branches:
-      - steve-action-test
-    paths:
-      - '/wcag-mapping.json'
-
+ 
 jobs:
   copy-rules:
     name: Copy rules
