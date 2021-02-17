@@ -7,15 +7,12 @@ on:
     paths:
       - '/wcag-mapping.json'
 
-
 jobs:
-  cp-rules:
-    name: Copy Rules file
+  copy-rules:
+    name: Copy rules
     runs-on: ubuntu-latest
-
     steps:
-      -name: get file
-      # wget the latest version of the file from GitHub rather than git checkout everything
+    - name: Fetch file
       run: |
         wget https://raw.githubusercontent.com/w3c/wcag-act-rules/steve-action-test/wcag-mapping.json
         cat wcag-mapping.json
