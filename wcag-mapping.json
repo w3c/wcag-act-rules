@@ -1,6 +1,7 @@
 // Testing action on push
 // try again
 // again with a new test.yml
+// and again
 {
   "act-rules": [{
     "title": "Button has non-empty accessible name",
