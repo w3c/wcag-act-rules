@@ -12,7 +12,7 @@ jobs:
     name: Copy rules
     runs-on: ubuntu-latest
     steps:
-    - name: Fetch file
-      run: |
-        wget https://raw.githubusercontent.com/w3c/wcag-act-rules/steve-action-test/wcag-mapping.json
-        cat wcag-mapping.json
+      - name: Fetch file
+        run: |
+          wget https://raw.githubusercontent.com/w3c/wcag-act-rules/steve-action-test/wcag-mapping.json
+          cat wcag-mapping.json
