@@ -46,7 +46,7 @@ jobs:
         uses: ad-m/github-push-action@master
         with:
         # PAT from https://github.com/settings/tokens
-          github_token: '44a76f1f66a240d1a06bfda0cb73291562080888'
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: ${{ github.ref }}
           repository: 'w3c/wcag'
           directory: 'wcag'
