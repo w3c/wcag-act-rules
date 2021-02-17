@@ -38,6 +38,7 @@ jobs:
  #         fetch-depth: 0 # otherwise, you will fail to push refs to dest repo
       
       - name: Create local changes
+        run: |
           echo "Getting $SOURCE_FILENAME as $DESTINATION_FILENAME"
           cd "$WCAG_CLONE_DIR"
           wget -P "$WCAG_CLONE_DIR" -O "$DESTINATION_FILENAME" "$SOURCE_REPO_URI/$SOURCE_FILENAME"
