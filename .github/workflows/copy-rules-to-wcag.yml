@@ -26,7 +26,7 @@ jobs:
     name: Copy rules
     runs-on: ubuntu-latest
     env:
-      SOURCE_FILENAME: wcag-mapping.json"
+      SOURCE_FILENAME: wcag-mapping.json
       DESTINATION_REPO: w3c/wcag
       DESTINATION_BRANCH: steve-action-test
       DESTINATION_FILENAME: act-mapping.json
