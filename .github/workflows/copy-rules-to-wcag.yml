@@ -42,7 +42,7 @@ jobs:
           
           echo "Getting $SOURCE_FILENAME as $DESTINATION_FILENAME"
           cd "$WCAG_CLONE_DIR"
-          SOURCE_URI="https://raw.githubusercontent.com/$GITHUB_REPOSITORY/$GITHUB_REF/$SOURCE_FILENAME"
+          SOURCE_URI="https://raw.githubusercontent.com/$GITHUB_REPOSITORY/${GITHUB_REF/refs\/heads\/}/$SOURCE_FILENAME"
           wget -P "$WCAG_CLONE_DIR" -O "$DESTINATION_FILENAME" "$SOURCE_URI"
        
       - name: Commit and Push
