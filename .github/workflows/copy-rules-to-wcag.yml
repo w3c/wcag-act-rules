@@ -1,5 +1,19 @@
 name: Copy-rules-to-WCAG
 
+# Commit a change to the ACT rules to the wcag repo, renaming it.
+#
+# Notes 
+# - the ACT repo branch and file name need to be set in two places below
+#  - in the on: trigger definition
+#  - with the other configuration vars in env
+# - A Personal Access Token (PAT) stores as a secret is required to push
+#   - Suggest a specific W3C account it used for this rather a user account, so not accidently deleted
+# - the git user name and useremail are provided and are shown in GitHub as who performed the commit.
+# - GitHub shows a link in the commit message as link to the ACT repo commit so changes can be viewed
+
+# github-actions
+# github-actions@github.com
+
 on: 
   push:
     branches:
@@ -11,33 +25,36 @@ jobs:
   copy-rules:
     name: Copy rules
     runs-on: ubuntu-latest
-    steps:
-      - name: Clone and Fetch file
+    env:
+      SOURCE_REPO="w3c/wcag-act-rules"
+      SOURCE_BRANCH="steve-action-test"
+      SOURCE_FILENAME="wcag-mapping.json"
+      SOURCE_REPO_URI="https://raw.githubusercontent.com/$SOURCE_REPO/$SOURCE_BRANCH"
+      WCAG_CLONE_DIR=wcag
+      DESTINATION_REPO="w3c/wcag"
+      DESTINATION_BRANCH="steve-action-test"
+      DESTINATION_FILENAME="act-mapping.json"
+      GIT_USER_NAME="steve lee" 
+      GIT_USER_EMAIL="stevelee@w3.org" 
+      COMMIT_MESSAGE="ACT rules update from https://github.com/${GITHUB_REPOSITORY}/commit/${GITHUB_SHA}"
+      steps:
+      - name: Clone and fetch file
         env:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }} # add as PAT (https://github.com/settings/tokens) as a secret
         run: |
-          GIT_USER_EMAIL="stevelee@w3.org"
-          GIT_USER_NAME="steve lee"
-          WCAG_CLONE_DIR=wcag
-          SOURCE_FILENAME="wcag-mapping.json"
-          SOURCE_BRANCH="steve-action-test"
-          SOURCE_REPO="w3c/wcag-act-rules"
-          SOURCE_REPO_URI="https://raw.githubusercontent.com/$SOURCE_REPO/$SOURCE_BRANCH"
-          DESTINATION_FILENAME="act-mapping.json"
-          DESTINATION_BRANCH="steve-action-test"
-          DESTINATION_REPO="w3c/wcag"
-          COMMIT_MESSAGE="ACT rules update from https://github.com/${GITHUB_REPOSITORY}/commit/${GITHUB_SHA}"
-
-          echo "Cloning $DESTINATION_REPO git repository"
+        echo "Cloning $DESTINATION_REPO git repository"
           git clone --single-branch --branch $DESTINATION_BRANCH "https://$API_TOKEN_GITHUB@github.com/$DESTINATION_REPO.git" "$WCAG_CLONE_DIR"  
           
           echo "Getting $SOURCE_FILENAME as $DESTINATION_FILENAME"
           cd "$WCAG_CLONE_DIR"
           wget -P "$WCAG_CLONE_DIR" -O "$DESTINATION_FILENAME" "$SOURCE_REPO_URI/$SOURCE_FILENAME"
        
+      - name: Commit and Push
+        run: |
           echo "Commit"
-          git config user.name github-actions
-          git config user.email github-actions@github.com
+          cd "$WCAG_CLONE_DIR"
+          git config user.name GIT_USER_NAME 
+          git config user.email GIT_USER_EMAIL 
           git add .
           # check for changes with git diff-index
           git diff-index --quiet HEAD || git commit -m "$COMMIT_MESSAGE"
