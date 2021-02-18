@@ -29,20 +29,24 @@ jobs:
       DESTINATION_FILENAME: guidelines/act-mapping.json
       COMMIT_MESSAGE: ACT rules update from https://github.com/${{ github.repository }}/commit/${{ github.sha }}
     steps:
-      - name: Clone and fetch file
+    
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          path: this
+          
+      - name: Clone $DESTINATION_REPO and copy $SOURCE_FILENAME
         env:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }} # add as PAT (https://github.com/settings/tokens) as a secret
         run: |
           echo "Cloning $DESTINATION_REPO git repository"
-          git clone --single-branch --branch $DESTINATION_BRANCH "https://$API_TOKEN_GITHUB@github.com/$DESTINATION_REPO.git" .
-          
-          echo "Getting $SOURCE_FILENAME as $DESTINATION_FILENAME"
-          SOURCE_URI="https://raw.githubusercontent.com/$GITHUB_REPOSITORY/${GITHUB_REF/refs\/heads\/}/$SOURCE_FILENAME"
-          wget -O "$DESTINATION_FILENAME" "$SOURCE_URI"
+          git clone --single-branch --branch $DESTINATION_BRANCH "https://$API_TOKEN_GITHUB@github.com/$DESTINATION_REPO.git" wcag
+          cp "this/$SOURCE_FILENAME" "wcag/$DESTINATION_FILENAME"
        
       - name: Commit and push
         run: |
           echo "Commit"
+          cd wcag
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add .
