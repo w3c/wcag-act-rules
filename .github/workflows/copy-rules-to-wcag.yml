@@ -1,25 +1,22 @@
 name: Copy-rules-to-WCAG
 
-# Commit a change to the ACT rules to the wcag repo, renaming it.
+# Commit any change to the wcag-mapping.json file to the wcag repo as act-mapping.json
 #
-# Notes 
-# - the ACT repo branch and file name need to be set in two places below
+# Notes:
+# - parameters can be set in the env section 
+# - the source filename needs to be set in two places below
 #  - in the on: trigger definition
-#  - with the other configuration vars in env
-# - A Personal Access Token (PAT) stores as a secret is required to push
-#   - Suggest a specific W3C account it used for this rather a user account, so not accidently deleted
-# - the git user name and useremail are provided and are shown in GitHub as who performed the commit.
-# - GitHub shows a link in the commit message as link to the ACT repo commit so changes can be viewed
-
-# github-actions
-# github-actions@github.com
+#  - in env
+# - A Personal Access Token (PAT) stored as a secret is required for the push to work
+#   - Suggest this is set in a specific W3C account, rather a user account, so not accidently deleted
+# - GitHub shows in the commit message a linkto the ACT repo commit
 
 on: 
   push:
     branches:
-      - steve-action-test
+      - master
     paths:
-      - 'wcag-mapping.json'
+      - wcag-mapping.json
 
 jobs:
   copy-rules:
@@ -28,7 +25,7 @@ jobs:
     env:
       SOURCE_FILENAME: wcag-mapping.json
       DESTINATION_REPO: w3c/wcag
-      DESTINATION_BRANCH: steve-action-test
+      DESTINATION_BRANCH: master
       DESTINATION_FILENAME: act-mapping.json
       COMMIT_MESSAGE: ACT rules update from https://github.com/${{ github.repository }}/commit/${{ github.sha }}
     steps:
@@ -44,7 +41,7 @@ jobs:
           SOURCE_URI="https://raw.githubusercontent.com/$GITHUB_REPOSITORY/${GITHUB_REF/refs\/heads\/}/$SOURCE_FILENAME"
           wget -O "$DESTINATION_FILENAME" "$SOURCE_URI"
        
-      - name: Commit and Push
+      - name: Commit and push
         run: |
           echo "Commit"
           git config user.name github-actions
