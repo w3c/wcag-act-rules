@@ -26,37 +26,33 @@ jobs:
     name: Copy rules
     runs-on: ubuntu-latest
     env:
-      SOURCE_REPO="w3c/wcag-act-rules"
-      SOURCE_BRANCH="steve-action-test"
-      SOURCE_FILENAME="wcag-mapping.json"
-      SOURCE_REPO_URI="https://raw.githubusercontent.com/$SOURCE_REPO/$SOURCE_BRANCH"
-      WCAG_CLONE_DIR=wcag
-      DESTINATION_REPO="w3c/wcag"
-      DESTINATION_BRANCH="steve-action-test"
-      DESTINATION_FILENAME="act-mapping.json"
-      GIT_USER_NAME="steve lee" 
-      GIT_USER_EMAIL="stevelee@w3.org" 
-      COMMIT_MESSAGE="ACT rules update from https://github.com/${GITHUB_REPOSITORY}/commit/${GITHUB_SHA}"
-      steps:
+      SOURCE_FILENAME: wcag-mapping.json"
+      DESTINATION_REPO: w3c/wcag
+      DESTINATION_BRANCH: steve-action-test
+      DESTINATION_FILENAME: act-mapping.json
+      COMMIT_MESSAGE: ACT rules update from https://github.com/${GITHUB_REPOSITORY}/commit/${GITHUB_SHA}
+      WCAG_CLONE_DIR: wcag
+    steps:
       - name: Clone and fetch file
         env:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }} # add as PAT (https://github.com/settings/tokens) as a secret
         run: |
-        echo "Cloning $DESTINATION_REPO git repository"
+          echo "Cloning $DESTINATION_REPO git repository"
           git clone --single-branch --branch $DESTINATION_BRANCH "https://$API_TOKEN_GITHUB@github.com/$DESTINATION_REPO.git" "$WCAG_CLONE_DIR"  
           
           echo "Getting $SOURCE_FILENAME as $DESTINATION_FILENAME"
           cd "$WCAG_CLONE_DIR"
-          wget -P "$WCAG_CLONE_DIR" -O "$DESTINATION_FILENAME" "$SOURCE_REPO_URI/$SOURCE_FILENAME"
+          SOURCE_URI="https://raw.githubusercontent.com/$GITHUB_REPOSITORY/$GITHUB_REF/$SOURCE_FILENAME"
+          wget -P "$WCAG_CLONE_DIR" -O "$DESTINATION_FILENAME" "$SOURCE_URI"
        
       - name: Commit and Push
         run: |
           echo "Commit"
           cd "$WCAG_CLONE_DIR"
-          git config user.name GIT_USER_NAME 
-          git config user.email GIT_USER_EMAIL 
+          git config user.name $GITHUB_ACTOR  
+          git config user.email $GITHUB_ACTOR@w3c.org 
           git add .
-          # check for changes with git diff-index
+          # check for changes with git diff-index to stop error
           git diff-index --quiet HEAD || git commit -m "$COMMIT_MESSAGE"
           
           echo "Push"
