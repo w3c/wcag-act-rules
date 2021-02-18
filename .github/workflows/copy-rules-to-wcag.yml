@@ -30,27 +30,25 @@ jobs:
       DESTINATION_REPO: w3c/wcag
       DESTINATION_BRANCH: steve-action-test
       DESTINATION_FILENAME: act-mapping.json
-      COMMIT_MESSAGE: ACT rules update from https://github.com/${GITHUB_REPOSITORY}/commit/${GITHUB_SHA}
-      WCAG_CLONE_DIR: wcag
+      COMMIT_MESSAGE: ACT rules update from https://github.com/${{ github.repository }}/commit/${{ github.sha }}
     steps:
       - name: Clone and fetch file
         env:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }} # add as PAT (https://github.com/settings/tokens) as a secret
         run: |
           echo "Cloning $DESTINATION_REPO git repository"
-          git clone --single-branch --branch $DESTINATION_BRANCH "https://$API_TOKEN_GITHUB@github.com/$DESTINATION_REPO.git" "$WCAG_CLONE_DIR"  
+          git clone --single-branch --branch $DESTINATION_BRANCH "https://$API_TOKEN_GITHUB@github.com/$DESTINATION_REPO.git" .
           
           echo "Getting $SOURCE_FILENAME as $DESTINATION_FILENAME"
           cd "$WCAG_CLONE_DIR"
           SOURCE_URI="https://raw.githubusercontent.com/$GITHUB_REPOSITORY/${GITHUB_REF/refs\/heads\/}/$SOURCE_FILENAME"
-          wget -P "$WCAG_CLONE_DIR" -O "$DESTINATION_FILENAME" "$SOURCE_URI"
+          wget -O "$DESTINATION_FILENAME" "$SOURCE_URI"
        
       - name: Commit and Push
         run: |
           echo "Commit"
-          cd "$WCAG_CLONE_DIR"
-          git config user.name $GITHUB_ACTOR  
-          git config user.email $GITHUB_ACTOR@w3c.org 
+          git config user.name github-actions
+          git config user.email github-actions@github.com
           git add .
           # check for changes with git diff-index to stop error
           git diff-index --quiet HEAD || git commit -m "$COMMIT_MESSAGE"
