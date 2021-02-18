@@ -26,8 +26,7 @@ jobs:
       SOURCE_FILENAME: wcag-mapping.json
       DESTINATION_REPO: w3c/wcag
       DESTINATION_BRANCH: master
-      DESTINATION_FOLDER: guidelines
-      DESTINATION_FILENAME: act-mapping.json
+      DESTINATION_FILENAME: guidelines/act-mapping.json
       COMMIT_MESSAGE: ACT rules update from https://github.com/${{ github.repository }}/commit/${{ github.sha }}
     steps:
       - name: Clone and fetch file
@@ -39,7 +38,7 @@ jobs:
           
           echo "Getting $SOURCE_FILENAME as $DESTINATION_FILENAME"
           SOURCE_URI="https://raw.githubusercontent.com/$GITHUB_REPOSITORY/${GITHUB_REF/refs\/heads\/}/$SOURCE_FILENAME"
-          wget -P "$DESTINATION_FOLDER" -O "$DESTINATION_FILENAME" "$SOURCE_URI"
+          wget -O "$DESTINATION_FILENAME" "$SOURCE_URI"
        
       - name: Commit and push
         run: |
