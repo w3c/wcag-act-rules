@@ -35,7 +35,7 @@ jobs:
         with:
           path: this
           
-      - name: Clone $DESTINATION_REPO and copy $SOURCE_FILENAME
+      - name: Clone ${{ env.DESTINATION_REPO }} and copy ${{ env.SOURCE_FILENAME }}
         env:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }} # add as PAT (https://github.com/settings/tokens) as a secret
         run: |
