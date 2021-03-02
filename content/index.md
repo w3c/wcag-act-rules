@@ -9,11 +9,10 @@ lang: en
 # contributors:
 # - name: Contributor 1
 # - name: Contributor 2
+type_of_guidance: ""
 github:
   repository: w3c/wcag-act-rules
-  path: content/index.md
-footer: > # Text in footer in HTML
-  <p> This is the text in the footer </p>
+  path: content/about.md
 ---
 
 {::nomarkdown}
