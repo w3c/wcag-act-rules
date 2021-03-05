@@ -57,9 +57,9 @@ defaults:
 
 supporting_doc_nav_links:
   - name: All Rules
-     ref: /standards-guidelines/act/rules
+    ref: /standards-guidelines/act/rules
   - name: About Rules
-     ref: /standards-guidelines/act/rules/about
+    ref: /standards-guidelines/act/rules/about
 supporting_doc_name: WCAG ACT Rules
 supporting_doc_name_sub: ""
 
