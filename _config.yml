@@ -55,6 +55,14 @@ defaults:
         <p>Developed by the @@ Working Group (<a href="http://www.w3.org/WAI/@@/">@@WG</a>). Developed as part of the <a href="https://www.w3.org/WAI/@@/">WAI-@@ project</a>, @@co-funded by the European Commission.</p>
       type_of_guidance: "Rule"
 
+supporting_doc_nav_links:
+  - name: All Rules
+     ref: /standards-guidelines/act/rules
+  - name: About Rules
+     ref: /standards-guidelines/act/rules/about
+supporting_doc_name: WCAG ACT Rules
+supporting_doc_name_sub: ""
+
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
