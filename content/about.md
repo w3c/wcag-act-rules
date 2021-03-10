@@ -1,7 +1,7 @@
 ---
 title: "About WCAG ACT Rules"
-permalink: /standards-guidelines/act/rules/about
-ref: /standards-guidelines/act/rules/about
+permalink: /standards-guidelines/act/rules/about/
+ref: /standards-guidelines/act/rules/about/
 lang: en
 # translators: # Uncomment (remove #) for translations, one - name line per translator.
 # - name: Translator 1
