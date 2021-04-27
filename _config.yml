@@ -60,8 +60,7 @@ supporting_doc_nav_links:
     ref: /standards-guidelines/act/rules/
   - name: About Rules
     ref: /standards-guidelines/act/rules/about/
-supporting_doc_name: WCAG ACT Rules
-supporting_doc_name_sub: ""
+supporting_doc_name: WCAG 2.1 ACT Rules
 
 plugins:
   - jekyll-seo-tag
