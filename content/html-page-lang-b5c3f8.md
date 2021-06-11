@@ -35,36 +35,6 @@ rule_meta:
       level: A
 ---
 
-Rule Type:
-:   atomic
-
-Rule ID:
-:   b5c3f8
-
-Last Modified:
-:   March 5, 2020
-
-Accessibility Requirements Mapping:
-:   [3.1.1 Language of Page (Level A)](https://www.w3.org/TR/WCAG21/#language-of-page)
-    - **Required for conformance** to WCAG 2.0 and later on level A and higher
-    - [Outcome](#outcome) mapping:
-        - Any `failed` outcomes: success criterion is not satisfied
-        - All `passed` outcomes: success criterion needs further testing
-        - An `inapplicable` outcome: success criterion needs further testing
-:   [H57: Using language attributes on the html element](https://www.w3.org/WAI/WCAG21/Techniques/html/H57)
-    - Not required to conformance to any W3C accessibility recommendation.
-    - [Outcome](#outcome) mapping:
-        - Any `failed` outcomes: technique is not satisfied
-        - All `passed` outcomes: technique needs further testing
-        - An `inapplicable` outcome: technique needs further testing
-
-Input Aspects:
-:   [DOM Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom)
-
-## Description
-
-This rule checks that an HTML page has a non-empty `lang` attribute.
-
 ## Applicability
 
 This rule applies to any [document element](https://dom.spec.whatwg.org/#document-element) if it is an `html` element that:
