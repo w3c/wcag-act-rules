@@ -9,7 +9,7 @@ lang: en
 # contributors:
 # - name: Contributor 1
 # - name: Contributor 2
-type_of_guidance: ""
+type_of_guidance: false
 github:
   repository: w3c/wcag-act-rules
   path: content/index.md
