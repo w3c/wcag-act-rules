@@ -1,13 +1,38 @@
 ---
-title: "HTML page has lang attribute"
+title: HTML page has lang attribute
 permalink: /standards-guidelines/act/rules/html-page-lang-b5c3f8/
 ref: /standards-guidelines/act/rules/html-page-lang-b5c3f8/
 lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/html-page-lang-b5c3f8.md
-# footer: > # Text in footer in HTML
-#   <p> This is the text in the footer </p>
+rule_meta:
+  ## values below exist in currently generated file
+  id: 97a4e1
+  name: HTML page has lang attribute
+  rule_type: atomic
+  description: |
+    This rule checks that each `button` element has a non-empty accessible name.
+  accessibility_requirements:
+    wcag20:4.1.2: # Name, Role, Value (A)
+      forConformance: true
+      failed: not satisfied
+      passed: further testing needed
+      inapplicable: further testing needed
+  ## values below would have slightly different format
+  input_aspects:
+    - handle: Accessibility Tree
+      url: https://www.w3.org/TR/act-rules-aspects/
+    - handle: DOM Tree
+      url: https://www.w3.org/TR/act-rules-aspects/
+    - handle: CSS Styling
+      url: https://www.w3.org/TR/act-rules-aspects/
+  ## values below would be new 
+  last_modified: March 5, 2020 
+  scs_tested:
+    - handle: Name, Role, Value
+      num: 4.1.2
+      level: A
 ---
 
 Rule Type:
