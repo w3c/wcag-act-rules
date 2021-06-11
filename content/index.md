@@ -25,6 +25,12 @@ This page lists [Accessibility Conformance Testing (ACT) Rules](https://www.w3.o
 {% include box.html type="end" %}
 {:/}
 
+
+<section class="doc-note-box" style="margin-top: 1em">
+  <p>The rules shown in this document are copied over from the wcag-act-rules repository. Only in one of them, the metadata is updated to match the data that the WAI “stand-alone resource” lay-out currently expects.</p>
+  <p>For testing, view <a href="/standards-guidelines/act/rules/html-page-lang-b5c3f8/">HTML page has `lang` attribute</a></p>
+</section>
+
 List of WCAG ACT Rules:
 
 * [HTML page has non-empty title](/standards-guidelines/act/rules/html-page-non-empty-title-2779a5/)
