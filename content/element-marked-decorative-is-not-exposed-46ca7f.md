@@ -19,7 +19,7 @@ Rule ID:
 :   46ca7f
 
 Last Modified:
-:   June 3, 2021
+:   June 14, 2021
 
 Input Aspects:
 :   [Accessibility tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-accessibility)

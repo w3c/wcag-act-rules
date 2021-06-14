@@ -19,7 +19,7 @@ Rule ID:
 :   aizyf1
 
 Last Modified:
-:   June 3, 2021
+:   June 14, 2021
 
 Accessibility Requirements Mapping:
 :   [2.4.9 Link Purpose (Link Only) (Level AAA)](https://www.w3.org/TR/WCAG21/#link-purpose-link-only)
@@ -239,6 +239,7 @@ There is no [semantic link][] in this document (`a` element without an `href` at
 {% include_relative glossary/included-in-the-accessibility-tree.md %}
 {% include_relative glossary/marked-as-decorative.md %}
 {% include_relative glossary/outcome.md %}
+{% include_relative glossary/semantic-link.md %}
 {% include_relative glossary/semantic-role.md %}
 {% include_relative glossary/wai-aria-specifications.md %}
 

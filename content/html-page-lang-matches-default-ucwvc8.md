@@ -19,7 +19,7 @@ Rule ID:
 :   ucwvc8
 
 Last Modified:
-:   June 3, 2021
+:   June 14, 2021
 
 Accessibility Requirements Mapping:
 :   [3.1.1 Language of Page (Level A)](https://www.w3.org/TR/WCAG21/#language-of-page)
@@ -313,7 +313,9 @@ This page has an undefined [default language][default page language] because it 
 {% include_relative glossary/default-page-language.md %}
 {% include_relative glossary/focusable.md %}
 {% include_relative glossary/included-in-the-accessibility-tree.md %}
+{% include_relative glossary/most-common-element-language.md %}
 {% include_relative glossary/outcome.md %}
+{% include_relative glossary/text-inheriting-language.md %}
 {% include_relative glossary/valid-language-tag.md %}
 {% include_relative glossary/visible.md %}
 {% include_relative glossary/web-page-html.md %}

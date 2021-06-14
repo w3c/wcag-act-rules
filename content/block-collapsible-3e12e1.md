@@ -19,7 +19,7 @@ Rule ID:
 :   3e12e1
 
 Last Modified:
-:   June 3, 2021
+:   Jun 14, 2021
 
 Accessibility Requirements Mapping:
 :   [SCR28: Using an expandable and collapsible menu to bypass block of content](https://www.w3.org/WAI/WCAG21/Techniques/client-side-script/SCR28)
@@ -305,11 +305,22 @@ This [document][] is not an [HTML web page][].
 
 ## Glossary
 
+{% include_relative glossary/block-of-content.md %}
+{% include_relative glossary/block-of-repeated-content.md %}
+{% include_relative glossary/equivalent-resource.md %}
+{% include_relative glossary/explicit-role.md %}
 {% include_relative glossary/focusable.md %}
+{% include_relative glossary/hidden-state.md %}
+{% include_relative glossary/implicit-role.md %}
 {% include_relative glossary/included-in-the-accessibility-tree.md %}
 {% include_relative glossary/instrument-to-achieve-an-objective.md %}
+{% include_relative glossary/marked-as-decorative.md %}
+{% include_relative glossary/non-repeated-content.md %}
 {% include_relative glossary/outcome.md %}
+{% include_relative glossary/perceivable-content.md %}
+{% include_relative glossary/semantic-role.md %}
 {% include_relative glossary/visible.md %}
+{% include_relative glossary/wai-aria-specifications.md %}
 {% include_relative glossary/web-page-html.md %}
 
 ## Acknowledgements

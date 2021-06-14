@@ -19,7 +19,7 @@ Rule ID:
 :   6a7281
 
 Last Modified:
-:   Jun 14, 2021
+:   June 14, 2021
 
 Accessibility Requirements Mapping:
 :   [ARIA 1.1, 6.3 Values for States and Properties](https://www.w3.org/TR/wai-aria-1.1/#state_prop_values)

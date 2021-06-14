@@ -19,7 +19,7 @@ Rule ID:
 :   0va7u6
 
 Last Modified:
-:   June 3, 2021
+:   June 14, 2021
 
 Accessibility Requirements Mapping:
 :   [1.4.5 Images of Text (Level AA)](https://www.w3.org/TR/WCAG21/#images-of-text)
@@ -240,7 +240,10 @@ This `svg` element does not have `image` element descendants.
 
 ## Glossary
 
+{% include_relative glossary/attribute-value.md %}
+{% include_relative glossary/embedded-image.md %}
 {% include_relative glossary/outcome.md %}
+{% include_relative glossary/rendered-image-resource.md %}
 {% include_relative glossary/visible.md %}
 {% include_relative glossary/web-page-html.md %}
 

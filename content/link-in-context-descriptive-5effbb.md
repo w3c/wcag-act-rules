@@ -19,7 +19,7 @@ Rule ID:
 :   5effbb
 
 Last Modified:
-:   June 3, 2021
+:   June 14, 2021
 
 Accessibility Requirements Mapping:
 :   [2.4.4 Link Purpose (In Context) (Level A)](https://www.w3.org/TR/WCAG21/#link-purpose-in-context)
@@ -358,6 +358,7 @@ An `a` element without the [semantic role][] `link`.
 {% include_relative glossary/marked-as-decorative.md %}
 {% include_relative glossary/outcome.md %}
 {% include_relative glossary/programmatically-determined-link-context.md %}
+{% include_relative glossary/semantic-link.md %}
 {% include_relative glossary/semantic-role.md %}
 {% include_relative glossary/wai-aria-specifications.md %}
 

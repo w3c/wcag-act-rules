@@ -19,7 +19,7 @@ Rule ID:
 :   5f99a7
 
 Last Modified:
-:   Jun 14, 2021
+:   June 14, 2021
 
 Input Aspects:
 :   [DOM Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom)

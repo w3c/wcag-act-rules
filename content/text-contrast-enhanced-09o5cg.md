@@ -19,7 +19,7 @@ Rule ID:
 :   09o5cg
 
 Last Modified:
-:   June 3, 2021
+:   June 14, 2021
 
 Accessibility Requirements Mapping:
 :   [1.4.6 Contrast (Enhanced) (Level AAA)](https://www.w3.org/TR/WCAG21/#contrast-enhanced)
@@ -415,6 +415,7 @@ This text is part of a label of a [disabled][] widget, because it is in a `label
 ## Glossary
 
 {% include_relative glossary/accessible-name.md %}
+{% include_relative glossary/attribute-value.md %}
 {% include_relative glossary/background-colors-of-text.md %}
 {% include_relative glossary/bounding-box-around-text.md %}
 {% include_relative glossary/disabled-element.md %}
@@ -429,6 +430,7 @@ This text is part of a label of a [disabled][] widget, because it is in a `label
 {% include_relative glossary/marked-as-decorative.md %}
 {% include_relative glossary/outcome.md %}
 {% include_relative glossary/semantic-role.md %}
+{% include_relative glossary/semantic-widget.md %}
 {% include_relative glossary/visible.md %}
 {% include_relative glossary/wai-aria-specifications.md %}
 

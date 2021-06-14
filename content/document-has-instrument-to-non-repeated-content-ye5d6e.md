@@ -19,7 +19,7 @@ Rule ID:
 :   ye5d6e
 
 Last Modified:
-:   June 3, 2021
+:   June 14, 2021
 
 Accessibility Requirements Mapping:
 :   [G1: Adding a link at the top of each page that goes directly to the main content area](https://www.w3.org/WAI/WCAG21/Techniques/general/G1)
@@ -417,9 +417,23 @@ This [document][] is not an [HTML web page][].
 
 ## Glossary
 
+{% include_relative glossary/block-of-content.md %}
+{% include_relative glossary/block-of-repeated-content.md %}
+{% include_relative glossary/equivalent-resource.md %}
+{% include_relative glossary/explicit-role.md %}
+{% include_relative glossary/focusable.md %}
+{% include_relative glossary/hidden-state.md %}
+{% include_relative glossary/implicit-role.md %}
+{% include_relative glossary/included-in-the-accessibility-tree.md %}
 {% include_relative glossary/instrument-to-achieve-an-objective.md %}
+{% include_relative glossary/just-before.md %}
+{% include_relative glossary/marked-as-decorative.md %}
+{% include_relative glossary/non-repeated-content.md %}
 {% include_relative glossary/outcome.md %}
+{% include_relative glossary/perceivable-content.md %}
+{% include_relative glossary/semantic-role.md %}
 {% include_relative glossary/visible.md %}
+{% include_relative glossary/wai-aria-specifications.md %}
 {% include_relative glossary/web-page-html.md %}
 
 ## Acknowledgements

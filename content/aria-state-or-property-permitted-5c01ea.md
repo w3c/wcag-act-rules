@@ -19,7 +19,7 @@ Rule ID:
 :   5c01ea
 
 Last Modified:
-:   Jun 14, 2021
+:   June 14, 2021
 
 Accessibility Requirements Mapping:
 :   [ARIA5: Using WAI-ARIA state and property attributes to expose the state of a user interface component](https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA5)
