@@ -1,0 +1,207 @@
+---
+title: "video element visual-only content is media alternative for text"
+permalink: /standards-guidelines/act/rules/video-only-as-media-alternative-fd26cf/
+ref: /standards-guidelines/act/rules/video-only-as-media-alternative-fd26cf/
+lang: en
+github:
+  repository: w3c/wcag-act-rules
+  path: content/video-only-as-media-alternative-fd26cf.md
+# footer: > # Text in footer in HTML
+#   <p> This is the text in the footer </p>
+---
+
+{% include_relative _proposed-banner.html %}
+
+Rule Type:
+:   atomic
+
+Rule ID:
+:   fd26cf
+
+Last Modified:
+:   June 3, 2021
+
+Input Aspects:
+:   [DOM Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom)
+:   [CSS Styling](https://www.w3.org/TR/act-rules-aspects/#input-aspects-css)
+:   Audio output
+:   [Language](https://www.w3.org/TR/act-rules-aspects/#input-aspects-text)
+
+## Description
+
+This rule checks non-streaming silent `video` is a media alternative for text on the page.
+
+## Applicability
+
+This rule applies to any [non-streaming](#non-streaming-media-element) `video` element that is [visible][] where the video does not contain audio.
+
+## Expectation 1
+
+All the information contained in each target element is available as text (directly or via text alternatives) that is [visible][] and [included in the accessibility tree][].
+
+## Expectation 2
+
+Each target element is labeled as a video alternative for text on the page.
+
+## Expectation 3
+
+The label (from expectation 2) is [visible][] and [included in the accessibility tree][].
+
+## Assumptions
+
+- A mechanism is available to start the video and that the video element is not simply used to display the [poster](https://www.w3.org/TR/html5/semantics-embedded-content.html#element-attrdef-video-poster).
+- The language of each test target can be correctly determined (either programmatically or by analyzing the content), and sufficiently understood.
+
+## Accessibility Support
+
+There are no major accessibility support issues known for this rule.
+
+## Background
+
+- The term [label](https://www.w3.org/TR/WCAG21/#dfn-labels) used in expectations 2 and 3 does not refer to the `label` element.
+- [Understanding Success Criterion 1.2.1: Audio-only and Video-only (Prerecorded)](https://www.w3.org/WAI/WCAG21/Understanding/audio-only-and-video-only-prerecorded)
+
+## Test Cases
+
+### Passed
+
+#### Passed Example 1
+
+This `video` element, which has no audio, is a media alternative for the text in the page and it is labeled as such.
+
+```html
+<html lang="en">
+	<p>
+		Not being able to use your computer because your mouse doesn't work, is frustrating. Many people use only the
+		keyboard to navigate websites. Either through preference or circumstance. This is solved by keyboard compatibility.
+		Keyboard compatibility is described in WCAG. See the video below to watch the same information again in video form.
+	</p>
+	<video src="/test-assets/perspective-video/perspective-video-with-captions-silent.mp4" controls></video>
+</html>
+```
+
+### Failed
+
+#### Failed Example 1
+
+This `video` element, which has no audio, has more information than the text on the page.
+
+```html
+<html lang="en">
+	<p>
+		Not being able to use your computer because your mouse doesn't work, is frustrating. Either through preference or
+		circumstance. This is solved by keyboard compatibility. Keyboard compatibility is described in WCAG. See the video
+		below to watch the same information again in video form.
+	</p>
+	<video src="/test-assets/perspective-video/perspective-video-with-captions-silent.mp4" controls></video>
+</html>
+```
+
+#### Failed Example 2
+
+This `video` element, which has no audio, is a media alternative for the text in the page and labeled as such, but the text is not [visible][].
+
+```html
+<html lang="en">
+	<p style="display: none;">
+		Not being able to use your computer because your mouse doesn't work, is frustrating. Many people use only the
+		keyboard to navigate websites. Either through preference or circumstance. This is solved by keyboard compatibility.
+		Keyboard compatibility is described in WCAG. See the video below to watch the same information again in video form.
+	</p>
+	<video src="/test-assets/perspective-video/perspective-video-with-captions-silent.mp4" controls></video>
+</html>
+```
+
+#### Failed Example 3
+
+This `video` element, which has no audio, is a media alternative for the text in the page but not labeled as such.
+
+```html
+<html lang="en">
+	<p>
+		Not being able to use your computer because your mouse doesn't work, is frustrating. Many people use only the
+		keyboard to navigate websites. Either through preference or circumstance. This is solved by keyboard compatibility.
+		Keyboard compatibility is described in WCAG.
+	</p>
+	<video src="/test-assets/perspective-video/perspective-video-with-captions-silent.mp4" controls></video>
+</html>
+```
+
+#### Failed Example 4
+
+This `video` element, which has no audio, is a media alternative for the text in the page and labeled as such, but the label is not [visible][].
+
+```html
+<html lang="en">
+	<p>
+		Not being able to use your computer because your mouse doesn't work, is frustrating. Many people use only the
+		keyboard to navigate websites. Either through preference or circumstance. This is solved by keyboard compatibility.
+		Keyboard compatibility is described in WCAG.
+	</p>
+	<p style="display: none;">
+		See the video below to watch the same information again in video form.
+	</p>
+	<video src="/test-assets/perspective-video/perspective-video-with-captions-silent.mp4" controls></video>
+</html>
+```
+
+### Inapplicable
+
+#### Inapplicable Example 1
+
+This `video` element has audio.
+
+```html
+<html lang="en">
+	<p>
+		Not being able to use your computer because your mouse doesn't work, is frustrating. Many people use only the
+		keyboard to navigate websites. Either through preference or circumstance. This is solved by keyboard compatibility.
+		Keyboard compatibility is described in WCAG. See the video below to watch the same information again in video form.
+	</p>
+	<video src="/test-assets/perspective-video/perspective-video.mp4" controls></video>
+</html>
+```
+
+#### Inapplicable Example 2
+
+This `video` element is not [visible][].
+
+```html
+<html lang="en">
+	<p>
+		Not being able to use your computer because your mouse doesn't work, is frustrating. Many people use only the
+		keyboard to navigate websites. Either through preference or circumstance. This is solved by keyboard compatibility.
+		Keyboard compatibility is described in WCAG. See the video below to watch the same information again in video form.
+	</p>
+	<video
+		src="/test-assets/perspective-video/perspective-video-with-captions-silent.mp4"
+		controls
+		style="display: none;"
+	></video>
+</html>
+```
+
+## Glossary
+
+{% include_relative glossary/focusable.md %}
+{% include_relative glossary/included-in-the-accessibility-tree.md %}
+{% include_relative glossary/non-streaming-media-element.md %}
+{% include_relative glossary/outcome.md %}
+{% include_relative glossary/visible.md %}
+
+## Acknowledgements
+
+This rule was written in the [ACT Rules community group](https://w3.org/community/act-r/), 
+with the support of the EU-funded [WAI-Tools Project](https://www.w3.org/WAI/about/projects/wai-tools/).
+
+### Authors
+
+- [Brian Bors](https://www.linkedin.com/in/brianbors/)
+- [Wilco Fiers](https://github.com/wilcofiers)
+
+## Changelog
+
+This is the first version of this ACT rule.
+
+[included in the accessibility tree]: #included-in-the-accessibility-tree 'Definition of included in the accessibility tree'
+[visible]: #visible 'Definition of visible'
