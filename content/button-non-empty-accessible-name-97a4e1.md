@@ -6,39 +6,35 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/button-non-empty-accessible-name-97a4e1.md
-# footer: > # Text in footer in HTML
-#   <p> This is the text in the footer </p>
+rule_meta:
+  id: 97a4e1
+  name: "Button has non-empty accessible name"
+  rule_type: atomic
+  description: |
+    This rule checks that each `button` element has a non-empty accessible name.
+  accessibility_requirements:
+    'wcag20:4.1.2':
+      forConformance: true
+      failed: not satisfied
+      passed: further testing needed
+      inapplicable: further testing needed
+  input_aspects:
+    - handle: Accessibility Tree
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-accessibility
+    - handle: DOM Tree
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
+    - handle: CSS Styling
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
+  last_modified: July 15th, 2021
+  scs_tested:
+    - handle: Name, Role, Value
+      num: 4.1.2
+      level: A
 ---
-
-Rule Type:
-:   atomic
-
-Rule ID:
-:   97a4e1
-
-Last Modified:
-:   Oct 1, 2020
-
-Accessibility Requirements Mapping:
-:   [4.1.2 Name, Role, Value (Level A)](https://www.w3.org/TR/WCAG21/#name-role-value)
-    - **Required for conformance** to WCAG 2.0 and later on level A and higher
-    - [Outcome](#outcome) mapping:
-        - Any `failed` outcomes: success criterion is not satisfied
-        - All `passed` outcomes: success criterion needs further testing
-        - An `inapplicable` outcome: success criterion needs further testing
-
-Input Aspects:
-:   [Accessibility Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-accessibility)
-:   [DOM Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom)
-:   [CSS Styling](https://www.w3.org/TR/act-rules-aspects/#input-aspects-css)
-
-## Description
-
-This rule checks that each `button` element has a non-empty accessible name.
 
 ## Applicability
 
-The rule applies to elements that are [included in the accessibility tree][] and have a [semantic role](#semantic-role) of `button`, except for `input` elements with a `type` [attribute value] of `image`.
+This rule applies to elements that are [included in the accessibility tree][] and have a [semantic role](#semantic-role) of `button`, except for `input` elements with a `type` [attribute value] of `image`.
 
 ## Expectation
 
@@ -56,6 +52,7 @@ Each target element has an [accessible name][] that is not empty (`""`).
 
 ## Background
 
+- [Image button has non-empty accessible name](https://act-rules.github.io/rules/59796f)
 - [HTML Accessibility API Mappings 1.0 (working draft), 5.2 `input type="button"`, `input type="submit"` and `input type="reset"`](https://www.w3.org/TR/html-aam/#input-type-button-input-type-submit-and-input-type-reset)
 - [Understanding Success Criterion 4.1.2: Name, Role, Value](https://www.w3.org/WAI/WCAG21/Understanding/name-role-value)
 - [ARIA14: Using aria-label to provide an invisible label where a visible label cannot be used](https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA14)

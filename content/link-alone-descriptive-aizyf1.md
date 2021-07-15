@@ -6,38 +6,33 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/link-alone-descriptive-aizyf1.md
-# footer: > # Text in footer in HTML
-#   <p> This is the text in the footer </p>
+rule_meta:
+  id: aizyf1
+  name: "Link is descriptive"
+  rule_type: atomic
+  description: |
+    This rule checks that the accessible name of a link describes its purpose.
+  accessibility_requirements:
+    'wcag20:2.4.9':
+      forConformance: true
+      failed: not satisfied
+      passed: further testing needed
+      inapplicable: further testing needed
+  input_aspects:
+    - handle: Accessibility Tree
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-accessibility
+    - handle: DOM Tree
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
+    - handle: CSS Styling
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
+    - handle: Language
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-text
+  last_modified: July 15th, 2021
+  scs_tested:
+    - handle: Link Purpose (Link Only)
+      num: 2.4.9
+      level: AAA
 ---
-
-{% include_relative _proposed-banner.html %}
-
-Rule Type:
-:   atomic
-
-Rule ID:
-:   aizyf1
-
-Last Modified:
-:   June 14, 2021
-
-Accessibility Requirements Mapping:
-:   [2.4.9 Link Purpose (Link Only) (Level AAA)](https://www.w3.org/TR/WCAG21/#link-purpose-link-only)
-    - **Required for conformance** to WCAG 2.0 and later on level AAA
-    - [Outcome](#outcome) mapping:
-        - Any `failed` outcomes: success criterion is not satisfied
-        - All `passed` outcomes: success criterion needs further testing
-        - An `inapplicable` outcome: success criterion needs further testing
-
-Input Aspects:
-:   [Accessibility Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-accessibility)
-:   [DOM Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom)
-:   [CSS Styling](https://www.w3.org/TR/act-rules-aspects/#input-aspects-css)
-:   [Language](https://www.w3.org/TR/act-rules-aspects/#input-aspects-text)
-
-## Description
-
-This rule checks that the accessible name of a link describes its purpose.
 
 ## Applicability
 

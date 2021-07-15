@@ -6,38 +6,33 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/explicit-SVG-image-non-empty-accessible-name-7d6734.md
-# footer: > # Text in footer in HTML
-#   <p> This is the text in the footer </p>
+rule_meta:
+  id: 7d6734
+  name: "`svg` element with explicit role has non-empty accessible name"
+  rule_type: atomic
+  description: |
+    This rule checks that each SVG image element that is explicitly included in the accessibility tree has a non-empty accessible name.
+  accessibility_requirements:
+    'wcag20:1.1.1':
+      forConformance: true
+      failed: not satisfied
+      passed: further testing needed
+      inapplicable: further testing needed
+  input_aspects:
+    - handle: DOM Tree
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
+    - handle: CSS Styling
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
+  last_modified: July 15th, 2021
+  scs_tested:
+    - handle: Non-text Content
+      num: 1.1.1
+      level: A
 ---
-
-Rule Type:
-:   atomic
-
-Rule ID:
-:   7d6734
-
-Last Modified:
-:   Oct 1, 2020
-
-Accessibility Requirements Mapping:
-:   [1.1.1 Non-text Content (Level A)](https://www.w3.org/TR/WCAG21/#non-text-content)
-    - **Required for conformance** to WCAG 2.0 and later on level A and higher
-    - [Outcome](#outcome) mapping:
-        - Any `failed` outcomes: success criterion is not satisfied
-        - All `passed` outcomes: success criterion needs further testing
-        - An `inapplicable` outcome: success criterion needs further testing
-
-Input Aspects:
-:   [DOM Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom)
-:   [CSS Styling](https://www.w3.org/TR/act-rules-aspects/#input-aspects-css)
-
-## Description
-
-This rule checks that each SVG image element that is explicitly included in the accessibility tree has a non-empty accessible name.
 
 ## Applicability
 
-The rule applies to any element in the [SVG](https://www.w3.org/2000/svg) namespace with an [explicit semantic role][explicit role] of either `img`, `graphics-document`, `graphics-symbol`, that is [included in the accessibility tree][].
+This rule applies to any element in the [SVG](https://www.w3.org/2000/svg) namespace with an [explicit semantic role][explicit role] of either `img`, `graphics-document`, `graphics-symbol`, that is [included in the accessibility tree][].
 
 ## Expectation
 
@@ -118,7 +113,7 @@ This `svg` element has an [explicit role][] of `graphics-document` and an [acces
 
 #### Failed Example 1
 
-This `svg` element has an [explicit role][] of `img` but has no [accessible name][].
+This `svg` element has an [explicit role][] of `img` but has an empty (`""`) [accessible name][].
 
 ```html
 <p>How many circles are there?</p>
@@ -129,7 +124,7 @@ This `svg` element has an [explicit role][] of `img` but has no [accessible name
 
 #### Failed Example 2
 
-This `svg` element has an [explicit role][] of `img`, is included in the accessibility tree, but it has no [accessible name][] because the `title` element is empty.
+This `svg` element has an [explicit role][] of `img`, is included in the accessibility tree, but it has an empty (`""`) [accessible name][] because the `title` element is empty.
 
 ```html
 <p>How many circles are there?</p>
@@ -141,12 +136,26 @@ This `svg` element has an [explicit role][] of `img`, is included in the accessi
 
 #### Failed Example 3
 
-This `circle` element has an [explicit role][] of `graphics-symbol` but has no [accessible name][].
+This `circle` element has an [explicit role][] of `graphics-symbol` but has an empty (`""`) [accessible name][].
 
 ```html
 <p>How many circles are there?</p>
 <svg xmlns="http://www.w3.org/2000/svg">
 	<circle role="graphics-symbol" cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow"></circle>
+</svg>
+```
+
+#### Failed Example 4
+
+This `svg` element with an [explicit role][] of `img` has an empty (`""`) [accessible name][]. The SVG `text` element is not used in computing the accessible name.
+
+```html
+<p>How many circles are there?</p>
+<svg xmlns="http://www.w3.org/2000/svg" role="img" width="100" height="100">
+	<circle cx="50" cy="50" r="40" fill="yellow"></circle>
+	<text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle">
+		1 circle
+	</text>
 </svg>
 ```
 

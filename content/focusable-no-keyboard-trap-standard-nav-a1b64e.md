@@ -6,28 +6,21 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/focusable-no-keyboard-trap-standard-nav-a1b64e.md
-# footer: > # Text in footer in HTML
-#   <p> This is the text in the footer </p>
+rule_meta:
+  id: a1b64e
+  name: "Focusable element has no keyboard trap via standard navigation"
+  rule_type: atomic
+  description: |
+    This rule checks if it is possible to use standard keyboard navigation to navigate through all content on a web page without becoming trapped in any element.
+  accessibility_requirements:
+    null
+  input_aspects:
+    - handle: DOM Tree
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
+    - handle: CSS Styling
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
+  last_modified: July 15th, 2021
 ---
-
-{% include_relative _proposed-banner.html %}
-
-Rule Type:
-:   atomic
-
-Rule ID:
-:   a1b64e
-
-Last Modified:
-:   June 3, 2021
-
-Input Aspects:
-:   [DOM Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom)
-:   [CSS Styling](https://www.w3.org/TR/act-rules-aspects/#input-aspects-css)
-
-## Description
-
-This rule checks if it is possible to use standard keyboard navigation to navigate through all content on a web page without becoming trapped in any element.
 
 ## Applicability
 

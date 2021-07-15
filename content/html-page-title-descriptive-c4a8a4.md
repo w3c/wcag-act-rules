@@ -6,48 +6,39 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/html-page-title-descriptive-c4a8a4.md
-# footer: > # Text in footer in HTML
-#   <p> This is the text in the footer </p>
+rule_meta:
+  id: c4a8a4
+  name: "HTML page title is descriptive"
+  rule_type: atomic
+  description: |
+    This rule checks that the first title in an HTML page describes the topic or purpose of that page.
+  accessibility_requirements:
+    'wcag20:2.4.2':
+      forConformance: true
+      failed: not satisfied
+      passed: satisfied
+      inapplicable: further testing needed
+    'wcag-technique:G88':
+      forConformance: false
+      failed: not satisfied
+      passed: further testing needed
+      inapplicable: further testing needed
+    'wcag-technique:H25':
+      forConformance: false
+      failed: not satisfied
+      passed: further testing needed
+      inapplicable: further testing needed
+  input_aspects:
+    - handle: DOM Tree
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
+    - handle: Language
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-text
+  last_modified: July 15th, 2021
+  scs_tested:
+    - handle: Page Titled
+      num: 2.4.2
+      level: A
 ---
-
-{% include_relative _proposed-banner.html %}
-
-Rule Type:
-:   atomic
-
-Rule ID:
-:   c4a8a4
-
-Last Modified:
-:   June 3, 2021
-
-Accessibility Requirements Mapping:
-:   [2.4.2 Page Titled (Level A)](https://www.w3.org/TR/WCAG21/#page-titled)
-    - **Required for conformance** to WCAG 2.0 and later on level A and higher
-    - [Outcome](#outcome) mapping:
-        - Any `failed` outcomes: success criterion is not satisfied
-        - All `passed` outcomes: success criterion is satisfied
-        - An `inapplicable` outcome: success criterion needs further testing
-:   [G88: Providing descriptive titles for Web pages](https://www.w3.org/WAI/WCAG21/Techniques/general/G88)
-    - Not required to conformance to any W3C accessibility recommendation.
-    - [Outcome](#outcome) mapping:
-        - Any `failed` outcomes: technique is not satisfied
-        - All `passed` outcomes: technique needs further testing
-        - An `inapplicable` outcome: technique needs further testing
-:   [H25: Providing a title using the title element](https://www.w3.org/WAI/WCAG21/Techniques/html/H25)
-    - Not required to conformance to any W3C accessibility recommendation.
-    - [Outcome](#outcome) mapping:
-        - Any `failed` outcomes: technique is not satisfied
-        - All `passed` outcomes: technique needs further testing
-        - An `inapplicable` outcome: technique needs further testing
-
-Input Aspects:
-:   [DOM Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom)
-:   [Language](https://www.w3.org/TR/act-rules-aspects/#input-aspects-text)
-
-## Description
-
-This rule checks that the first title in an HTML page describes the topic or purpose of that page.
 
 ## Applicability
 

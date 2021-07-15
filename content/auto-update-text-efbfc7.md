@@ -6,46 +6,39 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/auto-update-text-efbfc7.md
-# footer: > # Text in footer in HTML
-#   <p> This is the text in the footer </p>
+rule_meta:
+  id: efbfc7
+  name: "Text content that changes automatically can be paused, stopped or hidden"
+  rule_type: atomic
+  description: |
+    This rule checks that for any text content that regularly changes automatically, there are instruments to pause, stop, or hide it or to control its changing frequency.
+  accessibility_requirements:
+    'wcag20:2.2.2':
+      forConformance: true
+      failed: not satisfied
+      passed: further testing needed
+      inapplicable: further testing needed
+    'wcag-text:cc5':
+      title: WCAG Non-Interference
+      forConformance: true
+      failed: not satisfied
+      passed: further testing needed
+      inapplicable: further testing needed
+  input_aspects:
+    - handle: DOM Tree
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
+    - handle: CSS Styling
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
+  last_modified: July 15th, 2021
+  scs_tested:
+    - handle: Pause, Stop, Hide
+      num: 2.2.2
+      level: A
 ---
-
-{% include_relative _proposed-banner.html %}
-
-Rule Type:
-:   atomic
-
-Rule ID:
-:   efbfc7
-
-Last Modified:
-:   June 3, 2021
-
-Accessibility Requirements Mapping:
-:   [2.2.2 Pause, Stop, Hide (Level A)](https://www.w3.org/TR/WCAG21/#pause-stop-hide)
-    - **Required for conformance** to WCAG 2.0 and later on level A and higher
-    - [Outcome](#outcome) mapping:
-        - Any `failed` outcomes: success criterion is not satisfied
-        - All `passed` outcomes: success criterion needs further testing
-        - An `inapplicable` outcome: success criterion needs further testing
-:   [WCAG Non-Interference](https://www.w3.org/TR/WCAG21/#cc5)
-    - **Required for conformance** to WCAG 2.1
-    - [Outcome](#outcome) mapping:
-        - Any `failed` outcomes: WCAG 2 conformance requirement is not satisfied
-        - All `passed` outcomes: WCAG 2 conformance requirement needs further testing
-        - An `inapplicable` outcome: WCAG 2 conformance requirement needs further testing
-
-Input Aspects:
-:   [DOM Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom)
-:   [CSS Styling](https://www.w3.org/TR/act-rules-aspects/#input-aspects-css)
-
-## Description
-
-This rule checks that for any text content that automatically changes in a 10 minute time span, there are instruments to pause, stop, or hide it or to control its changing frequency. The arbitrary 10 minute time span, selected so that testing this rule would not be impractical, is not included in WCAG. Content that changes less frequently may fail success criteria 2.2.2 without failing this rule.
 
 ## Applicability
 
-This rule applies to any [HTML element][] that has a [visible][] [text node][] as a [descendant][] in the [flat tree][] if:
+This rule applies to any [HTML element][] that has a [visible][] [text node][] as a [descendant][] in the [flat tree][], for which all the following is true:
 
 - **changed:** the `innerText` property of the [element][html element] changes multiple times within a 10 minute time span where there is no [user interaction][]; and
 - **no child changed:** the [element][html element] does not have [children][child] in the [flat tree][] whose `innerText` property also changes; and
@@ -53,7 +46,7 @@ This rule applies to any [HTML element][] that has a [visible][] [text node][] a
 
 ## Expectation
 
-For each test target there is at least one set of [instruments][instrument], where each [instrument][] is in the same [web page][] as the test target or can be found in a [clearly labeled location][] from that [web page][], to achieve one of the following objectives:
+For each test target there is at least one set of [instruments][instrument], where each [instrument][] is in the same [web page][] as the test target or can be found in a [clearly labeled location][] from that [web page][], to achieve at least one of the following objectives:
 
 - pause and resume the change of the [visible text content][]; or
 - stop the change of the [visible text content][]; or
@@ -77,6 +70,8 @@ For each test target there is at least one set of [instruments][instrument], whe
 _There are no major accessibility support issues known for this rule._
 
 ## Background
+
+The 10 minute time span in the applicability is arbitrary. It is selected so that testing this rule would not become impractical. This 10 minute constraint is not included in WCAG. Content that changes less frequently may fail success criteria 2.2.2 without failing this rule.
 
 - [Understanding Success Criterion 2.2.2: Pause, Stop, Hide][sc 2.2.2]
 - [G186: Using a control in the Web page that stops moving, blinking, or auto-updating content][g186]

@@ -6,37 +6,31 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/iframe-identical-name-equivalent-purpose-4b1c6c.md
-# footer: > # Text in footer in HTML
-#   <p> This is the text in the footer </p>
+rule_meta:
+  id: 4b1c6c
+  name: "`iframe` elements with identical accessible names have equivalent purpose"
+  rule_type: atomic
+  description: |
+    This rule checks that `iframe` elements with identical accessible names embed the same resource or equivalent resources.
+  accessibility_requirements:
+    'wcag20:4.1.2':
+      forConformance: true
+      failed: not satisfied
+      passed: further testing needed
+      inapplicable: further testing needed
+  input_aspects:
+    - handle: DOM Tree
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
+    - handle: CSS Styling
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
+    - handle: Language
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-text
+  last_modified: July 15th, 2021
+  scs_tested:
+    - handle: Name, Role, Value
+      num: 4.1.2
+      level: A
 ---
-
-{% include_relative _proposed-banner.html %}
-
-Rule Type:
-:   atomic
-
-Rule ID:
-:   4b1c6c
-
-Last Modified:
-:   June 3, 2021
-
-Accessibility Requirements Mapping:
-:   [4.1.2 Name, Role, Value (Level A)](https://www.w3.org/TR/WCAG21/#name-role-value)
-    - **Required for conformance** to WCAG 2.0 and later on level A and higher
-    - [Outcome](#outcome) mapping:
-        - Any `failed` outcomes: success criterion is not satisfied
-        - All `passed` outcomes: success criterion needs further testing
-        - An `inapplicable` outcome: success criterion needs further testing
-
-Input Aspects:
-:   [DOM Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom)
-:   [CSS Styling](https://www.w3.org/TR/act-rules-aspects/#input-aspects-css)
-:   [Language](https://www.w3.org/TR/act-rules-aspects/#input-aspects-text)
-
-## Description
-
-This rule checks that `iframe` elements with identical accessible names embed the same resource or equivalent resources.
 
 ## Applicability
 

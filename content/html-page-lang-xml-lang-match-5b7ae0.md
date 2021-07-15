@@ -6,33 +6,27 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/html-page-lang-xml-lang-match-5b7ae0.md
-# footer: > # Text in footer in HTML
-#   <p> This is the text in the footer </p>
+rule_meta:
+  id: 5b7ae0
+  name: "HTML page `lang` and `xml:lang` attributes have matching values"
+  rule_type: atomic
+  description: |
+    This rule checks that both `lang` and `xml:lang` attributes on the root element of a non-embedded HTML page, have the same primary language subtag.
+  accessibility_requirements:
+    'wcag20:3.1.1':
+      forConformance: true
+      failed: not satisfied
+      passed: further testing needed
+      inapplicable: further testing needed
+  input_aspects:
+    - handle: DOM Tree
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
+  last_modified: July 15th, 2021
+  scs_tested:
+    - handle: Language of Page
+      num: 3.1.1
+      level: A
 ---
-
-Rule Type:
-:   atomic
-
-Rule ID:
-:   5b7ae0
-
-Last Modified:
-:   Oct 6st, 2020
-
-Accessibility Requirements Mapping:
-:   [3.1.1 Language of Page (Level A)](https://www.w3.org/TR/WCAG21/#language-of-page)
-    - **Required for conformance** to WCAG 2.0 and later on level A and higher
-    - [Outcome](#outcome) mapping:
-        - Any `failed` outcomes: success criterion is not satisfied
-        - All `passed` outcomes: success criterion needs further testing
-        - An `inapplicable` outcome: success criterion needs further testing
-
-Input Aspects:
-:   [DOM Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom)
-
-## Description
-
-This rule checks that both `lang` and `xml:lang` attributes on the root element of a non-embedded HTML page, have the same primary language subtag.
 
 ## Applicability
 

@@ -6,43 +6,36 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/visible-label-in-accessible-name-2ee8b8.md
-# footer: > # Text in footer in HTML
-#   <p> This is the text in the footer </p>
+rule_meta:
+  id: 2ee8b8
+  name: "Visible label is part of accessible name"
+  rule_type: atomic
+  description: |
+    This rule checks that interactive elements labeled through content have their visible label as part of their accessible name.
+  accessibility_requirements:
+    'wcag21:2.5.3':
+      forConformance: true
+      failed: not satisfied
+      passed: further testing needed
+      inapplicable: further testing needed
+    'wcag-technique:G208':
+      forConformance: false
+      failed: not satisfied
+      passed: further testing needed
+      inapplicable: further testing needed
+  input_aspects:
+    - handle: Accessibility Tree
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-accessibility
+    - handle: DOM Tree
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
+    - handle: CSS Styling
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
+  last_modified: July 15th, 2021
+  scs_tested:
+    - handle: Label in Name
+      num: 2.5.3
+      level: A
 ---
-
-{% include_relative _proposed-banner.html %}
-
-Rule Type:
-:   atomic
-
-Rule ID:
-:   2ee8b8
-
-Last Modified:
-:   June 3, 2021
-
-Accessibility Requirements Mapping:
-:   [2.5.3 Label in Name (Level A)](https://www.w3.org/TR/WCAG21/#label-in-name)
-    - **Required for conformance** to WCAG 2.1 on level A and higher
-    - [Outcome](#outcome) mapping:
-        - Any `failed` outcomes: success criterion is not satisfied
-        - All `passed` outcomes: success criterion needs further testing
-        - An `inapplicable` outcome: success criterion needs further testing
-:   [G208: Including the text of the visible label as part of the accessible name](https://www.w3.org/WAI/WCAG21/Techniques/general/G208)
-    - Not required to conformance to any W3C accessibility recommendation.
-    - [Outcome](#outcome) mapping:
-        - Any `failed` outcomes: technique is not satisfied
-        - All `passed` outcomes: technique needs further testing
-        - An `inapplicable` outcome: technique needs further testing
-
-Input Aspects:
-:   [Accessibility Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-accessibility)
-:   [DOM Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom)
-:   [CSS Styling](https://www.w3.org/TR/act-rules-aspects/#input-aspects-css)
-
-## Description
-
-This rule checks that interactive elements labeled through content have their visible label as part of their accessible name.
 
 ## Applicability
 

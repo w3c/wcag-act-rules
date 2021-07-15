@@ -6,36 +6,29 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/word-spacing-not-important-9e45ec.md
-# footer: > # Text in footer in HTML
-#   <p> This is the text in the footer </p>
+rule_meta:
+  id: 9e45ec
+  name: "Word spacing in `style` attributes is not `!important`"
+  rule_type: atomic
+  description: |
+    This rule checks that the `style` attribute is not used to prevent adjusting `word-spacing` by using `!important`, except if it's at least `0.16` times the font size.
+  accessibility_requirements:
+    'wcag21:1.4.12':
+      forConformance: true
+      failed: not satisfied
+      passed: further testing needed
+      inapplicable: further testing needed
+  input_aspects:
+    - handle: DOM Tree
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
+    - handle: CSS Styling
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
+  last_modified: July 15th, 2021
+  scs_tested:
+    - handle: Text Spacing
+      num: 1.4.12
+      level: AA
 ---
-
-{% include_relative _proposed-banner.html %}
-
-Rule Type:
-:   atomic
-
-Rule ID:
-:   9e45ec
-
-Last Modified:
-:   Jun 14, 2021
-
-Accessibility Requirements Mapping:
-:   [1.4.12 Text Spacing (Level AA)](https://www.w3.org/TR/WCAG21/#text-spacing)
-    - **Required for conformance** to WCAG 2.1 on level AA and higher
-    - [Outcome](#outcome) mapping:
-        - Any `failed` outcomes: success criterion is not satisfied
-        - All `passed` outcomes: success criterion needs further testing
-        - An `inapplicable` outcome: success criterion needs further testing
-
-Input Aspects:
-:   [DOM Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom)
-:   [CSS Styling](https://www.w3.org/TR/act-rules-aspects/#input-aspects-css)
-
-## Description
-
-This rule checks that the `style` attribute is not used to prevent adjusting `word-spacing` by using `!important`, except if it's at least `0.16` times the font size.
 
 ## Applicability
 
@@ -43,7 +36,7 @@ This rule applies to any HTML element that is [visible][] and for which the `sty
 
 ## Expectation
 
-For each test target, one of the following is true:
+For each test target, at least one of the following is true:
 
 - **not important**: the [computed][] value of its [word-spacing][] property is not [important][]; or
 - **wide enough**: the [computed][] value of its [word-spacing][] property is at least 0.16 times the [computed][] value of its [font-size][] property; or

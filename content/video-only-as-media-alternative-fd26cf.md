@@ -6,30 +6,25 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/video-only-as-media-alternative-fd26cf.md
-# footer: > # Text in footer in HTML
-#   <p> This is the text in the footer </p>
+rule_meta:
+  id: fd26cf
+  name: "`video` element visual-only content is media alternative for text"
+  rule_type: atomic
+  description: |
+    This rule checks non-streaming silent `video` is a media alternative for text on the page.
+  accessibility_requirements:
+    null
+  input_aspects:
+    - handle: DOM Tree
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
+    - handle: CSS Styling
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
+    - handle: Audio output
+      url: 
+    - handle: Language
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-text
+  last_modified: July 15th, 2021
 ---
-
-{% include_relative _proposed-banner.html %}
-
-Rule Type:
-:   atomic
-
-Rule ID:
-:   fd26cf
-
-Last Modified:
-:   June 3, 2021
-
-Input Aspects:
-:   [DOM Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom)
-:   [CSS Styling](https://www.w3.org/TR/act-rules-aspects/#input-aspects-css)
-:   Audio output
-:   [Language](https://www.w3.org/TR/act-rules-aspects/#input-aspects-text)
-
-## Description
-
-This rule checks non-streaming silent `video` is a media alternative for text on the page.
 
 ## Applicability
 

@@ -6,29 +6,23 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/element-marked-decorative-is-not-exposed-46ca7f.md
-# footer: > # Text in footer in HTML
-#   <p> This is the text in the footer </p>
+rule_meta:
+  id: 46ca7f
+  name: "Element marked as decorative is not exposed"
+  rule_type: atomic
+  description: |
+    This rule checks that elements marked as decorative either are not included in the accessibility tree, or have a presentational role.
+  accessibility_requirements:
+    null
+  input_aspects:
+    - handle: Accessibility tree
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-accessibility
+    - handle: CSS styling
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
+    - handle: DOM tree
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
+  last_modified: July 15th, 2021
 ---
-
-{% include_relative _proposed-banner.html %}
-
-Rule Type:
-:   atomic
-
-Rule ID:
-:   46ca7f
-
-Last Modified:
-:   June 14, 2021
-
-Input Aspects:
-:   [Accessibility tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-accessibility)
-:   [CSS styling](https://www.w3.org/TR/act-rules-aspects/#input-aspects-css)
-:   [DOM tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom)
-
-## Description
-
-This rule checks that elements marked as decorative either are not included in the accessibility tree, or have a presentational role.
 
 ## Applicability
 

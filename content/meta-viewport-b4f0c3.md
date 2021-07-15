@@ -6,43 +6,39 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/meta-viewport-b4f0c3.md
-# footer: > # Text in footer in HTML
-#   <p> This is the text in the footer </p>
+rule_meta:
+  id: b4f0c3
+  name: "`meta` `viewport` allows for zoom"
+  rule_type: atomic
+  description: |
+    This rule checks that the `meta` element retains the user agent ability to zoom.
+  accessibility_requirements:
+    'wcag20:1.4.4':
+      forConformance: true
+      failed: not satisfied
+      passed: further testing needed
+      inapplicable: further testing needed
+    'wcag20:1.4.10':
+      forConformance: true
+      failed: not satisfied
+      passed: further testing needed
+      inapplicable: further testing needed
+  input_aspects:
+    - handle: DOM Tree
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
+  last_modified: July 15th, 2021
+  scs_tested:
+    - handle: Resize text
+      num: 1.4.4
+      level: AA
+    - handle: Reflow
+      num: 1.4.10
+      level: AA
 ---
-
-Rule Type:
-:   atomic
-
-Rule ID:
-:   b4f0c3
-
-Last Modified:
-:   Oct 1, 2020
-
-Accessibility Requirements Mapping:
-:   [1.4.4 Resize text (Level AA)](https://www.w3.org/TR/WCAG21/#resize-text)
-    - **Required for conformance** to WCAG 2.0 and later on level AA and higher
-    - [Outcome](#outcome) mapping:
-        - Any `failed` outcomes: success criterion is not satisfied
-        - All `passed` outcomes: success criterion needs further testing
-        - An `inapplicable` outcome: success criterion needs further testing
-:   [1.4.10 Reflow (Level AA)](https://www.w3.org/TR/WCAG21/#reflow)
-    - **Required for conformance** to WCAG 2.1 on level AA and higher
-    - [Outcome](#outcome) mapping:
-        - Any `failed` outcomes: success criterion is not satisfied
-        - All `passed` outcomes: success criterion needs further testing
-        - An `inapplicable` outcome: success criterion needs further testing
-
-Input Aspects:
-:   [DOM Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom)
-
-## Description
-
-This rule checks that the `meta` element retains the user agent ability to zoom.
 
 ## Applicability
 
-The rule applies to each `meta` element with a `name` attribute whose value is a [case-insensitive][] match for `viewport` and has a `content` attribute.
+This rule applies to each `meta` element with a `name` attribute whose value is a [case-insensitive][] match for `viewport` and has a `content` attribute.
 
 ## Expectation
 
@@ -64,6 +60,8 @@ If any of the following is false, this rule can fail while Success Criteria [1.4
 Desktop browsers ignore the viewport `meta` element, and most modern mobile browsers either ignore it by default or have an accessibility option which will allow zooming. This rule is not relevant for desktop browsers, nor for most modern mobile browsers. Only users with older mobile browsers can experience issues tested by this rule.
 
 ## Background
+
+This rule is designed specifically for [1.4.4 Resize text][sc144], which requires that text can be resized up to 200%. Because text that can not be resized up to 200% can not fit in an area of 320 by 256 [CSS pixels][], this rule maps to [1.4.10 Reflow][sc1410] as well. All passed examples in this rule satisfy both success criteria.
 
 - [Understanding Success Criterion 1.4.4: Resize text](https://www.w3.org/WAI/WCAG21/Understanding/resize-text)
 - [HTML Specification - The `meta` element][meta]
@@ -247,8 +245,8 @@ There is no viewport `meta` element.
 ```html
 <html>
 	<head>
-		<title>Simple page showing random text</title>
-		<meta http-equiv="refresh" content="10; URL='https://github.com'" />
+		<title>Lorem ipsum</title>
+		<meta charset="UTF-8">
 	</head>
 	<body>
 		<p>
@@ -303,5 +301,5 @@ This is the first version of this ACT rule.
 [user-scalable]: https://www.w3.org/TR/css-device-adapt-1/#user-scalable 'The user-scalable property'
 [visible]: #visible 'Definition of visible'
 [css pixels]: https://www.w3.org/TR/css3-values/#reference-pixel 'CSS 3 definition, reference pixel'
-[sc144]: https://www.w3.org/TR/WCAG21/#resize-text 'Success Criterion 1.4.4 Resize text'
-[sc1410]: https://www.w3.org/TR/WCAG21/#reflow 'Success Criterion 1.4.10 Reflow'
+[sc144]: https://www.w3.org/TR/WCAG21/#resize-text 'WCAG 2.1 Success Criterion 1.4.4 Resize text'
+[sc1410]: https://www.w3.org/TR/WCAG21/#reflow 'WCAG 2.1 Success Criterion 1.4.10 Reflow'

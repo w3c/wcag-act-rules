@@ -6,60 +6,48 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/audio-or-video-avoids-automatically-playing-audio-80f0bf.md
-# footer: > # Text in footer in HTML
-#   <p> This is the text in the footer </p>
+rule_meta:
+  id: 80f0bf
+  name: "`audio` or `video` avoids automatically playing audio"
+  rule_type: composite
+  description: |
+    This rule checks that audio or video that plays automatically does not have audio that lasts for more than 3 seconds or has an audio control mechanism to stop or mute it.
+  accessibility_requirements:
+    'wcag20:1.4.2':
+      forConformance: true
+      failed: not satisfied
+      passed: further testing needed
+      inapplicable: further testing needed
+    'wcag-text:cc5':
+      title: WCAG Non-Interference
+      forConformance: true
+      failed: not satisfied
+      passed: further testing needed
+      inapplicable: further testing needed
+    'wcag-technique:G60':
+      forConformance: false
+      failed: not satisfied
+      passed: further testing needed
+      inapplicable: further testing needed
+    'wcag-technique:G170':
+      forConformance: false
+      failed: not satisfied
+      passed: further testing needed
+      inapplicable: further testing needed
+    'wcag-technique:G171':
+      forConformance: false
+      failed: not satisfied
+      passed: further testing needed
+      inapplicable: further testing needed
+  input_aspects:
+    - 4c31df
+    - aaa1bf
+  last_modified: July 15th, 2021
+  scs_tested:
+    - handle: Audio Control
+      num: 1.4.2
+      level: A
 ---
-
-{% include_relative _proposed-banner.html %}
-
-Rule Type:
-:   composite
-
-Rule ID:
-:   80f0bf
-
-Last Modified:
-:   June 3, 2021
-
-Accessibility Requirements Mapping:
-:   [1.4.2 Audio Control (Level A)](https://www.w3.org/TR/WCAG21/#audio-control)
-    - **Required for conformance** to WCAG 2.0 and later on level A and higher
-    - [Outcome](#outcome) mapping:
-        - Any `failed` outcomes: success criterion is not satisfied
-        - All `passed` outcomes: success criterion needs further testing
-        - An `inapplicable` outcome: success criterion needs further testing
-:   [WCAG Non-Interference](https://www.w3.org/TR/WCAG21/#cc5)
-    - **Required for conformance** to WCAG 2.1
-    - [Outcome](#outcome) mapping:
-        - Any `failed` outcomes: WCAG 2 conformance requirement is not satisfied
-        - All `passed` outcomes: WCAG 2 conformance requirement needs further testing
-        - An `inapplicable` outcome: WCAG 2 conformance requirement needs further testing
-:   [G60: Playing a sound that turns off automatically within three seconds](https://www.w3.org/WAI/WCAG21/Techniques/general/G60)
-    - Not required to conformance to any W3C accessibility recommendation.
-    - [Outcome](#outcome) mapping:
-        - Any `failed` outcomes: technique is not satisfied
-        - All `passed` outcomes: technique needs further testing
-        - An `inapplicable` outcome: technique needs further testing
-:   [G170: Providing a control near the beginning of the Web page that turns off sounds that play automatically](https://www.w3.org/WAI/WCAG21/Techniques/general/G170)
-    - Not required to conformance to any W3C accessibility recommendation.
-    - [Outcome](#outcome) mapping:
-        - Any `failed` outcomes: technique is not satisfied
-        - All `passed` outcomes: technique needs further testing
-        - An `inapplicable` outcome: technique needs further testing
-:   [G171: Playing sounds only on user request](https://www.w3.org/WAI/WCAG21/Techniques/general/G171)
-    - Not required to conformance to any W3C accessibility recommendation.
-    - [Outcome](#outcome) mapping:
-        - Any `failed` outcomes: technique is not satisfied
-        - All `passed` outcomes: technique needs further testing
-        - An `inapplicable` outcome: technique needs further testing
-
-Input Rules:
-:   [4c31df](/standards-guidelines/act/rules/4c31df/)
-:   [aaa1bf](/standards-guidelines/act/rules/aaa1bf/)
-
-## Description
-
-This rule checks that audio or video that plays automatically does not have audio that lasts for more than 3 seconds or has an audio control mechanism to stop or mute it.
 
 ## Applicability
 

@@ -6,47 +6,41 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/image-not-in-acc-tree-is-decorative-e88epe.md
-# footer: > # Text in footer in HTML
-#   <p> This is the text in the footer </p>
+rule_meta:
+  id: e88epe
+  name: "Image not in the accessibility tree is decorative"
+  rule_type: atomic
+  description: |
+    This rule checks that visible `img`, `svg` and `canvas` elements that are ignored by assistive technologies are decorative.
+  accessibility_requirements:
+    'wcag20:1.1.1':
+      forConformance: true
+      failed: not satisfied
+      passed: further testing needed
+      inapplicable: further testing needed
+  input_aspects:
+    - handle: DOM Tree
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
+    - handle: Accessibility tree
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-accessibility
+    - handle: CSS Styling
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
+  last_modified: July 15th, 2021
+  scs_tested:
+    - handle: Non-text Content
+      num: 1.1.1
+      level: A
 ---
-
-{% include_relative _proposed-banner.html %}
-
-Rule Type:
-:   atomic
-
-Rule ID:
-:   e88epe
-
-Last Modified:
-:   June 3, 2021
-
-Accessibility Requirements Mapping:
-:   [1.1.1 Non-text Content (Level A)](https://www.w3.org/TR/WCAG21/#non-text-content)
-    - **Required for conformance** to WCAG 2.0 and later on level A and higher
-    - [Outcome](#outcome) mapping:
-        - Any `failed` outcomes: success criterion is not satisfied
-        - All `passed` outcomes: success criterion needs further testing
-        - An `inapplicable` outcome: success criterion needs further testing
-
-Input Aspects:
-:   [DOM Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom)
-:   [Accessibility tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-accessibility)
-:   [CSS Styling](https://www.w3.org/TR/act-rules-aspects/#input-aspects-css)
-
-## Description
-
-This rule checks that visible `img`, `svg` and `canvas` elements that are ignored by assistive technologies are decorative.
 
 ## Applicability
 
-This rule applies to any `img`, `canvas` or `svg` element that is [visible][] and for which one of the following is true:
+This rule applies to any `img`, `canvas` or `svg` element that is [visible][] and for which at least one of the following is true:
 
 - **excluded**: The element is not [included in the accessibility tree][]; or
 - **ignored svg**: The element is an `svg` with an empty (`""`) [accessible name][] and a [semantic role][] of `graphics-document`; or
 - **ignored canvas**: The element is a `canvas` with an empty (`""`) [accessible name][] and no [explicit semantic role][]; or
 
-**Exception**: This rule never applies to elements for which one of the following is true:
+**Exception**: This rule never applies to elements for which one or more of the following is true:
 
 - The element has an [ancestor][] in the [flat tree][] that is [named from author][]; or
 - The element is an `img` element where the [current request][]'s [state][image request state] is not [completely available][].

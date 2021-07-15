@@ -6,36 +6,26 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/aria-state-or-property-valid-value-6a7281.md
-# footer: > # Text in footer in HTML
-#   <p> This is the text in the footer </p>
+rule_meta:
+  id: 6a7281
+  name: "ARIA state or property has valid value"
+  rule_type: atomic
+  description: |
+    This rule checks that each ARIA state or property has a valid value.
+  accessibility_requirements:
+    'aria11:state_prop_values':
+      title: 'ARIA 1.1, 6.3 Values for States and Properties'
+      forConformance: true
+      failed: not satisfied
+      passed: satisfied
+      inapplicable: satisfied
+  input_aspects:
+    - handle: DOM Tree
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
+    - handle: CSS Styling
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
+  last_modified: July 15th, 2021
 ---
-
-{% include_relative _proposed-banner.html %}
-
-Rule Type:
-:   atomic
-
-Rule ID:
-:   6a7281
-
-Last Modified:
-:   June 14, 2021
-
-Accessibility Requirements Mapping:
-:   [ARIA 1.1, 6.3 Values for States and Properties](https://www.w3.org/TR/wai-aria-1.1/#state_prop_values)
-    - **Required for conformance** to WAI-ARIA 1.1 author requirements
-    - [Outcome](#outcome) mapping:
-        - Any `failed` outcomes: WAI-ARIA requirement is not satisfied
-        - All `passed` outcomes: WAI-ARIA requirement is satisfied
-        - An `inapplicable` outcome: WAI-ARIA requirement is satisfied
-
-Input Aspects:
-:   [DOM Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom)
-:   [CSS Styling](https://www.w3.org/TR/act-rules-aspects/#input-aspects-css)
-
-## Description
-
-This rule checks that each ARIA state or property has a valid value.
 
 ## Applicability
 

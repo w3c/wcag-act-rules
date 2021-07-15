@@ -6,43 +6,33 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/aria-state-or-property-permitted-5c01ea.md
-# footer: > # Text in footer in HTML
-#   <p> This is the text in the footer </p>
+rule_meta:
+  id: 5c01ea
+  name: "ARIA state or property is permitted"
+  rule_type: atomic
+  description: |
+    This rule checks that WAI-ARIA states or properties are allowed for the element they are specified on.
+  accessibility_requirements:
+    'wcag-technique:ARIA5':
+      forConformance: false
+      failed: not satisfied
+      passed: further testing needed
+      inapplicable: further testing needed
+    'aria11:state_property_processing':
+      title: 'ARIA 1.1, 7.6 State and Property Attribute Processing'
+      forConformance: true
+      failed: not satisfied
+      passed: satisfied
+      inapplicable: satisfied
+  input_aspects:
+    - handle: Accessibility Tree
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-accessibility
+    - handle: CSS styling
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
+    - handle: DOM Tree
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
+  last_modified: July 15th, 2021
 ---
-
-{% include_relative _proposed-banner.html %}
-
-Rule Type:
-:   atomic
-
-Rule ID:
-:   5c01ea
-
-Last Modified:
-:   June 14, 2021
-
-Accessibility Requirements Mapping:
-:   [ARIA5: Using WAI-ARIA state and property attributes to expose the state of a user interface component](https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA5)
-    - Not required to conformance to any W3C accessibility recommendation.
-    - [Outcome](#outcome) mapping:
-        - Any `failed` outcomes: technique is not satisfied
-        - All `passed` outcomes: technique needs further testing
-        - An `inapplicable` outcome: technique needs further testing
-:   [ARIA 1.1, 7.6 State and Property Attribute Processing](https://www.w3.org/TR/wai-aria-1.1/#state_property_processing)
-    - **Required for conformance** to WAI-ARIA 1.1 author requirements
-    - [Outcome](#outcome) mapping:
-        - Any `failed` outcomes: WAI-ARIA requirement is not satisfied
-        - All `passed` outcomes: WAI-ARIA requirement is satisfied
-        - An `inapplicable` outcome: WAI-ARIA requirement is satisfied
-
-Input Aspects:
-:   [Accessibility Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-accessibility)
-:   [CSS styling](https://www.w3.org/TR/act-rules-aspects/#input-aspects-css)
-:   [DOM Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom)
-
-## Description
-
-This rule checks that WAI-ARIA states or properties are allowed for the element they are specified on.
 
 ## Applicability
 

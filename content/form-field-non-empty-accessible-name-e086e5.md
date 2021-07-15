@@ -6,35 +6,31 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/form-field-non-empty-accessible-name-e086e5.md
-# footer: > # Text in footer in HTML
-#   <p> This is the text in the footer </p>
+rule_meta:
+  id: e086e5
+  name: "Form field has non-empty accessible name"
+  rule_type: atomic
+  description: |
+    This rule checks that each form field element has a non-empty accessible name.
+  accessibility_requirements:
+    'wcag20:4.1.2':
+      forConformance: true
+      failed: not satisfied
+      passed: further testing needed
+      inapplicable: further testing needed
+  input_aspects:
+    - handle: Accessibility Tree
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-accessibility
+    - handle: CSS styling
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
+    - handle: DOM Tree
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
+  last_modified: July 15th, 2021
+  scs_tested:
+    - handle: Name, Role, Value
+      num: 4.1.2
+      level: A
 ---
-
-Rule Type:
-:   atomic
-
-Rule ID:
-:   e086e5
-
-Last Modified:
-:   Oct 1, 2020
-
-Accessibility Requirements Mapping:
-:   [4.1.2 Name, Role, Value (Level A)](https://www.w3.org/TR/WCAG21/#name-role-value)
-    - **Required for conformance** to WCAG 2.0 and later on level A and higher
-    - [Outcome](#outcome) mapping:
-        - Any `failed` outcomes: success criterion is not satisfied
-        - All `passed` outcomes: success criterion needs further testing
-        - An `inapplicable` outcome: success criterion needs further testing
-
-Input Aspects:
-:   [Accessibility Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-accessibility)
-:   [CSS styling](https://www.w3.org/TR/act-rules-aspects/#input-aspects-css)
-:   [DOM Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom)
-
-## Description
-
-This rule checks that each form field element has a non-empty accessible name.
 
 ## Applicability
 

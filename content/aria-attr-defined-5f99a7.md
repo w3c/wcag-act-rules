@@ -6,27 +6,19 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/aria-attr-defined-5f99a7.md
-# footer: > # Text in footer in HTML
-#   <p> This is the text in the footer </p>
+rule_meta:
+  id: 5f99a7
+  name: "`aria-*` attribute is defined in WAI-ARIA"
+  rule_type: atomic
+  description: |
+    This rule checks that each `aria-` attribute specified is defined in ARIA 1.1.
+  accessibility_requirements:
+    null
+  input_aspects:
+    - handle: DOM Tree
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
+  last_modified: July 15th, 2021
 ---
-
-{% include_relative _proposed-banner.html %}
-
-Rule Type:
-:   atomic
-
-Rule ID:
-:   5f99a7
-
-Last Modified:
-:   June 14, 2021
-
-Input Aspects:
-:   [DOM Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom)
-
-## Description
-
-This rule checks that each `aria-` attribute specified is defined in ARIA 1.1.
 
 ## Applicability
 

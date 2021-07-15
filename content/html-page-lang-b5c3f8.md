@@ -1,5 +1,5 @@
 ---
-title: HTML page has lang attribute
+title: "HTML page has lang attribute"
 permalink: /standards-guidelines/act/rules/html-page-lang-b5c3f8/
 ref: /standards-guidelines/act/rules/html-page-lang-b5c3f8/
 lang: en
@@ -7,31 +7,29 @@ github:
   repository: w3c/wcag-act-rules
   path: content/html-page-lang-b5c3f8.md
 rule_meta:
-  ## values below exist in currently generated file
-  id: 97a4e1
-  name: HTML page has lang attribute
+  id: b5c3f8
+  name: "HTML page has `lang` attribute"
   rule_type: atomic
   description: |
-    This rule checks that each `button` element has a non-empty accessible name.
+    This rule checks that an HTML page has a non-empty `lang` attribute.
   accessibility_requirements:
-    wcag20:4.1.2: # Name, Role, Value (A)
+    'wcag20:3.1.1':
       forConformance: true
       failed: not satisfied
       passed: further testing needed
       inapplicable: further testing needed
-  ## values below would have slightly different format
+    'wcag-technique:H57':
+      forConformance: false
+      failed: not satisfied
+      passed: further testing needed
+      inapplicable: further testing needed
   input_aspects:
-    - handle: Accessibility Tree
-      url: https://www.w3.org/TR/act-rules-aspects/
     - handle: DOM Tree
-      url: https://www.w3.org/TR/act-rules-aspects/
-    - handle: CSS Styling
-      url: https://www.w3.org/TR/act-rules-aspects/
-  ## values below would be new 
-  last_modified: March 5, 2020 
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
+  last_modified: July 15th, 2021
   scs_tested:
-    - handle: Name, Role, Value
-      num: 4.1.2
+    - handle: Language of Page
+      num: 3.1.1
       level: A
 ---
 
@@ -58,6 +56,8 @@ _There are no major accessibility support issues known for this rule._
 
 ## Background
 
+- [HTML page `lang` attribute has valid language tag](https://act-rules.github.io/rules/bf051a)
+- [HTML page language subtag matches default language](https://act-rules.github.io/rules/ucwvc8)
 - [Understanding Success Criterion 3.1.1: Language of Page](https://www.w3.org/WAI/WCAG21/Understanding/language-of-page.html)
 - [H57: Using language attributes on the html element](https://www.w3.org/WAI/WCAG21/Techniques/html/H57)
 - [BCP 47: Tags for Identifying Languages](https://www.ietf.org/rfc/bcp/bcp47.txt)

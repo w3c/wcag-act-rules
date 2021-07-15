@@ -6,47 +6,38 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/auto-play-audio-does-not-exceed-3-seconds-aaa1bf.md
-# footer: > # Text in footer in HTML
-#   <p> This is the text in the footer </p>
+rule_meta:
+  id: aaa1bf
+  name: "`Audio` or `video` that plays automatically has no audio that lasts more than 3 seconds"
+  rule_type: atomic
+  description: |
+    `audio` or `video` that plays automatically does not output audio for more than 3 seconds.
+  accessibility_requirements:
+    'wcag-technique:G60':
+      forConformance: false
+      failed: not satisfied
+      passed: further testing needed
+      inapplicable: further testing needed
+  input_aspects:
+    - handle: DOM Tree
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
+    - handle: CSS Styling
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
+    - handle: Audio output
+      url: 
+    - handle: Visual output
+      url: 
+  last_modified: July 15th, 2021
 ---
-
-{% include_relative _proposed-banner.html %}
-
-Rule Type:
-:   atomic
-
-Rule ID:
-:   aaa1bf
-
-Last Modified:
-:   June 3, 2021
-
-Accessibility Requirements Mapping:
-:   [G60: Playing a sound that turns off automatically within three seconds](https://www.w3.org/WAI/WCAG21/Techniques/general/G60)
-    - Not required to conformance to any W3C accessibility recommendation.
-    - [Outcome](#outcome) mapping:
-        - Any `failed` outcomes: technique is not satisfied
-        - All `passed` outcomes: technique needs further testing
-        - An `inapplicable` outcome: technique needs further testing
-
-Input Aspects:
-:   [DOM Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom)
-:   [CSS Styling](https://www.w3.org/TR/act-rules-aspects/#input-aspects-css)
-:   Audio output
-:   Visual output
-
-## Description
-
-`audio` or `video` that plays automatically does not output audio for more than 3 seconds.
 
 ## Applicability
 
 This rule applies to any `audio` or `video` element for which all the following are true:
 
-- (**autoplay**) the element has an `autoplay` [attribute value][] of `true`; and
-- (**not muted**) the element has a `muted` [attribute value][] of `false`; and
-- (**not paused**) the element has a `paused` [attribute value][] of `false`; and
-- (**duration**) the element has a [media resource][] lasting more than 3 seconds and that contains audio.
+- **autoplay**: the element has an `autoplay` [attribute value][] of `true`; and
+- **not muted**: the element has a `muted` [attribute value][] of `false`; and
+- **not paused**: the element has a `paused` [attribute value][] of `false`; and
+- **duration**: the element has a [media resource][] lasting more than 3 seconds that contains audio.
 
 ## Expectation
 
@@ -60,7 +51,7 @@ _There are currently no assumptions_
 
 ## Accessibility Support
 
-There are no major accessibility support issues known for this rule.
+_There are no major accessibility support issues known for this rule._
 
 ## Background
 

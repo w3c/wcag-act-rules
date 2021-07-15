@@ -6,38 +6,29 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/auto-play-audio-has-control-mechanism-4c31df.md
-# footer: > # Text in footer in HTML
-#   <p> This is the text in the footer </p>
+rule_meta:
+  id: 4c31df
+  name: "`audio` or `video` that plays automatically has a control mechanism"
+  rule_type: atomic
+  description: |
+    audio or video that plays automatically must have a control mechanism.
+  accessibility_requirements:
+    'wcag-technique:G170':
+      forConformance: false
+      failed: not satisfied
+      passed: further testing needed
+      inapplicable: further testing needed
+  input_aspects:
+    - handle: DOM Tree
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
+    - handle: CSS Styling
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
+    - handle: Audio output
+      url: 
+    - handle: Visual output
+      url: 
+  last_modified: July 15th, 2021
 ---
-
-{% include_relative _proposed-banner.html %}
-
-Rule Type:
-:   atomic
-
-Rule ID:
-:   4c31df
-
-Last Modified:
-:   June 3, 2021
-
-Accessibility Requirements Mapping:
-:   [G170: Providing a control near the beginning of the Web page that turns off sounds that play automatically](https://www.w3.org/WAI/WCAG21/Techniques/general/G170)
-    - Not required to conformance to any W3C accessibility recommendation.
-    - [Outcome](#outcome) mapping:
-        - Any `failed` outcomes: technique is not satisfied
-        - All `passed` outcomes: technique needs further testing
-        - An `inapplicable` outcome: technique needs further testing
-
-Input Aspects:
-:   [DOM Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom)
-:   [CSS Styling](https://www.w3.org/TR/act-rules-aspects/#input-aspects-css)
-:   Audio output
-:   Visual output
-
-## Description
-
-audio or video that plays automatically must have a control mechanism.
 
 ## Applicability
 

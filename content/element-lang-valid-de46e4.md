@@ -6,51 +6,44 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/element-lang-valid-de46e4.md
-# footer: > # Text in footer in HTML
-#   <p> This is the text in the footer </p>
+rule_meta:
+  id: de46e4
+  name: "Element with `lang` attribute has valid language tag"
+  rule_type: atomic
+  description: |
+    This rule checks that a non-empty `lang` attribute of an element in the page has a language tag with a known primary language subtag.
+  accessibility_requirements:
+    'wcag20:3.1.2':
+      forConformance: true
+      failed: not satisfied
+      passed: further testing needed
+      inapplicable: further testing needed
+    'wcag-technique:H58':
+      forConformance: false
+      failed: not satisfied
+      passed: further testing needed
+      inapplicable: further testing needed
+  input_aspects:
+    - handle: Accessibility Tree
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-accessibility
+    - handle: CSS Styling
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
+    - handle: DOM Tree
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
+  last_modified: July 15th, 2021
+  scs_tested:
+    - handle: Language of Parts
+      num: 3.1.2
+      level: AA
 ---
-
-{% include_relative _proposed-banner.html %}
-
-Rule Type:
-:   atomic
-
-Rule ID:
-:   de46e4
-
-Last Modified:
-:   June 3, 2021
-
-Accessibility Requirements Mapping:
-:   [3.1.2 Language of Parts (Level AA)](https://www.w3.org/TR/WCAG21/#language-of-parts)
-    - **Required for conformance** to WCAG 2.0 and later on level AA and higher
-    - [Outcome](#outcome) mapping:
-        - Any `failed` outcomes: success criterion is not satisfied
-        - All `passed` outcomes: success criterion needs further testing
-        - An `inapplicable` outcome: success criterion needs further testing
-:   [H58: Using language attributes to identify changes in the human language](https://www.w3.org/WAI/WCAG21/Techniques/html/H58)
-    - Not required to conformance to any W3C accessibility recommendation.
-    - [Outcome](#outcome) mapping:
-        - Any `failed` outcomes: technique is not satisfied
-        - All `passed` outcomes: technique needs further testing
-        - An `inapplicable` outcome: technique needs further testing
-
-Input Aspects:
-:   [Accessibility Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-accessibility)
-:   [CSS Styling](https://www.w3.org/TR/act-rules-aspects/#input-aspects-css)
-:   [DOM Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom)
-
-## Description
-
-This rule checks that a non-empty `lang` attribute of an element in the page body has a language tag with a known primary language subtag.
 
 ## Applicability
 
 This rules applies to any HTML element with a `lang` [attribute value][] that is not empty (`""`) and for which all of the following is true:
 
-- the element is a [descendant][] in the [flat tree][] of a `body` element; and
-- the element has a [node document][] with a [content type][] of `text/html`; and
-- the element has a [text node][] as a [descendant][] in the [flat tree][] that is [visible][] or [included in the accessibility tree][].
+- **descendant**: the element is an [inclusive descendant][] in the [flat tree][] of a `body` element; and
+- **content type**: the element has an associated [node document][] with a [content type][] of `text/html`; and
+- **text**: there is some non-empty [text inheriting its programmatic language][] from the element.
 
 ## Expectation
 
@@ -117,6 +110,36 @@ This `p` element has a `lang` [attribute value][] which has a [valid language ta
 		<p lang="en-US-GB">
 			They wandered into a strange Tiki bar on the edge of the small beach town.
 		</p>
+	</body>
+</html>
+```
+
+#### Passed Example 4
+
+This `div` element has a valid `lang` [attribute value][]. There is no [text inheriting its programmatic language][] from the `article` element, therefore its `lang` attribute is not considered by the rule.
+
+```html
+<html>
+	<body>
+		<article lang="invalid">
+			<div lang="en">
+				They wandered into a strange Tiki bar on the edge of the small beach town.
+			</div>
+		</article>
+	</body>
+</html>
+```
+
+#### Passed Example 5
+
+This `div` element has a valid `lang` [attribute value][]. The [accessible name][] of the image is [text inheriting its programmatic language][] from the `div` element.
+
+```html
+<html>
+	<body>
+		<div lang="en">
+			<img src="/test-assets/shared/fireworks.jpg" alt="Fireworks over Paris" />
+		</div>
 	</body>
 </html>
 ```
@@ -197,6 +220,36 @@ The `lang` [attribute value][] does not have a valid language tag, and its [desc
 </html>
 ```
 
+#### Failed Example 6
+
+This `div` element has an invalid `lang` [attribute value][]. There is no [text inheriting its programmatic language][] from the `article` element, therefore its `lang` attribute is not considered by the rule.
+
+```html
+<html>
+	<body>
+		<article lang="en">
+			<div lang="invalid">
+				They wandered into a strange Tiki bar on the edge of the small beach town.
+			</div>
+		</article>
+	</body>
+</html>
+```
+
+#### Failed Example 7
+
+This `div` element has an invalid `lang` [attribute value][]. The [accessible name][] of the image is [text inheriting its programmatic language][] from the `div` element.
+
+```html
+<html>
+	<body>
+		<div lang="invalid">
+			<img src="/test-assets/shared/fireworks.jpg" alt="Fireworks over Paris" />
+		</div>
+	</body>
+</html>
+```
+
 ### Inapplicable
 
 #### Inapplicable Example 1
@@ -241,12 +294,28 @@ There is no element with a [text node][] as a [descendant][] in the [flat tree][
 </html>
 ```
 
+#### Inapplicable Example 4
+
+There is no [text inheriting its programmatic language][] from this `div` element.
+
+```html
+<html>
+	<body>
+		<div lang="invalid">
+			<img src="/test-assets/shared/fireworks.jpg" alt="" />
+		</div>
+	</body>
+</html>
+```
+
 ## Glossary
 
+{% include_relative glossary/accessible-name.md %}
 {% include_relative glossary/attribute-value.md %}
 {% include_relative glossary/focusable.md %}
 {% include_relative glossary/included-in-the-accessibility-tree.md %}
 {% include_relative glossary/outcome.md %}
+{% include_relative glossary/text-inheriting-language.md %}
 {% include_relative glossary/valid-language-tag.md %}
 {% include_relative glossary/visible.md %}
 {% include_relative glossary/whitespace.md %}
@@ -265,6 +334,7 @@ with the support of the EU-funded [WAI-Tools Project](https://www.w3.org/WAI/abo
 
 This is the first version of this ACT rule.
 
+[accessible name]: #accessible-name 'Definition of Accessible Name'
 [attribute value]: #attribute-value 'Definition of Attribute Value'
 [bcp 47]: https://tools.ietf.org/html/bcp47#section-2.1
 [content type]: https://dom.spec.whatwg.org/#concept-document-content-type
@@ -272,7 +342,9 @@ This is the first version of this ACT rule.
 [flat tree]: https://drafts.csswg.org/css-scoping/#flat-tree
 [grandfathered tags]: https://tools.ietf.org/html/bcp47#section-2.2.8
 [included in the accessibility tree]: #included-in-the-accessibility-tree
+[inclusive descendant]: https://dom.spec.whatwg.org/#concept-tree-inclusive-descendant 'DOM definition of Inclusive Descendant'
 [node document]: https://dom.spec.whatwg.org/#concept-node-document
+[text inheriting its programmatic language]: #text-inheriting-language 'Definition of Text Inheriting its Programmatic Language from an Element'
 [text node]: https://dom.spec.whatwg.org/#text
 [valid language tag]: #valid-language-tag
 [visible]: #visible 'Definition of visible'

@@ -6,42 +6,32 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/audio-text-alternative-e7aa44.md
-# footer: > # Text in footer in HTML
-#   <p> This is the text in the footer </p>
+rule_meta:
+  id: e7aa44
+  name: "`audio` element content has text alternative"
+  rule_type: composite
+  description: |
+    This rule checks if audio only elements have a text alternative available.
+  accessibility_requirements:
+    'wcag20:1.2.1':
+      forConformance: true
+      failed: not satisfied
+      passed: further testing needed
+      inapplicable: further testing needed
+    'wcag-technique:G158':
+      forConformance: false
+      failed: not satisfied
+      passed: further testing needed
+      inapplicable: further testing needed
+  input_aspects:
+    - 2eb176
+    - afb423
+  last_modified: July 15th, 2021
+  scs_tested:
+    - handle: Audio-only and Video-only (Prerecorded)
+      num: 1.2.1
+      level: A
 ---
-
-{% include_relative _proposed-banner.html %}
-
-Rule Type:
-:   composite
-
-Rule ID:
-:   e7aa44
-
-Last Modified:
-:   June 3, 2021
-
-Accessibility Requirements Mapping:
-:   [1.2.1 Audio-only and Video-only (Prerecorded) (Level A)](https://www.w3.org/TR/WCAG21/#audio-only-and-video-only-prerecorded)
-    - **Required for conformance** to WCAG 2.0 and later on level A and higher
-    - [Outcome](#outcome) mapping:
-        - Any `failed` outcomes: success criterion is not satisfied
-        - All `passed` outcomes: success criterion needs further testing
-        - An `inapplicable` outcome: success criterion needs further testing
-:   [G158: Providing an alternative for time-based media for audio-only content](https://www.w3.org/WAI/WCAG21/Techniques/general/G158)
-    - Not required to conformance to any W3C accessibility recommendation.
-    - [Outcome](#outcome) mapping:
-        - Any `failed` outcomes: technique is not satisfied
-        - All `passed` outcomes: technique needs further testing
-        - An `inapplicable` outcome: technique needs further testing
-
-Input Rules:
-:   [2eb176](/standards-guidelines/act/rules/2eb176/)
-:   [afb423](/standards-guidelines/act/rules/afb423/)
-
-## Description
-
-This rule checks if audio only elements have a text alternative available.
 
 ## Applicability
 

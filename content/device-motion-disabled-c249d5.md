@@ -6,37 +6,31 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/device-motion-disabled-c249d5.md
-# footer: > # Text in footer in HTML
-#   <p> This is the text in the footer </p>
+rule_meta:
+  id: c249d5
+  name: "Device motion based changes to the content can be disabled"
+  rule_type: atomic
+  description: |
+    This rule checks that it is possible to disable any changes to the content of the web page resulting from device motion based events.
+  accessibility_requirements:
+    'wcag21:2.5.4':
+      forConformance: true
+      failed: not satisfied
+      passed: further testing needed
+      inapplicable: further testing needed
+  input_aspects:
+    - handle: DOM Tree
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
+    - handle: CSS Styling
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
+    - handle: Accessibility tree
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-accessibility
+  last_modified: July 15th, 2021
+  scs_tested:
+    - handle: Motion Actuation
+      num: 2.5.4
+      level: A
 ---
-
-{% include_relative _proposed-banner.html %}
-
-Rule Type:
-:   atomic
-
-Rule ID:
-:   c249d5
-
-Last Modified:
-:   June 3, 2021
-
-Accessibility Requirements Mapping:
-:   [2.5.4 Motion Actuation (Level A)](https://www.w3.org/TR/WCAG21/#motion-actuation)
-    - **Required for conformance** to WCAG 2.1 on level A and higher
-    - [Outcome](#outcome) mapping:
-        - Any `failed` outcomes: success criterion is not satisfied
-        - All `passed` outcomes: success criterion needs further testing
-        - An `inapplicable` outcome: success criterion needs further testing
-
-Input Aspects:
-:   [DOM Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom)
-:   [CSS Styling](https://www.w3.org/TR/act-rules-aspects/#input-aspects-css)
-:   [Accessibility tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-accessibility)
-
-## Description
-
-This rule checks that it is possible to disable any changes to the content of the web page resulting from device motion based events.
 
 ## Applicability
 
@@ -44,7 +38,7 @@ This rule applies to an [HTML document][] with an associated [Window object][] t
 
 ## Expectation
 
-For each registered [device orientation event][device orientation] or [device motion event][device motion] in the test target one of the following is true:
+For each registered [device orientation event][device orientation] or [device motion event][device motion] in the test target at least one of the following is true:
 
 - **no changes:** The registered event does not cause [changes to the content][changes in content] of the [web page][] within a 1 minute time span of the [event firing][event firing]; or
 - **disabled:** There is at least one [set of clearly labeled instruments][] to [block the event][blocked event][] for at least 1 minute.

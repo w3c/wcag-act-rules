@@ -6,43 +6,39 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/image-no-text-0va7u6.md
-# footer: > # Text in footer in HTML
-#   <p> This is the text in the footer </p>
+rule_meta:
+  id: 0va7u6
+  name: "HTML graphics contain no text"
+  rule_type: atomic
+  description: |
+    This rule checks that images of text are not used
+  accessibility_requirements:
+    'wcag20:1.4.5':
+      forConformance: true
+      failed: not satisfied
+      passed: further testing needed
+      inapplicable: further testing needed
+    'wcag20:1.4.9':
+      forConformance: true
+      failed: not satisfied
+      passed: further testing needed
+      inapplicable: further testing needed
+  input_aspects:
+    - handle: DOM Tree
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
+    - handle: CSS Styling
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
+    - handle: Language
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-text
+  last_modified: July 15th, 2021
+  scs_tested:
+    - handle: Images of Text
+      num: 1.4.5
+      level: AA
+    - handle: Images of Text (No Exception)
+      num: 1.4.9
+      level: AAA
 ---
-
-{% include_relative _proposed-banner.html %}
-
-Rule Type:
-:   atomic
-
-Rule ID:
-:   0va7u6
-
-Last Modified:
-:   June 14, 2021
-
-Accessibility Requirements Mapping:
-:   [1.4.5 Images of Text (Level AA)](https://www.w3.org/TR/WCAG21/#images-of-text)
-    - **Required for conformance** to WCAG 2.0 and later on level AA and higher
-    - [Outcome](#outcome) mapping:
-        - Any `failed` outcomes: success criterion is not satisfied
-        - All `passed` outcomes: success criterion needs further testing
-        - An `inapplicable` outcome: success criterion needs further testing
-:   [1.4.9 Images of Text (No Exception) (Level AAA)](https://www.w3.org/TR/WCAG21/#images-of-text-no-exception)
-    - **Required for conformance** to WCAG 2.0 and later on level AAA
-    - [Outcome](#outcome) mapping:
-        - Any `failed` outcomes: success criterion is not satisfied
-        - All `passed` outcomes: success criterion needs further testing
-        - An `inapplicable` outcome: success criterion needs further testing
-
-Input Aspects:
-:   [DOM Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom)
-:   [CSS Styling](https://www.w3.org/TR/act-rules-aspects/#input-aspects-css)
-:   [Language](https://www.w3.org/TR/act-rules-aspects/#input-aspects-text)
-
-## Description
-
-This rule checks that images of text are not used
 
 ## Applicability
 

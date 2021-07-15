@@ -6,37 +6,31 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/device-motion-user-interface-7677a9.md
-# footer: > # Text in footer in HTML
-#   <p> This is the text in the footer </p>
+rule_meta:
+  id: 7677a9
+  name: "Device motion based changes to the content can also be created from the user interface"
+  rule_type: atomic
+  description: |
+    This rule checks that changes to the content of a web page that result from device motion events can also be caused by user interface components.
+  accessibility_requirements:
+    'wcag21:2.5.4':
+      forConformance: true
+      failed: not satisfied
+      passed: further testing needed
+      inapplicable: further testing needed
+  input_aspects:
+    - handle: DOM Tree
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
+    - handle: CSS Styling
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
+    - handle: Accessibility tree
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-accessibility
+  last_modified: July 15th, 2021
+  scs_tested:
+    - handle: Motion Actuation
+      num: 2.5.4
+      level: A
 ---
-
-{% include_relative _proposed-banner.html %}
-
-Rule Type:
-:   atomic
-
-Rule ID:
-:   7677a9
-
-Last Modified:
-:   June 3, 2021
-
-Accessibility Requirements Mapping:
-:   [2.5.4 Motion Actuation (Level A)](https://www.w3.org/TR/WCAG21/#motion-actuation)
-    - **Required for conformance** to WCAG 2.1 on level A and higher
-    - [Outcome](#outcome) mapping:
-        - Any `failed` outcomes: success criterion is not satisfied
-        - All `passed` outcomes: success criterion needs further testing
-        - An `inapplicable` outcome: success criterion needs further testing
-
-Input Aspects:
-:   [DOM Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom)
-:   [CSS Styling](https://www.w3.org/TR/act-rules-aspects/#input-aspects-css)
-:   [Accessibility tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-accessibility)
-
-## Description
-
-This rule checks that changes to the content of a web page that result from device motion events can also be caused by user interface components.
 
 ## Applicability
 
@@ -44,7 +38,7 @@ This rule applies to any [HTML document][] with an associated [Window object][] 
 
 ## Expectation
 
-For each registered [device orientation event][device orientation] or [device motion event][device motion] in the test target one of the following is true:
+For each registered [device orientation event][device orientation] or [device motion event][device motion] in the test target at least one of the following is true:
 
 - **no changes:** The registered event does not cause [changes to the content][changes in content] of the [web page][]; or
 - **same result:** There is at least one set of [instruments][instrument], where each [instrument][] is in the same [web page][] of the registered event or can be found in a [clearly labeled location][] from that [web page][], causing the same [changes in content][] as the event.

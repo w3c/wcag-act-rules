@@ -6,29 +6,23 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/document-has-landmark-with-non-repeated-content-b40fd1.md
-# footer: > # Text in footer in HTML
-#   <p> This is the text in the footer </p>
+rule_meta:
+  id: b40fd1
+  name: "Document has a landmark with non-repeated content"
+  rule_type: atomic
+  description: |
+    This rule checks that each page has an element with a landmark semantic role starting with non-repeated content
+  accessibility_requirements:
+    null
+  input_aspects:
+    - handle: Accessibility Tree
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-accessibility
+    - handle: CSS styling
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
+    - handle: DOM Tree
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
+  last_modified: July 15th, 2021
 ---
-
-{% include_relative _proposed-banner.html %}
-
-Rule Type:
-:   atomic
-
-Rule ID:
-:   b40fd1
-
-Last Modified:
-:   June 14, 2021
-
-Input Aspects:
-:   [Accessibility Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-accessibility)
-:   [CSS styling](https://www.w3.org/TR/act-rules-aspects/#input-aspects-css)
-:   [DOM Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom)
-
-## Description
-
-This rule checks that each page has an element with a landmark semantic role starting with non-repeated content
 
 ## Applicability
 

@@ -6,48 +6,45 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/text-contrast-afw4f7.md
-# footer: > # Text in footer in HTML
-#   <p> This is the text in the footer </p>
+rule_meta:
+  id: afw4f7
+  name: "Text has minimum contrast"
+  rule_type: atomic
+  description: |
+    This rule checks that the highest possible contrast of every text character with its background meets the minimal contrast requirement.
+  accessibility_requirements:
+    'wcag20:1.4.3':
+      forConformance: true
+      failed: not satisfied
+      passed: further testing needed
+      inapplicable: further testing needed
+    'wcag20:1.4.6':
+      forConformance: true
+      failed: not satisfied
+      passed: further testing needed
+      inapplicable: further testing needed
+  input_aspects:
+    - handle: Accessibility Tree
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-accessibility
+    - handle: DOM Tree
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
+    - handle: CSS Styling
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
+    - handle: Language
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-text
+  last_modified: July 15th, 2021
+  scs_tested:
+    - handle: Contrast (Minimum)
+      num: 1.4.3
+      level: AA
+    - handle: Contrast (Enhanced)
+      num: 1.4.6
+      level: AAA
 ---
-
-{% include_relative _proposed-banner.html %}
-
-Rule Type:
-:   atomic
-
-Rule ID:
-:   afw4f7
-
-Last Modified:
-:   June 14, 2021
-
-Accessibility Requirements Mapping:
-:   [1.4.3 Contrast (Minimum) (Level AA)](https://www.w3.org/TR/WCAG21/#contrast-minimum)
-    - **Required for conformance** to WCAG 2.0 and later on level AA and higher
-    - [Outcome](#outcome) mapping:
-        - Any `failed` outcomes: success criterion is not satisfied
-        - All `passed` outcomes: success criterion needs further testing
-        - An `inapplicable` outcome: success criterion needs further testing
-:   [1.4.6 Contrast (Enhanced) (Level AAA)](https://www.w3.org/TR/WCAG21/#contrast-enhanced)
-    - **Required for conformance** to WCAG 2.0 and later on level AAA
-    - [Outcome](#outcome) mapping:
-        - Any `failed` outcomes: success criterion is not satisfied
-        - All `passed` outcomes: success criterion needs further testing
-        - An `inapplicable` outcome: success criterion needs further testing
-
-Input Aspects:
-:   [Accessibility Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-accessibility)
-:   [DOM Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom)
-:   [CSS Styling](https://www.w3.org/TR/act-rules-aspects/#input-aspects-css)
-:   [Language](https://www.w3.org/TR/act-rules-aspects/#input-aspects-text)
-
-## Description
-
-This rule checks that the highest possible contrast of every text character with its background meets the minimal contrast requirement.
 
 ## Applicability
 
-This rule applies to any [visible][] character in a [text node][] that is a [child][] in the [flat tree][] of an HTML element, except if the [text node][] has an [ancestor][] in the [flat tree][] for which one of the following is true:
+This rule applies to any [visible][] character in a [text node][] that is a [child][] in the [flat tree][] of an HTML element, except if the [text node][] has an [ancestor][] in the [flat tree][] for which at least one of the following is true:
 
 - **widget**: the ancestor is a [semantic widget][]; or
 - **disabled label**: the ancestor is used in the [accessible name][] of a [semantic widget][] that is [disabled][]; or

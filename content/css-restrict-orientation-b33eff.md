@@ -6,36 +6,29 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/css-restrict-orientation-b33eff.md
-# footer: > # Text in footer in HTML
-#   <p> This is the text in the footer </p>
+rule_meta:
+  id: b33eff
+  name: "Orientation of the page is not restricted using CSS transform property"
+  rule_type: atomic
+  description: |
+    This rule checks that page content is not restricted to either `landscape` or `portrait` orientation using CSS transform property.
+  accessibility_requirements:
+    'wcag21:1.3.4':
+      forConformance: true
+      failed: not satisfied
+      passed: further testing needed
+      inapplicable: further testing needed
+  input_aspects:
+    - handle: DOM Tree
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
+    - handle: CSS Styling
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
+  last_modified: July 15th, 2021
+  scs_tested:
+    - handle: Orientation
+      num: 1.3.4
+      level: AA
 ---
-
-{% include_relative _proposed-banner.html %}
-
-Rule Type:
-:   atomic
-
-Rule ID:
-:   b33eff
-
-Last Modified:
-:   Jun 14, 2021
-
-Accessibility Requirements Mapping:
-:   [1.3.4 Orientation (Level AA)](https://www.w3.org/TR/WCAG21/#orientation)
-    - **Required for conformance** to WCAG 2.1 on level AA and higher
-    - [Outcome](#outcome) mapping:
-        - Any `failed` outcomes: success criterion is not satisfied
-        - All `passed` outcomes: success criterion needs further testing
-        - An `inapplicable` outcome: success criterion needs further testing
-
-Input Aspects:
-:   [DOM Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom)
-:   [CSS Styling](https://www.w3.org/TR/act-rules-aspects/#input-aspects-css)
-
-## Description
-
-This rule checks that page content is not restricted to either `landscape` or `portrait` orientation using CSS transform property.
 
 ## Applicability
 
@@ -55,7 +48,7 @@ This rule applies to any HTML element that is [visible](#visible) and has a CSS 
 
 The target element is neither rotated clockwise nor counter clockwise around the Z-axis at an angle corresponding to 90 degrees relative from the position of the element in `landscape` orientation to the position of the element in `portrait` orientation, and vice versa.
 
-**Note:** Imagine the display of a smartphone with an upwards pointing arrow at its center. If a user turns the smartphone a quarter turn, that is a move from one orientation to the other, they would want the arrow to continue pointing upwards. The smartphone accomplishes this by rotating the contents of its display a quarter turn to counter the users change in orientation. In effect, the arrow has remained in place and its rotation relative from one orientation to the other is 0 degrees. Now imagine that a developer rotates the arrow by a quarter turn _only_ when in one orientation and not the other; its rotation relative from one orientation to the other would then be 90 degrees and it would appear stuck, or locked, as the user moves between orientations. What the developer has done is effectively counter the smartphones attempt at countering the users change in orientation.
+**Note:** Imagine the display of a smartphone with cartoon figure at its center. With this example, if a user turns the smartphone a quarter turn, that is a partial move from one orientation to the other, the user would expect that the cartoon figure continues to remain facing upwards. The smartphone accomplishes this by rotating the contents of its display a quarter turn to counter the users change in orientation. In effect, the cartoon figure has remained in place and its rotation relative from one orientation to the other is 0 degrees. Now imagine that a developer facilitated this rotation of the cartoon figure by a quarter turn _only_ when the smartphone starts from one orientation and not the other; its rotation relative from one orientation to the other would then be 90 degrees and it would appear stuck, or locked, as the user moves between orientations. What the developer has done is effectively counter the smartphones attempt at countering the users change in orientation.
 
 ## Assumptions
 

@@ -6,44 +6,38 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/html-page-lang-matches-default-ucwvc8.md
-# footer: > # Text in footer in HTML
-#   <p> This is the text in the footer </p>
+rule_meta:
+  id: ucwvc8
+  name: "HTML page language subtag matches default language"
+  rule_type: atomic
+  description: |
+    This rule checks that the primary language subtag of the page language matches the default language of the page
+  accessibility_requirements:
+    'wcag20:3.1.1':
+      forConformance: true
+      failed: not satisfied
+      passed: satisfied
+      inapplicable: further testing needed
+    'wcag-technique:H57':
+      forConformance: false
+      failed: not satisfied
+      passed: satisfied
+      inapplicable: satisfied
+  input_aspects:
+    - handle: DOM tree
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
+    - handle: Accessibility tree
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-accessibility
+    - handle: CSS Styling
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
+    - handle: Language
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-text
+  last_modified: July 15th, 2021
+  scs_tested:
+    - handle: Language of Page
+      num: 3.1.1
+      level: A
 ---
-
-{% include_relative _proposed-banner.html %}
-
-Rule Type:
-:   atomic
-
-Rule ID:
-:   ucwvc8
-
-Last Modified:
-:   June 14, 2021
-
-Accessibility Requirements Mapping:
-:   [3.1.1 Language of Page (Level A)](https://www.w3.org/TR/WCAG21/#language-of-page)
-    - **Required for conformance** to WCAG 2.0 and later on level A and higher
-    - [Outcome](#outcome) mapping:
-        - Any `failed` outcomes: success criterion is not satisfied
-        - All `passed` outcomes: success criterion is satisfied
-        - An `inapplicable` outcome: success criterion needs further testing
-:   [H57: Using language attributes on the html element](https://www.w3.org/WAI/WCAG21/Techniques/html/H57)
-    - Not required to conformance to any W3C accessibility recommendation.
-    - [Outcome](#outcome) mapping:
-        - Any `failed` outcomes: technique is not satisfied
-        - All `passed` outcomes: technique is satisfied
-        - An `inapplicable` outcome: technique is satisfied
-
-Input Aspects:
-:   [DOM tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom)
-:   [Accessibility tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-accessibility)
-:   [CSS Styling](https://www.w3.org/TR/act-rules-aspects/#input-aspects-css)
-:   [Language](https://www.w3.org/TR/act-rules-aspects/#input-aspects-text)
-
-## Description
-
-This rule checks that the primary language subtag of the page language matches the default language of the page
 
 ## Applicability
 

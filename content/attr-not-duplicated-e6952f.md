@@ -6,41 +6,32 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/attr-not-duplicated-e6952f.md
-# footer: > # Text in footer in HTML
-#   <p> This is the text in the footer </p>
+rule_meta:
+  id: e6952f
+  name: "Attribute is not duplicated"
+  rule_type: atomic
+  description: |
+    This rule checks that HTML and SVG starting tags do not contain duplicated attributes.
+  accessibility_requirements:
+    'wcag20:4.1.1':
+      forConformance: true
+      failed: not satisfied
+      passed: further testing needed
+      inapplicable: further testing needed
+    'wcag-technique:H94':
+      forConformance: false
+      failed: not satisfied
+      passed: satisfied
+      inapplicable: satisfied
+  input_aspects:
+    - handle: Source code
+      url: 
+  last_modified: July 15th, 2021
+  scs_tested:
+    - handle: Parsing
+      num: 4.1.1
+      level: A
 ---
-
-{% include_relative _proposed-banner.html %}
-
-Rule Type:
-:   atomic
-
-Rule ID:
-:   e6952f
-
-Last Modified:
-:   June 3, 2021
-
-Accessibility Requirements Mapping:
-:   [4.1.1 Parsing (Level A)](https://www.w3.org/TR/WCAG21/#parsing)
-    - **Required for conformance** to WCAG 2.0 and later on level A and higher
-    - [Outcome](#outcome) mapping:
-        - Any `failed` outcomes: success criterion is not satisfied
-        - All `passed` outcomes: success criterion needs further testing
-        - An `inapplicable` outcome: success criterion needs further testing
-:   [H94: Ensuring that elements do not contain duplicate attributes](https://www.w3.org/WAI/WCAG21/Techniques/html/H94)
-    - Not required to conformance to any W3C accessibility recommendation.
-    - [Outcome](#outcome) mapping:
-        - Any `failed` outcomes: technique is not satisfied
-        - All `passed` outcomes: technique is satisfied
-        - An `inapplicable` outcome: technique is satisfied
-
-Input Aspects:
-:   Source code
-
-## Description
-
-This rule checks that HTML and SVG starting tags do not contain duplicated attributes.
 
 ## Applicability
 
@@ -70,7 +61,7 @@ _There are no major accessibility support issues known for this rule._
 
 #### Passed Example 1
 
-No attributes are duplicated.
+This `img` element contains no duplicated attributes.
 
 ```html
 <img src="/test-assets/shared/w3c-logo.png" alt="W3C logo" />
@@ -78,7 +69,7 @@ No attributes are duplicated.
 
 #### Passed Example 2
 
-No attributes, therefore no attributes are duplicated.
+This `br` element contains no attributes, so there is no duplicated attribute.
 
 ```html
 <br />
@@ -86,7 +77,7 @@ No attributes, therefore no attributes are duplicated.
 
 #### Passed Example 3
 
-Empty attributes, no attributes are duplicated.
+This `input` element contains three different attributes, two of them being empty.
 
 ```html
 <input type="checkbox" disabled readonly />
@@ -94,7 +85,7 @@ Empty attributes, no attributes are duplicated.
 
 #### Passed Example 4
 
-SVG, no attributes are duplicated.
+This `SVG` element contains no attributes.
 
 ```html
 <svg>
@@ -104,7 +95,7 @@ SVG, no attributes are duplicated.
 
 #### Passed Example 5
 
-Script, no attributes are duplicated. HTML or SVG code within a script should be ignored.
+This `script` element contains duplicated attributes, but they are ignored because they are placed within the `script` tag.
 
 ```html
 <script>
@@ -116,7 +107,7 @@ Script, no attributes are duplicated. HTML or SVG code within a script should be
 
 #### Failed Example 1
 
-At least one attribute is duplicated.
+This `img` element contains a duplicated `alt` attribute.
 
 ```html
 <img src="/test-assets/shared/w3c-logo.png" alt="" alt="W3C logo" />
@@ -124,7 +115,7 @@ At least one attribute is duplicated.
 
 #### Failed Example 2
 
-Empty attributes, at least one attribute is duplicated.
+This `input` element contains a duplicate `disabled` attribute.
 
 ```html
 <input type="checkbox" disabled="disabled" disabled readonly />
@@ -132,7 +123,7 @@ Empty attributes, at least one attribute is duplicated.
 
 #### Failed Example 3
 
-SVG, at least one attribute is duplicated.
+This `line` element contains duplicate `x1` and duplicate `y1 ` attributes.
 
 ```html
 <svg>
@@ -144,7 +135,7 @@ SVG, at least one attribute is duplicated.
 
 #### Inapplicable Example 1
 
-Code is XML, and not HTML or SVG.
+This code is XML, not HTML or SVG.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -157,10 +148,10 @@ Code is XML, and not HTML or SVG.
 
 #### Inapplicable Example 2
 
-Code is JavaScript, and not HTML or SVG.
+This code is JavaScript, not HTML or SVG.
 
 ```js
-var foo = '<img src="/test-assets/shared/w3c-logo.png" alt="" alt="W3C logo" />'
+var foo = '<img src="/test-assets/shared/w3c-logo.png" alt="W3C logo" />'
 ```
 
 ## Glossary

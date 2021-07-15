@@ -6,39 +6,31 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/video-only-transcript-ee13b5.md
-# footer: > # Text in footer in HTML
-#   <p> This is the text in the footer </p>
+rule_meta:
+  id: ee13b5
+  name: "`video` element visual-only content has transcript"
+  rule_type: atomic
+  description: |
+    Non-streaming `video` elements without audio must have all visual information available in a transcript.
+  accessibility_requirements:
+    'wcag-technique:G159':
+      forConformance: false
+      failed: not satisfied
+      passed: further testing needed
+      inapplicable: further testing needed
+  input_aspects:
+    - handle: DOM Tree
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
+    - handle: CSS Styling
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
+    - handle: Audio output
+      url: 
+    - handle: Visual output
+      url: 
+    - handle: Language
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-text
+  last_modified: July 15th, 2021
 ---
-
-{% include_relative _proposed-banner.html %}
-
-Rule Type:
-:   atomic
-
-Rule ID:
-:   ee13b5
-
-Last Modified:
-:   June 3, 2021
-
-Accessibility Requirements Mapping:
-:   [G159: Providing an alternative for time-based media for video-only content](https://www.w3.org/WAI/WCAG21/Techniques/general/G159)
-    - Not required to conformance to any W3C accessibility recommendation.
-    - [Outcome](#outcome) mapping:
-        - Any `failed` outcomes: technique is not satisfied
-        - All `passed` outcomes: technique needs further testing
-        - An `inapplicable` outcome: technique needs further testing
-
-Input Aspects:
-:   [DOM Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom)
-:   [CSS Styling](https://www.w3.org/TR/act-rules-aspects/#input-aspects-css)
-:   Audio output
-:   Visual output
-:   [Language](https://www.w3.org/TR/act-rules-aspects/#input-aspects-text)
-
-## Description
-
-Non-streaming `video` elements without audio must have all visual information available in a transcript.
 
 ## Applicability
 
@@ -78,14 +70,14 @@ This `video` element, which has no audio, has a text transcript available on the
   <source src="/test-assets/rabbit-video/silent.webm" type="video/webm"></source>
 </video>
 <p>The above video shows a giant fat rabbit climbing out of a hole in the ground.
-He stretches, yaws, and then starts walking.
+He stretches, yawns, and then starts walking.
 Then he stops to scratch his bottom.</p>
 </html>
 ```
 
 #### Passed Example 2
 
-This `video` element, which has no audio, has a transcript which does not convey information included in the video-only content. The transcript is available through a link on the same page.
+This `video` element, which has no audio, has a transcript which conveys information included in the video-only content. The transcript is available through a link on the same page.
 
 ```html
 <html lang="en">
@@ -110,14 +102,14 @@ This `video` element, which has no audio, has an incorrect text transcript avail
   <source src="/test-assets/rabbit-video/silent.webm" type="video/webm"></source>
 </video>
 <p>The above video shows a giant fat dog climbing out of a hole in the ground.
-He stretches, yaws, and then starts walking.
+He stretches, yawns, and then starts walking.
 Then he stops to scratch his bottom.</p>
 </html>
 ```
 
 #### Failed Example 2
 
-This `video` element, which has no audio, has a incorrect text transcript available through a link on the same page.
+This `video` element, which has no audio, has an incorrect text transcript available through a link on the same page.
 
 ```html
 <html lang="en">
@@ -140,7 +132,7 @@ This `video` element, which has no audio, has a text transcript available on the
   <source src="/test-assets/rabbit-video/silent.webm" type="video/webm"></source>
 </video>
 <p style="text-indent: -9999px;">The above video shows a giant fat rabbit climbing out of a hole in the ground.
-He stretches, yaws, and then starts walking.
+He stretches, yawns, and then starts walking.
 Then he stops to scratch his bottom.</p>
 </html>
 ```
@@ -156,7 +148,7 @@ This `video` element, which has no audio, has a text transcript available on the
   <source src="/test-assets/rabbit-video/silent.webm" type="video/webm"></source>
 </video>
 <p aria-hidden="true">The above video shows a giant fat rabbit climbing out of a hole in the ground.
-He stretches, yaws, and then starts walking.
+He stretches, yawns, and then starts walking.
 Then he stops to scratch his bottom.</p>
 </html>
 ```
