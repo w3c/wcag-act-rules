@@ -1,58 +1,741 @@
-{ 
-  "act-rules": [{
-    "title": "Button has non-empty accessible name",
-    "permalink": "/standards-guidelines/act/rules/button-non-empty-accessible-name-97a4e1/",
-    "successCriteria": ["name-role-value"],
-    "wcagTechniques": []
-  }, {
-    "title": "svg element with explicit role has non-empty accessible name",
-    "permalink": "/standards-guidelines/act/rules/explicit-SVG-image-non-empty-accessible-name-7d6734/",
-    "successCriteria": ["non-text-content"],
-    "wcagTechniques": []
-  }, {
-    "title": "Form field has non-empty accessible name",
-    "permalink": "/standards-guidelines/act/rules/form-field-non-empty-accessible-name-e086e5/",
-    "successCriteria": ["name-role-value"],
-    "wcagTechniques": []
-  }, {
-    "title": "HTML page has lang attribute",
-    "permalink": "/standards-guidelines/act/rules/html-page-lang-b5c3f8/",
-    "successCriteria": ["language-of-page"],
-    "wcagTechniques": ["H57"]
-  }, {
-    "title": "HTML page lang attribute has valid language tag",
-    "permalink": "/standards-guidelines/act/rules/html-page-lang-valid-bf051a/",
-    "successCriteria": ["language-of-page"],
-    "wcagTechniques": ["H57"]
-  }, {
-    "title": "HTML page lang and xml:lang attributes have matching values",
-    "permalink": "/standards-guidelines/act/rules/html-page-lang-xml-lang-match-5b7ae0/",
-    "successCriteria": ["language-of-page"],
-    "wcagTechniques": []
-  }, {
-    "title": "HTML page has non-empty title",
-    "permalink": "/standards-guidelines/act/rules/html-page-non-empty-title-2779a5/",
-    "successCriteria": ["page-titled"],
-    "wcagTechniques": ["G88", "H25"]
-  }, {
-    "title": "Image button has non-empty accessible name",
-    "permalink": "/standards-guidelines/act/rules/image-button-non-empty-accessible-name-59796f/",
-    "successCriteria": ["non-text-content", "name-role-value"],
-    "wcagTechniques": ["G94", "G95"]
-  }, {
-    "title": "Image has non-empty accessible name",
-    "permalink": "/standards-guidelines/act/rules/image-non-empty-accessible-name-23a2a8/",
-    "successCriteria": ["non-text-content"],
-    "wcagTechniques": ["G94", "G95"]
-  }, {
-    "title": "Link has non-empty accessible name",
-    "permalink": "/standards-guidelines/act/rules/link-non-empty-accessible-name-c487ae/",
-    "successCriteria": ["link-purpose-in-context", "link-purpose-link-only", "name-role-value"],
-    "wcagTechniques": ["G91"]
-  }, {
-    "title": "meta viewport allows for zoom",
-    "permalink": "/standards-guidelines/act/rules/meta-viewport-b4f0c3/",
-    "successCriteria": ["resize-text", "reflow"],
-    "wcagTechniques": []
-  }]
+{
+  "act-rules": [
+    {
+      "title": "Button has non-empty accessible name",
+      "permalink": "/standards-guidelines/act/rules/button-non-empty-accessible-name-97a4e1/",
+      "successCriteria": [
+        "name-role-value"
+      ],
+      "wcagTechniques": []
+    },
+    {
+      "title": "HTML page has lang attribute",
+      "permalink": "/standards-guidelines/act/rules/html-page-lang-b5c3f8/",
+      "successCriteria": [
+        "language-of-page"
+      ],
+      "wcagTechniques": [
+        "H57"
+      ]
+    },
+    {
+      "title": "HTML page lang attribute has valid language tag",
+      "permalink": "/standards-guidelines/act/rules/html-page-lang-valid-bf051a/",
+      "successCriteria": [
+        "language-of-page"
+      ],
+      "wcagTechniques": [
+        "H57"
+      ]
+    },
+    {
+      "title": "HTML page lang and xml:lang attributes have matching values",
+      "permalink": "/standards-guidelines/act/rules/html-page-lang-xml-lang-match-5b7ae0/",
+      "successCriteria": [
+        "language-of-page"
+      ],
+      "wcagTechniques": []
+    },
+    {
+      "title": "HTML page has non-empty title",
+      "permalink": "/standards-guidelines/act/rules/html-page-non-empty-title-2779a5/",
+      "successCriteria": [
+        "page-titled"
+      ],
+      "wcagTechniques": [
+        "G88",
+        "H25"
+      ]
+    },
+    {
+      "title": "Image button has non-empty accessible name",
+      "permalink": "/standards-guidelines/act/rules/image-button-non-empty-accessible-name-59796f/",
+      "successCriteria": [
+        "non-text-content",
+        "name-role-value"
+      ],
+      "wcagTechniques": [
+        "G94",
+        "G95"
+      ]
+    },
+    {
+      "title": "Image has non-empty accessible name",
+      "permalink": "/standards-guidelines/act/rules/image-non-empty-accessible-name-23a2a8/",
+      "successCriteria": [
+        "non-text-content"
+      ],
+      "wcagTechniques": [
+        "G94",
+        "G95"
+      ]
+    },
+    {
+      "title": "aria-* attribute is defined in WAI-ARIA",
+      "permalink": "/standards-guidelines/act/rules/aria-attr-defined-5f99a7/",
+      "successCriteria": [],
+      "wcagTechniques": [],
+      "proposed": true
+    },
+    {
+      "title": "Element with aria-hidden has no focusable content",
+      "permalink": "/standards-guidelines/act/rules/aria-hidden-no-focusable-content-6cfa84/",
+      "successCriteria": [
+        "info-and-relationships",
+        "name-role-value"
+      ],
+      "wcagTechniques": [],
+      "proposed": true
+    },
+    {
+      "title": "ARIA required context role",
+      "permalink": "/standards-guidelines/act/rules/aria-required-context-role-ff89c9/",
+      "successCriteria": [
+        "info-and-relationships"
+      ],
+      "wcagTechniques": [],
+      "proposed": true
+    },
+    {
+      "title": "ARIA required owned elements",
+      "permalink": "/standards-guidelines/act/rules/aria-required-owned-element-bc4a75/",
+      "successCriteria": [
+        "info-and-relationships"
+      ],
+      "wcagTechniques": [],
+      "proposed": true
+    },
+    {
+      "title": "ARIA state or property is permitted",
+      "permalink": "/standards-guidelines/act/rules/aria-state-or-property-permitted-5c01ea/",
+      "successCriteria": [],
+      "wcagTechniques": [
+        "ARIA5"
+      ],
+      "proposed": true
+    },
+    {
+      "title": "ARIA state or property has valid value",
+      "permalink": "/standards-guidelines/act/rules/aria-state-or-property-valid-value-6a7281/",
+      "successCriteria": [],
+      "wcagTechniques": [],
+      "proposed": true
+    },
+    {
+      "title": "Attribute is not duplicated",
+      "permalink": "/standards-guidelines/act/rules/attr-not-duplicated-e6952f/",
+      "successCriteria": [
+        "parsing"
+      ],
+      "wcagTechniques": [
+        "H94"
+      ],
+      "proposed": true
+    },
+    {
+      "title": "audio or video avoids automatically playing audio",
+      "permalink": "/standards-guidelines/act/rules/audio-or-video-avoids-automatically-playing-audio-80f0bf/",
+      "successCriteria": [
+        "audio-control"
+      ],
+      "wcagTechniques": [
+        "G60",
+        "G170",
+        "G171"
+      ],
+      "proposed": true
+    },
+    {
+      "title": "audio element content has text alternative",
+      "permalink": "/standards-guidelines/act/rules/audio-text-alternative-e7aa44/",
+      "successCriteria": [
+        "audio-only-and-video-only-prerecorded"
+      ],
+      "wcagTechniques": [
+        "G158"
+      ],
+      "proposed": true
+    },
+    {
+      "title": "audio element content has transcript",
+      "permalink": "/standards-guidelines/act/rules/audio-transcript-2eb176/",
+      "successCriteria": [],
+      "wcagTechniques": [],
+      "proposed": true
+    },
+    {
+      "title": "Audio or video that plays automatically has no audio that lasts more than 3 seconds",
+      "permalink": "/standards-guidelines/act/rules/auto-play-audio-does-not-exceed-3-seconds-aaa1bf/",
+      "successCriteria": [],
+      "wcagTechniques": [
+        "G60"
+      ],
+      "proposed": true
+    },
+    {
+      "title": "audio or video that plays automatically has a control mechanism",
+      "permalink": "/standards-guidelines/act/rules/auto-play-audio-has-control-mechanism-4c31df/",
+      "successCriteria": [],
+      "wcagTechniques": [
+        "G170"
+      ],
+      "proposed": true
+    },
+    {
+      "title": "Text content that changes automatically can be paused, stopped or hidden",
+      "permalink": "/standards-guidelines/act/rules/auto-update-text-efbfc7/",
+      "successCriteria": [
+        "pause-stop-hide"
+      ],
+      "wcagTechniques": [],
+      "proposed": true
+    },
+    {
+      "title": "autocomplete attribute has valid value",
+      "permalink": "/standards-guidelines/act/rules/autocomplete-valid-value-73f2c2/",
+      "successCriteria": [
+        "identify-input-purpose"
+      ],
+      "wcagTechniques": [],
+      "proposed": true
+    },
+    {
+      "title": "Block of repeated content is collapsible",
+      "permalink": "/standards-guidelines/act/rules/block-collapsible-3e12e1/",
+      "successCriteria": [],
+      "wcagTechniques": [
+        "SCR28"
+      ],
+      "proposed": true
+    },
+    {
+      "title": "Orientation of the page is not restricted using CSS transform property",
+      "permalink": "/standards-guidelines/act/rules/css-restrict-orientation-b33eff/",
+      "successCriteria": [
+        "orientation"
+      ],
+      "wcagTechniques": [],
+      "proposed": true
+    },
+    {
+      "title": "Device motion based changes to the content can be disabled",
+      "permalink": "/standards-guidelines/act/rules/device-motion-disabled-c249d5/",
+      "successCriteria": [
+        "motion-actuation"
+      ],
+      "wcagTechniques": [],
+      "proposed": true
+    },
+    {
+      "title": "Device motion based changes to the content can also be created from the user interface",
+      "permalink": "/standards-guidelines/act/rules/device-motion-user-interface-7677a9/",
+      "successCriteria": [
+        "motion-actuation"
+      ],
+      "wcagTechniques": [],
+      "proposed": true
+    },
+    {
+      "title": "Document has an instrument to move focus to non-repeated content",
+      "permalink": "/standards-guidelines/act/rules/document-has-instrument-to-non-repeated-content-ye5d6e/",
+      "successCriteria": [],
+      "wcagTechniques": [
+        "G1",
+        "G123",
+        "G124"
+      ],
+      "proposed": true
+    },
+    {
+      "title": "Document has a landmark with non-repeated content",
+      "permalink": "/standards-guidelines/act/rules/document-has-landmark-with-non-repeated-content-b40fd1/",
+      "successCriteria": [],
+      "wcagTechniques": [],
+      "proposed": true
+    },
+    {
+      "title": "Element with lang attribute has valid language tag",
+      "permalink": "/standards-guidelines/act/rules/element-lang-valid-de46e4/",
+      "successCriteria": [
+        "language-of-parts"
+      ],
+      "wcagTechniques": [
+        "H58"
+      ],
+      "proposed": true
+    },
+    {
+      "title": "Element marked as decorative is not exposed",
+      "permalink": "/standards-guidelines/act/rules/element-marked-decorative-is-not-exposed-46ca7f/",
+      "successCriteria": [],
+      "wcagTechniques": [],
+      "proposed": true
+    },
+    {
+      "title": "svg element with explicit role has non-empty accessible name",
+      "permalink": "/standards-guidelines/act/rules/explicit-SVG-image-non-empty-accessible-name-7d6734/",
+      "successCriteria": [
+        "non-text-content"
+      ],
+      "wcagTechniques": [],
+      "proposed": true
+    },
+    {
+      "title": "Focusable element has no keyboard trap",
+      "permalink": "/standards-guidelines/act/rules/focusable-no-keyboard-trap-80af7b/",
+      "successCriteria": [
+        "no-keyboard-trap"
+      ],
+      "wcagTechniques": [
+        "G21"
+      ],
+      "proposed": true
+    },
+    {
+      "title": "Focusable element has no keyboard trap via non-standard navigation",
+      "permalink": "/standards-guidelines/act/rules/focusable-no-keyboard-trap-non-standard-nav-ebe86a/",
+      "successCriteria": [],
+      "wcagTechniques": [],
+      "proposed": true
+    },
+    {
+      "title": "Focusable element has no keyboard trap via standard navigation",
+      "permalink": "/standards-guidelines/act/rules/focusable-no-keyboard-trap-standard-nav-a1b64e/",
+      "successCriteria": [],
+      "wcagTechniques": [],
+      "proposed": true
+    },
+    {
+      "title": "Form field label is descriptive",
+      "permalink": "/standards-guidelines/act/rules/form-field-label-descriptive-cc0f0a/",
+      "successCriteria": [
+        "headings-and-labels"
+      ],
+      "wcagTechniques": [
+        "G131"
+      ],
+      "proposed": true
+    },
+    {
+      "title": "Form field has non-empty accessible name",
+      "permalink": "/standards-guidelines/act/rules/form-field-non-empty-accessible-name-e086e5/",
+      "successCriteria": [
+        "name-role-value"
+      ],
+      "wcagTechniques": [],
+      "proposed": true
+    },
+    {
+      "title": "Heading is descriptive",
+      "permalink": "/standards-guidelines/act/rules/heading-descriptive-b49b2e/",
+      "successCriteria": [
+        "headings-and-labels"
+      ],
+      "wcagTechniques": [],
+      "proposed": true
+    },
+    {
+      "title": "HTML page language subtag matches default language",
+      "permalink": "/standards-guidelines/act/rules/html-page-lang-matches-default-ucwvc8/",
+      "successCriteria": [
+        "language-of-page"
+      ],
+      "wcagTechniques": [
+        "H57"
+      ],
+      "proposed": true
+    },
+    {
+      "title": "HTML page title is descriptive",
+      "permalink": "/standards-guidelines/act/rules/html-page-title-descriptive-c4a8a4/",
+      "successCriteria": [
+        "page-titled"
+      ],
+      "wcagTechniques": [
+        "G88",
+        "H25"
+      ],
+      "proposed": true
+    },
+    {
+      "title": "id attribute value is unique",
+      "permalink": "/standards-guidelines/act/rules/id-value-unique-3ea0c8/",
+      "successCriteria": [
+        "parsing"
+      ],
+      "wcagTechniques": [
+        "H93"
+      ],
+      "proposed": true
+    },
+    {
+      "title": "iframe elements with identical accessible names have equivalent purpose",
+      "permalink": "/standards-guidelines/act/rules/iframe-identical-name-equivalent-purpose-4b1c6c/",
+      "successCriteria": [
+        "name-role-value"
+      ],
+      "wcagTechniques": [],
+      "proposed": true
+    },
+    {
+      "title": "iframe element has non-empty accessible name",
+      "permalink": "/standards-guidelines/act/rules/iframe-non-empty-accessible-name-cae760/",
+      "successCriteria": [
+        "name-role-value"
+      ],
+      "wcagTechniques": [],
+      "proposed": true
+    },
+    {
+      "title": "iframe with negative tabindex has no interactive elements",
+      "permalink": "/standards-guidelines/act/rules/iframe-not-focusable-has-no-interactive-content-akn7bn/",
+      "successCriteria": [
+        "keyboard"
+      ],
+      "wcagTechniques": [
+        "G202"
+      ],
+      "proposed": true
+    },
+    {
+      "title": "Image accessible name is descriptive",
+      "permalink": "/standards-guidelines/act/rules/image-accessible-name-descriptive-qt1vmo/",
+      "successCriteria": [
+        "non-text-content"
+      ],
+      "wcagTechniques": [
+        "G94",
+        "G95"
+      ],
+      "proposed": true
+    },
+    {
+      "title": "HTML graphics contain no text",
+      "permalink": "/standards-guidelines/act/rules/image-no-text-0va7u6/",
+      "successCriteria": [
+        "images-of-text",
+        "images-of-text-no-exception"
+      ],
+      "wcagTechniques": [],
+      "proposed": true
+    },
+    {
+      "title": "Image not in the accessibility tree is decorative",
+      "permalink": "/standards-guidelines/act/rules/image-not-in-acc-tree-is-decorative-e88epe/",
+      "successCriteria": [
+        "non-text-content"
+      ],
+      "wcagTechniques": [],
+      "proposed": true
+    },
+    {
+      "title": "Error message describes invalid form field value",
+      "permalink": "/standards-guidelines/act/rules/invalid-form-field-value-36b590/",
+      "successCriteria": [
+        "error-identification"
+      ],
+      "wcagTechniques": [],
+      "proposed": true
+    },
+    {
+      "title": "Letter spacing in style attributes is not !important",
+      "permalink": "/standards-guidelines/act/rules/letter-spacing-not-important-24afc2/",
+      "successCriteria": [
+        "text-spacing"
+      ],
+      "wcagTechniques": [],
+      "proposed": true
+    },
+    {
+      "title": "Line height in style attributes is not !important",
+      "permalink": "/standards-guidelines/act/rules/line-height-not-important-78fd32/",
+      "successCriteria": [
+        "text-spacing"
+      ],
+      "wcagTechniques": [],
+      "proposed": true
+    },
+    {
+      "title": "Link is descriptive",
+      "permalink": "/standards-guidelines/act/rules/link-alone-descriptive-aizyf1/",
+      "successCriteria": [
+        "link-purpose-link-only"
+      ],
+      "wcagTechniques": [],
+      "proposed": true
+    },
+    {
+      "title": "Link in context is descriptive",
+      "permalink": "/standards-guidelines/act/rules/link-in-context-descriptive-5effbb/",
+      "successCriteria": [
+        "link-purpose-in-context",
+        "link-purpose-link-only"
+      ],
+      "wcagTechniques": [],
+      "proposed": true
+    },
+    {
+      "title": "Link has non-empty accessible name",
+      "permalink": "/standards-guidelines/act/rules/link-non-empty-accessible-name-c487ae/",
+      "successCriteria": [
+        "name-role-value",
+        "link-purpose-in-context",
+        "link-purpose-link-only"
+      ],
+      "wcagTechniques": [
+        "G91"
+      ],
+      "proposed": true
+    },
+    {
+      "title": "Links with identical accessible names have equivalent purpose",
+      "permalink": "/standards-guidelines/act/rules/links-identical-name-equivalent-purpose-b20e66/",
+      "successCriteria": [
+        "link-purpose-link-only"
+      ],
+      "wcagTechniques": [],
+      "proposed": true
+    },
+    {
+      "title": "Links with identical accessible names and context serve equivalent purpose",
+      "permalink": "/standards-guidelines/act/rules/links-with-identical-names-and-context-serve-equivalent-purpose-fd3a94/",
+      "successCriteria": [
+        "link-purpose-in-context",
+        "link-purpose-link-only"
+      ],
+      "wcagTechniques": [],
+      "proposed": true
+    },
+    {
+      "title": "Menuitem has non-empty accessible name",
+      "permalink": "/standards-guidelines/act/rules/menuitem-non-empty-name-m6b1q3/",
+      "successCriteria": [
+        "name-role-value"
+      ],
+      "wcagTechniques": [],
+      "proposed": true
+    },
+    {
+      "title": "meta element has no refresh delay",
+      "permalink": "/standards-guidelines/act/rules/meta-refresh-no-delay-bc659a/",
+      "successCriteria": [
+        "timing-adjustable",
+        "interruptions",
+        "change-on-request"
+      ],
+      "wcagTechniques": [
+        "G110",
+        "H76"
+      ],
+      "proposed": true
+    },
+    {
+      "title": "meta element has no refresh delay (no exception)",
+      "permalink": "/standards-guidelines/act/rules/meta-refresh-no-delay-no-exception-bisz58/",
+      "successCriteria": [
+        "interruptions",
+        "change-on-request"
+      ],
+      "wcagTechniques": [
+        "G110",
+        "H76"
+      ],
+      "proposed": true
+    },
+    {
+      "title": "meta viewport allows for zoom",
+      "permalink": "/standards-guidelines/act/rules/meta-viewport-b4f0c3/",
+      "successCriteria": [
+        "resize-text",
+        "reflow"
+      ],
+      "wcagTechniques": [],
+      "proposed": true
+    },
+    {
+      "title": "Content has alternative for visual reference",
+      "permalink": "/standards-guidelines/act/rules/non-visual-reference-alternative-9bd38c/",
+      "successCriteria": [
+        "info-and-relationships",
+        "sensory-characteristics"
+      ],
+      "wcagTechniques": [
+        "G96"
+      ],
+      "proposed": true
+    },
+    {
+      "title": "Object element rendering non-text content has non-empty accessible name",
+      "permalink": "/standards-guidelines/act/rules/object-has-acessible-name-8fc3b6/",
+      "successCriteria": [
+        "non-text-content"
+      ],
+      "wcagTechniques": [],
+      "proposed": true
+    },
+    {
+      "title": "Element with presentational children has no focusable content",
+      "permalink": "/standards-guidelines/act/rules/presentational-children-no-focusable-content-307n5z/",
+      "successCriteria": [
+        "info-and-relationships",
+        "name-role-value"
+      ],
+      "wcagTechniques": [],
+      "proposed": true
+    },
+    {
+      "title": "role attribute has valid value",
+      "permalink": "/standards-guidelines/act/rules/role-attribute-valid-value-674b10/",
+      "successCriteria": [
+        "info-and-relationships"
+      ],
+      "wcagTechniques": [
+        "ARIA4",
+        "G108"
+      ],
+      "proposed": true
+    },
+    {
+      "title": "Element with role attribute has required states and properties",
+      "permalink": "/standards-guidelines/act/rules/role-required-states-and-properties-4e8ab6/",
+      "successCriteria": [
+        "name-role-value"
+      ],
+      "wcagTechniques": [
+        "ARIA5"
+      ],
+      "proposed": true
+    },
+    {
+      "title": "Scrollable element is keyboard accessible",
+      "permalink": "/standards-guidelines/act/rules/scrollable-element-keyboard-accessible-0ssw9k/",
+      "successCriteria": [
+        "keyboard",
+        "keyboard-no-exception"
+      ],
+      "wcagTechniques": [
+        "G202"
+      ],
+      "proposed": true
+    },
+    {
+      "title": "Table header cell has assigned cells",
+      "permalink": "/standards-guidelines/act/rules/table-header-cell-has-assigned-cells-d0f69e/",
+      "successCriteria": [
+        "info-and-relationships"
+      ],
+      "wcagTechniques": [
+        "H43"
+      ],
+      "proposed": true
+    },
+    {
+      "title": "headers attribute specified on a cell refers to cells in the same table element",
+      "permalink": "/standards-guidelines/act/rules/table-headers-attribute-refer-to-data-cells-a25f45/",
+      "successCriteria": [
+        "info-and-relationships"
+      ],
+      "wcagTechniques": [
+        "H43"
+      ],
+      "proposed": true
+    },
+    {
+      "title": "Text has minimum contrast",
+      "permalink": "/standards-guidelines/act/rules/text-contrast-afw4f7/",
+      "successCriteria": [
+        "contrast-minimum",
+        "contrast-enhanced"
+      ],
+      "wcagTechniques": [],
+      "proposed": true
+    },
+    {
+      "title": "Text has enhanced contrast",
+      "permalink": "/standards-guidelines/act/rules/text-contrast-enhanced-09o5cg/",
+      "successCriteria": [
+        "contrast-enhanced"
+      ],
+      "wcagTechniques": [
+        "G17",
+        "G18"
+      ],
+      "proposed": true
+    },
+    {
+      "title": "video element auditory content has accessible alternative",
+      "permalink": "/standards-guidelines/act/rules/video-alternative-for-auditory-eac66b/",
+      "successCriteria": [
+        "captions-prerecorded"
+      ],
+      "wcagTechniques": [
+        "G87",
+        "G93",
+        "H95"
+      ],
+      "proposed": true
+    },
+    {
+      "title": "video element content is media alternative for text",
+      "permalink": "/standards-guidelines/act/rules/video-as-media-alternative-ab4d13/",
+      "successCriteria": [],
+      "wcagTechniques": [],
+      "proposed": true
+    },
+    {
+      "title": "video element visual content has description track",
+      "permalink": "/standards-guidelines/act/rules/video-description-track-f196ce/",
+      "successCriteria": [],
+      "wcagTechniques": [
+        "G78",
+        "H96"
+      ],
+      "proposed": true
+    },
+    {
+      "title": "video element visual-only content is media alternative for text",
+      "permalink": "/standards-guidelines/act/rules/video-only-as-media-alternative-fd26cf/",
+      "successCriteria": [],
+      "wcagTechniques": [],
+      "proposed": true
+    },
+    {
+      "title": "video element visual-only content has audio track alternative",
+      "permalink": "/standards-guidelines/act/rules/video-only-audio-track-d7ba54/",
+      "successCriteria": [],
+      "wcagTechniques": [
+        "G166"
+      ],
+      "proposed": true
+    },
+    {
+      "title": "video element visual-only content has transcript",
+      "permalink": "/standards-guidelines/act/rules/video-only-transcript-ee13b5/",
+      "successCriteria": [],
+      "wcagTechniques": [
+        "G159"
+      ],
+      "proposed": true
+    },
+    {
+      "title": "Visible label is part of accessible name",
+      "permalink": "/standards-guidelines/act/rules/visible-label-in-accessible-name-2ee8b8/",
+      "successCriteria": [
+        "label-in-name"
+      ],
+      "wcagTechniques": [
+        "G208"
+      ],
+      "proposed": true
+    },
+    {
+      "title": "Word spacing in style attributes is not !important",
+      "permalink": "/standards-guidelines/act/rules/word-spacing-not-important-9e45ec/",
+      "successCriteria": [
+        "text-spacing"
+      ],
+      "wcagTechniques": [],
+      "proposed": true
+    }
+  ]
 }
