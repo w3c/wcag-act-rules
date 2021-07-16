@@ -6,6 +6,7 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/link-non-empty-accessible-name-c487ae.md
+proposed: false
 rule_meta:
   id: c487ae
   name: "Link has non-empty accessible name"
@@ -40,7 +41,7 @@ rule_meta:
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
     - handle: CSS Styling
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
-  last_modified: July 15th, 2021
+  last_modified: July 16th, 2021
   scs_tested:
     - handle: Name, Role, Value
       num: 4.1.2
@@ -97,7 +98,16 @@ This `a` element has an [accessible name][] from its content.
 This `div` element has an [explicit semantic role](#explicit-role) of `link` and an [accessible name][] from its content.
 
 ```html
-<div role="link" onclick="window.location.href='https://www.w3.org/WAI/'">Web Accessibility Initiative (WAI)</div>
+<div role="link" onclick="openLink(event)" onkeyup="openLink(event)" tabindex="0">
+	Web Accessibility Initiative (WAI)
+</div>
+<script>
+	function openLink(event) {
+		if (event.type === 'click' || ['Enter', ' '].includes(event.key)) {
+			window.location.href = 'https://www.w3.org/WAI/'
+		}
+	}
+</script>
 ```
 
 #### Passed Example 3
@@ -342,6 +352,8 @@ This `a` element does not have the role of link because it does not have an `hre
 {% include_relative glossary/outcome.md %}
 {% include_relative glossary/semantic-role.md %}
 {% include_relative glossary/wai-aria-specifications.md %}
+
+{% include implementations/c487ae.md %}
 
 ## Acknowledgements
 

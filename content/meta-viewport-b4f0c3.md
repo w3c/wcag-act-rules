@@ -6,6 +6,7 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/meta-viewport-b4f0c3.md
+proposed: false
 rule_meta:
   id: b4f0c3
   name: "`meta` `viewport` allows for zoom"
@@ -26,7 +27,7 @@ rule_meta:
   input_aspects:
     - handle: DOM Tree
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
-  last_modified: July 15th, 2021
+  last_modified: July 16th, 2021
   scs_tested:
     - handle: Resize text
       num: 1.4.4
@@ -246,7 +247,7 @@ There is no viewport `meta` element.
 <html>
 	<head>
 		<title>Lorem ipsum</title>
-		<meta charset="UTF-8">
+		<meta charset="UTF-8" />
 	</head>
 	<body>
 		<p>
@@ -278,6 +279,8 @@ This viewport `meta` element does not have a `content` attribute.
 
 {% include_relative glossary/outcome.md %}
 {% include_relative glossary/visible.md %}
+
+{% include implementations/b4f0c3.md %}
 
 ## Acknowledgements
 

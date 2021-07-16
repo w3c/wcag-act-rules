@@ -6,6 +6,7 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/explicit-SVG-image-non-empty-accessible-name-7d6734.md
+proposed: false
 rule_meta:
   id: 7d6734
   name: "`svg` element with explicit role has non-empty accessible name"
@@ -23,7 +24,7 @@ rule_meta:
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
     - handle: CSS Styling
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
-  last_modified: July 15th, 2021
+  last_modified: July 16th, 2021
   scs_tested:
     - handle: Non-text Content
       num: 1.1.1
@@ -199,6 +200,8 @@ This `circle` element has an [explicit role][] that is neither `img`, `graphics-
 {% include_relative glossary/included-in-the-accessibility-tree.md %}
 {% include_relative glossary/outcome.md %}
 {% include_relative glossary/wai-aria-specifications.md %}
+
+{% include implementations/7d6734.md %}
 
 ## Acknowledgements
 

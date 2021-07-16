@@ -6,6 +6,7 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/aria-attr-defined-5f99a7.md
+proposed: false
 rule_meta:
   id: 5f99a7
   name: "`aria-*` attribute is defined in WAI-ARIA"
@@ -17,7 +18,7 @@ rule_meta:
   input_aspects:
     - handle: DOM Tree
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
-  last_modified: July 15th, 2021
+  last_modified: July 16th, 2021
 ---
 
 ## Applicability
@@ -132,6 +133,8 @@ This `canvas` element does not have an `aria-*` attribute specified.
 
 {% include_relative glossary/outcome.md %}
 {% include_relative glossary/wai-aria-specifications.md %}
+
+{% include implementations/5f99a7.md %}
 
 ## Acknowledgements
 

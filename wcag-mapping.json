@@ -1,100 +1,6 @@
 {
   "act-rules": [
     {
-      "title": "Button has non-empty accessible name",
-      "permalink": "/standards-guidelines/act/rules/button-non-empty-accessible-name-97a4e1/",
-      "successCriteria": [
-        "name-role-value"
-      ],
-      "wcagTechniques": [],
-      "proposed": false
-    },
-    {
-      "title": "HTML page has lang attribute",
-      "permalink": "/standards-guidelines/act/rules/html-page-lang-b5c3f8/",
-      "successCriteria": [
-        "language-of-page"
-      ],
-      "wcagTechniques": [
-        "H57"
-      ],
-      "proposed": false
-    },
-    {
-      "title": "HTML page lang attribute has valid language tag",
-      "permalink": "/standards-guidelines/act/rules/html-page-lang-valid-bf051a/",
-      "successCriteria": [
-        "language-of-page"
-      ],
-      "wcagTechniques": [
-        "H57"
-      ],
-      "proposed": false
-    },
-    {
-      "title": "HTML page lang and xml:lang attributes have matching values",
-      "permalink": "/standards-guidelines/act/rules/html-page-lang-xml-lang-match-5b7ae0/",
-      "successCriteria": [
-        "language-of-page"
-      ],
-      "wcagTechniques": [],
-      "proposed": false
-    },
-    {
-      "title": "HTML page has non-empty title",
-      "permalink": "/standards-guidelines/act/rules/html-page-non-empty-title-2779a5/",
-      "successCriteria": [
-        "page-titled"
-      ],
-      "wcagTechniques": [
-        "G88",
-        "H25"
-      ],
-      "proposed": false
-    },
-    {
-      "title": "Image button has non-empty accessible name",
-      "permalink": "/standards-guidelines/act/rules/image-button-non-empty-accessible-name-59796f/",
-      "successCriteria": [
-        "non-text-content",
-        "name-role-value"
-      ],
-      "wcagTechniques": [
-        "G94",
-        "G95"
-      ],
-      "proposed": false
-    },
-    {
-      "title": "Image has non-empty accessible name",
-      "permalink": "/standards-guidelines/act/rules/image-non-empty-accessible-name-23a2a8/",
-      "successCriteria": [
-        "non-text-content"
-      ],
-      "wcagTechniques": [
-        "G94",
-        "G95"
-      ],
-      "proposed": false
-    },
-    {
-      "title": "aria-* attribute is defined in WAI-ARIA",
-      "permalink": "/standards-guidelines/act/rules/aria-attr-defined-5f99a7/",
-      "successCriteria": [],
-      "wcagTechniques": [],
-      "proposed": false
-    },
-    {
-      "title": "Element with aria-hidden has no focusable content",
-      "permalink": "/standards-guidelines/act/rules/aria-hidden-no-focusable-content-6cfa84/",
-      "successCriteria": [
-        "info-and-relationships",
-        "name-role-value"
-      ],
-      "wcagTechniques": [],
-      "proposed": false
-    },
-    {
       "title": "ARIA required context role",
       "permalink": "/standards-guidelines/act/rules/aria-required-context-role-ff89c9/",
       "successCriteria": [
@@ -279,15 +185,6 @@
       "proposed": false
     },
     {
-      "title": "svg element with explicit role has non-empty accessible name",
-      "permalink": "/standards-guidelines/act/rules/explicit-SVG-image-non-empty-accessible-name-7d6734/",
-      "successCriteria": [
-        "non-text-content"
-      ],
-      "wcagTechniques": [],
-      "proposed": false
-    },
-    {
       "title": "Focusable element has no keyboard trap",
       "permalink": "/standards-guidelines/act/rules/focusable-no-keyboard-trap-80af7b/",
       "successCriteria": [
@@ -321,15 +218,6 @@
       "wcagTechniques": [
         "G131"
       ],
-      "proposed": false
-    },
-    {
-      "title": "Form field has non-empty accessible name",
-      "permalink": "/standards-guidelines/act/rules/form-field-non-empty-accessible-name-e086e5/",
-      "successCriteria": [
-        "name-role-value"
-      ],
-      "wcagTechniques": [],
       "proposed": false
     },
     {
@@ -482,19 +370,6 @@
       "proposed": false
     },
     {
-      "title": "Link has non-empty accessible name",
-      "permalink": "/standards-guidelines/act/rules/link-non-empty-accessible-name-c487ae/",
-      "successCriteria": [
-        "name-role-value",
-        "link-purpose-in-context",
-        "link-purpose-link-only"
-      ],
-      "wcagTechniques": [
-        "G91"
-      ],
-      "proposed": false
-    },
-    {
       "title": "Links with identical accessible names have equivalent purpose",
       "permalink": "/standards-guidelines/act/rules/links-identical-name-equivalent-purpose-b20e66/",
       "successCriteria": [
@@ -547,16 +422,6 @@
         "G110",
         "H76"
       ],
-      "proposed": false
-    },
-    {
-      "title": "meta viewport allows for zoom",
-      "permalink": "/standards-guidelines/act/rules/meta-viewport-b4f0c3/",
-      "successCriteria": [
-        "resize-text",
-        "reflow"
-      ],
-      "wcagTechniques": [],
       "proposed": false
     },
     {
@@ -740,6 +605,141 @@
       "permalink": "/standards-guidelines/act/rules/word-spacing-not-important-9e45ec/",
       "successCriteria": [
         "text-spacing"
+      ],
+      "wcagTechniques": [],
+      "proposed": false
+    },
+    {
+      "title": "aria-* attribute is defined in WAI-ARIA",
+      "permalink": "/standards-guidelines/act/rules/aria-attr-defined-5f99a7/",
+      "successCriteria": [],
+      "wcagTechniques": [],
+      "proposed": false
+    },
+    {
+      "title": "Element with aria-hidden has no focusable content",
+      "permalink": "/standards-guidelines/act/rules/aria-hidden-no-focusable-content-6cfa84/",
+      "successCriteria": [
+        "info-and-relationships",
+        "name-role-value"
+      ],
+      "wcagTechniques": [],
+      "proposed": false
+    },
+    {
+      "title": "Button has non-empty accessible name",
+      "permalink": "/standards-guidelines/act/rules/button-non-empty-accessible-name-97a4e1/",
+      "successCriteria": [
+        "name-role-value"
+      ],
+      "wcagTechniques": [],
+      "proposed": false
+    },
+    {
+      "title": "svg element with explicit role has non-empty accessible name",
+      "permalink": "/standards-guidelines/act/rules/explicit-SVG-image-non-empty-accessible-name-7d6734/",
+      "successCriteria": [
+        "non-text-content"
+      ],
+      "wcagTechniques": [],
+      "proposed": false
+    },
+    {
+      "title": "Form field has non-empty accessible name",
+      "permalink": "/standards-guidelines/act/rules/form-field-non-empty-accessible-name-e086e5/",
+      "successCriteria": [
+        "name-role-value"
+      ],
+      "wcagTechniques": [],
+      "proposed": false
+    },
+    {
+      "title": "HTML page has lang attribute",
+      "permalink": "/standards-guidelines/act/rules/html-page-lang-b5c3f8/",
+      "successCriteria": [
+        "language-of-page"
+      ],
+      "wcagTechniques": [
+        "H57"
+      ],
+      "proposed": false
+    },
+    {
+      "title": "HTML page lang attribute has valid language tag",
+      "permalink": "/standards-guidelines/act/rules/html-page-lang-valid-bf051a/",
+      "successCriteria": [
+        "language-of-page"
+      ],
+      "wcagTechniques": [
+        "H57"
+      ],
+      "proposed": false
+    },
+    {
+      "title": "HTML page lang and xml:lang attributes have matching values",
+      "permalink": "/standards-guidelines/act/rules/html-page-lang-xml-lang-match-5b7ae0/",
+      "successCriteria": [
+        "language-of-page"
+      ],
+      "wcagTechniques": [],
+      "proposed": false
+    },
+    {
+      "title": "HTML page has non-empty title",
+      "permalink": "/standards-guidelines/act/rules/html-page-non-empty-title-2779a5/",
+      "successCriteria": [
+        "page-titled"
+      ],
+      "wcagTechniques": [
+        "G88",
+        "H25"
+      ],
+      "proposed": false
+    },
+    {
+      "title": "Image button has non-empty accessible name",
+      "permalink": "/standards-guidelines/act/rules/image-button-non-empty-accessible-name-59796f/",
+      "successCriteria": [
+        "non-text-content",
+        "name-role-value"
+      ],
+      "wcagTechniques": [
+        "G94",
+        "G95"
+      ],
+      "proposed": false
+    },
+    {
+      "title": "Image has non-empty accessible name",
+      "permalink": "/standards-guidelines/act/rules/image-non-empty-accessible-name-23a2a8/",
+      "successCriteria": [
+        "non-text-content"
+      ],
+      "wcagTechniques": [
+        "G94",
+        "G95"
+      ],
+      "proposed": false
+    },
+    {
+      "title": "Link has non-empty accessible name",
+      "permalink": "/standards-guidelines/act/rules/link-non-empty-accessible-name-c487ae/",
+      "successCriteria": [
+        "name-role-value",
+        "link-purpose-in-context",
+        "link-purpose-link-only"
+      ],
+      "wcagTechniques": [
+        "G91"
+      ],
+      "proposed": false
+    },
+    {
+      "title": "meta viewport allows for zoom",
+      "permalink": "/standards-guidelines/act/rules/meta-viewport-b4f0c3/",
+      "successCriteria": [
+        "resize-text",
+        "reflow"
       ],
       "wcagTechniques": [],
       "proposed": false

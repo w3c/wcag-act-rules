@@ -6,6 +6,7 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/button-non-empty-accessible-name-97a4e1.md
+proposed: false
 rule_meta:
   id: 97a4e1
   name: "Button has non-empty accessible name"
@@ -25,7 +26,7 @@ rule_meta:
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
     - handle: CSS Styling
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
-  last_modified: July 15th, 2021
+  last_modified: July 16th, 2021
   scs_tested:
     - handle: Name, Role, Value
       num: 4.1.2
@@ -237,6 +238,8 @@ This `button` element has an [explicit role][] of `none`; it is not [focusable][
 {% include_relative glossary/outcome.md %}
 {% include_relative glossary/semantic-role.md %}
 {% include_relative glossary/wai-aria-specifications.md %}
+
+{% include implementations/97a4e1.md %}
 
 ## Acknowledgements
 

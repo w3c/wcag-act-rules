@@ -6,6 +6,7 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/image-non-empty-accessible-name-23a2a8.md
+proposed: false
 rule_meta:
   id: 23a2a8
   name: "Image has non-empty accessible name"
@@ -35,7 +36,7 @@ rule_meta:
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
     - handle: CSS Styling
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
-  last_modified: July 15th, 2021
+  last_modified: July 16th, 2021
   scs_tested:
     - handle: Non-text Content
       num: 1.1.1
@@ -260,6 +261,8 @@ This `img` element is hidden with `visibility: hidden`.
 {% include_relative glossary/outcome.md %}
 {% include_relative glossary/semantic-role.md %}
 {% include_relative glossary/wai-aria-specifications.md %}
+
+{% include implementations/23a2a8.md %}
 
 ## Acknowledgements
 

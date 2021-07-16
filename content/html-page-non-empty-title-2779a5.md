@@ -6,6 +6,7 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/html-page-non-empty-title-2779a5.md
+proposed: false
 rule_meta:
   id: 2779a5
   name: "HTML page has non-empty title"
@@ -31,7 +32,7 @@ rule_meta:
   input_aspects:
     - handle: DOM Tree
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
-  last_modified: July 15th, 2021
+  last_modified: July 16th, 2021
   scs_tested:
     - handle: Page Titled
       num: 2.4.2
@@ -209,6 +210,8 @@ This `title` element is a child of an `svg` element.
 {% include_relative glossary/outcome.md %}
 {% include_relative glossary/whitespace.md %}
 
+{% include implementations/2779a5.md %}
+
 ## Acknowledgements
 
 This rule was written in the [ACT Rules community group](https://w3.org/community/act-r/), 
@@ -224,9 +227,5 @@ with the support of the EU-funded [WAI-Tools Project](https://www.w3.org/WAI/abo
 
 ## Changelog
 
-- **October 1st, 2020**
-	- Added mapping to Technique G88 and H25
-	- Moved a note to the background
-	- Added first assumption
-	- Removed Passed example 6, as it does not satisfy success criterion 2.4.2
-	- Editorial improvements to example descriptions
+This is the first version of this ACT rule.
+

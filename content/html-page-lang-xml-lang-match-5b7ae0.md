@@ -6,6 +6,7 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/html-page-lang-xml-lang-match-5b7ae0.md
+proposed: false
 rule_meta:
   id: 5b7ae0
   name: "HTML page `lang` and `xml:lang` attributes have matching values"
@@ -21,7 +22,7 @@ rule_meta:
   input_aspects:
     - handle: DOM Tree
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
-  last_modified: July 15th, 2021
+  last_modified: July 16th, 2021
   scs_tested:
     - handle: Language of Page
       num: 3.1.1
@@ -187,6 +188,8 @@ This rule does not apply to `html` elements with an empty (`""`) `xml:lang` attr
 {% include_relative glossary/outcome.md %}
 {% include_relative glossary/valid-language-tag.md %}
 
+{% include implementations/5b7ae0.md %}
+
 ## Acknowledgements
 
 This rule was written in the [ACT Rules community group](https://w3.org/community/act-r/), 
@@ -202,11 +205,7 @@ with the support of the EU-funded [WAI-Tools Project](https://www.w3.org/WAI/abo
 
 ## Changelog
 
-- **October 6st**
-  - Add an assumption about matching tags
-  - Move a note from the applicability to the background
-  - Use "non-embedded" in the description
-  - Rename "valid language subtag" to Valid language tag"
+This is the first version of this ACT rule.
 
 [content type]: https://dom.spec.whatwg.org/#concept-document-content-type 'Definition of content type'
 [extended language subtags]: https://tools.ietf.org/html/bcp47#section-2.2.2 'Definition of extended language subtag'

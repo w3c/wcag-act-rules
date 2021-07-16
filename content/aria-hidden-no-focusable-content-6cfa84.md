@@ -6,6 +6,7 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/aria-hidden-no-focusable-content-6cfa84.md
+proposed: false
 rule_meta:
   id: 6cfa84
   name: "Element with `aria-hidden` has no focusable content"
@@ -34,7 +35,7 @@ rule_meta:
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
     - handle: CSS Styling
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
-  last_modified: July 15th, 2021
+  last_modified: July 16th, 2021
   scs_tested:
     - handle: Info and Relationships
       num: 1.3.1
@@ -223,6 +224,8 @@ Incorrect value of `aria-hidden`.
 {% include_relative glossary/focusable.md %}
 {% include_relative glossary/outcome.md %}
 {% include_relative glossary/visible.md %}
+
+{% include implementations/6cfa84.md %}
 
 ## Acknowledgements
 

@@ -6,6 +6,7 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/html-page-lang-valid-bf051a.md
+proposed: false
 rule_meta:
   id: bf051a
   name: "HTML page `lang` attribute has valid language tag"
@@ -26,7 +27,7 @@ rule_meta:
   input_aspects:
     - handle: DOM Tree
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
-  last_modified: July 15th, 2021
+  last_modified: July 16th, 2021
   scs_tested:
     - handle: Language of Page
       num: 3.1.1
@@ -121,6 +122,8 @@ This rule does not apply to `svg` elements.
 {% include_relative glossary/outcome.md %}
 {% include_relative glossary/valid-language-tag.md %}
 
+{% include implementations/bf051a.md %}
+
 ## Acknowledgements
 
 This rule was written in the [ACT Rules community group](https://w3.org/community/act-r/), 
@@ -136,9 +139,7 @@ with the support of the EU-funded [WAI-Tools Project](https://www.w3.org/WAI/abo
 
 ## Changelog
 
-- **October 6st**
-  - Rename definition "valid language subtag" to "valid language tag"
-  - Clarify the title
+This is the first version of this ACT rule.
 
 [primary language subtag]: https://tools.ietf.org/html/bcp47#section-2.2.1 'Definition of primary language subtag'
 [region subtag]: https://tools.ietf.org/html/bcp47#section-2.2.4 'Definition of region subtag'

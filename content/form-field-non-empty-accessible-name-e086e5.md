@@ -6,6 +6,7 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/form-field-non-empty-accessible-name-e086e5.md
+proposed: false
 rule_meta:
   id: e086e5
   name: "Form field has non-empty accessible name"
@@ -25,7 +26,7 @@ rule_meta:
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
     - handle: DOM Tree
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
-  last_modified: July 15th, 2021
+  last_modified: July 16th, 2021
   scs_tested:
     - handle: Name, Role, Value
       num: 4.1.2
@@ -236,6 +237,8 @@ This `select` element is not [included in the accessibility tree][] because it i
 {% include_relative glossary/semantic-role.md %}
 {% include_relative glossary/visible.md %}
 {% include_relative glossary/wai-aria-specifications.md %}
+
+{% include implementations/e086e5.md %}
 
 ## Acknowledgements
 

@@ -6,6 +6,7 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/html-page-lang-b5c3f8.md
+proposed: false
 rule_meta:
   id: b5c3f8
   name: "HTML page has `lang` attribute"
@@ -26,7 +27,7 @@ rule_meta:
   input_aspects:
     - handle: DOM Tree
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
-  last_modified: July 15th, 2021
+  last_modified: July 16th, 2021
   scs_tested:
     - handle: Language of Page
       num: 3.1.1
@@ -130,6 +131,8 @@ This rule does not apply to `math` element.
 ## Glossary
 
 {% include_relative glossary/outcome.md %}
+
+{% include implementations/b5c3f8.md %}
 
 ## Acknowledgements
 
