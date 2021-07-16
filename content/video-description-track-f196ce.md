@@ -6,6 +6,7 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/video-description-track-f196ce.md
+proposed: true
 rule_meta:
   id: f196ce
   name: "`video` element visual content has description track"
@@ -34,7 +35,7 @@ rule_meta:
       url: 
     - handle: Language
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-text
-  last_modified: July 15th, 2021
+  last_modified: July 16th, 2021
 ---
 
 ## Applicability
@@ -148,6 +149,8 @@ A video element without audio.
 {% include_relative glossary/non-streaming-media-element.md %}
 {% include_relative glossary/outcome.md %}
 {% include_relative glossary/visible.md %}
+
+{% include implementations/f196ce.md %}
 
 ## Acknowledgements
 

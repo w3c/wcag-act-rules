@@ -6,7 +6,7 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/meta-viewport-b4f0c3.md
-proposed: false
+proposed: true
 rule_meta:
   id: b4f0c3
   name: "`meta` `viewport` allows for zoom"

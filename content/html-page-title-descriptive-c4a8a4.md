@@ -6,6 +6,7 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/html-page-title-descriptive-c4a8a4.md
+proposed: true
 rule_meta:
   id: c4a8a4
   name: "HTML page title is descriptive"
@@ -33,7 +34,7 @@ rule_meta:
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
     - handle: Language
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-text
-  last_modified: July 15th, 2021
+  last_modified: July 16th, 2021
   scs_tested:
     - handle: Page Titled
       num: 2.4.2
@@ -179,6 +180,8 @@ This `title` element is a child of an `svg` element.
 
 {% include_relative glossary/outcome.md %}
 {% include_relative glossary/whitespace.md %}
+
+{% include implementations/c4a8a4.md %}
 
 ## Acknowledgements
 

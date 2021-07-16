@@ -6,6 +6,7 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/link-in-context-descriptive-5effbb.md
+proposed: true
 rule_meta:
   id: 5effbb
   name: "Link in context is descriptive"
@@ -32,7 +33,7 @@ rule_meta:
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
     - handle: Language
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-text
-  last_modified: July 15th, 2021
+  last_modified: July 16th, 2021
   scs_tested:
     - handle: Link Purpose (In Context)
       num: 2.4.4
@@ -358,6 +359,8 @@ An `a` element without the [semantic role][] `link`.
 {% include_relative glossary/semantic-link.md %}
 {% include_relative glossary/semantic-role.md %}
 {% include_relative glossary/wai-aria-specifications.md %}
+
+{% include implementations/5effbb.md %}
 
 ## Acknowledgements
 

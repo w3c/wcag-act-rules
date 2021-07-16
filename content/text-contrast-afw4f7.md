@@ -6,6 +6,7 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/text-contrast-afw4f7.md
+proposed: true
 rule_meta:
   id: afw4f7
   name: "Text has minimum contrast"
@@ -32,7 +33,7 @@ rule_meta:
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
     - handle: Language
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-text
-  last_modified: July 15th, 2021
+  last_modified: July 16th, 2021
   scs_tested:
     - handle: Contrast (Minimum)
       num: 1.4.3
@@ -417,6 +418,8 @@ This text is part of a label of a [disabled][] widget, because it is in a `label
 {% include_relative glossary/semantic-widget.md %}
 {% include_relative glossary/visible.md %}
 {% include_relative glossary/wai-aria-specifications.md %}
+
+{% include implementations/afw4f7.md %}
 
 ## Acknowledgements
 

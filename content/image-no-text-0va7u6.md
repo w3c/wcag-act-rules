@@ -6,6 +6,7 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/image-no-text-0va7u6.md
+proposed: true
 rule_meta:
   id: 0va7u6
   name: "HTML graphics contain no text"
@@ -30,7 +31,7 @@ rule_meta:
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
     - handle: Language
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-text
-  last_modified: July 15th, 2021
+  last_modified: July 16th, 2021
   scs_tested:
     - handle: Images of Text
       num: 1.4.5
@@ -242,6 +243,8 @@ This `svg` element does not have `image` element descendants.
 {% include_relative glossary/rendered-image-resource.md %}
 {% include_relative glossary/visible.md %}
 {% include_relative glossary/web-page-html.md %}
+
+{% include implementations/0va7u6.md %}
 
 ## Acknowledgements
 

@@ -6,6 +6,7 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/meta-refresh-no-delay-no-exception-bisz58.md
+proposed: true
 rule_meta:
   id: bisz58
   name: "`meta` element has no refresh delay (no exception)"
@@ -36,7 +37,7 @@ rule_meta:
   input_aspects:
     - handle: DOM Tree
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
-  last_modified: July 15th, 2021
+  last_modified: July 16th, 2021
   scs_tested:
     - handle: Interruptions
       num: 2.2.4
@@ -229,6 +230,8 @@ This `meta` element has an invalid `content` attribute, and is therefore inappli
 
 {% include_relative glossary/attribute-value.md %}
 {% include_relative glossary/outcome.md %}
+
+{% include implementations/bisz58.md %}
 
 ## Acknowledgements
 

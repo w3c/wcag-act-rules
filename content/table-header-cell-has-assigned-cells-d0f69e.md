@@ -6,6 +6,7 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/table-header-cell-has-assigned-cells-d0f69e.md
+proposed: true
 rule_meta:
   id: d0f69e
   name: "Table header cell has assigned cells"
@@ -30,7 +31,7 @@ rule_meta:
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
     - handle: DOM Tree
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
-  last_modified: July 15th, 2021
+  last_modified: July 16th, 2021
   scs_tested:
     - handle: Info and Relationships
       num: 1.3.1
@@ -366,6 +367,8 @@ This `th` element is part of a table which is not [included in the accessibility
 {% include_relative glossary/semantic-role.md %}
 {% include_relative glossary/visible.md %}
 {% include_relative glossary/wai-aria-specifications.md %}
+
+{% include implementations/d0f69e.md %}
 
 ## Acknowledgements
 

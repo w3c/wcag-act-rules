@@ -6,6 +6,7 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/audio-text-alternative-e7aa44.md
+proposed: true
 rule_meta:
   id: e7aa44
   name: "`audio` element content has text alternative"
@@ -26,7 +27,7 @@ rule_meta:
   input_aspects:
     - 2eb176
     - afb423
-  last_modified: July 15th, 2021
+  last_modified: July 16th, 2021
   scs_tested:
     - handle: Audio-only and Video-only (Prerecorded)
       num: 1.2.1
@@ -194,6 +195,8 @@ This `a` element links to an audio file, but there is no `audio` element on this
 {% include_relative glossary/non-streaming-media-element.md %}
 {% include_relative glossary/outcome.md %}
 {% include_relative glossary/visible.md %}
+
+{% include implementations/e7aa44.md %}
 
 ## Acknowledgements
 

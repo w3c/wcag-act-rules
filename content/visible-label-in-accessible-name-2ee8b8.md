@@ -6,6 +6,7 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/visible-label-in-accessible-name-2ee8b8.md
+proposed: true
 rule_meta:
   id: 2ee8b8
   name: "Visible label is part of accessible name"
@@ -30,7 +31,7 @@ rule_meta:
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
     - handle: CSS Styling
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
-  last_modified: July 15th, 2021
+  last_modified: July 16th, 2021
   scs_tested:
     - handle: Label in Name
       num: 2.5.3
@@ -202,6 +203,8 @@ This link has no [visible text content][].
 {% include_relative glossary/visible-text-content.md %}
 {% include_relative glossary/wai-aria-specifications.md %}
 {% include_relative glossary/whitespace.md %}
+
+{% include implementations/2ee8b8.md %}
 
 ## Acknowledgements
 

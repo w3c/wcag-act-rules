@@ -6,6 +6,7 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/block-collapsible-3e12e1.md
+proposed: true
 rule_meta:
   id: 3e12e1
   name: "Block of repeated content is collapsible"
@@ -25,7 +26,7 @@ rule_meta:
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
     - handle: DOM Tree
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
-  last_modified: July 15th, 2021
+  last_modified: July 16th, 2021
 ---
 
 ## Applicability
@@ -312,6 +313,8 @@ This [document][] is not an [HTML web page][].
 {% include_relative glossary/visible.md %}
 {% include_relative glossary/wai-aria-specifications.md %}
 {% include_relative glossary/web-page-html.md %}
+
+{% include implementations/3e12e1.md %}
 
 ## Acknowledgements
 

@@ -6,6 +6,7 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/id-value-unique-3ea0c8.md
+proposed: true
 rule_meta:
   id: 3ea0c8
   name: "`id` attribute value is unique"
@@ -26,7 +27,7 @@ rule_meta:
   input_aspects:
     - handle: DOM Tree
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
-  last_modified: July 15th, 2021
+  last_modified: July 16th, 2021
   scs_tested:
     - handle: Parsing
       num: 4.1.1
@@ -35,13 +36,13 @@ rule_meta:
 
 ## Applicability
 
-This rule applies to any `id` attribute whose value is not an empty string (`""`), specified on a HTML or SVG element.
+This rule applies to any `id` attribute whose value is not an empty string (`""`), specified on a [HTML or SVG element][].
 
 **Note:** Elements that are neither [included in the accessibility tree][] nor [visible][] are still considered for this rule.
 
 ## Expectation
 
-The value of the attribute is unique across all other `id` attributes specified on HTML or SVG elements that exist within the same [document tree](https://dom.spec.whatwg.org/#document-trees) or [shadow tree](https://dom.spec.whatwg.org/#shadow-trees) as the element on which the applicable `id` attribute is specified.
+The value of the attribute is unique across all other `id` attributes specified on [HTML or SVG elements][html or svg element] that exist within the same [document tree](https://dom.spec.whatwg.org/#document-trees) or [shadow tree](https://dom.spec.whatwg.org/#shadow-trees) as the element on which the applicable `id` attribute is specified.
 
 ## Assumptions
 
@@ -168,9 +169,12 @@ These `id` attributes have an empty value.
 
 {% include_relative glossary/focusable.md %}
 {% include_relative glossary/included-in-the-accessibility-tree.md %}
+{% include_relative glossary/namespaced-element.md %}
 {% include_relative glossary/outcome.md %}
 {% include_relative glossary/programmatic-label.md %}
 {% include_relative glossary/visible.md %}
+
+{% include implementations/3ea0c8.md %}
 
 ## Acknowledgements
 
@@ -189,3 +193,4 @@ This is the first version of this ACT rule.
 [included in the accessibility tree]: #included-in-the-accessibility-tree 'Definition of included in the accessibility tree'
 [programmatic label]: #programmatic-label 'Definition of programmatic label'
 [visible]: #visible 'Definition of visible'
+[html or svg element]: #namespaced-element

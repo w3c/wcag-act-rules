@@ -6,6 +6,7 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/document-has-landmark-with-non-repeated-content-b40fd1.md
+proposed: true
 rule_meta:
   id: b40fd1
   name: "Document has a landmark with non-repeated content"
@@ -21,7 +22,7 @@ rule_meta:
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
     - handle: DOM Tree
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
-  last_modified: July 15th, 2021
+  last_modified: July 16th, 2021
 ---
 
 ## Applicability
@@ -281,6 +282,8 @@ This [document][] is not an [HTML web page][].
 {% include_relative glossary/visible.md %}
 {% include_relative glossary/wai-aria-specifications.md %}
 {% include_relative glossary/web-page-html.md %}
+
+{% include implementations/b40fd1.md %}
 
 ## Acknowledgements
 

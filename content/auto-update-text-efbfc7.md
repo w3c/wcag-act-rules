@@ -6,6 +6,7 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/auto-update-text-efbfc7.md
+proposed: true
 rule_meta:
   id: efbfc7
   name: "Text content that changes automatically can be paused, stopped or hidden"
@@ -29,7 +30,7 @@ rule_meta:
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
     - handle: CSS Styling
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
-  last_modified: July 15th, 2021
+  last_modified: July 16th, 2021
   scs_tested:
     - handle: Pause, Stop, Hide
       num: 2.2.2
@@ -72,6 +73,8 @@ _There are no major accessibility support issues known for this rule._
 ## Background
 
 The 10 minute time span in the applicability is arbitrary. It is selected so that testing this rule would not become impractical. This 10 minute constraint is not included in WCAG. Content that changes less frequently may fail success criteria 2.2.2 without failing this rule.
+
+The [instruments][instrument] used to pass this rule (if any), must meet all level A Success Criteria in order to fully satisfy [Success Criterion 2.2.2: Pause, Stop, Hide][sc 2.2.2]. These extra requirements are left out of this rule, and should be tested separately.
 
 - [Understanding Success Criterion 2.2.2: Pause, Stop, Hide][sc 2.2.2]
 - [G186: Using a control in the Web page that stops moving, blinking, or auto-updating content][g186]
@@ -327,6 +330,8 @@ This `span` element with text content that automatically changes multiple times 
 {% include_relative glossary/visible-text-content.md %}
 {% include_relative glossary/wai-aria-specifications.md %}
 {% include_relative glossary/web-page-html.md %}
+
+{% include implementations/efbfc7.md %}
 
 ## Acknowledgements
 

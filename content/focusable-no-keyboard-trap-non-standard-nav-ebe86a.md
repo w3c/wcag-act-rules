@@ -6,6 +6,7 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/focusable-no-keyboard-trap-non-standard-nav-ebe86a.md
+proposed: true
 rule_meta:
   id: ebe86a
   name: "Focusable element has no keyboard trap via non-standard navigation"
@@ -19,12 +20,12 @@ rule_meta:
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
     - handle: CSS Styling
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
-  last_modified: July 15th, 2021
+  last_modified: July 16th, 2021
 ---
 
 ## Applicability
 
-This rule applies to any HTML or SVG element that is [focusable](#focusable) where focus cannot cycle to the browser UI by using [standard keyboard navigation](#standard-keyboard-navigation).
+This rule applies to any [HTML or SVG element][] that is [focusable](#focusable) where focus cannot cycle to the browser UI by using [standard keyboard navigation](#standard-keyboard-navigation).
 
 **Note:** This rule only applies to HTML and SVG. Thus, it is a partial check for WCAG 2.0 success criterion 2.1.2, which applies to all content.
 
@@ -224,9 +225,12 @@ Not a keyboard trap (interactive element).
 
 {% include_relative glossary/focusable.md %}
 {% include_relative glossary/included-in-the-accessibility-tree.md %}
+{% include_relative glossary/namespaced-element.md %}
 {% include_relative glossary/outcome.md %}
 {% include_relative glossary/standard-keyboard-navigation.md %}
 {% include_relative glossary/visible.md %}
+
+{% include implementations/ebe86a.md %}
 
 ## Acknowledgements
 
@@ -247,3 +251,4 @@ with the support of the EU-funded [WAI-Tools Project](https://www.w3.org/WAI/abo
 
 This is the first version of this ACT rule.
 
+[html or svg element]: #namespaced-element

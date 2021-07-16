@@ -6,6 +6,7 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/auto-play-audio-has-control-mechanism-4c31df.md
+proposed: true
 rule_meta:
   id: 4c31df
   name: "`audio` or `video` that plays automatically has a control mechanism"
@@ -27,7 +28,7 @@ rule_meta:
       url: 
     - handle: Visual output
       url: 
-  last_modified: July 15th, 2021
+  last_modified: July 16th, 2021
 ---
 
 ## Applicability
@@ -289,6 +290,8 @@ This `audio` element does not autoplay.
 {% include_relative glossary/visible.md %}
 {% include_relative glossary/web-page-html.md %}
 {% include_relative glossary/whitespace.md %}
+
+{% include implementations/4c31df.md %}
 
 ## Acknowledgements
 

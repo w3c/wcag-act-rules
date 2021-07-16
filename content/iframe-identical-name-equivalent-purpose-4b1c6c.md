@@ -6,6 +6,7 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/iframe-identical-name-equivalent-purpose-4b1c6c.md
+proposed: true
 rule_meta:
   id: 4b1c6c
   name: "`iframe` elements with identical accessible names have equivalent purpose"
@@ -25,7 +26,7 @@ rule_meta:
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
     - handle: Language
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-text
-  last_modified: July 15th, 2021
+  last_modified: July 16th, 2021
   scs_tested:
     - handle: Name, Role, Value
       num: 4.1.2
@@ -377,6 +378,8 @@ These `iframe` elements are not [included in the accessibility tree][], because 
 {% include_relative glossary/outcome.md %}
 {% include_relative glossary/same-resource.md %}
 {% include_relative glossary/web-page-html.md %}
+
+{% include implementations/4b1c6c.md %}
 
 ## Acknowledgements
 

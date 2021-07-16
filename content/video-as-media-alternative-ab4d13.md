@@ -6,6 +6,7 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/video-as-media-alternative-ab4d13.md
+proposed: true
 rule_meta:
   id: ab4d13
   name: "`video` element content is media alternative for text"
@@ -23,7 +24,7 @@ rule_meta:
       url: 
     - handle: Language
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-text
-  last_modified: July 15th, 2021
+  last_modified: July 16th, 2021
 ---
 
 ## Applicability
@@ -179,6 +180,8 @@ A video element that describes some of the text on the same page. The text on th
 {% include_relative glossary/non-streaming-media-element.md %}
 {% include_relative glossary/outcome.md %}
 {% include_relative glossary/visible.md %}
+
+{% include implementations/ab4d13.md %}
 
 ## Acknowledgements
 

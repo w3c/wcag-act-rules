@@ -6,6 +6,7 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/device-motion-user-interface-7677a9.md
+proposed: true
 rule_meta:
   id: 7677a9
   name: "Device motion based changes to the content can also be created from the user interface"
@@ -25,7 +26,7 @@ rule_meta:
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
     - handle: Accessibility tree
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-accessibility
-  last_modified: July 15th, 2021
+  last_modified: July 16th, 2021
   scs_tested:
     - handle: Motion Actuation
       num: 2.5.4
@@ -55,6 +56,8 @@ For each registered [device orientation event][device orientation] or [device mo
 _There are no major accessibility support issues known for this rule._
 
 ## Background
+
+The [instruments][instrument] used to pass this rule (if any), must meet all level A Success Criteria in order to fully satisfy [Success Criterion 2.5.4: Motion Actuation][sc2.5.4]. These extra requirements are left out of this rule, and should be tested separately.
 
 - [Understanding Success Criterion 2.5.4: Motion Actuation][sc2.5.4]
 - [G213: Provide conventional controls and an application setting for motion activated input](https://www.w3.org/WAI/WCAG21/Techniques/general/G213.html)
@@ -289,6 +292,8 @@ This [HTML document][] is not operable by device motion.
 {% include_relative glossary/semantic-role.md %}
 {% include_relative glossary/wai-aria-specifications.md %}
 {% include_relative glossary/web-page-html.md %}
+
+{% include implementations/7677a9.md %}
 
 ## Acknowledgements
 

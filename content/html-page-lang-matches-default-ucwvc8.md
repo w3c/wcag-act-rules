@@ -6,6 +6,7 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/html-page-lang-matches-default-ucwvc8.md
+proposed: true
 rule_meta:
   id: ucwvc8
   name: "HTML page language subtag matches default language"
@@ -32,7 +33,7 @@ rule_meta:
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
     - handle: Language
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-text
-  last_modified: July 15th, 2021
+  last_modified: July 16th, 2021
   scs_tested:
     - handle: Language of Page
       num: 3.1.1
@@ -313,6 +314,8 @@ This page has an undefined [default language][default page language] because it 
 {% include_relative glossary/valid-language-tag.md %}
 {% include_relative glossary/visible.md %}
 {% include_relative glossary/web-page-html.md %}
+
+{% include implementations/ucwvc8.md %}
 
 ## Acknowledgements
 

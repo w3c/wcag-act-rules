@@ -6,6 +6,7 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/element-lang-valid-de46e4.md
+proposed: true
 rule_meta:
   id: de46e4
   name: "Element with `lang` attribute has valid language tag"
@@ -30,7 +31,7 @@ rule_meta:
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
     - handle: DOM Tree
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
-  last_modified: July 15th, 2021
+  last_modified: July 16th, 2021
   scs_tested:
     - handle: Language of Parts
       num: 3.1.2
@@ -319,6 +320,8 @@ There is no [text inheriting its programmatic language][] from this `div` elemen
 {% include_relative glossary/valid-language-tag.md %}
 {% include_relative glossary/visible.md %}
 {% include_relative glossary/whitespace.md %}
+
+{% include implementations/de46e4.md %}
 
 ## Acknowledgements
 

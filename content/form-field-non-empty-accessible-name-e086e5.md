@@ -6,7 +6,7 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/form-field-non-empty-accessible-name-e086e5.md
-proposed: false
+proposed: true
 rule_meta:
   id: e086e5
   name: "Form field has non-empty accessible name"

@@ -6,6 +6,7 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/menuitem-non-empty-name-m6b1q3.md
+proposed: true
 rule_meta:
   id: m6b1q3
   name: "Menuitem has non-empty accessible name"
@@ -25,7 +26,7 @@ rule_meta:
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
     - handle: DOM Tree
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
-  last_modified: July 15th, 2021
+  last_modified: July 16th, 2021
   scs_tested:
     - handle: Name, Role, Value
       num: 4.1.2
@@ -180,6 +181,8 @@ This element with the `menuitem` role does not need an [accessible name][] becau
 {% include_relative glossary/outcome.md %}
 {% include_relative glossary/semantic-role.md %}
 {% include_relative glossary/wai-aria-specifications.md %}
+
+{% include implementations/m6b1q3.md %}
 
 ## Acknowledgements
 

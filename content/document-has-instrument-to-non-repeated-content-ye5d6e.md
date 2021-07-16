@@ -6,6 +6,7 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/document-has-instrument-to-non-repeated-content-ye5d6e.md
+proposed: true
 rule_meta:
   id: ye5d6e
   name: "Document has an instrument to move focus to non-repeated content"
@@ -37,7 +38,7 @@ rule_meta:
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
     - handle: Language
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-text
-  last_modified: July 15th, 2021
+  last_modified: July 16th, 2021
 ---
 
 ## Applicability
@@ -132,7 +133,7 @@ In this [document][], the third `a` element is an [instrument][] to move the foc
 				Unity succeeds division and division follows unity. One is bound to be replaced by the other after a long span
 				of time.
 			</p>
-			<a href="/test-assets/bypass-blocks-cf77f2/chapter1.html">Read Chapter 2</a>
+			<a href="/test-assets/bypass-blocks-cf77f2/chapter2.html">Read Chapter 2</a>
 		</div>
 	</body>
 </html>
@@ -162,7 +163,7 @@ In this [document][], the second `a` element (inside the second `aside` element)
 				Unity succeeds division and division follows unity. One is bound to be replaced by the other after a long span
 				of time.
 			</p>
-			<a href="/test-assets/bypass-blocks-cf77f2/chapter1.html">Read Chapter 2</a>
+			<a href="/test-assets/bypass-blocks-cf77f2/chapter2.html">Read Chapter 2</a>
 		</div>
 	</body>
 </html>
@@ -192,7 +193,7 @@ In this [document][], the first `a` element is an [instrument][] to move the foc
 				Unity succeeds division and division follows unity. One is bound to be replaced by the other after a long span
 				of time.
 			</p>
-			<a href="/test-assets/bypass-blocks-cf77f2/chapter1.html">Read Chapter 2</a>
+			<a href="/test-assets/bypass-blocks-cf77f2/chapter2.html">Read Chapter 2</a>
 		</div>
 	</body>
 </html>
@@ -220,7 +221,7 @@ In this [document][], the first `div` element is an [instrument][] to move the f
 				Unity succeeds division and division follows unity. One is bound to be replaced by the other after a long span
 				of time.
 			</p>
-			<a href="/test-assets/bypass-blocks-cf77f2/chapter1.html">Read Chapter 2</a>
+			<a href="/test-assets/bypass-blocks-cf77f2/chapter2.html">Read Chapter 2</a>
 		</div>
 	</body>
 </html>
@@ -247,7 +248,7 @@ In this [document][], the first `a` element is an [instrument][] to move the foc
 				Unity succeeds division and division follows unity. One is bound to be replaced by the other after a long span
 				of time.
 			</p>
-			<a href="/test-assets/bypass-blocks-cf77f2/chapter1.html">Read Chapter 2</a>
+			<a href="/test-assets/bypass-blocks-cf77f2/chapter2.html">Read Chapter 2</a>
 		</div>
 	</body>
 </html>
@@ -275,7 +276,7 @@ In this [document][], the first `a` element is an [instrument][] to move the foc
 				Unity succeeds division and division follows unity. One is bound to be replaced by the other after a long span
 				of time.
 			</p>
-			<a href="/test-assets/bypass-blocks-cf77f2/chapter1.html">Read Chapter 2</a>
+			<a href="/test-assets/bypass-blocks-cf77f2/chapter2.html">Read Chapter 2</a>
 		</div>
 	</body>
 </html>
@@ -304,7 +305,7 @@ In this [document][], the first `a` element is an [instrument][] to move the foc
 				Unity succeeds division and division follows unity. One is bound to be replaced by the other after a long span
 				of time.
 			</p>
-			<a href="/test-assets/bypass-blocks-cf77f2/chapter1.html">Read Chapter 2</a>
+			<a href="/test-assets/bypass-blocks-cf77f2/chapter2.html">Read Chapter 2</a>
 		</div>
 	</body>
 </html>
@@ -322,7 +323,7 @@ This [document][] has no [instrument][] to skip to the non-repeated content.
 		<title>The Three Kingdoms, Chapter 1</title>
 	</head>
 	<body>
-		<a href="/test-assets/bypass-blocks-cf77f2/chapter1.html">Read Chapter 2</a>
+		<a href="/test-assets/bypass-blocks-cf77f2/chapter2.html">Read Chapter 2</a>
 
 		<aside id="about-book">
 			<p>The Romance of the Three Kingdoms is a 14th century historical novel.</p>
@@ -349,7 +350,7 @@ In this [document][], the link to skip to the non-repeated content does not refe
 	</head>
 	<body>
 		<a href="#invalid-id">Skip to main content</a>
-		<a href="/test-assets/bypass-blocks-cf77f2/chapter1.html">Read Chapter 2</a>
+		<a href="/test-assets/bypass-blocks-cf77f2/chapter2.html">Read Chapter 2</a>
 
 		<aside id="about-book">
 			<p>The Romance of the Three Kingdoms is a 14th century historical novel.</p>
@@ -376,7 +377,7 @@ In this [document][], the skip link does not move focus [just before][] some [no
 	</head>
 	<body>
 		<a href="#before-main">Skip to main content</a>
-		<a href="/test-assets/bypass-blocks-cf77f2/chapter1.html">Read Chapter 2</a>
+		<a href="/test-assets/bypass-blocks-cf77f2/chapter2.html">Read Chapter 2</a>
 
 		<aside id="about-book">
 			<p id="before-main">The Romance of the Three Kingdoms is a 14th century historical novel.</p>
@@ -424,6 +425,8 @@ This [document][] is not an [HTML web page][].
 {% include_relative glossary/visible.md %}
 {% include_relative glossary/wai-aria-specifications.md %}
 {% include_relative glossary/web-page-html.md %}
+
+{% include implementations/ye5d6e.md %}
 
 ## Acknowledgements
 

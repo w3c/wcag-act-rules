@@ -6,6 +6,7 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/table-headers-attribute-refer-to-data-cells-a25f45.md
+proposed: true
 rule_meta:
   id: a25f45
   name: "`headers` attribute specified on a cell refers to cells in the same `table` element"
@@ -28,7 +29,7 @@ rule_meta:
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
     - handle: CSS Styling
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
-  last_modified: July 15th, 2021
+  last_modified: July 16th, 2021
   scs_tested:
     - handle: Info and Relationships
       num: 1.3.1
@@ -389,6 +390,8 @@ The `table` is not [included in the accessibility tree][].
 {% include_relative glossary/included-in-the-accessibility-tree.md %}
 {% include_relative glossary/outcome.md %}
 {% include_relative glossary/visible.md %}
+
+{% include implementations/a25f45.md %}
 
 ## Acknowledgements
 

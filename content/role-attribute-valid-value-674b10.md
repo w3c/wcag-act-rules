@@ -6,6 +6,7 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/role-attribute-valid-value-674b10.md
+proposed: true
 rule_meta:
   id: 674b10
   name: "`role` attribute has valid value"
@@ -33,7 +34,7 @@ rule_meta:
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
     - handle: CSS Styling
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
-  last_modified: July 15th, 2021
+  last_modified: July 16th, 2021
   scs_tested:
     - handle: Info and Relationships
       num: 1.3.1
@@ -45,7 +46,7 @@ rule_meta:
 This rule applies to any `role` attribute for which all the following are true:
 
 - the attribute has a value that is neither empty ("") nor only [ASCII whitespace][]; and
-- the attribute is specified on an HTML or SVG element whose [hidden state][] is "false".
+- the attribute is specified on an [HTML or SVG element][] whose [hidden state][] is "false".
 
 ## Expectation
 
@@ -192,10 +193,13 @@ This `role` attribute is specified on an element whose [hidden state][] is "true
 {% include_relative glossary/implicit-role.md %}
 {% include_relative glossary/included-in-the-accessibility-tree.md %}
 {% include_relative glossary/marked-as-decorative.md %}
+{% include_relative glossary/namespaced-element.md %}
 {% include_relative glossary/outcome.md %}
 {% include_relative glossary/semantic-role.md %}
 {% include_relative glossary/wai-aria-specifications.md %}
 {% include_relative glossary/whitespace.md %}
+
+{% include implementations/674b10.md %}
 
 ## Acknowledgements
 
@@ -219,3 +223,4 @@ This is the first version of this ACT rule.
 [space separated tokens]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#space-separated-tokens 'Definition of space separated tokens'
 [wai-aria role]: https://www.w3.org/TR/wai-aria-1.1/#role_definitions 'List of WAI-ARIA roles'
 [wai-aria specifications]: #wai-aria-specifications 'Definition of WAI-ARIA Specifications'
+[html or svg element]: #namespaced-element

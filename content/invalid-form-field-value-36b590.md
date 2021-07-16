@@ -6,6 +6,7 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/invalid-form-field-value-36b590.md
+proposed: true
 rule_meta:
   id: 36b590
   name: "Error message describes invalid form field value"
@@ -25,7 +26,7 @@ rule_meta:
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
     - handle: Language
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-text
-  last_modified: July 15th, 2021
+  last_modified: July 16th, 2021
   scs_tested:
     - handle: Error Identification
       num: 3.3.1
@@ -255,6 +256,8 @@ There are no elements with any of the required [semantic roles][semantic role].
 {% include_relative glossary/semantic-role.md %}
 {% include_relative glossary/visible.md %}
 {% include_relative glossary/wai-aria-specifications.md %}
+
+{% include implementations/36b590.md %}
 
 ## Acknowledgements
 

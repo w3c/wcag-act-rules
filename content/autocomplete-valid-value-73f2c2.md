@@ -6,6 +6,7 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/autocomplete-valid-value-73f2c2.md
+proposed: true
 rule_meta:
   id: 73f2c2
   name: "`autocomplete` attribute has valid value"
@@ -25,7 +26,7 @@ rule_meta:
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
     - handle: CSS Styling
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
-  last_modified: July 15th, 2021
+  last_modified: July 16th, 2021
   scs_tested:
     - handle: Identify Input Purpose
       num: 1.3.5
@@ -192,14 +193,6 @@ This `autocomplete` [attribute value][] is comma separated instead of space usin
 
 #### Failed Example 5
 
-This `autocomplete` [attribute value][] is not appropriate for the field. The form field's implied purpose is to input a quantity (a number) which cannot be a e-mail.
-
-```html
-<label>Quantity<input type="number" autocomplete="email"/></label>
-```
-
-#### Failed Example 6
-
 The `autocomplete` attribute value is on an `input` element that does not have a semantic role that is a widget role, but still participates in [sequential focus navigation][] because of the `tabindex` attribute.
 
 ```html
@@ -280,6 +273,8 @@ This `autocomplete` attribute is inapplicable because it has the `off` value.
 {% include_relative glossary/semantic-role.md %}
 {% include_relative glossary/visible.md %}
 {% include_relative glossary/wai-aria-specifications.md %}
+
+{% include implementations/73f2c2.md %}
 
 ## Acknowledgements
 

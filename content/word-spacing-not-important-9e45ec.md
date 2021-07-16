@@ -6,6 +6,7 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/word-spacing-not-important-9e45ec.md
+proposed: true
 rule_meta:
   id: 9e45ec
   name: "Word spacing in `style` attributes is not `!important`"
@@ -23,7 +24,7 @@ rule_meta:
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
     - handle: CSS Styling
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
-  last_modified: July 15th, 2021
+  last_modified: July 16th, 2021
   scs_tested:
     - handle: Text Spacing
       num: 1.4.12
@@ -258,6 +259,8 @@ The `style` attribute of this `p` element does not [declare][declared] the `word
 
 {% include_relative glossary/outcome.md %}
 {% include_relative glossary/visible.md %}
+
+{% include implementations/9e45ec.md %}
 
 ## Acknowledgements
 

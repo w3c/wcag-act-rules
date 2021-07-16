@@ -6,6 +6,7 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/device-motion-disabled-c249d5.md
+proposed: true
 rule_meta:
   id: c249d5
   name: "Device motion based changes to the content can be disabled"
@@ -25,7 +26,7 @@ rule_meta:
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
     - handle: Accessibility tree
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-accessibility
-  last_modified: July 15th, 2021
+  last_modified: July 16th, 2021
   scs_tested:
     - handle: Motion Actuation
       num: 2.5.4
@@ -58,6 +59,8 @@ For each registered [device orientation event][device orientation] or [device mo
 _There are no major accessibility support issues known for this rule._
 
 ## Background
+
+The [instruments][instrument] used to pass this rule (if any), must meet all level A Success Criteria in order to fully satisfy [Success Criterion 2.5.4: Motion Actuation][sc2.5.4]. These extra requirements are left out of this rule, and should be tested separately.
 
 - [Understanding Success Criterion 2.5.4: Motion Actuation][sc2.5.4]
 - [G213: Provide conventional controls and an application setting for motion activated input](https://www.w3.org/WAI/WCAG21/Techniques/general/G213.html)
@@ -232,6 +235,8 @@ This [HTML document][] is not operable by device motion.
 {% include_relative glossary/wai-aria-specifications.md %}
 {% include_relative glossary/web-page-html.md %}
 
+{% include implementations/c249d5.md %}
+
 ## Acknowledgements
 
 This rule was written in the [ACT Rules community group](https://w3.org/community/act-r/), 
@@ -258,6 +263,7 @@ This is the first version of this ACT rule.
 [event listener list]: https://dom.spec.whatwg.org/#eventtarget-event-listener-list
 [firing]: https://dom.spec.whatwg.org/#concept-event-fire 'Definition of event firing'
 [html document]: https://dom.spec.whatwg.org/#concept-document
+[instrument]: #instrument-to-achieve-an-objective 'Definition of Instrument to Achieve an Objective'
 [sc2.5.4]: https://www.w3.org/WAI/WCAG21/Understanding/motion-actuation.html
 [set of clearly labeled instruments]: #set-of-clearly-labeled-instruments 'Definition of set of clearly labeled instruments'
 [web page]: #web-page-html 'Definition of web page'

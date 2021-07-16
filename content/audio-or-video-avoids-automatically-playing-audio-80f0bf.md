@@ -6,6 +6,7 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/audio-or-video-avoids-automatically-playing-audio-80f0bf.md
+proposed: true
 rule_meta:
   id: 80f0bf
   name: "`audio` or `video` avoids automatically playing audio"
@@ -42,7 +43,7 @@ rule_meta:
   input_aspects:
     - 4c31df
     - aaa1bf
-  last_modified: July 15th, 2021
+  last_modified: July 16th, 2021
   scs_tested:
     - handle: Audio Control
       num: 1.4.2
@@ -76,6 +77,8 @@ For each test target, the [outcome](#outcome) of at least one of the following r
 The native `video` and `audio` controls in several browser and assistive technology combinations are not keyboard accessible and the `video` or `audio` element itself may not be announced. Authors are recommended to use custom controls for keyboard navigation and cross browser accessibility support in general.
 
 ## Background
+
+The [instruments][instrument] used to pass this rule (if any), must meet all level A Success Criteria in order to fully satisfy [Success Criterion 1.4.2 Audio Control][sc142]. These extra requirements are left out of this rule, and should be tested separately.
 
 - [Understanding Success Criterion 1.4.2: Audio Control](https://www.w3.org/WAI/WCAG21/Understanding/audio-control.html)
 - [Accessible Multimedia](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/Multimedia)
@@ -197,6 +200,8 @@ This `audio` element does not play automatically.
 {% include_relative glossary/instrument-to-achieve-an-objective.md %}
 {% include_relative glossary/outcome.md %}
 {% include_relative glossary/web-page-html.md %}
+
+{% include implementations/80f0bf.md %}
 
 ## Acknowledgements
 

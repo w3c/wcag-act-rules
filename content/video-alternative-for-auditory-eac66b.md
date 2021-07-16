@@ -6,6 +6,7 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/video-alternative-for-auditory-eac66b.md
+proposed: true
 rule_meta:
   id: eac66b
   name: "`video` element auditory content has accessible alternative"
@@ -36,7 +37,7 @@ rule_meta:
   input_aspects:
     - ab4d13
     - f51b46
-  last_modified: July 15th, 2021
+  last_modified: July 16th, 2021
   scs_tested:
     - handle: Captions (Prerecorded)
       num: 1.2.2
@@ -155,6 +156,8 @@ A video element without audio.
 {% include_relative glossary/non-streaming-media-element.md %}
 {% include_relative glossary/outcome.md %}
 {% include_relative glossary/visible.md %}
+
+{% include implementations/eac66b.md %}
 
 ## Acknowledgements
 

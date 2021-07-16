@@ -6,6 +6,7 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/image-not-in-acc-tree-is-decorative-e88epe.md
+proposed: true
 rule_meta:
   id: e88epe
   name: "Image not in the accessibility tree is decorative"
@@ -25,7 +26,7 @@ rule_meta:
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-accessibility
     - handle: CSS Styling
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
-  last_modified: July 15th, 2021
+  last_modified: July 16th, 2021
   scs_tested:
     - handle: Non-text Content
       num: 1.1.1
@@ -319,6 +320,8 @@ This `img` element has an `src` attribute which will cause the [image request st
 {% include_relative glossary/semantic-role.md %}
 {% include_relative glossary/visible.md %}
 {% include_relative glossary/wai-aria-specifications.md %}
+
+{% include implementations/e88epe.md %}
 
 ## Acknowledgements
 

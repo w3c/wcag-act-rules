@@ -6,6 +6,7 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/meta-refresh-no-delay-bc659a.md
+proposed: true
 rule_meta:
   id: bc659a
   name: "`meta` element has no refresh delay"
@@ -41,7 +42,7 @@ rule_meta:
   input_aspects:
     - handle: DOM Tree
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
-  last_modified: July 15th, 2021
+  last_modified: July 16th, 2021
   scs_tested:
     - handle: Timing Adjustable
       num: 2.2.1
@@ -250,6 +251,8 @@ No `http-equiv="refresh"` attribute.
 
 {% include_relative glossary/attribute-value.md %}
 {% include_relative glossary/outcome.md %}
+
+{% include implementations/bc659a.md %}
 
 ## Acknowledgements
 

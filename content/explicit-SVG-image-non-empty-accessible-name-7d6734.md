@@ -6,7 +6,7 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/explicit-SVG-image-non-empty-accessible-name-7d6734.md
-proposed: false
+proposed: true
 rule_meta:
   id: 7d6734
   name: "`svg` element with explicit role has non-empty accessible name"

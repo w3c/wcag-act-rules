@@ -6,6 +6,7 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/presentational-children-no-focusable-content-307n5z.md
+proposed: true
 rule_meta:
   id: 307n5z
   name: "Element with presentational children has no focusable content"
@@ -28,7 +29,7 @@ rule_meta:
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
     - handle: CSS Styling
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
-  last_modified: July 15th, 2021
+  last_modified: July 16th, 2021
   scs_tested:
     - handle: Info and Relationships
       num: 1.3.1
@@ -40,7 +41,7 @@ rule_meta:
 
 ## Applicability
 
-This rule applies to any HTML or SVG element with a [semantic role][] that defines its [children][child] to be [presentational children][].
+This rule applies to any [HTML or SVG element][] with a [semantic role][] that defines its [children][child] to be [presentational children][].
 
 ## Expectation
 
@@ -158,9 +159,12 @@ This element has a `link` role which does not have [presentational children][].
 {% include_relative glossary/implicit-role.md %}
 {% include_relative glossary/included-in-the-accessibility-tree.md %}
 {% include_relative glossary/marked-as-decorative.md %}
+{% include_relative glossary/namespaced-element.md %}
 {% include_relative glossary/outcome.md %}
 {% include_relative glossary/semantic-role.md %}
 {% include_relative glossary/wai-aria-specifications.md %}
+
+{% include implementations/307n5z.md %}
 
 ## Acknowledgements
 
@@ -184,3 +188,4 @@ This is the first version of this ACT rule.
 [descendants]: https://dom.spec.whatwg.org/#concept-tree-descendant 'Definition Descendant, as on 2020-10-21'
 [sequential focus navigation]: https://html.spec.whatwg.org/#sequential-focus-navigation 'HTML sequential focus navigation, 2020/10/21'
 [flat tree]: https://drafts.csswg.org/css-scoping/#flat-tree 'CSS Scoping definition of Flat tree, working draft'
+[html or svg element]: #namespaced-element

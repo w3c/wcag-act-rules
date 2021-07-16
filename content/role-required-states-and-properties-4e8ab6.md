@@ -6,6 +6,7 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/role-required-states-and-properties-4e8ab6.md
+proposed: true
 rule_meta:
   id: 4e8ab6
   name: "Element with `role` attribute has required states and properties"
@@ -26,7 +27,7 @@ rule_meta:
   input_aspects:
     - handle: DOM Tree
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
-  last_modified: July 15th, 2021
+  last_modified: July 16th, 2021
   scs_tested:
     - handle: Name, Role, Value
       num: 4.1.2
@@ -35,7 +36,7 @@ rule_meta:
 
 ## Applicability
 
-This rule applies to any HTML or SVG element that is [included in the accessibility tree][] and has an [explicit semantic role][], except if the element has an [implicit semantic role][] that is identical to the [explicit semantic role][].
+This rule applies to any [HTML or SVG element][] that is [included in the accessibility tree][] and has an [explicit semantic role][], except if the element has an [implicit semantic role][] that is identical to the [explicit semantic role][].
 
 ## Expectation
 
@@ -144,9 +145,12 @@ This `combobox` is not [included in the accessibility tree][] due to its styling
 {% include_relative glossary/implicit-role.md %}
 {% include_relative glossary/included-in-the-accessibility-tree.md %}
 {% include_relative glossary/marked-as-decorative.md %}
+{% include_relative glossary/namespaced-element.md %}
 {% include_relative glossary/outcome.md %}
 {% include_relative glossary/semantic-role.md %}
 {% include_relative glossary/wai-aria-specifications.md %}
+
+{% include implementations/4e8ab6.md %}
 
 ## Acknowledgements
 
@@ -167,3 +171,4 @@ This is the first version of this ACT rule.
 [wai-aria required states and properties]: https://www.w3.org/TR/wai-aria-1.1/#requiredState
 [wai-aria implicit value for role]: https://www.w3.org/TR/wai-aria-1.1/#implictValueForRole
 [wai-aria 1.2]: https://www.w3.org/TR/wai-aria-1.2/
+[html or svg element]: #namespaced-element

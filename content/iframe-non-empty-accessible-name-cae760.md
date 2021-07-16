@@ -6,6 +6,7 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/iframe-non-empty-accessible-name-cae760.md
+proposed: true
 rule_meta:
   id: cae760
   name: "`iframe` element has non-empty accessible name"
@@ -23,7 +24,7 @@ rule_meta:
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
     - handle: CSS Styling
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
-  last_modified: July 15th, 2021
+  last_modified: July 16th, 2021
   scs_tested:
     - handle: Name, Role, Value
       num: 4.1.2
@@ -159,6 +160,8 @@ This `iframe` element has a negative `tabindex` and therefore is not included in
 {% include_relative glossary/outcome.md %}
 {% include_relative glossary/wai-aria-specifications.md %}
 {% include_relative glossary/whitespace.md %}
+
+{% include implementations/cae760.md %}
 
 ## Acknowledgements
 

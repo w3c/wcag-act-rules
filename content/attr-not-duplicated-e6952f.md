@@ -6,6 +6,7 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/attr-not-duplicated-e6952f.md
+proposed: true
 rule_meta:
   id: e6952f
   name: "Attribute is not duplicated"
@@ -26,7 +27,7 @@ rule_meta:
   input_aspects:
     - handle: Source code
       url: 
-  last_modified: July 15th, 2021
+  last_modified: July 16th, 2021
   scs_tested:
     - handle: Parsing
       num: 4.1.1
@@ -123,7 +124,7 @@ This `input` element contains a duplicate `disabled` attribute.
 
 #### Failed Example 3
 
-This `line` element contains duplicate `x1` and duplicate `y1 ` attributes.
+This `line` element contains duplicate `x1` and duplicate `y1` attributes.
 
 ```html
 <svg>
@@ -157,6 +158,8 @@ var foo = '<img src="/test-assets/shared/w3c-logo.png" alt="W3C logo" />'
 ## Glossary
 
 {% include_relative glossary/outcome.md %}
+
+{% include implementations/e6952f.md %}
 
 ## Acknowledgements
 

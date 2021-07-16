@@ -6,6 +6,7 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/object-has-acessible-name-8fc3b6.md
+proposed: true
 rule_meta:
   id: 8fc3b6
   name: "Object element rendering non-text content has non-empty accessible name"
@@ -25,7 +26,7 @@ rule_meta:
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
     - handle: Accessibility Tree
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-accessibility
-  last_modified: July 15th, 2021
+  last_modified: July 16th, 2021
   scs_tested:
     - handle: Non-text Content
       num: 1.1.1
@@ -195,6 +196,8 @@ There is no `object` element.
 {% include_relative glossary/marked-as-decorative.md %}
 {% include_relative glossary/outcome.md %}
 {% include_relative glossary/wai-aria-specifications.md %}
+
+{% include implementations/8fc3b6.md %}
 
 ## Acknowledgements
 

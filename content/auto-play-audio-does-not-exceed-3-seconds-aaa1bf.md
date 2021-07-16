@@ -6,6 +6,7 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/auto-play-audio-does-not-exceed-3-seconds-aaa1bf.md
+proposed: true
 rule_meta:
   id: aaa1bf
   name: "`Audio` or `video` that plays automatically has no audio that lasts more than 3 seconds"
@@ -27,7 +28,7 @@ rule_meta:
       url: 
     - handle: Visual output
       url: 
-  last_modified: July 15th, 2021
+  last_modified: July 16th, 2021
 ---
 
 ## Applicability
@@ -140,6 +141,8 @@ This `audio` element does not autoplay.
 
 {% include_relative glossary/attribute-value.md %}
 {% include_relative glossary/outcome.md %}
+
+{% include implementations/aaa1bf.md %}
 
 ## Acknowledgements
 

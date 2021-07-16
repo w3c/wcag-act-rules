@@ -6,6 +6,7 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/css-restrict-orientation-b33eff.md
+proposed: true
 rule_meta:
   id: b33eff
   name: "Orientation of the page is not restricted using CSS transform property"
@@ -23,7 +24,7 @@ rule_meta:
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
     - handle: CSS Styling
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
-  last_modified: July 15th, 2021
+  last_modified: July 16th, 2021
   scs_tested:
     - handle: Orientation
       num: 1.3.4
@@ -309,6 +310,8 @@ A page where CSS [transform](https://www.w3.org/TR/css-transforms/#propdef-trans
 
 {% include_relative glossary/outcome.md %}
 {% include_relative glossary/visible.md %}
+
+{% include implementations/b33eff.md %}
 
 ## Acknowledgements
 

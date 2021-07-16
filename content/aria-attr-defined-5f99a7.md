@@ -6,7 +6,7 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/aria-attr-defined-5f99a7.md
-proposed: false
+proposed: true
 rule_meta:
   id: 5f99a7
   name: "`aria-*` attribute is defined in WAI-ARIA"

@@ -6,6 +6,7 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/links-with-identical-names-and-context-serve-equivalent-purpose-fd3a94.md
+proposed: true
 rule_meta:
   id: fd3a94
   name: "Links with identical accessible names and context serve equivalent purpose"
@@ -30,7 +31,7 @@ rule_meta:
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
     - handle: Language
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-text
-  last_modified: July 15th, 2021
+  last_modified: July 16th, 2021
   scs_tested:
     - handle: Link Purpose (In Context)
       num: 2.4.4
@@ -42,7 +43,7 @@ rule_meta:
 
 ## Applicability
 
-This rule applies to any set of two or more HTML or SVG elements which
+This rule applies to any set of two or more [HTML or SVG elements][] which
 
 - have the [semantic role][] of `link`, or a role that inherits from the `link` role; and
 - are in the same [web page (HTML)][]; and
@@ -87,8 +88,7 @@ These two HTML `a` elements have the same [accessible name][] and [context][prog
 ```html
 <html lang="en">
 	<p>
-		Learn more (<a href="/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/index.html"
-			>About us</a
+		Learn more (<a href="/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/index.html">About us</a
 		>) and get in touch (
 		<a href="/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/index.html">About us</a>)
 	</p>
@@ -102,8 +102,7 @@ These two HTML `a` elements have the same [accessible name][] and [context][prog
 ```html
 <html lang="en">
 	<p>
-		Learn more (<a href="/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/index.html"
-			>About us</a
+		Learn more (<a href="/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/index.html">About us</a
 		>) and get in touch (<a href="/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/redirect.html"
 			>About us</a
 		>)
@@ -118,8 +117,7 @@ These two HTML `a` elements have the same [accessible name][] and [context][prog
 ```html
 <html lang="en">
 	<p>
-		Learn more (<a href="/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/index.html"
-			>About us</a
+		Learn more (<a href="/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/index.html">About us</a
 		>) and get in touch (<a
 			href="/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/index-copy.html"
 			>About us</a
@@ -389,12 +387,15 @@ These two `span` elements do not have a [semantic role][] of link.
 {% include_relative glossary/included-in-the-accessibility-tree.md %}
 {% include_relative glossary/marked-as-decorative.md %}
 {% include_relative glossary/matching-characters.md %}
+{% include_relative glossary/namespaced-element.md %}
 {% include_relative glossary/outcome.md %}
 {% include_relative glossary/programmatically-determined-link-context.md %}
 {% include_relative glossary/same-resource.md %}
 {% include_relative glossary/semantic-role.md %}
 {% include_relative glossary/wai-aria-specifications.md %}
 {% include_relative glossary/web-page-html.md %}
+
+{% include implementations/fd3a94.md %}
 
 ## Acknowledgements
 
@@ -425,3 +426,4 @@ This is the first version of this ACT rule.
 [semantic role]: #semantic-role 'Definition of semantic role'
 [shadow tree]: https://dom.spec.whatwg.org/#shadow-tree 'Definition of shadow tree'
 [web page (html)]: #web-page-html 'Definition of web page (HTML)'
+[html or svg elements]: #namespaced-element

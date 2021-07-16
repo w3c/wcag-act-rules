@@ -6,7 +6,7 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/link-non-empty-accessible-name-c487ae.md
-proposed: false
+proposed: true
 rule_meta:
   id: c487ae
   name: "Link has non-empty accessible name"

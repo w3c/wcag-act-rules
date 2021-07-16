@@ -6,6 +6,7 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/heading-descriptive-b49b2e.md
+proposed: true
 rule_meta:
   id: b49b2e
   name: "Heading is descriptive"
@@ -27,7 +28,7 @@ rule_meta:
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
     - handle: Language
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-text
-  last_modified: July 15th, 2021
+  last_modified: July 16th, 2021
   scs_tested:
     - handle: Headings and Labels
       num: 2.4.6
@@ -286,6 +287,8 @@ Empty heading marked up with `role="heading"` is not [visible][].
 {% include_relative glossary/semantic-role.md %}
 {% include_relative glossary/visible.md %}
 {% include_relative glossary/wai-aria-specifications.md %}
+
+{% include implementations/b49b2e.md %}
 
 ## Acknowledgements
 

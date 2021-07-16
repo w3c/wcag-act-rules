@@ -6,6 +6,7 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/video-only-transcript-ee13b5.md
+proposed: true
 rule_meta:
   id: ee13b5
   name: "`video` element visual-only content has transcript"
@@ -29,7 +30,7 @@ rule_meta:
       url: 
     - handle: Language
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-text
-  last_modified: July 15th, 2021
+  last_modified: July 16th, 2021
 ---
 
 ## Applicability
@@ -190,6 +191,8 @@ This `video` element is not [visible][].
 {% include_relative glossary/non-streaming-media-element.md %}
 {% include_relative glossary/outcome.md %}
 {% include_relative glossary/visible.md %}
+
+{% include implementations/ee13b5.md %}
 
 ## Acknowledgements
 

@@ -6,6 +6,7 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/form-field-label-descriptive-cc0f0a.md
+proposed: true
 rule_meta:
   id: cc0f0a
   name: "Form field label is descriptive"
@@ -32,7 +33,7 @@ rule_meta:
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
     - handle: Language
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-text
-  last_modified: July 15th, 2021
+  last_modified: July 16th, 2021
   scs_tested:
     - handle: Headings and Labels
       num: 2.4.6
@@ -290,6 +291,8 @@ The `span` element is not a [programmatic label][] of any element.
 {% include_relative glossary/visible.md %}
 {% include_relative glossary/visual-context.md %}
 {% include_relative glossary/wai-aria-specifications.md %}
+
+{% include implementations/cc0f0a.md %}
 
 ## Acknowledgements
 

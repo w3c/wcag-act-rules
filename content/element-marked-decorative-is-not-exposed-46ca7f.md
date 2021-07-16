@@ -6,6 +6,7 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/element-marked-decorative-is-not-exposed-46ca7f.md
+proposed: true
 rule_meta:
   id: 46ca7f
   name: "Element marked as decorative is not exposed"
@@ -21,7 +22,7 @@ rule_meta:
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
     - handle: DOM tree
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
-  last_modified: July 15th, 2021
+  last_modified: July 16th, 2021
 ---
 
 ## Applicability
@@ -155,6 +156,8 @@ This `img` element is not [marked as decorative][].
 {% include_relative glossary/outcome.md %}
 {% include_relative glossary/semantic-role.md %}
 {% include_relative glossary/wai-aria-specifications.md %}
+
+{% include implementations/46ca7f.md %}
 
 ## Acknowledgements
 

@@ -6,7 +6,7 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/aria-hidden-no-focusable-content-6cfa84.md
-proposed: false
+proposed: true
 rule_meta:
   id: 6cfa84
   name: "Element with `aria-hidden` has no focusable content"

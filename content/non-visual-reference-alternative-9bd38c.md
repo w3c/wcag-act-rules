@@ -6,6 +6,7 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/non-visual-reference-alternative-9bd38c.md
+proposed: true
 rule_meta:
   id: 9bd38c
   name: "Content has alternative for visual reference"
@@ -37,7 +38,7 @@ rule_meta:
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
     - handle: Language
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-text
-  last_modified: July 15th, 2021
+  last_modified: July 16th, 2021
   scs_tested:
     - handle: Info and Relationships
       num: 1.3.1
@@ -517,6 +518,8 @@ This document contains no [text node][] that is either [visible][] or [included 
 {% include_relative glossary/visible.md %}
 {% include_relative glossary/visible-text-content.md %}
 {% include_relative glossary/visual-reference-words.md %}
+
+{% include implementations/9bd38c.md %}
 
 ## Acknowledgements
 

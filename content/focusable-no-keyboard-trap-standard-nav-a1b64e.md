@@ -6,6 +6,7 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/focusable-no-keyboard-trap-standard-nav-a1b64e.md
+proposed: true
 rule_meta:
   id: a1b64e
   name: "Focusable element has no keyboard trap via standard navigation"
@@ -19,12 +20,12 @@ rule_meta:
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
     - handle: CSS Styling
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
-  last_modified: July 15th, 2021
+  last_modified: July 16th, 2021
 ---
 
 ## Applicability
 
-This rule applies to any HTML or SVG element that is [focusable][].
+This rule applies to any [HTML or SVG element][] that is [focusable][].
 
 **Note:** This rule only applies to HTML and SVG. Thus, it is a partial check for WCAG 2.0 success criterion 2.1.2, which applies to all content.
 
@@ -153,8 +154,11 @@ Hidden element using `visibility:hidden`.
 ## Glossary
 
 {% include_relative glossary/focusable.md %}
+{% include_relative glossary/namespaced-element.md %}
 {% include_relative glossary/outcome.md %}
 {% include_relative glossary/standard-keyboard-navigation.md %}
+
+{% include implementations/a1b64e.md %}
 
 ## Acknowledgements
 
@@ -176,3 +180,4 @@ with the support of the EU-funded [WAI-Tools Project](https://www.w3.org/WAI/abo
 This is the first version of this ACT rule.
 
 [focusable]: #focusable 'Definition of focusable'
+[html or svg element]: #namespaced-element

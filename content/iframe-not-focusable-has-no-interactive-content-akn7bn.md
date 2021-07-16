@@ -6,6 +6,7 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/iframe-not-focusable-has-no-interactive-content-akn7bn.md
+proposed: true
 rule_meta:
   id: akn7bn
   name: "iframe with negative tabindex has no interactive elements"
@@ -28,7 +29,7 @@ rule_meta:
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
     - handle: CSS Styling
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
-  last_modified: July 15th, 2021
+  last_modified: July 16th, 2021
   scs_tested:
     - handle: Keyboard
       num: 2.1.1
@@ -111,6 +112,8 @@ This `iframe` element does not have a `tabindex` [attribute value][] that is a n
 {% include_relative glossary/attribute-value.md %}
 {% include_relative glossary/outcome.md %}
 {% include_relative glossary/visible.md %}
+
+{% include implementations/akn7bn.md %}
 
 ## Acknowledgements
 

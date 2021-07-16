@@ -6,6 +6,7 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/image-accessible-name-descriptive-qt1vmo.md
+proposed: true
 rule_meta:
   id: qt1vmo
   name: "Image accessible name is descriptive"
@@ -37,7 +38,7 @@ rule_meta:
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
     - handle: Language
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-text
-  last_modified: July 15th, 2021
+  last_modified: July 16th, 2021
   scs_tested:
     - handle: Non-text Content
       num: 1.1.1
@@ -295,6 +296,8 @@ This is a `div` element with a background image. Background images must be teste
 {% include_relative glossary/included-in-the-accessibility-tree.md %}
 {% include_relative glossary/outcome.md %}
 {% include_relative glossary/visible.md %}
+
+{% include implementations/qt1vmo.md %}
 
 ## Acknowledgements
 

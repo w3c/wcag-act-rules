@@ -6,6 +6,7 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/links-identical-name-equivalent-purpose-b20e66.md
+proposed: true
 rule_meta:
   id: b20e66
   name: "Links with identical accessible names have equivalent purpose"
@@ -27,7 +28,7 @@ rule_meta:
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
     - handle: Language
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-text
-  last_modified: July 15th, 2021
+  last_modified: July 16th, 2021
   scs_tested:
     - handle: Link Purpose (Link Only)
       num: 2.4.9
@@ -36,7 +37,7 @@ rule_meta:
 
 ## Applicability
 
-This rule applies to any set of any two or more HTML or SVG elements which
+This rule applies to any set of any two or more [HTML or SVG elements][] which
 
 - have the [semantic role][] of `link`, or a role that inherits from the `link` role; and
 - are in the same [web page (HTML)][]; and
@@ -389,11 +390,14 @@ These `span` elements do not have a [semantic role][] of `link`. They are not va
 {% include_relative glossary/included-in-the-accessibility-tree.md %}
 {% include_relative glossary/marked-as-decorative.md %}
 {% include_relative glossary/matching-characters.md %}
+{% include_relative glossary/namespaced-element.md %}
 {% include_relative glossary/outcome.md %}
 {% include_relative glossary/same-resource.md %}
 {% include_relative glossary/semantic-role.md %}
 {% include_relative glossary/wai-aria-specifications.md %}
 {% include_relative glossary/web-page-html.md %}
+
+{% include implementations/b20e66.md %}
 
 ## Acknowledgements
 
@@ -423,3 +427,4 @@ This is the first version of this ACT rule.
 [semantic role]: #semantic-role 'Definition of semantic role'
 [shadow tree]: https://dom.spec.whatwg.org/#shadow-tree 'Definition of shadow tree'
 [web page (html)]: #web-page-html 'Definition of web page (HTML)'
+[html or svg elements]: #namespaced-element
