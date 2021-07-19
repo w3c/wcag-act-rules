@@ -39,9 +39,7 @@ Test Rules are designed to check failures in satisfying WCAG success criteria. T
 
 The reason for this is because WCAG success criteria typically cover several aspects and technologies, while Test Rules only check specific aspects. Checking that content satisfies all aspects of WCAG success criteria typically requires further verification by human testers.
 
-### Note ###
-
-[WCAG 2 Conformance Requirement 1](https://www.w3.org/WAI/WCAG22/Understanding/conformance#cc1) allows for "conforming alternate versions". That means that content may still conform to WCAG 2, even when content fails Test Rules, thus does not satisfy the corresponding success criteria.
+**Note**: [WCAG 2 Conformance Requirement 1](https://www.w3.org/WAI/WCAG22/Understanding/conformance#cc1) allows for "conforming alternate versions". That means that content may still conform to WCAG 2, even when content fails Test Rules.
 
 ## Test Rule Implementations ##
 
