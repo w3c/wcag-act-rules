@@ -21,7 +21,7 @@ The [List of Test Rules for WCAG 2](https://www.w3.org/WAI/standards-guidelines/
 
 [Understanding Conformance](https://www.w3.org/WAI/WCAG22/Understanding/conformance) provides related information, including on [understanding accessibility support](https://www.w3.org/WAI/WCAG22/Understanding/conformance#accessibility-support).
 
-## Test Rules Rules are Informative ##
+## Test Rules are Informative ##
 
 *Test Rules are informative — that means they are not required for determining conformance. The basis for determining conformance to WCAG is the success criteria from the WCAG standard — not the Test Rules.*
 
