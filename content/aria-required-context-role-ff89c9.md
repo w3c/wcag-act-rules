@@ -6,7 +6,7 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/aria-required-context-role-ff89c9.md
-proposed: true
+proposed: false
 rule_meta:
   id: ff89c9
   name: "ARIA required context role"
@@ -26,7 +26,7 @@ rule_meta:
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
     - handle: DOM Tree
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
-  last_modified: July 16th, 2021
+  last_modified: August 9th, 2021
   scs_tested:
     - handle: Info and Relationships
       num: 1.3.1
@@ -74,6 +74,8 @@ Some user agents try to correct missing [required context roles][] or incorrect 
 
 #### Passed Example 1
 
+<a class="example-link" title="Passed Example 1" href="/standards-guidelines/act/rules/testcases/3ae3bc1c993acb6baaad2811cbd6139a8093361c.html">Open in a new tab</a>
+
 These elements with an [explicit role][] of `listitem` are children in the [accessibility tree][] of an element with their [required context role][], `list`, expressed as an [explicit role][].
 
 ```html
@@ -85,6 +87,8 @@ These elements with an [explicit role][] of `listitem` are children in the [acce
 
 #### Passed Example 2
 
+<a class="example-link" title="Passed Example 2" href="/standards-guidelines/act/rules/testcases/44afe364fc9417fd5663599145f670552f507ab0.html">Open in a new tab</a>
+
 These elements with an [explicit role][] of `listitem` are children in the [accessibility tree][] of an element with their [required context role][], `list`, expressed as an [implicit role][] of `ul`. Note that this test case does not satisfy [Success Criterion 4.1.1 Parsing][sc411] because the [`ul` element][ul] does not respect its [content model][].
 
 ```html
@@ -95,6 +99,8 @@ These elements with an [explicit role][] of `listitem` are children in the [acce
 ```
 
 #### Passed Example 3
+
+<a class="example-link" title="Passed Example 3" href="/standards-guidelines/act/rules/testcases/694b790e4f1eae0f22aef2e7c06b646b25db8e1d.html">Open in a new tab</a>
 
 These elements with an [explicit role][] of `listitem` are children in the [accessibility tree][] of an element with their [required context role][] even though they are not its children in DOM. The presentational node is not [included in the accessibility tree][].
 
@@ -109,6 +115,8 @@ These elements with an [explicit role][] of `listitem` are children in the [acce
 
 #### Passed Example 4
 
+<a class="example-link" title="Passed Example 4" href="/standards-guidelines/act/rules/testcases/b81cf2923d30381d48980be59729a5cb0d792059.html">Open in a new tab</a>
+
 These elements with an [explicit role][] of `listitem` are children in the [accessibility tree][] of an element with their [required context role][] even though they are not its DOM descendants. The `aria-owns` attribute is used to alter the accessibility tree and place the target elements in their [required context role](https://www.w3.org/TR/wai-aria-1.1/#scope).
 
 ```html
@@ -118,6 +126,8 @@ These elements with an [explicit role][] of `listitem` are children in the [acce
 ```
 
 #### Passed Example 5
+
+<a class="example-link" title="Passed Example 5" href="/standards-guidelines/act/rules/testcases/c18579dc18aaebf7eeaa4e24e4bc199d77c432bc.html">Open in a new tab</a>
 
 These elements with an [explicit role][] of `listitem` are children in the [accessibility tree][] of an element with their [required context role][] even though they are not its DOM children. The `aria-owns` attribute is used to alter the accessibility tree and place the target elements in their [required context role](https://www.w3.org/TR/wai-aria-1.1/#scope).
 
@@ -131,6 +141,8 @@ These elements with an [explicit role][] of `listitem` are children in the [acce
 ```
 
 #### Passed Example 6
+
+<a class="example-link" title="Passed Example 6" href="/standards-guidelines/act/rules/testcases/1acc47f25d4931c25fe3efbb676af6fd4e2ee57e.html">Open in a new tab</a>
 
 These elements with an [explicit role][] of `listitem` are children in the [accessibility tree][] of an element with their [required context role][] because the [accessibility tree][] mimics the DOM tree across shadow boundaries.
 
@@ -148,6 +160,8 @@ These elements with an [explicit role][] of `listitem` are children in the [acce
 
 #### Failed Example 1
 
+<a class="example-link" title="Failed Example 1" href="/standards-guidelines/act/rules/testcases/cd55d1d52c286ac6b342155dde8fcfa49c82ae4a.html">Open in a new tab</a>
+
 This element with an [explicit role][] of `listitem` is not a child in the [accessibility tree][] of an element with its [required context role][].
 
 ```html
@@ -155,6 +169,8 @@ This element with an [explicit role][] of `listitem` is not a child in the [acce
 ```
 
 #### Failed Example 2
+
+<a class="example-link" title="Failed Example 2" href="/standards-guidelines/act/rules/testcases/2fb70cb7f44a01a2d75f4ef7ca7992cf3fb4fe1d.html">Open in a new tab</a>
 
 These elements with an [explicit role][] of `listitem` are not children in the [accessibility tree][] of an element with their [required context role][], but of an element with the `tabpanel` role.
 
@@ -169,6 +185,8 @@ These elements with an [explicit role][] of `listitem` are not children in the [
 
 #### Failed Example 3
 
+<a class="example-link" title="Failed Example 3" href="/standards-guidelines/act/rules/testcases/c08cb58abaa4cff175bcf30aece284cb32121d99.html">Open in a new tab</a>
+
 These elements with an [explicit role][] of `listitem` are not children in the [accessibility tree][] of an element with their [required context role][]. They are instead children in the [accessibility tree][] of the `div` with an `aria-label` attribute; even though this `div` has no role, it has a global ARIA attribute and is thus [included in the accessibility tree][].
 
 ```html
@@ -181,6 +199,8 @@ These elements with an [explicit role][] of `listitem` are not children in the [
 ```
 
 #### Failed Example 4
+
+<a class="example-link" title="Failed Example 4" href="/standards-guidelines/act/rules/testcases/f8e3dbe601969ab54954447e04ae384eb52d7082.html">Open in a new tab</a>
 
 These elements with an [explicit role][] of `listitem` are not children in the [accessibility tree][] of an element with their [required context role][] because explicit parent-child relation in the [accessibility tree][] (set by `aria-owns`) does not cross shadow boundaries.
 
@@ -200,6 +220,8 @@ These elements with an [explicit role][] of `listitem` are not children in the [
 
 #### Inapplicable Example 1
 
+<a class="example-link" title="Inapplicable Example 1" href="/standards-guidelines/act/rules/testcases/9f86cf6493bf2315ce01cec636014d1c059d6581.html">Open in a new tab</a>
+
 This element with an [explicit role][] of `listitem` is not [included in the accessibility tree][].
 
 ```html
@@ -207,6 +229,8 @@ This element with an [explicit role][] of `listitem` is not [included in the acc
 ```
 
 #### Inapplicable Example 2
+
+<a class="example-link" title="Inapplicable Example 2" href="/standards-guidelines/act/rules/testcases/7ec257f7f32bbe21231743ef1da46943584142c8.html">Open in a new tab</a>
 
 There is no element with an [explicit role][].
 
@@ -218,6 +242,8 @@ There is no element with an [explicit role][].
 
 #### Inapplicable Example 3
 
+<a class="example-link" title="Inapplicable Example 3" href="/standards-guidelines/act/rules/testcases/a582209de4a1d8ed76f54ca2e1f76d1efdbd499e.html">Open in a new tab</a>
+
 This `section` element with an [explicit role][] of `doc-abstract` has a role from the [Digital Publishing WAI-ARIA Module (DPUB ARIA) 1.0][dpub 1.0], not the [WAI-ARIA 1.1 Recommendation][aria 1.1].
 
 ```html
@@ -228,6 +254,8 @@ This `section` element with an [explicit role][] of `doc-abstract` has a role fr
 
 #### Inapplicable Example 4
 
+<a class="example-link" title="Inapplicable Example 4" href="/standards-guidelines/act/rules/testcases/84dd1831c0682a800e6af2fe992fb3d69d4222eb.html">Open in a new tab</a>
+
 There is no element whose role has [required context role][] because the `header` role does not have one.
 
 ```html
@@ -236,6 +264,8 @@ There is no element whose role has [required context role][] because the `header
 ```
 
 #### Inapplicable Example 5
+
+<a class="example-link" title="Inapplicable Example 5" href="/standards-guidelines/act/rules/testcases/48dc663078fb5421332814b72bd0079f90aad09a.html">Open in a new tab</a>
 
 There is no element with an [explicit role][] different from its [implicit role][]. This `li` element has an [explicit role][] of `listitem` which is identical to its [implicit role][].
 
@@ -247,16 +277,92 @@ There is no element with an [explicit role][] different from its [implicit role]
 
 ## Glossary
 
-{% include_relative glossary/explicit-role.md %}
-{% include_relative glossary/focusable.md %}
-{% include_relative glossary/hidden-state.md %}
-{% include_relative glossary/implicit-role.md %}
-{% include_relative glossary/included-in-the-accessibility-tree.md %}
-{% include_relative glossary/marked-as-decorative.md %}
-{% include_relative glossary/namespaced-element.md %}
-{% include_relative glossary/outcome.md %}
-{% include_relative glossary/semantic-role.md %}
-{% include_relative glossary/wai-aria-specifications.md %}
+### Explicit Semantic Role {#explicit-role}
+
+The _explicit semantic role_ of an element is determined by its [role attribute][] (if any).
+
+The [role attribute][] takes a list of tokens. The explicit semantic role is the first valid role in this list. The valid roles are all non-abstract roles from [WAI-ARIA Specifications][]. If the element has no [role attribute][], or if it has one with no valid role, then this element has no explicit semantic role.
+
+Other roles may be added as they become available. Not all roles will be supported in all assistive technologies. Testers are encouraged to adjust which roles are allowed according to the [accessibility support base line][]. For the purposes of executing test cases in all rules, it should be assumed that all roles are supported by assistive technologies so that none of the roles fail due to lack of accessibility support.
+
+### Focusable {#focusable}
+
+Elements that can become the target of keyboard input as described in the [HTML](https://www.w3.org/TR/html) specification of [focusable](https://html.spec.whatwg.org/#focusable-area) and [can be focused](https://html.spec.whatwg.org/#specially-focusable).
+
+### Hidden State {#hidden-state}
+
+An HTML element's _hidden state_ is "true" if at least one of the following is true for itself or any of its [ancestors][] in the [flat tree][]:
+
+- has a `hidden` attribute; or
+- has a [computed][] CSS property `display` of `none`; or
+- has a [computed][] CSS property `visibility` of `hidden`; or
+- has an `aria-hidden` attribute set to `true`
+
+In any other case, the element's _hidden state_ is "false".
+
+### Implicit Semantic Role {#implicit-role}
+
+The _implicit semantic role_ of an element is a pre-defined value given by the host language which depends on the element and its ancestors.
+
+Implicit roles for HTML and SVG, are documented in the [HTML accessibility API mappings (working draft)](https://www.w3.org/TR/html-aam/#html-element-role-mappings) and the [SVG accessibility API mappings (working draft)](https://www.w3.org/TR/svg-aam/#mapping_role_table).
+
+### Included in the accessibility tree {#included-in-the-accessibility-tree}
+
+Elements included in the accessibility tree of platform specific accessibility APIs. Elements in the accessibility tree are exposed to assistive technologies, allowing users to interact with the elements in a way that meet the requirements of the individual user.
+
+The general rules for when elements are included in the accessibility tree are defined in the [core accessibility API mappings](https://www.w3.org/TR/core-aam/). For native markup languages, such as HTML and SVG, additional rules for when elements are included in the accessibility tree can be found in the [HTML accessibility API mappings (working draft)](https://www.w3.org/TR/html-aam/) and the [SVG accessibility API mappings (working draft)](https://www.w3.org/TR/svg-aam/).
+
+For more details, see [examples of included in the accessibility tree][].
+
+**Note:** Users of assistive technologies might still be able to interact with elements that are not included in the accessibility tree. An example of this is a [focusable](#focusable) element with an `aria-hidden` attribute with a value of `true`. Such an element could still be interacted using sequential keyboard navigation regardless of the assistive technologies used, even though the element would not be included in the accessibility tree.
+[examples of included in the accessibility tree]: https://act-rules.github.io/pages/examples/included-in-the-accessibility-tree/
+
+### Marked as decorative {#marked-as-decorative}
+
+An element is _marked as decorative_ if one or more of the following conditions is true:
+
+- it has an [explicit role][] of `none` or `presentation`; or
+- it is an `img` element with an `alt` attribute whose value is the empty string (`alt=""`), and with no [explicit role][].
+
+Elements are marked as decorative as a way to convey the intention of the author that they are [pure decoration][]. It is different from the element actually being [pure decoration][] as authors may make mistakes. It is different from the element being effectively ignored by assistive technologies as rules such as [presentational roles conflict resolution][] may overwrite this intention.
+
+Elements can also be ignored by assistive technologies if their [hidden state][] is true. This is different from marking the element as decorative and does not convey the same intention. Notably, the [hidden state][] of an element may change as users interact with the page (showing and hiding elements) while being marked as decorative should stay the same through all states of the page.
+
+### Namespaced Element {#namespaced-element}
+
+An [element][] with a specific [namespaceURI][] value from [HTML namespaces][]. For example an "SVG element" is any element with the "SVG namespace", which is `http://www.w3.org/2000/svg`.
+
+Namespaced elements are not limited to elements described in a specification. They also include custom elements. Elements such as `a` and `title` have a different namespace depending on where they are used. For example a `title` in an HTML page usually has the HTML namespace. When used in an `svg` element, a `title` element has the SVG namespace instead.
+
+### Outcome {#outcome}
+
+An _outcome_ is a conclusion that comes from evaluating an ACT Rule on a [test subject](https://www.w3.org/TR/act-rules-format/#test-subject) or one of its constituent [test target](https://www.w3.org/TR/act-rules-format/#test-target). An outcome can be one of the three following types:
+
+- **Inapplicable:** No part of the test subject matches the applicability
+- **Passed:** A [test target](https://www.w3.org/TR/act-rules-format/#test-target) meets all expectations
+- **Failed:** A [test target](https://www.w3.org/TR/act-rules-format/#test-target) does not meet all expectations
+
+**Note:** A rule has one `passed` or `failed` outcome for every [test target](https://www.w3.org/TR/act-rules-format/#test-target). When there are no test targets the rule has one `inapplicable` outcome. This means that each [test subject](https://www.w3.org/TR/act-rules-format/#test-subject) will have one or more outcomes.
+
+**Note:** Implementations using the [EARL10-Schema](https://www.w3.org/TR/EARL10-Schema/) can express the outcome with the [outcome property](https://www.w3.org/TR/EARL10-Schema/#outcome). In addition to `passed`, `failed` and `inapplicable`, EARL 1.0 also defined an `incomplete` outcome. While this cannot be the outcome of an ACT Rule when applied in its entirety, it often happens that rules are only partially evaluated. For example, when applicability was automated, but the expectations have to be evaluated manually. Such "interim" results can be expressed with the `incomplete` outcome.
+
+### Semantic Role {#semantic-role}
+
+The _semantic role_ of an element is determined by the first of these cases that applies:
+
+1. **Conflict** If the element is [marked as decorative][], but the element is [included in the accessibility tree][]; or would be [included in the accessibility tree][] when its [hidden state][] is false, then its _semantic role_ is its **[implicit role][]**.
+1. **Explicit** If the element has an [explicit role][], then its _semantic role_ is its [explicit role][].
+1. **Implicit** The _semantic role_ of the element is its [implicit role][].
+
+### WAI-ARIA specifications {#wai-aria-specifications}
+
+The _WAI ARIA Specifications_ group both the WAI ARIA W3C Recommendation and ARIA modules, namely:
+
+- [Accessible Rich Internet Applications (WAI-ARIA) 1.1](https://www.w3.org/TR/wai-aria-1.1/)
+- [WAI-ARIA Graphics Module 1.0](https://www.w3.org/TR/graphics-aria-1.0/)
+- [Digital Publishing WAI-ARIA Module 1.0](https://www.w3.org/TR/dpub-aria-1.0/)
+
+**Note:** depending on the type of content being evaluated, part of the specifications might be irrelevant and should be ignored.
 
 {% include implementations/ff89c9.md %}
 
@@ -279,22 +385,36 @@ with the support of the EU-funded [WAI-Tools Project](https://www.w3.org/WAI/abo
 
 This is the first version of this ACT rule.
 
+[accessibility support base line]: https://www.w3.org/TR/WCAG-EM/#step1c 'Definition of accessibility support base line'
 [accessibility tree]: https://www.w3.org/TR/act-rules-aspects/#input-aspects-accessibility 'Definition of accessibility tree'
+[ancestors]: https://dom.spec.whatwg.org/#concept-tree-ancestor 'Definition Ancestor'
 [aria 1.1]: https://www.w3.org/TR/wai-aria-1.1/ 'WAI ARIA 1.1 specifications'
+[computed]: https://www.w3.org/TR/css-cascade/#computed-value 'CSS definition of computed value'
 [content model]: https://html.spec.whatwg.org/multipage/dom.html#concept-element-content-model 'HTML definition of the Content Model'
 [dpub 1.0]: https://www.w3.org/TR/dpub-aria-1.0/ 'Digital Publishing WAI-ARIA Module (DPUB ARIA) 1.0'
 [dpub 1.1]: https://w3c.github.io/dpub-aria/ "Digital Publishing WAI-ARIA Module (DPUB ARIA) 1.1 (Editor's Draft)"
+[element]: https://dom.spec.whatwg.org/#element 'DOM element, 2021/05/31'
 [explicit role]: #explicit-role 'Definition of Explicit Role'
 [explicit semantic role]: #explicit-role 'Definition of Explicit Role'
+[flat tree]: https://drafts.csswg.org/css-scoping/#flat-tree 'Definition of flat tree'
+[focusable]: #focusable 'Definition of Focusable'
+[hidden state]: #hidden-state 'Definition of Hidden State'
+[html namespaces]: https://infra.spec.whatwg.org/#namespaces 'HTML namespace, 2021/05/31'
+[html or svg element]: #namespaced-element
 [implicit role]: #implicit-role 'Definition of Implicit Role'
 [implicit semantic role]: #implicit-role 'Definition of Implicit Role'
 [included in the accessibility tree]: #included-in-the-accessibility-tree 'Definition of Included in the Accessibility Tree'
+[marked as decorative]: #marked-as-decorative 'Definition of Marked as Decorative'
+[namespaceuri]: https://dom.spec.whatwg.org/#dom-element-namespaceuri 'DOM Element namespaceURI, 2021/05/31'
+[presentational roles conflict resolution]: https://www.w3.org/TR/wai-aria-1.1/#conflict_resolution_presentation_none 'Presentational Roles Conflict Resolution'
+[pure decoration]: https://www.w3.org/TR/WCAG21/#dfn-pure-decoration 'WCAG definition of Pure Decoration'
 [required context role]: https://www.w3.org/TR/wai-aria-1.1/#scope 'WAI ARIA definition of Required Context Role'
 [required context roles]: https://www.w3.org/TR/wai-aria-1.1/#scope 'WAI ARIA definition of Required Context Role'
+[role attribute]: https://www.w3.org/TR/role-attribute/ 'Specification of the role attribute'
 [sc131]: https://www.w3.org/TR/WCAG21/#info-and-relationships 'Success Criterion 1.3.1 Info and Relationships'
 [sc411]: https://www.w3.org/TR/WCAG21/#parsing 'Success Criterion 4.1.1 Parsing'
 [semantic role]: #semantic-role 'Definition of Semantic Role'
 [subclass role]: https://www.w3.org/TR/wai-aria-1.1/#subclassroles 'ARIA Specification of Subclass Role'
 [ul]: https://html.spec.whatwg.org/multipage/grouping-content.html#the-ul-element 'HTML specification of the ul element'
 [wai-aria graphics module]: https://www.w3.org/TR/graphics-aria-1.0/ 'WAI-ARIA Graphics Module 1.0'
-[html or svg element]: #namespaced-element
+[wai-aria specifications]: #wai-aria-specifications 'Definition of WAI-ARIA specifications'
