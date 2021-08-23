@@ -19,13 +19,17 @@ github:
 {% include box.html type="start" title="Summary" class="" %}
 {:/}
 
-This page lists [Accessibility Conformance Testing (ACT) Rules](https://www.w3.org/WAI/standards-guidelines/act/) formally published by the W3C Accessibility Guidelines Working Group (AGWG). Further rules are in development and will be published on this page once completed.
+WCAG 2 Test Rules describe how to test conformance to Web Content Accessibility Guideline (WCAG) success criteria. They are primarily for developers of evaluation tools and test methodologies. Guidance for others is in Understanding WCAG and WCAG Techniques. To learn more, see: [WCAG Overview](https://www.w3.org/WAI/standards-guidelines/wcag/), [All WCAG 2 Guidance](https://www.w3.org/WAI/standards-guidelines/wcag/docs/), [About WCAG 2 Test Rules](https://www.w3.org/WAI/standards-guidelines/act/rules/about/).
+
+This page lists [WCAG 2 Test Rules](https://www.w3.org/WAI/standards-guidelines/act/) formally published by the W3C Accessibility Guidelines Working Group (AGWG). Additional Rules are in development and will be published on this page when completed
 
 {::nomarkdown}
 {% include box.html type="end" %}
 {:/}
 
-## List of WCAG ACT Rules
+## List of WCAG 2 Test Rules
+
+These Test Rules have been approved by the Accessibility Guidelines Working Group and is fully implemented in at least one evaluation tools or methodologies.
 
 * [HTML page has non-empty title](/standards-guidelines/act/rules/html-page-non-empty-title-2779a5/)
 * [Image has non-empty accessible name](/standards-guidelines/act/rules/image-non-empty-accessible-name-23a2a8/)
@@ -39,7 +43,9 @@ This page lists [Accessibility Conformance Testing (ACT) Rules](https://www.w3.o
 * [HTML page language is valid](/standards-guidelines/act/rules/html-page-lang-valid-bf051a/)
 * [HTML page lang and xml:lang attributes have matching values](/standards-guidelines/act/rules/html-page-lang-xml-lang-match-5b7ae0/)
 
-## List of Proposed WCAG ACT Rules
+## List of Proposed WCAG 2 Test Rules
+
+The following is a list of proposed test rules. These will be moved to the list of published test rules when they have one or more implementations.
 
 * [`aria-*` attribute is defined in WAI-ARIA](/standards-guidelines/act/rules/aria-attr-defined-5f99a7/)
 * [Element with `aria-hidden` has no focusable content](/standards-guidelines/act/rules/aria-hidden-no-focusable-content-6cfa84/)
