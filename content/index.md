@@ -10,6 +10,7 @@ lang: en
 # - name: Contributor 1
 # - name: Contributor 2
 type_of_guidance: false
+footer: ""
 github:
   repository: w3c/wcag-act-rules
   path: content/about.md
