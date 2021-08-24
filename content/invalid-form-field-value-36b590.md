@@ -6,6 +6,10 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/invalid-form-field-value-36b590.md
+footer: |
+  <p><strong>Date:</strong> Updated August 24th, 2021</p>
+  <p><strong>Authors:</strong> <a href="https://github.com/carlosapaduarte">Carlos Duarte</a>, <a href="https://github.com/joao-vicente">João Vicente</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>.</p>
+  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>.</p>
 proposed: true
 rule_meta:
   id: 36b590
@@ -26,7 +30,7 @@ rule_meta:
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
     - handle: Language
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-text
-  last_modified: July 16th, 2021
+  last_modified: August 24th, 2021
   scs_tested:
     - handle: Error Identification
       num: 3.3.1
@@ -244,45 +248,153 @@ There are no elements with any of the required [semantic roles][semantic role].
 
 ## Glossary
 
-{% include_relative glossary/accessible-name.md %}
-{% include_relative glossary/explicit-role.md %}
-{% include_relative glossary/focusable.md %}
-{% include_relative glossary/form-field-error-indicator.md %}
-{% include_relative glossary/hidden-state.md %}
-{% include_relative glossary/implicit-role.md %}
-{% include_relative glossary/included-in-the-accessibility-tree.md %}
-{% include_relative glossary/marked-as-decorative.md %}
-{% include_relative glossary/outcome.md %}
-{% include_relative glossary/semantic-role.md %}
-{% include_relative glossary/visible.md %}
-{% include_relative glossary/wai-aria-specifications.md %}
+### Accessible Name {#accessible-name}
+
+The _accessible name_ is the programmatically determined name of a user interface element that is [included in the accessibility tree](#included-in-the-accessibility-tree).
+
+The accessible name is calculated using the [accessible name and description computation][].
+
+For native markup languages, such as HTML and SVG, additional information on how to calculate the accessible name can be found in [HTML Accessibility API Mappings 1.0, Accessible Name and Description Computation (working draft)](https://www.w3.org/TR/html-aam/#accessible-name-and-description-computation) and [SVG Accessibility API Mappings, Name and Description (working draft)](https://www.w3.org/TR/svg-aam/#mapping_additional).
+
+For more details, see [examples of accessible name][].
+
+**Note:** As per the [accessible name and description computation][], each element always has an accessible name. When no accessible name is provided, the element will nonetheless be assigned an empty (`""`) one.
+
+**Note:** As per the [accessible name and description computation][], accessible names are [flat string](https://www.w3.org/TR/accname-1.1/#terminology) trimmed of leading and trailing whitespace. Notably, it is not possible for a non-empty accessible name to be composed only of whitespace since these must be trimmed.
+
+### Explicit Semantic Role {#explicit-role}
+
+The _explicit semantic role_ of an element is determined by its [role attribute][] (if any).
+
+The [role attribute][] takes a list of tokens. The explicit semantic role is the first valid role in this list. The valid roles are all non-abstract roles from [WAI-ARIA Specifications][]. If the element has no [role attribute][], or if it has one with no valid role, then this element has no explicit semantic role.
+
+Other roles may be added as they become available. Not all roles will be supported in all assistive technologies. Testers are encouraged to adjust which roles are allowed according to the [accessibility support base line][]. For the purposes of executing test cases in all rules, it should be assumed that all roles are supported by assistive technologies so that none of the roles fail due to lack of accessibility support.
+
+### Focusable {#focusable}
+
+Elements that can become the target of keyboard input as described in the [HTML](https://www.w3.org/TR/html) specification of [focusable](https://html.spec.whatwg.org/#focusable-area) and [can be focused](https://html.spec.whatwg.org/#specially-focusable).
+
+### Form Field Error Indicator {#form-field-error-indicator}
+
+Any [text][], or [non-text content][], or an element that has [presentation][] indicating that an error was identified which appears to be related to some user input into, or the lack of user input into some element. These could be different types of errors, for example:
+
+- missing input, for example a required form field that was left empty
+- incorrect input, such as an invalid password
+- input not in an expected format, expected range, or of an allowed value
+- timing error, such as session timeouts or expiration of an allowed action
+- authentication or authorization errors
+
+**Note**: An error indicator can be a separate element in the page, but it can also be part of a form control. For example a red outline on a form control is often used to indicate an error. Not all red outlines are indicators of an error though. This depends on the presentation of the form control in relation to other elements on the page.
+
+### Hidden State {#hidden-state}
+
+An HTML element's _hidden state_ is "true" if at least one of the following is true for itself or any of its [ancestors][] in the [flat tree][]:
+
+- has a `hidden` attribute; or
+- has a [computed][] CSS property `display` of `none`; or
+- has a [computed][] CSS property `visibility` of `hidden`; or
+- has an `aria-hidden` attribute set to `true`
+
+In any other case, the element's _hidden state_ is "false".
+
+### Implicit Semantic Role {#implicit-role}
+
+The _implicit semantic role_ of an element is a pre-defined value given by the host language which depends on the element and its ancestors.
+
+Implicit roles for HTML and SVG, are documented in the [HTML accessibility API mappings (working draft)](https://www.w3.org/TR/html-aam/#html-element-role-mappings) and the [SVG accessibility API mappings (working draft)](https://www.w3.org/TR/svg-aam/#mapping_role_table).
+
+### Included in the accessibility tree {#included-in-the-accessibility-tree}
+
+Elements included in the accessibility tree of platform specific accessibility APIs. Elements in the accessibility tree are exposed to assistive technologies, allowing users to interact with the elements in a way that meet the requirements of the individual user.
+
+The general rules for when elements are included in the accessibility tree are defined in the [core accessibility API mappings](https://www.w3.org/TR/core-aam/). For native markup languages, such as HTML and SVG, additional rules for when elements are included in the accessibility tree can be found in the [HTML accessibility API mappings (working draft)](https://www.w3.org/TR/html-aam/) and the [SVG accessibility API mappings (working draft)](https://www.w3.org/TR/svg-aam/).
+
+For more details, see [examples of included in the accessibility tree][].
+
+**Note:** Users of assistive technologies might still be able to interact with elements that are not included in the accessibility tree. An example of this is a [focusable](#focusable) element with an `aria-hidden` attribute with a value of `true`. Such an element could still be interacted using sequential keyboard navigation regardless of the assistive technologies used, even though the element would not be included in the accessibility tree.
+[examples of included in the accessibility tree]: https://act-rules.github.io/pages/examples/included-in-the-accessibility-tree/
+
+### Marked as decorative {#marked-as-decorative}
+
+An element is _marked as decorative_ if one or more of the following conditions is true:
+
+- it has an [explicit role][] of `none` or `presentation`; or
+- it is an `img` element with an `alt` attribute whose value is the empty string (`alt=""`), and with no [explicit role][].
+
+Elements are marked as decorative as a way to convey the intention of the author that they are [pure decoration][]. It is different from the element actually being [pure decoration][] as authors may make mistakes. It is different from the element being effectively ignored by assistive technologies as rules such as [presentational roles conflict resolution][] may overwrite this intention.
+
+Elements can also be ignored by assistive technologies if their [hidden state][] is true. This is different from marking the element as decorative and does not convey the same intention. Notably, the [hidden state][] of an element may change as users interact with the page (showing and hiding elements) while being marked as decorative should stay the same through all states of the page.
+
+### Outcome {#outcome}
+
+An _outcome_ is a conclusion that comes from evaluating an ACT Rule on a [test subject](https://www.w3.org/TR/act-rules-format/#test-subject) or one of its constituent [test target](https://www.w3.org/TR/act-rules-format/#test-target). An outcome can be one of the three following types:
+
+- **Inapplicable:** No part of the test subject matches the applicability
+- **Passed:** A [test target](https://www.w3.org/TR/act-rules-format/#test-target) meets all expectations
+- **Failed:** A [test target](https://www.w3.org/TR/act-rules-format/#test-target) does not meet all expectations
+
+**Note:** A rule has one `passed` or `failed` outcome for every [test target](https://www.w3.org/TR/act-rules-format/#test-target). When there are no test targets the rule has one `inapplicable` outcome. This means that each [test subject](https://www.w3.org/TR/act-rules-format/#test-subject) will have one or more outcomes.
+
+**Note:** Implementations using the [EARL10-Schema](https://www.w3.org/TR/EARL10-Schema/) can express the outcome with the [outcome property](https://www.w3.org/TR/EARL10-Schema/#outcome). In addition to `passed`, `failed` and `inapplicable`, EARL 1.0 also defined an `incomplete` outcome. While this cannot be the outcome of an ACT Rule when applied in its entirety, it often happens that rules are only partially evaluated. For example, when applicability was automated, but the expectations have to be evaluated manually. Such "interim" results can be expressed with the `incomplete` outcome.
+
+### Semantic Role {#semantic-role}
+
+The _semantic role_ of an element is determined by the first of these cases that applies:
+
+1. **Conflict** If the element is [marked as decorative][], but the element is [included in the accessibility tree][]; or would be [included in the accessibility tree][] when its [hidden state][] is false, then its _semantic role_ is its **[implicit role][]**.
+1. **Explicit** If the element has an [explicit role][], then its _semantic role_ is its [explicit role][].
+1. **Implicit** The _semantic role_ of the element is its [implicit role][].
+
+### Visible {#visible}
+
+Content perceivable through sight.
+
+Content is considered _visible_ if making it fully transparent would result in a difference in the pixels rendered for any part of the document that is currently within the viewport or can be brought into the viewport via scrolling.
+
+[Content is defined in WCAG](https://www.w3.org/TR/WCAG21/#dfn-content).
+
+For more details, see [examples of visible](https://act-rules.github.io/pages/examples/visible/).
+
+### WAI-ARIA specifications {#wai-aria-specifications}
+
+The _WAI ARIA Specifications_ group both the WAI ARIA W3C Recommendation and ARIA modules, namely:
+
+- [Accessible Rich Internet Applications (WAI-ARIA) 1.1](https://www.w3.org/TR/wai-aria-1.1/)
+- [WAI-ARIA Graphics Module 1.0](https://www.w3.org/TR/graphics-aria-1.0/)
+- [Digital Publishing WAI-ARIA Module 1.0](https://www.w3.org/TR/dpub-aria-1.0/)
+
+**Note:** depending on the type of content being evaluated, part of the specifications might be irrelevant and should be ignored.
 
 {% include implementations/36b590.md %}
-
-## Acknowledgements
-
-This rule was written in the [ACT Rules community group](https://w3.org/community/act-r/), 
-with the support of the EU-funded [WAI-Tools Project](https://www.w3.org/WAI/about/projects/wai-tools/).
-
-### Authors
-
-- [Carlos Duarte](https://github.com/carlosapaduarte)
-- [João Vicente](https://github.com/joao-vicente)
-- [Wilco Fiers](https://github.com/wilcofiers)
 
 ## Changelog
 
 This is the first version of this ACT rule.
 
 [abstract]: https://www.w3.org/TR/wai-aria/#abstract_roles
+[accessibility support base line]: https://www.w3.org/TR/WCAG-EM/#step1c 'Definition of accessibility support base line'
 [accessible description]: https://www.w3.org/TR/accname/#dfn-accessible-description
+[accessible name and description computation]: https://www.w3.org/TR/accname 'Accessible Name and Description Computation'
 [accessible name]: #accessible-name 'Definition of accessible name'
+[ancestors]: https://dom.spec.whatwg.org/#concept-tree-ancestor 'Definition Ancestor'
 [aria 1.1]: https://www.w3.org/TR/wai-aria-1.1/
+[computed]: https://www.w3.org/TR/css-cascade/#computed-value 'CSS definition of computed value'
+[examples of accessible name]: https://act-rules.github.io/pages/examples/accessible-name/
+[explicit role]: #explicit-role 'Definition of Explicit Role'
+[flat tree]: https://drafts.csswg.org/css-scoping/#flat-tree 'Definition of flat tree'
+[focusable]: #focusable 'Definition of Focusable'
 [form field error indicator]: #form-field-error-indicator
+[hidden state]: #hidden-state 'Definition of Hidden State'
+[implicit role]: #implicit-role 'Definition of Implicit Role'
 [included in the accessibility tree]: #included-in-the-accessibility-tree 'Definition of included in the accessibility tree'
+[marked as decorative]: #marked-as-decorative 'Definition of Marked as Decorative'
 [non-text content]: https://www.w3.org/TR/WCAG21/#dfn-non-text-content
 [presentation]: https://www.w3.org/TR/WCAG21/#dfn-presentation
+[presentational roles conflict resolution]: https://www.w3.org/TR/wai-aria-1.1/#conflict_resolution_presentation_none 'Presentational Roles Conflict Resolution'
+[pure decoration]: https://www.w3.org/TR/WCAG21/#dfn-pure-decoration 'WCAG definition of Pure Decoration'
 [required context]: https://www.w3.org/TR/wai-aria/#scope
+[role attribute]: https://www.w3.org/TR/role-attribute/ 'Specification of the role attribute'
 [semantic role]: #semantic-role 'Definition of semantic role'
 [text]: https://www.w3.org/TR/WCAG21/#dfn-text
 [visible]: #visible 'Definition of visible'
+[wai-aria specifications]: #wai-aria-specifications 'Definition of WAI-ARIA specifications'

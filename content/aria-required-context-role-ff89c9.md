@@ -6,7 +6,11 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/aria-required-context-role-ff89c9.md
-proposed: false
+footer: |
+  <p><strong>Date:</strong> Updated August 24th, 2021</p>
+  <p><strong>Authors:</strong> <a href="https://www.linkedin.com/in/brianbors/">Brian Bors</a>, <a href="https://github.com/Jym77">Jean-Yves Moyen</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. <em>Previous Authors:</em> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>.</p>
+  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>.</p>
+proposed: true
 rule_meta:
   id: ff89c9
   name: "ARIA required context role"
@@ -26,7 +30,7 @@ rule_meta:
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
     - handle: DOM Tree
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
-  last_modified: August 9th, 2021
+  last_modified: August 24th, 2021
   scs_tested:
     - handle: Info and Relationships
       num: 1.3.1
@@ -74,8 +78,6 @@ Some user agents try to correct missing [required context roles][] or incorrect 
 
 #### Passed Example 1
 
-<a class="example-link" title="Passed Example 1" href="/standards-guidelines/act/rules/testcases/3ae3bc1c993acb6baaad2811cbd6139a8093361c.html">Open in a new tab</a>
-
 These elements with an [explicit role][] of `listitem` are children in the [accessibility tree][] of an element with their [required context role][], `list`, expressed as an [explicit role][].
 
 ```html
@@ -87,8 +89,6 @@ These elements with an [explicit role][] of `listitem` are children in the [acce
 
 #### Passed Example 2
 
-<a class="example-link" title="Passed Example 2" href="/standards-guidelines/act/rules/testcases/44afe364fc9417fd5663599145f670552f507ab0.html">Open in a new tab</a>
-
 These elements with an [explicit role][] of `listitem` are children in the [accessibility tree][] of an element with their [required context role][], `list`, expressed as an [implicit role][] of `ul`. Note that this test case does not satisfy [Success Criterion 4.1.1 Parsing][sc411] because the [`ul` element][ul] does not respect its [content model][].
 
 ```html
@@ -99,8 +99,6 @@ These elements with an [explicit role][] of `listitem` are children in the [acce
 ```
 
 #### Passed Example 3
-
-<a class="example-link" title="Passed Example 3" href="/standards-guidelines/act/rules/testcases/694b790e4f1eae0f22aef2e7c06b646b25db8e1d.html">Open in a new tab</a>
 
 These elements with an [explicit role][] of `listitem` are children in the [accessibility tree][] of an element with their [required context role][] even though they are not its children in DOM. The presentational node is not [included in the accessibility tree][].
 
@@ -115,8 +113,6 @@ These elements with an [explicit role][] of `listitem` are children in the [acce
 
 #### Passed Example 4
 
-<a class="example-link" title="Passed Example 4" href="/standards-guidelines/act/rules/testcases/b81cf2923d30381d48980be59729a5cb0d792059.html">Open in a new tab</a>
-
 These elements with an [explicit role][] of `listitem` are children in the [accessibility tree][] of an element with their [required context role][] even though they are not its DOM descendants. The `aria-owns` attribute is used to alter the accessibility tree and place the target elements in their [required context role](https://www.w3.org/TR/wai-aria-1.1/#scope).
 
 ```html
@@ -126,8 +122,6 @@ These elements with an [explicit role][] of `listitem` are children in the [acce
 ```
 
 #### Passed Example 5
-
-<a class="example-link" title="Passed Example 5" href="/standards-guidelines/act/rules/testcases/c18579dc18aaebf7eeaa4e24e4bc199d77c432bc.html">Open in a new tab</a>
 
 These elements with an [explicit role][] of `listitem` are children in the [accessibility tree][] of an element with their [required context role][] even though they are not its DOM children. The `aria-owns` attribute is used to alter the accessibility tree and place the target elements in their [required context role](https://www.w3.org/TR/wai-aria-1.1/#scope).
 
@@ -141,8 +135,6 @@ These elements with an [explicit role][] of `listitem` are children in the [acce
 ```
 
 #### Passed Example 6
-
-<a class="example-link" title="Passed Example 6" href="/standards-guidelines/act/rules/testcases/1acc47f25d4931c25fe3efbb676af6fd4e2ee57e.html">Open in a new tab</a>
 
 These elements with an [explicit role][] of `listitem` are children in the [accessibility tree][] of an element with their [required context role][] because the [accessibility tree][] mimics the DOM tree across shadow boundaries.
 
@@ -160,8 +152,6 @@ These elements with an [explicit role][] of `listitem` are children in the [acce
 
 #### Failed Example 1
 
-<a class="example-link" title="Failed Example 1" href="/standards-guidelines/act/rules/testcases/cd55d1d52c286ac6b342155dde8fcfa49c82ae4a.html">Open in a new tab</a>
-
 This element with an [explicit role][] of `listitem` is not a child in the [accessibility tree][] of an element with its [required context role][].
 
 ```html
@@ -169,8 +159,6 @@ This element with an [explicit role][] of `listitem` is not a child in the [acce
 ```
 
 #### Failed Example 2
-
-<a class="example-link" title="Failed Example 2" href="/standards-guidelines/act/rules/testcases/2fb70cb7f44a01a2d75f4ef7ca7992cf3fb4fe1d.html">Open in a new tab</a>
 
 These elements with an [explicit role][] of `listitem` are not children in the [accessibility tree][] of an element with their [required context role][], but of an element with the `tabpanel` role.
 
@@ -185,8 +173,6 @@ These elements with an [explicit role][] of `listitem` are not children in the [
 
 #### Failed Example 3
 
-<a class="example-link" title="Failed Example 3" href="/standards-guidelines/act/rules/testcases/c08cb58abaa4cff175bcf30aece284cb32121d99.html">Open in a new tab</a>
-
 These elements with an [explicit role][] of `listitem` are not children in the [accessibility tree][] of an element with their [required context role][]. They are instead children in the [accessibility tree][] of the `div` with an `aria-label` attribute; even though this `div` has no role, it has a global ARIA attribute and is thus [included in the accessibility tree][].
 
 ```html
@@ -199,8 +185,6 @@ These elements with an [explicit role][] of `listitem` are not children in the [
 ```
 
 #### Failed Example 4
-
-<a class="example-link" title="Failed Example 4" href="/standards-guidelines/act/rules/testcases/f8e3dbe601969ab54954447e04ae384eb52d7082.html">Open in a new tab</a>
 
 These elements with an [explicit role][] of `listitem` are not children in the [accessibility tree][] of an element with their [required context role][] because explicit parent-child relation in the [accessibility tree][] (set by `aria-owns`) does not cross shadow boundaries.
 
@@ -220,8 +204,6 @@ These elements with an [explicit role][] of `listitem` are not children in the [
 
 #### Inapplicable Example 1
 
-<a class="example-link" title="Inapplicable Example 1" href="/standards-guidelines/act/rules/testcases/9f86cf6493bf2315ce01cec636014d1c059d6581.html">Open in a new tab</a>
-
 This element with an [explicit role][] of `listitem` is not [included in the accessibility tree][].
 
 ```html
@@ -229,8 +211,6 @@ This element with an [explicit role][] of `listitem` is not [included in the acc
 ```
 
 #### Inapplicable Example 2
-
-<a class="example-link" title="Inapplicable Example 2" href="/standards-guidelines/act/rules/testcases/7ec257f7f32bbe21231743ef1da46943584142c8.html">Open in a new tab</a>
 
 There is no element with an [explicit role][].
 
@@ -242,8 +222,6 @@ There is no element with an [explicit role][].
 
 #### Inapplicable Example 3
 
-<a class="example-link" title="Inapplicable Example 3" href="/standards-guidelines/act/rules/testcases/a582209de4a1d8ed76f54ca2e1f76d1efdbd499e.html">Open in a new tab</a>
-
 This `section` element with an [explicit role][] of `doc-abstract` has a role from the [Digital Publishing WAI-ARIA Module (DPUB ARIA) 1.0][dpub 1.0], not the [WAI-ARIA 1.1 Recommendation][aria 1.1].
 
 ```html
@@ -254,8 +232,6 @@ This `section` element with an [explicit role][] of `doc-abstract` has a role fr
 
 #### Inapplicable Example 4
 
-<a class="example-link" title="Inapplicable Example 4" href="/standards-guidelines/act/rules/testcases/84dd1831c0682a800e6af2fe992fb3d69d4222eb.html">Open in a new tab</a>
-
 There is no element whose role has [required context role][] because the `header` role does not have one.
 
 ```html
@@ -264,8 +240,6 @@ There is no element whose role has [required context role][] because the `header
 ```
 
 #### Inapplicable Example 5
-
-<a class="example-link" title="Inapplicable Example 5" href="/standards-guidelines/act/rules/testcases/48dc663078fb5421332814b72bd0079f90aad09a.html">Open in a new tab</a>
 
 There is no element with an [explicit role][] different from its [implicit role][]. This `li` element has an [explicit role][] of `listitem` which is identical to its [implicit role][].
 
@@ -365,21 +339,6 @@ The _WAI ARIA Specifications_ group both the WAI ARIA W3C Recommendation and ARI
 **Note:** depending on the type of content being evaluated, part of the specifications might be irrelevant and should be ignored.
 
 {% include implementations/ff89c9.md %}
-
-## Acknowledgements
-
-This rule was written in the [ACT Rules community group](https://w3.org/community/act-r/), 
-with the support of the EU-funded [WAI-Tools Project](https://www.w3.org/WAI/about/projects/wai-tools/).
-
-### Authors
-
-- [Brian Bors](https://www.linkedin.com/in/brianbors/)
-- [Jean-Yves Moyen](https://github.com/Jym77)
-- [Wilco Fiers](https://github.com/wilcofiers)
-
-### Previous Authors
-
-- [Anne Thyme Nørregaard](https://github.com/annethyme)
 
 ## Changelog
 

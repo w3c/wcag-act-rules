@@ -6,6 +6,10 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/non-visual-reference-alternative-9bd38c.md
+footer: |
+  <p><strong>Date:</strong> Updated August 24th, 2021</p>
+  <p><strong>Authors:</strong> <a href="https://www.linkedin.com/in/brianbors/">Brian Bors</a>, <a href="https://github.com/danistr">Daniël Strik</a>, <a href="https://github.com/Jym77">Jean-Yves Moyen</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>.</p>
+  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>.</p>
 proposed: true
 rule_meta:
   id: 9bd38c
@@ -38,7 +42,7 @@ rule_meta:
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
     - handle: Language
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-text
-  last_modified: July 16th, 2021
+  last_modified: August 24th, 2021
   scs_tested:
     - handle: Info and Relationships
       num: 1.3.1
@@ -511,41 +515,222 @@ This document contains no [text node][] that is either [visible][] or [included 
 
 ## Glossary
 
-{% include_relative glossary/accessible-name.md %}
-{% include_relative glossary/focusable.md %}
-{% include_relative glossary/included-in-the-accessibility-tree.md %}
-{% include_relative glossary/outcome.md %}
-{% include_relative glossary/visible.md %}
-{% include_relative glossary/visible-text-content.md %}
-{% include_relative glossary/visual-reference-words.md %}
+### Accessible Name {#accessible-name}
+
+The _accessible name_ is the programmatically determined name of a user interface element that is [included in the accessibility tree](#included-in-the-accessibility-tree).
+
+The accessible name is calculated using the [accessible name and description computation][].
+
+For native markup languages, such as HTML and SVG, additional information on how to calculate the accessible name can be found in [HTML Accessibility API Mappings 1.0, Accessible Name and Description Computation (working draft)](https://www.w3.org/TR/html-aam/#accessible-name-and-description-computation) and [SVG Accessibility API Mappings, Name and Description (working draft)](https://www.w3.org/TR/svg-aam/#mapping_additional).
+
+For more details, see [examples of accessible name][].
+
+**Note:** As per the [accessible name and description computation][], each element always has an accessible name. When no accessible name is provided, the element will nonetheless be assigned an empty (`""`) one.
+
+**Note:** As per the [accessible name and description computation][], accessible names are [flat string](https://www.w3.org/TR/accname-1.1/#terminology) trimmed of leading and trailing whitespace. Notably, it is not possible for a non-empty accessible name to be composed only of whitespace since these must be trimmed.
+
+### Focusable {#focusable}
+
+Elements that can become the target of keyboard input as described in the [HTML](https://www.w3.org/TR/html) specification of [focusable](https://html.spec.whatwg.org/#focusable-area) and [can be focused](https://html.spec.whatwg.org/#specially-focusable).
+
+### Included in the accessibility tree {#included-in-the-accessibility-tree}
+
+Elements included in the accessibility tree of platform specific accessibility APIs. Elements in the accessibility tree are exposed to assistive technologies, allowing users to interact with the elements in a way that meet the requirements of the individual user.
+
+The general rules for when elements are included in the accessibility tree are defined in the [core accessibility API mappings](https://www.w3.org/TR/core-aam/). For native markup languages, such as HTML and SVG, additional rules for when elements are included in the accessibility tree can be found in the [HTML accessibility API mappings (working draft)](https://www.w3.org/TR/html-aam/) and the [SVG accessibility API mappings (working draft)](https://www.w3.org/TR/svg-aam/).
+
+For more details, see [examples of included in the accessibility tree][].
+
+**Note:** Users of assistive technologies might still be able to interact with elements that are not included in the accessibility tree. An example of this is a [focusable](#focusable) element with an `aria-hidden` attribute with a value of `true`. Such an element could still be interacted using sequential keyboard navigation regardless of the assistive technologies used, even though the element would not be included in the accessibility tree.
+[examples of included in the accessibility tree]: https://act-rules.github.io/pages/examples/included-in-the-accessibility-tree/
+
+### Outcome {#outcome}
+
+An _outcome_ is a conclusion that comes from evaluating an ACT Rule on a [test subject](https://www.w3.org/TR/act-rules-format/#test-subject) or one of its constituent [test target](https://www.w3.org/TR/act-rules-format/#test-target). An outcome can be one of the three following types:
+
+- **Inapplicable:** No part of the test subject matches the applicability
+- **Passed:** A [test target](https://www.w3.org/TR/act-rules-format/#test-target) meets all expectations
+- **Failed:** A [test target](https://www.w3.org/TR/act-rules-format/#test-target) does not meet all expectations
+
+**Note:** A rule has one `passed` or `failed` outcome for every [test target](https://www.w3.org/TR/act-rules-format/#test-target). When there are no test targets the rule has one `inapplicable` outcome. This means that each [test subject](https://www.w3.org/TR/act-rules-format/#test-subject) will have one or more outcomes.
+
+**Note:** Implementations using the [EARL10-Schema](https://www.w3.org/TR/EARL10-Schema/) can express the outcome with the [outcome property](https://www.w3.org/TR/EARL10-Schema/#outcome). In addition to `passed`, `failed` and `inapplicable`, EARL 1.0 also defined an `incomplete` outcome. While this cannot be the outcome of an ACT Rule when applied in its entirety, it often happens that rules are only partially evaluated. For example, when applicability was automated, but the expectations have to be evaluated manually. Such "interim" results can be expressed with the `incomplete` outcome.
+
+### Visible {#visible}
+
+Content perceivable through sight.
+
+Content is considered _visible_ if making it fully transparent would result in a difference in the pixels rendered for any part of the document that is currently within the viewport or can be brought into the viewport via scrolling.
+
+[Content is defined in WCAG](https://www.w3.org/TR/WCAG21/#dfn-content).
+
+For more details, see [examples of visible](https://act-rules.github.io/pages/examples/visible/).
+
+### Visible Text Content {#visible-text-content}
+
+The _visible text content_ of an [element][] is a set of all [visible][] [text nodes][] that are [descendants][] in the [flat tree][] of this element
+
+### Visual Reference Words {#visual-reference-words}
+
+Any word in a text node that is included in the translated version of the following lists, where the language of the translation is the programmatically determinable language of the text node. Some words can be translated in multiple ways or have plural forms. In such cases each translation or form must be included. Some words can be spelled in multiple ways (For example: sometimes the word is capitalized and sometimes it isn't). In such cases each spelling must be included.
+
+**Note:** This list is not exhaustive. As soon as more visual reference words are found they can be added to this list.
+
+Visual location:
+
+- Above
+- Below
+- Beneath
+- Beside
+- Bottom
+- Diagonal
+- Down
+- Left
+- Near
+- Nearby
+- Parallel
+- Right
+- Top
+- Under
+- Underneath
+- Up
+
+Shape:
+
+- Box
+- Circle
+- Circular
+- Crescent
+- Cross
+- Diamond
+- Disc
+- Ellipse
+- Heart
+- Hexagon
+- Hexagonal
+- Kite
+- Oval
+- Parallelogram
+- Pentagon
+- Pentagonal
+- Polygon
+- Polygonal
+- Rectangle
+- Rectangular
+- Round
+- Square
+- Squared
+- Star
+- Trapezoid
+- Trapezoidal
+- Triangle
+- Triangular
+- Wave
+
+Size:
+
+- Big
+- Large
+- Little
+- Narrow
+- Small
+- Tiny
+- Wide
+
+Orientation:
+
+- Angled
+- Askew
+- Atilt
+- Crooked
+- Listing
+- Lopsided
+- off-kilter
+- Pitched
+- Rotated
+- Sideways
+- Skewed
+- Slanted
+- Slanting
+- Straight
+- Tilt
+- Tilted
+- Tipped
+
+Color
+
+- Any single word color name in the [X11 standard](https://gitlab.freedesktop.org/xorg/app/rgb/raw/master/rgb.txt), omitting duplicates:
+  - Almond
+  - Aqua
+  - Aquamarine
+  - Azure
+  - Beige
+  - Bisque
+  - Black
+  - Blue
+  - Brown
+  - Burlywood
+  - Chartreuse
+  - Chiffon
+  - Chocolate
+  - Coral
+  - Cornsilk
+  - Cream
+  - Crimson
+  - Cyan
+  - Firebrick
+  - Fuchsia
+  - Gold
+  - Goldenrod
+  - Gray
+  - Green
+  - Honeydew
+  - Indigo
+  - Ivory
+  - Khaki
+  - Lace
+  - Lavender
+  - Lemon
+  - Lime
+  - Linen
+  - Magenta
+  - Maroon
+  - Mint
+  - Moccasin
+  - Olive
+  - Orange
+  - Orchid
+  - Pink
+  - Purple
+  - Red
+  - Rose
+  - Salmon
+  - Turquoise
+  - Violet
+  - White
+  - Yellow
 
 {% include implementations/9bd38c.md %}
-
-## Acknowledgements
-
-This rule was written in the [ACT Rules community group](https://w3.org/community/act-r/), 
-with the support of the EU-funded [WAI-Tools Project](https://www.w3.org/WAI/about/projects/wai-tools/).
-
-### Authors
-
-- [Brian Bors](https://www.linkedin.com/in/brianbors/)
-- [Daniël Strik](https://github.com/danistr)
-- [Jean-Yves Moyen](https://github.com/Jym77)
-- [Wilco Fiers](https://github.com/wilcofiers)
 
 ## Changelog
 
 This is the first version of this ACT rule.
 
+[accessible name and description computation]: https://www.w3.org/TR/accname 'Accessible Name and Description Computation'
 [accessible name]: #accessible-name 'Definition of Accessible Name'
+[descendants]: https://dom.spec.whatwg.org/#concept-tree-descendant 'DOM tree descendant, 2020/08/18'
+[element]: https://dom.spec.whatwg.org/#element 'DOM element, 2020/08/18'
+[examples of accessible name]: https://act-rules.github.io/pages/examples/accessible-name/
+[flat tree]: https://drafts.csswg.org/css-scoping/#flat-tree 'CSS draft, flat tree, 2020/08/18'
 [included in the accessibility tree]: #included-in-the-accessibility-tree 'Definition of Included in the Accessibility Tree'
 [sc131]: https://www.w3.org/TR/WCAG21/#info-and-relationships 'Success Criterion 1.3.1 Info and Relationships'
 [sc133]: https://www.w3.org/TR/WCAG21/#sensory-characteristics 'Success Criterion 1.3.3 Sensory Characteristics'
 [text node]: https://dom.spec.whatwg.org/#text 'Specification of Text Node'
-[visible]: #visible 'Definition of Visible'
-[visible text content]: #visible-text-content 'Definition of Visible Text Content'
-[visual reference words]: #visual-reference-words 'Definition of Visual Reference Words'
-[visual reference word]: #visual-reference-words 'Definition of Visual Reference Words'
+[text nodes]: https://dom.spec.whatwg.org/#text 'DOM text, 2020/08/18'
 [text]: https://www.w3.org/TR/WCAG21/#dfn-text 'WCAG definition of Text'
+[visible text content]: #visible-text-content 'Definition of Visible Text Content'
+[visible]: #visible 'Definition of Visible'
+[visual reference word]: #visual-reference-words 'Definition of Visual Reference Words'
+[visual reference words]: #visual-reference-words 'Definition of Visual Reference Words'
 [web content]: https://www.w3.org/TR/WCAG21/#dfn-content 'WCAG definition of Web Content'
 [web page]: https://www.w3.org/TR/WCAG21/#dfn-web-page-s 'WCAG definition of Web Page'
