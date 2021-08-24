@@ -6,6 +6,10 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/image-button-accessible-name-59796f.md
+footer: |
+  <p><strong>Date:</strong> Updated August 24th, 2021</p>
+  <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>.</p>
+  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>.</p>
 rule_meta:
   id: 59796f
   name: "Image button has accessible name"
@@ -189,14 +193,7 @@ The image button is ignored by assistive technologies because it is not [include
 {% include_relative glossary/included-in-the-accessibility-tree.md %}
 {% include_relative glossary/outcome.md %}
 
-## Acknowledgements
-
-This rule was written in the [ACT Rules community group](https://w3.org/community/act-r/), 
-with the support of the EU-funded [WAI-Tools Project](https://www.w3.org/WAI/about/projects/wai-tools/).
-
-### Authors
-
-- [Anne Thyme Nørregaard](https://github.com/annethyme)
+{% include implementations/59796f.md %}
 
 ## Changelog
 

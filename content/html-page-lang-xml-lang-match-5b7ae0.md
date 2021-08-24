@@ -6,6 +6,10 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/html-page-lang-xml-lang-match-5b7ae0.md
+footer: |
+  <p><strong>Date:</strong> Updated August 24th, 2021</p>
+  <p><strong>Authors:</strong> <a href="https://github.com/jkodu">Jey Nandakumar</a>. <em>Previous Authors:</em> <a href="https://github.com/annika-FTB">Annika Nietzio</a>.</p>
+  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>.</p>
 proposed: false
 rule_meta:
   id: 5b7ae0
@@ -189,19 +193,6 @@ This rule does not apply to `html` elements with an empty (`""`) `xml:lang` attr
 {% include_relative glossary/valid-language-tag.md %}
 
 {% include implementations/5b7ae0.md %}
-
-## Acknowledgements
-
-This rule was written in the [ACT Rules community group](https://w3.org/community/act-r/), 
-with the support of the EU-funded [WAI-Tools Project](https://www.w3.org/WAI/about/projects/wai-tools/).
-
-### Authors
-
-- [Jey Nandakumar](https://github.com/jkodu)
-
-### Previous Authors
-
-- [Annika Nietzio](https://github.com/annika-FTB)
 
 ## Changelog
 

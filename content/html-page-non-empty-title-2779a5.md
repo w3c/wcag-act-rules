@@ -6,6 +6,10 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/html-page-non-empty-title-2779a5.md
+footer: |
+  <p><strong>Date:</strong> Updated August 24th, 2021</p>
+  <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/brynanders">Bryn Anderson</a>, <a href="https://github.com/jkodu">Jey Nandakumar</a>, <a href="https://github.com/skotkjerra">Stein Erik Skotkjerra</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>.</p>
+  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>.</p>
 proposed: false
 rule_meta:
   id: 2779a5
@@ -211,19 +215,6 @@ This `title` element is a child of an `svg` element.
 {% include_relative glossary/whitespace.md %}
 
 {% include implementations/2779a5.md %}
-
-## Acknowledgements
-
-This rule was written in the [ACT Rules community group](https://w3.org/community/act-r/), 
-with the support of the EU-funded [WAI-Tools Project](https://www.w3.org/WAI/about/projects/wai-tools/).
-
-### Authors
-
-- [Anne Thyme Nørregaard](https://github.com/annethyme)
-- [Bryn Anderson](https://github.com/brynanders)
-- [Jey Nandakumar](https://github.com/jkodu)
-- [Stein Erik Skotkjerra](https://github.com/skotkjerra)
-- [Wilco Fiers](https://github.com/wilcofiers)
 
 ## Changelog
 

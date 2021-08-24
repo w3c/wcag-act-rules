@@ -7,6 +7,10 @@ github:
   repository: w3c/wcag-act-rules
   path: content/button-non-empty-accessible-name-97a4e1.md
 proposed: false
+footer: |
+  <p><strong>Date:</strong> Updated August 24th, 2021</p>
+  <p><strong>Authors:</strong> <a href="https://github.com/skotkjerra">Stein Erik Skotkjerra</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>.</p>
+  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>.</p>
 rule_meta:
   id: 97a4e1
   name: "Button has non-empty accessible name"
@@ -240,16 +244,6 @@ This `button` element has an [explicit role][] of `none`; it is not [focusable][
 {% include_relative glossary/wai-aria-specifications.md %}
 
 {% include implementations/97a4e1.md %}
-
-## Acknowledgements
-
-This rule was written in the [ACT Rules community group](https://w3.org/community/act-r/), 
-with the support of the EU-funded [WAI-Tools Project](https://www.w3.org/WAI/about/projects/wai-tools/).
-
-### Authors
-
-- [Stein Erik Skotkjerra](https://github.com/skotkjerra)
-- [Wilco Fiers](https://github.com/wilcofiers)
 
 ## Changelog
 
