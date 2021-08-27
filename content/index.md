@@ -1,5 +1,5 @@
 ---
-title: "WCAG ACT Rules"
+title: "WCAG 2 Test Rules"
 permalink: /standards-guidelines/act/rules/
 ref: /standards-guidelines/act/rules/
 lang: en
