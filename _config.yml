@@ -36,7 +36,7 @@ ytkey: AIzaSyCiZ9uToWu9jb7BTx47NtzCvmGGXKXp8nI
 remote_theme: w3c/wai-website-theme
 
 collections:
-  patterns:
+  wai-wcag-act-rules-patterns:
     title: Glossary
     permalink: /:collection/:name/
     output: true
