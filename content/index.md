@@ -1,5 +1,5 @@
 ---
-title: "WCAG 2 Test Rules"
+title: "All WCAG 2 Test Rules"
 permalink: /standards-guidelines/act/rules/
 ref: /standards-guidelines/act/rules/
 lang: en
@@ -28,9 +28,9 @@ This page lists [WCAG 2 Test Rules](https://www.w3.org/WAI/standards-guidelines/
 {% include box.html type="end" %}
 {:/}
 
-## List of WCAG 2 Test Rules
+## Test Rules
 
-These Test Rules have been approved by the Accessibility Guidelines Working Group and is fully implemented in at least one evaluation tools or methodologies.
+These Test Rules have been approved by the Accessibility Guidelines Working Group and are fully implemented in at least one evaluation tools or methodologies.
 
 * [HTML page has non-empty title](/standards-guidelines/act/rules/html-page-non-empty-title-2779a5/)
 * [Image has non-empty accessible name](/standards-guidelines/act/rules/image-non-empty-accessible-name-23a2a8/)
@@ -44,9 +44,9 @@ These Test Rules have been approved by the Accessibility Guidelines Working Grou
 * [HTML page language is valid](/standards-guidelines/act/rules/html-page-lang-valid-bf051a/)
 * [HTML page lang and xml:lang attributes have matching values](/standards-guidelines/act/rules/html-page-lang-xml-lang-match-5b7ae0/)
 
-## List of Proposed WCAG 2 Test Rules
+## Proposed Test Rules
 
-The following is a list of proposed test rules. These will be moved to the list of published test rules when they have one or more implementations.
+Proposed test rules will be published when they have at least one implementation and are approved by the AGWG.
 
 * [`aria-*` attribute is defined in WAI-ARIA](/standards-guidelines/act/rules/aria-attr-defined-5f99a7/)
 * [Element with `aria-hidden` has no focusable content](/standards-guidelines/act/rules/aria-hidden-no-focusable-content-6cfa84/)
