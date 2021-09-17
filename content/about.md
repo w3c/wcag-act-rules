@@ -18,7 +18,7 @@ github:
 
 WCAG 2 Test Rules describe how to test conformance to Web Content Accessibility Guideline (WCAG) success criteria. They are primarily for developers of evaluation tools and test methodologies. Guidance for others is in Understanding WCAG and WCAG Techniques. To learn more, see: [WCAG Overview](https://www.w3.org/WAI/standards-guidelines/wcag/), [All WCAG 2 Guidance](https://www.w3.org/WAI/standards-guidelines/wcag/docs/).
 
-The [List of Test Rules for WCAG 2](https://www.w3.org/WAI/standards-guidelines/act/rules/) is updated periodically. They are developed according to the [Accessibility Conformance Testing (ACT) Rules Format 1.0](https://www.w3.org/WAI/standards-guidelines/act/) standard.
+The [List of Test Rules for WCAG 2](https://www.w3.org/WAI/standards-guidelines/act/rules/) is updated periodically. The rules are developed according to the [Accessibility Conformance Testing (ACT) Rules Format 1.0](https://www.w3.org/WAI/standards-guidelines/act/) standard.
 
 [Understanding Conformance](https://www.w3.org/WAI/WCAG22/Understanding/conformance) provides related information, including on [understanding accessibility support](https://www.w3.org/WAI/WCAG22/Understanding/conformance#accessibility-support).
 
@@ -42,9 +42,9 @@ The reason for this is because WCAG success criteria typically cover several asp
 
 **Note**: [WCAG 2 Conformance Requirement 1](https://www.w3.org/WAI/WCAG22/Understanding/conformance#cc1) allows for "conforming alternate versions". That means that content may still conform to WCAG 2, even when content fails Test Rules.
 
-## Test Rule Implementations
+## Implementation of Test Rules
 
-Implementation of an Test Rule can be any automated testing tool, manual testing methodology, or other procedure that provides the same expected results for the test cases defined by the Test Rule. Specifically, when the expected result for a test case is:
+Implementation of a Test Rule can be any automated testing tool, manual testing methodology, or other procedure that provides the same expected results for the test cases defined by the Test Rule. Specifically, when the expected result for a test case is:
 
 - **Passed**, the test result generated from the implementation is *passed*, *cantTell*, or *inapplicable*
 - **Failed**, the test result generated from the implementation is *failed* or *cantTell*
@@ -55,21 +55,21 @@ Implementation of an Test Rule can be any automated testing tool, manual testing
 Test Rules conform to the [Accessibility Conformance Testing (ACT) Rules Format 1.0](https://www.w3.org/WAI/standards-guidelines/act/) standard. They include the following parts:
 
 - **Descriptive Title** – title for the Test Rule, which should describe the rule
-- **Rule Identifier** – identifier for the Test Rule; the W3C rules use alphanumeric strings
+- **Rule Identifier** – identifier for the Test Rule; the rules use alphanumeric strings
 - **Rule Type** – there are two basic types of Test Rules, depending on what is being tested:
   - **Atomic Rule** – test one specific situation, which may be part of a composite rule
   - **Composite Rule** – combine outcome from multiple atomic rules to one outcome
 - **Accessibility Requirements Mapping** – maps the Test Rule to particular accessibility requirements; in this suite of rules we use Web Content Accessibility Guidelines (WCAG) 2 Success Criteria
 - **Rule Input** – describes the scope of input into Test Rules, which is one of the following:
-  - **Input Aspects** – input into atomic rules, such as DOM Tree and CSS Styling etc.
+  - **Input Aspects** – input into atomic rules, for example DOM Tree and CSS Styling etc.
   - **Input Rules** – input into the composite rules, which are the atomic rules in scope
 - **Applicability** – description of the specific parts of the content, for which the rule applies
 - **Expectations** – description of the expected characteristics of the applicable rule content
-- **Assumptions** – assumptions made, such as specific interpretations of the requirements
+- **Assumptions** – assumptions made, for example specific interpretations of the requirements
 - **Accessibility Support** – known limitations regarding browsers and assistive technology
 - **Test Cases** – sample code demonstrating passed, failed, and inapplicable rule conditions
 - **Change Log** – history of changes for the Test Rules, to support backward compatibility
 - **Glossary** – list of key terms defined by the Test Rule or used by the specific Test Rule
 - **Issues List (Optional)** – list of known issues or bugs for the particular Test Rule, if any
-- **Background (Optional)** – relevant background, such as additional documentation, if any
-- **Acknowledgements (Optional)** – such as rule writers, reviewers, and other contributors
+- **Background (Optional)** – relevant background, for example additional documentation, if any
+- **Acknowledgements (Optional)** – for example rule writers, reviewers, and other contributors
