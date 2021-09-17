@@ -30,7 +30,7 @@ This page lists [WCAG 2 Test Rules](https://www.w3.org/WAI/standards-guidelines/
 
 ## Test Rules
 
-These Test Rules have been approved by the Accessibility Guidelines Working Group and are fully implemented in at least one evaluation tool or methodology.
+These Test Rules have been approved by the Accessibility Guidelines Working Group. They are fully implemented in at least one evaluation tool or methodology.
 
 * [HTML page has non-empty title](/standards-guidelines/act/rules/html-page-non-empty-title-2779a5/)
 * [Image has non-empty accessible name](/standards-guidelines/act/rules/image-non-empty-accessible-name-23a2a8/)
