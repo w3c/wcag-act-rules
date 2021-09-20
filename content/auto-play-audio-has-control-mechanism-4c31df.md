@@ -6,38 +6,34 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/auto-play-audio-has-control-mechanism-4c31df.md
-# footer: > # Text in footer in HTML
-#   <p> This is the text in the footer </p>
+footer: |
+  <p><strong>Date:</strong> Updated August 24th, 2021</p>
+  <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/brynanders">Bryn Anderson</a>.</p>
+  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>.</p>
+proposed: true
+rule_meta:
+  id: 4c31df
+  name: "`audio` or `video` that plays automatically has a control mechanism"
+  rule_type: atomic
+  description: |
+    audio or video that plays automatically must have a control mechanism.
+  accessibility_requirements:
+    'wcag-technique:G170':
+      forConformance: false
+      failed: not satisfied
+      passed: further testing needed
+      inapplicable: further testing needed
+  input_aspects:
+    - handle: DOM Tree
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
+    - handle: CSS Styling
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
+    - handle: Audio output
+      url: 
+    - handle: Visual output
+      url: 
+  last_modified: August 24th, 2021
 ---
-
-{% include_relative _proposed-banner.html %}
-
-Rule Type:
-:   atomic
-
-Rule ID:
-:   4c31df
-
-Last Modified:
-:   June 3, 2021
-
-Accessibility Requirements Mapping:
-:   [G170: Providing a control near the beginning of the Web page that turns off sounds that play automatically](https://www.w3.org/WAI/WCAG21/Techniques/general/G170)
-    - Not required to conformance to any W3C accessibility recommendation.
-    - [Outcome](#outcome) mapping:
-        - Any `failed` outcomes: technique is not satisfied
-        - All `passed` outcomes: technique needs further testing
-        - An `inapplicable` outcome: technique needs further testing
-
-Input Aspects:
-:   [DOM Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom)
-:   [CSS Styling](https://www.w3.org/TR/act-rules-aspects/#input-aspects-css)
-:   Audio output
-:   Visual output
-
-## Description
-
-audio or video that plays automatically must have a control mechanism.
 
 ## Applicability
 
@@ -289,31 +285,129 @@ This `audio` element does not autoplay.
 
 ## Glossary
 
-{% include_relative glossary/accessible-name.md %}
-{% include_relative glossary/attribute-value.md %}
-{% include_relative glossary/focusable.md %}
-{% include_relative glossary/included-in-the-accessibility-tree.md %}
-{% include_relative glossary/instrument-to-achieve-an-objective.md %}
-{% include_relative glossary/outcome.md %}
-{% include_relative glossary/visible.md %}
-{% include_relative glossary/web-page-html.md %}
-{% include_relative glossary/whitespace.md %}
+### Accessible Name {#accessible-name}
 
-## Acknowledgements
+The _accessible name_ is the programmatically determined name of a user interface element that is [included in the accessibility tree](#included-in-the-accessibility-tree).
 
-This rule was written in the [ACT Rules community group](https://w3.org/community/act-r/), 
-with the support of the EU-funded [WAI-Tools Project](https://www.w3.org/WAI/about/projects/wai-tools/).
+The accessible name is calculated using the [accessible name and description computation][].
 
-### Authors
+For native markup languages, such as HTML and SVG, additional information on how to calculate the accessible name can be found in [HTML Accessibility API Mappings 1.0, Accessible Name and Description Computation (working draft)](https://www.w3.org/TR/html-aam/#accessible-name-and-description-computation) and [SVG Accessibility API Mappings, Name and Description (working draft)](https://www.w3.org/TR/svg-aam/#mapping_additional).
 
-- [Anne Thyme Nørregaard](https://github.com/annethyme)
-- [Bryn Anderson](https://github.com/brynanders)
+For more details, see [examples of accessible name][].
+
+**Note:** As per the [accessible name and description computation][], each element always has an accessible name. When no accessible name is provided, the element will nonetheless be assigned an empty (`""`) one.
+
+**Note:** As per the [accessible name and description computation][], accessible names are [flat string](https://www.w3.org/TR/accname-1.1/#terminology) trimmed of leading and trailing whitespace. Notably, it is not possible for a non-empty accessible name to be composed only of whitespace since these must be trimmed.
+
+### Attribute value {#attribute-value}
+
+The _attribute value_ of a content attribute set on an HTML element is the value that the attribute gets after being parsed and computed according to specifications. It may differ from the value that is actually written in the HTML code due to trimming whitespace or non-digits characters, default values, or case-insensitivity.
+
+Some notable case of attribute value, among others:
+
+- For [enumerated attributes][], the _attribute value_ is either the state of the attribute, or the keyword that maps to it; even for the default states. Thus `<input type="image" />` has an attribute value of either `Image Button` (the state) or `image` (the keyword mapping to it), both formulations having the same meaning; similarly, "an input element with a `type` _attribute value_ of `Text`" can be either `<input type="text" />`, `<input />` (missing value default), or `<input type="invalid" />` (invalid value default).
+- For [boolean attributes][], the _attribute value_ is `true` when the attribute is present and `false` otherwise. Thus `<button disabled>`, `<button disabled="disabled">` and `<button disabled="">` all have a `disabled` _attribute value_ of `true`.
+- For attributes whose value is used in a case-insensitive context, the _attribute value_ is the lowercase version of the value written in the HTML code.
+- For attributes that accept [numbers][], the _attribute value_ is the result of parsing the value written in the HTML code according to the rules for parsing this kind of number.
+- For attributes that accept sets of tokens, whether [space separated][] or [comma separated][], the _attribute value_ is the set of tokens obtained after parsing the set and, depending on the case, converting its items to lowercase (if the set is used in a case-insensitive context).
+- For `aria-*` attributes, the _attribute value_ is computed as indicated in the [WAI-ARIA specification][] and the [HTML Accessibility API Mappings][html aam].
+
+This list is not exhaustive, and only serves as an illustration for some of the most common cases.
+
+The _attribute value_ of an [IDL attribute][] is the value returned on getting it. Note that when an [IDL attribute][] [reflects][reflect] a content attribute, they have the same attribute value.
+
+### Focusable {#focusable}
+
+Elements that can become the target of keyboard input as described in the [HTML](https://www.w3.org/TR/html) specification of [focusable](https://html.spec.whatwg.org/#focusable-area) and [can be focused](https://html.spec.whatwg.org/#specially-focusable).
+
+### Included in the accessibility tree {#included-in-the-accessibility-tree}
+
+Elements included in the accessibility tree of platform specific accessibility APIs. Elements in the accessibility tree are exposed to assistive technologies, allowing users to interact with the elements in a way that meet the requirements of the individual user.
+
+The general rules for when elements are included in the accessibility tree are defined in the [core accessibility API mappings](https://www.w3.org/TR/core-aam/). For native markup languages, such as HTML and SVG, additional rules for when elements are included in the accessibility tree can be found in the [HTML accessibility API mappings (working draft)](https://www.w3.org/TR/html-aam/) and the [SVG accessibility API mappings (working draft)](https://www.w3.org/TR/svg-aam/).
+
+For more details, see [examples of included in the accessibility tree][].
+
+**Note:** Users of assistive technologies might still be able to interact with elements that are not included in the accessibility tree. An example of this is a [focusable](#focusable) element with an `aria-hidden` attribute with a value of `true`. Such an element could still be interacted using sequential keyboard navigation regardless of the assistive technologies used, even though the element would not be included in the accessibility tree.
+[examples of included in the accessibility tree]: https://act-rules.github.io/pages/examples/included-in-the-accessibility-tree/
+
+### Instrument to achieve an objective {#instrument-to-achieve-an-objective}
+
+An [HTML element][] that when [activated][] allows an end-user to achieve an objective.
+
+**Note**: Any rule that uses this definition must provide an unambiguous description of the objective the instrument is used to achieve.
+
+### Outcome {#outcome}
+
+An _outcome_ is a conclusion that comes from evaluating an ACT Rule on a [test subject](https://www.w3.org/TR/act-rules-format/#test-subject) or one of its constituent [test target](https://www.w3.org/TR/act-rules-format/#test-target). An outcome can be one of the three following types:
+
+- **Inapplicable:** No part of the test subject matches the applicability
+- **Passed:** A [test target](https://www.w3.org/TR/act-rules-format/#test-target) meets all expectations
+- **Failed:** A [test target](https://www.w3.org/TR/act-rules-format/#test-target) does not meet all expectations
+
+**Note:** A rule has one `passed` or `failed` outcome for every [test target](https://www.w3.org/TR/act-rules-format/#test-target). When there are no test targets the rule has one `inapplicable` outcome. This means that each [test subject](https://www.w3.org/TR/act-rules-format/#test-subject) will have one or more outcomes.
+
+**Note:** Implementations using the [EARL10-Schema](https://www.w3.org/TR/EARL10-Schema/) can express the outcome with the [outcome property](https://www.w3.org/TR/EARL10-Schema/#outcome). In addition to `passed`, `failed` and `inapplicable`, EARL 1.0 also defined an `incomplete` outcome. While this cannot be the outcome of an ACT Rule when applied in its entirety, it often happens that rules are only partially evaluated. For example, when applicability was automated, but the expectations have to be evaluated manually. Such "interim" results can be expressed with the `incomplete` outcome.
+
+### Visible {#visible}
+
+Content perceivable through sight.
+
+Content is considered _visible_ if making it fully transparent would result in a difference in the pixels rendered for any part of the document that is currently within the viewport or can be brought into the viewport via scrolling.
+
+[Content is defined in WCAG](https://www.w3.org/TR/WCAG21/#dfn-content).
+
+For more details, see [examples of visible](https://act-rules.github.io/pages/examples/visible/).
+
+### Web page (HTML) {#web-page-html}
+
+An _HTML [web page](https://www.w3.org/TR/WCAG21/#dfn-web-page-s)_ is the set of all [fully active](https://html.spec.whatwg.org/#fully-active) [documents](https://dom.spec.whatwg.org/#concept-document) which share the same [top-level browsing context](https://html.spec.whatwg.org/#top-level-browsing-context).
+
+**Note:** Nesting of browsing context mostly happens with `iframe` and `object`. Thus a web page will most of the time be a "top-level" document and all its `iframe` and `object` (recursively).
+
+**Note:** [Web pages](https://www.w3.org/TR/WCAG21/#dfn-web-page-s) as defined by WCAG are not restricted to the HTML technology but can also include, _e.g._, PDF or DOCX documents.
+
+**Note:** Although web pages as defined here are sets of [documents](https://dom.spec.whatwg.org/#concept-document) (and do not contain other kind of nodes), one can abusively write that any node is "in a web page" if it is a [shadow-including descendant](https://dom.spec.whatwg.org/#concept-shadow-including-descendant) of a [document](https://dom.spec.whatwg.org/#concept-document) that is part of that web page.
+
+### Whitespace {#whitespace}
+
+_Whitespace_ are characters that have the Unicode "White_Space" property in the [Unicode properties list](https://www.unicode.org/Public/UCD/latest/ucd/PropList.txt).
+
+This includes:
+
+- all characters in the [Unicode Separator categories](https://www.unicode.org/versions/Unicode11.0.0/ch04.pdf#G134153), and
+- the following characters in the [Other, Control](https://www.unicode.org/versions/Unicode11.0.0/ch04.pdf#G134153) category:
+
+  - Character tabulation (U+0009)
+  - Line Feed (LF) (U+000A)
+  - Line Tabulation (U+000B)
+  - Form Feed (FF) (U+000C)
+  - Carriage Return (CR) (U+000D)
+  - Next Line (NEL) (U+0085)
+
+{% include implementations/4c31df.md %}
 
 ## Changelog
 
 This is the first version of this ACT rule.
 
+[accessible name and description computation]: https://www.w3.org/TR/accname 'Accessible Name and Description Computation'
+[activated]: https://html.spec.whatwg.org/#activation
 [attribute value]: #attribute-value 'Definition of Attribute Value'
+[boolean attributes]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attributes 'HTML Specification of Boolean Attribute'
+[comma separated]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#comma-separated-tokens 'HTML Specification of Comma Separated Tokens'
+[enumerated attributes]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#enumerated-attribute 'HTML Specification of Enumerated Attribute'
+[examples of accessible name]: https://act-rules.github.io/pages/examples/accessible-name/
+[html aam]: https://www.w3.org/TR/html-aam-1.0/#html-attribute-state-and-property-mappings 'Specification of HTML attributes value mapping to ARIA states and properties'
+[html element]: https://html.spec.whatwg.org/multipage/dom.html#htmlelement
+[idl attribute]: https://heycam.github.io/webidl/#idl-attributes "Definition of Web IDL Attribute (Editor's Draft)"
 [instrument]: #instrument-to-achieve-an-objective 'Definition of Instrument to Achieve an Objective'
+[mechanism]: https://www.w3.org/TR/WCAG21/#dfn-mechanism 'WCAG Definition of Mechanism'
 [media resource]: https://html.spec.whatwg.org/multipage/media.html#media-resource 'HTML Specification of Media Resource'
+[numbers]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#numbers 'HTML Specification of Number Parsing'
+[reflect]: https://html.spec.whatwg.org/multipage/common-dom-interfaces.html#reflecting-content-attributes-in-idl-attributes 'HTML specification of Reflecting Content Attributes in IDL Attributes'
+[sc211]: https://www.w3.org/TR/WCAG21/#keyboard 'Success Criterion 2.1.1 Keyboard'
+[sc412]: https://www.w3.org/TR/WCAG21/#name-role-value 'Success Criterion 4.1.2 Name, Role, Value'
+[space separated]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#space-separated-tokens 'HTML Specification of Space Separated Tokens'
+[wai-aria specification]: https://www.w3.org/TR/wai-aria-1.1/#propcharacteristic_value 'WAI-ARIA Specification of States and Properties Value'
 [web page]: #web-page-html 'Definition of HTML web page'

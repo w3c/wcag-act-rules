@@ -6,41 +6,37 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/attr-not-duplicated-e6952f.md
-# footer: > # Text in footer in HTML
-#   <p> This is the text in the footer </p>
+footer: |
+  <p><strong>Date:</strong> Updated August 24th, 2021</p>
+  <p><strong>Authors:</strong> <a href="https://github.com/EmmaJP">Emma Pratt Richens</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>.</p>
+  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>.</p>
+proposed: true
+rule_meta:
+  id: e6952f
+  name: "Attribute is not duplicated"
+  rule_type: atomic
+  description: |
+    This rule checks that HTML and SVG starting tags do not contain duplicated attributes.
+  accessibility_requirements:
+    'wcag20:4.1.1':
+      forConformance: true
+      failed: not satisfied
+      passed: further testing needed
+      inapplicable: further testing needed
+    'wcag-technique:H94':
+      forConformance: false
+      failed: not satisfied
+      passed: satisfied
+      inapplicable: satisfied
+  input_aspects:
+    - handle: Source code
+      url: 
+  last_modified: August 24th, 2021
+  scs_tested:
+    - handle: Parsing
+      num: 4.1.1
+      level: A
 ---
-
-{% include_relative _proposed-banner.html %}
-
-Rule Type:
-:   atomic
-
-Rule ID:
-:   e6952f
-
-Last Modified:
-:   June 3, 2021
-
-Accessibility Requirements Mapping:
-:   [4.1.1 Parsing (Level A)](https://www.w3.org/TR/WCAG21/#parsing)
-    - **Required for conformance** to WCAG 2.0 and later on level A and higher
-    - [Outcome](#outcome) mapping:
-        - Any `failed` outcomes: success criterion is not satisfied
-        - All `passed` outcomes: success criterion needs further testing
-        - An `inapplicable` outcome: success criterion needs further testing
-:   [H94: Ensuring that elements do not contain duplicate attributes](https://www.w3.org/WAI/WCAG21/Techniques/html/H94)
-    - Not required to conformance to any W3C accessibility recommendation.
-    - [Outcome](#outcome) mapping:
-        - Any `failed` outcomes: technique is not satisfied
-        - All `passed` outcomes: technique is satisfied
-        - An `inapplicable` outcome: technique is satisfied
-
-Input Aspects:
-:   Source code
-
-## Description
-
-This rule checks that HTML and SVG starting tags do not contain duplicated attributes.
 
 ## Applicability
 
@@ -70,7 +66,7 @@ _There are no major accessibility support issues known for this rule._
 
 #### Passed Example 1
 
-No attributes are duplicated.
+This `img` element contains no duplicated attributes.
 
 ```html
 <img src="/test-assets/shared/w3c-logo.png" alt="W3C logo" />
@@ -78,7 +74,7 @@ No attributes are duplicated.
 
 #### Passed Example 2
 
-No attributes, therefore no attributes are duplicated.
+This `br` element contains no attributes, so there is no duplicated attribute.
 
 ```html
 <br />
@@ -86,7 +82,7 @@ No attributes, therefore no attributes are duplicated.
 
 #### Passed Example 3
 
-Empty attributes, no attributes are duplicated.
+This `input` element contains three different attributes, two of them being empty.
 
 ```html
 <input type="checkbox" disabled readonly />
@@ -94,7 +90,7 @@ Empty attributes, no attributes are duplicated.
 
 #### Passed Example 4
 
-SVG, no attributes are duplicated.
+This `SVG` element contains no attributes.
 
 ```html
 <svg>
@@ -104,7 +100,7 @@ SVG, no attributes are duplicated.
 
 #### Passed Example 5
 
-Script, no attributes are duplicated. HTML or SVG code within a script should be ignored.
+This `script` element contains duplicated attributes, but they are ignored because they are placed within the `script` tag.
 
 ```html
 <script>
@@ -116,7 +112,7 @@ Script, no attributes are duplicated. HTML or SVG code within a script should be
 
 #### Failed Example 1
 
-At least one attribute is duplicated.
+This `img` element contains a duplicated `alt` attribute.
 
 ```html
 <img src="/test-assets/shared/w3c-logo.png" alt="" alt="W3C logo" />
@@ -124,7 +120,7 @@ At least one attribute is duplicated.
 
 #### Failed Example 2
 
-Empty attributes, at least one attribute is duplicated.
+This `input` element contains a duplicate `disabled` attribute.
 
 ```html
 <input type="checkbox" disabled="disabled" disabled readonly />
@@ -132,7 +128,7 @@ Empty attributes, at least one attribute is duplicated.
 
 #### Failed Example 3
 
-SVG, at least one attribute is duplicated.
+This `line` element contains duplicate `x1` and duplicate `y1` attributes.
 
 ```html
 <svg>
@@ -144,7 +140,7 @@ SVG, at least one attribute is duplicated.
 
 #### Inapplicable Example 1
 
-Code is XML, and not HTML or SVG.
+This code is XML, not HTML or SVG.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -157,27 +153,30 @@ Code is XML, and not HTML or SVG.
 
 #### Inapplicable Example 2
 
-Code is JavaScript, and not HTML or SVG.
+This code is JavaScript, not HTML or SVG.
 
 ```js
-var foo = '<img src="/test-assets/shared/w3c-logo.png" alt="" alt="W3C logo" />'
+var foo = '<img src="/test-assets/shared/w3c-logo.png" alt="W3C logo" />'
 ```
 
 ## Glossary
 
-{% include_relative glossary/outcome.md %}
+### Outcome {#outcome}
 
-## Acknowledgements
+An _outcome_ is a conclusion that comes from evaluating an ACT Rule on a [test subject](https://www.w3.org/TR/act-rules-format/#test-subject) or one of its constituent [test target](https://www.w3.org/TR/act-rules-format/#test-target). An outcome can be one of the three following types:
 
-This rule was written in the [ACT Rules community group](https://w3.org/community/act-r/), 
-with the support of the EU-funded [WAI-Tools Project](https://www.w3.org/WAI/about/projects/wai-tools/).
+- **Inapplicable:** No part of the test subject matches the applicability
+- **Passed:** A [test target](https://www.w3.org/TR/act-rules-format/#test-target) meets all expectations
+- **Failed:** A [test target](https://www.w3.org/TR/act-rules-format/#test-target) does not meet all expectations
 
-### Authors
+**Note:** A rule has one `passed` or `failed` outcome for every [test target](https://www.w3.org/TR/act-rules-format/#test-target). When there are no test targets the rule has one `inapplicable` outcome. This means that each [test subject](https://www.w3.org/TR/act-rules-format/#test-subject) will have one or more outcomes.
 
-- [Emma Pratt Richens](https://github.com/EmmaJP)
-- [Wilco Fiers](https://github.com/wilcofiers)
+**Note:** Implementations using the [EARL10-Schema](https://www.w3.org/TR/EARL10-Schema/) can express the outcome with the [outcome property](https://www.w3.org/TR/EARL10-Schema/#outcome). In addition to `passed`, `failed` and `inapplicable`, EARL 1.0 also defined an `incomplete` outcome. While this cannot be the outcome of an ACT Rule when applied in its entirety, it often happens that rules are only partially evaluated. For example, when applicability was automated, but the expectations have to be evaluated manually. Such "interim" results can be expressed with the `incomplete` outcome.
+
+{% include implementations/e6952f.md %}
 
 ## Changelog
 
 This is the first version of this ACT rule.
+
 

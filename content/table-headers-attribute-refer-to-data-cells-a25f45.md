@@ -6,42 +6,39 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/table-headers-attribute-refer-to-data-cells-a25f45.md
-# footer: > # Text in footer in HTML
-#   <p> This is the text in the footer </p>
+footer: |
+  <p><strong>Date:</strong> Updated August 24th, 2021</p>
+  <p><strong>Authors:</strong> <a href="https://github.com/audreymaniez">Audrey Maniez</a>, <a href="https://github.com/jkodu">Jey Nandakumar</a>.</p>
+  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>.</p>
+proposed: true
+rule_meta:
+  id: a25f45
+  name: "`headers` attribute specified on a cell refers to cells in the same `table` element"
+  rule_type: atomic
+  description: |
+    This rule checks that the `headers` attribute on a cell refer to other cells in the same `table` element.
+  accessibility_requirements:
+    'wcag20:1.3.1':
+      forConformance: true
+      failed: not satisfied
+      passed: further testing needed
+      inapplicable: further testing needed
+    'wcag-technique:H43':
+      forConformance: false
+      failed: not satisfied
+      passed: further testing needed
+      inapplicable: further testing needed
+  input_aspects:
+    - handle: DOM Tree
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
+    - handle: CSS Styling
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
+  last_modified: August 24th, 2021
+  scs_tested:
+    - handle: Info and Relationships
+      num: 1.3.1
+      level: A
 ---
-
-{% include_relative _proposed-banner.html %}
-
-Rule Type:
-:   atomic
-
-Rule ID:
-:   a25f45
-
-Last Modified:
-:   June 3, 2021
-
-Accessibility Requirements Mapping:
-:   [1.3.1 Info and Relationships (Level A)](https://www.w3.org/TR/WCAG21/#info-and-relationships)
-    - **Required for conformance** to WCAG 2.0 and later on level A and higher
-    - [Outcome](#outcome) mapping:
-        - Any `failed` outcomes: success criterion is not satisfied
-        - All `passed` outcomes: success criterion needs further testing
-        - An `inapplicable` outcome: success criterion needs further testing
-:   [H43: Using id and headers attributes to associate data cells with header cells in data tables](https://www.w3.org/WAI/WCAG21/Techniques/html/H43)
-    - Not required to conformance to any W3C accessibility recommendation.
-    - [Outcome](#outcome) mapping:
-        - Any `failed` outcomes: technique is not satisfied
-        - All `passed` outcomes: technique needs further testing
-        - An `inapplicable` outcome: technique needs further testing
-
-Input Aspects:
-:   [DOM Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom)
-:   [CSS Styling](https://www.w3.org/TR/act-rules-aspects/#input-aspects-css)
-
-## Description
-
-This rule checks that the `headers` attribute on a cell refer to other cells in the same `table` element.
 
 ## Applicability
 
@@ -392,31 +389,80 @@ The `table` is not [included in the accessibility tree][].
 
 ## Glossary
 
-{% include_relative glossary/attribute-value.md %}
-{% include_relative glossary/focusable.md %}
-{% include_relative glossary/included-in-the-accessibility-tree.md %}
-{% include_relative glossary/outcome.md %}
-{% include_relative glossary/visible.md %}
+### Attribute value {#attribute-value}
 
-## Acknowledgements
+The _attribute value_ of a content attribute set on an HTML element is the value that the attribute gets after being parsed and computed according to specifications. It may differ from the value that is actually written in the HTML code due to trimming whitespace or non-digits characters, default values, or case-insensitivity.
 
-This rule was written in the [ACT Rules community group](https://w3.org/community/act-r/), 
-with the support of the EU-funded [WAI-Tools Project](https://www.w3.org/WAI/about/projects/wai-tools/).
+Some notable case of attribute value, among others:
 
-### Authors
+- For [enumerated attributes][], the _attribute value_ is either the state of the attribute, or the keyword that maps to it; even for the default states. Thus `<input type="image" />` has an attribute value of either `Image Button` (the state) or `image` (the keyword mapping to it), both formulations having the same meaning; similarly, "an input element with a `type` _attribute value_ of `Text`" can be either `<input type="text" />`, `<input />` (missing value default), or `<input type="invalid" />` (invalid value default).
+- For [boolean attributes][], the _attribute value_ is `true` when the attribute is present and `false` otherwise. Thus `<button disabled>`, `<button disabled="disabled">` and `<button disabled="">` all have a `disabled` _attribute value_ of `true`.
+- For attributes whose value is used in a case-insensitive context, the _attribute value_ is the lowercase version of the value written in the HTML code.
+- For attributes that accept [numbers][], the _attribute value_ is the result of parsing the value written in the HTML code according to the rules for parsing this kind of number.
+- For attributes that accept sets of tokens, whether [space separated][] or [comma separated][], the _attribute value_ is the set of tokens obtained after parsing the set and, depending on the case, converting its items to lowercase (if the set is used in a case-insensitive context).
+- For `aria-*` attributes, the _attribute value_ is computed as indicated in the [WAI-ARIA specification][] and the [HTML Accessibility API Mappings][html aam].
 
-- [Audrey Maniez](https://github.com/audreymaniez)
-- [Jey Nandakumar](https://github.com/jkodu)
+This list is not exhaustive, and only serves as an illustration for some of the most common cases.
+
+The _attribute value_ of an [IDL attribute][] is the value returned on getting it. Note that when an [IDL attribute][] [reflects][reflect] a content attribute, they have the same attribute value.
+
+### Focusable {#focusable}
+
+Elements that can become the target of keyboard input as described in the [HTML](https://www.w3.org/TR/html) specification of [focusable](https://html.spec.whatwg.org/#focusable-area) and [can be focused](https://html.spec.whatwg.org/#specially-focusable).
+
+### Included in the accessibility tree {#included-in-the-accessibility-tree}
+
+Elements included in the accessibility tree of platform specific accessibility APIs. Elements in the accessibility tree are exposed to assistive technologies, allowing users to interact with the elements in a way that meet the requirements of the individual user.
+
+The general rules for when elements are included in the accessibility tree are defined in the [core accessibility API mappings](https://www.w3.org/TR/core-aam/). For native markup languages, such as HTML and SVG, additional rules for when elements are included in the accessibility tree can be found in the [HTML accessibility API mappings (working draft)](https://www.w3.org/TR/html-aam/) and the [SVG accessibility API mappings (working draft)](https://www.w3.org/TR/svg-aam/).
+
+For more details, see [examples of included in the accessibility tree][].
+
+**Note:** Users of assistive technologies might still be able to interact with elements that are not included in the accessibility tree. An example of this is a [focusable](#focusable) element with an `aria-hidden` attribute with a value of `true`. Such an element could still be interacted using sequential keyboard navigation regardless of the assistive technologies used, even though the element would not be included in the accessibility tree.
+[examples of included in the accessibility tree]: https://act-rules.github.io/pages/examples/included-in-the-accessibility-tree/
+
+### Outcome {#outcome}
+
+An _outcome_ is a conclusion that comes from evaluating an ACT Rule on a [test subject](https://www.w3.org/TR/act-rules-format/#test-subject) or one of its constituent [test target](https://www.w3.org/TR/act-rules-format/#test-target). An outcome can be one of the three following types:
+
+- **Inapplicable:** No part of the test subject matches the applicability
+- **Passed:** A [test target](https://www.w3.org/TR/act-rules-format/#test-target) meets all expectations
+- **Failed:** A [test target](https://www.w3.org/TR/act-rules-format/#test-target) does not meet all expectations
+
+**Note:** A rule has one `passed` or `failed` outcome for every [test target](https://www.w3.org/TR/act-rules-format/#test-target). When there are no test targets the rule has one `inapplicable` outcome. This means that each [test subject](https://www.w3.org/TR/act-rules-format/#test-subject) will have one or more outcomes.
+
+**Note:** Implementations using the [EARL10-Schema](https://www.w3.org/TR/EARL10-Schema/) can express the outcome with the [outcome property](https://www.w3.org/TR/EARL10-Schema/#outcome). In addition to `passed`, `failed` and `inapplicable`, EARL 1.0 also defined an `incomplete` outcome. While this cannot be the outcome of an ACT Rule when applied in its entirety, it often happens that rules are only partially evaluated. For example, when applicability was automated, but the expectations have to be evaluated manually. Such "interim" results can be expressed with the `incomplete` outcome.
+
+### Visible {#visible}
+
+Content perceivable through sight.
+
+Content is considered _visible_ if making it fully transparent would result in a difference in the pixels rendered for any part of the document that is currently within the viewport or can be brought into the viewport via scrolling.
+
+[Content is defined in WCAG](https://www.w3.org/TR/WCAG21/#dfn-content).
+
+For more details, see [examples of visible](https://act-rules.github.io/pages/examples/visible/).
+
+{% include implementations/a25f45.md %}
 
 ## Changelog
 
 This is the first version of this ACT rule.
 
-[attribute value]: #attribute-value 'Definition of Attribute Value'
-[included in the accessibility tree]: #included-in-the-accessibility-tree 'Definition of included in the accessibility tree'
-[visible]: #visible 'Definition of visible'
 [`cell`]: https://html.spec.whatwg.org/#concept-cell 'Definition of cell'
-[set of space separated tokens]: https://html.spec.whatwg.org/#set-of-space-separated-tokens 'Space separated tokens'
 [`table`]: https://html.spec.whatwg.org/#concept-table 'Definition of table'
+[attribute value]: #attribute-value 'Definition of Attribute Value'
+[boolean attributes]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attributes 'HTML Specification of Boolean Attribute'
+[comma separated]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#comma-separated-tokens 'HTML Specification of Comma Separated Tokens'
 [computes an adequate fallback header]: https://html.spec.whatwg.org/multipage/tables.html#header-and-data-cell-semantics 'Forming relationships between data cells and header cells'
+[enumerated attributes]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#enumerated-attribute 'HTML Specification of Enumerated Attribute'
+[html aam]: https://www.w3.org/TR/html-aam-1.0/#html-attribute-state-and-property-mappings 'Specification of HTML attributes value mapping to ARIA states and properties'
+[idl attribute]: https://heycam.github.io/webidl/#idl-attributes "Definition of Web IDL Attribute (Editor's Draft)"
+[included in the accessibility tree]: #included-in-the-accessibility-tree 'Definition of included in the accessibility tree'
+[numbers]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#numbers 'HTML Specification of Number Parsing'
+[reflect]: https://html.spec.whatwg.org/multipage/common-dom-interfaces.html#reflecting-content-attributes-in-idl-attributes 'HTML specification of Reflecting Content Attributes in IDL Attributes'
 [sc131]: https://www.w3.org/TR/WCAG21/#info-and-relationships 'WCAG 2.1 success criterion 1.3.1 Info and Relationships'
+[set of space separated tokens]: https://html.spec.whatwg.org/#set-of-space-separated-tokens 'Space separated tokens'
+[space separated]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#space-separated-tokens 'HTML Specification of Space Separated Tokens'
+[visible]: #visible 'Definition of visible'
+[wai-aria specification]: https://www.w3.org/TR/wai-aria-1.1/#propcharacteristic_value 'WAI-ARIA Specification of States and Properties Value'

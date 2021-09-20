@@ -6,51 +6,47 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/id-value-unique-3ea0c8.md
-# footer: > # Text in footer in HTML
-#   <p> This is the text in the footer </p>
+footer: |
+  <p><strong>Date:</strong> Updated August 24th, 2021</p>
+  <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/brynanders">Bryn Anderson</a>.</p>
+  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>.</p>
+proposed: true
+rule_meta:
+  id: 3ea0c8
+  name: "`id` attribute value is unique"
+  rule_type: atomic
+  description: |
+    This rule checks that all `id` attribute values on a single page are unique.
+  accessibility_requirements:
+    'wcag20:4.1.1':
+      forConformance: true
+      failed: not satisfied
+      passed: further testing needed
+      inapplicable: further testing needed
+    'wcag-technique:H93':
+      forConformance: false
+      failed: not satisfied
+      passed: satisfied
+      inapplicable: satisfied
+  input_aspects:
+    - handle: DOM Tree
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
+  last_modified: August 24th, 2021
+  scs_tested:
+    - handle: Parsing
+      num: 4.1.1
+      level: A
 ---
-
-{% include_relative _proposed-banner.html %}
-
-Rule Type:
-:   atomic
-
-Rule ID:
-:   3ea0c8
-
-Last Modified:
-:   Jun 14, 2021
-
-Accessibility Requirements Mapping:
-:   [4.1.1 Parsing (Level A)](https://www.w3.org/TR/WCAG21/#parsing)
-    - **Required for conformance** to WCAG 2.0 and later on level A and higher
-    - [Outcome](#outcome) mapping:
-        - Any `failed` outcomes: success criterion is not satisfied
-        - All `passed` outcomes: success criterion needs further testing
-        - An `inapplicable` outcome: success criterion needs further testing
-:   [H93: Ensuring that id attributes are unique on a Web page](https://www.w3.org/WAI/WCAG21/Techniques/html/H93)
-    - Not required to conformance to any W3C accessibility recommendation.
-    - [Outcome](#outcome) mapping:
-        - Any `failed` outcomes: technique is not satisfied
-        - All `passed` outcomes: technique is satisfied
-        - An `inapplicable` outcome: technique is satisfied
-
-Input Aspects:
-:   [DOM Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom)
-
-## Description
-
-This rule checks that all `id` attribute values on a single page are unique.
 
 ## Applicability
 
-This rule applies to any `id` attribute whose value is not an empty string (`""`), specified on a HTML or SVG element.
+This rule applies to any `id` attribute whose value is not an empty string (`""`), specified on a [HTML or SVG element][].
 
 **Note:** Elements that are neither [included in the accessibility tree][] nor [visible][] are still considered for this rule.
 
 ## Expectation
 
-The value of the attribute is unique across all other `id` attributes specified on HTML or SVG elements that exist within the same [document tree](https://dom.spec.whatwg.org/#document-trees) or [shadow tree](https://dom.spec.whatwg.org/#shadow-trees) as the element on which the applicable `id` attribute is specified.
+The value of the attribute is unique across all other `id` attributes specified on [HTML or SVG elements][html or svg element] that exist within the same [document tree](https://dom.spec.whatwg.org/#document-trees) or [shadow tree](https://dom.spec.whatwg.org/#shadow-trees) as the element on which the applicable `id` attribute is specified.
 
 ## Assumptions
 
@@ -175,26 +171,72 @@ These `id` attributes have an empty value.
 
 ## Glossary
 
-{% include_relative glossary/focusable.md %}
-{% include_relative glossary/included-in-the-accessibility-tree.md %}
-{% include_relative glossary/outcome.md %}
-{% include_relative glossary/programmatic-label.md %}
-{% include_relative glossary/visible.md %}
+### Focusable {#focusable}
 
-## Acknowledgements
+Elements that can become the target of keyboard input as described in the [HTML](https://www.w3.org/TR/html) specification of [focusable](https://html.spec.whatwg.org/#focusable-area) and [can be focused](https://html.spec.whatwg.org/#specially-focusable).
 
-This rule was written in the [ACT Rules community group](https://w3.org/community/act-r/), 
-with the support of the EU-funded [WAI-Tools Project](https://www.w3.org/WAI/about/projects/wai-tools/).
+### Included in the accessibility tree {#included-in-the-accessibility-tree}
 
-### Authors
+Elements included in the accessibility tree of platform specific accessibility APIs. Elements in the accessibility tree are exposed to assistive technologies, allowing users to interact with the elements in a way that meet the requirements of the individual user.
 
-- [Anne Thyme Nørregaard](https://github.com/annethyme)
-- [Bryn Anderson](https://github.com/brynanders)
+The general rules for when elements are included in the accessibility tree are defined in the [core accessibility API mappings](https://www.w3.org/TR/core-aam/). For native markup languages, such as HTML and SVG, additional rules for when elements are included in the accessibility tree can be found in the [HTML accessibility API mappings (working draft)](https://www.w3.org/TR/html-aam/) and the [SVG accessibility API mappings (working draft)](https://www.w3.org/TR/svg-aam/).
+
+For more details, see [examples of included in the accessibility tree][].
+
+**Note:** Users of assistive technologies might still be able to interact with elements that are not included in the accessibility tree. An example of this is a [focusable](#focusable) element with an `aria-hidden` attribute with a value of `true`. Such an element could still be interacted using sequential keyboard navigation regardless of the assistive technologies used, even though the element would not be included in the accessibility tree.
+[examples of included in the accessibility tree]: https://act-rules.github.io/pages/examples/included-in-the-accessibility-tree/
+
+### Namespaced Element {#namespaced-element}
+
+An [element][] with a specific [namespaceURI][] value from [HTML namespaces][]. For example an "SVG element" is any element with the "SVG namespace", which is `http://www.w3.org/2000/svg`.
+
+Namespaced elements are not limited to elements described in a specification. They also include custom elements. Elements such as `a` and `title` have a different namespace depending on where they are used. For example a `title` in an HTML page usually has the HTML namespace. When used in an `svg` element, a `title` element has the SVG namespace instead.
+
+### Outcome {#outcome}
+
+An _outcome_ is a conclusion that comes from evaluating an ACT Rule on a [test subject](https://www.w3.org/TR/act-rules-format/#test-subject) or one of its constituent [test target](https://www.w3.org/TR/act-rules-format/#test-target). An outcome can be one of the three following types:
+
+- **Inapplicable:** No part of the test subject matches the applicability
+- **Passed:** A [test target](https://www.w3.org/TR/act-rules-format/#test-target) meets all expectations
+- **Failed:** A [test target](https://www.w3.org/TR/act-rules-format/#test-target) does not meet all expectations
+
+**Note:** A rule has one `passed` or `failed` outcome for every [test target](https://www.w3.org/TR/act-rules-format/#test-target). When there are no test targets the rule has one `inapplicable` outcome. This means that each [test subject](https://www.w3.org/TR/act-rules-format/#test-subject) will have one or more outcomes.
+
+**Note:** Implementations using the [EARL10-Schema](https://www.w3.org/TR/EARL10-Schema/) can express the outcome with the [outcome property](https://www.w3.org/TR/EARL10-Schema/#outcome). In addition to `passed`, `failed` and `inapplicable`, EARL 1.0 also defined an `incomplete` outcome. While this cannot be the outcome of an ACT Rule when applied in its entirety, it often happens that rules are only partially evaluated. For example, when applicability was automated, but the expectations have to be evaluated manually. Such "interim" results can be expressed with the `incomplete` outcome.
+
+### Programmatic Label {#programmatic-label}
+
+Element L is a _programmatic label_ of target element T if either:
+
+- T is a [labeled control][] of L; or
+- L is referenced by ID in the `aria-labelledby` attribute of T.
+
+For more details, see [examples of programmatic label][].
+
+**Note**: a given element may have more than one programmatic label.
+
+### Visible {#visible}
+
+Content perceivable through sight.
+
+Content is considered _visible_ if making it fully transparent would result in a difference in the pixels rendered for any part of the document that is currently within the viewport or can be brought into the viewport via scrolling.
+
+[Content is defined in WCAG](https://www.w3.org/TR/WCAG21/#dfn-content).
+
+For more details, see [examples of visible](https://act-rules.github.io/pages/examples/visible/).
+
+{% include implementations/3ea0c8.md %}
 
 ## Changelog
 
 This is the first version of this ACT rule.
 
+[element]: https://dom.spec.whatwg.org/#element 'DOM element, 2021/05/31'
+[examples of programmatic label]: https://act-rules.github.io/pages/examples/programmatic-label/
+[html namespaces]: https://infra.spec.whatwg.org/#namespaces 'HTML namespace, 2021/05/31'
+[html or svg element]: #namespaced-element
 [included in the accessibility tree]: #included-in-the-accessibility-tree 'Definition of included in the accessibility tree'
+[labeled control]: https://html.spec.whatwg.org/multipage/forms.html#labeled-control 'Definition of labeled control'
+[namespaceuri]: https://dom.spec.whatwg.org/#dom-element-namespaceuri 'DOM Element namespaceURI, 2021/05/31'
 [programmatic label]: #programmatic-label 'Definition of programmatic label'
 [visible]: #visible 'Definition of visible'

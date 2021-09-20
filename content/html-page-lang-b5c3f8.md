@@ -6,39 +6,37 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/html-page-lang-b5c3f8.md
-# footer: > # Text in footer in HTML
-#   <p> This is the text in the footer </p>
+footer: |
+  <p><strong>Date:</strong> Updated August 24th, 2021</p>
+  <p><strong>Authors:</strong> <a href="https://github.com/jkodu">Jey Nandakumar</a>. <em>Previous Authors:</em> <a href="https://github.com/annika-FTB">Annika Nietzio</a>.</p>
+  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>.</p>
+proposed: false
+rule_meta:
+  id: b5c3f8
+  name: "HTML page has `lang` attribute"
+  rule_type: atomic
+  description: |
+    This rule checks that an HTML page has a non-empty `lang` attribute.
+  accessibility_requirements:
+    'wcag20:3.1.1':
+      forConformance: true
+      failed: not satisfied
+      passed: further testing needed
+      inapplicable: further testing needed
+    'wcag-technique:H57':
+      forConformance: false
+      failed: not satisfied
+      passed: further testing needed
+      inapplicable: further testing needed
+  input_aspects:
+    - handle: DOM Tree
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
+  last_modified: July 16th, 2021
+  scs_tested:
+    - handle: Language of Page
+      num: 3.1.1
+      level: A
 ---
-
-Rule Type:
-:   atomic
-
-Rule ID:
-:   b5c3f8
-
-Last Modified:
-:   March 5, 2020
-
-Accessibility Requirements Mapping:
-:   [3.1.1 Language of Page (Level A)](https://www.w3.org/TR/WCAG21/#language-of-page)
-    - **Required for conformance** to WCAG 2.0 and later on level A and higher
-    - [Outcome](#outcome) mapping:
-        - Any `failed` outcomes: success criterion is not satisfied
-        - All `passed` outcomes: success criterion needs further testing
-        - An `inapplicable` outcome: success criterion needs further testing
-:   [H57: Using language attributes on the html element](https://www.w3.org/WAI/WCAG21/Techniques/html/H57)
-    - Not required to conformance to any W3C accessibility recommendation.
-    - [Outcome](#outcome) mapping:
-        - Any `failed` outcomes: technique is not satisfied
-        - All `passed` outcomes: technique needs further testing
-        - An `inapplicable` outcome: technique needs further testing
-
-Input Aspects:
-:   [DOM Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom)
-
-## Description
-
-This rule checks that an HTML page has a non-empty `lang` attribute.
 
 ## Applicability
 
@@ -63,6 +61,8 @@ _There are no major accessibility support issues known for this rule._
 
 ## Background
 
+- [HTML page `lang` attribute has valid language tag](https://act-rules.github.io/rules/bf051a)
+- [HTML page language subtag matches default language](https://act-rules.github.io/rules/ucwvc8)
 - [Understanding Success Criterion 3.1.1: Language of Page](https://www.w3.org/WAI/WCAG21/Understanding/language-of-page.html)
 - [H57: Using language attributes on the html element](https://www.w3.org/WAI/WCAG21/Techniques/html/H57)
 - [BCP 47: Tags for Identifying Languages](https://www.ietf.org/rfc/bcp/bcp47.txt)
@@ -136,18 +136,7 @@ This rule does not apply to `math` element.
 
 {% include_relative glossary/outcome.md %}
 
-## Acknowledgements
-
-This rule was written in the [ACT Rules community group](https://w3.org/community/act-r/), 
-with the support of the EU-funded [WAI-Tools Project](https://www.w3.org/WAI/about/projects/wai-tools/).
-
-### Authors
-
-- [Jey Nandakumar](https://github.com/jkodu)
-
-### Previous Authors
-
-- [Annika Nietzio](https://github.com/annika-FTB)
+{% include implementations/b5c3f8.md %}
 
 ## Changelog
 

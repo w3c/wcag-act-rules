@@ -6,54 +6,53 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/image-accessible-name-descriptive-qt1vmo.md
-# footer: > # Text in footer in HTML
-#   <p> This is the text in the footer </p>
+footer: |
+  <p><strong>Date:</strong> Updated August 24th, 2021</p>
+  <p><strong>Authors:</strong> <a href="https://github.com/wilcofiers">Wilco Fiers</a>.</p>
+  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>.</p>
+  <p><strong>Assets:</strong> test cases use assets from the following sources: W3C; HTML and W3C logo. Wikimedia; Fireworks image. Adobe; PDF logo.</p>
+proposed: true
+rule_meta:
+  id: qt1vmo
+  name: "Image accessible name is descriptive"
+  rule_type: atomic
+  description: |
+    This rule checks that the accessible names of images serve an equivalent purpose to the image.
+  accessibility_requirements:
+    'wcag20:1.1.1':
+      forConformance: true
+      failed: not satisfied
+      passed: further testing needed
+      inapplicable: further testing needed
+    'wcag-technique:G94':
+      forConformance: false
+      failed: not satisfied
+      passed: further testing needed
+      inapplicable: further testing needed
+    'wcag-technique:G95':
+      forConformance: false
+      failed: not satisfied
+      passed: further testing needed
+      inapplicable: further testing needed
+  input_aspects:
+    - handle: Accessibility Tree
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-accessibility
+    - handle: DOM Tree
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
+    - handle: CSS Styling
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
+    - handle: Language
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-text
+  last_modified: August 24th, 2021
+  scs_tested:
+    - handle: Non-text Content
+      num: 1.1.1
+      level: A
 ---
-
-{% include_relative _proposed-banner.html %}
-
-Rule Type:
-:   atomic
-
-Rule ID:
-:   qt1vmo
-
-Last Modified:
-:   June 3, 2021
-
-Accessibility Requirements Mapping:
-:   [1.1.1 Non-text Content (Level A)](https://www.w3.org/TR/WCAG21/#non-text-content)
-    - **Required for conformance** to WCAG 2.0 and later on level A and higher
-    - [Outcome](#outcome) mapping:
-        - Any `failed` outcomes: success criterion is not satisfied
-        - All `passed` outcomes: success criterion needs further testing
-        - An `inapplicable` outcome: success criterion needs further testing
-:   [G94: Providing short text alternative for non-text content that serves the same purpose and presents the same information as the non-text content](https://www.w3.org/WAI/WCAG21/Techniques/general/G94)
-    - Not required to conformance to any W3C accessibility recommendation.
-    - [Outcome](#outcome) mapping:
-        - Any `failed` outcomes: technique is not satisfied
-        - All `passed` outcomes: technique needs further testing
-        - An `inapplicable` outcome: technique needs further testing
-:   [G95: Providing short text alternatives that provide a brief description of the non-text content](https://www.w3.org/WAI/WCAG21/Techniques/general/G95)
-    - Not required to conformance to any W3C accessibility recommendation.
-    - [Outcome](#outcome) mapping:
-        - Any `failed` outcomes: technique is not satisfied
-        - All `passed` outcomes: technique needs further testing
-        - An `inapplicable` outcome: technique needs further testing
-
-Input Aspects:
-:   [Accessibility Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-accessibility)
-:   [DOM Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom)
-:   [CSS Styling](https://www.w3.org/TR/act-rules-aspects/#input-aspects-css)
-:   [Language](https://www.w3.org/TR/act-rules-aspects/#input-aspects-text)
-
-## Description
-
-This rule checks that the accessible names of images serve an equivalent purpose to the image.
 
 ## Applicability
 
-This rule applies to any `img`, `canvas` or `svg` element that is [visible][] and has a non-empty [accessible name][], except if one of the following is true:
+This rule applies to any `img`, `canvas` or `svg` element that is [visible][] and has a non-empty [accessible name][], except if one or more of the following is true:
 
 - The element has an [ancestor][] in the [flat tree][] that is [named from author][]; or
 - The element is an `img` element where the [current request][]'s [state][image request state] is not [completely available][].
@@ -297,38 +296,72 @@ This is a `div` element with a background image. Background images must be teste
 
 ## Glossary
 
-{% include_relative glossary/accessible-name.md %}
-{% include_relative glossary/focusable.md %}
-{% include_relative glossary/included-in-the-accessibility-tree.md %}
-{% include_relative glossary/outcome.md %}
-{% include_relative glossary/visible.md %}
+### Accessible Name {#accessible-name}
 
-## Acknowledgements
+The _accessible name_ is the programmatically determined name of a user interface element that is [included in the accessibility tree](#included-in-the-accessibility-tree).
 
-This rule was written in the [ACT Rules community group](https://w3.org/community/act-r/), 
-with the support of the EU-funded [WAI-Tools Project](https://www.w3.org/WAI/about/projects/wai-tools/).
+The accessible name is calculated using the [accessible name and description computation][].
 
-### Authors
+For native markup languages, such as HTML and SVG, additional information on how to calculate the accessible name can be found in [HTML Accessibility API Mappings 1.0, Accessible Name and Description Computation (working draft)](https://www.w3.org/TR/html-aam/#accessible-name-and-description-computation) and [SVG Accessibility API Mappings, Name and Description (working draft)](https://www.w3.org/TR/svg-aam/#mapping_additional).
 
-- [Wilco Fiers](https://github.com/wilcofiers)
+For more details, see [examples of accessible name][].
 
-### Assets
+**Note:** As per the [accessible name and description computation][], each element always has an accessible name. When no accessible name is provided, the element will nonetheless be assigned an empty (`""`) one.
 
-- W3C; HTML and W3C logo
-- Wikimedia; Fireworks image
-- Adobe; PDF logo
+**Note:** As per the [accessible name and description computation][], accessible names are [flat string](https://www.w3.org/TR/accname-1.1/#terminology) trimmed of leading and trailing whitespace. Notably, it is not possible for a non-empty accessible name to be composed only of whitespace since these must be trimmed.
+
+### Focusable {#focusable}
+
+Elements that can become the target of keyboard input as described in the [HTML](https://www.w3.org/TR/html) specification of [focusable](https://html.spec.whatwg.org/#focusable-area) and [can be focused](https://html.spec.whatwg.org/#specially-focusable).
+
+### Included in the accessibility tree {#included-in-the-accessibility-tree}
+
+Elements included in the accessibility tree of platform specific accessibility APIs. Elements in the accessibility tree are exposed to assistive technologies, allowing users to interact with the elements in a way that meet the requirements of the individual user.
+
+The general rules for when elements are included in the accessibility tree are defined in the [core accessibility API mappings](https://www.w3.org/TR/core-aam/). For native markup languages, such as HTML and SVG, additional rules for when elements are included in the accessibility tree can be found in the [HTML accessibility API mappings (working draft)](https://www.w3.org/TR/html-aam/) and the [SVG accessibility API mappings (working draft)](https://www.w3.org/TR/svg-aam/).
+
+For more details, see [examples of included in the accessibility tree][].
+
+**Note:** Users of assistive technologies might still be able to interact with elements that are not included in the accessibility tree. An example of this is a [focusable](#focusable) element with an `aria-hidden` attribute with a value of `true`. Such an element could still be interacted using sequential keyboard navigation regardless of the assistive technologies used, even though the element would not be included in the accessibility tree.
+[examples of included in the accessibility tree]: https://act-rules.github.io/pages/examples/included-in-the-accessibility-tree/
+
+### Outcome {#outcome}
+
+An _outcome_ is a conclusion that comes from evaluating an ACT Rule on a [test subject](https://www.w3.org/TR/act-rules-format/#test-subject) or one of its constituent [test target](https://www.w3.org/TR/act-rules-format/#test-target). An outcome can be one of the three following types:
+
+- **Inapplicable:** No part of the test subject matches the applicability
+- **Passed:** A [test target](https://www.w3.org/TR/act-rules-format/#test-target) meets all expectations
+- **Failed:** A [test target](https://www.w3.org/TR/act-rules-format/#test-target) does not meet all expectations
+
+**Note:** A rule has one `passed` or `failed` outcome for every [test target](https://www.w3.org/TR/act-rules-format/#test-target). When there are no test targets the rule has one `inapplicable` outcome. This means that each [test subject](https://www.w3.org/TR/act-rules-format/#test-subject) will have one or more outcomes.
+
+**Note:** Implementations using the [EARL10-Schema](https://www.w3.org/TR/EARL10-Schema/) can express the outcome with the [outcome property](https://www.w3.org/TR/EARL10-Schema/#outcome). In addition to `passed`, `failed` and `inapplicable`, EARL 1.0 also defined an `incomplete` outcome. While this cannot be the outcome of an ACT Rule when applied in its entirety, it often happens that rules are only partially evaluated. For example, when applicability was automated, but the expectations have to be evaluated manually. Such "interim" results can be expressed with the `incomplete` outcome.
+
+### Visible {#visible}
+
+Content perceivable through sight.
+
+Content is considered _visible_ if making it fully transparent would result in a difference in the pixels rendered for any part of the document that is currently within the viewport or can be brought into the viewport via scrolling.
+
+[Content is defined in WCAG](https://www.w3.org/TR/WCAG21/#dfn-content).
+
+For more details, see [examples of visible](https://act-rules.github.io/pages/examples/visible/).
+
+{% include implementations/qt1vmo.md %}
 
 ## Changelog
 
 This is the first version of this ACT rule.
 
+[accessible name and description computation]: https://www.w3.org/TR/accname 'Accessible Name and Description Computation'
 [accessible name]: #accessible-name 'Definition of accessible name'
-[visible]: #visible 'Definition of visible'
-[included in the accessibility tree]: #included-in-the-accessibility-tree 'Definition of included in the accessibility tree'
-[non-text content]: https://www.w3.org/TR/WCAG21/#dfn-non-text-content 'WCAG 2.1 definition of non-text content'
+[ancestor]: https://dom.spec.whatwg.org/#concept-tree-ancestor 'DOM definition of ancestor, 2020/03/06'
 [completely available]: https://html.spec.whatwg.org/#img-all 'HTML definition of Completely available, 2020/03/06'
 [current request]: https://html.spec.whatwg.org/#current-request 'HTML definition of Current request, 2020/03/06'
-[image request state]: https://html.spec.whatwg.org/#img-req-state 'HTML definition of Image request state, 2020/03/06'
-[named from author]: https://www.w3.org/TR/wai-aria-1.1/#namecalculation 'WAI-ARIA definition of Named from author'
+[examples of accessible name]: https://act-rules.github.io/pages/examples/accessible-name/
 [flat tree]: https://drafts.csswg.org/css-scoping/#flat-tree 'CSS Scoping definition of Flat tree, working draft'
-[ancestor]: https://dom.spec.whatwg.org/#concept-tree-ancestor 'DOM definition of ancestor, 2020/03/06'
+[image request state]: https://html.spec.whatwg.org/#img-req-state 'HTML definition of Image request state, 2020/03/06'
+[included in the accessibility tree]: #included-in-the-accessibility-tree 'Definition of included in the accessibility tree'
+[named from author]: https://www.w3.org/TR/wai-aria-1.1/#namecalculation 'WAI-ARIA definition of Named from author'
+[non-text content]: https://www.w3.org/TR/WCAG21/#dfn-non-text-content 'WCAG 2.1 definition of non-text content'
+[visible]: #visible 'Definition of visible'

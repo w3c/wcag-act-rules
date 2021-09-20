@@ -6,43 +6,44 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/meta-viewport-b4f0c3.md
-# footer: > # Text in footer in HTML
-#   <p> This is the text in the footer </p>
+footer: |
+  <p><strong>Date:</strong> Updated August 24th, 2021</p>
+  <p><strong>Authors:</strong> <a href="https://github.com/audreymaniez">Audrey Maniez</a>, <a href="https://github.com/jkodu">Jey Nandakumar</a>.</p>
+  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>.</p>
+proposed: true
+rule_meta:
+  id: b4f0c3
+  name: "`meta` `viewport` allows for zoom"
+  rule_type: atomic
+  description: |
+    This rule checks that the `meta` element retains the user agent ability to zoom.
+  accessibility_requirements:
+    'wcag20:1.4.4':
+      forConformance: true
+      failed: not satisfied
+      passed: further testing needed
+      inapplicable: further testing needed
+    'wcag20:1.4.10':
+      forConformance: true
+      failed: not satisfied
+      passed: further testing needed
+      inapplicable: further testing needed
+  input_aspects:
+    - handle: DOM Tree
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
+  last_modified: August 24th, 2021
+  scs_tested:
+    - handle: Resize text
+      num: 1.4.4
+      level: AA
+    - handle: Reflow
+      num: 1.4.10
+      level: AA
 ---
-
-Rule Type:
-:   atomic
-
-Rule ID:
-:   b4f0c3
-
-Last Modified:
-:   Oct 1, 2020
-
-Accessibility Requirements Mapping:
-:   [1.4.4 Resize text (Level AA)](https://www.w3.org/TR/WCAG21/#resize-text)
-    - **Required for conformance** to WCAG 2.0 and later on level AA and higher
-    - [Outcome](#outcome) mapping:
-        - Any `failed` outcomes: success criterion is not satisfied
-        - All `passed` outcomes: success criterion needs further testing
-        - An `inapplicable` outcome: success criterion needs further testing
-:   [1.4.10 Reflow (Level AA)](https://www.w3.org/TR/WCAG21/#reflow)
-    - **Required for conformance** to WCAG 2.1 on level AA and higher
-    - [Outcome](#outcome) mapping:
-        - Any `failed` outcomes: success criterion is not satisfied
-        - All `passed` outcomes: success criterion needs further testing
-        - An `inapplicable` outcome: success criterion needs further testing
-
-Input Aspects:
-:   [DOM Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom)
-
-## Description
-
-This rule checks that the `meta` element retains the user agent ability to zoom.
 
 ## Applicability
 
-The rule applies to each `meta` element with a `name` attribute whose value is a [case-insensitive][] match for `viewport` and has a `content` attribute.
+This rule applies to each `meta` element with a `name` attribute whose value is a [case-insensitive][] match for `viewport` and has a `content` attribute.
 
 ## Expectation
 
@@ -64,6 +65,8 @@ If any of the following is false, this rule can fail while Success Criteria [1.4
 Desktop browsers ignore the viewport `meta` element, and most modern mobile browsers either ignore it by default or have an accessibility option which will allow zooming. This rule is not relevant for desktop browsers, nor for most modern mobile browsers. Only users with older mobile browsers can experience issues tested by this rule.
 
 ## Background
+
+This rule is designed specifically for [1.4.4 Resize text][sc144], which requires that text can be resized up to 200%. Because text that can not be resized up to 200% can not fit in an area of 320 by 256 [CSS pixels][], this rule maps to [1.4.10 Reflow][sc1410] as well. All passed examples in this rule satisfy both success criteria.
 
 - [Understanding Success Criterion 1.4.4: Resize text](https://www.w3.org/WAI/WCAG21/Understanding/resize-text)
 - [HTML Specification - The `meta` element][meta]
@@ -247,8 +250,8 @@ There is no viewport `meta` element.
 ```html
 <html>
 	<head>
-		<title>Simple page showing random text</title>
-		<meta http-equiv="refresh" content="10; URL='https://github.com'" />
+		<title>Lorem ipsum</title>
+		<meta charset="UTF-8" />
 	</head>
 	<body>
 		<p>
@@ -278,18 +281,29 @@ This viewport `meta` element does not have a `content` attribute.
 
 ## Glossary
 
-{% include_relative glossary/outcome.md %}
-{% include_relative glossary/visible.md %}
+### Outcome {#outcome}
 
-## Acknowledgements
+An _outcome_ is a conclusion that comes from evaluating an ACT Rule on a [test subject](https://www.w3.org/TR/act-rules-format/#test-subject) or one of its constituent [test target](https://www.w3.org/TR/act-rules-format/#test-target). An outcome can be one of the three following types:
 
-This rule was written in the [ACT Rules community group](https://w3.org/community/act-r/), 
-with the support of the EU-funded [WAI-Tools Project](https://www.w3.org/WAI/about/projects/wai-tools/).
+- **Inapplicable:** No part of the test subject matches the applicability
+- **Passed:** A [test target](https://www.w3.org/TR/act-rules-format/#test-target) meets all expectations
+- **Failed:** A [test target](https://www.w3.org/TR/act-rules-format/#test-target) does not meet all expectations
 
-### Authors
+**Note:** A rule has one `passed` or `failed` outcome for every [test target](https://www.w3.org/TR/act-rules-format/#test-target). When there are no test targets the rule has one `inapplicable` outcome. This means that each [test subject](https://www.w3.org/TR/act-rules-format/#test-subject) will have one or more outcomes.
 
-- [Audrey Maniez](https://github.com/audreymaniez)
-- [Jey Nandakumar](https://github.com/jkodu)
+**Note:** Implementations using the [EARL10-Schema](https://www.w3.org/TR/EARL10-Schema/) can express the outcome with the [outcome property](https://www.w3.org/TR/EARL10-Schema/#outcome). In addition to `passed`, `failed` and `inapplicable`, EARL 1.0 also defined an `incomplete` outcome. While this cannot be the outcome of an ACT Rule when applied in its entirety, it often happens that rules are only partially evaluated. For example, when applicability was automated, but the expectations have to be evaluated manually. Such "interim" results can be expressed with the `incomplete` outcome.
+
+### Visible {#visible}
+
+Content perceivable through sight.
+
+Content is considered _visible_ if making it fully transparent would result in a difference in the pixels rendered for any part of the document that is currently within the viewport or can be brought into the viewport via scrolling.
+
+[Content is defined in WCAG](https://www.w3.org/TR/WCAG21/#dfn-content).
+
+For more details, see [examples of visible](https://act-rules.github.io/pages/examples/visible/).
+
+{% include implementations/b4f0c3.md %}
 
 ## Changelog
 
@@ -297,11 +311,11 @@ This is the first version of this ACT rule.
 
 [case-insensitive]: https://infra.spec.whatwg.org/#ascii-case-insensitive 'ASCII case-insensitive'
 [content]: https://www.w3.org/TR/WCAG21/#dfn-content 'content (Web content)'
+[css pixels]: https://www.w3.org/TR/css3-values/#reference-pixel 'CSS 3 definition, reference pixel'
 [maximum-scale]: https://www.w3.org/TR/css-device-adapt-1/#min-scale-max-scale 'The initial-scale, minimum-scale, and maximum-scale properties'
 [meta]: https://html.spec.whatwg.org/#the-meta-element 'The meta element'
 [page]: https://www.w3.org/TR/WCAG21/#dfn-web-page-s 'Web page'
+[sc1410]: https://www.w3.org/TR/WCAG21/#reflow 'WCAG 2.1 Success Criterion 1.4.10 Reflow'
+[sc144]: https://www.w3.org/TR/WCAG21/#resize-text 'WCAG 2.1 Success Criterion 1.4.4 Resize text'
 [user-scalable]: https://www.w3.org/TR/css-device-adapt-1/#user-scalable 'The user-scalable property'
 [visible]: #visible 'Definition of visible'
-[css pixels]: https://www.w3.org/TR/css3-values/#reference-pixel 'CSS 3 definition, reference pixel'
-[sc144]: https://www.w3.org/TR/WCAG21/#resize-text 'Success Criterion 1.4.4 Resize text'
-[sc1410]: https://www.w3.org/TR/WCAG21/#reflow 'Success Criterion 1.4.10 Reflow'

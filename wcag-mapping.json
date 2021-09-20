@@ -6,7 +6,8 @@
       "successCriteria": [
         "name-role-value"
       ],
-      "wcagTechniques": []
+      "wcagTechniques": [],
+      "proposed": false
     },
     {
       "title": "HTML page has lang attribute",
@@ -16,7 +17,8 @@
       ],
       "wcagTechniques": [
         "H57"
-      ]
+      ],
+      "proposed": false
     },
     {
       "title": "HTML page lang attribute has valid language tag",
@@ -26,7 +28,8 @@
       ],
       "wcagTechniques": [
         "H57"
-      ]
+      ],
+      "proposed": false
     },
     {
       "title": "HTML page lang and xml:lang attributes have matching values",
@@ -34,7 +37,8 @@
       "successCriteria": [
         "language-of-page"
       ],
-      "wcagTechniques": []
+      "wcagTechniques": [],
+      "proposed": false
     },
     {
       "title": "HTML page has non-empty title",
@@ -45,7 +49,8 @@
       "wcagTechniques": [
         "G88",
         "H25"
-      ]
+      ],
+      "proposed": false
     },
     {
       "title": "Image button has non-empty accessible name",
@@ -57,7 +62,8 @@
       "wcagTechniques": [
         "G94",
         "G95"
-      ]
+      ],
+      "proposed": false
     },
     {
       "title": "Image has non-empty accessible name",
@@ -68,7 +74,8 @@
       "wcagTechniques": [
         "G94",
         "G95"
-      ]
+      ],
+      "proposed": false
     },
     {
       "title": "aria-* attribute is defined in WAI-ARIA",

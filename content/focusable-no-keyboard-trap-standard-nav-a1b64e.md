@@ -6,32 +6,30 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/focusable-no-keyboard-trap-standard-nav-a1b64e.md
-# footer: > # Text in footer in HTML
-#   <p> This is the text in the footer </p>
+footer: |
+  <p><strong>Date:</strong> Updated August 24th, 2021</p>
+  <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/carlosapaduarte">Carlos Duarte</a>, <a href="https://github.com/DagfinnRomen">Dagfinn Rømen</a>, <a href="https://github.com/geirsf">Geir Sindre Fossøy</a>, <a href="https: //github.com/MaliinO">Malin Øvrebø</a>, <a href="https://github.com/nitedog">Shadi Abou-Zahra</a>, <a href="https://github.com/skotkjerra">Stein Erik Skotkjerra</a>.</p>
+  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>.</p>
+proposed: true
+rule_meta:
+  id: a1b64e
+  name: "Focusable element has no keyboard trap via standard navigation"
+  rule_type: atomic
+  description: |
+    This rule checks if it is possible to use standard keyboard navigation to navigate through all content on a web page without becoming trapped in any element.
+  accessibility_requirements:
+    null
+  input_aspects:
+    - handle: DOM Tree
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
+    - handle: CSS Styling
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
+  last_modified: August 24th, 2021
 ---
-
-{% include_relative _proposed-banner.html %}
-
-Rule Type:
-:   atomic
-
-Rule ID:
-:   a1b64e
-
-Last Modified:
-:   June 3, 2021
-
-Input Aspects:
-:   [DOM Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom)
-:   [CSS Styling](https://www.w3.org/TR/act-rules-aspects/#input-aspects-css)
-
-## Description
-
-This rule checks if it is possible to use standard keyboard navigation to navigate through all content on a web page without becoming trapped in any element.
 
 ## Applicability
 
-This rule applies to any HTML or SVG element that is [focusable][].
+This rule applies to any [HTML or SVG element][] that is [focusable][].
 
 **Note:** This rule only applies to HTML and SVG. Thus, it is a partial check for WCAG 2.0 success criterion 2.1.2, which applies to all content.
 
@@ -159,27 +157,56 @@ Hidden element using `visibility:hidden`.
 
 ## Glossary
 
-{% include_relative glossary/focusable.md %}
-{% include_relative glossary/outcome.md %}
-{% include_relative glossary/standard-keyboard-navigation.md %}
+### Focusable {#focusable}
 
-## Acknowledgements
+Elements that can become the target of keyboard input as described in the [HTML](https://www.w3.org/TR/html) specification of [focusable](https://html.spec.whatwg.org/#focusable-area) and [can be focused](https://html.spec.whatwg.org/#specially-focusable).
 
-This rule was written in the [ACT Rules community group](https://w3.org/community/act-r/), 
-with the support of the EU-funded [WAI-Tools Project](https://www.w3.org/WAI/about/projects/wai-tools/).
+### Namespaced Element {#namespaced-element}
 
-### Authors
+An [element][] with a specific [namespaceURI][] value from [HTML namespaces][]. For example an "SVG element" is any element with the "SVG namespace", which is `http://www.w3.org/2000/svg`.
 
-- [Anne Thyme Nørregaard](https://github.com/annethyme)
-- [Carlos Duarte](https://github.com/carlosapaduarte)
-- [Dagfinn Rømen](https://github.com/DagfinnRomen)
-- [Geir Sindre Fossøy](https://github.com/geirsf)
-- [Malin Øvrebø](https: //github.com/MaliinO)
-- [Shadi Abou-Zahra](https://github.com/nitedog)
-- [Stein Erik Skotkjerra](https://github.com/skotkjerra)
+Namespaced elements are not limited to elements described in a specification. They also include custom elements. Elements such as `a` and `title` have a different namespace depending on where they are used. For example a `title` in an HTML page usually has the HTML namespace. When used in an `svg` element, a `title` element has the SVG namespace instead.
+
+### Outcome {#outcome}
+
+An _outcome_ is a conclusion that comes from evaluating an ACT Rule on a [test subject](https://www.w3.org/TR/act-rules-format/#test-subject) or one of its constituent [test target](https://www.w3.org/TR/act-rules-format/#test-target). An outcome can be one of the three following types:
+
+- **Inapplicable:** No part of the test subject matches the applicability
+- **Passed:** A [test target](https://www.w3.org/TR/act-rules-format/#test-target) meets all expectations
+- **Failed:** A [test target](https://www.w3.org/TR/act-rules-format/#test-target) does not meet all expectations
+
+**Note:** A rule has one `passed` or `failed` outcome for every [test target](https://www.w3.org/TR/act-rules-format/#test-target). When there are no test targets the rule has one `inapplicable` outcome. This means that each [test subject](https://www.w3.org/TR/act-rules-format/#test-subject) will have one or more outcomes.
+
+**Note:** Implementations using the [EARL10-Schema](https://www.w3.org/TR/EARL10-Schema/) can express the outcome with the [outcome property](https://www.w3.org/TR/EARL10-Schema/#outcome). In addition to `passed`, `failed` and `inapplicable`, EARL 1.0 also defined an `incomplete` outcome. While this cannot be the outcome of an ACT Rule when applied in its entirety, it often happens that rules are only partially evaluated. For example, when applicability was automated, but the expectations have to be evaluated manually. Such "interim" results can be expressed with the `incomplete` outcome.
+
+### Standard keyboard navigation {#standard-keyboard-navigation}
+
+_Standard keyboard navigation_ entails using one or more of the following:
+
+- Tab key
+- Shift+Tab
+- Arrow keys
+- Esc key
+- Enter key
+- Space key
+
+Expected behavior of standard keyboard navigation keys:
+
+- Tab key: Skipping forward between [focusable][] elements
+- Shift+Tab: Skipping backwards between [focusable][] elements
+- Arrow keys: Navigate input elements, e.g. up/down drop down, between radio buttons etc.
+- Esc key: Close or cancel, e.g close a modal
+- Enter key: Select or activate the element in focus (same as clicking with mouse)
+- Space key: Select input elements, e.g. drop downs, radio buttons etc.
+
+{% include implementations/a1b64e.md %}
 
 ## Changelog
 
 This is the first version of this ACT rule.
 
+[element]: https://dom.spec.whatwg.org/#element 'DOM element, 2021/05/31'
 [focusable]: #focusable 'Definition of focusable'
+[html namespaces]: https://infra.spec.whatwg.org/#namespaces 'HTML namespace, 2021/05/31'
+[html or svg element]: #namespaced-element
+[namespaceuri]: https://dom.spec.whatwg.org/#dom-element-namespaceuri 'DOM Element namespaceURI, 2021/05/31'

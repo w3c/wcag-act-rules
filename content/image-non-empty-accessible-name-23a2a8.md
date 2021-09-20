@@ -6,51 +6,50 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/image-non-empty-accessible-name-23a2a8.md
-# footer: > # Text in footer in HTML
-#   <p> This is the text in the footer </p>
+footer: |
+  <p><strong>Date:</strong> Updated August 24th, 2021</p>
+  <p><strong>Authors:</strong> <a href="https://github.com/wilcofiers">Wilco Fiers</a>. <em>Previous Authors:</em> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/skotkjerra">Stein Erik Skotkjerra</a>.</p>
+  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>.</p>
+proposed: false
+rule_meta:
+  id: 23a2a8
+  name: "Image has non-empty accessible name"
+  rule_type: atomic
+  description: |
+    This rule checks that each image either has a non-empty accessible name or is marked up as decorative.
+  accessibility_requirements:
+    'wcag20:1.1.1':
+      forConformance: true
+      failed: not satisfied
+      passed: further testing needed
+      inapplicable: further testing needed
+    'wcag-technique:G94':
+      forConformance: false
+      failed: not satisfied
+      passed: further testing needed
+      inapplicable: further testing needed
+    'wcag-technique:G95':
+      forConformance: false
+      failed: not satisfied
+      passed: further testing needed
+      inapplicable: further testing needed
+  input_aspects:
+    - handle: Accessibility Tree
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-accessibility
+    - handle: DOM Tree
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
+    - handle: CSS Styling
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
+  last_modified: July 16th, 2021
+  scs_tested:
+    - handle: Non-text Content
+      num: 1.1.1
+      level: A
 ---
-
-Rule Type:
-:   atomic
-
-Rule ID:
-:   23a2a8
-
-Last Modified:
-:   Oct 1, 2020
-
-Accessibility Requirements Mapping:
-:   [1.1.1 Non-text Content (Level A)](https://www.w3.org/TR/WCAG21/#non-text-content)
-    - **Required for conformance** to WCAG 2.0 and later on level A and higher
-    - [Outcome](#outcome) mapping:
-        - Any `failed` outcomes: success criterion is not satisfied
-        - All `passed` outcomes: success criterion needs further testing
-        - An `inapplicable` outcome: success criterion needs further testing
-:   [G94: Providing short text alternative for non-text content that serves the same purpose and presents the same information as the non-text content](https://www.w3.org/WAI/WCAG21/Techniques/general/G94)
-    - Not required to conformance to any W3C accessibility recommendation.
-    - [Outcome](#outcome) mapping:
-        - Any `failed` outcomes: technique is not satisfied
-        - All `passed` outcomes: technique needs further testing
-        - An `inapplicable` outcome: technique needs further testing
-:   [G95: Providing short text alternatives that provide a brief description of the non-text content](https://www.w3.org/WAI/WCAG21/Techniques/general/G95)
-    - Not required to conformance to any W3C accessibility recommendation.
-    - [Outcome](#outcome) mapping:
-        - Any `failed` outcomes: technique is not satisfied
-        - All `passed` outcomes: technique needs further testing
-        - An `inapplicable` outcome: technique needs further testing
-
-Input Aspects:
-:   [Accessibility Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-accessibility)
-:   [DOM Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom)
-:   [CSS Styling](https://www.w3.org/TR/act-rules-aspects/#input-aspects-css)
-
-## Description
-
-This rule checks that each image either has a non-empty accessible name or is marked up as decorative.
 
 ## Applicability
 
-The rule applies to HTML `img` elements and HTML elements with the [semantic role][] of `img`, except if the element has a [hidden state][] of "true".
+This rule applies to HTML `img` elements and HTML elements with the [semantic role][] of `img`, except if the element has a [hidden state][] of "true".
 
 ## Expectation
 
@@ -267,19 +266,7 @@ This `img` element is hidden with `visibility: hidden`.
 {% include_relative glossary/semantic-role.md %}
 {% include_relative glossary/wai-aria-specifications.md %}
 
-## Acknowledgements
-
-This rule was written in the [ACT Rules community group](https://w3.org/community/act-r/), 
-with the support of the EU-funded [WAI-Tools Project](https://www.w3.org/WAI/about/projects/wai-tools/).
-
-### Authors
-
-- [Wilco Fiers](https://github.com/wilcofiers)
-
-### Previous Authors
-
-- [Anne Thyme Nørregaard](https://github.com/annethyme)
-- [Stein Erik Skotkjerra](https://github.com/skotkjerra)
+{% include implementations/23a2a8.md %}
 
 ## Changelog
 

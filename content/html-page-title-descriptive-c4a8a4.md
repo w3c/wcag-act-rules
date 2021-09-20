@@ -6,48 +6,44 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/html-page-title-descriptive-c4a8a4.md
-# footer: > # Text in footer in HTML
-#   <p> This is the text in the footer </p>
+footer: |
+  <p><strong>Date:</strong> Updated August 24th, 2021</p>
+  <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/corbb">Corbb O'Connor</a>.</p>
+  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>.</p>
+proposed: true
+rule_meta:
+  id: c4a8a4
+  name: "HTML page title is descriptive"
+  rule_type: atomic
+  description: |
+    This rule checks that the first title in an HTML page describes the topic or purpose of that page.
+  accessibility_requirements:
+    'wcag20:2.4.2':
+      forConformance: true
+      failed: not satisfied
+      passed: satisfied
+      inapplicable: further testing needed
+    'wcag-technique:G88':
+      forConformance: false
+      failed: not satisfied
+      passed: further testing needed
+      inapplicable: further testing needed
+    'wcag-technique:H25':
+      forConformance: false
+      failed: not satisfied
+      passed: further testing needed
+      inapplicable: further testing needed
+  input_aspects:
+    - handle: DOM Tree
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
+    - handle: Language
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-text
+  last_modified: August 24th, 2021
+  scs_tested:
+    - handle: Page Titled
+      num: 2.4.2
+      level: A
 ---
-
-{% include_relative _proposed-banner.html %}
-
-Rule Type:
-:   atomic
-
-Rule ID:
-:   c4a8a4
-
-Last Modified:
-:   June 3, 2021
-
-Accessibility Requirements Mapping:
-:   [2.4.2 Page Titled (Level A)](https://www.w3.org/TR/WCAG21/#page-titled)
-    - **Required for conformance** to WCAG 2.0 and later on level A and higher
-    - [Outcome](#outcome) mapping:
-        - Any `failed` outcomes: success criterion is not satisfied
-        - All `passed` outcomes: success criterion is satisfied
-        - An `inapplicable` outcome: success criterion needs further testing
-:   [G88: Providing descriptive titles for Web pages](https://www.w3.org/WAI/WCAG21/Techniques/general/G88)
-    - Not required to conformance to any W3C accessibility recommendation.
-    - [Outcome](#outcome) mapping:
-        - Any `failed` outcomes: technique is not satisfied
-        - All `passed` outcomes: technique needs further testing
-        - An `inapplicable` outcome: technique needs further testing
-:   [H25: Providing a title using the title element](https://www.w3.org/WAI/WCAG21/Techniques/html/H25)
-    - Not required to conformance to any W3C accessibility recommendation.
-    - [Outcome](#outcome) mapping:
-        - Any `failed` outcomes: technique is not satisfied
-        - All `passed` outcomes: technique needs further testing
-        - An `inapplicable` outcome: technique needs further testing
-
-Input Aspects:
-:   [DOM Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom)
-:   [Language](https://www.w3.org/TR/act-rules-aspects/#input-aspects-text)
-
-## Description
-
-This rule checks that the first title in an HTML page describes the topic or purpose of that page.
 
 ## Applicability
 
@@ -186,20 +182,38 @@ This `title` element is a child of an `svg` element.
 
 ## Glossary
 
-{% include_relative glossary/outcome.md %}
-{% include_relative glossary/whitespace.md %}
+### Outcome {#outcome}
 
-## Acknowledgements
+An _outcome_ is a conclusion that comes from evaluating an ACT Rule on a [test subject](https://www.w3.org/TR/act-rules-format/#test-subject) or one of its constituent [test target](https://www.w3.org/TR/act-rules-format/#test-target). An outcome can be one of the three following types:
 
-This rule was written in the [ACT Rules community group](https://w3.org/community/act-r/), 
-with the support of the EU-funded [WAI-Tools Project](https://www.w3.org/WAI/about/projects/wai-tools/).
+- **Inapplicable:** No part of the test subject matches the applicability
+- **Passed:** A [test target](https://www.w3.org/TR/act-rules-format/#test-target) meets all expectations
+- **Failed:** A [test target](https://www.w3.org/TR/act-rules-format/#test-target) does not meet all expectations
 
-### Authors
+**Note:** A rule has one `passed` or `failed` outcome for every [test target](https://www.w3.org/TR/act-rules-format/#test-target). When there are no test targets the rule has one `inapplicable` outcome. This means that each [test subject](https://www.w3.org/TR/act-rules-format/#test-subject) will have one or more outcomes.
 
-- [Anne Thyme Nørregaard](https://github.com/annethyme)
-- [Corbb O'Connor](https://github.com/corbb)
+**Note:** Implementations using the [EARL10-Schema](https://www.w3.org/TR/EARL10-Schema/) can express the outcome with the [outcome property](https://www.w3.org/TR/EARL10-Schema/#outcome). In addition to `passed`, `failed` and `inapplicable`, EARL 1.0 also defined an `incomplete` outcome. While this cannot be the outcome of an ACT Rule when applied in its entirety, it often happens that rules are only partially evaluated. For example, when applicability was automated, but the expectations have to be evaluated manually. Such "interim" results can be expressed with the `incomplete` outcome.
+
+### Whitespace {#whitespace}
+
+_Whitespace_ are characters that have the Unicode "White_Space" property in the [Unicode properties list](https://www.unicode.org/Public/UCD/latest/ucd/PropList.txt).
+
+This includes:
+
+- all characters in the [Unicode Separator categories](https://www.unicode.org/versions/Unicode11.0.0/ch04.pdf#G134153), and
+- the following characters in the [Other, Control](https://www.unicode.org/versions/Unicode11.0.0/ch04.pdf#G134153) category:
+
+  - Character tabulation (U+0009)
+  - Line Feed (LF) (U+000A)
+  - Line Tabulation (U+000B)
+  - Form Feed (FF) (U+000C)
+  - Carriage Return (CR) (U+000D)
+  - Next Line (NEL) (U+0085)
+
+{% include implementations/c4a8a4.md %}
 
 ## Changelog
 
 This is the first version of this ACT rule.
+
 

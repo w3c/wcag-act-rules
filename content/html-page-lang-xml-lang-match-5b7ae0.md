@@ -6,33 +6,32 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/html-page-lang-xml-lang-match-5b7ae0.md
-# footer: > # Text in footer in HTML
-#   <p> This is the text in the footer </p>
+footer: |
+  <p><strong>Date:</strong> Updated August 24th, 2021</p>
+  <p><strong>Authors:</strong> <a href="https://github.com/jkodu">Jey Nandakumar</a>. <em>Previous Authors:</em> <a href="https://github.com/annika-FTB">Annika Nietzio</a>.</p>
+  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>.</p>
+proposed: false
+rule_meta:
+  id: 5b7ae0
+  name: "HTML page `lang` and `xml:lang` attributes have matching values"
+  rule_type: atomic
+  description: |
+    This rule checks that both `lang` and `xml:lang` attributes on the root element of a non-embedded HTML page, have the same primary language subtag.
+  accessibility_requirements:
+    'wcag20:3.1.1':
+      forConformance: true
+      failed: not satisfied
+      passed: further testing needed
+      inapplicable: further testing needed
+  input_aspects:
+    - handle: DOM Tree
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
+  last_modified: July 16th, 2021
+  scs_tested:
+    - handle: Language of Page
+      num: 3.1.1
+      level: A
 ---
-
-Rule Type:
-:   atomic
-
-Rule ID:
-:   5b7ae0
-
-Last Modified:
-:   Oct 6st, 2020
-
-Accessibility Requirements Mapping:
-:   [3.1.1 Language of Page (Level A)](https://www.w3.org/TR/WCAG21/#language-of-page)
-    - **Required for conformance** to WCAG 2.0 and later on level A and higher
-    - [Outcome](#outcome) mapping:
-        - Any `failed` outcomes: success criterion is not satisfied
-        - All `passed` outcomes: success criterion needs further testing
-        - An `inapplicable` outcome: success criterion needs further testing
-
-Input Aspects:
-:   [DOM Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom)
-
-## Description
-
-This rule checks that both `lang` and `xml:lang` attributes on the root element of a non-embedded HTML page, have the same primary language subtag.
 
 ## Applicability
 
@@ -193,26 +192,11 @@ This rule does not apply to `html` elements with an empty (`""`) `xml:lang` attr
 {% include_relative glossary/outcome.md %}
 {% include_relative glossary/valid-language-tag.md %}
 
-## Acknowledgements
-
-This rule was written in the [ACT Rules community group](https://w3.org/community/act-r/), 
-with the support of the EU-funded [WAI-Tools Project](https://www.w3.org/WAI/about/projects/wai-tools/).
-
-### Authors
-
-- [Jey Nandakumar](https://github.com/jkodu)
-
-### Previous Authors
-
-- [Annika Nietzio](https://github.com/annika-FTB)
+{% include implementations/5b7ae0.md %}
 
 ## Changelog
 
-- **October 6st**
-  - Add an assumption about matching tags
-  - Move a note from the applicability to the background
-  - Use "non-embedded" in the description
-  - Rename "valid language subtag" to Valid language tag"
+This is the first version of this ACT rule.
 
 [content type]: https://dom.spec.whatwg.org/#concept-document-content-type 'Definition of content type'
 [extended language subtags]: https://tools.ietf.org/html/bcp47#section-2.2.2 'Definition of extended language subtag'

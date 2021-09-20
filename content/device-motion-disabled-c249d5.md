@@ -6,37 +6,36 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/device-motion-disabled-c249d5.md
-# footer: > # Text in footer in HTML
-#   <p> This is the text in the footer </p>
+footer: |
+  <p><strong>Date:</strong> Updated August 24th, 2021</p>
+  <p><strong>Authors:</strong> <a href="https://github.com/carlosapaduarte">Carlos Duarte</a>, <a href="https://github.com/joao-vicente">João Vicente</a>.</p>
+  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>.</p>
+proposed: true
+rule_meta:
+  id: c249d5
+  name: "Device motion based changes to the content can be disabled"
+  rule_type: atomic
+  description: |
+    This rule checks that it is possible to disable any changes to the content of the web page resulting from device motion based events.
+  accessibility_requirements:
+    'wcag21:2.5.4':
+      forConformance: true
+      failed: not satisfied
+      passed: further testing needed
+      inapplicable: further testing needed
+  input_aspects:
+    - handle: DOM Tree
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
+    - handle: CSS Styling
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
+    - handle: Accessibility tree
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-accessibility
+  last_modified: August 24th, 2021
+  scs_tested:
+    - handle: Motion Actuation
+      num: 2.5.4
+      level: A
 ---
-
-{% include_relative _proposed-banner.html %}
-
-Rule Type:
-:   atomic
-
-Rule ID:
-:   c249d5
-
-Last Modified:
-:   June 3, 2021
-
-Accessibility Requirements Mapping:
-:   [2.5.4 Motion Actuation (Level A)](https://www.w3.org/TR/WCAG21/#motion-actuation)
-    - **Required for conformance** to WCAG 2.1 on level A and higher
-    - [Outcome](#outcome) mapping:
-        - Any `failed` outcomes: success criterion is not satisfied
-        - All `passed` outcomes: success criterion needs further testing
-        - An `inapplicable` outcome: success criterion needs further testing
-
-Input Aspects:
-:   [DOM Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom)
-:   [CSS Styling](https://www.w3.org/TR/act-rules-aspects/#input-aspects-css)
-:   [Accessibility tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-accessibility)
-
-## Description
-
-This rule checks that it is possible to disable any changes to the content of the web page resulting from device motion based events.
 
 ## Applicability
 
@@ -44,7 +43,7 @@ This rule applies to an [HTML document][] with an associated [Window object][] t
 
 ## Expectation
 
-For each registered [device orientation event][device orientation] or [device motion event][device motion] in the test target one of the following is true:
+For each registered [device orientation event][device orientation] or [device motion event][device motion] in the test target at least one of the following is true:
 
 - **no changes:** The registered event does not cause [changes to the content][changes in content] of the [web page][] within a 1 minute time span of the [event firing][event firing]; or
 - **disabled:** There is at least one [set of clearly labeled instruments][] to [block the event][blocked event][] for at least 1 minute.
@@ -64,6 +63,8 @@ For each registered [device orientation event][device orientation] or [device mo
 _There are no major accessibility support issues known for this rule._
 
 ## Background
+
+The [instruments][instrument] used to pass this rule (if any), must meet all level A Success Criteria in order to fully satisfy [Success Criterion 2.5.4: Motion Actuation][sc2.5.4]. These extra requirements are left out of this rule, and should be tested separately.
 
 - [Understanding Success Criterion 2.5.4: Motion Actuation][sc2.5.4]
 - [G213: Provide conventional controls and an application setting for motion activated input](https://www.w3.org/WAI/WCAG21/Techniques/general/G213.html)
@@ -222,49 +223,185 @@ This [HTML document][] is not operable by device motion.
 
 ## Glossary
 
-{% include_relative glossary/blocked-event.md %}
-{% include_relative glossary/changes-in-content.md %}
-{% include_relative glossary/clearly-labeled-location.md %}
-{% include_relative glossary/explicit-role.md %}
-{% include_relative glossary/focusable.md %}
-{% include_relative glossary/hidden-state.md %}
-{% include_relative glossary/implicit-role.md %}
-{% include_relative glossary/included-in-the-accessibility-tree.md %}
-{% include_relative glossary/instrument-to-achieve-an-objective.md %}
-{% include_relative glossary/marked-as-decorative.md %}
-{% include_relative glossary/outcome.md %}
-{% include_relative glossary/semantic-role.md %}
-{% include_relative glossary/set-of-clearly-labeled-instruments.md %}
-{% include_relative glossary/wai-aria-specifications.md %}
-{% include_relative glossary/web-page-html.md %}
+### Blocked event {#blocked-event}
 
-## Acknowledgements
+A _blocked event_ makes no [changes to the content][changes in content] of the [web page][].
 
-This rule was written in the [ACT Rules community group](https://w3.org/community/act-r/), 
-with the support of the EU-funded [WAI-Tools Project](https://www.w3.org/WAI/about/projects/wai-tools/).
+### Changes in content {#changes-in-content}
 
-### Authors
+A _[event][] originated change in the content_ of a [web page][] occurs when, by comparing the [web page][] before and 1 minute after the event [firing][], at least one of the following occurs:
 
-- [Carlos Duarte](https://github.com/carlosapaduarte)
-- [João Vicente](https://github.com/joao-vicente)
+- **visible changes:** the rendered pixels change in any part of the document that is currently within the [viewport][] or that can be brought into the [viewport][] via scrolling; or
+- **accessibility tree changes:** any state, property or event of a node representing an [accessible object][] of the [accessibility tree][] changes, or any node is inserted in, or removed from the [accessibility tree][]; or
+- **audible changes:** the audio rendered by the [web page][] changes.
+
+- If the [web page][] is rendering time-based media, rendered pixels and audio will be changing as part of the playback. The comparison in this instance should compare the pixels and audio that are rendered if the event is not fired, with the ones that are rendered if the event is fired.
+
+**Assumptions:**
+
+- This definition assumes that there are no changes in the content of the [web page][] caused by another [event][]. If this is not the case, changes may be attributed to the wrong event.
+- This definition assumes that the changes happen within a 1 minute time span after the event firing and therefore the comparison between the page before and after the event firing can be made at any time after that time span elapses. If there are changes after this time span, this definition may not detect them. The arbitrary 1 minute time span, selected so that testing this rule would not be impractical, is not included in WCAG.
+
+### Clearly labeled location {#clearly-labeled-location}
+
+Secondary information and alternative controls of functionality are often not displayed together with primary information or functionality. For example, an option to change a web page to dark mode may be placed on an options page instead of being available on every page and page state of a website. Another example is a maps application, where, instead of using GPS, an option is available in a dropdown menu to set the current location of the device. Such content should be placed in a clearly labeled location.
+
+The location of a target is said to be _clearly labeled_ when the target can be found by activating "identifiable" [instruments][instrument] which either lead the user to find the target, or to another [page][web page] or page state from which this action can be repeated until the target is found.
+
+Whether or not the content is "clearly labeled" depends on the starting point of the search. If page A has a link which clearly "identifies" some piece of content, then the location of the content is clearly labeled. Page B, which can be in the same website, may not have such a link or may have a link with a link text that does not "identify" target content or which can be interpreted to "identify" more than one target, and so the location of the content starting from page B is not clearly labeled.
+
+For the purpose of this definition, an [instrument][] is _identifiable_ if any text or other content with a [text alternative][], allows any user to identify an element with a [semantic role][] that inherits from `widget`.
+
+A [web page][] changes state when the [document's body][body] changes without a change in the [document's URL][url].
+
+### Explicit Semantic Role {#explicit-role}
+
+The _explicit semantic role_ of an element is determined by its [role attribute][] (if any).
+
+The [role attribute][] takes a list of tokens. The explicit semantic role is the first valid role in this list. The valid roles are all non-abstract roles from [WAI-ARIA Specifications][]. If the element has no [role attribute][], or if it has one with no valid role, then this element has no explicit semantic role.
+
+Other roles may be added as they become available. Not all roles will be supported in all assistive technologies. Testers are encouraged to adjust which roles are allowed according to the [accessibility support base line][]. For the purposes of executing test cases in all rules, it should be assumed that all roles are supported by assistive technologies so that none of the roles fail due to lack of accessibility support.
+
+### Focusable {#focusable}
+
+Elements that can become the target of keyboard input as described in the [HTML](https://www.w3.org/TR/html) specification of [focusable](https://html.spec.whatwg.org/#focusable-area) and [can be focused](https://html.spec.whatwg.org/#specially-focusable).
+
+### Hidden State {#hidden-state}
+
+An HTML element's _hidden state_ is "true" if at least one of the following is true for itself or any of its [ancestors][] in the [flat tree][]:
+
+- has a `hidden` attribute; or
+- has a [computed][] CSS property `display` of `none`; or
+- has a [computed][] CSS property `visibility` of `hidden`; or
+- has an `aria-hidden` attribute set to `true`
+
+In any other case, the element's _hidden state_ is "false".
+
+### Implicit Semantic Role {#implicit-role}
+
+The _implicit semantic role_ of an element is a pre-defined value given by the host language which depends on the element and its ancestors.
+
+Implicit roles for HTML and SVG, are documented in the [HTML accessibility API mappings (working draft)](https://www.w3.org/TR/html-aam/#html-element-role-mappings) and the [SVG accessibility API mappings (working draft)](https://www.w3.org/TR/svg-aam/#mapping_role_table).
+
+### Included in the accessibility tree {#included-in-the-accessibility-tree}
+
+Elements included in the accessibility tree of platform specific accessibility APIs. Elements in the accessibility tree are exposed to assistive technologies, allowing users to interact with the elements in a way that meet the requirements of the individual user.
+
+The general rules for when elements are included in the accessibility tree are defined in the [core accessibility API mappings](https://www.w3.org/TR/core-aam/). For native markup languages, such as HTML and SVG, additional rules for when elements are included in the accessibility tree can be found in the [HTML accessibility API mappings (working draft)](https://www.w3.org/TR/html-aam/) and the [SVG accessibility API mappings (working draft)](https://www.w3.org/TR/svg-aam/).
+
+For more details, see [examples of included in the accessibility tree][].
+
+**Note:** Users of assistive technologies might still be able to interact with elements that are not included in the accessibility tree. An example of this is a [focusable](#focusable) element with an `aria-hidden` attribute with a value of `true`. Such an element could still be interacted using sequential keyboard navigation regardless of the assistive technologies used, even though the element would not be included in the accessibility tree.
+[examples of included in the accessibility tree]: https://act-rules.github.io/pages/examples/included-in-the-accessibility-tree/
+
+### Instrument to achieve an objective {#instrument-to-achieve-an-objective}
+
+An [HTML element][] that when [activated][] allows an end-user to achieve an objective.
+
+**Note**: Any rule that uses this definition must provide an unambiguous description of the objective the instrument is used to achieve.
+
+### Marked as decorative {#marked-as-decorative}
+
+An element is _marked as decorative_ if one or more of the following conditions is true:
+
+- it has an [explicit role][] of `none` or `presentation`; or
+- it is an `img` element with an `alt` attribute whose value is the empty string (`alt=""`), and with no [explicit role][].
+
+Elements are marked as decorative as a way to convey the intention of the author that they are [pure decoration][]. It is different from the element actually being [pure decoration][] as authors may make mistakes. It is different from the element being effectively ignored by assistive technologies as rules such as [presentational roles conflict resolution][] may overwrite this intention.
+
+Elements can also be ignored by assistive technologies if their [hidden state][] is true. This is different from marking the element as decorative and does not convey the same intention. Notably, the [hidden state][] of an element may change as users interact with the page (showing and hiding elements) while being marked as decorative should stay the same through all states of the page.
+
+### Outcome {#outcome}
+
+An _outcome_ is a conclusion that comes from evaluating an ACT Rule on a [test subject](https://www.w3.org/TR/act-rules-format/#test-subject) or one of its constituent [test target](https://www.w3.org/TR/act-rules-format/#test-target). An outcome can be one of the three following types:
+
+- **Inapplicable:** No part of the test subject matches the applicability
+- **Passed:** A [test target](https://www.w3.org/TR/act-rules-format/#test-target) meets all expectations
+- **Failed:** A [test target](https://www.w3.org/TR/act-rules-format/#test-target) does not meet all expectations
+
+**Note:** A rule has one `passed` or `failed` outcome for every [test target](https://www.w3.org/TR/act-rules-format/#test-target). When there are no test targets the rule has one `inapplicable` outcome. This means that each [test subject](https://www.w3.org/TR/act-rules-format/#test-subject) will have one or more outcomes.
+
+**Note:** Implementations using the [EARL10-Schema](https://www.w3.org/TR/EARL10-Schema/) can express the outcome with the [outcome property](https://www.w3.org/TR/EARL10-Schema/#outcome). In addition to `passed`, `failed` and `inapplicable`, EARL 1.0 also defined an `incomplete` outcome. While this cannot be the outcome of an ACT Rule when applied in its entirety, it often happens that rules are only partially evaluated. For example, when applicability was automated, but the expectations have to be evaluated manually. Such "interim" results can be expressed with the `incomplete` outcome.
+
+### Semantic Role {#semantic-role}
+
+The _semantic role_ of an element is determined by the first of these cases that applies:
+
+1. **Conflict** If the element is [marked as decorative][], but the element is [included in the accessibility tree][]; or would be [included in the accessibility tree][] when its [hidden state][] is false, then its _semantic role_ is its **[implicit role][]**.
+1. **Explicit** If the element has an [explicit role][], then its _semantic role_ is its [explicit role][].
+1. **Implicit** The _semantic role_ of the element is its [implicit role][].
+
+### Set of clearly labeled instruments {#set-of-clearly-labeled-instruments}
+
+A _set of clearly labeled instruments_ is a set of [instruments][instrument], where each [instrument][] is in the same [web page][] as the test target or can be found in a [clearly labeled location][] from that [web page][].
+
+### WAI-ARIA specifications {#wai-aria-specifications}
+
+The _WAI ARIA Specifications_ group both the WAI ARIA W3C Recommendation and ARIA modules, namely:
+
+- [Accessible Rich Internet Applications (WAI-ARIA) 1.1](https://www.w3.org/TR/wai-aria-1.1/)
+- [WAI-ARIA Graphics Module 1.0](https://www.w3.org/TR/graphics-aria-1.0/)
+- [Digital Publishing WAI-ARIA Module 1.0](https://www.w3.org/TR/dpub-aria-1.0/)
+
+**Note:** depending on the type of content being evaluated, part of the specifications might be irrelevant and should be ignored.
+
+### Web page (HTML) {#web-page-html}
+
+An _HTML [web page](https://www.w3.org/TR/WCAG21/#dfn-web-page-s)_ is the set of all [fully active](https://html.spec.whatwg.org/#fully-active) [documents](https://dom.spec.whatwg.org/#concept-document) which share the same [top-level browsing context](https://html.spec.whatwg.org/#top-level-browsing-context).
+
+**Note:** Nesting of browsing context mostly happens with `iframe` and `object`. Thus a web page will most of the time be a "top-level" document and all its `iframe` and `object` (recursively).
+
+**Note:** [Web pages](https://www.w3.org/TR/WCAG21/#dfn-web-page-s) as defined by WCAG are not restricted to the HTML technology but can also include, _e.g._, PDF or DOCX documents.
+
+**Note:** Although web pages as defined here are sets of [documents](https://dom.spec.whatwg.org/#concept-document) (and do not contain other kind of nodes), one can abusively write that any node is "in a web page" if it is a [shadow-including descendant](https://dom.spec.whatwg.org/#concept-shadow-including-descendant) of a [document](https://dom.spec.whatwg.org/#concept-document) that is part of that web page.
+
+{% include implementations/c249d5.md %}
 
 ## Changelog
 
 This is the first version of this ACT rule.
 
+[accessibility support base line]: https://www.w3.org/TR/WCAG-EM/#step1c 'Definition of accessibility support base line'
 [accessibility supported]: https://www.w3.org/WAI/WCAG21/Understanding/motion-actuation#dfn-accessibility-supported
+[accessibility tree]: https://www.w3.org/TR/accname-1.1/#dfn-accessibility-tree 'Definition of accessibility tree'
+[accessible object]: https://www.w3.org/TR/accname-1.1/#dfn-accessible-object 'Definition of accessible object'
+[activated]: https://html.spec.whatwg.org/#activation
+[ancestors]: https://dom.spec.whatwg.org/#concept-tree-ancestor 'Definition Ancestor'
 [blocked event]: #blocked-event 'Definition of blocked event'
+[body]: https://html.spec.whatwg.org/#dom-document-body
 [changes in content]: #changes-in-content 'Definition of changes in content'
+[clearly labeled location]: #clearly-labeled-location 'Definition of clearly labeled location'
+[computed]: https://www.w3.org/TR/css-cascade/#computed-value 'CSS definition of computed value'
 [device motion]: https://www.w3.org/TR/orientation-event/#devicemotion 'Definition of device motion event'
 [device orientation]: https://www.w3.org/TR/orientation-event/#deviceorientation 'Definition of device orientation event'
 [essential]: https://www.w3.org/WAI/WCAG21/Understanding/motion-actuation.html#dfn-essential
-[event]: https://dom.spec.whatwg.org/#concept-event 'Definition of event'
 [event firing]: https://dom.spec.whatwg.org/#concept-event-fire
-[event listener]: https://dom.spec.whatwg.org/#concept-event-listener
 [event listener list]: https://dom.spec.whatwg.org/#eventtarget-event-listener-list
+[event listener]: https://dom.spec.whatwg.org/#concept-event-listener
+[event]: https://dom.spec.whatwg.org/#concept-event 'Definition of event'
+[explicit role]: #explicit-role 'Definition of Explicit Role'
 [firing]: https://dom.spec.whatwg.org/#concept-event-fire 'Definition of event firing'
+[flat tree]: https://drafts.csswg.org/css-scoping/#flat-tree 'Definition of flat tree'
+[focusable]: #focusable 'Definition of Focusable'
+[hidden state]: #hidden-state 'Definition of Hidden State'
 [html document]: https://dom.spec.whatwg.org/#concept-document
+[html element]: https://html.spec.whatwg.org/multipage/dom.html#htmlelement
+[implicit role]: #implicit-role 'Definition of Implicit Role'
+[included in the accessibility tree]: #included-in-the-accessibility-tree 'Definition of Included in the Accessibility Tree'
+[instrument]: #instrument-to-achieve-an-objective 'Definition of Instrument to Achieve an Objective'
+[marked as decorative]: #marked-as-decorative 'Definition of Marked as Decorative'
+[mechanism]: https://www.w3.org/TR/WCAG21/#dfn-mechanism 'WCAG Definition of Mechanism'
+[presentational roles conflict resolution]: https://www.w3.org/TR/wai-aria-1.1/#conflict_resolution_presentation_none 'Presentational Roles Conflict Resolution'
+[pure decoration]: https://www.w3.org/TR/WCAG21/#dfn-pure-decoration 'WCAG definition of Pure Decoration'
+[role attribute]: https://www.w3.org/TR/role-attribute/ 'Specification of the role attribute'
 [sc2.5.4]: https://www.w3.org/WAI/WCAG21/Understanding/motion-actuation.html
+[sc211]: https://www.w3.org/TR/WCAG21/#keyboard 'Success Criterion 2.1.1 Keyboard'
+[sc412]: https://www.w3.org/TR/WCAG21/#name-role-value 'Success Criterion 4.1.2 Name, Role, Value'
+[semantic role]: #semantic-role 'Definition of semantic role'
 [set of clearly labeled instruments]: #set-of-clearly-labeled-instruments 'Definition of set of clearly labeled instruments'
+[text alternative]: https://www.w3.org/TR/WCAG21/#dfn-text-alternative 'Definition of text alternative'
+[url]: https://url.spec.whatwg.org/#concept-url
+[viewport]: https://drafts.csswg.org/css2/visuren.html#viewport 'Definition of viewport'
+[wai-aria specifications]: #wai-aria-specifications 'Definition of WAI-ARIA specifications'
 [web page]: #web-page-html 'Definition of web page'
 [window object]: https://html.spec.whatwg.org/multipage/window-object.html#dom-window

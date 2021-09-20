@@ -6,53 +6,43 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/aria-state-or-property-valid-value-6a7281.md
-# footer: > # Text in footer in HTML
-#   <p> This is the text in the footer </p>
+footer: |
+  <p><strong>Date:</strong> Updated August 24th, 2021</p>
+  <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>.</p>
+  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>.</p>
+proposed: true
+rule_meta:
+  id: 6a7281
+  name: "ARIA state or property has valid value"
+  rule_type: atomic
+  description: |
+    This rule checks that each ARIA state or property has a valid value type.
+  accessibility_requirements:
+    'aria11:state_prop_values':
+      title: 'ARIA 1.1, 6.3 Values for States and Properties'
+      forConformance: true
+      failed: not satisfied
+      passed: satisfied
+      inapplicable: satisfied
+  input_aspects:
+    - handle: DOM Tree
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
+    - handle: CSS Styling
+      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
+  last_modified: August 24th, 2021
 ---
-
-{% include_relative _proposed-banner.html %}
-
-Rule Type:
-:   atomic
-
-Rule ID:
-:   6a7281
-
-Last Modified:
-:   June 14, 2021
-
-Accessibility Requirements Mapping:
-:   [ARIA 1.1, 6.3 Values for States and Properties](https://www.w3.org/TR/wai-aria-1.1/#state_prop_values)
-    - **Required for conformance** to WAI-ARIA 1.1 author requirements
-    - [Outcome](#outcome) mapping:
-        - Any `failed` outcomes: WAI-ARIA requirement is not satisfied
-        - All `passed` outcomes: WAI-ARIA requirement is satisfied
-        - An `inapplicable` outcome: WAI-ARIA requirement is satisfied
-
-Input Aspects:
-:   [DOM Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom)
-:   [CSS Styling](https://www.w3.org/TR/act-rules-aspects/#input-aspects-css)
-
-## Description
-
-This rule checks that each ARIA state or property has a valid value.
 
 ## Applicability
 
-This rule applies to any [WAI-ARIA 1.1 state or property](https://www.w3.org/TR/wai-aria-1.1/#state_prop_def) that is not empty (""), and that is specified on an HTML or SVG element.
+This rule applies to any [WAI-ARIA 1.1 state or property](https://www.w3.org/TR/wai-aria-1.1/#state_prop_def) that is not empty (""), and that is specified on an [HTML or SVG element][].
 
 ## Expectation
 
 Each test target has a valid value according to its [WAI-ARIA 1.1 value type](https://www.w3.org/TR/wai-aria-1.1/#propcharacteristic_value).
 
-For value types `ID Reference` and `ID Reference List` for [WAI-ARIA required properties](https://www.w3.org/TR/wai-aria-1.1/#requiredState) at least one of the elements with the given ids exists in the same [document tree](https://dom.spec.whatwg.org/#document-trees) or [shadow tree](https://dom.spec.whatwg.org/#shadow-trees) as the element that specifies the target attribute.
+For value types `ID Reference` and `ID Reference List` for [WAI-ARIA required properties](https://www.w3.org/TR/wai-aria-1.1/#requiredState) at least one of the elements with the given ids exists in the same [document tree](https://dom.spec.whatwg.org/#document-trees) or in the same [shadow tree](https://dom.spec.whatwg.org/#shadow-trees) as the element that specifies the target attribute.
 
 For value type `URI` the value matches the [generic URI syntax](https://www.ietf.org/rfc/rfc3986.txt).
-
-**Note:** Only for [WAI-ARIA required properties](https://www.w3.org/TR/wai-aria-1.1/#requiredState) with value types `ID Reference` and `ID Reference List` is there a requirement that the elements with the given ids actually exists. For non-required properties, this is not a requirement.
-
-**Note:**
-For value type `URI`, this rule does not require that the destination URI exists.
 
 ## Assumptions
 
@@ -63,6 +53,10 @@ This rule catches values that are undefined in [WAI-ARIA Specifications][], and 
 Some user agents treat the value of `aria-*` attribute as case-sensitive (even when these are not ID) while some treat them as case-insensitive.
 
 ## Background
+
+Only for [WAI-ARIA required properties](https://www.w3.org/TR/wai-aria-1.1/#requiredState) with value types `ID Reference` and `ID Reference List` is there a requirement that the elements with the given ids actually exists. For non-required properties, this is not a requirement. For example, the value of the `aria-errormessage` attribute on an `input` does not need to reference an `id` that exists within the same document, because an [HTML element](https://html.spec.whatwg.org/#htmlelement) with such and `id` may be created in response to an [event](https://dom.spec.whatwg.org/#event) that may or may not happen.
+
+For value type `URI`, this rule does not require that the destination URI exists.
 
 - [ARIA state or property is permitted](https://act-rules.github.io/rules/5c01ea)
 - [Understanding Success Criterion 4.1.2: Name, Role, Value](https://www.w3.org/WAI/WCAG21/Understanding/name-role-value.html)
@@ -287,7 +281,7 @@ Element has ARIA role, but no ARIA states or properties
 
 #### Inapplicable Example 4
 
-`aria-hidden` state on an element that is not an HTML or SVG element
+`aria-hidden` state on an element that is not an [HTML or SVG element][].
 
 ```xml
 <math aria-hidden="true"></math>
@@ -295,21 +289,42 @@ Element has ARIA role, but no ARIA states or properties
 
 ## Glossary
 
-{% include_relative glossary/outcome.md %}
-{% include_relative glossary/wai-aria-specifications.md %}
+### Namespaced Element {#namespaced-element}
 
-## Acknowledgements
+An [element][] with a specific [namespaceURI][] value from [HTML namespaces][]. For example an "SVG element" is any element with the "SVG namespace", which is `http://www.w3.org/2000/svg`.
 
-This rule was written in the [ACT Rules community group](https://w3.org/community/act-r/), 
-with the support of the EU-funded [WAI-Tools Project](https://www.w3.org/WAI/about/projects/wai-tools/).
+Namespaced elements are not limited to elements described in a specification. They also include custom elements. Elements such as `a` and `title` have a different namespace depending on where they are used. For example a `title` in an HTML page usually has the HTML namespace. When used in an `svg` element, a `title` element has the SVG namespace instead.
 
-### Authors
+### Outcome {#outcome}
 
-- [Anne Thyme Nørregaard](https://github.com/annethyme)
-- [Wilco Fiers](https://github.com/wilcofiers)
+An _outcome_ is a conclusion that comes from evaluating an ACT Rule on a [test subject](https://www.w3.org/TR/act-rules-format/#test-subject) or one of its constituent [test target](https://www.w3.org/TR/act-rules-format/#test-target). An outcome can be one of the three following types:
+
+- **Inapplicable:** No part of the test subject matches the applicability
+- **Passed:** A [test target](https://www.w3.org/TR/act-rules-format/#test-target) meets all expectations
+- **Failed:** A [test target](https://www.w3.org/TR/act-rules-format/#test-target) does not meet all expectations
+
+**Note:** A rule has one `passed` or `failed` outcome for every [test target](https://www.w3.org/TR/act-rules-format/#test-target). When there are no test targets the rule has one `inapplicable` outcome. This means that each [test subject](https://www.w3.org/TR/act-rules-format/#test-subject) will have one or more outcomes.
+
+**Note:** Implementations using the [EARL10-Schema](https://www.w3.org/TR/EARL10-Schema/) can express the outcome with the [outcome property](https://www.w3.org/TR/EARL10-Schema/#outcome). In addition to `passed`, `failed` and `inapplicable`, EARL 1.0 also defined an `incomplete` outcome. While this cannot be the outcome of an ACT Rule when applied in its entirety, it often happens that rules are only partially evaluated. For example, when applicability was automated, but the expectations have to be evaluated manually. Such "interim" results can be expressed with the `incomplete` outcome.
+
+### WAI-ARIA specifications {#wai-aria-specifications}
+
+The _WAI ARIA Specifications_ group both the WAI ARIA W3C Recommendation and ARIA modules, namely:
+
+- [Accessible Rich Internet Applications (WAI-ARIA) 1.1](https://www.w3.org/TR/wai-aria-1.1/)
+- [WAI-ARIA Graphics Module 1.0](https://www.w3.org/TR/graphics-aria-1.0/)
+- [Digital Publishing WAI-ARIA Module 1.0](https://www.w3.org/TR/dpub-aria-1.0/)
+
+**Note:** depending on the type of content being evaluated, part of the specifications might be irrelevant and should be ignored.
+
+{% include implementations/6a7281.md %}
 
 ## Changelog
 
 This is the first version of this ACT rule.
 
+[element]: https://dom.spec.whatwg.org/#element 'DOM element, 2021/05/31'
+[html namespaces]: https://infra.spec.whatwg.org/#namespaces 'HTML namespace, 2021/05/31'
+[html or svg element]: #namespaced-element
+[namespaceuri]: https://dom.spec.whatwg.org/#dom-element-namespaceuri 'DOM Element namespaceURI, 2021/05/31'
 [wai-aria specifications]: #wai-aria-specifications 'List of WAI-ARIA Specifications'
