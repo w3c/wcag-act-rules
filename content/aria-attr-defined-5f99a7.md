@@ -212,6 +212,7 @@ The _WAI ARIA Specifications_ group both the WAI ARIA W3C Recommendation and ARI
 This is the first version of this ACT rule.
 
 [wai-aria specifications]: #wai-aria-specifications 'Definition of WAI-ARIA specifications'
+
 {% include excol.html type="end" %}
 
 {% include excol.html type="all" %}
