@@ -25,23 +25,53 @@ rule_meta:
   last_modified: August 24th, 2021
 ---
 
+{% include excol.html type="all" %}
+
+{% include excol.html type="start" %}
+
 ## Applicability
+
+{% include excol.html type="middle" %}
 
 This rule applies to any attribute that starts with `aria-`.
 
+{% include excol.html type="end" %}
+
+{% include excol.html type="start" %}
+
 ## Expectation
+
+{% include excol.html type="middle" %}
 
 Each target attribute is defined in [WAI-ARIA Specifications][].
 
+{% include excol.html type="end" %}
+
+{% include excol.html type="start" %}
+
 ## Assumptions
+
+{% include excol.html type="middle" %}
 
 _There are currently no assumptions_
 
+{% include excol.html type="end" %}
+
+{% include excol.html type="start" %}
+
 ## Accessibility Support
+
+{% include excol.html type="middle" %}
 
 There are no major accessibility support issues known for this rule.
 
+{% include excol.html type="end" %}
+
+{% include excol.html type="start" %}
+
 ## Background
+
+{% include excol.html type="middle" %}
 
 - [ARIA in HTML (working draft)](https://www.w3.org/TR/html-aria/#index-aria-global)
 - [WAI ARIA Supported States and Properties](http://www.w3.org/TR/wai-aria/#states_and_properties)
@@ -49,7 +79,13 @@ There are no major accessibility support issues known for this rule.
 - [Understanding Success Criterion 4.1.2: Name, Role, Value](https://www.w3.org/WAI/WCAG21/Understanding/name-role-value)
 - [Semantics and ARIA](https://developers.google.com/web/fundamentals/accessibility/semantics-aria/)
 
+{% include excol.html type="end" %}
+
+{% include excol.html type="start" %}
+
 ## Test Cases
+
+{% include excol.html type="middle" %}
 
 ### Passed
 
@@ -133,7 +169,13 @@ This `canvas` element does not have an `aria-*` attribute specified.
 <canvas> </canvas>
 ```
 
+{% include excol.html type="end" %}
+
+{% include excol.html type="start" %}
+
 ## Glossary
+
+{% include excol.html type="middle" %}
 
 ### Outcome {#outcome}
 
@@ -159,8 +201,18 @@ The _WAI ARIA Specifications_ group both the WAI ARIA W3C Recommendation and ARI
 
 {% include implementations/5f99a7.md %}
 
+{% include excol.html type="end" %}
+
+{% include excol.html type="start" %}
+
 ## Changelog
+
+{% include excol.html type="middle" %}
 
 This is the first version of this ACT rule.
 
 [wai-aria specifications]: #wai-aria-specifications 'Definition of WAI-ARIA specifications'
+{% include excol.html type="end" %}
+
+{% include excol.html type="all" %}
+
