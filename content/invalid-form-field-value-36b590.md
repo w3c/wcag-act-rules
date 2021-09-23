@@ -365,7 +365,7 @@ The _WAI ARIA Specifications_ group both the WAI ARIA W3C Recommendation and ARI
 
 **Note:** depending on the type of content being evaluated, part of the specifications might be irrelevant and should be ignored.
 
-{% include implementations/36b590.md %}
+{% include_relative implementations/36b590.md %}
 
 ## Changelog
 

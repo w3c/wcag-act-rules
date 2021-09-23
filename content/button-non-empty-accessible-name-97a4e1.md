@@ -243,7 +243,7 @@ This `button` element has an [explicit role][] of `none`; it is not [focusable][
 {% include_relative glossary/semantic-role.md %}
 {% include_relative glossary/wai-aria-specifications.md %}
 
-{% include implementations/97a4e1.md %}
+{% include_relative implementations/97a4e1.md %}
 
 ## Changelog
 

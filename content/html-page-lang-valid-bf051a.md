@@ -126,7 +126,7 @@ This rule does not apply to `svg` elements.
 {% include_relative glossary/outcome.md %}
 {% include_relative glossary/valid-language-tag.md %}
 
-{% include implementations/bf051a.md %}
+{% include_relative implementations/bf051a.md %}
 
 ## Changelog
 

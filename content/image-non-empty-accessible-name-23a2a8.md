@@ -266,7 +266,7 @@ This `img` element is hidden with `visibility: hidden`.
 {% include_relative glossary/semantic-role.md %}
 {% include_relative glossary/wai-aria-specifications.md %}
 
-{% include implementations/23a2a8.md %}
+{% include_relative implementations/23a2a8.md %}
 
 ## Changelog
 

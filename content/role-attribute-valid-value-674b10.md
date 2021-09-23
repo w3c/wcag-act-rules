@@ -294,7 +294,7 @@ This includes:
   - Carriage Return (CR) (U+000D)
   - Next Line (NEL) (U+0085)
 
-{% include implementations/674b10.md %}
+{% include_relative implementations/674b10.md %}
 
 ## Changelog
 
