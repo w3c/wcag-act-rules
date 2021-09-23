@@ -710,7 +710,7 @@ Color
   - White
   - Yellow
 
-{% include implementations/9bd38c.md %}
+{% include_relative implementations/9bd38c.md %}
 
 ## Changelog
 

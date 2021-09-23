@@ -193,7 +193,7 @@ The image button is ignored by assistive technologies because it is not [include
 {% include_relative glossary/included-in-the-accessibility-tree.md %}
 {% include_relative glossary/outcome.md %}
 
-{% include implementations/59796f.md %}
+{% include_relative implementations/59796f.md %}
 
 ## Changelog
 

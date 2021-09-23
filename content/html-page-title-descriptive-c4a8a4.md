@@ -210,7 +210,7 @@ This includes:
   - Carriage Return (CR) (U+000D)
   - Next Line (NEL) (U+0085)
 
-{% include implementations/c4a8a4.md %}
+{% include_relative implementations/c4a8a4.md %}
 
 ## Changelog
 

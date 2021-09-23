@@ -136,7 +136,7 @@ This rule does not apply to `math` element.
 
 {% include_relative glossary/outcome.md %}
 
-{% include implementations/b5c3f8.md %}
+{% include_relative implementations/b5c3f8.md %}
 
 ## Changelog
 

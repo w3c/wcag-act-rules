@@ -230,7 +230,7 @@ The _WAI ARIA Specifications_ group both the WAI ARIA W3C Recommendation and ARI
 
 **Note:** depending on the type of content being evaluated, part of the specifications might be irrelevant and should be ignored.
 
-{% include implementations/4e8ab6.md %}
+{% include_relative implementations/4e8ab6.md %}
 
 ## Changelog
 

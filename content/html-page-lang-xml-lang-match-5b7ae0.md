@@ -192,7 +192,7 @@ This rule does not apply to `html` elements with an empty (`""`) `xml:lang` attr
 {% include_relative glossary/outcome.md %}
 {% include_relative glossary/valid-language-tag.md %}
 
-{% include implementations/5b7ae0.md %}
+{% include_relative implementations/5b7ae0.md %}
 
 ## Changelog
 

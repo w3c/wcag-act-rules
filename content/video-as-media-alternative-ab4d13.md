@@ -220,7 +220,7 @@ Content is considered _visible_ if making it fully transparent would result in a
 
 For more details, see [examples of visible](https://act-rules.github.io/pages/examples/visible/).
 
-{% include implementations/ab4d13.md %}
+{% include_relative implementations/ab4d13.md %}
 
 ## Changelog
 

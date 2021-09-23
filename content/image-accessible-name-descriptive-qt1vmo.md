@@ -347,7 +347,7 @@ Content is considered _visible_ if making it fully transparent would result in a
 
 For more details, see [examples of visible](https://act-rules.github.io/pages/examples/visible/).
 
-{% include implementations/qt1vmo.md %}
+{% include_relative implementations/qt1vmo.md %}
 
 ## Changelog
 
