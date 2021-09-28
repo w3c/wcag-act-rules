@@ -25,6 +25,20 @@ rule_meta:
   last_modified: August 24th, 2021
 ---
 
+{::nomarkdown}
+
+{::options toc_levels="2,3" /}
+{::nomarkdown}
+{% include toc.html type="start" title="Page Contents" %}
+{:/}
+
+- This will be replaced by an automatically generated TOC when using Markdown formatting.
+{:toc}
+
+{::nomarkdown}
+{% include toc.html type="end" %}
+{:/}
+
 ## Applicability
 
 This rule applies to any attribute that starts with `aria-`.
