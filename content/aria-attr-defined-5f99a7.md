@@ -25,8 +25,6 @@ rule_meta:
   last_modified: August 24th, 2021
 ---
 
-{::nomarkdown}
-
 {::options toc_levels="2,3" /}
 {::nomarkdown}
 {% include toc.html type="start" title="Page Contents" %}
