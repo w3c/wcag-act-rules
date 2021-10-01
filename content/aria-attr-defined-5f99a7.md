@@ -30,7 +30,7 @@ rule_meta:
 {% include toc.html type="start" title="Page Contents" %}
 {:/}
 
-- This will be replaced by an automatically generated TOC when using Markdown formatting.
+- Table of Content placeholder
 {:toc}
 
 {::nomarkdown}
