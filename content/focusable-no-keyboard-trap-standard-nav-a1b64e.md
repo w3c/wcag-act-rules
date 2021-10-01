@@ -7,7 +7,7 @@ github:
   repository: w3c/wcag-act-rules
   path: content/focusable-no-keyboard-trap-standard-nav-a1b64e.md
 footer: |
-  <p><strong>Date:</strong> Updated August 24th, 2021</p>
+  <p><strong>Date:</strong> Updated October 1st, 2021</p>
   <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/carlosapaduarte">Carlos Duarte</a>, <a href="https://github.com/DagfinnRomen">Dagfinn Rømen</a>, <a href="https://github.com/geirsf">Geir Sindre Fossøy</a>, <a href="https: //github.com/MaliinO">Malin Øvrebø</a>, <a href="https://github.com/nitedog">Shadi Abou-Zahra</a>, <a href="https://github.com/skotkjerra">Stein Erik Skotkjerra</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>.</p>
 proposed: true
@@ -24,8 +24,20 @@ rule_meta:
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
     - handle: CSS Styling
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
-  last_modified: August 24th, 2021
+  last_modified: October 1st, 2021
 ---
+
+{::options toc_levels="2" /}
+{::nomarkdown}
+{% include toc.html type="start" title="Page Contents" %}
+{:/}
+
+- Table of Content placeholder
+{:toc}
+
+{::nomarkdown}
+{% include toc.html type="end" %}
+{:/}
 
 ## Applicability
 

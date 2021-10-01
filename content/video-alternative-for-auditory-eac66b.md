@@ -7,7 +7,7 @@ github:
   repository: w3c/wcag-act-rules
   path: content/video-alternative-for-auditory-eac66b.md
 footer: |
-  <p><strong>Date:</strong> Updated August 24th, 2021</p>
+  <p><strong>Date:</strong> Updated October 1st, 2021</p>
   <p><strong>Authors:</strong> <a href="https://www.linkedin.com/in/brianbors/">Brian Bors</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>.</p>
 proposed: true
@@ -41,12 +41,24 @@ rule_meta:
   input_aspects:
     - ab4d13
     - f51b46
-  last_modified: August 24th, 2021
+  last_modified: October 1st, 2021
   scs_tested:
     - handle: Captions (Prerecorded)
       num: 1.2.2
       level: A
 ---
+
+{::options toc_levels="2" /}
+{::nomarkdown}
+{% include toc.html type="start" title="Page Contents" %}
+{:/}
+
+- Table of Content placeholder
+{:toc}
+
+{::nomarkdown}
+{% include toc.html type="end" %}
+{:/}
 
 ## Applicability
 

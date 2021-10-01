@@ -7,7 +7,7 @@ github:
   repository: w3c/wcag-act-rules
   path: content/image-accessible-name-descriptive-qt1vmo.md
 footer: |
-  <p><strong>Date:</strong> Updated August 24th, 2021</p>
+  <p><strong>Date:</strong> Updated October 1st, 2021</p>
   <p><strong>Authors:</strong> <a href="https://github.com/wilcofiers">Wilco Fiers</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>.</p>
   <p><strong>Assets:</strong> test cases use assets from the following sources: W3C; HTML and W3C logo. Wikimedia; Fireworks image. Adobe; PDF logo.</p>
@@ -43,12 +43,24 @@ rule_meta:
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
     - handle: Language
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-text
-  last_modified: August 24th, 2021
+  last_modified: October 1st, 2021
   scs_tested:
     - handle: Non-text Content
       num: 1.1.1
       level: A
 ---
+
+{::options toc_levels="2" /}
+{::nomarkdown}
+{% include toc.html type="start" title="Page Contents" %}
+{:/}
+
+- Table of Content placeholder
+{:toc}
+
+{::nomarkdown}
+{% include toc.html type="end" %}
+{:/}
 
 ## Applicability
 
@@ -316,14 +328,13 @@ Elements that can become the target of keyboard input as described in the [HTML]
 
 ### Included in the accessibility tree {#included-in-the-accessibility-tree}
 
-Elements included in the accessibility tree of platform specific accessibility APIs. Elements in the accessibility tree are exposed to assistive technologies, allowing users to interact with the elements in a way that meet the requirements of the individual user.
+Elements included in the accessibility tree of platform specific accessibility APIs are exposed to assistive technologies. This allows users of assistive technology to access the elements in a way that meets the requirements of the individual user.
 
 The general rules for when elements are included in the accessibility tree are defined in the [core accessibility API mappings](https://www.w3.org/TR/core-aam/). For native markup languages, such as HTML and SVG, additional rules for when elements are included in the accessibility tree can be found in the [HTML accessibility API mappings (working draft)](https://www.w3.org/TR/html-aam/) and the [SVG accessibility API mappings (working draft)](https://www.w3.org/TR/svg-aam/).
 
 For more details, see [examples of included in the accessibility tree][].
 
-**Note:** Users of assistive technologies might still be able to interact with elements that are not included in the accessibility tree. An example of this is a [focusable](#focusable) element with an `aria-hidden` attribute with a value of `true`. Such an element could still be interacted using sequential keyboard navigation regardless of the assistive technologies used, even though the element would not be included in the accessibility tree.
-[examples of included in the accessibility tree]: https://act-rules.github.io/pages/examples/included-in-the-accessibility-tree/
+[Programmatically hidden](#programmatically-hidden) elements are removed from the accessibility tree. However, some browsers will leave [focusable](#focusable) elements with an `aria-hidden` attribute set to `true` in the accessibility tree. Because they are hidden, these elements are considered **not** included in the accessibility tree. This may cause confusion for users of assistive technologies because they may still be able to interact with these focusable elements using sequential keyboard navigation, even though the element should not be included in the accessibility tree.
 
 ### Outcome {#outcome}
 
@@ -336,6 +347,16 @@ An _outcome_ is a conclusion that comes from evaluating an ACT Rule on a [test s
 **Note:** A rule has one `passed` or `failed` outcome for every [test target](https://www.w3.org/TR/act-rules-format/#test-target). When there are no test targets the rule has one `inapplicable` outcome. This means that each [test subject](https://www.w3.org/TR/act-rules-format/#test-subject) will have one or more outcomes.
 
 **Note:** Implementations using the [EARL10-Schema](https://www.w3.org/TR/EARL10-Schema/) can express the outcome with the [outcome property](https://www.w3.org/TR/EARL10-Schema/#outcome). In addition to `passed`, `failed` and `inapplicable`, EARL 1.0 also defined an `incomplete` outcome. While this cannot be the outcome of an ACT Rule when applied in its entirety, it often happens that rules are only partially evaluated. For example, when applicability was automated, but the expectations have to be evaluated manually. Such "interim" results can be expressed with the `incomplete` outcome.
+
+### Programmatically Hidden {#programmatically-hidden}
+
+An HTML element is _programmatically hidden_ if either it has a [computed][] CSS property `visibility` whose value is not `visible`; or at least one of the following is true for any of its [inclusive ancestors][] in the [flat tree][]:
+
+- has a `hidden` attribute; or
+- has a [computed][] CSS property `display` of `none`; or
+- has an `aria-hidden` attribute set to `true`
+
+**Note**: Contrarily to the other conditions, the `visibility` CSS property may be reverted by descendants.
 
 ### Visible {#visible}
 
@@ -357,11 +378,14 @@ This is the first version of this ACT rule.
 [accessible name]: #accessible-name 'Definition of accessible name'
 [ancestor]: https://dom.spec.whatwg.org/#concept-tree-ancestor 'DOM definition of ancestor, 2020/03/06'
 [completely available]: https://html.spec.whatwg.org/#img-all 'HTML definition of Completely available, 2020/03/06'
+[computed]: https://www.w3.org/TR/css-cascade/#computed-value 'CSS definition of computed value'
 [current request]: https://html.spec.whatwg.org/#current-request 'HTML definition of Current request, 2020/03/06'
 [examples of accessible name]: https://act-rules.github.io/pages/examples/accessible-name/
+[examples of included in the accessibility tree]: https://act-rules.github.io/pages/examples/included-in-the-accessibility-tree/
 [flat tree]: https://drafts.csswg.org/css-scoping/#flat-tree 'CSS Scoping definition of Flat tree, working draft'
 [image request state]: https://html.spec.whatwg.org/#img-req-state 'HTML definition of Image request state, 2020/03/06'
 [included in the accessibility tree]: #included-in-the-accessibility-tree 'Definition of included in the accessibility tree'
+[inclusive ancestors]: https://dom.spec.whatwg.org/#concept-tree-inclusive-ancestor 'DOM Definition of Inclusive Ancestor'
 [named from author]: https://www.w3.org/TR/wai-aria-1.1/#namecalculation 'WAI-ARIA definition of Named from author'
 [non-text content]: https://www.w3.org/TR/WCAG21/#dfn-non-text-content 'WCAG 2.1 definition of non-text content'
 [visible]: #visible 'Definition of visible'

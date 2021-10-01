@@ -7,7 +7,7 @@ github:
   repository: w3c/wcag-act-rules
   path: content/image-no-text-0va7u6.md
 footer: |
-  <p><strong>Date:</strong> Updated August 24th, 2021</p>
+  <p><strong>Date:</strong> Updated October 1st, 2021</p>
   <p><strong>Authors:</strong> <a href="https://github.com/carlosapaduarte">Carlos Duarte</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>.</p>
   <p><strong>Assets:</strong> test cases use assets from the following sources: Times Square image released into the public domain by (WT-shared) Ypsilonatshared at wts wikivoyage.. Book shelf image by Alexandre Boue, licensed under the [Creative Commons Attribution-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/deed.en) license.. Ivanhoe Classic Comics released into the public domain by Malcolm Kildale under the [Creative Commons Attribution-ShareAlike 3.0 Unported](https://creativecommons.org/licenses/by-sa/3.0/deed.en) license.</p>
@@ -36,7 +36,7 @@ rule_meta:
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
     - handle: Language
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-text
-  last_modified: August 24th, 2021
+  last_modified: October 1st, 2021
   scs_tested:
     - handle: Images of Text
       num: 1.4.5
@@ -45,6 +45,18 @@ rule_meta:
       num: 1.4.9
       level: AAA
 ---
+
+{::options toc_levels="2" /}
+{::nomarkdown}
+{% include toc.html type="start" title="Page Contents" %}
+{:/}
+
+- Table of Content placeholder
+{:toc}
+
+{::nomarkdown}
+{% include toc.html type="end" %}
+{:/}
 
 ## Applicability
 

@@ -7,7 +7,7 @@ github:
   repository: w3c/wcag-act-rules
   path: content/links-identical-name-equivalent-purpose-b20e66.md
 footer: |
-  <p><strong>Date:</strong> Updated August 24th, 2021</p>
+  <p><strong>Date:</strong> Updated October 1st, 2021</p>
   <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/Jym77">Jean-Yves Moyen</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>.</p>
 proposed: true
@@ -32,21 +32,33 @@ rule_meta:
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
     - handle: Language
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-text
-  last_modified: August 24th, 2021
+  last_modified: October 1st, 2021
   scs_tested:
     - handle: Link Purpose (Link Only)
       num: 2.4.9
       level: AAA
 ---
 
+{::options toc_levels="2" /}
+{::nomarkdown}
+{% include toc.html type="start" title="Page Contents" %}
+{:/}
+
+- Table of Content placeholder
+{:toc}
+
+{::nomarkdown}
+{% include toc.html type="end" %}
+{:/}
+
 ## Applicability
 
-This rule applies to any set of any two or more [HTML or SVG elements][] which
+This rule applies to any set of any two or more [HTML or SVG elements][] for which all the following are true:
 
-- have the [semantic role][] of `link`, or a role that inherits from the `link` role; and
-- are in the same [web page (HTML)][]; and
-- are [included in an accessibility tree][included in the accessibility tree]; and
-- that have [matching][] [accessible names][accessible name] that are not empty (`""`).
+- the elements are [inheriting semantic][] `link` nodes; and
+- the elements are in the same [web page (HTML)][]; and
+- the elements are [included in an accessibility tree][included in the accessibility tree]; and
+- the elements have [matching][] [accessible names][accessible name] that are not empty (`""`).
 
 **Note:** The test target for this rule is the full set of link elements that share the same [matching][] [accessible name][].
 
@@ -63,7 +75,7 @@ When followed, the links in each set of target elements resolve to the [same res
 ## Accessibility Support
 
 - This rule assumes that assistive technologies are exposing all links on the page in the same way no matter which [document tree](https://dom.spec.whatwg.org/#document-trees) they are in. If an assistive technology requires the user to "enter" an `iframe` or a [shadow tree][] before exposing its links, then it is possible for two links to have identical name but resolve to different resources without failing [Success Criterion 2.4.9 Link Purpose (Link Only)][sc249] (if said links are in separate [documents][document] or [shadow trees][shadow tree]).
-- Implementation of [Presentational Roles Conflict Resolution][] varies from one browser or assistive technology to another. Depending on this, some elements can have a [semantic role][] of `link` and fail this rule with some technology but users of other technologies would not experience any accessibility issue.
+- Implementation of [Presentational Roles Conflict Resolution][] varies from one browser or assistive technology to another. Depending on this, some [inheriting semantic][] `link` elements can fail this rule with some technology but users of other technologies would not experience any accessibility issue.
 
 ## Background
 
@@ -428,17 +440,6 @@ Other roles may be added as they become available. Not all roles will be support
 
 Elements that can become the target of keyboard input as described in the [HTML](https://www.w3.org/TR/html) specification of [focusable](https://html.spec.whatwg.org/#focusable-area) and [can be focused](https://html.spec.whatwg.org/#specially-focusable).
 
-### Hidden State {#hidden-state}
-
-An HTML element's _hidden state_ is "true" if at least one of the following is true for itself or any of its [ancestors][] in the [flat tree][]:
-
-- has a `hidden` attribute; or
-- has a [computed][] CSS property `display` of `none`; or
-- has a [computed][] CSS property `visibility` of `hidden`; or
-- has an `aria-hidden` attribute set to `true`
-
-In any other case, the element's _hidden state_ is "false".
-
 ### Implicit Semantic Role {#implicit-role}
 
 The _implicit semantic role_ of an element is a pre-defined value given by the host language which depends on the element and its ancestors.
@@ -447,14 +448,19 @@ Implicit roles for HTML and SVG, are documented in the [HTML accessibility API m
 
 ### Included in the accessibility tree {#included-in-the-accessibility-tree}
 
-Elements included in the accessibility tree of platform specific accessibility APIs. Elements in the accessibility tree are exposed to assistive technologies, allowing users to interact with the elements in a way that meet the requirements of the individual user.
+Elements included in the accessibility tree of platform specific accessibility APIs are exposed to assistive technologies. This allows users of assistive technology to access the elements in a way that meets the requirements of the individual user.
 
 The general rules for when elements are included in the accessibility tree are defined in the [core accessibility API mappings](https://www.w3.org/TR/core-aam/). For native markup languages, such as HTML and SVG, additional rules for when elements are included in the accessibility tree can be found in the [HTML accessibility API mappings (working draft)](https://www.w3.org/TR/html-aam/) and the [SVG accessibility API mappings (working draft)](https://www.w3.org/TR/svg-aam/).
 
 For more details, see [examples of included in the accessibility tree][].
 
-**Note:** Users of assistive technologies might still be able to interact with elements that are not included in the accessibility tree. An example of this is a [focusable](#focusable) element with an `aria-hidden` attribute with a value of `true`. Such an element could still be interacted using sequential keyboard navigation regardless of the assistive technologies used, even though the element would not be included in the accessibility tree.
-[examples of included in the accessibility tree]: https://act-rules.github.io/pages/examples/included-in-the-accessibility-tree/
+[Programmatically hidden](#programmatically-hidden) elements are removed from the accessibility tree. However, some browsers will leave [focusable](#focusable) elements with an `aria-hidden` attribute set to `true` in the accessibility tree. Because they are hidden, these elements are considered **not** included in the accessibility tree. This may cause confusion for users of assistive technologies because they may still be able to interact with these focusable elements using sequential keyboard navigation, even though the element should not be included in the accessibility tree.
+
+### Inheriting Semantic Role {#inheriting-semantic}
+
+An element with an _inheriting semantic role_ of X is any element with a non-[abstract][] [semantic role][] that inherits from X, or is the same as X.
+
+**Example**: An "inheriting semantic link" is any element that either has the [semantic role][] of [`link`][link] or a [semantic role][] that inherits from the [`link`][link] role, such as [doc-biblioref][].
 
 ### Marked as decorative {#marked-as-decorative}
 
@@ -465,7 +471,7 @@ An element is _marked as decorative_ if one or more of the following conditions 
 
 Elements are marked as decorative as a way to convey the intention of the author that they are [pure decoration][]. It is different from the element actually being [pure decoration][] as authors may make mistakes. It is different from the element being effectively ignored by assistive technologies as rules such as [presentational roles conflict resolution][] may overwrite this intention.
 
-Elements can also be ignored by assistive technologies if their [hidden state][] is true. This is different from marking the element as decorative and does not convey the same intention. Notably, the [hidden state][] of an element may change as users interact with the page (showing and hiding elements) while being marked as decorative should stay the same through all states of the page.
+Elements can also be ignored by assistive technologies if they are [programmatically hidden][]. This is different from marking the element as decorative and does not convey the same intention. Notably, being [programmatically hidden][] may change as users interact with the page (showing and hiding elements) while being marked as decorative should stay the same through all states of the page.
 
 ### Matching characters {#matching-characters}
 
@@ -489,6 +495,16 @@ An _outcome_ is a conclusion that comes from evaluating an ACT Rule on a [test s
 
 **Note:** Implementations using the [EARL10-Schema](https://www.w3.org/TR/EARL10-Schema/) can express the outcome with the [outcome property](https://www.w3.org/TR/EARL10-Schema/#outcome). In addition to `passed`, `failed` and `inapplicable`, EARL 1.0 also defined an `incomplete` outcome. While this cannot be the outcome of an ACT Rule when applied in its entirety, it often happens that rules are only partially evaluated. For example, when applicability was automated, but the expectations have to be evaluated manually. Such "interim" results can be expressed with the `incomplete` outcome.
 
+### Programmatically Hidden {#programmatically-hidden}
+
+An HTML element is _programmatically hidden_ if either it has a [computed][] CSS property `visibility` whose value is not `visible`; or at least one of the following is true for any of its [inclusive ancestors][] in the [flat tree][]:
+
+- has a `hidden` attribute; or
+- has a [computed][] CSS property `display` of `none`; or
+- has an `aria-hidden` attribute set to `true`
+
+**Note**: Contrarily to the other conditions, the `visibility` CSS property may be reverted by descendants.
+
 ### Same resource {#same-resource}
 
 Two or more resources can be the _same resource_ even though the URLs for them are different. This can be due to URL parsing, server settings, redirects and DNS aliasing.
@@ -507,9 +523,11 @@ On the other hand, identical relative URLs do not necessarily resolve to the sam
 
 The _semantic role_ of an element is determined by the first of these cases that applies:
 
-1. **Conflict** If the element is [marked as decorative][], but the element is [included in the accessibility tree][]; or would be [included in the accessibility tree][] when its [hidden state][] is false, then its _semantic role_ is its **[implicit role][]**.
+1. **Conflict** If the element is [marked as decorative][], but the element is [included in the accessibility tree][]; or would be [included in the accessibility tree][] when it is not [programmatically hidden][], then its _semantic role_ is its **[implicit role][]**.
 1. **Explicit** If the element has an [explicit role][], then its _semantic role_ is its [explicit role][].
 1. **Implicit** The _semantic role_ of the element is its [implicit role][].
+
+This definition can be used in expressions such as "semantic `button`" meaning any element with a semantic role of `button`.
 
 ### WAI-ARIA specifications {#wai-aria-specifications}
 
@@ -537,28 +555,33 @@ An _HTML [web page](https://www.w3.org/TR/WCAG21/#dfn-web-page-s)_ is the set of
 
 This is the first version of this ACT rule.
 
+[abstract]: https://www.w3.org/TR/wai-aria-1.1/#isAbstract 'ARIA Definition for Abstract Roles'
 [accessibility support base line]: https://www.w3.org/TR/WCAG-EM/#step1c 'Definition of accessibility support base line'
 [accessible name and description computation]: https://www.w3.org/TR/accname 'Accessible Name and Description Computation'
 [accessible name]: #accessible-name 'Definition of accessible name'
-[ancestors]: https://dom.spec.whatwg.org/#concept-tree-ancestor 'Definition Ancestor'
 [browsing context]: https://html.spec.whatwg.org/#browsing-context 'Definition of browsing context'
 [computed]: https://www.w3.org/TR/css-cascade/#computed-value 'CSS definition of computed value'
+[doc-biblioref]: https://www.w3.org/TR/dpub-aria-1.0/#doc-biblioref 'DPUB ARIA Definition of doc-biblioref'
 [document]: https://dom.spec.whatwg.org/#concept-document 'Definition of document'
 [element]: https://dom.spec.whatwg.org/#element 'DOM element, 2021/05/31'
 [examples of accessible name]: https://act-rules.github.io/pages/examples/accessible-name/
+[examples of included in the accessibility tree]: https://act-rules.github.io/pages/examples/included-in-the-accessibility-tree/
 [explicit role]: #explicit-role 'Definition of explicit role'
 [flat tree]: https://drafts.csswg.org/css-scoping/#flat-tree 'Definition of flat tree'
 [focusable]: #focusable 'Definition of Focusable'
-[hidden state]: #hidden-state 'Definition of Hidden State'
 [html namespaces]: https://infra.spec.whatwg.org/#namespaces 'HTML namespace, 2021/05/31'
 [html or svg elements]: #namespaced-element
 [implicit role]: #implicit-role 'Definition of Implicit Role'
 [included in the accessibility tree]: #included-in-the-accessibility-tree 'Definition of included in the accessibility tree'
+[inclusive ancestors]: https://dom.spec.whatwg.org/#concept-tree-inclusive-ancestor 'DOM Definition of Inclusive Ancestor'
+[inheriting semantic]: #inheriting-semantic 'Definition of Inheriting Semantic Role'
 [light tree]: https://dom.spec.whatwg.org/#concept-light-tree 'Definition of light tree'
+[link]: https://www.w3.org/TR/wai-aria/#link 'ARIA Definition of the link Role'
 [marked as decorative]: #marked-as-decorative 'Definition of Marked as Decorative'
 [matching]: #matching-characters 'Definition of matching characters'
 [namespaceuri]: https://dom.spec.whatwg.org/#dom-element-namespaceuri 'DOM Element namespaceURI, 2021/05/31'
 [presentational roles conflict resolution]: https://www.w3.org/TR/wai-aria-1.1/#conflict_resolution_presentation_none 'Presentational Roles Conflict Resolution'
+[programmatically hidden]: #programmatically-hidden 'Definition of Programmatically Hidden'
 [pure decoration]: https://www.w3.org/TR/WCAG21/#dfn-pure-decoration 'WCAG definition of Pure Decoration'
 [role attribute]: https://www.w3.org/TR/role-attribute/ 'Specification of the role attribute'
 [same resource]: #same-resource 'Definition of same resource'

@@ -53,7 +53,10 @@ rule_meta:
 {::nomarkdown}
 {% include toc.html type="start" title="Page Contents" %}
 {:/}
+
+- Table of Content placeholder
 {:toc}
+
 {::nomarkdown}
 {% include toc.html type="end" %}
 {:/}

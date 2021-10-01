@@ -7,7 +7,7 @@ github:
   repository: w3c/wcag-act-rules
   path: content/document-has-instrument-to-non-repeated-content-ye5d6e.md
 footer: |
-  <p><strong>Date:</strong> Updated August 24th, 2021</p>
+  <p><strong>Date:</strong> Updated October 1st, 2021</p>
   <p><strong>Authors:</strong> <a href="https://github.com/Jym77">Jean-Yves Moyen</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>.</p>
   <p><strong>Assets:</strong> test cases use assets from the following sources: _The Three Kingdoms_ by Luo Guanzhong, translation by Yu Sumei (Tuttle publishing, 2014, ISBN 9780804843935).</p>
@@ -43,8 +43,20 @@ rule_meta:
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
     - handle: Language
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-text
-  last_modified: August 24th, 2021
+  last_modified: October 1st, 2021
 ---
+
+{::options toc_levels="2" /}
+{::nomarkdown}
+{% include toc.html type="start" title="Page Contents" %}
+{:/}
+
+- Table of Content placeholder
+{:toc}
+
+{::nomarkdown}
+{% include toc.html type="end" %}
+{:/}
 
 ## Applicability
 
@@ -457,17 +469,6 @@ Other roles may be added as they become available. Not all roles will be support
 
 Elements that can become the target of keyboard input as described in the [HTML](https://www.w3.org/TR/html) specification of [focusable](https://html.spec.whatwg.org/#focusable-area) and [can be focused](https://html.spec.whatwg.org/#specially-focusable).
 
-### Hidden State {#hidden-state}
-
-An HTML element's _hidden state_ is "true" if at least one of the following is true for itself or any of its [ancestors][] in the [flat tree][]:
-
-- has a `hidden` attribute; or
-- has a [computed][] CSS property `display` of `none`; or
-- has a [computed][] CSS property `visibility` of `hidden`; or
-- has an `aria-hidden` attribute set to `true`
-
-In any other case, the element's _hidden state_ is "false".
-
 ### Implicit Semantic Role {#implicit-role}
 
 The _implicit semantic role_ of an element is a pre-defined value given by the host language which depends on the element and its ancestors.
@@ -476,14 +477,13 @@ Implicit roles for HTML and SVG, are documented in the [HTML accessibility API m
 
 ### Included in the accessibility tree {#included-in-the-accessibility-tree}
 
-Elements included in the accessibility tree of platform specific accessibility APIs. Elements in the accessibility tree are exposed to assistive technologies, allowing users to interact with the elements in a way that meet the requirements of the individual user.
+Elements included in the accessibility tree of platform specific accessibility APIs are exposed to assistive technologies. This allows users of assistive technology to access the elements in a way that meets the requirements of the individual user.
 
 The general rules for when elements are included in the accessibility tree are defined in the [core accessibility API mappings](https://www.w3.org/TR/core-aam/). For native markup languages, such as HTML and SVG, additional rules for when elements are included in the accessibility tree can be found in the [HTML accessibility API mappings (working draft)](https://www.w3.org/TR/html-aam/) and the [SVG accessibility API mappings (working draft)](https://www.w3.org/TR/svg-aam/).
 
 For more details, see [examples of included in the accessibility tree][].
 
-**Note:** Users of assistive technologies might still be able to interact with elements that are not included in the accessibility tree. An example of this is a [focusable](#focusable) element with an `aria-hidden` attribute with a value of `true`. Such an element could still be interacted using sequential keyboard navigation regardless of the assistive technologies used, even though the element would not be included in the accessibility tree.
-[examples of included in the accessibility tree]: https://act-rules.github.io/pages/examples/included-in-the-accessibility-tree/
+[Programmatically hidden](#programmatically-hidden) elements are removed from the accessibility tree. However, some browsers will leave [focusable](#focusable) elements with an `aria-hidden` attribute set to `true` in the accessibility tree. Because they are hidden, these elements are considered **not** included in the accessibility tree. This may cause confusion for users of assistive technologies because they may still be able to interact with these focusable elements using sequential keyboard navigation, even though the element should not be included in the accessibility tree.
 
 ### Instrument to achieve an objective {#instrument-to-achieve-an-objective}
 
@@ -509,7 +509,7 @@ An element is _marked as decorative_ if one or more of the following conditions 
 
 Elements are marked as decorative as a way to convey the intention of the author that they are [pure decoration][]. It is different from the element actually being [pure decoration][] as authors may make mistakes. It is different from the element being effectively ignored by assistive technologies as rules such as [presentational roles conflict resolution][] may overwrite this intention.
 
-Elements can also be ignored by assistive technologies if their [hidden state][] is true. This is different from marking the element as decorative and does not convey the same intention. Notably, the [hidden state][] of an element may change as users interact with the page (showing and hiding elements) while being marked as decorative should stay the same through all states of the page.
+Elements can also be ignored by assistive technologies if they are [programmatically hidden][]. This is different from marking the element as decorative and does not convey the same intention. Notably, being [programmatically hidden][] may change as users interact with the page (showing and hiding elements) while being marked as decorative should stay the same through all states of the page.
 
 ### Non-repeated content after repeated content {#non-repeated-content}
 
@@ -541,13 +541,25 @@ A node is _perceivable content_ if all the following are true:
 
 Perceivable content corresponds to nodes that contain information and are perceived by some categories of users.
 
+### Programmatically Hidden {#programmatically-hidden}
+
+An HTML element is _programmatically hidden_ if either it has a [computed][] CSS property `visibility` whose value is not `visible`; or at least one of the following is true for any of its [inclusive ancestors][] in the [flat tree][]:
+
+- has a `hidden` attribute; or
+- has a [computed][] CSS property `display` of `none`; or
+- has an `aria-hidden` attribute set to `true`
+
+**Note**: Contrarily to the other conditions, the `visibility` CSS property may be reverted by descendants.
+
 ### Semantic Role {#semantic-role}
 
 The _semantic role_ of an element is determined by the first of these cases that applies:
 
-1. **Conflict** If the element is [marked as decorative][], but the element is [included in the accessibility tree][]; or would be [included in the accessibility tree][] when its [hidden state][] is false, then its _semantic role_ is its **[implicit role][]**.
+1. **Conflict** If the element is [marked as decorative][], but the element is [included in the accessibility tree][]; or would be [included in the accessibility tree][] when it is not [programmatically hidden][], then its _semantic role_ is its **[implicit role][]**.
 1. **Explicit** If the element has an [explicit role][], then its _semantic role_ is its [explicit role][].
 1. **Implicit** The _semantic role_ of the element is its [implicit role][].
+
+This definition can be used in expressions such as "semantic `button`" meaning any element with a semantic role of `button`.
 
 ### Visible {#visible}
 
@@ -588,23 +600,23 @@ This is the first version of this ACT rule.
 [accessibility support base line]: https://www.w3.org/TR/WCAG-EM/#step1c 'Definition of accessibility support base line'
 [activated]: https://html.spec.whatwg.org/#activation
 [activation]: https://html.spec.whatwg.org/#activation 'HTML Definition of Activation'
-[ancestors]: https://dom.spec.whatwg.org/#concept-tree-ancestor 'Definition Ancestor'
 [block of content]: #block-of-repeated-content 'Definition of Block of Content'
 [block of repeated content]: #block-of-repeated-content 'Definition of Block of Repeated Content'
 [computed]: https://www.w3.org/TR/css-cascade/#computed-value 'CSS definition of computed value'
 [default port]: https://url.spec.whatwg.org/#default-port 'URL specification of Default Port'
 [document]: https://dom.spec.whatwg.org/#concept-document 'DOM definition of Document'
 [equivalent resource]: #equivalent-resource 'Definition of Equivalent Resource'
+[examples of included in the accessibility tree]: https://act-rules.github.io/pages/examples/included-in-the-accessibility-tree/
 [explicit role]: #explicit-role 'Definition of Explicit Role'
-[flat tree]: https://drafts.csswg.org/css-scoping/#flat-tree 'Definition of flat tree'
+[flat tree]: https://drafts.csswg.org/css-scoping/#flat-tree 'CSS Definition of Flat Tree'
 [focusable]: #focusable 'Definition of Focusable'
 [focused]: https://html.spec.whatwg.org/#focused 'HTML definition of Focused'
-[hidden state]: #hidden-state 'Definition of Hidden State'
 [host]: https://url.spec.whatwg.org/#concept-url-host 'URL specification of Host'
 [html element]: https://html.spec.whatwg.org/multipage/dom.html#htmlelement
 [html web page]: #web-page-html 'Definition of Web Page (HTML)'
 [implicit role]: #implicit-role 'Definition of Implicit Role'
 [included in the accessibility tree]: #included-in-the-accessibility-tree 'Definition of included in the accessibility tree'
+[inclusive ancestors]: https://dom.spec.whatwg.org/#concept-tree-inclusive-ancestor 'DOM Definition of Inclusive Ancestor'
 [instrument]: #instrument-to-achieve-an-objective 'Definition of Instrument to Achieve an Objective'
 [just before]: #just-before 'Definition of Just Before'
 [marked as decorative]: #marked-as-decorative 'Definition of Marked as Decorative'
@@ -617,6 +629,7 @@ This is the first version of this ACT rule.
 [perceivable content]: #perceivable-content 'Definition of Perceivable Content'
 [port]: https://url.spec.whatwg.org/#concept-url-port 'URL specification of Port'
 [presentational roles conflict resolution]: https://www.w3.org/TR/wai-aria-1.1/#conflict_resolution_presentation_none 'Presentational Roles Conflict Resolution'
+[programmatically hidden]: #programmatically-hidden 'Definition of Programmatically Hidden'
 [pure decoration]: https://www.w3.org/TR/WCAG21/#dfn-pure-decoration 'WCAG definition of Pure Decoration'
 [role attribute]: https://www.w3.org/TR/role-attribute/ 'Specification of the role attribute'
 [sc131]: https://www.w3.org/TR/WCAG21/#info-and-relationships 'Success Criterion 1.3.1

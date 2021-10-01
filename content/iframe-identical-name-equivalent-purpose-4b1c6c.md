@@ -7,7 +7,7 @@ github:
   repository: w3c/wcag-act-rules
   path: content/iframe-identical-name-equivalent-purpose-4b1c6c.md
 footer: |
-  <p><strong>Date:</strong> Updated August 24th, 2021</p>
+  <p><strong>Date:</strong> Updated October 1st, 2021</p>
   <p><strong>Authors:</strong> <a href="https://github.com/audreymaniez">Audrey Maniez</a>, <a href="https://github.com/Jym77">Jean-Yves Moyen</a>, <a href="https://github.com/jkodu">Jey Nandakumar</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>.</p>
 proposed: true
@@ -30,12 +30,24 @@ rule_meta:
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
     - handle: Language
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-text
-  last_modified: August 24th, 2021
+  last_modified: October 1st, 2021
   scs_tested:
     - handle: Name, Role, Value
       num: 4.1.2
       level: A
 ---
+
+{::options toc_levels="2" /}
+{::nomarkdown}
+{% include toc.html type="start" title="Page Contents" %}
+{:/}
+
+- Table of Content placeholder
+{:toc}
+
+{::nomarkdown}
+{% include toc.html type="end" %}
+{:/}
 
 ## Applicability
 
@@ -45,13 +57,9 @@ This rule applies to any set of any two or more `iframe` elements which:
 - are [included in an accessibility tree][included in the accessibility tree]; and
 - that have [matching][] [accessible names][accessible name] that are not empty (`""`).
 
-**Note:** The test target for this rule is the full set of `iframe` elements that share the same [matching](#matching-characters) [accessible name][].
-
 ## Expectation
 
 The `iframe` elements in each set of target elements embed the [same resource][] or [equivalent resources](#equivalent-resource).
-
-**Note:** Resolving the embedded resource includes any redirects that are instant.
 
 ## Assumptions
 
@@ -63,6 +71,8 @@ The `iframe` elements in each set of target elements embed the [same resource][]
 This rule assumes that assistive technologies are exposing all `iframe` elements on the page in the same way no matter which [document tree](https://dom.spec.whatwg.org/#document-trees) they are in. If an assistive technology requires the user to "enter" an `iframe` or a [shadow tree][] before exposing its content (notably nested `iframe`), then it is possible for two `iframe` to have identical name but embed different resources without failing [Success Criterion 4.1.2: Name, Role, Value][sc412] (if said `iframe` are in separate [documents][document] or [shadow trees][shadow tree])
 
 ## Background
+
+When determining if target elements embed the same resource, resolving the embedded resource includes any redirects that are instant.
 
 - [CSS Scoping Module Level 1 (editor's draft)](https://drafts.csswg.org/css-scoping/)
 - [H64: Using the title attribute of the frame and iframe elements](https://www.w3.org/WAI/WCAG21/Techniques/html/H64)
@@ -411,14 +421,13 @@ Elements that can become the target of keyboard input as described in the [HTML]
 
 ### Included in the accessibility tree {#included-in-the-accessibility-tree}
 
-Elements included in the accessibility tree of platform specific accessibility APIs. Elements in the accessibility tree are exposed to assistive technologies, allowing users to interact with the elements in a way that meet the requirements of the individual user.
+Elements included in the accessibility tree of platform specific accessibility APIs are exposed to assistive technologies. This allows users of assistive technology to access the elements in a way that meets the requirements of the individual user.
 
 The general rules for when elements are included in the accessibility tree are defined in the [core accessibility API mappings](https://www.w3.org/TR/core-aam/). For native markup languages, such as HTML and SVG, additional rules for when elements are included in the accessibility tree can be found in the [HTML accessibility API mappings (working draft)](https://www.w3.org/TR/html-aam/) and the [SVG accessibility API mappings (working draft)](https://www.w3.org/TR/svg-aam/).
 
 For more details, see [examples of included in the accessibility tree][].
 
-**Note:** Users of assistive technologies might still be able to interact with elements that are not included in the accessibility tree. An example of this is a [focusable](#focusable) element with an `aria-hidden` attribute with a value of `true`. Such an element could still be interacted using sequential keyboard navigation regardless of the assistive technologies used, even though the element would not be included in the accessibility tree.
-[examples of included in the accessibility tree]: https://act-rules.github.io/pages/examples/included-in-the-accessibility-tree/
+[Programmatically hidden](#programmatically-hidden) elements are removed from the accessibility tree. However, some browsers will leave [focusable](#focusable) elements with an `aria-hidden` attribute set to `true` in the accessibility tree. Because they are hidden, these elements are considered **not** included in the accessibility tree. This may cause confusion for users of assistive technologies because they may still be able to interact with these focusable elements using sequential keyboard navigation, even though the element should not be included in the accessibility tree.
 
 ### Matching characters {#matching-characters}
 
@@ -435,6 +444,16 @@ An _outcome_ is a conclusion that comes from evaluating an ACT Rule on a [test s
 **Note:** A rule has one `passed` or `failed` outcome for every [test target](https://www.w3.org/TR/act-rules-format/#test-target). When there are no test targets the rule has one `inapplicable` outcome. This means that each [test subject](https://www.w3.org/TR/act-rules-format/#test-subject) will have one or more outcomes.
 
 **Note:** Implementations using the [EARL10-Schema](https://www.w3.org/TR/EARL10-Schema/) can express the outcome with the [outcome property](https://www.w3.org/TR/EARL10-Schema/#outcome). In addition to `passed`, `failed` and `inapplicable`, EARL 1.0 also defined an `incomplete` outcome. While this cannot be the outcome of an ACT Rule when applied in its entirety, it often happens that rules are only partially evaluated. For example, when applicability was automated, but the expectations have to be evaluated manually. Such "interim" results can be expressed with the `incomplete` outcome.
+
+### Programmatically Hidden {#programmatically-hidden}
+
+An HTML element is _programmatically hidden_ if either it has a [computed][] CSS property `visibility` whose value is not `visible`; or at least one of the following is true for any of its [inclusive ancestors][] in the [flat tree][]:
+
+- has a `hidden` attribute; or
+- has a [computed][] CSS property `display` of `none`; or
+- has an `aria-hidden` attribute set to `true`
+
+**Note**: Contrarily to the other conditions, the `visibility` CSS property may be reverted by descendants.
 
 ### Same resource {#same-resource}
 
@@ -470,11 +489,14 @@ This is the first version of this ACT rule.
 [accessible name]: #accessible-name 'Definition of accessible name'
 [ancestor browsing context]: https://html.spec.whatwg.org/#ancestor-browsing-context 'Definition of ancestor browsing context'
 [browsing context]: https://html.spec.whatwg.org/#browsing-context 'Definition of browsing context'
+[computed]: https://www.w3.org/TR/css-cascade/#computed-value 'CSS definition of computed value'
 [document tree]: https://dom.spec.whatwg.org/#document-trees 'Definition of document tree'
 [document]: https://dom.spec.whatwg.org/#concept-document 'Definition of document'
 [examples of accessible name]: https://act-rules.github.io/pages/examples/accessible-name/
+[examples of included in the accessibility tree]: https://act-rules.github.io/pages/examples/included-in-the-accessibility-tree/
 [flat tree]: https://drafts.csswg.org/css-scoping/#flat-tree 'Definition of flat tree'
 [included in the accessibility tree]: #included-in-the-accessibility-tree 'Definition of included in the accessibility tree'
+[inclusive ancestors]: https://dom.spec.whatwg.org/#concept-tree-inclusive-ancestor 'DOM Definition of Inclusive Ancestor'
 [light tree]: https://dom.spec.whatwg.org/#concept-light-tree 'Definition of light tree'
 [matching]: #matching-characters 'Definition of matching characters'
 [same resource]: #same-resource 'Definition of same resource'
