@@ -31,6 +31,7 @@ rule_meta:
 {:/}
 
 - Table of Content placeholder
+
 {:toc}
 
 {::nomarkdown}
