@@ -29,7 +29,9 @@ rule_meta:
 {::nomarkdown}
 {% include toc.html type="start" title="Page Contents" %}
 {:/}
+
 {:toc}
+
 {::nomarkdown}
 {% include toc.html type="end" %}
 {:/}
