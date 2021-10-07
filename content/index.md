@@ -20,9 +20,9 @@ github:
 {% include box.html type="start" title="Summary" class="" %}
 {:/}
 
-WCAG 2 Test Rules describe how to test conformance to Web Content Accessibility Guideline (WCAG) success criteria. They are primarily for developers of evaluation tools and test methodologies. Guidance for others is in Understanding WCAG and WCAG Techniques. To learn more, see: [WCAG Overview](https://www.w3.org/WAI/standards-guidelines/wcag/), [All WCAG 2 Guidance](https://www.w3.org/WAI/standards-guidelines/wcag/docs/), [About WCAG 2 Test Rules](https://www.w3.org/WAI/standards-guidelines/act/rules/about/).
+WCAG 2 Test Rules describe how to test conformance to Web Content Accessibility Guidelines (WCAG) success criteria. They are primarily for developers of evaluation tools and test methodologies. Guidance for others is in Understanding WCAG and WCAG Techniques. To learn more, see: [WCAG Overview](https://www.w3.org/WAI/standards-guidelines/wcag/), [All WCAG 2 Guidance](https://www.w3.org/WAI/standards-guidelines/wcag/docs/), [About WCAG 2 Test Rules](https://www.w3.org/WAI/standards-guidelines/act/rules/about/).
 
-This page lists [WCAG 2 Test Rules](https://www.w3.org/WAI/standards-guidelines/act/) formally published by the W3C Accessibility Guidelines Working Group (AGWG). Additional Rules are in development and will be published on this page when completed
+This page lists [WCAG 2 Test Rules](https://www.w3.org/WAI/standards-guidelines/act/) formally published by the W3C Accessibility Guidelines Working Group (AGWG). Additional Rules are in development and will be published on this page when completed.
 
 {::nomarkdown}
 {% include box.html type="end" %}
