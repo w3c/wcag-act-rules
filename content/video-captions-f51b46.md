@@ -7,10 +7,10 @@ github:
   repository: w3c/wcag-act-rules
   path: content/video-captions-f51b46.md
 footer: |
-  <p><strong>Date:</strong> Updated October 20th, 2021</p>
+  <p><strong>Date:</strong> Updated 22 October 2021</p>
   <p><strong>Authors:</strong> <a href="https://www.linkedin.com/in/brianbors/">Brian Bors</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>.</p>
-proposed: false
+proposed: true
 rule_meta:
   id: f51b46
   name: "`video` element auditory content has captions"
@@ -42,7 +42,7 @@ rule_meta:
       url: 
     - handle: Visual output
       url: 
-  last_modified: October 20th, 2021
+  last_modified: 22 October 2021
 ---
 
 {::options toc_levels="2" /}
@@ -76,8 +76,6 @@ This rule assumes that the video element is used to play a video (for example, n
 There are no major accessibility support issues known for this rule.
 
 ## Background
-
-### Bibliography
 
 - [Understanding Success Criterion 1.2.2: Captions (Prerecorded)](https://www.w3.org/WAI/WCAG21/Understanding/captions-prerecorded)
 - [G93: Providing open (always visible) captions](https://www.w3.org/WAI/WCAG21/Techniques/general/G93)
