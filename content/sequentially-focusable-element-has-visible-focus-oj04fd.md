@@ -7,10 +7,10 @@ github:
   repository: w3c/wcag-act-rules
   path: content/sequentially-focusable-element-has-visible-focus-oj04fd.md
 footer: |
-  <p><strong>Date:</strong> Updated October 20th, 2021</p>
+  <p><strong>Date:</strong> Updated 22 October 2021</p>
   <p><strong>Authors:</strong> <a href="https://github.com/Jym77">Jean-Yves Moyen</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>.</p>
-proposed: false
+proposed: true
 rule_meta:
   id: oj04fd
   name: "Element in sequential focus order has visible focus"
@@ -28,7 +28,7 @@ rule_meta:
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
     - handle: DOM tree
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
-  last_modified: October 20th, 2021
+  last_modified: 22 October 2021
   scs_tested:
     - handle: Focus Visible
       num: 2.4.7
@@ -70,8 +70,6 @@ Default styling in most user agents is providing perfectly valid focus indicatio
 WCAG does not have any requirement of how big or small focus indicator should be, or how far or near from the [focusable][] element it should be. Thus it is possible to pass this rule and [Success Criterion 2.4.7 Focus Visible][sc247] with barely perceptible changes at the other end of the page. That would however still be an accessibility issue. WCAG 2.2 includes [Success Criterion 2.4.11 Focus Appearance (Minimum)][sc2411] and [Success Criterion 2.4.12 Focus Appearance (Enhanced)][sc2412] specifying how big the focus indicator should be. All Examples in this rule avoid focus indications that are too small, too far away, have low contrast, …
 
 WCAG has no clear requirement of unicity of the focus indicator for each [focusable][] element. Therefore, this rule can pass even if several focus indicators are identical. Such a situation may nonetheless cause confusion and all Examples in this rule avoid it.
-
-### Bibliography
 
 - [Success Criterion 2.4.7 Focus Visible][sc247]
 - [Success Criterion 2.4.11 Focus Appearance (Minimum)][sc2411]

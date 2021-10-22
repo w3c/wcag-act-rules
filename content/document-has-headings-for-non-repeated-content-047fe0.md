@@ -7,11 +7,11 @@ github:
   repository: w3c/wcag-act-rules
   path: content/document-has-headings-for-non-repeated-content-047fe0.md
 footer: |
-  <p><strong>Date:</strong> Updated October 20th, 2021</p>
+  <p><strong>Date:</strong> Updated 22 October 2021</p>
   <p><strong>Authors:</strong> <a href="https://github.com/Jym77">Jean-Yves Moyen</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>.</p>
   <p><strong>Assets:</strong> test cases use assets from the following sources: _The Three Kingdoms_ by Luo Guanzhong, translation by Yu Sumei (Tuttle publishing, 2014, ISBN 9780804843935). Image from a Ming Dynasty edition of the Romance of the Three Kingdoms, original kept in the library holdings of Peking University..</p>
-proposed: false
+proposed: true
 rule_meta:
   id: 047fe0
   name: "Document has heading for non-repeated content"
@@ -31,7 +31,7 @@ rule_meta:
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
     - handle: DOM Tree
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
-  last_modified: October 20th, 2021
+  last_modified: 22 October 2021
 ---
 
 {::options toc_levels="2" /}
@@ -74,8 +74,6 @@ In each test target, either there is no [non-repeated content after repeated con
 The intention of this rule is that the heading is at (or near) the start of the main area of content of a document. However, defining the main area of content in a non-ambiguous way is not really doable. Therefore, the rule takes a more lenient position and only requires the heading to be some non-repeated content. Additional conditions on this heading were considered and rejected when writing the rule since it might be acceptable, for example, to have non-repeated content such as breadcrumb before any heading. Therefore, it is possible to pass this rule but still fail [H69: Providing heading elements at the beginning of each section of content][tech h69] and violate [Success Criterion 2.4.1 Bypass blocks][sc241].
 
 Neither this rule, nor technique [H69: Providing heading elements at the beginning of each section of content][tech h69], expects the heading to accurately describe its corresponding section. However, having non descriptive headings fails [Success Criterion 2.4.6: Headings and Labels](https://www.w3.org/TR/WCAG21/#headings-and-labels)
-
-### Bibliography
 
 - [Understanding Success Criterion 2.4.1: Bypass Blocks][usc241]
 - [H69: Providing heading elements at the beginning of each section of content][tech h69]

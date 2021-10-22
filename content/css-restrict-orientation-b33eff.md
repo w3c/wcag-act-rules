@@ -7,7 +7,7 @@ github:
   repository: w3c/wcag-act-rules
   path: content/css-restrict-orientation-b33eff.md
 footer: |
-  <p><strong>Date:</strong> Updated October 1st, 2021</p>
+  <p><strong>Date:</strong> Updated 22 October 2021</p>
   <p><strong>Authors:</strong> <a href="https://github.com/audreymaniez">Audrey Maniez</a>, <a href="https://github.com/jkodu">Jey Nandakumar</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>.</p>
 proposed: true
@@ -28,7 +28,7 @@ rule_meta:
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
     - handle: CSS Styling
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
-  last_modified: October 1st, 2021
+  last_modified: 22 October 2021
   scs_tested:
     - handle: Orientation
       num: 1.3.4
@@ -49,7 +49,7 @@ rule_meta:
 
 ## Applicability
 
-This rule applies to any HTML element that is [visible](#visible) and has a CSS [transform](https://www.w3.org/TR/css-transforms/#propdef-transform) property that is applied conditionally on the [orientation](https://www.w3.org/TR/css3-mediaqueries/#orientation) [media feature](https://www.w3.org/TR/css3-mediaqueries/#media1) with a value of `landscape` or `portrait`, where the CSS [transform](https://www.w3.org/TR/css-transforms/#propdef-transform) property has any of the below [transformation functions](https://www.w3.org/TR/css-transforms/#transform-functions):
+This rule applies to any [HTML element][] that is [visible](#visible) and has a CSS [transform](https://www.w3.org/TR/css-transforms/#propdef-transform) property that is applied conditionally on the [orientation](https://www.w3.org/TR/css3-mediaqueries/#orientation) [media feature](https://www.w3.org/TR/css3-mediaqueries/#media1) with a value of `landscape` or `portrait`, where the CSS [transform](https://www.w3.org/TR/css-transforms/#propdef-transform) property has any of the below [transformation functions](https://www.w3.org/TR/css-transforms/#transform-functions):
 
 - [rotate](https://www.w3.org/TR/css-transforms/#funcdef-transform-rotate)
 - [rotate3d](https://drafts.csswg.org/css-transforms-2/#funcdef-rotate3d)
@@ -324,6 +324,12 @@ A page where CSS [transform](https://www.w3.org/TR/css-transforms/#propdef-trans
 
 ## Glossary
 
+### Namespaced Element {#namespaced-element}
+
+An [element][] with a specific [namespaceURI][] value from [HTML namespaces][]. For example an "SVG element" is any element with the "SVG namespace", which is `http://www.w3.org/2000/svg`.
+
+Namespaced elements are not limited to elements described in a specification. They also include custom elements. Elements such as `a` and `title` have a different namespace depending on where they are used. For example a `title` in an HTML page usually has the HTML namespace. When used in an `svg` element, a `title` element has the SVG namespace instead.
+
 ### Outcome {#outcome}
 
 An _outcome_ is a conclusion that comes from evaluating an ACT Rule on a [test subject](https://www.w3.org/TR/act-rules-format/#test-subject) or one of its constituent [test target](https://www.w3.org/TR/act-rules-format/#test-target). An outcome can be one of the three following types:
@@ -352,4 +358,7 @@ For more details, see [examples of visible](https://act-rules.github.io/pages/ex
 
 This is the first version of this ACT rule.
 
-
+[element]: https://dom.spec.whatwg.org/#element 'DOM element, 2021/05/31'
+[html element]: #namespaced-element
+[html namespaces]: https://infra.spec.whatwg.org/#namespaces 'HTML namespace, 2021/05/31'
+[namespaceuri]: https://dom.spec.whatwg.org/#dom-element-namespaceuri 'DOM Element namespaceURI, 2021/05/31'

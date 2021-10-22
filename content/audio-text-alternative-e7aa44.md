@@ -7,7 +7,7 @@ github:
   repository: w3c/wcag-act-rules
   path: content/audio-text-alternative-e7aa44.md
 footer: |
-  <p><strong>Date:</strong> Updated October 1st, 2021</p>
+  <p><strong>Date:</strong> Updated 22 October 2021</p>
   <p><strong>Authors:</strong> <a href="https://www.linkedin.com/in/brianbors/">Brian Bors</a>, <a href="https://github.com/john-urbilog">John Hicks</a>, <a href="https://github.com/Rafalchar">Rafal Charlampowicz</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>.</p>
 proposed: true
@@ -31,7 +31,7 @@ rule_meta:
   input_aspects:
     - 2eb176
     - afb423
-  last_modified: October 1st, 2021
+  last_modified: 22 October 2021
   scs_tested:
     - handle: Audio-only and Video-only (Prerecorded)
       num: 1.2.1

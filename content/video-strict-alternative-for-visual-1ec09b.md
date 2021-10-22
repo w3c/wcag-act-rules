@@ -7,10 +7,10 @@ github:
   repository: w3c/wcag-act-rules
   path: content/video-strict-alternative-for-visual-1ec09b.md
 footer: |
-  <p><strong>Date:</strong> Updated October 20th, 2021</p>
+  <p><strong>Date:</strong> Updated 22 October 2021</p>
   <p><strong>Authors:</strong> <a href="https://www.linkedin.com/in/brianbors/">Brian Bors</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>.</p>
-proposed: false
+proposed: true
 rule_meta:
   id: 1ec09b
   name: "`video` element visual content has strict accessible alternative"
@@ -41,7 +41,7 @@ rule_meta:
   input_aspects:
     - 1ea59c
     - ab4d13
-  last_modified: October 20th, 2021
+  last_modified: 22 October 2021
   scs_tested:
     - handle: Audio Description (Prerecorded)
       num: 1.2.5
@@ -81,8 +81,6 @@ For each test target, the [outcome](#outcome) of at least one of the following r
 The HTML `video` element can also have a `track` element that provides an audio description. This should provide assistive technologies with a timed text description of visual information in a video. However, there is no native support in any major browser for this technique. Technique [H96: Using the track element to provide audio descriptions](https://www.w3.org/WAI/WCAG21/Techniques/html/H96) can not be relied upon to conform to [1.2.5: Audio Description (Prerecorded)](https://www.w3.org/TR/WCAG21/#audio-description-prerecorded).
 
 ## Background
-
-### Bibliography
 
 - [Understanding Success Criterion 1.2.5: Audio Description (Prerecorded)](https://www.w3.org/WAI/WCAG21/Understanding/audio-description-prerecorded.html)
 - [G78: Providing a second, user-selectable, audio track that includes audio descriptions](https://www.w3.org/WAI/WCAG21/Techniques/general/G78)

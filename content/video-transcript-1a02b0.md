@@ -7,10 +7,10 @@ github:
   repository: w3c/wcag-act-rules
   path: content/video-transcript-1a02b0.md
 footer: |
-  <p><strong>Date:</strong> Updated October 20th, 2021</p>
+  <p><strong>Date:</strong> Updated 22 October 2021</p>
   <p><strong>Authors:</strong> <a href="https://www.linkedin.com/in/brianbors/">Brian Bors</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>.</p>
-proposed: false
+proposed: true
 rule_meta:
   id: 1a02b0
   name: "Audio and visuals of `video` element have transcript"
@@ -39,7 +39,7 @@ rule_meta:
       url: 
     - handle: Language
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-text
-  last_modified: October 20th, 2021
+  last_modified: 22 October 2021
   scs_tested:
     - handle: Media Alternative (Prerecorded)
       num: 1.2.8
@@ -78,8 +78,6 @@ A text transcript containing all the visual and auditory information of the test
 There are no major accessibility support issues known for this rule.
 
 ## Background
-
-### Bibliography
 
 - [Understanding Success Criterion 1.2.3: Audio Description or Media Alternative (Prerecorded)](https://www.w3.org/WAI/WCAG21/Understanding/audio-description-or-media-alternative-prerecorded)
 - [Understanding Success Criterion 1.2.8: Media Alternative (Prerecorded)](https://www.w3.org/WAI/WCAG21/Understanding/media-alternative-prerecorded)

@@ -7,11 +7,11 @@ github:
   repository: w3c/wcag-act-rules
   path: content/bypass-blocks-cf77f2.md
 footer: |
-  <p><strong>Date:</strong> Updated October 20th, 2021</p>
+  <p><strong>Date:</strong> Updated 22 October 2021</p>
   <p><strong>Authors:</strong> <a href="https://github.com/Jym77">Jean-Yves Moyen</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>.</p>
   <p><strong>Assets:</strong> test cases use assets from the following sources: _Romance of the Three Kingdoms_ by Luo Guanzhong, translation by Charles Henry Brewitt-Taylor (Tuttle Publishing, 1925, ISBN 9780804834674). _Three Kingdoms_ by Luo Guanzhong, translation by Moss Roberts (Foreign Language Press, 1976, ISBN 7-119-00590-1). _The Three Kingdoms_ by Luo Guanzhong, translation by Yu Sumei (Tuttle publishing, 2014, ISBN 9780804843935).</p>
-proposed: false
+proposed: true
 rule_meta:
   id: cf77f2
   name: "Bypass Blocks of Repeated Content"
@@ -54,7 +54,7 @@ rule_meta:
     - b40fd1
     - 3e12e1
     - ye5d6e
-  last_modified: October 20th, 2021
+  last_modified: 22 October 2021
   scs_tested:
     - handle: Bypass Blocks
       num: 2.4.1
@@ -105,8 +105,6 @@ This rule only checks if there is a way to bypass at least one section of repeat
 ## Background
 
 The [instruments][instrument] used to pass this rule (if any), must meet all level A Success Criteria in order to fully satisfy [Success Criterion 2.4.1 Bypass Block][sc241]. These extra requirements are left out of this rule, and should be tested separately.
-
-### Bibliography
 
 - [Understanding Success Criterion 2.4.1: Bypass Blocks][usc241]
 - Creating links to skip blocks of content:

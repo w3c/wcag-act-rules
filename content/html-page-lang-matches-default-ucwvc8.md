@@ -7,7 +7,7 @@ github:
   repository: w3c/wcag-act-rules
   path: content/html-page-lang-matches-default-ucwvc8.md
 footer: |
-  <p><strong>Date:</strong> Updated October 1st, 2021</p>
+  <p><strong>Date:</strong> Updated 22 October 2021</p>
   <p><strong>Authors:</strong> <a href="https://github.com/wilcofiers">Wilco Fiers</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>.</p>
 proposed: true
@@ -37,7 +37,7 @@ rule_meta:
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
     - handle: Language
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-text
-  last_modified: October 1st, 2021
+  last_modified: 22 October 2021
   scs_tested:
     - handle: Language of Page
       num: 3.1.1
@@ -177,7 +177,7 @@ This page has a `lang` attribute value of `en` (English), which matches the [def
 
 #### Failed Example 1
 
-This page has `lang` attribute value of `da` (Danish), which does not matches the [default language of the page][default page language]. The default language is English because all words are English.
+This page has a `lang` attribute value of `da` (Danish), which does not match the [default language of the page][default page language]. The default language is English because all words are English.
 
 ```html
 <html lang="da">
@@ -213,7 +213,7 @@ This page has a `lang` attribute value of `nl` (Dutch), which does not match the
 
 #### Failed Example 3
 
-This page has `lang` attribute value of `en` (English), which does not matches the [default language of the page][default page language]. The default language is Dutch because all English words are in a `p` element with a `lang` attribute value of `en`.
+This page has a `lang` attribute value of `en` (English), which does not match the [default language of the page][default page language]. The default language is Dutch because all English words are in a `p` element with a `lang` attribute value of `en`.
 
 ```html
 <html lang="en">

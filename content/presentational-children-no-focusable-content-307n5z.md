@@ -7,7 +7,7 @@ github:
   repository: w3c/wcag-act-rules
   path: content/presentational-children-no-focusable-content-307n5z.md
 footer: |
-  <p><strong>Date:</strong> Updated October 1st, 2021</p>
+  <p><strong>Date:</strong> Updated 22 October 2021</p>
   <p><strong>Authors:</strong> <a href="https://github.com/wilcofiers">Wilco Fiers</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>.</p>
 proposed: true
@@ -18,11 +18,6 @@ rule_meta:
   description: |
     This rule checks that elements with a role that makes its children presentational do not contain focusable elements.
   accessibility_requirements:
-    'wcag20:1.3.1':
-      forConformance: true
-      failed: not satisfied
-      passed: further testing needed
-      inapplicable: further testing needed
     'wcag20:4.1.2':
       forConformance: true
       failed: not satisfied
@@ -33,11 +28,8 @@ rule_meta:
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
     - handle: CSS Styling
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
-  last_modified: October 1st, 2021
+  last_modified: 22 October 2021
   scs_tested:
-    - handle: Info and Relationships
-      num: 1.3.1
-      level: A
     - handle: Name, Role, Value
       num: 4.1.2
       level: A
@@ -65,7 +57,7 @@ None of the target elements have [descendants][] in the [flat tree][] that are p
 
 ## Assumptions
 
-This rule assumes that elements that are part of [sequential focus navigation][] do not immediately blur, or move focus to another element. Such elements will fail this rule, but may still satisfy success criteria 1.3.1 and 4.1.2.
+This rule assumes that elements that are part of [sequential focus navigation][] do not immediately blur, or move focus to another element. Such elements will fail this rule, but may still satisfy success criterion 4.1.2.
 
 ## Accessibility Support
 
@@ -73,11 +65,10 @@ Several major browsers ignore the WAI-ARIA requirements on [presentational child
 
 ## Background
 
-This rule applies to elements with a [semantic role][] that defines its [children][child] to be [presentational children][]. This includes the following: `button`, `checkbox`, `img`, `math`, `menuitemcheckbox`, `menuitemradio`, `option`, `progressbar`, `radio`, `scrollbar`, `separator`, `slider`, `switch`, and `tab`.
+This rule applies to elements with a [semantic role][] that defines its [children][child] to be [presentational children][], which are all of the following: `button`, `checkbox`, `img`, `math`, `menuitemcheckbox`, `menuitemradio`, `option`, `progressbar`, `radio`, `scrollbar`, `separator`, `slider`, `switch`, and `tab`.
 
 Elements with a [semantic role][] that has [presentational children][] will not have any descendants in the accessibility tree. If any of those descendants are included in [sequential focus navigation][], this causes the focus to land on an element that has no corresponding node in the [accessibility tree][]. The result is that there is no programmatic name or role available for assistive technologies. There are other problems that can come from [presentational children][] too. These must be tested separately.
 
-- [Understanding Success Criterion 1.3.1: Info and Relationships](https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships)
 - [Understanding Success Criterion 4.1.2: Name, Role, Value](https://www.w3.org/WAI/WCAG21/Understanding/name-role-value)
 - [WAI-ARIA 1.1 Presentational Children][presentational children]
 

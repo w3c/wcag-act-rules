@@ -7,7 +7,7 @@ github:
   repository: w3c/wcag-act-rules
   path: content/non-visual-reference-alternative-9bd38c.md
 footer: |
-  <p><strong>Date:</strong> Updated October 1st, 2021</p>
+  <p><strong>Date:</strong> Updated 22 October 2021</p>
   <p><strong>Authors:</strong> <a href="https://www.linkedin.com/in/brianbors/">Brian Bors</a>, <a href="https://github.com/danistr">Daniël Strik</a>, <a href="https://github.com/Jym77">Jean-Yves Moyen</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>.</p>
 proposed: true
@@ -42,7 +42,7 @@ rule_meta:
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
     - handle: Language
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-text
-  last_modified: October 1st, 2021
+  last_modified: 22 October 2021
   scs_tested:
     - handle: Info and Relationships
       num: 1.3.1

@@ -7,10 +7,10 @@ github:
   repository: w3c/wcag-act-rules
   path: content/video-only-description-track-ac7dc6.md
 footer: |
-  <p><strong>Date:</strong> Updated October 20th, 2021</p>
+  <p><strong>Date:</strong> Updated 22 October 2021</p>
   <p><strong>Authors:</strong> <a href="https://www.linkedin.com/in/brianbors/">Brian Bors</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>.</p>
-proposed: false
+proposed: true
 rule_meta:
   id: ac7dc6
   name: "`video` element visual-only content has description track"
@@ -34,7 +34,7 @@ rule_meta:
       url: 
     - handle: Language
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-text
-  last_modified: October 20th, 2021
+  last_modified: 22 October 2021
 ---
 
 {::options toc_levels="2" /}
@@ -67,8 +67,6 @@ The visual information of each test target is described with a description `trac
 Currently the description track is not supported by most assistive technologies. Video players may be able to work around the lack of support for the description track by using aria-live but few do this today.
 
 ## Background
-
-### Bibliography
 
 - Multiple description `track` elements may be useful for different languages, but at least one must match the language of the video or the language of the page.
 - [Understanding Success Criterion 1.2.1: Audio-only and Video-only (Prerecorded)](https://www.w3.org/WAI/WCAG21/Understanding/audio-only-and-video-only-prerecorded)

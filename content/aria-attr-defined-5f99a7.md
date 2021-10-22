@@ -7,7 +7,7 @@ github:
   repository: w3c/wcag-act-rules
   path: content/aria-attr-defined-5f99a7.md
 footer: |
-  <p><strong>Date:</strong> Updated October 1st, 2021</p>
+  <p><strong>Date:</strong> Updated 22 October 2021</p>
   <p><strong>Authors:</strong> <a href="https://github.com/jkodu">Jey Nandakumar</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>.</p>
 proposed: true
@@ -22,7 +22,7 @@ rule_meta:
   input_aspects:
     - handle: DOM Tree
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
-  last_modified: October 1st, 2021
+  last_modified: 22 October 2021
 ---
 
 {::options toc_levels="2" /}
@@ -31,7 +31,6 @@ rule_meta:
 {:/}
 
 - Table of Content placeholder
-
 {:toc}
 
 {::nomarkdown}

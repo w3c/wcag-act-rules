@@ -7,7 +7,7 @@ github:
   repository: w3c/wcag-act-rules
   path: content/object-has-acessible-name-8fc3b6.md
 footer: |
-  <p><strong>Date:</strong> Updated October 1st, 2021</p>
+  <p><strong>Date:</strong> Updated 22 October 2021</p>
   <p><strong>Authors:</strong> <a href="https://github.com/AntonioEstriga">António Estriga</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>.</p>
   <p><strong>Assets:</strong> test cases use assets from the following sources: audio is an excerpt from JFK's 'Moon Speech'.</p>
@@ -31,7 +31,7 @@ rule_meta:
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
     - handle: Accessibility Tree
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-accessibility
-  last_modified: October 1st, 2021
+  last_modified: 22 October 2021
   scs_tested:
     - handle: Non-text Content
       num: 1.1.1

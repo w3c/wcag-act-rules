@@ -7,11 +7,11 @@ github:
   repository: w3c/wcag-act-rules
   path: content/zoom-text-no-overflow-clipping-59br37.md
 footer: |
-  <p><strong>Date:</strong> Updated October 20th, 2021</p>
+  <p><strong>Date:</strong> Updated 22 October 2021</p>
   <p><strong>Authors:</strong> <a href="https://github.com/wilcofiers">Wilco Fiers</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>.</p>
   <p><strong>Assets:</strong> test cases use assets from the following sources: The Raven, poem by Edgar Allan Poe.</p>
-proposed: false
+proposed: true
 rule_meta:
   id: 59br37
   name: "Zoomed text node is not clipped with CSS overflow"
@@ -29,7 +29,7 @@ rule_meta:
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
     - handle: CSS Styling
       url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
-  last_modified: October 20th, 2021
+  last_modified: 22 October 2021
   scs_tested:
     - handle: Resize text
       num: 1.4.4
@@ -53,7 +53,7 @@ rule_meta:
 This rule applies to any [text node][] for which all of the following is true when in a [viewport size][] of 640 by 512:
 
 - The [text node][] is [visible][]; and
-- The [text node][] has an HTML element as a [parent][] in the [flat tree][]; and
+- The [text node][] has an [HTML element][] as a [parent][] in the [flat tree][]; and
 - The [text node][] has an [ancestor][] in the [flat tree][] with a [computed][] [overflow-x][overflow] or [overflow-y][overflow] of `hidden` or `clip`; and
 - The [text node][] does not have an [ancestor][] in the [flat tree][] with an `aria-hidden` [attribute value][] of `true`.
 
@@ -84,8 +84,6 @@ Some user agents treat the value of the `aria-hidden` attribute as case-sensitiv
 ## Background
 
 When the [computed][] value of the `line-height` property is `normal`, the [used][] value depends on font specific metrics. [CSS specifications][line-height normal] recommend that the [used][] value is between 1.0 and 1.2 and major browsers are effectively using values close to 1.2.
-
-### Bibliography
 
 - [Understanding Success Criterion 1.4.4: Resize text](https://www.w3.org/WAI/WCAG21/Understanding/resize-text.html)
 - [G42: Using a technology that has commonly-available user agents that support zoom](https://www.w3.org/WAI/WCAG21/Techniques/general/G142)
@@ -287,6 +285,12 @@ The _attribute value_ of an [IDL attribute][] is the value returned on getting i
 A [node][] with an [ancestor][] in the [flat tree][] with a [computed][] [overflow][] of `none` or `clipped`, where
 changing the [overflow][] of all such [ancestors][ancestor] to `visible` would cause more of the [node][] to become [visible][].
 
+### Namespaced Element {#namespaced-element}
+
+An [element][] with a specific [namespaceURI][] value from [HTML namespaces][]. For example an "SVG element" is any element with the "SVG namespace", which is `http://www.w3.org/2000/svg`.
+
+Namespaced elements are not limited to elements described in a specification. They also include custom elements. Elements such as `a` and `title` have a different namespace depending on where they are used. For example a `title` in an HTML page usually has the HTML namespace. When used in an `svg` element, a `title` element has the SVG namespace instead.
+
 ### Outcome {#outcome}
 
 An _outcome_ is a conclusion that comes from evaluating an ACT Rule on a [test subject](https://www.w3.org/TR/act-rules-format/#test-subject) or one of its constituent [test target](https://www.w3.org/TR/act-rules-format/#test-target). An outcome can be one of the three following types:
@@ -331,14 +335,18 @@ This is the first version of this ACT rule.
 [comma separated]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#comma-separated-tokens 'HTML Specification of Comma Separated Tokens'
 [computed]: https://www.w3.org/TR/css-cascade-3/#computed-value
 [content box]: https://www.w3.org/TR/css-ui-3/#valdef-box-sizing-content-box
+[element]: https://dom.spec.whatwg.org/#element 'DOM element, 2021/05/31'
 [enumerated attributes]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#enumerated-attribute 'HTML Specification of Enumerated Attribute'
 [flat tree]: https://drafts.csswg.org/css-scoping/#flat-tree 'CSS draft, flat tree, 2020/02/14'
 [html aam]: https://www.w3.org/TR/html-aam-1.0/#html-attribute-state-and-property-mappings 'Specification of HTML attributes value mapping to ARIA states and properties'
+[html element]: #namespaced-element
+[html namespaces]: https://infra.spec.whatwg.org/#namespaces 'HTML namespace, 2021/05/31'
 [idl attribute]: https://heycam.github.io/webidl/#idl-attributes "Definition of Web IDL Attribute (Editor's Draft)"
 [innerheight]: https://drafts.csswg.org/cssom-view/#dom-window-innerheight 'CSS working draft, window.innerHeight, 2020/03/30'
 [innerwidth]: https://drafts.csswg.org/cssom-view/#dom-window-innerwidth 'CSS working draft, window.innerWidth, 2020/03/30'
 [line-height normal]: https://drafts.csswg.org/css2/#valdef-line-height-normal "CSS 2.2 (Editor's draft) - normal line-height"
 [line-height]: https://www.w3.org/TR/CSS22/visudet.html#propdef-line-height
+[namespaceuri]: https://dom.spec.whatwg.org/#dom-element-namespaceuri 'DOM Element namespaceURI, 2021/05/31'
 [node]: https://dom.spec.whatwg.org/#node 'DOM node, as of 2019/02/14'
 [numbers]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#numbers 'HTML Specification of Number Parsing'
 [overflow]: https://www.w3.org/TR/CSS22/visufx.html#overflow
