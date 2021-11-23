@@ -267,6 +267,6 @@ This is the first version of this ACT rule.
 [programmatically hidden]: #programmatically-hidden 'Definition of Programmatically Hidden'
 [pure decoration]: https://www.w3.org/TR/WCAG21/#dfn-pure-decoration 'WCAG definition of Pure Decoration'
 [role attribute]: https://www.w3.org/TR/role-attribute/ 'Specification of the role attribute'
-[sc111]: https://www.w3.org/TR/WCAG21/#non-text-content 'Success Criterion 1.1.1
+[sc111]: https://www.w3.org/TR/WCAG21/#non-text-content 'Success Criterion 1.1.1'
 [semantic role]: #semantic-role 'Definition of Semantic Role'
 [wai-aria specifications]: #wai-aria-specifications 'Definition of WAI-ARIA specifications'
