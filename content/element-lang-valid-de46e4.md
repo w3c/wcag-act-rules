@@ -505,7 +505,7 @@ This is the first version of this ACT rule.
 [included in the accessibility tree]: #included-in-the-accessibility-tree
 [inclusive ancestors]: https://dom.spec.whatwg.org/#concept-tree-inclusive-ancestor 'DOM Definition of Inclusive Ancestor'
 [inclusive descendant]: https://dom.spec.whatwg.org/#concept-tree-inclusive-descendant 'DOM definition of Inclusive Descendant'
-[iso 639.2]: https://www.loc.gov/standards/iso639-2/php/code_list.php 'ISO 639.2
+[iso 639.2]: https://www.loc.gov/standards/iso639-2/php/code_list.php 'ISO 639.2'
 [language subtag registry]: https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry
 [language tag]: https://www.rfc-editor.org/rfc/rfc5646.html#section-2.1
 [namespaceuri]: https://dom.spec.whatwg.org/#dom-element-namespaceuri 'DOM Element namespaceURI, 2021/05/31'
