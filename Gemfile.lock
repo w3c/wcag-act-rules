@@ -99,10 +99,12 @@ GEM
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     mercenary (0.4.0)
+    mini_portile2 (2.7.1)
     multipart-post (2.1.1)
-    nokogiri (1.13.0-x86_64-linux)
+    nokogiri (1.13.0)
+      mini_portile2 (~> 2.7.0)
       racc (~> 1.4)
-    octokit (4.21.0)
+    octokit (4.22.0)
       faraday (>= 0.9)
       sawyer (~> 0.8.0, >= 0.5.3)
     pathutil (0.16.2)
@@ -129,10 +131,9 @@ GEM
       jekyll (>= 3.6, < 5.0)
 
 PLATFORMS
-  x86_64-linux
+  ruby
 
 DEPENDENCIES
-  nokogiri
   wai-gems!
 
 BUNDLED WITH
