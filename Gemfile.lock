@@ -10,6 +10,7 @@ PATH
       jekyll-remote-theme
       jekyll-seo-tag
       jekyll-sitemap
+      nokogiri
       wai-website-plugin
 
 GEM
@@ -93,12 +94,15 @@ GEM
       rb-inotify (~> 0.9, >= 0.9.10)
     mercenary (0.4.0)
     multipart-post (2.1.1)
+    nokogiri (1.13.0-x86_64-linux)
+      racc (~> 1.4)
     octokit (4.21.0)
       faraday (>= 0.9)
       sawyer (~> 0.8.0, >= 0.5.3)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
     public_suffix (4.0.6)
+    racc (1.6.0)
     rb-fsevent (0.11.0)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
