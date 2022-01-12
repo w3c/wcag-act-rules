@@ -56,6 +56,9 @@ defaults:
       type_of_guidance: "Test Rule"
       rule_meta:
         rule_type: "atomic rule"
+      sidebar:
+        footer:
+          content: Test Rules describe ways to test conformance to WCAG success criteria. They are for evaluation.
 
 standalone_resource_nav_links:
   - name: All Rules
