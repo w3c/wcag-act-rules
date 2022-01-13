@@ -58,7 +58,7 @@ defaults:
         rule_type: "atomic rule"
       sidebar:
         footer:
-          content: Test Rules describe ways to test conformance to WCAG success criteria. They are for evaluation.
+          content: Test Rules describe ways to test conformance to WCAG success criteria. They are <a href="../about">for evaluation</a>.
 
 standalone_resource_nav_links:
   - name: All Rules
