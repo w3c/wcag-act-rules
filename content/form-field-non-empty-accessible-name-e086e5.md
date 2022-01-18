@@ -8,7 +8,7 @@ github:
   path: content/form-field-non-empty-accessible-name-e086e5.md
 footer: |
   <p><strong>Date:</strong> Updated 18 January 2022</p>
-  <p><strong>Unique identifier for this rule:</strong> e086e5</p>
+  <p><strong>Rule Identifier:</strong> e086e5</p>
   <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/brynanders">Bryn Anderson</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>.</p>
 proposed: false

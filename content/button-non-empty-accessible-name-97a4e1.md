@@ -8,7 +8,7 @@ github:
   path: content/button-non-empty-accessible-name-97a4e1.md
 footer: |
   <p><strong>Date:</strong> Updated 18 January 2022</p>
-  <p><strong>Unique identifier for this rule:</strong> 97a4e1</p>
+  <p><strong>Rule Identifier:</strong> 97a4e1</p>
   <p><strong>Authors:</strong> <a href="https://github.com/skotkjerra">Stein Erik Skotkjerra</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>.</p>
 proposed: false
