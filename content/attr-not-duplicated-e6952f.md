@@ -80,7 +80,7 @@ _There are no major accessibility support issues known for this rule._
 
 The following aspects are required in using this rule.
 
-- [Source code]()
+- Source code
 
 ## Test Cases
 

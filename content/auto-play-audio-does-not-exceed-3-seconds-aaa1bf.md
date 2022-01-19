@@ -75,8 +75,8 @@ The following aspects are required in using this rule.
 
 - [DOM Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom)
 - [CSS Styling](https://www.w3.org/TR/act-rules-aspects/#input-aspects-css)
-- [Audio output]()
-- [Visual output]()
+- Audio output
+- Visual output
 
 ## Test Cases
 
