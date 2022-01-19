@@ -7,9 +7,10 @@ github:
   repository: w3c/wcag-act-rules
   path: content/table-headers-attribute-refer-to-data-cells-a25f45.md
 footer: |
-  <p><strong>Date:</strong> Updated 22 October 2021</p>
+  <p><strong>Date:</strong> Updated 19 January 2022</p>
+  <p><strong>Rule Identifier:</strong> a25f45</p>
   <p><strong>Authors:</strong> <a href="https://github.com/audreymaniez">Audrey Maniez</a>, <a href="https://github.com/jkodu">Jey Nandakumar</a>.</p>
-  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>.</p>
+  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>.</p>
 proposed: true
 rule_meta:
   id: a25f45
@@ -17,40 +18,12 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that the `headers` attribute on a cell refer to other cells in the same `table` element.
-  accessibility_requirements:
-    'wcag20:1.3.1':
-      forConformance: true
-      failed: not satisfied
-      passed: further testing needed
-      inapplicable: further testing needed
-    'wcag-technique:H43':
-      forConformance: false
-      failed: not satisfied
-      passed: further testing needed
-      inapplicable: further testing needed
-  input_aspects:
-    - handle: DOM Tree
-      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
-    - handle: CSS Styling
-      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
-  last_modified: 22 October 2021
+  last_modified: 19 January 2022
   scs_tested:
     - handle: Info and Relationships
       num: 1.3.1
       level: A
 ---
-
-{::options toc_levels="2" /}
-{::nomarkdown}
-{% include toc.html type="start" title="Page Contents" %}
-{:/}
-
-- Table of Content placeholder
-{:toc}
-
-{::nomarkdown}
-{% include toc.html type="end" %}
-{:/}
 
 ## Applicability
 
@@ -60,18 +33,15 @@ This rule applies to any `headers` attribute specified on a [`cell`][] within a 
 
 Each target's [attribute value][] is a [set of space separated tokens][]. Each token is the value of the `id` attribute of an element, that is a [`cell`][] of the same [`table`][].
 
-**Note:** `headers` attribute referencing elements that are non-existent or not in the table are ignored when [assigning header cells (step 3, first case, point 2)](https://html.spec.whatwg.org/multipage/tables.html#algorithm-for-assigning-header-cells).
-
 ## Expectation 2
 
 Each target's [attribute value][] is a [set of space separated tokens][], and none of these tokens is the `id` of the element on which the test target is specified.
-
-**Note:** `headers` attribute referencing to the cell itself are ignored when [assigning header cells (step 3, first case, point 2)](https://html.spec.whatwg.org/multipage/tables.html#algorithm-for-assigning-header-cells).
 
 ## Assumptions
 
 - This rule assumes that the `headers` attribute is only used to identify table headers. If other information is included in the `headers` attribute, the rule may fail on issues that are not accessibility concerns. For example, if `headers` is used to include information for scripts, this rule may not be accurate.
 - This rule assumes that the `headers` attribute is required to express the relationship between data and table header cells in the same `table`. If the browser [computes an adequate fallback header][] for cells that have the `headers` [attribute value][] that does not correspond to the `id` of any one cell in the same `table`, success Criterion [1.3.1 Info and Relationships][sc131] may be satisfied even if this rule failed.
+- This rule assumes that the id values on the `headers` attribute are unique.
 
 ## Accessibility Support
 
@@ -79,9 +49,48 @@ There are no major accessibility support issues known for this rule.
 
 ## Background
 
-- [Understanding Success Criterion 1.3.1: Information and relationships](https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships.html)
+### Bibliography
+
+- [Understanding Success Criterion 1.3.1: Info and Relationships](https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships.html)
 - [H43: Using id and headers attributes to associate data cells with header cells in data tables](https://www.w3.org/WAI/WCAG21/Techniques/html/H43)
 - [F90: Incorrectly associating table headers and content via the headers and id attributes](https://www.w3.org/WAI/WCAG21/Techniques/failures/F90)
+
+* `headers` attribute referencing elements that are non-existent or not in the table are ignored when [assigning header cells (step 3, first case, point 2)](https://html.spec.whatwg.org/multipage/tables.html#algorithm-for-assigning-header-cells).
+* `headers` attribute referencing to the cell itself are ignored when [assigning header cells (step 3, first case, point 2)](https://html.spec.whatwg.org/multipage/tables.html#algorithm-for-assigning-header-cells).
+
+## Accessibility Requirements Mapping
+
+<ul class="act-requirements-list">
+  <li><details><summary>1.3.1 Info and Relationships (Level A)</summary>
+    <ul>
+      <li><a href="https://www.w3.org/TR/WCAG21/#info-and-relationships">Learn more about 1.3.1 Info and Relationships</a></li>
+      <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level A and higher.</li>
+      <li>Outcome mapping: <ul>
+        <li>Any <code>failed</code> outcomes: success criterion is not satisfied</li>
+        <li>All <code>passed</code> outcomes: success criterion needs further testing</li>
+        <li>An <code>inapplicable</code> outcome: success criterion needs further testing</li>
+      </ul></li>
+    </ul>
+  </details></li>
+  <li><details><summary>H43: Using id and headers attributes to associate data cells with header cells in data tables</summary>
+    <ul>
+      <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/html/H43">Learn more about technique H43</a></li>
+      <li>Not required for conformance to any W3C accessibility recommendation.</li>
+      <li>Outcome mapping: <ul>
+        <li>Any <code>failed</code> outcomes: technique is not satisfied</li>
+        <li>All <code>passed</code> outcomes: technique needs further testing</li>
+        <li>An <code>inapplicable</code> outcome: technique needs further testing</li>
+      </ul></li>
+    </ul>
+  </details></li>
+</ul>
+
+## Input Aspects
+
+The following aspects are required in using this rule.
+
+- [DOM Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom)
+- [CSS Styling](https://www.w3.org/TR/act-rules-aspects/#input-aspects-css)
 
 ## Test Cases
 

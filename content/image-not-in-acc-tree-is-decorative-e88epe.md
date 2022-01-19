@@ -7,9 +7,10 @@ github:
   repository: w3c/wcag-act-rules
   path: content/image-not-in-acc-tree-is-decorative-e88epe.md
 footer: |
-  <p><strong>Date:</strong> Updated 22 October 2021</p>
+  <p><strong>Date:</strong> Updated 19 January 2022</p>
+  <p><strong>Rule Identifier:</strong> e88epe</p>
   <p><strong>Authors:</strong> <a href="https://www.linkedin.com/in/brianbors/">Brian Bors</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>.</p>
-  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>.</p>
+  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>.</p>
   <p><strong>Assets:</strong> test cases use assets from the following sources: W3C. Wikimedia. Adobe.</p>
 proposed: true
 rule_meta:
@@ -18,37 +19,12 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that visible `img`, `svg` and `canvas` elements that are ignored by assistive technologies are decorative.
-  accessibility_requirements:
-    'wcag20:1.1.1':
-      forConformance: true
-      failed: not satisfied
-      passed: further testing needed
-      inapplicable: further testing needed
-  input_aspects:
-    - handle: DOM Tree
-      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
-    - handle: Accessibility tree
-      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-accessibility
-    - handle: CSS Styling
-      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
-  last_modified: 22 October 2021
+  last_modified: 19 January 2022
   scs_tested:
     - handle: Non-text Content
       num: 1.1.1
       level: A
 ---
-
-{::options toc_levels="2" /}
-{::nomarkdown}
-{% include toc.html type="start" title="Page Contents" %}
-{:/}
-
-- Table of Content placeholder
-{:toc}
-
-{::nomarkdown}
-{% include toc.html type="end" %}
-{:/}
 
 ## Applicability
 
@@ -83,8 +59,34 @@ _No accessibility support issues known._
 
 ## Background
 
+### Bibliography
+
 - [H67: Using null alt text and no title attribute on img elements for images that AT should ignore](https://www.w3.org/WAI/WCAG21/Techniques/html/H67.html)
 - [Understanding Success Criterion 1.1.1: Non-text Content](https://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html)
+
+## Accessibility Requirements Mapping
+
+<ul class="act-requirements-list">
+  <li><details><summary>1.1.1 Non-text Content (Level A)</summary>
+    <ul>
+      <li><a href="https://www.w3.org/TR/WCAG21/#non-text-content">Learn more about 1.1.1 Non-text Content</a></li>
+      <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level A and higher.</li>
+      <li>Outcome mapping: <ul>
+        <li>Any <code>failed</code> outcomes: success criterion is not satisfied</li>
+        <li>All <code>passed</code> outcomes: success criterion needs further testing</li>
+        <li>An <code>inapplicable</code> outcome: success criterion needs further testing</li>
+      </ul></li>
+    </ul>
+  </details></li>
+</ul>
+
+## Input Aspects
+
+The following aspects are required in using this rule.
+
+- [DOM Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom)
+- [Accessibility tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-accessibility)
+- [CSS Styling](https://www.w3.org/TR/act-rules-aspects/#input-aspects-css)
 
 ## Test Cases
 

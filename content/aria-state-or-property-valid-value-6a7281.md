@@ -7,9 +7,10 @@ github:
   repository: w3c/wcag-act-rules
   path: content/aria-state-or-property-valid-value-6a7281.md
 footer: |
-  <p><strong>Date:</strong> Updated 22 October 2021</p>
+  <p><strong>Date:</strong> Updated 19 January 2022</p>
+  <p><strong>Rule Identifier:</strong> 6a7281</p>
   <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>.</p>
-  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>.</p>
+  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>.</p>
 proposed: true
 rule_meta:
   id: 6a7281
@@ -17,32 +18,8 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that each ARIA state or property has a valid value type.
-  accessibility_requirements:
-    'aria11:state_prop_values':
-      title: 'ARIA 1.1, 6.3 Values for States and Properties'
-      forConformance: true
-      failed: not satisfied
-      passed: satisfied
-      inapplicable: satisfied
-  input_aspects:
-    - handle: DOM Tree
-      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
-    - handle: CSS Styling
-      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
-  last_modified: 22 October 2021
+  last_modified: 19 January 2022
 ---
-
-{::options toc_levels="2" /}
-{::nomarkdown}
-{% include toc.html type="start" title="Page Contents" %}
-{:/}
-
-- Table of Content placeholder
-{:toc}
-
-{::nomarkdown}
-{% include toc.html type="end" %}
-{:/}
 
 ## Applicability
 
@@ -70,12 +47,40 @@ Only for [WAI-ARIA required properties](https://www.w3.org/TR/wai-aria-1.1/#requ
 
 For value type `URI`, this rule does not require that the destination URI exists.
 
+### Related rules
+
 - [ARIA state or property is permitted](https://act-rules.github.io/rules/5c01ea)
+
+### Bibliography
+
 - [Understanding Success Criterion 4.1.2: Name, Role, Value](https://www.w3.org/WAI/WCAG21/Understanding/name-role-value.html)
 - [ARIA5: Using WAI-ARIA state and property attributes to expose the state of a user interface component](https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA5)
 - [WAI-ARIA 1.1, Definitions of States and Properties](https://www.w3.org/TR/wai-aria-1.1/#state_prop_def)
 - [WAI-ARIA 1.1, Characteristics of States and Properties, Value](https://www.w3.org/TR/wai-aria/#propcharacteristic_value)
 - [Uniform Resource Identifier (URI): Generic Syntax (RFC 3986)](https://www.ietf.org/rfc/rfc3986.txt)
+
+## Accessibility Requirements Mapping
+
+<ul class="act-requirements-list">
+  <li><details><summary>ARIA 1.1, 6.3 Values for States and Properties</summary>
+    <ul>
+      <li><a href="https://www.w3.org/TR/wai-aria-1.1/#state_prop_values">Learn more about ARIA 1.1, 6.3 Values for States and Properties</a></li>
+      <li><strong>Required for conformance</strong> to WAI-ARIA 1.1 author requirements.</li>
+      <li>Outcome mapping: <ul>
+        <li>Any <code>failed</code> outcomes: WAI-ARIA requirement is not satisfied</li>
+        <li>All <code>passed</code> outcomes: WAI-ARIA requirement is satisfied</li>
+        <li>An <code>inapplicable</code> outcome: WAI-ARIA requirement is satisfied</li>
+      </ul></li>
+    </ul>
+  </details></li>
+</ul>
+
+## Input Aspects
+
+The following aspects are required in using this rule.
+
+- [DOM Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom)
+- [CSS Styling](https://www.w3.org/TR/act-rules-aspects/#input-aspects-css)
 
 ## Test Cases
 

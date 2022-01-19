@@ -7,9 +7,10 @@ github:
   repository: w3c/wcag-act-rules
   path: content/focusable-no-keyboard-trap-non-standard-nav-ebe86a.md
 footer: |
-  <p><strong>Date:</strong> Updated 22 October 2021</p>
+  <p><strong>Date:</strong> Updated 19 January 2022</p>
+  <p><strong>Rule Identifier:</strong> ebe86a</p>
   <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/carlosapaduarte">Carlos Duarte</a>, <a href="https://github.com/DagfinnRomen">Dagfinn Rømen</a>, <a href="https://github.com/geirsf">Geir Sindre Fossøy</a>, <a href="https: //github.com/MaliinO">Malin Øvrebø</a>, <a href="https://github.com/nitedog">Shadi Abou-Zahra</a>, <a href="https://github.com/skotkjerra">Stein Erik Skotkjerra</a>.</p>
-  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>.</p>
+  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>.</p>
 proposed: true
 rule_meta:
   id: ebe86a
@@ -17,27 +18,8 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks if it is possible to use non-standard keyboard navigation to navigate through content where focus is trapped when using standard ways of keyboard navigation.
-  accessibility_requirements:
-    null
-  input_aspects:
-    - handle: DOM Tree
-      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
-    - handle: CSS Styling
-      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
-  last_modified: 22 October 2021
+  last_modified: 19 January 2022
 ---
-
-{::options toc_levels="2" /}
-{::nomarkdown}
-{% include toc.html type="start" title="Page Contents" %}
-{:/}
-
-- Table of Content placeholder
-{:toc}
-
-{::nomarkdown}
-{% include toc.html type="end" %}
-{:/}
 
 ## Applicability
 
@@ -72,9 +54,22 @@ There are no major accessibility support issues known for this rule.
 
 ## Background
 
+### Bibliography
+
 - [Understanding Success Criterion 2.1.2: No Keyboard Trap](https://www.w3.org/WAI/WCAG21/Understanding/no-keyboard-trap.html)
 - [G21: Ensuring that users are not trapped in content](https://www.w3.org/WAI/WCAG21/Techniques/general/G21)
 - [F10: Failure of Success Criterion 2.1.2 and Conformance Requirement 5 due to combining multiple content formats in a way that traps users inside one format type](https://www.w3.org/WAI/WCAG21/Techniques/failures/F10)
+
+## Accessibility Requirements Mapping
+
+This rule is not required for conformance.
+
+## Input Aspects
+
+The following aspects are required in using this rule.
+
+- [DOM Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom)
+- [CSS Styling](https://www.w3.org/TR/act-rules-aspects/#input-aspects-css)
 
 ## Test Cases
 

@@ -7,9 +7,10 @@ github:
   repository: w3c/wcag-act-rules
   path: content/links-with-identical-names-and-context-serve-equivalent-purpose-fd3a94.md
 footer: |
-  <p><strong>Date:</strong> Updated 22 October 2021</p>
+  <p><strong>Date:</strong> Updated 19 January 2022</p>
+  <p><strong>Rule Identifier:</strong> fd3a94</p>
   <p><strong>Authors:</strong> <a href="https://github.com/carlosapaduarte">Carlos Duarte</a>. <em>Previous Authors:</em> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>.</p>
-  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>.</p>
+  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>.</p>
 proposed: true
 rule_meta:
   id: fd3a94
@@ -17,25 +18,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that links with identical accessible names and context resolve to the same or equivalent resources.
-  accessibility_requirements:
-    'wcag20:2.4.4':
-      forConformance: true
-      failed: not satisfied
-      passed: further testing needed
-      inapplicable: further testing needed
-    'wcag20:2.4.9':
-      forConformance: true
-      failed: not satisfied
-      passed: further testing needed
-      inapplicable: further testing needed
-  input_aspects:
-    - handle: DOM Tree
-      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
-    - handle: CSS Styling
-      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
-    - handle: Language
-      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-text
-  last_modified: 22 October 2021
+  last_modified: 19 January 2022
   scs_tested:
     - handle: Link Purpose (In Context)
       num: 2.4.4
@@ -44,18 +27,6 @@ rule_meta:
       num: 2.4.9
       level: AAA
 ---
-
-{::options toc_levels="2" /}
-{::nomarkdown}
-{% include toc.html type="start" title="Page Contents" %}
-{:/}
-
-- Table of Content placeholder
-{:toc}
-
-{::nomarkdown}
-{% include toc.html type="end" %}
-{:/}
 
 ## Applicability
 
@@ -90,8 +61,45 @@ _There are no major accessibility support issues known for this rule._
 
 This rule is designed specifically for [2.4.4 Link Purpose (In Context)][sc244], which requires the purpose to be clear within the context of a link. Because links that do not have this, also are not clear without that context, this rule maps to [2.4.9 Link Purpose (Link only)][sc249] as well. In order to adequately test the [expectation](#expectation), some of the passed examples do not satisfy [2.4.9 Link Purpose (Link only)][sc249].
 
+### Bibliography
+
 - [Understanding Success Criterion 2.4.4: Link Purpose (In Context)](https://www.w3.org/WAI/WCAG21/Understanding/link-purpose-in-context.html)
 - [HTML Specification - URL parsing](https://html.spec.whatwg.org/#resolving-urls)
+
+## Accessibility Requirements Mapping
+
+<ul class="act-requirements-list">
+  <li><details><summary>2.4.4 Link Purpose (In Context) (Level A)</summary>
+    <ul>
+      <li><a href="https://www.w3.org/TR/WCAG21/#link-purpose-in-context">Learn more about 2.4.4 Link Purpose (In Context)</a></li>
+      <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level A and higher.</li>
+      <li>Outcome mapping: <ul>
+        <li>Any <code>failed</code> outcomes: success criterion is not satisfied</li>
+        <li>All <code>passed</code> outcomes: success criterion needs further testing</li>
+        <li>An <code>inapplicable</code> outcome: success criterion needs further testing</li>
+      </ul></li>
+    </ul>
+  </details></li>
+  <li><details><summary>2.4.9 Link Purpose (Link Only) (Level AAA)</summary>
+    <ul>
+      <li><a href="https://www.w3.org/TR/WCAG21/#link-purpose-link-only">Learn more about 2.4.9 Link Purpose (Link Only)</a></li>
+      <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level AAA.</li>
+      <li>Outcome mapping: <ul>
+        <li>Any <code>failed</code> outcomes: success criterion is not satisfied</li>
+        <li>All <code>passed</code> outcomes: success criterion needs further testing</li>
+        <li>An <code>inapplicable</code> outcome: success criterion needs further testing</li>
+      </ul></li>
+    </ul>
+  </details></li>
+</ul>
+
+## Input Aspects
+
+The following aspects are required in using this rule.
+
+- [DOM Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom)
+- [CSS Styling](https://www.w3.org/TR/act-rules-aspects/#input-aspects-css)
+- [Language](https://www.w3.org/TR/act-rules-aspects/#input-aspects-text)
 
 ## Test Cases
 
@@ -597,8 +605,8 @@ This is the first version of this ACT rule.
 [pure decoration]: https://www.w3.org/TR/WCAG21/#dfn-pure-decoration 'WCAG definition of Pure Decoration'
 [role attribute]: https://www.w3.org/TR/role-attribute/ 'Specification of the role attribute'
 [same resource]: #same-resource 'Definition of same resource'
-[sc244]: https://www.w3.org/TR/WCAG21/#link-purpose-in-context 'Success Criterion 2.4.4
-[sc249]: https://www.w3.org/TR/WCAG21/#link-purpose-link-only 'Success Criterion 2.4.9
+[sc244]: https://www.w3.org/TR/WCAG21/#link-purpose-in-context 'Success Criterion 2.4.4: Link Purpose (In Context)'
+[sc249]: https://www.w3.org/TR/WCAG21/#link-purpose-link-only 'Success Criterion 2.4.9: Link Purpose (Link Only)'
 [semantic role]: #semantic-role 'Definition of semantic role'
 [shadow tree]: https://dom.spec.whatwg.org/#shadow-tree 'Definition of shadow tree'
 [wai-aria specifications]: #wai-aria-specifications 'Definition of WAI-ARIA specifications'

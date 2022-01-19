@@ -7,9 +7,10 @@ github:
   repository: w3c/wcag-act-rules
   path: content/scrollable-element-keyboard-accessible-0ssw9k.md
 footer: |
-  <p><strong>Date:</strong> Updated 22 October 2021</p>
+  <p><strong>Date:</strong> Updated 19 January 2022</p>
+  <p><strong>Rule Identifier:</strong> 0ssw9k</p>
   <p><strong>Authors:</strong> <a href="https://github.com/wilcofiers">Wilco Fiers</a>.</p>
-  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>.</p>
+  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>.</p>
 proposed: true
 rule_meta:
   id: 0ssw9k
@@ -17,28 +18,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that scrollable elements can be scrolled by keyboard
-  accessibility_requirements:
-    'wcag20:2.1.1':
-      forConformance: true
-      failed: not satisfied
-      passed: further testing needed
-      inapplicable: further testing needed
-    'wcag20:2.1.3':
-      forConformance: true
-      failed: not satisfied
-      passed: further testing needed
-      inapplicable: further testing needed
-    'wcag-technique:G202':
-      forConformance: false
-      failed: not satisfied
-      passed: further testing needed
-      inapplicable: further testing needed
-  input_aspects:
-    - handle: DOM Tree
-      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
-    - handle: CSS Styling
-      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
-  last_modified: 22 October 2021
+  last_modified: 19 January 2022
   scs_tested:
     - handle: Keyboard
       num: 2.1.1
@@ -47,18 +27,6 @@ rule_meta:
       num: 2.1.3
       level: AAA
 ---
-
-{::options toc_levels="2" /}
-{::nomarkdown}
-{% include toc.html type="start" title="Page Contents" %}
-{:/}
-
-- Table of Content placeholder
-{:toc}
-
-{::nomarkdown}
-{% include toc.html type="end" %}
-{:/}
 
 ## Applicability
 
@@ -73,18 +41,67 @@ Each test target is either included in [sequential focus navigation][] or has a 
 
 ## Assumptions
 
-This rule assumes that all [scrollable elements][scrollable] with visible content need to be keyboard accessible. [Scrollable elements][scrollable] that do not need to be keyboard accessible, perhaps because their content is [purely decorative][] or because scroll can be controlled in some other keyboard accessible way such as through a button or custom scrollbar, may fail this rule but still satisfy [success criterion 2.1.1 Keyboard][].
+This rule assumes that all [scrollable elements][scrollable] with visible content need to be keyboard accessible. [Scrollable elements][scrollable] that do not need to be keyboard accessible, perhaps because their content is [purely decorative][], the scroll area is whitespace, or because scroll can be controlled in some other keyboard accessible way such as through a button or custom scrollbar, may fail this rule but still satisfy [success criterion 2.1.1 Keyboard][].
 
 ## Accessibility Support
 
 Some browsers will automatically make any [scrollable element][scrollable] focusable to ensure keyboard accessibility. However, the browser does not include these elements in [sequential focus navigation][] when it has a negative number as a tabindex [attribute value][].
 
+Some browsers restrict scrolling to the [content box](https://drafts.csswg.org/css-box-4/#content-box) of elements; while others allow to scroll the full [border box](https://drafts.csswg.org/css-box-4/#border-box), hence including the element's padding. This results in some elements being scrollable with a browser but not with another.
+
 ## Background
 
 To ensure there is some element from which arrow keys can be used to control the scroll position, focus must be on or in a scrollable region. If scripts are used to prevent the keyboard events from reaching the scrollable region, this could still cause a keyboard accessibility issue. This must be tested separately.
 
+### Bibliography
+
 - [Understanding Success Criterion 2.1.1: Keyboard](https://www.w3.org/WAI/WCAG21/Understanding/keyboard.html)
 - [G202: Ensuring keyboard control for all functionality](https://www.w3.org/WAI/WCAG21/Techniques/general/G202)
+
+## Accessibility Requirements Mapping
+
+<ul class="act-requirements-list">
+  <li><details><summary>2.1.1 Keyboard (Level A)</summary>
+    <ul>
+      <li><a href="https://www.w3.org/TR/WCAG21/#keyboard">Learn more about 2.1.1 Keyboard</a></li>
+      <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level A and higher.</li>
+      <li>Outcome mapping: <ul>
+        <li>Any <code>failed</code> outcomes: success criterion is not satisfied</li>
+        <li>All <code>passed</code> outcomes: success criterion needs further testing</li>
+        <li>An <code>inapplicable</code> outcome: success criterion needs further testing</li>
+      </ul></li>
+    </ul>
+  </details></li>
+  <li><details><summary>2.1.3 Keyboard (No Exception) (Level AAA)</summary>
+    <ul>
+      <li><a href="https://www.w3.org/TR/WCAG21/#keyboard-no-exception">Learn more about 2.1.3 Keyboard (No Exception)</a></li>
+      <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level AAA.</li>
+      <li>Outcome mapping: <ul>
+        <li>Any <code>failed</code> outcomes: success criterion is not satisfied</li>
+        <li>All <code>passed</code> outcomes: success criterion needs further testing</li>
+        <li>An <code>inapplicable</code> outcome: success criterion needs further testing</li>
+      </ul></li>
+    </ul>
+  </details></li>
+  <li><details><summary>G202: Ensuring keyboard control for all functionality</summary>
+    <ul>
+      <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G202">Learn more about technique G202</a></li>
+      <li>Not required for conformance to any W3C accessibility recommendation.</li>
+      <li>Outcome mapping: <ul>
+        <li>Any <code>failed</code> outcomes: technique is not satisfied</li>
+        <li>All <code>passed</code> outcomes: technique needs further testing</li>
+        <li>An <code>inapplicable</code> outcome: technique needs further testing</li>
+      </ul></li>
+    </ul>
+  </details></li>
+</ul>
+
+## Input Aspects
+
+The following aspects are required in using this rule.
+
+- [DOM Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom)
+- [CSS Styling](https://www.w3.org/TR/act-rules-aspects/#input-aspects-css)
 
 ## Test Cases
 
@@ -256,7 +273,7 @@ This [scrollable][] `section` element has no [visible][] content.
 This `section` element has a [horizontal scroll distance][scrollable] that is less than its horizontal [padding][], and [vertical scroll distance][scrollable] that is less than its vertical [padding][].
 
 ```html
-<section style="height: 210px; width: 500px; overflow: scroll; padding: 30px;">
+<section style="height: 210px; width: 530px; overflow: scroll; padding: 30px 0 30px 30px;">
 	<div role="heading" aria-level="1">WCAG 2.1 Abstract</div>
 	<div style="width: 520px">
 		Web Content Accessibility Guidelines (WCAG) 2.1 covers a wide range of recommendations for making Web content more

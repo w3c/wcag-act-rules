@@ -7,9 +7,10 @@ github:
   repository: w3c/wcag-act-rules
   path: content/aria-hidden-no-focusable-content-6cfa84.md
 footer: |
-  <p><strong>Date:</strong> Updated 22 October 2021</p>
+  <p><strong>Date:</strong> Updated 19 January 2022</p>
+  <p><strong>Rule Identifier:</strong> 6cfa84</p>
   <p><strong>Authors:</strong> <a href="https://github.com/wilcofiers">Wilco Fiers</a>.</p>
-  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>.</p>
+  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>.</p>
 proposed: true
 rule_meta:
   id: 6cfa84
@@ -17,55 +18,18 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that elements with an `aria-hidden` attribute do not contain focusable elements.
-  accessibility_requirements:
-    'wcag20:1.3.1':
-      forConformance: true
-      failed: not satisfied
-      passed: further testing needed
-      inapplicable: further testing needed
-    'wcag20:4.1.2':
-      forConformance: true
-      failed: not satisfied
-      passed: further testing needed
-      inapplicable: further testing needed
-    'using-aria:fourth':
-      title: Fourth rule of ARIA use
-      forConformance: false
-      failed: not satisfied
-      passed: further testing needed
-      inapplicable: further testing needed
-  input_aspects:
-    - handle: DOM Tree
-      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
-    - handle: CSS Styling
-      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
-  last_modified: 22 October 2021
+  last_modified: 19 January 2022
   scs_tested:
-    - handle: Info and Relationships
-      num: 1.3.1
-      level: A
     - handle: Name, Role, Value
       num: 4.1.2
       level: A
 ---
 
-{::options toc_levels="2" /}
-{::nomarkdown}
-{% include toc.html type="start" title="Page Contents" %}
-{:/}
-
-- Table of Content placeholder
-{:toc}
-
-{::nomarkdown}
-{% include toc.html type="end" %}
-{:/}
-
 ## Applicability
 
 This rule applies to any element with an `aria-hidden` [attribute value][] of `true`.
 
-**Note:** Using `aria-hidden="false"` on a descendant of an element with `aria-hidden="true"` **does not** expose that element. `aria-hidden="true"` hides itself and all its content from assistive technologies.
+**Note:** Using `aria-hidden="false"` on a descendant of an element with `aria-hidden="true"` **does not** expose that element. An element with `aria-hidden="true"` hides itself, all its content and all its descendants from assistive technologies.
 
 ## Expectation
 
@@ -85,11 +49,48 @@ By adding `aria-hidden="true"` to an element, content authors ensure that assist
 
 A [focusable][] element with `aria-hidden="true"` is ignored as part of the reading order, but still part of the focus order, making its state of [visible](#visible) or hidden unclear.
 
+### Bibliography
+
 - [CSS Scoping Module Level 1 (editor's draft)](https://drafts.csswg.org/css-scoping/)
 - [Understanding Success Criterion 1.3.1: Info and Relationships](https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships)
 - [Understanding Success Criterion 4.1.2: Name, Role, Value](https://www.w3.org/WAI/WCAG21/Understanding/name-role-value)
 - [`aria-hidden` (state)](https://www.w3.org/TR/wai-aria-1.1/#aria-hidden)
 - [Fourth rule of ARIA use](https://www.w3.org/TR/using-aria/#fourth)
+- [Element with presentational children has no focusable content](presentational-children-no-focusable-content-307n5z.md)
+
+## Accessibility Requirements Mapping
+
+<ul class="act-requirements-list">
+  <li><details><summary>4.1.2 Name, Role, Value (Level A)</summary>
+    <ul>
+      <li><a href="https://www.w3.org/TR/WCAG21/#name-role-value">Learn more about 4.1.2 Name, Role, Value</a></li>
+      <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level A and higher.</li>
+      <li>Outcome mapping: <ul>
+        <li>Any <code>failed</code> outcomes: success criterion is not satisfied</li>
+        <li>All <code>passed</code> outcomes: success criterion needs further testing</li>
+        <li>An <code>inapplicable</code> outcome: success criterion needs further testing</li>
+      </ul></li>
+    </ul>
+  </details></li>
+  <li><details><summary>Fourth rule of ARIA use</summary>
+    <ul>
+      <li><a href="https://www.w3.org/TR/using-aria/#fourth">Learn more about Fourth rule of ARIA use</a></li>
+      <li>Not required for conformance to any W3C accessibility recommendation.</li>
+      <li>Outcome mapping: <ul>
+        <li>Any <code>failed</code> outcomes: WAI-ARIA rule is not satisfied</li>
+        <li>All <code>passed</code> outcomes: WAI-ARIA rule needs further testing</li>
+        <li>An <code>inapplicable</code> outcome: WAI-ARIA rule needs further testing</li>
+      </ul></li>
+    </ul>
+  </details></li>
+</ul>
+
+## Input Aspects
+
+The following aspects are required in using this rule.
+
+- [DOM Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom)
+- [CSS Styling](https://www.w3.org/TR/act-rules-aspects/#input-aspects-css)
 
 ## Test Cases
 

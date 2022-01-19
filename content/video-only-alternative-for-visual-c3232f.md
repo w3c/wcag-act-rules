@@ -7,9 +7,10 @@ github:
   repository: w3c/wcag-act-rules
   path: content/video-only-alternative-for-visual-c3232f.md
 footer: |
-  <p><strong>Date:</strong> Updated 22 October 2021</p>
+  <p><strong>Date:</strong> Updated 19 January 2022</p>
+  <p><strong>Rule Identifier:</strong> c3232f</p>
   <p><strong>Authors:</strong> <a href="https://www.linkedin.com/in/brianbors/">Brian Bors</a>, <a href="https://github.com/john-urbilog">John Hicks</a>, <a href="https://github.com/Rafalchar">Rafal Charlampowicz</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>.</p>
-  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>.</p>
+  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>.</p>
 proposed: true
 rule_meta:
   id: c3232f
@@ -17,44 +18,12 @@ rule_meta:
   rule_type: composite
   description: |
     This rule checks that `video` elements without audio have an alternative available.
-  accessibility_requirements:
-    'wcag20:1.2.1':
-      forConformance: true
-      failed: not satisfied
-      passed: further testing needed
-      inapplicable: further testing needed
-    'wcag-technique:G159':
-      forConformance: false
-      failed: not satisfied
-      passed: further testing needed
-      inapplicable: further testing needed
-    'wcag-technique:G166':
-      forConformance: false
-      failed: not satisfied
-      passed: further testing needed
-      inapplicable: further testing needed
-  input_aspects:
-    - fd26cf
-    - ee13b5
-    - d7ba54
-  last_modified: 22 October 2021
+  last_modified: 19 January 2022
   scs_tested:
     - handle: Audio-only and Video-only (Prerecorded)
       num: 1.2.1
       level: A
 ---
-
-{::options toc_levels="2" /}
-{::nomarkdown}
-{% include toc.html type="start" title="Page Contents" %}
-{:/}
-
-- Table of Content placeholder
-{:toc}
-
-{::nomarkdown}
-{% include toc.html type="end" %}
-{:/}
 
 ## Applicability
 
@@ -79,9 +48,57 @@ The HTML `video` element can also have a `track` element that provides an audio 
 
 ## Background
 
+### Bibliography
+
 - [Understanding Success Criterion 1.2.1: Audio-only and Video-only (Prerecorded)](https://www.w3.org/WAI/WCAG21/Understanding/audio-only-and-video-only-prerecorded)
 - [G159: Providing an alternative for time-based media for video-only content](https://www.w3.org/WAI/WCAG21/Techniques/general/G159.html)
 - [G166: Providing audio that describes the important video content and describing it as such](https://www.w3.org/WAI/WCAG21/Techniques/general/G166.html)
+
+## Accessibility Requirements Mapping
+
+<ul class="act-requirements-list">
+  <li><details><summary>1.2.1 Audio-only and Video-only (Prerecorded) (Level A)</summary>
+    <ul>
+      <li><a href="https://www.w3.org/TR/WCAG21/#audio-only-and-video-only-prerecorded">Learn more about 1.2.1 Audio-only and Video-only (Prerecorded)</a></li>
+      <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level A and higher.</li>
+      <li>Outcome mapping: <ul>
+        <li>Any <code>failed</code> outcomes: success criterion is not satisfied</li>
+        <li>All <code>passed</code> outcomes: success criterion needs further testing</li>
+        <li>An <code>inapplicable</code> outcome: success criterion needs further testing</li>
+      </ul></li>
+    </ul>
+  </details></li>
+  <li><details><summary>G159: Providing an alternative for time-based media for video-only content</summary>
+    <ul>
+      <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G159">Learn more about technique G159</a></li>
+      <li>Not required for conformance to any W3C accessibility recommendation.</li>
+      <li>Outcome mapping: <ul>
+        <li>Any <code>failed</code> outcomes: technique is not satisfied</li>
+        <li>All <code>passed</code> outcomes: technique needs further testing</li>
+        <li>An <code>inapplicable</code> outcome: technique needs further testing</li>
+      </ul></li>
+    </ul>
+  </details></li>
+  <li><details><summary>G166: Providing audio that describes the important video content and describing it as such</summary>
+    <ul>
+      <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G166">Learn more about technique G166</a></li>
+      <li>Not required for conformance to any W3C accessibility recommendation.</li>
+      <li>Outcome mapping: <ul>
+        <li>Any <code>failed</code> outcomes: technique is not satisfied</li>
+        <li>All <code>passed</code> outcomes: technique needs further testing</li>
+        <li>An <code>inapplicable</code> outcome: technique needs further testing</li>
+      </ul></li>
+    </ul>
+  </details></li>
+</ul>
+
+## Input Rules
+
+Outcomes of the following rules are required as input for this rule.
+
+- [`video` element visual-only content is media alternative for text](/standards-guidelines/act/rules/video-only-as-media-alternative-fd26cf/)
+- [`video` element visual-only content has transcript](/standards-guidelines/act/rules/video-only-transcript-ee13b5/)
+- [`video` element visual-only content has audio track alternative](/standards-guidelines/act/rules/video-only-audio-track-d7ba54/)
 
 ## Test Cases
 

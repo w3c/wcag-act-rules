@@ -7,9 +7,10 @@ github:
   repository: w3c/wcag-act-rules
   path: content/video-captions-f51b46.md
 footer: |
-  <p><strong>Date:</strong> Updated 22 October 2021</p>
+  <p><strong>Date:</strong> Updated 19 January 2022</p>
+  <p><strong>Rule Identifier:</strong> f51b46</p>
   <p><strong>Authors:</strong> <a href="https://www.linkedin.com/in/brianbors/">Brian Bors</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>.</p>
-  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>.</p>
+  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>.</p>
 proposed: true
 rule_meta:
   id: f51b46
@@ -17,45 +18,8 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that captions are available for audio information in non-streaming `video` elements.
-  accessibility_requirements:
-    'wcag-technique:G87':
-      forConformance: false
-      failed: not satisfied
-      passed: further testing needed
-      inapplicable: further testing needed
-    'wcag-technique:G93':
-      forConformance: false
-      failed: not satisfied
-      passed: further testing needed
-      inapplicable: further testing needed
-    'wcag-technique:H95':
-      forConformance: false
-      failed: not satisfied
-      passed: further testing needed
-      inapplicable: further testing needed
-  input_aspects:
-    - handle: DOM Tree
-      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
-    - handle: CSS Styling
-      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
-    - handle: Audio output
-      url: 
-    - handle: Visual output
-      url: 
-  last_modified: 22 October 2021
+  last_modified: 19 January 2022
 ---
-
-{::options toc_levels="2" /}
-{::nomarkdown}
-{% include toc.html type="start" title="Page Contents" %}
-{:/}
-
-- Table of Content placeholder
-{:toc}
-
-{::nomarkdown}
-{% include toc.html type="end" %}
-{:/}
 
 ## Applicability
 
@@ -77,10 +41,59 @@ There are no major accessibility support issues known for this rule.
 
 ## Background
 
+### Bibliography
+
 - [Understanding Success Criterion 1.2.2: Captions (Prerecorded)](https://www.w3.org/WAI/WCAG21/Understanding/captions-prerecorded)
 - [G93: Providing open (always visible) captions](https://www.w3.org/WAI/WCAG21/Techniques/general/G93)
 - [G87: Providing closed captions](https://www.w3.org/WAI/WCAG21/Techniques/general/G87)
 - [H95: Using the track element to provide captions](https://www.w3.org/WAI/WCAG21/Techniques/html/H95)
+
+## Accessibility Requirements Mapping
+
+<ul class="act-requirements-list">
+  <li><details><summary>G87: Providing closed captions</summary>
+    <ul>
+      <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G87">Learn more about technique G87</a></li>
+      <li>Not required for conformance to any W3C accessibility recommendation.</li>
+      <li>Outcome mapping: <ul>
+        <li>Any <code>failed</code> outcomes: technique is not satisfied</li>
+        <li>All <code>passed</code> outcomes: technique needs further testing</li>
+        <li>An <code>inapplicable</code> outcome: technique needs further testing</li>
+      </ul></li>
+    </ul>
+  </details></li>
+  <li><details><summary>G93: Providing open (always visible) captions</summary>
+    <ul>
+      <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G93">Learn more about technique G93</a></li>
+      <li>Not required for conformance to any W3C accessibility recommendation.</li>
+      <li>Outcome mapping: <ul>
+        <li>Any <code>failed</code> outcomes: technique is not satisfied</li>
+        <li>All <code>passed</code> outcomes: technique needs further testing</li>
+        <li>An <code>inapplicable</code> outcome: technique needs further testing</li>
+      </ul></li>
+    </ul>
+  </details></li>
+  <li><details><summary>H95: Using the track element to provide captions</summary>
+    <ul>
+      <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/html/H95">Learn more about technique H95</a></li>
+      <li>Not required for conformance to any W3C accessibility recommendation.</li>
+      <li>Outcome mapping: <ul>
+        <li>Any <code>failed</code> outcomes: technique is not satisfied</li>
+        <li>All <code>passed</code> outcomes: technique needs further testing</li>
+        <li>An <code>inapplicable</code> outcome: technique needs further testing</li>
+      </ul></li>
+    </ul>
+  </details></li>
+</ul>
+
+## Input Aspects
+
+The following aspects are required in using this rule.
+
+- [DOM Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom)
+- [CSS Styling](https://www.w3.org/TR/act-rules-aspects/#input-aspects-css)
+- [Audio output]()
+- [Visual output]()
 
 ## Test Cases
 
