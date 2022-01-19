@@ -7,39 +7,19 @@ github:
   repository: w3c/wcag-act-rules
   path: content/element-marked-decorative-is-not-exposed-46ca7f.md
 footer: |
-  <p><strong>Date:</strong> Updated 22 October 2021</p>
+  <p><strong>Date:</strong> Updated 19 January 2022</p>
+  <p><strong>Rule Identifier:</strong> 46ca7f</p>
   <p><strong>Authors:</strong> <a href="https://github.com/Jym77">Jean-Yves Moyen</a>.</p>
-  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>.</p>
-proposed: true
+  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>.</p>
+proposed: false
 rule_meta:
   id: 46ca7f
   name: "Element marked as decorative is not exposed"
   rule_type: atomic
   description: |
     This rule checks that elements marked as decorative either are not included in the accessibility tree, or have a presentational role.
-  accessibility_requirements:
-    null
-  input_aspects:
-    - handle: Accessibility tree
-      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-accessibility
-    - handle: CSS styling
-      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
-    - handle: DOM tree
-      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
-  last_modified: 22 October 2021
+  last_modified: 19 January 2022
 ---
-
-{::options toc_levels="2" /}
-{::nomarkdown}
-{% include toc.html type="start" title="Page Contents" %}
-{:/}
-
-- Table of Content placeholder
-{:toc}
-
-{::nomarkdown}
-{% include toc.html type="end" %}
-{:/}
 
 ## Applicability
 
@@ -65,37 +45,23 @@ Whenever such a conflict occurs, this indicates at the very least mismatching in
 
 When these conflicts arise on [decorative][] [non-text content][], this is also a failure of [Success Criterion 1.1.1: Non-text Content][sc111] because [decorative][] [non-text content][] must be implemented in a way that allows assistive technologies to ignore it. When these conflicts arise on text content, or on content which is not [decorative][], this is not a failure of WCAG. Therefore this rule is not mapping to any specific WCAG Success Criterion, and is not an accessibility requirement for WCAG.
 
+## Accessibility Requirements Mapping
+
+This rule is not required for conformance.
+
+## Input Aspects
+
+The following aspects are required in using this rule.
+
+- [Accessibility tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-accessibility)
+- [CSS styling](https://www.w3.org/TR/act-rules-aspects/#input-aspects-css)
+- [DOM tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom)
+
 ## Test Cases
 
 ### Passed
 
 #### Passed Example 1
-
-This `img` element is [marked as decorative][] through its `alt` attribute and is not [included in the accessibility tree][] because of the `aria-hidden` attribute.
-
-```html
-<img src="/test-assets/shared/w3c-logo.png" alt="" aria-hidden="true" />
-```
-
-#### Passed Example 2
-
-This `img` element is [marked as decorative][] through its `alt` attribute and is not [included in the accessibility tree][] because it is `hidden` to everyone.
-
-```html
-<img src="/test-assets/shared/w3c-logo.png" alt="" hidden />
-```
-
-#### Passed Example 3
-
-This `nav` element is [marked as decorative][] through its `role` attribute and has a [semantic role][] of `none`.
-
-```html
-<nav role="none">
-	<a href="https://act-rules.github.io/" aria-label="ACT rules">ACT rules</a>
-</nav>
-```
-
-#### Passed Example 4
 
 This `img` element is [marked as decorative][] through its empty `alt` attribute and has [semantic role][] of `none`.
 
@@ -103,12 +69,38 @@ This `img` element is [marked as decorative][] through its empty `alt` attribute
 <img src="/test-assets/shared/w3c-logo.png" alt="" />
 ```
 
-#### Passed Example 5
+#### Passed Example 2
 
-This `img` element is [marked as decorative][] through its `role` attribute and has a [semantic role][] of `none` because own attributes are not required to be exposed and thus do not trigger the [presentational roles conflict resolution][].
+This `img` element is [marked as decorative][] through its empty `alt` attribute and is not [included in the accessibility tree][] because of the `aria-hidden` attribute.
 
 ```html
-<img src="/test-assets/shared/w3c-logo.png" role="none" alt="W3C logo" />
+<img src="/test-assets/shared/w3c-logo.png" alt="" aria-hidden="true" />
+```
+
+#### Passed Example 3
+
+This `img` element is [marked as decorative][] through its empty `alt` attribute and is not [included in the accessibility tree][] because it is `hidden` to everyone.
+
+```html
+<img src="/test-assets/shared/w3c-logo.png" alt="" hidden />
+```
+
+#### Passed Example 4
+
+This `nav` element is [marked as decorative][] through its `role` attribute and has a [semantic role][] of `presentation`.
+
+```html
+<nav role="presentation">
+	<a href="https://act-rules.github.io/" aria-label="ACT rules">ACT rules</a>
+</nav>
+```
+
+#### Passed Example 5
+
+This `img` element is [marked as decorative][] through its `role` attribute and has a [semantic role][] of `presentation` because own attributes are not required to be exposed and thus do not trigger the [presentational roles conflict resolution][].
+
+```html
+<img src="/test-assets/shared/w3c-logo.png" role="presentation" alt="W3C logo" />
 ```
 
 #### Passed Example 6
@@ -128,7 +120,7 @@ This `svg` element is [marked as decorative][] through its `role` attribute and 
 This `nav` element is [marked as decorative][] through its `role` attribute but has a non-empty `aria-label` attribute causing it to be [included in the accessibility tree][] with its [implicit role][] of `navigation`.
 
 ```html
-<nav role="none" aria-label="global">
+<nav role="presentation" aria-label="global">
 	<a href="https://act-rules.github.io/" aria-label="ACT rules">ACT rules</a>
 </nav>
 ```
@@ -267,6 +259,6 @@ This is the first version of this ACT rule.
 [programmatically hidden]: #programmatically-hidden 'Definition of Programmatically Hidden'
 [pure decoration]: https://www.w3.org/TR/WCAG21/#dfn-pure-decoration 'WCAG definition of Pure Decoration'
 [role attribute]: https://www.w3.org/TR/role-attribute/ 'Specification of the role attribute'
-[sc111]: https://www.w3.org/TR/WCAG21/#non-text-content 'Success Criterion 1.1.1'
+[sc111]: https://www.w3.org/TR/WCAG21/#non-text-content 'Success Criterion 1.1.1: Non-text Content'
 [semantic role]: #semantic-role 'Definition of Semantic Role'
 [wai-aria specifications]: #wai-aria-specifications 'Definition of WAI-ARIA specifications'

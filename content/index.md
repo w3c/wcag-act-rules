@@ -32,17 +32,19 @@ This page lists [WCAG 2 Test Rules](https://www.w3.org/WAI/standards-guidelines/
 
 These Test Rules have been approved by the Accessibility Guidelines Working Group. They are fully implemented in at least one evaluation tool or methodology.
 
-* [HTML page has non-empty title](/standards-guidelines/act/rules/html-page-non-empty-title-2779a5/)
-* [Image has non-empty accessible name](/standards-guidelines/act/rules/image-non-empty-accessible-name-23a2a8/)
-* [Image button has non-empty accessible name](/standards-guidelines/act/rules/image-button-non-empty-accessible-name-59796f/)
-* [Link has non-empty accessible name](/standards-guidelines/act/rules/link-non-empty-accessible-name-c487ae/)
+* [`autocomplete` attribute has valid value](/standards-guidelines/act/rules/autocomplete-valid-value-73f2c2/)
 * [Button has non-empty accessible name](/standards-guidelines/act/rules/button-non-empty-accessible-name-97a4e1/)
+* [Element marked as decorative is not exposed](/standards-guidelines/act/rules/element-marked-decorative-is-not-exposed-46ca7f/)
 * [Form field has non-empty accessible name](/standards-guidelines/act/rules/form-field-non-empty-accessible-name-e086e5/)
-* [meta viewport allows for zoom](/standards-guidelines/act/rules/meta-viewport-b4f0c3/)
-* [SVG element with explicit role has non-empty accessible name](/standards-guidelines/act/rules/explicit-SVG-image-non-empty-accessible-name-7d6734/)
 * [HTML page has `lang` attribute](/standards-guidelines/act/rules/html-page-lang-b5c3f8/)
-* [HTML page language is valid](/standards-guidelines/act/rules/html-page-lang-valid-bf051a/)
-* [HTML page lang and xml:lang attributes have matching values](/standards-guidelines/act/rules/html-page-lang-xml-lang-match-5b7ae0/)
+* [HTML page `lang` attribute has valid language tag](/standards-guidelines/act/rules/html-page-lang-valid-bf051a/)
+* [HTML page `lang` and `xml:lang` attributes have matching values](/standards-guidelines/act/rules/html-page-lang-xml-lang-match-5b7ae0/)
+* [HTML page has non-empty title](/standards-guidelines/act/rules/html-page-non-empty-title-2779a5/)
+* [Image button has non-empty accessible name](/standards-guidelines/act/rules/image-button-non-empty-accessible-name-59796f/)
+* [Image has non-empty accessible name](/standards-guidelines/act/rules/image-non-empty-accessible-name-23a2a8/)
+* [Letter spacing in `style` attributes is not `!important`](/standards-guidelines/act/rules/letter-spacing-not-important-24afc2/)
+* [Link has non-empty accessible name](/standards-guidelines/act/rules/link-non-empty-accessible-name-c487ae/)
+* [Word spacing in `style` attributes is not `!important`](/standards-guidelines/act/rules/word-spacing-not-important-9e45ec/)
 
 ## Proposed Test Rules
 
