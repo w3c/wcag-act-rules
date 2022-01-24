@@ -7,7 +7,7 @@ github:
   repository: w3c/wcag-act-rules
   path: content/sequentially-focusable-element-has-visible-focus-oj04fd.md
 footer: |
-  <p><strong>Date:</strong> Updated 19 January 2022</p>
+  <p><strong>Date:</strong> Updated 24 January 2022</p>
   <p><strong>Rule Identifier:</strong> oj04fd</p>
   <p><strong>Authors:</strong> <a href="https://github.com/Jym77">Jean-Yves Moyen</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>.</p>
@@ -18,7 +18,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that each element in sequential focus order has some visible focus indication.
-  last_modified: 19 January 2022
+  last_modified: 24 January 2022
   scs_tested:
     - handle: Focus Visible
       num: 2.4.7
@@ -63,7 +63,8 @@ Due to the Applicability of this rule, test cases must have at least two element
 ## Accessibility Requirements Mapping
 
 <ul class="act-requirements-list">
-  <li><details><summary>2.4.7 Focus Visible (Level AA)</summary>
+  <li><details>
+    <summary><span>2.4.7 Focus Visible (Level AA)</span></summary>
     <ul>
       <li><a href="https://www.w3.org/TR/WCAG21/#focus-visible">Learn more about 2.4.7 Focus Visible</a></li>
       <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level AA and higher.</li>

@@ -7,7 +7,7 @@ github:
   repository: w3c/wcag-act-rules
   path: content/focusable-no-keyboard-trap-80af7b.md
 footer: |
-  <p><strong>Date:</strong> Updated 19 January 2022</p>
+  <p><strong>Date:</strong> Updated 24 January 2022</p>
   <p><strong>Rule Identifier:</strong> 80af7b</p>
   <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/DagfinnRomen">Dagfinn Rømen</a>, <a href="https://github.com/geirsf">Geir Sindre Fossøy</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>.</p>
@@ -18,7 +18,7 @@ rule_meta:
   rule_type: composite
   description: |
     This rule checks for keyboard traps. This includes use of both standard and non-standard keyboard navigation to navigate through all content without becoming trapped.
-  last_modified: 19 January 2022
+  last_modified: 24 January 2022
   scs_tested:
     - handle: No Keyboard Trap
       num: 2.1.2
@@ -57,7 +57,8 @@ _There are no major accessibility support issues known for this rule._
 ## Accessibility Requirements Mapping
 
 <ul class="act-requirements-list">
-  <li><details><summary>2.1.2 No Keyboard Trap (Level A)</summary>
+  <li><details>
+    <summary><span>2.1.2 No Keyboard Trap (Level A)</span></summary>
     <ul>
       <li><a href="https://www.w3.org/TR/WCAG21/#no-keyboard-trap">Learn more about 2.1.2 No Keyboard Trap</a></li>
       <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level A and higher.</li>
@@ -68,7 +69,8 @@ _There are no major accessibility support issues known for this rule._
       </ul></li>
     </ul>
   </details></li>
-  <li><details><summary>WCAG Non-Interference</summary>
+  <li><details>
+    <summary><span>WCAG Non-Interference</span></summary>
     <ul>
       <li><a href="https://www.w3.org/TR/WCAG21/#cc5">Learn more about WCAG Non-Interference</a></li>
       <li><strong>Required for conformance</strong> to WCAG 2.1.</li>
@@ -79,7 +81,8 @@ _There are no major accessibility support issues known for this rule._
       </ul></li>
     </ul>
   </details></li>
-  <li><details><summary>G21: Ensuring that users are not trapped in content</summary>
+  <li><details>
+    <summary><span>G21: Ensuring that users are not trapped in content</span></summary>
     <ul>
       <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G21">Learn more about technique G21</a></li>
       <li>Not required for conformance to any W3C accessibility recommendation.</li>

@@ -7,7 +7,7 @@ github:
   repository: w3c/wcag-act-rules
   path: content/image-non-empty-accessible-name-23a2a8.md
 footer: |
-  <p><strong>Date:</strong> Updated 19 January 2022</p>
+  <p><strong>Date:</strong> Updated 24 January 2022</p>
   <p><strong>Rule Identifier:</strong> 23a2a8</p>
   <p><strong>Authors:</strong> <a href="https://github.com/wilcofiers">Wilco Fiers</a>. <em>Previous Authors:</em> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/skotkjerra">Stein Erik Skotkjerra</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>.</p>
@@ -18,7 +18,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that each image either has a non-empty accessible name or is marked up as decorative.
-  last_modified: 19 January 2022
+  last_modified: 24 January 2022
   scs_tested:
     - handle: Non-text Content
       num: 1.1.1
@@ -61,7 +61,8 @@ _There are currently no assumptions._
 ## Accessibility Requirements Mapping
 
 <ul class="act-requirements-list">
-  <li><details><summary>1.1.1 Non-text Content (Level A)</summary>
+  <li><details>
+    <summary><span>1.1.1 Non-text Content (Level A)</span></summary>
     <ul>
       <li><a href="https://www.w3.org/TR/WCAG21/#non-text-content">Learn more about 1.1.1 Non-text Content</a></li>
       <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level A and higher.</li>
@@ -72,7 +73,8 @@ _There are currently no assumptions._
       </ul></li>
     </ul>
   </details></li>
-  <li><details><summary>G94: Providing short text alternative for non-text content that serves the same purpose and presents the same information as the non-text content</summary>
+  <li><details>
+    <summary><span>G94: Providing short text alternative for non-text content that serves the same purpose and presents the same information as the non-text content</span></summary>
     <ul>
       <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G94">Learn more about technique G94</a></li>
       <li>Not required for conformance to any W3C accessibility recommendation.</li>
@@ -83,7 +85,8 @@ _There are currently no assumptions._
       </ul></li>
     </ul>
   </details></li>
-  <li><details><summary>G95: Providing short text alternatives that provide a brief description of the non-text content</summary>
+  <li><details>
+    <summary><span>G95: Providing short text alternatives that provide a brief description of the non-text content</span></summary>
     <ul>
       <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G95">Learn more about technique G95</a></li>
       <li>Not required for conformance to any W3C accessibility recommendation.</li>

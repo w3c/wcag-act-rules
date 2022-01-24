@@ -7,7 +7,7 @@ github:
   repository: w3c/wcag-act-rules
   path: content/link-in-context-descriptive-5effbb.md
 footer: |
-  <p><strong>Date:</strong> Updated 19 January 2022</p>
+  <p><strong>Date:</strong> Updated 24 January 2022</p>
   <p><strong>Rule Identifier:</strong> 5effbb</p>
   <p><strong>Authors:</strong> <a href="https://github.com/carlosapaduarte">Carlos Duarte</a>, <a href="https://github.com/marietrudelle">Marie Trudelle</a>, <a href="https://github.com/ramitgarg">Ramit Garg</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>.</p>
@@ -18,7 +18,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that the accessible name of a link together with its context describes its purpose.
-  last_modified: 19 January 2022
+  last_modified: 24 January 2022
   scs_tested:
     - handle: Link Purpose (In Context)
       num: 2.4.4
@@ -78,7 +78,8 @@ This rule is designed specifically for [2.4.4 Link Purpose (In Context)][sc244],
 ## Accessibility Requirements Mapping
 
 <ul class="act-requirements-list">
-  <li><details><summary>2.4.4 Link Purpose (In Context) (Level A)</summary>
+  <li><details>
+    <summary><span>2.4.4 Link Purpose (In Context) (Level A)</span></summary>
     <ul>
       <li><a href="https://www.w3.org/TR/WCAG21/#link-purpose-in-context">Learn more about 2.4.4 Link Purpose (In Context)</a></li>
       <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level A and higher.</li>
@@ -89,7 +90,8 @@ This rule is designed specifically for [2.4.4 Link Purpose (In Context)][sc244],
       </ul></li>
     </ul>
   </details></li>
-  <li><details><summary>2.4.9 Link Purpose (Link Only) (Level AAA)</summary>
+  <li><details>
+    <summary><span>2.4.9 Link Purpose (Link Only) (Level AAA)</span></summary>
     <ul>
       <li><a href="https://www.w3.org/TR/WCAG21/#link-purpose-link-only">Learn more about 2.4.9 Link Purpose (Link Only)</a></li>
       <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level AAA.</li>

@@ -7,7 +7,7 @@ github:
   repository: w3c/wcag-act-rules
   path: content/video-transcript-1a02b0.md
 footer: |
-  <p><strong>Date:</strong> Updated 19 January 2022</p>
+  <p><strong>Date:</strong> Updated 24 January 2022</p>
   <p><strong>Rule Identifier:</strong> 1a02b0</p>
   <p><strong>Authors:</strong> <a href="https://www.linkedin.com/in/brianbors/">Brian Bors</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>.</p>
@@ -18,7 +18,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that non-streaming `video` elements have all audio and visual information available in a transcript.
-  last_modified: 19 January 2022
+  last_modified: 24 January 2022
   scs_tested:
     - handle: Media Alternative (Prerecorded)
       num: 1.2.8
@@ -57,7 +57,8 @@ There are no major accessibility support issues known for this rule.
 ## Accessibility Requirements Mapping
 
 <ul class="act-requirements-list">
-  <li><details><summary>1.2.8 Media Alternative (Prerecorded) (Level AAA)</summary>
+  <li><details>
+    <summary><span>1.2.8 Media Alternative (Prerecorded) (Level AAA)</span></summary>
     <ul>
       <li><a href="https://www.w3.org/TR/WCAG21/#media-alternative-prerecorded">Learn more about 1.2.8 Media Alternative (Prerecorded)</a></li>
       <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level AAA.</li>
@@ -68,7 +69,8 @@ There are no major accessibility support issues known for this rule.
       </ul></li>
     </ul>
   </details></li>
-  <li><details><summary>G69: Providing an alternative for time based media</summary>
+  <li><details>
+    <summary><span>G69: Providing an alternative for time based media</span></summary>
     <ul>
       <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G69">Learn more about technique G69</a></li>
       <li>Not required for conformance to any W3C accessibility recommendation.</li>

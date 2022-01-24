@@ -7,7 +7,7 @@ github:
   repository: w3c/wcag-act-rules
   path: content/css-restrict-orientation-b33eff.md
 footer: |
-  <p><strong>Date:</strong> Updated 19 January 2022</p>
+  <p><strong>Date:</strong> Updated 24 January 2022</p>
   <p><strong>Rule Identifier:</strong> b33eff</p>
   <p><strong>Authors:</strong> <a href="https://github.com/audreymaniez">Audrey Maniez</a>, <a href="https://github.com/jkodu">Jey Nandakumar</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>.</p>
@@ -18,7 +18,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that page content is not restricted to either `landscape` or `portrait` orientation using CSS transform property.
-  last_modified: 19 January 2022
+  last_modified: 24 January 2022
   scs_tested:
     - handle: Orientation
       num: 1.3.4
@@ -71,7 +71,8 @@ _There are no major accessibility support issues known for this rule._
 ## Accessibility Requirements Mapping
 
 <ul class="act-requirements-list">
-  <li><details><summary>1.3.4 Orientation (Level AA)</summary>
+  <li><details>
+    <summary><span>1.3.4 Orientation (Level AA)</span></summary>
     <ul>
       <li><a href="https://www.w3.org/TR/WCAG21/#orientation">Learn more about 1.3.4 Orientation</a></li>
       <li><strong>Required for conformance</strong> to WCAG 2.1 on level AA and higher.</li>

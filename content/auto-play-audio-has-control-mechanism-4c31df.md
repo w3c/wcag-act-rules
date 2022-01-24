@@ -7,7 +7,7 @@ github:
   repository: w3c/wcag-act-rules
   path: content/auto-play-audio-has-control-mechanism-4c31df.md
 footer: |
-  <p><strong>Date:</strong> Updated 19 January 2022</p>
+  <p><strong>Date:</strong> Updated 24 January 2022</p>
   <p><strong>Rule Identifier:</strong> 4c31df</p>
   <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/brynanders">Bryn Anderson</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>.</p>
@@ -18,7 +18,7 @@ rule_meta:
   rule_type: atomic
   description: |
     audio or video that plays automatically must have a control mechanism.
-  last_modified: 19 January 2022
+  last_modified: 24 January 2022
 ---
 
 ## Applicability
@@ -57,7 +57,8 @@ The native `video` and `audio` controls in several browser and assistive technol
 ## Accessibility Requirements Mapping
 
 <ul class="act-requirements-list">
-  <li><details><summary>G170: Providing a control near the beginning of the Web page that turns off sounds that play automatically</summary>
+  <li><details>
+    <summary><span>G170: Providing a control near the beginning of the Web page that turns off sounds that play automatically</span></summary>
     <ul>
       <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G170">Learn more about technique G170</a></li>
       <li>Not required for conformance to any W3C accessibility recommendation.</li>

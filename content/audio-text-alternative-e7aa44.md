@@ -7,7 +7,7 @@ github:
   repository: w3c/wcag-act-rules
   path: content/audio-text-alternative-e7aa44.md
 footer: |
-  <p><strong>Date:</strong> Updated 19 January 2022</p>
+  <p><strong>Date:</strong> Updated 24 January 2022</p>
   <p><strong>Rule Identifier:</strong> e7aa44</p>
   <p><strong>Authors:</strong> <a href="https://www.linkedin.com/in/brianbors/">Brian Bors</a>, <a href="https://github.com/john-urbilog">John Hicks</a>, <a href="https://github.com/Rafalchar">Rafal Charlampowicz</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>.</p>
@@ -18,7 +18,7 @@ rule_meta:
   rule_type: composite
   description: |
     This rule checks if audio only elements have a text alternative available.
-  last_modified: 19 January 2022
+  last_modified: 24 January 2022
   scs_tested:
     - handle: Audio-only and Video-only (Prerecorded)
       num: 1.2.1
@@ -59,7 +59,8 @@ There are no major accessibility support issues known for this rule.
 ## Accessibility Requirements Mapping
 
 <ul class="act-requirements-list">
-  <li><details><summary>1.2.1 Audio-only and Video-only (Prerecorded) (Level A)</summary>
+  <li><details>
+    <summary><span>1.2.1 Audio-only and Video-only (Prerecorded) (Level A)</span></summary>
     <ul>
       <li><a href="https://www.w3.org/TR/WCAG21/#audio-only-and-video-only-prerecorded">Learn more about 1.2.1 Audio-only and Video-only (Prerecorded)</a></li>
       <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level A and higher.</li>
@@ -70,7 +71,8 @@ There are no major accessibility support issues known for this rule.
       </ul></li>
     </ul>
   </details></li>
-  <li><details><summary>G158: Providing an alternative for time-based media for audio-only content</summary>
+  <li><details>
+    <summary><span>G158: Providing an alternative for time-based media for audio-only content</span></summary>
     <ul>
       <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G158">Learn more about technique G158</a></li>
       <li>Not required for conformance to any W3C accessibility recommendation.</li>

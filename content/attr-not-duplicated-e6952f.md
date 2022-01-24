@@ -7,7 +7,7 @@ github:
   repository: w3c/wcag-act-rules
   path: content/attr-not-duplicated-e6952f.md
 footer: |
-  <p><strong>Date:</strong> Updated 19 January 2022</p>
+  <p><strong>Date:</strong> Updated 24 January 2022</p>
   <p><strong>Rule Identifier:</strong> e6952f</p>
   <p><strong>Authors:</strong> <a href="https://github.com/EmmaJP">Emma Pratt Richens</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>.</p>
@@ -18,7 +18,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that HTML and SVG starting tags do not contain duplicated attributes.
-  last_modified: 19 January 2022
+  last_modified: 24 January 2022
   scs_tested:
     - handle: Parsing
       num: 4.1.1
@@ -52,7 +52,8 @@ _There are no major accessibility support issues known for this rule._
 ## Accessibility Requirements Mapping
 
 <ul class="act-requirements-list">
-  <li><details><summary>4.1.1 Parsing (Level A)</summary>
+  <li><details>
+    <summary><span>4.1.1 Parsing (Level A)</span></summary>
     <ul>
       <li><a href="https://www.w3.org/TR/WCAG21/#parsing">Learn more about 4.1.1 Parsing</a></li>
       <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level A and higher.</li>
@@ -63,7 +64,8 @@ _There are no major accessibility support issues known for this rule._
       </ul></li>
     </ul>
   </details></li>
-  <li><details><summary>H94: Ensuring that elements do not contain duplicate attributes</summary>
+  <li><details>
+    <summary><span>H94: Ensuring that elements do not contain duplicate attributes</span></summary>
     <ul>
       <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/html/H94">Learn more about technique H94</a></li>
       <li>Not required for conformance to any W3C accessibility recommendation.</li>

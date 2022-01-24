@@ -7,7 +7,7 @@ github:
   repository: w3c/wcag-act-rules
   path: content/form-field-label-descriptive-cc0f0a.md
 footer: |
-  <p><strong>Date:</strong> Updated 19 January 2022</p>
+  <p><strong>Date:</strong> Updated 24 January 2022</p>
   <p><strong>Rule Identifier:</strong> cc0f0a</p>
   <p><strong>Authors:</strong> <a href="https://github.com/Jym77">Jean-Yves Moyen</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. <em>Previous Authors:</em> <a href="https://github.com/DagfinnRomen">Dagfinn Rømen</a>, <a href="https://github.com/geirsf">Geir Sindre Fossøy</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>.</p>
@@ -18,7 +18,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that labels describe the purpose of form field elements.
-  last_modified: 19 January 2022
+  last_modified: 24 January 2022
   scs_tested:
     - handle: Headings and Labels
       num: 2.4.6
@@ -84,7 +84,8 @@ Each test target, together with its [visual context][], describes the purpose of
 ## Accessibility Requirements Mapping
 
 <ul class="act-requirements-list">
-  <li><details><summary>2.4.6 Headings and Labels (Level AA)</summary>
+  <li><details>
+    <summary><span>2.4.6 Headings and Labels (Level AA)</span></summary>
     <ul>
       <li><a href="https://www.w3.org/TR/WCAG21/#headings-and-labels">Learn more about 2.4.6 Headings and Labels</a></li>
       <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level AA and higher.</li>
@@ -95,7 +96,8 @@ Each test target, together with its [visual context][], describes the purpose of
       </ul></li>
     </ul>
   </details></li>
-  <li><details><summary>G131: Providing descriptive labels</summary>
+  <li><details>
+    <summary><span>G131: Providing descriptive labels</span></summary>
     <ul>
       <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G131">Learn more about technique G131</a></li>
       <li>Not required for conformance to any W3C accessibility recommendation.</li>

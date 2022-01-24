@@ -7,7 +7,7 @@ github:
   repository: w3c/wcag-act-rules
   path: content/document-has-headings-for-non-repeated-content-047fe0.md
 footer: |
-  <p><strong>Date:</strong> Updated 19 January 2022</p>
+  <p><strong>Date:</strong> Updated 24 January 2022</p>
   <p><strong>Rule Identifier:</strong> 047fe0</p>
   <p><strong>Authors:</strong> <a href="https://github.com/Jym77">Jean-Yves Moyen</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>.</p>
@@ -19,7 +19,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that the non-repeated content contains a heading
-  last_modified: 19 January 2022
+  last_modified: 24 January 2022
 ---
 
 ## Applicability
@@ -60,7 +60,8 @@ Neither this rule, nor technique [H69: Providing heading elements at the beginni
 ## Accessibility Requirements Mapping
 
 <ul class="act-requirements-list">
-  <li><details><summary>H69: Providing heading elements at the beginning of each section of content</summary>
+  <li><details>
+    <summary><span>H69: Providing heading elements at the beginning of each section of content</span></summary>
     <ul>
       <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/html/H69">Learn more about technique H69</a></li>
       <li>Not required for conformance to any W3C accessibility recommendation.</li>

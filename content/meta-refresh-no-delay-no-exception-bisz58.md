@@ -7,7 +7,7 @@ github:
   repository: w3c/wcag-act-rules
   path: content/meta-refresh-no-delay-no-exception-bisz58.md
 footer: |
-  <p><strong>Date:</strong> Updated 19 January 2022</p>
+  <p><strong>Date:</strong> Updated 24 January 2022</p>
   <p><strong>Rule Identifier:</strong> bisz58</p>
   <p><strong>Authors:</strong> <a href="https://github.com/Jym77">Jean-Yves Moyen</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>.</p>
@@ -18,7 +18,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that the `meta` element is not used for delayed redirecting or refreshing.
-  last_modified: 19 January 2022
+  last_modified: 24 January 2022
   scs_tested:
     - handle: Interruptions
       num: 2.2.4
@@ -62,7 +62,8 @@ Not all major web browsers parse the value of the `content` attribute in the sam
 ## Accessibility Requirements Mapping
 
 <ul class="act-requirements-list">
-  <li><details><summary>2.2.4 Interruptions (Level AAA)</summary>
+  <li><details>
+    <summary><span>2.2.4 Interruptions (Level AAA)</span></summary>
     <ul>
       <li><a href="https://www.w3.org/TR/WCAG21/#interruptions">Learn more about 2.2.4 Interruptions</a></li>
       <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level AAA.</li>
@@ -73,7 +74,8 @@ Not all major web browsers parse the value of the `content` attribute in the sam
       </ul></li>
     </ul>
   </details></li>
-  <li><details><summary>3.2.5 Change on Request (Level AAA)</summary>
+  <li><details>
+    <summary><span>3.2.5 Change on Request (Level AAA)</span></summary>
     <ul>
       <li><a href="https://www.w3.org/TR/WCAG21/#change-on-request">Learn more about 3.2.5 Change on Request</a></li>
       <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level AAA.</li>
@@ -84,7 +86,8 @@ Not all major web browsers parse the value of the `content` attribute in the sam
       </ul></li>
     </ul>
   </details></li>
-  <li><details><summary>G110: Using an instant client-side redirect</summary>
+  <li><details>
+    <summary><span>G110: Using an instant client-side redirect</span></summary>
     <ul>
       <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G110">Learn more about technique G110</a></li>
       <li>Not required for conformance to any W3C accessibility recommendation.</li>
@@ -95,7 +98,8 @@ Not all major web browsers parse the value of the `content` attribute in the sam
       </ul></li>
     </ul>
   </details></li>
-  <li><details><summary>H76: Using meta refresh to create an instant client-side redirect</summary>
+  <li><details>
+    <summary><span>H76: Using meta refresh to create an instant client-side redirect</span></summary>
     <ul>
       <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/html/H76">Learn more about technique H76</a></li>
       <li>Not required for conformance to any W3C accessibility recommendation.</li>

@@ -7,7 +7,7 @@ github:
   repository: w3c/wcag-act-rules
   path: content/video-description-track-f196ce.md
 footer: |
-  <p><strong>Date:</strong> Updated 19 January 2022</p>
+  <p><strong>Date:</strong> Updated 24 January 2022</p>
   <p><strong>Rule Identifier:</strong> f196ce</p>
   <p><strong>Authors:</strong> <a href="https://www.linkedin.com/in/brianbors/">Brian Bors</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>.</p>
@@ -18,7 +18,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that description tracks that come with non-streaming `video` elements are descriptive.
-  last_modified: 19 January 2022
+  last_modified: 24 January 2022
 ---
 
 ## Applicability
@@ -54,7 +54,8 @@ This means that the rule can only provide a pass for these success criteria if a
 ## Accessibility Requirements Mapping
 
 <ul class="act-requirements-list">
-  <li><details><summary>G78: Providing a second, user-selectable, audio track that includes audio descriptions</summary>
+  <li><details>
+    <summary><span>G78: Providing a second, user-selectable, audio track that includes audio descriptions</span></summary>
     <ul>
       <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G78">Learn more about technique G78</a></li>
       <li>Not required for conformance to any W3C accessibility recommendation.</li>
@@ -65,7 +66,8 @@ This means that the rule can only provide a pass for these success criteria if a
       </ul></li>
     </ul>
   </details></li>
-  <li><details><summary>H96: Using the track element to provide audio descriptions</summary>
+  <li><details>
+    <summary><span>H96: Using the track element to provide audio descriptions</span></summary>
     <ul>
       <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/html/H96">Learn more about technique H96</a></li>
       <li>Not required for conformance to any W3C accessibility recommendation.</li>

@@ -7,7 +7,7 @@ github:
   repository: w3c/wcag-act-rules
   path: content/html-page-lang-matches-default-ucwvc8.md
 footer: |
-  <p><strong>Date:</strong> Updated 19 January 2022</p>
+  <p><strong>Date:</strong> Updated 24 January 2022</p>
   <p><strong>Rule Identifier:</strong> ucwvc8</p>
   <p><strong>Authors:</strong> <a href="https://github.com/wilcofiers">Wilco Fiers</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>.</p>
@@ -18,7 +18,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that the primary language subtag of the page language matches the default language of the page
-  last_modified: 19 January 2022
+  last_modified: 24 January 2022
   scs_tested:
     - handle: Language of Page
       num: 3.1.1
@@ -71,7 +71,8 @@ _There are no major accessibility support issues known for this rule._
 ## Accessibility Requirements Mapping
 
 <ul class="act-requirements-list">
-  <li><details><summary>3.1.1 Language of Page (Level A)</summary>
+  <li><details>
+    <summary><span>3.1.1 Language of Page (Level A)</span></summary>
     <ul>
       <li><a href="https://www.w3.org/TR/WCAG21/#language-of-page">Learn more about 3.1.1 Language of Page</a></li>
       <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level A and higher.</li>
@@ -82,7 +83,8 @@ _There are no major accessibility support issues known for this rule._
       </ul></li>
     </ul>
   </details></li>
-  <li><details><summary>H57: Using language attributes on the html element</summary>
+  <li><details>
+    <summary><span>H57: Using language attributes on the html element</span></summary>
     <ul>
       <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/html/H57">Learn more about technique H57</a></li>
       <li>Not required for conformance to any W3C accessibility recommendation.</li>

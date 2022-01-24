@@ -7,7 +7,7 @@ github:
   repository: w3c/wcag-act-rules
   path: content/video-alternative-for-auditory-eac66b.md
 footer: |
-  <p><strong>Date:</strong> Updated 19 January 2022</p>
+  <p><strong>Date:</strong> Updated 24 January 2022</p>
   <p><strong>Rule Identifier:</strong> eac66b</p>
   <p><strong>Authors:</strong> <a href="https://www.linkedin.com/in/brianbors/">Brian Bors</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>.</p>
@@ -18,7 +18,7 @@ rule_meta:
   rule_type: composite
   description: |
     This rule checks that `video` elements have an alternative for information conveyed through audio.
-  last_modified: 19 January 2022
+  last_modified: 24 January 2022
   scs_tested:
     - handle: Captions (Prerecorded)
       num: 1.2.2
@@ -57,7 +57,8 @@ There are no major accessibility support issues known for this rule.
 ## Accessibility Requirements Mapping
 
 <ul class="act-requirements-list">
-  <li><details><summary>1.2.2 Captions (Prerecorded) (Level A)</summary>
+  <li><details>
+    <summary><span>1.2.2 Captions (Prerecorded) (Level A)</span></summary>
     <ul>
       <li><a href="https://www.w3.org/TR/WCAG21/#captions-prerecorded">Learn more about 1.2.2 Captions (Prerecorded)</a></li>
       <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level A and higher.</li>
@@ -68,7 +69,8 @@ There are no major accessibility support issues known for this rule.
       </ul></li>
     </ul>
   </details></li>
-  <li><details><summary>G87: Providing closed captions</summary>
+  <li><details>
+    <summary><span>G87: Providing closed captions</span></summary>
     <ul>
       <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G87">Learn more about technique G87</a></li>
       <li>Not required for conformance to any W3C accessibility recommendation.</li>
@@ -79,7 +81,8 @@ There are no major accessibility support issues known for this rule.
       </ul></li>
     </ul>
   </details></li>
-  <li><details><summary>G93: Providing open (always visible) captions</summary>
+  <li><details>
+    <summary><span>G93: Providing open (always visible) captions</span></summary>
     <ul>
       <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G93">Learn more about technique G93</a></li>
       <li>Not required for conformance to any W3C accessibility recommendation.</li>
@@ -90,7 +93,8 @@ There are no major accessibility support issues known for this rule.
       </ul></li>
     </ul>
   </details></li>
-  <li><details><summary>H95: Using the track element to provide captions</summary>
+  <li><details>
+    <summary><span>H95: Using the track element to provide captions</span></summary>
     <ul>
       <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/html/H95">Learn more about technique H95</a></li>
       <li>Not required for conformance to any W3C accessibility recommendation.</li>

@@ -7,7 +7,7 @@ github:
   repository: w3c/wcag-act-rules
   path: content/auto-play-audio-does-not-exceed-3-seconds-aaa1bf.md
 footer: |
-  <p><strong>Date:</strong> Updated 19 January 2022</p>
+  <p><strong>Date:</strong> Updated 24 January 2022</p>
   <p><strong>Rule Identifier:</strong> aaa1bf</p>
   <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/brynanders">Bryn Anderson</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>.</p>
@@ -18,7 +18,7 @@ rule_meta:
   rule_type: atomic
   description: |
     `audio` or `video` that plays automatically does not output audio for more than 3 seconds.
-  last_modified: 19 January 2022
+  last_modified: 24 January 2022
 ---
 
 ## Applicability
@@ -56,7 +56,8 @@ _There are no major accessibility support issues known for this rule._
 ## Accessibility Requirements Mapping
 
 <ul class="act-requirements-list">
-  <li><details><summary>G60: Playing a sound that turns off automatically within three seconds</summary>
+  <li><details>
+    <summary><span>G60: Playing a sound that turns off automatically within three seconds</span></summary>
     <ul>
       <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G60">Learn more about technique G60</a></li>
       <li>Not required for conformance to any W3C accessibility recommendation.</li>

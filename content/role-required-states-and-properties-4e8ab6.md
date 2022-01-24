@@ -7,7 +7,7 @@ github:
   repository: w3c/wcag-act-rules
   path: content/role-required-states-and-properties-4e8ab6.md
 footer: |
-  <p><strong>Date:</strong> Updated 19 January 2022</p>
+  <p><strong>Date:</strong> Updated 24 January 2022</p>
   <p><strong>Rule Identifier:</strong> 4e8ab6</p>
   <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>.</p>
@@ -18,7 +18,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that elements that have an explicit role also specify all required states and properties.
-  last_modified: 19 January 2022
+  last_modified: 24 January 2022
   scs_tested:
     - handle: Name, Role, Value
       num: 4.1.2
@@ -58,7 +58,8 @@ This rule relies on browsers and assistive technologies to support leaving out [
 ## Accessibility Requirements Mapping
 
 <ul class="act-requirements-list">
-  <li><details><summary>4.1.2 Name, Role, Value (Level A)</summary>
+  <li><details>
+    <summary><span>4.1.2 Name, Role, Value (Level A)</span></summary>
     <ul>
       <li><a href="https://www.w3.org/TR/WCAG21/#name-role-value">Learn more about 4.1.2 Name, Role, Value</a></li>
       <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level A and higher.</li>
@@ -69,7 +70,8 @@ This rule relies on browsers and assistive technologies to support leaving out [
       </ul></li>
     </ul>
   </details></li>
-  <li><details><summary>ARIA5: Using WAI-ARIA state and property attributes to expose the state of a user interface component</summary>
+  <li><details>
+    <summary><span>ARIA5: Using WAI-ARIA state and property attributes to expose the state of a user interface component</span></summary>
     <ul>
       <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA5">Learn more about technique ARIA5</a></li>
       <li>Not required for conformance to any W3C accessibility recommendation.</li>

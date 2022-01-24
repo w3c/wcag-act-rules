@@ -7,7 +7,7 @@ github:
   repository: w3c/wcag-act-rules
   path: content/html-page-non-empty-title-2779a5.md
 footer: |
-  <p><strong>Date:</strong> Updated 19 January 2022</p>
+  <p><strong>Date:</strong> Updated 24 January 2022</p>
   <p><strong>Rule Identifier:</strong> 2779a5</p>
   <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/brynanders">Bryn Anderson</a>, <a href="https://github.com/jkodu">Jey Nandakumar</a>, <a href="https://github.com/skotkjerra">Stein Erik Skotkjerra</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>.</p>
@@ -18,7 +18,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that a non-embedded HTML page has a non-empty title.
-  last_modified: 19 January 2022
+  last_modified: 24 January 2022
   scs_tested:
     - handle: Page Titled
       num: 2.4.2
@@ -63,7 +63,8 @@ This rule is only applicable to non-embedded HTML pages. HTML pages embedded int
 ## Accessibility Requirements Mapping
 
 <ul class="act-requirements-list">
-  <li><details><summary>2.4.2 Page Titled (Level A)</summary>
+  <li><details>
+    <summary><span>2.4.2 Page Titled (Level A)</span></summary>
     <ul>
       <li><a href="https://www.w3.org/TR/WCAG21/#page-titled">Learn more about 2.4.2 Page Titled</a></li>
       <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level A and higher.</li>
@@ -74,7 +75,8 @@ This rule is only applicable to non-embedded HTML pages. HTML pages embedded int
       </ul></li>
     </ul>
   </details></li>
-  <li><details><summary>G88: Providing descriptive titles for Web pages</summary>
+  <li><details>
+    <summary><span>G88: Providing descriptive titles for Web pages</span></summary>
     <ul>
       <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G88">Learn more about technique G88</a></li>
       <li>Not required for conformance to any W3C accessibility recommendation.</li>
@@ -85,7 +87,8 @@ This rule is only applicable to non-embedded HTML pages. HTML pages embedded int
       </ul></li>
     </ul>
   </details></li>
-  <li><details><summary>H25: Providing a title using the title element</summary>
+  <li><details>
+    <summary><span>H25: Providing a title using the title element</span></summary>
     <ul>
       <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/html/H25">Learn more about technique H25</a></li>
       <li>Not required for conformance to any W3C accessibility recommendation.</li>

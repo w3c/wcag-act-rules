@@ -7,7 +7,7 @@ github:
   repository: w3c/wcag-act-rules
   path: content/auto-update-text-efbfc7.md
 footer: |
-  <p><strong>Date:</strong> Updated 19 January 2022</p>
+  <p><strong>Date:</strong> Updated 24 January 2022</p>
   <p><strong>Rule Identifier:</strong> efbfc7</p>
   <p><strong>Authors:</strong> <a href="https://github.com/carlosapaduarte">Carlos Duarte</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>.</p>
@@ -18,7 +18,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that for any text content that regularly changes automatically, there are instruments to pause, stop, or hide it or to control its changing frequency.
-  last_modified: 19 January 2022
+  last_modified: 24 January 2022
   scs_tested:
     - handle: Pause, Stop, Hide
       num: 2.2.2
@@ -73,7 +73,8 @@ The [instruments][instrument] used to pass this rule (if any), must meet all lev
 ## Accessibility Requirements Mapping
 
 <ul class="act-requirements-list">
-  <li><details><summary>2.2.2 Pause, Stop, Hide (Level A)</summary>
+  <li><details>
+    <summary><span>2.2.2 Pause, Stop, Hide (Level A)</span></summary>
     <ul>
       <li><a href="https://www.w3.org/TR/WCAG21/#pause-stop-hide">Learn more about 2.2.2 Pause, Stop, Hide</a></li>
       <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level A and higher.</li>
@@ -84,7 +85,8 @@ The [instruments][instrument] used to pass this rule (if any), must meet all lev
       </ul></li>
     </ul>
   </details></li>
-  <li><details><summary>WCAG Non-Interference</summary>
+  <li><details>
+    <summary><span>WCAG Non-Interference</span></summary>
     <ul>
       <li><a href="https://www.w3.org/TR/WCAG21/#cc5">Learn more about WCAG Non-Interference</a></li>
       <li><strong>Required for conformance</strong> to WCAG 2.1.</li>

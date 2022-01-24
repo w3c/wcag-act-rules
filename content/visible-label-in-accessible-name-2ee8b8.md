@@ -7,7 +7,7 @@ github:
   repository: w3c/wcag-act-rules
   path: content/visible-label-in-accessible-name-2ee8b8.md
 footer: |
-  <p><strong>Date:</strong> Updated 19 January 2022</p>
+  <p><strong>Date:</strong> Updated 24 January 2022</p>
   <p><strong>Rule Identifier:</strong> 2ee8b8</p>
   <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/brynanders">Bryn Anderson</a>, <a href="https://github.com/jkodu">Jey Nandakumar</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>.</p>
@@ -18,7 +18,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that interactive elements labeled through content have their visible label as part of their accessible name.
-  last_modified: 19 January 2022
+  last_modified: 24 January 2022
   scs_tested:
     - handle: Label in Name
       num: 2.5.3
@@ -59,7 +59,8 @@ The understanding document of [2.5.3 Label in Name][understand253] use the term 
 ## Accessibility Requirements Mapping
 
 <ul class="act-requirements-list">
-  <li><details><summary>2.5.3 Label in Name (Level A)</summary>
+  <li><details>
+    <summary><span>2.5.3 Label in Name (Level A)</span></summary>
     <ul>
       <li><a href="https://www.w3.org/TR/WCAG21/#label-in-name">Learn more about 2.5.3 Label in Name</a></li>
       <li><strong>Required for conformance</strong> to WCAG 2.1 on level A and higher.</li>
@@ -70,7 +71,8 @@ The understanding document of [2.5.3 Label in Name][understand253] use the term 
       </ul></li>
     </ul>
   </details></li>
-  <li><details><summary>G208: Including the text of the visible label as part of the accessible name</summary>
+  <li><details>
+    <summary><span>G208: Including the text of the visible label as part of the accessible name</span></summary>
     <ul>
       <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G208">Learn more about technique G208</a></li>
       <li>Not required for conformance to any W3C accessibility recommendation.</li>

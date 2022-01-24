@@ -7,7 +7,7 @@ github:
   repository: w3c/wcag-act-rules
   path: content/device-motion-disabled-c249d5.md
 footer: |
-  <p><strong>Date:</strong> Updated 19 January 2022</p>
+  <p><strong>Date:</strong> Updated 24 January 2022</p>
   <p><strong>Rule Identifier:</strong> c249d5</p>
   <p><strong>Authors:</strong> <a href="https://github.com/carlosapaduarte">Carlos Duarte</a>, <a href="https://github.com/joao-vicente">João Vicente</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>.</p>
@@ -18,7 +18,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that it is possible to disable any changes to the content of the web page resulting from device motion based events.
-  last_modified: 19 January 2022
+  last_modified: 24 January 2022
   scs_tested:
     - handle: Motion Actuation
       num: 2.5.4
@@ -63,7 +63,8 @@ The [instruments][instrument] used to pass this rule (if any), must meet all lev
 ## Accessibility Requirements Mapping
 
 <ul class="act-requirements-list">
-  <li><details><summary>2.5.4 Motion Actuation (Level A)</summary>
+  <li><details>
+    <summary><span>2.5.4 Motion Actuation (Level A)</span></summary>
     <ul>
       <li><a href="https://www.w3.org/TR/WCAG21/#motion-actuation">Learn more about 2.5.4 Motion Actuation</a></li>
       <li><strong>Required for conformance</strong> to WCAG 2.1 on level A and higher.</li>

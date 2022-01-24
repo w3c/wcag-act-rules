@@ -7,7 +7,7 @@ github:
   repository: w3c/wcag-act-rules
   path: content/autocomplete-valid-value-73f2c2.md
 footer: |
-  <p><strong>Date:</strong> Updated 19 January 2022</p>
+  <p><strong>Date:</strong> Updated 24 January 2022</p>
   <p><strong>Rule Identifier:</strong> 73f2c2</p>
   <p><strong>Authors:</strong> <a href="https://github.com/ajanec01">Aron Janecki</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>.</p>
@@ -18,7 +18,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that the HTML `autocomplete` attribute has a correct value.
-  last_modified: 19 January 2022
+  last_modified: 24 January 2022
   scs_tested:
     - handle: Identify Input Purpose
       num: 1.3.5
@@ -78,7 +78,8 @@ The auto-completing feature of the `autocomplete` attribute benefits many users,
 ## Accessibility Requirements Mapping
 
 <ul class="act-requirements-list">
-  <li><details><summary>1.3.5 Identify Input Purpose (Level AA)</summary>
+  <li><details>
+    <summary><span>1.3.5 Identify Input Purpose (Level AA)</span></summary>
     <ul>
       <li><a href="https://www.w3.org/TR/WCAG21/#identify-input-purpose">Learn more about 1.3.5 Identify Input Purpose</a></li>
       <li><strong>Required for conformance</strong> to WCAG 2.1 on level AA and higher.</li>

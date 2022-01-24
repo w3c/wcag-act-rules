@@ -7,7 +7,7 @@ github:
   repository: w3c/wcag-act-rules
   path: content/id-value-unique-3ea0c8.md
 footer: |
-  <p><strong>Date:</strong> Updated 19 January 2022</p>
+  <p><strong>Date:</strong> Updated 24 January 2022</p>
   <p><strong>Rule Identifier:</strong> 3ea0c8</p>
   <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/brynanders">Bryn Anderson</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>.</p>
@@ -18,7 +18,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that all `id` attribute values on a single page are unique.
-  last_modified: 19 January 2022
+  last_modified: 24 January 2022
   scs_tested:
     - handle: Parsing
       num: 4.1.1
@@ -53,7 +53,8 @@ _There are no major accessibility support issues known for this rule._
 ## Accessibility Requirements Mapping
 
 <ul class="act-requirements-list">
-  <li><details><summary>4.1.1 Parsing (Level A)</summary>
+  <li><details>
+    <summary><span>4.1.1 Parsing (Level A)</span></summary>
     <ul>
       <li><a href="https://www.w3.org/TR/WCAG21/#parsing">Learn more about 4.1.1 Parsing</a></li>
       <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level A and higher.</li>
@@ -64,7 +65,8 @@ _There are no major accessibility support issues known for this rule._
       </ul></li>
     </ul>
   </details></li>
-  <li><details><summary>H93: Ensuring that id attributes are unique on a Web page</summary>
+  <li><details>
+    <summary><span>H93: Ensuring that id attributes are unique on a Web page</span></summary>
     <ul>
       <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/html/H93">Learn more about technique H93</a></li>
       <li>Not required for conformance to any W3C accessibility recommendation.</li>

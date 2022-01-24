@@ -7,7 +7,7 @@ github:
   repository: w3c/wcag-act-rules
   path: content/text-contrast-enhanced-09o5cg.md
 footer: |
-  <p><strong>Date:</strong> Updated 19 January 2022</p>
+  <p><strong>Date:</strong> Updated 24 January 2022</p>
   <p><strong>Rule Identifier:</strong> 09o5cg</p>
   <p><strong>Authors:</strong> <a href="https://github.com/Jym77">Jean-Yves Moyen</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>.</p>
@@ -18,7 +18,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that the highest possible contrast of every text character with its background meets the enhanced contrast requirement.
-  last_modified: 19 January 2022
+  last_modified: 24 January 2022
   scs_tested:
     - handle: Contrast (Enhanced)
       num: 1.4.6
@@ -69,7 +69,8 @@ When the text color or background color is not specified in the web page, colors
 ## Accessibility Requirements Mapping
 
 <ul class="act-requirements-list">
-  <li><details><summary>1.4.6 Contrast (Enhanced) (Level AAA)</summary>
+  <li><details>
+    <summary><span>1.4.6 Contrast (Enhanced) (Level AAA)</span></summary>
     <ul>
       <li><a href="https://www.w3.org/TR/WCAG21/#contrast-enhanced">Learn more about 1.4.6 Contrast (Enhanced)</a></li>
       <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level AAA.</li>
@@ -80,7 +81,8 @@ When the text color or background color is not specified in the web page, colors
       </ul></li>
     </ul>
   </details></li>
-  <li><details><summary>G17: Ensuring that a contrast ratio of at least 7:1 exists between text (and images of text) and background behind the text</summary>
+  <li><details>
+    <summary><span>G17: Ensuring that a contrast ratio of at least 7:1 exists between text (and images of text) and background behind the text</span></summary>
     <ul>
       <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G17">Learn more about technique G17</a></li>
       <li>Not required for conformance to any W3C accessibility recommendation.</li>
@@ -91,7 +93,8 @@ When the text color or background color is not specified in the web page, colors
       </ul></li>
     </ul>
   </details></li>
-  <li><details><summary>G18: Ensuring that a contrast ratio of at least 4.5:1 exists between text (and images of text) and background behind the text</summary>
+  <li><details>
+    <summary><span>G18: Ensuring that a contrast ratio of at least 4.5:1 exists between text (and images of text) and background behind the text</span></summary>
     <ul>
       <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G18">Learn more about technique G18</a></li>
       <li>Not required for conformance to any W3C accessibility recommendation.</li>

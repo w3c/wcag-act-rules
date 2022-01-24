@@ -7,7 +7,7 @@ github:
   repository: w3c/wcag-act-rules
   path: content/document-has-instrument-to-non-repeated-content-ye5d6e.md
 footer: |
-  <p><strong>Date:</strong> Updated 19 January 2022</p>
+  <p><strong>Date:</strong> Updated 24 January 2022</p>
   <p><strong>Rule Identifier:</strong> ye5d6e</p>
   <p><strong>Authors:</strong> <a href="https://github.com/Jym77">Jean-Yves Moyen</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>.</p>
@@ -19,7 +19,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that there is an instrument to move focus to non-repeated content in the page
-  last_modified: 19 January 2022
+  last_modified: 24 January 2022
 ---
 
 ## Applicability
@@ -54,7 +54,8 @@ While it is clear that a "skip link" is a valid way to satisfy [Success Criterio
 ## Accessibility Requirements Mapping
 
 <ul class="act-requirements-list">
-  <li><details><summary>G1: Adding a link at the top of each page that goes directly to the main content area</summary>
+  <li><details>
+    <summary><span>G1: Adding a link at the top of each page that goes directly to the main content area</span></summary>
     <ul>
       <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G1">Learn more about technique G1</a></li>
       <li>Not required for conformance to any W3C accessibility recommendation.</li>
@@ -65,7 +66,8 @@ While it is clear that a "skip link" is a valid way to satisfy [Success Criterio
       </ul></li>
     </ul>
   </details></li>
-  <li><details><summary>G123: Adding a link at the beginning of a block of repeated content to go to the end of the block</summary>
+  <li><details>
+    <summary><span>G123: Adding a link at the beginning of a block of repeated content to go to the end of the block</span></summary>
     <ul>
       <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G123">Learn more about technique G123</a></li>
       <li>Not required for conformance to any W3C accessibility recommendation.</li>
@@ -76,7 +78,8 @@ While it is clear that a "skip link" is a valid way to satisfy [Success Criterio
       </ul></li>
     </ul>
   </details></li>
-  <li><details><summary>G124: Adding links at the top of the page to each area of the content</summary>
+  <li><details>
+    <summary><span>G124: Adding links at the top of the page to each area of the content</span></summary>
     <ul>
       <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G124">Learn more about technique G124</a></li>
       <li>Not required for conformance to any W3C accessibility recommendation.</li>

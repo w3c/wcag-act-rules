@@ -7,7 +7,7 @@ github:
   repository: w3c/wcag-act-rules
   path: content/bypass-blocks-cf77f2.md
 footer: |
-  <p><strong>Date:</strong> Updated 19 January 2022</p>
+  <p><strong>Date:</strong> Updated 24 January 2022</p>
   <p><strong>Rule Identifier:</strong> cf77f2</p>
   <p><strong>Authors:</strong> <a href="https://github.com/Jym77">Jean-Yves Moyen</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>.</p>
@@ -19,7 +19,7 @@ rule_meta:
   rule_type: composite
   description: |
     This rule checks that each page has a mechanism to bypass repeated blocks of content.
-  last_modified: 19 January 2022
+  last_modified: 24 January 2022
   scs_tested:
     - handle: Bypass Blocks
       num: 2.4.1
@@ -76,7 +76,8 @@ To avoid using landmarks for the non-repeated content, which would satisfy [Succ
 ## Accessibility Requirements Mapping
 
 <ul class="act-requirements-list">
-  <li><details><summary>2.4.1 Bypass Blocks (Level A)</summary>
+  <li><details>
+    <summary><span>2.4.1 Bypass Blocks (Level A)</span></summary>
     <ul>
       <li><a href="https://www.w3.org/TR/WCAG21/#bypass-blocks">Learn more about 2.4.1 Bypass Blocks</a></li>
       <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level A and higher.</li>
@@ -87,7 +88,8 @@ To avoid using landmarks for the non-repeated content, which would satisfy [Succ
       </ul></li>
     </ul>
   </details></li>
-  <li><details><summary>G1: Adding a link at the top of each page that goes directly to the main content area</summary>
+  <li><details>
+    <summary><span>G1: Adding a link at the top of each page that goes directly to the main content area</span></summary>
     <ul>
       <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G1">Learn more about technique G1</a></li>
       <li>Not required for conformance to any W3C accessibility recommendation.</li>
@@ -98,7 +100,8 @@ To avoid using landmarks for the non-repeated content, which would satisfy [Succ
       </ul></li>
     </ul>
   </details></li>
-  <li><details><summary>G123: Adding a link at the beginning of a block of repeated content to go to the end of the block</summary>
+  <li><details>
+    <summary><span>G123: Adding a link at the beginning of a block of repeated content to go to the end of the block</span></summary>
     <ul>
       <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G123">Learn more about technique G123</a></li>
       <li>Not required for conformance to any W3C accessibility recommendation.</li>
@@ -109,7 +112,8 @@ To avoid using landmarks for the non-repeated content, which would satisfy [Succ
       </ul></li>
     </ul>
   </details></li>
-  <li><details><summary>G124: Adding links at the top of the page to each area of the content</summary>
+  <li><details>
+    <summary><span>G124: Adding links at the top of the page to each area of the content</span></summary>
     <ul>
       <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G124">Learn more about technique G124</a></li>
       <li>Not required for conformance to any W3C accessibility recommendation.</li>
@@ -120,7 +124,8 @@ To avoid using landmarks for the non-repeated content, which would satisfy [Succ
       </ul></li>
     </ul>
   </details></li>
-  <li><details><summary>H69: Providing heading elements at the beginning of each section of content</summary>
+  <li><details>
+    <summary><span>H69: Providing heading elements at the beginning of each section of content</span></summary>
     <ul>
       <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/html/H69">Learn more about technique H69</a></li>
       <li>Not required for conformance to any W3C accessibility recommendation.</li>
@@ -131,7 +136,8 @@ To avoid using landmarks for the non-repeated content, which would satisfy [Succ
       </ul></li>
     </ul>
   </details></li>
-  <li><details><summary>SCR28: Using an expandable and collapsible menu to bypass block of content</summary>
+  <li><details>
+    <summary><span>SCR28: Using an expandable and collapsible menu to bypass block of content</span></summary>
     <ul>
       <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/client-side-script/SCR28">Learn more about technique SCR28</a></li>
       <li>Not required for conformance to any W3C accessibility recommendation.</li>

@@ -7,7 +7,7 @@ github:
   repository: w3c/wcag-act-rules
   path: content/aria-state-or-property-valid-value-6a7281.md
 footer: |
-  <p><strong>Date:</strong> Updated 19 January 2022</p>
+  <p><strong>Date:</strong> Updated 24 January 2022</p>
   <p><strong>Rule Identifier:</strong> 6a7281</p>
   <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>.</p>
@@ -18,7 +18,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that each ARIA state or property has a valid value type.
-  last_modified: 19 January 2022
+  last_modified: 24 January 2022
 ---
 
 ## Applicability
@@ -62,7 +62,8 @@ For value type `URI`, this rule does not require that the destination URI exists
 ## Accessibility Requirements Mapping
 
 <ul class="act-requirements-list">
-  <li><details><summary>ARIA 1.1, 6.3 Values for States and Properties</summary>
+  <li><details>
+    <summary><span>ARIA 1.1, 6.3 Values for States and Properties</span></summary>
     <ul>
       <li><a href="https://www.w3.org/TR/wai-aria-1.1/#state_prop_values">Learn more about ARIA 1.1, 6.3 Values for States and Properties</a></li>
       <li><strong>Required for conformance</strong> to WAI-ARIA 1.1 author requirements.</li>

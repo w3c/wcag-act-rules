@@ -7,7 +7,7 @@ github:
   repository: w3c/wcag-act-rules
   path: content/heading-non-empty-accessible-name-ffd0e9.md
 footer: |
-  <p><strong>Date:</strong> Updated 19 January 2022</p>
+  <p><strong>Date:</strong> Updated 24 January 2022</p>
   <p><strong>Rule Identifier:</strong> ffd0e9</p>
   <p><strong>Authors:</strong> <a href="https://github.com/Jym77">Jean-Yves Moyen</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>.</p>
@@ -18,7 +18,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that each heading has a non-empty accessible name.
-  last_modified: 19 January 2022
+  last_modified: 24 January 2022
   scs_tested:
     - handle: Info and Relationships
       num: 1.3.1
@@ -57,7 +57,8 @@ Completely empty headings (e.g., `<h1></h1>`) seem to be consistently ignored by
 ## Accessibility Requirements Mapping
 
 <ul class="act-requirements-list">
-  <li><details><summary>1.3.1 Info and Relationships (Level A)</summary>
+  <li><details>
+    <summary><span>1.3.1 Info and Relationships (Level A)</span></summary>
     <ul>
       <li><a href="https://www.w3.org/TR/WCAG21/#info-and-relationships">Learn more about 1.3.1 Info and Relationships</a></li>
       <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level A and higher.</li>
@@ -68,7 +69,8 @@ Completely empty headings (e.g., `<h1></h1>`) seem to be consistently ignored by
       </ul></li>
     </ul>
   </details></li>
-  <li><details><summary>H42: Using h1-h6 to identify headings</summary>
+  <li><details>
+    <summary><span>H42: Using h1-h6 to identify headings</span></summary>
     <ul>
       <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/html/H42">Learn more about technique H42</a></li>
       <li>Not required for conformance to any W3C accessibility recommendation.</li>

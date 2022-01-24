@@ -7,7 +7,7 @@ github:
   repository: w3c/wcag-act-rules
   path: content/block-collapsible-3e12e1.md
 footer: |
-  <p><strong>Date:</strong> Updated 19 January 2022</p>
+  <p><strong>Date:</strong> Updated 24 January 2022</p>
   <p><strong>Rule Identifier:</strong> 3e12e1</p>
   <p><strong>Authors:</strong> <a href="https://github.com/Jym77">Jean-Yves Moyen</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>.</p>
@@ -19,7 +19,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that repeated blocks of content are collapsible
-  last_modified: 19 January 2022
+  last_modified: 24 January 2022
 ---
 
 ## Applicability
@@ -54,7 +54,8 @@ Usually the same [instrument][] removes both [visibility][visible] and [inclusio
 ## Accessibility Requirements Mapping
 
 <ul class="act-requirements-list">
-  <li><details><summary>SCR28: Using an expandable and collapsible menu to bypass block of content</summary>
+  <li><details>
+    <summary><span>SCR28: Using an expandable and collapsible menu to bypass block of content</span></summary>
     <ul>
       <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/client-side-script/SCR28">Learn more about technique SCR28</a></li>
       <li>Not required for conformance to any W3C accessibility recommendation.</li>

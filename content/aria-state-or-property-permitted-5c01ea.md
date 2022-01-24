@@ -7,7 +7,7 @@ github:
   repository: w3c/wcag-act-rules
   path: content/aria-state-or-property-permitted-5c01ea.md
 footer: |
-  <p><strong>Date:</strong> Updated 19 January 2022</p>
+  <p><strong>Date:</strong> Updated 24 January 2022</p>
   <p><strong>Rule Identifier:</strong> 5c01ea</p>
   <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/Jym77">Jean-Yves Moyen</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>.</p>
@@ -18,7 +18,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that WAI-ARIA states or properties are allowed for the element they are specified on.
-  last_modified: 19 January 2022
+  last_modified: 24 January 2022
 ---
 
 ## Applicability
@@ -63,7 +63,8 @@ Assessing the value of the attribute is out of scope for this rule.
 ## Accessibility Requirements Mapping
 
 <ul class="act-requirements-list">
-  <li><details><summary>ARIA5: Using WAI-ARIA state and property attributes to expose the state of a user interface component</summary>
+  <li><details>
+    <summary><span>ARIA5: Using WAI-ARIA state and property attributes to expose the state of a user interface component</span></summary>
     <ul>
       <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA5">Learn more about technique ARIA5</a></li>
       <li>Not required for conformance to any W3C accessibility recommendation.</li>
@@ -74,7 +75,8 @@ Assessing the value of the attribute is out of scope for this rule.
       </ul></li>
     </ul>
   </details></li>
-  <li><details><summary>ARIA 1.1, 7.6 State and Property Attribute Processing</summary>
+  <li><details>
+    <summary><span>ARIA 1.1, 7.6 State and Property Attribute Processing</span></summary>
     <ul>
       <li><a href="https://www.w3.org/TR/wai-aria-1.1/#state_property_processing">Learn more about ARIA 1.1, 7.6 State and Property Attribute Processing</a></li>
       <li><strong>Required for conformance</strong> to WAI-ARIA 1.1 author requirements.</li>

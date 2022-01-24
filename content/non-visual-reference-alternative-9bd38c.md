@@ -7,7 +7,7 @@ github:
   repository: w3c/wcag-act-rules
   path: content/non-visual-reference-alternative-9bd38c.md
 footer: |
-  <p><strong>Date:</strong> Updated 19 January 2022</p>
+  <p><strong>Date:</strong> Updated 24 January 2022</p>
   <p><strong>Rule Identifier:</strong> 9bd38c</p>
   <p><strong>Authors:</strong> <a href="https://www.linkedin.com/in/brianbors/">Brian Bors</a>, <a href="https://github.com/danistr">Daniël Strik</a>, <a href="https://github.com/Jym77">Jean-Yves Moyen</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>.</p>
@@ -18,7 +18,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that when content is identified through a visual reference, there are also non-visual references identifying the same content.
-  last_modified: 19 January 2022
+  last_modified: 24 January 2022
   scs_tested:
     - handle: Info and Relationships
       num: 1.3.1
@@ -71,7 +71,8 @@ The identified web content does not have to be positioned on the same web page a
 ## Accessibility Requirements Mapping
 
 <ul class="act-requirements-list">
-  <li><details><summary>1.3.1 Info and Relationships (Level A)</summary>
+  <li><details>
+    <summary><span>1.3.1 Info and Relationships (Level A)</span></summary>
     <ul>
       <li><a href="https://www.w3.org/TR/WCAG21/#info-and-relationships">Learn more about 1.3.1 Info and Relationships</a></li>
       <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level A and higher.</li>
@@ -82,7 +83,8 @@ The identified web content does not have to be positioned on the same web page a
       </ul></li>
     </ul>
   </details></li>
-  <li><details><summary>1.3.3 Sensory Characteristics (Level A)</summary>
+  <li><details>
+    <summary><span>1.3.3 Sensory Characteristics (Level A)</span></summary>
     <ul>
       <li><a href="https://www.w3.org/TR/WCAG21/#sensory-characteristics">Learn more about 1.3.3 Sensory Characteristics</a></li>
       <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level A and higher.</li>
@@ -93,7 +95,8 @@ The identified web content does not have to be positioned on the same web page a
       </ul></li>
     </ul>
   </details></li>
-  <li><details><summary>G96: Providing textual identification of items that otherwise rely only on sensory information to be understood</summary>
+  <li><details>
+    <summary><span>G96: Providing textual identification of items that otherwise rely only on sensory information to be understood</span></summary>
     <ul>
       <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G96">Learn more about technique G96</a></li>
       <li>Not required for conformance to any W3C accessibility recommendation.</li>

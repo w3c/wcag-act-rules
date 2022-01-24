@@ -7,7 +7,7 @@ github:
   repository: w3c/wcag-act-rules
   path: content/iframe-not-focusable-has-no-interactive-content-akn7bn.md
 footer: |
-  <p><strong>Date:</strong> Updated 19 January 2022</p>
+  <p><strong>Date:</strong> Updated 24 January 2022</p>
   <p><strong>Rule Identifier:</strong> akn7bn</p>
   <p><strong>Authors:</strong> <a href="https://www.linkedin.com/in/brianbors/">Brian Bors</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>.</p>
@@ -18,7 +18,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that `iframe` elements with a negative `tabindex` attribute value contain no interactive elements.
-  last_modified: 19 January 2022
+  last_modified: 24 January 2022
   scs_tested:
     - handle: Keyboard
       num: 2.1.1
@@ -53,7 +53,8 @@ By setting the `tabindex` [attribute value][] of an `iframe` element to `-1` or 
 ## Accessibility Requirements Mapping
 
 <ul class="act-requirements-list">
-  <li><details><summary>2.1.1 Keyboard (Level A)</summary>
+  <li><details>
+    <summary><span>2.1.1 Keyboard (Level A)</span></summary>
     <ul>
       <li><a href="https://www.w3.org/TR/WCAG21/#keyboard">Learn more about 2.1.1 Keyboard</a></li>
       <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level A and higher.</li>
@@ -64,7 +65,8 @@ By setting the `tabindex` [attribute value][] of an `iframe` element to `-1` or 
       </ul></li>
     </ul>
   </details></li>
-  <li><details><summary>G202: Ensuring keyboard control for all functionality</summary>
+  <li><details>
+    <summary><span>G202: Ensuring keyboard control for all functionality</span></summary>
     <ul>
       <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G202">Learn more about technique G202</a></li>
       <li>Not required for conformance to any W3C accessibility recommendation.</li>

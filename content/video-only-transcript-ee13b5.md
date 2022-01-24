@@ -7,7 +7,7 @@ github:
   repository: w3c/wcag-act-rules
   path: content/video-only-transcript-ee13b5.md
 footer: |
-  <p><strong>Date:</strong> Updated 19 January 2022</p>
+  <p><strong>Date:</strong> Updated 24 January 2022</p>
   <p><strong>Rule Identifier:</strong> ee13b5</p>
   <p><strong>Authors:</strong> <a href="https://www.linkedin.com/in/brianbors/">Brian Bors</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>.</p>
@@ -18,7 +18,7 @@ rule_meta:
   rule_type: atomic
   description: |
     Non-streaming `video` elements without audio must have all visual information available in a transcript.
-  last_modified: 19 January 2022
+  last_modified: 24 January 2022
 ---
 
 ## Applicability
@@ -50,7 +50,8 @@ A "text transcript" in the context of this rule is defined in WCAG 2 as an [alte
 ## Accessibility Requirements Mapping
 
 <ul class="act-requirements-list">
-  <li><details><summary>G159: Providing an alternative for time-based media for video-only content</summary>
+  <li><details>
+    <summary><span>G159: Providing an alternative for time-based media for video-only content</span></summary>
     <ul>
       <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G159">Learn more about technique G159</a></li>
       <li>Not required for conformance to any W3C accessibility recommendation.</li>

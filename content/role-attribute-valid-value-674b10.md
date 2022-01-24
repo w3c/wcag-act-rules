@@ -7,7 +7,7 @@ github:
   repository: w3c/wcag-act-rules
   path: content/role-attribute-valid-value-674b10.md
 footer: |
-  <p><strong>Date:</strong> Updated 19 January 2022</p>
+  <p><strong>Date:</strong> Updated 24 January 2022</p>
   <p><strong>Rule Identifier:</strong> 674b10</p>
   <p><strong>Authors:</strong> <a href="https://github.com/jkodu">Jey Nandakumar</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>.</p>
@@ -18,7 +18,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that each `role` attribute has a valid value.
-  last_modified: 19 January 2022
+  last_modified: 24 January 2022
   scs_tested:
     - handle: Info and Relationships
       num: 1.3.1
@@ -62,7 +62,8 @@ The `role` attribute is a set of [space separated tokens][]. Having a [whitespac
 ## Accessibility Requirements Mapping
 
 <ul class="act-requirements-list">
-  <li><details><summary>1.3.1 Info and Relationships (Level A)</summary>
+  <li><details>
+    <summary><span>1.3.1 Info and Relationships (Level A)</span></summary>
     <ul>
       <li><a href="https://www.w3.org/TR/WCAG21/#info-and-relationships">Learn more about 1.3.1 Info and Relationships</a></li>
       <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level A and higher.</li>
@@ -73,7 +74,8 @@ The `role` attribute is a set of [space separated tokens][]. Having a [whitespac
       </ul></li>
     </ul>
   </details></li>
-  <li><details><summary>ARIA4: Using a WAI-ARIA role to expose the role of a user interface component</summary>
+  <li><details>
+    <summary><span>ARIA4: Using a WAI-ARIA role to expose the role of a user interface component</span></summary>
     <ul>
       <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA4">Learn more about technique ARIA4</a></li>
       <li>Not required for conformance to any W3C accessibility recommendation.</li>
@@ -84,7 +86,8 @@ The `role` attribute is a set of [space separated tokens][]. Having a [whitespac
       </ul></li>
     </ul>
   </details></li>
-  <li><details><summary>G108: Using markup features to expose the name and role, allow user-settable properties to be directly set, and provide notification of changes</summary>
+  <li><details>
+    <summary><span>G108: Using markup features to expose the name and role, allow user-settable properties to be directly set, and provide notification of changes</span></summary>
     <ul>
       <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G108">Learn more about technique G108</a></li>
       <li>Not required for conformance to any W3C accessibility recommendation.</li>

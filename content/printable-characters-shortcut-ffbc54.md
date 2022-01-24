@@ -7,7 +7,7 @@ github:
   repository: w3c/wcag-act-rules
   path: content/printable-characters-shortcut-ffbc54.md
 footer: |
-  <p><strong>Date:</strong> Updated 19 January 2022</p>
+  <p><strong>Date:</strong> Updated 24 January 2022</p>
   <p><strong>Rule Identifier:</strong> ffbc54</p>
   <p><strong>Authors:</strong> <a href="https://github.com/carlosapaduarte">Carlos Duarte</a>, <a href="https://github.com/joao-vicente">João Vicente</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>.</p>
@@ -18,7 +18,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that if keyboard shortcuts are implemented using only printable characters, then there is a mechanism to disable the shortcut, or to remap the shortcut to use one or more non-printable character keys, or the shortcut for a user interface component is only available when that component has focus.
-  last_modified: 19 January 2022
+  last_modified: 24 January 2022
   scs_tested:
     - handle: Character Key Shortcuts
       num: 2.1.4
@@ -65,7 +65,8 @@ The "Turn off" and "Remap" requirements from [Success Criterion 2.1.4][sc2.1.4] 
 ## Accessibility Requirements Mapping
 
 <ul class="act-requirements-list">
-  <li><details><summary>2.1.4 Character Key Shortcuts (Level A)</summary>
+  <li><details>
+    <summary><span>2.1.4 Character Key Shortcuts (Level A)</span></summary>
     <ul>
       <li><a href="https://www.w3.org/TR/WCAG21/#character-key-shortcuts">Learn more about 2.1.4 Character Key Shortcuts</a></li>
       <li><strong>Required for conformance</strong> to WCAG 2.1 on level A and higher.</li>
