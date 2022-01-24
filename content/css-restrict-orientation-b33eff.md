@@ -7,9 +7,10 @@ github:
   repository: w3c/wcag-act-rules
   path: content/css-restrict-orientation-b33eff.md
 footer: |
-  <p><strong>Date:</strong> Updated 22 October 2021</p>
+  <p><strong>Date:</strong> Updated 24 January 2022</p>
+  <p><strong>Rule Identifier:</strong> b33eff</p>
   <p><strong>Authors:</strong> <a href="https://github.com/audreymaniez">Audrey Maniez</a>, <a href="https://github.com/jkodu">Jey Nandakumar</a>.</p>
-  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>.</p>
+  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>.</p>
 proposed: true
 rule_meta:
   id: b33eff
@@ -17,35 +18,12 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that page content is not restricted to either `landscape` or `portrait` orientation using CSS transform property.
-  accessibility_requirements:
-    'wcag21:1.3.4':
-      forConformance: true
-      failed: not satisfied
-      passed: further testing needed
-      inapplicable: further testing needed
-  input_aspects:
-    - handle: DOM Tree
-      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
-    - handle: CSS Styling
-      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
-  last_modified: 22 October 2021
+  last_modified: 24 January 2022
   scs_tested:
     - handle: Orientation
       num: 1.3.4
       level: AA
 ---
-
-{::options toc_levels="2" /}
-{::nomarkdown}
-{% include toc.html type="start" title="Page Contents" %}
-{:/}
-
-- Table of Content placeholder
-{:toc}
-
-{::nomarkdown}
-{% include toc.html type="end" %}
-{:/}
 
 ## Applicability
 
@@ -80,6 +58,8 @@ _There are no major accessibility support issues known for this rule._
 
 ## Background
 
+### Bibliography
+
 - [Understanding Success Criterion 1.3.4: Orientation](https://www.w3.org/WAI/WCAG21/Understanding/orientation.html)
 - [CSS Transforms Module Level 1](https://www.w3.org/TR/css-transforms/#funcdef-transform-matrix)
 - [CSS Transforms Module Level 2](https://drafts.csswg.org/css-transforms-2)
@@ -87,6 +67,30 @@ _There are no major accessibility support issues known for this rule._
 - [Managing screen orientation](https://developer.mozilla.org/en-US/docs/Web/API/CSS_Object_Model/Managing_screen_orientation)
 - [Orientation](https://www.w3.org/TR/css3-mediaqueries/#orientation)
 - [The Transform Rendering Model](https://drafts.csswg.org/css-transforms/#transform-rendering)
+
+## Accessibility Requirements Mapping
+
+<ul class="act-requirements-list">
+  <li><details>
+    <summary><span>1.3.4 Orientation (Level AA)</span></summary>
+    <ul>
+      <li><a href="https://www.w3.org/TR/WCAG21/#orientation">Learn more about 1.3.4 Orientation</a></li>
+      <li><strong>Required for conformance</strong> to WCAG 2.1 on level AA and higher.</li>
+      <li>Outcome mapping: <ul>
+        <li>Any <code>failed</code> outcomes: success criterion is not satisfied</li>
+        <li>All <code>passed</code> outcomes: success criterion needs further testing</li>
+        <li>An <code>inapplicable</code> outcome: success criterion needs further testing</li>
+      </ul></li>
+    </ul>
+  </details></li>
+</ul>
+
+## Input Aspects
+
+The following aspects are required in using this rule.
+
+- [DOM Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom)
+- [CSS Styling](https://www.w3.org/TR/act-rules-aspects/#input-aspects-css)
 
 ## Test Cases
 

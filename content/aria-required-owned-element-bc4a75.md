@@ -7,9 +7,10 @@ github:
   repository: w3c/wcag-act-rules
   path: content/aria-required-owned-element-bc4a75.md
 footer: |
-  <p><strong>Date:</strong> Updated 22 October 2021</p>
+  <p><strong>Date:</strong> Updated 24 January 2022</p>
+  <p><strong>Rule Identifier:</strong> bc4a75</p>
   <p><strong>Authors:</strong> <a href="https://github.com/wilcofiers">Wilco Fiers</a>. <em>Previous Authors:</em> <a href="https://github.com/audreymaniez">Audrey Maniez</a>, <a href="https://github.com/jkodu">Jey Nandakumar</a>.</p>
-  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>.</p>
+  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>.</p>
 proposed: true
 rule_meta:
   id: bc4a75
@@ -17,37 +18,12 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that an element with an explicit semantic role has at least one of its required owned elements.
-  accessibility_requirements:
-    'wcag20:1.3.1':
-      forConformance: true
-      failed: not satisfied
-      passed: further testing needed
-      inapplicable: further testing needed
-  input_aspects:
-    - handle: Accessibility tree
-      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-accessibility
-    - handle: CSS styling
-      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
-    - handle: DOM Tree
-      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
-  last_modified: 22 October 2021
+  last_modified: 24 January 2022
   scs_tested:
     - handle: Info and Relationships
       num: 1.3.1
       level: A
 ---
-
-{::options toc_levels="2" /}
-{::nomarkdown}
-{% include toc.html type="start" title="Page Contents" %}
-{:/}
-
-- Table of Content placeholder
-{:toc}
-
-{::nomarkdown}
-{% include toc.html type="end" %}
-{:/}
 
 ## Applicability
 
@@ -83,9 +59,36 @@ The combobox role is excluded from this rule, because the design pattern for it 
 
 **Note:** [Subclass roles](https://www.w3.org/TR/wai-aria-1.1/#subclassroles) of [required owned elements][] are not automatically included as possible [required owned elements][]. For example, the `treeitem` role is not a [required owned elements][] for [`list`](https://www.w3.org/TR/wai-aria-1.1/#list), even though `treeitem` is a [subclass role](https://www.w3.org/TR/wai-aria-1.1/#subclassroles) of `listitem`.
 
+### Bibliography
+
 - [Understanding Success Criterion 1.3.1: Info and Relationships](https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships.html)
 - [Required Owned Element](https://www.w3.org/TR/wai-aria-1.1/#mustContain)
 - [Owned Element](https://www.w3.org/TR/wai-aria-1.1/#dfn-owned-element)
+
+## Accessibility Requirements Mapping
+
+<ul class="act-requirements-list">
+  <li><details>
+    <summary><span>1.3.1 Info and Relationships (Level A)</span></summary>
+    <ul>
+      <li><a href="https://www.w3.org/TR/WCAG21/#info-and-relationships">Learn more about 1.3.1 Info and Relationships</a></li>
+      <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level A and higher.</li>
+      <li>Outcome mapping: <ul>
+        <li>Any <code>failed</code> outcomes: success criterion is not satisfied</li>
+        <li>All <code>passed</code> outcomes: success criterion needs further testing</li>
+        <li>An <code>inapplicable</code> outcome: success criterion needs further testing</li>
+      </ul></li>
+    </ul>
+  </details></li>
+</ul>
+
+## Input Aspects
+
+The following aspects are required in using this rule.
+
+- [Accessibility tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-accessibility)
+- [CSS styling](https://www.w3.org/TR/act-rules-aspects/#input-aspects-css)
+- [DOM Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom)
 
 ## Test Cases
 
@@ -163,6 +166,22 @@ This element with the `list` role only owns elements with the `listitem` role, o
 </div>
 ```
 
+#### Passed Example 7
+
+This element with the `menu` role only owns an element with a `group` role. The `group` in turn owns an element with the `menuitem` role, and an element with the `group` role, in which each element has the `menuitem` role. ARIA `group` roles are allowed to own other elements with a `group` role.
+
+```html
+<div role="menu">
+	<div role="group">
+		<span role="menuitem">Item 1</span>
+		<div role="group">
+			<span role="menuitem">Item 2</span>
+			<span role="menuitem">Item 3</span>
+		</div>
+	</div>
+</div>
+```
+
 ### Failed
 
 #### Failed Example 1
@@ -228,6 +247,22 @@ This element with the `list` role owns an element with the `group` role, but the
 	<div role="group">
 		<span role="tab">Item 1</span>
 		<span role="tab">Item 2</span>
+	</div>
+</div>
+```
+
+#### Failed Example 7
+
+This element with the `menu` role only owns an element with a `group` role. The `group` in turn owns an element with the `menuitem` role, and an element with the `group` role, in which each element has the `treeitem` role. ARIA `group` roles are allowed to own other elements with a `group` role, but those nested `group` nodes must still meet the requirements.
+
+```html
+<div role="menu">
+	<div role="group">
+		<span role="menuitem">Item 1</span>
+		<div role="group">
+			<span role="treeitem">Item 1</span>
+			<span role="treeitem">Item 2</span>
+		</div>
 	</div>
 </div>
 ```

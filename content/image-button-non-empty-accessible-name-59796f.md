@@ -1,25 +1,28 @@
 ---
-title: "Button has non-empty accessible name"
-permalink: /standards-guidelines/act/rules/button-non-empty-accessible-name-97a4e1/
-ref: /standards-guidelines/act/rules/button-non-empty-accessible-name-97a4e1/
+title: "Image button has non-empty accessible name"
+permalink: /standards-guidelines/act/rules/image-button-non-empty-accessible-name-59796f/
+ref: /standards-guidelines/act/rules/image-button-non-empty-accessible-name-59796f/
 lang: en
 github:
   repository: w3c/wcag-act-rules
-  path: content/button-non-empty-accessible-name-97a4e1.md
+  path: content/image-button-non-empty-accessible-name-59796f.md
 footer: |
   <p><strong>Date:</strong> Updated 24 January 2022</p>
-  <p><strong>Rule Identifier:</strong> 97a4e1</p>
-  <p><strong>Authors:</strong> <a href="https://github.com/skotkjerra">Stein Erik Skotkjerra</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>.</p>
+  <p><strong>Rule Identifier:</strong> 59796f</p>
+  <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>.</p>
 proposed: false
 rule_meta:
-  id: 97a4e1
-  name: "Button has non-empty accessible name"
+  id: 59796f
+  name: "Image button has non-empty accessible name"
   rule_type: atomic
   description: |
-    This rule checks that each `button` element has a non-empty accessible name.
+    This rule checks that each image button element has a non-empty accessible name.
   last_modified: 24 January 2022
   scs_tested:
+    - handle: Non-text Content
+      num: 1.1.1
+      level: A
     - handle: Name, Role, Value
       num: 4.1.2
       level: A
@@ -27,38 +30,49 @@ rule_meta:
 
 ## Applicability
 
-This rule applies to elements that are [included in the accessibility tree][] and have a [semantic role](#semantic-role) of `button`, except for `input` elements with a `type` [attribute value] of `image`.
+This rule applies to any `input` element with a `type` [attribute value][] of `image`, and that is [included in the accessibility tree][].
 
 ## Expectation
 
-Each target element has an [accessible name][] that is not empty (`""`).
+Each target element has an [accessible name][] that is neither empty (`""`), nor the default name for this element (localized version of "Submit Query").
 
 ## Assumptions
 
-- The rule assumes that all buttons are [user interface components as defined by WCAG 2](https://www.w3.org/TR/WCAG21/#dfn-user-interface-components).
+- This rule assumes that all image buttons are [user interface components as defined by WCAG 2](https://www.w3.org/TR/WCAG21/#dfn-user-interface-components).
+- This rule assumes that the default name for image buttons ("Submit Query"), as defined by the [HTML Accessibility API Mapping][html aam image button], is never descriptive.
 
 ## Accessibility Support
 
-- Implementation of [Presentational Roles Conflict Resolution][] varies from one browser or assistive technology to another. Depending on this, some elements can have a [semantic role][] of `button` and fail this rule with some technology but users of other technologies would not experience any accessibility issue.
-
-- Some elements have a role of `button` and a default accessible name defined by the [HTML Accessibility API Mapping][html aam input button], for example `input` elements whose `type` [attribute value][] is either `submit` or `reset`. This rule considers that these default names can be descriptive and therefore does not fail them.
+There is a known combination of a popular browser and assistive technology that does not by default support `title` as an [accessible name][].
 
 ## Background
 
 ### Related rules
 
-- [Image button has non-empty accessible name](https://act-rules.github.io/rules/59796f)
+- [Button has non-empty accessible name](https://act-rules.github.io/rules/97a4e1)
 
 ### Bibliography
 
-- [HTML Accessibility API Mappings 1.0 (working draft), 5.2 `input type="button"`, `input type="submit"` and `input type="reset"`](https://www.w3.org/TR/html-aam/#input-type-button-input-type-submit-and-input-type-reset)
-- [Understanding Success Criterion 4.1.2: Name, Role, Value](https://www.w3.org/WAI/WCAG21/Understanding/name-role-value)
-- [ARIA14: Using aria-label to provide an invisible label where a visible label cannot be used](https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA14)
-- [ARIA16: Using aria-labelledby to provide a name for user interface controls](https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA16)
+- [Understanding Success Criterion 1.1.1: Non-text Content](https://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html)
+- [Understanding Success Criterion 4.1.2: Name, Role, Value](https://www.w3.org/WAI/WCAG21/Understanding/name-role-value.html)
+- [WCAG Technique H36: Using alt attributes on images used as submit buttons](https://www.w3.org/WAI/WCAG21/Techniques/html/H36)
+- [HTML Accessibility API Mappings for computing the accessible name of image buttons](https://www.w3.org/TR/html-aam-1.0/#input-type-image)
 
 ## Accessibility Requirements Mapping
 
 <ul class="act-requirements-list">
+  <li><details>
+    <summary><span>1.1.1 Non-text Content (Level A)</span></summary>
+    <ul>
+      <li><a href="https://www.w3.org/TR/WCAG21/#non-text-content">Learn more about 1.1.1 Non-text Content</a></li>
+      <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level A and higher.</li>
+      <li>Outcome mapping: <ul>
+        <li>Any <code>failed</code> outcomes: success criterion is not satisfied</li>
+        <li>All <code>passed</code> outcomes: success criterion needs further testing</li>
+        <li>An <code>inapplicable</code> outcome: success criterion needs further testing</li>
+      </ul></li>
+    </ul>
+  </details></li>
   <li><details>
     <summary><span>4.1.2 Name, Role, Value (Level A)</span></summary>
     <ul>
@@ -71,13 +85,36 @@ Each target element has an [accessible name][] that is not empty (`""`).
       </ul></li>
     </ul>
   </details></li>
+  <li><details>
+    <summary><span>G94: Providing short text alternative for non-text content that serves the same purpose and presents the same information as the non-text content</span></summary>
+    <ul>
+      <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G94">Learn more about technique G94</a></li>
+      <li>Not required for conformance to any W3C accessibility recommendation.</li>
+      <li>Outcome mapping: <ul>
+        <li>Any <code>failed</code> outcomes: technique is not satisfied</li>
+        <li>All <code>passed</code> outcomes: technique needs further testing</li>
+        <li>An <code>inapplicable</code> outcome: technique needs further testing</li>
+      </ul></li>
+    </ul>
+  </details></li>
+  <li><details>
+    <summary><span>G95: Providing short text alternatives that provide a brief description of the non-text content</span></summary>
+    <ul>
+      <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G95">Learn more about technique G95</a></li>
+      <li>Not required for conformance to any W3C accessibility recommendation.</li>
+      <li>Outcome mapping: <ul>
+        <li>Any <code>failed</code> outcomes: technique is not satisfied</li>
+        <li>All <code>passed</code> outcomes: technique needs further testing</li>
+        <li>An <code>inapplicable</code> outcome: technique needs further testing</li>
+      </ul></li>
+    </ul>
+  </details></li>
 </ul>
 
 ## Input Aspects
 
 The following aspects are required in using this rule.
 
-- [Accessibility Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-accessibility)
 - [DOM Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom)
 - [CSS Styling](https://www.w3.org/TR/act-rules-aspects/#input-aspects-css)
 
@@ -87,164 +124,105 @@ The following aspects are required in using this rule.
 
 #### Passed Example 1
 
-This `button` element has an [accessible name][] because of its text content.
+The image button has an [accessible name][] through the `alt` attribute.
 
 ```html
-<button>My button</button>
+<input type="image" src="/test-assets/shared/search-icon.svg" alt="Search" />
 ```
 
 #### Passed Example 2
 
-This `input` element has an [accessible name][] because of its `value` attribute.
+The image button has an [accessible name][] through the `aria-label` attribute.
 
 ```html
-<input type="submit" value="Submit" />
+<input type="image" src="/test-assets/shared/search-icon.svg" aria-label="Search" />
 ```
 
 #### Passed Example 3
 
-This `button` element has an [accessible name][] because of its `aria-label` attribute.
+The image button has an [accessible name][] through the `title` attribute.
+
+**note**: The `title` attribute may not always be [accessibility supported](#accessibility-support).
 
 ```html
-<button aria-label="My button"></button>
+<input type="image" src="/test-assets/shared/search-icon.svg" title="Search" />
 ```
 
 #### Passed Example 4
 
-This element with a `button` role has an [accessible name][] because of its `aria-label` attribute.
+The image button has an [accessible name][] through the `aria-labelledby` attribute.
 
 ```html
-<span role="button" aria-label="My button"></span>
-```
-
-#### Passed Example 5
-
-This `button` element with the `disabled` attribute has an [accessible name][] because of its text content.
-
-```html
-<button disabled>Delete</button>
-```
-
-#### Passed Example 6
-
-This off screen `button` element has an [accessible name][] because of its text content.
-
-```html
-<html>
-	<style>
-		.notInPage {
-			position: absolute;
-			left: -9999px;
-			top: -9999px;
-		}
-	</style>
-	<body>
-		<button class="notInPage">Save</button>
-	</body>
-</html>
-```
-
-#### Passed Example 7
-
-This `input` element has an [accessible name][] because of the default accessible name for an `input` element with a `type` attribute set to `reset`.
-
-```html
-<input type="reset" />
+<input type="image" src="/test-assets/shared/search-icon.svg" aria-labelledby="id1" />
+<div id="id1">Search</div>
 ```
 
 ### Failed
 
 #### Failed Example 1
 
-This `button` element has no [accessible name][] because it has no content or attribute that can provide it.
+The image button element has an [accessible name][] equal to the default "Submit Query". The `name` attribute can not be used to provide an [accessible name][].
 
 ```html
-<button></button>
+<input type="image" name="search" src="/test-assets/shared/search-icon.svg" />
 ```
 
 #### Failed Example 2
 
-This `button` element has no [accessible name][]. The `value` attribute does not provide an [accessible name][] for `button` elements, only when an `input` element's [state of the `type` attribute](https://html.spec.whatwg.org/multipage/input.html#states-of-the-type-attribute) is `button`, `submit` or `reset`.
+The image button has an empty `alt` attribute, and no other attributes that can give it an [accessible name][], hence its name is the default "Submit Query".
 
 ```html
-<button type="button" value="read more"></button>
+<input type="image" src="/test-assets/shared/search-icon.svg" alt="" />
 ```
 
 #### Failed Example 3
 
-This element with the `button` role has no [accessible name][] because it has no content or attribute that can provide it.
+The image button has an `aria-labelledby` attribute, but the referenced element does not exist. This gives the button the default [accessible name][] of "Submit Query".
 
 ```html
-<span role="button"></span>
-```
-
-#### Failed Example 4
-
-This off screen `button` element has no [accessible name][] because it has no content or attribute that can provide it.
-
-```html
-<html>
-	<style>
-		.notInPage {
-			position: absolute;
-			left: -9999px;
-			top: -9999px;
-		}
-	</style>
-	<body>
-		<button class="notInPage" value="delete"></button>
-	</body>
-</html>
-```
-
-#### Failed Example 5
-
-This `button` element has an [explicit role][] of `none`. However, it is [focusable][] (by default). Thus it has a [semantic role][] of `button` due to [Presentational Roles Conflict Resolution][]. It has an empty [accessible name][].
-
-```html
-<button role="none"></button>
+<input type="image" src="/test-assets/shared/search-icon.svg" aria-labelledby="non-existing" />
 ```
 
 ### Inapplicable
 
 #### Inapplicable Example 1
 
-This `input` element has a `type` attribute set to `image`. These images are tested in a separate rule which also tests [success criterion 1.1.1 Non-text Content](https://www.w3.org/TR/WCAG21/#non-text-content).
+The `button` element is not an image button. [Success Criterion 1.1.1 Non-text Content](https://www.w3.org/TR/WCAG21/#non-text-content) can not fail text buttons. Only non-text content is applicable.
 
 ```html
-<input type="image" value="download" alt="Download" />
+<button>My button</button>
 ```
 
 #### Inapplicable Example 2
 
-This `button` element does not need an [accessible name][] because it is not included in the accessibility tree.
+The `input` element with the `type` [attribute value][] of `button` is not an image button. [Success Criterion 1.1.1 Non-text Content](https://www.w3.org/TR/WCAG21/#non-text-content) can not fail text buttons. Only non-text content is applicable.
 
 ```html
-<button style="display: none;"></button>
+<input type="button" value="My button" />
 ```
 
 #### Inapplicable Example 3
 
-This `button` element has a `link` role. Links are tested in a separate rule which also tests [success criterion 2.4.4 Link Purpose (In Context)](https://www.w3.org/TR/WCAG21/#link-purpose-in-context).
+The `button` element is tested separately from the `img` element. [Success Criterion 4.1.2 Name, Role, Value](https://www.w3.org/TR/WCAG21/#name-role-value) is applied to the button, whereas the image is tested under [Success Criterion 1.1.1 Non-text Content](https://www.w3.org/TR/WCAG21/#non-text-content)
 
 ```html
-<button role="link">take me somewhere</button>
+<button><img src="/test-assets/shared/search-icon.svg" alt="Search" /></button>
 ```
 
 #### Inapplicable Example 4
 
-There is no element with a semantic role of `button`.
+The `img` element is not a user interface component, and so is not tested for [Success Criterion 4.1.2 Name, Role, Value](https://www.w3.org/TR/WCAG21/#name-role-value).
 
 ```html
-<div>Press Here</div>
+<img src="/test-assets/shared/w3c-logo.png" alt="W3C logo" />
 ```
 
 #### Inapplicable Example 5
 
-This `button` element has an [explicit role][] of `none`; it is not [focusable][] because it is `disabled`. Thus it has a [semantic role][] of `none`.
+The image button is ignored by assistive technologies because it is not [included in the accessibility tree][]. These are not required to have an accessible name. If at some future state of the page the element gets [included in the accessibility tree][], an [accessible name][] will be necessary.
 
 ```html
-<button role="none" disabled></button>
+<input type="image" src="/test-assets/shared/search-icon.svg" style="display: none;" />
 ```
 
 ## Glossary
@@ -280,23 +258,9 @@ This list is not exhaustive, and only serves as an illustration for some of the 
 
 The _attribute value_ of an [IDL attribute][] is the value returned on getting it. Note that when an [IDL attribute][] [reflects][reflect] a content attribute, they have the same attribute value.
 
-### Explicit Semantic Role {#explicit-role}
-
-The _explicit semantic role_ of an element is determined by its [role attribute][] (if any).
-
-The [role attribute][] takes a list of tokens. The explicit semantic role is the first valid role in this list. The valid roles are all non-abstract roles from [WAI-ARIA Specifications][]. If the element has no [role attribute][], or if it has one with no valid role, then this element has no explicit semantic role.
-
-Other roles may be added as they become available. Not all roles will be supported in all assistive technologies. Testers are encouraged to adjust which roles are allowed according to the [accessibility support base line][]. For the purposes of executing test cases in all rules, it should be assumed that all roles are supported by assistive technologies so that none of the roles fail due to lack of accessibility support.
-
 ### Focusable {#focusable}
 
 Elements that can become the target of keyboard input as described in the [HTML](https://www.w3.org/TR/html) specification of [focusable](https://html.spec.whatwg.org/#focusable-area) and [can be focused](https://html.spec.whatwg.org/#specially-focusable).
-
-### Implicit Semantic Role {#implicit-role}
-
-The _implicit semantic role_ of an element is a pre-defined value given by the host language which depends on the element and its ancestors.
-
-Implicit roles for HTML and SVG, are documented in the [HTML accessibility API mappings (working draft)](https://www.w3.org/TR/html-aam/#html-element-role-mappings) and the [SVG accessibility API mappings (working draft)](https://www.w3.org/TR/svg-aam/#mapping_role_table).
 
 ### Included in the accessibility tree {#included-in-the-accessibility-tree}
 
@@ -307,17 +271,6 @@ The general rules for when elements are included in the accessibility tree are d
 For more details, see [examples of included in the accessibility tree][].
 
 [Programmatically hidden](#programmatically-hidden) elements are removed from the accessibility tree. However, some browsers will leave [focusable](#focusable) elements with an `aria-hidden` attribute set to `true` in the accessibility tree. Because they are hidden, these elements are considered **not** included in the accessibility tree. This may cause confusion for users of assistive technologies because they may still be able to interact with these focusable elements using sequential keyboard navigation, even though the element should not be included in the accessibility tree.
-
-### Marked as decorative {#marked-as-decorative}
-
-An element is _marked as decorative_ if one or more of the following conditions is true:
-
-- it has an [explicit role][] of `none` or `presentation`; or
-- it is an `img` element with an `alt` attribute whose value is the empty string (`alt=""`), and with no [explicit role][].
-
-Elements are marked as decorative as a way to convey the intention of the author that they are [pure decoration][]. It is different from the element actually being [pure decoration][] as authors may make mistakes. It is different from the element being effectively ignored by assistive technologies as rules such as [presentational roles conflict resolution][] may overwrite this intention.
-
-Elements can also be ignored by assistive technologies if they are [programmatically hidden][]. This is different from marking the element as decorative and does not convey the same intention. Notably, being [programmatically hidden][] may change as users interact with the page (showing and hiding elements) while being marked as decorative should stay the same through all states of the page.
 
 ### Outcome {#outcome}
 
@@ -341,35 +294,14 @@ An HTML element is _programmatically hidden_ if either it has a [computed][] CSS
 
 **Note**: Contrarily to the other conditions, the `visibility` CSS property may be reverted by descendants.
 
-### Semantic Role {#semantic-role}
-
-The _semantic role_ of an element is determined by the first of these cases that applies:
-
-1. **Conflict** If the element is [marked as decorative][], but the element is [included in the accessibility tree][]; or would be [included in the accessibility tree][] when it is not [programmatically hidden][], then its _semantic role_ is its **[implicit role][]**.
-1. **Explicit** If the element has an [explicit role][], then its _semantic role_ is its [explicit role][].
-1. **Implicit** The _semantic role_ of the element is its [implicit role][].
-
-This definition can be used in expressions such as "semantic `button`" meaning any element with a semantic role of `button`.
-
-### WAI-ARIA specifications {#wai-aria-specifications}
-
-The _WAI ARIA Specifications_ group both the WAI ARIA W3C Recommendation and ARIA modules, namely:
-
-- [Accessible Rich Internet Applications (WAI-ARIA) 1.1](https://www.w3.org/TR/wai-aria-1.1/)
-- [WAI-ARIA Graphics Module 1.0](https://www.w3.org/TR/graphics-aria-1.0/)
-- [Digital Publishing WAI-ARIA Module 1.0](https://www.w3.org/TR/dpub-aria-1.0/)
-
-**Note:** depending on the type of content being evaluated, part of the specifications might be irrelevant and should be ignored.
-
-{% include_relative implementations/97a4e1.md %}
+{% include_relative implementations/59796f.md %}
 
 ## Changelog
 
 This is the first version of this ACT rule.
 
-[accessibility support base line]: https://www.w3.org/TR/WCAG-EM/#step1c 'Definition of accessibility support base line'
 [accessible name and description computation]: https://www.w3.org/TR/accname 'Accessible Name and Description Computation'
-[accessible name]: #accessible-name 'Definition of accessible name'
+[accessible name]: #accessible-name 'Definition of Accessible Name'
 [attribute value]: #attribute-value 'Definition of Attribute Value'
 [boolean attributes]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attributes 'HTML Specification of Boolean Attribute'
 [comma separated]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#comma-separated-tokens 'HTML Specification of Comma Separated Tokens'
@@ -377,23 +309,13 @@ This is the first version of this ACT rule.
 [enumerated attributes]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#enumerated-attribute 'HTML Specification of Enumerated Attribute'
 [examples of accessible name]: https://act-rules.github.io/pages/examples/accessible-name/
 [examples of included in the accessibility tree]: https://act-rules.github.io/pages/examples/included-in-the-accessibility-tree/
-[explicit role]: #explicit-role 'Definition of explicit role'
 [flat tree]: https://drafts.csswg.org/css-scoping/#flat-tree 'Definition of flat tree'
-[focusable]: #focusable 'Definition of focusable'
-[html aam input button]: https://www.w3.org/TR/html-aam-1.0/#input-type-button-input-type-submit-and-input-type-reset 'HTML Accessibility API Mapping, reset and submit buttons'
+[html aam image button]: https://www.w3.org/TR/html-aam-1.0/#input-type-image 'HTML Accessibility API Mapping, image button'
 [html aam]: https://www.w3.org/TR/html-aam-1.0/#html-attribute-state-and-property-mappings 'Specification of HTML attributes value mapping to ARIA states and properties'
 [idl attribute]: https://heycam.github.io/webidl/#idl-attributes "Definition of Web IDL Attribute (Editor's Draft)"
-[implicit role]: #implicit-role 'Definition of Implicit Role'
-[included in the accessibility tree]: #included-in-the-accessibility-tree 'Definition of included in the accessibility tree'
+[included in the accessibility tree]: #included-in-the-accessibility-tree 'Definition of Included in the Accessibility Tree'
 [inclusive ancestors]: https://dom.spec.whatwg.org/#concept-tree-inclusive-ancestor 'DOM Definition of Inclusive Ancestor'
-[marked as decorative]: #marked-as-decorative 'Definition of Marked as Decorative'
 [numbers]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#numbers 'HTML Specification of Number Parsing'
-[presentational roles conflict resolution]: https://www.w3.org/TR/wai-aria-1.1/#conflict_resolution_presentation_none 'Presentational Roles Conflict Resolution'
-[programmatically hidden]: #programmatically-hidden 'Definition of Programmatically Hidden'
-[pure decoration]: https://www.w3.org/TR/WCAG21/#dfn-pure-decoration 'WCAG definition of Pure Decoration'
 [reflect]: https://html.spec.whatwg.org/multipage/common-dom-interfaces.html#reflecting-content-attributes-in-idl-attributes 'HTML specification of Reflecting Content Attributes in IDL Attributes'
-[role attribute]: https://www.w3.org/TR/role-attribute/ 'Specification of the role attribute'
-[semantic role]: #semantic-role 'Definition of Semantic Role'
 [space separated]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#space-separated-tokens 'HTML Specification of Space Separated Tokens'
 [wai-aria specification]: https://www.w3.org/TR/wai-aria-1.1/#propcharacteristic_value 'WAI-ARIA Specification of States and Properties Value'
-[wai-aria specifications]: #wai-aria-specifications 'Definition of WAI-ARIA specifications'

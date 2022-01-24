@@ -7,9 +7,10 @@ github:
   repository: w3c/wcag-act-rules
   path: content/html-page-lang-matches-default-ucwvc8.md
 footer: |
-  <p><strong>Date:</strong> Updated 22 October 2021</p>
+  <p><strong>Date:</strong> Updated 24 January 2022</p>
+  <p><strong>Rule Identifier:</strong> ucwvc8</p>
   <p><strong>Authors:</strong> <a href="https://github.com/wilcofiers">Wilco Fiers</a>.</p>
-  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>.</p>
+  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>.</p>
 proposed: true
 rule_meta:
   id: ucwvc8
@@ -17,57 +18,25 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that the primary language subtag of the page language matches the default language of the page
-  accessibility_requirements:
-    'wcag20:3.1.1':
-      forConformance: true
-      failed: not satisfied
-      passed: satisfied
-      inapplicable: further testing needed
-    'wcag-technique:H57':
-      forConformance: false
-      failed: not satisfied
-      passed: satisfied
-      inapplicable: satisfied
-  input_aspects:
-    - handle: DOM tree
-      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
-    - handle: Accessibility tree
-      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-accessibility
-    - handle: CSS Styling
-      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
-    - handle: Language
-      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-text
-  last_modified: 22 October 2021
+  last_modified: 24 January 2022
   scs_tested:
     - handle: Language of Page
       num: 3.1.1
       level: A
 ---
 
-{::options toc_levels="2" /}
-{::nomarkdown}
-{% include toc.html type="start" title="Page Contents" %}
-{:/}
-
-- Table of Content placeholder
-{:toc}
-
-{::nomarkdown}
-{% include toc.html type="end" %}
-{:/}
-
 ## Applicability
 
 This rule applies to any [document element][] if it is an `html` element for which all of the following are true:
 
-- The [document element][] has a `lang` attribute with a value that is a [valid language tag][]; and
+- The [document element][] has a `lang` attribute with a value that has a [known primary language tag][]; and
 - The [document element][] is in a [top-level browsing context][]; and
 - The [document element][] has a [content type][] of `text/html`; and
 - The [document element][] has a defined [default page language][].
 
 ## Expectation
 
-For each test target, the [primary language][] of the [valid language tag][] matches the [default page language][] of the test target.
+For each test target, the [known primary language tag][] of its `lang` attribute matches the [default page language][] of the test target.
 
 ## Assumptions
 
@@ -75,9 +44,9 @@ For each test target, the [primary language][] of the [valid language tag][] mat
 
 - The language of the page can be set by other methods than the `lang` attribute, for example using HTTP headers or the `meta` element. These methods are not supported by all assistive technologies. This rule assumes that these other methods are insufficient to satisfying [Success Criterion 3.1.1: Language of Page](https://www.w3.org/TR/WCAG21/#language-of-page).
 
-- This rule assumes that user agents and assistive technologies can programmatically determine [valid language tags](#valid-language-tag) even if these do not conform to the [RFC 5646][] syntax.
+- This rule assumes that user agents and assistive technologies can programmatically determine [known primary language tags][known primary language tag] even if these do not conform to the [RFC 5646][] syntax.
 
-- This rule assumes that only [valid language tags][valid language tag] are enough to satisfy [Success Criterion 3.1.1 Language of Page][sc311]; this notably excludes [grandfathered tags][] and [ISO 639.2][] three-letters codes, both having poor support in assistive technologies.
+- This rule assumes that only [known primary language tags][known primary language tag] are enough to satisfy [Success Criterion 3.1.1 Language of Page][sc311]; this notably excludes [grandfathered tags][] and [ISO 639.2][] three-letters codes, both having poor support in assistive technologies.
 
 - This rule assumes that `iframe` title elements are not exposed to assistive technologies and so does not consider them as part of the [default page language][].
 
@@ -87,12 +56,55 @@ _There are no major accessibility support issues known for this rule._
 
 ## Background
 
+### Related rules
+
 - [HTML page has `lang` attribute](https://act-rules.github.io/rules/b5c3f8)
 - [HTML page `lang` attribute has valid language tag](https://act-rules.github.io/rules/bf051a)
+
+### Bibliography
+
 - [Understanding Success Criterion 3.1.1: Language of Page](https://www.w3.org/WAI/WCAG21/Understanding/language-of-page.html)
 - [H57: Using language attributes on the html element](https://www.w3.org/WAI/WCAG21/Techniques/html/H57)
 - [RFC 5646: Tags for Identifying Languages](https://www.rfc-editor.org/rfc/rfc5646.html)
 - [The `lang` and `xml:lang` attributes](https://html.spec.whatwg.org/multipage/dom.html#the-lang-and-xml:lang-attributes)
+
+## Accessibility Requirements Mapping
+
+<ul class="act-requirements-list">
+  <li><details>
+    <summary><span>3.1.1 Language of Page (Level A)</span></summary>
+    <ul>
+      <li><a href="https://www.w3.org/TR/WCAG21/#language-of-page">Learn more about 3.1.1 Language of Page</a></li>
+      <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level A and higher.</li>
+      <li>Outcome mapping: <ul>
+        <li>Any <code>failed</code> outcomes: success criterion is not satisfied</li>
+        <li>All <code>passed</code> outcomes: success criterion is satisfied</li>
+        <li>An <code>inapplicable</code> outcome: success criterion needs further testing</li>
+      </ul></li>
+    </ul>
+  </details></li>
+  <li><details>
+    <summary><span>H57: Using language attributes on the html element</span></summary>
+    <ul>
+      <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/html/H57">Learn more about technique H57</a></li>
+      <li>Not required for conformance to any W3C accessibility recommendation.</li>
+      <li>Outcome mapping: <ul>
+        <li>Any <code>failed</code> outcomes: technique is not satisfied</li>
+        <li>All <code>passed</code> outcomes: technique is satisfied</li>
+        <li>An <code>inapplicable</code> outcome: technique is satisfied</li>
+      </ul></li>
+    </ul>
+  </details></li>
+</ul>
+
+## Input Aspects
+
+The following aspects are required in using this rule.
+
+- [DOM tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom)
+- [Accessibility tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-accessibility)
+- [CSS Styling](https://www.w3.org/TR/act-rules-aspects/#input-aspects-css)
+- [Language](https://www.w3.org/TR/act-rules-aspects/#input-aspects-text)
 
 ## Test Cases
 
@@ -319,7 +331,7 @@ This page has an undefined [default language][default page language] because it 
 
 #### Inapplicable Example 5
 
-The `lang` [attribute value][] of this page is an [iso 639.2][] three letters code, hence not a [valid language tag][].
+The `lang` [attribute value][] of this page is an [iso 639.2][] three letters code, hence has no [known primary language tag][].
 
 ```html
 <html lang="eng">
@@ -331,7 +343,7 @@ The `lang` [attribute value][] of this page is an [iso 639.2][] three letters co
 
 #### Inapplicable Example 6
 
-The `lang` [attribute value][] of this page is a [grandfathered tag][grandfathered tags], hence not a [valid language tag][].
+The `lang` [attribute value][] of this page is a [grandfathered tag][grandfathered tags], hence has no [known primary language tag][].
 
 ```html
 <html lang="i-lux">
@@ -394,6 +406,18 @@ For more details, see [examples of included in the accessibility tree][].
 
 [Programmatically hidden](#programmatically-hidden) elements are removed from the accessibility tree. However, some browsers will leave [focusable](#focusable) elements with an `aria-hidden` attribute set to `true` in the accessibility tree. Because they are hidden, these elements are considered **not** included in the accessibility tree. This may cause confusion for users of assistive technologies because they may still be able to interact with these focusable elements using sequential keyboard navigation, even though the element should not be included in the accessibility tree.
 
+### Known Primary Language Tag {#known-primary-language-tag}
+
+A language tag has a _known primary language tag_ if its [primary language subtag][] exists in the [language subtag registry][] with a [Type field][] whose field-body value is `language`.
+
+A "language tag" is here to be understood as in the first paragraph of the [RFC 5646 language tag syntax][language tag], i.e. a sequence of subtags separated by hyphens, where a subtag is any sequence of alphanumerical characters. [Language tag][] that are not valid according to the stricter [RFC 5646 syntax][language tag] (and ABNF grammar) definition can still have a known primary language tag. User agents and assistive technologies are more lenient in what they accept. This definition is consistent with the behavior of the `:lang()` pseudo-selector as defined by [Selectors Level 3][].
+
+As an example, `de-hello` would be an accepted way to indicate German in current user agents and assistive technologies, despite not being valid according to [RFC 5646 grammar][language tag]. It has a known primary language tag (namely, `de`).
+
+As a consequence of this definition, however, [grandfathered tags][] do not have a known primary language tag.
+
+Subtags, notably the [primary language subtag][], are [case insensitive][]. Comparison with the [language subtag registry][] must be done in a case insensitive way.
+
 ### Most Common Language of an Element {#most-common-element-language}
 
 The _most common language of an element_ is determined by counting the number of _words_ in the [text inheriting its programmatic language][] from this element that are part of any of the languages in the [language subtag registry][]. The same word can be part of multiple languages. In case of ties, the element has several most common languages. If there are no words in the [text inheriting its programmatic language][] from the element, then it has no most common language.
@@ -435,14 +459,6 @@ An element F is an _element inheriting its programmatic language_ from an elemen
 - F is E itself (an element always inherits its programmatic language from itself); or
 - F does not have a non-empty `lang` attribute, and is the child in the [flat tree][] of an element inheriting its programmatic language from E; or
 - F is a [fully active][] [document][] element, has no non-empty `lang` attribute, and its [browsing context container][] is an element inheriting its programmatic language from E.
-
-### Valid Language Tag {#valid-language-tag}
-
-A [language tag][] is _valid_ if its [primary language subtag][] exists in the [language subtag registry][] with a [Type field][] whose field-body value is `language`.
-
-A "language tag" is here to be understood as in the first paragraph of the [RFC 5646 language tag syntax][language tag], i.e. a sequence of subtags separated by hyphens, where a subtag is any sequence of alphanumerical characters. Thus, this definition intentionally differs from the strict [RFC 5646 syntax][language tag] (and ABNF grammar) as user agents and assistive technologies are more lenient in what they accept. The definition is however consistent with the behavior of the `:lang()` pseudo-selector as defined by [Selectors Level 3][]. For example, `de-hello` would be an accepted way to indicate German in current user agents and assistive technologies, despite not being valid according to [RFC 5646 grammar][language tag]. As a consequence of this definition, however, [grandfathered tags][] are not correctly recognized as valid language subtags.
-
-Subtags, notably the [primary language subtag][], are [case insensitive][]. Hence comparison with the [language subtag registry][] must be done in a case insensitive way.
 
 ### Visible {#visible}
 
@@ -496,13 +512,13 @@ This is the first version of this ACT rule.
 [idl attribute]: https://heycam.github.io/webidl/#idl-attributes "Definition of Web IDL Attribute (Editor's Draft)"
 [included in the accessibility tree]: #included-in-the-accessibility-tree 'Definition of Included in the Accessibility Tree'
 [inclusive ancestors]: https://dom.spec.whatwg.org/#concept-tree-inclusive-ancestor 'DOM Definition of Inclusive Ancestor'
-[iso 639.2]: https://www.loc.gov/standards/iso639-2/php/code_list.php 'ISO 639.2
-[language subtag registry]: http://www.iana.org/assignments/language-subtag-registry/language-subtag-registry 'Language Subtag Registry'
+[iso 639.2]: https://www.loc.gov/standards/iso639-2/php/code_list.php 'ISO 639.2: Codes for the Representation of Names of Languages'
+[known primary language tag]: #known-primary-language-tag
+[language subtag registry]: http://www.iana.org/assignments/language-subtag-registry/language-subtag-registry
 [language tag]: https://www.rfc-editor.org/rfc/rfc5646.html#section-2.1
 [most common language]: #most-common-element-language 'Definition of Most Common Language of an Element'
 [numbers]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#numbers 'HTML Specification of Number Parsing'
 [primary language subtag]: https://www.rfc-editor.org/rfc/rfc5646.html#section-2.2.1
-[primary language]: https://www.rfc-editor.org/rfc/rfc5646.html#section-2.2.1 'Definition of primary language subtag'
 [reflect]: https://html.spec.whatwg.org/multipage/common-dom-interfaces.html#reflecting-content-attributes-in-idl-attributes 'HTML specification of Reflecting Content Attributes in IDL Attributes'
 [rfc 5646]: https://www.rfc-editor.org/rfc/rfc5646.html#section-2.1
 [sc311]: https://www.w3.org/TR/WCAG21/#language-of-page 'Success Criterion 3.1.1 Language of Page'
@@ -512,7 +528,6 @@ This is the first version of this ACT rule.
 [text nodes]: https://dom.spec.whatwg.org/#text 'DOM text, as of 2020/06/05'
 [top-level browsing context]: https://html.spec.whatwg.org/#top-level-browsing-context 'HTML top-level browsing context, as of 2020/06/05'
 [type field]: https://www.rfc-editor.org/rfc/rfc5646.html#section-3.1.3
-[valid language tag]: #valid-language-tag
 [visible]: #visible 'Definition of Visible'
 [wai-aria specification]: https://www.w3.org/TR/wai-aria-1.1/#propcharacteristic_value 'WAI-ARIA Specification of States and Properties Value'
 [web page]: #web-page-html 'Definition of Web Page (HTML)'

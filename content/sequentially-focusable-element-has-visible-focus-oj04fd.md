@@ -7,9 +7,10 @@ github:
   repository: w3c/wcag-act-rules
   path: content/sequentially-focusable-element-has-visible-focus-oj04fd.md
 footer: |
-  <p><strong>Date:</strong> Updated 22 October 2021</p>
+  <p><strong>Date:</strong> Updated 24 January 2022</p>
+  <p><strong>Rule Identifier:</strong> oj04fd</p>
   <p><strong>Authors:</strong> <a href="https://github.com/Jym77">Jean-Yves Moyen</a>.</p>
-  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>.</p>
+  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>.</p>
 proposed: true
 rule_meta:
   id: oj04fd
@@ -17,35 +18,12 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that each element in sequential focus order has some visible focus indication.
-  accessibility_requirements:
-    'wcag20:2.4.7':
-      forConformance: true
-      failed: not satisfied
-      passed: further testing needed
-      inapplicable: further testing needed
-  input_aspects:
-    - handle: CSS styling
-      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-css
-    - handle: DOM tree
-      url: https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom
-  last_modified: 22 October 2021
+  last_modified: 24 January 2022
   scs_tested:
     - handle: Focus Visible
       num: 2.4.7
       level: AA
 ---
-
-{::options toc_levels="2" /}
-{::nomarkdown}
-{% include toc.html type="start" title="Page Contents" %}
-{:/}
-
-- Table of Content placeholder
-{:toc}
-
-{::nomarkdown}
-{% include toc.html type="end" %}
-{:/}
 
 ## Applicability
 
@@ -71,6 +49,8 @@ WCAG does not have any requirement of how big or small focus indicator should be
 
 WCAG has no clear requirement of unicity of the focus indicator for each [focusable][] element. Therefore, this rule can pass even if several focus indicators are identical. Such a situation may nonetheless cause confusion and all Examples in this rule avoid it.
 
+### Bibliography
+
 - [Success Criterion 2.4.7 Focus Visible][sc247]
 - [Success Criterion 2.4.11 Focus Appearance (Minimum)][sc2411]
 - [Success Criterion 2.4.12 Focus Appearance (Enhanced)][sc2412]
@@ -79,6 +59,30 @@ WCAG has no clear requirement of unicity of the focus indicator for each [focusa
 - [Understanding Success Criterion 2.4.12: Focus Appearance (Enhanced)][usc2412]
 
 Due to the Applicability of this rule, test cases must have at least two elements in their [sequential focus navigation order][sequential focus navigation]. In order to keep the test case focused on one aspect of the rule, most of them include a button labeled "Dummy button" whose sole purpose is to make the other element applicable. This dummy button is passing the rule (due to default User Agent's styling) for the Passed test cases, and failing it for the Failed test cases; and it is never mentioned further in the test cases descriptions.
+
+## Accessibility Requirements Mapping
+
+<ul class="act-requirements-list">
+  <li><details>
+    <summary><span>2.4.7 Focus Visible (Level AA)</span></summary>
+    <ul>
+      <li><a href="https://www.w3.org/TR/WCAG21/#focus-visible">Learn more about 2.4.7 Focus Visible</a></li>
+      <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level AA and higher.</li>
+      <li>Outcome mapping: <ul>
+        <li>Any <code>failed</code> outcomes: success criterion is not satisfied</li>
+        <li>All <code>passed</code> outcomes: success criterion needs further testing</li>
+        <li>An <code>inapplicable</code> outcome: success criterion needs further testing</li>
+      </ul></li>
+    </ul>
+  </details></li>
+</ul>
+
+## Input Aspects
+
+The following aspects are required in using this rule.
+
+- [CSS styling](https://www.w3.org/TR/act-rules-aspects/#input-aspects-css)
+- [DOM tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom)
 
 ## Test Cases
 
@@ -242,7 +246,7 @@ This is the first version of this ACT rule.
 [sc247]: https://www.w3.org/TR/WCAG21/#focus-visible 'Success Criterion 2.4.7 Focus Visible'
 [scrolling area]: https://drafts.csswg.org/cssom-view/#scrolling-area 'CSS specification of Scrolling Area'
 [sequential focus navigation]: https://html.spec.whatwg.org/#sequential-focus-navigation 'HTML specification of Sequential focus navigation'
-[usc2411]: https://www.w3.org/WAI/WCAG22/Understanding/focus-appearance-minimum.html 'Understanding Success Criterion 2.4.11
-[usc2412]: https://www.w3.org/WAI/WCAG22/Understanding/focus-appearance-enhanced.html 'Understanding Success Criterion 2.4.12
-[usc247]: https://www.w3.org/WAI/WCAG21/Understanding/focus-visible.html 'Understanding Success Criterion 2.4.7
+[usc2411]: https://www.w3.org/WAI/WCAG22/Understanding/focus-appearance-minimum.html 'Understanding Success Criterion 2.4.11: Focus Appearance (Minimum)'
+[usc2412]: https://www.w3.org/WAI/WCAG22/Understanding/focus-appearance-enhanced.html 'Understanding Success Criterion 2.4.12: Focus Appearance (Enhanced)'
+[usc247]: https://www.w3.org/WAI/WCAG21/Understanding/focus-visible.html 'Understanding Success Criterion 2.4.7: Focus Visible'
 [viewport]: https://drafts.csswg.org/css2/#viewport 'CSS definition of Viewport'
