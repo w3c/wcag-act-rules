@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<!-- saved from url=(0102)https://wai-wcag-act-rules.netlify.app/standards-guidelines/act/rules/autocomplete-valid-value-73f2c2/ -->
+<html class="has-js" lang="en" dir="ltr" prefix="og: http://ogp.me/ns#">
+<head>
+  <base href="https://wai-wcag-act-rules.netlify.app/">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <script type="text/javascript" async="" defer="" src="//www.w3.org/analytics/piwik/piwik.js"></script>
+  <script>
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'has-js');
+
+    function downloadJSAtOnload() {
+      var element = document.createElement("script");
+      element.src = "/assets/scripts/main.js?1643027250103876606";
+      document.body.appendChild(element);
+    }
+
+    window.addEventListener("load", downloadJSAtOnload, false);
+  </script>
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+<title> autocomplete attribute has valid value | Web Accessibility Initiative (WAI) | W3C</title><!-- Begin Jekyll SEO tag v2.7.1 -->
+<meta name="generator" content="Jekyll v4.2.1">
+<meta property="og:title" content="autocomplete attribute has valid value">
+<meta name="author" content="w3c_wai">
+<meta property="og:locale" content="en">
+<meta name="description" content="The Website of the World Wide Web Consortium’s Web Accessibility Initiative.">
+<meta property="og:description" content="The Website of the World Wide Web Consortium’s Web Accessibility Initiative.">
+<link rel="canonical" href="https://wai-wcag-act-rules.netlify.app/standards-guidelines/act/rules/autocomplete-valid-value-73f2c2/">
+<meta property="og:url" content="/standards-guidelines/act/rules/autocomplete-valid-value-73f2c2/">
+<meta property="og:site_name" content="Web Accessibility Initiative (WAI)">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="twitter:title" content="autocomplete attribute has valid value">
+<meta name="twitter:site" content="@w3c_wai">
+<meta name="twitter:creator" content="@w3c_wai">
+<script type="application/ld+json">
+{"author":{"@type":"Person","name":"w3c_wai"},"description":"The Website of the World Wide Web Consortium’s Web Accessibility Initiative.","@type":"WebPage","headline":"autocomplete attribute has valid value","url":"/standards-guidelines/act/rules/autocomplete-valid-value-73f2c2/","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<meta name="twitter:image" property="og:image" content="/assets/images/social-sharing-default.jpg">
+
+  <link rel="alternate" type="application/rss+xml" href="https://wai-wcag-act-rules.netlify.app/feed.xml">
+</head>
+
+<body id="top" class="page-autocomplete-attribute-has-valid-value ">
+  <a href="https://wai-wcag-act-rules.netlify.app/standards-guidelines/act/rules/autocomplete-valid-value-73f2c2/#main" class="button button--skip-link">Skip to content</a>
+  <div class="minimal-header-container default-grid">
+    <div id="site-header" class="minimal-header">
+      <span class="minimal-header-name">WCAG 2 Test Rules</span>
+  <div class="minimal-header-logo">
+    <a href="http://w3.org/">
+      <img alt="W3C" src="/assets/images/w3c2.svg" width="92" height="44">
+    </a>
+    <a href="https://wai-wcag-act-rules.netlify.app/">
+      <img alt="Web Accessibility Initiative" src="/assets/images/wai.svg">
+    </a>
+  </div>
+</div>
+
+
+
+
+      
+    </div>
+
+    <div class="default-grid nav-container">
+      <nav class="nav" aria-label="Context for this document">
+        <ul>
+          <li class="nav__item"><a href="https://wai-wcag-act-rules.netlify.app/standards-guidelines/act/rules/">All Rules</a></li>
+          <li class="nav__item"><a href="https://wai-wcag-act-rules.netlify.app/standards-guidelines/act/rules/about/">About Rules</a></li>
+          <li class="nav__item"><a href="https://www.w3.org/WAI/standards-guidelines/wcag/docs/">
+            All WCAG 2 Guidance
+            <svg focusable="false" aria-hidden="true" class="icon-different-view "><use xlink:href="/assets/images/icons.svg#icon-different-view"></use></svg>
+          </a></li>
+        </ul>
+      </nav>
+      
+    </div>
+
+    <div class="default-grid with-gap leftcol">
+<style>
+.nav-hack {
+  font-size: .85rem;
+}
+.nav-hack ul {
+    list-style: none;
+    border-bottom: 1px solid #BCBCBC;
+    padding-left: 1rem
+}
+.nav-hack li {
+    padding-bottom: 0;
+    margin-bottom: 0.3em;
+    border-top: 1px solid #BCBCBC;
+}
+.nav-hack li a {
+    text-decoration: none;
+}
+.nav-hack h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+/* skip link */
+.button--skip-link {
+  background-color: var(--gold) !important;
+  border-color: var(--gold) !important;
+  outline-color: currentColor !important;
+  color: var(--off-black) !important;
+  font-weight: 600;
+  font-size: larger;
+  margin: 0 auto;
+  position: absolute;
+  z-index: 20;
+  left: 0;
+  right: 0;
+  top: 0.5em;
+  width: 10em;
+  opacity: 1;
+  transition: transform 0.1875s ease-out, opacity 0.1875s ease-out;
+}
+
+.button--skip-link:not(:focus):not(:hover) {
+  transform: translateY(-4em);
+  opacity: 0;
+}
+</style>
+
+      <nav class="nav-hack your-report your-report--expanded sidebar standalone-resource__sidebar">
+        <h3>This Page Contents</h3>
+        <ul>
+          <li><a href="#">Complete Consistency (2)</a></li>
+          <li><a href="#">Partial Consistency (5)</a></li>
+          <li><a href="#">Minimal Consistency (2)</a></li>
+          <li><a href="#">Test Description</a></li>
+          <li><a href="#">Detailed Breakdown</a></li>
+        </ul>
+      </nav>
+
+    <main id="main" lang="en" class="standalone-resource__main">
+        <header>
+          <h1>
+            Axe-core Test Rule Implementation
+          </h1>
+          <aside class="box"> 
+            <header class="box-h box-h-icon"> 
+              Implementation Summary 
+            </header>
+            <div class="box-i"><p>
+              Axe-core version 4.3.0 was published on 1 December 2021 by <a href="#">Deque Systems</a>.
+              This implementation tests for WCAG 2.1 (and older), level A and AA.
+              Unless otherwise indicated, results are <strong>fully automatic</strong>.
+              Test data was last updated 24 January 2022.
+            </p></div>
+           </aside>
+        </header>
+
+        <h2>Complete Consistency (2)</h2>
+        <p>Completely consistent implementations consider all aspects of a rule's applicability and expectations.</p>
+        <table>
+          <thead>
+            <tr>
+              <th>WCAG</th>
+              <th>Test Rule</th>
+              <th>Coverage</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1.3.1</td>
+              <td><a href="#">ARIA required context role</a></td>
+              <td>Automatic (8/10)</td>
+            </tr>
+            <tr>
+              <td>1.3.1</td>
+              <td><a href="#">Element with presentational children has no focusable content</a></td>
+              <td>Automatic (20/20)</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h2>Partial Consistency (5)</h2>
+        <p>Partially consistent implementations consider some, but not all aspects of a rule's applicability and expectations.</p>
+        <table><thead><tr><th>WCAG</th><th>Test Rule</th><th>Coverage</th></tr></thead></table>
+        
+        <h2>Minimal Consistency (2)</h2>
+        <p>Minimally consistent implementations consider some or all aspects of a rule's applicability, without considering its expectations.</p>
+        <table><thead><tr><th>WCAG</th><th>Test Rule</th><th>Coverage</th></tr></thead></table>
+
+        <h2>Test Description</h2>
+        <p>
+          ACT rules are tested using a canary version of axe-core, which can be 
+          accessed by installing `axe-core@next` from NPM. For these results, all 
+          rules including “experimental” rules are enabled. Checks with “unsupported” 
+          in its ID are disabled, which deal with issues of accessibility support 
+          issues which ACT rules do not account for, often by design.
+        </p>
+
+        <h2>Detailed Breakdown</h2>
+        <style>
+          .small th {
+            padding: 6px 8px;
+            font-size: 0.8rem;
+          }
+          .narrow td {
+            padding: 12px 8px;
+          }
+          .narrow td:first-child {
+            padding: 12px 18px;
+
+          }
+          .implementation-table {
+            width: 100%;
+          }
+          .implementation-table [rowspan] {
+            vertical-align: bottom;
+          }
+        </style>
+
+        <h3>Simple Rule (abc123)</h3>
+        <p>
+          This rule is implemented in one procedures.
+          The implementation is <strong>completely consistent</strong> with the rule.
+          It answers all 12 test cases.
+        </p>
+        <table class="implementation-table">
+          <thead>
+            <tr>
+              <th rowspan="2">Procedures</th>
+              <th colspan="5">Passed</th>
+              <th colspan="4">Failed</th>
+              <th colspan="3"><abbr title="Inapplicable">N/A</abbr></th>
+            </tr>
+            <tr class="small">
+              <th>1</th><th>2</th><th>3</th><th>4</th><th>5</th>
+              <th>1</th><th>2</th><th>3</th><th>4</th>
+              <th>1</th><th>2</th><th>3</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="narrow">
+              <td class="regular">link-name</td>
+              <td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td>
+              <td>✓</td><td>✓</td><td>✓</td><td>✓</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>Complex Rule With A Title That Is Unusually Lengthy (xyz789)</h3>
+        <p>
+          This rule is implemented by axe-core using three procedures.
+          The implementation is <strong>completely consistent</strong> with the rule.
+          It answers 19 of the 21 test cases, with 1 test case that where it could not tell the answer, and 1 test case untested.
+        </p>
+        <table class="implementation-table">
+          <thead>
+            <tr>
+              <th rowspan="2">Procedures</th>
+              <th colspan="15">Passed</th>
+              <th colspan="4">Failed</th>
+              <th colspan="2"><abbr title="Inapplicable">N/A</abbr></th>
+            </tr>
+            <tr class="small">
+              <th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th>
+              <th>9</th><th>10</th><th>11</th><th>12</th><th>13</th><th>14</th><th>15</th>
+              <th>1</th><th>2</th><th>3</th><th>4</th>
+              <th>1</th><th>2</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="narrow">
+              <td class="regular">link-name</td>
+              <td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td>
+              <td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td>
+              <td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td>
+            </tr>
+            <tr class="narrow">
+              <td class="regular">area-alt</td>
+              <td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td>
+              <td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td>
+              <td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td>
+            </tr>
+            <tr class="narrow">
+              <td class="regular">aria-control-name<a>*</a></a></td>
+              <td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td>
+              <td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td>
+              <td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td>
+            </tr>
+          </tbody>
+        </table>
+        <p id="note-1">* Outcomes of this rule include some manual testing.</p>
+
+        <h3>Content has alternative for visual reference (9bd38c)</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Test Case</th>
+              <th>link-name</th>
+              <th>area-alt</th>
+              <th>aria-valid-attr-value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><a href="#">Passed Example 1</a></td>
+              <td>Passed</td>
+              <td>Inapplicable</td>
+              <td>Inapplicable</td>
+            </tr>
+            <tr>
+              <td><a href="#">Passed Example 2</a></td>
+              <td>Inapplicable</td>
+              <td>Passed</td>
+              <td>Inapplicable</td>
+            </tr>
+            <tr>
+              <td><a href="#">Passed Example 3</a></td>
+              <td>Inapplicable</td>
+              <td>Inapplicable</td>
+              <td>Passed</td>
+            </tr>
+            <tr>
+              <td><a href="#">Failed Example 1</a></td>
+              <td>Failed</td>
+              <td>Inapplicable</td>
+              <td>Inapplicable</td>
+            </tr>
+            <tr>
+              <td><a href="#">Failed Example 2</a></td>
+              <td>Inapplicable</td>
+              <td>Failed</td>
+              <td>Inapplicable</td>
+            </tr>
+            <tr>
+              <td><a href="#">Failed Example 3</a></td>
+              <td>Inapplicable</td>
+              <td>Inapplicable</td>
+              <td>Failed</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>Link has non-empty accessible name (c487ae)</h3>
+        <table>
+          <thead>
+            <tr>
+              <th rowspan="2">Test Case</th>
+              <th colspan="3">Procedures</th>
+            </tr>
+            <tr>
+              <th>link-name</th>
+              <th>area-alt</th>
+              <th>aria-valid-attr-value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><a href="#">Passed Example 1</a></td>
+              <td>Passed</td>
+              <td>Inapplicable</td>
+              <td>Inapplicable</td>
+            </tr>
+          </tbody>
+        </table>
+
+      </main>
+    
+  </div>
+
+    <div class="default-grid with-gap leftcol">
+      <div class="standalone-resource__prevnext"><aside class="box box-icon box-space-above" id="helpimprove"><header class="box-h  box-h-icon box-h-space-above box-h-icon"> <svg focusable="false" aria-hidden="true" class="icon-comments "><use xlink:href="/assets/images/icons.svg#icon-comments"></use></svg> <h2> Help improve this page </h2></header><div class="box-i"><p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived list <a href="mailto:wai@w3.org?subject=[en]%20autocomplete%20attribute%20has%20valid%20value">wai@w3.org</a> or via GitHub.</p>
+<div class="button-group">
+    <a href="mailto:wai@w3.org?subject=[en]%20autocomplete%20attribute%20has%20valid%20value&amp;body=[put%20comment%20here...]%5Cn%5CnI%20give%20permission%20to%20share%20this%20to%20a%20publicly-archived%20e-mail%20list.%22%7D" class="button"><span>E-mail</span></a>
+    <a href="https://github.com/w3c/wcag-act-rules/edit/master/content/autocomplete-valid-value-73f2c2.md" class="button"><span>Fork &amp; Edit on GitHub</span></a><a href="https://github.com/w3c/wcag-act-rules/issues/new" class="button"><span>New GitHub Issue</span></a>
+</div></div></aside>
+      </div>
+    </div>
+    <a class="button button-backtotop" href="https://wai-wcag-act-rules.netlify.app/standards-guidelines/act/rules/autocomplete-valid-value-73f2c2/#top"><span><svg focusable="false" aria-hidden="true" class="icon-arrow-up "><use xlink:href="/assets/images/icons.svg#icon-arrow-up"></use></svg> Back to Top</span></a>
+  
+  
+  
+  <footer id="wai-site-footer" class="page-footer default-grid" aria-label="Page">
+    <div class="inner" style="-ms-grid-column: 2; -ms-grid-column-span: 8; grid-column: 2 / 8;">
+      <p><strong>Date:</strong> Updated 24 January 2022</p>
+<p><strong>Rule Identifier:</strong> 73f2c2</p>
+<p><strong>Authors:</strong> <a href="https://github.com/ajanec01">Aron Janecki</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>.</p>
+<p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>.</p>
+</div>
+  </footer>
+  
+
+
+<footer class="site-footer grid-4q" aria-label="Site">
+  <div class="q1-start q3-end about">
+    <div>
+      <p><a class="largelink" href="https://www.w3.org/WAI/" lang="en" dir="auto" translate="no">W3C Web Accessibility Initiative (WAI)</a></p>
+      <p>Strategies, standards, and supporting resources to make the Web accessible to people with disabilities.</p>
+    </div>
+    <div class="social" lang="en" dir="auto" translate="no">
+      <ul>
+        <li><a href="https://twitter.com/w3c_wai"><svg focusable="false" aria-hidden="true" class="icon-twitter "><use xlink:href="/assets/images/icons.svg#icon-twitter"></use></svg> Twitter</a></li>
+        <li><a href="https://www.w3.org/WAI/feed.xml"><svg focusable="false" aria-hidden="true" class="icon-rss "><use xlink:href="/assets/images/icons.svg#icon-rss"></use></svg> Feed</a></li>
+        <li><a href="https://www.youtube.com/channel/UCU6ljj3m1fglIPjSjs2DpRA/playlistsv"><svg focusable="false" aria-hidden="true" class="icon-youtube "><use xlink:href="/assets/images/icons.svg#icon-youtube"></use></svg> YouTube</a></li>
+        <li><a href="https://www.w3.org/WAI/news/subscribe/" class="button">Get News in Email</a></li>
+      </ul>
+    </div>
+    <div lang="en" dir="auto" translate="no">
+      <p>Copyright © 2022 W3C <sup>®</sup> (<a href="https://www.csail.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>, <a href="https://www.ercim.eu/"><abbr title="European Research Consortium for Informatics and Mathematics">ERCIM</abbr></a>, <a href="https://www.keio.ac.jp/">Keio</a>, <a href="https://ev.buaa.edu.cn/">Beihang</a>) <a href="https://wai-wcag-act-rules.netlify.app/about/using-wai-material/">Permission to Use WAI Material</a>.</p>
+    </div>
+  </div>
+  <div lang="en" dir="auto" translate="no" class="q4-start q4-end">
+    <ul style="margin-bottom:0">
+      <li><a href="https://wai-wcag-act-rules.netlify.app/about/contacting/">Contact WAI</a></li>
+      <li><a href="https://wai-wcag-act-rules.netlify.app/sitemap/">Site Map</a></li>
+      <li><a href="https://wai-wcag-act-rules.netlify.app/news/">News</a></li>
+      <li><a href="https://wai-wcag-act-rules.netlify.app/sitemap/#archive">Archive</a></li>
+      <li><a href="https://wai-wcag-act-rules.netlify.app/about/accessibility-statement/">Accessibility Statement</a></li>
+      <li><a href="https://wai-wcag-act-rules.netlify.app/translations/"> Translations</a></li>
+      <li><a href="https://wai-wcag-act-rules.netlify.app/roles/">Resources for Roles</a></li>
+    </ul>
+  </div>
+</footer><section class="default-grid info" tabindex="0">
+  <p class="inner">This is an unpublished draft preview that might include content that is not yet approved. The published website is at <a href="https://www.w3.org/WAI/">w3.org/WAI/</a>.
+  </p>
+</section><!-- Details4Everybody -->
+<script src="/assets/scripts/details4everybody.js"></script>
+<!-- SVG4Everybody -->
+<script src="/assets/scripts/svg4everybody.js"></script>
+<script>
+  svg4everybody();
+</script><script>
+  var translationStrings = {};
+</script>
+<!-- Matomo -->
+<script>
+  var _paq = _paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(["setDoNotTrack", true]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//www.w3.org/analytics/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', '328']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//www.w3.org/analytics/piwik/piwik.php?idsite=328&rec=1" style="border:0;" alt="" /></p></noscript>
+<!-- End Matomo Code -->
+
+  
+<script src="/assets/scripts/main.js"></script></body></html>
