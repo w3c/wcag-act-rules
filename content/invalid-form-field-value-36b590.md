@@ -6,11 +6,12 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/invalid-form-field-value-36b590.md
+feedbackmail: public-wcag-act@w3.org
 footer: |
-  <p><strong>Date:</strong> Updated 24 January 2022</p>
   <p><strong>Rule Identifier:</strong> 36b590</p>
-  <p><strong>Authors:</strong> <a href="https://github.com/carlosapaduarte">Carlos Duarte</a>, <a href="https://github.com/joao-vicente">João Vicente</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>.</p>
-  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>.</p>
+  <p><strong>Date:</strong> Updated 28 January 2022</p>
+  <p><strong>Authors:</strong> <a href="https://github.com/carlosapaduarte">Carlos Duarte</a>, <a href="https://github.com/joao-vicente">João Vicente</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
+  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
 rule_meta:
   id: 36b590
@@ -18,7 +19,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that text error messages provided when the user completes a form field with invalid values or using an invalid format, identify the cause of the error or how to fix the error.
-  last_modified: 24 January 2022
+  last_modified: 28 January 2022
   scs_tested:
     - handle: Error Identification
       num: 3.3.1

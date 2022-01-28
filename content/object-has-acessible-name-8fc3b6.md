@@ -6,12 +6,14 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/object-has-acessible-name-8fc3b6.md
+feedbackmail: public-wcag-act@w3.org
 footer: |
-  <p><strong>Date:</strong> Updated 24 January 2022</p>
   <p><strong>Rule Identifier:</strong> 8fc3b6</p>
-  <p><strong>Authors:</strong> <a href="https://github.com/AntonioEstriga">António Estriga</a>.</p>
-  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>.</p>
-  <p><strong>Assets:</strong> test cases use assets from the following sources: audio is an excerpt from JFK's 'Moon Speech'.</p>
+  <p><strong>Date:</strong> Updated 28 January 2022</p>
+  <p><strong>Authors:</strong> <a href="https://github.com/AntonioEstriga">António Estriga</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
+  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
+  
+  <p><strong>Assets:</strong> Test cases use assets from the following sources: audio is an excerpt from JFK's 'Moon Speech'</p>
 proposed: true
 rule_meta:
   id: 8fc3b6
@@ -19,7 +21,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that each `object` element rendering non-text content has a non-empty accessible name.
-  last_modified: 24 January 2022
+  last_modified: 28 January 2022
   scs_tested:
     - handle: Non-text Content
       num: 1.1.1
