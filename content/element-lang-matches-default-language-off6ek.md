@@ -1,24 +1,24 @@
 ---
-title: "Element with lang attribute has valid language tag"
-permalink: /standards-guidelines/act/rules/element-lang-valid-de46e4/
-ref: /standards-guidelines/act/rules/element-lang-valid-de46e4/
+title: "HTML element language subtag matches language"
+permalink: /standards-guidelines/act/rules/element-lang-matches-default-language-off6ek/
+ref: /standards-guidelines/act/rules/element-lang-matches-default-language-off6ek/
 lang: en
 github:
   repository: w3c/wcag-act-rules
-  path: content/element-lang-valid-de46e4.md
+  path: content/element-lang-matches-default-language-off6ek.md
 feedbackmail: public-wcag-act@w3.org
 footer: |
-  <p><strong>Rule Identifier:</strong> de46e4</p>
+  <p><strong>Rule Identifier:</strong> off6ek</p>
   <p><strong>Date:</strong> Updated 28 January 2022</p>
-  <p><strong>Authors:</strong> <a href="https://github.com/brynanders">Bryn Anderson</a>, <a href="https://github.com/jkodu">Jey Nandakumar</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
-  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It was approved and published by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
-proposed: false
+  <p><strong>Authors:</strong> <a href="https://github.com/Jym77">Jean-Yves Moyen</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
+  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
+proposed: true
 rule_meta:
-  id: de46e4
-  name: "Element with `lang` attribute has valid language tag"
+  id: off6ek
+  name: "HTML element language subtag matches language"
   rule_type: atomic
   description: |
-    This rule checks that a non-empty `lang` attribute of an element in the page has a language tag with a known primary language subtag.
+    This rule checks that the primary language subtag of an element matches its default language
   last_modified: 28 January 2022
   scs_tested:
     - handle: Language of Parts
@@ -28,36 +28,43 @@ rule_meta:
 
 ## Applicability
 
-This rule applies to any [HTML element][] with a `lang` [attribute value][] that is not empty (`""`) and for which all of the following is true:
+This rule applies to any [HTML element][] with a `lang` attribute for which all the following are true:
 
-- **descendant**: the element is an [inclusive descendant][] in the [flat tree][] of a `body` element; and
-- **content type**: the element has an associated [node document][] with a [content type][] of `text/html`; and
-- **text**: there is some non-empty [text inheriting its programmatic language][] from the element.
+- the element is an [inclusive descendant][] in the [flat tree][] of a `body` element; and
+- the element is in a [document][] with a [content type][] of `text/html`; and
+- the element's `lang` [attribute value][] has a [known primary language tag][]; and
+- there is some non-empty [text inheriting its programmatic language][] from the element.
 
 ## Expectation
 
-For each test target, the `lang` [attribute value][] has a [known primary language tag][].
+For each test target, the [primary language][] of its `lang` [attribute value][] is a [most common language][] of the test target.
 
 ## Assumptions
 
-- This rule assumes that the `lang` [attribute value][] is used to indicate the language of a section of the content. If the `lang` [attribute value][] is used for something else (for example to indicate the programming language of a `code` element), the content may still conform to WCAG despite failing this rule.
+- This rule assumes that user agents and assistive technologies can programmatically determine [known primary language tags][known primary language tag] even on [language tags][rfc 5646] that do not conform to the [RFC 5646][] syntax.
 
-- This rule assumes that user agents and assistive technologies can programmatically determine [known primary language tags][known primary language tag] even if these do not conform to the [RFC 5646][] syntax.
-
-- This rule assumes that only [known primary language tags][known primary language tag] are enough to satisfy [Success Criterion 3.1.2 Language of Parts][sc312]; this notably excludes [grandfathered tags][] and [ISO 639.2][] three-letters codes, both having poor support in assistive technologies.
+- This rule assumes that only [language tags][rfc 5646] with a [known primary language tag][] are enough to satisfy [Success Criterion 3.1.2 Language of Parts][sc312]; this notably excludes [grandfathered tags][] and [ISO 639.2][] three-letters codes, both having poor support in assistive technologies.
 
 ## Accessibility Support
 
-There are differences in how assistive technologies handle unknown and invalid language tags. Some will default to the language of the page, whereas others will default to the closest ancestor with a valid lang attribute.
+_There are no major accessibility support issues known for this rule._
 
 ## Background
 
+This rule checks that, if a `lang` attribute is used, its value is correct with respect to the content. This rule does not check whether a `lang` attribute should have been used or not. Especially, this rule does not check when `lang` attributes are missing. This must be tested separately and it is therefore possible to pass this rule without satisfying [Success Criterion 3.1.2 Language of Parts](https://www.w3.org/TR/WCAG21/#language-of-parts).
+
+### Related rules
+
+- [_Element with `lang` Attribute Has Valid Language Tag_](https://act-rules.github.io/rules/de46e4)
+
 ### Bibliography
 
-- [CSS Scoping Module Level 1 (editor's draft)](https://drafts.csswg.org/css-scoping/)
+- [Understanding Success Criterion 3.1.2: Language of Page][usc312]
 - [H58: Using language attributes to identify changes in the human language](https://www.w3.org/WAI/WCAG21/Techniques/html/H58)
 - [RFC 5646: Tags for Identifying Languages](https://www.rfc-editor.org/rfc/rfc5646.html)
-- [Understanding Success Criterion 3.1.2: Language of Parts](https://www.w3.org/WAI/WCAG21/Understanding/language-of-parts)
+- [The `lang` and `xml:lang` attributes](https://html.spec.whatwg.org/multipage/dom.html#the-lang-and-xml:lang-attributes)
+
+In all examples, the `html` element has itself a `lang` attribute in order to make sure that the examples satisfy [Success Criterion 3.1.1 Language of Page](https://www.w3.org/TR/WCAG21/#language-of-page). These `html` elements are, however, never applicable because they are not descendants of a `body` element, and the example descriptions do not mention them further.
 
 ## Accessibility Requirements Mapping
 
@@ -69,7 +76,7 @@ There are differences in how assistive technologies handle unknown and invalid l
       <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level AA and higher.</li>
       <li>Outcome mapping: <ul>
         <li>Any <code>failed</code> outcomes: success criterion is not satisfied</li>
-        <li>All <code>passed</code> outcomes: success criterion needs further testing</li>
+        <li>All <code>passed</code> outcomes: success criterion is satisfied</li>
         <li>An <code>inapplicable</code> outcome: success criterion needs further testing</li>
       </ul></li>
     </ul>
@@ -81,8 +88,8 @@ There are differences in how assistive technologies handle unknown and invalid l
       <li>Not required for conformance to any W3C accessibility recommendation.</li>
       <li>Outcome mapping: <ul>
         <li>Any <code>failed</code> outcomes: technique is not satisfied</li>
-        <li>All <code>passed</code> outcomes: technique needs further testing</li>
-        <li>An <code>inapplicable</code> outcome: technique needs further testing</li>
+        <li>All <code>passed</code> outcomes: technique is satisfied</li>
+        <li>An <code>inapplicable</code> outcome: technique is satisfied</li>
       </ul></li>
     </ul>
   </details></li>
@@ -92,9 +99,10 @@ There are differences in how assistive technologies handle unknown and invalid l
 
 The following aspects are required in using this rule.
 
-- [Accessibility Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-accessibility)
+- [DOM tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom)
+- [Accessibility tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-accessibility)
 - [CSS Styling](https://www.w3.org/TR/act-rules-aspects/#input-aspects-css)
-- [DOM Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom)
+- [Language](https://www.w3.org/TR/act-rules-aspects/#input-aspects-text)
 
 ## Test Cases
 
@@ -102,73 +110,86 @@ The following aspects are required in using this rule.
 
 #### Passed Example 1
 
-This `article` element has a `lang` [attribute value][] which has a [known primary language tag][].
+This `span` element has a `lang` [attribute value][] of `nl` (Dutch), which matches its [most common language][]. The most common language is Dutch because all words are Dutch.
 
 ```html
-<html>
+<html lang="en">
+	<head>
+		<title>Dutch idioms</title>
+	</head>
 	<body>
-		<article lang="en">
-			They wandered into a strange Tiki bar on the edge of the small beach town.
-		</article>
+		<p>
+			The Dutch phrase <span lang="nl">"Hij ging met de kippen op stok"</span> literally translates into "He went to
+			roost with the chickens", but it means that he went to bed early.
+		</p>
 	</body>
 </html>
 ```
 
 #### Passed Example 2
 
-This `blockquote` element has a `lang` [attribute value][] which has a [known primary language tag][]. The region section ("CH") in the value is ignored by the rule (and the definition of [known primary language tag][]).
+The second `p` element has `lang` attribute value of `nl` (Dutch), which matches its [most common language][]. The most common language is Dutch because all English words are in `span` elements with a `lang` attribute value of `en`. Both `span` elements also have a `lang` attribute matching their most common language.
 
 ```html
-<html>
+<html lang="en">
+	<head>
+		<title>Dutch idioms</title>
+	</head>
 	<body>
-		<blockquote lang="fr-CH">
-			Ils ont trouvé un étrange bar Tiki aux abords de la petite ville balnéaire.
-		</blockquote>
+		<p>Dutch idioms and their English meaning.</p>
+		<p lang="nl">
+			<span lang="en">The Dutch phrase</span> "Hij ging met de kippen op stok"
+			<span lang="en"
+				>literally translates into "He went to roost with the chickens", but it means that he went to bed early.</span
+			>
+		</p>
 	</body>
 </html>
 ```
 
 #### Passed Example 3
 
-This `p` element has a `lang` [attribute value][] which has a [known primary language tag][], but a syntactically invalid region subtag which is ignored by the rule.
+This `div` element has a `lang` [attribute value][] of `en` (English), which matches its [most common language][]. The most common language is English because the accessible texts are English, and all other text is in a `p` element with a (correct) `lang` attribute value of `fr`.
 
 ```html
-<html>
+<html lang="fr">
+	<head>
+		<title>Feu d'artifice du nouvel an</title>
+	</head>
 	<body>
-		<p lang="en-US-GB">
-			They wandered into a strange Tiki bar on the edge of the small beach town.
-		</p>
+		<div lang="en">
+			<img src="/test-assets/shared/fireworks.jpg" alt="Fireworks over Paris" />
+			<p lang="fr">
+				Bonne année !
+			</p>
+		</div>
 	</body>
 </html>
 ```
 
 #### Passed Example 4
 
-This `div` element has a valid `lang` [attribute value][]. There is no [text inheriting its programmatic language][] from the `article` element, therefore its `lang` attribute is not considered by the rule.
+This `span` element has a `lang` [attribute value][] of `fr` (French), which matches one of its [most common languages][most common language]. The most common languages are both English and French because all the words belong to both languages.
 
 ```html
-<html>
-	<body>
-		<article lang="invalid">
-			<div lang="en">
-				They wandered into a strange Tiki bar on the edge of the small beach town.
-			</div>
-		</article>
-	</body>
+<html lang="en">
+	<p>
+		Even though all its words are English and it has meaning in English, the sentence
+		<span lang="fr">Paul put dire comment on tape</span> is also a French sentence.
+	</p>
 </html>
 ```
 
 #### Passed Example 5
 
-This `div` element has a valid `lang` [attribute value][]. The [accessible name][] of the image is [text inheriting its programmatic language][] from the `div` element.
+This `span` element has a `lang` [attribute value][] of `en` (English), which matches one of its [most common languages][most common language]. The most common languages are both English and French because all the words belong to both languages.
 
 ```html
-<html>
-	<body>
-		<div lang="en">
-			<img src="/test-assets/shared/fireworks.jpg" alt="Fireworks over Paris" />
-		</div>
-	</body>
+<html lang="fr">
+	<p>
+		Bien que tous les ses mots soient français et qu'elle ait un sens en français, la phrase
+		<span lang="en">Paul put dire comment on tape</span> est aussi une phrase anglaise.
+	</p>
 </html>
 ```
 
@@ -176,111 +197,151 @@ This `div` element has a valid `lang` [attribute value][]. The [accessible name]
 
 #### Failed Example 1
 
-This `article` element has a `lang` [attribute value][] which does not have a [known primary language tag][] because its primary language subtag does not exist in the [language subtag registry][].
+This `span` element has `lang` attribute value of `fr` (French), which does not match its [most common language][]. The most common language is Dutch because all words are Dutch.
 
 ```html
-<html>
+<html lang="en">
+	<head>
+		<title>Dutch idioms</title>
+	</head>
 	<body>
-		<article lang="dutch">
-			Zij liepen een vreemde Tiki bar binnen, aan de rand van een dorpje aan het strand.
-		</article>
+		<p>
+			The Dutch phrase <span lang="fr">"Hij ging met de kippen op stok"</span> literally translates into "He went to
+			roost with the chickens", but it means that he went to bed early.
+		</p>
 	</body>
 </html>
 ```
 
 #### Failed Example 2
 
-This `article` element has a `lang` [attribute value][] which has no [known primary language tag][].
+The second `p` element has `lang` attribute value of `en` (English), which does not match its [most common language][]. The most common language is Dutch because all English words are in `span` elements with a `lang` attribute value of `fr`. Both `span` elements also have an incorrect `lang` attribute in order to make sure that all targets in this example fail the rule.
 
 ```html
-<html>
+<html lang="nl">
+	<head>
+		<title>Met de kippen op stok</title>
+	</head>
 	<body>
-		<article lang="#!">
-			They wandered into a strange Tiki bar on the edge of the small beach town.
-		</article>
+		<blockquote>
+			<p>"Hij ging met de kippen op stok"</p>
+		</blockquote>
+		<p lang="en">
+			<span lang="fr">The Dutch phrase</span> "Hij ging met de kippen op stok"
+			<span lang="fr"
+				>literally translates into "He went to roost with the chickens", but it means that he went to bed early.</span
+			>
+		</p>
 	</body>
 </html>
 ```
 
 #### Failed Example 3
 
-This `article` element has a `lang` [attribute value][] which consists of only [whitespace][] and thus has no [known primary language tag][].
+This `div` element has a `lang` attribute value of `fr` (French), which does not match its [most common language][]. The most common language is English because the accessible texts are English, and all other text is in a `p` element with a `lang` attribute value of `nl`, which also doesn't match its common language.
 
 ```html
-<html>
+<html lang="fr">
+	<head>
+		<title>Feu d'artifice du nouvel an</title>
+	</head>
 	<body>
-		<article lang="  ">
-			They wandered into a strange Tiki bar on the edge of the small beach town.
-		</article>
+		<div lang="fr">
+			<img src="/test-assets/shared/fireworks.jpg" alt="Fireworks over Paris" />
+			<p lang="nl">
+				Bonne année !
+			</p>
+		</div>
 	</body>
 </html>
 ```
 
 #### Failed Example 4
 
-The `lang` [attribute value][] does not have a valid language tag. The `lang` attribute must be valid because the content is [visible][].
+This `div` element has a `lang` attribute value of `fr` (French), which does not match its [most common language][]. The most common language is English because the accessible name of the `img` element is English. The `lang` attribute on the `p` element is effectively ignored. The `p` element is not applicable because there is no [text inheriting its programmatic language][] from it since its content is neither [visible][] nor [included in the accessibility tree][].
 
 ```html
-<html>
+<html lang="fr">
+	<head>
+		<title>Feu d'artifice du nouvel an</title>
+	</head>
 	<body>
-		<article lang="english">
-			<p aria-hidden="true">
-				They wandered into a strange Tiki bar on the edge of the small beach town.
+		<div lang="fr">
+			<img src="/test-assets/shared/fireworks.jpg" aria-labelledby="caption" />
+			<p lang="en" id="caption" hidden>
+				Fireworks over Paris
 			</p>
-		</article>
-	</body>
-</html>
-```
-
-#### Failed Example 5
-
-The `lang` [attribute value][] does not have a valid language tag, and its [descendant][] is not [visible][] though it is still [included in the accessibility tree][].
-
-```html
-<html>
-	<body>
-		<article lang="English">
-			<p style="position: absolute; top: -9999px">
-				They wandered into a strange Tiki bar on the edge of the small beach town.
-			</p>
-		</article>
-	</body>
-</html>
-```
-
-#### Failed Example 6
-
-This `div` element has an invalid `lang` [attribute value][]. There is no [text inheriting its programmatic language][] from the `article` element, therefore its `lang` attribute is not considered by the rule.
-
-```html
-<html>
-	<body>
-		<article lang="en">
-			<div lang="invalid">
-				They wandered into a strange Tiki bar on the edge of the small beach town.
-			</div>
-		</article>
-	</body>
-</html>
-```
-
-#### Failed Example 7
-
-This `div` element has an invalid `lang` [attribute value][]. The [accessible name][] of the image is [text inheriting its programmatic language][] from the `div` element.
-
-```html
-<html>
-	<body>
-		<div lang="invalid">
-			<img src="/test-assets/shared/fireworks.jpg" alt="Fireworks over Paris" />
 		</div>
 	</body>
 </html>
 ```
 
-#### Failed Example 8
+### Inapplicable
 
-The `lang` [attribute value][] of this `p` element is an [iso 639.2][] three letters code, which has no [known primary language tag][].
+#### Inapplicable Example 1
+
+There are no HTML elements in this document.
+
+```svg
+<svg xmlns="http://www.w3.org/2000/svg" lang="en">
+    <text x="0" y="0">I love ACT rules!</text>
+</svg>
+```
+
+#### Inapplicable Example 2
+
+There is no descendant of a `body` element with a `lang` attribute.
+
+```html
+<html lang="en">
+	<body>
+		<p>I love ACT rules!</p>
+	</body>
+</html>
+```
+
+#### Inapplicable Example 3
+
+This `p` element has an invalid language tag.
+
+```html
+<html lang="en">
+	<body>
+		<p lang="français">
+			I love ACT rules!
+		</p>
+	</body>
+</html>
+```
+
+#### Inapplicable Example 4
+
+There is no [text inheriting its programmatic language][] from the first `p` element because it has no content.
+
+```html
+<html lang="en">
+	<body>
+		<p lang="fr"></p>
+		<p>I love ACT rules!</p>
+	</body>
+</html>
+```
+
+#### Inapplicable Example 5
+
+There is no [text inheriting its programmatic language][] from this `p` element because it has no content that is either [visible][] or [included in the accessibility tree][].
+
+```html
+<html lang="en">
+	<body>
+		<p lang="fr" hidden>I love ACT rules!</p>
+	</body>
+</html>
+```
+
+#### Inapplicable Example 6
+
+The `lang` [attribute value][] of this `p` element has no [known primary language tag][] because the `eng` [iso 639.2][] three letters code does not exist in the [language subtag registry][].
 
 ```html
 <html lang="en">
@@ -290,72 +351,14 @@ The `lang` [attribute value][] of this `p` element is an [iso 639.2][] three let
 </html>
 ```
 
-#### Failed Example 9
+#### Inapplicable Example 7
 
-The `lang` [attribute value][] of this `p` element is a [grandfathered tag][grandfathered tags], which has no [known primary language tag][].
+The `lang` [attribute value][] of this `p` element has no [known primary language tag][] because the `i-lox` [grandfathered tag][grandfathered tags] does not exist in the [language subtag registry][].
 
 ```html
 <html lang="lb">
 	<body>
 		<p lang="i-lux">Lëtzebuerg ass e Land an Europa.</p>
-	</body>
-</html>
-```
-
-### Inapplicable
-
-#### Inapplicable Example 1
-
-There is no element with a lang attribute value which is a descendant of a body element.
-
-```html
-<html lang="en">
-	<body>
-		They wandered into a strange Tiki bar on the edge of the small beach town.
-	</body>
-</html>
-```
-
-#### Inapplicable Example 2
-
-There is no element which is a descendant of a `body` element and has a non-empty `lang` [attribute value][].
-
-```html
-<html lang="en">
-	<body>
-		<article lang="">
-			They wandered into a strange Tiki bar on the edge of the small beach town.
-		</article>
-	</body>
-</html>
-```
-
-#### Inapplicable Example 3
-
-There is no element with a [text node][] as a [descendant][] in the [flat tree][] that is either [visible][] or [included in the accessibility tree][].
-
-```html
-<html lang="en">
-	<body>
-		<p lang="hidden">
-			<span style="display: none;">
-				They wandered into a strange Tiki bar on the edge of the small beach town.
-			</span>
-		</p>
-	</body>
-</html>
-```
-
-#### Inapplicable Example 4
-
-There is no [text inheriting its programmatic language][] from this `div` element.
-
-```html
-<html>
-	<body>
-		<div lang="invalid">
-			<img src="/test-assets/shared/fireworks.jpg" alt="" />
-		</div>
 	</body>
 </html>
 ```
@@ -419,6 +422,12 @@ As a consequence of this definition, however, [grandfathered tags][] do not have
 
 Subtags, notably the [primary language subtag][], are [case insensitive][]. Comparison with the [language subtag registry][] must be done in a case insensitive way.
 
+### Most Common Language of an Element {#most-common-element-language}
+
+The _most common language of an element_ is determined by counting the number of _words_ in the [text inheriting its programmatic language][] from this element that are part of any of the languages in the [language subtag registry][]. The same word can be part of multiple languages. In case of ties, the element has several most common languages. If there are no words in the [text inheriting its programmatic language][] from the element, then it has no most common language.
+
+For more details, see [examples of most common language][].
+
 ### Namespaced Element {#namespaced-element}
 
 An [element][] with a specific [namespaceURI][] value from [HTML namespaces][]. For example an "SVG element" is any element with the "SVG namespace", which is `http://www.w3.org/2000/svg`.
@@ -471,23 +480,7 @@ Content is considered _visible_ if making it fully transparent would result in a
 
 For more details, see [examples of visible](https://act-rules.github.io/pages/examples/visible/).
 
-### Whitespace {#whitespace}
-
-_Whitespace_ are characters that have the Unicode "White_Space" property in the [Unicode properties list](https://www.unicode.org/Public/UCD/latest/ucd/PropList.txt).
-
-This includes:
-
-- all characters in the [Unicode Separator categories](https://www.unicode.org/versions/Unicode11.0.0/ch04.pdf#G134153), and
-- the following characters in the [Other, Control](https://www.unicode.org/versions/Unicode11.0.0/ch04.pdf#G134153) category:
-
-  - Character tabulation (U+0009)
-  - Line Feed (LF) (U+000A)
-  - Line Tabulation (U+000B)
-  - Form Feed (FF) (U+000C)
-  - Carriage Return (CR) (U+000D)
-  - Next Line (NEL) (U+0085)
-
-{% include_relative implementations/de46e4.md %}
+{% include_relative implementations/off6ek.md %}
 
 ## Changelog
 
@@ -502,42 +495,42 @@ This is the first version of this ACT rule.
 [case insensitive]: https://www.rfc-editor.org/rfc/rfc5646.html#section-2.1.1
 [comma separated]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#comma-separated-tokens 'HTML Specification of Comma Separated Tokens'
 [computed]: https://www.w3.org/TR/css-cascade/#computed-value 'CSS definition of computed value'
-[content type]: https://dom.spec.whatwg.org/#concept-document-content-type
-[descendant]: https://dom.spec.whatwg.org/#concept-tree-descendant
+[content type]: https://dom.spec.whatwg.org/#concept-document-content-type 'DOM definition of Content Type'
 [document title]: https://html.spec.whatwg.org/multipage/dom.html#document.title 'HTML document title, as of 2020/06/05'
-[document]: https://dom.spec.whatwg.org/#document-element 'DOM document element, as of 2020/06/05'
+[document]: https://dom.spec.whatwg.org/#document-element 'DOM definition of Document Element'
 [element]: https://dom.spec.whatwg.org/#element 'DOM element, 2021/05/31'
 [enumerated attributes]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#enumerated-attribute 'HTML Specification of Enumerated Attribute'
 [examples of accessible name]: https://act-rules.github.io/pages/examples/accessible-name/
 [examples of included in the accessibility tree]: https://act-rules.github.io/pages/examples/included-in-the-accessibility-tree/
-[flat tree]: https://drafts.csswg.org/css-scoping/#flat-tree
+[examples of most common language]: https://act-rules.github.io/pages/examples/element-language/
+[flat tree]: https://drafts.csswg.org/css-scoping/#flat-tree 'CSS Scoping definition of Flat tree, working draft'
 [fully active]: https://html.spec.whatwg.org/#fully-active 'HTML definition of Fully Active Document'
 [grandfathered tags]: https://www.rfc-editor.org/rfc/rfc5646.html#section-2.2.8
 [html aam]: https://www.w3.org/TR/html-aam-1.0/#html-attribute-state-and-property-mappings 'Specification of HTML attributes value mapping to ARIA states and properties'
 [html element]: #namespaced-element
 [html namespaces]: https://infra.spec.whatwg.org/#namespaces 'HTML namespace, 2021/05/31'
 [idl attribute]: https://heycam.github.io/webidl/#idl-attributes "Definition of Web IDL Attribute (Editor's Draft)"
-[included in the accessibility tree]: #included-in-the-accessibility-tree
+[included in the accessibility tree]: #included-in-the-accessibility-tree 'Definition of Included in the Accessibility Tree'
 [inclusive ancestors]: https://dom.spec.whatwg.org/#concept-tree-inclusive-ancestor 'DOM Definition of Inclusive Ancestor'
 [inclusive descendant]: https://dom.spec.whatwg.org/#concept-tree-inclusive-descendant 'DOM definition of Inclusive Descendant'
 [iso 639.2]: https://www.loc.gov/standards/iso639-2/php/code_list.php 'ISO 639.2: Codes for the Representation of Names of Languages'
-[known primary language tag]: #known-primary-language-tag
-[language subtag registry]: https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry
+[known primary language tag]: #known-primary-language-tag 'Definition of Known Primary Language Tag'
+[language subtag registry]: http://www.iana.org/assignments/language-subtag-registry/language-subtag-registry
 [language tag]: https://www.rfc-editor.org/rfc/rfc5646.html#section-2.1
+[most common language]: #most-common-element-language 'Definition of Common Language of an Element'
 [namespaceuri]: https://dom.spec.whatwg.org/#dom-element-namespaceuri 'DOM Element namespaceURI, 2021/05/31'
-[node document]: https://dom.spec.whatwg.org/#concept-node-document
 [numbers]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#numbers 'HTML Specification of Number Parsing'
 [primary language subtag]: https://www.rfc-editor.org/rfc/rfc5646.html#section-2.2.1
+[primary language]: https://www.rfc-editor.org/rfc/rfc5646.html#section-2.2.1 'Definition of primary language subtag'
 [reflect]: https://html.spec.whatwg.org/multipage/common-dom-interfaces.html#reflecting-content-attributes-in-idl-attributes 'HTML specification of Reflecting Content Attributes in IDL Attributes'
 [rfc 5646]: https://www.rfc-editor.org/rfc/rfc5646.html#section-2.1
 [sc312]: https://www.w3.org/TR/WCAG21/#language-of-parts 'Success Criterion 3.1.2 Language of Parts'
 [selectors level 3]: https://drafts.csswg.org/selectors-3/#lang-pseudo
 [space separated]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#space-separated-tokens 'HTML Specification of Space Separated Tokens'
 [text inheriting its programmatic language]: #text-inheriting-language 'Definition of Text Inheriting its Programmatic Language from an Element'
-[text node]: https://dom.spec.whatwg.org/#text
 [text nodes]: https://dom.spec.whatwg.org/#text 'DOM text, as of 2020/06/05'
 [top-level browsing context]: https://html.spec.whatwg.org/#top-level-browsing-context 'HTML top-level browsing context, as of 2020/06/05'
 [type field]: https://www.rfc-editor.org/rfc/rfc5646.html#section-3.1.3
-[visible]: #visible 'Definition of visible'
+[usc312]: https://www.w3.org/WAI/WCAG21/Understanding/language-of-parts.html 'Understanding Success Criterion 3.1.2: Language of Parts'
+[visible]: #visible 'Definition of Visible'
 [wai-aria specification]: https://www.w3.org/TR/wai-aria-1.1/#propcharacteristic_value 'WAI-ARIA Specification of States and Properties Value'
-[whitespace]: #whitespace 'Definition of Whitespace'
