@@ -13,7 +13,7 @@ footer: |
   <p><strong>Authors:</strong> <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
   
-  <p><strong>Assets:</strong> Test cases use assets from the following sources: W3C; HTML and W3C logo, Wikimedia; Fireworks image, Adobe; PDF logo</p>
+  <p><strong>Assets:</strong> Test cases use assets from the following sources: W3C; HTML and W3C logo; Wikimedia; Fireworks image; Adobe; PDF logo</p>
 proposed: true
 rule_meta:
   id: qt1vmo
