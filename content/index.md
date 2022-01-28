@@ -34,6 +34,7 @@ These Test Rules have been approved by the Accessibility Guidelines Working Grou
 
 * [`autocomplete` attribute has valid value](/standards-guidelines/act/rules/autocomplete-valid-value-73f2c2/)
 * [Button has non-empty accessible name](/standards-guidelines/act/rules/button-non-empty-accessible-name-97a4e1/)
+* [Element with `lang` attribute has valid language tag](/standards-guidelines/act/rules/element-lang-valid-de46e4/)
 * [Element marked as decorative is not exposed](/standards-guidelines/act/rules/element-marked-decorative-is-not-exposed-46ca7f/)
 * [Form field has non-empty accessible name](/standards-guidelines/act/rules/form-field-non-empty-accessible-name-e086e5/)
 * [HTML page has `lang` attribute](/standards-guidelines/act/rules/html-page-lang-b5c3f8/)
@@ -72,6 +73,7 @@ Proposed test rules will be published when they have at least one implementation
 * [Document has heading for non-repeated content](/standards-guidelines/act/rules/document-has-headings-for-non-repeated-content-047fe0/)
 * [Document has an instrument to move focus to non-repeated content](/standards-guidelines/act/rules/document-has-instrument-to-non-repeated-content-ye5d6e/)
 * [Document has a landmark with non-repeated content](/standards-guidelines/act/rules/document-has-landmark-with-non-repeated-content-b40fd1/)
+* [HTML element language subtag matches language](/standards-guidelines/act/rules/element-lang-matches-default-language-off6ek/)
 * [`svg` element with explicit role has non-empty accessible name](/standards-guidelines/act/rules/explicit-SVG-image-non-empty-accessible-name-7d6734/)
 * [Focusable element has no keyboard trap](/standards-guidelines/act/rules/focusable-no-keyboard-trap-80af7b/)
 * [Focusable element has no keyboard trap via non-standard navigation](/standards-guidelines/act/rules/focusable-no-keyboard-trap-non-standard-nav-ebe86a/)
@@ -92,7 +94,6 @@ Proposed test rules will be published when they have at least one implementation
 * [Line height in `style` attributes is not `!important`](/standards-guidelines/act/rules/line-height-not-important-78fd32/)
 * [Link is descriptive](/standards-guidelines/act/rules/link-alone-descriptive-aizyf1/)
 * [Link in context is descriptive](/standards-guidelines/act/rules/link-in-context-descriptive-5effbb/)
-* [Link has non-empty accessible name](/standards-guidelines/act/rules/link-non-empty-accessible-name-c487ae/)
 * [Links with identical accessible names have equivalent purpose](/standards-guidelines/act/rules/links-identical-name-equivalent-purpose-b20e66/)
 * [Links with identical accessible names and context serve equivalent purpose](/standards-guidelines/act/rules/links-with-identical-names-and-context-serve-equivalent-purpose-fd3a94/)
 * [Menuitem has non-empty accessible name](/standards-guidelines/act/rules/menuitem-non-empty-name-m6b1q3/)

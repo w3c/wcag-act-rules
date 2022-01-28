@@ -6,11 +6,12 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/html-page-title-descriptive-c4a8a4.md
+feedbackmail: public-wcag-act@w3.org
 footer: |
-  <p><strong>Date:</strong> Updated 24 January 2022</p>
   <p><strong>Rule Identifier:</strong> c4a8a4</p>
-  <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/corbb">Corbb O'Connor</a>.</p>
-  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>.</p>
+  <p><strong>Date:</strong> Updated 28 January 2022</p>
+  <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/corbb">Corbb O'Connor</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
+  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
 rule_meta:
   id: c4a8a4
@@ -18,7 +19,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that the first title in an HTML page describes the topic or purpose of that page.
-  last_modified: 24 January 2022
+  last_modified: 28 January 2022
   scs_tested:
     - handle: Page Titled
       num: 2.4.2
