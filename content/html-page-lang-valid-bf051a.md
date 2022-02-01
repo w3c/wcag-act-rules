@@ -6,11 +6,12 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/html-page-lang-valid-bf051a.md
+feedbackmail: public-wcag-act@w3.org
 footer: |
-  <p><strong>Date:</strong> Updated 24 January 2022</p>
   <p><strong>Rule Identifier:</strong> bf051a</p>
-  <p><strong>Authors:</strong> <a href="https://github.com/jkodu">Jey Nandakumar</a>. <em>Previous Authors:</em> <a href="https://github.com/annika-FTB">Annika Nietzio</a>.</p>
-  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>.</p>
+  <p><strong>Date:</strong> Updated 28 January 2022</p>
+  <p><strong>Authors:</strong> <a href="https://github.com/jkodu">Jey Nandakumar</a>. Previous Authors: <a href="https://github.com/annika-FTB">Annika Nietzio</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
+  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It was approved and published by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: false
 rule_meta:
   id: bf051a
@@ -18,7 +19,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that the `lang` attribute of the root element of a non-embedded HTML page has a language tag with a known primary language subtag.
-  last_modified: 24 January 2022
+  last_modified: 28 January 2022
   scs_tested:
     - handle: Language of Page
       num: 3.1.1

@@ -6,12 +6,14 @@ lang: en
 github:
   repository: w3c/wcag-act-rules
   path: content/image-not-in-acc-tree-is-decorative-e88epe.md
+feedbackmail: public-wcag-act@w3.org
 footer: |
-  <p><strong>Date:</strong> Updated 24 January 2022</p>
   <p><strong>Rule Identifier:</strong> e88epe</p>
-  <p><strong>Authors:</strong> <a href="https://www.linkedin.com/in/brianbors/">Brian Bors</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>.</p>
-  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>.</p>
-  <p><strong>Assets:</strong> test cases use assets from the following sources: W3C. Wikimedia. Adobe.</p>
+  <p><strong>Date:</strong> Updated 28 January 2022</p>
+  <p><strong>Authors:</strong> <a href="https://www.linkedin.com/in/brianbors/">Brian Bors</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
+  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
+  
+  <p><strong>Assets:</strong> Test cases use assets from the following sources: W3C; Wikimedia; Adobe</p>
 proposed: true
 rule_meta:
   id: e88epe
@@ -19,7 +21,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that visible `img`, `svg` and `canvas` elements that are ignored by assistive technologies are decorative.
-  last_modified: 24 January 2022
+  last_modified: 28 January 2022
   scs_tested:
     - handle: Non-text Content
       num: 1.1.1
