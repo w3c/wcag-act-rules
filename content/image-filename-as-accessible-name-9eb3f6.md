@@ -26,6 +26,10 @@ rule_meta:
       level: A
 ---
 
+## Deprecated
+
+This rule has been deprecated and superseded by Rule [Image accessible name is descriptive](https://act-rules.github.io/rules/qt1vmo). This rule is not maintained anymore and should not be used.
+
 ## Applicability
 
 This rule applies to any [HTML element][] that is [included in the accessibility tree][] and has a non-empty (`""`) [accessible name][], for which one of the following is true:

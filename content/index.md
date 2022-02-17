@@ -127,3 +127,9 @@ Proposed test rules will be published when they have at least one implementation
 * [Audio and visuals of `video` element have transcript](/standards-guidelines/act/rules/video-transcript-1a02b0/)
 * [Visible label is part of accessible name](/standards-guidelines/act/rules/visible-label-in-accessible-name-2ee8b8/)
 * [Zoomed text node is not clipped with CSS overflow](/standards-guidelines/act/rules/zoom-text-no-overflow-clipping-59br37/)
+
+## Deprecated Test Rules
+
+These Test Rules have been deprecated and should not be used.
+
+* [Image filename is accessible name for image](/standards-guidelines/act/rules/image-filename-as-accessible-name-9eb3f6/)
