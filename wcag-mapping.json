@@ -149,7 +149,7 @@
       "permalink": "/standards-guidelines/act/rules/aria-attr-defined-5f99a7/",
       "successCriteria": [],
       "wcagTechniques": [],
-      "proposed": false
+      "proposed": true
     },
     {
       "title": "Element with aria-hidden has no focusable content",
@@ -158,7 +158,7 @@
         "name-role-value"
       ],
       "wcagTechniques": [],
-      "proposed": false
+      "proposed": true
     },
     {
       "title": "ARIA required context role",
@@ -167,7 +167,7 @@
         "info-and-relationships"
       ],
       "wcagTechniques": [],
-      "proposed": false
+      "proposed": true
     },
     {
       "title": "ARIA required owned elements",
@@ -176,7 +176,7 @@
         "info-and-relationships"
       ],
       "wcagTechniques": [],
-      "proposed": false
+      "proposed": true
     },
     {
       "title": "ARIA state or property is permitted",
@@ -185,14 +185,14 @@
       "wcagTechniques": [
         "ARIA5"
       ],
-      "proposed": false
+      "proposed": true
     },
     {
       "title": "ARIA state or property has valid value",
       "permalink": "/standards-guidelines/act/rules/aria-state-or-property-valid-value-6a7281/",
       "successCriteria": [],
       "wcagTechniques": [],
-      "proposed": false
+      "proposed": true
     },
     {
       "title": "Attribute is not duplicated",
@@ -203,14 +203,14 @@
       "wcagTechniques": [
         "H94"
       ],
-      "proposed": false
+      "proposed": true
     },
     {
       "title": "audio element content is media alternative for text",
       "permalink": "/standards-guidelines/act/rules/audio-as-media-alternative-afb423/",
       "successCriteria": [],
       "wcagTechniques": [],
-      "proposed": false
+      "proposed": true
     },
     {
       "title": "audio or video avoids automatically playing audio",
@@ -223,7 +223,7 @@
         "G170",
         "G171"
       ],
-      "proposed": false
+      "proposed": true
     },
     {
       "title": "audio element content has text alternative",
@@ -234,14 +234,14 @@
       "wcagTechniques": [
         "G158"
       ],
-      "proposed": false
+      "proposed": true
     },
     {
       "title": "audio element content has transcript",
       "permalink": "/standards-guidelines/act/rules/audio-transcript-2eb176/",
       "successCriteria": [],
       "wcagTechniques": [],
-      "proposed": false
+      "proposed": true
     },
     {
       "title": "Audio or video that plays automatically has no audio that lasts more than 3 seconds",
@@ -250,7 +250,7 @@
       "wcagTechniques": [
         "G60"
       ],
-      "proposed": false
+      "proposed": true
     },
     {
       "title": "audio or video that plays automatically has a control mechanism",
@@ -259,7 +259,7 @@
       "wcagTechniques": [
         "G170"
       ],
-      "proposed": false
+      "proposed": true
     },
     {
       "title": "Text content that changes automatically can be paused, stopped or hidden",
@@ -268,7 +268,7 @@
         "pause-stop-hide"
       ],
       "wcagTechniques": [],
-      "proposed": false
+      "proposed": true
     },
     {
       "title": "Block of repeated content is collapsible",
@@ -277,7 +277,7 @@
       "wcagTechniques": [
         "SCR28"
       ],
-      "proposed": false
+      "proposed": true
     },
     {
       "title": "Bypass Blocks of Repeated Content",
@@ -292,7 +292,7 @@
         "H69",
         "SCR28"
       ],
-      "proposed": false
+      "proposed": true
     },
     {
       "title": "Orientation of the page is not restricted using CSS transform property",
@@ -301,7 +301,7 @@
         "orientation"
       ],
       "wcagTechniques": [],
-      "proposed": false
+      "proposed": true
     },
     {
       "title": "Device motion based changes to the content can be disabled",
@@ -310,7 +310,7 @@
         "motion-actuation"
       ],
       "wcagTechniques": [],
-      "proposed": false
+      "proposed": true
     },
     {
       "title": "Device motion based changes to the content can also be created from the user interface",
@@ -319,7 +319,7 @@
         "motion-actuation"
       ],
       "wcagTechniques": [],
-      "proposed": false
+      "proposed": true
     },
     {
       "title": "Document has heading for non-repeated content",
@@ -328,7 +328,7 @@
       "wcagTechniques": [
         "H69"
       ],
-      "proposed": false
+      "proposed": true
     },
     {
       "title": "Document has an instrument to move focus to non-repeated content",
@@ -339,14 +339,14 @@
         "G123",
         "G124"
       ],
-      "proposed": false
+      "proposed": true
     },
     {
       "title": "Document has a landmark with non-repeated content",
       "permalink": "/standards-guidelines/act/rules/document-has-landmark-with-non-repeated-content-b40fd1/",
       "successCriteria": [],
       "wcagTechniques": [],
-      "proposed": false
+      "proposed": true
     },
     {
       "title": "HTML element language subtag matches language",
@@ -357,7 +357,7 @@
       "wcagTechniques": [
         "H58"
       ],
-      "proposed": false
+      "proposed": true
     },
     {
       "title": "svg element with explicit role has non-empty accessible name",
@@ -366,7 +366,7 @@
         "non-text-content"
       ],
       "wcagTechniques": [],
-      "proposed": false
+      "proposed": true
     },
     {
       "title": "Focusable element has no keyboard trap",
@@ -377,21 +377,21 @@
       "wcagTechniques": [
         "G21"
       ],
-      "proposed": false
+      "proposed": true
     },
     {
       "title": "Focusable element has no keyboard trap via non-standard navigation",
       "permalink": "/standards-guidelines/act/rules/focusable-no-keyboard-trap-non-standard-nav-ebe86a/",
       "successCriteria": [],
       "wcagTechniques": [],
-      "proposed": false
+      "proposed": true
     },
     {
       "title": "Focusable element has no keyboard trap via standard navigation",
       "permalink": "/standards-guidelines/act/rules/focusable-no-keyboard-trap-standard-nav-a1b64e/",
       "successCriteria": [],
       "wcagTechniques": [],
-      "proposed": false
+      "proposed": true
     },
     {
       "title": "Form field label is descriptive",
@@ -402,7 +402,7 @@
       "wcagTechniques": [
         "G131"
       ],
-      "proposed": false
+      "proposed": true
     },
     {
       "title": "Heading is descriptive",
@@ -411,7 +411,7 @@
         "headings-and-labels"
       ],
       "wcagTechniques": [],
-      "proposed": false
+      "proposed": true
     },
     {
       "title": "Heading has non-empty accessible name",
@@ -422,7 +422,7 @@
       "wcagTechniques": [
         "H42"
       ],
-      "proposed": false
+      "proposed": true
     },
     {
       "title": "HTML page language subtag matches default language",
@@ -433,7 +433,7 @@
       "wcagTechniques": [
         "H57"
       ],
-      "proposed": false
+      "proposed": true
     },
     {
       "title": "HTML page title is descriptive",
@@ -445,7 +445,7 @@
         "G88",
         "H25"
       ],
-      "proposed": false
+      "proposed": true
     },
     {
       "title": "id attribute value is unique",
@@ -456,7 +456,7 @@
       "wcagTechniques": [
         "H93"
       ],
-      "proposed": false
+      "proposed": true
     },
     {
       "title": "iframe elements with identical accessible names have equivalent purpose",
@@ -465,7 +465,7 @@
         "name-role-value"
       ],
       "wcagTechniques": [],
-      "proposed": false
+      "proposed": true
     },
     {
       "title": "iframe element has non-empty accessible name",
@@ -474,7 +474,7 @@
         "name-role-value"
       ],
       "wcagTechniques": [],
-      "proposed": false
+      "proposed": true
     },
     {
       "title": "iframe with negative tabindex has no interactive elements",
@@ -485,7 +485,7 @@
       "wcagTechniques": [
         "G202"
       ],
-      "proposed": false
+      "proposed": true
     },
     {
       "title": "Image accessible name is descriptive",
@@ -497,7 +497,7 @@
         "G94",
         "G95"
       ],
-      "proposed": false
+      "proposed": true
     },
     {
       "title": "DEPRECATED — Image filename is accessible name for image",
@@ -509,7 +509,7 @@
         "G94",
         "G95"
       ],
-      "proposed": false
+      "proposed": true
     },
     {
       "title": "HTML graphics contain no text",
@@ -519,7 +519,7 @@
         "images-of-text-no-exception"
       ],
       "wcagTechniques": [],
-      "proposed": false
+      "proposed": true
     },
     {
       "title": "Image not in the accessibility tree is decorative",
@@ -528,7 +528,7 @@
         "non-text-content"
       ],
       "wcagTechniques": [],
-      "proposed": false
+      "proposed": true
     },
     {
       "title": "Error message describes invalid form field value",
@@ -537,7 +537,7 @@
         "error-identification"
       ],
       "wcagTechniques": [],
-      "proposed": false
+      "proposed": true
     },
     {
       "title": "Line height in style attributes is not !important",
@@ -546,7 +546,7 @@
         "text-spacing"
       ],
       "wcagTechniques": [],
-      "proposed": false
+      "proposed": true
     },
     {
       "title": "Link is descriptive",
@@ -555,7 +555,7 @@
         "link-purpose-link-only"
       ],
       "wcagTechniques": [],
-      "proposed": false
+      "proposed": true
     },
     {
       "title": "Link in context is descriptive",
@@ -565,7 +565,7 @@
         "link-purpose-link-only"
       ],
       "wcagTechniques": [],
-      "proposed": false
+      "proposed": true
     },
     {
       "title": "Links with identical accessible names have equivalent purpose",
@@ -574,7 +574,7 @@
         "link-purpose-link-only"
       ],
       "wcagTechniques": [],
-      "proposed": false
+      "proposed": true
     },
     {
       "title": "Links with identical accessible names and context serve equivalent purpose",
@@ -584,7 +584,7 @@
         "link-purpose-link-only"
       ],
       "wcagTechniques": [],
-      "proposed": false
+      "proposed": true
     },
     {
       "title": "Menuitem has non-empty accessible name",
@@ -593,7 +593,7 @@
         "name-role-value"
       ],
       "wcagTechniques": [],
-      "proposed": false
+      "proposed": true
     },
     {
       "title": "meta element has no refresh delay",
@@ -607,7 +607,7 @@
         "G110",
         "H76"
       ],
-      "proposed": false
+      "proposed": true
     },
     {
       "title": "meta element has no refresh delay (no exception)",
@@ -620,7 +620,7 @@
         "G110",
         "H76"
       ],
-      "proposed": false
+      "proposed": true
     },
     {
       "title": "meta viewport allows for zoom",
@@ -629,7 +629,7 @@
         "resize-text"
       ],
       "wcagTechniques": [],
-      "proposed": false
+      "proposed": true
     },
     {
       "title": "Content has alternative for visual reference",
@@ -641,7 +641,7 @@
       "wcagTechniques": [
         "G96"
       ],
-      "proposed": false
+      "proposed": true
     },
     {
       "title": "Object element rendering non-text content has non-empty accessible name",
@@ -650,7 +650,7 @@
         "non-text-content"
       ],
       "wcagTechniques": [],
-      "proposed": false
+      "proposed": true
     },
     {
       "title": "Element with presentational children has no focusable content",
@@ -659,7 +659,7 @@
         "name-role-value"
       ],
       "wcagTechniques": [],
-      "proposed": false
+      "proposed": true
     },
     {
       "title": "No keyboard shortcut uses only printable characters",
@@ -668,7 +668,7 @@
         "character-key-shortcuts"
       ],
       "wcagTechniques": [],
-      "proposed": false
+      "proposed": true
     },
     {
       "title": "role attribute has valid value",
@@ -680,7 +680,7 @@
         "ARIA4",
         "G108"
       ],
-      "proposed": false
+      "proposed": true
     },
     {
       "title": "Element with role attribute has required states and properties",
@@ -691,7 +691,7 @@
       "wcagTechniques": [
         "ARIA5"
       ],
-      "proposed": false
+      "proposed": true
     },
     {
       "title": "Scrollable element is keyboard accessible",
@@ -703,7 +703,7 @@
       "wcagTechniques": [
         "G202"
       ],
-      "proposed": false
+      "proposed": true
     },
     {
       "title": "Element in sequential focus order has visible focus",
@@ -712,7 +712,7 @@
         "focus-visible"
       ],
       "wcagTechniques": [],
-      "proposed": false
+      "proposed": true
     },
     {
       "title": "Table header cell has assigned cells",
@@ -721,7 +721,7 @@
         "info-and-relationships"
       ],
       "wcagTechniques": [],
-      "proposed": false
+      "proposed": true
     },
     {
       "title": "headers attribute specified on a cell refers to cells in the same table element",
@@ -732,7 +732,7 @@
       "wcagTechniques": [
         "H43"
       ],
-      "proposed": false
+      "proposed": true
     },
     {
       "title": "Text has minimum contrast",
@@ -742,7 +742,7 @@
         "contrast-enhanced"
       ],
       "wcagTechniques": [],
-      "proposed": false
+      "proposed": true
     },
     {
       "title": "Text has enhanced contrast",
@@ -754,7 +754,7 @@
         "G17",
         "G18"
       ],
-      "proposed": false
+      "proposed": true
     },
     {
       "title": "video element auditory content has accessible alternative",
@@ -767,7 +767,7 @@
         "G93",
         "H95"
       ],
-      "proposed": false
+      "proposed": true
     },
     {
       "title": "video element visual content has accessible alternative",
@@ -783,14 +783,14 @@
         "G78",
         "G173"
       ],
-      "proposed": false
+      "proposed": true
     },
     {
       "title": "video element content is media alternative for text",
       "permalink": "/standards-guidelines/act/rules/video-as-media-alternative-ab4d13/",
       "successCriteria": [],
       "wcagTechniques": [],
-      "proposed": false
+      "proposed": true
     },
     {
       "title": "video element visual content has audio description",
@@ -801,7 +801,7 @@
         "G78",
         "G173"
       ],
-      "proposed": false
+      "proposed": true
     },
     {
       "title": "video element auditory content has captions",
@@ -812,7 +812,7 @@
         "G93",
         "H95"
       ],
-      "proposed": false
+      "proposed": true
     },
     {
       "title": "video element visual content has description track",
@@ -822,7 +822,7 @@
         "G78",
         "H96"
       ],
-      "proposed": false
+      "proposed": true
     },
     {
       "title": "video element visual-only content has accessible alternative",
@@ -834,14 +834,14 @@
         "G159",
         "G166"
       ],
-      "proposed": false
+      "proposed": true
     },
     {
       "title": "video element visual-only content is media alternative for text",
       "permalink": "/standards-guidelines/act/rules/video-only-as-media-alternative-fd26cf/",
       "successCriteria": [],
       "wcagTechniques": [],
-      "proposed": false
+      "proposed": true
     },
     {
       "title": "video element visual-only content has audio track alternative",
@@ -850,7 +850,7 @@
       "wcagTechniques": [
         "G166"
       ],
-      "proposed": false
+      "proposed": true
     },
     {
       "title": "video element visual-only content has description track",
@@ -859,7 +859,7 @@
       "wcagTechniques": [
         "H96"
       ],
-      "proposed": false
+      "proposed": true
     },
     {
       "title": "video element visual-only content has transcript",
@@ -868,7 +868,7 @@
       "wcagTechniques": [
         "G159"
       ],
-      "proposed": false
+      "proposed": true
     },
     {
       "title": "video element visual content has strict accessible alternative",
@@ -881,7 +881,7 @@
         "G78",
         "G173"
       ],
-      "proposed": false
+      "proposed": true
     },
     {
       "title": "Audio and visuals of video element have transcript",
@@ -892,7 +892,7 @@
       "wcagTechniques": [
         "G69"
       ],
-      "proposed": false
+      "proposed": true
     },
     {
       "title": "Visible label is part of accessible name",
@@ -903,7 +903,7 @@
       "wcagTechniques": [
         "G208"
       ],
-      "proposed": false
+      "proposed": true
     },
     {
       "title": "Zoomed text node is not clipped with CSS overflow",
@@ -912,7 +912,7 @@
         "resize-text"
       ],
       "wcagTechniques": [],
-      "proposed": false
+      "proposed": true
     }
   ]
 }
