@@ -35,10 +35,14 @@ ytkey: AIzaSyCiZ9uToWu9jb7BTx47NtzCvmGGXKXp8nI
 
 remote_theme: w3c/wai-website-theme
 
+collections_dir: _collections
 collections:
   wai-wcag-act-rules-patterns:
     title: Glossary
     permalink: /:collection/:name/
+    output: true
+  testcases-ff89c9:
+    permalink: /standards-guidelines/act/rules/:collection/:name/
     output: true
 
 defaults:
