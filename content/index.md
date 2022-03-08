@@ -3,17 +3,11 @@ title: "All WCAG 2 Test Rules"
 permalink: /standards-guidelines/act/rules/
 ref: /standards-guidelines/act/rules/
 lang: en
-# translators: # Uncomment (remove #) for translations, one - name line per translator.
-# - name: Translator 1
-# - name: Translator 2
-# contributors:
-# - name: Contributor 1
-# - name: Contributor 2
 type_of_guidance: false
 footer: ""
 github:
   repository: w3c/wcag-act-rules
-  path: content/about.md
+  path: content/index.md
 ---
 
 {::nomarkdown}
@@ -32,10 +26,20 @@ This page lists [WCAG 2 Test Rules](https://www.w3.org/WAI/standards-guidelines/
 
 These Test Rules have been approved by the Accessibility Guidelines Working Group. They are fully implemented in at least one evaluation tool or methodology.
 
-* [ARIA required context role](/standards-guidelines/act/rules/ff89c9/)
+<ul>
+{% for rule in site.data.rules["act-rules"] %}
+  {% if rule.proposed == false and rule.deprecated != true %}
+    <li><a href="{{ rule.permalink }}">{{ rule.title }}</a>
+  {% endif %}
+{% endfor %}
+</ul>
 
 ## Proposed Test Rules
 
 Proposed test rules will be published when they have at least one implementation and are approved by the AGWG.
 
-* [ARIA required context role](/standards-guidelines/act/rules/ff89c9/proposed/)
+<ul>
+{% for rule in site.data.rules["act-rules"] %}
+  <li><a href="{{ rule.permalink }}proposed/">{{ rule.title }}</a>
+{% endfor %}
+</ul>
