@@ -29,7 +29,7 @@ These Test Rules have been approved by the Accessibility Guidelines Working Grou
 <ul>
 {% for rule in site.data.rules["act-rules"] %}
   {% if rule.proposed == false and rule.deprecated != true %}
-    <li><a href="{{ rule.permalink }}">{{ rule.title }}</a>
+    <li><a href="{{ rule.permalink }}">{{ rule.title }}</a></li>
   {% endif %}
 {% endfor %}
 </ul>
@@ -40,6 +40,6 @@ Proposed test rules will be published when they have at least one implementation
 
 <ul>
 {% for rule in site.data.rules["act-rules"] %}
-  <li><a href="{{ rule.permalink }}proposed/">{{ rule.title }}</a>
+  <li><a href="{{ rule.permalink }}proposed/">{{ rule.title }}</a></li>
 {% endfor %}
 </ul>
