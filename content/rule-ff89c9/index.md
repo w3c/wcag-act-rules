@@ -1,11 +1,11 @@
 ---
 title: "ARIA required context role"
-permalink: /standards-guidelines/act/rules/aria-required-context-role-ff89c9/
-ref: /standards-guidelines/act/rules/aria-required-context-role-ff89c9/
+permalink: /standards-guidelines/act/rules/ff89c9/
+ref: /standards-guidelines/act/rules/ff89c9/
 lang: en
 github:
   repository: w3c/wcag-act-rules
-  path: content/aria-required-context-role-ff89c9.md
+  path: content/rule-ff89c9/index.md
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> ff89c9</p>
