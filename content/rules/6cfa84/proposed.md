@@ -1,73 +1,71 @@
 ---
-title: "HTML page has lang attribute"
-permalink: /standards-guidelines/act/rules/b5c3f8/
-ref: /standards-guidelines/act/rules/b5c3f8/
+title: "Element with aria-hidden has no focusable content"
+permalink: /standards-guidelines/act/rules/6cfa84/proposed/
+ref: /standards-guidelines/act/rules/6cfa84/proposed/
 lang: en
 github:
   repository: w3c/wcag-act-rules
-  path: content/rules/b5c3f8/index.md
+  path: content/rules/6cfa84/proposed.md
 feedbackmail: public-wcag-act@w3.org
 footer: |
-  <p><strong>Rule Identifier:</strong> b5c3f8</p>
+  <p><strong>Rule Identifier:</strong> 6cfa84</p>
   <p><strong>Date:</strong> Updated 28 January 2022</p>
-  <p><strong>Authors:</strong> <a href="https://github.com/jkodu">Jey Nandakumar</a>. Previous Authors: <a href="https://github.com/annika-FTB">Annika Nietzio</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
-  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It was approved and published by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
-proposed: false
+  <p><strong>Authors:</strong> <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
+  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
+proposed: true
 rule_meta:
-  id: b5c3f8
-  name: "HTML page has `lang` attribute"
+  id: 6cfa84
+  name: "Element with `aria-hidden` has no focusable content"
   rule_type: atomic
   description: |
-    This rule checks that an HTML page has a non-empty `lang` attribute.
+    This rule checks that elements with an `aria-hidden` attribute do not contain focusable elements.
   last_modified: 28 January 2022
   scs_tested:
-    - handle: Language of Page
-      num: 3.1.1
+    - handle: Name, Role, Value
+      num: 4.1.2
       level: A
 ---
 
 ## Applicability
 
-This rule applies to any [document element](https://dom.spec.whatwg.org/#document-element) if it is an `html` element for which all the following are true:
+This rule applies to any element with an `aria-hidden` [attribute value][] of `true`.
 
-- is in a [top-level browsing context](https://html.spec.whatwg.org/#top-level-browsing-context); and
-- has a [node document](https://dom.spec.whatwg.org/#concept-node-document) with a [content type](https://dom.spec.whatwg.org/#concept-document-content-type) of `text/html`.
-
-**Note:** `html` elements within `iframe` and `object` elements are not applicable as `iframe` and `object` elements create [nested browsing contexts](https://html.spec.whatwg.org/#nested-browsing-context). However, as these elements are meant to provide a layer of isolation, the declared language of their [parent browsing context](https://html.spec.whatwg.org/#parent-browsing-context) will likely not be inherited, making it possible for empty `lang` attributes in [nested browsing contexts](https://html.spec.whatwg.org/#nested-browsing-context) to also cause accessibility issues.
+**Note:** Using `aria-hidden="false"` on a descendant of an element with `aria-hidden="true"` **does not** expose that element. An element with `aria-hidden="true"` hides itself, all its content and all its descendants from assistive technologies.
 
 ## Expectation
 
-Each test target has a `lang` [attribute value][] that is neither empty (`""`) nor only [ASCII whitespace](https://infra.spec.whatwg.org/#ascii-whitespace).
+None of the target elements are part of [sequential focus navigation](https://html.spec.whatwg.org/multipage/interaction.html#sequential-focus-navigation), nor do they have [descendants](https://dom.spec.whatwg.org/#concept-tree-descendant) in the [flat tree](https://drafts.csswg.org/css-scoping/#flat-tree) that are part of [sequential focus navigation](https://html.spec.whatwg.org/#sequential-focus-navigation).
 
 ## Assumptions
 
-The language of the page can be set by other methods than the `lang` attribute, for example using HTTP headers or the `meta` element. These methods are not supported by all assistive technologies. This rule assumes that these other methods are insufficient to satisfying [Success Criterion 3.1.1: Language of Page](https://www.w3.org/TR/WCAG21/#language-of-page).
+_There are currently no assumptions_
 
 ## Accessibility Support
 
-_There are no major accessibility support issues known for this rule._
+Some user agents treat the value of `aria-hidden` attribute as case-sensitive.
 
 ## Background
 
-### Related rules
+By adding `aria-hidden="true"` to an element, content authors ensure that assistive technologies will ignore the element. This can be used to hide parts of a web page that are [pure decoration](https://www.w3.org/TR/WCAG21/#dfn-pure-decoration), such as icon fonts - that are not meant to be read by assistive technologies.
 
-- [HTML page `lang` attribute has valid language tag](https://act-rules.github.io/rules/bf051a)
-- [HTML page language subtag matches default language](https://act-rules.github.io/rules/ucwvc8)
+A [focusable][] element with `aria-hidden="true"` is ignored as part of the reading order, but still part of the focus order, making its state of [visible](#visible) or hidden unclear.
 
 ### Bibliography
 
-- [Understanding Success Criterion 3.1.1: Language of Page](https://www.w3.org/WAI/WCAG21/Understanding/language-of-page.html)
-- [H57: Using language attributes on the html element](https://www.w3.org/WAI/WCAG21/Techniques/html/H57)
-- [RFC 5646: Tags for Identifying Languages](https://www.rfc-editor.org/rfc/rfc5646.html)
-- [The `lang` and `xml:lang` attributes](https://html.spec.whatwg.org/multipage/dom.html#the-lang-and-xml:lang-attributes)
+- [CSS Scoping Module Level 1 (editor's draft)](https://drafts.csswg.org/css-scoping/)
+- [Understanding Success Criterion 1.3.1: Info and Relationships](https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships)
+- [Understanding Success Criterion 4.1.2: Name, Role, Value](https://www.w3.org/WAI/WCAG21/Understanding/name-role-value)
+- [`aria-hidden` (state)](https://www.w3.org/TR/wai-aria-1.1/#aria-hidden)
+- [Fourth rule of ARIA use](https://www.w3.org/TR/using-aria/#fourth)
+- [Element with presentational children has no focusable content](presentational-children-no-focusable-content-307n5z.md)
 
 ## Accessibility Requirements Mapping
 
 <ul class="act-requirements-list">
   <li><details>
-    <summary><span>3.1.1 Language of Page (Level A)</span></summary>
+    <summary><span>4.1.2 Name, Role, Value (Level A)</span></summary>
     <ul>
-      <li><a href="https://www.w3.org/TR/WCAG21/#language-of-page">Learn more about 3.1.1 Language of Page</a></li>
+      <li><a href="https://www.w3.org/TR/WCAG21/#name-role-value">Learn more about 4.1.2 Name, Role, Value</a></li>
       <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level A and higher.</li>
       <li>Outcome mapping: <ul>
         <li>Any <code>failed</code> outcomes: success criterion is not satisfied</li>
@@ -77,14 +75,14 @@ _There are no major accessibility support issues known for this rule._
     </ul>
   </details></li>
   <li><details>
-    <summary><span>H57: Using language attributes on the html element</span></summary>
+    <summary><span>Fourth rule of ARIA use</span></summary>
     <ul>
-      <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/html/H57">Learn more about technique H57</a></li>
+      <li><a href="https://www.w3.org/TR/using-aria/#fourth">Learn more about Fourth rule of ARIA use</a></li>
       <li>Not required for conformance to any W3C accessibility recommendation.</li>
       <li>Outcome mapping: <ul>
-        <li>Any <code>failed</code> outcomes: technique is not satisfied</li>
-        <li>All <code>passed</code> outcomes: technique needs further testing</li>
-        <li>An <code>inapplicable</code> outcome: technique needs further testing</li>
+        <li>Any <code>failed</code> outcomes: WAI-ARIA rule is not satisfied</li>
+        <li>All <code>passed</code> outcomes: WAI-ARIA rule needs further testing</li>
+        <li>An <code>inapplicable</code> outcome: WAI-ARIA rule needs further testing</li>
       </ul></li>
     </ul>
   </details></li>
@@ -95,6 +93,7 @@ _There are no major accessibility support issues known for this rule._
 The following aspects are required in using this rule.
 
 - [DOM Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom)
+- [CSS Styling](https://www.w3.org/TR/act-rules-aspects/#input-aspects-css)
 
 ## Test Cases
 
@@ -102,62 +101,131 @@ The following aspects are required in using this rule.
 
 #### Passed Example 1
 
-This `html` element has a `lang` attribute with a non-empty (`""`) value.
+Content not [focusable][] by default.
 
 ```html
-<html lang="en"></html>
+<p aria-hidden="true">Some text</p>
+```
+
+#### Passed Example 2
+
+Content hidden through CSS.
+
+```html
+<div aria-hidden="true">
+	<a href="/" style="display:none">Link</a>
+</div>
+```
+
+#### Passed Example 3
+
+Content taken out of sequential focus order using `tabindex`.
+
+```html
+<div aria-hidden="true">
+	<button tabindex="-1">Some button</button>
+</div>
+```
+
+#### Passed Example 4
+
+Content made [unfocusable][focusable] through `disabled` attribute.
+
+```html
+<input disabled aria-hidden="true" />
+```
+
+#### Passed Example 5
+
+`aria-hidden` can't be reset once set to true on an ancestor.
+
+```html
+<div aria-hidden="true">
+	<div aria-hidden="false">
+		<button tabindex="-1">Some button</button>
+	</div>
+</div>
 ```
 
 ### Failed
 
 #### Failed Example 1
 
-This `html` element does not have a `lang` attribute.
+[Focusable][] off screen link.
 
 ```html
-<html></html>
+<div aria-hidden="true">
+	<a href="/" style="position:absolute; top:-999em">Link</a>
+</div>
 ```
 
 #### Failed Example 2
 
-This `html` element has a `lang` attribute with an empty (`""`) value.
+[Focusable][] form field, incorrectly disabled.
 
 ```html
-<html lang=""></html>
+<div aria-hidden="true">
+	<input aria-disabled="true" />
+</div>
 ```
 
 #### Failed Example 3
 
-This `html` element has a `lang` attribute whose value is only [ASCII whitespace](https://infra.spec.whatwg.org/#ascii-whitespace).
+`aria-hidden` can't be reset once set to true on an ancestor.
 
 ```html
-<html lang=" "></html>
+<div aria-hidden="true">
+	<div aria-hidden="false">
+		<button>Some button</button>
+	</div>
+</div>
 ```
 
 #### Failed Example 4
 
-This `html` element has no `lang` attribute, only a `xml:lang` attribute.
+[Focusable][] content through `tabindex`.
 
 ```html
-<html xml:lang="en"></html>
+<p tabindex="0" aria-hidden="true">Some text</p>
+```
+
+#### Failed Example 5
+
+[Focusable][] `summary` element.
+
+```html
+<details aria-hidden="true">
+	<summary>Some button</summary>
+	<p>Some details</p>
+</details>
 ```
 
 ### Inapplicable
 
 #### Inapplicable Example 1
 
-This rule does not apply to an `svg` element.
+Ignore `aria-hidden` with null value.
 
-```svg
-<svg xmlns="http://www.w3.org/2000/svg"></svg>
+```html
+<button tabindex="-1" aria-hidden>Some button</button>
 ```
 
 #### Inapplicable Example 2
 
-This rule does not apply to a `math` element.
+Ignore `aria-hidden` false.
 
-```xml
-<math></math>
+```html
+<p aria-hidden="false">Some text</p>
+```
+
+#### Inapplicable Example 3
+
+Incorrect value of `aria-hidden`.
+
+```html
+<div aria-hidden="yes">
+	<p>Some text</p>
+</div>
 ```
 
 ## Glossary
@@ -179,6 +247,10 @@ This list is not exhaustive, and only serves as an illustration for some of the 
 
 The _attribute value_ of an [IDL attribute][] is the value returned on getting it. Note that when an [IDL attribute][] [reflects][reflect] a content attribute, they have the same attribute value.
 
+### Focusable {#focusable}
+
+Elements that can become the target of keyboard input as described in the [HTML](https://www.w3.org/TR/html) specification of [focusable](https://html.spec.whatwg.org/#focusable-area) and [can be focused](https://html.spec.whatwg.org/#specially-focusable).
+
 ### Outcome {#outcome}
 
 An _outcome_ is a conclusion that comes from evaluating an ACT Rule on a [test subject](https://www.w3.org/TR/act-rules-format/#test-subject) or one of its constituent [test target](https://www.w3.org/TR/act-rules-format/#test-target). An outcome can be one of the three following types:
@@ -191,16 +263,27 @@ An _outcome_ is a conclusion that comes from evaluating an ACT Rule on a [test s
 
 **Note:** Implementations using the [EARL10-Schema](https://www.w3.org/TR/EARL10-Schema/) can express the outcome with the [outcome property](https://www.w3.org/TR/EARL10-Schema/#outcome). In addition to `passed`, `failed` and `inapplicable`, EARL 1.0 also defined an `incomplete` outcome. While this cannot be the outcome of an ACT Rule when applied in its entirety, it often happens that rules are only partially evaluated. For example, when applicability was automated, but the expectations have to be evaluated manually. Such "interim" results can be expressed with the `incomplete` outcome.
 
+### Visible {#visible}
+
+Content perceivable through sight.
+
+Content is considered _visible_ if making it fully transparent would result in a difference in the pixels rendered for any part of the document that is currently within the viewport or can be brought into the viewport via scrolling.
+
+[Content is defined in WCAG](https://www.w3.org/TR/WCAG21/#dfn-content).
+
+For more details, see [examples of visible](https://act-rules.github.io/pages/examples/visible/).
+
 {% include_relative _implementation-proposed.md %}
 
 ## Changelog
 
 This is the first version of this ACT rule.
 
-[attribute value]: #attribute-value
+[attribute value]: #attribute-value 'Definition of Attribute Value'
 [boolean attributes]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attributes 'HTML Specification of Boolean Attribute'
 [comma separated]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#comma-separated-tokens 'HTML Specification of Comma Separated Tokens'
 [enumerated attributes]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#enumerated-attribute 'HTML Specification of Enumerated Attribute'
+[focusable]: #focusable 'Definition of focusable'
 [html aam]: https://www.w3.org/TR/html-aam-1.0/#html-attribute-state-and-property-mappings 'Specification of HTML attributes value mapping to ARIA states and properties'
 [idl attribute]: https://heycam.github.io/webidl/#idl-attributes "Definition of Web IDL Attribute (Editor's Draft)"
 [numbers]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#numbers 'HTML Specification of Number Parsing'

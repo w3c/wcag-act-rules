@@ -43,7 +43,7 @@ Proposed test rules will be published when they have at least one implementation
 <ul>
 {% for rule in site.data.rules["act-rules"] %}
   {% if rule.proposed == true %}
-    <li><a href="{{ rule.permalink }}">{{ rule.title }}</a></li>
+    <li><a href="{{ rule.permalink }}proposed/">{{ rule.title }}</a></li>
   {% endif %}
 {% endfor %}
 </ul>

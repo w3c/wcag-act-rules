@@ -1,47 +1,45 @@
 ---
-title: "HTML page has lang attribute"
-permalink: /standards-guidelines/act/rules/b5c3f8/
-ref: /standards-guidelines/act/rules/b5c3f8/
+title: "Audio or video that plays automatically has no audio that lasts more than 3 seconds"
+permalink: /standards-guidelines/act/rules/aaa1bf/proposed/
+ref: /standards-guidelines/act/rules/aaa1bf/proposed/
 lang: en
 github:
   repository: w3c/wcag-act-rules
-  path: content/rules/b5c3f8/index.md
+  path: content/rules/aaa1bf/proposed.md
 feedbackmail: public-wcag-act@w3.org
 footer: |
-  <p><strong>Rule Identifier:</strong> b5c3f8</p>
+  <p><strong>Rule Identifier:</strong> aaa1bf</p>
   <p><strong>Date:</strong> Updated 28 January 2022</p>
-  <p><strong>Authors:</strong> <a href="https://github.com/jkodu">Jey Nandakumar</a>. Previous Authors: <a href="https://github.com/annika-FTB">Annika Nietzio</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
-  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It was approved and published by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
-proposed: false
+  <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/brynanders">Bryn Anderson</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
+  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
+proposed: true
 rule_meta:
-  id: b5c3f8
-  name: "HTML page has `lang` attribute"
+  id: aaa1bf
+  name: "`Audio` or `video` that plays automatically has no audio that lasts more than 3 seconds"
   rule_type: atomic
   description: |
-    This rule checks that an HTML page has a non-empty `lang` attribute.
+    `audio` or `video` that plays automatically does not output audio for more than 3 seconds.
   last_modified: 28 January 2022
-  scs_tested:
-    - handle: Language of Page
-      num: 3.1.1
-      level: A
 ---
 
 ## Applicability
 
-This rule applies to any [document element](https://dom.spec.whatwg.org/#document-element) if it is an `html` element for which all the following are true:
+This rule applies to any `audio` or `video` element for which all the following are true:
 
-- is in a [top-level browsing context](https://html.spec.whatwg.org/#top-level-browsing-context); and
-- has a [node document](https://dom.spec.whatwg.org/#concept-node-document) with a [content type](https://dom.spec.whatwg.org/#concept-document-content-type) of `text/html`.
-
-**Note:** `html` elements within `iframe` and `object` elements are not applicable as `iframe` and `object` elements create [nested browsing contexts](https://html.spec.whatwg.org/#nested-browsing-context). However, as these elements are meant to provide a layer of isolation, the declared language of their [parent browsing context](https://html.spec.whatwg.org/#parent-browsing-context) will likely not be inherited, making it possible for empty `lang` attributes in [nested browsing contexts](https://html.spec.whatwg.org/#nested-browsing-context) to also cause accessibility issues.
+- **autoplay**: the element has an `autoplay` [attribute value][] of `true`; and
+- **not muted**: the element has a `muted` [attribute value][] of `false`; and
+- **not paused**: the element has a `paused` [attribute value][] of `false`; and
+- **duration**: the element has a [media resource][] lasting more than 3 seconds that contains audio.
 
 ## Expectation
 
-Each test target has a `lang` [attribute value][] that is neither empty (`""`) nor only [ASCII whitespace](https://infra.spec.whatwg.org/#ascii-whitespace).
+For each test target the total audio output does not last more than 3 seconds.
+
+**Note:** This rule does not cover single audio instances that play repeatedly for more than three seconds, or multiple audio instances for more than three seconds. The [WCAG Understanding documentation for 1.4.2 Audio Controls](https://www.w3.org/WAI/WCAG21/Understanding/audio-control.html) is ambiguous about how to handle these scenarios.
 
 ## Assumptions
 
-The language of the page can be set by other methods than the `lang` attribute, for example using HTTP headers or the `meta` element. These methods are not supported by all assistive technologies. This rule assumes that these other methods are insufficient to satisfying [Success Criterion 3.1.1: Language of Page](https://www.w3.org/TR/WCAG21/#language-of-page).
+_There are currently no assumptions_
 
 ## Accessibility Support
 
@@ -49,37 +47,20 @@ _There are no major accessibility support issues known for this rule._
 
 ## Background
 
-### Related rules
-
-- [HTML page `lang` attribute has valid language tag](https://act-rules.github.io/rules/bf051a)
-- [HTML page language subtag matches default language](https://act-rules.github.io/rules/ucwvc8)
-
 ### Bibliography
 
-- [Understanding Success Criterion 3.1.1: Language of Page](https://www.w3.org/WAI/WCAG21/Understanding/language-of-page.html)
-- [H57: Using language attributes on the html element](https://www.w3.org/WAI/WCAG21/Techniques/html/H57)
-- [RFC 5646: Tags for Identifying Languages](https://www.rfc-editor.org/rfc/rfc5646.html)
-- [The `lang` and `xml:lang` attributes](https://html.spec.whatwg.org/multipage/dom.html#the-lang-and-xml:lang-attributes)
+- [Understanding Success Criterion 1.4.2: Audio Control](https://www.w3.org/WAI/WCAG21/Understanding/audio-control.html)
+- [F23: Failure of 1.4.2 due to playing a sound longer than 3 seconds where there is no mechanism to turn it off](https://www.w3.org/WAI/WCAG21/Techniques/failures/F23)
+- [G60: Playing a sound that turns off automatically within three seconds](https://www.w3.org/WAI/WCAG21/Techniques/general/G60)
+- [G171: Playing sounds only on user request](https://www.w3.org/WAI/WCAG21/Techniques/general/G171)
 
 ## Accessibility Requirements Mapping
 
 <ul class="act-requirements-list">
   <li><details>
-    <summary><span>3.1.1 Language of Page (Level A)</span></summary>
+    <summary><span>G60: Playing a sound that turns off automatically within three seconds</span></summary>
     <ul>
-      <li><a href="https://www.w3.org/TR/WCAG21/#language-of-page">Learn more about 3.1.1 Language of Page</a></li>
-      <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level A and higher.</li>
-      <li>Outcome mapping: <ul>
-        <li>Any <code>failed</code> outcomes: success criterion is not satisfied</li>
-        <li>All <code>passed</code> outcomes: success criterion needs further testing</li>
-        <li>An <code>inapplicable</code> outcome: success criterion needs further testing</li>
-      </ul></li>
-    </ul>
-  </details></li>
-  <li><details>
-    <summary><span>H57: Using language attributes on the html element</span></summary>
-    <ul>
-      <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/html/H57">Learn more about technique H57</a></li>
+      <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G60">Learn more about technique G60</a></li>
       <li>Not required for conformance to any W3C accessibility recommendation.</li>
       <li>Outcome mapping: <ul>
         <li>Any <code>failed</code> outcomes: technique is not satisfied</li>
@@ -95,6 +76,9 @@ _There are no major accessibility support issues known for this rule._
 The following aspects are required in using this rule.
 
 - [DOM Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom)
+- [CSS Styling](https://www.w3.org/TR/act-rules-aspects/#input-aspects-css)
+- Audio output (no link available)
+- Visual output (no link available)
 
 ## Test Cases
 
@@ -102,62 +86,74 @@ The following aspects are required in using this rule.
 
 #### Passed Example 1
 
-This `html` element has a `lang` attribute with a non-empty (`""`) value.
+This `audio` element does not play automatically for more than 3 seconds.
 
 ```html
-<html lang="en"></html>
+<audio src="/test-assets/moon-audio/moon-speech.mp3#t=25" autoplay></audio>
+```
+
+#### Passed Example 2
+
+This `video` element's audio output does not last longer than 3 seconds.
+
+```html
+<video autoplay>
+	<source src="/test-assets/rabbit-video/video.mp4#t=8,10" type="video/mp4" />
+	<source src="/test-assets/rabbit-video/video.webm#t=8,10" type="video/webm" />
+</video>
 ```
 
 ### Failed
 
 #### Failed Example 1
 
-This `html` element does not have a `lang` attribute.
+This `audio` element plays automatically for more than 3 seconds.
 
 ```html
-<html></html>
+<audio src="/test-assets/moon-audio/moon-speech.mp3" autoplay controls></audio>
 ```
 
 #### Failed Example 2
 
-This `html` element has a `lang` attribute with an empty (`""`) value.
+This `video` element plays some audio automatically for more than 3 seconds.
 
 ```html
-<html lang=""></html>
-```
-
-#### Failed Example 3
-
-This `html` element has a `lang` attribute whose value is only [ASCII whitespace](https://infra.spec.whatwg.org/#ascii-whitespace).
-
-```html
-<html lang=" "></html>
-```
-
-#### Failed Example 4
-
-This `html` element has no `lang` attribute, only a `xml:lang` attribute.
-
-```html
-<html xml:lang="en"></html>
+<video autoplay>
+	<source src="/test-assets/rabbit-video/video.mp4" type="video/mp4" />
+	<source src="/test-assets/rabbit-video/video.webm" type="video/webm" />
+</video>
 ```
 
 ### Inapplicable
 
 #### Inapplicable Example 1
 
-This rule does not apply to an `svg` element.
+This `video` element has audio that autoplays for longer than 3 seconds but is muted.
 
-```svg
-<svg xmlns="http://www.w3.org/2000/svg"></svg>
+```html
+<video autoplay muted>
+	<source src="/test-assets/rabbit-video/video.mp4" type="video/mp4" />
+	<source src="/test-assets/rabbit-video/video.webm" type="video/webm" />
+</video>
 ```
 
 #### Inapplicable Example 2
 
-This rule does not apply to a `math` element.
+This `video` element refers to a source file that has no audio output.
 
-```xml
-<math></math>
+```html
+<video autoplay>
+	<source src="/test-assets/rabbit-video/silent.mp4" type="video/mp4" />
+	<source src="/test-assets/rabbit-video/silent.webm" type="video/webm" />
+</video>
+```
+
+#### Inapplicable Example 3
+
+This `audio` element does not autoplay.
+
+```html
+<audio src="/test-assets/moon-audio/moon-speech.mp3" controls></audio>
 ```
 
 ## Glossary
@@ -197,12 +193,13 @@ An _outcome_ is a conclusion that comes from evaluating an ACT Rule on a [test s
 
 This is the first version of this ACT rule.
 
-[attribute value]: #attribute-value
+[attribute value]: #attribute-value 'Definition of Attribute Value'
 [boolean attributes]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attributes 'HTML Specification of Boolean Attribute'
 [comma separated]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#comma-separated-tokens 'HTML Specification of Comma Separated Tokens'
 [enumerated attributes]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#enumerated-attribute 'HTML Specification of Enumerated Attribute'
 [html aam]: https://www.w3.org/TR/html-aam-1.0/#html-attribute-state-and-property-mappings 'Specification of HTML attributes value mapping to ARIA states and properties'
 [idl attribute]: https://heycam.github.io/webidl/#idl-attributes "Definition of Web IDL Attribute (Editor's Draft)"
+[media resource]: https://html.spec.whatwg.org/multipage/media.html#media-resource 'HTML Specification of Media Resource'
 [numbers]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#numbers 'HTML Specification of Number Parsing'
 [reflect]: https://html.spec.whatwg.org/multipage/common-dom-interfaces.html#reflecting-content-attributes-in-idl-attributes 'HTML specification of Reflecting Content Attributes in IDL Attributes'
 [space separated]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#space-separated-tokens 'HTML Specification of Space Separated Tokens'

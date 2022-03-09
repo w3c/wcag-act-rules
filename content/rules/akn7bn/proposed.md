@@ -1,73 +1,63 @@
 ---
-title: "HTML page has lang attribute"
-permalink: /standards-guidelines/act/rules/b5c3f8/
-ref: /standards-guidelines/act/rules/b5c3f8/
+title: "iframe with negative tabindex has no interactive elements"
+permalink: /standards-guidelines/act/rules/akn7bn/proposed/
+ref: /standards-guidelines/act/rules/akn7bn/proposed/
 lang: en
 github:
   repository: w3c/wcag-act-rules
-  path: content/rules/b5c3f8/index.md
+  path: content/rules/akn7bn/proposed.md
 feedbackmail: public-wcag-act@w3.org
 footer: |
-  <p><strong>Rule Identifier:</strong> b5c3f8</p>
+  <p><strong>Rule Identifier:</strong> akn7bn</p>
   <p><strong>Date:</strong> Updated 28 January 2022</p>
-  <p><strong>Authors:</strong> <a href="https://github.com/jkodu">Jey Nandakumar</a>. Previous Authors: <a href="https://github.com/annika-FTB">Annika Nietzio</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
-  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It was approved and published by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
-proposed: false
+  <p><strong>Authors:</strong> <a href="https://www.linkedin.com/in/brianbors/">Brian Bors</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
+  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
+proposed: true
 rule_meta:
-  id: b5c3f8
-  name: "HTML page has `lang` attribute"
+  id: akn7bn
+  name: "iframe with negative tabindex has no interactive elements"
   rule_type: atomic
   description: |
-    This rule checks that an HTML page has a non-empty `lang` attribute.
+    This rule checks that `iframe` elements with a negative `tabindex` attribute value contain no interactive elements.
   last_modified: 28 January 2022
   scs_tested:
-    - handle: Language of Page
-      num: 3.1.1
+    - handle: Keyboard
+      num: 2.1.1
       level: A
 ---
 
 ## Applicability
 
-This rule applies to any [document element](https://dom.spec.whatwg.org/#document-element) if it is an `html` element for which all the following are true:
-
-- is in a [top-level browsing context](https://html.spec.whatwg.org/#top-level-browsing-context); and
-- has a [node document](https://dom.spec.whatwg.org/#concept-node-document) with a [content type](https://dom.spec.whatwg.org/#concept-document-content-type) of `text/html`.
-
-**Note:** `html` elements within `iframe` and `object` elements are not applicable as `iframe` and `object` elements create [nested browsing contexts](https://html.spec.whatwg.org/#nested-browsing-context). However, as these elements are meant to provide a layer of isolation, the declared language of their [parent browsing context](https://html.spec.whatwg.org/#parent-browsing-context) will likely not be inherited, making it possible for empty `lang` attributes in [nested browsing contexts](https://html.spec.whatwg.org/#nested-browsing-context) to also cause accessibility issues.
+This rule applies to any `iframe` element that has a negative number as a `tabindex` [attribute value][].
 
 ## Expectation
 
-Each test target has a `lang` [attribute value][] that is neither empty (`""`) nor only [ASCII whitespace](https://infra.spec.whatwg.org/#ascii-whitespace).
+For each test target, the [nested browsing context][] does not include elements that are [visible][] and part of the [sequential focus navigation][]. An element is "included" in a [nested browsing context][] if its [owner document][] is the [container document][] of the [nested browsing context][].
 
 ## Assumptions
 
-The language of the page can be set by other methods than the `lang` attribute, for example using HTTP headers or the `meta` element. These methods are not supported by all assistive technologies. This rule assumes that these other methods are insufficient to satisfying [Success Criterion 3.1.1: Language of Page](https://www.w3.org/TR/WCAG21/#language-of-page).
+This rule assumes that interactive content inside `iframe` elements is used to provide functionality. If the interactive content does not provide functionality, for example a button that does nothing when clicked, [success criterion 2.1.1][sc211] may be satisfied, even if the rule is failed.
 
 ## Accessibility Support
 
-_There are no major accessibility support issues known for this rule._
+There are no major accessibility support issues known for this rule.
 
 ## Background
 
-### Related rules
-
-- [HTML page `lang` attribute has valid language tag](https://act-rules.github.io/rules/bf051a)
-- [HTML page language subtag matches default language](https://act-rules.github.io/rules/ucwvc8)
+By setting the `tabindex` [attribute value][] of an `iframe` element to `-1` or some other negative number, it becomes impossible to move the focus into the [browsing context][nested browsing context] of the `iframe` element. Even though its content is still included in the [sequential focus navigation][], there is no way to move the focus to any of the items in the `iframe` using standard keyboard navigation.
 
 ### Bibliography
 
-- [Understanding Success Criterion 3.1.1: Language of Page](https://www.w3.org/WAI/WCAG21/Understanding/language-of-page.html)
-- [H57: Using language attributes on the html element](https://www.w3.org/WAI/WCAG21/Techniques/html/H57)
-- [RFC 5646: Tags for Identifying Languages](https://www.rfc-editor.org/rfc/rfc5646.html)
-- [The `lang` and `xml:lang` attributes](https://html.spec.whatwg.org/multipage/dom.html#the-lang-and-xml:lang-attributes)
+- [Understanding Success Criterion 2.1.1: Keyboard](https://www.w3.org/WAI/WCAG21/Understanding/keyboard)
+- [WCAG Technique G202: Ensuring keyboard control for all functionality](https://www.w3.org/WAI/WCAG21/Techniques/general/G202)
 
 ## Accessibility Requirements Mapping
 
 <ul class="act-requirements-list">
   <li><details>
-    <summary><span>3.1.1 Language of Page (Level A)</span></summary>
+    <summary><span>2.1.1 Keyboard (Level A)</span></summary>
     <ul>
-      <li><a href="https://www.w3.org/TR/WCAG21/#language-of-page">Learn more about 3.1.1 Language of Page</a></li>
+      <li><a href="https://www.w3.org/TR/WCAG21/#keyboard">Learn more about 2.1.1 Keyboard</a></li>
       <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level A and higher.</li>
       <li>Outcome mapping: <ul>
         <li>Any <code>failed</code> outcomes: success criterion is not satisfied</li>
@@ -77,9 +67,9 @@ _There are no major accessibility support issues known for this rule._
     </ul>
   </details></li>
   <li><details>
-    <summary><span>H57: Using language attributes on the html element</span></summary>
+    <summary><span>G202: Ensuring keyboard control for all functionality</span></summary>
     <ul>
-      <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/html/H57">Learn more about technique H57</a></li>
+      <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G202">Learn more about technique G202</a></li>
       <li>Not required for conformance to any W3C accessibility recommendation.</li>
       <li>Outcome mapping: <ul>
         <li>Any <code>failed</code> outcomes: technique is not satisfied</li>
@@ -95,6 +85,7 @@ _There are no major accessibility support issues known for this rule._
 The following aspects are required in using this rule.
 
 - [DOM Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom)
+- [CSS Styling](https://www.w3.org/TR/act-rules-aspects/#input-aspects-css)
 
 ## Test Cases
 
@@ -102,62 +93,46 @@ The following aspects are required in using this rule.
 
 #### Passed Example 1
 
-This `html` element has a `lang` attribute with a non-empty (`""`) value.
+This `iframe` element contains no content that is part of [sequential focus navigation][].
 
 ```html
-<html lang="en"></html>
+<iframe tabindex="-1" srcdoc="<h1>Hello world</h1>"></iframe>
+```
+
+#### Passed Example 2
+
+This `iframe` element contains a link that, because of its `tabindex` is not part of [sequential focus navigation][].
+
+```html
+<iframe tabindex="-1" srcdoc="<a href='/' tabindex='-1'>Home</a>"></iframe>
+```
+
+#### Passed Example 3
+
+This `iframe` element contains no [visible][] content because of the small size of the iframe.
+
+```html
+<iframe tabindex="-1" width="1" height="1" srcdoc="<a href='/'>Home</a>"></iframe>
 ```
 
 ### Failed
 
 #### Failed Example 1
 
-This `html` element does not have a `lang` attribute.
+This `iframe` element has a link that is part of [sequential focus navigation][].
 
 ```html
-<html></html>
-```
-
-#### Failed Example 2
-
-This `html` element has a `lang` attribute with an empty (`""`) value.
-
-```html
-<html lang=""></html>
-```
-
-#### Failed Example 3
-
-This `html` element has a `lang` attribute whose value is only [ASCII whitespace](https://infra.spec.whatwg.org/#ascii-whitespace).
-
-```html
-<html lang=" "></html>
-```
-
-#### Failed Example 4
-
-This `html` element has no `lang` attribute, only a `xml:lang` attribute.
-
-```html
-<html xml:lang="en"></html>
+<iframe tabindex="-1" srcdoc="<a href='/'>Home</a>"></iframe>
 ```
 
 ### Inapplicable
 
 #### Inapplicable Example 1
 
-This rule does not apply to an `svg` element.
+This `iframe` element does not have a `tabindex` [attribute value][] that is a negative number
 
-```svg
-<svg xmlns="http://www.w3.org/2000/svg"></svg>
-```
-
-#### Inapplicable Example 2
-
-This rule does not apply to a `math` element.
-
-```xml
-<math></math>
+```html
+<iframe tabindex="0" srcdoc="<a href='/'>Home</a>"></iframe>
 ```
 
 ## Glossary
@@ -191,19 +166,35 @@ An _outcome_ is a conclusion that comes from evaluating an ACT Rule on a [test s
 
 **Note:** Implementations using the [EARL10-Schema](https://www.w3.org/TR/EARL10-Schema/) can express the outcome with the [outcome property](https://www.w3.org/TR/EARL10-Schema/#outcome). In addition to `passed`, `failed` and `inapplicable`, EARL 1.0 also defined an `incomplete` outcome. While this cannot be the outcome of an ACT Rule when applied in its entirety, it often happens that rules are only partially evaluated. For example, when applicability was automated, but the expectations have to be evaluated manually. Such "interim" results can be expressed with the `incomplete` outcome.
 
+### Visible {#visible}
+
+Content perceivable through sight.
+
+Content is considered _visible_ if making it fully transparent would result in a difference in the pixels rendered for any part of the document that is currently within the viewport or can be brought into the viewport via scrolling.
+
+[Content is defined in WCAG](https://www.w3.org/TR/WCAG21/#dfn-content).
+
+For more details, see [examples of visible](https://act-rules.github.io/pages/examples/visible/).
+
 {% include_relative _implementation-proposed.md %}
 
 ## Changelog
 
 This is the first version of this ACT rule.
 
-[attribute value]: #attribute-value
+[attribute value]: #attribute-value 'Definition of Attribute Value'
 [boolean attributes]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attributes 'HTML Specification of Boolean Attribute'
 [comma separated]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#comma-separated-tokens 'HTML Specification of Comma Separated Tokens'
+[container document]: https://html.spec.whatwg.org/#bc-container-document 'HTML browsing context container document, 2020/12/18'
 [enumerated attributes]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#enumerated-attribute 'HTML Specification of Enumerated Attribute'
 [html aam]: https://www.w3.org/TR/html-aam-1.0/#html-attribute-state-and-property-mappings 'Specification of HTML attributes value mapping to ARIA states and properties'
 [idl attribute]: https://heycam.github.io/webidl/#idl-attributes "Definition of Web IDL Attribute (Editor's Draft)"
+[nested browsing context]: https://html.spec.whatwg.org/#nested-browsing-context 'HTML nested browsing context, 2020/12/18'
 [numbers]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#numbers 'HTML Specification of Number Parsing'
+[owner document]: https://dom.spec.whatwg.org/#dom-node-ownerdocument 'DOM node owner document property, 2020/12/18'
 [reflect]: https://html.spec.whatwg.org/multipage/common-dom-interfaces.html#reflecting-content-attributes-in-idl-attributes 'HTML specification of Reflecting Content Attributes in IDL Attributes'
+[sc211]: https://www.w3.org/TR/WCAG21/#keyboard 'WCAG 2.1 Success criterion 2.1.1 Keyboard'
+[sequential focus navigation]: https://html.spec.whatwg.org/#sequential-focus-navigation 'HTML sequential focus navigation, 2020/12/18'
 [space separated]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#space-separated-tokens 'HTML Specification of Space Separated Tokens'
+[visible]: #visible 'Definition of visible'
 [wai-aria specification]: https://www.w3.org/TR/wai-aria-1.1/#propcharacteristic_value 'WAI-ARIA Specification of States and Properties Value'
