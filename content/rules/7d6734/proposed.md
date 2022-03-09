@@ -1,11 +1,11 @@
 ---
 title: "svg element with explicit role has non-empty accessible name"
-permalink: /standards-guidelines/act/rules/explicit-SVG-image-non-empty-accessible-name-7d6734/proposed/
-ref: /standards-guidelines/act/rules/explicit-SVG-image-non-empty-accessible-name-7d6734/proposed/
+permalink: /standards-guidelines/act/rules/7d6734/proposed/
+ref: /standards-guidelines/act/rules/7d6734/proposed/
 lang: en
 github:
   repository: w3c/wcag-act-rules
-  path: content/explicit-SVG-image-non-empty-accessible-name-7d6734.md
+  path: content/rules/7d6734/proposed.md
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 7d6734</p>
