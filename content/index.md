@@ -34,8 +34,6 @@ These Test Rules have been approved by the Accessibility Guidelines Working Grou
 {% endfor %}
 </ul>
 
-* [`autocomplete` attribute has valid value](/standards-guidelines/act/rules/73f2c2/)
-
 ## Proposed Test Rules
 
 Proposed test rules will be published when they have at least one implementation and are approved by the AGWG.

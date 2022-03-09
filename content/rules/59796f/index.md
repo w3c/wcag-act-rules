@@ -295,7 +295,7 @@ An HTML element is _programmatically hidden_ if either it has a [computed][] CSS
 
 **Note**: Contrarily to the other conditions, the `visibility` CSS property may be reverted by descendants.
 
-{% include_relative _implementation-proposed.md %}
+{% include_relative _implementation-approved.md %}
 
 ## Changelog
 

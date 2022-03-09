@@ -280,7 +280,7 @@ This includes:
   - Carriage Return (CR) (U+000D)
   - Next Line (NEL) (U+0085)
 
-{% include_relative _implementation-proposed.md %}
+{% include_relative _implementation-approved.md %}
 
 ## Changelog
 
