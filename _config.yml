@@ -57,6 +57,7 @@ defaults:
         rule_type: "atomic rule"
       sidebar: true
       standalone_resource_doc_name: "WCAG 2 Test Rules"
+      standalone_resource_doc_name_sub: For developers of evaluation tools and test methodologies
       standalone_resource_about_nav:
         - name: WCAG 2
           ref: /standards-guidelines/wcag
@@ -68,7 +69,7 @@ defaults:
           ref: /standards-guidelines/act/rules/about/
       standalone_resource_pager:
         image: brain.svg
-        name: All Rules
+        name: All Test Rules
         ref: /standards-guidelines/act/rules/
   
 plugins:

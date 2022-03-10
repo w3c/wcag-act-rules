@@ -18,7 +18,26 @@ github:
   path: content/index.md
 ---
 
-WCAG 2 Test Rules describe how to test conformance to Web Content Accessibility Guidelines (WCAG) success criteria. They are primarily for developers of evaluation tools and test methodologies. Guidance for others is in Understanding WCAG and WCAG Techniques. To learn more, see: [WCAG Overview](https://www.w3.org/WAI/standards-guidelines/wcag/), [All WCAG 2 Guidance](https://www.w3.org/WAI/standards-guidelines/wcag/docs/).
+{::nomarkdown} {% include box.html type="start" title="Summary" %} {:/}
+
+WCAG 2 Test Rules describe how to test conformance to Web Content Accessibility Guidelines (WCAG) success criteria. The Test Rules are informative — that means they are not required for determining conformance to WCAG.
+
+WCAG 2 Test Rules are primarily for developers of evaluation tools and test methodologies. Guidance for others is in Understanding WCAG and WCAG Techniques, described in [The WCAG 2 Documents](https://www.w3.org/WAI/standards-guidelines/wcag/docs/) 
+
+{::nomarkdown}
+{% include box.html type="end" %}
+{:/}
+
+{::nomarkdown}
+{% include_cached toc.html type="start" title="Page Contents" %}
+{:/}
+
+- This will be replaced by an automatically generated TOC when using Markdown formatting.
+{:toc}
+
+{::nomarkdown}
+{% include_cached toc.html type="end" %}
+{:/}
 
 The [List of Test Rules for WCAG 2](https://www.w3.org/WAI/standards-guidelines/act/rules/) is updated periodically. The rules are developed according to the [Accessibility Conformance Testing (ACT) Rules Format 1.0](https://www.w3.org/WAI/standards-guidelines/act/) standard.
 
