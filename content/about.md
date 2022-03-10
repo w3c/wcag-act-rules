@@ -9,6 +9,8 @@ lang: en
 # contributors:
 # - name: Contributor 1
 # - name: Contributor 2
+layout: standalone_resource
+sidebar: false
 type_of_guidance: false
 footer: ""
 github:

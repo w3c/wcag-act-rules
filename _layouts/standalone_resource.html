@@ -1,0 +1,392 @@
+{%- assign pagelang = 'en' -%}
+{%- if page.lang -%}
+  {%- assign pagelang = page.lang -%}
+{%- endif -%}
+{%- if pagelang == 'en' -%}
+  {%- assign enpage = page -%}
+{%- else -%}
+  {%- assign enpage=site.documents | where:"ref", page.ref | where: "lang", "en" | first -%}
+  {%- unless enpage.ref -%}
+    {%- assign enpage=site.pages | where:"ref", page.ref | where: "lang", "en" | first -%}
+  {%- endunless -%}
+{%- endif -%}
+{%- assign englishpageurl = enpage.url %}
+{%- assign translations=site.documents | where:"ref", page.ref | where_exp:"item", "item.lang != 'en'" | sort: 'lang' %}
+{%- unless translations[0].ref -%}
+  {% assign translations=site.pages | where:"ref", page.ref | where_exp:"item", "item.lang != 'en'" | sort: 'lang' %}
+{%- endunless -%}
+<!DOCTYPE html>
+<html class="no-js" lang="{% if page.lang %}{{page.lang}}{% else %}en{% endif %}" dir="{% if site.data.lang[pagelang].rtl %}rtl{% else %}ltr{% endif %}" prefix="og: http://ogp.me/ns#">
+  {%- assign timestamp = site.time | date: '%s%N' -%}
+  {%- assign timestamp = '?' | append: timestamp -%}
+  {%- include_cached head.html type="start" timestamp=timestamp -%}
+  {%- if site.data.lang[pagelang].rtl -%}
+  <title> W3C | {{ site.title | escape }} | {{ page.title | escape }} {%if page.doc-note-type == "archived" %}[{% include t.html t="Archived" %}]{% endif%}{%if page.doc-note-type == "draft" %}[{% include t.html t="Draft" %}]{% endif%}</title>
+  {%- else -%}
+  <title>{%if page.doc-note-type == "archived" %}[{% include t.html t="Archived" %}]{% endif%}{%if page.doc-note-type == "draft" %}[{% include t.html t="Draft" %}]{% endif%} {{ page.title | escape }} | {{ site.title | escape }} | W3C</title>
+  {%- endif -%}
+  {%- if page.external_css %}<link rel="stylesheet" href="{{ page.external_css | relative_url | append: timestamp }}">{% endif -%}
+  {%- if page.ext_css %}<link rel="stylesheet" href="{{ page.ext_css | prepend: '/css/' | prepend: page.collection | prepend: '/' | relative_url | append: timestamp }}">{% endif -%}
+  {%- if page.inline_css %}<style>{{ page.inline_css }}</style>{% endif -%}
+  {%- capture seo -%}
+    {%- seo title=false -%}
+  {%- endcapture -%}
+  {{- seo | replace: '<meta name="twitter:card" content="summary" />', '<meta name="twitter:card" content="summary_large_image" />' -}}
+  {%- unless page.image -%}{%- if site.twitter.image -%}{% assign twimage = site.twitter.image -%}{%- else -%}{% assign twimage = '/assets/images/social-sharing-default.jpg' -%}{%- endif -%}
+  <meta name="twitter:image" property="og:image" content="{{ twimage | relative_url | prepend: site.url }}">
+  {%- endunless -%}
+  {% include_cached head.html type="end" %}
+  <body id="top" class="page-{{page.title | slugify}} {% include_cached body-class.html collection=page.collection doc-note-type=page.doc-note-type %}">
+    <a href="#main" class="button button--skip-link">Skip to content</a>
+
+    <div class="minimal-header-container default-grid">
+      {% include minimal-header.html translations=translations subtitle=page.standalone_resource_doc_name_sub title=page.standalone_resource_doc_name %}
+    </div>
+
+    {% if page.standalone_resource_about_nav %}
+    <div class="default-grid nav-container nav-related-info">
+        <div class="nav">
+          <nav class="standalone-resource-about" aria-label="Related information">
+            <dl>
+              <dt>About:</dt>
+              {% assign docaboutnav = page.standalone_resource_about_nav %}
+              {% for link in docaboutnav %}
+              <dd>
+                {%- if page.permalink == link.ref %}
+                    <span>{{link.name}}</span>
+                {% else %}
+                    <a href="{{ link.ref | relative_url }}">{{ link.name }}
+                    {%- if link.icon %}
+                        {%- capture icon -%}{{link.icon}}{%- endcapture -%}
+                        {%- include_cached icon.html name=icon -%}
+                    {%- endif -%}
+                    </a>
+                {% endif %}
+            </dd>
+              {% endfor %}
+            </dl>
+          </nav>
+        </div>
+    </div>
+    {% endif %}
+    <div class="default-grid nav-container nav-page-specific">
+        <div class="nav">
+          {% if page.standalone_resource_about_nav %}
+          {% assign pager = page.standalone_resource_pager %}
+          <nav class="standalone-resource-pager" aria-label="Item navigation">
+            <ul>
+                <li>
+                {%- if page.standalone_resource_pager.icon -%}
+                    {%- capture icon-element -%}<img src="{{page.standalone_resource_pager.icon}}" alt="" class="category-icon">{%- endcapture -%}
+                {%- endif -%}
+                {%- if page.permalink == pager.ref %}
+                    <span class="pagename">{{icon-element}}{{pager.name}}</span>
+                {%else%}
+                    <a href="{{pager.ref}}">{{icon-element}}{{pager.name}}</a>
+                {%endif%}
+                </li>
+
+                {% if page.standalone_resource_pager.include %}
+                    {% include {{ page.standalone_resource_pager.include }} %}
+                    {% if context %}
+                        <li><a href="{{ context[1] }}">{% include_cached icon.html class="pager-icon" name="arrow-up-thin" %} {{ context[0] }}: {{context[2]}}</a></li>
+                    {% endif %}
+                    {% if prev  %}
+                        <li><a href="{{ prev[1] }}">{% include_cached icon.html class="pager-icon" name="arrow-left-thin" %} {{ prev[0] }}</a></li>
+                    {% endif %}
+                    {% if next %}
+                        <li><a href="{{ next[1] }}">{{ next[0] }} {% include_cached icon.html class="pager-icon" name="arrow-right-thin" %}</a></li>
+                    {% endif %}
+                {% endif %}
+            </ul>
+          </nav>
+        {% elsif page.standalone_resource_nav_links %}
+           <nav class="nav" aria-label="Context for this document">
+            <ul>
+            {% for link in page.standalone_resource_nav_links %}
+                <li class="nav__item"><a href="{{ link.ref | relative_url }}"{% if page.permalink == link.ref %} class="active" aria-current="page"{% endif %}>{{ link.name }}</a></li>
+            {% endfor %}
+            <li class="nav__item"><a href="https://www.w3.org/WAI/standards-guidelines/wcag/docs/">
+                All WCAG 2 Guidance
+                {% include_cached icon.html name="different-view" %}
+            </a></li>
+            </ul>
+          </nav>
+          {% endif %}
+        </div>
+    </div>
+    <div class="default-grid with-gap leftcol">
+
+<style>
+#site-header.minimal-header.with-subtitle {
+  padding: 1.75em 0 0 0;
+}
+
+.minimal-header.with-subtitle .minimal-header-name {
+  font-size: 1.5em;
+}
+
+.nav-container {
+  margin-bottom: 0;
+}
+
+.nav {
+  background: none;
+}
+
+.nav-related-info { /* blue bar with the "About:" links */
+  background: #005a9c;
+  color: #fff;
+}
+
+.nav-related-info a {
+  color: #fff !important;
+}
+
+.nav-page-specific { /* light blue bar with page/section specific navigation/pager */
+  margin-bottom: 1.25em;
+}
+
+.nav a:link, .nav a:visited {
+  color: #036;
+  color: var(--w3c-blue);
+}
+
+.nav a:hover, .nav a:active {
+    color: var(--dk-blue);
+}
+
+.nav-hack.sidebar a:hover,
+.nav-hack.sidebar a:active
+ {
+    color: var(--dk-blue);
+    text-decoration: underline;
+}
+
+.standalone-resource-about, .standalone-resource-pager {
+  margin: 0;
+}
+
+nav.standalone-resource-about {
+  padding: .5em 0 1.5em 0;
+  font-style: italic;
+}
+
+.standalone-resource-about dl, .standalone-resource-about dt, .standalone-resource-about dd {
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+
+.standalone-resource-about dt{
+    font-weight: normal;
+}
+
+.standalone-resource-about dl a {
+    margin: 0;
+    padding: 0 1em 0 1em;
+}
+
+.standalone-resource-about dd {
+    border-right: 1px var(--gold) solid;
+}
+
+.standalone-resource-about dd:last-of-type {
+	border-right: 0;
+}
+
+.standalone-resource-about dd svg {
+    margin-left: 0.25rem;
+    vertical-align: middle;
+}
+
+.nav .standalone-resource-pager ul {
+  align-items: center;
+}
+
+.nav .standalone-resource-pager a,
+.nav .standalone-resource-pager span {
+  margin-left: 0;
+  margin-right: 1.5em;
+}
+
+.pager-icon {
+	vertical-align: middle;
+  padding: 0 0.15em 0.15em 0.15em;
+  width: 1.65em;
+  height: 2em;
+  fill: #005A6A; /* when these are used as actual SVGs */
+}
+
+.category-icon {
+  vertical-align: middle;
+  padding: 0 0.25em 0.25em 0.25em;
+  width: 2em;
+  height: 2em;
+}
+
+.standalone-resource-pager {
+  padding: 1em 0;
+}
+
+.standalone-resource-pager ul {
+  display: block;
+}
+
+.standalone-resource-pager ul li {
+  display: inline;
+}
+
+.nav-hack {
+  font-size: .85rem;
+  /*justify-self: end;*/
+  align-self: start;
+}
+.nav-hack ul {
+    list-style: none;
+    border-bottom: 1px solid #BCBCBC;
+    padding-left: 0
+}
+.nav-hack li:not(:first-child){
+    padding-top: 0.4em;
+    line-height: 1.2;
+    border-top: 1px solid #BCBCBC;
+}
+.nav-hack li a {
+    text-decoration: none;
+}
+.nav-hack h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.nav-hack p {
+  margin: 0;
+}
+
+
+/* skip link */
+.button--skip-link {
+  background-color: var(--gold) !important;
+  border-color: var(--gold) !important;
+  outline-color: currentColor !important;
+  color: var(--off-black) !important;
+  font-weight: 600;
+  font-size: larger;
+  margin: 0 auto;
+  position: absolute;
+  z-index: 20;
+  left: 0;
+  right: 0;
+  top: 0.5em;
+  width: 10em;
+  opacity: 1;
+  transition: transform 0.1875s ease-out, opacity 0.1875s ease-out;
+}
+
+.button--skip-link:not(:focus):not(:hover) {
+  transform: translateY(-4em);
+  opacity: 0;
+}
+
+.minimal-header-subtitle {
+  display: block;
+  font-size: 60%;
+  margin-top: 1.5em;
+  font-style: italic;
+}
+
+.standalone-resource-navrule {
+    border:none;
+    border-top: 1px solid grey
+}
+
+.standalone-resource-about ul,
+.standalone-resource-pager ul {
+    list-style: none;
+}
+
+.nav {
+    font-size: 85%;
+}
+
+.standalone-resource-about a,
+.standalone-resource-pager a,
+.standalone-resource-about span,
+.standalone-resource-pager span 
+{
+    margin-left:.8em;
+    margin-right:.8em;
+}
+
+</style>
+
+    {% if page.type_of_guidance == "Design Pattern" or page.type_of_guidance == "Objective" %}
+      {% if page.related.sections != null %} 
+        {% capture content %}{{ content }}{% include related-info.html sections=page.related.sections %}{% endcapture %}   
+      {% endif%}
+    {% endif%} 
+
+    {% assign sidebar = page.sidebar %}
+    {% if sidebar == nil %} {% assign sidebar = layout.sidebar %} {% endif %}
+    {% if sidebar %}
+        <aside class="box nav-hack sidebar standalone-resource__sidebar ">
+            <header class="box-h ">Page Contents</header>
+            {% capture expanded_content %}{{ content | add_h2_ids }} {% endcapture %}
+            <div class="box-i">
+                <ul>
+                {% assign h2links = expanded_content | get_h2_links %}
+                {% for link in h2links %}
+                <li><a href="#{{ link[1] }}">{{ link[0] }}</a></li>
+                {% endfor %}
+                </ul>    
+            </div>
+        </aside>
+    {%else%}
+        {% assign expanded_content = content %}
+    {% endif %}
+
+    <main id="main"{% if page.lang %} lang="{{page.lang}}"{% endif %} class="standalone-resource__main">
+        <header>
+            <h1>
+              {% if page.type_of_guidance %}
+              <span class="standalone-resource__type-of-guidance">
+                {% if page.proposed %}
+                  Proposed
+                {% endif %}
+                {{ page.type_of_guidance }}:
+              </span>
+              {% endif %}
+              {% if page.title_html %}{{ page.title_html }}{% else %}{{ page.title }}{% endif %}
+            </h1>
+        </header>    
+
+        {{ expanded_content }}
+
+      </main>
+    
+  </div>
+
+    <div class="default-grid with-gap leftcol">
+      <div class="standalone-resource__prevnext">
+      {%- if page.navigation -%}
+        {%- include prevnext-navigation.html -%}
+      {%- else -%}
+        {%- if page.order -%}
+          {%- include prevnext-order.html -%}
+        {%- endif -%}
+      {%- endif -%}
+
+      {% include feedback-box.html %}
+      </div>
+    </div>
+    {% include_cached backtotop.html lang=page.lang %}
+  </div>
+  {% include footer.html lang=pagelang %}
+
+  
+  
+    
+  </body>
+
+</html>
