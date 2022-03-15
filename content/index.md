@@ -27,7 +27,7 @@ This page lists [WCAG 2 Test Rules](https://www.w3.org/WAI/standards-guidelines/
 These Test Rules have been approved by the Accessibility Guidelines Working Group. They are fully implemented in at least one evaluation tool or methodology.
 
 <ul>
-{% for rule in site.data.rules["act-rules"] %}
+{% for rule in site.data.wcag-act-rules.rules["act-rules"] %}
   {% if rule.proposed == false %}
     <li><a href="{{ rule.permalink }}">{{ rule.title }}</a></li>
   {% endif %}
@@ -39,7 +39,7 @@ These Test Rules have been approved by the Accessibility Guidelines Working Grou
 Proposed test rules will be published when they have at least one implementation and are approved by the AGWG.
 
 <ul>
-{% for rule in site.data.rules["act-rules"] %}
+{% for rule in site.data.wcag-act-rules.rules["act-rules"] %}
   {% if rule.proposed == true %}
     <li><a href="{{ rule.permalink }}">{{ rule.title }}</a></li>
   {% endif %}
