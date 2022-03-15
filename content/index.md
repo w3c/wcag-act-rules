@@ -29,7 +29,7 @@ These Test Rules have been approved by the Accessibility Guidelines Working Grou
 <ul>
 {% for rule in site.data.wcag-act-rules.rules["act-rules"] %}
   {% if rule.proposed == false %}
-    <li><a href="{{ rule.permalink }}">{{ rule.title }}</a></li>
+    <li><a href="{{ rule.permalink | relative_url }}">{{ rule.title }}</a></li>
   {% endif %}
 {% endfor %}
 </ul>
@@ -41,7 +41,7 @@ Proposed test rules will be published when they have at least one implementation
 <ul>
 {% for rule in site.data.wcag-act-rules.rules["act-rules"] %}
   {% if rule.proposed == true %}
-    <li><a href="{{ rule.permalink }}">{{ rule.title }}</a></li>
+    <li><a href="{{ rule.permalink | relative_url }}">{{ rule.title }}</a></li>
   {% endif %}
 {% endfor %}
 </ul>
