@@ -9,9 +9,9 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 5c01ea</p>
-  <p><strong>Date:</strong> Updated 28 January 2022</p>
+  <p><strong>Date:</strong> Updated 15 March 2022</p>
   <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/Jym77">Jean-Yves Moyen</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
-  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
+  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
 rule_meta:
   id: 5c01ea
@@ -19,7 +19,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that WAI-ARIA states or properties are allowed for the element they are specified on.
-  last_modified: 28 January 2022
+  last_modified: 15 March 2022
 ---
 
 ## Applicability
@@ -104,6 +104,8 @@ The following aspects are required in using this rule.
 
 #### Passed Example 1
 
+<a class="example-link" title="Passed Example 1" href="/content-assets/wcag-act-rules/testcases/5c01ea/4240276511703c9bfa881ac80f7c0af5c92c97cc.html">Open in a new tab</a>
+
 The `aria-pressed` [state][] is [supported][] for a [semantic][semantic role] `button`, which is the [implicit role][] for `button` elements.
 
 ```html
@@ -111,6 +113,8 @@ The `aria-pressed` [state][] is [supported][] for a [semantic][semantic role] `b
 ```
 
 #### Passed Example 2
+
+<a class="example-link" title="Passed Example 2" href="/content-assets/wcag-act-rules/testcases/5c01ea/f91d77e96c069380252b674faaf08eecab375503.html">Open in a new tab</a>
 
 The `aria-pressed` [state][] is [supported][] for the [semantic][semantic role] `button`, which is the [explicit role][] of this `div` element.
 
@@ -120,6 +124,8 @@ The `aria-pressed` [state][] is [supported][] for the [semantic][semantic role] 
 
 #### Passed Example 3
 
+<a class="example-link" title="Passed Example 3" href="/content-assets/wcag-act-rules/testcases/5c01ea/fec2c81ca23a9647c00ccd1fb5e74d06841ed6fa.html">Open in a new tab</a>
+
 The `aria-busy` [state][] is a [global][] [state][] that is [supported][] by all elements, even without any [semantic role][].
 
 ```html
@@ -127,6 +133,8 @@ The `aria-busy` [state][] is a [global][] [state][] that is [supported][] by all
 ```
 
 #### Passed Example 4
+
+<a class="example-link" title="Passed Example 4" href="/content-assets/wcag-act-rules/testcases/5c01ea/655b73c1435335a6a16852210787dc3621e73cef.html">Open in a new tab</a>
 
 The `aria-label` [property][] is a [global][] [property][] and thus [inherited][] for all [semantic role][].
 
@@ -136,6 +144,8 @@ The `aria-label` [property][] is a [global][] [property][] and thus [inherited][
 
 #### Passed Example 5
 
+<a class="example-link" title="Passed Example 5" href="/content-assets/wcag-act-rules/testcases/5c01ea/b67ab9861299ffa342880729ee1dbb43d2068a6b.html">Open in a new tab</a>
+
 The `aria-checked` [state][] is [required][] for the [semantic][semantic role] `checkbox`.
 
 ```html
@@ -143,6 +153,8 @@ The `aria-checked` [state][] is [required][] for the [semantic][semantic role] `
 ```
 
 #### Passed Example 6
+
+<a class="example-link" title="Passed Example 6" href="/content-assets/wcag-act-rules/testcases/5c01ea/edd0f2ba6aa31bc4dac2f057090eec3334e62c6d.html">Open in a new tab</a>
 
 The `aria-controls` [property][] is [required][] for the [semantic][semantic role] `combobox`.
 
@@ -152,6 +164,8 @@ The `aria-controls` [property][] is [required][] for the [semantic][semantic rol
 
 #### Passed Example 7
 
+<a class="example-link" title="Passed Example 7" href="/content-assets/wcag-act-rules/testcases/5c01ea/e81a1a6206e030af2cba2ebf4b3a7c86e1225b5b.html">Open in a new tab</a>
+
 The `aria-controls` [property][] is [required][] for the [semantic][semantic role] `combobox`. [WAI-ARIA states and properties][wai-aria state or property] with empty value are still applicable to this rule.
 
 ```html
@@ -160,6 +174,8 @@ The `aria-controls` [property][] is [required][] for the [semantic][semantic rol
 
 #### Passed Example 8
 
+<a class="example-link" title="Passed Example 8" href="/content-assets/wcag-act-rules/testcases/5c01ea/2b5e0b61e7317a251c5d0d74ac0d0cad202adacc.html">Open in a new tab</a>
+
 The `aria-controls` [property][] is [required][] for the [semantic][semantic role] `combobox`. [WAI-ARIA states and properties][wai-aria state or property] with empty value (specified as an empty string) are still applicable to this rule.
 
 ```html
@@ -167,6 +183,8 @@ The `aria-controls` [property][] is [required][] for the [semantic][semantic rol
 ```
 
 #### Passed Example 9
+
+<a class="example-link" title="Passed Example 9" href="/content-assets/wcag-act-rules/testcases/5c01ea/6c0718872b1d915b49c48fe135b9fc251bcff561.html">Open in a new tab</a>
 
 The `aria-label` [property][] is [global][] and thus [inherited][] for all [semantic role][], including the ones from the [WAI-ARIA Graphics Module](https://www.w3.org/TR/graphics-aria-1.0). This rule is also applicable to SVG elements.
 
@@ -178,6 +196,8 @@ The `aria-label` [property][] is [global][] and thus [inherited][] for all [sema
 
 #### Passed Example 10
 
+<a class="example-link" title="Passed Example 10" href="/content-assets/wcag-act-rules/testcases/5c01ea/d934cb530f9bd82f0c84615dfc405efad9b1fc69.html">Open in a new tab</a>
+
 This `button` element has an [explicit role][] of `none`. However, it is [focusable][] (by default). Thus it has a [semantic role][] of `button` due to [Presentational Roles Conflict Resolution][]. The `aria-pressed` [state][] is [supported][] for the `button` role.
 
 ```html
@@ -185,6 +205,8 @@ This `button` element has an [explicit role][] of `none`. However, it is [focusa
 ```
 
 #### Passed Example 11
+
+<a class="example-link" title="Passed Example 11" href="/content-assets/wcag-act-rules/testcases/5c01ea/0401164ef77abe96fd6502d35ed04952a057a8fe.html">Open in a new tab</a>
 
 This `input` element does not have an [explicit role][] of `textbox`, but the `aria-required` property may be used on an `input` element with a `type` [attribute value][] of `password`.
 
@@ -196,6 +218,8 @@ This `input` element does not have an [explicit role][] of `textbox`, but the `a
 
 #### Failed Example 1
 
+<a class="example-link" title="Failed Example 1" href="/content-assets/wcag-act-rules/testcases/5c01ea/5e4eedbbef33766005c6f92c3dede1b1b40a2dac.html">Open in a new tab</a>
+
 The `aria-sort` [property][] is neither [inherited][], [supported][], nor [required][] for the [semantic][semantic role] `button`, which is the [implicit role][] for the `button` element.
 
 ```html
@@ -203,6 +227,8 @@ The `aria-sort` [property][] is neither [inherited][], [supported][], nor [requi
 ```
 
 #### Failed Example 2
+
+<a class="example-link" title="Failed Example 2" href="/content-assets/wcag-act-rules/testcases/5c01ea/1449cc0526959d274a89345e9b479846577aac5c.html">Open in a new tab</a>
 
 The `aria-orientation` property may not be used on `audio` element, nor it can be used on `application` (the [semantic role][] for which [inherited][], [supported][], or [required][] [states][state] or [properties][property] are also applicable to `audio` element).
 
@@ -214,6 +240,8 @@ The `aria-orientation` property may not be used on `audio` element, nor it can b
 
 #### Inapplicable Example 1
 
+<a class="example-link" title="Inapplicable Example 1" href="/content-assets/wcag-act-rules/testcases/5c01ea/a7aac71114d641a7bbeb7c959779d34321a57213.html">Open in a new tab</a>
+
 This `div` element has no [WAI-ARIA state or property][].
 
 ```html
@@ -221,6 +249,8 @@ This `div` element has no [WAI-ARIA state or property][].
 ```
 
 #### Inapplicable Example 2
+
+<a class="example-link" title="Inapplicable Example 2" href="/content-assets/wcag-act-rules/testcases/5c01ea/e579177e7523653931efe361e37df7766f37b712.html">Open in a new tab</a>
 
 This `div` element is not [included in the accessibility tree][], hence its [WAI-ARIA state or property][] is not checked.
 
@@ -232,20 +262,20 @@ This `div` element is not [included in the accessibility tree][], hence its [WAI
 
 ### Attribute value {#attribute-value}
 
-The _attribute value_ of a content attribute set on an HTML element is the value that the attribute gets after being parsed and computed according to specifications. It may differ from the value that is actually written in the HTML code due to trimming whitespace or non-digits characters, default values, or case-insensitivity.
+The <dfn id="attribute-value:attribute">attribute value</dfn> of a content attribute set on an HTML element is the value that the attribute gets after being parsed and computed according to specifications. It may differ from the value that is actually written in the HTML code due to trimming whitespace or non-digits characters, default values, or case-insensitivity.
 
 Some notable case of attribute value, among others:
 
-- For [enumerated attributes][], the _attribute value_ is either the state of the attribute, or the keyword that maps to it; even for the default states. Thus `<input type="image" />` has an attribute value of either `Image Button` (the state) or `image` (the keyword mapping to it), both formulations having the same meaning; similarly, "an input element with a `type` _attribute value_ of `Text`" can be either `<input type="text" />`, `<input />` (missing value default), or `<input type="invalid" />` (invalid value default).
-- For [boolean attributes][], the _attribute value_ is `true` when the attribute is present and `false` otherwise. Thus `<button disabled>`, `<button disabled="disabled">` and `<button disabled="">` all have a `disabled` _attribute value_ of `true`.
-- For attributes whose value is used in a case-insensitive context, the _attribute value_ is the lowercase version of the value written in the HTML code.
-- For attributes that accept [numbers][], the _attribute value_ is the result of parsing the value written in the HTML code according to the rules for parsing this kind of number.
-- For attributes that accept sets of tokens, whether [space separated][] or [comma separated][], the _attribute value_ is the set of tokens obtained after parsing the set and, depending on the case, converting its items to lowercase (if the set is used in a case-insensitive context).
-- For `aria-*` attributes, the _attribute value_ is computed as indicated in the [WAI-ARIA specification][] and the [HTML Accessibility API Mappings][html aam].
+- For [enumerated attributes][], the <dfn id="attribute-value:enumerated">attribute value</dfn> is either the state of the attribute, or the keyword that maps to it; even for the default states. Thus `<input type="image" />` has an attribute value of either `Image Button` (the state) or `image` (the keyword mapping to it), both formulations having the same meaning; similarly, "an input element with a `type` _attribute value_ of `Text`" can be either `<input type="text" />`, `<input />` (missing value default), or `<input type="invalid" />` (invalid value default).
+- For [boolean attributes][], the <dfn id="attribute-value:boolean">attribute value</dfn> is `true` when the attribute is present and `false` otherwise. Thus `<button disabled>`, `<button disabled="disabled">` and `<button disabled="">` all have a `disabled` _attribute value_ of `true`.
+- For attributes whose value is used in a case-insensitive context, the <dfn id="attribute-value:case-insensitive">attribute value</dfn> is the lowercase version of the value written in the HTML code.
+- For attributes that accept [numbers][], the <dfn id="attribute-value:number">attribute value</dfn> is the result of parsing the value written in the HTML code according to the rules for parsing this kind of number.
+- For attributes that accept sets of tokens, whether [space separated][] or [comma separated][], the <dfn id="attribute-value:tokens-list">attribute value</dfn> is the set of tokens obtained after parsing the set and, depending on the case, converting its items to lowercase (if the set is used in a case-insensitive context).
+- For `aria-*` attributes, the <dfn id="attribute-value:aria">attribute value</dfn> is computed as indicated in the [WAI-ARIA specification][] and the [HTML Accessibility API Mappings][html aam].
 
 This list is not exhaustive, and only serves as an illustration for some of the most common cases.
 
-The _attribute value_ of an [IDL attribute][] is the value returned on getting it. Note that when an [IDL attribute][] [reflects][reflect] a content attribute, they have the same attribute value.
+The <dfn id="attribute-value:idl">attribute value</dfn> of an [IDL attribute][] is the value returned on getting it. Note that when an [IDL attribute][] [reflects][reflect] a content attribute, they have the same attribute value.
 
 ### Explicit Semantic Role {#explicit-role}
 
@@ -257,7 +287,17 @@ Other roles may be added as they become available. Not all roles will be support
 
 ### Focusable {#focusable}
 
-Elements that can become the target of keyboard input as described in the [HTML](https://www.w3.org/TR/html) specification of [focusable](https://html.spec.whatwg.org/#focusable-area) and [can be focused](https://html.spec.whatwg.org/#specially-focusable).
+An element is _focusable_ if one or both of the following are true:
+
+- the element is part of [sequential focus navigation][]; or
+- the element has a [tabindex value][] that is not null.
+
+**Exception**: Elements that lose focus during a period of up to 1 second after gaining focus, without the user interacting with the page the element is on, are not considered _focusable_.
+
+Notes:
+
+- The 1 second time span is an arbitrary limit which is not included in WCAG. Given that scripts can manage the focus state of elements, testing the focusability of an element consistently would be impractical without a time limit.
+- The [tabindex value][] of an element is the value of the [tabindex attribute][] parsed using the [rules for parsing integers][]. For the [tabindex value][] to be different from null, it needs to be [parsed][rules for parsing integers] without errors.
 
 ### Implicit Semantic Role {#implicit-role}
 
@@ -308,11 +348,12 @@ An _outcome_ is a conclusion that comes from evaluating an ACT Rule on a [test s
 
 An HTML element is _programmatically hidden_ if either it has a [computed][] CSS property `visibility` whose value is not `visible`; or at least one of the following is true for any of its [inclusive ancestors][] in the [flat tree][]:
 
-- has a `hidden` attribute; or
 - has a [computed][] CSS property `display` of `none`; or
 - has an `aria-hidden` attribute set to `true`
 
 **Note**: Contrarily to the other conditions, the `visibility` CSS property may be reverted by descendants.
+
+**Note**: The [HTML standard suggests](https://html.spec.whatwg.org/multipage/rendering.html#hidden-elements) rendering elements with the `hidden` attribute with a CSS rule that applies the value `none` to the CSS property `display` of the element. Although the suggestion is not normative, known user agents render it according to the suggestion (unless the content specifies another CSS rule that sets the value of the `display` property). If a user agent does not follow the suggestion, this definition may produce incorrect results for this user agent.
 
 ### Semantic Role {#semantic-role}
 
@@ -370,10 +411,14 @@ This is the first version of this ACT rule.
 [reflect]: https://html.spec.whatwg.org/multipage/common-dom-interfaces.html#reflecting-content-attributes-in-idl-attributes 'HTML specification of Reflecting Content Attributes in IDL Attributes'
 [required]: https://www.w3.org/TR/wai-aria/#requiredState 'Definition of Required ARIA States and Properties'
 [role attribute]: https://www.w3.org/TR/role-attribute/ 'Specification of the role attribute'
+[rules for parsing integers]: https://html.spec.whatwg.org/#rules-for-parsing-integers
 [semantic role]: #semantic-role 'Definition of Semantic Role'
+[sequential focus navigation]: https://html.spec.whatwg.org/multipage/interaction.html#sequential-focus-navigation
 [space separated]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#space-separated-tokens 'HTML Specification of Space Separated Tokens'
 [state]: https://www.w3.org/TR/wai-aria/#dfn-state 'Definition of ARIA State'
 [supported]: https://www.w3.org/TR/wai-aria/#supportedState 'Definition of Supported ARIA States and Properties'
+[tabindex attribute]: https://html.spec.whatwg.org/#attr-tabindex
+[tabindex value]: https://html.spec.whatwg.org/#tabindex-value
 [wai-aria specification]: https://www.w3.org/TR/wai-aria-1.1/#propcharacteristic_value 'WAI-ARIA Specification of States and Properties Value'
 [wai-aria specifications]: #wai-aria-specifications 'Definition of WAI-ARIA specifications'
 [wai-aria state or property]: https://www.w3.org/TR/wai-aria-1.1/#state_prop_def 'Definition of ARIA States and Properties'

@@ -9,9 +9,9 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> e7aa44</p>
-  <p><strong>Date:</strong> Updated 28 January 2022</p>
+  <p><strong>Date:</strong> Updated 15 March 2022</p>
   <p><strong>Authors:</strong> <a href="https://www.linkedin.com/in/brianbors/">Brian Bors</a>, <a href="https://github.com/john-urbilog">John Hicks</a>, <a href="https://github.com/Rafalchar">Rafal Charlampowicz</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
-  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
+  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
 rule_meta:
   id: e7aa44
@@ -19,7 +19,7 @@ rule_meta:
   rule_type: composite
   description: |
     This rule checks if audio only elements have a text alternative available.
-  last_modified: 28 January 2022
+  last_modified: 15 March 2022
   scs_tested:
     - handle: Audio-only and Video-only (Prerecorded)
       num: 1.2.1
@@ -90,14 +90,16 @@ There are no major accessibility support issues known for this rule.
 
 Outcomes of the following rules are required as input for this rule.
 
-- [`audio` element content has transcript](/standards-guidelines/act/rules/e7aa44/)
-- [`audio` element content is media alternative for text](/standards-guidelines/act/rules/e7aa44/)
+- [`audio` element content has transcript](/standards-guidelines/act/rules/audio-transcript-2eb176/)
+- [`audio` element content is media alternative for text](/standards-guidelines/act/rules/audio-as-media-alternative-afb423/)
 
 ## Test Cases
 
 ### Passed
 
 #### Passed Example 1
+
+<a class="example-link" title="Passed Example 1" href="/content-assets/wcag-act-rules/testcases/e7aa44/85c98d1402dbc9c68ace2fbf5f063d145b8e5bd7.html">Open in a new tab</a>
 
 Audio with controls and internal transcript
 
@@ -114,6 +116,8 @@ Audio with controls and internal transcript
 ```
 
 #### Passed Example 2
+
+<a class="example-link" title="Passed Example 2" href="/content-assets/wcag-act-rules/testcases/e7aa44/dedfb667190bd564527247550565cdea8ccefd3f.html">Open in a new tab</a>
 
 An audio element that describes some of the text on the same page. The text on the page labels the audio as an alternative.
 
@@ -136,6 +140,8 @@ An audio element that describes some of the text on the same page. The text on t
 
 #### Failed Example 1
 
+<a class="example-link" title="Failed Example 1" href="/content-assets/wcag-act-rules/testcases/e7aa44/58cd3c1ef1ce88b7878c9e11c4f610486faefbf6.html">Open in a new tab</a>
+
 Audio with controls and incorrect internal transcript
 
 ```html
@@ -151,6 +157,8 @@ Audio with controls and incorrect internal transcript
 ```
 
 #### Failed Example 2
+
+<a class="example-link" title="Failed Example 2" href="/content-assets/wcag-act-rules/testcases/e7aa44/6f9ab7a874b2d555e94957abaec5f6e908b6c206.html">Open in a new tab</a>
 
 An audio element that describes some of the text on the same page. The text is not [visible][] on the page.
 
@@ -173,6 +181,8 @@ An audio element that describes some of the text on the same page. The text is n
 
 #### Inapplicable Example 1
 
+<a class="example-link" title="Inapplicable Example 1" href="/content-assets/wcag-act-rules/testcases/e7aa44/eba170767ac1de0092d33a9bee2c0ecf2ebdfd46.html">Open in a new tab</a>
+
 Audio without controls.
 
 ```html
@@ -182,6 +192,8 @@ Audio without controls.
 ```
 
 #### Inapplicable Example 2
+
+<a class="example-link" title="Inapplicable Example 2" href="/content-assets/wcag-act-rules/testcases/e7aa44/1c9dada7fa918fd9cffdd6d4c3443107aee373f5.html">Open in a new tab</a>
 
 An audio element that describes some of the text on the same page. The text on the page labels the audio as an alternative but the controls are not [visible][] on the page.
 
@@ -201,6 +213,8 @@ An audio element that describes some of the text on the same page. The text on t
 ```
 
 #### Inapplicable Example 3
+
+<a class="example-link" title="Inapplicable Example 3" href="/content-assets/wcag-act-rules/testcases/e7aa44/39721898dc02683e926a5cfa21afea1bcf477219.html">Open in a new tab</a>
 
 This `a` element links to an audio file, but there is no `audio` element on this page.
 
@@ -222,7 +236,17 @@ This `a` element links to an audio file, but there is no `audio` element on this
 
 ### Focusable {#focusable}
 
-Elements that can become the target of keyboard input as described in the [HTML](https://www.w3.org/TR/html) specification of [focusable](https://html.spec.whatwg.org/#focusable-area) and [can be focused](https://html.spec.whatwg.org/#specially-focusable).
+An element is _focusable_ if one or both of the following are true:
+
+- the element is part of [sequential focus navigation][]; or
+- the element has a [tabindex value][] that is not null.
+
+**Exception**: Elements that lose focus during a period of up to 1 second after gaining focus, without the user interacting with the page the element is on, are not considered _focusable_.
+
+Notes:
+
+- The 1 second time span is an arbitrary limit which is not included in WCAG. Given that scripts can manage the focus state of elements, testing the focusability of an element consistently would be impractical without a time limit.
+- The [tabindex value][] of an element is the value of the [tabindex attribute][] parsed using the [rules for parsing integers][]. For the [tabindex value][] to be different from null, it needs to be [parsed][rules for parsing integers] without errors.
 
 ### Included in the accessibility tree {#included-in-the-accessibility-tree}
 
@@ -254,11 +278,12 @@ An _outcome_ is a conclusion that comes from evaluating an ACT Rule on a [test s
 
 An HTML element is _programmatically hidden_ if either it has a [computed][] CSS property `visibility` whose value is not `visible`; or at least one of the following is true for any of its [inclusive ancestors][] in the [flat tree][]:
 
-- has a `hidden` attribute; or
 - has a [computed][] CSS property `display` of `none`; or
 - has an `aria-hidden` attribute set to `true`
 
 **Note**: Contrarily to the other conditions, the `visibility` CSS property may be reverted by descendants.
+
+**Note**: The [HTML standard suggests](https://html.spec.whatwg.org/multipage/rendering.html#hidden-elements) rendering elements with the `hidden` attribute with a CSS rule that applies the value `none` to the CSS property `display` of the element. Although the suggestion is not normative, known user agents render it according to the suggestion (unless the content specifies another CSS rule that sets the value of the `display` property). If a user agent does not follow the suggestion, this definition may produce incorrect results for this user agent.
 
 ### Visible {#visible}
 
@@ -280,4 +305,8 @@ This is the first version of this ACT rule.
 [examples of included in the accessibility tree]: https://act-rules.github.io/pages/examples/included-in-the-accessibility-tree/
 [flat tree]: https://drafts.csswg.org/css-scoping/#flat-tree 'Definition of flat tree'
 [inclusive ancestors]: https://dom.spec.whatwg.org/#concept-tree-inclusive-ancestor 'DOM Definition of Inclusive Ancestor'
+[rules for parsing integers]: https://html.spec.whatwg.org/#rules-for-parsing-integers
+[sequential focus navigation]: https://html.spec.whatwg.org/multipage/interaction.html#sequential-focus-navigation
+[tabindex attribute]: https://html.spec.whatwg.org/#attr-tabindex
+[tabindex value]: https://html.spec.whatwg.org/#tabindex-value
 [visible]: #visible 'Definition of visible'

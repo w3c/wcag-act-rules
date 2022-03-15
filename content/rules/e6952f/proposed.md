@@ -9,9 +9,9 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> e6952f</p>
-  <p><strong>Date:</strong> Updated 28 January 2022</p>
+  <p><strong>Date:</strong> Updated 15 March 2022</p>
   <p><strong>Authors:</strong> <a href="https://github.com/EmmaJP">Emma Pratt Richens</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
-  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
+  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
 rule_meta:
   id: e6952f
@@ -19,7 +19,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that HTML and SVG starting tags do not contain duplicated attributes.
-  last_modified: 28 January 2022
+  last_modified: 15 March 2022
   scs_tested:
     - handle: Parsing
       num: 4.1.1
@@ -91,6 +91,8 @@ The following aspects are required in using this rule.
 
 #### Passed Example 1
 
+<a class="example-link" title="Passed Example 1" href="/content-assets/wcag-act-rules/testcases/e6952f/ebd0080bacb8debc7ad069072240657df38c3e2c.html">Open in a new tab</a>
+
 This `img` element contains no duplicated attributes.
 
 ```html
@@ -98,6 +100,8 @@ This `img` element contains no duplicated attributes.
 ```
 
 #### Passed Example 2
+
+<a class="example-link" title="Passed Example 2" href="/content-assets/wcag-act-rules/testcases/e6952f/3f5db5b7f88b5c55969fabecd926bb8f85624ce2.html">Open in a new tab</a>
 
 This `br` element contains no attributes, so there is no duplicated attribute.
 
@@ -107,6 +111,8 @@ This `br` element contains no attributes, so there is no duplicated attribute.
 
 #### Passed Example 3
 
+<a class="example-link" title="Passed Example 3" href="/content-assets/wcag-act-rules/testcases/e6952f/978d5521aa80f7f43f24d509fca705e64b4e9bd2.html">Open in a new tab</a>
+
 This `input` element contains three different attributes, two of them being empty.
 
 ```html
@@ -114,6 +120,8 @@ This `input` element contains three different attributes, two of them being empt
 ```
 
 #### Passed Example 4
+
+<a class="example-link" title="Passed Example 4" href="/content-assets/wcag-act-rules/testcases/e6952f/38ff8b79c35b965c29c704745794f7ab72dab3e6.html">Open in a new tab</a>
 
 This `SVG` element contains no attributes.
 
@@ -124,6 +132,8 @@ This `SVG` element contains no attributes.
 ```
 
 #### Passed Example 5
+
+<a class="example-link" title="Passed Example 5" href="/content-assets/wcag-act-rules/testcases/e6952f/eb695b7a176b9d8dc9d8100bbea326dda3b8ee06.html">Open in a new tab</a>
 
 This `script` element contains duplicated attributes, but they are ignored because they are placed within the `script` tag.
 
@@ -137,6 +147,8 @@ This `script` element contains duplicated attributes, but they are ignored becau
 
 #### Failed Example 1
 
+<a class="example-link" title="Failed Example 1" href="/content-assets/wcag-act-rules/testcases/e6952f/4af6d805f5945f5e7888da84b8b576ce825f5e3b.html">Open in a new tab</a>
+
 This `img` element contains a duplicated `alt` attribute.
 
 ```html
@@ -145,6 +157,8 @@ This `img` element contains a duplicated `alt` attribute.
 
 #### Failed Example 2
 
+<a class="example-link" title="Failed Example 2" href="/content-assets/wcag-act-rules/testcases/e6952f/9cd3b83c1fdab7da7a471837d79b087948ead61e.html">Open in a new tab</a>
+
 This `input` element contains a duplicate `disabled` attribute.
 
 ```html
@@ -152,6 +166,8 @@ This `input` element contains a duplicate `disabled` attribute.
 ```
 
 #### Failed Example 3
+
+<a class="example-link" title="Failed Example 3" href="/content-assets/wcag-act-rules/testcases/e6952f/41db73e68271070cff56b2d1da42bb45e5cb4722.html">Open in a new tab</a>
 
 This `line` element contains duplicate `x1` and duplicate `y1` attributes.
 
@@ -165,6 +181,8 @@ This `line` element contains duplicate `x1` and duplicate `y1` attributes.
 
 #### Inapplicable Example 1
 
+<a class="example-link" title="Inapplicable Example 1" href="/content-assets/wcag-act-rules/testcases/e6952f/d6c265ec8adf5af533f4cfe4b3c09416293c7b7a.xml">Open in a new tab</a>
+
 This code is XML, not HTML or SVG.
 
 ```xml
@@ -177,6 +195,8 @@ This code is XML, not HTML or SVG.
 ```
 
 #### Inapplicable Example 2
+
+<a class="example-link" title="Inapplicable Example 2" href="/content-assets/wcag-act-rules/testcases/e6952f/af5a9930957786829ada7dfc1be62df3e41b28e5.js">Open in a new tab</a>
 
 This code is JavaScript, not HTML or SVG.
 

@@ -9,9 +9,9 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> fd3a94</p>
-  <p><strong>Date:</strong> Updated 28 January 2022</p>
+  <p><strong>Date:</strong> Updated 15 March 2022</p>
   <p><strong>Authors:</strong> <a href="https://github.com/carlosapaduarte">Carlos Duarte</a>. Previous Authors: <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
-  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
+  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
 rule_meta:
   id: fd3a94
@@ -19,7 +19,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that links with identical accessible names and context resolve to the same or equivalent resources.
-  last_modified: 28 January 2022
+  last_modified: 15 March 2022
   scs_tested:
     - handle: Link Purpose (In Context)
       num: 2.4.4
@@ -110,6 +110,8 @@ The following aspects are required in using this rule.
 
 #### Passed Example 1
 
+<a class="example-link" title="Passed Example 1" href="/content-assets/wcag-act-rules/testcases/fd3a94/c6927fede2d5da439b2d346f39d2ec8980212b31.html">Open in a new tab</a>
+
 These two HTML `a` elements have the same [accessible name][] and [context][programmatically determined link context] and link to the [same resource][].
 
 ```html
@@ -123,6 +125,8 @@ These two HTML `a` elements have the same [accessible name][] and [context][prog
 ```
 
 #### Passed Example 2
+
+<a class="example-link" title="Passed Example 2" href="/content-assets/wcag-act-rules/testcases/fd3a94/52523d2aedb7ec8ed97788758ab1398557aa301d.html">Open in a new tab</a>
 
 These two HTML `a` elements have the same [accessible name][] and [context][programmatically determined link context], and resolve to the [same resource][] after an instant redirect.
 
@@ -138,6 +142,8 @@ These two HTML `a` elements have the same [accessible name][] and [context][prog
 ```
 
 #### Passed Example 3
+
+<a class="example-link" title="Passed Example 3" href="/content-assets/wcag-act-rules/testcases/fd3a94/91abed1247fb6c9314457a6738343493056fe3bb.html">Open in a new tab</a>
 
 These two HTML `a` elements have the same [accessible name][] and [context][programmatically determined link context], and resolve to identical resources.
 
@@ -155,6 +161,8 @@ These two HTML `a` elements have the same [accessible name][] and [context][prog
 
 #### Passed Example 4
 
+<a class="example-link" title="Passed Example 4" href="/content-assets/wcag-act-rules/testcases/fd3a94/8e6c190e0d2ba8f37707910bd1b984b6885ab548.html">Open in a new tab</a>
+
 These two HTML `a` elements have the same [accessible name][] and [context][programmatically determined link context], and resolve to pages that serve the same purpose because the content section is the same.
 
 ```html
@@ -171,6 +179,8 @@ These two HTML `a` elements have the same [accessible name][] and [context][prog
 
 #### Passed Example 5
 
+<a class="example-link" title="Passed Example 5" href="/content-assets/wcag-act-rules/testcases/fd3a94/b55973d2f813b2fa7d0841202c13f65e41ca8823.html">Open in a new tab</a>
+
 These two HTML `a` elements have the same [accessible name][] and [context][programmatically determined link context], and go to pages that fulfill the same purpose in relation to the link because they contain the same relevant information.
 
 ```html
@@ -185,6 +195,8 @@ These two HTML `a` elements have the same [accessible name][] and [context][prog
 ```
 
 #### Passed Example 6
+
+<a class="example-link" title="Passed Example 6" href="/content-assets/wcag-act-rules/testcases/fd3a94/19d5c2888e4434b3e0fb2d9ea5818808e8380422.html">Open in a new tab</a>
 
 These two HTML `a` elements have the same [accessible name][] and [context][programmatically determined link context], and go to pages that use different layouts but have the same purpose.
 
@@ -201,6 +213,8 @@ These two HTML `a` elements have the same [accessible name][] and [context][prog
 ```
 
 #### Passed Example 7
+
+<a class="example-link" title="Passed Example 7" href="/content-assets/wcag-act-rules/testcases/fd3a94/fb1e5016cd1630a2839dc7d70d503babd2ccfefc.html">Open in a new tab</a>
 
 These two HTML `span` elements have an [explicit role][] of link, the same [accessible name][], the same [context][programmatically determined link context], and link to the [same resource][].
 
@@ -228,6 +242,8 @@ These two HTML `span` elements have an [explicit role][] of link, the same [acce
 
 #### Passed Example 8
 
+<a class="example-link" title="Passed Example 8" href="/content-assets/wcag-act-rules/testcases/fd3a94/0c9cee5afaadc35a08ce533448f02b50d6526eda.html">Open in a new tab</a>
+
 These two SVG `a` and HTML `a` elements have the same [accessible name][], same [context][programmatically determined link context] and link to the [same resource][].
 
 ```html
@@ -248,6 +264,8 @@ These two SVG `a` and HTML `a` elements have the same [accessible name][], same 
 
 #### Failed Example 1
 
+<a class="example-link" title="Failed Example 1" href="/content-assets/wcag-act-rules/testcases/fd3a94/228c0a3d78557fb48a855d6733d50848a86f0d62.html">Open in a new tab</a>
+
 These two HTML `a` elements have the same [accessible name][] and [context][programmatically determined link context] but go to different resources.
 
 ```html
@@ -261,6 +279,8 @@ These two HTML `a` elements have the same [accessible name][] and [context][prog
 ```
 
 #### Failed Example 2
+
+<a class="example-link" title="Failed Example 2" href="/content-assets/wcag-act-rules/testcases/fd3a94/d83d253f08a9a34641765518590dd7e46a53bfc7.html">Open in a new tab</a>
 
 These two HTML `a` elements have the same [accessible name][] and [context][programmatically determined link context]. They link to web pages that are similar, but have different information in their content.
 
@@ -278,6 +298,8 @@ These two HTML `a` elements have the same [accessible name][] and [context][prog
 ```
 
 #### Failed Example 3
+
+<a class="example-link" title="Failed Example 3" href="/content-assets/wcag-act-rules/testcases/fd3a94/109577c05513f09ec5360d02ef463d7f5350578c.html">Open in a new tab</a>
 
 These two HTML `span` elements have an [explicit role][] of link, same [accessible name][] and [context][programmatically determined link context], but link to resources that offer different content.
 
@@ -301,6 +323,8 @@ These two HTML `span` elements have an [explicit role][] of link, same [accessib
 
 #### Failed Example 4
 
+<a class="example-link" title="Failed Example 4" href="/content-assets/wcag-act-rules/testcases/fd3a94/fdc1c4461c1b874a94df693c72a8483cb39a8aab.html">Open in a new tab</a>
+
 These two SVG `a` elements have the same [accessible name][] and [context][programmatically determined link context] but link to different resources.
 
 ```html
@@ -323,6 +347,8 @@ These two SVG `a` elements have the same [accessible name][] and [context][progr
 
 #### Failed Example 5
 
+<a class="example-link" title="Failed Example 5" href="/content-assets/wcag-act-rules/testcases/fd3a94/0a465c71c47198030c8212fdd1122e35e06c4ee0.html">Open in a new tab</a>
+
 These two HTML `a` elements with the same [accessible name][] and [context][programmatically determined link context] resolve to the [same resource][] after redirect, but the redirect is not instant.
 
 ```html
@@ -342,6 +368,8 @@ These two HTML `a` elements with the same [accessible name][] and [context][prog
 
 #### Inapplicable Example 1
 
+<a class="example-link" title="Inapplicable Example 1" href="/content-assets/wcag-act-rules/testcases/fd3a94/547d69dca1d88658ee7036136b8cd29e05a28823.html">Open in a new tab</a>
+
 These HTML `a` and `area` elements do not have a role of `link`.
 
 ```html
@@ -352,6 +380,8 @@ These HTML `a` and `area` elements do not have a role of `link`.
 ```
 
 #### Inapplicable Example 2
+
+<a class="example-link" title="Inapplicable Example 2" href="/content-assets/wcag-act-rules/testcases/fd3a94/4902c330569df88302c98581dcd6c1a449e72783.html">Open in a new tab</a>
 
 These two HTML `a` elements have different [accessible names][accessible name].
 
@@ -367,6 +397,8 @@ These two HTML `a` elements have different [accessible names][accessible name].
 ```
 
 #### Inapplicable Example 3
+
+<a class="example-link" title="Inapplicable Example 3" href="/content-assets/wcag-act-rules/testcases/fd3a94/3d342b4c04e69cdfaa26d6258275ec9807903d56.html">Open in a new tab</a>
 
 These two HTML `a` elements have the same [accessible name][] and link to the [same resource][] but different [programmatically determined link contexts][programmatically determined link context].
 
@@ -386,6 +418,8 @@ These two HTML `a` elements have the same [accessible name][] and link to the [s
 ```
 
 #### Inapplicable Example 4
+
+<a class="example-link" title="Inapplicable Example 4" href="/content-assets/wcag-act-rules/testcases/fd3a94/ea07736554f372e47c098f3cb946d0bbbbd22d82.html">Open in a new tab</a>
 
 These two `span` elements do not have a [semantic role][] of link.
 
@@ -446,7 +480,17 @@ Other roles may be added as they become available. Not all roles will be support
 
 ### Focusable {#focusable}
 
-Elements that can become the target of keyboard input as described in the [HTML](https://www.w3.org/TR/html) specification of [focusable](https://html.spec.whatwg.org/#focusable-area) and [can be focused](https://html.spec.whatwg.org/#specially-focusable).
+An element is _focusable_ if one or both of the following are true:
+
+- the element is part of [sequential focus navigation][]; or
+- the element has a [tabindex value][] that is not null.
+
+**Exception**: Elements that lose focus during a period of up to 1 second after gaining focus, without the user interacting with the page the element is on, are not considered _focusable_.
+
+Notes:
+
+- The 1 second time span is an arbitrary limit which is not included in WCAG. Given that scripts can manage the focus state of elements, testing the focusability of an element consistently would be impractical without a time limit.
+- The [tabindex value][] of an element is the value of the [tabindex attribute][] parsed using the [rules for parsing integers][]. For the [tabindex value][] to be different from null, it needs to be [parsed][rules for parsing integers] without errors.
 
 ### Implicit Semantic Role {#implicit-role}
 
@@ -521,11 +565,12 @@ This definition assumes that the HTML document with the link is a document using
 
 An HTML element is _programmatically hidden_ if either it has a [computed][] CSS property `visibility` whose value is not `visible`; or at least one of the following is true for any of its [inclusive ancestors][] in the [flat tree][]:
 
-- has a `hidden` attribute; or
 - has a [computed][] CSS property `display` of `none`; or
 - has an `aria-hidden` attribute set to `true`
 
 **Note**: Contrarily to the other conditions, the `visibility` CSS property may be reverted by descendants.
+
+**Note**: The [HTML standard suggests](https://html.spec.whatwg.org/multipage/rendering.html#hidden-elements) rendering elements with the `hidden` attribute with a CSS rule that applies the value `none` to the CSS property `display` of the element. Although the suggestion is not normative, known user agents render it according to the suggestion (unless the content specifies another CSS rule that sets the value of the `display` property). If a user agent does not follow the suggestion, this definition may produce incorrect results for this user agent.
 
 ### Same resource {#same-resource}
 
@@ -607,10 +652,14 @@ This is the first version of this ACT rule.
 [programmatically hidden]: #programmatically-hidden 'Definition of Programmatically Hidden'
 [pure decoration]: https://www.w3.org/TR/WCAG21/#dfn-pure-decoration 'WCAG definition of Pure Decoration'
 [role attribute]: https://www.w3.org/TR/role-attribute/ 'Specification of the role attribute'
+[rules for parsing integers]: https://html.spec.whatwg.org/#rules-for-parsing-integers
 [same resource]: #same-resource 'Definition of same resource'
 [sc244]: https://www.w3.org/TR/WCAG21/#link-purpose-in-context 'Success Criterion 2.4.4: Link Purpose (In Context)'
 [sc249]: https://www.w3.org/TR/WCAG21/#link-purpose-link-only 'Success Criterion 2.4.9: Link Purpose (Link Only)'
 [semantic role]: #semantic-role 'Definition of semantic role'
+[sequential focus navigation]: https://html.spec.whatwg.org/multipage/interaction.html#sequential-focus-navigation
 [shadow tree]: https://dom.spec.whatwg.org/#shadow-tree 'Definition of shadow tree'
+[tabindex attribute]: https://html.spec.whatwg.org/#attr-tabindex
+[tabindex value]: https://html.spec.whatwg.org/#tabindex-value
 [wai-aria specifications]: #wai-aria-specifications 'Definition of WAI-ARIA specifications'
 [web page (html)]: #web-page-html 'Definition of web page (HTML)'

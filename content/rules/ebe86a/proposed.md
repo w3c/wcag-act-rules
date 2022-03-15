@@ -9,9 +9,9 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> ebe86a</p>
-  <p><strong>Date:</strong> Updated 28 January 2022</p>
+  <p><strong>Date:</strong> Updated 15 March 2022</p>
   <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/carlosapaduarte">Carlos Duarte</a>, <a href="https://github.com/DagfinnRomen">Dagfinn Rømen</a>, <a href="https://github.com/geirsf">Geir Sindre Fossøy</a>, <a href="https: //github.com/MaliinO">Malin Øvrebø</a>, <a href="https://github.com/nitedog">Shadi Abou-Zahra</a>, <a href="https://github.com/skotkjerra">Stein Erik Skotkjerra</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
-  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
+  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
 rule_meta:
   id: ebe86a
@@ -19,7 +19,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks if it is possible to use non-standard keyboard navigation to navigate through content where focus is trapped when using standard ways of keyboard navigation.
-  last_modified: 28 January 2022
+  last_modified: 15 March 2022
 ---
 
 ## Applicability
@@ -78,6 +78,8 @@ The following aspects are required in using this rule.
 
 #### Passed Example 1
 
+<a class="example-link" title="Passed Example 1" href="/content-assets/wcag-act-rules/testcases/ebe86a/2e5b21696d8d78553aef73c00c2c4118a123ce53.html">Open in a new tab</a>
+
 Keyboard trap with help information in a paragraph before, and where the method advised works.
 
 ```html
@@ -102,6 +104,8 @@ Keyboard trap with help information in a paragraph before, and where the method 
 
 #### Passed Example 2
 
+<a class="example-link" title="Passed Example 2" href="/content-assets/wcag-act-rules/testcases/ebe86a/7aa9d83ec176f011c1646a8977070c2b1c5209b6.html">Open in a new tab</a>
+
 Keyboard trap with help information within the trap, and where the method advised works.
 
 ```html
@@ -125,6 +129,8 @@ Keyboard trap with help information within the trap, and where the method advise
 ```
 
 #### Passed Example 3
+
+<a class="example-link" title="Passed Example 3" href="/content-assets/wcag-act-rules/testcases/ebe86a/3432e1dfefcc17bea67a25de3c42a9a4bec73d7c.html">Open in a new tab</a>
 
 Keyboard trap with "help" link that once clicked exposes the instructions.
 
@@ -155,6 +161,8 @@ Keyboard trap with "help" link that once clicked exposes the instructions.
 
 #### Failed Example 1
 
+<a class="example-link" title="Failed Example 1" href="/content-assets/wcag-act-rules/testcases/ebe86a/5e4c0baac1de5da1325348d49892a01b92f8fb0c.html">Open in a new tab</a>
+
 Keyboard trap with no instructions.
 
 ```html
@@ -177,6 +185,8 @@ Keyboard trap with no instructions.
 ```
 
 #### Failed Example 2
+
+<a class="example-link" title="Failed Example 2" href="/content-assets/wcag-act-rules/testcases/ebe86a/e9885e3c626b0f50853075e86e0b2f82d723bd24.html">Open in a new tab</a>
 
 Keyboard trap with instructions that doesn't give advise on the method for proceeding.
 
@@ -202,6 +212,8 @@ Keyboard trap with instructions that doesn't give advise on the method for proce
 
 #### Failed Example 3
 
+<a class="example-link" title="Failed Example 3" href="/content-assets/wcag-act-rules/testcases/ebe86a/5cbf445372b50a5ff8e428c6b8b00506b1decddb.html">Open in a new tab</a>
+
 Keyboard trap with help text, where the method advised doesn't work.
 
 ```html
@@ -224,6 +236,8 @@ Keyboard trap with help text, where the method advised doesn't work.
 
 #### Inapplicable Example 1
 
+<a class="example-link" title="Inapplicable Example 1" href="/content-assets/wcag-act-rules/testcases/ebe86a/b20beca9dd7d487092cafcabce8c2b194896bc47.html">Open in a new tab</a>
+
 Not a keyboard trap (interactive element).
 
 ```html
@@ -237,7 +251,17 @@ Not a keyboard trap (interactive element).
 
 ### Focusable {#focusable}
 
-Elements that can become the target of keyboard input as described in the [HTML](https://www.w3.org/TR/html) specification of [focusable](https://html.spec.whatwg.org/#focusable-area) and [can be focused](https://html.spec.whatwg.org/#specially-focusable).
+An element is _focusable_ if one or both of the following are true:
+
+- the element is part of [sequential focus navigation][]; or
+- the element has a [tabindex value][] that is not null.
+
+**Exception**: Elements that lose focus during a period of up to 1 second after gaining focus, without the user interacting with the page the element is on, are not considered _focusable_.
+
+Notes:
+
+- The 1 second time span is an arbitrary limit which is not included in WCAG. Given that scripts can manage the focus state of elements, testing the focusability of an element consistently would be impractical without a time limit.
+- The [tabindex value][] of an element is the value of the [tabindex attribute][] parsed using the [rules for parsing integers][]. For the [tabindex value][] to be different from null, it needs to be [parsed][rules for parsing integers] without errors.
 
 ### Included in the accessibility tree {#included-in-the-accessibility-tree}
 
@@ -271,11 +295,12 @@ An _outcome_ is a conclusion that comes from evaluating an ACT Rule on a [test s
 
 An HTML element is _programmatically hidden_ if either it has a [computed][] CSS property `visibility` whose value is not `visible`; or at least one of the following is true for any of its [inclusive ancestors][] in the [flat tree][]:
 
-- has a `hidden` attribute; or
 - has a [computed][] CSS property `display` of `none`; or
 - has an `aria-hidden` attribute set to `true`
 
 **Note**: Contrarily to the other conditions, the `visibility` CSS property may be reverted by descendants.
+
+**Note**: The [HTML standard suggests](https://html.spec.whatwg.org/multipage/rendering.html#hidden-elements) rendering elements with the `hidden` attribute with a CSS rule that applies the value `none` to the CSS property `display` of the element. Although the suggestion is not normative, known user agents render it according to the suggestion (unless the content specifies another CSS rule that sets the value of the `display` property). If a user agent does not follow the suggestion, this definition may produce incorrect results for this user agent.
 
 ### Standard keyboard navigation {#standard-keyboard-navigation}
 
@@ -322,3 +347,7 @@ This is the first version of this ACT rule.
 [html or svg element]: #namespaced-element
 [inclusive ancestors]: https://dom.spec.whatwg.org/#concept-tree-inclusive-ancestor 'DOM Definition of Inclusive Ancestor'
 [namespaceuri]: https://dom.spec.whatwg.org/#dom-element-namespaceuri 'DOM Element namespaceURI, 2021/05/31'
+[rules for parsing integers]: https://html.spec.whatwg.org/#rules-for-parsing-integers
+[sequential focus navigation]: https://html.spec.whatwg.org/multipage/interaction.html#sequential-focus-navigation
+[tabindex attribute]: https://html.spec.whatwg.org/#attr-tabindex
+[tabindex value]: https://html.spec.whatwg.org/#tabindex-value

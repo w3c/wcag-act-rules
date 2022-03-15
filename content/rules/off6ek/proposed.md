@@ -9,9 +9,9 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> off6ek</p>
-  <p><strong>Date:</strong> Updated 28 January 2022</p>
+  <p><strong>Date:</strong> Updated 15 March 2022</p>
   <p><strong>Authors:</strong> <a href="https://github.com/Jym77">Jean-Yves Moyen</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
-  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
+  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
 rule_meta:
   id: off6ek
@@ -19,7 +19,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that the primary language subtag of an element matches its default language
-  last_modified: 28 January 2022
+  last_modified: 15 March 2022
   scs_tested:
     - handle: Language of Parts
       num: 3.1.2
@@ -30,10 +30,10 @@ rule_meta:
 
 This rule applies to any [HTML element][] with a `lang` attribute for which all the following are true:
 
-- the element is an [inclusive descendant][] in the [flat tree][] of a `body` element; and
-- the element is in a [document][] with a [content type][] of `text/html`; and
-- the element's `lang` [attribute value][] has a [known primary language tag][]; and
-- there is some non-empty [text inheriting its programmatic language][] from the element.
+- <dfn id="off6ek:in-body">in body</dfn>: the element is an [inclusive descendant][] in the [flat tree][] of a `body` element; and
+- <dfn id="off6ek:html">HTML</dfn>: the element is in a [document][] with a [content type][] of `text/html`; and
+- <dfn id="off6ek:valid-lang">Valid language</dfn>: the element's `lang` [attribute value][] has a [known primary language tag][]; and
+- <dfn id="off6ek:not-empty">Not empty</dfn>: there is some non-empty [text inheriting its programmatic language][] from the element which is neither empty nor only [whitespace][].
 
 ## Expectation
 
@@ -44,6 +44,8 @@ For each test target, the [primary language][] of its `lang` [attribute value][]
 - This rule assumes that user agents and assistive technologies can programmatically determine [known primary language tags][known primary language tag] even on [language tags][rfc 5646] that do not conform to the [RFC 5646][] syntax.
 
 - This rule assumes that only [language tags][rfc 5646] with a [known primary language tag][] are enough to satisfy [Success Criterion 3.1.2 Language of Parts][sc312]; this notably excludes [grandfathered tags][] and [ISO 639.2][] three-letters codes, both having poor support in assistive technologies.
+
+- This rule assumes that the text nodes contain text that express something in [human language][] and therefore need a correct programmatic language.
 
 ## Accessibility Support
 
@@ -110,6 +112,8 @@ The following aspects are required in using this rule.
 
 #### Passed Example 1
 
+<a class="example-link" title="Passed Example 1" href="/content-assets/wcag-act-rules/testcases/off6ek/ec40c0a032b11cabc03d71b6884ab9b85ee160ad.html">Open in a new tab</a>
+
 This `span` element has a `lang` [attribute value][] of `nl` (Dutch), which matches its [most common language][]. The most common language is Dutch because all words are Dutch.
 
 ```html
@@ -127,6 +131,8 @@ This `span` element has a `lang` [attribute value][] of `nl` (Dutch), which matc
 ```
 
 #### Passed Example 2
+
+<a class="example-link" title="Passed Example 2" href="/content-assets/wcag-act-rules/testcases/off6ek/df9260fddb4d08ca0669bea363828d089b36317b.html">Open in a new tab</a>
 
 The second `p` element has `lang` attribute value of `nl` (Dutch), which matches its [most common language][]. The most common language is Dutch because all English words are in `span` elements with a `lang` attribute value of `en`. Both `span` elements also have a `lang` attribute matching their most common language.
 
@@ -149,17 +155,19 @@ The second `p` element has `lang` attribute value of `nl` (Dutch), which matches
 
 #### Passed Example 3
 
+<a class="example-link" title="Passed Example 3" href="/content-assets/wcag-act-rules/testcases/off6ek/5532e66ea71ed1f352f9911e224cbf290c7cc8e6.html">Open in a new tab</a>
+
 This `div` element has a `lang` [attribute value][] of `en` (English), which matches its [most common language][]. The most common language is English because the accessible texts are English, and all other text is in a `p` element with a (correct) `lang` attribute value of `fr`.
 
 ```html
-<html lang="fr">
+<html lang="FR">
 	<head>
 		<title>Feu d'artifice du nouvel an</title>
 	</head>
 	<body>
-		<div lang="en">
+		<div lang="EN">
 			<img src="/test-assets/shared/fireworks.jpg" alt="Fireworks over Paris" />
-			<p lang="fr">
+			<p lang="FR">
 				Bonne année !
 			</p>
 		</div>
@@ -168,6 +176,8 @@ This `div` element has a `lang` [attribute value][] of `en` (English), which mat
 ```
 
 #### Passed Example 4
+
+<a class="example-link" title="Passed Example 4" href="/content-assets/wcag-act-rules/testcases/off6ek/53d05e6fdcc63ff61ef1e5ea8454eea318aa038a.html">Open in a new tab</a>
 
 This `span` element has a `lang` [attribute value][] of `fr` (French), which matches one of its [most common languages][most common language]. The most common languages are both English and French because all the words belong to both languages.
 
@@ -181,6 +191,8 @@ This `span` element has a `lang` [attribute value][] of `fr` (French), which mat
 ```
 
 #### Passed Example 5
+
+<a class="example-link" title="Passed Example 5" href="/content-assets/wcag-act-rules/testcases/off6ek/61c507e0aab456cce20538400fc1067be37953a0.html">Open in a new tab</a>
 
 This `span` element has a `lang` [attribute value][] of `en` (English), which matches one of its [most common languages][most common language]. The most common languages are both English and French because all the words belong to both languages.
 
@@ -196,6 +208,8 @@ This `span` element has a `lang` [attribute value][] of `en` (English), which ma
 ### Failed
 
 #### Failed Example 1
+
+<a class="example-link" title="Failed Example 1" href="/content-assets/wcag-act-rules/testcases/off6ek/5b88bdc5f7d936eaa1fdd2f5f8fdd4022548d5ac.html">Open in a new tab</a>
 
 This `span` element has `lang` attribute value of `fr` (French), which does not match its [most common language][]. The most common language is Dutch because all words are Dutch.
 
@@ -214,6 +228,8 @@ This `span` element has `lang` attribute value of `fr` (French), which does not 
 ```
 
 #### Failed Example 2
+
+<a class="example-link" title="Failed Example 2" href="/content-assets/wcag-act-rules/testcases/off6ek/ffcbd35493c91b4d8ee42c3a7fba9c2356144257.html">Open in a new tab</a>
 
 The second `p` element has `lang` attribute value of `en` (English), which does not match its [most common language][]. The most common language is Dutch because all English words are in `span` elements with a `lang` attribute value of `fr`. Both `span` elements also have an incorrect `lang` attribute in order to make sure that all targets in this example fail the rule.
 
@@ -238,6 +254,8 @@ The second `p` element has `lang` attribute value of `en` (English), which does 
 
 #### Failed Example 3
 
+<a class="example-link" title="Failed Example 3" href="/content-assets/wcag-act-rules/testcases/off6ek/d00a83015b309b51bebfc2c85f62488daec3a5d1.html">Open in a new tab</a>
+
 This `div` element has a `lang` attribute value of `fr` (French), which does not match its [most common language][]. The most common language is English because the accessible texts are English, and all other text is in a `p` element with a `lang` attribute value of `nl`, which also doesn't match its common language.
 
 ```html
@@ -257,6 +275,8 @@ This `div` element has a `lang` attribute value of `fr` (French), which does not
 ```
 
 #### Failed Example 4
+
+<a class="example-link" title="Failed Example 4" href="/content-assets/wcag-act-rules/testcases/off6ek/895a754e85f4fbc8e11cea52295381f41eb384ca.html">Open in a new tab</a>
 
 This `div` element has a `lang` attribute value of `fr` (French), which does not match its [most common language][]. The most common language is English because the accessible name of the `img` element is English. The `lang` attribute on the `p` element is effectively ignored. The `p` element is not applicable because there is no [text inheriting its programmatic language][] from it since its content is neither [visible][] nor [included in the accessibility tree][].
 
@@ -280,7 +300,9 @@ This `div` element has a `lang` attribute value of `fr` (French), which does not
 
 #### Inapplicable Example 1
 
-There are no HTML elements in this document.
+<a class="example-link" title="Inapplicable Example 1" href="/content-assets/wcag-act-rules/testcases/off6ek/433bdbdd7078af3ebddd933a3b1352c2d162b224.svg">Open in a new tab</a>
+
+This document is not [HTML](#off6ek:html).
 
 ```svg
 <svg xmlns="http://www.w3.org/2000/svg" lang="en">
@@ -290,7 +312,9 @@ There are no HTML elements in this document.
 
 #### Inapplicable Example 2
 
-There is no descendant of a `body` element with a `lang` attribute.
+<a class="example-link" title="Inapplicable Example 2" href="/content-assets/wcag-act-rules/testcases/off6ek/1aebc3e73c262d1417cfffd8c6e50cfb5fc37f82.html">Open in a new tab</a>
+
+There is no [descendant of a `body`](#off6ek:in-body) element with a `lang` attribute.
 
 ```html
 <html lang="en">
@@ -302,7 +326,9 @@ There is no descendant of a `body` element with a `lang` attribute.
 
 #### Inapplicable Example 3
 
-This `p` element has an invalid language tag.
+<a class="example-link" title="Inapplicable Example 3" href="/content-assets/wcag-act-rules/testcases/off6ek/4d0b06b614560fa0e230bf2b06f6d3c7667c5147.html">Open in a new tab</a>
+
+This `p` element does not have a [valid language tag](#off6ek:valid-lang).
 
 ```html
 <html lang="en">
@@ -316,7 +342,9 @@ This `p` element has an invalid language tag.
 
 #### Inapplicable Example 4
 
-There is no [text inheriting its programmatic language][] from the first `p` element because it has no content.
+<a class="example-link" title="Inapplicable Example 4" href="/content-assets/wcag-act-rules/testcases/off6ek/cc8b4db7f82f4095bc010311b00c73091e427302.html">Open in a new tab</a>
+
+The first `p` element is [empty](#off6ek:not-empty) because the only [element inheriting its programmatic language][] is itself, and it has no text node child.
 
 ```html
 <html lang="en">
@@ -329,7 +357,9 @@ There is no [text inheriting its programmatic language][] from the first `p` ele
 
 #### Inapplicable Example 5
 
-There is no [text inheriting its programmatic language][] from this `p` element because it has no content that is either [visible][] or [included in the accessibility tree][].
+<a class="example-link" title="Inapplicable Example 5" href="/content-assets/wcag-act-rules/testcases/off6ek/39063a3b4d2872cbadefc9e252d0492ba44ff74f.html">Open in a new tab</a>
+
+This `p` element is [empty](#off6ek:not-empty) because it has no content that is either [visible][] or [included in the accessibility tree][].
 
 ```html
 <html lang="en">
@@ -340,6 +370,8 @@ There is no [text inheriting its programmatic language][] from this `p` element 
 ```
 
 #### Inapplicable Example 6
+
+<a class="example-link" title="Inapplicable Example 6" href="/content-assets/wcag-act-rules/testcases/off6ek/915cdae554a817caa4792101fde1adf14563227d.html">Open in a new tab</a>
 
 The `lang` [attribute value][] of this `p` element has no [known primary language tag][] because the `eng` [iso 639.2][] three letters code does not exist in the [language subtag registry][].
 
@@ -353,12 +385,28 @@ The `lang` [attribute value][] of this `p` element has no [known primary languag
 
 #### Inapplicable Example 7
 
+<a class="example-link" title="Inapplicable Example 7" href="/content-assets/wcag-act-rules/testcases/off6ek/50e733e0c505a556fc53e6265eb5b432823570f7.html">Open in a new tab</a>
+
 The `lang` [attribute value][] of this `p` element has no [known primary language tag][] because the `i-lox` [grandfathered tag][grandfathered tags] does not exist in the [language subtag registry][].
 
 ```html
 <html lang="lb">
 	<body>
 		<p lang="i-lux">Lëtzebuerg ass e Land an Europa.</p>
+	</body>
+</html>
+```
+
+#### Inapplicable Example 8
+
+<a class="example-link" title="Inapplicable Example 8" href="/content-assets/wcag-act-rules/testcases/off6ek/9fa4aaa2575cccf2f83db23b8a66a584cee96486.html">Open in a new tab</a>
+
+The [text inheriting its programmatic language][] from this `div` element is only [whitespace][].
+
+```html
+<html lang="en">
+	<body>
+		<div lang="invalid">&nbsp;</div>
 	</body>
 </html>
 ```
@@ -381,24 +429,34 @@ For more details, see [examples of accessible name][].
 
 ### Attribute value {#attribute-value}
 
-The _attribute value_ of a content attribute set on an HTML element is the value that the attribute gets after being parsed and computed according to specifications. It may differ from the value that is actually written in the HTML code due to trimming whitespace or non-digits characters, default values, or case-insensitivity.
+The <dfn id="attribute-value:attribute">attribute value</dfn> of a content attribute set on an HTML element is the value that the attribute gets after being parsed and computed according to specifications. It may differ from the value that is actually written in the HTML code due to trimming whitespace or non-digits characters, default values, or case-insensitivity.
 
 Some notable case of attribute value, among others:
 
-- For [enumerated attributes][], the _attribute value_ is either the state of the attribute, or the keyword that maps to it; even for the default states. Thus `<input type="image" />` has an attribute value of either `Image Button` (the state) or `image` (the keyword mapping to it), both formulations having the same meaning; similarly, "an input element with a `type` _attribute value_ of `Text`" can be either `<input type="text" />`, `<input />` (missing value default), or `<input type="invalid" />` (invalid value default).
-- For [boolean attributes][], the _attribute value_ is `true` when the attribute is present and `false` otherwise. Thus `<button disabled>`, `<button disabled="disabled">` and `<button disabled="">` all have a `disabled` _attribute value_ of `true`.
-- For attributes whose value is used in a case-insensitive context, the _attribute value_ is the lowercase version of the value written in the HTML code.
-- For attributes that accept [numbers][], the _attribute value_ is the result of parsing the value written in the HTML code according to the rules for parsing this kind of number.
-- For attributes that accept sets of tokens, whether [space separated][] or [comma separated][], the _attribute value_ is the set of tokens obtained after parsing the set and, depending on the case, converting its items to lowercase (if the set is used in a case-insensitive context).
-- For `aria-*` attributes, the _attribute value_ is computed as indicated in the [WAI-ARIA specification][] and the [HTML Accessibility API Mappings][html aam].
+- For [enumerated attributes][], the <dfn id="attribute-value:enumerated">attribute value</dfn> is either the state of the attribute, or the keyword that maps to it; even for the default states. Thus `<input type="image" />` has an attribute value of either `Image Button` (the state) or `image` (the keyword mapping to it), both formulations having the same meaning; similarly, "an input element with a `type` _attribute value_ of `Text`" can be either `<input type="text" />`, `<input />` (missing value default), or `<input type="invalid" />` (invalid value default).
+- For [boolean attributes][], the <dfn id="attribute-value:boolean">attribute value</dfn> is `true` when the attribute is present and `false` otherwise. Thus `<button disabled>`, `<button disabled="disabled">` and `<button disabled="">` all have a `disabled` _attribute value_ of `true`.
+- For attributes whose value is used in a case-insensitive context, the <dfn id="attribute-value:case-insensitive">attribute value</dfn> is the lowercase version of the value written in the HTML code.
+- For attributes that accept [numbers][], the <dfn id="attribute-value:number">attribute value</dfn> is the result of parsing the value written in the HTML code according to the rules for parsing this kind of number.
+- For attributes that accept sets of tokens, whether [space separated][] or [comma separated][], the <dfn id="attribute-value:tokens-list">attribute value</dfn> is the set of tokens obtained after parsing the set and, depending on the case, converting its items to lowercase (if the set is used in a case-insensitive context).
+- For `aria-*` attributes, the <dfn id="attribute-value:aria">attribute value</dfn> is computed as indicated in the [WAI-ARIA specification][] and the [HTML Accessibility API Mappings][html aam].
 
 This list is not exhaustive, and only serves as an illustration for some of the most common cases.
 
-The _attribute value_ of an [IDL attribute][] is the value returned on getting it. Note that when an [IDL attribute][] [reflects][reflect] a content attribute, they have the same attribute value.
+The <dfn id="attribute-value:idl">attribute value</dfn> of an [IDL attribute][] is the value returned on getting it. Note that when an [IDL attribute][] [reflects][reflect] a content attribute, they have the same attribute value.
 
 ### Focusable {#focusable}
 
-Elements that can become the target of keyboard input as described in the [HTML](https://www.w3.org/TR/html) specification of [focusable](https://html.spec.whatwg.org/#focusable-area) and [can be focused](https://html.spec.whatwg.org/#specially-focusable).
+An element is _focusable_ if one or both of the following are true:
+
+- the element is part of [sequential focus navigation][]; or
+- the element has a [tabindex value][] that is not null.
+
+**Exception**: Elements that lose focus during a period of up to 1 second after gaining focus, without the user interacting with the page the element is on, are not considered _focusable_.
+
+Notes:
+
+- The 1 second time span is an arbitrary limit which is not included in WCAG. Given that scripts can manage the focus state of elements, testing the focusability of an element consistently would be impractical without a time limit.
+- The [tabindex value][] of an element is the value of the [tabindex attribute][] parsed using the [rules for parsing integers][]. For the [tabindex value][] to be different from null, it needs to be [parsed][rules for parsing integers] without errors.
 
 ### Included in the accessibility tree {#included-in-the-accessibility-tree}
 
@@ -450,21 +508,22 @@ An _outcome_ is a conclusion that comes from evaluating an ACT Rule on a [test s
 
 An HTML element is _programmatically hidden_ if either it has a [computed][] CSS property `visibility` whose value is not `visible`; or at least one of the following is true for any of its [inclusive ancestors][] in the [flat tree][]:
 
-- has a `hidden` attribute; or
 - has a [computed][] CSS property `display` of `none`; or
 - has an `aria-hidden` attribute set to `true`
 
 **Note**: Contrarily to the other conditions, the `visibility` CSS property may be reverted by descendants.
 
+**Note**: The [HTML standard suggests](https://html.spec.whatwg.org/multipage/rendering.html#hidden-elements) rendering elements with the `hidden` attribute with a CSS rule that applies the value `none` to the CSS property `display` of the element. Although the suggestion is not normative, known user agents render it according to the suggestion (unless the content specifies another CSS rule that sets the value of the `display` property). If a user agent does not follow the suggestion, this definition may produce incorrect results for this user agent.
+
 ### Text Inheriting its Programmatic Language from an Element {#text-inheriting-language}
 
-The _text inheriting its programmatic language_ from an element E is composed of all the following texts:
+The <dfn id="text-inheriting-language:text">text inheriting its programmatic language</dfn> from an element E is composed of all the following texts:
 
 - **text nodes**: the value of any [text nodes][] that are [visible][] or [included in the accessibility tree][] and children of an element inheriting its programmatic language from E;
-- **accessible text**: the [accessible name][] and [accessible description][] of any element inheriting its programmatic language from E, and [included in the accessibility tree][];
+- **accessible text**: the [accessible name][] and [accessible description][] of any [element inheriting its programmatic language](#text-inheriting-language:element) from E, and [included in the accessibility tree][];
 - **page title**: the value of the [document title][], only if E is a [document][] in a [top-level browsing context][].
 
-An element F is an _element inheriting its programmatic language_ from an element E if at least one of the following conditions is true (recursively):
+An element F is an <dfn id="text-inheriting-language:element">element inheriting its programmatic language</dfn> from an element E if at least one of the following conditions is true (recursively):
 
 - F is E itself (an element always inherits its programmatic language from itself); or
 - F does not have a non-empty `lang` attribute, and is the child in the [flat tree][] of an element inheriting its programmatic language from E; or
@@ -479,6 +538,22 @@ Content is considered _visible_ if making it fully transparent would result in a
 [Content is defined in WCAG](https://www.w3.org/TR/WCAG21/#dfn-content).
 
 For more details, see [examples of visible](https://act-rules.github.io/pages/examples/visible/).
+
+### Whitespace {#whitespace}
+
+_Whitespace_ are characters that have the Unicode "White_Space" property in the [Unicode properties list](https://www.unicode.org/Public/UCD/latest/ucd/PropList.txt).
+
+This includes:
+
+- all characters in the [Unicode Separator categories](https://www.unicode.org/versions/Unicode11.0.0/ch04.pdf#G134153), and
+- the following characters in the [Other, Control](https://www.unicode.org/versions/Unicode11.0.0/ch04.pdf#G134153) category:
+
+  - Character tabulation (U+0009)
+  - Line Feed (LF) (U+000A)
+  - Line Tabulation (U+000B)
+  - Form Feed (FF) (U+000C)
+  - Carriage Return (CR) (U+000D)
+  - Next Line (NEL) (U+0085)
 
 {% include_relative _implementation-proposed.md %}
 
@@ -498,6 +573,7 @@ This is the first version of this ACT rule.
 [content type]: https://dom.spec.whatwg.org/#concept-document-content-type 'DOM definition of Content Type'
 [document title]: https://html.spec.whatwg.org/multipage/dom.html#document.title 'HTML document title, as of 2020/06/05'
 [document]: https://dom.spec.whatwg.org/#document-element 'DOM definition of Document Element'
+[element inheriting its programmatic language]: #text-inheriting-language:element 'Definition of Element Inheriting its Programmatic Language from an Element'
 [element]: https://dom.spec.whatwg.org/#element 'DOM element, 2021/05/31'
 [enumerated attributes]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#enumerated-attribute 'HTML Specification of Enumerated Attribute'
 [examples of accessible name]: https://act-rules.github.io/pages/examples/accessible-name/
@@ -509,6 +585,7 @@ This is the first version of this ACT rule.
 [html aam]: https://www.w3.org/TR/html-aam-1.0/#html-attribute-state-and-property-mappings 'Specification of HTML attributes value mapping to ARIA states and properties'
 [html element]: #namespaced-element
 [html namespaces]: https://infra.spec.whatwg.org/#namespaces 'HTML namespace, 2021/05/31'
+[human language]: https://www.w3.org/TR/WCAG21/#dfn-human-language-s 'WCAG definition of Human Language'
 [idl attribute]: https://heycam.github.io/webidl/#idl-attributes "Definition of Web IDL Attribute (Editor's Draft)"
 [included in the accessibility tree]: #included-in-the-accessibility-tree 'Definition of Included in the Accessibility Tree'
 [inclusive ancestors]: https://dom.spec.whatwg.org/#concept-tree-inclusive-ancestor 'DOM Definition of Inclusive Ancestor'
@@ -524,13 +601,18 @@ This is the first version of this ACT rule.
 [primary language]: https://www.rfc-editor.org/rfc/rfc5646.html#section-2.2.1 'Definition of primary language subtag'
 [reflect]: https://html.spec.whatwg.org/multipage/common-dom-interfaces.html#reflecting-content-attributes-in-idl-attributes 'HTML specification of Reflecting Content Attributes in IDL Attributes'
 [rfc 5646]: https://www.rfc-editor.org/rfc/rfc5646.html#section-2.1
+[rules for parsing integers]: https://html.spec.whatwg.org/#rules-for-parsing-integers
 [sc312]: https://www.w3.org/TR/WCAG21/#language-of-parts 'Success Criterion 3.1.2 Language of Parts'
 [selectors level 3]: https://drafts.csswg.org/selectors-3/#lang-pseudo
+[sequential focus navigation]: https://html.spec.whatwg.org/multipage/interaction.html#sequential-focus-navigation
 [space separated]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#space-separated-tokens 'HTML Specification of Space Separated Tokens'
-[text inheriting its programmatic language]: #text-inheriting-language 'Definition of Text Inheriting its Programmatic Language from an Element'
+[tabindex attribute]: https://html.spec.whatwg.org/#attr-tabindex
+[tabindex value]: https://html.spec.whatwg.org/#tabindex-value
+[text inheriting its programmatic language]: #text-inheriting-language:text 'Definition of Text Inheriting its Programmatic Language from an Element'
 [text nodes]: https://dom.spec.whatwg.org/#text 'DOM text, as of 2020/06/05'
 [top-level browsing context]: https://html.spec.whatwg.org/#top-level-browsing-context 'HTML top-level browsing context, as of 2020/06/05'
 [type field]: https://www.rfc-editor.org/rfc/rfc5646.html#section-3.1.3
 [usc312]: https://www.w3.org/WAI/WCAG21/Understanding/language-of-parts.html 'Understanding Success Criterion 3.1.2: Language of Parts'
 [visible]: #visible 'Definition of Visible'
 [wai-aria specification]: https://www.w3.org/TR/wai-aria-1.1/#propcharacteristic_value 'WAI-ARIA Specification of States and Properties Value'
+[whitespace]: #whitespace 'Definition of whitespace'

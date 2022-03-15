@@ -9,9 +9,9 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> cf77f2</p>
-  <p><strong>Date:</strong> Updated 28 January 2022</p>
+  <p><strong>Date:</strong> Updated 15 March 2022</p>
   <p><strong>Authors:</strong> <a href="https://github.com/Jym77">Jean-Yves Moyen</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
-  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
+  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
   
   <p><strong>Assets:</strong> Test cases use assets from the following sources: <em>Romance of the Three Kingdoms</em> by Luo Guanzhong, translation by Charles Henry Brewitt-Taylor (Tuttle Publishing, 1925, ISBN 9780804834674); <em>Three Kingdoms</em> by Luo Guanzhong, translation by Moss Roberts (Foreign Language Press, 1976, ISBN 7-119-00590-1); <em>The Three Kingdoms</em> by Luo Guanzhong, translation by Yu Sumei (Tuttle publishing, 2014, ISBN 9780804843935)</p>
 proposed: true
@@ -21,7 +21,7 @@ rule_meta:
   rule_type: composite
   description: |
     This rule checks that each page has a mechanism to bypass repeated blocks of content.
-  last_modified: 28 January 2022
+  last_modified: 15 March 2022
   scs_tested:
     - handle: Bypass Blocks
       num: 2.4.1
@@ -156,16 +156,18 @@ To avoid using landmarks for the non-repeated content, which would satisfy [Succ
 
 Outcomes of the following rules are required as input for this rule.
 
-- [Document has heading for non-repeated content](/standards-guidelines/act/rules/cf77f2/)
-- [Document has a landmark with non-repeated content](/standards-guidelines/act/rules/cf77f2/)
-- [Block of repeated content is collapsible](/standards-guidelines/act/rules/cf77f2/)
-- [Document has an instrument to move focus to non-repeated content](/standards-guidelines/act/rules/cf77f2/)
+- [Document has heading for non-repeated content](/standards-guidelines/act/rules/document-has-headings-for-non-repeated-content-047fe0/)
+- [Document has a landmark with non-repeated content](/standards-guidelines/act/rules/document-has-landmark-with-non-repeated-content-b40fd1/)
+- [Block of repeated content is collapsible](/standards-guidelines/act/rules/block-collapsible-3e12e1/)
+- [Document has an instrument to move focus to non-repeated content](/standards-guidelines/act/rules/document-has-instrument-to-non-repeated-content-ye5d6e/)
 
 ## Test Cases
 
 ### Passed
 
 #### Passed Example 1
+
+<a class="example-link" title="Passed Example 1" href="/content-assets/wcag-act-rules/testcases/cf77f2/fa30de1d9c2d3a313f7f18bc4e2cf6843ea10a89.html">Open in a new tab</a>
 
 This [HTML web page][] is passing rule [_Block of repeated content is collapsible_][block collapsible].
 
@@ -197,6 +199,8 @@ This [HTML web page][] is passing rule [_Block of repeated content is collapsibl
 
 #### Passed Example 2
 
+<a class="example-link" title="Passed Example 2" href="/content-assets/wcag-act-rules/testcases/cf77f2/36f679b6844299beda3f720e0d94cabdcfa122ba.html">Open in a new tab</a>
+
 This [HTML web page][] is passing rule [_Document has heading for non-repeated content_][document has heading for main].
 
 ```html
@@ -225,6 +229,8 @@ This [HTML web page][] is passing rule [_Document has heading for non-repeated c
 
 #### Passed Example 3
 
+<a class="example-link" title="Passed Example 3" href="/content-assets/wcag-act-rules/testcases/cf77f2/9eb0cf411e23f4457a013123e3066e2bfa4652da.html">Open in a new tab</a>
+
 This [HTML web page][] is passing rule [_Document has a landmark with non-repeated content_][document has landmark].
 
 ```html
@@ -252,6 +258,8 @@ This [HTML web page][] is passing rule [_Document has a landmark with non-repeat
 
 #### Passed Example 4
 
+<a class="example-link" title="Passed Example 4" href="/content-assets/wcag-act-rules/testcases/cf77f2/235a899f291a8dbcd536b439728c2af509c8f1d6.html">Open in a new tab</a>
+
 This [HTML web page][] is passing rule [_Document has an instrument to move focus to non-repeated content_][document has instrument to main].
 
 ```html
@@ -278,6 +286,8 @@ This [HTML web page][] is passing rule [_Document has an instrument to move focu
 ```
 
 #### Passed Example 5
+
+<a class="example-link" title="Passed Example 5" href="/content-assets/wcag-act-rules/testcases/cf77f2/758c009716931b1a14a1215eda5d4f9d72135aaa.html">Open in a new tab</a>
 
 This [HTML web page][] is passing rule [_Document has an instrument to move focus to non-repeated content_][document has instrument to main].
 
@@ -313,6 +323,8 @@ This [HTML web page][] is passing rule [_Document has an instrument to move focu
 
 #### Passed Example 6
 
+<a class="example-link" title="Passed Example 6" href="/content-assets/wcag-act-rules/testcases/cf77f2/1d5d46b8e4ca30cf0683a417dc4edd57887b9889.html">Open in a new tab</a>
+
 This [HTML web page][] is passing rule [_Document has an instrument to move focus to non-repeated content_][document has instrument to main].
 
 ```html
@@ -343,6 +355,8 @@ This [HTML web page][] is passing rule [_Document has an instrument to move focu
 
 #### Passed Example 7
 
+<a class="example-link" title="Passed Example 7" href="/content-assets/wcag-act-rules/testcases/cf77f2/c039d5c0794751aa5944724b45df214c0e8cc827.html">Open in a new tab</a>
+
 This [HTML web page][] is passing rule [_Block of repeated content is collapsible_][block collapsible] because it has no [block of repeated content][] before non-repeated [perceivable content][]. Note that this does not pass [Technique SCR28: Using an expandable and collapsible menu to bypass block of content][tech scr28] because the [block of repeated content][] which is after the non-repeated content cannot be toggled.
 
 ```html
@@ -368,6 +382,8 @@ This [HTML web page][] is passing rule [_Block of repeated content is collapsibl
 ```
 
 #### Passed Example 8
+
+<a class="example-link" title="Passed Example 8" href="/content-assets/wcag-act-rules/testcases/cf77f2/1c8d17ef6a69be1bbc5b28f432d2b7192e0f65c9.html">Open in a new tab</a>
 
 This [HTML web page][] is passing rule [_Document has an instrument to move focus to non-repeated content_][document has instrument to main] because the button is such an instrument. Note that it does not pass [Technique G1: Adding a link at the top of each page that goes directly to the main content area][tech g1] nor [Technique G123: Adding a link at the beginning of a block of repeated content to go to the end of the block][tech g123] because the [instrument][] is a button, not a link.
 
@@ -395,6 +411,8 @@ This [HTML web page][] is passing rule [_Document has an instrument to move focu
 ```
 
 #### Passed Example 9
+
+<a class="example-link" title="Passed Example 9" href="/content-assets/wcag-act-rules/testcases/cf77f2/07c0b535c3c68a3deeb9fde43c4ba5aca09fb94e.html">Open in a new tab</a>
 
 This [HTML web page][] is passing rule [_Document has an instrument to move focus to non-repeated content_][document has instrument to main] because the link with target `#brewitt-taylor` moves focus [just before][] some [non-repeated content after repeated content][]. Note that it does not necessarily pass Technique [G124: Adding links at the top of the page to each area of the content][tech g124] because the `<div id="main">` element is arguably a single "area of the content", and the technique requires only one link per such area.
 
@@ -441,6 +459,8 @@ This [HTML web page][] is passing rule [_Document has an instrument to move focu
 
 #### Passed Example 10
 
+<a class="example-link" title="Passed Example 10" href="/content-assets/wcag-act-rules/testcases/cf77f2/7fdb66e34b6c6b106fd371183e682721c3735031.html">Open in a new tab</a>
+
 This [HTML web page][] is passing rule [_Document has an instrument to move focus to non-repeated content_][document has instrument to main]. Note that it does not necessarily pass Technique [G124: Adding links at the top of the page to each area of the content][tech g124] because the both the `nav` and `aside` elements are arguably different "areas of the content", and the technique requires exactly one link per such area.
 
 ```html
@@ -470,6 +490,8 @@ This [HTML web page][] is passing rule [_Document has an instrument to move focu
 ```
 
 #### Passed Example 11
+
+<a class="example-link" title="Passed Example 11" href="/content-assets/wcag-act-rules/testcases/cf77f2/f937af9c794522e5f421d5cfc3937d34fad2a9e7.html">Open in a new tab</a>
 
 This [HTML web page][] is passing rule [_Block of repeated content is collapsible_][block collapsible]. Note that it does not pass [Technique SCR28: Using an expandable and collapsible menu to bypass block of content][tech scr28] because the technique requires that the blocks can be toggled on and off, but here they can only be removed.
 
@@ -501,6 +523,8 @@ This [HTML web page][] is passing rule [_Block of repeated content is collapsibl
 
 #### Passed Example 12
 
+<a class="example-link" title="Passed Example 12" href="/content-assets/wcag-act-rules/testcases/cf77f2/ac55a162907e372577bb09a3fbebf252aea90e64.html">Open in a new tab</a>
+
 This [HTML web page][] is passing rule [_Document has an instrument to move focus to non-repeated content_][document has instrument to main] because the second link is such an instrument. Note that it does not pass [Technique G1: Adding a link at the top of each page that goes directly to the main content area][tech g1] because the skip link is not the first [focusable][] element on the page.
 
 ```html
@@ -528,6 +552,8 @@ This [HTML web page][] is passing rule [_Document has an instrument to move focu
 ```
 
 #### Passed Example 13
+
+<a class="example-link" title="Passed Example 13" href="/content-assets/wcag-act-rules/testcases/cf77f2/36f679b6844299beda3f720e0d94cabdcfa122ba.html">Open in a new tab</a>
 
 This [HTML web page][] is passing rule [_Document has heading for non-repeated content_][document has heading for main]. Note that it arguably does not pass [Technique H69: Providing heading elements at the beginning of each section of content][tech h69] because the `nav` element can be considered as a section of content and does not start with a heading.
 
@@ -559,6 +585,8 @@ This [HTML web page][] is passing rule [_Document has heading for non-repeated c
 
 #### Failed Example 1
 
+<a class="example-link" title="Failed Example 1" href="/content-assets/wcag-act-rules/testcases/cf77f2/55a6cc3efc35180844d75a9f207b456373b1435c.html">Open in a new tab</a>
+
 This [HTML web page][] does not pass any of the input rules.
 
 ```html
@@ -587,6 +615,8 @@ This [HTML web page][] does not pass any of the input rules.
 ### Inapplicable
 
 #### Inapplicable Example 1
+
+<a class="example-link" title="Inapplicable Example 1" href="/content-assets/wcag-act-rules/testcases/cf77f2/ecc29b73e37b6a125b3fd9767068dcaa368d467a.svg">Open in a new tab</a>
 
 This [document][] is not an [HTML web page][].
 
@@ -641,7 +671,17 @@ Other roles may be added as they become available. Not all roles will be support
 
 ### Focusable {#focusable}
 
-Elements that can become the target of keyboard input as described in the [HTML](https://www.w3.org/TR/html) specification of [focusable](https://html.spec.whatwg.org/#focusable-area) and [can be focused](https://html.spec.whatwg.org/#specially-focusable).
+An element is _focusable_ if one or both of the following are true:
+
+- the element is part of [sequential focus navigation][]; or
+- the element has a [tabindex value][] that is not null.
+
+**Exception**: Elements that lose focus during a period of up to 1 second after gaining focus, without the user interacting with the page the element is on, are not considered _focusable_.
+
+Notes:
+
+- The 1 second time span is an arbitrary limit which is not included in WCAG. Given that scripts can manage the focus state of elements, testing the focusability of an element consistently would be impractical without a time limit.
+- The [tabindex value][] of an element is the value of the [tabindex attribute][] parsed using the [rules for parsing integers][]. For the [tabindex value][] to be different from null, it needs to be [parsed][rules for parsing integers] without errors.
 
 ### Implicit Semantic Role {#implicit-role}
 
@@ -719,11 +759,12 @@ Perceivable content corresponds to nodes that contain information and are percei
 
 An HTML element is _programmatically hidden_ if either it has a [computed][] CSS property `visibility` whose value is not `visible`; or at least one of the following is true for any of its [inclusive ancestors][] in the [flat tree][]:
 
-- has a `hidden` attribute; or
 - has a [computed][] CSS property `display` of `none`; or
 - has an `aria-hidden` attribute set to `true`
 
 **Note**: Contrarily to the other conditions, the `visibility` CSS property may be reverted by descendants.
+
+**Note**: The [HTML standard suggests](https://html.spec.whatwg.org/multipage/rendering.html#hidden-elements) rendering elements with the `hidden` attribute with a CSS rule that applies the value `none` to the CSS property `display` of the element. Although the suggestion is not normative, known user agents render it according to the suggestion (unless the content specifies another CSS rule that sets the value of the `display` property). If a user agent does not follow the suggestion, this definition may produce incorrect results for this user agent.
 
 ### Semantic Role {#semantic-role}
 
@@ -806,12 +847,16 @@ This is the first version of this ACT rule.
 [programmatically hidden]: #programmatically-hidden 'Definition of Programmatically Hidden'
 [pure decoration]: https://www.w3.org/TR/WCAG21/#dfn-pure-decoration 'WCAG definition of Pure Decoration'
 [role attribute]: https://www.w3.org/TR/role-attribute/ 'Specification of the role attribute'
+[rules for parsing integers]: https://html.spec.whatwg.org/#rules-for-parsing-integers
 [sc131]: https://www.w3.org/TR/WCAG21/#info-and-relationships 'Success Criterion 1.3.1: Info and Relationship'
 [sc211]: https://www.w3.org/TR/WCAG21/#keyboard 'Success Criterion 2.1.1 Keyboard'
 [sc241]: https://www.w3.org/TR/WCAG21/#bypass-blocks 'Success Criterion 2.4.1 Bypass Blocks'
 [sc412]: https://www.w3.org/TR/WCAG21/#name-role-value 'Success Criterion 4.1.2 Name, Role, Value'
 [semantic role]: #semantic-role 'Definition of semantic role'
+[sequential focus navigation]: https://html.spec.whatwg.org/multipage/interaction.html#sequential-focus-navigation
 [special url]: https://url.spec.whatwg.org/#is-special 'URL specification of Special URL'
+[tabindex attribute]: https://html.spec.whatwg.org/#attr-tabindex
+[tabindex value]: https://html.spec.whatwg.org/#tabindex-value
 [tech aria11]: https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA11 'Technique ARIA11: Using ARIA Landmarks to Identify Regions of a Page'
 [tech g123]: (https://www.w3.org/WAI/WCAG21/Techniques/general/G123) 'Technique G123: Adding a Link at the Beginning of a Block of Repeated Content to Go to the End of the Block'
 [tech g124]: https://www.w3.org/WAI/WCAG21/Techniques/general/G124 'Technique G124: Adding Links at the Top of the Page to each Area of the Content'

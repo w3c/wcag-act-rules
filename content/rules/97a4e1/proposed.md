@@ -9,9 +9,9 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 97a4e1</p>
-  <p><strong>Date:</strong> Updated 28 January 2022</p>
+  <p><strong>Date:</strong> Updated 15 March 2022</p>
   <p><strong>Authors:</strong> <a href="https://github.com/skotkjerra">Stein Erik Skotkjerra</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
-  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It was approved and published by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
+  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
 rule_meta:
   id: 97a4e1
@@ -19,7 +19,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that each `button` element has a non-empty accessible name.
-  last_modified: 28 January 2022
+  last_modified: 15 March 2022
   scs_tested:
     - handle: Name, Role, Value
       num: 4.1.2
@@ -88,6 +88,8 @@ The following aspects are required in using this rule.
 
 #### Passed Example 1
 
+<a class="example-link" title="Passed Example 1" href="/content-assets/wcag-act-rules/testcases/97a4e1/a4cc71b0434f71f4ea0069c409f73e0207dfb403.html">Open in a new tab</a>
+
 This `button` element has an [accessible name][] because of its text content.
 
 ```html
@@ -95,6 +97,8 @@ This `button` element has an [accessible name][] because of its text content.
 ```
 
 #### Passed Example 2
+
+<a class="example-link" title="Passed Example 2" href="/content-assets/wcag-act-rules/testcases/97a4e1/d9adf41033a5b71a0730b6df8c1c7e01088e9022.html">Open in a new tab</a>
 
 This `input` element has an [accessible name][] because of its `value` attribute.
 
@@ -104,6 +108,8 @@ This `input` element has an [accessible name][] because of its `value` attribute
 
 #### Passed Example 3
 
+<a class="example-link" title="Passed Example 3" href="/content-assets/wcag-act-rules/testcases/97a4e1/3004e7b1a47b2e5a5c77b3eef36b50d495c9e4a1.html">Open in a new tab</a>
+
 This `button` element has an [accessible name][] because of its `aria-label` attribute.
 
 ```html
@@ -111,6 +117,8 @@ This `button` element has an [accessible name][] because of its `aria-label` att
 ```
 
 #### Passed Example 4
+
+<a class="example-link" title="Passed Example 4" href="/content-assets/wcag-act-rules/testcases/97a4e1/ff4b76894bd9aaad29242e72fe93fd9798bf85af.html">Open in a new tab</a>
 
 This element with a `button` role has an [accessible name][] because of its `aria-label` attribute.
 
@@ -120,6 +128,8 @@ This element with a `button` role has an [accessible name][] because of its `ari
 
 #### Passed Example 5
 
+<a class="example-link" title="Passed Example 5" href="/content-assets/wcag-act-rules/testcases/97a4e1/5bfdf45a98f7d2f0e93a700f7ce0fe5f723bf0f7.html">Open in a new tab</a>
+
 This `button` element with the `disabled` attribute has an [accessible name][] because of its text content.
 
 ```html
@@ -127,6 +137,8 @@ This `button` element with the `disabled` attribute has an [accessible name][] b
 ```
 
 #### Passed Example 6
+
+<a class="example-link" title="Passed Example 6" href="/content-assets/wcag-act-rules/testcases/97a4e1/00fe207175e40ddc81a86fb09504e5fa33b7dd0f.html">Open in a new tab</a>
 
 This off screen `button` element has an [accessible name][] because of its text content.
 
@@ -147,6 +159,8 @@ This off screen `button` element has an [accessible name][] because of its text 
 
 #### Passed Example 7
 
+<a class="example-link" title="Passed Example 7" href="/content-assets/wcag-act-rules/testcases/97a4e1/3fe70212e0020d7fa552b7c6c035a466c900c4b9.html">Open in a new tab</a>
+
 This `input` element has an [accessible name][] because of the default accessible name for an `input` element with a `type` attribute set to `reset`.
 
 ```html
@@ -157,6 +171,8 @@ This `input` element has an [accessible name][] because of the default accessibl
 
 #### Failed Example 1
 
+<a class="example-link" title="Failed Example 1" href="/content-assets/wcag-act-rules/testcases/97a4e1/1ec8deb0b18514b612774d3af39b5ad41f2a792b.html">Open in a new tab</a>
+
 This `button` element has no [accessible name][] because it has no content or attribute that can provide it.
 
 ```html
@@ -164,6 +180,8 @@ This `button` element has no [accessible name][] because it has no content or at
 ```
 
 #### Failed Example 2
+
+<a class="example-link" title="Failed Example 2" href="/content-assets/wcag-act-rules/testcases/97a4e1/2c5b0625e21b3503d1cd4c4daf53b15ae41c562d.html">Open in a new tab</a>
 
 This `button` element has no [accessible name][]. The `value` attribute does not provide an [accessible name][] for `button` elements, only when an `input` element's [state of the `type` attribute](https://html.spec.whatwg.org/multipage/input.html#states-of-the-type-attribute) is `button`, `submit` or `reset`.
 
@@ -173,6 +191,8 @@ This `button` element has no [accessible name][]. The `value` attribute does not
 
 #### Failed Example 3
 
+<a class="example-link" title="Failed Example 3" href="/content-assets/wcag-act-rules/testcases/97a4e1/ffe1796f06e1082a8ddae54a471dcca66c783c4e.html">Open in a new tab</a>
+
 This element with the `button` role has no [accessible name][] because it has no content or attribute that can provide it.
 
 ```html
@@ -180,6 +200,8 @@ This element with the `button` role has no [accessible name][] because it has no
 ```
 
 #### Failed Example 4
+
+<a class="example-link" title="Failed Example 4" href="/content-assets/wcag-act-rules/testcases/97a4e1/1a6035f4f09b339ac53bc547fc727a51ab05a3c6.html">Open in a new tab</a>
 
 This off screen `button` element has no [accessible name][] because it has no content or attribute that can provide it.
 
@@ -200,6 +222,8 @@ This off screen `button` element has no [accessible name][] because it has no co
 
 #### Failed Example 5
 
+<a class="example-link" title="Failed Example 5" href="/content-assets/wcag-act-rules/testcases/97a4e1/ac9a749a026c47209c34677ca6ac0dc093d24888.html">Open in a new tab</a>
+
 This `button` element has an [explicit role][] of `none`. However, it is [focusable][] (by default). Thus it has a [semantic role][] of `button` due to [Presentational Roles Conflict Resolution][]. It has an empty [accessible name][].
 
 ```html
@@ -210,6 +234,8 @@ This `button` element has an [explicit role][] of `none`. However, it is [focusa
 
 #### Inapplicable Example 1
 
+<a class="example-link" title="Inapplicable Example 1" href="/content-assets/wcag-act-rules/testcases/97a4e1/0666607827b30150ed0a5be439f58623b3222131.html">Open in a new tab</a>
+
 This `input` element has a `type` attribute set to `image`. These images are tested in a separate rule which also tests [success criterion 1.1.1 Non-text Content](https://www.w3.org/TR/WCAG21/#non-text-content).
 
 ```html
@@ -217,6 +243,8 @@ This `input` element has a `type` attribute set to `image`. These images are tes
 ```
 
 #### Inapplicable Example 2
+
+<a class="example-link" title="Inapplicable Example 2" href="/content-assets/wcag-act-rules/testcases/97a4e1/14c51a76c14250316a756b7660b2489f18896d5a.html">Open in a new tab</a>
 
 This `button` element does not need an [accessible name][] because it is not included in the accessibility tree.
 
@@ -226,6 +254,8 @@ This `button` element does not need an [accessible name][] because it is not inc
 
 #### Inapplicable Example 3
 
+<a class="example-link" title="Inapplicable Example 3" href="/content-assets/wcag-act-rules/testcases/97a4e1/096bf1e8eeb0b5633861389cb3fa3267649e396c.html">Open in a new tab</a>
+
 This `button` element has a `link` role. Links are tested in a separate rule which also tests [success criterion 2.4.4 Link Purpose (In Context)](https://www.w3.org/TR/WCAG21/#link-purpose-in-context).
 
 ```html
@@ -234,6 +264,8 @@ This `button` element has a `link` role. Links are tested in a separate rule whi
 
 #### Inapplicable Example 4
 
+<a class="example-link" title="Inapplicable Example 4" href="/content-assets/wcag-act-rules/testcases/97a4e1/b6b0eec01fc2759e3335fa4e448e5772161a9da6.html">Open in a new tab</a>
+
 There is no element with a semantic role of `button`.
 
 ```html
@@ -241,6 +273,8 @@ There is no element with a semantic role of `button`.
 ```
 
 #### Inapplicable Example 5
+
+<a class="example-link" title="Inapplicable Example 5" href="/content-assets/wcag-act-rules/testcases/97a4e1/21bbd170c05cd535fd5096f9c7eebc54eb72d936.html">Open in a new tab</a>
 
 This `button` element has an [explicit role][] of `none`; it is not [focusable][] because it is `disabled`. Thus it has a [semantic role][] of `none`.
 
@@ -266,20 +300,20 @@ For more details, see [examples of accessible name][].
 
 ### Attribute value {#attribute-value}
 
-The _attribute value_ of a content attribute set on an HTML element is the value that the attribute gets after being parsed and computed according to specifications. It may differ from the value that is actually written in the HTML code due to trimming whitespace or non-digits characters, default values, or case-insensitivity.
+The <dfn id="attribute-value:attribute">attribute value</dfn> of a content attribute set on an HTML element is the value that the attribute gets after being parsed and computed according to specifications. It may differ from the value that is actually written in the HTML code due to trimming whitespace or non-digits characters, default values, or case-insensitivity.
 
 Some notable case of attribute value, among others:
 
-- For [enumerated attributes][], the _attribute value_ is either the state of the attribute, or the keyword that maps to it; even for the default states. Thus `<input type="image" />` has an attribute value of either `Image Button` (the state) or `image` (the keyword mapping to it), both formulations having the same meaning; similarly, "an input element with a `type` _attribute value_ of `Text`" can be either `<input type="text" />`, `<input />` (missing value default), or `<input type="invalid" />` (invalid value default).
-- For [boolean attributes][], the _attribute value_ is `true` when the attribute is present and `false` otherwise. Thus `<button disabled>`, `<button disabled="disabled">` and `<button disabled="">` all have a `disabled` _attribute value_ of `true`.
-- For attributes whose value is used in a case-insensitive context, the _attribute value_ is the lowercase version of the value written in the HTML code.
-- For attributes that accept [numbers][], the _attribute value_ is the result of parsing the value written in the HTML code according to the rules for parsing this kind of number.
-- For attributes that accept sets of tokens, whether [space separated][] or [comma separated][], the _attribute value_ is the set of tokens obtained after parsing the set and, depending on the case, converting its items to lowercase (if the set is used in a case-insensitive context).
-- For `aria-*` attributes, the _attribute value_ is computed as indicated in the [WAI-ARIA specification][] and the [HTML Accessibility API Mappings][html aam].
+- For [enumerated attributes][], the <dfn id="attribute-value:enumerated">attribute value</dfn> is either the state of the attribute, or the keyword that maps to it; even for the default states. Thus `<input type="image" />` has an attribute value of either `Image Button` (the state) or `image` (the keyword mapping to it), both formulations having the same meaning; similarly, "an input element with a `type` _attribute value_ of `Text`" can be either `<input type="text" />`, `<input />` (missing value default), or `<input type="invalid" />` (invalid value default).
+- For [boolean attributes][], the <dfn id="attribute-value:boolean">attribute value</dfn> is `true` when the attribute is present and `false` otherwise. Thus `<button disabled>`, `<button disabled="disabled">` and `<button disabled="">` all have a `disabled` _attribute value_ of `true`.
+- For attributes whose value is used in a case-insensitive context, the <dfn id="attribute-value:case-insensitive">attribute value</dfn> is the lowercase version of the value written in the HTML code.
+- For attributes that accept [numbers][], the <dfn id="attribute-value:number">attribute value</dfn> is the result of parsing the value written in the HTML code according to the rules for parsing this kind of number.
+- For attributes that accept sets of tokens, whether [space separated][] or [comma separated][], the <dfn id="attribute-value:tokens-list">attribute value</dfn> is the set of tokens obtained after parsing the set and, depending on the case, converting its items to lowercase (if the set is used in a case-insensitive context).
+- For `aria-*` attributes, the <dfn id="attribute-value:aria">attribute value</dfn> is computed as indicated in the [WAI-ARIA specification][] and the [HTML Accessibility API Mappings][html aam].
 
 This list is not exhaustive, and only serves as an illustration for some of the most common cases.
 
-The _attribute value_ of an [IDL attribute][] is the value returned on getting it. Note that when an [IDL attribute][] [reflects][reflect] a content attribute, they have the same attribute value.
+The <dfn id="attribute-value:idl">attribute value</dfn> of an [IDL attribute][] is the value returned on getting it. Note that when an [IDL attribute][] [reflects][reflect] a content attribute, they have the same attribute value.
 
 ### Explicit Semantic Role {#explicit-role}
 
@@ -291,7 +325,17 @@ Other roles may be added as they become available. Not all roles will be support
 
 ### Focusable {#focusable}
 
-Elements that can become the target of keyboard input as described in the [HTML](https://www.w3.org/TR/html) specification of [focusable](https://html.spec.whatwg.org/#focusable-area) and [can be focused](https://html.spec.whatwg.org/#specially-focusable).
+An element is _focusable_ if one or both of the following are true:
+
+- the element is part of [sequential focus navigation][]; or
+- the element has a [tabindex value][] that is not null.
+
+**Exception**: Elements that lose focus during a period of up to 1 second after gaining focus, without the user interacting with the page the element is on, are not considered _focusable_.
+
+Notes:
+
+- The 1 second time span is an arbitrary limit which is not included in WCAG. Given that scripts can manage the focus state of elements, testing the focusability of an element consistently would be impractical without a time limit.
+- The [tabindex value][] of an element is the value of the [tabindex attribute][] parsed using the [rules for parsing integers][]. For the [tabindex value][] to be different from null, it needs to be [parsed][rules for parsing integers] without errors.
 
 ### Implicit Semantic Role {#implicit-role}
 
@@ -336,11 +380,12 @@ An _outcome_ is a conclusion that comes from evaluating an ACT Rule on a [test s
 
 An HTML element is _programmatically hidden_ if either it has a [computed][] CSS property `visibility` whose value is not `visible`; or at least one of the following is true for any of its [inclusive ancestors][] in the [flat tree][]:
 
-- has a `hidden` attribute; or
 - has a [computed][] CSS property `display` of `none`; or
 - has an `aria-hidden` attribute set to `true`
 
 **Note**: Contrarily to the other conditions, the `visibility` CSS property may be reverted by descendants.
+
+**Note**: The [HTML standard suggests](https://html.spec.whatwg.org/multipage/rendering.html#hidden-elements) rendering elements with the `hidden` attribute with a CSS rule that applies the value `none` to the CSS property `display` of the element. Although the suggestion is not normative, known user agents render it according to the suggestion (unless the content specifies another CSS rule that sets the value of the `display` property). If a user agent does not follow the suggestion, this definition may produce incorrect results for this user agent.
 
 ### Semantic Role {#semantic-role}
 
@@ -394,7 +439,11 @@ This is the first version of this ACT rule.
 [pure decoration]: https://www.w3.org/TR/WCAG21/#dfn-pure-decoration 'WCAG definition of Pure Decoration'
 [reflect]: https://html.spec.whatwg.org/multipage/common-dom-interfaces.html#reflecting-content-attributes-in-idl-attributes 'HTML specification of Reflecting Content Attributes in IDL Attributes'
 [role attribute]: https://www.w3.org/TR/role-attribute/ 'Specification of the role attribute'
+[rules for parsing integers]: https://html.spec.whatwg.org/#rules-for-parsing-integers
 [semantic role]: #semantic-role 'Definition of Semantic Role'
+[sequential focus navigation]: https://html.spec.whatwg.org/multipage/interaction.html#sequential-focus-navigation
 [space separated]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#space-separated-tokens 'HTML Specification of Space Separated Tokens'
+[tabindex attribute]: https://html.spec.whatwg.org/#attr-tabindex
+[tabindex value]: https://html.spec.whatwg.org/#tabindex-value
 [wai-aria specification]: https://www.w3.org/TR/wai-aria-1.1/#propcharacteristic_value 'WAI-ARIA Specification of States and Properties Value'
 [wai-aria specifications]: #wai-aria-specifications 'Definition of WAI-ARIA specifications'

@@ -9,9 +9,9 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> cc0f0a</p>
-  <p><strong>Date:</strong> Updated 28 January 2022</p>
+  <p><strong>Date:</strong> Updated 15 March 2022</p>
   <p><strong>Authors:</strong> <a href="https://github.com/Jym77">Jean-Yves Moyen</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Previous Authors: <a href="https://github.com/DagfinnRomen">Dagfinn Rømen</a>, <a href="https://github.com/geirsf">Geir Sindre Fossøy</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
-  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
+  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
 rule_meta:
   id: cc0f0a
@@ -19,7 +19,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that labels describe the purpose of form field elements.
-  last_modified: 28 January 2022
+  last_modified: 15 March 2022
   scs_tested:
     - handle: Headings and Labels
       num: 2.4.6
@@ -126,6 +126,8 @@ The following aspects are required in using this rule.
 
 #### Passed Example 1
 
+<a class="example-link" title="Passed Example 1" href="/content-assets/wcag-act-rules/testcases/cc0f0a/6b256544fb761a04ec863859b1fe5a5c84d096af.html">Open in a new tab</a>
+
 The `label` element is a [programmatic label][] of the `input` element and describes it.
 
 ```html
@@ -135,6 +137,8 @@ The `label` element is a [programmatic label][] of the `input` element and descr
 ```
 
 #### Passed Example 2
+
+<a class="example-link" title="Passed Example 2" href="/content-assets/wcag-act-rules/testcases/cc0f0a/1a9ad651245309194777d426823bbd4ad9aade7a.html">Open in a new tab</a>
 
 The `label` element is a [programmatic label][] of the `input` element and describes it.
 
@@ -147,6 +151,8 @@ The `label` element is a [programmatic label][] of the `input` element and descr
 
 #### Passed Example 3
 
+<a class="example-link" title="Passed Example 3" href="/content-assets/wcag-act-rules/testcases/cc0f0a/181fba1970041478bf4466ea3e16cb82178404d1.html">Open in a new tab</a>
+
 The `p` element is a [programmatic label][] of the `input` element and describes it.
 
 ```html
@@ -158,6 +164,8 @@ The `p` element is a [programmatic label][] of the `input` element and describes
 
 #### Passed Example 4
 
+<a class="example-link" title="Passed Example 4" href="/content-assets/wcag-act-rules/testcases/cc0f0a/39a5a085f5d5455d67ba73e192d936b2fc9b366e.html">Open in a new tab</a>
+
 The `p` element is a [programmatic label][] of the `input` element and describes it. The [programmatic label][] does not need to be [included in the accessibility tree][] for this rule to apply.
 
 ```html
@@ -168,6 +176,8 @@ The `p` element is a [programmatic label][] of the `input` element and describes
 ```
 
 #### Passed Example 5
+
+<a class="example-link" title="Passed Example 5" href="/content-assets/wcag-act-rules/testcases/cc0f0a/050924a9e06b7a7f4ed6e847949ef1c253721452.html">Open in a new tab</a>
 
 The `label` elements are [programmatic labels][programmatic label] of their respective `input` elements. The `label` elements, are not descriptive enough (because they are repeated over several fields). However, the headings provide a [visual context][] that differentiates the purpose of the otherwise identically named form fields. Within their [visual context][], the `label` elements are descriptive of their respective `input` elements.
 
@@ -185,6 +195,8 @@ The `label` elements are [programmatic labels][programmatic label] of their resp
 
 #### Passed Example 6
 
+<a class="example-link" title="Passed Example 6" href="/content-assets/wcag-act-rules/testcases/cc0f0a/491c4469226eaeca2e70e245564d41e81b7a3b88.html">Open in a new tab</a>
+
 Both the `div` and the `span` elements are [programmatic labels][programmatic label] of the `input` element. Each of them, within the [visual context][] formed by the other one, is descriptive.
 
 ```html
@@ -199,6 +211,8 @@ Both the `div` and the `span` elements are [programmatic labels][programmatic la
 
 #### Failed Example 1
 
+<a class="example-link" title="Failed Example 1" href="/content-assets/wcag-act-rules/testcases/cc0f0a/9b967559ff2691dc30436766f53feea55447b348.html">Open in a new tab</a>
+
 The `label` element is a [programmatic label][] of the `input` element but does not describe it.
 
 ```html
@@ -208,6 +222,8 @@ The `label` element is a [programmatic label][] of the `input` element but does 
 ```
 
 #### Failed Example 2
+
+<a class="example-link" title="Failed Example 2" href="/content-assets/wcag-act-rules/testcases/cc0f0a/1e52060759a535934176a5a981446066aad6b31f.html">Open in a new tab</a>
 
 The `label` element is a [programmatic label][] of the `input` element but does not describe it.
 
@@ -220,6 +236,8 @@ The `label` element is a [programmatic label][] of the `input` element but does 
 
 #### Failed Example 3
 
+<a class="example-link" title="Failed Example 3" href="/content-assets/wcag-act-rules/testcases/cc0f0a/fa5104f9bd07fe52813d7e511c3cc87c4c1cf232.html">Open in a new tab</a>
+
 The `span` element is a [programmatic label][] of the `input` element but does not describe it.
 
 ```html
@@ -230,6 +248,8 @@ The `span` element is a [programmatic label][] of the `input` element but does n
 ```
 
 #### Failed Example 4
+
+<a class="example-link" title="Failed Example 4" href="/content-assets/wcag-act-rules/testcases/cc0f0a/f8368dfab7eac249d870ed888c07e0b1b7c84614.html">Open in a new tab</a>
 
 The `label` elements are [programmatic labels][programmatic label] of their respective `input` elements. The `label` elements, are not descriptive enough (because they are repeated over several fields). The headings are not [visible][]. Therefore, they do not provide [visual context][].
 
@@ -247,6 +267,8 @@ The `label` elements are [programmatic labels][programmatic label] of their resp
 
 #### Failed Example 5
 
+<a class="example-link" title="Failed Example 5" href="/content-assets/wcag-act-rules/testcases/cc0f0a/2993ef023f90439b1a91c8f0151749cf23db4d82.html">Open in a new tab</a>
+
 Both the `div` and the `span` elements are [programmatic labels][programmatic label] of the `input` element, but only the `div` is [visible][]. It has no [visual context][], and is not descriptive.
 
 ```html
@@ -261,6 +283,8 @@ Both the `div` and the `span` elements are [programmatic labels][programmatic la
 
 #### Inapplicable Example 1
 
+<a class="example-link" title="Inapplicable Example 1" href="/content-assets/wcag-act-rules/testcases/cc0f0a/1d7c2f68ba65c3d81cb8a858f52be30d48a296c3.html">Open in a new tab</a>
+
 The `label` element is not a [programmatic label][] of any element.
 
 ```html
@@ -271,6 +295,8 @@ The `label` element is not a [programmatic label][] of any element.
 ```
 
 #### Inapplicable Example 2
+
+<a class="example-link" title="Inapplicable Example 2" href="/content-assets/wcag-act-rules/testcases/cc0f0a/4941fb38e0b80fcc7b74e114dc57dd799dbdd4af.html">Open in a new tab</a>
 
 The `label` element is not [visible][].
 
@@ -283,6 +309,8 @@ The `label` element is not [visible][].
 
 #### Inapplicable Example 3
 
+<a class="example-link" title="Inapplicable Example 3" href="/content-assets/wcag-act-rules/testcases/cc0f0a/80a4987bcfc497e90415cd6618a78842073c5768.html">Open in a new tab</a>
+
 The `label` is a [visible][] [programmatic label][] of the `input` element. However, the `input` is not [visible][], hence this rule does not apply.
 
 ```html
@@ -292,6 +320,8 @@ The `label` is a [visible][] [programmatic label][] of the `input` element. Howe
 ```
 
 #### Inapplicable Example 4
+
+<a class="example-link" title="Inapplicable Example 4" href="/content-assets/wcag-act-rules/testcases/cc0f0a/83b8c1e9bad05e9f72b0bcdbb60204ad9c5594c3.html">Open in a new tab</a>
 
 The `span` element is not a [programmatic label][] of any element.
 
@@ -328,7 +358,17 @@ Other roles may be added as they become available. Not all roles will be support
 
 ### Focusable {#focusable}
 
-Elements that can become the target of keyboard input as described in the [HTML](https://www.w3.org/TR/html) specification of [focusable](https://html.spec.whatwg.org/#focusable-area) and [can be focused](https://html.spec.whatwg.org/#specially-focusable).
+An element is _focusable_ if one or both of the following are true:
+
+- the element is part of [sequential focus navigation][]; or
+- the element has a [tabindex value][] that is not null.
+
+**Exception**: Elements that lose focus during a period of up to 1 second after gaining focus, without the user interacting with the page the element is on, are not considered _focusable_.
+
+Notes:
+
+- The 1 second time span is an arbitrary limit which is not included in WCAG. Given that scripts can manage the focus state of elements, testing the focusability of an element consistently would be impractical without a time limit.
+- The [tabindex value][] of an element is the value of the [tabindex attribute][] parsed using the [rules for parsing integers][]. For the [tabindex value][] to be different from null, it needs to be [parsed][rules for parsing integers] without errors.
 
 ### Implicit Semantic Role {#implicit-role}
 
@@ -384,11 +424,12 @@ For more details, see [examples of programmatic label][].
 
 An HTML element is _programmatically hidden_ if either it has a [computed][] CSS property `visibility` whose value is not `visible`; or at least one of the following is true for any of its [inclusive ancestors][] in the [flat tree][]:
 
-- has a `hidden` attribute; or
 - has a [computed][] CSS property `display` of `none`; or
 - has an `aria-hidden` attribute set to `true`
 
 **Note**: Contrarily to the other conditions, the `visibility` CSS property may be reverted by descendants.
+
+**Note**: The [HTML standard suggests](https://html.spec.whatwg.org/multipage/rendering.html#hidden-elements) rendering elements with the `hidden` attribute with a CSS rule that applies the value `none` to the CSS property `display` of the element. Although the suggestion is not normative, known user agents render it according to the suggestion (unless the content specifies another CSS rule that sets the value of the `display` property). If a user agent does not follow the suggestion, this definition may produce incorrect results for this user agent.
 
 ### Semantic Role {#semantic-role}
 
@@ -461,10 +502,14 @@ This is the first version of this ACT rule.
 [programmatically hidden]: #programmatically-hidden 'Definition of Programmatically Hidden'
 [pure decoration]: https://www.w3.org/TR/WCAG21/#dfn-pure-decoration 'WCAG definition of Pure Decoration'
 [role attribute]: https://www.w3.org/TR/role-attribute/ 'Specification of the role attribute'
+[rules for parsing integers]: https://html.spec.whatwg.org/#rules-for-parsing-integers
 [sc246]: https://www.w3.org/WAI/WCAG21/#headings-and-labels.html 'Success Criterion 2.4.6: Headings and Labels'
 [sc253]: https://www.w3.org/WAI/WCAG21/label-in-name 'Success Criterion 2.5.3: Label in Name'
 [sc412]: https://www.w3.org/WAI/WCAG21/#name-role-value 'Success Criterion 4.1.2: Name, Role and Value'
 [semantic role]: #semantic-role 'Definition of semantic role'
+[sequential focus navigation]: https://html.spec.whatwg.org/multipage/interaction.html#sequential-focus-navigation
+[tabindex attribute]: https://html.spec.whatwg.org/#attr-tabindex
+[tabindex value]: https://html.spec.whatwg.org/#tabindex-value
 [usc246]: https://www.w3.org/WAI/WCAG21/Understanding/headings-and-labels.html 'Understanding SC 2.4.6: Headings and Labels'
 [usc412]: https://www.w3.org/WAI/WCAG21/Understanding/name-role-value 'Understanding SC 4.1.2: Name, Role and Value'
 [visible]: #visible 'Definition of visible'

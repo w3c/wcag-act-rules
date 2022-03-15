@@ -9,9 +9,9 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 047fe0</p>
-  <p><strong>Date:</strong> Updated 28 January 2022</p>
+  <p><strong>Date:</strong> Updated 15 March 2022</p>
   <p><strong>Authors:</strong> <a href="https://github.com/Jym77">Jean-Yves Moyen</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
-  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
+  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
   
   <p><strong>Assets:</strong> Test cases use assets from the following sources: <em>The Three Kingdoms</em> by Luo Guanzhong, translation by Yu Sumei (Tuttle publishing, 2014, ISBN 9780804843935); Image from a Ming Dynasty edition of the Romance of the Three Kingdoms, original kept in the library holdings of Peking University.</p>
 proposed: true
@@ -21,7 +21,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that the non-repeated content contains a heading
-  last_modified: 28 January 2022
+  last_modified: 15 March 2022
 ---
 
 ## Applicability
@@ -90,6 +90,8 @@ The following aspects are required in using this rule.
 
 #### Passed Example 1
 
+<a class="example-link" title="Passed Example 1" href="/content-assets/wcag-act-rules/testcases/047fe0/c67821f1bd796c8dcabd5fd32c647780fa324e27.html">Open in a new tab</a>
+
 This [document][] has a `h1` heading, which is [visible][] and [included in the accessibility tree][], at the beginning of its non-repeated content.
 
 ```html
@@ -118,6 +120,8 @@ This [document][] has a `h1` heading, which is [visible][] and [included in the 
 ```
 
 #### Passed Example 2
+
+<a class="example-link" title="Passed Example 2" href="/content-assets/wcag-act-rules/testcases/047fe0/9b25d8065dc0ba59bf1c282efb27dcd81298fed4.html">Open in a new tab</a>
 
 This [document][] has a `h2` heading, which is [visible][] and [included in the accessibility tree][], at the beginning of its non-repeated content.
 
@@ -150,6 +154,8 @@ This [document][] has a `h2` heading, which is [visible][] and [included in the 
 
 #### Passed Example 3
 
+<a class="example-link" title="Passed Example 3" href="/content-assets/wcag-act-rules/testcases/047fe0/8e7af0a95841a94b2d1dbee0860b4719c2085945.html">Open in a new tab</a>
+
 This [document][] has a `h1` heading, which is [visible][] and [included in the accessibility tree][], at the beginning of its non-repeated content.
 
 **Note:** In this [document][], the non-repeated content starts after the `ol` element.
@@ -181,6 +187,8 @@ This [document][] has a `h1` heading, which is [visible][] and [included in the 
 
 #### Passed Example 4
 
+<a class="example-link" title="Passed Example 4" href="/content-assets/wcag-act-rules/testcases/047fe0/33fcbdf68c75e943ae8d5de5263727aab10d69da.html">Open in a new tab</a>
+
 This [document][] has a `h1` heading, which is [visible][] and [included in the accessibility tree][], at the beginning of its non-repeated content. Here, the heading is the first [non-repeated content after repeated content][].
 
 ```html
@@ -210,6 +218,8 @@ This [document][] has a `h1` heading, which is [visible][] and [included in the 
 ```
 
 #### Passed Example 5
+
+<a class="example-link" title="Passed Example 5" href="/content-assets/wcag-act-rules/testcases/047fe0/7dbc8fc06d40789fd72f5987a5fe5b4f6f19bb17.html">Open in a new tab</a>
 
 This [document][] has a `h1` heading, which is [visible][] and [included in the accessibility tree][], at the beginning of its non-repeated content.
 
@@ -241,6 +251,8 @@ This [document][] has a `h1` heading, which is [visible][] and [included in the 
 
 #### Passed Example 6
 
+<a class="example-link" title="Passed Example 6" href="/content-assets/wcag-act-rules/testcases/047fe0/b1f24e66c3ddbef136ffacb10264a80109fa6d57.html">Open in a new tab</a>
+
 This [document][] has a `div` element with a role of `heading`, which is [visible][] and [included in the accessibility tree][], at the beginning of its non-repeated content. Note that re-purposing an element instead of using native HTML is a violation of the [First Rule of ARIA Use](https://www.w3.org/TR/using-aria/#rule1) and should normally be avoided.
 
 ```html
@@ -269,6 +281,8 @@ This [document][] has a `div` element with a role of `heading`, which is [visibl
 ```
 
 #### Passed Example 7
+
+<a class="example-link" title="Passed Example 7" href="/content-assets/wcag-act-rules/testcases/047fe0/f8146acb3179c3ac33f415443099748f7d859e29.html">Open in a new tab</a>
 
 This [document][] has a `h1` heading, which is [visible][] and [included in the accessibility tree][], at the beginning of its non-repeated content.
 
@@ -304,6 +318,8 @@ This [document][] has a `h1` heading, which is [visible][] and [included in the 
 
 #### Passed Example 8
 
+<a class="example-link" title="Passed Example 8" href="/content-assets/wcag-act-rules/testcases/047fe0/8b97b5f8afb0bc447ced6a081d3a9c1dd2152c67.html">Open in a new tab</a>
+
 This [document][] has a `h1` heading, which is [visible][] and [included in the accessibility tree][], at the beginning of its non-repeated content.
 
 ```html
@@ -334,6 +350,8 @@ This [document][] has a `h1` heading, which is [visible][] and [included in the 
 
 #### Passed Example 9
 
+<a class="example-link" title="Passed Example 9" href="/content-assets/wcag-act-rules/testcases/047fe0/4f112d2707661d579bb0e364ef6241ea6217d3e8.html">Open in a new tab</a>
+
 This [document][] has no [non-repeated content after repeated content][].
 
 ```html
@@ -353,6 +371,8 @@ This [document][] has no [non-repeated content after repeated content][].
 ### Failed
 
 #### Failed Example 1
+
+<a class="example-link" title="Failed Example 1" href="/content-assets/wcag-act-rules/testcases/047fe0/7505d097f7d59d71dc7eb8f7ab82c5682def54d4.html">Open in a new tab</a>
 
 In this document, there is [semantic][] `heading` element, even though the `strong` element is styled to appear as one.
 
@@ -381,6 +401,8 @@ In this document, there is [semantic][] `heading` element, even though the `stro
 ```
 
 #### Failed Example 2
+
+<a class="example-link" title="Failed Example 2" href="/content-assets/wcag-act-rules/testcases/047fe0/81d501e52085d9e5712e241bdd24708e7cb4a301.html">Open in a new tab</a>
 
 The non-repeated content of this [document][] starts with a `h1` heading, but it is not [visible][] (because it is off-screen).
 
@@ -411,6 +433,8 @@ The non-repeated content of this [document][] starts with a `h1` heading, but it
 
 #### Failed Example 3
 
+<a class="example-link" title="Failed Example 3" href="/content-assets/wcag-act-rules/testcases/047fe0/929079705b1789667853e023b818eb4101630700.html">Open in a new tab</a>
+
 The non-repeated content of this [document][] starts with a `h1` heading, but it is not [included in the accessibility tree][] (because of the `aria-hidden` attribute).
 
 ```html
@@ -438,6 +462,8 @@ The non-repeated content of this [document][] starts with a `h1` heading, but it
 ```
 
 #### Failed Example 4
+
+<a class="example-link" title="Failed Example 4" href="/content-assets/wcag-act-rules/testcases/047fe0/4e34cac08353c5383b8743bffada2aaf3a780149.html">Open in a new tab</a>
 
 In this [document][], the only element with a role of `heading` is inside a [block of repeated content][] and therefore isn't [non-repeated content after repeated content][].
 
@@ -468,6 +494,8 @@ In this [document][], the only element with a role of `heading` is inside a [blo
 ### Inapplicable
 
 #### Inapplicable Example 1
+
+<a class="example-link" title="Inapplicable Example 1" href="/content-assets/wcag-act-rules/testcases/047fe0/ecc29b73e37b6a125b3fd9767068dcaa368d467a.svg">Open in a new tab</a>
 
 This [document][] is not an [HTML web page][].
 
@@ -522,7 +550,17 @@ Other roles may be added as they become available. Not all roles will be support
 
 ### Focusable {#focusable}
 
-Elements that can become the target of keyboard input as described in the [HTML](https://www.w3.org/TR/html) specification of [focusable](https://html.spec.whatwg.org/#focusable-area) and [can be focused](https://html.spec.whatwg.org/#specially-focusable).
+An element is _focusable_ if one or both of the following are true:
+
+- the element is part of [sequential focus navigation][]; or
+- the element has a [tabindex value][] that is not null.
+
+**Exception**: Elements that lose focus during a period of up to 1 second after gaining focus, without the user interacting with the page the element is on, are not considered _focusable_.
+
+Notes:
+
+- The 1 second time span is an arbitrary limit which is not included in WCAG. Given that scripts can manage the focus state of elements, testing the focusability of an element consistently would be impractical without a time limit.
+- The [tabindex value][] of an element is the value of the [tabindex attribute][] parsed using the [rules for parsing integers][]. For the [tabindex value][] to be different from null, it needs to be [parsed][rules for parsing integers] without errors.
 
 ### Implicit Semantic Role {#implicit-role}
 
@@ -591,11 +629,12 @@ Perceivable content corresponds to nodes that contain information and are percei
 
 An HTML element is _programmatically hidden_ if either it has a [computed][] CSS property `visibility` whose value is not `visible`; or at least one of the following is true for any of its [inclusive ancestors][] in the [flat tree][]:
 
-- has a `hidden` attribute; or
 - has a [computed][] CSS property `display` of `none`; or
 - has an `aria-hidden` attribute set to `true`
 
 **Note**: Contrarily to the other conditions, the `visibility` CSS property may be reverted by descendants.
+
+**Note**: The [HTML standard suggests](https://html.spec.whatwg.org/multipage/rendering.html#hidden-elements) rendering elements with the `hidden` attribute with a CSS rule that applies the value `none` to the CSS property `display` of the element. Although the suggestion is not normative, known user agents render it according to the suggestion (unless the content specifies another CSS rule that sets the value of the `display` property). If a user agent does not follow the suggestion, this definition may produce incorrect results for this user agent.
 
 ### Semantic Role {#semantic-role}
 
@@ -673,13 +712,17 @@ This is the first version of this ACT rule.
 [programmatically hidden]: #programmatically-hidden 'Definition of Programmatically Hidden'
 [pure decoration]: https://www.w3.org/TR/WCAG21/#dfn-pure-decoration 'WCAG definition of Pure Decoration'
 [role attribute]: https://www.w3.org/TR/role-attribute/ 'Specification of the role attribute'
+[rules for parsing integers]: https://html.spec.whatwg.org/#rules-for-parsing-integers
 [sc131]: https://www.w3.org/TR/WCAG21/#info-and-relationships 'Success Criterion 1.3.1 Info and Relationships'
 [sc211]: https://www.w3.org/TR/WCAG21/#keyboard 'Success Criterion 2.1.1 Keyboard'
 [sc241]: https://www.w3.org/TR/WCAG21/#bypass-blocks 'Success Criterion 2.4.1: Bypass Blocks'
 [sc412]: https://www.w3.org/TR/WCAG21/#name-role-value 'Success Criterion 4.1.2 Name, Role, Value'
 [semantic role]: #semantic-role 'Definition of semantic role'
 [semantic]: #semantic-role 'Definition of Semantic Role'
+[sequential focus navigation]: https://html.spec.whatwg.org/multipage/interaction.html#sequential-focus-navigation
 [special url]: https://url.spec.whatwg.org/#is-special 'URL specification of Special URL'
+[tabindex attribute]: https://html.spec.whatwg.org/#attr-tabindex
+[tabindex value]: https://html.spec.whatwg.org/#tabindex-value
 [tech h69]: https://www.w3.org/WAI/WCAG21/Techniques/html/H69 'Technique H69: Providing Heading Elements at the Beginning of each Section of Content'
 [tree order]: https://dom.spec.whatwg.org/#concept-tree-order 'DOM specification of Tree Order'
 [usc241]: https://www.w3.org/WAI/WCAG21/Understanding/bypass-blocks.html 'Understanding Success Criterion 2.4.1: Bypass Blocks'

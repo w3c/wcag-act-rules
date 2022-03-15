@@ -9,9 +9,9 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> afw4f7</p>
-  <p><strong>Date:</strong> Updated 28 January 2022</p>
+  <p><strong>Date:</strong> Updated 15 March 2022</p>
   <p><strong>Authors:</strong> <a href="https://www.linkedin.com/in/brianbors/">Brian Bors</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
-  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
+  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
 rule_meta:
   id: afw4f7
@@ -19,7 +19,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that the highest possible contrast of every text character with its background meets the minimal contrast requirement.
-  last_modified: 28 January 2022
+  last_modified: 15 March 2022
   scs_tested:
     - handle: Contrast (Minimum)
       num: 1.4.3
@@ -117,6 +117,8 @@ The following aspects are required in using this rule.
 
 #### Passed Example 1
 
+<a class="example-link" title="Passed Example 1" href="/content-assets/wcag-act-rules/testcases/afw4f7/fd406bedf0bb3bdc4c2a718f49a3dd0f7aaa7556.html">Open in a new tab</a>
+
 This dark gray text has a contrast ratio of 12.6:1 on the white background.
 
 ```html
@@ -127,6 +129,8 @@ This dark gray text has a contrast ratio of 12.6:1 on the white background.
 
 #### Passed Example 2
 
+<a class="example-link" title="Passed Example 2" href="/content-assets/wcag-act-rules/testcases/afw4f7/ab4691ef474d6263e9ceec824f07faa51a30112e.html">Open in a new tab</a>
+
 This dark gray text has a contrast ratio between 12.6:1 and 5:1 on the white to blue gradient background.
 
 ```html
@@ -136,6 +140,8 @@ This dark gray text has a contrast ratio between 12.6:1 and 5:1 on the white to 
 ```
 
 #### Passed Example 3
+
+<a class="example-link" title="Passed Example 3" href="/content-assets/wcag-act-rules/testcases/afw4f7/530b8900297f169b900e2a0dffa96bc878b269a1.html">Open in a new tab</a>
 
 This light gray text has a contrast ratio between 13:1 and 5:1 on the background image.
 
@@ -149,6 +155,8 @@ This light gray text has a contrast ratio between 13:1 and 5:1 on the background
 
 #### Passed Example 4
 
+<a class="example-link" title="Passed Example 4" href="/content-assets/wcag-act-rules/testcases/afw4f7/319a465113950b03502709ab573edf7deab59908.html">Open in a new tab</a>
+
 This black text has a contrast ratio between 6.1:1 and 9:1 on gray background with white text shadow on it.
 
 ```html
@@ -158,6 +166,8 @@ This black text has a contrast ratio between 6.1:1 and 9:1 on gray background wi
 ```
 
 #### Passed Example 5
+
+<a class="example-link" title="Passed Example 5" href="/content-assets/wcag-act-rules/testcases/afw4f7/04344f745bd9bad51292748e7893f146c045aae4.html">Open in a new tab</a>
 
 This 18pt large black text has a contrast ratio of 3.6:1 on the gray background.
 
@@ -169,6 +179,8 @@ This 18pt large black text has a contrast ratio of 3.6:1 on the gray background.
 
 #### Passed Example 6
 
+<a class="example-link" title="Passed Example 6" href="/content-assets/wcag-act-rules/testcases/afw4f7/aed692e9f0a1be5c87ef1de56afa8e23e14cc3ba.html">Open in a new tab</a>
+
 This 14pt bold black text has a contrast ratio of 3.6:1 on the gray background.
 
 ```html
@@ -178,6 +190,8 @@ This 14pt bold black text has a contrast ratio of 3.6:1 on the gray background.
 ```
 
 #### Passed Example 7
+
+<a class="example-link" title="Passed Example 7" href="/content-assets/wcag-act-rules/testcases/afw4f7/2845a8409b1c07caa856d1bfbf42ed244b0de9c2.html">Open in a new tab</a>
 
 This text does not convey anything in human language.
 
@@ -189,6 +203,8 @@ This text does not convey anything in human language.
 
 #### Passed Example 8
 
+<a class="example-link" title="Passed Example 8" href="/content-assets/wcag-act-rules/testcases/afw4f7/c7c09c1019dcf1d1c67183001b4d459dee7a87ff.html">Open in a new tab</a>
+
 This text has the default browser text color on the default browser background color. By default this is black text on a white background, which has a contrast ratio of 21:1.
 
 ```html
@@ -196,6 +212,8 @@ This text has the default browser text color on the default browser background c
 ```
 
 #### Passed Example 9
+
+<a class="example-link" title="Passed Example 9" href="/content-assets/wcag-act-rules/testcases/afw4f7/66a3ba7bc0027a9556596e3c378c926a537c1901.html">Open in a new tab</a>
 
 This dark gray text has a contrast ratio of 12.6:1 on the white background in a shadow DOM tree.
 
@@ -211,6 +229,8 @@ This dark gray text has a contrast ratio of 12.6:1 on the white background in a 
 
 #### Failed Example 1
 
+<a class="example-link" title="Failed Example 1" href="/content-assets/wcag-act-rules/testcases/afw4f7/eaf0a926896f045a498073da42ea6263a4d6d36c.html">Open in a new tab</a>
+
 This light gray text has a contrast ratio of 2.3:1 on the white background.
 
 ```html
@@ -221,6 +241,8 @@ This light gray text has a contrast ratio of 2.3:1 on the white background.
 
 #### Failed Example 2
 
+<a class="example-link" title="Failed Example 2" href="/content-assets/wcag-act-rules/testcases/afw4f7/e8f3acb1dc814b8b815c69b7150cdea67d5bd98e.html">Open in a new tab</a>
+
 This light gray text has a contrast ratio between 1.2:1 and 2.3:1 on the white to blue gradient background.
 
 ```html
@@ -230,6 +252,8 @@ This light gray text has a contrast ratio between 1.2:1 and 2.3:1 on the white t
 ```
 
 #### Failed Example 3
+
+<a class="example-link" title="Failed Example 3" href="/content-assets/wcag-act-rules/testcases/afw4f7/41afaa9b33287aba9c608c3466e2b164f57a02ed.html">Open in a new tab</a>
 
 This light gray text has a contrast ratio between 2.7:1 and 3:1 on the background image.
 
@@ -243,6 +267,8 @@ This light gray text has a contrast ratio between 2.7:1 and 3:1 on the backgroun
 
 #### Failed Example 4
 
+<a class="example-link" title="Failed Example 4" href="/content-assets/wcag-act-rules/testcases/afw4f7/7b27adc8d5a8f07dca43b0f90806f40bc2a1b15b.html">Open in a new tab</a>
+
 This black text with 30% alpha channel has a contrast ratio of 2.1:1 on the white background.
 
 ```html
@@ -252,6 +278,8 @@ This black text with 30% alpha channel has a contrast ratio of 2.1:1 on the whit
 ```
 
 #### Failed Example 5
+
+<a class="example-link" title="Failed Example 5" href="/content-assets/wcag-act-rules/testcases/afw4f7/7507c8139cfda2c482c394fe00aaaf69e15acabb.html">Open in a new tab</a>
 
 This black text with 30% opacity has a contrast ratio of 2.1:1 on the white background.
 
@@ -265,6 +293,8 @@ This black text with 30% opacity has a contrast ratio of 2.1:1 on the white back
 
 #### Failed Example 6
 
+<a class="example-link" title="Failed Example 6" href="/content-assets/wcag-act-rules/testcases/afw4f7/b1a65bd18381a1ea4ad3077fd98c50368947012c.html">Open in a new tab</a>
+
 This light gray text has a contrast ratio of 2.3:1 on the white background in a shadow DOM tree.
 
 ```html
@@ -276,6 +306,8 @@ This light gray text has a contrast ratio of 2.3:1 on the white background in a 
 ```
 
 #### Failed Example 7
+
+<a class="example-link" title="Failed Example 7" href="/content-assets/wcag-act-rules/testcases/afw4f7/bf47c65f2854b6ac100a6f700d354b243b069231.html">Open in a new tab</a>
 
 This semi-transparent gray text has a contrast ratio between 2.3:1 and 4.2:1 on the black and white background. The light gray text is compared to the white section of the background and the dark gray text is compared to the black section of the background.
 
@@ -295,6 +327,8 @@ This semi-transparent gray text has a contrast ratio between 2.3:1 and 4.2:1 on 
 
 #### Failed Example 8
 
+<a class="example-link" title="Failed Example 8" href="/content-assets/wcag-act-rules/testcases/afw4f7/308839f424ef1d9dbb5aab0cd9079827ecb00895.html">Open in a new tab</a>
+
 The first `p` element has a contrast ratio of 12.6:1. The second `p` element, which contains an example of the Helvetica font, has a contrast ratio of 3.5:1. Because this provides information, and not only for aesthetic purposes, this is not considered [purely decorative][].
 
 ```html
@@ -310,6 +344,8 @@ The first `p` element has a contrast ratio of 12.6:1. The second `p` element, wh
 
 #### Inapplicable Example 1
 
+<a class="example-link" title="Inapplicable Example 1" href="/content-assets/wcag-act-rules/testcases/afw4f7/2347a45232c34aa309087ed099f4781cd70b5b1e.html">Open in a new tab</a>
+
 This text is not [visible][] because of `display: none`.
 
 ```html
@@ -317,6 +353,8 @@ This text is not [visible][] because of `display: none`.
 ```
 
 #### Inapplicable Example 2
+
+<a class="example-link" title="Inapplicable Example 2" href="/content-assets/wcag-act-rules/testcases/afw4f7/dbd2374952b96375369afe2a012bfbadd182bf6b.html">Open in a new tab</a>
 
 This text is not [visible][] because it is positioned off screen.
 
@@ -326,6 +364,8 @@ This text is not [visible][] because it is positioned off screen.
 
 #### Inapplicable Example 3
 
+<a class="example-link" title="Inapplicable Example 3" href="/content-assets/wcag-act-rules/testcases/afw4f7/fc92e273e09ad225227f488e3a016fd8d4aad10c.html">Open in a new tab</a>
+
 This text is not [visible][] because the foreground color is the same as the background color.
 
 ```html
@@ -333,6 +373,8 @@ This text is not [visible][] because the foreground color is the same as the bac
 ```
 
 #### Inapplicable Example 4
+
+<a class="example-link" title="Inapplicable Example 4" href="/content-assets/wcag-act-rules/testcases/afw4f7/881897444deae644139c4b799b8eeb4b4b764c2a.html">Open in a new tab</a>
 
 This text is not the child of an HTML element.
 
@@ -344,6 +386,8 @@ This text is not the child of an HTML element.
 
 #### Inapplicable Example 5
 
+<a class="example-link" title="Inapplicable Example 5" href="/content-assets/wcag-act-rules/testcases/afw4f7/8df570a7bb69487e5f3b5d07a7af45cc881dc449.html">Open in a new tab</a>
+
 This text not part of a [text node][].
 
 ```html
@@ -354,6 +398,8 @@ This text not part of a [text node][].
 
 #### Inapplicable Example 6
 
+<a class="example-link" title="Inapplicable Example 6" href="/content-assets/wcag-act-rules/testcases/afw4f7/dc18c6afcd1214d85c49b107eb89c60fbc12ee99.html">Open in a new tab</a>
+
 This text is part of a widget because it is a child of a `button` element.
 
 ```html
@@ -362,6 +408,8 @@ This text is part of a widget because it is a child of a `button` element.
 
 #### Inapplicable Example 7
 
+<a class="example-link" title="Inapplicable Example 7" href="/content-assets/wcag-act-rules/testcases/afw4f7/668856825e6d3b4e480005acf97723c7b1004ba3.html">Open in a new tab</a>
+
 This text is part of a widget because it is a child of an element with the `role` attribute set to `button`.
 
 ```html
@@ -369,6 +417,8 @@ This text is part of a widget because it is a child of an element with the `role
 ```
 
 #### Inapplicable Example 8
+
+<a class="example-link" title="Inapplicable Example 8" href="/content-assets/wcag-act-rules/testcases/afw4f7/328b967c5b544b48f7acd8e42f2f05d355501f2a.html">Open in a new tab</a>
 
 This text is part of a label of a [disabled][] widget, because it is in a `label` element that is the label for an `input` element with `type="text"`.
 
@@ -380,6 +430,8 @@ This text is part of a label of a [disabled][] widget, because it is in a `label
 ```
 
 #### Inapplicable Example 9
+
+<a class="example-link" title="Inapplicable Example 9" href="/content-assets/wcag-act-rules/testcases/afw4f7/7c7d6412dae7381d90517a6f3c0a30104d63062a.html">Open in a new tab</a>
 
 This text is part of a label of a [disabled][] widget, because it is in an element that is referenced by `aria-labelledby` from an element with `role="textbox"`.
 
@@ -399,6 +451,8 @@ This text is part of a label of a [disabled][] widget, because it is in an eleme
 
 #### Inapplicable Example 10
 
+<a class="example-link" title="Inapplicable Example 10" href="/content-assets/wcag-act-rules/testcases/afw4f7/53386f68326a53798e776b48e81b32659424d6d3.html">Open in a new tab</a>
+
 This text is part of a label of a [disabled][] widget, because it is in a `label` element that is the label for an `input` element in a `fieldset` element with the `disabled` attribute.
 
 ```html
@@ -411,6 +465,8 @@ This text is part of a label of a [disabled][] widget, because it is in a `label
 ```
 
 #### Inapplicable Example 11
+
+<a class="example-link" title="Inapplicable Example 11" href="/content-assets/wcag-act-rules/testcases/afw4f7/9e3383a60ab67d5988ac2144fec58a34677c52b2.html">Open in a new tab</a>
 
 This text is part of a label of a [disabled][] widget, because it is in a `label` element that is the label for an `input` element in an element with `role="group"` with the `aria-disabled="true"` attribute.
 
@@ -441,20 +497,20 @@ For more details, see [examples of accessible name][].
 
 ### Attribute value {#attribute-value}
 
-The _attribute value_ of a content attribute set on an HTML element is the value that the attribute gets after being parsed and computed according to specifications. It may differ from the value that is actually written in the HTML code due to trimming whitespace or non-digits characters, default values, or case-insensitivity.
+The <dfn id="attribute-value:attribute">attribute value</dfn> of a content attribute set on an HTML element is the value that the attribute gets after being parsed and computed according to specifications. It may differ from the value that is actually written in the HTML code due to trimming whitespace or non-digits characters, default values, or case-insensitivity.
 
 Some notable case of attribute value, among others:
 
-- For [enumerated attributes][], the _attribute value_ is either the state of the attribute, or the keyword that maps to it; even for the default states. Thus `<input type="image" />` has an attribute value of either `Image Button` (the state) or `image` (the keyword mapping to it), both formulations having the same meaning; similarly, "an input element with a `type` _attribute value_ of `Text`" can be either `<input type="text" />`, `<input />` (missing value default), or `<input type="invalid" />` (invalid value default).
-- For [boolean attributes][], the _attribute value_ is `true` when the attribute is present and `false` otherwise. Thus `<button disabled>`, `<button disabled="disabled">` and `<button disabled="">` all have a `disabled` _attribute value_ of `true`.
-- For attributes whose value is used in a case-insensitive context, the _attribute value_ is the lowercase version of the value written in the HTML code.
-- For attributes that accept [numbers][], the _attribute value_ is the result of parsing the value written in the HTML code according to the rules for parsing this kind of number.
-- For attributes that accept sets of tokens, whether [space separated][] or [comma separated][], the _attribute value_ is the set of tokens obtained after parsing the set and, depending on the case, converting its items to lowercase (if the set is used in a case-insensitive context).
-- For `aria-*` attributes, the _attribute value_ is computed as indicated in the [WAI-ARIA specification][] and the [HTML Accessibility API Mappings][html aam].
+- For [enumerated attributes][], the <dfn id="attribute-value:enumerated">attribute value</dfn> is either the state of the attribute, or the keyword that maps to it; even for the default states. Thus `<input type="image" />` has an attribute value of either `Image Button` (the state) or `image` (the keyword mapping to it), both formulations having the same meaning; similarly, "an input element with a `type` _attribute value_ of `Text`" can be either `<input type="text" />`, `<input />` (missing value default), or `<input type="invalid" />` (invalid value default).
+- For [boolean attributes][], the <dfn id="attribute-value:boolean">attribute value</dfn> is `true` when the attribute is present and `false` otherwise. Thus `<button disabled>`, `<button disabled="disabled">` and `<button disabled="">` all have a `disabled` _attribute value_ of `true`.
+- For attributes whose value is used in a case-insensitive context, the <dfn id="attribute-value:case-insensitive">attribute value</dfn> is the lowercase version of the value written in the HTML code.
+- For attributes that accept [numbers][], the <dfn id="attribute-value:number">attribute value</dfn> is the result of parsing the value written in the HTML code according to the rules for parsing this kind of number.
+- For attributes that accept sets of tokens, whether [space separated][] or [comma separated][], the <dfn id="attribute-value:tokens-list">attribute value</dfn> is the set of tokens obtained after parsing the set and, depending on the case, converting its items to lowercase (if the set is used in a case-insensitive context).
+- For `aria-*` attributes, the <dfn id="attribute-value:aria">attribute value</dfn> is computed as indicated in the [WAI-ARIA specification][] and the [HTML Accessibility API Mappings][html aam].
 
 This list is not exhaustive, and only serves as an illustration for some of the most common cases.
 
-The _attribute value_ of an [IDL attribute][] is the value returned on getting it. Note that when an [IDL attribute][] [reflects][reflect] a content attribute, they have the same attribute value.
+The <dfn id="attribute-value:idl">attribute value</dfn> of an [IDL attribute][] is the value returned on getting it. Note that when an [IDL attribute][] [reflects][reflect] a content attribute, they have the same attribute value.
 
 ### Background Colors Of Text {#background-colors-of-text}
 
@@ -482,7 +538,17 @@ Other roles may be added as they become available. Not all roles will be support
 
 ### Focusable {#focusable}
 
-Elements that can become the target of keyboard input as described in the [HTML](https://www.w3.org/TR/html) specification of [focusable](https://html.spec.whatwg.org/#focusable-area) and [can be focused](https://html.spec.whatwg.org/#specially-focusable).
+An element is _focusable_ if one or both of the following are true:
+
+- the element is part of [sequential focus navigation][]; or
+- the element has a [tabindex value][] that is not null.
+
+**Exception**: Elements that lose focus during a period of up to 1 second after gaining focus, without the user interacting with the page the element is on, are not considered _focusable_.
+
+Notes:
+
+- The 1 second time span is an arbitrary limit which is not included in WCAG. Given that scripts can manage the focus state of elements, testing the focusability of an element consistently would be impractical without a time limit.
+- The [tabindex value][] of an element is the value of the [tabindex attribute][] parsed using the [rules for parsing integers][]. For the [tabindex value][] to be different from null, it needs to be [parsed][rules for parsing integers] without errors.
 
 ### Foreground Colors Of Text {#foreground-colors-of-text}
 
@@ -556,11 +622,12 @@ An _outcome_ is a conclusion that comes from evaluating an ACT Rule on a [test s
 
 An HTML element is _programmatically hidden_ if either it has a [computed][] CSS property `visibility` whose value is not `visible`; or at least one of the following is true for any of its [inclusive ancestors][] in the [flat tree][]:
 
-- has a `hidden` attribute; or
 - has a [computed][] CSS property `display` of `none`; or
 - has an `aria-hidden` attribute set to `true`
 
 **Note**: Contrarily to the other conditions, the `visibility` CSS property may be reverted by descendants.
+
+**Note**: The [HTML standard suggests](https://html.spec.whatwg.org/multipage/rendering.html#hidden-elements) rendering elements with the `hidden` attribute with a CSS rule that applies the value `none` to the CSS property `display` of the element. Although the suggestion is not normative, known user agents render it according to the suggestion (unless the content specifies another CSS rule that sets the value of the `display` property). If a user agent does not follow the suggestion, this definition may produce incorrect results for this user agent.
 
 ### Semantic Role {#semantic-role}
 
@@ -645,11 +712,15 @@ This is the first version of this ACT rule.
 [purely decorative]: https://www.w3.org/TR/WCAG21/#dfn-pure-decoration 'WCAG 2.1, Purely decorative'
 [reflect]: https://html.spec.whatwg.org/multipage/common-dom-interfaces.html#reflecting-content-attributes-in-idl-attributes 'HTML specification of Reflecting Content Attributes in IDL Attributes'
 [role attribute]: https://www.w3.org/TR/role-attribute/ 'Specification of the role attribute'
+[rules for parsing integers]: https://html.spec.whatwg.org/#rules-for-parsing-integers
 [sc143]: https://www.w3.org/TR/WCAG21/#contrast-minimum 'WCAG 2.1, Success criterion 1.4.3 Contrast (Minimum)'
 [sc146]: https://www.w3.org/TR/WCAG21/#contrast-enhanced 'WCAG 2.1, Success criterion 1.4.6 Contrast (Enhanced)'
 [semantic role]: #semantic-role 'Definition of Semantic Role'
+[sequential focus navigation]: https://html.spec.whatwg.org/multipage/interaction.html#sequential-focus-navigation
 [shadow-including ancestor]: https://dom.spec.whatwg.org/#concept-shadow-including-ancestor
 [space separated]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#space-separated-tokens 'HTML Specification of Space Separated Tokens'
+[tabindex attribute]: https://html.spec.whatwg.org/#attr-tabindex
+[tabindex value]: https://html.spec.whatwg.org/#tabindex-value
 [text node]: https://dom.spec.whatwg.org/#text 'DOM, text node, 2020/07/23'
 [user origin]: https://www.w3.org/TR/css3-cascade/#cascade-origin-user 'CSS 3, user origin'
 [visible]: #visible 'Definition of Visible'
