@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 2ee8b8</p>
-  <p><strong>Date:</strong> Updated 15 March 2022</p>
+  <p><strong>Date:</strong> Updated 16 March 2022</p>
   <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/brynanders">Bryn Anderson</a>, <a href="https://github.com/jkodu">Jey Nandakumar</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -19,7 +19,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that interactive elements labeled through content have their visible label as part of their accessible name.
-  last_modified: 15 March 2022
+  last_modified: 16 March 2022
   scs_tested:
     - handle: Label in Name
       num: 2.5.3
@@ -100,7 +100,7 @@ The following aspects are required in using this rule.
 
 #### Passed Example 1
 
-<a class="example-link" title="Passed Example 1" href="/content-assets/wcag-act-rules/testcases/2ee8b8/326f6768ecbf60ca31149e65ab2853c138095fd7.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/2ee8b8/326f6768ecbf60ca31149e65ab2853c138095fd7.html">Open in a new tab</a>
 
 This link has [visible][] text that matches the [accessible name][].
 
@@ -110,7 +110,7 @@ This link has [visible][] text that matches the [accessible name][].
 
 #### Passed Example 2
 
-<a class="example-link" title="Passed Example 2" href="/content-assets/wcag-act-rules/testcases/2ee8b8/02f6608c4242efccba3ceeb8b73cc6b1255e362d.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/2ee8b8/02f6608c4242efccba3ceeb8b73cc6b1255e362d.html">Open in a new tab</a>
 
 This link has [visible][] text that, ignoring trailing whitespace, matches the [accessible name][].
 
@@ -120,7 +120,7 @@ This link has [visible][] text that, ignoring trailing whitespace, matches the [
 
 #### Passed Example 3
 
-<a class="example-link" title="Passed Example 3" href="/content-assets/wcag-act-rules/testcases/2ee8b8/71c4a612a2e00a8abd3d33b4a66ca8e5079fff1b.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/2ee8b8/71c4a612a2e00a8abd3d33b4a66ca8e5079fff1b.html">Open in a new tab</a>
 
 This link has [visible][] text that, ignoring case, matches the [accessible name][].
 
@@ -130,7 +130,7 @@ This link has [visible][] text that, ignoring case, matches the [accessible name
 
 #### Passed Example 4
 
-<a class="example-link" title="Passed Example 4" href="/content-assets/wcag-act-rules/testcases/2ee8b8/f88ac89cc14d59302666047a0da91bbc51d27bb2.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/2ee8b8/f88ac89cc14d59302666047a0da91bbc51d27bb2.html">Open in a new tab</a>
 
 This button has [visible][] text that is contained within the [accessible name][].
 
@@ -140,7 +140,7 @@ This button has [visible][] text that is contained within the [accessible name][
 
 #### Passed Example 5
 
-<a class="example-link" title="Passed Example 5" href="/content-assets/wcag-act-rules/testcases/2ee8b8/c7f6c637f82c017db4e3cd035b29cc2522043021.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 5" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/2ee8b8/c7f6c637f82c017db4e3cd035b29cc2522043021.html">Open in a new tab</a>
 
 This button has [visible][] text that does not need to be contained within the [accessible name][], because the "x" text node is [non-text content][].
 
@@ -150,7 +150,7 @@ This button has [visible][] text that does not need to be contained within the [
 
 #### Passed Example 6
 
-<a class="example-link" title="Passed Example 6" href="/content-assets/wcag-act-rules/testcases/2ee8b8/efa9543339cdad5412c7719b266a633a29ce149e.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 6" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/2ee8b8/efa9543339cdad5412c7719b266a633a29ce149e.html">Open in a new tab</a>
 
 This `button` element has the text "search" rendered as an magnifying glass icon by the font. Because the text is rendered as [non-text content][], the text does not need to be contained within the [accessible name][].
 
@@ -168,7 +168,7 @@ This `button` element has the text "search" rendered as an magnifying glass icon
 
 #### Failed Example 1
 
-<a class="example-link" title="Failed Example 1" href="/content-assets/wcag-act-rules/testcases/2ee8b8/4ee91039726503da19c9bc58e08e800464d94d82.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/2ee8b8/4ee91039726503da19c9bc58e08e800464d94d82.html">Open in a new tab</a>
 
 This link has [visible][] text that is different from the [accessible name][].
 
@@ -178,7 +178,7 @@ This link has [visible][] text that is different from the [accessible name][].
 
 #### Failed Example 2
 
-<a class="example-link" title="Failed Example 2" href="/content-assets/wcag-act-rules/testcases/2ee8b8/8db20b5fa0a59906a7b182c5698d6a9ce7e85f10.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/2ee8b8/8db20b5fa0a59906a7b182c5698d6a9ce7e85f10.html">Open in a new tab</a>
 
 This button has [visible][] text that is only partially contained within the [accessible name][].
 
@@ -188,7 +188,7 @@ This button has [visible][] text that is only partially contained within the [ac
 
 #### Failed Example 3
 
-<a class="example-link" title="Failed Example 3" href="/content-assets/wcag-act-rules/testcases/2ee8b8/20a5e321fc6a5cb2bfcd520acb8cda21e6925254.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/2ee8b8/20a5e321fc6a5cb2bfcd520acb8cda21e6925254.html">Open in a new tab</a>
 
 This link has [visible][] text with mathematical symbols, that does not match the [accessible name][] because the mathematical symbols were written out in the accessible name. This is [explicitly mentioned in WCAG](https://www.w3.org/WAI/WCAG21/Understanding/label-in-name#mathematical-expressions-and-formulae).
 
@@ -200,7 +200,7 @@ This link has [visible][] text with mathematical symbols, that does not match th
 
 #### Inapplicable Example 1
 
-<a class="example-link" title="Inapplicable Example 1" href="/content-assets/wcag-act-rules/testcases/2ee8b8/cf98c9678e70f160afcd5af246c0070550ad7398.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/2ee8b8/cf98c9678e70f160afcd5af246c0070550ad7398.html">Open in a new tab</a>
 
 This `nav` is not a widget, so the [visible][] text does not need to match the [accessible name][].
 
@@ -210,7 +210,7 @@ This `nav` is not a widget, so the [visible][] text does not need to match the [
 
 #### Inapplicable Example 2
 
-<a class="example-link" title="Inapplicable Example 2" href="/content-assets/wcag-act-rules/testcases/2ee8b8/87e3c42fdc98d63d89a6a0d984f44f00adf02015.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/2ee8b8/87e3c42fdc98d63d89a6a0d984f44f00adf02015.html">Open in a new tab</a>
 
 This email text field does not need to have its [visible][] text match the [accessible name][]. The content of a textfield shows its value instead of its label; it does not [support name from content][supports name from content]. The label is usually adjacent to the textfield instead.
 
@@ -221,7 +221,7 @@ This email text field does not need to have its [visible][] text match the [acce
 
 #### Inapplicable Example 3
 
-<a class="example-link" title="Inapplicable Example 3" href="/content-assets/wcag-act-rules/testcases/2ee8b8/f02ba15667ff1b80a269e5ce66f152e93396c029.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/2ee8b8/f02ba15667ff1b80a269e5ce66f152e93396c029.html">Open in a new tab</a>
 
 This `div` element does not have a widget role, so the [visible][] text does not need to match the [accessible name][].
 
@@ -231,7 +231,7 @@ This `div` element does not have a widget role, so the [visible][] text does not
 
 #### Inapplicable Example 4
 
-<a class="example-link" title="Inapplicable Example 4" href="/content-assets/wcag-act-rules/testcases/2ee8b8/8c26a3506e424766019341f3b86d2f758ca1aced.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/2ee8b8/8c26a3506e424766019341f3b86d2f758ca1aced.html">Open in a new tab</a>
 
 This link has no [visible text content][].
 

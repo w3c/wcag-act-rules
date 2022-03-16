@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> d0f69e</p>
-  <p><strong>Date:</strong> Updated 15 March 2022</p>
+  <p><strong>Date:</strong> Updated 16 March 2022</p>
   <p><strong>Authors:</strong> <a href="https://github.com/audreymaniez">Audrey Maniez</a>, <a href="https://github.com/jkodu">Jey Nandakumar</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -19,7 +19,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that each table header has assigned cells in a table element.
-  last_modified: 15 March 2022
+  last_modified: 16 March 2022
   scs_tested:
     - handle: Info and Relationships
       num: 1.3.1
@@ -89,7 +89,7 @@ The following aspects are required in using this rule.
 
 #### Passed Example 1
 
-<a class="example-link" title="Passed Example 1" href="/content-assets/wcag-act-rules/testcases/d0f69e/4d021e317ad660d19925651ead361fcaf474dc76.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/d0f69e/4d021e317ad660d19925651ead361fcaf474dc76.html">Open in a new tab</a>
 
 This `th` element has an assigned `td` element.
 
@@ -106,7 +106,7 @@ This `th` element has an assigned `td` element.
 
 #### Passed Example 2
 
-<a class="example-link" title="Passed Example 2" href="/content-assets/wcag-act-rules/testcases/d0f69e/b04d95d8e4e0fb2ade127363a6906792698cdea7.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/d0f69e/b04d95d8e4e0fb2ade127363a6906792698cdea7.html">Open in a new tab</a>
 
 Each of the 2 `span` elements with role of `columnheader` has assigned `span` elements with a role of `cell`.
 
@@ -133,7 +133,7 @@ Each of the 2 `span` elements with role of `columnheader` has assigned `span` el
 
 #### Passed Example 3
 
-<a class="example-link" title="Passed Example 3" href="/content-assets/wcag-act-rules/testcases/d0f69e/9fbe21d1ffdb176ef89afc95cc3f4f666353ee25.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/d0f69e/9fbe21d1ffdb176ef89afc95cc3f4f666353ee25.html">Open in a new tab</a>
 
 Each of the 2 `th` elements has an assigned `td` element because this `td` element spans 2 columns.
 
@@ -155,7 +155,7 @@ Each of the 2 `th` elements has an assigned `td` element because this `td` eleme
 
 #### Passed Example 4
 
-<a class="example-link" title="Passed Example 4" href="/content-assets/wcag-act-rules/testcases/d0f69e/0f66b15e6d2430e9afbdd6dc579023ece171b278.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/d0f69e/0f66b15e6d2430e9afbdd6dc579023ece171b278.html">Open in a new tab</a>
 
 Each of the 4 `th` elements has an assigned `td` element, within the same `table` element having a [semantic role][] of `grid`.
 
@@ -182,7 +182,7 @@ Each of the 4 `th` elements has an assigned `td` element, within the same `table
 
 #### Passed Example 5
 
-<a class="example-link" title="Passed Example 5" href="/content-assets/wcag-act-rules/testcases/d0f69e/28e0234356523086d570a5b8f959e8cc5ea6b4a6.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 5" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/d0f69e/28e0234356523086d570a5b8f959e8cc5ea6b4a6.html">Open in a new tab</a>
 
 Each of the 2 `th` elements has an assigned `td` element because the `headers` attribute assigns the `th` with `id` equal to "col2" to the `td` element.
 
@@ -203,7 +203,7 @@ Each of the 2 `th` elements has an assigned `td` element because the `headers` a
 
 #### Passed Example 6
 
-<a class="example-link" title="Passed Example 6" href="/content-assets/wcag-act-rules/testcases/d0f69e/47a80af86b4ea6357997fa76a62cd55dcb8f2fe7.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 6" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/d0f69e/47a80af86b4ea6357997fa76a62cd55dcb8f2fe7.html">Open in a new tab</a>
 
 Each of the 5 `th` elements in this table has assigned cells, whether data or header.
 
@@ -234,7 +234,7 @@ Each of the 5 `th` elements in this table has assigned cells, whether data or he
 
 #### Failed Example 1
 
-<a class="example-link" title="Failed Example 1" href="/content-assets/wcag-act-rules/testcases/d0f69e/664972feaac1097f9365d73aac844c81fa927fa2.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/d0f69e/664972feaac1097f9365d73aac844c81fa927fa2.html">Open in a new tab</a>
 
 The `th` element with text "Value" does not have an assigned cell within the same `table` element.
 
@@ -256,7 +256,7 @@ The `th` element with text "Value" does not have an assigned cell within the sam
 
 #### Failed Example 2
 
-<a class="example-link" title="Failed Example 2" href="/content-assets/wcag-act-rules/testcases/d0f69e/6bb6ca5dcdbd1fef063561f61de88740db24bd5d.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/d0f69e/6bb6ca5dcdbd1fef063561f61de88740db24bd5d.html">Open in a new tab</a>
 
 This `th` element with `id` equal to "col2" does not have an assigned cell within the same `table` element because the `headers` attribute removes the cell association from its column.
 
@@ -275,7 +275,7 @@ This `th` element with `id` equal to "col2" does not have an assigned cell withi
 
 #### Failed Example 3
 
-<a class="example-link" title="Failed Example 3" href="/content-assets/wcag-act-rules/testcases/d0f69e/1a0ee1b5549d2f1eebd337e85cae8487331ab723.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/d0f69e/1a0ee1b5549d2f1eebd337e85cae8487331ab723.html">Open in a new tab</a>
 
 This `div` with role of `columnheader` and text equal to "Occupant" does not have an assigned cell within the same `table` element.
 
@@ -298,7 +298,7 @@ This `div` with role of `columnheader` and text equal to "Occupant" does not hav
 
 #### Inapplicable Example 1
 
-<a class="example-link" title="Inapplicable Example 1" href="/content-assets/wcag-act-rules/testcases/d0f69e/7ab8f027dde4ee91a2b45b52a61cff442ec676d8.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/d0f69e/7ab8f027dde4ee91a2b45b52a61cff442ec676d8.html">Open in a new tab</a>
 
 There are no elements with a [semantic role][] of `header` within the `table` element.
 
@@ -312,7 +312,7 @@ There are no elements with a [semantic role][] of `header` within the `table` el
 
 #### Inapplicable Example 2
 
-<a class="example-link" title="Inapplicable Example 2" href="/content-assets/wcag-act-rules/testcases/d0f69e/b52547570de8121323bf0cc9ead85422309fa260.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/d0f69e/b52547570de8121323bf0cc9ead85422309fa260.html">Open in a new tab</a>
 
 There are no elements with a [semantic role][] of `header` within the `table` element.
 
@@ -322,7 +322,7 @@ There are no elements with a [semantic role][] of `header` within the `table` el
 
 #### Inapplicable Example 3
 
-<a class="example-link" title="Inapplicable Example 3" href="/content-assets/wcag-act-rules/testcases/d0f69e/c03135d1a5242415c66ff2ae561683eaf63e48d0.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/d0f69e/c03135d1a5242415c66ff2ae561683eaf63e48d0.html">Open in a new tab</a>
 
 This `th` element has an [explicit role][] of `cell` and there are no more elements with a [semantic role][] of `header` within the `table` element.
 
@@ -339,7 +339,7 @@ This `th` element has an [explicit role][] of `cell` and there are no more eleme
 
 #### Inapplicable Example 4
 
-<a class="example-link" title="Inapplicable Example 4" href="/content-assets/wcag-act-rules/testcases/d0f69e/0c9e4e7e3f2b739bb6dbd1f0b54bc691e6e3f1df.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/d0f69e/0c9e4e7e3f2b739bb6dbd1f0b54bc691e6e3f1df.html">Open in a new tab</a>
 
 This `th` element is neither [visible][] nor [included in the accessibility tree][] and there are no more elements with a [semantic role][] of `header` within the `table` element.
 
@@ -356,7 +356,7 @@ This `th` element is neither [visible][] nor [included in the accessibility tree
 
 #### Inapplicable Example 5
 
-<a class="example-link" title="Inapplicable Example 5" href="/content-assets/wcag-act-rules/testcases/d0f69e/86e5df7afd4815371b086d53db45901640bb4b53.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 5" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/d0f69e/86e5df7afd4815371b086d53db45901640bb4b53.html">Open in a new tab</a>
 
 This `th` element is not [included in the accessibility tree][] and there are no more elements with a [semantic role][] of `header` within the `table` element.
 
@@ -373,7 +373,7 @@ This `th` element is not [included in the accessibility tree][] and there are no
 
 #### Inapplicable Example 6
 
-<a class="example-link" title="Inapplicable Example 6" href="/content-assets/wcag-act-rules/testcases/d0f69e/8177b424b0a57eecc5f80cc6a30d1073493e16b3.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 6" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/d0f69e/8177b424b0a57eecc5f80cc6a30d1073493e16b3.html">Open in a new tab</a>
 
 This `th` element is not a descendant in the [flat tree][] of a [semantic][semantic role] `table` or `grid`.
 
@@ -387,7 +387,7 @@ This `th` element is not a descendant in the [flat tree][] of a [semantic][seman
 
 #### Inapplicable Example 7
 
-<a class="example-link" title="Inapplicable Example 7" href="/content-assets/wcag-act-rules/testcases/d0f69e/0c53e1a110f5191e74bd97da2c92c79c40d76eb2.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 7" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/d0f69e/0c53e1a110f5191e74bd97da2c92c79c40d76eb2.html">Open in a new tab</a>
 
 This `th` element is part of a table which is not [included in the accessibility tree][].
 

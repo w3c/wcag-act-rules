@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 6cfa84</p>
-  <p><strong>Date:</strong> Updated 15 March 2022</p>
+  <p><strong>Date:</strong> Updated 16 March 2022</p>
   <p><strong>Authors:</strong> <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -19,7 +19,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that elements with an `aria-hidden` attribute do not contain focusable elements.
-  last_modified: 15 March 2022
+  last_modified: 16 March 2022
   scs_tested:
     - handle: Name, Role, Value
       num: 4.1.2
@@ -107,7 +107,7 @@ The following aspects are required in using this rule.
 
 #### Passed Example 1
 
-<a class="example-link" title="Passed Example 1" href="/content-assets/wcag-act-rules/testcases/6cfa84/5bd22090d0f74dcea752749ef4ad8411e3772535.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/5bd22090d0f74dcea752749ef4ad8411e3772535.html">Open in a new tab</a>
 
 This `p` element is not [focusable][].
 
@@ -117,7 +117,7 @@ This `p` element is not [focusable][].
 
 #### Passed Example 2
 
-<a class="example-link" title="Passed Example 2" href="/content-assets/wcag-act-rules/testcases/6cfa84/9f9f5e323450f4c0bd5445597a39d160ce07ff48.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/9f9f5e323450f4c0bd5445597a39d160ce07ff48.html">Open in a new tab</a>
 
 This `a` element is not [focusable][] because it is hidden through CSS.
 
@@ -129,7 +129,7 @@ This `a` element is not [focusable][] because it is hidden through CSS.
 
 #### Passed Example 3
 
-<a class="example-link" title="Passed Example 3" href="/content-assets/wcag-act-rules/testcases/6cfa84/3c48f0e596f96b4bb701943356b6c179f41d383c.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/3c48f0e596f96b4bb701943356b6c179f41d383c.html">Open in a new tab</a>
 
 This `input` element is not [focusable][] because of the `disabled` attribute.
 
@@ -139,7 +139,7 @@ This `input` element is not [focusable][] because of the `disabled` attribute.
 
 #### Passed Example 4
 
-<a class="example-link" title="Passed Example 4" href="/content-assets/wcag-act-rules/testcases/6cfa84/8f7b47436534d716bf8f088786e5ee6b1154c23c.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/8f7b47436534d716bf8f088786e5ee6b1154c23c.html">Open in a new tab</a>
 
 This `a` element is not [focusable][] because it moves focus to the `input` element whenever it receives focus.
 
@@ -154,7 +154,7 @@ This `a` element is not [focusable][] because it moves focus to the `input` elem
 
 #### Failed Example 1
 
-<a class="example-link" title="Failed Example 1" href="/content-assets/wcag-act-rules/testcases/6cfa84/4e7955d592cbf361a55113fcd4524e979b16bb08.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/4e7955d592cbf361a55113fcd4524e979b16bb08.html">Open in a new tab</a>
 
 This `a` element positioned off screen is [focusable][] using the keyboard.
 
@@ -166,7 +166,7 @@ This `a` element positioned off screen is [focusable][] using the keyboard.
 
 #### Failed Example 2
 
-<a class="example-link" title="Failed Example 2" href="/content-assets/wcag-act-rules/testcases/6cfa84/2adaacc2f7b8d7a0d2d1496ad6f56aafd171f7fe.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/2adaacc2f7b8d7a0d2d1496ad6f56aafd171f7fe.html">Open in a new tab</a>
 
 This `input` element is [focusable][] because it was incorrectly disabled.
 
@@ -178,7 +178,7 @@ This `input` element is [focusable][] because it was incorrectly disabled.
 
 #### Failed Example 3
 
-<a class="example-link" title="Failed Example 3" href="/content-assets/wcag-act-rules/testcases/6cfa84/7d1d269e9ff9a8f396b2d638103379b6cf937225.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/7d1d269e9ff9a8f396b2d638103379b6cf937225.html">Open in a new tab</a>
 
 This `button` element is [focusable][] and a descendant of an element with an `aria-hidden` [attribute value][] of `true` because `aria-hidden` can't be reset once set to true on an ancestor.
 
@@ -192,7 +192,7 @@ This `button` element is [focusable][] and a descendant of an element with an `a
 
 #### Failed Example 4
 
-<a class="example-link" title="Failed Example 4" href="/content-assets/wcag-act-rules/testcases/6cfa84/d0b1b435bb2757bab5f644e53a273a9f50c8bc2c.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/d0b1b435bb2757bab5f644e53a273a9f50c8bc2c.html">Open in a new tab</a>
 
 This `p` element is [focusable][] because of the `tabindex` attribute.
 
@@ -202,7 +202,7 @@ This `p` element is [focusable][] because of the `tabindex` attribute.
 
 #### Failed Example 5
 
-<a class="example-link" title="Failed Example 5" href="/content-assets/wcag-act-rules/testcases/6cfa84/85a2d2ea8aeb1eddb5a6576edb958c2d1597ddfc.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 5" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/85a2d2ea8aeb1eddb5a6576edb958c2d1597ddfc.html">Open in a new tab</a>
 
 This `button` element is [focusable][] because of the `tabindex` attribute.
 
@@ -214,7 +214,7 @@ This `button` element is [focusable][] because of the `tabindex` attribute.
 
 #### Failed Example 6
 
-<a class="example-link" title="Failed Example 6" href="/content-assets/wcag-act-rules/testcases/6cfa84/9cc94f9f9549ef0c9fc0433e22e4fe59843d1b2a.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 6" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/9cc94f9f9549ef0c9fc0433e22e4fe59843d1b2a.html">Open in a new tab</a>
 
 This `summary` element is [focusable][].
 
@@ -229,7 +229,7 @@ This `summary` element is [focusable][].
 
 #### Inapplicable Example 1
 
-<a class="example-link" title="Inapplicable Example 1" href="/content-assets/wcag-act-rules/testcases/6cfa84/afb819d4c7cfdf8fc468bb2297da3247fb5ac056.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/afb819d4c7cfdf8fc468bb2297da3247fb5ac056.html">Open in a new tab</a>
 
 This `aria-hidden` attribute is ignored with null value.
 
@@ -239,7 +239,7 @@ This `aria-hidden` attribute is ignored with null value.
 
 #### Inapplicable Example 2
 
-<a class="example-link" title="Inapplicable Example 2" href="/content-assets/wcag-act-rules/testcases/6cfa84/22d7a78f0d6680f70dae9cc412f496450a2acf4e.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/22d7a78f0d6680f70dae9cc412f496450a2acf4e.html">Open in a new tab</a>
 
 This `aria-hidden` attribute is ignored with value `false`.
 
@@ -249,7 +249,7 @@ This `aria-hidden` attribute is ignored with value `false`.
 
 #### Inapplicable Example 3
 
-<a class="example-link" title="Inapplicable Example 3" href="/content-assets/wcag-act-rules/testcases/6cfa84/4d71a1ad253efab083f05dc558656d94eb430ca7.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/4d71a1ad253efab083f05dc558656d94eb430ca7.html">Open in a new tab</a>
 
 This `aria-hidden` attribute has an incorrect value.
 

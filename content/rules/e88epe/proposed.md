@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> e88epe</p>
-  <p><strong>Date:</strong> Updated 15 March 2022</p>
+  <p><strong>Date:</strong> Updated 16 March 2022</p>
   <p><strong>Authors:</strong> <a href="https://www.linkedin.com/in/brianbors/">Brian Bors</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
   
@@ -21,7 +21,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that visible `img`, `svg` and `canvas` elements that are ignored by assistive technologies are decorative.
-  last_modified: 15 March 2022
+  last_modified: 16 March 2022
   scs_tested:
     - handle: Non-text Content
       num: 1.1.1
@@ -97,7 +97,7 @@ The following aspects are required in using this rule.
 
 #### Passed Example 1
 
-<a class="example-link" title="Passed Example 1" href="/content-assets/wcag-act-rules/testcases/e88epe/9554e68de401c2912fd4895b6c062cd5ec2734b2.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/e88epe/9554e68de401c2912fd4895b6c062cd5ec2734b2.html">Open in a new tab</a>
 
 This `img` element with an empty `alt` attribute which is not [included in the accessibility tree][] is [purely decorative][].
 
@@ -108,7 +108,7 @@ This `img` element with an empty `alt` attribute which is not [included in the a
 
 #### Passed Example 2
 
-<a class="example-link" title="Passed Example 2" href="/content-assets/wcag-act-rules/testcases/e88epe/2a5ee04e97e798e6e08c3afb92f3b44d49ac13fa.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/e88epe/2a5ee04e97e798e6e08c3afb92f3b44d49ac13fa.html">Open in a new tab</a>
 
 This `img` element that is ignored by assistive technologies because `aria-hidden` is set to `true` is [purely decorative][].
 
@@ -119,7 +119,7 @@ This `img` element that is ignored by assistive technologies because `aria-hidde
 
 #### Passed Example 3
 
-<a class="example-link" title="Passed Example 3" href="/content-assets/wcag-act-rules/testcases/e88epe/57982b4d5dad90f3f2c06d5e0233694c46842bd0.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/e88epe/57982b4d5dad90f3f2c06d5e0233694c46842bd0.html">Open in a new tab</a>
 
 This `img` element that is ignored by assistive technologies because it has an [explicit semantic role][] of `none` is [purely decorative][].
 
@@ -130,7 +130,7 @@ This `img` element that is ignored by assistive technologies because it has an [
 
 #### Passed Example 4
 
-<a class="example-link" title="Passed Example 4" href="/content-assets/wcag-act-rules/testcases/e88epe/736b18e695a44e19b8acc1a858262b4b9309c2fc.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/e88epe/736b18e695a44e19b8acc1a858262b4b9309c2fc.html">Open in a new tab</a>
 
 This `svg` element that is ignored by assistive technologies because it has no attribute that would give it an [accessible name][] is [purely decorative][].
 
@@ -143,7 +143,7 @@ This `svg` element that is ignored by assistive technologies because it has no a
 
 #### Passed Example 5
 
-<a class="example-link" title="Passed Example 5" href="/content-assets/wcag-act-rules/testcases/e88epe/59911c86fd770ba2c98dc1c669f9003c2c7e71ac.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 5" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/e88epe/59911c86fd770ba2c98dc1c669f9003c2c7e71ac.html">Open in a new tab</a>
 
 This `canvas` element that is ignored by assistive technologies because it has no attribute that would give it an [accessible name][] is [purely decorative][].
 
@@ -167,7 +167,7 @@ This `canvas` element that is ignored by assistive technologies because it has n
 
 #### Failed Example 1
 
-<a class="example-link" title="Failed Example 1" href="/content-assets/wcag-act-rules/testcases/e88epe/e5b8fa7ab66409e7b52b335a8b6aebe11fd78635.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/e88epe/e5b8fa7ab66409e7b52b335a8b6aebe11fd78635.html">Open in a new tab</a>
 
 This `img` element with an empty (`""`) `alt` is not [purely decorative][].
 
@@ -177,7 +177,7 @@ This `img` element with an empty (`""`) `alt` is not [purely decorative][].
 
 #### Failed Example 2
 
-<a class="example-link" title="Failed Example 2" href="/content-assets/wcag-act-rules/testcases/e88epe/5d0c52f3b06b60f712efaa08eb6947f18494c241.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/e88epe/5d0c52f3b06b60f712efaa08eb6947f18494c241.html">Open in a new tab</a>
 
 This `img` element which is not [included in the accessibility tree][] because `aria-hidden` is set to `true` is not [purely decorative][].
 
@@ -187,7 +187,7 @@ This `img` element which is not [included in the accessibility tree][] because `
 
 #### Failed Example 3
 
-<a class="example-link" title="Failed Example 3" href="/content-assets/wcag-act-rules/testcases/e88epe/9ff50232e74195770418bcfb23c1508dfcef639a.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/e88epe/9ff50232e74195770418bcfb23c1508dfcef639a.html">Open in a new tab</a>
 
 This `img` element which is not [included in the accessibility tree][] because it has an [explicit semantic role][] of `none` is not [purely decorative][].
 
@@ -197,7 +197,7 @@ This `img` element which is not [included in the accessibility tree][] because i
 
 #### Failed Example 4
 
-<a class="example-link" title="Failed Example 4" href="/content-assets/wcag-act-rules/testcases/e88epe/0d0061ffdf406f0d9b21aaa00f5d557e4137e0b2.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/e88epe/0d0061ffdf406f0d9b21aaa00f5d557e4137e0b2.html">Open in a new tab</a>
 
 This `svg` element which has a [semantic role][] of `graphics-document` and an empty (`""`) [accessible name][] is not [purely decorative][].
 
@@ -219,7 +219,7 @@ This `svg` element which has a [semantic role][] of `graphics-document` and an e
 
 #### Failed Example 5
 
-<a class="example-link" title="Failed Example 5" href="/content-assets/wcag-act-rules/testcases/e88epe/6d108d00cc7a54f66547f02d7e7606342b11f801.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 5" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/e88epe/6d108d00cc7a54f66547f02d7e7606342b11f801.html">Open in a new tab</a>
 
 This `canvas` element which has no [semantic role][] and an empty (`""`) [accessible name][] is not [purely decorative][].
 
@@ -236,7 +236,7 @@ This `canvas` element which has no [semantic role][] and an empty (`""`) [access
 
 #### Inapplicable Example 1
 
-<a class="example-link" title="Inapplicable Example 1" href="/content-assets/wcag-act-rules/testcases/e88epe/92935fbf073935292967951af70c2e699357fac2.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/e88epe/92935fbf073935292967951af70c2e699357fac2.html">Open in a new tab</a>
 
 This `img` element is [included in the accessibility tree][] because the `alt` attribute is not empty (`""`).
 
@@ -246,7 +246,7 @@ This `img` element is [included in the accessibility tree][] because the `alt` a
 
 #### Inapplicable Example 2
 
-<a class="example-link" title="Inapplicable Example 2" href="/content-assets/wcag-act-rules/testcases/e88epe/f9c84eeeb2ab4f07802f2739786dfda1d8f974a0.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/e88epe/f9c84eeeb2ab4f07802f2739786dfda1d8f974a0.html">Open in a new tab</a>
 
 This `img` element is neither [visible][] nor [included in the accessibility tree][].
 
@@ -256,7 +256,7 @@ This `img` element is neither [visible][] nor [included in the accessibility tre
 
 #### Inapplicable Example 3
 
-<a class="example-link" title="Inapplicable Example 3" href="/content-assets/wcag-act-rules/testcases/e88epe/410778b7d0c30044bfafed29789220f4b7ca98f1.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/e88epe/410778b7d0c30044bfafed29789220f4b7ca98f1.html">Open in a new tab</a>
 
 This `img` element is not [visible][] because it is positioned off screen.
 
@@ -272,7 +272,7 @@ This `img` element is not [visible][] because it is positioned off screen.
 
 #### Inapplicable Example 4
 
-<a class="example-link" title="Inapplicable Example 4" href="/content-assets/wcag-act-rules/testcases/e88epe/921e2bffbdced6b00801da02f7dc674b9ee6203c.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/e88epe/921e2bffbdced6b00801da02f7dc674b9ee6203c.html">Open in a new tab</a>
 
 This `svg` element is ignored because it is a child of a link that provides its [accessible name][].
 
@@ -286,7 +286,7 @@ This `svg` element is ignored because it is a child of a link that provides its 
 
 #### Inapplicable Example 5
 
-<a class="example-link" title="Inapplicable Example 5" href="/content-assets/wcag-act-rules/testcases/e88epe/41452bcdbcb440d3f741c74fcc885a93c68d63ce.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 5" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/e88epe/41452bcdbcb440d3f741c74fcc885a93c68d63ce.html">Open in a new tab</a>
 
 This `svg` element has a [semantic role][] of `img` and an [accessible name][] from its `aria-label` attribute.
 
@@ -307,7 +307,7 @@ This `svg` element has a [semantic role][] of `img` and an [accessible name][] f
 
 #### Inapplicable Example 6
 
-<a class="example-link" title="Inapplicable Example 6" href="/content-assets/wcag-act-rules/testcases/e88epe/918a4aecd343530c1d3d2160b4015a74a5ad55f7.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 6" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/e88epe/918a4aecd343530c1d3d2160b4015a74a5ad55f7.html">Open in a new tab</a>
 
 This `canvas` element is not [visible][] because it is completely transparent.
 
@@ -317,7 +317,7 @@ This `canvas` element is not [visible][] because it is completely transparent.
 
 #### Inapplicable Example 7
 
-<a class="example-link" title="Inapplicable Example 7" href="/content-assets/wcag-act-rules/testcases/e88epe/5b2b8357b761ba5ad2753c322f3120442b0b8ab8.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 7" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/e88epe/5b2b8357b761ba5ad2753c322f3120442b0b8ab8.html">Open in a new tab</a>
 
 This `canvas` element has a [semantic role][] of `img` and an [accessible name][] from its `aria-label` attribute.
 
@@ -332,7 +332,7 @@ This `canvas` element has a [semantic role][] of `img` and an [accessible name][
 
 #### Inapplicable Example 8
 
-<a class="example-link" title="Inapplicable Example 8" href="/content-assets/wcag-act-rules/testcases/e88epe/5e61a02512d3de1b3b0c3f32b4f6c30634108e29.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 8" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/e88epe/5e61a02512d3de1b3b0c3f32b4f6c30634108e29.html">Open in a new tab</a>
 
 This `img` element is [visible][] but [included in the accessibility tree][].
 
@@ -344,7 +344,7 @@ This `img` element is [visible][] but [included in the accessibility tree][].
 
 #### Inapplicable Example 9
 
-<a class="example-link" title="Inapplicable Example 9" href="/content-assets/wcag-act-rules/testcases/e88epe/a09270ba161c0259b258844551e94c40cdd6b52e.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 9" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/e88epe/a09270ba161c0259b258844551e94c40cdd6b52e.html">Open in a new tab</a>
 
 This is a `div` element with a background image. Background images must be tested separate from this rule.
 
@@ -361,7 +361,7 @@ This is a `div` element with a background image. Background images must be teste
 
 #### Inapplicable Example 10
 
-<a class="example-link" title="Inapplicable Example 10" href="/content-assets/wcag-act-rules/testcases/e88epe/8ff1c1f8ce6c58b66365fd70f6828a89527874e3.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 10" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/e88epe/8ff1c1f8ce6c58b66365fd70f6828a89527874e3.html">Open in a new tab</a>
 
 This `img` element has an `src` attribute which will cause the [image request state][] to be [Broken](https://html.spec.whatwg.org/#img-error).
 

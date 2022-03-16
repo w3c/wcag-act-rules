@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> a1b64e</p>
-  <p><strong>Date:</strong> Updated 15 March 2022</p>
+  <p><strong>Date:</strong> Updated 16 March 2022</p>
   <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/carlosapaduarte">Carlos Duarte</a>, <a href="https://github.com/DagfinnRomen">Dagfinn Rømen</a>, <a href="https://github.com/geirsf">Geir Sindre Fossøy</a>, <a href="https: //github.com/MaliinO">Malin Øvrebø</a>, <a href="https://github.com/nitedog">Shadi Abou-Zahra</a>, <a href="https://github.com/skotkjerra">Stein Erik Skotkjerra</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -19,7 +19,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks if it is possible to use standard keyboard navigation to navigate through all content on a web page without becoming trapped in any element.
-  last_modified: 15 March 2022
+  last_modified: 16 March 2022
 ---
 
 ## Applicability
@@ -68,7 +68,7 @@ The following aspects are required in using this rule.
 
 #### Passed Example 1
 
-<a class="example-link" title="Passed Example 1" href="/content-assets/wcag-act-rules/testcases/a1b64e/96eb4b26010e8c598cb659108dbc34ca0abd82f9.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/a1b64e/96eb4b26010e8c598cb659108dbc34ca0abd82f9.html">Open in a new tab</a>
 
 No trap for keyboard navigation.
 
@@ -78,7 +78,7 @@ No trap for keyboard navigation.
 
 #### Passed Example 2
 
-<a class="example-link" title="Passed Example 2" href="/content-assets/wcag-act-rules/testcases/a1b64e/fb76f71a94bf95f5cfef22f3db6655e7b0a57b0c.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/a1b64e/fb76f71a94bf95f5cfef22f3db6655e7b0a57b0c.html">Open in a new tab</a>
 
 Using `tabindex="1"`.
 
@@ -88,7 +88,7 @@ Using `tabindex="1"`.
 
 #### Passed Example 3
 
-<a class="example-link" title="Passed Example 3" href="/content-assets/wcag-act-rules/testcases/a1b64e/4b93a866e14ad4c9ed8efa13c080a1e05350fa2f.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/a1b64e/4b93a866e14ad4c9ed8efa13c080a1e05350fa2f.html">Open in a new tab</a>
 
 Using `tabindex="-1"`.
 
@@ -100,7 +100,7 @@ Using `tabindex="-1"`.
 
 #### Failed Example 1
 
-<a class="example-link" title="Failed Example 1" href="/content-assets/wcag-act-rules/testcases/a1b64e/780388a837915960bca7651bd80743fb2cafdbcb.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/a1b64e/780388a837915960bca7651bd80743fb2cafdbcb.html">Open in a new tab</a>
 
 Keyboard trap one element.
 
@@ -113,7 +113,7 @@ Keyboard trap one element.
 
 #### Failed Example 2
 
-<a class="example-link" title="Failed Example 2" href="/content-assets/wcag-act-rules/testcases/a1b64e/d2f5325f3fd5ddde38cd677a5ca36ba0d762fb84.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/a1b64e/d2f5325f3fd5ddde38cd677a5ca36ba0d762fb84.html">Open in a new tab</a>
 
 Keyboard trap group.
 
@@ -131,7 +131,7 @@ Keyboard trap group.
 
 #### Failed Example 3
 
-<a class="example-link" title="Failed Example 3" href="/content-assets/wcag-act-rules/testcases/a1b64e/0ec0e93e7f8ffca39e1eb58a4a8503f1bd4cb145.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/a1b64e/0ec0e93e7f8ffca39e1eb58a4a8503f1bd4cb145.html">Open in a new tab</a>
 
 A [focusable][] element between keyboard traps.
 
@@ -145,7 +145,7 @@ A [focusable][] element between keyboard traps.
 
 #### Inapplicable Example 1
 
-<a class="example-link" title="Inapplicable Example 1" href="/content-assets/wcag-act-rules/testcases/a1b64e/16dddd8ac5c419caba2c709b1b1f49cc5759e63c.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/a1b64e/16dddd8ac5c419caba2c709b1b1f49cc5759e63c.html">Open in a new tab</a>
 
 No [focusable][] element.
 
@@ -155,7 +155,7 @@ No [focusable][] element.
 
 #### Inapplicable Example 2
 
-<a class="example-link" title="Inapplicable Example 2" href="/content-assets/wcag-act-rules/testcases/a1b64e/6e3dcc2f3612826dd3d8589c4e2951ad7a3e4dd7.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/a1b64e/6e3dcc2f3612826dd3d8589c4e2951ad7a3e4dd7.html">Open in a new tab</a>
 
 Disabled element.
 
@@ -165,7 +165,7 @@ Disabled element.
 
 #### Inapplicable Example 3
 
-<a class="example-link" title="Inapplicable Example 3" href="/content-assets/wcag-act-rules/testcases/a1b64e/9d47dcc67abbcb177876ce082ae073947cc7135d.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/a1b64e/9d47dcc67abbcb177876ce082ae073947cc7135d.html">Open in a new tab</a>
 
 Hidden element using `display:none`.
 
@@ -175,7 +175,7 @@ Hidden element using `display:none`.
 
 #### Inapplicable Example 4
 
-<a class="example-link" title="Inapplicable Example 4" href="/content-assets/wcag-act-rules/testcases/a1b64e/30ffb2991af4d1727223409c9f1235e44acc1c13.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/a1b64e/30ffb2991af4d1727223409c9f1235e44acc1c13.html">Open in a new tab</a>
 
 Hidden element using `visibility:hidden`.
 

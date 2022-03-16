@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> qt1vmo</p>
-  <p><strong>Date:</strong> Updated 15 March 2022</p>
+  <p><strong>Date:</strong> Updated 16 March 2022</p>
   <p><strong>Authors:</strong> <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
   
@@ -21,7 +21,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that the accessible names of images serve an equivalent purpose to the image.
-  last_modified: 15 March 2022
+  last_modified: 16 March 2022
   scs_tested:
     - handle: Non-text Content
       num: 1.1.1
@@ -112,7 +112,7 @@ The following aspects are required in using this rule.
 
 #### Passed Example 1
 
-<a class="example-link" title="Passed Example 1" href="/content-assets/wcag-act-rules/testcases/qt1vmo/2616e8486562f08449b710b8a5dc9846474af000.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/qt1vmo/2616e8486562f08449b710b8a5dc9846474af000.html">Open in a new tab</a>
 
 This `img` element has an `alt` attribute that describes the image.
 
@@ -124,7 +124,7 @@ This `img` element has an `alt` attribute that describes the image.
 
 #### Passed Example 2
 
-<a class="example-link" title="Passed Example 2" href="/content-assets/wcag-act-rules/testcases/qt1vmo/75ab2815efda6d9422fcf1edc5876fcb5e398a84.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/qt1vmo/75ab2815efda6d9422fcf1edc5876fcb5e398a84.html">Open in a new tab</a>
 
 This `svg` element has an `aria-label` attribute that describes the image.
 
@@ -147,7 +147,7 @@ This `svg` element has an `aria-label` attribute that describes the image.
 
 #### Passed Example 3
 
-<a class="example-link" title="Passed Example 3" href="/content-assets/wcag-act-rules/testcases/qt1vmo/8c9dd43d42486d92c991a1fdc9543bbcf2c8efce.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/qt1vmo/8c9dd43d42486d92c991a1fdc9543bbcf2c8efce.html">Open in a new tab</a>
 
 This `canvas` element has an `aria-label` attribute that describes the image.
 
@@ -166,7 +166,7 @@ This `canvas` element has an `aria-label` attribute that describes the image.
 
 #### Failed Example 1
 
-<a class="example-link" title="Failed Example 1" href="/content-assets/wcag-act-rules/testcases/qt1vmo/f3fa0aa13747875284429e759c8e94ac6b3fac8f.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/qt1vmo/f3fa0aa13747875284429e759c8e94ac6b3fac8f.html">Open in a new tab</a>
 
 This `img` element has an `alt` attribute that incorrectly describes the image.
 
@@ -178,7 +178,7 @@ This `img` element has an `alt` attribute that incorrectly describes the image.
 
 #### Failed Example 2
 
-<a class="example-link" title="Failed Example 2" href="/content-assets/wcag-act-rules/testcases/qt1vmo/5cdb41b3b9be43fd015bf4692ea295f87cb7e02f.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/qt1vmo/5cdb41b3b9be43fd015bf4692ea295f87cb7e02f.html">Open in a new tab</a>
 
 This `svg` element has an `aria-label` attribute that incorrectly describes the image.
 
@@ -201,7 +201,7 @@ This `svg` element has an `aria-label` attribute that incorrectly describes the 
 
 #### Failed Example 3
 
-<a class="example-link" title="Failed Example 3" href="/content-assets/wcag-act-rules/testcases/qt1vmo/12138756433c374a529170bea2977cf40cc94d84.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/qt1vmo/12138756433c374a529170bea2977cf40cc94d84.html">Open in a new tab</a>
 
 This `canvas` element has an `aria-label` attribute that incorrectly describes the image.
 
@@ -220,7 +220,7 @@ This `canvas` element has an `aria-label` attribute that incorrectly describes t
 
 #### Inapplicable Example 1
 
-<a class="example-link" title="Inapplicable Example 1" href="/content-assets/wcag-act-rules/testcases/qt1vmo/0ab8d652533229aae98191a6a43c2168e1959963.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/qt1vmo/0ab8d652533229aae98191a6a43c2168e1959963.html">Open in a new tab</a>
 
 This `img` element has an empty (`""`) [accessible name][]. The image is described by the adjacent text.
 
@@ -230,7 +230,7 @@ This `img` element has an empty (`""`) [accessible name][]. The image is describ
 
 #### Inapplicable Example 2
 
-<a class="example-link" title="Inapplicable Example 2" href="/content-assets/wcag-act-rules/testcases/qt1vmo/7a8fd7193ad82df20b77eafe87c3ad4416d9a395.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/qt1vmo/7a8fd7193ad82df20b77eafe87c3ad4416d9a395.html">Open in a new tab</a>
 
 This decorative `img` element has an empty (`""`) [accessible name][] because it has no attributes or content to provide an accessible name.
 
@@ -242,7 +242,7 @@ This decorative `img` element has an empty (`""`) [accessible name][] because it
 
 #### Inapplicable Example 3
 
-<a class="example-link" title="Inapplicable Example 3" href="/content-assets/wcag-act-rules/testcases/qt1vmo/4629221e66963f356b68f6e17dacea9a937fe7d3.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/qt1vmo/4629221e66963f356b68f6e17dacea9a937fe7d3.html">Open in a new tab</a>
 
 This `svg` element has an empty (`""`) [accessible name][] because it has no attributes or content to provide an accessible name.
 
@@ -257,7 +257,7 @@ This `svg` element has an empty (`""`) [accessible name][] because it has no att
 
 #### Inapplicable Example 4
 
-<a class="example-link" title="Inapplicable Example 4" href="/content-assets/wcag-act-rules/testcases/qt1vmo/9f373a7eca6b3dc1089e76fa275cdb63c7a8d4b6.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/qt1vmo/9f373a7eca6b3dc1089e76fa275cdb63c7a8d4b6.html">Open in a new tab</a>
 
 This `canvas` element has an empty (`""`) [accessible name][] because it has no attributes or content to provide an accessible name.
 
@@ -281,7 +281,7 @@ This `canvas` element has an empty (`""`) [accessible name][] because it has no 
 
 #### Inapplicable Example 5
 
-<a class="example-link" title="Inapplicable Example 5" href="/content-assets/wcag-act-rules/testcases/qt1vmo/efd997470e600544174476e95116bdac100f368b.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 5" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/qt1vmo/efd997470e600544174476e95116bdac100f368b.html">Open in a new tab</a>
 
 This `img` element is not [visible][].
 
@@ -293,7 +293,7 @@ This `img` element is not [visible][].
 
 #### Inapplicable Example 6
 
-<a class="example-link" title="Inapplicable Example 6" href="/content-assets/wcag-act-rules/testcases/qt1vmo/e3fa823fa9ba97ac106cc8d13f2ba7e771cb9c75.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 6" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/qt1vmo/e3fa823fa9ba97ac106cc8d13f2ba7e771cb9c75.html">Open in a new tab</a>
 
 This `canvas` element is not [visible][] because it is completely transparent.
 
@@ -305,7 +305,7 @@ This `canvas` element is not [visible][] because it is completely transparent.
 
 #### Inapplicable Example 7
 
-<a class="example-link" title="Inapplicable Example 7" href="/content-assets/wcag-act-rules/testcases/qt1vmo/4d04a4946e1f06834c89b91f0a765367f9d0d492.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 7" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/qt1vmo/4d04a4946e1f06834c89b91f0a765367f9d0d492.html">Open in a new tab</a>
 
 This `img` element has no [accessible name][] because it is not [included in the accessibility tree][].
 
@@ -317,7 +317,7 @@ This `img` element has no [accessible name][] because it is not [included in the
 
 #### Inapplicable Example 8
 
-<a class="example-link" title="Inapplicable Example 8" href="/content-assets/wcag-act-rules/testcases/qt1vmo/d5ce8939312a4c283084d0a7fdc7dd4cf6b35d4f.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 8" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/qt1vmo/d5ce8939312a4c283084d0a7fdc7dd4cf6b35d4f.html">Open in a new tab</a>
 
 This `svg` element is ignored because it is a child of a link that provides its [accessible name][].
 
@@ -331,7 +331,7 @@ This `svg` element is ignored because it is a child of a link that provides its 
 
 #### Inapplicable Example 9
 
-<a class="example-link" title="Inapplicable Example 9" href="/content-assets/wcag-act-rules/testcases/qt1vmo/8ff1c1f8ce6c58b66365fd70f6828a89527874e3.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 9" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/qt1vmo/8ff1c1f8ce6c58b66365fd70f6828a89527874e3.html">Open in a new tab</a>
 
 This `img` element has a `src` attribute which will cause the [image request state][] to be [Broken](https://html.spec.whatwg.org/#img-error).
 
@@ -341,7 +341,7 @@ This `img` element has a `src` attribute which will cause the [image request sta
 
 #### Inapplicable Example 10
 
-<a class="example-link" title="Inapplicable Example 10" href="/content-assets/wcag-act-rules/testcases/qt1vmo/a09270ba161c0259b258844551e94c40cdd6b52e.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 10" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/qt1vmo/a09270ba161c0259b258844551e94c40cdd6b52e.html">Open in a new tab</a>
 
 This is a `div` element with a background image. Background images must be tested separate from this rule.
 

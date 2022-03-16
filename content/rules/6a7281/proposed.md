@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 6a7281</p>
-  <p><strong>Date:</strong> Updated 15 March 2022</p>
+  <p><strong>Date:</strong> Updated 16 March 2022</p>
   <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -19,7 +19,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that each ARIA state or property has a valid value type.
-  last_modified: 15 March 2022
+  last_modified: 16 March 2022
 ---
 
 ## Applicability
@@ -90,7 +90,7 @@ The following aspects are required in using this rule.
 
 #### Passed Example 1
 
-<a class="example-link" title="Passed Example 1" href="/content-assets/wcag-act-rules/testcases/6a7281/ccae7f6929c086a776097aacd0336594da296b6a.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/ccae7f6929c086a776097aacd0336594da296b6a.html">Open in a new tab</a>
 
 `aria-required` property with valid true/false value
 
@@ -100,7 +100,7 @@ The following aspects are required in using this rule.
 
 #### Passed Example 2
 
-<a class="example-link" title="Passed Example 2" href="/content-assets/wcag-act-rules/testcases/6a7281/766a5eb6a54c5b83a882a0d78731d808480a1b3e.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/766a5eb6a54c5b83a882a0d78731d808480a1b3e.html">Open in a new tab</a>
 
 `aria-expanded` state with valid true/false/undefined value
 
@@ -110,7 +110,7 @@ The following aspects are required in using this rule.
 
 #### Passed Example 3
 
-<a class="example-link" title="Passed Example 3" href="/content-assets/wcag-act-rules/testcases/6a7281/96266c86acb686975024d26d020899162944728e.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/96266c86acb686975024d26d020899162944728e.html">Open in a new tab</a>
 
 `aria-pressed` state with valid tristate value
 
@@ -120,7 +120,7 @@ The following aspects are required in using this rule.
 
 #### Passed Example 4
 
-<a class="example-link" title="Passed Example 4" href="/content-assets/wcag-act-rules/testcases/6a7281/e4b47e094d44a9f3b5b3fd5c157f3ef6679bede0.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/e4b47e094d44a9f3b5b3fd5c157f3ef6679bede0.html">Open in a new tab</a>
 
 `aria-errormessage` property with valid ID reference value
 
@@ -130,7 +130,7 @@ The following aspects are required in using this rule.
 
 #### Passed Example 5
 
-<a class="example-link" title="Passed Example 5" href="/content-assets/wcag-act-rules/testcases/6a7281/c27e7f509d546fa6aff12ca7aeace662d3fb1c7b.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 5" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/c27e7f509d546fa6aff12ca7aeace662d3fb1c7b.html">Open in a new tab</a>
 
 `aria-owns` property with valid ID reference list value
 
@@ -143,7 +143,7 @@ The following aspects are required in using this rule.
 
 #### Passed Example 6
 
-<a class="example-link" title="Passed Example 6" href="/content-assets/wcag-act-rules/testcases/6a7281/f78fb0548e68839232441636b6d8489ad17c50b5.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 6" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/f78fb0548e68839232441636b6d8489ad17c50b5.html">Open in a new tab</a>
 
 `aria-rowindex` property with valid integer value
 
@@ -153,7 +153,7 @@ The following aspects are required in using this rule.
 
 #### Passed Example 7
 
-<a class="example-link" title="Passed Example 7" href="/content-assets/wcag-act-rules/testcases/6a7281/83f5e9df90e96c1af508ad8b4e2cda78c0dae7c4.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 7" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/83f5e9df90e96c1af508ad8b4e2cda78c0dae7c4.html">Open in a new tab</a>
 
 `aria-valuemin`, `aria-valuemax` and `aria-valuenow` properties with valid number values
 
@@ -163,7 +163,7 @@ The following aspects are required in using this rule.
 
 #### Passed Example 8
 
-<a class="example-link" title="Passed Example 8" href="/content-assets/wcag-act-rules/testcases/6a7281/54ea983936f7cdd43ebabc52f1eb132a06600f9a.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 8" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/54ea983936f7cdd43ebabc52f1eb132a06600f9a.html">Open in a new tab</a>
 
 `aria-placeholder` property with valid string value
 
@@ -175,7 +175,7 @@ The following aspects are required in using this rule.
 
 #### Passed Example 9
 
-<a class="example-link" title="Passed Example 9" href="/content-assets/wcag-act-rules/testcases/6a7281/bb42f0c8876f592a3cc7accec1c4b0ac6a632cf3.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 9" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/bb42f0c8876f592a3cc7accec1c4b0ac6a632cf3.html">Open in a new tab</a>
 
 `aria-dropeffect` property with valid token list value
 
@@ -185,7 +185,7 @@ The following aspects are required in using this rule.
 
 #### Passed Example 10
 
-<a class="example-link" title="Passed Example 10" href="/content-assets/wcag-act-rules/testcases/6a7281/dacffd42fd4d7e05da9bed3974d600ea5bdc5bf0.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 10" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/dacffd42fd4d7e05da9bed3974d600ea5bdc5bf0.html">Open in a new tab</a>
 
 `aria-controls`, which is a required property for the role `scrollbar`, has `ID Reference list` that references at least one element existing in the same document tree.
 
@@ -205,7 +205,7 @@ The following aspects are required in using this rule.
 
 #### Failed Example 1
 
-<a class="example-link" title="Failed Example 1" href="/content-assets/wcag-act-rules/testcases/6a7281/ce27fcdd85fbf37a953727cdc454f3e504041a31.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/ce27fcdd85fbf37a953727cdc454f3e504041a31.html">Open in a new tab</a>
 
 `aria-required` property with invalid true/false value
 
@@ -215,7 +215,7 @@ The following aspects are required in using this rule.
 
 #### Failed Example 2
 
-<a class="example-link" title="Failed Example 2" href="/content-assets/wcag-act-rules/testcases/6a7281/f56c0ae73185b14d5b942e29b4567ff65518c940.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/f56c0ae73185b14d5b942e29b4567ff65518c940.html">Open in a new tab</a>
 
 `aria-expanded` state with invalid true/false/undefined value
 
@@ -225,7 +225,7 @@ The following aspects are required in using this rule.
 
 #### Failed Example 3
 
-<a class="example-link" title="Failed Example 3" href="/content-assets/wcag-act-rules/testcases/6a7281/0959137934bd17ea8c95b86120b1c7331e4facc2.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/0959137934bd17ea8c95b86120b1c7331e4facc2.html">Open in a new tab</a>
 
 `aria-pressed` state with invalid tristate value
 
@@ -235,7 +235,7 @@ The following aspects are required in using this rule.
 
 #### Failed Example 4
 
-<a class="example-link" title="Failed Example 4" href="/content-assets/wcag-act-rules/testcases/6a7281/056dbb3bef1e6cc857db894a6ce46445a419fd38.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/056dbb3bef1e6cc857db894a6ce46445a419fd38.html">Open in a new tab</a>
 
 `aria-errormessage` property with invalid ID reference value, since space is not allowed in a single ID
 
@@ -245,7 +245,7 @@ The following aspects are required in using this rule.
 
 #### Failed Example 5
 
-<a class="example-link" title="Failed Example 5" href="/content-assets/wcag-act-rules/testcases/6a7281/e1bd70b33e2d53e3b9bc105a5cad59a76b4c54d5.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 5" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/e1bd70b33e2d53e3b9bc105a5cad59a76b4c54d5.html">Open in a new tab</a>
 
 `aria-rowindex` property with invalid integer value
 
@@ -255,7 +255,7 @@ The following aspects are required in using this rule.
 
 #### Failed Example 6
 
-<a class="example-link" title="Failed Example 6" href="/content-assets/wcag-act-rules/testcases/6a7281/4078701ed7982e75316b51adb59b6d05c1583aa5.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 6" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/4078701ed7982e75316b51adb59b6d05c1583aa5.html">Open in a new tab</a>
 
 `aria-valuemin`, `aria-valuemax` and `aria-valuenow` property with invalid number values
 
@@ -265,7 +265,7 @@ The following aspects are required in using this rule.
 
 #### Failed Example 7
 
-<a class="example-link" title="Failed Example 7" href="/content-assets/wcag-act-rules/testcases/6a7281/da1afbf428a6b21dd698995bdd6b39a059e2a581.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 7" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/da1afbf428a6b21dd698995bdd6b39a059e2a581.html">Open in a new tab</a>
 
 `aria-live` property with invalid token value
 
@@ -275,7 +275,7 @@ The following aspects are required in using this rule.
 
 #### Failed Example 8
 
-<a class="example-link" title="Failed Example 8" href="/content-assets/wcag-act-rules/testcases/6a7281/bad4a344d82a15ba2396ceb7824dae56f894b85d.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 8" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/bad4a344d82a15ba2396ceb7824dae56f894b85d.html">Open in a new tab</a>
 
 Element with invalid token list value
 
@@ -285,7 +285,7 @@ Element with invalid token list value
 
 #### Failed Example 9
 
-<a class="example-link" title="Failed Example 9" href="/content-assets/wcag-act-rules/testcases/6a7281/b936e8a11737c2c8650d3afc28f7d58dcf8635e7.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 9" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/b936e8a11737c2c8650d3afc28f7d58dcf8635e7.html">Open in a new tab</a>
 
 `aria-expanded` state with invalid true/false/undefined value for custom element
 
@@ -295,7 +295,7 @@ Element with invalid token list value
 
 #### Failed Example 10
 
-<a class="example-link" title="Failed Example 10" href="/content-assets/wcag-act-rules/testcases/6a7281/b26c2d92cf2821d11db54f3f0e5d80d71df50bcb.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 10" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/b26c2d92cf2821d11db54f3f0e5d80d71df50bcb.html">Open in a new tab</a>
 
 `aria-controls`, which is a required property for the role `scrollbar`, references an element that does not exist in the same document tree.
 
@@ -314,7 +314,7 @@ Element with invalid token list value
 
 #### Inapplicable Example 1
 
-<a class="example-link" title="Inapplicable Example 1" href="/content-assets/wcag-act-rules/testcases/6a7281/9d80b71ad39b258fb75db804867f189d76ecdab8.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/9d80b71ad39b258fb75db804867f189d76ecdab8.html">Open in a new tab</a>
 
 Element does not have any ARIA states or properties
 
@@ -324,7 +324,7 @@ Element does not have any ARIA states or properties
 
 #### Inapplicable Example 2
 
-<a class="example-link" title="Inapplicable Example 2" href="/content-assets/wcag-act-rules/testcases/6a7281/90428c9c8cc74d6a3047775637078366994a8e88.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/90428c9c8cc74d6a3047775637078366994a8e88.html">Open in a new tab</a>
 
 Element has ARIA role, but no ARIA states or properties
 
@@ -334,7 +334,7 @@ Element has ARIA role, but no ARIA states or properties
 
 #### Inapplicable Example 3
 
-<a class="example-link" title="Inapplicable Example 3" href="/content-assets/wcag-act-rules/testcases/6a7281/d82c477ac58becfda4233237a642b8ef70eb6c5f.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/d82c477ac58becfda4233237a642b8ef70eb6c5f.html">Open in a new tab</a>
 
 `aria-checked` state with empty value
 
@@ -346,7 +346,7 @@ Element has ARIA role, but no ARIA states or properties
 
 #### Inapplicable Example 4
 
-<a class="example-link" title="Inapplicable Example 4" href="/content-assets/wcag-act-rules/testcases/6a7281/8d4a06e6a2d0df5ef4f834e38045e81a4d9467f9.xml">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/8d4a06e6a2d0df5ef4f834e38045e81a4d9467f9.xml">Open in a new tab</a>
 
 `aria-hidden` state on an element that is not an [HTML or SVG element][].
 

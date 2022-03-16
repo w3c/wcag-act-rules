@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> c3232f</p>
-  <p><strong>Date:</strong> Updated 15 March 2022</p>
+  <p><strong>Date:</strong> Updated 16 March 2022</p>
   <p><strong>Authors:</strong> <a href="https://www.linkedin.com/in/brianbors/">Brian Bors</a>, <a href="https://github.com/john-urbilog">John Hicks</a>, <a href="https://github.com/Rafalchar">Rafal Charlampowicz</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -19,7 +19,7 @@ rule_meta:
   rule_type: composite
   description: |
     This rule checks that `video` elements without audio have an alternative available.
-  last_modified: 15 March 2022
+  last_modified: 16 March 2022
   scs_tested:
     - handle: Audio-only and Video-only (Prerecorded)
       num: 1.2.1
@@ -110,7 +110,7 @@ Outcomes of the following rules are required as input for this rule.
 
 #### Passed Example 1
 
-<a class="example-link" title="Passed Example 1" href="/content-assets/wcag-act-rules/testcases/c3232f/ce350e33e78f587703aa35b78fa319b9efe9291d.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/c3232f/ce350e33e78f587703aa35b78fa319b9efe9291d.html">Open in a new tab</a>
 
 This `video` element, which has no audio, has a text transcript available on the same page. Thus, it passes rule [`Video` Element Visual-Only Content Has Transcript](https://act-rules.github.io/rules/ee13b5).
 
@@ -128,7 +128,7 @@ Then he stops to scratch his bottom.</p>
 
 #### Passed Example 2
 
-<a class="example-link" title="Passed Example 2" href="/content-assets/wcag-act-rules/testcases/c3232f/634bb07611c5d126e49caf4bfce8b6d50c872fce.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/c3232f/634bb07611c5d126e49caf4bfce8b6d50c872fce.html">Open in a new tab</a>
 
 This `video` element, which has no audio, has a separate audio track that describes the visual information. Thus, it passes rule [`Video` Element Visual-Only Content Has Audio Track Alternative](https://act-rules.github.io/rules/d7ba54).
 
@@ -147,7 +147,7 @@ This `video` element, which has no audio, has a separate audio track that descri
 
 #### Passed Example 3
 
-<a class="example-link" title="Passed Example 3" href="/content-assets/wcag-act-rules/testcases/c3232f/481e55b81376491b363aab5c622e58fe6b63bace.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/c3232f/481e55b81376491b363aab5c622e58fe6b63bace.html">Open in a new tab</a>
 
 This `video` element, which has no audio, is a media alternative for the text in the page and labeled as such. Thus, it passes rule [`Video` Element Visual-Only Content Is Media Alternative For Text](https://act-rules.github.io/rules/fd26cf).
 
@@ -166,7 +166,7 @@ This `video` element, which has no audio, is a media alternative for the text in
 
 #### Failed Example 1
 
-<a class="example-link" title="Failed Example 1" href="/content-assets/wcag-act-rules/testcases/c3232f/5ed3a98f771c2069c1d4581ff5f85cc38d9b5ec0.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/c3232f/5ed3a98f771c2069c1d4581ff5f85cc38d9b5ec0.html">Open in a new tab</a>
 
 This `video` element, which has no audio, has a transcript which does not convey the information included in the video-only content. The transcript is available through a link on the same page.
 
@@ -182,7 +182,7 @@ This `video` element, which has no audio, has a transcript which does not convey
 
 #### Failed Example 2
 
-<a class="example-link" title="Failed Example 2" href="/content-assets/wcag-act-rules/testcases/c3232f/2e9bff37ba69e76a995b6339748eaad2f7a30aca.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/c3232f/2e9bff37ba69e76a995b6339748eaad2f7a30aca.html">Open in a new tab</a>
 
 This `video` element, which has no audio, has a separate audio track that incorrectly describes the visual information.
 
@@ -201,7 +201,7 @@ This `video` element, which has no audio, has a separate audio track that incorr
 
 #### Failed Example 3
 
-<a class="example-link" title="Failed Example 3" href="/content-assets/wcag-act-rules/testcases/c3232f/0f884e5935b0e6b1bd809d550738772e32f439c5.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/c3232f/0f884e5935b0e6b1bd809d550738772e32f439c5.html">Open in a new tab</a>
 
 This `video` element, which has no audio, is a media alternative for the text in the page but it is not labeled as such.
 
@@ -218,7 +218,7 @@ This `video` element, which has no audio, is a media alternative for the text in
 
 #### Failed Example 4
 
-<a class="example-link" title="Failed Example 4" href="/content-assets/wcag-act-rules/testcases/c3232f/91f0cca7d0cc5c6a757f72dbeed84bcc1b79625b.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/c3232f/91f0cca7d0cc5c6a757f72dbeed84bcc1b79625b.html">Open in a new tab</a>
 
 This `video` element, which has no audio, has a `track` element with descriptions. The description track is not supported.
 
@@ -236,7 +236,7 @@ This `video` element, which has no audio, has a `track` element with description
 
 #### Inapplicable Example 1
 
-<a class="example-link" title="Inapplicable Example 1" href="/content-assets/wcag-act-rules/testcases/c3232f/91f5189004dff8c702eefb7214486bd18868fee1.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/c3232f/91f5189004dff8c702eefb7214486bd18868fee1.html">Open in a new tab</a>
 
 This `video` element has audio.
 
@@ -253,7 +253,7 @@ This `video` element has audio.
 
 #### Inapplicable Example 2
 
-<a class="example-link" title="Inapplicable Example 2" href="/content-assets/wcag-act-rules/testcases/c3232f/dc2a0bf420d21c386d9a7027a888276c07271988.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/c3232f/dc2a0bf420d21c386d9a7027a888276c07271988.html">Open in a new tab</a>
 
 This `video` element is not [visible][].
 

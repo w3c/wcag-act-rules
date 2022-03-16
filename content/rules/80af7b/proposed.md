@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 80af7b</p>
-  <p><strong>Date:</strong> Updated 15 March 2022</p>
+  <p><strong>Date:</strong> Updated 16 March 2022</p>
   <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/DagfinnRomen">Dagfinn Rømen</a>, <a href="https://github.com/geirsf">Geir Sindre Fossøy</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -19,7 +19,7 @@ rule_meta:
   rule_type: composite
   description: |
     This rule checks for keyboard traps. This includes use of both standard and non-standard keyboard navigation to navigate through all content without becoming trapped.
-  last_modified: 15 March 2022
+  last_modified: 16 March 2022
   scs_tested:
     - handle: No Keyboard Trap
       num: 2.1.2
@@ -109,7 +109,7 @@ Outcomes of the following rules are required as input for this rule.
 
 #### Passed Example 1
 
-<a class="example-link" title="Passed Example 1" href="/content-assets/wcag-act-rules/testcases/80af7b/96eb4b26010e8c598cb659108dbc34ca0abd82f9.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/80af7b/96eb4b26010e8c598cb659108dbc34ca0abd82f9.html">Open in a new tab</a>
 
 No trap for keyboard navigation.
 
@@ -119,7 +119,7 @@ No trap for keyboard navigation.
 
 #### Passed Example 2
 
-<a class="example-link" title="Passed Example 2" href="/content-assets/wcag-act-rules/testcases/80af7b/fb76f71a94bf95f5cfef22f3db6655e7b0a57b0c.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/80af7b/fb76f71a94bf95f5cfef22f3db6655e7b0a57b0c.html">Open in a new tab</a>
 
 Using `tabindex="1"`.
 
@@ -129,7 +129,7 @@ Using `tabindex="1"`.
 
 #### Passed Example 3
 
-<a class="example-link" title="Passed Example 3" href="/content-assets/wcag-act-rules/testcases/80af7b/4b93a866e14ad4c9ed8efa13c080a1e05350fa2f.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/80af7b/4b93a866e14ad4c9ed8efa13c080a1e05350fa2f.html">Open in a new tab</a>
 
 Using `tabindex="-1"`.
 
@@ -139,7 +139,7 @@ Using `tabindex="-1"`.
 
 #### Passed Example 4
 
-<a class="example-link" title="Passed Example 4" href="/content-assets/wcag-act-rules/testcases/80af7b/2e5b21696d8d78553aef73c00c2c4118a123ce53.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/80af7b/2e5b21696d8d78553aef73c00c2c4118a123ce53.html">Open in a new tab</a>
 
 Keyboard trap with help information in a paragraph before, and where the method advised works.
 
@@ -165,7 +165,7 @@ Keyboard trap with help information in a paragraph before, and where the method 
 
 #### Passed Example 5
 
-<a class="example-link" title="Passed Example 5" href="/content-assets/wcag-act-rules/testcases/80af7b/7aa9d83ec176f011c1646a8977070c2b1c5209b6.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 5" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/80af7b/7aa9d83ec176f011c1646a8977070c2b1c5209b6.html">Open in a new tab</a>
 
 Keyboard trap with help information within the trap, and where the method advised works.
 
@@ -191,7 +191,7 @@ Keyboard trap with help information within the trap, and where the method advise
 
 #### Passed Example 6
 
-<a class="example-link" title="Passed Example 6" href="/content-assets/wcag-act-rules/testcases/80af7b/3432e1dfefcc17bea67a25de3c42a9a4bec73d7c.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 6" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/80af7b/3432e1dfefcc17bea67a25de3c42a9a4bec73d7c.html">Open in a new tab</a>
 
 Keyboard trap with "help" link that once clicked exposes the instructions.
 
@@ -222,7 +222,7 @@ Keyboard trap with "help" link that once clicked exposes the instructions.
 
 #### Failed Example 1
 
-<a class="example-link" title="Failed Example 1" href="/content-assets/wcag-act-rules/testcases/80af7b/780388a837915960bca7651bd80743fb2cafdbcb.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/80af7b/780388a837915960bca7651bd80743fb2cafdbcb.html">Open in a new tab</a>
 
 Keyboard trap one element.
 
@@ -235,7 +235,7 @@ Keyboard trap one element.
 
 #### Failed Example 2
 
-<a class="example-link" title="Failed Example 2" href="/content-assets/wcag-act-rules/testcases/80af7b/d2f5325f3fd5ddde38cd677a5ca36ba0d762fb84.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/80af7b/d2f5325f3fd5ddde38cd677a5ca36ba0d762fb84.html">Open in a new tab</a>
 
 Keyboard trap group.
 
@@ -253,7 +253,7 @@ Keyboard trap group.
 
 #### Failed Example 3
 
-<a class="example-link" title="Failed Example 3" href="/content-assets/wcag-act-rules/testcases/80af7b/0ec0e93e7f8ffca39e1eb58a4a8503f1bd4cb145.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/80af7b/0ec0e93e7f8ffca39e1eb58a4a8503f1bd4cb145.html">Open in a new tab</a>
 
 A [focusable][] element between keyboard traps.
 
@@ -265,7 +265,7 @@ A [focusable][] element between keyboard traps.
 
 #### Failed Example 4
 
-<a class="example-link" title="Failed Example 4" href="/content-assets/wcag-act-rules/testcases/80af7b/5e4c0baac1de5da1325348d49892a01b92f8fb0c.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/80af7b/5e4c0baac1de5da1325348d49892a01b92f8fb0c.html">Open in a new tab</a>
 
 Keyboard trap with no instructions.
 
@@ -290,7 +290,7 @@ Keyboard trap with no instructions.
 
 #### Failed Example 5
 
-<a class="example-link" title="Failed Example 5" href="/content-assets/wcag-act-rules/testcases/80af7b/e9885e3c626b0f50853075e86e0b2f82d723bd24.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 5" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/80af7b/e9885e3c626b0f50853075e86e0b2f82d723bd24.html">Open in a new tab</a>
 
 Keyboard trap with instructions that doesn't give advise on the method for proceeding.
 
@@ -316,7 +316,7 @@ Keyboard trap with instructions that doesn't give advise on the method for proce
 
 #### Failed Example 6
 
-<a class="example-link" title="Failed Example 6" href="/content-assets/wcag-act-rules/testcases/80af7b/5cbf445372b50a5ff8e428c6b8b00506b1decddb.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 6" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/80af7b/5cbf445372b50a5ff8e428c6b8b00506b1decddb.html">Open in a new tab</a>
 
 Keyboard trap with help text, where the method advised doesn't work.
 
@@ -340,7 +340,7 @@ Keyboard trap with help text, where the method advised doesn't work.
 
 #### Inapplicable Example 1
 
-<a class="example-link" title="Inapplicable Example 1" href="/content-assets/wcag-act-rules/testcases/80af7b/16dddd8ac5c419caba2c709b1b1f49cc5759e63c.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/80af7b/16dddd8ac5c419caba2c709b1b1f49cc5759e63c.html">Open in a new tab</a>
 
 No [focusable][] element.
 
@@ -350,7 +350,7 @@ No [focusable][] element.
 
 #### Inapplicable Example 2
 
-<a class="example-link" title="Inapplicable Example 2" href="/content-assets/wcag-act-rules/testcases/80af7b/6e3dcc2f3612826dd3d8589c4e2951ad7a3e4dd7.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/80af7b/6e3dcc2f3612826dd3d8589c4e2951ad7a3e4dd7.html">Open in a new tab</a>
 
 Disabled element.
 
@@ -360,7 +360,7 @@ Disabled element.
 
 #### Inapplicable Example 3
 
-<a class="example-link" title="Inapplicable Example 3" href="/content-assets/wcag-act-rules/testcases/80af7b/9d47dcc67abbcb177876ce082ae073947cc7135d.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/80af7b/9d47dcc67abbcb177876ce082ae073947cc7135d.html">Open in a new tab</a>
 
 Hidden element using `display:none`.
 
@@ -370,7 +370,7 @@ Hidden element using `display:none`.
 
 #### Inapplicable Example 4
 
-<a class="example-link" title="Inapplicable Example 4" href="/content-assets/wcag-act-rules/testcases/80af7b/30ffb2991af4d1727223409c9f1235e44acc1c13.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/80af7b/30ffb2991af4d1727223409c9f1235e44acc1c13.html">Open in a new tab</a>
 
 Hidden element using `visibility:hidden`.
 

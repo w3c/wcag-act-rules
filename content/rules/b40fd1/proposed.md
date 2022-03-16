@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> b40fd1</p>
-  <p><strong>Date:</strong> Updated 15 March 2022</p>
+  <p><strong>Date:</strong> Updated 16 March 2022</p>
   <p><strong>Authors:</strong> <a href="https://github.com/Jym77">Jean-Yves Moyen</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
   
@@ -21,7 +21,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that each page has an element with a landmark semantic role starting with non-repeated content
-  last_modified: 15 March 2022
+  last_modified: 16 March 2022
 ---
 
 ## Applicability
@@ -75,7 +75,7 @@ The following aspects are required in using this rule.
 
 #### Passed Example 1
 
-<a class="example-link" title="Passed Example 1" href="/content-assets/wcag-act-rules/testcases/b40fd1/9eb0cf411e23f4457a013123e3066e2bfa4652da.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b40fd1/9eb0cf411e23f4457a013123e3066e2bfa4652da.html">Open in a new tab</a>
 
 In this [document][], the `main` element has a [semantic role][] of `main` and is [included in the accessibility tree][].
 
@@ -104,7 +104,7 @@ In this [document][], the `main` element has a [semantic role][] of `main` and i
 
 #### Passed Example 2
 
-<a class="example-link" title="Passed Example 2" href="/content-assets/wcag-act-rules/testcases/b40fd1/6857e600eac289c0c62a895c37587a2a929b057a.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b40fd1/6857e600eac289c0c62a895c37587a2a929b057a.html">Open in a new tab</a>
 
 In this [document][] the `div` element has a [semantic role][] of `main` and is [included in the accessibility tree][].
 
@@ -133,7 +133,7 @@ In this [document][] the `div` element has a [semantic role][] of `main` and is 
 
 #### Passed Example 3
 
-<a class="example-link" title="Passed Example 3" href="/content-assets/wcag-act-rules/testcases/b40fd1/1f5a04fcf51ccae18f823604bb35cf6968bd763d.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b40fd1/1f5a04fcf51ccae18f823604bb35cf6968bd763d.html">Open in a new tab</a>
 
 This [document][] has several elements with a role of `main`, at least one of them is [included in the accessibility tree][].
 
@@ -173,7 +173,7 @@ This [document][] has several elements with a role of `main`, at least one of th
 
 #### Passed Example 4
 
-<a class="example-link" title="Passed Example 4" href="/content-assets/wcag-act-rules/testcases/b40fd1/4f112d2707661d579bb0e364ef6241ea6217d3e8.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b40fd1/4f112d2707661d579bb0e364ef6241ea6217d3e8.html">Open in a new tab</a>
 
 This [document][] has no [non-repeated content after repeated content][].
 
@@ -195,7 +195,7 @@ This [document][] has no [non-repeated content after repeated content][].
 
 #### Failed Example 1
 
-<a class="example-link" title="Failed Example 1" href="/content-assets/wcag-act-rules/testcases/b40fd1/fcdd27815e78ba3f3e7420cf1a6b503fd2e610c5.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b40fd1/fcdd27815e78ba3f3e7420cf1a6b503fd2e610c5.html">Open in a new tab</a>
 
 This [document][] has no element with a landmark role.
 
@@ -222,7 +222,7 @@ This [document][] has no element with a landmark role.
 
 #### Failed Example 2
 
-<a class="example-link" title="Failed Example 2" href="/content-assets/wcag-act-rules/testcases/b40fd1/2ae36916d2c4679dcfc4707d92f1fc2279972c12.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b40fd1/2ae36916d2c4679dcfc4707d92f1fc2279972c12.html">Open in a new tab</a>
 
 This [document][] has no element with a landmark role after its repeated content. The element with a landmark role does not contain any [non-repeated content after repeated content][].
 
@@ -249,7 +249,7 @@ This [document][] has no element with a landmark role after its repeated content
 
 #### Failed Example 3
 
-<a class="example-link" title="Failed Example 3" href="/content-assets/wcag-act-rules/testcases/b40fd1/8194fbeb6a60fa3b6484916de2eee4e9978d9521.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b40fd1/8194fbeb6a60fa3b6484916de2eee4e9978d9521.html">Open in a new tab</a>
 
 This document has a `main` [landmark][], but it is not [included in the accessibility tree][].
 
@@ -280,7 +280,7 @@ This document has a `main` [landmark][], but it is not [included in the accessib
 
 #### Inapplicable Example 1
 
-<a class="example-link" title="Inapplicable Example 1" href="/content-assets/wcag-act-rules/testcases/b40fd1/ecc29b73e37b6a125b3fd9767068dcaa368d467a.svg">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b40fd1/ecc29b73e37b6a125b3fd9767068dcaa368d467a.svg">Open in a new tab</a>
 
 This [document][] is not an [HTML web page][].
 

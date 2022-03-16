@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> ye5d6e</p>
-  <p><strong>Date:</strong> Updated 15 March 2022</p>
+  <p><strong>Date:</strong> Updated 16 March 2022</p>
   <p><strong>Authors:</strong> <a href="https://github.com/Jym77">Jean-Yves Moyen</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
   
@@ -21,7 +21,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that there is an instrument to move focus to non-repeated content in the page
-  last_modified: 15 March 2022
+  last_modified: 16 March 2022
 ---
 
 ## Applicability
@@ -109,7 +109,7 @@ The following aspects are required in using this rule.
 
 #### Passed Example 1
 
-<a class="example-link" title="Passed Example 1" href="/content-assets/wcag-act-rules/testcases/ye5d6e/235a899f291a8dbcd536b439728c2af509c8f1d6.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ye5d6e/235a899f291a8dbcd536b439728c2af509c8f1d6.html">Open in a new tab</a>
 
 In this [document][], the first `a` element is an [instrument][] to [navigate][], and thus move the focus, to the non-repeated content. This example passes [Technique G1: Adding a link at the top of each page that goes directly to the main content area][tech g1].
 
@@ -138,7 +138,7 @@ In this [document][], the first `a` element is an [instrument][] to [navigate][]
 
 #### Passed Example 2
 
-<a class="example-link" title="Passed Example 2" href="/content-assets/wcag-act-rules/testcases/ye5d6e/758c009716931b1a14a1215eda5d4f9d72135aaa.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ye5d6e/758c009716931b1a14a1215eda5d4f9d72135aaa.html">Open in a new tab</a>
 
 In this [document][], the third `a` element is an [instrument][] to move the focus to the non-repeated content. This example passes [Technique G124: Adding links at the top of the page to each area of the content][tech g124].
 
@@ -174,7 +174,7 @@ In this [document][], the third `a` element is an [instrument][] to move the foc
 
 #### Passed Example 3
 
-<a class="example-link" title="Passed Example 3" href="/content-assets/wcag-act-rules/testcases/ye5d6e/1d5d46b8e4ca30cf0683a417dc4edd57887b9889.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ye5d6e/1d5d46b8e4ca30cf0683a417dc4edd57887b9889.html">Open in a new tab</a>
 
 In this [document][], the second `a` element (inside the second `aside` element) is an [instrument][] to move the focus to the non-repeated content. This example passes [Technique G123: Adding a link at the beginning of a block of repeated content to go to the end of the block][tech g123].
 
@@ -206,7 +206,7 @@ In this [document][], the second `a` element (inside the second `aside` element)
 
 #### Passed Example 4
 
-<a class="example-link" title="Passed Example 4" href="/content-assets/wcag-act-rules/testcases/ye5d6e/a800d2026c8f10593cb62aac798d3c11156445c8.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ye5d6e/a800d2026c8f10593cb62aac798d3c11156445c8.html">Open in a new tab</a>
 
 In this [document][], the first `a` element is an [instrument][] to move the focus to the non-repeated content. In this case, the element is normally hidden but is [visible][] when [focused][].
 
@@ -238,7 +238,7 @@ In this [document][], the first `a` element is an [instrument][] to move the foc
 
 #### Passed Example 5
 
-<a class="example-link" title="Passed Example 5" href="/content-assets/wcag-act-rules/testcases/ye5d6e/f75c1d3e3e4d3ef33020e90c115c6f4245170486.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 5" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ye5d6e/f75c1d3e3e4d3ef33020e90c115c6f4245170486.html">Open in a new tab</a>
 
 In this [document][], the first `div` element is an [instrument][] to move the focus to the non-repeated content.
 
@@ -268,7 +268,7 @@ In this [document][], the first `div` element is an [instrument][] to move the f
 
 #### Passed Example 6
 
-<a class="example-link" title="Passed Example 6" href="/content-assets/wcag-act-rules/testcases/ye5d6e/20d2b672d6e08fe0803a643368c8cf174e412273.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 6" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ye5d6e/20d2b672d6e08fe0803a643368c8cf174e412273.html">Open in a new tab</a>
 
 In this [document][], the first `a` element is an [instrument][] to move the focus to the non-repeated content.
 
@@ -297,7 +297,7 @@ In this [document][], the first `a` element is an [instrument][] to move the foc
 
 #### Passed Example 7
 
-<a class="example-link" title="Passed Example 7" href="/content-assets/wcag-act-rules/testcases/ye5d6e/b0707d538c73d1981fe41f2c6fccea8d2c1c3d16.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 7" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ye5d6e/b0707d538c73d1981fe41f2c6fccea8d2c1c3d16.html">Open in a new tab</a>
 
 In this [document][], the first `a` element is an [instrument][] to move the focus to the non-repeated content. Even though its target is inside a [block of repeated content][], it is still [just before][] some [non-repeated content after repeated content][] because there is no [perceivable content][] between the link target and the non-repeated content. Thus, following the link does skip all the repeated content.
 
@@ -327,7 +327,7 @@ In this [document][], the first `a` element is an [instrument][] to move the foc
 
 #### Passed Example 8
 
-<a class="example-link" title="Passed Example 8" href="/content-assets/wcag-act-rules/testcases/ye5d6e/bc993393eba0a7f07e3eb15a69df1a93243309dd.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 8" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ye5d6e/bc993393eba0a7f07e3eb15a69df1a93243309dd.html">Open in a new tab</a>
 
 In this [document][], the first `a` element is an [instrument][] to move the focus to the non-repeated content. Even though its target is not the first element after it, it is still [just before][] the first [non-repeated content after repeated content][]. Thus, following the link does not skip any non-repeated content.
 
@@ -360,7 +360,7 @@ In this [document][], the first `a` element is an [instrument][] to move the foc
 
 #### Failed Example 1
 
-<a class="example-link" title="Failed Example 1" href="/content-assets/wcag-act-rules/testcases/ye5d6e/6fe4061a223f0fce63b8cd8b5aae1b05438f10cd.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ye5d6e/6fe4061a223f0fce63b8cd8b5aae1b05438f10cd.html">Open in a new tab</a>
 
 This [document][] has no [instrument][] to skip to the non-repeated content.
 
@@ -388,7 +388,7 @@ This [document][] has no [instrument][] to skip to the non-repeated content.
 
 #### Failed Example 2
 
-<a class="example-link" title="Failed Example 2" href="/content-assets/wcag-act-rules/testcases/ye5d6e/8c1d5e197106ae2949afe70e93179cff2a2b99a1.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ye5d6e/8c1d5e197106ae2949afe70e93179cff2a2b99a1.html">Open in a new tab</a>
 
 In this [document][], the link to skip to the non-repeated content does not reference a valid `id` attribute and thus when [activated][activation] will not move focus to the non-repeated content.
 
@@ -417,7 +417,7 @@ In this [document][], the link to skip to the non-repeated content does not refe
 
 #### Failed Example 3
 
-<a class="example-link" title="Failed Example 3" href="/content-assets/wcag-act-rules/testcases/ye5d6e/91f4c9b8d66b5a30867b3eb329701acc604d79b9.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ye5d6e/91f4c9b8d66b5a30867b3eb329701acc604d79b9.html">Open in a new tab</a>
 
 In this [document][], the skip link does not move focus [just before][] some [non-repeated content after repeated content][]. The focus is moved on [perceivable content][] which is inside the [block of repeated content][]. Thus, following the link does not skip all the repeated content.
 
@@ -448,7 +448,7 @@ In this [document][], the skip link does not move focus [just before][] some [no
 
 #### Inapplicable Example 1
 
-<a class="example-link" title="Inapplicable Example 1" href="/content-assets/wcag-act-rules/testcases/ye5d6e/ecc29b73e37b6a125b3fd9767068dcaa368d467a.svg">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ye5d6e/ecc29b73e37b6a125b3fd9767068dcaa368d467a.svg">Open in a new tab</a>
 
 This [document][] is not an [HTML web page][].
 

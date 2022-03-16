@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> cf77f2</p>
-  <p><strong>Date:</strong> Updated 15 March 2022</p>
+  <p><strong>Date:</strong> Updated 16 March 2022</p>
   <p><strong>Authors:</strong> <a href="https://github.com/Jym77">Jean-Yves Moyen</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
   
@@ -21,7 +21,7 @@ rule_meta:
   rule_type: composite
   description: |
     This rule checks that each page has a mechanism to bypass repeated blocks of content.
-  last_modified: 15 March 2022
+  last_modified: 16 March 2022
   scs_tested:
     - handle: Bypass Blocks
       num: 2.4.1
@@ -167,7 +167,7 @@ Outcomes of the following rules are required as input for this rule.
 
 #### Passed Example 1
 
-<a class="example-link" title="Passed Example 1" href="/content-assets/wcag-act-rules/testcases/cf77f2/fa30de1d9c2d3a313f7f18bc4e2cf6843ea10a89.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/cf77f2/fa30de1d9c2d3a313f7f18bc4e2cf6843ea10a89.html">Open in a new tab</a>
 
 This [HTML web page][] is passing rule [_Block of repeated content is collapsible_][block collapsible].
 
@@ -199,7 +199,7 @@ This [HTML web page][] is passing rule [_Block of repeated content is collapsibl
 
 #### Passed Example 2
 
-<a class="example-link" title="Passed Example 2" href="/content-assets/wcag-act-rules/testcases/cf77f2/36f679b6844299beda3f720e0d94cabdcfa122ba.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/cf77f2/36f679b6844299beda3f720e0d94cabdcfa122ba.html">Open in a new tab</a>
 
 This [HTML web page][] is passing rule [_Document has heading for non-repeated content_][document has heading for main].
 
@@ -229,7 +229,7 @@ This [HTML web page][] is passing rule [_Document has heading for non-repeated c
 
 #### Passed Example 3
 
-<a class="example-link" title="Passed Example 3" href="/content-assets/wcag-act-rules/testcases/cf77f2/9eb0cf411e23f4457a013123e3066e2bfa4652da.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/cf77f2/9eb0cf411e23f4457a013123e3066e2bfa4652da.html">Open in a new tab</a>
 
 This [HTML web page][] is passing rule [_Document has a landmark with non-repeated content_][document has landmark].
 
@@ -258,7 +258,7 @@ This [HTML web page][] is passing rule [_Document has a landmark with non-repeat
 
 #### Passed Example 4
 
-<a class="example-link" title="Passed Example 4" href="/content-assets/wcag-act-rules/testcases/cf77f2/235a899f291a8dbcd536b439728c2af509c8f1d6.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/cf77f2/235a899f291a8dbcd536b439728c2af509c8f1d6.html">Open in a new tab</a>
 
 This [HTML web page][] is passing rule [_Document has an instrument to move focus to non-repeated content_][document has instrument to main].
 
@@ -287,7 +287,7 @@ This [HTML web page][] is passing rule [_Document has an instrument to move focu
 
 #### Passed Example 5
 
-<a class="example-link" title="Passed Example 5" href="/content-assets/wcag-act-rules/testcases/cf77f2/758c009716931b1a14a1215eda5d4f9d72135aaa.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 5" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/cf77f2/758c009716931b1a14a1215eda5d4f9d72135aaa.html">Open in a new tab</a>
 
 This [HTML web page][] is passing rule [_Document has an instrument to move focus to non-repeated content_][document has instrument to main].
 
@@ -323,7 +323,7 @@ This [HTML web page][] is passing rule [_Document has an instrument to move focu
 
 #### Passed Example 6
 
-<a class="example-link" title="Passed Example 6" href="/content-assets/wcag-act-rules/testcases/cf77f2/1d5d46b8e4ca30cf0683a417dc4edd57887b9889.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 6" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/cf77f2/1d5d46b8e4ca30cf0683a417dc4edd57887b9889.html">Open in a new tab</a>
 
 This [HTML web page][] is passing rule [_Document has an instrument to move focus to non-repeated content_][document has instrument to main].
 
@@ -355,7 +355,7 @@ This [HTML web page][] is passing rule [_Document has an instrument to move focu
 
 #### Passed Example 7
 
-<a class="example-link" title="Passed Example 7" href="/content-assets/wcag-act-rules/testcases/cf77f2/c039d5c0794751aa5944724b45df214c0e8cc827.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 7" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/cf77f2/c039d5c0794751aa5944724b45df214c0e8cc827.html">Open in a new tab</a>
 
 This [HTML web page][] is passing rule [_Block of repeated content is collapsible_][block collapsible] because it has no [block of repeated content][] before non-repeated [perceivable content][]. Note that this does not pass [Technique SCR28: Using an expandable and collapsible menu to bypass block of content][tech scr28] because the [block of repeated content][] which is after the non-repeated content cannot be toggled.
 
@@ -383,7 +383,7 @@ This [HTML web page][] is passing rule [_Block of repeated content is collapsibl
 
 #### Passed Example 8
 
-<a class="example-link" title="Passed Example 8" href="/content-assets/wcag-act-rules/testcases/cf77f2/1c8d17ef6a69be1bbc5b28f432d2b7192e0f65c9.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 8" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/cf77f2/1c8d17ef6a69be1bbc5b28f432d2b7192e0f65c9.html">Open in a new tab</a>
 
 This [HTML web page][] is passing rule [_Document has an instrument to move focus to non-repeated content_][document has instrument to main] because the button is such an instrument. Note that it does not pass [Technique G1: Adding a link at the top of each page that goes directly to the main content area][tech g1] nor [Technique G123: Adding a link at the beginning of a block of repeated content to go to the end of the block][tech g123] because the [instrument][] is a button, not a link.
 
@@ -412,7 +412,7 @@ This [HTML web page][] is passing rule [_Document has an instrument to move focu
 
 #### Passed Example 9
 
-<a class="example-link" title="Passed Example 9" href="/content-assets/wcag-act-rules/testcases/cf77f2/07c0b535c3c68a3deeb9fde43c4ba5aca09fb94e.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 9" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/cf77f2/07c0b535c3c68a3deeb9fde43c4ba5aca09fb94e.html">Open in a new tab</a>
 
 This [HTML web page][] is passing rule [_Document has an instrument to move focus to non-repeated content_][document has instrument to main] because the link with target `#brewitt-taylor` moves focus [just before][] some [non-repeated content after repeated content][]. Note that it does not necessarily pass Technique [G124: Adding links at the top of the page to each area of the content][tech g124] because the `<div id="main">` element is arguably a single "area of the content", and the technique requires only one link per such area.
 
@@ -459,7 +459,7 @@ This [HTML web page][] is passing rule [_Document has an instrument to move focu
 
 #### Passed Example 10
 
-<a class="example-link" title="Passed Example 10" href="/content-assets/wcag-act-rules/testcases/cf77f2/7fdb66e34b6c6b106fd371183e682721c3735031.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 10" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/cf77f2/7fdb66e34b6c6b106fd371183e682721c3735031.html">Open in a new tab</a>
 
 This [HTML web page][] is passing rule [_Document has an instrument to move focus to non-repeated content_][document has instrument to main]. Note that it does not necessarily pass Technique [G124: Adding links at the top of the page to each area of the content][tech g124] because the both the `nav` and `aside` elements are arguably different "areas of the content", and the technique requires exactly one link per such area.
 
@@ -491,7 +491,7 @@ This [HTML web page][] is passing rule [_Document has an instrument to move focu
 
 #### Passed Example 11
 
-<a class="example-link" title="Passed Example 11" href="/content-assets/wcag-act-rules/testcases/cf77f2/f937af9c794522e5f421d5cfc3937d34fad2a9e7.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 11" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/cf77f2/f937af9c794522e5f421d5cfc3937d34fad2a9e7.html">Open in a new tab</a>
 
 This [HTML web page][] is passing rule [_Block of repeated content is collapsible_][block collapsible]. Note that it does not pass [Technique SCR28: Using an expandable and collapsible menu to bypass block of content][tech scr28] because the technique requires that the blocks can be toggled on and off, but here they can only be removed.
 
@@ -523,7 +523,7 @@ This [HTML web page][] is passing rule [_Block of repeated content is collapsibl
 
 #### Passed Example 12
 
-<a class="example-link" title="Passed Example 12" href="/content-assets/wcag-act-rules/testcases/cf77f2/ac55a162907e372577bb09a3fbebf252aea90e64.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 12" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/cf77f2/ac55a162907e372577bb09a3fbebf252aea90e64.html">Open in a new tab</a>
 
 This [HTML web page][] is passing rule [_Document has an instrument to move focus to non-repeated content_][document has instrument to main] because the second link is such an instrument. Note that it does not pass [Technique G1: Adding a link at the top of each page that goes directly to the main content area][tech g1] because the skip link is not the first [focusable][] element on the page.
 
@@ -553,7 +553,7 @@ This [HTML web page][] is passing rule [_Document has an instrument to move focu
 
 #### Passed Example 13
 
-<a class="example-link" title="Passed Example 13" href="/content-assets/wcag-act-rules/testcases/cf77f2/36f679b6844299beda3f720e0d94cabdcfa122ba.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 13" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/cf77f2/36f679b6844299beda3f720e0d94cabdcfa122ba.html">Open in a new tab</a>
 
 This [HTML web page][] is passing rule [_Document has heading for non-repeated content_][document has heading for main]. Note that it arguably does not pass [Technique H69: Providing heading elements at the beginning of each section of content][tech h69] because the `nav` element can be considered as a section of content and does not start with a heading.
 
@@ -585,7 +585,7 @@ This [HTML web page][] is passing rule [_Document has heading for non-repeated c
 
 #### Failed Example 1
 
-<a class="example-link" title="Failed Example 1" href="/content-assets/wcag-act-rules/testcases/cf77f2/55a6cc3efc35180844d75a9f207b456373b1435c.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/cf77f2/55a6cc3efc35180844d75a9f207b456373b1435c.html">Open in a new tab</a>
 
 This [HTML web page][] does not pass any of the input rules.
 
@@ -616,7 +616,7 @@ This [HTML web page][] does not pass any of the input rules.
 
 #### Inapplicable Example 1
 
-<a class="example-link" title="Inapplicable Example 1" href="/content-assets/wcag-act-rules/testcases/cf77f2/ecc29b73e37b6a125b3fd9767068dcaa368d467a.svg">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/cf77f2/ecc29b73e37b6a125b3fd9767068dcaa368d467a.svg">Open in a new tab</a>
 
 This [document][] is not an [HTML web page][].
 

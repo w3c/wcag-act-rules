@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 7677a9</p>
-  <p><strong>Date:</strong> Updated 15 March 2022</p>
+  <p><strong>Date:</strong> Updated 16 March 2022</p>
   <p><strong>Authors:</strong> <a href="https://github.com/carlosapaduarte">Carlos Duarte</a>, <a href="https://github.com/joao-vicente">João Vicente</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -19,7 +19,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that changes to the content of a web page that result from device motion events can also be caused by user interface components.
-  last_modified: 15 March 2022
+  last_modified: 16 March 2022
   scs_tested:
     - handle: Motion Actuation
       num: 2.5.4
@@ -89,7 +89,7 @@ The following aspects are required in using this rule.
 
 #### Passed Example 1
 
-<a class="example-link" title="Passed Example 1" href="/content-assets/wcag-act-rules/testcases/7677a9/0c6bdb9bd6aa5ccc33b456cd8ca3ad6407ae7f2e.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/7677a9/0c6bdb9bd6aa5ccc33b456cd8ca3ad6407ae7f2e.html">Open in a new tab</a>
 
 This [HTML document][] has device orientation events that cause **no changes** to the content of the web page.
 
@@ -116,7 +116,7 @@ This [HTML document][] has device orientation events that cause **no changes** t
 
 #### Passed Example 2
 
-<a class="example-link" title="Passed Example 2" href="/content-assets/wcag-act-rules/testcases/7677a9/97bfdaeddce617521aa5ea3e1f26449f21048685.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/7677a9/97bfdaeddce617521aa5ea3e1f26449f21048685.html">Open in a new tab</a>
 
 This [HTML document][] that can be operated through the device's orientation to increase and decrease the value of a slider has the **same result** available through `button` elements.
 
@@ -157,7 +157,7 @@ This [HTML document][] that can be operated through the device's orientation to 
 
 #### Passed Example 3
 
-<a class="example-link" title="Passed Example 3" href="/content-assets/wcag-act-rules/testcases/7677a9/491d1a634215dd07b1ac48d8e6edcf2aafff1d74.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/7677a9/491d1a634215dd07b1ac48d8e6edcf2aafff1d74.html">Open in a new tab</a>
 
 This [HTML document][] that can be operated by rotating the device to increase and decrease the value of a slider has the **same result** available through `button` elements.
 
@@ -198,7 +198,7 @@ This [HTML document][] that can be operated by rotating the device to increase a
 
 #### Passed Example 4
 
-<a class="example-link" title="Passed Example 4" href="/content-assets/wcag-act-rules/testcases/7677a9/2cad7ce1a800c77cfe9cf5798f4fe842d01c8ac5.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/7677a9/2cad7ce1a800c77cfe9cf5798f4fe842d01c8ac5.html">Open in a new tab</a>
 
 This [HTML document][] can be operated by rotating the device to increase and decrease the value of a slider and the location of an [instrument][] to support the **same results** is clearly available.
 
@@ -261,7 +261,7 @@ This [HTML document][] can be operated by rotating the device to increase and de
 
 #### Failed Example 1
 
-<a class="example-link" title="Failed Example 1" href="/content-assets/wcag-act-rules/testcases/7677a9/66dc2996d42b9dc2a5488716d8505186272d2a5b.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/7677a9/66dc2996d42b9dc2a5488716d8505186272d2a5b.html">Open in a new tab</a>
 
 This [HTML document][] that can be operated through the device's orientation to increase and decrease the value of a slider has not other way to achieve the **same result**.
 
@@ -301,7 +301,7 @@ This [HTML document][] that can be operated through the device's orientation to 
 
 #### Inapplicable Example 1
 
-<a class="example-link" title="Inapplicable Example 1" href="/content-assets/wcag-act-rules/testcases/7677a9/2694ab357e8e65b63d04049518396248d45b8091.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/7677a9/2694ab357e8e65b63d04049518396248d45b8091.html">Open in a new tab</a>
 
 This [HTML document][] is not operable by device motion.
 
