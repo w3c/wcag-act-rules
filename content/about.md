@@ -20,7 +20,7 @@ Guidance for others is in <cite>Understanding WCAG</cite> and <cite>WCAG Techniq
 {% include box.html type="end" %}
 {:/}
 
-The [List of Test Rules for WCAG 2](https://www.w3.org/WAI/standards-guidelines/act/rules/) is updated periodically. The rules are developed according to the [Accessibility Conformance Testing (ACT) Rules Format 1.0](https://www.w3.org/WAI/standards-guidelines/act/) standard.
+The [List of Test Rules for WCAG 2](https://www.w3.org/WAI/standards-guidelines/act/rules/) is updated periodically. The rules are developed according to the [Accessibility Conformance Testing (ACT) Rules Format 1.0 {% include_cached icon.html name="different-view" %}](https://www.w3.org/WAI/standards-guidelines/act/) standard.
 
 [Understanding Conformance](https://www.w3.org/WAI/WCAG22/Understanding/conformance) provides related information, including on [understanding accessibility support](https://www.w3.org/WAI/WCAG22/Understanding/conformance#accessibility-support).
 
