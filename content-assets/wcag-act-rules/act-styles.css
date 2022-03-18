@@ -1,0 +1,7 @@
+@media (min-width: 480px) { 
+  a.example-link {
+    float: right;
+    padding: 0;
+    margin: -2.5em 0 0;
+  }
+}
