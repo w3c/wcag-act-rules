@@ -40,38 +40,15 @@
     <a href="#main" class="button button--skip-link">Skip to content</a>
 
     <div class="minimal-header-container default-grid">
-      {% include minimal-header.html translations=translations subtitle=page.standalone_resource_doc_name_sub title=page.standalone_resource_doc_name %}
+      {% include minimal-header.html translations = translations 
+                                     title = page.standalone_resource_header.title
+                                     subtitle = page.standalone_resource_header.subtitle 
+                                     link = page.standalone_resource_header.link %}
     </div>
 
-    {% if page.standalone_resource_about_nav %}
-    <div class="default-grid nav-container nav-related-info">
-        <div class="nav">
-          <nav class="standalone-resource-about" aria-label="Related information">
-            <dl>
-              <dt>About:</dt>
-              {% assign docaboutnav = page.standalone_resource_about_nav %}
-              {% for link in docaboutnav %}
-              <dd>
-                {%- if page.permalink == link.ref %}
-                    <span>{{link.name}}</span>
-                {% else %}
-                    <a href="{{ link.ref | relative_url }}">{{ link.name }}
-                    {%- if link.icon %}
-                        {%- capture icon -%}{{link.icon}}{%- endcapture -%}
-                        {%- include_cached icon.html name=icon -%}
-                    {%- endif -%}
-                    </a>
-                {% endif %}
-            </dd>
-              {% endfor %}
-            </dl>
-          </nav>
-        </div>
-    </div>
-    {% endif %}
     <div class="default-grid nav-container nav-page-specific">
         <div class="nav">
-          {% if page.standalone_resource_about_nav %}
+          {% if page.standalone_resource_pager %}
           {% assign pager = page.standalone_resource_pager %}
           <nav class="standalone-resource-pager" aria-label="Item navigation">
             <ul>
@@ -118,18 +95,6 @@
     <div class="default-grid with-gap leftcol">
 
 <style>
-#site-header.minimal-header.with-subtitle {
-  padding: 1.75em 0 0 0;
-}
-
-.minimal-header.with-subtitle .minimal-header-name {
-  font-size: 1.5em;
-}
-
-.nav-container {
-  margin-bottom: 0;
-}
-
 .nav {
   background: none;
 }
@@ -226,7 +191,7 @@ nav.standalone-resource-about {
 }
 
 .standalone-resource-pager {
-  padding: 1em 0;
+  padding: .7em 0;
 }
 
 .standalone-resource-pager ul {
@@ -289,13 +254,6 @@ nav.standalone-resource-about {
   opacity: 0;
 }
 
-.minimal-header-subtitle {
-  display: block;
-  font-size: 60%;
-  margin-top: 1.5em;
-  font-style: italic;
-}
-
 .standalone-resource-navrule {
     border:none;
     border-top: 1px solid grey
@@ -320,12 +278,6 @@ nav.standalone-resource-about {
 }
 
 </style>
-
-    {% if page.type_of_guidance == "Design Pattern" or page.type_of_guidance == "Objective" %}
-      {% if page.related.sections != null %} 
-        {% capture content %}{{ content }}{% include related-info.html sections=page.related.sections %}{% endcapture %}   
-      {% endif%}
-    {% endif%} 
 
     {% assign sidebar = page.sidebar %}
     {% if sidebar == nil %} {% assign sidebar = layout.sidebar %} {% endif %}

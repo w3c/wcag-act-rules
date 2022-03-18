@@ -20,17 +20,6 @@ WCAG 2 Test Rules are primarily for developers of evaluation tools and test meth
 {% include box.html type="end" %}
 {:/}
 
-{::nomarkdown}
-{% include_cached toc.html type="start" title="Page Contents" %}
-{:/}
-
-- This will be replaced by an automatically generated TOC when using Markdown formatting.
-{:toc}
-
-{::nomarkdown}
-{% include_cached toc.html type="end" %}
-{:/}
-
 The [List of Test Rules for WCAG 2](https://www.w3.org/WAI/standards-guidelines/act/rules/) is updated periodically. The rules are developed according to the [Accessibility Conformance Testing (ACT) Rules Format 1.0](https://www.w3.org/WAI/standards-guidelines/act/) standard.
 
 [Understanding Conformance](https://www.w3.org/WAI/WCAG22/Understanding/conformance) provides related information, including on [understanding accessibility support](https://www.w3.org/WAI/WCAG22/Understanding/conformance#accessibility-support).
