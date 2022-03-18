@@ -21,9 +21,9 @@
   {%- assign timestamp = '?' | append: timestamp -%}
   {%- include_cached head.html type="start" timestamp=timestamp -%}
   {%- if site.data.lang[pagelang].rtl -%}
-  <title> W3C | {{ site.title | escape }} | {{ page.title | escape }} {%if page.doc-note-type == "archived" %}[{% include t.html t="Archived" %}]{% endif%}{%if page.doc-note-type == "draft" %}[{% include t.html t="Draft" %}]{% endif%}</title>
+  <title> W3C | WAI | {%if page.type_of_guidance %}{{page.type_of_guidance}} | {% endif%}{%if page.proposed %}[proposed]{% endif %}{{page.title}}</title>
   {%- else -%}
-  <title>{%if page.doc-note-type == "archived" %}[{% include t.html t="Archived" %}]{% endif%}{%if page.doc-note-type == "draft" %}[{% include t.html t="Draft" %}]{% endif%} {{ page.title | escape }} | {{ site.title | escape }} | W3C</title>
+  <title> {{page.title}}{%if page.proposed %}[proposed]{% endif %} | {%if page.type_of_guidance %}{{page.type_of_guidance}} | {% endif%}WAI | W3C</title>
   {%- endif -%}
   {%- if page.external_css %}<link rel="stylesheet" href="{{ page.external_css | relative_url | append: timestamp }}">{% endif -%}
   {%- if page.ext_css %}<link rel="stylesheet" href="{{ page.ext_css | prepend: '/css/' | prepend: page.collection | prepend: '/' | relative_url | append: timestamp }}">{% endif -%}
@@ -39,7 +39,7 @@
   <body id="top" class="page-{{page.title | slugify}} {% include_cached body-class.html collection=page.collection doc-note-type=page.doc-note-type %}">
     <a href="#main" class="button button--skip-link">Skip to content</a>
 
-    <div class="minimal-header-container default-grid">
+   <div class="minimal-header-container default-grid">
       {% include minimal-header.html translations = translations 
                                      title = page.standalone_resource_header.title
                                      subtitle = page.standalone_resource_header.subtitle 
@@ -178,6 +178,7 @@ nav.standalone-resource-about {
 .pager-icon {
   vertical-align: middle;
   padding: 0 0 0.15em 0;
+  margin: 0 -0.4em;
   width: 1.65em;
   height: 2em;
   fill: var(--dk-blue)
