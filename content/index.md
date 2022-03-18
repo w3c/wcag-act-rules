@@ -14,7 +14,7 @@ github:
 {% include box.html type="start" title="Summary" class="" %}
 {:/}
 
-WCAG 2 Test Rules describe how to test conformance to Web Content Accessibility Guidelines (WCAG) success criteria. They are primarily for developers of evaluation tools and test methodologies. Learn more from [About WCAG 2 Test Rules](/about/).
+WCAG 2 Test Rules describe how to test conformance to Web Content Accessibility Guidelines (WCAG) success criteria. They are primarily for developers of evaluation tools and test methodologies. Learn more from [About WCAG 2 Test Rules](/standards-guidelines/act/rules/about/).
 
 This page lists Test Rules formally published by the W3C Accessibility Guidelines Working Group (AG WG), and Proposed Test Rules. Additional Rules are in development and will be listed on this page when published.
 
