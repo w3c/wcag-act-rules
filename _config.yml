@@ -64,7 +64,7 @@ defaults:
           ref: /standards-guidelines/act/rules/
         - name: About Rules
           ref: /standards-guidelines/act/rules/about/
-      standalone_resource_doc_name: "WCAG 2 Test Rules"
+      standalone_resource_doc_name: "Accessibility Conformance Test (ACT) Rules"
 
 plugins:
   - jekyll-seo-tag
