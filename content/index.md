@@ -1,4 +1,5 @@
 ---
+layout: standalone_resource
 title: "All WCAG 2 Test Rules"
 permalink: /standards-guidelines/act/rules/
 ref: /standards-guidelines/act/rules/
