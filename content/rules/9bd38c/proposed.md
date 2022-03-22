@@ -9,9 +9,9 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 9bd38c</p>
-  <p><strong>Date:</strong> Updated 28 January 2022</p>
+  <p><strong>Date:</strong> Updated 16 March 2022</p>
   <p><strong>Authors:</strong> <a href="https://www.linkedin.com/in/brianbors/">Brian Bors</a>, <a href="https://github.com/danistr">Daniël Strik</a>, <a href="https://github.com/Jym77">Jean-Yves Moyen</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
-  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
+  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
 rule_meta:
   id: 9bd38c
@@ -19,11 +19,8 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that when content is identified through a visual reference, there are also non-visual references identifying the same content.
-  last_modified: 28 January 2022
+  last_modified: 16 March 2022
   scs_tested:
-    - handle: Info and Relationships
-      num: 1.3.1
-      level: A
     - handle: Sensory Characteristics
       num: 1.3.3
       level: A
@@ -45,7 +42,7 @@ For each test target, either it contains none of the [visual reference words][],
 
 ## Assumptions
 
-- This rule assumes that [visual reference words][] are forms of information conveyed through visual presentation. Therefore, failing this rule fails both [Success Criterion 1.3.1 Info and Relationships][sc131] and [Success Criterion 1.3.3 Sensory Characteristics][sc133]. Visual presentation is not limited to CSS and includes images such as the image of a circle with text.
+- This rule assumes that [visual reference words][] are forms of information conveyed through visual presentation. Therefore, failing this rule fails [Success Criterion 1.3.3 Sensory Characteristics][sc133]. Visual presentation is not limited to CSS and includes images such as the image of a circle with text.
 
 - This rule assumes that the language of each test target can be correctly determined (either programmatically or by analyzing the content), and sufficiently understood.
 
@@ -57,13 +54,12 @@ _There are no major accessibility support issues known for this rule._
 
 [Visual reference words][] that can be interpreted with the non-sensory meaning include, in English, expressions like "right after this" where "right" is a [visual reference word][] used with the meaning "immediately"; or words like "below" that is often used with the meaning "further in reading order".
 
-The rule doesn't require the non-visual characteristic description to be included in the accessibility tree. If the alternatives are not included in the accessibility tree, only [Success Criteria 1.3.1 Info and Relationships][sc131] would fail instead of both [Success Criterion 1.3.3 Sensory Characteristics][sc133] and [Success Criteria 1.3.1 Info and Relationships][sc131]. Hence, the rule passes in these cases as it is not a failure of all accessibility requirements.
+The rule doesn't require the non-visual characteristic description to be included in the accessibility tree. If the alternatives are not included in the accessibility tree, only [Success Criteria 1.3.1 Info and Relationships][sc131] would fail instead of [Success Criterion 1.3.3 Sensory Characteristics][sc133]. Hence, the rule passes in these cases as it is not a failure of the accessibility requirements of this rule.
 
 The identified web content does not have to be positioned on the same web page and doesn't need to be linked to from the tested web page.
 
 ### Bibliography
 
-- [WCAG 2.1 - Understanding Success Criterion 1.3.1: Info and Relationships](https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships.html)
 - [WCAG 2.1 - Understanding Success Criterion 1.3.3: Sensory Characteristics](https://www.w3.org/WAI/WCAG21/Understanding/sensory-characteristics.html)
 - [G96: Providing textual identification of items that otherwise rely only on sensory information to be understood](https://www.w3.org/WAI/WCAG21/Techniques/general/G96)
 - [F14: Failure of Success Criterion 1.3.3 due to identifying content only by its shape or location](https://www.w3.org/WAI/WCAG21/Techniques/failures/F14)
@@ -72,18 +68,6 @@ The identified web content does not have to be positioned on the same web page a
 ## Accessibility Requirements Mapping
 
 <ul class="act-requirements-list">
-  <li><details>
-    <summary><span>1.3.1 Info and Relationships (Level A)</span></summary>
-    <ul>
-      <li><a href="https://www.w3.org/TR/WCAG21/#info-and-relationships">Learn more about 1.3.1 Info and Relationships</a></li>
-      <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level A and higher.</li>
-      <li>Outcome mapping: <ul>
-        <li>Any <code>failed</code> outcomes: success criterion is not satisfied</li>
-        <li>All <code>passed</code> outcomes: success criterion needs further testing</li>
-        <li>An <code>inapplicable</code> outcome: success criterion needs further testing</li>
-      </ul></li>
-    </ul>
-  </details></li>
   <li><details>
     <summary><span>1.3.3 Sensory Characteristics (Level A)</span></summary>
     <ul>
@@ -125,6 +109,8 @@ The following aspects are required in using this rule.
 
 #### Passed Example 1
 
+<a class="example-link" title="Passed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/9bd38c/6edd8b8ec9bb14d8f35763e549f01cc21b3ef161.html">Open in a new tab</a>
+
 This paragraph includes the [visual reference word][] "right". The content in the second column is identified with the word "right" but also identified by referencing the word "howdy", thus matching the **non-visual reference** condition.
 
 ```html
@@ -148,6 +134,8 @@ This paragraph includes the [visual reference word][] "right". The content in th
 
 #### Passed Example 2
 
+<a class="example-link" title="Passed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/9bd38c/e871d671f9e22112d76505e07c6297f1605a844d.html">Open in a new tab</a>
+
 This paragraph includes the [visual reference word][] "below" which can here be accurately interpreted as "further in the reading order". Hence, the paragraph matches the **non-sensory meaning** condition.
 
 ```html
@@ -158,6 +146,8 @@ This paragraph includes the [visual reference word][] "below" which can here be 
 ```
 
 #### Passed Example 3
+
+<a class="example-link" title="Passed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/9bd38c/5c97d7f0e034132669260719d7ea5ae899990ad4.html">Open in a new tab</a>
 
 This paragraph includes the [visual reference word][] "right". The visual reference made by the word "right" is complemented by the non-visual reference made by the word "menu" to the content identified by the "Menu" heading, thus matching the **non-visual reference** condition.
 
@@ -190,6 +180,8 @@ This paragraph includes the [visual reference word][] "right". The visual refere
 
 #### Passed Example 4
 
+<a class="example-link" title="Passed Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/9bd38c/432e113b02825ed7fcfaac362f32aa6daa44a915.html">Open in a new tab</a>
+
 This text includes the [visual reference word][] "tilted" and identifies web content (namely itself). But the text also includes the word "this" which makes it apparent that the description is about the same content, thus matching the **non-visual reference** condition.
 
 ```html
@@ -213,6 +205,8 @@ This text includes the [visual reference word][] "tilted" and identifies web con
 ```
 
 #### Passed Example 5
+
+<a class="example-link" title="Passed Example 5" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/9bd38c/82e2fbab97b00d55b198c4a2b8914341a2ea1131.html">Open in a new tab</a>
 
 This paragraph includes the [visual reference word][] "round". The button is identified by this word which is also included in the [visible text content][] of the element, thus matching the **visible words** condition.
 
@@ -239,6 +233,8 @@ This paragraph includes the [visual reference word][] "round". The button is ide
 
 #### Passed Example 6
 
+<a class="example-link" title="Passed Example 6" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/9bd38c/09eef7b7b29e82e2902cb09afe8102af365276d4.html">Open in a new tab</a>
+
 This paragraph includes the [visual reference word][] "triangle" which is included in the heading of the menu, thus matching the **visible words** condition. The fact that the described content is on another page of the same website does not restrict this rule.
 
 ```html
@@ -252,6 +248,8 @@ This paragraph includes the [visual reference word][] "triangle" which is includ
 ```
 
 #### Passed Example 7
+
+<a class="example-link" title="Passed Example 7" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/9bd38c/d9e9bc689ec574b6788279af9e433a0abd4a2c62.html">Open in a new tab</a>
 
 This paragraph includes the [visual reference words][] "wide" and "narrow". The images are indicated by these words which are also included in the [accessible names][accessible name] of the images, thus matching the **accessible words** condition.
 
@@ -271,6 +269,8 @@ This paragraph includes the [visual reference words][] "wide" and "narrow". The 
 
 #### Passed Example 8
 
+<a class="example-link" title="Passed Example 8" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/9bd38c/1f4772b7324aedad632f34d1158f349f00812db0.html">Open in a new tab</a>
+
 This paragraph includes the [visual reference words][] "square" and "right" but in this case they are not identifying any [web content][].
 
 ```html
@@ -280,6 +280,8 @@ This paragraph includes the [visual reference words][] "square" and "right" but 
 ```
 
 #### Passed Example 9
+
+<a class="example-link" title="Passed Example 9" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/9bd38c/4b4ad8012cb0399cf60658adbdfebfc09b5dbbf3.html">Open in a new tab</a>
 
 This paragraph includes the [visual reference word][] "circle" but in this case it is not an instruction about any [web content][], thus matching the **no instruction** condition.
 
@@ -302,6 +304,8 @@ This paragraph includes the [visual reference word][] "circle" but in this case 
 
 #### Passed Example 10
 
+<a class="example-link" title="Passed Example 10" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/9bd38c/f435059abb93ebf8727962b7601eae3cacad532b.html">Open in a new tab</a>
+
 This paragraph includes the [visual reference word][] "star" but there is also a heading "examples" that can be referenced, thus matching the **non-visual references** condition. The fact that the identified content is in an `iframe` does not restrict this rule.
 
 ```html
@@ -312,6 +316,8 @@ This paragraph includes the [visual reference word][] "star" but there is also a
 ```
 
 #### Passed Example 11
+
+<a class="example-link" title="Passed Example 11" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/9bd38c/dcc4ce96f7930eae43e20af69cb33038b64a2f4d.html">Open in a new tab</a>
 
 This paragraph includes the [visual reference word][] "right". The content in the second column is identified with the word "right" but also identified by referencing the word "howdy", thus matching the **non-visual reference** condition. Note that, despite the fact that the text is not visible, this example is applicable because it is included in the accessibility tree.
 
@@ -336,6 +342,8 @@ This paragraph includes the [visual reference word][] "right". The content in th
 
 #### Passed Example 12
 
+<a class="example-link" title="Passed Example 12" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/9bd38c/4be9e2292ade4f8d8c3eae6f6765ac365a9eba74.html">Open in a new tab</a>
+
 This paragraph includes the [visual reference word][] "green". The content in the second column is identified with the word "green" but also identified by referencing the word "howdy", thus matching the **non-visual reference** condition. Note that, despite the fact that the text is not included in the accessibility tree, this example is applicable because it is visible.
 
 ```html
@@ -358,6 +366,8 @@ This paragraph includes the [visual reference word][] "green". The content in th
 ```
 
 #### Passed Example 13
+
+<a class="example-link" title="Passed Example 13" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/9bd38c/ba67863826af41061dd4e55c5ad1fe4a5d741092.html">Open in a new tab</a>
 
 This paragraph includes the [visual reference word][] "right". The user is told to find the navigation on the right and the navigation is also correctly identified by a `nav` element whose [accessible name][] contains the word "navigation", thus matching the **non-visual reference** condition.
 
@@ -391,6 +401,8 @@ This paragraph includes the [visual reference word][] "right". The user is told 
 
 #### Passed Example 14
 
+<a class="example-link" title="Passed Example 14" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/9bd38c/b1ea0d4d1bb1b2edc85aa84e424b57d5545c705d.html">Open in a new tab</a>
+
 No [text node][] on this page includes any of the [visual reference words][].
 
 ```html
@@ -401,6 +413,8 @@ No [text node][] on this page includes any of the [visual reference words][].
 ```
 
 #### Passed Example 15
+
+<a class="example-link" title="Passed Example 15" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/9bd38c/d76ef447c5266fed36f05cbe00cf2a11b649f652.html">Open in a new tab</a>
 
 No [text node][] on this page includes any of the [visual reference words][]. The word "square" in French (the language of the page) never has the meaning of the geometrical figure. Hence, it is not the translation of any of the [visual reference words][]. The sentence means "After school, he's taking his kids to the public garden."
 
@@ -415,6 +429,8 @@ No [text node][] on this page includes any of the [visual reference words][]. Th
 ### Failed
 
 #### Failed Example 1
+
+<a class="example-link" title="Failed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/9bd38c/e25c4256ff639ea16f196a9b9fedcdabba540125.html">Open in a new tab</a>
 
 This paragraph includes the [visual reference word][] "right". The user is told to find the menu on the right but the menu is not identified in any other way.
 
@@ -445,6 +461,8 @@ This paragraph includes the [visual reference word][] "right". The user is told 
 ```
 
 #### Failed Example 2
+
+<a class="example-link" title="Failed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/9bd38c/83cffb1ea6a8411d7c4a021e64f4dead893f4875.html">Open in a new tab</a>
 
 This paragraph includes the [visual reference word][] "right". The user is told to find the navigation on the right and the navigation is correctly identified by a `nav` element, but there are 2 `nav` elements on the page so the user doesn't know which one to use (the non-visual reference is ambiguous and does not identify a specific [web content][]).
 
@@ -488,6 +506,8 @@ This paragraph includes the [visual reference word][] "right". The user is told 
 
 #### Failed Example 3
 
+<a class="example-link" title="Failed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/9bd38c/1527ef77130c2971dc36758bdc903e4f469715a5.html">Open in a new tab</a>
+
 This paragraph includes the [visual reference word][] "triangle" (which is not included in the identified content) and no other indication is present so the rule fails. The fact that the triangle menu is on a different page of the same website does not restrict the rule.
 
 ```html
@@ -506,6 +526,8 @@ This paragraph includes the [visual reference word][] "triangle" (which is not i
 
 #### Failed Example 4
 
+<a class="example-link" title="Failed Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/9bd38c/b98e3574a99c86e8cc5b63c6f85868ab4427f4e9.html">Open in a new tab</a>
+
 This paragraph includes the [visual reference word][] "star" (which is not included in the identified content) and there is no other indication. The content described is in an `iframe`.
 
 ```html
@@ -521,6 +543,8 @@ This paragraph includes the [visual reference word][] "star" (which is not inclu
 
 #### Inapplicable Example 1
 
+<a class="example-link" title="Inapplicable Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/9bd38c/8ffada5cb337c6481f65a1b0c0fc318f0695fd56.html">Open in a new tab</a>
+
 This image link contains no [text node][].
 
 ```html
@@ -530,6 +554,8 @@ This image link contains no [text node][].
 ```
 
 #### Inapplicable Example 2
+
+<a class="example-link" title="Inapplicable Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/9bd38c/547eb8bf40d515cb7e8f35259af350bd7a92019c.html">Open in a new tab</a>
 
 This document contains no [text node][] that is either [visible][] or [included in the accessibility tree][].
 
@@ -560,7 +586,17 @@ For more details, see [examples of accessible name][].
 
 ### Focusable {#focusable}
 
-Elements that can become the target of keyboard input as described in the [HTML](https://www.w3.org/TR/html) specification of [focusable](https://html.spec.whatwg.org/#focusable-area) and [can be focused](https://html.spec.whatwg.org/#specially-focusable).
+An element is _focusable_ if one or both of the following are true:
+
+- the element is part of [sequential focus navigation][]; or
+- the element has a [tabindex value][] that is not null.
+
+**Exception**: Elements that lose focus during a period of up to 1 second after gaining focus, without the user interacting with the page the element is on, are not considered _focusable_.
+
+Notes:
+
+- The 1 second time span is an arbitrary limit which is not included in WCAG. Given that scripts can manage the focus state of elements, testing the focusability of an element consistently would be impractical without a time limit.
+- The [tabindex value][] of an element is the value of the [tabindex attribute][] parsed using the [rules for parsing integers][]. For the [tabindex value][] to be different from null, it needs to be [parsed][rules for parsing integers] without errors.
 
 ### Included in the accessibility tree {#included-in-the-accessibility-tree}
 
@@ -588,11 +624,12 @@ An _outcome_ is a conclusion that comes from evaluating an ACT Rule on a [test s
 
 An HTML element is _programmatically hidden_ if either it has a [computed][] CSS property `visibility` whose value is not `visible`; or at least one of the following is true for any of its [inclusive ancestors][] in the [flat tree][]:
 
-- has a `hidden` attribute; or
 - has a [computed][] CSS property `display` of `none`; or
 - has an `aria-hidden` attribute set to `true`
 
 **Note**: Contrarily to the other conditions, the `visibility` CSS property may be reverted by descendants.
+
+**Note**: The [HTML standard suggests](https://html.spec.whatwg.org/multipage/rendering.html#hidden-elements) rendering elements with the `hidden` attribute with a CSS rule that applies the value `none` to the CSS property `display` of the element. Although the suggestion is not normative, known user agents render it according to the suggestion (unless the content specifies another CSS rule that sets the value of the `display` property). If a user agent does not follow the suggestion, this definition may produce incorrect results for this user agent.
 
 ### Visible {#visible}
 
@@ -764,8 +801,12 @@ This is the first version of this ACT rule.
 [flat tree]: https://drafts.csswg.org/css-scoping/#flat-tree 'Definition of flat tree'
 [included in the accessibility tree]: #included-in-the-accessibility-tree 'Definition of Included in the Accessibility Tree'
 [inclusive ancestors]: https://dom.spec.whatwg.org/#concept-tree-inclusive-ancestor 'DOM Definition of Inclusive Ancestor'
+[rules for parsing integers]: https://html.spec.whatwg.org/#rules-for-parsing-integers
 [sc131]: https://www.w3.org/TR/WCAG21/#info-and-relationships 'Success Criterion 1.3.1 Info and Relationships'
 [sc133]: https://www.w3.org/TR/WCAG21/#sensory-characteristics 'Success Criterion 1.3.3 Sensory Characteristics'
+[sequential focus navigation]: https://html.spec.whatwg.org/multipage/interaction.html#sequential-focus-navigation
+[tabindex attribute]: https://html.spec.whatwg.org/#attr-tabindex
+[tabindex value]: https://html.spec.whatwg.org/#tabindex-value
 [text node]: https://dom.spec.whatwg.org/#text 'Specification of Text Node'
 [text nodes]: https://dom.spec.whatwg.org/#text 'DOM text, 2020/08/18'
 [text]: https://www.w3.org/TR/WCAG21/#dfn-text 'WCAG definition of Text'
