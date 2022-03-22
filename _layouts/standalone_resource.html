@@ -36,7 +36,7 @@
   <meta name="twitter:image" property="og:image" content="{{ twimage | relative_url | prepend: site.url }}">
   {%- endunless -%}
   {% include_cached head.html type="end" %}
-  <body id="top" class="page-{{page.title | slugify}} {% include_cached body-class.html collection=page.collection doc-note-type=page.doc-note-type %}">
+  <body id="top" class="page-{{page.title | slugify}} {% include_cached body-class.html collection=page.collection doc-note-type=page.doc-note-type pageclass=page.class%}">
     <a href="#main" class="button button--skip-link">Skip to content</a>
 
    <div class="minimal-header-container default-grid">
@@ -47,17 +47,18 @@
     </div>
 
     <div class="default-grid nav-container">
-        <div class="nav">
+        <div class="nav" >
           {% if page.standalone_resource_pager %}
           {% assign pager = page.standalone_resource_pager %}
-          <nav class="standalone-resource-pager" aria-label="Item navigation">
+          <nav class="nav standalone-resource-pager" aria-label="Item navigation">
             <ul>
-                <li>
+                <li class="nav__item">
                 {%- if page.standalone_resource_pager.icon -%}
                     {%- capture icon-element -%}<img src="{{page.standalone_resource_pager.icon}}" alt="" class="category-icon">{%- endcapture -%}
                 {%- endif -%}
-                {%- if page.permalink == pager.ref %}
-                    <span class="pagename">{{icon-element}}{{pager.name}}</span>
+                {% assign ref = pager.ref | split: "#" | first %}
+                {%- if page.permalink == ref %}
+                    <a class="pagename active" aria-current="page">{{icon-element}}{{pager.name}}</a>
                 {%else%}
                     <a href="{{pager.ref}}">{{icon-element}}{{pager.name}}</a>
                 {%endif%}
@@ -66,13 +67,13 @@
                 {% if page.standalone_resource_pager.include %}
                     {% include {{ page.standalone_resource_pager.include }} %}
                     {% if context %}
-                        <li><a href="{{ context[1] }}">{% include_cached icon.html class="pager-icon" name="arrow-up-thin" %} {{ context[0] }}: {{context[2]}}</a></li>
+                        <li class="nav__item"><a href="{{ context[1] }}">{% include_cached icon.html class="pager-icon" name="arrow-up-thin" %} {{ context[0] }}: {{context[2]}}</a></li>
                     {% endif %}
                     {% if prev  %}
-                        <li><a href="{{ prev[1] }}">{% include_cached icon.html class="pager-icon" name="arrow-left-thin" %} {{ prev[0] }}</a></li>
+                        <li class="nav__item"><a href="{{ prev[1] }}">{% include_cached icon.html class="pager-icon" name="arrow-left-thin" %} {{ prev[0] }}</a></li>
                     {% endif %}
                     {% if next %}
-                        <li><a href="{{ next[1] }}">{{ next[0] }} {% include_cached icon.html class="pager-icon" name="arrow-right-thin" %}</a></li>
+                        <li class="nav__item"><a href="{{ next[1] }}">{{ next[0] }} {% include_cached icon.html class="pager-icon" name="arrow-right-thin" %}</a></li>
                     {% endif %}
                 {% endif %}
             </ul>
@@ -137,33 +138,6 @@ nav.standalone-resource-about {
   font-style: italic;
 }
 
-.standalone-resource-about dl, .standalone-resource-about dt, .standalone-resource-about dd {
-	display: inline;
-	margin: 0;
-	padding: 0;
-}
-
-.standalone-resource-about dt{
-    font-weight: normal;
-}
-
-.standalone-resource-about dl a {
-    margin: 0;
-    padding: 0 1em 0 1em;
-}
-
-.standalone-resource-about dd {
-    border-right: 1px var(--gold) solid;
-}
-
-.standalone-resource-about dd:last-of-type {
-	border-right: 0;
-}
-
-.standalone-resource-about dd svg {
-    margin-left: 0.25rem;
-    vertical-align: middle;
-}
 
 .nav .standalone-resource-pager ul {
   align-items: center;
@@ -171,9 +145,12 @@ nav.standalone-resource-about {
 
 .nav .standalone-resource-pager a,
 .nav .standalone-resource-pager span {
+
   margin-left: 0;
   margin-right: 1.5em;
+  padding: .5em;
 }
+
 
 .pager-icon {
   vertical-align: middle;
@@ -191,15 +168,15 @@ nav.standalone-resource-about {
   height: 2em;
 }
 
-.standalone-resource-pager {
+.zstandalone-resource-pager {
   padding: .7em 0;
 }
 
-.standalone-resource-pager ul {
+.standalone-resource-pager zul {
   display: block;
 }
 
-.standalone-resource-pager ul li {
+.standalone-resource-pager zul li {
   display: inline;
 }
 
@@ -265,10 +242,6 @@ nav.standalone-resource-about {
     list-style: none;
 }
 
-.nav {
-    font-size: 85%;
-}
-
 .standalone-resource-about a,
 .standalone-resource-pager a,
 .standalone-resource-about span,
@@ -292,7 +265,7 @@ nav.standalone-resource-about {
                 {% for link in h2links %}
                 <li><a href="#{{ link[1] }}">{{ link[0] }}</a></li>
                 {% endfor %}
-                </ul>    
+                </ul>
             </div>
         </aside>
     {%else%}
@@ -312,7 +285,7 @@ nav.standalone-resource-about {
               {% endif %}
               {% if page.title_html %}{{ page.title_html }}{% else %}{{ page.title }}{% endif %}
             </h1>
-        </header>    
+        </header>
 
         {{ expanded_content }}
 
