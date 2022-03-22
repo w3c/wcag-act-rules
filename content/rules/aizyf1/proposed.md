@@ -9,9 +9,9 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> aizyf1</p>
-  <p><strong>Date:</strong> Updated 28 January 2022</p>
+  <p><strong>Date:</strong> Updated 16 March 2022</p>
   <p><strong>Authors:</strong> <a href="https://github.com/Jym77">Jean-Yves Moyen</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
-  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
+  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
 rule_meta:
   id: aizyf1
@@ -19,7 +19,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that the accessible name of a link describes its purpose.
-  last_modified: 28 January 2022
+  last_modified: 16 March 2022
   scs_tested:
     - handle: Link Purpose (Link Only)
       num: 2.4.9
@@ -94,6 +94,8 @@ The following aspects are required in using this rule.
 
 #### Passed Example 1
 
+<a class="example-link" title="Passed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/aizyf1/c7661d61606728f898297f6e69f68af3d5b6c6d0.html">Open in a new tab</a>
+
 This `a` element has an [accessible name][] from its text that describes its purpose.
 
 ```html
@@ -103,6 +105,8 @@ This `a` element has an [accessible name][] from its text that describes its pur
 ```
 
 #### Passed Example 2
+
+<a class="example-link" title="Passed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/aizyf1/9863e3ea603a1bdde28e5b94f8675579e33a16d7.html">Open in a new tab</a>
 
 This `a` element has an [accessible name][] from the `alt` attribute on its `img` element that describes its purpose.
 
@@ -116,6 +120,8 @@ This `a` element has an [accessible name][] from the `alt` attribute on its `img
 
 #### Passed Example 3
 
+<a class="example-link" title="Passed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/aizyf1/2eb4856e68c4cf8b3ed55f7d34b08ad4ae8b3fdd.html">Open in a new tab</a>
+
 This `span` element has an [explicit role][] of `link` and an [accessible name][] from its text that describes its purpose.
 
 ```html
@@ -125,6 +131,8 @@ This `span` element has an [explicit role][] of `link` and an [accessible name][
 ```
 
 #### Passed Example 4
+
+<a class="example-link" title="Passed Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/aizyf1/474db50232349ade7714e41c88af801d1f1e378b.html">Open in a new tab</a>
 
 This `a` element has an [accessible name][] from its `aria-labelledby` attribute that describes its purpose.
 
@@ -150,6 +158,8 @@ This `a` element has an [accessible name][] from its `aria-labelledby` attribute
 
 #### Failed Example 1
 
+<a class="example-link" title="Failed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/aizyf1/b2a671d96ac510ccc6e34dd58a141d13bb196508.html">Open in a new tab</a>
+
 This link has an [accessible name][] which does not describe its purpose.
 
 ```html
@@ -159,6 +169,8 @@ This link has an [accessible name][] which does not describe its purpose.
 ```
 
 #### Failed Example 2
+
+<a class="example-link" title="Failed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/aizyf1/bf3ba787eb7a6819ea1a6adccdfd1f30842ed788.html">Open in a new tab</a>
 
 This link has an [accessible name][] which does not describe its purpose.
 
@@ -171,6 +183,8 @@ This link has an [accessible name][] which does not describe its purpose.
 ```
 
 #### Failed Example 3
+
+<a class="example-link" title="Failed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/aizyf1/e6a7c924092d2351c3a5b4361ccde7917ad23c66.html">Open in a new tab</a>
 
 This link has an [accessible name][] which does not describe its purpose.
 
@@ -190,6 +204,8 @@ This link has an [accessible name][] which does not describe its purpose.
 
 #### Failed Example 4
 
+<a class="example-link" title="Failed Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/aizyf1/771c36b9967faec9926af86041d834b4a108a52e.html">Open in a new tab</a>
+
 This link has an [accessible name][] which, alone, does not describe its purpose.
 
 ```html
@@ -199,6 +215,8 @@ This link has an [accessible name][] which, alone, does not describe its purpose
 ```
 
 #### Failed Example 5
+
+<a class="example-link" title="Failed Example 5" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/aizyf1/b130285915a8ca42926a11553a5791f44b65d487.html">Open in a new tab</a>
 
 These links have [accessible names][accessible name] which, alone, do not describe their purpose.
 
@@ -223,6 +241,8 @@ These links have [accessible names][accessible name] which, alone, do not descri
 
 #### Inapplicable Example 1
 
+<a class="example-link" title="Inapplicable Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/aizyf1/e64416f9e9792cd76b77ee209a26269d47c3ff97.html">Open in a new tab</a>
+
 There is no [inheriting semantic][] `link` in this document.
 
 ```html
@@ -230,6 +250,8 @@ There is no [inheriting semantic][] `link` in this document.
 ```
 
 #### Inapplicable Example 2
+
+<a class="example-link" title="Inapplicable Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/aizyf1/afcf56e62d62b8f69b4a2881475f625a1ed7ecf9.html">Open in a new tab</a>
 
 This link is not [included in the accessibility tree][].
 
@@ -240,6 +262,8 @@ This link is not [included in the accessibility tree][].
 ```
 
 #### Inapplicable Example 3
+
+<a class="example-link" title="Inapplicable Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/aizyf1/ca563b842b32b8fc79ac872f8fc4e799fcf76072.html">Open in a new tab</a>
 
 There is no [inheriting semantic][] `link` in this document (`a` element without an `href` attribute do not have a role of `link`).
 
@@ -273,7 +297,17 @@ Other roles may be added as they become available. Not all roles will be support
 
 ### Focusable {#focusable}
 
-Elements that can become the target of keyboard input as described in the [HTML](https://www.w3.org/TR/html) specification of [focusable](https://html.spec.whatwg.org/#focusable-area) and [can be focused](https://html.spec.whatwg.org/#specially-focusable).
+An element is _focusable_ if one or both of the following are true:
+
+- the element is part of [sequential focus navigation][]; or
+- the element has a [tabindex value][] that is not null.
+
+**Exception**: Elements that lose focus during a period of up to 1 second after gaining focus, without the user interacting with the page the element is on, are not considered _focusable_.
+
+Notes:
+
+- The 1 second time span is an arbitrary limit which is not included in WCAG. Given that scripts can manage the focus state of elements, testing the focusability of an element consistently would be impractical without a time limit.
+- The [tabindex value][] of an element is the value of the [tabindex attribute][] parsed using the [rules for parsing integers][]. For the [tabindex value][] to be different from null, it needs to be [parsed][rules for parsing integers] without errors.
 
 ### Implicit Semantic Role {#implicit-role}
 
@@ -324,11 +358,12 @@ An _outcome_ is a conclusion that comes from evaluating an ACT Rule on a [test s
 
 An HTML element is _programmatically hidden_ if either it has a [computed][] CSS property `visibility` whose value is not `visible`; or at least one of the following is true for any of its [inclusive ancestors][] in the [flat tree][]:
 
-- has a `hidden` attribute; or
 - has a [computed][] CSS property `display` of `none`; or
 - has an `aria-hidden` attribute set to `true`
 
 **Note**: Contrarily to the other conditions, the `visibility` CSS property may be reverted by descendants.
+
+**Note**: The [HTML standard suggests](https://html.spec.whatwg.org/multipage/rendering.html#hidden-elements) rendering elements with the `hidden` attribute with a CSS rule that applies the value `none` to the CSS property `display` of the element. Although the suggestion is not normative, known user agents render it according to the suggestion (unless the content specifies another CSS rule that sets the value of the `display` property). If a user agent does not follow the suggestion, this definition may produce incorrect results for this user agent.
 
 ### Semantic Role {#semantic-role}
 
@@ -377,7 +412,11 @@ This is the first version of this ACT rule.
 [programmatically hidden]: #programmatically-hidden 'Definition of Programmatically Hidden'
 [pure decoration]: https://www.w3.org/TR/WCAG21/#dfn-pure-decoration 'WCAG definition of Pure Decoration'
 [role attribute]: https://www.w3.org/TR/role-attribute/ 'Specification of the role attribute'
+[rules for parsing integers]: https://html.spec.whatwg.org/#rules-for-parsing-integers
 [sc249]: https://www.w3.org/TR/WCAG21/#link-purpose-link-only 'Success Criterion 2.4.9: Link Purpose (Link Only)'
 [semantic role]: #semantic-role 'Definition of Semantic Role'
+[sequential focus navigation]: https://html.spec.whatwg.org/multipage/interaction.html#sequential-focus-navigation
+[tabindex attribute]: https://html.spec.whatwg.org/#attr-tabindex
+[tabindex value]: https://html.spec.whatwg.org/#tabindex-value
 [usc249]: https://www.w3.org/WAI/WCAG21/Understanding/link-purpose-link-only.html 'Understanding Success Criterion 2.4.9: Link Purpose (Link Only)'
 [wai-aria specifications]: #wai-aria-specifications 'Definition of WAI-ARIA specifications'

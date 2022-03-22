@@ -9,9 +9,9 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 2779a5</p>
-  <p><strong>Date:</strong> Updated 28 January 2022</p>
+  <p><strong>Date:</strong> Updated 16 March 2022</p>
   <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/brynanders">Bryn Anderson</a>, <a href="https://github.com/jkodu">Jey Nandakumar</a>, <a href="https://github.com/skotkjerra">Stein Erik Skotkjerra</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
-  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It was approved and published by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
+  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
 rule_meta:
   id: 2779a5
@@ -19,7 +19,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that a non-embedded HTML page has a non-empty title.
-  last_modified: 28 January 2022
+  last_modified: 16 March 2022
   scs_tested:
     - handle: Page Titled
       num: 2.4.2
@@ -114,6 +114,8 @@ The following aspects are required in using this rule.
 
 #### Passed Example 1
 
+<a class="example-link" title="Passed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/2779a5/7f9f315b5041f3726662bf269613c43678af99d4.html">Open in a new tab</a>
+
 This page has a `title` element with content.
 
 ```html
@@ -123,6 +125,8 @@ This page has a `title` element with content.
 ```
 
 #### Passed Example 2
+
+<a class="example-link" title="Passed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/2779a5/64771c390e57375a822a7223362ea7bb859c0a96.html">Open in a new tab</a>
 
 This page has a `title` element that serves as the title for the page and the `iframe` since the `iframe` does not have its own.
 
@@ -134,6 +138,8 @@ This page has a `title` element that serves as the title for the page and the `i
 ```
 
 #### Passed Example 3
+
+<a class="example-link" title="Passed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/2779a5/6b3d2e2147cfc618b744f2dabfaf2e66327055d7.html">Open in a new tab</a>
 
 This page has two `title` elements with content.
 
@@ -150,6 +156,8 @@ This page has two `title` elements with content.
 
 #### Passed Example 4
 
+<a class="example-link" title="Passed Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/2779a5/efa1e0438bb515332ec6b4d943044c336ca77fab.html">Open in a new tab</a>
+
 This page has one `title` element with content, which is within the `body` element.
 
 ```html
@@ -161,6 +169,8 @@ This page has one `title` element with content, which is within the `body` eleme
 ```
 
 #### Passed Example 5
+
+<a class="example-link" title="Passed Example 5" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/2779a5/0ad882dffaf6edd16058119e1c513b4746b0ac27.html">Open in a new tab</a>
 
 This page has two `title` elements and only the first has content.
 
@@ -179,6 +189,8 @@ This page has two `title` elements and only the first has content.
 
 #### Failed Example 1
 
+<a class="example-link" title="Failed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/2779a5/820fb18c9bb20fb1a940a0806a87c6f6e468bb5b.html">Open in a new tab</a>
+
 This page does not have a `title` element.
 
 ```html
@@ -188,6 +200,8 @@ This page does not have a `title` element.
 ```
 
 #### Failed Example 2
+
+<a class="example-link" title="Failed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/2779a5/314d991fa5328e41f8a806bfbac84d748b41f7ed.html">Open in a new tab</a>
 
 This page has a `title` element that is empty.
 
@@ -199,6 +213,8 @@ This page has a `title` element that is empty.
 
 #### Failed Example 3
 
+<a class="example-link" title="Failed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/2779a5/5fd6fda771cf8810eef5166464622d6979e0406e.html">Open in a new tab</a>
+
 This page does not have a `title` element. The `title` element in the content of the `iframe` does not function as the title for the entire page.
 
 ```html
@@ -208,6 +224,8 @@ This page does not have a `title` element. The `title` element in the content of
 ```
 
 #### Failed Example 4
+
+<a class="example-link" title="Failed Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/2779a5/a14968698b0e95b6624f187d4538e320e4fa8952.html">Open in a new tab</a>
 
 This page has two `title` elements and the first is empty.
 
@@ -224,6 +242,8 @@ This page has two `title` elements and the first is empty.
 
 #### Failed Example 5
 
+<a class="example-link" title="Failed Example 5" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/2779a5/4eeff9c95f15e90ca5abc972079112d1ea5c3d51.html">Open in a new tab</a>
+
 This page has a `title` element that only contains a separator character.
 
 ```html
@@ -235,6 +255,8 @@ This page has a `title` element that only contains a separator character.
 ### Inapplicable
 
 #### Inapplicable Example 1
+
+<a class="example-link" title="Inapplicable Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/2779a5/ecc29b73e37b6a125b3fd9767068dcaa368d467a.svg">Open in a new tab</a>
 
 This `title` element is a child of an `svg` element.
 

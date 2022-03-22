@@ -9,9 +9,9 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> c5a4ea</p>
-  <p><strong>Date:</strong> Updated 28 January 2022</p>
+  <p><strong>Date:</strong> Updated 16 March 2022</p>
   <p><strong>Authors:</strong> <a href="https://www.linkedin.com/in/brianbors/">Brian Bors</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
-  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules community group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
+  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
 rule_meta:
   id: c5a4ea
@@ -19,7 +19,7 @@ rule_meta:
   rule_type: composite
   description: |
     This rule checks that `video` elements with audio have an alternative for the video content as audio or as text.
-  last_modified: 28 January 2022
+  last_modified: 16 March 2022
   scs_tested:
     - handle: Audio Description or Media Alternative (Prerecorded)
       num: 1.2.3
@@ -159,15 +159,17 @@ This rule is designed specifically for [1.2.3 Audio Description or Media Alterna
 
 Outcomes of the following rules are required as input for this rule.
 
-- [`video` element visual content has audio description](/standards-guidelines/act/rules/c5a4ea/)
-- [Audio and visuals of `video` element have transcript](/standards-guidelines/act/rules/c5a4ea/)
-- [`video` element content is media alternative for text](/standards-guidelines/act/rules/c5a4ea/)
+- [`video` element visual content has audio description](/standards-guidelines/act/rules/video-audio-description-1ea59c/)
+- [Audio and visuals of `video` element have transcript](/standards-guidelines/act/rules/video-transcript-1a02b0/)
+- [`video` element content is media alternative for text](/standards-guidelines/act/rules/video-as-media-alternative-ab4d13/)
 
 ## Test Cases
 
 ### Passed
 
 #### Passed Example 1
+
+<a class="example-link" title="Passed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/c5a4ea/830584542b47beaac2df52e84ceff7530be043fb.html">Open in a new tab</a>
 
 This `video` element has an audio description because it has voiceover that describes the visual information.
 
@@ -182,6 +184,8 @@ This `video` element has an audio description because it has voiceover that desc
 
 #### Passed Example 2
 
+<a class="example-link" title="Passed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/c5a4ea/5168368fb6d8cc4ea41b679e312c84e283baea9f.html">Open in a new tab</a>
+
 A video element with a link to a text transcript.
 
 ```html
@@ -195,6 +199,8 @@ A video element with a link to a text transcript.
 ```
 
 #### Passed Example 3
+
+<a class="example-link" title="Passed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/c5a4ea/91f5189004dff8c702eefb7214486bd18868fee1.html">Open in a new tab</a>
 
 A video element that describes some of the text on the same page. The text on the page labels the video as an alternative.
 
@@ -213,6 +219,8 @@ A video element that describes some of the text on the same page. The text on th
 
 #### Failed Example 1
 
+<a class="example-link" title="Failed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/c5a4ea/4095c53d7b6550e5af6a9edf43ec7c803bc1e462.html">Open in a new tab</a>
+
 This `video` element has an incorrect audio description.
 
 ```html
@@ -225,6 +233,8 @@ This `video` element has an incorrect audio description.
 ```
 
 #### Failed Example 2
+
+<a class="example-link" title="Failed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/c5a4ea/366b3437e37e58175a9edba0ce28a37e25d82902.html">Open in a new tab</a>
 
 A video element with a link to an incorrect text transcript on a different page.
 
@@ -240,6 +250,8 @@ A video element with a link to an incorrect text transcript on a different page.
 
 #### Failed Example 3
 
+<a class="example-link" title="Failed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/c5a4ea/4b86a2baaa324f721a4bf646b87993be599b82a1.html">Open in a new tab</a>
+
 A video element that describes some of the text on the same page. The video contains more information than the text does.
 
 ```html
@@ -254,6 +266,8 @@ A video element that describes some of the text on the same page. The video cont
 ```
 
 #### Failed Example 4
+
+<a class="example-link" title="Failed Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/c5a4ea/92f8362bf7b6778410dd0a0f660918794c85df27.html">Open in a new tab</a>
 
 A video element with a description track element. Description tracks are not supported.
 
@@ -271,6 +285,8 @@ A video element with a description track element. Description tracks are not sup
 
 #### Inapplicable Example 1
 
+<a class="example-link" title="Inapplicable Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/c5a4ea/8664da01669e891e6f0aa73cd85e71277961cc4c.html">Open in a new tab</a>
+
 A video element without audio.
 
 ```html
@@ -283,6 +299,8 @@ A video element without audio.
 ```
 
 #### Inapplicable Example 2
+
+<a class="example-link" title="Inapplicable Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/c5a4ea/1b605662e74aa7411e29dc56dfa4530efe95ae67.html">Open in a new tab</a>
 
 A video element that is not [visible][].
 
