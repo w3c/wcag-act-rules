@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> qt1vmo</p>
-  <p><strong>Date:</strong> Updated 16 March 2022</p>
+  <p><strong>Date:</strong> Updated 24 March 2022</p>
   <p><strong>Authors:</strong> <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
   
@@ -21,7 +21,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that the accessible names of images serve an equivalent purpose to the image.
-  last_modified: 16 March 2022
+  last_modified: 24 March 2022
   scs_tested:
     - handle: Non-text Content
       num: 1.1.1
@@ -147,17 +147,20 @@ This `svg` element has an `aria-label` attribute that describes the image.
 
 #### Passed Example 3
 
-<a class="example-link" title="Passed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/qt1vmo/8c9dd43d42486d92c991a1fdc9543bbcf2c8efce.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/qt1vmo/68e50a217d9f01ccd5bfd4f3ad4227b163165297.html">Open in a new tab</a>
 
 This `canvas` element has an `aria-label` attribute that describes the image.
 
 ```html
 <html lang="en">
-	<canvas id="act" width="200" height="60" aria-label="ACT Rules!"></canvas>
+	<canvas id="logo" width="72" height="48" aria-label="W3C"></canvas>
 	<script>
-		const ctx = document.querySelector('#act').getContext('2d')
-		ctx.font = '30px Arial'
-		ctx.fillText('ACT Rules!', 20, 40)
+		const img = new Image();
+		img.src = '/test-assets/shared/w3c-logo.png';
+		img.onload = function () {
+			const ctx = document.querySelector('#logo').getContext('2d');
+			ctx.drawImage(img, 0, 0);
+		}
 	</script>
 </html>
 ```
@@ -201,17 +204,20 @@ This `svg` element has an `aria-label` attribute that incorrectly describes the 
 
 #### Failed Example 3
 
-<a class="example-link" title="Failed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/qt1vmo/12138756433c374a529170bea2977cf40cc94d84.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/qt1vmo/954441755d9b745f7fc533a8ccfc895d40e9005d.html">Open in a new tab</a>
 
 This `canvas` element has an `aria-label` attribute that incorrectly describes the image.
 
 ```html
 <html lang="en">
-	<canvas id="act" width="200" height="60" aria-label="HTML 5"></canvas>
+	<canvas id="logo" width="72" height="48" aria-label="HTML 5"></canvas>
 	<script>
-		const ctx = document.querySelector('#act').getContext('2d')
-		ctx.font = '30px Arial'
-		ctx.fillText('ACT Rules!', 20, 40)
+		const img = new Image();
+		img.src = '/test-assets/shared/w3c-logo.png';
+		img.onload = function () {
+			const ctx = document.querySelector('#logo').getContext('2d');
+			ctx.drawImage(img, 0, 0);
+		}
 	</script>
 </html>
 ```
@@ -230,12 +236,13 @@ This `img` element has an empty (`""`) [accessible name][]. The image is describ
 
 #### Inapplicable Example 2
 
-<a class="example-link" title="Inapplicable Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/qt1vmo/7a8fd7193ad82df20b77eafe87c3ad4416d9a395.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/qt1vmo/ce2c30787caebdf1d6adcd6aedfac8fa8842a9c4.html">Open in a new tab</a>
 
 This decorative `img` element has an empty (`""`) [accessible name][] because it has no attributes or content to provide an accessible name.
 
 ```html
 <html lang="en">
+	<p>Happy new year!</p>
 	<img src="/test-assets/shared/fireworks.jpg" role="presentation" />
 </html>
 ```
