@@ -7,14 +7,33 @@ type_of_guidance: false
 {% assign implementation = implementations[page.implementation_key] %}
 
 <p>
-  {{ implementation.name }} by {{ implementation.vendor}} has {{ implementation.consistency.complete }} completely consistent ACT rules.
+  {{ implementation.name }} by {{ implementation.vendor}} has 
+  {{ implementation.consistency.complete }} completely consistent ACT rules.
 </p>
 
-<h2>Implemented rules</h2>
-<ul>
-  {% for ruleMapping in implementation.actRuleMapping %}
-    <li>{{ ruleMapping.ruleName }} ({{ruleMapping.ruleId }})</li>
-  {% endfor %}
-</ul>
+<h2>Implemented Rules</h2>
 
-{{ content }}
+{% for ruleMapping in implementation.actRuleMapping %}
+<table>
+  <caption>{{ ruleMapping.ruleName }}</caption>
+  <thead>
+    <tr>
+      <th>Test Case</th>
+      {% for procedure in ruleMapping.procedures %}
+        <th>{{ procedure.procedureName }}</th>
+      {% endfor %}
+    </tr>
+  </thead>
+  <tbody>
+    {% for result in ruleMapping.procedures[0].testResults %}
+    <tr>
+      <th>{{ result.expected }}</th>
+      {% for procedure in ruleMapping.procedures %}
+        {% assign testResult = procedure.testResults[forloop.index] %}
+        <td>{{ testResult.outcomes }}</td>
+      {% endfor %}
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endfor %}
