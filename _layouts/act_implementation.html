@@ -11,6 +11,31 @@ type_of_guidance: false
   {{ implementation.consistency.complete }} completely consistent ACT rules.
 </p>
 
+<h2>Summary</h2>
+<table>
+  <tr>
+    <th>Consistency</th>
+    <th>Approved rules</th>
+    <th>Proposed rules</th>
+  </tr>
+  <tr>
+    <th>Complete</th>
+    <td>-</td>
+    <td>{{ implementation.consistency.complete }}</td>
+  </tr>
+  <tr>
+    <th>Partial</th>
+    <td></td>
+    <td>{{ implementation.consistency.partial }}</td>
+  </tr>
+  <tr>
+    <th>Minimal</th>
+    <td></td>
+    <td>{{ implementation.consistency.minimal }}</td>
+  </tr>
+</table>
+
+<h2>Implemented Rules</h2>
 <table>
   <thead>
     <tr>
@@ -33,8 +58,7 @@ type_of_guidance: false
 </table>
 
 
-
-<h2>Implemented Rules</h2>
+<h2>Implementation Breakdown</h2>
 
 {% for ruleMapping in implementation.actRuleMapping %}
 {% if ruleMapping.consistency != null %}

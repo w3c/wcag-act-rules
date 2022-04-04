@@ -1,7 +1,7 @@
 ---
 doc-note-type: draft
 layout: act_implementation
-title: "Axe-core implementation"
+title: "Axe-core ACT Implementation"
 permalink: /standards-guidelines/act/implementations/axe-core/
 ref: /standards-guidelines/act/implementations/axe-core/
 implementation_key: axe-core
