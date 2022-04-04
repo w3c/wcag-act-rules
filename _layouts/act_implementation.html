@@ -25,12 +25,12 @@ type_of_guidance: false
   </tr>
   <tr>
     <th>Partial</th>
-    <td></td>
+    <td>-</td>
     <td>{{ implementation.consistency.partial }}</td>
   </tr>
   <tr>
     <th>Minimal</th>
-    <td></td>
+    <td>-</td>
     <td>{{ implementation.consistency.minimal }}</td>
   </tr>
 </table>
@@ -48,7 +48,9 @@ type_of_guidance: false
     {% for ruleMapping in implementation.actRuleMapping %}
     {% if ruleMapping.consistency != null %}
       <tr>
-        <td>{{ ruleMapping.ruleName }}</td>
+        <td><a href="#breakdown-{{ ruleMapping.ruleId }}">
+          {{ ruleMapping.ruleName }}
+        </a></td>
         <td>{{ ruleMapping.consistency }}</td>
         <td>{{ ruleMapping.coverage.covered }} / {{ ruleMapping.coverage.testCaseTotal }}</td>
       </tr>
@@ -62,7 +64,7 @@ type_of_guidance: false
 
 {% for ruleMapping in implementation.actRuleMapping %}
 {% if ruleMapping.consistency != null %}
-<table>
+<table id="breakdown-{{ ruleMapping.ruleId }}">
   <caption>{{ ruleMapping.ruleName }}</caption>
   <thead>
     <tr>
