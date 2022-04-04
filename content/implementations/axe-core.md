@@ -11,5 +11,3 @@ github:
   repository: w3c/wcag-act-rules
   path: content/implementations/axe-core.md
 ---
-
-Testing

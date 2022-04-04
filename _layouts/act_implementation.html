@@ -7,7 +7,7 @@ type_of_guidance: false
 {% assign implementation = implementations[page.implementation_key] %}
 
 <p>
-  {{ implementation.name }} by {{ implementation.vendor}} has 
+  {{ implementation.name }} by {{ implementation.vendor }} has 
   {{ implementation.consistency.complete }} completely consistent ACT rules.
 </p>
 
@@ -15,22 +15,18 @@ type_of_guidance: false
 <table>
   <tr>
     <th>Consistency</th>
-    <th>Approved rules</th>
     <th>Proposed rules</th>
   </tr>
   <tr>
     <th>Complete</th>
-    <td>-</td>
     <td>{{ implementation.consistency.complete }}</td>
   </tr>
   <tr>
     <th>Partial</th>
-    <td>-</td>
     <td>{{ implementation.consistency.partial }}</td>
   </tr>
   <tr>
     <th>Minimal</th>
-    <td>-</td>
     <td>{{ implementation.consistency.minimal }}</td>
   </tr>
 </table>
