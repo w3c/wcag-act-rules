@@ -2,10 +2,16 @@
 layout: standalone_resource
 ---
 
-<h2>Implemented rules:</h2>
+{% assign implementation = site.data.wcag-act-rules.implementations["axe-core"] %}
 
+
+<p>
+  {{ implementation.name }} by {{ implementation.vendor}} has {{ implementation.consistency.complete }} completely consistent ACT rules.
+</p>
+
+<h2>Implemented rules</h2>
 <ul>
-  {% for ruleMapping in site.data.wcag-act-rules.implementations["axe-core"].actRuleMapping %}
+  {% for ruleMapping in implementation.actRuleMapping %}
     <li>{{ ruleMapping.ruleName }} ({{ruleMapping.ruleId }})</li>
   {% endfor %}
 </ul>
