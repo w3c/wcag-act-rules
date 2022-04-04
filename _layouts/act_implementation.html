@@ -33,7 +33,7 @@ type_of_guidance: false
       <th>{{ result.expected }}</th>
       {% for procedure in ruleMapping.procedures %}
         {% assign testResult = procedure.testResults[index] %}
-        <td>{{ testResult.outcomes }} ({{ index }})</td>
+        <td>{{ testResult.outcomes | uniq | join: ", " }}</td>
       {% endfor %}
     </tr>
     {% endfor %}
