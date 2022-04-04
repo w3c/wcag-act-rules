@@ -3,7 +3,7 @@ layout: standalone_resource
 ---
 
 {% assign implementations = site.data.wcag-act-rules.implementations %}
-{% assign implementation = implementations[implementation_key] %}
+{% assign implementation = implementations[page.implementation_key] %}
 
 <p>
   {{ implementation.name }} by {{ implementation.vendor}} has {{ implementation.consistency.complete }} completely consistent ACT rules.
