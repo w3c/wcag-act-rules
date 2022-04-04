@@ -28,7 +28,7 @@ type_of_guidance: false
 
   <tbody>
     {% for result in ruleMapping.procedures[0].testResults %}
-    {% assign index = forloop.index %}
+    {% assign index = forloop.index - 1 %}
     <tr>
       <th>{{ result.expected }}</th>
       {% for procedure in ruleMapping.procedures %}
