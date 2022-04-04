@@ -2,8 +2,8 @@
 layout: standalone_resource
 ---
 
-{% assign implementation = site.data.wcag-act-rules.implementations["axe-core"] %}
-
+{% assign implementations = site.data.wcag-act-rules.implementations %}
+{% assign implementation = implementations[implementation_key] %}
 
 <p>
   {{ implementation.name }} by {{ implementation.vendor}} has {{ implementation.consistency.complete }} completely consistent ACT rules.
