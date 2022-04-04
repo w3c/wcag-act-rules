@@ -11,6 +11,29 @@ type_of_guidance: false
   {{ implementation.consistency.complete }} completely consistent ACT rules.
 </p>
 
+<table>
+  <thead>
+    <tr>
+      <th>ACT Rule</th>
+      <th>Consistency</th>
+      <th>Coverage</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for ruleMapping in implementation.actRuleMapping %}
+    {% if ruleMapping.consistency != null %}
+      <tr>
+        <td>{{ ruleMapping.ruleName }}</td>
+        <td>{{ ruleMapping.consistency }}</td>
+        <td>{{ ruleMapping.coverage.covered }} / {{ ruleMapping.coverage.testCaseTotal }}</td>
+      </tr>
+    {% endif %}
+    {% endfor %}
+  </tbody>
+</table>
+
+
+
 <h2>Implemented Rules</h2>
 
 {% for ruleMapping in implementation.actRuleMapping %}
