@@ -2,6 +2,12 @@
 layout: standalone_resource
 ---
 
-<h2>Hello world</h2>
+<h2>Implemented rules:</h2>
+
+<ul>
+  {% for ruleMapping in site.data.wcag-act-rules.implementations["axe-core"].actRuleMapping %}
+    <li>{{ ruleMapping.ruleName }} ({{ruleMapping.ruleId }})</li>
+  {% endfor %}
+</ul>
 
 {{ content }}
