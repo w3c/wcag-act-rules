@@ -14,6 +14,7 @@ type_of_guidance: false
 <h2>Implemented Rules</h2>
 
 {% for ruleMapping in implementation.actRuleMapping %}
+{% if ruleMapping.consistency != null %}
 <table>
   <caption>{{ ruleMapping.ruleName }}</caption>
   <thead>
@@ -24,16 +25,18 @@ type_of_guidance: false
       {% endfor %}
     </tr>
   </thead>
+
   <tbody>
     {% for result in ruleMapping.procedures[0].testResults %}
     <tr>
       <th>{{ result.expected }}</th>
       {% for procedure in ruleMapping.procedures %}
         {% assign testResult = procedure.testResults[forloop.index] %}
-        <td>{{ testResult.outcomes }}</td>
+        <td>{{ testResult.outcomes }} ({{ forloop.index }})</td>
       {% endfor %}
     </tr>
     {% endfor %}
   </tbody>
 </table>
+{% endif %}
 {% endfor %}
