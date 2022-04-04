@@ -28,11 +28,12 @@ type_of_guidance: false
 
   <tbody>
     {% for result in ruleMapping.procedures[0].testResults %}
+    {% assign index = forloop.index %}
     <tr>
       <th>{{ result.expected }}</th>
       {% for procedure in ruleMapping.procedures %}
-        {% assign testResult = procedure.testResults[forloop.index] %}
-        <td>{{ testResult.outcomes }} ({{ forloop.index }})</td>
+        {% assign testResult = procedure.testResults[index] %}
+        <td>{{ testResult.outcomes }} ({{ index }})</td>
       {% endfor %}
     </tr>
     {% endfor %}
