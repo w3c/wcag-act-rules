@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> afb423</p>
-  <p><strong>Date:</strong> Updated 23 March 2022</p>
+  <p><strong>Date:</strong> Updated 5 April 2022</p>
   <p><strong>Authors:</strong> <a href="https://www.linkedin.com/in/brianbors/">Brian Bors</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
   
@@ -20,8 +20,8 @@ rule_meta:
   name: "`audio` element content is media alternative for text"
   rule_type: atomic
   description: |
-    This rule checks `audio` is a media alternative for text on the page.
-  last_modified: 23 March 2022
+    This rule checks that the `audio` element is a media alternative for text on the page.
+  last_modified: 5 April 2022
 ---
 
 ## Applicability
@@ -78,7 +78,7 @@ The following aspects are required in using this rule.
 
 <a class="example-link" title="Passed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/afb423/dedfb667190bd564527247550565cdea8ccefd3f.html">Open in a new tab</a>
 
-An audio element that describes some of the text on the same page. The text on the page labels the audio as an alternative.
+This `audio` element describes some of the text on the same page. The text on the page labels the audio as an alternative.
 
 ```html
 <html lang="en">
@@ -101,7 +101,7 @@ An audio element that describes some of the text on the same page. The text on t
 
 <a class="example-link" title="Failed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/afb423/e76fd82b8a71085be3a7a2ad96c1ce12522116e2.html">Open in a new tab</a>
 
-An audio element that describes some of the text on the same page. The audio contains more information than the text does.
+This `audio` element describes some of the text on the same page. The audio contains more information than the text does.
 
 ```html
 <html lang="en">
@@ -120,7 +120,7 @@ An audio element that describes some of the text on the same page. The audio con
 
 <a class="example-link" title="Failed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/afb423/6f9ab7a874b2d555e94957abaec5f6e908b6c206.html">Open in a new tab</a>
 
-An audio element that describes some of the text on the same page. The text is not [visible][] on the page.
+This `audio` element describes some of the text on the same page. The text is not [visible][] on the page.
 
 ```html
 <html lang="en">
@@ -141,7 +141,7 @@ An audio element that describes some of the text on the same page. The text is n
 
 <a class="example-link" title="Failed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/afb423/6e390dfbb555a5b422c6fa516ff7883c177450c9.html">Open in a new tab</a>
 
-An audio element that describes some of the text on the same page. The text on the page does not label the audio as an alternative.
+This `audio` element describes some of the text on the same page. The text on the page does not label the audio as an alternative.
 
 ```html
 <html lang="en">
@@ -159,7 +159,7 @@ An audio element that describes some of the text on the same page. The text on t
 
 <a class="example-link" title="Failed Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/afb423/c2b5ac193eb620f96e6f08e80e34c7d8dbda94de.html">Open in a new tab</a>
 
-An audio element that describes some of the text on the same page. The text on the page labels the audio as an alternative but the label is not [visible][] on the page.
+This `audio` element describes some of the text on the same page. The text on the page labels the audio as an alternative but the label is not [visible][] on the page.
 
 ```html
 <html lang="en">
@@ -182,7 +182,7 @@ An audio element that describes some of the text on the same page. The text on t
 
 <a class="example-link" title="Inapplicable Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/afb423/1c9dada7fa918fd9cffdd6d4c3443107aee373f5.html">Open in a new tab</a>
 
-An audio element that describes some of the text on the same page. The text on the page labels the audio as an alternative but the controls are not [visible][] on the page.
+This `audio` element describes some of the text on the same page. The text on the page labels the audio as an alternative but the controls are not [visible][] on the page.
 
 ```html
 <html lang="en">
@@ -203,7 +203,7 @@ An audio element that describes some of the text on the same page. The text on t
 
 <a class="example-link" title="Inapplicable Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/afb423/bd4a3ee5bbdd3da989ce69c081b90f69f5be2045.html">Open in a new tab</a>
 
-An audio element that describes some of the text on the same page. The text on the page labels the audio as an alternative but there are no controls.
+This `audio` element describes some of the text on the same page. The text on the page labels the audio as an alternative but there are no controls.
 
 ```html
 <html lang="en">

@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> e7aa44</p>
-  <p><strong>Date:</strong> Updated 23 March 2022</p>
+  <p><strong>Date:</strong> Updated 5 April 2022</p>
   <p><strong>Authors:</strong> <a href="https://www.linkedin.com/in/brianbors/">Brian Bors</a>, <a href="https://github.com/john-urbilog">John Hicks</a>, <a href="https://github.com/Rafalchar">Rafal Charlampowicz</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
   
@@ -20,8 +20,8 @@ rule_meta:
   name: "`audio` element content has text alternative"
   rule_type: composite
   description: |
-    This rule checks if audio only elements have a text alternative available.
-  last_modified: 23 March 2022
+    This rule checks that `audio` elements have a text alternative available.
+  last_modified: 5 April 2022
   scs_tested:
     - handle: Audio-only and Video-only (Prerecorded)
       num: 1.2.1
@@ -103,7 +103,7 @@ Outcomes of the following rules are required as input for this rule.
 
 <a class="example-link" title="Passed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/e7aa44/85c98d1402dbc9c68ace2fbf5f063d145b8e5bd7.html">Open in a new tab</a>
 
-Audio with controls and internal transcript
+This `audio` element has native player controls and an internal transcript.
 
 ```html
 <html lang="en">
@@ -121,7 +121,7 @@ Audio with controls and internal transcript
 
 <a class="example-link" title="Passed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/e7aa44/dedfb667190bd564527247550565cdea8ccefd3f.html">Open in a new tab</a>
 
-An audio element that describes some of the text on the same page. The text on the page labels the audio as an alternative.
+This `audio` element describes some of the text on the same page. The text on the page labels the audio as an alternative.
 
 ```html
 <html lang="en">
@@ -144,7 +144,7 @@ An audio element that describes some of the text on the same page. The text on t
 
 <a class="example-link" title="Failed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/e7aa44/58cd3c1ef1ce88b7878c9e11c4f610486faefbf6.html">Open in a new tab</a>
 
-Audio with controls and incorrect internal transcript
+This `audio` element has native player controls but has an incorrect internal transcript.
 
 ```html
 <html lang="en">
@@ -162,7 +162,7 @@ Audio with controls and incorrect internal transcript
 
 <a class="example-link" title="Failed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/e7aa44/6f9ab7a874b2d555e94957abaec5f6e908b6c206.html">Open in a new tab</a>
 
-An audio element that describes some of the text on the same page. The text is not [visible][] on the page.
+This `audio` element describes some of the text on the same page. The text is not [visible][] on the page.
 
 ```html
 <html lang="en">
@@ -185,7 +185,7 @@ An audio element that describes some of the text on the same page. The text is n
 
 <a class="example-link" title="Inapplicable Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/e7aa44/eba170767ac1de0092d33a9bee2c0ecf2ebdfd46.html">Open in a new tab</a>
 
-Audio without controls.
+This `audio` element does not have native player controls.
 
 ```html
 <html lang="en">
@@ -197,7 +197,7 @@ Audio without controls.
 
 <a class="example-link" title="Inapplicable Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/e7aa44/1c9dada7fa918fd9cffdd6d4c3443107aee373f5.html">Open in a new tab</a>
 
-An audio element that describes some of the text on the same page. The text on the page labels the audio as an alternative but the controls are not [visible][] on the page.
+This `audio` element describes some of the text on the same page. The text on the page labels the audio as an alternative but the controls are not [visible][] on the page.
 
 ```html
 <html lang="en">
