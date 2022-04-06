@@ -1,6 +1,6 @@
 ---
 layout: standalone_resource
-title: "ACT Implementations"
+title: "ACT Tools & Methodologies"
 permalink: /standards-guidelines/act/implementations/
 ref: /standards-guidelines/act/implementations/
 lang: en
@@ -10,6 +10,13 @@ github:
   repository: w3c/wcag-act-rules
   path: content/implementations.md
 ---
+
+<style>
+  table ul {
+    list-style: none;
+    padding: 0;
+  }
+</style>
 
 {::nomarkdown} {% include box.html type="start" title="Summary" %} {:/}
 
@@ -25,7 +32,6 @@ Summary text goes here
     <tr>
       <th>Implementation</th>
       <th>Vendor</th>
-      <th>Type</th>
       <th>Standards</th>
       <th>Consistent rules</th>
     </tr>
@@ -38,10 +44,9 @@ Summary text goes here
           {{ implementation.name }}
         </a></td>
         <td>{{ implementation.vendor }}</td>
-        <td>{{ implementation.type }}</td>
         <td><ul>
-          {% for standard in implementation.standards %}
-          <li>{{ standard }}</li>
+          {% for standard in  %}
+           <li>{{ standard }}</li>
           {% endfor %}
         </ul></td>
         <td>XX ({{ consistency.complete }} proposed)</td>
