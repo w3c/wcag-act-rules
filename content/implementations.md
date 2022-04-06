@@ -1,8 +1,8 @@
 ---
 layout: standalone_resource
 title: "ACT Implementations"
-permalink: /standards-guidelines/act/rules/implementations/
-ref: /standards-guidelines/act/rules/implementations/
+permalink: /standards-guidelines/act/implementations/
+ref: /standards-guidelines/act/implementations/
 lang: en
 type_of_guidance: false
 footer: ""
