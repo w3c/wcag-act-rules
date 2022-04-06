@@ -32,6 +32,7 @@ Summary text goes here
     <tr>
       <th>Implementation</th>
       <th width="200">Vendor</th>
+      <th>Standards</th>
       <th>Completed rules</th>
     </tr>
   </thead>
@@ -45,10 +46,10 @@ Summary text goes here
         <td>{{ implementation.vendor }}</td>
         <td><ul>
           {% for standard in implementation.standards %}
-            <li> {{ consistency.complete }}: {{ standard }}</li>
+           <li>{{ standard }}</li>
           {% endfor %}
-          <li> {{ consistency.complete }}: Proposed rules</li>
         </ul></td>
+        <td>{{ consistency.complete }}</td>
       </tr>
     {% endfor %}
   </tbody>
