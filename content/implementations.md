@@ -20,8 +20,8 @@ Summary text goes here
 {% assign implementations = site.data.wcag-act-rules.implementations %}
 
 <ul>
-{% for implementation in implementations %}
-
-  <li>{{ implementation[0] }}: {{ implementation.name }} by {{ implementation.vendor }}</li>
+{% for keyValPair in implementations %}
+  {% assign implementation = keyValPair[1] %}
+  <li>{{ implementation[1].name }} by {{ implementation[1].vendor }}</li>
 {% endfor %}
 </ul>
