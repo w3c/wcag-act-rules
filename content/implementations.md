@@ -42,6 +42,7 @@ Summary text goes here
         <td><ul>
           {% for standard in implementation.standards %}
           <li>{{ standard }}</li>
+          {% endfor %}
         </ul></td>
         <td>XX ({{ consistency.complete }} proposed)</td>
       </tr>
