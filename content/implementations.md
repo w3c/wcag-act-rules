@@ -22,6 +22,6 @@ Summary text goes here
 <ul>
 {% for implementation in implementations %}
 
-  <li>{{ implementation }}: {{ implementation.name }} by {{ implementation.vendor }}</li>
+  <li>{{ implementation[0] }}: {{ implementation.name }} by {{ implementation.vendor }}</li>
 {% endfor %}
 </ul>
