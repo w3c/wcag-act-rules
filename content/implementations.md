@@ -31,7 +31,7 @@ Summary text goes here
   <thead>
     <tr>
       <th>Implementation</th>
-      <th>Vendor</th>
+      <th width="200">Vendor</th>
       <th>Standards</th>
       <th>Consistent rules</th>
     </tr>
@@ -49,7 +49,10 @@ Summary text goes here
            <li>{{ standard }}</li>
           {% endfor %}
         </ul></td>
-        <td>XX + {{ consistency.complete }} proposed</td>
+        <td><ul>
+          <li>{{ consistency.complete }} WCAG 2 rules</li>
+          <li>{{ consistency.complete }} proposed</li>
+        </ul></td>
       </tr>
     {% endfor %}
   </tbody>
