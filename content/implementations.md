@@ -54,7 +54,7 @@ Summary text goes here
            <li>{{ standard }}</li>
           {% endfor %}
         </ul></td>
-        <td>{{ consistency.complete }}</td>
+        <td>X + {{ consistency.complete }} proposed</td>
       </tr>
     {% endfor %}
   </tbody>
@@ -86,7 +86,7 @@ Summary text goes here
            <li>{{ standard }}</li>
           {% endfor %}
         </ul></td>
-        <td>{{ consistency.complete }}</td>
+        <td>X + {{ consistency.complete }} proposed</td>
       </tr>
     {% endfor %}
   </tbody>
