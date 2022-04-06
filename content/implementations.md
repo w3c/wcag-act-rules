@@ -36,7 +36,7 @@ Summary text goes here
   <thead>
     <tr>
       <th>Implementation</th>
-      <th width="200">Vendor</th>
+      <!-- <th width="200">Vendor</th> -->
       <th>Standards</th>
       <th>Completed rules</th>
     </tr>
@@ -48,7 +48,7 @@ Summary text goes here
         <td><a href="./{{ implementation.uniqueKey }}">
           {{ implementation.name }}
         </a></td>
-        <td>{{ implementation.vendor }}</td>
+        <!-- <td>{{ implementation.vendor }}</td> -->
         <td><ul>
           {% for standard in implementation.standards %}
            <li>{{ standard }}</li>
