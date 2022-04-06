@@ -18,7 +18,7 @@ Summary text goes here
 {::nomarkdown} {% include box.html type="end" %} {:/}
 
 {% assign siteData = site.data.wcag-act-rules %}
-{% assign implementations = siteData.act-implementations %}
+{% assign implementations = siteData.act-implementations | sort: "name" %}
 
 <table>
   <thead>
@@ -26,7 +26,7 @@ Summary text goes here
       <th>Implementation</th>
       <th>Vendor</th>
       <th>Type</th>
-      <th>Standards<th>
+      <th>Standards</th>
       <th>Consistent rules</th>
     </tr>
   </thead>
