@@ -39,8 +39,11 @@ Summary text goes here
         </a></td>
         <td>{{ implementation.vendor }}</td>
         <td>{{ implementation.type }}</td>
-        <td>{{ implementation.standards | join ", " }}</td>
-        <td>{{ consistency.complete }}</td>
+        <td><ul>
+          {% for standard in implementation.standards %}
+          <li>{{ standard }}</li>
+        </ul></td>
+        <td>XX ({{ consistency.complete }} proposed)</td>
       </tr>
     {% endfor %}
   </tbody>
