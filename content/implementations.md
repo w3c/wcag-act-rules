@@ -19,9 +19,29 @@ Summary text goes here
 
 {% assign implementations = site.data.wcag-act-rules.implementations %}
 
-<ul>
-{% for keyValPair in implementations %}
-  {% assign implementation = keyValPair[1] %}
-  <li>{{ implementation.name }} by {{ implementation.vendor }}</li>
-{% endfor %}
-</ul>
+<table>
+  <thead>
+    <tr>
+      <th>Implementation</th>
+      <th>Vendor</th>
+      <th>Consistent</th>
+      <th>Partial</th>
+      <th>Minimal</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for keyValPair in implementations %}
+      {% assign urlSlug = keyValPair[0] %}
+      {% assign implementation = keyValPair[1] %}
+      <tr>
+        <td><a href="./{{ urlSlug }}">
+          {{ implementation.name }}
+        </a></td>
+        <td>{{ implementation.vendor }}</td>
+        <td>{{ implementation.consistency.complete }}</td>
+        <td>{{ implementation.consistency.partial }}</td>
+        <td>{{ implementation.consistency.minimal }}</td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
