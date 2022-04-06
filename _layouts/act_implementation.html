@@ -65,19 +65,17 @@ type_of_guidance: false
   <thead>
     <tr>
       <th>Test Case</th>
-      {% for procedure in ruleMapping.procedures %}
-        <th>{{ procedure.procedureName }}</th>
+      {% for procedureName in ruleMapping.procedureNames %}
+        <th>{{ procedureName }}</th>
       {% endfor %}
     </tr>
   </thead>
 
   <tbody>
-    {% for result in ruleMapping.procedures[0].testResults %}
-    {% assign index = forloop.index0 %}
+    {% for result in ruleMapping.testCaseResults %}
     <tr>
-      <th>{{ result.expected }}</th>
-      {% for procedure in ruleMapping.procedures %}
-        {% assign testResult = procedure.testResults[index] %}
+      <th><a href="{{ result.testCaseUrl }}">{{ result.testCaseName }}</a></th>
+      {% for procedure in result.procedureResults %}
         <td>{{ testResult.outcomes | uniq | join: ", " }}</td>
       {% endfor %}
     </tr>

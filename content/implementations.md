@@ -17,4 +17,10 @@ Summary text goes here
 
 {::nomarkdown} {% include box.html type="end" %} {:/}
 
-Some other things go here
+{% assign implementations = site.data.wcag-act-rules.implementations %}
+
+<ul>
+{% for implementation in implementations %}
+  <li>{{ implementation.name }} by {{ implementation.vendor }}</li>
+{% endfor %}
+</ul>
