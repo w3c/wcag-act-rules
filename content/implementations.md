@@ -26,8 +26,8 @@ Summary text goes here
 
 {% assign siteData = site.data.wcag-act-rules %}
 {% assign implementations = siteData.act-implementations | sort: "name" %}
-{% assign methodologies = implementations | where "type", "Test methodology" %}
-{% assign automatedTools = implementations | where "type", "Automated tool" %}
+{% assign methodologies = implementations | where: "type", "Test methodology" %}
+{% assign automatedTools = implementations | where: "type", "Automated tool" %}
 
 <h2>Test Methodologies</h2>
 <p>... text ...</p>
