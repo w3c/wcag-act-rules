@@ -17,30 +17,30 @@ Summary text goes here
 
 {::nomarkdown} {% include box.html type="end" %} {:/}
 
-{% assign implementations = site.data.wcag-act-rules.implementations %}
+{% assign siteData = site.data.wcag-act-rules %}
+{% assign implementations = siteData.act-implementations %}
 
 <table>
   <thead>
     <tr>
       <th>Implementation</th>
       <th>Vendor</th>
-      <th>Consistent</th>
-      <th>Partial</th>
-      <th>Minimal</th>
+      <th>Type</th>
+      <th>Standards<th>
+      <th>Consistent rules</th>
     </tr>
   </thead>
   <tbody>
-    {% for keyValPair in implementations %}
-      {% assign urlSlug = keyValPair[0] %}
-      {% assign implementation = keyValPair[1] %}
+    {% for implementation in implementations %}
+      {% assign consistency = siteData.implementations[implementation.uniqueKey].consistency %}
       <tr>
         <td><a href="./{{ urlSlug }}">
           {{ implementation.name }}
         </a></td>
         <td>{{ implementation.vendor }}</td>
-        <td>{{ implementation.consistency.complete }}</td>
-        <td>{{ implementation.consistency.partial }}</td>
-        <td>{{ implementation.consistency.minimal }}</td>
+        <td>{{ implementation.type }}</td>
+        <td>{{ implementation.standards | join ", " }}</td>
+        <td>{{ consistency.complete }}</td>
       </tr>
     {% endfor %}
   </tbody>
