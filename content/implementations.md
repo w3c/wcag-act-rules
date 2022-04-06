@@ -22,6 +22,6 @@ Summary text goes here
 <ul>
 {% for keyValPair in implementations %}
   {% assign implementation = keyValPair[1] %}
-  <li>{{ implementation[1].name }} by {{ implementation[1].vendor }}</li>
+  <li>{{ implementation.name }} by {{ implementation.vendor }}</li>
 {% endfor %}
 </ul>
