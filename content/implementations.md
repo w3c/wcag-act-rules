@@ -46,7 +46,7 @@ Summary text goes here
       {% assign consistency = siteData.implementations[implementation.uniqueKey].consistency %}
       <tr>
         <td><a href="./{{ implementation.uniqueKey }}">
-          {{ implementation.name }}
+          {{ implementation.name }} version {{ implementation.version }}
         </a></td>
         <td><ul>
           {% for standard in implementation.standards %}
