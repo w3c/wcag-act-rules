@@ -46,7 +46,7 @@ Summary text goes here
       {% assign report = siteData.implementations[implementation.uniqueKey] %}
       <tr>
         <td><a href="./{{ implementation.uniqueKey }}">
-          {{ implementation.name }} version {{ report.version }}
+          {{ implementation.name }} {{ report.version }}
         </a></td>
         <td><ul>
           {% for standard in implementation.standards %}
@@ -76,7 +76,7 @@ Summary text goes here
       {% assign report = siteData.implementations[implementation.uniqueKey] %}
       <tr>
         <td><a href="./{{ implementation.uniqueKey }}">
-          {{ implementation.name }} version {{ report.version }}
+          {{ implementation.name }} {{ report.version }}
         </a></td>
         <td><ul>
           {% for standard in implementation.standards %}
