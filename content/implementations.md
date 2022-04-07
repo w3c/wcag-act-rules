@@ -43,17 +43,17 @@ Summary text goes here
   </thead>
   <tbody>
     {% for implementation in methodologies %}
-      {% assign consistency = siteData.implementations[implementation.uniqueKey].consistency %}
+      {% assign report = siteData.implementations[implementation.uniqueKey] %}
       <tr>
         <td><a href="./{{ implementation.uniqueKey }}">
-          {{ implementation.name }} version {{ implementation.version }}
+          {{ implementation.name }} version {{ report.version }}
         </a></td>
         <td><ul>
           {% for standard in implementation.standards %}
            <li>{{ standard }}</li>
           {% endfor %}
         </ul></td>
-        <td>{{ consistency.complete }}</td>
+        <td>{{ report.consistency.complete }}</td>
       </tr>
     {% endfor %}
   </tbody>
@@ -67,25 +67,23 @@ Summary text goes here
   <thead>
     <tr>
       <th>Implementation</th>
-      <!-- <th width="200">Vendor</th> -->
       <th>Standards</th>
       <th>Completed rules</th>
     </tr>
   </thead>
   <tbody>
     {% for implementation in automatedTools %}
-      {% assign consistency = siteData.implementations[implementation.uniqueKey].consistency %}
+      {% assign report = siteData.implementations[implementation.uniqueKey] %}
       <tr>
         <td><a href="./{{ implementation.uniqueKey }}">
-          {{ implementation.name }}
+          {{ implementation.name }} version {{ report.version }}
         </a></td>
-        <!-- <td>{{ implementation.vendor }}</td> -->
         <td><ul>
           {% for standard in implementation.standards %}
            <li>{{ standard }}</li>
           {% endfor %}
         </ul></td>
-        <td>{{ consistency.complete }}</td>
+        <td>{{ report.consistency.complete }}</td>
       </tr>
     {% endfor %}
   </tbody>
