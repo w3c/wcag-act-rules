@@ -1,6 +1,6 @@
 ---
 layout: standalone_resource
-title: "ACT Tools & Methodologies"
+title: "ACT Implementations"
 permalink: /standards-guidelines/act/implementations/
 ref: /standards-guidelines/act/implementations/
 lang: en
@@ -15,6 +15,7 @@ github:
   table ul {
     list-style: none;
     padding: 0;
+    margin-bottom: 0;
   }
 </style>
 
@@ -36,7 +37,6 @@ Summary text goes here
   <thead>
     <tr>
       <th>Implementation</th>
-      <!-- <th width="200">Vendor</th> -->
       <th>Standards</th>
       <th>Completed rules</th>
     </tr>
@@ -48,7 +48,6 @@ Summary text goes here
         <td><a href="./{{ implementation.uniqueKey }}">
           {{ implementation.name }}
         </a></td>
-        <!-- <td>{{ implementation.vendor }}</td> -->
         <td><ul>
           {% for standard in implementation.standards %}
            <li>{{ standard }}</li>
