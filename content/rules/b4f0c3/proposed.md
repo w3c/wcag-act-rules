@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> b4f0c3</p>
-  <p><strong>Date:</strong> Updated 16 March 2022</p>
+  <p><strong>Date:</strong> Updated 22 April 2022</p>
   <p><strong>Authors:</strong> <a href="https://github.com/audreymaniez">Audrey Maniez</a>, <a href="https://github.com/jkodu">Jey Nandakumar</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -19,7 +19,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that the `meta` element retains the user agent ability to zoom.
-  last_modified: 16 March 2022
+  last_modified: 22 April 2022
   scs_tested:
     - handle: Resize text
       num: 1.4.4
@@ -28,22 +28,23 @@ rule_meta:
 
 ## Applicability
 
-This rule applies to each `meta` element with a `name` attribute whose value is a [case-insensitive][] match for `viewport` and has a `content` attribute.
+This rule applies to each `content` attribute on a `meta` element with a `name` [attribute value][] of `viewport`.
 
-## Expectation
+## Expectation 1
 
-For each test target, the `content` attribute, whose value is mapped to a list of property/value pairs in a user-agent specific manner, does not:
+For each test target, the [attribute value][] does hot have a `user-scalable` property with a value of `no`.
 
-- specify the property `user-scalable` with a value of `no`; nor
-- specify the property `maximum-scale` with a value of less than 2.
+## Expectation 2
+
+For each test target, the [attribute value][] does not have a `maximum-scale` property with a value less than 2.
 
 ## Assumptions
 
-If any of the following is false, this rule can fail while Success Criteria [1.4.4 Resize text][sc144] and [1.4.10 Reflow][sc1410] can still be satisfied:
+Pages for which any of the following is true may satisfy success criteria Success Criteria [1.4.4 Resize text][sc144] and [1.4.10 Reflow][sc1410], even if the rule results in a failed outcome.
 
-- The [page][] has [visible][] [content][].
-- There is no other [mechanism](https://www.w3.org/TR/WCAG21/#dfn-mechanism) available to resize the text content.
-- The [content][] is not by default rendered in a way that fits in an area of 320 by 256 [CSS pixels][], and needs to reflow to do so.
+- The [page][] has no [visible][] [content][]; or
+- There is another [mechanism](https://www.w3.org/TR/WCAG21/#dfn-mechanism) available to resize the text content; or
+- The [content][] does not need to reflow in order to fit in an area of 320 by 256 [CSS pixels][].
 
 ## Accessibility Support
 
@@ -313,6 +314,23 @@ This viewport `meta` element does not have a `content` attribute.
 
 ## Glossary
 
+### Attribute value {#attribute-value}
+
+The <dfn id="attribute-value:attribute">attribute value</dfn> of a content attribute set on an HTML element is the value that the attribute gets after being parsed and computed according to specifications. It may differ from the value that is actually written in the HTML code due to trimming whitespace or non-digits characters, default values, or case-insensitivity.
+
+Some notable case of attribute value, among others:
+
+- For [enumerated attributes][], the <dfn id="attribute-value:enumerated">attribute value</dfn> is either the state of the attribute, or the keyword that maps to it; even for the default states. Thus `<input type="image" />` has an attribute value of either `Image Button` (the state) or `image` (the keyword mapping to it), both formulations having the same meaning; similarly, "an input element with a `type` _attribute value_ of `Text`" can be either `<input type="text" />`, `<input />` (missing value default), or `<input type="invalid" />` (invalid value default).
+- For [boolean attributes][], the <dfn id="attribute-value:boolean">attribute value</dfn> is `true` when the attribute is present and `false` otherwise. Thus `<button disabled>`, `<button disabled="disabled">` and `<button disabled="">` all have a `disabled` _attribute value_ of `true`.
+- For attributes whose value is used in a case-insensitive context, the <dfn id="attribute-value:case-insensitive">attribute value</dfn> is the lowercase version of the value written in the HTML code.
+- For attributes that accept [numbers][], the <dfn id="attribute-value:number">attribute value</dfn> is the result of parsing the value written in the HTML code according to the rules for parsing this kind of number.
+- For attributes that accept sets of tokens, whether [space separated][] or [comma separated][], the <dfn id="attribute-value:tokens-list">attribute value</dfn> is the set of tokens obtained after parsing the set and, depending on the case, converting its items to lowercase (if the set is used in a case-insensitive context).
+- For `aria-*` attributes, the <dfn id="attribute-value:aria">attribute value</dfn> is computed as indicated in the [WAI-ARIA specification][] and the [HTML Accessibility API Mappings][html aam].
+
+This list is not exhaustive, and only serves as an illustration for some of the most common cases.
+
+The <dfn id="attribute-value:idl">attribute value</dfn> of an [IDL attribute][] is the value returned on getting it. Note that when an [IDL attribute][] [reflects][reflect] a content attribute, they have the same attribute value.
+
 ### Outcome {#outcome}
 
 An _outcome_ is a conclusion that comes from evaluating an ACT Rule on a [test subject](https://www.w3.org/TR/act-rules-format/#test-subject) or one of its constituent [test target](https://www.w3.org/TR/act-rules-format/#test-target). An outcome can be one of the three following types:
@@ -341,13 +359,22 @@ For more details, see [examples of visible](https://act-rules.github.io/pages/ex
 
 This is the first version of this ACT rule.
 
-[case-insensitive]: https://infra.spec.whatwg.org/#ascii-case-insensitive 'ASCII case-insensitive'
+[attribute value]: #attribute-value 'Definition of attribute value'
+[boolean attributes]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attributes 'HTML Specification of Boolean Attribute'
+[comma separated]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#comma-separated-tokens 'HTML Specification of Comma Separated Tokens'
 [content]: https://www.w3.org/TR/WCAG21/#dfn-content 'content (Web content)'
 [css pixels]: https://www.w3.org/TR/css3-values/#reference-pixel 'CSS 3 definition, reference pixel'
+[enumerated attributes]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#enumerated-attribute 'HTML Specification of Enumerated Attribute'
+[html aam]: https://www.w3.org/TR/html-aam-1.0/#html-attribute-state-and-property-mappings 'Specification of HTML attributes value mapping to ARIA states and properties'
+[idl attribute]: https://heycam.github.io/webidl/#idl-attributes "Definition of Web IDL Attribute (Editor's Draft)"
 [maximum-scale]: https://www.w3.org/TR/css-device-adapt-1/#min-scale-max-scale 'The initial-scale, minimum-scale, and maximum-scale properties'
 [meta]: https://html.spec.whatwg.org/#the-meta-element 'The meta element'
+[numbers]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#numbers 'HTML Specification of Number Parsing'
 [page]: https://www.w3.org/TR/WCAG21/#dfn-web-page-s 'Web page'
+[reflect]: https://html.spec.whatwg.org/multipage/common-dom-interfaces.html#reflecting-content-attributes-in-idl-attributes 'HTML specification of Reflecting Content Attributes in IDL Attributes'
 [sc1410]: https://www.w3.org/TR/WCAG21/#reflow 'WCAG 2.1 Success Criterion 1.4.10 Reflow'
 [sc144]: https://www.w3.org/TR/WCAG21/#resize-text 'WCAG 2.1 Success Criterion 1.4.4 Resize text'
+[space separated]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#space-separated-tokens 'HTML Specification of Space Separated Tokens'
 [user-scalable]: https://www.w3.org/TR/css-device-adapt-1/#user-scalable 'The user-scalable property'
 [visible]: #visible 'Definition of visible'
+[wai-aria specification]: https://www.w3.org/TR/wai-aria-1.1/#propcharacteristic_value 'WAI-ARIA Specification of States and Properties Value'
