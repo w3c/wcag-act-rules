@@ -1,10 +1,10 @@
 {
   "vendor": "Deque Systems",
-  "name": "Axe-core",
-  "version": "v4.4.2",
+  "name": "axe-core",
+  "version": "latest",
   "consistency": {
-    "complete": 24,
-    "partial": 1,
+    "complete": 16,
+    "partial": 9,
     "minimal": 6,
     "inconsistent": 44,
     "untested": 16
@@ -54,6 +54,15 @@
         "aria-valid-attr-value"
       ],
       "consistency": null,
+      "accessibilityRequirements": {
+        "expected": [
+          "WCAG2:name-role-value"
+        ],
+        "reported": [
+          "WCAG2:name-role-value",
+          "WCAG2:info-and-relationships"
+        ]
+      },
       "coverage": {
         "covered": 9,
         "testCaseTotal": 13
@@ -2513,6 +2522,14 @@
         "aria-required-children"
       ],
       "consistency": "partial",
+      "accessibilityRequirements": {
+        "expected": [
+          "WCAG2:info-and-relationships"
+        ],
+        "reported": [
+          "WCAG2:info-and-relationships"
+        ]
+      },
       "coverage": {
         "covered": 14,
         "testCaseTotal": 15
@@ -2850,6 +2867,14 @@
         "th-has-data-cells"
       ],
       "consistency": null,
+      "accessibilityRequirements": {
+        "expected": [
+          "WCAG2:info-and-relationships"
+        ],
+        "reported": [
+          "WCAG2:info-and-relationships"
+        ]
+      },
       "coverage": {
         "covered": 15,
         "testCaseTotal": 19
@@ -4737,9 +4762,16 @@
       "ruleId": "5c01ea",
       "ruleName": "ARIA state or property is permitted",
       "procedureNames": [
-        "aria-allowed-attr"
+        "aria-allowed-attr",
+        "aria-valid-attr-value"
       ],
-      "consistency": "complete",
+      "consistency": "partial",
+      "accessibilityRequirements": {
+        "expected": [],
+        "reported": [
+          "WCAG2:name-role-value"
+        ]
+      },
       "coverage": {
         "covered": 15,
         "testCaseTotal": 15
@@ -4753,6 +4785,12 @@
           "procedureResults": [
             {
               "procedureName": "aria-allowed-attr",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
+              "procedureName": "aria-valid-attr-value",
               "outcomes": [
                 "passed"
               ]
@@ -4770,6 +4808,12 @@
               "outcomes": [
                 "passed"
               ]
+            },
+            {
+              "procedureName": "aria-valid-attr-value",
+              "outcomes": [
+                "passed"
+              ]
             }
           ]
         },
@@ -4781,6 +4825,12 @@
           "procedureResults": [
             {
               "procedureName": "aria-allowed-attr",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
+              "procedureName": "aria-valid-attr-value",
               "outcomes": [
                 "passed"
               ]
@@ -4798,6 +4848,12 @@
               "outcomes": [
                 "passed"
               ]
+            },
+            {
+              "procedureName": "aria-valid-attr-value",
+              "outcomes": [
+                "passed"
+              ]
             }
           ]
         },
@@ -4809,6 +4865,12 @@
           "procedureResults": [
             {
               "procedureName": "aria-allowed-attr",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
+              "procedureName": "aria-valid-attr-value",
               "outcomes": [
                 "passed"
               ]
@@ -4826,6 +4888,12 @@
               "outcomes": [
                 "passed"
               ]
+            },
+            {
+              "procedureName": "aria-valid-attr-value",
+              "outcomes": [
+                "passed"
+              ]
             }
           ]
         },
@@ -4837,6 +4905,12 @@
           "procedureResults": [
             {
               "procedureName": "aria-allowed-attr",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
+              "procedureName": "aria-valid-attr-value",
               "outcomes": [
                 "passed"
               ]
@@ -4854,6 +4928,12 @@
               "outcomes": [
                 "passed"
               ]
+            },
+            {
+              "procedureName": "aria-valid-attr-value",
+              "outcomes": [
+                "passed"
+              ]
             }
           ]
         },
@@ -4865,6 +4945,12 @@
           "procedureResults": [
             {
               "procedureName": "aria-allowed-attr",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
+              "procedureName": "aria-valid-attr-value",
               "outcomes": [
                 "passed"
               ]
@@ -4882,6 +4968,12 @@
               "outcomes": [
                 "passed"
               ]
+            },
+            {
+              "procedureName": "aria-valid-attr-value",
+              "outcomes": [
+                "passed"
+              ]
             }
           ]
         },
@@ -4893,6 +4985,12 @@
           "procedureResults": [
             {
               "procedureName": "aria-allowed-attr",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
+              "procedureName": "aria-valid-attr-value",
               "outcomes": [
                 "passed"
               ]
@@ -4910,6 +5008,12 @@
               "outcomes": [
                 "failed"
               ]
+            },
+            {
+              "procedureName": "aria-valid-attr-value",
+              "outcomes": [
+                "failed"
+              ]
             }
           ]
         },
@@ -4923,6 +5027,12 @@
               "procedureName": "aria-allowed-attr",
               "outcomes": [
                 "failed"
+              ]
+            },
+            {
+              "procedureName": "aria-valid-attr-value",
+              "outcomes": [
+                "passed"
               ]
             }
           ]
@@ -4938,6 +5048,12 @@
               "outcomes": [
                 "inapplicable"
               ]
+            },
+            {
+              "procedureName": "aria-valid-attr-value",
+              "outcomes": [
+                "inapplicable"
+              ]
             }
           ]
         },
@@ -4949,6 +5065,12 @@
           "procedureResults": [
             {
               "procedureName": "aria-allowed-attr",
+              "outcomes": [
+                "inapplicable"
+              ]
+            },
+            {
+              "procedureName": "aria-valid-attr-value",
               "outcomes": [
                 "inapplicable"
               ]
@@ -4993,6 +5115,13 @@
         "select-name"
       ],
       "consistency": null,
+      "accessibilityRequirements": {
+        "expected": [],
+        "reported": [
+          "WCAG2:name-role-value",
+          "WCAG2:info-and-relationships"
+        ]
+      },
       "coverage": {
         "covered": 10,
         "testCaseTotal": 24
@@ -9571,6 +9700,12 @@
         "th-has-data-cells"
       ],
       "consistency": null,
+      "accessibilityRequirements": {
+        "expected": [
+          "WCAG2:parsing"
+        ],
+        "reported": []
+      },
       "coverage": {
         "covered": 1,
         "testCaseTotal": 10
@@ -12188,6 +12323,10 @@
         "audio-caption"
       ],
       "consistency": null,
+      "accessibilityRequirements": {
+        "expected": [],
+        "reported": []
+      },
       "coverage": {
         "covered": 0,
         "testCaseTotal": 7
@@ -12300,6 +12439,12 @@
         "no-autoplay-audio"
       ],
       "consistency": null,
+      "accessibilityRequirements": {
+        "expected": [
+          "WCAG2:audio-control"
+        ],
+        "reported": []
+      },
       "coverage": {
         "covered": 2,
         "testCaseTotal": 8
@@ -12426,6 +12571,12 @@
         "audio-caption"
       ],
       "consistency": null,
+      "accessibilityRequirements": {
+        "expected": [
+          "WCAG2:audio-only-and-video-only-prerecorded"
+        ],
+        "reported": []
+      },
       "coverage": {
         "covered": 1,
         "testCaseTotal": 7
@@ -12538,6 +12689,10 @@
         "audio-caption"
       ],
       "consistency": null,
+      "accessibilityRequirements": {
+        "expected": [],
+        "reported": []
+      },
       "coverage": {
         "covered": 0,
         "testCaseTotal": 11
@@ -12706,6 +12861,10 @@
         "no-autoplay-audio"
       ],
       "consistency": null,
+      "accessibilityRequirements": {
+        "expected": [],
+        "reported": []
+      },
       "coverage": {
         "covered": 2,
         "testCaseTotal": 7
@@ -12818,6 +12977,10 @@
         "no-autoplay-audio"
       ],
       "consistency": null,
+      "accessibilityRequirements": {
+        "expected": [],
+        "reported": []
+      },
       "coverage": {
         "covered": 2,
         "testCaseTotal": 11
@@ -12987,6 +13150,12 @@
         "marquee"
       ],
       "consistency": null,
+      "accessibilityRequirements": {
+        "expected": [
+          "WCAG2:pause-stop-hide"
+        ],
+        "reported": []
+      },
       "coverage": {
         "covered": 10,
         "testCaseTotal": 11
@@ -13221,6 +13390,14 @@
         "autocomplete-valid"
       ],
       "consistency": "complete",
+      "accessibilityRequirements": {
+        "expected": [
+          "WCAG2:identify-input-purpose"
+        ],
+        "reported": [
+          "WCAG2:identify-input-purpose"
+        ]
+      },
       "coverage": {
         "covered": 20,
         "testCaseTotal": 20
@@ -13515,6 +13692,10 @@
         "bypass"
       ],
       "consistency": "minimal",
+      "accessibilityRequirements": {
+        "expected": [],
+        "reported": []
+      },
       "coverage": {
         "covered": 1,
         "testCaseTotal": 8
@@ -13642,6 +13823,14 @@
         "aria-command-name"
       ],
       "consistency": "complete",
+      "accessibilityRequirements": {
+        "expected": [
+          "WCAG2:name-role-value"
+        ],
+        "reported": [
+          "WCAG2:name-role-value"
+        ]
+      },
       "coverage": {
         "covered": 17,
         "testCaseTotal": 17
@@ -13998,6 +14187,12 @@
         "bypass"
       ],
       "consistency": "minimal",
+      "accessibilityRequirements": {
+        "expected": [
+          "WCAG2:bypass-blocks"
+        ],
+        "reported": []
+      },
       "coverage": {
         "covered": 10,
         "testCaseTotal": 15
@@ -14236,6 +14431,14 @@
         "css-orientation-lock"
       ],
       "consistency": "complete",
+      "accessibilityRequirements": {
+        "expected": [
+          "WCAG2:orientation"
+        ],
+        "reported": [
+          "WCAG2:orientation"
+        ]
+      },
       "coverage": {
         "covered": 9,
         "testCaseTotal": 10
@@ -14408,6 +14611,10 @@
         "document-title"
       ],
       "consistency": null,
+      "accessibilityRequirements": {
+        "expected": [],
+        "reported": []
+      },
       "coverage": {
         "covered": 1,
         "testCaseTotal": 14
@@ -14788,6 +14995,10 @@
         "document-title"
       ],
       "consistency": null,
+      "accessibilityRequirements": {
+        "expected": [],
+        "reported": []
+      },
       "coverage": {
         "covered": 1,
         "testCaseTotal": 12
@@ -15116,6 +15327,10 @@
         "document-title"
       ],
       "consistency": null,
+      "accessibilityRequirements": {
+        "expected": [],
+        "reported": []
+      },
       "coverage": {
         "covered": 1,
         "testCaseTotal": 8
@@ -15338,6 +15553,14 @@
         "valid-lang"
       ],
       "consistency": null,
+      "accessibilityRequirements": {
+        "expected": [
+          "WCAG2:language-of-parts"
+        ],
+        "reported": [
+          "WCAG2:language-of-parts"
+        ]
+      },
       "coverage": {
         "covered": 9,
         "testCaseTotal": 17
@@ -15598,6 +15821,14 @@
         "valid-lang"
       ],
       "consistency": null,
+      "accessibilityRequirements": {
+        "expected": [
+          "WCAG2:language-of-parts"
+        ],
+        "reported": [
+          "WCAG2:language-of-parts"
+        ]
+      },
       "coverage": {
         "covered": 15,
         "testCaseTotal": 19
@@ -15889,6 +16120,10 @@
         "svg-img-alt"
       ],
       "consistency": null,
+      "accessibilityRequirements": {
+        "expected": [],
+        "reported": []
+      },
       "coverage": {
         "covered": 1,
         "testCaseTotal": 10
@@ -16463,6 +16698,14 @@
         "svg-img-alt"
       ],
       "consistency": "complete",
+      "accessibilityRequirements": {
+        "expected": [
+          "WCAG2:non-text-content"
+        ],
+        "reported": [
+          "WCAG2:non-text-content"
+        ]
+      },
       "coverage": {
         "covered": 10,
         "testCaseTotal": 10
@@ -16650,7 +16893,16 @@
         "label",
         "select-name"
       ],
-      "consistency": "complete",
+      "consistency": "partial",
+      "accessibilityRequirements": {
+        "expected": [
+          "WCAG2:name-role-value"
+        ],
+        "reported": [
+          "WCAG2:name-role-value",
+          "WCAG2:info-and-relationships"
+        ]
+      },
       "coverage": {
         "covered": 17,
         "testCaseTotal": 17
@@ -17129,6 +17381,12 @@
         "th-has-data-cells"
       ],
       "consistency": null,
+      "accessibilityRequirements": {
+        "expected": [
+          "WCAG2:info-and-relationships"
+        ],
+        "reported": []
+      },
       "coverage": {
         "covered": 7,
         "testCaseTotal": 15
@@ -18613,6 +18871,14 @@
         "html-has-lang"
       ],
       "consistency": "complete",
+      "accessibilityRequirements": {
+        "expected": [
+          "WCAG2:language-of-page"
+        ],
+        "reported": [
+          "WCAG2:language-of-page"
+        ]
+      },
       "coverage": {
         "covered": 7,
         "testCaseTotal": 7
@@ -18729,6 +18995,14 @@
         "html-lang-valid"
       ],
       "consistency": null,
+      "accessibilityRequirements": {
+        "expected": [
+          "WCAG2:language-of-page"
+        ],
+        "reported": [
+          "WCAG2:language-of-page"
+        ]
+      },
       "coverage": {
         "covered": 6,
         "testCaseTotal": 15
@@ -19145,6 +19419,14 @@
         "html-lang-valid"
       ],
       "consistency": "complete",
+      "accessibilityRequirements": {
+        "expected": [
+          "WCAG2:language-of-page"
+        ],
+        "reported": [
+          "WCAG2:language-of-page"
+        ]
+      },
       "coverage": {
         "covered": 7,
         "testCaseTotal": 7
@@ -19260,6 +19542,14 @@
         "html-xml-lang-mismatch"
       ],
       "consistency": "complete",
+      "accessibilityRequirements": {
+        "expected": [
+          "WCAG2:language-of-page"
+        ],
+        "reported": [
+          "WCAG2:language-of-page"
+        ]
+      },
       "coverage": {
         "covered": 12,
         "testCaseTotal": 12
@@ -19443,6 +19733,14 @@
         "document-title"
       ],
       "consistency": "complete",
+      "accessibilityRequirements": {
+        "expected": [
+          "WCAG2:page-titled"
+        ],
+        "reported": [
+          "WCAG2:page-titled"
+        ]
+      },
       "coverage": {
         "covered": 11,
         "testCaseTotal": 11
@@ -19611,6 +19909,12 @@
         "document-title"
       ],
       "consistency": null,
+      "accessibilityRequirements": {
+        "expected": [
+          "WCAG2:page-titled"
+        ],
+        "reported": []
+      },
       "coverage": {
         "covered": 4,
         "testCaseTotal": 6
@@ -19709,6 +20013,14 @@
         "duplicate-id-aria"
       ],
       "consistency": "complete",
+      "accessibilityRequirements": {
+        "expected": [
+          "WCAG2:parsing"
+        ],
+        "reported": [
+          "WCAG2:parsing"
+        ]
+      },
       "coverage": {
         "covered": 10,
         "testCaseTotal": 10
@@ -19882,6 +20194,15 @@
         "frame-title"
       ],
       "consistency": null,
+      "accessibilityRequirements": {
+        "expected": [
+          "WCAG2:name-role-value"
+        ],
+        "reported": [
+          "WCAG2:bypass-blocks",
+          "WCAG2:name-role-value"
+        ]
+      },
       "coverage": {
         "covered": 17,
         "testCaseTotal": 23
@@ -24128,6 +24449,15 @@
         "select-name"
       ],
       "consistency": null,
+      "accessibilityRequirements": {
+        "expected": [
+          "WCAG2:name-role-value"
+        ],
+        "reported": [
+          "WCAG2:bypass-blocks",
+          "WCAG2:name-role-value"
+        ]
+      },
       "coverage": {
         "covered": 8,
         "testCaseTotal": 10
@@ -25656,9 +25986,17 @@
         "server-side-image-map"
       ],
       "consistency": null,
+      "accessibilityRequirements": {
+        "expected": [
+          "WCAG2:keyboard"
+        ],
+        "reported": [
+          "WCAG2:keyboard"
+        ]
+      },
       "coverage": {
-        "covered": 4,
-        "testCaseTotal": 5
+        "covered": 5,
+        "testCaseTotal": 6
       },
       "testCaseResults": [
         {
@@ -25717,6 +26055,32 @@
           "testcaseId": "63cd20ec8886f4c59ff54f406a0e5933847bce75",
           "testCaseName": "Passed Example 3",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/akn7bn/63cd20ec8886f4c59ff54f406a0e5933847bce75.html",
+          "expected": "passed",
+          "procedureResults": [
+            {
+              "procedureName": "frame-focusable-content",
+              "outcomes": [
+                "inapplicable"
+              ]
+            },
+            {
+              "procedureName": "scrollable-region-focusable",
+              "outcomes": [
+                "inapplicable"
+              ]
+            },
+            {
+              "procedureName": "server-side-image-map",
+              "outcomes": [
+                "inapplicable"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "033e04cced5973596d9aa724feacb027d23b4c53",
+          "testCaseName": "Passed Example 4",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/akn7bn/033e04cced5973596d9aa724feacb027d23b4c53.html",
           "expected": "passed",
           "procedureResults": [
             {
@@ -25807,6 +26171,12 @@
         "svg-img-alt"
       ],
       "consistency": null,
+      "accessibilityRequirements": {
+        "expected": [
+          "WCAG2:non-text-content"
+        ],
+        "reported": []
+      },
       "coverage": {
         "covered": 13,
         "testCaseTotal": 16
@@ -26732,7 +27102,16 @@
       "procedureNames": [
         "input-image-alt"
       ],
-      "consistency": "complete",
+      "consistency": "partial",
+      "accessibilityRequirements": {
+        "expected": [
+          "WCAG2:non-text-content",
+          "WCAG2:name-role-value"
+        ],
+        "reported": [
+          "WCAG2:non-text-content"
+        ]
+      },
       "coverage": {
         "covered": 12,
         "testCaseTotal": 12
@@ -26922,6 +27301,12 @@
         "svg-img-alt"
       ],
       "consistency": null,
+      "accessibilityRequirements": {
+        "expected": [
+          "WCAG2:non-text-content"
+        ],
+        "reported": []
+      },
       "coverage": {
         "covered": 10,
         "testCaseTotal": 15
@@ -27785,6 +28170,14 @@
         "role-img-alt"
       ],
       "consistency": "complete",
+      "accessibilityRequirements": {
+        "expected": [
+          "WCAG2:non-text-content"
+        ],
+        "reported": [
+          "WCAG2:non-text-content"
+        ]
+      },
       "coverage": {
         "covered": 18,
         "testCaseTotal": 18
@@ -28166,6 +28559,12 @@
         "svg-img-alt"
       ],
       "consistency": null,
+      "accessibilityRequirements": {
+        "expected": [
+          "WCAG2:non-text-content"
+        ],
+        "reported": []
+      },
       "coverage": {
         "covered": 15,
         "testCaseTotal": 20
@@ -29324,6 +29723,14 @@
         "avoid-inline-spacing"
       ],
       "consistency": null,
+      "accessibilityRequirements": {
+        "expected": [
+          "WCAG2:text-spacing"
+        ],
+        "reported": [
+          "WCAG2:text-spacing"
+        ]
+      },
       "coverage": {
         "covered": 9,
         "testCaseTotal": 16
@@ -29565,6 +29972,14 @@
         "avoid-inline-spacing"
       ],
       "consistency": null,
+      "accessibilityRequirements": {
+        "expected": [
+          "WCAG2:text-spacing"
+        ],
+        "reported": [
+          "WCAG2:text-spacing"
+        ]
+      },
       "coverage": {
         "covered": 11,
         "testCaseTotal": 21
@@ -29878,6 +30293,12 @@
         "link-name"
       ],
       "consistency": null,
+      "accessibilityRequirements": {
+        "expected": [
+          "WCAG2:link-purpose-link-only"
+        ],
+        "reported": []
+      },
       "coverage": {
         "covered": 7,
         "testCaseTotal": 12
@@ -30224,6 +30645,13 @@
         "link-name"
       ],
       "consistency": null,
+      "accessibilityRequirements": {
+        "expected": [
+          "WCAG2:link-purpose-in-context",
+          "WCAG2:link-purpose-link-only"
+        ],
+        "reported": []
+      },
       "coverage": {
         "covered": 12,
         "testCaseTotal": 18
@@ -30736,7 +31164,19 @@
         "link-name",
         "area-alt"
       ],
-      "consistency": "complete",
+      "consistency": "partial",
+      "accessibilityRequirements": {
+        "expected": [
+          "WCAG2:name-role-value",
+          "WCAG2:link-purpose-in-context",
+          "WCAG2:link-purpose-link-only"
+        ],
+        "reported": [
+          "WCAG2:name-role-value",
+          "WCAG2:link-purpose-in-context",
+          "WCAG2:non-text-content"
+        ]
+      },
       "coverage": {
         "covered": 28,
         "testCaseTotal": 28
@@ -31311,6 +31751,12 @@
         "identical-links-same-purpose"
       ],
       "consistency": "minimal",
+      "accessibilityRequirements": {
+        "expected": [
+          "WCAG2:link-purpose-link-only"
+        ],
+        "reported": []
+      },
       "coverage": {
         "covered": 10,
         "testCaseTotal": 21
@@ -31621,6 +32067,13 @@
         "identical-links-same-purpose"
       ],
       "consistency": "minimal",
+      "accessibilityRequirements": {
+        "expected": [
+          "WCAG2:link-purpose-in-context",
+          "WCAG2:link-purpose-link-only"
+        ],
+        "reported": []
+      },
       "coverage": {
         "covered": 7,
         "testCaseTotal": 17
@@ -31875,6 +32328,14 @@
         "button-name"
       ],
       "consistency": "complete",
+      "accessibilityRequirements": {
+        "expected": [
+          "WCAG2:name-role-value"
+        ],
+        "reported": [
+          "WCAG2:name-role-value"
+        ]
+      },
       "coverage": {
         "covered": 8,
         "testCaseTotal": 8
@@ -32001,6 +32462,18 @@
         "meta-refresh"
       ],
       "consistency": null,
+      "accessibilityRequirements": {
+        "expected": [
+          "WCAG2:timing-adjustable",
+          "WCAG2:interruptions",
+          "WCAG2:change-on-request"
+        ],
+        "reported": [
+          "WCAG2:timing-adjustable",
+          "WCAG2:interruptions",
+          "WCAG2:change-on-request"
+        ]
+      },
       "coverage": {
         "covered": 7,
         "testCaseTotal": 15
@@ -32226,6 +32699,17 @@
         "meta-refresh"
       ],
       "consistency": null,
+      "accessibilityRequirements": {
+        "expected": [
+          "WCAG2:interruptions",
+          "WCAG2:change-on-request"
+        ],
+        "reported": [
+          "WCAG2:timing-adjustable",
+          "WCAG2:interruptions",
+          "WCAG2:change-on-request"
+        ]
+      },
       "coverage": {
         "covered": 9,
         "testCaseTotal": 14
@@ -32436,7 +32920,13 @@
       "procedureNames": [
         "meta-viewport"
       ],
-      "consistency": "complete",
+      "consistency": "partial",
+      "accessibilityRequirements": {
+        "expected": [
+          "WCAG2:resize-text"
+        ],
+        "reported": []
+      },
       "coverage": {
         "covered": 11,
         "testCaseTotal": 11
@@ -32613,6 +33103,14 @@
         "object-alt"
       ],
       "consistency": "complete",
+      "accessibilityRequirements": {
+        "expected": [
+          "WCAG2:non-text-content"
+        ],
+        "reported": [
+          "WCAG2:non-text-content"
+        ]
+      },
       "coverage": {
         "covered": 14,
         "testCaseTotal": 14
@@ -32824,7 +33322,16 @@
         "aria-allowed-attr",
         "label"
       ],
-      "consistency": "complete",
+      "consistency": "partial",
+      "accessibilityRequirements": {
+        "expected": [
+          "WCAG2:name-role-value"
+        ],
+        "reported": [
+          "WCAG2:name-role-value",
+          "WCAG2:info-and-relationships"
+        ]
+      },
       "coverage": {
         "covered": 7,
         "testCaseTotal": 7
@@ -33072,6 +33579,15 @@
         "duplicate-id"
       ],
       "consistency": null,
+      "accessibilityRequirements": {
+        "expected": [
+          "WCAG2:info-and-relationships"
+        ],
+        "reported": [
+          "WCAG2:name-role-value",
+          "WCAG2:info-and-relationships"
+        ]
+      },
       "coverage": {
         "covered": 1,
         "testCaseTotal": 10
@@ -35689,6 +36205,14 @@
         "aria-required-attr"
       ],
       "consistency": "complete",
+      "accessibilityRequirements": {
+        "expected": [
+          "WCAG2:name-role-value"
+        ],
+        "reported": [
+          "WCAG2:name-role-value"
+        ]
+      },
       "coverage": {
         "covered": 8,
         "testCaseTotal": 8
@@ -35815,7 +36339,16 @@
       "procedureNames": [
         "scrollable-region-focusable"
       ],
-      "consistency": "complete",
+      "consistency": "partial",
+      "accessibilityRequirements": {
+        "expected": [
+          "WCAG2:keyboard",
+          "WCAG2:keyboard-no-exception"
+        ],
+        "reported": [
+          "WCAG2:keyboard"
+        ]
+      },
       "coverage": {
         "covered": 10,
         "testCaseTotal": 10
@@ -35978,6 +36511,12 @@
         "th-has-data-cells"
       ],
       "consistency": "minimal",
+      "accessibilityRequirements": {
+        "expected": [
+          "WCAG2:info-and-relationships"
+        ],
+        "reported": []
+      },
       "coverage": {
         "covered": 13,
         "testCaseTotal": 16
@@ -36216,6 +36755,14 @@
         "td-headers-attr"
       ],
       "consistency": "complete",
+      "accessibilityRequirements": {
+        "expected": [
+          "WCAG2:info-and-relationships"
+        ],
+        "reported": [
+          "WCAG2:info-and-relationships"
+        ]
+      },
       "coverage": {
         "covered": 16,
         "testCaseTotal": 16
@@ -36453,7 +37000,16 @@
       "procedureNames": [
         "color-contrast"
       ],
-      "consistency": "complete",
+      "consistency": "partial",
+      "accessibilityRequirements": {
+        "expected": [
+          "WCAG2:contrast-minimum",
+          "WCAG2:contrast-enhanced"
+        ],
+        "reported": [
+          "WCAG2:contrast-minimum"
+        ]
+      },
       "coverage": {
         "covered": 21,
         "testCaseTotal": 28
@@ -36861,6 +37417,14 @@
         "color-contrast-enhanced"
       ],
       "consistency": "complete",
+      "accessibilityRequirements": {
+        "expected": [
+          "WCAG2:contrast-enhanced"
+        ],
+        "reported": [
+          "WCAG2:contrast-enhanced"
+        ]
+      },
       "coverage": {
         "covered": 22,
         "testCaseTotal": 29
@@ -37299,6 +37863,12 @@
         "video-caption"
       ],
       "consistency": null,
+      "accessibilityRequirements": {
+        "expected": [
+          "WCAG2:captions-prerecorded"
+        ],
+        "reported": []
+      },
       "coverage": {
         "covered": 1,
         "testCaseTotal": 6
@@ -37398,6 +37968,14 @@
         "video-caption"
       ],
       "consistency": null,
+      "accessibilityRequirements": {
+        "expected": [
+          "WCAG2:audio-description-or-media-alternative-prerecorded",
+          "WCAG2:audio-description-prerecorded",
+          "WCAG2:media-alternative-prerecorded"
+        ],
+        "reported": []
+      },
       "coverage": {
         "covered": 0,
         "testCaseTotal": 9
@@ -37593,6 +38171,10 @@
         "video-caption"
       ],
       "consistency": null,
+      "accessibilityRequirements": {
+        "expected": [],
+        "reported": []
+      },
       "coverage": {
         "covered": 0,
         "testCaseTotal": 7
@@ -37763,6 +38345,10 @@
         "audio-caption"
       ],
       "consistency": null,
+      "accessibilityRequirements": {
+        "expected": [],
+        "reported": []
+      },
       "coverage": {
         "covered": 1,
         "testCaseTotal": 5
@@ -37847,6 +38433,12 @@
         "audio-caption"
       ],
       "consistency": "minimal",
+      "accessibilityRequirements": {
+        "expected": [
+          "WCAG2:audio-only-and-video-only-prerecorded"
+        ],
+        "reported": []
+      },
       "coverage": {
         "covered": 4,
         "testCaseTotal": 9
@@ -37987,6 +38579,10 @@
         "audio-caption"
       ],
       "consistency": null,
+      "accessibilityRequirements": {
+        "expected": [],
+        "reported": []
+      },
       "coverage": {
         "covered": 2,
         "testCaseTotal": 7
@@ -38099,6 +38695,10 @@
         "audio-caption"
       ],
       "consistency": null,
+      "accessibilityRequirements": {
+        "expected": [],
+        "reported": []
+      },
       "coverage": {
         "covered": 0,
         "testCaseTotal": 5
@@ -38183,6 +38783,10 @@
         "audio-caption"
       ],
       "consistency": null,
+      "accessibilityRequirements": {
+        "expected": [],
+        "reported": []
+      },
       "coverage": {
         "covered": 2,
         "testCaseTotal": 5
@@ -38267,6 +38871,10 @@
         "audio-caption"
       ],
       "consistency": null,
+      "accessibilityRequirements": {
+        "expected": [],
+        "reported": []
+      },
       "coverage": {
         "covered": 1,
         "testCaseTotal": 8
@@ -38393,6 +39001,12 @@
         "audio-caption"
       ],
       "consistency": null,
+      "accessibilityRequirements": {
+        "expected": [
+          "WCAG2:audio-description-prerecorded"
+        ],
+        "reported": []
+      },
       "coverage": {
         "covered": 1,
         "testCaseTotal": 7
@@ -38513,6 +39127,14 @@
         "label-content-name-mismatch"
       ],
       "consistency": "complete",
+      "accessibilityRequirements": {
+        "expected": [
+          "WCAG2:label-in-name"
+        ],
+        "reported": [
+          "WCAG2:label-in-name"
+        ]
+      },
       "coverage": {
         "covered": 12,
         "testCaseTotal": 13
@@ -38709,6 +39331,14 @@
         "avoid-inline-spacing"
       ],
       "consistency": null,
+      "accessibilityRequirements": {
+        "expected": [
+          "WCAG2:text-spacing"
+        ],
+        "reported": [
+          "WCAG2:text-spacing"
+        ]
+      },
       "coverage": {
         "covered": 9,
         "testCaseTotal": 16
@@ -38951,6 +39581,12 @@
         "color-contrast"
       ],
       "consistency": null,
+      "accessibilityRequirements": {
+        "expected": [
+          "WCAG2:resize-text"
+        ],
+        "reported": []
+      },
       "coverage": {
         "covered": 0,
         "testCaseTotal": 12
