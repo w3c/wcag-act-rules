@@ -68,7 +68,7 @@ type_of_guidance: false
     <tr> <th>Expected</th> <th>Reported</th></tr>
     <tr>
       <td>
-        {% if ruleMapping.accessibilityRequirements.expected.length > 0 %}
+        {% if ruleMapping.accessibilityRequirements.expected.size > 0 %}
           <ul>{% for requirementKey in ruleMapping.accessibilityRequirements.expected %}
             <li>
               {{ requirements[requirementKey].key }}
@@ -79,7 +79,7 @@ type_of_guidance: false
       </td>
 
       <td>
-        {% if ruleMapping.accessibilityRequirements.reported.length > 0 %}
+        {% if ruleMapping.accessibilityRequirements.reported.size > 0 %}
           <ul>{% for requirementKey in ruleMapping.accessibilityRequirements.reported %}
             <li>
               {{ requirements[requirementKey].key }}
