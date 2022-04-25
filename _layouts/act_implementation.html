@@ -55,28 +55,36 @@ type_of_guidance: false
 
 {% for ruleMapping in implementation.actRuleMapping %}
 {% if ruleMapping.consistency != null %}
-<h3>{{ ruleMapping.ruleName }}</h3>
+<h3 id="breakdown-{{ ruleMapping.ruleId }}">{{
+  ruleMapping.ruleName
+}}</h3>
+
+<p>This is a {{ ruleMapping.consistency }} implementation.</p>
 
 {% if ruleMapping.accessibilityRequirements %}
-  <table id="requirements-{{ ruleMapping.ruleId }}">
+  <table>
     <caption>Accessibility Requirements</caption>
     <tr> <th>Expected</th> <th>Reported</th></tr>
     <tr>
       <td><ul>
         {% for requirementKey in  ruleMapping.accessibilityRequirements.expected %}
           <li>{{ requirementKey }}</li>
+        {% else %}
+          None
         {% endfor %}
       </ul></td>
       <td><ul>
         {% for requirementKey in  ruleMapping.accessibilityRequirements.reported %}
           <li>{{ requirementKey }}</li>
+        {% else %}
+          None
         {% endfor %}
       </ul></td>
     </tr>
   </table>
 {% endif %}
 
-<table id="breakdown-{{ ruleMapping.ruleId }}">
+<table>
   <caption>Test Results</caption>
   <thead>
     <tr>
