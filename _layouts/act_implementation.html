@@ -4,6 +4,7 @@ type_of_guidance: false
 ---
 
 {% assign implementations = site.data.wcag-act-rules.implementations %}
+{% assign requirements = site.data.wcag-act-rules.requirements %}
 {% assign implementation = implementations[page.implementation_key] %}
 
 <p>
@@ -66,20 +67,27 @@ type_of_guidance: false
     <caption>Accessibility Requirements</caption>
     <tr> <th>Expected</th> <th>Reported</th></tr>
     <tr>
-      <td><ul>
-        {% for requirementKey in  ruleMapping.accessibilityRequirements.expected %}
-          <li>{{ requirementKey }}</li>
-        {% else %}
-          None
-        {% endfor %}
-      </ul></td>
-      <td><ul>
-        {% for requirementKey in  ruleMapping.accessibilityRequirements.reported %}
-          <li>{{ requirementKey }}</li>
-        {% else %}
-          None
-        {% endfor %}
-      </ul></td>
+      <td>
+        {% if ruleMapping.accessibilityRequirements.expected.length > 0 %}
+          <ul>{% for requirementKey in ruleMapping.accessibilityRequirements.expected %}
+            <li>
+              {{ requirements[requirementKey].key }}
+              {{ requirements[requirementKey].title }}
+            </li>
+          {% endfor %}</ul>
+        {% else %} None {% endif %}
+      </td>
+
+      <td>
+        {% if ruleMapping.accessibilityRequirements.reported.length > 0 %}
+          <ul>{% for requirementKey in ruleMapping.accessibilityRequirements.reported %}
+            <li>
+              {{ requirements[requirementKey].key }}
+              {{ requirements[requirementKey].title }}
+            </li>
+          {% endfor %}</ul>
+        {% else %} None {% endif %}
+      </td>
     </tr>
   </table>
 {% endif %}
