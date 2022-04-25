@@ -58,9 +58,9 @@ type_of_guidance: false
 <h3>{{ ruleMapping.ruleName }}</h3>
 
 {% if ruleMapping.accessibilityRequirements %}
-  <table id="requirements-{{ ruleMapping.ruleId }}"></table>
+  <table id="requirements-{{ ruleMapping.ruleId }}">
     <caption>Accessibility Requirements</caption>
-    <tr> </tr><th>Expected</th> <th>Reported</th></tr>
+    <tr> <th>Expected</th> <th>Reported</th></tr>
     <tr>
       <td><ul>
         {% for requirementKey in  ruleMapping.accessibilityRequirements.expected %}
