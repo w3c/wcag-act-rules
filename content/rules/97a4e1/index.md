@@ -88,6 +88,8 @@ The following aspects are required in using this rule.
 
 #### Passed Example 1
 
+<a class="example-link" title="Passed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/97a4e1/a4cc71b0434f71f4ea0069c409f73e0207dfb403.html">Open in a new tab</a>
+
 This `button` element has an [accessible name][] because of its text content.
 
 ```html
@@ -95,6 +97,8 @@ This `button` element has an [accessible name][] because of its text content.
 ```
 
 #### Passed Example 2
+
+<a class="example-link" title="Passed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/97a4e1/d9adf41033a5b71a0730b6df8c1c7e01088e9022.html">Open in a new tab</a>
 
 This `input` element has an [accessible name][] because of its `value` attribute.
 
@@ -104,6 +108,8 @@ This `input` element has an [accessible name][] because of its `value` attribute
 
 #### Passed Example 3
 
+<a class="example-link" title="Passed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/97a4e1/3004e7b1a47b2e5a5c77b3eef36b50d495c9e4a1.html">Open in a new tab</a>
+
 This `button` element has an [accessible name][] because of its `aria-label` attribute.
 
 ```html
@@ -111,6 +117,8 @@ This `button` element has an [accessible name][] because of its `aria-label` att
 ```
 
 #### Passed Example 4
+
+<a class="example-link" title="Passed Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/97a4e1/ff4b76894bd9aaad29242e72fe93fd9798bf85af.html">Open in a new tab</a>
 
 This element with a `button` role has an [accessible name][] because of its `aria-label` attribute.
 
@@ -120,6 +128,8 @@ This element with a `button` role has an [accessible name][] because of its `ari
 
 #### Passed Example 5
 
+<a class="example-link" title="Passed Example 5" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/97a4e1/5bfdf45a98f7d2f0e93a700f7ce0fe5f723bf0f7.html">Open in a new tab</a>
+
 This `button` element with the `disabled` attribute has an [accessible name][] because of its text content.
 
 ```html
@@ -127,6 +137,8 @@ This `button` element with the `disabled` attribute has an [accessible name][] b
 ```
 
 #### Passed Example 6
+
+<a class="example-link" title="Passed Example 6" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/97a4e1/00fe207175e40ddc81a86fb09504e5fa33b7dd0f.html">Open in a new tab</a>
 
 This off screen `button` element has an [accessible name][] because of its text content.
 
@@ -147,6 +159,8 @@ This off screen `button` element has an [accessible name][] because of its text 
 
 #### Passed Example 7
 
+<a class="example-link" title="Passed Example 7" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/97a4e1/3fe70212e0020d7fa552b7c6c035a466c900c4b9.html">Open in a new tab</a>
+
 This `input` element has an [accessible name][] because of the default accessible name for an `input` element with a `type` attribute set to `reset`.
 
 ```html
@@ -157,6 +171,8 @@ This `input` element has an [accessible name][] because of the default accessibl
 
 #### Failed Example 1
 
+<a class="example-link" title="Failed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/97a4e1/1ec8deb0b18514b612774d3af39b5ad41f2a792b.html">Open in a new tab</a>
+
 This `button` element has no [accessible name][] because it has no content or attribute that can provide it.
 
 ```html
@@ -164,6 +180,8 @@ This `button` element has no [accessible name][] because it has no content or at
 ```
 
 #### Failed Example 2
+
+<a class="example-link" title="Failed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/97a4e1/2c5b0625e21b3503d1cd4c4daf53b15ae41c562d.html">Open in a new tab</a>
 
 This `button` element has no [accessible name][]. The `value` attribute does not provide an [accessible name][] for `button` elements, only when an `input` element's [state of the `type` attribute](https://html.spec.whatwg.org/multipage/input.html#states-of-the-type-attribute) is `button`, `submit` or `reset`.
 
@@ -173,6 +191,8 @@ This `button` element has no [accessible name][]. The `value` attribute does not
 
 #### Failed Example 3
 
+<a class="example-link" title="Failed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/97a4e1/ffe1796f06e1082a8ddae54a471dcca66c783c4e.html">Open in a new tab</a>
+
 This element with the `button` role has no [accessible name][] because it has no content or attribute that can provide it.
 
 ```html
@@ -180,6 +200,8 @@ This element with the `button` role has no [accessible name][] because it has no
 ```
 
 #### Failed Example 4
+
+<a class="example-link" title="Failed Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/97a4e1/1a6035f4f09b339ac53bc547fc727a51ab05a3c6.html">Open in a new tab</a>
 
 This off screen `button` element has no [accessible name][] because it has no content or attribute that can provide it.
 
@@ -200,6 +222,8 @@ This off screen `button` element has no [accessible name][] because it has no co
 
 #### Failed Example 5
 
+<a class="example-link" title="Failed Example 5" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/97a4e1/ac9a749a026c47209c34677ca6ac0dc093d24888.html">Open in a new tab</a>
+
 This `button` element has an [explicit role][] of `none`. However, it is [focusable][] (by default). Thus it has a [semantic role][] of `button` due to [Presentational Roles Conflict Resolution][]. It has an empty [accessible name][].
 
 ```html
@@ -210,6 +234,8 @@ This `button` element has an [explicit role][] of `none`. However, it is [focusa
 
 #### Inapplicable Example 1
 
+<a class="example-link" title="Inapplicable Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/97a4e1/0666607827b30150ed0a5be439f58623b3222131.html">Open in a new tab</a>
+
 This `input` element has a `type` attribute set to `image`. These images are tested in a separate rule which also tests [success criterion 1.1.1 Non-text Content](https://www.w3.org/TR/WCAG21/#non-text-content).
 
 ```html
@@ -217,6 +243,8 @@ This `input` element has a `type` attribute set to `image`. These images are tes
 ```
 
 #### Inapplicable Example 2
+
+<a class="example-link" title="Inapplicable Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/97a4e1/14c51a76c14250316a756b7660b2489f18896d5a.html">Open in a new tab</a>
 
 This `button` element does not need an [accessible name][] because it is not included in the accessibility tree.
 
@@ -226,6 +254,8 @@ This `button` element does not need an [accessible name][] because it is not inc
 
 #### Inapplicable Example 3
 
+<a class="example-link" title="Inapplicable Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/97a4e1/096bf1e8eeb0b5633861389cb3fa3267649e396c.html">Open in a new tab</a>
+
 This `button` element has a `link` role. Links are tested in a separate rule which also tests [success criterion 2.4.4 Link Purpose (In Context)](https://www.w3.org/TR/WCAG21/#link-purpose-in-context).
 
 ```html
@@ -234,6 +264,8 @@ This `button` element has a `link` role. Links are tested in a separate rule whi
 
 #### Inapplicable Example 4
 
+<a class="example-link" title="Inapplicable Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/97a4e1/b6b0eec01fc2759e3335fa4e448e5772161a9da6.html">Open in a new tab</a>
+
 There is no element with a semantic role of `button`.
 
 ```html
@@ -241,6 +273,8 @@ There is no element with a semantic role of `button`.
 ```
 
 #### Inapplicable Example 5
+
+<a class="example-link" title="Inapplicable Example 5" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/97a4e1/21bbd170c05cd535fd5096f9c7eebc54eb72d936.html">Open in a new tab</a>
 
 This `button` element has an [explicit role][] of `none`; it is not [focusable][] because it is `disabled`. Thus it has a [semantic role][] of `none`.
 

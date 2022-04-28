@@ -107,13 +107,17 @@ The following aspects are required in using this rule.
 
 #### Passed Example 1
 
+<a class="example-link" title="Passed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bf051a/7d8c4fd028c504d10c4e5e9bd7183c139549e1a1.html">Open in a new tab</a>
+
 This `html` element has a `lang` attribute with a [known primary language tag][].
 
 ```html
-<html lang="fr"></html>
+<html lang="FR"></html>
 ```
 
 #### Passed Example 2
+
+<a class="example-link" title="Passed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bf051a/a49f11c86ad81c4d42700dfca58a7eeec377f02e.html">Open in a new tab</a>
 
 This `html` element has a `lang` attribute with a [known primary language tag][] even though the [region subtag][] is not.
 
@@ -125,6 +129,8 @@ This `html` element has a `lang` attribute with a [known primary language tag][]
 
 #### Failed Example 1
 
+<a class="example-link" title="Failed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bf051a/b7a35f8080e756776877bca013a910dafde8ef73.html">Open in a new tab</a>
+
 This `html` element has a `lang` attribute with a [known primary language tag][].
 
 ```html
@@ -133,6 +139,8 @@ This `html` element has a `lang` attribute with a [known primary language tag][]
 
 #### Failed Example 2
 
+<a class="example-link" title="Failed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bf051a/5c998eef8cb13a8f577dade1a3b9fe591bc69204.html">Open in a new tab</a>
+
 This `html` element has a `lang` attribute with a [known primary language tag][].
 
 ```html
@@ -140,6 +148,8 @@ This `html` element has a `lang` attribute with a [known primary language tag][]
 ```
 
 #### Failed Example 3
+
+<a class="example-link" title="Failed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bf051a/0f73e7179e17f050380f0ea350d2551611820fd5.html">Open in a new tab</a>
 
 The `lang` attribute of this page is an [iso 639.2][] three letters code, which has no [known primary language tag][].
 
@@ -152,6 +162,8 @@ The `lang` attribute of this page is an [iso 639.2][] three letters code, which 
 ```
 
 #### Failed Example 4
+
+<a class="example-link" title="Failed Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bf051a/b64d767d873269ff00966630e34ab198fc24368f.html">Open in a new tab</a>
 
 The `lang` attribute of this page is a [grandfathered tag][grandfathered tags], which has no [known primary language tag][].
 
@@ -166,6 +178,8 @@ The `lang` attribute of this page is a [grandfathered tag][grandfathered tags], 
 ### Inapplicable
 
 #### Inapplicable Example 1
+
+<a class="example-link" title="Inapplicable Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bf051a/1b73557d29073ecd327790ca1a6e343b4395b2ab.svg">Open in a new tab</a>
 
 This rule does not apply to `svg` elements.
 
