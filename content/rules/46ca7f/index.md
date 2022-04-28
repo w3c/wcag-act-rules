@@ -64,6 +64,8 @@ The following aspects are required in using this rule.
 
 #### Passed Example 1
 
+<a class="example-link" title="Passed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/46ca7f/e5b8fa7ab66409e7b52b335a8b6aebe11fd78635.html">Open in a new tab</a>
+
 This `img` element is [marked as decorative][] through its empty `alt` attribute and has [semantic role][] of `none`.
 
 ```html
@@ -71,6 +73,8 @@ This `img` element is [marked as decorative][] through its empty `alt` attribute
 ```
 
 #### Passed Example 2
+
+<a class="example-link" title="Passed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/46ca7f/b40e6ce081099b8bf0f76a43f4c27f12df342ddd.html">Open in a new tab</a>
 
 This `img` element is [marked as decorative][] through its empty `alt` attribute and is not [included in the accessibility tree][] because of the `aria-hidden` attribute.
 
@@ -80,6 +84,8 @@ This `img` element is [marked as decorative][] through its empty `alt` attribute
 
 #### Passed Example 3
 
+<a class="example-link" title="Passed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/46ca7f/6f8e6014c133635fecac02e1087a666c5014ae5f.html">Open in a new tab</a>
+
 This `img` element is [marked as decorative][] through its empty `alt` attribute and is not [included in the accessibility tree][] because it is `hidden` to everyone.
 
 ```html
@@ -87,6 +93,8 @@ This `img` element is [marked as decorative][] through its empty `alt` attribute
 ```
 
 #### Passed Example 4
+
+<a class="example-link" title="Passed Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/46ca7f/eb5983ff8bb0f85c891d48f96106337446797d8f.html">Open in a new tab</a>
 
 This `nav` element is [marked as decorative][] through its `role` attribute and has a [semantic role][] of `presentation`.
 
@@ -98,6 +106,8 @@ This `nav` element is [marked as decorative][] through its `role` attribute and 
 
 #### Passed Example 5
 
+<a class="example-link" title="Passed Example 5" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/46ca7f/9c51e8f0568ab3401375114dd0eded2eddfe231a.html">Open in a new tab</a>
+
 This `img` element is [marked as decorative][] through its `role` attribute and has a [semantic role][] of `presentation` because own attributes are not required to be exposed and thus do not trigger the [presentational roles conflict resolution][].
 
 ```html
@@ -105,6 +115,8 @@ This `img` element is [marked as decorative][] through its `role` attribute and 
 ```
 
 #### Passed Example 6
+
+<a class="example-link" title="Passed Example 6" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/46ca7f/6687821a71b53e0e1764e895900a6bad46412b5c.html">Open in a new tab</a>
 
 This `svg` element is [marked as decorative][] through its `role` attribute and has a [semantic role][] of `none`.
 
@@ -118,6 +130,8 @@ This `svg` element is [marked as decorative][] through its `role` attribute and 
 
 #### Failed Example 1
 
+<a class="example-link" title="Failed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/46ca7f/e136a03c52c01c1b190c7372d83463f3c6502de9.html">Open in a new tab</a>
+
 This `nav` element is [marked as decorative][] through its `role` attribute but has a non-empty `aria-label` attribute causing it to be [included in the accessibility tree][] with its [implicit role][] of `navigation`.
 
 ```html
@@ -128,6 +142,8 @@ This `nav` element is [marked as decorative][] through its `role` attribute but 
 
 #### Failed Example 2
 
+<a class="example-link" title="Failed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/46ca7f/96c1f58088f1e32c965f38ddc50d4b88f6a0f022.html">Open in a new tab</a>
+
 This `img` element is [marked as decorative][] through its empty `alt` attribute but has a non-empty `aria-labelledby` attribute causing it to be [included in the accessibility tree][] with its [implicit role][] of `img`.
 
 ```html
@@ -135,6 +151,8 @@ This `img` element is [marked as decorative][] through its empty `alt` attribute
 ```
 
 #### Failed Example 3
+
+<a class="example-link" title="Failed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/46ca7f/b4329d21bd80d961408bf066a70998417234f200.html">Open in a new tab</a>
 
 This `svg` element is [marked as decorative][] through its `role` attribute but has a non-empty `aria-label` attribute causing it to be [included in the accessibility tree][] with its [implicit role][] of `graphics-document`.
 
@@ -147,6 +165,8 @@ This `svg` element is [marked as decorative][] through its `role` attribute but 
 ### Inapplicable
 
 #### Inapplicable Example 1
+
+<a class="example-link" title="Inapplicable Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/46ca7f/a48478825dc5baf21cc79bfcfbe12ed462590f1e.html">Open in a new tab</a>
 
 This `img` element is not [marked as decorative][].
 

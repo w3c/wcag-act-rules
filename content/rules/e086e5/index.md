@@ -94,6 +94,8 @@ The following aspects are required in using this rule.
 
 #### Passed Example 1
 
+<a class="example-link" title="Passed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/e086e5/933cad4e69415e2a2970832d2d60e2b854bca1b4.html">Open in a new tab</a>
+
 This `input` element has an [accessible name][] because of its [programmatic label](#programmatic-label).
 
 ```html
@@ -105,6 +107,8 @@ This `input` element has an [accessible name][] because of its [programmatic lab
 
 #### Passed Example 2
 
+<a class="example-link" title="Passed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/e086e5/366e62d83ede9df9fdad86cf7040600916bb065a.html">Open in a new tab</a>
+
 This `input` element has an [accessible name][] because of its `aria-label` attribute.
 
 ```html
@@ -113,6 +117,8 @@ This `input` element has an [accessible name][] because of its `aria-label` attr
 ```
 
 #### Passed Example 3
+
+<a class="example-link" title="Passed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/e086e5/6726b79b0534d80f567c3e5fd7174962d411be95.html">Open in a new tab</a>
 
 This `select` element has an [accessible name][] because of its [programmatic label](#programmatic-label).
 
@@ -128,6 +134,8 @@ This `select` element has an [accessible name][] because of its [programmatic la
 
 #### Passed Example 4
 
+<a class="example-link" title="Passed Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/e086e5/2183d2e337eec311b7c2e06c2f9cec759913dba9.html">Open in a new tab</a>
+
 This `textarea` element has an [accessible name][] because of its `aria-labelledby` attribute.
 
 ```html
@@ -136,6 +144,8 @@ This `textarea` element has an [accessible name][] because of its `aria-labelled
 ```
 
 #### Passed Example 5
+
+<a class="example-link" title="Passed Example 5" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/e086e5/3aa8f45d7e358655c39708e2656a2c2d97e7dfa6.html">Open in a new tab</a>
 
 This `input` element has an [accessible name][] because of its `placeholder` attribute.
 
@@ -147,6 +157,8 @@ This `input` element has an [accessible name][] because of its `placeholder` att
 
 #### Passed Example 6
 
+<a class="example-link" title="Passed Example 6" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/e086e5/ca41ec5f1dba602b8b6e332ad524cbfc5cd1505e.html">Open in a new tab</a>
+
 This [semantic][semantic role] `combobox` element has an [accessible name][] because of its `aria-label` attribute.
 
 ```html
@@ -155,6 +167,8 @@ This [semantic][semantic role] `combobox` element has an [accessible name][] bec
 ```
 
 #### Passed Example 7
+
+<a class="example-link" title="Passed Example 7" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/e086e5/09ea6ee13f7f26b0d6e3103946209ea0726876de.html">Open in a new tab</a>
 
 This [semantic][semantic role] `checkbox` element has the text content as its [accessible name][].
 
@@ -166,6 +180,8 @@ This [semantic][semantic role] `checkbox` element has the text content as its [a
 
 #### Failed Example 1
 
+<a class="example-link" title="Failed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/e086e5/004258203c8bf167307b6ed79f765115d16a6357.html">Open in a new tab</a>
+
 This `input` element does not have an attribute that gives an [accessible name][] to it.
 
 ```html
@@ -175,6 +191,8 @@ This `input` element does not have an attribute that gives an [accessible name][
 
 #### Failed Example 2
 
+<a class="example-link" title="Failed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/e086e5/5c0ba53d53cc9fd8627f224b39db30bd9ffa5757.html">Open in a new tab</a>
+
 This disabled `input` element does not have an attribute that gives an [accessible name][] to it.
 
 ```html
@@ -183,6 +201,8 @@ This disabled `input` element does not have an attribute that gives an [accessib
 
 #### Failed Example 3
 
+<a class="example-link" title="Failed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/e086e5/80a5df2346e082cd0be260143ac9090a902bcf30.html">Open in a new tab</a>
+
 This `input` element has an empty (`""`) [accessible name][] because the space in the `aria-label` [attribute value][] is trimmed.
 
 ```html
@@ -190,6 +210,8 @@ This `input` element has an empty (`""`) [accessible name][] because the space i
 ```
 
 #### Failed Example 4
+
+<a class="example-link" title="Failed Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/e086e5/a59cf1abfabcb96ab4592966bb4a78e788b41017.html">Open in a new tab</a>
 
 This `select` element has an empty (`""`) [accessible name][] because the `div` has no text content.
 
@@ -202,6 +224,8 @@ This `select` element has an empty (`""`) [accessible name][] because the `div` 
 
 #### Failed Example 5
 
+<a class="example-link" title="Failed Example 5" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/e086e5/552732aff853ed413ed7b5ff4a6202d11fd0c1a5.html">Open in a new tab</a>
+
 This [semantic][semantic role] `textbox` element has an empty (`""`) [accessible name][]. The parent `label` element does not give it an [accessible name][], this only works for native form fields.
 
 ```html
@@ -213,6 +237,8 @@ This [semantic][semantic role] `textbox` element has an empty (`""`) [accessible
 
 #### Failed Example 6
 
+<a class="example-link" title="Failed Example 6" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/e086e5/4246616cd947040f64dc183b66e1f6c30b2d7fbb.html">Open in a new tab</a>
+
 This [semantic][semantic role] `textbox` element has an empty (`""`) [accessible name][]. The `label` element does not give it an [accessible name][], this only works for native form fields.
 
 ```html
@@ -221,6 +247,8 @@ This [semantic][semantic role] `textbox` element has an empty (`""`) [accessible
 ```
 
 #### Failed Example 7
+
+<a class="example-link" title="Failed Example 7" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/e086e5/b0c554cfdddfdc0fe15923066b329868dd9e70c8.html">Open in a new tab</a>
 
 This [semantic][semantic role] `textbox` element has an empty (`""`) [accessible name][]. The text content of the element serves as its value, not as an [accessible name][].
 
@@ -232,6 +260,8 @@ This [semantic][semantic role] `textbox` element has an empty (`""`) [accessible
 
 #### Inapplicable Example 1
 
+<a class="example-link" title="Inapplicable Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/e086e5/c828178c45e9299883296cf425144d2ae804fc27.html">Open in a new tab</a>
+
 This `input` element is not [included in the accessibility tree][] because of its `style` attribute which sets `display` to `none`.
 
 ```html
@@ -240,6 +270,8 @@ This `input` element is not [included in the accessibility tree][] because of it
 
 #### Inapplicable Example 2
 
+<a class="example-link" title="Inapplicable Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/e086e5/43b93bc71597fdc7152a7920a78f27a3b27cf639.html">Open in a new tab</a>
+
 This `input` element is not [included in the accessibility tree][] because of its `aria-hidden` attribute.
 
 ```html
@@ -247,6 +279,8 @@ This `input` element is not [included in the accessibility tree][] because of it
 ```
 
 #### Inapplicable Example 3
+
+<a class="example-link" title="Inapplicable Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/e086e5/16a907322625e3b82c25f571eb9dd8fe897444f8.html">Open in a new tab</a>
 
 This `select` element is not [included in the accessibility tree][] because it is `disabled` and has a `role` attribute value of "none".
 

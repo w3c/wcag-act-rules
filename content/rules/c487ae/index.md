@@ -133,6 +133,8 @@ The following aspects are required in using this rule.
 
 #### Passed Example 1
 
+<a class="example-link" title="Passed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/c487ae/a8cc66de4d60e34c7ee0d09fd6ab965ac23d9b4f.html">Open in a new tab</a>
+
 This `a` element has an [accessible name][] from its content.
 
 ```html
@@ -140,6 +142,8 @@ This `a` element has an [accessible name][] from its content.
 ```
 
 #### Passed Example 2
+
+<a class="example-link" title="Passed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/c487ae/d761116217a5875490cd7a2adf0219bdb1bff5cf.html">Open in a new tab</a>
 
 This `div` element has an [explicit semantic role](#explicit-role) of `link` and an [accessible name][] from its content.
 
@@ -158,6 +162,8 @@ This `div` element has an [explicit semantic role](#explicit-role) of `link` and
 
 #### Passed Example 3
 
+<a class="example-link" title="Passed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/c487ae/ada7438401aba500eb03f678b05b9821a758336a.html">Open in a new tab</a>
+
 This `button` element has an [explicit semantic role](#explicit-role) of `link` and an [accessible name][] from its content.
 
 ```html
@@ -165,6 +171,8 @@ This `button` element has an [explicit semantic role](#explicit-role) of `link` 
 ```
 
 #### Passed Example 4
+
+<a class="example-link" title="Passed Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/c487ae/d13a75a2a0b539a39063eb946505e3d3dd5aeef1.html">Open in a new tab</a>
 
 This `a` element has an [accessible name][] via `aria-label`
 
@@ -176,6 +184,8 @@ This `a` element has an [accessible name][] via `aria-label`
 
 #### Passed Example 5
 
+<a class="example-link" title="Passed Example 5" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/c487ae/4493c4b542c8e059e8423c77945ce5895428ab88.html">Open in a new tab</a>
+
 This `a` element has an [accessible name][] via `title`.
 
 ```html
@@ -186,6 +196,8 @@ This `a` element has an [accessible name][] via `title`.
 
 #### Passed Example 6
 
+<a class="example-link" title="Passed Example 6" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/c487ae/d6a239059266b317de6a6e73dbf443c5ca8a6f5f.html">Open in a new tab</a>
+
 This `a` element has an [accessible name][] from its content via the `title` on the `img` element.
 
 ```html
@@ -193,6 +205,8 @@ This `a` element has an [accessible name][] from its content via the `title` on 
 ```
 
 #### Passed Example 7
+
+<a class="example-link" title="Passed Example 7" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/c487ae/5d16da98a4089b29ff76c611036c65e1c504c7bc.html">Open in a new tab</a>
 
 This `a` element has an [accessible name][] from its content.
 
@@ -204,6 +218,8 @@ This `a` element has an [accessible name][] from its content.
 
 #### Passed Example 8
 
+<a class="example-link" title="Passed Example 8" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/c487ae/e277de30edb9e550d8f9d5a72e1e3adde961d01d.html">Open in a new tab</a>
+
 This `a` element has an [accessible name][] from its content via `aria-labelledby` on the `img` element.
 
 ```html
@@ -212,6 +228,8 @@ This `a` element has an [accessible name][] from its content via `aria-labelledb
 ```
 
 #### Passed Example 9
+
+<a class="example-link" title="Passed Example 9" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/c487ae/dee6c55162904cfb77c7f65614c4e6ae2baacea2.html">Open in a new tab</a>
 
 This `a` element placed off screen has an [accessible name][] from its content.
 
@@ -232,6 +250,8 @@ This `a` element placed off screen has an [accessible name][] from its content.
 
 #### Passed Example 10
 
+<a class="example-link" title="Passed Example 10" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/c487ae/b9a3949e2a7521698472a966c782434c4d9ce6fb.html">Open in a new tab</a>
+
 This `area` element has a [semantic role][] of `link` and an [accessible name][] via `alt`.
 
 ```html
@@ -246,6 +266,8 @@ This `area` element has a [semantic role][] of `link` and an [accessible name][]
 
 #### Failed Example 1
 
+<a class="example-link" title="Failed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/c487ae/97b115a032fc4178230306e2d0f4e334b2cfe8a9.html">Open in a new tab</a>
+
 This `a` element has an empty [accessible name][].
 
 ```html
@@ -253,6 +275,8 @@ This `a` element has an empty [accessible name][].
 ```
 
 #### Failed Example 2
+
+<a class="example-link" title="Failed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/c487ae/633d9136ef3e040b7653b287651c65e4302fe417.html">Open in a new tab</a>
 
 This `a` element with an image has an empty [accessible name][]. The image is decorative and is marked as such with an empty `alt` [attribute value][].
 
@@ -262,6 +286,8 @@ This `a` element with an image has an empty [accessible name][]. The image is de
 
 #### Failed Example 3
 
+<a class="example-link" title="Failed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/c487ae/954326e5ba700d4616d924807f427002816e9fc3.html">Open in a new tab</a>
+
 This `a` element with an image has an empty [accessible name][]. The image is decorative because it has a `role` [attribute value][] of `presentation`.
 
 ```html
@@ -269,6 +295,8 @@ This `a` element with an image has an empty [accessible name][]. The image is de
 ```
 
 #### Failed Example 4
+
+<a class="example-link" title="Failed Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/c487ae/e729027165e293dc32ea88b7264e4c62c306fdd5.html">Open in a new tab</a>
 
 This `a` element with an image has an empty [accessible name][]. The image is decorative because it has a `role` [attribute value][] of `none`.
 
@@ -278,6 +306,8 @@ This `a` element with an image has an empty [accessible name][]. The image is de
 
 #### Failed Example 5
 
+<a class="example-link" title="Failed Example 5" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/c487ae/e5b522e069394fa6666bef3746705b70b4628819.html">Open in a new tab</a>
+
 This `a` element with an `img` with an empty `title` has an empty [accessible name][].
 
 ```html
@@ -285,6 +315,8 @@ This `a` element with an `img` with an empty `title` has an empty [accessible na
 ```
 
 #### Failed Example 6
+
+<a class="example-link" title="Failed Example 6" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/c487ae/3f34996d204260b1b0b50fc8f77b10ab640ba303.html">Open in a new tab</a>
 
 This `a` element with an `img` with an `aria-labelledby` has an empty [accessible name][].
 
@@ -295,6 +327,8 @@ This `a` element with an `img` with an `aria-labelledby` has an empty [accessibl
 
 #### Failed Example 7
 
+<a class="example-link" title="Failed Example 7" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/c487ae/7b6b235a0fd8bf9b2023a5d0e446f7ed46e1a40f.html">Open in a new tab</a>
+
 This `a` element with an `img` with an `aria-labelledby` referencing a non-existing id has an empty [accessible name][].
 
 ```html
@@ -302,6 +336,8 @@ This `a` element with an `img` with an `aria-labelledby` referencing a non-exist
 ```
 
 #### Failed Example 8
+
+<a class="example-link" title="Failed Example 8" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/c487ae/8816eee206375f88c562d618852cb0383b89fe6e.html">Open in a new tab</a>
 
 This `a` element placed off screen has an empty [accessible name][].
 
@@ -312,6 +348,8 @@ This `a` element placed off screen has an empty [accessible name][].
 ```
 
 #### Failed Example 9
+
+<a class="example-link" title="Failed Example 9" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/c487ae/c1570fd31970f22abcca6f32d75c1906058c1535.html">Open in a new tab</a>
 
 This `area` element has a [semantic role][] of `link` and an empty [accessible name][].
 
@@ -325,6 +363,8 @@ This `area` element has a [semantic role][] of `link` and an empty [accessible n
 
 #### Failed Example 10
 
+<a class="example-link" title="Failed Example 10" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/c487ae/cc73351605ff3dc9766ad28a1a267a96976ad77b.html">Open in a new tab</a>
+
 This `a` element has an [explicit role][] of `none`. However, it is [focusable][] (by default). Thus it has a [semantic role][] of `link` due to [Presentational Roles Conflict Resolution][]. It has an empty [accessible name][].
 
 ```html
@@ -334,6 +374,8 @@ This `a` element has an [explicit role][] of `none`. However, it is [focusable][
 ### Inapplicable
 
 #### Inapplicable Example 1
+
+<a class="example-link" title="Inapplicable Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/c487ae/322c1a6d65f31fd534b1ddac680e3c6ea69e3207.html">Open in a new tab</a>
 
 This `a` element does not have a [semantic role][] of `link` because it has been changed to `button`.
 
@@ -345,6 +387,8 @@ This `a` element does not have a [semantic role][] of `link` because it has been
 
 #### Inapplicable Example 2
 
+<a class="example-link" title="Inapplicable Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/c487ae/9d8527dff8e8dcd338fc501863c14c13cd151b9c.html">Open in a new tab</a>
+
 This `a` element is not [included in the accessibility tree][] due to `display: none`.
 
 ```html
@@ -353,6 +397,8 @@ This `a` element is not [included in the accessibility tree][] due to `display: 
 
 #### Inapplicable Example 3
 
+<a class="example-link" title="Inapplicable Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/c487ae/8b1cde6d65f14bd7531e3714779b5130dc8a7919.html">Open in a new tab</a>
+
 This `a` element is not [included in the accessibility tree][] due to `visibility: hidden`.
 
 ```html
@@ -360,6 +406,8 @@ This `a` element is not [included in the accessibility tree][] due to `visibilit
 ```
 
 #### Inapplicable Example 4
+
+<a class="example-link" title="Inapplicable Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/c487ae/bd0d0d0cda19a4d58dfe311cd7c8de34093ad590.html">Open in a new tab</a>
 
 This `a` element is not [included in the accessibility tree][] due to `aria-hidden="true"`.
 
@@ -371,6 +419,8 @@ This `a` element is not [included in the accessibility tree][] due to `aria-hidd
 
 #### Inapplicable Example 5
 
+<a class="example-link" title="Inapplicable Example 5" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/c487ae/7ce0b9a2a11f1c10f71f1786e4154e6164356fb6.html">Open in a new tab</a>
+
 This `area` element does not have the role of link because it does not have an `href` attribute.
 
 ```html
@@ -378,6 +428,8 @@ This `area` element does not have the role of link because it does not have an `
 ```
 
 #### Inapplicable Example 6
+
+<a class="example-link" title="Inapplicable Example 6" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/c487ae/f417fbb0db2a62f84dd79497b23b1e6e97007740.html">Open in a new tab</a>
 
 This `a` element does not have the role of link because it does not have an `href` attribute.
 
