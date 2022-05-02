@@ -2,7 +2,14 @@
   "vendor": "IBM Accessibility",
   "name": "Equal Access Accessibility Checker",
   "version": "v3.0.0",
-  "consistency": {
+  "approvedRules": {
+    "complete": 0,
+    "partial": 0,
+    "minimal": 0,
+    "inconsistent": 0,
+    "untested": 0
+  },
+  "proposedRules": {
     "complete": 15,
     "partial": 6,
     "minimal": 0,

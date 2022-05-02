@@ -53,7 +53,7 @@ Summary text goes here
            <li>{{ standard }}</li>
           {% endfor %}
         </ul></td>
-        <td>{{ report.consistency.complete }}</td>
+        <td>{{ report.approvedRules.complete }}</td>
       </tr>
     {% endfor %}
   </tbody>

@@ -2,7 +2,14 @@
   "vendor": "Deque Systems",
   "name": "Axe DevTools Pro",
   "version": "v4.24.5",
-  "consistency": {
+  "approvedRules": {
+    "complete": 0,
+    "partial": 0,
+    "minimal": 0,
+    "inconsistent": 0,
+    "untested": 0
+  },
+  "proposedRules": {
     "complete": 3,
     "partial": 3,
     "minimal": 0,

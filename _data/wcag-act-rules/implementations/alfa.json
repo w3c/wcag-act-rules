@@ -2,7 +2,14 @@
   "vendor": "Siteimprove",
   "name": "Alfa",
   "version": "v0.36.0",
-  "consistency": {
+  "approvedRules": {
+    "complete": 0,
+    "partial": 0,
+    "minimal": 0,
+    "inconsistent": 0,
+    "untested": 0
+  },
+  "proposedRules": {
     "complete": 23,
     "partial": 4,
     "minimal": 4,

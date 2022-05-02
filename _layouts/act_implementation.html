@@ -21,10 +21,16 @@ type_of_guidance: false
     <th>Minimal</th>
   </tr>
   <tr>
+    <th>Approved rules</th>
+    <td>{{ implementation.approvedRules.complete }}</td>
+    <td>{{ implementation.approvedRules.partial }}</td>
+    <td>{{ implementation.approvedRules.minimal }}</td>
+  </tr>
+  <tr>
     <th>Proposed rules</th>
-    <td>{{ implementation.consistency.complete }}</td>
-    <td>{{ implementation.consistency.partial }}</td>
-    <td>{{ implementation.consistency.minimal }}</td>
+    <td>{{ implementation.proposedRules.complete }}</td>
+    <td>{{ implementation.proposedRules.partial }}</td>
+    <td>{{ implementation.proposedRules.minimal }}</td>
   </tr>
 </table>
 

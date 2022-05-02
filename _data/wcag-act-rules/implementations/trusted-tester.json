@@ -2,7 +2,14 @@
   "vendor": "Trusted Tester",
   "name": "Trusted Tester",
   "version": "v5",
-  "consistency": {
+  "approvedRules": {
+    "complete": 0,
+    "partial": 0,
+    "minimal": 0,
+    "inconsistent": 0,
+    "untested": 0
+  },
+  "proposedRules": {
     "complete": 2,
     "partial": 1,
     "minimal": 0,
