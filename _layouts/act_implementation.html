@@ -79,9 +79,9 @@ type_of_guidance: false
 <p>
   This rule is implemented by {{ implementation.name }} using {{ ruleMapping.procedureNames.size }} 
   procedure{% if ruleMapping.procedureNames.size != 0 %}s{% endif %}.
-  The implementation is {%- if ruleMapping.consistency == 'complete' -%}
-    completely {%- else -%} partially 
-  {%- endif -%} consistent with the rule.
+  The implementation is {% if ruleMapping.consistency == 'complete' %}
+    completely {% else %} partially 
+  {% endif %} consistent with the rule.
   It answers {{ ruleMapping.coverage.covered }} of the {{ ruleMapping.coverage.testCaseTotal }}
   test cases covered.
 </p>
