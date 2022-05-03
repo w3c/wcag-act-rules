@@ -7,21 +7,32 @@ type_of_guidance: false
 {% assign requirements = site.data.wcag-act-rules.requirements %}
 {% assign implementation = implementations[page.implementation_key] %}
 
-<p>
-  {{ implementation.name }} by {{ implementation.vendor }} has 
-  {{ implementation.consistency.complete }} completely consistent ACT rules.
-</p>
+<aside class="box"> 
+  <header class="box-h box-h-icon"> 
+    Implementation Summary 
+  </header>
+  <div class="box-i"><p>
+    {{ implementation.name }} 
+    {{ implementation.version }} 
+    was published
+    on {{ implementation.version_date }}
+    by <a href="{{ implementation.homepage }}">{{ implementation.vendor }}</a>.
+    This implementation tests for {{ implementations.standards[0] }}.
+    <!-- Unless otherwise indicated, results are <strong>fully automatic</strong>. -->
+    <!-- Test data was last updated 24 January 2022. -->
+  </p></div>
+</aside>
+
 
 <h2>Summary</h2>
-
 <table>
   <tr>
-    <th>Consistency</th>
-    <th>Complete</th>
-    <th>Partial</th>
+    <th></th>
+    <th>Consistent</th>
+    <th>Partially-consistent</th>
   </tr>
   <tr>
-    <th>Approved rules</th>
+    <th>WCAG 2 rules</th>
     <td>{{ implementation.approvedRules.complete }}</td>
     <td>{{ implementation.approvedRules.partial + implementation.approvedRules.minimal }}</td>
   </tr>
@@ -36,19 +47,24 @@ type_of_guidance: false
 <table>
   <thead>
     <tr>
-      <th>ACT Rule</th>
+      <th>Rule Name</th>
+      <th>Type</th>
       <th>Consistency</th>
     </tr>
   </thead>
   <tbody>
-    {% for ruleMapping in implementation.actRuleMapping %}
+    {% for ruleMapping in implementation.actRuleMapping  %}
     {% if ruleMapping.consistency != null %}
       <tr>
         <td><a href="#breakdown-{{ ruleMapping.ruleId }}">
           {{ ruleMapping.ruleName }}
         </a></td>
-        <td>{{ ruleMapping.consistency }}</td>
-        <!-- <td>{{ ruleMapping.coverage.covered }} / {{ ruleMapping.coverage.testCaseTotal }}</td> -->
+        <td>{% if ruleMapping.ruleApproved %}
+          WCAG 2 Rule {% else %} Proposed Rule
+        {% endif %}</td>
+        <td>{% if ruleMapping.consistency == 'complete' %}
+          Complete {% else %} Partial
+        {% endif %}</td>
       </tr>
     {% endif %}
     {% endfor %}
@@ -59,40 +75,45 @@ type_of_guidance: false
 
 {% for ruleMapping in implementation.actRuleMapping %}
 {% if ruleMapping.consistency != null %}
-<h3 id="breakdown-{{ ruleMapping.ruleId }}">{{
-  ruleMapping.ruleName
-}}</h3>
-
-<p>This is a {{ ruleMapping.consistency }} implementation.</p>
+<h3 id="breakdown-{{ ruleMapping.ruleId }}">{{ ruleMapping.ruleName }}</h3>
+<p>
+  This rule is implemented by {{ implementation.name }} using {{ ruleMapping.procedureNames.size }} 
+  procedure{% if ruleMapping.procedureNames.size != 0 %}s{% endif %}.
+  The implementation is {%- if ruleMapping.consistency == 'complete' -%}
+    completely {%- else -%} partially 
+  {%- endif -%} consistent with the rule.
+  It answers {{ ruleMapping.coverage.covered }} of the {{ ruleMapping.coverage.testCaseTotal }}
+  test cases covered.
+</p>
 
 {% if ruleMapping.accessibilityRequirements %}
-  <table>
-    <caption>Accessibility Requirements</caption>
-    <tr> <th>Expected</th> <th>Reported</th></tr>
-    <tr>
-      <td>
-        {% if ruleMapping.accessibilityRequirements.expected.size > 0 %}
-          <ul>{% for requirementKey in ruleMapping.accessibilityRequirements.expected %}
-            <li>
-              {{ requirements[requirementKey].num }}
-              {{ requirements[requirementKey].handle }}
-            </li>
-          {% endfor %}</ul>
-        {% else %} None {% endif %}
-      </td>
+<table>
+  <caption>Accessibility Requirements</caption>
+  <tr> <th>Expected</th> <th>Reported</th></tr>
+  <tr>
+    <td>
+      {% if ruleMapping.accessibilityRequirements.expected.size > 0 %}
+        <ul>{% for requirementKey in ruleMapping.accessibilityRequirements.expected %}
+          <li>
+            {{ requirements[requirementKey].num }}
+            {{ requirements[requirementKey].handle }}
+          </li>
+        {% endfor %}</ul>
+      {% else %} None {% endif %}
+    </td>
 
-      <td>
-        {% if ruleMapping.accessibilityRequirements.reported.size > 0 %}
-          <ul>{% for requirementKey in ruleMapping.accessibilityRequirements.reported %}
-            <li>
-              {{ requirements[requirementKey].num }}
-              {{ requirements[requirementKey].handle }}
-            </li>
-          {% endfor %}</ul>
-        {% else %} None {% endif %}
-      </td>
-    </tr>
-  </table>
+    <td>
+      {% if ruleMapping.accessibilityRequirements.reported.size > 0 %}
+        <ul>{% for requirementKey in ruleMapping.accessibilityRequirements.reported %}
+          <li>
+            {{ requirements[requirementKey].num }}
+            {{ requirements[requirementKey].handle }}
+          </li>
+        {% endfor %}</ul>
+      {% else %} None {% endif %}
+    </td>
+  </tr>
+</table>
 {% endif %}
 
 <table>
