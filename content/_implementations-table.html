@@ -1,0 +1,26 @@
+<table>
+  <caption>{{ include.content }}</caption>
+  <thead>
+    <tr>
+      <th>Implementation</th>
+      <th>Standards</th>
+      <th>Completed rules</th>
+    </tr>
+  </thead>
+  <!-- <tbody>
+    {% for implementation in automatedTools %}
+      {% assign report = siteData.implementations[implementation.uniqueKey] %}
+      <tr>
+        <td><a href="./{{ implementation.uniqueKey }}">
+          {{ implementation.name }} {{ report.version }}
+        </a></td>
+        <td><ul>
+          {% for standard in implementation.standards %}
+           <li>{{ standard }}</li>
+          {% endfor %}
+        </ul></td>
+        <td>{{ report.approvedRules.complete }}</td>
+      </tr>
+    {% endfor %}
+  </tbody> -->
+</table>

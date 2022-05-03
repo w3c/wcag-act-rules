@@ -1,6 +1,6 @@
 ---
 layout: standalone_resource
-title: "ACT Implementations"
+title: "Accessibility Test Tools & Methodologies"
 permalink: /standards-guidelines/act/implementations/
 ref: /standards-guidelines/act/implementations/
 lang: en
@@ -12,16 +12,33 @@ github:
 ---
 
 <style>
+  table {
+    width: 100%;
+  }
   table ul {
     list-style: none;
     padding: 0;
     margin-bottom: 0;
   }
+  .act-small {
+    padding-top: .25em;
+    font-size: 80%;
+  }
+  .act-bar {
+    background: #CCC;
+  }
+  .act-bar > :first-child {
+    background: var(--wai-green);
+    height: 3px;
+  }
+  .act-small .act-bar > :first-child {
+    height: 2px;
+  }
 </style>
 
 {::nomarkdown} {% include box.html type="start" title="Summary" %} {:/}
 
-Summary text goes here
+ACT rules provide a standard way to compare the coverage of accessibility test tools and methodologies. This pages shows how many rules different tools and methodologies have accurately implemented. Scores are based on public test data.
 
 {::nomarkdown} {% include box.html type="end" %} {:/}
 
@@ -30,8 +47,9 @@ Summary text goes here
 {% assign methodologies = implementations | where: "type", "Test methodology" %}
 {% assign automatedTools = implementations | where: "type", "Automated tool" %}
 
-<h2>Test Methodologies</h2>
-<p>... text ...</p>
+## Test Methodologies
+
+Methodologies provide step by step instructions on how to test accessibility standards.
 
 <table>
   <thead>
@@ -59,32 +77,14 @@ Summary text goes here
   </tbody>
 </table>
 
+## Semi-automated Test Tools
 
-<h2>Automatic Tools</h2>
-<p>... text ...</p>
+Tools that combine user input and automated testing to test accessibility standards.
 
-<table>
-  <thead>
-    <tr>
-      <th>Implementation</th>
-      <th>Standards</th>
-      <th>Completed rules</th>
-    </tr>
-  </thead>
-  <tbody>
-    {% for implementation in automatedTools %}
-      {% assign report = siteData.implementations[implementation.uniqueKey] %}
-      <tr>
-        <td><a href="./{{ implementation.uniqueKey }}">
-          {{ implementation.name }} {{ report.version }}
-        </a></td>
-        <td><ul>
-          {% for standard in implementation.standards %}
-           <li>{{ standard }}</li>
-          {% endfor %}
-        </ul></td>
-        <td>{{ report.consistency.complete }}</td>
-      </tr>
-    {% endfor %}
-  </tbody>
-</table>
+{% include_relative _implementations-table.html content="Semi-automated Test Tools" %}
+
+## Automatic Test Tools
+
+Tools that fully automatically test accessibility standards.
+
+{% include_relative _implementations-table.html content="Automatic Test Tools" %}

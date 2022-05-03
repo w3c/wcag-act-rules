@@ -13,24 +13,22 @@ type_of_guidance: false
 </p>
 
 <h2>Summary</h2>
+
 <table>
   <tr>
     <th>Consistency</th>
     <th>Complete</th>
     <th>Partial</th>
-    <th>Minimal</th>
   </tr>
   <tr>
     <th>Approved rules</th>
     <td>{{ implementation.approvedRules.complete }}</td>
-    <td>{{ implementation.approvedRules.partial }}</td>
-    <td>{{ implementation.approvedRules.minimal }}</td>
+    <td>{{ implementation.approvedRules.partial + implementation.approvedRules.minimal }}</td>
   </tr>
   <tr>
     <th>Proposed rules</th>
     <td>{{ implementation.proposedRules.complete }}</td>
-    <td>{{ implementation.proposedRules.partial }}</td>
-    <td>{{ implementation.proposedRules.minimal }}</td>
+    <td>{{ implementation.proposedRules.partial + implementation.proposedRules.minimal }}</td>
   </tr>
 </table>
 
@@ -40,7 +38,6 @@ type_of_guidance: false
     <tr>
       <th>ACT Rule</th>
       <th>Consistency</th>
-      <th>Coverage</th>
     </tr>
   </thead>
   <tbody>
@@ -51,7 +48,7 @@ type_of_guidance: false
           {{ ruleMapping.ruleName }}
         </a></td>
         <td>{{ ruleMapping.consistency }}</td>
-        <td>{{ ruleMapping.coverage.covered }} / {{ ruleMapping.coverage.testCaseTotal }}</td>
+        <!-- <td>{{ ruleMapping.coverage.covered }} / {{ ruleMapping.coverage.testCaseTotal }}</td> -->
       </tr>
     {% endif %}
     {% endfor %}
