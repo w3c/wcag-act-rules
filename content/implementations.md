@@ -12,15 +12,15 @@ github:
 ---
 
 <style>
-  table {
+  table.act-implementations {
     width: 100%;
   }
-  table ul {
+  table.act-implementations ul {
     list-style: none;
     padding: 0;
     margin-bottom: 0;
   }
-  .act-small {
+  .act-proposed {
     padding-top: .25em;
     font-size: 80%;
   }
@@ -31,7 +31,7 @@ github:
     background: var(--wai-green);
     height: 3px;
   }
-  .act-small .act-bar > :first-child {
+  .act-proposed .act-bar > :first-child {
     height: 2px;
   }
 </style>
@@ -75,3 +75,21 @@ Implementations are consistent when all the test cases have the expected outcome
 ### Add a tool or methodology
 
 For information on how to add your accessibility test tool or methodology to the list of ACT implementations, visit the [ACT-Rules community group website](https://act-rules.github.io/pages/implementations/reporting/).
+
+<script>
+  var actTables = document.querySelectorAll('table.act-implementations')
+  actTables.forEach(function (actTable) {
+    var divs = actTable.querySelectorAll('.act-approved, .act-proposed');
+    var maxValue = 1;
+    divs.forEach(function (div) {
+      maxValue = Math.max(maxValue, parseInt(div.innerText));
+    });
+    divs.forEach(function (div) {
+      var currentValue = parseInt(div.innerText);
+      var percentage = Math.ceil(currentValue / maxValue * 100);
+      if (isNaN(percentage) === false) {
+        div.innerHTML += '<div class="act-bar"><div style="width: ' + percentage + '%"></div></div>'
+      }
+    })
+  });
+</script>

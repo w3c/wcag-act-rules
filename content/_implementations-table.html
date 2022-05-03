@@ -1,4 +1,4 @@
-<table>
+<table class="act-implementations">
   <thead>
     <tr>
       <th>Implementation</th>
@@ -11,24 +11,21 @@
     {% for implementation in include.implementations %}
       {% assign report = siteData.implementations[implementation.uniqueKey] %}
       <tr>
-        <td>
-          {{ implementation.name }} {{ report.version }}
-        </a></td>
-        <td><ul>
-          {% for standard in implementation.standards %}
+        <td>{{ implementation.name }} {{ report.version }}</td>
+        <td><ul>{% for standard in implementation.standards %}
            <li>{{ standard }}</li>
-          {% endfor %}
-        </ul></td>
+        {% endfor %}</ul></td>
         <td>
-          {{ report.approvedRules.complete }} Rules
-          <div class="act-small">
+          <div class="act-approved">
+            {{ report.approvedRules.complete }} Rules
+          </div> <div class="act-proposed">
             {{ report.proposedRules.complete }} Proposed Rules
           </div>
         </td>
         <td><a href="./{{ implementation.uniqueKey }}">
-          <img alt="{{ implementation.name }} Report"
-            src="{{ '/content-assets/wcag-act-rules/bar-chart-fill.svg' | relative_url }}"
-          />
+          <img alt="{{ implementation.name }} Report" src="{{
+            '/content-assets/wcag-act-rules/bar-chart-fill.svg' | relative_url
+          }}" />
         </a></td>
       </tr>
     {% endfor %}
