@@ -7,8 +7,8 @@
       <th>Completed rules</th>
     </tr>
   </thead>
-  <!-- <tbody>
-    {% for implementation in automatedTools %}
+  <tbody>
+    {% for implementation in include.implementations %}
       {% assign report = siteData.implementations[implementation.uniqueKey] %}
       <tr>
         <td><a href="./{{ implementation.uniqueKey }}">
@@ -22,5 +22,5 @@
         <td>{{ report.approvedRules.complete }}</td>
       </tr>
     {% endfor %}
-  </tbody> -->
+  </tbody>
 </table>

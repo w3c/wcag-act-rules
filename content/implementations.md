@@ -81,10 +81,16 @@ Methodologies provide step by step instructions on how to test accessibility sta
 
 Tools that combine user input and automated testing to test accessibility standards.
 
-{% include_relative _implementations-table.html content="Semi-automated Test Tools" %}
+{% 
+  include_relative _implementations-table.html 
+  implementations=implementations
+%}
 
 ## Automatic Test Tools
 
 Tools that fully automatically test accessibility standards.
 
-{% include_relative _implementations-table.html content="Automatic Test Tools" %}
+{% 
+  include_relative _implementations-table.html 
+  implementations=implementations | where: "type", "Automated tool"
+%}
