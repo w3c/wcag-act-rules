@@ -44,7 +44,6 @@ ACT rules provide a standard way to compare the coverage of accessibility test t
 
 {% assign siteData = site.data.wcag-act-rules %}
 {% assign implementations = siteData.act-implementations | sort: "name" %}
-{% assign methodologies = implementations | where: "type", "Test methodology" %}
 
 ## Test Methodologies
 
@@ -66,3 +65,13 @@ Tools that fully automatically test accessibility standards.
 
 {% assign automatedTools = implementations | where: "type", "Automated tool" %}
 {% include_relative _implementations-table.html implementations=automatedTools %}
+
+## About These Cores
+
+Scores on this page are based on publicly available test results. Each ACT rule has examples. Vendors of test tools and methodologies run their implementation against the examples and report the outcome. By comparing the outcome to the expected outcome, the consistency of these implementations can be worked out.
+
+Implementations are consistent when all the test cases have the expected outcome. (I.e. a failed example should not be passed or vise versa.) They must also accurately report what success criteria were failed for each example. Automated implementations may report a "cannot tell" on some, but not all examples and still be considered consistent. A partially consistent implementation is one that meets some, but not all requirements, provided it does not fail any of the passed or inapplicable examples.
+
+### Add a tool or methodology
+
+For information on how to add your accessibility test tool or methodology to the list of ACT implementations, visit the [ACT-Rules community group website](https://act-rules.github.io/pages/implementations/reporting/).

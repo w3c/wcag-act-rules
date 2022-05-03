@@ -23,7 +23,7 @@
 - name: Axe DevTools Pro
   vendor: Deque Systems
   uniqueKey: axe-devtools-pro
-  type: Test methodology
+  type: Semi-automated tool
   standards:
     - WCAG 2.1 Level A & AA
   jsonReports: https://raw.githubusercontent.com/dequelabs/act-reports-axe/main/reports/axe-devtools-igt.json
