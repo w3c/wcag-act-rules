@@ -16,11 +16,8 @@
            <li>{{ standard }}</li>
         {% endfor %}</ul></td>
         <td>
-          <div class="act-approved">
-            {{ report.approvedRules.complete }} Rules
-          </div> <div class="act-proposed">
-            {{ report.proposedRules.complete }} Proposed Rules
-          </div>
+          <div class="act-approved">{{ report.approvedRules.complete }} Rules</div>
+          <div class="act-proposed">{{ report.proposedRules.complete }} Proposed Rules</div>
         </td>
         <td><a href="./{{ implementation.uniqueKey }}">
           <img alt="{{ implementation.name }} Report" src="{{

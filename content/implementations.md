@@ -1,4 +1,5 @@
 ---
+doc-note-type: draft
 layout: standalone_resource
 title: "Accessibility Test Tools & Methodologies"
 permalink: /standards-guidelines/act/implementations/
@@ -11,31 +12,6 @@ github:
   path: content/implementations.md
 ---
 
-<style>
-  table.act-implementations {
-    width: 100%;
-  }
-  table.act-implementations ul {
-    list-style: none;
-    padding: 0;
-    margin-bottom: 0;
-  }
-  .act-proposed {
-    padding-top: .25em;
-    font-size: 80%;
-  }
-  .act-bar {
-    background: #CCC;
-  }
-  .act-bar > :first-child {
-    background: var(--wai-green);
-    height: 3px;
-  }
-  .act-proposed .act-bar > :first-child {
-    height: 2px;
-  }
-</style>
-
 {::nomarkdown} {% include box.html type="start" title="Summary" %} {:/}
 
 ACT rules provide a standard way to compare the coverage of accessibility test tools and methodologies. This pages shows how many rules different tools and methodologies have accurately implemented. Scores are based on public test data.
@@ -45,12 +21,12 @@ ACT rules provide a standard way to compare the coverage of accessibility test t
 {% assign siteData = site.data.wcag-act-rules %}
 {% assign implementations = siteData.act-implementations | sort: "name" %}
 
-## Test Methodologies
+## Automatic Test Tools
 
-Methodologies provide step by step instructions on how to test accessibility standards.
+Tools that fully automatically test accessibility standards.
 
-{% assign methodologies = implementations | where: "type", "Test methodology" %}
-{% include_relative _implementations-table.html implementations=methodologies %}
+{% assign automatedTools = implementations | where: "type", "Automated tool" %}
+{% include_relative _implementations-table.html implementations=automatedTools %}
 
 ## Semi-automated Test Tools
 
@@ -59,12 +35,12 @@ Tools that combine user input and automated testing to test accessibility standa
 {% assign semiAutoTools = implementations | where: "type", "Semi-automated tool" %}
 {% include_relative _implementations-table.html implementations=semiAutoTools %}
 
-## Automatic Test Tools
+## Test Methodologies
 
-Tools that fully automatically test accessibility standards.
+Methodologies provide step by step instructions on how to test accessibility standards.
 
-{% assign automatedTools = implementations | where: "type", "Automated tool" %}
-{% include_relative _implementations-table.html implementations=automatedTools %}
+{% assign methodologies = implementations | where: "type", "Test methodology" %}
+{% include_relative _implementations-table.html implementations=methodologies %}
 
 ## About These Cores
 
