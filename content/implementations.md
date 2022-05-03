@@ -19,12 +19,12 @@ ACT rules provide a standard way to compare the coverage of accessibility test t
 {% assign siteData = site.data.wcag-act-rules %}
 {% assign implementations = siteData.act-implementations | sort: "name" %}
 
-## Automatic Test Tools
+## Test Methodologies
 
-Tools that fully automatically test accessibility standards.
+Methodologies provide step by step instructions on how to test accessibility standards.
 
-{% assign automatedTools = implementations | where: "type", "Automated tool" %}
-{% include_relative _implementations-table.html implementations=automatedTools %}
+{% assign methodologies = implementations | where: "type", "Test methodology" %}
+{% include_relative _implementations-table.html implementations=methodologies %}
 
 ## Semi-automated Test Tools
 
@@ -33,12 +33,12 @@ Tools that combine user input and automated testing to test accessibility standa
 {% assign semiAutoTools = implementations | where: "type", "Semi-automated tool" %}
 {% include_relative _implementations-table.html implementations=semiAutoTools %}
 
-## Test Methodologies
+## Automatic Test Tools
 
-Methodologies provide step by step instructions on how to test accessibility standards.
+Tools that fully automatically test accessibility standards.
 
-{% assign methodologies = implementations | where: "type", "Test methodology" %}
-{% include_relative _implementations-table.html implementations=methodologies %}
+{% assign automatedTools = implementations | where: "type", "Automated tool" %}
+{% include_relative _implementations-table.html implementations=automatedTools %}
 
 ## About These Cores
 
