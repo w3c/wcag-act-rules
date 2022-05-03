@@ -1,17 +1,17 @@
 <table>
-  <caption>{{ include.content }}</caption>
   <thead>
     <tr>
       <th>Implementation</th>
       <th>Standards</th>
-      <th>Completed rules</th>
+      <th>Consistent Rules</th>
+      <th>Report</th>
     </tr>
   </thead>
   <tbody>
     {% for implementation in include.implementations %}
       {% assign report = siteData.implementations[implementation.uniqueKey] %}
       <tr>
-        <td><a href="./{{ implementation.uniqueKey }}">
+        <td>
           {{ implementation.name }} {{ report.version }}
         </a></td>
         <td><ul>
@@ -19,7 +19,17 @@
            <li>{{ standard }}</li>
           {% endfor %}
         </ul></td>
-        <td>{{ report.approvedRules.complete }}</td>
+        <td>
+          {{ report.approvedRules.complete }} Rules
+          <div class="act-small">
+            {{ report.proposedRules.complete }} Proposed Rules
+          </div>
+        </td>
+        <td><a href="./{{ implementation.uniqueKey }}">
+          <img alt="{{ implementation.name }} Report"
+            src="{{ '/content-assets/wcag-act-rules/bar-chart-fill.svg' | relative_url }}"
+          />
+        </a></td>
       </tr>
     {% endfor %}
   </tbody>
