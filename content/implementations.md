@@ -13,9 +13,7 @@ github:
 ---
 
 {::nomarkdown} {% include box.html type="start" title="Summary" %} {:/}
-
 ACT rules provide a standard way to compare the coverage of accessibility test tools and methodologies. This pages shows how many rules different tools and methodologies have accurately implemented. Scores are based on public test data.
-
 {::nomarkdown} {% include box.html type="end" %} {:/}
 
 {% assign siteData = site.data.wcag-act-rules %}
