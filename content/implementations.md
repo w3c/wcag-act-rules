@@ -45,52 +45,24 @@ ACT rules provide a standard way to compare the coverage of accessibility test t
 {% assign siteData = site.data.wcag-act-rules %}
 {% assign implementations = siteData.act-implementations | sort: "name" %}
 {% assign methodologies = implementations | where: "type", "Test methodology" %}
-{% assign automatedTools = implementations | where: "type", "Automated tool" %}
 
 ## Test Methodologies
 
 Methodologies provide step by step instructions on how to test accessibility standards.
 
-<table>
-  <thead>
-    <tr>
-      <th>Implementation</th>
-      <th>Standards</th>
-      <th>Completed rules</th>
-    </tr>
-  </thead>
-  <tbody>
-    {% for implementation in methodologies %}
-      {% assign report = siteData.implementations[implementation.uniqueKey] %}
-      <tr>
-        <td><a href="./{{ implementation.uniqueKey }}">
-          {{ implementation.name }} {{ report.version }}
-        </a></td>
-        <td><ul>
-          {% for standard in implementation.standards %}
-           <li>{{ standard }}</li>
-          {% endfor %}
-        </ul></td>
-        <td>{{ report.approvedRules.complete }}</td>
-      </tr>
-    {% endfor %}
-  </tbody>
-</table>
+{% assign methodologies = implementations | where: "type", "Test methodology" %}
+{% include_relative _implementations-table.html implementations=methodologies %}
 
 ## Semi-automated Test Tools
 
 Tools that combine user input and automated testing to test accessibility standards.
 
-{% 
-  include_relative _implementations-table.html 
-  implementations=implementations
-%}
+{% assign semiAutoTools = implementations | where: "type", "Semi-automated tool" %}
+{% include_relative _implementations-table.html implementations=semiAutoTools %}
 
 ## Automatic Test Tools
 
 Tools that fully automatically test accessibility standards.
 
-{% 
-  include_relative _implementations-table.html 
-  implementations=implementations | where: "type", "Automated tool"
-%}
+{% assign automatedTools = implementations | where: "type", "Automated tool" %}
+{% include_relative _implementations-table.html implementations=automatedTools %}
