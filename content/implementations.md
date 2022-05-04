@@ -56,9 +56,9 @@ A test tool or methodology is considered **fully consistent** when all the follo
 
 A test tool or methodology is **partially consistent** when it meets some, but not all requirements. A partially consistent implementation can not include false positives; i.e. it failing any passed or inapplicable examples.
 
-Some ACT rules are "proposed". These rules are agreed on by the ACT Rules Task Force, but is not yet approved by the Accessibility Guidelines Working Group. See [about ACT Rules](../about/) for details.
+Some ACT rules are "proposed". These rules are agreed on by the ACT Rules Task Force, and are awaiting implementation and approval by the Accessibility Guidelines Working Group. See [about ACT Rules](../rules/about/) for details.
 
-## Add a tool or methodology
+## Add a Tool or Methodology
 
 For information on how to add your accessibility test tool or methodology to the list of ACT implementations, visit the [ACT-Rules community group website](https://act-rules.github.io/pages/implementations/reporting/).
 

@@ -52,7 +52,7 @@ type_of_guidance: false
 </aside>
 
 <table class="act-rules-summary">
-  <caption>Number of rules implemented</caption>
+  <caption>Number of Rules Implemented</caption>
   <tr>
     <th></th>
     <th>Consistent</th>
@@ -98,7 +98,7 @@ type_of_guidance: false
   </tbody>
 </table>
 
-<h2>About the results</h2>
+<h2>About These Results</h2>
 
 {% if implementationInfo.description -%}
   <p>{{ implementationInfo.description }}</p>
@@ -136,7 +136,11 @@ type_of_guidance: false
   {% endif %} consistent with the
   <a href="{{ '/standards-guidelines/act/rules/' | append: ruleMapping.ruleId | relative_url }}">
     {{- ruleMapping.ruleName | remove: '`' -}}
-  </a> ACT Rule.
+  </a>
+  {% if ruleMapping.ruleApproved -%}
+    WCAG 2 Rule. {% else %} Proposed Rule.
+  {%- endif %}
+
   It covers {{ coverage.covered }} of the {{ coverage.testCaseTotal }} test cases. 
   {% if coverage.cantTell > 0 %}
     On {{ coverage.cantTell }} test case{% if coverage.cantTell > 1 %}s{%endif%}
