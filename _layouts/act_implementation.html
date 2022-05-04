@@ -6,20 +6,44 @@ type_of_guidance: false
 {%- assign implementations = site.data.wcag-act-rules.implementations %}
 {%- assign requirements = site.data.wcag-act-rules.requirements %}
 {%- assign implementation = implementations[page.implementation_key] %}
+{%- assign implementationInfo = site.data.wcag-act-rules.act-implementations | where: "uniqueKey", page.implementation_key | first %}
 
 <aside class="box"> 
   <header class="box-h box-h-icon"> 
     Implementation Summary 
   </header>
   <div class="box-i"><p>
-    {{ implementation.name }} 
-    {{ implementation.version }} 
-    was published
-    on {{ implementation.version_date }}
-    by <a href="{{ implementation.homepage }}">{{ implementation.vendor }}</a>.
-    This implementation tests for {{ implementations.standards[0] }}.
-    <!-- Unless otherwise indicated, results are <strong>fully automatic</strong>. -->
-    <!-- Test data was last updated 24 January 2022. -->
+    {% if implementationInfo.homepage -%}
+      <a href="{{ implementationInfo.homepage }}">{{ implementationInfo.name }}</a>
+    {%- else %}
+      {{ implementationInfo.name }}
+    {% endif %}
+    {% unless implementation.versionDate %}
+      version {{ implementation.version }} 
+    {% endunless %}
+    is an {{ implementationInfo.type }}
+    {% if implementationInfo.vendorHomepage %}
+      by <a href="{{ implementationInfo.vendorHomepage }}">
+        {{ implementationInfo.vendor }}
+      </a>.
+    {% else %} by {{ implementation.vendor }}.
+    {% endif %}
+
+    {% if implementation.versionDate %}
+      Version {{ implementation.version }} 
+      was published on {{ implementation.versionDate }}.
+    {% endif %}
+
+    This ACT implementation tests for
+    {% for standard in implementationInfo.standards %}
+      {%- if forloop.first == true -%}
+        {{ standard }}
+      {%- elsif forloop.last == false -%}
+        , {{ standard }}
+      {%- else %}
+        , and {{ standard }}
+      {%- endif %}
+    {%- endfor %}.
   </p></div>
 </aside>
 

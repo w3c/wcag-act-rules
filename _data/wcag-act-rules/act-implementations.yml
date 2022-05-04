@@ -8,7 +8,9 @@
   jsonReports: https://raw.githubusercontent.com/act-rules/act-rules-implementation-alfa/master/report.json
 
 - name: Axe-core
+  homepage: https://github.com/dequelabs/axe-core/
   vendor: Deque Systems
+  vendorHomepage: https://deque.com/
   uniqueKey: axe-core
   type: Automated tool
   standards:
