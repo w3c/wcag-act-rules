@@ -50,7 +50,7 @@ Scores on this page are based on publicly available test results. Each ACT rule 
 A test tool or methodology is considered **fully consistent** when all the following are true:
 
 - all success criteria that should fail are reported as such; and
-- all the test cases have the expected outcome. (I.e. a failed example should not be passed or vise versa.); and
+- all examples have the expected outcome. (I.e. a failed example should not be passed or vise versa.); and
 - there are outcomes for all examples; and
 - automated implementations may report a "cannot tell" on some, but not all examples and still be considered consistent.
 

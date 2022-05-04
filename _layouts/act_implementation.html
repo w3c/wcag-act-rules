@@ -118,6 +118,7 @@ type_of_guidance: false
 {% for ruleMapping in implementation.actRuleMapping %}
 {%- if ruleMapping.consistency != null %}
 {%- assign coverage = ruleMapping.coverage %}
+
 <h3 id="breakdown-{{ ruleMapping.ruleId }}">{{ ruleMapping.ruleName | remove: '`' }}</h3>
 <p>
   This rule is implemented by {{ implementation.name }} using the
@@ -201,7 +202,12 @@ type_of_guidance: false
   <tbody>
     {%- for result in ruleMapping.testCaseResults %}
     <tr>
-      <th><a href="{{ result.testCaseUrl }}">{{ result.testCaseName }}</a></th>
+      <th>
+        <a href="{{ result.testCaseUrl }}">{{ result.testCaseName }}</a>
+        {%- if ruleMapping.ruleApproved and result.testCaseApproved == false %}
+          <abbr title="Proposed example">*</abbr>
+        {%- endif %}
+      </th>
       {%- for procedureResult in result.procedureResults %}
       {%- assign outcome = procedureResult.outcomes | uniq | join: ", " %}
       <td class="
@@ -220,5 +226,13 @@ type_of_guidance: false
   </tbody>
 </table>
 
-{% endif %}
-{% endfor %}
+{%- assign proposedCases = ruleMapping.testCaseResults | where: "testCaseApproved", false %}
+{%- if ruleMapping.ruleApproved == true and proposedCases.size > 0 %}
+<p>
+  *: These examples are not yet approved for the rule. Results on these outcomes are not
+  taken into consideration determining the consistency and coverage.
+</p>
+{%- endif %}
+
+{%- endif %}
+{%- endfor %}
