@@ -1,6 +1,8 @@
 table.act-implementations {
   width: 100%;
 }
+
+table.act-requirements ul,
 table.act-implementations ul {
   list-style: none;
   padding: 0;
@@ -27,4 +29,15 @@ table.act-implementations ul {
     padding: 0;
     margin: -2.5em 0 0;
   }
+}
+
+table.act-example-outcomes,
+table.act-requirements {
+  min-width: 70%;
+}
+table.act-requirements th {
+  width: 50%;
+}
+table.act-example-outcomes th:first-child {
+  max-width: 120px;
 }

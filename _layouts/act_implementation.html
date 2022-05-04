@@ -23,8 +23,8 @@ type_of_guidance: false
   </p></div>
 </aside>
 
-<h2>Summary</h2>
 <table>
+  <caption>Number of rules implemented</caption>
   <tr>
     <th></th>
     <th>Consistent</th>
@@ -91,7 +91,7 @@ type_of_guidance: false
     completely {% else %} partially 
   {% endif %} consistent with 
   <a href="{{ '/standards-guidelines/act/rules/' | append: ruleMapping.ruleId | relative_url }}">
-    {{ ruleMapping.ruleName }}
+    {{- ruleMapping.ruleName -}}
   </a>.
   It covers {{ coverage.covered }} of the {{ coverage.testCaseTotal }} test cases. 
   {% if coverage.cantTell > 0 %}
@@ -114,7 +114,7 @@ type_of_guidance: false
 </p>
 
 {% if ruleMapping.accessibilityRequirements %}
-<table>
+<table class="act-requirements">
   <caption>Success Criteria</caption>
   <tr> <th>Expected</th> <th>Reported</th></tr>
   <tr>
@@ -143,7 +143,7 @@ type_of_guidance: false
 </table>
 {% endif %}
 
-<table>
+<table class="act-example-outcomes">
   <caption>Test Results</caption>
   <thead>
     <tr>
