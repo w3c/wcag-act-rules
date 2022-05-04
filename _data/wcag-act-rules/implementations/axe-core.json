@@ -745,6 +745,8 @@
       },
       "coverage": {
         "covered": 15,
+        "untested": 0,
+        "cantTell": 3,
         "testCaseTotal": 18
       },
       "testCaseResults": [
@@ -2115,6 +2117,7 @@
       ],
       "consistency": "complete",
       "accessibilityRequirements": {
+        "correct": true,
         "expected": [
           "WCAG2:language-of-page"
         ],
@@ -2245,6 +2248,7 @@
       ],
       "consistency": "complete",
       "accessibilityRequirements": {
+        "correct": true,
         "expected": [
           "WCAG2:language-of-page"
         ],
@@ -2376,6 +2380,7 @@
       ],
       "consistency": "complete",
       "accessibilityRequirements": {
+        "correct": true,
         "expected": [
           "WCAG2:language-of-page"
         ],
@@ -2580,6 +2585,7 @@
       ],
       "consistency": "complete",
       "accessibilityRequirements": {
+        "correct": true,
         "expected": [
           "WCAG2:page-titled"
         ],
@@ -2768,6 +2774,7 @@
       ],
       "consistency": "partial",
       "accessibilityRequirements": {
+        "correct": false,
         "expected": [
           "WCAG2:non-text-content",
           "WCAG2:name-role-value"
@@ -2973,6 +2980,7 @@
       ],
       "consistency": "complete",
       "accessibilityRequirements": {
+        "correct": true,
         "expected": [
           "WCAG2:non-text-content"
         ],
@@ -3374,6 +3382,7 @@
       ],
       "consistency": null,
       "accessibilityRequirements": {
+        "correct": true,
         "expected": [
           "WCAG2:text-spacing"
         ],
@@ -3641,6 +3650,7 @@
       ],
       "consistency": "partial",
       "accessibilityRequirements": {
+        "correct": false,
         "expected": [
           "WCAG2:name-role-value",
           "WCAG2:link-purpose-in-context",
@@ -4214,6 +4224,7 @@
       ],
       "consistency": null,
       "accessibilityRequirements": {
+        "correct": true,
         "expected": [
           "WCAG2:text-spacing"
         ],
@@ -4518,6 +4529,7 @@
       ],
       "consistency": null,
       "accessibilityRequirements": {
+        "correct": false,
         "expected": [
           "WCAG2:name-role-value"
         ],
@@ -7000,6 +7012,7 @@
       ],
       "consistency": "partial",
       "accessibilityRequirements": {
+        "correct": true,
         "expected": [
           "WCAG2:info-and-relationships"
         ],
@@ -7361,6 +7374,7 @@
       ],
       "consistency": null,
       "accessibilityRequirements": {
+        "correct": true,
         "expected": [
           "WCAG2:info-and-relationships"
         ],
@@ -9280,6 +9294,7 @@
       ],
       "consistency": "partial",
       "accessibilityRequirements": {
+        "correct": false,
         "expected": [],
         "reported": [
           "WCAG2:name-role-value"
@@ -9645,6 +9660,7 @@
       ],
       "consistency": null,
       "accessibilityRequirements": {
+        "correct": false,
         "expected": [],
         "reported": [
           "WCAG2:name-role-value",
@@ -14255,6 +14271,7 @@
       ],
       "consistency": null,
       "accessibilityRequirements": {
+        "correct": false,
         "expected": [
           "WCAG2:parsing"
         ],
@@ -17013,6 +17030,7 @@
       ],
       "consistency": null,
       "accessibilityRequirements": {
+        "correct": true,
         "expected": [
           "WCAG2:audio-control"
         ],
@@ -17154,6 +17172,7 @@
       ],
       "consistency": null,
       "accessibilityRequirements": {
+        "correct": true,
         "expected": [
           "WCAG2:audio-only-and-video-only-prerecorded"
         ],
@@ -17773,6 +17792,7 @@
       ],
       "consistency": null,
       "accessibilityRequirements": {
+        "correct": false,
         "expected": [
           "WCAG2:pause-stop-hide"
         ],
@@ -18429,6 +18449,7 @@
       ],
       "consistency": "complete",
       "accessibilityRequirements": {
+        "correct": true,
         "expected": [
           "WCAG2:orientation"
         ],
@@ -18438,6 +18459,8 @@
       },
       "coverage": {
         "covered": 9,
+        "cantTell": 1,
+        "untested": 0,
         "testCaseTotal": 10
       },
       "testCaseResults": [
@@ -19601,6 +19624,7 @@
       ],
       "consistency": null,
       "accessibilityRequirements": {
+        "correct": true,
         "expected": [
           "WCAG2:language-of-parts"
         ],
@@ -19887,6 +19911,7 @@
       ],
       "consistency": "complete",
       "accessibilityRequirements": {
+        "correct": true,
         "expected": [
           "WCAG2:non-text-content"
         ],
@@ -20119,6 +20144,7 @@
       ],
       "consistency": null,
       "accessibilityRequirements": {
+        "correct": false,
         "expected": [
           "WCAG2:info-and-relationships"
         ],
@@ -21627,6 +21653,7 @@
       ],
       "consistency": null,
       "accessibilityRequirements": {
+        "correct": true,
         "expected": [
           "WCAG2:language-of-page"
         ],
@@ -22067,6 +22094,7 @@
       ],
       "consistency": null,
       "accessibilityRequirements": {
+        "correct": false,
         "expected": [
           "WCAG2:page-titled"
         ],
@@ -22178,6 +22206,7 @@
       ],
       "consistency": "complete",
       "accessibilityRequirements": {
+        "correct": true,
         "expected": [
           "WCAG2:parsing"
         ],
@@ -22370,6 +22399,7 @@
       ],
       "consistency": null,
       "accessibilityRequirements": {
+        "correct": false,
         "expected": [
           "WCAG2:name-role-value"
         ],
@@ -26649,6 +26679,7 @@
       ],
       "consistency": null,
       "accessibilityRequirements": {
+        "correct": false,
         "expected": [
           "WCAG2:name-role-value"
         ],
@@ -28197,6 +28228,7 @@
       ],
       "consistency": null,
       "accessibilityRequirements": {
+        "correct": true,
         "expected": [
           "WCAG2:keyboard"
         ],
@@ -28389,6 +28421,7 @@
       ],
       "consistency": null,
       "accessibilityRequirements": {
+        "correct": false,
         "expected": [
           "WCAG2:non-text-content"
         ],
@@ -29345,6 +29378,7 @@
       ],
       "consistency": null,
       "accessibilityRequirements": {
+        "correct": false,
         "expected": [
           "WCAG2:non-text-content"
         ],
@@ -30237,6 +30271,7 @@
       ],
       "consistency": null,
       "accessibilityRequirements": {
+        "correct": false,
         "expected": [
           "WCAG2:non-text-content"
         ],
@@ -31423,6 +31458,7 @@
       ],
       "consistency": null,
       "accessibilityRequirements": {
+        "correct": true,
         "expected": [
           "WCAG2:text-spacing"
         ],
@@ -31766,6 +31802,7 @@
       ],
       "consistency": null,
       "accessibilityRequirements": {
+        "correct": false,
         "expected": [
           "WCAG2:link-purpose-link-only"
         ],
@@ -32131,6 +32168,7 @@
       ],
       "consistency": null,
       "accessibilityRequirements": {
+        "correct": false,
         "expected": [
           "WCAG2:link-purpose-in-context",
           "WCAG2:link-purpose-link-only"
@@ -32669,6 +32707,7 @@
       ],
       "consistency": "minimal",
       "accessibilityRequirements": {
+        "correct": false,
         "expected": [
           "WCAG2:link-purpose-link-only"
         ],
@@ -32676,6 +32715,8 @@
       },
       "coverage": {
         "covered": 10,
+        "cantTell": 11,
+        "untested": 0,
         "testCaseTotal": 21
       },
       "testCaseResults": [
@@ -33007,6 +33048,7 @@
       ],
       "consistency": "minimal",
       "accessibilityRequirements": {
+        "correct": false,
         "expected": [
           "WCAG2:link-purpose-in-context",
           "WCAG2:link-purpose-link-only"
@@ -33015,6 +33057,8 @@
       },
       "coverage": {
         "covered": 7,
+        "cantTell": 10,
+        "untested": 0,
         "testCaseTotal": 17
       },
       "testCaseResults": [
@@ -33286,6 +33330,7 @@
       ],
       "consistency": "complete",
       "accessibilityRequirements": {
+        "correct": false,
         "expected": [
           "WCAG2:name-role-value"
         ],
@@ -33429,6 +33474,7 @@
       ],
       "consistency": null,
       "accessibilityRequirements": {
+        "correct": true,
         "expected": [
           "WCAG2:timing-adjustable",
           "WCAG2:interruptions",
@@ -33682,6 +33728,7 @@
       ],
       "consistency": null,
       "accessibilityRequirements": {
+        "correct": false,
         "expected": [
           "WCAG2:interruptions",
           "WCAG2:change-on-request"
@@ -33919,6 +33966,7 @@
       ],
       "consistency": "partial",
       "accessibilityRequirements": {
+        "correct": true,
         "expected": [
           "WCAG2:resize-text"
         ],
@@ -34114,6 +34162,7 @@
       ],
       "consistency": "complete",
       "accessibilityRequirements": {
+        "correct": true,
         "expected": [
           "WCAG2:non-text-content"
         ],
@@ -34349,6 +34398,7 @@
       ],
       "consistency": "partial",
       "accessibilityRequirements": {
+        "correct": false,
         "expected": [
           "WCAG2:name-role-value"
         ],
@@ -34614,6 +34664,7 @@
       ],
       "consistency": null,
       "accessibilityRequirements": {
+        "correct": false,
         "expected": [
           "WCAG2:info-and-relationships"
         ],
@@ -37251,6 +37302,7 @@
       ],
       "consistency": "complete",
       "accessibilityRequirements": {
+        "correct": true,
         "expected": [
           "WCAG2:name-role-value"
         ],
@@ -37395,6 +37447,7 @@
       ],
       "consistency": "partial",
       "accessibilityRequirements": {
+        "correct": false,
         "expected": [
           "WCAG2:keyboard",
           "WCAG2:keyboard-no-exception"
@@ -37578,6 +37631,7 @@
       ],
       "consistency": "minimal",
       "accessibilityRequirements": {
+        "correct": false,
         "expected": [
           "WCAG2:info-and-relationships"
         ],
@@ -37585,6 +37639,7 @@
       },
       "coverage": {
         "covered": 13,
+        "cantTell": 3,
         "testCaseTotal": 16
       },
       "testCaseResults": [
@@ -37839,6 +37894,7 @@
       ],
       "consistency": "complete",
       "accessibilityRequirements": {
+        "correct": false,
         "expected": [
           "WCAG2:info-and-relationships"
         ],
@@ -38102,6 +38158,7 @@
       ],
       "consistency": "partial",
       "accessibilityRequirements": {
+        "correct": false,
         "expected": [
           "WCAG2:contrast-minimum",
           "WCAG2:contrast-enhanced"
@@ -38112,6 +38169,7 @@
       },
       "coverage": {
         "covered": 21,
+        "cantTell": 7,
         "testCaseTotal": 28
       },
       "testCaseResults": [
@@ -38547,6 +38605,7 @@
       ],
       "consistency": "complete",
       "accessibilityRequirements": {
+        "correct": true,
         "expected": [
           "WCAG2:contrast-enhanced"
         ],
@@ -38556,6 +38615,7 @@
       },
       "coverage": {
         "covered": 22,
+        "cantTell": 7,
         "testCaseTotal": 29
       },
       "testCaseResults": [
@@ -39023,6 +39083,7 @@
       ],
       "consistency": null,
       "accessibilityRequirements": {
+        "correct": false,
         "expected": [
           "WCAG2:captions-prerecorded"
         ],
@@ -39135,6 +39196,7 @@
       ],
       "consistency": null,
       "accessibilityRequirements": {
+        "correct": false,
         "expected": [
           "WCAG2:audio-description-or-media-alternative-prerecorded",
           "WCAG2:audio-description-prerecorded",
@@ -39626,6 +39688,7 @@
       ],
       "consistency": "minimal",
       "accessibilityRequirements": {
+        "correct": false,
         "expected": [
           "WCAG2:audio-only-and-video-only-prerecorded"
         ],
@@ -39633,6 +39696,7 @@
       },
       "coverage": {
         "covered": 4,
+        "cantTell": 5,
         "testCaseTotal": 9
       },
       "testCaseResults": [
@@ -40233,6 +40297,7 @@
       ],
       "consistency": null,
       "accessibilityRequirements": {
+        "correct": false,
         "expected": [
           "WCAG2:audio-description-prerecorded"
         ],
@@ -40368,6 +40433,7 @@
       ],
       "consistency": "complete",
       "accessibilityRequirements": {
+        "correct": true,
         "expected": [
           "WCAG2:label-in-name"
         ],
@@ -40377,6 +40443,7 @@
       },
       "coverage": {
         "covered": 12,
+        "cantTell": 1,
         "testCaseTotal": 13
       },
       "testCaseResults": [
@@ -40587,6 +40654,7 @@
       ],
       "consistency": null,
       "accessibilityRequirements": {
+        "correct": false,
         "expected": [
           "WCAG2:resize-text"
         ],
