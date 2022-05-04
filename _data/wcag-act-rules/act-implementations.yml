@@ -3,9 +3,9 @@
   uniqueKey: alfa
   type: Automated tool
   standards:
-    - WCAG 2.1, all levels
+    - WCAG 2.1 all levels
     - WAI-ARIA 1.2
-  jsonReports: https://raw.githubusercontent.com/act-rules/act-rules-implementation-alfa/master/report.json
+  jsonReport: https://raw.githubusercontent.com/act-rules/act-rules-implementation-alfa/master/report.json
 
 - name: Axe-core
   homepage: https://github.com/dequelabs/axe-core/
@@ -14,9 +14,9 @@
   uniqueKey: axe-core
   type: Automated tool
   standards:
-    - WCAG 2.1, all levels
+    - WCAG 2.1 all levels
     - WAI-ARIA 1.2
-  jsonReports: https://raw.githubusercontent.com/dequelabs/act-reports-axe/main/reports/axe-core.json
+  jsonReport: https://raw.githubusercontent.com/dequelabs/act-reports-axe/main/reports/axe-core.json
   description: |
     ACT rules are tested using a canary version of axe-core, which can be accessed by installing `axe-core@next` from NPM. 
     For these results, all rules including “experimental” rules are enabled. 
@@ -28,16 +28,16 @@
   type: Semi-automated tool
   standards:
     - WCAG 2.1 Level A & AA
-  jsonReports: https://raw.githubusercontent.com/dequelabs/act-reports-axe/main/reports/axe-devtools-igt.json
+  jsonReport: https://raw.githubusercontent.com/dequelabs/act-reports-axe/main/reports/axe-devtools-igt.json
 
 - name: Equal Access Accessibility Checker
   vendor: IBM Accessibility
   uniqueKey: equal-access
   type: Automated tool
   standards:
-    - WCAG 2.1, all levels
+    - WCAG 2.1 all levels
     - WAI-ARIA 1.2
-  jsonReports: https://raw.githubusercontent.com/IBMa/equal-access/master/accessibility-checker/test-act/earlResult.json
+  jsonReport: https://raw.githubusercontent.com/IBMa/equal-access/master/accessibility-checker/test-act/earlResult.json
   description: |
     ACT rule results were generated using the latest `accessibility-checker` 
     from NPM using the [ACT test driver](https://github.com/IBMa/equal-access/tree/master/accessibility-checker/test-act).
@@ -54,18 +54,18 @@
   uniqueKey: qualweb
   type: Automated tool
   standards:
-    - WCAG 2.1, all levels
+    - WCAG 2.1 all levels
     - WAI-ARIA 1.2
-  jsonReports: https://raw.githubusercontent.com/act-rules/act-rules-implementation-qualweb/master/reports/qualweb-report.json
+  jsonReport: https://raw.githubusercontent.com/act-rules/act-rules-implementation-qualweb/master/reports/qualweb-report.json
 
 - name: SortSite
   vendor: PowerMapper
   uniqueKey: sort-site
   type: Automated tool
   standards:
-    - WCAG 2.1, all levels
+    - WCAG 2.1 all levels
     - WAI-ARIA 1.2
-  jsonReports: https://raw.githubusercontent.com/act-rules/act-rules-implementation-sortsite/master/report.json
+  jsonReport: https://raw.githubusercontent.com/act-rules/act-rules-implementation-sortsite/master/report.json
 
 - name: Trusted Tester
   vendor: Access Board
@@ -73,4 +73,4 @@
   type: Test methodology
   standards:
     - WCAG 2.0 Level A & AA
-  jsonReports: https://raw.githubusercontent.com/Section508Coordinators/act-tt/main/act-trusted-tester.json
+  jsonReport: https://raw.githubusercontent.com/Section508Coordinators/act-tt/main/act-trusted-tester.json

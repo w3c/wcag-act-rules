@@ -14,7 +14,9 @@ type_of_guidance: false
   </header>
   <div class="box-i"><p>
     {% if implementationInfo.homepage -%}
-      <a href="{{ implementationInfo.homepage }}">{{ implementationInfo.name }}</a>
+      <a href="{{ implementationInfo.homepage }}">
+        {{- implementationInfo.name -}}
+      </a>
     {%- else %}
       {{ implementationInfo.name }}
     {% endif %}
@@ -24,14 +26,15 @@ type_of_guidance: false
     is an {{ implementationInfo.type }}
     {% if implementationInfo.vendorHomepage %}
       by <a href="{{ implementationInfo.vendorHomepage }}">
-        {{ implementationInfo.vendor }}
+        {{- implementationInfo.vendor -}}
       </a>.
-    {% else %} by {{ implementation.vendor }}.
+    {% else %}
+      by {{ implementation.vendor }}.
     {% endif %}
 
     {% if implementation.versionDate %}
       Version {{ implementation.version }} 
-      was published on {{ implementation.versionDate }}.
+      was published on {{ implementation.versionDate | date: '%e %B %Y' }}.
     {% endif %}
 
     This ACT implementation tests for
@@ -40,9 +43,9 @@ type_of_guidance: false
         {{ standard }}
       {%- elsif forloop.last == false -%}
         , {{ standard }}
-      {%- else %}
+      {%- else -%}
         , and {{ standard }}
-      {%- endif %}
+      {%- endif -%}
     {%- endfor %}.
   </p></div>
 </aside>
@@ -93,6 +96,16 @@ type_of_guidance: false
     {% endfor %}
   </tbody>
 </table>
+
+<h2>About the results</h2>
+<p>
+  Results in this page are taken from a public
+  <a href="{{ implementationInfo.jsonReport }}">test report</a>
+  published by {{ implementationInfo.vendor }}.
+  Data is published using the 
+  <a href="https://act-rules.github.io/pages/implementations/earl-reports/"
+  >EARL+JSON-LD data format</a>.
+</p>
 
 <h2>Implementation Breakdown</h2>
 
