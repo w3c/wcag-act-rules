@@ -26,6 +26,7 @@
       ],
       "consistency": "complete",
       "accessibilityRequirements": {
+        "correct": true,
         "expected": [
           "WCAG2:identify-input-purpose"
         ],
@@ -350,6 +351,7 @@
       ],
       "consistency": "complete",
       "accessibilityRequirements": {
+        "correct": true,
         "expected": [
           "WCAG2:name-role-value"
         ],
@@ -732,6 +734,7 @@
       ],
       "consistency": null,
       "accessibilityRequirements": {
+        "correct": true,
         "expected": [
           "WCAG2:language-of-parts"
         ],
@@ -1627,6 +1630,7 @@
       ],
       "consistency": "partial",
       "accessibilityRequirements": {
+        "correct": false,
         "expected": [
           "WCAG2:name-role-value"
         ],
@@ -18025,6 +18029,8 @@
       },
       "coverage": {
         "covered": 1,
+        "cantTell": 1,
+        "untested": 6,
         "testCaseTotal": 8
       },
       "testCaseResults": [

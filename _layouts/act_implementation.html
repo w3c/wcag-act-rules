@@ -23,7 +23,6 @@ type_of_guidance: false
   </p></div>
 </aside>
 
-
 <h2>Summary</h2>
 <table>
   <tr>
@@ -75,20 +74,48 @@ type_of_guidance: false
 
 {% for ruleMapping in implementation.actRuleMapping %}
 {% if ruleMapping.consistency != null %}
+{% assign coverage = ruleMapping.coverage %}
 <h3 id="breakdown-{{ ruleMapping.ruleId }}">{{ ruleMapping.ruleName }}</h3>
 <p>
-  This rule is implemented by {{ implementation.name }} using {{ ruleMapping.procedureNames.size }} 
-  procedure{% if ruleMapping.procedureNames.size != 0 %}s{% endif %}.
-  The implementation is {% if ruleMapping.consistency == 'complete' %}
+  This rule is implemented by {{ implementation.name }} using the
+  {% for procedure in ruleMapping.procedureNames %}
+    {%- if forloop.first == true -%}
+      <code>{{ procedure }}</code>
+    {%- elsif forloop.last == false -%}
+      , <code>{{ procedure }}</code>
+    {%- else -%}
+      , and <code>{{ procedure }}</code>
+    {%- endif -%}
+  {% endfor %} procedure{% if ruleMapping.procedureNames.size > 1 %}s{% endif %}.
+  The implementation is {% if ruleMapping.consistency != 'complete' %}
     completely {% else %} partially 
-  {% endif %} consistent with the rule.
-  It answers {{ ruleMapping.coverage.covered }} of the {{ ruleMapping.coverage.testCaseTotal }}
-  test cases covered.
+  {% endif %} consistent with 
+  <a href="{{ '/standards-guidelines/act/rules/' + ruleMapping.ruleId | relative_url }}">
+    {{ ruleMapping.ruleName }}
+  </a>.
+  It covers {{ coverage.covered }} of the {{ coverage.testCaseTotal }} test cases. 
+  {% if coverage.cantTell > 0 %}
+    On {{ coverage.cantTell }} test case{% if coverage.cantTell > 1 %}s{%endif%}
+    the implementation cannot tell the outcome. This is often because to technical 
+    limitations in tools.
+  {% endif %}
+  {% if coverage.untested > 0 %}
+    For {{ coverage.untested }} test case{% if coverage.cantTell > 1 %}s{%endif%}
+    no results were reported. This can happen when test cases are newer then the
+    test results.
+  {% endif %}
+  {% if ruleMapping.accessibilityRequirements.correct == true %}
+    The implementation correctly reports which success criteria are failed by this rule.
+  {% elsif ruleMapping.accessibilityRequirements.correct == false %}
+    The implementation reports different success criteria as failed from what is expected by this rule.
+  {% else %}
+    The implementation correctly reports no success criteria are failed by this rule.
+  {% endif %}
 </p>
 
 {% if ruleMapping.accessibilityRequirements %}
 <table>
-  <caption>Accessibility Requirements</caption>
+  <caption>Success Criteria</caption>
   <tr> <th>Expected</th> <th>Reported</th></tr>
   <tr>
     <td>
@@ -120,7 +147,7 @@ type_of_guidance: false
   <caption>Test Results</caption>
   <thead>
     <tr>
-      <th>Test Case</th>
+      <th>Example</th>
       {% for procedureName in ruleMapping.procedureNames %}
         <th>{{ procedureName }}</th>
       {% endfor %}
