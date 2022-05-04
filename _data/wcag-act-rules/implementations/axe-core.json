@@ -18165,6 +18165,7 @@
       ],
       "consistency": "minimal",
       "accessibilityRequirements": {
+        "correct": false,
         "expected": [
           "WCAG2:bypass-blocks"
         ],
@@ -18172,6 +18173,8 @@
       },
       "coverage": {
         "covered": 10,
+        "cantTell": 5,
+        "untested": 0,
         "testCaseTotal": 15
       },
       "testCaseResults": [

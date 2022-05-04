@@ -90,17 +90,17 @@ type_of_guidance: false
   The implementation is {% if ruleMapping.consistency != 'complete' %}
     completely {% else %} partially 
   {% endif %} consistent with 
-  <a href="{{ '/standards-guidelines/act/rules/' + ruleMapping.ruleId | relative_url }}">
+  <a href="{{ '/standards-guidelines/act/rules/' | append: ruleMapping.ruleId | relative_url }}">
     {{ ruleMapping.ruleName }}
   </a>.
   It covers {{ coverage.covered }} of the {{ coverage.testCaseTotal }} test cases. 
   {% if coverage.cantTell > 0 %}
     On {{ coverage.cantTell }} test case{% if coverage.cantTell > 1 %}s{%endif%}
-    the implementation cannot tell the outcome. This is often because to technical 
+    the implementation cannot tell the outcome. This is often because of technical 
     limitations in tools.
   {% endif %}
   {% if coverage.untested > 0 %}
-    For {{ coverage.untested }} test case{% if coverage.cantTell > 1 %}s{%endif%}
+    For {{ coverage.untested }} test case{% if coverage.untested > 1 %}s{%endif%}
     no results were reported. This can happen when test cases are newer then the
     test results.
   {% endif %}
