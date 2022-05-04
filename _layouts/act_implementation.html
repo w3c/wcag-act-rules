@@ -3,9 +3,9 @@ layout: standalone_resource
 type_of_guidance: false
 ---
 
-{% assign implementations = site.data.wcag-act-rules.implementations %}
-{% assign requirements = site.data.wcag-act-rules.requirements %}
-{% assign implementation = implementations[page.implementation_key] %}
+{%- assign implementations = site.data.wcag-act-rules.implementations %}
+{%- assign requirements = site.data.wcag-act-rules.requirements %}
+{%- assign implementation = implementations[page.implementation_key] %}
 
 <aside class="box"> 
   <header class="box-h box-h-icon"> 
@@ -56,7 +56,7 @@ type_of_guidance: false
     {% if ruleMapping.consistency != null %}
       <tr>
         <td><a href="#breakdown-{{ ruleMapping.ruleId }}">
-          {{ ruleMapping.ruleName }}
+          {{ ruleMapping.ruleName | remove: '`' }}
         </a></td>
         <td>{% if ruleMapping.ruleApproved %}
           WCAG 2 Rule {% else %} Proposed Rule
@@ -73,9 +73,9 @@ type_of_guidance: false
 <h2>Implementation Breakdown</h2>
 
 {% for ruleMapping in implementation.actRuleMapping %}
-{% if ruleMapping.consistency != null %}
-{% assign coverage = ruleMapping.coverage %}
-<h3 id="breakdown-{{ ruleMapping.ruleId }}">{{ ruleMapping.ruleName }}</h3>
+{%- if ruleMapping.consistency != null %}
+{%- assign coverage = ruleMapping.coverage %}
+<h3 id="breakdown-{{ ruleMapping.ruleId }}">{{ ruleMapping.ruleName | remove: '`' }}</h3>
 <p>
   This rule is implemented by {{ implementation.name }} using the
   {% for procedure in ruleMapping.procedureNames %}
@@ -91,7 +91,7 @@ type_of_guidance: false
     fully {% else %} partially 
   {% endif %} consistent with the
   <a href="{{ '/standards-guidelines/act/rules/' | append: ruleMapping.ruleId | relative_url }}">
-    {{- ruleMapping.ruleName -}}
+    {{- ruleMapping.ruleName | remove: '`' -}}
   </a> ACT Rule.
   It covers {{ coverage.covered }} of the {{ coverage.testCaseTotal }} test cases. 
   {% if coverage.cantTell > 0 %}
@@ -147,22 +147,31 @@ type_of_guidance: false
   <caption>Test Results</caption>
   <thead>
     <tr>
-      <th>Example</th>
-      {% for procedureName in ruleMapping.procedureNames %}
-        <th>{{ procedureName }}</th>
-      {% endfor %}
+      <th></th>
+      {%- for procedureName in ruleMapping.procedureNames %}
+      <th>{{ procedureName }}</th>
+      {%- endfor %}
     </tr>
   </thead>
 
   <tbody>
-    {% for result in ruleMapping.testCaseResults %}
+    {%- for result in ruleMapping.testCaseResults %}
     <tr>
       <th><a href="{{ result.testCaseUrl }}">{{ result.testCaseName }}</a></th>
-      {% for procedureResult in result.procedureResults %}
-        <td>{{ procedureResult.outcomes | uniq | join: ", " }}</td>
-      {% endfor %}
+      {%- for procedureResult in result.procedureResults %}
+      {%- assign outcome = procedureResult.outcomes | uniq | join: ", " %}
+      <td class="
+        {%- if result.expected == 'failed' and outcome contains 'failed' == false -%}
+          act-false-negative
+        {%- elsif outcome contains 'cantTell' -%}
+          act-cannot-tell
+        {%- elsif outcome contains 'untested' -%}
+          act-untested
+        {%- endif -%}
+      ">{{ outcome | replace: "cantTell", "cannot tell" }}</td>
+      {%- endfor %}
     </tr>
-    {% endfor %}
+    {%- endfor %}
   </tbody>
 </table>
 {% endif %}

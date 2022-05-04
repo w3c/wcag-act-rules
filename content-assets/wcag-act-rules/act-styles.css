@@ -41,3 +41,15 @@ table.act-requirements th {
 table.act-example-outcomes th:first-child {
   width: 220px;
 }
+
+.act-false-negative {
+  background: #E5E5E5;
+}
+.act-untested {
+  background: #e2e5f4;
+  font-style: italic;
+}
+.act-cannot-tell {
+  background: #daede7;
+  font-style: italic;
+}
