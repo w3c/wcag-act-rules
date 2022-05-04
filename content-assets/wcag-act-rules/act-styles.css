@@ -41,15 +41,17 @@ table.act-requirements th {
 table.act-example-outcomes th:first-child {
   width: 220px;
 }
-
-.act-false-negative {
-  background: #E5E5E5;
-}
+.act-false-negative,
+.act-cannot-tell,
 .act-untested {
-  background: #e2e5f4;
+  background: #E5E5E5;
   font-style: italic;
 }
-.act-cannot-tell {
-  background: #daede7;
-  font-style: italic;
+
+table.act-implemented-rules td:nth-child(2) {
+  white-space: nowrap;
+}
+
+table.act-rules-summary {
+  margin-top: 45px;
 }
