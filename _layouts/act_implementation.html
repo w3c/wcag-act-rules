@@ -161,13 +161,14 @@ type_of_guidance: false
       {%- for procedureResult in result.procedureResults %}
       {%- assign outcome = procedureResult.outcomes | uniq | join: ", " %}
       <td class="
-        {%- if result.expected == 'failed' and outcome contains 'failed' == false -%}
-          act-false-negative
-        {%- elsif outcome contains 'cantTell' -%}
-          act-cannot-tell
-        {%- elsif outcome contains 'untested' -%}
-          act-untested
-        {%- endif -%}
+      {%- if outcome contains 'cantTell' -%}
+      act-cannot-tell
+      {%- elsif outcome contains 'untested' -%}
+      act-untested
+      {%- elsif result.expected != 'failed' or outcome contains 'failed' -%}
+      {%- else %}
+        act-false-negative
+      {%- endif -%}
       ">{{ outcome | replace: "cantTell", "cannot tell" }}</td>
       {%- endfor %}
     </tr>
