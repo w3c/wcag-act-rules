@@ -87,12 +87,12 @@ type_of_guidance: false
       , and <code>{{ procedure }}</code>
     {%- endif -%}
   {% endfor %} procedure{% if ruleMapping.procedureNames.size > 1 %}s{% endif %}.
-  The implementation is {% if ruleMapping.consistency != 'complete' %}
-    completely {% else %} partially 
-  {% endif %} consistent with 
+  The implementation is {% if ruleMapping.consistency == 'complete' %}
+    fully {% else %} partially 
+  {% endif %} consistent with the
   <a href="{{ '/standards-guidelines/act/rules/' | append: ruleMapping.ruleId | relative_url }}">
     {{- ruleMapping.ruleName -}}
-  </a>.
+  </a> ACT Rule.
   It covers {{ coverage.covered }} of the {{ coverage.testCaseTotal }} test cases. 
   {% if coverage.cantTell > 0 %}
     On {{ coverage.cantTell }} test case{% if coverage.cantTell > 1 %}s{%endif%}

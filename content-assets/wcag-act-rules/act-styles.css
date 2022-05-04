@@ -39,5 +39,5 @@ table.act-requirements th {
   width: 50%;
 }
 table.act-example-outcomes th:first-child {
-  max-width: 120px;
+  width: 220px;
 }
