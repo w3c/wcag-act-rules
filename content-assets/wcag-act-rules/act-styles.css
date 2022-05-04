@@ -55,3 +55,8 @@ table.act-implemented-rules td:nth-child(2) {
 table.act-rules-summary {
   margin-top: 45px;
 }
+
+/* TODO: This needs to be removed */
+.standalone-resource__type-of-guidance {
+  display:none;
+}

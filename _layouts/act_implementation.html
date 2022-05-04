@@ -98,6 +98,11 @@ type_of_guidance: false
 </table>
 
 <h2>About the results</h2>
+
+{% if implementationInfo.description -%}
+  <p>{{ implementationInfo.description }}</p>
+{%- endif %}
+
 <p>
   Results in this page are taken from a public
   <a href="{{ implementationInfo.jsonReport }}">test report</a>

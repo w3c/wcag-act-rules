@@ -9,6 +9,7 @@
   </thead>
   <tbody>
     {% for implementation in include.implementations %}
+      {% unless implementation.hidden %}
       {% assign report = siteData.implementations[implementation.uniqueKey] %}
       <tr>
         <td>{{ implementation.name }} {{ report.version }}</td>
@@ -25,6 +26,7 @@
           }}" />
         </a></td>
       </tr>
+      {% endunless %}
     {% endfor %}
   </tbody>
 </table>
