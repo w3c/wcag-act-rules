@@ -98,7 +98,7 @@ type_of_guidance: false
   </tbody>
 </table>
 
-<h2>About These Results</h2>
+<h2>About {{ implementationInfo.name }} Results</h2>
 
 {% if implementationInfo.description -%}
   <p>{{ implementationInfo.description }}</p>
@@ -138,7 +138,7 @@ type_of_guidance: false
     {{- ruleMapping.ruleName | remove: '`' -}}
   </a>
   {% if ruleMapping.ruleApproved -%}
-    WCAG 2 Rule. {% else %} Proposed Rule.
+    WCAG 2 rule. {% else %} proposed rule.
   {%- endif %}
 
   It covers {{ coverage.covered }} of the {{ coverage.testCaseTotal }} test cases. 

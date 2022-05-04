@@ -19,7 +19,7 @@
     - WAI-ARIA 1.2
   jsonReport: https://raw.githubusercontent.com/dequelabs/act-reports-axe/main/reports/axe-core.json
   description: |
-    ACT rules are tested using a canary version of axe-core, which can be accessed by installing `axe-core@next` from NPM. 
+    ACT rules are tested using a canary version of axe-core, which can be accessed by installing <code>axe-core@next</code> from NPM. 
     For these results, all rules including “experimental” rules are enabled. 
     Checks with “unsupported” in its ID are disabled, which deal with issues of accessibility support issues which ACT rules do not account for, often by design.
 
