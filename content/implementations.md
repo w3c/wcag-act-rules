@@ -43,7 +43,7 @@ See [understanding ACT consistency](#understandingactconsistency).
 {% assign automatedTools = implementations | where: "type", "Automated tool" %}
 {% include_relative _implementations-table.html implementations=automatedTools %}
 
-## Understanding ACT Consistency {#test}
+## Understanding ACT Consistency
 
 Scores on this page are based on publicly available test results. Each ACT rule has examples. Vendors of test tools and methodologies run their implementation against the examples and report the outcome in a standard format. By comparing the outcome to the expected result, the consistency of these implementations can be worked out.
 
