@@ -1,7 +1,7 @@
 ---
 doc-note-type: draft
 layout: standalone_resource
-title: "Accessibility Test Tools & Methodologies"
+title: "Implementations"
 permalink: /standards-guidelines/act/implementations/
 ref: /standards-guidelines/act/implementations/
 lang: en
@@ -16,51 +16,52 @@ github:
 {%- assign implementations = siteData.act-implementations | sort: "name" %}
 
 {::nomarkdown} {% include box.html type="start" title="Summary" %} {:/}
-ACT rules provide a standard way to compare the coverage of accessibility test tools and methodologies. This pages shows how many rules different tools and methodologies have accurately implemented. Scores are based on public test data.
+ACT Rules implementations provide obtained test outcomes based on the Test Rules expected results. Scores are based on public test data submitted by evaluation tool vendors and test methodology developers. These data is for informational purposes. W3C does not endorse a specific evaluation tool or test methodology.
 {::nomarkdown} {% include box.html type="end" %} {:/}
+
+## Add a Tool or Methodology
+
+The ACT Rules Task Force is working on a user interface for submitting implementations (to be added soon). For current information on how to add your accessibility evaluation tool or test methodology to the list of ACT implementations, visit the [ACT-Rules community group website](https://act-rules.github.io/pages/implementations/reporting/).
 
 ## Test Methodologies
 
-Methodologies provide step by step instructions on how to test accessibility standards.
-See [understanding ACT consistency](#understandingactconsistency).
+Test methodologies provide step by step instructions on how to test accessibility requirements.
+For details, see [understanding ACT consistency](#understandingactconsistency).
 
 {% assign methodologies = implementations | where: "type", "Test methodology" %}
 {% include_relative _implementations-table.html implementations=methodologies %}
 
 ## Semi-automated Test Tools
 
-Tools that combine user input and automated testing to test accessibility standards.
-See [understanding ACT consistency](#understandingactconsistency).
+Semi-automated tools combine user input and automated testing to test accessibility requirements.
+For details, see [understanding ACT consistency](#understandingactconsistency).
 
 {% assign semiAutoTools = implementations | where: "type", "Semi-automated tool" %}
 {% include_relative _implementations-table.html implementations=semiAutoTools %}
 
-## Automatic Test Tools
+## Automated Test Tools
 
-Tools that fully automatically test accessibility standards.
-See [understanding ACT consistency](#understandingactconsistency).
+Automated test tools test accessibility requirements without user input.
+For details, see [understanding ACT consistency](#understandingactconsistency).
 
 {% assign automatedTools = implementations | where: "type", "Automated tool" %}
 {% include_relative _implementations-table.html implementations=automatedTools %}
 
 ## Understanding ACT Consistency
 
-Scores on this page are based on publicly available test results. Each ACT rule has examples. Vendors of test tools and methodologies run their implementation against the examples and report the outcome in a standard format. By comparing the outcome to the expected result, the consistency of these implementations can be worked out.
+Each Test Rule has examples, known as test cases. Evaluation tool vendors and test methodology developers run their implementations against the examples. Then they report the outcome in a standard format.
 
-A test tool or methodology is considered **fully consistent** when all the following are true:
+Consistency of an ACT implementation relates to how the outcomes of an implementation match the expected result of each of the Test Rules examples.
 
-- all success criteria that should fail are reported as such; and
-- all examples have the expected outcome. (I.e. a failed example should not be passed or vise versa.); and
-- there are outcomes for all examples; and
-- automated implementations may report a "cannot tell" on some, but not all examples and still be considered consistent.
+* An ACT implementation is **fully consistent** when all the following are true:
+  - all success criteria that should fail are reported as such
+  - all examples have the expected outcome. (I.e. a failed example should not be passed or vise versa.)
+  - there are outcomes for all examples
 
-A test tool or methodology is **partially consistent** when it meets some, but not all requirements. A partially consistent implementation can not include false positives; i.e. it failing any passed or inapplicable examples.
+  Automated implementations may report a "cannot tell" on some but not all examples, and still be considered consistent.
+* An ACT implementation is **partially consistent** when it meets some but not all requirements. A partially consistent implementation can not include false positives; i.e. it failing any passed or inapplicable examples.
 
-Some ACT rules are "proposed". These rules are agreed on by the ACT Rules Task Force, and are awaiting implementation and approval by the Accessibility Guidelines Working Group. See [about ACT Rules](../rules/about/) for details.
-
-## Add a Tool or Methodology
-
-For information on how to add your accessibility test tool or methodology to the list of ACT implementations, visit the [ACT-Rules community group website](https://act-rules.github.io/pages/implementations/reporting/).
+Some Test Rules are "proposed". These rules are agreed on by the ACT Rules Task Force, and are awaiting implementation and approval by the Accessibility Guidelines Working Group. For details, see [about ACT Rules](../rules/about/).
 
 <script>
   var actTables = document.querySelectorAll('table.act-implementations')
