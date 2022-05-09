@@ -7,7 +7,7 @@ ref: /standards-guidelines/act/implementations/trusted-tester/
 implementation_key: trusted-tester
 lang: en
 footer: ""
-type_of_guidance: ""
+type_of_guidance: false
 github:
   repository: w3c/wcag-act-rules
   path: content/implementations/trusted-tester.md
