@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> e7aa44</p>
-  <p><strong>Date:</strong> Updated 27 April 2022</p>
+  <p><strong>Date:</strong> Updated 9 May 2022</p>
   <p><strong>Authors:</strong> <a href="https://www.linkedin.com/in/brianbors/">Brian Bors</a>, <a href="https://github.com/john-urbilog">John Hicks</a>, <a href="https://github.com/Rafalchar">Rafal Charlampowicz</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
   
@@ -21,7 +21,7 @@ rule_meta:
   rule_type: composite
   description: |
     This rule checks that `audio` elements have a text alternative available.
-  last_modified: 27 April 2022
+  last_modified: 9 May 2022
   scs_tested:
     - handle: Audio-only and Video-only (Prerecorded)
       num: 1.2.1
@@ -30,9 +30,9 @@ rule_meta:
 
 ## Applicability
 
-This rule applies to any [non-streaming](#non-streaming-media-element) `audio` element that is:
+This rule applies to any [non-streaming](#non-streaming-media-element) `audio` element for which at least one of the following is true:
 
-- playing; or,
+- has an `autoplay` [attribute value][] of true;  or,
 - has a "play button" that is [visible][] and [included in the accessibility tree](#included-in-the-accessibility-tree).
 
 **Note:** A play button is an interactive element that when activated, plays the audio.
@@ -103,7 +103,7 @@ Outcomes of the following rules are required as input for this rule.
 
 <a class="example-link" title="Passed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/e7aa44/85c98d1402dbc9c68ace2fbf5f063d145b8e5bd7.html">Open in a new tab</a>
 
-This `audio` element has native player controls and an internal transcript.
+This `audio` element has a play button, and there is a transcript of the audio.
 
 ```html
 <html lang="en">
@@ -121,7 +121,7 @@ This `audio` element has native player controls and an internal transcript.
 
 <a class="example-link" title="Passed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/e7aa44/dedfb667190bd564527247550565cdea8ccefd3f.html">Open in a new tab</a>
 
-This `audio` element describes some of the text on the same page. The text on the page labels the audio as an alternative.
+This `audio` element has a play button, and the text on the page labels the audio as an alternative.
 
 ```html
 <html lang="en">
@@ -138,20 +138,38 @@ This `audio` element describes some of the text on the same page. The text on th
 </html>
 ```
 
+#### Passed Example 3
+
+<a class="example-link" title="Passed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/e7aa44/fae177d6e342bce9e0b7ea3dad353d4253bd4e67.html">Open in a new tab</a>
+
+This `audio` element autoplays, and there is a transcript of the audio.
+
+```html
+<html lang="en">
+	<audio src="/test-assets/moon-audio/moon-speech.mp3" autoplay controls></audio>
+	<p>
+		The above audio contains the following speech: We choose to go to the moon in this decade and do the other things,
+		not because they are easy, but because they are hard, because that goal will serve to organize and measure the best
+		of our energies and skills, because that challenge is one that we are willing to accept, one we are unwilling to
+		postpone, and one which we intend to win, and the others, too.
+	</p>
+</html>
+```
+
 ### Failed
 
 #### Failed Example 1
 
-<a class="example-link" title="Failed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/e7aa44/58cd3c1ef1ce88b7878c9e11c4f610486faefbf6.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/e7aa44/97850b2083474a9c7b9585c2a1cb16b85b370032.html">Open in a new tab</a>
 
-This `audio` element has native player controls but has an incorrect internal transcript.
+This `audio` element has a play button but has an incorrect transcript.
 
 ```html
 <html lang="en">
 	<audio src="/test-assets/moon-audio/moon-speech.mp3" controls></audio>
 	<p>
-		The above audio contains the following speech: We choose to go to the cheese in this decade and do the other things,
-		not because they are easy, but because they are hard, because that goal will serve to organize and measure the best
+		The above audio contains the following speech: We are going to the North Pole in this decade with puppies,
+		not because they are easy, but because they are cute, because that goal will serve to organize and measure the best
 		of our energies and skills, because that challenge is one that we are willing to accept, one we are unwilling to
 		postpone, and one which we intend to win, and the others, too.
 	</p>
@@ -160,9 +178,9 @@ This `audio` element has native player controls but has an incorrect internal tr
 
 #### Failed Example 2
 
-<a class="example-link" title="Failed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/e7aa44/6f9ab7a874b2d555e94957abaec5f6e908b6c206.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/e7aa44/ef13bb60f3547081df4e6e0e668ef5497644a734.html">Open in a new tab</a>
 
-This `audio` element describes some of the text on the same page. The text is not [visible][] on the page.
+This `audio` element autoplays but the text transcript is not [visible][] on the page.
 
 ```html
 <html lang="en">
@@ -175,7 +193,7 @@ This `audio` element describes some of the text on the same page. The text is no
 	<p>
 		You can also listen to the audio file below to hear the above part of the speech.
 	</p>
-	<audio src="/test-assets/moon-audio/moon-speech.mp3" controls></audio>
+	<audio src="/test-assets/moon-audio/moon-speech.mp3" autoplay controls></audio>
 </html>
 ```
 
@@ -185,7 +203,7 @@ This `audio` element describes some of the text on the same page. The text is no
 
 <a class="example-link" title="Inapplicable Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/e7aa44/eba170767ac1de0092d33a9bee2c0ecf2ebdfd46.html">Open in a new tab</a>
 
-This `audio` element does not have native player controls.
+This `audio` element does not autoplay or have a play button.
 
 ```html
 <html lang="en">
@@ -197,7 +215,7 @@ This `audio` element does not have native player controls.
 
 <a class="example-link" title="Inapplicable Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/e7aa44/1c9dada7fa918fd9cffdd6d4c3443107aee373f5.html">Open in a new tab</a>
 
-This `audio` element describes some of the text on the same page. The text on the page labels the audio as an alternative but the controls are not [visible][] on the page.
+This `audio` element is labeled as an alternative by text on the same page, but the controls are not [visible][] on the page.
 
 ```html
 <html lang="en">
@@ -216,7 +234,7 @@ This `audio` element describes some of the text on the same page. The text on th
 
 #### Inapplicable Example 3
 
-<a class="example-link" title="Inapplicable Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/e7aa44/39721898dc02683e926a5cfa21afea1bcf477219.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/e7aa44/7162304a7c27feed90f68fdf4587c94cb47dd300.html">Open in a new tab</a>
 
 This `a` element links to an audio file, but there is no `audio` element on this page.
 
@@ -229,12 +247,29 @@ This `a` element links to an audio file, but there is no `audio` element on this
 		postpone, and one which we intend to win, and the others, too.
 	</p>
 	<p>
-		<a href="/test-assets/moon-audio/moon-speech.mp3">Download the speach as MP3</a>
+		<a href="/test-assets/moon-audio/moon-speech.mp3">Download the speech as MP3</a>
 	</p>
 </html>
 ```
 
 ## Glossary
+
+### Attribute value {#attribute-value}
+
+The <dfn id="attribute-value:attribute">attribute value</dfn> of a content attribute set on an HTML element is the value that the attribute gets after being parsed and computed according to specifications. It may differ from the value that is actually written in the HTML code due to trimming whitespace or non-digits characters, default values, or case-insensitivity.
+
+Some notable case of attribute value, among others:
+
+- For [enumerated attributes][], the <dfn id="attribute-value:enumerated">attribute value</dfn> is either the state of the attribute, or the keyword that maps to it; even for the default states. Thus `<input type="image" />` has an attribute value of either `Image Button` (the state) or `image` (the keyword mapping to it), both formulations having the same meaning; similarly, "an input element with a `type` _attribute value_ of `Text`" can be either `<input type="text" />`, `<input />` (missing value default), or `<input type="invalid" />` (invalid value default).
+- For [boolean attributes][], the <dfn id="attribute-value:boolean">attribute value</dfn> is `true` when the attribute is present and `false` otherwise. Thus `<button disabled>`, `<button disabled="disabled">` and `<button disabled="">` all have a `disabled` _attribute value_ of `true`.
+- For attributes whose value is used in a case-insensitive context, the <dfn id="attribute-value:case-insensitive">attribute value</dfn> is the lowercase version of the value written in the HTML code.
+- For attributes that accept [numbers][], the <dfn id="attribute-value:number">attribute value</dfn> is the result of parsing the value written in the HTML code according to the rules for parsing this kind of number.
+- For attributes that accept sets of tokens, whether [space separated][] or [comma separated][], the <dfn id="attribute-value:tokens-list">attribute value</dfn> is the set of tokens obtained after parsing the set and, depending on the case, converting its items to lowercase (if the set is used in a case-insensitive context).
+- For `aria-*` attributes, the <dfn id="attribute-value:aria">attribute value</dfn> is computed as indicated in the [WAI-ARIA specification][] and the [HTML Accessibility API Mappings][html aam].
+
+This list is not exhaustive, and only serves as an illustration for some of the most common cases.
+
+The <dfn id="attribute-value:idl">attribute value</dfn> of an [IDL attribute][] is the value returned on getting it. Note that when an [IDL attribute][] [reflects][reflect] a content attribute, they have the same attribute value.
 
 ### Focusable {#focusable}
 
@@ -303,12 +338,22 @@ For more details, see [examples of visible](https://act-rules.github.io/pages/ex
 
 This is the first version of this ACT rule.
 
+[attribute value]: #attribute-value 'Definition of Attribute Value'
+[boolean attributes]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attributes 'HTML Specification of Boolean Attribute'
+[comma separated]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#comma-separated-tokens 'HTML Specification of Comma Separated Tokens'
 [computed]: https://www.w3.org/TR/css-cascade/#computed-value 'CSS definition of computed value'
+[enumerated attributes]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#enumerated-attribute 'HTML Specification of Enumerated Attribute'
 [examples of included in the accessibility tree]: https://act-rules.github.io/pages/examples/included-in-the-accessibility-tree/
 [flat tree]: https://drafts.csswg.org/css-scoping/#flat-tree 'Definition of flat tree'
+[html aam]: https://www.w3.org/TR/html-aam-1.0/#html-attribute-state-and-property-mappings 'Specification of HTML attributes value mapping to ARIA states and properties'
+[idl attribute]: https://heycam.github.io/webidl/#idl-attributes "Definition of Web IDL Attribute (Editor's Draft)"
 [inclusive ancestors]: https://dom.spec.whatwg.org/#concept-tree-inclusive-ancestor 'DOM Definition of Inclusive Ancestor'
+[numbers]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#numbers 'HTML Specification of Number Parsing'
+[reflect]: https://html.spec.whatwg.org/multipage/common-dom-interfaces.html#reflecting-content-attributes-in-idl-attributes 'HTML specification of Reflecting Content Attributes in IDL Attributes'
 [rules for parsing integers]: https://html.spec.whatwg.org/#rules-for-parsing-integers
 [sequential focus navigation]: https://html.spec.whatwg.org/multipage/interaction.html#sequential-focus-navigation
+[space separated]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#space-separated-tokens 'HTML Specification of Space Separated Tokens'
 [tabindex attribute]: https://html.spec.whatwg.org/#attr-tabindex
 [tabindex value]: https://html.spec.whatwg.org/#tabindex-value
 [visible]: #visible 'Definition of visible'
+[wai-aria specification]: https://www.w3.org/TR/wai-aria-1.1/#propcharacteristic_value 'WAI-ARIA Specification of States and Properties Value'
