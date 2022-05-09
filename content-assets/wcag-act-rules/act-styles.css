@@ -12,14 +12,10 @@ table.act-implementations ul {
   padding-top: .25em;
   font-size: 80%;
 }
-.act-bar {
-  background: #CCC;
-}
-.act-bar > :first-child {
-  background: var(--wai-green);
+.act-approved .progress-bar {
   height: 3px;
 }
-.act-proposed .act-bar > :first-child {
+.act-proposed .progress-bar {
   height: 2px;
 }
 
@@ -44,7 +40,7 @@ table.act-example-outcomes th:first-child {
 .act-false-negative,
 .act-cannot-tell,
 .act-untested {
-  background: #E5E5E5;
+  background: var(--line-grey);
   font-style: italic;
 }
 
@@ -54,9 +50,4 @@ table.act-implemented-rules td:nth-child(2) {
 
 table.act-rules-summary {
   margin-top: 45px;
-}
-
-/* TODO: This needs to be removed */
-.standalone-resource__type-of-guidance {
-  display:none;
 }

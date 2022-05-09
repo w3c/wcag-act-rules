@@ -21,13 +21,13 @@ ACT rules provide a standard way to compare the coverage of accessibility test t
 
 ## Test Methodologies
 
-Methodologies provide step by step instructions on how to test accessibility standards.
+Test methodologies provide step by step instructions on how to test accessibility standards.
 See [understanding ACT consistency](#understandingactconsistency).
 
 {% assign methodologies = implementations | where: "type", "Test methodology" %}
 {% include_relative _implementations-table.html implementations=methodologies %}
 
-## Semi-automated Test Tools
+## Semi-automatic Test Tools
 
 Tools that combine user input and automated testing to test accessibility standards.
 See [understanding ACT consistency](#understandingactconsistency).
@@ -74,7 +74,9 @@ For information on how to add your accessibility test tool or methodology to the
       var currentValue = parseInt(div.innerText);
       var percentage = Math.ceil(currentValue / maxValue * 100);
       if (isNaN(percentage) === false) {
-        div.innerHTML += '<div class="act-bar"><div style="width: ' + percentage + '%"></div></div>'
+        div.innerHTML += '<div class="progress-bar">' +
+          '<div style="width:' + percentage + '%" class="progress-bar__progress"></div>' +
+          '</div>'
       }
     })
   });

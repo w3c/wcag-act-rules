@@ -7,6 +7,7 @@ ref: /standards-guidelines/act/implementations/equal-access/
 implementation_key: equal-access
 lang: en
 footer: ""
+type_of_guidance: ""
 github:
   repository: w3c/wcag-act-rules
   path: content/implementations/equal-access.md

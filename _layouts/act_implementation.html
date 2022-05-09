@@ -1,6 +1,6 @@
 ---
 layout: standalone_resource
-type_of_guidance: false
+type_of_guidance: ""
 ---
 
 {%- assign implementations = site.data.wcag-act-rules.implementations %}
@@ -56,7 +56,7 @@ type_of_guidance: false
   <tr>
     <th></th>
     <th>Consistent</th>
-    <th>Partially-consistent</th>
+    <th>Partially consistent</th>
   </tr>
   <tr>
     <th>WCAG 2 rules</th>
@@ -90,7 +90,7 @@ type_of_guidance: false
           WCAG 2 Rule {% else %} Proposed Rule
         {% endif %}</td>
         <td>{% if ruleMapping.consistency == 'complete' %}
-          Complete {% else %} Partial
+          Consistent {% else %} Partial
         {% endif %}</td>
       </tr>
     {% endif %}
@@ -113,7 +113,7 @@ type_of_guidance: false
   >EARL+JSON-LD data format</a>.
 </p>
 
-<h2>Implementation Breakdown</h2>
+<h2>Implementation Details</h2>
 
 {% for ruleMapping in implementation.actRuleMapping %}
 {%- if ruleMapping.consistency != null %}
