@@ -1,6 +1,5 @@
 ---
 layout: standalone_resource
-type_of_guidance: ""
 ---
 
 {%- assign implementations = site.data.wcag-act-rules.implementations %}
@@ -65,12 +64,14 @@ type_of_guidance: ""
   <tr>
     <th>WCAG 2 rules</th>
     <td>{{ implementation.approvedRules.complete }}</td>
-    <td>{{ implementation.approvedRules.partial + implementation.approvedRules.minimal }}</td>
+    {%- assign approvedPartial = implementation.approvedRules.partial + implementation.approvedRules.minimal %}
+    <td>{{ approvedPartial }}</td>
   </tr>
   <tr>
     <th>Proposed rules</th>
     <td>{{ implementation.proposedRules.complete }}</td>
-    <td>{{ implementation.proposedRules.partial + implementation.proposedRules.minimal }}</td>
+    {%- assign proposedPartial = implementation.proposedRules.partial + implementation.proposedRules.minimal %}
+    <td>{{ proposedPartial }}</td>
   </tr>
 </table>
 
