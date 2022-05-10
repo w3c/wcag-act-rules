@@ -146,21 +146,25 @@ layout: standalone_resource
     WCAG 2 rule. {% else %} proposed rule.
   {%- endif %}
 
-  It covers {{ coverage.covered }} of the {{ coverage.testCaseTotal }} test cases. 
-  {% if coverage.cantTell > 0 %}
-    On {{ coverage.cantTell }} test case{% if coverage.cantTell > 1 %}s{%endif%}
+  {%- if coverage.covered == coverage.testCaseTotal %}
+    It covers all {{ coverage.testCaseTotal }} examples. 
+  {%- else %}
+    It covers {{ coverage.covered }} of the {{ coverage.testCaseTotal }} examples. 
+  {%- endif %}
+  {%- if coverage.cantTell > 0 %}
+    On {{ coverage.cantTell }} example{% if coverage.cantTell > 1 %}s{%endif%}
     the implementation cannot tell the outcome. This is often because of technical 
     limitations in tools.
   {% endif %}
   {% if coverage.untested > 0 %}
-    For {{ coverage.untested }} test case{% if coverage.untested > 1 %}s{%endif%}
-    no results were reported. This can happen when test cases are newer then the
+    For {{ coverage.untested }} example{% if coverage.untested > 1 %}s{%endif%}
+    no results were reported. This can happen when examples are newer then the
     test results.
   {% endif %}
-  {% if ruleMapping.accessibilityRequirements.correct == true %}
-    The implementation correctly reports which success criteria are failed by this rule.
-  {% elsif ruleMapping.accessibilityRequirements.correct == false %}
+  {% if ruleMapping.accessibilityRequirements.correct == false %}
     The implementation reports different success criteria as failed from what is expected by this rule.
+  {% elsif ruleMapping.accessibilityRequirements.reported.size > 0 %}
+    The implementation correctly reports which success criteria are failed by this rule.
   {% else %}
     The implementation correctly reports no success criteria are failed by this rule.
   {% endif %}
