@@ -37,6 +37,8 @@
       },
       "coverage": {
         "covered": 20,
+        "untested": 0,
+        "cantTell": 0,
         "testCaseTotal": 20
       },
       "testCaseResults": [
@@ -362,6 +364,8 @@
       },
       "coverage": {
         "covered": 17,
+        "untested": 0,
+        "cantTell": 0,
         "testCaseTotal": 17
       },
       "testCaseResults": [
@@ -746,7 +750,7 @@
       "coverage": {
         "covered": 15,
         "untested": 0,
-        "cantTell": 3,
+        "cantTell": 0,
         "testCaseTotal": 18
       },
       "testCaseResults": [
@@ -1042,11 +1046,14 @@
       ],
       "consistency": null,
       "accessibilityRequirements": {
+        "correct": true,
         "expected": [],
         "reported": []
       },
       "coverage": {
         "covered": 1,
+        "untested": 9,
+        "cantTell": 0,
         "testCaseTotal": 10
       },
       "testCaseResults": [
@@ -1644,6 +1651,8 @@
       },
       "coverage": {
         "covered": 17,
+        "untested": 0,
+        "cantTell": 0,
         "testCaseTotal": 17
       },
       "testCaseResults": [
@@ -2127,6 +2136,8 @@
       },
       "coverage": {
         "covered": 7,
+        "untested": 0,
+        "cantTell": 0,
         "testCaseTotal": 7
       },
       "testCaseResults": [
@@ -2258,6 +2269,8 @@
       },
       "coverage": {
         "covered": 7,
+        "untested": 0,
+        "cantTell": 0,
         "testCaseTotal": 7
       },
       "testCaseResults": [
@@ -2390,6 +2403,8 @@
       },
       "coverage": {
         "covered": 12,
+        "untested": 0,
+        "cantTell": 0,
         "testCaseTotal": 12
       },
       "testCaseResults": [
@@ -2595,6 +2610,8 @@
       },
       "coverage": {
         "covered": 11,
+        "untested": 0,
+        "cantTell": 0,
         "testCaseTotal": 11
       },
       "testCaseResults": [
@@ -2785,6 +2802,8 @@
       },
       "coverage": {
         "covered": 12,
+        "untested": 0,
+        "cantTell": 0,
         "testCaseTotal": 12
       },
       "testCaseResults": [
@@ -2990,6 +3009,8 @@
       },
       "coverage": {
         "covered": 18,
+        "untested": 0,
+        "cantTell": 0,
         "testCaseTotal": 18
       },
       "testCaseResults": [
@@ -3392,6 +3413,8 @@
       },
       "coverage": {
         "covered": 9,
+        "untested": 0,
+        "cantTell": 0,
         "testCaseTotal": 16
       },
       "testCaseResults": [
@@ -3664,6 +3687,8 @@
       },
       "coverage": {
         "covered": 26,
+        "untested": 0,
+        "cantTell": 0,
         "testCaseTotal": 26
       },
       "testCaseResults": [
@@ -4276,6 +4301,8 @@
       },
       "coverage": {
         "covered": 9,
+        "untested": 0,
+        "cantTell": 0,
         "testCaseTotal": 16
       },
       "testCaseResults": [
@@ -4582,6 +4609,8 @@
       },
       "coverage": {
         "covered": 9,
+        "untested": 0,
+        "cantTell": 0,
         "testCaseTotal": 13
       },
       "testCaseResults": [
@@ -7064,6 +7093,8 @@
       },
       "coverage": {
         "covered": 14,
+        "untested": 0,
+        "cantTell": 0,
         "testCaseTotal": 15
       },
       "testCaseResults": [
@@ -7426,6 +7457,8 @@
       },
       "coverage": {
         "covered": 15,
+        "untested": 0,
+        "cantTell": 0,
         "testCaseTotal": 19
       },
       "testCaseResults": [
@@ -9344,6 +9377,8 @@
       },
       "coverage": {
         "covered": 15,
+        "untested": 0,
+        "cantTell": 0,
         "testCaseTotal": 15
       },
       "testCaseResults": [
@@ -9710,7 +9745,9 @@
         ]
       },
       "coverage": {
-        "covered": 10,
+        "covered": 1,
+        "untested": 23,
+        "cantTell": 0,
         "testCaseTotal": 24
       },
       "testCaseResults": [
@@ -14321,6 +14358,8 @@
       },
       "coverage": {
         "covered": 1,
+        "untested": 9,
+        "cantTell": 0,
         "testCaseTotal": 10
       },
       "testCaseResults": [
@@ -16948,11 +16987,14 @@
       ],
       "consistency": null,
       "accessibilityRequirements": {
+        "correct": true,
         "expected": [],
         "reported": []
       },
       "coverage": {
         "covered": 0,
+        "untested": 4,
+        "cantTell": 3,
         "testCaseTotal": 7
       },
       "testCaseResults": [
@@ -17072,7 +17114,7 @@
       ],
       "consistency": null,
       "accessibilityRequirements": {
-        "correct": true,
+        "correct": false,
         "expected": [
           "WCAG2:audio-control"
         ],
@@ -17080,6 +17122,8 @@
       },
       "coverage": {
         "covered": 2,
+        "untested": 0,
+        "cantTell": 6,
         "testCaseTotal": 8
       },
       "testCaseResults": [
@@ -17214,15 +17258,17 @@
       ],
       "consistency": null,
       "accessibilityRequirements": {
-        "correct": true,
+        "correct": false,
         "expected": [
           "WCAG2:audio-only-and-video-only-prerecorded"
         ],
         "reported": []
       },
       "coverage": {
-        "covered": 1,
-        "testCaseTotal": 7
+        "covered": 0,
+        "untested": 4,
+        "cantTell": 4,
+        "testCaseTotal": 8
       },
       "testCaseResults": [
         {
@@ -17256,31 +17302,46 @@
           ]
         },
         {
-          "testcaseId": "58cd3c1ef1ce88b7878c9e11c4f610486faefbf6",
-          "testCaseName": "Failed Example 1",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/e7aa44/58cd3c1ef1ce88b7878c9e11c4f610486faefbf6.html",
+          "testcaseId": "fae177d6e342bce9e0b7ea3dad353d4253bd4e67",
+          "testCaseName": "Passed Example 3",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/e7aa44/fae177d6e342bce9e0b7ea3dad353d4253bd4e67.html",
           "testCaseApproved": false,
-          "expected": "failed",
+          "expected": "passed",
           "procedureResults": [
             {
               "procedureName": "audio-caption",
               "outcomes": [
-                "cantTell"
+                "untested"
               ]
             }
           ]
         },
         {
-          "testcaseId": "6f9ab7a874b2d555e94957abaec5f6e908b6c206",
-          "testCaseName": "Failed Example 2",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/e7aa44/6f9ab7a874b2d555e94957abaec5f6e908b6c206.html",
+          "testcaseId": "97850b2083474a9c7b9585c2a1cb16b85b370032",
+          "testCaseName": "Failed Example 1",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/e7aa44/97850b2083474a9c7b9585c2a1cb16b85b370032.html",
           "testCaseApproved": false,
           "expected": "failed",
           "procedureResults": [
             {
               "procedureName": "audio-caption",
               "outcomes": [
-                "cantTell"
+                "untested"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "ef13bb60f3547081df4e6e0e668ef5497644a734",
+          "testCaseName": "Failed Example 2",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/e7aa44/ef13bb60f3547081df4e6e0e668ef5497644a734.html",
+          "testCaseApproved": false,
+          "expected": "failed",
+          "procedureResults": [
+            {
+              "procedureName": "audio-caption",
+              "outcomes": [
+                "untested"
               ]
             }
           ]
@@ -17316,16 +17377,16 @@
           ]
         },
         {
-          "testcaseId": "39721898dc02683e926a5cfa21afea1bcf477219",
+          "testcaseId": "7162304a7c27feed90f68fdf4587c94cb47dd300",
           "testCaseName": "Inapplicable Example 3",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/e7aa44/39721898dc02683e926a5cfa21afea1bcf477219.html",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/e7aa44/7162304a7c27feed90f68fdf4587c94cb47dd300.html",
           "testCaseApproved": false,
           "expected": "inapplicable",
           "procedureResults": [
             {
               "procedureName": "audio-caption",
               "outcomes": [
-                "inapplicable"
+                "untested"
               ]
             }
           ]
@@ -17341,11 +17402,14 @@
       ],
       "consistency": null,
       "accessibilityRequirements": {
+        "correct": true,
         "expected": [],
         "reported": []
       },
       "coverage": {
         "covered": 0,
+        "untested": 8,
+        "cantTell": 3,
         "testCaseTotal": 11
       },
       "testCaseResults": [
@@ -17525,11 +17589,14 @@
       ],
       "consistency": null,
       "accessibilityRequirements": {
+        "correct": true,
         "expected": [],
         "reported": []
       },
       "coverage": {
         "covered": 2,
+        "untested": 1,
+        "cantTell": 4,
         "testCaseTotal": 7
       },
       "testCaseResults": [
@@ -17649,11 +17716,14 @@
       ],
       "consistency": null,
       "accessibilityRequirements": {
+        "correct": true,
         "expected": [],
         "reported": []
       },
       "coverage": {
         "covered": 2,
+        "untested": 6,
+        "cantTell": 3,
         "testCaseTotal": 11
       },
       "testCaseResults": [
@@ -17842,6 +17912,8 @@
       },
       "coverage": {
         "covered": 10,
+        "untested": 0,
+        "cantTell": 0,
         "testCaseTotal": 11
       },
       "testCaseResults": [
@@ -18087,13 +18159,14 @@
       ],
       "consistency": "minimal",
       "accessibilityRequirements": {
+        "correct": true,
         "expected": [],
         "reported": []
       },
       "coverage": {
         "covered": 1,
-        "cantTell": 1,
         "untested": 6,
+        "cantTell": 1,
         "testCaseTotal": 8
       },
       "testCaseResults": [
@@ -18236,8 +18309,8 @@
       },
       "coverage": {
         "covered": 10,
-        "cantTell": 5,
         "untested": 0,
+        "cantTell": 5,
         "testCaseTotal": 15
       },
       "testCaseResults": [
@@ -18501,8 +18574,8 @@
       },
       "coverage": {
         "covered": 9,
-        "cantTell": 1,
         "untested": 0,
+        "cantTell": 1,
         "testCaseTotal": 10
       },
       "testCaseResults": [
@@ -18687,11 +18760,14 @@
       ],
       "consistency": null,
       "accessibilityRequirements": {
+        "correct": true,
         "expected": [],
         "reported": []
       },
       "coverage": {
         "covered": 1,
+        "untested": 13,
+        "cantTell": 0,
         "testCaseTotal": 14
       },
       "testCaseResults": [
@@ -19086,11 +19162,14 @@
       ],
       "consistency": null,
       "accessibilityRequirements": {
+        "correct": true,
         "expected": [],
         "reported": []
       },
       "coverage": {
         "covered": 1,
+        "untested": 11,
+        "cantTell": 0,
         "testCaseTotal": 12
       },
       "testCaseResults": [
@@ -19431,11 +19510,14 @@
       ],
       "consistency": null,
       "accessibilityRequirements": {
+        "correct": true,
         "expected": [],
         "reported": []
       },
       "coverage": {
         "covered": 1,
+        "untested": 7,
+        "cantTell": 0,
         "testCaseTotal": 8
       },
       "testCaseResults": [
@@ -19676,6 +19758,8 @@
       },
       "coverage": {
         "covered": 9,
+        "untested": 0,
+        "cantTell": 0,
         "testCaseTotal": 17
       },
       "testCaseResults": [
@@ -19963,6 +20047,8 @@
       },
       "coverage": {
         "covered": 10,
+        "untested": 0,
+        "cantTell": 0,
         "testCaseTotal": 10
       },
       "testCaseResults": [
@@ -20194,6 +20280,8 @@
       },
       "coverage": {
         "covered": 7,
+        "untested": 0,
+        "cantTell": 0,
         "testCaseTotal": 15
       },
       "testCaseResults": [
@@ -21705,6 +21793,8 @@
       },
       "coverage": {
         "covered": 6,
+        "untested": 0,
+        "cantTell": 0,
         "testCaseTotal": 15
       },
       "testCaseResults": [
@@ -22144,6 +22234,8 @@
       },
       "coverage": {
         "covered": 4,
+        "untested": 0,
+        "cantTell": 0,
         "testCaseTotal": 6
       },
       "testCaseResults": [
@@ -22258,6 +22350,8 @@
       },
       "coverage": {
         "covered": 10,
+        "untested": 0,
+        "cantTell": 0,
         "testCaseTotal": 10
       },
       "testCaseResults": [
@@ -22452,6 +22546,8 @@
       },
       "coverage": {
         "covered": 17,
+        "untested": 0,
+        "cantTell": 0,
         "testCaseTotal": 23
       },
       "testCaseResults": [
@@ -26732,6 +26828,8 @@
       },
       "coverage": {
         "covered": 8,
+        "untested": 0,
+        "cantTell": 0,
         "testCaseTotal": 10
       },
       "testCaseResults": [
@@ -28280,6 +28378,8 @@
       },
       "coverage": {
         "covered": 5,
+        "untested": 0,
+        "cantTell": 0,
         "testCaseTotal": 6
       },
       "testCaseResults": [
@@ -28471,6 +28571,8 @@
       },
       "coverage": {
         "covered": 13,
+        "untested": 0,
+        "cantTell": 0,
         "testCaseTotal": 16
       },
       "testCaseResults": [
@@ -29428,6 +29530,8 @@
       },
       "coverage": {
         "covered": 10,
+        "untested": 0,
+        "cantTell": 0,
         "testCaseTotal": 15
       },
       "testCaseResults": [
@@ -30321,6 +30425,8 @@
       },
       "coverage": {
         "covered": 15,
+        "untested": 0,
+        "cantTell": 0,
         "testCaseTotal": 20
       },
       "testCaseResults": [
@@ -31510,6 +31616,8 @@
       },
       "coverage": {
         "covered": 11,
+        "untested": 0,
+        "cantTell": 0,
         "testCaseTotal": 21
       },
       "testCaseResults": [
@@ -31852,6 +31960,8 @@
       },
       "coverage": {
         "covered": 7,
+        "untested": 0,
+        "cantTell": 0,
         "testCaseTotal": 12
       },
       "testCaseResults": [
@@ -32219,6 +32329,8 @@
       },
       "coverage": {
         "covered": 12,
+        "untested": 0,
+        "cantTell": 0,
         "testCaseTotal": 18
       },
       "testCaseResults": [
@@ -32757,8 +32869,8 @@
       },
       "coverage": {
         "covered": 10,
-        "cantTell": 11,
         "untested": 0,
+        "cantTell": 11,
         "testCaseTotal": 21
       },
       "testCaseResults": [
@@ -33099,8 +33211,8 @@
       },
       "coverage": {
         "covered": 7,
-        "cantTell": 10,
         "untested": 0,
+        "cantTell": 10,
         "testCaseTotal": 17
       },
       "testCaseResults": [
@@ -33372,7 +33484,7 @@
       ],
       "consistency": "complete",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:name-role-value"
         ],
@@ -33382,6 +33494,8 @@
       },
       "coverage": {
         "covered": 8,
+        "untested": 0,
+        "cantTell": 0,
         "testCaseTotal": 8
       },
       "testCaseResults": [
@@ -33530,6 +33644,8 @@
       },
       "coverage": {
         "covered": 7,
+        "untested": 5,
+        "cantTell": 0,
         "testCaseTotal": 15
       },
       "testCaseResults": [
@@ -33783,6 +33899,8 @@
       },
       "coverage": {
         "covered": 9,
+        "untested": 0,
+        "cantTell": 0,
         "testCaseTotal": 14
       },
       "testCaseResults": [
@@ -34008,7 +34126,7 @@
       ],
       "consistency": "partial",
       "accessibilityRequirements": {
-        "correct": true,
+        "correct": false,
         "expected": [
           "WCAG2:resize-text"
         ],
@@ -34016,6 +34134,8 @@
       },
       "coverage": {
         "covered": 11,
+        "untested": 0,
+        "cantTell": 0,
         "testCaseTotal": 11
       },
       "testCaseResults": [
@@ -34214,6 +34334,8 @@
       },
       "coverage": {
         "covered": 14,
+        "untested": 0,
+        "cantTell": 0,
         "testCaseTotal": 14
       },
       "testCaseResults": [
@@ -34451,6 +34573,8 @@
       },
       "coverage": {
         "covered": 7,
+        "untested": 0,
+        "cantTell": 0,
         "testCaseTotal": 7
       },
       "testCaseResults": [
@@ -34717,6 +34841,8 @@
       },
       "coverage": {
         "covered": 1,
+        "untested": 9,
+        "cantTell": 0,
         "testCaseTotal": 10
       },
       "testCaseResults": [
@@ -37354,6 +37480,8 @@
       },
       "coverage": {
         "covered": 8,
+        "untested": 0,
+        "cantTell": 0,
         "testCaseTotal": 8
       },
       "testCaseResults": [
@@ -37500,6 +37628,8 @@
       },
       "coverage": {
         "covered": 10,
+        "untested": 0,
+        "cantTell": 0,
         "testCaseTotal": 10
       },
       "testCaseResults": [
@@ -37681,7 +37811,8 @@
       },
       "coverage": {
         "covered": 13,
-        "cantTell": 3,
+        "untested": 0,
+        "cantTell": 2,
         "testCaseTotal": 16
       },
       "testCaseResults": [
@@ -37936,7 +38067,7 @@
       ],
       "consistency": "complete",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:info-and-relationships"
         ],
@@ -37946,6 +38077,8 @@
       },
       "coverage": {
         "covered": 16,
+        "untested": 0,
+        "cantTell": 0,
         "testCaseTotal": 16
       },
       "testCaseResults": [
@@ -38211,6 +38344,7 @@
       },
       "coverage": {
         "covered": 21,
+        "untested": 0,
         "cantTell": 7,
         "testCaseTotal": 28
       },
@@ -38657,6 +38791,7 @@
       },
       "coverage": {
         "covered": 22,
+        "untested": 0,
         "cantTell": 7,
         "testCaseTotal": 29
       },
@@ -39133,6 +39268,8 @@
       },
       "coverage": {
         "covered": 1,
+        "untested": 0,
+        "cantTell": 5,
         "testCaseTotal": 6
       },
       "testCaseResults": [
@@ -39248,6 +39385,8 @@
       },
       "coverage": {
         "covered": 0,
+        "untested": 9,
+        "cantTell": 0,
         "testCaseTotal": 9
       },
       "testCaseResults": [
@@ -39452,11 +39591,14 @@
       ],
       "consistency": null,
       "accessibilityRequirements": {
+        "correct": true,
         "expected": [],
         "reported": []
       },
       "coverage": {
         "covered": 0,
+        "untested": 7,
+        "cantTell": 0,
         "testCaseTotal": 7
       },
       "testCaseResults": [
@@ -39636,11 +39778,14 @@
       ],
       "consistency": null,
       "accessibilityRequirements": {
+        "correct": true,
         "expected": [],
         "reported": []
       },
       "coverage": {
         "covered": 1,
+        "untested": 4,
+        "cantTell": 0,
         "testCaseTotal": 5
       },
       "testCaseResults": [
@@ -39738,7 +39883,8 @@
       },
       "coverage": {
         "covered": 4,
-        "cantTell": 5,
+        "untested": 0,
+        "cantTell": 2,
         "testCaseTotal": 9
       },
       "testCaseResults": [
@@ -39888,11 +40034,14 @@
       ],
       "consistency": null,
       "accessibilityRequirements": {
+        "correct": true,
         "expected": [],
         "reported": []
       },
       "coverage": {
         "covered": 2,
+        "untested": 4,
+        "cantTell": 0,
         "testCaseTotal": 7
       },
       "testCaseResults": [
@@ -40012,11 +40161,14 @@
       ],
       "consistency": null,
       "accessibilityRequirements": {
+        "correct": true,
         "expected": [],
         "reported": []
       },
       "coverage": {
         "covered": 0,
+        "untested": 3,
+        "cantTell": 2,
         "testCaseTotal": 5
       },
       "testCaseResults": [
@@ -40106,11 +40258,14 @@
       ],
       "consistency": null,
       "accessibilityRequirements": {
+        "correct": true,
         "expected": [],
         "reported": []
       },
       "coverage": {
         "covered": 2,
+        "untested": 3,
+        "cantTell": 0,
         "testCaseTotal": 5
       },
       "testCaseResults": [
@@ -40200,11 +40355,14 @@
       ],
       "consistency": null,
       "accessibilityRequirements": {
+        "correct": true,
         "expected": [],
         "reported": []
       },
       "coverage": {
         "covered": 1,
+        "untested": 6,
+        "cantTell": 0,
         "testCaseTotal": 8
       },
       "testCaseResults": [
@@ -40347,6 +40505,8 @@
       },
       "coverage": {
         "covered": 1,
+        "untested": 6,
+        "cantTell": 0,
         "testCaseTotal": 7
       },
       "testCaseResults": [
@@ -40485,6 +40645,7 @@
       },
       "coverage": {
         "covered": 12,
+        "untested": 0,
         "cantTell": 1,
         "testCaseTotal": 13
       },
@@ -40704,6 +40865,8 @@
       },
       "coverage": {
         "covered": 0,
+        "untested": 11,
+        "cantTell": 1,
         "testCaseTotal": 12
       },
       "testCaseResults": [
