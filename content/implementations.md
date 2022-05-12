@@ -6,6 +6,14 @@ permalink: /standards-guidelines/act/implementations/
 ref: /standards-guidelines/act/implementations/
 lang: en
 type_of_guidance: false
+standalone_resource_header:
+  link:
+    ref: /standards-guidelines/act/rules/about/
+    title: About WCAG 2 Test Rules
+standalone_resource_pager:
+  icon: @@@ # this is optional
+  name: All WCAG 2 Test Rules
+  ref: /standards-guidelines/act/rules/
 footer: ""
 github:
   repository: w3c/wcag-act-rules
