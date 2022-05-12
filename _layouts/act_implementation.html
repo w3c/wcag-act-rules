@@ -64,14 +64,12 @@ layout: standalone_resource
   <tr>
     <th>WCAG 2 rules</th>
     <td>{{ implementation.approvedRules.complete }}</td>
-    {%- assign approvedPartial = implementation.approvedRules.partial + implementation.approvedRules.minimal %}
-    <td>{{ approvedPartial }}</td>
+    <td>{{ implementation.approvedRules.partial | plus: implementation.approvedRules.minimal }}</td>
   </tr>
   <tr>
     <th>Proposed rules</th>
     <td>{{ implementation.proposedRules.complete }}</td>
-    {%- assign proposedPartial = implementation.proposedRules.partial + implementation.proposedRules.minimal %}
-    <td>{{ proposedPartial }}</td>
+    <td>{{ implementation.proposedRules.partial | plus: implementation.proposedRules.minimal }}</td>
   </tr>
 </table>
 

@@ -11,7 +11,6 @@ standalone_resource_header:
     ref: /standards-guidelines/act/rules/about/
     title: About WCAG 2 Test Rules
 standalone_resource_pager:
-  icon: @@@ # this is optional
   name: All WCAG 2 Test Rules
   ref: /standards-guidelines/act/rules/
 footer: ""
