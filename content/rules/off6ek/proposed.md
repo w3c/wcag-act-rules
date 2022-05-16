@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> off6ek</p>
-  <p><strong>Date:</strong> Updated 16 March 2022</p>
+  <p><strong>Date:</strong> Updated 16 May 2022</p>
   <p><strong>Authors:</strong> <a href="https://github.com/Jym77">Jean-Yves Moyen</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -19,7 +19,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that the primary language subtag of an element matches its default language
-  last_modified: 16 March 2022
+  last_modified: 16 May 2022
   scs_tested:
     - handle: Language of Parts
       num: 3.1.2
@@ -326,23 +326,7 @@ There is no [descendant of a `body`](#off6ek:in-body) element with a `lang` attr
 
 #### Inapplicable Example 3
 
-<a class="example-link" title="Inapplicable Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/off6ek/4d0b06b614560fa0e230bf2b06f6d3c7667c5147.html">Open in a new tab</a>
-
-This `p` element does not have a [valid language tag](#off6ek:valid-lang).
-
-```html
-<html lang="en">
-	<body>
-		<p lang="français">
-			I love ACT rules!
-		</p>
-	</body>
-</html>
-```
-
-#### Inapplicable Example 4
-
-<a class="example-link" title="Inapplicable Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/off6ek/cc8b4db7f82f4095bc010311b00c73091e427302.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/off6ek/cc8b4db7f82f4095bc010311b00c73091e427302.html">Open in a new tab</a>
 
 The first `p` element is [empty](#off6ek:not-empty) because the only [element inheriting its programmatic language][] is itself, and it has no text node child.
 
@@ -355,9 +339,9 @@ The first `p` element is [empty](#off6ek:not-empty) because the only [element in
 </html>
 ```
 
-#### Inapplicable Example 5
+#### Inapplicable Example 4
 
-<a class="example-link" title="Inapplicable Example 5" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/off6ek/39063a3b4d2872cbadefc9e252d0492ba44ff74f.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/off6ek/39063a3b4d2872cbadefc9e252d0492ba44ff74f.html">Open in a new tab</a>
 
 This `p` element is [empty](#off6ek:not-empty) because it has no content that is either [visible][] or [included in the accessibility tree][].
 
@@ -369,37 +353,9 @@ This `p` element is [empty](#off6ek:not-empty) because it has no content that is
 </html>
 ```
 
-#### Inapplicable Example 6
+#### Inapplicable Example 5
 
-<a class="example-link" title="Inapplicable Example 6" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/off6ek/915cdae554a817caa4792101fde1adf14563227d.html">Open in a new tab</a>
-
-The `lang` [attribute value][] of this `p` element has no [known primary language tag][] because the `eng` [iso 639.2][] three letters code does not exist in the [language subtag registry][].
-
-```html
-<html lang="en">
-	<body>
-		<p lang="eng">I love ACT rules!</p>
-	</body>
-</html>
-```
-
-#### Inapplicable Example 7
-
-<a class="example-link" title="Inapplicable Example 7" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/off6ek/50e733e0c505a556fc53e6265eb5b432823570f7.html">Open in a new tab</a>
-
-The `lang` [attribute value][] of this `p` element has no [known primary language tag][] because the `i-lox` [grandfathered tag][grandfathered tags] does not exist in the [language subtag registry][].
-
-```html
-<html lang="lb">
-	<body>
-		<p lang="i-lux">Lëtzebuerg ass e Land an Europa.</p>
-	</body>
-</html>
-```
-
-#### Inapplicable Example 8
-
-<a class="example-link" title="Inapplicable Example 8" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/off6ek/9fa4aaa2575cccf2f83db23b8a66a584cee96486.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 5" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/off6ek/9fa4aaa2575cccf2f83db23b8a66a584cee96486.html">Open in a new tab</a>
 
 The [text inheriting its programmatic language][] from this `div` element is only [whitespace][].
 

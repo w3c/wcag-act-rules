@@ -3,7 +3,7 @@
   "website": "https://www.w3.org/WAI/standards-guidelines/act/rules/",
   "license": "https://act-rules.github.io/pages/license/",
   "description": "Accessibility conformance testing rules for HTML",
-  "count": 1130,
+  "count": 1127,
   "testcases": [
     {
       "ruleId": "73f2c2",
@@ -10941,32 +10941,8 @@
         }
       },
       "expected": "inapplicable",
-      "testcaseId": "4d0b06b614560fa0e230bf2b06f6d3c7667c5147",
-      "testcaseTitle": "Inapplicable Example 3",
-      "relativePath": "testcases/off6ek/4d0b06b614560fa0e230bf2b06f6d3c7667c5147.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/off6ek/4d0b06b614560fa0e230bf2b06f6d3c7667c5147.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/off6ek/proposed/"
-    },
-    {
-      "ruleId": "off6ek",
-      "ruleName": "HTML element language subtag matches language",
-      "ruleAccessibilityRequirements": {
-        "wcag20:3.1.2": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "satisfied",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:H58": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "satisfied",
-          "inapplicable": "satisfied"
-        }
-      },
-      "expected": "inapplicable",
       "testcaseId": "cc8b4db7f82f4095bc010311b00c73091e427302",
-      "testcaseTitle": "Inapplicable Example 4",
+      "testcaseTitle": "Inapplicable Example 3",
       "relativePath": "testcases/off6ek/cc8b4db7f82f4095bc010311b00c73091e427302.html",
       "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/off6ek/cc8b4db7f82f4095bc010311b00c73091e427302.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/off6ek/proposed/"
@@ -10990,7 +10966,7 @@
       },
       "expected": "inapplicable",
       "testcaseId": "39063a3b4d2872cbadefc9e252d0492ba44ff74f",
-      "testcaseTitle": "Inapplicable Example 5",
+      "testcaseTitle": "Inapplicable Example 4",
       "relativePath": "testcases/off6ek/39063a3b4d2872cbadefc9e252d0492ba44ff74f.html",
       "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/off6ek/39063a3b4d2872cbadefc9e252d0492ba44ff74f.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/off6ek/proposed/"
@@ -11013,56 +10989,8 @@
         }
       },
       "expected": "inapplicable",
-      "testcaseId": "915cdae554a817caa4792101fde1adf14563227d",
-      "testcaseTitle": "Inapplicable Example 6",
-      "relativePath": "testcases/off6ek/915cdae554a817caa4792101fde1adf14563227d.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/off6ek/915cdae554a817caa4792101fde1adf14563227d.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/off6ek/proposed/"
-    },
-    {
-      "ruleId": "off6ek",
-      "ruleName": "HTML element language subtag matches language",
-      "ruleAccessibilityRequirements": {
-        "wcag20:3.1.2": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "satisfied",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:H58": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "satisfied",
-          "inapplicable": "satisfied"
-        }
-      },
-      "expected": "inapplicable",
-      "testcaseId": "50e733e0c505a556fc53e6265eb5b432823570f7",
-      "testcaseTitle": "Inapplicable Example 7",
-      "relativePath": "testcases/off6ek/50e733e0c505a556fc53e6265eb5b432823570f7.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/off6ek/50e733e0c505a556fc53e6265eb5b432823570f7.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/off6ek/proposed/"
-    },
-    {
-      "ruleId": "off6ek",
-      "ruleName": "HTML element language subtag matches language",
-      "ruleAccessibilityRequirements": {
-        "wcag20:3.1.2": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "satisfied",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:H58": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "satisfied",
-          "inapplicable": "satisfied"
-        }
-      },
-      "expected": "inapplicable",
       "testcaseId": "9fa4aaa2575cccf2f83db23b8a66a584cee96486",
-      "testcaseTitle": "Inapplicable Example 8",
+      "testcaseTitle": "Inapplicable Example 5",
       "relativePath": "testcases/off6ek/9fa4aaa2575cccf2f83db23b8a66a584cee96486.html",
       "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/off6ek/9fa4aaa2575cccf2f83db23b8a66a584cee96486.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/off6ek/proposed/"
