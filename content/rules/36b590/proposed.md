@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 36b590</p>
-  <p><strong>Date:</strong> Updated 16 March 2022</p>
+  <p><strong>Date:</strong> Updated 16 May 2022</p>
   <p><strong>Authors:</strong> <a href="https://github.com/carlosapaduarte">Carlos Duarte</a>, <a href="https://github.com/joao-vicente">João Vicente</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -19,7 +19,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that text error messages provided when the user completes a form field with invalid values or using an invalid format, identify the cause of the error or how to fix the error.
-  last_modified: 16 March 2022
+  last_modified: 16 May 2022
   scs_tested:
     - handle: Error Identification
       num: 3.3.1
@@ -137,17 +137,17 @@ This `input` element has a [form field error indicator][] that identifies it (by
 
 #### Passed Example 2
 
-<a class="example-link" title="Passed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/141dfeca5589c882bfe9ddcc1d29ffc62862bb77.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/8b3557dcf5062904594f91d781fde151d9fe3ef3.html">Open in a new tab</a>
 
 This multiple `input` elements share a [form field error indicator][] that identifies the elements unfilled (by referencing their labels), describes the cause of the error and how to resolve it.
 
 ```html
 <form>
-	<h2 id="error">
-		Name and color cannot be left unfilled. Please complete all required fields.
-	</h2>
+	<p id="error"><strong>
+		Name and color cannot be empty. Please complete all required fields.
+	</strong></p>
 	<fieldset>
-		<legend>Your data</legend>
+		<legend>Shipping</legend>
 		<label for="name">Name (required)</label>
 		<input type="text" id="name" required />
 		<br />
@@ -165,15 +165,16 @@ This multiple `input` elements share a [form field error indicator][] that ident
 
 #### Passed Example 3
 
-<a class="example-link" title="Passed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/382dab963e875af745a9c175f0de48659ff40fc6.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/baa48e5f5a149f6d4d8038b693477ec94176d5a0.html">Open in a new tab</a>
 
 This `input` element does not have a [form field error indicator][].
 
 ```html
 <form>
-	<label for="age">Age (years)</label>
-	<input type="number" id="age" />
-	<input type="button" value="Submit" />
+	<label for="filter">Product filter</label>
+	<input type="text" id="filter" />
+	<input type="button" value="filter" />
+	<p>To see all products, leave the field empty.</p>
 </form>
 ```
 
@@ -198,7 +199,7 @@ These multiple `input` elements share a [form field error indicator][] but its m
 
 #### Failed Example 2
 
-<a class="example-link" title="Failed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/0f121af59d2ed6f066d2a41fbcef110c6ff032a7.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/e98a64b41d38cf3d64cdff5cb05e5ea4409d20f4.html">Open in a new tab</a>
 
 This `input` element has a [form field error indicator][] but its message does not describe the cause of the error.
 
@@ -206,7 +207,7 @@ This `input` element has a [form field error indicator][] but its message does n
 <form>
 	<label for="age">Age (years)</label>
 	<input type="number" id="age" />
-	<span id="error">Please enter a correct age.</span><br />
+	<span id="error">Please enter the correct text.</span><br />
 	<input type="button" value="Submit" />
 </form>
 ```
