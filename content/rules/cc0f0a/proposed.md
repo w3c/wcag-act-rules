@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> cc0f0a</p>
-  <p><strong>Date:</strong> Updated 16 March 2022</p>
+  <p><strong>Date:</strong> Updated 16 May 2022</p>
   <p><strong>Authors:</strong> <a href="https://github.com/Jym77">Jean-Yves Moyen</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Previous Authors: <a href="https://github.com/DagfinnRomen">Dagfinn Rømen</a>, <a href="https://github.com/geirsf">Geir Sindre Fossøy</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -19,7 +19,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that labels describe the purpose of form field elements.
-  last_modified: 16 March 2022
+  last_modified: 16 May 2022
   scs_tested:
     - handle: Headings and Labels
       num: 2.4.6
@@ -177,17 +177,17 @@ The `p` element is a [programmatic label][] of the `input` element and describes
 
 #### Passed Example 5
 
-<a class="example-link" title="Passed Example 5" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/cc0f0a/050924a9e06b7a7f4ed6e847949ef1c253721452.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 5" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/cc0f0a/b0b11b83ebfd0d8ce9d2261ad4efe2a738fa670b.html">Open in a new tab</a>
 
 The `label` elements are [programmatic labels][programmatic label] of their respective `input` elements. The `label` elements, are not descriptive enough (because they are repeated over several fields). However, the headings provide a [visual context][] that differentiates the purpose of the otherwise identically named form fields. Within their [visual context][], the `label` elements are descriptive of their respective `input` elements.
 
 ```html
 <html lang="en">
-	<h2>Shipping address</h2>
+	<h2>Shipping</h2>
 	<label>Name<input id="shipping-name" type="text" name="name"/></label>
 	<label>Street<input id="shipping-street" type="text" name="street"/></label>
 
-	<h2>Billing address</h2>
+	<h2>Billing</h2>
 	<label>Name<input id="billing-name" type="text" name="name"/></label>
 	<label>Street<input id="billing-street" type="text" name="street"/></label>
 </html>
@@ -195,13 +195,13 @@ The `label` elements are [programmatic labels][programmatic label] of their resp
 
 #### Passed Example 6
 
-<a class="example-link" title="Passed Example 6" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/cc0f0a/491c4469226eaeca2e70e245564d41e81b7a3b88.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 6" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/cc0f0a/886f79117b8bf284c124c689233842e81b7cf2e9.html">Open in a new tab</a>
 
 Both the `div` and the `span` elements are [programmatic labels][programmatic label] of the `input` element. Each of them, within the [visual context][] formed by the other one, is descriptive.
 
 ```html
 <html lang="en">
-	<div id="shipping">Shipping address</div>
+	<div id="shipping">Shipping</div>
 	<span id="name">Name</span>
 	<input id="shipping-name" type="text" name="name" aria-labelledby="shipping name" />
 </html>
@@ -249,17 +249,17 @@ The `span` element is a [programmatic label][] of the `input` element but does n
 
 #### Failed Example 4
 
-<a class="example-link" title="Failed Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/cc0f0a/f8368dfab7eac249d870ed888c07e0b1b7c84614.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/cc0f0a/fcac2934f1edc6c0503ebb53e3ff9528ce2fb7c7.html">Open in a new tab</a>
 
 The `label` elements are [programmatic labels][programmatic label] of their respective `input` elements. The `label` elements, are not descriptive enough (because they are repeated over several fields). The headings are not [visible][]. Therefore, they do not provide [visual context][].
 
 ```html
 <html lang="en">
-	<h2 style="position: absolute; top: -9999px; left: -9999px;">Shipping address</h2>
+	<h2 style="position: absolute; top: -9999px; left: -9999px;">Shipping</h2>
 	<input aria-label="Name" id="shipping-name" type="text" name="name" />
 	<input aria-label="Street" id="shipping-street" type="text" name="street" />
 
-	<h2 style="position: absolute; top: -9999px; left: -9999px;">Billing address</h2>
+	<h2 style="position: absolute; top: -9999px; left: -9999px;">Billing</h2>
 	<input aria-label="Name" id="billing-name" type="text" name="name" />
 	<input aria-label="Street" id="billing-street" type="text" name="street" />
 </html>
@@ -267,13 +267,13 @@ The `label` elements are [programmatic labels][programmatic label] of their resp
 
 #### Failed Example 5
 
-<a class="example-link" title="Failed Example 5" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/cc0f0a/2993ef023f90439b1a91c8f0151749cf23db4d82.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 5" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/cc0f0a/24375551324ef95b99e7d7d6217e88bb2a1694ae.html">Open in a new tab</a>
 
 Both the `div` and the `span` elements are [programmatic labels][programmatic label] of the `input` element, but only the `div` is [visible][]. It has no [visual context][], and is not descriptive.
 
 ```html
 <html lang="en">
-	<div id="shipping">Shipping address</div>
+	<div id="shipping">Shipping</div>
 	<span id="name" style="display: none">Name</span>
 	<input id="shipping-name" type="text" name="name" aria-labelledby="shipping name" />
 </html>
