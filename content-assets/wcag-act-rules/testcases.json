@@ -3,7 +3,7 @@
   "website": "https://www.w3.org/WAI/standards-guidelines/act/rules/",
   "license": "https://act-rules.github.io/pages/license/",
   "description": "Accessibility conformance testing rules for HTML",
-  "count": 1127,
+  "count": 1129,
   "testcases": [
     {
       "ruleId": "73f2c2",
@@ -17636,10 +17636,10 @@
         }
       },
       "expected": "passed",
-      "testcaseId": "52523d2aedb7ec8ed97788758ab1398557aa301d",
+      "testcaseId": "e0d32d9583b2b545ca76295cff78e016a44854b6",
       "testcaseTitle": "Passed Example 2",
-      "relativePath": "testcases/fd3a94/52523d2aedb7ec8ed97788758ab1398557aa301d.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/52523d2aedb7ec8ed97788758ab1398557aa301d.html",
+      "relativePath": "testcases/fd3a94/e0d32d9583b2b545ca76295cff78e016a44854b6.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/e0d32d9583b2b545ca76295cff78e016a44854b6.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/fd3a94/proposed/"
     },
     {
@@ -17828,10 +17828,10 @@
         }
       },
       "expected": "failed",
-      "testcaseId": "d83d253f08a9a34641765518590dd7e46a53bfc7",
+      "testcaseId": "8d14f906398220f1ba52ef34b7f8e40d654312bd",
       "testcaseTitle": "Failed Example 2",
-      "relativePath": "testcases/fd3a94/d83d253f08a9a34641765518590dd7e46a53bfc7.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/d83d253f08a9a34641765518590dd7e46a53bfc7.html",
+      "relativePath": "testcases/fd3a94/8d14f906398220f1ba52ef34b7f8e40d654312bd.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/8d14f906398220f1ba52ef34b7f8e40d654312bd.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/fd3a94/proposed/"
     },
     {
@@ -18000,6 +18000,54 @@
       "testcaseTitle": "Inapplicable Example 4",
       "relativePath": "testcases/fd3a94/ea07736554f372e47c098f3cb946d0bbbbd22d82.html",
       "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/ea07736554f372e47c098f3cb946d0bbbbd22d82.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/fd3a94/proposed/"
+    },
+    {
+      "ruleId": "fd3a94",
+      "ruleName": "Links with identical accessible names and context serve equivalent purpose",
+      "ruleAccessibilityRequirements": {
+        "wcag20:2.4.4": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:2.4.9": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "inapplicable",
+      "testcaseId": "7d61465599fad14c1a2135a3e1a85209fec9302f",
+      "testcaseTitle": "Inapplicable Example 5",
+      "relativePath": "testcases/fd3a94/7d61465599fad14c1a2135a3e1a85209fec9302f.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/7d61465599fad14c1a2135a3e1a85209fec9302f.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/fd3a94/proposed/"
+    },
+    {
+      "ruleId": "fd3a94",
+      "ruleName": "Links with identical accessible names and context serve equivalent purpose",
+      "ruleAccessibilityRequirements": {
+        "wcag20:2.4.4": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:2.4.9": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "inapplicable",
+      "testcaseId": "58087cbeb108ebf723ffc232c9996123a6eb168b",
+      "testcaseTitle": "Inapplicable Example 6",
+      "relativePath": "testcases/fd3a94/58087cbeb108ebf723ffc232c9996123a6eb168b.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/58087cbeb108ebf723ffc232c9996123a6eb168b.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/fd3a94/proposed/"
     },
     {

@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 5effbb</p>
-  <p><strong>Date:</strong> Updated 16 March 2022</p>
+  <p><strong>Date:</strong> Updated 18 May 2022</p>
   <p><strong>Authors:</strong> <a href="https://github.com/carlosapaduarte">Carlos Duarte</a>, <a href="https://github.com/marietrudelle">Marie Trudelle</a>, <a href="https://github.com/ramitgarg">Ramit Garg</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -19,7 +19,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that the accessible name of a link together with its context describes its purpose.
-  last_modified: 16 March 2022
+  last_modified: 18 May 2022
   scs_tested:
     - handle: Link Purpose (In Context)
       num: 2.4.4
@@ -498,7 +498,7 @@ An _outcome_ is a conclusion that comes from evaluating an ACT Rule on a [test s
 The _programmatically determined context_ of a link (or _programmatically determined link context_) is the set of all elements that are [included in the accessibility tree][], and have one or more of the following relationships to the link:
 
 - being an [ancestor][] of the link in the [flat tree][] with a [semantic role][] of `listitem`; or
-- being the closest [ancestor][] of the link in the [flat tree][] that is a `p` element; or
+- being the closest [ancestor][] of the link in the [flat tree][] that generates a [block container][]; or
 - being the closest [ancestor][] of the link in the [flat tree][] that has a [semantic role][] of `cell` or `gridcell`; or
 - being a header cell [assigned][] to the closest [ancestor][] of the link in the [flat tree][] that has a [semantic role][] of `cell` or `gridcell`; or
 - being referenced by an `aria-describedby` attribute of the link.
@@ -548,14 +548,15 @@ This is the first version of this ACT rule.
 [accessibility support base line]: https://www.w3.org/TR/WCAG-EM/#step1c 'Definition of accessibility support base line'
 [accessible name and description computation]: https://www.w3.org/TR/accname 'Accessible Name and Description Computation'
 [accessible name]: #accessible-name 'Definition of Accessible Name'
-[ancestor]: https://dom.spec.whatwg.org/#concept-tree-ancestor
-[assigned]: https://html.spec.whatwg.org/multipage/tables.html#algorithm-for-assigning-header-cells
+[ancestor]: https://dom.spec.whatwg.org/#concept-tree-ancestor 'DOM, ancestor, 2021/11/29'
+[assigned]: https://html.spec.whatwg.org/multipage/tables.html#algorithm-for-assigning-header-cells 'HTML, algorithm for assigning header cells, 2021/11/29'
+[block container]: https://drafts.csswg.org/css-display/#block-container 'CSS Display Module Level 3, block container, 2022/01/17'
 [computed]: https://www.w3.org/TR/css-cascade/#computed-value 'CSS definition of computed value'
 [doc-biblioref]: https://www.w3.org/TR/dpub-aria-1.0/#doc-biblioref 'DPUB ARIA Definition of doc-biblioref'
 [examples of accessible name]: https://act-rules.github.io/pages/examples/accessible-name/
 [examples of included in the accessibility tree]: https://act-rules.github.io/pages/examples/included-in-the-accessibility-tree/
 [explicit role]: #explicit-role 'Definition of Explicit Role'
-[flat tree]: https://drafts.csswg.org/css-scoping/#flat-tree 'Definition of flat tree'
+[flat tree]: https://drafts.csswg.org/css-scoping/#flat-tree 'CSS Scoping Module Level 1, flat tree, 2021/11/29'
 [focusable]: #focusable 'Definition of Focusable'
 [implicit role]: #implicit-role 'Definition of Implicit Role'
 [included in the accessibility tree]: #included-in-the-accessibility-tree 'Definition of Included in the Accessibility Tree'
