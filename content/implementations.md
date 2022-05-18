@@ -1,7 +1,7 @@
 ---
 doc-note-type: draft
 layout: standalone_resource
-title: "Accessibility Test Tools & Methodologies"
+title: "Accessibility Tool & Methodology Matrix"
 permalink: /standards-guidelines/act/implementations/
 ref: /standards-guidelines/act/implementations/
 lang: en
