@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> ebe86a</p>
-  <p><strong>Date:</strong> Updated 16 March 2022</p>
+  <p><strong>Date:</strong> Updated 18 May 2022</p>
   <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/carlosapaduarte">Carlos Duarte</a>, <a href="https://github.com/DagfinnRomen">Dagfinn Rømen</a>, <a href="https://github.com/geirsf">Geir Sindre Fossøy</a>, <a href="https: //github.com/MaliinO">Malin Øvrebø</a>, <a href="https://github.com/nitedog">Shadi Abou-Zahra</a>, <a href="https://github.com/skotkjerra">Stein Erik Skotkjerra</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -19,14 +19,12 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks if it is possible to use non-standard keyboard navigation to navigate through content where focus is trapped when using standard ways of keyboard navigation.
-  last_modified: 16 March 2022
+  last_modified: 18 May 2022
 ---
 
 ## Applicability
 
 This rule applies to any [HTML or SVG element][] that is [focusable](#focusable) where focus cannot cycle to the browser UI by using [standard keyboard navigation](#standard-keyboard-navigation).
-
-**Note:** This rule only applies to HTML and SVG. Thus, it is a partial check for WCAG 2.0 success criterion 2.1.2, which applies to all content.
 
 ## Expectation 1
 
@@ -78,25 +76,19 @@ The following aspects are required in using this rule.
 
 #### Passed Example 1
 
-<a class="example-link" title="Passed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ebe86a/2e5b21696d8d78553aef73c00c2c4118a123ce53.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ebe86a/ab24c77ed9daefc8fa1650aedf0d1c6438460243.html">Open in a new tab</a>
 
-Keyboard trap with help information in a paragraph before, and where the method advised works.
+These focusable `button` elements have scripts that create a keyboard trap. The document includes help information in a paragraph before the `button` elements and the method advised works to escape the keyboard trap.
 
 ```html
-<script>
-	var trapOn = false
-</script>
+<script src="/test-assets/focusable-no-keyboard-trap/keyboard.js"></script>
 
-<p>Press the M-key to Exit</p>
+<p>Press Ctrl+M to Exit</p>
 <a id="link1" href="#">Link 1</a>
-<button id="btn1" onblur="(function(e){trapOn=true; document.getElementById('btn2').focus();})(event)">
+<button id="btn1" onfocus="trapOn = true" onblur="moveFocusToButton('btn2')" onkeydown="escapeTrapOnCtrlM(event)">
 	Button 1
 </button>
-<button
-	id="btn2"
-	onkeydown="(function(e){ if (e.keyCode === 77){trapOn=false;document.getElementById('link2').focus();}})(event)"
-	onblur="(function(e){ if(trapOn){document.getElementById('btn1').focus();}})(event)"
->
+<button id="btn2" onfocus="trapOn = true" onblur="moveFocusToButton('btn1')" onkeydown="escapeTrapOnCtrlM(event)">
 	Button 2
 </button>
 <a id="link2" href="#">Link 2</a>
@@ -104,25 +96,19 @@ Keyboard trap with help information in a paragraph before, and where the method 
 
 #### Passed Example 2
 
-<a class="example-link" title="Passed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ebe86a/7aa9d83ec176f011c1646a8977070c2b1c5209b6.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ebe86a/e3902f01b8589702925be6d97f9542895ef3c76d.html">Open in a new tab</a>
 
-Keyboard trap with help information within the trap, and where the method advised works.
+These focusable `button` elements have scripts that create a keyboard trap. The document includes help information within the trap and the method advised works to escape the keyboard trap.
 
 ```html
-<script>
-	var trapOn = false
-</script>
+<script src="/test-assets/focusable-no-keyboard-trap/keyboard.js"></script>
 
 <a id="link1" href="#">Link 1</a>
-<button id="btn1" onblur="(function(e){trapOn=true; document.getElementById('btn2').focus();})(event)">
+<button id="btn1" onfocus="trapOn = true" onblur="moveFocusToButton('btn2')" onkeydown="escapeTrapOnCtrlM(event)">
 	Button 1
 </button>
-<p>Press the M-key to Exit</p>
-<button
-	id="btn2"
-	onkeydown="(function(e){ if (e.keyCode === 77){trapOn=false;document.getElementById('link2').focus();}})(event)"
-	onblur="(function(e){ if(trapOn){document.getElementById('btn1').focus();}})(event)"
->
+<p>Press Ctrl+M to Exit</p>
+<button id="btn2" onfocus="trapOn = true" onblur="moveFocusToButton('btn1')" onkeydown="escapeTrapOnCtrlM(event)">
 	Button 2
 </button>
 <a id="link2" href="#">Link 2</a>
@@ -130,27 +116,21 @@ Keyboard trap with help information within the trap, and where the method advise
 
 #### Passed Example 3
 
-<a class="example-link" title="Passed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ebe86a/3432e1dfefcc17bea67a25de3c42a9a4bec73d7c.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ebe86a/b92b5214d2b2214b89fb9812b389536759701790.html">Open in a new tab</a>
 
-Keyboard trap with "help" link that once clicked exposes the instructions.
+These focusable `button` elements have scripts that create a keyboard trap. The document includes help information in a "help" link that once clicked exposes the instructions to escape the keyboard trap.
 
 ```html
-<script>
-	var trapOn = false
+<script src="/test-assets/focusable-no-keyboard-trap/keyboard.js"></script>
 
-	function showHelpText() {
-		document.getElementById('helptext').innerHTML = '<p>Press the M-key to Exit</p>'
-	}
-</script>
-
-<div onkeydown="(function(e){ if (e.keyCode === 77){trapOn=false;document.getElementById('link2').focus();}})(event)">
+<div onkeydown="escapeTrapOnCtrlM(event)">
 	<a id="link1" href="#">Link 1</a>
-	<button id="btn1" onblur="(function(e){trapOn=true; document.getElementById('helpLink').focus();})(event)">
+	<button id="btn1" onfocus="trapOn = true" onblur="moveFocusTo('helpLink')">
 		Button 1
 	</button>
 	<a id="helpLink" href="#" onclick="showHelpText()">How to go the next element</a>
 	<div id="helptext"></div>
-	<button id="btn2" onblur="(function(e){ if(trapOn){document.getElementById('btn1').focus();}})(event)">
+	<button id="btn2" onblur="moveFocusTo('btn1')">
 		Button 2
 	</button>
 </div>
@@ -161,24 +141,18 @@ Keyboard trap with "help" link that once clicked exposes the instructions.
 
 #### Failed Example 1
 
-<a class="example-link" title="Failed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ebe86a/5e4c0baac1de5da1325348d49892a01b92f8fb0c.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ebe86a/7dcc4ae00712889d448ecbcba200e032dca59bf0.html">Open in a new tab</a>
 
-Keyboard trap with no instructions.
+These focusable `button` elements create a keyboard trap with no instructions.
 
 ```html
-<script>
-	var trapOn = false
-</script>
+<script src="/test-assets/focusable-no-keyboard-trap/keyboard.js"></script>
 
 <a id="link1" href="#">Link 1</a>
-<button id="btn1" onblur="(function(e){trapOn=true; document.getElementById('btn2').focus();})(event)">
+<button id="btn1" onfocus="trapOn = true" onblur="moveFocusToButton('btn2')" onkeydown="escapeTrapOnCtrlM(event)">
 	Button 1
 </button>
-<button
-	id="btn2"
-	onkeydown="(function(e){ if (e.keyCode === 77){trapOn=false;document.getElementById('link2').focus();}})(event)"
-	onblur="(function(e){ if(trapOn){document.getElementById('btn1').focus();}})(event)"
->
+<button id="btn2" onfocus="trapOn = true" onblur="moveFocusToButton('btn1')" onkeydown="escapeTrapOnCtrlM(event)">
 	Button 2
 </button>
 <a id="link2" href="#">Link 2</a>
@@ -186,25 +160,19 @@ Keyboard trap with no instructions.
 
 #### Failed Example 2
 
-<a class="example-link" title="Failed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ebe86a/e9885e3c626b0f50853075e86e0b2f82d723bd24.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ebe86a/8fba3918b361f251dab4c19bec8eddc5624218ee.html">Open in a new tab</a>
 
-Keyboard trap with instructions that doesn't give advise on the method for proceeding.
+These focusable `button` elements create a keyboard trap with instructions that don't give advice on the method for proceeding.
 
 ```html
-<script>
-	var trapOn = false
-</script>
+<script src="/test-assets/focusable-no-keyboard-trap/keyboard.js"></script>
 
 <p>Go to the next element</p>
 <a id="link1" href="#">Link 1</a>
-<button id="btn1" onblur="(function(e){trapOn=true; document.getElementById('btn2').focus();})(event)">
+<button id="btn1" onfocus="trapOn = true" onblur="moveFocusToButton('btn2')" onkeydown="escapeTrapOnCtrlM(event)">
 	Button 1
 </button>
-<button
-	id="btn2"
-	onkeydown="(function(e){ if (e.keyCode === 77){trapOn=false;document.getElementById('link2').focus();}})(event)"
-	onblur="(function(e){ if(trapOn){document.getElementById('btn1').focus();}})(event)"
->
+<button id="btn2" onfocus="trapOn = true" onblur="moveFocusToButton('btn1')" onkeydown="escapeTrapOnCtrlM(event)">
 	Button 2
 </button>
 <a id="link2" href="#">Link 2</a>
@@ -212,21 +180,19 @@ Keyboard trap with instructions that doesn't give advise on the method for proce
 
 #### Failed Example 3
 
-<a class="example-link" title="Failed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ebe86a/5cbf445372b50a5ff8e428c6b8b00506b1decddb.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ebe86a/62fd24e73ea55f55ad45de392128a816a6f03526.html">Open in a new tab</a>
 
-Keyboard trap with help text, where the method advised doesn't work.
+These focusable `button` elements create a keyboard trap with help text, where the method advised doesn't work.
 
 ```html
-<script>
-	var trapOn = false
-</script>
+<script src="/test-assets/focusable-no-keyboard-trap/keyboard.js"></script>
 
 <a id="link1" href="#">Link 1</a>
-<button id="btn1" onblur="(function(e){trapOn=true; document.getElementById('btn2').focus();})(event)">
+<button id="btn1" onfocus="trapOn = true" onblur="moveFocusToButton('btn2')">
 	Button 1
 </button>
-<p>Press the M-key to Exit</p>
-<button id="btn2" onblur="(function(e){ if(trapOn){document.getElementById('btn1').focus();}})(event)">
+<p>Press Ctrl+M to Exit</p>
+<button id="btn2" onfocus="trapOn = true" onblur="moveFocusToButton('btn1')">
 	Button 2
 </button>
 <a id="link2" href="#">Link 2</a>
@@ -238,7 +204,7 @@ Keyboard trap with help text, where the method advised doesn't work.
 
 <a class="example-link" title="Inapplicable Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ebe86a/b20beca9dd7d487092cafcabce8c2b194896bc47.html">Open in a new tab</a>
 
-Not a keyboard trap (interactive element).
+This focusable `button` elements do not create a keyboard trap.
 
 ```html
 <a id="link1" href="#">Link 1</a>
