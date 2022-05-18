@@ -48,7 +48,6 @@ defaults:
     values:
       class: tight-page
       layout: act_rule
-      footer: ""
       external_css: /content-assets/wcag-act-rules/act-styles.css
       feedbackmail: wai@w3.org  # NEW: delete this line if it’s an EOWG resource (the default is wai-eo-editors@w3.org)
       footer: >   # Translate words below, including "Date:" and "Editor:" Translate the Working Group name. Leave the Working Group acronym in English. Do *not* change the dates in the footer below.
@@ -66,13 +65,8 @@ defaults:
           title: About WCAG 2 Test Rules
           ref: /standards-guidelines/act/rules/about/
       standalone_resource_pager:
-        name: All Rules
+        name: All Test Rules
         ref: /standards-guidelines/act/rules/
-    standalone_resource_nav_links:
-      - name: All Rules
-        ref: /standards-guidelines/act/rules/
-      - name: Test Tools & Methodologies
-        ref: /standards-guidelines/act/implementations/
 
 plugins:
   - jekyll-seo-tag
