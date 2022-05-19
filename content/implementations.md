@@ -63,17 +63,15 @@ A test tool or methodology is **partially consistent** when it meets some, but n
 
 Some ACT Rules are "proposed". These rules are agreed on by the Accessibility Conformance Testing (ACT) Rules Task Force, and are awaiting implementation and approval by the Accessibility Guidelines Working Group. For details, see [about ACT Rules](../rules/about/).
 
-## Important Disclaimer
-
-W3C does not endorse specific accessibility test tools and methodologies. Inclusion of tools and methodologies in these tables does not indicate endorsement by W3C. Tools and figures are listed for informational purposes only.
-
 ## Add a Tool or Methodology
 
 For information on how to add your accessibility test tool or methodology to the list of ACT implementations, visit the [ACT-Rules community group website](https://act-rules.github.io/pages/implementations/reporting/).
 
 ## Disclaimer & Feedback
 
-The W3C does not endorse any particular accessibility tool or methodology. Information in these pages is derived from data published by the vendors behind these tools and methodologies. Only tools and methodologies for which public data is available can be listed on this page. Tools and methodologies often have test procedures not yet described using ACT Rules. These are not included in the implementation reports.
+W3C does not endorse specific accessibility test tools and methodologies. Inclusion of tools and methodologies in these tables does not indicate endorsement by W3C. Tools and figures are listed for informational purposes only.
+
+Information in these pages is derived from data published by the vendors behind these tools and methodologies. Only tools and methodologies for which public data is available can be listed on this page. Tools and methodologies often have test procedures not yet described using ACT Rules. These are not included in the implementation reports.
 
 The data is taken as-is, and is not verified by the W3C. If there are any questions or concerns about the information on these pages, [open an issue on GitHub](https://github.com/w3c/wcag-act-rules/issues/new) or e-mail [wai@w3.org](mailto:wai@w3.org?subject=[en]%20Accessibility%20Test%20Tools%20&%20Methodologies).
 
