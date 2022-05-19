@@ -18,9 +18,9 @@
     - WAI-ARIA 1.2
   jsonReport: https://raw.githubusercontent.com/dequelabs/act-reports-axe/main/reports/axe-core.json
   description: |
-    ACT rules are tested using a canary version of axe-core, which can be accessed by installing <code>axe-core@next</code> from NPM. 
+    ACT Rules are tested using a canary version of axe-core, which can be accessed by installing <code>axe-core@next</code> from NPM. 
     For these results, all rules including “experimental” rules are enabled. 
-    Checks with “unsupported” in its ID are disabled, which deal with issues of accessibility support issues which ACT rules do not account for, often by design.
+    Checks with “unsupported” in its ID are disabled, which deal with issues of accessibility support issues which ACT Rules do not account for, often by design.
 
 - name: Axe DevTools Pro
   vendor: Deque Systems
@@ -43,7 +43,7 @@
     ACT rule results were generated using the latest `accessibility-checker` 
     from NPM using the [ACT test driver](https://github.com/IBMa/equal-access/tree/master/accessibility-checker/test-act).
     Results were created using the `preview` archive and the `IBM_Accessibility` policy.
-    Mappings from ACT rules to Accessibility Checker rule ids and reason codes can be 
+    Mappings from ACT Rules to Accessibility Checker rule ids and reason codes can be 
     found in [`act_aligned.json`](https://github.com/IBMa/equal-access/blob/master/accessibility-checker/test-act/act_aligned.json) 
     and [`ace_mapping.js`](https://github.com/IBMa/equal-access/blob/master/accessibility-checker/test-act/ace_mapping.js). 
     Results indicate the rule ids and reason codes related to the ACT rule are  generated in the following format: 

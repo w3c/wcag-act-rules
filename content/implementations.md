@@ -20,7 +20,7 @@ github:
 </section>
 
 {::nomarkdown} {% include box.html type="start" title="Summary" %} {:/}
-The tables on these pages show how many ACT Rules different accessibility test tools and methodologies have consistently implemented. Each implementation links to a report with more details on how rules are implemented.
+The tables on these pages show how many ACT Rules different accessibility test tools and methodologies have consistently implemented. Each implementation links to a report with more details on how rules are implemented. For understanding consistency, see [understanding ACT consistency](#understandingactconsistency).
 {::nomarkdown} {% include box.html type="end" %} {:/}
 
 ## Test Methodologies
@@ -41,7 +41,7 @@ See [understanding ACT consistency](#understandingactconsistency).
 
 ## Automated Test Tools
 
-Tools that fully automatically test accessibility standards.
+Automated tools test accessibility standards fully automatically.
 See [understanding ACT consistency](#understandingactconsistency).
 
 {% assign automatedTools = implementations | where: "type", "Automated tool" %}
@@ -61,7 +61,11 @@ Automated implementations may report a "cannot tell" on some, but not all exampl
 
 A test tool or methodology is **partially consistent** when it meets some, but not all requirements. A partially consistent implementation can not include false positives; i.e. it failing any passed or inapplicable examples.
 
-Some ACT rules are "proposed". These rules are agreed on by the ACT Rules Task Force, and are awaiting implementation and approval by the Accessibility Guidelines Working Group. For details, see [about ACT Rules](../rules/about/).
+Some ACT Rules are "proposed". These rules are agreed on by the Accessibility Conformance Testing (ACT) Rules Task Force, and are awaiting implementation and approval by the Accessibility Guidelines Working Group. For details, see [about ACT Rules](../rules/about/).
+
+## Important Disclaimer
+
+W3C does not endorse specific accessibility test tools and methodologies. Inclusion of tools and methodologies in these tables does not indicate endorsement by W3C. Tools and figures are listed for informational purposes only.
 
 ## Add a Tool or Methodology
 
