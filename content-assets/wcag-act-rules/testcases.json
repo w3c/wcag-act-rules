@@ -20114,8 +20114,26 @@
         }
       },
       "expected": "failed",
-      "testcaseId": "8bd420282f8209ce236004c61bc4bbd728afceb7",
+      "testcaseId": "4147da2dd50e2326a7985207296cfcd0ba57a1ee",
       "testcaseTitle": "Failed Example 1",
+      "relativePath": "testcases/8fc3b6/4147da2dd50e2326a7985207296cfcd0ba57a1ee.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/4147da2dd50e2326a7985207296cfcd0ba57a1ee.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/8fc3b6/proposed/"
+    },
+    {
+      "ruleId": "8fc3b6",
+      "ruleName": "Object element rendering non-text content has non-empty accessible name",
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.1.1": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "8bd420282f8209ce236004c61bc4bbd728afceb7",
+      "testcaseTitle": "Failed Example 2",
       "relativePath": "testcases/8fc3b6/8bd420282f8209ce236004c61bc4bbd728afceb7.html",
       "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/8bd420282f8209ce236004c61bc4bbd728afceb7.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/8fc3b6/proposed/"
@@ -20133,7 +20151,7 @@
       },
       "expected": "failed",
       "testcaseId": "0f4a37cd30bd688d1a8ebbb915b2c70a4bf0272c",
-      "testcaseTitle": "Failed Example 2",
+      "testcaseTitle": "Failed Example 3",
       "relativePath": "testcases/8fc3b6/0f4a37cd30bd688d1a8ebbb915b2c70a4bf0272c.html",
       "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/0f4a37cd30bd688d1a8ebbb915b2c70a4bf0272c.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/8fc3b6/proposed/"
@@ -20151,27 +20169,9 @@
       },
       "expected": "failed",
       "testcaseId": "dcb42362e4cd8108444dd64c8538ef0523de0aa7",
-      "testcaseTitle": "Failed Example 3",
+      "testcaseTitle": "Failed Example 4",
       "relativePath": "testcases/8fc3b6/dcb42362e4cd8108444dd64c8538ef0523de0aa7.html",
       "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/dcb42362e4cd8108444dd64c8538ef0523de0aa7.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/8fc3b6/proposed/"
-    },
-    {
-      "ruleId": "8fc3b6",
-      "ruleName": "Object element rendering non-text content has non-empty accessible name",
-      "ruleAccessibilityRequirements": {
-        "wcag20:1.1.1": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "failed",
-      "testcaseId": "4147da2dd50e2326a7985207296cfcd0ba57a1ee",
-      "testcaseTitle": "Failed Example 4",
-      "relativePath": "testcases/8fc3b6/4147da2dd50e2326a7985207296cfcd0ba57a1ee.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/4147da2dd50e2326a7985207296cfcd0ba57a1ee.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/8fc3b6/proposed/"
     },
     {
