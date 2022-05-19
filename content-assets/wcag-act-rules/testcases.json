@@ -3,7 +3,7 @@
   "website": "https://www.w3.org/WAI/standards-guidelines/act/rules/",
   "license": "https://act-rules.github.io/pages/license/",
   "description": "Accessibility conformance testing rules for HTML",
-  "count": 1129,
+  "count": 1128,
   "testcases": [
     {
       "ruleId": "73f2c2",
@@ -9435,54 +9435,6 @@
       "testcaseTitle": "Passed Example 12",
       "relativePath": "testcases/cf77f2/ac55a162907e372577bb09a3fbebf252aea90e64.html",
       "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cf77f2/ac55a162907e372577bb09a3fbebf252aea90e64.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/cf77f2/proposed/"
-    },
-    {
-      "ruleId": "cf77f2",
-      "ruleName": "Bypass Blocks of Repeated Content",
-      "ruleAccessibilityRequirements": {
-        "wcag20:2.4.1": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:G1": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:G123": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:G124": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:H69": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:SCR28": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "36f679b6844299beda3f720e0d94cabdcfa122ba",
-      "testcaseTitle": "Passed Example 13",
-      "relativePath": "testcases/cf77f2/36f679b6844299beda3f720e0d94cabdcfa122ba.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cf77f2/36f679b6844299beda3f720e0d94cabdcfa122ba.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/cf77f2/proposed/"
     },
     {
