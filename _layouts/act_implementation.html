@@ -1,0 +1,249 @@
+---
+layout: standalone_resource
+---
+
+{%- assign implementations = site.data.wcag-act-rules.implementations %}
+{%- assign requirements = site.data.wcag-act-rules.requirements %}
+{%- assign implementation = implementations[page.implementation_key] %}
+{%- assign implementationInfo = site.data.wcag-act-rules.act-implementations | where: "uniqueKey", page.implementation_key | first %}
+
+<section class="doc-note-box act-sticky">
+  <p>This page is <strong>under development</strong> and has not been approved by the working group.</p>
+</section>
+
+<aside class="box"> 
+  <header class="box-h box-h-icon"> 
+    Implementation Summary 
+  </header>
+  <div class="box-i"><p>
+    {% if implementationInfo.homepage -%}
+      <a href="{{ implementationInfo.homepage }}">
+        {{- implementationInfo.name -}}
+      </a>
+    {%- else %}
+      {{ implementationInfo.name }}
+    {% endif %}
+    {% unless implementation.versionDate %}
+      version {{ implementation.version }} 
+    {% endunless %}
+    is an {{ implementationInfo.type }}
+    {% if implementationInfo.vendorHomepage %}
+      by <a href="{{ implementationInfo.vendorHomepage }}">
+        {{- implementationInfo.vendor -}}
+      </a>.
+    {% else %}
+      by {{ implementation.vendor }}.
+    {% endif %}
+
+    {% if implementation.versionDate %}
+      Version {{ implementation.version }} 
+      was published on {{ implementation.versionDate | date: '%e %B %Y' }}.
+    {% endif %}
+
+    This ACT implementation tests for
+    {% for standard in implementationInfo.standards %}
+      {%- if forloop.first == true -%}
+        {{ standard }}
+      {%- elsif forloop.last == false -%}
+        , {{ standard }}
+      {%- else -%}
+        , and {{ standard }}
+      {%- endif -%}
+    {%- endfor %}.
+    See <a href="../#understandingactconsistency">understanding ACT consistency</a>.
+  </p></div>
+</aside>
+
+<table class="act-rules-summary">
+  <caption>Number of Rules Implemented</caption>
+  <tr>
+    <th></th>
+    <th>Consistent</th>
+    <th>Partially consistent</th>
+  </tr>
+  <tr>
+    <th>WCAG 2 rules</th>
+    <td>{{ implementation.approvedRules.complete }}</td>
+    <td>{{ implementation.approvedRules.partial | plus: implementation.approvedRules.minimal }}</td>
+  </tr>
+  <tr>
+    <th>Proposed rules</th>
+    <td>{{ implementation.proposedRules.complete }}</td>
+    <td>{{ implementation.proposedRules.partial | plus: implementation.proposedRules.minimal }}</td>
+  </tr>
+</table>
+
+<h2>Implemented Rules</h2>
+<table class="act-implemented-rules">
+  <thead>
+    <tr>
+      <th>Rule Name</th>
+      <th>Type</th>
+      <th>Consistency</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for ruleMapping in implementation.actRuleMapping  %}
+    {% if ruleMapping.consistency != null %}
+      <tr>
+        <td><a href="#breakdown-{{ ruleMapping.ruleId }}">
+          {{ ruleMapping.ruleName | remove: '`' }}
+        </a></td>
+        <td>{% if ruleMapping.ruleApproved %}
+          WCAG 2 Rule {% else %} Proposed Rule
+        {% endif %}</td>
+        <td>{% if ruleMapping.consistency == 'complete' %}
+          Consistent {% else %} Partial
+        {% endif %}</td>
+      </tr>
+    {% endif %}
+    {% endfor %}
+  </tbody>
+</table>
+
+<h2>About {{ implementationInfo.name }} Results</h2>
+
+{% if implementationInfo.description -%}
+  <p>{{ implementationInfo.description }}</p>
+{%- endif %}
+
+<p>
+  Results in this page are taken from a public
+  <a href="{{ implementationInfo.jsonReport }}">test report</a>
+  published by {{ implementationInfo.vendor }}.
+  Data is published using the 
+  <a href="https://act-rules.github.io/pages/implementations/earl-reports/"
+  >EARL+JSON-LD data format</a>.
+</p>
+
+<h2>Implementation Details</h2>
+
+{% for ruleMapping in implementation.actRuleMapping %}
+{%- if ruleMapping.consistency != null %}
+{%- assign coverage = ruleMapping.coverage %}
+
+<h3 id="breakdown-{{ ruleMapping.ruleId }}">{{ ruleMapping.ruleName | remove: '`' }}</h3>
+<p>
+  This rule is implemented by {{ implementation.name }} using the
+  {% for procedure in ruleMapping.procedureNames %}
+    {%- if forloop.first == true -%}
+      <code>{{ procedure }}</code>
+    {%- elsif forloop.last == false -%}
+      , <code>{{ procedure }}</code>
+    {%- else -%}
+      , and <code>{{ procedure }}</code>
+    {%- endif -%}
+  {% endfor %} procedure{% if ruleMapping.procedureNames.size > 1 %}s{% endif %}.
+  The implementation is {% if ruleMapping.consistency == 'complete' %}
+    fully {% else %} partially 
+  {% endif %} consistent with the
+  <a href="{{ '/standards-guidelines/act/rules/' | append: ruleMapping.ruleId | relative_url }}">
+    {{- ruleMapping.ruleName | remove: '`' -}}
+  </a>
+  {% if ruleMapping.ruleApproved -%}
+    WCAG 2 rule. {% else %} proposed rule.
+  {%- endif %}
+
+  {%- if coverage.covered == coverage.testCaseTotal %}
+    It covers all {{ coverage.testCaseTotal }} examples. 
+  {%- else %}
+    It covers {{ coverage.covered }} of the {{ coverage.testCaseTotal }} examples. 
+  {%- endif %}
+  {%- if coverage.cantTell > 0 %}
+    On {{ coverage.cantTell }} example{% if coverage.cantTell > 1 %}s{%endif%}
+    the implementation cannot tell the outcome. This is often because of technical 
+    limitations in tools.
+  {% endif %}
+  {% if coverage.untested > 0 %}
+    For {{ coverage.untested }} example{% if coverage.untested > 1 %}s{%endif%}
+    no results were reported. This can happen when examples are newer then the
+    test results.
+  {% endif %}
+  {% if ruleMapping.accessibilityRequirements.correct == false %}
+    The implementation reports different success criteria as failed from what is expected by this rule.
+  {% elsif ruleMapping.accessibilityRequirements.reported.size > 0 %}
+    The implementation correctly reports which success criteria are failed by this rule.
+  {% else %}
+    The implementation correctly reports no success criteria are failed by this rule.
+  {% endif %}
+  See <a href="../#understandingactconsistency">understanding ACT consistency</a>.
+</p>
+
+{% if ruleMapping.accessibilityRequirements %}
+<table class="act-requirements">
+  <caption>Success Criteria</caption>
+  <tr> <th>Expected</th> <th>Reported</th></tr>
+  <tr>
+    <td>
+      {% if ruleMapping.accessibilityRequirements.expected.size > 0 %}
+        <ul>{% for requirementKey in ruleMapping.accessibilityRequirements.expected %}
+          <li>
+            {{ requirements[requirementKey].num }}
+            {{ requirements[requirementKey].handle }}
+          </li>
+        {% endfor %}</ul>
+      {% else %} None {% endif %}
+    </td>
+
+    <td>
+      {% if ruleMapping.accessibilityRequirements.reported.size > 0 %}
+        <ul>{% for requirementKey in ruleMapping.accessibilityRequirements.reported %}
+          <li>
+            {{ requirements[requirementKey].num }}
+            {{ requirements[requirementKey].handle }}
+          </li>
+        {% endfor %}</ul>
+      {% else %} None {% endif %}
+    </td>
+  </tr>
+</table>
+{% endif %}
+
+<table class="act-example-outcomes">
+  <caption>Test Results</caption>
+  <thead>
+    <tr>
+      <th></th>
+      {%- for procedureName in ruleMapping.procedureNames %}
+      <th>{{ procedureName }}</th>
+      {%- endfor %}
+    </tr>
+  </thead>
+
+  <tbody>
+    {%- for result in ruleMapping.testCaseResults %}
+    <tr>
+      <th>
+        <a href="{{ result.testCaseUrl }}">{{ result.testCaseName }}</a>
+        {%- if ruleMapping.ruleApproved and result.testCaseApproved == false %}
+          <abbr title="Proposed example">*</abbr>
+        {%- endif %}
+      </th>
+      {%- for procedureResult in result.procedureResults %}
+      {%- assign outcome = procedureResult.outcomes | uniq | join: ", " %}
+      <td class="
+        {%- if outcome contains 'cantTell' -%}
+        act-cannot-tell
+        {%- elsif outcome contains 'untested' -%}
+        act-untested
+        {%- elsif result.expected != 'failed' or outcome contains 'failed' -%}
+        {%- else %}
+          act-false-negative
+        {%- endif -%}
+      ">{{ outcome | replace: "cantTell", "cannot tell" }}</td>
+      {%- endfor %}
+    </tr>
+    {%- endfor %}
+  </tbody>
+</table>
+
+{%- assign proposedCases = ruleMapping.testCaseResults | where: "testCaseApproved", false %}
+{%- if ruleMapping.ruleApproved == true and proposedCases.size > 0 %}
+<p>
+  *: These examples are not yet approved for the rule. Results on these outcomes are not
+  taken into consideration determining the consistency and coverage.
+</p>
+{%- endif %}
+
+{%- endif %}
+{%- endfor %}

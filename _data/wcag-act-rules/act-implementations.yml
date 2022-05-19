@@ -1,0 +1,79 @@
+- name: Alfa
+  vendor: Siteimprove
+  uniqueKey: alfa
+  type: Automated tool
+  standards:
+    - WCAG 2.1 all levels
+    - WAI-ARIA 1.2
+  jsonReport: https://raw.githubusercontent.com/act-rules/act-rules-implementation-alfa/master/report.json
+
+- name: Axe-core
+  homepage: https://github.com/dequelabs/axe-core/
+  vendor: Deque Systems
+  vendorHomepage: https://deque.com/
+  uniqueKey: axe-core
+  type: Automated tool
+  standards:
+    - WCAG 2.1 all levels
+    - WAI-ARIA 1.2
+  jsonReport: https://raw.githubusercontent.com/dequelabs/act-reports-axe/main/reports/axe-core.json
+  description: |
+    ACT Rules are tested using a canary version of axe-core, which can be accessed by installing <code>axe-core@next</code> from NPM. 
+    For these results, all rules including “experimental” rules are enabled. 
+    Checks with “unsupported” in its ID are disabled, which deal with issues of accessibility support issues which ACT Rules do not account for, often by design.
+
+- name: Axe DevTools Pro
+  vendor: Deque Systems
+  uniqueKey: axe-devtools-pro
+  type: Semi-automated tool
+  standards:
+    - WCAG 2.1 Level A & AA
+  jsonReport: https://raw.githubusercontent.com/dequelabs/act-reports-axe/main/reports/axe-devtools-igt.json
+
+- name: Equal Access Accessibility Checker
+  hidden: true
+  vendor: IBM Accessibility
+  uniqueKey: equal-access
+  type: Automated tool
+  standards:
+    - WCAG 2.1 all levels
+    - WAI-ARIA 1.2
+  jsonReport: https://raw.githubusercontent.com/IBMa/equal-access/master/accessibility-checker/test-act/earlResult.json
+  description: |
+    ACT rule results were generated using the latest `accessibility-checker` 
+    from NPM using the [ACT test driver](https://github.com/IBMa/equal-access/tree/master/accessibility-checker/test-act).
+    Results were created using the `preview` archive and the `IBM_Accessibility` policy.
+    Mappings from ACT Rules to Accessibility Checker rule ids and reason codes can be 
+    found in [`act_aligned.json`](https://github.com/IBMa/equal-access/blob/master/accessibility-checker/test-act/act_aligned.json) 
+    and [`ace_mapping.js`](https://github.com/IBMa/equal-access/blob/master/accessibility-checker/test-act/ace_mapping.js). 
+    Results indicate the rule ids and reason codes related to the ACT rule are  generated in the following format: 
+
+    `RuleId1:ReasonCode1,ReasonCode2|RuleId2:ReasonCode3,ReasonCode4`.
+
+- name: QualWeb
+  hidden: true
+  vendor: LASIGE, Faculdade de Ciências da Universidade de Lisboa
+  uniqueKey: qualweb
+  type: Automated tool
+  standards:
+    - WCAG 2.1 all levels
+    - WAI-ARIA 1.2
+  jsonReport: https://raw.githubusercontent.com/act-rules/act-rules-implementation-qualweb/master/reports/qualweb-report.json
+
+- name: SortSite
+  hidden: true
+  vendor: PowerMapper
+  uniqueKey: sort-site
+  type: Automated tool
+  standards:
+    - WCAG 2.1 all levels
+    - WAI-ARIA 1.2
+  jsonReport: https://raw.githubusercontent.com/act-rules/act-rules-implementation-sortsite/master/report.json
+
+- name: Trusted Tester
+  vendor: Access Board
+  uniqueKey: trusted-tester
+  type: Test methodology
+  standards:
+    - WCAG 2.0 Level A & AA
+  jsonReport: https://raw.githubusercontent.com/Section508Coordinators/act-tt/main/act-trusted-tester.json
