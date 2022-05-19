@@ -1,7 +1,7 @@
 ---
 doc-note-type: draft
 layout: standalone_resource
-title: "Accessibility Tool & Methodology Matrix"
+title: "Test Tool & Methodology Matrix"
 permalink: /standards-guidelines/act/implementations/
 ref: /standards-guidelines/act/implementations/
 lang: en
@@ -20,13 +20,13 @@ github:
 </section>
 
 {::nomarkdown} {% include box.html type="start" title="Summary" %} {:/}
-The tables on these pages show how many ACT Rules different accessibility test tools and methodologies have consistently implemented. Each implementation links to a report with more details on how rules are implemented. For understanding consistency, see [understanding ACT consistency](#understandingactconsistency).
+The tables on these pages show how many ACT Rules different accessibility test tools and methodologies have consistently implemented. Each implementation links to a report with more details on how rules are implemented. See [understanding ACT consistency](#understandingactconsistency) for details.
 {::nomarkdown} {% include box.html type="end" %} {:/}
 
 ## Test Methodologies
 
 Test methodologies provide step by step instructions on how to test accessibility standards.
-See [understanding ACT consistency](#understandingactconsistency).
+See [understanding ACT consistency](#understandingactconsistency) for details.
 
 {% assign methodologies = implementations | where: "type", "Test methodology" %}
 {% include_relative _implementations-table.html implementations=methodologies %}
@@ -34,7 +34,7 @@ See [understanding ACT consistency](#understandingactconsistency).
 ## Semi-automated Test Tools
 
 Tools that combine user input and automated testing to test accessibility standards.
-See [understanding ACT consistency](#understandingactconsistency).
+See [understanding ACT consistency](#understandingactconsistency) for details.
 
 {% assign semiAutoTools = implementations | where: "type", "Semi-automated tool" %}
 {% include_relative _implementations-table.html implementations=semiAutoTools %}
@@ -42,7 +42,7 @@ See [understanding ACT consistency](#understandingactconsistency).
 ## Automated Test Tools
 
 Automated tools test accessibility standards fully automatically.
-See [understanding ACT consistency](#understandingactconsistency).
+See [understanding ACT consistency](#understandingactconsistency) for details.
 
 {% assign automatedTools = implementations | where: "type", "Automated tool" %}
 {% include_relative _implementations-table.html implementations=automatedTools %}
@@ -69,28 +69,8 @@ For information on how to add your accessibility test tool or methodology to the
 
 ## Disclaimer & Feedback
 
-W3C does not endorse specific accessibility test tools and methodologies. Inclusion of tools and methodologies in these tables does not indicate endorsement by W3C. Tools and figures are listed for informational purposes only.
+Inclusion of tools and methodologies in these tables does not indicate endorsement by W3C. Tools and figures are listed for informational purposes only.
 
 Information in these pages is derived from data published by the vendors behind these tools and methodologies. Only tools and methodologies for which public data is available can be listed on this page. Tools and methodologies often have test procedures not yet described using ACT Rules. These are not included in the implementation reports.
 
 The data is taken as-is, and is not verified by the W3C. If there are any questions or concerns about the information on these pages, [open an issue on GitHub](https://github.com/w3c/wcag-act-rules/issues/new) or e-mail [wai@w3.org](mailto:wai@w3.org?subject=[en]%20Accessibility%20Test%20Tools%20&%20Methodologies).
-
-<script>
-  var actTables = document.querySelectorAll('table.act-implementations')
-  actTables.forEach(function (actTable) {
-    var divs = actTable.querySelectorAll('.act-approved, .act-proposed');
-    var maxValue = 1;
-    divs.forEach(function (div) {
-      maxValue = Math.max(maxValue, parseInt(div.innerText));
-    });
-    divs.forEach(function (div) {
-      var currentValue = parseInt(div.innerText);
-      var percentage = Math.ceil(currentValue / maxValue * 100);
-      if (isNaN(percentage) === false) {
-        div.innerHTML += '<div class="progress-bar">' +
-          '<div style="width:' + percentage + '%" class="progress-bar__progress"></div>' +
-          '</div>'
-      }
-    })
-  });
-</script>
