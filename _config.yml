@@ -61,9 +61,6 @@ defaults:
       standalone_resource_header:
         title: WCAG 2 Test Rules
         subtitle: For developers of evaluation tools and test methodologies
-        link:
-          title: About WCAG 2 Test Rules
-          ref: /standards-guidelines/act/rules/about/
       standalone_resource_nav_links:
         - name: All Rules
           ref: /standards-guidelines/act/rules/
@@ -71,7 +68,6 @@ defaults:
           ref: /standards-guidelines/act/rules/about/
         - name: Test Tools & Methodologies
           ref: /standards-guidelines/act/implementations/
-
 
 plugins:
   - jekyll-seo-tag
