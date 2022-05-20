@@ -58,7 +58,7 @@
   standards:
     - WCAG 2.1 all levels
     - WAI-ARIA 1.2
-  jsonReport: https://raw.githubusercontent.com/act-rules/act-rules-implementation-qualweb/master/reports/qualweb-report.json
+  jsonReport: https://raw.githubusercontent.com/qualweb/ACT-implementation-report/main/qualweb-report.json
 
 - name: SortSite
   hidden: true
