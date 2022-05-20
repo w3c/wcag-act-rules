@@ -60,6 +60,7 @@ defaults:
       sidebar: true
       standalone_resource_header:
         title: WCAG 2 Test Rules
+        title-ref: /standards-guidelines/act/rules/
         subtitle: For developers of evaluation tools and test methodologies
       standalone_resource_nav_links:
         - name: All Rules
