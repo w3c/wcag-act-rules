@@ -64,9 +64,14 @@ defaults:
         link:
           title: About WCAG 2 Test Rules
           ref: /standards-guidelines/act/rules/about/
-      standalone_resource_pager:
-        name: All Test Rules
-        ref: /standards-guidelines/act/rules/
+      standalone_resource_nav_links:
+        - name: All Rules
+          ref: /standards-guidelines/act/rules/
+        - name: About
+          ref: /standards-guidelines/act/rules/about/
+        - name: Tool & Methodology Matrix
+          ref: /standards-guidelines/act/implementations/
+
 
 plugins:
   - jekyll-seo-tag
