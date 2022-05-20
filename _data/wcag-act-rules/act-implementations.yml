@@ -5,7 +5,7 @@
   standards:
     - WCAG 2.1 all levels
     - WAI-ARIA 1.2
-  jsonReport: https://raw.githubusercontent.com/act-rules/act-rules-implementation-alfa/master/report.json
+  jsonReport: https://raw.githubusercontent.com/Siteimprove/alfa-act-r/main/reports/alfa-w3c.json
 
 - name: Axe-core
   homepage: https://github.com/dequelabs/axe-core/
