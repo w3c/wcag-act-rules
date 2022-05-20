@@ -1,3 +1,7 @@
+nav.nav li:last-of-type {
+  display: none;
+}
+
 table.act-implementations {
   width: 100%;
 }
