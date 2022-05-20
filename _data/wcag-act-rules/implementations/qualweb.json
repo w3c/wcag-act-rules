@@ -3,15 +3,15 @@
   "name": "QualWeb",
   "version": "3.0.0",
   "approvedRules": {
-    "complete": 1,
-    "partial": 11,
+    "complete": 10,
+    "partial": 2,
     "minimal": 0,
     "inconsistent": 2,
     "untested": 0
   },
   "proposedRules": {
-    "complete": 3,
-    "partial": 21,
+    "complete": 20,
+    "partial": 4,
     "minimal": 13,
     "inconsistent": 20,
     "untested": 20
@@ -26,11 +26,13 @@
       ],
       "consistency": null,
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:identify-input-purpose"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:identify-input-purpose"
+        ]
       },
       "coverage": {
         "covered": 19,
@@ -348,13 +350,15 @@
       "procedureNames": [
         "Button has accessible name"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:name-role-value"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:name-role-value"
+        ]
       },
       "coverage": {
         "covered": 17,
@@ -627,13 +631,15 @@
       "procedureNames": [
         "Element within body has valid lang attribute"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:language-of-parts"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:language-of-parts"
+        ]
       },
       "coverage": {
         "covered": 18,
@@ -1093,13 +1099,15 @@
       "procedureNames": [
         "Form control has accessible name"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:name-role-value"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:name-role-value"
+        ]
       },
       "coverage": {
         "covered": 17,
@@ -1372,13 +1380,15 @@
       "procedureNames": [
         "HTML has lang attribute"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:language-of-page"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:language-of-page"
+        ]
       },
       "coverage": {
         "covered": 7,
@@ -1503,11 +1513,13 @@
       ],
       "consistency": null,
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:language-of-page"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:language-of-page"
+        ]
       },
       "coverage": {
         "covered": 6,
@@ -1630,13 +1642,15 @@
       "procedureNames": [
         "HTML lang and xml:lang match"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:language-of-page"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:language-of-page"
+        ]
       },
       "coverage": {
         "covered": 12,
@@ -1834,13 +1848,15 @@
       "procedureNames": [
         "HTML Page has a title"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:page-titled"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:page-titled"
+        ]
       },
       "coverage": {
         "covered": 11,
@@ -2023,14 +2039,17 @@
       "procedureNames": [
         "Image button has accessible name"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:non-text-content",
           "WCAG2:name-role-value"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:non-text-content",
+          "WCAG2:name-role-value"
+        ]
       },
       "coverage": {
         "covered": 12,
@@ -2228,13 +2247,15 @@
       "procedureNames": [
         "Image has accessible name"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:non-text-content"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:non-text-content"
+        ]
       },
       "coverage": {
         "covered": 18,
@@ -2786,15 +2807,19 @@
       "procedureNames": [
         "Link has accessible name"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:name-role-value",
           "WCAG2:link-purpose-in-context",
           "WCAG2:link-purpose-link-only"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:link-purpose-in-context",
+          "WCAG2:link-purpose-link-only",
+          "WCAG2:name-role-value"
+        ]
       },
       "coverage": {
         "covered": 26,
@@ -3595,11 +3620,13 @@
       ],
       "consistency": null,
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:name-role-value"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:name-role-value"
+        ]
       },
       "coverage": {
         "covered": 11,
@@ -3812,13 +3839,15 @@
       "procedureNames": [
         "ARIA required context role"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:info-and-relationships"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:info-and-relationships"
+        ]
       },
       "coverage": {
         "covered": 15,
@@ -4063,11 +4092,13 @@
       ],
       "consistency": null,
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:info-and-relationships"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:info-and-relationships"
+        ]
       },
       "coverage": {
         "covered": 18,
@@ -6845,13 +6876,15 @@
       "procedureNames": [
         "Orientation of the page is not restricted using CSS transform property"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:orientation"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:orientation"
+        ]
       },
       "coverage": {
         "covered": 10,
@@ -7622,13 +7655,15 @@
       "procedureNames": [
         "svg element with explicit role has accessible name"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:non-text-content"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:non-text-content"
+        ]
       },
       "coverage": {
         "covered": 10,
@@ -7841,13 +7876,15 @@
       "procedureNames": [
         "Heading has accessible name"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:info-and-relationships"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:info-and-relationships"
+        ]
       },
       "coverage": {
         "covered": 15,
@@ -8108,13 +8145,15 @@
       "procedureNames": [
         "`id` attribute value is unique"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:parsing"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:parsing"
+        ]
       },
       "coverage": {
         "covered": 10,
@@ -8651,13 +8690,15 @@
       "procedureNames": [
         "iframe element has accessible name"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:name-role-value"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:name-role-value"
+        ]
       },
       "coverage": {
         "covered": 10,
@@ -10286,13 +10327,17 @@
       ],
       "consistency": "partial",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:timing-adjustable",
           "WCAG2:interruptions",
           "WCAG2:change-on-request"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:timing-adjustable",
+          "WCAG2:interruptions",
+          "WCAG2:change-on-request"
+        ]
       },
       "coverage": {
         "covered": 13,
@@ -10537,12 +10582,15 @@
       ],
       "consistency": "partial",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:interruptions",
           "WCAG2:change-on-request"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:interruptions",
+          "WCAG2:change-on-request"
+        ]
       },
       "coverage": {
         "covered": 12,
@@ -10770,13 +10818,15 @@
       "procedureNames": [
         "meta viewport does not prevent zoom"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:resize-text"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:resize-text"
+        ]
       },
       "coverage": {
         "covered": 11,
@@ -10968,13 +11018,15 @@
       "procedureNames": [
         "Object element has non-empty accessible name"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:non-text-content"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:non-text-content"
+        ]
       },
       "coverage": {
         "covered": 14,
@@ -11202,13 +11254,15 @@
       "procedureNames": [
         "Element with presentational children has no focusable content"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:name-role-value"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:name-role-value"
+        ]
       },
       "coverage": {
         "covered": 7,
@@ -11340,13 +11394,15 @@
       "procedureNames": [
         "role attribute has valid value"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:info-and-relationships"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:info-and-relationships"
+        ]
       },
       "coverage": {
         "covered": 10,
@@ -11514,13 +11570,15 @@
       "procedureNames": [
         "Element with role attribute has required states and properties"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:name-role-value"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:name-role-value"
+        ]
       },
       "coverage": {
         "covered": 8,
@@ -11658,14 +11716,17 @@
       "procedureNames": [
         "Scrollable element is keyboard accessible"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:keyboard",
           "WCAG2:keyboard-no-exception"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:keyboard",
+          "WCAG2:keyboard-no-exception"
+        ]
       },
       "coverage": {
         "covered": 10,
@@ -11992,13 +12053,15 @@
       "procedureNames": [
         "All table header cells have assigned data cells"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:info-and-relationships"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:info-and-relationships"
+        ]
       },
       "coverage": {
         "covered": 16,
@@ -12256,13 +12319,15 @@
       "procedureNames": [
         "Headers attribute specified on a cell refers to cells in the same table element"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:info-and-relationships"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:info-and-relationships"
+        ]
       },
       "coverage": {
         "covered": 16,
@@ -12520,14 +12585,17 @@
       "procedureNames": [
         "Text has minimum contrast"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:contrast-minimum",
           "WCAG2:contrast-enhanced"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:contrast-minimum",
+          "WCAG2:contrast-enhanced"
+        ]
       },
       "coverage": {
         "covered": 25,
@@ -12965,13 +13033,15 @@
       "procedureNames": [
         "Text has enhanced contrast"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:contrast-enhanced"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:contrast-enhanced"
+        ]
       },
       "coverage": {
         "covered": 27,
@@ -15465,13 +15535,15 @@
       "procedureNames": [
         "Visible label is part of accessible name"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:label-in-name"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:label-in-name"
+        ]
       },
       "coverage": {
         "covered": 13,

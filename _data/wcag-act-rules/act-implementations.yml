@@ -51,7 +51,6 @@
     `RuleId1:ReasonCode1,ReasonCode2|RuleId2:ReasonCode3,ReasonCode4`.
 
 - name: QualWeb
-  hidden: true
   vendor: LASIGE, Faculdade de Ciências da Universidade de Lisboa
   uniqueKey: qualweb
   type: Automated tool
