@@ -12,7 +12,8 @@ github:
 ---
 
 {% for requirement in site.data.wcag-act-rules.requirements %}
-
-## {{ requirement.num }} {{ requirement.handle }}
+{%- assign scKey = requirement[0] %}
+{%- assign criterion = requirement[1] %}
+<h2>{{ criterion.num }} {{ criterion.handle }}</h2>
 
 {% endfor %}
