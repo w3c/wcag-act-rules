@@ -1,6 +1,6 @@
 ---
 layout: standalone_resource
-title: "All WCAG 2 Test Rules"
+title: "All ACT Rules"
 permalink: /standards-guidelines/act/rules/
 ref: /standards-guidelines/act/rules/
 lang: en
@@ -15,33 +15,46 @@ github:
 {% include box.html type="start" title="Summary" class="" %}
 {:/}
 
-WCAG 2 Test Rules describe how to test conformance to Web Content Accessibility Guidelines (WCAG) success criteria. They are primarily for developers of evaluation tools and test methodologies. Learn more from [About WCAG 2 Test Rules](/standards-guidelines/act/rules/about/).
+ACT Rules describe how to test conformance of accessibility standards such as Web Content Accessibility Guidelines (WCAG). They are primarily for accessibility testers, and for developers of test tools and methodologies. Learn more from [About WCAG 2 Test Rules](/standards-guidelines/act/rules/about/).
 
-This page lists Test Rules formally published by the W3C Accessibility Guidelines Working Group (AG WG), and Proposed Test Rules. Additional Rules are in development and will be listed on this page when published.
+This page lists WCAG 2 Rules, and other ACT Rules. WCAG 2 Rules are formally approved by the Accessibility Guidelines Working Group (AG WG). Proposed rules are have not yet gone through the complete approval process.
 
 {::nomarkdown}
 {% include box.html type="end" %}
 {:/}
-## Test Rules
 
-These Test Rules have been approved by the Accessibility Guidelines Working Group. They are fully implemented in at least one evaluation tool or methodology.
+## Rules for WCAG 2
+
+These ACT Rules are used to test conformance issues of Web Content Accessibility Guidelines (WCAG) version 2.0 and 2.1. These rules have been approved by the Accessibility Guidelines Working Group. They are fully implemented in at least one evaluation tool or methodology.
 
 <ul>
-{% for rule in site.data.wcag-act-rules.rules["act-rules"] %}
-  {% if rule.proposed == false %}
+{%- for rule in site.data.wcag-act-rules.rules["act-rules"] %}
+  {%- if rule.proposed == false and rule.successCriteria.size > 0 %}
     <li><a href="{{ rule.permalink | relative_url }}">{{ rule.title }}</a></li>
-  {% endif %}
-{% endfor %}
+  {%- endif %}
+{%- endfor %}
 </ul>
 
-## Proposed Test Rules
+## Proposed Rules for WCAG 2
 
-Proposed test rules will be published when they have at least one implementation and are approved by the AGWG.
+These ACT Rules are used to test conformance issues of Web Content Accessibility Guidelines (WCAG) version 2.0 and 2.1. These rules will be considered for approval once they are fully implemented in at least one evaluation tool or methodology.
 
 <ul>
-{% for rule in site.data.wcag-act-rules.rules["act-rules"] %}
-  {% if rule.proposed == true %}
+{%- for rule in site.data.wcag-act-rules.rules["act-rules"] %}
+  {%- if rule.proposed == true and rule.successCriteria.size > 0 %}
     <li><a href="{{ rule.permalink | relative_url }}">{{ rule.title }}</a></li>
-  {% endif %}
-{% endfor %}
+  {%- endif %}
+{%- endfor %}
+</ul>
+
+## Other Proposed ACT Rules
+
+These ACT Rules are **not** required for conformance to WCAG. They are part of various other accessibility standards and best practices, such as [WAI-ARIA](https://www.w3.org/TR/wai-aria/) and [Techniques for WCAG 2](https://www.w3.org/WAI/WCAG21/Techniques/). These rules will be considered for approval once they are fully implemented in at least one evaluation tool or methodology.
+
+<ul>
+{%- for rule in site.data.wcag-act-rules.rules["act-rules"] %}
+  {%- if rule.successCriteria.size == 0 %}
+    <li><a href="{{ rule.permalink | relative_url }}">{{ rule.title }}</a></li>
+  {%- endif %}
+{%- endfor %}
 </ul>
