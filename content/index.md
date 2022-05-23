@@ -15,9 +15,9 @@ github:
 {% include box.html type="start" title="Summary" class="" %}
 {:/}
 
-ACT Rules describe how to test conformance of accessibility standards such as Web Content Accessibility Guidelines (WCAG). They are primarily for accessibility testers, and for developers of test tools and methodologies. Learn more from [About WCAG 2 Test Rules](/standards-guidelines/act/rules/about/).
+ACT Rules describe how to test conformance of accessibility standards such as Web Content Accessibility Guidelines (WCAG). They are primarily for accessibility testers, and for developers of test tools and methodologies. 
 
-This page lists WCAG 2 Rules, and other ACT Rules. WCAG 2 Rules are formally approved by the Accessibility Guidelines Working Group (AG WG). Proposed rules are have not yet gone through the complete approval process.
+ACT Rules for WCAG 2 are formally approved by the Accessibility Guidelines Working Group (AG WG). Proposed rules are have not yet gone through the complete approval process. Learn more from [About ACT Rules](/standards-guidelines/act/rules/about/).
 
 {::nomarkdown}
 {% include box.html type="end" %}
