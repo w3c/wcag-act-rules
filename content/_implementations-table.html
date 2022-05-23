@@ -8,25 +8,30 @@
     </tr>
   </thead>
   <tbody>
-    {% for implementation in include.implementations %}
-      {% unless implementation.hidden %}
-      {% assign report = siteData.implementations[implementation.uniqueKey] %}
-      <tr>
-        <td>{{ implementation.name }} {{ report.version }}</td>
-        <td><ul>{% for standard in implementation.standards %}
-           <li>{{ standard }}</li>
-        {% endfor %}</ul></td>
-        <td>
-          <div class="act-approved">{{ report.approvedRules.complete }} Rules</div>
-          <div class="act-proposed">{{ report.proposedRules.complete }} Proposed Rules</div>
-        </td>
-        <td><a href="./{{ implementation.uniqueKey }}">
-          <img alt="{{ implementation.name }} Report" src="{{
-            '/content-assets/wcag-act-rules/bar-chart-fill.svg' | relative_url
-          }}" />
-        </a></td>
-      </tr>
-      {% endunless %}
+    {%- for implementation in include.implementations %}
+      {%- assign report = siteData.implementations[implementation.uniqueKey] %}
+      {%- if implementation.hidden != true %}
+        <tr>
+          <td>{{ implementation.name }} {{ report.version }}</td>
+          <td><ul>{% for standard in implementation.standards %}
+            <li>{{ standard }}</li>
+          {% endfor %}</ul></td>
+          <td>
+            <div class="act-approved">{{ report.approvedRules.complete }} Rules</div>
+            <div class="act-proposed">{{ report.proposedRules.complete }} Proposed Rules</div>
+          </td>
+          <td><a href="./{{ implementation.uniqueKey }}">
+            <img alt="{{ implementation.name }} Report" src="{{
+              '/content-assets/wcag-act-rules/bar-chart-fill.svg' | relative_url
+            }}" />
+          </a></td>
+        </tr>
+      {%- else %}
+        <tr>
+          <td>{{ implementation.name }}</td>
+          <td colspan="3">Coming soon</td>
+        </tr>
+      {%- endif %}
     {% endfor %}
   </tbody>
 </table>
