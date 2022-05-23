@@ -1,4 +1,5 @@
 ---
+doc-note-type: draft
 layout: standalone_resource
 title: "All ACT Rules"
 permalink: /standards-guidelines/act/rules/
@@ -11,11 +12,15 @@ github:
   path: content/index.md
 ---
 
+<section class="doc-note-box act-sticky">
+  <p>This page is <strong>under development</strong> and has not been approved by the working group.</p>
+</section>
+
 {::nomarkdown}
 {% include box.html type="start" title="Summary" class="" %}
 {:/}
 
-ACT Rules describe how to test conformance of accessibility standards such as [Web Content Accessibility Guidelines (WCAG) {% include_cached icon.html name="different-view" %}](https://www.w3.org/WAI/standards-guidelines/wcag/) and [WAI-ARIA {% include_cached icon.html name="different-view" %}](https://www.w3.org/WAI/ARIA/). They are primarily for accessibility testers and for creators of test tools and methodologies. ACT Rules for WCAG 2 are formally approved by the Accessibility Guidelines Working Group (AG WG). Proposed rules are have not yet gone through the complete approval process. Learn more from [About ACT Rules](/standards-guidelines/act/rules/about/).
+This page contains list of ACT Rules to test conformance [Web Content Accessibility Guidelines (WCAG) {% include_cached icon.html name="different-view" %}](https://www.w3.org/WAI/standards-guidelines/wcag/), [WAI-ARIA {% include_cached icon.html name="different-view" %}](https://www.w3.org/WAI/ARIA/) and other accessibility practices.  ACT Rules for WCAG 2 are formally approved by the Accessibility Guidelines Working Group. Proposed rules have not yet completed the approval process. Learn more from [About ACT Rules](/standards-guidelines/act/rules/about/).
 
 {::nomarkdown}
 {% include box.html type="end" %}
@@ -23,7 +28,7 @@ ACT Rules describe how to test conformance of accessibility standards such as [W
 
 ## Rules for WCAG 2
 
-These ACT Rules are used to test conformance issues of WCAG 2.0 or 2.1. These rules have been approved by the Accessibility Guidelines Working Group. They are fully implemented in at least one evaluation tool or methodology.
+These ACT Rules are used to test conformance issues of WCAG 2.0 or 2.1. These rules have been approved by the Accessibility Guidelines Working Group. They are fully implemented in at least one [test tool or methodology](../implementations/).
 
 <ul>
 {%- for rule in site.data.wcag-act-rules.rules["act-rules"] %}
@@ -35,7 +40,7 @@ These ACT Rules are used to test conformance issues of WCAG 2.0 or 2.1. These ru
 
 ## Proposed Rules for WCAG 2
 
-These ACT Rules are used to test conformance issues of WCAG 2.0 or 2.1. These rules will be considered for approval once they are fully implemented in at least one evaluation tool or methodology.
+These ACT Rules are used to test conformance issues of WCAG 2.0 or 2.1. These rules will be considered for approval once they are fully implemented in at least one test tool or methodology.
 
 <ul>
 {%- for rule in site.data.wcag-act-rules.rules["act-rules"] %}
@@ -47,7 +52,7 @@ These ACT Rules are used to test conformance issues of WCAG 2.0 or 2.1. These ru
 
 ## Other Proposed ACT Rules
 
-These ACT Rules are **not** required for conformance to WCAG. They are part of various other accessibility standards and best practices, such as [WAI-ARIA](https://www.w3.org/TR/wai-aria/) and [Techniques for WCAG 2](https://www.w3.org/WAI/WCAG21/Techniques/). These rules will be considered for approval once they are fully implemented in at least one evaluation tool or methodology.
+These ACT Rules are **not** required for conformance to WCAG. They are part of various other accessibility standards and best practices, such as [WAI-ARIA {% include_cached icon.html name="different-view" %}](https://www.w3.org/TR/wai-aria/) and [Techniques for WCAG 2 {% include_cached icon.html name="different-view" %}](https://www.w3.org/WAI/WCAG21/Techniques/). These rules will be considered for approval once they are fully implemented in at least one test tool or methodology.
 
 <ul>
 {%- for rule in site.data.wcag-act-rules.rules["act-rules"] %}
