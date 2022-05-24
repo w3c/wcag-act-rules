@@ -54,7 +54,7 @@ Each ACT rule has examples. Vendors of test tools and methodologies run their im
 A test tool or methodology is considered **consistent** when all the following are true:
 
 - All success criteria that should fail are reported as such, and
-- all examples have the expected outcome. (I.e. a failed example should not be passed or vise versa.), and
+- all examples have the expected outcome. (I.e. passed and inapplicable examples should not be failed, and failed examples should not be passed or inapplicable), and
 - there are outcomes for all examples.
 
 Automated implementations may report a "cannot tell" on some, but not all examples and still be considered consistent.
