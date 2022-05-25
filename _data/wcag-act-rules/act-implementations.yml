@@ -60,14 +60,13 @@
   jsonReport: https://raw.githubusercontent.com/qualweb/ACT-implementation-report/main/qualweb-report.json
 
 - name: SortSite
-  hidden: true
   vendor: PowerMapper
   uniqueKey: sort-site
   type: Automated tool
   standards:
     - WCAG 2.1 all levels
     - WAI-ARIA 1.2
-  jsonReport: https://raw.githubusercontent.com/act-rules/act-rules-implementation-sortsite/master/report.json
+  jsonReport: https://qa.powermapper.com/Tests/ACT-R/report.json
 
 - name: Trusted Tester
   vendor: Access Board
