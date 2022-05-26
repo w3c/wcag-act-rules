@@ -20,13 +20,13 @@ github:
 </section>
 
 {::nomarkdown} {% include box.html type="start" title="Summary" %} {:/}
-The tables on these pages show how many ACT Rules different accessibility test tools and methodologies have consistently implemented. Each implementation links to a report with more details on how rules are implemented. See [understanding ACT consistency](#understandingactconsistency) for details.
+The tables on these pages show how many ACT Rules different accessibility test tools and methodologies have consistently implemented. Each implementation links to a report with more details on how rules are implemented. See [understanding ACT consistency](#understanding-act-consistency) for details.
 {::nomarkdown} {% include box.html type="end" %} {:/}
 
 ## Test Methodologies
 
 Test methodologies provide step by step instructions on how to test accessibility standards.
-See [understanding ACT consistency](#understandingactconsistency) for details.
+See [understanding ACT consistency](#understanding-act-consistency) for details.
 
 {% assign methodologies = implementations | where: "type", "Test methodology" %}
 {% include_relative _implementations-table.html implementations=methodologies %}
@@ -34,7 +34,7 @@ See [understanding ACT consistency](#understandingactconsistency) for details.
 ## Semi-automated Test Tools
 
 Tools that combine user input and automated testing to test accessibility standards.
-See [understanding ACT consistency](#understandingactconsistency) for details.
+See [understanding ACT consistency](#understanding-act-consistency) for details.
 
 {% assign semiAutoTools = implementations | where: "type", "Semi-automated tool" %}
 {% include_relative _implementations-table.html implementations=semiAutoTools %}
@@ -42,7 +42,7 @@ See [understanding ACT consistency](#understandingactconsistency) for details.
 ## Automated Test Tools
 
 Automated tools test accessibility standards fully automatically.
-See [understanding ACT consistency](#understandingactconsistency) for details.
+See [understanding ACT consistency](#understanding-act-consistency) for details.
 
 {% assign automatedTools = implementations | where: "type", "Automated tool" %}
 {% include_relative _implementations-table.html implementations=automatedTools %}
