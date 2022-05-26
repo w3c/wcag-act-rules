@@ -23,7 +23,6 @@
     Checks with “unsupported” in its ID are disabled, which deal with issues of accessibility support issues which ACT Rules do not account for, often by design.
 
 - name: Axe DevTools Pro
-  hidden: true
   vendor: Deque Systems
   uniqueKey: axe-devtools-pro
   type: Semi-automated tool
@@ -71,7 +70,6 @@
   jsonReport: https://raw.githubusercontent.com/act-rules/act-rules-implementation-sortsite/master/report.json
 
 - name: Trusted Tester
-  hidden: true
   vendor: Access Board
   uniqueKey: trusted-tester
   type: Test methodology
