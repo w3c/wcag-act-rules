@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> cc0f0a</p>
-  <p><strong>Date:</strong> Updated 16 May 2022</p>
+  <p><strong>Date:</strong> Updated 30 May 2022</p>
   <p><strong>Authors:</strong> <a href="https://github.com/Jym77">Jean-Yves Moyen</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Previous Authors: <a href="https://github.com/DagfinnRomen">Dagfinn Rømen</a>, <a href="https://github.com/geirsf">Geir Sindre Fossøy</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -19,7 +19,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that labels describe the purpose of form field elements.
-  last_modified: 16 May 2022
+  last_modified: 30 May 2022
   scs_tested:
     - handle: Headings and Labels
       num: 2.4.6
@@ -249,33 +249,36 @@ The `span` element is a [programmatic label][] of the `input` element but does n
 
 #### Failed Example 4
 
-<a class="example-link" title="Failed Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/cc0f0a/fcac2934f1edc6c0503ebb53e3ff9528ce2fb7c7.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/cc0f0a/30fc1902581e0b197a544a40375bf7e732492756.html">Open in a new tab</a>
 
-The `label` elements are [programmatic labels][programmatic label] of their respective `input` elements. The `label` elements, are not descriptive enough (because they are repeated over several fields). The headings are not [visible][]. Therefore, they do not provide [visual context][].
+These `label` elements are [programmatic labels][programmatic label] of their respective `input` elements. They are not descriptive enough because they are reused on multiple fields. The headings are not [visible][]. Therefore, they do not provide [visual context][].
 
 ```html
 <html lang="en">
-	<h2 style="position: absolute; top: -9999px; left: -9999px;">Shipping</h2>
-	<input aria-label="Name" id="shipping-name" type="text" name="name" />
-	<input aria-label="Street" id="shipping-street" type="text" name="street" />
-
-	<h2 style="position: absolute; top: -9999px; left: -9999px;">Billing</h2>
-	<input aria-label="Name" id="billing-name" type="text" name="name" />
-	<input aria-label="Street" id="billing-street" type="text" name="street" />
+	<fieldset>
+		<h2 style="position: absolute; top: -9999px; left: -9999px;">Shipping address</h2>
+		<label>Name: <input type="text" name="shipping-name" /></label>
+		<label>Street: <input type="text" name="shipping-street" /></label>
+	</fieldset>
+	<fieldset>		
+		<h2 style="position: absolute; top: -9999px; left: -9999px;">Billing address</h2>
+		<label>Name: <input type="text" name="billing-name" /></label>
+		<label>Street: <input type="text" name="billing-street" /></label>
+	</fieldset>
 </html>
 ```
 
 #### Failed Example 5
 
-<a class="example-link" title="Failed Example 5" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/cc0f0a/24375551324ef95b99e7d7d6217e88bb2a1694ae.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 5" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/cc0f0a/2f1d964151ff5269a6027371956ee3b4a4a23fe7.html">Open in a new tab</a>
 
-Both the `div` and the `span` elements are [programmatic labels][programmatic label] of the `input` element, but only the `div` is [visible][]. It has no [visual context][], and is not descriptive.
+These `button` and `span` elements are both [programmatic labels][programmatic label] of the `input` element, but only the `button` is [visible][]. It has no [visual context][], and is not descriptive.
 
 ```html
 <html lang="en">
-	<div id="shipping">Shipping</div>
-	<span id="name" style="display: none">Name</span>
-	<input id="shipping-name" type="text" name="name" aria-labelledby="shipping name" />
+	<span id="search" style="display: none">Search</span>
+	<input type="text" name="search" aria-labelledby="submit search" />
+	<button id="submit">Go</button>
 </html>
 ```
 
@@ -296,39 +299,27 @@ The `label` element is not a [programmatic label][] of any element.
 
 #### Inapplicable Example 2
 
-<a class="example-link" title="Inapplicable Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/cc0f0a/4941fb38e0b80fcc7b74e114dc57dd799dbdd4af.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/cc0f0a/a83b1482ac89fb3906b839092f6118525d868967.html">Open in a new tab</a>
 
 The `label` element is not [visible][].
 
 ```html
 <html lang="en">
-	<label for="fname" style="display:none;">First name:</label>
+	<label for="fname" style="position: absolute; left: -9999px;">First name:</label>
+	<label aria-hidden="true">First name:</label>
 	<input id="fname" type="text" name="fname" />
 </html>
 ```
 
 #### Inapplicable Example 3
 
-<a class="example-link" title="Inapplicable Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/cc0f0a/80a4987bcfc497e90415cd6618a78842073c5768.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/cc0f0a/4f8c803095390503ea77bc55c4ed926f645271b6.html">Open in a new tab</a>
 
 The `label` is a [visible][] [programmatic label][] of the `input` element. However, the `input` is not [visible][], hence this rule does not apply.
 
 ```html
 <html lang="en">
-	<label>First name: <input style="position: absolute; top: -9999px; left: -9999px;" type="text" name="fname"/></label>
-</html>
-```
-
-#### Inapplicable Example 4
-
-<a class="example-link" title="Inapplicable Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/cc0f0a/83b8c1e9bad05e9f72b0bcdbb60204ad9c5594c3.html">Open in a new tab</a>
-
-The `span` element is not a [programmatic label][] of any element.
-
-```html
-<html lang="en">
-	<span>First name:</span>
-	<input type="text" name="fname" />
+	<label>First name: <input style="position: absolute; top: -9999px; left: -9999px;" disabled role="none" /></label>
 </html>
 ```
 

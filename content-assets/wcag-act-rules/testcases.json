@@ -3,7 +3,7 @@
   "website": "https://www.w3.org/WAI/standards-guidelines/act/rules/",
   "license": "https://act-rules.github.io/pages/license/",
   "description": "Accessibility conformance testing rules for HTML",
-  "count": 1128,
+  "count": 1127,
   "testcases": [
     {
       "ruleId": "73f2c2",
@@ -12044,10 +12044,10 @@
         }
       },
       "expected": "failed",
-      "testcaseId": "fcac2934f1edc6c0503ebb53e3ff9528ce2fb7c7",
+      "testcaseId": "30fc1902581e0b197a544a40375bf7e732492756",
       "testcaseTitle": "Failed Example 4",
-      "relativePath": "testcases/cc0f0a/fcac2934f1edc6c0503ebb53e3ff9528ce2fb7c7.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cc0f0a/fcac2934f1edc6c0503ebb53e3ff9528ce2fb7c7.html",
+      "relativePath": "testcases/cc0f0a/30fc1902581e0b197a544a40375bf7e732492756.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cc0f0a/30fc1902581e0b197a544a40375bf7e732492756.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/cc0f0a/proposed/"
     },
     {
@@ -12068,10 +12068,10 @@
         }
       },
       "expected": "failed",
-      "testcaseId": "24375551324ef95b99e7d7d6217e88bb2a1694ae",
+      "testcaseId": "2f1d964151ff5269a6027371956ee3b4a4a23fe7",
       "testcaseTitle": "Failed Example 5",
-      "relativePath": "testcases/cc0f0a/24375551324ef95b99e7d7d6217e88bb2a1694ae.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cc0f0a/24375551324ef95b99e7d7d6217e88bb2a1694ae.html",
+      "relativePath": "testcases/cc0f0a/2f1d964151ff5269a6027371956ee3b4a4a23fe7.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cc0f0a/2f1d964151ff5269a6027371956ee3b4a4a23fe7.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/cc0f0a/proposed/"
     },
     {
@@ -12116,10 +12116,10 @@
         }
       },
       "expected": "inapplicable",
-      "testcaseId": "4941fb38e0b80fcc7b74e114dc57dd799dbdd4af",
+      "testcaseId": "a83b1482ac89fb3906b839092f6118525d868967",
       "testcaseTitle": "Inapplicable Example 2",
-      "relativePath": "testcases/cc0f0a/4941fb38e0b80fcc7b74e114dc57dd799dbdd4af.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cc0f0a/4941fb38e0b80fcc7b74e114dc57dd799dbdd4af.html",
+      "relativePath": "testcases/cc0f0a/a83b1482ac89fb3906b839092f6118525d868967.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cc0f0a/a83b1482ac89fb3906b839092f6118525d868967.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/cc0f0a/proposed/"
     },
     {
@@ -12140,34 +12140,10 @@
         }
       },
       "expected": "inapplicable",
-      "testcaseId": "80a4987bcfc497e90415cd6618a78842073c5768",
+      "testcaseId": "4f8c803095390503ea77bc55c4ed926f645271b6",
       "testcaseTitle": "Inapplicable Example 3",
-      "relativePath": "testcases/cc0f0a/80a4987bcfc497e90415cd6618a78842073c5768.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cc0f0a/80a4987bcfc497e90415cd6618a78842073c5768.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/cc0f0a/proposed/"
-    },
-    {
-      "ruleId": "cc0f0a",
-      "ruleName": "Form field label is descriptive",
-      "ruleAccessibilityRequirements": {
-        "wcag20:2.4.6": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:G131": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "inapplicable",
-      "testcaseId": "83b8c1e9bad05e9f72b0bcdbb60204ad9c5594c3",
-      "testcaseTitle": "Inapplicable Example 4",
-      "relativePath": "testcases/cc0f0a/83b8c1e9bad05e9f72b0bcdbb60204ad9c5594c3.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cc0f0a/83b8c1e9bad05e9f72b0bcdbb60204ad9c5594c3.html",
+      "relativePath": "testcases/cc0f0a/4f8c803095390503ea77bc55c4ed926f645271b6.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cc0f0a/4f8c803095390503ea77bc55c4ed926f645271b6.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/cc0f0a/proposed/"
     },
     {
