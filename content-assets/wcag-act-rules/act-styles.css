@@ -40,8 +40,11 @@ table.act-example-outcomes th:first-child {
 .act-false-negative,
 .act-cannot-tell,
 .act-untested {
-  background: var(--line-grey);
   font-style: italic;
+}
+.act-false-negative,
+.act-untested {
+  background: var(--line-grey);
 }
 
 table.act-implemented-rules td:nth-child(2) {
@@ -59,4 +62,18 @@ table.act-rules-summary {
     box-shadow: 0 -0.25rem 0 0 var(--pure-white);
     z-index: 1;
   }
+}
+
+/* Override WAI default, to avoid captions having the same look as h2 */
+table caption {
+  color: var(--dk-grey);
+  font-size: 1.05rem;
+}
+
+ul.act-requirements-list {
+  padding-inline-start: 15px;
+}
+
+.act-requirements-list > li {
+  list-style: none;
 }
