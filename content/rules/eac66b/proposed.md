@@ -1,5 +1,5 @@
 ---
-title: "video element auditory content has accessible alternative"
+title: "Video element auditory content has accessible alternative"
 permalink: /standards-guidelines/act/rules/eac66b/proposed/
 ref: /standards-guidelines/act/rules/eac66b/proposed/
 lang: en
@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> eac66b</p>
-  <p><strong>Date:</strong> Updated 23 March 2022</p>
+  <p><strong>Date:</strong> Updated 30 May 2022</p>
   <p><strong>Authors:</strong> <a href="https://www.linkedin.com/in/brianbors/">Brian Bors</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
   
@@ -17,11 +17,11 @@ footer: |
 proposed: true
 rule_meta:
   id: eac66b
-  name: "`video` element auditory content has accessible alternative"
+  name: "Video element auditory content has accessible alternative"
   rule_type: composite
   description: |
     This rule checks that `video` elements have an alternative for information conveyed through audio.
-  last_modified: 23 March 2022
+  last_modified: 30 May 2022
   scs_tested:
     - handle: Captions (Prerecorded)
       num: 1.2.2
@@ -114,8 +114,8 @@ There are no major accessibility support issues known for this rule.
 
 Outcomes of the following rules are required as input for this rule.
 
-- [`video` element content is media alternative for text](/standards-guidelines/act/rules/video-as-media-alternative-ab4d13/)
-- [`video` element auditory content has captions](/standards-guidelines/act/rules/video-captions-f51b46/)
+- [Video element content is media alternative for text](/standards-guidelines/act/rules/video-as-media-alternative-ab4d13/)
+- [Video element auditory content has captions](/standards-guidelines/act/rules/video-captions-f51b46/)
 
 ## Test Cases
 

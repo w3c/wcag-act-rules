@@ -1,5 +1,5 @@
 ---
-title: "audio or video avoids automatically playing audio"
+title: "Audio or video element avoids automatically playing audio"
 permalink: /standards-guidelines/act/rules/80f0bf/proposed/
 ref: /standards-guidelines/act/rules/80f0bf/proposed/
 lang: en
@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 80f0bf</p>
-  <p><strong>Date:</strong> Updated 23 March 2022</p>
+  <p><strong>Date:</strong> Updated 30 May 2022</p>
   <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/brynanders">Bryn Anderson</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
   
@@ -17,11 +17,11 @@ footer: |
 proposed: true
 rule_meta:
   id: 80f0bf
-  name: "`audio` or `video` avoids automatically playing audio"
+  name: "Audio or video element avoids automatically playing audio"
   rule_type: composite
   description: |
     This rule checks that audio or video that plays automatically does not have audio that lasts for more than 3 seconds or has an audio control mechanism to stop or mute it.
-  last_modified: 23 March 2022
+  last_modified: 30 May 2022
   scs_tested:
     - handle: Audio Control
       num: 1.4.2
@@ -132,8 +132,8 @@ The [instruments][instrument] used to pass this rule (if any), must meet all lev
 
 Outcomes of the following rules are required as input for this rule.
 
-- [`audio` or `video` that plays automatically has a control mechanism](/standards-guidelines/act/rules/auto-play-audio-has-control-mechanism-4c31df/)
-- [`Audio` or `video` that plays automatically has no audio that lasts more than 3 seconds](/standards-guidelines/act/rules/auto-play-audio-does-not-exceed-3-seconds-aaa1bf/)
+- [Audio or video element that plays automatically has a control mechanism](/standards-guidelines/act/rules/auto-play-audio-has-control-mechanism-4c31df/)
+- [Audio or video element that plays automatically has no audio that lasts more than 3 seconds](/standards-guidelines/act/rules/auto-play-audio-does-not-exceed-3-seconds-aaa1bf/)
 
 ## Test Cases
 

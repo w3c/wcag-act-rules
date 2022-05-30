@@ -1,7 +1,7 @@
 {
   "act-rules": [
     {
-      "title": "autocomplete attribute has valid value",
+      "title": "Autocomplete attribute has valid value",
       "permalink": "/standards-guidelines/act/rules/73f2c2/",
       "successCriteria": [
         "identify-input-purpose"
@@ -145,6 +145,13 @@
       "proposed": false
     },
     {
+      "title": "ARIA attribute is defined in WAI-ARIA",
+      "permalink": "/standards-guidelines/act/rules/5f99a7/proposed/",
+      "successCriteria": [],
+      "wcagTechniques": [],
+      "proposed": true
+    },
+    {
       "title": "ARIA required context role",
       "permalink": "/standards-guidelines/act/rules/ff89c9/proposed/",
       "successCriteria": [
@@ -179,13 +186,6 @@
       "proposed": true
     },
     {
-      "title": "aria-* attribute is defined in WAI-ARIA",
-      "permalink": "/standards-guidelines/act/rules/5f99a7/proposed/",
-      "successCriteria": [],
-      "wcagTechniques": [],
-      "proposed": true
-    },
-    {
       "title": "Attribute is not duplicated",
       "permalink": "/standards-guidelines/act/rules/e6952f/proposed/",
       "successCriteria": [
@@ -208,7 +208,7 @@
       "proposed": true
     },
     {
-      "title": "audio element content has text alternative",
+      "title": "Audio element content has text alternative",
       "permalink": "/standards-guidelines/act/rules/e7aa44/proposed/",
       "successCriteria": [
         "audio-only-and-video-only-prerecorded"
@@ -219,21 +219,21 @@
       "proposed": true
     },
     {
-      "title": "audio element content has transcript",
+      "title": "Audio element content has transcript",
       "permalink": "/standards-guidelines/act/rules/2eb176/proposed/",
       "successCriteria": [],
       "wcagTechniques": [],
       "proposed": true
     },
     {
-      "title": "audio element content is media alternative for text",
+      "title": "Audio element content is media alternative for text",
       "permalink": "/standards-guidelines/act/rules/afb423/proposed/",
       "successCriteria": [],
       "wcagTechniques": [],
       "proposed": true
     },
     {
-      "title": "audio or video avoids automatically playing audio",
+      "title": "Audio or video element avoids automatically playing audio",
       "permalink": "/standards-guidelines/act/rules/80f0bf/proposed/",
       "successCriteria": [
         "audio-control"
@@ -246,7 +246,7 @@
       "proposed": true
     },
     {
-      "title": "audio or video that plays automatically has a control mechanism",
+      "title": "Audio or video element that plays automatically has a control mechanism",
       "permalink": "/standards-guidelines/act/rules/4c31df/proposed/",
       "successCriteria": [],
       "wcagTechniques": [
@@ -255,7 +255,7 @@
       "proposed": true
     },
     {
-      "title": "Audio or video that plays automatically has no audio that lasts more than 3 seconds",
+      "title": "Audio or video element that plays automatically has no audio that lasts more than 3 seconds",
       "permalink": "/standards-guidelines/act/rules/aaa1bf/proposed/",
       "successCriteria": [],
       "wcagTechniques": [
@@ -311,7 +311,7 @@
       "proposed": true
     },
     {
-      "title": "DEPRECATED — video element visual content has description track",
+      "title": "DEPRECATED — Video element visual content has description track",
       "permalink": "/standards-guidelines/act/rules/f196ce/proposed/",
       "successCriteria": [],
       "wcagTechniques": [
@@ -321,7 +321,7 @@
       "proposed": true
     },
     {
-      "title": "DEPRECATED — video element visual-only content has description track",
+      "title": "DEPRECATED — Video element visual-only content has description track",
       "permalink": "/standards-guidelines/act/rules/ac7dc6/proposed/",
       "successCriteria": [],
       "wcagTechniques": [
@@ -458,7 +458,7 @@
       "proposed": true
     },
     {
-      "title": "headers attribute specified on a cell refers to cells in the same table element",
+      "title": "Headers attribute specified on a cell refers to cells in the same table element",
       "permalink": "/standards-guidelines/act/rules/a25f45/proposed/",
       "successCriteria": [
         "info-and-relationships"
@@ -533,7 +533,7 @@
       "proposed": true
     },
     {
-      "title": "id attribute value is unique",
+      "title": "Id attribute value is unique",
       "permalink": "/standards-guidelines/act/rules/3ea0c8/proposed/",
       "successCriteria": [
         "parsing"
@@ -544,7 +544,7 @@
       "proposed": true
     },
     {
-      "title": "iframe element has non-empty accessible name",
+      "title": "Iframe element has non-empty accessible name",
       "permalink": "/standards-guidelines/act/rules/cae760/proposed/",
       "successCriteria": [
         "name-role-value"
@@ -553,7 +553,7 @@
       "proposed": true
     },
     {
-      "title": "iframe elements with identical accessible names have equivalent purpose",
+      "title": "Iframe elements with identical accessible names have equivalent purpose",
       "permalink": "/standards-guidelines/act/rules/4b1c6c/proposed/",
       "successCriteria": [
         "name-role-value"
@@ -562,7 +562,7 @@
       "proposed": true
     },
     {
-      "title": "iframe with negative tabindex has no interactive elements",
+      "title": "Iframe with negative tabindex has no interactive elements",
       "permalink": "/standards-guidelines/act/rules/akn7bn/proposed/",
       "successCriteria": [
         "keyboard"
@@ -650,7 +650,7 @@
       "proposed": true
     },
     {
-      "title": "meta element has no refresh delay",
+      "title": "Meta element has no refresh delay",
       "permalink": "/standards-guidelines/act/rules/bc659a/proposed/",
       "successCriteria": [
         "timing-adjustable",
@@ -664,7 +664,7 @@
       "proposed": true
     },
     {
-      "title": "meta element has no refresh delay (no exception)",
+      "title": "Meta element has no refresh delay (no exception)",
       "permalink": "/standards-guidelines/act/rules/bisz58/proposed/",
       "successCriteria": [
         "interruptions",
@@ -677,7 +677,7 @@
       "proposed": true
     },
     {
-      "title": "meta viewport allows for zoom",
+      "title": "Meta viewport allows for zoom",
       "permalink": "/standards-guidelines/act/rules/b4f0c3/proposed/",
       "successCriteria": [
         "resize-text"
@@ -713,7 +713,7 @@
       "proposed": true
     },
     {
-      "title": "role attribute has valid value",
+      "title": "Role attribute has valid value",
       "permalink": "/standards-guidelines/act/rules/674b10/proposed/",
       "successCriteria": [
         "info-and-relationships"
@@ -737,7 +737,7 @@
       "proposed": true
     },
     {
-      "title": "svg element with explicit role has non-empty accessible name",
+      "title": "SVG element with explicit role has non-empty accessible name",
       "permalink": "/standards-guidelines/act/rules/7d6734/proposed/",
       "successCriteria": [
         "non-text-content"
@@ -786,7 +786,7 @@
       "proposed": true
     },
     {
-      "title": "video element auditory content has accessible alternative",
+      "title": "Video element auditory content has accessible alternative",
       "permalink": "/standards-guidelines/act/rules/eac66b/proposed/",
       "successCriteria": [
         "captions-prerecorded"
@@ -799,7 +799,7 @@
       "proposed": true
     },
     {
-      "title": "video element auditory content has captions",
+      "title": "Video element auditory content has captions",
       "permalink": "/standards-guidelines/act/rules/f51b46/proposed/",
       "successCriteria": [],
       "wcagTechniques": [
@@ -810,14 +810,14 @@
       "proposed": true
     },
     {
-      "title": "video element content is media alternative for text",
+      "title": "Video element content is media alternative for text",
       "permalink": "/standards-guidelines/act/rules/ab4d13/proposed/",
       "successCriteria": [],
       "wcagTechniques": [],
       "proposed": true
     },
     {
-      "title": "video element visual content has accessible alternative",
+      "title": "Video element visual content has accessible alternative",
       "permalink": "/standards-guidelines/act/rules/c5a4ea/proposed/",
       "successCriteria": [
         "audio-description-or-media-alternative-prerecorded",
@@ -833,7 +833,7 @@
       "proposed": true
     },
     {
-      "title": "video element visual content has audio description",
+      "title": "Video element visual content has audio description",
       "permalink": "/standards-guidelines/act/rules/1ea59c/proposed/",
       "successCriteria": [],
       "wcagTechniques": [
@@ -844,7 +844,7 @@
       "proposed": true
     },
     {
-      "title": "video element visual content has strict accessible alternative",
+      "title": "Video element visual content has strict accessible alternative",
       "permalink": "/standards-guidelines/act/rules/1ec09b/proposed/",
       "successCriteria": [
         "audio-description-prerecorded"
@@ -857,7 +857,7 @@
       "proposed": true
     },
     {
-      "title": "video element visual-only content has accessible alternative",
+      "title": "Video element visual-only content has accessible alternative",
       "permalink": "/standards-guidelines/act/rules/c3232f/proposed/",
       "successCriteria": [
         "audio-only-and-video-only-prerecorded"
@@ -869,7 +869,7 @@
       "proposed": true
     },
     {
-      "title": "video element visual-only content has audio track alternative",
+      "title": "Video element visual-only content has audio track alternative",
       "permalink": "/standards-guidelines/act/rules/d7ba54/proposed/",
       "successCriteria": [],
       "wcagTechniques": [
@@ -878,7 +878,7 @@
       "proposed": true
     },
     {
-      "title": "video element visual-only content has transcript",
+      "title": "Video element visual-only content has transcript",
       "permalink": "/standards-guidelines/act/rules/ee13b5/proposed/",
       "successCriteria": [],
       "wcagTechniques": [
@@ -887,7 +887,7 @@
       "proposed": true
     },
     {
-      "title": "video element visual-only content is media alternative for text",
+      "title": "Video element visual-only content is media alternative for text",
       "permalink": "/standards-guidelines/act/rules/fd26cf/proposed/",
       "successCriteria": [],
       "wcagTechniques": [],

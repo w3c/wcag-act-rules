@@ -5301,7 +5301,7 @@
     },
     {
       "ruleId": "5f99a7",
-      "ruleName": "`aria-*` attribute is defined in WAI-ARIA",
+      "ruleName": "ARIA attribute is defined in WAI-ARIA",
       "ruleAccessibilityRequirements": null,
       "expected": "passed",
       "testcaseId": "261dcd3214e87532fc2f9c8db7fdce05de9e07f0",
@@ -5312,7 +5312,7 @@
     },
     {
       "ruleId": "5f99a7",
-      "ruleName": "`aria-*` attribute is defined in WAI-ARIA",
+      "ruleName": "ARIA attribute is defined in WAI-ARIA",
       "ruleAccessibilityRequirements": null,
       "expected": "passed",
       "testcaseId": "31ac49fcb186ee2a233355494fc5e774212ca3d7",
@@ -5323,7 +5323,7 @@
     },
     {
       "ruleId": "5f99a7",
-      "ruleName": "`aria-*` attribute is defined in WAI-ARIA",
+      "ruleName": "ARIA attribute is defined in WAI-ARIA",
       "ruleAccessibilityRequirements": null,
       "expected": "passed",
       "testcaseId": "3314945d4bbec5b34f9a3c2d90da7cb9f8e7ce5a",
@@ -5334,7 +5334,7 @@
     },
     {
       "ruleId": "5f99a7",
-      "ruleName": "`aria-*` attribute is defined in WAI-ARIA",
+      "ruleName": "ARIA attribute is defined in WAI-ARIA",
       "ruleAccessibilityRequirements": null,
       "expected": "passed",
       "testcaseId": "4373f9e70eb353c76d7e9d4c2cc4dcfd6c17ad70",
@@ -5345,7 +5345,7 @@
     },
     {
       "ruleId": "5f99a7",
-      "ruleName": "`aria-*` attribute is defined in WAI-ARIA",
+      "ruleName": "ARIA attribute is defined in WAI-ARIA",
       "ruleAccessibilityRequirements": null,
       "expected": "failed",
       "testcaseId": "7296da1d7d8f1ede523cc6c4b7def0f8dbd1e887",
@@ -5356,7 +5356,7 @@
     },
     {
       "ruleId": "5f99a7",
-      "ruleName": "`aria-*` attribute is defined in WAI-ARIA",
+      "ruleName": "ARIA attribute is defined in WAI-ARIA",
       "ruleAccessibilityRequirements": null,
       "expected": "failed",
       "testcaseId": "b6acf7c4aab0cfdc9f996abc7961790cbc97f39e",
@@ -5367,7 +5367,7 @@
     },
     {
       "ruleId": "5f99a7",
-      "ruleName": "`aria-*` attribute is defined in WAI-ARIA",
+      "ruleName": "ARIA attribute is defined in WAI-ARIA",
       "ruleAccessibilityRequirements": null,
       "expected": "inapplicable",
       "testcaseId": "d528a33258103014c0a03cf1e418ee0620f7b4f6",
@@ -5378,7 +5378,7 @@
     },
     {
       "ruleId": "6cfa84",
-      "ruleName": "Element with `aria-hidden` has no focusable content",
+      "ruleName": "Element with aria-hidden has no focusable content",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
           "forConformance": true,
@@ -5403,7 +5403,7 @@
     },
     {
       "ruleId": "6cfa84",
-      "ruleName": "Element with `aria-hidden` has no focusable content",
+      "ruleName": "Element with aria-hidden has no focusable content",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
           "forConformance": true,
@@ -5428,7 +5428,7 @@
     },
     {
       "ruleId": "6cfa84",
-      "ruleName": "Element with `aria-hidden` has no focusable content",
+      "ruleName": "Element with aria-hidden has no focusable content",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
           "forConformance": true,
@@ -5453,7 +5453,7 @@
     },
     {
       "ruleId": "6cfa84",
-      "ruleName": "Element with `aria-hidden` has no focusable content",
+      "ruleName": "Element with aria-hidden has no focusable content",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
           "forConformance": true,
@@ -5478,7 +5478,7 @@
     },
     {
       "ruleId": "6cfa84",
-      "ruleName": "Element with `aria-hidden` has no focusable content",
+      "ruleName": "Element with aria-hidden has no focusable content",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
           "forConformance": true,
@@ -5503,7 +5503,7 @@
     },
     {
       "ruleId": "6cfa84",
-      "ruleName": "Element with `aria-hidden` has no focusable content",
+      "ruleName": "Element with aria-hidden has no focusable content",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
           "forConformance": true,
@@ -5528,7 +5528,7 @@
     },
     {
       "ruleId": "6cfa84",
-      "ruleName": "Element with `aria-hidden` has no focusable content",
+      "ruleName": "Element with aria-hidden has no focusable content",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
           "forConformance": true,
@@ -5553,7 +5553,7 @@
     },
     {
       "ruleId": "6cfa84",
-      "ruleName": "Element with `aria-hidden` has no focusable content",
+      "ruleName": "Element with aria-hidden has no focusable content",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
           "forConformance": true,
@@ -5578,7 +5578,7 @@
     },
     {
       "ruleId": "6cfa84",
-      "ruleName": "Element with `aria-hidden` has no focusable content",
+      "ruleName": "Element with aria-hidden has no focusable content",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
           "forConformance": true,
@@ -5603,7 +5603,7 @@
     },
     {
       "ruleId": "6cfa84",
-      "ruleName": "Element with `aria-hidden` has no focusable content",
+      "ruleName": "Element with aria-hidden has no focusable content",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
           "forConformance": true,
@@ -5628,7 +5628,7 @@
     },
     {
       "ruleId": "6cfa84",
-      "ruleName": "Element with `aria-hidden` has no focusable content",
+      "ruleName": "Element with aria-hidden has no focusable content",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
           "forConformance": true,
@@ -5653,7 +5653,7 @@
     },
     {
       "ruleId": "6cfa84",
-      "ruleName": "Element with `aria-hidden` has no focusable content",
+      "ruleName": "Element with aria-hidden has no focusable content",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
           "forConformance": true,
@@ -5678,7 +5678,7 @@
     },
     {
       "ruleId": "6cfa84",
-      "ruleName": "Element with `aria-hidden` has no focusable content",
+      "ruleName": "Element with aria-hidden has no focusable content",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
           "forConformance": true,
@@ -7386,7 +7386,7 @@
     },
     {
       "ruleId": "afb423",
-      "ruleName": "`audio` element content is media alternative for text",
+      "ruleName": "Audio element content is media alternative for text",
       "ruleAccessibilityRequirements": null,
       "expected": "passed",
       "testcaseId": "dedfb667190bd564527247550565cdea8ccefd3f",
@@ -7397,7 +7397,7 @@
     },
     {
       "ruleId": "afb423",
-      "ruleName": "`audio` element content is media alternative for text",
+      "ruleName": "Audio element content is media alternative for text",
       "ruleAccessibilityRequirements": null,
       "expected": "failed",
       "testcaseId": "e76fd82b8a71085be3a7a2ad96c1ce12522116e2",
@@ -7408,7 +7408,7 @@
     },
     {
       "ruleId": "afb423",
-      "ruleName": "`audio` element content is media alternative for text",
+      "ruleName": "Audio element content is media alternative for text",
       "ruleAccessibilityRequirements": null,
       "expected": "failed",
       "testcaseId": "6f9ab7a874b2d555e94957abaec5f6e908b6c206",
@@ -7419,7 +7419,7 @@
     },
     {
       "ruleId": "afb423",
-      "ruleName": "`audio` element content is media alternative for text",
+      "ruleName": "Audio element content is media alternative for text",
       "ruleAccessibilityRequirements": null,
       "expected": "failed",
       "testcaseId": "6e390dfbb555a5b422c6fa516ff7883c177450c9",
@@ -7430,7 +7430,7 @@
     },
     {
       "ruleId": "afb423",
-      "ruleName": "`audio` element content is media alternative for text",
+      "ruleName": "Audio element content is media alternative for text",
       "ruleAccessibilityRequirements": null,
       "expected": "failed",
       "testcaseId": "c2b5ac193eb620f96e6f08e80e34c7d8dbda94de",
@@ -7441,7 +7441,7 @@
     },
     {
       "ruleId": "afb423",
-      "ruleName": "`audio` element content is media alternative for text",
+      "ruleName": "Audio element content is media alternative for text",
       "ruleAccessibilityRequirements": null,
       "expected": "inapplicable",
       "testcaseId": "1c9dada7fa918fd9cffdd6d4c3443107aee373f5",
@@ -7452,7 +7452,7 @@
     },
     {
       "ruleId": "afb423",
-      "ruleName": "`audio` element content is media alternative for text",
+      "ruleName": "Audio element content is media alternative for text",
       "ruleAccessibilityRequirements": null,
       "expected": "inapplicable",
       "testcaseId": "bd4a3ee5bbdd3da989ce69c081b90f69f5be2045",
@@ -7463,7 +7463,7 @@
     },
     {
       "ruleId": "80f0bf",
-      "ruleName": "`audio` or `video` avoids automatically playing audio",
+      "ruleName": "Audio or video element avoids automatically playing audio",
       "ruleAccessibilityRequirements": {
         "wcag20:1.4.2": {
           "forConformance": true,
@@ -7506,7 +7506,7 @@
     },
     {
       "ruleId": "80f0bf",
-      "ruleName": "`audio` or `video` avoids automatically playing audio",
+      "ruleName": "Audio or video element avoids automatically playing audio",
       "ruleAccessibilityRequirements": {
         "wcag20:1.4.2": {
           "forConformance": true,
@@ -7549,7 +7549,7 @@
     },
     {
       "ruleId": "80f0bf",
-      "ruleName": "`audio` or `video` avoids automatically playing audio",
+      "ruleName": "Audio or video element avoids automatically playing audio",
       "ruleAccessibilityRequirements": {
         "wcag20:1.4.2": {
           "forConformance": true,
@@ -7592,7 +7592,7 @@
     },
     {
       "ruleId": "80f0bf",
-      "ruleName": "`audio` or `video` avoids automatically playing audio",
+      "ruleName": "Audio or video element avoids automatically playing audio",
       "ruleAccessibilityRequirements": {
         "wcag20:1.4.2": {
           "forConformance": true,
@@ -7635,7 +7635,7 @@
     },
     {
       "ruleId": "80f0bf",
-      "ruleName": "`audio` or `video` avoids automatically playing audio",
+      "ruleName": "Audio or video element avoids automatically playing audio",
       "ruleAccessibilityRequirements": {
         "wcag20:1.4.2": {
           "forConformance": true,
@@ -7678,7 +7678,7 @@
     },
     {
       "ruleId": "80f0bf",
-      "ruleName": "`audio` or `video` avoids automatically playing audio",
+      "ruleName": "Audio or video element avoids automatically playing audio",
       "ruleAccessibilityRequirements": {
         "wcag20:1.4.2": {
           "forConformance": true,
@@ -7721,7 +7721,7 @@
     },
     {
       "ruleId": "80f0bf",
-      "ruleName": "`audio` or `video` avoids automatically playing audio",
+      "ruleName": "Audio or video element avoids automatically playing audio",
       "ruleAccessibilityRequirements": {
         "wcag20:1.4.2": {
           "forConformance": true,
@@ -7764,7 +7764,7 @@
     },
     {
       "ruleId": "80f0bf",
-      "ruleName": "`audio` or `video` avoids automatically playing audio",
+      "ruleName": "Audio or video element avoids automatically playing audio",
       "ruleAccessibilityRequirements": {
         "wcag20:1.4.2": {
           "forConformance": true,
@@ -7807,7 +7807,7 @@
     },
     {
       "ruleId": "e7aa44",
-      "ruleName": "`audio` element content has text alternative",
+      "ruleName": "Audio element content has text alternative",
       "ruleAccessibilityRequirements": {
         "wcag20:1.2.1": {
           "forConformance": true,
@@ -7831,7 +7831,7 @@
     },
     {
       "ruleId": "e7aa44",
-      "ruleName": "`audio` element content has text alternative",
+      "ruleName": "Audio element content has text alternative",
       "ruleAccessibilityRequirements": {
         "wcag20:1.2.1": {
           "forConformance": true,
@@ -7855,7 +7855,7 @@
     },
     {
       "ruleId": "e7aa44",
-      "ruleName": "`audio` element content has text alternative",
+      "ruleName": "Audio element content has text alternative",
       "ruleAccessibilityRequirements": {
         "wcag20:1.2.1": {
           "forConformance": true,
@@ -7879,7 +7879,7 @@
     },
     {
       "ruleId": "e7aa44",
-      "ruleName": "`audio` element content has text alternative",
+      "ruleName": "Audio element content has text alternative",
       "ruleAccessibilityRequirements": {
         "wcag20:1.2.1": {
           "forConformance": true,
@@ -7903,7 +7903,7 @@
     },
     {
       "ruleId": "e7aa44",
-      "ruleName": "`audio` element content has text alternative",
+      "ruleName": "Audio element content has text alternative",
       "ruleAccessibilityRequirements": {
         "wcag20:1.2.1": {
           "forConformance": true,
@@ -7927,7 +7927,7 @@
     },
     {
       "ruleId": "e7aa44",
-      "ruleName": "`audio` element content has text alternative",
+      "ruleName": "Audio element content has text alternative",
       "ruleAccessibilityRequirements": {
         "wcag20:1.2.1": {
           "forConformance": true,
@@ -7951,7 +7951,7 @@
     },
     {
       "ruleId": "e7aa44",
-      "ruleName": "`audio` element content has text alternative",
+      "ruleName": "Audio element content has text alternative",
       "ruleAccessibilityRequirements": {
         "wcag20:1.2.1": {
           "forConformance": true,
@@ -7975,7 +7975,7 @@
     },
     {
       "ruleId": "e7aa44",
-      "ruleName": "`audio` element content has text alternative",
+      "ruleName": "Audio element content has text alternative",
       "ruleAccessibilityRequirements": {
         "wcag20:1.2.1": {
           "forConformance": true,
@@ -7999,7 +7999,7 @@
     },
     {
       "ruleId": "2eb176",
-      "ruleName": "`audio` element content has transcript",
+      "ruleName": "Audio element content has transcript",
       "ruleAccessibilityRequirements": null,
       "expected": "passed",
       "testcaseId": "85c98d1402dbc9c68ace2fbf5f063d145b8e5bd7",
@@ -8010,7 +8010,7 @@
     },
     {
       "ruleId": "2eb176",
-      "ruleName": "`audio` element content has transcript",
+      "ruleName": "Audio element content has transcript",
       "ruleAccessibilityRequirements": null,
       "expected": "passed",
       "testcaseId": "7e5bf06ee043bd223f348b4f2fd528586c268e69",
@@ -8021,7 +8021,7 @@
     },
     {
       "ruleId": "2eb176",
-      "ruleName": "`audio` element content has transcript",
+      "ruleName": "Audio element content has transcript",
       "ruleAccessibilityRequirements": null,
       "expected": "passed",
       "testcaseId": "3910043a0a8d9aff05d926b7bf9757b8b2ee98da",
@@ -8032,7 +8032,7 @@
     },
     {
       "ruleId": "2eb176",
-      "ruleName": "`audio` element content has transcript",
+      "ruleName": "Audio element content has transcript",
       "ruleAccessibilityRequirements": null,
       "expected": "failed",
       "testcaseId": "7cdf59c28089794dbbd75d81f29fb9adb9327cb2",
@@ -8043,7 +8043,7 @@
     },
     {
       "ruleId": "2eb176",
-      "ruleName": "`audio` element content has transcript",
+      "ruleName": "Audio element content has transcript",
       "ruleAccessibilityRequirements": null,
       "expected": "failed",
       "testcaseId": "58cd3c1ef1ce88b7878c9e11c4f610486faefbf6",
@@ -8054,7 +8054,7 @@
     },
     {
       "ruleId": "2eb176",
-      "ruleName": "`audio` element content has transcript",
+      "ruleName": "Audio element content has transcript",
       "ruleAccessibilityRequirements": null,
       "expected": "failed",
       "testcaseId": "5fd7ae577f7dd55633c44b3ac7b6d70b486cff3d",
@@ -8065,7 +8065,7 @@
     },
     {
       "ruleId": "2eb176",
-      "ruleName": "`audio` element content has transcript",
+      "ruleName": "Audio element content has transcript",
       "ruleAccessibilityRequirements": null,
       "expected": "failed",
       "testcaseId": "f470186843fb28ba9b45dd1efc85b53c92b11c05",
@@ -8076,7 +8076,7 @@
     },
     {
       "ruleId": "2eb176",
-      "ruleName": "`audio` element content has transcript",
+      "ruleName": "Audio element content has transcript",
       "ruleAccessibilityRequirements": null,
       "expected": "failed",
       "testcaseId": "06b6ada6383efa2ffeaf67370b177090dfcdf5e1",
@@ -8087,7 +8087,7 @@
     },
     {
       "ruleId": "2eb176",
-      "ruleName": "`audio` element content has transcript",
+      "ruleName": "Audio element content has transcript",
       "ruleAccessibilityRequirements": null,
       "expected": "failed",
       "testcaseId": "d58c6252f96771666f71a65d199316108e709edd",
@@ -8098,7 +8098,7 @@
     },
     {
       "ruleId": "2eb176",
-      "ruleName": "`audio` element content has transcript",
+      "ruleName": "Audio element content has transcript",
       "ruleAccessibilityRequirements": null,
       "expected": "inapplicable",
       "testcaseId": "eba170767ac1de0092d33a9bee2c0ecf2ebdfd46",
@@ -8109,7 +8109,7 @@
     },
     {
       "ruleId": "2eb176",
-      "ruleName": "`audio` element content has transcript",
+      "ruleName": "Audio element content has transcript",
       "ruleAccessibilityRequirements": null,
       "expected": "inapplicable",
       "testcaseId": "381f800e41c8f1e72f1164ff0877bbb8446dc55d",
@@ -8120,7 +8120,7 @@
     },
     {
       "ruleId": "aaa1bf",
-      "ruleName": "`Audio` or `video` that plays automatically has no audio that lasts more than 3 seconds",
+      "ruleName": "Audio or video element that plays automatically has no audio that lasts more than 3 seconds",
       "ruleAccessibilityRequirements": {
         "wcag-technique:G60": {
           "forConformance": false,
@@ -8138,7 +8138,7 @@
     },
     {
       "ruleId": "aaa1bf",
-      "ruleName": "`Audio` or `video` that plays automatically has no audio that lasts more than 3 seconds",
+      "ruleName": "Audio or video element that plays automatically has no audio that lasts more than 3 seconds",
       "ruleAccessibilityRequirements": {
         "wcag-technique:G60": {
           "forConformance": false,
@@ -8156,7 +8156,7 @@
     },
     {
       "ruleId": "aaa1bf",
-      "ruleName": "`Audio` or `video` that plays automatically has no audio that lasts more than 3 seconds",
+      "ruleName": "Audio or video element that plays automatically has no audio that lasts more than 3 seconds",
       "ruleAccessibilityRequirements": {
         "wcag-technique:G60": {
           "forConformance": false,
@@ -8174,7 +8174,7 @@
     },
     {
       "ruleId": "aaa1bf",
-      "ruleName": "`Audio` or `video` that plays automatically has no audio that lasts more than 3 seconds",
+      "ruleName": "Audio or video element that plays automatically has no audio that lasts more than 3 seconds",
       "ruleAccessibilityRequirements": {
         "wcag-technique:G60": {
           "forConformance": false,
@@ -8192,7 +8192,7 @@
     },
     {
       "ruleId": "aaa1bf",
-      "ruleName": "`Audio` or `video` that plays automatically has no audio that lasts more than 3 seconds",
+      "ruleName": "Audio or video element that plays automatically has no audio that lasts more than 3 seconds",
       "ruleAccessibilityRequirements": {
         "wcag-technique:G60": {
           "forConformance": false,
@@ -8210,7 +8210,7 @@
     },
     {
       "ruleId": "aaa1bf",
-      "ruleName": "`Audio` or `video` that plays automatically has no audio that lasts more than 3 seconds",
+      "ruleName": "Audio or video element that plays automatically has no audio that lasts more than 3 seconds",
       "ruleAccessibilityRequirements": {
         "wcag-technique:G60": {
           "forConformance": false,
@@ -8228,7 +8228,7 @@
     },
     {
       "ruleId": "aaa1bf",
-      "ruleName": "`Audio` or `video` that plays automatically has no audio that lasts more than 3 seconds",
+      "ruleName": "Audio or video element that plays automatically has no audio that lasts more than 3 seconds",
       "ruleAccessibilityRequirements": {
         "wcag-technique:G60": {
           "forConformance": false,
@@ -8246,7 +8246,7 @@
     },
     {
       "ruleId": "4c31df",
-      "ruleName": "`audio` or `video` that plays automatically has a control mechanism",
+      "ruleName": "Audio or video element that plays automatically has a control mechanism",
       "ruleAccessibilityRequirements": {
         "wcag-technique:G170": {
           "forConformance": false,
@@ -8264,7 +8264,7 @@
     },
     {
       "ruleId": "4c31df",
-      "ruleName": "`audio` or `video` that plays automatically has a control mechanism",
+      "ruleName": "Audio or video element that plays automatically has a control mechanism",
       "ruleAccessibilityRequirements": {
         "wcag-technique:G170": {
           "forConformance": false,
@@ -8282,7 +8282,7 @@
     },
     {
       "ruleId": "4c31df",
-      "ruleName": "`audio` or `video` that plays automatically has a control mechanism",
+      "ruleName": "Audio or video element that plays automatically has a control mechanism",
       "ruleAccessibilityRequirements": {
         "wcag-technique:G170": {
           "forConformance": false,
@@ -8300,7 +8300,7 @@
     },
     {
       "ruleId": "4c31df",
-      "ruleName": "`audio` or `video` that plays automatically has a control mechanism",
+      "ruleName": "Audio or video element that plays automatically has a control mechanism",
       "ruleAccessibilityRequirements": {
         "wcag-technique:G170": {
           "forConformance": false,
@@ -8318,7 +8318,7 @@
     },
     {
       "ruleId": "4c31df",
-      "ruleName": "`audio` or `video` that plays automatically has a control mechanism",
+      "ruleName": "Audio or video element that plays automatically has a control mechanism",
       "ruleAccessibilityRequirements": {
         "wcag-technique:G170": {
           "forConformance": false,
@@ -8336,7 +8336,7 @@
     },
     {
       "ruleId": "4c31df",
-      "ruleName": "`audio` or `video` that plays automatically has a control mechanism",
+      "ruleName": "Audio or video element that plays automatically has a control mechanism",
       "ruleAccessibilityRequirements": {
         "wcag-technique:G170": {
           "forConformance": false,
@@ -8354,7 +8354,7 @@
     },
     {
       "ruleId": "4c31df",
-      "ruleName": "`audio` or `video` that plays automatically has a control mechanism",
+      "ruleName": "Audio or video element that plays automatically has a control mechanism",
       "ruleAccessibilityRequirements": {
         "wcag-technique:G170": {
           "forConformance": false,
@@ -8372,7 +8372,7 @@
     },
     {
       "ruleId": "4c31df",
-      "ruleName": "`audio` or `video` that plays automatically has a control mechanism",
+      "ruleName": "Audio or video element that plays automatically has a control mechanism",
       "ruleAccessibilityRequirements": {
         "wcag-technique:G170": {
           "forConformance": false,
@@ -8390,7 +8390,7 @@
     },
     {
       "ruleId": "4c31df",
-      "ruleName": "`audio` or `video` that plays automatically has a control mechanism",
+      "ruleName": "Audio or video element that plays automatically has a control mechanism",
       "ruleAccessibilityRequirements": {
         "wcag-technique:G170": {
           "forConformance": false,
@@ -8408,7 +8408,7 @@
     },
     {
       "ruleId": "4c31df",
-      "ruleName": "`audio` or `video` that plays automatically has a control mechanism",
+      "ruleName": "Audio or video element that plays automatically has a control mechanism",
       "ruleAccessibilityRequirements": {
         "wcag-technique:G170": {
           "forConformance": false,
@@ -8426,7 +8426,7 @@
     },
     {
       "ruleId": "4c31df",
-      "ruleName": "`audio` or `video` that plays automatically has a control mechanism",
+      "ruleName": "Audio or video element that plays automatically has a control mechanism",
       "ruleAccessibilityRequirements": {
         "wcag-technique:G170": {
           "forConformance": false,
@@ -10949,7 +10949,7 @@
     },
     {
       "ruleId": "7d6734",
-      "ruleName": "`svg` element with explicit role has non-empty accessible name",
+      "ruleName": "SVG element with explicit role has non-empty accessible name",
       "ruleAccessibilityRequirements": {
         "wcag20:1.1.1": {
           "forConformance": true,
@@ -10967,7 +10967,7 @@
     },
     {
       "ruleId": "7d6734",
-      "ruleName": "`svg` element with explicit role has non-empty accessible name",
+      "ruleName": "SVG element with explicit role has non-empty accessible name",
       "ruleAccessibilityRequirements": {
         "wcag20:1.1.1": {
           "forConformance": true,
@@ -10985,7 +10985,7 @@
     },
     {
       "ruleId": "7d6734",
-      "ruleName": "`svg` element with explicit role has non-empty accessible name",
+      "ruleName": "SVG element with explicit role has non-empty accessible name",
       "ruleAccessibilityRequirements": {
         "wcag20:1.1.1": {
           "forConformance": true,
@@ -11003,7 +11003,7 @@
     },
     {
       "ruleId": "7d6734",
-      "ruleName": "`svg` element with explicit role has non-empty accessible name",
+      "ruleName": "SVG element with explicit role has non-empty accessible name",
       "ruleAccessibilityRequirements": {
         "wcag20:1.1.1": {
           "forConformance": true,
@@ -11021,7 +11021,7 @@
     },
     {
       "ruleId": "7d6734",
-      "ruleName": "`svg` element with explicit role has non-empty accessible name",
+      "ruleName": "SVG element with explicit role has non-empty accessible name",
       "ruleAccessibilityRequirements": {
         "wcag20:1.1.1": {
           "forConformance": true,
@@ -11039,7 +11039,7 @@
     },
     {
       "ruleId": "7d6734",
-      "ruleName": "`svg` element with explicit role has non-empty accessible name",
+      "ruleName": "SVG element with explicit role has non-empty accessible name",
       "ruleAccessibilityRequirements": {
         "wcag20:1.1.1": {
           "forConformance": true,
@@ -11057,7 +11057,7 @@
     },
     {
       "ruleId": "7d6734",
-      "ruleName": "`svg` element with explicit role has non-empty accessible name",
+      "ruleName": "SVG element with explicit role has non-empty accessible name",
       "ruleAccessibilityRequirements": {
         "wcag20:1.1.1": {
           "forConformance": true,
@@ -11075,7 +11075,7 @@
     },
     {
       "ruleId": "7d6734",
-      "ruleName": "`svg` element with explicit role has non-empty accessible name",
+      "ruleName": "SVG element with explicit role has non-empty accessible name",
       "ruleAccessibilityRequirements": {
         "wcag20:1.1.1": {
           "forConformance": true,
@@ -11093,7 +11093,7 @@
     },
     {
       "ruleId": "7d6734",
-      "ruleName": "`svg` element with explicit role has non-empty accessible name",
+      "ruleName": "SVG element with explicit role has non-empty accessible name",
       "ruleAccessibilityRequirements": {
         "wcag20:1.1.1": {
           "forConformance": true,
@@ -11111,7 +11111,7 @@
     },
     {
       "ruleId": "7d6734",
-      "ruleName": "`svg` element with explicit role has non-empty accessible name",
+      "ruleName": "SVG element with explicit role has non-empty accessible name",
       "ruleAccessibilityRequirements": {
         "wcag20:1.1.1": {
           "forConformance": true,
@@ -13378,7 +13378,7 @@
     },
     {
       "ruleId": "3ea0c8",
-      "ruleName": "`id` attribute value is unique",
+      "ruleName": "Id attribute value is unique",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.1": {
           "forConformance": true,
@@ -13402,7 +13402,7 @@
     },
     {
       "ruleId": "3ea0c8",
-      "ruleName": "`id` attribute value is unique",
+      "ruleName": "Id attribute value is unique",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.1": {
           "forConformance": true,
@@ -13426,7 +13426,7 @@
     },
     {
       "ruleId": "3ea0c8",
-      "ruleName": "`id` attribute value is unique",
+      "ruleName": "Id attribute value is unique",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.1": {
           "forConformance": true,
@@ -13450,7 +13450,7 @@
     },
     {
       "ruleId": "3ea0c8",
-      "ruleName": "`id` attribute value is unique",
+      "ruleName": "Id attribute value is unique",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.1": {
           "forConformance": true,
@@ -13474,7 +13474,7 @@
     },
     {
       "ruleId": "3ea0c8",
-      "ruleName": "`id` attribute value is unique",
+      "ruleName": "Id attribute value is unique",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.1": {
           "forConformance": true,
@@ -13498,7 +13498,7 @@
     },
     {
       "ruleId": "3ea0c8",
-      "ruleName": "`id` attribute value is unique",
+      "ruleName": "Id attribute value is unique",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.1": {
           "forConformance": true,
@@ -13522,7 +13522,7 @@
     },
     {
       "ruleId": "3ea0c8",
-      "ruleName": "`id` attribute value is unique",
+      "ruleName": "Id attribute value is unique",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.1": {
           "forConformance": true,
@@ -13546,7 +13546,7 @@
     },
     {
       "ruleId": "3ea0c8",
-      "ruleName": "`id` attribute value is unique",
+      "ruleName": "Id attribute value is unique",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.1": {
           "forConformance": true,
@@ -13570,7 +13570,7 @@
     },
     {
       "ruleId": "3ea0c8",
-      "ruleName": "`id` attribute value is unique",
+      "ruleName": "Id attribute value is unique",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.1": {
           "forConformance": true,
@@ -13594,7 +13594,7 @@
     },
     {
       "ruleId": "3ea0c8",
-      "ruleName": "`id` attribute value is unique",
+      "ruleName": "Id attribute value is unique",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.1": {
           "forConformance": true,
@@ -13618,7 +13618,7 @@
     },
     {
       "ruleId": "4b1c6c",
-      "ruleName": "`iframe` elements with identical accessible names have equivalent purpose",
+      "ruleName": "Iframe elements with identical accessible names have equivalent purpose",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
           "forConformance": true,
@@ -13636,7 +13636,7 @@
     },
     {
       "ruleId": "4b1c6c",
-      "ruleName": "`iframe` elements with identical accessible names have equivalent purpose",
+      "ruleName": "Iframe elements with identical accessible names have equivalent purpose",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
           "forConformance": true,
@@ -13654,7 +13654,7 @@
     },
     {
       "ruleId": "4b1c6c",
-      "ruleName": "`iframe` elements with identical accessible names have equivalent purpose",
+      "ruleName": "Iframe elements with identical accessible names have equivalent purpose",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
           "forConformance": true,
@@ -13672,7 +13672,7 @@
     },
     {
       "ruleId": "4b1c6c",
-      "ruleName": "`iframe` elements with identical accessible names have equivalent purpose",
+      "ruleName": "Iframe elements with identical accessible names have equivalent purpose",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
           "forConformance": true,
@@ -13690,7 +13690,7 @@
     },
     {
       "ruleId": "4b1c6c",
-      "ruleName": "`iframe` elements with identical accessible names have equivalent purpose",
+      "ruleName": "Iframe elements with identical accessible names have equivalent purpose",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
           "forConformance": true,
@@ -13708,7 +13708,7 @@
     },
     {
       "ruleId": "4b1c6c",
-      "ruleName": "`iframe` elements with identical accessible names have equivalent purpose",
+      "ruleName": "Iframe elements with identical accessible names have equivalent purpose",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
           "forConformance": true,
@@ -13726,7 +13726,7 @@
     },
     {
       "ruleId": "4b1c6c",
-      "ruleName": "`iframe` elements with identical accessible names have equivalent purpose",
+      "ruleName": "Iframe elements with identical accessible names have equivalent purpose",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
           "forConformance": true,
@@ -13744,7 +13744,7 @@
     },
     {
       "ruleId": "4b1c6c",
-      "ruleName": "`iframe` elements with identical accessible names have equivalent purpose",
+      "ruleName": "Iframe elements with identical accessible names have equivalent purpose",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
           "forConformance": true,
@@ -13762,7 +13762,7 @@
     },
     {
       "ruleId": "4b1c6c",
-      "ruleName": "`iframe` elements with identical accessible names have equivalent purpose",
+      "ruleName": "Iframe elements with identical accessible names have equivalent purpose",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
           "forConformance": true,
@@ -13780,7 +13780,7 @@
     },
     {
       "ruleId": "4b1c6c",
-      "ruleName": "`iframe` elements with identical accessible names have equivalent purpose",
+      "ruleName": "Iframe elements with identical accessible names have equivalent purpose",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
           "forConformance": true,
@@ -13798,7 +13798,7 @@
     },
     {
       "ruleId": "4b1c6c",
-      "ruleName": "`iframe` elements with identical accessible names have equivalent purpose",
+      "ruleName": "Iframe elements with identical accessible names have equivalent purpose",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
           "forConformance": true,
@@ -13816,7 +13816,7 @@
     },
     {
       "ruleId": "4b1c6c",
-      "ruleName": "`iframe` elements with identical accessible names have equivalent purpose",
+      "ruleName": "Iframe elements with identical accessible names have equivalent purpose",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
           "forConformance": true,
@@ -13834,7 +13834,7 @@
     },
     {
       "ruleId": "4b1c6c",
-      "ruleName": "`iframe` elements with identical accessible names have equivalent purpose",
+      "ruleName": "Iframe elements with identical accessible names have equivalent purpose",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
           "forConformance": true,
@@ -13852,7 +13852,7 @@
     },
     {
       "ruleId": "4b1c6c",
-      "ruleName": "`iframe` elements with identical accessible names have equivalent purpose",
+      "ruleName": "Iframe elements with identical accessible names have equivalent purpose",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
           "forConformance": true,
@@ -13870,7 +13870,7 @@
     },
     {
       "ruleId": "4b1c6c",
-      "ruleName": "`iframe` elements with identical accessible names have equivalent purpose",
+      "ruleName": "Iframe elements with identical accessible names have equivalent purpose",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
           "forConformance": true,
@@ -13888,7 +13888,7 @@
     },
     {
       "ruleId": "4b1c6c",
-      "ruleName": "`iframe` elements with identical accessible names have equivalent purpose",
+      "ruleName": "Iframe elements with identical accessible names have equivalent purpose",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
           "forConformance": true,
@@ -13906,7 +13906,7 @@
     },
     {
       "ruleId": "4b1c6c",
-      "ruleName": "`iframe` elements with identical accessible names have equivalent purpose",
+      "ruleName": "Iframe elements with identical accessible names have equivalent purpose",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
           "forConformance": true,
@@ -13924,7 +13924,7 @@
     },
     {
       "ruleId": "4b1c6c",
-      "ruleName": "`iframe` elements with identical accessible names have equivalent purpose",
+      "ruleName": "Iframe elements with identical accessible names have equivalent purpose",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
           "forConformance": true,
@@ -13942,7 +13942,7 @@
     },
     {
       "ruleId": "4b1c6c",
-      "ruleName": "`iframe` elements with identical accessible names have equivalent purpose",
+      "ruleName": "Iframe elements with identical accessible names have equivalent purpose",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
           "forConformance": true,
@@ -13960,7 +13960,7 @@
     },
     {
       "ruleId": "4b1c6c",
-      "ruleName": "`iframe` elements with identical accessible names have equivalent purpose",
+      "ruleName": "Iframe elements with identical accessible names have equivalent purpose",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
           "forConformance": true,
@@ -13978,7 +13978,7 @@
     },
     {
       "ruleId": "4b1c6c",
-      "ruleName": "`iframe` elements with identical accessible names have equivalent purpose",
+      "ruleName": "Iframe elements with identical accessible names have equivalent purpose",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
           "forConformance": true,
@@ -13996,7 +13996,7 @@
     },
     {
       "ruleId": "4b1c6c",
-      "ruleName": "`iframe` elements with identical accessible names have equivalent purpose",
+      "ruleName": "Iframe elements with identical accessible names have equivalent purpose",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
           "forConformance": true,
@@ -14014,7 +14014,7 @@
     },
     {
       "ruleId": "4b1c6c",
-      "ruleName": "`iframe` elements with identical accessible names have equivalent purpose",
+      "ruleName": "Iframe elements with identical accessible names have equivalent purpose",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
           "forConformance": true,
@@ -14032,7 +14032,7 @@
     },
     {
       "ruleId": "cae760",
-      "ruleName": "`iframe` element has non-empty accessible name",
+      "ruleName": "Iframe element has non-empty accessible name",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
           "forConformance": true,
@@ -14050,7 +14050,7 @@
     },
     {
       "ruleId": "cae760",
-      "ruleName": "`iframe` element has non-empty accessible name",
+      "ruleName": "Iframe element has non-empty accessible name",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
           "forConformance": true,
@@ -14068,7 +14068,7 @@
     },
     {
       "ruleId": "cae760",
-      "ruleName": "`iframe` element has non-empty accessible name",
+      "ruleName": "Iframe element has non-empty accessible name",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
           "forConformance": true,
@@ -14086,7 +14086,7 @@
     },
     {
       "ruleId": "cae760",
-      "ruleName": "`iframe` element has non-empty accessible name",
+      "ruleName": "Iframe element has non-empty accessible name",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
           "forConformance": true,
@@ -14104,7 +14104,7 @@
     },
     {
       "ruleId": "cae760",
-      "ruleName": "`iframe` element has non-empty accessible name",
+      "ruleName": "Iframe element has non-empty accessible name",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
           "forConformance": true,
@@ -14122,7 +14122,7 @@
     },
     {
       "ruleId": "cae760",
-      "ruleName": "`iframe` element has non-empty accessible name",
+      "ruleName": "Iframe element has non-empty accessible name",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
           "forConformance": true,
@@ -14140,7 +14140,7 @@
     },
     {
       "ruleId": "cae760",
-      "ruleName": "`iframe` element has non-empty accessible name",
+      "ruleName": "Iframe element has non-empty accessible name",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
           "forConformance": true,
@@ -14158,7 +14158,7 @@
     },
     {
       "ruleId": "cae760",
-      "ruleName": "`iframe` element has non-empty accessible name",
+      "ruleName": "Iframe element has non-empty accessible name",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
           "forConformance": true,
@@ -14176,7 +14176,7 @@
     },
     {
       "ruleId": "cae760",
-      "ruleName": "`iframe` element has non-empty accessible name",
+      "ruleName": "Iframe element has non-empty accessible name",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
           "forConformance": true,
@@ -14194,7 +14194,7 @@
     },
     {
       "ruleId": "cae760",
-      "ruleName": "`iframe` element has non-empty accessible name",
+      "ruleName": "Iframe element has non-empty accessible name",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
           "forConformance": true,
@@ -14212,7 +14212,7 @@
     },
     {
       "ruleId": "akn7bn",
-      "ruleName": "iframe with negative tabindex has no interactive elements",
+      "ruleName": "Iframe with negative tabindex has no interactive elements",
       "ruleAccessibilityRequirements": {
         "wcag20:2.1.1": {
           "forConformance": true,
@@ -14236,7 +14236,7 @@
     },
     {
       "ruleId": "akn7bn",
-      "ruleName": "iframe with negative tabindex has no interactive elements",
+      "ruleName": "Iframe with negative tabindex has no interactive elements",
       "ruleAccessibilityRequirements": {
         "wcag20:2.1.1": {
           "forConformance": true,
@@ -14260,7 +14260,7 @@
     },
     {
       "ruleId": "akn7bn",
-      "ruleName": "iframe with negative tabindex has no interactive elements",
+      "ruleName": "Iframe with negative tabindex has no interactive elements",
       "ruleAccessibilityRequirements": {
         "wcag20:2.1.1": {
           "forConformance": true,
@@ -14284,7 +14284,7 @@
     },
     {
       "ruleId": "akn7bn",
-      "ruleName": "iframe with negative tabindex has no interactive elements",
+      "ruleName": "Iframe with negative tabindex has no interactive elements",
       "ruleAccessibilityRequirements": {
         "wcag20:2.1.1": {
           "forConformance": true,
@@ -14308,7 +14308,7 @@
     },
     {
       "ruleId": "akn7bn",
-      "ruleName": "iframe with negative tabindex has no interactive elements",
+      "ruleName": "Iframe with negative tabindex has no interactive elements",
       "ruleAccessibilityRequirements": {
         "wcag20:2.1.1": {
           "forConformance": true,
@@ -14332,7 +14332,7 @@
     },
     {
       "ruleId": "akn7bn",
-      "ruleName": "iframe with negative tabindex has no interactive elements",
+      "ruleName": "Iframe with negative tabindex has no interactive elements",
       "ruleAccessibilityRequirements": {
         "wcag20:2.1.1": {
           "forConformance": true,
@@ -16144,7 +16144,7 @@
     },
     {
       "ruleId": "78fd32",
-      "ruleName": "Line height in `style` attributes is not `!important`",
+      "ruleName": "Line height in style attributes is not !important",
       "ruleAccessibilityRequirements": {
         "wcag21:1.4.12": {
           "forConformance": true,
@@ -16162,7 +16162,7 @@
     },
     {
       "ruleId": "78fd32",
-      "ruleName": "Line height in `style` attributes is not `!important`",
+      "ruleName": "Line height in style attributes is not !important",
       "ruleAccessibilityRequirements": {
         "wcag21:1.4.12": {
           "forConformance": true,
@@ -16180,7 +16180,7 @@
     },
     {
       "ruleId": "78fd32",
-      "ruleName": "Line height in `style` attributes is not `!important`",
+      "ruleName": "Line height in style attributes is not !important",
       "ruleAccessibilityRequirements": {
         "wcag21:1.4.12": {
           "forConformance": true,
@@ -16198,7 +16198,7 @@
     },
     {
       "ruleId": "78fd32",
-      "ruleName": "Line height in `style` attributes is not `!important`",
+      "ruleName": "Line height in style attributes is not !important",
       "ruleAccessibilityRequirements": {
         "wcag21:1.4.12": {
           "forConformance": true,
@@ -16216,7 +16216,7 @@
     },
     {
       "ruleId": "78fd32",
-      "ruleName": "Line height in `style` attributes is not `!important`",
+      "ruleName": "Line height in style attributes is not !important",
       "ruleAccessibilityRequirements": {
         "wcag21:1.4.12": {
           "forConformance": true,
@@ -16234,7 +16234,7 @@
     },
     {
       "ruleId": "78fd32",
-      "ruleName": "Line height in `style` attributes is not `!important`",
+      "ruleName": "Line height in style attributes is not !important",
       "ruleAccessibilityRequirements": {
         "wcag21:1.4.12": {
           "forConformance": true,
@@ -16252,7 +16252,7 @@
     },
     {
       "ruleId": "78fd32",
-      "ruleName": "Line height in `style` attributes is not `!important`",
+      "ruleName": "Line height in style attributes is not !important",
       "ruleAccessibilityRequirements": {
         "wcag21:1.4.12": {
           "forConformance": true,
@@ -16270,7 +16270,7 @@
     },
     {
       "ruleId": "78fd32",
-      "ruleName": "Line height in `style` attributes is not `!important`",
+      "ruleName": "Line height in style attributes is not !important",
       "ruleAccessibilityRequirements": {
         "wcag21:1.4.12": {
           "forConformance": true,
@@ -16288,7 +16288,7 @@
     },
     {
       "ruleId": "78fd32",
-      "ruleName": "Line height in `style` attributes is not `!important`",
+      "ruleName": "Line height in style attributes is not !important",
       "ruleAccessibilityRequirements": {
         "wcag21:1.4.12": {
           "forConformance": true,
@@ -16306,7 +16306,7 @@
     },
     {
       "ruleId": "78fd32",
-      "ruleName": "Line height in `style` attributes is not `!important`",
+      "ruleName": "Line height in style attributes is not !important",
       "ruleAccessibilityRequirements": {
         "wcag21:1.4.12": {
           "forConformance": true,
@@ -16324,7 +16324,7 @@
     },
     {
       "ruleId": "78fd32",
-      "ruleName": "Line height in `style` attributes is not `!important`",
+      "ruleName": "Line height in style attributes is not !important",
       "ruleAccessibilityRequirements": {
         "wcag21:1.4.12": {
           "forConformance": true,
@@ -16342,7 +16342,7 @@
     },
     {
       "ruleId": "78fd32",
-      "ruleName": "Line height in `style` attributes is not `!important`",
+      "ruleName": "Line height in style attributes is not !important",
       "ruleAccessibilityRequirements": {
         "wcag21:1.4.12": {
           "forConformance": true,
@@ -16360,7 +16360,7 @@
     },
     {
       "ruleId": "78fd32",
-      "ruleName": "Line height in `style` attributes is not `!important`",
+      "ruleName": "Line height in style attributes is not !important",
       "ruleAccessibilityRequirements": {
         "wcag21:1.4.12": {
           "forConformance": true,
@@ -16378,7 +16378,7 @@
     },
     {
       "ruleId": "78fd32",
-      "ruleName": "Line height in `style` attributes is not `!important`",
+      "ruleName": "Line height in style attributes is not !important",
       "ruleAccessibilityRequirements": {
         "wcag21:1.4.12": {
           "forConformance": true,
@@ -16396,7 +16396,7 @@
     },
     {
       "ruleId": "78fd32",
-      "ruleName": "Line height in `style` attributes is not `!important`",
+      "ruleName": "Line height in style attributes is not !important",
       "ruleAccessibilityRequirements": {
         "wcag21:1.4.12": {
           "forConformance": true,
@@ -16414,7 +16414,7 @@
     },
     {
       "ruleId": "78fd32",
-      "ruleName": "Line height in `style` attributes is not `!important`",
+      "ruleName": "Line height in style attributes is not !important",
       "ruleAccessibilityRequirements": {
         "wcag21:1.4.12": {
           "forConformance": true,
@@ -16432,7 +16432,7 @@
     },
     {
       "ruleId": "78fd32",
-      "ruleName": "Line height in `style` attributes is not `!important`",
+      "ruleName": "Line height in style attributes is not !important",
       "ruleAccessibilityRequirements": {
         "wcag21:1.4.12": {
           "forConformance": true,
@@ -16450,7 +16450,7 @@
     },
     {
       "ruleId": "78fd32",
-      "ruleName": "Line height in `style` attributes is not `!important`",
+      "ruleName": "Line height in style attributes is not !important",
       "ruleAccessibilityRequirements": {
         "wcag21:1.4.12": {
           "forConformance": true,
@@ -16468,7 +16468,7 @@
     },
     {
       "ruleId": "78fd32",
-      "ruleName": "Line height in `style` attributes is not `!important`",
+      "ruleName": "Line height in style attributes is not !important",
       "ruleAccessibilityRequirements": {
         "wcag21:1.4.12": {
           "forConformance": true,
@@ -16486,7 +16486,7 @@
     },
     {
       "ruleId": "78fd32",
-      "ruleName": "Line height in `style` attributes is not `!important`",
+      "ruleName": "Line height in style attributes is not !important",
       "ruleAccessibilityRequirements": {
         "wcag21:1.4.12": {
           "forConformance": true,
@@ -16504,7 +16504,7 @@
     },
     {
       "ruleId": "78fd32",
-      "ruleName": "Line height in `style` attributes is not `!important`",
+      "ruleName": "Line height in style attributes is not !important",
       "ruleAccessibilityRequirements": {
         "wcag21:1.4.12": {
           "forConformance": true,
@@ -18148,7 +18148,7 @@
     },
     {
       "ruleId": "bc659a",
-      "ruleName": "`meta` element has no refresh delay",
+      "ruleName": "Meta element has no refresh delay",
       "ruleAccessibilityRequirements": {
         "wcag20:2.2.1": {
           "forConformance": true,
@@ -18190,7 +18190,7 @@
     },
     {
       "ruleId": "bc659a",
-      "ruleName": "`meta` element has no refresh delay",
+      "ruleName": "Meta element has no refresh delay",
       "ruleAccessibilityRequirements": {
         "wcag20:2.2.1": {
           "forConformance": true,
@@ -18232,7 +18232,7 @@
     },
     {
       "ruleId": "bc659a",
-      "ruleName": "`meta` element has no refresh delay",
+      "ruleName": "Meta element has no refresh delay",
       "ruleAccessibilityRequirements": {
         "wcag20:2.2.1": {
           "forConformance": true,
@@ -18274,7 +18274,7 @@
     },
     {
       "ruleId": "bc659a",
-      "ruleName": "`meta` element has no refresh delay",
+      "ruleName": "Meta element has no refresh delay",
       "ruleAccessibilityRequirements": {
         "wcag20:2.2.1": {
           "forConformance": true,
@@ -18316,7 +18316,7 @@
     },
     {
       "ruleId": "bc659a",
-      "ruleName": "`meta` element has no refresh delay",
+      "ruleName": "Meta element has no refresh delay",
       "ruleAccessibilityRequirements": {
         "wcag20:2.2.1": {
           "forConformance": true,
@@ -18358,7 +18358,7 @@
     },
     {
       "ruleId": "bc659a",
-      "ruleName": "`meta` element has no refresh delay",
+      "ruleName": "Meta element has no refresh delay",
       "ruleAccessibilityRequirements": {
         "wcag20:2.2.1": {
           "forConformance": true,
@@ -18400,7 +18400,7 @@
     },
     {
       "ruleId": "bc659a",
-      "ruleName": "`meta` element has no refresh delay",
+      "ruleName": "Meta element has no refresh delay",
       "ruleAccessibilityRequirements": {
         "wcag20:2.2.1": {
           "forConformance": true,
@@ -18442,7 +18442,7 @@
     },
     {
       "ruleId": "bc659a",
-      "ruleName": "`meta` element has no refresh delay",
+      "ruleName": "Meta element has no refresh delay",
       "ruleAccessibilityRequirements": {
         "wcag20:2.2.1": {
           "forConformance": true,
@@ -18484,7 +18484,7 @@
     },
     {
       "ruleId": "bc659a",
-      "ruleName": "`meta` element has no refresh delay",
+      "ruleName": "Meta element has no refresh delay",
       "ruleAccessibilityRequirements": {
         "wcag20:2.2.1": {
           "forConformance": true,
@@ -18526,7 +18526,7 @@
     },
     {
       "ruleId": "bc659a",
-      "ruleName": "`meta` element has no refresh delay",
+      "ruleName": "Meta element has no refresh delay",
       "ruleAccessibilityRequirements": {
         "wcag20:2.2.1": {
           "forConformance": true,
@@ -18568,7 +18568,7 @@
     },
     {
       "ruleId": "bc659a",
-      "ruleName": "`meta` element has no refresh delay",
+      "ruleName": "Meta element has no refresh delay",
       "ruleAccessibilityRequirements": {
         "wcag20:2.2.1": {
           "forConformance": true,
@@ -18610,7 +18610,7 @@
     },
     {
       "ruleId": "bc659a",
-      "ruleName": "`meta` element has no refresh delay",
+      "ruleName": "Meta element has no refresh delay",
       "ruleAccessibilityRequirements": {
         "wcag20:2.2.1": {
           "forConformance": true,
@@ -18652,7 +18652,7 @@
     },
     {
       "ruleId": "bc659a",
-      "ruleName": "`meta` element has no refresh delay",
+      "ruleName": "Meta element has no refresh delay",
       "ruleAccessibilityRequirements": {
         "wcag20:2.2.1": {
           "forConformance": true,
@@ -18694,7 +18694,7 @@
     },
     {
       "ruleId": "bc659a",
-      "ruleName": "`meta` element has no refresh delay",
+      "ruleName": "Meta element has no refresh delay",
       "ruleAccessibilityRequirements": {
         "wcag20:2.2.1": {
           "forConformance": true,
@@ -18736,7 +18736,7 @@
     },
     {
       "ruleId": "bc659a",
-      "ruleName": "`meta` element has no refresh delay",
+      "ruleName": "Meta element has no refresh delay",
       "ruleAccessibilityRequirements": {
         "wcag20:2.2.1": {
           "forConformance": true,
@@ -18778,7 +18778,7 @@
     },
     {
       "ruleId": "bisz58",
-      "ruleName": "`meta` element has no refresh delay (no exception)",
+      "ruleName": "Meta element has no refresh delay (no exception)",
       "ruleAccessibilityRequirements": {
         "wcag20:2.2.4": {
           "forConformance": true,
@@ -18814,7 +18814,7 @@
     },
     {
       "ruleId": "bisz58",
-      "ruleName": "`meta` element has no refresh delay (no exception)",
+      "ruleName": "Meta element has no refresh delay (no exception)",
       "ruleAccessibilityRequirements": {
         "wcag20:2.2.4": {
           "forConformance": true,
@@ -18850,7 +18850,7 @@
     },
     {
       "ruleId": "bisz58",
-      "ruleName": "`meta` element has no refresh delay (no exception)",
+      "ruleName": "Meta element has no refresh delay (no exception)",
       "ruleAccessibilityRequirements": {
         "wcag20:2.2.4": {
           "forConformance": true,
@@ -18886,7 +18886,7 @@
     },
     {
       "ruleId": "bisz58",
-      "ruleName": "`meta` element has no refresh delay (no exception)",
+      "ruleName": "Meta element has no refresh delay (no exception)",
       "ruleAccessibilityRequirements": {
         "wcag20:2.2.4": {
           "forConformance": true,
@@ -18922,7 +18922,7 @@
     },
     {
       "ruleId": "bisz58",
-      "ruleName": "`meta` element has no refresh delay (no exception)",
+      "ruleName": "Meta element has no refresh delay (no exception)",
       "ruleAccessibilityRequirements": {
         "wcag20:2.2.4": {
           "forConformance": true,
@@ -18958,7 +18958,7 @@
     },
     {
       "ruleId": "bisz58",
-      "ruleName": "`meta` element has no refresh delay (no exception)",
+      "ruleName": "Meta element has no refresh delay (no exception)",
       "ruleAccessibilityRequirements": {
         "wcag20:2.2.4": {
           "forConformance": true,
@@ -18994,7 +18994,7 @@
     },
     {
       "ruleId": "bisz58",
-      "ruleName": "`meta` element has no refresh delay (no exception)",
+      "ruleName": "Meta element has no refresh delay (no exception)",
       "ruleAccessibilityRequirements": {
         "wcag20:2.2.4": {
           "forConformance": true,
@@ -19030,7 +19030,7 @@
     },
     {
       "ruleId": "bisz58",
-      "ruleName": "`meta` element has no refresh delay (no exception)",
+      "ruleName": "Meta element has no refresh delay (no exception)",
       "ruleAccessibilityRequirements": {
         "wcag20:2.2.4": {
           "forConformance": true,
@@ -19066,7 +19066,7 @@
     },
     {
       "ruleId": "bisz58",
-      "ruleName": "`meta` element has no refresh delay (no exception)",
+      "ruleName": "Meta element has no refresh delay (no exception)",
       "ruleAccessibilityRequirements": {
         "wcag20:2.2.4": {
           "forConformance": true,
@@ -19102,7 +19102,7 @@
     },
     {
       "ruleId": "bisz58",
-      "ruleName": "`meta` element has no refresh delay (no exception)",
+      "ruleName": "Meta element has no refresh delay (no exception)",
       "ruleAccessibilityRequirements": {
         "wcag20:2.2.4": {
           "forConformance": true,
@@ -19138,7 +19138,7 @@
     },
     {
       "ruleId": "bisz58",
-      "ruleName": "`meta` element has no refresh delay (no exception)",
+      "ruleName": "Meta element has no refresh delay (no exception)",
       "ruleAccessibilityRequirements": {
         "wcag20:2.2.4": {
           "forConformance": true,
@@ -19174,7 +19174,7 @@
     },
     {
       "ruleId": "bisz58",
-      "ruleName": "`meta` element has no refresh delay (no exception)",
+      "ruleName": "Meta element has no refresh delay (no exception)",
       "ruleAccessibilityRequirements": {
         "wcag20:2.2.4": {
           "forConformance": true,
@@ -19210,7 +19210,7 @@
     },
     {
       "ruleId": "bisz58",
-      "ruleName": "`meta` element has no refresh delay (no exception)",
+      "ruleName": "Meta element has no refresh delay (no exception)",
       "ruleAccessibilityRequirements": {
         "wcag20:2.2.4": {
           "forConformance": true,
@@ -19246,7 +19246,7 @@
     },
     {
       "ruleId": "bisz58",
-      "ruleName": "`meta` element has no refresh delay (no exception)",
+      "ruleName": "Meta element has no refresh delay (no exception)",
       "ruleAccessibilityRequirements": {
         "wcag20:2.2.4": {
           "forConformance": true,
@@ -19282,7 +19282,7 @@
     },
     {
       "ruleId": "b4f0c3",
-      "ruleName": "`meta` `viewport` allows for zoom",
+      "ruleName": "Meta viewport allows for zoom",
       "ruleAccessibilityRequirements": {
         "wcag20:1.4.4": {
           "forConformance": true,
@@ -19300,7 +19300,7 @@
     },
     {
       "ruleId": "b4f0c3",
-      "ruleName": "`meta` `viewport` allows for zoom",
+      "ruleName": "Meta viewport allows for zoom",
       "ruleAccessibilityRequirements": {
         "wcag20:1.4.4": {
           "forConformance": true,
@@ -19318,7 +19318,7 @@
     },
     {
       "ruleId": "b4f0c3",
-      "ruleName": "`meta` `viewport` allows for zoom",
+      "ruleName": "Meta viewport allows for zoom",
       "ruleAccessibilityRequirements": {
         "wcag20:1.4.4": {
           "forConformance": true,
@@ -19336,7 +19336,7 @@
     },
     {
       "ruleId": "b4f0c3",
-      "ruleName": "`meta` `viewport` allows for zoom",
+      "ruleName": "Meta viewport allows for zoom",
       "ruleAccessibilityRequirements": {
         "wcag20:1.4.4": {
           "forConformance": true,
@@ -19354,7 +19354,7 @@
     },
     {
       "ruleId": "b4f0c3",
-      "ruleName": "`meta` `viewport` allows for zoom",
+      "ruleName": "Meta viewport allows for zoom",
       "ruleAccessibilityRequirements": {
         "wcag20:1.4.4": {
           "forConformance": true,
@@ -19372,7 +19372,7 @@
     },
     {
       "ruleId": "b4f0c3",
-      "ruleName": "`meta` `viewport` allows for zoom",
+      "ruleName": "Meta viewport allows for zoom",
       "ruleAccessibilityRequirements": {
         "wcag20:1.4.4": {
           "forConformance": true,
@@ -19390,7 +19390,7 @@
     },
     {
       "ruleId": "b4f0c3",
-      "ruleName": "`meta` `viewport` allows for zoom",
+      "ruleName": "Meta viewport allows for zoom",
       "ruleAccessibilityRequirements": {
         "wcag20:1.4.4": {
           "forConformance": true,
@@ -19408,7 +19408,7 @@
     },
     {
       "ruleId": "b4f0c3",
-      "ruleName": "`meta` `viewport` allows for zoom",
+      "ruleName": "Meta viewport allows for zoom",
       "ruleAccessibilityRequirements": {
         "wcag20:1.4.4": {
           "forConformance": true,
@@ -19426,7 +19426,7 @@
     },
     {
       "ruleId": "b4f0c3",
-      "ruleName": "`meta` `viewport` allows for zoom",
+      "ruleName": "Meta viewport allows for zoom",
       "ruleAccessibilityRequirements": {
         "wcag20:1.4.4": {
           "forConformance": true,
@@ -19444,7 +19444,7 @@
     },
     {
       "ruleId": "b4f0c3",
-      "ruleName": "`meta` `viewport` allows for zoom",
+      "ruleName": "Meta viewport allows for zoom",
       "ruleAccessibilityRequirements": {
         "wcag20:1.4.4": {
           "forConformance": true,
@@ -19462,7 +19462,7 @@
     },
     {
       "ruleId": "b4f0c3",
-      "ruleName": "`meta` `viewport` allows for zoom",
+      "ruleName": "Meta viewport allows for zoom",
       "ruleAccessibilityRequirements": {
         "wcag20:1.4.4": {
           "forConformance": true,
@@ -20542,7 +20542,7 @@
     },
     {
       "ruleId": "674b10",
-      "ruleName": "`role` attribute has valid value",
+      "ruleName": "Role attribute has valid value",
       "ruleAccessibilityRequirements": {
         "wcag20:1.3.1": {
           "forConformance": true,
@@ -20572,7 +20572,7 @@
     },
     {
       "ruleId": "674b10",
-      "ruleName": "`role` attribute has valid value",
+      "ruleName": "Role attribute has valid value",
       "ruleAccessibilityRequirements": {
         "wcag20:1.3.1": {
           "forConformance": true,
@@ -20602,7 +20602,7 @@
     },
     {
       "ruleId": "674b10",
-      "ruleName": "`role` attribute has valid value",
+      "ruleName": "Role attribute has valid value",
       "ruleAccessibilityRequirements": {
         "wcag20:1.3.1": {
           "forConformance": true,
@@ -20632,7 +20632,7 @@
     },
     {
       "ruleId": "674b10",
-      "ruleName": "`role` attribute has valid value",
+      "ruleName": "Role attribute has valid value",
       "ruleAccessibilityRequirements": {
         "wcag20:1.3.1": {
           "forConformance": true,
@@ -20662,7 +20662,7 @@
     },
     {
       "ruleId": "674b10",
-      "ruleName": "`role` attribute has valid value",
+      "ruleName": "Role attribute has valid value",
       "ruleAccessibilityRequirements": {
         "wcag20:1.3.1": {
           "forConformance": true,
@@ -20692,7 +20692,7 @@
     },
     {
       "ruleId": "674b10",
-      "ruleName": "`role` attribute has valid value",
+      "ruleName": "Role attribute has valid value",
       "ruleAccessibilityRequirements": {
         "wcag20:1.3.1": {
           "forConformance": true,
@@ -20722,7 +20722,7 @@
     },
     {
       "ruleId": "674b10",
-      "ruleName": "`role` attribute has valid value",
+      "ruleName": "Role attribute has valid value",
       "ruleAccessibilityRequirements": {
         "wcag20:1.3.1": {
           "forConformance": true,
@@ -20752,7 +20752,7 @@
     },
     {
       "ruleId": "674b10",
-      "ruleName": "`role` attribute has valid value",
+      "ruleName": "Role attribute has valid value",
       "ruleAccessibilityRequirements": {
         "wcag20:1.3.1": {
           "forConformance": true,
@@ -20782,7 +20782,7 @@
     },
     {
       "ruleId": "674b10",
-      "ruleName": "`role` attribute has valid value",
+      "ruleName": "Role attribute has valid value",
       "ruleAccessibilityRequirements": {
         "wcag20:1.3.1": {
           "forConformance": true,
@@ -20812,7 +20812,7 @@
     },
     {
       "ruleId": "674b10",
-      "ruleName": "`role` attribute has valid value",
+      "ruleName": "Role attribute has valid value",
       "ruleAccessibilityRequirements": {
         "wcag20:1.3.1": {
           "forConformance": true,
@@ -20842,7 +20842,7 @@
     },
     {
       "ruleId": "4e8ab6",
-      "ruleName": "Element with `role` attribute has required states and properties",
+      "ruleName": "Element with role attribute has required states and properties",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
           "forConformance": true,
@@ -20866,7 +20866,7 @@
     },
     {
       "ruleId": "4e8ab6",
-      "ruleName": "Element with `role` attribute has required states and properties",
+      "ruleName": "Element with role attribute has required states and properties",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
           "forConformance": true,
@@ -20890,7 +20890,7 @@
     },
     {
       "ruleId": "4e8ab6",
-      "ruleName": "Element with `role` attribute has required states and properties",
+      "ruleName": "Element with role attribute has required states and properties",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
           "forConformance": true,
@@ -20914,7 +20914,7 @@
     },
     {
       "ruleId": "4e8ab6",
-      "ruleName": "Element with `role` attribute has required states and properties",
+      "ruleName": "Element with role attribute has required states and properties",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
           "forConformance": true,
@@ -20938,7 +20938,7 @@
     },
     {
       "ruleId": "4e8ab6",
-      "ruleName": "Element with `role` attribute has required states and properties",
+      "ruleName": "Element with role attribute has required states and properties",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
           "forConformance": true,
@@ -20962,7 +20962,7 @@
     },
     {
       "ruleId": "4e8ab6",
-      "ruleName": "Element with `role` attribute has required states and properties",
+      "ruleName": "Element with role attribute has required states and properties",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
           "forConformance": true,
@@ -20986,7 +20986,7 @@
     },
     {
       "ruleId": "4e8ab6",
-      "ruleName": "Element with `role` attribute has required states and properties",
+      "ruleName": "Element with role attribute has required states and properties",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
           "forConformance": true,
@@ -21010,7 +21010,7 @@
     },
     {
       "ruleId": "4e8ab6",
-      "ruleName": "Element with `role` attribute has required states and properties",
+      "ruleName": "Element with role attribute has required states and properties",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
           "forConformance": true,
@@ -21784,7 +21784,7 @@
     },
     {
       "ruleId": "a25f45",
-      "ruleName": "`headers` attribute specified on a cell refers to cells in the same `table` element",
+      "ruleName": "Headers attribute specified on a cell refers to cells in the same table element",
       "ruleAccessibilityRequirements": {
         "wcag20:1.3.1": {
           "forConformance": true,
@@ -21808,7 +21808,7 @@
     },
     {
       "ruleId": "a25f45",
-      "ruleName": "`headers` attribute specified on a cell refers to cells in the same `table` element",
+      "ruleName": "Headers attribute specified on a cell refers to cells in the same table element",
       "ruleAccessibilityRequirements": {
         "wcag20:1.3.1": {
           "forConformance": true,
@@ -21832,7 +21832,7 @@
     },
     {
       "ruleId": "a25f45",
-      "ruleName": "`headers` attribute specified on a cell refers to cells in the same `table` element",
+      "ruleName": "Headers attribute specified on a cell refers to cells in the same table element",
       "ruleAccessibilityRequirements": {
         "wcag20:1.3.1": {
           "forConformance": true,
@@ -21856,7 +21856,7 @@
     },
     {
       "ruleId": "a25f45",
-      "ruleName": "`headers` attribute specified on a cell refers to cells in the same `table` element",
+      "ruleName": "Headers attribute specified on a cell refers to cells in the same table element",
       "ruleAccessibilityRequirements": {
         "wcag20:1.3.1": {
           "forConformance": true,
@@ -21880,7 +21880,7 @@
     },
     {
       "ruleId": "a25f45",
-      "ruleName": "`headers` attribute specified on a cell refers to cells in the same `table` element",
+      "ruleName": "Headers attribute specified on a cell refers to cells in the same table element",
       "ruleAccessibilityRequirements": {
         "wcag20:1.3.1": {
           "forConformance": true,
@@ -21904,7 +21904,7 @@
     },
     {
       "ruleId": "a25f45",
-      "ruleName": "`headers` attribute specified on a cell refers to cells in the same `table` element",
+      "ruleName": "Headers attribute specified on a cell refers to cells in the same table element",
       "ruleAccessibilityRequirements": {
         "wcag20:1.3.1": {
           "forConformance": true,
@@ -21928,7 +21928,7 @@
     },
     {
       "ruleId": "a25f45",
-      "ruleName": "`headers` attribute specified on a cell refers to cells in the same `table` element",
+      "ruleName": "Headers attribute specified on a cell refers to cells in the same table element",
       "ruleAccessibilityRequirements": {
         "wcag20:1.3.1": {
           "forConformance": true,
@@ -21952,7 +21952,7 @@
     },
     {
       "ruleId": "a25f45",
-      "ruleName": "`headers` attribute specified on a cell refers to cells in the same `table` element",
+      "ruleName": "Headers attribute specified on a cell refers to cells in the same table element",
       "ruleAccessibilityRequirements": {
         "wcag20:1.3.1": {
           "forConformance": true,
@@ -21976,7 +21976,7 @@
     },
     {
       "ruleId": "a25f45",
-      "ruleName": "`headers` attribute specified on a cell refers to cells in the same `table` element",
+      "ruleName": "Headers attribute specified on a cell refers to cells in the same table element",
       "ruleAccessibilityRequirements": {
         "wcag20:1.3.1": {
           "forConformance": true,
@@ -22000,7 +22000,7 @@
     },
     {
       "ruleId": "a25f45",
-      "ruleName": "`headers` attribute specified on a cell refers to cells in the same `table` element",
+      "ruleName": "Headers attribute specified on a cell refers to cells in the same table element",
       "ruleAccessibilityRequirements": {
         "wcag20:1.3.1": {
           "forConformance": true,
@@ -22024,7 +22024,7 @@
     },
     {
       "ruleId": "a25f45",
-      "ruleName": "`headers` attribute specified on a cell refers to cells in the same `table` element",
+      "ruleName": "Headers attribute specified on a cell refers to cells in the same table element",
       "ruleAccessibilityRequirements": {
         "wcag20:1.3.1": {
           "forConformance": true,
@@ -22048,7 +22048,7 @@
     },
     {
       "ruleId": "a25f45",
-      "ruleName": "`headers` attribute specified on a cell refers to cells in the same `table` element",
+      "ruleName": "Headers attribute specified on a cell refers to cells in the same table element",
       "ruleAccessibilityRequirements": {
         "wcag20:1.3.1": {
           "forConformance": true,
@@ -22072,7 +22072,7 @@
     },
     {
       "ruleId": "a25f45",
-      "ruleName": "`headers` attribute specified on a cell refers to cells in the same `table` element",
+      "ruleName": "Headers attribute specified on a cell refers to cells in the same table element",
       "ruleAccessibilityRequirements": {
         "wcag20:1.3.1": {
           "forConformance": true,
@@ -22096,7 +22096,7 @@
     },
     {
       "ruleId": "a25f45",
-      "ruleName": "`headers` attribute specified on a cell refers to cells in the same `table` element",
+      "ruleName": "Headers attribute specified on a cell refers to cells in the same table element",
       "ruleAccessibilityRequirements": {
         "wcag20:1.3.1": {
           "forConformance": true,
@@ -22120,7 +22120,7 @@
     },
     {
       "ruleId": "a25f45",
-      "ruleName": "`headers` attribute specified on a cell refers to cells in the same `table` element",
+      "ruleName": "Headers attribute specified on a cell refers to cells in the same table element",
       "ruleAccessibilityRequirements": {
         "wcag20:1.3.1": {
           "forConformance": true,
@@ -22144,7 +22144,7 @@
     },
     {
       "ruleId": "a25f45",
-      "ruleName": "`headers` attribute specified on a cell refers to cells in the same `table` element",
+      "ruleName": "Headers attribute specified on a cell refers to cells in the same table element",
       "ruleAccessibilityRequirements": {
         "wcag20:1.3.1": {
           "forConformance": true,
@@ -23710,7 +23710,7 @@
     },
     {
       "ruleId": "eac66b",
-      "ruleName": "`video` element auditory content has accessible alternative",
+      "ruleName": "Video element auditory content has accessible alternative",
       "ruleAccessibilityRequirements": {
         "wcag20:1.2.2": {
           "forConformance": true,
@@ -23746,7 +23746,7 @@
     },
     {
       "ruleId": "eac66b",
-      "ruleName": "`video` element auditory content has accessible alternative",
+      "ruleName": "Video element auditory content has accessible alternative",
       "ruleAccessibilityRequirements": {
         "wcag20:1.2.2": {
           "forConformance": true,
@@ -23782,7 +23782,7 @@
     },
     {
       "ruleId": "eac66b",
-      "ruleName": "`video` element auditory content has accessible alternative",
+      "ruleName": "Video element auditory content has accessible alternative",
       "ruleAccessibilityRequirements": {
         "wcag20:1.2.2": {
           "forConformance": true,
@@ -23818,7 +23818,7 @@
     },
     {
       "ruleId": "eac66b",
-      "ruleName": "`video` element auditory content has accessible alternative",
+      "ruleName": "Video element auditory content has accessible alternative",
       "ruleAccessibilityRequirements": {
         "wcag20:1.2.2": {
           "forConformance": true,
@@ -23854,7 +23854,7 @@
     },
     {
       "ruleId": "eac66b",
-      "ruleName": "`video` element auditory content has accessible alternative",
+      "ruleName": "Video element auditory content has accessible alternative",
       "ruleAccessibilityRequirements": {
         "wcag20:1.2.2": {
           "forConformance": true,
@@ -23890,7 +23890,7 @@
     },
     {
       "ruleId": "eac66b",
-      "ruleName": "`video` element auditory content has accessible alternative",
+      "ruleName": "Video element auditory content has accessible alternative",
       "ruleAccessibilityRequirements": {
         "wcag20:1.2.2": {
           "forConformance": true,
@@ -23926,7 +23926,7 @@
     },
     {
       "ruleId": "c5a4ea",
-      "ruleName": "`video` element visual content has accessible alternative",
+      "ruleName": "Video element visual content has accessible alternative",
       "ruleAccessibilityRequirements": {
         "wcag20:1.2.3": {
           "forConformance": true,
@@ -23980,7 +23980,7 @@
     },
     {
       "ruleId": "c5a4ea",
-      "ruleName": "`video` element visual content has accessible alternative",
+      "ruleName": "Video element visual content has accessible alternative",
       "ruleAccessibilityRequirements": {
         "wcag20:1.2.3": {
           "forConformance": true,
@@ -24034,7 +24034,7 @@
     },
     {
       "ruleId": "c5a4ea",
-      "ruleName": "`video` element visual content has accessible alternative",
+      "ruleName": "Video element visual content has accessible alternative",
       "ruleAccessibilityRequirements": {
         "wcag20:1.2.3": {
           "forConformance": true,
@@ -24088,7 +24088,7 @@
     },
     {
       "ruleId": "c5a4ea",
-      "ruleName": "`video` element visual content has accessible alternative",
+      "ruleName": "Video element visual content has accessible alternative",
       "ruleAccessibilityRequirements": {
         "wcag20:1.2.3": {
           "forConformance": true,
@@ -24142,7 +24142,7 @@
     },
     {
       "ruleId": "c5a4ea",
-      "ruleName": "`video` element visual content has accessible alternative",
+      "ruleName": "Video element visual content has accessible alternative",
       "ruleAccessibilityRequirements": {
         "wcag20:1.2.3": {
           "forConformance": true,
@@ -24196,7 +24196,7 @@
     },
     {
       "ruleId": "c5a4ea",
-      "ruleName": "`video` element visual content has accessible alternative",
+      "ruleName": "Video element visual content has accessible alternative",
       "ruleAccessibilityRequirements": {
         "wcag20:1.2.3": {
           "forConformance": true,
@@ -24250,7 +24250,7 @@
     },
     {
       "ruleId": "c5a4ea",
-      "ruleName": "`video` element visual content has accessible alternative",
+      "ruleName": "Video element visual content has accessible alternative",
       "ruleAccessibilityRequirements": {
         "wcag20:1.2.3": {
           "forConformance": true,
@@ -24304,7 +24304,7 @@
     },
     {
       "ruleId": "c5a4ea",
-      "ruleName": "`video` element visual content has accessible alternative",
+      "ruleName": "Video element visual content has accessible alternative",
       "ruleAccessibilityRequirements": {
         "wcag20:1.2.3": {
           "forConformance": true,
@@ -24358,7 +24358,7 @@
     },
     {
       "ruleId": "c5a4ea",
-      "ruleName": "`video` element visual content has accessible alternative",
+      "ruleName": "Video element visual content has accessible alternative",
       "ruleAccessibilityRequirements": {
         "wcag20:1.2.3": {
           "forConformance": true,
@@ -24412,7 +24412,7 @@
     },
     {
       "ruleId": "ab4d13",
-      "ruleName": "`video` element content is media alternative for text",
+      "ruleName": "Video element content is media alternative for text",
       "ruleAccessibilityRequirements": null,
       "expected": "passed",
       "testcaseId": "91f5189004dff8c702eefb7214486bd18868fee1",
@@ -24423,7 +24423,7 @@
     },
     {
       "ruleId": "ab4d13",
-      "ruleName": "`video` element content is media alternative for text",
+      "ruleName": "Video element content is media alternative for text",
       "ruleAccessibilityRequirements": null,
       "expected": "failed",
       "testcaseId": "4b86a2baaa324f721a4bf646b87993be599b82a1",
@@ -24434,7 +24434,7 @@
     },
     {
       "ruleId": "ab4d13",
-      "ruleName": "`video` element content is media alternative for text",
+      "ruleName": "Video element content is media alternative for text",
       "ruleAccessibilityRequirements": null,
       "expected": "failed",
       "testcaseId": "40580c0653f0cb19df46711b7ffacb7bda830aaf",
@@ -24445,7 +24445,7 @@
     },
     {
       "ruleId": "ab4d13",
-      "ruleName": "`video` element content is media alternative for text",
+      "ruleName": "Video element content is media alternative for text",
       "ruleAccessibilityRequirements": null,
       "expected": "failed",
       "testcaseId": "9837335a808b170a2a0ccf3bfc285b0e7629cea1",
@@ -24456,7 +24456,7 @@
     },
     {
       "ruleId": "ab4d13",
-      "ruleName": "`video` element content is media alternative for text",
+      "ruleName": "Video element content is media alternative for text",
       "ruleAccessibilityRequirements": null,
       "expected": "failed",
       "testcaseId": "5e5b75bd2156520a747ba7eae4042bf22e0eaac7",
@@ -24467,7 +24467,7 @@
     },
     {
       "ruleId": "ab4d13",
-      "ruleName": "`video` element content is media alternative for text",
+      "ruleName": "Video element content is media alternative for text",
       "ruleAccessibilityRequirements": null,
       "expected": "inapplicable",
       "testcaseId": "88fc3d4b7e6731ac0560d341141e4d52aee0a9fd",
@@ -24478,7 +24478,7 @@
     },
     {
       "ruleId": "ab4d13",
-      "ruleName": "`video` element content is media alternative for text",
+      "ruleName": "Video element content is media alternative for text",
       "ruleAccessibilityRequirements": null,
       "expected": "inapplicable",
       "testcaseId": "9ef7ab01f8a959d1343acbbaea8f512232e36343",
@@ -24489,7 +24489,7 @@
     },
     {
       "ruleId": "1ea59c",
-      "ruleName": "`video` element visual content has audio description",
+      "ruleName": "Video element visual content has audio description",
       "ruleAccessibilityRequirements": {
         "wcag-technique:G8": {
           "forConformance": false,
@@ -24519,7 +24519,7 @@
     },
     {
       "ruleId": "1ea59c",
-      "ruleName": "`video` element visual content has audio description",
+      "ruleName": "Video element visual content has audio description",
       "ruleAccessibilityRequirements": {
         "wcag-technique:G8": {
           "forConformance": false,
@@ -24549,7 +24549,7 @@
     },
     {
       "ruleId": "1ea59c",
-      "ruleName": "`video` element visual content has audio description",
+      "ruleName": "Video element visual content has audio description",
       "ruleAccessibilityRequirements": {
         "wcag-technique:G8": {
           "forConformance": false,
@@ -24579,7 +24579,7 @@
     },
     {
       "ruleId": "1ea59c",
-      "ruleName": "`video` element visual content has audio description",
+      "ruleName": "Video element visual content has audio description",
       "ruleAccessibilityRequirements": {
         "wcag-technique:G8": {
           "forConformance": false,
@@ -24609,7 +24609,7 @@
     },
     {
       "ruleId": "1ea59c",
-      "ruleName": "`video` element visual content has audio description",
+      "ruleName": "Video element visual content has audio description",
       "ruleAccessibilityRequirements": {
         "wcag-technique:G8": {
           "forConformance": false,
@@ -24639,7 +24639,7 @@
     },
     {
       "ruleId": "1ea59c",
-      "ruleName": "`video` element visual content has audio description",
+      "ruleName": "Video element visual content has audio description",
       "ruleAccessibilityRequirements": {
         "wcag-technique:G8": {
           "forConformance": false,
@@ -24669,7 +24669,7 @@
     },
     {
       "ruleId": "1ea59c",
-      "ruleName": "`video` element visual content has audio description",
+      "ruleName": "Video element visual content has audio description",
       "ruleAccessibilityRequirements": {
         "wcag-technique:G8": {
           "forConformance": false,
@@ -24699,7 +24699,7 @@
     },
     {
       "ruleId": "f51b46",
-      "ruleName": "`video` element auditory content has captions",
+      "ruleName": "Video element auditory content has captions",
       "ruleAccessibilityRequirements": {
         "wcag-technique:G87": {
           "forConformance": false,
@@ -24729,7 +24729,7 @@
     },
     {
       "ruleId": "f51b46",
-      "ruleName": "`video` element auditory content has captions",
+      "ruleName": "Video element auditory content has captions",
       "ruleAccessibilityRequirements": {
         "wcag-technique:G87": {
           "forConformance": false,
@@ -24759,7 +24759,7 @@
     },
     {
       "ruleId": "f51b46",
-      "ruleName": "`video` element auditory content has captions",
+      "ruleName": "Video element auditory content has captions",
       "ruleAccessibilityRequirements": {
         "wcag-technique:G87": {
           "forConformance": false,
@@ -24789,7 +24789,7 @@
     },
     {
       "ruleId": "f51b46",
-      "ruleName": "`video` element auditory content has captions",
+      "ruleName": "Video element auditory content has captions",
       "ruleAccessibilityRequirements": {
         "wcag-technique:G87": {
           "forConformance": false,
@@ -24819,7 +24819,7 @@
     },
     {
       "ruleId": "f51b46",
-      "ruleName": "`video` element auditory content has captions",
+      "ruleName": "Video element auditory content has captions",
       "ruleAccessibilityRequirements": {
         "wcag-technique:G87": {
           "forConformance": false,
@@ -24849,7 +24849,7 @@
     },
     {
       "ruleId": "f51b46",
-      "ruleName": "`video` element auditory content has captions",
+      "ruleName": "Video element auditory content has captions",
       "ruleAccessibilityRequirements": {
         "wcag-technique:G87": {
           "forConformance": false,
@@ -24879,7 +24879,7 @@
     },
     {
       "ruleId": "f51b46",
-      "ruleName": "`video` element auditory content has captions",
+      "ruleName": "Video element auditory content has captions",
       "ruleAccessibilityRequirements": {
         "wcag-technique:G87": {
           "forConformance": false,
@@ -24909,7 +24909,7 @@
     },
     {
       "ruleId": "f51b46",
-      "ruleName": "`video` element auditory content has captions",
+      "ruleName": "Video element auditory content has captions",
       "ruleAccessibilityRequirements": {
         "wcag-technique:G87": {
           "forConformance": false,
@@ -24939,7 +24939,7 @@
     },
     {
       "ruleId": "f196ce",
-      "ruleName": "DEPRECATED — `video` element visual content has description track",
+      "ruleName": "DEPRECATED — Video element visual content has description track",
       "ruleAccessibilityRequirements": {
         "wcag-technique:G78": {
           "forConformance": false,
@@ -24963,7 +24963,7 @@
     },
     {
       "ruleId": "f196ce",
-      "ruleName": "DEPRECATED — `video` element visual content has description track",
+      "ruleName": "DEPRECATED — Video element visual content has description track",
       "ruleAccessibilityRequirements": {
         "wcag-technique:G78": {
           "forConformance": false,
@@ -24987,7 +24987,7 @@
     },
     {
       "ruleId": "f196ce",
-      "ruleName": "DEPRECATED — `video` element visual content has description track",
+      "ruleName": "DEPRECATED — Video element visual content has description track",
       "ruleAccessibilityRequirements": {
         "wcag-technique:G78": {
           "forConformance": false,
@@ -25011,7 +25011,7 @@
     },
     {
       "ruleId": "f196ce",
-      "ruleName": "DEPRECATED — `video` element visual content has description track",
+      "ruleName": "DEPRECATED — Video element visual content has description track",
       "ruleAccessibilityRequirements": {
         "wcag-technique:G78": {
           "forConformance": false,
@@ -25035,7 +25035,7 @@
     },
     {
       "ruleId": "f196ce",
-      "ruleName": "DEPRECATED — `video` element visual content has description track",
+      "ruleName": "DEPRECATED — Video element visual content has description track",
       "ruleAccessibilityRequirements": {
         "wcag-technique:G78": {
           "forConformance": false,
@@ -25059,7 +25059,7 @@
     },
     {
       "ruleId": "c3232f",
-      "ruleName": "`video` element visual-only content has accessible alternative",
+      "ruleName": "Video element visual-only content has accessible alternative",
       "ruleAccessibilityRequirements": {
         "wcag20:1.2.1": {
           "forConformance": true,
@@ -25089,7 +25089,7 @@
     },
     {
       "ruleId": "c3232f",
-      "ruleName": "`video` element visual-only content has accessible alternative",
+      "ruleName": "Video element visual-only content has accessible alternative",
       "ruleAccessibilityRequirements": {
         "wcag20:1.2.1": {
           "forConformance": true,
@@ -25119,7 +25119,7 @@
     },
     {
       "ruleId": "c3232f",
-      "ruleName": "`video` element visual-only content has accessible alternative",
+      "ruleName": "Video element visual-only content has accessible alternative",
       "ruleAccessibilityRequirements": {
         "wcag20:1.2.1": {
           "forConformance": true,
@@ -25149,7 +25149,7 @@
     },
     {
       "ruleId": "c3232f",
-      "ruleName": "`video` element visual-only content has accessible alternative",
+      "ruleName": "Video element visual-only content has accessible alternative",
       "ruleAccessibilityRequirements": {
         "wcag20:1.2.1": {
           "forConformance": true,
@@ -25179,7 +25179,7 @@
     },
     {
       "ruleId": "c3232f",
-      "ruleName": "`video` element visual-only content has accessible alternative",
+      "ruleName": "Video element visual-only content has accessible alternative",
       "ruleAccessibilityRequirements": {
         "wcag20:1.2.1": {
           "forConformance": true,
@@ -25209,7 +25209,7 @@
     },
     {
       "ruleId": "c3232f",
-      "ruleName": "`video` element visual-only content has accessible alternative",
+      "ruleName": "Video element visual-only content has accessible alternative",
       "ruleAccessibilityRequirements": {
         "wcag20:1.2.1": {
           "forConformance": true,
@@ -25239,7 +25239,7 @@
     },
     {
       "ruleId": "c3232f",
-      "ruleName": "`video` element visual-only content has accessible alternative",
+      "ruleName": "Video element visual-only content has accessible alternative",
       "ruleAccessibilityRequirements": {
         "wcag20:1.2.1": {
           "forConformance": true,
@@ -25269,7 +25269,7 @@
     },
     {
       "ruleId": "c3232f",
-      "ruleName": "`video` element visual-only content has accessible alternative",
+      "ruleName": "Video element visual-only content has accessible alternative",
       "ruleAccessibilityRequirements": {
         "wcag20:1.2.1": {
           "forConformance": true,
@@ -25299,7 +25299,7 @@
     },
     {
       "ruleId": "c3232f",
-      "ruleName": "`video` element visual-only content has accessible alternative",
+      "ruleName": "Video element visual-only content has accessible alternative",
       "ruleAccessibilityRequirements": {
         "wcag20:1.2.1": {
           "forConformance": true,
@@ -25329,7 +25329,7 @@
     },
     {
       "ruleId": "fd26cf",
-      "ruleName": "`video` element visual-only content is media alternative for text",
+      "ruleName": "Video element visual-only content is media alternative for text",
       "ruleAccessibilityRequirements": null,
       "expected": "passed",
       "testcaseId": "481e55b81376491b363aab5c622e58fe6b63bace",
@@ -25340,7 +25340,7 @@
     },
     {
       "ruleId": "fd26cf",
-      "ruleName": "`video` element visual-only content is media alternative for text",
+      "ruleName": "Video element visual-only content is media alternative for text",
       "ruleAccessibilityRequirements": null,
       "expected": "failed",
       "testcaseId": "095d586472a567660c95d2954f9fc65275c159fe",
@@ -25351,7 +25351,7 @@
     },
     {
       "ruleId": "fd26cf",
-      "ruleName": "`video` element visual-only content is media alternative for text",
+      "ruleName": "Video element visual-only content is media alternative for text",
       "ruleAccessibilityRequirements": null,
       "expected": "failed",
       "testcaseId": "cc09b4256a230ce3b1c7992316e2adb405f88de6",
@@ -25362,7 +25362,7 @@
     },
     {
       "ruleId": "fd26cf",
-      "ruleName": "`video` element visual-only content is media alternative for text",
+      "ruleName": "Video element visual-only content is media alternative for text",
       "ruleAccessibilityRequirements": null,
       "expected": "failed",
       "testcaseId": "0f884e5935b0e6b1bd809d550738772e32f439c5",
@@ -25373,7 +25373,7 @@
     },
     {
       "ruleId": "fd26cf",
-      "ruleName": "`video` element visual-only content is media alternative for text",
+      "ruleName": "Video element visual-only content is media alternative for text",
       "ruleAccessibilityRequirements": null,
       "expected": "failed",
       "testcaseId": "10ce0d34bb2e94f7cf3551d566d10e8f5e21c9f3",
@@ -25384,7 +25384,7 @@
     },
     {
       "ruleId": "fd26cf",
-      "ruleName": "`video` element visual-only content is media alternative for text",
+      "ruleName": "Video element visual-only content is media alternative for text",
       "ruleAccessibilityRequirements": null,
       "expected": "inapplicable",
       "testcaseId": "91f5189004dff8c702eefb7214486bd18868fee1",
@@ -25395,7 +25395,7 @@
     },
     {
       "ruleId": "fd26cf",
-      "ruleName": "`video` element visual-only content is media alternative for text",
+      "ruleName": "Video element visual-only content is media alternative for text",
       "ruleAccessibilityRequirements": null,
       "expected": "inapplicable",
       "testcaseId": "410798f8a3fb14f6dd3f6a47c50f52d7bb7ff739",
@@ -25406,7 +25406,7 @@
     },
     {
       "ruleId": "d7ba54",
-      "ruleName": "`video` element visual-only content has audio track alternative",
+      "ruleName": "Video element visual-only content has audio track alternative",
       "ruleAccessibilityRequirements": {
         "wcag-technique:G166": {
           "forConformance": false,
@@ -25424,7 +25424,7 @@
     },
     {
       "ruleId": "d7ba54",
-      "ruleName": "`video` element visual-only content has audio track alternative",
+      "ruleName": "Video element visual-only content has audio track alternative",
       "ruleAccessibilityRequirements": {
         "wcag-technique:G166": {
           "forConformance": false,
@@ -25442,7 +25442,7 @@
     },
     {
       "ruleId": "d7ba54",
-      "ruleName": "`video` element visual-only content has audio track alternative",
+      "ruleName": "Video element visual-only content has audio track alternative",
       "ruleAccessibilityRequirements": {
         "wcag-technique:G166": {
           "forConformance": false,
@@ -25460,7 +25460,7 @@
     },
     {
       "ruleId": "d7ba54",
-      "ruleName": "`video` element visual-only content has audio track alternative",
+      "ruleName": "Video element visual-only content has audio track alternative",
       "ruleAccessibilityRequirements": {
         "wcag-technique:G166": {
           "forConformance": false,
@@ -25478,7 +25478,7 @@
     },
     {
       "ruleId": "d7ba54",
-      "ruleName": "`video` element visual-only content has audio track alternative",
+      "ruleName": "Video element visual-only content has audio track alternative",
       "ruleAccessibilityRequirements": {
         "wcag-technique:G166": {
           "forConformance": false,
@@ -25496,7 +25496,7 @@
     },
     {
       "ruleId": "ac7dc6",
-      "ruleName": "DEPRECATED — `video` element visual-only content has description track",
+      "ruleName": "DEPRECATED — Video element visual-only content has description track",
       "ruleAccessibilityRequirements": {
         "wcag-technique:H96": {
           "forConformance": false,
@@ -25514,7 +25514,7 @@
     },
     {
       "ruleId": "ac7dc6",
-      "ruleName": "DEPRECATED — `video` element visual-only content has description track",
+      "ruleName": "DEPRECATED — Video element visual-only content has description track",
       "ruleAccessibilityRequirements": {
         "wcag-technique:H96": {
           "forConformance": false,
@@ -25532,7 +25532,7 @@
     },
     {
       "ruleId": "ac7dc6",
-      "ruleName": "DEPRECATED — `video` element visual-only content has description track",
+      "ruleName": "DEPRECATED — Video element visual-only content has description track",
       "ruleAccessibilityRequirements": {
         "wcag-technique:H96": {
           "forConformance": false,
@@ -25550,7 +25550,7 @@
     },
     {
       "ruleId": "ac7dc6",
-      "ruleName": "DEPRECATED — `video` element visual-only content has description track",
+      "ruleName": "DEPRECATED — Video element visual-only content has description track",
       "ruleAccessibilityRequirements": {
         "wcag-technique:H96": {
           "forConformance": false,
@@ -25568,7 +25568,7 @@
     },
     {
       "ruleId": "ac7dc6",
-      "ruleName": "DEPRECATED — `video` element visual-only content has description track",
+      "ruleName": "DEPRECATED — Video element visual-only content has description track",
       "ruleAccessibilityRequirements": {
         "wcag-technique:H96": {
           "forConformance": false,
@@ -25586,7 +25586,7 @@
     },
     {
       "ruleId": "ee13b5",
-      "ruleName": "`video` element visual-only content has transcript",
+      "ruleName": "Video element visual-only content has transcript",
       "ruleAccessibilityRequirements": {
         "wcag-technique:G159": {
           "forConformance": false,
@@ -25604,7 +25604,7 @@
     },
     {
       "ruleId": "ee13b5",
-      "ruleName": "`video` element visual-only content has transcript",
+      "ruleName": "Video element visual-only content has transcript",
       "ruleAccessibilityRequirements": {
         "wcag-technique:G159": {
           "forConformance": false,
@@ -25622,7 +25622,7 @@
     },
     {
       "ruleId": "ee13b5",
-      "ruleName": "`video` element visual-only content has transcript",
+      "ruleName": "Video element visual-only content has transcript",
       "ruleAccessibilityRequirements": {
         "wcag-technique:G159": {
           "forConformance": false,
@@ -25640,7 +25640,7 @@
     },
     {
       "ruleId": "ee13b5",
-      "ruleName": "`video` element visual-only content has transcript",
+      "ruleName": "Video element visual-only content has transcript",
       "ruleAccessibilityRequirements": {
         "wcag-technique:G159": {
           "forConformance": false,
@@ -25658,7 +25658,7 @@
     },
     {
       "ruleId": "ee13b5",
-      "ruleName": "`video` element visual-only content has transcript",
+      "ruleName": "Video element visual-only content has transcript",
       "ruleAccessibilityRequirements": {
         "wcag-technique:G159": {
           "forConformance": false,
@@ -25676,7 +25676,7 @@
     },
     {
       "ruleId": "ee13b5",
-      "ruleName": "`video` element visual-only content has transcript",
+      "ruleName": "Video element visual-only content has transcript",
       "ruleAccessibilityRequirements": {
         "wcag-technique:G159": {
           "forConformance": false,
@@ -25694,7 +25694,7 @@
     },
     {
       "ruleId": "ee13b5",
-      "ruleName": "`video` element visual-only content has transcript",
+      "ruleName": "Video element visual-only content has transcript",
       "ruleAccessibilityRequirements": {
         "wcag-technique:G159": {
           "forConformance": false,
@@ -25712,7 +25712,7 @@
     },
     {
       "ruleId": "ee13b5",
-      "ruleName": "`video` element visual-only content has transcript",
+      "ruleName": "Video element visual-only content has transcript",
       "ruleAccessibilityRequirements": {
         "wcag-technique:G159": {
           "forConformance": false,
@@ -25730,7 +25730,7 @@
     },
     {
       "ruleId": "1ec09b",
-      "ruleName": "`video` element visual content has strict accessible alternative",
+      "ruleName": "Video element visual content has strict accessible alternative",
       "ruleAccessibilityRequirements": {
         "wcag20:1.2.5": {
           "forConformance": true,
@@ -25766,7 +25766,7 @@
     },
     {
       "ruleId": "1ec09b",
-      "ruleName": "`video` element visual content has strict accessible alternative",
+      "ruleName": "Video element visual content has strict accessible alternative",
       "ruleAccessibilityRequirements": {
         "wcag20:1.2.5": {
           "forConformance": true,
@@ -25802,7 +25802,7 @@
     },
     {
       "ruleId": "1ec09b",
-      "ruleName": "`video` element visual content has strict accessible alternative",
+      "ruleName": "Video element visual content has strict accessible alternative",
       "ruleAccessibilityRequirements": {
         "wcag20:1.2.5": {
           "forConformance": true,
@@ -25838,7 +25838,7 @@
     },
     {
       "ruleId": "1ec09b",
-      "ruleName": "`video` element visual content has strict accessible alternative",
+      "ruleName": "Video element visual content has strict accessible alternative",
       "ruleAccessibilityRequirements": {
         "wcag20:1.2.5": {
           "forConformance": true,
@@ -25874,7 +25874,7 @@
     },
     {
       "ruleId": "1ec09b",
-      "ruleName": "`video` element visual content has strict accessible alternative",
+      "ruleName": "Video element visual content has strict accessible alternative",
       "ruleAccessibilityRequirements": {
         "wcag20:1.2.5": {
           "forConformance": true,
@@ -25910,7 +25910,7 @@
     },
     {
       "ruleId": "1ec09b",
-      "ruleName": "`video` element visual content has strict accessible alternative",
+      "ruleName": "Video element visual content has strict accessible alternative",
       "ruleAccessibilityRequirements": {
         "wcag20:1.2.5": {
           "forConformance": true,
@@ -25946,7 +25946,7 @@
     },
     {
       "ruleId": "1ec09b",
-      "ruleName": "`video` element visual content has strict accessible alternative",
+      "ruleName": "Video element visual content has strict accessible alternative",
       "ruleAccessibilityRequirements": {
         "wcag20:1.2.5": {
           "forConformance": true,
@@ -25982,7 +25982,7 @@
     },
     {
       "ruleId": "1a02b0",
-      "ruleName": "Audio and visuals of `video` element have transcript",
+      "ruleName": "Audio and visuals of video element have transcript",
       "ruleAccessibilityRequirements": {
         "wcag20:1.2.8": {
           "forConformance": true,
@@ -26006,7 +26006,7 @@
     },
     {
       "ruleId": "1a02b0",
-      "ruleName": "Audio and visuals of `video` element have transcript",
+      "ruleName": "Audio and visuals of video element have transcript",
       "ruleAccessibilityRequirements": {
         "wcag20:1.2.8": {
           "forConformance": true,
@@ -26030,7 +26030,7 @@
     },
     {
       "ruleId": "1a02b0",
-      "ruleName": "Audio and visuals of `video` element have transcript",
+      "ruleName": "Audio and visuals of video element have transcript",
       "ruleAccessibilityRequirements": {
         "wcag20:1.2.8": {
           "forConformance": true,
@@ -26054,7 +26054,7 @@
     },
     {
       "ruleId": "1a02b0",
-      "ruleName": "Audio and visuals of `video` element have transcript",
+      "ruleName": "Audio and visuals of video element have transcript",
       "ruleAccessibilityRequirements": {
         "wcag20:1.2.8": {
           "forConformance": true,
@@ -26078,7 +26078,7 @@
     },
     {
       "ruleId": "1a02b0",
-      "ruleName": "Audio and visuals of `video` element have transcript",
+      "ruleName": "Audio and visuals of video element have transcript",
       "ruleAccessibilityRequirements": {
         "wcag20:1.2.8": {
           "forConformance": true,

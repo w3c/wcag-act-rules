@@ -1,5 +1,5 @@
 ---
-title: "video element visual content has accessible alternative"
+title: "Video element visual content has accessible alternative"
 permalink: /standards-guidelines/act/rules/c5a4ea/proposed/
 ref: /standards-guidelines/act/rules/c5a4ea/proposed/
 lang: en
@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> c5a4ea</p>
-  <p><strong>Date:</strong> Updated 31 March 2022</p>
+  <p><strong>Date:</strong> Updated 30 May 2022</p>
   <p><strong>Authors:</strong> <a href="https://www.linkedin.com/in/brianbors/">Brian Bors</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
   
@@ -17,11 +17,11 @@ footer: |
 proposed: true
 rule_meta:
   id: c5a4ea
-  name: "`video` element visual content has accessible alternative"
+  name: "Video element visual content has accessible alternative"
   rule_type: composite
   description: |
     This rule checks that `video` elements with audio have an alternative for the video content as audio or as text.
-  last_modified: 31 March 2022
+  last_modified: 30 May 2022
   scs_tested:
     - handle: Audio Description or Media Alternative (Prerecorded)
       num: 1.2.3
@@ -161,9 +161,9 @@ This rule is designed specifically for [1.2.3 Audio Description or Media Alterna
 
 Outcomes of the following rules are required as input for this rule.
 
-- [`video` element visual content has audio description](/standards-guidelines/act/rules/video-audio-description-1ea59c/)
-- [Audio and visuals of `video` element have transcript](/standards-guidelines/act/rules/video-transcript-1a02b0/)
-- [`video` element content is media alternative for text](/standards-guidelines/act/rules/video-as-media-alternative-ab4d13/)
+- [Video element visual content has audio description](/standards-guidelines/act/rules/video-audio-description-1ea59c/)
+- [Audio and visuals of video element have transcript](/standards-guidelines/act/rules/video-transcript-1a02b0/)
+- [Video element content is media alternative for text](/standards-guidelines/act/rules/video-as-media-alternative-ab4d13/)
 
 ## Test Cases
 
