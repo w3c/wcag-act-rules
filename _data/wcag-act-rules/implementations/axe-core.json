@@ -1,11 +1,10 @@
 {
   "vendor": "Deque Systems",
   "name": "Axe-core",
-  "version": "4.4.2",
-  "versionDate": "2022/02/04",
+  "version": "4.5 Preview",
   "approvedRules": {
-    "complete": 7,
-    "partial": 3,
+    "complete": 9,
+    "partial": 1,
     "minimal": 0,
     "inconsistent": 4,
     "untested": 0
@@ -1031,7 +1030,6 @@
       "ruleName": "Element marked as decorative is not exposed",
       "ruleApproved": true,
       "procedureNames": [
-        "area-alt",
         "aria-meter-name",
         "aria-progressbar-name",
         "image-alt",
@@ -1060,12 +1058,6 @@
           "testCaseApproved": true,
           "expected": "passed",
           "procedureResults": [
-            {
-              "procedureName": "area-alt",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
             {
               "procedureName": "aria-meter-name",
               "outcomes": [
@@ -1118,12 +1110,6 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "area-alt",
-              "outcomes": [
-                "untested"
-              ]
-            },
-            {
               "procedureName": "aria-meter-name",
               "outcomes": [
                 "untested"
@@ -1174,12 +1160,6 @@
           "testCaseApproved": true,
           "expected": "passed",
           "procedureResults": [
-            {
-              "procedureName": "area-alt",
-              "outcomes": [
-                "untested"
-              ]
-            },
             {
               "procedureName": "aria-meter-name",
               "outcomes": [
@@ -1232,12 +1212,6 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "area-alt",
-              "outcomes": [
-                "untested"
-              ]
-            },
-            {
               "procedureName": "aria-meter-name",
               "outcomes": [
                 "untested"
@@ -1288,12 +1262,6 @@
           "testCaseApproved": true,
           "expected": "passed",
           "procedureResults": [
-            {
-              "procedureName": "area-alt",
-              "outcomes": [
-                "untested"
-              ]
-            },
             {
               "procedureName": "aria-meter-name",
               "outcomes": [
@@ -1346,12 +1314,6 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "area-alt",
-              "outcomes": [
-                "untested"
-              ]
-            },
-            {
               "procedureName": "aria-meter-name",
               "outcomes": [
                 "untested"
@@ -1402,12 +1364,6 @@
           "testCaseApproved": true,
           "expected": "failed",
           "procedureResults": [
-            {
-              "procedureName": "area-alt",
-              "outcomes": [
-                "untested"
-              ]
-            },
             {
               "procedureName": "aria-meter-name",
               "outcomes": [
@@ -1460,12 +1416,6 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "area-alt",
-              "outcomes": [
-                "untested"
-              ]
-            },
-            {
               "procedureName": "aria-meter-name",
               "outcomes": [
                 "untested"
@@ -1517,12 +1467,6 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "area-alt",
-              "outcomes": [
-                "untested"
-              ]
-            },
-            {
               "procedureName": "aria-meter-name",
               "outcomes": [
                 "untested"
@@ -1573,12 +1517,6 @@
           "testCaseApproved": true,
           "expected": "inapplicable",
           "procedureResults": [
-            {
-              "procedureName": "area-alt",
-              "outcomes": [
-                "untested"
-              ]
-            },
             {
               "procedureName": "aria-meter-name",
               "outcomes": [
@@ -1634,15 +1572,14 @@
         "label",
         "select-name"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:name-role-value"
         ],
         "reported": [
-          "WCAG2:name-role-value",
-          "WCAG2:info-and-relationships"
+          "WCAG2:name-role-value"
         ]
       },
       "coverage": {
@@ -2783,15 +2720,16 @@
       "procedureNames": [
         "input-image-alt"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:non-text-content",
           "WCAG2:name-role-value"
         ],
         "reported": [
-          "WCAG2:non-text-content"
+          "WCAG2:non-text-content",
+          "WCAG2:name-role-value"
         ]
       },
       "coverage": {
@@ -3675,8 +3613,7 @@
         ],
         "reported": [
           "WCAG2:name-role-value",
-          "WCAG2:link-purpose-in-context",
-          "WCAG2:non-text-content"
+          "WCAG2:link-purpose-in-context"
         ]
       },
       "coverage": {
@@ -4521,13 +4458,12 @@
       ],
       "consistency": "partial",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:name-role-value"
         ],
         "reported": [
-          "WCAG2:name-role-value",
-          "WCAG2:info-and-relationships"
+          "WCAG2:name-role-value"
         ]
       },
       "coverage": {
@@ -5778,6 +5714,7 @@
         "button-name",
         "frame-title",
         "input-button-name",
+        "input-image-alt",
         "label",
         "link-name",
         "nested-interactive",
@@ -5952,6 +5889,12 @@
             },
             {
               "procedureName": "input-button-name",
+              "outcomes": [
+                "untested"
+              ]
+            },
+            {
+              "procedureName": "input-image-alt",
               "outcomes": [
                 "untested"
               ]
@@ -6140,6 +6083,12 @@
               ]
             },
             {
+              "procedureName": "input-image-alt",
+              "outcomes": [
+                "untested"
+              ]
+            },
+            {
               "procedureName": "label",
               "outcomes": [
                 "untested"
@@ -6318,6 +6267,12 @@
             },
             {
               "procedureName": "input-button-name",
+              "outcomes": [
+                "untested"
+              ]
+            },
+            {
+              "procedureName": "input-image-alt",
               "outcomes": [
                 "untested"
               ]
@@ -6506,6 +6461,12 @@
               ]
             },
             {
+              "procedureName": "input-image-alt",
+              "outcomes": [
+                "untested"
+              ]
+            },
+            {
               "procedureName": "label",
               "outcomes": [
                 "untested"
@@ -6684,6 +6645,12 @@
             },
             {
               "procedureName": "input-button-name",
+              "outcomes": [
+                "untested"
+              ]
+            },
+            {
+              "procedureName": "input-image-alt",
               "outcomes": [
                 "untested"
               ]
@@ -6872,6 +6839,12 @@
               ]
             },
             {
+              "procedureName": "input-image-alt",
+              "outcomes": [
+                "untested"
+              ]
+            },
+            {
               "procedureName": "label",
               "outcomes": [
                 "untested"
@@ -7050,6 +7023,12 @@
             },
             {
               "procedureName": "input-button-name",
+              "outcomes": [
+                "untested"
+              ]
+            },
+            {
+              "procedureName": "input-image-alt",
               "outcomes": [
                 "untested"
               ]
@@ -7238,6 +7217,12 @@
               ]
             },
             {
+              "procedureName": "input-image-alt",
+              "outcomes": [
+                "untested"
+              ]
+            },
+            {
               "procedureName": "label",
               "outcomes": [
                 "untested"
@@ -7416,6 +7401,12 @@
             },
             {
               "procedureName": "input-button-name",
+              "outcomes": [
+                "untested"
+              ]
+            },
+            {
+              "procedureName": "input-image-alt",
               "outcomes": [
                 "untested"
               ]
@@ -7604,6 +7595,12 @@
               ]
             },
             {
+              "procedureName": "input-image-alt",
+              "outcomes": [
+                "untested"
+              ]
+            },
+            {
               "procedureName": "label",
               "outcomes": [
                 "untested"
@@ -7782,6 +7779,12 @@
             },
             {
               "procedureName": "input-button-name",
+              "outcomes": [
+                "untested"
+              ]
+            },
+            {
+              "procedureName": "input-image-alt",
               "outcomes": [
                 "untested"
               ]
@@ -7970,6 +7973,12 @@
               ]
             },
             {
+              "procedureName": "input-image-alt",
+              "outcomes": [
+                "untested"
+              ]
+            },
+            {
               "procedureName": "label",
               "outcomes": [
                 "untested"
@@ -8148,6 +8157,12 @@
             },
             {
               "procedureName": "input-button-name",
+              "outcomes": [
+                "untested"
+              ]
+            },
+            {
+              "procedureName": "input-image-alt",
               "outcomes": [
                 "untested"
               ]
@@ -8336,6 +8351,12 @@
               ]
             },
             {
+              "procedureName": "input-image-alt",
+              "outcomes": [
+                "untested"
+              ]
+            },
+            {
               "procedureName": "label",
               "outcomes": [
                 "untested"
@@ -8514,6 +8535,12 @@
             },
             {
               "procedureName": "input-button-name",
+              "outcomes": [
+                "untested"
+              ]
+            },
+            {
+              "procedureName": "input-image-alt",
               "outcomes": [
                 "untested"
               ]
@@ -8702,6 +8729,12 @@
               ]
             },
             {
+              "procedureName": "input-image-alt",
+              "outcomes": [
+                "untested"
+              ]
+            },
+            {
               "procedureName": "label",
               "outcomes": [
                 "untested"
@@ -8880,6 +8913,12 @@
             },
             {
               "procedureName": "input-button-name",
+              "outcomes": [
+                "untested"
+              ]
+            },
+            {
+              "procedureName": "input-image-alt",
               "outcomes": [
                 "untested"
               ]
@@ -9068,6 +9107,12 @@
               ]
             },
             {
+              "procedureName": "input-image-alt",
+              "outcomes": [
+                "untested"
+              ]
+            },
+            {
               "procedureName": "label",
               "outcomes": [
                 "untested"
@@ -9251,6 +9296,12 @@
               ]
             },
             {
+              "procedureName": "input-image-alt",
+              "outcomes": [
+                "untested"
+              ]
+            },
+            {
               "procedureName": "label",
               "outcomes": [
                 "untested"
@@ -9429,6 +9480,12 @@
             },
             {
               "procedureName": "input-button-name",
+              "outcomes": [
+                "untested"
+              ]
+            },
+            {
+              "procedureName": "input-image-alt",
               "outcomes": [
                 "untested"
               ]
@@ -9628,6 +9685,12 @@
               ]
             },
             {
+              "procedureName": "input-image-alt",
+              "outcomes": [
+                "inapplicable"
+              ]
+            },
+            {
               "procedureName": "label",
               "outcomes": [
                 "inapplicable"
@@ -9806,6 +9869,12 @@
             },
             {
               "procedureName": "input-button-name",
+              "outcomes": [
+                "untested"
+              ]
+            },
+            {
+              "procedureName": "input-image-alt",
               "outcomes": [
                 "untested"
               ]
@@ -9994,6 +10063,12 @@
               ]
             },
             {
+              "procedureName": "input-image-alt",
+              "outcomes": [
+                "untested"
+              ]
+            },
+            {
               "procedureName": "label",
               "outcomes": [
                 "untested"
@@ -10177,6 +10252,12 @@
               ]
             },
             {
+              "procedureName": "input-image-alt",
+              "outcomes": [
+                "untested"
+              ]
+            },
+            {
               "procedureName": "label",
               "outcomes": [
                 "untested"
@@ -10213,16 +10294,13 @@
         "duplicate-id-aria",
         "duplicate-id",
         "input-image-alt",
-        "aria-hidden-focus",
         "aria-required-children",
         "aria-required-parent",
         "definition-list",
         "dlitem",
-        "label",
         "list",
         "listitem",
         "p-as-heading",
-        "select-name",
         "table-fake-caption",
         "td-has-header",
         "td-headers-attr",
@@ -10275,12 +10353,6 @@
               ]
             },
             {
-              "procedureName": "aria-hidden-focus",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
               "procedureName": "aria-required-children",
               "outcomes": [
                 "inapplicable"
@@ -10305,12 +10377,6 @@
               ]
             },
             {
-              "procedureName": "label",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
               "procedureName": "list",
               "outcomes": [
                 "inapplicable"
@@ -10324,12 +10390,6 @@
             },
             {
               "procedureName": "p-as-heading",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
-              "procedureName": "select-name",
               "outcomes": [
                 "inapplicable"
               ]
@@ -10392,12 +10452,6 @@
               ]
             },
             {
-              "procedureName": "aria-hidden-focus",
-              "outcomes": [
-                "untested"
-              ]
-            },
-            {
               "procedureName": "aria-required-children",
               "outcomes": [
                 "untested"
@@ -10422,12 +10476,6 @@
               ]
             },
             {
-              "procedureName": "label",
-              "outcomes": [
-                "untested"
-              ]
-            },
-            {
               "procedureName": "list",
               "outcomes": [
                 "untested"
@@ -10441,12 +10489,6 @@
             },
             {
               "procedureName": "p-as-heading",
-              "outcomes": [
-                "untested"
-              ]
-            },
-            {
-              "procedureName": "select-name",
               "outcomes": [
                 "untested"
               ]
@@ -10509,12 +10551,6 @@
               ]
             },
             {
-              "procedureName": "aria-hidden-focus",
-              "outcomes": [
-                "untested"
-              ]
-            },
-            {
               "procedureName": "aria-required-children",
               "outcomes": [
                 "untested"
@@ -10539,12 +10575,6 @@
               ]
             },
             {
-              "procedureName": "label",
-              "outcomes": [
-                "untested"
-              ]
-            },
-            {
               "procedureName": "list",
               "outcomes": [
                 "untested"
@@ -10558,12 +10588,6 @@
             },
             {
               "procedureName": "p-as-heading",
-              "outcomes": [
-                "untested"
-              ]
-            },
-            {
-              "procedureName": "select-name",
               "outcomes": [
                 "untested"
               ]
@@ -10626,12 +10650,6 @@
               ]
             },
             {
-              "procedureName": "aria-hidden-focus",
-              "outcomes": [
-                "untested"
-              ]
-            },
-            {
               "procedureName": "aria-required-children",
               "outcomes": [
                 "untested"
@@ -10656,12 +10674,6 @@
               ]
             },
             {
-              "procedureName": "label",
-              "outcomes": [
-                "untested"
-              ]
-            },
-            {
               "procedureName": "list",
               "outcomes": [
                 "untested"
@@ -10675,12 +10687,6 @@
             },
             {
               "procedureName": "p-as-heading",
-              "outcomes": [
-                "untested"
-              ]
-            },
-            {
-              "procedureName": "select-name",
               "outcomes": [
                 "untested"
               ]
@@ -10743,12 +10749,6 @@
               ]
             },
             {
-              "procedureName": "aria-hidden-focus",
-              "outcomes": [
-                "untested"
-              ]
-            },
-            {
               "procedureName": "aria-required-children",
               "outcomes": [
                 "untested"
@@ -10773,12 +10773,6 @@
               ]
             },
             {
-              "procedureName": "label",
-              "outcomes": [
-                "untested"
-              ]
-            },
-            {
               "procedureName": "list",
               "outcomes": [
                 "untested"
@@ -10792,12 +10786,6 @@
             },
             {
               "procedureName": "p-as-heading",
-              "outcomes": [
-                "untested"
-              ]
-            },
-            {
-              "procedureName": "select-name",
               "outcomes": [
                 "untested"
               ]
@@ -10860,12 +10848,6 @@
               ]
             },
             {
-              "procedureName": "aria-hidden-focus",
-              "outcomes": [
-                "untested"
-              ]
-            },
-            {
               "procedureName": "aria-required-children",
               "outcomes": [
                 "untested"
@@ -10890,12 +10872,6 @@
               ]
             },
             {
-              "procedureName": "label",
-              "outcomes": [
-                "untested"
-              ]
-            },
-            {
               "procedureName": "list",
               "outcomes": [
                 "untested"
@@ -10909,12 +10885,6 @@
             },
             {
               "procedureName": "p-as-heading",
-              "outcomes": [
-                "untested"
-              ]
-            },
-            {
-              "procedureName": "select-name",
               "outcomes": [
                 "untested"
               ]
@@ -10977,12 +10947,6 @@
               ]
             },
             {
-              "procedureName": "aria-hidden-focus",
-              "outcomes": [
-                "untested"
-              ]
-            },
-            {
               "procedureName": "aria-required-children",
               "outcomes": [
                 "untested"
@@ -11007,12 +10971,6 @@
               ]
             },
             {
-              "procedureName": "label",
-              "outcomes": [
-                "untested"
-              ]
-            },
-            {
               "procedureName": "list",
               "outcomes": [
                 "untested"
@@ -11026,12 +10984,6 @@
             },
             {
               "procedureName": "p-as-heading",
-              "outcomes": [
-                "untested"
-              ]
-            },
-            {
-              "procedureName": "select-name",
               "outcomes": [
                 "untested"
               ]
@@ -11094,12 +11046,6 @@
               ]
             },
             {
-              "procedureName": "aria-hidden-focus",
-              "outcomes": [
-                "untested"
-              ]
-            },
-            {
               "procedureName": "aria-required-children",
               "outcomes": [
                 "untested"
@@ -11124,12 +11070,6 @@
               ]
             },
             {
-              "procedureName": "label",
-              "outcomes": [
-                "untested"
-              ]
-            },
-            {
               "procedureName": "list",
               "outcomes": [
                 "untested"
@@ -11143,12 +11083,6 @@
             },
             {
               "procedureName": "p-as-heading",
-              "outcomes": [
-                "untested"
-              ]
-            },
-            {
-              "procedureName": "select-name",
               "outcomes": [
                 "untested"
               ]
@@ -11211,12 +11145,6 @@
               ]
             },
             {
-              "procedureName": "aria-hidden-focus",
-              "outcomes": [
-                "untested"
-              ]
-            },
-            {
               "procedureName": "aria-required-children",
               "outcomes": [
                 "untested"
@@ -11241,12 +11169,6 @@
               ]
             },
             {
-              "procedureName": "label",
-              "outcomes": [
-                "untested"
-              ]
-            },
-            {
               "procedureName": "list",
               "outcomes": [
                 "untested"
@@ -11260,12 +11182,6 @@
             },
             {
               "procedureName": "p-as-heading",
-              "outcomes": [
-                "untested"
-              ]
-            },
-            {
-              "procedureName": "select-name",
               "outcomes": [
                 "untested"
               ]
@@ -11328,12 +11244,6 @@
               ]
             },
             {
-              "procedureName": "aria-hidden-focus",
-              "outcomes": [
-                "untested"
-              ]
-            },
-            {
               "procedureName": "aria-required-children",
               "outcomes": [
                 "untested"
@@ -11358,12 +11268,6 @@
               ]
             },
             {
-              "procedureName": "label",
-              "outcomes": [
-                "untested"
-              ]
-            },
-            {
               "procedureName": "list",
               "outcomes": [
                 "untested"
@@ -11377,12 +11281,6 @@
             },
             {
               "procedureName": "p-as-heading",
-              "outcomes": [
-                "untested"
-              ]
-            },
-            {
-              "procedureName": "select-name",
               "outcomes": [
                 "untested"
               ]
@@ -12782,7 +12680,6 @@
             {
               "procedureName": "bypass",
               "outcomes": [
-                "passed",
                 "passed"
               ]
             }
@@ -14622,16 +14519,13 @@
       "ruleName": "Heading has non-empty accessible name",
       "ruleApproved": false,
       "procedureNames": [
-        "aria-hidden-focus",
         "aria-required-children",
         "aria-required-parent",
         "definition-list",
         "dlitem",
-        "label",
         "list",
         "listitem",
         "p-as-heading",
-        "select-name",
         "table-fake-caption",
         "td-has-header",
         "td-headers-attr",
@@ -14660,12 +14554,6 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "aria-hidden-focus",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
               "procedureName": "aria-required-children",
               "outcomes": [
                 "inapplicable"
@@ -14690,12 +14578,6 @@
               ]
             },
             {
-              "procedureName": "label",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
               "procedureName": "list",
               "outcomes": [
                 "inapplicable"
@@ -14709,12 +14591,6 @@
             },
             {
               "procedureName": "p-as-heading",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
-              "procedureName": "select-name",
               "outcomes": [
                 "inapplicable"
               ]
@@ -14753,12 +14629,6 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "aria-hidden-focus",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
               "procedureName": "aria-required-children",
               "outcomes": [
                 "inapplicable"
@@ -14783,12 +14653,6 @@
               ]
             },
             {
-              "procedureName": "label",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
               "procedureName": "list",
               "outcomes": [
                 "inapplicable"
@@ -14802,12 +14666,6 @@
             },
             {
               "procedureName": "p-as-heading",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
-              "procedureName": "select-name",
               "outcomes": [
                 "inapplicable"
               ]
@@ -14846,12 +14704,6 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "aria-hidden-focus",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
               "procedureName": "aria-required-children",
               "outcomes": [
                 "inapplicable"
@@ -14876,12 +14728,6 @@
               ]
             },
             {
-              "procedureName": "label",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
               "procedureName": "list",
               "outcomes": [
                 "inapplicable"
@@ -14895,12 +14741,6 @@
             },
             {
               "procedureName": "p-as-heading",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
-              "procedureName": "select-name",
               "outcomes": [
                 "inapplicable"
               ]
@@ -14939,12 +14779,6 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "aria-hidden-focus",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
               "procedureName": "aria-required-children",
               "outcomes": [
                 "inapplicable"
@@ -14969,12 +14803,6 @@
               ]
             },
             {
-              "procedureName": "label",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
               "procedureName": "list",
               "outcomes": [
                 "inapplicable"
@@ -14988,12 +14816,6 @@
             },
             {
               "procedureName": "p-as-heading",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
-              "procedureName": "select-name",
               "outcomes": [
                 "inapplicable"
               ]
@@ -15032,12 +14854,6 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "aria-hidden-focus",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
               "procedureName": "aria-required-children",
               "outcomes": [
                 "inapplicable"
@@ -15062,12 +14878,6 @@
               ]
             },
             {
-              "procedureName": "label",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
               "procedureName": "list",
               "outcomes": [
                 "inapplicable"
@@ -15081,12 +14891,6 @@
             },
             {
               "procedureName": "p-as-heading",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
-              "procedureName": "select-name",
               "outcomes": [
                 "inapplicable"
               ]
@@ -15125,12 +14929,6 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "aria-hidden-focus",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
               "procedureName": "aria-required-children",
               "outcomes": [
                 "inapplicable"
@@ -15155,12 +14953,6 @@
               ]
             },
             {
-              "procedureName": "label",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
               "procedureName": "list",
               "outcomes": [
                 "inapplicable"
@@ -15174,12 +14966,6 @@
             },
             {
               "procedureName": "p-as-heading",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
-              "procedureName": "select-name",
               "outcomes": [
                 "inapplicable"
               ]
@@ -15218,12 +15004,6 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "aria-hidden-focus",
-              "outcomes": [
-                "passed"
-              ]
-            },
-            {
               "procedureName": "aria-required-children",
               "outcomes": [
                 "inapplicable"
@@ -15248,12 +15028,6 @@
               ]
             },
             {
-              "procedureName": "label",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
               "procedureName": "list",
               "outcomes": [
                 "inapplicable"
@@ -15267,12 +15041,6 @@
             },
             {
               "procedureName": "p-as-heading",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
-              "procedureName": "select-name",
               "outcomes": [
                 "inapplicable"
               ]
@@ -15311,12 +15079,6 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "aria-hidden-focus",
-              "outcomes": [
-                "passed"
-              ]
-            },
-            {
               "procedureName": "aria-required-children",
               "outcomes": [
                 "inapplicable"
@@ -15341,12 +15103,6 @@
               ]
             },
             {
-              "procedureName": "label",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
               "procedureName": "list",
               "outcomes": [
                 "inapplicable"
@@ -15360,12 +15116,6 @@
             },
             {
               "procedureName": "p-as-heading",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
-              "procedureName": "select-name",
               "outcomes": [
                 "inapplicable"
               ]
@@ -15404,12 +15154,6 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "aria-hidden-focus",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
               "procedureName": "aria-required-children",
               "outcomes": [
                 "inapplicable"
@@ -15434,12 +15178,6 @@
               ]
             },
             {
-              "procedureName": "label",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
               "procedureName": "list",
               "outcomes": [
                 "inapplicable"
@@ -15453,12 +15191,6 @@
             },
             {
               "procedureName": "p-as-heading",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
-              "procedureName": "select-name",
               "outcomes": [
                 "inapplicable"
               ]
@@ -15497,12 +15229,6 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "aria-hidden-focus",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
               "procedureName": "aria-required-children",
               "outcomes": [
                 "inapplicable"
@@ -15527,12 +15253,6 @@
               ]
             },
             {
-              "procedureName": "label",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
               "procedureName": "list",
               "outcomes": [
                 "inapplicable"
@@ -15546,12 +15266,6 @@
             },
             {
               "procedureName": "p-as-heading",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
-              "procedureName": "select-name",
               "outcomes": [
                 "inapplicable"
               ]
@@ -15590,12 +15304,6 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "aria-hidden-focus",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
               "procedureName": "aria-required-children",
               "outcomes": [
                 "inapplicable"
@@ -15620,12 +15328,6 @@
               ]
             },
             {
-              "procedureName": "label",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
               "procedureName": "list",
               "outcomes": [
                 "inapplicable"
@@ -15639,12 +15341,6 @@
             },
             {
               "procedureName": "p-as-heading",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
-              "procedureName": "select-name",
               "outcomes": [
                 "inapplicable"
               ]
@@ -15683,12 +15379,6 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "aria-hidden-focus",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
               "procedureName": "aria-required-children",
               "outcomes": [
                 "inapplicable"
@@ -15713,12 +15403,6 @@
               ]
             },
             {
-              "procedureName": "label",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
               "procedureName": "list",
               "outcomes": [
                 "inapplicable"
@@ -15732,12 +15416,6 @@
             },
             {
               "procedureName": "p-as-heading",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
-              "procedureName": "select-name",
               "outcomes": [
                 "inapplicable"
               ]
@@ -15776,12 +15454,6 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "aria-hidden-focus",
-              "outcomes": [
-                "passed"
-              ]
-            },
-            {
               "procedureName": "aria-required-children",
               "outcomes": [
                 "inapplicable"
@@ -15806,12 +15478,6 @@
               ]
             },
             {
-              "procedureName": "label",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
               "procedureName": "list",
               "outcomes": [
                 "inapplicable"
@@ -15825,12 +15491,6 @@
             },
             {
               "procedureName": "p-as-heading",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
-              "procedureName": "select-name",
               "outcomes": [
                 "inapplicable"
               ]
@@ -15869,12 +15529,6 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "aria-hidden-focus",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
               "procedureName": "aria-required-children",
               "outcomes": [
                 "inapplicable"
@@ -15899,12 +15553,6 @@
               ]
             },
             {
-              "procedureName": "label",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
               "procedureName": "list",
               "outcomes": [
                 "inapplicable"
@@ -15918,12 +15566,6 @@
             },
             {
               "procedureName": "p-as-heading",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
-              "procedureName": "select-name",
               "outcomes": [
                 "inapplicable"
               ]
@@ -15962,12 +15604,6 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "aria-hidden-focus",
-              "outcomes": [
-                "passed"
-              ]
-            },
-            {
               "procedureName": "aria-required-children",
               "outcomes": [
                 "inapplicable"
@@ -15992,12 +15628,6 @@
               ]
             },
             {
-              "procedureName": "label",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
               "procedureName": "list",
               "outcomes": [
                 "inapplicable"
@@ -16011,12 +15641,6 @@
             },
             {
               "procedureName": "p-as-heading",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
-              "procedureName": "select-name",
               "outcomes": [
                 "inapplicable"
               ]
@@ -16796,6 +16420,7 @@
         "aria-valid-attr",
         "button-name",
         "input-button-name",
+        "input-image-alt",
         "label",
         "link-name",
         "nested-interactive",
@@ -16913,6 +16538,12 @@
             },
             {
               "procedureName": "input-button-name",
+              "outcomes": [
+                "inapplicable"
+              ]
+            },
+            {
+              "procedureName": "input-image-alt",
               "outcomes": [
                 "inapplicable"
               ]
@@ -17043,6 +16674,12 @@
             },
             {
               "procedureName": "input-button-name",
+              "outcomes": [
+                "inapplicable"
+              ]
+            },
+            {
+              "procedureName": "input-image-alt",
               "outcomes": [
                 "inapplicable"
               ]
@@ -17181,6 +16818,12 @@
               ]
             },
             {
+              "procedureName": "input-image-alt",
+              "outcomes": [
+                "inapplicable"
+              ]
+            },
+            {
               "procedureName": "label",
               "outcomes": [
                 "inapplicable"
@@ -17306,6 +16949,12 @@
             },
             {
               "procedureName": "input-button-name",
+              "outcomes": [
+                "inapplicable"
+              ]
+            },
+            {
+              "procedureName": "input-image-alt",
               "outcomes": [
                 "inapplicable"
               ]
@@ -17441,6 +17090,12 @@
               ]
             },
             {
+              "procedureName": "input-image-alt",
+              "outcomes": [
+                "inapplicable"
+              ]
+            },
+            {
               "procedureName": "label",
               "outcomes": [
                 "inapplicable"
@@ -17566,6 +17221,12 @@
             },
             {
               "procedureName": "input-button-name",
+              "outcomes": [
+                "inapplicable"
+              ]
+            },
+            {
+              "procedureName": "input-image-alt",
               "outcomes": [
                 "inapplicable"
               ]
@@ -17701,6 +17362,12 @@
               ]
             },
             {
+              "procedureName": "input-image-alt",
+              "outcomes": [
+                "inapplicable"
+              ]
+            },
+            {
               "procedureName": "label",
               "outcomes": [
                 "inapplicable"
@@ -17826,6 +17493,12 @@
             },
             {
               "procedureName": "input-button-name",
+              "outcomes": [
+                "inapplicable"
+              ]
+            },
+            {
+              "procedureName": "input-image-alt",
               "outcomes": [
                 "inapplicable"
               ]
@@ -17961,6 +17634,12 @@
               ]
             },
             {
+              "procedureName": "input-image-alt",
+              "outcomes": [
+                "inapplicable"
+              ]
+            },
+            {
               "procedureName": "label",
               "outcomes": [
                 "inapplicable"
@@ -18086,6 +17765,12 @@
             },
             {
               "procedureName": "input-button-name",
+              "outcomes": [
+                "inapplicable"
+              ]
+            },
+            {
+              "procedureName": "input-image-alt",
               "outcomes": [
                 "inapplicable"
               ]
@@ -18217,6 +17902,12 @@
             },
             {
               "procedureName": "input-button-name",
+              "outcomes": [
+                "inapplicable"
+              ]
+            },
+            {
+              "procedureName": "input-image-alt",
               "outcomes": [
                 "inapplicable"
               ]
@@ -18355,6 +18046,12 @@
               ]
             },
             {
+              "procedureName": "input-image-alt",
+              "outcomes": [
+                "inapplicable"
+              ]
+            },
+            {
               "procedureName": "label",
               "outcomes": [
                 "inapplicable"
@@ -18485,6 +18182,12 @@
               ]
             },
             {
+              "procedureName": "input-image-alt",
+              "outcomes": [
+                "inapplicable"
+              ]
+            },
+            {
               "procedureName": "label",
               "outcomes": [
                 "inapplicable"
@@ -18610,6 +18313,12 @@
             },
             {
               "procedureName": "input-button-name",
+              "outcomes": [
+                "inapplicable"
+              ]
+            },
+            {
+              "procedureName": "input-image-alt",
               "outcomes": [
                 "inapplicable"
               ]
@@ -18746,6 +18455,12 @@
               ]
             },
             {
+              "procedureName": "input-image-alt",
+              "outcomes": [
+                "inapplicable"
+              ]
+            },
+            {
               "procedureName": "label",
               "outcomes": [
                 "inapplicable"
@@ -18870,6 +18585,12 @@
             },
             {
               "procedureName": "input-button-name",
+              "outcomes": [
+                "inapplicable"
+              ]
+            },
+            {
+              "procedureName": "input-image-alt",
               "outcomes": [
                 "inapplicable"
               ]
@@ -19008,6 +18729,12 @@
               ]
             },
             {
+              "procedureName": "input-image-alt",
+              "outcomes": [
+                "inapplicable"
+              ]
+            },
+            {
               "procedureName": "label",
               "outcomes": [
                 "inapplicable"
@@ -19136,6 +18863,12 @@
             },
             {
               "procedureName": "input-button-name",
+              "outcomes": [
+                "inapplicable"
+              ]
+            },
+            {
+              "procedureName": "input-image-alt",
               "outcomes": [
                 "inapplicable"
               ]
@@ -19271,6 +19004,12 @@
               ]
             },
             {
+              "procedureName": "input-image-alt",
+              "outcomes": [
+                "inapplicable"
+              ]
+            },
+            {
               "procedureName": "label",
               "outcomes": [
                 "inapplicable"
@@ -19395,6 +19134,12 @@
             },
             {
               "procedureName": "input-button-name",
+              "outcomes": [
+                "inapplicable"
+              ]
+            },
+            {
+              "procedureName": "input-image-alt",
               "outcomes": [
                 "inapplicable"
               ]
@@ -19530,6 +19275,12 @@
               ]
             },
             {
+              "procedureName": "input-image-alt",
+              "outcomes": [
+                "inapplicable"
+              ]
+            },
+            {
               "procedureName": "label",
               "outcomes": [
                 "inapplicable"
@@ -19654,6 +19405,12 @@
             },
             {
               "procedureName": "input-button-name",
+              "outcomes": [
+                "inapplicable"
+              ]
+            },
+            {
+              "procedureName": "input-image-alt",
               "outcomes": [
                 "inapplicable"
               ]
@@ -19789,6 +19546,12 @@
               ]
             },
             {
+              "procedureName": "input-image-alt",
+              "outcomes": [
+                "inapplicable"
+              ]
+            },
+            {
               "procedureName": "label",
               "outcomes": [
                 "inapplicable"
@@ -19843,6 +19606,7 @@
         "aria-valid-attr",
         "button-name",
         "input-button-name",
+        "input-image-alt",
         "label",
         "link-name",
         "nested-interactive",
@@ -19965,6 +19729,12 @@
             },
             {
               "procedureName": "input-button-name",
+              "outcomes": [
+                "inapplicable"
+              ]
+            },
+            {
+              "procedureName": "input-image-alt",
               "outcomes": [
                 "inapplicable"
               ]
@@ -20099,6 +19869,12 @@
               ]
             },
             {
+              "procedureName": "input-image-alt",
+              "outcomes": [
+                "inapplicable"
+              ]
+            },
+            {
               "procedureName": "label",
               "outcomes": [
                 "inapplicable"
@@ -20223,6 +19999,12 @@
             },
             {
               "procedureName": "input-button-name",
+              "outcomes": [
+                "inapplicable"
+              ]
+            },
+            {
+              "procedureName": "input-image-alt",
               "outcomes": [
                 "inapplicable"
               ]
@@ -20357,6 +20139,12 @@
               ]
             },
             {
+              "procedureName": "input-image-alt",
+              "outcomes": [
+                "inapplicable"
+              ]
+            },
+            {
               "procedureName": "label",
               "outcomes": [
                 "inapplicable"
@@ -20481,6 +20269,12 @@
             },
             {
               "procedureName": "input-button-name",
+              "outcomes": [
+                "inapplicable"
+              ]
+            },
+            {
+              "procedureName": "input-image-alt",
               "outcomes": [
                 "inapplicable"
               ]
@@ -20615,6 +20409,12 @@
               ]
             },
             {
+              "procedureName": "input-image-alt",
+              "outcomes": [
+                "inapplicable"
+              ]
+            },
+            {
               "procedureName": "label",
               "outcomes": [
                 "inapplicable"
@@ -20739,6 +20539,12 @@
             },
             {
               "procedureName": "input-button-name",
+              "outcomes": [
+                "inapplicable"
+              ]
+            },
+            {
+              "procedureName": "input-image-alt",
               "outcomes": [
                 "inapplicable"
               ]
@@ -20873,6 +20679,12 @@
               ]
             },
             {
+              "procedureName": "input-image-alt",
+              "outcomes": [
+                "inapplicable"
+              ]
+            },
+            {
               "procedureName": "label",
               "outcomes": [
                 "inapplicable"
@@ -21002,6 +20814,12 @@
               ]
             },
             {
+              "procedureName": "input-image-alt",
+              "outcomes": [
+                "inapplicable"
+              ]
+            },
+            {
               "procedureName": "label",
               "outcomes": [
                 "inapplicable"
@@ -21126,6 +20944,12 @@
             },
             {
               "procedureName": "input-button-name",
+              "outcomes": [
+                "inapplicable"
+              ]
+            },
+            {
+              "procedureName": "input-image-alt",
               "outcomes": [
                 "inapplicable"
               ]
@@ -21353,7 +21177,6 @@
       "ruleName": "Image accessible name is descriptive",
       "ruleApproved": false,
       "procedureNames": [
-        "area-alt",
         "aria-meter-name",
         "aria-progressbar-name",
         "image-alt",
@@ -21384,12 +21207,6 @@
           "testCaseApproved": false,
           "expected": "passed",
           "procedureResults": [
-            {
-              "procedureName": "area-alt",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
             {
               "procedureName": "aria-meter-name",
               "outcomes": [
@@ -21442,12 +21259,6 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "area-alt",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
               "procedureName": "aria-meter-name",
               "outcomes": [
                 "inapplicable"
@@ -21498,12 +21309,6 @@
           "testCaseApproved": false,
           "expected": "passed",
           "procedureResults": [
-            {
-              "procedureName": "area-alt",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
             {
               "procedureName": "aria-meter-name",
               "outcomes": [
@@ -21556,12 +21361,6 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "area-alt",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
               "procedureName": "aria-meter-name",
               "outcomes": [
                 "inapplicable"
@@ -21612,12 +21411,6 @@
           "testCaseApproved": false,
           "expected": "failed",
           "procedureResults": [
-            {
-              "procedureName": "area-alt",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
             {
               "procedureName": "aria-meter-name",
               "outcomes": [
@@ -21670,12 +21463,6 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "area-alt",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
               "procedureName": "aria-meter-name",
               "outcomes": [
                 "inapplicable"
@@ -21726,12 +21513,6 @@
           "testCaseApproved": false,
           "expected": "inapplicable",
           "procedureResults": [
-            {
-              "procedureName": "area-alt",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
             {
               "procedureName": "aria-meter-name",
               "outcomes": [
@@ -21784,12 +21565,6 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "area-alt",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
               "procedureName": "aria-meter-name",
               "outcomes": [
                 "inapplicable"
@@ -21840,12 +21615,6 @@
           "testCaseApproved": false,
           "expected": "inapplicable",
           "procedureResults": [
-            {
-              "procedureName": "area-alt",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
             {
               "procedureName": "aria-meter-name",
               "outcomes": [
@@ -21898,12 +21667,6 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "area-alt",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
               "procedureName": "aria-meter-name",
               "outcomes": [
                 "inapplicable"
@@ -21954,12 +21717,6 @@
           "testCaseApproved": false,
           "expected": "inapplicable",
           "procedureResults": [
-            {
-              "procedureName": "area-alt",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
             {
               "procedureName": "aria-meter-name",
               "outcomes": [
@@ -22012,12 +21769,6 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "area-alt",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
               "procedureName": "aria-meter-name",
               "outcomes": [
                 "inapplicable"
@@ -22068,12 +21819,6 @@
           "testCaseApproved": false,
           "expected": "inapplicable",
           "procedureResults": [
-            {
-              "procedureName": "area-alt",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
             {
               "procedureName": "aria-meter-name",
               "outcomes": [
@@ -22126,12 +21871,6 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "area-alt",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
               "procedureName": "aria-meter-name",
               "outcomes": [
                 "inapplicable"
@@ -22182,13 +21921,6 @@
           "testCaseApproved": false,
           "expected": "inapplicable",
           "procedureResults": [
-            {
-              "procedureName": "area-alt",
-              "outcomes": [
-                "inapplicable",
-                "inapplicable"
-              ]
-            },
             {
               "procedureName": "aria-meter-name",
               "outcomes": [
@@ -22248,13 +21980,6 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "area-alt",
-              "outcomes": [
-                "inapplicable",
-                "inapplicable"
-              ]
-            },
-            {
               "procedureName": "aria-meter-name",
               "outcomes": [
                 "inapplicable",
@@ -22312,7 +22037,6 @@
       "ruleName": "DEPRECATED — Image filename is accessible name for image",
       "ruleApproved": false,
       "procedureNames": [
-        "area-alt",
         "aria-meter-name",
         "aria-progressbar-name",
         "image-alt",
@@ -22343,12 +22067,6 @@
           "testCaseApproved": false,
           "expected": "passed",
           "procedureResults": [
-            {
-              "procedureName": "area-alt",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
             {
               "procedureName": "aria-meter-name",
               "outcomes": [
@@ -22401,12 +22119,6 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "area-alt",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
               "procedureName": "aria-meter-name",
               "outcomes": [
                 "inapplicable"
@@ -22457,12 +22169,6 @@
           "testCaseApproved": false,
           "expected": "passed",
           "procedureResults": [
-            {
-              "procedureName": "area-alt",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
             {
               "procedureName": "aria-meter-name",
               "outcomes": [
@@ -22515,12 +22221,6 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "area-alt",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
               "procedureName": "aria-meter-name",
               "outcomes": [
                 "inapplicable"
@@ -22571,12 +22271,6 @@
           "testCaseApproved": false,
           "expected": "passed",
           "procedureResults": [
-            {
-              "procedureName": "area-alt",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
             {
               "procedureName": "aria-meter-name",
               "outcomes": [
@@ -22629,12 +22323,6 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "area-alt",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
               "procedureName": "aria-meter-name",
               "outcomes": [
                 "inapplicable"
@@ -22685,12 +22373,6 @@
           "testCaseApproved": false,
           "expected": "failed",
           "procedureResults": [
-            {
-              "procedureName": "area-alt",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
             {
               "procedureName": "aria-meter-name",
               "outcomes": [
@@ -22743,12 +22425,6 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "area-alt",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
               "procedureName": "aria-meter-name",
               "outcomes": [
                 "inapplicable"
@@ -22799,12 +22475,6 @@
           "testCaseApproved": false,
           "expected": "failed",
           "procedureResults": [
-            {
-              "procedureName": "area-alt",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
             {
               "procedureName": "aria-meter-name",
               "outcomes": [
@@ -22857,12 +22527,6 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "area-alt",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
               "procedureName": "aria-meter-name",
               "outcomes": [
                 "inapplicable"
@@ -22913,12 +22577,6 @@
           "testCaseApproved": false,
           "expected": "failed",
           "procedureResults": [
-            {
-              "procedureName": "area-alt",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
             {
               "procedureName": "aria-meter-name",
               "outcomes": [
@@ -22971,12 +22629,6 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "area-alt",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
               "procedureName": "aria-meter-name",
               "outcomes": [
                 "inapplicable"
@@ -23027,12 +22679,6 @@
           "testCaseApproved": false,
           "expected": "inapplicable",
           "procedureResults": [
-            {
-              "procedureName": "area-alt",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
             {
               "procedureName": "aria-meter-name",
               "outcomes": [
@@ -23085,12 +22731,6 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "area-alt",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
               "procedureName": "aria-meter-name",
               "outcomes": [
                 "inapplicable"
@@ -23141,12 +22781,6 @@
           "testCaseApproved": false,
           "expected": "inapplicable",
           "procedureResults": [
-            {
-              "procedureName": "area-alt",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
             {
               "procedureName": "aria-meter-name",
               "outcomes": [
@@ -23207,7 +22841,6 @@
       "ruleName": "Image not in the accessibility tree is decorative",
       "ruleApproved": false,
       "procedureNames": [
-        "area-alt",
         "aria-meter-name",
         "aria-progressbar-name",
         "image-alt",
@@ -23238,12 +22871,6 @@
           "testCaseApproved": false,
           "expected": "passed",
           "procedureResults": [
-            {
-              "procedureName": "area-alt",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
             {
               "procedureName": "aria-meter-name",
               "outcomes": [
@@ -23296,12 +22923,6 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "area-alt",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
               "procedureName": "aria-meter-name",
               "outcomes": [
                 "inapplicable"
@@ -23352,12 +22973,6 @@
           "testCaseApproved": false,
           "expected": "passed",
           "procedureResults": [
-            {
-              "procedureName": "area-alt",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
             {
               "procedureName": "aria-meter-name",
               "outcomes": [
@@ -23410,12 +23025,6 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "area-alt",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
               "procedureName": "aria-meter-name",
               "outcomes": [
                 "inapplicable"
@@ -23466,12 +23075,6 @@
           "testCaseApproved": false,
           "expected": "passed",
           "procedureResults": [
-            {
-              "procedureName": "area-alt",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
             {
               "procedureName": "aria-meter-name",
               "outcomes": [
@@ -23524,12 +23127,6 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "area-alt",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
               "procedureName": "aria-meter-name",
               "outcomes": [
                 "inapplicable"
@@ -23580,12 +23177,6 @@
           "testCaseApproved": false,
           "expected": "failed",
           "procedureResults": [
-            {
-              "procedureName": "area-alt",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
             {
               "procedureName": "aria-meter-name",
               "outcomes": [
@@ -23638,12 +23229,6 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "area-alt",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
               "procedureName": "aria-meter-name",
               "outcomes": [
                 "inapplicable"
@@ -23694,12 +23279,6 @@
           "testCaseApproved": false,
           "expected": "failed",
           "procedureResults": [
-            {
-              "procedureName": "area-alt",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
             {
               "procedureName": "aria-meter-name",
               "outcomes": [
@@ -23752,12 +23331,6 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "area-alt",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
               "procedureName": "aria-meter-name",
               "outcomes": [
                 "inapplicable"
@@ -23808,12 +23381,6 @@
           "testCaseApproved": false,
           "expected": "inapplicable",
           "procedureResults": [
-            {
-              "procedureName": "area-alt",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
             {
               "procedureName": "aria-meter-name",
               "outcomes": [
@@ -23866,12 +23433,6 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "area-alt",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
               "procedureName": "aria-meter-name",
               "outcomes": [
                 "inapplicable"
@@ -23922,12 +23483,6 @@
           "testCaseApproved": false,
           "expected": "inapplicable",
           "procedureResults": [
-            {
-              "procedureName": "area-alt",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
             {
               "procedureName": "aria-meter-name",
               "outcomes": [
@@ -23980,12 +23535,6 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "area-alt",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
               "procedureName": "aria-meter-name",
               "outcomes": [
                 "inapplicable"
@@ -24036,12 +23585,6 @@
           "testCaseApproved": false,
           "expected": "inapplicable",
           "procedureResults": [
-            {
-              "procedureName": "area-alt",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
             {
               "procedureName": "aria-meter-name",
               "outcomes": [
@@ -24094,12 +23637,6 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "area-alt",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
               "procedureName": "aria-meter-name",
               "outcomes": [
                 "inapplicable"
@@ -24150,12 +23687,6 @@
           "testCaseApproved": false,
           "expected": "inapplicable",
           "procedureResults": [
-            {
-              "procedureName": "area-alt",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
             {
               "procedureName": "aria-meter-name",
               "outcomes": [
@@ -24208,12 +23739,6 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "area-alt",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
               "procedureName": "aria-meter-name",
               "outcomes": [
                 "inapplicable"
@@ -24264,13 +23789,6 @@
           "testCaseApproved": false,
           "expected": "inapplicable",
           "procedureResults": [
-            {
-              "procedureName": "area-alt",
-              "outcomes": [
-                "inapplicable",
-                "inapplicable"
-              ]
-            },
             {
               "procedureName": "aria-meter-name",
               "outcomes": [
@@ -24329,13 +23847,6 @@
           "testCaseApproved": false,
           "expected": "inapplicable",
           "procedureResults": [
-            {
-              "procedureName": "area-alt",
-              "outcomes": [
-                "inapplicable",
-                "inapplicable"
-              ]
-            },
             {
               "procedureName": "aria-meter-name",
               "outcomes": [
@@ -27392,13 +26903,12 @@
       ],
       "consistency": "partial",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:name-role-value"
         ],
         "reported": [
-          "WCAG2:name-role-value",
-          "WCAG2:info-and-relationships"
+          "WCAG2:name-role-value"
         ]
       },
       "coverage": {
@@ -27573,7 +27083,6 @@
       "ruleName": "`role` attribute has valid value",
       "ruleApproved": false,
       "procedureNames": [
-        "aria-hidden-focus",
         "aria-required-children",
         "aria-required-parent",
         "definition-list",
@@ -27581,12 +27090,10 @@
         "list",
         "listitem",
         "p-as-heading",
-        "select-name",
         "table-fake-caption",
         "td-has-header",
         "td-headers-attr",
         "th-has-data-cells",
-        "label",
         "duplicate-id-active",
         "duplicate-id-aria",
         "duplicate-id",
@@ -27598,10 +27105,7 @@
         "expected": [
           "WCAG2:info-and-relationships"
         ],
-        "reported": [
-          "WCAG2:name-role-value",
-          "WCAG2:info-and-relationships"
-        ]
+        "reported": []
       },
       "coverage": {
         "covered": 1,
@@ -27617,12 +27121,6 @@
           "testCaseApproved": false,
           "expected": "passed",
           "procedureResults": [
-            {
-              "procedureName": "aria-hidden-focus",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
             {
               "procedureName": "aria-required-children",
               "outcomes": [
@@ -27666,12 +27164,6 @@
               ]
             },
             {
-              "procedureName": "select-name",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
               "procedureName": "table-fake-caption",
               "outcomes": [
                 "inapplicable"
@@ -27693,12 +27185,6 @@
               "procedureName": "th-has-data-cells",
               "outcomes": [
                 "inapplicable"
-              ]
-            },
-            {
-              "procedureName": "label",
-              "outcomes": [
-                "passed"
               ]
             },
             {
@@ -27735,12 +27221,6 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "aria-hidden-focus",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
               "procedureName": "aria-required-children",
               "outcomes": [
                 "inapplicable"
@@ -27783,12 +27263,6 @@
               ]
             },
             {
-              "procedureName": "select-name",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
               "procedureName": "table-fake-caption",
               "outcomes": [
                 "inapplicable"
@@ -27808,12 +27282,6 @@
             },
             {
               "procedureName": "th-has-data-cells",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
-              "procedureName": "label",
               "outcomes": [
                 "inapplicable"
               ]
@@ -27852,12 +27320,6 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "aria-hidden-focus",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
               "procedureName": "aria-required-children",
               "outcomes": [
                 "inapplicable"
@@ -27900,12 +27362,6 @@
               ]
             },
             {
-              "procedureName": "select-name",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
               "procedureName": "table-fake-caption",
               "outcomes": [
                 "inapplicable"
@@ -27927,12 +27383,6 @@
               "procedureName": "th-has-data-cells",
               "outcomes": [
                 "inapplicable"
-              ]
-            },
-            {
-              "procedureName": "label",
-              "outcomes": [
-                "passed"
               ]
             },
             {
@@ -27969,12 +27419,6 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "aria-hidden-focus",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
               "procedureName": "aria-required-children",
               "outcomes": [
                 "inapplicable"
@@ -28017,12 +27461,6 @@
               ]
             },
             {
-              "procedureName": "select-name",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
               "procedureName": "table-fake-caption",
               "outcomes": [
                 "inapplicable"
@@ -28042,12 +27480,6 @@
             },
             {
               "procedureName": "th-has-data-cells",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
-              "procedureName": "label",
               "outcomes": [
                 "inapplicable"
               ]
@@ -28086,12 +27518,6 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "aria-hidden-focus",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
               "procedureName": "aria-required-children",
               "outcomes": [
                 "inapplicable"
@@ -28134,12 +27560,6 @@
               ]
             },
             {
-              "procedureName": "select-name",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
               "procedureName": "table-fake-caption",
               "outcomes": [
                 "inapplicable"
@@ -28159,12 +27579,6 @@
             },
             {
               "procedureName": "th-has-data-cells",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
-              "procedureName": "label",
               "outcomes": [
                 "inapplicable"
               ]
@@ -28203,12 +27617,6 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "aria-hidden-focus",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
               "procedureName": "aria-required-children",
               "outcomes": [
                 "inapplicable"
@@ -28251,12 +27659,6 @@
               ]
             },
             {
-              "procedureName": "select-name",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
               "procedureName": "table-fake-caption",
               "outcomes": [
                 "inapplicable"
@@ -28276,12 +27678,6 @@
             },
             {
               "procedureName": "th-has-data-cells",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
-              "procedureName": "label",
               "outcomes": [
                 "inapplicable"
               ]
@@ -28320,12 +27716,6 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "aria-hidden-focus",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
               "procedureName": "aria-required-children",
               "outcomes": [
                 "inapplicable"
@@ -28368,12 +27758,6 @@
               ]
             },
             {
-              "procedureName": "select-name",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
               "procedureName": "table-fake-caption",
               "outcomes": [
                 "inapplicable"
@@ -28393,12 +27777,6 @@
             },
             {
               "procedureName": "th-has-data-cells",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
-              "procedureName": "label",
               "outcomes": [
                 "inapplicable"
               ]
@@ -28437,12 +27815,6 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "aria-hidden-focus",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
               "procedureName": "aria-required-children",
               "outcomes": [
                 "inapplicable"
@@ -28485,12 +27857,6 @@
               ]
             },
             {
-              "procedureName": "select-name",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
               "procedureName": "table-fake-caption",
               "outcomes": [
                 "inapplicable"
@@ -28510,12 +27876,6 @@
             },
             {
               "procedureName": "th-has-data-cells",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
-              "procedureName": "label",
               "outcomes": [
                 "inapplicable"
               ]
@@ -28554,12 +27914,6 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "aria-hidden-focus",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
               "procedureName": "aria-required-children",
               "outcomes": [
                 "inapplicable"
@@ -28602,12 +27956,6 @@
               ]
             },
             {
-              "procedureName": "select-name",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
               "procedureName": "table-fake-caption",
               "outcomes": [
                 "inapplicable"
@@ -28629,12 +27977,6 @@
               "procedureName": "th-has-data-cells",
               "outcomes": [
                 "inapplicable"
-              ]
-            },
-            {
-              "procedureName": "label",
-              "outcomes": [
-                "failed"
               ]
             },
             {
@@ -28671,12 +28013,6 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "aria-hidden-focus",
-              "outcomes": [
-                "passed"
-              ]
-            },
-            {
               "procedureName": "aria-required-children",
               "outcomes": [
                 "inapplicable"
@@ -28719,12 +28055,6 @@
               ]
             },
             {
-              "procedureName": "select-name",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
               "procedureName": "table-fake-caption",
               "outcomes": [
                 "inapplicable"
@@ -28744,12 +28074,6 @@
             },
             {
               "procedureName": "th-has-data-cells",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
-              "procedureName": "label",
               "outcomes": [
                 "inapplicable"
               ]
