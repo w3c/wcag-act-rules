@@ -27,8 +27,15 @@
   uniqueKey: axe-devtools-pro
   type: Semi-automated tool
   standards:
-    - WCAG 2.1 Level A & AA
+    - WCAG 2.1 all levels
+    - WAI-ARIA 1.2
   jsonReport: https://raw.githubusercontent.com/dequelabs/act-reports-axe/main/reports/axe-devtools-igt.json
+  description: |
+    Axe DevTools Pro combines the automated results of axe-core, and results from
+    axe Intelligent Guided Test (IGT) tools. Tools can produced multiple issue types.
+    The ID of each issue type is given as the name of the procedure, with the tool 
+    that returns it in brackets. For example `alt-text-not-meaningful (Images)` is 
+    the `alt-text-not-meaningful` issue type reported by the `Images` tool.
 
 - name: Equal Access Accessibility Checker
   hidden: true
