@@ -134,6 +134,9 @@ layout: standalone_resource
       , and <code>{{ procedure }}</code>
     {%- endif -%}
   {% endfor %} procedure{% if ruleMapping.procedureNames.size > 1 %}s{% endif %}.
+  {%- if ruleMapping.procedureNames.size > 1 %}
+    Failed examples should be failed by <em>at least one</em> of these procedures.
+  {%- endif %}
   The implementation is {% if ruleMapping.consistency == 'complete' %}
     fully {% else %} partially 
   {% endif %} consistent with the

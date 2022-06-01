@@ -1,5 +1,5 @@
 ---
-title: "audio element content has text alternative"
+title: "Audio element content has text alternative"
 permalink: /standards-guidelines/act/rules/e7aa44/proposed/
 ref: /standards-guidelines/act/rules/e7aa44/proposed/
 lang: en
@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> e7aa44</p>
-  <p><strong>Date:</strong> Updated 9 May 2022</p>
+  <p><strong>Date:</strong> Updated 30 May 2022</p>
   <p><strong>Authors:</strong> <a href="https://www.linkedin.com/in/brianbors/">Brian Bors</a>, <a href="https://github.com/john-urbilog">John Hicks</a>, <a href="https://github.com/Rafalchar">Rafal Charlampowicz</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
   
@@ -17,11 +17,11 @@ footer: |
 proposed: true
 rule_meta:
   id: e7aa44
-  name: "`audio` element content has text alternative"
+  name: "Audio element content has text alternative"
   rule_type: composite
   description: |
     This rule checks that `audio` elements have a text alternative available.
-  last_modified: 9 May 2022
+  last_modified: 30 May 2022
   scs_tested:
     - handle: Audio-only and Video-only (Prerecorded)
       num: 1.2.1
@@ -92,8 +92,8 @@ There are no major accessibility support issues known for this rule.
 
 Outcomes of the following rules are required as input for this rule.
 
-- [`audio` element content has transcript](/standards-guidelines/act/rules/audio-transcript-2eb176/)
-- [`audio` element content is media alternative for text](/standards-guidelines/act/rules/audio-as-media-alternative-afb423/)
+- [Audio element content has transcript](/standards-guidelines/act/rules/audio-transcript-2eb176/)
+- [Audio element content is media alternative for text](/standards-guidelines/act/rules/audio-as-media-alternative-afb423/)
 
 ## Test Cases
 

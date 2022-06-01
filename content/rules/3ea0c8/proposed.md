@@ -1,5 +1,5 @@
 ---
-title: "id attribute value is unique"
+title: "Id attribute value is unique"
 permalink: /standards-guidelines/act/rules/3ea0c8/proposed/
 ref: /standards-guidelines/act/rules/3ea0c8/proposed/
 lang: en
@@ -9,17 +9,17 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 3ea0c8</p>
-  <p><strong>Date:</strong> Updated 16 March 2022</p>
+  <p><strong>Date:</strong> Updated 30 May 2022</p>
   <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/brynanders">Bryn Anderson</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
 rule_meta:
   id: 3ea0c8
-  name: "`id` attribute value is unique"
+  name: "Id attribute value is unique"
   rule_type: atomic
   description: |
     This rule checks that all `id` attribute values on a single page are unique.
-  last_modified: 16 March 2022
+  last_modified: 30 May 2022
   scs_tested:
     - handle: Parsing
       num: 4.1.1

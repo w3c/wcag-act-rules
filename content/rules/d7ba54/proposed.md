@@ -1,5 +1,5 @@
 ---
-title: "video element visual-only content has audio track alternative"
+title: "Video element visual-only content has audio track alternative"
 permalink: /standards-guidelines/act/rules/d7ba54/proposed/
 ref: /standards-guidelines/act/rules/d7ba54/proposed/
 lang: en
@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> d7ba54</p>
-  <p><strong>Date:</strong> Updated 23 March 2022</p>
+  <p><strong>Date:</strong> Updated 30 May 2022</p>
   <p><strong>Authors:</strong> <a href="https://www.linkedin.com/in/brianbors/">Brian Bors</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
   
@@ -17,11 +17,11 @@ footer: |
 proposed: true
 rule_meta:
   id: d7ba54
-  name: "`video` element visual-only content has audio track alternative"
+  name: "Video element visual-only content has audio track alternative"
   rule_type: atomic
   description: |
     Non-streaming `video` elements without audio must have an audio alternative.
-  last_modified: 23 March 2022
+  last_modified: 30 May 2022
 ---
 
 ## Applicability
