@@ -20,7 +20,7 @@ github:
 {% include box.html type="start" title="Summary" class="" %}
 {:/}
 
-This page contains list of ACT Rules to test conformance [Web Content Accessibility Guidelines (WCAG) {% include_cached icon.html name="different-view" %}](https://www.w3.org/WAI/standards-guidelines/wcag/), [WAI-ARIA {% include_cached icon.html name="different-view" %}](https://www.w3.org/WAI/ARIA/) and other accessibility practices.  ACT Rules for WCAG 2 are formally approved by the Accessibility Guidelines Working Group. Proposed rules have not yet completed the approval process. Learn more from [About ACT Rules](/standards-guidelines/act/rules/about/).
+This page contains list of ACT Rules for determining conformance to [Web Content Accessibility Guidelines (WCAG) {% include_cached icon.html name="different-view" %}](https://www.w3.org/WAI/standards-guidelines/wcag/), [WAI-ARIA {% include_cached icon.html name="different-view" %}](https://www.w3.org/WAI/ARIA/) and other accessibility practices.  ACT Rules for WCAG 2 are formally approved by the Accessibility Guidelines Working Group. Proposed rules have not yet completed the approval process. ACT Rules are informative — that means they are not required for determining conformance to WCAG or ARIA. Learn more from [About ACT Rules](/standards-guidelines/act/rules/about/).
 
 {::nomarkdown}
 {% include box.html type="end" %}
@@ -28,7 +28,7 @@ This page contains list of ACT Rules to test conformance [Web Content Accessibil
 
 ## Rules for WCAG 2
 
-These ACT Rules are used to test conformance issues of WCAG 2.0 or 2.1. These rules have been approved by the Accessibility Guidelines Working Group. They are fully implemented in at least one [test tool or methodology](../implementations/).
+These ACT Rules are used to test conformance to WCAG 2.0 or 2.1. These rules have been approved by the Accessibility Guidelines Working Group. They are fully implemented in at least one [test tool or methodology](../implementations/).
 
 <ul>
 {%- for rule in site.data.wcag-act-rules.rules["act-rules"] %}

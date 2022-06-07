@@ -46,7 +46,7 @@ ACT Rules are also technology-specific. For example, the aforementioned table he
 
 ACT Rules are designed to check failures in satisfying WCAG 2 success criteria and other accessibility requirements. That is, when content fails ACT Rules, it means that the content does not satisfy the corresponding requirement. However, when content passes ACT Rules, it means that no corresponding failures were detected — it does not necessarily mean that the content satisfies all aspects of the corresponding accessibility requirement.
 
-WCAG success criteria typically cover several aspects and technologies, while ACT Rules only check specific aspects. Checking that content satisfies all aspects of WCAG success criteria typically requires further verification by human testers. Requirements for WAI-ARIA are often more atomic than the WCAG 2 success criteria, and can therefor often be fully covered with ACT Rules.
+WCAG success criteria typically cover several aspects and technologies, while ACT Rules only check specific aspects. Checking that content satisfies all aspects of WCAG success criteria typically requires further verification by human testers. Requirements for WAI-ARIA are often more atomic than the WCAG 2 success criteria, and can therefore often be fully covered with ACT Rules.
 
 **Note**: [WCAG 2 Conformance Requirement 1](https://www.w3.org/WAI/WCAG22/Understanding/conformance#cc1) allows for "conforming alternate versions". That means that content may still conform to WCAG 2, even when content fails ACT Rules.
 

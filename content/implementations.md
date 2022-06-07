@@ -1,7 +1,7 @@
 ---
 doc-note-type: draft
 layout: standalone_resource
-title: "Test Tool & Methodology Matrix"
+title: "ACT Rules Implementation in Test Tools and Methodologies"
 permalink: /standards-guidelines/act/implementations/
 ref: /standards-guidelines/act/implementations/
 lang: en

@@ -59,15 +59,15 @@ defaults:
         rule_type: "Atomic rule"
       sidebar: true
       standalone_resource_header:
-        title: Accessibility Conformance Testing (ACT)
+        title: ACT Rules
         title-ref: /standards-guidelines/act/rules/
-        subtitle: Harmonised rules for WCAG 2 & ARIA
+        subtitle: Rules for accessibility conformance testing (ACT)
       standalone_resource_nav_links:
         - name: All Rules
           ref: /standards-guidelines/act/rules/
         - name: About
           ref: /standards-guidelines/act/rules/about/
-        - name: Test Tools & Methodologies
+        - name: Implementations in Tools and Methodologies
           ref: /standards-guidelines/act/implementations/
 
 plugins:
