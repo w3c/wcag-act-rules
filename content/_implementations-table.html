@@ -12,7 +12,9 @@
       {%- assign report = siteData.implementations[implementation.uniqueKey] %}
       {%- if implementation.hidden != true %}
         <tr>
-          <td>{{ implementation.name }} {{ report.version }}</td>
+          <td>{{ implementation.name }} 
+            {%- if report.version %} {{ report.version }}{% else %} {{ implementation.version }}{% endif -%}
+          </td>
           <td><ul>{% for standard in implementation.standards %}
             <li>{{ standard }}</li>
           {% endfor %}</ul></td>

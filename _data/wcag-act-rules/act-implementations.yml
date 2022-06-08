@@ -1,5 +1,24 @@
+### EXAMPLE, using all permitted fields
+### Fields with a * are optional
+# - name: Acme Accessibility Tool
+#   homepage: https://acme.com/acme-tool/ *
+#   hidden: true # This lists the implementation as "coming soon".
+#   version: 4.5 *
+#   vendor: Acme Corp
+#   vendorHomepage: https://acme.com/ *
+#   uniqueKey: acme-tool
+#   type: Automated Tool | Semi-automated tool | Test methodology
+#   standards: # Add as needed, remove what is not applicable
+#     - WAI-ARIA 1.2
+#     - WCAG 2.1 Level A, AA, AAA
+#   jsonReport: https://acme.com/acme-tool-earl.json
+#   description: |
+#     Some text here, which may contain markdown. *
+
 - name: Alfa
+  homepage: https://alfa.siteimprove.com/
   vendor: Siteimprove
+  vendorHomepage: https://www.siteimprove.com/
   uniqueKey: alfa
   type: Automated tool
   standards:
@@ -8,7 +27,8 @@
   jsonReport: https://raw.githubusercontent.com/Siteimprove/alfa-act-r/main/reports/alfa-w3c.json
 
 - name: Axe-core
-  homepage: https://github.com/dequelabs/axe-core/
+  homepage: https://www.npmjs.com/package/axe-core
+  version: 4.5-prerelease
   vendor: Deque Systems
   vendorHomepage: https://deque.com/
   uniqueKey: axe-core
@@ -23,7 +43,9 @@
     Checks with “unsupported” in its ID are disabled, which deal with issues of accessibility support issues which ACT Rules do not account for, often by design.
 
 - name: Axe DevTools Pro
+  homepage: https://www.deque.com/axe/devtools/
   vendor: Deque Systems
+  vendorHomepage: https://deque.com/
   uniqueKey: axe-devtools-pro
   type: Semi-automated tool
   standards:
@@ -38,8 +60,10 @@
     the `alt-text-not-meaningful` issue type reported by the `Images` tool.
 
 - name: Equal Access Accessibility Checker
+  homepage: https://www.ibm.com/able/toolkit/
   hidden: true
   vendor: IBM Accessibility
+  vendorHomepage: https://www.ibm.com/
   uniqueKey: equal-access
   type: Automated tool
   standards:
@@ -58,7 +82,9 @@
     `RuleId1:ReasonCode1,ReasonCode2|RuleId2:ReasonCode3,ReasonCode4`.
 
 - name: QualWeb
+  homepage: http://qualweb.di.fc.ul.pt/evaluator/
   vendor: LASIGE, Faculdade de Ciências da Universidade de Lisboa
+  homepage: http://qualweb.di.fc.ul.pt/evaluator/
   uniqueKey: qualweb
   type: Automated tool
   standards:
@@ -67,8 +93,10 @@
   jsonReport: https://raw.githubusercontent.com/qualweb/ACT-implementation-report/main/qualweb-report.json
 
 - name: SortSite
+  omepage: https://www.powermapper.com/products/sortsite/
   hidden: true
   vendor: PowerMapper
+  vendorHomepage: https://www.powermapper.com/
   uniqueKey: sort-site
   type: Automated tool
   standards:
