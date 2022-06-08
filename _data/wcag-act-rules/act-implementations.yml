@@ -3,7 +3,7 @@
   uniqueKey: alfa
   type: Automated tool
   standards:
-    - WCAG 2.1 all levels
+    - WCAG 2.1 Level A, AA, AAA
     - WAI-ARIA 1.2
   jsonReport: https://raw.githubusercontent.com/Siteimprove/alfa-act-r/main/reports/alfa-w3c.json
 
@@ -14,7 +14,7 @@
   uniqueKey: axe-core
   type: Automated tool
   standards:
-    - WCAG 2.1 all levels
+    - WCAG 2.1 Level A, AA, AAA
     - WAI-ARIA 1.2
   jsonReport: https://raw.githubusercontent.com/dequelabs/act-reports-axe/main/reports/axe-core.json
   description: |
@@ -27,7 +27,7 @@
   uniqueKey: axe-devtools-pro
   type: Semi-automated tool
   standards:
-    - WCAG 2.1 all levels
+    - WCAG 2.1 Level A, AA, AAA
     - WAI-ARIA 1.2
   jsonReport: https://raw.githubusercontent.com/dequelabs/act-reports-axe/main/reports/axe-devtools-igt.json
   description: |
@@ -43,7 +43,7 @@
   uniqueKey: equal-access
   type: Automated tool
   standards:
-    - WCAG 2.1 all levels
+    - WCAG 2.1 Level A, AA, AAA
     - WAI-ARIA 1.2
   jsonReport: https://raw.githubusercontent.com/IBMa/equal-access/master/accessibility-checker/test-act/earlResult.json
   description: |
@@ -62,7 +62,7 @@
   uniqueKey: qualweb
   type: Automated tool
   standards:
-    - WCAG 2.1 all levels
+    - WCAG 2.1 Level A, AA, AAA
     - WAI-ARIA 1.2
   jsonReport: https://raw.githubusercontent.com/qualweb/ACT-implementation-report/main/qualweb-report.json
 
@@ -72,7 +72,7 @@
   uniqueKey: sort-site
   type: Automated tool
   standards:
-    - WCAG 2.1 all levels
+    - WCAG 2.1 Level A, AA, AAA
     - WAI-ARIA 1.2
   jsonReport: https://raw.githubusercontent.com/act-rules/act-rules-implementation-sortsite/master/report.json
 
@@ -81,5 +81,5 @@
   uniqueKey: trusted-tester
   type: Test methodology
   standards:
-    - WCAG 2.0 Level A & AA
+    - WCAG 2.0 Level A, AA
   jsonReport: https://raw.githubusercontent.com/Section508Coordinators/act-tt/main/act-trusted-tester.json
