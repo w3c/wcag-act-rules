@@ -24,7 +24,7 @@ layout: standalone_resource
       {{ implementationInfo.name }}
     {% endif %}
     {% unless implementation.versionDate %}
-      version {{ implementation.version }} 
+      version {% if implementation.version %}{{ implementation.version }}{% else %}{{ implementationInfo.version }}{% endif %}
     {% endunless %}
     is an {{ implementationInfo.type }}
     {% if implementationInfo.vendorHomepage %}
@@ -36,7 +36,7 @@ layout: standalone_resource
     {% endif %}
 
     {% if implementation.versionDate %}
-      Version {{ implementation.version }} 
+      version {% if implementation.version %}{{ implementation.version }}{% else %}{{ implementationInfo.version }}{% endif %} 
       was published on {{ implementation.versionDate | date: '%e %B %Y' }}.
     {% endif %}
 
