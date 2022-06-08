@@ -49,7 +49,7 @@ See [understanding ACT consistency](#understanding-act-consistency) for details.
 
 ## Understanding ACT Consistency
 
-Each ACT rule has examples. Vendors of test tools and methodologies run their implementations against the examples and report the outcome in a standard format. Reports are based on publicly available data.
+Each ACT rule has examples. Vendors of test tools and methodologies run their implementations against the examples and report the outcome in a [standard format](https://act-rules.github.io/pages/implementations/earl-reports/). Reports are based on publicly available data.
 
 A test tool or methodology is considered **consistent** when all the following are true:
 
