@@ -1,4 +1,3 @@
-#!/usr/bin/env zx
 import { readFileSync, existsSync, writeFileSync } from 'fs';
 import * as YAML from 'yaml';
 import fetch from 'node-fetch';
