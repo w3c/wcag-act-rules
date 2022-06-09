@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 307n5z</p>
-  <p><strong>Date:</strong> Updated 16 March 2022</p>
+  <p><strong>Date:</strong> Updated 9 June 2022</p>
   <p><strong>Authors:</strong> <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -19,7 +19,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that elements with a role that makes its children presentational do not contain focusable elements.
-  last_modified: 16 March 2022
+  last_modified: 9 June 2022
   scs_tested:
     - handle: Name, Role, Value
       num: 4.1.2
@@ -133,14 +133,14 @@ This element with `menuitemcheckbox` role has an `input` element as a descendant
 
 #### Failed Example 1
 
-<a class="example-link" title="Failed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/307n5z/e6d11dd9493057ccf9dad8a463130d458f74c672.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/307n5z/3798f2c4c821019fe59bbcc671d46b4e9d2c9d50.html">Open in a new tab</a>
 
 This `button` element has a [child][] `span` element. Because the `span` element has a `tabindex` attribute with value of `0`, it is included in [sequential focus navigation][].
 
 ```html
 <button>
 	Save
-	<span aria-label="save options" aria-expanded="false" tabindex="0">▼</span>
+	<span role="button" aria-label="save options" aria-expanded="false" tabindex="0">▼</span>
 </button>
 ```
 
