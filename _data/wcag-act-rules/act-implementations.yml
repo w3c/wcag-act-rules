@@ -84,7 +84,7 @@
 - name: QualWeb
   homepage: http://qualweb.di.fc.ul.pt/evaluator/
   vendor: LASIGE, Faculdade de Ciências da Universidade de Lisboa
-  homepage: http://qualweb.di.fc.ul.pt/evaluator/
+  vendorHomepage: https://www.lasige.pt/
   uniqueKey: qualweb
   type: Automated tool
   standards:
@@ -105,7 +105,7 @@
   jsonReport: https://raw.githubusercontent.com/act-rules/act-rules-implementation-sortsite/master/report.json
 
 - name: Trusted Tester
-  vendor: Access Board
+  vendor: US federal government
   uniqueKey: trusted-tester
   type: Test methodology
   standards:
