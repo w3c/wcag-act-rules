@@ -5378,7 +5378,7 @@
     },
     {
       "ruleId": "6cfa84",
-      "ruleName": "Element with aria-hidden has no focusable content",
+      "ruleName": "Element with aria-hidden has no content in sequential focus navigation",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
           "forConformance": true,
@@ -5403,7 +5403,7 @@
     },
     {
       "ruleId": "6cfa84",
-      "ruleName": "Element with aria-hidden has no focusable content",
+      "ruleName": "Element with aria-hidden has no content in sequential focus navigation",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
           "forConformance": true,
@@ -5428,7 +5428,7 @@
     },
     {
       "ruleId": "6cfa84",
-      "ruleName": "Element with aria-hidden has no focusable content",
+      "ruleName": "Element with aria-hidden has no content in sequential focus navigation",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
           "forConformance": true,
@@ -5453,7 +5453,7 @@
     },
     {
       "ruleId": "6cfa84",
-      "ruleName": "Element with aria-hidden has no focusable content",
+      "ruleName": "Element with aria-hidden has no content in sequential focus navigation",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
           "forConformance": true,
@@ -5478,7 +5478,32 @@
     },
     {
       "ruleId": "6cfa84",
-      "ruleName": "Element with aria-hidden has no focusable content",
+      "ruleName": "Element with aria-hidden has no content in sequential focus navigation",
+      "ruleAccessibilityRequirements": {
+        "wcag20:4.1.2": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "using-aria:fourth": {
+          "title": "Fourth rule of ARIA use",
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "85a2d2ea8aeb1eddb5a6576edb958c2d1597ddfc",
+      "testcaseTitle": "Passed Example 5",
+      "relativePath": "testcases/6cfa84/85a2d2ea8aeb1eddb5a6576edb958c2d1597ddfc.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/85a2d2ea8aeb1eddb5a6576edb958c2d1597ddfc.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/6cfa84/proposed/"
+    },
+    {
+      "ruleId": "6cfa84",
+      "ruleName": "Element with aria-hidden has no content in sequential focus navigation",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
           "forConformance": true,
@@ -5503,7 +5528,7 @@
     },
     {
       "ruleId": "6cfa84",
-      "ruleName": "Element with aria-hidden has no focusable content",
+      "ruleName": "Element with aria-hidden has no content in sequential focus navigation",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
           "forConformance": true,
@@ -5528,7 +5553,7 @@
     },
     {
       "ruleId": "6cfa84",
-      "ruleName": "Element with aria-hidden has no focusable content",
+      "ruleName": "Element with aria-hidden has no content in sequential focus navigation",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
           "forConformance": true,
@@ -5553,7 +5578,7 @@
     },
     {
       "ruleId": "6cfa84",
-      "ruleName": "Element with aria-hidden has no focusable content",
+      "ruleName": "Element with aria-hidden has no content in sequential focus navigation",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
           "forConformance": true,
@@ -5578,32 +5603,7 @@
     },
     {
       "ruleId": "6cfa84",
-      "ruleName": "Element with aria-hidden has no focusable content",
-      "ruleAccessibilityRequirements": {
-        "wcag20:4.1.2": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "using-aria:fourth": {
-          "title": "Fourth rule of ARIA use",
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "failed",
-      "testcaseId": "85a2d2ea8aeb1eddb5a6576edb958c2d1597ddfc",
-      "testcaseTitle": "Failed Example 5",
-      "relativePath": "testcases/6cfa84/85a2d2ea8aeb1eddb5a6576edb958c2d1597ddfc.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/85a2d2ea8aeb1eddb5a6576edb958c2d1597ddfc.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/6cfa84/proposed/"
-    },
-    {
-      "ruleId": "6cfa84",
-      "ruleName": "Element with aria-hidden has no focusable content",
+      "ruleName": "Element with aria-hidden has no content in sequential focus navigation",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
           "forConformance": true,
@@ -5621,14 +5621,14 @@
       },
       "expected": "failed",
       "testcaseId": "9cc94f9f9549ef0c9fc0433e22e4fe59843d1b2a",
-      "testcaseTitle": "Failed Example 6",
+      "testcaseTitle": "Failed Example 5",
       "relativePath": "testcases/6cfa84/9cc94f9f9549ef0c9fc0433e22e4fe59843d1b2a.html",
       "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/9cc94f9f9549ef0c9fc0433e22e4fe59843d1b2a.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/6cfa84/proposed/"
     },
     {
       "ruleId": "6cfa84",
-      "ruleName": "Element with aria-hidden has no focusable content",
+      "ruleName": "Element with aria-hidden has no content in sequential focus navigation",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
           "forConformance": true,
@@ -5653,7 +5653,7 @@
     },
     {
       "ruleId": "6cfa84",
-      "ruleName": "Element with aria-hidden has no focusable content",
+      "ruleName": "Element with aria-hidden has no content in sequential focus navigation",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
           "forConformance": true,
@@ -5678,7 +5678,7 @@
     },
     {
       "ruleId": "6cfa84",
-      "ruleName": "Element with aria-hidden has no focusable content",
+      "ruleName": "Element with aria-hidden has no content in sequential focus navigation",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
           "forConformance": true,
