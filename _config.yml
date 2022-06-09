@@ -67,7 +67,7 @@ defaults:
           ref: /standards-guidelines/act/rules/
         - name: About
           ref: /standards-guidelines/act/rules/about/
-        - name: Implementations in Tools and Methodologies
+        - name: Implementations
           ref: /standards-guidelines/act/implementations/
 
 plugins:
