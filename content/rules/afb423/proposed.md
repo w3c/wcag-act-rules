@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> afb423</p>
-  <p><strong>Date:</strong> Updated 3 June 2022</p>
+  <p><strong>Date:</strong> Updated 13 June 2022</p>
   <p><strong>Authors:</strong> <a href="https://www.linkedin.com/in/brianbors/">Brian Bors</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
   
@@ -21,7 +21,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that the `audio` element is a media alternative for text on the page.
-  last_modified: 3 June 2022
+  last_modified: 13 June 2022
 ---
 
 ## Applicability
@@ -278,9 +278,9 @@ An HTML element is _programmatically hidden_ if either it has a [computed][] CSS
 - has a [computed][] CSS property `display` of `none`; or
 - has an `aria-hidden` attribute set to `true`
 
-**Note**: Contrarily to the other conditions, the `visibility` CSS property may be reverted by descendants.
+**Note**: Contrary to the other conditions, the `visibility` CSS property may be reverted by descendants.
 
-**Note**: The [HTML standard suggests](https://html.spec.whatwg.org/multipage/rendering.html#hidden-elements) rendering elements with the `hidden` attribute with a CSS rule that applies the value `none` to the CSS property `display` of the element. Although the suggestion is not normative, known user agents render it according to the suggestion (unless the content specifies another CSS rule that sets the value of the `display` property). If a user agent does not follow the suggestion, this definition may produce incorrect results for this user agent.
+**Note**: The [HTML standard suggests](https://html.spec.whatwg.org/multipage/rendering.html#hidden-elements) setting the CSS `display` property to `none` for elements with the `hidden` attribute. While not required by HTML, all modern browsers follow this suggestion. Because of this the `hidden` attribute is not used in this definition. In browsers that use this suggestion, overriding the CSS `display` property can reveal elements with the `hidden` attribute.
 
 ### Visible {#visible}
 
