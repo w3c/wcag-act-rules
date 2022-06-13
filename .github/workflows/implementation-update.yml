@@ -1,0 +1,22 @@
+name: Implementation update
+on:
+  schedule:
+    # Run every 6 hours, starting UTC midnight
+    - cron:  '0 0,6,12,18 * * *'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v2
+      - uses: actions/cache@v3
+        with:
+          path: "node_modules"
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+      - run: npm ci
+      ## Make sure we have the latest act-tools
+      - run: npm install act-rules/act-tools
+      - run: node ./.github/scripts/implementation-update.mjs
+      - run: npx zx ./.github/scripts/commit-and-push.mjs
+

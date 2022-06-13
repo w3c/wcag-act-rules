@@ -1,4 +1,5 @@
 - name: Alfa
+  version: 0.36.0
   vendor: Siteimprove
   uniqueKey: alfa
   type: Automated tool
@@ -8,6 +9,7 @@
   jsonReport: https://raw.githubusercontent.com/Siteimprove/alfa-act-r/main/reports/alfa-w3c.json
 
 - name: Axe-core
+  version: 4.5.0-prerelease
   homepage: https://github.com/dequelabs/axe-core/
   vendor: Deque Systems
   vendorHomepage: https://deque.com/
@@ -23,6 +25,7 @@
     Checks with “unsupported” in its ID are disabled, which deal with issues of accessibility support issues which ACT Rules do not account for, often by design.
 
 - name: Axe DevTools Pro
+  version: 4.24.5
   vendor: Deque Systems
   uniqueKey: axe-devtools-pro
   type: Semi-automated tool
@@ -39,6 +42,7 @@
 
 - name: Equal Access Accessibility Checker
   hidden: true
+  version: 3.0.0
   vendor: IBM Accessibility
   uniqueKey: equal-access
   type: Automated tool
@@ -58,6 +62,7 @@
     `RuleId1:ReasonCode1,ReasonCode2|RuleId2:ReasonCode3,ReasonCode4`.
 
 - name: QualWeb
+  version: 3.0.0
   vendor: LASIGE, Faculdade de Ciências da Universidade de Lisboa
   uniqueKey: qualweb
   type: Automated tool
@@ -68,6 +73,7 @@
 
 - name: SortSite
   hidden: true
+  version: 6.44
   vendor: PowerMapper
   uniqueKey: sort-site
   type: Automated tool
@@ -77,9 +83,10 @@
   jsonReport: https://raw.githubusercontent.com/act-rules/act-rules-implementation-sortsite/master/report.json
 
 - name: Trusted Tester
+  version: 5.1
   vendor: Access Board
   uniqueKey: trusted-tester
   type: Test methodology
   standards:
     - WCAG 2.0 Level A & AA
-  jsonReport: https://raw.githubusercontent.com/Section508Coordinators/act-tt/main/act-trusted-tester.json
+  jsonReport: https://raw.githubusercontent.com/Section508Coordinators/act-tt/main/act-trusted-tester-w3c.json
