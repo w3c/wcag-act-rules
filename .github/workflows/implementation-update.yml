@@ -18,5 +18,11 @@ jobs:
       ## Make sure we have the latest act-tools
       - run: npm install act-rules/act-tools
       - run: node ./.github/scripts/implementation-update.mjs
-      - run: npx zx ./.github/scripts/commit-and-push.mjs
+      - name: Commit and push
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }} # add as PAT (https://github.com/settings/tokens) as a secret
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          npx zx ./.github/scripts/commit-and-push.mjs
 
