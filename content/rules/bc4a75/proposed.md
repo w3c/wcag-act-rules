@@ -110,34 +110,21 @@ This element with the `list` role only owns elements with the `listitem` role. T
 
 #### Passed Example 2
 
-<a class="example-link" title="Passed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/5ca6583c5d7e250e11744fd20e385ac94a6c4dcf.html">Open in a new tab</a>
-
-This element with the `tablist` role only owns elements with the `tab` role. The `tab` role is one of the [required owned elements][] for `tablist`.
-
-```html
-<ul role="tablist">
-	<li role="tab">Tab 1</li>
-	<li role="tab">Tab 2</li>
-</ul>
-```
-
-#### Passed Example 3
-
-<a class="example-link" title="Passed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/3531d0aea5d4f26705ee56b34e068880aedff56c.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/d05f912754cdcfbf5f79b346d1418275e31fb8d5.html">Open in a new tab</a>
 
 This element with the `grid` role only owns elements with the `row` role, and the element with the `row` role only owns elements with the `cell` role. The `row` role is one of the [required owned elements][] for `grid`, and `cell` is one of the [required owned elements][] for `row`.
 
 ```html
 <table role="grid">
 	<tr role="row">
-		<span role="cell">Item 1</span>
+		<td role="cell">Item 1</td>
 	</tr>
 </table>
 ```
 
-#### Passed Example 4
+#### Passed Example 3
 
-<a class="example-link" title="Passed Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/12a2da38812d7bf356f0092674c1c21802faf30d.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/12a2da38812d7bf356f0092674c1c21802faf30d.html">Open in a new tab</a>
 
 This element with the `menu` role only owns elements with the `menuitem`, `menuitemradio` and `menuitemcheckbox` role. These roles are all [required owned elements][] for `menu`. The element with the `none` role is not [owned by][] the `menu` because it is not [included in the accessibility tree][].
 
@@ -148,6 +135,20 @@ This element with the `menu` role only owns elements with the `menuitem`, `menui
 	<div role="menuitemradio" aria-checked="false">Item 2</div>
 	<div role="menuitemcheckbox" aria-checked="false">Item 3</div>
 </div>
+```
+
+#### Passed Example 4
+
+<a class="example-link" title="Passed Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/e74d875a66842a61c1667ec316b9d455e7e3a331.html">Open in a new tab</a>
+
+This element with the `tablist` role only owns elements with the `tab` role. The `tab` role is one of the [required owned elements][] for `tablist`. The `li` element is ignored because it has an [explicit semantic role][] of `none`.
+
+```html
+<ul role="tablist">
+	<li role="none">
+		<span role="tab">Tab 1</span>
+	</li>
+</ul>
 ```
 
 #### Passed Example 5
