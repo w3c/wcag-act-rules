@@ -11,8 +11,8 @@
     "untested": 0
   },
   "proposedRules": {
-    "complete": 20,
-    "partial": 4,
+    "complete": 19,
+    "partial": 5,
     "minimal": 13,
     "inconsistent": 20,
     "untested": 20
@@ -3614,7 +3614,7 @@
     },
     {
       "ruleId": "6cfa84",
-      "ruleName": "Element with aria-hidden has no focusable content",
+      "ruleName": "Element with aria-hidden has no content in sequential focus navigation",
       "ruleApproved": false,
       "procedureNames": [
         "Element with `aria-hidden` has no focusable content"
@@ -3630,7 +3630,7 @@
         ]
       },
       "coverage": {
-        "covered": 11,
+        "covered": 12,
         "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 13
@@ -3697,6 +3697,21 @@
           ]
         },
         {
+          "testcaseId": "85a2d2ea8aeb1eddb5a6576edb958c2d1597ddfc",
+          "testCaseName": "Passed Example 5",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/85a2d2ea8aeb1eddb5a6576edb958c2d1597ddfc.html",
+          "testCaseApproved": false,
+          "expected": "passed",
+          "procedureResults": [
+            {
+              "procedureName": "Element with `aria-hidden` has no focusable content",
+              "outcomes": [
+                "passed"
+              ]
+            }
+          ]
+        },
+        {
           "testcaseId": "4e7955d592cbf361a55113fcd4524e979b16bb08",
           "testCaseName": "Failed Example 1",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/4e7955d592cbf361a55113fcd4524e979b16bb08.html",
@@ -3757,23 +3772,8 @@
           ]
         },
         {
-          "testcaseId": "85a2d2ea8aeb1eddb5a6576edb958c2d1597ddfc",
-          "testCaseName": "Failed Example 5",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/85a2d2ea8aeb1eddb5a6576edb958c2d1597ddfc.html",
-          "testCaseApproved": false,
-          "expected": "failed",
-          "procedureResults": [
-            {
-              "procedureName": "Element with `aria-hidden` has no focusable content",
-              "outcomes": [
-                "passed"
-              ]
-            }
-          ]
-        },
-        {
           "testcaseId": "9cc94f9f9549ef0c9fc0433e22e4fe59843d1b2a",
-          "testCaseName": "Failed Example 6",
+          "testCaseName": "Failed Example 5",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/9cc94f9f9549ef0c9fc0433e22e4fe59843d1b2a.html",
           "testCaseApproved": false,
           "expected": "failed",
@@ -4102,8 +4102,8 @@
         ]
       },
       "coverage": {
-        "covered": 18,
-        "untested": 0,
+        "covered": 16,
+        "untested": 2,
         "cantTell": 0,
         "testCaseTotal": 19
       },
@@ -4124,38 +4124,23 @@
           ]
         },
         {
-          "testcaseId": "5ca6583c5d7e250e11744fd20e385ac94a6c4dcf",
+          "testcaseId": "d05f912754cdcfbf5f79b346d1418275e31fb8d5",
           "testCaseName": "Passed Example 2",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/5ca6583c5d7e250e11744fd20e385ac94a6c4dcf.html",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/d05f912754cdcfbf5f79b346d1418275e31fb8d5.html",
           "testCaseApproved": false,
           "expected": "passed",
           "procedureResults": [
             {
               "procedureName": "ARIA required owned elements",
               "outcomes": [
-                "passed"
-              ]
-            }
-          ]
-        },
-        {
-          "testcaseId": "3531d0aea5d4f26705ee56b34e068880aedff56c",
-          "testCaseName": "Passed Example 3",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/3531d0aea5d4f26705ee56b34e068880aedff56c.html",
-          "testCaseApproved": false,
-          "expected": "passed",
-          "procedureResults": [
-            {
-              "procedureName": "ARIA required owned elements",
-              "outcomes": [
-                "passed"
+                "untested"
               ]
             }
           ]
         },
         {
           "testcaseId": "12a2da38812d7bf356f0092674c1c21802faf30d",
-          "testCaseName": "Passed Example 4",
+          "testCaseName": "Passed Example 3",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/12a2da38812d7bf356f0092674c1c21802faf30d.html",
           "testCaseApproved": false,
           "expected": "passed",
@@ -4164,6 +4149,21 @@
               "procedureName": "ARIA required owned elements",
               "outcomes": [
                 "passed"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "e74d875a66842a61c1667ec316b9d455e7e3a331",
+          "testCaseName": "Passed Example 4",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/e74d875a66842a61c1667ec316b9d455e7e3a331.html",
+          "testCaseApproved": false,
+          "expected": "passed",
+          "procedureResults": [
+            {
+              "procedureName": "ARIA required owned elements",
+              "outcomes": [
+                "untested"
               ]
             }
           ]
@@ -11255,7 +11255,7 @@
       "procedureNames": [
         "Element with presentational children has no focusable content"
       ],
-      "consistency": "complete",
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -11266,8 +11266,8 @@
         ]
       },
       "coverage": {
-        "covered": 7,
-        "untested": 0,
+        "covered": 6,
+        "untested": 1,
         "cantTell": 0,
         "testCaseTotal": 7
       },
@@ -11318,16 +11318,16 @@
           ]
         },
         {
-          "testcaseId": "e6d11dd9493057ccf9dad8a463130d458f74c672",
+          "testcaseId": "3798f2c4c821019fe59bbcc671d46b4e9d2c9d50",
           "testCaseName": "Failed Example 1",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/307n5z/e6d11dd9493057ccf9dad8a463130d458f74c672.html",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/307n5z/3798f2c4c821019fe59bbcc671d46b4e9d2c9d50.html",
           "testCaseApproved": false,
           "expected": "failed",
           "procedureResults": [
             {
               "procedureName": "Element with presentational children has no focusable content",
               "outcomes": [
-                "failed"
+                "untested"
               ]
             }
           ]

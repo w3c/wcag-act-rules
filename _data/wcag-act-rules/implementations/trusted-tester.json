@@ -155,7 +155,7 @@
     },
     {
       "ruleId": "6cfa84",
-      "ruleName": "Element with aria-hidden has no focusable content",
+      "ruleName": "Element with aria-hidden has no content in sequential focus navigation",
       "ruleApproved": false,
       "procedureNames": [],
       "consistency": null,
