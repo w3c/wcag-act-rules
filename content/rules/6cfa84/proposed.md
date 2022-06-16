@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 6cfa84</p>
-  <p><strong>Date:</strong> Updated 13 June 2022</p>
+  <p><strong>Date:</strong> Updated 16 June 2022</p>
   <p><strong>Authors:</strong> <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -19,7 +19,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that elements with an `aria-hidden` attribute do not contain elements that are part of the sequential focus navigation and focusable.
-  last_modified: 13 June 2022
+  last_modified: 16 June 2022
   scs_tested:
     - handle: Name, Role, Value
       num: 4.1.2
@@ -139,15 +139,30 @@ This `input` element is not part of the [sequential focus navigation][] because 
 
 #### Passed Example 4
 
-<a class="example-link" title="Passed Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/8f7b47436534d716bf8f088786e5ee6b1154c23c.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/36d83f2c0fe431eade9b158f1e548c2d6189d570.html">Open in a new tab</a>
 
-This `a` element is part of the [sequential focus navigation][], but moves focus to the `input` element whenever it receives focus.
+This `a` element is not [focusable][] because it moves focus to the `input` element whenever it receives focus. These elements
+are sometimes referred to as 'focus sentinel' or 'bumper'. They are typically found before and after a modal / dialog in 
+order to contain focus within the modal. Page authors do not want the sentinel to be visible, nor do they want them to be read by
+a screen reader. But, they do want the element to be part of the [sequential focus navigation][]. This allows the page author
+to detect that focus has left the dialog in order to wrap it to the top/bottom as appropriate.
 
 ```html
-<div aria-hidden="true">
-	<a href="/" style="position:absolute; top:-999em" onfocus="document.querySelector('input').focus()">First link</a>
+<div id="sampleModal" role="dialog" aria-label="Sample Modal" aria-modal="true" style="border: solid black 1px; padding: 1rem;">
+    <label>First and last name <input id="dialogFirst"></label><br />
+    <button id="closeButton">Close button</button>
 </div>
-<input />
+<div aria-hidden="true">
+    <a href="#" id="sentinelAfter" style="position:absolute; top:-999em">Upon receiving focus, this focus sentinel should wrap focus to the top of the modal</a>
+</div>
+<script>
+    document.getElementById("sentinelAfter").addEventListener("focus", () => {
+        document.getElementById("dialogFirst").focus();
+    });
+    document.getElementById("closeButton").addEventListener("click", () => {
+        document.getElementById("sampleModal").style.display = "none";
+    });
+</script>
 ```
 
 #### Passed Example 5
@@ -223,6 +238,29 @@ This `summary` element is part of the [sequential focus navigation][].
 	<summary>Some button</summary>
 	<p>Some details</p>
 </details>
+```
+
+#### Failed Example 6
+
+<a class="example-link" title="Failed Example 6" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/59dbb168e68fbb2e752910c43405fe33fb9f3f70.html">Open in a new tab</a>
+
+This `a` element is [focusable][] because it fails to move focus when it receives focus. This is in contrast to a focus sentinel that 
+immediately jumps focus to a valid location. Focus sentinels are typically used before and after a modal dialog in order to contain 
+and wrap focus. In this case, the `focus` event was removed, but the sentinel was not.
+
+```html
+<div id="sampleModal" role="dialog" aria-label="Sample Modal" aria-modal="true" style="border: solid black 1px; padding: 1rem;">
+    <label>First and last name <input id="dialogFirst"></label><br />
+    <button id="closeButton">Close button</button>
+</div>
+<div aria-hidden="true">
+    <a href="#" id="sentinelAfter" style="position:absolute; top:-999em">Upon receiving focus, this focus sentinel should wrap focus to the top of the modal</a>
+</div>
+<script>
+    document.getElementById("closeButton").addEventListener("click", () => {
+        document.getElementById("sampleModal").style.display = "none";
+    });
+</script>
 ```
 
 ### Inapplicable
