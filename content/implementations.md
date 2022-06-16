@@ -33,7 +33,7 @@ See [understanding ACT consistency](#understanding-act-consistency) for details.
 
 ## Semi-automated Test Tools
 
-Tools that combine user input and automated testing to test accessibility standards.
+Semi-automated tools combine user input and automated testing to test accessibility standards.
 See [understanding ACT consistency](#understanding-act-consistency) for details.
 
 {% assign semiAutoTools = implementations | where: "type", "Semi-automated tool" %}
