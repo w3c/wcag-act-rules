@@ -20,7 +20,7 @@ github:
 </section>
 
 {::nomarkdown} {% include box.html type="start" title="Summary" %} {:/}
-The tables on these pages show how many ACT Rules different accessibility test tools and methodologies have consistently implemented. Each implementation links to a report with more details on how rules are implemented. See [understanding ACT consistency](#understanding-act-consistency) for details.
+The tables on these pages show how many ACT Rules different accessibility test tools and methodologies have "consistently implemented". Each implementation links to a report with more details on how rules are implemented. See [understanding ACT consistency](#understanding-act-consistency) for details.
 {::nomarkdown} {% include box.html type="end" %} {:/}
 
 ## Test Methodologies
