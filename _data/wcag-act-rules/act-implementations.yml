@@ -1,14 +1,34 @@
+### EXAMPLE, using all permitted fields
+### Fields with a * are optional
+# - name: Acme Accessibility Tool
+#   homepage: https://acme.com/acme-tool/ *
+#   hidden: true # This lists the implementation as "coming soon".
+#   version: 4.5 *
+#   vendor: Acme Corp
+#   vendorHomepage: https://acme.com/ *
+#   uniqueKey: acme-tool
+#   type: Automated Tool | Semi-automated tool | Test methodology
+#   standards: # Add as needed, remove what is not applicable
+#     - WAI-ARIA 1.2
+#     - WCAG 2.1 Level A, AA, AAA
+#   jsonReport: https://acme.com/acme-tool-earl.json
+#   description: |
+#     Some text here, which may contain markdown. *
+
 - name: Alfa
+  homepage: https://alfa.siteimprove.com/
   version: 0.36.0
   vendor: Siteimprove
+  vendorHomepage: https://www.siteimprove.com/
   uniqueKey: alfa
   type: Automated tool
   standards:
-    - WCAG 2.1 all levels
+    - WCAG 2.1 Level A, AA, AAA
     - WAI-ARIA 1.2
   jsonReport: https://raw.githubusercontent.com/Siteimprove/alfa-act-r/main/reports/alfa-w3c.json
 
 - name: Axe-core
+  homepage: https://www.npmjs.com/package/axe-core
   version: 4.5.0-prerelease
   homepage: https://github.com/dequelabs/axe-core/
   vendor: Deque Systems
@@ -16,7 +36,7 @@
   uniqueKey: axe-core
   type: Automated tool
   standards:
-    - WCAG 2.1 all levels
+    - WCAG 2.1 Level A, AA, AAA
     - WAI-ARIA 1.2
   jsonReport: https://raw.githubusercontent.com/dequelabs/act-reports-axe/main/reports/axe-core.json
   description: |
@@ -25,12 +45,14 @@
     Checks with “unsupported” in its ID are disabled, which deal with issues of accessibility support issues which ACT Rules do not account for, often by design.
 
 - name: Axe DevTools Pro
+  homepage: https://www.deque.com/axe/devtools/
   version: 4.24.5
   vendor: Deque Systems
+  vendorHomepage: https://deque.com/
   uniqueKey: axe-devtools-pro
   type: Semi-automated tool
   standards:
-    - WCAG 2.1 all levels
+    - WCAG 2.1 Level A, AA, AAA
     - WAI-ARIA 1.2
   jsonReport: https://raw.githubusercontent.com/dequelabs/act-reports-axe/main/reports/axe-devtools-igt.json
   description: |
@@ -41,13 +63,15 @@
     the `alt-text-not-meaningful` issue type reported by the `Images` tool.
 
 - name: Equal Access Accessibility Checker
+  homepage: https://www.ibm.com/able/toolkit/
   hidden: true
   version: 3.0.0
   vendor: IBM Accessibility
+  vendorHomepage: https://www.ibm.com/
   uniqueKey: equal-access
   type: Automated tool
   standards:
-    - WCAG 2.1 all levels
+    - WCAG 2.1 Level A, AA, AAA
     - WAI-ARIA 1.2
   jsonReport: https://raw.githubusercontent.com/IBMa/equal-access/master/accessibility-checker/test-act/earlResult.json
   description: |
@@ -62,31 +86,36 @@
     `RuleId1:ReasonCode1,ReasonCode2|RuleId2:ReasonCode3,ReasonCode4`.
 
 - name: QualWeb
+  homepage: http://qualweb.di.fc.ul.pt/evaluator/
   version: 3.0.0
   vendor: LASIGE, Faculdade de Ciências da Universidade de Lisboa
+  vendorHomepage: https://www.lasige.pt/
   uniqueKey: qualweb
   type: Automated tool
   standards:
-    - WCAG 2.1 all levels
+    - WCAG 2.1 Level A, AA, AAA
     - WAI-ARIA 1.2
   jsonReport: https://raw.githubusercontent.com/qualweb/ACT-implementation-report/main/qualweb-report.json
 
 - name: SortSite
+  omepage: https://www.powermapper.com/products/sortsite/
   hidden: true
   version: 6.44
   vendor: PowerMapper
+  vendorHomepage: https://www.powermapper.com/
   uniqueKey: sort-site
   type: Automated tool
   standards:
-    - WCAG 2.1 all levels
+    - WCAG 2.1 Level A, AA, AAA
     - WAI-ARIA 1.2
   jsonReport: https://raw.githubusercontent.com/act-rules/act-rules-implementation-sortsite/master/report.json
 
 - name: Trusted Tester
   version: 5.1
-  vendor: Access Board
+  vendor: US federal government
   uniqueKey: trusted-tester
   type: Test methodology
   standards:
-    - WCAG 2.0 Level A & AA
-  jsonReport: https://raw.githubusercontent.com/Section508Coordinators/act-tt/main/act-trusted-tester-w3c.json
+    - WCAG 2.0 Level A, AA
+  jsonReport: https://raw.githubusercontent.com/Section508Coordinators/act-tt/main/act-trusted-tester.json
+

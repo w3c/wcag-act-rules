@@ -1,5 +1,15 @@
+nav.nav li:last-of-type {
+  display: none;
+}
+
 table.act-implementations {
   width: 100%;
+}
+
+table.act-implementations a > img {
+  padding: 0.25rem;
+  border-radius: 0.25em;
+  border: solid 1px var(--wai-green);
 }
 
 table.act-requirements ul,

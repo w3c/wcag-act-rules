@@ -54,19 +54,21 @@ defaults:
         <p><strong>Date:</strong> Updated @@ Month 2021. First published Month 20@@.</p>
         <p><strong>Editors:</strong> @@name, @@name. <strong>Contributors:</strong> @@name, @@name, and <a href="https://www.w3.org/groups/wg/@@wg/participants">participants of the @@WG</a>. ACKNOWLEDGEMENTS lists contributors and credits.</p>
         <p>Developed by the @@ Working Group (<a href="http://www.w3.org/WAI/@@/">@@WG</a>). Developed as part of the <a href="https://www.w3.org/WAI/@@/">WAI-@@ project</a>, @@co-funded by the European Commission.</p>
-      type_of_guidance: "Test Rule"
+      type_of_guidance: "ACT Rule"
       rule_meta:
-        rule_type: "atomic rule"
+        rule_type: "Atomic rule"
       sidebar: true
       standalone_resource_header:
-        title: WCAG 2 Test Rules
-        subtitle: For developers of evaluation tools and test methodologies
-        link:
-          title: About WCAG 2 Test Rules
+        title: ACT Rules
+        title-ref: /standards-guidelines/act/rules/
+        subtitle: Rules for accessibility conformance testing (ACT)
+      standalone_resource_nav_links:
+        - name: All Rules
+          ref: /standards-guidelines/act/rules/
+        - name: About
           ref: /standards-guidelines/act/rules/about/
-      standalone_resource_pager:
-        name: All Test Rules
-        ref: /standards-guidelines/act/rules/
+        - name: Implementations
+          ref: /standards-guidelines/act/implementations/
 
 plugins:
   - jekyll-seo-tag
