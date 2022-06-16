@@ -17,6 +17,7 @@
 
 - name: Alfa
   homepage: https://alfa.siteimprove.com/
+  version: 0.36.0
   vendor: Siteimprove
   vendorHomepage: https://www.siteimprove.com/
   uniqueKey: alfa
@@ -28,7 +29,8 @@
 
 - name: Axe-core
   homepage: https://www.npmjs.com/package/axe-core
-  version: 4.5-prerelease
+  version: 4.5.0-prerelease
+  homepage: https://github.com/dequelabs/axe-core/
   vendor: Deque Systems
   vendorHomepage: https://deque.com/
   uniqueKey: axe-core
@@ -44,6 +46,7 @@
 
 - name: Axe DevTools Pro
   homepage: https://www.deque.com/axe/devtools/
+  version: 4.24.5
   vendor: Deque Systems
   vendorHomepage: https://deque.com/
   uniqueKey: axe-devtools-pro
@@ -62,6 +65,7 @@
 - name: Equal Access Accessibility Checker
   homepage: https://www.ibm.com/able/toolkit/
   hidden: true
+  version: 3.0.0
   vendor: IBM Accessibility
   vendorHomepage: https://www.ibm.com/
   uniqueKey: equal-access
@@ -83,6 +87,7 @@
 
 - name: QualWeb
   homepage: http://qualweb.di.fc.ul.pt/evaluator/
+  version: 3.0.0
   vendor: LASIGE, Faculdade de Ciências da Universidade de Lisboa
   vendorHomepage: https://www.lasige.pt/
   uniqueKey: qualweb
@@ -95,6 +100,7 @@
 - name: SortSite
   omepage: https://www.powermapper.com/products/sortsite/
   hidden: true
+  version: 6.44
   vendor: PowerMapper
   vendorHomepage: https://www.powermapper.com/
   uniqueKey: sort-site
@@ -105,9 +111,11 @@
   jsonReport: https://raw.githubusercontent.com/act-rules/act-rules-implementation-sortsite/master/report.json
 
 - name: Trusted Tester
+  version: 5.1
   vendor: US federal government
   uniqueKey: trusted-tester
   type: Test methodology
   standards:
     - WCAG 2.0 Level A, AA
   jsonReport: https://raw.githubusercontent.com/Section508Coordinators/act-tt/main/act-trusted-tester.json
+

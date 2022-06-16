@@ -5378,7 +5378,7 @@
     },
     {
       "ruleId": "6cfa84",
-      "ruleName": "Element with aria-hidden has no focusable content",
+      "ruleName": "Element with aria-hidden has no content in sequential focus navigation",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
           "forConformance": true,
@@ -5403,7 +5403,7 @@
     },
     {
       "ruleId": "6cfa84",
-      "ruleName": "Element with aria-hidden has no focusable content",
+      "ruleName": "Element with aria-hidden has no content in sequential focus navigation",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
           "forConformance": true,
@@ -5428,7 +5428,7 @@
     },
     {
       "ruleId": "6cfa84",
-      "ruleName": "Element with aria-hidden has no focusable content",
+      "ruleName": "Element with aria-hidden has no content in sequential focus navigation",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
           "forConformance": true,
@@ -5453,7 +5453,7 @@
     },
     {
       "ruleId": "6cfa84",
-      "ruleName": "Element with aria-hidden has no focusable content",
+      "ruleName": "Element with aria-hidden has no content in sequential focus navigation",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
           "forConformance": true,
@@ -5478,7 +5478,32 @@
     },
     {
       "ruleId": "6cfa84",
-      "ruleName": "Element with aria-hidden has no focusable content",
+      "ruleName": "Element with aria-hidden has no content in sequential focus navigation",
+      "ruleAccessibilityRequirements": {
+        "wcag20:4.1.2": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "using-aria:fourth": {
+          "title": "Fourth rule of ARIA use",
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "85a2d2ea8aeb1eddb5a6576edb958c2d1597ddfc",
+      "testcaseTitle": "Passed Example 5",
+      "relativePath": "testcases/6cfa84/85a2d2ea8aeb1eddb5a6576edb958c2d1597ddfc.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/85a2d2ea8aeb1eddb5a6576edb958c2d1597ddfc.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/6cfa84/proposed/"
+    },
+    {
+      "ruleId": "6cfa84",
+      "ruleName": "Element with aria-hidden has no content in sequential focus navigation",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
           "forConformance": true,
@@ -5503,7 +5528,7 @@
     },
     {
       "ruleId": "6cfa84",
-      "ruleName": "Element with aria-hidden has no focusable content",
+      "ruleName": "Element with aria-hidden has no content in sequential focus navigation",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
           "forConformance": true,
@@ -5528,7 +5553,7 @@
     },
     {
       "ruleId": "6cfa84",
-      "ruleName": "Element with aria-hidden has no focusable content",
+      "ruleName": "Element with aria-hidden has no content in sequential focus navigation",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
           "forConformance": true,
@@ -5553,7 +5578,7 @@
     },
     {
       "ruleId": "6cfa84",
-      "ruleName": "Element with aria-hidden has no focusable content",
+      "ruleName": "Element with aria-hidden has no content in sequential focus navigation",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
           "forConformance": true,
@@ -5578,32 +5603,7 @@
     },
     {
       "ruleId": "6cfa84",
-      "ruleName": "Element with aria-hidden has no focusable content",
-      "ruleAccessibilityRequirements": {
-        "wcag20:4.1.2": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "using-aria:fourth": {
-          "title": "Fourth rule of ARIA use",
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "failed",
-      "testcaseId": "85a2d2ea8aeb1eddb5a6576edb958c2d1597ddfc",
-      "testcaseTitle": "Failed Example 5",
-      "relativePath": "testcases/6cfa84/85a2d2ea8aeb1eddb5a6576edb958c2d1597ddfc.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/85a2d2ea8aeb1eddb5a6576edb958c2d1597ddfc.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/6cfa84/proposed/"
-    },
-    {
-      "ruleId": "6cfa84",
-      "ruleName": "Element with aria-hidden has no focusable content",
+      "ruleName": "Element with aria-hidden has no content in sequential focus navigation",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
           "forConformance": true,
@@ -5621,14 +5621,14 @@
       },
       "expected": "failed",
       "testcaseId": "9cc94f9f9549ef0c9fc0433e22e4fe59843d1b2a",
-      "testcaseTitle": "Failed Example 6",
+      "testcaseTitle": "Failed Example 5",
       "relativePath": "testcases/6cfa84/9cc94f9f9549ef0c9fc0433e22e4fe59843d1b2a.html",
       "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/9cc94f9f9549ef0c9fc0433e22e4fe59843d1b2a.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/6cfa84/proposed/"
     },
     {
       "ruleId": "6cfa84",
-      "ruleName": "Element with aria-hidden has no focusable content",
+      "ruleName": "Element with aria-hidden has no content in sequential focus navigation",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
           "forConformance": true,
@@ -5653,7 +5653,7 @@
     },
     {
       "ruleId": "6cfa84",
-      "ruleName": "Element with aria-hidden has no focusable content",
+      "ruleName": "Element with aria-hidden has no content in sequential focus navigation",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
           "forConformance": true,
@@ -5678,7 +5678,7 @@
     },
     {
       "ruleId": "6cfa84",
-      "ruleName": "Element with aria-hidden has no focusable content",
+      "ruleName": "Element with aria-hidden has no content in sequential focus navigation",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
           "forConformance": true,
@@ -6001,28 +6001,10 @@
         }
       },
       "expected": "passed",
-      "testcaseId": "5ca6583c5d7e250e11744fd20e385ac94a6c4dcf",
+      "testcaseId": "d05f912754cdcfbf5f79b346d1418275e31fb8d5",
       "testcaseTitle": "Passed Example 2",
-      "relativePath": "testcases/bc4a75/5ca6583c5d7e250e11744fd20e385ac94a6c4dcf.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/5ca6583c5d7e250e11744fd20e385ac94a6c4dcf.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/bc4a75/proposed/"
-    },
-    {
-      "ruleId": "bc4a75",
-      "ruleName": "ARIA required owned elements",
-      "ruleAccessibilityRequirements": {
-        "wcag20:1.3.1": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "3531d0aea5d4f26705ee56b34e068880aedff56c",
-      "testcaseTitle": "Passed Example 3",
-      "relativePath": "testcases/bc4a75/3531d0aea5d4f26705ee56b34e068880aedff56c.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/3531d0aea5d4f26705ee56b34e068880aedff56c.html",
+      "relativePath": "testcases/bc4a75/d05f912754cdcfbf5f79b346d1418275e31fb8d5.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/d05f912754cdcfbf5f79b346d1418275e31fb8d5.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/bc4a75/proposed/"
     },
     {
@@ -6038,9 +6020,27 @@
       },
       "expected": "passed",
       "testcaseId": "12a2da38812d7bf356f0092674c1c21802faf30d",
-      "testcaseTitle": "Passed Example 4",
+      "testcaseTitle": "Passed Example 3",
       "relativePath": "testcases/bc4a75/12a2da38812d7bf356f0092674c1c21802faf30d.html",
       "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/12a2da38812d7bf356f0092674c1c21802faf30d.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/bc4a75/proposed/"
+    },
+    {
+      "ruleId": "bc4a75",
+      "ruleName": "ARIA required owned elements",
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.3.1": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "e74d875a66842a61c1667ec316b9d455e7e3a331",
+      "testcaseTitle": "Passed Example 4",
+      "relativePath": "testcases/bc4a75/e74d875a66842a61c1667ec316b9d455e7e3a331.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/e74d875a66842a61c1667ec316b9d455e7e3a331.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/bc4a75/proposed/"
     },
     {
@@ -20276,10 +20276,10 @@
         }
       },
       "expected": "failed",
-      "testcaseId": "e6d11dd9493057ccf9dad8a463130d458f74c672",
+      "testcaseId": "3798f2c4c821019fe59bbcc671d46b4e9d2c9d50",
       "testcaseTitle": "Failed Example 1",
-      "relativePath": "testcases/307n5z/e6d11dd9493057ccf9dad8a463130d458f74c672.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/307n5z/e6d11dd9493057ccf9dad8a463130d458f74c672.html",
+      "relativePath": "testcases/307n5z/3798f2c4c821019fe59bbcc671d46b4e9d2c9d50.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/307n5z/3798f2c4c821019fe59bbcc671d46b4e9d2c9d50.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/307n5z/proposed/"
     },
     {

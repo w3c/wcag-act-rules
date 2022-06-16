@@ -2,6 +2,7 @@
   "vendor": "LASIGE, Faculdade de Ciências da Universidade de Lisboa",
   "name": "QualWeb",
   "version": "3.0.0",
+  "lastModified": "14 June 2022",
   "approvedRules": {
     "complete": 10,
     "partial": 2,
@@ -10,8 +11,8 @@
     "untested": 0
   },
   "proposedRules": {
-    "complete": 20,
-    "partial": 4,
+    "complete": 19,
+    "partial": 5,
     "minimal": 13,
     "inconsistent": 20,
     "untested": 20
@@ -3486,7 +3487,7 @@
     },
     {
       "ruleId": "5f99a7",
-      "ruleName": "`aria-*` attribute is defined in WAI-ARIA",
+      "ruleName": "ARIA attribute is defined in WAI-ARIA",
       "ruleApproved": false,
       "procedureNames": [
         "aria-* attribute is defined in WAI-ARIA"
@@ -3613,7 +3614,7 @@
     },
     {
       "ruleId": "6cfa84",
-      "ruleName": "Element with `aria-hidden` has no focusable content",
+      "ruleName": "Element with aria-hidden has no content in sequential focus navigation",
       "ruleApproved": false,
       "procedureNames": [
         "Element with `aria-hidden` has no focusable content"
@@ -3629,7 +3630,7 @@
         ]
       },
       "coverage": {
-        "covered": 11,
+        "covered": 12,
         "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 13
@@ -3696,6 +3697,21 @@
           ]
         },
         {
+          "testcaseId": "85a2d2ea8aeb1eddb5a6576edb958c2d1597ddfc",
+          "testCaseName": "Passed Example 5",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/85a2d2ea8aeb1eddb5a6576edb958c2d1597ddfc.html",
+          "testCaseApproved": false,
+          "expected": "passed",
+          "procedureResults": [
+            {
+              "procedureName": "Element with `aria-hidden` has no focusable content",
+              "outcomes": [
+                "passed"
+              ]
+            }
+          ]
+        },
+        {
           "testcaseId": "4e7955d592cbf361a55113fcd4524e979b16bb08",
           "testCaseName": "Failed Example 1",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/4e7955d592cbf361a55113fcd4524e979b16bb08.html",
@@ -3756,23 +3772,8 @@
           ]
         },
         {
-          "testcaseId": "85a2d2ea8aeb1eddb5a6576edb958c2d1597ddfc",
-          "testCaseName": "Failed Example 5",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/85a2d2ea8aeb1eddb5a6576edb958c2d1597ddfc.html",
-          "testCaseApproved": false,
-          "expected": "failed",
-          "procedureResults": [
-            {
-              "procedureName": "Element with `aria-hidden` has no focusable content",
-              "outcomes": [
-                "passed"
-              ]
-            }
-          ]
-        },
-        {
           "testcaseId": "9cc94f9f9549ef0c9fc0433e22e4fe59843d1b2a",
-          "testCaseName": "Failed Example 6",
+          "testCaseName": "Failed Example 5",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/9cc94f9f9549ef0c9fc0433e22e4fe59843d1b2a.html",
           "testCaseApproved": false,
           "expected": "failed",
@@ -4101,8 +4102,8 @@
         ]
       },
       "coverage": {
-        "covered": 18,
-        "untested": 0,
+        "covered": 16,
+        "untested": 2,
         "cantTell": 0,
         "testCaseTotal": 19
       },
@@ -4123,38 +4124,23 @@
           ]
         },
         {
-          "testcaseId": "5ca6583c5d7e250e11744fd20e385ac94a6c4dcf",
+          "testcaseId": "d05f912754cdcfbf5f79b346d1418275e31fb8d5",
           "testCaseName": "Passed Example 2",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/5ca6583c5d7e250e11744fd20e385ac94a6c4dcf.html",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/d05f912754cdcfbf5f79b346d1418275e31fb8d5.html",
           "testCaseApproved": false,
           "expected": "passed",
           "procedureResults": [
             {
               "procedureName": "ARIA required owned elements",
               "outcomes": [
-                "passed"
-              ]
-            }
-          ]
-        },
-        {
-          "testcaseId": "3531d0aea5d4f26705ee56b34e068880aedff56c",
-          "testCaseName": "Passed Example 3",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/3531d0aea5d4f26705ee56b34e068880aedff56c.html",
-          "testCaseApproved": false,
-          "expected": "passed",
-          "procedureResults": [
-            {
-              "procedureName": "ARIA required owned elements",
-              "outcomes": [
-                "passed"
+                "untested"
               ]
             }
           ]
         },
         {
           "testcaseId": "12a2da38812d7bf356f0092674c1c21802faf30d",
-          "testCaseName": "Passed Example 4",
+          "testCaseName": "Passed Example 3",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/12a2da38812d7bf356f0092674c1c21802faf30d.html",
           "testCaseApproved": false,
           "expected": "passed",
@@ -4163,6 +4149,21 @@
               "procedureName": "ARIA required owned elements",
               "outcomes": [
                 "passed"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "e74d875a66842a61c1667ec316b9d455e7e3a331",
+          "testCaseName": "Passed Example 4",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/e74d875a66842a61c1667ec316b9d455e7e3a331.html",
+          "testCaseApproved": false,
+          "expected": "passed",
+          "procedureResults": [
+            {
+              "procedureName": "ARIA required owned elements",
+              "outcomes": [
+                "untested"
               ]
             }
           ]
@@ -5034,7 +5035,7 @@
     },
     {
       "ruleId": "afb423",
-      "ruleName": "`audio` element content is media alternative for text",
+      "ruleName": "Audio element content is media alternative for text",
       "ruleApproved": false,
       "procedureNames": [
         "audio element content is media alternative for text"
@@ -5161,7 +5162,7 @@
     },
     {
       "ruleId": "80f0bf",
-      "ruleName": "`audio` or `video` avoids automatically playing audio",
+      "ruleName": "Audio or video element avoids automatically playing audio",
       "ruleApproved": false,
       "procedureNames": [
         "Audio or video that plays automatically has no audio that lasts more than 3 seconds",
@@ -5403,7 +5404,7 @@
     },
     {
       "ruleId": "e7aa44",
-      "ruleName": "`audio` element content has text alternative",
+      "ruleName": "Audio element content has text alternative",
       "ruleApproved": false,
       "procedureNames": [
         "audio element content has transcript",
@@ -5645,7 +5646,7 @@
     },
     {
       "ruleId": "2eb176",
-      "ruleName": "`audio` element content has transcript",
+      "ruleName": "Audio element content has transcript",
       "ruleApproved": false,
       "procedureNames": [
         "audio element content has transcript"
@@ -5832,7 +5833,7 @@
     },
     {
       "ruleId": "aaa1bf",
-      "ruleName": "`Audio` or `video` that plays automatically has no audio that lasts more than 3 seconds",
+      "ruleName": "Audio or video element that plays automatically has no audio that lasts more than 3 seconds",
       "ruleApproved": false,
       "procedureNames": [
         "Audio or video that plays automatically has no audio that lasts more than 3 seconds"
@@ -5959,7 +5960,7 @@
     },
     {
       "ruleId": "4c31df",
-      "ruleName": "`audio` or `video` that plays automatically has a control mechanism",
+      "ruleName": "Audio or video element that plays automatically has a control mechanism",
       "ruleApproved": false,
       "procedureNames": [
         "audio or video that plays automatically has a control mechanism"
@@ -7650,7 +7651,7 @@
     },
     {
       "ruleId": "7d6734",
-      "ruleName": "`svg` element with explicit role has non-empty accessible name",
+      "ruleName": "SVG element with explicit role has non-empty accessible name",
       "ruleApproved": false,
       "procedureNames": [
         "svg element with explicit role has accessible name"
@@ -8140,7 +8141,7 @@
     },
     {
       "ruleId": "3ea0c8",
-      "ruleName": "`id` attribute value is unique",
+      "ruleName": "Id attribute value is unique",
       "ruleApproved": false,
       "procedureNames": [
         "`id` attribute value is unique"
@@ -8316,7 +8317,7 @@
     },
     {
       "ruleId": "4b1c6c",
-      "ruleName": "`iframe` elements with identical accessible names have equivalent purpose",
+      "ruleName": "Iframe elements with identical accessible names have equivalent purpose",
       "ruleApproved": false,
       "procedureNames": [
         "`iframe` elements with identical accessible names have equivalent purpose"
@@ -8685,7 +8686,7 @@
     },
     {
       "ruleId": "cae760",
-      "ruleName": "`iframe` element has non-empty accessible name",
+      "ruleName": "Iframe element has non-empty accessible name",
       "ruleApproved": false,
       "procedureNames": [
         "iframe element has accessible name"
@@ -8861,7 +8862,7 @@
     },
     {
       "ruleId": "akn7bn",
-      "ruleName": "iframe with negative tabindex has no interactive elements",
+      "ruleName": "Iframe with negative tabindex has no interactive elements",
       "ruleApproved": false,
       "procedureNames": [
         "iframe with negative tabindex has no interactive elements"
@@ -9170,7 +9171,7 @@
     },
     {
       "ruleId": "78fd32",
-      "ruleName": "Line height in `style` attributes is not `!important`",
+      "ruleName": "Line height in style attributes is not !important",
       "ruleApproved": false,
       "procedureNames": [
         "Line height in style attributes is not !important"
@@ -10320,7 +10321,7 @@
     },
     {
       "ruleId": "bc659a",
-      "ruleName": "`meta` element has no refresh delay",
+      "ruleName": "Meta element has no refresh delay",
       "ruleApproved": false,
       "procedureNames": [
         "Meta-refresh no delay"
@@ -10575,7 +10576,7 @@
     },
     {
       "ruleId": "bisz58",
-      "ruleName": "`meta` element has no refresh delay (no exception)",
+      "ruleName": "Meta element has no refresh delay (no exception)",
       "ruleApproved": false,
       "procedureNames": [
         "`meta` element has no refresh delay (no exception)"
@@ -10813,7 +10814,7 @@
     },
     {
       "ruleId": "b4f0c3",
-      "ruleName": "`meta` `viewport` allows for zoom",
+      "ruleName": "Meta viewport allows for zoom",
       "ruleApproved": false,
       "procedureNames": [
         "meta viewport does not prevent zoom"
@@ -11254,7 +11255,7 @@
       "procedureNames": [
         "Element with presentational children has no focusable content"
       ],
-      "consistency": "complete",
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -11265,8 +11266,8 @@
         ]
       },
       "coverage": {
-        "covered": 7,
-        "untested": 0,
+        "covered": 6,
+        "untested": 1,
         "cantTell": 0,
         "testCaseTotal": 7
       },
@@ -11317,16 +11318,16 @@
           ]
         },
         {
-          "testcaseId": "e6d11dd9493057ccf9dad8a463130d458f74c672",
+          "testcaseId": "3798f2c4c821019fe59bbcc671d46b4e9d2c9d50",
           "testCaseName": "Failed Example 1",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/307n5z/e6d11dd9493057ccf9dad8a463130d458f74c672.html",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/307n5z/3798f2c4c821019fe59bbcc671d46b4e9d2c9d50.html",
           "testCaseApproved": false,
           "expected": "failed",
           "procedureResults": [
             {
               "procedureName": "Element with presentational children has no focusable content",
               "outcomes": [
-                "failed"
+                "untested"
               ]
             }
           ]
@@ -11389,7 +11390,7 @@
     },
     {
       "ruleId": "674b10",
-      "ruleName": "`role` attribute has valid value",
+      "ruleName": "Role attribute has valid value",
       "ruleApproved": false,
       "procedureNames": [
         "role attribute has valid value"
@@ -11565,7 +11566,7 @@
     },
     {
       "ruleId": "4e8ab6",
-      "ruleName": "Element with `role` attribute has required states and properties",
+      "ruleName": "Element with role attribute has required states and properties",
       "ruleApproved": false,
       "procedureNames": [
         "Element with role attribute has required states and properties"
@@ -12314,7 +12315,7 @@
     },
     {
       "ruleId": "a25f45",
-      "ruleName": "`headers` attribute specified on a cell refers to cells in the same `table` element",
+      "ruleName": "Headers attribute specified on a cell refers to cells in the same table element",
       "ruleApproved": false,
       "procedureNames": [
         "Headers attribute specified on a cell refers to cells in the same table element"
@@ -13489,7 +13490,7 @@
     },
     {
       "ruleId": "eac66b",
-      "ruleName": "`video` element auditory content has accessible alternative",
+      "ruleName": "Video element auditory content has accessible alternative",
       "ruleApproved": false,
       "procedureNames": [
         "video element content is media alternative for text",
@@ -13677,7 +13678,7 @@
     },
     {
       "ruleId": "c5a4ea",
-      "ruleName": "`video` element visual content has accessible alternative",
+      "ruleName": "Video element visual content has accessible alternative",
       "ruleApproved": false,
       "procedureNames": [
         "video element visual content has audio description",
@@ -14058,7 +14059,7 @@
     },
     {
       "ruleId": "ab4d13",
-      "ruleName": "`video` element content is media alternative for text",
+      "ruleName": "Video element content is media alternative for text",
       "ruleApproved": false,
       "procedureNames": [
         "video element content is media alternative for text"
@@ -14185,7 +14186,7 @@
     },
     {
       "ruleId": "1ea59c",
-      "ruleName": "`video` element visual content has audio description",
+      "ruleName": "Video element visual content has audio description",
       "ruleApproved": false,
       "procedureNames": [
         "video element visual content has audio description"
@@ -14312,7 +14313,7 @@
     },
     {
       "ruleId": "f51b46",
-      "ruleName": "`video` element auditory content has captions",
+      "ruleName": "Video element auditory content has captions",
       "ruleApproved": false,
       "procedureNames": [
         "video element auditory content has captions"
@@ -14454,7 +14455,7 @@
     },
     {
       "ruleId": "f196ce",
-      "ruleName": "DEPRECATED — `video` element visual content has description track",
+      "ruleName": "DEPRECATED — Video element visual content has description track",
       "ruleApproved": false,
       "procedureNames": [
         "video element visual content has description track"
@@ -14551,7 +14552,7 @@
     },
     {
       "ruleId": "c3232f",
-      "ruleName": "`video` element visual-only content has accessible alternative",
+      "ruleName": "Video element visual-only content has accessible alternative",
       "ruleApproved": false,
       "procedureNames": [
         "video element visual-only content has description track"
@@ -14710,7 +14711,7 @@
     },
     {
       "ruleId": "fd26cf",
-      "ruleName": "`video` element visual-only content is media alternative for text",
+      "ruleName": "Video element visual-only content is media alternative for text",
       "ruleApproved": false,
       "procedureNames": [
         "video element visual-only content is media alternative for text"
@@ -14837,7 +14838,7 @@
     },
     {
       "ruleId": "d7ba54",
-      "ruleName": "`video` element visual-only content has audio track alternative",
+      "ruleName": "Video element visual-only content has audio track alternative",
       "ruleApproved": false,
       "procedureNames": [
         "video element visual-only content has audio track alternative"
@@ -14934,7 +14935,7 @@
     },
     {
       "ruleId": "ac7dc6",
-      "ruleName": "DEPRECATED — `video` element visual-only content has description track",
+      "ruleName": "DEPRECATED — Video element visual-only content has description track",
       "ruleApproved": false,
       "procedureNames": [
         "video element visual-only content has description track"
@@ -15031,7 +15032,7 @@
     },
     {
       "ruleId": "ee13b5",
-      "ruleName": "`video` element visual-only content has transcript",
+      "ruleName": "Video element visual-only content has transcript",
       "ruleApproved": false,
       "procedureNames": [
         "video element visual-only content has transcript"
@@ -15173,7 +15174,7 @@
     },
     {
       "ruleId": "1ec09b",
-      "ruleName": "`video` element visual content has strict accessible alternative",
+      "ruleName": "Video element visual content has strict accessible alternative",
       "ruleApproved": false,
       "procedureNames": [
         "video element visual content has audio description",
@@ -15431,7 +15432,7 @@
     },
     {
       "ruleId": "1a02b0",
-      "ruleName": "Audio and visuals of `video` element have transcript",
+      "ruleName": "Audio and visuals of video element have transcript",
       "ruleApproved": false,
       "procedureNames": [
         "Audio and visuals of video element have transcript"

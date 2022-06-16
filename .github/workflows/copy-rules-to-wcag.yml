@@ -25,7 +25,7 @@ jobs:
     env:
       SOURCE_FILENAME: wcag-mapping.json
       DESTINATION_REPO: w3c/wcag
-      DESTINATION_BRANCH: master
+      DESTINATION_BRANCH: main
       DESTINATION_FILENAME: guidelines/act-mapping.json
       COMMIT_MESSAGE: ACT rules update from https://github.com/${{ github.repository }}/commit/${{ github.sha }}
     steps:
