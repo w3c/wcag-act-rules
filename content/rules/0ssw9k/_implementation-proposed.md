@@ -7,11 +7,11 @@ not accounted for in the change history or the last modified date.
 {%- assign implementations = siteData.act-implementations | sort: "name" %}
 {%- assign ruleId = page.rule_meta.id %}
 
-<table>
+<table class="act-implementations">
   <thead>
     <tr>
      <th>Implementation</th>
-     <th>Test Mode</th>
+     <th>Type</th>
      <th>Consistency</th>
      <th>Report</th>
     </tr>

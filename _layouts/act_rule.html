@@ -23,3 +23,10 @@ layout: standalone_resource
 {{ page.rule_meta.description | markdownify }}
 
 {{ content }}
+
+{% assign ruleId = page.rule_meta.id -%}
+{%- if ruleId %}
+
+<h2>Hello World</h2>
+
+{% endif %}
