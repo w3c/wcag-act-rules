@@ -32,6 +32,10 @@ layout: standalone_resource
 
 {%- assign siteData = site.data.wcag-act-rules %}
 {%- assign implementations = siteData.act-implementations | sort: "name" %}
+
+{% assign consistent = implementations | map: 1 %}
+<h3>{{ consistent | map: 'name' | join: ',' }}</h3>
+
 <table class="act-implementations">
   <thead>
     <tr>
@@ -52,10 +56,10 @@ layout: standalone_resource
           <td>{{ ruleMapping.consistency }}</td>
           <td><a href="{{
             '/standards-guidelines/act/implementations/' 
-            | append: implementation.uniqueKey 
-            | append: "#breakdown-"
-            | append: ruleId
-            | relative_url
+              | append: implementation.uniqueKey 
+              | append: "#breakdown-"
+              | append: ruleId
+              | relative_url
           }}"><img alt="{{ implementation.name }} Report" src="{{
             '/content-assets/wcag-act-rules/bar-chart-fill.svg' | relative_url
           }}" /></a></td>
