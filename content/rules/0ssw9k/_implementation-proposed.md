@@ -7,8 +7,6 @@ not accounted for in the change history or the last modified date.
 {%- assign implementations = siteData.act-implementations | sort: "name" %}
 {%- assign ruleId = page.rule_meta.id %}
 
-ID: {{ ruleId }}
-
 <table>
   <thead>
     <tr>
@@ -22,12 +20,22 @@ ID: {{ ruleId }}
     {%- for implementation in implementations %}
       {%- assign report = siteData.implementations[implementation.uniqueKey] %}
       {%- assign ruleMapping = report.actRuleMapping | where: "ruleId", ruleId | first %}
-      <tr>
-        <td>{{ implementation.name }}</td>
-        <td>{{ implementation.type }}</td>
-        <td>{{ ruleMapping.consistency }}</td>
-        <td><a href="#">Report</a></td>
-      </tr>
+      {% if ruleMapping.consistency %}
+        <tr>
+          <td>{{ implementation.name }}</td>
+          <td>{{ implementation.type }}</td>
+          <td>{{ ruleMapping.consistency }}</td>
+          <td><a href="{{
+            '/standards-guidelines/act/implementations/' 
+            | append: implementation.uniqueKey 
+            | append: "#breakdown-"
+            | append: ruleId
+            | relative_url
+          }}"><img alt="{{ implementation.name }} Report" src="{{
+            '/content-assets/wcag-act-rules/bar-chart-fill.svg' | relative_url
+          }}" /></a></td>
+        </tr>
+      {% endif %}
     {%- endfor %}
   </tbody>
 </table>
