@@ -34,7 +34,7 @@ layout: standalone_resource
 {%- assign implementations = siteData.act-implementations | sort: "name" %}
 
 {% assign consistent = implementations | map: 1 %}
-<h3>{{ consistent | map: 'name' | join: ',' }}</h3>
+<h3>{{ consistent | map: 'name' | join: ', ' }}</h3>
 
 <table class="act-implementations">
   <thead>
