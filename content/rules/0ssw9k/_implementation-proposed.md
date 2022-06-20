@@ -3,8 +3,23 @@
 This section is not part of the official rule. It is populated dynamically and 
 not accounted for in the change history or the last modified date.
 
-| Implementation | Consistency          | Complete | Report
-|----------------|----------------------|----------|-------------
-| Axe-core       | Consistent           | Yes      | [View Report](https://act-rules.github.io/implementation/axe-core#id-0ssw9k)
-| QualWeb        | Consistent           | Yes      | [View Report](https://act-rules.github.io/implementation/qualweb#id-0ssw9k)
-| SortSite       | Consistent           | Yes      | [View Report](https://act-rules.github.io/implementation/sortsite#id-0ssw9k)
+ID: {{ page.rule_meta.id }}
+
+<table>
+  <thead>
+    <tr>
+     <th>Implementation</th>
+     <th>Test Mode<th>
+     <th>Consistency</th>
+     <th>Report</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>name</td>
+      <td>method</td>
+      <td>consistent</td>
+      <td><a href="">Report</a></td>
+    </tr>
+  </tbody>
+</table>
