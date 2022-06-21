@@ -644,9 +644,9 @@
       },
       "coverage": {
         "covered": 18,
-        "untested": 0,
+        "untested": 1,
         "cantTell": 0,
-        "testCaseTotal": 18
+        "testCaseTotal": 19
       },
       "testCaseResults": [
         {
@@ -915,6 +915,21 @@
               "procedureName": "Element within body has valid lang attribute",
               "outcomes": [
                 "inapplicable"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "4fa5219cf39dc536c51d67f6c4f9f54271a8dcfa",
+          "testCaseName": "Inapplicable Example 5",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/4fa5219cf39dc536c51d67f6c4f9f54271a8dcfa.html",
+          "testCaseApproved": false,
+          "expected": "inapplicable",
+          "procedureResults": [
+            {
+              "procedureName": "Element within body has valid lang attribute",
+              "outcomes": [
+                "untested"
               ]
             }
           ]
@@ -2824,9 +2839,9 @@
       },
       "coverage": {
         "covered": 26,
-        "untested": 0,
+        "untested": 2,
         "cantTell": 0,
-        "testCaseTotal": 26
+        "testCaseTotal": 28
       },
       "testCaseResults": [
         {
@@ -3215,6 +3230,36 @@
               "procedureName": "Link has accessible name",
               "outcomes": [
                 "inapplicable"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "d36abfa44924a4d4088bada05f439ae392dfd662",
+          "testCaseName": "Passed Example 11",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/c487ae/d36abfa44924a4d4088bada05f439ae392dfd662.html",
+          "testCaseApproved": false,
+          "expected": "passed",
+          "procedureResults": [
+            {
+              "procedureName": "Link has accessible name",
+              "outcomes": [
+                "untested"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "7b3b94c0e39bed9d432f379efa77ba9f54c81c6d",
+          "testCaseName": "Failed Example 11",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/c487ae/7b3b94c0e39bed9d432f379efa77ba9f54c81c6d.html",
+          "testCaseApproved": false,
+          "expected": "failed",
+          "procedureResults": [
+            {
+              "procedureName": "Link has accessible name",
+              "outcomes": [
+                "untested"
               ]
             }
           ]
