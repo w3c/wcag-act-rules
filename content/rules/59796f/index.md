@@ -319,11 +319,7 @@ An HTML element is _programmatically hidden_ if either it has a [computed][] CSS
 
 **Note**: Contrarily to the other conditions, the `visibility` CSS property may be reverted by descendants.
 
-{% include_relative _implementation-approved.md %}
-
-## Changelog
-
-This is the first version of this ACT rule.
+{% include_relative _versions.md %}
 
 [accessible name and description computation]: https://www.w3.org/TR/accname 'Accessible Name and Description Computation'
 [accessible name]: #accessible-name 'Definition of Accessible Name'
