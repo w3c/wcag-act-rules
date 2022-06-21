@@ -25,10 +25,10 @@ layout: standalone_resource
 {{ content }}
 
 {% assign ruleId = page.rule_meta.id -%}
-{%- if ruleId %}
+
+{%- if ruleId and page.github.path contains "/index.md" or page.github.path contains "/proposed.md" %}
 {%- assign siteData = site.data.wcag-act-rules %}
 {%- assign implementations = siteData.act-implementations | sort: "name" %}
-
 {%- comment %}<!--
   The following capture group is used to create a list of implementations
   that are consistent or partially consistent. This is needed for the
