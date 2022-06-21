@@ -12,9 +12,9 @@
   },
   "proposedRules": {
     "complete": 9,
-    "partial": 8,
+    "partial": 9,
     "minimal": 3,
-    "inconsistent": 12,
+    "inconsistent": 11,
     "untested": 45
   },
   "actRuleMapping": [
@@ -3633,7 +3633,7 @@
       "procedureNames": [
         "sia-r17"
       ],
-      "consistency": null,
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": false,
         "expected": [
@@ -3646,9 +3646,9 @@
       },
       "coverage": {
         "covered": 12,
-        "untested": 0,
+        "untested": 2,
         "cantTell": 0,
-        "testCaseTotal": 13
+        "testCaseTotal": 14
       },
       "testCaseResults": [
         {
@@ -3697,16 +3697,16 @@
           ]
         },
         {
-          "testcaseId": "8f7b47436534d716bf8f088786e5ee6b1154c23c",
+          "testcaseId": "36d83f2c0fe431eade9b158f1e548c2d6189d570",
           "testCaseName": "Passed Example 4",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/8f7b47436534d716bf8f088786e5ee6b1154c23c.html",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/36d83f2c0fe431eade9b158f1e548c2d6189d570.html",
           "testCaseApproved": false,
           "expected": "passed",
           "procedureResults": [
             {
               "procedureName": "sia-r17",
               "outcomes": [
-                "failed"
+                "untested"
               ]
             }
           ]
@@ -3797,6 +3797,21 @@
               "procedureName": "sia-r17",
               "outcomes": [
                 "failed"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "59dbb168e68fbb2e752910c43405fe33fb9f3f70",
+          "testCaseName": "Failed Example 6",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/59dbb168e68fbb2e752910c43405fe33fb9f3f70.html",
+          "testCaseApproved": false,
+          "expected": "failed",
+          "procedureResults": [
+            {
+              "procedureName": "sia-r17",
+              "outcomes": [
+                "untested"
               ]
             }
           ]
