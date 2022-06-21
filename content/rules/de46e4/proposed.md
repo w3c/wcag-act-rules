@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> de46e4</p>
-  <p><strong>Date:</strong> Updated 13 June 2022</p>
+  <p><strong>Date:</strong> Updated 21 June 2022</p>
   <p><strong>Authors:</strong> <a href="https://github.com/brynanders">Bryn Anderson</a>, <a href="https://github.com/jkodu">Jey Nandakumar</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -19,7 +19,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that a non-empty `lang` attribute of an element in the page has a language tag with a known primary language subtag.
-  last_modified: 13 June 2022
+  last_modified: 21 June 2022
   scs_tested:
     - handle: Language of Parts
       num: 3.1.2
@@ -104,7 +104,7 @@ The following aspects are required in using this rule.
 
 #### Passed Example 1
 
-<a class="example-link" title="Passed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/53a78bad6e92791991df42c50d2e763a9f9d772c.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/53a78bad6e92791991df42c50d2e763a9f9d772c.html">Open in a new tab</a>
 
 This `article` element has a `lang` [attribute value][] which has a [known primary language tag][].
 
@@ -120,7 +120,7 @@ This `article` element has a `lang` [attribute value][] which has a [known prima
 
 #### Passed Example 2
 
-<a class="example-link" title="Passed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/e0fe6824b5571e0552ab2955697c5ff0776abf79.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/e0fe6824b5571e0552ab2955697c5ff0776abf79.html">Open in a new tab</a>
 
 This `blockquote` element has a `lang` [attribute value][] which has a [known primary language tag][]. The region section ("CH") in the value is ignored by the rule (and the definition of [known primary language tag][]).
 
@@ -136,7 +136,7 @@ This `blockquote` element has a `lang` [attribute value][] which has a [known pr
 
 #### Passed Example 3
 
-<a class="example-link" title="Passed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/207782d0d8899521e2b51b5c384f83d7f4516358.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/207782d0d8899521e2b51b5c384f83d7f4516358.html">Open in a new tab</a>
 
 This `p` element has a `lang` [attribute value][] which has a [known primary language tag][], but a syntactically invalid region subtag which is ignored by the rule.
 
@@ -152,7 +152,7 @@ This `p` element has a `lang` [attribute value][] which has a [known primary lan
 
 #### Passed Example 4
 
-<a class="example-link" title="Passed Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/8376f95166a75a8541217b77ae6a235f1aac6c3d.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/8376f95166a75a8541217b77ae6a235f1aac6c3d.html">Open in a new tab</a>
 
 This `div` element has a valid `lang` [attribute value][]. There is no [text inheriting its programmatic language][] from the `article` element, therefore its `lang` attribute is not considered by the rule.
 
@@ -170,7 +170,7 @@ This `div` element has a valid `lang` [attribute value][]. There is no [text inh
 
 #### Passed Example 5
 
-<a class="example-link" title="Passed Example 5" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/2febb4d398ed0d788f9ac054ff14cfbd68c0c1f1.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/2febb4d398ed0d788f9ac054ff14cfbd68c0c1f1.html">Open in a new tab</a>
 
 This `div` element has a valid `lang` [attribute value][]. The [accessible name][] of the image is [text inheriting its programmatic language][] from the `div` element.
 
@@ -188,7 +188,7 @@ This `div` element has a valid `lang` [attribute value][]. The [accessible name]
 
 #### Failed Example 1
 
-<a class="example-link" title="Failed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/0545e4efa0d7897b357f0396e7e30d5f3b5921dd.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/0545e4efa0d7897b357f0396e7e30d5f3b5921dd.html">Open in a new tab</a>
 
 This `article` element has a `lang` [attribute value][] which does not have a [known primary language tag][] because its primary language subtag does not exist in the [language subtag registry][].
 
@@ -204,7 +204,7 @@ This `article` element has a `lang` [attribute value][] which does not have a [k
 
 #### Failed Example 2
 
-<a class="example-link" title="Failed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/e7f2916927e758969cbfe270ad4b6ed6c07faa72.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/e7f2916927e758969cbfe270ad4b6ed6c07faa72.html">Open in a new tab</a>
 
 This `article` element has a `lang` [attribute value][] which has no [known primary language tag][].
 
@@ -220,7 +220,7 @@ This `article` element has a `lang` [attribute value][] which has no [known prim
 
 #### Failed Example 3
 
-<a class="example-link" title="Failed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/35a083bacf80a64deb81069ec7db0229520c9a6c.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/35a083bacf80a64deb81069ec7db0229520c9a6c.html">Open in a new tab</a>
 
 This `article` element has a `lang` [attribute value][] which consists of only [whitespace][] and thus has no [known primary language tag][].
 
@@ -236,7 +236,7 @@ This `article` element has a `lang` [attribute value][] which consists of only [
 
 #### Failed Example 4
 
-<a class="example-link" title="Failed Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/0d2ac2a60f6b99de02537945ac61366e1562403d.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/0d2ac2a60f6b99de02537945ac61366e1562403d.html">Open in a new tab</a>
 
 The `lang` [attribute value][] does not have a valid language tag. The `lang` attribute must be valid because the content is [visible][].
 
@@ -254,7 +254,7 @@ The `lang` [attribute value][] does not have a valid language tag. The `lang` at
 
 #### Failed Example 5
 
-<a class="example-link" title="Failed Example 5" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/8df22e9421c652e9849f7bfb4dbd28a24518c0fb.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/8df22e9421c652e9849f7bfb4dbd28a24518c0fb.html">Open in a new tab</a>
 
 The `lang` [attribute value][] does not have a valid language tag, and its [descendant][] is not [visible][] though it is still [included in the accessibility tree][].
 
@@ -272,7 +272,7 @@ The `lang` [attribute value][] does not have a valid language tag, and its [desc
 
 #### Failed Example 6
 
-<a class="example-link" title="Failed Example 6" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/984a5b424d118046dfa2529398056fbd52d4e5ea.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 6" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/984a5b424d118046dfa2529398056fbd52d4e5ea.html">Open in a new tab</a>
 
 This `div` element has an invalid `lang` [attribute value][]. There is no [text inheriting its programmatic language][] from the `article` element, therefore its `lang` attribute is not considered by the rule.
 
@@ -290,7 +290,7 @@ This `div` element has an invalid `lang` [attribute value][]. There is no [text 
 
 #### Failed Example 7
 
-<a class="example-link" title="Failed Example 7" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/3087d6c373b09b1f4fc70a5c3ae221cce54b626c.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 7" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/3087d6c373b09b1f4fc70a5c3ae221cce54b626c.html">Open in a new tab</a>
 
 This `div` element has an invalid `lang` [attribute value][]. The [accessible name][] of the image is [text inheriting its programmatic language][] from the `div` element.
 
@@ -306,7 +306,7 @@ This `div` element has an invalid `lang` [attribute value][]. The [accessible na
 
 #### Failed Example 8
 
-<a class="example-link" title="Failed Example 8" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/915cdae554a817caa4792101fde1adf14563227d.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 8" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/915cdae554a817caa4792101fde1adf14563227d.html">Open in a new tab</a>
 
 The `lang` [attribute value][] of this `p` element is an [iso 639.2][] three letters code, which has no [known primary language tag][].
 
@@ -320,7 +320,7 @@ The `lang` [attribute value][] of this `p` element is an [iso 639.2][] three let
 
 #### Failed Example 9
 
-<a class="example-link" title="Failed Example 9" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/50e733e0c505a556fc53e6265eb5b432823570f7.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 9" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/50e733e0c505a556fc53e6265eb5b432823570f7.html">Open in a new tab</a>
 
 The `lang` [attribute value][] of this `p` element is a [grandfathered tag][grandfathered tags], which has no [known primary language tag][].
 
@@ -336,7 +336,7 @@ The `lang` [attribute value][] of this `p` element is a [grandfathered tag][gran
 
 #### Inapplicable Example 1
 
-<a class="example-link" title="Inapplicable Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/5b58b483fa53a6ff228c89a7fe57997664845663.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/5b58b483fa53a6ff228c89a7fe57997664845663.html">Open in a new tab</a>
 
 There is no element with a lang attribute value which is a descendant of a body element.
 
@@ -350,7 +350,7 @@ There is no element with a lang attribute value which is a descendant of a body 
 
 #### Inapplicable Example 2
 
-<a class="example-link" title="Inapplicable Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/d6606eb2863e2176f9beb914e5cfe70bce2d905e.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/d6606eb2863e2176f9beb914e5cfe70bce2d905e.html">Open in a new tab</a>
 
 There is no element which is a descendant of a `body` element and has a non-empty `lang` [attribute value][].
 
@@ -366,7 +366,7 @@ There is no element which is a descendant of a `body` element and has a non-empt
 
 #### Inapplicable Example 3
 
-<a class="example-link" title="Inapplicable Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/a44f5e11d20feec4ae39e2db0336ddef0a8e04ec.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/a44f5e11d20feec4ae39e2db0336ddef0a8e04ec.html">Open in a new tab</a>
 
 There is no element with a [text node][] as a [descendant][] in the [flat tree][] that is either [visible][] or [included in the accessibility tree][].
 
@@ -384,7 +384,7 @@ There is no element with a [text node][] as a [descendant][] in the [flat tree][
 
 #### Inapplicable Example 4
 
-<a class="example-link" title="Inapplicable Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/471e3f82cdd9122e2886d2d7bcfc8cda1397a51d.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/471e3f82cdd9122e2886d2d7bcfc8cda1397a51d.html">Open in a new tab</a>
 
 There is no [text inheriting its programmatic language][] from this `div` element.
 
@@ -400,7 +400,7 @@ There is no [text inheriting its programmatic language][] from this `div` elemen
 
 #### Inapplicable Example 5
 
-<a class="example-link" title="Inapplicable Example 5" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/4fa5219cf39dc536c51d67f6c4f9f54271a8dcfa.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/4fa5219cf39dc536c51d67f6c4f9f54271a8dcfa.html">Open in a new tab</a>
 
 The [text inheriting its programmatic language][] from this `div` element is only [whitespace][].
 
@@ -550,11 +550,7 @@ This includes:
   - Carriage Return (CR) (U+000D)
   - Next Line (NEL) (U+0085)
 
-{% include_relative _implementation-proposed.md %}
-
-## Changelog
-
-This is the first version of this ACT rule.
+{% include_relative _versions.md %}
 
 [accessible description]: https://www.w3.org/TR/accname-1.1/#dfn-accessible-description 'Definition of Accessible description'
 [accessible name and description computation]: https://www.w3.org/TR/accname 'Accessible Name and Description Computation'

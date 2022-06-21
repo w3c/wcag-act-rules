@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 9e45ec</p>
-  <p><strong>Date:</strong> Updated 30 May 2022</p>
+  <p><strong>Date:</strong> Updated 21 June 2022</p>
   <p><strong>Authors:</strong> <a href="https://github.com/Jym77">Jean-Yves Moyen</a>, <a href="https://github.com/jkodu">Jey Nandakumar</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -19,7 +19,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that the `style` attribute is not used to prevent adjusting `word-spacing` by using `!important`, except if it's at least `0.16` times the font size.
-  last_modified: 30 May 2022
+  last_modified: 21 June 2022
   scs_tested:
     - handle: Text Spacing
       num: 1.4.12
@@ -92,7 +92,7 @@ The following aspects are required in using this rule.
 
 #### Passed Example 1
 
-<a class="example-link" title="Passed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/d32bae2609b7c0c66a1df8dbfc182fb10c16805d.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/d32bae2609b7c0c66a1df8dbfc182fb10c16805d.html">Open in a new tab</a>
 
 This `p` element has a **not [important][]** [computed][] `word-spacing`.
 
@@ -104,7 +104,7 @@ This `p` element has a **not [important][]** [computed][] `word-spacing`.
 
 #### Passed Example 2
 
-<a class="example-link" title="Passed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/45e5a588c3e8977fa0e83074d7f7c89738e8ec42.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/45e5a588c3e8977fa0e83074d7f7c89738e8ec42.html">Open in a new tab</a>
 
 This `p` element has a [computed][] `word-spacing` of 0.2 times the font size, which is **wide enough**.
 
@@ -116,7 +116,7 @@ This `p` element has a [computed][] `word-spacing` of 0.2 times the font size, w
 
 #### Passed Example 3
 
-<a class="example-link" title="Passed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/2a2a14cc9bcb3fa7983e22f160ce9eeb6b832a8c.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/2a2a14cc9bcb3fa7983e22f160ce9eeb6b832a8c.html">Open in a new tab</a>
 
 This `p` element has a [computed][] `word-spacing` of `4px`, which is **wide enough** (the threshold is `4px`).
 
@@ -134,7 +134,7 @@ This `p` element has a [computed][] `word-spacing` of `4px`, which is **wide eno
 
 #### Passed Example 4
 
-<a class="example-link" title="Passed Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/6d5dde208ef91b6afceca022c7a2a12b99f042b7.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/6d5dde208ef91b6afceca022c7a2a12b99f042b7.html">Open in a new tab</a>
 
 This `p` element has two [declared][] values for its `word-spacing` property. The latest wins the [cascade sort][]. It has a value of `0.2em`, which is **wide enough**.
 
@@ -146,7 +146,7 @@ This `p` element has two [declared][] values for its `word-spacing` property. Th
 
 #### Passed Example 5
 
-<a class="example-link" title="Passed Example 5" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/2d9b8cf0906f0e05e4d487c9682db7a7e022fab0.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/2d9b8cf0906f0e05e4d487c9682db7a7e022fab0.html">Open in a new tab</a>
 
 This `p` element has two [declared][] values for its `word-spacing` property. The one which is [important][] wins the [cascade sort][]. It has a value of `0.2em`, which is **wide enough**.
 
@@ -158,7 +158,7 @@ This `p` element has two [declared][] values for its `word-spacing` property. Th
 
 #### Passed Example 6
 
-<a class="example-link" title="Passed Example 6" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/51faee765656c7bfe86b959373e1df8679726779.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 6" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/51faee765656c7bfe86b959373e1df8679726779.html">Open in a new tab</a>
 
 The [cascaded][] value of the `word-spacing` property of this `p` element is [declared][] in the style sheet, not in the `style` attribute (it wins the [cascade sort][] because it is [important][]). Thus, the `p` element matches the **cascade** condition.
 
@@ -176,7 +176,7 @@ The [cascaded][] value of the `word-spacing` property of this `p` element is [de
 
 #### Passed Example 7
 
-<a class="example-link" title="Passed Example 7" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/fa119442cf663c73bf332488f3965b427b024009.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 7" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/fa119442cf663c73bf332488f3965b427b024009.html">Open in a new tab</a>
 
 The [computed][] value of the `word-spacing` property of this `p` element is **not [important][]**. The [computed][] value of the `word-spacing` property of this `span` element is the [inherited][] value, that is the [computed][] value of its parent and therefore also **not [important][]**.
 
@@ -190,7 +190,7 @@ The [computed][] value of the `word-spacing` property of this `p` element is **n
 
 #### Passed Example 8
 
-<a class="example-link" title="Passed Example 8" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/edaf06132468eccf5fd90551151252a364b44b7b.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 8" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/edaf06132468eccf5fd90551151252a364b44b7b.html">Open in a new tab</a>
 
 The [computed][] value of the `word-spacing` property of this `p` element is **not [important][]**. The [computed][] value of the `word-spacing` property of this `span` element is the [inherited][] value, that is the [computed][] value of its parent and therefore also **not [important][]**.
 
@@ -206,7 +206,7 @@ The [computed][] value of the `word-spacing` property of this `p` element is **n
 
 #### Failed Example 1
 
-<a class="example-link" title="Failed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/31d185e51a8be241f8a75d09deae69d3937f0329.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/31d185e51a8be241f8a75d09deae69d3937f0329.html">Open in a new tab</a>
 
 This `p` element has a [computed][] `word-spacing` of only 0.1 times the font size, which is below the required minimum.
 
@@ -218,7 +218,7 @@ This `p` element has a [computed][] `word-spacing` of only 0.1 times the font si
 
 #### Failed Example 2
 
-<a class="example-link" title="Failed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/1134eadf72b2a40c03b8bbf486ebfd3bb34cf986.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/1134eadf72b2a40c03b8bbf486ebfd3bb34cf986.html">Open in a new tab</a>
 
 This `p` element has a [computed][] `word-spacing` of `2px` which is only 0.1 times the font size (`20px`), thus below the required minimum.
 
@@ -236,7 +236,7 @@ This `p` element has a [computed][] `word-spacing` of `2px` which is only 0.1 ti
 
 #### Failed Example 3
 
-<a class="example-link" title="Failed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/830c047a178145d69fb7dd3fb21abae5a84f1830.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/830c047a178145d69fb7dd3fb21abae5a84f1830.html">Open in a new tab</a>
 
 This `p` element has a [computed][] `word-spacing` of 0.
 
@@ -248,7 +248,7 @@ This `p` element has a [computed][] `word-spacing` of 0.
 
 #### Failed Example 4
 
-<a class="example-link" title="Failed Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/d9fe2bdf199d96c133830ded7907a28c4c33efcc.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/d9fe2bdf199d96c133830ded7907a28c4c33efcc.html">Open in a new tab</a>
 
 This `p` element has a [computed][] `word-spacing` of 0.
 
@@ -262,7 +262,7 @@ This `p` element has a [computed][] `word-spacing` of 0.
 
 #### Inapplicable Example 1
 
-<a class="example-link" title="Inapplicable Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/cc484992ddeab663aa5e490f3fd71806c9bd8528.svg">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/cc484992ddeab663aa5e490f3fd71806c9bd8528.svg">Open in a new tab</a>
 
 There is no HTML element.
 
@@ -274,7 +274,7 @@ There is no HTML element.
 
 #### Inapplicable Example 2
 
-<a class="example-link" title="Inapplicable Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/32f0d32619e3d22a8988256e0f3ebae3e0f801c9.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/32f0d32619e3d22a8988256e0f3ebae3e0f801c9.html">Open in a new tab</a>
 
 This `p` element is not [visible][] because of `display: none`.
 
@@ -286,7 +286,7 @@ This `p` element is not [visible][] because of `display: none`.
 
 #### Inapplicable Example 3
 
-<a class="example-link" title="Inapplicable Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/a8f0c6682763e4ca7db824dc145a23067a3eb889.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/a8f0c6682763e4ca7db824dc145a23067a3eb889.html">Open in a new tab</a>
 
 This `p` element is not [visible][] because it is positioned off-screen.
 
@@ -298,7 +298,7 @@ This `p` element is not [visible][] because it is positioned off-screen.
 
 #### Inapplicable Example 4
 
-<a class="example-link" title="Inapplicable Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/92e706402d8f8cb13d73ffb759ce35ec910d272c.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/92e706402d8f8cb13d73ffb759ce35ec910d272c.html">Open in a new tab</a>
 
 The `style` attribute of this `p` element does not [declare][declared] the `word-spacing` property.
 
@@ -338,11 +338,7 @@ Content is considered _visible_ if making it fully transparent would result in a
 
 For more details, see [examples of visible](https://act-rules.github.io/pages/examples/visible/).
 
-{% include_relative _implementation-proposed.md %}
-
-## Changelog
-
-This is the first version of this ACT rule.
+{% include_relative _versions.md %}
 
 [author origin]: https://www.w3.org/TR/css-cascade-4/#cascade-origin-author 'CSS Cascading and Inheritance Level 4 (Working draft) - Cascading Origins - Author Origin'
 [cascade sort]: https://www.w3.org/TR/css-cascade-4/#cascade-sort 'CSS Cascading and Inheritance Level 4 (Working draft) - Cascade Sort'

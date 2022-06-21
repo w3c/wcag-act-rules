@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 0va7u6</p>
-  <p><strong>Date:</strong> Updated 16 March 2022</p>
+  <p><strong>Date:</strong> Updated 21 June 2022</p>
   <p><strong>Authors:</strong> <a href="https://github.com/carlosapaduarte">Carlos Duarte</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
   
@@ -21,7 +21,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that images of text are not used
-  last_modified: 16 March 2022
+  last_modified: 21 June 2022
   scs_tested:
     - handle: Images of Text
       num: 1.4.5
@@ -105,7 +105,7 @@ The following aspects are required in using this rule.
 
 #### Passed Example 1
 
-<a class="example-link" title="Passed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/0va7u6/6e6a506352542f40f4fe08a805ce736e89b46b06.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/0va7u6/6e6a506352542f40f4fe08a805ce736e89b46b06.html">Open in a new tab</a>
 
 This image resource referenced by the `img` element does not contain text.
 
@@ -115,7 +115,7 @@ This image resource referenced by the `img` element does not contain text.
 
 #### Passed Example 2
 
-<a class="example-link" title="Passed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/0va7u6/48f02a3a361b09761b70fe85571ce0fe55b62e18.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/0va7u6/48f02a3a361b09761b70fe85571ce0fe55b62e18.html">Open in a new tab</a>
 
 This image resource referenced by the `input` element does not contain text.
 
@@ -125,7 +125,7 @@ This image resource referenced by the `input` element does not contain text.
 
 #### Passed Example 3
 
-<a class="example-link" title="Passed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/0va7u6/e5e36c1efa1c7d7f350ee94c220b58944a62c1d2.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/0va7u6/e5e36c1efa1c7d7f350ee94c220b58944a62c1d2.html">Open in a new tab</a>
 
 This image resource referenced by the `svg` element does not contain text.
 
@@ -139,7 +139,7 @@ This image resource referenced by the `svg` element does not contain text.
 
 #### Passed Example 4
 
-<a class="example-link" title="Passed Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/0va7u6/372b4acc620b897e8fa5e22607121407399f5e07.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/0va7u6/372b4acc620b897e8fa5e22607121407399f5e07.html">Open in a new tab</a>
 
 This image resource referenced by the `object` element contains text, but it is not the most significant content.
 
@@ -149,7 +149,7 @@ This image resource referenced by the `object` element contains text, but it is 
 
 #### Passed Example 5
 
-<a class="example-link" title="Passed Example 5" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/0va7u6/28b2597a08ca7a6fd85a273b484b599c04a03f1a.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/0va7u6/28b2597a08ca7a6fd85a273b484b599c04a03f1a.html">Open in a new tab</a>
 
 This image resource referenced by the `img` element contains text, but its presentation is essential to convey the information.
 
@@ -166,7 +166,7 @@ This image resource referenced by the `img` element contains text, but its prese
 
 #### Passed Example 6
 
-<a class="example-link" title="Passed Example 6" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/0va7u6/74e69f0f02fd050e3b3bde3d1e81ca7fbc04670a.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 6" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/0va7u6/74e69f0f02fd050e3b3bde3d1e81ca7fbc04670a.html">Open in a new tab</a>
 
 This image resource referenced by the `background-image` property of the `div` element contains a logo with text. Logotypes are considered an essential exception.
 
@@ -185,7 +185,7 @@ This image resource referenced by the `background-image` property of the `div` e
 
 #### Passed Example 7
 
-<a class="example-link" title="Passed Example 7" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/0va7u6/00a1b04016513662a754e5114d0efbbd98ba58c8.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 7" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/0va7u6/00a1b04016513662a754e5114d0efbbd98ba58c8.html">Open in a new tab</a>
 
 This image resource referenced by the `img` element is an image of text (the book covers), but it is just meant to decorate the webpage of a book store, therefore it is [purely decorative][].
 
@@ -196,7 +196,7 @@ This image resource referenced by the `img` element is an image of text (the boo
 
 #### Passed Example 8
 
-<a class="example-link" title="Passed Example 8" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/0va7u6/671c8b76af94397191ae1ed8b6fdeacb3658509b.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 8" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/0va7u6/671c8b76af94397191ae1ed8b6fdeacb3658509b.html">Open in a new tab</a>
 
 These image resources referenced by the `input` elements are images of text (the letter "A"), but they are not expressing anything in a [human language][]. The image is only used to indicate how the font size can be controlled.
 
@@ -223,7 +223,7 @@ These image resources referenced by the `input` elements are images of text (the
 
 #### Failed Example 1
 
-<a class="example-link" title="Failed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/0va7u6/80ff3d6a9f2de0b2b9f179a13d91d47ce8c9ab26.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/0va7u6/80ff3d6a9f2de0b2b9f179a13d91d47ce8c9ab26.html">Open in a new tab</a>
 
 This image resource referenced by the `img` element contains text for which the particular presentation is not essential.
 
@@ -236,7 +236,7 @@ This image resource referenced by the `img` element contains text for which the 
 
 #### Failed Example 2
 
-<a class="example-link" title="Failed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/0va7u6/45041ac39ebf8f9d8ff642ea0bb56e947f0ac76e.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/0va7u6/45041ac39ebf8f9d8ff642ea0bb56e947f0ac76e.html">Open in a new tab</a>
 
 This image resource referenced by the `input` element in the [Image Button][] contains text for which the particular presentation is not essential.
 
@@ -246,7 +246,7 @@ This image resource referenced by the `input` element in the [Image Button][] co
 
 #### Failed Example 3
 
-<a class="example-link" title="Failed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/0va7u6/bf023941401d04f61ce739ee10fcc15f87d298a7.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/0va7u6/bf023941401d04f61ce739ee10fcc15f87d298a7.html">Open in a new tab</a>
 
 This image resource referenced by the `background-image` property of the `div` element contains text for which the particular presentation is not essential.
 
@@ -256,7 +256,7 @@ This image resource referenced by the `background-image` property of the `div` e
 
 #### Failed Example 4
 
-<a class="example-link" title="Failed Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/0va7u6/e1d4ed7556dabfcfde47aaf4cd0861e0fdf585d9.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/0va7u6/e1d4ed7556dabfcfde47aaf4cd0861e0fdf585d9.html">Open in a new tab</a>
 
 This image resource referenced by the `img` element contains text that provides redundant information, but it still is information, therefore it is not [purely decorative][].
 
@@ -269,7 +269,7 @@ This image resource referenced by the `img` element contains text that provides 
 
 #### Inapplicable Example 1
 
-<a class="example-link" title="Inapplicable Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/0va7u6/68dc6c98d514826f67cf700d1a5c7d449061b9ee.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/0va7u6/68dc6c98d514826f67cf700d1a5c7d449061b9ee.html">Open in a new tab</a>
 
 The resource referenced by the `object` element does not have [visible pixels][visible].
 
@@ -279,7 +279,7 @@ The resource referenced by the `object` element does not have [visible pixels][v
 
 #### Inapplicable Example 2
 
-<a class="example-link" title="Inapplicable Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/0va7u6/5b1f5cf021116b02ca9a1846b18fa3e48860646b.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/0va7u6/5b1f5cf021116b02ca9a1846b18fa3e48860646b.html">Open in a new tab</a>
 
 This `svg` element does not have `image` element descendants.
 
@@ -357,11 +357,7 @@ An _HTML [web page](https://www.w3.org/TR/WCAG21/#dfn-web-page-s)_ is the set of
 
 **Note:** Although web pages as defined here are sets of [documents](https://dom.spec.whatwg.org/#concept-document) (and do not contain other kind of nodes), one can abusively write that any node is "in a web page" if it is a [shadow-including descendant](https://dom.spec.whatwg.org/#concept-shadow-including-descendant) of a [document](https://dom.spec.whatwg.org/#concept-document) that is part of that web page.
 
-{% include_relative _implementation-proposed.md %}
-
-## Changelog
-
-This is the first version of this ACT rule.
+{% include_relative _versions.md %}
 
 [attribute value]: #attribute-value 'Definition of Attribute Value'
 [background-image]: https://drafts.csswg.org/css-backgrounds-3/#background-image

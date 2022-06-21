@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> ab4d13</p>
-  <p><strong>Date:</strong> Updated 15 June 2022</p>
+  <p><strong>Date:</strong> Updated 21 June 2022</p>
   <p><strong>Authors:</strong> <a href="https://www.linkedin.com/in/brianbors/">Brian Bors</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
   
@@ -21,7 +21,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks non-streaming `video` is a media alternative for text on the page.
-  last_modified: 15 June 2022
+  last_modified: 21 June 2022
 ---
 
 ## Applicability
@@ -73,7 +73,7 @@ The following aspects are required in using this rule.
 
 #### Passed Example 1
 
-<a class="example-link" title="Passed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ab4d13/91f5189004dff8c702eefb7214486bd18868fee1.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ab4d13/91f5189004dff8c702eefb7214486bd18868fee1.html">Open in a new tab</a>
 
 A video element that describes some of the text on the same page. The text on the page labels the video as an alternative.
 
@@ -92,7 +92,7 @@ A video element that describes some of the text on the same page. The text on th
 
 #### Failed Example 1
 
-<a class="example-link" title="Failed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ab4d13/4b86a2baaa324f721a4bf646b87993be599b82a1.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ab4d13/4b86a2baaa324f721a4bf646b87993be599b82a1.html">Open in a new tab</a>
 
 A video element that describes some of the text on the same page. The video contains more information than the text does.
 
@@ -109,7 +109,7 @@ A video element that describes some of the text on the same page. The video cont
 
 #### Failed Example 2
 
-<a class="example-link" title="Failed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ab4d13/40580c0653f0cb19df46711b7ffacb7bda830aaf.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ab4d13/40580c0653f0cb19df46711b7ffacb7bda830aaf.html">Open in a new tab</a>
 
 A video element that describes some of the text on the same page. The text is not [visible][].
 
@@ -126,7 +126,7 @@ A video element that describes some of the text on the same page. The text is no
 
 #### Failed Example 3
 
-<a class="example-link" title="Failed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ab4d13/9837335a808b170a2a0ccf3bfc285b0e7629cea1.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ab4d13/9837335a808b170a2a0ccf3bfc285b0e7629cea1.html">Open in a new tab</a>
 
 A video element that describes some of the text on the same page. The text on the page does not label the video as an alternative.
 
@@ -143,7 +143,7 @@ A video element that describes some of the text on the same page. The text on th
 
 #### Failed Example 4
 
-<a class="example-link" title="Failed Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ab4d13/5e5b75bd2156520a747ba7eae4042bf22e0eaac7.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ab4d13/5e5b75bd2156520a747ba7eae4042bf22e0eaac7.html">Open in a new tab</a>
 
 A video element that describes some of the text on the same page. The text on the page labels the video as an alternative but the label is not [visible][].
 
@@ -165,7 +165,7 @@ A video element that describes some of the text on the same page. The text on th
 
 #### Inapplicable Example 1
 
-<a class="example-link" title="Inapplicable Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ab4d13/88fc3d4b7e6731ac0560d341141e4d52aee0a9fd.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ab4d13/88fc3d4b7e6731ac0560d341141e4d52aee0a9fd.html">Open in a new tab</a>
 
 A video element without audio. The text on the page labels the video as an alternative.
 
@@ -182,7 +182,7 @@ A video element without audio. The text on the page labels the video as an alter
 
 #### Inapplicable Example 2
 
-<a class="example-link" title="Inapplicable Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ab4d13/9ef7ab01f8a959d1343acbbaea8f512232e36343.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ab4d13/9ef7ab01f8a959d1343acbbaea8f512232e36343.html">Open in a new tab</a>
 
 A video element that describes some of the text on the same page. The text on the page labels the video as an alternative but the video is not [visible][].
 
@@ -260,11 +260,7 @@ Content is considered _visible_ if making it fully transparent would result in a
 
 For more details, see [examples of visible](https://act-rules.github.io/pages/examples/visible/).
 
-{% include_relative _implementation-proposed.md %}
-
-## Changelog
-
-This is the first version of this ACT rule.
+{% include_relative _versions.md %}
 
 [computed]: https://www.w3.org/TR/css-cascade/#computed-value 'CSS definition of computed value'
 [examples of included in the accessibility tree]: https://act-rules.github.io/pages/examples/included-in-the-accessibility-tree/

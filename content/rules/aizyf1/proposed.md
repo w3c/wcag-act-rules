@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> aizyf1</p>
-  <p><strong>Date:</strong> Updated 13 June 2022</p>
+  <p><strong>Date:</strong> Updated 21 June 2022</p>
   <p><strong>Authors:</strong> <a href="https://github.com/Jym77">Jean-Yves Moyen</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -19,7 +19,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that the accessible name of a link describes its purpose.
-  last_modified: 13 June 2022
+  last_modified: 21 June 2022
   scs_tested:
     - handle: Link Purpose (Link Only)
       num: 2.4.9
@@ -94,7 +94,7 @@ The following aspects are required in using this rule.
 
 #### Passed Example 1
 
-<a class="example-link" title="Passed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/aizyf1/c7661d61606728f898297f6e69f68af3d5b6c6d0.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/aizyf1/c7661d61606728f898297f6e69f68af3d5b6c6d0.html">Open in a new tab</a>
 
 This `a` element has an [accessible name][] from its text that describes its purpose.
 
@@ -106,7 +106,7 @@ This `a` element has an [accessible name][] from its text that describes its pur
 
 #### Passed Example 2
 
-<a class="example-link" title="Passed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/aizyf1/9863e3ea603a1bdde28e5b94f8675579e33a16d7.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/aizyf1/9863e3ea603a1bdde28e5b94f8675579e33a16d7.html">Open in a new tab</a>
 
 This `a` element has an [accessible name][] from the `alt` attribute on its `img` element that describes its purpose.
 
@@ -120,7 +120,7 @@ This `a` element has an [accessible name][] from the `alt` attribute on its `img
 
 #### Passed Example 3
 
-<a class="example-link" title="Passed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/aizyf1/2eb4856e68c4cf8b3ed55f7d34b08ad4ae8b3fdd.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/aizyf1/2eb4856e68c4cf8b3ed55f7d34b08ad4ae8b3fdd.html">Open in a new tab</a>
 
 This `span` element has an [explicit role][] of `link` and an [accessible name][] from its text that describes its purpose.
 
@@ -132,7 +132,7 @@ This `span` element has an [explicit role][] of `link` and an [accessible name][
 
 #### Passed Example 4
 
-<a class="example-link" title="Passed Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/aizyf1/474db50232349ade7714e41c88af801d1f1e378b.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/aizyf1/474db50232349ade7714e41c88af801d1f1e378b.html">Open in a new tab</a>
 
 This `a` element has an [accessible name][] from its `aria-labelledby` attribute that describes its purpose.
 
@@ -158,7 +158,7 @@ This `a` element has an [accessible name][] from its `aria-labelledby` attribute
 
 #### Failed Example 1
 
-<a class="example-link" title="Failed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/aizyf1/b2a671d96ac510ccc6e34dd58a141d13bb196508.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/aizyf1/b2a671d96ac510ccc6e34dd58a141d13bb196508.html">Open in a new tab</a>
 
 This link has an [accessible name][] which does not describe its purpose.
 
@@ -170,7 +170,7 @@ This link has an [accessible name][] which does not describe its purpose.
 
 #### Failed Example 2
 
-<a class="example-link" title="Failed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/aizyf1/bf3ba787eb7a6819ea1a6adccdfd1f30842ed788.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/aizyf1/bf3ba787eb7a6819ea1a6adccdfd1f30842ed788.html">Open in a new tab</a>
 
 This link has an [accessible name][] which does not describe its purpose.
 
@@ -184,7 +184,7 @@ This link has an [accessible name][] which does not describe its purpose.
 
 #### Failed Example 3
 
-<a class="example-link" title="Failed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/aizyf1/e6a7c924092d2351c3a5b4361ccde7917ad23c66.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/aizyf1/e6a7c924092d2351c3a5b4361ccde7917ad23c66.html">Open in a new tab</a>
 
 This link has an [accessible name][] which does not describe its purpose.
 
@@ -204,7 +204,7 @@ This link has an [accessible name][] which does not describe its purpose.
 
 #### Failed Example 4
 
-<a class="example-link" title="Failed Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/aizyf1/771c36b9967faec9926af86041d834b4a108a52e.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/aizyf1/771c36b9967faec9926af86041d834b4a108a52e.html">Open in a new tab</a>
 
 This link has an [accessible name][] which, alone, does not describe its purpose.
 
@@ -216,7 +216,7 @@ This link has an [accessible name][] which, alone, does not describe its purpose
 
 #### Failed Example 5
 
-<a class="example-link" title="Failed Example 5" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/aizyf1/b130285915a8ca42926a11553a5791f44b65d487.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/aizyf1/b130285915a8ca42926a11553a5791f44b65d487.html">Open in a new tab</a>
 
 These links have [accessible names][accessible name] which, alone, do not describe their purpose.
 
@@ -241,7 +241,7 @@ These links have [accessible names][accessible name] which, alone, do not descri
 
 #### Inapplicable Example 1
 
-<a class="example-link" title="Inapplicable Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/aizyf1/e64416f9e9792cd76b77ee209a26269d47c3ff97.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/aizyf1/e64416f9e9792cd76b77ee209a26269d47c3ff97.html">Open in a new tab</a>
 
 There is no [inheriting semantic][] `link` in this document.
 
@@ -251,7 +251,7 @@ There is no [inheriting semantic][] `link` in this document.
 
 #### Inapplicable Example 2
 
-<a class="example-link" title="Inapplicable Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/aizyf1/afcf56e62d62b8f69b4a2881475f625a1ed7ecf9.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/aizyf1/afcf56e62d62b8f69b4a2881475f625a1ed7ecf9.html">Open in a new tab</a>
 
 This link is not [included in the accessibility tree][].
 
@@ -263,7 +263,7 @@ This link is not [included in the accessibility tree][].
 
 #### Inapplicable Example 3
 
-<a class="example-link" title="Inapplicable Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/aizyf1/ca563b842b32b8fc79ac872f8fc4e799fcf76072.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/aizyf1/ca563b842b32b8fc79ac872f8fc4e799fcf76072.html">Open in a new tab</a>
 
 There is no [inheriting semantic][] `link` in this document (`a` element without an `href` attribute do not have a role of `link`).
 
@@ -385,11 +385,7 @@ The _WAI ARIA Specifications_ group both the WAI ARIA W3C Recommendation and ARI
 
 **Note:** depending on the type of content being evaluated, part of the specifications might be irrelevant and should be ignored.
 
-{% include_relative _implementation-proposed.md %}
-
-## Changelog
-
-This is the first version of this ACT rule.
+{% include_relative _versions.md %}
 
 [abstract]: https://www.w3.org/TR/wai-aria-1.1/#isAbstract 'ARIA Definition for Abstract Roles'
 [accessibility support base line]: https://www.w3.org/TR/WCAG-EM/#step1c 'Definition of accessibility support base line'

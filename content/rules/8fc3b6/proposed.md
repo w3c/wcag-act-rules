@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 8fc3b6</p>
-  <p><strong>Date:</strong> Updated 13 June 2022</p>
+  <p><strong>Date:</strong> Updated 21 June 2022</p>
   <p><strong>Authors:</strong> <a href="https://github.com/AntonioEstriga">António Estriga</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
   
@@ -21,7 +21,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that each `object` element rendering non-text content has a non-empty accessible name.
-  last_modified: 13 June 2022
+  last_modified: 21 June 2022
   scs_tested:
     - handle: Non-text Content
       num: 1.1.1
@@ -83,7 +83,7 @@ The following aspects are required in using this rule.
 
 #### Passed Example 1
 
-<a class="example-link" title="Passed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/2c4e13b6606b88bbe10bfffbe4b6f4e6d373c4a7.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/2c4e13b6606b88bbe10bfffbe4b6f4e6d373c4a7.html">Open in a new tab</a>
 
 This `object` element which embeds an audio resource has a non-empty [accessible name][] through its `aria-label` attribute.
 
@@ -93,7 +93,7 @@ This `object` element which embeds an audio resource has a non-empty [accessible
 
 #### Passed Example 2
 
-<a class="example-link" title="Passed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/dd651de8f984bc2bc5d791eceedf16e70cca0cdc.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/dd651de8f984bc2bc5d791eceedf16e70cca0cdc.html">Open in a new tab</a>
 
 This `object` element which embeds a video resource has a non-empty [accessible name][] through its `title` attribute.
 
@@ -103,7 +103,7 @@ This `object` element which embeds a video resource has a non-empty [accessible 
 
 #### Passed Example 3
 
-<a class="example-link" title="Passed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/0b589d8fd36a41135b86e1f10ecac977a167c3a0.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/0b589d8fd36a41135b86e1f10ecac977a167c3a0.html">Open in a new tab</a>
 
 This `object` element which embeds an image resource has a non-empty [accessible name][] through its `aria-labelledby` attribute.
 
@@ -113,7 +113,7 @@ This `object` element which embeds an image resource has a non-empty [accessible
 
 #### Passed Example 4
 
-<a class="example-link" title="Passed Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/c3ed1c920db04a7b13d043fae5766694cf50d561.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/c3ed1c920db04a7b13d043fae5766694cf50d561.html">Open in a new tab</a>
 
 This `object` element placed off screen, which embeds an audio resource, has a non-empty [accessible name][] through its `title` attribute.
 
@@ -136,7 +136,7 @@ This `object` element placed off screen, which embeds an audio resource, has a n
 
 #### Failed Example 1
 
-<a class="example-link" title="Failed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/4147da2dd50e2326a7985207296cfcd0ba57a1ee.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/4147da2dd50e2326a7985207296cfcd0ba57a1ee.html">Open in a new tab</a>
 
 This `object` element which embeds an audio resource has an empty [accessible name][] because it does not provide an accessible name through one of `title`, `aria-label` or `aria-labelledby` attributes.
 
@@ -146,7 +146,7 @@ This `object` element which embeds an audio resource has an empty [accessible na
 
 #### Failed Example 2
 
-<a class="example-link" title="Failed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/8bd420282f8209ce236004c61bc4bbd728afceb7.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/8bd420282f8209ce236004c61bc4bbd728afceb7.html">Open in a new tab</a>
 
 This `object` element which embeds a video resource has an empty [accessible name][] because the `title` attribute is empty.
 
@@ -156,7 +156,7 @@ This `object` element which embeds a video resource has an empty [accessible nam
 
 #### Failed Example 3
 
-<a class="example-link" title="Failed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/0f4a37cd30bd688d1a8ebbb915b2c70a4bf0272c.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/0f4a37cd30bd688d1a8ebbb915b2c70a4bf0272c.html">Open in a new tab</a>
 
 This `object` element which embeds an image resource has an empty [accessible name][] because the `span` element with `id="label"` is empty.
 
@@ -166,7 +166,7 @@ This `object` element which embeds an image resource has an empty [accessible na
 
 #### Failed Example 4
 
-<a class="example-link" title="Failed Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/dcb42362e4cd8108444dd64c8538ef0523de0aa7.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/dcb42362e4cd8108444dd64c8538ef0523de0aa7.html">Open in a new tab</a>
 
 This `object` element which embeds an audio resource has an empty [accessible name][] because the `aria-labelledby` attribute references a non-existing id.
 
@@ -178,7 +178,7 @@ This `object` element which embeds an audio resource has an empty [accessible na
 
 #### Inapplicable Example 1
 
-<a class="example-link" title="Inapplicable Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/84c10ba8bc5570e900a60a2e29b319e68fc093da.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/84c10ba8bc5570e900a60a2e29b319e68fc093da.html">Open in a new tab</a>
 
 This `object` element is not [included in the accessibility tree][] due to `display:none`.
 
@@ -188,7 +188,7 @@ This `object` element is not [included in the accessibility tree][] due to `disp
 
 #### Inapplicable Example 2
 
-<a class="example-link" title="Inapplicable Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/52ac3fd2be278ede2bb32987a32673c6d5ee5edb.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/52ac3fd2be278ede2bb32987a32673c6d5ee5edb.html">Open in a new tab</a>
 
 This `object` element is not [included in the accessibility tree][] due to `visibility:hidden`.
 
@@ -198,7 +198,7 @@ This `object` element is not [included in the accessibility tree][] due to `visi
 
 #### Inapplicable Example 3
 
-<a class="example-link" title="Inapplicable Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/90927d72c81e9a9b27034a1a99adbab46c86e196.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/90927d72c81e9a9b27034a1a99adbab46c86e196.html">Open in a new tab</a>
 
 This `object` element is not [included in the accessibility tree][] due to `aria-hidden="true"`.
 
@@ -208,7 +208,7 @@ This `object` element is not [included in the accessibility tree][] due to `aria
 
 #### Inapplicable Example 4
 
-<a class="example-link" title="Inapplicable Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/511c1b1647549d8af305f68253dda6d4161bd9bc.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/511c1b1647549d8af305f68253dda6d4161bd9bc.html">Open in a new tab</a>
 
 This `object` element is not [included in the accessibility tree][] because it is marked as decorative through `role="presentation"`.
 
@@ -218,7 +218,7 @@ This `object` element is not [included in the accessibility tree][] because it i
 
 #### Inapplicable Example 5
 
-<a class="example-link" title="Inapplicable Example 5" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/852f57fb1f11a0a58d288746c14d52ce8f8dd97a.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/852f57fb1f11a0a58d288746c14d52ce8f8dd97a.html">Open in a new tab</a>
 
 This `object` element embeds an HTML resource.
 
@@ -228,7 +228,7 @@ This `object` element embeds an HTML resource.
 
 #### Inapplicable Example 6
 
-<a class="example-link" title="Inapplicable Example 6" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/fac8b25d43d0bbea83f5fe8c5fddf1b3566ac1fb.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 6" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/fac8b25d43d0bbea83f5fe8c5fddf1b3566ac1fb.html">Open in a new tab</a>
 
 There is no `object` element.
 
@@ -328,11 +328,7 @@ The _WAI ARIA Specifications_ group both the WAI ARIA W3C Recommendation and ARI
 
 **Note:** depending on the type of content being evaluated, part of the specifications might be irrelevant and should be ignored.
 
-{% include_relative _implementation-proposed.md %}
-
-## Changelog
-
-This is the first version of this ACT rule.
+{% include_relative _versions.md %}
 
 [accessibility support base line]: https://www.w3.org/TR/WCAG-EM/#step1c 'Definition of accessibility support base line'
 [accessible name and description computation]: https://www.w3.org/TR/accname 'Accessible Name and Description Computation'

@@ -3,7 +3,7 @@
   "website": "https://www.w3.org/WAI/standards-guidelines/act/rules/",
   "license": "https://act-rules.github.io/pages/license/",
   "description": "Accessibility conformance testing rules for HTML",
-  "count": 1128,
+  "count": 1131,
   "testcases": [
     {
       "ruleId": "73f2c2",
@@ -10973,6 +10973,30 @@
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/off6ek/proposed/"
     },
     {
+      "ruleId": "de46e4",
+      "ruleName": "Element with lang attribute has valid language tag",
+      "ruleAccessibilityRequirements": {
+        "wcag20:3.1.2": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:H58": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "inapplicable",
+      "testcaseId": "4fa5219cf39dc536c51d67f6c4f9f54271a8dcfa",
+      "testcaseTitle": "Inapplicable Example 5",
+      "relativePath": "testcases/de46e4/4fa5219cf39dc536c51d67f6c4f9f54271a8dcfa.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/4fa5219cf39dc536c51d67f6c4f9f54271a8dcfa.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/de46e4/proposed/"
+    },
+    {
       "ruleId": "7d6734",
       "ruleName": "SVG element with explicit role has non-empty accessible name",
       "ruleAccessibilityRequirements": {
@@ -17168,6 +17192,78 @@
       "relativePath": "testcases/5effbb/ca563b842b32b8fc79ac872f8fc4e799fcf76072.html",
       "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5effbb/ca563b842b32b8fc79ac872f8fc4e799fcf76072.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/5effbb/proposed/"
+    },
+    {
+      "ruleId": "c487ae",
+      "ruleName": "Link has non-empty accessible name",
+      "ruleAccessibilityRequirements": {
+        "wcag20:4.1.2": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:2.4.4": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:2.4.9": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:G91": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "d36abfa44924a4d4088bada05f439ae392dfd662",
+      "testcaseTitle": "Passed Example 11",
+      "relativePath": "testcases/c487ae/d36abfa44924a4d4088bada05f439ae392dfd662.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/c487ae/d36abfa44924a4d4088bada05f439ae392dfd662.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/c487ae/proposed/"
+    },
+    {
+      "ruleId": "c487ae",
+      "ruleName": "Link has non-empty accessible name",
+      "ruleAccessibilityRequirements": {
+        "wcag20:4.1.2": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:2.4.4": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:2.4.9": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:G91": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "7b3b94c0e39bed9d432f379efa77ba9f54c81c6d",
+      "testcaseTitle": "Failed Example 11",
+      "relativePath": "testcases/c487ae/7b3b94c0e39bed9d432f379efa77ba9f54c81c6d.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/c487ae/7b3b94c0e39bed9d432f379efa77ba9f54c81c6d.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/c487ae/proposed/"
     },
     {
       "ruleId": "b20e66",

@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> afw4f7</p>
-  <p><strong>Date:</strong> Updated 13 June 2022</p>
+  <p><strong>Date:</strong> Updated 21 June 2022</p>
   <p><strong>Authors:</strong> <a href="https://www.linkedin.com/in/brianbors/">Brian Bors</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -19,7 +19,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that the highest possible contrast of every text character with its background meets the minimal contrast requirement.
-  last_modified: 13 June 2022
+  last_modified: 21 June 2022
   scs_tested:
     - handle: Contrast (Minimum)
       num: 1.4.3
@@ -117,7 +117,7 @@ The following aspects are required in using this rule.
 
 #### Passed Example 1
 
-<a class="example-link" title="Passed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/fd406bedf0bb3bdc4c2a718f49a3dd0f7aaa7556.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/fd406bedf0bb3bdc4c2a718f49a3dd0f7aaa7556.html">Open in a new tab</a>
 
 This dark gray text has a contrast ratio of 12.6:1 on the white background.
 
@@ -129,7 +129,7 @@ This dark gray text has a contrast ratio of 12.6:1 on the white background.
 
 #### Passed Example 2
 
-<a class="example-link" title="Passed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/ab4691ef474d6263e9ceec824f07faa51a30112e.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/ab4691ef474d6263e9ceec824f07faa51a30112e.html">Open in a new tab</a>
 
 This dark gray text has a contrast ratio between 12.6:1 and 5:1 on the white to blue gradient background.
 
@@ -141,7 +141,7 @@ This dark gray text has a contrast ratio between 12.6:1 and 5:1 on the white to 
 
 #### Passed Example 3
 
-<a class="example-link" title="Passed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/530b8900297f169b900e2a0dffa96bc878b269a1.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/530b8900297f169b900e2a0dffa96bc878b269a1.html">Open in a new tab</a>
 
 This light gray text has a contrast ratio between 13:1 and 5:1 on the background image.
 
@@ -155,7 +155,7 @@ This light gray text has a contrast ratio between 13:1 and 5:1 on the background
 
 #### Passed Example 4
 
-<a class="example-link" title="Passed Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/319a465113950b03502709ab573edf7deab59908.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/319a465113950b03502709ab573edf7deab59908.html">Open in a new tab</a>
 
 This black text has a contrast ratio between 6.1:1 and 9:1 on gray background with white text shadow on it.
 
@@ -167,7 +167,7 @@ This black text has a contrast ratio between 6.1:1 and 9:1 on gray background wi
 
 #### Passed Example 5
 
-<a class="example-link" title="Passed Example 5" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/04344f745bd9bad51292748e7893f146c045aae4.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/04344f745bd9bad51292748e7893f146c045aae4.html">Open in a new tab</a>
 
 This 18pt large black text has a contrast ratio of 3.6:1 on the gray background.
 
@@ -179,7 +179,7 @@ This 18pt large black text has a contrast ratio of 3.6:1 on the gray background.
 
 #### Passed Example 6
 
-<a class="example-link" title="Passed Example 6" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/aed692e9f0a1be5c87ef1de56afa8e23e14cc3ba.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 6" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/aed692e9f0a1be5c87ef1de56afa8e23e14cc3ba.html">Open in a new tab</a>
 
 This 14pt bold black text has a contrast ratio of 3.6:1 on the gray background.
 
@@ -191,7 +191,7 @@ This 14pt bold black text has a contrast ratio of 3.6:1 on the gray background.
 
 #### Passed Example 7
 
-<a class="example-link" title="Passed Example 7" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/2845a8409b1c07caa856d1bfbf42ed244b0de9c2.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 7" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/2845a8409b1c07caa856d1bfbf42ed244b0de9c2.html">Open in a new tab</a>
 
 This text does not convey anything in human language.
 
@@ -203,7 +203,7 @@ This text does not convey anything in human language.
 
 #### Passed Example 8
 
-<a class="example-link" title="Passed Example 8" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/c7c09c1019dcf1d1c67183001b4d459dee7a87ff.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 8" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/c7c09c1019dcf1d1c67183001b4d459dee7a87ff.html">Open in a new tab</a>
 
 This text has the default browser text color on the default browser background color. By default this is black text on a white background, which has a contrast ratio of 21:1.
 
@@ -213,7 +213,7 @@ This text has the default browser text color on the default browser background c
 
 #### Passed Example 9
 
-<a class="example-link" title="Passed Example 9" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/66a3ba7bc0027a9556596e3c378c926a537c1901.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 9" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/66a3ba7bc0027a9556596e3c378c926a537c1901.html">Open in a new tab</a>
 
 This dark gray text has a contrast ratio of 12.6:1 on the white background in a shadow DOM tree.
 
@@ -229,7 +229,7 @@ This dark gray text has a contrast ratio of 12.6:1 on the white background in a 
 
 #### Failed Example 1
 
-<a class="example-link" title="Failed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/eaf0a926896f045a498073da42ea6263a4d6d36c.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/eaf0a926896f045a498073da42ea6263a4d6d36c.html">Open in a new tab</a>
 
 This light gray text has a contrast ratio of 2.3:1 on the white background.
 
@@ -241,7 +241,7 @@ This light gray text has a contrast ratio of 2.3:1 on the white background.
 
 #### Failed Example 2
 
-<a class="example-link" title="Failed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/e8f3acb1dc814b8b815c69b7150cdea67d5bd98e.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/e8f3acb1dc814b8b815c69b7150cdea67d5bd98e.html">Open in a new tab</a>
 
 This light gray text has a contrast ratio between 1.2:1 and 2.3:1 on the white to blue gradient background.
 
@@ -253,7 +253,7 @@ This light gray text has a contrast ratio between 1.2:1 and 2.3:1 on the white t
 
 #### Failed Example 3
 
-<a class="example-link" title="Failed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/41afaa9b33287aba9c608c3466e2b164f57a02ed.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/41afaa9b33287aba9c608c3466e2b164f57a02ed.html">Open in a new tab</a>
 
 This light gray text has a contrast ratio between 2.7:1 and 3:1 on the background image.
 
@@ -267,7 +267,7 @@ This light gray text has a contrast ratio between 2.7:1 and 3:1 on the backgroun
 
 #### Failed Example 4
 
-<a class="example-link" title="Failed Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/7b27adc8d5a8f07dca43b0f90806f40bc2a1b15b.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/7b27adc8d5a8f07dca43b0f90806f40bc2a1b15b.html">Open in a new tab</a>
 
 This black text with 30% alpha channel has a contrast ratio of 2.1:1 on the white background.
 
@@ -279,7 +279,7 @@ This black text with 30% alpha channel has a contrast ratio of 2.1:1 on the whit
 
 #### Failed Example 5
 
-<a class="example-link" title="Failed Example 5" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/7507c8139cfda2c482c394fe00aaaf69e15acabb.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/7507c8139cfda2c482c394fe00aaaf69e15acabb.html">Open in a new tab</a>
 
 This black text with 30% opacity has a contrast ratio of 2.1:1 on the white background.
 
@@ -293,7 +293,7 @@ This black text with 30% opacity has a contrast ratio of 2.1:1 on the white back
 
 #### Failed Example 6
 
-<a class="example-link" title="Failed Example 6" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/b1a65bd18381a1ea4ad3077fd98c50368947012c.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 6" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/b1a65bd18381a1ea4ad3077fd98c50368947012c.html">Open in a new tab</a>
 
 This light gray text has a contrast ratio of 2.3:1 on the white background in a shadow DOM tree.
 
@@ -307,7 +307,7 @@ This light gray text has a contrast ratio of 2.3:1 on the white background in a 
 
 #### Failed Example 7
 
-<a class="example-link" title="Failed Example 7" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/bf47c65f2854b6ac100a6f700d354b243b069231.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 7" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/bf47c65f2854b6ac100a6f700d354b243b069231.html">Open in a new tab</a>
 
 This semi-transparent gray text has a contrast ratio between 2.3:1 and 4.2:1 on the black and white background. The light gray text is compared to the white section of the background and the dark gray text is compared to the black section of the background.
 
@@ -327,7 +327,7 @@ This semi-transparent gray text has a contrast ratio between 2.3:1 and 4.2:1 on 
 
 #### Failed Example 8
 
-<a class="example-link" title="Failed Example 8" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/308839f424ef1d9dbb5aab0cd9079827ecb00895.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 8" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/308839f424ef1d9dbb5aab0cd9079827ecb00895.html">Open in a new tab</a>
 
 The first `p` element has a contrast ratio of 12.6:1. The second `p` element, which contains an example of the Helvetica font, has a contrast ratio of 3.5:1. Because this provides information, and not only for aesthetic purposes, this is not considered [purely decorative][].
 
@@ -344,7 +344,7 @@ The first `p` element has a contrast ratio of 12.6:1. The second `p` element, wh
 
 #### Inapplicable Example 1
 
-<a class="example-link" title="Inapplicable Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/2347a45232c34aa309087ed099f4781cd70b5b1e.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/2347a45232c34aa309087ed099f4781cd70b5b1e.html">Open in a new tab</a>
 
 This text is not [visible][] because of `display: none`.
 
@@ -354,7 +354,7 @@ This text is not [visible][] because of `display: none`.
 
 #### Inapplicable Example 2
 
-<a class="example-link" title="Inapplicable Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/dbd2374952b96375369afe2a012bfbadd182bf6b.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/dbd2374952b96375369afe2a012bfbadd182bf6b.html">Open in a new tab</a>
 
 This text is not [visible][] because it is positioned off screen.
 
@@ -364,7 +364,7 @@ This text is not [visible][] because it is positioned off screen.
 
 #### Inapplicable Example 3
 
-<a class="example-link" title="Inapplicable Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/fc92e273e09ad225227f488e3a016fd8d4aad10c.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/fc92e273e09ad225227f488e3a016fd8d4aad10c.html">Open in a new tab</a>
 
 This text is not [visible][] because the foreground color is the same as the background color.
 
@@ -374,7 +374,7 @@ This text is not [visible][] because the foreground color is the same as the bac
 
 #### Inapplicable Example 4
 
-<a class="example-link" title="Inapplicable Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/881897444deae644139c4b799b8eeb4b4b764c2a.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/881897444deae644139c4b799b8eeb4b4b764c2a.html">Open in a new tab</a>
 
 This text is not the child of an HTML element.
 
@@ -386,7 +386,7 @@ This text is not the child of an HTML element.
 
 #### Inapplicable Example 5
 
-<a class="example-link" title="Inapplicable Example 5" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/8df570a7bb69487e5f3b5d07a7af45cc881dc449.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/8df570a7bb69487e5f3b5d07a7af45cc881dc449.html">Open in a new tab</a>
 
 This text not part of a [text node][].
 
@@ -398,7 +398,7 @@ This text not part of a [text node][].
 
 #### Inapplicable Example 6
 
-<a class="example-link" title="Inapplicable Example 6" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/dc18c6afcd1214d85c49b107eb89c60fbc12ee99.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 6" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/dc18c6afcd1214d85c49b107eb89c60fbc12ee99.html">Open in a new tab</a>
 
 This text is part of a widget because it is a child of a `button` element.
 
@@ -408,7 +408,7 @@ This text is part of a widget because it is a child of a `button` element.
 
 #### Inapplicable Example 7
 
-<a class="example-link" title="Inapplicable Example 7" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/668856825e6d3b4e480005acf97723c7b1004ba3.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 7" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/668856825e6d3b4e480005acf97723c7b1004ba3.html">Open in a new tab</a>
 
 This text is part of a widget because it is a child of an element with the `role` attribute set to `button`.
 
@@ -418,7 +418,7 @@ This text is part of a widget because it is a child of an element with the `role
 
 #### Inapplicable Example 8
 
-<a class="example-link" title="Inapplicable Example 8" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/328b967c5b544b48f7acd8e42f2f05d355501f2a.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 8" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/328b967c5b544b48f7acd8e42f2f05d355501f2a.html">Open in a new tab</a>
 
 This text is part of a label of a [disabled][] widget, because it is in a `label` element that is the label for an `input` element with `type="text"`.
 
@@ -431,7 +431,7 @@ This text is part of a label of a [disabled][] widget, because it is in a `label
 
 #### Inapplicable Example 9
 
-<a class="example-link" title="Inapplicable Example 9" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/7c7d6412dae7381d90517a6f3c0a30104d63062a.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 9" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/7c7d6412dae7381d90517a6f3c0a30104d63062a.html">Open in a new tab</a>
 
 This text is part of a label of a [disabled][] widget, because it is in an element that is referenced by `aria-labelledby` from an element with `role="textbox"`.
 
@@ -451,7 +451,7 @@ This text is part of a label of a [disabled][] widget, because it is in an eleme
 
 #### Inapplicable Example 10
 
-<a class="example-link" title="Inapplicable Example 10" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/53386f68326a53798e776b48e81b32659424d6d3.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 10" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/53386f68326a53798e776b48e81b32659424d6d3.html">Open in a new tab</a>
 
 This text is part of a label of a [disabled][] widget, because it is in a `label` element that is the label for an `input` element in a `fieldset` element with the `disabled` attribute.
 
@@ -466,7 +466,7 @@ This text is part of a label of a [disabled][] widget, because it is in a `label
 
 #### Inapplicable Example 11
 
-<a class="example-link" title="Inapplicable Example 11" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/9e3383a60ab67d5988ac2144fec58a34677c52b2.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 11" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/9e3383a60ab67d5988ac2144fec58a34677c52b2.html">Open in a new tab</a>
 
 This text is part of a label of a [disabled][] widget, because it is in a `label` element that is the label for an `input` element in an element with `role="group"` with the `aria-disabled="true"` attribute.
 
@@ -659,11 +659,7 @@ The _WAI ARIA Specifications_ group both the WAI ARIA W3C Recommendation and ARI
 
 **Note:** depending on the type of content being evaluated, part of the specifications might be irrelevant and should be ignored.
 
-{% include_relative _implementation-proposed.md %}
-
-## Changelog
-
-This is the first version of this ACT rule.
+{% include_relative _versions.md %}
 
 [abstract]: https://www.w3.org/TR/wai-aria-1.1/#isAbstract 'ARIA Definition for Abstract Roles'
 [accessibility support base line]: https://www.w3.org/TR/WCAG-EM/#step1c 'Definition of accessibility support base line'

@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 80af7b</p>
-  <p><strong>Date:</strong> Updated 18 May 2022</p>
+  <p><strong>Date:</strong> Updated 21 June 2022</p>
   <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/DagfinnRomen">Dagfinn Rømen</a>, <a href="https://github.com/geirsf">Geir Sindre Fossøy</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -19,7 +19,7 @@ rule_meta:
   rule_type: composite
   description: |
     This rule checks for keyboard traps. This includes use of both standard and non-standard keyboard navigation to navigate through all content without becoming trapped.
-  last_modified: 18 May 2022
+  last_modified: 21 June 2022
   scs_tested:
     - handle: No Keyboard Trap
       num: 2.1.2
@@ -107,7 +107,7 @@ Outcomes of the following rules are required as input for this rule.
 
 #### Passed Example 1
 
-<a class="example-link" title="Passed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/80af7b/96eb4b26010e8c598cb659108dbc34ca0abd82f9.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/80af7b/96eb4b26010e8c598cb659108dbc34ca0abd82f9.html">Open in a new tab</a>
 
 These [focusable][] elements do not create a trap for keyboard navigation.
 
@@ -117,7 +117,7 @@ These [focusable][] elements do not create a trap for keyboard navigation.
 
 #### Passed Example 2
 
-<a class="example-link" title="Passed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/80af7b/fb76f71a94bf95f5cfef22f3db6655e7b0a57b0c.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/80af7b/fb76f71a94bf95f5cfef22f3db6655e7b0a57b0c.html">Open in a new tab</a>
 
 This element is made [focusable][] by the `tabindex` attribute. It does not create a trap for keyboard navigation.
 
@@ -127,7 +127,7 @@ This element is made [focusable][] by the `tabindex` attribute. It does not crea
 
 #### Passed Example 3
 
-<a class="example-link" title="Passed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/80af7b/4b93a866e14ad4c9ed8efa13c080a1e05350fa2f.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/80af7b/4b93a866e14ad4c9ed8efa13c080a1e05350fa2f.html">Open in a new tab</a>
 
 This element is made [focusable][] by the `tabindex` attribute, even if it is not part of the sequential focus navigation. It does not create a trap for keyboard navigation.
 
@@ -137,7 +137,7 @@ This element is made [focusable][] by the `tabindex` attribute, even if it is no
 
 #### Passed Example 4
 
-<a class="example-link" title="Passed Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/80af7b/ab24c77ed9daefc8fa1650aedf0d1c6438460243.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/80af7b/ab24c77ed9daefc8fa1650aedf0d1c6438460243.html">Open in a new tab</a>
 
 These focusable `button` elements have scripts that create a keyboard trap. The document includes help information in a paragraph before the `button` elements and the method advised works to escape the keyboard trap.
 
@@ -157,7 +157,7 @@ These focusable `button` elements have scripts that create a keyboard trap. The 
 
 #### Passed Example 5
 
-<a class="example-link" title="Passed Example 5" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/80af7b/e3902f01b8589702925be6d97f9542895ef3c76d.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/80af7b/e3902f01b8589702925be6d97f9542895ef3c76d.html">Open in a new tab</a>
 
 These focusable `button` elements have scripts that create a keyboard trap. The document includes help information within the trap and the method advised works to escape the keyboard trap.
 
@@ -177,7 +177,7 @@ These focusable `button` elements have scripts that create a keyboard trap. The 
 
 #### Passed Example 6
 
-<a class="example-link" title="Passed Example 6" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/80af7b/b92b5214d2b2214b89fb9812b389536759701790.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 6" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/80af7b/b92b5214d2b2214b89fb9812b389536759701790.html">Open in a new tab</a>
 
 These focusable `button` elements have scripts that create a keyboard trap. The document includes help information in a "help" link that once clicked exposes the instructions to escape the keyboard trap.
 
@@ -202,7 +202,7 @@ These focusable `button` elements have scripts that create a keyboard trap. The 
 
 #### Failed Example 1
 
-<a class="example-link" title="Failed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/80af7b/780388a837915960bca7651bd80743fb2cafdbcb.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/80af7b/780388a837915960bca7651bd80743fb2cafdbcb.html">Open in a new tab</a>
 
 This [focusable][] element creates a keyboard trap bringing focus to the `button`.
 
@@ -215,7 +215,7 @@ This [focusable][] element creates a keyboard trap bringing focus to the `button
 
 #### Failed Example 2
 
-<a class="example-link" title="Failed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/80af7b/d2f5325f3fd5ddde38cd677a5ca36ba0d762fb84.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/80af7b/d2f5325f3fd5ddde38cd677a5ca36ba0d762fb84.html">Open in a new tab</a>
 
 These [focusable][] `button` elements create a keyboard trap preventing the last `button` to be reached using the keyboard.
 
@@ -233,7 +233,7 @@ These [focusable][] `button` elements create a keyboard trap preventing the last
 
 #### Failed Example 3
 
-<a class="example-link" title="Failed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/80af7b/0ec0e93e7f8ffca39e1eb58a4a8503f1bd4cb145.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/80af7b/0ec0e93e7f8ffca39e1eb58a4a8503f1bd4cb145.html">Open in a new tab</a>
 
 This `button` element is between other `button` elements creating a keyboard trap.
 
@@ -245,7 +245,7 @@ This `button` element is between other `button` elements creating a keyboard tra
 
 #### Failed Example 4
 
-<a class="example-link" title="Failed Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/80af7b/7dcc4ae00712889d448ecbcba200e032dca59bf0.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/80af7b/7dcc4ae00712889d448ecbcba200e032dca59bf0.html">Open in a new tab</a>
 
 These focusable `button` elements create a keyboard trap with no instructions.
 
@@ -264,7 +264,7 @@ These focusable `button` elements create a keyboard trap with no instructions.
 
 #### Failed Example 5
 
-<a class="example-link" title="Failed Example 5" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/80af7b/8fba3918b361f251dab4c19bec8eddc5624218ee.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/80af7b/8fba3918b361f251dab4c19bec8eddc5624218ee.html">Open in a new tab</a>
 
 These focusable `button` elements create a keyboard trap with instructions that don't give advice on the method for proceeding.
 
@@ -284,7 +284,7 @@ These focusable `button` elements create a keyboard trap with instructions that 
 
 #### Failed Example 6
 
-<a class="example-link" title="Failed Example 6" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/80af7b/62fd24e73ea55f55ad45de392128a816a6f03526.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 6" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/80af7b/62fd24e73ea55f55ad45de392128a816a6f03526.html">Open in a new tab</a>
 
 These focusable `button` elements create a keyboard trap with help text, where the method advised doesn't work.
 
@@ -306,7 +306,7 @@ These focusable `button` elements create a keyboard trap with help text, where t
 
 #### Inapplicable Example 1
 
-<a class="example-link" title="Inapplicable Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/80af7b/16dddd8ac5c419caba2c709b1b1f49cc5759e63c.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/80af7b/16dddd8ac5c419caba2c709b1b1f49cc5759e63c.html">Open in a new tab</a>
 
 There is no [focusable][] element.
 
@@ -316,7 +316,7 @@ There is no [focusable][] element.
 
 #### Inapplicable Example 2
 
-<a class="example-link" title="Inapplicable Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/80af7b/6e3dcc2f3612826dd3d8589c4e2951ad7a3e4dd7.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/80af7b/6e3dcc2f3612826dd3d8589c4e2951ad7a3e4dd7.html">Open in a new tab</a>
 
 There is no [focusable][] element.
 
@@ -326,7 +326,7 @@ There is no [focusable][] element.
 
 #### Inapplicable Example 3
 
-<a class="example-link" title="Inapplicable Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/80af7b/9d47dcc67abbcb177876ce082ae073947cc7135d.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/80af7b/9d47dcc67abbcb177876ce082ae073947cc7135d.html">Open in a new tab</a>
 
 There is no [focusable][] element.
 
@@ -336,7 +336,7 @@ There is no [focusable][] element.
 
 #### Inapplicable Example 4
 
-<a class="example-link" title="Inapplicable Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/80af7b/30ffb2991af4d1727223409c9f1235e44acc1c13.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/80af7b/30ffb2991af4d1727223409c9f1235e44acc1c13.html">Open in a new tab</a>
 
 There is no [focusable][] element.
 
@@ -378,11 +378,7 @@ An _outcome_ is a conclusion that comes from evaluating an ACT Rule on a [test s
 
 **Note:** Implementations using the [EARL10-Schema](https://www.w3.org/TR/EARL10-Schema/) can express the outcome with the [outcome property](https://www.w3.org/TR/EARL10-Schema/#outcome). In addition to `passed`, `failed` and `inapplicable`, EARL 1.0 also defined an `incomplete` outcome. While this cannot be the outcome of an ACT Rule when applied in its entirety, it often happens that rules are only partially evaluated. For example, when applicability was automated, but the expectations have to be evaluated manually. Such "interim" results can be expressed with the `incomplete` outcome.
 
-{% include_relative _implementation-proposed.md %}
-
-## Changelog
-
-This is the first version of this ACT rule.
+{% include_relative _versions.md %}
 
 [element]: https://dom.spec.whatwg.org/#element 'DOM element, 2021/05/31'
 [focusable]: #focusable 'Definition of focusable'

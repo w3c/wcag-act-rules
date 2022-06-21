@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 1a02b0</p>
-  <p><strong>Date:</strong> Updated 15 June 2022</p>
+  <p><strong>Date:</strong> Updated 21 June 2022</p>
   <p><strong>Authors:</strong> <a href="https://www.linkedin.com/in/brianbors/">Brian Bors</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
   
@@ -21,7 +21,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that non-streaming `video` elements have all audio and visual information available in a transcript.
-  last_modified: 15 June 2022
+  last_modified: 21 June 2022
   scs_tested:
     - handle: Media Alternative (Prerecorded)
       num: 1.2.8
@@ -102,7 +102,7 @@ The following aspects are required in using this rule.
 
 #### Passed Example 1
 
-<a class="example-link" title="Passed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/1a02b0/8ebc51b6599b22345051dc57d2c7649724f58f0b.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/1a02b0/8ebc51b6599b22345051dc57d2c7649724f58f0b.html">Open in a new tab</a>
 
 A video element with a text transcript on the same page.
 
@@ -120,7 +120,7 @@ Then he stops to scratch his bottom.</p>
 
 #### Passed Example 2
 
-<a class="example-link" title="Passed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/1a02b0/07965ba721519d8e4c53bc91692db1f97b8d7575.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/1a02b0/07965ba721519d8e4c53bc91692db1f97b8d7575.html">Open in a new tab</a>
 
 A video element with a link to a text transcript on a different page.
 
@@ -138,7 +138,7 @@ A video element with a link to a text transcript on a different page.
 
 #### Failed Example 1
 
-<a class="example-link" title="Failed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/1a02b0/5f361cfcf29c6c37a88c0fcdb4246fd8ec0a65c1.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/1a02b0/5f361cfcf29c6c37a88c0fcdb4246fd8ec0a65c1.html">Open in a new tab</a>
 
 A video element with an incorrect text transcript on the same page.
 
@@ -156,7 +156,7 @@ Then he stops to scratch his bottom.</p>
 
 #### Failed Example 2
 
-<a class="example-link" title="Failed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/1a02b0/50ee346de986982007936f25602b28bf6929ea5d.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/1a02b0/50ee346de986982007936f25602b28bf6929ea5d.html">Open in a new tab</a>
 
 A video element with a link to an incorrect text transcript on a different page.
 
@@ -174,7 +174,7 @@ A video element with a link to an incorrect text transcript on a different page.
 
 #### Inapplicable Example 1
 
-<a class="example-link" title="Inapplicable Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/1a02b0/1594b82a7acb107fc96345b864d4c1fe92f4b165.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/1a02b0/1594b82a7acb107fc96345b864d4c1fe92f4b165.html">Open in a new tab</a>
 
 A video element that is not [visible][].
 
@@ -251,11 +251,7 @@ Content is considered _visible_ if making it fully transparent would result in a
 
 For more details, see [examples of visible](https://act-rules.github.io/pages/examples/visible/).
 
-{% include_relative _implementation-proposed.md %}
-
-## Changelog
-
-This is the first version of this ACT rule.
+{% include_relative _versions.md %}
 
 [computed]: https://www.w3.org/TR/css-cascade/#computed-value 'CSS definition of computed value'
 [examples of included in the accessibility tree]: https://act-rules.github.io/pages/examples/included-in-the-accessibility-tree/

@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> off6ek</p>
-  <p><strong>Date:</strong> Updated 13 June 2022</p>
+  <p><strong>Date:</strong> Updated 21 June 2022</p>
   <p><strong>Authors:</strong> <a href="https://github.com/Jym77">Jean-Yves Moyen</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -19,7 +19,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that the primary language subtag of an element matches its default language
-  last_modified: 13 June 2022
+  last_modified: 21 June 2022
   scs_tested:
     - handle: Language of Parts
       num: 3.1.2
@@ -112,7 +112,7 @@ The following aspects are required in using this rule.
 
 #### Passed Example 1
 
-<a class="example-link" title="Passed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/off6ek/ec40c0a032b11cabc03d71b6884ab9b85ee160ad.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/off6ek/ec40c0a032b11cabc03d71b6884ab9b85ee160ad.html">Open in a new tab</a>
 
 This `span` element has a `lang` [attribute value][] of `nl` (Dutch), which matches its [most common language][]. The most common language is Dutch because all words are Dutch.
 
@@ -132,7 +132,7 @@ This `span` element has a `lang` [attribute value][] of `nl` (Dutch), which matc
 
 #### Passed Example 2
 
-<a class="example-link" title="Passed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/off6ek/df9260fddb4d08ca0669bea363828d089b36317b.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/off6ek/df9260fddb4d08ca0669bea363828d089b36317b.html">Open in a new tab</a>
 
 The second `p` element has `lang` attribute value of `nl` (Dutch), which matches its [most common language][]. The most common language is Dutch because all English words are in `span` elements with a `lang` attribute value of `en`. Both `span` elements also have a `lang` attribute matching their most common language.
 
@@ -155,7 +155,7 @@ The second `p` element has `lang` attribute value of `nl` (Dutch), which matches
 
 #### Passed Example 3
 
-<a class="example-link" title="Passed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/off6ek/5532e66ea71ed1f352f9911e224cbf290c7cc8e6.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/off6ek/5532e66ea71ed1f352f9911e224cbf290c7cc8e6.html">Open in a new tab</a>
 
 This `div` element has a `lang` [attribute value][] of `en` (English), which matches its [most common language][]. The most common language is English because the accessible texts are English, and all other text is in a `p` element with a (correct) `lang` attribute value of `fr`.
 
@@ -177,7 +177,7 @@ This `div` element has a `lang` [attribute value][] of `en` (English), which mat
 
 #### Passed Example 4
 
-<a class="example-link" title="Passed Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/off6ek/53d05e6fdcc63ff61ef1e5ea8454eea318aa038a.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/off6ek/53d05e6fdcc63ff61ef1e5ea8454eea318aa038a.html">Open in a new tab</a>
 
 This `span` element has a `lang` [attribute value][] of `fr` (French), which matches one of its [most common languages][most common language]. The most common languages are both English and French because all the words belong to both languages.
 
@@ -192,7 +192,7 @@ This `span` element has a `lang` [attribute value][] of `fr` (French), which mat
 
 #### Passed Example 5
 
-<a class="example-link" title="Passed Example 5" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/off6ek/61c507e0aab456cce20538400fc1067be37953a0.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/off6ek/61c507e0aab456cce20538400fc1067be37953a0.html">Open in a new tab</a>
 
 This `span` element has a `lang` [attribute value][] of `en` (English), which matches one of its [most common languages][most common language]. The most common languages are both English and French because all the words belong to both languages.
 
@@ -209,7 +209,7 @@ This `span` element has a `lang` [attribute value][] of `en` (English), which ma
 
 #### Failed Example 1
 
-<a class="example-link" title="Failed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/off6ek/5b88bdc5f7d936eaa1fdd2f5f8fdd4022548d5ac.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/off6ek/5b88bdc5f7d936eaa1fdd2f5f8fdd4022548d5ac.html">Open in a new tab</a>
 
 This `span` element has `lang` attribute value of `fr` (French), which does not match its [most common language][]. The most common language is Dutch because all words are Dutch.
 
@@ -229,7 +229,7 @@ This `span` element has `lang` attribute value of `fr` (French), which does not 
 
 #### Failed Example 2
 
-<a class="example-link" title="Failed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/off6ek/ffcbd35493c91b4d8ee42c3a7fba9c2356144257.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/off6ek/ffcbd35493c91b4d8ee42c3a7fba9c2356144257.html">Open in a new tab</a>
 
 The second `p` element has `lang` attribute value of `en` (English), which does not match its [most common language][]. The most common language is Dutch because all English words are in `span` elements with a `lang` attribute value of `fr`. Both `span` elements also have an incorrect `lang` attribute in order to make sure that all targets in this example fail the rule.
 
@@ -254,7 +254,7 @@ The second `p` element has `lang` attribute value of `en` (English), which does 
 
 #### Failed Example 3
 
-<a class="example-link" title="Failed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/off6ek/d00a83015b309b51bebfc2c85f62488daec3a5d1.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/off6ek/d00a83015b309b51bebfc2c85f62488daec3a5d1.html">Open in a new tab</a>
 
 This `div` element has a `lang` attribute value of `fr` (French), which does not match its [most common language][]. The most common language is English because the accessible texts are English, and all other text is in a `p` element with a `lang` attribute value of `nl`, which also doesn't match its common language.
 
@@ -276,7 +276,7 @@ This `div` element has a `lang` attribute value of `fr` (French), which does not
 
 #### Failed Example 4
 
-<a class="example-link" title="Failed Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/off6ek/895a754e85f4fbc8e11cea52295381f41eb384ca.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/off6ek/895a754e85f4fbc8e11cea52295381f41eb384ca.html">Open in a new tab</a>
 
 This `div` element has a `lang` attribute value of `fr` (French), which does not match its [most common language][]. The most common language is English because the accessible name of the `img` element is English. The `lang` attribute on the `p` element is effectively ignored. The `p` element is not applicable because there is no [text inheriting its programmatic language][] from it since its content is neither [visible][] nor [included in the accessibility tree][].
 
@@ -300,7 +300,7 @@ This `div` element has a `lang` attribute value of `fr` (French), which does not
 
 #### Inapplicable Example 1
 
-<a class="example-link" title="Inapplicable Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/off6ek/433bdbdd7078af3ebddd933a3b1352c2d162b224.svg">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/off6ek/433bdbdd7078af3ebddd933a3b1352c2d162b224.svg">Open in a new tab</a>
 
 This document is not [HTML](#off6ek:html).
 
@@ -312,7 +312,7 @@ This document is not [HTML](#off6ek:html).
 
 #### Inapplicable Example 2
 
-<a class="example-link" title="Inapplicable Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/off6ek/1aebc3e73c262d1417cfffd8c6e50cfb5fc37f82.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/off6ek/1aebc3e73c262d1417cfffd8c6e50cfb5fc37f82.html">Open in a new tab</a>
 
 There is no [descendant of a `body`](#off6ek:in-body) element with a `lang` attribute.
 
@@ -326,7 +326,7 @@ There is no [descendant of a `body`](#off6ek:in-body) element with a `lang` attr
 
 #### Inapplicable Example 3
 
-<a class="example-link" title="Inapplicable Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/off6ek/cc8b4db7f82f4095bc010311b00c73091e427302.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/off6ek/cc8b4db7f82f4095bc010311b00c73091e427302.html">Open in a new tab</a>
 
 The first `p` element is [empty](#off6ek:not-empty) because the only [element inheriting its programmatic language][] is itself, and it has no text node child.
 
@@ -341,7 +341,7 @@ The first `p` element is [empty](#off6ek:not-empty) because the only [element in
 
 #### Inapplicable Example 4
 
-<a class="example-link" title="Inapplicable Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/off6ek/39063a3b4d2872cbadefc9e252d0492ba44ff74f.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/off6ek/39063a3b4d2872cbadefc9e252d0492ba44ff74f.html">Open in a new tab</a>
 
 This `p` element is [empty](#off6ek:not-empty) because it has no content that is either [visible][] or [included in the accessibility tree][].
 
@@ -355,7 +355,7 @@ This `p` element is [empty](#off6ek:not-empty) because it has no content that is
 
 #### Inapplicable Example 5
 
-<a class="example-link" title="Inapplicable Example 5" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/off6ek/9fa4aaa2575cccf2f83db23b8a66a584cee96486.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/off6ek/9fa4aaa2575cccf2f83db23b8a66a584cee96486.html">Open in a new tab</a>
 
 The [text inheriting its programmatic language][] from this `div` element is only [whitespace][].
 
@@ -511,11 +511,7 @@ This includes:
   - Carriage Return (CR) (U+000D)
   - Next Line (NEL) (U+0085)
 
-{% include_relative _implementation-proposed.md %}
-
-## Changelog
-
-This is the first version of this ACT rule.
+{% include_relative _versions.md %}
 
 [accessible description]: https://www.w3.org/TR/accname-1.1/#dfn-accessible-description 'Definition of Accessible description'
 [accessible name and description computation]: https://www.w3.org/TR/accname 'Accessible Name and Description Computation'

@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 4e8ab6</p>
-  <p><strong>Date:</strong> Updated 13 June 2022</p>
+  <p><strong>Date:</strong> Updated 21 June 2022</p>
   <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -19,7 +19,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that elements that have an explicit role also specify all required states and properties.
-  last_modified: 13 June 2022
+  last_modified: 21 June 2022
   scs_tested:
     - handle: Name, Role, Value
       num: 4.1.2
@@ -97,7 +97,7 @@ The following aspects are required in using this rule.
 
 #### Passed Example 1
 
-<a class="example-link" title="Passed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/e0706a8dbbd0e41f18134072656b5755b9a60cf1.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/e0706a8dbbd0e41f18134072656b5755b9a60cf1.html">Open in a new tab</a>
 
 This `checkbox` has the required property `aria-checked`.
 
@@ -107,7 +107,7 @@ This `checkbox` has the required property `aria-checked`.
 
 #### Passed Example 2
 
-<a class="example-link" title="Passed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/11c5321c05c7b83b8707eee76574a94bd44033fe.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/11c5321c05c7b83b8707eee76574a94bd44033fe.html">Open in a new tab</a>
 
 This `scrollbar` has the required properties `aria-controls` and `aria-valuenow`. `aria-valuemin` has a default value of 0 and `aria-valuemax` of 100.
 
@@ -118,7 +118,7 @@ This `scrollbar` has the required properties `aria-controls` and `aria-valuenow`
 
 #### Passed Example 3
 
-<a class="example-link" title="Passed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/501c9ede91621ccd0e643058e97992d99ea85cdd.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/501c9ede91621ccd0e643058e97992d99ea85cdd.html">Open in a new tab</a>
 
 This `combobox` has required properties `aria-controls` and `aria-expanded`. `aria-controls` references an element that does not exist, but may be added to the page when expanded.
 
@@ -130,7 +130,7 @@ This `combobox` has required properties `aria-controls` and `aria-expanded`. `ar
 
 #### Failed Example 1
 
-<a class="example-link" title="Failed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/8d6361b78f88c707bb73a16701516976d0174a73.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/8d6361b78f88c707bb73a16701516976d0174a73.html">Open in a new tab</a>
 
 This `combobox` is missing the required `aria-controls` property.
 
@@ -142,7 +142,7 @@ This `combobox` is missing the required `aria-controls` property.
 
 #### Failed Example 2
 
-<a class="example-link" title="Failed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/ee696108f2b51abb98969b435d2d72aa0a0b9b9f.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/ee696108f2b51abb98969b435d2d72aa0a0b9b9f.html">Open in a new tab</a>
 
 This `combobox` has an empty value for the required `aria-controls` property.
 
@@ -154,7 +154,7 @@ This `combobox` has an empty value for the required `aria-controls` property.
 
 #### Inapplicable Example 1
 
-<a class="example-link" title="Inapplicable Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/9d80b71ad39b258fb75db804867f189d76ecdab8.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/9d80b71ad39b258fb75db804867f189d76ecdab8.html">Open in a new tab</a>
 
 This `div` does not have a [semantic role](#semantic-role).
 
@@ -164,7 +164,7 @@ This `div` does not have a [semantic role](#semantic-role).
 
 #### Inapplicable Example 2
 
-<a class="example-link" title="Inapplicable Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/a384e79d59f806b9403f207a29223541048716ac.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/a384e79d59f806b9403f207a29223541048716ac.html">Open in a new tab</a>
 
 This `checkbox` has an [implicit semantic role](#implicit-role) that is identical to the [explicit semantic role](#explicit-role).
 
@@ -174,7 +174,7 @@ This `checkbox` has an [implicit semantic role](#implicit-role) that is identica
 
 #### Inapplicable Example 3
 
-<a class="example-link" title="Inapplicable Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/f473186fa351637a3c034b2df567239a39a8139c.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/f473186fa351637a3c034b2df567239a39a8139c.html">Open in a new tab</a>
 
 This `combobox` is not [included in the accessibility tree][] due to its styling, hiding it from everybody.
 
@@ -282,11 +282,7 @@ The _WAI ARIA Specifications_ group both the WAI ARIA W3C Recommendation and ARI
 
 **Note:** depending on the type of content being evaluated, part of the specifications might be irrelevant and should be ignored.
 
-{% include_relative _implementation-proposed.md %}
-
-## Changelog
-
-This is the first version of this ACT rule.
+{% include_relative _versions.md %}
 
 [accessibility support base line]: https://www.w3.org/TR/WCAG-EM/#step1c 'Definition of accessibility support base line'
 [computed]: https://www.w3.org/TR/css-cascade/#computed-value 'CSS definition of computed value'

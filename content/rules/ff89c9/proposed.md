@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> ff89c9</p>
-  <p><strong>Date:</strong> Updated 13 June 2022</p>
+  <p><strong>Date:</strong> Updated 21 June 2022</p>
   <p><strong>Authors:</strong> <a href="https://www.linkedin.com/in/brianbors/">Brian Bors</a>, <a href="https://github.com/Jym77">Jean-Yves Moyen</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Previous Authors: <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -19,7 +19,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that an element with an explicit semantic role exists inside its required context.
-  last_modified: 13 June 2022
+  last_modified: 21 June 2022
   scs_tested:
     - handle: Info and Relationships
       num: 1.3.1
@@ -94,7 +94,7 @@ The following aspects are required in using this rule.
 
 #### Passed Example 1
 
-<a class="example-link" title="Passed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ff89c9/3ae3bc1c993acb6baaad2811cbd6139a8093361c.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ff89c9/3ae3bc1c993acb6baaad2811cbd6139a8093361c.html">Open in a new tab</a>
 
 These elements with an [explicit role][] of `listitem` are children in the [accessibility tree][] of an element with their [required context role][], `list`, expressed as an [explicit role][].
 
@@ -107,7 +107,7 @@ These elements with an [explicit role][] of `listitem` are children in the [acce
 
 #### Passed Example 2
 
-<a class="example-link" title="Passed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ff89c9/44afe364fc9417fd5663599145f670552f507ab0.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ff89c9/44afe364fc9417fd5663599145f670552f507ab0.html">Open in a new tab</a>
 
 These elements with an [explicit role][] of `listitem` are children in the [accessibility tree][] of an element with their [required context role][], `list`, expressed as an [implicit role][] of `ul`. Note that this test case does not satisfy [Success Criterion 4.1.1 Parsing][sc411] because the [`ul` element][ul] does not respect its [content model][].
 
@@ -120,7 +120,7 @@ These elements with an [explicit role][] of `listitem` are children in the [acce
 
 #### Passed Example 3
 
-<a class="example-link" title="Passed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ff89c9/694b790e4f1eae0f22aef2e7c06b646b25db8e1d.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ff89c9/694b790e4f1eae0f22aef2e7c06b646b25db8e1d.html">Open in a new tab</a>
 
 These elements with an [explicit role][] of `listitem` are children in the [accessibility tree][] of an element with their [required context role][] even though they are not its children in DOM. The presentational node is not [included in the accessibility tree][].
 
@@ -135,7 +135,7 @@ These elements with an [explicit role][] of `listitem` are children in the [acce
 
 #### Passed Example 4
 
-<a class="example-link" title="Passed Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ff89c9/b81cf2923d30381d48980be59729a5cb0d792059.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ff89c9/b81cf2923d30381d48980be59729a5cb0d792059.html">Open in a new tab</a>
 
 These elements with an [explicit role][] of `listitem` are children in the [accessibility tree][] of an element with their [required context role][] even though they are not its DOM descendants. The `aria-owns` attribute is used to alter the accessibility tree and place the target elements in their [required context role](https://www.w3.org/TR/wai-aria-1.1/#scope).
 
@@ -147,7 +147,7 @@ These elements with an [explicit role][] of `listitem` are children in the [acce
 
 #### Passed Example 5
 
-<a class="example-link" title="Passed Example 5" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ff89c9/c18579dc18aaebf7eeaa4e24e4bc199d77c432bc.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ff89c9/c18579dc18aaebf7eeaa4e24e4bc199d77c432bc.html">Open in a new tab</a>
 
 These elements with an [explicit role][] of `listitem` are children in the [accessibility tree][] of an element with their [required context role][] even though they are not its DOM children. The `aria-owns` attribute is used to alter the accessibility tree and place the target elements in their [required context role](https://www.w3.org/TR/wai-aria-1.1/#scope).
 
@@ -162,7 +162,7 @@ These elements with an [explicit role][] of `listitem` are children in the [acce
 
 #### Passed Example 6
 
-<a class="example-link" title="Passed Example 6" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ff89c9/1acc47f25d4931c25fe3efbb676af6fd4e2ee57e.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 6" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ff89c9/1acc47f25d4931c25fe3efbb676af6fd4e2ee57e.html">Open in a new tab</a>
 
 These elements with an [explicit role][] of `listitem` are children in the [accessibility tree][] of an element with their [required context role][] because the [accessibility tree][] mimics the DOM tree across shadow boundaries.
 
@@ -180,7 +180,7 @@ These elements with an [explicit role][] of `listitem` are children in the [acce
 
 #### Failed Example 1
 
-<a class="example-link" title="Failed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ff89c9/cd55d1d52c286ac6b342155dde8fcfa49c82ae4a.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ff89c9/cd55d1d52c286ac6b342155dde8fcfa49c82ae4a.html">Open in a new tab</a>
 
 This element with an [explicit role][] of `listitem` is not a child in the [accessibility tree][] of an element with its [required context role][].
 
@@ -190,7 +190,7 @@ This element with an [explicit role][] of `listitem` is not a child in the [acce
 
 #### Failed Example 2
 
-<a class="example-link" title="Failed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ff89c9/2fb70cb7f44a01a2d75f4ef7ca7992cf3fb4fe1d.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ff89c9/2fb70cb7f44a01a2d75f4ef7ca7992cf3fb4fe1d.html">Open in a new tab</a>
 
 These elements with an [explicit role][] of `listitem` are not children in the [accessibility tree][] of an element with their [required context role][], but of an element with the `tabpanel` role.
 
@@ -205,7 +205,7 @@ These elements with an [explicit role][] of `listitem` are not children in the [
 
 #### Failed Example 3
 
-<a class="example-link" title="Failed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ff89c9/52508dc0ac389108301d7cbd7f931be45a45741f.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ff89c9/52508dc0ac389108301d7cbd7f931be45a45741f.html">Open in a new tab</a>
 
 These elements with an [explicit role][] of `listitem` are not children in the [accessibility tree][] of an element with their [required context role][]. They are instead children in the [accessibility tree][] of the `div` with an `aria-live` attribute; even though this `div` has no role, it has a global ARIA attribute and is thus [included in the accessibility tree][].
 
@@ -220,7 +220,7 @@ These elements with an [explicit role][] of `listitem` are not children in the [
 
 #### Failed Example 4
 
-<a class="example-link" title="Failed Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ff89c9/f8e3dbe601969ab54954447e04ae384eb52d7082.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ff89c9/f8e3dbe601969ab54954447e04ae384eb52d7082.html">Open in a new tab</a>
 
 These elements with an [explicit role][] of `listitem` are not children in the [accessibility tree][] of an element with their [required context role][] because explicit parent-child relation in the [accessibility tree][] (set by `aria-owns`) does not cross shadow boundaries.
 
@@ -240,7 +240,7 @@ These elements with an [explicit role][] of `listitem` are not children in the [
 
 #### Inapplicable Example 1
 
-<a class="example-link" title="Inapplicable Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ff89c9/9f86cf6493bf2315ce01cec636014d1c059d6581.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ff89c9/9f86cf6493bf2315ce01cec636014d1c059d6581.html">Open in a new tab</a>
 
 This element with an [explicit role][] of `listitem` is not [included in the accessibility tree][].
 
@@ -250,7 +250,7 @@ This element with an [explicit role][] of `listitem` is not [included in the acc
 
 #### Inapplicable Example 2
 
-<a class="example-link" title="Inapplicable Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ff89c9/7ec257f7f32bbe21231743ef1da46943584142c8.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ff89c9/7ec257f7f32bbe21231743ef1da46943584142c8.html">Open in a new tab</a>
 
 There is no element with an [explicit role][].
 
@@ -262,7 +262,7 @@ There is no element with an [explicit role][].
 
 #### Inapplicable Example 3
 
-<a class="example-link" title="Inapplicable Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ff89c9/a582209de4a1d8ed76f54ca2e1f76d1efdbd499e.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ff89c9/a582209de4a1d8ed76f54ca2e1f76d1efdbd499e.html">Open in a new tab</a>
 
 This `section` element with an [explicit role][] of `doc-abstract` has a role from the [Digital Publishing WAI-ARIA Module (DPUB ARIA) 1.0][dpub 1.0], not the [WAI-ARIA 1.1 Recommendation][aria 1.1].
 
@@ -274,7 +274,7 @@ This `section` element with an [explicit role][] of `doc-abstract` has a role fr
 
 #### Inapplicable Example 4
 
-<a class="example-link" title="Inapplicable Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ff89c9/84dd1831c0682a800e6af2fe992fb3d69d4222eb.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ff89c9/84dd1831c0682a800e6af2fe992fb3d69d4222eb.html">Open in a new tab</a>
 
 There is no element whose role has [required context role][] because the `header` role does not have one.
 
@@ -285,7 +285,7 @@ There is no element whose role has [required context role][] because the `header
 
 #### Inapplicable Example 5
 
-<a class="example-link" title="Inapplicable Example 5" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ff89c9/48dc663078fb5421332814b72bd0079f90aad09a.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ff89c9/48dc663078fb5421332814b72bd0079f90aad09a.html">Open in a new tab</a>
 
 There is no element with an [explicit role][] different from its [implicit role][]. This `li` element has an [explicit role][] of `listitem` which is identical to its [implicit role][].
 
@@ -395,11 +395,7 @@ The _WAI ARIA Specifications_ group both the WAI ARIA W3C Recommendation and ARI
 
 **Note:** depending on the type of content being evaluated, part of the specifications might be irrelevant and should be ignored.
 
-{% include_relative _implementation-proposed.md %}
-
-## Changelog
-
-This is the first version of this ACT rule.
+{% include_relative _versions.md %}
 
 [accessibility support base line]: https://www.w3.org/TR/WCAG-EM/#step1c 'Definition of accessibility support base line'
 [accessibility tree]: https://www.w3.org/TR/act-rules-aspects/#input-aspects-accessibility 'Definition of accessibility tree'

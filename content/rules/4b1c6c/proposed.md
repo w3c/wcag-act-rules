@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 4b1c6c</p>
-  <p><strong>Date:</strong> Updated 13 June 2022</p>
+  <p><strong>Date:</strong> Updated 21 June 2022</p>
   <p><strong>Authors:</strong> <a href="https://github.com/audreymaniez">Audrey Maniez</a>, <a href="https://github.com/Jym77">Jean-Yves Moyen</a>, <a href="https://github.com/jkodu">Jey Nandakumar</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -19,7 +19,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that `iframe` elements with identical accessible names embed the same resource or equivalent resources.
-  last_modified: 13 June 2022
+  last_modified: 21 June 2022
   scs_tested:
     - handle: Name, Role, Value
       num: 4.1.2
@@ -88,7 +88,7 @@ The following aspects are required in using this rule.
 
 #### Passed Example 1
 
-<a class="example-link" title="Passed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4b1c6c/08c5575023e8bf16caabcf01a1c8d40fe6ecaf94.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4b1c6c/08c5575023e8bf16caabcf01a1c8d40fe6ecaf94.html">Open in a new tab</a>
 
 Two `iframe` elements within the same [document tree][] have the same [accessible name][] (given by the `title` attribute) and embed the same resource.
 
@@ -102,7 +102,7 @@ Two `iframe` elements within the same [document tree][] have the same [accessibl
 
 #### Passed Example 2
 
-<a class="example-link" title="Passed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4b1c6c/40e3400d782be79d036ea5119ff231acb7884f21.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4b1c6c/40e3400d782be79d036ea5119ff231acb7884f21.html">Open in a new tab</a>
 
 Two `iframe` elements within the same [document tree][] have the same [accessible name][] (given by the `title` and `aria-label` attributes) and embed the same resource.
 
@@ -116,7 +116,7 @@ Two `iframe` elements within the same [document tree][] have the same [accessibl
 
 #### Passed Example 3
 
-<a class="example-link" title="Passed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4b1c6c/f8d3c1afa946cf4fc97ef799aad6d9d090de6e8f.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4b1c6c/f8d3c1afa946cf4fc97ef799aad6d9d090de6e8f.html">Open in a new tab</a>
 
 Two `iframe` elements within the same [document tree][] have the same [accessible name][] (given by the `aria-labelledby` attribute and corresponding elements) and embed the same resource.
 
@@ -132,7 +132,7 @@ Two `iframe` elements within the same [document tree][] have the same [accessibl
 
 #### Passed Example 4
 
-<a class="example-link" title="Passed Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4b1c6c/380a799833429075d0e99667d1e0021008aab386.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4b1c6c/380a799833429075d0e99667d1e0021008aab386.html">Open in a new tab</a>
 
 Two `iframe` elements within the same [document tree][] have the same [accessible name][] (given by the `title` attribute) and embed equivalent resources. Only the navigation options (bread crumbs and local sub menus) differ due to different placement in navigation hierarchy.
 
@@ -146,7 +146,7 @@ Two `iframe` elements within the same [document tree][] have the same [accessibl
 
 #### Passed Example 5
 
-<a class="example-link" title="Passed Example 5" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4b1c6c/72d5c95606c82e7570f3496c4cc02512b639aaf3.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4b1c6c/72d5c95606c82e7570f3496c4cc02512b639aaf3.html">Open in a new tab</a>
 
 Two `iframe` elements within the same [document tree][] have the same [accessible name][] (given by the `title` attribute) and embed equivalent resources.
 
@@ -160,7 +160,7 @@ Two `iframe` elements within the same [document tree][] have the same [accessibl
 
 #### Passed Example 6
 
-<a class="example-link" title="Passed Example 6" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4b1c6c/5741786806bd13c329e3681a0e16f4ed326d7fee.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 6" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4b1c6c/5741786806bd13c329e3681a0e16f4ed326d7fee.html">Open in a new tab</a>
 
 Two `iframe` elements within the same [document tree][] have the same [accessible name][] (given by the `title` attribute) and embed the same resource. `src` attributes only differ due to trailing slashes, but resolves to the same resource after redirects caused by user agent.
 
@@ -174,7 +174,7 @@ Two `iframe` elements within the same [document tree][] have the same [accessibl
 
 #### Passed Example 7
 
-<a class="example-link" title="Passed Example 7" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4b1c6c/1fe7e9b43510e6e25007a67611a5a0ace14c1fd0.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 7" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4b1c6c/1fe7e9b43510e6e25007a67611a5a0ace14c1fd0.html">Open in a new tab</a>
 
 Two `iframe` elements within the same [document tree][] have the same [accessible name][] (given by the `title` attribute) and embed equivalent resources. Resources differ by the amount of information available and/or a differently worded information.
 
@@ -188,7 +188,7 @@ Two `iframe` elements within the same [document tree][] have the same [accessibl
 
 #### Passed Example 8
 
-<a class="example-link" title="Passed Example 8" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4b1c6c/0b43ded650d5794255c23f97f2f1a39d9a19be4b.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 8" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4b1c6c/0b43ded650d5794255c23f97f2f1a39d9a19be4b.html">Open in a new tab</a>
 
 Two `iframe` elements within the same [document tree][] have the same [accessible name][] (given by the `title` attribute) and embed equivalent resources. Each `iframe` refers to a different url that referenced different advertising content (giving by a third party) but embed resources has equivalent purpose: showing an advertising.
 
@@ -202,7 +202,7 @@ Two `iframe` elements within the same [document tree][] have the same [accessibl
 
 #### Passed Example 9
 
-<a class="example-link" title="Passed Example 9" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4b1c6c/96600720258c71d467d82fda5d6d0037b7780ec3.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 9" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4b1c6c/96600720258c71d467d82fda5d6d0037b7780ec3.html">Open in a new tab</a>
 
 All three `iframe` elements have the same [accessible name][]. The second `iframe` (with `id` `"light"` ) is only part of the [light tree][]. When the [shadow tree][] is attached to `host` and flattened, this `iframe` is overwritten and therefore not part of the [flat tree][]. Hence, only the first and third `iframe` are considered by this rule and they both point to the [same resource][].
 
@@ -223,7 +223,7 @@ All three `iframe` elements have the same [accessible name][]. The second `ifram
 
 #### Passed Example 10
 
-<a class="example-link" title="Passed Example 10" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4b1c6c/21d4d4b931e9f06b5c4a008cb1989aa195c107b6.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 10" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4b1c6c/21d4d4b931e9f06b5c4a008cb1989aa195c107b6.html">Open in a new tab</a>
 
 The [browsing context][] of the `iframe` with `id` `"container"` has the [browsing context][] of the main [document][] as an [ancestor browsing context][]. Hence, they share the same [top-level browsing context][] (namely, the [browsing context][] of the main [document][]) and are part of the same [web page (HTML)][]. Therefore, both `iframe` with `id` `"top-level"` and `"nested"` are considered and, since they embed the same document, the rule passes.
 
@@ -241,7 +241,7 @@ The [browsing context][] of the `iframe` with `id` `"container"` has the [browsi
 
 #### Failed Example 1
 
-<a class="example-link" title="Failed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4b1c6c/c1cc2a71e88c5fec2bc41175d63339404747bf00.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4b1c6c/c1cc2a71e88c5fec2bc41175d63339404747bf00.html">Open in a new tab</a>
 
 Two `iframe` elements within the same [document tree][] have the same [accessible name][] (given by the `title` attribute) but don't embed equivalent resources.
 
@@ -255,7 +255,7 @@ Two `iframe` elements within the same [document tree][] have the same [accessibl
 
 #### Failed Example 2
 
-<a class="example-link" title="Failed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4b1c6c/ac65ce86f38bce79d12b797567bb8d85875aab88.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4b1c6c/ac65ce86f38bce79d12b797567bb8d85875aab88.html">Open in a new tab</a>
 
 Two `iframe` elements within the same [document tree][] have the same [accessible name][] (given by the `aria-label` attribute) but don't embed equivalent resources.
 
@@ -269,7 +269,7 @@ Two `iframe` elements within the same [document tree][] have the same [accessibl
 
 #### Failed Example 3
 
-<a class="example-link" title="Failed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4b1c6c/4d33680e81b31e47fc46d3b6543cc050e369525b.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4b1c6c/4d33680e81b31e47fc46d3b6543cc050e369525b.html">Open in a new tab</a>
 
 Two `iframe` elements within the same [document tree][] have the same [accessible name][] (given by the `title` and `aria-label` attributes) but don't embed equivalent resources.
 
@@ -283,7 +283,7 @@ Two `iframe` elements within the same [document tree][] have the same [accessibl
 
 #### Failed Example 4
 
-<a class="example-link" title="Failed Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4b1c6c/486f868f7a1f41507a2bc214eb94087a8e906b4c.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4b1c6c/486f868f7a1f41507a2bc214eb94087a8e906b4c.html">Open in a new tab</a>
 
 The [browsing context][] of the `iframe` with `id` `"container"` has the [browsing context][] of the main [document][] as an [ancestor browsing context][]. Hence, they share the same [top-level browsing context][] (namely, the [browsing context][] of the main [document][]) and are part of the same [web page (HTML)][]. Therefore, both `iframe` with `id` `"top-level"` and `"nested"` are considered and the rule fails.
 
@@ -301,7 +301,7 @@ The [browsing context][] of the `iframe` with `id` `"container"` has the [browsi
 
 #### Inapplicable Example 1
 
-<a class="example-link" title="Inapplicable Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4b1c6c/3482a8bfa5017d02f2fc3d8a01560837b23ee9dd.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4b1c6c/3482a8bfa5017d02f2fc3d8a01560837b23ee9dd.html">Open in a new tab</a>
 
 There is only one `iframe` element within the [document tree][]. Therefore, there is no set of two or more `iframe` elements with the same [accessible name][] and the rule is inapplicable.
 
@@ -313,7 +313,7 @@ There is only one `iframe` element within the [document tree][]. Therefore, ther
 
 #### Inapplicable Example 2
 
-<a class="example-link" title="Inapplicable Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4b1c6c/bca9ffacff48445c9e4439b0611b4470c370e6ee.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4b1c6c/bca9ffacff48445c9e4439b0611b4470c370e6ee.html">Open in a new tab</a>
 
 Each of the two `iframe` elements within the [document tree][] has a different [accessible name][] (given by the `title` attribute). Therefore, there is no set of two or more `iframe` elements with the same [accessible name][] and the rule is inapplicable.
 
@@ -329,7 +329,7 @@ Each of the two `iframe` elements within the [document tree][] has a different [
 
 #### Inapplicable Example 3
 
-<a class="example-link" title="Inapplicable Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4b1c6c/5aae37ddb5b9d51a41f090581101c1e6a4ee1763.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4b1c6c/5aae37ddb5b9d51a41f090581101c1e6a4ee1763.html">Open in a new tab</a>
 
 Each of the two `iframe` elements within the [document tree][] has a different [accessible name][] (given by the `aria-label` attribute). Therefore, there is no set of two or more `iframe` elements with the same [accessible name][] and the rule is inapplicable.
 
@@ -345,7 +345,7 @@ Each of the two `iframe` elements within the [document tree][] has a different [
 
 #### Inapplicable Example 4
 
-<a class="example-link" title="Inapplicable Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4b1c6c/2c65e532caf63bbf142e3bb8310f282366343ebb.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4b1c6c/2c65e532caf63bbf142e3bb8310f282366343ebb.html">Open in a new tab</a>
 
 Each of the two `iframe` elements within the [document tree][] has a different [accessible name][] (given by the `aria-labelledby` attribute and matching elements). Therefore, there is no set of two or more `iframe` elements with the same [accessible name][] and the rule is inapplicable.
 
@@ -361,7 +361,7 @@ Each of the two `iframe` elements within the [document tree][] has a different [
 
 #### Inapplicable Example 5
 
-<a class="example-link" title="Inapplicable Example 5" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4b1c6c/8d7d93263c8a22831292a0ac15ed4734d6c63b3b.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4b1c6c/8d7d93263c8a22831292a0ac15ed4734d6c63b3b.html">Open in a new tab</a>
 
 Both `iframe` elements have the same [accessible name][] (given by the `title` attribute) within the same [document tree][], but one of them is not [included in the accessibility tree][]. Therefore, there is no set of two or more `iframe` elements that are [included in the accessibility tree][] and have the same [accessible name][], and the rule is inapplicable.
 
@@ -376,7 +376,7 @@ Both `iframe` elements have the same [accessible name][] (given by the `title` a
 
 #### Inapplicable Example 6
 
-<a class="example-link" title="Inapplicable Example 6" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4b1c6c/497ad0044eedbb3a36326f153147a271f1619c71.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 6" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4b1c6c/497ad0044eedbb3a36326f153147a271f1619c71.html">Open in a new tab</a>
 
 The `alt` attribute does not provide an [accessible name][] for `iframe` elements. Therefore, these `iframe` elements do not have an [accessible name][] and the rule is inapplicable.
 
@@ -390,7 +390,7 @@ The `alt` attribute does not provide an [accessible name][] for `iframe` element
 
 #### Inapplicable Example 7
 
-<a class="example-link" title="Inapplicable Example 7" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4b1c6c/f686e5e01a34866c49dabed05e5a840873c3c708.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 7" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4b1c6c/f686e5e01a34866c49dabed05e5a840873c3c708.html">Open in a new tab</a>
 
 The rule does not apply to `object` elements.
 
@@ -404,7 +404,7 @@ The rule does not apply to `object` elements.
 
 #### Inapplicable Example 8
 
-<a class="example-link" title="Inapplicable Example 8" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4b1c6c/8f35b76114d0dd59fcd78d46c7af113838cc99ea.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 8" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4b1c6c/8f35b76114d0dd59fcd78d46c7af113838cc99ea.html">Open in a new tab</a>
 
 These `iframe` elements do not have [accessible names][accessible name].
 
@@ -418,7 +418,7 @@ These `iframe` elements do not have [accessible names][accessible name].
 
 #### Inapplicable Example 9
 
-<a class="example-link" title="Inapplicable Example 9" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4b1c6c/ab3046bbe77ef23bb7b5ce9f79f53230e0a6a7d0.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 9" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4b1c6c/ab3046bbe77ef23bb7b5ce9f79f53230e0a6a7d0.html">Open in a new tab</a>
 
 These `iframe` elements are not [included in the accessibility tree][], because of the `display:none` styling.
 
@@ -540,11 +540,7 @@ An _HTML [web page](https://www.w3.org/TR/WCAG21/#dfn-web-page-s)_ is the set of
 
 **Note:** Although web pages as defined here are sets of [documents](https://dom.spec.whatwg.org/#concept-document) (and do not contain other kind of nodes), one can abusively write that any node is "in a web page" if it is a [shadow-including descendant](https://dom.spec.whatwg.org/#concept-shadow-including-descendant) of a [document](https://dom.spec.whatwg.org/#concept-document) that is part of that web page.
 
-{% include_relative _implementation-proposed.md %}
-
-## Changelog
-
-This is the first version of this ACT rule.
+{% include_relative _versions.md %}
 
 [accessible name and description computation]: https://www.w3.org/TR/accname 'Accessible Name and Description Computation'
 [accessible name]: #accessible-name 'Definition of accessible name'

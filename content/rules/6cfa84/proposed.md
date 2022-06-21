@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 6cfa84</p>
-  <p><strong>Date:</strong> Updated 16 June 2022</p>
+  <p><strong>Date:</strong> Updated 21 June 2022</p>
   <p><strong>Authors:</strong> <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -19,7 +19,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that elements with an `aria-hidden` attribute do not contain elements that are part of the sequential focus navigation and focusable.
-  last_modified: 16 June 2022
+  last_modified: 21 June 2022
   scs_tested:
     - handle: Name, Role, Value
       num: 4.1.2
@@ -107,7 +107,7 @@ The following aspects are required in using this rule.
 
 #### Passed Example 1
 
-<a class="example-link" title="Passed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/5bd22090d0f74dcea752749ef4ad8411e3772535.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/5bd22090d0f74dcea752749ef4ad8411e3772535.html">Open in a new tab</a>
 
 This `p` element is not part of the [sequential focus navigation][].
 
@@ -117,7 +117,7 @@ This `p` element is not part of the [sequential focus navigation][].
 
 #### Passed Example 2
 
-<a class="example-link" title="Passed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/9f9f5e323450f4c0bd5445597a39d160ce07ff48.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/9f9f5e323450f4c0bd5445597a39d160ce07ff48.html">Open in a new tab</a>
 
 This `a` element is not part of the [sequential focus navigation][] because it is hidden through CSS.
 
@@ -129,7 +129,7 @@ This `a` element is not part of the [sequential focus navigation][] because it i
 
 #### Passed Example 3
 
-<a class="example-link" title="Passed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/3c48f0e596f96b4bb701943356b6c179f41d383c.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/3c48f0e596f96b4bb701943356b6c179f41d383c.html">Open in a new tab</a>
 
 This `input` element is not part of the [sequential focus navigation][] because of the `disabled` attribute.
 
@@ -139,7 +139,7 @@ This `input` element is not part of the [sequential focus navigation][] because 
 
 #### Passed Example 4
 
-<a class="example-link" title="Passed Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/36d83f2c0fe431eade9b158f1e548c2d6189d570.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/36d83f2c0fe431eade9b158f1e548c2d6189d570.html">Open in a new tab</a>
 
 This `a` element is not [focusable][] because it moves focus to the `input` element whenever it receives focus. These elements
 are sometimes referred to as 'focus sentinel' or 'bumper'. They are typically found before and after a modal / dialog in 
@@ -167,7 +167,7 @@ to detect that focus has left the dialog in order to wrap it to the top/bottom a
 
 #### Passed Example 5
 
-<a class="example-link" title="Passed Example 5" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/85a2d2ea8aeb1eddb5a6576edb958c2d1597ddfc.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/85a2d2ea8aeb1eddb5a6576edb958c2d1597ddfc.html">Open in a new tab</a>
 
 This `button` element is [focusable][], but not part of the [sequential focus navigation][] because of the `tabindex` attribute.
 
@@ -181,7 +181,7 @@ This `button` element is [focusable][], but not part of the [sequential focus na
 
 #### Failed Example 1
 
-<a class="example-link" title="Failed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/4e7955d592cbf361a55113fcd4524e979b16bb08.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/4e7955d592cbf361a55113fcd4524e979b16bb08.html">Open in a new tab</a>
 
 This `a` element positioned off screen is part of the [sequential focus navigation][] using the keyboard.
 
@@ -193,7 +193,7 @@ This `a` element positioned off screen is part of the [sequential focus navigati
 
 #### Failed Example 2
 
-<a class="example-link" title="Failed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/2adaacc2f7b8d7a0d2d1496ad6f56aafd171f7fe.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/2adaacc2f7b8d7a0d2d1496ad6f56aafd171f7fe.html">Open in a new tab</a>
 
 This `input` element is part of the [sequential focus navigation][] because it was incorrectly disabled.
 
@@ -205,7 +205,7 @@ This `input` element is part of the [sequential focus navigation][] because it w
 
 #### Failed Example 3
 
-<a class="example-link" title="Failed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/7d1d269e9ff9a8f396b2d638103379b6cf937225.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/7d1d269e9ff9a8f396b2d638103379b6cf937225.html">Open in a new tab</a>
 
 This `button` element is part of the [sequential focus navigation][] and a descendant of an element with an `aria-hidden` [attribute value][] of `true` because `aria-hidden` can't be reset once set to true on an ancestor.
 
@@ -219,7 +219,7 @@ This `button` element is part of the [sequential focus navigation][] and a desce
 
 #### Failed Example 4
 
-<a class="example-link" title="Failed Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/d0b1b435bb2757bab5f644e53a273a9f50c8bc2c.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/d0b1b435bb2757bab5f644e53a273a9f50c8bc2c.html">Open in a new tab</a>
 
 This `p` element is part of the [sequential focus navigation][] because of the `tabindex` attribute.
 
@@ -229,7 +229,7 @@ This `p` element is part of the [sequential focus navigation][] because of the `
 
 #### Failed Example 5
 
-<a class="example-link" title="Failed Example 5" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/9cc94f9f9549ef0c9fc0433e22e4fe59843d1b2a.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/9cc94f9f9549ef0c9fc0433e22e4fe59843d1b2a.html">Open in a new tab</a>
 
 This `summary` element is part of the [sequential focus navigation][].
 
@@ -242,7 +242,7 @@ This `summary` element is part of the [sequential focus navigation][].
 
 #### Failed Example 6
 
-<a class="example-link" title="Failed Example 6" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/59dbb168e68fbb2e752910c43405fe33fb9f3f70.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 6" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/59dbb168e68fbb2e752910c43405fe33fb9f3f70.html">Open in a new tab</a>
 
 This `a` element is [focusable][] because it fails to move focus when it receives focus. This is in contrast to a focus sentinel that 
 immediately jumps focus to a valid location. Focus sentinels are typically used before and after a modal dialog in order to contain 
@@ -267,7 +267,7 @@ and wrap focus. In this case, the `focus` event was removed, but the sentinel wa
 
 #### Inapplicable Example 1
 
-<a class="example-link" title="Inapplicable Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/afb819d4c7cfdf8fc468bb2297da3247fb5ac056.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/afb819d4c7cfdf8fc468bb2297da3247fb5ac056.html">Open in a new tab</a>
 
 This `aria-hidden` attribute is ignored with null value.
 
@@ -277,7 +277,7 @@ This `aria-hidden` attribute is ignored with null value.
 
 #### Inapplicable Example 2
 
-<a class="example-link" title="Inapplicable Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/22d7a78f0d6680f70dae9cc412f496450a2acf4e.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/22d7a78f0d6680f70dae9cc412f496450a2acf4e.html">Open in a new tab</a>
 
 This `aria-hidden` attribute is ignored with value `false`.
 
@@ -287,7 +287,7 @@ This `aria-hidden` attribute is ignored with value `false`.
 
 #### Inapplicable Example 3
 
-<a class="example-link" title="Inapplicable Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/4d71a1ad253efab083f05dc558656d94eb430ca7.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/4d71a1ad253efab083f05dc558656d94eb430ca7.html">Open in a new tab</a>
 
 This `aria-hidden` attribute has an incorrect value.
 
@@ -363,11 +363,7 @@ An HTML element is _programmatically hidden_ if either it has a [computed][] CSS
 
 **Note**: The [HTML standard suggests](https://html.spec.whatwg.org/multipage/rendering.html#hidden-elements) setting the CSS `display` property to `none` for elements with the `hidden` attribute. While not required by HTML, all modern browsers follow this suggestion. Because of this the `hidden` attribute is not used in this definition. In browsers that use this suggestion, overriding the CSS `display` property can reveal elements with the `hidden` attribute.
 
-{% include_relative _implementation-proposed.md %}
-
-## Changelog
-
-This is the first version of this ACT rule.
+{% include_relative _versions.md %}
 
 [attribute value]: #attribute-value 'Definition of Attribute Value'
 [boolean attributes]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attributes 'HTML Specification of Boolean Attribute'

@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> ffd0e9</p>
-  <p><strong>Date:</strong> Updated 13 June 2022</p>
+  <p><strong>Date:</strong> Updated 21 June 2022</p>
   <p><strong>Authors:</strong> <a href="https://github.com/Jym77">Jean-Yves Moyen</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -19,7 +19,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that each heading has a non-empty accessible name.
-  last_modified: 13 June 2022
+  last_modified: 21 June 2022
   scs_tested:
     - handle: Info and Relationships
       num: 1.3.1
@@ -98,7 +98,7 @@ The following aspects are required in using this rule.
 
 #### Passed Example 1
 
-<a class="example-link" title="Passed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ffd0e9/0ac909cfd0a0200a97cca3107011fe1e1c08ecc8.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ffd0e9/0ac909cfd0a0200a97cca3107011fe1e1c08ecc8.html">Open in a new tab</a>
 
 This `h1` element has a non-empty [accessible name][].
 
@@ -108,7 +108,7 @@ This `h1` element has a non-empty [accessible name][].
 
 #### Passed Example 2
 
-<a class="example-link" title="Passed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ffd0e9/73050f33875bf32ae13733b96d0408b6b255e4a1.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ffd0e9/73050f33875bf32ae13733b96d0408b6b255e4a1.html">Open in a new tab</a>
 
 This `div` element with a [semantic role][] of `heading` has a non-empty [accessible name][].
 
@@ -118,7 +118,7 @@ This `div` element with a [semantic role][] of `heading` has a non-empty [access
 
 #### Passed Example 3
 
-<a class="example-link" title="Passed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ffd0e9/f55422cabb0efc3a6491733c849306bfea1b1c9c.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ffd0e9/f55422cabb0efc3a6491733c849306bfea1b1c9c.html">Open in a new tab</a>
 
 This `h1` element has a non-empty [accessible name][] given by its `aria-labelledby` attribute.
 
@@ -129,7 +129,7 @@ This `h1` element has a non-empty [accessible name][] given by its `aria-labelle
 
 #### Passed Example 4
 
-<a class="example-link" title="Passed Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ffd0e9/bd1a62830ac1d9800078f26866da433781f9c85f.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ffd0e9/bd1a62830ac1d9800078f26866da433781f9c85f.html">Open in a new tab</a>
 
 This `h1` element has a non-empty [accessible name][] given by the `alt` attribute of its content.
 
@@ -139,7 +139,7 @@ This `h1` element has a non-empty [accessible name][] given by the `alt` attribu
 
 #### Passed Example 5
 
-<a class="example-link" title="Passed Example 5" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ffd0e9/e62fd17ec8a90b871727e871d5136fc785ca13ad.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ffd0e9/e62fd17ec8a90b871727e871d5136fc785ca13ad.html">Open in a new tab</a>
 
 This `h1` element is not [visible][], but is still [included in the accessibility tree][]. It has a non-empty [accessible name][].
 
@@ -151,7 +151,7 @@ This `h1` element is not [visible][], but is still [included in the accessibilit
 
 #### Failed Example 1
 
-<a class="example-link" title="Failed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ffd0e9/5655cd127e7f8e1e9306b1858e2bc018392564b3.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ffd0e9/5655cd127e7f8e1e9306b1858e2bc018392564b3.html">Open in a new tab</a>
 
 This `h1` element has an empty [accessible name][] because its content is not exposed to assistive technologies.
 
@@ -161,7 +161,7 @@ This `h1` element has an empty [accessible name][] because its content is not ex
 
 #### Failed Example 2
 
-<a class="example-link" title="Failed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ffd0e9/d37f6335303b2a57c3f81d1d602287952f27ab8e.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ffd0e9/d37f6335303b2a57c3f81d1d602287952f27ab8e.html">Open in a new tab</a>
 
 This `h1` element has an empty [accessible name][] given by its `aria-label` attribute. Its content is not exposed to assistive technologies, thus preventing the [accessible name][] to default to the content.
 
@@ -171,7 +171,7 @@ This `h1` element has an empty [accessible name][] given by its `aria-label` att
 
 #### Failed Example 3
 
-<a class="example-link" title="Failed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ffd0e9/c01940d4367bd13fca88f88c10c2a97bc243606d.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ffd0e9/c01940d4367bd13fca88f88c10c2a97bc243606d.html">Open in a new tab</a>
 
 This `h1` element has an empty [accessible name][] given by its `aria-labelledby` attribute. Its content is not exposed to assistive technologies, thus preventing the [accessible name][] to default to the content.
 
@@ -182,7 +182,7 @@ This `h1` element has an empty [accessible name][] given by its `aria-labelledby
 
 #### Failed Example 4
 
-<a class="example-link" title="Failed Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ffd0e9/623ac29716a01c2888ff9bc94bdbca9fd18296e1.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ffd0e9/623ac29716a01c2888ff9bc94bdbca9fd18296e1.html">Open in a new tab</a>
 
 This `h1` element has an empty [accessible name][] because the `img` element has a [semantic role][] of `presentation`, and thus does not provide an [accessible name][] to the `h1` element. Note that the `alt` attribute does not trigger [Presentational Roles Conflict Resolution][] because it is not an ARIA attribute.
 
@@ -192,7 +192,7 @@ This `h1` element has an empty [accessible name][] because the `img` element has
 
 #### Failed Example 5
 
-<a class="example-link" title="Failed Example 5" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ffd0e9/cc22b9130f7d1963b38975576e11d035ef44e13c.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ffd0e9/cc22b9130f7d1963b38975576e11d035ef44e13c.html">Open in a new tab</a>
 
 This `h1` element has an empty [accessible name][] because the spaces and line break are trimmed by [accessible name computation][accessible name and description computation].
 
@@ -202,7 +202,7 @@ This `h1` element has an empty [accessible name][] because the spaces and line b
 
 #### Failed Example 6
 
-<a class="example-link" title="Failed Example 6" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ffd0e9/937a207d1054feada41871a2fa88257d1345bda4.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 6" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ffd0e9/937a207d1054feada41871a2fa88257d1345bda4.html">Open in a new tab</a>
 
 This `h1` element has an empty [accessible name][]. It is nonetheless rendered by breaking the flow content, resulting in a confusing situation for sighted users.
 
@@ -214,7 +214,7 @@ This `h1` element has an empty [accessible name][]. It is nonetheless rendered b
 
 #### Failed Example 7
 
-<a class="example-link" title="Failed Example 7" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ffd0e9/7c593a17ea2affd0b822f3e66b9e804f00529f0a.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 7" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ffd0e9/7c593a17ea2affd0b822f3e66b9e804f00529f0a.html">Open in a new tab</a>
 
 This `div` element with a [semantic role][] of `heading` has an empty [accessible name][] (and content). It is nonetheless rendered due to its styling, resulting in a confusing situation for sighted users.
 
@@ -224,7 +224,7 @@ This `div` element with a [semantic role][] of `heading` has an empty [accessibl
 
 #### Failed Example 8
 
-<a class="example-link" title="Failed Example 8" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ffd0e9/0bf7d49ddf99066b816fe42e5cd827a15c7ad24d.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 8" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ffd0e9/0bf7d49ddf99066b816fe42e5cd827a15c7ad24d.html">Open in a new tab</a>
 
 This `h1` element has an [explicit role][] of `none`. However, the [global][] [property][] `aria-label` is specified. Thus it has a [semantic role][] of `heading` due to [Presentational Roles Conflict Resolution][]. It has an empty [accessible name][] given by its `aria-label` attribute and the lack of accessible content to fallback to.
 
@@ -236,7 +236,7 @@ This `h1` element has an [explicit role][] of `none`. However, the [global][] [p
 
 #### Inapplicable Example 1
 
-<a class="example-link" title="Inapplicable Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ffd0e9/8f610518a287c932742748371cd51d543bb506f9.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ffd0e9/8f610518a287c932742748371cd51d543bb506f9.html">Open in a new tab</a>
 
 There is no [semantic][semantic role] `heading` element.
 
@@ -246,7 +246,7 @@ There is no [semantic][semantic role] `heading` element.
 
 #### Inapplicable Example 2
 
-<a class="example-link" title="Inapplicable Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ffd0e9/ed1daf488ef94f266fdd2a4c6c4ed016024beb14.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ffd0e9/ed1daf488ef94f266fdd2a4c6c4ed016024beb14.html">Open in a new tab</a>
 
 This `h1` element is not [included in the accessibility tree][].
 
@@ -378,11 +378,7 @@ The _WAI ARIA Specifications_ group both the WAI ARIA W3C Recommendation and ARI
 
 **Note:** depending on the type of content being evaluated, part of the specifications might be irrelevant and should be ignored.
 
-{% include_relative _implementation-proposed.md %}
-
-## Changelog
-
-This is the first version of this ACT rule.
+{% include_relative _versions.md %}
 
 [accessibility support base line]: https://www.w3.org/TR/WCAG-EM/#step1c 'Definition of accessibility support base line'
 [accessible name and description computation]: https://www.w3.org/TR/accname

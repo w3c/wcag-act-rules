@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 3e12e1</p>
-  <p><strong>Date:</strong> Updated 13 June 2022</p>
+  <p><strong>Date:</strong> Updated 21 June 2022</p>
   <p><strong>Authors:</strong> <a href="https://github.com/Jym77">Jean-Yves Moyen</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
   
@@ -21,7 +21,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that repeated blocks of content are collapsible
-  last_modified: 13 June 2022
+  last_modified: 21 June 2022
 ---
 
 ## Applicability
@@ -84,7 +84,7 @@ The following aspects are required in using this rule.
 
 #### Passed Example 1
 
-<a class="example-link" title="Passed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/3e12e1/fa30de1d9c2d3a313f7f18bc4e2cf6843ea10a89.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/3e12e1/fa30de1d9c2d3a313f7f18bc4e2cf6843ea10a89.html">Open in a new tab</a>
 
 This document has a link at the start of the document to toggle the [visibility][visible] and [inclusion in the accessibility tree][included in the accessibility tree] of the navigational [block of repeated content][].
 
@@ -116,7 +116,7 @@ This document has a link at the start of the document to toggle the [visibility]
 
 #### Passed Example 2
 
-<a class="example-link" title="Passed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/3e12e1/01ade7567b9b4be243f4b693e30071596c2f515f.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/3e12e1/01ade7567b9b4be243f4b693e30071596c2f515f.html">Open in a new tab</a>
 
 This document has a button at the start of the document to toggle the [visibility][visible] and [inclusion in the accessibility tree][included in the accessibility tree] of both the complementary and the navigational [blocks of repeated content][block of repeated content].
 
@@ -152,7 +152,7 @@ This document has a button at the start of the document to toggle the [visibilit
 
 #### Passed Example 3
 
-<a class="example-link" title="Passed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/3e12e1/be05e4899572cc95d2a56d058ef873f90a979fe2.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/3e12e1/be05e4899572cc95d2a56d058ef873f90a979fe2.html">Open in a new tab</a>
 
 This document has two dedicated [instruments][instrument] to toggle the [visibility][visible] and [inclusion in the accessibility tree][included in the accessibility tree] of the complementary and the navigational [blocks of repeated content][block of repeated content] respectively.
 
@@ -189,7 +189,7 @@ This document has two dedicated [instruments][instrument] to toggle the [visibil
 
 #### Passed Example 4
 
-<a class="example-link" title="Passed Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/3e12e1/61c51eb3361b472d8bd7cecd205db7bf895f484f.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/3e12e1/61c51eb3361b472d8bd7cecd205db7bf895f484f.html">Open in a new tab</a>
 
 This document has a button at the start of the document to toggle the [visibility][visible] and [inclusion in the accessibility tree][included in the accessibility tree] of the navigational [block of repeated content][]. The button is only [visible][] when [focused][].
 
@@ -224,7 +224,7 @@ This document has a button at the start of the document to toggle the [visibilit
 
 #### Failed Example 1
 
-<a class="example-link" title="Failed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/3e12e1/14be25f3e1bf5dd66841605f10bd5506a11ba99b.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/3e12e1/14be25f3e1bf5dd66841605f10bd5506a11ba99b.html">Open in a new tab</a>
 
 This document has no [instrument][] to toggle the navigational [block of repeated content][].
 
@@ -253,7 +253,7 @@ This document has no [instrument][] to toggle the navigational [block of repeate
 
 #### Failed Example 2
 
-<a class="example-link" title="Failed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/3e12e1/d35162650d0b57b9dd2f8ff15a2103c21f194333.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/3e12e1/d35162650d0b57b9dd2f8ff15a2103c21f194333.html">Open in a new tab</a>
 
 This document has an [instrument][] to toggle [visibility][visible] of the navigational [block of repeated content][], but none to toggle its [inclusion in the accessibility tree][included in the accessibility tree].
 
@@ -286,7 +286,7 @@ This document has an [instrument][] to toggle [visibility][visible] of the navig
 
 #### Failed Example 3
 
-<a class="example-link" title="Failed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/3e12e1/722992ea933164b6d6dbe5eedc21e6ea5fa42262.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/3e12e1/722992ea933164b6d6dbe5eedc21e6ea5fa42262.html">Open in a new tab</a>
 
 This document has an instrument to toggle the [inclusion on the accessibility tree][included in the accessibility tree] of the [block of repeated content][], but none to toggle its [visibility][visible].
 
@@ -320,7 +320,7 @@ This document has an instrument to toggle the [inclusion on the accessibility tr
 
 #### Inapplicable Example 1
 
-<a class="example-link" title="Inapplicable Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/3e12e1/ecc29b73e37b6a125b3fd9767068dcaa368d467a.svg">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/3e12e1/ecc29b73e37b6a125b3fd9767068dcaa368d467a.svg">Open in a new tab</a>
 
 This [document][] is not an [HTML web page][].
 
@@ -501,11 +501,7 @@ An _HTML [web page](https://www.w3.org/TR/WCAG21/#dfn-web-page-s)_ is the set of
 
 **Note:** Although web pages as defined here are sets of [documents](https://dom.spec.whatwg.org/#concept-document) (and do not contain other kind of nodes), one can abusively write that any node is "in a web page" if it is a [shadow-including descendant](https://dom.spec.whatwg.org/#concept-shadow-including-descendant) of a [document](https://dom.spec.whatwg.org/#concept-document) that is part of that web page.
 
-{% include_relative _implementation-proposed.md %}
-
-## Changelog
-
-This is the first version of this ACT rule.
+{% include_relative _versions.md %}
 
 [accessibility support base line]: https://www.w3.org/TR/WCAG-EM/#step1c 'Definition of accessibility support base line'
 [activated]: https://html.spec.whatwg.org/#activation

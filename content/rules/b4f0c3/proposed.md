@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> b4f0c3</p>
-  <p><strong>Date:</strong> Updated 30 May 2022</p>
+  <p><strong>Date:</strong> Updated 21 June 2022</p>
   <p><strong>Authors:</strong> <a href="https://github.com/audreymaniez">Audrey Maniez</a>, <a href="https://github.com/jkodu">Jey Nandakumar</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -19,7 +19,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that the `meta` element retains the user agent ability to zoom.
-  last_modified: 30 May 2022
+  last_modified: 21 June 2022
   scs_tested:
     - handle: Resize text
       num: 1.4.4
@@ -90,7 +90,7 @@ The following aspects are required in using this rule.
 
 #### Passed Example 1
 
-<a class="example-link" title="Passed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/3a2c170ad31b2c0c387e06c8a3bf7e5409dcdb60.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/3a2c170ad31b2c0c387e06c8a3bf7e5409dcdb60.html">Open in a new tab</a>
 
 This viewport `meta` element does not prevent user scaling because it does not specify the `maximum-scale` and `user-scalable` values.
 
@@ -110,7 +110,7 @@ This viewport `meta` element does not prevent user scaling because it does not s
 
 #### Passed Example 2
 
-<a class="example-link" title="Passed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/312146d84331c7214ed6919391ad955098eff516.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/312146d84331c7214ed6919391ad955098eff516.html">Open in a new tab</a>
 
 This viewport `meta` element does not prevent user scaling because it has `user-scalable` set to `yes`.
 
@@ -130,7 +130,7 @@ This viewport `meta` element does not prevent user scaling because it has `user-
 
 #### Passed Example 3
 
-<a class="example-link" title="Passed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/d97325fca0ca13bdc585ee4128c4657522bded38.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/d97325fca0ca13bdc585ee4128c4657522bded38.html">Open in a new tab</a>
 
 This viewport `meta` element allows users to scale content up to 600% because it has `maximum-scale` set to 6.0.
 
@@ -150,7 +150,7 @@ This viewport `meta` element allows users to scale content up to 600% because it
 
 #### Passed Example 4
 
-<a class="example-link" title="Passed Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/a36115d7110156fde2fe6187dbb49402096f82fb.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/a36115d7110156fde2fe6187dbb49402096f82fb.html">Open in a new tab</a>
 
 This viewport `meta` element does not prevent user scaling because it does not specify the `maximum-scale` and `user-scalable` values.
 
@@ -170,7 +170,7 @@ This viewport `meta` element does not prevent user scaling because it does not s
 
 #### Passed Example 5
 
-<a class="example-link" title="Passed Example 5" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/4ade33e41dda291c9078e56ca2a95c4825dbc1fe.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/4ade33e41dda291c9078e56ca2a95c4825dbc1fe.html">Open in a new tab</a>
 
 This viewport `meta` element does not prevent user scaling because it has `maximum-scale` set to -1 which results in this value being dropped.
 
@@ -192,7 +192,7 @@ This viewport `meta` element does not prevent user scaling because it has `maxim
 
 #### Failed Example 1
 
-<a class="example-link" title="Failed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/accc6adf094723693593ca3c6308f81945930dae.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/accc6adf094723693593ca3c6308f81945930dae.html">Open in a new tab</a>
 
 This viewport `meta` element prevents user scaling because it has `user-scalable` set to `no`.
 
@@ -212,7 +212,7 @@ This viewport `meta` element prevents user scaling because it has `user-scalable
 
 #### Failed Example 2
 
-<a class="example-link" title="Failed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/a1240b31761f65c92a8f6d08ed7105ee822d0ebc.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/a1240b31761f65c92a8f6d08ed7105ee822d0ebc.html">Open in a new tab</a>
 
 This viewport `meta` element prevents users to scale content up to 200% because it has `maximum-scale` set to 1.5.
 
@@ -232,7 +232,7 @@ This viewport `meta` element prevents users to scale content up to 200% because 
 
 #### Failed Example 3
 
-<a class="example-link" title="Failed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/c7e4980eb42d0b138684ac1e28318a197d86ccfc.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/c7e4980eb42d0b138684ac1e28318a197d86ccfc.html">Open in a new tab</a>
 
 This viewport `meta` element prevents users to scale content up to 200% because it has `maximum-scale` set to 1.0.
 
@@ -252,7 +252,7 @@ This viewport `meta` element prevents users to scale content up to 200% because 
 
 #### Failed Example 4
 
-<a class="example-link" title="Failed Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/e5695989a43a3297cf6b78182014c7a3848ff7e1.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/e5695989a43a3297cf6b78182014c7a3848ff7e1.html">Open in a new tab</a>
 
 This viewport `meta` element prevents users to scale content up to 200% because it has `maximum-scale` set to `yes` which translates to 1.0.
 
@@ -274,7 +274,7 @@ This viewport `meta` element prevents users to scale content up to 200% because 
 
 #### Inapplicable Example 1
 
-<a class="example-link" title="Inapplicable Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/824fa57ab563edbac93384a58e21b3045bd71c65.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/824fa57ab563edbac93384a58e21b3045bd71c65.html">Open in a new tab</a>
 
 There is no viewport `meta` element.
 
@@ -294,7 +294,7 @@ There is no viewport `meta` element.
 
 #### Inapplicable Example 2
 
-<a class="example-link" title="Inapplicable Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/fe4a93d2631e7c54f1c00e3c56e04c927b5144c1.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/fe4a93d2631e7c54f1c00e3c56e04c927b5144c1.html">Open in a new tab</a>
 
 This viewport `meta` element does not have a `content` attribute.
 
@@ -353,11 +353,7 @@ Content is considered _visible_ if making it fully transparent would result in a
 
 For more details, see [examples of visible](https://act-rules.github.io/pages/examples/visible/).
 
-{% include_relative _implementation-proposed.md %}
-
-## Changelog
-
-This is the first version of this ACT rule.
+{% include_relative _versions.md %}
 
 [attribute value]: #attribute-value 'Definition of attribute value'
 [boolean attributes]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attributes 'HTML Specification of Boolean Attribute'

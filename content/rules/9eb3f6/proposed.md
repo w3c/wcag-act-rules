@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 9eb3f6</p>
-  <p><strong>Date:</strong> Updated 13 June 2022</p>
+  <p><strong>Date:</strong> Updated 21 June 2022</p>
   <p><strong>Authors:</strong> <a href="https://github.com/Jym77">Jean-Yves Moyen</a>. Previous Authors: <a href="https://github.com/brynanders">Bryn Anderson</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -19,7 +19,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that image elements that use their source filename as their accessible name do so without loss of information to the user.
-  last_modified: 13 June 2022
+  last_modified: 21 June 2022
   scs_tested:
     - handle: Non-text Content
       num: 1.1.1
@@ -114,7 +114,7 @@ The following aspects are required in using this rule.
 
 #### Passed Example 1
 
-<a class="example-link" title="Passed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/9eb3f6/5c17bdea5be543925ab8219c3e5c77f422b70e18.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/9eb3f6/5c17bdea5be543925ab8219c3e5c77f422b70e18.html">Open in a new tab</a>
 
 This `img` element has an [accessible name][] equivalent to the filename (ignoring letter casing). The [accessible name][] accurately describes the image.
 
@@ -126,7 +126,7 @@ This `img` element has an [accessible name][] equivalent to the filename (ignori
 
 #### Passed Example 2
 
-<a class="example-link" title="Passed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/9eb3f6/28ff5fc7b1b6bc9e1b10b71c776449283479f50a.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/9eb3f6/28ff5fc7b1b6bc9e1b10b71c776449283479f50a.html">Open in a new tab</a>
 
 This `img` element has an [accessible name][] equivalent to the filename. Because the image is used in a download link, the presence of the file extension is a relevant part of its description.
 
@@ -140,7 +140,7 @@ This `img` element has an [accessible name][] equivalent to the filename. Becaus
 
 #### Passed Example 3
 
-<a class="example-link" title="Passed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/9eb3f6/84ed84bb6a93a382e2258258d6c27e6eb7bb11e4.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/9eb3f6/84ed84bb6a93a382e2258258d6c27e6eb7bb11e4.html">Open in a new tab</a>
 
 This image button has an [accessible name][] equivalent to the filename. The [accessible name][] accurately describes the purpose of the button.
 
@@ -152,7 +152,7 @@ This image button has an [accessible name][] equivalent to the filename. The [ac
 
 #### Passed Example 4
 
-<a class="example-link" title="Passed Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/9eb3f6/c45ac9a2b8c8a35f149e210bd983c034b7fd8568.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/9eb3f6/c45ac9a2b8c8a35f149e210bd983c034b7fd8568.html">Open in a new tab</a>
 
 This `img` element has an [accessible name][] equivalent to the filename. The [accessible name][] accurately describes the image in the language of the element (French, same as the language of the page).
 
@@ -164,7 +164,7 @@ This `img` element has an [accessible name][] equivalent to the filename. The [a
 
 #### Passed Example 5
 
-<a class="example-link" title="Passed Example 5" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/9eb3f6/b278b4d6641d2c526dcc5c1bc07df5e9797807be.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/9eb3f6/b278b4d6641d2c526dcc5c1bc07df5e9797807be.html">Open in a new tab</a>
 
 This `img` element has 3 [image sources][] for [device-pixel-ratio][]-based selection, through its `src` and `srcset` attributes. Its [accessible name][] is equivalent to the [filename][] of one of its [image sources][] and accurately describes each of them.
 
@@ -183,7 +183,7 @@ This `img` element has 3 [image sources][] for [device-pixel-ratio][]-based sele
 
 #### Passed Example 6
 
-<a class="example-link" title="Passed Example 6" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/9eb3f6/cb7f67717f4bc48b7d8a633428b6a13dff3640b9.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 6" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/9eb3f6/cb7f67717f4bc48b7d8a633428b6a13dff3640b9.html">Open in a new tab</a>
 
 This `img` element has 3 [image sources][] for [Art direction][]-based selection, through its `src` attribute and its siblings `source` elements with the same `picture` parent. Its [accessible name][] is equivalent to the [filename][] of one of its [image sources][] and accurately describes each of them.
 
@@ -201,7 +201,7 @@ This `img` element has 3 [image sources][] for [Art direction][]-based selection
 
 #### Failed Example 1
 
-<a class="example-link" title="Failed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/9eb3f6/50275690fd38aa83f817b3f6f20862778ec8c306.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/9eb3f6/50275690fd38aa83f817b3f6f20862778ec8c306.html">Open in a new tab</a>
 
 This `img` element has [accessible name][] matching the image filename (ignoring letter casing). The name does not describe the image.
 
@@ -213,7 +213,7 @@ This `img` element has [accessible name][] matching the image filename (ignoring
 
 #### Failed Example 2
 
-<a class="example-link" title="Failed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/9eb3f6/74b04ed600b42949e74c43d4405658d704080603.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/9eb3f6/74b04ed600b42949e74c43d4405658d704080603.html">Open in a new tab</a>
 
 This `img` element has [accessible name][] matching the image filename. The name is just a checksum and does not describe the image.
 
@@ -228,7 +228,7 @@ This `img` element has [accessible name][] matching the image filename. The name
 
 #### Failed Example 3
 
-<a class="example-link" title="Failed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/9eb3f6/5ca9a034544ae02b83dba27ed9beb61626c8eedf.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/9eb3f6/5ca9a034544ae02b83dba27ed9beb61626c8eedf.html">Open in a new tab</a>
 
 This `img` element has [accessible name][] matching the image filename. The presence of the file extension in the [accessible name][] is confusing and results in the [accessible name][] not accurately describing the image.
 
@@ -240,7 +240,7 @@ This `img` element has [accessible name][] matching the image filename. The pres
 
 #### Failed Example 4
 
-<a class="example-link" title="Failed Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/9eb3f6/516d5e4c0c6b286c18be2830e9866e4eb0f7c74c.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/9eb3f6/516d5e4c0c6b286c18be2830e9866e4eb0f7c74c.html">Open in a new tab</a>
 
 This image button has an [accessible name][] matching the filename. The presence of the file extension in the [accessible name][] is confusing and results in the [accessible name][] not accurately describing the image.
 
@@ -252,7 +252,7 @@ This image button has an [accessible name][] matching the filename. The presence
 
 #### Failed Example 5
 
-<a class="example-link" title="Failed Example 5" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/9eb3f6/45c0f9b5c73d87387d8f8147c9530dcd3734e09b.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/9eb3f6/45c0f9b5c73d87387d8f8147c9530dcd3734e09b.html">Open in a new tab</a>
 
 This `img` element has 3 [image sources][] for [Art direction][]-based selection, through its `src` attribute and its siblings `source` elements with the same `picture` parent. Its [accessible name][] is equivalent to the [filename][] of one of its [image sources][] but does not describe the second one (`pain`).
 
@@ -270,7 +270,7 @@ This `img` element has 3 [image sources][] for [Art direction][]-based selection
 
 #### Inapplicable Example 1
 
-<a class="example-link" title="Inapplicable Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/9eb3f6/8d9dd9f9edfc704c311188cdf7016534e278608f.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/9eb3f6/8d9dd9f9edfc704c311188cdf7016534e278608f.html">Open in a new tab</a>
 
 This `img` element has a [semantic role][] of `presentation`, not `img`.
 
@@ -282,7 +282,7 @@ This `img` element has a [semantic role][] of `presentation`, not `img`.
 
 #### Inapplicable Example 2
 
-<a class="example-link" title="Inapplicable Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/9eb3f6/d1403fb1b2324d3f9dc72abf68e388c741dbdacd.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/9eb3f6/d1403fb1b2324d3f9dc72abf68e388c741dbdacd.html">Open in a new tab</a>
 
 This `img` element is not [included in the accessibility tree][].
 
@@ -294,7 +294,7 @@ This `img` element is not [included in the accessibility tree][].
 
 #### Inapplicable Example 3
 
-<a class="example-link" title="Inapplicable Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/9eb3f6/ce487408f8ed7d9948521bf95340851c2e68bcb1.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/9eb3f6/ce487408f8ed7d9948521bf95340851c2e68bcb1.html">Open in a new tab</a>
 
 This `img` element has an [accessible name][] which is not equivalent to the filename.
 
@@ -306,7 +306,7 @@ This `img` element has an [accessible name][] which is not equivalent to the fil
 
 #### Inapplicable Example 4
 
-<a class="example-link" title="Inapplicable Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/9eb3f6/c82793fd4426aaf6e840c5bdb63d5b66a4afc437.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/9eb3f6/c82793fd4426aaf6e840c5bdb63d5b66a4afc437.html">Open in a new tab</a>
 
 This `img` element has an [accessible name][] which is not equivalent to the filename because the `aria-label` value takes precedence over the `alt` value in the [accessible name][] calculation.
 
@@ -454,11 +454,7 @@ This includes:
   - Carriage Return (CR) (U+000D)
   - Next Line (NEL) (U+0085)
 
-{% include_relative _implementation-proposed.md %}
-
-## Changelog
-
-This is the first version of this ACT rule.
+{% include_relative _versions.md %}
 
 [accessibility support base line]: https://www.w3.org/TR/WCAG-EM/#step1c 'Definition of accessibility support base line'
 [accessible name and description computation]: https://www.w3.org/TR/accname 'Accessible Name and Description Computation'

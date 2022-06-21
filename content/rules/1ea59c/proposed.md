@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 1ea59c</p>
-  <p><strong>Date:</strong> Updated 30 May 2022</p>
+  <p><strong>Date:</strong> Updated 21 June 2022</p>
   <p><strong>Authors:</strong> <a href="https://www.linkedin.com/in/brianbors/">Brian Bors</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
   
@@ -21,7 +21,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that non-streaming `video` elements have all visual information also contained in the audio.
-  last_modified: 30 May 2022
+  last_modified: 21 June 2022
 ---
 
 ## Applicability
@@ -107,7 +107,7 @@ The following aspects are required in using this rule.
 
 #### Passed Example 1
 
-<a class="example-link" title="Passed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/1ea59c/830584542b47beaac2df52e84ceff7530be043fb.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/1ea59c/830584542b47beaac2df52e84ceff7530be043fb.html">Open in a new tab</a>
 
 A video element with a voiceover that describes the visual information.
 
@@ -122,7 +122,7 @@ A video element with a voiceover that describes the visual information.
 
 #### Passed Example 2
 
-<a class="example-link" title="Passed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/1ea59c/ecb1f00a8995a65865048e694d27515a7d7fc138.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/1ea59c/ecb1f00a8995a65865048e694d27515a7d7fc138.html">Open in a new tab</a>
 
 A video element with an audio description.
 
@@ -154,7 +154,7 @@ A video element with an audio description.
 
 #### Failed Example 1
 
-<a class="example-link" title="Failed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/1ea59c/b0ac8ea6b081f130102db50c239cc7e44ea47ec8.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/1ea59c/b0ac8ea6b081f130102db50c239cc7e44ea47ec8.html">Open in a new tab</a>
 
 A video element without an audio description.
 
@@ -169,7 +169,7 @@ A video element without an audio description.
 
 #### Failed Example 2
 
-<a class="example-link" title="Failed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/1ea59c/4095c53d7b6550e5af6a9edf43ec7c803bc1e462.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/1ea59c/4095c53d7b6550e5af6a9edf43ec7c803bc1e462.html">Open in a new tab</a>
 
 A video element with an incorrect audio description.
 
@@ -184,7 +184,7 @@ A video element with an incorrect audio description.
 
 #### Failed Example 3
 
-<a class="example-link" title="Failed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/1ea59c/c98f35f1ae4f08f277beef585a48a7d7dfaa35ac.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/1ea59c/c98f35f1ae4f08f277beef585a48a7d7dfaa35ac.html">Open in a new tab</a>
 
 A video element with an incorrect audio description.
 
@@ -216,7 +216,7 @@ A video element with an incorrect audio description.
 
 #### Inapplicable Example 1
 
-<a class="example-link" title="Inapplicable Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/1ea59c/8664da01669e891e6f0aa73cd85e71277961cc4c.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/1ea59c/8664da01669e891e6f0aa73cd85e71277961cc4c.html">Open in a new tab</a>
 
 A video element without audio.
 
@@ -231,7 +231,7 @@ A video element without audio.
 
 #### Inapplicable Example 2
 
-<a class="example-link" title="Inapplicable Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/1ea59c/1b605662e74aa7411e29dc56dfa4530efe95ae67.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/1ea59c/1b605662e74aa7411e29dc56dfa4530efe95ae67.html">Open in a new tab</a>
 
 A video element that is not [visible][].
 
@@ -272,10 +272,6 @@ Content is considered _visible_ if making it fully transparent would result in a
 
 For more details, see [examples of visible](https://act-rules.github.io/pages/examples/visible/).
 
-{% include_relative _implementation-proposed.md %}
-
-## Changelog
-
-This is the first version of this ACT rule.
+{% include_relative _versions.md %}
 
 [visible]: #visible 'Definition of visible'

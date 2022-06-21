@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 5c01ea</p>
-  <p><strong>Date:</strong> Updated 13 June 2022</p>
+  <p><strong>Date:</strong> Updated 21 June 2022</p>
   <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/Jym77">Jean-Yves Moyen</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
   
@@ -21,7 +21,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that WAI-ARIA states or properties are allowed for the element they are specified on.
-  last_modified: 13 June 2022
+  last_modified: 21 June 2022
 ---
 
 ## Applicability
@@ -106,7 +106,7 @@ The following aspects are required in using this rule.
 
 #### Passed Example 1
 
-<a class="example-link" title="Passed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/4240276511703c9bfa881ac80f7c0af5c92c97cc.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/4240276511703c9bfa881ac80f7c0af5c92c97cc.html">Open in a new tab</a>
 
 The `aria-pressed` [state][] is [supported][] for a [semantic][semantic role] `button`, which is the [implicit role][] for `button` elements.
 
@@ -116,7 +116,7 @@ The `aria-pressed` [state][] is [supported][] for a [semantic][semantic role] `b
 
 #### Passed Example 2
 
-<a class="example-link" title="Passed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/f91d77e96c069380252b674faaf08eecab375503.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/f91d77e96c069380252b674faaf08eecab375503.html">Open in a new tab</a>
 
 The `aria-pressed` [state][] is [supported][] for the [semantic][semantic role] `button`, which is the [explicit role][] of this `div` element.
 
@@ -126,7 +126,7 @@ The `aria-pressed` [state][] is [supported][] for the [semantic][semantic role] 
 
 #### Passed Example 3
 
-<a class="example-link" title="Passed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/fec2c81ca23a9647c00ccd1fb5e74d06841ed6fa.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/fec2c81ca23a9647c00ccd1fb5e74d06841ed6fa.html">Open in a new tab</a>
 
 The `aria-busy` [state][] is a [global][] [state][] that is [supported][] by all elements, even without any [semantic role][].
 
@@ -136,7 +136,7 @@ The `aria-busy` [state][] is a [global][] [state][] that is [supported][] by all
 
 #### Passed Example 4
 
-<a class="example-link" title="Passed Example 4" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/655b73c1435335a6a16852210787dc3621e73cef.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/655b73c1435335a6a16852210787dc3621e73cef.html">Open in a new tab</a>
 
 The `aria-label` [property][] is a [global][] [property][] and thus [inherited][] for all [semantic role][].
 
@@ -146,7 +146,7 @@ The `aria-label` [property][] is a [global][] [property][] and thus [inherited][
 
 #### Passed Example 5
 
-<a class="example-link" title="Passed Example 5" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/b67ab9861299ffa342880729ee1dbb43d2068a6b.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/b67ab9861299ffa342880729ee1dbb43d2068a6b.html">Open in a new tab</a>
 
 The `aria-checked` [state][] is [required][] for the [semantic][semantic role] `checkbox`.
 
@@ -156,7 +156,7 @@ The `aria-checked` [state][] is [required][] for the [semantic][semantic role] `
 
 #### Passed Example 6
 
-<a class="example-link" title="Passed Example 6" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/edd0f2ba6aa31bc4dac2f057090eec3334e62c6d.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 6" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/edd0f2ba6aa31bc4dac2f057090eec3334e62c6d.html">Open in a new tab</a>
 
 The `aria-controls` [property][] is [required][] for the [semantic][semantic role] `combobox`.
 
@@ -166,7 +166,7 @@ The `aria-controls` [property][] is [required][] for the [semantic][semantic rol
 
 #### Passed Example 7
 
-<a class="example-link" title="Passed Example 7" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/e81a1a6206e030af2cba2ebf4b3a7c86e1225b5b.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 7" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/e81a1a6206e030af2cba2ebf4b3a7c86e1225b5b.html">Open in a new tab</a>
 
 The `aria-controls` [property][] is [required][] for the [semantic][semantic role] `combobox`. [WAI-ARIA states and properties][wai-aria state or property] with empty value are still applicable to this rule.
 
@@ -176,7 +176,7 @@ The `aria-controls` [property][] is [required][] for the [semantic][semantic rol
 
 #### Passed Example 8
 
-<a class="example-link" title="Passed Example 8" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/2b5e0b61e7317a251c5d0d74ac0d0cad202adacc.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 8" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/2b5e0b61e7317a251c5d0d74ac0d0cad202adacc.html">Open in a new tab</a>
 
 The `aria-controls` [property][] is [required][] for the [semantic][semantic role] `combobox`. [WAI-ARIA states and properties][wai-aria state or property] with empty value (specified as an empty string) are still applicable to this rule.
 
@@ -186,7 +186,7 @@ The `aria-controls` [property][] is [required][] for the [semantic][semantic rol
 
 #### Passed Example 9
 
-<a class="example-link" title="Passed Example 9" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/6c0718872b1d915b49c48fe135b9fc251bcff561.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 9" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/6c0718872b1d915b49c48fe135b9fc251bcff561.html">Open in a new tab</a>
 
 The `aria-label` [property][] is [global][] and thus [inherited][] for all [semantic role][], including the ones from the [WAI-ARIA Graphics Module](https://www.w3.org/TR/graphics-aria-1.0). This rule is also applicable to SVG elements.
 
@@ -198,7 +198,7 @@ The `aria-label` [property][] is [global][] and thus [inherited][] for all [sema
 
 #### Passed Example 10
 
-<a class="example-link" title="Passed Example 10" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/d934cb530f9bd82f0c84615dfc405efad9b1fc69.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 10" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/d934cb530f9bd82f0c84615dfc405efad9b1fc69.html">Open in a new tab</a>
 
 This `button` element has an [explicit role][] of `none`. However, it is [focusable][] (by default). Thus it has a [semantic role][] of `button` due to [Presentational Roles Conflict Resolution][]. The `aria-pressed` [state][] is [supported][] for the `button` role.
 
@@ -208,7 +208,7 @@ This `button` element has an [explicit role][] of `none`. However, it is [focusa
 
 #### Passed Example 11
 
-<a class="example-link" title="Passed Example 11" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/0401164ef77abe96fd6502d35ed04952a057a8fe.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 11" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/0401164ef77abe96fd6502d35ed04952a057a8fe.html">Open in a new tab</a>
 
 This `input` element does not have an [explicit role][] of `textbox`, but the `aria-required` property may be used on an `input` element with a `type` [attribute value][] of `password`.
 
@@ -220,7 +220,7 @@ This `input` element does not have an [explicit role][] of `textbox`, but the `a
 
 #### Failed Example 1
 
-<a class="example-link" title="Failed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/5e4eedbbef33766005c6f92c3dede1b1b40a2dac.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/5e4eedbbef33766005c6f92c3dede1b1b40a2dac.html">Open in a new tab</a>
 
 The `aria-sort` [property][] is neither [inherited][], [supported][], nor [required][] for the [semantic][semantic role] `button`, which is the [implicit role][] for the `button` element.
 
@@ -230,7 +230,7 @@ The `aria-sort` [property][] is neither [inherited][], [supported][], nor [requi
 
 #### Failed Example 2
 
-<a class="example-link" title="Failed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/1449cc0526959d274a89345e9b479846577aac5c.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/1449cc0526959d274a89345e9b479846577aac5c.html">Open in a new tab</a>
 
 The `aria-orientation` property may not be used on `audio` element, nor it can be used on `application` (the [semantic role][] for which [inherited][], [supported][], or [required][] [states][state] or [properties][property] are also applicable to `audio` element).
 
@@ -242,7 +242,7 @@ The `aria-orientation` property may not be used on `audio` element, nor it can b
 
 #### Inapplicable Example 1
 
-<a class="example-link" title="Inapplicable Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/a7aac71114d641a7bbeb7c959779d34321a57213.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/a7aac71114d641a7bbeb7c959779d34321a57213.html">Open in a new tab</a>
 
 This `div` element has no [WAI-ARIA state or property][].
 
@@ -252,7 +252,7 @@ This `div` element has no [WAI-ARIA state or property][].
 
 #### Inapplicable Example 2
 
-<a class="example-link" title="Inapplicable Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/e579177e7523653931efe361e37df7766f37b712.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/e579177e7523653931efe361e37df7766f37b712.html">Open in a new tab</a>
 
 This `div` element is not [included in the accessibility tree][], hence its [WAI-ARIA state or property][] is not checked.
 
@@ -377,11 +377,7 @@ The _WAI ARIA Specifications_ group both the WAI ARIA W3C Recommendation and ARI
 
 **Note:** depending on the type of content being evaluated, part of the specifications might be irrelevant and should be ignored.
 
-{% include_relative _implementation-proposed.md %}
-
-## Changelog
-
-This is the first version of this ACT rule.
+{% include_relative _versions.md %}
 
 [accessibility support base line]: https://www.w3.org/TR/WCAG-EM/#step1c 'Definition of accessibility support base line'
 [attribute value]: #attribute-value 'Definition of attribute value'
