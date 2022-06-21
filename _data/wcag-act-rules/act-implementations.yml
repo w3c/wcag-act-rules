@@ -28,9 +28,8 @@
   jsonReport: https://raw.githubusercontent.com/Siteimprove/alfa-act-r/main/reports/alfa-w3c.json
 
 - name: Axe-core
-  homepage: https://www.npmjs.com/package/axe-core
+  homepage: https://www.npmjs.com/package/axe-core/
   version: 4.5.0-prerelease
-  homepage: https://github.com/dequelabs/axe-core/
   vendor: Deque Systems
   vendorHomepage: https://deque.com/
   uniqueKey: axe-core
