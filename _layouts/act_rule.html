@@ -23,3 +23,119 @@ layout: standalone_resource
 {{ page.rule_meta.description | markdownify }}
 
 {{ content }}
+
+{%- assign ruleId = page.rule_meta.id %}
+{%- assign siteData = site.data.wcag-act-rules %}
+
+{%- if ruleId %}
+<h2>Rule Versions</h2>
+{%- assign ruleVersions = siteData.rule-versions[ruleId] %}
+{% if ruleVersions %}
+<ol>
+  {%- for ruleVersion in ruleVersions %}
+  <li>
+    {%- capture versionTitle %}
+      {%- if ruleVersion.file contains 'proposed' %} 
+        Proposed version, {{ ruleVersion.w3cDate }}
+      {%- elsif ruleVersion.file contains 'index' %}
+        Latest version, {{ ruleVersion.w3cDate }}
+      {%- else %}
+        {{ ruleVersion.w3cDate }} version
+      {%- endif %}
+    {%- endcapture %}
+    {%- if page.github.path contains ruleVersion.file %}
+      {{ versionTitle }}
+    {%- else %}
+      <a href="{{
+        '/standards-guidelines/act/rules/' | append: ruleVersion.url | relative_url
+      }}">{{ versionTitle }}</a>
+    {%- endif %}
+    {%- unless forloop.last %}
+      {%- assign baseUrl = 'https://www.w3.org/WAI/standards-guidelines/act/rules/' %}
+      {%- assign doc1 = baseUrl | append: ruleVersions[forloop.index].url | url_encode %}
+      {%- assign doc2 = baseUrl | append: ruleVersions[forloop.index0].url | url_encode %}
+      (<a target="_blank" href="{{ 'https://services.w3.org/htmldiff?doc1='
+        | append: doc1 | append: '&doc2=' | append: doc2
+      }}">compare</a>)
+    {%- endunless %}
+    {%- if ruleVersion.changes %}<ul>
+      {%- for change in ruleVersion.changes %}
+        <li>{{ change }}</li>
+      {%- endfor %}
+    </ul>{% endif %}
+  </li>
+  {%- endfor %}
+</ol>
+{%- else %}
+<p>This is the first version of this ACT rule.</p>
+{%- endif %}
+{%- endif %}
+
+
+{%- if ruleId and page.github.path contains "/index.md" or page.github.path contains "/proposed.md" %}
+{%- assign implementations = siteData.act-implementations | sort: "name" %}
+{%- comment %}<!--
+  The following capture group is used to create a list of implementations
+  that are consistent or partially consistent. This is needed for the
+  "implementationKeys.size == 0" statement. Liquid has no other way to do this.
+-->{% endcomment %}
+{%- capture implementationString %}
+  {%- for implementation in implementations %}
+    {%- assign report = siteData.implementations[implementation.uniqueKey] %}
+    {%- assign ruleMapping = report.actRuleMapping | where: "ruleId", ruleId | first %}
+    {%- if ruleMapping.consistency %}
+      {{- implementation.uniqueKey }},
+    {%- endif %}
+  {%- endfor %}
+{%- endcapture %}
+{% assign implementationKeys = implementationString | split: "," | compact %}
+
+<h2>Implementations</h2>
+{% if implementationKeys.size == 0 %}
+  <p>There are currently no known implementations for this rule.
+    If you would like to contribute an implementation, please read the 
+    <a href="{{ '/standards-guidelines/act/implementations/' | relative_url }}">
+      ACT Implementations page
+    </a> for details.
+  </p>
+
+{% else %}
+  <p>This section is not part of the official rule. It is populated dynamically and 
+    not accounted for in the change history or the last modified date.</p>
+  <table class="act-implementations">
+    <thead> 
+      <tr>
+        <th>Implementation</th>
+        <th>Type</th>
+        <th>Consistency</th>
+        <th>Report</th>
+      </tr>
+    </thead>
+    <tbody>
+      {%- for implementationKey in implementationKeys %}
+        {%- assign report = siteData.implementations[implementationKey] %}
+        {%- assign ruleMapping = report.actRuleMapping | where: "ruleId", ruleId | first %}
+        {%- assign implementation = implementations | where: "uniqueKey", implementationKey | first %}
+        <tr>
+          <td>{{ implementation.name }}
+            {%- if report.version %} {{ report.version }}{% else %} {{ implementation.version }}{% endif -%}
+          </td>
+          <td>{{ implementation.type }}</td>
+          <td>{% if ruleMapping.consistency == 'complete' %}
+            Consistent {% else %} Partial
+          {% endif %}</td>
+          <td><a href="{{
+            '/standards-guidelines/act/implementations/' 
+              | append: implementation.uniqueKey 
+              | append: "#breakdown-"
+              | append: ruleId
+              | relative_url
+          }}"><img alt="{{ implementation.name }} Report" src="{{
+            '/content-assets/wcag-act-rules/bar-chart-fill.svg' | relative_url
+          }}" /></a></td>
+        </tr>
+      {%- endfor %}
+    </tbody>
+  </table>
+{% endif %}
+{% endif %}
