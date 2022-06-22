@@ -24,8 +24,6 @@ layout: standalone_resource
 
 {{ content }}
 
-{{ page.rule_versions | inspect }}
-
 {%- assign ruleId = page.rule_meta.id -%}
 {%- assign siteData = site.data.wcag-act-rules %}
 {%- assign ruleVersions = siteData.rule-versions[ruleId] %}
@@ -37,13 +35,13 @@ layout: standalone_resource
   {%- for ruleVersion in ruleVersions %}
   <li>
     {%- capture versionTitle %}
-      {% if ruleVersion.file contains 'proposed' %} 
-        Proposed version ({{ ruleVersion.w3cDate }})
-      {% elsif ruleVersion.file contains 'index' %}
-        Latest version ({{ ruleVersion.w3cDate }})
-      {% else %}
+      {%- if ruleVersion.file contains 'proposed' %} 
+        Proposed version, {{ ruleVersion.w3cDate }}
+      {%- elsif ruleVersion.file contains 'index' %}
+        Latest version, {{ ruleVersion.w3cDate }}
+      {%- else %}
         {{ ruleVersion.w3cDate }} version
-      {% endif %}
+      {%- endif %}
     {%- endcapture %}
     {%- if page.github.path contains ruleVersion.file %}
       {{ versionTitle }}
@@ -52,16 +50,23 @@ layout: standalone_resource
         '/standards-guidelines/act/rules/' | append: ruleVersion.url | relative_url
       }}">{{ versionTitle }}</a>
     {%- endif %}
-    {% unless forloop.last %}(compare){% endunless %}
+    {%- unless forloop.last %}
+      {%- assign baseUrl = 'https://www.w3.org/WAI/standards-guidelines/act/rules/' %}
+      {%- assign doc1 = baseUrl | append: ruleVersions[forloop.index].url | url_encode %}
+      {%- assign doc2 = baseUrl | append: ruleVersions[forloop.index0].url | url_encode %}
+      (<a target="_blank" href="{{ 'https://services.w3.org/htmldiff?doc1='
+        | append: doc1 | append: '&doc2=' | append: doc2
+      }}">compare</a>)
+    {%- endunless %}
     {%- if ruleVersion.changes %}<ul>
       {%- for change in ruleVersion.changes %}
         <li>{{ change }}</li>
       {%- endfor %}
     </ul>{% endif %}
   </li>
-  {% endfor %}
+  {%- endfor %}
 </ol>
-{% else %}
+{%- else %}
 <p>This is the first version of this ACT rule.</p>
-{% endif %}
-{% endif %}
+{%- endif %}
+{%- endif %}
