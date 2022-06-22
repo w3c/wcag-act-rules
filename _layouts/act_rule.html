@@ -25,3 +25,43 @@ layout: standalone_resource
 {{ content }}
 
 {{ page.rule_versions | inspect }}
+
+{%- assign ruleId = page.rule_meta.id -%}
+{%- assign siteData = site.data.wcag-act-rules %}
+{%- assign ruleVersions = siteData.rule-versions[ruleId] %}
+
+{%- if ruleId %}
+<h2>Rule Versions</h2>
+{% if ruleVersions %}
+<ol>
+  {%- for ruleVersion in ruleVersions %}
+  <li>
+    {%- capture versionTitle %}
+      {% if ruleVersion.file contains 'proposed' %} 
+        Proposed version ({{ ruleVersion.w3cDate }})
+      {% elsif ruleVersion.file contains 'index' %}
+        Latest version ({{ ruleVersion.w3cDate }})
+      {% else %}
+        {{ ruleVersion.w3cDate }} version
+      {% endif %}
+    {%- endcapture %}
+    {%- if page.github.path contains ruleVersion.file %}
+      {{ versionTitle }}
+    {%- else %}
+      <a href="{{
+        '/standards-guidelines/act/rules/' | append: ruleVersion.url | relative_url
+      }}">{{ versionTitle }}</a>
+    {%- endif %}
+    {% unless forloop.last %}(compare){% endunless %}
+    {%- if ruleVersion.changes %}<ul>
+      {%- for change in ruleVersion.changes %}
+        <li>{{ change }}</li>
+      {%- endfor %}
+    </ul>{% endif %}
+  </li>
+  {% endfor %}
+</ol>
+{% else %}
+<p>This is the first version of this ACT rule.</p>
+{% endif %}
+{% endif %}
