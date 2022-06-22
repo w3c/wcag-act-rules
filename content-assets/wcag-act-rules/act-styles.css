@@ -2,6 +2,10 @@ nav.nav li:last-of-type {
   display: none;
 }
 
+a:not([href]) {
+  color: var(--off-black);
+}
+
 table.act-implementations {
   width: 100%;
 }
