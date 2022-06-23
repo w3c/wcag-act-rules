@@ -11,8 +11,8 @@
     "untested": 0
   },
   "proposedRules": {
-    "complete": 13,
-    "partial": 13,
+    "complete": 14,
+    "partial": 12,
     "minimal": 7,
     "inconsistent": 14,
     "untested": 30
@@ -747,7 +747,7 @@
       },
       "coverage": {
         "covered": 15,
-        "untested": 1,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 19
       },
@@ -1034,7 +1034,7 @@
             {
               "procedureName": "valid-lang",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -1218,8 +1218,8 @@
       "ruleName": "Form field has non-empty accessible name",
       "ruleApproved": true,
       "procedureNames": [
-        "aria-input-field-name",
         "label",
+        "aria-input-field-name",
         "select-name"
       ],
       "consistency": "complete",
@@ -1247,15 +1247,15 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "aria-input-field-name",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
               "procedureName": "label",
               "outcomes": [
                 "passed"
+              ]
+            },
+            {
+              "procedureName": "aria-input-field-name",
+              "outcomes": [
+                "inapplicable"
               ]
             },
             {
@@ -1274,15 +1274,15 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "aria-input-field-name",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
               "procedureName": "label",
               "outcomes": [
                 "passed"
+              ]
+            },
+            {
+              "procedureName": "aria-input-field-name",
+              "outcomes": [
+                "inapplicable"
               ]
             },
             {
@@ -1301,13 +1301,13 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "aria-input-field-name",
+              "procedureName": "label",
               "outcomes": [
                 "inapplicable"
               ]
             },
             {
-              "procedureName": "label",
+              "procedureName": "aria-input-field-name",
               "outcomes": [
                 "inapplicable"
               ]
@@ -1328,15 +1328,15 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "aria-input-field-name",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
               "procedureName": "label",
               "outcomes": [
                 "passed"
+              ]
+            },
+            {
+              "procedureName": "aria-input-field-name",
+              "outcomes": [
+                "inapplicable"
               ]
             },
             {
@@ -1355,15 +1355,15 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "aria-input-field-name",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
               "procedureName": "label",
               "outcomes": [
                 "passed"
+              ]
+            },
+            {
+              "procedureName": "aria-input-field-name",
+              "outcomes": [
+                "inapplicable"
               ]
             },
             {
@@ -1382,15 +1382,15 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "aria-input-field-name",
-              "outcomes": [
-                "passed"
-              ]
-            },
-            {
               "procedureName": "label",
               "outcomes": [
                 "inapplicable"
+              ]
+            },
+            {
+              "procedureName": "aria-input-field-name",
+              "outcomes": [
+                "passed"
               ]
             },
             {
@@ -1409,13 +1409,13 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "aria-input-field-name",
+              "procedureName": "label",
               "outcomes": [
                 "inapplicable"
               ]
             },
             {
-              "procedureName": "label",
+              "procedureName": "aria-input-field-name",
               "outcomes": [
                 "inapplicable"
               ]
@@ -1436,15 +1436,15 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "aria-input-field-name",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
               "procedureName": "label",
               "outcomes": [
                 "failed"
+              ]
+            },
+            {
+              "procedureName": "aria-input-field-name",
+              "outcomes": [
+                "inapplicable"
               ]
             },
             {
@@ -1463,15 +1463,15 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "aria-input-field-name",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
               "procedureName": "label",
               "outcomes": [
                 "failed"
+              ]
+            },
+            {
+              "procedureName": "aria-input-field-name",
+              "outcomes": [
+                "inapplicable"
               ]
             },
             {
@@ -1490,15 +1490,15 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "aria-input-field-name",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
               "procedureName": "label",
               "outcomes": [
                 "failed"
+              ]
+            },
+            {
+              "procedureName": "aria-input-field-name",
+              "outcomes": [
+                "inapplicable"
               ]
             },
             {
@@ -1517,13 +1517,13 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "aria-input-field-name",
+              "procedureName": "label",
               "outcomes": [
                 "inapplicable"
               ]
             },
             {
-              "procedureName": "label",
+              "procedureName": "aria-input-field-name",
               "outcomes": [
                 "inapplicable"
               ]
@@ -1544,15 +1544,15 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "aria-input-field-name",
-              "outcomes": [
-                "failed"
-              ]
-            },
-            {
               "procedureName": "label",
               "outcomes": [
                 "inapplicable"
+              ]
+            },
+            {
+              "procedureName": "aria-input-field-name",
+              "outcomes": [
+                "failed"
               ]
             },
             {
@@ -1571,15 +1571,15 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "aria-input-field-name",
-              "outcomes": [
-                "failed"
-              ]
-            },
-            {
               "procedureName": "label",
               "outcomes": [
                 "inapplicable"
+              ]
+            },
+            {
+              "procedureName": "aria-input-field-name",
+              "outcomes": [
+                "failed"
               ]
             },
             {
@@ -1598,15 +1598,15 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "aria-input-field-name",
-              "outcomes": [
-                "failed"
-              ]
-            },
-            {
               "procedureName": "label",
               "outcomes": [
                 "inapplicable"
+              ]
+            },
+            {
+              "procedureName": "aria-input-field-name",
+              "outcomes": [
+                "failed"
               ]
             },
             {
@@ -1625,13 +1625,13 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "aria-input-field-name",
+              "procedureName": "label",
               "outcomes": [
                 "inapplicable"
               ]
             },
             {
-              "procedureName": "label",
+              "procedureName": "aria-input-field-name",
               "outcomes": [
                 "inapplicable"
               ]
@@ -1652,13 +1652,13 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "aria-input-field-name",
+              "procedureName": "label",
               "outcomes": [
                 "inapplicable"
               ]
             },
             {
-              "procedureName": "label",
+              "procedureName": "aria-input-field-name",
               "outcomes": [
                 "inapplicable"
               ]
@@ -1679,13 +1679,13 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "aria-input-field-name",
+              "procedureName": "label",
               "outcomes": [
                 "inapplicable"
               ]
             },
             {
-              "procedureName": "label",
+              "procedureName": "aria-input-field-name",
               "outcomes": [
                 "inapplicable"
               ]
@@ -3262,8 +3262,8 @@
         ]
       },
       "coverage": {
-        "covered": 26,
-        "untested": 2,
+        "covered": 28,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 28
       },
@@ -3824,13 +3824,13 @@
             {
               "procedureName": "link-name",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             },
             {
               "procedureName": "area-alt",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -3845,13 +3845,13 @@
             {
               "procedureName": "link-name",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             },
             {
               "procedureName": "area-alt",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -4262,7 +4262,7 @@
       "procedureNames": [
         "aria-hidden-focus"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -4274,8 +4274,8 @@
       },
       "coverage": {
         "covered": 12,
-        "untested": 2,
-        "cantTell": 0,
+        "untested": 0,
+        "cantTell": 2,
         "testCaseTotal": 14
       },
       "testCaseResults": [
@@ -4334,7 +4334,7 @@
             {
               "procedureName": "aria-hidden-focus",
               "outcomes": [
-                "untested"
+                "cantTell"
               ]
             }
           ]
@@ -4439,7 +4439,7 @@
             {
               "procedureName": "aria-hidden-focus",
               "outcomes": [
-                "untested"
+                "cantTell"
               ]
             }
           ]
@@ -4769,8 +4769,8 @@
         ]
       },
       "coverage": {
-        "covered": 14,
-        "untested": 2,
+        "covered": 16,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 19
       },
@@ -4800,7 +4800,8 @@
             {
               "procedureName": "aria-required-children",
               "outcomes": [
-                "untested"
+                "passed",
+                "passed"
               ]
             }
           ]
@@ -4830,7 +4831,7 @@
             {
               "procedureName": "aria-required-children",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -9112,7 +9113,7 @@
       },
       "coverage": {
         "covered": 13,
-        "untested": 0,
+        "untested": 1,
         "cantTell": 0,
         "testCaseTotal": 23
       },
@@ -9205,8 +9206,7 @@
             {
               "procedureName": "frame-title-unique",
               "outcomes": [
-                "failed",
-                "failed"
+                "untested"
               ]
             }
           ]
@@ -11906,30 +11906,15 @@
         "reported": []
       },
       "coverage": {
-        "covered": 11,
-        "untested": 0,
+        "covered": 10,
+        "untested": 1,
         "cantTell": 0,
         "testCaseTotal": 11
       },
       "testCaseResults": [
         {
-          "testcaseId": "3a2c170ad31b2c0c387e06c8a3bf7e5409dcdb60",
-          "testCaseName": "Passed Example 1",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/3a2c170ad31b2c0c387e06c8a3bf7e5409dcdb60.html",
-          "testCaseApproved": false,
-          "expected": "passed",
-          "procedureResults": [
-            {
-              "procedureName": "meta-viewport",
-              "outcomes": [
-                "passed"
-              ]
-            }
-          ]
-        },
-        {
           "testcaseId": "312146d84331c7214ed6919391ad955098eff516",
-          "testCaseName": "Passed Example 2",
+          "testCaseName": "Passed Example 1",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/312146d84331c7214ed6919391ad955098eff516.html",
           "testCaseApproved": false,
           "expected": "passed",
@@ -11943,38 +11928,23 @@
           ]
         },
         {
-          "testcaseId": "d97325fca0ca13bdc585ee4128c4657522bded38",
-          "testCaseName": "Passed Example 3",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/d97325fca0ca13bdc585ee4128c4657522bded38.html",
+          "testcaseId": "d143bfe343ecf75bceb92b6fc9807cc5f453b319",
+          "testCaseName": "Passed Example 2",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/d143bfe343ecf75bceb92b6fc9807cc5f453b319.html",
           "testCaseApproved": false,
           "expected": "passed",
           "procedureResults": [
             {
               "procedureName": "meta-viewport",
               "outcomes": [
-                "passed"
-              ]
-            }
-          ]
-        },
-        {
-          "testcaseId": "a36115d7110156fde2fe6187dbb49402096f82fb",
-          "testCaseName": "Passed Example 4",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/a36115d7110156fde2fe6187dbb49402096f82fb.html",
-          "testCaseApproved": false,
-          "expected": "passed",
-          "procedureResults": [
-            {
-              "procedureName": "meta-viewport",
-              "outcomes": [
-                "passed"
+                "untested"
               ]
             }
           ]
         },
         {
           "testcaseId": "4ade33e41dda291c9078e56ca2a95c4825dbc1fe",
-          "testCaseName": "Passed Example 5",
+          "testCaseName": "Passed Example 3",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/4ade33e41dda291c9078e56ca2a95c4825dbc1fe.html",
           "testCaseApproved": false,
           "expected": "passed",
@@ -12066,6 +12036,36 @@
           "testcaseId": "fe4a93d2631e7c54f1c00e3c56e04c927b5144c1",
           "testCaseName": "Inapplicable Example 2",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/fe4a93d2631e7c54f1c00e3c56e04c927b5144c1.html",
+          "testCaseApproved": false,
+          "expected": "inapplicable",
+          "procedureResults": [
+            {
+              "procedureName": "meta-viewport",
+              "outcomes": [
+                "passed"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "3a2c170ad31b2c0c387e06c8a3bf7e5409dcdb60",
+          "testCaseName": "Inapplicable Example 3",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/3a2c170ad31b2c0c387e06c8a3bf7e5409dcdb60.html",
+          "testCaseApproved": false,
+          "expected": "inapplicable",
+          "procedureResults": [
+            {
+              "procedureName": "meta-viewport",
+              "outcomes": [
+                "passed"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "a36115d7110156fde2fe6187dbb49402096f82fb",
+          "testCaseName": "Inapplicable Example 4",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/a36115d7110156fde2fe6187dbb49402096f82fb.html",
           "testCaseApproved": false,
           "expected": "inapplicable",
           "procedureResults": [
@@ -12331,7 +12331,7 @@
       "procedureNames": [
         "nested-interactive"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -12342,8 +12342,8 @@
         ]
       },
       "coverage": {
-        "covered": 6,
-        "untested": 1,
+        "covered": 7,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 7
       },
@@ -12404,7 +12404,8 @@
             {
               "procedureName": "nested-interactive",
               "outcomes": [
-                "untested"
+                "passed",
+                "failed"
               ]
             }
           ]
@@ -13397,7 +13398,7 @@
       "procedureNames": [
         "td-headers-attr"
       ],
-      "consistency": "complete",
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -13409,9 +13410,9 @@
       },
       "coverage": {
         "covered": 16,
-        "untested": 0,
+        "untested": 1,
         "cantTell": 0,
-        "testCaseTotal": 16
+        "testCaseTotal": 17
       },
       "testCaseResults": [
         {
@@ -13550,8 +13551,23 @@
           ]
         },
         {
-          "testcaseId": "d0c53c06c9e0a766fd5830fbbaa7df76f8cef92a",
+          "testcaseId": "cd25fd6cc4fde1734fc90c2f11e71886e3458007",
           "testCaseName": "Failed Example 2",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/cd25fd6cc4fde1734fc90c2f11e71886e3458007.html",
+          "testCaseApproved": false,
+          "expected": "failed",
+          "procedureResults": [
+            {
+              "procedureName": "td-headers-attr",
+              "outcomes": [
+                "untested"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "d0c53c06c9e0a766fd5830fbbaa7df76f8cef92a",
+          "testCaseName": "Failed Example 3",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/d0c53c06c9e0a766fd5830fbbaa7df76f8cef92a.html",
           "testCaseApproved": false,
           "expected": "failed",
@@ -13566,7 +13582,7 @@
         },
         {
           "testcaseId": "1bdbd209a611d68876d5b6e37541f7ddc2038f97",
-          "testCaseName": "Failed Example 3",
+          "testCaseName": "Failed Example 4",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/1bdbd209a611d68876d5b6e37541f7ddc2038f97.html",
           "testCaseApproved": false,
           "expected": "failed",
