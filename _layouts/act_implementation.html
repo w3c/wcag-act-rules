@@ -140,9 +140,11 @@ layout: standalone_resource
   The implementation is {% if ruleMapping.consistency == 'complete' %}
     fully {% else %} partially 
   {% endif %} consistent with the
-  <a href="{{ '/standards-guidelines/act/rules/' | append: ruleMapping.ruleId | relative_url }}">
-    {{- ruleMapping.ruleName | remove: '`' -}}
-  </a>
+  {%- capture ruleUrl -%}
+    /standards-guidelines/act/rules/{{ ruleMapping.ruleId }}
+    {%- unless ruleMapping.ruleApproved -%} /proposed/ {%- endunless -%}
+  {%- endcapture %}
+  <a href="{{ ruleUrl | relative_url }}">{{ ruleMapping.ruleName | remove: '`' }}</a>
   {% if ruleMapping.ruleApproved -%}
     WCAG 2 rule. {% else %} proposed rule.
   {%- endif %}
