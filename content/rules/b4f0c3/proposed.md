@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> b4f0c3</p>
-  <p><strong>Date:</strong> Updated 21 June 2022</p>
+  <p><strong>Date:</strong> Updated 23 June 2022</p>
   <p><strong>Authors:</strong> <a href="https://github.com/audreymaniez">Audrey Maniez</a>, <a href="https://github.com/jkodu">Jey Nandakumar</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -19,7 +19,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that the `meta` element retains the user agent ability to zoom.
-  last_modified: 21 June 2022
+  last_modified: 23 June 2022
   scs_tested:
     - handle: Resize text
       num: 1.4.4
@@ -28,11 +28,14 @@ rule_meta:
 
 ## Applicability
 
-This rule applies to each `content` attribute on a `meta` element with a `name` [attribute value][] of `viewport`.
+This rule applies to each `content` attribute on a `meta` element with a `name` [attribute value][] of `viewport` for which at least one of the following is true:
+
+- the `content` [attribute value][] has the `user-scalable` property; or
+- the `content` [attribute value][] has the `maximum-scale` property.
 
 ## Expectation 1
 
-For each test target, the [attribute value][] does hot have a `user-scalable` property with a value of `no`.
+For each test target, the [attribute value][] does not have a `user-scalable` property with a value of `no`.
 
 ## Expectation 2
 
@@ -90,27 +93,7 @@ The following aspects are required in using this rule.
 
 #### Passed Example 1
 
-<a class="example-link" title="Passed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/3a2c170ad31b2c0c387e06c8a3bf7e5409dcdb60.html">Open in a new tab</a>
-
-This viewport `meta` element does not prevent user scaling because it does not specify the `maximum-scale` and `user-scalable` values.
-
-```html
-<html>
-	<head>
-		<title>Simple page showing random text</title>
-		<meta name="viewport" content="width=device-width" />
-	</head>
-	<body>
-		<p>
-			Lorem ipsum
-		</p>
-	</body>
-</html>
-```
-
-#### Passed Example 2
-
-<a class="example-link" title="Passed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/312146d84331c7214ed6919391ad955098eff516.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/312146d84331c7214ed6919391ad955098eff516.html">Open in a new tab</a>
 
 This viewport `meta` element does not prevent user scaling because it has `user-scalable` set to `yes`.
 
@@ -128,49 +111,29 @@ This viewport `meta` element does not prevent user scaling because it has `user-
 </html>
 ```
 
+#### Passed Example 2
+
+<a class="example-link" title="Passed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/d143bfe343ecf75bceb92b6fc9807cc5f453b319.html">Open in a new tab</a>
+
+This viewport `meta` element allows users to scale content up to 200% because it has `maximum-scale` set to 2.0.
+
+```html
+<html>
+	<head>
+		<title>Simple page showing random text</title>
+		<meta name="viewport" content="maximum-scale=2.0" />
+	</head>
+	<body>
+		<p>
+			Lorem ipsum
+		</p>
+	</body>
+</html>
+```
+
 #### Passed Example 3
 
-<a class="example-link" title="Passed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/d97325fca0ca13bdc585ee4128c4657522bded38.html">Open in a new tab</a>
-
-This viewport `meta` element allows users to scale content up to 600% because it has `maximum-scale` set to 6.0.
-
-```html
-<html>
-	<head>
-		<title>Simple page showing random text</title>
-		<meta name="viewport" content="maximum-scale=6.0" />
-	</head>
-	<body>
-		<p>
-			Lorem ipsum
-		</p>
-	</body>
-</html>
-```
-
-#### Passed Example 4
-
-<a class="example-link" title="Passed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/a36115d7110156fde2fe6187dbb49402096f82fb.html">Open in a new tab</a>
-
-This viewport `meta` element does not prevent user scaling because it does not specify the `maximum-scale` and `user-scalable` values.
-
-```html
-<html>
-	<head>
-		<title>Simple page showing random text</title>
-		<meta name="viewport" content="" />
-	</head>
-	<body>
-		<p>
-			Lorem ipsum
-		</p>
-	</body>
-</html>
-```
-
-#### Passed Example 5
-
-<a class="example-link" title="Passed Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/4ade33e41dda291c9078e56ca2a95c4825dbc1fe.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/4ade33e41dda291c9078e56ca2a95c4825dbc1fe.html">Open in a new tab</a>
 
 This viewport `meta` element does not prevent user scaling because it has `maximum-scale` set to -1 which results in this value being dropped.
 
@@ -303,6 +266,46 @@ This viewport `meta` element does not have a `content` attribute.
 	<head>
 		<title>Simple page showing random text</title>
 		<meta name="viewport" />
+	</head>
+	<body>
+		<p>
+			Lorem ipsum
+		</p>
+	</body>
+</html>
+```
+
+#### Inapplicable Example 3
+
+<a class="example-link" title="Inapplicable Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/3a2c170ad31b2c0c387e06c8a3bf7e5409dcdb60.html">Open in a new tab</a>
+
+This viewport `meta` element does not specify the `maximum-scale` nor `user-scalable` values.
+
+```html
+<html>
+	<head>
+		<title>Simple page showing random text</title>
+		<meta name="viewport" content="width=device-width" />
+	</head>
+	<body>
+		<p>
+			Lorem ipsum
+		</p>
+	</body>
+</html>
+```
+
+#### Inapplicable Example 4
+
+<a class="example-link" title="Inapplicable Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/a36115d7110156fde2fe6187dbb49402096f82fb.html">Open in a new tab</a>
+
+This viewport `meta` element does not prevent user scaling because it does not specify the `maximum-scale` nor `user-scalable` values.
+
+```html
+<html>
+	<head>
+		<title>Simple page showing random text</title>
+		<meta name="viewport" content="" />
 	</head>
 	<body>
 		<p>
