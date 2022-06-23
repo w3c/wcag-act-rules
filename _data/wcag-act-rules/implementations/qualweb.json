@@ -15842,9 +15842,9 @@
       },
       "coverage": {
         "covered": 5,
-        "untested": 0,
+        "untested": 2,
         "cantTell": 7,
-        "testCaseTotal": 12
+        "testCaseTotal": 14
       },
       "testCaseResults": [
         {
@@ -15948,6 +15948,36 @@
               "procedureName": "Zoomed text node is not clipped with CSS overflow",
               "outcomes": [
                 "cantTell"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "fc598e8d60950941aae5070b17eb4ca1d4bd3bdf",
+          "testCaseName": "Failed Example 4",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59br37/fc598e8d60950941aae5070b17eb4ca1d4bd3bdf.html",
+          "testCaseApproved": false,
+          "expected": "failed",
+          "procedureResults": [
+            {
+              "procedureName": "Zoomed text node is not clipped with CSS overflow",
+              "outcomes": [
+                "untested"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "3665c0599c286b1b3060aee795009ab5b8942a14",
+          "testCaseName": "Failed Example 5",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59br37/3665c0599c286b1b3060aee795009ab5b8942a14.html",
+          "testCaseApproved": false,
+          "expected": "failed",
+          "procedureResults": [
+            {
+              "procedureName": "Zoomed text node is not clipped with CSS overflow",
+              "outcomes": [
+                "untested"
               ]
             }
           ]
