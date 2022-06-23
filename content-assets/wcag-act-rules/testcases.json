@@ -10998,6 +10998,8 @@
     },
     {
       "ruleId": "7d6734",
+      "approved": true,
+      "isApproved": true,
       "ruleName": "SVG element with explicit role has non-empty accessible name",
       "ruleAccessibilityRequirements": {
         "wcag20:1.1.1": {
@@ -11016,6 +11018,8 @@
     },
     {
       "ruleId": "7d6734",
+      "approved": true,
+      "isApproved": true,
       "ruleName": "SVG element with explicit role has non-empty accessible name",
       "ruleAccessibilityRequirements": {
         "wcag20:1.1.1": {
@@ -11034,6 +11038,8 @@
     },
     {
       "ruleId": "7d6734",
+      "approved": true,
+      "isApproved": true,
       "ruleName": "SVG element with explicit role has non-empty accessible name",
       "ruleAccessibilityRequirements": {
         "wcag20:1.1.1": {
@@ -11052,6 +11058,8 @@
     },
     {
       "ruleId": "7d6734",
+      "approved": true,
+      "isApproved": true,
       "ruleName": "SVG element with explicit role has non-empty accessible name",
       "ruleAccessibilityRequirements": {
         "wcag20:1.1.1": {
@@ -11070,6 +11078,8 @@
     },
     {
       "ruleId": "7d6734",
+      "approved": true,
+      "isApproved": true,
       "ruleName": "SVG element with explicit role has non-empty accessible name",
       "ruleAccessibilityRequirements": {
         "wcag20:1.1.1": {
@@ -11088,6 +11098,8 @@
     },
     {
       "ruleId": "7d6734",
+      "approved": true,
+      "isApproved": true,
       "ruleName": "SVG element with explicit role has non-empty accessible name",
       "ruleAccessibilityRequirements": {
         "wcag20:1.1.1": {
@@ -11106,6 +11118,8 @@
     },
     {
       "ruleId": "7d6734",
+      "approved": true,
+      "isApproved": true,
       "ruleName": "SVG element with explicit role has non-empty accessible name",
       "ruleAccessibilityRequirements": {
         "wcag20:1.1.1": {
@@ -11124,6 +11138,8 @@
     },
     {
       "ruleId": "7d6734",
+      "approved": true,
+      "isApproved": true,
       "ruleName": "SVG element with explicit role has non-empty accessible name",
       "ruleAccessibilityRequirements": {
         "wcag20:1.1.1": {
@@ -11142,6 +11158,8 @@
     },
     {
       "ruleId": "7d6734",
+      "approved": true,
+      "isApproved": true,
       "ruleName": "SVG element with explicit role has non-empty accessible name",
       "ruleAccessibilityRequirements": {
         "wcag20:1.1.1": {
@@ -11160,6 +11178,8 @@
     },
     {
       "ruleId": "7d6734",
+      "approved": true,
+      "isApproved": true,
       "ruleName": "SVG element with explicit role has non-empty accessible name",
       "ruleAccessibilityRequirements": {
         "wcag20:1.1.1": {
@@ -20337,6 +20357,8 @@
     },
     {
       "ruleId": "307n5z",
+      "approved": true,
+      "isApproved": true,
       "ruleName": "Element with presentational children has no focusable content",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
@@ -20355,6 +20377,8 @@
     },
     {
       "ruleId": "307n5z",
+      "approved": true,
+      "isApproved": true,
       "ruleName": "Element with presentational children has no focusable content",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
@@ -20373,6 +20397,8 @@
     },
     {
       "ruleId": "307n5z",
+      "approved": true,
+      "isApproved": true,
       "ruleName": "Element with presentational children has no focusable content",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
@@ -20391,6 +20417,8 @@
     },
     {
       "ruleId": "307n5z",
+      "approved": true,
+      "isApproved": true,
       "ruleName": "Element with presentational children has no focusable content",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
@@ -20409,6 +20437,8 @@
     },
     {
       "ruleId": "307n5z",
+      "approved": true,
+      "isApproved": true,
       "ruleName": "Element with presentational children has no focusable content",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
@@ -20427,6 +20457,8 @@
     },
     {
       "ruleId": "307n5z",
+      "approved": true,
+      "isApproved": true,
       "ruleName": "Element with presentational children has no focusable content",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
@@ -20445,6 +20477,8 @@
     },
     {
       "ruleId": "307n5z",
+      "approved": true,
+      "isApproved": true,
       "ruleName": "Element with presentational children has no focusable content",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
@@ -21885,6 +21919,8 @@
     },
     {
       "ruleId": "a25f45",
+      "approved": true,
+      "isApproved": true,
       "ruleName": "Headers attribute specified on a cell refers to cells in the same table element",
       "ruleAccessibilityRequirements": {
         "wcag20:1.3.1": {
@@ -21909,6 +21945,8 @@
     },
     {
       "ruleId": "a25f45",
+      "approved": true,
+      "isApproved": true,
       "ruleName": "Headers attribute specified on a cell refers to cells in the same table element",
       "ruleAccessibilityRequirements": {
         "wcag20:1.3.1": {
@@ -21933,6 +21971,8 @@
     },
     {
       "ruleId": "a25f45",
+      "approved": true,
+      "isApproved": true,
       "ruleName": "Headers attribute specified on a cell refers to cells in the same table element",
       "ruleAccessibilityRequirements": {
         "wcag20:1.3.1": {
@@ -21957,6 +21997,8 @@
     },
     {
       "ruleId": "a25f45",
+      "approved": true,
+      "isApproved": true,
       "ruleName": "Headers attribute specified on a cell refers to cells in the same table element",
       "ruleAccessibilityRequirements": {
         "wcag20:1.3.1": {
@@ -21981,6 +22023,8 @@
     },
     {
       "ruleId": "a25f45",
+      "approved": true,
+      "isApproved": true,
       "ruleName": "Headers attribute specified on a cell refers to cells in the same table element",
       "ruleAccessibilityRequirements": {
         "wcag20:1.3.1": {
@@ -22005,6 +22049,8 @@
     },
     {
       "ruleId": "a25f45",
+      "approved": true,
+      "isApproved": true,
       "ruleName": "Headers attribute specified on a cell refers to cells in the same table element",
       "ruleAccessibilityRequirements": {
         "wcag20:1.3.1": {
@@ -22029,6 +22075,8 @@
     },
     {
       "ruleId": "a25f45",
+      "approved": true,
+      "isApproved": true,
       "ruleName": "Headers attribute specified on a cell refers to cells in the same table element",
       "ruleAccessibilityRequirements": {
         "wcag20:1.3.1": {
@@ -22053,6 +22101,8 @@
     },
     {
       "ruleId": "a25f45",
+      "approved": true,
+      "isApproved": true,
       "ruleName": "Headers attribute specified on a cell refers to cells in the same table element",
       "ruleAccessibilityRequirements": {
         "wcag20:1.3.1": {
@@ -22077,6 +22127,8 @@
     },
     {
       "ruleId": "a25f45",
+      "approved": true,
+      "isApproved": true,
       "ruleName": "Headers attribute specified on a cell refers to cells in the same table element",
       "ruleAccessibilityRequirements": {
         "wcag20:1.3.1": {
@@ -22101,6 +22153,8 @@
     },
     {
       "ruleId": "a25f45",
+      "approved": true,
+      "isApproved": true,
       "ruleName": "Headers attribute specified on a cell refers to cells in the same table element",
       "ruleAccessibilityRequirements": {
         "wcag20:1.3.1": {
@@ -22125,6 +22179,8 @@
     },
     {
       "ruleId": "a25f45",
+      "approved": true,
+      "isApproved": true,
       "ruleName": "Headers attribute specified on a cell refers to cells in the same table element",
       "ruleAccessibilityRequirements": {
         "wcag20:1.3.1": {
@@ -22149,6 +22205,8 @@
     },
     {
       "ruleId": "a25f45",
+      "approved": true,
+      "isApproved": true,
       "ruleName": "Headers attribute specified on a cell refers to cells in the same table element",
       "ruleAccessibilityRequirements": {
         "wcag20:1.3.1": {
@@ -22173,6 +22231,8 @@
     },
     {
       "ruleId": "a25f45",
+      "approved": true,
+      "isApproved": true,
       "ruleName": "Headers attribute specified on a cell refers to cells in the same table element",
       "ruleAccessibilityRequirements": {
         "wcag20:1.3.1": {
@@ -22197,6 +22257,8 @@
     },
     {
       "ruleId": "a25f45",
+      "approved": true,
+      "isApproved": true,
       "ruleName": "Headers attribute specified on a cell refers to cells in the same table element",
       "ruleAccessibilityRequirements": {
         "wcag20:1.3.1": {
@@ -22221,6 +22283,8 @@
     },
     {
       "ruleId": "a25f45",
+      "approved": true,
+      "isApproved": true,
       "ruleName": "Headers attribute specified on a cell refers to cells in the same table element",
       "ruleAccessibilityRequirements": {
         "wcag20:1.3.1": {
@@ -22245,6 +22309,8 @@
     },
     {
       "ruleId": "a25f45",
+      "approved": true,
+      "isApproved": true,
       "ruleName": "Headers attribute specified on a cell refers to cells in the same table element",
       "ruleAccessibilityRequirements": {
         "wcag20:1.3.1": {
@@ -22269,6 +22335,8 @@
     },
     {
       "ruleId": "a25f45",
+      "approved": true,
+      "isApproved": true,
       "ruleName": "Headers attribute specified on a cell refers to cells in the same table element",
       "ruleAccessibilityRequirements": {
         "wcag20:1.3.1": {
