@@ -17196,6 +17196,8 @@
     {
       "ruleId": "c487ae",
       "ruleName": "Link has non-empty accessible name",
+      "approved": true,
+      "isApproved": true,
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
           "forConformance": true,
@@ -17232,6 +17234,8 @@
     {
       "ruleId": "c487ae",
       "ruleName": "Link has non-empty accessible name",
+      "approved": true,
+      "isApproved": true,
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
           "forConformance": true,
