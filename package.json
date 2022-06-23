@@ -1,8 +1,8 @@
 {
   "dependencies": {
     "act-tools": "github:act-rules/act-tools",
+    "axios": "^0.27.2",
     "moment": "^2.29.3",
-    "node-fetch": "^3.2.5",
     "yaml": "^2.1.1",
     "zx": "^6.2.4"
   }

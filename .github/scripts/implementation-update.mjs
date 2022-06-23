@@ -1,6 +1,6 @@
 import { readFileSync, existsSync, writeFileSync } from 'fs';
 import * as YAML from 'yaml';
-import fetch from 'node-fetch';
+import axios from 'axios';
 import { getActImplementationReport } from 'act-tools'
 import moment from 'moment';
 
@@ -20,18 +20,15 @@ async function updateImplementation(implementation) {
   const { jsonReport: jsonReportUrl, uniqueKey, name, vendor, version } = implementation;
   const earlReportPath = `${assetsDir}/earl/${uniqueKey}.json`;
   const actReportPath = `${dataDir}/implementations/${uniqueKey}.json`;
-  const response = await fetch(jsonReportUrl);
-  if (!response.ok) {
-    console.log(`Failed to load ${uniqueKey} report from ${jsonReportUrl}`);
-    return;
-  }
 
   let reportText, earlReport;
   try {
-    reportText = await response.text();
+    reportText = (await axios.get(jsonReportUrl, {
+      transformResponse: res => res.toString()
+    })).data;
     earlReport = JSON.parse(reportText);
-  } catch {
-    console.log(`Unable to load ${uniqueKey} EARL report as JSON`);
+  } catch (e) {
+    console.log(`Unable to load ${uniqueKey} EARL report as JSON\n\n`, e.message);
     return;
   }
 

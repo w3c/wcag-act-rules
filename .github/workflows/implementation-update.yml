@@ -1,11 +1,12 @@
 name: Implementation update
 on:
+  workflow_dispatch:
   schedule:
     # Run every 6 hours, starting UTC midnight
     - cron:  '0 0,6,12,18 * * *'
 
 jobs:
-  test:
+  implementation-update:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3

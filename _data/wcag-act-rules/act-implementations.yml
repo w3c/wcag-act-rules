@@ -53,7 +53,7 @@
   standards:
     - WCAG 2.1 Level A, AA, AAA
     - WAI-ARIA 1.2
-  jsonReport: https://raw.githubusercontent.com/dequelabs/act-reports-axe/main/reports/axe-devtools-igt.json
+  jsonReport: https://raw.githubusercontent.com/dequelabs/act-reports-axe/main/reports/axe-devtools-combined.json
   description: |
     Axe DevTools Pro combines the automated results of axe-core, and results from
     axe Intelligent Guided Test (IGT) tools. Tools can produced multiple issue types.
