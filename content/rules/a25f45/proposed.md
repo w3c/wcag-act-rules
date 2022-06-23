@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> a25f45</p>
-  <p><strong>Date:</strong> Updated 21 June 2022</p>
+  <p><strong>Date:</strong> Updated 23 June 2022</p>
   <p><strong>Authors:</strong> <a href="https://github.com/audreymaniez">Audrey Maniez</a>, <a href="https://github.com/jkodu">Jey Nandakumar</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -19,7 +19,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that the `headers` attribute on a cell refer to other cells in the same `table` element.
-  last_modified: 21 June 2022
+  last_modified: 23 June 2022
   scs_tested:
     - handle: Info and Relationships
       num: 1.3.1
@@ -293,7 +293,29 @@ The `td` elements have a `headers` attribute referring to an ID that does not ex
 
 #### Failed Example 2
 
-<a class="example-link" title="Failed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/d0c53c06c9e0a766fd5830fbbaa7df76f8cef92a.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/cd25fd6cc4fde1734fc90c2f11e71886e3458007.html">Open in a new tab</a>
+
+The `td` elements have a `headers` attribute referring to an ID that exist in a separate `table`.
+
+```html
+<table>
+	<tr>
+		<th id="headOfColumn1">Projects</th>
+		<th id="headOfColumn2">Objective</th>
+	</tr>
+</table>
+
+<table>
+	<tr>
+		<td headers="headOfColumn1">15%</td>
+		<td headers="headOfColumn2">10%</td>
+	</tr>
+</table>
+```
+
+#### Failed Example 3
+
+<a class="example-link" title="Failed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/d0c53c06c9e0a766fd5830fbbaa7df76f8cef92a.html">Open in a new tab</a>
 
 The `td` element has a `headers` attribute referring to its own ID.
 
@@ -310,9 +332,9 @@ The `td` element has a `headers` attribute referring to its own ID.
 </table>
 ```
 
-#### Failed Example 3
+#### Failed Example 4
 
-<a class="example-link" title="Failed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/1bdbd209a611d68876d5b6e37541f7ddc2038f97.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/1bdbd209a611d68876d5b6e37541f7ddc2038f97.html">Open in a new tab</a>
 
 The `headers` attribute on the data cells in the second row refers to an element inside the same `table` which does not have a role of `rowheader` or `columnheader`.
 

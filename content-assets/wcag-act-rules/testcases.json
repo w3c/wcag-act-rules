@@ -3,7 +3,7 @@
   "website": "https://www.w3.org/WAI/standards-guidelines/act/rules/",
   "license": "https://act-rules.github.io/pages/license/",
   "description": "Accessibility conformance testing rules for HTML",
-  "count": 1131,
+  "count": 1132,
   "testcases": [
     {
       "ruleId": "73f2c2",
@@ -22113,8 +22113,32 @@
         }
       },
       "expected": "failed",
-      "testcaseId": "d0c53c06c9e0a766fd5830fbbaa7df76f8cef92a",
+      "testcaseId": "cd25fd6cc4fde1734fc90c2f11e71886e3458007",
       "testcaseTitle": "Failed Example 2",
+      "relativePath": "testcases/a25f45/cd25fd6cc4fde1734fc90c2f11e71886e3458007.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/cd25fd6cc4fde1734fc90c2f11e71886e3458007.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/a25f45/proposed/"
+    },
+    {
+      "ruleId": "a25f45",
+      "ruleName": "Headers attribute specified on a cell refers to cells in the same table element",
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.3.1": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:H43": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "d0c53c06c9e0a766fd5830fbbaa7df76f8cef92a",
+      "testcaseTitle": "Failed Example 3",
       "relativePath": "testcases/a25f45/d0c53c06c9e0a766fd5830fbbaa7df76f8cef92a.html",
       "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/d0c53c06c9e0a766fd5830fbbaa7df76f8cef92a.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/a25f45/proposed/"
@@ -22138,7 +22162,7 @@
       },
       "expected": "failed",
       "testcaseId": "1bdbd209a611d68876d5b6e37541f7ddc2038f97",
-      "testcaseTitle": "Failed Example 3",
+      "testcaseTitle": "Failed Example 4",
       "relativePath": "testcases/a25f45/1bdbd209a611d68876d5b6e37541f7ddc2038f97.html",
       "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/1bdbd209a611d68876d5b6e37541f7ddc2038f97.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/a25f45/proposed/"
