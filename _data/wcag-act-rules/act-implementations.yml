@@ -69,7 +69,7 @@
   uniqueKey: equal-access
   type: Automated tool
   standards:
-    - WCAG 2.1 Level A, AA, AAA
+    - WCAG 2.1 Level A, AA
     - WAI-ARIA 1.2
   jsonReport: https://unpkg.com/accessibility-checker-engine@next/earlResultW3.json
   description: |
