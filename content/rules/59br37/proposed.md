@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 59br37</p>
-  <p><strong>Date:</strong> Updated 21 June 2022</p>
+  <p><strong>Date:</strong> Updated 23 June 2022</p>
   <p><strong>Authors:</strong> <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
   
@@ -21,7 +21,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that text nodes are not unintentionally clipped by overflow, when a page is zoomed to 200% on 1280 by 1024 viewport;
-  last_modified: 21 June 2022
+  last_modified: 23 June 2022
   scs_tested:
     - handle: Resize text
       num: 1.4.4
@@ -39,13 +39,13 @@ This rule applies to any [text node][] for which all of the following is true wh
 
 **Note**: A [viewport size][] of 640 by 512 is equivalent to a [viewport size][] of 1280 by 1024 zoomed 200%.
 
-## Expectation
+## Expectation 1
 
-Each test target is not [clipped by overflow][clipped] of an [ancestor][] in the [flat tree][] when in a [viewport size][] of 640 by 512, except if the [clipping][clipped] [ancestor][] has at least one of the following:
+Each test target is not [horizontally clipped by overflow][horizontally clipped] of an [ancestor][] in the [flat tree][] when in a [viewport size][] of 640 by 512, except if the [clipping][horizontally clipped] [ancestor][] has a [computed][] [white-space][] of `nowrap`, and a [computed][] [text-overflow][] that is not `clip`
 
-- **text-overflow**: A [computed][] [white-space][] of `nowrap`, and a [computed][] [text-overflow][] that is not `clip`; or
+## Expectation 2
 
-- **line wrapping**: A [used][] [line-height][] equal to or greater than the height of its [bounding box][], or in case of a [computed][] [overflow][] of `clip`, its [content box][].
+Each test target is not [vertically clipped by overflow][vertically clipped] of an [ancestor][] in the [flat tree][] when in a [viewport size][] of 640 by 512, except if the [clipping][vertically clipped] [ancestor][] has a [used][] [line-height][] equal to or greater than the height of its [bounding box][], or in case of a [computed][] [overflow-y][overflow] of `clip`, its [content box][].
 
 ## Assumptions
 
@@ -53,7 +53,7 @@ If any of the following assumptions is true, failing this rule may not result in
 
 - There is no other mechanism for resizing text available on the page, that can be used to resize text to 200% without loss of information or functionality. This includes font resizing in the browser, or a javascript mechanism of resizing in the page.
 
-- [Text nodes][text node] can not be [clipped by overflow][clipped] without loss of information, except for [text nodes][text node] with an [ancestor][] with `aria-hidden` set to `true`, or when specific styles have been applied to ensure text is clipped cleanly (text-overflow, line wrapping or hidden text).
+- [Text nodes][text node] can not be [horizontally][horizontally clipped] or [vertically clipped by overflow][vertically clipped] without loss of information, except for [text nodes][text node] with an [ancestor][] with `aria-hidden` set to `true`, or when specific styles have been applied to ensure text is clipped cleanly (text-overflow, line wrapping or hidden text).
 
 - While [success criterion 1.4.4 Resize text](https://www.w3.org/TR/WCAG21/#resize-text) does not explicitly mention which viewport size has to be resized up to 200%, it is assumed that a [viewport size][] of 1280 by 1024 is applicable. A 1280 by 1024 [viewport size][] is explicitly mentioned under [success criterion 1.4.10 Reflow](https://www.w3.org/TR/WCAG21/#reflow).
 
@@ -119,7 +119,7 @@ This [text node][] is fully [visible][] at a [viewport size][] of 640 by 512.
 
 <a class="example-link" title="Passed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/59br37/47d2a65e7d1fcc2ac9457a6283e35e82d68aa3ce.html">Open in a new tab</a>
 
-This [text node][] is [clipped][] using `text-overflow: ellipsis` at a [viewport size][] of 640 by 512. A link to a full version of the poem is also provided.
+This [text node][] is [horizontally clipped][] using `text-overflow: ellipsis` at a [viewport size][] of 640 by 512. A link to a full version of the poem is also provided.
 
 ```html
 <div style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 16px;">
@@ -156,7 +156,7 @@ This [text node][] is restricted to a single line, by setting a `line-height` th
 
 <a class="example-link" title="Passed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/59br37/b17a15385fc63a75363c56ea30ff402056c1da8f.html">Open in a new tab</a>
 
-This [text node][] is not [clipped][] with `overflow: hidden` because it has a parent with `overflow: auto` at a [viewport size][] of 640 by 512.
+This [text node][] is not [vertically clipped][] with `overflow: hidden` because it has a parent with `overflow: auto` at a [viewport size][] of 640 by 512.
 
 ```html
 <div style="overflow: hidden; height: 2em; font-size: 16px;">
@@ -173,7 +173,7 @@ This [text node][] is not [clipped][] with `overflow: hidden` because it has a p
 
 <a class="example-link" title="Failed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/59br37/c5cd793a4f7c929182a1302f1bb8c1e43508de1b.html">Open in a new tab</a>
 
-This [text node][] is [clipped][] because it has a fixed height that does not leave enough space for the content to wrap.
+This [text node][] is [vertically clipped][] because it has a fixed height that does not leave enough space for the content to wrap.
 
 ```html
 <div style="overflow: hidden; height: 1.5em; font-size: 16px;">
@@ -186,7 +186,7 @@ This [text node][] is [clipped][] because it has a fixed height that does not le
 
 <a class="example-link" title="Failed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/59br37/758faeb173a6796691843ae93839928b23ae6378.html">Open in a new tab</a>
 
-This [text node][] is [clipped][] because its height is relative to the viewport height, leaving insufficient space for the page to be zoomed to 200% at a [viewport size][] of 1280 by 1024.
+This [text node][] is [vertically clipped][] because its height is relative to the viewport height, leaving insufficient space for the page to be zoomed to 200% at a [viewport size][] of 1280 by 1024.
 
 ```html
 <div style="overflow: hidden; height: 16vh; font-size: 16px;">
@@ -203,7 +203,7 @@ This [text node][] is [clipped][] because its height is relative to the viewport
 
 <a class="example-link" title="Failed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/59br37/ef39fe61d9b0093a3a886c3482d69adc7aeabd52.html">Open in a new tab</a>
 
-This [text node][] is [clipped][] by style that is applied at a [viewport size][] width of 640.
+This [text node][] is [vertically clipped][] by style that is applied at a [viewport size][] width of 640.
 
 ```html
 <style>
@@ -220,6 +220,43 @@ This [text node][] is [clipped][] by style that is applied at a [viewport size][
 	Once upon a midnight dreary, while I pondered, weak and weary, Over many a quaint and curious volume of forgotten
 	lore. While I nodded, nearly napping, suddenly there came a tapping, As of some one gently rapping, rapping at my
 	chamber door. “’Tis some visitor,” I muttered, “tapping at my chamber door. Only this and nothing more.”
+</div>
+```
+
+#### Failed Example 4
+
+<a class="example-link" title="Failed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/59br37/fc598e8d60950941aae5070b17eb4ca1d4bd3bdf.html">Open in a new tab</a>
+
+This [text node][] is [vertically clipped][] at a [viewport size][] of 640 by 512.
+
+```html
+<div style="overflow-y: hidden; height: 10px; white-space: nowrap; text-overflow: ellipsis; font-size: 16px;">
+	Once upon a midnight dreary, while I pondered, weak and weary, Over many a quaint and curious volume of forgotten
+	lore. While I nodded, nearly napping, suddenly there came a tapping.
+</div>
+```
+
+#### Failed Example 5
+
+<a class="example-link" title="Failed Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/59br37/3665c0599c286b1b3060aee795009ab5b8942a14.html">Open in a new tab</a>
+
+This [text node][] is [horizontally clipped][] at a [viewport size][] of 640 by 512.
+
+```html
+<style>
+	.wordClip {
+		overflow-x: hidden;
+		white-space: nowrap;
+		text-overflow: clip;
+		width: 50px;
+		height: 16px;
+		line-height: 16px;
+		font-size: 16px;
+	}
+</style>
+<div class="wordClip">
+	Once upon a midnight dreary, while I pondered, weak and weary, Over many a quaint and curious volume of forgotten
+	lore. While I nodded, nearly napping, suddenly there came a tapping.
 </div>
 ```
 
@@ -310,10 +347,9 @@ This list is not exhaustive, and only serves as an illustration for some of the 
 
 The <dfn id="attribute-value:idl">attribute value</dfn> of an [IDL attribute][] is the value returned on getting it. Note that when an [IDL attribute][] [reflects][reflect] a content attribute, they have the same attribute value.
 
-### Clipped by Overflow {#clipped-by-overflow}
+### Horizontally Clipped by Overflow {#horizontally-clipped-by-overflow}
 
-A [node][] with an [ancestor][] in the [flat tree][] with a [computed][] [overflow][] of `none` or `clipped`, where
-changing the [overflow][] of all such [ancestors][ancestor] to `visible` would cause more of the [node][] to become [visible][].
+A [node][] is <dfn>Horizontally Clipped by Overflow</dfn> if it has an [ancestor][] in the [flat tree][] with a [computed][] [overflow-x][] of `hidden` or `clip`, where changing the [overflow-x][] of all such [ancestors][ancestor] to `visible` would cause more of the [node][] to become [visible][].
 
 ### Namespaced Element {#namespaced-element}
 
@@ -332,6 +368,10 @@ An _outcome_ is a conclusion that comes from evaluating an ACT Rule on a [test s
 **Note:** A rule has one `passed` or `failed` outcome for every [test target](https://www.w3.org/TR/act-rules-format/#test-target). When there are no test targets the rule has one `inapplicable` outcome. This means that each [test subject](https://www.w3.org/TR/act-rules-format/#test-subject) will have one or more outcomes.
 
 **Note:** Implementations using the [EARL10-Schema](https://www.w3.org/TR/EARL10-Schema/) can express the outcome with the [outcome property](https://www.w3.org/TR/EARL10-Schema/#outcome). In addition to `passed`, `failed` and `inapplicable`, EARL 1.0 also defined an `incomplete` outcome. While this cannot be the outcome of an ACT Rule when applied in its entirety, it often happens that rules are only partially evaluated. For example, when applicability was automated, but the expectations have to be evaluated manually. Such "interim" results can be expressed with the `incomplete` outcome.
+
+### Vertically Clipped by Overflow {#vertically-clipped-by-overflow}
+
+A [node][] is <dfn>Vertically Clipped by Overflow</dfn> if it has an [ancestor][] in the [flat tree][] with a [computed][] [overflow-y][] of `hidden` or `clip`, where changing the [overflow-y][] of all such [ancestors][ancestor] to `visible` would cause more of the [node][] to become [visible][].
 
 ### viewport size {#viewport-size}
 
@@ -357,13 +397,13 @@ For more details, see [examples of visible](https://act-rules.github.io/pages/ex
 [attribute value]: #attribute-value 'Definition of Attribute Value'
 [boolean attributes]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attributes 'HTML Specification of Boolean Attribute'
 [bounding box]: https://www.w3.org/TR/css-ui-3/#valdef-box-sizing-border-box
-[clipped]: #clipped-by-overflow
 [comma separated]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#comma-separated-tokens 'HTML Specification of Comma Separated Tokens'
 [computed]: https://www.w3.org/TR/css-cascade-3/#computed-value
 [content box]: https://www.w3.org/TR/css-ui-3/#valdef-box-sizing-content-box
 [element]: https://dom.spec.whatwg.org/#element 'DOM element, 2021/05/31'
 [enumerated attributes]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#enumerated-attribute 'HTML Specification of Enumerated Attribute'
 [flat tree]: https://drafts.csswg.org/css-scoping/#flat-tree 'CSS draft, flat tree, 2020/02/14'
+[horizontally clipped]: #horizontally-clipped-by-overflow
 [html aam]: https://www.w3.org/TR/html-aam-1.0/#html-attribute-state-and-property-mappings 'Specification of HTML attributes value mapping to ARIA states and properties'
 [html element]: #namespaced-element
 [html namespaces]: https://infra.spec.whatwg.org/#namespaces 'HTML namespace, 2021/05/31'
@@ -375,7 +415,9 @@ For more details, see [examples of visible](https://act-rules.github.io/pages/ex
 [namespaceuri]: https://dom.spec.whatwg.org/#dom-element-namespaceuri 'DOM Element namespaceURI, 2021/05/31'
 [node]: https://dom.spec.whatwg.org/#node 'DOM node, as of 2019/02/14'
 [numbers]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#numbers 'HTML Specification of Number Parsing'
-[overflow]: https://www.w3.org/TR/CSS22/visufx.html#overflow
+[overflow-x]: https://drafts.csswg.org/css-overflow/#overflow-properties
+[overflow-y]: https://drafts.csswg.org/css-overflow/#overflow-properties
+[overflow]: https://drafts.csswg.org/css-overflow/#overflow-properties
 [parent]: https://dom.spec.whatwg.org/#concept-tree-parent 'DOM parent, as of 2020/02/14'
 [reflect]: https://html.spec.whatwg.org/multipage/common-dom-interfaces.html#reflecting-content-attributes-in-idl-attributes 'HTML specification of Reflecting Content Attributes in IDL Attributes'
 [space separated]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#space-separated-tokens 'HTML Specification of Space Separated Tokens'
@@ -383,6 +425,7 @@ For more details, see [examples of visible](https://act-rules.github.io/pages/ex
 [text-overflow]: https://www.w3.org/TR/css-ui-3/#text-overflow
 [top-level browsing context]: https://html.spec.whatwg.org/#top-level-browsing-context 'DOM: top-level browsing context, 2020/03/30'
 [used]: https://www.w3.org/TR/css-cascade-4/#used 'CSS Cascading and Inheritance Level 4 (Working draft) - Used Values'
+[vertically clipped]: #vertically-clipped-by-overflow
 [viewport size]: #viewport-size
 [visible]: #visible
 [wai-aria specification]: https://www.w3.org/TR/wai-aria-1.1/#propcharacteristic_value 'WAI-ARIA Specification of States and Properties Value'

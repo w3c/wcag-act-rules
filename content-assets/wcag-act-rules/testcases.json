@@ -3,7 +3,7 @@
   "website": "https://www.w3.org/WAI/standards-guidelines/act/rules/",
   "license": "https://act-rules.github.io/pages/license/",
   "description": "Accessibility conformance testing rules for HTML",
-  "count": 1132,
+  "count": 1134,
   "testcases": [
     {
       "ruleId": "73f2c2",
@@ -26657,6 +26657,42 @@
       "testcaseTitle": "Failed Example 3",
       "relativePath": "testcases/59br37/ef39fe61d9b0093a3a886c3482d69adc7aeabd52.html",
       "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59br37/ef39fe61d9b0093a3a886c3482d69adc7aeabd52.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/59br37/proposed/"
+    },
+    {
+      "ruleId": "59br37",
+      "ruleName": "Zoomed text node is not clipped with CSS overflow",
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.4.4": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "fc598e8d60950941aae5070b17eb4ca1d4bd3bdf",
+      "testcaseTitle": "Failed Example 4",
+      "relativePath": "testcases/59br37/fc598e8d60950941aae5070b17eb4ca1d4bd3bdf.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59br37/fc598e8d60950941aae5070b17eb4ca1d4bd3bdf.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/59br37/proposed/"
+    },
+    {
+      "ruleId": "59br37",
+      "ruleName": "Zoomed text node is not clipped with CSS overflow",
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.4.4": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "3665c0599c286b1b3060aee795009ab5b8942a14",
+      "testcaseTitle": "Failed Example 5",
+      "relativePath": "testcases/59br37/3665c0599c286b1b3060aee795009ab5b8942a14.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59br37/3665c0599c286b1b3060aee795009ab5b8942a14.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/59br37/proposed/"
     },
     {
