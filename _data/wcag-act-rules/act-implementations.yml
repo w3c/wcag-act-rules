@@ -62,6 +62,7 @@
     the `alt-text-not-meaningful` issue type reported by the `Images` tool.
 
 - name: Equal Access Accessibility Checker
+  hidden: true
   homepage: https://www.ibm.com/able/toolkit/
   version: 3.1.33-rc
   vendor: IBM Accessibility
