@@ -52,7 +52,7 @@ WCAG success criteria typically cover several aspects and technologies, while AC
 
 ## Implementation of ACT Rules
 
-ACT Rules can be implemented by accessibility test tools and methodologies. Each rule comes with a number of passed, failed, and inapplicable examples. By running the tool or methodology against the examples its consistency with the rule can be determined. Vendors who publish such test results are included in the [ACT Test Tools and Methodology Matrix](../implementations/).
+ACT Rules can be implemented by accessibility test tools and methodologies. Each rule comes with a number of passed, failed, and inapplicable examples. By running the tool or methodology against the examples its consistency with the rule can be determined. Vendors who publish such test results are included in the [ACT Rules Implementation in Test Tools and Methodologies List]({{ '/standards-guidelines/act/implementations/' | relative_url }}).
 
 ## Related Pages
 
