@@ -58,6 +58,7 @@ defaults:
       rule_meta:
         rule_type: "Atomic rule"
       sidebar: true
+      ## @@@ IMPORTANT @@@: Change to the config file need to be manually copied over to the WAI website
       standalone_resource_header:
         title: ACT Rules
         title-ref: /standards-guidelines/act/rules/
