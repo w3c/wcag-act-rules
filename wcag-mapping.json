@@ -37,12 +37,32 @@
       "proposed": false
     },
     {
+      "title": "Element with presentational children has no focusable content",
+      "permalink": "/standards-guidelines/act/rules/307n5z/",
+      "successCriteria": [
+        "name-role-value"
+      ],
+      "wcagTechniques": [],
+      "proposed": false
+    },
+    {
       "title": "Form field has non-empty accessible name",
       "permalink": "/standards-guidelines/act/rules/e086e5/",
       "successCriteria": [
         "name-role-value"
       ],
       "wcagTechniques": [],
+      "proposed": false
+    },
+    {
+      "title": "Headers attribute specified on a cell refers to cells in the same table element",
+      "permalink": "/standards-guidelines/act/rules/a25f45/",
+      "successCriteria": [
+        "info-and-relationships"
+      ],
+      "wcagTechniques": [
+        "H43"
+      ],
       "proposed": false
     },
     {
@@ -133,6 +153,15 @@
       "wcagTechniques": [
         "G91"
       ],
+      "proposed": false
+    },
+    {
+      "title": "SVG element with explicit role has non-empty accessible name",
+      "permalink": "/standards-guidelines/act/rules/7d6734/",
+      "successCriteria": [
+        "non-text-content"
+      ],
+      "wcagTechniques": [],
       "proposed": false
     },
     {
@@ -393,15 +422,6 @@
       "proposed": true
     },
     {
-      "title": "Element with presentational children has no focusable content",
-      "permalink": "/standards-guidelines/act/rules/307n5z/proposed/",
-      "successCriteria": [
-        "name-role-value"
-      ],
-      "wcagTechniques": [],
-      "proposed": true
-    },
-    {
       "title": "Element with role attribute has required states and properties",
       "permalink": "/standards-guidelines/act/rules/4e8ab6/proposed/",
       "successCriteria": [
@@ -454,17 +474,6 @@
       ],
       "wcagTechniques": [
         "G131"
-      ],
-      "proposed": true
-    },
-    {
-      "title": "Headers attribute specified on a cell refers to cells in the same table element",
-      "permalink": "/standards-guidelines/act/rules/a25f45/proposed/",
-      "successCriteria": [
-        "info-and-relationships"
-      ],
-      "wcagTechniques": [
-        "H43"
       ],
       "proposed": true
     },
@@ -734,15 +743,6 @@
       "wcagTechniques": [
         "G202"
       ],
-      "proposed": true
-    },
-    {
-      "title": "SVG element with explicit role has non-empty accessible name",
-      "permalink": "/standards-guidelines/act/rules/7d6734/proposed/",
-      "successCriteria": [
-        "non-text-content"
-      ],
-      "wcagTechniques": [],
       "proposed": true
     },
     {

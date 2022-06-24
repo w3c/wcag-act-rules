@@ -1,100 +1,76 @@
 ---
-title: "Image has non-empty accessible name"
-permalink: /standards-guidelines/act/rules/23a2a8/
-ref: /standards-guidelines/act/rules/23a2a8/
+title: "Element with presentational children has no focusable content"
+permalink: /standards-guidelines/act/rules/307n5z/
+ref: /standards-guidelines/act/rules/307n5z/
 lang: en
 github:
   repository: w3c/wcag-act-rules
-  path: content/rules/23a2a8/index.md
+  path: content/rules/307n5z/index.md
 feedbackmail: public-wcag-act@w3.org
 footer: |
-  <p><strong>Rule Identifier:</strong> 23a2a8</p>
+  <p><strong>Rule Identifier:</strong> 307n5z</p>
   <p><strong>Date:</strong> Updated 23 June 2022</p>
-  <p><strong>Authors:</strong> <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Previous Authors: <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/skotkjerra">Stein Erik Skotkjerra</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
+  <p><strong>Authors:</strong> <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It was approved and published by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: false
 rule_meta:
-  id: 23a2a8
-  name: "Image has non-empty accessible name"
+  id: 307n5z
+  name: "Element with presentational children has no focusable content"
   rule_type: atomic
   description: |
-    This rule checks that each image either has a non-empty accessible name or is marked up as decorative.
+    This rule checks that elements with a role that makes its children presentational do not contain focusable elements.
   last_modified: 23 June 2022
   scs_tested:
-    - handle: Non-text Content
-      num: 1.1.1
+    - handle: Name, Role, Value
+      num: 4.1.2
       level: A
 ---
 
 ## Applicability
 
-This rule applies to [HTML][] `img` elements and [HTML elements][html] that are a [semantic][semantic role] `img`, except if the element is [programmatically hidden][].
+This rule applies to any [HTML or SVG element][] with a [semantic role][] that defines its [children][child] to be [presentational children][].
 
 ## Expectation
 
-Each target element has an [accessible name][] that is not empty (`""`), or has a [semantic role][] of `none` or `presentation`.
+None of the target elements have [descendants][] in the [flat tree][] that are part of [sequential focus navigation][].
 
 ## Assumptions
 
-_There are currently no assumptions._
+This rule assumes that elements that are part of [sequential focus navigation][] do not immediately blur, or move focus to another element. Such elements will fail this rule, but may still satisfy success criterion 4.1.2.
 
 ## Accessibility Support
 
-- There is a known combination of a popular browser and assistive technology that does not by default support `title` as an [accessible name][].
-- There are several popular browsers that do not treat images with empty `alt` attribute as having a role of `presentation` but instead add the `img` element to the accessibility tree with a [semantic role][] of either `img` or `graphic`.
-- Implementation of [Presentational Roles Conflict Resolution][] varies from one browser or assistive technology to another. Depending on this, some [semantic][semantic role] `img` elements can fail this rule with some technology but users of other technologies would not experience any accessibility issue.
-- Images can have their role set to `presentation` through an empty `alt` attribute. [Presentational Roles Conflict Resolution][] does not specify what to do if such an image is [focusable][] (it only specifies what to do in case of explicit `role="none"` or `role="presentation"`). Some browsers expose these images and some don't. Thus, this rule may fail for technologies that expose these without creating an accessibility issue for users of other technologies.
+Several major browsers ignore the WAI-ARIA requirements on [presentational children][] for most or sometimes all roles. Because some browsers do, and others do not implement presentational children, there can be significant differences between browsers.
 
 ## Background
 
+This rule applies to elements with a [semantic role][] that defines its [children][child] to be [presentational children][], which are all of the following: `button`, `checkbox`, `img`, `math`, `menuitemcheckbox`, `menuitemradio`, `option`, `progressbar`, `radio`, `scrollbar`, `separator`, `slider`, `switch`, and `tab`.
+
+Elements with a [semantic role][] that has [presentational children][] will not have any descendants in the accessibility tree. If any of those descendants are included in [sequential focus navigation][], this causes the focus to land on an element that has no corresponding node in the [accessibility tree][]. The result is that there is no programmatic name or role available for assistive technologies. There are other problems that can come from [presentational children][] too. These must be tested separately.
+
+### Related rules
+
+- [Element with aria-hidden has no focusable content](https://act-rules.github.io/rules/6cfa84)
+
 ### Bibliography
 
-- [Understanding Success Criterion 1.1.1: Non-text Content](https://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html)
-- [G94: Providing short text alternative for non-text content that serves the same purpose and presents the same information as the non-text content](https://www.w3.org/WAI/WCAG21/Techniques/general/G94)
-- [G95: Providing short text alternatives that provide a brief description of the non-text content](https://www.w3.org/WAI/WCAG21/Techniques/general/G95)
-- [H37: Using alt attributes on img elements](https://www.w3.org/WAI/WCAG21/Techniques/html/H37)
-- [ARIA6: Using aria-label to provide labels for objects](https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA6)
-- [ARIA10: Using aria-labelledby to provide a text alternative for non-text content](https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA10)
-- [H67: Using null alt text and no title attribute on img elements for images that AT should ignore](https://www.w3.org/WAI/WCAG21/Techniques/html/H67)
-- [F38: Failure of Success Criterion 1.1.1 due to not marking up decorative images in HTML in a way that allows assistive technology to ignore them](https://www.w3.org/WAI/WCAG21/Techniques/failures/F38)
-- [F65: Failure of Success Criterion 1.1.1 due to omitting the alt attribute or text alternative on img elements, area elements, and input elements of type "image"](https://www.w3.org/WAI/WCAG21/Techniques/failures/F65)
+- [Understanding Success Criterion 1.3.1: Info and Relationships](https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships)
+- [Understanding Success Criterion 4.1.2: Name, Role, Value](https://www.w3.org/WAI/WCAG21/Understanding/name-role-value)
+- [WAI-ARIA 1.1 Presentational Children][presentational children]
+- [Element with aria-hidden has no focusable content](aria-hidden-no-focusable-content-6cfa84.md)
 
 ## Accessibility Requirements Mapping
 
 <ul class="act-requirements-list">
   <li><details>
-    <summary><span>1.1.1 Non-text Content (Level A)</span></summary>
+    <summary><span>4.1.2 Name, Role, Value (Level A)</span></summary>
     <ul>
-      <li><a href="https://www.w3.org/TR/WCAG21/#non-text-content">Learn more about 1.1.1 Non-text Content</a></li>
+      <li><a href="https://www.w3.org/TR/WCAG21/#name-role-value">Learn more about 4.1.2 Name, Role, Value</a></li>
       <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level A and higher.</li>
       <li>Outcome mapping: <ul>
         <li>Any <code>failed</code> outcomes: success criterion is not satisfied</li>
         <li>All <code>passed</code> outcomes: success criterion needs further testing</li>
         <li>An <code>inapplicable</code> outcome: success criterion needs further testing</li>
-      </ul></li>
-    </ul>
-  </details></li>
-  <li><details>
-    <summary><span>G94: Providing short text alternative for non-text content that serves the same purpose and presents the same information as the non-text content</span></summary>
-    <ul>
-      <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G94">Learn more about technique G94</a></li>
-      <li>Not required for conformance to any W3C accessibility recommendation.</li>
-      <li>Outcome mapping: <ul>
-        <li>Any <code>failed</code> outcomes: technique is not satisfied</li>
-        <li>All <code>passed</code> outcomes: technique needs further testing</li>
-        <li>An <code>inapplicable</code> outcome: technique needs further testing</li>
-      </ul></li>
-    </ul>
-  </details></li>
-  <li><details>
-    <summary><span>G95: Providing short text alternatives that provide a brief description of the non-text content</span></summary>
-    <ul>
-      <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G95">Learn more about technique G95</a></li>
-      <li>Not required for conformance to any W3C accessibility recommendation.</li>
-      <li>Outcome mapping: <ul>
-        <li>Any <code>failed</code> outcomes: technique is not satisfied</li>
-        <li>All <code>passed</code> outcomes: technique needs further testing</li>
-        <li>An <code>inapplicable</code> outcome: technique needs further testing</li>
       </ul></li>
     </ul>
   </details></li>
@@ -104,7 +80,6 @@ _There are currently no assumptions._
 
 The following aspects are required in using this rule.
 
-- [Accessibility Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-accessibility)
 - [DOM Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom)
 - [CSS Styling](https://www.w3.org/TR/act-rules-aspects/#input-aspects-css)
 
@@ -114,209 +89,96 @@ The following aspects are required in using this rule.
 
 #### Passed Example 1
 
-<a class="example-link" title="Passed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/23a2a8/32bfac8a98cc212aa7bf9151bf40f665a7f51696.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/307n5z/ccaf2315b5268a447dff07aad635b3ad27aabaf8.html">Open in a new tab</a>
 
-This `img` element has an [accessible name][] because of the `alt` attribute.
+None of these `button` elements has [descendants][] that are included in [sequential focus navigation][].
 
 ```html
-<img alt="W3C logo" src="/test-assets/shared/w3c-logo.png" />
+<button>Save</button> <button aria-label="save options" aria-expanded="false">▼</button>
 ```
 
 #### Passed Example 2
 
-<a class="example-link" title="Passed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/23a2a8/38cc6a87fcc81fcc2248f0cd74ca48396b7aa432.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/307n5z/9bdea8c670e441afe5299bed4ea02b304becaaf8.html">Open in a new tab</a>
 
-This [semantic][semantic role] `img` element has an [accessible name][] because of the `aria-label` attribute.
+This element with `checkbox` role has no [descendants][] that are included in [sequential focus navigation][]. Instead the link to the terms of service is adjacent, and `aria-labelledby` is used to provide its [accessible name][].
 
 ```html
-<div
-	role="img"
-	aria-label="W3C logo"
-	style="width:72px; height:48px; background-image: url(/test-assets/shared/w3c-logo.png)"
-></div>
+<p id="terms">
+	<span role="checkbox" aria-checked="false" tabindex="0" aria-labelledby="terms">
+		I agree to the
+	</span>
+	<a href="/terms">terms of service</a>
+</p>
 ```
 
 #### Passed Example 3
 
-<a class="example-link" title="Passed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/23a2a8/feb06eece7b158ab66a25bfa2c47a196309f0d93.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/307n5z/8c835039e68f3fefc58e8b0985b2060fa02b3480.html">Open in a new tab</a>
 
-This [semantic][semantic role] `img` element has an [accessible name][] because of an `aria-labelledby` attribute and an element with matching `id`.
+This element with `menuitemcheckbox` role has an `input` element as a descendant. Because the `input` is disabled it is not included in [sequential focus navigation][].
 
-```html
-<div style="display: none" id="img-label">W3C logo</div>
-<div
-	role="img"
-	aria-labelledby="img-label"
-	style="width:72px; height:48px; background-image: url(/test-assets/shared/w3c-logo.png)"
-></div>
-```
-
-#### Passed Example 4
-
-<a class="example-link" title="Passed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/23a2a8/40d83620b0bcbcf0e7380177384f48596823e7a9.html">Open in a new tab</a>
-
-This `img` element has an [accessible name][] because of a `title` attribute.
-
-**Note**: There are assistive technologies that do not support using the `title` attribute for an [accessible name][], or in which this feature can be disabled.
+**Note**: The `input` checkbox has a `role` [attribute value][] of `none` to ensure it is ignored by browsers that do not support [presentational children][].
 
 ```html
-<img title="W3C logo" src="/test-assets/shared/w3c-logo.png" />
-```
-
-#### Passed Example 5
-
-<a class="example-link" title="Passed Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/23a2a8/2f35ed62ed14afb6d9e8b886e95e846f0cfa0d2a.html">Open in a new tab</a>
-
-This `img` element has an [implicit role][] of `presentation` because of the empty `alt` attribute.
-
-```html
-<img alt="" src="/test-assets/shared/background.png" />
-```
-
-#### Passed Example 6
-
-<a class="example-link" title="Passed Example 6" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/23a2a8/e8f40f5af06646ef15283302903f6c78f7d7a505.html">Open in a new tab</a>
-
-This `img` element has an [explicit role][] of `presentation` because of the value of the `role` attribute.
-
-```html
-<img role="presentation" style="width:72px; height:48px; background-image: url(/test-assets/shared/background.png)" />
-```
-
-#### Passed Example 7
-
-<a class="example-link" title="Passed Example 7" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/23a2a8/13b8678881fba03e7465f82b5550abc5093f7968.html">Open in a new tab</a>
-
-This `img` element has an [explicit role][] of `none` because of the value of the `role` attribute.
-
-```html
-<img role="none" src="/test-assets/shared/background.png" />
-```
-
-#### Passed Example 8
-
-<a class="example-link" title="Passed Example 8" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/23a2a8/ba9cdf6d0c336f0abf7cd2992c4a2a62c6c719fd.html">Open in a new tab</a>
-
-This off screen `img` element has an [implicit role][] of `presentation` because of the empty `alt` attribute.
-
-```html
-<div style="margin-left:-9999px;">
-	<img alt="" src="/test-assets/shared/background.png" />
-</div>
+<ul role="menu">
+	<li role="menuitemcheckbox" aria-checked="true">
+		<input type="checkbox" role="none" disabled checked />
+		Sort by Last Modified
+	</li>
+</ul>
 ```
 
 ### Failed
 
 #### Failed Example 1
 
-<a class="example-link" title="Failed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/23a2a8/8006d1541dc71b93e6ec4d101a386e0043d1a521.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/307n5z/3798f2c4c821019fe59bbcc671d46b4e9d2c9d50.html">Open in a new tab</a>
 
-This `img` element has an empty [accessible name][] and an [implicit role][] of `img` because it is missing an `alt` attribute.
+This `button` element has a [child][] `span` element. Because the `span` element has a `tabindex` attribute with value of `0`, it is included in [sequential focus navigation][].
 
 ```html
-<img src="/test-assets/shared/w3c-logo.png" />
+<button>
+	Save
+	<span role="button" aria-label="save options" aria-expanded="false" tabindex="0">▼</span>
+</button>
 ```
 
 #### Failed Example 2
 
-<a class="example-link" title="Failed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/23a2a8/496963cfd35d4873c010469c47c84d4358fba035.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/307n5z/b9f6f775efc8d7cdc38782087ccc6abaa88babb6.html">Open in a new tab</a>
 
-This element with role of `img` has an empty [accessible name][].
+This element with `checkbox` role has an `a` element as a [child][]. Because the `a` element has an `href` attribute, it is included in [sequential focus navigation][].
 
 ```html
-<div role="img" style="width:72px; height:48px; background-image: url(/test-assets/shared/w3c-logo.png)"></div>
+<p role="checkbox" aria-checked="false" tabindex="0">I agree to the <a href="/terms">terms of service</a></p>
 ```
 
 #### Failed Example 3
 
-<a class="example-link" title="Failed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/23a2a8/fef9a3ad8b2f2a6beeaf44ef7dafce08e743ea67.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/307n5z/61a402c2eb82ccb8614aa62918cff81b8306ddf2.html">Open in a new tab</a>
 
-This `img` element inside a `div` positioned off screen has an empty [accessible name][] and an [implicit role][] of `img`.
-
-```html
-<div style="margin-left:-9999px;"><img src="/test-assets/shared/w3c-logo.png" /></div>
-```
-
-#### Failed Example 4
-
-<a class="example-link" title="Failed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/23a2a8/b0348c1e6fced2df1ebd93caef4d383f6c7a0461.html">Open in a new tab</a>
-
-This `img` element has an empty [accessible name][] because the space in the `alt` attribute is trimmed off by the [accessible name computation](https://www.w3.org/TR/accname-1.1/). Because of the space, the `alt` attribute is not empty (`""`) which gives the element the [implicit role][] of `img`.
+This element with `menuitemcheckbox` role has a checkbox as a child. Because the checkbox is not disabled, it is included in [sequential focus navigation][].
 
 ```html
-<img src="/test-assets/shared/w3c-logo.png" alt=" " />
-```
-
-#### Failed Example 5
-
-<a class="example-link" title="Failed Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/23a2a8/d70470a37db713810be85275e5d0c698f85ab320.html">Open in a new tab</a>
-
-This `img` element has an [explicit role][] of `none`. However, it is [focusable][] due to the `tabindex` attribute. Because of this it has a [semantic role][] of `img` due to [Presentational Roles Conflict Resolution][]. It does not have an accessible name.
-
-```html
-<img role="none" tabindex="0" src="/test-assets/shared/w3c-logo.png" />
+<ul role="menu">
+	<li role="menuitemcheckbox" aria-checked="true">
+		<input type="checkbox" checked />
+		Sort by Last Modified
+	</li>
+</ul>
 ```
 
 ### Inapplicable
 
 #### Inapplicable Example 1
 
-<a class="example-link" title="Inapplicable Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/23a2a8/cd3b3a4046451da9b9cc3e166c09d27583a2c30b.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/307n5z/54cd6b714326ddf6ae1181112d6ce35f6f3e3579.html">Open in a new tab</a>
 
-This `svg` element has an [implicit role][] of `graphics-document`.
-
-```html
-<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100">
-	<circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
-</svg>
-```
-
-#### Inapplicable Example 2
-
-<a class="example-link" title="Inapplicable Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/23a2a8/25e5364c0a1320a08e2742fa59a0f8627591bc61.html">Open in a new tab</a>
-
-This [semantic][semantic role] `img` element is hidden with `aria-hidden` set to "true".
+This element has a `link` role which does not have [presentational children][].
 
 ```html
-<div
-	role="img"
-	aria-hidden="true"
-	style="width:72px; height:48px; background-image: url(/test-assets/shared/w3c-logo.png)"
-></div>
-```
-
-#### Inapplicable Example 3
-
-<a class="example-link" title="Inapplicable Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/23a2a8/e15b9aca4aaa53cb3a96ae48e78e1af064b9a01d.html">Open in a new tab</a>
-
-This `img` element is hidden with `aria-hidden` set to "true".
-
-```html
-<img src="/test-assets/shared/w3c-logo.png" aria-hidden="true" />
-```
-
-#### Inapplicable Example 4
-
-<a class="example-link" title="Inapplicable Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/23a2a8/7d696551efaafa0da33bb6e56b8b43707c7c7de9.html">Open in a new tab</a>
-
-This `img` element is hidden because its parent has `display: none`.
-
-```html
-<div style="display: none">
-	<img src="/test-assets/shared/w3c-logo.png" />
-</div>
-```
-
-#### Inapplicable Example 5
-
-<a class="example-link" title="Inapplicable Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/23a2a8/f7692caf5f8c788d58e1aeb8d4f1f240fafdfa91.html">Open in a new tab</a>
-
-This `img` element is hidden with `visibility: hidden`.
-
-```html
-<div style="visibility: hidden">
-	<img src="/test-assets/shared/w3c-logo.png" />
-</div>
+<a href="https://w3.org">W3C Website</a>
 ```
 
 ## Glossary
@@ -334,6 +196,23 @@ For more details, see [examples of accessible name][].
 **Note:** As per the [accessible name and description computation][], each element always has an accessible name. When no accessible name is provided, the element will nonetheless be assigned an empty (`""`) one.
 
 **Note:** As per the [accessible name and description computation][], accessible names are [flat string](https://www.w3.org/TR/accname-1.1/#terminology) trimmed of leading and trailing whitespace. Notably, it is not possible for a non-empty accessible name to be composed only of whitespace since these must be trimmed.
+
+### Attribute value {#attribute-value}
+
+The <dfn id="attribute-value:attribute">attribute value</dfn> of a content attribute set on an HTML element is the value that the attribute gets after being parsed and computed according to specifications. It may differ from the value that is actually written in the HTML code due to trimming whitespace or non-digits characters, default values, or case-insensitivity.
+
+Some notable case of attribute value, among others:
+
+- For [enumerated attributes][], the <dfn id="attribute-value:enumerated">attribute value</dfn> is either the state of the attribute, or the keyword that maps to it; even for the default states. Thus `<input type="image" />` has an attribute value of either `Image Button` (the state) or `image` (the keyword mapping to it), both formulations having the same meaning; similarly, "an input element with a `type` _attribute value_ of `Text`" can be either `<input type="text" />`, `<input />` (missing value default), or `<input type="invalid" />` (invalid value default).
+- For [boolean attributes][], the <dfn id="attribute-value:boolean">attribute value</dfn> is `true` when the attribute is present and `false` otherwise. Thus `<button disabled>`, `<button disabled="disabled">` and `<button disabled="">` all have a `disabled` _attribute value_ of `true`.
+- For attributes whose value is used in a case-insensitive context, the <dfn id="attribute-value:case-insensitive">attribute value</dfn> is the lowercase version of the value written in the HTML code.
+- For attributes that accept [numbers][], the <dfn id="attribute-value:number">attribute value</dfn> is the result of parsing the value written in the HTML code according to the rules for parsing this kind of number.
+- For attributes that accept sets of tokens, whether [space separated][] or [comma separated][], the <dfn id="attribute-value:tokens-list">attribute value</dfn> is the set of tokens obtained after parsing the set and, depending on the case, converting its items to lowercase (if the set is used in a case-insensitive context).
+- For `aria-*` attributes, the <dfn id="attribute-value:aria">attribute value</dfn> is computed as indicated in the [WAI-ARIA specification][] and the [HTML Accessibility API Mappings][html aam].
+
+This list is not exhaustive, and only serves as an illustration for some of the most common cases.
+
+The <dfn id="attribute-value:idl">attribute value</dfn> of an [IDL attribute][] is the value returned on getting it. Note that when an [IDL attribute][] [reflects][reflect] a content attribute, they have the same attribute value.
 
 ### Explicit Semantic Role {#explicit-role}
 
@@ -436,29 +315,43 @@ The _WAI ARIA Specifications_ group both the WAI ARIA W3C Recommendation and ARI
 {% include_relative _versions.md %}
 
 [accessibility support base line]: https://www.w3.org/TR/WCAG-EM/#step1c 'Definition of accessibility support base line'
+[accessibility tree]: https://www.w3.org/TR/accname-1.1/#dfn-accessibility-tree 'Definition of Accessibility tree'
 [accessible name and description computation]: https://www.w3.org/TR/accname 'Accessible Name and Description Computation'
-[accessible name]: #accessible-name 'Definition of accessible name'
+[accessible name]: #accessible-name 'Definition of Accessible name'
+[attribute value]: #attribute-value 'Definition of Attribute value'
+[boolean attributes]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attributes 'HTML Specification of Boolean Attribute'
+[child]: https://dom.spec.whatwg.org/#concept-tree-child 'Definition child, as on 2020-10-21'
+[comma separated]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#comma-separated-tokens 'HTML Specification of Comma Separated Tokens'
 [computed]: https://www.w3.org/TR/css-cascade/#computed-value 'CSS definition of computed value'
+[descendants]: https://dom.spec.whatwg.org/#concept-tree-descendant 'Definition Descendant, as on 2020-10-21'
 [element]: https://dom.spec.whatwg.org/#element 'DOM element, 2021/05/31'
+[enumerated attributes]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#enumerated-attribute 'HTML Specification of Enumerated Attribute'
 [examples of accessible name]: https://act-rules.github.io/pages/examples/accessible-name/
 [examples of included in the accessibility tree]: https://act-rules.github.io/pages/examples/included-in-the-accessibility-tree/
-[explicit role]: #explicit-role 'Definition of explicit role'
-[flat tree]: https://drafts.csswg.org/css-scoping/#flat-tree 'Definition of flat tree'
-[focusable]: #focusable 'Definition of focusable'
+[explicit role]: #explicit-role 'Definition of Explicit Role'
+[flat tree]: https://drafts.csswg.org/css-scoping/#flat-tree 'CSS Scoping definition of Flat tree, working draft'
+[focusable]: #focusable 'Definition of Focusable'
+[html aam]: https://www.w3.org/TR/html-aam-1.0/#html-attribute-state-and-property-mappings 'Specification of HTML attributes value mapping to ARIA states and properties'
 [html namespaces]: https://infra.spec.whatwg.org/#namespaces 'HTML namespace, 2021/05/31'
-[html]: #namespaced-element
-[implicit role]: #implicit-role 'Definition of implicit role'
+[html or svg element]: #namespaced-element
+[idl attribute]: https://heycam.github.io/webidl/#idl-attributes "Definition of Web IDL Attribute (Editor's Draft)"
+[implicit role]: #implicit-role 'Definition of Implicit Role'
 [included in the accessibility tree]: #included-in-the-accessibility-tree 'Definition of Included in the Accessibility Tree'
 [inclusive ancestors]: https://dom.spec.whatwg.org/#concept-tree-inclusive-ancestor 'DOM Definition of Inclusive Ancestor'
 [marked as decorative]: #marked-as-decorative 'Definition of Marked as Decorative'
 [namespaceuri]: https://dom.spec.whatwg.org/#dom-element-namespaceuri 'DOM Element namespaceURI, 2021/05/31'
+[numbers]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#numbers 'HTML Specification of Number Parsing'
+[presentational children]: https://www.w3.org/TR/wai-aria-1.1/#childrenArePresentational 'WAI-ARIA 1.1 Presentational Children'
 [presentational roles conflict resolution]: https://www.w3.org/TR/wai-aria-1.1/#conflict_resolution_presentation_none 'Presentational Roles Conflict Resolution'
 [programmatically hidden]: #programmatically-hidden 'Definition of Programmatically Hidden'
 [pure decoration]: https://www.w3.org/TR/WCAG21/#dfn-pure-decoration 'WCAG definition of Pure Decoration'
+[reflect]: https://html.spec.whatwg.org/multipage/common-dom-interfaces.html#reflecting-content-attributes-in-idl-attributes 'HTML specification of Reflecting Content Attributes in IDL Attributes'
 [role attribute]: https://www.w3.org/TR/role-attribute/ 'Specification of the role attribute'
 [rules for parsing integers]: https://html.spec.whatwg.org/#rules-for-parsing-integers
-[semantic role]: #semantic-role 'Definition of semantic role'
-[sequential focus navigation]: https://html.spec.whatwg.org/multipage/interaction.html#sequential-focus-navigation
+[semantic role]: #semantic-role 'Definition of Semantic role'
+[sequential focus navigation]: https://html.spec.whatwg.org/#sequential-focus-navigation 'HTML sequential focus navigation, 2020/10/21'
+[space separated]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#space-separated-tokens 'HTML Specification of Space Separated Tokens'
 [tabindex attribute]: https://html.spec.whatwg.org/#attr-tabindex
 [tabindex value]: https://html.spec.whatwg.org/#tabindex-value
+[wai-aria specification]: https://www.w3.org/TR/wai-aria-1.1/#propcharacteristic_value 'WAI-ARIA Specification of States and Properties Value'
 [wai-aria specifications]: #wai-aria-specifications 'Definition of WAI-ARIA specifications'
