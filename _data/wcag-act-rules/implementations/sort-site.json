@@ -8,14 +8,14 @@
     "partial": 0,
     "minimal": 0,
     "inconsistent": 0,
-    "untested": 14
+    "untested": 17
   },
   "proposedRules": {
     "complete": 0,
     "partial": 0,
     "minimal": 0,
     "inconsistent": 0,
-    "untested": 77
+    "untested": 74
   },
   "actRuleMapping": [
     {
@@ -354,7 +354,7 @@
     {
       "ruleId": "7d6734",
       "ruleName": "SVG element with explicit role has non-empty accessible name",
-      "ruleApproved": false,
+      "ruleApproved": true,
       "procedureNames": [],
       "consistency": null,
       "coverage": null,
@@ -615,7 +615,7 @@
     {
       "ruleId": "307n5z",
       "ruleName": "Element with presentational children has no focusable content",
-      "ruleApproved": false,
+      "ruleApproved": true,
       "procedureNames": [],
       "consistency": null,
       "coverage": null,
@@ -678,7 +678,7 @@
     {
       "ruleId": "a25f45",
       "ruleName": "Headers attribute specified on a cell refers to cells in the same table element",
-      "ruleApproved": false,
+      "ruleApproved": true,
       "procedureNames": [],
       "consistency": null,
       "coverage": null,
