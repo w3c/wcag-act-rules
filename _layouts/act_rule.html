@@ -33,6 +33,7 @@ layout: standalone_resource
 {% if ruleVersions %}
 <ol>
   {%- for ruleVersion in ruleVersions %}
+  {%- if ruleVersion.isoDate < ruleVersions[forloop.index].isoDate %}{% continue %}{% endif %}
   <li>
     {%- capture versionTitle %}
       {%- if ruleVersion.file contains 'proposed' %} 
@@ -40,7 +41,7 @@ layout: standalone_resource
       {%- elsif ruleVersion.file contains 'index' %}
         Latest version, {{ ruleVersion.w3cDate }}
       {%- else %}
-        {{ ruleVersion.w3cDate }} version
+        Previous version, {{ ruleVersion.w3cDate }}
       {%- endif %}
     {%- endcapture %}
     {%- if page.github.path contains ruleVersion.file %}
