@@ -34,6 +34,8 @@ layout: standalone_resource
 <ol>
   {%- for ruleVersion in ruleVersions %}
   <li>
+    {% if '2022-01-28' < '2022-02-01' %}LT works{% endif %}
+    {% if '2022-02-28' > '2021-10-01' %}GT works{% endif %} - 
     {%- capture versionTitle %}
       {%- if ruleVersion.file contains 'proposed' %} 
         Proposed version, {{ ruleVersion.w3cDate }}
