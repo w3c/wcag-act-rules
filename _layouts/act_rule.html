@@ -33,16 +33,15 @@ layout: standalone_resource
 {% if ruleVersions %}
 <ol>
   {%- for ruleVersion in ruleVersions %}
+  {%- if ruleVersion.isoDate < ruleVersions[forloop.index].isoDate %}{% continue %}{% endif %}
   <li>
-    {% if '2022-01-28' < '2022-02-01' %}LT works{% endif %}
-    {% if '2022-02-28' > '2021-10-01' %}GT works{% endif %} - 
     {%- capture versionTitle %}
       {%- if ruleVersion.file contains 'proposed' %} 
         Proposed version, {{ ruleVersion.w3cDate }}
       {%- elsif ruleVersion.file contains 'index' %}
         Latest version, {{ ruleVersion.w3cDate }}
       {%- else %}
-        {{ ruleVersion.w3cDate }} version
+        Previous version, {{ ruleVersion.w3cDate }}
       {%- endif %}
     {%- endcapture %}
     {%- if page.github.path contains ruleVersion.file %}
