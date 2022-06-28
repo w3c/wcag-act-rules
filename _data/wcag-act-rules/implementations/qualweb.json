@@ -2,19 +2,19 @@
   "vendor": "LASIGE, Faculdade de Ciências da Universidade de Lisboa",
   "name": "QualWeb",
   "version": "3.0.0",
-  "lastModified": "23 June 2022",
+  "lastModified": "28 June 2022",
   "approvedRules": {
-    "complete": 10,
-    "partial": 5,
+    "complete": 12,
+    "partial": 3,
     "minimal": 0,
     "inconsistent": 2,
     "untested": 0
   },
   "proposedRules": {
-    "complete": 16,
-    "partial": 6,
+    "complete": 17,
+    "partial": 4,
     "minimal": 13,
-    "inconsistent": 19,
+    "inconsistent": 20,
     "untested": 20
   },
   "actRuleMapping": [
@@ -643,8 +643,8 @@
         ]
       },
       "coverage": {
-        "covered": 18,
-        "untested": 1,
+        "covered": 19,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 19
       },
@@ -929,7 +929,7 @@
             {
               "procedureName": "Element within body has valid lang attribute",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -2838,8 +2838,8 @@
         ]
       },
       "coverage": {
-        "covered": 26,
-        "untested": 2,
+        "covered": 27,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 28
       },
@@ -3244,7 +3244,7 @@
             {
               "procedureName": "Link has accessible name",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -3259,7 +3259,7 @@
             {
               "procedureName": "Link has accessible name",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -3664,7 +3664,7 @@
       "procedureNames": [
         "Element with `aria-hidden` has no focusable content"
       ],
-      "consistency": "partial",
+      "consistency": null,
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -3675,8 +3675,8 @@
         ]
       },
       "coverage": {
-        "covered": 12,
-        "untested": 2,
+        "covered": 13,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 14
       },
@@ -3736,7 +3736,7 @@
             {
               "procedureName": "Element with `aria-hidden` has no focusable content",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -3841,7 +3841,7 @@
             {
               "procedureName": "Element with `aria-hidden` has no focusable content",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -4162,8 +4162,8 @@
         ]
       },
       "coverage": {
-        "covered": 16,
-        "untested": 2,
+        "covered": 18,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 19
       },
@@ -4193,7 +4193,7 @@
             {
               "procedureName": "ARIA required owned elements",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -4223,7 +4223,7 @@
             {
               "procedureName": "ARIA required owned elements",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -10879,7 +10879,7 @@
       "procedureNames": [
         "meta viewport does not prevent zoom"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -10890,8 +10890,8 @@
         ]
       },
       "coverage": {
-        "covered": 10,
-        "untested": 1,
+        "covered": 11,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 11
       },
@@ -10921,7 +10921,7 @@
             {
               "procedureName": "meta viewport does not prevent zoom",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -11315,7 +11315,7 @@
       "procedureNames": [
         "Element with presentational children has no focusable content"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -11326,8 +11326,8 @@
         ]
       },
       "coverage": {
-        "covered": 6,
-        "untested": 1,
+        "covered": 7,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 7
       },
@@ -11387,7 +11387,7 @@
             {
               "procedureName": "Element with presentational children has no focusable content",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -12380,7 +12380,7 @@
       "procedureNames": [
         "Headers attribute specified on a cell refers to cells in the same table element"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -12391,8 +12391,8 @@
         ]
       },
       "coverage": {
-        "covered": 16,
-        "untested": 1,
+        "covered": 17,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 17
       },
@@ -12542,7 +12542,7 @@
             {
               "procedureName": "Headers attribute specified on a cell refers to cells in the same table element",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -15842,8 +15842,8 @@
       },
       "coverage": {
         "covered": 5,
-        "untested": 2,
-        "cantTell": 7,
+        "untested": 0,
+        "cantTell": 9,
         "testCaseTotal": 14
       },
       "testCaseResults": [
@@ -15962,7 +15962,7 @@
             {
               "procedureName": "Zoomed text node is not clipped with CSS overflow",
               "outcomes": [
-                "untested"
+                "cantTell"
               ]
             }
           ]
@@ -15977,7 +15977,7 @@
             {
               "procedureName": "Zoomed text node is not clipped with CSS overflow",
               "outcomes": [
-                "untested"
+                "cantTell"
               ]
             }
           ]
