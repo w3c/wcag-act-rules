@@ -5300,6 +5300,864 @@
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/9e45ec/proposed/"
     },
     {
+      "ruleId": "7d6734",
+      "approved": true,
+      "isApproved": true,
+      "ruleName": "SVG element with explicit role has non-empty accessible name",
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.1.1": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "cc172d9a654d94e00505456845920c099fbabfa7",
+      "testcaseTitle": "Passed Example 1",
+      "relativePath": "testcases/7d6734/cc172d9a654d94e00505456845920c099fbabfa7.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/7d6734/cc172d9a654d94e00505456845920c099fbabfa7.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/7d6734/proposed/"
+    },
+    {
+      "ruleId": "7d6734",
+      "approved": true,
+      "isApproved": true,
+      "ruleName": "SVG element with explicit role has non-empty accessible name",
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.1.1": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "8ad324fd8d3f5113f72ac40f978a85e1777d43d1",
+      "testcaseTitle": "Passed Example 2",
+      "relativePath": "testcases/7d6734/8ad324fd8d3f5113f72ac40f978a85e1777d43d1.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/7d6734/8ad324fd8d3f5113f72ac40f978a85e1777d43d1.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/7d6734/proposed/"
+    },
+    {
+      "ruleId": "7d6734",
+      "approved": true,
+      "isApproved": true,
+      "ruleName": "SVG element with explicit role has non-empty accessible name",
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.1.1": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "f2af674524641f89a409d5f91caf512b162d5778",
+      "testcaseTitle": "Passed Example 3",
+      "relativePath": "testcases/7d6734/f2af674524641f89a409d5f91caf512b162d5778.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/7d6734/f2af674524641f89a409d5f91caf512b162d5778.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/7d6734/proposed/"
+    },
+    {
+      "ruleId": "7d6734",
+      "approved": true,
+      "isApproved": true,
+      "ruleName": "SVG element with explicit role has non-empty accessible name",
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.1.1": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "2847ca922fa3564341094245c34ef3120167bc0b",
+      "testcaseTitle": "Failed Example 1",
+      "relativePath": "testcases/7d6734/2847ca922fa3564341094245c34ef3120167bc0b.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/7d6734/2847ca922fa3564341094245c34ef3120167bc0b.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/7d6734/proposed/"
+    },
+    {
+      "ruleId": "7d6734",
+      "approved": true,
+      "isApproved": true,
+      "ruleName": "SVG element with explicit role has non-empty accessible name",
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.1.1": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "e1724dd3a91aff66b84807df1b9dbbaeaf272189",
+      "testcaseTitle": "Failed Example 2",
+      "relativePath": "testcases/7d6734/e1724dd3a91aff66b84807df1b9dbbaeaf272189.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/7d6734/e1724dd3a91aff66b84807df1b9dbbaeaf272189.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/7d6734/proposed/"
+    },
+    {
+      "ruleId": "7d6734",
+      "approved": true,
+      "isApproved": true,
+      "ruleName": "SVG element with explicit role has non-empty accessible name",
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.1.1": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "c65600eae4b88d275675cb976ceac01b9a4f47e4",
+      "testcaseTitle": "Failed Example 3",
+      "relativePath": "testcases/7d6734/c65600eae4b88d275675cb976ceac01b9a4f47e4.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/7d6734/c65600eae4b88d275675cb976ceac01b9a4f47e4.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/7d6734/proposed/"
+    },
+    {
+      "ruleId": "7d6734",
+      "approved": true,
+      "isApproved": true,
+      "ruleName": "SVG element with explicit role has non-empty accessible name",
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.1.1": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "94396aaa5928a68aba7320ea3690ca6c302fdcab",
+      "testcaseTitle": "Failed Example 4",
+      "relativePath": "testcases/7d6734/94396aaa5928a68aba7320ea3690ca6c302fdcab.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/7d6734/94396aaa5928a68aba7320ea3690ca6c302fdcab.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/7d6734/proposed/"
+    },
+    {
+      "ruleId": "7d6734",
+      "approved": true,
+      "isApproved": true,
+      "ruleName": "SVG element with explicit role has non-empty accessible name",
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.1.1": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "inapplicable",
+      "testcaseId": "1f2223805c79c21fade3ebf0d9a29f979c16f581",
+      "testcaseTitle": "Inapplicable Example 1",
+      "relativePath": "testcases/7d6734/1f2223805c79c21fade3ebf0d9a29f979c16f581.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/7d6734/1f2223805c79c21fade3ebf0d9a29f979c16f581.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/7d6734/proposed/"
+    },
+    {
+      "ruleId": "7d6734",
+      "approved": true,
+      "isApproved": true,
+      "ruleName": "SVG element with explicit role has non-empty accessible name",
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.1.1": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "inapplicable",
+      "testcaseId": "b3c602b7aa172611a22304666dd8d81d6ce8d214",
+      "testcaseTitle": "Inapplicable Example 2",
+      "relativePath": "testcases/7d6734/b3c602b7aa172611a22304666dd8d81d6ce8d214.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/7d6734/b3c602b7aa172611a22304666dd8d81d6ce8d214.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/7d6734/proposed/"
+    },
+    {
+      "ruleId": "7d6734",
+      "approved": true,
+      "isApproved": true,
+      "ruleName": "SVG element with explicit role has non-empty accessible name",
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.1.1": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "inapplicable",
+      "testcaseId": "ec2a7a47c3850e8aacd971a445b90390b2ab73bb",
+      "testcaseTitle": "Inapplicable Example 3",
+      "relativePath": "testcases/7d6734/ec2a7a47c3850e8aacd971a445b90390b2ab73bb.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/7d6734/ec2a7a47c3850e8aacd971a445b90390b2ab73bb.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/7d6734/proposed/"
+    },
+    {
+      "ruleId": "c487ae",
+      "ruleName": "Link has non-empty accessible name",
+      "approved": true,
+      "isApproved": true,
+      "ruleAccessibilityRequirements": {
+        "wcag20:4.1.2": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:2.4.4": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:2.4.9": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:G91": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "d36abfa44924a4d4088bada05f439ae392dfd662",
+      "testcaseTitle": "Passed Example 11",
+      "relativePath": "testcases/c487ae/d36abfa44924a4d4088bada05f439ae392dfd662.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/c487ae/d36abfa44924a4d4088bada05f439ae392dfd662.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/c487ae/proposed/"
+    },
+    {
+      "ruleId": "c487ae",
+      "ruleName": "Link has non-empty accessible name",
+      "approved": true,
+      "isApproved": true,
+      "ruleAccessibilityRequirements": {
+        "wcag20:4.1.2": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:2.4.4": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:2.4.9": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:G91": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "7b3b94c0e39bed9d432f379efa77ba9f54c81c6d",
+      "testcaseTitle": "Failed Example 11",
+      "relativePath": "testcases/c487ae/7b3b94c0e39bed9d432f379efa77ba9f54c81c6d.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/c487ae/7b3b94c0e39bed9d432f379efa77ba9f54c81c6d.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/c487ae/proposed/"
+    },
+    {
+      "ruleId": "307n5z",
+      "approved": true,
+      "isApproved": true,
+      "ruleName": "Element with presentational children has no focusable content",
+      "ruleAccessibilityRequirements": {
+        "wcag20:4.1.2": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "ccaf2315b5268a447dff07aad635b3ad27aabaf8",
+      "testcaseTitle": "Passed Example 1",
+      "relativePath": "testcases/307n5z/ccaf2315b5268a447dff07aad635b3ad27aabaf8.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/307n5z/ccaf2315b5268a447dff07aad635b3ad27aabaf8.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/307n5z/proposed/"
+    },
+    {
+      "ruleId": "307n5z",
+      "approved": true,
+      "isApproved": true,
+      "ruleName": "Element with presentational children has no focusable content",
+      "ruleAccessibilityRequirements": {
+        "wcag20:4.1.2": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "9bdea8c670e441afe5299bed4ea02b304becaaf8",
+      "testcaseTitle": "Passed Example 2",
+      "relativePath": "testcases/307n5z/9bdea8c670e441afe5299bed4ea02b304becaaf8.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/307n5z/9bdea8c670e441afe5299bed4ea02b304becaaf8.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/307n5z/proposed/"
+    },
+    {
+      "ruleId": "307n5z",
+      "approved": true,
+      "isApproved": true,
+      "ruleName": "Element with presentational children has no focusable content",
+      "ruleAccessibilityRequirements": {
+        "wcag20:4.1.2": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "8c835039e68f3fefc58e8b0985b2060fa02b3480",
+      "testcaseTitle": "Passed Example 3",
+      "relativePath": "testcases/307n5z/8c835039e68f3fefc58e8b0985b2060fa02b3480.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/307n5z/8c835039e68f3fefc58e8b0985b2060fa02b3480.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/307n5z/proposed/"
+    },
+    {
+      "ruleId": "307n5z",
+      "approved": true,
+      "isApproved": true,
+      "ruleName": "Element with presentational children has no focusable content",
+      "ruleAccessibilityRequirements": {
+        "wcag20:4.1.2": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "3798f2c4c821019fe59bbcc671d46b4e9d2c9d50",
+      "testcaseTitle": "Failed Example 1",
+      "relativePath": "testcases/307n5z/3798f2c4c821019fe59bbcc671d46b4e9d2c9d50.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/307n5z/3798f2c4c821019fe59bbcc671d46b4e9d2c9d50.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/307n5z/proposed/"
+    },
+    {
+      "ruleId": "307n5z",
+      "approved": true,
+      "isApproved": true,
+      "ruleName": "Element with presentational children has no focusable content",
+      "ruleAccessibilityRequirements": {
+        "wcag20:4.1.2": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "b9f6f775efc8d7cdc38782087ccc6abaa88babb6",
+      "testcaseTitle": "Failed Example 2",
+      "relativePath": "testcases/307n5z/b9f6f775efc8d7cdc38782087ccc6abaa88babb6.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/307n5z/b9f6f775efc8d7cdc38782087ccc6abaa88babb6.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/307n5z/proposed/"
+    },
+    {
+      "ruleId": "307n5z",
+      "approved": true,
+      "isApproved": true,
+      "ruleName": "Element with presentational children has no focusable content",
+      "ruleAccessibilityRequirements": {
+        "wcag20:4.1.2": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "61a402c2eb82ccb8614aa62918cff81b8306ddf2",
+      "testcaseTitle": "Failed Example 3",
+      "relativePath": "testcases/307n5z/61a402c2eb82ccb8614aa62918cff81b8306ddf2.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/307n5z/61a402c2eb82ccb8614aa62918cff81b8306ddf2.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/307n5z/proposed/"
+    },
+    {
+      "ruleId": "307n5z",
+      "approved": true,
+      "isApproved": true,
+      "ruleName": "Element with presentational children has no focusable content",
+      "ruleAccessibilityRequirements": {
+        "wcag20:4.1.2": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "inapplicable",
+      "testcaseId": "54cd6b714326ddf6ae1181112d6ce35f6f3e3579",
+      "testcaseTitle": "Inapplicable Example 1",
+      "relativePath": "testcases/307n5z/54cd6b714326ddf6ae1181112d6ce35f6f3e3579.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/307n5z/54cd6b714326ddf6ae1181112d6ce35f6f3e3579.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/307n5z/proposed/"
+    },
+    {
+      "ruleId": "a25f45",
+      "approved": true,
+      "isApproved": true,
+      "ruleName": "Headers attribute specified on a cell refers to cells in the same table element",
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.3.1": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:H43": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "f99c8bd6aa53c3b2f4d63fee994333453df410c6",
+      "testcaseTitle": "Passed Example 1",
+      "relativePath": "testcases/a25f45/f99c8bd6aa53c3b2f4d63fee994333453df410c6.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/f99c8bd6aa53c3b2f4d63fee994333453df410c6.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/a25f45/proposed/"
+    },
+    {
+      "ruleId": "a25f45",
+      "approved": true,
+      "isApproved": true,
+      "ruleName": "Headers attribute specified on a cell refers to cells in the same table element",
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.3.1": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:H43": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "1400d13aa5a86dbacf71db631f5de1abfc982094",
+      "testcaseTitle": "Passed Example 2",
+      "relativePath": "testcases/a25f45/1400d13aa5a86dbacf71db631f5de1abfc982094.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/1400d13aa5a86dbacf71db631f5de1abfc982094.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/a25f45/proposed/"
+    },
+    {
+      "ruleId": "a25f45",
+      "approved": true,
+      "isApproved": true,
+      "ruleName": "Headers attribute specified on a cell refers to cells in the same table element",
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.3.1": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:H43": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "8391fee07d35c11cfb3fecd19ddaad0fb8c68871",
+      "testcaseTitle": "Passed Example 3",
+      "relativePath": "testcases/a25f45/8391fee07d35c11cfb3fecd19ddaad0fb8c68871.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/8391fee07d35c11cfb3fecd19ddaad0fb8c68871.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/a25f45/proposed/"
+    },
+    {
+      "ruleId": "a25f45",
+      "approved": true,
+      "isApproved": true,
+      "ruleName": "Headers attribute specified on a cell refers to cells in the same table element",
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.3.1": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:H43": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "c02748c85d58e188b3c13773986272df616b2f3c",
+      "testcaseTitle": "Passed Example 4",
+      "relativePath": "testcases/a25f45/c02748c85d58e188b3c13773986272df616b2f3c.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/c02748c85d58e188b3c13773986272df616b2f3c.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/a25f45/proposed/"
+    },
+    {
+      "ruleId": "a25f45",
+      "approved": true,
+      "isApproved": true,
+      "ruleName": "Headers attribute specified on a cell refers to cells in the same table element",
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.3.1": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:H43": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "d935494fdcd2c1fef14d14842c0a19c8f8c54c78",
+      "testcaseTitle": "Passed Example 5",
+      "relativePath": "testcases/a25f45/d935494fdcd2c1fef14d14842c0a19c8f8c54c78.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/d935494fdcd2c1fef14d14842c0a19c8f8c54c78.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/a25f45/proposed/"
+    },
+    {
+      "ruleId": "a25f45",
+      "approved": true,
+      "isApproved": true,
+      "ruleName": "Headers attribute specified on a cell refers to cells in the same table element",
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.3.1": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:H43": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "ba5019010a6e0cfbcb46b2f7e9e63a6117e06f97",
+      "testcaseTitle": "Passed Example 6",
+      "relativePath": "testcases/a25f45/ba5019010a6e0cfbcb46b2f7e9e63a6117e06f97.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/ba5019010a6e0cfbcb46b2f7e9e63a6117e06f97.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/a25f45/proposed/"
+    },
+    {
+      "ruleId": "a25f45",
+      "approved": true,
+      "isApproved": true,
+      "ruleName": "Headers attribute specified on a cell refers to cells in the same table element",
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.3.1": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:H43": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "b1b17ab86ee2ebce350af1c41d2e6ff8911a33f1",
+      "testcaseTitle": "Passed Example 7",
+      "relativePath": "testcases/a25f45/b1b17ab86ee2ebce350af1c41d2e6ff8911a33f1.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/b1b17ab86ee2ebce350af1c41d2e6ff8911a33f1.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/a25f45/proposed/"
+    },
+    {
+      "ruleId": "a25f45",
+      "approved": true,
+      "isApproved": true,
+      "ruleName": "Headers attribute specified on a cell refers to cells in the same table element",
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.3.1": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:H43": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "7291b4b36dfa21e666a765a51c01e777d40a5174",
+      "testcaseTitle": "Passed Example 8",
+      "relativePath": "testcases/a25f45/7291b4b36dfa21e666a765a51c01e777d40a5174.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/7291b4b36dfa21e666a765a51c01e777d40a5174.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/a25f45/proposed/"
+    },
+    {
+      "ruleId": "a25f45",
+      "approved": true,
+      "isApproved": true,
+      "ruleName": "Headers attribute specified on a cell refers to cells in the same table element",
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.3.1": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:H43": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "7f2be26b42fa5846a09019bb949c44be95586e0d",
+      "testcaseTitle": "Failed Example 1",
+      "relativePath": "testcases/a25f45/7f2be26b42fa5846a09019bb949c44be95586e0d.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/7f2be26b42fa5846a09019bb949c44be95586e0d.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/a25f45/proposed/"
+    },
+    {
+      "ruleId": "a25f45",
+      "approved": true,
+      "isApproved": true,
+      "ruleName": "Headers attribute specified on a cell refers to cells in the same table element",
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.3.1": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:H43": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "cd25fd6cc4fde1734fc90c2f11e71886e3458007",
+      "testcaseTitle": "Failed Example 2",
+      "relativePath": "testcases/a25f45/cd25fd6cc4fde1734fc90c2f11e71886e3458007.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/cd25fd6cc4fde1734fc90c2f11e71886e3458007.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/a25f45/proposed/"
+    },
+    {
+      "ruleId": "a25f45",
+      "approved": true,
+      "isApproved": true,
+      "ruleName": "Headers attribute specified on a cell refers to cells in the same table element",
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.3.1": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:H43": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "d0c53c06c9e0a766fd5830fbbaa7df76f8cef92a",
+      "testcaseTitle": "Failed Example 3",
+      "relativePath": "testcases/a25f45/d0c53c06c9e0a766fd5830fbbaa7df76f8cef92a.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/d0c53c06c9e0a766fd5830fbbaa7df76f8cef92a.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/a25f45/proposed/"
+    },
+    {
+      "ruleId": "a25f45",
+      "approved": true,
+      "isApproved": true,
+      "ruleName": "Headers attribute specified on a cell refers to cells in the same table element",
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.3.1": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:H43": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "1bdbd209a611d68876d5b6e37541f7ddc2038f97",
+      "testcaseTitle": "Failed Example 4",
+      "relativePath": "testcases/a25f45/1bdbd209a611d68876d5b6e37541f7ddc2038f97.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/1bdbd209a611d68876d5b6e37541f7ddc2038f97.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/a25f45/proposed/"
+    },
+    {
+      "ruleId": "a25f45",
+      "approved": true,
+      "isApproved": true,
+      "ruleName": "Headers attribute specified on a cell refers to cells in the same table element",
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.3.1": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:H43": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "inapplicable",
+      "testcaseId": "9f7979f4854efa0b1ac299f920229d20246710b9",
+      "testcaseTitle": "Inapplicable Example 1",
+      "relativePath": "testcases/a25f45/9f7979f4854efa0b1ac299f920229d20246710b9.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/9f7979f4854efa0b1ac299f920229d20246710b9.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/a25f45/proposed/"
+    },
+    {
+      "ruleId": "a25f45",
+      "approved": true,
+      "isApproved": true,
+      "ruleName": "Headers attribute specified on a cell refers to cells in the same table element",
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.3.1": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:H43": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "inapplicable",
+      "testcaseId": "09d9fb1862a6f579a948259a44e1117af595d937",
+      "testcaseTitle": "Inapplicable Example 2",
+      "relativePath": "testcases/a25f45/09d9fb1862a6f579a948259a44e1117af595d937.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/09d9fb1862a6f579a948259a44e1117af595d937.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/a25f45/proposed/"
+    },
+    {
+      "ruleId": "a25f45",
+      "approved": true,
+      "isApproved": true,
+      "ruleName": "Headers attribute specified on a cell refers to cells in the same table element",
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.3.1": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:H43": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "inapplicable",
+      "testcaseId": "76b79146e3be6b8ea6920df93b68352b8b9d3c8b",
+      "testcaseTitle": "Inapplicable Example 3",
+      "relativePath": "testcases/a25f45/76b79146e3be6b8ea6920df93b68352b8b9d3c8b.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/76b79146e3be6b8ea6920df93b68352b8b9d3c8b.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/a25f45/proposed/"
+    },
+    {
+      "ruleId": "a25f45",
+      "approved": true,
+      "isApproved": true,
+      "ruleName": "Headers attribute specified on a cell refers to cells in the same table element",
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.3.1": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:H43": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "inapplicable",
+      "testcaseId": "57382c6bd42af05f3b9836a95bee672d1b9330d7",
+      "testcaseTitle": "Inapplicable Example 4",
+      "relativePath": "testcases/a25f45/57382c6bd42af05f3b9836a95bee672d1b9330d7.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/57382c6bd42af05f3b9836a95bee672d1b9330d7.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/a25f45/proposed/"
+    },
+    {
+      "ruleId": "a25f45",
+      "approved": true,
+      "isApproved": true,
+      "ruleName": "Headers attribute specified on a cell refers to cells in the same table element",
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.3.1": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:H43": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "inapplicable",
+      "testcaseId": "e6fd17797e01f46032b6d8edf24831b2775cc831",
+      "testcaseTitle": "Inapplicable Example 5",
+      "relativePath": "testcases/a25f45/e6fd17797e01f46032b6d8edf24831b2775cc831.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/e6fd17797e01f46032b6d8edf24831b2775cc831.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/a25f45/proposed/"
+    },
+    {
       "ruleId": "5f99a7",
       "ruleName": "ARIA attribute is defined in WAI-ARIA",
       "ruleAccessibilityRequirements": null,
@@ -10995,206 +11853,6 @@
       "relativePath": "testcases/de46e4/4fa5219cf39dc536c51d67f6c4f9f54271a8dcfa.html",
       "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/4fa5219cf39dc536c51d67f6c4f9f54271a8dcfa.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/de46e4/proposed/"
-    },
-    {
-      "ruleId": "7d6734",
-      "approved": true,
-      "isApproved": true,
-      "ruleName": "SVG element with explicit role has non-empty accessible name",
-      "ruleAccessibilityRequirements": {
-        "wcag20:1.1.1": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "cc172d9a654d94e00505456845920c099fbabfa7",
-      "testcaseTitle": "Passed Example 1",
-      "relativePath": "testcases/7d6734/cc172d9a654d94e00505456845920c099fbabfa7.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/7d6734/cc172d9a654d94e00505456845920c099fbabfa7.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/7d6734/proposed/"
-    },
-    {
-      "ruleId": "7d6734",
-      "approved": true,
-      "isApproved": true,
-      "ruleName": "SVG element with explicit role has non-empty accessible name",
-      "ruleAccessibilityRequirements": {
-        "wcag20:1.1.1": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "8ad324fd8d3f5113f72ac40f978a85e1777d43d1",
-      "testcaseTitle": "Passed Example 2",
-      "relativePath": "testcases/7d6734/8ad324fd8d3f5113f72ac40f978a85e1777d43d1.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/7d6734/8ad324fd8d3f5113f72ac40f978a85e1777d43d1.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/7d6734/proposed/"
-    },
-    {
-      "ruleId": "7d6734",
-      "approved": true,
-      "isApproved": true,
-      "ruleName": "SVG element with explicit role has non-empty accessible name",
-      "ruleAccessibilityRequirements": {
-        "wcag20:1.1.1": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "f2af674524641f89a409d5f91caf512b162d5778",
-      "testcaseTitle": "Passed Example 3",
-      "relativePath": "testcases/7d6734/f2af674524641f89a409d5f91caf512b162d5778.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/7d6734/f2af674524641f89a409d5f91caf512b162d5778.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/7d6734/proposed/"
-    },
-    {
-      "ruleId": "7d6734",
-      "approved": true,
-      "isApproved": true,
-      "ruleName": "SVG element with explicit role has non-empty accessible name",
-      "ruleAccessibilityRequirements": {
-        "wcag20:1.1.1": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "failed",
-      "testcaseId": "2847ca922fa3564341094245c34ef3120167bc0b",
-      "testcaseTitle": "Failed Example 1",
-      "relativePath": "testcases/7d6734/2847ca922fa3564341094245c34ef3120167bc0b.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/7d6734/2847ca922fa3564341094245c34ef3120167bc0b.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/7d6734/proposed/"
-    },
-    {
-      "ruleId": "7d6734",
-      "approved": true,
-      "isApproved": true,
-      "ruleName": "SVG element with explicit role has non-empty accessible name",
-      "ruleAccessibilityRequirements": {
-        "wcag20:1.1.1": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "failed",
-      "testcaseId": "e1724dd3a91aff66b84807df1b9dbbaeaf272189",
-      "testcaseTitle": "Failed Example 2",
-      "relativePath": "testcases/7d6734/e1724dd3a91aff66b84807df1b9dbbaeaf272189.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/7d6734/e1724dd3a91aff66b84807df1b9dbbaeaf272189.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/7d6734/proposed/"
-    },
-    {
-      "ruleId": "7d6734",
-      "approved": true,
-      "isApproved": true,
-      "ruleName": "SVG element with explicit role has non-empty accessible name",
-      "ruleAccessibilityRequirements": {
-        "wcag20:1.1.1": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "failed",
-      "testcaseId": "c65600eae4b88d275675cb976ceac01b9a4f47e4",
-      "testcaseTitle": "Failed Example 3",
-      "relativePath": "testcases/7d6734/c65600eae4b88d275675cb976ceac01b9a4f47e4.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/7d6734/c65600eae4b88d275675cb976ceac01b9a4f47e4.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/7d6734/proposed/"
-    },
-    {
-      "ruleId": "7d6734",
-      "approved": true,
-      "isApproved": true,
-      "ruleName": "SVG element with explicit role has non-empty accessible name",
-      "ruleAccessibilityRequirements": {
-        "wcag20:1.1.1": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "failed",
-      "testcaseId": "94396aaa5928a68aba7320ea3690ca6c302fdcab",
-      "testcaseTitle": "Failed Example 4",
-      "relativePath": "testcases/7d6734/94396aaa5928a68aba7320ea3690ca6c302fdcab.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/7d6734/94396aaa5928a68aba7320ea3690ca6c302fdcab.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/7d6734/proposed/"
-    },
-    {
-      "ruleId": "7d6734",
-      "approved": true,
-      "isApproved": true,
-      "ruleName": "SVG element with explicit role has non-empty accessible name",
-      "ruleAccessibilityRequirements": {
-        "wcag20:1.1.1": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "inapplicable",
-      "testcaseId": "1f2223805c79c21fade3ebf0d9a29f979c16f581",
-      "testcaseTitle": "Inapplicable Example 1",
-      "relativePath": "testcases/7d6734/1f2223805c79c21fade3ebf0d9a29f979c16f581.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/7d6734/1f2223805c79c21fade3ebf0d9a29f979c16f581.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/7d6734/proposed/"
-    },
-    {
-      "ruleId": "7d6734",
-      "approved": true,
-      "isApproved": true,
-      "ruleName": "SVG element with explicit role has non-empty accessible name",
-      "ruleAccessibilityRequirements": {
-        "wcag20:1.1.1": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "inapplicable",
-      "testcaseId": "b3c602b7aa172611a22304666dd8d81d6ce8d214",
-      "testcaseTitle": "Inapplicable Example 2",
-      "relativePath": "testcases/7d6734/b3c602b7aa172611a22304666dd8d81d6ce8d214.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/7d6734/b3c602b7aa172611a22304666dd8d81d6ce8d214.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/7d6734/proposed/"
-    },
-    {
-      "ruleId": "7d6734",
-      "approved": true,
-      "isApproved": true,
-      "ruleName": "SVG element with explicit role has non-empty accessible name",
-      "ruleAccessibilityRequirements": {
-        "wcag20:1.1.1": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "inapplicable",
-      "testcaseId": "ec2a7a47c3850e8aacd971a445b90390b2ab73bb",
-      "testcaseTitle": "Inapplicable Example 3",
-      "relativePath": "testcases/7d6734/ec2a7a47c3850e8aacd971a445b90390b2ab73bb.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/7d6734/ec2a7a47c3850e8aacd971a445b90390b2ab73bb.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/7d6734/proposed/"
     },
     {
       "ruleId": "80af7b",
@@ -17214,82 +17872,6 @@
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/5effbb/proposed/"
     },
     {
-      "ruleId": "c487ae",
-      "ruleName": "Link has non-empty accessible name",
-      "approved": true,
-      "isApproved": true,
-      "ruleAccessibilityRequirements": {
-        "wcag20:4.1.2": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag20:2.4.4": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag20:2.4.9": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:G91": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "d36abfa44924a4d4088bada05f439ae392dfd662",
-      "testcaseTitle": "Passed Example 11",
-      "relativePath": "testcases/c487ae/d36abfa44924a4d4088bada05f439ae392dfd662.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/c487ae/d36abfa44924a4d4088bada05f439ae392dfd662.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/c487ae/proposed/"
-    },
-    {
-      "ruleId": "c487ae",
-      "ruleName": "Link has non-empty accessible name",
-      "approved": true,
-      "isApproved": true,
-      "ruleAccessibilityRequirements": {
-        "wcag20:4.1.2": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag20:2.4.4": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag20:2.4.9": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:G91": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "failed",
-      "testcaseId": "7b3b94c0e39bed9d432f379efa77ba9f54c81c6d",
-      "testcaseTitle": "Failed Example 11",
-      "relativePath": "testcases/c487ae/7b3b94c0e39bed9d432f379efa77ba9f54c81c6d.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/c487ae/7b3b94c0e39bed9d432f379efa77ba9f54c81c6d.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/c487ae/proposed/"
-    },
-    {
       "ruleId": "b20e66",
       "ruleName": "Links with identical accessible names have equivalent purpose",
       "ruleAccessibilityRequirements": {
@@ -17669,7 +18251,7 @@
     },
     {
       "ruleId": "fd3a94",
-      "ruleName": "Links with identical accessible names and context serve equivalent purpose",
+      "ruleName": "Links with identical accessible names and same context serve equivalent purpose",
       "ruleAccessibilityRequirements": {
         "wcag20:2.4.4": {
           "forConformance": true,
@@ -17693,7 +18275,7 @@
     },
     {
       "ruleId": "fd3a94",
-      "ruleName": "Links with identical accessible names and context serve equivalent purpose",
+      "ruleName": "Links with identical accessible names and same context serve equivalent purpose",
       "ruleAccessibilityRequirements": {
         "wcag20:2.4.4": {
           "forConformance": true,
@@ -17717,7 +18299,7 @@
     },
     {
       "ruleId": "fd3a94",
-      "ruleName": "Links with identical accessible names and context serve equivalent purpose",
+      "ruleName": "Links with identical accessible names and same context serve equivalent purpose",
       "ruleAccessibilityRequirements": {
         "wcag20:2.4.4": {
           "forConformance": true,
@@ -17741,7 +18323,7 @@
     },
     {
       "ruleId": "fd3a94",
-      "ruleName": "Links with identical accessible names and context serve equivalent purpose",
+      "ruleName": "Links with identical accessible names and same context serve equivalent purpose",
       "ruleAccessibilityRequirements": {
         "wcag20:2.4.4": {
           "forConformance": true,
@@ -17765,7 +18347,7 @@
     },
     {
       "ruleId": "fd3a94",
-      "ruleName": "Links with identical accessible names and context serve equivalent purpose",
+      "ruleName": "Links with identical accessible names and same context serve equivalent purpose",
       "ruleAccessibilityRequirements": {
         "wcag20:2.4.4": {
           "forConformance": true,
@@ -17789,7 +18371,7 @@
     },
     {
       "ruleId": "fd3a94",
-      "ruleName": "Links with identical accessible names and context serve equivalent purpose",
+      "ruleName": "Links with identical accessible names and same context serve equivalent purpose",
       "ruleAccessibilityRequirements": {
         "wcag20:2.4.4": {
           "forConformance": true,
@@ -17813,7 +18395,7 @@
     },
     {
       "ruleId": "fd3a94",
-      "ruleName": "Links with identical accessible names and context serve equivalent purpose",
+      "ruleName": "Links with identical accessible names and same context serve equivalent purpose",
       "ruleAccessibilityRequirements": {
         "wcag20:2.4.4": {
           "forConformance": true,
@@ -17837,7 +18419,7 @@
     },
     {
       "ruleId": "fd3a94",
-      "ruleName": "Links with identical accessible names and context serve equivalent purpose",
+      "ruleName": "Links with identical accessible names and same context serve equivalent purpose",
       "ruleAccessibilityRequirements": {
         "wcag20:2.4.4": {
           "forConformance": true,
@@ -17861,7 +18443,7 @@
     },
     {
       "ruleId": "fd3a94",
-      "ruleName": "Links with identical accessible names and context serve equivalent purpose",
+      "ruleName": "Links with identical accessible names and same context serve equivalent purpose",
       "ruleAccessibilityRequirements": {
         "wcag20:2.4.4": {
           "forConformance": true,
@@ -17885,7 +18467,7 @@
     },
     {
       "ruleId": "fd3a94",
-      "ruleName": "Links with identical accessible names and context serve equivalent purpose",
+      "ruleName": "Links with identical accessible names and same context serve equivalent purpose",
       "ruleAccessibilityRequirements": {
         "wcag20:2.4.4": {
           "forConformance": true,
@@ -17909,7 +18491,7 @@
     },
     {
       "ruleId": "fd3a94",
-      "ruleName": "Links with identical accessible names and context serve equivalent purpose",
+      "ruleName": "Links with identical accessible names and same context serve equivalent purpose",
       "ruleAccessibilityRequirements": {
         "wcag20:2.4.4": {
           "forConformance": true,
@@ -17933,7 +18515,7 @@
     },
     {
       "ruleId": "fd3a94",
-      "ruleName": "Links with identical accessible names and context serve equivalent purpose",
+      "ruleName": "Links with identical accessible names and same context serve equivalent purpose",
       "ruleAccessibilityRequirements": {
         "wcag20:2.4.4": {
           "forConformance": true,
@@ -17957,7 +18539,7 @@
     },
     {
       "ruleId": "fd3a94",
-      "ruleName": "Links with identical accessible names and context serve equivalent purpose",
+      "ruleName": "Links with identical accessible names and same context serve equivalent purpose",
       "ruleAccessibilityRequirements": {
         "wcag20:2.4.4": {
           "forConformance": true,
@@ -17981,7 +18563,7 @@
     },
     {
       "ruleId": "fd3a94",
-      "ruleName": "Links with identical accessible names and context serve equivalent purpose",
+      "ruleName": "Links with identical accessible names and same context serve equivalent purpose",
       "ruleAccessibilityRequirements": {
         "wcag20:2.4.4": {
           "forConformance": true,
@@ -18005,7 +18587,7 @@
     },
     {
       "ruleId": "fd3a94",
-      "ruleName": "Links with identical accessible names and context serve equivalent purpose",
+      "ruleName": "Links with identical accessible names and same context serve equivalent purpose",
       "ruleAccessibilityRequirements": {
         "wcag20:2.4.4": {
           "forConformance": true,
@@ -18029,7 +18611,7 @@
     },
     {
       "ruleId": "fd3a94",
-      "ruleName": "Links with identical accessible names and context serve equivalent purpose",
+      "ruleName": "Links with identical accessible names and same context serve equivalent purpose",
       "ruleAccessibilityRequirements": {
         "wcag20:2.4.4": {
           "forConformance": true,
@@ -18053,7 +18635,7 @@
     },
     {
       "ruleId": "fd3a94",
-      "ruleName": "Links with identical accessible names and context serve equivalent purpose",
+      "ruleName": "Links with identical accessible names and same context serve equivalent purpose",
       "ruleAccessibilityRequirements": {
         "wcag20:2.4.4": {
           "forConformance": true,
@@ -18077,7 +18659,7 @@
     },
     {
       "ruleId": "fd3a94",
-      "ruleName": "Links with identical accessible names and context serve equivalent purpose",
+      "ruleName": "Links with identical accessible names and same context serve equivalent purpose",
       "ruleAccessibilityRequirements": {
         "wcag20:2.4.4": {
           "forConformance": true,
@@ -18093,15 +18675,15 @@
         }
       },
       "expected": "inapplicable",
-      "testcaseId": "7d61465599fad14c1a2135a3e1a85209fec9302f",
+      "testcaseId": "a799c111fc2dd2b2e6dade9bf227790d8cb33f68",
       "testcaseTitle": "Inapplicable Example 5",
-      "relativePath": "testcases/fd3a94/7d61465599fad14c1a2135a3e1a85209fec9302f.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/7d61465599fad14c1a2135a3e1a85209fec9302f.html",
+      "relativePath": "testcases/fd3a94/a799c111fc2dd2b2e6dade9bf227790d8cb33f68.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/a799c111fc2dd2b2e6dade9bf227790d8cb33f68.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/fd3a94/proposed/"
     },
     {
       "ruleId": "fd3a94",
-      "ruleName": "Links with identical accessible names and context serve equivalent purpose",
+      "ruleName": "Links with identical accessible names and same context serve equivalent purpose",
       "ruleAccessibilityRequirements": {
         "wcag20:2.4.4": {
           "forConformance": true,
@@ -20356,146 +20938,6 @@
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/8fc3b6/proposed/"
     },
     {
-      "ruleId": "307n5z",
-      "approved": true,
-      "isApproved": true,
-      "ruleName": "Element with presentational children has no focusable content",
-      "ruleAccessibilityRequirements": {
-        "wcag20:4.1.2": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "ccaf2315b5268a447dff07aad635b3ad27aabaf8",
-      "testcaseTitle": "Passed Example 1",
-      "relativePath": "testcases/307n5z/ccaf2315b5268a447dff07aad635b3ad27aabaf8.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/307n5z/ccaf2315b5268a447dff07aad635b3ad27aabaf8.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/307n5z/proposed/"
-    },
-    {
-      "ruleId": "307n5z",
-      "approved": true,
-      "isApproved": true,
-      "ruleName": "Element with presentational children has no focusable content",
-      "ruleAccessibilityRequirements": {
-        "wcag20:4.1.2": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "9bdea8c670e441afe5299bed4ea02b304becaaf8",
-      "testcaseTitle": "Passed Example 2",
-      "relativePath": "testcases/307n5z/9bdea8c670e441afe5299bed4ea02b304becaaf8.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/307n5z/9bdea8c670e441afe5299bed4ea02b304becaaf8.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/307n5z/proposed/"
-    },
-    {
-      "ruleId": "307n5z",
-      "approved": true,
-      "isApproved": true,
-      "ruleName": "Element with presentational children has no focusable content",
-      "ruleAccessibilityRequirements": {
-        "wcag20:4.1.2": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "8c835039e68f3fefc58e8b0985b2060fa02b3480",
-      "testcaseTitle": "Passed Example 3",
-      "relativePath": "testcases/307n5z/8c835039e68f3fefc58e8b0985b2060fa02b3480.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/307n5z/8c835039e68f3fefc58e8b0985b2060fa02b3480.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/307n5z/proposed/"
-    },
-    {
-      "ruleId": "307n5z",
-      "approved": true,
-      "isApproved": true,
-      "ruleName": "Element with presentational children has no focusable content",
-      "ruleAccessibilityRequirements": {
-        "wcag20:4.1.2": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "failed",
-      "testcaseId": "3798f2c4c821019fe59bbcc671d46b4e9d2c9d50",
-      "testcaseTitle": "Failed Example 1",
-      "relativePath": "testcases/307n5z/3798f2c4c821019fe59bbcc671d46b4e9d2c9d50.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/307n5z/3798f2c4c821019fe59bbcc671d46b4e9d2c9d50.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/307n5z/proposed/"
-    },
-    {
-      "ruleId": "307n5z",
-      "approved": true,
-      "isApproved": true,
-      "ruleName": "Element with presentational children has no focusable content",
-      "ruleAccessibilityRequirements": {
-        "wcag20:4.1.2": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "failed",
-      "testcaseId": "b9f6f775efc8d7cdc38782087ccc6abaa88babb6",
-      "testcaseTitle": "Failed Example 2",
-      "relativePath": "testcases/307n5z/b9f6f775efc8d7cdc38782087ccc6abaa88babb6.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/307n5z/b9f6f775efc8d7cdc38782087ccc6abaa88babb6.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/307n5z/proposed/"
-    },
-    {
-      "ruleId": "307n5z",
-      "approved": true,
-      "isApproved": true,
-      "ruleName": "Element with presentational children has no focusable content",
-      "ruleAccessibilityRequirements": {
-        "wcag20:4.1.2": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "failed",
-      "testcaseId": "61a402c2eb82ccb8614aa62918cff81b8306ddf2",
-      "testcaseTitle": "Failed Example 3",
-      "relativePath": "testcases/307n5z/61a402c2eb82ccb8614aa62918cff81b8306ddf2.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/307n5z/61a402c2eb82ccb8614aa62918cff81b8306ddf2.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/307n5z/proposed/"
-    },
-    {
-      "ruleId": "307n5z",
-      "approved": true,
-      "isApproved": true,
-      "ruleName": "Element with presentational children has no focusable content",
-      "ruleAccessibilityRequirements": {
-        "wcag20:4.1.2": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "inapplicable",
-      "testcaseId": "54cd6b714326ddf6ae1181112d6ce35f6f3e3579",
-      "testcaseTitle": "Inapplicable Example 1",
-      "relativePath": "testcases/307n5z/54cd6b714326ddf6ae1181112d6ce35f6f3e3579.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/307n5z/54cd6b714326ddf6ae1181112d6ce35f6f3e3579.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/307n5z/proposed/"
-    },
-    {
       "ruleId": "ffbc54",
       "ruleName": "No keyboard shortcut uses only printable characters",
       "ruleAccessibilityRequirements": {
@@ -21916,448 +22358,6 @@
       "relativePath": "testcases/d0f69e/0c53e1a110f5191e74bd97da2c92c79c40d76eb2.html",
       "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/d0f69e/0c53e1a110f5191e74bd97da2c92c79c40d76eb2.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/d0f69e/proposed/"
-    },
-    {
-      "ruleId": "a25f45",
-      "approved": true,
-      "isApproved": true,
-      "ruleName": "Headers attribute specified on a cell refers to cells in the same table element",
-      "ruleAccessibilityRequirements": {
-        "wcag20:1.3.1": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:H43": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "f99c8bd6aa53c3b2f4d63fee994333453df410c6",
-      "testcaseTitle": "Passed Example 1",
-      "relativePath": "testcases/a25f45/f99c8bd6aa53c3b2f4d63fee994333453df410c6.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/f99c8bd6aa53c3b2f4d63fee994333453df410c6.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/a25f45/proposed/"
-    },
-    {
-      "ruleId": "a25f45",
-      "approved": true,
-      "isApproved": true,
-      "ruleName": "Headers attribute specified on a cell refers to cells in the same table element",
-      "ruleAccessibilityRequirements": {
-        "wcag20:1.3.1": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:H43": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "1400d13aa5a86dbacf71db631f5de1abfc982094",
-      "testcaseTitle": "Passed Example 2",
-      "relativePath": "testcases/a25f45/1400d13aa5a86dbacf71db631f5de1abfc982094.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/1400d13aa5a86dbacf71db631f5de1abfc982094.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/a25f45/proposed/"
-    },
-    {
-      "ruleId": "a25f45",
-      "approved": true,
-      "isApproved": true,
-      "ruleName": "Headers attribute specified on a cell refers to cells in the same table element",
-      "ruleAccessibilityRequirements": {
-        "wcag20:1.3.1": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:H43": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "8391fee07d35c11cfb3fecd19ddaad0fb8c68871",
-      "testcaseTitle": "Passed Example 3",
-      "relativePath": "testcases/a25f45/8391fee07d35c11cfb3fecd19ddaad0fb8c68871.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/8391fee07d35c11cfb3fecd19ddaad0fb8c68871.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/a25f45/proposed/"
-    },
-    {
-      "ruleId": "a25f45",
-      "approved": true,
-      "isApproved": true,
-      "ruleName": "Headers attribute specified on a cell refers to cells in the same table element",
-      "ruleAccessibilityRequirements": {
-        "wcag20:1.3.1": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:H43": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "c02748c85d58e188b3c13773986272df616b2f3c",
-      "testcaseTitle": "Passed Example 4",
-      "relativePath": "testcases/a25f45/c02748c85d58e188b3c13773986272df616b2f3c.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/c02748c85d58e188b3c13773986272df616b2f3c.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/a25f45/proposed/"
-    },
-    {
-      "ruleId": "a25f45",
-      "approved": true,
-      "isApproved": true,
-      "ruleName": "Headers attribute specified on a cell refers to cells in the same table element",
-      "ruleAccessibilityRequirements": {
-        "wcag20:1.3.1": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:H43": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "d935494fdcd2c1fef14d14842c0a19c8f8c54c78",
-      "testcaseTitle": "Passed Example 5",
-      "relativePath": "testcases/a25f45/d935494fdcd2c1fef14d14842c0a19c8f8c54c78.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/d935494fdcd2c1fef14d14842c0a19c8f8c54c78.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/a25f45/proposed/"
-    },
-    {
-      "ruleId": "a25f45",
-      "approved": true,
-      "isApproved": true,
-      "ruleName": "Headers attribute specified on a cell refers to cells in the same table element",
-      "ruleAccessibilityRequirements": {
-        "wcag20:1.3.1": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:H43": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "ba5019010a6e0cfbcb46b2f7e9e63a6117e06f97",
-      "testcaseTitle": "Passed Example 6",
-      "relativePath": "testcases/a25f45/ba5019010a6e0cfbcb46b2f7e9e63a6117e06f97.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/ba5019010a6e0cfbcb46b2f7e9e63a6117e06f97.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/a25f45/proposed/"
-    },
-    {
-      "ruleId": "a25f45",
-      "approved": true,
-      "isApproved": true,
-      "ruleName": "Headers attribute specified on a cell refers to cells in the same table element",
-      "ruleAccessibilityRequirements": {
-        "wcag20:1.3.1": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:H43": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "b1b17ab86ee2ebce350af1c41d2e6ff8911a33f1",
-      "testcaseTitle": "Passed Example 7",
-      "relativePath": "testcases/a25f45/b1b17ab86ee2ebce350af1c41d2e6ff8911a33f1.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/b1b17ab86ee2ebce350af1c41d2e6ff8911a33f1.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/a25f45/proposed/"
-    },
-    {
-      "ruleId": "a25f45",
-      "approved": true,
-      "isApproved": true,
-      "ruleName": "Headers attribute specified on a cell refers to cells in the same table element",
-      "ruleAccessibilityRequirements": {
-        "wcag20:1.3.1": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:H43": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "7291b4b36dfa21e666a765a51c01e777d40a5174",
-      "testcaseTitle": "Passed Example 8",
-      "relativePath": "testcases/a25f45/7291b4b36dfa21e666a765a51c01e777d40a5174.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/7291b4b36dfa21e666a765a51c01e777d40a5174.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/a25f45/proposed/"
-    },
-    {
-      "ruleId": "a25f45",
-      "approved": true,
-      "isApproved": true,
-      "ruleName": "Headers attribute specified on a cell refers to cells in the same table element",
-      "ruleAccessibilityRequirements": {
-        "wcag20:1.3.1": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:H43": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "failed",
-      "testcaseId": "7f2be26b42fa5846a09019bb949c44be95586e0d",
-      "testcaseTitle": "Failed Example 1",
-      "relativePath": "testcases/a25f45/7f2be26b42fa5846a09019bb949c44be95586e0d.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/7f2be26b42fa5846a09019bb949c44be95586e0d.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/a25f45/proposed/"
-    },
-    {
-      "ruleId": "a25f45",
-      "approved": true,
-      "isApproved": true,
-      "ruleName": "Headers attribute specified on a cell refers to cells in the same table element",
-      "ruleAccessibilityRequirements": {
-        "wcag20:1.3.1": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:H43": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "failed",
-      "testcaseId": "cd25fd6cc4fde1734fc90c2f11e71886e3458007",
-      "testcaseTitle": "Failed Example 2",
-      "relativePath": "testcases/a25f45/cd25fd6cc4fde1734fc90c2f11e71886e3458007.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/cd25fd6cc4fde1734fc90c2f11e71886e3458007.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/a25f45/proposed/"
-    },
-    {
-      "ruleId": "a25f45",
-      "approved": true,
-      "isApproved": true,
-      "ruleName": "Headers attribute specified on a cell refers to cells in the same table element",
-      "ruleAccessibilityRequirements": {
-        "wcag20:1.3.1": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:H43": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "failed",
-      "testcaseId": "d0c53c06c9e0a766fd5830fbbaa7df76f8cef92a",
-      "testcaseTitle": "Failed Example 3",
-      "relativePath": "testcases/a25f45/d0c53c06c9e0a766fd5830fbbaa7df76f8cef92a.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/d0c53c06c9e0a766fd5830fbbaa7df76f8cef92a.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/a25f45/proposed/"
-    },
-    {
-      "ruleId": "a25f45",
-      "approved": true,
-      "isApproved": true,
-      "ruleName": "Headers attribute specified on a cell refers to cells in the same table element",
-      "ruleAccessibilityRequirements": {
-        "wcag20:1.3.1": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:H43": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "failed",
-      "testcaseId": "1bdbd209a611d68876d5b6e37541f7ddc2038f97",
-      "testcaseTitle": "Failed Example 4",
-      "relativePath": "testcases/a25f45/1bdbd209a611d68876d5b6e37541f7ddc2038f97.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/1bdbd209a611d68876d5b6e37541f7ddc2038f97.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/a25f45/proposed/"
-    },
-    {
-      "ruleId": "a25f45",
-      "approved": true,
-      "isApproved": true,
-      "ruleName": "Headers attribute specified on a cell refers to cells in the same table element",
-      "ruleAccessibilityRequirements": {
-        "wcag20:1.3.1": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:H43": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "inapplicable",
-      "testcaseId": "9f7979f4854efa0b1ac299f920229d20246710b9",
-      "testcaseTitle": "Inapplicable Example 1",
-      "relativePath": "testcases/a25f45/9f7979f4854efa0b1ac299f920229d20246710b9.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/9f7979f4854efa0b1ac299f920229d20246710b9.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/a25f45/proposed/"
-    },
-    {
-      "ruleId": "a25f45",
-      "approved": true,
-      "isApproved": true,
-      "ruleName": "Headers attribute specified on a cell refers to cells in the same table element",
-      "ruleAccessibilityRequirements": {
-        "wcag20:1.3.1": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:H43": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "inapplicable",
-      "testcaseId": "09d9fb1862a6f579a948259a44e1117af595d937",
-      "testcaseTitle": "Inapplicable Example 2",
-      "relativePath": "testcases/a25f45/09d9fb1862a6f579a948259a44e1117af595d937.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/09d9fb1862a6f579a948259a44e1117af595d937.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/a25f45/proposed/"
-    },
-    {
-      "ruleId": "a25f45",
-      "approved": true,
-      "isApproved": true,
-      "ruleName": "Headers attribute specified on a cell refers to cells in the same table element",
-      "ruleAccessibilityRequirements": {
-        "wcag20:1.3.1": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:H43": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "inapplicable",
-      "testcaseId": "76b79146e3be6b8ea6920df93b68352b8b9d3c8b",
-      "testcaseTitle": "Inapplicable Example 3",
-      "relativePath": "testcases/a25f45/76b79146e3be6b8ea6920df93b68352b8b9d3c8b.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/76b79146e3be6b8ea6920df93b68352b8b9d3c8b.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/a25f45/proposed/"
-    },
-    {
-      "ruleId": "a25f45",
-      "approved": true,
-      "isApproved": true,
-      "ruleName": "Headers attribute specified on a cell refers to cells in the same table element",
-      "ruleAccessibilityRequirements": {
-        "wcag20:1.3.1": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:H43": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "inapplicable",
-      "testcaseId": "57382c6bd42af05f3b9836a95bee672d1b9330d7",
-      "testcaseTitle": "Inapplicable Example 4",
-      "relativePath": "testcases/a25f45/57382c6bd42af05f3b9836a95bee672d1b9330d7.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/57382c6bd42af05f3b9836a95bee672d1b9330d7.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/a25f45/proposed/"
-    },
-    {
-      "ruleId": "a25f45",
-      "approved": true,
-      "isApproved": true,
-      "ruleName": "Headers attribute specified on a cell refers to cells in the same table element",
-      "ruleAccessibilityRequirements": {
-        "wcag20:1.3.1": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:H43": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "inapplicable",
-      "testcaseId": "e6fd17797e01f46032b6d8edf24831b2775cc831",
-      "testcaseTitle": "Inapplicable Example 5",
-      "relativePath": "testcases/a25f45/e6fd17797e01f46032b6d8edf24831b2775cc831.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/e6fd17797e01f46032b6d8edf24831b2775cc831.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/a25f45/proposed/"
     },
     {
       "ruleId": "afw4f7",
