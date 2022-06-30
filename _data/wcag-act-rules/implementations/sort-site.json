@@ -145,6 +145,33 @@
       "testCaseResults": []
     },
     {
+      "ruleId": "7d6734",
+      "ruleName": "SVG element with explicit role has non-empty accessible name",
+      "ruleApproved": true,
+      "procedureNames": [],
+      "consistency": null,
+      "coverage": null,
+      "testCaseResults": []
+    },
+    {
+      "ruleId": "307n5z",
+      "ruleName": "Element with presentational children has no focusable content",
+      "ruleApproved": true,
+      "procedureNames": [],
+      "consistency": null,
+      "coverage": null,
+      "testCaseResults": []
+    },
+    {
+      "ruleId": "a25f45",
+      "ruleName": "Headers attribute specified on a cell refers to cells in the same table element",
+      "ruleApproved": true,
+      "procedureNames": [],
+      "consistency": null,
+      "coverage": null,
+      "testCaseResults": []
+    },
+    {
       "ruleId": "5f99a7",
       "ruleName": "ARIA attribute is defined in WAI-ARIA",
       "ruleApproved": false,
@@ -352,15 +379,6 @@
       "testCaseResults": []
     },
     {
-      "ruleId": "7d6734",
-      "ruleName": "SVG element with explicit role has non-empty accessible name",
-      "ruleApproved": true,
-      "procedureNames": [],
-      "consistency": null,
-      "coverage": null,
-      "testCaseResults": []
-    },
-    {
       "ruleId": "80af7b",
       "ruleName": "Focusable element has no keyboard trap",
       "ruleApproved": false,
@@ -551,7 +569,7 @@
     },
     {
       "ruleId": "fd3a94",
-      "ruleName": "Links with identical accessible names and context serve equivalent purpose",
+      "ruleName": "Links with identical accessible names and same context serve equivalent purpose",
       "ruleApproved": false,
       "procedureNames": [],
       "consistency": null,
@@ -613,15 +631,6 @@
       "testCaseResults": []
     },
     {
-      "ruleId": "307n5z",
-      "ruleName": "Element with presentational children has no focusable content",
-      "ruleApproved": true,
-      "procedureNames": [],
-      "consistency": null,
-      "coverage": null,
-      "testCaseResults": []
-    },
-    {
       "ruleId": "ffbc54",
       "ruleName": "No keyboard shortcut uses only printable characters",
       "ruleApproved": false,
@@ -670,15 +679,6 @@
       "ruleId": "d0f69e",
       "ruleName": "Table header cell has assigned cells",
       "ruleApproved": false,
-      "procedureNames": [],
-      "consistency": null,
-      "coverage": null,
-      "testCaseResults": []
-    },
-    {
-      "ruleId": "a25f45",
-      "ruleName": "Headers attribute specified on a cell refers to cells in the same table element",
-      "ruleApproved": true,
       "procedureNames": [],
       "consistency": null,
       "coverage": null,
