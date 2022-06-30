@@ -2,10 +2,10 @@
   "vendor": "Deque Systems",
   "name": "Axe-core",
   "version": "4.5.0-prerelease",
-  "lastModified": "23 June 2022",
+  "lastModified": "30 June 2022",
   "approvedRules": {
-    "complete": 11,
-    "partial": 3,
+    "complete": 12,
+    "partial": 2,
     "minimal": 0,
     "inconsistent": 3,
     "untested": 0
@@ -8038,7 +8038,7 @@
       },
       "coverage": {
         "covered": 13,
-        "untested": 1,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 23
       },
@@ -8131,7 +8131,8 @@
             {
               "procedureName": "frame-title-unique",
               "outcomes": [
-                "untested"
+                "failed",
+                "failed"
               ]
             }
           ]
@@ -9877,8 +9878,8 @@
         "reported": []
       },
       "coverage": {
-        "covered": 10,
-        "untested": 1,
+        "covered": 11,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 11
       },
@@ -9908,7 +9909,7 @@
             {
               "procedureName": "meta-viewport",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -11217,7 +11218,7 @@
       "procedureNames": [
         "td-headers-attr"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -11228,8 +11229,8 @@
         ]
       },
       "coverage": {
-        "covered": 16,
-        "untested": 1,
+        "covered": 17,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 17
       },
@@ -11379,7 +11380,8 @@
             {
               "procedureName": "td-headers-attr",
               "outcomes": [
-                "untested"
+                "passed",
+                "failed"
               ]
             }
           ]
