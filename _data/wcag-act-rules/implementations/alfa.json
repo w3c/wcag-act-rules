@@ -2,19 +2,19 @@
   "vendor": "Siteimprove",
   "name": "Alfa",
   "version": "0.36.0",
-  "lastModified": "23 June 2022",
+  "lastModified": "4 July 2022",
   "approvedRules": {
-    "complete": 11,
-    "partial": 3,
+    "complete": 14,
+    "partial": 0,
     "minimal": 0,
     "inconsistent": 3,
     "untested": 0
   },
   "proposedRules": {
     "complete": 7,
-    "partial": 8,
+    "partial": 7,
     "minimal": 3,
-    "inconsistent": 11,
+    "inconsistent": 12,
     "untested": 45
   },
   "actRuleMapping": [
@@ -644,8 +644,8 @@
         ]
       },
       "coverage": {
-        "covered": 18,
-        "untested": 1,
+        "covered": 19,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 19
       },
@@ -930,7 +930,7 @@
             {
               "procedureName": "sia-r7",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -2834,7 +2834,7 @@
       "procedureNames": [
         "sia-r11"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -2850,8 +2850,8 @@
         ]
       },
       "coverage": {
-        "covered": 26,
-        "untested": 2,
+        "covered": 28,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 28
       },
@@ -3256,7 +3256,7 @@
             {
               "procedureName": "sia-r11",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -3271,7 +3271,7 @@
             {
               "procedureName": "sia-r11",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -3727,20 +3727,19 @@
       "procedureNames": [
         "sia-r90"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:name-role-value"
         ],
         "reported": [
-          "WCAG2:info-and-relationships",
           "WCAG2:name-role-value"
         ]
       },
       "coverage": {
-        "covered": 6,
-        "untested": 1,
+        "covered": 7,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 7
       },
@@ -3800,7 +3799,7 @@
             {
               "procedureName": "sia-r90",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -3859,7 +3858,7 @@
       "procedureNames": [
         "sia-r45"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -3871,8 +3870,8 @@
         ]
       },
       "coverage": {
-        "covered": 16,
-        "untested": 1,
+        "covered": 17,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 17
       },
@@ -4022,7 +4021,7 @@
             {
               "procedureName": "sia-r45",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -4268,20 +4267,19 @@
       "procedureNames": [
         "sia-r17"
       ],
-      "consistency": "partial",
+      "consistency": null,
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:name-role-value"
         ],
         "reported": [
-          "WCAG2:info-and-relationships",
           "WCAG2:name-role-value"
         ]
       },
       "coverage": {
-        "covered": 12,
-        "untested": 2,
+        "covered": 13,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 14
       },
@@ -4341,7 +4339,7 @@
             {
               "procedureName": "sia-r17",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -4446,7 +4444,7 @@
             {
               "procedureName": "sia-r17",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -4767,8 +4765,8 @@
         ]
       },
       "coverage": {
-        "covered": 16,
-        "untested": 2,
+        "covered": 18,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 19
       },
@@ -4798,7 +4796,7 @@
             {
               "procedureName": "sia-r68",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -4828,7 +4826,7 @@
             {
               "procedureName": "sia-r68",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -7925,9 +7923,9 @@
         "reported": []
       },
       "coverage": {
-        "covered": 6,
-        "untested": 4,
-        "cantTell": 9,
+        "covered": 7,
+        "untested": 0,
+        "cantTell": 12,
         "testCaseTotal": 19
       },
       "testCaseResults": [
@@ -7956,7 +7954,7 @@
             {
               "procedureName": "sia-r81",
               "outcomes": [
-                "untested"
+                "cantTell"
               ]
             }
           ]
@@ -8076,7 +8074,7 @@
             {
               "procedureName": "sia-r81",
               "outcomes": [
-                "untested"
+                "cantTell"
               ]
             }
           ]
@@ -8196,7 +8194,7 @@
             {
               "procedureName": "sia-r81",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -8211,7 +8209,7 @@
             {
               "procedureName": "sia-r81",
               "outcomes": [
-                "untested"
+                "cantTell"
               ]
             }
           ]
@@ -8880,8 +8878,8 @@
         ]
       },
       "coverage": {
-        "covered": 10,
-        "untested": 1,
+        "covered": 11,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 11
       },
@@ -8911,7 +8909,7 @@
             {
               "procedureName": "sia-r47",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -11500,8 +11498,8 @@
         ]
       },
       "coverage": {
-        "covered": 7,
-        "untested": 2,
+        "covered": 8,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 14
       },
@@ -11621,7 +11619,7 @@
             {
               "procedureName": "sia-r83",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -11636,7 +11634,7 @@
             {
               "procedureName": "sia-r83",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
