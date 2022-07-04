@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> c4a8a4</p>
-  <p><strong>Date:</strong> Updated 21 June 2022</p>
+  <p><strong>Date:</strong> Updated 4 July 2022</p>
   <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/corbb">Corbb O'Connor</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -19,7 +19,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that the first title in an HTML page describes the topic or purpose of that page.
-  last_modified: 21 June 2022
+  last_modified: 4 July 2022
   scs_tested:
     - handle: Page Titled
       num: 2.4.2
@@ -50,7 +50,7 @@ The target element describes the topic or purpose of the overall content of the 
 
 The `title` elements of embedded documents, such as those in `iframe`, `object`, or `svg` elements, are not applicable because those are not web pages according to the definition in WCAG.
 
-The [HTML specification - The `title` element](https://html.spec.whatwg.org/#the-title-element) requires that a document only has one `title` element, and that it is a child of the `head` element of a document. However, current HTML specification also describes what should happen in case of multiple titles, and titles outside the `head` element. Because of this, neither of these validation issues causes a conformance problem for WCAG.
+The [HTML specification - The `title` element](https://html.spec.whatwg.org/#the-title-element) requires documents to only have one `title` element; and `title` elements to be children of the `head` element of a document. However, current HTML specification also describes what should happen in case of multiple titles, and titles outside the `head` element. Because of this, neither of these validation issues causes a conformance problem for WCAG.
 
 ### Related rules
 
