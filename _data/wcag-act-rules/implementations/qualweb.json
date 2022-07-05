@@ -2,17 +2,17 @@
   "vendor": "LASIGE, Faculdade de Ciências da Universidade de Lisboa",
   "name": "QualWeb",
   "version": "3.0.0",
-  "lastModified": "28 June 2022",
+  "lastModified": "5 July 2022",
   "approvedRules": {
-    "complete": 12,
-    "partial": 3,
+    "complete": 11,
+    "partial": 4,
     "minimal": 0,
     "inconsistent": 2,
     "untested": 0
   },
   "proposedRules": {
-    "complete": 17,
-    "partial": 4,
+    "complete": 15,
+    "partial": 6,
     "minimal": 13,
     "inconsistent": 20,
     "untested": 20
@@ -943,14 +943,14 @@
       "procedureNames": [
         "Element marked as decorative is not exposed"
       ],
-      "consistency": "complete",
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
         "reported": []
       },
       "coverage": {
-        "covered": 10,
+        "covered": 9,
         "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 10
@@ -1086,7 +1086,7 @@
             {
               "procedureName": "Element marked as decorative is not exposed",
               "outcomes": [
-                "failed"
+                "passed"
               ]
             }
           ]
@@ -4488,7 +4488,7 @@
       "procedureNames": [
         "ARIA required context role"
       ],
-      "consistency": "complete",
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -4499,7 +4499,7 @@
         ]
       },
       "coverage": {
-        "covered": 15,
+        "covered": 14,
         "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 15
@@ -4635,7 +4635,7 @@
             {
               "procedureName": "ARIA required context role",
               "outcomes": [
-                "failed"
+                "passed"
               ]
             }
           ]
@@ -9163,7 +9163,7 @@
       "procedureNames": [
         "iframe element has accessible name"
       ],
-      "consistency": "complete",
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -9174,7 +9174,7 @@
         ]
       },
       "coverage": {
-        "covered": 10,
+        "covered": 9,
         "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 10
@@ -9280,7 +9280,7 @@
             {
               "procedureName": "iframe element has accessible name",
               "outcomes": [
-                "failed"
+                "inapplicable"
               ]
             }
           ]
@@ -10354,8 +10354,8 @@
         "reported": []
       },
       "coverage": {
-        "covered": 6,
-        "untested": 1,
+        "covered": 7,
+        "untested": 0,
         "cantTell": 12,
         "testCaseTotal": 19
       },
@@ -10625,7 +10625,7 @@
             {
               "procedureName": "Links with identical accessible names and context serve equivalent purpose",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
