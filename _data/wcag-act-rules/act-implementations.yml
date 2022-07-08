@@ -25,7 +25,7 @@
   standards:
     - WCAG 2.1 Level A, AA, AAA
     - WAI-ARIA 1.2
-  jsonReport: https://raw.githubusercontent.com/Siteimprove/alfa-act-r/main/reports/alfa-w3c.json
+  jsonReport: https://raw.githubusercontent.com/Siteimprove/alfa-act-r/main/reports/alfa-report-new-test-cases.json
 
 - name: Axe-core
   homepage: https://www.npmjs.com/package/axe-core/
