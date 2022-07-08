@@ -22,18 +22,21 @@ layout: standalone_resource
       </a>
     {%- else %}
       {{ implementationInfo.name }}
-    {% endif %}
-    {% unless implementation.versionDate %}
+    {%- endif %}
+    {%- unless implementation.versionDate %}
       version {% if implementation.version %}{{ implementation.version }}{% else %}{{ implementationInfo.version }}{% endif %}
-    {% endunless %}
+    {%- endunless %}
     is an {{ implementationInfo.type }}
-    {% if implementationInfo.vendorHomepage %}
+    {%- if implementationInfo.vendorHomepage %}
       by <a href="{{ implementationInfo.vendorHomepage }}">
         {{- implementationInfo.vendor -}}
       </a>.
-    {% else %}
+    {%- else %}
       by {{ implementation.vendor }}.
-    {% endif %}
+    {%- endif %}
+    {%- if implementation.lastModified %}
+      The test results were last updated {{ implementation.lastModified }}.
+    {%- endif %}
 
     {% if implementation.versionDate %}
       version {% if implementation.version %}{{ implementation.version }}{% else %}{{ implementationInfo.version }}{% endif %} 
