@@ -49,7 +49,7 @@ defaults:
       class: tight-page
       layout: act_rule
       external_css: /content-assets/wcag-act-rules/act-styles.css
-      feedbackmail: wai@w3.org  # NEW: delete this line if it’s an EOWG resource (the default is wai-eo-editors@w3.org)
+      feedbackmail: group-act-rules@w3.org # NEW: delete this line if it’s an EOWG resource (the default is wai-eo-editors@w3.org)
       footer: >   # Translate words below, including "Date:" and "Editor:" Translate the Working Group name. Leave the Working Group acronym in English. Do *not* change the dates in the footer below.
         <p><strong>Date:</strong> Updated @@ Month 2021. First published Month 20@@.</p>
         <p><strong>Editors:</strong> @@name, @@name. <strong>Contributors:</strong> @@name, @@name, and <a href="https://www.w3.org/groups/wg/@@wg/participants">participants of the @@WG</a>. ACKNOWLEDGEMENTS lists contributors and credits.</p>
