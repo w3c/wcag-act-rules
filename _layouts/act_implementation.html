@@ -107,7 +107,7 @@ layout: standalone_resource
 <h2>About {{ implementationInfo.name }} Results</h2>
 
 {% if implementationInfo.description -%}
-  <p>{{ implementationInfo.description }}</p>
+  {{- implementationInfo.description | markdownify }}
 {%- endif %}
 
 <p>
