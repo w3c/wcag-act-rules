@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> c5a4ea</p>
-  <p><strong>Date:</strong> Updated 21 June 2022</p>
+  <p><strong>Date:</strong> Updated 11 July 2022</p>
   <p><strong>Authors:</strong> <a href="https://www.linkedin.com/in/brianbors/">Brian Bors</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
   
@@ -21,7 +21,7 @@ rule_meta:
   rule_type: composite
   description: |
     This rule checks that `video` elements with audio have an alternative for the video content as audio or as text.
-  last_modified: 21 June 2022
+  last_modified: 11 July 2022
   scs_tested:
     - handle: Audio Description or Media Alternative (Prerecorded)
       num: 1.2.3
@@ -342,8 +342,6 @@ Content is considered _visible_ if making it fully transparent would result in a
 [Content is defined in WCAG](https://www.w3.org/TR/WCAG21/#dfn-content).
 
 For more details, see [examples of visible](https://act-rules.github.io/pages/examples/visible/).
-
-{% include_relative _versions.md %}
 
 [sc123]: https://www.w3.org/TR/WCAG21/#audio-description-or-media-alternative-prerecorded 'WCAG 2.1, Success Criterion 1.2.3 Audio Description or Media Alternative (Prerecorded)'
 [sc125]: https://www.w3.org/TR/WCAG21/#audio-description-prerecorded 'WCAG 2.1, Success Criterion 1.2.5 Audio Description (Prerecorded)'
