@@ -14,7 +14,7 @@ name: Copy-rules-to-WCAG
 on: 
   push:
     branches:
-      - master
+      - main
     paths:
       - wcag-mapping.json
 
