@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> c4a8a4</p>
-  <p><strong>Date:</strong> Updated 11 July 2022</p>
+  <p><strong>Date:</strong> Updated 12 July 2022</p>
   <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/corbb">Corbb O'Connor</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -19,7 +19,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that the first title in an HTML page describes the topic or purpose of that page.
-  last_modified: 11 July 2022
+  last_modified: 12 July 2022
   scs_tested:
     - handle: Page Titled
       num: 2.4.2
@@ -39,7 +39,6 @@ The target element describes the topic or purpose of the overall content of the 
 
 ## Assumptions
 
-- This rule assumes that the language of each test target can be correctly determined (either programmatically or by analyzing the content), and sufficiently understood.
 - A prerequisite for this rule is that Technique H25: Providing a title using the title element is used for living up to 2.4.2 Page Titled
 
 ## Accessibility Support

@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> qt1vmo</p>
-  <p><strong>Date:</strong> Updated 11 July 2022</p>
+  <p><strong>Date:</strong> Updated 12 July 2022</p>
   <p><strong>Authors:</strong> <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
   
@@ -21,7 +21,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that the accessible names of images serve an equivalent purpose to the image.
-  last_modified: 11 July 2022
+  last_modified: 12 July 2022
   scs_tested:
     - handle: Non-text Content
       num: 1.1.1
@@ -41,7 +41,7 @@ Each test target has an [accessible name][] that serves an equivalent purpose to
 
 ## Assumptions
 
-This rule assumes that the language of the [accessible name][] of each test target can be correctly determined (either programmatically or by analyzing the content).
+_There are currently no assumptions_
 
 ## Accessibility Support
 

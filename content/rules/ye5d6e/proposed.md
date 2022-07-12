@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> ye5d6e</p>
-  <p><strong>Date:</strong> Updated 11 July 2022</p>
+  <p><strong>Date:</strong> Updated 12 July 2022</p>
   <p><strong>Authors:</strong> <a href="https://github.com/Jym77">Jean-Yves Moyen</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
   
@@ -21,7 +21,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that there is an instrument to move focus to non-repeated content in the page
-  last_modified: 11 July 2022
+  last_modified: 12 July 2022
 ---
 
 ## Applicability
@@ -34,8 +34,7 @@ For each test target, there exists at least one [instrument][] inside it to move
 
 ## Assumptions
 
-- This rule assumes that there is at least one [block of repeated content][] before the non-repeated content, and therefore [Technique G123: Adding a link at the beginning of a block of repeated content to go to the end of the block][tech g123] will require a link to the non-repeated content in order to skip this [block of repeated content][]. If there is no [block of repeated content][] before the non-repeated content, then it is possible to fail this rule but still pass [Technique G123: Adding a link at the beginning of a block of repeated content to go to the end of the block][tech g123].
-- This rule assumes that the language of each test target can be correctly determined (either programmatically or by analyzing the content), and sufficiently understood.
+This rule assumes that there is at least one [block of repeated content][] before the non-repeated content, and therefore [Technique G123: Adding a link at the beginning of a block of repeated content to go to the end of the block][tech g123] will require a link to the non-repeated content in order to skip this [block of repeated content][]. If there is no [block of repeated content][] before the non-repeated content, then it is possible to fail this rule but still pass [Technique G123: Adding a link at the beginning of a block of repeated content to go to the end of the block][tech g123].
 
 ## Accessibility Support
 

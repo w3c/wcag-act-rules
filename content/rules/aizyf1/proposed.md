@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> aizyf1</p>
-  <p><strong>Date:</strong> Updated 11 July 2022</p>
+  <p><strong>Date:</strong> Updated 12 July 2022</p>
   <p><strong>Authors:</strong> <a href="https://github.com/Jym77">Jean-Yves Moyen</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -19,7 +19,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that the accessible name of a link describes its purpose.
-  last_modified: 11 July 2022
+  last_modified: 12 July 2022
   scs_tested:
     - handle: Link Purpose (Link Only)
       num: 2.4.9
@@ -41,7 +41,6 @@ Each test target has an [accessible name][] which describes its purpose.
 
 - This rule assumes that the purpose of the link is not ambiguous to users in general when seen in context on the web page, which is the exception mentioned in [Success Criterion 2.4.9 Link Purpose (Link Only)][sc249]. If the link is ambiguous to users in general, users of assistive technologies are not at a disadvantage when viewing the link out of context.
 - This rule assumes that all [semantic][semantic role] `link` elements are used as links. An element marked up as a link, but that does not behave as a link would not fail [Success Criterion 2.4.9 Link Purpose (Link Only)][sc249].
-- This rule assumes that the language of each test target can be correctly determined (either programmatically or by analyzing the content), and sufficiently understood.
 
 ## Accessibility Support
 
