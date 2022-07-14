@@ -2,7 +2,7 @@
   "vendor": "LASIGE, Faculdade de Ciências da Universidade de Lisboa",
   "name": "QualWeb",
   "version": "3.0.0",
-  "lastModified": "5 July 2022",
+  "lastModified": "12 July 2022",
   "approvedRules": {
     "complete": 11,
     "partial": 4,
@@ -10625,7 +10625,7 @@
             {
               "procedureName": "Links with identical accessible names and context serve equivalent purpose",
               "outcomes": [
-                "inapplicable"
+                "passed"
               ]
             }
           ]

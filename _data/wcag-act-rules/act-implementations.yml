@@ -25,7 +25,7 @@
   standards:
     - WCAG 2.1 Level A, AA, AAA
     - WAI-ARIA 1.2
-  jsonReport: https://raw.githubusercontent.com/Siteimprove/alfa-act-r/main/reports/alfa-w3c.json
+  jsonReport: https://raw.githubusercontent.com/Siteimprove/alfa-act-r/main/reports/alfa-report-new-test-cases.json
 
 - name: Axe-core
   homepage: https://www.npmjs.com/package/axe-core/
@@ -96,17 +96,16 @@
   jsonReport: https://raw.githubusercontent.com/qualweb/ACT-implementation-report/main/qualweb-report.json
 
 - name: SortSite
-  omepage: https://www.powermapper.com/products/sortsite/
-  hidden: true
-  version: 6.44
+  homepage: https://www.powermapper.com/products/sortsite/
+  version: 6.45
   vendor: PowerMapper
   vendorHomepage: https://www.powermapper.com/
-  uniqueKey: sort-site
+  uniqueKey: sortsite
   type: Automated tool
   standards:
     - WCAG 2.1 Level A, AA, AAA
     - WAI-ARIA 1.2
-  jsonReport: https://raw.githubusercontent.com/act-rules/act-rules-implementation-sortsite/master/report.json
+  jsonReport: https://qa.powermapper.com/Tests/ACT-R/report.json
 
 - name: Trusted Tester
   version: 5.1
