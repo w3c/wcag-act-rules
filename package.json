@@ -2,7 +2,7 @@
   "dependencies": {
     "act-tools": "github:act-rules/act-tools",
     "axios": "^0.27.2",
-    "moment": "^2.29.3",
+    "moment": "^2.29.4",
     "yaml": "^2.1.1",
     "zx": "^6.2.4"
   }
