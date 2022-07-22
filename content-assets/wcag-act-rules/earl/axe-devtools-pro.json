@@ -18888,6 +18888,765 @@
           "earl:TestSubject",
           "sch:WebPage"
         ],
+        "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/3ea0c8/4ef5ade1eef2acf1f18958afa7e30499c4d6a21e.html"
+      },
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:inapplicable"
+      },
+      "test": {
+        "@type": "TestCase",
+        "title": "duplicate-id-active",
+        "@id": "https://dequeuniversity.com/rules/axe/4.4/duplicate-id-active?application=axeAPI",
+        "isPartOf": [
+          "WCAG2:parsing"
+        ]
+      }
+    },
+    {
+      "@type": "Assertion",
+      "mode": "earl:automatic",
+      "subject": {
+        "@type": [
+          "earl:TestSubject",
+          "sch:WebPage"
+        ],
+        "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/3ea0c8/4ef5ade1eef2acf1f18958afa7e30499c4d6a21e.html"
+      },
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:inapplicable"
+      },
+      "test": {
+        "@type": "TestCase",
+        "title": "duplicate-id-aria",
+        "@id": "https://dequeuniversity.com/rules/axe/4.4/duplicate-id-aria?application=axeAPI",
+        "isPartOf": [
+          "WCAG2:parsing"
+        ]
+      }
+    },
+    {
+      "@type": "Assertion",
+      "mode": "earl:automatic",
+      "subject": {
+        "@type": [
+          "earl:TestSubject",
+          "sch:WebPage"
+        ],
+        "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/3ea0c8/4ef5ade1eef2acf1f18958afa7e30499c4d6a21e.html"
+      },
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:passed"
+      },
+      "test": {
+        "@type": "TestCase",
+        "title": "duplicate-id",
+        "@id": "https://dequeuniversity.com/rules/axe/4.4/duplicate-id?application=axeAPI",
+        "isPartOf": [
+          "WCAG2:parsing"
+        ]
+      }
+    },
+    {
+      "@type": "Assertion",
+      "mode": "earl:automatic",
+      "subject": {
+        "@type": [
+          "earl:TestSubject",
+          "sch:WebPage"
+        ],
+        "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/3ea0c8/0dd7b6f5b1643b9445ac9d6cfe15a8a288c642d7.html"
+      },
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:inapplicable"
+      },
+      "test": {
+        "@type": "TestCase",
+        "title": "duplicate-id-active",
+        "@id": "https://dequeuniversity.com/rules/axe/4.4/duplicate-id-active?application=axeAPI",
+        "isPartOf": [
+          "WCAG2:parsing"
+        ]
+      }
+    },
+    {
+      "@type": "Assertion",
+      "mode": "earl:automatic",
+      "subject": {
+        "@type": [
+          "earl:TestSubject",
+          "sch:WebPage"
+        ],
+        "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/3ea0c8/0dd7b6f5b1643b9445ac9d6cfe15a8a288c642d7.html"
+      },
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:inapplicable"
+      },
+      "test": {
+        "@type": "TestCase",
+        "title": "duplicate-id-aria",
+        "@id": "https://dequeuniversity.com/rules/axe/4.4/duplicate-id-aria?application=axeAPI",
+        "isPartOf": [
+          "WCAG2:parsing"
+        ]
+      }
+    },
+    {
+      "@type": "Assertion",
+      "mode": "earl:automatic",
+      "subject": {
+        "@type": [
+          "earl:TestSubject",
+          "sch:WebPage"
+        ],
+        "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/3ea0c8/0dd7b6f5b1643b9445ac9d6cfe15a8a288c642d7.html"
+      },
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:passed"
+      },
+      "test": {
+        "@type": "TestCase",
+        "title": "duplicate-id",
+        "@id": "https://dequeuniversity.com/rules/axe/4.4/duplicate-id?application=axeAPI",
+        "isPartOf": [
+          "WCAG2:parsing"
+        ]
+      }
+    },
+    {
+      "@type": "Assertion",
+      "mode": "earl:automatic",
+      "subject": {
+        "@type": [
+          "earl:TestSubject",
+          "sch:WebPage"
+        ],
+        "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/3ea0c8/0dd7b6f5b1643b9445ac9d6cfe15a8a288c642d7.html"
+      },
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:passed"
+      },
+      "test": {
+        "@type": "TestCase",
+        "title": "duplicate-id",
+        "@id": "https://dequeuniversity.com/rules/axe/4.4/duplicate-id?application=axeAPI",
+        "isPartOf": [
+          "WCAG2:parsing"
+        ]
+      }
+    },
+    {
+      "@type": "Assertion",
+      "mode": "earl:automatic",
+      "subject": {
+        "@type": [
+          "earl:TestSubject",
+          "sch:WebPage"
+        ],
+        "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/3ea0c8/0dd7b6f5b1643b9445ac9d6cfe15a8a288c642d7.html"
+      },
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:passed"
+      },
+      "test": {
+        "@type": "TestCase",
+        "title": "duplicate-id",
+        "@id": "https://dequeuniversity.com/rules/axe/4.4/duplicate-id?application=axeAPI",
+        "isPartOf": [
+          "WCAG2:parsing"
+        ]
+      }
+    },
+    {
+      "@type": "Assertion",
+      "mode": "earl:automatic",
+      "subject": {
+        "@type": [
+          "earl:TestSubject",
+          "sch:WebPage"
+        ],
+        "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/3ea0c8/506213ce24435d4548e742b4b37c3e133675d2fb.html"
+      },
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:inapplicable"
+      },
+      "test": {
+        "@type": "TestCase",
+        "title": "duplicate-id-active",
+        "@id": "https://dequeuniversity.com/rules/axe/4.4/duplicate-id-active?application=axeAPI",
+        "isPartOf": [
+          "WCAG2:parsing"
+        ]
+      }
+    },
+    {
+      "@type": "Assertion",
+      "mode": "earl:automatic",
+      "subject": {
+        "@type": [
+          "earl:TestSubject",
+          "sch:WebPage"
+        ],
+        "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/3ea0c8/506213ce24435d4548e742b4b37c3e133675d2fb.html"
+      },
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:inapplicable"
+      },
+      "test": {
+        "@type": "TestCase",
+        "title": "duplicate-id-aria",
+        "@id": "https://dequeuniversity.com/rules/axe/4.4/duplicate-id-aria?application=axeAPI",
+        "isPartOf": [
+          "WCAG2:parsing"
+        ]
+      }
+    },
+    {
+      "@type": "Assertion",
+      "mode": "earl:automatic",
+      "subject": {
+        "@type": [
+          "earl:TestSubject",
+          "sch:WebPage"
+        ],
+        "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/3ea0c8/506213ce24435d4548e742b4b37c3e133675d2fb.html"
+      },
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:passed"
+      },
+      "test": {
+        "@type": "TestCase",
+        "title": "duplicate-id",
+        "@id": "https://dequeuniversity.com/rules/axe/4.4/duplicate-id?application=axeAPI",
+        "isPartOf": [
+          "WCAG2:parsing"
+        ]
+      }
+    },
+    {
+      "@type": "Assertion",
+      "mode": "earl:automatic",
+      "subject": {
+        "@type": [
+          "earl:TestSubject",
+          "sch:WebPage"
+        ],
+        "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/3ea0c8/506213ce24435d4548e742b4b37c3e133675d2fb.html"
+      },
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:passed"
+      },
+      "test": {
+        "@type": "TestCase",
+        "title": "duplicate-id",
+        "@id": "https://dequeuniversity.com/rules/axe/4.4/duplicate-id?application=axeAPI",
+        "isPartOf": [
+          "WCAG2:parsing"
+        ]
+      }
+    },
+    {
+      "@type": "Assertion",
+      "mode": "earl:automatic",
+      "subject": {
+        "@type": [
+          "earl:TestSubject",
+          "sch:WebPage"
+        ],
+        "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/3ea0c8/4ff699b4bf035b12c5b89ce9369027d9b48bf5b2.html"
+      },
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:inapplicable"
+      },
+      "test": {
+        "@type": "TestCase",
+        "title": "duplicate-id-active",
+        "@id": "https://dequeuniversity.com/rules/axe/4.4/duplicate-id-active?application=axeAPI",
+        "isPartOf": [
+          "WCAG2:parsing"
+        ]
+      }
+    },
+    {
+      "@type": "Assertion",
+      "mode": "earl:automatic",
+      "subject": {
+        "@type": [
+          "earl:TestSubject",
+          "sch:WebPage"
+        ],
+        "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/3ea0c8/4ff699b4bf035b12c5b89ce9369027d9b48bf5b2.html"
+      },
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:inapplicable"
+      },
+      "test": {
+        "@type": "TestCase",
+        "title": "duplicate-id-aria",
+        "@id": "https://dequeuniversity.com/rules/axe/4.4/duplicate-id-aria?application=axeAPI",
+        "isPartOf": [
+          "WCAG2:parsing"
+        ]
+      }
+    },
+    {
+      "@type": "Assertion",
+      "mode": "earl:automatic",
+      "subject": {
+        "@type": [
+          "earl:TestSubject",
+          "sch:WebPage"
+        ],
+        "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/3ea0c8/4ff699b4bf035b12c5b89ce9369027d9b48bf5b2.html"
+      },
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:passed"
+      },
+      "test": {
+        "@type": "TestCase",
+        "title": "duplicate-id",
+        "@id": "https://dequeuniversity.com/rules/axe/4.4/duplicate-id?application=axeAPI",
+        "isPartOf": [
+          "WCAG2:parsing"
+        ]
+      }
+    },
+    {
+      "@type": "Assertion",
+      "mode": "earl:automatic",
+      "subject": {
+        "@type": [
+          "earl:TestSubject",
+          "sch:WebPage"
+        ],
+        "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/3ea0c8/fd85a9469f647cbe3587d80e41efb9cdf833bfb9.html"
+      },
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:inapplicable"
+      },
+      "test": {
+        "@type": "TestCase",
+        "title": "duplicate-id-active",
+        "@id": "https://dequeuniversity.com/rules/axe/4.4/duplicate-id-active?application=axeAPI",
+        "isPartOf": [
+          "WCAG2:parsing"
+        ]
+      }
+    },
+    {
+      "@type": "Assertion",
+      "mode": "earl:automatic",
+      "subject": {
+        "@type": [
+          "earl:TestSubject",
+          "sch:WebPage"
+        ],
+        "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/3ea0c8/fd85a9469f647cbe3587d80e41efb9cdf833bfb9.html"
+      },
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:failed"
+      },
+      "test": {
+        "@type": "TestCase",
+        "title": "duplicate-id-aria",
+        "@id": "https://dequeuniversity.com/rules/axe/4.4/duplicate-id-aria?application=axeAPI",
+        "isPartOf": [
+          "WCAG2:parsing"
+        ]
+      }
+    },
+    {
+      "@type": "Assertion",
+      "mode": "earl:automatic",
+      "subject": {
+        "@type": [
+          "earl:TestSubject",
+          "sch:WebPage"
+        ],
+        "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/3ea0c8/fd85a9469f647cbe3587d80e41efb9cdf833bfb9.html"
+      },
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:inapplicable"
+      },
+      "test": {
+        "@type": "TestCase",
+        "title": "duplicate-id",
+        "@id": "https://dequeuniversity.com/rules/axe/4.4/duplicate-id?application=axeAPI",
+        "isPartOf": [
+          "WCAG2:parsing"
+        ]
+      }
+    },
+    {
+      "@type": "Assertion",
+      "mode": "earl:automatic",
+      "subject": {
+        "@type": [
+          "earl:TestSubject",
+          "sch:WebPage"
+        ],
+        "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/3ea0c8/13fa2fe0f46cfd134956865e23e5120c30977666.html"
+      },
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:inapplicable"
+      },
+      "test": {
+        "@type": "TestCase",
+        "title": "duplicate-id-active",
+        "@id": "https://dequeuniversity.com/rules/axe/4.4/duplicate-id-active?application=axeAPI",
+        "isPartOf": [
+          "WCAG2:parsing"
+        ]
+      }
+    },
+    {
+      "@type": "Assertion",
+      "mode": "earl:automatic",
+      "subject": {
+        "@type": [
+          "earl:TestSubject",
+          "sch:WebPage"
+        ],
+        "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/3ea0c8/13fa2fe0f46cfd134956865e23e5120c30977666.html"
+      },
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:failed"
+      },
+      "test": {
+        "@type": "TestCase",
+        "title": "duplicate-id-aria",
+        "@id": "https://dequeuniversity.com/rules/axe/4.4/duplicate-id-aria?application=axeAPI",
+        "isPartOf": [
+          "WCAG2:parsing"
+        ]
+      }
+    },
+    {
+      "@type": "Assertion",
+      "mode": "earl:automatic",
+      "subject": {
+        "@type": [
+          "earl:TestSubject",
+          "sch:WebPage"
+        ],
+        "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/3ea0c8/13fa2fe0f46cfd134956865e23e5120c30977666.html"
+      },
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:inapplicable"
+      },
+      "test": {
+        "@type": "TestCase",
+        "title": "duplicate-id",
+        "@id": "https://dequeuniversity.com/rules/axe/4.4/duplicate-id?application=axeAPI",
+        "isPartOf": [
+          "WCAG2:parsing"
+        ]
+      }
+    },
+    {
+      "@type": "Assertion",
+      "mode": "earl:automatic",
+      "subject": {
+        "@type": [
+          "earl:TestSubject",
+          "sch:WebPage"
+        ],
+        "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/3ea0c8/b4aa56c42d630ec9d31acab94afc3c7fa88b8c1a.html"
+      },
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:inapplicable"
+      },
+      "test": {
+        "@type": "TestCase",
+        "title": "duplicate-id-active",
+        "@id": "https://dequeuniversity.com/rules/axe/4.4/duplicate-id-active?application=axeAPI",
+        "isPartOf": [
+          "WCAG2:parsing"
+        ]
+      }
+    },
+    {
+      "@type": "Assertion",
+      "mode": "earl:automatic",
+      "subject": {
+        "@type": [
+          "earl:TestSubject",
+          "sch:WebPage"
+        ],
+        "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/3ea0c8/b4aa56c42d630ec9d31acab94afc3c7fa88b8c1a.html"
+      },
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:failed"
+      },
+      "test": {
+        "@type": "TestCase",
+        "title": "duplicate-id-aria",
+        "@id": "https://dequeuniversity.com/rules/axe/4.4/duplicate-id-aria?application=axeAPI",
+        "isPartOf": [
+          "WCAG2:parsing"
+        ]
+      }
+    },
+    {
+      "@type": "Assertion",
+      "mode": "earl:automatic",
+      "subject": {
+        "@type": [
+          "earl:TestSubject",
+          "sch:WebPage"
+        ],
+        "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/3ea0c8/b4aa56c42d630ec9d31acab94afc3c7fa88b8c1a.html"
+      },
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:inapplicable"
+      },
+      "test": {
+        "@type": "TestCase",
+        "title": "duplicate-id",
+        "@id": "https://dequeuniversity.com/rules/axe/4.4/duplicate-id?application=axeAPI",
+        "isPartOf": [
+          "WCAG2:parsing"
+        ]
+      }
+    },
+    {
+      "@type": "Assertion",
+      "mode": "earl:automatic",
+      "subject": {
+        "@type": [
+          "earl:TestSubject",
+          "sch:WebPage"
+        ],
+        "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/3ea0c8/1999e27d1ba312c320a1f9b457a34440edf4d190.html"
+      },
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:inapplicable"
+      },
+      "test": {
+        "@type": "TestCase",
+        "title": "duplicate-id-active",
+        "@id": "https://dequeuniversity.com/rules/axe/4.4/duplicate-id-active?application=axeAPI",
+        "isPartOf": [
+          "WCAG2:parsing"
+        ]
+      }
+    },
+    {
+      "@type": "Assertion",
+      "mode": "earl:automatic",
+      "subject": {
+        "@type": [
+          "earl:TestSubject",
+          "sch:WebPage"
+        ],
+        "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/3ea0c8/1999e27d1ba312c320a1f9b457a34440edf4d190.html"
+      },
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:inapplicable"
+      },
+      "test": {
+        "@type": "TestCase",
+        "title": "duplicate-id-aria",
+        "@id": "https://dequeuniversity.com/rules/axe/4.4/duplicate-id-aria?application=axeAPI",
+        "isPartOf": [
+          "WCAG2:parsing"
+        ]
+      }
+    },
+    {
+      "@type": "Assertion",
+      "mode": "earl:automatic",
+      "subject": {
+        "@type": [
+          "earl:TestSubject",
+          "sch:WebPage"
+        ],
+        "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/3ea0c8/1999e27d1ba312c320a1f9b457a34440edf4d190.html"
+      },
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:inapplicable"
+      },
+      "test": {
+        "@type": "TestCase",
+        "title": "duplicate-id",
+        "@id": "https://dequeuniversity.com/rules/axe/4.4/duplicate-id?application=axeAPI",
+        "isPartOf": [
+          "WCAG2:parsing"
+        ]
+      }
+    },
+    {
+      "@type": "Assertion",
+      "mode": "earl:automatic",
+      "subject": {
+        "@type": [
+          "earl:TestSubject",
+          "sch:WebPage"
+        ],
+        "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/3ea0c8/bd30d0514cc294ca6604e7f0ef963ef7df386d64.html"
+      },
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:inapplicable"
+      },
+      "test": {
+        "@type": "TestCase",
+        "title": "duplicate-id-active",
+        "@id": "https://dequeuniversity.com/rules/axe/4.4/duplicate-id-active?application=axeAPI",
+        "isPartOf": [
+          "WCAG2:parsing"
+        ]
+      }
+    },
+    {
+      "@type": "Assertion",
+      "mode": "earl:automatic",
+      "subject": {
+        "@type": [
+          "earl:TestSubject",
+          "sch:WebPage"
+        ],
+        "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/3ea0c8/bd30d0514cc294ca6604e7f0ef963ef7df386d64.html"
+      },
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:inapplicable"
+      },
+      "test": {
+        "@type": "TestCase",
+        "title": "duplicate-id-aria",
+        "@id": "https://dequeuniversity.com/rules/axe/4.4/duplicate-id-aria?application=axeAPI",
+        "isPartOf": [
+          "WCAG2:parsing"
+        ]
+      }
+    },
+    {
+      "@type": "Assertion",
+      "mode": "earl:automatic",
+      "subject": {
+        "@type": [
+          "earl:TestSubject",
+          "sch:WebPage"
+        ],
+        "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/3ea0c8/bd30d0514cc294ca6604e7f0ef963ef7df386d64.html"
+      },
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:inapplicable"
+      },
+      "test": {
+        "@type": "TestCase",
+        "title": "duplicate-id",
+        "@id": "https://dequeuniversity.com/rules/axe/4.4/duplicate-id?application=axeAPI",
+        "isPartOf": [
+          "WCAG2:parsing"
+        ]
+      }
+    },
+    {
+      "@type": "Assertion",
+      "mode": "earl:automatic",
+      "subject": {
+        "@type": [
+          "earl:TestSubject",
+          "sch:WebPage"
+        ],
+        "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/3ea0c8/2b2101d5ebab1b49c1b0293df1eb625bdbd6f934.html"
+      },
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:inapplicable"
+      },
+      "test": {
+        "@type": "TestCase",
+        "title": "duplicate-id-active",
+        "@id": "https://dequeuniversity.com/rules/axe/4.4/duplicate-id-active?application=axeAPI",
+        "isPartOf": [
+          "WCAG2:parsing"
+        ]
+      }
+    },
+    {
+      "@type": "Assertion",
+      "mode": "earl:automatic",
+      "subject": {
+        "@type": [
+          "earl:TestSubject",
+          "sch:WebPage"
+        ],
+        "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/3ea0c8/2b2101d5ebab1b49c1b0293df1eb625bdbd6f934.html"
+      },
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:inapplicable"
+      },
+      "test": {
+        "@type": "TestCase",
+        "title": "duplicate-id-aria",
+        "@id": "https://dequeuniversity.com/rules/axe/4.4/duplicate-id-aria?application=axeAPI",
+        "isPartOf": [
+          "WCAG2:parsing"
+        ]
+      }
+    },
+    {
+      "@type": "Assertion",
+      "mode": "earl:automatic",
+      "subject": {
+        "@type": [
+          "earl:TestSubject",
+          "sch:WebPage"
+        ],
+        "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/3ea0c8/2b2101d5ebab1b49c1b0293df1eb625bdbd6f934.html"
+      },
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:passed"
+      },
+      "test": {
+        "@type": "TestCase",
+        "title": "duplicate-id",
+        "@id": "https://dequeuniversity.com/rules/axe/4.4/duplicate-id?application=axeAPI",
+        "isPartOf": [
+          "WCAG2:parsing"
+        ]
+      }
+    },
+    {
+      "@type": "Assertion",
+      "mode": "earl:automatic",
+      "subject": {
+        "@type": [
+          "earl:TestSubject",
+          "sch:WebPage"
+        ],
         "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4b1c6c/08c5575023e8bf16caabcf01a1c8d40fe6ecaf94.html"
       },
       "result": {
@@ -23120,21 +23879,11 @@
           "earl:TestSubject",
           "sch:WebPage"
         ],
-        "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/ecc787569c06640f3748ae90e2b57fb51c1e22d8.html"
+        "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/56857820788db21498e95a5cbba65d59a9a2b892.html"
       },
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:failed"
-      },
-      "test": {
-        "@type": "TestCase",
-        "title": "meta-refresh",
-        "@id": "https://dequeuniversity.com/rules/axe/4.4/meta-refresh?application=axeAPI",
-        "isPartOf": [
-          "WCAG2:timing-adjustable",
-          "WCAG2:interruptions",
-          "WCAG2:change-on-request"
-        ]
+        "outcome": "earl:untested"
       }
     },
     {
@@ -23145,21 +23894,11 @@
           "earl:TestSubject",
           "sch:WebPage"
         ],
-        "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/b134b6aa2851b2e3ee5d1fbca056c2b706776a98.html"
+        "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/96c7657d21888cd05edd297d44a8fd554b21c908.html"
       },
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:failed"
-      },
-      "test": {
-        "@type": "TestCase",
-        "title": "meta-refresh",
-        "@id": "https://dequeuniversity.com/rules/axe/4.4/meta-refresh?application=axeAPI",
-        "isPartOf": [
-          "WCAG2:timing-adjustable",
-          "WCAG2:interruptions",
-          "WCAG2:change-on-request"
-        ]
+        "outcome": "earl:untested"
       }
     },
     {
@@ -23170,21 +23909,11 @@
           "earl:TestSubject",
           "sch:WebPage"
         ],
-        "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/7ce73a0a773528b21f497c3f0600ceb9f1b0097f.html"
+        "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/b2e7f3e00ffce0a2a1078f860452814e6445445d.html"
       },
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:passed"
-      },
-      "test": {
-        "@type": "TestCase",
-        "title": "meta-refresh",
-        "@id": "https://dequeuniversity.com/rules/axe/4.4/meta-refresh?application=axeAPI",
-        "isPartOf": [
-          "WCAG2:timing-adjustable",
-          "WCAG2:interruptions",
-          "WCAG2:change-on-request"
-        ]
+        "outcome": "earl:untested"
       }
     },
     {
@@ -23195,21 +23924,11 @@
           "earl:TestSubject",
           "sch:WebPage"
         ],
-        "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/7ce73a0a773528b21f497c3f0600ceb9f1b0097f.html"
+        "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/5d4d5b214459c8a0779600ab39a5668003271c62.html"
       },
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:failed"
-      },
-      "test": {
-        "@type": "TestCase",
-        "title": "meta-refresh",
-        "@id": "https://dequeuniversity.com/rules/axe/4.4/meta-refresh?application=axeAPI",
-        "isPartOf": [
-          "WCAG2:timing-adjustable",
-          "WCAG2:interruptions",
-          "WCAG2:change-on-request"
-        ]
+        "outcome": "earl:untested"
       }
     },
     {
@@ -23220,21 +23939,11 @@
           "earl:TestSubject",
           "sch:WebPage"
         ],
-        "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/3824cfe765c82569066863a2276c428cc9ebd82c.html"
+        "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/48a600254c0883cd5a72471420b1ac5a532ca6c3.html"
       },
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:failed"
-      },
-      "test": {
-        "@type": "TestCase",
-        "title": "meta-refresh",
-        "@id": "https://dequeuniversity.com/rules/axe/4.4/meta-refresh?application=axeAPI",
-        "isPartOf": [
-          "WCAG2:timing-adjustable",
-          "WCAG2:interruptions",
-          "WCAG2:change-on-request"
-        ]
+        "outcome": "earl:untested"
       }
     },
     {
@@ -23245,21 +23954,11 @@
           "earl:TestSubject",
           "sch:WebPage"
         ],
-        "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/3761ce87e64549073f62df26071fbde9850e649e.html"
+        "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/4dffd30573a924ad0158d813733e029aac160194.html"
       },
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:inapplicable"
-      },
-      "test": {
-        "@type": "TestCase",
-        "title": "meta-refresh",
-        "@id": "https://dequeuniversity.com/rules/axe/4.4/meta-refresh?application=axeAPI",
-        "isPartOf": [
-          "WCAG2:timing-adjustable",
-          "WCAG2:interruptions",
-          "WCAG2:change-on-request"
-        ]
+        "outcome": "earl:untested"
       }
     },
     {
@@ -23270,21 +23969,11 @@
           "earl:TestSubject",
           "sch:WebPage"
         ],
-        "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/9a3bda5ec60f149807ec999ca430dce67f295846.html"
+        "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/a05aeffa53890c3ed9fd9cefa544eb1071497de5.html"
       },
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:inapplicable"
-      },
-      "test": {
-        "@type": "TestCase",
-        "title": "meta-refresh",
-        "@id": "https://dequeuniversity.com/rules/axe/4.4/meta-refresh?application=axeAPI",
-        "isPartOf": [
-          "WCAG2:timing-adjustable",
-          "WCAG2:interruptions",
-          "WCAG2:change-on-request"
-        ]
+        "outcome": "earl:untested"
       }
     },
     {
@@ -23295,21 +23984,11 @@
           "earl:TestSubject",
           "sch:WebPage"
         ],
-        "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/a943b8cfaefd7d7b16fefc36bc24eed2ce89a4e8.html"
+        "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/a8c47bb26867342e83342645507fb766648799d7.html"
       },
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:passed"
-      },
-      "test": {
-        "@type": "TestCase",
-        "title": "meta-refresh",
-        "@id": "https://dequeuniversity.com/rules/axe/4.4/meta-refresh?application=axeAPI",
-        "isPartOf": [
-          "WCAG2:timing-adjustable",
-          "WCAG2:interruptions",
-          "WCAG2:change-on-request"
-        ]
+        "outcome": "earl:untested"
       }
     },
     {
@@ -23320,21 +23999,11 @@
           "earl:TestSubject",
           "sch:WebPage"
         ],
-        "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/e6e51895cab42ee6adf2ade5b654808d830e673b.html"
+        "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/ca4a053f47b6e322ad6de680fdabd05f651bf49b.html"
       },
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:passed"
-      },
-      "test": {
-        "@type": "TestCase",
-        "title": "meta-refresh",
-        "@id": "https://dequeuniversity.com/rules/axe/4.4/meta-refresh?application=axeAPI",
-        "isPartOf": [
-          "WCAG2:timing-adjustable",
-          "WCAG2:interruptions",
-          "WCAG2:change-on-request"
-        ]
+        "outcome": "earl:untested"
       }
     },
     {
@@ -23345,21 +24014,11 @@
           "earl:TestSubject",
           "sch:WebPage"
         ],
-        "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/ab5d8aeef0246a383e782e44744d3989e72fd573.html"
+        "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/b42a3a108d5d0f65258cd8157eb0011b78ce9253.html"
       },
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:passed"
-      },
-      "test": {
-        "@type": "TestCase",
-        "title": "meta-refresh",
-        "@id": "https://dequeuniversity.com/rules/axe/4.4/meta-refresh?application=axeAPI",
-        "isPartOf": [
-          "WCAG2:timing-adjustable",
-          "WCAG2:interruptions",
-          "WCAG2:change-on-request"
-        ]
+        "outcome": "earl:untested"
       }
     },
     {
@@ -23370,21 +24029,11 @@
           "earl:TestSubject",
           "sch:WebPage"
         ],
-        "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/c3cc2e9d19259f7a7ffa99818ac44d034127f01f.html"
+        "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/0bf30cdf02ff26dfca5aa705b7023227da221e05.html"
       },
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:passed"
-      },
-      "test": {
-        "@type": "TestCase",
-        "title": "meta-refresh",
-        "@id": "https://dequeuniversity.com/rules/axe/4.4/meta-refresh?application=axeAPI",
-        "isPartOf": [
-          "WCAG2:timing-adjustable",
-          "WCAG2:interruptions",
-          "WCAG2:change-on-request"
-        ]
+        "outcome": "earl:untested"
       }
     },
     {
@@ -23395,46 +24044,11 @@
           "earl:TestSubject",
           "sch:WebPage"
         ],
-        "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/e95e086753e09bfc8c7c20ab5c3241aef0ad8cfd.html"
+        "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/8ce8198a1e6907ae25eb957eb0a5a99e719131a1.html"
       },
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:passed"
-      },
-      "test": {
-        "@type": "TestCase",
-        "title": "meta-refresh",
-        "@id": "https://dequeuniversity.com/rules/axe/4.4/meta-refresh?application=axeAPI",
-        "isPartOf": [
-          "WCAG2:timing-adjustable",
-          "WCAG2:interruptions",
-          "WCAG2:change-on-request"
-        ]
-      }
-    },
-    {
-      "@type": "Assertion",
-      "mode": "earl:automatic",
-      "subject": {
-        "@type": [
-          "earl:TestSubject",
-          "sch:WebPage"
-        ],
-        "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/0dcdacefc963adfbb2d3493e5468f8f12f0ac6de.html"
-      },
-      "result": {
-        "@type": "TestResult",
-        "outcome": "earl:passed"
-      },
-      "test": {
-        "@type": "TestCase",
-        "title": "meta-refresh",
-        "@id": "https://dequeuniversity.com/rules/axe/4.4/meta-refresh?application=axeAPI",
-        "isPartOf": [
-          "WCAG2:timing-adjustable",
-          "WCAG2:interruptions",
-          "WCAG2:change-on-request"
-        ]
+        "outcome": "earl:untested"
       }
     },
     {
