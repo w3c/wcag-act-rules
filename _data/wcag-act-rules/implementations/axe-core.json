@@ -2,7 +2,7 @@
   "vendor": "Deque Systems",
   "name": "Axe-core",
   "version": "4.5.0-prerelease",
-  "lastModified": "22 July 2022",
+  "lastModified": "23 July 2022",
   "approvedRules": {
     "complete": 12,
     "partial": 3,
@@ -12644,9 +12644,9 @@
         "reported": []
       },
       "coverage": {
-        "covered": 1,
+        "covered": 2,
         "untested": 0,
-        "cantTell": 5,
+        "cantTell": 4,
         "testCaseTotal": 6
       },
       "testCaseResults": [
@@ -12720,7 +12720,7 @@
             {
               "procedureName": "video-caption",
               "outcomes": [
-                "cantTell"
+                "inapplicable"
               ]
             }
           ]
