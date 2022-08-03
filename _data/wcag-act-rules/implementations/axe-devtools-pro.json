@@ -2,7 +2,7 @@
   "vendor": "Deque Systems",
   "name": "Axe DevTools Pro",
   "version": "4.24.5",
-  "lastModified": "1 August 2022",
+  "lastModified": "3 August 2022",
   "approvedRules": {
     "complete": 12,
     "partial": 3,
@@ -6434,18 +6434,16 @@
       ],
       "consistency": null,
       "accessibilityRequirements": {
-        "correct": true,
+        "correct": false,
         "expected": [
           "WCAG2:audio-control"
         ],
-        "reported": [
-          "WCAG2:audio-control"
-        ]
+        "reported": []
       },
       "coverage": {
-        "covered": 6,
+        "covered": 4,
         "untested": 0,
-        "cantTell": 0,
+        "cantTell": 4,
         "testCaseTotal": 8
       },
       "testCaseResults": [
@@ -6489,7 +6487,7 @@
             {
               "procedureName": "no-autoplay-audio",
               "outcomes": [
-                "failed"
+                "cantTell"
               ]
             }
           ]
@@ -6504,7 +6502,7 @@
             {
               "procedureName": "no-autoplay-audio",
               "outcomes": [
-                "failed"
+                "cantTell"
               ]
             }
           ]
@@ -6519,7 +6517,7 @@
             {
               "procedureName": "no-autoplay-audio",
               "outcomes": [
-                "failed"
+                "cantTell"
               ]
             }
           ]
@@ -6549,7 +6547,7 @@
             {
               "procedureName": "no-autoplay-audio",
               "outcomes": [
-                "failed"
+                "cantTell"
               ]
             }
           ]
