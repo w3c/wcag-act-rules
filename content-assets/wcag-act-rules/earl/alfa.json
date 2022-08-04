@@ -20079,18 +20079,18 @@
               "cnt:ContentAsText"
             ],
             "cnt:characterEncoding": "utf-8",
-            "cnt:chars": ""
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<div>\n\t\tYou can learn more in the\n\t\t<a href=\"/WAI/content-assets/wcag-act-rules/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/index.html\">Contact us</a> page.\n\t</div>\n\t<div>\n\t\tYou can learn more in the\n\t\t<a href=\"/WAI/content-assets/wcag-act-rules/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/index.html\">Contact us</a> page.\n\t</div>\n</html>"
           },
           "http-vocab:headers": {
             "@list": [
               {
                 "@type": "http-vocab:MessageHeader",
                 "http-vocab:fieldName": "content-type",
-                "http-vocab:fieldValue": "text/html;charset=utf-8"
+                "http-vocab:fieldValue": "text/html; charset=utf-8"
               }
             ]
           },
-          "http-vocab:statusCodeValue": 404
+          "http-vocab:statusCodeValue": 200
         }
       ],
       "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/a799c111fc2dd2b2e6dade9bf227790d8cb33f68.html"
@@ -20099,7 +20099,37 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:inapplicable"
+        "info": "The links resolve to the same resource",
+        "outcome": "earl:passed",
+        "earl:pointer": {
+          "@type": [
+            "ptr:Pointer",
+            "ptr:PointersGroup",
+            "ptr:RelatedPointers"
+          ],
+          "ptr:groupPointer": {
+            "@list": [
+              {
+                "@type": [
+                  "ptr:Pointer",
+                  "ptr:SinglePointer",
+                  "ptr:ExpressionPointer",
+                  "ptr:XPathPointer"
+                ],
+                "ptr:expression": "/html[1]/body[1]/div[1]/a[1]"
+              },
+              {
+                "@type": [
+                  "ptr:Pointer",
+                  "ptr:SinglePointer",
+                  "ptr:ExpressionPointer",
+                  "ptr:XPathPointer"
+                ],
+                "ptr:expression": "/html[1]/body[1]/div[2]/a[1]"
+              }
+            ]
+          }
+        }
       },
       "subject": {
         "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/a799c111fc2dd2b2e6dade9bf227790d8cb33f68.html"
@@ -22439,17 +22469,7 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "The element has all required states and properties",
-        "outcome": "earl:passed",
-        "earl:pointer": {
-          "@type": [
-            "ptr:Pointer",
-            "ptr:SinglePointer",
-            "ptr:ExpressionPointer",
-            "ptr:XPathPointer"
-          ],
-          "ptr:expression": "/html[1]/body[1]/input[1]"
-        }
+        "outcome": "earl:inapplicable"
       },
       "subject": {
         "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/a384e79d59f806b9403f207a29223541048716ac.html"
@@ -27572,7 +27592,7 @@
             "ptr:ExpressionPointer",
             "ptr:XPathPointer"
           ],
-          "ptr:expression": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[2]/@headers"
+          "ptr:expression": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/@headers"
         }
       },
       "subject": {
@@ -31321,7 +31341,7 @@
             "ptr:ExpressionPointer",
             "ptr:XPathPointer"
           ],
-          "ptr:expression": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[2]/@headers"
+          "ptr:expression": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/@headers"
         }
       },
       "subject": {
@@ -35005,7 +35025,7 @@
             "ptr:ExpressionPointer",
             "ptr:XPathPointer"
           ],
-          "ptr:expression": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[2]/@headers"
+          "ptr:expression": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/@headers"
         }
       },
       "subject": {
@@ -44966,17 +44986,7 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "The highest possible contrast of the text is 3.54:1 which is\n        below the required contrast of 4.5:1",
-        "outcome": "earl:failed",
-        "earl:pointer": {
-          "@type": [
-            "ptr:Pointer",
-            "ptr:SinglePointer",
-            "ptr:ExpressionPointer",
-            "ptr:XPathPointer"
-          ],
-          "ptr:expression": "/html[1]/body[1]/label[1]/text()[1]"
-        }
+        "outcome": "earl:inapplicable"
       },
       "subject": {
         "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/328b967c5b544b48f7acd8e42f2f05d355501f2a.html"
@@ -46924,7 +46934,7 @@
             "ptr:ExpressionPointer",
             "ptr:XPathPointer"
           ],
-          "ptr:expression": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/th[2]/@headers"
+          "ptr:expression": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/th[1]/@headers"
         }
       },
       "subject": {
@@ -49329,7 +49339,7 @@
             "ptr:ExpressionPointer",
             "ptr:XPathPointer"
           ],
-          "ptr:expression": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/@headers"
+          "ptr:expression": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[2]/@headers"
         }
       },
       "subject": {
@@ -49868,17 +49878,7 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "The highest possible contrast of the text is 3.54:1 which is\n        below the required contrast of 4.5:1",
-        "outcome": "earl:failed",
-        "earl:pointer": {
-          "@type": [
-            "ptr:Pointer",
-            "ptr:SinglePointer",
-            "ptr:ExpressionPointer",
-            "ptr:XPathPointer"
-          ],
-          "ptr:expression": "/html[1]/body[1]/label[1]/text()[1]"
-        }
+        "outcome": "earl:inapplicable"
       },
       "subject": {
         "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/7c7d6412dae7381d90517a6f3c0a30104d63062a.html"
@@ -51680,7 +51680,7 @@
             "ptr:ExpressionPointer",
             "ptr:XPathPointer"
           ],
-          "ptr:expression": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[3]/@headers"
+          "ptr:expression": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/th[1]/@headers"
         }
       },
       "subject": {
@@ -51971,17 +51971,7 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "The highest possible contrast of the text is 3.54:1 which is\n        below the required contrast of 7:1",
-        "outcome": "earl:failed",
-        "earl:pointer": {
-          "@type": [
-            "ptr:Pointer",
-            "ptr:SinglePointer",
-            "ptr:ExpressionPointer",
-            "ptr:XPathPointer"
-          ],
-          "ptr:expression": "/html[1]/body[1]/label[1]/text()[1]"
-        }
+        "outcome": "earl:inapplicable"
       },
       "subject": {
         "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/7c7d6412dae7381d90517a6f3c0a30104d63062a.html"
@@ -60745,17 +60735,7 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "The highest possible contrast of the text is 3.54:1 which is\n        below the required contrast of 7:1",
-        "outcome": "earl:failed",
-        "earl:pointer": {
-          "@type": [
-            "ptr:Pointer",
-            "ptr:SinglePointer",
-            "ptr:ExpressionPointer",
-            "ptr:XPathPointer"
-          ],
-          "ptr:expression": "/html[1]/body[1]/label[1]/text()[1]"
-        }
+        "outcome": "earl:inapplicable"
       },
       "subject": {
         "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/328b967c5b544b48f7acd8e42f2f05d355501f2a.html"

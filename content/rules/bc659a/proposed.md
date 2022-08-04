@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> bc659a</p>
-  <p><strong>Date:</strong> Updated 11 July 2022</p>
+  <p><strong>Date:</strong> Updated 21 July 2022</p>
   <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/Jym77">Jean-Yves Moyen</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -19,7 +19,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that the `meta` element is not used for delayed redirecting or refreshing.
-  last_modified: 11 July 2022
+  last_modified: 21 July 2022
   scs_tested:
     - handle: Timing Adjustable
       num: 2.2.1
@@ -41,7 +41,7 @@ This rule applies to the first `meta` element in a document for which all the fo
 
 ## Expectation
 
-For each test target, running the [shared declarative refresh steps][], given the target's document, the value of the target's `content` attribute, and the target results in _time_ being either 0 or greater than 72000 (20 hours).
+For each target, the _time_ from the content [attribute value][] is between 0 and 72000 (20 hours). To determine the _time_, run the [shared declarative refresh steps][] on the `meta` element as described in the [HTML refresh state](https://html.spec.whatwg.org/multipage/semantics.html#attr-meta-http-equiv-refresh).
 
 ## Assumptions
 
@@ -54,7 +54,7 @@ Not all major web browsers parse the value of the `content` attribute in the sam
 
 ## Background
 
-This rule is designed specifically for [2.2.1 Timing Adjustable][sc221], which can be satisfied if the time limit is over 20 hours long. All pages that fail this because of a "refresh" `meta` element also do not satisfy [2.2.3 No Timing][sc223] and [3.2.5 Change on Request][sc325]. In order to adequately test the [expectation](#expectation), some of the passed examples do not satisfy [2.2.3 No Timing][sc223] and [3.2.5 Change on Request][sc325].
+This rule is designed specifically for [2.2.1 Timing Adjustable][sc221], which can be satisfied if the time limit is over 20 hours long. All pages that fail this because of a "refresh" `meta` element also do not satisfy [3.2.5 Change on Request][sc325]. In order to adequately test the [expectation](#expectation), some of the passed examples do not satisfy [3.2.5 Change on Request][sc325]. Note: Because a refresh with a timing of 0 is a redirect, it is exempt from this rule. Since this can cause rapid screen flashes it is strongly recommend to avoid this.
 
 ### Bibliography
 
@@ -145,7 +145,7 @@ The following aspects are required in using this rule.
 
 <a class="example-link" title="Passed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/49d79a4e4e4a994a8eb7cf2eaf59c99d2251cac5.html">Open in a new tab</a>
 
-Redirects immediately.
+This page redirects to a new page immediately.
 
 ```html
 <head>
@@ -157,7 +157,7 @@ Redirects immediately.
 
 <a class="example-link" title="Passed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/d48be8e9b638b9c27714cb3118a335376ed65f0f.html">Open in a new tab</a>
 
-First valid `<meta http-equiv="refresh">` redirects immediately.
+The first valid `meta` element on this page redirects to a new page immediately.
 
 ```html
 <head>
@@ -170,7 +170,7 @@ First valid `<meta http-equiv="refresh">` redirects immediately.
 
 <a class="example-link" title="Passed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/b5ca868de7980f6944142ecdb849f47ad2cdfb5c.html">Open in a new tab</a>
 
-Redirects after more than 20 hours.
+This page redirects after more than 20 hours.
 
 ```html
 <head>
@@ -182,149 +182,185 @@ Redirects after more than 20 hours.
 
 #### Failed Example 1
 
-<a class="example-link" title="Failed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/ecc787569c06640f3748ae90e2b57fb51c1e22d8.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/56857820788db21498e95a5cbba65d59a9a2b892.html">Open in a new tab</a>
 
-Refreshes after 30 seconds.
+This page refreshes after 30 seconds.
 
 ```html
 <head>
 	<meta http-equiv="refresh" content="30" />
 </head>
+<body>
+	<p>This page refreshes after 30 seconds.</p>
+</body>
 ```
 
 #### Failed Example 2
 
-<a class="example-link" title="Failed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/b134b6aa2851b2e3ee5d1fbca056c2b706776a98.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/96c7657d21888cd05edd297d44a8fd554b21c908.html">Open in a new tab</a>
 
-Redirects after 30 seconds.
+This page redirects to a new page after 30 seconds.
 
 ```html
 <head>
 	<meta http-equiv="refresh" content="30; URL='https://w3.org'" />
 </head>
+<body>
+	<p>This page redirects afte 30 seconds.</p>
+</body>
 ```
 
 #### Failed Example 3
 
-<a class="example-link" title="Failed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/7ce73a0a773528b21f497c3f0600ceb9f1b0097f.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/b2e7f3e00ffce0a2a1078f860452814e6445445d.html">Open in a new tab</a>
 
-First `<meta http-equiv="refresh">` element is not valid, second one redirects after 5 seconds.
+The first `meta` element on this page is not valid because it uses colon (":") rather than semicolon (";"). The second `meta` element redirects to a new page after 5 seconds.
 
 ```html
 <head>
 	<meta http-equiv="refresh" content="0: https://w3.org" />
 	<meta http-equiv="refresh" content="5; https://w3.org" />
 </head>
+<body>
+	<p>This page refreshes after 5 seconds.</p>
+</body>
 ```
 
 #### Failed Example 4
 
-<a class="example-link" title="Failed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/3824cfe765c82569066863a2276c428cc9ebd82c.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/5d4d5b214459c8a0779600ab39a5668003271c62.html">Open in a new tab</a>
 
-Redirects after exactly 20 hours.
+This page redirects to a new page after exactly 20 hours.
 
 ```html
 <head>
 	<meta http-equiv="refresh" content="72000; https://w3.org" />
 </head>
+<body>
+	<p>This page redirects after exactly 20 hours.</p>
+</body>
 ```
 
 ### Inapplicable
 
 #### Inapplicable Example 1
 
-<a class="example-link" title="Inapplicable Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/3761ce87e64549073f62df26071fbde9850e649e.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/48a600254c0883cd5a72471420b1ac5a532ca6c3.html">Open in a new tab</a>
 
-No `content` attribute.
+This page will not refresh because it lacks a `content` attribute.
 
 ```html
 <head>
 	<meta http-equiv="refresh" />
 </head>
+<body>
+	<p>This page does not refresh.</p>
+</body>
 ```
 
 #### Inapplicable Example 2
 
-<a class="example-link" title="Inapplicable Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/9a3bda5ec60f149807ec999ca430dce67f295846.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/4dffd30573a924ad0158d813733e029aac160194.html">Open in a new tab</a>
 
-No `http-equiv="refresh"` attribute.
+This page will not refresh because it lacks a `http-equiv` attribute.
 
 ```html
 <head>
 	<meta content="30" />
 </head>
+<body>
+	<p>This page does not refresh.</p>
+</body>
 ```
 
 #### Inapplicable Example 3
 
-<a class="example-link" title="Inapplicable Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/a943b8cfaefd7d7b16fefc36bc24eed2ce89a4e8.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/a05aeffa53890c3ed9fd9cefa544eb1071497de5.html">Open in a new tab</a>
 
-`content` attribute is invalid and therefore inapplicable.
+This 'meta' element contains an invalid `content` attribute and will not refresh the page.
 
 ```html
 <head>
 	<meta http-equiv="refresh" content="0: https://w3.org" />
 </head>
+<body>
+	<p>This page does not redirect.</p>
+</body>
 ```
 
 #### Inapplicable Example 4
 
-<a class="example-link" title="Inapplicable Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/e6e51895cab42ee6adf2ade5b654808d830e673b.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/a8c47bb26867342e83342645507fb766648799d7.html">Open in a new tab</a>
 
-`content` attribute is invalid and therefore inapplicable.
+This 'meta' element contains an invalid `content` attribute and will not refresh the page.
 
 ```html
 <head>
 	<meta http-equiv="refresh" content="-00.12 foo" />
 </head>
+<body>
+	<p>This page does not refresh.</p>
+</body>
 ```
 
 #### Inapplicable Example 5
 
-<a class="example-link" title="Inapplicable Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/ab5d8aeef0246a383e782e44744d3989e72fd573.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/ca4a053f47b6e322ad6de680fdabd05f651bf49b.html">Open in a new tab</a>
 
-`content` attribute is invalid and therefore inapplicable.
+This 'meta' element contains an invalid `content` attribute and will not refresh the page.
 
 ```html
 <head>
 	<meta http-equiv="refresh" content="; 30" />
 </head>
+<body>
+	<p>This page does not refresh.</p>
+</body>
 ```
 
 #### Inapplicable Example 6
 
-<a class="example-link" title="Inapplicable Example 6" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/c3cc2e9d19259f7a7ffa99818ac44d034127f01f.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 6" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/b42a3a108d5d0f65258cd8157eb0011b78ce9253.html">Open in a new tab</a>
 
-`content` attribute is invalid and therefore inapplicable.
+This 'meta' element contains an invalid `content` attribute and will not refresh the page.
 
 ```html
 <head>
 	<meta http-equiv="refresh" content="" />
 </head>
+<body>
+	<p>This page does not refresh.</p>
+</body>
 ```
 
 #### Inapplicable Example 7
 
-<a class="example-link" title="Inapplicable Example 7" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/e95e086753e09bfc8c7c20ab5c3241aef0ad8cfd.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 7" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/0bf30cdf02ff26dfca5aa705b7023227da221e05.html">Open in a new tab</a>
 
-`content` attribute is invalid and therefore inapplicable.
+This 'meta' element contains an invalid `content` attribute and will not refresh the page.
 
 ```html
 <head>
 	<meta http-equiv="refresh" content="+5; https://w3.org" />
 </head>
+<body>
+	<p>This page does not redirect.</p>
+</body>
 ```
 
 #### Inapplicable Example 8
 
-<a class="example-link" title="Inapplicable Example 8" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/0dcdacefc963adfbb2d3493e5468f8f12f0ac6de.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 8" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/8ce8198a1e6907ae25eb957eb0a5a99e719131a1.html">Open in a new tab</a>
 
-`content` attribute is invalid and therefore inapplicable.
+This 'meta' element contains an invalid `content` attribute and will not refresh the page.
 
 ```html
 <head>
 	<meta http-equiv="refresh" content="foo; URL='https://w3.org'" />
 </head>
+<body>
+	<p>This page does not redirect.</p>
+</body>
 ```
 
 ## Glossary
@@ -368,7 +404,6 @@ An _outcome_ is a conclusion that comes from evaluating an ACT Rule on a [test s
 [numbers]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#numbers 'HTML Specification of Number Parsing'
 [reflect]: https://html.spec.whatwg.org/multipage/common-dom-interfaces.html#reflecting-content-attributes-in-idl-attributes 'HTML specification of Reflecting Content Attributes in IDL Attributes'
 [sc221]: https://www.w3.org/TR/WCAG21/#timing-adjustable 'WCAG 2.1 Success Criterion 2.2.1 Timing Adjustable'
-[sc223]: https://www.w3.org/TR/WCAG21/#no-timing 'WCAG 2.1 Success Criterion 2.2.3 No Timing'
 [sc325]: https://www.w3.org/TR/WCAG21/#change-on-request 'WCAG 2.1 Success Criterion 3.2.5 Change on Request'
 [shared declarative refresh steps]: https://html.spec.whatwg.org/#shared-declarative-refresh-steps 'HTML specification of the Shared Declarative Refresh Steps'
 [space separated]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#space-separated-tokens 'HTML Specification of Space Separated Tokens'
