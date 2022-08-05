@@ -2,7 +2,7 @@
   "vendor": "Deque Systems",
   "name": "Axe-core",
   "version": "4.5.0-prerelease",
-  "lastModified": "4 August 2022",
+  "lastModified": "5 August 2022",
   "approvedRules": {
     "complete": 12,
     "partial": 3,
@@ -11,10 +11,10 @@
     "untested": 0
   },
   "proposedRules": {
-    "complete": 10,
+    "complete": 11,
     "partial": 9,
     "minimal": 7,
-    "inconsistent": 9,
+    "inconsistent": 8,
     "untested": 39
   },
   "actRuleMapping": [
@@ -10016,19 +10016,23 @@
       "procedureNames": [
         "meta-refresh"
       ],
-      "consistency": null,
+      "consistency": "complete",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:timing-adjustable",
           "WCAG2:interruptions",
           "WCAG2:change-on-request"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:timing-adjustable",
+          "WCAG2:interruptions",
+          "WCAG2:change-on-request"
+        ]
       },
       "coverage": {
-        "covered": 3,
-        "untested": 12,
+        "covered": 15,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 15
       },
@@ -10089,7 +10093,7 @@
             {
               "procedureName": "meta-refresh",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -10104,7 +10108,7 @@
             {
               "procedureName": "meta-refresh",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -10119,7 +10123,8 @@
             {
               "procedureName": "meta-refresh",
               "outcomes": [
-                "untested"
+                "passed",
+                "failed"
               ]
             }
           ]
@@ -10134,7 +10139,7 @@
             {
               "procedureName": "meta-refresh",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -10149,7 +10154,7 @@
             {
               "procedureName": "meta-refresh",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -10164,7 +10169,7 @@
             {
               "procedureName": "meta-refresh",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -10179,7 +10184,7 @@
             {
               "procedureName": "meta-refresh",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -10194,7 +10199,7 @@
             {
               "procedureName": "meta-refresh",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -10209,7 +10214,7 @@
             {
               "procedureName": "meta-refresh",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -10224,7 +10229,7 @@
             {
               "procedureName": "meta-refresh",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -10239,7 +10244,7 @@
             {
               "procedureName": "meta-refresh",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -10254,7 +10259,7 @@
             {
               "procedureName": "meta-refresh",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]

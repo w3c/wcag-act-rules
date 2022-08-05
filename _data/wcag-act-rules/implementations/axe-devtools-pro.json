@@ -2,7 +2,7 @@
   "vendor": "Deque Systems",
   "name": "Axe DevTools Pro",
   "version": "4.24.5",
-  "lastModified": "3 August 2022",
+  "lastModified": "5 August 2022",
   "approvedRules": {
     "complete": 12,
     "partial": 3,
@@ -11,10 +11,10 @@
     "untested": 0
   },
   "proposedRules": {
-    "complete": 13,
+    "complete": 14,
     "partial": 12,
     "minimal": 7,
-    "inconsistent": 13,
+    "inconsistent": 12,
     "untested": 29
   },
   "actRuleMapping": [
@@ -12045,19 +12045,23 @@
       "procedureNames": [
         "meta-refresh"
       ],
-      "consistency": null,
+      "consistency": "complete",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:timing-adjustable",
           "WCAG2:interruptions",
           "WCAG2:change-on-request"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:timing-adjustable",
+          "WCAG2:interruptions",
+          "WCAG2:change-on-request"
+        ]
       },
       "coverage": {
-        "covered": 3,
-        "untested": 12,
+        "covered": 15,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 15
       },
@@ -12118,7 +12122,7 @@
             {
               "procedureName": "meta-refresh",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -12133,7 +12137,7 @@
             {
               "procedureName": "meta-refresh",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -12148,7 +12152,8 @@
             {
               "procedureName": "meta-refresh",
               "outcomes": [
-                "untested"
+                "passed",
+                "failed"
               ]
             }
           ]
@@ -12163,7 +12168,7 @@
             {
               "procedureName": "meta-refresh",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -12178,7 +12183,7 @@
             {
               "procedureName": "meta-refresh",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -12193,7 +12198,7 @@
             {
               "procedureName": "meta-refresh",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -12208,7 +12213,7 @@
             {
               "procedureName": "meta-refresh",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -12223,7 +12228,7 @@
             {
               "procedureName": "meta-refresh",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -12238,7 +12243,7 @@
             {
               "procedureName": "meta-refresh",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -12253,7 +12258,7 @@
             {
               "procedureName": "meta-refresh",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -12268,7 +12273,7 @@
             {
               "procedureName": "meta-refresh",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -12283,7 +12288,7 @@
             {
               "procedureName": "meta-refresh",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]

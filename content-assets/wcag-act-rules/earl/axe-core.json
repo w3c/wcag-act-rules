@@ -22078,7 +22078,17 @@
       "assertedBy": "https://github.com/dequelabs/axe-core/releases/tag/4.4.3-canary.190446f",
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:untested"
+        "outcome": "earl:failed"
+      },
+      "test": {
+        "@type": "TestCase",
+        "title": "meta-refresh",
+        "@id": "https://dequeuniversity.com/rules/axe/4.4/meta-refresh?application=axeAPI",
+        "isPartOf": [
+          "WCAG2:timing-adjustable",
+          "WCAG2:interruptions",
+          "WCAG2:change-on-request"
+        ]
       }
     },
     {
@@ -22094,7 +22104,17 @@
       "assertedBy": "https://github.com/dequelabs/axe-core/releases/tag/4.4.3-canary.190446f",
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:untested"
+        "outcome": "earl:failed"
+      },
+      "test": {
+        "@type": "TestCase",
+        "title": "meta-refresh",
+        "@id": "https://dequeuniversity.com/rules/axe/4.4/meta-refresh?application=axeAPI",
+        "isPartOf": [
+          "WCAG2:timing-adjustable",
+          "WCAG2:interruptions",
+          "WCAG2:change-on-request"
+        ]
       }
     },
     {
@@ -22110,7 +22130,43 @@
       "assertedBy": "https://github.com/dequelabs/axe-core/releases/tag/4.4.3-canary.190446f",
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:untested"
+        "outcome": "earl:passed"
+      },
+      "test": {
+        "@type": "TestCase",
+        "title": "meta-refresh",
+        "@id": "https://dequeuniversity.com/rules/axe/4.4/meta-refresh?application=axeAPI",
+        "isPartOf": [
+          "WCAG2:timing-adjustable",
+          "WCAG2:interruptions",
+          "WCAG2:change-on-request"
+        ]
+      }
+    },
+    {
+      "@type": "Assertion",
+      "mode": "earl:automatic",
+      "subject": {
+        "@type": [
+          "earl:TestSubject",
+          "sch:WebPage"
+        ],
+        "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/b2e7f3e00ffce0a2a1078f860452814e6445445d.html"
+      },
+      "assertedBy": "https://github.com/dequelabs/axe-core/releases/tag/4.4.3-canary.190446f",
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:failed"
+      },
+      "test": {
+        "@type": "TestCase",
+        "title": "meta-refresh",
+        "@id": "https://dequeuniversity.com/rules/axe/4.4/meta-refresh?application=axeAPI",
+        "isPartOf": [
+          "WCAG2:timing-adjustable",
+          "WCAG2:interruptions",
+          "WCAG2:change-on-request"
+        ]
       }
     },
     {
@@ -22126,7 +22182,17 @@
       "assertedBy": "https://github.com/dequelabs/axe-core/releases/tag/4.4.3-canary.190446f",
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:untested"
+        "outcome": "earl:failed"
+      },
+      "test": {
+        "@type": "TestCase",
+        "title": "meta-refresh",
+        "@id": "https://dequeuniversity.com/rules/axe/4.4/meta-refresh?application=axeAPI",
+        "isPartOf": [
+          "WCAG2:timing-adjustable",
+          "WCAG2:interruptions",
+          "WCAG2:change-on-request"
+        ]
       }
     },
     {
@@ -22142,7 +22208,17 @@
       "assertedBy": "https://github.com/dequelabs/axe-core/releases/tag/4.4.3-canary.190446f",
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:untested"
+        "outcome": "earl:inapplicable"
+      },
+      "test": {
+        "@type": "TestCase",
+        "title": "meta-refresh",
+        "@id": "https://dequeuniversity.com/rules/axe/4.4/meta-refresh?application=axeAPI",
+        "isPartOf": [
+          "WCAG2:timing-adjustable",
+          "WCAG2:interruptions",
+          "WCAG2:change-on-request"
+        ]
       }
     },
     {
@@ -22158,7 +22234,17 @@
       "assertedBy": "https://github.com/dequelabs/axe-core/releases/tag/4.4.3-canary.190446f",
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:untested"
+        "outcome": "earl:inapplicable"
+      },
+      "test": {
+        "@type": "TestCase",
+        "title": "meta-refresh",
+        "@id": "https://dequeuniversity.com/rules/axe/4.4/meta-refresh?application=axeAPI",
+        "isPartOf": [
+          "WCAG2:timing-adjustable",
+          "WCAG2:interruptions",
+          "WCAG2:change-on-request"
+        ]
       }
     },
     {
@@ -22174,7 +22260,17 @@
       "assertedBy": "https://github.com/dequelabs/axe-core/releases/tag/4.4.3-canary.190446f",
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:untested"
+        "outcome": "earl:passed"
+      },
+      "test": {
+        "@type": "TestCase",
+        "title": "meta-refresh",
+        "@id": "https://dequeuniversity.com/rules/axe/4.4/meta-refresh?application=axeAPI",
+        "isPartOf": [
+          "WCAG2:timing-adjustable",
+          "WCAG2:interruptions",
+          "WCAG2:change-on-request"
+        ]
       }
     },
     {
@@ -22190,7 +22286,17 @@
       "assertedBy": "https://github.com/dequelabs/axe-core/releases/tag/4.4.3-canary.190446f",
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:untested"
+        "outcome": "earl:passed"
+      },
+      "test": {
+        "@type": "TestCase",
+        "title": "meta-refresh",
+        "@id": "https://dequeuniversity.com/rules/axe/4.4/meta-refresh?application=axeAPI",
+        "isPartOf": [
+          "WCAG2:timing-adjustable",
+          "WCAG2:interruptions",
+          "WCAG2:change-on-request"
+        ]
       }
     },
     {
@@ -22206,7 +22312,17 @@
       "assertedBy": "https://github.com/dequelabs/axe-core/releases/tag/4.4.3-canary.190446f",
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:untested"
+        "outcome": "earl:passed"
+      },
+      "test": {
+        "@type": "TestCase",
+        "title": "meta-refresh",
+        "@id": "https://dequeuniversity.com/rules/axe/4.4/meta-refresh?application=axeAPI",
+        "isPartOf": [
+          "WCAG2:timing-adjustable",
+          "WCAG2:interruptions",
+          "WCAG2:change-on-request"
+        ]
       }
     },
     {
@@ -22222,7 +22338,17 @@
       "assertedBy": "https://github.com/dequelabs/axe-core/releases/tag/4.4.3-canary.190446f",
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:untested"
+        "outcome": "earl:passed"
+      },
+      "test": {
+        "@type": "TestCase",
+        "title": "meta-refresh",
+        "@id": "https://dequeuniversity.com/rules/axe/4.4/meta-refresh?application=axeAPI",
+        "isPartOf": [
+          "WCAG2:timing-adjustable",
+          "WCAG2:interruptions",
+          "WCAG2:change-on-request"
+        ]
       }
     },
     {
@@ -22238,7 +22364,17 @@
       "assertedBy": "https://github.com/dequelabs/axe-core/releases/tag/4.4.3-canary.190446f",
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:untested"
+        "outcome": "earl:passed"
+      },
+      "test": {
+        "@type": "TestCase",
+        "title": "meta-refresh",
+        "@id": "https://dequeuniversity.com/rules/axe/4.4/meta-refresh?application=axeAPI",
+        "isPartOf": [
+          "WCAG2:timing-adjustable",
+          "WCAG2:interruptions",
+          "WCAG2:change-on-request"
+        ]
       }
     },
     {
@@ -22254,7 +22390,17 @@
       "assertedBy": "https://github.com/dequelabs/axe-core/releases/tag/4.4.3-canary.190446f",
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:untested"
+        "outcome": "earl:passed"
+      },
+      "test": {
+        "@type": "TestCase",
+        "title": "meta-refresh",
+        "@id": "https://dequeuniversity.com/rules/axe/4.4/meta-refresh?application=axeAPI",
+        "isPartOf": [
+          "WCAG2:timing-adjustable",
+          "WCAG2:interruptions",
+          "WCAG2:change-on-request"
+        ]
       }
     },
     {
