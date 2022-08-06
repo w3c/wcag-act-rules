@@ -2,7 +2,7 @@
   "vendor": "Deque Systems",
   "name": "Axe-core",
   "version": "4.5.0-prerelease",
-  "lastModified": "5 August 2022",
+  "lastModified": "6 August 2022",
   "approvedRules": {
     "complete": 12,
     "partial": 3,
@@ -12,9 +12,9 @@
   },
   "proposedRules": {
     "complete": 11,
-    "partial": 9,
+    "partial": 10,
     "minimal": 7,
-    "inconsistent": 8,
+    "inconsistent": 7,
     "untested": 39
   },
   "actRuleMapping": [
@@ -5350,7 +5350,7 @@
       "procedureNames": [
         "aria-required-children"
       ],
-      "consistency": null,
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -5361,7 +5361,7 @@
         ]
       },
       "coverage": {
-        "covered": 16,
+        "covered": 17,
         "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 19
@@ -5634,7 +5634,7 @@
             {
               "procedureName": "aria-required-children",
               "outcomes": [
-                "failed"
+                "passed"
               ]
             }
           ]
