@@ -8707,7 +8707,7 @@
       },
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:failed"
+        "outcome": "earl:passed"
       },
       "test": {
         "@type": "TestCase",
@@ -8730,7 +8730,7 @@
       },
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:failed"
+        "outcome": "earl:passed"
       },
       "test": {
         "@type": "TestCase",
@@ -8753,7 +8753,7 @@
       },
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:failed"
+        "outcome": "earl:passed"
       },
       "test": {
         "@type": "TestCase",
@@ -8776,7 +8776,7 @@
       },
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:failed"
+        "outcome": "earl:passed"
       },
       "test": {
         "@type": "TestCase",
@@ -8845,7 +8845,7 @@
       },
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:failed"
+        "outcome": "earl:passed"
       },
       "test": {
         "@type": "TestCase",
@@ -8891,7 +8891,7 @@
       },
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:failed"
+        "outcome": "earl:passed"
       },
       "test": {
         "@type": "TestCase",
@@ -9049,7 +9049,7 @@
       },
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:failed"
+        "outcome": "earl:inapplicable"
       },
       "test": {
         "@type": "TestCase",
@@ -10462,7 +10462,7 @@
       },
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:failed"
+        "outcome": "earl:passed"
       },
       "test": {
         "@type": "TestCase",
@@ -10485,7 +10485,7 @@
       },
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:failed"
+        "outcome": "earl:passed"
       },
       "test": {
         "@type": "TestCase",
@@ -10508,7 +10508,7 @@
       },
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:failed"
+        "outcome": "earl:passed"
       },
       "test": {
         "@type": "TestCase",
@@ -10531,7 +10531,7 @@
       },
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:failed"
+        "outcome": "earl:passed"
       },
       "test": {
         "@type": "TestCase",
@@ -10600,7 +10600,7 @@
       },
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:failed"
+        "outcome": "earl:passed"
       },
       "test": {
         "@type": "TestCase",
@@ -10646,7 +10646,7 @@
       },
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:failed"
+        "outcome": "earl:passed"
       },
       "test": {
         "@type": "TestCase",
@@ -10804,7 +10804,7 @@
       },
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:failed"
+        "outcome": "earl:inapplicable"
       },
       "test": {
         "@type": "TestCase",
@@ -18517,7 +18517,7 @@
       },
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:inapplicable"
+        "outcome": "earl:failed"
       },
       "test": {
         "@type": "TestCase",
@@ -21832,7 +21832,7 @@
       },
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:failed"
+        "outcome": "earl:passed"
       },
       "test": {
         "@type": "TestCase",
@@ -21855,7 +21855,7 @@
       },
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:failed"
+        "outcome": "earl:passed"
       },
       "test": {
         "@type": "TestCase",
@@ -21878,7 +21878,7 @@
       },
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:failed"
+        "outcome": "earl:passed"
       },
       "test": {
         "@type": "TestCase",
@@ -21901,7 +21901,7 @@
       },
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:failed"
+        "outcome": "earl:passed"
       },
       "test": {
         "@type": "TestCase",
@@ -21924,7 +21924,7 @@
       },
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:failed"
+        "outcome": "earl:passed"
       },
       "test": {
         "@type": "TestCase",
@@ -21947,7 +21947,7 @@
       },
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:failed"
+        "outcome": "earl:passed"
       },
       "test": {
         "@type": "TestCase",
@@ -22016,7 +22016,7 @@
       },
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:failed"
+        "outcome": "earl:passed"
       },
       "test": {
         "@type": "TestCase",
@@ -22062,7 +22062,7 @@
       },
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:failed"
+        "outcome": "earl:passed"
       },
       "test": {
         "@type": "TestCase",
@@ -22266,7 +22266,7 @@
       },
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:failed"
+        "outcome": "earl:passed"
       },
       "test": {
         "@type": "TestCase",
@@ -22312,7 +22312,7 @@
       },
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:failed"
+        "outcome": "earl:inapplicable"
       },
       "test": {
         "@type": "TestCase",

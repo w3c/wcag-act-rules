@@ -2,19 +2,19 @@
   "vendor": "Deque Systems",
   "name": "Axe DevTools Pro",
   "version": "4.24.5",
-  "lastModified": "6 August 2022",
+  "lastModified": "10 August 2022",
   "approvedRules": {
-    "complete": 12,
+    "complete": 14,
     "partial": 3,
     "minimal": 0,
-    "inconsistent": 2,
+    "inconsistent": 0,
     "untested": 0
   },
   "proposedRules": {
-    "complete": 14,
+    "complete": 15,
     "partial": 13,
     "minimal": 7,
-    "inconsistent": 11,
+    "inconsistent": 10,
     "untested": 29
   },
   "actRuleMapping": [
@@ -2979,7 +2979,7 @@
       "procedureNames": [
         "avoid-inline-spacing"
       ],
-      "consistency": null,
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -2990,7 +2990,7 @@
         ]
       },
       "coverage": {
-        "covered": 9,
+        "covered": 16,
         "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 16
@@ -3021,7 +3021,7 @@
             {
               "procedureName": "avoid-inline-spacing",
               "outcomes": [
-                "failed"
+                "passed"
               ]
             }
           ]
@@ -3036,7 +3036,7 @@
             {
               "procedureName": "avoid-inline-spacing",
               "outcomes": [
-                "failed"
+                "passed"
               ]
             }
           ]
@@ -3051,7 +3051,7 @@
             {
               "procedureName": "avoid-inline-spacing",
               "outcomes": [
-                "failed"
+                "passed"
               ]
             }
           ]
@@ -3066,7 +3066,7 @@
             {
               "procedureName": "avoid-inline-spacing",
               "outcomes": [
-                "failed"
+                "passed"
               ]
             }
           ]
@@ -3097,7 +3097,7 @@
               "procedureName": "avoid-inline-spacing",
               "outcomes": [
                 "passed",
-                "failed"
+                "passed"
               ]
             }
           ]
@@ -3113,7 +3113,7 @@
               "procedureName": "avoid-inline-spacing",
               "outcomes": [
                 "passed",
-                "failed"
+                "passed"
               ]
             }
           ]
@@ -3218,7 +3218,7 @@
             {
               "procedureName": "avoid-inline-spacing",
               "outcomes": [
-                "failed"
+                "inapplicable"
               ]
             }
           ]
@@ -3865,7 +3865,7 @@
       "procedureNames": [
         "avoid-inline-spacing"
       ],
-      "consistency": null,
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -3876,7 +3876,7 @@
         ]
       },
       "coverage": {
-        "covered": 9,
+        "covered": 16,
         "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 16
@@ -3907,7 +3907,7 @@
             {
               "procedureName": "avoid-inline-spacing",
               "outcomes": [
-                "failed"
+                "passed"
               ]
             }
           ]
@@ -3922,7 +3922,7 @@
             {
               "procedureName": "avoid-inline-spacing",
               "outcomes": [
-                "failed"
+                "passed"
               ]
             }
           ]
@@ -3937,7 +3937,7 @@
             {
               "procedureName": "avoid-inline-spacing",
               "outcomes": [
-                "failed"
+                "passed"
               ]
             }
           ]
@@ -3952,7 +3952,7 @@
             {
               "procedureName": "avoid-inline-spacing",
               "outcomes": [
-                "failed"
+                "passed"
               ]
             }
           ]
@@ -3983,7 +3983,7 @@
               "procedureName": "avoid-inline-spacing",
               "outcomes": [
                 "passed",
-                "failed"
+                "passed"
               ]
             }
           ]
@@ -3999,7 +3999,7 @@
               "procedureName": "avoid-inline-spacing",
               "outcomes": [
                 "passed",
-                "failed"
+                "passed"
               ]
             }
           ]
@@ -4104,7 +4104,7 @@
             {
               "procedureName": "avoid-inline-spacing",
               "outcomes": [
-                "failed"
+                "inapplicable"
               ]
             }
           ]
@@ -8734,7 +8734,7 @@
         "reported": []
       },
       "coverage": {
-        "covered": 14,
+        "covered": 15,
         "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 15
@@ -8930,7 +8930,7 @@
             {
               "procedureName": "empty-heading",
               "outcomes": [
-                "inapplicable"
+                "failed"
               ]
             }
           ]
@@ -11188,7 +11188,7 @@
       "procedureNames": [
         "avoid-inline-spacing"
       ],
-      "consistency": null,
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -11199,7 +11199,7 @@
         ]
       },
       "coverage": {
-        "covered": 11,
+        "covered": 21,
         "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 21
@@ -11230,7 +11230,7 @@
             {
               "procedureName": "avoid-inline-spacing",
               "outcomes": [
-                "failed"
+                "passed"
               ]
             }
           ]
@@ -11245,7 +11245,7 @@
             {
               "procedureName": "avoid-inline-spacing",
               "outcomes": [
-                "failed"
+                "passed"
               ]
             }
           ]
@@ -11260,7 +11260,7 @@
             {
               "procedureName": "avoid-inline-spacing",
               "outcomes": [
-                "failed"
+                "passed"
               ]
             }
           ]
@@ -11275,7 +11275,7 @@
             {
               "procedureName": "avoid-inline-spacing",
               "outcomes": [
-                "failed"
+                "passed"
               ]
             }
           ]
@@ -11290,7 +11290,7 @@
             {
               "procedureName": "avoid-inline-spacing",
               "outcomes": [
-                "failed"
+                "passed"
               ]
             }
           ]
@@ -11305,7 +11305,7 @@
             {
               "procedureName": "avoid-inline-spacing",
               "outcomes": [
-                "failed"
+                "passed"
               ]
             }
           ]
@@ -11336,7 +11336,7 @@
               "procedureName": "avoid-inline-spacing",
               "outcomes": [
                 "passed",
-                "failed"
+                "passed"
               ]
             }
           ]
@@ -11352,7 +11352,7 @@
               "procedureName": "avoid-inline-spacing",
               "outcomes": [
                 "passed",
-                "failed"
+                "passed"
               ]
             }
           ]
@@ -11473,7 +11473,7 @@
               "procedureName": "avoid-inline-spacing",
               "outcomes": [
                 "passed",
-                "failed"
+                "passed"
               ]
             }
           ]
@@ -11503,7 +11503,7 @@
             {
               "procedureName": "avoid-inline-spacing",
               "outcomes": [
-                "failed"
+                "inapplicable"
               ]
             }
           ]
