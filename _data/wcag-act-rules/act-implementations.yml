@@ -71,7 +71,7 @@
   standards:
     - WCAG 2.1 Level A, AA
     - WAI-ARIA 1.2
-  jsonReport: https://unpkg.com/accessibility-checker-engine@next/earlResultW3.json
+  jsonReport: https://unpkg.com/accessibility-checker-engine@next/act-report-v2.json
   description: |
     ACT rule results were generated using the latest `accessibility-checker` 
     from NPM using the [ACT test driver](https://github.com/IBMa/equal-access/tree/master/accessibility-checker/test-act).
