@@ -2,10 +2,10 @@
   "vendor": "IBM Accessibility",
   "name": "Equal Access Accessibility Checker",
   "version": "3.1.33-rc",
-  "lastModified": "7 July 2022",
+  "lastModified": "11 August 2022",
   "approvedRules": {
-    "complete": 2,
-    "partial": 9,
+    "complete": 6,
+    "partial": 5,
     "minimal": 0,
     "inconsistent": 2,
     "untested": 4
@@ -351,14 +351,13 @@
       "procedureNames": [
         "WCAG20_Input_ExplicitLabel:Pass_0,Fail_1,Fail_2"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:name-role-value"
         ],
         "reported": [
-          "WCAG2:non-text-content",
           "WCAG2:name-role-value"
         ]
       },
@@ -953,14 +952,13 @@
       "procedureNames": [
         "WCAG20_Input_ExplicitLabel:Pass_0,Fail_1,Fail_2"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:name-role-value"
         ],
         "reported": [
-          "WCAG2:non-text-content",
           "WCAG2:name-role-value"
         ]
       },
@@ -2220,15 +2218,14 @@
         "WCAG20_Img_HasAlt:Pass_0,Fail_1,Fail_2,Fail_3",
         "HAAC_Aria_ImgAlt:Pass_0,Fail_1,Fail_2,Fail_3"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:non-text-content"
         ],
         "reported": [
-          "WCAG2:non-text-content",
-          "WCAG2:name-role-value"
+          "WCAG2:non-text-content"
         ]
       },
       "coverage": {
@@ -3092,14 +3089,14 @@
         "HAAC_Aria_ImgAlt:Pass_0,Fail_2",
         "HAAC_Aria_SvgAlt:Pass_0,Fail_2"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:non-text-content"
         ],
         "reported": [
-          "WCAG2:name-role-value"
+          "WCAG2:non-text-content"
         ]
       },
       "coverage": {
@@ -5589,12 +5586,12 @@
       ],
       "consistency": "partial",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:name-role-value"
         ],
         "reported": [
-          "WCAG2:bypass-blocks"
+          "WCAG2:name-role-value"
         ]
       },
       "coverage": {
@@ -6020,8 +6017,8 @@
         "reported": []
       },
       "coverage": {
-        "covered": 3,
-        "untested": 12,
+        "covered": 11,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 15
       },
@@ -6099,13 +6096,13 @@
             {
               "procedureName": "RPT_Meta_Refresh:Pass_0,Potential_1",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             },
             {
               "procedureName": "WCAG20_Meta_RedirectZero:pass,fail,fail_longrefresh",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -6120,13 +6117,13 @@
             {
               "procedureName": "RPT_Meta_Refresh:Pass_0,Potential_1",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             },
             {
               "procedureName": "WCAG20_Meta_RedirectZero:pass,fail,fail_longrefresh",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -6141,13 +6138,13 @@
             {
               "procedureName": "RPT_Meta_Refresh:Pass_0,Potential_1",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             },
             {
               "procedureName": "WCAG20_Meta_RedirectZero:pass,fail,fail_longrefresh",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -6162,13 +6159,13 @@
             {
               "procedureName": "RPT_Meta_Refresh:Pass_0,Potential_1",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             },
             {
               "procedureName": "WCAG20_Meta_RedirectZero:pass,fail,fail_longrefresh",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -6183,13 +6180,13 @@
             {
               "procedureName": "RPT_Meta_Refresh:Pass_0,Potential_1",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             },
             {
               "procedureName": "WCAG20_Meta_RedirectZero:pass,fail,fail_longrefresh",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -6204,13 +6201,13 @@
             {
               "procedureName": "RPT_Meta_Refresh:Pass_0,Potential_1",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             },
             {
               "procedureName": "WCAG20_Meta_RedirectZero:pass,fail,fail_longrefresh",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -6225,13 +6222,13 @@
             {
               "procedureName": "RPT_Meta_Refresh:Pass_0,Potential_1",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             },
             {
               "procedureName": "WCAG20_Meta_RedirectZero:pass,fail,fail_longrefresh",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -6246,13 +6243,13 @@
             {
               "procedureName": "RPT_Meta_Refresh:Pass_0,Potential_1",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             },
             {
               "procedureName": "WCAG20_Meta_RedirectZero:pass,fail,fail_longrefresh",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -6267,13 +6264,13 @@
             {
               "procedureName": "RPT_Meta_Refresh:Pass_0,Potential_1",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             },
             {
               "procedureName": "WCAG20_Meta_RedirectZero:pass,fail,fail_longrefresh",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -6288,13 +6285,13 @@
             {
               "procedureName": "RPT_Meta_Refresh:Pass_0,Potential_1",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             },
             {
               "procedureName": "WCAG20_Meta_RedirectZero:pass,fail,fail_longrefresh",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -6309,13 +6306,13 @@
             {
               "procedureName": "RPT_Meta_Refresh:Pass_0,Potential_1",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             },
             {
               "procedureName": "WCAG20_Meta_RedirectZero:pass,fail,fail_longrefresh",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -6330,13 +6327,13 @@
             {
               "procedureName": "RPT_Meta_Refresh:Pass_0,Potential_1",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             },
             {
               "procedureName": "WCAG20_Meta_RedirectZero:pass,fail,fail_longrefresh",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
