@@ -1,11 +1,11 @@
 {
   "vendor": "IBM Accessibility",
   "name": "Equal Access Accessibility Checker",
-  "version": "3.1.33-rc",
-  "lastModified": "11 August 2022",
+  "version": "3.1.36",
+  "lastModified": "15 August 2022",
   "approvedRules": {
-    "complete": 6,
-    "partial": 5,
+    "complete": 8,
+    "partial": 3,
     "minimal": 0,
     "inconsistent": 2,
     "untested": 4
@@ -1246,8 +1246,8 @@
         ]
       },
       "coverage": {
-        "covered": 5,
-        "untested": 2,
+        "covered": 7,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 7
       },
@@ -1367,13 +1367,13 @@
             {
               "procedureName": "WCAG20_Html_HasLang:Pass_0,Fail_3",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             },
             {
               "procedureName": "WCAG20_Elem_Lang_Valid:Pass_0,Fail_1",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -1388,13 +1388,13 @@
             {
               "procedureName": "WCAG20_Html_HasLang:Pass_0,Fail_3",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             },
             {
               "procedureName": "WCAG20_Elem_Lang_Valid:Pass_0,Fail_1",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -1419,8 +1419,8 @@
         ]
       },
       "coverage": {
-        "covered": 6,
-        "untested": 1,
+        "covered": 7,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 7
       },
@@ -1525,7 +1525,7 @@
             {
               "procedureName": "WCAG20_Elem_Lang_Valid:Pass_0,Fail_1,Fail_2,Fail_3",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -1539,7 +1539,7 @@
       "procedureNames": [
         "WCAG20_Html_HasLang:Pass_0,Fail_4,Fail_5"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -1550,8 +1550,8 @@
         ]
       },
       "coverage": {
-        "covered": 9,
-        "untested": 3,
+        "covered": 12,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 12
       },
@@ -1641,7 +1641,7 @@
             {
               "procedureName": "WCAG20_Html_HasLang:Pass_0,Fail_4,Fail_5",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -1656,7 +1656,7 @@
             {
               "procedureName": "WCAG20_Html_HasLang:Pass_0,Fail_4,Fail_5",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -1671,7 +1671,7 @@
             {
               "procedureName": "WCAG20_Html_HasLang:Pass_0,Fail_4,Fail_5",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -1745,7 +1745,7 @@
       "procedureNames": [
         "WCAG20_Doc_HasTitle:Pass_0,Fail_1,Fail_2,Fail_3"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -1756,8 +1756,8 @@
         ]
       },
       "coverage": {
-        "covered": 10,
-        "untested": 1,
+        "covered": 11,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 11
       },
@@ -1922,7 +1922,7 @@
             {
               "procedureName": "WCAG20_Doc_HasTitle:Pass_0,Fail_1,Fail_2,Fail_3",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -4230,7 +4230,7 @@
       "ruleName": "ARIA required owned elements",
       "ruleApproved": false,
       "procedureNames": [
-        "Rpt_Aria_RequiredChildren_Native_Host_Sematics:Pass_0,Potential_1"
+        "aria_child_valid:Pass,Fail_no_child,Fail_invalid_child"
       ],
       "consistency": null,
       "accessibilityRequirements": {
@@ -4238,12 +4238,14 @@
         "expected": [
           "WCAG2:info-and-relationships"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:name-role-value"
+        ]
       },
       "coverage": {
-        "covered": 10,
+        "covered": 18,
         "untested": 0,
-        "cantTell": 7,
+        "cantTell": 0,
         "testCaseTotal": 19
       },
       "testCaseResults": [
@@ -4255,7 +4257,7 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "Rpt_Aria_RequiredChildren_Native_Host_Sematics:Pass_0,Potential_1",
+              "procedureName": "aria_child_valid:Pass,Fail_no_child,Fail_invalid_child",
               "outcomes": [
                 "passed"
               ]
@@ -4270,7 +4272,7 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "Rpt_Aria_RequiredChildren_Native_Host_Sematics:Pass_0,Potential_1",
+              "procedureName": "aria_child_valid:Pass,Fail_no_child,Fail_invalid_child",
               "outcomes": [
                 "passed"
               ]
@@ -4285,7 +4287,7 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "Rpt_Aria_RequiredChildren_Native_Host_Sematics:Pass_0,Potential_1",
+              "procedureName": "aria_child_valid:Pass,Fail_no_child,Fail_invalid_child",
               "outcomes": [
                 "passed"
               ]
@@ -4300,7 +4302,7 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "Rpt_Aria_RequiredChildren_Native_Host_Sematics:Pass_0,Potential_1",
+              "procedureName": "aria_child_valid:Pass,Fail_no_child,Fail_invalid_child",
               "outcomes": [
                 "passed"
               ]
@@ -4315,7 +4317,7 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "Rpt_Aria_RequiredChildren_Native_Host_Sematics:Pass_0,Potential_1",
+              "procedureName": "aria_child_valid:Pass,Fail_no_child,Fail_invalid_child",
               "outcomes": [
                 "passed"
               ]
@@ -4330,9 +4332,9 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "Rpt_Aria_RequiredChildren_Native_Host_Sematics:Pass_0,Potential_1",
+              "procedureName": "aria_child_valid:Pass,Fail_no_child,Fail_invalid_child",
               "outcomes": [
-                "passed"
+                "failed"
               ]
             }
           ]
@@ -4345,7 +4347,7 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "Rpt_Aria_RequiredChildren_Native_Host_Sematics:Pass_0,Potential_1",
+              "procedureName": "aria_child_valid:Pass,Fail_no_child,Fail_invalid_child",
               "outcomes": [
                 "passed"
               ]
@@ -4360,9 +4362,9 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "Rpt_Aria_RequiredChildren_Native_Host_Sematics:Pass_0,Potential_1",
+              "procedureName": "aria_child_valid:Pass,Fail_no_child,Fail_invalid_child",
               "outcomes": [
-                "cantTell"
+                "failed"
               ]
             }
           ]
@@ -4375,9 +4377,9 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "Rpt_Aria_RequiredChildren_Native_Host_Sematics:Pass_0,Potential_1",
+              "procedureName": "aria_child_valid:Pass,Fail_no_child,Fail_invalid_child",
               "outcomes": [
-                "cantTell"
+                "failed"
               ]
             }
           ]
@@ -4390,9 +4392,9 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "Rpt_Aria_RequiredChildren_Native_Host_Sematics:Pass_0,Potential_1",
+              "procedureName": "aria_child_valid:Pass,Fail_no_child,Fail_invalid_child",
               "outcomes": [
-                "passed"
+                "failed"
               ]
             }
           ]
@@ -4405,9 +4407,9 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "Rpt_Aria_RequiredChildren_Native_Host_Sematics:Pass_0,Potential_1",
+              "procedureName": "aria_child_valid:Pass,Fail_no_child,Fail_invalid_child",
               "outcomes": [
-                "cantTell"
+                "failed"
               ]
             }
           ]
@@ -4420,9 +4422,9 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "Rpt_Aria_RequiredChildren_Native_Host_Sematics:Pass_0,Potential_1",
+              "procedureName": "aria_child_valid:Pass,Fail_no_child,Fail_invalid_child",
               "outcomes": [
-                "cantTell"
+                "failed"
               ]
             }
           ]
@@ -4435,9 +4437,9 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "Rpt_Aria_RequiredChildren_Native_Host_Sematics:Pass_0,Potential_1",
+              "procedureName": "aria_child_valid:Pass,Fail_no_child,Fail_invalid_child",
               "outcomes": [
-                "cantTell"
+                "failed"
               ]
             }
           ]
@@ -4450,9 +4452,9 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "Rpt_Aria_RequiredChildren_Native_Host_Sematics:Pass_0,Potential_1",
+              "procedureName": "aria_child_valid:Pass,Fail_no_child,Fail_invalid_child",
               "outcomes": [
-                "passed"
+                "failed"
               ]
             }
           ]
@@ -4465,9 +4467,9 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "Rpt_Aria_RequiredChildren_Native_Host_Sematics:Pass_0,Potential_1",
+              "procedureName": "aria_child_valid:Pass,Fail_no_child,Fail_invalid_child",
               "outcomes": [
-                "cantTell"
+                "inapplicable"
               ]
             }
           ]
@@ -4480,9 +4482,9 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "Rpt_Aria_RequiredChildren_Native_Host_Sematics:Pass_0,Potential_1",
+              "procedureName": "aria_child_valid:Pass,Fail_no_child,Fail_invalid_child",
               "outcomes": [
-                "inapplicable"
+                "passed"
               ]
             }
           ]
@@ -4495,9 +4497,9 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "Rpt_Aria_RequiredChildren_Native_Host_Sematics:Pass_0,Potential_1",
+              "procedureName": "aria_child_valid:Pass,Fail_no_child,Fail_invalid_child",
               "outcomes": [
-                "passed"
+                "inapplicable"
               ]
             }
           ]
@@ -4510,9 +4512,9 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "Rpt_Aria_RequiredChildren_Native_Host_Sematics:Pass_0,Potential_1",
+              "procedureName": "aria_child_valid:Pass,Fail_no_child,Fail_invalid_child",
               "outcomes": [
-                "cantTell"
+                "inapplicable"
               ]
             }
           ]
@@ -4525,9 +4527,9 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "Rpt_Aria_RequiredChildren_Native_Host_Sematics:Pass_0,Potential_1",
+              "procedureName": "aria_child_valid:Pass,Fail_no_child,Fail_invalid_child",
               "outcomes": [
-                "passed"
+                "inapplicable"
               ]
             }
           ]
@@ -4799,8 +4801,8 @@
         ]
       },
       "coverage": {
-        "covered": 21,
-        "untested": 1,
+        "covered": 22,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 24
       },
@@ -5160,7 +5162,7 @@
             {
               "procedureName": "Rpt_Aria_ValidPropertyValue:Pass_0,Fail_1",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
