@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 09o5cg</p>
-  <p><strong>Date:</strong> Updated 11 July 2022</p>
+  <p><strong>Date:</strong> Updated 18 August 2022</p>
   <p><strong>Authors:</strong> <a href="https://github.com/Jym77">Jean-Yves Moyen</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -19,7 +19,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that the highest possible contrast of every text character with its background meets the enhanced contrast requirement.
-  last_modified: 11 July 2022
+  last_modified: 18 August 2022
   scs_tested:
     - handle: Contrast (Enhanced)
       num: 1.4.6
@@ -147,16 +147,21 @@ This dark gray text has a contrast ratio between 12.6:1 and 7:1 on the white to 
 
 #### Passed Example 3
 
-<a class="example-link" title="Passed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/c5987148bbec1716c062b2dc7443f112e9e52cfc.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/683924f835ab545a23a3625b0630e95bd0b50bca.html">Open in a new tab</a>
 
-This light gray text has a contrast ratio between 18:1 and 7:1 on the background image.
+This white text has a contrast ratio between 18:1 and 7:1 on the background image.
 
 ```html
-<p
-	style="color: #EEE; height:50px; padding-top:15px; background: #000 no-repeat -20px -20px url('/test-assets/contrast/black-hole.jpeg');"
->
-	Black hole sun
-</p>
+<style>
+p {
+	color: #FFF;
+	height: 50px;
+	padding-top: 15px;
+	background: #000 no-repeat -20px -20px url('/test-assets/contrast/black-hole.jpeg');
+	text-shadow: 0px 0px 2px black;
+}
+</style>
+<p>Black hole sun</p>
 ```
 
 #### Passed Example 4

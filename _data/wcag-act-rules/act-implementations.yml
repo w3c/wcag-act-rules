@@ -63,7 +63,7 @@
 
 - name: Equal Access Accessibility Checker
   homepage: https://www.ibm.com/able/toolkit/
-  version: 3.1.33-rc
+  version: 3.1.36
   vendor: IBM Accessibility
   vendorHomepage: https://www.ibm.com/
   uniqueKey: equal-access
@@ -71,15 +71,14 @@
   standards:
     - WCAG 2.1 Level A, AA
     - WAI-ARIA 1.2
-  jsonReport: https://unpkg.com/accessibility-checker-engine@next/earlResultW3.json
+  jsonReport: https://unpkg.com/accessibility-checker-engine@next/act-report-v2.json
   description: |
     ACT rule results were generated using the latest `accessibility-checker` 
-    from NPM using the [ACT test driver](https://github.com/IBMa/equal-access/tree/master/accessibility-checker/test-act).
+    from NPM using the [ACT test driver](https://github.com/IBMa/equal-access/tree/master/accessibility-checker/test-act-w3).
     Results were created using the `preview` archive and the `IBM_Accessibility` policy.
     Mappings from ACT Rules to Accessibility Checker rule ids and reason codes can be 
-    found in [`act_aligned.json`](https://github.com/IBMa/equal-access/blob/master/accessibility-checker/test-act/act_aligned.json) 
-    and [`ace_mapping.js`](https://github.com/IBMa/equal-access/blob/master/accessibility-checker/test-act/ace_mapping.js). 
-    Results indicate the rule ids and reason codes related to the ACT rule are  generated in the following format: 
+    found in the act property of [rule definitions](https://github.com/IBMa/equal-access/blob/master/accessibility-checker-engine/src/v4/rules). 
+    Results indicate the rule ids and reason codes related to the ACT rule are generated in the following format: 
 
     `RuleId1:ReasonCode1,ReasonCode2|RuleId2:ReasonCode3,ReasonCode4`.
 
