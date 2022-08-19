@@ -2,7 +2,7 @@
   "vendor": "Deque Systems",
   "name": "Axe DevTools Pro",
   "version": "4.24.5",
-  "lastModified": "16 August 2022",
+  "lastModified": "19 August 2022",
   "approvedRules": {
     "complete": 14,
     "partial": 3,
@@ -11,8 +11,8 @@
     "untested": 0
   },
   "proposedRules": {
-    "complete": 14,
-    "partial": 14,
+    "complete": 16,
+    "partial": 12,
     "minimal": 7,
     "inconsistent": 10,
     "untested": 29
@@ -5350,7 +5350,7 @@
       "procedureNames": [
         "aria-required-children"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -5361,7 +5361,7 @@
         ]
       },
       "coverage": {
-        "covered": 17,
+        "covered": 19,
         "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 19
@@ -5513,7 +5513,7 @@
             {
               "procedureName": "aria-required-children",
               "outcomes": [
-                "passed"
+                "failed"
               ]
             }
           ]
@@ -5574,7 +5574,7 @@
             {
               "procedureName": "aria-required-children",
               "outcomes": [
-                "passed"
+                "failed"
               ]
             }
           ]
@@ -14357,7 +14357,7 @@
       "procedureNames": [
         "color-contrast-enhanced"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -14369,8 +14369,8 @@
       },
       "coverage": {
         "covered": 22,
-        "untested": 1,
-        "cantTell": 6,
+        "untested": 0,
+        "cantTell": 7,
         "testCaseTotal": 29
       },
       "testCaseResults": [
@@ -14414,7 +14414,7 @@
             {
               "procedureName": "color-contrast-enhanced",
               "outcomes": [
-                "untested"
+                "cantTell"
               ]
             }
           ]

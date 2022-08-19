@@ -12989,7 +12989,7 @@
       },
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:passed"
+        "outcome": "earl:failed"
       },
       "test": {
         "@type": "TestCase",
@@ -13104,7 +13104,7 @@
       },
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:passed"
+        "outcome": "earl:failed"
       },
       "test": {
         "@type": "TestCase",
@@ -27455,7 +27455,7 @@
           "earl:TestSubject",
           "sch:WebPage"
         ],
-        "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/c5987148bbec1716c062b2dc7443f112e9e52cfc.html"
+        "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/683924f835ab545a23a3625b0630e95bd0b50bca.html"
       },
       "result": {
         "@type": "TestResult",
