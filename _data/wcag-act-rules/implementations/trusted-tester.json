@@ -11,8 +11,8 @@
     "untested": 14
   },
   "proposedRules": {
-    "complete": 8,
-    "partial": 4,
+    "complete": 7,
+    "partial": 5,
     "minimal": 0,
     "inconsistent": 1,
     "untested": 61
@@ -2337,7 +2337,7 @@
       "procedureNames": [
         "1.1.1-meaningful-image-name"
       ],
-      "consistency": "complete",
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -2348,8 +2348,8 @@
         ]
       },
       "coverage": {
-        "covered": 16,
-        "untested": 0,
+        "covered": 14,
+        "untested": 2,
         "cantTell": 0,
         "testCaseTotal": 16
       },
@@ -2370,16 +2370,16 @@
           ]
         },
         {
-          "testcaseId": "75ab2815efda6d9422fcf1edc5876fcb5e398a84",
+          "testcaseId": "09899111e5bcb25a5bb64000f63dc926eb653b7d",
           "testCaseName": "Passed Example 2",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/qt1vmo/75ab2815efda6d9422fcf1edc5876fcb5e398a84.html",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/qt1vmo/09899111e5bcb25a5bb64000f63dc926eb653b7d.html",
           "testCaseApproved": false,
           "expected": "passed",
           "procedureResults": [
             {
               "procedureName": "1.1.1-meaningful-image-name",
               "outcomes": [
-                "passed"
+                "untested"
               ]
             }
           ]
@@ -2415,16 +2415,16 @@
           ]
         },
         {
-          "testcaseId": "5cdb41b3b9be43fd015bf4692ea295f87cb7e02f",
+          "testcaseId": "2f7d82593e287df64b7459695e355a840254255c",
           "testCaseName": "Failed Example 2",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/qt1vmo/5cdb41b3b9be43fd015bf4692ea295f87cb7e02f.html",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/qt1vmo/2f7d82593e287df64b7459695e355a840254255c.html",
           "testCaseApproved": false,
           "expected": "failed",
           "procedureResults": [
             {
               "procedureName": "1.1.1-meaningful-image-name",
               "outcomes": [
-                "failed"
+                "untested"
               ]
             }
           ]
