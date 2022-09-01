@@ -2,7 +2,7 @@
   "vendor": "LASIGE, Faculdade de Ciências da Universidade de Lisboa",
   "name": "QualWeb",
   "version": "3.0.0",
-  "lastModified": "26 July 2022",
+  "lastModified": "30 August 2022",
   "approvedRules": {
     "complete": 11,
     "partial": 4,
@@ -11,10 +11,10 @@
     "untested": 0
   },
   "proposedRules": {
-    "complete": 14,
+    "complete": 15,
     "partial": 6,
     "minimal": 13,
-    "inconsistent": 21,
+    "inconsistent": 20,
     "untested": 20
   },
   "actRuleMapping": [
@@ -10798,19 +10798,23 @@
       "procedureNames": [
         "Meta-refresh no delay"
       ],
-      "consistency": null,
+      "consistency": "partial",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:timing-adjustable",
           "WCAG2:interruptions",
           "WCAG2:change-on-request"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:timing-adjustable",
+          "WCAG2:interruptions",
+          "WCAG2:change-on-request"
+        ]
       },
       "coverage": {
-        "covered": 1,
-        "untested": 14,
+        "covered": 13,
+        "untested": 2,
         "cantTell": 0,
         "testCaseTotal": 15
       },
@@ -10870,7 +10874,7 @@
             {
               "procedureName": "Meta-refresh no delay",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -10885,7 +10889,7 @@
             {
               "procedureName": "Meta-refresh no delay",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -10900,7 +10904,7 @@
             {
               "procedureName": "Meta-refresh no delay",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -10915,7 +10919,7 @@
             {
               "procedureName": "Meta-refresh no delay",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -10930,7 +10934,7 @@
             {
               "procedureName": "Meta-refresh no delay",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -10945,7 +10949,7 @@
             {
               "procedureName": "Meta-refresh no delay",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -10960,7 +10964,7 @@
             {
               "procedureName": "Meta-refresh no delay",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -10975,7 +10979,7 @@
             {
               "procedureName": "Meta-refresh no delay",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -10990,7 +10994,7 @@
             {
               "procedureName": "Meta-refresh no delay",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -11005,7 +11009,7 @@
             {
               "procedureName": "Meta-refresh no delay",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -11020,7 +11024,7 @@
             {
               "procedureName": "Meta-refresh no delay",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -11035,7 +11039,7 @@
             {
               "procedureName": "Meta-refresh no delay",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -13105,7 +13109,7 @@
       "procedureNames": [
         "Text has enhanced contrast"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -13117,8 +13121,8 @@
       },
       "coverage": {
         "covered": 27,
-        "untested": 1,
-        "cantTell": 1,
+        "untested": 0,
+        "cantTell": 2,
         "testCaseTotal": 29
       },
       "testCaseResults": [
@@ -13162,7 +13166,7 @@
             {
               "procedureName": "Text has enhanced contrast",
               "outcomes": [
-                "untested"
+                "cantTell"
               ]
             }
           ]
