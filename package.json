@@ -1,5 +1,5 @@
 {
-  "dependencies": {
+  "devDependencies": {
     "act-tools": "github:act-rules/act-tools",
     "axios": "^0.27.2",
     "moment": "^2.29.3",
