@@ -4698,7 +4698,7 @@
       },
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:passed"
+        "outcome": "earl:failed"
       },
       "test": {
         "@type": "TestCase",
@@ -14093,7 +14093,7 @@
       },
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:failed"
+        "outcome": "earl:cantTell"
       },
       "test": {
         "@type": "TestCase",
@@ -20571,7 +20571,7 @@
       },
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:passed"
+        "outcome": "earl:failed"
       },
       "test": {
         "@type": "TestCase",
@@ -25409,6 +25409,51 @@
           "earl:TestSubject",
           "sch:WebPage"
         ],
+        "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/a2525d7f2db0db246df0a702416606c56085a17a.html"
+      },
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:untested"
+      }
+    },
+    {
+      "@type": "Assertion",
+      "mode": "earl:automatic",
+      "subject": {
+        "@type": [
+          "earl:TestSubject",
+          "sch:WebPage"
+        ],
+        "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/f6b0a52f8bb37ab0a8b290237add5be669a28b2f.html"
+      },
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:untested"
+      }
+    },
+    {
+      "@type": "Assertion",
+      "mode": "earl:automatic",
+      "subject": {
+        "@type": [
+          "earl:TestSubject",
+          "sch:WebPage"
+        ],
+        "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/fd273c99d6129f0972ffdbe529b2b1cfa1116cf0.html"
+      },
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:untested"
+      }
+    },
+    {
+      "@type": "Assertion",
+      "mode": "earl:automatic",
+      "subject": {
+        "@type": [
+          "earl:TestSubject",
+          "sch:WebPage"
+        ],
         "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/84c10ba8bc5570e900a60a2e29b319e68fc093da.html"
       },
       "result": {
@@ -25537,6 +25582,21 @@
         "isPartOf": [
           "WCAG2:non-text-content"
         ]
+      }
+    },
+    {
+      "@type": "Assertion",
+      "mode": "earl:automatic",
+      "subject": {
+        "@type": [
+          "earl:TestSubject",
+          "sch:WebPage"
+        ],
+        "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/25b2c00b86322f15c0cbb376b58b342fff916f62.html"
+      },
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:untested"
       }
     },
     {

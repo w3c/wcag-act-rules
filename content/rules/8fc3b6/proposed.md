@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 8fc3b6</p>
-  <p><strong>Date:</strong> Updated 11 July 2022</p>
+  <p><strong>Date:</strong> Updated 6 September 2022</p>
   <p><strong>Authors:</strong> <a href="https://github.com/AntonioEstriga">António Estriga</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
   
@@ -21,7 +21,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that each `object` element rendering non-text content has a non-empty accessible name.
-  last_modified: 11 July 2022
+  last_modified: 6 September 2022
   scs_tested:
     - handle: Non-text Content
       num: 1.1.1
@@ -30,7 +30,11 @@ rule_meta:
 
 ## Applicability
 
-This rule applies to any `object` element that is [included in the accessibility tree][] and embeds a resource with an [image MIME type](https://mimesniff.spec.whatwg.org/#image-mime-type) or an [audio or video MIME type](https://mimesniff.spec.whatwg.org/#audio-or-video-mime-type).
+This rule applies to any `object` element for which all the following are true:
+
+- The `object` element is [included in the accessibility tree][]; and
+- The `object` element has no [explicit role][]; and
+- The `object` element embeds a resource whose MIME type is either [image](https://mimesniff.spec.whatwg.org/#image-mime-type), or [audio or video](https://mimesniff.spec.whatwg.org/#audio-or-video-mime-type).
 
 ## Expectation
 
@@ -42,11 +46,17 @@ The `object` element is not rendered for presentational purposes. If the `object
 
 ## Accessibility Support
 
-Non-supported media formats make screen readers render the text content of the element instead of other attributes.
+The [MIME type][] of the resource embedded in the `data` attribute impacts how the [accessible name][] of the `object` is computed. For example, `object` embedding [image MIME type][] may use their `alt` attribute to compute their [accessible name][], but `object` embedding [audio or video MIME types][] may not. An `object` does not officially support the use of an `alt` so this may behave differently according to the browser used.
 
 ## Background
 
 Testing that the [accessible name][] describes the purpose of the `object` element is not part of this rule and must be tested separately.
+
+Non-supported media formats make screen readers render the text content of the element instead of other attributes. 
+
+`Object` elements without an accessible name are ignored by assistive technologies unless they have an [explicit role][].
+
+When the object resource is not loaded, the fallback content is rendered as shown in the Inapplicable Example: "This `object` element does not need an accessible name because it loads no image, audio, or video."
 
 ### Bibliography
 
@@ -174,11 +184,45 @@ This `object` element which embeds an audio resource has an empty [accessible na
 <object aria-labelledby="download" data="/test-assets/moon-audio/moon-speech.mp3"></object>
 ```
 
+#### Failed Example 5
+
+<a class="example-link" title="Failed Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/a2525d7f2db0db246df0a702416606c56085a17a.html">Open in a new tab</a>
+
+This `object` element has an empty [accessible name][]. The `img` element inside the `object` is not used in computing the `object`'s accessible name.
+
+```html
+<object data="/test-assets/shared/w3c-logo.png">
+	<img src="/test-assets/shared/w3c-logo.png" alt="W3C logo" />
+</object>
+```
+
+#### Failed Example 6
+
+<a class="example-link" title="Failed Example 6" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/f6b0a52f8bb37ab0a8b290237add5be669a28b2f.html">Open in a new tab</a>
+
+This `object` element has `alt` attribute, however this will not create an  [accessible name][]. Because of this the accessible name is empty.
+
+```html
+<object data="/test-assets/moon-audio/moon-speech.mp3" alt="Moon speech"></object>
+```
+
 ### Inapplicable
 
 #### Inapplicable Example 1
 
-<a class="example-link" title="Inapplicable Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/84c10ba8bc5570e900a60a2e29b319e68fc093da.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/fd273c99d6129f0972ffdbe529b2b1cfa1116cf0.html">Open in a new tab</a>
+
+This `object` element has an [explicit role][] of "img". 
+
+**Note**: Object elements with other roles may still require an accessible name. This is tested through other rules.
+
+```html
+<object role="img" title="W3C" data="/test-assets/shared/w3c-logo.png"></object>
+```
+
+#### Inapplicable Example 2
+
+<a class="example-link" title="Inapplicable Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/84c10ba8bc5570e900a60a2e29b319e68fc093da.html">Open in a new tab</a>
 
 This `object` element is not [included in the accessibility tree][] due to `display:none`.
 
@@ -186,9 +230,9 @@ This `object` element is not [included in the accessibility tree][] due to `disp
 <object data="/test-assets/rabbit-video/video.mp4" style="display: none;"></object>
 ```
 
-#### Inapplicable Example 2
+#### Inapplicable Example 3
 
-<a class="example-link" title="Inapplicable Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/52ac3fd2be278ede2bb32987a32673c6d5ee5edb.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/52ac3fd2be278ede2bb32987a32673c6d5ee5edb.html">Open in a new tab</a>
 
 This `object` element is not [included in the accessibility tree][] due to `visibility:hidden`.
 
@@ -196,9 +240,9 @@ This `object` element is not [included in the accessibility tree][] due to `visi
 <object data="/test-assets/moon-audio/moon-speech.mp3" style="visibility: hidden;"></object>
 ```
 
-#### Inapplicable Example 3
+#### Inapplicable Example 4
 
-<a class="example-link" title="Inapplicable Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/90927d72c81e9a9b27034a1a99adbab46c86e196.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/90927d72c81e9a9b27034a1a99adbab46c86e196.html">Open in a new tab</a>
 
 This `object` element is not [included in the accessibility tree][] due to `aria-hidden="true"`.
 
@@ -206,9 +250,9 @@ This `object` element is not [included in the accessibility tree][] due to `aria
 <object data="/test-assets/shared/w3c-logo.png" aria-hidden="true"></object>
 ```
 
-#### Inapplicable Example 4
+#### Inapplicable Example 5
 
-<a class="example-link" title="Inapplicable Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/511c1b1647549d8af305f68253dda6d4161bd9bc.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/511c1b1647549d8af305f68253dda6d4161bd9bc.html">Open in a new tab</a>
 
 This `object` element is not [included in the accessibility tree][] because it is marked as decorative through `role="presentation"`.
 
@@ -216,9 +260,9 @@ This `object` element is not [included in the accessibility tree][] because it i
 <object type="image/png" role="presentation" data="/test-assets/contrast/example.png"></object>
 ```
 
-#### Inapplicable Example 5
+#### Inapplicable Example 6
 
-<a class="example-link" title="Inapplicable Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/852f57fb1f11a0a58d288746c14d52ce8f8dd97a.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 6" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/852f57fb1f11a0a58d288746c14d52ce8f8dd97a.html">Open in a new tab</a>
 
 This `object` element embeds an HTML resource.
 
@@ -226,14 +270,26 @@ This `object` element embeds an HTML resource.
 <object title="My University" data="/test-assets/shared/index.html"></object>
 ```
 
-#### Inapplicable Example 6
+#### Inapplicable Example 7
 
-<a class="example-link" title="Inapplicable Example 6" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/fac8b25d43d0bbea83f5fe8c5fddf1b3566ac1fb.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 7" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/fac8b25d43d0bbea83f5fe8c5fddf1b3566ac1fb.html">Open in a new tab</a>
 
 There is no `object` element.
 
 ```html
 <audio title="Moon speech" src="/test-assets/moon-audio/moon-speech.mp3"></audio>
+```
+
+#### Inapplicable Example 8
+
+<a class="example-link" title="Inapplicable Example 8" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/25b2c00b86322f15c0cbb376b58b342fff916f62.html">Open in a new tab</a>
+
+This `object` element does not need an accessible name because it loads no image, audio, or video. Instead the `img` element inside the `object` is rendered.
+
+```html
+<object data="/invalid/url/index.html">
+	<img src="/test-assets/shared/w3c-logo.png" alt="W3C logo" />
+</object>
 ```
 
 ## Glossary
@@ -331,14 +387,17 @@ The _WAI ARIA Specifications_ group both the WAI ARIA W3C Recommendation and ARI
 [accessibility support base line]: https://www.w3.org/TR/WCAG-EM/#step1c 'Definition of accessibility support base line'
 [accessible name and description computation]: https://www.w3.org/TR/accname 'Accessible Name and Description Computation'
 [accessible name]: #accessible-name 'Definition of accessible name'
+[audio or video mime types]: https://mimesniff.spec.whatwg.org/#audio-or-video-mime-type 'MIME Sniffing - Living Standard, 2022/01/17'
 [computed]: https://www.w3.org/TR/css-cascade/#computed-value 'CSS definition of computed value'
 [examples of accessible name]: https://act-rules.github.io/pages/examples/accessible-name/
 [examples of included in the accessibility tree]: https://act-rules.github.io/pages/examples/included-in-the-accessibility-tree/
-[explicit role]: #explicit-role 'Definition of Explicit Role'
+[explicit role]: #explicit-role 'Definition of Explicit role'
 [flat tree]: https://drafts.csswg.org/css-scoping/#flat-tree 'Definition of flat tree'
+[image mime type]: https://mimesniff.spec.whatwg.org/#image-mime-type 'MIME Sniffing - Living Standard, 2022/01/17'
 [included in the accessibility tree]: #included-in-the-accessibility-tree 'Definition of included in the accessibility tree'
 [inclusive ancestors]: https://dom.spec.whatwg.org/#concept-tree-inclusive-ancestor 'DOM Definition of Inclusive Ancestor'
 [marked as decorative]: #marked-as-decorative 'Definition of Marked as decorative'
+[mime type]: https://mimesniff.spec.whatwg.org/#mime-type-groups 'MIME Sniffing - Living Standard, 2022/01/17'
 [presentational roles conflict resolution]: https://www.w3.org/TR/wai-aria-1.1/#conflict_resolution_presentation_none 'Presentational Roles Conflict Resolution'
 [programmatically hidden]: #programmatically-hidden 'Definition of Programmatically Hidden'
 [pure decoration]: https://www.w3.org/TR/WCAG21/#dfn-pure-decoration 'WCAG definition of Pure Decoration'
