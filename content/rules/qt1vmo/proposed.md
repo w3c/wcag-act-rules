@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> qt1vmo</p>
-  <p><strong>Date:</strong> Updated 25 August 2022</p>
+  <p><strong>Date:</strong> Updated 15 September 2022</p>
   <p><strong>Authors:</strong> <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
   
@@ -21,7 +21,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that the accessible names of images serve an equivalent purpose to the image.
-  last_modified: 25 August 2022
+  last_modified: 15 September 2022
   scs_tested:
     - handle: Non-text Content
       num: 1.1.1
@@ -112,13 +112,13 @@ The following aspects are required in using this rule.
 
 #### Passed Example 1
 
-<a class="example-link" title="Passed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/qt1vmo/2616e8486562f08449b710b8a5dc9846474af000.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/qt1vmo/af4423575333947073fa3729f502ff0a0c6c2fbf.html">Open in a new tab</a>
 
 This `img` element has an `alt` attribute that describes the image.
 
 ```html
 <html lang="en">
-	<img src="/test-assets/shared/w3c-logo.png" alt="W3C" />
+	<img src="/test-assets/shared/w3c-logo.png" alt="W3C logo" />
 </html>
 ```
 
@@ -147,19 +147,19 @@ This `svg` element has an `aria-label` attribute that describes the image.
 
 #### Passed Example 3
 
-<a class="example-link" title="Passed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/qt1vmo/68e50a217d9f01ccd5bfd4f3ad4227b163165297.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/qt1vmo/2a66c7b8d8ef78d350b1c995e0ad232008f6564f.html">Open in a new tab</a>
 
 This `canvas` element has an `aria-label` attribute that describes the image.
 
 ```html
 <html lang="en">
-	<canvas id="logo" width="72" height="48" aria-label="W3C"></canvas>
+	<canvas id="logo" width="72" height="48" aria-label="W3C logo"></canvas>
 	<script>
-		const img = new Image();
-		img.src = '/test-assets/shared/w3c-logo.png';
-		img.onload = function () {
-			const ctx = document.querySelector('#logo').getContext('2d');
-			ctx.drawImage(img, 0, 0);
+		const img = new Image()
+		img.src = '/test-assets/shared/w3c-logo.png'
+		img.onload = function() {
+			const ctx = document.querySelector('#logo').getContext('2d')
+			ctx.drawImage(img, 0, 0)
 		}
 	</script>
 </html>
@@ -169,13 +169,13 @@ This `canvas` element has an `aria-label` attribute that describes the image.
 
 #### Failed Example 1
 
-<a class="example-link" title="Failed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/qt1vmo/f3fa0aa13747875284429e759c8e94ac6b3fac8f.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/qt1vmo/485f10faf222cd48fea2ab3ee79c2d354e51ea33.html">Open in a new tab</a>
 
 This `img` element has an `alt` attribute that incorrectly describes the image.
 
 ```html
 <html lang="en">
-	<img src="/test-assets/shared/w3c-logo.png" alt="ERCIM" />
+	<img src="/test-assets/shared/w3c-logo.png" alt="ERCIM logo" />
 </html>
 ```
 
@@ -204,19 +204,19 @@ This `svg` element has an `aria-label` attribute that incorrectly describes the 
 
 #### Failed Example 3
 
-<a class="example-link" title="Failed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/qt1vmo/954441755d9b745f7fc533a8ccfc895d40e9005d.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/qt1vmo/bac67a5a2ada971100bbec89961ad3e6c869f268.html">Open in a new tab</a>
 
 This `canvas` element has an `aria-label` attribute that incorrectly describes the image.
 
 ```html
 <html lang="en">
-	<canvas id="logo" width="72" height="48" aria-label="HTML 5"></canvas>
+	<canvas id="logo" width="72" height="48" aria-label="HTML 5 logo"></canvas>
 	<script>
-		const img = new Image();
-		img.src = '/test-assets/shared/w3c-logo.png';
-		img.onload = function () {
-			const ctx = document.querySelector('#logo').getContext('2d');
-			ctx.drawImage(img, 0, 0);
+		const img = new Image()
+		img.src = '/test-assets/shared/w3c-logo.png'
+		img.onload = function() {
+			const ctx = document.querySelector('#logo').getContext('2d')
+			ctx.drawImage(img, 0, 0)
 		}
 	</script>
 </html>
@@ -288,13 +288,13 @@ This `canvas` element has an empty (`""`) [accessible name][] because it has no 
 
 #### Inapplicable Example 5
 
-<a class="example-link" title="Inapplicable Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/qt1vmo/efd997470e600544174476e95116bdac100f368b.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/qt1vmo/2e1787fbc8a76fd8a2f8cae08d72097dab75abfd.html">Open in a new tab</a>
 
 This `img` element is not [visible][].
 
 ```html
 <html lang="en">
-	<img src="/test-assets/shared/w3c-logo.png" alt="W3C" style="display:none" />
+	<img src="/test-assets/shared/w3c-logo.png" alt="W3C logo" style="display:none" />
 </html>
 ```
 
