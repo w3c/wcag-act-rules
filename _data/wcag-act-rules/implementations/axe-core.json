@@ -2,7 +2,7 @@
   "vendor": "Deque Systems",
   "name": "Axe-core",
   "version": "4.5.0-prerelease",
-  "lastModified": "8 September 2022",
+  "lastModified": "23 September 2022",
   "approvedRules": {
     "complete": 15,
     "partial": 2,
@@ -12,9 +12,9 @@
   },
   "proposedRules": {
     "complete": 13,
-    "partial": 10,
+    "partial": 9,
     "minimal": 8,
-    "inconsistent": 4,
+    "inconsistent": 5,
     "untested": 39
   },
   "actRuleMapping": [
@@ -10711,7 +10711,7 @@
       "procedureNames": [
         "object-alt"
       ],
-      "consistency": "partial",
+      "consistency": null,
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -10722,8 +10722,8 @@
         ]
       },
       "coverage": {
-        "covered": 14,
-        "untested": 4,
+        "covered": 16,
+        "untested": 1,
         "cantTell": 0,
         "testCaseTotal": 18
       },
@@ -10759,16 +10759,16 @@
           ]
         },
         {
-          "testcaseId": "0b589d8fd36a41135b86e1f10ecac977a167c3a0",
+          "testcaseId": "1b172036f8e219ef9b6f591d7f5df26e4ba11327",
           "testCaseName": "Passed Example 3",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/0b589d8fd36a41135b86e1f10ecac977a167c3a0.html",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/1b172036f8e219ef9b6f591d7f5df26e4ba11327.html",
           "testCaseApproved": false,
           "expected": "passed",
           "procedureResults": [
             {
               "procedureName": "object-alt",
               "outcomes": [
-                "passed"
+                "untested"
               ]
             }
           ]
@@ -10858,7 +10858,7 @@
             {
               "procedureName": "object-alt",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -10873,7 +10873,7 @@
             {
               "procedureName": "object-alt",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -10888,7 +10888,7 @@
             {
               "procedureName": "object-alt",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -10993,7 +10993,7 @@
             {
               "procedureName": "object-alt",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
