@@ -12,10 +12,6 @@ github:
   path: content/index.md
 ---
 
-<section class="doc-note-box act-sticky">
-  <p>This page is <strong>under development</strong> and has not been approved by the working group.</p>
-</section>
-
 {::nomarkdown}
 {% include box.html type="start" title="Summary" class="" %}
 {:/}
