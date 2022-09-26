@@ -4,15 +4,15 @@
   "version": "4.5.0-prerelease",
   "lastModified": "23 September 2022",
   "approvedRules": {
-    "complete": 15,
-    "partial": 2,
+    "complete": 16,
+    "partial": 1,
     "minimal": 0,
     "inconsistent": 0,
     "untested": 0
   },
   "proposedRules": {
-    "complete": 13,
-    "partial": 9,
+    "complete": 15,
+    "partial": 7,
     "minimal": 8,
     "inconsistent": 5,
     "untested": 39
@@ -3248,13 +3248,12 @@
         "link-name",
         "area-alt"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:name-role-value",
-          "WCAG2:link-purpose-in-context",
-          "WCAG2:link-purpose-link-only"
+          "WCAG2:link-purpose-in-context"
         ],
         "reported": [
           "WCAG2:name-role-value",
@@ -10020,9 +10019,7 @@
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
-          "WCAG2:timing-adjustable",
-          "WCAG2:interruptions",
-          "WCAG2:change-on-request"
+          "WCAG2:timing-adjustable"
         ],
         "reported": [
           "WCAG2:timing-adjustable",
@@ -11338,12 +11335,11 @@
       "procedureNames": [
         "scrollable-region-focusable"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
-          "WCAG2:keyboard",
-          "WCAG2:keyboard-no-exception"
+          "WCAG2:keyboard"
         ],
         "reported": [
           "WCAG2:keyboard"
@@ -11788,12 +11784,11 @@
       "procedureNames": [
         "color-contrast"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
-          "WCAG2:contrast-minimum",
-          "WCAG2:contrast-enhanced"
+          "WCAG2:contrast-minimum"
         ],
         "reported": [
           "WCAG2:contrast-minimum"

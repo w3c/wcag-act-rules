@@ -2635,8 +2635,7 @@
         "correct": false,
         "expected": [
           "WCAG2:name-role-value",
-          "WCAG2:link-purpose-in-context",
-          "WCAG2:link-purpose-link-only"
+          "WCAG2:link-purpose-in-context"
         ],
         "reported": [
           "WCAG2:link-purpose-in-context"
@@ -6011,9 +6010,7 @@
       "accessibilityRequirements": {
         "correct": false,
         "expected": [
-          "WCAG2:timing-adjustable",
-          "WCAG2:interruptions",
-          "WCAG2:change-on-request"
+          "WCAG2:timing-adjustable"
         ],
         "reported": []
       },

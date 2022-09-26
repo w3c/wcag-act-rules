@@ -2614,8 +2614,7 @@
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
-          "WCAG2:images-of-text",
-          "WCAG2:images-of-text-no-exception"
+          "WCAG2:images-of-text"
         ],
         "reported": [
           "WCAG2:images-of-text",

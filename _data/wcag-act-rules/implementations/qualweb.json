@@ -2828,8 +2828,7 @@
         "correct": true,
         "expected": [
           "WCAG2:name-role-value",
-          "WCAG2:link-purpose-in-context",
-          "WCAG2:link-purpose-link-only"
+          "WCAG2:link-purpose-in-context"
         ],
         "reported": [
           "WCAG2:link-purpose-in-context",
@@ -10348,8 +10347,7 @@
       "accessibilityRequirements": {
         "correct": false,
         "expected": [
-          "WCAG2:link-purpose-in-context",
-          "WCAG2:link-purpose-link-only"
+          "WCAG2:link-purpose-in-context"
         ],
         "reported": []
       },
@@ -10802,9 +10800,7 @@
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
-          "WCAG2:timing-adjustable",
-          "WCAG2:interruptions",
-          "WCAG2:change-on-request"
+          "WCAG2:timing-adjustable"
         ],
         "reported": [
           "WCAG2:timing-adjustable",
@@ -12122,8 +12118,7 @@
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
-          "WCAG2:keyboard",
-          "WCAG2:keyboard-no-exception"
+          "WCAG2:keyboard"
         ],
         "reported": [
           "WCAG2:keyboard",
@@ -12725,8 +12720,7 @@
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
-          "WCAG2:contrast-minimum",
-          "WCAG2:contrast-enhanced"
+          "WCAG2:contrast-minimum"
         ],
         "reported": [
           "WCAG2:contrast-minimum",
@@ -13826,9 +13820,7 @@
       "accessibilityRequirements": {
         "correct": false,
         "expected": [
-          "WCAG2:audio-description-or-media-alternative-prerecorded",
-          "WCAG2:audio-description-prerecorded",
-          "WCAG2:media-alternative-prerecorded"
+          "WCAG2:audio-description-or-media-alternative-prerecorded"
         ],
         "reported": []
       },
