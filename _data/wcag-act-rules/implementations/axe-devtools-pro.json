@@ -2,7 +2,7 @@
   "vendor": "Deque Systems",
   "name": "Axe DevTools Pro",
   "version": "4.24.5",
-  "lastModified": "23 September 2022",
+  "lastModified": "29 September 2022",
   "approvedRules": {
     "complete": 16,
     "partial": 1,
@@ -11,10 +11,10 @@
     "untested": 0
   },
   "proposedRules": {
-    "complete": 17,
+    "complete": 18,
     "partial": 10,
     "minimal": 8,
-    "inconsistent": 10,
+    "inconsistent": 9,
     "untested": 29
   },
   "actRuleMapping": [
@@ -1218,8 +1218,8 @@
       "ruleName": "Form field has non-empty accessible name",
       "ruleApproved": true,
       "procedureNames": [
-        "label",
         "aria-input-field-name",
+        "label",
         "select-name"
       ],
       "consistency": "complete",
@@ -1247,15 +1247,15 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "label",
-              "outcomes": [
-                "passed"
-              ]
-            },
-            {
               "procedureName": "aria-input-field-name",
               "outcomes": [
                 "inapplicable"
+              ]
+            },
+            {
+              "procedureName": "label",
+              "outcomes": [
+                "passed"
               ]
             },
             {
@@ -1274,15 +1274,15 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "label",
-              "outcomes": [
-                "passed"
-              ]
-            },
-            {
               "procedureName": "aria-input-field-name",
               "outcomes": [
                 "inapplicable"
+              ]
+            },
+            {
+              "procedureName": "label",
+              "outcomes": [
+                "passed"
               ]
             },
             {
@@ -1301,13 +1301,13 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "label",
+              "procedureName": "aria-input-field-name",
               "outcomes": [
                 "inapplicable"
               ]
             },
             {
-              "procedureName": "aria-input-field-name",
+              "procedureName": "label",
               "outcomes": [
                 "inapplicable"
               ]
@@ -1328,15 +1328,15 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "label",
-              "outcomes": [
-                "passed"
-              ]
-            },
-            {
               "procedureName": "aria-input-field-name",
               "outcomes": [
                 "inapplicable"
+              ]
+            },
+            {
+              "procedureName": "label",
+              "outcomes": [
+                "passed"
               ]
             },
             {
@@ -1355,15 +1355,15 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "label",
-              "outcomes": [
-                "passed"
-              ]
-            },
-            {
               "procedureName": "aria-input-field-name",
               "outcomes": [
                 "inapplicable"
+              ]
+            },
+            {
+              "procedureName": "label",
+              "outcomes": [
+                "passed"
               ]
             },
             {
@@ -1382,15 +1382,15 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "label",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
               "procedureName": "aria-input-field-name",
               "outcomes": [
                 "passed"
+              ]
+            },
+            {
+              "procedureName": "label",
+              "outcomes": [
+                "inapplicable"
               ]
             },
             {
@@ -1409,13 +1409,13 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "label",
+              "procedureName": "aria-input-field-name",
               "outcomes": [
                 "inapplicable"
               ]
             },
             {
-              "procedureName": "aria-input-field-name",
+              "procedureName": "label",
               "outcomes": [
                 "inapplicable"
               ]
@@ -1436,15 +1436,15 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "label",
-              "outcomes": [
-                "failed"
-              ]
-            },
-            {
               "procedureName": "aria-input-field-name",
               "outcomes": [
                 "inapplicable"
+              ]
+            },
+            {
+              "procedureName": "label",
+              "outcomes": [
+                "failed"
               ]
             },
             {
@@ -1463,15 +1463,15 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "label",
-              "outcomes": [
-                "failed"
-              ]
-            },
-            {
               "procedureName": "aria-input-field-name",
               "outcomes": [
                 "inapplicable"
+              ]
+            },
+            {
+              "procedureName": "label",
+              "outcomes": [
+                "failed"
               ]
             },
             {
@@ -1490,15 +1490,15 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "label",
-              "outcomes": [
-                "failed"
-              ]
-            },
-            {
               "procedureName": "aria-input-field-name",
               "outcomes": [
                 "inapplicable"
+              ]
+            },
+            {
+              "procedureName": "label",
+              "outcomes": [
+                "failed"
               ]
             },
             {
@@ -1517,13 +1517,13 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "label",
+              "procedureName": "aria-input-field-name",
               "outcomes": [
                 "inapplicable"
               ]
             },
             {
-              "procedureName": "aria-input-field-name",
+              "procedureName": "label",
               "outcomes": [
                 "inapplicable"
               ]
@@ -1544,15 +1544,15 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "label",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
               "procedureName": "aria-input-field-name",
               "outcomes": [
                 "failed"
+              ]
+            },
+            {
+              "procedureName": "label",
+              "outcomes": [
+                "inapplicable"
               ]
             },
             {
@@ -1571,15 +1571,15 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "label",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
               "procedureName": "aria-input-field-name",
               "outcomes": [
                 "failed"
+              ]
+            },
+            {
+              "procedureName": "label",
+              "outcomes": [
+                "inapplicable"
               ]
             },
             {
@@ -1598,15 +1598,15 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "label",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
               "procedureName": "aria-input-field-name",
               "outcomes": [
                 "failed"
+              ]
+            },
+            {
+              "procedureName": "label",
+              "outcomes": [
+                "inapplicable"
               ]
             },
             {
@@ -1625,13 +1625,13 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "label",
+              "procedureName": "aria-input-field-name",
               "outcomes": [
                 "inapplicable"
               ]
             },
             {
-              "procedureName": "aria-input-field-name",
+              "procedureName": "label",
               "outcomes": [
                 "inapplicable"
               ]
@@ -1652,13 +1652,13 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "label",
+              "procedureName": "aria-input-field-name",
               "outcomes": [
                 "inapplicable"
               ]
             },
             {
-              "procedureName": "aria-input-field-name",
+              "procedureName": "label",
               "outcomes": [
                 "inapplicable"
               ]
@@ -1679,13 +1679,13 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "label",
+              "procedureName": "aria-input-field-name",
               "outcomes": [
                 "inapplicable"
               ]
             },
             {
-              "procedureName": "aria-input-field-name",
+              "procedureName": "label",
               "outcomes": [
                 "inapplicable"
               ]
@@ -8207,7 +8207,7 @@
       "procedureNames": [
         "label-visible-not-descriptive (forms)"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -8218,8 +8218,8 @@
         ]
       },
       "coverage": {
-        "covered": 10,
-        "untested": 4,
+        "covered": 14,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 14
       },
@@ -8369,7 +8369,7 @@
             {
               "procedureName": "label-visible-not-descriptive (forms)",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -8384,7 +8384,7 @@
             {
               "procedureName": "label-visible-not-descriptive (forms)",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -8414,7 +8414,7 @@
             {
               "procedureName": "label-visible-not-descriptive (forms)",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -8429,7 +8429,7 @@
             {
               "procedureName": "label-visible-not-descriptive (forms)",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -10188,17 +10188,19 @@
       "procedureNames": [
         "alt-text-short-text-not-meaningful (Images)"
       ],
-      "consistency": null,
+      "consistency": "partial",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:non-text-content"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:non-text-content"
+        ]
       },
       "coverage": {
-        "covered": 9,
-        "untested": 7,
+        "covered": 11,
+        "untested": 5,
         "cantTell": 0,
         "testCaseTotal": 16
       },
@@ -10228,7 +10230,7 @@
             {
               "procedureName": "alt-text-short-text-not-meaningful (Images)",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -10273,7 +10275,7 @@
             {
               "procedureName": "alt-text-short-text-not-meaningful (Images)",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
