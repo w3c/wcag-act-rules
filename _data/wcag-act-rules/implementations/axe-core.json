@@ -2,19 +2,19 @@
   "vendor": "Deque Systems",
   "name": "Axe-core",
   "version": "4.5.0-prerelease",
-  "lastModified": "8 September 2022",
+  "lastModified": "23 September 2022",
   "approvedRules": {
-    "complete": 15,
-    "partial": 2,
+    "complete": 16,
+    "partial": 1,
     "minimal": 0,
     "inconsistent": 0,
     "untested": 0
   },
   "proposedRules": {
-    "complete": 13,
-    "partial": 10,
+    "complete": 15,
+    "partial": 7,
     "minimal": 8,
-    "inconsistent": 4,
+    "inconsistent": 5,
     "untested": 39
   },
   "actRuleMapping": [
@@ -3248,13 +3248,12 @@
         "link-name",
         "area-alt"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:name-role-value",
-          "WCAG2:link-purpose-in-context",
-          "WCAG2:link-purpose-link-only"
+          "WCAG2:link-purpose-in-context"
         ],
         "reported": [
           "WCAG2:name-role-value",
@@ -10020,9 +10019,7 @@
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
-          "WCAG2:timing-adjustable",
-          "WCAG2:interruptions",
-          "WCAG2:change-on-request"
+          "WCAG2:timing-adjustable"
         ],
         "reported": [
           "WCAG2:timing-adjustable",
@@ -10711,7 +10708,7 @@
       "procedureNames": [
         "object-alt"
       ],
-      "consistency": "partial",
+      "consistency": null,
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -10722,8 +10719,8 @@
         ]
       },
       "coverage": {
-        "covered": 14,
-        "untested": 4,
+        "covered": 16,
+        "untested": 1,
         "cantTell": 0,
         "testCaseTotal": 18
       },
@@ -10759,16 +10756,16 @@
           ]
         },
         {
-          "testcaseId": "0b589d8fd36a41135b86e1f10ecac977a167c3a0",
+          "testcaseId": "1b172036f8e219ef9b6f591d7f5df26e4ba11327",
           "testCaseName": "Passed Example 3",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/0b589d8fd36a41135b86e1f10ecac977a167c3a0.html",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/1b172036f8e219ef9b6f591d7f5df26e4ba11327.html",
           "testCaseApproved": false,
           "expected": "passed",
           "procedureResults": [
             {
               "procedureName": "object-alt",
               "outcomes": [
-                "passed"
+                "untested"
               ]
             }
           ]
@@ -10858,7 +10855,7 @@
             {
               "procedureName": "object-alt",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -10873,7 +10870,7 @@
             {
               "procedureName": "object-alt",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -10888,7 +10885,7 @@
             {
               "procedureName": "object-alt",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -10993,7 +10990,7 @@
             {
               "procedureName": "object-alt",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -11338,12 +11335,11 @@
       "procedureNames": [
         "scrollable-region-focusable"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
-          "WCAG2:keyboard",
-          "WCAG2:keyboard-no-exception"
+          "WCAG2:keyboard"
         ],
         "reported": [
           "WCAG2:keyboard"
@@ -11788,12 +11784,11 @@
       "procedureNames": [
         "color-contrast"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
-          "WCAG2:contrast-minimum",
-          "WCAG2:contrast-enhanced"
+          "WCAG2:contrast-minimum"
         ],
         "reported": [
           "WCAG2:contrast-minimum"

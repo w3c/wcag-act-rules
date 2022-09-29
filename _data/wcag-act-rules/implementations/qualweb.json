@@ -2,7 +2,7 @@
   "vendor": "LASIGE, Faculdade de Ciências da Universidade de Lisboa",
   "name": "QualWeb",
   "version": "3.0.0",
-  "lastModified": "6 September 2022",
+  "lastModified": "27 September 2022",
   "approvedRules": {
     "complete": 11,
     "partial": 4,
@@ -2828,8 +2828,7 @@
         "correct": true,
         "expected": [
           "WCAG2:name-role-value",
-          "WCAG2:link-purpose-in-context",
-          "WCAG2:link-purpose-link-only"
+          "WCAG2:link-purpose-in-context"
         ],
         "reported": [
           "WCAG2:link-purpose-in-context",
@@ -10348,8 +10347,7 @@
       "accessibilityRequirements": {
         "correct": false,
         "expected": [
-          "WCAG2:link-purpose-in-context",
-          "WCAG2:link-purpose-link-only"
+          "WCAG2:link-purpose-in-context"
         ],
         "reported": []
       },
@@ -10802,9 +10800,7 @@
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
-          "WCAG2:timing-adjustable",
-          "WCAG2:interruptions",
-          "WCAG2:change-on-request"
+          "WCAG2:timing-adjustable"
         ],
         "reported": [
           "WCAG2:timing-adjustable",
@@ -11502,8 +11498,8 @@
         ]
       },
       "coverage": {
-        "covered": 14,
-        "untested": 4,
+        "covered": 17,
+        "untested": 1,
         "cantTell": 0,
         "testCaseTotal": 18
       },
@@ -11539,16 +11535,16 @@
           ]
         },
         {
-          "testcaseId": "0b589d8fd36a41135b86e1f10ecac977a167c3a0",
+          "testcaseId": "1b172036f8e219ef9b6f591d7f5df26e4ba11327",
           "testCaseName": "Passed Example 3",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/0b589d8fd36a41135b86e1f10ecac977a167c3a0.html",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/1b172036f8e219ef9b6f591d7f5df26e4ba11327.html",
           "testCaseApproved": false,
           "expected": "passed",
           "procedureResults": [
             {
               "procedureName": "Object element has non-empty accessible name",
               "outcomes": [
-                "passed"
+                "untested"
               ]
             }
           ]
@@ -11638,7 +11634,7 @@
             {
               "procedureName": "Object element has non-empty accessible name",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -11653,7 +11649,7 @@
             {
               "procedureName": "Object element has non-empty accessible name",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -11668,7 +11664,7 @@
             {
               "procedureName": "Object element has non-empty accessible name",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -11773,7 +11769,7 @@
             {
               "procedureName": "Object element has non-empty accessible name",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -12122,8 +12118,7 @@
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
-          "WCAG2:keyboard",
-          "WCAG2:keyboard-no-exception"
+          "WCAG2:keyboard"
         ],
         "reported": [
           "WCAG2:keyboard",
@@ -12725,8 +12720,7 @@
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
-          "WCAG2:contrast-minimum",
-          "WCAG2:contrast-enhanced"
+          "WCAG2:contrast-minimum"
         ],
         "reported": [
           "WCAG2:contrast-minimum",
@@ -13826,9 +13820,7 @@
       "accessibilityRequirements": {
         "correct": false,
         "expected": [
-          "WCAG2:audio-description-or-media-alternative-prerecorded",
-          "WCAG2:audio-description-prerecorded",
-          "WCAG2:media-alternative-prerecorded"
+          "WCAG2:audio-description-or-media-alternative-prerecorded"
         ],
         "reported": []
       },

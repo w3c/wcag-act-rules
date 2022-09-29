@@ -2,7 +2,7 @@
   "vendor": "PowerMapper",
   "name": "SortSite",
   "version": 6.45,
-  "lastModified": "8 July 2022",
+  "lastModified": "23 September 2022",
   "approvedRules": {
     "complete": 16,
     "partial": 1,
@@ -11,10 +11,10 @@
     "untested": 0
   },
   "proposedRules": {
-    "complete": 19,
-    "partial": 4,
+    "complete": 21,
+    "partial": 3,
     "minimal": 0,
-    "inconsistent": 1,
+    "inconsistent": 0,
     "untested": 50
   },
   "actRuleMapping": [
@@ -2830,8 +2830,7 @@
         "correct": true,
         "expected": [
           "WCAG2:name-role-value",
-          "WCAG2:link-purpose-in-context",
-          "WCAG2:link-purpose-link-only"
+          "WCAG2:link-purpose-in-context"
         ],
         "reported": [
           "WCAG2:name-role-value",
@@ -7223,8 +7222,7 @@
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
-          "WCAG2:link-purpose-in-context",
-          "WCAG2:link-purpose-link-only"
+          "WCAG2:link-purpose-in-context"
         ],
         "reported": [
           "WCAG2:link-purpose-in-context",
@@ -7681,19 +7679,21 @@
       "procedureNames": [
         "AccHtmlMetaRefresh"
       ],
-      "consistency": null,
+      "consistency": "complete",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
+          "WCAG2:timing-adjustable"
+        ],
+        "reported": [
           "WCAG2:timing-adjustable",
           "WCAG2:interruptions",
           "WCAG2:change-on-request"
-        ],
-        "reported": []
+        ]
       },
       "coverage": {
-        "covered": 3,
-        "untested": 12,
+        "covered": 15,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 15
       },
@@ -7753,7 +7753,7 @@
             {
               "procedureName": "AccHtmlMetaRefresh",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -7768,7 +7768,7 @@
             {
               "procedureName": "AccHtmlMetaRefresh",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -7783,7 +7783,7 @@
             {
               "procedureName": "AccHtmlMetaRefresh",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -7798,7 +7798,7 @@
             {
               "procedureName": "AccHtmlMetaRefresh",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -7813,7 +7813,7 @@
             {
               "procedureName": "AccHtmlMetaRefresh",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -7828,7 +7828,7 @@
             {
               "procedureName": "AccHtmlMetaRefresh",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -7843,7 +7843,7 @@
             {
               "procedureName": "AccHtmlMetaRefresh",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -7858,7 +7858,7 @@
             {
               "procedureName": "AccHtmlMetaRefresh",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -7873,7 +7873,7 @@
             {
               "procedureName": "AccHtmlMetaRefresh",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -7888,7 +7888,7 @@
             {
               "procedureName": "AccHtmlMetaRefresh",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -7903,7 +7903,7 @@
             {
               "procedureName": "AccHtmlMetaRefresh",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -7918,7 +7918,7 @@
             {
               "procedureName": "AccHtmlMetaRefresh",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -8152,8 +8152,8 @@
         ]
       },
       "coverage": {
-        "covered": 14,
-        "untested": 4,
+        "covered": 17,
+        "untested": 1,
         "cantTell": 0,
         "testCaseTotal": 18
       },
@@ -8189,16 +8189,16 @@
           ]
         },
         {
-          "testcaseId": "0b589d8fd36a41135b86e1f10ecac977a167c3a0",
+          "testcaseId": "1b172036f8e219ef9b6f591d7f5df26e4ba11327",
           "testCaseName": "Passed Example 3",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/0b589d8fd36a41135b86e1f10ecac977a167c3a0.html",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/1b172036f8e219ef9b6f591d7f5df26e4ba11327.html",
           "testCaseApproved": false,
           "expected": "passed",
           "procedureResults": [
             {
               "procedureName": "AccHtmlObjectNoAccName",
               "outcomes": [
-                "passed"
+                "untested"
               ]
             }
           ]
@@ -8288,7 +8288,7 @@
             {
               "procedureName": "AccHtmlObjectNoAccName",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -8303,7 +8303,7 @@
             {
               "procedureName": "AccHtmlObjectNoAccName",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -8318,7 +8318,7 @@
             {
               "procedureName": "AccHtmlObjectNoAccName",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -8423,7 +8423,7 @@
             {
               "procedureName": "AccHtmlObjectNoAccName",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -8772,8 +8772,7 @@
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
-          "WCAG2:keyboard",
-          "WCAG2:keyboard-no-exception"
+          "WCAG2:keyboard"
         ],
         "reported": [
           "WCAG2:keyboard",
@@ -9225,8 +9224,7 @@
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
-          "WCAG2:contrast-minimum",
-          "WCAG2:contrast-enhanced"
+          "WCAG2:contrast-minimum"
         ],
         "reported": [
           "WCAG2:contrast-minimum",
@@ -9669,7 +9667,7 @@
       "procedureNames": [
         "AccHtmlContrastEnhanced"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -9680,8 +9678,8 @@
         ]
       },
       "coverage": {
-        "covered": 28,
-        "untested": 1,
+        "covered": 29,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 29
       },
@@ -9726,7 +9724,7 @@
             {
               "procedureName": "AccHtmlContrastEnhanced",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
