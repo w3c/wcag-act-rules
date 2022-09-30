@@ -25401,7 +25401,15 @@
       },
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:untested"
+        "outcome": "earl:passed"
+      },
+      "test": {
+        "@type": "TestCase",
+        "title": "object-alt",
+        "@id": "https://dequeuniversity.com/rules/axe/4.4/object-alt?application=axeAPI",
+        "isPartOf": [
+          "WCAG2:non-text-content"
+        ]
       }
     },
     {

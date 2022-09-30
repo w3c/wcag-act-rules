@@ -23533,7 +23533,15 @@
       "assertedBy": "https://github.com/dequelabs/axe-core/releases/tag/4.4.3-canary.691f1b6",
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:untested"
+        "outcome": "earl:passed"
+      },
+      "test": {
+        "@type": "TestCase",
+        "title": "object-alt",
+        "@id": "https://dequeuniversity.com/rules/axe/4.4/object-alt?application=axeAPI",
+        "isPartOf": [
+          "WCAG2:non-text-content"
+        ]
       }
     },
     {
