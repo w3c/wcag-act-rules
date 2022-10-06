@@ -1,5 +1,4 @@
 ---
-doc-note-type: draft
 layout: standalone_resource
 title: "ACT Rules Implementation in Test Tools and Methodologies"
 permalink: /standards-guidelines/act/implementations/
@@ -14,10 +13,6 @@ github:
 
 {%- assign siteData = site.data.wcag-act-rules %}
 {%- assign implementations = siteData.act-implementations | sort: "name" %}
-
-<section class="doc-note-box act-sticky">
-  <p>This page is <strong>under development</strong> and has not been approved by the working group.</p>
-</section>
 
 {::nomarkdown} {% include box.html type="start" title="Summary" %} {:/}
 The tables on these pages show how many ACT Rules different accessibility test tools and methodologies have "consistently implemented". Each implementation links to a report with more details on how rules are implemented. See [understanding ACT consistency](#understanding-act-consistency) for details.

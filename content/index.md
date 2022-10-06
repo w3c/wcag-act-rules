@@ -1,5 +1,4 @@
 ---
-doc-note-type: draft
 layout: standalone_resource
 title: "All ACT Rules"
 permalink: /standards-guidelines/act/rules/
