@@ -1,5 +1,4 @@
 ---
-doc-note-type: draft
 layout: standalone_resource
 title: "ACT Test Cases"
 permalink: /standards-guidelines/act/report/testcases/
