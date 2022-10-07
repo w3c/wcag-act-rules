@@ -11,8 +11,6 @@ github:
   path: content/report/mapping.md
 ---
 
-## Implementation Scoping
-
 An implementation procedure does not need to be a one-to-one mapping to an ACT rule. A single implementation procedure can test multiple ACT rules. In manual test procedures, it is common to test multiple things at once. For instance, a procedure looking at the language of a page will simultaneously test whether or not the `<html>` element has a `lang` attribute, if the value of the `lang` attribute is valid, and if the value matches the language of the page. These are 3 separate rules, covered in a single test procedure of an implementation.
 
 <figure role="figure" aria-label="Single implementation, mapping to two ACT Rules">
