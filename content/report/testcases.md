@@ -11,7 +11,7 @@ github:
   path: content/report/testcases.md
 ---
 
-All ACT rules include a number of test cases, which are designed for easy consumption by accessibility test tools and test methodologies. Test cases are updated regularly as part of rule writing. All test cases are described in a JSON file:
+All ACT rules include a number of test cases, which are designed for easy consumption by accessibility test tools and methodologies. Test cases are updated regularly as part of rule writing. All test cases are described in a JSON file:
 
  <a class='btn' href='https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases.json'>
 	See the Test Cases JSON
@@ -61,7 +61,7 @@ In the `testcases.json` file, test cases are included on the `testcases` array, 
 
 ## Running The Test Cases
 
-To run the test cases, go through each URL run the necessary tests on that page. Tools and test procedures do not need to have a one-to-one mapping to ACT-R rules (see [rule mapping](../mapping/)). While you could run all tests in an implementation on every test case, for efficiency we recommend doing one of the following:
+To run the test cases, go through each URL and run the necessary tests on that page. Tools and test procedures do not need to have a one-to-one mapping to ACT-R rules (see [rule mapping](../mapping/)). While you could run all tests in an implementation on every test case, for efficiency we recommend doing one of the following:
 
 1. Only run tests relevant for the `ruleAccessibilityRequirements` (e.g. for a test case that maps to success criterion 1.1.1, only run tests related to success criterion 1.1.1)
 

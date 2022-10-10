@@ -19,9 +19,9 @@ This report is used to determine the [consistency](../../implementations/#unders
 
 ## Submit An Implementation
 
-To propose a new implementation [open an issue in GitHub](https://github.com/w3c/wcag-act-rules/issues/new). Please include the name of the implementation, and a URL to the EARL report. Alternatively, you can e-mail [group-act-rules@w3.org][].
+To propose a new implementation, [open an issue in GitHub](https://github.com/w3c/wcag-act-rules/issues/new). Please include the name of the implementation, and a URL to the EARL report. Alternatively, you can e-mail [group-act-rules@w3.org][].
 
-## Updating An Report
+## Updating A Report
 
 Each implementation provides a permanent URL from which its implementation report is downloaded. The report is downloaded daily to check for any updates.
 
