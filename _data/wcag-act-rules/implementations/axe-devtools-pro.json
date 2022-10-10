@@ -10458,7 +10458,7 @@
     },
     {
       "ruleId": "0va7u6",
-      "ruleName": "HTML graphics contain no text",
+      "ruleName": "HTML images contain no text",
       "ruleApproved": false,
       "procedureNames": [
         "image-of-text (Images)"
