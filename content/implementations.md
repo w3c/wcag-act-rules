@@ -65,7 +65,14 @@ Some ACT Rules are "proposed". These rules are agreed on by the Accessibility Co
 
 ## Add a Tool or Methodology
 
-For information on how to add your accessibility test tool or methodology to the list of ACT implementations, visit the [ACT-Rules community group website](https://act-rules.github.io/pages/implementations/reporting/).
+For information on how to add your accessibility test tool or methodology to the list of ACT implementations, see [Submit an ACT Implementation](../report/submit/).
+
+## See Also
+
+- [Submit An Implementation][../report/submit/]
+- [Mapping to ACT rules][../report/mapping/]
+- [ACT Test Cases][../report/testcases/]
+- [EARL reports][../report/earl/]
 
 ## Disclaimer & Feedback
 
