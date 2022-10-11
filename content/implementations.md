@@ -69,10 +69,10 @@ For information on how to add your accessibility test tool or methodology to the
 
 ## See Also
 
-- [Submit An Implementation][../report/submit/]
-- [Mapping to ACT rules][../report/mapping/]
-- [ACT Test Cases][../report/testcases/]
-- [EARL reports][../report/earl/]
+- [Submit An Implementation](../report/submit/)
+- [Mapping to ACT rules](../report/mapping/)
+- [ACT Test Cases](../report/testcases/)
+- [EARL reports](../report/earl/)
 
 ## Disclaimer & Feedback
 
