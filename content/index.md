@@ -25,34 +25,34 @@ This page contains list of ACT Rules to test conformance [Web Content Accessibil
 
 The ACT Rules in this section directly relate to WCAG 2 success criteria. These rules have been approved by the Accessibility Guidelines Working Group. They are fully implemented in at least one [test tool or methodology](../implementations/).
 
-<ul>
+<ol>
 {%- for rule in site.data.wcag-act-rules.rules["act-rules"] %}
   {%- if rule.proposed == false %}
     <li><a href="{{ rule.permalink | relative_url }}">{{ rule.title }}</a></li>
   {%- endif %}
 {%- endfor %}
-</ul>
+</ol>
 
 ## Proposed Rules for WCAG 2
 
 The ACT Rules in this section directly relate to WCAG 2 success criteria. These rules will be considered for approval once they are fully implemented in at least one test tool or methodology.
 
-<ul>
+<ol>
 {%- for rule in site.data.wcag-act-rules.rules["act-rules"] %}
   {%- if rule.proposed == true and rule.successCriteria.size > 0 %}
     <li><a href="{{ rule.permalink | relative_url }}">{{ rule.title }}</a></li>
   {%- endif %}
 {%- endfor %}
-</ul>
+</ol>
 
 ## Rules beyond WCAG
 
 The ACT Rules below do not directly relate to WCAG success criteria. They relate to other accessibility guidance such as [WAI-ARIA {% include_cached icon.html name="different-view" %}](https://www.w3.org/TR/wai-aria/) or [Techniques for WCAG 2 {% include_cached icon.html name="different-view" %}](https://www.w3.org/WAI/WCAG21/Techniques/). These rules will be considered for approval once they are fully implemented in at least one test tool or methodology.
 
-<ul>
+<ol>
 {%- for rule in site.data.wcag-act-rules.rules["act-rules"] %}
   {%- if rule.successCriteria.size == 0 %}
     <li><a href="{{ rule.permalink | relative_url }}">{{ rule.title }}</a></li>
   {%- endif %}
 {%- endfor %}
-</ul>
+</ol>
