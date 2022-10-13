@@ -1,4 +1,5 @@
 ---
+doc-note-type: draft
 layout: standalone_resource
 title: "EARL Reporting Format"
 permalink: /standards-guidelines/act/report/earl/
