@@ -1,4 +1,5 @@
 ---
+doc-note-type: draft
 layout: standalone_resource
 title: "Submit an Implementation"
 permalink: /standards-guidelines/act/report/submit/

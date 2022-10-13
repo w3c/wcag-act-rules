@@ -1,10 +1,12 @@
 ---
+doc-note-type: draft
 layout: standalone_resource
 title: "Mapping To Rule"
 permalink: /standards-guidelines/act/report/mapping/
 ref: /standards-guidelines/act/report/mapping/
 lang: en
 type_of_guidance: false
+sidebar: false
 footer: ""
 github:
   repository: w3c/wcag-act-rules
