@@ -5,7 +5,7 @@ permalink: /standards-guidelines/act/implementations/
 ref: /standards-guidelines/act/implementations/
 lang: en
 footer: ""
-type_of_guidance: false
+type_of_guidance: ""
 github:
   repository: w3c/wcag-act-rules
   path: content/implementations.md

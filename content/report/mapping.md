@@ -5,7 +5,7 @@ title: "Mapping To Rule"
 permalink: /standards-guidelines/act/report/mapping/
 ref: /standards-guidelines/act/report/mapping/
 lang: en
-type_of_guidance: false
+type_of_guidance: ""
 sidebar: false
 footer: ""
 github:
