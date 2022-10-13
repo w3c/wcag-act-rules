@@ -2,19 +2,19 @@
   "vendor": "Deque Systems",
   "name": "Axe DevTools Pro",
   "version": "4.24.5",
-  "lastModified": "5 October 2022",
+  "lastModified": "13 October 2022",
   "approvedRules": {
-    "complete": 16,
-    "partial": 1,
+    "complete": 17,
+    "partial": 0,
     "minimal": 0,
     "inconsistent": 0,
     "untested": 0
   },
   "proposedRules": {
-    "complete": 18,
+    "complete": 19,
     "partial": 10,
     "minimal": 8,
-    "inconsistent": 9,
+    "inconsistent": 8,
     "untested": 29
   },
   "actRuleMapping": [
@@ -1048,14 +1048,14 @@
       "procedureNames": [
         "presentation-role-conflict"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
         "reported": []
       },
       "coverage": {
-        "covered": 9,
+        "covered": 10,
         "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 10
@@ -1071,7 +1071,7 @@
             {
               "procedureName": "presentation-role-conflict",
               "outcomes": [
-                "inapplicable"
+                "passed"
               ]
             }
           ]
@@ -1176,7 +1176,7 @@
             {
               "procedureName": "presentation-role-conflict",
               "outcomes": [
-                "inapplicable"
+                "failed"
               ]
             }
           ]
@@ -4665,7 +4665,7 @@
             {
               "procedureName": "td-headers-attr",
               "outcomes": [
-                "passed"
+                "inapplicable"
               ]
             }
           ]
@@ -12050,9 +12050,7 @@
           "WCAG2:timing-adjustable"
         ],
         "reported": [
-          "WCAG2:timing-adjustable",
-          "WCAG2:interruptions",
-          "WCAG2:change-on-request"
+          "WCAG2:timing-adjustable"
         ]
       },
       "coverage": {
@@ -12298,7 +12296,7 @@
       "procedureNames": [
         "meta-refresh-no-exceptions"
       ],
-      "consistency": "complete",
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -12311,7 +12309,7 @@
         ]
       },
       "coverage": {
-        "covered": 14,
+        "covered": 11,
         "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 14
@@ -12358,7 +12356,7 @@
             {
               "procedureName": "meta-refresh-no-exceptions",
               "outcomes": [
-                "failed"
+                "passed"
               ]
             }
           ]
@@ -12373,7 +12371,7 @@
             {
               "procedureName": "meta-refresh-no-exceptions",
               "outcomes": [
-                "failed"
+                "passed"
               ]
             }
           ]
@@ -12389,7 +12387,7 @@
               "procedureName": "meta-refresh-no-exceptions",
               "outcomes": [
                 "passed",
-                "failed"
+                "passed"
               ]
             }
           ]
@@ -12538,13 +12536,15 @@
       "procedureNames": [
         "meta-viewport"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:resize-text"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:resize-text"
+        ]
       },
       "coverage": {
         "covered": 11,
@@ -12736,7 +12736,7 @@
       "procedureNames": [
         "object-alt"
       ],
-      "consistency": null,
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -12747,7 +12747,7 @@
         ]
       },
       "coverage": {
-        "covered": 17,
+        "covered": 18,
         "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 18
@@ -13018,7 +13018,7 @@
             {
               "procedureName": "object-alt",
               "outcomes": [
-                "failed"
+                "inapplicable"
               ]
             }
           ]

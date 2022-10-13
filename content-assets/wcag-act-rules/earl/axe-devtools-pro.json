@@ -5100,7 +5100,7 @@
       },
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:inapplicable"
+        "outcome": "earl:passed"
       },
       "test": {
         "@type": "TestCase",
@@ -5240,7 +5240,7 @@
       },
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:inapplicable"
+        "outcome": "earl:failed"
       },
       "test": {
         "@type": "TestCase",
@@ -11758,7 +11758,7 @@
       },
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:passed"
+        "outcome": "earl:inapplicable"
       },
       "test": {
         "@type": "TestCase",
@@ -24018,9 +24018,7 @@
         "title": "meta-refresh",
         "@id": "https://dequeuniversity.com/rules/axe/4.4/meta-refresh?application=axeAPI",
         "isPartOf": [
-          "WCAG2:timing-adjustable",
-          "WCAG2:interruptions",
-          "WCAG2:change-on-request"
+          "WCAG2:timing-adjustable"
         ]
       }
     },
@@ -24043,9 +24041,7 @@
         "title": "meta-refresh",
         "@id": "https://dequeuniversity.com/rules/axe/4.4/meta-refresh?application=axeAPI",
         "isPartOf": [
-          "WCAG2:timing-adjustable",
-          "WCAG2:interruptions",
-          "WCAG2:change-on-request"
+          "WCAG2:timing-adjustable"
         ]
       }
     },
@@ -24068,9 +24064,7 @@
         "title": "meta-refresh",
         "@id": "https://dequeuniversity.com/rules/axe/4.4/meta-refresh?application=axeAPI",
         "isPartOf": [
-          "WCAG2:timing-adjustable",
-          "WCAG2:interruptions",
-          "WCAG2:change-on-request"
+          "WCAG2:timing-adjustable"
         ]
       }
     },
@@ -24093,9 +24087,7 @@
         "title": "meta-refresh",
         "@id": "https://dequeuniversity.com/rules/axe/4.4/meta-refresh?application=axeAPI",
         "isPartOf": [
-          "WCAG2:timing-adjustable",
-          "WCAG2:interruptions",
-          "WCAG2:change-on-request"
+          "WCAG2:timing-adjustable"
         ]
       }
     },
@@ -24118,9 +24110,7 @@
         "title": "meta-refresh",
         "@id": "https://dequeuniversity.com/rules/axe/4.4/meta-refresh?application=axeAPI",
         "isPartOf": [
-          "WCAG2:timing-adjustable",
-          "WCAG2:interruptions",
-          "WCAG2:change-on-request"
+          "WCAG2:timing-adjustable"
         ]
       }
     },
@@ -24143,9 +24133,7 @@
         "title": "meta-refresh",
         "@id": "https://dequeuniversity.com/rules/axe/4.4/meta-refresh?application=axeAPI",
         "isPartOf": [
-          "WCAG2:timing-adjustable",
-          "WCAG2:interruptions",
-          "WCAG2:change-on-request"
+          "WCAG2:timing-adjustable"
         ]
       }
     },
@@ -24168,9 +24156,7 @@
         "title": "meta-refresh",
         "@id": "https://dequeuniversity.com/rules/axe/4.4/meta-refresh?application=axeAPI",
         "isPartOf": [
-          "WCAG2:timing-adjustable",
-          "WCAG2:interruptions",
-          "WCAG2:change-on-request"
+          "WCAG2:timing-adjustable"
         ]
       }
     },
@@ -24193,9 +24179,7 @@
         "title": "meta-refresh",
         "@id": "https://dequeuniversity.com/rules/axe/4.4/meta-refresh?application=axeAPI",
         "isPartOf": [
-          "WCAG2:timing-adjustable",
-          "WCAG2:interruptions",
-          "WCAG2:change-on-request"
+          "WCAG2:timing-adjustable"
         ]
       }
     },
@@ -24218,9 +24202,7 @@
         "title": "meta-refresh",
         "@id": "https://dequeuniversity.com/rules/axe/4.4/meta-refresh?application=axeAPI",
         "isPartOf": [
-          "WCAG2:timing-adjustable",
-          "WCAG2:interruptions",
-          "WCAG2:change-on-request"
+          "WCAG2:timing-adjustable"
         ]
       }
     },
@@ -24243,9 +24225,7 @@
         "title": "meta-refresh",
         "@id": "https://dequeuniversity.com/rules/axe/4.4/meta-refresh?application=axeAPI",
         "isPartOf": [
-          "WCAG2:timing-adjustable",
-          "WCAG2:interruptions",
-          "WCAG2:change-on-request"
+          "WCAG2:timing-adjustable"
         ]
       }
     },
@@ -24268,9 +24248,7 @@
         "title": "meta-refresh",
         "@id": "https://dequeuniversity.com/rules/axe/4.4/meta-refresh?application=axeAPI",
         "isPartOf": [
-          "WCAG2:timing-adjustable",
-          "WCAG2:interruptions",
-          "WCAG2:change-on-request"
+          "WCAG2:timing-adjustable"
         ]
       }
     },
@@ -24293,9 +24271,7 @@
         "title": "meta-refresh",
         "@id": "https://dequeuniversity.com/rules/axe/4.4/meta-refresh?application=axeAPI",
         "isPartOf": [
-          "WCAG2:timing-adjustable",
-          "WCAG2:interruptions",
-          "WCAG2:change-on-request"
+          "WCAG2:timing-adjustable"
         ]
       }
     },
@@ -24318,9 +24294,7 @@
         "title": "meta-refresh",
         "@id": "https://dequeuniversity.com/rules/axe/4.4/meta-refresh?application=axeAPI",
         "isPartOf": [
-          "WCAG2:timing-adjustable",
-          "WCAG2:interruptions",
-          "WCAG2:change-on-request"
+          "WCAG2:timing-adjustable"
         ]
       }
     },
@@ -24343,9 +24317,7 @@
         "title": "meta-refresh",
         "@id": "https://dequeuniversity.com/rules/axe/4.4/meta-refresh?application=axeAPI",
         "isPartOf": [
-          "WCAG2:timing-adjustable",
-          "WCAG2:interruptions",
-          "WCAG2:change-on-request"
+          "WCAG2:timing-adjustable"
         ]
       }
     },
@@ -24368,9 +24340,7 @@
         "title": "meta-refresh",
         "@id": "https://dequeuniversity.com/rules/axe/4.4/meta-refresh?application=axeAPI",
         "isPartOf": [
-          "WCAG2:timing-adjustable",
-          "WCAG2:interruptions",
-          "WCAG2:change-on-request"
+          "WCAG2:timing-adjustable"
         ]
       }
     },
@@ -24393,9 +24363,7 @@
         "title": "meta-refresh",
         "@id": "https://dequeuniversity.com/rules/axe/4.4/meta-refresh?application=axeAPI",
         "isPartOf": [
-          "WCAG2:timing-adjustable",
-          "WCAG2:interruptions",
-          "WCAG2:change-on-request"
+          "WCAG2:timing-adjustable"
         ]
       }
     },
@@ -24418,9 +24386,7 @@
         "title": "meta-refresh",
         "@id": "https://dequeuniversity.com/rules/axe/4.4/meta-refresh?application=axeAPI",
         "isPartOf": [
-          "WCAG2:timing-adjustable",
-          "WCAG2:interruptions",
-          "WCAG2:change-on-request"
+          "WCAG2:timing-adjustable"
         ]
       }
     },
@@ -24508,7 +24474,7 @@
       },
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:failed"
+        "outcome": "earl:passed"
       },
       "test": {
         "@type": "TestCase",
@@ -24532,7 +24498,7 @@
       },
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:failed"
+        "outcome": "earl:passed"
       },
       "test": {
         "@type": "TestCase",
@@ -24580,7 +24546,7 @@
       },
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:failed"
+        "outcome": "earl:passed"
       },
       "test": {
         "@type": "TestCase",
@@ -24825,7 +24791,10 @@
       "test": {
         "@type": "TestCase",
         "title": "meta-viewport",
-        "@id": "https://dequeuniversity.com/rules/axe/4.4/meta-viewport?application=axeAPI"
+        "@id": "https://dequeuniversity.com/rules/axe/4.4/meta-viewport?application=axeAPI",
+        "isPartOf": [
+          "WCAG2:resize-text"
+        ]
       }
     },
     {
@@ -24845,7 +24814,10 @@
       "test": {
         "@type": "TestCase",
         "title": "meta-viewport",
-        "@id": "https://dequeuniversity.com/rules/axe/4.4/meta-viewport?application=axeAPI"
+        "@id": "https://dequeuniversity.com/rules/axe/4.4/meta-viewport?application=axeAPI",
+        "isPartOf": [
+          "WCAG2:resize-text"
+        ]
       }
     },
     {
@@ -24865,7 +24837,10 @@
       "test": {
         "@type": "TestCase",
         "title": "meta-viewport",
-        "@id": "https://dequeuniversity.com/rules/axe/4.4/meta-viewport?application=axeAPI"
+        "@id": "https://dequeuniversity.com/rules/axe/4.4/meta-viewport?application=axeAPI",
+        "isPartOf": [
+          "WCAG2:resize-text"
+        ]
       }
     },
     {
@@ -24885,7 +24860,10 @@
       "test": {
         "@type": "TestCase",
         "title": "meta-viewport",
-        "@id": "https://dequeuniversity.com/rules/axe/4.4/meta-viewport?application=axeAPI"
+        "@id": "https://dequeuniversity.com/rules/axe/4.4/meta-viewport?application=axeAPI",
+        "isPartOf": [
+          "WCAG2:resize-text"
+        ]
       }
     },
     {
@@ -24905,7 +24883,10 @@
       "test": {
         "@type": "TestCase",
         "title": "meta-viewport",
-        "@id": "https://dequeuniversity.com/rules/axe/4.4/meta-viewport?application=axeAPI"
+        "@id": "https://dequeuniversity.com/rules/axe/4.4/meta-viewport?application=axeAPI",
+        "isPartOf": [
+          "WCAG2:resize-text"
+        ]
       }
     },
     {
@@ -24925,7 +24906,10 @@
       "test": {
         "@type": "TestCase",
         "title": "meta-viewport",
-        "@id": "https://dequeuniversity.com/rules/axe/4.4/meta-viewport?application=axeAPI"
+        "@id": "https://dequeuniversity.com/rules/axe/4.4/meta-viewport?application=axeAPI",
+        "isPartOf": [
+          "WCAG2:resize-text"
+        ]
       }
     },
     {
@@ -24945,7 +24929,10 @@
       "test": {
         "@type": "TestCase",
         "title": "meta-viewport",
-        "@id": "https://dequeuniversity.com/rules/axe/4.4/meta-viewport?application=axeAPI"
+        "@id": "https://dequeuniversity.com/rules/axe/4.4/meta-viewport?application=axeAPI",
+        "isPartOf": [
+          "WCAG2:resize-text"
+        ]
       }
     },
     {
@@ -24965,7 +24952,10 @@
       "test": {
         "@type": "TestCase",
         "title": "meta-viewport",
-        "@id": "https://dequeuniversity.com/rules/axe/4.4/meta-viewport?application=axeAPI"
+        "@id": "https://dequeuniversity.com/rules/axe/4.4/meta-viewport?application=axeAPI",
+        "isPartOf": [
+          "WCAG2:resize-text"
+        ]
       }
     },
     {
@@ -24985,7 +24975,10 @@
       "test": {
         "@type": "TestCase",
         "title": "meta-viewport",
-        "@id": "https://dequeuniversity.com/rules/axe/4.4/meta-viewport?application=axeAPI"
+        "@id": "https://dequeuniversity.com/rules/axe/4.4/meta-viewport?application=axeAPI",
+        "isPartOf": [
+          "WCAG2:resize-text"
+        ]
       }
     },
     {
@@ -25005,7 +24998,10 @@
       "test": {
         "@type": "TestCase",
         "title": "meta-viewport",
-        "@id": "https://dequeuniversity.com/rules/axe/4.4/meta-viewport?application=axeAPI"
+        "@id": "https://dequeuniversity.com/rules/axe/4.4/meta-viewport?application=axeAPI",
+        "isPartOf": [
+          "WCAG2:resize-text"
+        ]
       }
     },
     {
@@ -25025,7 +25021,10 @@
       "test": {
         "@type": "TestCase",
         "title": "meta-viewport",
-        "@id": "https://dequeuniversity.com/rules/axe/4.4/meta-viewport?application=axeAPI"
+        "@id": "https://dequeuniversity.com/rules/axe/4.4/meta-viewport?application=axeAPI",
+        "isPartOf": [
+          "WCAG2:resize-text"
+        ]
       }
     },
     {
@@ -25746,7 +25745,7 @@
       },
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:failed"
+        "outcome": "earl:inapplicable"
       },
       "test": {
         "@type": "TestCase",
