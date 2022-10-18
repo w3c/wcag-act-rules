@@ -5,7 +5,7 @@ title: "ACT Test Cases"
 permalink: /standards-guidelines/act/report/testcases/
 ref: /standards-guidelines/act/report/testcases/
 lang: en
-type_of_guidance: false
+type_of_guidance: ""
 footer: ""
 github:
   repository: w3c/wcag-act-rules

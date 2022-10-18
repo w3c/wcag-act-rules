@@ -4,7 +4,7 @@ title: "About ACT Rules"
 permalink: /standards-guidelines/act/rules/about/
 ref: /standards-guidelines/act/rules/about/
 lang: en
-type_of_guidance: false
+type_of_guidance: ""
 footer: ""
 github:
   repository: w3c/wcag-act-rules

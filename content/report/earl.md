@@ -5,7 +5,7 @@ title: "EARL Reporting Format"
 permalink: /standards-guidelines/act/report/earl/
 ref: /standards-guidelines/act/report/earl/
 lang: en
-type_of_guidance: false
+type_of_guidance: ""
 footer: ""
 github:
   repository: w3c/wcag-act-rules

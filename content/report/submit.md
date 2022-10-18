@@ -5,7 +5,7 @@ title: "Submit an Implementation"
 permalink: /standards-guidelines/act/report/submit/
 ref: /standards-guidelines/act/report/submit/
 lang: en
-type_of_guidance: false
+type_of_guidance: ""
 footer: ""
 github:
   repository: w3c/wcag-act-rules
