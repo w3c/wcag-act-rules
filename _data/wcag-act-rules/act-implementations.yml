@@ -29,7 +29,7 @@
 
 - name: Axe-core
   homepage: https://www.npmjs.com/package/axe-core/
-  version: 4.5.0-prerelease
+  version: "4.5"
   vendor: Deque Systems
   vendorHomepage: https://deque.com/
   uniqueKey: axe-core
