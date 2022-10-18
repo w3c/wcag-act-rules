@@ -2,7 +2,7 @@
   "vendor": "Deque Systems",
   "name": "Axe DevTools Pro",
   "version": "4.37.1",
-  "lastModified": "13 October 2022",
+  "lastModified": "18 October 2022",
   "approvedRules": {
     "complete": 17,
     "partial": 0,
@@ -11,8 +11,8 @@
     "untested": 0
   },
   "proposedRules": {
-    "complete": 19,
-    "partial": 10,
+    "complete": 20,
+    "partial": 9,
     "minimal": 8,
     "inconsistent": 8,
     "untested": 29
@@ -10188,7 +10188,7 @@
       "procedureNames": [
         "alt-text-short-text-not-meaningful (Images)"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -10199,8 +10199,8 @@
         ]
       },
       "coverage": {
-        "covered": 11,
-        "untested": 5,
+        "covered": 16,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 16
       },
@@ -10215,7 +10215,7 @@
             {
               "procedureName": "alt-text-short-text-not-meaningful (Images)",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -10245,7 +10245,7 @@
             {
               "procedureName": "alt-text-short-text-not-meaningful (Images)",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -10260,7 +10260,7 @@
             {
               "procedureName": "alt-text-short-text-not-meaningful (Images)",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -10290,7 +10290,7 @@
             {
               "procedureName": "alt-text-short-text-not-meaningful (Images)",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -10365,7 +10365,7 @@
             {
               "procedureName": "alt-text-short-text-not-meaningful (Images)",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -10710,8 +10710,8 @@
         ]
       },
       "coverage": {
-        "covered": 16,
-        "untested": 1,
+        "covered": 17,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 20
       },
@@ -10876,7 +10876,7 @@
             {
               "procedureName": "alt-text-missing + semantic-hidden (images)",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
