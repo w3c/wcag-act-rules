@@ -1,5 +1,5 @@
 ---
-title: "HTML graphics contain no text"
+title: "HTML images contain no text"
 permalink: /standards-guidelines/act/rules/0va7u6/proposed/
 ref: /standards-guidelines/act/rules/0va7u6/proposed/
 lang: en
@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 0va7u6</p>
-  <p><strong>Date:</strong> Updated 22 September 2022</p>
+  <p><strong>Date:</strong> Updated 10 October 2022</p>
   <p><strong>Authors:</strong> <a href="https://github.com/carlosapaduarte">Carlos Duarte</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
   
@@ -17,11 +17,11 @@ footer: |
 proposed: true
 rule_meta:
   id: 0va7u6
-  name: "HTML graphics contain no text"
+  name: "HTML images contain no text"
   rule_type: atomic
   description: |
     This rule checks that images of text are not used
-  last_modified: 22 September 2022
+  last_modified: 10 October 2022
   scs_tested:
     - handle: Images of Text
       num: 1.4.5
@@ -36,7 +36,6 @@ rule_meta:
 This rule applies to any [rendered image resources][] in a [web page][].
 
 ## Expectation
-
 
 For each test target, its [visible pixels][visible] do not contain text expressing anything in a [human language], except if at least one of the following is true:
 

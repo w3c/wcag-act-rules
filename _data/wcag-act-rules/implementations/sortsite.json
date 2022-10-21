@@ -2,7 +2,7 @@
   "vendor": "PowerMapper",
   "name": "SortSite",
   "version": 6.45,
-  "lastModified": "23 September 2022",
+  "lastModified": "20 October 2022",
   "approvedRules": {
     "complete": 16,
     "partial": 1,
@@ -11,8 +11,8 @@
     "untested": 0
   },
   "proposedRules": {
-    "complete": 21,
-    "partial": 3,
+    "complete": 22,
+    "partial": 2,
     "minimal": 0,
     "inconsistent": 0,
     "untested": 50
@@ -6836,7 +6836,7 @@
     },
     {
       "ruleId": "0va7u6",
-      "ruleName": "HTML graphics contain no text",
+      "ruleName": "HTML images contain no text",
       "ruleApproved": false,
       "procedureNames": [],
       "consistency": null,
@@ -8141,7 +8141,7 @@
       "procedureNames": [
         "AccHtmlObjectNoAccName"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -8152,8 +8152,8 @@
         ]
       },
       "coverage": {
-        "covered": 17,
-        "untested": 1,
+        "covered": 18,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 18
       },
@@ -8198,7 +8198,7 @@
             {
               "procedureName": "AccHtmlObjectNoAccName",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]

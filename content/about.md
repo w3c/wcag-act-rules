@@ -1,20 +1,15 @@
 ---
-doc-note-type: draft
 layout: standalone_resource
 title: "About ACT Rules"
 permalink: /standards-guidelines/act/rules/about/
 ref: /standards-guidelines/act/rules/about/
 lang: en
-type_of_guidance: false
+type_of_guidance: ""
 footer: ""
 github:
   repository: w3c/wcag-act-rules
   path: content/about.md
 ---
-
-<section class="doc-note-box act-sticky">
-  <p>This page is <strong>under development</strong> and has not been approved by the working group.</p>
-</section>
 
 {::nomarkdown}
 {% include box.html type="start" title="Summary" class="" %}
