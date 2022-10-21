@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 8fc3b6</p>
-  <p><strong>Date:</strong> Updated 15 September 2022</p>
+  <p><strong>Date:</strong> Updated 21 October 2022</p>
   <p><strong>Authors:</strong> <a href="https://github.com/AntonioEstriga">António Estriga</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
   
@@ -21,7 +21,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that each `object` element rendering non-text content has a non-empty accessible name.
-  last_modified: 15 September 2022
+  last_modified: 21 October 2022
   scs_tested:
     - handle: Non-text Content
       num: 1.1.1
@@ -42,9 +42,11 @@ Each target element has an [accessible name][] that is not empty (`""`).
 
 ## Assumptions
 
-The `object` element is not rendered for presentational purposes. If the `object` is decorative and not [marked as decorative][] then the rule might fail but the success criterion might still be satisfied.
+_There are currently no assumptions_
 
 ## Accessibility Support
+
+Some screen readers announce `object` elements even if they do not have an accessible name, while other skip the element. If an `object` is used to render decorative content, to ensure it is [marked as decorative][] and can be ignored by all major screen readers a presentational role is necessary.
 
 The [MIME type][] of the resource embedded in the `data` attribute impacts how the [accessible name][] of the `object` is computed. For example, `object` embedding [image MIME type][] may use their `alt` attribute to compute their [accessible name][], but `object` embedding [audio or video MIME types][] may not. An `object` does not officially support the use of an `alt` so this may behave differently according to the browser used.
 
@@ -52,7 +54,7 @@ The [MIME type][] of the resource embedded in the `data` attribute impacts how t
 
 Testing that the [accessible name][] describes the purpose of the `object` element is not part of this rule and must be tested separately.
 
-Non-supported media formats make screen readers render the text content of the element instead of other attributes. 
+Non-supported media formats make screen readers render the text content of the element instead of other attributes.
 
 `Object` elements without an accessible name are ignored by assistive technologies unless they have an [explicit role][].
 
@@ -200,7 +202,7 @@ This `object` element has an empty [accessible name][]. The `img` element inside
 
 <a class="example-link" title="Failed Example 6" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/f6b0a52f8bb37ab0a8b290237add5be669a28b2f.html">Open in a new tab</a>
 
-This `object` element has `alt` attribute, however this will not create an  [accessible name][]. Because of this the accessible name is empty.
+This `object` element has `alt` attribute, however this will not create an [accessible name][]. Because of this the accessible name is empty.
 
 ```html
 <object data="/test-assets/moon-audio/moon-speech.mp3" alt="Moon speech"></object>
@@ -212,7 +214,7 @@ This `object` element has `alt` attribute, however this will not create an  [acc
 
 <a class="example-link" title="Inapplicable Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/8fc3b6/fd273c99d6129f0972ffdbe529b2b1cfa1116cf0.html">Open in a new tab</a>
 
-This `object` element has an [explicit role][] of "img". 
+This `object` element has an [explicit role][] of "img".
 
 **Note**: Object elements with other roles may still require an accessible name. This is tested through other rules.
 
