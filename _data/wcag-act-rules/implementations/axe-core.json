@@ -11,8 +11,8 @@
     "untested": 0
   },
   "proposedRules": {
-    "complete": 16,
-    "partial": 7,
+    "complete": 15,
+    "partial": 8,
     "minimal": 8,
     "inconsistent": 4,
     "untested": 39
@@ -4853,7 +4853,7 @@
       "procedureNames": [
         "aria-hidden-focus"
       ],
-      "consistency": "complete",
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -4865,9 +4865,9 @@
       },
       "coverage": {
         "covered": 12,
-        "untested": 0,
-        "cantTell": 2,
-        "testCaseTotal": 14
+        "untested": 3,
+        "cantTell": 0,
+        "testCaseTotal": 15
       },
       "testCaseResults": [
         {
@@ -4916,16 +4916,16 @@
           ]
         },
         {
-          "testcaseId": "36d83f2c0fe431eade9b158f1e548c2d6189d570",
+          "testcaseId": "d343bc6a2877b62d80153453c3781debc33e0b1d",
           "testCaseName": "Passed Example 4",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/36d83f2c0fe431eade9b158f1e548c2d6189d570.html",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/d343bc6a2877b62d80153453c3781debc33e0b1d.html",
           "testCaseApproved": false,
           "expected": "passed",
           "procedureResults": [
             {
               "procedureName": "aria-hidden-focus",
               "outcomes": [
-                "cantTell"
+                "untested"
               ]
             }
           ]
@@ -4941,6 +4941,21 @@
               "procedureName": "aria-hidden-focus",
               "outcomes": [
                 "passed"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "2dcf10cb4314dd7964dd38c2afe7d399bfcbcfac",
+          "testCaseName": "Passed Example 6",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/2dcf10cb4314dd7964dd38c2afe7d399bfcbcfac.html",
+          "testCaseApproved": false,
+          "expected": "passed",
+          "procedureResults": [
+            {
+              "procedureName": "aria-hidden-focus",
+              "outcomes": [
+                "untested"
               ]
             }
           ]
@@ -5021,16 +5036,16 @@
           ]
         },
         {
-          "testcaseId": "59dbb168e68fbb2e752910c43405fe33fb9f3f70",
+          "testcaseId": "9812d828fef2da32081f4c0acce0c58912f071cb",
           "testCaseName": "Failed Example 6",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/59dbb168e68fbb2e752910c43405fe33fb9f3f70.html",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/9812d828fef2da32081f4c0acce0c58912f071cb.html",
           "testCaseApproved": false,
           "expected": "failed",
           "procedureResults": [
             {
               "procedureName": "aria-hidden-focus",
               "outcomes": [
-                "cantTell"
+                "untested"
               ]
             }
           ]
