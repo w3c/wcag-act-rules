@@ -12202,19 +12202,11 @@
           "earl:TestSubject",
           "sch:WebPage"
         ],
-        "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/36d83f2c0fe431eade9b158f1e548c2d6189d570.html"
+        "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/d343bc6a2877b62d80153453c3781debc33e0b1d.html"
       },
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:cantTell"
-      },
-      "test": {
-        "@type": "TestCase",
-        "title": "aria-hidden-focus",
-        "@id": "https://dequeuniversity.com/rules/axe/4.4/aria-hidden-focus?application=axeAPI",
-        "isPartOf": [
-          "WCAG2:name-role-value"
-        ]
+        "outcome": "earl:untested"
       }
     },
     {
@@ -12238,6 +12230,21 @@
         "isPartOf": [
           "WCAG2:name-role-value"
         ]
+      }
+    },
+    {
+      "@type": "Assertion",
+      "mode": "earl:automatic",
+      "subject": {
+        "@type": [
+          "earl:TestSubject",
+          "sch:WebPage"
+        ],
+        "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/2dcf10cb4314dd7964dd38c2afe7d399bfcbcfac.html"
+      },
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:untested"
       }
     },
     {
@@ -12363,19 +12370,11 @@
           "earl:TestSubject",
           "sch:WebPage"
         ],
-        "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/59dbb168e68fbb2e752910c43405fe33fb9f3f70.html"
+        "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/9812d828fef2da32081f4c0acce0c58912f071cb.html"
       },
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:cantTell"
-      },
-      "test": {
-        "@type": "TestCase",
-        "title": "aria-hidden-focus",
-        "@id": "https://dequeuniversity.com/rules/axe/4.4/aria-hidden-focus?application=axeAPI",
-        "isPartOf": [
-          "WCAG2:name-role-value"
-        ]
+        "outcome": "earl:untested"
       }
     },
     {
