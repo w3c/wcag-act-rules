@@ -26,6 +26,15 @@
       "proposed": false
     },
     {
+      "title": "Element with aria-hidden has no content in sequential focus navigation",
+      "permalink": "/standards-guidelines/act/rules/6cfa84/",
+      "successCriteria": [
+        "name-role-value"
+      ],
+      "wcagTechniques": [],
+      "proposed": false
+    },
+    {
       "title": "Element with lang attribute has valid language tag",
       "permalink": "/standards-guidelines/act/rules/de46e4/",
       "successCriteria": [
@@ -449,15 +458,6 @@
       "permalink": "/standards-guidelines/act/rules/oj04fd/proposed/",
       "successCriteria": [
         "focus-visible"
-      ],
-      "wcagTechniques": [],
-      "proposed": true
-    },
-    {
-      "title": "Element with aria-hidden has no content in sequential focus navigation",
-      "permalink": "/standards-guidelines/act/rules/6cfa84/proposed/",
-      "successCriteria": [
-        "name-role-value"
       ],
       "wcagTechniques": [],
       "proposed": true
