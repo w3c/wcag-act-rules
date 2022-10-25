@@ -156,6 +156,15 @@
       "proposed": false
     },
     {
+      "title": "Object element rendering non-text content has non-empty accessible name",
+      "permalink": "/standards-guidelines/act/rules/8fc3b6/",
+      "successCriteria": [
+        "non-text-content"
+      ],
+      "wcagTechniques": [],
+      "proposed": false
+    },
+    {
       "title": "SVG element with explicit role has non-empty accessible name",
       "permalink": "/standards-guidelines/act/rules/7d6734/",
       "successCriteria": [
@@ -699,15 +708,6 @@
       "permalink": "/standards-guidelines/act/rules/ffbc54/proposed/",
       "successCriteria": [
         "character-key-shortcuts"
-      ],
-      "wcagTechniques": [],
-      "proposed": true
-    },
-    {
-      "title": "Object element rendering non-text content has non-empty accessible name",
-      "permalink": "/standards-guidelines/act/rules/8fc3b6/proposed/",
-      "successCriteria": [
-        "non-text-content"
       ],
       "wcagTechniques": [],
       "proposed": true
