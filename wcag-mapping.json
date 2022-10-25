@@ -179,6 +179,15 @@
       "proposed": false
     },
     {
+      "title": "Meta viewport allows for zoom",
+      "permalink": "/standards-guidelines/act/rules/b4f0c3/",
+      "successCriteria": [
+        "resize-text"
+      ],
+      "wcagTechniques": [],
+      "proposed": false
+    },
+    {
       "title": "Object element rendering non-text content has non-empty accessible name",
       "permalink": "/standards-guidelines/act/rules/8fc3b6/",
       "successCriteria": [
@@ -692,15 +701,6 @@
         "G110",
         "H76"
       ],
-      "proposed": true
-    },
-    {
-      "title": "Meta viewport allows for zoom",
-      "permalink": "/standards-guidelines/act/rules/b4f0c3/proposed/",
-      "successCriteria": [
-        "resize-text"
-      ],
-      "wcagTechniques": [],
       "proposed": true
     },
     {
