@@ -165,6 +165,20 @@
       "proposed": false
     },
     {
+      "title": "Meta element has no refresh delay",
+      "permalink": "/standards-guidelines/act/rules/bc659a/",
+      "successCriteria": [
+        "timing-adjustable",
+        "interruptions",
+        "change-on-request"
+      ],
+      "wcagTechniques": [
+        "G110",
+        "H76"
+      ],
+      "proposed": false
+    },
+    {
       "title": "Object element rendering non-text content has non-empty accessible name",
       "permalink": "/standards-guidelines/act/rules/8fc3b6/",
       "successCriteria": [
@@ -665,20 +679,6 @@
         "name-role-value"
       ],
       "wcagTechniques": [],
-      "proposed": true
-    },
-    {
-      "title": "Meta element has no refresh delay",
-      "permalink": "/standards-guidelines/act/rules/bc659a/proposed/",
-      "successCriteria": [
-        "timing-adjustable",
-        "interruptions",
-        "change-on-request"
-      ],
-      "wcagTechniques": [
-        "G110",
-        "H76"
-      ],
       "proposed": true
     },
     {
