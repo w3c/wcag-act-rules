@@ -2,7 +2,7 @@
   "vendor": "Deque Systems",
   "name": "Axe DevTools Pro",
   "version": "4.37.1",
-  "lastModified": "22 October 2022",
+  "lastModified": "25 October 2022",
   "approvedRules": {
     "complete": 17,
     "partial": 0,
@@ -11,8 +11,8 @@
     "untested": 0
   },
   "proposedRules": {
-    "complete": 19,
-    "partial": 10,
+    "complete": 20,
+    "partial": 9,
     "minimal": 8,
     "inconsistent": 8,
     "untested": 29
@@ -4853,7 +4853,7 @@
       "procedureNames": [
         "aria-hidden-focus"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -4864,9 +4864,9 @@
         ]
       },
       "coverage": {
-        "covered": 12,
-        "untested": 3,
-        "cantTell": 0,
+        "covered": 13,
+        "untested": 0,
+        "cantTell": 2,
         "testCaseTotal": 15
       },
       "testCaseResults": [
@@ -4925,7 +4925,7 @@
             {
               "procedureName": "aria-hidden-focus",
               "outcomes": [
-                "untested"
+                "cantTell"
               ]
             }
           ]
@@ -4955,7 +4955,7 @@
             {
               "procedureName": "aria-hidden-focus",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -5045,7 +5045,7 @@
             {
               "procedureName": "aria-hidden-focus",
               "outcomes": [
-                "untested"
+                "cantTell"
               ]
             }
           ]
