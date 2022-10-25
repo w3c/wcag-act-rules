@@ -143,6 +143,15 @@
       "proposed": false
     },
     {
+      "title": "Line height in style attributes is not !important",
+      "permalink": "/standards-guidelines/act/rules/78fd32/",
+      "successCriteria": [
+        "text-spacing"
+      ],
+      "wcagTechniques": [],
+      "proposed": false
+    },
+    {
       "title": "Link has non-empty accessible name",
       "permalink": "/standards-guidelines/act/rules/c487ae/",
       "successCriteria": [
@@ -607,15 +616,6 @@
       "permalink": "/standards-guidelines/act/rules/e88epe/proposed/",
       "successCriteria": [
         "non-text-content"
-      ],
-      "wcagTechniques": [],
-      "proposed": true
-    },
-    {
-      "title": "Line height in style attributes is not !important",
-      "permalink": "/standards-guidelines/act/rules/78fd32/proposed/",
-      "successCriteria": [
-        "text-spacing"
       ],
       "wcagTechniques": [],
       "proposed": true
