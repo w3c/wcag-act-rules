@@ -2,7 +2,7 @@
   "vendor": "Deque Systems",
   "name": "Axe-core",
   "version": "4.5",
-  "lastModified": "25 October 2022",
+  "lastModified": "26 October 2022",
   "approvedRules": {
     "complete": 17,
     "partial": 0,
@@ -11,8 +11,8 @@
     "untested": 0
   },
   "proposedRules": {
-    "complete": 16,
-    "partial": 7,
+    "complete": 15,
+    "partial": 8,
     "minimal": 8,
     "inconsistent": 4,
     "untested": 39
@@ -6455,9 +6455,9 @@
         "reported": []
       },
       "coverage": {
-        "covered": 4,
+        "covered": 2,
         "untested": 0,
-        "cantTell": 4,
+        "cantTell": 6,
         "testCaseTotal": 8
       },
       "testCaseResults": [
@@ -6471,7 +6471,7 @@
             {
               "procedureName": "no-autoplay-audio",
               "outcomes": [
-                "passed"
+                "cantTell"
               ]
             }
           ]
@@ -6486,7 +6486,7 @@
             {
               "procedureName": "no-autoplay-audio",
               "outcomes": [
-                "passed"
+                "cantTell"
               ]
             }
           ]
@@ -10723,7 +10723,7 @@
       "procedureNames": [
         "object-alt"
       ],
-      "consistency": "complete",
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -10734,7 +10734,7 @@
         ]
       },
       "coverage": {
-        "covered": 18,
+        "covered": 17,
         "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 18
@@ -10870,7 +10870,7 @@
             {
               "procedureName": "object-alt",
               "outcomes": [
-                "failed"
+                "inapplicable"
               ]
             }
           ]
