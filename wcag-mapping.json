@@ -26,6 +26,15 @@
       "proposed": false
     },
     {
+      "title": "Element with aria-hidden has no content in sequential focus navigation",
+      "permalink": "/standards-guidelines/act/rules/6cfa84/",
+      "successCriteria": [
+        "name-role-value"
+      ],
+      "wcagTechniques": [],
+      "proposed": false
+    },
+    {
       "title": "Element with lang attribute has valid language tag",
       "permalink": "/standards-guidelines/act/rules/de46e4/",
       "successCriteria": [
@@ -143,6 +152,15 @@
       "proposed": false
     },
     {
+      "title": "Line height in style attributes is not !important",
+      "permalink": "/standards-guidelines/act/rules/78fd32/",
+      "successCriteria": [
+        "text-spacing"
+      ],
+      "wcagTechniques": [],
+      "proposed": false
+    },
+    {
       "title": "Link has non-empty accessible name",
       "permalink": "/standards-guidelines/act/rules/c487ae/",
       "successCriteria": [
@@ -153,6 +171,38 @@
       "wcagTechniques": [
         "G91"
       ],
+      "proposed": false
+    },
+    {
+      "title": "Meta element has no refresh delay",
+      "permalink": "/standards-guidelines/act/rules/bc659a/",
+      "successCriteria": [
+        "timing-adjustable",
+        "interruptions",
+        "change-on-request"
+      ],
+      "wcagTechniques": [
+        "G110",
+        "H76"
+      ],
+      "proposed": false
+    },
+    {
+      "title": "Meta viewport allows for zoom",
+      "permalink": "/standards-guidelines/act/rules/b4f0c3/",
+      "successCriteria": [
+        "resize-text"
+      ],
+      "wcagTechniques": [],
+      "proposed": false
+    },
+    {
+      "title": "Object element rendering non-text content has non-empty accessible name",
+      "permalink": "/standards-guidelines/act/rules/8fc3b6/",
+      "successCriteria": [
+        "non-text-content"
+      ],
+      "wcagTechniques": [],
       "proposed": false
     },
     {
@@ -413,15 +463,6 @@
       "proposed": true
     },
     {
-      "title": "Element with aria-hidden has no content in sequential focus navigation",
-      "permalink": "/standards-guidelines/act/rules/6cfa84/proposed/",
-      "successCriteria": [
-        "name-role-value"
-      ],
-      "wcagTechniques": [],
-      "proposed": true
-    },
-    {
       "title": "Element with role attribute has required states and properties",
       "permalink": "/standards-guidelines/act/rules/4e8ab6/proposed/",
       "successCriteria": [
@@ -603,15 +644,6 @@
       "proposed": true
     },
     {
-      "title": "Line height in style attributes is not !important",
-      "permalink": "/standards-guidelines/act/rules/78fd32/proposed/",
-      "successCriteria": [
-        "text-spacing"
-      ],
-      "wcagTechniques": [],
-      "proposed": true
-    },
-    {
       "title": "Link in context is descriptive",
       "permalink": "/standards-guidelines/act/rules/5effbb/proposed/",
       "successCriteria": [
@@ -659,20 +691,6 @@
       "proposed": true
     },
     {
-      "title": "Meta element has no refresh delay",
-      "permalink": "/standards-guidelines/act/rules/bc659a/proposed/",
-      "successCriteria": [
-        "timing-adjustable",
-        "interruptions",
-        "change-on-request"
-      ],
-      "wcagTechniques": [
-        "G110",
-        "H76"
-      ],
-      "proposed": true
-    },
-    {
       "title": "Meta element has no refresh delay (no exception)",
       "permalink": "/standards-guidelines/act/rules/bisz58/proposed/",
       "successCriteria": [
@@ -686,28 +704,10 @@
       "proposed": true
     },
     {
-      "title": "Meta viewport allows for zoom",
-      "permalink": "/standards-guidelines/act/rules/b4f0c3/proposed/",
-      "successCriteria": [
-        "resize-text"
-      ],
-      "wcagTechniques": [],
-      "proposed": true
-    },
-    {
       "title": "No keyboard shortcut uses only printable characters",
       "permalink": "/standards-guidelines/act/rules/ffbc54/proposed/",
       "successCriteria": [
         "character-key-shortcuts"
-      ],
-      "wcagTechniques": [],
-      "proposed": true
-    },
-    {
-      "title": "Object element rendering non-text content has non-empty accessible name",
-      "permalink": "/standards-guidelines/act/rules/8fc3b6/proposed/",
-      "successCriteria": [
-        "non-text-content"
       ],
       "wcagTechniques": [],
       "proposed": true
