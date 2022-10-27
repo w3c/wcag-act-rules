@@ -596,18 +596,54 @@
       "testCaseResults": []
     },
     {
-      "ruleId": "5f99a7",
-      "ruleName": "ARIA attribute is defined in WAI-ARIA",
-      "ruleApproved": false,
+      "ruleId": "6cfa84",
+      "ruleName": "Element with aria-hidden has no content in sequential focus navigation",
+      "ruleApproved": true,
       "procedureNames": [],
       "consistency": null,
       "coverage": null,
       "testCaseResults": []
     },
     {
-      "ruleId": "6cfa84",
-      "ruleName": "Element with aria-hidden has no content in sequential focus navigation",
+      "ruleId": "78fd32",
+      "ruleName": "Line height in style attributes is not !important",
       "ruleApproved": true,
+      "procedureNames": [],
+      "consistency": null,
+      "coverage": null,
+      "testCaseResults": []
+    },
+    {
+      "ruleId": "bc659a",
+      "ruleName": "Meta element has no refresh delay",
+      "ruleApproved": true,
+      "procedureNames": [],
+      "consistency": null,
+      "coverage": null,
+      "testCaseResults": []
+    },
+    {
+      "ruleId": "b4f0c3",
+      "ruleName": "Meta viewport allows for zoom",
+      "ruleApproved": true,
+      "procedureNames": [],
+      "consistency": null,
+      "coverage": null,
+      "testCaseResults": []
+    },
+    {
+      "ruleId": "8fc3b6",
+      "ruleName": "Object element rendering non-text content has non-empty accessible name",
+      "ruleApproved": true,
+      "procedureNames": [],
+      "consistency": null,
+      "coverage": null,
+      "testCaseResults": []
+    },
+    {
+      "ruleId": "5f99a7",
+      "ruleName": "ARIA attribute is defined in WAI-ARIA",
+      "ruleApproved": false,
       "procedureNames": [],
       "consistency": null,
       "coverage": null,
@@ -2859,15 +2895,6 @@
       "testCaseResults": []
     },
     {
-      "ruleId": "78fd32",
-      "ruleName": "Line height in style attributes is not !important",
-      "ruleApproved": true,
-      "procedureNames": [],
-      "consistency": null,
-      "coverage": null,
-      "testCaseResults": []
-    },
-    {
       "ruleId": "aizyf1",
       "ruleName": "Link is descriptive",
       "ruleApproved": false,
@@ -3050,15 +3077,6 @@
       ]
     },
     {
-      "ruleId": "bc659a",
-      "ruleName": "Meta element has no refresh delay",
-      "ruleApproved": true,
-      "procedureNames": [],
-      "consistency": null,
-      "coverage": null,
-      "testCaseResults": []
-    },
-    {
       "ruleId": "bisz58",
       "ruleName": "Meta element has no refresh delay (no exception)",
       "ruleApproved": false,
@@ -3068,27 +3086,9 @@
       "testCaseResults": []
     },
     {
-      "ruleId": "b4f0c3",
-      "ruleName": "Meta viewport allows for zoom",
-      "ruleApproved": true,
-      "procedureNames": [],
-      "consistency": null,
-      "coverage": null,
-      "testCaseResults": []
-    },
-    {
       "ruleId": "9bd38c",
       "ruleName": "Content has alternative for visual reference",
       "ruleApproved": false,
-      "procedureNames": [],
-      "consistency": null,
-      "coverage": null,
-      "testCaseResults": []
-    },
-    {
-      "ruleId": "8fc3b6",
-      "ruleName": "Object element rendering non-text content has non-empty accessible name",
-      "ruleApproved": true,
       "procedureNames": [],
       "consistency": null,
       "coverage": null,
