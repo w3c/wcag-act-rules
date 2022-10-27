@@ -8,14 +8,14 @@
     "partial": 0,
     "minimal": 0,
     "inconsistent": 1,
-    "untested": 14
+    "untested": 19
   },
   "proposedRules": {
     "complete": 7,
     "partial": 4,
     "minimal": 0,
     "inconsistent": 2,
-    "untested": 61
+    "untested": 56
   },
   "actRuleMapping": [
     {
@@ -607,7 +607,7 @@
     {
       "ruleId": "6cfa84",
       "ruleName": "Element with aria-hidden has no content in sequential focus navigation",
-      "ruleApproved": false,
+      "ruleApproved": true,
       "procedureNames": [],
       "consistency": null,
       "coverage": null,
@@ -2861,7 +2861,7 @@
     {
       "ruleId": "78fd32",
       "ruleName": "Line height in style attributes is not !important",
-      "ruleApproved": false,
+      "ruleApproved": true,
       "procedureNames": [],
       "consistency": null,
       "coverage": null,
@@ -3052,7 +3052,7 @@
     {
       "ruleId": "bc659a",
       "ruleName": "Meta element has no refresh delay",
-      "ruleApproved": false,
+      "ruleApproved": true,
       "procedureNames": [],
       "consistency": null,
       "coverage": null,
@@ -3070,7 +3070,7 @@
     {
       "ruleId": "b4f0c3",
       "ruleName": "Meta viewport allows for zoom",
-      "ruleApproved": false,
+      "ruleApproved": true,
       "procedureNames": [],
       "consistency": null,
       "coverage": null,
@@ -3088,7 +3088,7 @@
     {
       "ruleId": "8fc3b6",
       "ruleName": "Object element rendering non-text content has non-empty accessible name",
-      "ruleApproved": false,
+      "ruleApproved": true,
       "procedureNames": [],
       "consistency": null,
       "coverage": null,

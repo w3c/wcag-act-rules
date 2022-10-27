@@ -3,7 +3,7 @@
   "website": "https://www.w3.org/WAI/standards-guidelines/act/rules/",
   "license": "https://act-rules.github.io/pages/license/",
   "description": "Accessibility conformance testing rules for HTML",
-  "count": 1138,
+  "count": 1139,
   "testcases": [
     {
       "ruleId": "73f2c2",
@@ -6264,6 +6264,7 @@
     },
     {
       "ruleId": "6cfa84",
+      "approved": true,
       "ruleName": "Element with aria-hidden has no content in sequential focus navigation",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
@@ -6289,6 +6290,7 @@
     },
     {
       "ruleId": "6cfa84",
+      "approved": true,
       "ruleName": "Element with aria-hidden has no content in sequential focus navigation",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
@@ -6314,6 +6316,7 @@
     },
     {
       "ruleId": "6cfa84",
+      "approved": true,
       "ruleName": "Element with aria-hidden has no content in sequential focus navigation",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
@@ -6339,6 +6342,7 @@
     },
     {
       "ruleId": "6cfa84",
+      "approved": true,
       "ruleName": "Element with aria-hidden has no content in sequential focus navigation",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
@@ -6356,14 +6360,15 @@
         }
       },
       "expected": "passed",
-      "testcaseId": "36d83f2c0fe431eade9b158f1e548c2d6189d570",
+      "testcaseId": "d343bc6a2877b62d80153453c3781debc33e0b1d",
       "testcaseTitle": "Passed Example 4",
-      "relativePath": "testcases/6cfa84/36d83f2c0fe431eade9b158f1e548c2d6189d570.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/36d83f2c0fe431eade9b158f1e548c2d6189d570.html",
+      "relativePath": "testcases/6cfa84/d343bc6a2877b62d80153453c3781debc33e0b1d.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/d343bc6a2877b62d80153453c3781debc33e0b1d.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/6cfa84/proposed/"
     },
     {
       "ruleId": "6cfa84",
+      "approved": true,
       "ruleName": "Element with aria-hidden has no content in sequential focus navigation",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
@@ -6389,6 +6394,33 @@
     },
     {
       "ruleId": "6cfa84",
+      "approved": true,
+      "ruleName": "Element with aria-hidden has no content in sequential focus navigation",
+      "ruleAccessibilityRequirements": {
+        "wcag20:4.1.2": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "using-aria:fourth": {
+          "title": "Fourth rule of ARIA use",
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "2dcf10cb4314dd7964dd38c2afe7d399bfcbcfac",
+      "testcaseTitle": "Passed Example 6",
+      "relativePath": "testcases/6cfa84/2dcf10cb4314dd7964dd38c2afe7d399bfcbcfac.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/2dcf10cb4314dd7964dd38c2afe7d399bfcbcfac.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/6cfa84/proposed/"
+    },
+    {
+      "ruleId": "6cfa84",
+      "approved": true,
       "ruleName": "Element with aria-hidden has no content in sequential focus navigation",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
@@ -6414,6 +6446,7 @@
     },
     {
       "ruleId": "6cfa84",
+      "approved": true,
       "ruleName": "Element with aria-hidden has no content in sequential focus navigation",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
@@ -6439,6 +6472,7 @@
     },
     {
       "ruleId": "6cfa84",
+      "approved": true,
       "ruleName": "Element with aria-hidden has no content in sequential focus navigation",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
@@ -6464,6 +6498,7 @@
     },
     {
       "ruleId": "6cfa84",
+      "approved": true,
       "ruleName": "Element with aria-hidden has no content in sequential focus navigation",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
@@ -6489,6 +6524,7 @@
     },
     {
       "ruleId": "6cfa84",
+      "approved": true,
       "ruleName": "Element with aria-hidden has no content in sequential focus navigation",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
@@ -6514,6 +6550,7 @@
     },
     {
       "ruleId": "6cfa84",
+      "approved": true,
       "ruleName": "Element with aria-hidden has no content in sequential focus navigation",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
@@ -6531,14 +6568,15 @@
         }
       },
       "expected": "failed",
-      "testcaseId": "59dbb168e68fbb2e752910c43405fe33fb9f3f70",
+      "testcaseId": "9812d828fef2da32081f4c0acce0c58912f071cb",
       "testcaseTitle": "Failed Example 6",
-      "relativePath": "testcases/6cfa84/59dbb168e68fbb2e752910c43405fe33fb9f3f70.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/59dbb168e68fbb2e752910c43405fe33fb9f3f70.html",
+      "relativePath": "testcases/6cfa84/9812d828fef2da32081f4c0acce0c58912f071cb.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/9812d828fef2da32081f4c0acce0c58912f071cb.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/6cfa84/proposed/"
     },
     {
       "ruleId": "6cfa84",
+      "approved": true,
       "ruleName": "Element with aria-hidden has no content in sequential focus navigation",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
@@ -6564,6 +6602,7 @@
     },
     {
       "ruleId": "6cfa84",
+      "approved": true,
       "ruleName": "Element with aria-hidden has no content in sequential focus navigation",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
@@ -6589,6 +6628,7 @@
     },
     {
       "ruleId": "6cfa84",
+      "approved": true,
       "ruleName": "Element with aria-hidden has no content in sequential focus navigation",
       "ruleAccessibilityRequirements": {
         "wcag20:4.1.2": {
@@ -16889,6 +16929,7 @@
     },
     {
       "ruleId": "78fd32",
+      "approved": true,
       "ruleName": "Line height in style attributes is not !important",
       "ruleAccessibilityRequirements": {
         "wcag21:1.4.12": {
@@ -16907,6 +16948,7 @@
     },
     {
       "ruleId": "78fd32",
+      "approved": true,
       "ruleName": "Line height in style attributes is not !important",
       "ruleAccessibilityRequirements": {
         "wcag21:1.4.12": {
@@ -16925,6 +16967,7 @@
     },
     {
       "ruleId": "78fd32",
+      "approved": true,
       "ruleName": "Line height in style attributes is not !important",
       "ruleAccessibilityRequirements": {
         "wcag21:1.4.12": {
@@ -16943,6 +16986,7 @@
     },
     {
       "ruleId": "78fd32",
+      "approved": true,
       "ruleName": "Line height in style attributes is not !important",
       "ruleAccessibilityRequirements": {
         "wcag21:1.4.12": {
@@ -16961,6 +17005,7 @@
     },
     {
       "ruleId": "78fd32",
+      "approved": true,
       "ruleName": "Line height in style attributes is not !important",
       "ruleAccessibilityRequirements": {
         "wcag21:1.4.12": {
@@ -16979,6 +17024,7 @@
     },
     {
       "ruleId": "78fd32",
+      "approved": true,
       "ruleName": "Line height in style attributes is not !important",
       "ruleAccessibilityRequirements": {
         "wcag21:1.4.12": {
@@ -16997,6 +17043,7 @@
     },
     {
       "ruleId": "78fd32",
+      "approved": true,
       "ruleName": "Line height in style attributes is not !important",
       "ruleAccessibilityRequirements": {
         "wcag21:1.4.12": {
@@ -17015,6 +17062,7 @@
     },
     {
       "ruleId": "78fd32",
+      "approved": true,
       "ruleName": "Line height in style attributes is not !important",
       "ruleAccessibilityRequirements": {
         "wcag21:1.4.12": {
@@ -17033,6 +17081,7 @@
     },
     {
       "ruleId": "78fd32",
+      "approved": true,
       "ruleName": "Line height in style attributes is not !important",
       "ruleAccessibilityRequirements": {
         "wcag21:1.4.12": {
@@ -17051,6 +17100,7 @@
     },
     {
       "ruleId": "78fd32",
+      "approved": true,
       "ruleName": "Line height in style attributes is not !important",
       "ruleAccessibilityRequirements": {
         "wcag21:1.4.12": {
@@ -17069,6 +17119,7 @@
     },
     {
       "ruleId": "78fd32",
+      "approved": true,
       "ruleName": "Line height in style attributes is not !important",
       "ruleAccessibilityRequirements": {
         "wcag21:1.4.12": {
@@ -17087,6 +17138,7 @@
     },
     {
       "ruleId": "78fd32",
+      "approved": true,
       "ruleName": "Line height in style attributes is not !important",
       "ruleAccessibilityRequirements": {
         "wcag21:1.4.12": {
@@ -17105,6 +17157,7 @@
     },
     {
       "ruleId": "78fd32",
+      "approved": true,
       "ruleName": "Line height in style attributes is not !important",
       "ruleAccessibilityRequirements": {
         "wcag21:1.4.12": {
@@ -17123,6 +17176,7 @@
     },
     {
       "ruleId": "78fd32",
+      "approved": true,
       "ruleName": "Line height in style attributes is not !important",
       "ruleAccessibilityRequirements": {
         "wcag21:1.4.12": {
@@ -17141,6 +17195,7 @@
     },
     {
       "ruleId": "78fd32",
+      "approved": true,
       "ruleName": "Line height in style attributes is not !important",
       "ruleAccessibilityRequirements": {
         "wcag21:1.4.12": {
@@ -17159,6 +17214,7 @@
     },
     {
       "ruleId": "78fd32",
+      "approved": true,
       "ruleName": "Line height in style attributes is not !important",
       "ruleAccessibilityRequirements": {
         "wcag21:1.4.12": {
@@ -17177,6 +17233,7 @@
     },
     {
       "ruleId": "78fd32",
+      "approved": true,
       "ruleName": "Line height in style attributes is not !important",
       "ruleAccessibilityRequirements": {
         "wcag21:1.4.12": {
@@ -17195,6 +17252,7 @@
     },
     {
       "ruleId": "78fd32",
+      "approved": true,
       "ruleName": "Line height in style attributes is not !important",
       "ruleAccessibilityRequirements": {
         "wcag21:1.4.12": {
@@ -17213,6 +17271,7 @@
     },
     {
       "ruleId": "78fd32",
+      "approved": true,
       "ruleName": "Line height in style attributes is not !important",
       "ruleAccessibilityRequirements": {
         "wcag21:1.4.12": {
@@ -17231,6 +17290,7 @@
     },
     {
       "ruleId": "78fd32",
+      "approved": true,
       "ruleName": "Line height in style attributes is not !important",
       "ruleAccessibilityRequirements": {
         "wcag21:1.4.12": {
@@ -17249,6 +17309,7 @@
     },
     {
       "ruleId": "78fd32",
+      "approved": true,
       "ruleName": "Line height in style attributes is not !important",
       "ruleAccessibilityRequirements": {
         "wcag21:1.4.12": {
@@ -18930,6 +18991,7 @@
     },
     {
       "ruleId": "bc659a",
+      "approved": true,
       "ruleName": "Meta element has no refresh delay",
       "ruleAccessibilityRequirements": {
         "wcag20:2.2.1": {
@@ -18974,6 +19036,7 @@
     },
     {
       "ruleId": "bc659a",
+      "approved": true,
       "ruleName": "Meta element has no refresh delay",
       "ruleAccessibilityRequirements": {
         "wcag20:2.2.1": {
@@ -19018,6 +19081,7 @@
     },
     {
       "ruleId": "bc659a",
+      "approved": true,
       "ruleName": "Meta element has no refresh delay",
       "ruleAccessibilityRequirements": {
         "wcag20:2.2.1": {
@@ -19062,6 +19126,7 @@
     },
     {
       "ruleId": "bc659a",
+      "approved": true,
       "ruleName": "Meta element has no refresh delay",
       "ruleAccessibilityRequirements": {
         "wcag20:2.2.1": {
@@ -19106,6 +19171,7 @@
     },
     {
       "ruleId": "bc659a",
+      "approved": true,
       "ruleName": "Meta element has no refresh delay",
       "ruleAccessibilityRequirements": {
         "wcag20:2.2.1": {
@@ -19150,6 +19216,7 @@
     },
     {
       "ruleId": "bc659a",
+      "approved": true,
       "ruleName": "Meta element has no refresh delay",
       "ruleAccessibilityRequirements": {
         "wcag20:2.2.1": {
@@ -19194,6 +19261,7 @@
     },
     {
       "ruleId": "bc659a",
+      "approved": true,
       "ruleName": "Meta element has no refresh delay",
       "ruleAccessibilityRequirements": {
         "wcag20:2.2.1": {
@@ -19238,6 +19306,7 @@
     },
     {
       "ruleId": "bc659a",
+      "approved": true,
       "ruleName": "Meta element has no refresh delay",
       "ruleAccessibilityRequirements": {
         "wcag20:2.2.1": {
@@ -19282,6 +19351,7 @@
     },
     {
       "ruleId": "bc659a",
+      "approved": true,
       "ruleName": "Meta element has no refresh delay",
       "ruleAccessibilityRequirements": {
         "wcag20:2.2.1": {
@@ -19326,6 +19396,7 @@
     },
     {
       "ruleId": "bc659a",
+      "approved": true,
       "ruleName": "Meta element has no refresh delay",
       "ruleAccessibilityRequirements": {
         "wcag20:2.2.1": {
@@ -19370,6 +19441,7 @@
     },
     {
       "ruleId": "bc659a",
+      "approved": true,
       "ruleName": "Meta element has no refresh delay",
       "ruleAccessibilityRequirements": {
         "wcag20:2.2.1": {
@@ -19414,6 +19486,7 @@
     },
     {
       "ruleId": "bc659a",
+      "approved": true,
       "ruleName": "Meta element has no refresh delay",
       "ruleAccessibilityRequirements": {
         "wcag20:2.2.1": {
@@ -19458,6 +19531,7 @@
     },
     {
       "ruleId": "bc659a",
+      "approved": true,
       "ruleName": "Meta element has no refresh delay",
       "ruleAccessibilityRequirements": {
         "wcag20:2.2.1": {
@@ -19502,6 +19576,7 @@
     },
     {
       "ruleId": "bc659a",
+      "approved": true,
       "ruleName": "Meta element has no refresh delay",
       "ruleAccessibilityRequirements": {
         "wcag20:2.2.1": {
@@ -19546,6 +19621,7 @@
     },
     {
       "ruleId": "bc659a",
+      "approved": true,
       "ruleName": "Meta element has no refresh delay",
       "ruleAccessibilityRequirements": {
         "wcag20:2.2.1": {
@@ -20094,6 +20170,7 @@
     },
     {
       "ruleId": "b4f0c3",
+      "approved": true,
       "ruleName": "Meta viewport allows for zoom",
       "ruleAccessibilityRequirements": {
         "wcag20:1.4.4": {
@@ -20112,6 +20189,7 @@
     },
     {
       "ruleId": "b4f0c3",
+      "approved": true,
       "ruleName": "Meta viewport allows for zoom",
       "ruleAccessibilityRequirements": {
         "wcag20:1.4.4": {
@@ -20130,6 +20208,7 @@
     },
     {
       "ruleId": "b4f0c3",
+      "approved": true,
       "ruleName": "Meta viewport allows for zoom",
       "ruleAccessibilityRequirements": {
         "wcag20:1.4.4": {
@@ -20148,6 +20227,7 @@
     },
     {
       "ruleId": "b4f0c3",
+      "approved": true,
       "ruleName": "Meta viewport allows for zoom",
       "ruleAccessibilityRequirements": {
         "wcag20:1.4.4": {
@@ -20166,6 +20246,7 @@
     },
     {
       "ruleId": "b4f0c3",
+      "approved": true,
       "ruleName": "Meta viewport allows for zoom",
       "ruleAccessibilityRequirements": {
         "wcag20:1.4.4": {
@@ -20184,6 +20265,7 @@
     },
     {
       "ruleId": "b4f0c3",
+      "approved": true,
       "ruleName": "Meta viewport allows for zoom",
       "ruleAccessibilityRequirements": {
         "wcag20:1.4.4": {
@@ -20202,6 +20284,7 @@
     },
     {
       "ruleId": "b4f0c3",
+      "approved": true,
       "ruleName": "Meta viewport allows for zoom",
       "ruleAccessibilityRequirements": {
         "wcag20:1.4.4": {
@@ -20220,6 +20303,7 @@
     },
     {
       "ruleId": "b4f0c3",
+      "approved": true,
       "ruleName": "Meta viewport allows for zoom",
       "ruleAccessibilityRequirements": {
         "wcag20:1.4.4": {
@@ -20238,6 +20322,7 @@
     },
     {
       "ruleId": "b4f0c3",
+      "approved": true,
       "ruleName": "Meta viewport allows for zoom",
       "ruleAccessibilityRequirements": {
         "wcag20:1.4.4": {
@@ -20256,6 +20341,7 @@
     },
     {
       "ruleId": "b4f0c3",
+      "approved": true,
       "ruleName": "Meta viewport allows for zoom",
       "ruleAccessibilityRequirements": {
         "wcag20:1.4.4": {
@@ -20274,6 +20360,7 @@
     },
     {
       "ruleId": "b4f0c3",
+      "approved": true,
       "ruleName": "Meta viewport allows for zoom",
       "ruleAccessibilityRequirements": {
         "wcag20:1.4.4": {
@@ -20796,6 +20883,7 @@
     },
     {
       "ruleId": "8fc3b6",
+      "approved": true,
       "ruleName": "Object element rendering non-text content has non-empty accessible name",
       "ruleAccessibilityRequirements": {
         "wcag20:1.1.1": {
@@ -20814,6 +20902,7 @@
     },
     {
       "ruleId": "8fc3b6",
+      "approved": true,
       "ruleName": "Object element rendering non-text content has non-empty accessible name",
       "ruleAccessibilityRequirements": {
         "wcag20:1.1.1": {
@@ -20832,6 +20921,7 @@
     },
     {
       "ruleId": "8fc3b6",
+      "approved": true,
       "ruleName": "Object element rendering non-text content has non-empty accessible name",
       "ruleAccessibilityRequirements": {
         "wcag20:1.1.1": {
@@ -20850,6 +20940,7 @@
     },
     {
       "ruleId": "8fc3b6",
+      "approved": true,
       "ruleName": "Object element rendering non-text content has non-empty accessible name",
       "ruleAccessibilityRequirements": {
         "wcag20:1.1.1": {
@@ -20868,6 +20959,7 @@
     },
     {
       "ruleId": "8fc3b6",
+      "approved": true,
       "ruleName": "Object element rendering non-text content has non-empty accessible name",
       "ruleAccessibilityRequirements": {
         "wcag20:1.1.1": {
@@ -20886,6 +20978,7 @@
     },
     {
       "ruleId": "8fc3b6",
+      "approved": true,
       "ruleName": "Object element rendering non-text content has non-empty accessible name",
       "ruleAccessibilityRequirements": {
         "wcag20:1.1.1": {
@@ -20904,6 +20997,7 @@
     },
     {
       "ruleId": "8fc3b6",
+      "approved": true,
       "ruleName": "Object element rendering non-text content has non-empty accessible name",
       "ruleAccessibilityRequirements": {
         "wcag20:1.1.1": {
@@ -20922,6 +21016,7 @@
     },
     {
       "ruleId": "8fc3b6",
+      "approved": true,
       "ruleName": "Object element rendering non-text content has non-empty accessible name",
       "ruleAccessibilityRequirements": {
         "wcag20:1.1.1": {
@@ -20940,6 +21035,7 @@
     },
     {
       "ruleId": "8fc3b6",
+      "approved": true,
       "ruleName": "Object element rendering non-text content has non-empty accessible name",
       "ruleAccessibilityRequirements": {
         "wcag20:1.1.1": {
@@ -20958,6 +21054,7 @@
     },
     {
       "ruleId": "8fc3b6",
+      "approved": true,
       "ruleName": "Object element rendering non-text content has non-empty accessible name",
       "ruleAccessibilityRequirements": {
         "wcag20:1.1.1": {
@@ -20976,6 +21073,7 @@
     },
     {
       "ruleId": "8fc3b6",
+      "approved": true,
       "ruleName": "Object element rendering non-text content has non-empty accessible name",
       "ruleAccessibilityRequirements": {
         "wcag20:1.1.1": {
@@ -20994,6 +21092,7 @@
     },
     {
       "ruleId": "8fc3b6",
+      "approved": true,
       "ruleName": "Object element rendering non-text content has non-empty accessible name",
       "ruleAccessibilityRequirements": {
         "wcag20:1.1.1": {
@@ -21012,6 +21111,7 @@
     },
     {
       "ruleId": "8fc3b6",
+      "approved": true,
       "ruleName": "Object element rendering non-text content has non-empty accessible name",
       "ruleAccessibilityRequirements": {
         "wcag20:1.1.1": {
@@ -21030,6 +21130,7 @@
     },
     {
       "ruleId": "8fc3b6",
+      "approved": true,
       "ruleName": "Object element rendering non-text content has non-empty accessible name",
       "ruleAccessibilityRequirements": {
         "wcag20:1.1.1": {
@@ -21048,6 +21149,7 @@
     },
     {
       "ruleId": "8fc3b6",
+      "approved": true,
       "ruleName": "Object element rendering non-text content has non-empty accessible name",
       "ruleAccessibilityRequirements": {
         "wcag20:1.1.1": {
@@ -21066,6 +21168,7 @@
     },
     {
       "ruleId": "8fc3b6",
+      "approved": true,
       "ruleName": "Object element rendering non-text content has non-empty accessible name",
       "ruleAccessibilityRequirements": {
         "wcag20:1.1.1": {
@@ -21084,6 +21187,7 @@
     },
     {
       "ruleId": "8fc3b6",
+      "approved": true,
       "ruleName": "Object element rendering non-text content has non-empty accessible name",
       "ruleAccessibilityRequirements": {
         "wcag20:1.1.1": {
@@ -21102,6 +21206,7 @@
     },
     {
       "ruleId": "8fc3b6",
+      "approved": true,
       "ruleName": "Object element rendering non-text content has non-empty accessible name",
       "ruleAccessibilityRequirements": {
         "wcag20:1.1.1": {

@@ -1,25 +1,25 @@
 ---
 title: "Element with aria-hidden has no content in sequential focus navigation"
-permalink: /standards-guidelines/act/rules/6cfa84/proposed/
-ref: /standards-guidelines/act/rules/6cfa84/proposed/
+permalink: /standards-guidelines/act/rules/6cfa84/
+ref: /standards-guidelines/act/rules/6cfa84/
 lang: en
 github:
   repository: w3c/wcag-act-rules
-  path: content/rules/6cfa84/proposed.md
+  path: content/rules/6cfa84/index.md
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 6cfa84</p>
-  <p><strong>Date:</strong> Updated 21 October 2022</p>
+  <p><strong>Date:</strong> Updated 25 October 2022</p>
   <p><strong>Authors:</strong> <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
-  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
-proposed: true
+  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It was approved and published by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
+proposed: false
 rule_meta:
   id: 6cfa84
   name: "Element with aria-hidden has no content in sequential focus navigation"
   rule_type: atomic
   description: |
     This rule checks that elements with an `aria-hidden` attribute do not contain elements that are part of the sequential focus navigation and focusable.
-  last_modified: 21 October 2022
+  last_modified: 25 October 2022
   scs_tested:
     - handle: Name, Role, Value
       num: 4.1.2
