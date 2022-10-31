@@ -82,6 +82,14 @@
 
     `RuleId1:ReasonCode1,ReasonCode2|RuleId2:ReasonCode3,ReasonCode4`.
 
+- name: ember-template-lint
+  version: 4.16.1
+  vendor: ember-template-lint
+  uniqueKey: ember-template-lint
+  type: Automated tool
+  standards: []
+  jsonReport: https://raw.githubusercontent.com/act-rules/act-shared-reports/main/earl/ember-template-lint.json
+
 - name: QualWeb
   homepage: http://qualweb.di.fc.ul.pt/evaluator/
   version: 3.0.0
