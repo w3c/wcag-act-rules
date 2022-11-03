@@ -6729,7 +6729,7 @@
     },
     {
       "ruleId": "akn7bn",
-      "ruleName": "Iframe with negative tabindex has no interactive elements",
+      "ruleName": "Iframe with interactive elements is not excluded from tab-order",
       "ruleApproved": false,
       "procedureNames": [],
       "consistency": null,
