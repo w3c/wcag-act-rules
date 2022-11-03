@@ -1,5 +1,5 @@
 ---
-title: "Iframe with negative tabindex has no interactive elements"
+title: "Iframe with interactive elements is not excluded from tab-order"
 permalink: /standards-guidelines/act/rules/akn7bn/proposed/
 ref: /standards-guidelines/act/rules/akn7bn/proposed/
 lang: en
@@ -9,17 +9,17 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> akn7bn</p>
-  <p><strong>Date:</strong> Updated 11 July 2022</p>
+  <p><strong>Date:</strong> Updated 3 November 2022</p>
   <p><strong>Authors:</strong> <a href="https://www.linkedin.com/in/brianbors/">Brian Bors</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
 rule_meta:
   id: akn7bn
-  name: "Iframe with negative tabindex has no interactive elements"
+  name: "Iframe with interactive elements is not excluded from tab-order"
   rule_type: atomic
   description: |
-    This rule checks that `iframe` elements with a negative `tabindex` attribute value contain no interactive elements.
-  last_modified: 11 July 2022
+    This rule checks that `iframe` elements which contain an interactive (tabbable) element are not excluded from sequential focus navigation.
+  last_modified: 3 November 2022
   scs_tested:
     - handle: Keyboard
       num: 2.1.1
@@ -28,13 +28,16 @@ rule_meta:
 
 ## Applicability
 
-This rule applies to any non-focusable `iframe` element that has [focusable][] content.
+This rule applies to any `iframe` element that [contains](#akn7bn:contain) at least one element for which all the following are true:
+
+- the element is [visible][]; and
+- the element is part of the [sequential focus navigation order][] of the `iframe`'s [document][].
+
+An element is <dfn id="akn7bn:contain">contained</dfn> in a [nested browsing context][] if its [owner document][] is the [container document][] of the [nested browsing context][].
 
 ## Expectation
 
-For each test target, the [nested browsing context][] does not [contain](#akn7bn:contain) elements that are [visible][] and part of the [sequential focus navigation][].
-
-An element is <dfn id="akn7bn:contain">contained</dfn> in a [nested browsing context][] if its [owner document][] is the [container document][] of the [nested browsing context][].
+The test target does not have a negative number as a `tabindex` [attribute value][].
 
 ## Assumptions
 
@@ -46,7 +49,9 @@ There are no major accessibility support issues known for this rule.
 
 ## Background
 
-By setting the `tabindex` [attribute value][] of an `iframe` element to `-1` or some other negative number, it becomes impossible to move the focus into the [browsing context][nested browsing context] of the `iframe` element. Even though its content is still included in the [sequential focus navigation][], there is no way to move the focus to any of the items in the `iframe` using standard keyboard navigation.
+Setting the `tabindex` attribute of an `iframe` element to a negative value effectively excludes its content from the tab-order of the page. A `button` may be in the tab-order of an `iframe`, but if the `iframe` itself is taken from the tab-order, the `button` is effectively keyboard inaccessible.
+
+Each document, including documents inside an `iframe`, has its own [sequential focus navigation order][]. These focus orders are combined to get the page's global tab-order (called the [flattened tabindex-ordered focus navigation scope][]). For an `iframe` with a negative tabindex, its sequential focus navigation order is not included in the page's global tab-order (as a consequence for the rules to build the [tabindex-ordered focus navigation scope][]).
 
 ### Bibliography
 
@@ -95,42 +100,22 @@ The following aspects are required in using this rule.
 
 #### Passed Example 1
 
-<a class="example-link" title="Passed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/akn7bn/c90de6661c91b4449b96fb31e487c70d1e3350df.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/akn7bn/1e3939d9f8e0f78f9c564ec6feb12cc5635c0acb.html">Open in a new tab</a>
 
-This `iframe` element contains no content that is part of [sequential focus navigation][].
+This `iframe` element does not have a `tabindex` [attribute value][] that is a negative number
 
 ```html
-<iframe tabindex="-1" srcdoc="<h1>Hello world</h1>"></iframe>
+<iframe srcdoc="<a href='/'>Home</a>"></iframe>
 ```
 
 #### Passed Example 2
 
-<a class="example-link" title="Passed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/akn7bn/aa153f6799d28563054ce66bcf7dfcedf9b75288.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/akn7bn/a16be608639d0976b9d044360695d853384f56f0.html">Open in a new tab</a>
 
-This `iframe` element contains a link that is not part of [sequential focus navigation][] because of its `tabindex`.
-
-```html
-<iframe tabindex="-1" srcdoc="<a href='/' tabindex='-1'>Home</a>"></iframe>
-```
-
-#### Passed Example 3
-
-<a class="example-link" title="Passed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/akn7bn/63cd20ec8886f4c59ff54f406a0e5933847bce75.html">Open in a new tab</a>
-
-This `iframe` element contains no [visible][] content because of the small size of the iframe.
+This `iframe` element does not have a `tabindex` [attribute value][] that is a negative number
 
 ```html
-<iframe tabindex="-1" width="1" height="1" srcdoc="<a href='/'>Home</a>"></iframe>
-```
-
-#### Passed Example 4
-
-<a class="example-link" title="Passed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/akn7bn/033e04cced5973596d9aa724feacb027d23b4c53.html">Open in a new tab</a>
-
-This `iframe` element contains no [visible][] content because the iframe is hidden.
-
-```html
-<iframe tabindex="-1" hidden srcdoc="<a href='/'>Home</a>"></iframe>
+<iframe tabindex="0" srcdoc="<a href='/'>Home</a>"></iframe>
 ```
 
 ### Failed
@@ -139,7 +124,7 @@ This `iframe` element contains no [visible][] content because the iframe is hidd
 
 <a class="example-link" title="Failed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/akn7bn/62673162e22ee1e95e962522b1d1c3b549dbfc49.html">Open in a new tab</a>
 
-This `iframe` element has a link that is part of [sequential focus navigation][].
+This `iframe` element contains a [visible][] link that is part of its [sequential focus navigation order][], and has a negative `tabindex`.
 
 ```html
 <iframe tabindex="-1" srcdoc="<a href='/'>Home</a>"></iframe>
@@ -149,12 +134,42 @@ This `iframe` element has a link that is part of [sequential focus navigation][]
 
 #### Inapplicable Example 1
 
-<a class="example-link" title="Inapplicable Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/akn7bn/a16be608639d0976b9d044360695d853384f56f0.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/akn7bn/c90de6661c91b4449b96fb31e487c70d1e3350df.html">Open in a new tab</a>
 
-This `iframe` element does not have a `tabindex` [attribute value][] that is a negative number
+This `iframe` element contains no content that is part of its [sequential focus navigation order][].
 
 ```html
-<iframe tabindex="0" srcdoc="<a href='/'>Home</a>"></iframe>
+<iframe tabindex="-1" srcdoc="<h1>Hello world</h1>"></iframe>
+```
+
+#### Inapplicable Example 2
+
+<a class="example-link" title="Inapplicable Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/akn7bn/033e04cced5973596d9aa724feacb027d23b4c53.html">Open in a new tab</a>
+
+This `iframe` element contains no [visible][] content because the iframe is hidden.
+
+```html
+<iframe tabindex="-1" hidden srcdoc="<a href='/'>Home</a>"></iframe>
+```
+
+#### Inapplicable Example 3
+
+<a class="example-link" title="Inapplicable Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/akn7bn/63cd20ec8886f4c59ff54f406a0e5933847bce75.html">Open in a new tab</a>
+
+This `iframe` element contains no [visible][] content because of the small size of the iframe.
+
+```html
+<iframe tabindex="-1" width="1" height="1" srcdoc="<a href='/'>Home</a>"></iframe>
+```
+
+#### Inapplicable Example 4
+
+<a class="example-link" title="Inapplicable Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/akn7bn/aa153f6799d28563054ce66bcf7dfcedf9b75288.html">Open in a new tab</a>
+
+This `iframe` element contains a link that is not part of its [sequential focus navigation order][] because of its own `tabindex`.
+
+```html
+<iframe tabindex="-1" srcdoc="<a href='/' tabindex='-1'>Home</a>"></iframe>
 ```
 
 ## Glossary
@@ -175,20 +190,6 @@ Some notable case of attribute value, among others:
 This list is not exhaustive, and only serves as an illustration for some of the most common cases.
 
 The <dfn id="attribute-value:idl">attribute value</dfn> of an [IDL attribute][] is the value returned on getting it. Note that when an [IDL attribute][] [reflects][reflect] a content attribute, they have the same attribute value.
-
-### Focusable {#focusable}
-
-An element is _focusable_ if one or both of the following are true:
-
-- the element is part of [sequential focus navigation][]; or
-- the element has a [tabindex value][] that is not null.
-
-**Exception**: Elements that lose focus during a period of up to 1 second after gaining focus, without the user interacting with the page the element is on, are not considered _focusable_.
-
-Notes:
-
-- The 1 second time span is an arbitrary limit which is not included in WCAG. Given that scripts can manage the focus state of elements, testing the focusability of an element consistently would be impractical without a time limit.
-- The [tabindex value][] of an element is the value of the [tabindex attribute][] parsed using the [rules for parsing integers][]. For the [tabindex value][] to be different from null, it needs to be [parsed][rules for parsing integers] without errors.
 
 ### Outcome {#outcome}
 
@@ -216,19 +217,18 @@ For more details, see [examples of visible](https://act-rules.github.io/pages/ex
 [boolean attributes]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attributes 'HTML Specification of Boolean Attribute'
 [comma separated]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#comma-separated-tokens 'HTML Specification of Comma Separated Tokens'
 [container document]: https://html.spec.whatwg.org/#bc-container-document 'HTML browsing context container document, 2020/12/18'
+[document]: https://html.spec.whatwg.org/multipage/dom.html#document 'HTML definition of document'
 [enumerated attributes]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#enumerated-attribute 'HTML Specification of Enumerated Attribute'
-[focusable]: #focusable 'Definition of focusable'
+[flattened tabindex-ordered focus navigation scope]: https://html.spec.whatwg.org/multipage/interaction.html#flattened-tabindex-ordered-focus-navigation-scope 'HTML - Living Standard, 2022/07/08'
 [html aam]: https://www.w3.org/TR/html-aam-1.0/#html-attribute-state-and-property-mappings 'Specification of HTML attributes value mapping to ARIA states and properties'
 [idl attribute]: https://heycam.github.io/webidl/#idl-attributes "Definition of Web IDL Attribute (Editor's Draft)"
 [nested browsing context]: https://html.spec.whatwg.org/#nested-browsing-context 'HTML nested browsing context, 2020/12/18'
 [numbers]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#numbers 'HTML Specification of Number Parsing'
 [owner document]: https://dom.spec.whatwg.org/#dom-node-ownerdocument 'DOM node owner document property, 2020/12/18'
 [reflect]: https://html.spec.whatwg.org/multipage/common-dom-interfaces.html#reflecting-content-attributes-in-idl-attributes 'HTML specification of Reflecting Content Attributes in IDL Attributes'
-[rules for parsing integers]: https://html.spec.whatwg.org/#rules-for-parsing-integers
 [sc211]: https://www.w3.org/TR/WCAG21/#keyboard 'WCAG 2.1 Success criterion 2.1.1 Keyboard'
-[sequential focus navigation]: https://html.spec.whatwg.org/#sequential-focus-navigation 'HTML sequential focus navigation, 2020/12/18'
+[sequential focus navigation order]: https://html.spec.whatwg.org/multipage/#sequential-focus-navigation 'HTML sequential focus navigation, 2020/12/18'
 [space separated]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#space-separated-tokens 'HTML Specification of Space Separated Tokens'
-[tabindex attribute]: https://html.spec.whatwg.org/#attr-tabindex
-[tabindex value]: https://html.spec.whatwg.org/#tabindex-value
+[tabindex-ordered focus navigation scope]: https://html.spec.whatwg.org/multipage/interaction.html#tabindex-ordered-focus-navigation-scope
 [visible]: #visible 'Definition of visible'
 [wai-aria specification]: https://www.w3.org/TR/wai-aria-1.1/#propcharacteristic_value 'WAI-ARIA Specification of States and Properties Value'

@@ -612,7 +612,7 @@
       "proposed": true
     },
     {
-      "title": "Iframe with negative tabindex has no interactive elements",
+      "title": "Iframe with interactive elements is not excluded from tab-order",
       "permalink": "/standards-guidelines/act/rules/akn7bn/proposed/",
       "successCriteria": [
         "keyboard"
