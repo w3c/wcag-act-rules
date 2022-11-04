@@ -20367,55 +20367,7 @@
           "earl:TestSubject",
           "sch:WebPage"
         ],
-        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/akn7bn/c90de6661c91b4449b96fb31e487c70d1e3350df.html"
-      },
-      "assertedBy": "https://github.com/dequelabs/axe-core/releases/tag/4.4.3-canary.73cbc0f",
-      "result": {
-        "@type": "TestResult",
-        "outcome": "earl:passed"
-      },
-      "test": {
-        "@type": "TestCase",
-        "title": "frame-focusable-content",
-        "@id": "https://dequeuniversity.com/rules/axe/4.4/frame-focusable-content?application=axeAPI",
-        "isPartOf": [
-          "WCAG2:keyboard"
-        ]
-      }
-    },
-    {
-      "@type": "Assertion",
-      "mode": "earl:automatic",
-      "subject": {
-        "@type": [
-          "earl:TestSubject",
-          "sch:WebPage"
-        ],
-        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/akn7bn/aa153f6799d28563054ce66bcf7dfcedf9b75288.html"
-      },
-      "assertedBy": "https://github.com/dequelabs/axe-core/releases/tag/4.4.3-canary.73cbc0f",
-      "result": {
-        "@type": "TestResult",
-        "outcome": "earl:passed"
-      },
-      "test": {
-        "@type": "TestCase",
-        "title": "frame-focusable-content",
-        "@id": "https://dequeuniversity.com/rules/axe/4.4/frame-focusable-content?application=axeAPI",
-        "isPartOf": [
-          "WCAG2:keyboard"
-        ]
-      }
-    },
-    {
-      "@type": "Assertion",
-      "mode": "earl:automatic",
-      "subject": {
-        "@type": [
-          "earl:TestSubject",
-          "sch:WebPage"
-        ],
-        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/akn7bn/63cd20ec8886f4c59ff54f406a0e5933847bce75.html"
+        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/akn7bn/1e3939d9f8e0f78f9c564ec6feb12cc5635c0acb.html"
       },
       "assertedBy": "https://github.com/dequelabs/axe-core/releases/tag/4.4.3-canary.73cbc0f",
       "result": {
@@ -20439,7 +20391,7 @@
           "earl:TestSubject",
           "sch:WebPage"
         ],
-        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/akn7bn/033e04cced5973596d9aa724feacb027d23b4c53.html"
+        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/akn7bn/a16be608639d0976b9d044360695d853384f56f0.html"
       },
       "assertedBy": "https://github.com/dequelabs/axe-core/releases/tag/4.4.3-canary.73cbc0f",
       "result": {
@@ -20487,12 +20439,84 @@
           "earl:TestSubject",
           "sch:WebPage"
         ],
-        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/akn7bn/a16be608639d0976b9d044360695d853384f56f0.html"
+        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/akn7bn/c90de6661c91b4449b96fb31e487c70d1e3350df.html"
+      },
+      "assertedBy": "https://github.com/dequelabs/axe-core/releases/tag/4.4.3-canary.73cbc0f",
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:passed"
+      },
+      "test": {
+        "@type": "TestCase",
+        "title": "frame-focusable-content",
+        "@id": "https://dequeuniversity.com/rules/axe/4.4/frame-focusable-content?application=axeAPI",
+        "isPartOf": [
+          "WCAG2:keyboard"
+        ]
+      }
+    },
+    {
+      "@type": "Assertion",
+      "mode": "earl:automatic",
+      "subject": {
+        "@type": [
+          "earl:TestSubject",
+          "sch:WebPage"
+        ],
+        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/akn7bn/033e04cced5973596d9aa724feacb027d23b4c53.html"
       },
       "assertedBy": "https://github.com/dequelabs/axe-core/releases/tag/4.4.3-canary.73cbc0f",
       "result": {
         "@type": "TestResult",
         "outcome": "earl:inapplicable"
+      },
+      "test": {
+        "@type": "TestCase",
+        "title": "frame-focusable-content",
+        "@id": "https://dequeuniversity.com/rules/axe/4.4/frame-focusable-content?application=axeAPI",
+        "isPartOf": [
+          "WCAG2:keyboard"
+        ]
+      }
+    },
+    {
+      "@type": "Assertion",
+      "mode": "earl:automatic",
+      "subject": {
+        "@type": [
+          "earl:TestSubject",
+          "sch:WebPage"
+        ],
+        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/akn7bn/63cd20ec8886f4c59ff54f406a0e5933847bce75.html"
+      },
+      "assertedBy": "https://github.com/dequelabs/axe-core/releases/tag/4.4.3-canary.73cbc0f",
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:inapplicable"
+      },
+      "test": {
+        "@type": "TestCase",
+        "title": "frame-focusable-content",
+        "@id": "https://dequeuniversity.com/rules/axe/4.4/frame-focusable-content?application=axeAPI",
+        "isPartOf": [
+          "WCAG2:keyboard"
+        ]
+      }
+    },
+    {
+      "@type": "Assertion",
+      "mode": "earl:automatic",
+      "subject": {
+        "@type": [
+          "earl:TestSubject",
+          "sch:WebPage"
+        ],
+        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/akn7bn/aa153f6799d28563054ce66bcf7dfcedf9b75288.html"
+      },
+      "assertedBy": "https://github.com/dequelabs/axe-core/releases/tag/4.4.3-canary.73cbc0f",
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:passed"
       },
       "test": {
         "@type": "TestCase",
@@ -20527,7 +20551,7 @@
           "earl:TestSubject",
           "sch:WebPage"
         ],
-        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/qt1vmo/09899111e5bcb25a5bb64000f63dc926eb653b7d.html"
+        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/qt1vmo/5d314574052bf16676abb0e9a67e48dd70116c2e.html"
       },
       "assertedBy": "https://github.com/dequelabs/axe-core/releases/tag/4.4.3-canary.73cbc0f",
       "result": {
@@ -24743,7 +24767,31 @@
           "earl:TestSubject",
           "sch:WebPage"
         ],
-        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/oj04fd/abc8e8ea2752ecd3cd92f18b457bde3738f5d23f.html"
+        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/0ssw9k/dd5ca5252dacc6d5e0fabb30e92633b284336832.html"
+      },
+      "assertedBy": "https://github.com/dequelabs/axe-core/releases/tag/4.4.3-canary.73cbc0f",
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:inapplicable"
+      },
+      "test": {
+        "@type": "TestCase",
+        "title": "scrollable-region-focusable",
+        "@id": "https://dequeuniversity.com/rules/axe/4.4/scrollable-region-focusable?application=axeAPI",
+        "isPartOf": [
+          "WCAG2:keyboard"
+        ]
+      }
+    },
+    {
+      "@type": "Assertion",
+      "mode": "earl:automatic",
+      "subject": {
+        "@type": [
+          "earl:TestSubject",
+          "sch:WebPage"
+        ],
+        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/oj04fd/52be6331dc0978990a8b806a9a4a84bf738a43e1.html"
       },
       "assertedBy": "https://github.com/dequelabs/axe-core/releases/tag/4.4.3-canary.73cbc0f",
       "result": {
@@ -24759,7 +24807,7 @@
           "earl:TestSubject",
           "sch:WebPage"
         ],
-        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/oj04fd/5ac8e9939b5aff9f07e5c2e3b295dd15d814ae30.html"
+        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/oj04fd/95cf4fdf26825900e91a30eaf6c2235516db79f9.html"
       },
       "assertedBy": "https://github.com/dequelabs/axe-core/releases/tag/4.4.3-canary.73cbc0f",
       "result": {
@@ -24775,7 +24823,7 @@
           "earl:TestSubject",
           "sch:WebPage"
         ],
-        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/oj04fd/4efb68e27fc5c5bec5349331d80f58879254e94e.html"
+        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/oj04fd/b44aa294df6f0de62f11f6ae732087d92c90b448.html"
       },
       "assertedBy": "https://github.com/dequelabs/axe-core/releases/tag/4.4.3-canary.73cbc0f",
       "result": {
@@ -24807,7 +24855,7 @@
           "earl:TestSubject",
           "sch:WebPage"
         ],
-        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/oj04fd/70adae819928e7235dc91d7d0b4a6b195a08ad5a.html"
+        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/oj04fd/f1c9efb4c8d1b5f7870c693bce2e6ca046dd768d.html"
       },
       "assertedBy": "https://github.com/dequelabs/axe-core/releases/tag/4.4.3-canary.73cbc0f",
       "result": {
@@ -24839,39 +24887,7 @@
           "earl:TestSubject",
           "sch:WebPage"
         ],
-        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/oj04fd/52be6331dc0978990a8b806a9a4a84bf738a43e1.html"
-      },
-      "assertedBy": "https://github.com/dequelabs/axe-core/releases/tag/4.4.3-canary.73cbc0f",
-      "result": {
-        "@type": "TestResult",
-        "outcome": "earl:untested"
-      }
-    },
-    {
-      "@type": "Assertion",
-      "mode": "earl:automatic",
-      "subject": {
-        "@type": [
-          "earl:TestSubject",
-          "sch:WebPage"
-        ],
         "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/oj04fd/b12f1f45eef29c30197ca3bda79d793cd90eeadd.html"
-      },
-      "assertedBy": "https://github.com/dequelabs/axe-core/releases/tag/4.4.3-canary.73cbc0f",
-      "result": {
-        "@type": "TestResult",
-        "outcome": "earl:untested"
-      }
-    },
-    {
-      "@type": "Assertion",
-      "mode": "earl:automatic",
-      "subject": {
-        "@type": [
-          "earl:TestSubject",
-          "sch:WebPage"
-        ],
-        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/oj04fd/ef877d377b4814d96d90274011e7304e14c59245.html"
       },
       "assertedBy": "https://github.com/dequelabs/axe-core/releases/tag/4.4.3-canary.73cbc0f",
       "result": {
