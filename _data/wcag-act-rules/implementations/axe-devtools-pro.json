@@ -11,8 +11,8 @@
     "untested": 0
   },
   "proposedRules": {
-    "complete": 13,
-    "partial": 10,
+    "complete": 12,
+    "partial": 11,
     "minimal": 8,
     "inconsistent": 9,
     "untested": 29
@@ -10323,7 +10323,7 @@
       "procedureNames": [
         "title-not-meaningful (structure)"
       ],
-      "consistency": "complete",
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -10335,9 +10335,9 @@
       },
       "coverage": {
         "covered": 5,
-        "untested": 0,
+        "untested": 1,
         "cantTell": 1,
-        "testCaseTotal": 6
+        "testCaseTotal": 7
       },
       "testCaseResults": [
         {
@@ -10411,6 +10411,21 @@
               "procedureName": "title-not-meaningful (structure)",
               "outcomes": [
                 "failed"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "4c72b3b9b06bf1edc3c959070731b65871ee0c8f",
+          "testCaseName": "Failed Example 3",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/c4a8a4/4c72b3b9b06bf1edc3c959070731b65871ee0c8f.html",
+          "testCaseApproved": false,
+          "expected": "failed",
+          "procedureResults": [
+            {
+              "procedureName": "title-not-meaningful (structure)",
+              "outcomes": [
+                "untested"
               ]
             }
           ]
