@@ -2,12 +2,12 @@
   "vendor": "LASIGE, Faculdade de Ciências da Universidade de Lisboa",
   "name": "QualWeb",
   "version": "3.0.0",
-  "lastModified": "26 October 2022",
+  "lastModified": "8 November 2022",
   "approvedRules": {
     "complete": 13,
-    "partial": 6,
+    "partial": 5,
     "minimal": 0,
-    "inconsistent": 3,
+    "inconsistent": 4,
     "untested": 0
   },
   "proposedRules": {
@@ -4124,7 +4124,7 @@
       "procedureNames": [
         "Element with `aria-hidden` has no focusable content"
       ],
-      "consistency": "partial",
+      "consistency": null,
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -4135,8 +4135,8 @@
         ]
       },
       "coverage": {
-        "covered": 12,
-        "untested": 3,
+        "covered": 14,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 15
       },
@@ -4196,7 +4196,7 @@
             {
               "procedureName": "Element with `aria-hidden` has no focusable content",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -4226,7 +4226,7 @@
             {
               "procedureName": "Element with `aria-hidden` has no focusable content",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -4316,7 +4316,7 @@
             {
               "procedureName": "Element with `aria-hidden` has no focusable content",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -12330,8 +12330,8 @@
         "reported": []
       },
       "coverage": {
-        "covered": 3,
-        "untested": 3,
+        "covered": 5,
+        "untested": 0,
         "cantTell": 1,
         "testCaseTotal": 7
       },
@@ -12361,7 +12361,7 @@
             {
               "procedureName": "Element in sequential focus order has visible focus",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -12376,7 +12376,7 @@
             {
               "procedureName": "Element in sequential focus order has visible focus",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -12406,7 +12406,7 @@
             {
               "procedureName": "Element in sequential focus order has visible focus",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
