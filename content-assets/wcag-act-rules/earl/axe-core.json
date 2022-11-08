@@ -18503,6 +18503,22 @@
           "earl:TestSubject",
           "sch:WebPage"
         ],
+        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/c4a8a4/4c72b3b9b06bf1edc3c959070731b65871ee0c8f.html"
+      },
+      "assertedBy": "https://github.com/dequelabs/axe-core/releases/tag/4.4.3-canary.73cbc0f",
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:untested"
+      }
+    },
+    {
+      "@type": "Assertion",
+      "mode": "earl:automatic",
+      "subject": {
+        "@type": [
+          "earl:TestSubject",
+          "sch:WebPage"
+        ],
         "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/c4a8a4/85469fd266d3e8706f551dcd65261709311123d0.svg"
       },
       "assertedBy": "https://github.com/dequelabs/axe-core/releases/tag/4.4.3-canary.73cbc0f",
@@ -24744,30 +24760,6 @@
           "sch:WebPage"
         ],
         "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/0ssw9k/8f9b5bf5fc8345b8e7aa016621fb5dee6c13c8f2.html"
-      },
-      "assertedBy": "https://github.com/dequelabs/axe-core/releases/tag/4.4.3-canary.73cbc0f",
-      "result": {
-        "@type": "TestResult",
-        "outcome": "earl:inapplicable"
-      },
-      "test": {
-        "@type": "TestCase",
-        "title": "scrollable-region-focusable",
-        "@id": "https://dequeuniversity.com/rules/axe/4.4/scrollable-region-focusable?application=axeAPI",
-        "isPartOf": [
-          "WCAG2:keyboard"
-        ]
-      }
-    },
-    {
-      "@type": "Assertion",
-      "mode": "earl:automatic",
-      "subject": {
-        "@type": [
-          "earl:TestSubject",
-          "sch:WebPage"
-        ],
-        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/0ssw9k/dd5ca5252dacc6d5e0fabb30e92633b284336832.html"
       },
       "assertedBy": "https://github.com/dequelabs/axe-core/releases/tag/4.4.3-canary.73cbc0f",
       "result": {
