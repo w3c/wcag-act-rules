@@ -2,13 +2,13 @@
   "vendor": "IBM Accessibility",
   "name": "Equal Access Accessibility Checker",
   "version": "3.1.36",
-  "lastModified": "14 October 2022",
+  "lastModified": "9 November 2022",
   "approvedRules": {
     "complete": 12,
     "partial": 4,
     "minimal": 0,
-    "inconsistent": 2,
-    "untested": 4
+    "inconsistent": 3,
+    "untested": 3
   },
   "proposedRules": {
     "complete": 3,
@@ -23,7 +23,7 @@
       "ruleName": "`autocomplete` attribute has valid value",
       "ruleApproved": true,
       "procedureNames": [
-        "WCAG21_Input_Autocomplete:Pass_0,Fail_1"
+        "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_attribute_incorrect"
       ],
       "consistency": null,
       "accessibilityRequirements": {
@@ -50,7 +50,7 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "WCAG21_Input_Autocomplete:Pass_0,Fail_1",
+              "procedureName": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_attribute_incorrect",
               "outcomes": [
                 "passed"
               ]
@@ -65,7 +65,7 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "WCAG21_Input_Autocomplete:Pass_0,Fail_1",
+              "procedureName": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_attribute_incorrect",
               "outcomes": [
                 "passed"
               ]
@@ -80,7 +80,7 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "WCAG21_Input_Autocomplete:Pass_0,Fail_1",
+              "procedureName": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_attribute_incorrect",
               "outcomes": [
                 "passed"
               ]
@@ -95,7 +95,7 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "WCAG21_Input_Autocomplete:Pass_0,Fail_1",
+              "procedureName": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_attribute_incorrect",
               "outcomes": [
                 "passed"
               ]
@@ -110,7 +110,7 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "WCAG21_Input_Autocomplete:Pass_0,Fail_1",
+              "procedureName": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_attribute_incorrect",
               "outcomes": [
                 "passed"
               ]
@@ -125,7 +125,7 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "WCAG21_Input_Autocomplete:Pass_0,Fail_1",
+              "procedureName": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_attribute_incorrect",
               "outcomes": [
                 "passed"
               ]
@@ -140,7 +140,7 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "WCAG21_Input_Autocomplete:Pass_0,Fail_1",
+              "procedureName": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_attribute_incorrect",
               "outcomes": [
                 "passed"
               ]
@@ -155,7 +155,7 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "WCAG21_Input_Autocomplete:Pass_0,Fail_1",
+              "procedureName": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_attribute_incorrect",
               "outcomes": [
                 "failed"
               ]
@@ -170,7 +170,7 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "WCAG21_Input_Autocomplete:Pass_0,Fail_1",
+              "procedureName": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_attribute_incorrect",
               "outcomes": [
                 "failed"
               ]
@@ -185,7 +185,7 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "WCAG21_Input_Autocomplete:Pass_0,Fail_1",
+              "procedureName": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_attribute_incorrect",
               "outcomes": [
                 "failed"
               ]
@@ -200,7 +200,7 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "WCAG21_Input_Autocomplete:Pass_0,Fail_1",
+              "procedureName": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_attribute_incorrect",
               "outcomes": [
                 "failed"
               ]
@@ -215,7 +215,7 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "WCAG21_Input_Autocomplete:Pass_0,Fail_1",
+              "procedureName": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_attribute_incorrect",
               "outcomes": [
                 "failed"
               ]
@@ -230,7 +230,7 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "WCAG21_Input_Autocomplete:Pass_0,Fail_1",
+              "procedureName": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_attribute_incorrect",
               "outcomes": [
                 "failed"
               ]
@@ -245,7 +245,7 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "WCAG21_Input_Autocomplete:Pass_0,Fail_1",
+              "procedureName": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_attribute_incorrect",
               "outcomes": [
                 "inapplicable"
               ]
@@ -260,7 +260,7 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "WCAG21_Input_Autocomplete:Pass_0,Fail_1",
+              "procedureName": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_attribute_incorrect",
               "outcomes": [
                 "inapplicable"
               ]
@@ -275,7 +275,7 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "WCAG21_Input_Autocomplete:Pass_0,Fail_1",
+              "procedureName": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_attribute_incorrect",
               "outcomes": [
                 "inapplicable"
               ]
@@ -290,7 +290,7 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "WCAG21_Input_Autocomplete:Pass_0,Fail_1",
+              "procedureName": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_attribute_incorrect",
               "outcomes": [
                 "inapplicable"
               ]
@@ -305,7 +305,7 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "WCAG21_Input_Autocomplete:Pass_0,Fail_1",
+              "procedureName": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_attribute_incorrect",
               "outcomes": [
                 "inapplicable"
               ]
@@ -320,7 +320,7 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "WCAG21_Input_Autocomplete:Pass_0,Fail_1",
+              "procedureName": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_attribute_incorrect",
               "outcomes": [
                 "inapplicable"
               ]
@@ -335,7 +335,7 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "WCAG21_Input_Autocomplete:Pass_0,Fail_1",
+              "procedureName": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_attribute_incorrect",
               "outcomes": [
                 "passed"
               ]
@@ -940,10 +940,175 @@
       "ruleId": "46ca7f",
       "ruleName": "Element marked as decorative is not exposed",
       "ruleApproved": true,
-      "procedureNames": [],
-      "consistency": null,
-      "coverage": null,
-      "testCaseResults": []
+      "procedureNames": [
+        "aria_attribute_allowed:Pass,Fail_invalid_role_attr"
+      ],
+      "consistency": "partial",
+      "accessibilityRequirements": {
+        "correct": false,
+        "expected": [],
+        "reported": [
+          "WCAG2:name-role-value"
+        ]
+      },
+      "coverage": {
+        "covered": 9,
+        "untested": 0,
+        "cantTell": 0,
+        "testCaseTotal": 10
+      },
+      "testCaseResults": [
+        {
+          "testcaseId": "e5b8fa7ab66409e7b52b335a8b6aebe11fd78635",
+          "testCaseName": "Passed Example 1",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/46ca7f/e5b8fa7ab66409e7b52b335a8b6aebe11fd78635.html",
+          "testCaseApproved": true,
+          "expected": "passed",
+          "procedureResults": [
+            {
+              "procedureName": "aria_attribute_allowed:Pass,Fail_invalid_role_attr",
+              "outcomes": [
+                "inapplicable"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "b40e6ce081099b8bf0f76a43f4c27f12df342ddd",
+          "testCaseName": "Passed Example 2",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/46ca7f/b40e6ce081099b8bf0f76a43f4c27f12df342ddd.html",
+          "testCaseApproved": true,
+          "expected": "passed",
+          "procedureResults": [
+            {
+              "procedureName": "aria_attribute_allowed:Pass,Fail_invalid_role_attr",
+              "outcomes": [
+                "passed"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "6f8e6014c133635fecac02e1087a666c5014ae5f",
+          "testCaseName": "Passed Example 3",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/46ca7f/6f8e6014c133635fecac02e1087a666c5014ae5f.html",
+          "testCaseApproved": true,
+          "expected": "passed",
+          "procedureResults": [
+            {
+              "procedureName": "aria_attribute_allowed:Pass,Fail_invalid_role_attr",
+              "outcomes": [
+                "inapplicable"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "eb5983ff8bb0f85c891d48f96106337446797d8f",
+          "testCaseName": "Passed Example 4",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/46ca7f/eb5983ff8bb0f85c891d48f96106337446797d8f.html",
+          "testCaseApproved": true,
+          "expected": "passed",
+          "procedureResults": [
+            {
+              "procedureName": "aria_attribute_allowed:Pass,Fail_invalid_role_attr",
+              "outcomes": [
+                "passed"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "9c51e8f0568ab3401375114dd0eded2eddfe231a",
+          "testCaseName": "Passed Example 5",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/46ca7f/9c51e8f0568ab3401375114dd0eded2eddfe231a.html",
+          "testCaseApproved": true,
+          "expected": "passed",
+          "procedureResults": [
+            {
+              "procedureName": "aria_attribute_allowed:Pass,Fail_invalid_role_attr",
+              "outcomes": [
+                "inapplicable"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "6687821a71b53e0e1764e895900a6bad46412b5c",
+          "testCaseName": "Passed Example 6",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/46ca7f/6687821a71b53e0e1764e895900a6bad46412b5c.html",
+          "testCaseApproved": true,
+          "expected": "passed",
+          "procedureResults": [
+            {
+              "procedureName": "aria_attribute_allowed:Pass,Fail_invalid_role_attr",
+              "outcomes": [
+                "inapplicable"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "e136a03c52c01c1b190c7372d83463f3c6502de9",
+          "testCaseName": "Failed Example 1",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/46ca7f/e136a03c52c01c1b190c7372d83463f3c6502de9.html",
+          "testCaseApproved": true,
+          "expected": "failed",
+          "procedureResults": [
+            {
+              "procedureName": "aria_attribute_allowed:Pass,Fail_invalid_role_attr",
+              "outcomes": [
+                "failed"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "96c1f58088f1e32c965f38ddc50d4b88f6a0f022",
+          "testCaseName": "Failed Example 2",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/46ca7f/96c1f58088f1e32c965f38ddc50d4b88f6a0f022.html",
+          "testCaseApproved": true,
+          "expected": "failed",
+          "procedureResults": [
+            {
+              "procedureName": "aria_attribute_allowed:Pass,Fail_invalid_role_attr",
+              "outcomes": [
+                "inapplicable"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "b4329d21bd80d961408bf066a70998417234f200",
+          "testCaseName": "Failed Example 3",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/46ca7f/b4329d21bd80d961408bf066a70998417234f200.html",
+          "testCaseApproved": true,
+          "expected": "failed",
+          "procedureResults": [
+            {
+              "procedureName": "aria_attribute_allowed:Pass,Fail_invalid_role_attr",
+              "outcomes": [
+                "failed"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "a48478825dc5baf21cc79bfcfbe12ed462590f1e",
+          "testCaseName": "Inapplicable Example 1",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/46ca7f/a48478825dc5baf21cc79bfcfbe12ed462590f1e.html",
+          "testCaseApproved": true,
+          "expected": "inapplicable",
+          "procedureResults": [
+            {
+              "procedureName": "aria_attribute_allowed:Pass,Fail_invalid_role_attr",
+              "outcomes": [
+                "passed"
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "ruleId": "e086e5",
@@ -3735,7 +3900,7 @@
       "procedureNames": [
         "aria_hidden_focus_misuse:Pass_0,Fail_1"
       ],
-      "consistency": "partial",
+      "consistency": null,
       "accessibilityRequirements": {
         "correct": false,
         "expected": [
@@ -3747,8 +3912,8 @@
         ]
       },
       "coverage": {
-        "covered": 12,
-        "untested": 3,
+        "covered": 14,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 15
       },
@@ -3808,7 +3973,7 @@
             {
               "procedureName": "aria_hidden_focus_misuse:Pass_0,Fail_1",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -3838,7 +4003,7 @@
             {
               "procedureName": "aria_hidden_focus_misuse:Pass_0,Fail_1",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -3928,7 +4093,7 @@
             {
               "procedureName": "aria_hidden_focus_misuse:Pass_0,Fail_1",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
