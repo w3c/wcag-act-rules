@@ -11,8 +11,8 @@
     "untested": 19
   },
   "proposedRules": {
-    "complete": 7,
-    "partial": 5,
+    "complete": 6,
+    "partial": 6,
     "minimal": 0,
     "inconsistent": 4,
     "untested": 53
@@ -2140,7 +2140,7 @@
       "procedureNames": [
         "2.4.6-label-descriptive"
       ],
-      "consistency": "complete",
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -2151,8 +2151,8 @@
         ]
       },
       "coverage": {
-        "covered": 14,
-        "untested": 0,
+        "covered": 12,
+        "untested": 2,
         "cantTell": 0,
         "testCaseTotal": 14
       },
@@ -2293,16 +2293,16 @@
           ]
         },
         {
-          "testcaseId": "30fc1902581e0b197a544a40375bf7e732492756",
+          "testcaseId": "649946098faf6f36b8232ea74fc3bae3cf8997e7",
           "testCaseName": "Failed Example 4",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cc0f0a/30fc1902581e0b197a544a40375bf7e732492756.html",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cc0f0a/649946098faf6f36b8232ea74fc3bae3cf8997e7.html",
           "testCaseApproved": false,
           "expected": "failed",
           "procedureResults": [
             {
               "procedureName": "2.4.6-label-descriptive",
               "outcomes": [
-                "failed"
+                "untested"
               ]
             }
           ]
@@ -2353,16 +2353,16 @@
           ]
         },
         {
-          "testcaseId": "4f8c803095390503ea77bc55c4ed926f645271b6",
+          "testcaseId": "e3debccdca560d85dc223b86e9355db89b505350",
           "testCaseName": "Inapplicable Example 3",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cc0f0a/4f8c803095390503ea77bc55c4ed926f645271b6.html",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cc0f0a/e3debccdca560d85dc223b86e9355db89b505350.html",
           "testCaseApproved": false,
           "expected": "inapplicable",
           "procedureResults": [
             {
               "procedureName": "2.4.6-label-descriptive",
               "outcomes": [
-                "inapplicable"
+                "untested"
               ]
             }
           ]
