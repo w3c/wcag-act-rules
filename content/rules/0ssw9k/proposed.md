@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 0ssw9k</p>
-  <p><strong>Date:</strong> Updated 11 July 2022</p>
+  <p><strong>Date:</strong> Updated 11 November 2022</p>
   <p><strong>Authors:</strong> <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -19,7 +19,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that scrollable elements can be scrolled by keyboard
-  last_modified: 11 July 2022
+  last_modified: 11 November 2022
   scs_tested:
     - handle: Keyboard
       num: 2.1.1
@@ -31,10 +31,10 @@ rule_meta:
 
 ## Applicability
 
-This rule applies to any [HTML element][] that has [visible][] [children][] in the [flat tree][] for which at least one of the following is true:
+This rule applies to any [HTML element][] that has [visible][] [children][] in the [flat tree][], and for which at least one of the following is true:
 
-- It has a [horizontal scroll distance][scrollable] greater than the [computed][] [left][padding-left] or [right padding][padding-right] of the element; or
-- It has a [vertical scroll distance][scrollable] greater than the [computed][] [top][padding-top] or [bottom padding][padding-bottom] of the element
+- the element has a [horizontal scroll distance][scrollable] greater than the [computed][] [left][padding-left] or [right padding][padding-right] of the element; or
+- the element has a [vertical scroll distance][scrollable] greater than the [computed][] [top][padding-top] or [bottom padding][padding-bottom] of the element.
 
 ## Expectation
 
@@ -53,6 +53,8 @@ Some browsers restrict scrolling to the [content box](https://drafts.csswg.org/c
 ## Background
 
 To ensure there is some element from which arrow keys can be used to control the scroll position, focus must be on or in a scrollable region. If scripts are used to prevent the keyboard events from reaching the scrollable region, this could still cause a keyboard accessibility issue. This must be tested separately.
+
+This rule only applies to elements who scroll content in the same document. Elements such as iframes that embed other documents may also be scrollable, but for them it is the embedded document that scrolls, not the content in the same document. Such scenarios are tested separately with rules such as [Iframe with negative tabindex has no interactive elements](https://act-rules.github.io/rules/akn7bn).
 
 ### Bibliography
 
@@ -217,7 +219,7 @@ This [horizontally scrollable][scrollable] `section` element is not included in 
 
 <a class="example-link" title="Inapplicable Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/0ssw9k/bb9ee4cc0b4779228701779090f461ecb2947b82.html">Open in a new tab</a>
 
-This `section` element has a [computed][] [overflow][] of `visible`.
+This `section` element has a [computed][] [overflow][] of `visible`. Because of this its [scroll distance][scrollable] will be 0, regardless of the element's content.
 
 ```html
 <section style="height: 95px; width: 500px;">
@@ -313,7 +315,7 @@ This `section` element has a [horizontal scroll distance][scrollable] that is le
 
 <a class="example-link" title="Inapplicable Example 6" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/0ssw9k/dd5ca5252dacc6d5e0fabb30e92633b284336832.html">Open in a new tab</a>
 
-This `iframe` element is not a [scrollable element][scrollable].
+This `iframe` element is not a scrollable element, but instead contains a nested browsing context that is scrollable. These must be tested separately.
 
 ```html
 <iframe src="https://www.w3.org/TR/WCAG21/#abstract" width="500" height="200"></iframe>
