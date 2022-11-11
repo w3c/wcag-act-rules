@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 36b590</p>
-  <p><strong>Date:</strong> Updated 11 July 2022</p>
+  <p><strong>Date:</strong> Updated 11 November 2022</p>
   <p><strong>Authors:</strong> <a href="https://github.com/carlosapaduarte">Carlos Duarte</a>, <a href="https://github.com/joao-vicente">João Vicente</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -19,7 +19,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that text error messages provided when the user completes a form field with invalid values or using an invalid format, identify the cause of the error or how to fix the error.
-  last_modified: 11 July 2022
+  last_modified: 11 November 2022
   scs_tested:
     - handle: Error Identification
       num: 3.3.1
@@ -42,20 +42,9 @@ This rule applies to each [HTML element][] that has one of the following [semant
 - `switch` or
 - `textbox`.
 
-**Note**: The list of applicable [semantic roles][semantic role] is derived by taking all the [ARIA 1.1][] roles that:
-
-- inherit from the [abstract][] `input` or `select` role, and
-- do not have a [required context][] role that inherits from the [abstract][] `input` or `select` role.
-
 ## Expectation 1
 
 Each test target either has no [form field error indicators][form field error indicator], or at least one of the [form field error indicators][form field error indicator] allows the identification of the related test target, through [text][], or through [non-text content][], or through [presentation][].
-
-**Note**: This rule does not test [form field error indicators][form field error indicator] shown on a different page than that of the test target.
-
-**Note**: A single [form field error indicator][] can be related to multiple test targets. For example, an error message at the top of a form can list all the form fields that are required and are empty.
-
-**Note**: A single test target can be related to multiple [form field error indicators][form field error indicator]. For example, a text field can have a red border around it, an error icon adjacent to it, an error message below it, and another error message at the top of the form. All of these are error indicators for the same form field.
 
 ## Expectation 2
 
@@ -84,6 +73,17 @@ _There are currently no assumptions._
 _There are no major accessibility support issues known for this rule._
 
 ## Background
+
+The list of applicable [semantic roles][semantic role] is derived by taking all the [ARIA 1.2][] roles that:
+
+- inherit from the `input`, `menuitem` or `select` role, and
+- are form field controls (this notably excludes `menu`, `option` or `tree`).
+
+This rule does not test [form field error indicators][form field error indicator] shown on a different page than that of the test target.
+
+A single [form field error indicator][] can be related to multiple test targets. For example, an error message at the top of a form can list all the form fields that are required and are empty.
+
+A single test target can be related to multiple [form field error indicators][form field error indicator]. For example, a text field can have a red border around it, an error icon adjacent to it, an error message below it, and another error message at the top of the form. All of these are error indicators for the same form field.
 
 ### Bibliography
 
@@ -137,15 +137,17 @@ This `input` element has a [form field error indicator][] that identifies it (by
 
 #### Passed Example 2
 
-<a class="example-link" title="Passed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/8b3557dcf5062904594f91d781fde151d9fe3ef3.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/34b98eee090db39d3c703d360e3b8c49d9b8acfa.html">Open in a new tab</a>
 
-This multiple `input` elements share a [form field error indicator][] that identifies the elements unfilled (by referencing their labels), describes the cause of the error and how to resolve it.
+These multiple `input` elements share a [form field error indicator][] that identifies the elements unfilled (by referencing their labels), describes the cause of the error and how to resolve it.
 
 ```html
 <form>
-	<p id="error"><strong>
-		Name and color cannot be empty. Please complete all required fields.
-	</strong></p>
+	<p id="error">
+		<strong>
+			Name and color cannot be empty. Please complete all required fields.
+		</strong>
+	</p>
 	<fieldset>
 		<legend>Shipping</legend>
 		<label for="name">Name (required)</label>
@@ -411,18 +413,17 @@ For more details, see [examples of visible](https://act-rules.github.io/pages/ex
 
 The _WAI ARIA Specifications_ group both the WAI ARIA W3C Recommendation and ARIA modules, namely:
 
-- [Accessible Rich Internet Applications (WAI-ARIA) 1.1](https://www.w3.org/TR/wai-aria-1.1/)
+- [Accessible Rich Internet Applications (WAI-ARIA) 1.2](https://www.w3.org/TR/wai-aria-1.2/)
 - [WAI-ARIA Graphics Module 1.0](https://www.w3.org/TR/graphics-aria-1.0/)
 - [Digital Publishing WAI-ARIA Module 1.0](https://www.w3.org/TR/dpub-aria-1.0/)
 
 **Note:** depending on the type of content being evaluated, part of the specifications might be irrelevant and should be ignored.
 
-[abstract]: https://www.w3.org/TR/wai-aria/#abstract_roles
 [accessibility support base line]: https://www.w3.org/TR/WCAG-EM/#step1c 'Definition of accessibility support base line'
 [accessible description]: https://www.w3.org/TR/accname/#dfn-accessible-description
 [accessible name and description computation]: https://www.w3.org/TR/accname 'Accessible Name and Description Computation'
 [accessible name]: #accessible-name 'Definition of accessible name'
-[aria 1.1]: https://www.w3.org/TR/wai-aria-1.1/
+[aria 1.2]: https://www.w3.org/TR/wai-aria-1.2/
 [computed]: https://www.w3.org/TR/css-cascade/#computed-value 'CSS definition of computed value'
 [element]: https://dom.spec.whatwg.org/#element 'DOM element, 2021/05/31'
 [examples of accessible name]: https://act-rules.github.io/pages/examples/accessible-name/
@@ -443,7 +444,6 @@ The _WAI ARIA Specifications_ group both the WAI ARIA W3C Recommendation and ARI
 [presentational roles conflict resolution]: https://www.w3.org/TR/wai-aria-1.1/#conflict_resolution_presentation_none 'Presentational Roles Conflict Resolution'
 [programmatically hidden]: #programmatically-hidden 'Definition of Programmatically Hidden'
 [pure decoration]: https://www.w3.org/TR/WCAG21/#dfn-pure-decoration 'WCAG definition of Pure Decoration'
-[required context]: https://www.w3.org/TR/wai-aria/#scope
 [role attribute]: https://www.w3.org/TR/role-attribute/ 'Specification of the role attribute'
 [rules for parsing integers]: https://html.spec.whatwg.org/#rules-for-parsing-integers
 [semantic role]: #semantic-role 'Definition of semantic role'

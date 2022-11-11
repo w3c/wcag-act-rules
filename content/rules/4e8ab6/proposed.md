@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 4e8ab6</p>
-  <p><strong>Date:</strong> Updated 28 July 2022</p>
+  <p><strong>Date:</strong> Updated 11 November 2022</p>
   <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -19,7 +19,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that elements that have an explicit role also specify all required states and properties.
-  last_modified: 28 July 2022
+  last_modified: 11 November 2022
   scs_tested:
     - handle: Name, Role, Value
       num: 4.1.2
@@ -33,8 +33,6 @@ This rule applies to any [HTML or SVG element][] that is [included in the access
 ## Expectation
 
 For each test target, the [WAI-ARIA required states and properties][] for the role are set and not empty (`""`), unless the state or property has a default value listed under [WAI-ARIA implicit value for role][].
-
-**Note**: In [WAI-ARIA 1.2][], required states and properties will no longer have a default value.
 
 ## Assumptions
 
@@ -55,7 +53,7 @@ This rule is testing author built components, not user-agent built ones. Element
 ### Bibliography
 
 - [ARIA5: Using WAI-ARIA state and property attributes to expose the state of a user interface component](https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA5)
-- [WAI-ARIA required states and properties](https://www.w3.org/TR/wai-aria-1.1/#requiredState)
+- [WAI-ARIA required states and properties](https://www.w3.org/TR/wai-aria-1.2/#requiredState)
 - [RFC 3986](https://www.ietf.org/rfc/rfc3986.txt)
 
 ## Accessibility Requirements Mapping
@@ -85,6 +83,7 @@ This rule is testing author built components, not user-agent built ones. Element
       </ul></li>
     </ul>
   </details></li>
+  <li>Accessibility Requirements have no or unknown mapping.</li>
 </ul>
 
 ## Input Aspects
@@ -99,17 +98,30 @@ The following aspects are required in using this rule.
 
 #### Passed Example 1
 
-<a class="example-link" title="Passed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/e0706a8dbbd0e41f18134072656b5755b9a60cf1.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/eadf2a087a82575bcdf9f9158e698a576e9627c8.html">Open in a new tab</a>
 
-This `checkbox` has the required property `aria-checked`.
+This `heading` has the required `aria-level` property.
 
 ```html
-<div role="checkbox" aria-checked="false"></div>
+<div role="heading" aria-level="1">
+	My First Heading
+</div>
 ```
 
 #### Passed Example 2
 
-<a class="example-link" title="Passed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/11c5321c05c7b83b8707eee76574a94bd44033fe.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/f3c5ba4e097be5eee694024808a962972f037670.html">Open in a new tab</a>
+
+This `checkbox` has the required `aria-checked` property.
+
+```html
+<div role="checkbox" aria-checked="false"></div>
+<div id="label">Check me</div>
+```
+
+#### Passed Example 3
+
+<a class="example-link" title="Passed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/11c5321c05c7b83b8707eee76574a94bd44033fe.html">Open in a new tab</a>
 
 This `scrollbar` has the required properties `aria-controls` and `aria-valuenow`. `aria-valuemin` has a default value of 0 and `aria-valuemax` of 100.
 
@@ -118,38 +130,124 @@ This `scrollbar` has the required properties `aria-controls` and `aria-valuenow`
 <main id="content"></main>
 ```
 
-#### Passed Example 3
+#### Passed Example 4
 
-<a class="example-link" title="Passed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/501c9ede91621ccd0e643058e97992d99ea85cdd.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/3da0918b07e5736d55b4b405a22860d889931c15.html">Open in a new tab</a>
 
-This `combobox` has required properties `aria-controls` and `aria-expanded`. `aria-controls` references an element that does not exist, but may be added to the page when expanded.
+These `option` nodes do not need the required `aria-selected` property because it has a default value of `false`.
 
 ```html
-<div role="combobox" aria-controls="someElementId" aria-expanded="false"></div>
+<div id="label">Tags</div>
+<ul role="listbox" aria-labelledby="label">
+	<li role="option">Zebra</li>
+	<li role="option">Zoom</li>
+</ul>
+```
+
+#### Passed Example 5
+
+<a class="example-link" title="Passed Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/58a35afd2998bb6f9c670cb74fa7b550e80897b4.html">Open in a new tab</a>
+
+This `separator` is not a `widget` because it is not [focusable][]. The `separator` role only requires the `aria-valuenow` property when the element is focusable.
+
+```html
+<p>My first HTML</p>
+<div role="separator"></div>
+<p>My last HTML</p>
+```
+
+#### Passed Example 6
+
+<a class="example-link" title="Passed Example 6" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/352ec575eab8846938e2dced0802d0c2f5611344.html">Open in a new tab</a>
+
+This `combobox` has the required properties `aria-controls` and `aria-expanded`.
+
+```html
+<label for="tag_combo">Tag</label>
+<input type="text" id="tag_combo" role="combobox" aria-expanded="true" aria-controls="popup_listbox" />
+<ul role="listbox" id="popup_listbox">
+	<li role="option">Zebra</li>
+	<li role="option" id="selected_option">Zoom</li>
+</ul>
 ```
 
 ### Failed
 
 #### Failed Example 1
 
-<a class="example-link" title="Failed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/8d6361b78f88c707bb73a16701516976d0174a73.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/80462b7b8c490305d1de7e3136c0bcfaef31789f.html">Open in a new tab</a>
 
-This `combobox` is missing the required `aria-controls` property.
-
-**Note**: In [WAI-ARIA 1.2][], `combobox` will also require `aria-expanded`.
+This `heading` does not have the required `aria-level` property. Prior to [WAI-ARIA 1.2][] the `heading` role had an implicit default `aria-level` value of `2`. As of WAI-ARIA 1.2 this property must be explicitly set.
 
 ```html
-<div role="combobox" aria-expanded="true"></div>
+<div role="heading">
+	My First Heading
+</div>
 ```
 
 #### Failed Example 2
 
-<a class="example-link" title="Failed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/ee696108f2b51abb98969b435d2d72aa0a0b9b9f.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/907f05aed287f7407d5f95e7d39bfc1435ec0812.html">Open in a new tab</a>
 
-This `combobox` has an empty value for the required `aria-controls` property.
+This `switch` does not have the required `aria-checked` property. Prior to [WAI-ARIA 1.2][] the `switch` role had an implicit default `aria-checked` value of `false`. As of WAI-ARIA 1.2 this property must be explicitly set.
 
 ```html
-<div role="combobox" aria-controls="" aria-expanded="true"></div>
+<div role="switch">
+	Toggle me
+</div>
+```
+
+#### Failed Example 3
+
+<a class="example-link" title="Failed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/9bb1bdb3e95aa9b895fc4f32b0c2cfc917a07a72.html">Open in a new tab</a>
+
+This `checkbox` does not have the required property `aria-checked`. Prior to [WAI-ARIA 1.2][] the `checkbox` had an implicit default `aria-checked` value of `false`. As of WAI-ARIA 1.2 this property must be explicitly set.
+
+```html
+<div role="checkbox" aria-labelledby="label"></div>
+<div id="label">Check me</div>
+```
+
+#### Failed Example 4
+
+<a class="example-link" title="Failed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/43af91df529613e51429e18d43ce3df99b189c0f.html">Open in a new tab</a>
+
+This `separator` does not have the required `aria-valuenow` property. This is required because the `separator` is [focusable][], which makes it a `widget`.
+
+```html
+<p>My first HTML</p>
+<div role="separator" tabindex="0"></div>
+<p>My last HTML</p>
+```
+
+#### Failed Example 5
+
+<a class="example-link" title="Failed Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/7a1942d2d52f50c5df458877a0ee18dc5a22b0c3.html">Open in a new tab</a>
+
+This `combobox` does not have the required `aria-expanded` property. Prior to [WAI-ARIA 1.2][] the `combobox` had an implicit default `aria-expanded` value of `false`. As of WAI-ARIA 1.2 this property must be explicitly set.
+
+```html
+<label for="tag_combo">Tag</label>
+<input type="text" id="tag_combo" role="combobox" aria-controls="popup_listbox" />
+<ul role="listbox" id="popup_listbox">
+	<li role="option">Zebra</li>
+	<li role="option" id="selected_option">Zoom</li>
+</ul>
+```
+
+#### Failed Example 6
+
+<a class="example-link" title="Failed Example 6" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/30c746dee25dde33aef4bb61d5b054e2821e4564.html">Open in a new tab</a>
+
+This `combobox` uses `aria-owns` instead of using the required `aria-controls` property.
+
+```html
+<label for="tag_combo">Tag</label>
+<input type="text" id="tag_combo" role="combobox" aria-expanded="true" aria-owns="popup_listbox" />
+<ul role="listbox" id="popup_listbox">
+	<li role="option">Zebra</li>
+	<li role="option" id="selected_option">Zoom</li>
+</ul>
 ```
 
 ### Inapplicable
@@ -168,7 +266,7 @@ This `div` does not have a [semantic role](#semantic-role).
 
 <a class="example-link" title="Inapplicable Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/a384e79d59f806b9403f207a29223541048716ac.html">Open in a new tab</a>
 
-This `checkbox` has an [implicit semantic role](#implicit-role) that is identical to the [explicit semantic role](#explicit-role).
+This `checkbox` has an [implicit semantic role](#implicit-role) that is identical to the [explicit semantic role](#explicit-role). This allows native HTML `checked` attribute to apply.
 
 ```html
 <input type="checkbox" role="checkbox" />
@@ -278,7 +376,7 @@ This definition can be used in expressions such as "semantic `button`" meaning a
 
 The _WAI ARIA Specifications_ group both the WAI ARIA W3C Recommendation and ARIA modules, namely:
 
-- [Accessible Rich Internet Applications (WAI-ARIA) 1.1](https://www.w3.org/TR/wai-aria-1.1/)
+- [Accessible Rich Internet Applications (WAI-ARIA) 1.2](https://www.w3.org/TR/wai-aria-1.2/)
 - [WAI-ARIA Graphics Module 1.0](https://www.w3.org/TR/graphics-aria-1.0/)
 - [Digital Publishing WAI-ARIA Module 1.0](https://www.w3.org/TR/dpub-aria-1.0/)
 
@@ -291,7 +389,7 @@ The _WAI ARIA Specifications_ group both the WAI ARIA W3C Recommendation and ARI
 [explicit role]: #explicit-role 'Definition of Explicit Role'
 [explicit semantic role]: #explicit-role 'Definition of explicit semantic role'
 [flat tree]: https://drafts.csswg.org/css-scoping/#flat-tree 'Definition of flat tree'
-[focusable]: #focusable 'Definition of Focusable'
+[focusable]: #focusable
 [html namespaces]: https://infra.spec.whatwg.org/#namespaces 'HTML namespace, 2021/05/31'
 [html or svg element]: #namespaced-element
 [implicit role]: #implicit-role 'Definition of Implicit Role'
@@ -309,6 +407,6 @@ The _WAI ARIA Specifications_ group both the WAI ARIA W3C Recommendation and ARI
 [tabindex attribute]: https://html.spec.whatwg.org/#attr-tabindex
 [tabindex value]: https://html.spec.whatwg.org/#tabindex-value
 [wai-aria 1.2]: https://www.w3.org/TR/wai-aria-1.2/
-[wai-aria implicit value for role]: https://www.w3.org/TR/wai-aria-1.1/#implictValueForRole
-[wai-aria required states and properties]: https://www.w3.org/TR/wai-aria-1.1/#requiredState
+[wai-aria implicit value for role]: https://www.w3.org/TR/wai-aria-1.2/#implictValueForRole
+[wai-aria required states and properties]: https://www.w3.org/TR/wai-aria-1.2/#requiredState
 [wai-aria specifications]: #wai-aria-specifications 'Definition of WAI-ARIA specifications'

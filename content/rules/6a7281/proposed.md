@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 6a7281</p>
-  <p><strong>Date:</strong> Updated 11 July 2022</p>
+  <p><strong>Date:</strong> Updated 11 November 2022</p>
   <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -19,18 +19,18 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that each ARIA state or property has a valid value type.
-  last_modified: 11 July 2022
+  last_modified: 11 November 2022
 ---
 
 ## Applicability
 
-This rule applies to any [WAI-ARIA 1.1 state or property](https://www.w3.org/TR/wai-aria-1.1/#state_prop_def) that is not empty (""), and that is specified on an [HTML or SVG element][].
+This rule applies to any [WAI-ARIA 1.2 state or property](https://www.w3.org/TR/wai-aria-1.2/#state_prop_def) that is not empty (""), and that is specified on an [HTML or SVG element][].
 
 ## Expectation
 
-Each test target has a valid value according to its [WAI-ARIA 1.1 value type](https://www.w3.org/TR/wai-aria-1.1/#propcharacteristic_value).
+Each test target has a valid value according to its [WAI-ARIA 1.2 value type](https://www.w3.org/TR/wai-aria-1.2/#propcharacteristic_value).
 
-For value types `ID Reference` and `ID Reference List` for [WAI-ARIA required properties](https://www.w3.org/TR/wai-aria-1.1/#requiredState) at least one of the elements with the given ids exists in the same [document tree](https://dom.spec.whatwg.org/#document-trees) or in the same [shadow tree](https://dom.spec.whatwg.org/#shadow-trees) as the element that specifies the target attribute.
+For value types `ID Reference` and `ID Reference List` for [WAI-ARIA required properties](https://www.w3.org/TR/wai-aria-1.2/#requiredState) at least one of the elements with the given ids exists in the same [document tree](https://dom.spec.whatwg.org/#document-trees) or in the same [shadow tree](https://dom.spec.whatwg.org/#shadow-trees) as the element that specifies the target attribute.
 
 For value type `URI` the value matches the [generic URI syntax](https://www.ietf.org/rfc/rfc3986.txt).
 
@@ -44,7 +44,7 @@ Some user agents treat the value of `aria-*` attribute as case-sensitive (even w
 
 ## Background
 
-Only for [WAI-ARIA required properties](https://www.w3.org/TR/wai-aria-1.1/#requiredState) with value types `ID Reference` and `ID Reference List` is there a requirement that the elements with the given ids actually exists. For non-required properties, this is not a requirement. For example, the value of the `aria-errormessage` attribute on an `input` does not need to reference an `id` that exists within the same document, because an [HTML element](https://html.spec.whatwg.org/#htmlelement) with such and `id` may be created in response to an [event](https://dom.spec.whatwg.org/#event) that may or may not happen.
+Only for [WAI-ARIA required properties](https://www.w3.org/TR/wai-aria-1.2/#requiredState) with value types `ID Reference` and `ID Reference List` is there a requirement that the elements with the given ids actually exists. For non-required properties, this is not a requirement. For example, the value of the `aria-errormessage` attribute on an `input` does not need to reference an `id` that exists within the same document, because an [HTML element](https://html.spec.whatwg.org/#htmlelement) with such and `id` may be created in response to an [event](https://dom.spec.whatwg.org/#event) that may or may not happen.
 
 For value type `URI`, this rule does not require that the destination URI exists.
 
@@ -56,25 +56,14 @@ For value type `URI`, this rule does not require that the destination URI exists
 
 - [Understanding Success Criterion 4.1.2: Name, Role, Value](https://www.w3.org/WAI/WCAG21/Understanding/name-role-value.html)
 - [ARIA5: Using WAI-ARIA state and property attributes to expose the state of a user interface component](https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA5)
-- [WAI-ARIA 1.1, Definitions of States and Properties](https://www.w3.org/TR/wai-aria-1.1/#state_prop_def)
-- [WAI-ARIA 1.1, Characteristics of States and Properties, Value](https://www.w3.org/TR/wai-aria/#propcharacteristic_value)
+- [WAI-ARIA 1.2, Definitions of States and Properties](https://www.w3.org/TR/wai-aria-1.2/#state_prop_def)
+- [WAI-ARIA 1.2, Characteristics of States and Properties, Value](https://www.w3.org/TR/wai-aria-1.2/#propcharacteristic_value)
 - [Uniform Resource Identifier (URI): Generic Syntax (RFC 3986)](https://www.ietf.org/rfc/rfc3986.txt)
 
 ## Accessibility Requirements Mapping
 
 <ul class="act-requirements-list">
-  <li><details>
-    <summary><span>ARIA 1.1, 6.3 Values for States and Properties</span></summary>
-    <ul>
-      <li><a href="https://www.w3.org/TR/wai-aria-1.1/#state_prop_values">Learn more about ARIA 1.1, 6.3 Values for States and Properties</a></li>
-      <li><strong>Required for conformance</strong> to WAI-ARIA 1.1 author requirements.</li>
-      <li>Outcome mapping: <ul>
-        <li>Any <code>failed</code> outcomes: WAI-ARIA requirement is not satisfied</li>
-        <li>All <code>passed</code> outcomes: WAI-ARIA requirement is satisfied</li>
-        <li>An <code>inapplicable</code> outcome: WAI-ARIA requirement is satisfied</li>
-      </ul></li>
-    </ul>
-  </details></li>
+  <li>Accessibility Requirements have no or unknown mapping.</li>
 </ul>
 
 ## Input Aspects
@@ -175,12 +164,12 @@ The following aspects are required in using this rule.
 
 #### Passed Example 9
 
-<a class="example-link" title="Passed Example 9" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/bb42f0c8876f592a3cc7accec1c4b0ac6a632cf3.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 9" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/ed053b32aa2b4453ddc225e45f7f1931f62c7f49.html">Open in a new tab</a>
 
-`aria-dropeffect` property with valid token list value
+`aria-relevant` property with valid token list values
 
 ```html
-<div role="dialog" aria-dropeffect="copy move"></div>
+<div role="alert" aria-relevant="text removals"></div>
 ```
 
 #### Passed Example 10
@@ -275,12 +264,12 @@ The following aspects are required in using this rule.
 
 #### Failed Example 8
 
-<a class="example-link" title="Failed Example 8" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/bad4a344d82a15ba2396ceb7824dae56f894b85d.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 8" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/79d12098309e131210ba01ae2eca31ac97c13123.html">Open in a new tab</a>
 
 Element with invalid token list value
 
 ```html
-<div role="dialog" aria-dropeffect="invalid move"></div>
+<div role="alert" aria-relevant="always"></div>
 ```
 
 #### Failed Example 9
@@ -338,7 +327,7 @@ Element has ARIA role, but no ARIA states or properties
 
 `aria-checked` state with empty value
 
-**Note**: The HTML validator flags an `aria-checked` attribute with an empty value as an issue. However WAI-ARIA 1.1 indicates `aria-checked` has a default value of `undefined`.
+**Note**: The HTML validator flags an `aria-checked` attribute with an empty value as an issue. However, since WAI-ARIA 1.1, `aria-checked` has a default value of `undefined`.
 
 ```html
 <div role="checkbox" aria-checked>Accept terms and conditions</div>
@@ -378,7 +367,7 @@ An _outcome_ is a conclusion that comes from evaluating an ACT Rule on a [test s
 
 The _WAI ARIA Specifications_ group both the WAI ARIA W3C Recommendation and ARIA modules, namely:
 
-- [Accessible Rich Internet Applications (WAI-ARIA) 1.1](https://www.w3.org/TR/wai-aria-1.1/)
+- [Accessible Rich Internet Applications (WAI-ARIA) 1.2](https://www.w3.org/TR/wai-aria-1.2/)
 - [WAI-ARIA Graphics Module 1.0](https://www.w3.org/TR/graphics-aria-1.0/)
 - [Digital Publishing WAI-ARIA Module 1.0](https://www.w3.org/TR/dpub-aria-1.0/)
 
