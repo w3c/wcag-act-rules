@@ -3,7 +3,7 @@
   "website": "https://www.w3.org/WAI/standards-guidelines/act/rules/",
   "license": "https://act-rules.github.io/pages/license/",
   "description": "Accessibility conformance testing rules for HTML",
-  "count": 1139,
+  "count": 1138,
   "testcases": [
     {
       "ruleId": "73f2c2",
@@ -20335,10 +20335,10 @@
         }
       },
       "expected": "passed",
-      "testcaseId": "d48be8e9b638b9c27714cb3118a335376ed65f0f",
+      "testcaseId": "4ba1bf62d48d7004d270615500af3e83f4b693a7",
       "testcaseTitle": "Passed Example 2",
-      "relativePath": "testcases/bisz58/d48be8e9b638b9c27714cb3118a335376ed65f0f.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/d48be8e9b638b9c27714cb3118a335376ed65f0f.html",
+      "relativePath": "testcases/bisz58/4ba1bf62d48d7004d270615500af3e83f4b693a7.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/4ba1bf62d48d7004d270615500af3e83f4b693a7.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/bisz58/proposed/"
     },
     {
@@ -20371,10 +20371,10 @@
         }
       },
       "expected": "failed",
-      "testcaseId": "ecc787569c06640f3748ae90e2b57fb51c1e22d8",
+      "testcaseId": "5654c6af54a07ba4dc96ee5f2a1c3fd6457164b8",
       "testcaseTitle": "Failed Example 1",
-      "relativePath": "testcases/bisz58/ecc787569c06640f3748ae90e2b57fb51c1e22d8.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/ecc787569c06640f3748ae90e2b57fb51c1e22d8.html",
+      "relativePath": "testcases/bisz58/5654c6af54a07ba4dc96ee5f2a1c3fd6457164b8.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/5654c6af54a07ba4dc96ee5f2a1c3fd6457164b8.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/bisz58/proposed/"
     },
     {
@@ -20407,10 +20407,10 @@
         }
       },
       "expected": "failed",
-      "testcaseId": "b134b6aa2851b2e3ee5d1fbca056c2b706776a98",
+      "testcaseId": "d0672e81d17313f7ef156f3bc6e43c68143a5f45",
       "testcaseTitle": "Failed Example 2",
-      "relativePath": "testcases/bisz58/b134b6aa2851b2e3ee5d1fbca056c2b706776a98.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/b134b6aa2851b2e3ee5d1fbca056c2b706776a98.html",
+      "relativePath": "testcases/bisz58/d0672e81d17313f7ef156f3bc6e43c68143a5f45.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/d0672e81d17313f7ef156f3bc6e43c68143a5f45.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/bisz58/proposed/"
     },
     {
@@ -20443,46 +20443,10 @@
         }
       },
       "expected": "failed",
-      "testcaseId": "7ce73a0a773528b21f497c3f0600ceb9f1b0097f",
+      "testcaseId": "b8aad77e3ff2fa8d0272fac5362566ff79afad7f",
       "testcaseTitle": "Failed Example 3",
-      "relativePath": "testcases/bisz58/7ce73a0a773528b21f497c3f0600ceb9f1b0097f.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/7ce73a0a773528b21f497c3f0600ceb9f1b0097f.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/bisz58/proposed/"
-    },
-    {
-      "ruleId": "bisz58",
-      "ruleName": "Meta element has no refresh delay (no exception)",
-      "ruleAccessibilityRequirements": {
-        "wcag20:2.2.4": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag20:3.2.5": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:G110": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:H76": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "failed",
-      "testcaseId": "7f67b9f06d35fa2a19d59481b2ccc6e7441823ee",
-      "testcaseTitle": "Failed Example 4",
-      "relativePath": "testcases/bisz58/7f67b9f06d35fa2a19d59481b2ccc6e7441823ee.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/7f67b9f06d35fa2a19d59481b2ccc6e7441823ee.html",
+      "relativePath": "testcases/bisz58/b8aad77e3ff2fa8d0272fac5362566ff79afad7f.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/b8aad77e3ff2fa8d0272fac5362566ff79afad7f.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/bisz58/proposed/"
     },
     {
@@ -20551,10 +20515,10 @@
         }
       },
       "expected": "inapplicable",
-      "testcaseId": "9a3bda5ec60f149807ec999ca430dce67f295846",
+      "testcaseId": "c73e036ba88dbbedf6b6a90b69328208eb1e14d0",
       "testcaseTitle": "Inapplicable Example 2",
-      "relativePath": "testcases/bisz58/9a3bda5ec60f149807ec999ca430dce67f295846.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/9a3bda5ec60f149807ec999ca430dce67f295846.html",
+      "relativePath": "testcases/bisz58/c73e036ba88dbbedf6b6a90b69328208eb1e14d0.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/c73e036ba88dbbedf6b6a90b69328208eb1e14d0.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/bisz58/proposed/"
     },
     {
@@ -20659,10 +20623,10 @@
         }
       },
       "expected": "inapplicable",
-      "testcaseId": "ab5d8aeef0246a383e782e44744d3989e72fd573",
+      "testcaseId": "a32834c94a9dd1869e22ccfb0b7b753648c8d469",
       "testcaseTitle": "Inapplicable Example 5",
-      "relativePath": "testcases/bisz58/ab5d8aeef0246a383e782e44744d3989e72fd573.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/ab5d8aeef0246a383e782e44744d3989e72fd573.html",
+      "relativePath": "testcases/bisz58/a32834c94a9dd1869e22ccfb0b7b753648c8d469.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/a32834c94a9dd1869e22ccfb0b7b753648c8d469.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/bisz58/proposed/"
     },
     {
@@ -20731,10 +20695,10 @@
         }
       },
       "expected": "inapplicable",
-      "testcaseId": "5f26131ac46f24edc76f0105a876addd0e1804b0",
+      "testcaseId": "1846b9116a8563e653cee40753b4c904696851f9",
       "testcaseTitle": "Inapplicable Example 7",
-      "relativePath": "testcases/bisz58/5f26131ac46f24edc76f0105a876addd0e1804b0.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/5f26131ac46f24edc76f0105a876addd0e1804b0.html",
+      "relativePath": "testcases/bisz58/1846b9116a8563e653cee40753b4c904696851f9.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/1846b9116a8563e653cee40753b4c904696851f9.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/bisz58/proposed/"
     },
     {
