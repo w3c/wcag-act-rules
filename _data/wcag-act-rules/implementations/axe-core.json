@@ -2,19 +2,19 @@
   "vendor": "Deque Systems",
   "name": "Axe-core",
   "version": "4.5",
-  "lastModified": "9 November 2022",
+  "lastModified": "12 November 2022",
   "approvedRules": {
     "complete": 20,
-    "partial": 2,
+    "partial": 1,
     "minimal": 0,
-    "inconsistent": 0,
+    "inconsistent": 1,
     "untested": 0
   },
   "proposedRules": {
-    "complete": 9,
-    "partial": 7,
+    "complete": 10,
+    "partial": 8,
     "minimal": 8,
-    "inconsistent": 6,
+    "inconsistent": 4,
     "untested": 39
   },
   "actRuleMapping": [
@@ -1222,7 +1222,7 @@
         "label",
         "select-name"
       ],
-      "consistency": "partial",
+      "consistency": null,
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -1233,8 +1233,8 @@
         ]
       },
       "coverage": {
-        "covered": 17,
-        "untested": 2,
+        "covered": 18,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 19
       },
@@ -1708,19 +1708,20 @@
             {
               "procedureName": "aria-input-field-name",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             },
             {
               "procedureName": "label",
               "outcomes": [
-                "untested"
+                "failed",
+                "failed"
               ]
             },
             {
               "procedureName": "select-name",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -1735,19 +1736,20 @@
             {
               "procedureName": "aria-input-field-name",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             },
             {
               "procedureName": "label",
               "outcomes": [
-                "untested"
+                "failed",
+                "failed"
               ]
             },
             {
               "procedureName": "select-name",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -6794,8 +6796,8 @@
         ]
       },
       "coverage": {
-        "covered": 15,
-        "untested": 1,
+        "covered": 16,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 16
       },
@@ -7005,7 +7007,7 @@
             {
               "procedureName": "aria-allowed-attr",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -7058,8 +7060,8 @@
         ]
       },
       "coverage": {
-        "covered": 20,
-        "untested": 2,
+        "covered": 22,
+        "untested": 0,
         "cantTell": 1,
         "testCaseTotal": 24
       },
@@ -7194,7 +7196,7 @@
             {
               "procedureName": "aria-valid-attr-value",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -7329,7 +7331,7 @@
             {
               "procedureName": "aria-valid-attr-value",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -10824,18 +10826,21 @@
       "procedureNames": [
         "meta-refresh-no-exceptions"
       ],
-      "consistency": null,
+      "consistency": "complete",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:interruptions",
           "WCAG2:change-on-request"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:interruptions",
+          "WCAG2:change-on-request"
+        ]
       },
       "coverage": {
-        "covered": 6,
-        "untested": 7,
+        "covered": 13,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 13
       },
@@ -10865,7 +10870,8 @@
             {
               "procedureName": "meta-refresh-no-exceptions",
               "outcomes": [
-                "untested"
+                "passed",
+                "passed"
               ]
             }
           ]
@@ -10880,7 +10886,7 @@
             {
               "procedureName": "meta-refresh-no-exceptions",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -10895,7 +10901,7 @@
             {
               "procedureName": "meta-refresh-no-exceptions",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -10910,7 +10916,8 @@
             {
               "procedureName": "meta-refresh-no-exceptions",
               "outcomes": [
-                "untested"
+                "passed",
+                "failed"
               ]
             }
           ]
@@ -10940,7 +10947,7 @@
             {
               "procedureName": "meta-refresh-no-exceptions",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -10985,7 +10992,7 @@
             {
               "procedureName": "meta-refresh-no-exceptions",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -11015,7 +11022,7 @@
             {
               "procedureName": "meta-refresh-no-exceptions",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -11238,17 +11245,19 @@
       "procedureNames": [
         "aria-required-attr"
       ],
-      "consistency": null,
+      "consistency": "partial",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:name-role-value"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:name-role-value"
+        ]
       },
       "coverage": {
-        "covered": 4,
-        "untested": 11,
+        "covered": 12,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 15
       },
@@ -11263,7 +11272,7 @@
             {
               "procedureName": "aria-required-attr",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -11278,7 +11287,7 @@
             {
               "procedureName": "aria-required-attr",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -11308,7 +11317,9 @@
             {
               "procedureName": "aria-required-attr",
               "outcomes": [
-                "untested"
+                "passed",
+                "passed",
+                "passed"
               ]
             }
           ]
@@ -11323,7 +11334,7 @@
             {
               "procedureName": "aria-required-attr",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -11338,7 +11349,10 @@
             {
               "procedureName": "aria-required-attr",
               "outcomes": [
-                "untested"
+                "passed",
+                "passed",
+                "passed",
+                "passed"
               ]
             }
           ]
@@ -11353,7 +11367,7 @@
             {
               "procedureName": "aria-required-attr",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -11368,7 +11382,7 @@
             {
               "procedureName": "aria-required-attr",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -11383,7 +11397,7 @@
             {
               "procedureName": "aria-required-attr",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -11398,7 +11412,7 @@
             {
               "procedureName": "aria-required-attr",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -11413,7 +11427,10 @@
             {
               "procedureName": "aria-required-attr",
               "outcomes": [
-                "untested"
+                "passed",
+                "passed",
+                "passed",
+                "failed"
               ]
             }
           ]
@@ -11428,7 +11445,10 @@
             {
               "procedureName": "aria-required-attr",
               "outcomes": [
-                "untested"
+                "passed",
+                "passed",
+                "passed",
+                "passed"
               ]
             }
           ]
