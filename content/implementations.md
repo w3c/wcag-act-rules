@@ -42,7 +42,7 @@ See [understanding ACT consistency](#understanding-act-consistency) for details.
 {% assign automatedTools = implementations | where: "type", "Automated tool" %}
 {% include_relative _implementations-table.html implementations=automatedTools %}
 
-## Linters
+## Accessibility Linters
 
 Linters are fully automated tools that test source code, rather than pages displayed in a browser or other user agents. See [understanding ACT consistency](#understanding-act-consistency) for details.
 
