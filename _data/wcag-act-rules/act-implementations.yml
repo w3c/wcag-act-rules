@@ -86,8 +86,10 @@
   version: 4.16.1
   vendor: ember-template-lint
   uniqueKey: ember-template-lint
-  type: Automated tool
-  standards: []
+  type: Linter
+  standards: 
+    - WCAG 2.0 Level A, AA
+    - WAI-ARIA 1.2
   jsonReport: https://raw.githubusercontent.com/act-rules/act-shared-reports/main/reports/ember-template-lint/ember-earl.json
 
 - name: QualWeb
