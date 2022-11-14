@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> c4a8a4</p>
-  <p><strong>Date:</strong> Updated 13 October 2022</p>
+  <p><strong>Date:</strong> Updated 7 November 2022</p>
   <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/corbb">Corbb O'Connor</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -19,7 +19,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that the first title in an HTML web page describes the topic or purpose of that page.
-  last_modified: 13 October 2022
+  last_modified: 7 November 2022
   scs_tested:
     - handle: Page Titled
       num: 2.4.2
@@ -114,7 +114,7 @@ The following aspects are required in using this rule.
 
 <a class="example-link" title="Passed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/c4a8a4/c19c231ab5175fb62b6a74b998aec0dd965c25c5.html">Open in a new tab</a>
 
-This `<title>` element describes the content of the document.
+This `title` element describes the content of the document.
 
 ```html
 <html lang="en">
@@ -133,7 +133,7 @@ This `<title>` element describes the content of the document.
 
 <a class="example-link" title="Passed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/c4a8a4/107a5e462b4ad6dd297742a2a177e24d32d27c26.html">Open in a new tab</a>
 
-This `<title>` element, the first of two, describes the content of the document.
+This `title` element, the first of two, describes the content of the document.
 
 ```html
 <html lang="en">
@@ -153,7 +153,7 @@ This `<title>` element, the first of two, describes the content of the document.
 
 <a class="example-link" title="Passed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/c4a8a4/2f9709573bf080a0feccfb2fd4b4a657383ef235.html">Open in a new tab</a>
 
-This `<title>` element, which is within the `body`, describes the content of the document. Even though it is not placed within the `<head>` element, as expected [according to the HTML specification](https://html.spec.whatwg.org/#the-title-element), the rule still passes because the browser fixes it and it doesn't cause any known accessibility issues.
+This `title` element, which is within the `body`, describes the content of the document. Even though it is not placed within the `head` element, as expected [according to the HTML specification](https://html.spec.whatwg.org/#the-title-element), the rule still passes because the browser fixes it and it doesn't cause any known accessibility issues.
 
 ```html
 <html lang="en">
@@ -192,7 +192,7 @@ This `<title>` element does not describe the content of the document.
 
 <a class="example-link" title="Failed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/c4a8a4/1844d7bce889d85a80b620468baa804eab3ff2c8.html">Open in a new tab</a>
 
-This `<title>` element, the first of two, does not describe the content of the document. Most browsers, and this rule, only look at the first `<title>` element.
+This `title` element, the first of two, does not describe the content of the document. Most browsers, and this rule, only look at the first `title` element.
 
 ```html
 <html lang="en">
@@ -204,6 +204,24 @@ This `<title>` element, the first of two, does not describe the content of the d
 		<p>
 			Clementines will be ready to harvest from late October through February.
 		</p>
+	</body>
+</html>
+```
+
+#### Failed Example 3
+
+<a class="example-link" title="Failed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/c4a8a4/4c72b3b9b06bf1edc3c959070731b65871ee0c8f.html">Open in a new tab</a>
+
+This page has a generic [document title][]. The title contains the website name, but does not describe the page.
+
+```html
+<html lang="en">
+	<head>
+		<title>University of Arkham</title>
+	</head>
+	<body>
+		<h1>Search results for "accessibility" at the University of Arkham</h1>
+		<p>None</p>
 	</body>
 </html>
 ```

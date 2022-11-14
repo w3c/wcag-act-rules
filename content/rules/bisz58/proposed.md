@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> bisz58</p>
-  <p><strong>Date:</strong> Updated 10 October 2022</p>
+  <p><strong>Date:</strong> Updated 11 November 2022</p>
   <p><strong>Authors:</strong> <a href="https://github.com/Jym77">Jean-Yves Moyen</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -19,7 +19,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that the `meta` element is not used for delayed redirecting or refreshing.
-  last_modified: 10 October 2022
+  last_modified: 11 November 2022
   scs_tested:
     - handle: Interruptions
       num: 2.2.4
@@ -139,14 +139,14 @@ This `meta` element redirects the user immediately. Users won't notice the chang
 
 #### Passed Example 2
 
-<a class="example-link" title="Passed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/d48be8e9b638b9c27714cb3118a335376ed65f0f.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/4ba1bf62d48d7004d270615500af3e83f4b693a7.html">Open in a new tab</a>
 
 The first valid `meta` element redirects immediately.
 
 ```html
 <head>
 	<meta http-equiv="refresh" content="0; https://w3.org" />
-	<meta http-equiv="refresh" content="5; https://w3.org" />
+	<meta http-equiv="refresh" content="72001; https://w3.org" />
 </head>
 ```
 
@@ -154,50 +154,38 @@ The first valid `meta` element redirects immediately.
 
 #### Failed Example 1
 
-<a class="example-link" title="Failed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/ecc787569c06640f3748ae90e2b57fb51c1e22d8.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/5654c6af54a07ba4dc96ee5f2a1c3fd6457164b8.html">Open in a new tab</a>
 
-This `meta` element refreshes the page after 30 seconds.
+This `meta` element refreshes the page after 20 hours.
 
 ```html
 <head>
-	<meta http-equiv="refresh" content="30" />
+	<meta http-equiv="refresh" content="72001" />
 </head>
 ```
 
 #### Failed Example 2
 
-<a class="example-link" title="Failed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/b134b6aa2851b2e3ee5d1fbca056c2b706776a98.html">Open in a new tab</a>
-
-This `meta` element redirects the user after 30 seconds.
-
-```html
-<head>
-	<meta http-equiv="refresh" content="30; URL='https://w3.org'" />
-</head>
-```
-
-#### Failed Example 3
-
-<a class="example-link" title="Failed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/7ce73a0a773528b21f497c3f0600ceb9f1b0097f.html">Open in a new tab</a>
-
-The first `meta` element is not valid (because of the colon instead of a semi-colon in the `content` attribute), the second one redirects after 5 seconds.
-
-```html
-<head>
-	<meta http-equiv="refresh" content="0: https://w3.org" />
-	<meta http-equiv="refresh" content="5; https://w3.org" />
-</head>
-```
-
-#### Failed Example 4
-
-<a class="example-link" title="Failed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/7f67b9f06d35fa2a19d59481b2ccc6e7441823ee.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/d0672e81d17313f7ef156f3bc6e43c68143a5f45.html">Open in a new tab</a>
 
 This `meta` element redirects the user after 20 hours.
 
 ```html
 <head>
-	<meta http-equiv="refresh" content="72001; http://example.com" />
+	<meta http-equiv="refresh" content="72001; URL='https://w3.org'" />
+</head>
+```
+
+#### Failed Example 3
+
+<a class="example-link" title="Failed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/b8aad77e3ff2fa8d0272fac5362566ff79afad7f.html">Open in a new tab</a>
+
+The first `meta` element is not valid (because of the colon instead of a semi-colon in the `content` attribute), the second one redirects after 20 hours.
+
+```html
+<head>
+	<meta http-equiv="refresh" content="0: https://w3.org" />
+	<meta http-equiv="refresh" content="72001; https://w3.org" />
 </head>
 ```
 
@@ -217,13 +205,13 @@ This `meta` element has no `content` attribute.
 
 #### Inapplicable Example 2
 
-<a class="example-link" title="Inapplicable Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/9a3bda5ec60f149807ec999ca430dce67f295846.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/c73e036ba88dbbedf6b6a90b69328208eb1e14d0.html">Open in a new tab</a>
 
 This `meta` element has no `http-equiv="refresh"` attribute.
 
 ```html
 <head>
-	<meta content="30" />
+	<meta content="72001" />
 </head>
 ```
 
@@ -253,13 +241,13 @@ This `meta` element has an invalid `content` attribute, and is therefore inappli
 
 #### Inapplicable Example 5
 
-<a class="example-link" title="Inapplicable Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/ab5d8aeef0246a383e782e44744d3989e72fd573.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/a32834c94a9dd1869e22ccfb0b7b753648c8d469.html">Open in a new tab</a>
 
 This `meta` element has an invalid `content` attribute, and is therefore inapplicable.
 
 ```html
 <head>
-	<meta http-equiv="refresh" content="; 30" />
+	<meta http-equiv="refresh" content="; 72001" />
 </head>
 ```
 
@@ -277,13 +265,13 @@ This `meta` element has an invalid `content` attribute, and is therefore inappli
 
 #### Inapplicable Example 7
 
-<a class="example-link" title="Inapplicable Example 7" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/5f26131ac46f24edc76f0105a876addd0e1804b0.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 7" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/1846b9116a8563e653cee40753b4c904696851f9.html">Open in a new tab</a>
 
 This `meta` element has an invalid `content` attribute, and is therefore inapplicable.
 
 ```html
 <head>
-	<meta http-equiv="refresh" content="+5; http://w3.org" />
+	<meta http-equiv="refresh" content="+72001; http://w3.org" />
 </head>
 ```
 
