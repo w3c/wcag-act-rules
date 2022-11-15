@@ -22,13 +22,15 @@ layout: standalone_resource
     {%- unless implementation.versionDate %}
       version {% if implementation.version %}{{ implementation.version }}{% else %}{{ implementationInfo.version }}{% endif %}
     {%- endunless %}
-    is an {{ implementationInfo.type }}
+    {% if implementationInfo.type == "Linter" %} is a linter
+    {% else %} is an {{ implementationInfo.type }}
+    {%- endif%}
     {%- if implementationInfo.vendorHomepage %}
       by <a href="{{ implementationInfo.vendorHomepage }}">
         {{- implementationInfo.vendor -}}
       </a>.
     {%- else %}
-      by {{ implementation.vendor }}.
+      by {{ implementationInfo.vendor }}.
     {%- endif %}
     {%- if implementation.lastModified %}
       The test results were last updated {{ implementation.lastModified }}.

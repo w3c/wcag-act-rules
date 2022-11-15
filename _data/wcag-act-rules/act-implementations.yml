@@ -84,7 +84,7 @@
 
 - name: ember-template-lint
   version: 4.16.1
-  vendor: ember-template-lint
+  vendor: contributors in the Ember.js community
   uniqueKey: ember-template-lint
   type: Linter
   standards: 
