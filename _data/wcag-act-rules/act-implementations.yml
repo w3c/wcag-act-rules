@@ -82,6 +82,20 @@
 
     `RuleId1:ReasonCode1,ReasonCode2|RuleId2:ReasonCode3,ReasonCode4`.
 
+- name: ember-template-lint
+  version: 4.16.1
+  vendor: contributors in the Ember.js community
+  uniqueKey: ember-template-lint
+  type: Linter
+  standards: 
+    - WCAG 2.0 Level A, AA
+    - WAI-ARIA 1.2
+  jsonReport: https://raw.githubusercontent.com/act-rules/act-shared-reports/main/reports/ember-template-lint/ember-earl.json
+  description: |
+    Test cases that require scripts or CSS are skipped and reported as cantTell.
+    Like all linters, Ember-template-lint does static code analysis, and so does
+    not run scripts or render CSS.
+
 - name: QualWeb
   homepage: http://qualweb.di.fc.ul.pt/evaluator/
   version: 3.0.0
