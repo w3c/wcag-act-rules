@@ -11,10 +11,10 @@
     "untested": 0
   },
   "proposedRules": {
-    "complete": 9,
-    "partial": 14,
+    "complete": 15,
+    "partial": 9,
     "minimal": 8,
-    "inconsistent": 9,
+    "inconsistent": 8,
     "untested": 29
   },
   "actRuleMapping": [
@@ -6504,7 +6504,7 @@
       "procedureNames": [
         "aria-required-children"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -6515,7 +6515,7 @@
         ]
       },
       "coverage": {
-        "covered": 16,
+        "covered": 17,
         "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 17
@@ -6713,7 +6713,7 @@
             {
               "procedureName": "aria-required-children",
               "outcomes": [
-                "passed"
+                "failed"
               ]
             }
           ]
@@ -9347,7 +9347,7 @@
       "procedureNames": [
         "label-visible-not-descriptive (forms)"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -9358,8 +9358,8 @@
         ]
       },
       "coverage": {
-        "covered": 12,
-        "untested": 2,
+        "covered": 14,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 14
       },
@@ -9509,7 +9509,7 @@
             {
               "procedureName": "label-visible-not-descriptive (forms)",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -9569,7 +9569,7 @@
             {
               "procedureName": "label-visible-not-descriptive (forms)",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -10364,7 +10364,7 @@
       "procedureNames": [
         "title-not-meaningful (structure)"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -10375,8 +10375,8 @@
         ]
       },
       "coverage": {
-        "covered": 5,
-        "untested": 1,
+        "covered": 6,
+        "untested": 0,
         "cantTell": 1,
         "testCaseTotal": 7
       },
@@ -10466,7 +10466,7 @@
             {
               "procedureName": "title-not-meaningful (structure)",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -11358,7 +11358,7 @@
       "procedureNames": [
         "alt-text-short-text-not-meaningful (Images)"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -11369,8 +11369,8 @@
         ]
       },
       "coverage": {
-        "covered": 15,
-        "untested": 1,
+        "covered": 16,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 16
       },
@@ -11400,7 +11400,7 @@
             {
               "procedureName": "alt-text-short-text-not-meaningful (Images)",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -12206,8 +12206,8 @@
         ]
       },
       "coverage": {
-        "covered": 6,
-        "untested": 1,
+        "covered": 8,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 9
       },
@@ -12237,7 +12237,7 @@
             {
               "procedureName": "form-error-required-unclear + instructions-not-included (forms)",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -12297,7 +12297,7 @@
             {
               "procedureName": "form-error-required-unclear + instructions-not-included (forms)",
               "outcomes": [
-                "passed"
+                "failed"
               ]
             }
           ]
@@ -13288,7 +13288,7 @@
       "procedureNames": [
         "aria-required-attr"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -13299,7 +13299,7 @@
         ]
       },
       "coverage": {
-        "covered": 12,
+        "covered": 15,
         "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 15
@@ -13440,7 +13440,7 @@
             {
               "procedureName": "aria-required-attr",
               "outcomes": [
-                "passed"
+                "failed"
               ]
             }
           ]
@@ -13455,7 +13455,7 @@
             {
               "procedureName": "aria-required-attr",
               "outcomes": [
-                "passed"
+                "failed"
               ]
             }
           ]
@@ -13491,7 +13491,7 @@
                 "passed",
                 "passed",
                 "passed",
-                "passed"
+                "failed"
               ]
             }
           ]
@@ -13550,7 +13550,7 @@
       "procedureNames": [
         "scrollable-region-focusable"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -13561,8 +13561,8 @@
         ]
       },
       "coverage": {
-        "covered": 9,
-        "untested": 1,
+        "covered": 10,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 10
       },
@@ -13712,7 +13712,7 @@
             {
               "procedureName": "scrollable-region-focusable",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -13726,17 +13726,19 @@
       "procedureNames": [
         "focus-indicator-missing (keyboard)"
       ],
-      "consistency": null,
+      "consistency": "complete",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:focus-visible"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:focus-visible"
+        ]
       },
       "coverage": {
-        "covered": 4,
-        "untested": 3,
+        "covered": 7,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 7
       },
@@ -13766,7 +13768,7 @@
             {
               "procedureName": "focus-indicator-missing (keyboard)",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -13781,7 +13783,7 @@
             {
               "procedureName": "focus-indicator-missing (keyboard)",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -13811,7 +13813,7 @@
             {
               "procedureName": "focus-indicator-missing (keyboard)",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -14566,7 +14568,7 @@
       "procedureNames": [
         "color-contrast-enhanced"
       ],
-      "consistency": "complete",
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -14577,9 +14579,9 @@
         ]
       },
       "coverage": {
-        "covered": 22,
+        "covered": 26,
         "untested": 0,
-        "cantTell": 7,
+        "cantTell": 0,
         "testCaseTotal": 29
       },
       "testCaseResults": [
@@ -14608,7 +14610,7 @@
             {
               "procedureName": "color-contrast-enhanced",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -14623,7 +14625,7 @@
             {
               "procedureName": "color-contrast-enhanced",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -14728,7 +14730,7 @@
             {
               "procedureName": "color-contrast-enhanced",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -14773,7 +14775,7 @@
             {
               "procedureName": "color-contrast-enhanced",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -14833,7 +14835,7 @@
             {
               "procedureName": "color-contrast-enhanced",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -14894,7 +14896,7 @@
             {
               "procedureName": "color-contrast-enhanced",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -14909,7 +14911,7 @@
             {
               "procedureName": "color-contrast-enhanced",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
