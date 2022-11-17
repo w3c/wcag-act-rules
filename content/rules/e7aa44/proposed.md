@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> e7aa44</p>
-  <p><strong>Date:</strong> Updated 11 July 2022</p>
+  <p><strong>Date:</strong> Updated 14 November 2022</p>
   <p><strong>Authors:</strong> <a href="https://www.linkedin.com/in/brianbors/">Brian Bors</a>, <a href="https://github.com/john-urbilog">John Hicks</a>, <a href="https://github.com/Rafalchar">Rafal Charlampowicz</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
   
@@ -21,7 +21,7 @@ rule_meta:
   rule_type: composite
   description: |
     This rule checks that `audio` elements have a text alternative available.
-  last_modified: 11 July 2022
+  last_modified: 14 November 2022
   scs_tested:
     - handle: Audio-only and Video-only (Prerecorded)
       num: 1.2.1
@@ -32,7 +32,7 @@ rule_meta:
 
 This rule applies to any [non-streaming](#non-streaming-media-element) `audio` element for which at least one of the following is true:
 
-- has an `autoplay` [attribute value][] of true;  or,
+- has an `autoplay` [attribute value][] of true; or,
 - has a [play button][] that is [visible][] and [included in the accessibility tree](#included-in-the-accessibility-tree).
 
 ## Expectation
@@ -48,7 +48,7 @@ This rule assumes that the language of each test target can be correctly determi
 
 ## Accessibility Support
 
-There are no major accessibility support issues known for this rule.
+There are no accessibility support issues known.
 
 ## Background
 
@@ -166,9 +166,9 @@ This `audio` element has a play button but has an incorrect transcript.
 <html lang="en">
 	<audio src="/test-assets/moon-audio/moon-speech.mp3" controls></audio>
 	<p>
-		The above audio contains the following speech: We are going to the North Pole in this decade with puppies,
-		not because they are easy, but because they are cute, because that goal will serve to organize and measure the best
-		of our energies and skills, because that challenge is one that we are willing to accept, one we are unwilling to
+		The above audio contains the following speech: We are going to the North Pole in this decade with puppies, not
+		because they are easy, but because they are cute, because that goal will serve to organize and measure the best of
+		our energies and skills, because that challenge is one that we are willing to accept, one we are unwilling to
 		postpone, and one which we intend to win, and the others, too.
 	</p>
 </html>

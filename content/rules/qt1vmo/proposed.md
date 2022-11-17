@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> qt1vmo</p>
-  <p><strong>Date:</strong> Updated 15 September 2022</p>
+  <p><strong>Date:</strong> Updated 14 November 2022</p>
   <p><strong>Authors:</strong> <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
   
@@ -21,7 +21,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that the accessible names of images serve an equivalent purpose to the image.
-  last_modified: 15 September 2022
+  last_modified: 14 November 2022
   scs_tested:
     - handle: Non-text Content
       num: 1.1.1
@@ -41,7 +41,7 @@ Each test target has an [accessible name][] that serves an equivalent purpose to
 
 ## Assumptions
 
-_There are currently no assumptions_
+There are no assumptions.
 
 ## Accessibility Support
 
@@ -124,13 +124,13 @@ This `img` element has an `alt` attribute that describes the image.
 
 #### Passed Example 2
 
-<a class="example-link" title="Passed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/qt1vmo/09899111e5bcb25a5bb64000f63dc926eb653b7d.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/qt1vmo/5d314574052bf16676abb0e9a67e48dd70116c2e.html">Open in a new tab</a>
 
-This `svg` element has an `aria-label` attribute that describes the image.
+This `svg` element has an `aria-label` attribute that describes the HTML5 logo image.
 
 ```html
 <html lang="en">
-	<svg viewBox="0 0 512 512" aria-label="HTML 5" role="img">
+	<svg viewBox="0 0 512 512" aria-label="HTML 5 logo" role="img">
 		<path
 			d="M108.4 0h23v22.8h21.2V0h23v69h-23V46h-21v23h-23.2M206 23h-20.3V0h63.7v23H229v46h-23M259.5 0h24.1l14.8 24.3L313.2 0h24.1v69h-23V34.8l-16.1 24.8l-16.1-24.8v34.2h-22.6M348.7 0h23v46.2h32.6V69h-55.6"
 		/>
@@ -149,7 +149,7 @@ This `svg` element has an `aria-label` attribute that describes the image.
 
 <a class="example-link" title="Passed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/qt1vmo/2a66c7b8d8ef78d350b1c995e0ad232008f6564f.html">Open in a new tab</a>
 
-This `canvas` element has an `aria-label` attribute that describes the image.
+This `canvas` element has an `aria-label` attribute that describes the W3C logo image.
 
 ```html
 <html lang="en">
@@ -183,7 +183,7 @@ This `img` element has an `alt` attribute that incorrectly describes the image.
 
 <a class="example-link" title="Failed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/qt1vmo/2f7d82593e287df64b7459695e355a840254255c.html">Open in a new tab</a>
 
-This `svg` element has an `aria-label` attribute that incorrectly describes the image.
+This `svg` element has an `aria-label` attribute that incorrectly describes the image (the `aria-label` is "W3C" but the actual image is the HTML5 logo).
 
 ```html
 <html lang="en">
@@ -206,7 +206,7 @@ This `svg` element has an `aria-label` attribute that incorrectly describes the 
 
 <a class="example-link" title="Failed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/qt1vmo/bac67a5a2ada971100bbec89961ad3e6c869f268.html">Open in a new tab</a>
 
-This `canvas` element has an `aria-label` attribute that incorrectly describes the image.
+This `canvas` element has an `aria-label` attribute that incorrectly describes the image (the `aria-label` is "HTML5 logo" but the actual image is the W3C logo).
 
 ```html
 <html lang="en">
@@ -448,7 +448,7 @@ For more details, see [examples of visible](https://act-rules.github.io/pages/ex
 
 The _WAI ARIA Specifications_ group both the WAI ARIA W3C Recommendation and ARIA modules, namely:
 
-- [Accessible Rich Internet Applications (WAI-ARIA) 1.1](https://www.w3.org/TR/wai-aria-1.1/)
+- [Accessible Rich Internet Applications (WAI-ARIA) 1.2](https://www.w3.org/TR/wai-aria-1.2/)
 - [WAI-ARIA Graphics Module 1.0](https://www.w3.org/TR/graphics-aria-1.0/)
 - [Digital Publishing WAI-ARIA Module 1.0](https://www.w3.org/TR/dpub-aria-1.0/)
 
