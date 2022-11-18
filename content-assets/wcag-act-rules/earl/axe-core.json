@@ -18131,7 +18131,7 @@
       "assertedBy": "https://github.com/dequelabs/axe-core/releases/tag/4.5.2-canary.563e4e9",
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:passed"
+        "outcome": "earl:inapplicable"
       },
       "test": {
         "@type": "TestCase",
