@@ -2,7 +2,7 @@
   "vendor": "LASIGE, Faculdade de Ciências da Universidade de Lisboa",
   "name": "QualWeb",
   "version": "3.0.0",
-  "lastModified": "15 November 2022",
+  "lastModified": "22 November 2022",
   "approvedRules": {
     "complete": 13,
     "partial": 5,
@@ -11,10 +11,10 @@
     "untested": 0
   },
   "proposedRules": {
-    "complete": 10,
-    "partial": 6,
+    "complete": 11,
+    "partial": 7,
     "minimal": 13,
-    "inconsistent": 20,
+    "inconsistent": 18,
     "untested": 20
   },
   "actRuleMapping": [
@@ -1126,8 +1126,8 @@
         ]
       },
       "coverage": {
-        "covered": 17,
-        "untested": 2,
+        "covered": 19,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 19
       },
@@ -1397,7 +1397,7 @@
             {
               "procedureName": "Form control has accessible name",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -1412,7 +1412,7 @@
             {
               "procedureName": "Form control has accessible name",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -6151,7 +6151,7 @@
       },
       "coverage": {
         "covered": 15,
-        "untested": 1,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 16
       },
@@ -6361,7 +6361,7 @@
             {
               "procedureName": "ARIA state or property is permitted",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -6405,15 +6405,15 @@
       "procedureNames": [
         "ARIA state or property has valid value"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
         "reported": []
       },
       "coverage": {
-        "covered": 22,
-        "untested": 2,
+        "covered": 24,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 24
       },
@@ -6548,7 +6548,7 @@
             {
               "procedureName": "ARIA state or property has valid value",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -6683,7 +6683,7 @@
             {
               "procedureName": "ARIA state or property has valid value",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -10456,8 +10456,8 @@
         "reported": []
       },
       "coverage": {
-        "covered": 6,
-        "untested": 1,
+        "covered": 7,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 7
       },
@@ -10472,7 +10472,7 @@
             {
               "procedureName": "iframe with negative tabindex has no interactive elements",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -10622,8 +10622,8 @@
       },
       "coverage": {
         "covered": 1,
-        "untested": 1,
-        "cantTell": 7,
+        "untested": 0,
+        "cantTell": 8,
         "testCaseTotal": 9
       },
       "testCaseResults": [
@@ -10652,7 +10652,7 @@
             {
               "procedureName": "Error message describes invalid form field value",
               "outcomes": [
-                "untested"
+                "cantTell"
               ]
             }
           ]
@@ -11581,18 +11581,21 @@
       "procedureNames": [
         "`meta` element has no refresh delay (no exception)"
       ],
-      "consistency": null,
+      "consistency": "partial",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:interruptions",
           "WCAG2:change-on-request"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:interruptions",
+          "WCAG2:change-on-request"
+        ]
       },
       "coverage": {
-        "covered": 5,
-        "untested": 8,
+        "covered": 11,
+        "untested": 2,
         "cantTell": 0,
         "testCaseTotal": 13
       },
@@ -11637,7 +11640,7 @@
             {
               "procedureName": "`meta` element has no refresh delay (no exception)",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -11652,7 +11655,7 @@
             {
               "procedureName": "`meta` element has no refresh delay (no exception)",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -11667,7 +11670,7 @@
             {
               "procedureName": "`meta` element has no refresh delay (no exception)",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -11697,7 +11700,7 @@
             {
               "procedureName": "`meta` element has no refresh delay (no exception)",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -11742,7 +11745,7 @@
             {
               "procedureName": "`meta` element has no refresh delay (no exception)",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -11772,7 +11775,7 @@
             {
               "procedureName": "`meta` element has no refresh delay (no exception)",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -11995,17 +11998,19 @@
       "procedureNames": [
         "Element with role attribute has required states and properties"
       ],
-      "consistency": null,
+      "consistency": "partial",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:name-role-value"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:name-role-value"
+        ]
       },
       "coverage": {
-        "covered": 4,
-        "untested": 11,
+        "covered": 10,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 15
       },
@@ -12020,7 +12025,7 @@
             {
               "procedureName": "Element with role attribute has required states and properties",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -12035,7 +12040,7 @@
             {
               "procedureName": "Element with role attribute has required states and properties",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -12065,7 +12070,7 @@
             {
               "procedureName": "Element with role attribute has required states and properties",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -12080,7 +12085,7 @@
             {
               "procedureName": "Element with role attribute has required states and properties",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -12095,7 +12100,7 @@
             {
               "procedureName": "Element with role attribute has required states and properties",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -12110,7 +12115,7 @@
             {
               "procedureName": "Element with role attribute has required states and properties",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -12125,7 +12130,7 @@
             {
               "procedureName": "Element with role attribute has required states and properties",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -12140,7 +12145,7 @@
             {
               "procedureName": "Element with role attribute has required states and properties",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -12155,7 +12160,7 @@
             {
               "procedureName": "Element with role attribute has required states and properties",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -12170,7 +12175,7 @@
             {
               "procedureName": "Element with role attribute has required states and properties",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -12185,7 +12190,7 @@
             {
               "procedureName": "Element with role attribute has required states and properties",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
