@@ -26334,7 +26334,7 @@
           "earl:TestSubject",
           "sch:WebPage"
         ],
-        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/afw4f7/530b8900297f169b900e2a0dffa96bc878b269a1.html"
+        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/afw4f7/b5914a5edae45c5c93e1ec30b9a22afe70f504ee.html"
       },
       "assertedBy": "https://github.com/dequelabs/axe-core/releases/tag/4.5.2-canary.563e4e9",
       "result": {
@@ -26479,6 +26479,54 @@
           "sch:WebPage"
         ],
         "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/afw4f7/66a3ba7bc0027a9556596e3c378c926a537c1901.html"
+      },
+      "assertedBy": "https://github.com/dequelabs/axe-core/releases/tag/4.5.2-canary.563e4e9",
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:passed"
+      },
+      "test": {
+        "@type": "TestCase",
+        "title": "color-contrast",
+        "@id": "https://dequeuniversity.com/rules/axe/4.5/color-contrast?application=axeAPI",
+        "isPartOf": [
+          "WCAG2:contrast-minimum"
+        ]
+      }
+    },
+    {
+      "@type": "Assertion",
+      "mode": "earl:automatic",
+      "subject": {
+        "@type": [
+          "earl:TestSubject",
+          "sch:WebPage"
+        ],
+        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/afw4f7/dc18c6afcd1214d85c49b107eb89c60fbc12ee99.html"
+      },
+      "assertedBy": "https://github.com/dequelabs/axe-core/releases/tag/4.5.2-canary.563e4e9",
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:passed"
+      },
+      "test": {
+        "@type": "TestCase",
+        "title": "color-contrast",
+        "@id": "https://dequeuniversity.com/rules/axe/4.5/color-contrast?application=axeAPI",
+        "isPartOf": [
+          "WCAG2:contrast-minimum"
+        ]
+      }
+    },
+    {
+      "@type": "Assertion",
+      "mode": "earl:automatic",
+      "subject": {
+        "@type": [
+          "earl:TestSubject",
+          "sch:WebPage"
+        ],
+        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/afw4f7/668856825e6d3b4e480005acf97723c7b1004ba3.html"
       },
       "assertedBy": "https://github.com/dequelabs/axe-core/releases/tag/4.5.2-canary.563e4e9",
       "result": {
@@ -26718,6 +26766,54 @@
           "earl:TestSubject",
           "sch:WebPage"
         ],
+        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/afw4f7/a7d34d6d1dad765c7e444d3c3f63b18ca4742e9e.html"
+      },
+      "assertedBy": "https://github.com/dequelabs/axe-core/releases/tag/4.5.2-canary.563e4e9",
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:failed"
+      },
+      "test": {
+        "@type": "TestCase",
+        "title": "color-contrast",
+        "@id": "https://dequeuniversity.com/rules/axe/4.5/color-contrast?application=axeAPI",
+        "isPartOf": [
+          "WCAG2:contrast-minimum"
+        ]
+      }
+    },
+    {
+      "@type": "Assertion",
+      "mode": "earl:automatic",
+      "subject": {
+        "@type": [
+          "earl:TestSubject",
+          "sch:WebPage"
+        ],
+        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/afw4f7/19123c99ec390011b87736827720d5e1e794bad2.html"
+      },
+      "assertedBy": "https://github.com/dequelabs/axe-core/releases/tag/4.5.2-canary.563e4e9",
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:failed"
+      },
+      "test": {
+        "@type": "TestCase",
+        "title": "color-contrast",
+        "@id": "https://dequeuniversity.com/rules/axe/4.5/color-contrast?application=axeAPI",
+        "isPartOf": [
+          "WCAG2:contrast-minimum"
+        ]
+      }
+    },
+    {
+      "@type": "Assertion",
+      "mode": "earl:automatic",
+      "subject": {
+        "@type": [
+          "earl:TestSubject",
+          "sch:WebPage"
+        ],
         "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/afw4f7/2347a45232c34aa309087ed099f4781cd70b5b1e.html"
       },
       "assertedBy": "https://github.com/dequelabs/axe-core/releases/tag/4.5.2-canary.563e4e9",
@@ -26838,54 +26934,6 @@
           "earl:TestSubject",
           "sch:WebPage"
         ],
-        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/afw4f7/dc18c6afcd1214d85c49b107eb89c60fbc12ee99.html"
-      },
-      "assertedBy": "https://github.com/dequelabs/axe-core/releases/tag/4.5.2-canary.563e4e9",
-      "result": {
-        "@type": "TestResult",
-        "outcome": "earl:passed"
-      },
-      "test": {
-        "@type": "TestCase",
-        "title": "color-contrast",
-        "@id": "https://dequeuniversity.com/rules/axe/4.5/color-contrast?application=axeAPI",
-        "isPartOf": [
-          "WCAG2:contrast-minimum"
-        ]
-      }
-    },
-    {
-      "@type": "Assertion",
-      "mode": "earl:automatic",
-      "subject": {
-        "@type": [
-          "earl:TestSubject",
-          "sch:WebPage"
-        ],
-        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/afw4f7/668856825e6d3b4e480005acf97723c7b1004ba3.html"
-      },
-      "assertedBy": "https://github.com/dequelabs/axe-core/releases/tag/4.5.2-canary.563e4e9",
-      "result": {
-        "@type": "TestResult",
-        "outcome": "earl:passed"
-      },
-      "test": {
-        "@type": "TestCase",
-        "title": "color-contrast",
-        "@id": "https://dequeuniversity.com/rules/axe/4.5/color-contrast?application=axeAPI",
-        "isPartOf": [
-          "WCAG2:contrast-minimum"
-        ]
-      }
-    },
-    {
-      "@type": "Assertion",
-      "mode": "earl:automatic",
-      "subject": {
-        "@type": [
-          "earl:TestSubject",
-          "sch:WebPage"
-        ],
         "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/afw4f7/328b967c5b544b48f7acd8e42f2f05d355501f2a.html"
       },
       "assertedBy": "https://github.com/dequelabs/axe-core/releases/tag/4.5.2-canary.563e4e9",
@@ -26982,6 +27030,54 @@
           "earl:TestSubject",
           "sch:WebPage"
         ],
+        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/afw4f7/b4fcc1ea76d19ae86033ed687613f78297ee6069.html"
+      },
+      "assertedBy": "https://github.com/dequelabs/axe-core/releases/tag/4.5.2-canary.563e4e9",
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:inapplicable"
+      },
+      "test": {
+        "@type": "TestCase",
+        "title": "color-contrast",
+        "@id": "https://dequeuniversity.com/rules/axe/4.5/color-contrast?application=axeAPI",
+        "isPartOf": [
+          "WCAG2:contrast-minimum"
+        ]
+      }
+    },
+    {
+      "@type": "Assertion",
+      "mode": "earl:automatic",
+      "subject": {
+        "@type": [
+          "earl:TestSubject",
+          "sch:WebPage"
+        ],
+        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/afw4f7/6b811d065fc243c2c94002f315891791e181d518.html"
+      },
+      "assertedBy": "https://github.com/dequelabs/axe-core/releases/tag/4.5.2-canary.563e4e9",
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:inapplicable"
+      },
+      "test": {
+        "@type": "TestCase",
+        "title": "color-contrast",
+        "@id": "https://dequeuniversity.com/rules/axe/4.5/color-contrast?application=axeAPI",
+        "isPartOf": [
+          "WCAG2:contrast-minimum"
+        ]
+      }
+    },
+    {
+      "@type": "Assertion",
+      "mode": "earl:automatic",
+      "subject": {
+        "@type": [
+          "earl:TestSubject",
+          "sch:WebPage"
+        ],
         "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/09o5cg/fd406bedf0bb3bdc4c2a718f49a3dd0f7aaa7556.html"
       },
       "assertedBy": "https://github.com/dequelabs/axe-core/releases/tag/4.5.2-canary.563e4e9",
@@ -27343,6 +27439,102 @@
           "sch:WebPage"
         ],
         "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/09o5cg/66a3ba7bc0027a9556596e3c378c926a537c1901.html"
+      },
+      "assertedBy": "https://github.com/dequelabs/axe-core/releases/tag/4.5.2-canary.563e4e9",
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:passed"
+      },
+      "test": {
+        "@type": "TestCase",
+        "title": "color-contrast",
+        "@id": "https://dequeuniversity.com/rules/axe/4.5/color-contrast?application=axeAPI",
+        "isPartOf": [
+          "WCAG2:contrast-minimum"
+        ]
+      }
+    },
+    {
+      "@type": "Assertion",
+      "mode": "earl:automatic",
+      "subject": {
+        "@type": [
+          "earl:TestSubject",
+          "sch:WebPage"
+        ],
+        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/09o5cg/dc18c6afcd1214d85c49b107eb89c60fbc12ee99.html"
+      },
+      "assertedBy": "https://github.com/dequelabs/axe-core/releases/tag/4.5.2-canary.563e4e9",
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:passed"
+      },
+      "test": {
+        "@type": "TestCase",
+        "title": "color-contrast-enhanced",
+        "@id": "https://dequeuniversity.com/rules/axe/4.5/color-contrast-enhanced?application=axeAPI",
+        "isPartOf": [
+          "WCAG2:contrast-enhanced"
+        ]
+      }
+    },
+    {
+      "@type": "Assertion",
+      "mode": "earl:automatic",
+      "subject": {
+        "@type": [
+          "earl:TestSubject",
+          "sch:WebPage"
+        ],
+        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/09o5cg/dc18c6afcd1214d85c49b107eb89c60fbc12ee99.html"
+      },
+      "assertedBy": "https://github.com/dequelabs/axe-core/releases/tag/4.5.2-canary.563e4e9",
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:passed"
+      },
+      "test": {
+        "@type": "TestCase",
+        "title": "color-contrast",
+        "@id": "https://dequeuniversity.com/rules/axe/4.5/color-contrast?application=axeAPI",
+        "isPartOf": [
+          "WCAG2:contrast-minimum"
+        ]
+      }
+    },
+    {
+      "@type": "Assertion",
+      "mode": "earl:automatic",
+      "subject": {
+        "@type": [
+          "earl:TestSubject",
+          "sch:WebPage"
+        ],
+        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/09o5cg/668856825e6d3b4e480005acf97723c7b1004ba3.html"
+      },
+      "assertedBy": "https://github.com/dequelabs/axe-core/releases/tag/4.5.2-canary.563e4e9",
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:passed"
+      },
+      "test": {
+        "@type": "TestCase",
+        "title": "color-contrast-enhanced",
+        "@id": "https://dequeuniversity.com/rules/axe/4.5/color-contrast-enhanced?application=axeAPI",
+        "isPartOf": [
+          "WCAG2:contrast-enhanced"
+        ]
+      }
+    },
+    {
+      "@type": "Assertion",
+      "mode": "earl:automatic",
+      "subject": {
+        "@type": [
+          "earl:TestSubject",
+          "sch:WebPage"
+        ],
+        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/09o5cg/668856825e6d3b4e480005acf97723c7b1004ba3.html"
       },
       "assertedBy": "https://github.com/dequelabs/axe-core/releases/tag/4.5.2-canary.563e4e9",
       "result": {
@@ -27894,6 +28086,102 @@
           "earl:TestSubject",
           "sch:WebPage"
         ],
+        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/09o5cg/316b0c7fccdbe8a47716447a9fe2ca197c8358af.html"
+      },
+      "assertedBy": "https://github.com/dequelabs/axe-core/releases/tag/4.5.2-canary.563e4e9",
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:failed"
+      },
+      "test": {
+        "@type": "TestCase",
+        "title": "color-contrast-enhanced",
+        "@id": "https://dequeuniversity.com/rules/axe/4.5/color-contrast-enhanced?application=axeAPI",
+        "isPartOf": [
+          "WCAG2:contrast-enhanced"
+        ]
+      }
+    },
+    {
+      "@type": "Assertion",
+      "mode": "earl:automatic",
+      "subject": {
+        "@type": [
+          "earl:TestSubject",
+          "sch:WebPage"
+        ],
+        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/09o5cg/316b0c7fccdbe8a47716447a9fe2ca197c8358af.html"
+      },
+      "assertedBy": "https://github.com/dequelabs/axe-core/releases/tag/4.5.2-canary.563e4e9",
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:passed"
+      },
+      "test": {
+        "@type": "TestCase",
+        "title": "color-contrast",
+        "@id": "https://dequeuniversity.com/rules/axe/4.5/color-contrast?application=axeAPI",
+        "isPartOf": [
+          "WCAG2:contrast-minimum"
+        ]
+      }
+    },
+    {
+      "@type": "Assertion",
+      "mode": "earl:automatic",
+      "subject": {
+        "@type": [
+          "earl:TestSubject",
+          "sch:WebPage"
+        ],
+        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/09o5cg/2e81c3e60722202d2e92089a0695d74e8b49cdaa.html"
+      },
+      "assertedBy": "https://github.com/dequelabs/axe-core/releases/tag/4.5.2-canary.563e4e9",
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:failed"
+      },
+      "test": {
+        "@type": "TestCase",
+        "title": "color-contrast-enhanced",
+        "@id": "https://dequeuniversity.com/rules/axe/4.5/color-contrast-enhanced?application=axeAPI",
+        "isPartOf": [
+          "WCAG2:contrast-enhanced"
+        ]
+      }
+    },
+    {
+      "@type": "Assertion",
+      "mode": "earl:automatic",
+      "subject": {
+        "@type": [
+          "earl:TestSubject",
+          "sch:WebPage"
+        ],
+        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/09o5cg/2e81c3e60722202d2e92089a0695d74e8b49cdaa.html"
+      },
+      "assertedBy": "https://github.com/dequelabs/axe-core/releases/tag/4.5.2-canary.563e4e9",
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:passed"
+      },
+      "test": {
+        "@type": "TestCase",
+        "title": "color-contrast",
+        "@id": "https://dequeuniversity.com/rules/axe/4.5/color-contrast?application=axeAPI",
+        "isPartOf": [
+          "WCAG2:contrast-minimum"
+        ]
+      }
+    },
+    {
+      "@type": "Assertion",
+      "mode": "earl:automatic",
+      "subject": {
+        "@type": [
+          "earl:TestSubject",
+          "sch:WebPage"
+        ],
         "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/09o5cg/2347a45232c34aa309087ed099f4781cd70b5b1e.html"
       },
       "assertedBy": "https://github.com/dequelabs/axe-core/releases/tag/4.5.2-canary.563e4e9",
@@ -28134,102 +28422,6 @@
           "earl:TestSubject",
           "sch:WebPage"
         ],
-        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/09o5cg/dc18c6afcd1214d85c49b107eb89c60fbc12ee99.html"
-      },
-      "assertedBy": "https://github.com/dequelabs/axe-core/releases/tag/4.5.2-canary.563e4e9",
-      "result": {
-        "@type": "TestResult",
-        "outcome": "earl:passed"
-      },
-      "test": {
-        "@type": "TestCase",
-        "title": "color-contrast-enhanced",
-        "@id": "https://dequeuniversity.com/rules/axe/4.5/color-contrast-enhanced?application=axeAPI",
-        "isPartOf": [
-          "WCAG2:contrast-enhanced"
-        ]
-      }
-    },
-    {
-      "@type": "Assertion",
-      "mode": "earl:automatic",
-      "subject": {
-        "@type": [
-          "earl:TestSubject",
-          "sch:WebPage"
-        ],
-        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/09o5cg/dc18c6afcd1214d85c49b107eb89c60fbc12ee99.html"
-      },
-      "assertedBy": "https://github.com/dequelabs/axe-core/releases/tag/4.5.2-canary.563e4e9",
-      "result": {
-        "@type": "TestResult",
-        "outcome": "earl:passed"
-      },
-      "test": {
-        "@type": "TestCase",
-        "title": "color-contrast",
-        "@id": "https://dequeuniversity.com/rules/axe/4.5/color-contrast?application=axeAPI",
-        "isPartOf": [
-          "WCAG2:contrast-minimum"
-        ]
-      }
-    },
-    {
-      "@type": "Assertion",
-      "mode": "earl:automatic",
-      "subject": {
-        "@type": [
-          "earl:TestSubject",
-          "sch:WebPage"
-        ],
-        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/09o5cg/668856825e6d3b4e480005acf97723c7b1004ba3.html"
-      },
-      "assertedBy": "https://github.com/dequelabs/axe-core/releases/tag/4.5.2-canary.563e4e9",
-      "result": {
-        "@type": "TestResult",
-        "outcome": "earl:passed"
-      },
-      "test": {
-        "@type": "TestCase",
-        "title": "color-contrast-enhanced",
-        "@id": "https://dequeuniversity.com/rules/axe/4.5/color-contrast-enhanced?application=axeAPI",
-        "isPartOf": [
-          "WCAG2:contrast-enhanced"
-        ]
-      }
-    },
-    {
-      "@type": "Assertion",
-      "mode": "earl:automatic",
-      "subject": {
-        "@type": [
-          "earl:TestSubject",
-          "sch:WebPage"
-        ],
-        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/09o5cg/668856825e6d3b4e480005acf97723c7b1004ba3.html"
-      },
-      "assertedBy": "https://github.com/dequelabs/axe-core/releases/tag/4.5.2-canary.563e4e9",
-      "result": {
-        "@type": "TestResult",
-        "outcome": "earl:passed"
-      },
-      "test": {
-        "@type": "TestCase",
-        "title": "color-contrast",
-        "@id": "https://dequeuniversity.com/rules/axe/4.5/color-contrast?application=axeAPI",
-        "isPartOf": [
-          "WCAG2:contrast-minimum"
-        ]
-      }
-    },
-    {
-      "@type": "Assertion",
-      "mode": "earl:automatic",
-      "subject": {
-        "@type": [
-          "earl:TestSubject",
-          "sch:WebPage"
-        ],
         "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/09o5cg/328b967c5b544b48f7acd8e42f2f05d355501f2a.html"
       },
       "assertedBy": "https://github.com/dequelabs/axe-core/releases/tag/4.5.2-canary.563e4e9",
@@ -28399,6 +28591,102 @@
           "sch:WebPage"
         ],
         "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/09o5cg/9e3383a60ab67d5988ac2144fec58a34677c52b2.html"
+      },
+      "assertedBy": "https://github.com/dequelabs/axe-core/releases/tag/4.5.2-canary.563e4e9",
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:inapplicable"
+      },
+      "test": {
+        "@type": "TestCase",
+        "title": "color-contrast",
+        "@id": "https://dequeuniversity.com/rules/axe/4.5/color-contrast?application=axeAPI",
+        "isPartOf": [
+          "WCAG2:contrast-minimum"
+        ]
+      }
+    },
+    {
+      "@type": "Assertion",
+      "mode": "earl:automatic",
+      "subject": {
+        "@type": [
+          "earl:TestSubject",
+          "sch:WebPage"
+        ],
+        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/09o5cg/b4fcc1ea76d19ae86033ed687613f78297ee6069.html"
+      },
+      "assertedBy": "https://github.com/dequelabs/axe-core/releases/tag/4.5.2-canary.563e4e9",
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:inapplicable"
+      },
+      "test": {
+        "@type": "TestCase",
+        "title": "color-contrast-enhanced",
+        "@id": "https://dequeuniversity.com/rules/axe/4.5/color-contrast-enhanced?application=axeAPI",
+        "isPartOf": [
+          "WCAG2:contrast-enhanced"
+        ]
+      }
+    },
+    {
+      "@type": "Assertion",
+      "mode": "earl:automatic",
+      "subject": {
+        "@type": [
+          "earl:TestSubject",
+          "sch:WebPage"
+        ],
+        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/09o5cg/b4fcc1ea76d19ae86033ed687613f78297ee6069.html"
+      },
+      "assertedBy": "https://github.com/dequelabs/axe-core/releases/tag/4.5.2-canary.563e4e9",
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:inapplicable"
+      },
+      "test": {
+        "@type": "TestCase",
+        "title": "color-contrast",
+        "@id": "https://dequeuniversity.com/rules/axe/4.5/color-contrast?application=axeAPI",
+        "isPartOf": [
+          "WCAG2:contrast-minimum"
+        ]
+      }
+    },
+    {
+      "@type": "Assertion",
+      "mode": "earl:automatic",
+      "subject": {
+        "@type": [
+          "earl:TestSubject",
+          "sch:WebPage"
+        ],
+        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/09o5cg/6b811d065fc243c2c94002f315891791e181d518.html"
+      },
+      "assertedBy": "https://github.com/dequelabs/axe-core/releases/tag/4.5.2-canary.563e4e9",
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:inapplicable"
+      },
+      "test": {
+        "@type": "TestCase",
+        "title": "color-contrast-enhanced",
+        "@id": "https://dequeuniversity.com/rules/axe/4.5/color-contrast-enhanced?application=axeAPI",
+        "isPartOf": [
+          "WCAG2:contrast-enhanced"
+        ]
+      }
+    },
+    {
+      "@type": "Assertion",
+      "mode": "earl:automatic",
+      "subject": {
+        "@type": [
+          "earl:TestSubject",
+          "sch:WebPage"
+        ],
+        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/09o5cg/6b811d065fc243c2c94002f315891791e181d518.html"
       },
       "assertedBy": "https://github.com/dequelabs/axe-core/releases/tag/4.5.2-canary.563e4e9",
       "result": {
