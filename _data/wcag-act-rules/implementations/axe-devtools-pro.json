@@ -2,10 +2,10 @@
   "vendor": "Deque Systems",
   "name": "Axe DevTools Pro",
   "version": "4.37.1",
-  "lastModified": "19 November 2022",
+  "lastModified": "23 November 2022",
   "approvedRules": {
-    "complete": 21,
-    "partial": 1,
+    "complete": 22,
+    "partial": 0,
     "minimal": 0,
     "inconsistent": 0,
     "untested": 0
@@ -1222,7 +1222,7 @@
         "label",
         "select-name"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -1233,8 +1233,8 @@
         ]
       },
       "coverage": {
-        "covered": 18,
-        "untested": 1,
+        "covered": 19,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 19
       },
@@ -1708,19 +1708,20 @@
             {
               "procedureName": "aria-input-field-name",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             },
             {
               "procedureName": "label",
               "outcomes": [
-                "untested"
+                "passed",
+                "passed"
               ]
             },
             {
               "procedureName": "select-name",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
