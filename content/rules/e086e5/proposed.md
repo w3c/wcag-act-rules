@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> e086e5</p>
-  <p><strong>Date:</strong> Updated 14 November 2022</p>
+  <p><strong>Date:</strong> Updated 22 November 2022</p>
   <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/brynanders">Bryn Anderson</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -19,7 +19,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that each form field element has a non-empty accessible name.
-  last_modified: 14 November 2022
+  last_modified: 22 November 2022
   scs_tested:
     - handle: Name, Role, Value
       num: 4.1.2
@@ -176,17 +176,17 @@ This [semantic][semantic role] `checkbox` element has the text content as its [a
 
 #### Passed Example 8
 
-<a class="example-link" title="Passed Example 8" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/e086e5/b8e68dccf37727dd39af9fca76a8371a8ec5a81f.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 8" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/e086e5/d9ee6c2ae6da41521bd4ba0bf25c4b6bcd253f37.html">Open in a new tab</a>
 
-These `menuitemcheckbox` elements have an [accessible name][] given by their associated `label`.
+These `menuitemcheckbox` elements have an [accessible name][] because its aria-labelledby attribute references a `span` element.
 
 ```html
 <p id="dip">Add one or more dip:</p>
 <div role="menu" aria-labelledby="dip">
-	<input type="checkbox" role="menuitemcheckbox" id="ketchup" /><label for="ketchup" aria-hidden="true">Ketchup</label
+	<input type="checkbox" role="menuitemcheckbox" aria-labelledby="ketchup" /><span id="ketchup" aria-hidden="true">Ketchup</span
 	><br />
-	<input type="checkbox" role="menuitemcheckbox" id="mayonnaise" /><label for="mayonnaise" aria-hidden="true"
-		>Mayonnaise</label
+	<input type="checkbox" role="menuitemcheckbox" aria-labelledby="mayonnaise" /><span id="mayonnaise" aria-hidden="true"
+		>Mayonnaise</span
 	>
 </div>
 ```

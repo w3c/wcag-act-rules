@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 09o5cg</p>
-  <p><strong>Date:</strong> Updated 11 November 2022</p>
+  <p><strong>Date:</strong> Updated 23 November 2022</p>
   <p><strong>Authors:</strong> <a href="https://github.com/Jym77">Jean-Yves Moyen</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -19,7 +19,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that the highest possible contrast of every text character with its background meets the enhanced contrast requirement.
-  last_modified: 11 November 2022
+  last_modified: 23 November 2022
   scs_tested:
     - handle: Contrast (Enhanced)
       num: 1.4.6
@@ -30,7 +30,7 @@ rule_meta:
 
 This rule applies to any [visible][] character in a [text node][] that is a [child][] in the [flat tree][] of an [HTML element][], except if the [text node][] has an [ancestor][] in the [flat tree][] for which at least one of the following is true:
 
-- **widget**: the ancestor is a [inheriting semantic][] `widget`; or
+- **disabled widget**: the ancestor is a [inheriting semantic][] `widget` that is [disabled][]; or
 - **disabled label**: the ancestor is used in the [accessible name][] of a [inheriting semantic][] `widget` that is [disabled][]; or
 - **disabled group**: the ancestor has a [semantic role][] of `group` and is [disabled][].
 
@@ -224,6 +224,30 @@ This dark gray text has a contrast ratio of 12.6:1 on the white background in a 
 </script>
 ```
 
+#### Passed Example 9
+
+<a class="example-link" title="Passed Example 9" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/dc18c6afcd1214d85c49b107eb89c60fbc12ee99.html">Open in a new tab</a>
+
+This text is part of a widget because it is a child of a `button` element. The text has the default
+browser button text color on the default browser button background color. By default, this is black text on a
+light gray background with a contrast ratio of 18.26:1
+
+```html
+<button>My button!</button>
+```
+
+#### Passed Example 10
+
+<a class="example-link" title="Passed Example 10" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/668856825e6d3b4e480005acf97723c7b1004ba3.html">Open in a new tab</a>
+
+This text is part of a widget because it is a child of an element with the `role` attribute set to `button`.
+The text has the default browser text color on the default browser background color. By default, this is 
+black text on a white background with a contrast ratio of 21:1
+
+```html
+<div role="button">My button!</div>
+```
+
 ### Failed
 
 #### Failed Example 1
@@ -363,6 +387,28 @@ The first `p` element has a contrast ratio of 12.6:1. The second `p` element, wh
 </p>
 ```
 
+#### Failed Example 11
+
+<a class="example-link" title="Failed Example 11" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/316b0c7fccdbe8a47716447a9fe2ca197c8358af.html">Open in a new tab</a>
+
+This text is part of a widget because it is a child of a `button` element. The button text has a contrast ratio of 6.4:1.
+
+```html
+<button style="color: #555; background: #EEE;">My button!</button>
+```
+
+#### Failed Example 12
+
+<a class="example-link" title="Failed Example 12" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/2e81c3e60722202d2e92089a0695d74e8b49cdaa.html">Open in a new tab</a>
+
+This text is part of a widget because it is a child of an element with the `role` attribute set to `button`.
+The button text has a contrast
+ratio of 6.4:1.
+
+```html
+<div role="button" style="color: #555; background: #EEE;">My button!</div>
+```
+
 ### Inapplicable
 
 #### Inapplicable Example 1
@@ -421,27 +467,7 @@ This text not part of a [text node][].
 
 #### Inapplicable Example 6
 
-<a class="example-link" title="Inapplicable Example 6" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/dc18c6afcd1214d85c49b107eb89c60fbc12ee99.html">Open in a new tab</a>
-
-This text is part of a widget because it is a child of a `button` element.
-
-```html
-<button>My button!</button>
-```
-
-#### Inapplicable Example 7
-
-<a class="example-link" title="Inapplicable Example 7" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/668856825e6d3b4e480005acf97723c7b1004ba3.html">Open in a new tab</a>
-
-This text is part of a widget because it is a child of an element with the `role` attribute set to `button`.
-
-```html
-<div role="button">My button!</div>
-```
-
-#### Inapplicable Example 8
-
-<a class="example-link" title="Inapplicable Example 8" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/328b967c5b544b48f7acd8e42f2f05d355501f2a.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 6" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/328b967c5b544b48f7acd8e42f2f05d355501f2a.html">Open in a new tab</a>
 
 This text is part of a label of a [disabled][] widget, because it is in a `label` element that is the label for an `input` element with `type="text"`.
 
@@ -452,9 +478,9 @@ This text is part of a label of a [disabled][] widget, because it is in a `label
 </label>
 ```
 
-#### Inapplicable Example 9
+#### Inapplicable Example 7
 
-<a class="example-link" title="Inapplicable Example 9" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/7c7d6412dae7381d90517a6f3c0a30104d63062a.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 7" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/7c7d6412dae7381d90517a6f3c0a30104d63062a.html">Open in a new tab</a>
 
 This text is part of a label of a [disabled][] widget, because it is in an element that is referenced by `aria-labelledby` from an element with `role="textbox"`.
 
@@ -472,9 +498,9 @@ This text is part of a label of a [disabled][] widget, because it is in an eleme
 </div>
 ```
 
-#### Inapplicable Example 10
+#### Inapplicable Example 8
 
-<a class="example-link" title="Inapplicable Example 10" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/53386f68326a53798e776b48e81b32659424d6d3.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 8" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/53386f68326a53798e776b48e81b32659424d6d3.html">Open in a new tab</a>
 
 This text is part of a label of a [disabled][] widget, because it is in a `label` element that is the label for an `input` element in a `fieldset` element with the `disabled` attribute.
 
@@ -487,9 +513,9 @@ This text is part of a label of a [disabled][] widget, because it is in a `label
 </fieldset>
 ```
 
-#### Inapplicable Example 11
+#### Inapplicable Example 9
 
-<a class="example-link" title="Inapplicable Example 11" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/9e3383a60ab67d5988ac2144fec58a34677c52b2.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 9" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/9e3383a60ab67d5988ac2144fec58a34677c52b2.html">Open in a new tab</a>
 
 This text is part of a label of a [disabled][] widget, because it is in a `label` element that is the label for an `input` element in an element with `role="group"` with the `aria-disabled="true"` attribute.
 
@@ -500,6 +526,26 @@ This text is part of a label of a [disabled][] widget, because it is in a `label
 		<input />
 	</label>
 </div>
+```
+
+#### Inapplicable Example 10
+
+<a class="example-link" title="Inapplicable Example 10" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/b4fcc1ea76d19ae86033ed687613f78297ee6069.html">Open in a new tab</a>
+
+This text is part of a [disabled][] widget because it is a child of a `button` element with the `disabled` attribute.
+
+```html
+<button style="color: #777; background: #EEE;" disabled>My button!</button>
+```
+
+#### Inapplicable Example 11
+
+<a class="example-link" title="Inapplicable Example 11" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/6b811d065fc243c2c94002f315891791e181d518.html">Open in a new tab</a>
+
+This text is part of a [disabled][] widget because it is a child of an element with the `role` attribute set to `button` and with an `aria-disabled` attribute set to `true`.
+
+```html
+<div role="button" style="color: #777; background: #EEE;" aria-disabled="true">My button!</div>
 ```
 
 ## Glossary
@@ -581,7 +627,11 @@ The colors of all the pixels of a [visible](#visible) character in a [text node]
 
 ### Highest Possible Contrast {#highest-possible-contrast}
 
-The highest value of the [contrast ratios](https://www.w3.org/TR/WCAG21/#dfn-contrast-ratio) between two sets of colors.
+The highest value of the [contrast ratios](https://www.w3.org/TR/WCAG21/#dfn-contrast-ratio) between two sets of colors (A and B).
+To calculate the highest value, find the colors in each set with the largest and smallest 
+[relative luminance](https://www.w3.org/TR/WCAG21/#dfn-relative-luminance) (`A-lum-max`, `A-lum-min`, `B-lum-max`, `B-lum-min`). The
+highest possible contrast is then the larger of the [contrast ratios](https://www.w3.org/TR/WCAG21/#dfn-contrast-ratio)
+of `A-lum-max` with `B-lum-min` versus `A-lum-min` with `B-lum-max`.
 
 ### Implicit Semantic Role {#implicit-role}
 

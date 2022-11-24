@@ -3,7 +3,7 @@
   "website": "https://www.w3.org/WAI/standards-guidelines/act/rules/",
   "license": "https://act-rules.github.io/pages/license/",
   "description": "Accessibility conformance testing rules for HTML",
-  "count": 1146,
+  "count": 1154,
   "testcases": [
     {
       "ruleId": "73f2c2",
@@ -14567,10 +14567,10 @@
         }
       },
       "expected": "passed",
-      "testcaseId": "b8e68dccf37727dd39af9fca76a8371a8ec5a81f",
+      "testcaseId": "d9ee6c2ae6da41521bd4ba0bf25c4b6bcd253f37",
       "testcaseTitle": "Passed Example 8",
-      "relativePath": "testcases/e086e5/b8e68dccf37727dd39af9fca76a8371a8ec5a81f.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/e086e5/b8e68dccf37727dd39af9fca76a8371a8ec5a81f.html",
+      "relativePath": "testcases/e086e5/d9ee6c2ae6da41521bd4ba0bf25c4b6bcd253f37.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/e086e5/d9ee6c2ae6da41521bd4ba0bf25c4b6bcd253f37.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/e086e5/proposed/"
     },
     {
@@ -22989,10 +22989,10 @@
         }
       },
       "expected": "passed",
-      "testcaseId": "530b8900297f169b900e2a0dffa96bc878b269a1",
+      "testcaseId": "b5914a5edae45c5c93e1ec30b9a22afe70f504ee",
       "testcaseTitle": "Passed Example 3",
-      "relativePath": "testcases/afw4f7/530b8900297f169b900e2a0dffa96bc878b269a1.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/530b8900297f169b900e2a0dffa96bc878b269a1.html",
+      "relativePath": "testcases/afw4f7/b5914a5edae45c5c93e1ec30b9a22afe70f504ee.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/b5914a5edae45c5c93e1ec30b9a22afe70f504ee.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/afw4f7/proposed/"
     },
     {
@@ -23143,6 +23143,56 @@
       "testcaseTitle": "Passed Example 9",
       "relativePath": "testcases/afw4f7/66a3ba7bc0027a9556596e3c378c926a537c1901.html",
       "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/66a3ba7bc0027a9556596e3c378c926a537c1901.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/afw4f7/proposed/"
+    },
+    {
+      "ruleId": "afw4f7",
+      "ruleName": "Text has minimum contrast",
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.4.3": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:1.4.6": {
+          "forConformance": true,
+          "secondary": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "dc18c6afcd1214d85c49b107eb89c60fbc12ee99",
+      "testcaseTitle": "Passed Example 10",
+      "relativePath": "testcases/afw4f7/dc18c6afcd1214d85c49b107eb89c60fbc12ee99.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/dc18c6afcd1214d85c49b107eb89c60fbc12ee99.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/afw4f7/proposed/"
+    },
+    {
+      "ruleId": "afw4f7",
+      "ruleName": "Text has minimum contrast",
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.4.3": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:1.4.6": {
+          "forConformance": true,
+          "secondary": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "668856825e6d3b4e480005acf97723c7b1004ba3",
+      "testcaseTitle": "Passed Example 11",
+      "relativePath": "testcases/afw4f7/668856825e6d3b4e480005acf97723c7b1004ba3.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/668856825e6d3b4e480005acf97723c7b1004ba3.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/afw4f7/proposed/"
     },
     {
@@ -23363,6 +23413,56 @@
           "inapplicable": "further testing needed"
         }
       },
+      "expected": "failed",
+      "testcaseId": "a7d34d6d1dad765c7e444d3c3f63b18ca4742e9e",
+      "testcaseTitle": "Failed Example 9",
+      "relativePath": "testcases/afw4f7/a7d34d6d1dad765c7e444d3c3f63b18ca4742e9e.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/a7d34d6d1dad765c7e444d3c3f63b18ca4742e9e.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/afw4f7/proposed/"
+    },
+    {
+      "ruleId": "afw4f7",
+      "ruleName": "Text has minimum contrast",
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.4.3": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:1.4.6": {
+          "forConformance": true,
+          "secondary": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "19123c99ec390011b87736827720d5e1e794bad2",
+      "testcaseTitle": "Failed Example 10",
+      "relativePath": "testcases/afw4f7/19123c99ec390011b87736827720d5e1e794bad2.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/19123c99ec390011b87736827720d5e1e794bad2.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/afw4f7/proposed/"
+    },
+    {
+      "ruleId": "afw4f7",
+      "ruleName": "Text has minimum contrast",
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.4.3": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:1.4.6": {
+          "forConformance": true,
+          "secondary": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
       "expected": "inapplicable",
       "testcaseId": "2347a45232c34aa309087ed099f4781cd70b5b1e",
       "testcaseTitle": "Inapplicable Example 1",
@@ -23489,58 +23589,8 @@
         }
       },
       "expected": "inapplicable",
-      "testcaseId": "dc18c6afcd1214d85c49b107eb89c60fbc12ee99",
-      "testcaseTitle": "Inapplicable Example 6",
-      "relativePath": "testcases/afw4f7/dc18c6afcd1214d85c49b107eb89c60fbc12ee99.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/dc18c6afcd1214d85c49b107eb89c60fbc12ee99.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/afw4f7/proposed/"
-    },
-    {
-      "ruleId": "afw4f7",
-      "ruleName": "Text has minimum contrast",
-      "ruleAccessibilityRequirements": {
-        "wcag20:1.4.3": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag20:1.4.6": {
-          "forConformance": true,
-          "secondary": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "inapplicable",
-      "testcaseId": "668856825e6d3b4e480005acf97723c7b1004ba3",
-      "testcaseTitle": "Inapplicable Example 7",
-      "relativePath": "testcases/afw4f7/668856825e6d3b4e480005acf97723c7b1004ba3.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/668856825e6d3b4e480005acf97723c7b1004ba3.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/afw4f7/proposed/"
-    },
-    {
-      "ruleId": "afw4f7",
-      "ruleName": "Text has minimum contrast",
-      "ruleAccessibilityRequirements": {
-        "wcag20:1.4.3": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag20:1.4.6": {
-          "forConformance": true,
-          "secondary": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "inapplicable",
       "testcaseId": "328b967c5b544b48f7acd8e42f2f05d355501f2a",
-      "testcaseTitle": "Inapplicable Example 8",
+      "testcaseTitle": "Inapplicable Example 6",
       "relativePath": "testcases/afw4f7/328b967c5b544b48f7acd8e42f2f05d355501f2a.html",
       "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/328b967c5b544b48f7acd8e42f2f05d355501f2a.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/afw4f7/proposed/"
@@ -23565,7 +23615,7 @@
       },
       "expected": "inapplicable",
       "testcaseId": "7c7d6412dae7381d90517a6f3c0a30104d63062a",
-      "testcaseTitle": "Inapplicable Example 9",
+      "testcaseTitle": "Inapplicable Example 7",
       "relativePath": "testcases/afw4f7/7c7d6412dae7381d90517a6f3c0a30104d63062a.html",
       "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/7c7d6412dae7381d90517a6f3c0a30104d63062a.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/afw4f7/proposed/"
@@ -23590,7 +23640,7 @@
       },
       "expected": "inapplicable",
       "testcaseId": "53386f68326a53798e776b48e81b32659424d6d3",
-      "testcaseTitle": "Inapplicable Example 10",
+      "testcaseTitle": "Inapplicable Example 8",
       "relativePath": "testcases/afw4f7/53386f68326a53798e776b48e81b32659424d6d3.html",
       "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/53386f68326a53798e776b48e81b32659424d6d3.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/afw4f7/proposed/"
@@ -23615,9 +23665,59 @@
       },
       "expected": "inapplicable",
       "testcaseId": "9e3383a60ab67d5988ac2144fec58a34677c52b2",
-      "testcaseTitle": "Inapplicable Example 11",
+      "testcaseTitle": "Inapplicable Example 9",
       "relativePath": "testcases/afw4f7/9e3383a60ab67d5988ac2144fec58a34677c52b2.html",
       "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/9e3383a60ab67d5988ac2144fec58a34677c52b2.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/afw4f7/proposed/"
+    },
+    {
+      "ruleId": "afw4f7",
+      "ruleName": "Text has minimum contrast",
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.4.3": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:1.4.6": {
+          "forConformance": true,
+          "secondary": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "inapplicable",
+      "testcaseId": "b4fcc1ea76d19ae86033ed687613f78297ee6069",
+      "testcaseTitle": "Inapplicable Example 10",
+      "relativePath": "testcases/afw4f7/b4fcc1ea76d19ae86033ed687613f78297ee6069.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/b4fcc1ea76d19ae86033ed687613f78297ee6069.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/afw4f7/proposed/"
+    },
+    {
+      "ruleId": "afw4f7",
+      "ruleName": "Text has minimum contrast",
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.4.3": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:1.4.6": {
+          "forConformance": true,
+          "secondary": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "inapplicable",
+      "testcaseId": "6b811d065fc243c2c94002f315891791e181d518",
+      "testcaseTitle": "Inapplicable Example 11",
+      "relativePath": "testcases/afw4f7/6b811d065fc243c2c94002f315891791e181d518.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/6b811d065fc243c2c94002f315891791e181d518.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/afw4f7/proposed/"
     },
     {
@@ -23858,6 +23958,66 @@
       "testcaseTitle": "Passed Example 8",
       "relativePath": "testcases/09o5cg/66a3ba7bc0027a9556596e3c378c926a537c1901.html",
       "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/66a3ba7bc0027a9556596e3c378c926a537c1901.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/09o5cg/proposed/"
+    },
+    {
+      "ruleId": "09o5cg",
+      "ruleName": "Text has enhanced contrast",
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.4.6": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:G17": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:G18": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "dc18c6afcd1214d85c49b107eb89c60fbc12ee99",
+      "testcaseTitle": "Passed Example 9",
+      "relativePath": "testcases/09o5cg/dc18c6afcd1214d85c49b107eb89c60fbc12ee99.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/dc18c6afcd1214d85c49b107eb89c60fbc12ee99.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/09o5cg/proposed/"
+    },
+    {
+      "ruleId": "09o5cg",
+      "ruleName": "Text has enhanced contrast",
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.4.6": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:G17": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:G18": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "668856825e6d3b4e480005acf97723c7b1004ba3",
+      "testcaseTitle": "Passed Example 10",
+      "relativePath": "testcases/09o5cg/668856825e6d3b4e480005acf97723c7b1004ba3.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/668856825e6d3b4e480005acf97723c7b1004ba3.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/09o5cg/proposed/"
     },
     {
@@ -24183,6 +24343,66 @@
           "inapplicable": "further testing needed"
         }
       },
+      "expected": "failed",
+      "testcaseId": "316b0c7fccdbe8a47716447a9fe2ca197c8358af",
+      "testcaseTitle": "Failed Example 11",
+      "relativePath": "testcases/09o5cg/316b0c7fccdbe8a47716447a9fe2ca197c8358af.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/316b0c7fccdbe8a47716447a9fe2ca197c8358af.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/09o5cg/proposed/"
+    },
+    {
+      "ruleId": "09o5cg",
+      "ruleName": "Text has enhanced contrast",
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.4.6": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:G17": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:G18": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "2e81c3e60722202d2e92089a0695d74e8b49cdaa",
+      "testcaseTitle": "Failed Example 12",
+      "relativePath": "testcases/09o5cg/2e81c3e60722202d2e92089a0695d74e8b49cdaa.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/2e81c3e60722202d2e92089a0695d74e8b49cdaa.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/09o5cg/proposed/"
+    },
+    {
+      "ruleId": "09o5cg",
+      "ruleName": "Text has enhanced contrast",
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.4.6": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:G17": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:G18": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
       "expected": "inapplicable",
       "testcaseId": "2347a45232c34aa309087ed099f4781cd70b5b1e",
       "testcaseTitle": "Inapplicable Example 1",
@@ -24334,68 +24554,8 @@
         }
       },
       "expected": "inapplicable",
-      "testcaseId": "dc18c6afcd1214d85c49b107eb89c60fbc12ee99",
-      "testcaseTitle": "Inapplicable Example 6",
-      "relativePath": "testcases/09o5cg/dc18c6afcd1214d85c49b107eb89c60fbc12ee99.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/dc18c6afcd1214d85c49b107eb89c60fbc12ee99.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/09o5cg/proposed/"
-    },
-    {
-      "ruleId": "09o5cg",
-      "ruleName": "Text has enhanced contrast",
-      "ruleAccessibilityRequirements": {
-        "wcag20:1.4.6": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:G17": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:G18": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "inapplicable",
-      "testcaseId": "668856825e6d3b4e480005acf97723c7b1004ba3",
-      "testcaseTitle": "Inapplicable Example 7",
-      "relativePath": "testcases/09o5cg/668856825e6d3b4e480005acf97723c7b1004ba3.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/668856825e6d3b4e480005acf97723c7b1004ba3.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/09o5cg/proposed/"
-    },
-    {
-      "ruleId": "09o5cg",
-      "ruleName": "Text has enhanced contrast",
-      "ruleAccessibilityRequirements": {
-        "wcag20:1.4.6": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:G17": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:G18": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "inapplicable",
       "testcaseId": "328b967c5b544b48f7acd8e42f2f05d355501f2a",
-      "testcaseTitle": "Inapplicable Example 8",
+      "testcaseTitle": "Inapplicable Example 6",
       "relativePath": "testcases/09o5cg/328b967c5b544b48f7acd8e42f2f05d355501f2a.html",
       "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/328b967c5b544b48f7acd8e42f2f05d355501f2a.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/09o5cg/proposed/"
@@ -24425,7 +24585,7 @@
       },
       "expected": "inapplicable",
       "testcaseId": "7c7d6412dae7381d90517a6f3c0a30104d63062a",
-      "testcaseTitle": "Inapplicable Example 9",
+      "testcaseTitle": "Inapplicable Example 7",
       "relativePath": "testcases/09o5cg/7c7d6412dae7381d90517a6f3c0a30104d63062a.html",
       "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/7c7d6412dae7381d90517a6f3c0a30104d63062a.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/09o5cg/proposed/"
@@ -24455,7 +24615,7 @@
       },
       "expected": "inapplicable",
       "testcaseId": "53386f68326a53798e776b48e81b32659424d6d3",
-      "testcaseTitle": "Inapplicable Example 10",
+      "testcaseTitle": "Inapplicable Example 8",
       "relativePath": "testcases/09o5cg/53386f68326a53798e776b48e81b32659424d6d3.html",
       "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/53386f68326a53798e776b48e81b32659424d6d3.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/09o5cg/proposed/"
@@ -24485,9 +24645,69 @@
       },
       "expected": "inapplicable",
       "testcaseId": "9e3383a60ab67d5988ac2144fec58a34677c52b2",
-      "testcaseTitle": "Inapplicable Example 11",
+      "testcaseTitle": "Inapplicable Example 9",
       "relativePath": "testcases/09o5cg/9e3383a60ab67d5988ac2144fec58a34677c52b2.html",
       "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/9e3383a60ab67d5988ac2144fec58a34677c52b2.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/09o5cg/proposed/"
+    },
+    {
+      "ruleId": "09o5cg",
+      "ruleName": "Text has enhanced contrast",
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.4.6": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:G17": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:G18": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "inapplicable",
+      "testcaseId": "b4fcc1ea76d19ae86033ed687613f78297ee6069",
+      "testcaseTitle": "Inapplicable Example 10",
+      "relativePath": "testcases/09o5cg/b4fcc1ea76d19ae86033ed687613f78297ee6069.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/b4fcc1ea76d19ae86033ed687613f78297ee6069.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/09o5cg/proposed/"
+    },
+    {
+      "ruleId": "09o5cg",
+      "ruleName": "Text has enhanced contrast",
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.4.6": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:G17": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:G18": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "inapplicable",
+      "testcaseId": "6b811d065fc243c2c94002f315891791e181d518",
+      "testcaseTitle": "Inapplicable Example 11",
+      "relativePath": "testcases/09o5cg/6b811d065fc243c2c94002f315891791e181d518.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/6b811d065fc243c2c94002f315891791e181d518.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/09o5cg/proposed/"
     },
     {
