@@ -2,7 +2,7 @@
   "vendor": "US federal government",
   "name": "Trusted Tester",
   "version": 5.1,
-  "lastModified": "8 November 2022",
+  "lastModified": "30 November 2022",
   "approvedRules": {
     "complete": 2,
     "partial": 0,
@@ -11,8 +11,8 @@
     "untested": 19
   },
   "proposedRules": {
-    "complete": 6,
-    "partial": 6,
+    "complete": 7,
+    "partial": 5,
     "minimal": 0,
     "inconsistent": 4,
     "untested": 53
@@ -2140,7 +2140,7 @@
       "procedureNames": [
         "2.4.6-label-descriptive"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -2151,8 +2151,8 @@
         ]
       },
       "coverage": {
-        "covered": 12,
-        "untested": 2,
+        "covered": 14,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 14
       },
@@ -2302,7 +2302,7 @@
             {
               "procedureName": "2.4.6-label-descriptive",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -2362,7 +2362,7 @@
             {
               "procedureName": "2.4.6-label-descriptive",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]

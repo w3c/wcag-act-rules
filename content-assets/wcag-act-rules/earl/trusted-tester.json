@@ -4352,6 +4352,48 @@
         "@type": "TestResult",
         "outcome": "earl:inapplicable"
       }
+    },
+    {
+      "@type": "Assertion",
+      "subject": {
+        "@type": "TestSubject",
+        "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cc0f0a/649946098faf6f36b8232ea74fc3bae3cf8997e7.html"
+      },
+      "test": {
+        "@type": "TestCase",
+        "title": "2.4.6-label-descriptive",
+        "isPartOf": [
+          {
+            "@type": "TestRequirement",
+            "title": "WCAG2, SC 2.4.6"
+          }
+        ]
+      },
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:failed"
+      }
+    },
+    {
+      "@type": "Assertion",
+      "subject": {
+        "@type": "TestSubject",
+        "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cc0f0a/e3debccdca560d85dc223b86e9355db89b505350.html"
+      },
+      "test": {
+        "@type": "TestCase",
+        "title": "2.4.6-label-descriptive",
+        "isPartOf": [
+          {
+            "@type": "TestRequirement",
+            "title": "WCAG2, SC 2.4.6"
+          }
+        ]
+      },
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:inapplicable"
+      }
     }
   ]
 }
