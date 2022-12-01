@@ -1,8 +1,8 @@
 {
   "vendor": "Deque Systems",
   "name": "Axe-core",
-  "version": "4.5",
-  "lastModified": "23 November 2022",
+  "version": "4.6 beta",
+  "lastModified": "1 December 2022",
   "approvedRules": {
     "complete": 22,
     "partial": 0,
@@ -6326,15 +6326,16 @@
           ]
         },
         {
-          "testcaseId": "c18579dc18aaebf7eeaa4e24e4bc199d77c432bc",
+          "testcaseId": "2ffe7d6cfa547dc8b107922a6bd7542ea36c96d6",
           "testCaseName": "Passed Example 5",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ff89c9/c18579dc18aaebf7eeaa4e24e4bc199d77c432bc.html",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ff89c9/2ffe7d6cfa547dc8b107922a6bd7542ea36c96d6.html",
           "testCaseApproved": false,
           "expected": "passed",
           "procedureResults": [
             {
               "procedureName": "aria-required-parent",
               "outcomes": [
+                "passed",
                 "passed",
                 "passed"
               ]
