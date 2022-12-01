@@ -3736,7 +3736,7 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "The `letter-spacing` property is !important and too small",
+        "info": "Bad",
         "outcome": "earl:failed",
         "earl:pointer": {
           "@type": [
@@ -3822,17 +3822,7 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "All text nodes have their `word-spacing` property either wide-enough or not cascaded from the target",
-        "outcome": "earl:passed",
-        "earl:pointer": {
-          "@type": [
-            "ptr:Pointer",
-            "ptr:SinglePointer",
-            "ptr:ExpressionPointer",
-            "ptr:XPathPointer"
-          ],
-          "ptr:expression": "/html[1]/body[1]/p[1]"
-        }
+        "outcome": "earl:inapplicable"
       },
       "subject": {
         "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/51faee765656c7bfe86b959373e1df8679726779.html"
@@ -7922,7 +7912,7 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "All text nodes have their `letter-spacing` property either wide-enough or not cascaded from the target",
+        "info": "Good",
         "outcome": "earl:passed",
         "earl:pointer": {
           "@type": [
@@ -8008,7 +7998,7 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "The `word-spacing` property is !important and too small",
+        "info": "Bad",
         "outcome": "earl:failed",
         "earl:pointer": {
           "@type": [
@@ -8094,7 +8084,7 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "The `line-height` property is !important and too small",
+        "info": "Bad",
         "outcome": "earl:failed",
         "earl:pointer": {
           "@type": [
@@ -12127,7 +12117,7 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "The `letter-spacing` property is !important and too small",
+        "info": "Bad",
         "outcome": "earl:failed",
         "earl:pointer": {
           "@type": [
@@ -12213,7 +12203,7 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "The `word-spacing` property is !important and too small",
+        "info": "Bad",
         "outcome": "earl:failed",
         "earl:pointer": {
           "@type": [
@@ -12299,7 +12289,7 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "The `line-height` property is !important and too small",
+        "info": "Bad",
         "outcome": "earl:failed",
         "earl:pointer": {
           "@type": [
@@ -16354,7 +16344,7 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "All text nodes have their `letter-spacing` property either wide-enough or not cascaded from the target",
+        "info": "Good",
         "outcome": "earl:passed",
         "earl:pointer": {
           "@type": [
@@ -16516,17 +16506,7 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "The `line-height` property is not !important",
-        "outcome": "earl:passed",
-        "earl:pointer": {
-          "@type": [
-            "ptr:Pointer",
-            "ptr:SinglePointer",
-            "ptr:ExpressionPointer",
-            "ptr:XPathPointer"
-          ],
-          "ptr:expression": "/html[1]/body[1]/p[1]"
-        }
+        "outcome": "earl:inapplicable"
       },
       "subject": {
         "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/78fd32/f6c53855436de3898c29ee685d5c1cf02be24c72.html"
@@ -19280,7 +19260,7 @@
             "ptr:ExpressionPointer",
             "ptr:XPathPointer"
           ],
-          "ptr:expression": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/@headers"
+          "ptr:expression": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/@headers"
         }
       },
       "subject": {
@@ -20562,7 +20542,7 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "All text nodes have their `letter-spacing` property either wide-enough or not cascaded from the target",
+        "info": "Good",
         "outcome": "earl:passed",
         "earl:pointer": {
           "@type": [
@@ -20648,7 +20628,7 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "All text nodes have their `word-spacing` property either wide-enough or not cascaded from the target",
+        "info": "Good",
         "outcome": "earl:passed",
         "earl:pointer": {
           "@type": [
@@ -20734,7 +20714,7 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "All text nodes have their `line-height` property either wide-enough or not cascaded from the target",
+        "info": "Good",
         "outcome": "earl:passed",
         "earl:pointer": {
           "@type": [
@@ -24707,7 +24687,7 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "The `letter-spacing` property is !important and too small",
+        "info": "Bad",
         "outcome": "earl:failed",
         "earl:pointer": {
           "@type": [
@@ -24869,17 +24849,7 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "The `line-height` property is not !important",
-        "outcome": "earl:passed",
-        "earl:pointer": {
-          "@type": [
-            "ptr:Pointer",
-            "ptr:SinglePointer",
-            "ptr:ExpressionPointer",
-            "ptr:XPathPointer"
-          ],
-          "ptr:expression": "/html[1]/body[1]/p[1]"
-        }
+        "outcome": "earl:inapplicable"
       },
       "subject": {
         "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/78fd32/b3ba5eaa37846b4b01ca04ae6e5f2d54c4813c1d.html"
@@ -27592,7 +27562,7 @@
             "ptr:ExpressionPointer",
             "ptr:XPathPointer"
           ],
-          "ptr:expression": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/@headers"
+          "ptr:expression": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[2]/@headers"
         }
       },
       "subject": {
@@ -28889,7 +28859,7 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "All text nodes have their `word-spacing` property either wide-enough or not cascaded from the target",
+        "info": "Good",
         "outcome": "earl:passed",
         "earl:pointer": {
           "@type": [
@@ -28975,7 +28945,7 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "The `line-height` property is !important and too small",
+        "info": "Bad",
         "outcome": "earl:failed",
         "earl:pointer": {
           "@type": [
@@ -31341,7 +31311,7 @@
             "ptr:ExpressionPointer",
             "ptr:XPathPointer"
           ],
-          "ptr:expression": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/@headers"
+          "ptr:expression": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[2]/@headers"
         }
       },
       "subject": {
@@ -32496,17 +32466,7 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "The `letter-spacing` property is not !important",
-        "outcome": "earl:passed",
-        "earl:pointer": {
-          "@type": [
-            "ptr:Pointer",
-            "ptr:SinglePointer",
-            "ptr:ExpressionPointer",
-            "ptr:XPathPointer"
-          ],
-          "ptr:expression": "/html[1]/body[1]/p[1]"
-        }
+        "outcome": "earl:inapplicable"
       },
       "subject": {
         "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/24afc2/64b25817b3d3909ab7f4acaee061875ebac1cee3.html"
@@ -32582,17 +32542,7 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "The `word-spacing` property is not !important",
-        "outcome": "earl:passed",
-        "earl:pointer": {
-          "@type": [
-            "ptr:Pointer",
-            "ptr:SinglePointer",
-            "ptr:ExpressionPointer",
-            "ptr:XPathPointer"
-          ],
-          "ptr:expression": "/html[1]/body[1]/p[1]"
-        }
+        "outcome": "earl:inapplicable"
       },
       "subject": {
         "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/fa119442cf663c73bf332488f3965b427b024009.html"
@@ -32668,7 +32618,7 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "The `line-height` property is !important and too small",
+        "info": "Bad",
         "outcome": "earl:failed",
         "earl:pointer": {
           "@type": [
@@ -36190,17 +36140,7 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "The `letter-spacing` property is not !important",
-        "outcome": "earl:passed",
-        "earl:pointer": {
-          "@type": [
-            "ptr:Pointer",
-            "ptr:SinglePointer",
-            "ptr:ExpressionPointer",
-            "ptr:XPathPointer"
-          ],
-          "ptr:expression": "/html[1]/body[1]/p[1]"
-        }
+        "outcome": "earl:inapplicable"
       },
       "subject": {
         "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/24afc2/6aa2034507dc16e6ae0d16f1b6f2a14d3dfadc18.html"
@@ -36276,7 +36216,7 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "The `word-spacing` property is !important and too small",
+        "info": "Bad",
         "outcome": "earl:failed",
         "earl:pointer": {
           "@type": [
@@ -36362,7 +36302,7 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "All text nodes have their `line-height` property either wide-enough or not cascaded from the target",
+        "info": "Good",
         "outcome": "earl:passed",
         "earl:pointer": {
           "@type": [
@@ -39702,17 +39642,7 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "All text nodes have their `letter-spacing` property either wide-enough or not cascaded from the target",
-        "outcome": "earl:passed",
-        "earl:pointer": {
-          "@type": [
-            "ptr:Pointer",
-            "ptr:SinglePointer",
-            "ptr:ExpressionPointer",
-            "ptr:XPathPointer"
-          ],
-          "ptr:expression": "/html[1]/body[1]/p[1]"
-        }
+        "outcome": "earl:inapplicable"
       },
       "subject": {
         "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/24afc2/9608b535262c655f523314958f8ca3019a0968fe.html"
@@ -39788,7 +39718,7 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "The `word-spacing` property is !important and too small",
+        "info": "Bad",
         "outcome": "earl:failed",
         "earl:pointer": {
           "@type": [
@@ -39874,7 +39804,7 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "All text nodes have their `line-height` property either wide-enough or not cascaded from the target",
+        "info": "Good",
         "outcome": "earl:passed",
         "earl:pointer": {
           "@type": [
@@ -42706,7 +42636,7 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "All text nodes have their `word-spacing` property either wide-enough or not cascaded from the target",
+        "info": "Good",
         "outcome": "earl:passed",
         "earl:pointer": {
           "@type": [
@@ -42792,7 +42722,7 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "The `line-height` property is !important and too small",
+        "info": "Bad",
         "outcome": "earl:failed",
         "earl:pointer": {
           "@type": [
@@ -44467,7 +44397,7 @@
             "ptr:ExpressionPointer",
             "ptr:XPathPointer"
           ],
-          "ptr:expression": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/@headers"
+          "ptr:expression": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[2]/@headers"
         }
       },
       "subject": {
@@ -45341,17 +45271,7 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "The `word-spacing` property is not !important",
-        "outcome": "earl:passed",
-        "earl:pointer": {
-          "@type": [
-            "ptr:Pointer",
-            "ptr:SinglePointer",
-            "ptr:ExpressionPointer",
-            "ptr:XPathPointer"
-          ],
-          "ptr:expression": "/html[1]/body[1]/p[1]"
-        }
+        "outcome": "earl:inapplicable"
       },
       "subject": {
         "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/edaf06132468eccf5fd90551151252a364b44b7b.html"
@@ -46934,7 +46854,7 @@
             "ptr:ExpressionPointer",
             "ptr:XPathPointer"
           ],
-          "ptr:expression": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/th[1]/@headers"
+          "ptr:expression": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/th[2]/@headers"
         }
       },
       "subject": {
@@ -47771,7 +47691,7 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "The `letter-spacing` property is !important and too small",
+        "info": "Bad",
         "outcome": "earl:failed",
         "earl:pointer": {
           "@type": [
@@ -47857,7 +47777,7 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "All text nodes have their `word-spacing` property either wide-enough or not cascaded from the target",
+        "info": "Good",
         "outcome": "earl:passed",
         "earl:pointer": {
           "@type": [
@@ -47943,7 +47863,7 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "All text nodes have their `line-height` property either wide-enough or not cascaded from the target",
+        "info": "Good",
         "outcome": "earl:passed",
         "earl:pointer": {
           "@type": [
@@ -50167,17 +50087,7 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "The `letter-spacing` property is not !important",
-        "outcome": "earl:passed",
-        "earl:pointer": {
-          "@type": [
-            "ptr:Pointer",
-            "ptr:SinglePointer",
-            "ptr:ExpressionPointer",
-            "ptr:XPathPointer"
-          ],
-          "ptr:expression": "/html[1]/body[1]/p[1]"
-        }
+        "outcome": "earl:inapplicable"
       },
       "subject": {
         "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/24afc2/1877242970bb7a92b5c8ee7bc5c5e5ec87877890.html"
@@ -50253,17 +50163,7 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "The `word-spacing` property is not !important",
-        "outcome": "earl:passed",
-        "earl:pointer": {
-          "@type": [
-            "ptr:Pointer",
-            "ptr:SinglePointer",
-            "ptr:ExpressionPointer",
-            "ptr:XPathPointer"
-          ],
-          "ptr:expression": "/html[1]/body[1]/p[1]"
-        }
+        "outcome": "earl:inapplicable"
       },
       "subject": {
         "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/d32bae2609b7c0c66a1df8dbfc182fb10c16805d.html"
@@ -50339,17 +50239,7 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "The `line-height` property is not !important",
-        "outcome": "earl:passed",
-        "earl:pointer": {
-          "@type": [
-            "ptr:Pointer",
-            "ptr:SinglePointer",
-            "ptr:ExpressionPointer",
-            "ptr:XPathPointer"
-          ],
-          "ptr:expression": "/html[1]/body[1]/p[1]"
-        }
+        "outcome": "earl:inapplicable"
       },
       "subject": {
         "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/78fd32/0f8063a09807c4bf8d5f7c796cbf0f2aa20e7e57.html"
@@ -51680,7 +51570,7 @@
             "ptr:ExpressionPointer",
             "ptr:XPathPointer"
           ],
-          "ptr:expression": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/th[1]/@headers"
+          "ptr:expression": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/th[2]/@headers"
         }
       },
       "subject": {
@@ -52346,7 +52236,7 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "All text nodes have their `letter-spacing` property either wide-enough or not cascaded from the target",
+        "info": "Good",
         "outcome": "earl:passed",
         "earl:pointer": {
           "@type": [
@@ -52432,7 +52322,7 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "The `word-spacing` property is !important and too small",
+        "info": "Bad",
         "outcome": "earl:failed",
         "earl:pointer": {
           "@type": [
@@ -52518,7 +52408,7 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "The `line-height` property is !important and too small",
+        "info": "Bad",
         "outcome": "earl:failed",
         "earl:pointer": {
           "@type": [
@@ -53344,7 +53234,37 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:inapplicable"
+        "info": "The links resolve to the same resource",
+        "outcome": "earl:passed",
+        "earl:pointer": {
+          "@type": [
+            "ptr:Pointer",
+            "ptr:PointersGroup",
+            "ptr:RelatedPointers"
+          ],
+          "ptr:groupPointer": {
+            "@list": [
+              {
+                "@type": [
+                  "ptr:Pointer",
+                  "ptr:SinglePointer",
+                  "ptr:ExpressionPointer",
+                  "ptr:XPathPointer"
+                ],
+                "ptr:expression": "/html[1]/body[1]/a[1]"
+              },
+              {
+                "@type": [
+                  "ptr:Pointer",
+                  "ptr:SinglePointer",
+                  "ptr:ExpressionPointer",
+                  "ptr:XPathPointer"
+                ],
+                "ptr:expression": "/html[1]/body[1]/a[1]"
+              }
+            ]
+          }
+        }
       },
       "subject": {
         "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b20e66/e339e9e7b77f88ce8041dba8e672a618f515df84.html"
@@ -53989,7 +53909,7 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "The `letter-spacing` property is !important and too small",
+        "info": "Bad",
         "outcome": "earl:failed",
         "earl:pointer": {
           "@type": [
@@ -55504,17 +55424,7 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "All text nodes have their `line-height` property either wide-enough or not cascaded from the target",
-        "outcome": "earl:passed",
-        "earl:pointer": {
-          "@type": [
-            "ptr:Pointer",
-            "ptr:SinglePointer",
-            "ptr:ExpressionPointer",
-            "ptr:XPathPointer"
-          ],
-          "ptr:expression": "/html[1]/body[1]/p[1]"
-        }
+        "outcome": "earl:inapplicable"
       },
       "subject": {
         "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/78fd32/a2bfcb630ad36d8f8e49fb02aa5b3d8db2aec2fc.html"
@@ -56128,7 +56038,37 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:inapplicable"
+        "info": "The links resolve to the same resource",
+        "outcome": "earl:passed",
+        "earl:pointer": {
+          "@type": [
+            "ptr:Pointer",
+            "ptr:PointersGroup",
+            "ptr:RelatedPointers"
+          ],
+          "ptr:groupPointer": {
+            "@list": [
+              {
+                "@type": [
+                  "ptr:Pointer",
+                  "ptr:SinglePointer",
+                  "ptr:ExpressionPointer",
+                  "ptr:XPathPointer"
+                ],
+                "ptr:expression": "/html[1]/body[1]/a[1]"
+              },
+              {
+                "@type": [
+                  "ptr:Pointer",
+                  "ptr:SinglePointer",
+                  "ptr:ExpressionPointer",
+                  "ptr:XPathPointer"
+                ],
+                "ptr:expression": "/a[1]"
+              }
+            ]
+          }
+        }
       },
       "subject": {
         "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b20e66/2283add5996728d458e4b6a7376071b354744a19.html"
@@ -56569,7 +56509,7 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "The `line-height` property is !important and too small",
+        "info": "Bad",
         "outcome": "earl:failed",
         "earl:pointer": {
           "@type": [
@@ -57607,7 +57547,7 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "All text nodes have their `line-height` property either wide-enough or not cascaded from the target",
+        "info": "Good",
         "outcome": "earl:passed",
         "earl:pointer": {
           "@type": [
@@ -58365,7 +58305,7 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "All text nodes have their `line-height` property either wide-enough or not cascaded from the target",
+        "info": "Good",
         "outcome": "earl:passed",
         "earl:pointer": {
           "@type": [
@@ -58959,7 +58899,7 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "The `line-height` property is !important and too small",
+        "info": "Bad",
         "outcome": "earl:failed",
         "earl:pointer": {
           "@type": [

@@ -2,7 +2,7 @@
   "vendor": "Siteimprove",
   "name": "Alfa",
   "version": "0.43.1",
-  "lastModified": "2 August 2022",
+  "lastModified": "1 December 2022",
   "approvedRules": {
     "complete": 14,
     "partial": 3,
@@ -2625,7 +2625,7 @@
             {
               "procedureName": "sia-r91",
               "outcomes": [
-                "passed"
+                "inapplicable"
               ]
             }
           ]
@@ -2700,7 +2700,7 @@
             {
               "procedureName": "sia-r91",
               "outcomes": [
-                "passed"
+                "inapplicable"
               ]
             }
           ]
@@ -2715,7 +2715,7 @@
             {
               "procedureName": "sia-r91",
               "outcomes": [
-                "passed"
+                "inapplicable"
               ]
             }
           ]
@@ -2730,7 +2730,7 @@
             {
               "procedureName": "sia-r91",
               "outcomes": [
-                "passed"
+                "inapplicable"
               ]
             }
           ]
@@ -3341,7 +3341,7 @@
             {
               "procedureName": "sia-r92",
               "outcomes": [
-                "passed"
+                "inapplicable"
               ]
             }
           ]
@@ -3416,7 +3416,7 @@
             {
               "procedureName": "sia-r92",
               "outcomes": [
-                "passed"
+                "inapplicable"
               ]
             }
           ]
@@ -3431,7 +3431,7 @@
             {
               "procedureName": "sia-r92",
               "outcomes": [
-                "passed"
+                "inapplicable"
               ]
             }
           ]
@@ -3446,7 +3446,7 @@
             {
               "procedureName": "sia-r92",
               "outcomes": [
-                "passed"
+                "inapplicable"
               ]
             }
           ]
@@ -4447,7 +4447,7 @@
             {
               "procedureName": "sia-r93",
               "outcomes": [
-                "passed"
+                "inapplicable"
               ]
             }
           ]
@@ -4552,7 +4552,7 @@
             {
               "procedureName": "sia-r93",
               "outcomes": [
-                "passed"
+                "inapplicable"
               ]
             }
           ]
@@ -4567,7 +4567,7 @@
             {
               "procedureName": "sia-r93",
               "outcomes": [
-                "passed"
+                "inapplicable"
               ]
             }
           ]
@@ -4582,7 +4582,7 @@
             {
               "procedureName": "sia-r93",
               "outcomes": [
-                "passed"
+                "inapplicable"
               ]
             }
           ]
@@ -8530,7 +8530,7 @@
             {
               "procedureName": "sia-r41",
               "outcomes": [
-                "inapplicable"
+                "passed"
               ]
             }
           ]
@@ -8545,7 +8545,7 @@
             {
               "procedureName": "sia-r41",
               "outcomes": [
-                "inapplicable"
+                "passed"
               ]
             }
           ]
