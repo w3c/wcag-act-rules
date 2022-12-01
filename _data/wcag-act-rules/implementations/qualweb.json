@@ -2,7 +2,7 @@
   "vendor": "LASIGE, Faculdade de Ciências da Universidade de Lisboa",
   "name": "QualWeb",
   "version": "3.0.0",
-  "lastModified": "22 November 2022",
+  "lastModified": "29 November 2022",
   "approvedRules": {
     "complete": 13,
     "partial": 5,
@@ -1126,8 +1126,8 @@
         ]
       },
       "coverage": {
-        "covered": 18,
-        "untested": 1,
+        "covered": 19,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 19
       },
@@ -1397,7 +1397,7 @@
             {
               "procedureName": "Form control has accessible name",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -12833,9 +12833,9 @@
         ]
       },
       "coverage": {
-        "covered": 25,
-        "untested": 5,
-        "cantTell": 2,
+        "covered": 27,
+        "untested": 0,
+        "cantTell": 3,
         "testCaseTotal": 32
       },
       "testCaseResults": [
@@ -12879,7 +12879,7 @@
             {
               "procedureName": "Text has minimum contrast",
               "outcomes": [
-                "untested"
+                "cantTell"
               ]
             }
           ]
@@ -13134,7 +13134,7 @@
             {
               "procedureName": "Text has minimum contrast",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -13149,7 +13149,7 @@
             {
               "procedureName": "Text has minimum contrast",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -13299,7 +13299,7 @@
             {
               "procedureName": "Text has minimum contrast",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -13314,7 +13314,7 @@
             {
               "procedureName": "Text has minimum contrast",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -13339,8 +13339,8 @@
         ]
       },
       "coverage": {
-        "covered": 27,
-        "untested": 4,
+        "covered": 29,
+        "untested": 0,
         "cantTell": 2,
         "testCaseTotal": 33
       },
@@ -13655,7 +13655,7 @@
             {
               "procedureName": "Text has enhanced contrast",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -13670,7 +13670,7 @@
             {
               "procedureName": "Text has enhanced contrast",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -13820,7 +13820,7 @@
             {
               "procedureName": "Text has enhanced contrast",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -13835,7 +13835,7 @@
             {
               "procedureName": "Text has enhanced contrast",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
