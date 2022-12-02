@@ -2,7 +2,7 @@
   "vendor": "Deque Systems",
   "name": "Axe-core",
   "version": "4.6 beta",
-  "lastModified": "1 December 2022",
+  "lastModified": "2 December 2022",
   "approvedRules": {
     "complete": 22,
     "partial": 0,
@@ -11,8 +11,8 @@
     "untested": 0
   },
   "proposedRules": {
-    "complete": 11,
-    "partial": 7,
+    "complete": 12,
+    "partial": 6,
     "minimal": 8,
     "inconsistent": 4,
     "untested": 39
@@ -6242,9 +6242,10 @@
       "ruleName": "ARIA required context role",
       "ruleApproved": false,
       "procedureNames": [
+        "aria-required-children",
         "aria-required-parent"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -6255,7 +6256,7 @@
         ]
       },
       "coverage": {
-        "covered": 14,
+        "covered": 15,
         "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 15
@@ -6268,6 +6269,12 @@
           "testCaseApproved": false,
           "expected": "passed",
           "procedureResults": [
+            {
+              "procedureName": "aria-required-children",
+              "outcomes": [
+                "passed"
+              ]
+            },
             {
               "procedureName": "aria-required-parent",
               "outcomes": [
@@ -6285,6 +6292,12 @@
           "expected": "passed",
           "procedureResults": [
             {
+              "procedureName": "aria-required-children",
+              "outcomes": [
+                "inapplicable"
+              ]
+            },
+            {
               "procedureName": "aria-required-parent",
               "outcomes": [
                 "passed",
@@ -6300,6 +6313,12 @@
           "testCaseApproved": false,
           "expected": "passed",
           "procedureResults": [
+            {
+              "procedureName": "aria-required-children",
+              "outcomes": [
+                "passed"
+              ]
+            },
             {
               "procedureName": "aria-required-parent",
               "outcomes": [
@@ -6317,6 +6336,12 @@
           "expected": "passed",
           "procedureResults": [
             {
+              "procedureName": "aria-required-children",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
               "procedureName": "aria-required-parent",
               "outcomes": [
                 "passed",
@@ -6332,6 +6357,12 @@
           "testCaseApproved": false,
           "expected": "passed",
           "procedureResults": [
+            {
+              "procedureName": "aria-required-children",
+              "outcomes": [
+                "passed"
+              ]
+            },
             {
               "procedureName": "aria-required-parent",
               "outcomes": [
@@ -6350,6 +6381,12 @@
           "expected": "passed",
           "procedureResults": [
             {
+              "procedureName": "aria-required-children",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
               "procedureName": "aria-required-parent",
               "outcomes": [
                 "passed",
@@ -6366,6 +6403,12 @@
           "expected": "failed",
           "procedureResults": [
             {
+              "procedureName": "aria-required-children",
+              "outcomes": [
+                "inapplicable"
+              ]
+            },
+            {
               "procedureName": "aria-required-parent",
               "outcomes": [
                 "failed"
@@ -6380,6 +6423,12 @@
           "testCaseApproved": false,
           "expected": "failed",
           "procedureResults": [
+            {
+              "procedureName": "aria-required-children",
+              "outcomes": [
+                "failed"
+              ]
+            },
             {
               "procedureName": "aria-required-parent",
               "outcomes": [
@@ -6397,6 +6446,12 @@
           "expected": "failed",
           "procedureResults": [
             {
+              "procedureName": "aria-required-children",
+              "outcomes": [
+                "failed"
+              ]
+            },
+            {
               "procedureName": "aria-required-parent",
               "outcomes": [
                 "passed",
@@ -6412,6 +6467,12 @@
           "testCaseApproved": false,
           "expected": "failed",
           "procedureResults": [
+            {
+              "procedureName": "aria-required-children",
+              "outcomes": [
+                "failed"
+              ]
+            },
             {
               "procedureName": "aria-required-parent",
               "outcomes": [
@@ -6429,6 +6490,12 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
+              "procedureName": "aria-required-children",
+              "outcomes": [
+                "inapplicable"
+              ]
+            },
+            {
               "procedureName": "aria-required-parent",
               "outcomes": [
                 "inapplicable"
@@ -6443,6 +6510,12 @@
           "testCaseApproved": false,
           "expected": "inapplicable",
           "procedureResults": [
+            {
+              "procedureName": "aria-required-children",
+              "outcomes": [
+                "inapplicable"
+              ]
+            },
             {
               "procedureName": "aria-required-parent",
               "outcomes": [
@@ -6459,6 +6532,12 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
+              "procedureName": "aria-required-children",
+              "outcomes": [
+                "inapplicable"
+              ]
+            },
+            {
               "procedureName": "aria-required-parent",
               "outcomes": [
                 "inapplicable"
@@ -6474,6 +6553,12 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
+              "procedureName": "aria-required-children",
+              "outcomes": [
+                "inapplicable"
+              ]
+            },
+            {
               "procedureName": "aria-required-parent",
               "outcomes": [
                 "inapplicable"
@@ -6488,6 +6573,12 @@
           "testCaseApproved": false,
           "expected": "inapplicable",
           "procedureResults": [
+            {
+              "procedureName": "aria-required-children",
+              "outcomes": [
+                "inapplicable"
+              ]
+            },
             {
               "procedureName": "aria-required-parent",
               "outcomes": [
