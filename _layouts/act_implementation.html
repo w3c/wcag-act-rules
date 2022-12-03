@@ -55,52 +55,56 @@ layout: standalone_resource
   </p></div>
 </aside>
 
-<table class="act-rules-summary">
-  <caption>Number of Rules Implemented</caption>
-  <tr>
-    <th></th>
-    <th>Consistent</th>
-    <th>Partially consistent</th>
-  </tr>
-  <tr>
-    <th>WCAG 2 rules</th>
-    <td>{{ implementation.approvedRules.complete }}</td>
-    <td>{{ implementation.approvedRules.partial | plus: implementation.approvedRules.minimal }}</td>
-  </tr>
-  <tr>
-    <th>Proposed rules</th>
-    <td>{{ implementation.proposedRules.complete }}</td>
-    <td>{{ implementation.proposedRules.partial | plus: implementation.proposedRules.minimal }}</td>
-  </tr>
-</table>
+<div class="scroll-wrap">
+  <table class="act-rules-summary">
+    <caption>Number of Rules Implemented</caption>
+    <tr>
+      <th></th>
+      <th>Consistent</th>
+      <th>Partially consistent</th>
+    </tr>
+    <tr>
+      <th>WCAG 2 rules</th>
+      <td>{{ implementation.approvedRules.complete }}</td>
+      <td>{{ implementation.approvedRules.partial | plus: implementation.approvedRules.minimal }}</td>
+    </tr>
+    <tr>
+      <th>Proposed rules</th>
+      <td>{{ implementation.proposedRules.complete }}</td>
+      <td>{{ implementation.proposedRules.partial | plus: implementation.proposedRules.minimal }}</td>
+    </tr>
+  </table>
+</div>
 
 <h2>Implemented Rules</h2>
-<table class="act-implemented-rules">
-  <thead>
-    <tr>
-      <th>Rule Name</th>
-      <th>Type</th>
-      <th>Consistency</th>
-    </tr>
-  </thead>
-  <tbody>
-    {% for ruleMapping in implementation.actRuleMapping  %}
-    {% if ruleMapping.consistency != null %}
+<div class="scroll-wrap">
+  <table class="act-implemented-rules">
+    <thead>
       <tr>
-        <td><a href="#breakdown-{{ ruleMapping.ruleId }}">
-          {{ ruleMapping.ruleName | remove: '`' }}
-        </a></td>
-        <td>{% if ruleMapping.ruleApproved %}
-          WCAG 2 Rule {% else %} Proposed Rule
-        {% endif %}</td>
-        <td>{% if ruleMapping.consistency == 'complete' %}
-          Consistent {% else %} Partial
-        {% endif %}</td>
+        <th>Rule Name</th>
+        <th>Type</th>
+        <th>Consistency</th>
       </tr>
-    {% endif %}
-    {% endfor %}
-  </tbody>
-</table>
+    </thead>
+    <tbody>
+      {% for ruleMapping in implementation.actRuleMapping  %}
+      {% if ruleMapping.consistency != null %}
+        <tr>
+          <td><a href="#breakdown-{{ ruleMapping.ruleId }}">
+            {{ ruleMapping.ruleName | remove: '`' }}
+          </a></td>
+          <td>{% if ruleMapping.ruleApproved %}
+            WCAG 2 Rule {% else %} Proposed Rule
+          {% endif %}</td>
+          <td>{% if ruleMapping.consistency == 'complete' %}
+            Consistent {% else %} Partial
+          {% endif %}</td>
+        </tr>
+      {% endif %}
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
 
 <h2>About {{ implementationInfo.name }} Results</h2>
 
@@ -176,72 +180,76 @@ layout: standalone_resource
 </p>
 
 {% if ruleMapping.accessibilityRequirements %}
-<table class="act-requirements">
-  <caption>Success Criteria</caption>
-  <tr> <th>Expected</th> <th>Reported</th></tr>
-  <tr>
-    <td>
-      {% if ruleMapping.accessibilityRequirements.expected.size > 0 %}
-        <ul>{% for requirementKey in ruleMapping.accessibilityRequirements.expected %}
-          <li>
-            {{ requirements[requirementKey].num }}
-            {{ requirements[requirementKey].handle }}
-          </li>
-        {% endfor %}</ul>
-      {% else %} None {% endif %}
-    </td>
+<div class="scroll-wrap">
+  <table class="act-requirements">
+    <caption>Success Criteria</caption>
+    <tr> <th>Expected</th> <th>Reported</th></tr>
+    <tr>
+      <td>
+        {% if ruleMapping.accessibilityRequirements.expected.size > 0 %}
+          <ul>{% for requirementKey in ruleMapping.accessibilityRequirements.expected %}
+            <li>
+              {{ requirements[requirementKey].num }}
+              {{ requirements[requirementKey].handle }}
+            </li>
+          {% endfor %}</ul>
+        {% else %} None {% endif %}
+      </td>
 
-    <td>
-      {% if ruleMapping.accessibilityRequirements.reported.size > 0 %}
-        <ul>{% for requirementKey in ruleMapping.accessibilityRequirements.reported %}
-          <li>
-            {{ requirements[requirementKey].num }}
-            {{ requirements[requirementKey].handle }}
-          </li>
-        {% endfor %}</ul>
-      {% else %} None {% endif %}
-    </td>
-  </tr>
-</table>
+      <td>
+        {% if ruleMapping.accessibilityRequirements.reported.size > 0 %}
+          <ul>{% for requirementKey in ruleMapping.accessibilityRequirements.reported %}
+            <li>
+              {{ requirements[requirementKey].num }}
+              {{ requirements[requirementKey].handle }}
+            </li>
+          {% endfor %}</ul>
+        {% else %} None {% endif %}
+      </td>
+    </tr>
+  </table>
+</div>
 {% endif %}
 
-<table class="act-example-outcomes">
-  <caption>Test Results</caption>
-  <thead>
-    <tr>
-      <th></th>
-      {%- for procedureName in ruleMapping.procedureNames %}
-      <th>{{ procedureName }}</th>
-      {%- endfor %}
-    </tr>
-  </thead>
+<div class="scroll-wrap">
+  <table class="act-example-outcomes">
+    <caption>Test Results</caption>
+    <thead>
+      <tr>
+        <th></th>
+        {%- for procedureName in ruleMapping.procedureNames %}
+        <th>{{ procedureName }}</th>
+        {%- endfor %}
+      </tr>
+    </thead>
 
-  <tbody>
-    {%- for result in ruleMapping.testCaseResults %}
-    <tr>
-      <th>
-        <a href="{{ result.testCaseUrl }}">{{ result.testCaseName }}</a>
-        {%- if ruleMapping.ruleApproved and result.testCaseApproved == false %}
-          <abbr title="Proposed example">*</abbr>
-        {%- endif %}
-      </th>
-      {%- for procedureResult in result.procedureResults %}
-      {%- assign outcome = procedureResult.outcomes | uniq | join: ", " %}
-      <td class="
-        {%- if outcome contains 'cantTell' -%}
-        act-cannot-tell
-        {%- elsif outcome contains 'untested' -%}
-        act-untested
-        {%- elsif result.expected != 'failed' or outcome contains 'failed' -%}
-        {%- else %}
-          act-false-negative
-        {%- endif -%}
-      ">{{ outcome | replace: "cantTell", "cannot tell" }}</td>
+    <tbody>
+      {%- for result in ruleMapping.testCaseResults %}
+      <tr>
+        <th>
+          <a href="{{ result.testCaseUrl }}">{{ result.testCaseName }}</a>
+          {%- if ruleMapping.ruleApproved and result.testCaseApproved == false %}
+            <abbr title="Proposed example">*</abbr>
+          {%- endif %}
+        </th>
+        {%- for procedureResult in result.procedureResults %}
+        {%- assign outcome = procedureResult.outcomes | uniq | join: ", " %}
+        <td class="
+          {%- if outcome contains 'cantTell' -%}
+          act-cannot-tell
+          {%- elsif outcome contains 'untested' -%}
+          act-untested
+          {%- elsif result.expected != 'failed' or outcome contains 'failed' -%}
+          {%- else %}
+            act-false-negative
+          {%- endif -%}
+        ">{{ outcome | replace: "cantTell", "cannot tell" }}</td>
+        {%- endfor %}
+      </tr>
       {%- endfor %}
-    </tr>
-    {%- endfor %}
-  </tbody>
-</table>
+    </tbody>
+  </table>
+</div>
 
 {%- assign proposedCases = ruleMapping.testCaseResults | where: "testCaseApproved", false %}
 {%- if ruleMapping.ruleApproved == true and proposedCases.size > 0 %}
