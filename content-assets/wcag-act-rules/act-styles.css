@@ -2,6 +2,12 @@ nav.nav li:last-of-type {
   display: none;
 }
 
+/* For tables wider than the viewport */
+.scroll-wrap {
+  width: 100%;
+  overflow-x: auto;
+}
+
 table.act-implementations {
   width: 100%;
 }
