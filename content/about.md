@@ -49,6 +49,14 @@ WCAG success criteria typically cover several aspects and technologies, while AC
 
 ACT Rules can be implemented by accessibility test tools and methodologies. Each rule comes with a number of passed, failed, and inapplicable examples. By running the tool or methodology against the examples its consistency with the rule can be determined. Vendors who publish such test results are included in the [ACT Rules Implementation in Test Tools and Methodologies List]({{ '/standards-guidelines/act/implementations/' | relative_url }}).
 
+## Who develops ACT
+
+The [ACT Task Force](https://www.w3.org/WAI/GL/task-forces/conformance-testing/) of the W3C Accessibility Guidelines Working Group ([AG WG](https://www.w3.org/WAI/GL/)) develops the [ACT Rules Format](https://www.w3.org/TR/act-rules-format/) specification. The ACT Task Force also reviews test rules contributed by the community in first instance. Formal publication of the ACT Rules Format specification and of ACT Rules listed on this page is made by AG WG.
+
+The [ACT Rules Community Group](https://www.w3.org/community/act-r/) develops test rules according to the ACT Rules Format specification. These rules by the community group do not have any formal standing in the W3C process.
+
+Opportunities for contributing to ACT and other WAI work are introduced in [Participating in WAI](https://www.w3.org/WAI/participation).
+
 ## Related Pages
 
 - [Accessibility Conformance Testing (ACT) Rules Format 1.0 {% include_cached icon.html name="different-view" %}](https://www.w3.org/WAI/standards-guidelines/act/)
