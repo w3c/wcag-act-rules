@@ -2,19 +2,19 @@
   "vendor": "PowerMapper",
   "name": "SortSite",
   "version": 6.45,
-  "lastModified": "20 October 2022",
+  "lastModified": "2 December 2022",
   "approvedRules": {
-    "complete": 20,
-    "partial": 2,
+    "complete": 22,
+    "partial": 0,
     "minimal": 0,
     "inconsistent": 0,
     "untested": 0
   },
   "proposedRules": {
-    "complete": 12,
-    "partial": 6,
+    "complete": 18,
+    "partial": 1,
     "minimal": 0,
-    "inconsistent": 1,
+    "inconsistent": 0,
     "untested": 50
   },
   "actRuleMapping": [
@@ -1126,8 +1126,8 @@
         ]
       },
       "coverage": {
-        "covered": 17,
-        "untested": 2,
+        "covered": 19,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 19
       },
@@ -1397,7 +1397,7 @@
             {
               "procedureName": "AccHtmlControlLabelMissing",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -1412,7 +1412,7 @@
             {
               "procedureName": "AccHtmlControlLabelMissing",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -1688,7 +1688,7 @@
       "procedureNames": [
         "AccPageXmlLangMismatch"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -1699,8 +1699,8 @@
         ]
       },
       "coverage": {
-        "covered": 11,
-        "untested": 1,
+        "covered": 12,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 12
       },
@@ -1880,7 +1880,7 @@
             {
               "procedureName": "AccPageXmlLangMismatch",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -4158,7 +4158,7 @@
       "procedureNames": [
         "AccAriaHiddenFocusableContent"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -4169,8 +4169,8 @@
         ]
       },
       "coverage": {
-        "covered": 12,
-        "untested": 3,
+        "covered": 15,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 15
       },
@@ -4230,7 +4230,7 @@
             {
               "procedureName": "AccAriaHiddenFocusableContent",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -4260,7 +4260,7 @@
             {
               "procedureName": "AccAriaHiddenFocusableContent",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -4350,7 +4350,7 @@
             {
               "procedureName": "AccAriaHiddenFocusableContent",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -5617,7 +5617,7 @@
       "procedureNames": [
         "W3cHtml5AriaRequiredParentRoles-*"
       ],
-      "consistency": "complete",
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -5628,8 +5628,8 @@
         ]
       },
       "coverage": {
-        "covered": 15,
-        "untested": 0,
+        "covered": 14,
+        "untested": 1,
         "cantTell": 0,
         "testCaseTotal": 15
       },
@@ -5695,16 +5695,16 @@
           ]
         },
         {
-          "testcaseId": "c18579dc18aaebf7eeaa4e24e4bc199d77c432bc",
+          "testcaseId": "2ffe7d6cfa547dc8b107922a6bd7542ea36c96d6",
           "testCaseName": "Passed Example 5",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ff89c9/c18579dc18aaebf7eeaa4e24e4bc199d77c432bc.html",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ff89c9/2ffe7d6cfa547dc8b107922a6bd7542ea36c96d6.html",
           "testCaseApproved": false,
           "expected": "passed",
           "procedureResults": [
             {
               "procedureName": "W3cHtml5AriaRequiredParentRoles-*",
               "outcomes": [
-                "passed"
+                "untested"
               ]
             }
           ]
@@ -5868,7 +5868,7 @@
       "procedureNames": [
         "W3cHtml5AriaRequiredChildRole-*"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -5879,8 +5879,8 @@
         ]
       },
       "coverage": {
-        "covered": 15,
-        "untested": 1,
+        "covered": 17,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 17
       },
@@ -6060,7 +6060,7 @@
             {
               "procedureName": "W3cHtml5AriaRequiredChildRole-*",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -6075,7 +6075,7 @@
             {
               "procedureName": "W3cHtml5AriaRequiredChildRole-*",
               "outcomes": [
-                "passed"
+                "failed"
               ]
             }
           ]
@@ -6149,15 +6149,15 @@
       "procedureNames": [
         "W3cHtml5Error-RnvErAkey-aria-*"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
         "reported": []
       },
       "coverage": {
-        "covered": 15,
-        "untested": 1,
+        "covered": 16,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 16
       },
@@ -6367,7 +6367,7 @@
             {
               "procedureName": "W3cHtml5Error-RnvErAkey-aria-*",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -6411,15 +6411,15 @@
       "procedureNames": [
         "W3cHtml5Error-RnvErAval-aria-*"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
         "reported": []
       },
       "coverage": {
-        "covered": 22,
-        "untested": 2,
+        "covered": 24,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 24
       },
@@ -6554,7 +6554,7 @@
             {
               "procedureName": "W3cHtml5Error-RnvErAval-aria-*",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -6689,7 +6689,7 @@
             {
               "procedureName": "W3cHtml5Error-RnvErAval-aria-*",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -7749,7 +7749,7 @@
       "procedureNames": [
         "AccHtmlFrameTitleMissing"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -7760,8 +7760,8 @@
         ]
       },
       "coverage": {
-        "covered": 9,
-        "untested": 1,
+        "covered": 10,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 10
       },
@@ -7911,7 +7911,7 @@
             {
               "procedureName": "AccHtmlFrameTitleMissing",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -8652,17 +8652,19 @@
       "procedureNames": [
         "W3cHtml5Error-RnvErAmis-*"
       ],
-      "consistency": null,
+      "consistency": "complete",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:name-role-value"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:name-role-value"
+        ]
       },
       "coverage": {
-        "covered": 4,
-        "untested": 11,
+        "covered": 15,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 15
       },
@@ -8677,7 +8679,7 @@
             {
               "procedureName": "W3cHtml5Error-RnvErAmis-*",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -8692,7 +8694,7 @@
             {
               "procedureName": "W3cHtml5Error-RnvErAmis-*",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -8722,7 +8724,7 @@
             {
               "procedureName": "W3cHtml5Error-RnvErAmis-*",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -8737,7 +8739,7 @@
             {
               "procedureName": "W3cHtml5Error-RnvErAmis-*",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -8752,7 +8754,7 @@
             {
               "procedureName": "W3cHtml5Error-RnvErAmis-*",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -8767,7 +8769,7 @@
             {
               "procedureName": "W3cHtml5Error-RnvErAmis-*",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -8782,7 +8784,7 @@
             {
               "procedureName": "W3cHtml5Error-RnvErAmis-*",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -8797,7 +8799,7 @@
             {
               "procedureName": "W3cHtml5Error-RnvErAmis-*",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -8812,7 +8814,7 @@
             {
               "procedureName": "W3cHtml5Error-RnvErAmis-*",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -8827,7 +8829,7 @@
             {
               "procedureName": "W3cHtml5Error-RnvErAmis-*",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -8842,7 +8844,7 @@
             {
               "procedureName": "W3cHtml5Error-RnvErAmis-*",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -9353,7 +9355,7 @@
       "procedureNames": [
         "AccHtmlContrastMinimum"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -9365,8 +9367,8 @@
         ]
       },
       "coverage": {
-        "covered": 27,
-        "untested": 5,
+        "covered": 32,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 32
       },
@@ -9411,7 +9413,7 @@
             {
               "procedureName": "AccHtmlContrastMinimum",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -9666,7 +9668,7 @@
             {
               "procedureName": "AccHtmlContrastMinimum",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -9681,7 +9683,7 @@
             {
               "procedureName": "AccHtmlContrastMinimum",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -9831,7 +9833,7 @@
             {
               "procedureName": "AccHtmlContrastMinimum",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -9846,7 +9848,7 @@
             {
               "procedureName": "AccHtmlContrastMinimum",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -9860,7 +9862,7 @@
       "procedureNames": [
         "AccHtmlContrastEnhanced"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -9871,8 +9873,8 @@
         ]
       },
       "coverage": {
-        "covered": 29,
-        "untested": 4,
+        "covered": 33,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 33
       },
@@ -10187,7 +10189,7 @@
             {
               "procedureName": "AccHtmlContrastEnhanced",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -10202,7 +10204,7 @@
             {
               "procedureName": "AccHtmlContrastEnhanced",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -10352,7 +10354,7 @@
             {
               "procedureName": "AccHtmlContrastEnhanced",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -10367,7 +10369,7 @@
             {
               "procedureName": "AccHtmlContrastEnhanced",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
