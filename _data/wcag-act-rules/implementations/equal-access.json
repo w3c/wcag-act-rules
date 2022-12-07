@@ -3661,9 +3661,9 @@
       },
       "coverage": {
         "covered": 17,
-        "untested": 0,
+        "untested": 1,
         "cantTell": 0,
-        "testCaseTotal": 17
+        "testCaseTotal": 18
       },
       "testCaseResults": [
         {
@@ -3917,6 +3917,21 @@
               "procedureName": "table_headers_ref_valid:Pass_0,Fail_1,Fail_2,Fail_3,Fail_4",
               "outcomes": [
                 "inapplicable"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "17e68991f57cd20cd5c9fcf564d5a23ebb08c0f0",
+          "testCaseName": "Inapplicable Example 6",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/17e68991f57cd20cd5c9fcf564d5a23ebb08c0f0.html",
+          "testCaseApproved": false,
+          "expected": "inapplicable",
+          "procedureResults": [
+            {
+              "procedureName": "table_headers_ref_valid:Pass_0,Fail_1,Fail_2,Fail_3,Fail_4",
+              "outcomes": [
+                "untested"
               ]
             }
           ]
