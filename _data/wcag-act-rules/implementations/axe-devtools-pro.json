@@ -2,7 +2,7 @@
   "vendor": "Deque Systems",
   "name": "Axe DevTools Pro",
   "version": "4.37.1",
-  "lastModified": "7 December 2022",
+  "lastModified": "8 December 2022",
   "approvedRules": {
     "complete": 22,
     "partial": 0,
@@ -4509,8 +4509,8 @@
         ]
       },
       "coverage": {
-        "covered": 17,
-        "untested": 1,
+        "covered": 18,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 18
       },
@@ -4781,7 +4781,7 @@
             {
               "procedureName": "td-headers-attr",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
