@@ -2,12 +2,12 @@
   "vendor": "Siteimprove",
   "name": "Alfa",
   "version": "0.53.0",
-  "lastModified": "9 December 2022",
+  "lastModified": "12 December 2022",
   "approvedRules": {
-    "complete": 14,
+    "complete": 15,
     "partial": 2,
     "minimal": 0,
-    "inconsistent": 6,
+    "inconsistent": 5,
     "untested": 0
   },
   "proposedRules": {
@@ -1427,7 +1427,7 @@
       "procedureNames": [
         "sia-r4"
       ],
-      "consistency": null,
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -1441,7 +1441,7 @@
       "coverage": {
         "covered": 6,
         "untested": 0,
-        "cantTell": 0,
+        "cantTell": 1,
         "testCaseTotal": 7
       },
       "testCaseResults": [
@@ -1545,7 +1545,7 @@
             {
               "procedureName": "sia-r4",
               "outcomes": [
-                "failed"
+                "cantTell"
               ]
             }
           ]
@@ -1702,9 +1702,9 @@
         ]
       },
       "coverage": {
-        "covered": 12,
+        "covered": 11,
         "untested": 0,
-        "cantTell": 0,
+        "cantTell": 1,
         "testCaseTotal": 12
       },
       "testCaseResults": [
@@ -1823,7 +1823,7 @@
             {
               "procedureName": "sia-r6",
               "outcomes": [
-                "inapplicable"
+                "cantTell"
               ]
             }
           ]
@@ -6449,9 +6449,9 @@
         "reported": []
       },
       "coverage": {
-        "covered": 23,
+        "covered": 22,
         "untested": 0,
-        "cantTell": 0,
+        "cantTell": 1,
         "testCaseTotal": 24
       },
       "testCaseResults": [
@@ -6810,7 +6810,7 @@
             {
               "procedureName": "sia-r19",
               "outcomes": [
-                "inapplicable"
+                "cantTell"
               ]
             }
           ]
