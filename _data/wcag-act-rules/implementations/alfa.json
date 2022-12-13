@@ -2,17 +2,17 @@
   "vendor": "Siteimprove",
   "name": "Alfa",
   "version": "0.53.0",
-  "lastModified": "12 December 2022",
+  "lastModified": "13 December 2022",
   "approvedRules": {
-    "complete": 15,
-    "partial": 2,
+    "complete": 16,
+    "partial": 1,
     "minimal": 0,
     "inconsistent": 5,
     "untested": 0
   },
   "proposedRules": {
-    "complete": 5,
-    "partial": 7,
+    "complete": 6,
+    "partial": 6,
     "minimal": 3,
     "inconsistent": 9,
     "untested": 45
@@ -4776,7 +4776,7 @@
       "procedureNames": [
         "sia-r9"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -4791,8 +4791,8 @@
         ]
       },
       "coverage": {
-        "covered": 13,
-        "untested": 2,
+        "covered": 15,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 15
       },
@@ -4807,7 +4807,7 @@
             {
               "procedureName": "sia-r9",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -4822,7 +4822,7 @@
             {
               "procedureName": "sia-r9",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -9170,7 +9170,7 @@
       "procedureNames": [
         "sia-r96"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -9185,8 +9185,8 @@
         ]
       },
       "coverage": {
-        "covered": 11,
-        "untested": 2,
+        "covered": 13,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 13
       },
@@ -9201,7 +9201,7 @@
             {
               "procedureName": "sia-r96",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -9216,7 +9216,7 @@
             {
               "procedureName": "sia-r96",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
