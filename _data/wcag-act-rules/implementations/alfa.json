@@ -2,10 +2,10 @@
   "vendor": "Siteimprove",
   "name": "Alfa",
   "version": "0.53.0",
-  "lastModified": "13 December 2022",
+  "lastModified": "14 December 2022",
   "approvedRules": {
-    "complete": 16,
-    "partial": 1,
+    "complete": 17,
+    "partial": 0,
     "minimal": 0,
     "inconsistent": 5,
     "untested": 0
@@ -3899,7 +3899,7 @@
         ]
       },
       "coverage": {
-        "covered": 17,
+        "covered": 18,
         "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 18
@@ -4170,7 +4170,7 @@
             {
               "procedureName": "sia-r45",
               "outcomes": [
-                "failed"
+                "inapplicable"
               ]
             }
           ]
@@ -5031,15 +5031,14 @@
       "procedureNames": [
         "sia-r47"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:resize-text"
         ],
         "reported": [
-          "WCAG2:resize-text",
-          "WCAG2:reflow"
+          "WCAG2:resize-text"
         ]
       },
       "coverage": {

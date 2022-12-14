@@ -2681,26 +2681,15 @@
           "TestCriterion",
           "TestCase"
         ],
-        "isPartOf": [
-          {
-            "@id": "WCAG2:resize-text",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-            "title": "Resize text"
-          },
-          {
-            "@id": "WCAG2:reflow",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-            "title": "Reflow"
-          }
-        ]
+        "isPartOf": {
+          "@id": "WCAG2:resize-text",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ],
+          "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
+          "title": "Resize text"
+        }
       }
     },
     {
@@ -6847,26 +6836,15 @@
           "TestCriterion",
           "TestCase"
         ],
-        "isPartOf": [
-          {
-            "@id": "WCAG2:resize-text",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-            "title": "Resize text"
-          },
-          {
-            "@id": "WCAG2:reflow",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-            "title": "Reflow"
-          }
-        ]
+        "isPartOf": {
+          "@id": "WCAG2:resize-text",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ],
+          "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
+          "title": "Resize text"
+        }
       }
     },
     {
@@ -11063,26 +11041,15 @@
           "TestCriterion",
           "TestCase"
         ],
-        "isPartOf": [
-          {
-            "@id": "WCAG2:resize-text",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-            "title": "Resize text"
-          },
-          {
-            "@id": "WCAG2:reflow",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-            "title": "Reflow"
-          }
-        ]
+        "isPartOf": {
+          "@id": "WCAG2:resize-text",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ],
+          "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
+          "title": "Resize text"
+        }
       }
     },
     {
@@ -15359,26 +15326,15 @@
           "TestCriterion",
           "TestCase"
         ],
-        "isPartOf": [
-          {
-            "@id": "WCAG2:resize-text",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-            "title": "Resize text"
-          },
-          {
-            "@id": "WCAG2:reflow",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-            "title": "Reflow"
-          }
-        ]
+        "isPartOf": {
+          "@id": "WCAG2:resize-text",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ],
+          "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
+          "title": "Resize text"
+        }
       }
     },
     {
@@ -19321,17 +19277,7 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "The `headers` attribute refers to the cell defining it",
-        "outcome": "earl:failed",
-        "earl:pointer": {
-          "@type": [
-            "ptr:Pointer",
-            "ptr:SinglePointer",
-            "ptr:ExpressionPointer",
-            "ptr:XPathPointer"
-          ],
-          "ptr:expression": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/@headers"
-        }
+        "outcome": "earl:inapplicable"
       },
       "subject": {
         "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/17e68991f57cd20cd5c9fcf564d5a23ebb08c0f0.html"
@@ -19536,26 +19482,15 @@
           "TestCriterion",
           "TestCase"
         ],
-        "isPartOf": [
-          {
-            "@id": "WCAG2:resize-text",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-            "title": "Resize text"
-          },
-          {
-            "@id": "WCAG2:reflow",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-            "title": "Reflow"
-          }
-        ]
+        "isPartOf": {
+          "@id": "WCAG2:resize-text",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ],
+          "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
+          "title": "Resize text"
+        }
       }
     },
     {
@@ -23548,7 +23483,7 @@
             "ptr:ExpressionPointer",
             "ptr:XPathPointer"
           ],
-          "ptr:expression": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/@headers"
+          "ptr:expression": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/@headers"
         }
       },
       "subject": {
@@ -23754,26 +23689,15 @@
           "TestCriterion",
           "TestCase"
         ],
-        "isPartOf": [
-          {
-            "@id": "WCAG2:resize-text",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-            "title": "Resize text"
-          },
-          {
-            "@id": "WCAG2:reflow",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-            "title": "Reflow"
-          }
-        ]
+        "isPartOf": {
+          "@id": "WCAG2:resize-text",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ],
+          "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
+          "title": "Resize text"
+        }
       }
     },
     {
@@ -27812,26 +27736,15 @@
           "TestCriterion",
           "TestCase"
         ],
-        "isPartOf": [
-          {
-            "@id": "WCAG2:resize-text",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-            "title": "Resize text"
-          },
-          {
-            "@id": "WCAG2:reflow",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-            "title": "Reflow"
-          }
-        ]
+        "isPartOf": {
+          "@id": "WCAG2:resize-text",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ],
+          "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
+          "title": "Resize text"
+        }
       }
     },
     {
@@ -31646,26 +31559,15 @@
           "TestCriterion",
           "TestCase"
         ],
-        "isPartOf": [
-          {
-            "@id": "WCAG2:resize-text",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-            "title": "Resize text"
-          },
-          {
-            "@id": "WCAG2:reflow",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-            "title": "Reflow"
-          }
-        ]
+        "isPartOf": {
+          "@id": "WCAG2:resize-text",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ],
+          "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
+          "title": "Resize text"
+        }
       }
     },
     {
@@ -35291,26 +35193,15 @@
           "TestCriterion",
           "TestCase"
         ],
-        "isPartOf": [
-          {
-            "@id": "WCAG2:resize-text",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-            "title": "Resize text"
-          },
-          {
-            "@id": "WCAG2:reflow",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-            "title": "Reflow"
-          }
-        ]
+        "isPartOf": {
+          "@id": "WCAG2:resize-text",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ],
+          "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
+          "title": "Resize text"
+        }
       }
     },
     {
@@ -38890,26 +38781,15 @@
           "TestCriterion",
           "TestCase"
         ],
-        "isPartOf": [
-          {
-            "@id": "WCAG2:resize-text",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-            "title": "Resize text"
-          },
-          {
-            "@id": "WCAG2:reflow",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-            "title": "Reflow"
-          }
-        ]
+        "isPartOf": {
+          "@id": "WCAG2:resize-text",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ],
+          "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
+          "title": "Resize text"
+        }
       }
     },
     {
@@ -42078,26 +41958,15 @@
           "TestCriterion",
           "TestCase"
         ],
-        "isPartOf": [
-          {
-            "@id": "WCAG2:resize-text",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-            "title": "Resize text"
-          },
-          {
-            "@id": "WCAG2:reflow",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-            "title": "Reflow"
-          }
-        ]
+        "isPartOf": {
+          "@id": "WCAG2:resize-text",
+          "@type": [
+            "TestCriterion",
+            "TestRequirement"
+          ],
+          "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
+          "title": "Resize text"
+        }
       }
     },
     {
@@ -44676,7 +44545,7 @@
             "ptr:ExpressionPointer",
             "ptr:XPathPointer"
           ],
-          "ptr:expression": "/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[1]/@headers"
+          "ptr:expression": "/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[2]/@headers"
         }
       },
       "subject": {
@@ -49729,7 +49598,7 @@
             "ptr:ExpressionPointer",
             "ptr:XPathPointer"
           ],
-          "ptr:expression": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/th[1]/@headers"
+          "ptr:expression": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/th[2]/@headers"
         }
       },
       "subject": {
@@ -52108,7 +51977,7 @@
             "ptr:ExpressionPointer",
             "ptr:XPathPointer"
           ],
-          "ptr:expression": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/@headers"
+          "ptr:expression": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[2]/@headers"
         }
       },
       "subject": {
@@ -54039,7 +53908,7 @@
             "ptr:ExpressionPointer",
             "ptr:XPathPointer"
           ],
-          "ptr:expression": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/th[4]/@headers"
+          "ptr:expression": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/@headers"
         }
       },
       "subject": {
