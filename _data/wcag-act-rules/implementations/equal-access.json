@@ -2,19 +2,19 @@
   "vendor": "IBM Accessibility",
   "name": "Equal Access Accessibility Checker",
   "version": "3.1.36",
-  "lastModified": "9 November 2022",
+  "lastModified": "15 December 2022",
   "approvedRules": {
-    "complete": 12,
+    "complete": 13,
     "partial": 4,
     "minimal": 0,
-    "inconsistent": 3,
+    "inconsistent": 2,
     "untested": 3
   },
   "proposedRules": {
-    "complete": 2,
+    "complete": 4,
     "partial": 7,
     "minimal": 0,
-    "inconsistent": 3,
+    "inconsistent": 1,
     "untested": 57
   },
   "actRuleMapping": [
@@ -23,9 +23,9 @@
       "ruleName": "`autocomplete` attribute has valid value",
       "ruleApproved": true,
       "procedureNames": [
-        "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_attribute_incorrect"
+        "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_2,Fail_attribute_incorrect"
       ],
-      "consistency": null,
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -36,7 +36,7 @@
         ]
       },
       "coverage": {
-        "covered": 19,
+        "covered": 20,
         "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 20
@@ -50,7 +50,7 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_attribute_incorrect",
+              "procedureName": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_2,Fail_attribute_incorrect",
               "outcomes": [
                 "passed"
               ]
@@ -65,7 +65,7 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_attribute_incorrect",
+              "procedureName": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_2,Fail_attribute_incorrect",
               "outcomes": [
                 "passed"
               ]
@@ -80,7 +80,7 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_attribute_incorrect",
+              "procedureName": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_2,Fail_attribute_incorrect",
               "outcomes": [
                 "passed"
               ]
@@ -95,7 +95,7 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_attribute_incorrect",
+              "procedureName": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_2,Fail_attribute_incorrect",
               "outcomes": [
                 "passed"
               ]
@@ -110,7 +110,7 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_attribute_incorrect",
+              "procedureName": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_2,Fail_attribute_incorrect",
               "outcomes": [
                 "passed"
               ]
@@ -125,7 +125,7 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_attribute_incorrect",
+              "procedureName": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_2,Fail_attribute_incorrect",
               "outcomes": [
                 "passed"
               ]
@@ -140,7 +140,7 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_attribute_incorrect",
+              "procedureName": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_2,Fail_attribute_incorrect",
               "outcomes": [
                 "passed"
               ]
@@ -155,9 +155,9 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_attribute_incorrect",
+              "procedureName": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_2,Fail_attribute_incorrect",
               "outcomes": [
-                "failed"
+                "passed"
               ]
             }
           ]
@@ -170,7 +170,7 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_attribute_incorrect",
+              "procedureName": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_2,Fail_attribute_incorrect",
               "outcomes": [
                 "failed"
               ]
@@ -185,7 +185,7 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_attribute_incorrect",
+              "procedureName": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_2,Fail_attribute_incorrect",
               "outcomes": [
                 "failed"
               ]
@@ -200,7 +200,7 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_attribute_incorrect",
+              "procedureName": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_2,Fail_attribute_incorrect",
               "outcomes": [
                 "failed"
               ]
@@ -215,7 +215,7 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_attribute_incorrect",
+              "procedureName": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_2,Fail_attribute_incorrect",
               "outcomes": [
                 "failed"
               ]
@@ -230,7 +230,7 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_attribute_incorrect",
+              "procedureName": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_2,Fail_attribute_incorrect",
               "outcomes": [
                 "failed"
               ]
@@ -245,7 +245,7 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_attribute_incorrect",
+              "procedureName": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_2,Fail_attribute_incorrect",
               "outcomes": [
                 "inapplicable"
               ]
@@ -260,7 +260,7 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_attribute_incorrect",
+              "procedureName": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_2,Fail_attribute_incorrect",
               "outcomes": [
                 "inapplicable"
               ]
@@ -275,7 +275,7 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_attribute_incorrect",
+              "procedureName": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_2,Fail_attribute_incorrect",
               "outcomes": [
                 "inapplicable"
               ]
@@ -290,7 +290,7 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_attribute_incorrect",
+              "procedureName": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_2,Fail_attribute_incorrect",
               "outcomes": [
                 "inapplicable"
               ]
@@ -305,7 +305,7 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_attribute_incorrect",
+              "procedureName": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_2,Fail_attribute_incorrect",
               "outcomes": [
                 "inapplicable"
               ]
@@ -320,7 +320,7 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_attribute_incorrect",
+              "procedureName": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_2,Fail_attribute_incorrect",
               "outcomes": [
                 "inapplicable"
               ]
@@ -335,9 +335,9 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_attribute_incorrect",
+              "procedureName": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_2,Fail_attribute_incorrect",
               "outcomes": [
-                "passed"
+                "inapplicable"
               ]
             }
           ]
@@ -1128,8 +1128,8 @@
         ]
       },
       "coverage": {
-        "covered": 17,
-        "untested": 2,
+        "covered": 19,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 19
       },
@@ -1399,7 +1399,7 @@
             {
               "procedureName": "WCAG20_Input_ExplicitLabel:Pass_0,Fail_1,Fail_2",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -1414,7 +1414,7 @@
             {
               "procedureName": "WCAG20_Input_ExplicitLabel:Pass_0,Fail_1,Fail_2",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -3660,8 +3660,8 @@
         ]
       },
       "coverage": {
-        "covered": 17,
-        "untested": 1,
+        "covered": 18,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 18
       },
@@ -3931,7 +3931,7 @@
             {
               "procedureName": "table_headers_ref_valid:Pass_0,Fail_1,Fail_2,Fail_3,Fail_4",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -5174,8 +5174,8 @@
         ]
       },
       "coverage": {
-        "covered": 13,
-        "untested": 1,
+        "covered": 14,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 15
       },
@@ -5250,7 +5250,7 @@
             {
               "procedureName": "Rpt_Aria_RequiredParent_Native_Host_Sematics:Pass_0,Fail_1",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -5705,7 +5705,7 @@
       },
       "coverage": {
         "covered": 15,
-        "untested": 1,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 16
       },
@@ -5915,7 +5915,7 @@
             {
               "procedureName": "aria_attribute_allowed:Pass,Fail_invalid_role_attr,Fail_invalid_implicit_role_attr",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -5968,8 +5968,8 @@
         ]
       },
       "coverage": {
-        "covered": 20,
-        "untested": 2,
+        "covered": 22,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 24
       },
@@ -6104,7 +6104,7 @@
             {
               "procedureName": "Rpt_Aria_ValidPropertyValue:Pass_0,Fail_1",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -6239,7 +6239,7 @@
             {
               "procedureName": "Rpt_Aria_ValidPropertyValue:Pass_0,Fail_1",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -7176,8 +7176,8 @@
         "reported": []
       },
       "coverage": {
-        "covered": 6,
-        "untested": 7,
+        "covered": 10,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 13
       },
@@ -7213,13 +7213,13 @@
             {
               "procedureName": "RPT_Meta_Refresh:Pass_0,Potential_1",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             },
             {
               "procedureName": "WCAG20_Meta_RedirectZero:pass,fail,fail_longrefresh",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -7234,13 +7234,13 @@
             {
               "procedureName": "RPT_Meta_Refresh:Pass_0,Potential_1",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             },
             {
               "procedureName": "WCAG20_Meta_RedirectZero:pass,fail,fail_longrefresh",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -7255,13 +7255,13 @@
             {
               "procedureName": "RPT_Meta_Refresh:Pass_0,Potential_1",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             },
             {
               "procedureName": "WCAG20_Meta_RedirectZero:pass,fail,fail_longrefresh",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -7276,13 +7276,13 @@
             {
               "procedureName": "RPT_Meta_Refresh:Pass_0,Potential_1",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             },
             {
               "procedureName": "WCAG20_Meta_RedirectZero:pass,fail,fail_longrefresh",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -7318,13 +7318,13 @@
             {
               "procedureName": "RPT_Meta_Refresh:Pass_0,Potential_1",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             },
             {
               "procedureName": "WCAG20_Meta_RedirectZero:pass,fail,fail_longrefresh",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -7381,13 +7381,13 @@
             {
               "procedureName": "RPT_Meta_Refresh:Pass_0,Potential_1",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             },
             {
               "procedureName": "WCAG20_Meta_RedirectZero:pass,fail,fail_longrefresh",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -7423,13 +7423,13 @@
             {
               "procedureName": "RPT_Meta_Refresh:Pass_0,Potential_1",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             },
             {
               "procedureName": "WCAG20_Meta_RedirectZero:pass,fail,fail_longrefresh",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -7656,20 +7656,22 @@
       "ruleName": "Element with role attribute has required states and properties",
       "ruleApproved": false,
       "procedureNames": [
-        "combobox_popup_reference:Pass_expanded,Pass_collapsed,Fail_1.2_missing_controls,Fail_1.2_popup_reference_missing",
-        "Rpt_Aria_RequiredProperties:Pass_0,Fail_1"
+        "Rpt_Aria_RequiredProperties:Pass_0,Fail_1",
+        "combobox_popup_reference:Pass_1.0_expanded,Pass_1.0_collapsed,Pass_1.2_expanded,Pass_1.2_collapsed,Fail_1.2_missing_controls,Fail_1.2_popup_reference_missing"
       ],
-      "consistency": null,
+      "consistency": "complete",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:name-role-value"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:name-role-value"
+        ]
       },
       "coverage": {
-        "covered": 4,
-        "untested": 11,
+        "covered": 15,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 15
       },
@@ -7682,15 +7684,15 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "combobox_popup_reference:Pass_expanded,Pass_collapsed,Fail_1.2_missing_controls,Fail_1.2_popup_reference_missing",
+              "procedureName": "Rpt_Aria_RequiredProperties:Pass_0,Fail_1",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             },
             {
-              "procedureName": "Rpt_Aria_RequiredProperties:Pass_0,Fail_1",
+              "procedureName": "combobox_popup_reference:Pass_1.0_expanded,Pass_1.0_collapsed,Pass_1.2_expanded,Pass_1.2_collapsed,Fail_1.2_missing_controls,Fail_1.2_popup_reference_missing",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -7703,15 +7705,15 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "combobox_popup_reference:Pass_expanded,Pass_collapsed,Fail_1.2_missing_controls,Fail_1.2_popup_reference_missing",
+              "procedureName": "Rpt_Aria_RequiredProperties:Pass_0,Fail_1",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             },
             {
-              "procedureName": "Rpt_Aria_RequiredProperties:Pass_0,Fail_1",
+              "procedureName": "combobox_popup_reference:Pass_1.0_expanded,Pass_1.0_collapsed,Pass_1.2_expanded,Pass_1.2_collapsed,Fail_1.2_missing_controls,Fail_1.2_popup_reference_missing",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -7724,15 +7726,15 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "combobox_popup_reference:Pass_expanded,Pass_collapsed,Fail_1.2_missing_controls,Fail_1.2_popup_reference_missing",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
               "procedureName": "Rpt_Aria_RequiredProperties:Pass_0,Fail_1",
               "outcomes": [
                 "passed"
+              ]
+            },
+            {
+              "procedureName": "combobox_popup_reference:Pass_1.0_expanded,Pass_1.0_collapsed,Pass_1.2_expanded,Pass_1.2_collapsed,Fail_1.2_missing_controls,Fail_1.2_popup_reference_missing",
+              "outcomes": [
+                "inapplicable"
               ]
             }
           ]
@@ -7745,15 +7747,15 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "combobox_popup_reference:Pass_expanded,Pass_collapsed,Fail_1.2_missing_controls,Fail_1.2_popup_reference_missing",
+              "procedureName": "Rpt_Aria_RequiredProperties:Pass_0,Fail_1",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             },
             {
-              "procedureName": "Rpt_Aria_RequiredProperties:Pass_0,Fail_1",
+              "procedureName": "combobox_popup_reference:Pass_1.0_expanded,Pass_1.0_collapsed,Pass_1.2_expanded,Pass_1.2_collapsed,Fail_1.2_missing_controls,Fail_1.2_popup_reference_missing",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -7766,15 +7768,15 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "combobox_popup_reference:Pass_expanded,Pass_collapsed,Fail_1.2_missing_controls,Fail_1.2_popup_reference_missing",
+              "procedureName": "Rpt_Aria_RequiredProperties:Pass_0,Fail_1",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             },
             {
-              "procedureName": "Rpt_Aria_RequiredProperties:Pass_0,Fail_1",
+              "procedureName": "combobox_popup_reference:Pass_1.0_expanded,Pass_1.0_collapsed,Pass_1.2_expanded,Pass_1.2_collapsed,Fail_1.2_missing_controls,Fail_1.2_popup_reference_missing",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -7787,15 +7789,15 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "combobox_popup_reference:Pass_expanded,Pass_collapsed,Fail_1.2_missing_controls,Fail_1.2_popup_reference_missing",
+              "procedureName": "Rpt_Aria_RequiredProperties:Pass_0,Fail_1",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             },
             {
-              "procedureName": "Rpt_Aria_RequiredProperties:Pass_0,Fail_1",
+              "procedureName": "combobox_popup_reference:Pass_1.0_expanded,Pass_1.0_collapsed,Pass_1.2_expanded,Pass_1.2_collapsed,Fail_1.2_missing_controls,Fail_1.2_popup_reference_missing",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -7808,15 +7810,15 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "combobox_popup_reference:Pass_expanded,Pass_collapsed,Fail_1.2_missing_controls,Fail_1.2_popup_reference_missing",
+              "procedureName": "Rpt_Aria_RequiredProperties:Pass_0,Fail_1",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             },
             {
-              "procedureName": "Rpt_Aria_RequiredProperties:Pass_0,Fail_1",
+              "procedureName": "combobox_popup_reference:Pass_1.0_expanded,Pass_1.0_collapsed,Pass_1.2_expanded,Pass_1.2_collapsed,Fail_1.2_missing_controls,Fail_1.2_popup_reference_missing",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -7829,15 +7831,15 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "combobox_popup_reference:Pass_expanded,Pass_collapsed,Fail_1.2_missing_controls,Fail_1.2_popup_reference_missing",
+              "procedureName": "Rpt_Aria_RequiredProperties:Pass_0,Fail_1",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             },
             {
-              "procedureName": "Rpt_Aria_RequiredProperties:Pass_0,Fail_1",
+              "procedureName": "combobox_popup_reference:Pass_1.0_expanded,Pass_1.0_collapsed,Pass_1.2_expanded,Pass_1.2_collapsed,Fail_1.2_missing_controls,Fail_1.2_popup_reference_missing",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -7850,15 +7852,15 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "combobox_popup_reference:Pass_expanded,Pass_collapsed,Fail_1.2_missing_controls,Fail_1.2_popup_reference_missing",
+              "procedureName": "Rpt_Aria_RequiredProperties:Pass_0,Fail_1",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             },
             {
-              "procedureName": "Rpt_Aria_RequiredProperties:Pass_0,Fail_1",
+              "procedureName": "combobox_popup_reference:Pass_1.0_expanded,Pass_1.0_collapsed,Pass_1.2_expanded,Pass_1.2_collapsed,Fail_1.2_missing_controls,Fail_1.2_popup_reference_missing",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -7871,15 +7873,15 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "combobox_popup_reference:Pass_expanded,Pass_collapsed,Fail_1.2_missing_controls,Fail_1.2_popup_reference_missing",
+              "procedureName": "Rpt_Aria_RequiredProperties:Pass_0,Fail_1",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             },
             {
-              "procedureName": "Rpt_Aria_RequiredProperties:Pass_0,Fail_1",
+              "procedureName": "combobox_popup_reference:Pass_1.0_expanded,Pass_1.0_collapsed,Pass_1.2_expanded,Pass_1.2_collapsed,Fail_1.2_missing_controls,Fail_1.2_popup_reference_missing",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -7892,15 +7894,15 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "combobox_popup_reference:Pass_expanded,Pass_collapsed,Fail_1.2_missing_controls,Fail_1.2_popup_reference_missing",
+              "procedureName": "Rpt_Aria_RequiredProperties:Pass_0,Fail_1",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             },
             {
-              "procedureName": "Rpt_Aria_RequiredProperties:Pass_0,Fail_1",
+              "procedureName": "combobox_popup_reference:Pass_1.0_expanded,Pass_1.0_collapsed,Pass_1.2_expanded,Pass_1.2_collapsed,Fail_1.2_missing_controls,Fail_1.2_popup_reference_missing",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -7913,15 +7915,15 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "combobox_popup_reference:Pass_expanded,Pass_collapsed,Fail_1.2_missing_controls,Fail_1.2_popup_reference_missing",
+              "procedureName": "Rpt_Aria_RequiredProperties:Pass_0,Fail_1",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             },
             {
-              "procedureName": "Rpt_Aria_RequiredProperties:Pass_0,Fail_1",
+              "procedureName": "combobox_popup_reference:Pass_1.0_expanded,Pass_1.0_collapsed,Pass_1.2_expanded,Pass_1.2_collapsed,Fail_1.2_missing_controls,Fail_1.2_popup_reference_missing",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -7934,13 +7936,13 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "combobox_popup_reference:Pass_expanded,Pass_collapsed,Fail_1.2_missing_controls,Fail_1.2_popup_reference_missing",
+              "procedureName": "Rpt_Aria_RequiredProperties:Pass_0,Fail_1",
               "outcomes": [
                 "inapplicable"
               ]
             },
             {
-              "procedureName": "Rpt_Aria_RequiredProperties:Pass_0,Fail_1",
+              "procedureName": "combobox_popup_reference:Pass_1.0_expanded,Pass_1.0_collapsed,Pass_1.2_expanded,Pass_1.2_collapsed,Fail_1.2_missing_controls,Fail_1.2_popup_reference_missing",
               "outcomes": [
                 "inapplicable"
               ]
@@ -7955,13 +7957,13 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "combobox_popup_reference:Pass_expanded,Pass_collapsed,Fail_1.2_missing_controls,Fail_1.2_popup_reference_missing",
+              "procedureName": "Rpt_Aria_RequiredProperties:Pass_0,Fail_1",
               "outcomes": [
                 "inapplicable"
               ]
             },
             {
-              "procedureName": "Rpt_Aria_RequiredProperties:Pass_0,Fail_1",
+              "procedureName": "combobox_popup_reference:Pass_1.0_expanded,Pass_1.0_collapsed,Pass_1.2_expanded,Pass_1.2_collapsed,Fail_1.2_missing_controls,Fail_1.2_popup_reference_missing",
               "outcomes": [
                 "inapplicable"
               ]
@@ -7976,13 +7978,13 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "combobox_popup_reference:Pass_expanded,Pass_collapsed,Fail_1.2_missing_controls,Fail_1.2_popup_reference_missing",
+              "procedureName": "Rpt_Aria_RequiredProperties:Pass_0,Fail_1",
               "outcomes": [
                 "inapplicable"
               ]
             },
             {
-              "procedureName": "Rpt_Aria_RequiredProperties:Pass_0,Fail_1",
+              "procedureName": "combobox_popup_reference:Pass_1.0_expanded,Pass_1.0_collapsed,Pass_1.2_expanded,Pass_1.2_collapsed,Fail_1.2_missing_controls,Fail_1.2_popup_reference_missing",
               "outcomes": [
                 "inapplicable"
               ]
@@ -8160,7 +8162,7 @@
       "procedureNames": [
         "WCAG21_Label_Accessible:Pass_0,Fail_1"
       ],
-      "consistency": null,
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -8171,7 +8173,7 @@
         ]
       },
       "coverage": {
-        "covered": 12,
+        "covered": 13,
         "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 13
@@ -8262,7 +8264,7 @@
             {
               "procedureName": "WCAG21_Label_Accessible:Pass_0,Fail_1",
               "outcomes": [
-                "failed"
+                "passed"
               ]
             }
           ]

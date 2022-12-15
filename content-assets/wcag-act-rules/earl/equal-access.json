@@ -8,7 +8,7 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_attribute_incorrect",
+            "title": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_2,Fail_attribute_incorrect",
             "isPartOf": [
               "WCAG2:identify-input-purpose"
             ]
@@ -26,7 +26,7 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_attribute_incorrect",
+            "title": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_2,Fail_attribute_incorrect",
             "isPartOf": [
               "WCAG2:identify-input-purpose"
             ]
@@ -44,7 +44,7 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_attribute_incorrect",
+            "title": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_2,Fail_attribute_incorrect",
             "isPartOf": [
               "WCAG2:identify-input-purpose"
             ]
@@ -62,7 +62,7 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_attribute_incorrect",
+            "title": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_2,Fail_attribute_incorrect",
             "isPartOf": [
               "WCAG2:identify-input-purpose"
             ]
@@ -80,7 +80,7 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_attribute_incorrect",
+            "title": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_2,Fail_attribute_incorrect",
             "isPartOf": [
               "WCAG2:identify-input-purpose"
             ]
@@ -98,7 +98,7 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_attribute_incorrect",
+            "title": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_2,Fail_attribute_incorrect",
             "isPartOf": [
               "WCAG2:identify-input-purpose"
             ]
@@ -116,7 +116,7 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_attribute_incorrect",
+            "title": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_2,Fail_attribute_incorrect",
             "isPartOf": [
               "WCAG2:identify-input-purpose"
             ]
@@ -134,13 +134,13 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_attribute_incorrect",
+            "title": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_2,Fail_attribute_incorrect",
             "isPartOf": [
               "WCAG2:identify-input-purpose"
             ]
           },
           "result": {
-            "outcome": "earl:failed"
+            "outcome": "earl:passed"
           }
         }
       ]
@@ -152,7 +152,7 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_attribute_incorrect",
+            "title": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_2,Fail_attribute_incorrect",
             "isPartOf": [
               "WCAG2:identify-input-purpose"
             ]
@@ -170,7 +170,7 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_attribute_incorrect",
+            "title": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_2,Fail_attribute_incorrect",
             "isPartOf": [
               "WCAG2:identify-input-purpose"
             ]
@@ -188,7 +188,7 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_attribute_incorrect",
+            "title": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_2,Fail_attribute_incorrect",
             "isPartOf": [
               "WCAG2:identify-input-purpose"
             ]
@@ -206,7 +206,7 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_attribute_incorrect",
+            "title": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_2,Fail_attribute_incorrect",
             "isPartOf": [
               "WCAG2:identify-input-purpose"
             ]
@@ -224,7 +224,7 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_attribute_incorrect",
+            "title": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_2,Fail_attribute_incorrect",
             "isPartOf": [
               "WCAG2:identify-input-purpose"
             ]
@@ -242,7 +242,7 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_attribute_incorrect",
+            "title": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_2,Fail_attribute_incorrect",
             "isPartOf": [
               "WCAG2:identify-input-purpose"
             ]
@@ -260,7 +260,7 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_attribute_incorrect",
+            "title": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_2,Fail_attribute_incorrect",
             "isPartOf": [
               "WCAG2:identify-input-purpose"
             ]
@@ -278,7 +278,7 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_attribute_incorrect",
+            "title": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_2,Fail_attribute_incorrect",
             "isPartOf": [
               "WCAG2:identify-input-purpose"
             ]
@@ -296,7 +296,7 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_attribute_incorrect",
+            "title": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_2,Fail_attribute_incorrect",
             "isPartOf": [
               "WCAG2:identify-input-purpose"
             ]
@@ -314,7 +314,7 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_attribute_incorrect",
+            "title": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_2,Fail_attribute_incorrect",
             "isPartOf": [
               "WCAG2:identify-input-purpose"
             ]
@@ -332,7 +332,7 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_attribute_incorrect",
+            "title": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_2,Fail_attribute_incorrect",
             "isPartOf": [
               "WCAG2:identify-input-purpose"
             ]
@@ -350,13 +350,13 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_attribute_incorrect",
+            "title": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_2,Fail_attribute_incorrect",
             "isPartOf": [
               "WCAG2:identify-input-purpose"
             ]
           },
           "result": {
-            "outcome": "earl:passed"
+            "outcome": "earl:inapplicable"
           }
         }
       ]
@@ -1491,6 +1491,42 @@
           },
           "result": {
             "outcome": "earl:inapplicable"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/e086e5/d9ee6c2ae6da41521bd4ba0bf25c4b6bcd253f37.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "WCAG20_Input_ExplicitLabel:Pass_0,Fail_1,Fail_2",
+            "isPartOf": [
+              "WCAG2:name-role-value"
+            ]
+          },
+          "result": {
+            "outcome": "earl:passed"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/e086e5/bd816c3ef10b8982f18411e1623887d2444d7311.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "WCAG20_Input_ExplicitLabel:Pass_0,Fail_1,Fail_2",
+            "isPartOf": [
+              "WCAG2:name-role-value"
+            ]
+          },
+          "result": {
+            "outcome": "earl:failed"
           }
         }
       ]
@@ -4383,6 +4419,24 @@
     },
     {
       "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/17e68991f57cd20cd5c9fcf564d5a23ebb08c0f0.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "table_headers_ref_valid:Pass_0,Fail_1,Fail_2,Fail_3,Fail_4",
+            "isPartOf": [
+              "WCAG2:info-and-relationships"
+            ]
+          },
+          "result": {
+            "outcome": "earl:inapplicable"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
       "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/5bd22090d0f74dcea752749ef4ad8411e3772535.html",
       "assertions": [
         {
@@ -5849,7 +5903,7 @@
     },
     {
       "@type": "TestSubject",
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ff89c9/c18579dc18aaebf7eeaa4e24e4bc199d77c432bc.html",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ff89c9/2ffe7d6cfa547dc8b107922a6bd7542ea36c96d6.html",
       "assertions": [
         {
           "@type": "Assertion",
@@ -6137,24 +6191,6 @@
     },
     {
       "@type": "TestSubject",
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/52c725e462af074a3559cf4bf4d4dd2386168938.html",
-      "assertions": [
-        {
-          "@type": "Assertion",
-          "test": {
-            "title": "aria_child_valid:Pass,Fail_no_child,Fail_invalid_child",
-            "isPartOf": [
-              "WCAG2:name-role-value"
-            ]
-          },
-          "result": {
-            "outcome": "earl:failed"
-          }
-        }
-      ]
-    },
-    {
-      "@type": "TestSubject",
       "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/51307c16b15d283b9f6ba7e4edc1bb99449f3f37.html",
       "assertions": [
         {
@@ -6263,7 +6299,7 @@
     },
     {
       "@type": "TestSubject",
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/f205939f29e3507a1f1cdbea0ae86ca40e8e0ada.html",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/5e0e88f9ed776c89735d7db606c1381a7a1fb877.html",
       "assertions": [
         {
           "@type": "Assertion",
@@ -6281,7 +6317,7 @@
     },
     {
       "@type": "TestSubject",
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/5e0e88f9ed776c89735d7db606c1381a7a1fb877.html",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/52c725e462af074a3559cf4bf4d4dd2386168938.html",
       "assertions": [
         {
           "@type": "Assertion",
@@ -6354,24 +6390,6 @@
     {
       "@type": "TestSubject",
       "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/837f92d0ac41c14e55782991cbab75975b492702.html",
-      "assertions": [
-        {
-          "@type": "Assertion",
-          "test": {
-            "title": "aria_child_valid:Pass,Fail_no_child,Fail_invalid_child",
-            "isPartOf": [
-              "WCAG2:name-role-value"
-            ]
-          },
-          "result": {
-            "outcome": "earl:inapplicable"
-          }
-        }
-      ]
-    },
-    {
-      "@type": "TestSubject",
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/01c9526cc3ea1449ab8462fdf3c2aa4f215137dc.html",
       "assertions": [
         {
           "@type": "Assertion",
@@ -6617,6 +6635,24 @@
           },
           "result": {
             "outcome": "earl:failed"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/d7efe21b64461052aef8d3e0fc96049dda787039.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "aria_attribute_allowed:Pass,Fail_invalid_role_attr,Fail_invalid_implicit_role_attr",
+            "isPartOf": [
+              "WCAG2:name-role-value"
+            ]
+          },
+          "result": {
+            "outcome": "earl:passed"
           }
         }
       ]
@@ -6899,7 +6935,7 @@
     },
     {
       "@type": "TestSubject",
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/bb42f0c8876f592a3cc7accec1c4b0ac6a632cf3.html",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/ed053b32aa2b4453ddc225e45f7f1931f62c7f49.html",
       "assertions": [
         {
           "@type": "Assertion",
@@ -7169,7 +7205,7 @@
     },
     {
       "@type": "TestSubject",
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/bad4a344d82a15ba2396ceb7824dae56f894b85d.html",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/79d12098309e131210ba01ae2eca31ac97c13123.html",
       "assertions": [
         {
           "@type": "Assertion",
@@ -7913,7 +7949,7 @@
     },
     {
       "@type": "TestSubject",
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/d48be8e9b638b9c27714cb3118a335376ed65f0f.html",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/4ba1bf62d48d7004d270615500af3e83f4b693a7.html",
       "assertions": [
         {
           "@type": "Assertion",
@@ -7943,7 +7979,7 @@
     },
     {
       "@type": "TestSubject",
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/ecc787569c06640f3748ae90e2b57fb51c1e22d8.html",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/5654c6af54a07ba4dc96ee5f2a1c3fd6457164b8.html",
       "assertions": [
         {
           "@type": "Assertion",
@@ -7973,7 +8009,7 @@
     },
     {
       "@type": "TestSubject",
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/b134b6aa2851b2e3ee5d1fbca056c2b706776a98.html",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/d0672e81d17313f7ef156f3bc6e43c68143a5f45.html",
       "assertions": [
         {
           "@type": "Assertion",
@@ -8003,37 +8039,7 @@
     },
     {
       "@type": "TestSubject",
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/7ce73a0a773528b21f497c3f0600ceb9f1b0097f.html",
-      "assertions": [
-        {
-          "@type": "Assertion",
-          "test": {
-            "title": "RPT_Meta_Refresh:Pass_0,Potential_1",
-            "isPartOf": [
-              "WCAG2:timing-adjustable"
-            ]
-          },
-          "result": {
-            "outcome": "earl:inapplicable"
-          }
-        },
-        {
-          "@type": "Assertion",
-          "test": {
-            "title": "WCAG20_Meta_RedirectZero:pass,fail,fail_longrefresh",
-            "isPartOf": [
-              "WCAG2:timing-adjustable"
-            ]
-          },
-          "result": {
-            "outcome": "earl:inapplicable"
-          }
-        }
-      ]
-    },
-    {
-      "@type": "TestSubject",
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/7f67b9f06d35fa2a19d59481b2ccc6e7441823ee.html",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/b8aad77e3ff2fa8d0272fac5362566ff79afad7f.html",
       "assertions": [
         {
           "@type": "Assertion",
@@ -8093,7 +8099,7 @@
     },
     {
       "@type": "TestSubject",
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/9a3bda5ec60f149807ec999ca430dce67f295846.html",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/c73e036ba88dbbedf6b6a90b69328208eb1e14d0.html",
       "assertions": [
         {
           "@type": "Assertion",
@@ -8183,7 +8189,7 @@
     },
     {
       "@type": "TestSubject",
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/ab5d8aeef0246a383e782e44744d3989e72fd573.html",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/a32834c94a9dd1869e22ccfb0b7b753648c8d469.html",
       "assertions": [
         {
           "@type": "Assertion",
@@ -8243,7 +8249,7 @@
     },
     {
       "@type": "TestSubject",
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/5f26131ac46f24edc76f0105a876addd0e1804b0.html",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/1846b9116a8563e653cee40753b4c904696851f9.html",
       "assertions": [
         {
           "@type": "Assertion",
@@ -8483,12 +8489,42 @@
     },
     {
       "@type": "TestSubject",
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/e0706a8dbbd0e41f18134072656b5755b9a60cf1.html",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/eadf2a087a82575bcdf9f9158e698a576e9627c8.html",
       "assertions": [
         {
           "@type": "Assertion",
           "test": {
-            "title": "combobox_popup_reference:Pass_expanded,Pass_collapsed,Fail_1.2_missing_controls,Fail_1.2_popup_reference_missing",
+            "title": "combobox_popup_reference:Pass_1.0_expanded,Pass_1.0_collapsed,Pass_1.2_expanded,Pass_1.2_collapsed,Fail_1.2_missing_controls,Fail_1.2_popup_reference_missing",
+            "isPartOf": [
+              "WCAG2:name-role-value"
+            ]
+          },
+          "result": {
+            "outcome": "earl:inapplicable"
+          }
+        },
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "Rpt_Aria_RequiredProperties:Pass_0,Fail_1",
+            "isPartOf": [
+              "WCAG2:name-role-value"
+            ]
+          },
+          "result": {
+            "outcome": "earl:passed"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/f3c5ba4e097be5eee694024808a962972f037670.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "combobox_popup_reference:Pass_1.0_expanded,Pass_1.0_collapsed,Pass_1.2_expanded,Pass_1.2_collapsed,Fail_1.2_missing_controls,Fail_1.2_popup_reference_missing",
             "isPartOf": [
               "WCAG2:name-role-value"
             ]
@@ -8518,7 +8554,7 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "combobox_popup_reference:Pass_expanded,Pass_collapsed,Fail_1.2_missing_controls,Fail_1.2_popup_reference_missing",
+            "title": "combobox_popup_reference:Pass_1.0_expanded,Pass_1.0_collapsed,Pass_1.2_expanded,Pass_1.2_collapsed,Fail_1.2_missing_controls,Fail_1.2_popup_reference_missing",
             "isPartOf": [
               "WCAG2:name-role-value"
             ]
@@ -8543,18 +8579,78 @@
     },
     {
       "@type": "TestSubject",
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/501c9ede91621ccd0e643058e97992d99ea85cdd.html",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/3da0918b07e5736d55b4b405a22860d889931c15.html",
       "assertions": [
         {
           "@type": "Assertion",
           "test": {
-            "title": "combobox_popup_reference:Pass_expanded,Pass_collapsed,Fail_1.2_missing_controls,Fail_1.2_popup_reference_missing",
+            "title": "combobox_popup_reference:Pass_1.0_expanded,Pass_1.0_collapsed,Pass_1.2_expanded,Pass_1.2_collapsed,Fail_1.2_missing_controls,Fail_1.2_popup_reference_missing",
             "isPartOf": [
               "WCAG2:name-role-value"
             ]
           },
           "result": {
             "outcome": "earl:inapplicable"
+          }
+        },
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "Rpt_Aria_RequiredProperties:Pass_0,Fail_1",
+            "isPartOf": [
+              "WCAG2:name-role-value"
+            ]
+          },
+          "result": {
+            "outcome": "earl:inapplicable"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/58a35afd2998bb6f9c670cb74fa7b550e80897b4.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "combobox_popup_reference:Pass_1.0_expanded,Pass_1.0_collapsed,Pass_1.2_expanded,Pass_1.2_collapsed,Fail_1.2_missing_controls,Fail_1.2_popup_reference_missing",
+            "isPartOf": [
+              "WCAG2:name-role-value"
+            ]
+          },
+          "result": {
+            "outcome": "earl:inapplicable"
+          }
+        },
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "Rpt_Aria_RequiredProperties:Pass_0,Fail_1",
+            "isPartOf": [
+              "WCAG2:name-role-value"
+            ]
+          },
+          "result": {
+            "outcome": "earl:inapplicable"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/352ec575eab8846938e2dced0802d0c2f5611344.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "combobox_popup_reference:Pass_1.0_expanded,Pass_1.0_collapsed,Pass_1.2_expanded,Pass_1.2_collapsed,Fail_1.2_missing_controls,Fail_1.2_popup_reference_missing",
+            "isPartOf": [
+              "WCAG2:name-role-value"
+            ]
+          },
+          "result": {
+            "outcome": "earl:passed"
           }
         },
         {
@@ -8573,12 +8669,24 @@
     },
     {
       "@type": "TestSubject",
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/8d6361b78f88c707bb73a16701516976d0174a73.html",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/80462b7b8c490305d1de7e3136c0bcfaef31789f.html",
       "assertions": [
         {
           "@type": "Assertion",
           "test": {
-            "title": "combobox_popup_reference:Pass_expanded,Pass_collapsed,Fail_1.2_missing_controls,Fail_1.2_popup_reference_missing",
+            "title": "combobox_popup_reference:Pass_1.0_expanded,Pass_1.0_collapsed,Pass_1.2_expanded,Pass_1.2_collapsed,Fail_1.2_missing_controls,Fail_1.2_popup_reference_missing",
+            "isPartOf": [
+              "WCAG2:name-role-value"
+            ]
+          },
+          "result": {
+            "outcome": "earl:inapplicable"
+          }
+        },
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "Rpt_Aria_RequiredProperties:Pass_0,Fail_1",
             "isPartOf": [
               "WCAG2:name-role-value"
             ]
@@ -8586,6 +8694,24 @@
           "result": {
             "outcome": "earl:failed"
           }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/907f05aed287f7407d5f95e7d39bfc1435ec0812.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "combobox_popup_reference:Pass_1.0_expanded,Pass_1.0_collapsed,Pass_1.2_expanded,Pass_1.2_collapsed,Fail_1.2_missing_controls,Fail_1.2_popup_reference_missing",
+            "isPartOf": [
+              "WCAG2:name-role-value"
+            ]
+          },
+          "result": {
+            "outcome": "earl:inapplicable"
+          }
         },
         {
           "@type": "Assertion",
@@ -8596,19 +8722,109 @@
             ]
           },
           "result": {
-            "outcome": "earl:passed"
+            "outcome": "earl:failed"
           }
         }
       ]
     },
     {
       "@type": "TestSubject",
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/ee696108f2b51abb98969b435d2d72aa0a0b9b9f.html",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/9bb1bdb3e95aa9b895fc4f32b0c2cfc917a07a72.html",
       "assertions": [
         {
           "@type": "Assertion",
           "test": {
-            "title": "combobox_popup_reference:Pass_expanded,Pass_collapsed,Fail_1.2_missing_controls,Fail_1.2_popup_reference_missing",
+            "title": "combobox_popup_reference:Pass_1.0_expanded,Pass_1.0_collapsed,Pass_1.2_expanded,Pass_1.2_collapsed,Fail_1.2_missing_controls,Fail_1.2_popup_reference_missing",
+            "isPartOf": [
+              "WCAG2:name-role-value"
+            ]
+          },
+          "result": {
+            "outcome": "earl:inapplicable"
+          }
+        },
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "Rpt_Aria_RequiredProperties:Pass_0,Fail_1",
+            "isPartOf": [
+              "WCAG2:name-role-value"
+            ]
+          },
+          "result": {
+            "outcome": "earl:failed"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/43af91df529613e51429e18d43ce3df99b189c0f.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "combobox_popup_reference:Pass_1.0_expanded,Pass_1.0_collapsed,Pass_1.2_expanded,Pass_1.2_collapsed,Fail_1.2_missing_controls,Fail_1.2_popup_reference_missing",
+            "isPartOf": [
+              "WCAG2:name-role-value"
+            ]
+          },
+          "result": {
+            "outcome": "earl:inapplicable"
+          }
+        },
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "Rpt_Aria_RequiredProperties:Pass_0,Fail_1",
+            "isPartOf": [
+              "WCAG2:name-role-value"
+            ]
+          },
+          "result": {
+            "outcome": "earl:failed"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/7a1942d2d52f50c5df458877a0ee18dc5a22b0c3.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "combobox_popup_reference:Pass_1.0_expanded,Pass_1.0_collapsed,Pass_1.2_expanded,Pass_1.2_collapsed,Fail_1.2_missing_controls,Fail_1.2_popup_reference_missing",
+            "isPartOf": [
+              "WCAG2:name-role-value"
+            ]
+          },
+          "result": {
+            "outcome": "earl:inapplicable"
+          }
+        },
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "Rpt_Aria_RequiredProperties:Pass_0,Fail_1",
+            "isPartOf": [
+              "WCAG2:name-role-value"
+            ]
+          },
+          "result": {
+            "outcome": "earl:failed"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/30c746dee25dde33aef4bb61d5b054e2821e4564.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "combobox_popup_reference:Pass_1.0_expanded,Pass_1.0_collapsed,Pass_1.2_expanded,Pass_1.2_collapsed,Fail_1.2_missing_controls,Fail_1.2_popup_reference_missing",
             "isPartOf": [
               "WCAG2:name-role-value"
             ]
@@ -8638,7 +8854,7 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "combobox_popup_reference:Pass_expanded,Pass_collapsed,Fail_1.2_missing_controls,Fail_1.2_popup_reference_missing",
+            "title": "combobox_popup_reference:Pass_1.0_expanded,Pass_1.0_collapsed,Pass_1.2_expanded,Pass_1.2_collapsed,Fail_1.2_missing_controls,Fail_1.2_popup_reference_missing",
             "isPartOf": [
               "WCAG2:name-role-value"
             ]
@@ -8668,7 +8884,7 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "combobox_popup_reference:Pass_expanded,Pass_collapsed,Fail_1.2_missing_controls,Fail_1.2_popup_reference_missing",
+            "title": "combobox_popup_reference:Pass_1.0_expanded,Pass_1.0_collapsed,Pass_1.2_expanded,Pass_1.2_collapsed,Fail_1.2_missing_controls,Fail_1.2_popup_reference_missing",
             "isPartOf": [
               "WCAG2:name-role-value"
             ]
@@ -8698,7 +8914,7 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "combobox_popup_reference:Pass_expanded,Pass_collapsed,Fail_1.2_missing_controls,Fail_1.2_popup_reference_missing",
+            "title": "combobox_popup_reference:Pass_1.0_expanded,Pass_1.0_collapsed,Pass_1.2_expanded,Pass_1.2_collapsed,Fail_1.2_missing_controls,Fail_1.2_popup_reference_missing",
             "isPartOf": [
               "WCAG2:name-role-value"
             ]
@@ -8824,7 +9040,7 @@
             ]
           },
           "result": {
-            "outcome": "earl:failed"
+            "outcome": "earl:passed"
           }
         }
       ]
