@@ -2,7 +2,7 @@
   "vendor": "Deque Systems",
   "name": "Axe DevTools Pro",
   "version": "4.37.1",
-  "lastModified": "16 December 2022",
+  "lastModified": "17 December 2022",
   "approvedRules": {
     "complete": 22,
     "partial": 0,
@@ -8870,7 +8870,7 @@
             {
               "procedureName": "bypass",
               "outcomes": [
-                "passed"
+                "inapplicable"
               ]
             }
           ]
@@ -8885,7 +8885,7 @@
             {
               "procedureName": "bypass",
               "outcomes": [
-                "passed"
+                "inapplicable"
               ]
             }
           ]
