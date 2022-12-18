@@ -16775,7 +16775,7 @@
       "assertedBy": "https://github.com/dequelabs/axe-core/releases/tag/4.6.1-canary.d5f6ca9",
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:inapplicable"
+        "outcome": "earl:passed"
       },
       "test": {
         "@type": "TestCase",
@@ -16799,7 +16799,7 @@
       "assertedBy": "https://github.com/dequelabs/axe-core/releases/tag/4.6.1-canary.d5f6ca9",
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:inapplicable"
+        "outcome": "earl:passed"
       },
       "test": {
         "@type": "TestCase",
