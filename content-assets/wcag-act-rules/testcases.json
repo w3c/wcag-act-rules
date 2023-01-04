@@ -3,7 +3,7 @@
   "website": "https://www.w3.org/WAI/standards-guidelines/act/rules/",
   "license": "https://act-rules.github.io/pages/license/",
   "description": "Accessibility conformance testing rules for HTML",
-  "count": 1155,
+  "count": 1156,
   "testcases": [
     {
       "ruleId": "73f2c2",
@@ -18057,6 +18057,31 @@
       "testcaseTitle": "Failed Example 4",
       "relativePath": "testcases/0va7u6/e1d4ed7556dabfcfde47aaf4cd0861e0fdf585d9.html",
       "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/0va7u6/e1d4ed7556dabfcfde47aaf4cd0861e0fdf585d9.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/0va7u6/proposed/"
+    },
+    {
+      "ruleId": "0va7u6",
+      "ruleName": "HTML images contain no text",
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.4.5": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:1.4.9": {
+          "forConformance": true,
+          "secondary": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "6a7f199a37309ccab08941b0bc64e182770c29ac",
+      "testcaseTitle": "Failed Example 5",
+      "relativePath": "testcases/0va7u6/6a7f199a37309ccab08941b0bc64e182770c29ac.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/0va7u6/6a7f199a37309ccab08941b0bc64e182770c29ac.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/0va7u6/proposed/"
     },
     {
