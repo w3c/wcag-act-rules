@@ -9,8 +9,8 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 0va7u6</p>
-  <p><strong>Date:</strong> Updated 14 November 2022</p>
-  <p><strong>Authors:</strong> <a href="https://github.com/carlosapaduarte">Carlos Duarte</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
+  <p><strong>Date:</strong> Updated 4 January 2023</p>
+  <p><strong>Authors:</strong> <a href="https://github.com/carlosapaduarte">Carlos Duarte</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
   
   <p><strong>Assets:</strong> Test cases use assets from the following sources: Times Square image released into the public domain by (WT-shared) Ypsilonatshared at wts wikivoyage.; Book shelf image by Alexandre Boue, licensed under the <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">Creative Commons Attribution-ShareAlike 4.0 International</a> license.; Ivanhoe Classic Comics released into the public domain by Malcolm Kildale under the <a href="https://creativecommons.org/licenses/by-sa/3.0/deed.en">Creative Commons Attribution-ShareAlike 3.0 Unported</a> license</p>
@@ -21,7 +21,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that images of text are not used
-  last_modified: 14 November 2022
+  last_modified: 4 January 2023
   scs_tested:
     - handle: Images of Text
       num: 1.4.5
@@ -33,20 +33,21 @@ rule_meta:
 
 ## Applicability
 
-This rule applies to any [rendered image resources][] in a [web page][].
+This rule applies to any [image resources][rendered image resources] rendered in a [web page][].
 
 ## Expectation
 
-For each test target, its [visible pixels][visible] do not contain text expressing anything in a [human language], except if at least one of the following is true:
+Each test target has no [visible][] [text][human language], except if at least one of the following is true:
 
-- **essential**: the [visible pixels][visible] of the test target contain text for which its presentation is [essential][]; or
-- **not significant**: the [visible pixels][visible] of the test target contain text and the text is not a significant part of the visible part of the image or
-- **decoration**: the test target belongs to an [embedded image][] that is [purely decorative][].
+- <dfn id="0va7u6:decorative">decorative</dfn>: The image with text is [purely decorative][]; or
+- <dfn id="0va7u6:incidental">incidental</dfn>: The text is not a [significant][insignificant] part of the image; or
+- <dfn id="0va7u6:essential">essential</dfn>: Ensuring presentation of the text is [essential][].
 
 ## Assumptions
 
 - There is no mechanism to change the rendered text in the image resource. Otherwise, the rule might fail while [SC 1.4.5 Images of Text][sc1.4.5] and [SC 1.4.9 Images of Text (No Exception)][sc1.4.9] might be satisfied.
 - The specific presentation of the text rendered in the image resource can be achieved through formatted text. Otherwise, the rule might fail while [SC 1.4.5 Images of Text][sc1.4.5] and [SC 1.4.9 Images of Text (No Exception)][sc1.4.9] might be satisfied.
+- When used in HTML, the SVG `<text>` element is not considered to be an image of text. This is because like any other element in HTML, SVG `<text>` can be adjusted through custom style sheets. This does not apply for SVG text that is in a separate file, and displayed through, for example, the `img` element.
 
 ## Accessibility Support
 
@@ -140,7 +141,7 @@ This image resource referenced by the `svg` element does not contain text.
 
 <a class="example-link" title="Passed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/0va7u6/372b4acc620b897e8fa5e22607121407399f5e07.html">Open in a new tab</a>
 
-This image resource referenced by the `object` element contains text, but it is not the most significant content.
+This image resource referenced by the `object` element contains text, but it is not the most [significant](#0va7u6:incidental) content.
 
 ```html
 <object data="/test-assets/0va7u6/times_square.jpg" title="Picture of Times Square, New York"></object>
@@ -150,7 +151,7 @@ This image resource referenced by the `object` element contains text, but it is 
 
 <a class="example-link" title="Passed Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/0va7u6/28b2597a08ca7a6fd85a273b484b599c04a03f1a.html">Open in a new tab</a>
 
-This image resource referenced by the `img` element contains text, but its presentation is essential to convey the information.
+This image resource referenced by the `img` element contains text, but its presentation is [essential](#0va7u6:essential) to convey the information.
 
 ```html
 <p>
@@ -167,7 +168,7 @@ This image resource referenced by the `img` element contains text, but its prese
 
 <a class="example-link" title="Passed Example 6" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/0va7u6/74e69f0f02fd050e3b3bde3d1e81ca7fbc04670a.html">Open in a new tab</a>
 
-This image resource referenced by the `background-image` property of the `div` element contains a logo with text. Logotypes are considered an essential exception.
+This image resource referenced by the `background-image` property of the `div` element contains a logo with text. Logotypes are considered an [essential](#0va7u6:essential) exception.
 
 ```html
 <div
@@ -186,7 +187,7 @@ This image resource referenced by the `background-image` property of the `div` e
 
 <a class="example-link" title="Passed Example 7" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/0va7u6/00a1b04016513662a754e5114d0efbbd98ba58c8.html">Open in a new tab</a>
 
-This image resource referenced by the `img` element is an image of text (the book covers), but it is just meant to decorate the webpage of a book store, therefore it is [purely decorative][].
+This image resource referenced by the `img` element is an image of text (the book covers), but it is just meant to decorate the webpage of a book store, therefore it is [decorative](#0va7u6:decorative).
 
 ```html
 <img src="/test-assets/0va7u6/books.jpg" alt="" />
@@ -224,7 +225,7 @@ These image resources referenced by the `input` elements are images of text (the
 
 <a class="example-link" title="Failed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/0va7u6/80ff3d6a9f2de0b2b9f179a13d91d47ce8c9ab26.html">Open in a new tab</a>
 
-This image resource referenced by the `img` element contains text for which the particular presentation is not essential.
+This image resource referenced by the `img` element contains text for which the particular presentation is not [essential](#0va7u6:essential).
 
 ```html
 <img
@@ -237,7 +238,7 @@ This image resource referenced by the `img` element contains text for which the 
 
 <a class="example-link" title="Failed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/0va7u6/45041ac39ebf8f9d8ff642ea0bb56e947f0ac76e.html">Open in a new tab</a>
 
-This image resource referenced by the `input` element in the [Image Button][] contains text for which the particular presentation is not essential.
+This image resource referenced by the `input` element in the [Image Button][] contains text for which the particular presentation is not [essential](#0va7u6:essential).
 
 ```html
 <input type="image" src="/test-assets/0va7u6/button.jpg" alt="Press me" />
@@ -247,7 +248,7 @@ This image resource referenced by the `input` element in the [Image Button][] co
 
 <a class="example-link" title="Failed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/0va7u6/bf023941401d04f61ce739ee10fcc15f87d298a7.html">Open in a new tab</a>
 
-This image resource referenced by the `background-image` property of the `div` element contains text for which the particular presentation is not essential.
+This image resource referenced by the `background-image` property of the `div` element contains text for which the particular presentation is not [essential](#0va7u6:essential).
 
 ```html
 <div style="background-image: url(/test-assets/0va7u6/textimage.jpg); width: 500px; height: 200px;" />
@@ -257,11 +258,24 @@ This image resource referenced by the `background-image` property of the `div` e
 
 <a class="example-link" title="Failed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/0va7u6/e1d4ed7556dabfcfde47aaf4cd0861e0fdf585d9.html">Open in a new tab</a>
 
-This image resource referenced by the `img` element contains text that provides redundant information, but it still is information, therefore it is not [purely decorative][].
+This image resource referenced by the `img` element contains text that provides redundant information, but it still is information, therefore it is not [decorative](#0va7u6:decorative).
 
 ```html
 <img src="/test-assets/0va7u6/welcome.png" alt="" />
 <p>Welcome to our website</p>
+```
+
+#### Failed Example 5
+
+<a class="example-link" title="Failed Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/0va7u6/6a7f199a37309ccab08941b0bc64e182770c29ac.html">Open in a new tab</a>
+
+This `img` element loads an SVG with text as an image resource. Because the SVG is loaded as an image resource, instead of being embedded in HTML the text cannot be selected or customized.
+
+```html
+<img alt="WCAG Rocks" src="data:image/svg+xml;utf8,
+<svg xmlns='http://www.w3.org/2000/svg' height='20px' width='80px'>
+  <text x='0' y='15'>WCAG Rocks</text>
+</svg>" />
 ```
 
 ### Inapplicable
@@ -320,6 +334,32 @@ An element presents an _embedded image_ when any of the following is true:
 - the element is an `svg` element having one or more `image` [descendants][] with a non-empty `href` [attribute value][]; or
 - the element has a [computed][] [`background-image`][background-image] CSS property with at least one [`image`][css-image] that is a [url reference][url-reference].
 
+### Essential text presentation {#essential-text-presentation}
+
+The presentation of text is considered essential in one of more of the following scenarios:
+
+1. The text and its presentation is part of a brand; or
+2. The text is part of a digitized image of a physical object; or
+3. The text is part of a free-form digital illustration; or
+4. The text is part of an image with other graphical objects, where its relationship is informative; or
+5. Changing part of the presentation would alter the meaning of content on the page.
+
+Examples of text for which the presentation is essential include:
+
+1. Logos, product names, or slogans
+2. Image of a hand-written letter, picture of a street sign, or a scanned contract
+3. A digital signature, or a note written using a stylus,
+4. A bar chart, diagram, or maps with place names
+5. An image showing a font, or showing the difference between font-weights
+
+**Note:** WCAG includes a generic definition of "[essential](https://www.w3.org/WAI/WCAG21/Understanding/images-of-text.html#dfn-essential)".
+
+### Insignificant {#insignificant}
+
+Content that is neither [purely decorative][], nor required for understanding the purpose of certain pieces of information or functionality. Insignificant content is often used to provide context.
+
+**Example**: A picture of New York's Time Square may include taxis, a famous pizza restaurant, and theater advertisements, etc. None of these are purely decorative. They provide clues as to where the picture was taken. But neither are any of these required to understand the picture as a whole. Even if the picture itself is significant, the taxis in the picture are not.
+
 ### Outcome {#outcome}
 
 An _outcome_ is a conclusion that comes from evaluating an ACT Rule on a [test subject](https://www.w3.org/TR/act-rules-format/#test-subject) or one of its constituent [test target](https://www.w3.org/TR/act-rules-format/#test-target). An outcome can be one of the three following types:
@@ -365,12 +405,13 @@ An _HTML [web page](https://www.w3.org/TR/WCAG21/#dfn-web-page-s)_ is the set of
 [descendants]: https://dom.spec.whatwg.org/#concept-tree-descendant
 [embedded image]: #embedded-image 'Definition of Embedded Image'
 [enumerated attributes]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#enumerated-attribute 'HTML Specification of Enumerated Attribute'
-[essential]: https://www.w3.org/WAI/WCAG21/Understanding/images-of-text.html#dfn-essential 'WCAG 2.1, Definition of essential'
+[essential]: #essential-text-presentation 'Definition of Essential (Text Presentation)'
 [html aam]: https://www.w3.org/TR/html-aam-1.0/#html-attribute-state-and-property-mappings 'Specification of HTML attributes value mapping to ARIA states and properties'
 [human language]: https://www.w3.org/WAI/WCAG21/Understanding/images-of-text.html#dfn-human-language 'WCAG 2.1, Definition of human language'
 [idl attribute]: https://heycam.github.io/webidl/#idl-attributes "Definition of Web IDL Attribute (Editor's Draft)"
 [image button]: https://html.spec.whatwg.org/multipage/input.html#image-button-state-(type=image)
 [image sources]: https://html.spec.whatwg.org/multipage/images.html#image-source
+[insignificant]: #insignificant 'Definition of Insignificant'
 [numbers]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#numbers 'HTML Specification of Number Parsing'
 [purely decorative]: https://www.w3.org/TR/WCAG21/#dfn-pure-decoration 'WCAG 2.1, Purely decorative'
 [reflect]: https://html.spec.whatwg.org/multipage/common-dom-interfaces.html#reflecting-content-attributes-in-idl-attributes 'HTML specification of Reflecting Content Attributes in IDL Attributes'

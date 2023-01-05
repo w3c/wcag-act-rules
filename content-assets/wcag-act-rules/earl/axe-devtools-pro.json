@@ -24128,6 +24128,21 @@
           "earl:TestSubject",
           "sch:WebPage"
         ],
+        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/0va7u6/6a7f199a37309ccab08941b0bc64e182770c29ac.html"
+      },
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:untested"
+      }
+    },
+    {
+      "@type": "Assertion",
+      "mode": "earl:automatic",
+      "subject": {
+        "@type": [
+          "earl:TestSubject",
+          "sch:WebPage"
+        ],
         "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/0va7u6/68dc6c98d514826f67cf700d1a5c7d449061b9ee.html"
       },
       "result": {
@@ -28201,29 +28216,6 @@
           "sch:WebPage"
         ],
         "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/0ssw9k/8f9b5bf5fc8345b8e7aa016621fb5dee6c13c8f2.html"
-      },
-      "result": {
-        "@type": "TestResult",
-        "outcome": "earl:inapplicable"
-      },
-      "test": {
-        "@type": "TestCase",
-        "title": "scrollable-region-focusable",
-        "@id": "https://dequeuniversity.com/rules/axe/4.6/scrollable-region-focusable?application=axeAPI",
-        "isPartOf": [
-          "WCAG2:keyboard"
-        ]
-      }
-    },
-    {
-      "@type": "Assertion",
-      "mode": "earl:automatic",
-      "subject": {
-        "@type": [
-          "earl:TestSubject",
-          "sch:WebPage"
-        ],
-        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/0ssw9k/dd5ca5252dacc6d5e0fabb30e92633b284336832.html"
       },
       "result": {
         "@type": "TestResult",
