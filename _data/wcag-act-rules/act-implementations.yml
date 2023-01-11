@@ -108,6 +108,16 @@
     - WAI-ARIA 1.2
   jsonReport: https://raw.githubusercontent.com/qualweb/ACT-implementation-report/main/qualweb-report.json
 
+- name: HTML_CodeSniffer
+  homepage: http://qualweb.di.fc.ul.pt/evaluator/
+  version: 2.5.1
+  vendor: Squiz Labs
+  uniqueKey: htmlcs
+  type: Automated tool
+  standards:
+    - WCAG 2.1 Level A, AA, AAA
+  jsonReport: https://raw.githubusercontent.com/act-rules/act-shared-reports/htmlcs/reports/html-code-sniffer/htmlcs-earl.json
+
 - name: SortSite
   homepage: https://www.powermapper.com/products/sortsite/
   version: 6.45
