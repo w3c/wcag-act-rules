@@ -11,8 +11,8 @@
     "untested": 0
   },
   "proposedRules": {
-    "complete": 18,
-    "partial": 1,
+    "complete": 16,
+    "partial": 3,
     "minimal": 0,
     "inconsistent": 0,
     "untested": 50
@@ -8003,7 +8003,7 @@
       "procedureNames": [
         "AccHtmlLinkTextAmbiguousContext"
       ],
-      "consistency": "complete",
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -8015,8 +8015,8 @@
         ]
       },
       "coverage": {
-        "covered": 18,
-        "untested": 0,
+        "covered": 17,
+        "untested": 1,
         "cantTell": 0,
         "testCaseTotal": 18
       },
@@ -8142,16 +8142,16 @@
           ]
         },
         {
-          "testcaseId": "7e4e224e98de9d2d304b2ec57ac25e0ceb6279b5",
+          "testcaseId": "4e89fcc7903980482fe12350f864ca75963d6efd",
           "testCaseName": "Passed Example 9",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5effbb/7e4e224e98de9d2d304b2ec57ac25e0ceb6279b5.html",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5effbb/4e89fcc7903980482fe12350f864ca75963d6efd.html",
           "testCaseApproved": false,
           "expected": "passed",
           "procedureResults": [
             {
               "procedureName": "AccHtmlLinkTextAmbiguousContext",
               "outcomes": [
-                "passed"
+                "untested"
               ]
             }
           ]
@@ -8494,9 +8494,7 @@
       "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
-        "expected": [
-          "WCAG2:info-and-relationships"
-        ],
+        "expected": [],
         "reported": [
           "WCAG2:info-and-relationships"
         ]
@@ -8670,9 +8668,7 @@
       "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
-        "expected": [
-          "WCAG2:name-role-value"
-        ],
+        "expected": [],
         "reported": [
           "WCAG2:name-role-value"
         ]
@@ -9877,7 +9873,7 @@
       "procedureNames": [
         "AccHtmlContrastEnhanced"
       ],
-      "consistency": "complete",
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -9888,8 +9884,8 @@
         ]
       },
       "coverage": {
-        "covered": 33,
-        "untested": 0,
+        "covered": 32,
+        "untested": 1,
         "cantTell": 0,
         "testCaseTotal": 33
       },
@@ -9925,16 +9921,16 @@
           ]
         },
         {
-          "testcaseId": "683924f835ab545a23a3625b0630e95bd0b50bca",
+          "testcaseId": "d011f0ef2a8d94ccf3d3d393a50d7fd8c576d3c3",
           "testCaseName": "Passed Example 3",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/683924f835ab545a23a3625b0630e95bd0b50bca.html",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/d011f0ef2a8d94ccf3d3d393a50d7fd8c576d3c3.html",
           "testCaseApproved": false,
           "expected": "passed",
           "procedureResults": [
             {
               "procedureName": "AccHtmlContrastEnhanced",
               "outcomes": [
-                "passed"
+                "untested"
               ]
             }
           ]

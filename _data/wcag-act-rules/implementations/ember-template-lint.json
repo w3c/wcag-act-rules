@@ -11,8 +11,8 @@
     "untested": 13
   },
   "proposedRules": {
-    "complete": 3,
-    "partial": 2,
+    "complete": 2,
+    "partial": 3,
     "minimal": 0,
     "inconsistent": 10,
     "untested": 54
@@ -5274,7 +5274,7 @@
       "procedureNames": [
         "no-invalid-link-text"
       ],
-      "consistency": "complete",
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -5286,8 +5286,8 @@
       },
       "coverage": {
         "covered": 1,
-        "untested": 0,
-        "cantTell": 17,
+        "untested": 1,
+        "cantTell": 16,
         "testCaseTotal": 18
       },
       "testCaseResults": [
@@ -5412,16 +5412,16 @@
           ]
         },
         {
-          "testcaseId": "7e4e224e98de9d2d304b2ec57ac25e0ceb6279b5",
+          "testcaseId": "4e89fcc7903980482fe12350f864ca75963d6efd",
           "testCaseName": "Passed Example 9",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5effbb/7e4e224e98de9d2d304b2ec57ac25e0ceb6279b5.html",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5effbb/4e89fcc7903980482fe12350f864ca75963d6efd.html",
           "testCaseApproved": false,
           "expected": "passed",
           "procedureResults": [
             {
               "procedureName": "no-invalid-link-text",
               "outcomes": [
-                "cantTell"
+                "untested"
               ]
             }
           ]
@@ -5599,7 +5599,7 @@
       ],
       "consistency": null,
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:interruptions",
           "WCAG2:change-on-request"
@@ -5841,10 +5841,8 @@
       ],
       "consistency": null,
       "accessibilityRequirements": {
-        "correct": false,
-        "expected": [
-          "WCAG2:info-and-relationships"
-        ],
+        "correct": true,
+        "expected": [],
         "reported": []
       },
       "coverage": {
@@ -6015,10 +6013,8 @@
       ],
       "consistency": null,
       "accessibilityRequirements": {
-        "correct": false,
-        "expected": [
-          "WCAG2:name-role-value"
-        ],
+        "correct": true,
+        "expected": [],
         "reported": []
       },
       "coverage": {

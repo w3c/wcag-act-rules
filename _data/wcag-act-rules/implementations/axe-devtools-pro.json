@@ -11,8 +11,8 @@
     "untested": 0
   },
   "proposedRules": {
-    "complete": 16,
-    "partial": 8,
+    "complete": 19,
+    "partial": 5,
     "minimal": 8,
     "inconsistent": 8,
     "untested": 29
@@ -6130,9 +6130,9 @@
       "procedureNames": [
         "aria-valid-attr"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [],
         "reported": [
           "WCAG2:name-role-value"
@@ -6894,9 +6894,9 @@
       "procedureNames": [
         "aria-allowed-attr"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [],
         "reported": [
           "WCAG2:name-role-value"
@@ -7160,7 +7160,7 @@
       ],
       "consistency": "partial",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [],
         "reported": [
           "WCAG2:name-role-value"
@@ -13234,12 +13234,10 @@
       "procedureNames": [
         "aria-roles"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
-        "correct": false,
-        "expected": [
-          "WCAG2:info-and-relationships"
-        ],
+        "correct": true,
+        "expected": [],
         "reported": [
           "WCAG2:name-role-value"
         ]
@@ -13413,9 +13411,7 @@
       "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
-        "expected": [
-          "WCAG2:name-role-value"
-        ],
+        "expected": [],
         "reported": [
           "WCAG2:name-role-value"
         ]
@@ -14761,8 +14757,8 @@
         ]
       },
       "coverage": {
-        "covered": 30,
-        "untested": 0,
+        "covered": 29,
+        "untested": 1,
         "cantTell": 0,
         "testCaseTotal": 33
       },
@@ -14798,16 +14794,16 @@
           ]
         },
         {
-          "testcaseId": "683924f835ab545a23a3625b0630e95bd0b50bca",
+          "testcaseId": "d011f0ef2a8d94ccf3d3d393a50d7fd8c576d3c3",
           "testCaseName": "Passed Example 3",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/683924f835ab545a23a3625b0630e95bd0b50bca.html",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/d011f0ef2a8d94ccf3d3d393a50d7fd8c576d3c3.html",
           "testCaseApproved": false,
           "expected": "passed",
           "procedureResults": [
             {
               "procedureName": "color-contrast-enhanced",
               "outcomes": [
-                "passed"
+                "untested"
               ]
             }
           ]

@@ -9415,9 +9415,7 @@
       "consistency": null,
       "accessibilityRequirements": {
         "correct": true,
-        "expected": [
-          "WCAG2:info-and-relationships"
-        ],
+        "expected": [],
         "reported": [
           "WCAG2:info-and-relationships",
           "https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA4",
@@ -9593,9 +9591,7 @@
       "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
-        "expected": [
-          "WCAG2:name-role-value"
-        ],
+        "expected": [],
         "reported": [
           "WCAG2:name-role-value",
           "https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA5"
@@ -10935,8 +10931,8 @@
       },
       "coverage": {
         "covered": 29,
-        "untested": 0,
-        "cantTell": 2,
+        "untested": 1,
+        "cantTell": 1,
         "testCaseTotal": 33
       },
       "testCaseResults": [
@@ -10971,16 +10967,16 @@
           ]
         },
         {
-          "testcaseId": "683924f835ab545a23a3625b0630e95bd0b50bca",
+          "testcaseId": "d011f0ef2a8d94ccf3d3d393a50d7fd8c576d3c3",
           "testCaseName": "Passed Example 3",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/683924f835ab545a23a3625b0630e95bd0b50bca.html",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/d011f0ef2a8d94ccf3d3d393a50d7fd8c576d3c3.html",
           "testCaseApproved": false,
           "expected": "passed",
           "procedureResults": [
             {
               "procedureName": "sia-r66",
               "outcomes": [
-                "cantTell"
+                "untested"
               ]
             }
           ]
