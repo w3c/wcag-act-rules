@@ -24,9 +24,6 @@ rule_meta:
     - handle: Link Purpose (In Context)
       num: 2.4.4
       level: A
-    - handle: Link Purpose (Link Only)
-      num: 2.4.9
-      level: AAA
 ---
 
 ## Applicability

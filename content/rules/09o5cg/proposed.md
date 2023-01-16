@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 09o5cg</p>
-  <p><strong>Date:</strong> Updated 23 November 2022</p>
+  <p><strong>Date:</strong> Updated 16 January 2023</p>
   <p><strong>Authors:</strong> <a href="https://github.com/Jym77">Jean-Yves Moyen</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -19,7 +19,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that the highest possible contrast of every text character with its background meets the enhanced contrast requirement.
-  last_modified: 23 November 2022
+  last_modified: 16 January 2023
   scs_tested:
     - handle: Contrast (Enhanced)
       num: 1.4.6
@@ -58,6 +58,8 @@ For each test target, the [highest possible contrast][] between the [foreground 
 Passing this rule does not mean that the text has sufficient color contrast. If all background pixels have a low contrast with all foreground pixels, the success criterion is guaranteed to not be satisfied. When some pixels have sufficient contrast, and others do not, legibility should be considered. There is no clear method for determining legibility, which is why this is out of scope for this rule.
 
 When the text color or background color is not specified in the web page, colors from other [origins][] will be used. Testers must ensure colors are not affected by styles from a [user origin][], such as a custom style sheet. Contrast issues caused by specifying the text color but not the background or vice versa, must be tested separately from this rule.
+
+This rule is closely related to [success criterion 1.4.3 Contrast (Minimum)][sc143]. Because this rule is stricter, text that passes this rule will likely satisfy 1.4.3 Contrast (Minimum).
 
 ### Bibliography
 
@@ -106,6 +108,18 @@ When the text color or background color is not specified in the web page, colors
       </ul></li>
     </ul>
   </details></li>
+  <li><details>
+    <summary><span>1.4.3 Contrast (Minimum) (Level AA)</span></summary>
+    <ul>
+      <li><a href="https://www.w3.org/TR/WCAG21/#contrast-minimum">Learn more about 1.4.3 Contrast (Minimum)</a></li>
+      <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level AA and higher.</li>
+      <li>Outcome mapping: <ul>
+        <li>Any <code>failed</code> outcomes: success criterion is not satisfied</li>
+        <li>All <code>passed</code> outcomes: success criterion </li>
+        <li>An <code>inapplicable</code> outcome: success criterion </li>
+      </ul></li>
+    </ul>
+  </details></li>
 </ul>
 
 ## Input Aspects
@@ -147,19 +161,19 @@ This dark gray text has a contrast ratio between 12.6:1 and 7:1 on the white to 
 
 #### Passed Example 3
 
-<a class="example-link" title="Passed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/683924f835ab545a23a3625b0630e95bd0b50bca.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/d011f0ef2a8d94ccf3d3d393a50d7fd8c576d3c3.html">Open in a new tab</a>
 
 This white text has a contrast ratio between 18:1 and 7:1 on the background image.
 
 ```html
 <style>
-p {
-	color: #FFF;
-	height: 50px;
-	padding-top: 15px;
-	background: #000 no-repeat -20px -20px url('/test-assets/contrast/black-hole.jpeg');
-	text-shadow: 0px 0px 2px black;
-}
+	p {
+		color: #fff;
+		height: 50px;
+		padding-top: 15px;
+		background: #000 no-repeat -20px -20px url('/test-assets/contrast/black-hole.jpeg');
+		text-shadow: 0px 0px 2px black;
+	}
 </style>
 <p>Black hole sun</p>
 ```
@@ -241,7 +255,7 @@ light gray background with a contrast ratio of 18.26:1
 <a class="example-link" title="Passed Example 10" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/668856825e6d3b4e480005acf97723c7b1004ba3.html">Open in a new tab</a>
 
 This text is part of a widget because it is a child of an element with the `role` attribute set to `button`.
-The text has the default browser text color on the default browser background color. By default, this is 
+The text has the default browser text color on the default browser background color. By default, this is
 black text on a white background with a contrast ratio of 21:1
 
 ```html
@@ -780,6 +794,7 @@ The _WAI ARIA Specifications_ group both the WAI ARIA W3C Recommendation and ARI
 [reflect]: https://html.spec.whatwg.org/multipage/common-dom-interfaces.html#reflecting-content-attributes-in-idl-attributes 'HTML specification of Reflecting Content Attributes in IDL Attributes'
 [role attribute]: https://www.w3.org/TR/role-attribute/ 'Specification of the role attribute'
 [rules for parsing integers]: https://html.spec.whatwg.org/#rules-for-parsing-integers
+[sc143]: https://www.w3.org/TR/WCAG21/#contrast-minimum
 [sc146]: https://www.w3.org/TR/WCAG21/#contrast-enhanced 'WCAG 2.1, Success criterion 1.4.6 Contrast (Enhanced)'
 [semantic role]: #semantic-role 'Definition of Semantic role'
 [sequential focus navigation]: https://html.spec.whatwg.org/multipage/interaction.html#sequential-focus-navigation

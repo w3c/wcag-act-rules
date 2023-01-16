@@ -29,9 +29,6 @@ rule_meta:
     - handle: Link Purpose (In Context)
       num: 2.4.4
       level: A
-    - handle: Link Purpose (Link Only)
-      num: 2.4.9
-      level: AAA
 ---
 
 ## Applicability
@@ -53,6 +50,8 @@ The rule assumes that all links are [user interface components](https://www.w3.o
 - Accessibility support for some elements inheriting the semantic role of `link` (e.g. elements with `doc-*` attributes) may vary depending on the assistive technology in use.
 
 ## Background
+
+The HTML `area` element is both a link and non-text content. When this rule fails on `area` elements [success criterion 1.1.1 Non-text content][sc111] is not satisfied.
 
 ### Related rules
 
@@ -114,6 +113,18 @@ The rule assumes that all links are [user interface components](https://www.w3.o
         <li>Any <code>failed</code> outcomes: technique is not satisfied</li>
         <li>All <code>passed</code> outcomes: technique needs further testing</li>
         <li>An <code>inapplicable</code> outcome: technique needs further testing</li>
+      </ul></li>
+    </ul>
+  </details></li>
+  <li><details>
+    <summary><span>1.1.1 Non-text Content (Level A)</span></summary>
+    <ul>
+      <li><a href="https://www.w3.org/TR/WCAG21/#non-text-content">Learn more about 1.1.1 Non-text Content</a></li>
+      <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level A and higher.</li>
+      <li>Outcome mapping: <ul>
+        <li>Any <code>failed</code> outcomes: success criterion is not satisfied</li>
+        <li>All <code>passed</code> outcomes: success criterion </li>
+        <li>An <code>inapplicable</code> outcome: success criterion </li>
       </ul></li>
     </ul>
   </details></li>
@@ -630,6 +641,7 @@ The _WAI ARIA Specifications_ group both the WAI ARIA W3C Recommendation and ARI
 [reflect]: https://html.spec.whatwg.org/multipage/common-dom-interfaces.html#reflecting-content-attributes-in-idl-attributes 'HTML specification of Reflecting Content Attributes in IDL Attributes'
 [role attribute]: https://www.w3.org/TR/role-attribute/ 'Specification of the role attribute'
 [rules for parsing integers]: https://html.spec.whatwg.org/#rules-for-parsing-integers
+[sc111]: https://www.w3.org/TR/WCAG21/#non-text-content
 [semantic role]: #semantic-role 'Definition of Semantic Role'
 [sequential focus navigation]: https://html.spec.whatwg.org/multipage/interaction.html#sequential-focus-navigation
 [space separated]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#space-separated-tokens 'HTML Specification of Space Separated Tokens'

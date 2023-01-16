@@ -26,12 +26,6 @@ rule_meta:
     - handle: Audio Description or Media Alternative (Prerecorded)
       num: 1.2.3
       level: A
-    - handle: Audio Description (Prerecorded)
-      num: 1.2.5
-      level: AA
-    - handle: Media Alternative (Prerecorded)
-      num: 1.2.8
-      level: AAA
 ---
 
 ## Test Procedure

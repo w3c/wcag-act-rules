@@ -44,6 +44,8 @@ Some user agents treat the value of `aria-*` attribute as case-sensitive (even w
 
 ## Background
 
+Using invalid ARIA attribute values is often the result of a typo or other developer error. These attributes are then either ignored, or a default value is assumed by browsers and assistive technologies. This often means that a state or property which should exist is missing or has an unexpected value. This can cause issues under [success criterion 1.3.1 Info and Relationships][sc131] or [4.1.2 Name, Rule Value][sc412].
+
 Only for [WAI-ARIA required properties](https://www.w3.org/TR/wai-aria-1.2/#requiredState) with value types `ID Reference` and `ID Reference List` is there a requirement that the elements with the given ids actually exists. For non-required properties, this is not a requirement. For example, the value of the `aria-errormessage` attribute on an `input` does not need to reference an `id` that exists within the same document, because an [HTML element](https://html.spec.whatwg.org/#htmlelement) with such and `id` may be created in response to an [event](https://dom.spec.whatwg.org/#event) that may or may not happen.
 
 For value type `URI`, this rule does not require that the destination URI exists.
@@ -64,6 +66,30 @@ For value type `URI`, this rule does not require that the destination URI exists
 
 <ul class="act-requirements-list">
   <li>Accessibility Requirements have no or unknown mapping.</li>
+  <li><details>
+    <summary><span>1.3.1 Info and Relationships (Level A)</span></summary>
+    <ul>
+      <li><a href="https://www.w3.org/TR/WCAG21/#info-and-relationships">Learn more about 1.3.1 Info and Relationships</a></li>
+      <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level A and higher.</li>
+      <li>Outcome mapping: <ul>
+        <li>Any <code>failed</code> outcomes: success criterion is not satisfied</li>
+        <li>All <code>passed</code> outcomes: success criterion </li>
+        <li>An <code>inapplicable</code> outcome: success criterion </li>
+      </ul></li>
+    </ul>
+  </details></li>
+  <li><details>
+    <summary><span>4.1.2 Name, Role, Value (Level A)</span></summary>
+    <ul>
+      <li><a href="https://www.w3.org/TR/WCAG21/#name-role-value">Learn more about 4.1.2 Name, Role, Value</a></li>
+      <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level A and higher.</li>
+      <li>Outcome mapping: <ul>
+        <li>Any <code>failed</code> outcomes: success criterion is not satisfied</li>
+        <li>All <code>passed</code> outcomes: success criterion </li>
+        <li>An <code>inapplicable</code> outcome: success criterion </li>
+      </ul></li>
+    </ul>
+  </details></li>
 </ul>
 
 ## Input Aspects
@@ -377,4 +403,6 @@ The _WAI ARIA Specifications_ group both the WAI ARIA W3C Recommendation and ARI
 [html namespaces]: https://infra.spec.whatwg.org/#namespaces 'HTML namespace, 2021/05/31'
 [html or svg element]: #namespaced-element
 [namespaceuri]: https://dom.spec.whatwg.org/#dom-element-namespaceuri 'DOM Element namespaceURI, 2021/05/31'
+[sc131]: https://www.w3.org/TR/WCAG21/#info-and-relationships
+[sc412]: https://www.w3.org/TR/WCAG21/#name-role-value
 [wai-aria specifications]: #wai-aria-specifications 'List of WAI-ARIA Specifications'

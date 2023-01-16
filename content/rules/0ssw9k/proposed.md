@@ -24,9 +24,6 @@ rule_meta:
     - handle: Keyboard
       num: 2.1.1
       level: A
-    - handle: Keyboard (No Exception)
-      num: 2.1.3
-      level: AAA
 ---
 
 ## Applicability
