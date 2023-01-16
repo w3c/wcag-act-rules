@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> off6ek</p>
-  <p><strong>Date:</strong> Updated 14 November 2022</p>
+  <p><strong>Date:</strong> Updated 16 January 2023</p>
   <p><strong>Authors:</strong> <a href="https://github.com/Jym77">Jean-Yves Moyen</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -19,7 +19,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that the primary language subtag of an element matches its default language
-  last_modified: 14 November 2022
+  last_modified: 16 January 2023
   scs_tested:
     - handle: Language of Parts
       num: 3.1.2
@@ -57,7 +57,7 @@ This rule checks that, if a `lang` attribute is used, its value is correct with 
 
 ### Related rules
 
-- [_Element with `lang` Attribute Has Valid Language Tag_](https://act-rules.github.io/rules/de46e4)
+- [_Element with `lang` Attribute Has Valid Language Tag_](https://www.w3.org/WAI/standards-guidelines/act/rules/de46e4/)
 
 ### Bibliography
 

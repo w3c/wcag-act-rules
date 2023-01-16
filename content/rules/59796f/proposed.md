@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 59796f</p>
-  <p><strong>Date:</strong> Updated 10 November 2022</p>
+  <p><strong>Date:</strong> Updated 16 January 2023</p>
   <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -19,7 +19,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that each image button element has a non-empty accessible name.
-  last_modified: 10 November 2022
+  last_modified: 16 January 2023
   scs_tested:
     - handle: Non-text Content
       num: 1.1.1
@@ -54,7 +54,7 @@ Contrarily to `img` elements, an empty `alt` attribute does not make image butto
 
 ### Related rules
 
-- [Button has non-empty accessible name](https://act-rules.github.io/rules/97a4e1)
+- [Button has non-empty accessible name](https://www.w3.org/WAI/standards-guidelines/act/rules/97a4e1/)
 
 ### Bibliography
 
