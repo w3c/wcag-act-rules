@@ -2,7 +2,7 @@
   "vendor": "PowerMapper",
   "name": "SortSite",
   "version": 6.45,
-  "lastModified": "2 December 2022",
+  "lastModified": "16 January 2023",
   "approvedRules": {
     "complete": 22,
     "partial": 0,
@@ -3888,8 +3888,8 @@
         ]
       },
       "coverage": {
-        "covered": 17,
-        "untested": 1,
+        "covered": 18,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 18
       },
@@ -4159,7 +4159,7 @@
             {
               "procedureName": "AccWcag2-F90-1",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -5719,7 +5719,7 @@
             {
               "procedureName": "W3cHtml5AriaRequiredParentRoles-*",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -5779,7 +5779,7 @@
             {
               "procedureName": "W3cHtml5AriaRequiredParentRoles-*",
               "outcomes": [
-                "failed"
+                "untested"
               ]
             }
           ]
