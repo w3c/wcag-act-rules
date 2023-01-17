@@ -1975,8 +1975,8 @@
         ]
       },
       "coverage": {
-        "covered": 10,
-        "untested": 0,
+        "covered": 9,
+        "untested": 1,
         "cantTell": 0,
         "testCaseTotal": 10
       },
@@ -2027,16 +2027,16 @@
           ]
         },
         {
-          "testcaseId": "780388a837915960bca7651bd80743fb2cafdbcb",
+          "testcaseId": "f5ea9fd3b681971b2af4953fae9bb2d319a203c6",
           "testCaseName": "Failed Example 1",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a1b64e/780388a837915960bca7651bd80743fb2cafdbcb.html",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a1b64e/f5ea9fd3b681971b2af4953fae9bb2d319a203c6.html",
           "testCaseApproved": false,
           "expected": "failed",
           "procedureResults": [
             {
               "procedureName": "2.1.2-no-keyboard-trap",
               "outcomes": [
-                "failed"
+                "untested"
               ]
             }
           ]
