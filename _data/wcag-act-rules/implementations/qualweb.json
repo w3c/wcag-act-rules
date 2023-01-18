@@ -2,17 +2,17 @@
   "vendor": "LASIGE, Faculdade de Ciências da Universidade de Lisboa",
   "name": "QualWeb",
   "version": "3.0.0",
-  "lastModified": "10 January 2023",
+  "lastModified": "18 January 2023",
   "approvedRules": {
-    "complete": 13,
-    "partial": 5,
+    "complete": 16,
+    "partial": 3,
     "minimal": 0,
-    "inconsistent": 4,
+    "inconsistent": 3,
     "untested": 0
   },
   "proposedRules": {
-    "complete": 9,
-    "partial": 9,
+    "complete": 11,
+    "partial": 7,
     "minimal": 13,
     "inconsistent": 18,
     "untested": 20
@@ -1557,7 +1557,7 @@
       "procedureNames": [
         "Validity of HTML Lang attribute"
       ],
-      "consistency": null,
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -1568,7 +1568,7 @@
         ]
       },
       "coverage": {
-        "covered": 6,
+        "covered": 7,
         "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 7
@@ -1584,7 +1584,7 @@
             {
               "procedureName": "Validity of HTML Lang attribute",
               "outcomes": [
-                "failed"
+                "passed"
               ]
             }
           ]
@@ -2589,13 +2589,15 @@
       "procedureNames": [
         "Letter spacing in style attributes is not !important"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:text-spacing"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:text-spacing"
+        ]
       },
       "coverage": {
         "covered": 16,
@@ -3302,13 +3304,15 @@
       "procedureNames": [
         "Word spacing in style attributes is not !important"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:text-spacing"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:text-spacing"
+        ]
       },
       "coverage": {
         "covered": 16,
@@ -4422,11 +4426,13 @@
       ],
       "consistency": null,
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:text-spacing"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:text-spacing"
+        ]
       },
       "coverage": {
         "covered": 20,
@@ -5888,7 +5894,7 @@
         ]
       },
       "coverage": {
-        "covered": 15,
+        "covered": 11,
         "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 17
@@ -5904,7 +5910,7 @@
             {
               "procedureName": "ARIA required owned elements",
               "outcomes": [
-                "passed"
+                "failed"
               ]
             }
           ]
@@ -5919,7 +5925,7 @@
             {
               "procedureName": "ARIA required owned elements",
               "outcomes": [
-                "passed"
+                "failed"
               ]
             }
           ]
@@ -5934,7 +5940,7 @@
             {
               "procedureName": "ARIA required owned elements",
               "outcomes": [
-                "passed"
+                "failed"
               ]
             }
           ]
@@ -5949,7 +5955,7 @@
             {
               "procedureName": "ARIA required owned elements",
               "outcomes": [
-                "passed"
+                "failed"
               ]
             }
           ]
@@ -5964,7 +5970,7 @@
             {
               "procedureName": "ARIA required owned elements",
               "outcomes": [
-                "passed"
+                "failed"
               ]
             }
           ]
@@ -6084,7 +6090,7 @@
             {
               "procedureName": "ARIA required owned elements",
               "outcomes": [
-                "passed"
+                "failed"
               ]
             }
           ]
@@ -10462,13 +10468,15 @@
       "procedureNames": [
         "iframe with negative tabindex has no interactive elements"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:keyboard"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:keyboard"
+        ]
       },
       "coverage": {
         "covered": 7,
@@ -11452,13 +11460,15 @@
       "procedureNames": [
         "Menuitem has non-empty accessible name"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:name-role-value"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:name-role-value"
+        ]
       },
       "coverage": {
         "covered": 8,
