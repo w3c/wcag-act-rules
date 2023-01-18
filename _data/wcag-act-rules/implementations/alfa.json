@@ -2,7 +2,7 @@
   "vendor": "Siteimprove",
   "name": "Alfa",
   "version": "0.53.0",
-  "lastModified": "3 January 2023",
+  "lastModified": "18 January 2023",
   "approvedRules": {
     "complete": 20,
     "partial": 0,
@@ -11,8 +11,8 @@
     "untested": 0
   },
   "proposedRules": {
-    "complete": 6,
-    "partial": 6,
+    "complete": 9,
+    "partial": 3,
     "minimal": 3,
     "inconsistent": 9,
     "untested": 45
@@ -6177,7 +6177,7 @@
       "procedureNames": [
         "sia-r18"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
@@ -6186,7 +6186,7 @@
         ]
       },
       "coverage": {
-        "covered": 15,
+        "covered": 16,
         "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 16
@@ -6397,7 +6397,7 @@
             {
               "procedureName": "sia-r18",
               "outcomes": [
-                "passed"
+                "failed"
               ]
             }
           ]
@@ -7188,15 +7188,14 @@
       "procedureNames": [
         "sia-r64"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:info-and-relationships"
         ],
         "reported": [
           "WCAG2:info-and-relationships",
-          "WCAG2:headings-and-labels",
           "https://www.w3.org/WAI/WCAG21/Techniques/html/H42"
         ]
       },
@@ -9588,7 +9587,7 @@
       "procedureNames": [
         "sia-r16"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
@@ -9598,7 +9597,7 @@
         ]
       },
       "coverage": {
-        "covered": 14,
+        "covered": 15,
         "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 15
@@ -9779,7 +9778,7 @@
             {
               "procedureName": "sia-r16",
               "outcomes": [
-                "passed"
+                "failed"
               ]
             }
           ]
