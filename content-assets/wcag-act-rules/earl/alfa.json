@@ -1869,112 +1869,6 @@
       }
     },
     {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/c181f7267bf9f4fc0f9ad9e2a69c1ad7da504f4d.html",
-      "@type": "TestSubject",
-      "dct:hasPart": [
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Request"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": ""
-          },
-          "http-vocab:headers": {
-            "@list": []
-          },
-          "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/c181f7267bf9f4fc0f9ad9e2a69c1ad7da504f4d.html"
-        },
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Response"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Passed Example 1</title>\n</head>\n<body>\n\t<label>Search: <input type=\"text\" role=\"searchbox\" placeholder=\"Enter 3 or more characters\"/></label>\n</body>\n</html>"
-          },
-          "http-vocab:headers": {
-            "@list": [
-              {
-                "@type": "http-vocab:MessageHeader",
-                "http-vocab:fieldName": "content-type",
-                "http-vocab:fieldValue": "text/html; charset=utf-8"
-              }
-            ]
-          },
-          "http-vocab:statusCodeValue": 200
-        }
-      ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/c181f7267bf9f4fc0f9ad9e2a69c1ad7da504f4d.html"
-    },
-    {
-      "@type": "Assertion",
-      "result": {
-        "@type": "TestResult",
-        "info": "The element has a valid role",
-        "outcome": "earl:passed",
-        "earl:pointer": {
-          "@type": [
-            "ptr:Pointer",
-            "ptr:SinglePointer",
-            "ptr:ExpressionPointer",
-            "ptr:XPathPointer"
-          ],
-          "ptr:expression": "/html[1]/body[1]/label[1]/input[1]/@role"
-        }
-      },
-      "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/c181f7267bf9f4fc0f9ad9e2a69c1ad7da504f4d.html"
-      },
-      "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r21",
-        "@type": [
-          "TestCriterion",
-          "TestCase"
-        ],
-        "isPartOf": [
-          {
-            "@id": "WCAG2:info-and-relationships",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-            "title": "Info and Relationships"
-          },
-          {
-            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA4",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
-            "title": "Using a WAI-ARIA role to expose the role of a user interface component"
-          },
-          {
-            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/general/G108",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
-            "title": "Using markup features to expose the name and role, allow user-settable properties"
-          }
-        ]
-      }
-    },
-    {
       "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59796f/7d97d6b2f3fa16760bf66026691281a8179f3260.html",
       "@type": "TestSubject",
       "dct:hasPart": [
@@ -4179,6 +4073,112 @@
       }
     },
     {
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/c181f7267bf9f4fc0f9ad9e2a69c1ad7da504f4d.html",
+      "@type": "TestSubject",
+      "dct:hasPart": [
+        {
+          "@type": [
+            "http-vocab:Message",
+            "http-vocab:Request"
+          ],
+          "http-vocab:body": {
+            "@type": [
+              "cnt:Content",
+              "cnt:ContentAsText"
+            ],
+            "cnt:characterEncoding": "utf-8",
+            "cnt:chars": ""
+          },
+          "http-vocab:headers": {
+            "@list": []
+          },
+          "http-vocab:methodName": "GET",
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/c181f7267bf9f4fc0f9ad9e2a69c1ad7da504f4d.html"
+        },
+        {
+          "@type": [
+            "http-vocab:Message",
+            "http-vocab:Response"
+          ],
+          "http-vocab:body": {
+            "@type": [
+              "cnt:Content",
+              "cnt:ContentAsText"
+            ],
+            "cnt:characterEncoding": "utf-8",
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Passed Example 1</title>\n</head>\n<body>\n\t<label>Search: <input type=\"text\" role=\"searchbox\" placeholder=\"Enter 3 or more characters\"/></label>\n</body>\n</html>"
+          },
+          "http-vocab:headers": {
+            "@list": [
+              {
+                "@type": "http-vocab:MessageHeader",
+                "http-vocab:fieldName": "content-type",
+                "http-vocab:fieldValue": "text/html; charset=utf-8"
+              }
+            ]
+          },
+          "http-vocab:statusCodeValue": 200
+        }
+      ],
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/c181f7267bf9f4fc0f9ad9e2a69c1ad7da504f4d.html"
+    },
+    {
+      "@type": "Assertion",
+      "result": {
+        "@type": "TestResult",
+        "info": "The element has a at least one valid role",
+        "outcome": "earl:passed",
+        "earl:pointer": {
+          "@type": [
+            "ptr:Pointer",
+            "ptr:SinglePointer",
+            "ptr:ExpressionPointer",
+            "ptr:XPathPointer"
+          ],
+          "ptr:expression": "/html[1]/body[1]/label[1]/input[1]/@role"
+        }
+      },
+      "subject": {
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/c181f7267bf9f4fc0f9ad9e2a69c1ad7da504f4d.html"
+      },
+      "test": {
+        "@id": "https://alfa.siteimprove.com/rules/sia-r110",
+        "@type": [
+          "TestCriterion",
+          "TestCase"
+        ],
+        "isPartOf": [
+          {
+            "@id": "WCAG2:info-and-relationships",
+            "@type": [
+              "TestCriterion",
+              "TestRequirement"
+            ],
+            "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
+            "title": "Info and Relationships"
+          },
+          {
+            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA4",
+            "@type": [
+              "TestCriterion",
+              "TestRequirement"
+            ],
+            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
+            "title": "Using a WAI-ARIA role to expose the role of a user interface component"
+          },
+          {
+            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/general/G108",
+            "@type": [
+              "TestCriterion",
+              "TestRequirement"
+            ],
+            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
+            "title": "Using markup features to expose the name and role, allow user-settable properties"
+          }
+        ]
+      }
+    },
+    {
       "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2779a5/820fb18c9bb20fb1a940a0806a87c6f6e468bb5b.html",
       "@type": "TestSubject",
       "dct:hasPart": [
@@ -5913,8 +5913,8 @@
       "@type": "Assertion",
       "result": {
         "@type": "TestResult",
-        "info": "The attribute has a valid value",
-        "outcome": "earl:passed",
+        "info": "The attribute does not have a valid value",
+        "outcome": "earl:failed",
         "earl:pointer": {
           "@type": [
             "ptr:Pointer",
@@ -6003,112 +6003,6 @@
           "TestCase"
         ],
         "isPartOf": []
-      }
-    },
-    {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/9980fd3a6f30b20069618708b2c8fa79d444e0a4.html",
-      "@type": "TestSubject",
-      "dct:hasPart": [
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Request"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": ""
-          },
-          "http-vocab:headers": {
-            "@list": []
-          },
-          "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/9980fd3a6f30b20069618708b2c8fa79d444e0a4.html"
-        },
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Response"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Passed Example 2</title>\n</head>\n<body>\n\t<style>\n\t\t.ref {\n\t\t\tcolor: #0000ee;\n\t\t\ttext-decoration: underline;\n\t\t\tcursor: pointer;\n\t\t}\n\t</style>\n\tSee [<span class=\"ref\" onclick=\"location.href='https://act-rules.github.io/'\" role=\"doc-biblioref link\">ACT rules</span\n\t>].\n</body>\n</html>"
-          },
-          "http-vocab:headers": {
-            "@list": [
-              {
-                "@type": "http-vocab:MessageHeader",
-                "http-vocab:fieldName": "content-type",
-                "http-vocab:fieldValue": "text/html; charset=utf-8"
-              }
-            ]
-          },
-          "http-vocab:statusCodeValue": 200
-        }
-      ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/9980fd3a6f30b20069618708b2c8fa79d444e0a4.html"
-    },
-    {
-      "@type": "Assertion",
-      "result": {
-        "@type": "TestResult",
-        "info": "The element has a valid role",
-        "outcome": "earl:passed",
-        "earl:pointer": {
-          "@type": [
-            "ptr:Pointer",
-            "ptr:SinglePointer",
-            "ptr:ExpressionPointer",
-            "ptr:XPathPointer"
-          ],
-          "ptr:expression": "/html[1]/body[1]/span[1]/@role"
-        }
-      },
-      "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/9980fd3a6f30b20069618708b2c8fa79d444e0a4.html"
-      },
-      "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r21",
-        "@type": [
-          "TestCriterion",
-          "TestCase"
-        ],
-        "isPartOf": [
-          {
-            "@id": "WCAG2:info-and-relationships",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-            "title": "Info and Relationships"
-          },
-          {
-            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA4",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
-            "title": "Using a WAI-ARIA role to expose the role of a user interface component"
-          },
-          {
-            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/general/G108",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
-            "title": "Using markup features to expose the name and role, allow user-settable properties"
-          }
-        ]
       }
     },
     {
@@ -8344,6 +8238,112 @@
       }
     },
     {
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/9980fd3a6f30b20069618708b2c8fa79d444e0a4.html",
+      "@type": "TestSubject",
+      "dct:hasPart": [
+        {
+          "@type": [
+            "http-vocab:Message",
+            "http-vocab:Request"
+          ],
+          "http-vocab:body": {
+            "@type": [
+              "cnt:Content",
+              "cnt:ContentAsText"
+            ],
+            "cnt:characterEncoding": "utf-8",
+            "cnt:chars": ""
+          },
+          "http-vocab:headers": {
+            "@list": []
+          },
+          "http-vocab:methodName": "GET",
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/9980fd3a6f30b20069618708b2c8fa79d444e0a4.html"
+        },
+        {
+          "@type": [
+            "http-vocab:Message",
+            "http-vocab:Response"
+          ],
+          "http-vocab:body": {
+            "@type": [
+              "cnt:Content",
+              "cnt:ContentAsText"
+            ],
+            "cnt:characterEncoding": "utf-8",
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Passed Example 2</title>\n</head>\n<body>\n\t<style>\n\t\t.ref {\n\t\t\tcolor: #0000ee;\n\t\t\ttext-decoration: underline;\n\t\t\tcursor: pointer;\n\t\t}\n\t</style>\n\tSee [<span class=\"ref\" onclick=\"location.href='https://act-rules.github.io/'\" role=\"doc-biblioref link\">ACT rules</span\n\t>].\n</body>\n</html>"
+          },
+          "http-vocab:headers": {
+            "@list": [
+              {
+                "@type": "http-vocab:MessageHeader",
+                "http-vocab:fieldName": "content-type",
+                "http-vocab:fieldValue": "text/html; charset=utf-8"
+              }
+            ]
+          },
+          "http-vocab:statusCodeValue": 200
+        }
+      ],
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/9980fd3a6f30b20069618708b2c8fa79d444e0a4.html"
+    },
+    {
+      "@type": "Assertion",
+      "result": {
+        "@type": "TestResult",
+        "info": "The element has a at least one valid role",
+        "outcome": "earl:passed",
+        "earl:pointer": {
+          "@type": [
+            "ptr:Pointer",
+            "ptr:SinglePointer",
+            "ptr:ExpressionPointer",
+            "ptr:XPathPointer"
+          ],
+          "ptr:expression": "/html[1]/body[1]/span[1]/@role"
+        }
+      },
+      "subject": {
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/9980fd3a6f30b20069618708b2c8fa79d444e0a4.html"
+      },
+      "test": {
+        "@id": "https://alfa.siteimprove.com/rules/sia-r110",
+        "@type": [
+          "TestCriterion",
+          "TestCase"
+        ],
+        "isPartOf": [
+          {
+            "@id": "WCAG2:info-and-relationships",
+            "@type": [
+              "TestCriterion",
+              "TestRequirement"
+            ],
+            "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
+            "title": "Info and Relationships"
+          },
+          {
+            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA4",
+            "@type": [
+              "TestCriterion",
+              "TestRequirement"
+            ],
+            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
+            "title": "Using a WAI-ARIA role to expose the role of a user interface component"
+          },
+          {
+            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/general/G108",
+            "@type": [
+              "TestCriterion",
+              "TestRequirement"
+            ],
+            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
+            "title": "Using markup features to expose the name and role, allow user-settable properties"
+          }
+        ]
+      }
+    },
+    {
       "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2779a5/6b3d2e2147cfc618b744f2dabfaf2e66327055d7.html",
       "@type": "TestSubject",
       "dct:hasPart": [
@@ -10198,112 +10198,6 @@
           "TestCase"
         ],
         "isPartOf": []
-      }
-    },
-    {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/527c265ba570f0131dddef3687981b66f6dd156f.html",
-      "@type": "TestSubject",
-      "dct:hasPart": [
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Request"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": ""
-          },
-          "http-vocab:headers": {
-            "@list": []
-          },
-          "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/527c265ba570f0131dddef3687981b66f6dd156f.html"
-        },
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Response"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Failed Example 2</title>\n</head>\n<body>\n\t<style>\n\t\t.ref {\n\t\t\tcolor: #0000ee;\n\t\t\ttext-decoration: underline;\n\t\t\tcursor: pointer;\n\t\t}\n\t</style>\n\tSee [<span class=\"ref\" onclick=\"location.href='https://act-rules.github.io/'\" role=\"bibliographic-reference lnik\"\n\t\t>ACT rules</span\n\t>].\n</body>\n</html>"
-          },
-          "http-vocab:headers": {
-            "@list": [
-              {
-                "@type": "http-vocab:MessageHeader",
-                "http-vocab:fieldName": "content-type",
-                "http-vocab:fieldValue": "text/html; charset=utf-8"
-              }
-            ]
-          },
-          "http-vocab:statusCodeValue": 200
-        }
-      ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/527c265ba570f0131dddef3687981b66f6dd156f.html"
-    },
-    {
-      "@type": "Assertion",
-      "result": {
-        "@type": "TestResult",
-        "info": "The element does not have a valid role",
-        "outcome": "earl:failed",
-        "earl:pointer": {
-          "@type": [
-            "ptr:Pointer",
-            "ptr:SinglePointer",
-            "ptr:ExpressionPointer",
-            "ptr:XPathPointer"
-          ],
-          "ptr:expression": "/html[1]/body[1]/span[1]/@role"
-        }
-      },
-      "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/527c265ba570f0131dddef3687981b66f6dd156f.html"
-      },
-      "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r21",
-        "@type": [
-          "TestCriterion",
-          "TestCase"
-        ],
-        "isPartOf": [
-          {
-            "@id": "WCAG2:info-and-relationships",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-            "title": "Info and Relationships"
-          },
-          {
-            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA4",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
-            "title": "Using a WAI-ARIA role to expose the role of a user interface component"
-          },
-          {
-            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/general/G108",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
-            "title": "Using markup features to expose the name and role, allow user-settable properties"
-          }
-        ]
       }
     },
     {
@@ -12551,6 +12445,112 @@
       }
     },
     {
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/527c265ba570f0131dddef3687981b66f6dd156f.html",
+      "@type": "TestSubject",
+      "dct:hasPart": [
+        {
+          "@type": [
+            "http-vocab:Message",
+            "http-vocab:Request"
+          ],
+          "http-vocab:body": {
+            "@type": [
+              "cnt:Content",
+              "cnt:ContentAsText"
+            ],
+            "cnt:characterEncoding": "utf-8",
+            "cnt:chars": ""
+          },
+          "http-vocab:headers": {
+            "@list": []
+          },
+          "http-vocab:methodName": "GET",
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/527c265ba570f0131dddef3687981b66f6dd156f.html"
+        },
+        {
+          "@type": [
+            "http-vocab:Message",
+            "http-vocab:Response"
+          ],
+          "http-vocab:body": {
+            "@type": [
+              "cnt:Content",
+              "cnt:ContentAsText"
+            ],
+            "cnt:characterEncoding": "utf-8",
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Failed Example 2</title>\n</head>\n<body>\n\t<style>\n\t\t.ref {\n\t\t\tcolor: #0000ee;\n\t\t\ttext-decoration: underline;\n\t\t\tcursor: pointer;\n\t\t}\n\t</style>\n\tSee [<span class=\"ref\" onclick=\"location.href='https://act-rules.github.io/'\" role=\"bibliographic-reference lnik\"\n\t\t>ACT rules</span\n\t>].\n</body>\n</html>"
+          },
+          "http-vocab:headers": {
+            "@list": [
+              {
+                "@type": "http-vocab:MessageHeader",
+                "http-vocab:fieldName": "content-type",
+                "http-vocab:fieldValue": "text/html; charset=utf-8"
+              }
+            ]
+          },
+          "http-vocab:statusCodeValue": 200
+        }
+      ],
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/527c265ba570f0131dddef3687981b66f6dd156f.html"
+    },
+    {
+      "@type": "Assertion",
+      "result": {
+        "@type": "TestResult",
+        "info": "The element does not have a valid role",
+        "outcome": "earl:failed",
+        "earl:pointer": {
+          "@type": [
+            "ptr:Pointer",
+            "ptr:SinglePointer",
+            "ptr:ExpressionPointer",
+            "ptr:XPathPointer"
+          ],
+          "ptr:expression": "/html[1]/body[1]/span[1]/@role"
+        }
+      },
+      "subject": {
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/527c265ba570f0131dddef3687981b66f6dd156f.html"
+      },
+      "test": {
+        "@id": "https://alfa.siteimprove.com/rules/sia-r110",
+        "@type": [
+          "TestCriterion",
+          "TestCase"
+        ],
+        "isPartOf": [
+          {
+            "@id": "WCAG2:info-and-relationships",
+            "@type": [
+              "TestCriterion",
+              "TestRequirement"
+            ],
+            "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
+            "title": "Info and Relationships"
+          },
+          {
+            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA4",
+            "@type": [
+              "TestCriterion",
+              "TestRequirement"
+            ],
+            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
+            "title": "Using a WAI-ARIA role to expose the role of a user interface component"
+          },
+          {
+            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/general/G108",
+            "@type": [
+              "TestCriterion",
+              "TestRequirement"
+            ],
+            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
+            "title": "Using markup features to expose the name and role, allow user-settable properties"
+          }
+        ]
+      }
+    },
+    {
       "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2779a5/314d991fa5328e41f8a806bfbac84d748b41f7ed.html",
       "@type": "TestSubject",
       "dct:hasPart": [
@@ -14465,102 +14465,6 @@
           "TestCase"
         ],
         "isPartOf": []
-      }
-    },
-    {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/98f200a9611571fd8db46027c8d28616d94083c8.html",
-      "@type": "TestSubject",
-      "dct:hasPart": [
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Request"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": ""
-          },
-          "http-vocab:headers": {
-            "@list": []
-          },
-          "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/98f200a9611571fd8db46027c8d28616d94083c8.html"
-        },
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Response"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Inapplicable Example 2</title>\n</head>\n<body>\n\t<div role>Some Content</div>\n</body>\n</html>"
-          },
-          "http-vocab:headers": {
-            "@list": [
-              {
-                "@type": "http-vocab:MessageHeader",
-                "http-vocab:fieldName": "content-type",
-                "http-vocab:fieldValue": "text/html; charset=utf-8"
-              }
-            ]
-          },
-          "http-vocab:statusCodeValue": 200
-        }
-      ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/98f200a9611571fd8db46027c8d28616d94083c8.html"
-    },
-    {
-      "@type": "Assertion",
-      "result": {
-        "@type": "TestResult",
-        "outcome": "earl:inapplicable"
-      },
-      "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/98f200a9611571fd8db46027c8d28616d94083c8.html"
-      },
-      "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r21",
-        "@type": [
-          "TestCriterion",
-          "TestCase"
-        ],
-        "isPartOf": [
-          {
-            "@id": "WCAG2:info-and-relationships",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-            "title": "Info and Relationships"
-          },
-          {
-            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA4",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
-            "title": "Using a WAI-ARIA role to expose the role of a user interface component"
-          },
-          {
-            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/general/G108",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
-            "title": "Using markup features to expose the name and role, allow user-settable properties"
-          }
-        ]
       }
     },
     {
@@ -16787,6 +16691,102 @@
       }
     },
     {
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/98f200a9611571fd8db46027c8d28616d94083c8.html",
+      "@type": "TestSubject",
+      "dct:hasPart": [
+        {
+          "@type": [
+            "http-vocab:Message",
+            "http-vocab:Request"
+          ],
+          "http-vocab:body": {
+            "@type": [
+              "cnt:Content",
+              "cnt:ContentAsText"
+            ],
+            "cnt:characterEncoding": "utf-8",
+            "cnt:chars": ""
+          },
+          "http-vocab:headers": {
+            "@list": []
+          },
+          "http-vocab:methodName": "GET",
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/98f200a9611571fd8db46027c8d28616d94083c8.html"
+        },
+        {
+          "@type": [
+            "http-vocab:Message",
+            "http-vocab:Response"
+          ],
+          "http-vocab:body": {
+            "@type": [
+              "cnt:Content",
+              "cnt:ContentAsText"
+            ],
+            "cnt:characterEncoding": "utf-8",
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Inapplicable Example 2</title>\n</head>\n<body>\n\t<div role>Some Content</div>\n</body>\n</html>"
+          },
+          "http-vocab:headers": {
+            "@list": [
+              {
+                "@type": "http-vocab:MessageHeader",
+                "http-vocab:fieldName": "content-type",
+                "http-vocab:fieldValue": "text/html; charset=utf-8"
+              }
+            ]
+          },
+          "http-vocab:statusCodeValue": 200
+        }
+      ],
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/98f200a9611571fd8db46027c8d28616d94083c8.html"
+    },
+    {
+      "@type": "Assertion",
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:inapplicable"
+      },
+      "subject": {
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/98f200a9611571fd8db46027c8d28616d94083c8.html"
+      },
+      "test": {
+        "@id": "https://alfa.siteimprove.com/rules/sia-r110",
+        "@type": [
+          "TestCriterion",
+          "TestCase"
+        ],
+        "isPartOf": [
+          {
+            "@id": "WCAG2:info-and-relationships",
+            "@type": [
+              "TestCriterion",
+              "TestRequirement"
+            ],
+            "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
+            "title": "Info and Relationships"
+          },
+          {
+            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA4",
+            "@type": [
+              "TestCriterion",
+              "TestRequirement"
+            ],
+            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
+            "title": "Using a WAI-ARIA role to expose the role of a user interface component"
+          },
+          {
+            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/general/G108",
+            "@type": [
+              "TestCriterion",
+              "TestRequirement"
+            ],
+            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
+            "title": "Using markup features to expose the name and role, allow user-settable properties"
+          }
+        ]
+      }
+    },
+    {
       "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2779a5/efa1e0438bb515332ec6b4d943044c336ca77fab.html",
       "@type": "TestSubject",
       "dct:hasPart": [
@@ -18631,112 +18631,6 @@
           "TestCase"
         ],
         "isPartOf": []
-      }
-    },
-    {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/4b0aaf07c6e9fb6ea3495dd9cecf55d47b9539b8.html",
-      "@type": "TestSubject",
-      "dct:hasPart": [
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Request"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": ""
-          },
-          "http-vocab:headers": {
-            "@list": []
-          },
-          "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/4b0aaf07c6e9fb6ea3495dd9cecf55d47b9539b8.html"
-        },
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Response"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Failed Example 1</title>\n</head>\n<body>\n\t<style>\n\t\t.link {\n\t\t\tcolor: #0000ee;\n\t\t\ttext-decoration: underline;\n\t\t\tcursor: pointer;\n\t\t}\n\t</style>\n\tI love <span class=\"link\" onclick=\"location.href='https://act-rules.github.io/'\" role=\"lnik\">ACT rules</span>.\n</body>\n</html>"
-          },
-          "http-vocab:headers": {
-            "@list": [
-              {
-                "@type": "http-vocab:MessageHeader",
-                "http-vocab:fieldName": "content-type",
-                "http-vocab:fieldValue": "text/html; charset=utf-8"
-              }
-            ]
-          },
-          "http-vocab:statusCodeValue": 200
-        }
-      ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/4b0aaf07c6e9fb6ea3495dd9cecf55d47b9539b8.html"
-    },
-    {
-      "@type": "Assertion",
-      "result": {
-        "@type": "TestResult",
-        "info": "The element does not have a valid role",
-        "outcome": "earl:failed",
-        "earl:pointer": {
-          "@type": [
-            "ptr:Pointer",
-            "ptr:SinglePointer",
-            "ptr:ExpressionPointer",
-            "ptr:XPathPointer"
-          ],
-          "ptr:expression": "/html[1]/body[1]/span[1]/@role"
-        }
-      },
-      "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/4b0aaf07c6e9fb6ea3495dd9cecf55d47b9539b8.html"
-      },
-      "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r21",
-        "@type": [
-          "TestCriterion",
-          "TestCase"
-        ],
-        "isPartOf": [
-          {
-            "@id": "WCAG2:info-and-relationships",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-            "title": "Info and Relationships"
-          },
-          {
-            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA4",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
-            "title": "Using a WAI-ARIA role to expose the role of a user interface component"
-          },
-          {
-            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/general/G108",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
-            "title": "Using markup features to expose the name and role, allow user-settable properties"
-          }
-        ]
       }
     },
     {
@@ -20995,6 +20889,112 @@
       }
     },
     {
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/4b0aaf07c6e9fb6ea3495dd9cecf55d47b9539b8.html",
+      "@type": "TestSubject",
+      "dct:hasPart": [
+        {
+          "@type": [
+            "http-vocab:Message",
+            "http-vocab:Request"
+          ],
+          "http-vocab:body": {
+            "@type": [
+              "cnt:Content",
+              "cnt:ContentAsText"
+            ],
+            "cnt:characterEncoding": "utf-8",
+            "cnt:chars": ""
+          },
+          "http-vocab:headers": {
+            "@list": []
+          },
+          "http-vocab:methodName": "GET",
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/4b0aaf07c6e9fb6ea3495dd9cecf55d47b9539b8.html"
+        },
+        {
+          "@type": [
+            "http-vocab:Message",
+            "http-vocab:Response"
+          ],
+          "http-vocab:body": {
+            "@type": [
+              "cnt:Content",
+              "cnt:ContentAsText"
+            ],
+            "cnt:characterEncoding": "utf-8",
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Failed Example 1</title>\n</head>\n<body>\n\t<style>\n\t\t.link {\n\t\t\tcolor: #0000ee;\n\t\t\ttext-decoration: underline;\n\t\t\tcursor: pointer;\n\t\t}\n\t</style>\n\tI love <span class=\"link\" onclick=\"location.href='https://act-rules.github.io/'\" role=\"lnik\">ACT rules</span>.\n</body>\n</html>"
+          },
+          "http-vocab:headers": {
+            "@list": [
+              {
+                "@type": "http-vocab:MessageHeader",
+                "http-vocab:fieldName": "content-type",
+                "http-vocab:fieldValue": "text/html; charset=utf-8"
+              }
+            ]
+          },
+          "http-vocab:statusCodeValue": 200
+        }
+      ],
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/4b0aaf07c6e9fb6ea3495dd9cecf55d47b9539b8.html"
+    },
+    {
+      "@type": "Assertion",
+      "result": {
+        "@type": "TestResult",
+        "info": "The element does not have a valid role",
+        "outcome": "earl:failed",
+        "earl:pointer": {
+          "@type": [
+            "ptr:Pointer",
+            "ptr:SinglePointer",
+            "ptr:ExpressionPointer",
+            "ptr:XPathPointer"
+          ],
+          "ptr:expression": "/html[1]/body[1]/span[1]/@role"
+        }
+      },
+      "subject": {
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/4b0aaf07c6e9fb6ea3495dd9cecf55d47b9539b8.html"
+      },
+      "test": {
+        "@id": "https://alfa.siteimprove.com/rules/sia-r110",
+        "@type": [
+          "TestCriterion",
+          "TestCase"
+        ],
+        "isPartOf": [
+          {
+            "@id": "WCAG2:info-and-relationships",
+            "@type": [
+              "TestCriterion",
+              "TestRequirement"
+            ],
+            "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
+            "title": "Info and Relationships"
+          },
+          {
+            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA4",
+            "@type": [
+              "TestCriterion",
+              "TestRequirement"
+            ],
+            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
+            "title": "Using a WAI-ARIA role to expose the role of a user interface component"
+          },
+          {
+            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/general/G108",
+            "@type": [
+              "TestCriterion",
+              "TestRequirement"
+            ],
+            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
+            "title": "Using markup features to expose the name and role, allow user-settable properties"
+          }
+        ]
+      }
+    },
+    {
       "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2779a5/5fd6fda771cf8810eef5166464622d6979e0406e.html",
       "@type": "TestSubject",
       "dct:hasPart": [
@@ -22800,102 +22800,6 @@
           "TestCase"
         ],
         "isPartOf": []
-      }
-    },
-    {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/ebd0080bacb8debc7ad069072240657df38c3e2c.html",
-      "@type": "TestSubject",
-      "dct:hasPart": [
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Request"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": ""
-          },
-          "http-vocab:headers": {
-            "@list": []
-          },
-          "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/ebd0080bacb8debc7ad069072240657df38c3e2c.html"
-        },
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Response"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Inapplicable Example 1</title>\n</head>\n<body>\n\t<img src=\"/WAI/content-assets/wcag-act-rules/test-assets/shared/w3c-logo.png\" alt=\"W3C logo\" />\n</body>\n</html>"
-          },
-          "http-vocab:headers": {
-            "@list": [
-              {
-                "@type": "http-vocab:MessageHeader",
-                "http-vocab:fieldName": "content-type",
-                "http-vocab:fieldValue": "text/html; charset=utf-8"
-              }
-            ]
-          },
-          "http-vocab:statusCodeValue": 200
-        }
-      ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/ebd0080bacb8debc7ad069072240657df38c3e2c.html"
-    },
-    {
-      "@type": "Assertion",
-      "result": {
-        "@type": "TestResult",
-        "outcome": "earl:inapplicable"
-      },
-      "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/ebd0080bacb8debc7ad069072240657df38c3e2c.html"
-      },
-      "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r21",
-        "@type": [
-          "TestCriterion",
-          "TestCase"
-        ],
-        "isPartOf": [
-          {
-            "@id": "WCAG2:info-and-relationships",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-            "title": "Info and Relationships"
-          },
-          {
-            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA4",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
-            "title": "Using a WAI-ARIA role to expose the role of a user interface component"
-          },
-          {
-            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/general/G108",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
-            "title": "Using markup features to expose the name and role, allow user-settable properties"
-          }
-        ]
       }
     },
     {
@@ -25141,6 +25045,102 @@
       }
     },
     {
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/ebd0080bacb8debc7ad069072240657df38c3e2c.html",
+      "@type": "TestSubject",
+      "dct:hasPart": [
+        {
+          "@type": [
+            "http-vocab:Message",
+            "http-vocab:Request"
+          ],
+          "http-vocab:body": {
+            "@type": [
+              "cnt:Content",
+              "cnt:ContentAsText"
+            ],
+            "cnt:characterEncoding": "utf-8",
+            "cnt:chars": ""
+          },
+          "http-vocab:headers": {
+            "@list": []
+          },
+          "http-vocab:methodName": "GET",
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/ebd0080bacb8debc7ad069072240657df38c3e2c.html"
+        },
+        {
+          "@type": [
+            "http-vocab:Message",
+            "http-vocab:Response"
+          ],
+          "http-vocab:body": {
+            "@type": [
+              "cnt:Content",
+              "cnt:ContentAsText"
+            ],
+            "cnt:characterEncoding": "utf-8",
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Inapplicable Example 1</title>\n</head>\n<body>\n\t<img src=\"/WAI/content-assets/wcag-act-rules/test-assets/shared/w3c-logo.png\" alt=\"W3C logo\" />\n</body>\n</html>"
+          },
+          "http-vocab:headers": {
+            "@list": [
+              {
+                "@type": "http-vocab:MessageHeader",
+                "http-vocab:fieldName": "content-type",
+                "http-vocab:fieldValue": "text/html; charset=utf-8"
+              }
+            ]
+          },
+          "http-vocab:statusCodeValue": 200
+        }
+      ],
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/ebd0080bacb8debc7ad069072240657df38c3e2c.html"
+    },
+    {
+      "@type": "Assertion",
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:inapplicable"
+      },
+      "subject": {
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/ebd0080bacb8debc7ad069072240657df38c3e2c.html"
+      },
+      "test": {
+        "@id": "https://alfa.siteimprove.com/rules/sia-r110",
+        "@type": [
+          "TestCriterion",
+          "TestCase"
+        ],
+        "isPartOf": [
+          {
+            "@id": "WCAG2:info-and-relationships",
+            "@type": [
+              "TestCriterion",
+              "TestRequirement"
+            ],
+            "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
+            "title": "Info and Relationships"
+          },
+          {
+            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA4",
+            "@type": [
+              "TestCriterion",
+              "TestRequirement"
+            ],
+            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
+            "title": "Using a WAI-ARIA role to expose the role of a user interface component"
+          },
+          {
+            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/general/G108",
+            "@type": [
+              "TestCriterion",
+              "TestRequirement"
+            ],
+            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
+            "title": "Using markup features to expose the name and role, allow user-settable properties"
+          }
+        ]
+      }
+    },
+    {
       "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2779a5/ecc29b73e37b6a125b3fd9767068dcaa368d467a.svg",
       "@type": "TestSubject",
       "dct:hasPart": [
@@ -26877,112 +26877,6 @@
           "TestCase"
         ],
         "isPartOf": []
-      }
-    },
-    {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/8ee31c22ec3fa0bccf46e3f44e9a5d8e752bc776.html",
-      "@type": "TestSubject",
-      "dct:hasPart": [
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Request"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": ""
-          },
-          "http-vocab:headers": {
-            "@list": []
-          },
-          "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/8ee31c22ec3fa0bccf46e3f44e9a5d8e752bc776.html"
-        },
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Response"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Passed Example 3</title>\n</head>\n<body>\n\t<label>Search: <input type=\"text\" role=\"searchfield searchbox\" placeholder=\"Enter 3 or more characters\"/></label>\n</body>\n</html>"
-          },
-          "http-vocab:headers": {
-            "@list": [
-              {
-                "@type": "http-vocab:MessageHeader",
-                "http-vocab:fieldName": "content-type",
-                "http-vocab:fieldValue": "text/html; charset=utf-8"
-              }
-            ]
-          },
-          "http-vocab:statusCodeValue": 200
-        }
-      ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/8ee31c22ec3fa0bccf46e3f44e9a5d8e752bc776.html"
-    },
-    {
-      "@type": "Assertion",
-      "result": {
-        "@type": "TestResult",
-        "info": "The element does not have a valid role",
-        "outcome": "earl:failed",
-        "earl:pointer": {
-          "@type": [
-            "ptr:Pointer",
-            "ptr:SinglePointer",
-            "ptr:ExpressionPointer",
-            "ptr:XPathPointer"
-          ],
-          "ptr:expression": "/html[1]/body[1]/label[1]/input[1]/@role"
-        }
-      },
-      "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/8ee31c22ec3fa0bccf46e3f44e9a5d8e752bc776.html"
-      },
-      "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r21",
-        "@type": [
-          "TestCriterion",
-          "TestCase"
-        ],
-        "isPartOf": [
-          {
-            "@id": "WCAG2:info-and-relationships",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-            "title": "Info and Relationships"
-          },
-          {
-            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA4",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
-            "title": "Using a WAI-ARIA role to expose the role of a user interface component"
-          },
-          {
-            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/general/G108",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
-            "title": "Using markup features to expose the name and role, allow user-settable properties"
-          }
-        ]
       }
     },
     {
@@ -29139,6 +29033,112 @@
       }
     },
     {
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/8ee31c22ec3fa0bccf46e3f44e9a5d8e752bc776.html",
+      "@type": "TestSubject",
+      "dct:hasPart": [
+        {
+          "@type": [
+            "http-vocab:Message",
+            "http-vocab:Request"
+          ],
+          "http-vocab:body": {
+            "@type": [
+              "cnt:Content",
+              "cnt:ContentAsText"
+            ],
+            "cnt:characterEncoding": "utf-8",
+            "cnt:chars": ""
+          },
+          "http-vocab:headers": {
+            "@list": []
+          },
+          "http-vocab:methodName": "GET",
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/8ee31c22ec3fa0bccf46e3f44e9a5d8e752bc776.html"
+        },
+        {
+          "@type": [
+            "http-vocab:Message",
+            "http-vocab:Response"
+          ],
+          "http-vocab:body": {
+            "@type": [
+              "cnt:Content",
+              "cnt:ContentAsText"
+            ],
+            "cnt:characterEncoding": "utf-8",
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Passed Example 3</title>\n</head>\n<body>\n\t<label>Search: <input type=\"text\" role=\"searchfield searchbox\" placeholder=\"Enter 3 or more characters\"/></label>\n</body>\n</html>"
+          },
+          "http-vocab:headers": {
+            "@list": [
+              {
+                "@type": "http-vocab:MessageHeader",
+                "http-vocab:fieldName": "content-type",
+                "http-vocab:fieldValue": "text/html; charset=utf-8"
+              }
+            ]
+          },
+          "http-vocab:statusCodeValue": 200
+        }
+      ],
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/8ee31c22ec3fa0bccf46e3f44e9a5d8e752bc776.html"
+    },
+    {
+      "@type": "Assertion",
+      "result": {
+        "@type": "TestResult",
+        "info": "The element has a at least one valid role",
+        "outcome": "earl:passed",
+        "earl:pointer": {
+          "@type": [
+            "ptr:Pointer",
+            "ptr:SinglePointer",
+            "ptr:ExpressionPointer",
+            "ptr:XPathPointer"
+          ],
+          "ptr:expression": "/html[1]/body[1]/label[1]/input[1]/@role"
+        }
+      },
+      "subject": {
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/8ee31c22ec3fa0bccf46e3f44e9a5d8e752bc776.html"
+      },
+      "test": {
+        "@id": "https://alfa.siteimprove.com/rules/sia-r110",
+        "@type": [
+          "TestCriterion",
+          "TestCase"
+        ],
+        "isPartOf": [
+          {
+            "@id": "WCAG2:info-and-relationships",
+            "@type": [
+              "TestCriterion",
+              "TestRequirement"
+            ],
+            "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
+            "title": "Info and Relationships"
+          },
+          {
+            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA4",
+            "@type": [
+              "TestCriterion",
+              "TestRequirement"
+            ],
+            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
+            "title": "Using a WAI-ARIA role to expose the role of a user interface component"
+          },
+          {
+            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/general/G108",
+            "@type": [
+              "TestCriterion",
+              "TestRequirement"
+            ],
+            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
+            "title": "Using markup features to expose the name and role, allow user-settable properties"
+          }
+        ]
+      }
+    },
+    {
       "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2779a5/4eeff9c95f15e90ca5abc972079112d1ea5c3d51.html",
       "@type": "TestSubject",
       "dct:hasPart": [
@@ -30681,102 +30681,6 @@
           "TestCase"
         ],
         "isPartOf": []
-      }
-    },
-    {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/0b8e3a6fb2bfd495683f686cf99ea1e46f2074ed.html",
-      "@type": "TestSubject",
-      "dct:hasPart": [
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Request"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": ""
-          },
-          "http-vocab:headers": {
-            "@list": []
-          },
-          "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/0b8e3a6fb2bfd495683f686cf99ea1e46f2074ed.html"
-        },
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Response"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Inapplicable Example 4</title>\n</head>\n<body>\n\t<input type=\"text\" role=\" \" />\n</body>\n</html>"
-          },
-          "http-vocab:headers": {
-            "@list": [
-              {
-                "@type": "http-vocab:MessageHeader",
-                "http-vocab:fieldName": "content-type",
-                "http-vocab:fieldValue": "text/html; charset=utf-8"
-              }
-            ]
-          },
-          "http-vocab:statusCodeValue": 200
-        }
-      ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/0b8e3a6fb2bfd495683f686cf99ea1e46f2074ed.html"
-    },
-    {
-      "@type": "Assertion",
-      "result": {
-        "@type": "TestResult",
-        "outcome": "earl:inapplicable"
-      },
-      "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/0b8e3a6fb2bfd495683f686cf99ea1e46f2074ed.html"
-      },
-      "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r21",
-        "@type": [
-          "TestCriterion",
-          "TestCase"
-        ],
-        "isPartOf": [
-          {
-            "@id": "WCAG2:info-and-relationships",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-            "title": "Info and Relationships"
-          },
-          {
-            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA4",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
-            "title": "Using a WAI-ARIA role to expose the role of a user interface component"
-          },
-          {
-            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/general/G108",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
-            "title": "Using markup features to expose the name and role, allow user-settable properties"
-          }
-        ]
       }
     },
     {
@@ -32706,6 +32610,102 @@
       }
     },
     {
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/0b8e3a6fb2bfd495683f686cf99ea1e46f2074ed.html",
+      "@type": "TestSubject",
+      "dct:hasPart": [
+        {
+          "@type": [
+            "http-vocab:Message",
+            "http-vocab:Request"
+          ],
+          "http-vocab:body": {
+            "@type": [
+              "cnt:Content",
+              "cnt:ContentAsText"
+            ],
+            "cnt:characterEncoding": "utf-8",
+            "cnt:chars": ""
+          },
+          "http-vocab:headers": {
+            "@list": []
+          },
+          "http-vocab:methodName": "GET",
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/0b8e3a6fb2bfd495683f686cf99ea1e46f2074ed.html"
+        },
+        {
+          "@type": [
+            "http-vocab:Message",
+            "http-vocab:Response"
+          ],
+          "http-vocab:body": {
+            "@type": [
+              "cnt:Content",
+              "cnt:ContentAsText"
+            ],
+            "cnt:characterEncoding": "utf-8",
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Inapplicable Example 4</title>\n</head>\n<body>\n\t<input type=\"text\" role=\" \" />\n</body>\n</html>"
+          },
+          "http-vocab:headers": {
+            "@list": [
+              {
+                "@type": "http-vocab:MessageHeader",
+                "http-vocab:fieldName": "content-type",
+                "http-vocab:fieldValue": "text/html; charset=utf-8"
+              }
+            ]
+          },
+          "http-vocab:statusCodeValue": 200
+        }
+      ],
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/0b8e3a6fb2bfd495683f686cf99ea1e46f2074ed.html"
+    },
+    {
+      "@type": "Assertion",
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:inapplicable"
+      },
+      "subject": {
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/0b8e3a6fb2bfd495683f686cf99ea1e46f2074ed.html"
+      },
+      "test": {
+        "@id": "https://alfa.siteimprove.com/rules/sia-r110",
+        "@type": [
+          "TestCriterion",
+          "TestCase"
+        ],
+        "isPartOf": [
+          {
+            "@id": "WCAG2:info-and-relationships",
+            "@type": [
+              "TestCriterion",
+              "TestRequirement"
+            ],
+            "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
+            "title": "Info and Relationships"
+          },
+          {
+            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA4",
+            "@type": [
+              "TestCriterion",
+              "TestRequirement"
+            ],
+            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
+            "title": "Using a WAI-ARIA role to expose the role of a user interface component"
+          },
+          {
+            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/general/G108",
+            "@type": [
+              "TestCriterion",
+              "TestRequirement"
+            ],
+            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
+            "title": "Using markup features to expose the name and role, allow user-settable properties"
+          }
+        ]
+      }
+    },
+    {
       "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2779a5/0ad882dffaf6edd16058119e1c513b4746b0ac27.html",
       "@type": "TestSubject",
       "dct:hasPart": [
@@ -34277,102 +34277,6 @@
           "TestCase"
         ],
         "isPartOf": []
-      }
-    },
-    {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/8f409b57b31bce96b6f256d0fa9cfabcd0b984ca.html",
-      "@type": "TestSubject",
-      "dct:hasPart": [
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Request"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": ""
-          },
-          "http-vocab:headers": {
-            "@list": []
-          },
-          "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/8f409b57b31bce96b6f256d0fa9cfabcd0b984ca.html"
-        },
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Response"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Inapplicable Example 3</title>\n</head>\n<body>\n\t<div role=\"\">Some Content</div>\n</body>\n</html>"
-          },
-          "http-vocab:headers": {
-            "@list": [
-              {
-                "@type": "http-vocab:MessageHeader",
-                "http-vocab:fieldName": "content-type",
-                "http-vocab:fieldValue": "text/html; charset=utf-8"
-              }
-            ]
-          },
-          "http-vocab:statusCodeValue": 200
-        }
-      ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/8f409b57b31bce96b6f256d0fa9cfabcd0b984ca.html"
-    },
-    {
-      "@type": "Assertion",
-      "result": {
-        "@type": "TestResult",
-        "outcome": "earl:inapplicable"
-      },
-      "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/8f409b57b31bce96b6f256d0fa9cfabcd0b984ca.html"
-      },
-      "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r21",
-        "@type": [
-          "TestCriterion",
-          "TestCase"
-        ],
-        "isPartOf": [
-          {
-            "@id": "WCAG2:info-and-relationships",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-            "title": "Info and Relationships"
-          },
-          {
-            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA4",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
-            "title": "Using a WAI-ARIA role to expose the role of a user interface component"
-          },
-          {
-            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/general/G108",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
-            "title": "Using markup features to expose the name and role, allow user-settable properties"
-          }
-        ]
       }
     },
     {
@@ -36265,6 +36169,102 @@
       }
     },
     {
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/8f409b57b31bce96b6f256d0fa9cfabcd0b984ca.html",
+      "@type": "TestSubject",
+      "dct:hasPart": [
+        {
+          "@type": [
+            "http-vocab:Message",
+            "http-vocab:Request"
+          ],
+          "http-vocab:body": {
+            "@type": [
+              "cnt:Content",
+              "cnt:ContentAsText"
+            ],
+            "cnt:characterEncoding": "utf-8",
+            "cnt:chars": ""
+          },
+          "http-vocab:headers": {
+            "@list": []
+          },
+          "http-vocab:methodName": "GET",
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/8f409b57b31bce96b6f256d0fa9cfabcd0b984ca.html"
+        },
+        {
+          "@type": [
+            "http-vocab:Message",
+            "http-vocab:Response"
+          ],
+          "http-vocab:body": {
+            "@type": [
+              "cnt:Content",
+              "cnt:ContentAsText"
+            ],
+            "cnt:characterEncoding": "utf-8",
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Inapplicable Example 3</title>\n</head>\n<body>\n\t<div role=\"\">Some Content</div>\n</body>\n</html>"
+          },
+          "http-vocab:headers": {
+            "@list": [
+              {
+                "@type": "http-vocab:MessageHeader",
+                "http-vocab:fieldName": "content-type",
+                "http-vocab:fieldValue": "text/html; charset=utf-8"
+              }
+            ]
+          },
+          "http-vocab:statusCodeValue": 200
+        }
+      ],
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/8f409b57b31bce96b6f256d0fa9cfabcd0b984ca.html"
+    },
+    {
+      "@type": "Assertion",
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:inapplicable"
+      },
+      "subject": {
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/8f409b57b31bce96b6f256d0fa9cfabcd0b984ca.html"
+      },
+      "test": {
+        "@id": "https://alfa.siteimprove.com/rules/sia-r110",
+        "@type": [
+          "TestCriterion",
+          "TestCase"
+        ],
+        "isPartOf": [
+          {
+            "@id": "WCAG2:info-and-relationships",
+            "@type": [
+              "TestCriterion",
+              "TestRequirement"
+            ],
+            "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
+            "title": "Info and Relationships"
+          },
+          {
+            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA4",
+            "@type": [
+              "TestCriterion",
+              "TestRequirement"
+            ],
+            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
+            "title": "Using a WAI-ARIA role to expose the role of a user interface component"
+          },
+          {
+            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/general/G108",
+            "@type": [
+              "TestCriterion",
+              "TestRequirement"
+            ],
+            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
+            "title": "Using markup features to expose the name and role, allow user-settable properties"
+          }
+        ]
+      }
+    },
+    {
       "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2779a5/64771c390e57375a822a7223362ea7bb859c0a96.html",
       "@type": "TestSubject",
       "dct:hasPart": [
@@ -37859,102 +37859,6 @@
       }
     },
     {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/575a5e323abe810450d5ff443a5fd614dae12257.html",
-      "@type": "TestSubject",
-      "dct:hasPart": [
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Request"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": ""
-          },
-          "http-vocab:headers": {
-            "@list": []
-          },
-          "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/575a5e323abe810450d5ff443a5fd614dae12257.html"
-        },
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Response"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Inapplicable Example 5</title>\n</head>\n<body>\n\t<div aria-hidden=\"true\" role=\"banner\">Some Content</div>\n</body>\n</html>"
-          },
-          "http-vocab:headers": {
-            "@list": [
-              {
-                "@type": "http-vocab:MessageHeader",
-                "http-vocab:fieldName": "content-type",
-                "http-vocab:fieldValue": "text/html; charset=utf-8"
-              }
-            ]
-          },
-          "http-vocab:statusCodeValue": 200
-        }
-      ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/575a5e323abe810450d5ff443a5fd614dae12257.html"
-    },
-    {
-      "@type": "Assertion",
-      "result": {
-        "@type": "TestResult",
-        "outcome": "earl:inapplicable"
-      },
-      "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/575a5e323abe810450d5ff443a5fd614dae12257.html"
-      },
-      "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r21",
-        "@type": [
-          "TestCriterion",
-          "TestCase"
-        ],
-        "isPartOf": [
-          {
-            "@id": "WCAG2:info-and-relationships",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-            "title": "Info and Relationships"
-          },
-          {
-            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA4",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
-            "title": "Using a WAI-ARIA role to expose the role of a user interface component"
-          },
-          {
-            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/general/G108",
-            "@type": [
-              "TestCriterion",
-              "TestRequirement"
-            ],
-            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
-            "title": "Using markup features to expose the name and role, allow user-settable properties"
-          }
-        ]
-      }
-    },
-    {
       "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59796f/5c71cdabc04f9038e21d872e20a516cb429a7619.html",
       "@type": "TestSubject",
       "dct:hasPart": [
@@ -38485,7 +38389,7 @@
             "ptr:ExpressionPointer",
             "ptr:XPathPointer"
           ],
-          "ptr:expression": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[2]/@headers"
+          "ptr:expression": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/@headers"
         }
       },
       "subject": {
@@ -39869,6 +39773,102 @@
             ],
             "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
             "title": "Using meta refresh to create an instant client-side redirect"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/575a5e323abe810450d5ff443a5fd614dae12257.html",
+      "@type": "TestSubject",
+      "dct:hasPart": [
+        {
+          "@type": [
+            "http-vocab:Message",
+            "http-vocab:Request"
+          ],
+          "http-vocab:body": {
+            "@type": [
+              "cnt:Content",
+              "cnt:ContentAsText"
+            ],
+            "cnt:characterEncoding": "utf-8",
+            "cnt:chars": ""
+          },
+          "http-vocab:headers": {
+            "@list": []
+          },
+          "http-vocab:methodName": "GET",
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/575a5e323abe810450d5ff443a5fd614dae12257.html"
+        },
+        {
+          "@type": [
+            "http-vocab:Message",
+            "http-vocab:Response"
+          ],
+          "http-vocab:body": {
+            "@type": [
+              "cnt:Content",
+              "cnt:ContentAsText"
+            ],
+            "cnt:characterEncoding": "utf-8",
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Inapplicable Example 5</title>\n</head>\n<body>\n\t<div aria-hidden=\"true\" role=\"banner\">Some Content</div>\n</body>\n</html>"
+          },
+          "http-vocab:headers": {
+            "@list": [
+              {
+                "@type": "http-vocab:MessageHeader",
+                "http-vocab:fieldName": "content-type",
+                "http-vocab:fieldValue": "text/html; charset=utf-8"
+              }
+            ]
+          },
+          "http-vocab:statusCodeValue": 200
+        }
+      ],
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/575a5e323abe810450d5ff443a5fd614dae12257.html"
+    },
+    {
+      "@type": "Assertion",
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:inapplicable"
+      },
+      "subject": {
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/575a5e323abe810450d5ff443a5fd614dae12257.html"
+      },
+      "test": {
+        "@id": "https://alfa.siteimprove.com/rules/sia-r110",
+        "@type": [
+          "TestCriterion",
+          "TestCase"
+        ],
+        "isPartOf": [
+          {
+            "@id": "WCAG2:info-and-relationships",
+            "@type": [
+              "TestCriterion",
+              "TestRequirement"
+            ],
+            "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
+            "title": "Info and Relationships"
+          },
+          {
+            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA4",
+            "@type": [
+              "TestCriterion",
+              "TestRequirement"
+            ],
+            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
+            "title": "Using a WAI-ARIA role to expose the role of a user interface component"
+          },
+          {
+            "@id": "https://www.w3.org/WAI/WCAG21/Techniques/general/G108",
+            "@type": [
+              "TestCriterion",
+              "TestRequirement"
+            ],
+            "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
+            "title": "Using markup features to expose the name and role, allow user-settable properties"
           }
         ]
       }
@@ -46988,7 +46988,7 @@
             "ptr:ExpressionPointer",
             "ptr:XPathPointer"
           ],
-          "ptr:expression": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/@headers"
+          "ptr:expression": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[2]/@headers"
         }
       },
       "subject": {
@@ -53734,7 +53734,7 @@
             "ptr:ExpressionPointer",
             "ptr:XPathPointer"
           ],
-          "ptr:expression": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/@headers"
+          "ptr:expression": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/th[2]/@headers"
         }
       },
       "subject": {

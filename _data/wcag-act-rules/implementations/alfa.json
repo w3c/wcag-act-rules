@@ -2,7 +2,7 @@
   "vendor": "Siteimprove",
   "name": "Alfa",
   "version": "0.53.0",
-  "lastModified": "18 January 2023",
+  "lastModified": "20 January 2023",
   "approvedRules": {
     "complete": 20,
     "partial": 0,
@@ -11,10 +11,10 @@
     "untested": 0
   },
   "proposedRules": {
-    "complete": 9,
-    "partial": 3,
+    "complete": 11,
+    "partial": 2,
     "minimal": 3,
-    "inconsistent": 9,
+    "inconsistent": 8,
     "untested": 45
   },
   "actRuleMapping": [
@@ -6441,14 +6441,14 @@
       "procedureNames": [
         "sia-r19"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
         "reported": []
       },
       "coverage": {
-        "covered": 22,
+        "covered": 23,
         "untested": 0,
         "cantTell": 1,
         "testCaseTotal": 24
@@ -6749,7 +6749,7 @@
             {
               "procedureName": "sia-r19",
               "outcomes": [
-                "passed"
+                "failed"
               ]
             }
           ]
@@ -9409,9 +9409,9 @@
       "ruleName": "Role attribute has valid value",
       "ruleApproved": false,
       "procedureNames": [
-        "sia-r21"
+        "sia-r110"
       ],
-      "consistency": null,
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
@@ -9422,7 +9422,7 @@
         ]
       },
       "coverage": {
-        "covered": 9,
+        "covered": 10,
         "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 10
@@ -9436,7 +9436,7 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "sia-r21",
+              "procedureName": "sia-r110",
               "outcomes": [
                 "passed"
               ]
@@ -9451,7 +9451,7 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "sia-r21",
+              "procedureName": "sia-r110",
               "outcomes": [
                 "passed"
               ]
@@ -9466,9 +9466,9 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "sia-r21",
+              "procedureName": "sia-r110",
               "outcomes": [
-                "failed"
+                "passed"
               ]
             }
           ]
@@ -9481,7 +9481,7 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "sia-r21",
+              "procedureName": "sia-r110",
               "outcomes": [
                 "failed"
               ]
@@ -9496,7 +9496,7 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "sia-r21",
+              "procedureName": "sia-r110",
               "outcomes": [
                 "failed"
               ]
@@ -9511,7 +9511,7 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "sia-r21",
+              "procedureName": "sia-r110",
               "outcomes": [
                 "inapplicable"
               ]
@@ -9526,7 +9526,7 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "sia-r21",
+              "procedureName": "sia-r110",
               "outcomes": [
                 "inapplicable"
               ]
@@ -9541,7 +9541,7 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "sia-r21",
+              "procedureName": "sia-r110",
               "outcomes": [
                 "inapplicable"
               ]
@@ -9556,7 +9556,7 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "sia-r21",
+              "procedureName": "sia-r110",
               "outcomes": [
                 "inapplicable"
               ]
@@ -9571,7 +9571,7 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "sia-r21",
+              "procedureName": "sia-r110",
               "outcomes": [
                 "inapplicable"
               ]
