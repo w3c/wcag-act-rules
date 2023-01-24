@@ -1,7 +1,7 @@
 {
   "vendor": "Siteimprove",
   "name": "Alfa",
-  "version": "0.53.0",
+  "version": "0.56.0",
   "lastModified": "20 January 2023",
   "approvedRules": {
     "complete": 20,
@@ -7637,11 +7637,13 @@
       ],
       "consistency": "minimal",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:name-role-value"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:name-role-value"
+        ]
       },
       "coverage": {
         "covered": 14,
@@ -8376,11 +8378,13 @@
       ],
       "consistency": "minimal",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:link-purpose-link-only"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:link-purpose-link-only"
+        ]
       },
       "coverage": {
         "covered": 8,
@@ -8715,11 +8719,14 @@
       ],
       "consistency": null,
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:link-purpose-in-context"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:link-purpose-in-context",
+          "WCAG2:link-purpose-link-only"
+        ]
       },
       "coverage": {
         "covered": 7,
@@ -10017,11 +10024,13 @@
       ],
       "consistency": "minimal",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:focus-visible"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:focus-visible"
+        ]
       },
       "coverage": {
         "covered": 4,

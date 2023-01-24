@@ -2,7 +2,7 @@
   "vendor": "LASIGE, Faculdade de Ciências da Universidade de Lisboa",
   "name": "QualWeb",
   "version": "3.0.0",
-  "lastModified": "18 January 2023",
+  "lastModified": "24 January 2023",
   "approvedRules": {
     "complete": 16,
     "partial": 3,
@@ -6948,11 +6948,13 @@
       ],
       "consistency": null,
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:audio-control"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:audio-control"
+        ]
       },
       "coverage": {
         "covered": 2,
@@ -7190,11 +7192,13 @@
       ],
       "consistency": "minimal",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:audio-only-and-video-only-prerecorded"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:audio-only-and-video-only-prerecorded"
+        ]
       },
       "coverage": {
         "covered": 5,
@@ -8086,11 +8090,13 @@
       ],
       "consistency": "minimal",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:bypass-blocks"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:bypass-blocks"
+        ]
       },
       "coverage": {
         "covered": 1,
@@ -9925,11 +9931,13 @@
       ],
       "consistency": "minimal",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:name-role-value"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:name-role-value"
+        ]
       },
       "coverage": {
         "covered": 9,
@@ -10637,11 +10645,13 @@
       ],
       "consistency": "minimal",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:error-identification"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:error-identification"
+        ]
       },
       "coverage": {
         "covered": 1,
@@ -10814,11 +10824,13 @@
       ],
       "consistency": "minimal",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:link-purpose-link-only"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:link-purpose-link-only"
+        ]
       },
       "coverage": {
         "covered": 8,
@@ -11153,11 +11165,14 @@
       ],
       "consistency": null,
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:link-purpose-in-context"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:link-purpose-in-context",
+          "WCAG2:link-purpose-link-only"
+        ]
       },
       "coverage": {
         "covered": 7,
@@ -12449,11 +12464,13 @@
       ],
       "consistency": "minimal",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:focus-visible"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:focus-visible"
+        ]
       },
       "coverage": {
         "covered": 5,
@@ -13874,11 +13891,13 @@
       ],
       "consistency": null,
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:captions-prerecorded"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:captions-prerecorded"
+        ]
       },
       "coverage": {
         "covered": 1,
@@ -14064,11 +14083,15 @@
       ],
       "consistency": null,
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:audio-description-or-media-alternative-prerecorded"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:media-alternative-prerecorded",
+          "WCAG2:audio-description-or-media-alternative-prerecorded",
+          "WCAG2:audio-description-prerecorded"
+        ]
       },
       "coverage": {
         "covered": 1,
@@ -15557,11 +15580,13 @@
       ],
       "consistency": null,
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:audio-description-prerecorded"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:audio-description-prerecorded"
+        ]
       },
       "coverage": {
         "covered": 1,
@@ -15812,11 +15837,13 @@
       ],
       "consistency": "minimal",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:media-alternative-prerecorded"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:media-alternative-prerecorded"
+        ]
       },
       "coverage": {
         "covered": 1,
@@ -16132,11 +16159,13 @@
       ],
       "consistency": "minimal",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:resize-text"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:resize-text"
+        ]
       },
       "coverage": {
         "covered": 5,

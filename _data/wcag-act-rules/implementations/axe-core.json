@@ -7553,9 +7553,11 @@
       ],
       "consistency": null,
       "accessibilityRequirements": {
-        "correct": true,
+        "correct": false,
         "expected": [],
-        "reported": []
+        "reported": [
+          "WCAG2:audio-only-and-video-only-prerecorded"
+        ]
       },
       "coverage": {
         "covered": 0,
@@ -7680,11 +7682,13 @@
       ],
       "consistency": null,
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:audio-control"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:audio-control"
+        ]
       },
       "coverage": {
         "covered": 2,
@@ -7833,9 +7837,11 @@
       ],
       "consistency": null,
       "accessibilityRequirements": {
-        "correct": true,
+        "correct": false,
         "expected": [],
-        "reported": []
+        "reported": [
+          "WCAG2:audio-only-and-video-only-prerecorded"
+        ]
       },
       "coverage": {
         "covered": 0,
@@ -8047,9 +8053,11 @@
       ],
       "consistency": "minimal",
       "accessibilityRequirements": {
-        "correct": true,
+        "correct": false,
         "expected": [],
-        "reported": []
+        "reported": [
+          "WCAG2:bypass-blocks"
+        ]
       },
       "coverage": {
         "covered": 1,
@@ -8189,11 +8197,13 @@
       ],
       "consistency": "minimal",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:bypass-blocks"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:bypass-blocks"
+        ]
       },
       "coverage": {
         "covered": 9,
@@ -8617,9 +8627,11 @@
       ],
       "consistency": "minimal",
       "accessibilityRequirements": {
-        "correct": true,
+        "correct": false,
         "expected": [],
-        "reported": []
+        "reported": [
+          "WCAG2:bypass-blocks"
+        ]
       },
       "coverage": {
         "covered": 10,
@@ -8849,9 +8861,11 @@
       ],
       "consistency": "minimal",
       "accessibilityRequirements": {
-        "correct": true,
+        "correct": false,
         "expected": [],
-        "reported": []
+        "reported": [
+          "WCAG2:bypass-blocks"
+        ]
       },
       "coverage": {
         "covered": 8,
@@ -9051,9 +9065,11 @@
       ],
       "consistency": "minimal",
       "accessibilityRequirements": {
-        "correct": true,
+        "correct": false,
         "expected": [],
-        "reported": []
+        "reported": [
+          "WCAG2:bypass-blocks"
+        ]
       },
       "coverage": {
         "covered": 5,
@@ -9690,11 +9706,13 @@
       ],
       "consistency": "minimal",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:name-role-value"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:name-role-value"
+        ]
       },
       "coverage": {
         "covered": 11,
@@ -10440,11 +10458,13 @@
       ],
       "consistency": "minimal",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:link-purpose-link-only"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:link-purpose-link-only"
+        ]
       },
       "coverage": {
         "covered": 10,
@@ -11797,11 +11817,13 @@
       ],
       "consistency": "minimal",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:info-and-relationships"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:info-and-relationships"
+        ]
       },
       "coverage": {
         "covered": 13,
@@ -13090,11 +13112,13 @@
       ],
       "consistency": null,
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:captions-prerecorded"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:captions-prerecorded"
+        ]
       },
       "coverage": {
         "covered": 2,
