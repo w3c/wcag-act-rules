@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 5c01ea</p>
-  <p><strong>Date:</strong> Updated 16 January 2023</p>
+  <p><strong>Date:</strong> Updated 26 January 2023</p>
   <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/Jym77">Jean-Yves Moyen</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
   
@@ -21,7 +21,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that WAI-ARIA states or properties are allowed for the element they are specified on.
-  last_modified: 16 January 2023
+  last_modified: 26 January 2023
 ---
 
 ## Applicability
@@ -33,7 +33,7 @@ This rule applies to any [WAI-ARIA state or property][] that is specified on an 
 For each test target, one of the following is true:
 
 - **global**: the test target is a [global state or property][global]; or
-- **semantic Role**: the test target is an [inherited][], [supported][], or [required][] [state][] or [property][] of the [semantic role][] of the element on which the test target is specified; or
+- **semantic role**: the test target is an [inherited][], [supported][], or [required][] [state][] or [property][] of the [semantic role][] of the element on which the test target is specified; or
 - **language feature**: the test target is specified on an [HTML element][namespaced element] and is allowed on that element. Which ARIA states or properties may be used on which element is described in [ARIA in HTML](https://w3c.github.io/html-aria/).
 
 ## Expectation 2
@@ -127,7 +127,7 @@ The following aspects are required in using this rule.
 
 <a class="example-link" title="Passed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/4240276511703c9bfa881ac80f7c0af5c92c97cc.html">Open in a new tab</a>
 
-The `aria-pressed` [state][] is [supported][] for a [semantic][semantic role] `button`, which is the [implicit role][] for `button` elements.
+The `aria-pressed` [state][] is [supported][] with `button`, which is the [implicit role][] for `button` elements.
 
 ```html
 <button aria-pressed="false">My button</button>
@@ -137,7 +137,7 @@ The `aria-pressed` [state][] is [supported][] for a [semantic][semantic role] `b
 
 <a class="example-link" title="Passed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/f91d77e96c069380252b674faaf08eecab375503.html">Open in a new tab</a>
 
-The `aria-pressed` [state][] is [supported][] for the [semantic][semantic role] `button`, which is the [explicit role][] of this `div` element.
+The `aria-pressed` [state][] is [supported][] with `button`, which is the [explicit role][] of this `div` element.
 
 ```html
 <div role="button" aria-pressed="false">My button</div>
@@ -157,7 +157,7 @@ The `aria-busy` [state][] is a [global][] [state][] that is [supported][] by all
 
 <a class="example-link" title="Passed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/655b73c1435335a6a16852210787dc3621e73cef.html">Open in a new tab</a>
 
-The `aria-label` [property][] is a [global][] [property][] and thus [inherited][] for all [semantic role][].
+The `aria-label` [property][] is a [global][] [property][]. It is allowed on any [semantic role][].
 
 ```html
 <div role="button" aria-label="OK">✓</div>
@@ -207,7 +207,7 @@ The `aria-controls` [property][] is [required][] for the [semantic][semantic rol
 
 <a class="example-link" title="Passed Example 9" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/6c0718872b1d915b49c48fe135b9fc251bcff561.html">Open in a new tab</a>
 
-The `aria-label` [property][] is [global][] and thus [inherited][] for all [semantic role][], including the ones from the [WAI-ARIA Graphics Module](https://www.w3.org/TR/graphics-aria-1.0). This rule is also applicable to SVG elements.
+The `aria-label` [property][] is [global][]. It is allowed on any [semantic role][], including roles from the [WAI-ARIA Graphics Module](https://www.w3.org/TR/graphics-aria-1.0). This rule is applicable to SVG elements.
 
 ```html
 <svg xmlns="http://www.w3.org/2000/svg" role="graphics-object" width="100" height="100" aria-label="yellow circle">
@@ -219,7 +219,7 @@ The `aria-label` [property][] is [global][] and thus [inherited][] for all [sema
 
 <a class="example-link" title="Passed Example 10" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/d934cb530f9bd82f0c84615dfc405efad9b1fc69.html">Open in a new tab</a>
 
-This `button` element has an [explicit role][] of `none`. However, it is [focusable][] (by default). Thus it has a [semantic role][] of `button` due to [Presentational Roles Conflict Resolution][]. The `aria-pressed` [state][] is [supported][] for the `button` role.
+This `button` element has an [explicit role][] of `none`. However, because it is [focusable][] (by default), it has a [semantic role][] of `button` due to [Presentational Roles Conflict Resolution][]. The `aria-pressed` [state][] is [supported][] for the `button` role.
 
 ```html
 <button role="none" aria-pressed="false">ACT rules are cool!</button>
@@ -241,7 +241,7 @@ This `input` element does not have an [explicit role][] of `textbox`, but the `a
 
 <a class="example-link" title="Failed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/5e4eedbbef33766005c6f92c3dede1b1b40a2dac.html">Open in a new tab</a>
 
-The `aria-sort` [property][] is neither [inherited][], [supported][], nor [required][] for the [semantic][semantic role] `button`, which is the [implicit role][] for the `button` element.
+The `aria-sort` [property][] may not be used on a [semantic][semantic role]]  `button`.
 
 ```html
 <button aria-sort="">Sort by year</button>
@@ -251,7 +251,7 @@ The `aria-sort` [property][] is neither [inherited][], [supported][], nor [requi
 
 <a class="example-link" title="Failed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/1449cc0526959d274a89345e9b479846577aac5c.html">Open in a new tab</a>
 
-The `aria-orientation` property may not be used on `audio` element, nor it can be used on `application` (the [semantic role][] for which [inherited][], [supported][], or [required][] [states][state] or [properties][property] are also applicable to `audio` element).
+The `aria-orientation` property may not be used on `audio` element, nor can it be used on `application` (the [semantic role][] for which [inherited][], [supported][], or [required][] [states][state] or [properties][property] are also applicable to `audio` element).
 
 ```html
 <audio src="/test-assets/moon-audio/moon-speech.mp3" controls aria-orientation="horizontal"></audio>
