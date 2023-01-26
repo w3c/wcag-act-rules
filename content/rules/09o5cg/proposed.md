@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 09o5cg</p>
-  <p><strong>Date:</strong> Updated 16 January 2023</p>
+  <p><strong>Date:</strong> Updated 26 January 2023</p>
   <p><strong>Authors:</strong> <a href="https://github.com/Jym77">Jean-Yves Moyen</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -19,7 +19,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that the highest possible contrast of every text character with its background meets the enhanced contrast requirement.
-  last_modified: 16 January 2023
+  last_modified: 26 January 2023
   scs_tested:
     - handle: Contrast (Enhanced)
       num: 1.4.6
@@ -302,7 +302,19 @@ This 18pt large black text has a contrast ratio of 3.6:1 on the gray background.
 
 #### Failed Example 4
 
-<a class="example-link" title="Failed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/aed692e9f0a1be5c87ef1de56afa8e23e14cc3ba.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/eaf0a926896f045a498073da42ea6263a4d6d36c.html">Open in a new tab</a>
+
+This light gray text has a contrast ratio of 2.3:1 on the white background.
+
+```html
+<p style="color: #AAA; background: white;">
+	Some text in English
+</p>
+```
+
+#### Failed Example 5
+
+<a class="example-link" title="Failed Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/aed692e9f0a1be5c87ef1de56afa8e23e14cc3ba.html">Open in a new tab</a>
 
 This 14pt bold black text has a contrast ratio of 3.6:1 on the gray background.
 
@@ -312,9 +324,9 @@ This 14pt bold black text has a contrast ratio of 3.6:1 on the gray background.
 </p>
 ```
 
-#### Failed Example 5
+#### Failed Example 6
 
-<a class="example-link" title="Failed Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/6f14b150aab632c7656450b3a6dc44ad28cf6cce.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 6" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/6f14b150aab632c7656450b3a6dc44ad28cf6cce.html">Open in a new tab</a>
 
 This light gray text has a contrast ratio between 1.4:1 and 4.7:1 on the background image.
 
@@ -326,9 +338,9 @@ This light gray text has a contrast ratio between 1.4:1 and 4.7:1 on the backgro
 </p>
 ```
 
-#### Failed Example 6
+#### Failed Example 7
 
-<a class="example-link" title="Failed Example 6" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/4e1ec35a2908dbb52d9d50bb60b9110316584799.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 7" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/4e1ec35a2908dbb52d9d50bb60b9110316584799.html">Open in a new tab</a>
 
 This black text with 60% alpha channel has a contrast ratio of 5.7:1 on the white background.
 
@@ -338,9 +350,9 @@ This black text with 60% alpha channel has a contrast ratio of 5.7:1 on the whit
 </p>
 ```
 
-#### Failed Example 7
+#### Failed Example 8
 
-<a class="example-link" title="Failed Example 7" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/d5e21eae8aa28290befa06cfe68b5032ed05b7a5.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 8" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/d5e21eae8aa28290befa06cfe68b5032ed05b7a5.html">Open in a new tab</a>
 
 This black text with 60% opacity has a contrast ratio of 5.7:1 on the white background.
 
@@ -352,9 +364,9 @@ This black text with 60% opacity has a contrast ratio of 5.7:1 on the white back
 </div>
 ```
 
-#### Failed Example 8
+#### Failed Example 9
 
-<a class="example-link" title="Failed Example 8" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/4c47eeaeb5dd826b90c8a9efb081962f04f5d339.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 9" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/4c47eeaeb5dd826b90c8a9efb081962f04f5d339.html">Open in a new tab</a>
 
 This gray text has a contrast ratio of 5.7:1 on the white background in a shadow DOM tree.
 
@@ -366,9 +378,9 @@ This gray text has a contrast ratio of 5.7:1 on the white background in a shadow
 </script>
 ```
 
-#### Failed Example 9
+#### Failed Example 10
 
-<a class="example-link" title="Failed Example 9" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/1882d796de0dcb4b85924f3abfbf565eeef2d963.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 10" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/1882d796de0dcb4b85924f3abfbf565eeef2d963.html">Open in a new tab</a>
 
 This semi-transparent gray text has a contrast ratio between 2.6:1 and 5.4:1 on the black and white background. The light gray text is compared to the white section of the background and the dark gray text is compared to the black section of the background.
 
@@ -386,9 +398,9 @@ This semi-transparent gray text has a contrast ratio between 2.6:1 and 5.4:1 on 
 </span>
 ```
 
-#### Failed Example 10
+#### Failed Example 11
 
-<a class="example-link" title="Failed Example 10" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/a34d15d4bb754339339996802d1bc32d464643da.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 11" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/a34d15d4bb754339339996802d1bc32d464643da.html">Open in a new tab</a>
 
 The first `p` element has a contrast ratio of 12.6:1. The second `p` element, which contains an example of the Helvetica font, has a contrast ratio of 6.4:1. Because this provides information, and not only for aesthetic purposes, this is not considered [purely decorative][].
 
@@ -401,9 +413,9 @@ The first `p` element has a contrast ratio of 12.6:1. The second `p` element, wh
 </p>
 ```
 
-#### Failed Example 11
+#### Failed Example 12
 
-<a class="example-link" title="Failed Example 11" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/316b0c7fccdbe8a47716447a9fe2ca197c8358af.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 12" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/316b0c7fccdbe8a47716447a9fe2ca197c8358af.html">Open in a new tab</a>
 
 This text is part of a widget because it is a child of a `button` element. The button text has a contrast ratio of 6.4:1.
 
@@ -411,9 +423,9 @@ This text is part of a widget because it is a child of a `button` element. The b
 <button style="color: #555; background: #EEE;">My button!</button>
 ```
 
-#### Failed Example 12
+#### Failed Example 13
 
-<a class="example-link" title="Failed Example 12" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/2e81c3e60722202d2e92089a0695d74e8b49cdaa.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 13" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/2e81c3e60722202d2e92089a0695d74e8b49cdaa.html">Open in a new tab</a>
 
 This text is part of a widget because it is a child of an element with the `role` attribute set to `button`.
 The button text has a contrast

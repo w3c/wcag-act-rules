@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> bisz58</p>
-  <p><strong>Date:</strong> Updated 16 January 2023</p>
+  <p><strong>Date:</strong> Updated 26 January 2023</p>
   <p><strong>Authors:</strong> <a href="https://github.com/Jym77">Jean-Yves Moyen</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -19,7 +19,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that the `meta` element is not used for delayed redirecting or refreshing.
-  last_modified: 16 January 2023
+  last_modified: 26 January 2023
   scs_tested:
     - handle: Interruptions
       num: 2.2.4
@@ -153,14 +153,14 @@ This `meta` element redirects the user immediately. Users won't notice the chang
 
 #### Passed Example 2
 
-<a class="example-link" title="Passed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/4ba1bf62d48d7004d270615500af3e83f4b693a7.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/24a98a3ff6a69e073f768bb198671ea6a1c4568a.html">Open in a new tab</a>
 
 The first valid `meta` element redirects immediately.
 
 ```html
 <head>
 	<meta http-equiv="refresh" content="0; https://w3.org" />
-	<meta http-equiv="refresh" content="72001; https://w3.org" />
+	<meta http-equiv="refresh" content="30; https://w3.org" />
 </head>
 ```
 
@@ -168,13 +168,13 @@ The first valid `meta` element redirects immediately.
 
 #### Failed Example 1
 
-<a class="example-link" title="Failed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/5654c6af54a07ba4dc96ee5f2a1c3fd6457164b8.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/ecc787569c06640f3748ae90e2b57fb51c1e22d8.html">Open in a new tab</a>
 
-This `meta` element refreshes the page after 20 hours.
+This `meta` element refreshes the page after 30 seconds.
 
 ```html
 <head>
-	<meta http-equiv="refresh" content="72001" />
+	<meta http-equiv="refresh" content="30" />
 </head>
 ```
 
