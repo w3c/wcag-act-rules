@@ -1,8 +1,8 @@
 {
   "vendor": "Siteimprove",
   "name": "Alfa",
-  "version": "0.53.0",
-  "lastModified": "3 January 2023",
+  "version": "0.56.0",
+  "lastModified": "20 January 2023",
   "approvedRules": {
     "complete": 20,
     "partial": 0,
@@ -11,10 +11,10 @@
     "untested": 0
   },
   "proposedRules": {
-    "complete": 6,
-    "partial": 6,
+    "complete": 10,
+    "partial": 3,
     "minimal": 3,
-    "inconsistent": 9,
+    "inconsistent": 8,
     "untested": 45
   },
   "actRuleMapping": [
@@ -5518,15 +5518,15 @@
       "procedureNames": [
         "sia-r20"
       ],
-      "consistency": "complete",
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
         "reported": []
       },
       "coverage": {
-        "covered": 7,
-        "untested": 0,
+        "covered": 6,
+        "untested": 1,
         "cantTell": 0,
         "testCaseTotal": 7
       },
@@ -5592,16 +5592,16 @@
           ]
         },
         {
-          "testcaseId": "7296da1d7d8f1ede523cc6c4b7def0f8dbd1e887",
+          "testcaseId": "e145aafac5f00cabc7cb3d65a32f7fdb5ec1484d",
           "testCaseName": "Failed Example 1",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/7296da1d7d8f1ede523cc6c4b7def0f8dbd1e887.html",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/e145aafac5f00cabc7cb3d65a32f7fdb5ec1484d.html",
           "testCaseApproved": false,
           "expected": "failed",
           "procedureResults": [
             {
               "procedureName": "sia-r20",
               "outcomes": [
-                "failed"
+                "untested"
               ]
             }
           ]
@@ -6177,7 +6177,7 @@
       "procedureNames": [
         "sia-r18"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
@@ -6186,7 +6186,7 @@
         ]
       },
       "coverage": {
-        "covered": 15,
+        "covered": 16,
         "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 16
@@ -6397,7 +6397,7 @@
             {
               "procedureName": "sia-r18",
               "outcomes": [
-                "passed"
+                "failed"
               ]
             }
           ]
@@ -6441,14 +6441,14 @@
       "procedureNames": [
         "sia-r19"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
         "reported": []
       },
       "coverage": {
-        "covered": 22,
+        "covered": 23,
         "untested": 0,
         "cantTell": 1,
         "testCaseTotal": 24
@@ -6749,7 +6749,7 @@
             {
               "procedureName": "sia-r19",
               "outcomes": [
-                "passed"
+                "failed"
               ]
             }
           ]
@@ -7188,15 +7188,14 @@
       "procedureNames": [
         "sia-r64"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:info-and-relationships"
         ],
         "reported": [
           "WCAG2:info-and-relationships",
-          "WCAG2:headings-and-labels",
           "https://www.w3.org/WAI/WCAG21/Techniques/html/H42"
         ]
       },
@@ -7638,11 +7637,13 @@
       ],
       "consistency": "minimal",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:name-role-value"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:name-role-value"
+        ]
       },
       "coverage": {
         "covered": 14,
@@ -8377,11 +8378,13 @@
       ],
       "consistency": "minimal",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:link-purpose-link-only"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:link-purpose-link-only"
+        ]
       },
       "coverage": {
         "covered": 8,
@@ -8716,11 +8719,14 @@
       ],
       "consistency": null,
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:link-purpose-in-context"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:link-purpose-in-context",
+          "WCAG2:link-purpose-link-only"
+        ]
       },
       "coverage": {
         "covered": 7,
@@ -9410,14 +9416,12 @@
       "ruleName": "Role attribute has valid value",
       "ruleApproved": false,
       "procedureNames": [
-        "sia-r21"
+        "sia-r110"
       ],
-      "consistency": null,
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
-        "expected": [
-          "WCAG2:info-and-relationships"
-        ],
+        "expected": [],
         "reported": [
           "WCAG2:info-and-relationships",
           "https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA4",
@@ -9425,7 +9429,7 @@
         ]
       },
       "coverage": {
-        "covered": 9,
+        "covered": 10,
         "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 10
@@ -9439,7 +9443,7 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "sia-r21",
+              "procedureName": "sia-r110",
               "outcomes": [
                 "passed"
               ]
@@ -9454,7 +9458,7 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "sia-r21",
+              "procedureName": "sia-r110",
               "outcomes": [
                 "passed"
               ]
@@ -9469,9 +9473,9 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "sia-r21",
+              "procedureName": "sia-r110",
               "outcomes": [
-                "failed"
+                "passed"
               ]
             }
           ]
@@ -9484,7 +9488,7 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "sia-r21",
+              "procedureName": "sia-r110",
               "outcomes": [
                 "failed"
               ]
@@ -9499,7 +9503,7 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "sia-r21",
+              "procedureName": "sia-r110",
               "outcomes": [
                 "failed"
               ]
@@ -9514,7 +9518,7 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "sia-r21",
+              "procedureName": "sia-r110",
               "outcomes": [
                 "inapplicable"
               ]
@@ -9529,7 +9533,7 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "sia-r21",
+              "procedureName": "sia-r110",
               "outcomes": [
                 "inapplicable"
               ]
@@ -9544,7 +9548,7 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "sia-r21",
+              "procedureName": "sia-r110",
               "outcomes": [
                 "inapplicable"
               ]
@@ -9559,7 +9563,7 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "sia-r21",
+              "procedureName": "sia-r110",
               "outcomes": [
                 "inapplicable"
               ]
@@ -9574,7 +9578,7 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "sia-r21",
+              "procedureName": "sia-r110",
               "outcomes": [
                 "inapplicable"
               ]
@@ -9590,19 +9594,17 @@
       "procedureNames": [
         "sia-r16"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
-        "expected": [
-          "WCAG2:name-role-value"
-        ],
+        "expected": [],
         "reported": [
           "WCAG2:name-role-value",
           "https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA5"
         ]
       },
       "coverage": {
-        "covered": 14,
+        "covered": 15,
         "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 15
@@ -9783,7 +9785,7 @@
             {
               "procedureName": "sia-r16",
               "outcomes": [
-                "passed"
+                "failed"
               ]
             }
           ]
@@ -10022,11 +10024,13 @@
       ],
       "consistency": "minimal",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:focus-visible"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:focus-visible"
+        ]
       },
       "coverage": {
         "covered": 4,
@@ -10935,8 +10939,8 @@
       },
       "coverage": {
         "covered": 29,
-        "untested": 0,
-        "cantTell": 2,
+        "untested": 1,
+        "cantTell": 1,
         "testCaseTotal": 33
       },
       "testCaseResults": [
@@ -10971,16 +10975,16 @@
           ]
         },
         {
-          "testcaseId": "683924f835ab545a23a3625b0630e95bd0b50bca",
+          "testcaseId": "d011f0ef2a8d94ccf3d3d393a50d7fd8c576d3c3",
           "testCaseName": "Passed Example 3",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/683924f835ab545a23a3625b0630e95bd0b50bca.html",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/d011f0ef2a8d94ccf3d3d393a50d7fd8c576d3c3.html",
           "testCaseApproved": false,
           "expected": "passed",
           "procedureResults": [
             {
               "procedureName": "sia-r66",
               "outcomes": [
-                "cantTell"
+                "untested"
               ]
             }
           ]

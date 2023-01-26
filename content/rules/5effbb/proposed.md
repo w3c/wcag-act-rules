@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 5effbb</p>
-  <p><strong>Date:</strong> Updated 11 November 2022</p>
+  <p><strong>Date:</strong> Updated 16 January 2023</p>
   <p><strong>Authors:</strong> <a href="https://github.com/carlosapaduarte">Carlos Duarte</a>, <a href="https://github.com/marietrudelle">Marie Trudelle</a>, <a href="https://github.com/ramitgarg">Ramit Garg</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -19,14 +19,11 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that the accessible name of a link together with its context describes its purpose.
-  last_modified: 11 November 2022
+  last_modified: 16 January 2023
   scs_tested:
     - handle: Link Purpose (In Context)
       num: 2.4.4
       level: A
-    - handle: Link Purpose (Link Only)
-      num: 2.4.9
-      level: AAA
 ---
 
 ## Applicability
@@ -56,8 +53,8 @@ This rule is designed specifically for [2.4.4 Link Purpose (In Context)][sc244],
 
 ### Related rules
 
-- [Link has non-empty accessible name](https://act-rules.github.io/rules/c487ae)
-- [Link is descriptive](https://act-rules.github.io/rules/aizyf1)
+- [Link has non-empty accessible name](https://www.w3.org/WAI/standards-guidelines/act/rules/c487ae/)
+- [Link is descriptive](https://www.w3.org/WAI/standards-guidelines/act/rules/aizyf1/proposed/)
 
 ### Bibliography
 
@@ -261,15 +258,23 @@ The [programmatically determined link context][] (provided by the cell containin
 
 #### Passed Example 9
 
-<a class="example-link" title="Passed Example 9" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/5effbb/7e4e224e98de9d2d304b2ec57ac25e0ceb6279b5.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 9" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/5effbb/4e89fcc7903980482fe12350f864ca75963d6efd.html">Open in a new tab</a>
 
 The [programmatically determined link context][] (provided by the element referenced by the `aria-describedby` attribute) and the [accessible name][] (from the link's text) describe the purpose of the links.
 
 ```html
 <h2 id="rule">Button has accessible name</h2>
 <ul>
-	<li><a href="https://act-rules.github.io/rules/97a4e1#applicability" aria-describedby="rule">Applicability</a></li>
-	<li><a href="https://act-rules.github.io/rules/97a4e1#expectation" aria-describedby="rule">Expectation</a></li>
+	<li>
+		<a href="https://www.w3.org/WAI/standards-guidelines/act/rules/97a4e1/#applicability" aria-describedby="rule"
+			>Applicability</a
+		>
+	</li>
+	<li>
+		<a href="https://www.w3.org/WAI/standards-guidelines/act/rules/97a4e1/#expectation" aria-describedby="rule"
+			>Expectation</a
+		>
+	</li>
 </ul>
 ```
 

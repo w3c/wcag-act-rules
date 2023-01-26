@@ -8203,7 +8203,14 @@
     {
       "ruleId": "5f99a7",
       "ruleName": "ARIA attribute is defined in WAI-ARIA",
-      "ruleAccessibilityRequirements": null,
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.3.1": {
+          "secondary": true
+        },
+        "wcag20:4.1.2": {
+          "secondary": true
+        }
+      },
       "expected": "passed",
       "testcaseId": "261dcd3214e87532fc2f9c8db7fdce05de9e07f0",
       "testcaseTitle": "Passed Example 1",
@@ -8214,7 +8221,14 @@
     {
       "ruleId": "5f99a7",
       "ruleName": "ARIA attribute is defined in WAI-ARIA",
-      "ruleAccessibilityRequirements": null,
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.3.1": {
+          "secondary": true
+        },
+        "wcag20:4.1.2": {
+          "secondary": true
+        }
+      },
       "expected": "passed",
       "testcaseId": "31ac49fcb186ee2a233355494fc5e774212ca3d7",
       "testcaseTitle": "Passed Example 2",
@@ -8225,7 +8239,14 @@
     {
       "ruleId": "5f99a7",
       "ruleName": "ARIA attribute is defined in WAI-ARIA",
-      "ruleAccessibilityRequirements": null,
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.3.1": {
+          "secondary": true
+        },
+        "wcag20:4.1.2": {
+          "secondary": true
+        }
+      },
       "expected": "passed",
       "testcaseId": "3314945d4bbec5b34f9a3c2d90da7cb9f8e7ce5a",
       "testcaseTitle": "Passed Example 3",
@@ -8236,7 +8257,14 @@
     {
       "ruleId": "5f99a7",
       "ruleName": "ARIA attribute is defined in WAI-ARIA",
-      "ruleAccessibilityRequirements": null,
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.3.1": {
+          "secondary": true
+        },
+        "wcag20:4.1.2": {
+          "secondary": true
+        }
+      },
       "expected": "passed",
       "testcaseId": "4373f9e70eb353c76d7e9d4c2cc4dcfd6c17ad70",
       "testcaseTitle": "Passed Example 4",
@@ -8247,18 +8275,32 @@
     {
       "ruleId": "5f99a7",
       "ruleName": "ARIA attribute is defined in WAI-ARIA",
-      "ruleAccessibilityRequirements": null,
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.3.1": {
+          "secondary": true
+        },
+        "wcag20:4.1.2": {
+          "secondary": true
+        }
+      },
       "expected": "failed",
-      "testcaseId": "7296da1d7d8f1ede523cc6c4b7def0f8dbd1e887",
+      "testcaseId": "e145aafac5f00cabc7cb3d65a32f7fdb5ec1484d",
       "testcaseTitle": "Failed Example 1",
-      "relativePath": "testcases/5f99a7/7296da1d7d8f1ede523cc6c4b7def0f8dbd1e887.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/7296da1d7d8f1ede523cc6c4b7def0f8dbd1e887.html",
+      "relativePath": "testcases/5f99a7/e145aafac5f00cabc7cb3d65a32f7fdb5ec1484d.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/e145aafac5f00cabc7cb3d65a32f7fdb5ec1484d.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/5f99a7/proposed/"
     },
     {
       "ruleId": "5f99a7",
       "ruleName": "ARIA attribute is defined in WAI-ARIA",
-      "ruleAccessibilityRequirements": null,
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.3.1": {
+          "secondary": true
+        },
+        "wcag20:4.1.2": {
+          "secondary": true
+        }
+      },
       "expected": "failed",
       "testcaseId": "b6acf7c4aab0cfdc9f996abc7961790cbc97f39e",
       "testcaseTitle": "Failed Example 2",
@@ -8269,7 +8311,14 @@
     {
       "ruleId": "5f99a7",
       "ruleName": "ARIA attribute is defined in WAI-ARIA",
-      "ruleAccessibilityRequirements": null,
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.3.1": {
+          "secondary": true
+        },
+        "wcag20:4.1.2": {
+          "secondary": true
+        }
+      },
       "expected": "inapplicable",
       "testcaseId": "d528a33258103014c0a03cf1e418ee0620f7b4f6",
       "testcaseTitle": "Inapplicable Example 1",
@@ -8869,6 +8918,12 @@
           "failed": "not satisfied",
           "passed": "satisfied",
           "inapplicable": "satisfied"
+        },
+        "wcag20:1.3.1": {
+          "secondary": true
+        },
+        "wcag20:4.1.2": {
+          "secondary": true
         }
       },
       "expected": "passed",
@@ -8894,6 +8949,12 @@
           "failed": "not satisfied",
           "passed": "satisfied",
           "inapplicable": "satisfied"
+        },
+        "wcag20:1.3.1": {
+          "secondary": true
+        },
+        "wcag20:4.1.2": {
+          "secondary": true
         }
       },
       "expected": "passed",
@@ -8919,6 +8980,12 @@
           "failed": "not satisfied",
           "passed": "satisfied",
           "inapplicable": "satisfied"
+        },
+        "wcag20:1.3.1": {
+          "secondary": true
+        },
+        "wcag20:4.1.2": {
+          "secondary": true
         }
       },
       "expected": "passed",
@@ -8944,6 +9011,12 @@
           "failed": "not satisfied",
           "passed": "satisfied",
           "inapplicable": "satisfied"
+        },
+        "wcag20:1.3.1": {
+          "secondary": true
+        },
+        "wcag20:4.1.2": {
+          "secondary": true
         }
       },
       "expected": "passed",
@@ -8969,6 +9042,12 @@
           "failed": "not satisfied",
           "passed": "satisfied",
           "inapplicable": "satisfied"
+        },
+        "wcag20:1.3.1": {
+          "secondary": true
+        },
+        "wcag20:4.1.2": {
+          "secondary": true
         }
       },
       "expected": "passed",
@@ -8994,6 +9073,12 @@
           "failed": "not satisfied",
           "passed": "satisfied",
           "inapplicable": "satisfied"
+        },
+        "wcag20:1.3.1": {
+          "secondary": true
+        },
+        "wcag20:4.1.2": {
+          "secondary": true
         }
       },
       "expected": "passed",
@@ -9019,6 +9104,12 @@
           "failed": "not satisfied",
           "passed": "satisfied",
           "inapplicable": "satisfied"
+        },
+        "wcag20:1.3.1": {
+          "secondary": true
+        },
+        "wcag20:4.1.2": {
+          "secondary": true
         }
       },
       "expected": "passed",
@@ -9044,6 +9135,12 @@
           "failed": "not satisfied",
           "passed": "satisfied",
           "inapplicable": "satisfied"
+        },
+        "wcag20:1.3.1": {
+          "secondary": true
+        },
+        "wcag20:4.1.2": {
+          "secondary": true
         }
       },
       "expected": "passed",
@@ -9069,6 +9166,12 @@
           "failed": "not satisfied",
           "passed": "satisfied",
           "inapplicable": "satisfied"
+        },
+        "wcag20:1.3.1": {
+          "secondary": true
+        },
+        "wcag20:4.1.2": {
+          "secondary": true
         }
       },
       "expected": "passed",
@@ -9094,6 +9197,12 @@
           "failed": "not satisfied",
           "passed": "satisfied",
           "inapplicable": "satisfied"
+        },
+        "wcag20:1.3.1": {
+          "secondary": true
+        },
+        "wcag20:4.1.2": {
+          "secondary": true
         }
       },
       "expected": "passed",
@@ -9119,6 +9228,12 @@
           "failed": "not satisfied",
           "passed": "satisfied",
           "inapplicable": "satisfied"
+        },
+        "wcag20:1.3.1": {
+          "secondary": true
+        },
+        "wcag20:4.1.2": {
+          "secondary": true
         }
       },
       "expected": "passed",
@@ -9144,6 +9259,12 @@
           "failed": "not satisfied",
           "passed": "satisfied",
           "inapplicable": "satisfied"
+        },
+        "wcag20:1.3.1": {
+          "secondary": true
+        },
+        "wcag20:4.1.2": {
+          "secondary": true
         }
       },
       "expected": "failed",
@@ -9169,6 +9290,12 @@
           "failed": "not satisfied",
           "passed": "satisfied",
           "inapplicable": "satisfied"
+        },
+        "wcag20:1.3.1": {
+          "secondary": true
+        },
+        "wcag20:4.1.2": {
+          "secondary": true
         }
       },
       "expected": "failed",
@@ -9194,6 +9321,12 @@
           "failed": "not satisfied",
           "passed": "satisfied",
           "inapplicable": "satisfied"
+        },
+        "wcag20:1.3.1": {
+          "secondary": true
+        },
+        "wcag20:4.1.2": {
+          "secondary": true
         }
       },
       "expected": "failed",
@@ -9219,6 +9352,12 @@
           "failed": "not satisfied",
           "passed": "satisfied",
           "inapplicable": "satisfied"
+        },
+        "wcag20:1.3.1": {
+          "secondary": true
+        },
+        "wcag20:4.1.2": {
+          "secondary": true
         }
       },
       "expected": "inapplicable",
@@ -9244,6 +9383,12 @@
           "failed": "not satisfied",
           "passed": "satisfied",
           "inapplicable": "satisfied"
+        },
+        "wcag20:1.3.1": {
+          "secondary": true
+        },
+        "wcag20:4.1.2": {
+          "secondary": true
         }
       },
       "expected": "inapplicable",
@@ -9263,6 +9408,12 @@
           "failed": "not satisfied",
           "passed": "satisfied",
           "inapplicable": "satisfied"
+        },
+        "wcag20:1.3.1": {
+          "secondary": true
+        },
+        "wcag20:4.1.2": {
+          "secondary": true
         }
       },
       "expected": "passed",
@@ -9282,6 +9433,12 @@
           "failed": "not satisfied",
           "passed": "satisfied",
           "inapplicable": "satisfied"
+        },
+        "wcag20:1.3.1": {
+          "secondary": true
+        },
+        "wcag20:4.1.2": {
+          "secondary": true
         }
       },
       "expected": "passed",
@@ -9301,6 +9458,12 @@
           "failed": "not satisfied",
           "passed": "satisfied",
           "inapplicable": "satisfied"
+        },
+        "wcag20:1.3.1": {
+          "secondary": true
+        },
+        "wcag20:4.1.2": {
+          "secondary": true
         }
       },
       "expected": "passed",
@@ -9320,6 +9483,12 @@
           "failed": "not satisfied",
           "passed": "satisfied",
           "inapplicable": "satisfied"
+        },
+        "wcag20:1.3.1": {
+          "secondary": true
+        },
+        "wcag20:4.1.2": {
+          "secondary": true
         }
       },
       "expected": "passed",
@@ -9339,6 +9508,12 @@
           "failed": "not satisfied",
           "passed": "satisfied",
           "inapplicable": "satisfied"
+        },
+        "wcag20:1.3.1": {
+          "secondary": true
+        },
+        "wcag20:4.1.2": {
+          "secondary": true
         }
       },
       "expected": "passed",
@@ -9358,6 +9533,12 @@
           "failed": "not satisfied",
           "passed": "satisfied",
           "inapplicable": "satisfied"
+        },
+        "wcag20:1.3.1": {
+          "secondary": true
+        },
+        "wcag20:4.1.2": {
+          "secondary": true
         }
       },
       "expected": "passed",
@@ -9377,6 +9558,12 @@
           "failed": "not satisfied",
           "passed": "satisfied",
           "inapplicable": "satisfied"
+        },
+        "wcag20:1.3.1": {
+          "secondary": true
+        },
+        "wcag20:4.1.2": {
+          "secondary": true
         }
       },
       "expected": "passed",
@@ -9396,6 +9583,12 @@
           "failed": "not satisfied",
           "passed": "satisfied",
           "inapplicable": "satisfied"
+        },
+        "wcag20:1.3.1": {
+          "secondary": true
+        },
+        "wcag20:4.1.2": {
+          "secondary": true
         }
       },
       "expected": "passed",
@@ -9415,6 +9608,12 @@
           "failed": "not satisfied",
           "passed": "satisfied",
           "inapplicable": "satisfied"
+        },
+        "wcag20:1.3.1": {
+          "secondary": true
+        },
+        "wcag20:4.1.2": {
+          "secondary": true
         }
       },
       "expected": "passed",
@@ -9434,6 +9633,12 @@
           "failed": "not satisfied",
           "passed": "satisfied",
           "inapplicable": "satisfied"
+        },
+        "wcag20:1.3.1": {
+          "secondary": true
+        },
+        "wcag20:4.1.2": {
+          "secondary": true
         }
       },
       "expected": "passed",
@@ -9453,6 +9658,12 @@
           "failed": "not satisfied",
           "passed": "satisfied",
           "inapplicable": "satisfied"
+        },
+        "wcag20:1.3.1": {
+          "secondary": true
+        },
+        "wcag20:4.1.2": {
+          "secondary": true
         }
       },
       "expected": "failed",
@@ -9472,6 +9683,12 @@
           "failed": "not satisfied",
           "passed": "satisfied",
           "inapplicable": "satisfied"
+        },
+        "wcag20:1.3.1": {
+          "secondary": true
+        },
+        "wcag20:4.1.2": {
+          "secondary": true
         }
       },
       "expected": "failed",
@@ -9491,6 +9708,12 @@
           "failed": "not satisfied",
           "passed": "satisfied",
           "inapplicable": "satisfied"
+        },
+        "wcag20:1.3.1": {
+          "secondary": true
+        },
+        "wcag20:4.1.2": {
+          "secondary": true
         }
       },
       "expected": "failed",
@@ -9510,6 +9733,12 @@
           "failed": "not satisfied",
           "passed": "satisfied",
           "inapplicable": "satisfied"
+        },
+        "wcag20:1.3.1": {
+          "secondary": true
+        },
+        "wcag20:4.1.2": {
+          "secondary": true
         }
       },
       "expected": "failed",
@@ -9529,6 +9758,12 @@
           "failed": "not satisfied",
           "passed": "satisfied",
           "inapplicable": "satisfied"
+        },
+        "wcag20:1.3.1": {
+          "secondary": true
+        },
+        "wcag20:4.1.2": {
+          "secondary": true
         }
       },
       "expected": "failed",
@@ -9548,6 +9783,12 @@
           "failed": "not satisfied",
           "passed": "satisfied",
           "inapplicable": "satisfied"
+        },
+        "wcag20:1.3.1": {
+          "secondary": true
+        },
+        "wcag20:4.1.2": {
+          "secondary": true
         }
       },
       "expected": "failed",
@@ -9567,6 +9808,12 @@
           "failed": "not satisfied",
           "passed": "satisfied",
           "inapplicable": "satisfied"
+        },
+        "wcag20:1.3.1": {
+          "secondary": true
+        },
+        "wcag20:4.1.2": {
+          "secondary": true
         }
       },
       "expected": "failed",
@@ -9586,6 +9833,12 @@
           "failed": "not satisfied",
           "passed": "satisfied",
           "inapplicable": "satisfied"
+        },
+        "wcag20:1.3.1": {
+          "secondary": true
+        },
+        "wcag20:4.1.2": {
+          "secondary": true
         }
       },
       "expected": "failed",
@@ -9605,6 +9858,12 @@
           "failed": "not satisfied",
           "passed": "satisfied",
           "inapplicable": "satisfied"
+        },
+        "wcag20:1.3.1": {
+          "secondary": true
+        },
+        "wcag20:4.1.2": {
+          "secondary": true
         }
       },
       "expected": "failed",
@@ -9624,6 +9883,12 @@
           "failed": "not satisfied",
           "passed": "satisfied",
           "inapplicable": "satisfied"
+        },
+        "wcag20:1.3.1": {
+          "secondary": true
+        },
+        "wcag20:4.1.2": {
+          "secondary": true
         }
       },
       "expected": "failed",
@@ -9643,6 +9908,12 @@
           "failed": "not satisfied",
           "passed": "satisfied",
           "inapplicable": "satisfied"
+        },
+        "wcag20:1.3.1": {
+          "secondary": true
+        },
+        "wcag20:4.1.2": {
+          "secondary": true
         }
       },
       "expected": "inapplicable",
@@ -9662,6 +9933,12 @@
           "failed": "not satisfied",
           "passed": "satisfied",
           "inapplicable": "satisfied"
+        },
+        "wcag20:1.3.1": {
+          "secondary": true
+        },
+        "wcag20:4.1.2": {
+          "secondary": true
         }
       },
       "expected": "inapplicable",
@@ -9681,6 +9958,12 @@
           "failed": "not satisfied",
           "passed": "satisfied",
           "inapplicable": "satisfied"
+        },
+        "wcag20:1.3.1": {
+          "secondary": true
+        },
+        "wcag20:4.1.2": {
+          "secondary": true
         }
       },
       "expected": "inapplicable",
@@ -9700,6 +9983,12 @@
           "failed": "not satisfied",
           "passed": "satisfied",
           "inapplicable": "satisfied"
+        },
+        "wcag20:1.3.1": {
+          "secondary": true
+        },
+        "wcag20:4.1.2": {
+          "secondary": true
         }
       },
       "expected": "inapplicable",
@@ -14147,10 +14436,10 @@
       "ruleName": "Focusable element has no keyboard trap via standard navigation",
       "ruleAccessibilityRequirements": null,
       "expected": "failed",
-      "testcaseId": "780388a837915960bca7651bd80743fb2cafdbcb",
+      "testcaseId": "f5ea9fd3b681971b2af4953fae9bb2d319a203c6",
       "testcaseTitle": "Failed Example 1",
-      "relativePath": "testcases/a1b64e/780388a837915960bca7651bd80743fb2cafdbcb.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a1b64e/780388a837915960bca7651bd80743fb2cafdbcb.html",
+      "relativePath": "testcases/a1b64e/f5ea9fd3b681971b2af4953fae9bb2d319a203c6.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a1b64e/f5ea9fd3b681971b2af4953fae9bb2d319a203c6.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/a1b64e/proposed/"
     },
     {
@@ -19091,10 +19380,10 @@
         }
       },
       "expected": "passed",
-      "testcaseId": "7e4e224e98de9d2d304b2ec57ac25e0ceb6279b5",
+      "testcaseId": "4e89fcc7903980482fe12350f864ca75963d6efd",
       "testcaseTitle": "Passed Example 9",
-      "relativePath": "testcases/5effbb/7e4e224e98de9d2d304b2ec57ac25e0ceb6279b5.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5effbb/7e4e224e98de9d2d304b2ec57ac25e0ceb6279b5.html",
+      "relativePath": "testcases/5effbb/4e89fcc7903980482fe12350f864ca75963d6efd.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5effbb/4e89fcc7903980482fe12350f864ca75963d6efd.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/5effbb/proposed/"
     },
     {
@@ -20346,6 +20635,9 @@
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
+        },
+        "wcag20:2.2.1": {
+          "secondary": true
         }
       },
       "expected": "passed",
@@ -20382,6 +20674,9 @@
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
+        },
+        "wcag20:2.2.1": {
+          "secondary": true
         }
       },
       "expected": "passed",
@@ -20418,6 +20713,9 @@
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
+        },
+        "wcag20:2.2.1": {
+          "secondary": true
         }
       },
       "expected": "failed",
@@ -20454,6 +20752,9 @@
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
+        },
+        "wcag20:2.2.1": {
+          "secondary": true
         }
       },
       "expected": "failed",
@@ -20490,6 +20791,9 @@
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
+        },
+        "wcag20:2.2.1": {
+          "secondary": true
         }
       },
       "expected": "failed",
@@ -20526,6 +20830,9 @@
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
+        },
+        "wcag20:2.2.1": {
+          "secondary": true
         }
       },
       "expected": "inapplicable",
@@ -20562,6 +20869,9 @@
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
+        },
+        "wcag20:2.2.1": {
+          "secondary": true
         }
       },
       "expected": "inapplicable",
@@ -20598,6 +20908,9 @@
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
+        },
+        "wcag20:2.2.1": {
+          "secondary": true
         }
       },
       "expected": "inapplicable",
@@ -20634,6 +20947,9 @@
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
+        },
+        "wcag20:2.2.1": {
+          "secondary": true
         }
       },
       "expected": "inapplicable",
@@ -20670,6 +20986,9 @@
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
+        },
+        "wcag20:2.2.1": {
+          "secondary": true
         }
       },
       "expected": "inapplicable",
@@ -20706,6 +21025,9 @@
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
+        },
+        "wcag20:2.2.1": {
+          "secondary": true
         }
       },
       "expected": "inapplicable",
@@ -20742,6 +21064,9 @@
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
+        },
+        "wcag20:2.2.1": {
+          "secondary": true
         }
       },
       "expected": "inapplicable",
@@ -20778,6 +21103,9 @@
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
+        },
+        "wcag20:2.2.1": {
+          "secondary": true
         }
       },
       "expected": "inapplicable",
@@ -21475,12 +21803,6 @@
       "ruleId": "674b10",
       "ruleName": "Role attribute has valid value",
       "ruleAccessibilityRequirements": {
-        "wcag20:1.3.1": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
         "wcag-technique:ARIA4": {
           "forConformance": false,
           "failed": "not satisfied",
@@ -21492,6 +21814,12 @@
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
+        },
+        "wcag20:1.3.1": {
+          "secondary": true
+        },
+        "wcag20:4.1.2": {
+          "secondary": true
         }
       },
       "expected": "passed",
@@ -21505,12 +21833,6 @@
       "ruleId": "674b10",
       "ruleName": "Role attribute has valid value",
       "ruleAccessibilityRequirements": {
-        "wcag20:1.3.1": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
         "wcag-technique:ARIA4": {
           "forConformance": false,
           "failed": "not satisfied",
@@ -21522,6 +21844,12 @@
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
+        },
+        "wcag20:1.3.1": {
+          "secondary": true
+        },
+        "wcag20:4.1.2": {
+          "secondary": true
         }
       },
       "expected": "passed",
@@ -21535,12 +21863,6 @@
       "ruleId": "674b10",
       "ruleName": "Role attribute has valid value",
       "ruleAccessibilityRequirements": {
-        "wcag20:1.3.1": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
         "wcag-technique:ARIA4": {
           "forConformance": false,
           "failed": "not satisfied",
@@ -21552,6 +21874,12 @@
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
+        },
+        "wcag20:1.3.1": {
+          "secondary": true
+        },
+        "wcag20:4.1.2": {
+          "secondary": true
         }
       },
       "expected": "passed",
@@ -21565,12 +21893,6 @@
       "ruleId": "674b10",
       "ruleName": "Role attribute has valid value",
       "ruleAccessibilityRequirements": {
-        "wcag20:1.3.1": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
         "wcag-technique:ARIA4": {
           "forConformance": false,
           "failed": "not satisfied",
@@ -21582,6 +21904,12 @@
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
+        },
+        "wcag20:1.3.1": {
+          "secondary": true
+        },
+        "wcag20:4.1.2": {
+          "secondary": true
         }
       },
       "expected": "failed",
@@ -21595,12 +21923,6 @@
       "ruleId": "674b10",
       "ruleName": "Role attribute has valid value",
       "ruleAccessibilityRequirements": {
-        "wcag20:1.3.1": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
         "wcag-technique:ARIA4": {
           "forConformance": false,
           "failed": "not satisfied",
@@ -21612,6 +21934,12 @@
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
+        },
+        "wcag20:1.3.1": {
+          "secondary": true
+        },
+        "wcag20:4.1.2": {
+          "secondary": true
         }
       },
       "expected": "failed",
@@ -21625,12 +21953,6 @@
       "ruleId": "674b10",
       "ruleName": "Role attribute has valid value",
       "ruleAccessibilityRequirements": {
-        "wcag20:1.3.1": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
         "wcag-technique:ARIA4": {
           "forConformance": false,
           "failed": "not satisfied",
@@ -21642,6 +21964,12 @@
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
+        },
+        "wcag20:1.3.1": {
+          "secondary": true
+        },
+        "wcag20:4.1.2": {
+          "secondary": true
         }
       },
       "expected": "inapplicable",
@@ -21655,12 +21983,6 @@
       "ruleId": "674b10",
       "ruleName": "Role attribute has valid value",
       "ruleAccessibilityRequirements": {
-        "wcag20:1.3.1": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
         "wcag-technique:ARIA4": {
           "forConformance": false,
           "failed": "not satisfied",
@@ -21672,6 +21994,12 @@
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
+        },
+        "wcag20:1.3.1": {
+          "secondary": true
+        },
+        "wcag20:4.1.2": {
+          "secondary": true
         }
       },
       "expected": "inapplicable",
@@ -21685,12 +22013,6 @@
       "ruleId": "674b10",
       "ruleName": "Role attribute has valid value",
       "ruleAccessibilityRequirements": {
-        "wcag20:1.3.1": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
         "wcag-technique:ARIA4": {
           "forConformance": false,
           "failed": "not satisfied",
@@ -21702,6 +22024,12 @@
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
+        },
+        "wcag20:1.3.1": {
+          "secondary": true
+        },
+        "wcag20:4.1.2": {
+          "secondary": true
         }
       },
       "expected": "inapplicable",
@@ -21715,12 +22043,6 @@
       "ruleId": "674b10",
       "ruleName": "Role attribute has valid value",
       "ruleAccessibilityRequirements": {
-        "wcag20:1.3.1": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
         "wcag-technique:ARIA4": {
           "forConformance": false,
           "failed": "not satisfied",
@@ -21732,6 +22054,12 @@
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
+        },
+        "wcag20:1.3.1": {
+          "secondary": true
+        },
+        "wcag20:4.1.2": {
+          "secondary": true
         }
       },
       "expected": "inapplicable",
@@ -21745,12 +22073,6 @@
       "ruleId": "674b10",
       "ruleName": "Role attribute has valid value",
       "ruleAccessibilityRequirements": {
-        "wcag20:1.3.1": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
         "wcag-technique:ARIA4": {
           "forConformance": false,
           "failed": "not satisfied",
@@ -21762,6 +22084,12 @@
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
+        },
+        "wcag20:1.3.1": {
+          "secondary": true
+        },
+        "wcag20:4.1.2": {
+          "secondary": true
         }
       },
       "expected": "inapplicable",
@@ -21775,12 +22103,6 @@
       "ruleId": "4e8ab6",
       "ruleName": "Element with role attribute has required states and properties",
       "ruleAccessibilityRequirements": {
-        "wcag20:4.1.2": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
         "wcag-technique:ARIA5": {
           "forConformance": false,
           "failed": "not satisfied",
@@ -21792,6 +22114,12 @@
           "failed": "not satisfied",
           "passed": "satisfied",
           "inapplicable": "satisfied"
+        },
+        "wcag20:1.3.1": {
+          "secondary": true
+        },
+        "wcag20:4.1.2": {
+          "secondary": true
         }
       },
       "expected": "passed",
@@ -21805,12 +22133,6 @@
       "ruleId": "4e8ab6",
       "ruleName": "Element with role attribute has required states and properties",
       "ruleAccessibilityRequirements": {
-        "wcag20:4.1.2": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
         "wcag-technique:ARIA5": {
           "forConformance": false,
           "failed": "not satisfied",
@@ -21822,6 +22144,12 @@
           "failed": "not satisfied",
           "passed": "satisfied",
           "inapplicable": "satisfied"
+        },
+        "wcag20:1.3.1": {
+          "secondary": true
+        },
+        "wcag20:4.1.2": {
+          "secondary": true
         }
       },
       "expected": "passed",
@@ -21835,12 +22163,6 @@
       "ruleId": "4e8ab6",
       "ruleName": "Element with role attribute has required states and properties",
       "ruleAccessibilityRequirements": {
-        "wcag20:4.1.2": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
         "wcag-technique:ARIA5": {
           "forConformance": false,
           "failed": "not satisfied",
@@ -21852,6 +22174,12 @@
           "failed": "not satisfied",
           "passed": "satisfied",
           "inapplicable": "satisfied"
+        },
+        "wcag20:1.3.1": {
+          "secondary": true
+        },
+        "wcag20:4.1.2": {
+          "secondary": true
         }
       },
       "expected": "passed",
@@ -21865,12 +22193,6 @@
       "ruleId": "4e8ab6",
       "ruleName": "Element with role attribute has required states and properties",
       "ruleAccessibilityRequirements": {
-        "wcag20:4.1.2": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
         "wcag-technique:ARIA5": {
           "forConformance": false,
           "failed": "not satisfied",
@@ -21882,6 +22204,12 @@
           "failed": "not satisfied",
           "passed": "satisfied",
           "inapplicable": "satisfied"
+        },
+        "wcag20:1.3.1": {
+          "secondary": true
+        },
+        "wcag20:4.1.2": {
+          "secondary": true
         }
       },
       "expected": "passed",
@@ -21895,12 +22223,6 @@
       "ruleId": "4e8ab6",
       "ruleName": "Element with role attribute has required states and properties",
       "ruleAccessibilityRequirements": {
-        "wcag20:4.1.2": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
         "wcag-technique:ARIA5": {
           "forConformance": false,
           "failed": "not satisfied",
@@ -21912,6 +22234,12 @@
           "failed": "not satisfied",
           "passed": "satisfied",
           "inapplicable": "satisfied"
+        },
+        "wcag20:1.3.1": {
+          "secondary": true
+        },
+        "wcag20:4.1.2": {
+          "secondary": true
         }
       },
       "expected": "passed",
@@ -21925,12 +22253,6 @@
       "ruleId": "4e8ab6",
       "ruleName": "Element with role attribute has required states and properties",
       "ruleAccessibilityRequirements": {
-        "wcag20:4.1.2": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
         "wcag-technique:ARIA5": {
           "forConformance": false,
           "failed": "not satisfied",
@@ -21942,6 +22264,12 @@
           "failed": "not satisfied",
           "passed": "satisfied",
           "inapplicable": "satisfied"
+        },
+        "wcag20:1.3.1": {
+          "secondary": true
+        },
+        "wcag20:4.1.2": {
+          "secondary": true
         }
       },
       "expected": "passed",
@@ -21955,12 +22283,6 @@
       "ruleId": "4e8ab6",
       "ruleName": "Element with role attribute has required states and properties",
       "ruleAccessibilityRequirements": {
-        "wcag20:4.1.2": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
         "wcag-technique:ARIA5": {
           "forConformance": false,
           "failed": "not satisfied",
@@ -21972,6 +22294,12 @@
           "failed": "not satisfied",
           "passed": "satisfied",
           "inapplicable": "satisfied"
+        },
+        "wcag20:1.3.1": {
+          "secondary": true
+        },
+        "wcag20:4.1.2": {
+          "secondary": true
         }
       },
       "expected": "failed",
@@ -21985,12 +22313,6 @@
       "ruleId": "4e8ab6",
       "ruleName": "Element with role attribute has required states and properties",
       "ruleAccessibilityRequirements": {
-        "wcag20:4.1.2": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
         "wcag-technique:ARIA5": {
           "forConformance": false,
           "failed": "not satisfied",
@@ -22002,6 +22324,12 @@
           "failed": "not satisfied",
           "passed": "satisfied",
           "inapplicable": "satisfied"
+        },
+        "wcag20:1.3.1": {
+          "secondary": true
+        },
+        "wcag20:4.1.2": {
+          "secondary": true
         }
       },
       "expected": "failed",
@@ -22015,12 +22343,6 @@
       "ruleId": "4e8ab6",
       "ruleName": "Element with role attribute has required states and properties",
       "ruleAccessibilityRequirements": {
-        "wcag20:4.1.2": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
         "wcag-technique:ARIA5": {
           "forConformance": false,
           "failed": "not satisfied",
@@ -22032,6 +22354,12 @@
           "failed": "not satisfied",
           "passed": "satisfied",
           "inapplicable": "satisfied"
+        },
+        "wcag20:1.3.1": {
+          "secondary": true
+        },
+        "wcag20:4.1.2": {
+          "secondary": true
         }
       },
       "expected": "failed",
@@ -22045,12 +22373,6 @@
       "ruleId": "4e8ab6",
       "ruleName": "Element with role attribute has required states and properties",
       "ruleAccessibilityRequirements": {
-        "wcag20:4.1.2": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
         "wcag-technique:ARIA5": {
           "forConformance": false,
           "failed": "not satisfied",
@@ -22062,6 +22384,12 @@
           "failed": "not satisfied",
           "passed": "satisfied",
           "inapplicable": "satisfied"
+        },
+        "wcag20:1.3.1": {
+          "secondary": true
+        },
+        "wcag20:4.1.2": {
+          "secondary": true
         }
       },
       "expected": "failed",
@@ -22075,12 +22403,6 @@
       "ruleId": "4e8ab6",
       "ruleName": "Element with role attribute has required states and properties",
       "ruleAccessibilityRequirements": {
-        "wcag20:4.1.2": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
         "wcag-technique:ARIA5": {
           "forConformance": false,
           "failed": "not satisfied",
@@ -22092,6 +22414,12 @@
           "failed": "not satisfied",
           "passed": "satisfied",
           "inapplicable": "satisfied"
+        },
+        "wcag20:1.3.1": {
+          "secondary": true
+        },
+        "wcag20:4.1.2": {
+          "secondary": true
         }
       },
       "expected": "failed",
@@ -22105,12 +22433,6 @@
       "ruleId": "4e8ab6",
       "ruleName": "Element with role attribute has required states and properties",
       "ruleAccessibilityRequirements": {
-        "wcag20:4.1.2": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
         "wcag-technique:ARIA5": {
           "forConformance": false,
           "failed": "not satisfied",
@@ -22122,6 +22444,12 @@
           "failed": "not satisfied",
           "passed": "satisfied",
           "inapplicable": "satisfied"
+        },
+        "wcag20:1.3.1": {
+          "secondary": true
+        },
+        "wcag20:4.1.2": {
+          "secondary": true
         }
       },
       "expected": "failed",
@@ -22135,12 +22463,6 @@
       "ruleId": "4e8ab6",
       "ruleName": "Element with role attribute has required states and properties",
       "ruleAccessibilityRequirements": {
-        "wcag20:4.1.2": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
         "wcag-technique:ARIA5": {
           "forConformance": false,
           "failed": "not satisfied",
@@ -22152,6 +22474,12 @@
           "failed": "not satisfied",
           "passed": "satisfied",
           "inapplicable": "satisfied"
+        },
+        "wcag20:1.3.1": {
+          "secondary": true
+        },
+        "wcag20:4.1.2": {
+          "secondary": true
         }
       },
       "expected": "inapplicable",
@@ -22165,12 +22493,6 @@
       "ruleId": "4e8ab6",
       "ruleName": "Element with role attribute has required states and properties",
       "ruleAccessibilityRequirements": {
-        "wcag20:4.1.2": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
         "wcag-technique:ARIA5": {
           "forConformance": false,
           "failed": "not satisfied",
@@ -22182,6 +22504,12 @@
           "failed": "not satisfied",
           "passed": "satisfied",
           "inapplicable": "satisfied"
+        },
+        "wcag20:1.3.1": {
+          "secondary": true
+        },
+        "wcag20:4.1.2": {
+          "secondary": true
         }
       },
       "expected": "inapplicable",
@@ -22195,12 +22523,6 @@
       "ruleId": "4e8ab6",
       "ruleName": "Element with role attribute has required states and properties",
       "ruleAccessibilityRequirements": {
-        "wcag20:4.1.2": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
         "wcag-technique:ARIA5": {
           "forConformance": false,
           "failed": "not satisfied",
@@ -22212,6 +22534,12 @@
           "failed": "not satisfied",
           "passed": "satisfied",
           "inapplicable": "satisfied"
+        },
+        "wcag20:1.3.1": {
+          "secondary": true
+        },
+        "wcag20:4.1.2": {
+          "secondary": true
         }
       },
       "expected": "inapplicable",
@@ -23790,6 +24118,9 @@
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
+        },
+        "wcag20:1.4.3": {
+          "secondary": true
         }
       },
       "expected": "passed",
@@ -23820,6 +24151,9 @@
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
+        },
+        "wcag20:1.4.3": {
+          "secondary": true
         }
       },
       "expected": "passed",
@@ -23850,13 +24184,16 @@
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
+        },
+        "wcag20:1.4.3": {
+          "secondary": true
         }
       },
       "expected": "passed",
-      "testcaseId": "683924f835ab545a23a3625b0630e95bd0b50bca",
+      "testcaseId": "d011f0ef2a8d94ccf3d3d393a50d7fd8c576d3c3",
       "testcaseTitle": "Passed Example 3",
-      "relativePath": "testcases/09o5cg/683924f835ab545a23a3625b0630e95bd0b50bca.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/683924f835ab545a23a3625b0630e95bd0b50bca.html",
+      "relativePath": "testcases/09o5cg/d011f0ef2a8d94ccf3d3d393a50d7fd8c576d3c3.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/d011f0ef2a8d94ccf3d3d393a50d7fd8c576d3c3.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/09o5cg/proposed/"
     },
     {
@@ -23880,6 +24217,9 @@
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
+        },
+        "wcag20:1.4.3": {
+          "secondary": true
         }
       },
       "expected": "passed",
@@ -23910,6 +24250,9 @@
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
+        },
+        "wcag20:1.4.3": {
+          "secondary": true
         }
       },
       "expected": "passed",
@@ -23940,6 +24283,9 @@
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
+        },
+        "wcag20:1.4.3": {
+          "secondary": true
         }
       },
       "expected": "passed",
@@ -23970,6 +24316,9 @@
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
+        },
+        "wcag20:1.4.3": {
+          "secondary": true
         }
       },
       "expected": "passed",
@@ -24000,6 +24349,9 @@
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
+        },
+        "wcag20:1.4.3": {
+          "secondary": true
         }
       },
       "expected": "passed",
@@ -24030,6 +24382,9 @@
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
+        },
+        "wcag20:1.4.3": {
+          "secondary": true
         }
       },
       "expected": "passed",
@@ -24060,6 +24415,9 @@
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
+        },
+        "wcag20:1.4.3": {
+          "secondary": true
         }
       },
       "expected": "passed",
@@ -24090,6 +24448,9 @@
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
+        },
+        "wcag20:1.4.3": {
+          "secondary": true
         }
       },
       "expected": "failed",
@@ -24120,6 +24481,9 @@
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
+        },
+        "wcag20:1.4.3": {
+          "secondary": true
         }
       },
       "expected": "failed",
@@ -24150,6 +24514,9 @@
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
+        },
+        "wcag20:1.4.3": {
+          "secondary": true
         }
       },
       "expected": "failed",
@@ -24180,6 +24547,9 @@
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
+        },
+        "wcag20:1.4.3": {
+          "secondary": true
         }
       },
       "expected": "failed",
@@ -24210,6 +24580,9 @@
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
+        },
+        "wcag20:1.4.3": {
+          "secondary": true
         }
       },
       "expected": "failed",
@@ -24240,6 +24613,9 @@
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
+        },
+        "wcag20:1.4.3": {
+          "secondary": true
         }
       },
       "expected": "failed",
@@ -24270,6 +24646,9 @@
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
+        },
+        "wcag20:1.4.3": {
+          "secondary": true
         }
       },
       "expected": "failed",
@@ -24300,6 +24679,9 @@
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
+        },
+        "wcag20:1.4.3": {
+          "secondary": true
         }
       },
       "expected": "failed",
@@ -24330,6 +24712,9 @@
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
+        },
+        "wcag20:1.4.3": {
+          "secondary": true
         }
       },
       "expected": "failed",
@@ -24360,6 +24745,9 @@
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
+        },
+        "wcag20:1.4.3": {
+          "secondary": true
         }
       },
       "expected": "failed",
@@ -24390,6 +24778,9 @@
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
+        },
+        "wcag20:1.4.3": {
+          "secondary": true
         }
       },
       "expected": "failed",
@@ -24420,6 +24811,9 @@
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
+        },
+        "wcag20:1.4.3": {
+          "secondary": true
         }
       },
       "expected": "failed",
@@ -24450,6 +24844,9 @@
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
+        },
+        "wcag20:1.4.3": {
+          "secondary": true
         }
       },
       "expected": "inapplicable",
@@ -24480,6 +24877,9 @@
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
+        },
+        "wcag20:1.4.3": {
+          "secondary": true
         }
       },
       "expected": "inapplicable",
@@ -24510,6 +24910,9 @@
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
+        },
+        "wcag20:1.4.3": {
+          "secondary": true
         }
       },
       "expected": "inapplicable",
@@ -24540,6 +24943,9 @@
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
+        },
+        "wcag20:1.4.3": {
+          "secondary": true
         }
       },
       "expected": "inapplicable",
@@ -24570,6 +24976,9 @@
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
+        },
+        "wcag20:1.4.3": {
+          "secondary": true
         }
       },
       "expected": "inapplicable",
@@ -24600,6 +25009,9 @@
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
+        },
+        "wcag20:1.4.3": {
+          "secondary": true
         }
       },
       "expected": "inapplicable",
@@ -24630,6 +25042,9 @@
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
+        },
+        "wcag20:1.4.3": {
+          "secondary": true
         }
       },
       "expected": "inapplicable",
@@ -24660,6 +25075,9 @@
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
+        },
+        "wcag20:1.4.3": {
+          "secondary": true
         }
       },
       "expected": "inapplicable",
@@ -24690,6 +25108,9 @@
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
+        },
+        "wcag20:1.4.3": {
+          "secondary": true
         }
       },
       "expected": "inapplicable",
@@ -24720,6 +25141,9 @@
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
+        },
+        "wcag20:1.4.3": {
+          "secondary": true
         }
       },
       "expected": "inapplicable",
@@ -24750,6 +25174,9 @@
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
+        },
+        "wcag20:1.4.3": {
+          "secondary": true
         }
       },
       "expected": "inapplicable",

@@ -2,7 +2,7 @@
   "vendor": "US federal government",
   "name": "Trusted Tester",
   "version": 5.1,
-  "lastModified": "30 November 2022",
+  "lastModified": "25 January 2023",
   "approvedRules": {
     "complete": 2,
     "partial": 0,
@@ -11,10 +11,10 @@
     "untested": 19
   },
   "proposedRules": {
-    "complete": 6,
-    "partial": 6,
+    "complete": 10,
+    "partial": 4,
     "minimal": 0,
-    "inconsistent": 4,
+    "inconsistent": 2,
     "untested": 53
   },
   "actRuleMapping": [
@@ -1975,8 +1975,8 @@
         ]
       },
       "coverage": {
-        "covered": 10,
-        "untested": 0,
+        "covered": 9,
+        "untested": 1,
         "cantTell": 0,
         "testCaseTotal": 10
       },
@@ -2027,16 +2027,16 @@
           ]
         },
         {
-          "testcaseId": "780388a837915960bca7651bd80743fb2cafdbcb",
+          "testcaseId": "f5ea9fd3b681971b2af4953fae9bb2d319a203c6",
           "testCaseName": "Failed Example 1",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a1b64e/780388a837915960bca7651bd80743fb2cafdbcb.html",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a1b64e/f5ea9fd3b681971b2af4953fae9bb2d319a203c6.html",
           "testCaseApproved": false,
           "expected": "failed",
           "procedureResults": [
             {
               "procedureName": "2.1.2-no-keyboard-trap",
               "outcomes": [
-                "failed"
+                "untested"
               ]
             }
           ]
@@ -2917,7 +2917,7 @@
       "procedureNames": [
         "2.4.2-page-title-purpose"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -2928,8 +2928,8 @@
         ]
       },
       "coverage": {
-        "covered": 6,
-        "untested": 1,
+        "covered": 7,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 7
       },
@@ -3019,7 +3019,7 @@
             {
               "procedureName": "2.4.2-page-title-purpose",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -3084,17 +3084,19 @@
       "procedureNames": [
         "1.1.1-meaningful-image-name"
       ],
-      "consistency": null,
+      "consistency": "complete",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:non-text-content"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:non-text-content"
+        ]
       },
       "coverage": {
-        "covered": 9,
-        "untested": 7,
+        "covered": 16,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 16
       },
@@ -3109,7 +3111,7 @@
             {
               "procedureName": "1.1.1-meaningful-image-name",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -3124,7 +3126,7 @@
             {
               "procedureName": "1.1.1-meaningful-image-name",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -3139,7 +3141,7 @@
             {
               "procedureName": "1.1.1-meaningful-image-name",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -3154,7 +3156,7 @@
             {
               "procedureName": "1.1.1-meaningful-image-name",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -3169,7 +3171,7 @@
             {
               "procedureName": "1.1.1-meaningful-image-name",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -3184,7 +3186,7 @@
             {
               "procedureName": "1.1.1-meaningful-image-name",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -3259,7 +3261,7 @@
             {
               "procedureName": "1.1.1-meaningful-image-name",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -3357,20 +3359,19 @@
       "procedureNames": [
         "1.4.5-image-of-text"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
           "WCAG2:images-of-text"
         ],
         "reported": [
-          "WCAG2:images-of-text",
-          "WCAG2:images-of-text-no-exception"
+          "WCAG2:images-of-text"
         ]
       },
       "coverage": {
-        "covered": 14,
-        "untested": 1,
+        "covered": 15,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 15
       },
@@ -3565,7 +3566,7 @@
             {
               "procedureName": "1.4.5-image-of-text",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -3863,17 +3864,19 @@
       "procedureNames": [
         "2.4.7-focus-visible"
       ],
-      "consistency": null,
+      "consistency": "complete",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:focus-visible"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:focus-visible"
+        ]
       },
       "coverage": {
-        "covered": 4,
-        "untested": 3,
+        "covered": 7,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 7
       },
@@ -3903,7 +3906,7 @@
             {
               "procedureName": "2.4.7-focus-visible",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -3918,7 +3921,7 @@
             {
               "procedureName": "2.4.7-focus-visible",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -3948,7 +3951,7 @@
             {
               "procedureName": "2.4.7-focus-visible",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]

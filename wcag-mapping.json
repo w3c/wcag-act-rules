@@ -166,7 +166,8 @@
       "successCriteria": [
         "name-role-value",
         "link-purpose-in-context",
-        "link-purpose-link-only"
+        "link-purpose-link-only",
+        "non-text-content"
       ],
       "wcagTechniques": [
         "G91"
@@ -226,7 +227,10 @@
     {
       "title": "ARIA attribute is defined in WAI-ARIA",
       "permalink": "/standards-guidelines/act/rules/5f99a7/proposed/",
-      "successCriteria": [],
+      "successCriteria": [
+        "info-and-relationships",
+        "name-role-value"
+      ],
       "wcagTechniques": [],
       "proposed": true
     },
@@ -251,14 +255,20 @@
     {
       "title": "ARIA state or property has valid value",
       "permalink": "/standards-guidelines/act/rules/6a7281/proposed/",
-      "successCriteria": [],
+      "successCriteria": [
+        "info-and-relationships",
+        "name-role-value"
+      ],
       "wcagTechniques": [],
       "proposed": true
     },
     {
       "title": "ARIA state or property is permitted",
       "permalink": "/standards-guidelines/act/rules/5c01ea/proposed/",
-      "successCriteria": [],
+      "successCriteria": [
+        "info-and-relationships",
+        "name-role-value"
+      ],
       "wcagTechniques": [
         "ARIA5"
       ],
@@ -466,6 +476,7 @@
       "title": "Element with role attribute has required states and properties",
       "permalink": "/standards-guidelines/act/rules/4e8ab6/proposed/",
       "successCriteria": [
+        "info-and-relationships",
         "name-role-value"
       ],
       "wcagTechniques": [
@@ -695,7 +706,8 @@
       "permalink": "/standards-guidelines/act/rules/bisz58/proposed/",
       "successCriteria": [
         "interruptions",
-        "change-on-request"
+        "change-on-request",
+        "timing-adjustable"
       ],
       "wcagTechniques": [
         "G110",
@@ -725,7 +737,8 @@
       "title": "Role attribute has valid value",
       "permalink": "/standards-guidelines/act/rules/674b10/proposed/",
       "successCriteria": [
-        "info-and-relationships"
+        "info-and-relationships",
+        "name-role-value"
       ],
       "wcagTechniques": [
         "ARIA4",
@@ -767,7 +780,8 @@
       "title": "Text has enhanced contrast",
       "permalink": "/standards-guidelines/act/rules/09o5cg/proposed/",
       "successCriteria": [
-        "contrast-enhanced"
+        "contrast-enhanced",
+        "contrast-minimum"
       ],
       "wcagTechniques": [
         "G17",

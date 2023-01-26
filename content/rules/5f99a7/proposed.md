@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 5f99a7</p>
-  <p><strong>Date:</strong> Updated 14 November 2022</p>
+  <p><strong>Date:</strong> Updated 24 January 2023</p>
   <p><strong>Authors:</strong> <a href="https://github.com/jkodu">Jey Nandakumar</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -19,7 +19,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that each `aria-` attribute specified is defined in ARIA 1.2.
-  last_modified: 14 November 2022
+  last_modified: 24 January 2023
 ---
 
 ## Applicability
@@ -40,15 +40,45 @@ There are no accessibility support issues known.
 
 ## Background
 
+The presence of unknown ARIA attributes is often the result of a typo or other developer error. These attributes are ignored by browsers and other assistive technologies. This often means that a state or property which should exist is missing. This can cause issues under [success criterion 1.3.1 Info and Relationships][sc131] or [4.1.2 Name, Rule Value][sc412].
+
+### Bibliography
+
 - [ARIA in HTML](https://www.w3.org/TR/html-aria/#index-aria-global)
 - [WAI ARIA Supported States and Properties](https://www.w3.org/TR/wai-aria-1.2/#supportedState)
 - [G108: Using markup features to expose the name and role](https://www.w3.org/WAI/WCAG21/Techniques/general/G108)
+- [Understanding Success Criterion 1.3.1: Info and Relationships](https://www.w3.org/WAI/WCAG21/Understanding/name-role-value)
 - [Understanding Success Criterion 4.1.2: Name, Role, Value](https://www.w3.org/WAI/WCAG21/Understanding/name-role-value)
 - [Semantics and ARIA](https://developers.google.com/web/fundamentals/accessibility/semantics-aria/)
 
 ## Accessibility Requirements Mapping
 
-This rule is not required for conformance.
+<ul class="act-requirements-list">
+  <li><details>
+    <summary><span>1.3.1 Info and Relationships (Level A)</span></summary>
+    <ul>
+      <li><a href="https://www.w3.org/TR/WCAG21/#info-and-relationships">Learn more about 1.3.1 Info and Relationships</a></li>
+      <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level A and higher.</li>
+      <li>Outcome mapping: <ul>
+        <li>Any <code>failed</code> outcomes: success criterion is not satisfied</li>
+        <li>All <code>passed</code> outcomes: success criterion </li>
+        <li>An <code>inapplicable</code> outcome: success criterion </li>
+      </ul></li>
+    </ul>
+  </details></li>
+  <li><details>
+    <summary><span>4.1.2 Name, Role, Value (Level A)</span></summary>
+    <ul>
+      <li><a href="https://www.w3.org/TR/WCAG21/#name-role-value">Learn more about 4.1.2 Name, Role, Value</a></li>
+      <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level A and higher.</li>
+      <li>Outcome mapping: <ul>
+        <li>Any <code>failed</code> outcomes: success criterion is not satisfied</li>
+        <li>All <code>passed</code> outcomes: success criterion </li>
+        <li>An <code>inapplicable</code> outcome: success criterion </li>
+      </ul></li>
+    </ul>
+  </details></li>
+</ul>
 
 ## Input Aspects
 
@@ -84,7 +114,7 @@ This `div` element with a role of `dialog` has an `aria-modal` attribute which i
 
 <a class="example-link" title="Passed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/3314945d4bbec5b34f9a3c2d90da7cb9f8e7ce5a.html">Open in a new tab</a>
 
-This `div` element with a role of `textbox` has multiple `aria-*` attributes which are defined in [WAI-ARIA Specifications][].
+This `div` element with a role of `textbox` has multiple `aria-` attributes which are defined in [WAI-ARIA Specifications][].
 
 ```html
 <div
@@ -100,7 +130,7 @@ This `div` element with a role of `textbox` has multiple `aria-*` attributes whi
 
 <a class="example-link" title="Passed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/4373f9e70eb353c76d7e9d4c2cc4dcfd6c17ad70.html">Open in a new tab</a>
 
-This `input` element with a role of `spinbutton` has multiple `aria-*` attributes specified which are all defined in [WAI-ARIA Specifications][].
+This `input` element with a role of `spinbutton` has multiple `aria-` attributes specified which are all defined in [WAI-ARIA Specifications][].
 
 ```html
 <label for="spinbutton">Enter a number between 0 and 100:</label>
@@ -119,21 +149,19 @@ This `input` element with a role of `spinbutton` has multiple `aria-*` attribute
 
 #### Failed Example 1
 
-<a class="example-link" title="Failed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/7296da1d7d8f1ede523cc6c4b7def0f8dbd1e887.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/e145aafac5f00cabc7cb3d65a32f7fdb5ec1484d.html">Open in a new tab</a>
 
-This `li` element with a role of `menuitemcheckbox` has an `aria-*` attribute which is not defined in [WAI-ARIA Specifications][].
+This `div` element with a role of `checkbox` has an `aria-not-checked` attribute which is not defined in [WAI-ARIA Specifications][].
 
 ```html
-<ul>
-	<li role="menuitemcheckbox" aria-not-checked="true">List Item</li>
-</ul>
+<div role="checkbox" aria-not-checked="true">All conditions are met</div>
 ```
 
 #### Failed Example 2
 
 <a class="example-link" title="Failed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/b6acf7c4aab0cfdc9f996abc7961790cbc97f39e.html">Open in a new tab</a>
 
-This `div` element with a role of `searchbox` has an `aria-*` attribute (`aria-labelled`) which is not defined in [WAI-ARIA Specifications][].
+This `div` element with a role of `searchbox` has an `aria-labelled` attribute (instead of `aria-labelledby`) which is not defined in [WAI-ARIA Specifications][].
 
 ```html
 <span id="label">Birthday:</span>
@@ -148,7 +176,7 @@ This `div` element with a role of `searchbox` has an `aria-*` attribute (`aria-l
 
 <a class="example-link" title="Inapplicable Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/d528a33258103014c0a03cf1e418ee0620f7b4f6.html">Open in a new tab</a>
 
-This `canvas` element does not have an `aria-*` attribute specified.
+This `canvas` element does not have an `aria-` attribute specified.
 
 ```html
 <canvas> </canvas>
@@ -178,4 +206,6 @@ The _WAI ARIA Specifications_ group both the WAI ARIA W3C Recommendation and ARI
 
 **Note:** depending on the type of content being evaluated, part of the specifications might be irrelevant and should be ignored.
 
+[sc131]: https://www.w3.org/TR/WCAG21/#info-and-relationships
+[sc412]: https://www.w3.org/TR/WCAG21/#name-role-value
 [wai-aria specifications]: #wai-aria-specifications 'Definition of WAI-ARIA specifications'

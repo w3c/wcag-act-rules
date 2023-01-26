@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> a1b64e</p>
-  <p><strong>Date:</strong> Updated 14 November 2022</p>
+  <p><strong>Date:</strong> Updated 17 January 2023</p>
   <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/carlosapaduarte">Carlos Duarte</a>, <a href="https://github.com/DagfinnRomen">Dagfinn Rømen</a>, <a href="https://github.com/geirsf">Geir Sindre Fossøy</a>, <a href="https: //github.com/MaliinO">Malin Øvrebø</a>, <a href="https://github.com/nitedog">Shadi Abou-Zahra</a>, <a href="https://github.com/skotkjerra">Stein Erik Skotkjerra</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -19,7 +19,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks if it is possible to use standard keyboard navigation to navigate through all content on a web page without becoming trapped in any element.
-  last_modified: 14 November 2022
+  last_modified: 17 January 2023
 ---
 
 ## Applicability
@@ -30,7 +30,7 @@ This rule applies to any [HTML or SVG element][] that is [focusable][].
 
 For each target element, focus can cycle to the browser UI by using [standard keyboard navigation](#standard-keyboard-navigation).
 
-**Note:** Cycling back to the browser UI can be done both by moving forward through the tab order and by moving backwards. It is not possible to fulfill this expectation by using browser specific shortcuts to return to the browser UI.
+**Note:** It is not possible to fulfill this expectation by using browser specific shortcuts to return to the browser UI.
 
 ## Assumptions
 
@@ -42,6 +42,8 @@ For each target element, focus can cycle to the browser UI by using [standard ke
 There are no accessibility support issues known.
 
 ## Background
+
+This rule only requires navigation in one direction (either forward or backward), not both, and not a specific one. It is clear that not being able to escape a focus trap in any direction is a failure of [Success Criterion 2.1.2 No keyboard trap][sc212]. However, it is less clear that being able to escape in only one direction is enough to satisfy it. If [Success Criterion 2.1.2 No keyboard trap][sc212] requires the possibility to escape the trap in a specific way (e.g. forward [standard keyboard navigation](#standard-keyboard-navigation)) or in both directions, this rule may pass while the criterion is not satisfied.
 
 ### Bibliography
 
@@ -98,15 +100,16 @@ This element is made [focusable][] by the `tabindex` attribute, even if it is no
 
 #### Failed Example 1
 
-<a class="example-link" title="Failed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/a1b64e/780388a837915960bca7651bd80743fb2cafdbcb.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/a1b64e/f5ea9fd3b681971b2af4953fae9bb2d319a203c6.html">Open in a new tab</a>
 
-This [focusable][] element creates a keyboard trap bringing focus to the `button`.
+This [focusable][] element creates a keyboard trap bringing focus to the `button`. Note that if one of the links is removed, the focus may jump to the browser UI before the timeout expires, at which point the `this.focus()` trap cannot trigger anymore.
 
 ```html
 <a href="#">Link 1</a>
 <button onblur="setTimeout(() => this.focus(), 10)">
 	Button1
 </button>
+<a href="#">Link 2</a>
 ```
 
 #### Failed Example 2
@@ -241,6 +244,7 @@ Expected behavior of standard keyboard navigation keys:
 [html or svg element]: #namespaced-element
 [namespaceuri]: https://dom.spec.whatwg.org/#dom-element-namespaceuri 'DOM Element namespaceURI, 2021/05/31'
 [rules for parsing integers]: https://html.spec.whatwg.org/#rules-for-parsing-integers
+[sc212]: https://www.w3.org/TR/WCAG21/#no-keyboard-trap 'Success Criterion 2.1.2 No Keyboard Trap'
 [sequential focus navigation]: https://html.spec.whatwg.org/multipage/interaction.html#sequential-focus-navigation
 [tabindex attribute]: https://html.spec.whatwg.org/#attr-tabindex
 [tabindex value]: https://html.spec.whatwg.org/#tabindex-value

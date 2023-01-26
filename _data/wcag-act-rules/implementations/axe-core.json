@@ -2,7 +2,7 @@
   "vendor": "Deque Systems",
   "name": "Axe-core",
   "version": "4.6.0",
-  "lastModified": "5 January 2023",
+  "lastModified": "25 January 2023",
   "approvedRules": {
     "complete": 22,
     "partial": 0,
@@ -11,8 +11,8 @@
     "untested": 0
   },
   "proposedRules": {
-    "complete": 11,
-    "partial": 7,
+    "complete": 15,
+    "partial": 3,
     "minimal": 8,
     "inconsistent": 4,
     "untested": 39
@@ -6130,9 +6130,9 @@
       "procedureNames": [
         "aria-valid-attr"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [],
         "reported": [
           "WCAG2:name-role-value"
@@ -6206,9 +6206,9 @@
           ]
         },
         {
-          "testcaseId": "7296da1d7d8f1ede523cc6c4b7def0f8dbd1e887",
+          "testcaseId": "e145aafac5f00cabc7cb3d65a32f7fdb5ec1484d",
           "testCaseName": "Failed Example 1",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/7296da1d7d8f1ede523cc6c4b7def0f8dbd1e887.html",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/e145aafac5f00cabc7cb3d65a32f7fdb5ec1484d.html",
           "testCaseApproved": false,
           "expected": "failed",
           "procedureResults": [
@@ -6894,9 +6894,9 @@
       "procedureNames": [
         "aria-allowed-attr"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [],
         "reported": [
           "WCAG2:name-role-value"
@@ -7160,7 +7160,7 @@
       ],
       "consistency": "partial",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [],
         "reported": [
           "WCAG2:name-role-value"
@@ -7553,9 +7553,11 @@
       ],
       "consistency": null,
       "accessibilityRequirements": {
-        "correct": true,
+        "correct": false,
         "expected": [],
-        "reported": []
+        "reported": [
+          "WCAG2:audio-only-and-video-only-prerecorded"
+        ]
       },
       "coverage": {
         "covered": 0,
@@ -7680,11 +7682,13 @@
       ],
       "consistency": null,
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:audio-control"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:audio-control"
+        ]
       },
       "coverage": {
         "covered": 2,
@@ -7833,9 +7837,11 @@
       ],
       "consistency": null,
       "accessibilityRequirements": {
-        "correct": true,
+        "correct": false,
         "expected": [],
-        "reported": []
+        "reported": [
+          "WCAG2:audio-only-and-video-only-prerecorded"
+        ]
       },
       "coverage": {
         "covered": 0,
@@ -8047,9 +8053,11 @@
       ],
       "consistency": "minimal",
       "accessibilityRequirements": {
-        "correct": true,
+        "correct": false,
         "expected": [],
-        "reported": []
+        "reported": [
+          "WCAG2:bypass-blocks"
+        ]
       },
       "coverage": {
         "covered": 1,
@@ -8189,11 +8197,13 @@
       ],
       "consistency": "minimal",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:bypass-blocks"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:bypass-blocks"
+        ]
       },
       "coverage": {
         "covered": 9,
@@ -8617,9 +8627,11 @@
       ],
       "consistency": "minimal",
       "accessibilityRequirements": {
-        "correct": true,
+        "correct": false,
         "expected": [],
-        "reported": []
+        "reported": [
+          "WCAG2:bypass-blocks"
+        ]
       },
       "coverage": {
         "covered": 10,
@@ -8849,9 +8861,11 @@
       ],
       "consistency": "minimal",
       "accessibilityRequirements": {
-        "correct": true,
+        "correct": false,
         "expected": [],
-        "reported": []
+        "reported": [
+          "WCAG2:bypass-blocks"
+        ]
       },
       "coverage": {
         "covered": 8,
@@ -9051,9 +9065,11 @@
       ],
       "consistency": "minimal",
       "accessibilityRequirements": {
-        "correct": true,
+        "correct": false,
         "expected": [],
-        "reported": []
+        "reported": [
+          "WCAG2:bypass-blocks"
+        ]
       },
       "coverage": {
         "covered": 5,
@@ -9690,11 +9706,13 @@
       ],
       "consistency": "minimal",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:name-role-value"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:name-role-value"
+        ]
       },
       "coverage": {
         "covered": 11,
@@ -10440,11 +10458,13 @@
       ],
       "consistency": "minimal",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:link-purpose-link-only"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:link-purpose-link-only"
+        ]
       },
       "coverage": {
         "covered": 10,
@@ -11176,12 +11196,10 @@
       "procedureNames": [
         "aria-roles"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
-        "correct": false,
-        "expected": [
-          "WCAG2:info-and-relationships"
-        ],
+        "correct": true,
+        "expected": [],
         "reported": [
           "WCAG2:name-role-value"
         ]
@@ -11355,9 +11373,7 @@
       "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
-        "expected": [
-          "WCAG2:name-role-value"
-        ],
+        "expected": [],
         "reported": [
           "WCAG2:name-role-value"
         ]
@@ -11614,7 +11630,7 @@
       "procedureNames": [
         "scrollable-region-focusable"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -11625,8 +11641,8 @@
         ]
       },
       "coverage": {
-        "covered": 9,
-        "untested": 1,
+        "covered": 10,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 10
       },
@@ -11776,7 +11792,7 @@
             {
               "procedureName": "scrollable-region-focusable",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -11801,11 +11817,13 @@
       ],
       "consistency": "minimal",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:info-and-relationships"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:info-and-relationships"
+        ]
       },
       "coverage": {
         "covered": 13,
@@ -12618,9 +12636,9 @@
           ]
         },
         {
-          "testcaseId": "683924f835ab545a23a3625b0630e95bd0b50bca",
+          "testcaseId": "d011f0ef2a8d94ccf3d3d393a50d7fd8c576d3c3",
           "testCaseName": "Passed Example 3",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/683924f835ab545a23a3625b0630e95bd0b50bca.html",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/d011f0ef2a8d94ccf3d3d393a50d7fd8c576d3c3.html",
           "testCaseApproved": false,
           "expected": "passed",
           "procedureResults": [
@@ -13094,11 +13112,13 @@
       ],
       "consistency": null,
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:captions-prerecorded"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:captions-prerecorded"
+        ]
       },
       "coverage": {
         "covered": 2,

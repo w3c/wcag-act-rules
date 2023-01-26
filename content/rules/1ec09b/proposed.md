@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 1ec09b</p>
-  <p><strong>Date:</strong> Updated 11 July 2022</p>
+  <p><strong>Date:</strong> Updated 16 January 2023</p>
   <p><strong>Authors:</strong> <a href="https://www.linkedin.com/in/brianbors/">Brian Bors</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
   
@@ -21,7 +21,7 @@ rule_meta:
   rule_type: composite
   description: |
     This rule checks that `video` elements with audio have audio description.
-  last_modified: 11 July 2022
+  last_modified: 16 January 2023
   scs_tested:
     - handle: Audio Description (Prerecorded)
       num: 1.2.5
@@ -36,8 +36,8 @@ This rule applies to every [non-streaming](#non-streaming-media-element) `video`
 
 For each test target, the [outcome](#outcome) of at least one of the following rules is passed:
 
-- [`Video` Element Visual Content Has Audio Description](https://act-rules.github.io/rules/1ea59c)
-- [`Video` Element Content Is Media Alternative For Text](https://act-rules.github.io/rules/ab4d13)
+- [`Video` Element Visual Content Has Audio Description](https://www.w3.org/WAI/standards-guidelines/act/rules/1ea59c/proposed/)
+- [`Video` Element Content Is Media Alternative For Text](https://www.w3.org/WAI/standards-guidelines/act/rules/ab4d13/proposed/)
 
 ## Assumptions
 

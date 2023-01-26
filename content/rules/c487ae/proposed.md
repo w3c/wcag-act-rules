@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> c487ae</p>
-  <p><strong>Date:</strong> Updated 11 November 2022</p>
+  <p><strong>Date:</strong> Updated 16 January 2023</p>
   <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
   
@@ -21,7 +21,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that each link has a non-empty accessible name.
-  last_modified: 11 November 2022
+  last_modified: 16 January 2023
   scs_tested:
     - handle: Name, Role, Value
       num: 4.1.2
@@ -29,9 +29,6 @@ rule_meta:
     - handle: Link Purpose (In Context)
       num: 2.4.4
       level: A
-    - handle: Link Purpose (Link Only)
-      num: 2.4.9
-      level: AAA
 ---
 
 ## Applicability
@@ -54,9 +51,11 @@ The rule assumes that all links are [user interface components](https://www.w3.o
 
 ## Background
 
+The HTML `area` element is both a link and non-text content. When this rule fails on `area` elements [success criterion 1.1.1 Non-text content][sc111] is not satisfied.
+
 ### Related rules
 
-- [Link in context is descriptive](https://act-rules.github.io/rules/5effbb)
+- [Link in context is descriptive](https://www.w3.org/WAI/standards-guidelines/act/rules/5effbb/proposed/)
 
 ### Bibliography
 
@@ -114,6 +113,18 @@ The rule assumes that all links are [user interface components](https://www.w3.o
         <li>Any <code>failed</code> outcomes: technique is not satisfied</li>
         <li>All <code>passed</code> outcomes: technique needs further testing</li>
         <li>An <code>inapplicable</code> outcome: technique needs further testing</li>
+      </ul></li>
+    </ul>
+  </details></li>
+  <li><details>
+    <summary><span>1.1.1 Non-text Content (Level A)</span></summary>
+    <ul>
+      <li><a href="https://www.w3.org/TR/WCAG21/#non-text-content">Learn more about 1.1.1 Non-text Content</a></li>
+      <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level A and higher.</li>
+      <li>Outcome mapping: <ul>
+        <li>Any <code>failed</code> outcomes: success criterion is not satisfied</li>
+        <li>All <code>passed</code> outcomes: success criterion </li>
+        <li>An <code>inapplicable</code> outcome: success criterion </li>
       </ul></li>
     </ul>
   </details></li>
@@ -630,6 +641,7 @@ The _WAI ARIA Specifications_ group both the WAI ARIA W3C Recommendation and ARI
 [reflect]: https://html.spec.whatwg.org/multipage/common-dom-interfaces.html#reflecting-content-attributes-in-idl-attributes 'HTML specification of Reflecting Content Attributes in IDL Attributes'
 [role attribute]: https://www.w3.org/TR/role-attribute/ 'Specification of the role attribute'
 [rules for parsing integers]: https://html.spec.whatwg.org/#rules-for-parsing-integers
+[sc111]: https://www.w3.org/TR/WCAG21/#non-text-content
 [semantic role]: #semantic-role 'Definition of Semantic Role'
 [sequential focus navigation]: https://html.spec.whatwg.org/multipage/interaction.html#sequential-focus-navigation
 [space separated]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#space-separated-tokens 'HTML Specification of Space Separated Tokens'
