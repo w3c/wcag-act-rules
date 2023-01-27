@@ -26080,7 +26080,7 @@
           "earl:TestSubject",
           "sch:WebPage"
         ],
-        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/bisz58/4ba1bf62d48d7004d270615500af3e83f4b693a7.html"
+        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/bisz58/24a98a3ff6a69e073f768bb198671ea6a1c4568a.html"
       },
       "result": {
         "@type": "TestResult",
@@ -26104,7 +26104,7 @@
           "earl:TestSubject",
           "sch:WebPage"
         ],
-        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/bisz58/4ba1bf62d48d7004d270615500af3e83f4b693a7.html"
+        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/bisz58/24a98a3ff6a69e073f768bb198671ea6a1c4568a.html"
       },
       "result": {
         "@type": "TestResult",
@@ -26128,7 +26128,7 @@
           "earl:TestSubject",
           "sch:WebPage"
         ],
-        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/bisz58/4ba1bf62d48d7004d270615500af3e83f4b693a7.html"
+        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/bisz58/24a98a3ff6a69e073f768bb198671ea6a1c4568a.html"
       },
       "result": {
         "@type": "TestResult",
@@ -26151,7 +26151,7 @@
           "earl:TestSubject",
           "sch:WebPage"
         ],
-        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/bisz58/4ba1bf62d48d7004d270615500af3e83f4b693a7.html"
+        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/bisz58/24a98a3ff6a69e073f768bb198671ea6a1c4568a.html"
       },
       "result": {
         "@type": "TestResult",
@@ -26174,35 +26174,35 @@
           "earl:TestSubject",
           "sch:WebPage"
         ],
-        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/bisz58/5654c6af54a07ba4dc96ee5f2a1c3fd6457164b8.html"
+        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/bisz58/ecc787569c06640f3748ae90e2b57fb51c1e22d8.html"
+      },
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:passed"
+      },
+      "test": {
+        "@type": "TestCase",
+        "title": "meta-refresh-no-exceptions",
+        "@id": "https://dequeuniversity.com/rules/axe/4.6/meta-refresh-no-exceptions?application=axeAPI",
+        "isPartOf": [
+          "WCAG2:interruptions",
+          "WCAG2:change-on-request"
+        ]
+      }
+    },
+    {
+      "@type": "Assertion",
+      "mode": "earl:automatic",
+      "subject": {
+        "@type": [
+          "earl:TestSubject",
+          "sch:WebPage"
+        ],
+        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/bisz58/ecc787569c06640f3748ae90e2b57fb51c1e22d8.html"
       },
       "result": {
         "@type": "TestResult",
         "outcome": "earl:failed"
-      },
-      "test": {
-        "@type": "TestCase",
-        "title": "meta-refresh-no-exceptions",
-        "@id": "https://dequeuniversity.com/rules/axe/4.6/meta-refresh-no-exceptions?application=axeAPI",
-        "isPartOf": [
-          "WCAG2:interruptions",
-          "WCAG2:change-on-request"
-        ]
-      }
-    },
-    {
-      "@type": "Assertion",
-      "mode": "earl:automatic",
-      "subject": {
-        "@type": [
-          "earl:TestSubject",
-          "sch:WebPage"
-        ],
-        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/bisz58/5654c6af54a07ba4dc96ee5f2a1c3fd6457164b8.html"
-      },
-      "result": {
-        "@type": "TestResult",
-        "outcome": "earl:passed"
       },
       "test": {
         "@type": "TestCase",
@@ -30073,6 +30073,52 @@
       "result": {
         "@type": "TestResult",
         "outcome": "earl:passed"
+      },
+      "test": {
+        "@type": "TestCase",
+        "title": "color-contrast",
+        "@id": "https://dequeuniversity.com/rules/axe/4.6/color-contrast?application=axeAPI",
+        "isPartOf": [
+          "WCAG2:contrast-minimum"
+        ]
+      }
+    },
+    {
+      "@type": "Assertion",
+      "mode": "earl:automatic",
+      "subject": {
+        "@type": [
+          "earl:TestSubject",
+          "sch:WebPage"
+        ],
+        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/09o5cg/eaf0a926896f045a498073da42ea6263a4d6d36c.html"
+      },
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:passed"
+      },
+      "test": {
+        "@type": "TestCase",
+        "title": "color-contrast-enhanced",
+        "@id": "https://dequeuniversity.com/rules/axe/4.6/color-contrast-enhanced?application=axeAPI",
+        "isPartOf": [
+          "WCAG2:contrast-enhanced"
+        ]
+      }
+    },
+    {
+      "@type": "Assertion",
+      "mode": "earl:automatic",
+      "subject": {
+        "@type": [
+          "earl:TestSubject",
+          "sch:WebPage"
+        ],
+        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/09o5cg/eaf0a926896f045a498073da42ea6263a4d6d36c.html"
+      },
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:failed"
       },
       "test": {
         "@type": "TestCase",
