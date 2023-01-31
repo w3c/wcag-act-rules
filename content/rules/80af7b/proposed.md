@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 80af7b</p>
-  <p><strong>Date:</strong> Updated 16 January 2023</p>
+  <p><strong>Date:</strong> Updated 31 January 2023</p>
   <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/DagfinnRomen">Dagfinn Rømen</a>, <a href="https://github.com/geirsf">Geir Sindre Fossøy</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -19,7 +19,7 @@ rule_meta:
   rule_type: composite
   description: |
     This rule checks for keyboard traps. This includes use of both standard and non-standard keyboard navigation to navigate through all content without becoming trapped.
-  last_modified: 16 January 2023
+  last_modified: 31 January 2023
   scs_tested:
     - handle: No Keyboard Trap
       num: 2.1.2
@@ -46,6 +46,8 @@ There are no assumptions.
 There are no accessibility support issues known.
 
 ## Background
+
+This rule only requires navigation in one direction (either forward or backward), not both, and not a specific one. It is clear that not being able to escape a focus trap in any direction is a failure of [Success Criterion 2.1.2 No keyboard trap][sc212]. However, it is less clear that being able to escape in only one direction is enough to satisfy it. If [Success Criterion 2.1.2 No keyboard trap][sc212] requires the possibility to escape the trap in a specific way (e.g. forward [standard keyboard navigation](#standard-keyboard-navigation)) or in both directions, this rule may pass while the criterion is not satisfied.
 
 ### Bibliography
 
@@ -202,15 +204,16 @@ These focusable `button` elements have scripts that create a keyboard trap. The 
 
 #### Failed Example 1
 
-<a class="example-link" title="Failed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/80af7b/780388a837915960bca7651bd80743fb2cafdbcb.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/80af7b/f5ea9fd3b681971b2af4953fae9bb2d319a203c6.html">Open in a new tab</a>
 
-This [focusable][] element creates a keyboard trap bringing focus to the `button`.
+This [focusable][] element creates a keyboard trap bringing focus to the `button`. Note that if one of the links is removed, the focus may jump to the browser UI before the timeout expires, at which point the `this.focus()` trap cannot trigger anymore.
 
 ```html
 <a href="#">Link 1</a>
 <button onblur="setTimeout(() => this.focus(), 10)">
 	Button1
 </button>
+<a href="#">Link 2</a>
 ```
 
 #### Failed Example 2
@@ -378,12 +381,33 @@ An _outcome_ is a conclusion that comes from evaluating an ACT Rule on a [test s
 
 **Note:** Implementations using the [EARL10-Schema](https://www.w3.org/TR/EARL10-Schema/) can express the outcome with the [outcome property](https://www.w3.org/TR/EARL10-Schema/#outcome). In addition to `passed`, `failed` and `inapplicable`, EARL 1.0 also defined an `incomplete` outcome. While this cannot be the outcome of an ACT Rule when applied in its entirety, it often happens that rules are only partially evaluated. For example, when applicability was automated, but the expectations have to be evaluated manually. Such "interim" results can be expressed with the `incomplete` outcome.
 
+### Standard keyboard navigation {#standard-keyboard-navigation}
+
+_Standard keyboard navigation_ entails using one or more of the following:
+
+- Tab key
+- Shift+Tab
+- Arrow keys
+- Esc key
+- Enter key
+- Space key
+
+Expected behavior of standard keyboard navigation keys:
+
+- Tab key: Skipping forward between [focusable][] elements
+- Shift+Tab: Skipping backwards between [focusable][] elements
+- Arrow keys: Navigate input elements, e.g. up/down drop down, between radio buttons etc.
+- Esc key: Close or cancel, e.g close a modal
+- Enter key: Select or activate the element in focus (same as clicking with mouse)
+- Space key: Select input elements, e.g. drop downs, radio buttons etc.
+
 [element]: https://dom.spec.whatwg.org/#element 'DOM element, 2021/05/31'
 [focusable]: #focusable 'Definition of focusable'
 [html namespaces]: https://infra.spec.whatwg.org/#namespaces 'HTML namespace, 2021/05/31'
 [html or svg element]: #namespaced-element
 [namespaceuri]: https://dom.spec.whatwg.org/#dom-element-namespaceuri 'DOM Element namespaceURI, 2021/05/31'
 [rules for parsing integers]: https://html.spec.whatwg.org/#rules-for-parsing-integers
+[sc212]: https://www.w3.org/TR/WCAG21/#no-keyboard-trap 'Success Criterion 2.1.2 No Keyboard Trap'
 [sequential focus navigation]: https://html.spec.whatwg.org/multipage/interaction.html#sequential-focus-navigation
 [tabindex attribute]: https://html.spec.whatwg.org/#attr-tabindex
 [tabindex value]: https://html.spec.whatwg.org/#tabindex-value
