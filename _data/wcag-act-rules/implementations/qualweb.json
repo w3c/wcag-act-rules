@@ -2,7 +2,7 @@
   "vendor": "LASIGE, Faculdade de Ciências da Universidade de Lisboa",
   "name": "QualWeb",
   "version": "3.0.0",
-  "lastModified": "24 January 2023",
+  "lastModified": "31 January 2023",
   "approvedRules": {
     "complete": 16,
     "partial": 3,
@@ -11,8 +11,8 @@
     "untested": 0
   },
   "proposedRules": {
-    "complete": 10,
-    "partial": 8,
+    "complete": 11,
+    "partial": 7,
     "minimal": 13,
     "inconsistent": 18,
     "untested": 20
@@ -5505,15 +5505,15 @@
       "procedureNames": [
         "aria-* attribute is defined in WAI-ARIA"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
         "reported": []
       },
       "coverage": {
-        "covered": 6,
-        "untested": 1,
+        "covered": 7,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 7
       },
@@ -5588,7 +5588,7 @@
             {
               "procedureName": "aria-* attribute is defined in WAI-ARIA",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -13378,8 +13378,8 @@
       },
       "coverage": {
         "covered": 29,
-        "untested": 2,
-        "cantTell": 1,
+        "untested": 1,
+        "cantTell": 2,
         "testCaseTotal": 34
       },
       "testCaseResults": [
@@ -13423,7 +13423,7 @@
             {
               "procedureName": "Text has enhanced contrast",
               "outcomes": [
-                "untested"
+                "cantTell"
               ]
             }
           ]
