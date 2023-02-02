@@ -2,7 +2,7 @@
   "vendor": "US federal government",
   "name": "Trusted Tester",
   "version": 5.1,
-  "lastModified": "25 January 2023",
+  "lastModified": "31 January 2023",
   "approvedRules": {
     "complete": 2,
     "partial": 0,
@@ -874,7 +874,7 @@
         ]
       },
       "coverage": {
-        "covered": 9,
+        "covered": 8,
         "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 11
@@ -920,7 +920,7 @@
             {
               "procedureName": "1.2.1-audio-transcript-text",
               "outcomes": [
-                "inapplicable"
+                "failed"
               ]
             }
           ]
@@ -1583,7 +1583,7 @@
       },
       "coverage": {
         "covered": 15,
-        "untested": 0,
+        "untested": 1,
         "cantTell": 0,
         "testCaseTotal": 16
       },
@@ -1679,16 +1679,16 @@
           ]
         },
         {
-          "testcaseId": "780388a837915960bca7651bd80743fb2cafdbcb",
+          "testcaseId": "f5ea9fd3b681971b2af4953fae9bb2d319a203c6",
           "testCaseName": "Failed Example 1",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/80af7b/780388a837915960bca7651bd80743fb2cafdbcb.html",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/80af7b/f5ea9fd3b681971b2af4953fae9bb2d319a203c6.html",
           "testCaseApproved": false,
           "expected": "failed",
           "procedureResults": [
             {
               "procedureName": "2.1.2-no-keyboard-trap",
               "outcomes": [
-                "passed"
+                "untested"
               ]
             }
           ]

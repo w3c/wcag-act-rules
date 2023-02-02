@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> f51b46</p>
-  <p><strong>Date:</strong> Updated 14 November 2022</p>
+  <p><strong>Date:</strong> Updated 2 February 2023</p>
   <p><strong>Authors:</strong> <a href="https://www.linkedin.com/in/brianbors/">Brian Bors</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
   
@@ -21,12 +21,12 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that captions are available for audio information in non-streaming `video` elements.
-  last_modified: 14 November 2022
+  last_modified: 2 February 2023
 ---
 
 ## Applicability
 
-This rule applies to every [non-streaming](#non-streaming-media-element) `video` element that is [visible][] where the video contains [audio](#audio-output).
+This rule applies to every [non-streaming](#non-streaming-media-element) `video` element that is [visible][] where the video contains [audio](#audio-output) that is not only silence.
 
 ## Expectation
 
@@ -109,7 +109,7 @@ The following aspects are required in using this rule.
 
 <a class="example-link" title="Passed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/f51b46/107f5b9199edada98041895374e27e3c51fc6a3d.html">Open in a new tab</a>
 
-A video element that has captions for all the audio baked into it.
+A video element that has open captions for all of the audio content.
 
 ```html
 <video src="/test-assets/perspective-video/perspective-video-with-captions.mp4" controls></video>
@@ -119,7 +119,7 @@ A video element that has captions for all the audio baked into it.
 
 <a class="example-link" title="Passed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/f51b46/80bae3524849f9516dfdcdb647ecc44c6d439ac3.html">Open in a new tab</a>
 
-A video element with an associated track element that contain captions for all the audio.
+A video element with an associated track element that contains captions for all of the audio content.
 
 ```html
 <video src="/test-assets/perspective-video/perspective-video.mp4" controls>
@@ -143,7 +143,7 @@ A video element without any form of captions.
 
 <a class="example-link" title="Failed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/f51b46/b489643151f44cfeda7ad8356c1e46893c3d962c.html">Open in a new tab</a>
 
-A video element with an associated track element that contain incorrect captions.
+A video element with an associated track element that contains incorrect captions. Specifically, the captions flip the role of the mouse and computer by saying, "Not being able to use your mouse because your computer doesn't work is frustrating."
 
 ```html
 <video src="/test-assets/perspective-video/perspective-video.mp4" controls>
@@ -155,7 +155,7 @@ A video element with an associated track element that contain incorrect captions
 
 <a class="example-link" title="Failed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/f51b46/7a21303822a22edb9384d8956b95bcfe0c01a1fb.html">Open in a new tab</a>
 
-A video element with a text on the same page that described the audio in the video.
+A video element with text on the same page that describes the audio in the video.
 
 ```html
 <p>
@@ -170,7 +170,7 @@ A video element with a text on the same page that described the audio in the vid
 
 <a class="example-link" title="Failed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/f51b46/a4bf1f36113b22a1c9d34d7155269b72cf5721fc.html">Open in a new tab</a>
 
-A video element with an explicitly associated text on the same page that described the audio in the video.
+A video element with an explicitly associated text on the same page that describes the audio in the video.
 
 ```html
 <p id="text">
