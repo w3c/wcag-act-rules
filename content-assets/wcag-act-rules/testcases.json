@@ -3,7 +3,7 @@
   "website": "https://www.w3.org/WAI/standards-guidelines/act/rules/",
   "license": "https://act-rules.github.io/pages/license/",
   "description": "Accessibility conformance testing rules for HTML",
-  "count": 1157,
+  "count": 1158,
   "testcases": [
     {
       "ruleId": "73f2c2",
@@ -11570,6 +11570,24 @@
       "relativePath": "testcases/efbfc7/0d1564a1311c77d8693a9f839e1d752df501d441.html",
       "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/efbfc7/0d1564a1311c77d8693a9f839e1d752df501d441.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/efbfc7/proposed/"
+    },
+    {
+      "ruleId": "73f2c2",
+      "ruleName": "Autocomplete attribute has valid value",
+      "ruleAccessibilityRequirements": {
+        "wcag21:1.3.5": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "efcd5df49b39506dac34a310f4b8bc0df71716d3",
+      "testcaseTitle": "Passed Example 9",
+      "relativePath": "testcases/73f2c2/efcd5df49b39506dac34a310f4b8bc0df71716d3.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/73f2c2/efcd5df49b39506dac34a310f4b8bc0df71716d3.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/73f2c2/proposed/"
     },
     {
       "ruleId": "3e12e1",
