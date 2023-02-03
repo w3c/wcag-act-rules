@@ -2,7 +2,7 @@
   "vendor": "Deque Systems",
   "name": "Axe-core",
   "version": "4.6.0",
-  "lastModified": "1 February 2023",
+  "lastModified": "3 February 2023",
   "approvedRules": {
     "complete": 22,
     "partial": 0,
@@ -36,8 +36,8 @@
         ]
       },
       "coverage": {
-        "covered": 20,
-        "untested": 1,
+        "covered": 21,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 21
       },
@@ -352,7 +352,7 @@
             {
               "procedureName": "autocomplete-valid",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
