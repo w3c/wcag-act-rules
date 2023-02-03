@@ -11,8 +11,8 @@
     "untested": 0
   },
   "proposedRules": {
-    "complete": 5,
-    "partial": 8,
+    "complete": 11,
+    "partial": 2,
     "minimal": 3,
     "inconsistent": 8,
     "untested": 45
@@ -2884,8 +2884,7 @@
         "correct": true,
         "expected": [
           "WCAG2:name-role-value",
-          "WCAG2:link-purpose-in-context",
-          "WCAG2:link-purpose-link-only"
+          "WCAG2:link-purpose-in-context"
         ],
         "reported": [
           "WCAG2:link-purpose-in-context",
@@ -4796,9 +4795,7 @@
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
-          "WCAG2:timing-adjustable",
-          "WCAG2:interruptions",
-          "WCAG2:change-on-request"
+          "WCAG2:timing-adjustable"
         ],
         "reported": [
           "WCAG2:timing-adjustable",
@@ -5536,13 +5533,10 @@
       "procedureNames": [
         "sia-r20"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
-        "correct": false,
-        "expected": [
-          "WCAG2:info-and-relationships",
-          "WCAG2:name-role-value"
-        ],
+        "correct": true,
+        "expected": [],
         "reported": []
       },
       "coverage": {
@@ -6198,13 +6192,10 @@
       "procedureNames": [
         "sia-r18"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
-        "correct": false,
-        "expected": [
-          "WCAG2:info-and-relationships",
-          "WCAG2:name-role-value"
-        ],
+        "correct": true,
+        "expected": [],
         "reported": [
           "https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA5"
         ]
@@ -6465,13 +6456,10 @@
       "procedureNames": [
         "sia-r19"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
-        "correct": false,
-        "expected": [
-          "WCAG2:info-and-relationships",
-          "WCAG2:name-role-value"
-        ],
+        "correct": true,
+        "expected": [],
         "reported": []
       },
       "coverage": {
@@ -7664,11 +7652,13 @@
       ],
       "consistency": "minimal",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:name-role-value"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:name-role-value"
+        ]
       },
       "coverage": {
         "covered": 14,
@@ -8403,11 +8393,13 @@
       ],
       "consistency": "minimal",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:link-purpose-link-only"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:link-purpose-link-only"
+        ]
       },
       "coverage": {
         "covered": 8,
@@ -8742,12 +8734,14 @@
       ],
       "consistency": null,
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
+          "WCAG2:link-purpose-in-context"
+        ],
+        "reported": [
           "WCAG2:link-purpose-in-context",
           "WCAG2:link-purpose-link-only"
-        ],
-        "reported": []
+        ]
       },
       "coverage": {
         "covered": 7,
@@ -9196,13 +9190,12 @@
       "procedureNames": [
         "sia-r96"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:interruptions",
-          "WCAG2:change-on-request",
-          "WCAG2:timing-adjustable"
+          "WCAG2:change-on-request"
         ],
         "reported": [
           "WCAG2:interruptions",
@@ -9440,13 +9433,10 @@
       "procedureNames": [
         "sia-r110"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
-        "correct": false,
-        "expected": [
-          "WCAG2:info-and-relationships",
-          "WCAG2:name-role-value"
-        ],
+        "correct": true,
+        "expected": [],
         "reported": [
           "WCAG2:info-and-relationships",
           "https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA4",
@@ -9619,13 +9609,10 @@
       "procedureNames": [
         "sia-r16"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
-        "correct": false,
-        "expected": [
-          "WCAG2:info-and-relationships",
-          "WCAG2:name-role-value"
-        ],
+        "correct": true,
+        "expected": [],
         "reported": [
           "WCAG2:name-role-value",
           "https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA5"
@@ -9876,8 +9863,7 @@
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
-          "WCAG2:keyboard",
-          "WCAG2:keyboard-no-exception"
+          "WCAG2:keyboard"
         ],
         "reported": [
           "WCAG2:keyboard",
@@ -10053,11 +10039,13 @@
       ],
       "consistency": "minimal",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:focus-visible"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:focus-visible"
+        ]
       },
       "coverage": {
         "covered": 4,
@@ -10451,8 +10439,7 @@
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
-          "WCAG2:contrast-minimum",
-          "WCAG2:contrast-enhanced"
+          "WCAG2:contrast-minimum"
         ],
         "reported": [
           "WCAG2:contrast-minimum",
@@ -10957,10 +10944,9 @@
       ],
       "consistency": null,
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
-          "WCAG2:contrast-enhanced",
-          "WCAG2:contrast-minimum"
+          "WCAG2:contrast-enhanced"
         ],
         "reported": [
           "WCAG2:contrast-enhanced"
