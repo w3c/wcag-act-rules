@@ -15,17 +15,29 @@
 #   description: |
 #     Some text here, which may contain markdown. *
 
-- name: Alfa
+- name: Alfa (fully automated)
   homepage: https://alfa.siteimprove.com/
-  version: 0.56.0
+  version: 0.57.2
   vendor: Siteimprove
   vendorHomepage: https://www.siteimprove.com/
-  uniqueKey: alfa
+  uniqueKey: alfa-automated
   type: Automated tool
   standards:
     - WCAG 2.1 Level A, AA, AAA
     - WAI-ARIA 1.2
-  jsonReport: https://raw.githubusercontent.com/Siteimprove/alfa-act-r/main/reports/alfa-report-new-test-cases.json
+  jsonReport: https://raw.githubusercontent.com/Siteimprove/alfa-act-r/main/reports/alfa-automated-report.json
+  
+  - name: Alfa (semi automated)
+    homepage: https://alfa.siteimprove.com/
+    version: 0.57.2
+    vendor: Siteimprove
+    vendorHomepage: https://www.siteimprove.com/
+    uniqueKey: alfa-assisted
+    type: Semi-automated tool
+    standards:
+      - WCAG 2.1 Level A, AA, AAA
+      - WAI-ARIA 1.2
+    jsonReport: https://raw.githubusercontent.com/Siteimprove/alfa-act-r/main/reports/alfa-assisted-report.json
 
 - name: Axe-core
   homepage: https://www.npmjs.com/package/axe-core/
