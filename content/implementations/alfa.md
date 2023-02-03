@@ -1,6 +1,6 @@
 ---
 layout: act_implementation
-title: "Alfa ACT Implementation"
+title: "Alfa Fully Automated ACT Implementation"
 permalink: /standards-guidelines/act/implementations/alfa/
 ref: /standards-guidelines/act/implementations/alfa/
 implementation_key: alfa
