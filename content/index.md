@@ -59,6 +59,8 @@ The ACT Rules below do not directly relate to WCAG success criteria. They relate
 
 ## Deprecated ACT Rules
 
+The ACT Rules below are have been deprecated and are no longer maintained. For details on why a rule was deprecated see the "Deprecated" section at the top of the rule.
+
 <ul>
 {%- for rule in site.data.wcag-act-rules.rules["act-rules"] %}
   {%- if rule.deprecated == true %}
