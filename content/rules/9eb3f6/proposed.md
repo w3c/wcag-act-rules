@@ -1,5 +1,5 @@
 ---
-title: "DEPRECATED — Image filename is accessible name for image"
+title: "Image filename is accessible name for image"
 permalink: /standards-guidelines/act/rules/9eb3f6/proposed/
 ref: /standards-guidelines/act/rules/9eb3f6/proposed/
 lang: en
@@ -7,6 +7,8 @@ github:
   repository: w3c/wcag-act-rules
   path: content/rules/9eb3f6/proposed.md
 feedbackmail: public-wcag-act@w3.org
+deprecated: |
+  This rule has been deprecated and superseded by Rule [Image accessible name is descriptive](https://www.w3.org/WAI/standards-guidelines/act/rules/qt1vmo/proposed/). This rule is not maintained anymore and should not be used.
 footer: |
   <p><strong>Rule Identifier:</strong> 9eb3f6</p>
   <p><strong>Date:</strong> Updated 14 November 2022</p>

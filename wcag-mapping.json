@@ -388,7 +388,7 @@
       "proposed": true
     },
     {
-      "title": "DEPRECATED — Image filename is accessible name for image",
+      "title": "Image filename is accessible name for image",
       "permalink": "/standards-guidelines/act/rules/9eb3f6/proposed/",
       "successCriteria": [
         "non-text-content"
@@ -397,26 +397,29 @@
         "G94",
         "G95"
       ],
-      "proposed": true
+      "proposed": true,
+      "deprecated": true
     },
     {
-      "title": "DEPRECATED — Video element visual content has description track",
+      "title": "Video element visual content has description track",
       "permalink": "/standards-guidelines/act/rules/f196ce/proposed/",
       "successCriteria": [],
       "wcagTechniques": [
         "G78",
         "H96"
       ],
-      "proposed": true
+      "proposed": true,
+      "deprecated": true
     },
     {
-      "title": "DEPRECATED — Video element visual-only content has description track",
+      "title": "Video element visual-only content has description track",
       "permalink": "/standards-guidelines/act/rules/ac7dc6/proposed/",
       "successCriteria": [],
       "wcagTechniques": [
         "H96"
       ],
-      "proposed": true
+      "proposed": true,
+      "deprecated": true
     },
     {
       "title": "Device motion based changes to the content can also be created from the user interface",

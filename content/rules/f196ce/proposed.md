@@ -1,5 +1,5 @@
 ---
-title: "DEPRECATED — Video element visual content has description track"
+title: "Video element visual content has description track"
 permalink: /standards-guidelines/act/rules/f196ce/proposed/
 ref: /standards-guidelines/act/rules/f196ce/proposed/
 lang: en
@@ -15,6 +15,8 @@ footer: |
   
   <p><strong>Assets:</strong> Test cases use assets from the following sources: Rabbit video is © copyright 2008, Blender Foundation / <a href="https://www.bigbuckbunny.org">www.bigbuckbunny.org</a></p>
 proposed: true
+deprecated: |
+  This rule has been deprecated as descriptions tracks were removed in [#1665](https://github.com/act-rules/act-rules.github.io/pull/1665) as a way to provide video alternative. This rule is not maintained anymore and should not be used.
 rule_meta:
   id: f196ce
   name: "DEPRECATED — Video element visual content has description track"
