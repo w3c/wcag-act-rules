@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 5c01ea</p>
-  <p><strong>Date:</strong> Updated 26 January 2023</p>
+  <p><strong>Date:</strong> Updated 7 February 2023</p>
   <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/Jym77">Jean-Yves Moyen</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
   
@@ -21,7 +21,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that WAI-ARIA states or properties are allowed for the element they are specified on.
-  last_modified: 26 January 2023
+  last_modified: 7 February 2023
 ---
 
 ## Applicability
@@ -84,7 +84,7 @@ Assessing the value of the attribute is out of scope for this rule.
       </ul></li>
     </ul>
   </details></li>
-  <li>Accessibility Requirements have no or unknown mapping.</li>
+  <li>This rule is <strong>not required</strong> for conformance to WCAG 2.1 at any level.</li>
   <li><details>
     <summary><span>1.3.1 Info and Relationships (Level A)</span></summary>
     <ul>

@@ -7,6 +7,7 @@
         "identify-input-purpose"
       ],
       "wcagTechniques": [],
+      "deprecated": false,
       "proposed": false
     },
     {
@@ -16,6 +17,7 @@
         "name-role-value"
       ],
       "wcagTechniques": [],
+      "deprecated": false,
       "proposed": false
     },
     {
@@ -23,6 +25,7 @@
       "permalink": "/standards-guidelines/act/rules/46ca7f/",
       "successCriteria": [],
       "wcagTechniques": [],
+      "deprecated": false,
       "proposed": false
     },
     {
@@ -32,6 +35,7 @@
         "name-role-value"
       ],
       "wcagTechniques": [],
+      "deprecated": false,
       "proposed": false
     },
     {
@@ -43,6 +47,7 @@
       "wcagTechniques": [
         "H58"
       ],
+      "deprecated": false,
       "proposed": false
     },
     {
@@ -52,6 +57,7 @@
         "name-role-value"
       ],
       "wcagTechniques": [],
+      "deprecated": false,
       "proposed": false
     },
     {
@@ -61,6 +67,7 @@
         "name-role-value"
       ],
       "wcagTechniques": [],
+      "deprecated": false,
       "proposed": false
     },
     {
@@ -72,6 +79,7 @@
       "wcagTechniques": [
         "H43"
       ],
+      "deprecated": false,
       "proposed": false
     },
     {
@@ -83,6 +91,7 @@
       "wcagTechniques": [
         "H57"
       ],
+      "deprecated": false,
       "proposed": false
     },
     {
@@ -95,6 +104,7 @@
         "G88",
         "H25"
       ],
+      "deprecated": false,
       "proposed": false
     },
     {
@@ -104,6 +114,7 @@
         "language-of-page"
       ],
       "wcagTechniques": [],
+      "deprecated": false,
       "proposed": false
     },
     {
@@ -115,6 +126,7 @@
       "wcagTechniques": [
         "H57"
       ],
+      "deprecated": false,
       "proposed": false
     },
     {
@@ -128,6 +140,7 @@
         "G94",
         "G95"
       ],
+      "deprecated": false,
       "proposed": false
     },
     {
@@ -140,6 +153,7 @@
         "G94",
         "G95"
       ],
+      "deprecated": false,
       "proposed": false
     },
     {
@@ -149,6 +163,7 @@
         "text-spacing"
       ],
       "wcagTechniques": [],
+      "deprecated": false,
       "proposed": false
     },
     {
@@ -158,6 +173,7 @@
         "text-spacing"
       ],
       "wcagTechniques": [],
+      "deprecated": false,
       "proposed": false
     },
     {
@@ -172,6 +188,7 @@
       "wcagTechniques": [
         "G91"
       ],
+      "deprecated": false,
       "proposed": false
     },
     {
@@ -186,6 +203,7 @@
         "G110",
         "H76"
       ],
+      "deprecated": false,
       "proposed": false
     },
     {
@@ -195,6 +213,7 @@
         "resize-text"
       ],
       "wcagTechniques": [],
+      "deprecated": false,
       "proposed": false
     },
     {
@@ -204,6 +223,7 @@
         "non-text-content"
       ],
       "wcagTechniques": [],
+      "deprecated": false,
       "proposed": false
     },
     {
@@ -213,6 +233,7 @@
         "non-text-content"
       ],
       "wcagTechniques": [],
+      "deprecated": false,
       "proposed": false
     },
     {
@@ -222,6 +243,7 @@
         "text-spacing"
       ],
       "wcagTechniques": [],
+      "deprecated": false,
       "proposed": false
     },
     {
@@ -232,6 +254,7 @@
         "name-role-value"
       ],
       "wcagTechniques": [],
+      "deprecated": false,
       "proposed": true
     },
     {
@@ -241,6 +264,7 @@
         "info-and-relationships"
       ],
       "wcagTechniques": [],
+      "deprecated": false,
       "proposed": true
     },
     {
@@ -250,6 +274,7 @@
         "info-and-relationships"
       ],
       "wcagTechniques": [],
+      "deprecated": false,
       "proposed": true
     },
     {
@@ -260,6 +285,7 @@
         "name-role-value"
       ],
       "wcagTechniques": [],
+      "deprecated": false,
       "proposed": true
     },
     {
@@ -272,6 +298,7 @@
       "wcagTechniques": [
         "ARIA5"
       ],
+      "deprecated": false,
       "proposed": true
     },
     {
@@ -283,6 +310,7 @@
       "wcagTechniques": [
         "H94"
       ],
+      "deprecated": false,
       "proposed": true
     },
     {
@@ -294,6 +322,7 @@
       "wcagTechniques": [
         "G69"
       ],
+      "deprecated": false,
       "proposed": true
     },
     {
@@ -305,6 +334,7 @@
       "wcagTechniques": [
         "G158"
       ],
+      "deprecated": false,
       "proposed": true
     },
     {
@@ -312,6 +342,7 @@
       "permalink": "/standards-guidelines/act/rules/2eb176/proposed/",
       "successCriteria": [],
       "wcagTechniques": [],
+      "deprecated": false,
       "proposed": true
     },
     {
@@ -319,6 +350,7 @@
       "permalink": "/standards-guidelines/act/rules/afb423/proposed/",
       "successCriteria": [],
       "wcagTechniques": [],
+      "deprecated": false,
       "proposed": true
     },
     {
@@ -332,6 +364,7 @@
         "G170",
         "G171"
       ],
+      "deprecated": false,
       "proposed": true
     },
     {
@@ -341,6 +374,7 @@
       "wcagTechniques": [
         "G170"
       ],
+      "deprecated": false,
       "proposed": true
     },
     {
@@ -350,6 +384,7 @@
       "wcagTechniques": [
         "G60"
       ],
+      "deprecated": false,
       "proposed": true
     },
     {
@@ -359,6 +394,7 @@
       "wcagTechniques": [
         "SCR28"
       ],
+      "deprecated": false,
       "proposed": true
     },
     {
@@ -374,6 +410,7 @@
         "H69",
         "SCR28"
       ],
+      "deprecated": false,
       "proposed": true
     },
     {
@@ -385,6 +422,7 @@
       "wcagTechniques": [
         "G96"
       ],
+      "deprecated": false,
       "proposed": true
     },
     {
@@ -397,8 +435,8 @@
         "G94",
         "G95"
       ],
-      "proposed": true,
-      "deprecated": true
+      "deprecated": true,
+      "proposed": true
     },
     {
       "title": "Video element visual content has description track",
@@ -408,8 +446,8 @@
         "G78",
         "H96"
       ],
-      "proposed": true,
-      "deprecated": true
+      "deprecated": true,
+      "proposed": true
     },
     {
       "title": "Video element visual-only content has description track",
@@ -418,8 +456,8 @@
       "wcagTechniques": [
         "H96"
       ],
-      "proposed": true,
-      "deprecated": true
+      "deprecated": true,
+      "proposed": true
     },
     {
       "title": "Device motion based changes to the content can also be created from the user interface",
@@ -428,6 +466,7 @@
         "motion-actuation"
       ],
       "wcagTechniques": [],
+      "deprecated": false,
       "proposed": true
     },
     {
@@ -437,6 +476,7 @@
         "motion-actuation"
       ],
       "wcagTechniques": [],
+      "deprecated": false,
       "proposed": true
     },
     {
@@ -444,6 +484,7 @@
       "permalink": "/standards-guidelines/act/rules/b40fd1/proposed/",
       "successCriteria": [],
       "wcagTechniques": [],
+      "deprecated": false,
       "proposed": true
     },
     {
@@ -455,6 +496,7 @@
         "G123",
         "G124"
       ],
+      "deprecated": false,
       "proposed": true
     },
     {
@@ -464,6 +506,7 @@
       "wcagTechniques": [
         "H69"
       ],
+      "deprecated": false,
       "proposed": true
     },
     {
@@ -473,6 +516,7 @@
         "focus-visible"
       ],
       "wcagTechniques": [],
+      "deprecated": false,
       "proposed": true
     },
     {
@@ -485,6 +529,7 @@
       "wcagTechniques": [
         "ARIA5"
       ],
+      "deprecated": false,
       "proposed": true
     },
     {
@@ -494,6 +539,7 @@
         "error-identification"
       ],
       "wcagTechniques": [],
+      "deprecated": false,
       "proposed": true
     },
     {
@@ -505,6 +551,7 @@
       "wcagTechniques": [
         "G21"
       ],
+      "deprecated": false,
       "proposed": true
     },
     {
@@ -512,6 +559,7 @@
       "permalink": "/standards-guidelines/act/rules/ebe86a/proposed/",
       "successCriteria": [],
       "wcagTechniques": [],
+      "deprecated": false,
       "proposed": true
     },
     {
@@ -519,6 +567,7 @@
       "permalink": "/standards-guidelines/act/rules/a1b64e/proposed/",
       "successCriteria": [],
       "wcagTechniques": [],
+      "deprecated": false,
       "proposed": true
     },
     {
@@ -530,6 +579,7 @@
       "wcagTechniques": [
         "G131"
       ],
+      "deprecated": false,
       "proposed": true
     },
     {
@@ -541,6 +591,7 @@
       "wcagTechniques": [
         "H42"
       ],
+      "deprecated": false,
       "proposed": true
     },
     {
@@ -550,6 +601,7 @@
         "headings-and-labels"
       ],
       "wcagTechniques": [],
+      "deprecated": false,
       "proposed": true
     },
     {
@@ -561,6 +613,7 @@
       "wcagTechniques": [
         "H58"
       ],
+      "deprecated": false,
       "proposed": true
     },
     {
@@ -571,6 +624,7 @@
         "images-of-text-no-exception"
       ],
       "wcagTechniques": [],
+      "deprecated": false,
       "proposed": true
     },
     {
@@ -582,6 +636,7 @@
       "wcagTechniques": [
         "H57"
       ],
+      "deprecated": false,
       "proposed": true
     },
     {
@@ -594,6 +649,7 @@
         "G88",
         "H25"
       ],
+      "deprecated": false,
       "proposed": true
     },
     {
@@ -605,6 +661,7 @@
       "wcagTechniques": [
         "H93"
       ],
+      "deprecated": false,
       "proposed": true
     },
     {
@@ -614,6 +671,7 @@
         "name-role-value"
       ],
       "wcagTechniques": [],
+      "deprecated": false,
       "proposed": true
     },
     {
@@ -623,6 +681,7 @@
         "name-role-value"
       ],
       "wcagTechniques": [],
+      "deprecated": false,
       "proposed": true
     },
     {
@@ -634,6 +693,7 @@
       "wcagTechniques": [
         "G202"
       ],
+      "deprecated": false,
       "proposed": true
     },
     {
@@ -646,6 +706,7 @@
         "G94",
         "G95"
       ],
+      "deprecated": false,
       "proposed": true
     },
     {
@@ -655,6 +716,7 @@
         "non-text-content"
       ],
       "wcagTechniques": [],
+      "deprecated": false,
       "proposed": true
     },
     {
@@ -665,6 +727,7 @@
         "link-purpose-link-only"
       ],
       "wcagTechniques": [],
+      "deprecated": false,
       "proposed": true
     },
     {
@@ -674,6 +737,7 @@
         "link-purpose-link-only"
       ],
       "wcagTechniques": [],
+      "deprecated": false,
       "proposed": true
     },
     {
@@ -684,6 +748,7 @@
         "link-purpose-link-only"
       ],
       "wcagTechniques": [],
+      "deprecated": false,
       "proposed": true
     },
     {
@@ -693,6 +758,7 @@
         "link-purpose-link-only"
       ],
       "wcagTechniques": [],
+      "deprecated": false,
       "proposed": true
     },
     {
@@ -702,6 +768,7 @@
         "name-role-value"
       ],
       "wcagTechniques": [],
+      "deprecated": false,
       "proposed": true
     },
     {
@@ -716,6 +783,7 @@
         "G110",
         "H76"
       ],
+      "deprecated": false,
       "proposed": true
     },
     {
@@ -725,6 +793,7 @@
         "character-key-shortcuts"
       ],
       "wcagTechniques": [],
+      "deprecated": false,
       "proposed": true
     },
     {
@@ -734,6 +803,7 @@
         "orientation"
       ],
       "wcagTechniques": [],
+      "deprecated": false,
       "proposed": true
     },
     {
@@ -747,6 +817,7 @@
         "ARIA4",
         "G108"
       ],
+      "deprecated": false,
       "proposed": true
     },
     {
@@ -759,6 +830,7 @@
       "wcagTechniques": [
         "G202"
       ],
+      "deprecated": false,
       "proposed": true
     },
     {
@@ -768,6 +840,7 @@
         "info-and-relationships"
       ],
       "wcagTechniques": [],
+      "deprecated": false,
       "proposed": true
     },
     {
@@ -777,6 +850,7 @@
         "pause-stop-hide"
       ],
       "wcagTechniques": [],
+      "deprecated": false,
       "proposed": true
     },
     {
@@ -790,6 +864,7 @@
         "G17",
         "G18"
       ],
+      "deprecated": false,
       "proposed": true
     },
     {
@@ -800,6 +875,7 @@
         "contrast-enhanced"
       ],
       "wcagTechniques": [],
+      "deprecated": false,
       "proposed": true
     },
     {
@@ -813,6 +889,7 @@
         "G93",
         "H95"
       ],
+      "deprecated": false,
       "proposed": true
     },
     {
@@ -824,6 +901,7 @@
         "G93",
         "H95"
       ],
+      "deprecated": false,
       "proposed": true
     },
     {
@@ -831,6 +909,7 @@
       "permalink": "/standards-guidelines/act/rules/ab4d13/proposed/",
       "successCriteria": [],
       "wcagTechniques": [],
+      "deprecated": false,
       "proposed": true
     },
     {
@@ -847,6 +926,7 @@
         "G78",
         "G173"
       ],
+      "deprecated": false,
       "proposed": true
     },
     {
@@ -858,6 +938,7 @@
         "G78",
         "G173"
       ],
+      "deprecated": false,
       "proposed": true
     },
     {
@@ -871,6 +952,7 @@
         "G78",
         "G173"
       ],
+      "deprecated": false,
       "proposed": true
     },
     {
@@ -883,6 +965,7 @@
         "G159",
         "G166"
       ],
+      "deprecated": false,
       "proposed": true
     },
     {
@@ -892,6 +975,7 @@
       "wcagTechniques": [
         "G166"
       ],
+      "deprecated": false,
       "proposed": true
     },
     {
@@ -901,6 +985,7 @@
       "wcagTechniques": [
         "G159"
       ],
+      "deprecated": false,
       "proposed": true
     },
     {
@@ -908,6 +993,7 @@
       "permalink": "/standards-guidelines/act/rules/fd26cf/proposed/",
       "successCriteria": [],
       "wcagTechniques": [],
+      "deprecated": false,
       "proposed": true
     },
     {
@@ -919,6 +1005,7 @@
       "wcagTechniques": [
         "G208"
       ],
+      "deprecated": false,
       "proposed": true
     },
     {
@@ -928,6 +1015,7 @@
         "resize-text"
       ],
       "wcagTechniques": [],
+      "deprecated": false,
       "proposed": true
     }
   ]

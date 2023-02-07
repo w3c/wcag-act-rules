@@ -2,19 +2,19 @@
   "vendor": "LASIGE, Faculdade de Ciências da Universidade de Lisboa",
   "name": "QualWeb",
   "version": "3.0.0",
-  "lastModified": "31 January 2023",
+  "lastModified": "7 February 2023",
   "approvedRules": {
-    "complete": 16,
-    "partial": 3,
+    "complete": 20,
+    "partial": 2,
     "minimal": 0,
-    "inconsistent": 3,
+    "inconsistent": 0,
     "untested": 0
   },
   "proposedRules": {
     "complete": 11,
-    "partial": 7,
+    "partial": 8,
     "minimal": 13,
-    "inconsistent": 18,
+    "inconsistent": 17,
     "untested": 20
   },
   "actRuleMapping": [
@@ -25,7 +25,7 @@
       "procedureNames": [
         "autocomplete attribute has valid value"
       ],
-      "consistency": null,
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -36,7 +36,7 @@
         ]
       },
       "coverage": {
-        "covered": 19,
+        "covered": 20,
         "untested": 1,
         "cantTell": 0,
         "testCaseTotal": 21
@@ -157,7 +157,7 @@
             {
               "procedureName": "autocomplete attribute has valid value",
               "outcomes": [
-                "failed"
+                "passed"
               ]
             }
           ]
@@ -337,7 +337,7 @@
             {
               "procedureName": "autocomplete attribute has valid value",
               "outcomes": [
-                "passed"
+                "inapplicable"
               ]
             }
           ]
@@ -1086,7 +1086,7 @@
             {
               "procedureName": "Element marked as decorative is not exposed",
               "outcomes": [
-                "failed"
+                "passed"
               ]
             }
           ]
@@ -1101,7 +1101,7 @@
             {
               "procedureName": "Element marked as decorative is not exposed",
               "outcomes": [
-                "passed"
+                "failed"
               ]
             }
           ]
@@ -2870,7 +2870,7 @@
       "procedureNames": [
         "Link has accessible name"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -2884,7 +2884,7 @@
         ]
       },
       "coverage": {
-        "covered": 27,
+        "covered": 28,
         "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 28
@@ -3290,7 +3290,7 @@
             {
               "procedureName": "Link has accessible name",
               "outcomes": [
-                "inapplicable"
+                "passed"
               ]
             }
           ]
@@ -3305,7 +3305,7 @@
             {
               "procedureName": "Link has accessible name",
               "outcomes": [
-                "inapplicable"
+                "failed"
               ]
             }
           ]
@@ -4188,7 +4188,7 @@
       "procedureNames": [
         "Element with `aria-hidden` has no focusable content"
       ],
-      "consistency": null,
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -4199,7 +4199,7 @@
         ]
       },
       "coverage": {
-        "covered": 14,
+        "covered": 15,
         "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 15
@@ -4260,7 +4260,7 @@
             {
               "procedureName": "Element with `aria-hidden` has no focusable content",
               "outcomes": [
-                "failed"
+                "passed"
               ]
             }
           ]
@@ -4439,7 +4439,7 @@
       "procedureNames": [
         "Line height in style attributes is not !important"
       ],
-      "consistency": null,
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -4450,7 +4450,7 @@
         ]
       },
       "coverage": {
-        "covered": 20,
+        "covered": 21,
         "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 21
@@ -4721,7 +4721,7 @@
             {
               "procedureName": "Line height in style attributes is not !important",
               "outcomes": [
-                "failed"
+                "inapplicable"
               ]
             }
           ]
@@ -5898,7 +5898,7 @@
       "procedureNames": [
         "ARIA required owned elements"
       ],
-      "consistency": null,
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -5909,7 +5909,7 @@
         ]
       },
       "coverage": {
-        "covered": 11,
+        "covered": 16,
         "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 17
@@ -5925,7 +5925,7 @@
             {
               "procedureName": "ARIA required owned elements",
               "outcomes": [
-                "failed"
+                "passed"
               ]
             }
           ]
@@ -5940,7 +5940,7 @@
             {
               "procedureName": "ARIA required owned elements",
               "outcomes": [
-                "failed"
+                "passed"
               ]
             }
           ]
@@ -5955,7 +5955,7 @@
             {
               "procedureName": "ARIA required owned elements",
               "outcomes": [
-                "failed"
+                "passed"
               ]
             }
           ]
@@ -5970,7 +5970,7 @@
             {
               "procedureName": "ARIA required owned elements",
               "outcomes": [
-                "failed"
+                "passed"
               ]
             }
           ]
@@ -5985,7 +5985,7 @@
             {
               "procedureName": "ARIA required owned elements",
               "outcomes": [
-                "failed"
+                "passed"
               ]
             }
           ]
@@ -6000,7 +6000,7 @@
             {
               "procedureName": "ARIA required owned elements",
               "outcomes": [
-                "failed"
+                "passed"
               ]
             }
           ]
@@ -6105,7 +6105,7 @@
             {
               "procedureName": "ARIA required owned elements",
               "outcomes": [
-                "failed"
+                "passed"
               ]
             }
           ]
@@ -11649,8 +11649,8 @@
         ]
       },
       "coverage": {
-        "covered": 10,
-        "untested": 3,
+        "covered": 11,
+        "untested": 2,
         "cantTell": 0,
         "testCaseTotal": 13
       },
@@ -11695,7 +11695,7 @@
             {
               "procedureName": "`meta` element has no refresh delay (no exception)",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -13392,8 +13392,8 @@
         ]
       },
       "coverage": {
-        "covered": 29,
-        "untested": 1,
+        "covered": 30,
+        "untested": 0,
         "cantTell": 2,
         "testCaseTotal": 34
       },
@@ -13603,7 +13603,7 @@
             {
               "procedureName": "Text has enhanced contrast",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
