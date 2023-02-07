@@ -64,7 +64,7 @@ The ACT Rules below are have been deprecated and are no longer maintained. For d
 <ul>
 {%- for rule in site.data.wcag-act-rules.rules["act-rules"] %}
   {%- if rule.deprecated == true %}
-    <li><a href="{{ rule.permalink | relative_url }}">{{ rule.title }}</a></li>
+    <li><a href="{{ rule.permalink | relative_url }}">{{ rule.title | replace: 'DEPRECATED — ', '' }}</a></li>
   {%- endif %}
 {%- endfor %}
 </ul>
