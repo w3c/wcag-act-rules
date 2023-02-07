@@ -14,8 +14,8 @@
     "complete": 11,
     "partial": 8,
     "minimal": 13,
-    "inconsistent": 17,
-    "untested": 20
+    "inconsistent": 15,
+    "untested": 19
   },
   "actRuleMapping": [
     {
@@ -10625,15 +10625,6 @@
       "testCaseResults": []
     },
     {
-      "ruleId": "9eb3f6",
-      "ruleName": "DEPRECATED — Image filename is accessible name for image",
-      "ruleApproved": false,
-      "procedureNames": [],
-      "consistency": null,
-      "coverage": null,
-      "testCaseResults": []
-    },
-    {
       "ruleId": "0va7u6",
       "ruleName": "HTML images contain no text",
       "ruleApproved": false,
@@ -14880,103 +14871,6 @@
       ]
     },
     {
-      "ruleId": "f196ce",
-      "ruleName": "DEPRECATED — Video element visual content has description track",
-      "ruleApproved": false,
-      "procedureNames": [
-        "video element visual content has description track"
-      ],
-      "consistency": null,
-      "accessibilityRequirements": {
-        "correct": true,
-        "expected": [],
-        "reported": []
-      },
-      "coverage": {
-        "covered": 1,
-        "untested": 0,
-        "cantTell": 4,
-        "testCaseTotal": 5
-      },
-      "testCaseResults": [
-        {
-          "testcaseId": "92f8362bf7b6778410dd0a0f660918794c85df27",
-          "testCaseName": "Passed Example 1",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/f196ce/92f8362bf7b6778410dd0a0f660918794c85df27.html",
-          "testCaseApproved": false,
-          "expected": "passed",
-          "procedureResults": [
-            {
-              "procedureName": "video element visual content has description track",
-              "outcomes": [
-                "cantTell"
-              ]
-            }
-          ]
-        },
-        {
-          "testcaseId": "b6914fc77b6ade8523924e41fb8b7c23850e7f2f",
-          "testCaseName": "Failed Example 1",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/f196ce/b6914fc77b6ade8523924e41fb8b7c23850e7f2f.html",
-          "testCaseApproved": false,
-          "expected": "failed",
-          "procedureResults": [
-            {
-              "procedureName": "video element visual content has description track",
-              "outcomes": [
-                "cantTell"
-              ]
-            }
-          ]
-        },
-        {
-          "testcaseId": "b0ac8ea6b081f130102db50c239cc7e44ea47ec8",
-          "testCaseName": "Inapplicable Example 1",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/f196ce/b0ac8ea6b081f130102db50c239cc7e44ea47ec8.html",
-          "testCaseApproved": false,
-          "expected": "inapplicable",
-          "procedureResults": [
-            {
-              "procedureName": "video element visual content has description track",
-              "outcomes": [
-                "cantTell"
-              ]
-            }
-          ]
-        },
-        {
-          "testcaseId": "9a363fc81b95da9239e38764eb7d4cca4dd8bba6",
-          "testCaseName": "Inapplicable Example 2",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/f196ce/9a363fc81b95da9239e38764eb7d4cca4dd8bba6.html",
-          "testCaseApproved": false,
-          "expected": "inapplicable",
-          "procedureResults": [
-            {
-              "procedureName": "video element visual content has description track",
-              "outcomes": [
-                "inapplicable"
-              ]
-            }
-          ]
-        },
-        {
-          "testcaseId": "91f0cca7d0cc5c6a757f72dbeed84bcc1b79625b",
-          "testCaseName": "Inapplicable Example 3",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/f196ce/91f0cca7d0cc5c6a757f72dbeed84bcc1b79625b.html",
-          "testCaseApproved": false,
-          "expected": "inapplicable",
-          "procedureResults": [
-            {
-              "procedureName": "video element visual content has description track",
-              "outcomes": [
-                "cantTell"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "ruleId": "c3232f",
       "ruleName": "Video element visual-only content has accessible alternative",
       "ruleApproved": false,
@@ -15351,103 +15245,6 @@
           "procedureResults": [
             {
               "procedureName": "video element visual-only content has audio track alternative",
-              "outcomes": [
-                "inapplicable"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "ruleId": "ac7dc6",
-      "ruleName": "DEPRECATED — Video element visual-only content has description track",
-      "ruleApproved": false,
-      "procedureNames": [
-        "video element visual-only content has description track"
-      ],
-      "consistency": null,
-      "accessibilityRequirements": {
-        "correct": true,
-        "expected": [],
-        "reported": []
-      },
-      "coverage": {
-        "covered": 2,
-        "untested": 0,
-        "cantTell": 3,
-        "testCaseTotal": 5
-      },
-      "testCaseResults": [
-        {
-          "testcaseId": "91f0cca7d0cc5c6a757f72dbeed84bcc1b79625b",
-          "testCaseName": "Passed Example 1",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ac7dc6/91f0cca7d0cc5c6a757f72dbeed84bcc1b79625b.html",
-          "testCaseApproved": false,
-          "expected": "passed",
-          "procedureResults": [
-            {
-              "procedureName": "video element visual-only content has description track",
-              "outcomes": [
-                "cantTell"
-              ]
-            }
-          ]
-        },
-        {
-          "testcaseId": "5e6b259c06a9c8ec301cb4654a6b43be5e24527e",
-          "testCaseName": "Failed Example 1",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ac7dc6/5e6b259c06a9c8ec301cb4654a6b43be5e24527e.html",
-          "testCaseApproved": false,
-          "expected": "failed",
-          "procedureResults": [
-            {
-              "procedureName": "video element visual-only content has description track",
-              "outcomes": [
-                "cantTell"
-              ]
-            }
-          ]
-        },
-        {
-          "testcaseId": "92f8362bf7b6778410dd0a0f660918794c85df27",
-          "testCaseName": "Inapplicable Example 1",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ac7dc6/92f8362bf7b6778410dd0a0f660918794c85df27.html",
-          "testCaseApproved": false,
-          "expected": "inapplicable",
-          "procedureResults": [
-            {
-              "procedureName": "video element visual-only content has description track",
-              "outcomes": [
-                "cantTell"
-              ]
-            }
-          ]
-        },
-        {
-          "testcaseId": "dc2a0bf420d21c386d9a7027a888276c07271988",
-          "testCaseName": "Inapplicable Example 2",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ac7dc6/dc2a0bf420d21c386d9a7027a888276c07271988.html",
-          "testCaseApproved": false,
-          "expected": "inapplicable",
-          "procedureResults": [
-            {
-              "procedureName": "video element visual-only content has description track",
-              "outcomes": [
-                "inapplicable"
-              ]
-            }
-          ]
-        },
-        {
-          "testcaseId": "8664da01669e891e6f0aa73cd85e71277961cc4c",
-          "testCaseName": "Inapplicable Example 3",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ac7dc6/8664da01669e891e6f0aa73cd85e71277961cc4c.html",
-          "testCaseApproved": false,
-          "expected": "inapplicable",
-          "procedureResults": [
-            {
-              "procedureName": "video element visual-only content has description track",
               "outcomes": [
                 "inapplicable"
               ]

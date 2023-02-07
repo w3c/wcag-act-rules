@@ -15,7 +15,7 @@
     "partial": 2,
     "minimal": 8,
     "inconsistent": 4,
-    "untested": 39
+    "untested": 36
   },
   "actRuleMapping": [
     {
@@ -10411,15 +10411,6 @@
       "testCaseResults": []
     },
     {
-      "ruleId": "9eb3f6",
-      "ruleName": "DEPRECATED — Image filename is accessible name for image",
-      "ruleApproved": false,
-      "procedureNames": [],
-      "consistency": null,
-      "coverage": null,
-      "testCaseResults": []
-    },
-    {
       "ruleId": "0va7u6",
       "ruleName": "HTML images contain no text",
       "ruleApproved": false,
@@ -13575,15 +13566,6 @@
       "testCaseResults": []
     },
     {
-      "ruleId": "f196ce",
-      "ruleName": "DEPRECATED — Video element visual content has description track",
-      "ruleApproved": false,
-      "procedureNames": [],
-      "consistency": null,
-      "coverage": null,
-      "testCaseResults": []
-    },
-    {
       "ruleId": "c3232f",
       "ruleName": "Video element visual-only content has accessible alternative",
       "ruleApproved": false,
@@ -13604,15 +13586,6 @@
     {
       "ruleId": "d7ba54",
       "ruleName": "Video element visual-only content has audio track alternative",
-      "ruleApproved": false,
-      "procedureNames": [],
-      "consistency": null,
-      "coverage": null,
-      "testCaseResults": []
-    },
-    {
-      "ruleId": "ac7dc6",
-      "ruleName": "DEPRECATED — Video element visual-only content has description track",
       "ruleApproved": false,
       "procedureNames": [],
       "consistency": null,
