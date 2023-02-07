@@ -19,6 +19,11 @@ layout: standalone_resource
   </div>
  </aside>
 
+{%- if page.deprecated %}
+<h2>Deprecated</h2>
+{{ page.deprecated | markdownify }}
+{%- endif %}
+
 <h2>Description</h2>
 {{ page.rule_meta.description | markdownify }}
 
@@ -91,6 +96,7 @@ layout: standalone_resource
 {%- endcapture %}
 {% assign implementationKeys = implementationString | split: "," | compact %}
 
+{% unless page.deprecated %}
 <h2>Implementations</h2>
 {% if implementationKeys.size == 0 %}
   <p>There are currently no known implementations for this rule.
@@ -141,4 +147,5 @@ layout: standalone_resource
     </table>
   </div>
 {% endif %}
+{% endunless %}
 {% endif %}
