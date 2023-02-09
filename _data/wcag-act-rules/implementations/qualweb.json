@@ -12877,9 +12877,9 @@
         ]
       },
       "coverage": {
-        "covered": 27,
-        "untested": 0,
-        "cantTell": 3,
+        "covered": 26,
+        "untested": 2,
+        "cantTell": 2,
         "testCaseTotal": 32
       },
       "testCaseResults": [
@@ -12914,16 +12914,16 @@
           ]
         },
         {
-          "testcaseId": "b5914a5edae45c5c93e1ec30b9a22afe70f504ee",
+          "testcaseId": "dc170fd015758b62d8e0141e086893a116ee724e",
           "testCaseName": "Passed Example 3",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/b5914a5edae45c5c93e1ec30b9a22afe70f504ee.html",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/dc170fd015758b62d8e0141e086893a116ee724e.html",
           "testCaseApproved": false,
           "expected": "passed",
           "procedureResults": [
             {
               "procedureName": "Text has minimum contrast",
               "outcomes": [
-                "cantTell"
+                "untested"
               ]
             }
           ]
@@ -13019,16 +13019,16 @@
           ]
         },
         {
-          "testcaseId": "dc18c6afcd1214d85c49b107eb89c60fbc12ee99",
+          "testcaseId": "173cb00f20c52f35970c322dedf7bc11450b70c1",
           "testCaseName": "Passed Example 10",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/dc18c6afcd1214d85c49b107eb89c60fbc12ee99.html",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/173cb00f20c52f35970c322dedf7bc11450b70c1.html",
           "testCaseApproved": false,
           "expected": "passed",
           "procedureResults": [
             {
               "procedureName": "Text has minimum contrast",
               "outcomes": [
-                "inapplicable"
+                "untested"
               ]
             }
           ]
@@ -13383,8 +13383,8 @@
         ]
       },
       "coverage": {
-        "covered": 30,
-        "untested": 0,
+        "covered": 29,
+        "untested": 1,
         "cantTell": 2,
         "testCaseTotal": 34
       },
@@ -13510,16 +13510,16 @@
           ]
         },
         {
-          "testcaseId": "dc18c6afcd1214d85c49b107eb89c60fbc12ee99",
+          "testcaseId": "173cb00f20c52f35970c322dedf7bc11450b70c1",
           "testCaseName": "Passed Example 9",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/dc18c6afcd1214d85c49b107eb89c60fbc12ee99.html",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/173cb00f20c52f35970c322dedf7bc11450b70c1.html",
           "testCaseApproved": false,
           "expected": "passed",
           "procedureResults": [
             {
               "procedureName": "Text has enhanced contrast",
               "outcomes": [
-                "inapplicable"
+                "untested"
               ]
             }
           ]
