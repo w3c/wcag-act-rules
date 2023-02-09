@@ -27,7 +27,7 @@ The ACT Rules in this section directly relate to WCAG 2 success criteria. These 
 
 <ul>
 {%- for rule in site.data.wcag-act-rules.rules["act-rules"] %}
-  {%- if rule.proposed == false %}
+  {%- if rule.proposed == false and rule.deprecated != true %}
     <li><a href="{{ rule.permalink | relative_url }}">{{ rule.title }}</a></li>
   {%- endif %}
 {%- endfor %}
@@ -39,7 +39,7 @@ The ACT Rules in this section directly relate to WCAG 2 success criteria. These 
 
 <ul>
 {%- for rule in site.data.wcag-act-rules.rules["act-rules"] %}
-  {%- if rule.proposed == true and rule.successCriteria.size > 0 %}
+  {%- if rule.proposed == true and rule.successCriteria.size > 0 and rule.deprecated != true %}
     <li><a href="{{ rule.permalink | relative_url }}">{{ rule.title }}</a></li>
   {%- endif %}
 {%- endfor %}
@@ -51,8 +51,20 @@ The ACT Rules below do not directly relate to WCAG success criteria. They relate
 
 <ul>
 {%- for rule in site.data.wcag-act-rules.rules["act-rules"] %}
-  {%- if rule.successCriteria.size == 0 %}
+  {%- if rule.successCriteria.size == 0 and rule.deprecated != true %}
     <li><a href="{{ rule.permalink | relative_url }}">{{ rule.title }}</a></li>
+  {%- endif %}
+{%- endfor %}
+</ul>
+
+## Deprecated ACT Rules
+
+The ACT Rules below are deprecated and are no longer maintained. For details on why a rule was deprecated see the "Deprecated" section at the top of the rule.
+
+<ul>
+{%- for rule in site.data.wcag-act-rules.rules["act-rules"] %}
+  {%- if rule.deprecated == true %}
+    <li><a href="{{ rule.permalink | relative_url }}">{{ rule.title | replace: 'DEPRECATED — ', '' }}</a></li>
   {%- endif %}
 {%- endfor %}
 </ul>
