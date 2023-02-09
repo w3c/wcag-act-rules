@@ -11,11 +11,11 @@
     "untested": 0
   },
   "proposedRules": {
-    "complete": 15,
-    "partial": 4,
+    "complete": 14,
+    "partial": 5,
     "minimal": 0,
     "inconsistent": 0,
-    "untested": 50
+    "untested": 47
   },
   "actRuleMapping": [
     {
@@ -37,9 +37,9 @@
       },
       "coverage": {
         "covered": 20,
-        "untested": 0,
+        "untested": 1,
         "cantTell": 0,
-        "testCaseTotal": 20
+        "testCaseTotal": 21
       },
       "testCaseResults": [
         {
@@ -338,6 +338,21 @@
               "procedureName": "AccHtmlAutocompleteInvalid",
               "outcomes": [
                 "passed"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "efcd5df49b39506dac34a310f4b8bc0df71716d3",
+          "testCaseName": "Passed Example 9",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/73f2c2/efcd5df49b39506dac34a310f4b8bc0df71716d3.html",
+          "testCaseApproved": false,
+          "expected": "passed",
+          "procedureResults": [
+            {
+              "procedureName": "AccHtmlAutocompleteInvalid",
+              "outcomes": [
+                "untested"
               ]
             }
           ]
@@ -7952,15 +7967,6 @@
       "testCaseResults": []
     },
     {
-      "ruleId": "9eb3f6",
-      "ruleName": "DEPRECATED — Image filename is accessible name for image",
-      "ruleApproved": false,
-      "procedureNames": [],
-      "consistency": null,
-      "coverage": null,
-      "testCaseResults": []
-    },
-    {
       "ruleId": "0va7u6",
       "ruleName": "HTML images contain no text",
       "ruleApproved": false,
@@ -9366,7 +9372,7 @@
       "procedureNames": [
         "AccHtmlContrastMinimum"
       ],
-      "consistency": "complete",
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -9378,8 +9384,8 @@
         ]
       },
       "coverage": {
-        "covered": 32,
-        "untested": 0,
+        "covered": 30,
+        "untested": 2,
         "cantTell": 0,
         "testCaseTotal": 32
       },
@@ -9415,16 +9421,16 @@
           ]
         },
         {
-          "testcaseId": "b5914a5edae45c5c93e1ec30b9a22afe70f504ee",
+          "testcaseId": "dc170fd015758b62d8e0141e086893a116ee724e",
           "testCaseName": "Passed Example 3",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/b5914a5edae45c5c93e1ec30b9a22afe70f504ee.html",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/dc170fd015758b62d8e0141e086893a116ee724e.html",
           "testCaseApproved": false,
           "expected": "passed",
           "procedureResults": [
             {
               "procedureName": "AccHtmlContrastMinimum",
               "outcomes": [
-                "passed"
+                "untested"
               ]
             }
           ]
@@ -9520,16 +9526,16 @@
           ]
         },
         {
-          "testcaseId": "dc18c6afcd1214d85c49b107eb89c60fbc12ee99",
+          "testcaseId": "173cb00f20c52f35970c322dedf7bc11450b70c1",
           "testCaseName": "Passed Example 10",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/dc18c6afcd1214d85c49b107eb89c60fbc12ee99.html",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/173cb00f20c52f35970c322dedf7bc11450b70c1.html",
           "testCaseApproved": false,
           "expected": "passed",
           "procedureResults": [
             {
               "procedureName": "AccHtmlContrastMinimum",
               "outcomes": [
-                "passed"
+                "untested"
               ]
             }
           ]
@@ -9884,8 +9890,8 @@
         ]
       },
       "coverage": {
-        "covered": 32,
-        "untested": 2,
+        "covered": 31,
+        "untested": 3,
         "cantTell": 0,
         "testCaseTotal": 34
       },
@@ -10011,16 +10017,16 @@
           ]
         },
         {
-          "testcaseId": "dc18c6afcd1214d85c49b107eb89c60fbc12ee99",
+          "testcaseId": "173cb00f20c52f35970c322dedf7bc11450b70c1",
           "testCaseName": "Passed Example 9",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/dc18c6afcd1214d85c49b107eb89c60fbc12ee99.html",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/173cb00f20c52f35970c322dedf7bc11450b70c1.html",
           "testCaseApproved": false,
           "expected": "passed",
           "procedureResults": [
             {
               "procedureName": "AccHtmlContrastEnhanced",
               "outcomes": [
-                "passed"
+                "untested"
               ]
             }
           ]
@@ -10448,15 +10454,6 @@
       "testCaseResults": []
     },
     {
-      "ruleId": "f196ce",
-      "ruleName": "DEPRECATED — Video element visual content has description track",
-      "ruleApproved": false,
-      "procedureNames": [],
-      "consistency": null,
-      "coverage": null,
-      "testCaseResults": []
-    },
-    {
       "ruleId": "c3232f",
       "ruleName": "Video element visual-only content has accessible alternative",
       "ruleApproved": false,
@@ -10477,15 +10474,6 @@
     {
       "ruleId": "d7ba54",
       "ruleName": "Video element visual-only content has audio track alternative",
-      "ruleApproved": false,
-      "procedureNames": [],
-      "consistency": null,
-      "coverage": null,
-      "testCaseResults": []
-    },
-    {
-      "ruleId": "ac7dc6",
-      "ruleName": "DEPRECATED — Video element visual-only content has description track",
       "ruleApproved": false,
       "procedureNames": [],
       "consistency": null,

@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 73f2c2</p>
-  <p><strong>Date:</strong> Updated 11 November 2022</p>
+  <p><strong>Date:</strong> Updated 2 February 2023</p>
   <p><strong>Authors:</strong> <a href="https://github.com/ajanec01">Aron Janecki</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -19,7 +19,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that the HTML `autocomplete` attribute has a correct value.
-  last_modified: 11 November 2022
+  last_modified: 2 February 2023
   scs_tested:
     - handle: Identify Input Purpose
       num: 1.3.5
@@ -43,7 +43,8 @@ Each test target's `autocomplete` [attribute value][] is a [space separated][] l
 1. An optional token that starts with "section-"; then
 2. An optional token of either "shipping" or "billing"; then
 3. An optional token of either "home", "work", "mobile", "fax" or "pager", only if the last token is "email", "impp", "tel" or "tel-\*"; then
-4. A required token from the [correct autocomplete field][].
+4. A required token from the [correct autocomplete field][]; then
+5. An optional "webauthn" token.
 
 ## Assumptions
 
@@ -191,6 +192,19 @@ This `autocomplete` [attribute value][] only has the required token "bday-day". 
 
 ```html
 <label>Birthday day<input name="bdayday" type="tel" autocomplete="bday-day"/></label>
+```
+
+#### Passed Example 9
+
+<a class="example-link" title="Passed Example 9" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/73f2c2/efcd5df49b39506dac34a310f4b8bc0df71716d3.html">Open in a new tab</a>
+
+This `autocomplete` [attribute value][] has the required token "current-password", followed by the optional "webauthn" token.
+
+```html
+<label>
+	Password
+	<input type="password" autocomplete="current-password webauthn" />
+</label>
 ```
 
 ### Failed

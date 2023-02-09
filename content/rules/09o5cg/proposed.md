@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 09o5cg</p>
-  <p><strong>Date:</strong> Updated 26 January 2023</p>
+  <p><strong>Date:</strong> Updated 9 February 2023</p>
   <p><strong>Authors:</strong> <a href="https://github.com/Jym77">Jean-Yves Moyen</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -19,7 +19,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that the highest possible contrast of every text character with its background meets the enhanced contrast requirement.
-  last_modified: 26 January 2023
+  last_modified: 9 February 2023
   scs_tested:
     - handle: Contrast (Enhanced)
       num: 1.4.6
@@ -30,9 +30,8 @@ rule_meta:
 
 This rule applies to any [visible][] character in a [text node][] that is a [child][] in the [flat tree][] of an [HTML element][], except if the [text node][] has an [ancestor][] in the [flat tree][] for which at least one of the following is true:
 
-- **disabled widget**: the ancestor is a [inheriting semantic][] `widget` that is [disabled][]; or
-- **disabled label**: the ancestor is used in the [accessible name][] of a [inheriting semantic][] `widget` that is [disabled][]; or
-- **disabled group**: the ancestor has a [semantic role][] of `group` and is [disabled][].
+- **disabled ancestor**: the ancestor is an [inheriting semantic][] `group` or `widget` that is [disabled][]; or
+- **disabled label**: the ancestor is used in the [accessible name][] of an [inheriting semantic][] `widget` that is [disabled][].
 
 ## Expectation
 
@@ -240,23 +239,19 @@ This dark gray text has a contrast ratio of 12.6:1 on the white background in a 
 
 #### Passed Example 9
 
-<a class="example-link" title="Passed Example 9" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/dc18c6afcd1214d85c49b107eb89c60fbc12ee99.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 9" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/173cb00f20c52f35970c322dedf7bc11450b70c1.html">Open in a new tab</a>
 
-This text is part of a widget because it is a child of a `button` element. The text has the default
-browser button text color on the default browser button background color. By default, this is black text on a
-light gray background with a contrast ratio of 18.26:1
+This text has the [default user agent link text and background color](https://html.spec.whatwg.org/multipage/rendering.html#phrasing-content-3), of `#0000EE` and white. This results in a contrast ratio of 9.39:1.
 
 ```html
-<button>My button!</button>
+<a href="https://w3c.org/">W3C</a>
 ```
 
 #### Passed Example 10
 
 <a class="example-link" title="Passed Example 10" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/668856825e6d3b4e480005acf97723c7b1004ba3.html">Open in a new tab</a>
 
-This text is part of a widget because it is a child of an element with the `role` attribute set to `button`.
-The text has the default browser text color on the default browser background color. By default, this is
-black text on a white background with a contrast ratio of 21:1
+This text is using the default user agent text color and background color. By default, this is black text on a white background with a contrast ratio of 21:1
 
 ```html
 <div role="button">My button!</div>
@@ -402,7 +397,7 @@ This semi-transparent gray text has a contrast ratio between 2.6:1 and 5.4:1 on 
 
 <a class="example-link" title="Failed Example 11" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/a34d15d4bb754339339996802d1bc32d464643da.html">Open in a new tab</a>
 
-The first `p` element has a contrast ratio of 12.6:1. The second `p` element, which contains an example of the Helvetica font, has a contrast ratio of 6.4:1. Because this provides information, and not only for aesthetic purposes, this is not considered [purely decorative][].
+The first `p` element has a contrast ratio of 12.6:1. The second `p` element, which contains an example of the Helvetica font, has a contrast ratio of 6.4:1. Because this provides information, and is not only for aesthetic purposes, this is not considered [purely decorative][].
 
 ```html
 <p style="color: #333; background: #FFF;">
@@ -417,7 +412,7 @@ The first `p` element has a contrast ratio of 12.6:1. The second `p` element, wh
 
 <a class="example-link" title="Failed Example 12" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/316b0c7fccdbe8a47716447a9fe2ca197c8358af.html">Open in a new tab</a>
 
-This text is part of a widget because it is a child of a `button` element. The button text has a contrast ratio of 6.4:1.
+This text in a `button` element has a contrast ratio of 6.4:1.
 
 ```html
 <button style="color: #555; background: #EEE;">My button!</button>
@@ -427,9 +422,7 @@ This text is part of a widget because it is a child of a `button` element. The b
 
 <a class="example-link" title="Failed Example 13" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/2e81c3e60722202d2e92089a0695d74e8b49cdaa.html">Open in a new tab</a>
 
-This text is part of a widget because it is a child of an element with the `role` attribute set to `button`.
-The button text has a contrast
-ratio of 6.4:1.
+This text in a [semantic button][semantic role] has a contrast ratio of 6.4:1.
 
 ```html
 <div role="button" style="color: #555; background: #EEE;">My button!</div>
@@ -653,11 +646,7 @@ The colors of all the pixels of a [visible](#visible) character in a [text node]
 
 ### Highest Possible Contrast {#highest-possible-contrast}
 
-The highest value of the [contrast ratios](https://www.w3.org/TR/WCAG21/#dfn-contrast-ratio) between two sets of colors (A and B).
-To calculate the highest value, find the colors in each set with the largest and smallest 
-[relative luminance](https://www.w3.org/TR/WCAG21/#dfn-relative-luminance) (`A-lum-max`, `A-lum-min`, `B-lum-max`, `B-lum-min`). The
-highest possible contrast is then the larger of the [contrast ratios](https://www.w3.org/TR/WCAG21/#dfn-contrast-ratio)
-of `A-lum-max` with `B-lum-min` versus `A-lum-min` with `B-lum-max`.
+The highest value of the [contrast ratios][contrast ratio] between two sets of colors (A and B). That is, the highest [contrast ratio][] between either the darkest color in A and the brightest color in B, or the brightest color in A and the darkest color in B.
 
 ### Implicit Semantic Role {#implicit-role}
 
@@ -771,6 +760,7 @@ The _WAI ARIA Specifications_ group both the WAI ARIA W3C Recommendation and ARI
 [child]: https://dom.spec.whatwg.org/#concept-tree-child 'DOM, child, 2020/07/23'
 [comma separated]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#comma-separated-tokens 'HTML Specification of Comma Separated Tokens'
 [computed]: https://www.w3.org/TR/css-cascade/#computed-value 'CSS definition of computed value'
+[contrast ratio]: https://www.w3.org/TR/WCAG21/#dfn-contrast-ratio 'WCAG definition of Contrast Ratio'
 [disabled pseudo-class]: https://drafts.csswg.org/selectors/#disabled-pseudo "CSS Selectors Level 4 (Editor's Draft), definition of the :disabled pseudo-class"
 [disabled]: #disabled-element 'Definition of Disabled'
 [doc-biblioref]: https://www.w3.org/TR/dpub-aria-1.0/#doc-biblioref 'DPUB ARIA Definition of doc-biblioref'
