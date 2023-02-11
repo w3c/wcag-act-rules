@@ -2,7 +2,7 @@
   "vendor": "Deque Systems",
   "name": "Axe DevTools Pro",
   "version": "4.37.1",
-  "lastModified": "9 February 2023",
+  "lastModified": "11 February 2023",
   "approvedRules": {
     "complete": 22,
     "partial": 0,
@@ -11,8 +11,8 @@
     "untested": 0
   },
   "proposedRules": {
-    "complete": 18,
-    "partial": 6,
+    "complete": 20,
+    "partial": 4,
     "minimal": 8,
     "inconsistent": 8,
     "untested": 26
@@ -14349,7 +14349,7 @@
       "procedureNames": [
         "color-contrast"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -14360,9 +14360,9 @@
         ]
       },
       "coverage": {
-        "covered": 24,
-        "untested": 2,
-        "cantTell": 6,
+        "covered": 25,
+        "untested": 0,
+        "cantTell": 7,
         "testCaseTotal": 32
       },
       "testCaseResults": [
@@ -14406,7 +14406,7 @@
             {
               "procedureName": "color-contrast",
               "outcomes": [
-                "untested"
+                "cantTell"
               ]
             }
           ]
@@ -14511,7 +14511,7 @@
             {
               "procedureName": "color-contrast",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -14857,7 +14857,7 @@
         "color-contrast-enhanced",
         "color-contrast"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -14869,8 +14869,8 @@
         ]
       },
       "coverage": {
-        "covered": 26,
-        "untested": 1,
+        "covered": 27,
+        "untested": 0,
         "cantTell": 7,
         "testCaseTotal": 34
       },
@@ -15053,13 +15053,13 @@
             {
               "procedureName": "color-contrast-enhanced",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             },
             {
               "procedureName": "color-contrast",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
