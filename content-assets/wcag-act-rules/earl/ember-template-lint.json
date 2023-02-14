@@ -4,7 +4,7 @@
   "shortDesc": "Linter for Ember or Handlebars templates.",
   "release": {
     "@type": "Version",
-    "revision": "4.16.1"
+    "revision": "5.5.1"
   },
   "testRuns": [
     {
@@ -172,13 +172,21 @@
         "TestSubject",
         "WebPage"
       ],
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/73f2c2/efcd5df49b39506dac34a310f4b8bc0df71716d3.html",
+      "assertions": []
+    },
+    {
+      "@type": [
+        "TestSubject",
+        "WebPage"
+      ],
       "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/97a4e1/a4cc71b0434f71f4ea0069c409f73e0207dfb403.html",
       "assertions": [
         {
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -225,7 +233,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -246,7 +254,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -267,7 +275,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -335,7 +343,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -356,7 +364,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -377,7 +385,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -419,7 +427,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -487,7 +495,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -508,7 +516,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -529,7 +537,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -782,7 +790,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -803,7 +811,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -824,7 +832,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -845,7 +853,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -892,7 +900,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -913,7 +921,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -986,7 +994,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -1007,7 +1015,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -1028,7 +1036,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -1049,7 +1057,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -1070,7 +1078,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -1112,7 +1120,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -1153,13 +1161,77 @@
         "TestSubject",
         "WebPage"
       ],
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/e086e5/d9ee6c2ae6da41521bd4ba0bf25c4b6bcd253f37.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "result": {
+            "@type": "TestResult",
+            "outcome": "earl:passed"
+          },
+          "test": {
+            "@type": "TestCase",
+            "title": "require-input-label"
+          },
+          "assertedBy": "_:assertor"
+        }
+      ]
+    },
+    {
+      "@type": [
+        "TestSubject",
+        "WebPage"
+      ],
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/e086e5/bd816c3ef10b8982f18411e1623887d2444d7311.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "result": {
+            "@type": "TestResult",
+            "outcome": "earl:failed"
+          },
+          "test": {
+            "@type": "TestCase",
+            "title": "require-input-label",
+            "isPartOf": [
+              "WCAG2:info-and-relationships",
+              "WCAG2:labels-or-instructions",
+              "WCAG2:name-role-value"
+            ]
+          },
+          "assertedBy": "_:assertor"
+        },
+        {
+          "@type": "Assertion",
+          "result": {
+            "@type": "TestResult",
+            "outcome": "earl:failed"
+          },
+          "test": {
+            "@type": "TestCase",
+            "title": "require-input-label",
+            "isPartOf": [
+              "WCAG2:info-and-relationships",
+              "WCAG2:labels-or-instructions",
+              "WCAG2:name-role-value"
+            ]
+          },
+          "assertedBy": "_:assertor"
+        }
+      ]
+    },
+    {
+      "@type": [
+        "TestSubject",
+        "WebPage"
+      ],
       "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b5c3f8/f8214944f374b25c3ce42bd92a4304d38a2309dc.html",
       "assertions": [
         {
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -1228,11 +1300,14 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:failed"
           },
           "test": {
             "@type": "TestCase",
-            "title": "require-lang-attribute"
+            "title": "require-lang-attribute",
+            "isPartOf": [
+              "WCAG2:language-of-page"
+            ]
           },
           "assertedBy": "_:assertor"
         }
@@ -1581,7 +1656,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -1628,7 +1703,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -1701,7 +1776,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -1722,7 +1797,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -1769,7 +1844,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -1790,7 +1865,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -2126,7 +2201,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -2168,7 +2243,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -2359,7 +2434,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -2401,7 +2476,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -2422,7 +2497,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -2443,7 +2518,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -2464,7 +2539,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -2485,7 +2560,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -2506,7 +2581,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -2548,7 +2623,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -2593,7 +2668,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -2614,7 +2689,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -2635,7 +2710,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -2656,7 +2731,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -2677,7 +2752,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -2698,7 +2773,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -2740,7 +2815,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -2785,7 +2860,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -2848,7 +2923,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -2869,7 +2944,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -2914,7 +2989,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -2935,7 +3010,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -3164,7 +3239,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -3185,7 +3260,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -3290,7 +3365,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -3434,6 +3509,14 @@
         "WebPage"
       ],
       "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/e6fd17797e01f46032b6d8edf24831b2775cc831.html",
+      "assertions": []
+    },
+    {
+      "@type": [
+        "TestSubject",
+        "WebPage"
+      ],
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/17e68991f57cd20cd5c9fcf564d5a23ebb08c0f0.html",
       "assertions": []
     },
     {
@@ -3735,7 +3818,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -4059,7 +4142,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -4132,7 +4215,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -4309,7 +4392,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -4356,7 +4439,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -4377,7 +4460,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -4542,7 +4625,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -4563,7 +4646,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -4584,7 +4667,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -4605,7 +4688,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -4620,7 +4703,7 @@
         "TestSubject",
         "WebPage"
       ],
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/7296da1d7d8f1ede523cc6c4b7def0f8dbd1e887.html",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/e145aafac5f00cabc7cb3d65a32f7fdb5ec1484d.html",
       "assertions": [
         {
           "@type": "Assertion",
@@ -4668,7 +4751,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -4689,7 +4772,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -4803,7 +4886,7 @@
         "TestSubject",
         "WebPage"
       ],
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ff89c9/c18579dc18aaebf7eeaa4e24e4bc199d77c432bc.html",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ff89c9/2ffe7d6cfa547dc8b107922a6bd7542ea36c96d6.html",
       "assertions": [
         {
           "@type": "Assertion",
@@ -4992,7 +5075,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -5013,7 +5096,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -5034,7 +5117,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -5110,14 +5193,6 @@
         "TestSubject",
         "WebPage"
       ],
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/52c725e462af074a3559cf4bf4d4dd2386168938.html",
-      "assertions": []
-    },
-    {
-      "@type": [
-        "TestSubject",
-        "WebPage"
-      ],
       "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/51307c16b15d283b9f6ba7e4edc1bb99449f3f37.html",
       "assertions": []
     },
@@ -5166,7 +5241,7 @@
         "TestSubject",
         "WebPage"
       ],
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/f205939f29e3507a1f1cdbea0ae86ca40e8e0ada.html",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/5e0e88f9ed776c89735d7db606c1381a7a1fb877.html",
       "assertions": []
     },
     {
@@ -5174,7 +5249,7 @@
         "TestSubject",
         "WebPage"
       ],
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/5e0e88f9ed776c89735d7db606c1381a7a1fb877.html",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/52c725e462af074a3559cf4bf4d4dd2386168938.html",
       "assertions": []
     },
     {
@@ -5214,21 +5289,13 @@
         "TestSubject",
         "WebPage"
       ],
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/01c9526cc3ea1449ab8462fdf3c2aa4f215137dc.html",
-      "assertions": []
-    },
-    {
-      "@type": [
-        "TestSubject",
-        "WebPage"
-      ],
       "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/4240276511703c9bfa881ac80f7c0af5c92c97cc.html",
       "assertions": [
         {
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -5249,7 +5316,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -5270,7 +5337,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -5291,7 +5358,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -5312,7 +5379,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -5333,7 +5400,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -5354,7 +5421,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -5375,7 +5442,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -5396,7 +5463,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -5417,7 +5484,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -5438,7 +5505,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -5495,13 +5562,34 @@
         "TestSubject",
         "WebPage"
       ],
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/d7efe21b64461052aef8d3e0fc96049dda787039.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "result": {
+            "@type": "TestResult",
+            "outcome": "earl:passed"
+          },
+          "test": {
+            "@type": "TestCase",
+            "title": "no-invalid-aria-attributes"
+          },
+          "assertedBy": "_:assertor"
+        }
+      ]
+    },
+    {
+      "@type": [
+        "TestSubject",
+        "WebPage"
+      ],
       "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/a7aac71114d641a7bbeb7c959779d34321a57213.html",
       "assertions": [
         {
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -5543,7 +5631,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -5564,7 +5652,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -5585,7 +5673,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -5606,7 +5694,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -5627,7 +5715,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -5648,7 +5736,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -5669,7 +5757,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -5690,7 +5778,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -5705,13 +5793,13 @@
         "TestSubject",
         "WebPage"
       ],
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/bb42f0c8876f592a3cc7accec1c4b0ac6a632cf3.html",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/ed053b32aa2b4453ddc225e45f7f1931f62c7f49.html",
       "assertions": [
         {
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -5732,7 +5820,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -5816,7 +5904,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -5837,7 +5925,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -5918,7 +6006,7 @@
         "TestSubject",
         "WebPage"
       ],
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/bad4a344d82a15ba2396ceb7824dae56f894b85d.html",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/79d12098309e131210ba01ae2eca31ac97c13123.html",
       "assertions": [
         {
           "@type": "Assertion",
@@ -5966,7 +6054,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -5987,7 +6075,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -6008,7 +6096,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -6071,7 +6159,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -6092,7 +6180,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -6113,7 +6201,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -7561,7 +7649,7 @@
         "TestSubject",
         "WebPage"
       ],
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/80af7b/780388a837915960bca7651bd80743fb2cafdbcb.html",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/80af7b/f5ea9fd3b681971b2af4953fae9bb2d319a203c6.html",
       "assertions": []
     },
     {
@@ -7721,7 +7809,7 @@
         "TestSubject",
         "WebPage"
       ],
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a1b64e/780388a837915960bca7651bd80743fb2cafdbcb.html",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a1b64e/f5ea9fd3b681971b2af4953fae9bb2d319a203c6.html",
       "assertions": []
     },
     {
@@ -7849,7 +7937,7 @@
         "TestSubject",
         "WebPage"
       ],
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cc0f0a/30fc1902581e0b197a544a40375bf7e732492756.html",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cc0f0a/649946098faf6f36b8232ea74fc3bae3cf8997e7.html",
       "assertions": []
     },
     {
@@ -7881,7 +7969,7 @@
         "TestSubject",
         "WebPage"
       ],
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cc0f0a/4f8c803095390503ea77bc55c4ed926f645271b6.html",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cc0f0a/e3debccdca560d85dc223b86e9355db89b505350.html",
       "assertions": []
     },
     {
@@ -8031,7 +8119,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -8052,7 +8140,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -8073,7 +8161,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -8304,7 +8392,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -8325,7 +8413,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -8500,6 +8588,14 @@
         "TestSubject",
         "WebPage"
       ],
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/c4a8a4/4c72b3b9b06bf1edc3c959070731b65871ee0c8f.html",
+      "assertions": []
+    },
+    {
+      "@type": [
+        "TestSubject",
+        "WebPage"
+      ],
       "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/c4a8a4/85469fd266d3e8706f551dcd65261709311123d0.svg",
       "assertions": []
     },
@@ -8514,7 +8610,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -8535,7 +8631,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -8661,7 +8757,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -8682,7 +8778,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -8908,7 +9004,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -9055,7 +9151,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -9112,7 +9208,7 @@
         "TestSubject",
         "WebPage"
       ],
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/akn7bn/c90de6661c91b4449b96fb31e487c70d1e3350df.html",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/akn7bn/1e3939d9f8e0f78f9c564ec6feb12cc5635c0acb.html",
       "assertions": []
     },
     {
@@ -9120,23 +9216,7 @@
         "TestSubject",
         "WebPage"
       ],
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/akn7bn/aa153f6799d28563054ce66bcf7dfcedf9b75288.html",
-      "assertions": []
-    },
-    {
-      "@type": [
-        "TestSubject",
-        "WebPage"
-      ],
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/akn7bn/63cd20ec8886f4c59ff54f406a0e5933847bce75.html",
-      "assertions": []
-    },
-    {
-      "@type": [
-        "TestSubject",
-        "WebPage"
-      ],
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/akn7bn/033e04cced5973596d9aa724feacb027d23b4c53.html",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/akn7bn/a16be608639d0976b9d044360695d853384f56f0.html",
       "assertions": []
     },
     {
@@ -9152,7 +9232,31 @@
         "TestSubject",
         "WebPage"
       ],
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/akn7bn/a16be608639d0976b9d044360695d853384f56f0.html",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/akn7bn/c90de6661c91b4449b96fb31e487c70d1e3350df.html",
+      "assertions": []
+    },
+    {
+      "@type": [
+        "TestSubject",
+        "WebPage"
+      ],
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/akn7bn/033e04cced5973596d9aa724feacb027d23b4c53.html",
+      "assertions": []
+    },
+    {
+      "@type": [
+        "TestSubject",
+        "WebPage"
+      ],
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/akn7bn/63cd20ec8886f4c59ff54f406a0e5933847bce75.html",
+      "assertions": []
+    },
+    {
+      "@type": [
+        "TestSubject",
+        "WebPage"
+      ],
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/akn7bn/aa153f6799d28563054ce66bcf7dfcedf9b75288.html",
       "assertions": []
     },
     {
@@ -9184,13 +9288,13 @@
         "TestSubject",
         "WebPage"
       ],
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/qt1vmo/09899111e5bcb25a5bb64000f63dc926eb653b7d.html",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/qt1vmo/5d314574052bf16676abb0e9a67e48dd70116c2e.html",
       "assertions": [
         {
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -9256,7 +9360,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -9346,7 +9450,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -9409,7 +9513,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -9430,7 +9534,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -9451,7 +9555,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -9501,511 +9605,6 @@
           "test": {
             "@type": "TestCase",
             "title": "require-valid-alt-text"
-          },
-          "assertedBy": "_:assertor"
-        }
-      ]
-    },
-    {
-      "@type": [
-        "TestSubject",
-        "WebPage"
-      ],
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9eb3f6/5c17bdea5be543925ab8219c3e5c77f422b70e18.html",
-      "assertions": [
-        {
-          "@type": "Assertion",
-          "result": {
-            "@type": "TestResult",
-            "outcome": "earl:cantTell"
-          },
-          "test": {
-            "@type": "TestCase",
-            "title": "require-input-label"
-          },
-          "assertedBy": "_:assertor"
-        },
-        {
-          "@type": "Assertion",
-          "result": {
-            "@type": "TestResult",
-            "outcome": "earl:cantTell"
-          },
-          "test": {
-            "@type": "TestCase",
-            "title": "no-whitespace-for-layout"
-          },
-          "assertedBy": "_:assertor"
-        }
-      ]
-    },
-    {
-      "@type": [
-        "TestSubject",
-        "WebPage"
-      ],
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9eb3f6/28ff5fc7b1b6bc9e1b10b71c776449283479f50a.html",
-      "assertions": [
-        {
-          "@type": "Assertion",
-          "result": {
-            "@type": "TestResult",
-            "outcome": "earl:cantTell"
-          },
-          "test": {
-            "@type": "TestCase",
-            "title": "require-input-label"
-          },
-          "assertedBy": "_:assertor"
-        },
-        {
-          "@type": "Assertion",
-          "result": {
-            "@type": "TestResult",
-            "outcome": "earl:cantTell"
-          },
-          "test": {
-            "@type": "TestCase",
-            "title": "no-whitespace-for-layout"
-          },
-          "assertedBy": "_:assertor"
-        }
-      ]
-    },
-    {
-      "@type": [
-        "TestSubject",
-        "WebPage"
-      ],
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9eb3f6/84ed84bb6a93a382e2258258d6c27e6eb7bb11e4.html",
-      "assertions": [
-        {
-          "@type": "Assertion",
-          "result": {
-            "@type": "TestResult",
-            "outcome": "earl:failed"
-          },
-          "test": {
-            "@type": "TestCase",
-            "title": "require-input-label",
-            "isPartOf": [
-              "WCAG2:info-and-relationships",
-              "WCAG2:labels-or-instructions",
-              "WCAG2:name-role-value"
-            ]
-          },
-          "assertedBy": "_:assertor"
-        },
-        {
-          "@type": "Assertion",
-          "result": {
-            "@type": "TestResult",
-            "outcome": "earl:passed"
-          },
-          "test": {
-            "@type": "TestCase",
-            "title": "no-whitespace-for-layout"
-          },
-          "assertedBy": "_:assertor"
-        }
-      ]
-    },
-    {
-      "@type": [
-        "TestSubject",
-        "WebPage"
-      ],
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9eb3f6/c45ac9a2b8c8a35f149e210bd983c034b7fd8568.html",
-      "assertions": [
-        {
-          "@type": "Assertion",
-          "result": {
-            "@type": "TestResult",
-            "outcome": "earl:cantTell"
-          },
-          "test": {
-            "@type": "TestCase",
-            "title": "require-input-label"
-          },
-          "assertedBy": "_:assertor"
-        },
-        {
-          "@type": "Assertion",
-          "result": {
-            "@type": "TestResult",
-            "outcome": "earl:cantTell"
-          },
-          "test": {
-            "@type": "TestCase",
-            "title": "no-whitespace-for-layout"
-          },
-          "assertedBy": "_:assertor"
-        }
-      ]
-    },
-    {
-      "@type": [
-        "TestSubject",
-        "WebPage"
-      ],
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9eb3f6/b278b4d6641d2c526dcc5c1bc07df5e9797807be.html",
-      "assertions": [
-        {
-          "@type": "Assertion",
-          "result": {
-            "@type": "TestResult",
-            "outcome": "earl:failed"
-          },
-          "test": {
-            "@type": "TestCase",
-            "title": "no-whitespace-for-layout"
-          },
-          "assertedBy": "_:assertor"
-        },
-        {
-          "@type": "Assertion",
-          "result": {
-            "@type": "TestResult",
-            "outcome": "earl:passed"
-          },
-          "test": {
-            "@type": "TestCase",
-            "title": "require-input-label"
-          },
-          "assertedBy": "_:assertor"
-        }
-      ]
-    },
-    {
-      "@type": [
-        "TestSubject",
-        "WebPage"
-      ],
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9eb3f6/cb7f67717f4bc48b7d8a633428b6a13dff3640b9.html",
-      "assertions": [
-        {
-          "@type": "Assertion",
-          "result": {
-            "@type": "TestResult",
-            "outcome": "earl:cantTell"
-          },
-          "test": {
-            "@type": "TestCase",
-            "title": "require-input-label"
-          },
-          "assertedBy": "_:assertor"
-        },
-        {
-          "@type": "Assertion",
-          "result": {
-            "@type": "TestResult",
-            "outcome": "earl:cantTell"
-          },
-          "test": {
-            "@type": "TestCase",
-            "title": "no-whitespace-for-layout"
-          },
-          "assertedBy": "_:assertor"
-        }
-      ]
-    },
-    {
-      "@type": [
-        "TestSubject",
-        "WebPage"
-      ],
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9eb3f6/50275690fd38aa83f817b3f6f20862778ec8c306.html",
-      "assertions": [
-        {
-          "@type": "Assertion",
-          "result": {
-            "@type": "TestResult",
-            "outcome": "earl:cantTell"
-          },
-          "test": {
-            "@type": "TestCase",
-            "title": "require-input-label"
-          },
-          "assertedBy": "_:assertor"
-        },
-        {
-          "@type": "Assertion",
-          "result": {
-            "@type": "TestResult",
-            "outcome": "earl:cantTell"
-          },
-          "test": {
-            "@type": "TestCase",
-            "title": "no-whitespace-for-layout"
-          },
-          "assertedBy": "_:assertor"
-        }
-      ]
-    },
-    {
-      "@type": [
-        "TestSubject",
-        "WebPage"
-      ],
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9eb3f6/74b04ed600b42949e74c43d4405658d704080603.html",
-      "assertions": [
-        {
-          "@type": "Assertion",
-          "result": {
-            "@type": "TestResult",
-            "outcome": "earl:cantTell"
-          },
-          "test": {
-            "@type": "TestCase",
-            "title": "require-input-label"
-          },
-          "assertedBy": "_:assertor"
-        },
-        {
-          "@type": "Assertion",
-          "result": {
-            "@type": "TestResult",
-            "outcome": "earl:cantTell"
-          },
-          "test": {
-            "@type": "TestCase",
-            "title": "no-whitespace-for-layout"
-          },
-          "assertedBy": "_:assertor"
-        }
-      ]
-    },
-    {
-      "@type": [
-        "TestSubject",
-        "WebPage"
-      ],
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9eb3f6/5ca9a034544ae02b83dba27ed9beb61626c8eedf.html",
-      "assertions": [
-        {
-          "@type": "Assertion",
-          "result": {
-            "@type": "TestResult",
-            "outcome": "earl:cantTell"
-          },
-          "test": {
-            "@type": "TestCase",
-            "title": "require-input-label"
-          },
-          "assertedBy": "_:assertor"
-        },
-        {
-          "@type": "Assertion",
-          "result": {
-            "@type": "TestResult",
-            "outcome": "earl:cantTell"
-          },
-          "test": {
-            "@type": "TestCase",
-            "title": "no-whitespace-for-layout"
-          },
-          "assertedBy": "_:assertor"
-        }
-      ]
-    },
-    {
-      "@type": [
-        "TestSubject",
-        "WebPage"
-      ],
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9eb3f6/516d5e4c0c6b286c18be2830e9866e4eb0f7c74c.html",
-      "assertions": [
-        {
-          "@type": "Assertion",
-          "result": {
-            "@type": "TestResult",
-            "outcome": "earl:failed"
-          },
-          "test": {
-            "@type": "TestCase",
-            "title": "require-input-label",
-            "isPartOf": [
-              "WCAG2:info-and-relationships",
-              "WCAG2:labels-or-instructions",
-              "WCAG2:name-role-value"
-            ]
-          },
-          "assertedBy": "_:assertor"
-        },
-        {
-          "@type": "Assertion",
-          "result": {
-            "@type": "TestResult",
-            "outcome": "earl:passed"
-          },
-          "test": {
-            "@type": "TestCase",
-            "title": "no-whitespace-for-layout"
-          },
-          "assertedBy": "_:assertor"
-        }
-      ]
-    },
-    {
-      "@type": [
-        "TestSubject",
-        "WebPage"
-      ],
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9eb3f6/45c0f9b5c73d87387d8f8147c9530dcd3734e09b.html",
-      "assertions": [
-        {
-          "@type": "Assertion",
-          "result": {
-            "@type": "TestResult",
-            "outcome": "earl:cantTell"
-          },
-          "test": {
-            "@type": "TestCase",
-            "title": "require-input-label"
-          },
-          "assertedBy": "_:assertor"
-        },
-        {
-          "@type": "Assertion",
-          "result": {
-            "@type": "TestResult",
-            "outcome": "earl:cantTell"
-          },
-          "test": {
-            "@type": "TestCase",
-            "title": "no-whitespace-for-layout"
-          },
-          "assertedBy": "_:assertor"
-        }
-      ]
-    },
-    {
-      "@type": [
-        "TestSubject",
-        "WebPage"
-      ],
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9eb3f6/8d9dd9f9edfc704c311188cdf7016534e278608f.html",
-      "assertions": [
-        {
-          "@type": "Assertion",
-          "result": {
-            "@type": "TestResult",
-            "outcome": "earl:cantTell"
-          },
-          "test": {
-            "@type": "TestCase",
-            "title": "require-input-label"
-          },
-          "assertedBy": "_:assertor"
-        },
-        {
-          "@type": "Assertion",
-          "result": {
-            "@type": "TestResult",
-            "outcome": "earl:cantTell"
-          },
-          "test": {
-            "@type": "TestCase",
-            "title": "no-whitespace-for-layout"
-          },
-          "assertedBy": "_:assertor"
-        }
-      ]
-    },
-    {
-      "@type": [
-        "TestSubject",
-        "WebPage"
-      ],
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9eb3f6/d1403fb1b2324d3f9dc72abf68e388c741dbdacd.html",
-      "assertions": [
-        {
-          "@type": "Assertion",
-          "result": {
-            "@type": "TestResult",
-            "outcome": "earl:cantTell"
-          },
-          "test": {
-            "@type": "TestCase",
-            "title": "require-input-label"
-          },
-          "assertedBy": "_:assertor"
-        },
-        {
-          "@type": "Assertion",
-          "result": {
-            "@type": "TestResult",
-            "outcome": "earl:cantTell"
-          },
-          "test": {
-            "@type": "TestCase",
-            "title": "no-whitespace-for-layout"
-          },
-          "assertedBy": "_:assertor"
-        }
-      ]
-    },
-    {
-      "@type": [
-        "TestSubject",
-        "WebPage"
-      ],
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9eb3f6/ce487408f8ed7d9948521bf95340851c2e68bcb1.html",
-      "assertions": [
-        {
-          "@type": "Assertion",
-          "result": {
-            "@type": "TestResult",
-            "outcome": "earl:cantTell"
-          },
-          "test": {
-            "@type": "TestCase",
-            "title": "require-input-label"
-          },
-          "assertedBy": "_:assertor"
-        },
-        {
-          "@type": "Assertion",
-          "result": {
-            "@type": "TestResult",
-            "outcome": "earl:cantTell"
-          },
-          "test": {
-            "@type": "TestCase",
-            "title": "no-whitespace-for-layout"
-          },
-          "assertedBy": "_:assertor"
-        }
-      ]
-    },
-    {
-      "@type": [
-        "TestSubject",
-        "WebPage"
-      ],
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9eb3f6/c82793fd4426aaf6e840c5bdb63d5b66a4afc437.html",
-      "assertions": [
-        {
-          "@type": "Assertion",
-          "result": {
-            "@type": "TestResult",
-            "outcome": "earl:cantTell"
-          },
-          "test": {
-            "@type": "TestCase",
-            "title": "require-input-label"
-          },
-          "assertedBy": "_:assertor"
-        },
-        {
-          "@type": "Assertion",
-          "result": {
-            "@type": "TestResult",
-            "outcome": "earl:cantTell"
-          },
-          "test": {
-            "@type": "TestCase",
-            "title": "no-whitespace-for-layout"
           },
           "assertedBy": "_:assertor"
         }
@@ -10105,6 +9704,14 @@
         "WebPage"
       ],
       "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/0va7u6/e1d4ed7556dabfcfde47aaf4cd0861e0fdf585d9.html",
+      "assertions": []
+    },
+    {
+      "@type": [
+        "TestSubject",
+        "WebPage"
+      ],
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/0va7u6/6a7f199a37309ccab08941b0bc64e182770c29ac.html",
       "assertions": []
     },
     {
@@ -10296,7 +9903,7 @@
         "TestSubject",
         "WebPage"
       ],
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/8b3557dcf5062904594f91d781fde151d9fe3ef3.html",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/34b98eee090db39d3c703d360e3b8c49d9b8acfa.html",
       "assertions": []
     },
     {
@@ -10366,7 +9973,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -10387,7 +9994,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -10408,7 +10015,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -10474,7 +10081,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -10495,7 +10102,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -10516,7 +10123,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -10537,7 +10144,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -10558,7 +10165,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -10600,7 +10207,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -10621,7 +10228,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -10642,7 +10249,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -10663,7 +10270,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -10684,7 +10291,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -10705,7 +10312,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -10726,7 +10333,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -10768,7 +10375,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -10783,13 +10390,13 @@
         "TestSubject",
         "WebPage"
       ],
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5effbb/7e4e224e98de9d2d304b2ec57ac25e0ceb6279b5.html",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5effbb/4e89fcc7903980482fe12350f864ca75963d6efd.html",
       "assertions": [
         {
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -10834,7 +10441,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -10855,7 +10462,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -10876,7 +10483,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -10918,7 +10525,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -10939,7 +10546,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -10981,7 +10588,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -11386,7 +10993,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -11401,7 +11008,7 @@
         "TestSubject",
         "WebPage"
       ],
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/d48be8e9b638b9c27714cb3118a335376ed65f0f.html",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/24a98a3ff6a69e073f768bb198671ea6a1c4568a.html",
       "assertions": [
         {
           "@type": "Assertion",
@@ -11453,7 +11060,7 @@
         "TestSubject",
         "WebPage"
       ],
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/b134b6aa2851b2e3ee5d1fbca056c2b706776a98.html",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/d0672e81d17313f7ef156f3bc6e43c68143a5f45.html",
       "assertions": [
         {
           "@type": "Assertion",
@@ -11479,7 +11086,7 @@
         "TestSubject",
         "WebPage"
       ],
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/7ce73a0a773528b21f497c3f0600ceb9f1b0097f.html",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/b8aad77e3ff2fa8d0272fac5362566ff79afad7f.html",
       "assertions": [
         {
           "@type": "Assertion",
@@ -11498,32 +11105,6 @@
           },
           "assertedBy": "_:assertor"
         },
-        {
-          "@type": "Assertion",
-          "result": {
-            "@type": "TestResult",
-            "outcome": "earl:failed"
-          },
-          "test": {
-            "@type": "TestCase",
-            "title": "no-invalid-meta",
-            "isPartOf": [
-              "WCAG2:timing-adjustable",
-              "WCAG2:interruptions",
-              "WCAG2:change-on-request"
-            ]
-          },
-          "assertedBy": "_:assertor"
-        }
-      ]
-    },
-    {
-      "@type": [
-        "TestSubject",
-        "WebPage"
-      ],
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/7f67b9f06d35fa2a19d59481b2ccc6e7441823ee.html",
-      "assertions": [
         {
           "@type": "Assertion",
           "result": {
@@ -11574,7 +11155,7 @@
         "TestSubject",
         "WebPage"
       ],
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/9a3bda5ec60f149807ec999ca430dce67f295846.html",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/c73e036ba88dbbedf6b6a90b69328208eb1e14d0.html",
       "assertions": [
         {
           "@type": "Assertion",
@@ -11652,7 +11233,7 @@
         "TestSubject",
         "WebPage"
       ],
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/ab5d8aeef0246a383e782e44744d3989e72fd573.html",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/a32834c94a9dd1869e22ccfb0b7b753648c8d469.html",
       "assertions": [
         {
           "@type": "Assertion",
@@ -11684,7 +11265,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -11699,7 +11280,7 @@
         "TestSubject",
         "WebPage"
       ],
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/5f26131ac46f24edc76f0105a876addd0e1804b0.html",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/1846b9116a8563e653cee40753b4c904696851f9.html",
       "assertions": [
         {
           "@type": "Assertion",
@@ -12005,7 +11586,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -12110,7 +11691,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -12194,7 +11775,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -12209,13 +11790,34 @@
         "TestSubject",
         "WebPage"
       ],
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/e0706a8dbbd0e41f18134072656b5755b9a60cf1.html",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/eadf2a087a82575bcdf9f9158e698a576e9627c8.html",
       "assertions": [
         {
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
+          },
+          "test": {
+            "@type": "TestCase",
+            "title": "require-mandatory-role-attributes"
+          },
+          "assertedBy": "_:assertor"
+        }
+      ]
+    },
+    {
+      "@type": [
+        "TestSubject",
+        "WebPage"
+      ],
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/f3c5ba4e097be5eee694024808a962972f037670.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "result": {
+            "@type": "TestResult",
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -12236,7 +11838,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -12251,13 +11853,25 @@
         "TestSubject",
         "WebPage"
       ],
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/501c9ede91621ccd0e643058e97992d99ea85cdd.html",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/3da0918b07e5736d55b4b405a22860d889931c15.html",
       "assertions": [
         {
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:failed"
+          },
+          "test": {
+            "@type": "TestCase",
+            "title": "require-mandatory-role-attributes"
+          },
+          "assertedBy": "_:assertor"
+        },
+        {
+          "@type": "Assertion",
+          "result": {
+            "@type": "TestResult",
+            "outcome": "earl:failed"
           },
           "test": {
             "@type": "TestCase",
@@ -12272,7 +11886,61 @@
         "TestSubject",
         "WebPage"
       ],
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/8d6361b78f88c707bb73a16701516976d0174a73.html",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/58a35afd2998bb6f9c670cb74fa7b550e80897b4.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "result": {
+            "@type": "TestResult",
+            "outcome": "earl:passed"
+          },
+          "test": {
+            "@type": "TestCase",
+            "title": "require-mandatory-role-attributes"
+          },
+          "assertedBy": "_:assertor"
+        }
+      ]
+    },
+    {
+      "@type": [
+        "TestSubject",
+        "WebPage"
+      ],
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/352ec575eab8846938e2dced0802d0c2f5611344.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "result": {
+            "@type": "TestResult",
+            "outcome": "earl:failed"
+          },
+          "test": {
+            "@type": "TestCase",
+            "title": "require-mandatory-role-attributes"
+          },
+          "assertedBy": "_:assertor"
+        },
+        {
+          "@type": "Assertion",
+          "result": {
+            "@type": "TestResult",
+            "outcome": "earl:failed"
+          },
+          "test": {
+            "@type": "TestCase",
+            "title": "require-mandatory-role-attributes"
+          },
+          "assertedBy": "_:assertor"
+        }
+      ]
+    },
+    {
+      "@type": [
+        "TestSubject",
+        "WebPage"
+      ],
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/80462b7b8c490305d1de7e3136c0bcfaef31789f.html",
       "assertions": [
         {
           "@type": "Assertion",
@@ -12293,13 +11961,145 @@
         "TestSubject",
         "WebPage"
       ],
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/ee696108f2b51abb98969b435d2d72aa0a0b9b9f.html",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/907f05aed287f7407d5f95e7d39bfc1435ec0812.html",
       "assertions": [
         {
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:failed"
+          },
+          "test": {
+            "@type": "TestCase",
+            "title": "require-mandatory-role-attributes"
+          },
+          "assertedBy": "_:assertor"
+        }
+      ]
+    },
+    {
+      "@type": [
+        "TestSubject",
+        "WebPage"
+      ],
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/9bb1bdb3e95aa9b895fc4f32b0c2cfc917a07a72.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "result": {
+            "@type": "TestResult",
+            "outcome": "earl:failed"
+          },
+          "test": {
+            "@type": "TestCase",
+            "title": "require-mandatory-role-attributes"
+          },
+          "assertedBy": "_:assertor"
+        }
+      ]
+    },
+    {
+      "@type": [
+        "TestSubject",
+        "WebPage"
+      ],
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/43af91df529613e51429e18d43ce3df99b189c0f.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "result": {
+            "@type": "TestResult",
+            "outcome": "earl:passed"
+          },
+          "test": {
+            "@type": "TestCase",
+            "title": "require-mandatory-role-attributes"
+          },
+          "assertedBy": "_:assertor"
+        }
+      ]
+    },
+    {
+      "@type": [
+        "TestSubject",
+        "WebPage"
+      ],
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/7a1942d2d52f50c5df458877a0ee18dc5a22b0c3.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "result": {
+            "@type": "TestResult",
+            "outcome": "earl:failed"
+          },
+          "test": {
+            "@type": "TestCase",
+            "title": "require-mandatory-role-attributes"
+          },
+          "assertedBy": "_:assertor"
+        },
+        {
+          "@type": "Assertion",
+          "result": {
+            "@type": "TestResult",
+            "outcome": "earl:failed"
+          },
+          "test": {
+            "@type": "TestCase",
+            "title": "require-mandatory-role-attributes"
+          },
+          "assertedBy": "_:assertor"
+        },
+        {
+          "@type": "Assertion",
+          "result": {
+            "@type": "TestResult",
+            "outcome": "earl:failed"
+          },
+          "test": {
+            "@type": "TestCase",
+            "title": "require-mandatory-role-attributes"
+          },
+          "assertedBy": "_:assertor"
+        }
+      ]
+    },
+    {
+      "@type": [
+        "TestSubject",
+        "WebPage"
+      ],
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/30c746dee25dde33aef4bb61d5b054e2821e4564.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "result": {
+            "@type": "TestResult",
+            "outcome": "earl:failed"
+          },
+          "test": {
+            "@type": "TestCase",
+            "title": "require-mandatory-role-attributes"
+          },
+          "assertedBy": "_:assertor"
+        },
+        {
+          "@type": "Assertion",
+          "result": {
+            "@type": "TestResult",
+            "outcome": "earl:failed"
+          },
+          "test": {
+            "@type": "TestCase",
+            "title": "require-mandatory-role-attributes"
+          },
+          "assertedBy": "_:assertor"
+        },
+        {
+          "@type": "Assertion",
+          "result": {
+            "@type": "TestResult",
+            "outcome": "earl:failed"
           },
           "test": {
             "@type": "TestCase",
@@ -12320,7 +12120,7 @@
           "@type": "Assertion",
           "result": {
             "@type": "TestResult",
-            "outcome": "earl:cantTell"
+            "outcome": "earl:passed"
           },
           "test": {
             "@type": "TestCase",
@@ -12657,7 +12457,7 @@
         "TestSubject",
         "WebPage"
       ],
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/530b8900297f169b900e2a0dffa96bc878b269a1.html",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/dc170fd015758b62d8e0141e086893a116ee724e.html",
       "assertions": []
     },
     {
@@ -12706,6 +12506,22 @@
         "WebPage"
       ],
       "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/66a3ba7bc0027a9556596e3c378c926a537c1901.html",
+      "assertions": []
+    },
+    {
+      "@type": [
+        "TestSubject",
+        "WebPage"
+      ],
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/173cb00f20c52f35970c322dedf7bc11450b70c1.html",
+      "assertions": []
+    },
+    {
+      "@type": [
+        "TestSubject",
+        "WebPage"
+      ],
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/668856825e6d3b4e480005acf97723c7b1004ba3.html",
       "assertions": []
     },
     {
@@ -12777,6 +12593,22 @@
         "TestSubject",
         "WebPage"
       ],
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/a7d34d6d1dad765c7e444d3c3f63b18ca4742e9e.html",
+      "assertions": []
+    },
+    {
+      "@type": [
+        "TestSubject",
+        "WebPage"
+      ],
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/19123c99ec390011b87736827720d5e1e794bad2.html",
+      "assertions": []
+    },
+    {
+      "@type": [
+        "TestSubject",
+        "WebPage"
+      ],
       "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/2347a45232c34aa309087ed099f4781cd70b5b1e.html",
       "assertions": []
     },
@@ -12817,22 +12649,6 @@
         "TestSubject",
         "WebPage"
       ],
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/dc18c6afcd1214d85c49b107eb89c60fbc12ee99.html",
-      "assertions": []
-    },
-    {
-      "@type": [
-        "TestSubject",
-        "WebPage"
-      ],
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/668856825e6d3b4e480005acf97723c7b1004ba3.html",
-      "assertions": []
-    },
-    {
-      "@type": [
-        "TestSubject",
-        "WebPage"
-      ],
       "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/328b967c5b544b48f7acd8e42f2f05d355501f2a.html",
       "assertions": []
     },
@@ -12865,6 +12681,22 @@
         "TestSubject",
         "WebPage"
       ],
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/b4fcc1ea76d19ae86033ed687613f78297ee6069.html",
+      "assertions": []
+    },
+    {
+      "@type": [
+        "TestSubject",
+        "WebPage"
+      ],
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/6b811d065fc243c2c94002f315891791e181d518.html",
+      "assertions": []
+    },
+    {
+      "@type": [
+        "TestSubject",
+        "WebPage"
+      ],
       "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/fd406bedf0bb3bdc4c2a718f49a3dd0f7aaa7556.html",
       "assertions": []
     },
@@ -12881,7 +12713,7 @@
         "TestSubject",
         "WebPage"
       ],
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/683924f835ab545a23a3625b0630e95bd0b50bca.html",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/d011f0ef2a8d94ccf3d3d393a50d7fd8c576d3c3.html",
       "assertions": []
     },
     {
@@ -12929,6 +12761,22 @@
         "TestSubject",
         "WebPage"
       ],
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/173cb00f20c52f35970c322dedf7bc11450b70c1.html",
+      "assertions": []
+    },
+    {
+      "@type": [
+        "TestSubject",
+        "WebPage"
+      ],
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/668856825e6d3b4e480005acf97723c7b1004ba3.html",
+      "assertions": []
+    },
+    {
+      "@type": [
+        "TestSubject",
+        "WebPage"
+      ],
       "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/67fe402a5de9743bf9882d7d52deb9749005d16c.html",
       "assertions": []
     },
@@ -12946,6 +12794,14 @@
         "WebPage"
       ],
       "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/04344f745bd9bad51292748e7893f146c045aae4.html",
+      "assertions": []
+    },
+    {
+      "@type": [
+        "TestSubject",
+        "WebPage"
+      ],
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/eaf0a926896f045a498073da42ea6263a4d6d36c.html",
       "assertions": []
     },
     {
@@ -13009,6 +12865,22 @@
         "TestSubject",
         "WebPage"
       ],
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/316b0c7fccdbe8a47716447a9fe2ca197c8358af.html",
+      "assertions": []
+    },
+    {
+      "@type": [
+        "TestSubject",
+        "WebPage"
+      ],
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/2e81c3e60722202d2e92089a0695d74e8b49cdaa.html",
+      "assertions": []
+    },
+    {
+      "@type": [
+        "TestSubject",
+        "WebPage"
+      ],
       "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/2347a45232c34aa309087ed099f4781cd70b5b1e.html",
       "assertions": []
     },
@@ -13049,22 +12921,6 @@
         "TestSubject",
         "WebPage"
       ],
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/dc18c6afcd1214d85c49b107eb89c60fbc12ee99.html",
-      "assertions": []
-    },
-    {
-      "@type": [
-        "TestSubject",
-        "WebPage"
-      ],
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/668856825e6d3b4e480005acf97723c7b1004ba3.html",
-      "assertions": []
-    },
-    {
-      "@type": [
-        "TestSubject",
-        "WebPage"
-      ],
       "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/328b967c5b544b48f7acd8e42f2f05d355501f2a.html",
       "assertions": []
     },
@@ -13090,6 +12946,22 @@
         "WebPage"
       ],
       "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/9e3383a60ab67d5988ac2144fec58a34677c52b2.html",
+      "assertions": []
+    },
+    {
+      "@type": [
+        "TestSubject",
+        "WebPage"
+      ],
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/b4fcc1ea76d19ae86033ed687613f78297ee6069.html",
+      "assertions": []
+    },
+    {
+      "@type": [
+        "TestSubject",
+        "WebPage"
+      ],
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/6b811d065fc243c2c94002f315891791e181d518.html",
       "assertions": []
     },
     {
@@ -13393,46 +13265,6 @@
         "TestSubject",
         "WebPage"
       ],
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/f196ce/92f8362bf7b6778410dd0a0f660918794c85df27.html",
-      "assertions": []
-    },
-    {
-      "@type": [
-        "TestSubject",
-        "WebPage"
-      ],
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/f196ce/b6914fc77b6ade8523924e41fb8b7c23850e7f2f.html",
-      "assertions": []
-    },
-    {
-      "@type": [
-        "TestSubject",
-        "WebPage"
-      ],
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/f196ce/b0ac8ea6b081f130102db50c239cc7e44ea47ec8.html",
-      "assertions": []
-    },
-    {
-      "@type": [
-        "TestSubject",
-        "WebPage"
-      ],
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/f196ce/9a363fc81b95da9239e38764eb7d4cca4dd8bba6.html",
-      "assertions": []
-    },
-    {
-      "@type": [
-        "TestSubject",
-        "WebPage"
-      ],
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/f196ce/91f0cca7d0cc5c6a757f72dbeed84bcc1b79625b.html",
-      "assertions": []
-    },
-    {
-      "@type": [
-        "TestSubject",
-        "WebPage"
-      ],
       "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/c3232f/ce350e33e78f587703aa35b78fa319b9efe9291d.html",
       "assertions": []
     },
@@ -13594,46 +13426,6 @@
         "WebPage"
       ],
       "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/d7ba54/58393298a3a4c89033f09be47ec2aefb45be193e.html",
-      "assertions": []
-    },
-    {
-      "@type": [
-        "TestSubject",
-        "WebPage"
-      ],
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ac7dc6/91f0cca7d0cc5c6a757f72dbeed84bcc1b79625b.html",
-      "assertions": []
-    },
-    {
-      "@type": [
-        "TestSubject",
-        "WebPage"
-      ],
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ac7dc6/5e6b259c06a9c8ec301cb4654a6b43be5e24527e.html",
-      "assertions": []
-    },
-    {
-      "@type": [
-        "TestSubject",
-        "WebPage"
-      ],
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ac7dc6/92f8362bf7b6778410dd0a0f660918794c85df27.html",
-      "assertions": []
-    },
-    {
-      "@type": [
-        "TestSubject",
-        "WebPage"
-      ],
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ac7dc6/dc2a0bf420d21c386d9a7027a888276c07271988.html",
-      "assertions": []
-    },
-    {
-      "@type": [
-        "TestSubject",
-        "WebPage"
-      ],
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ac7dc6/8664da01669e891e6f0aa73cd85e71277961cc4c.html",
       "assertions": []
     },
     {
@@ -14020,9 +13812,12 @@
     "WCAG2": "http://www.w3.org/TR/WCAG21/#",
     "dct": "http://purl.org/dc/terms/",
     "sch": "https://schema.org/",
+    "doap": "http://usefulinc.com/ns/doap#",
     "testRuns": "@graph",
-    "name": "dct:name",
-    "shortDesc": "dct:shortdesc",
+    "name": "doap:name",
+    "shortDesc": "doap:shortdesc",
+    "release": "doap:release",
+    "revision": "doap:revision",
     "source": "dct:source",
     "title": "dct:title",
     "WebPage": "sch:WebPage",
