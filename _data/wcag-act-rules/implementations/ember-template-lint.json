@@ -1,8 +1,8 @@
 {
   "vendor": "contributors in the Ember.js community",
   "name": "ember-template-lint",
-  "version": "4.16.1",
-  "lastModified": "17 November 2022",
+  "version": "5.5.1",
+  "lastModified": "14 February 2023",
   "approvedRules": {
     "complete": 1,
     "partial": 0,
@@ -11,8 +11,8 @@
     "untested": 13
   },
   "proposedRules": {
-    "complete": 1,
-    "partial": 4,
+    "complete": 2,
+    "partial": 3,
     "minimal": 0,
     "inconsistent": 9,
     "untested": 52
@@ -47,9 +47,9 @@
         ]
       },
       "coverage": {
-        "covered": 0,
+        "covered": 7,
         "untested": 0,
-        "cantTell": 14,
+        "cantTell": 3,
         "testCaseTotal": 17
       },
       "testCaseResults": [
@@ -63,7 +63,7 @@
             {
               "procedureName": "require-input-label",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -93,7 +93,7 @@
             {
               "procedureName": "require-input-label",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -108,7 +108,7 @@
             {
               "procedureName": "require-input-label",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -123,7 +123,7 @@
             {
               "procedureName": "require-input-label",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -168,7 +168,7 @@
             {
               "procedureName": "require-input-label",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -183,7 +183,7 @@
             {
               "procedureName": "require-input-label",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -198,7 +198,7 @@
             {
               "procedureName": "require-input-label",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -228,7 +228,7 @@
             {
               "procedureName": "require-input-label",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -273,7 +273,7 @@
             {
               "procedureName": "require-input-label",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -288,7 +288,7 @@
             {
               "procedureName": "require-input-label",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -303,7 +303,7 @@
             {
               "procedureName": "require-input-label",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -348,9 +348,9 @@
         ]
       },
       "coverage": {
-        "covered": 2,
-        "untested": 2,
-        "cantTell": 13,
+        "covered": 11,
+        "untested": 0,
+        "cantTell": 1,
         "testCaseTotal": 19
       },
       "testCaseResults": [
@@ -364,7 +364,7 @@
             {
               "procedureName": "require-input-label",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -379,7 +379,7 @@
             {
               "procedureName": "require-input-label",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -394,7 +394,7 @@
             {
               "procedureName": "require-input-label",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -409,7 +409,7 @@
             {
               "procedureName": "require-input-label",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -439,7 +439,7 @@
             {
               "procedureName": "require-input-label",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -454,7 +454,7 @@
             {
               "procedureName": "require-input-label",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -499,7 +499,7 @@
             {
               "procedureName": "require-input-label",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -514,7 +514,7 @@
             {
               "procedureName": "require-input-label",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -529,7 +529,7 @@
             {
               "procedureName": "require-input-label",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -544,7 +544,7 @@
             {
               "procedureName": "require-input-label",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -559,7 +559,7 @@
             {
               "procedureName": "require-input-label",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -589,7 +589,7 @@
             {
               "procedureName": "require-input-label",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -619,7 +619,7 @@
             {
               "procedureName": "require-input-label",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -634,7 +634,8 @@
             {
               "procedureName": "require-input-label",
               "outcomes": [
-                "untested"
+                "failed",
+                "failed"
               ]
             }
           ]
@@ -659,9 +660,9 @@
         ]
       },
       "coverage": {
-        "covered": 3,
+        "covered": 5,
         "untested": 0,
-        "cantTell": 4,
+        "cantTell": 2,
         "testCaseTotal": 7
       },
       "testCaseResults": [
@@ -675,7 +676,7 @@
             {
               "procedureName": "require-lang-attribute",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -720,7 +721,7 @@
             {
               "procedureName": "require-lang-attribute",
               "outcomes": [
-                "cantTell"
+                "failed"
               ]
             }
           ]
@@ -820,9 +821,9 @@
         ]
       },
       "coverage": {
-        "covered": 2,
+        "covered": 7,
         "untested": 0,
-        "cantTell": 7,
+        "cantTell": 1,
         "testCaseTotal": 12
       },
       "testCaseResults": [
@@ -851,7 +852,7 @@
             {
               "procedureName": "require-input-label",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -881,7 +882,7 @@
             {
               "procedureName": "require-input-label",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -926,7 +927,7 @@
             {
               "procedureName": "require-input-label",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -941,7 +942,7 @@
             {
               "procedureName": "require-input-label",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -971,7 +972,7 @@
             {
               "procedureName": "require-input-label",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -986,7 +987,7 @@
             {
               "procedureName": "require-input-label",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -1026,9 +1027,9 @@
         ]
       },
       "coverage": {
-        "covered": 3,
+        "covered": 5,
         "untested": 0,
-        "cantTell": 11,
+        "cantTell": 9,
         "testCaseTotal": 18
       },
       "testCaseResults": [
@@ -1237,7 +1238,7 @@
             {
               "procedureName": "require-valid-alt-text",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -1267,7 +1268,7 @@
             {
               "procedureName": "require-valid-alt-text",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -1332,9 +1333,9 @@
         ]
       },
       "coverage": {
-        "covered": 2,
+        "covered": 14,
         "untested": 0,
-        "cantTell": 25,
+        "cantTell": 5,
         "testCaseTotal": 28
       },
       "testCaseResults": [
@@ -1348,7 +1349,7 @@
             {
               "procedureName": "no-invalid-link-text",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -1378,7 +1379,7 @@
             {
               "procedureName": "no-invalid-link-text",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -1393,7 +1394,7 @@
             {
               "procedureName": "no-invalid-link-text",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -1408,7 +1409,7 @@
             {
               "procedureName": "no-invalid-link-text",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -1423,7 +1424,7 @@
             {
               "procedureName": "no-invalid-link-text",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -1438,7 +1439,7 @@
             {
               "procedureName": "no-invalid-link-text",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -1453,7 +1454,7 @@
             {
               "procedureName": "no-invalid-link-text",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -1483,7 +1484,7 @@
             {
               "procedureName": "no-invalid-link-text",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -1513,7 +1514,7 @@
             {
               "procedureName": "no-invalid-link-text",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -1528,7 +1529,7 @@
             {
               "procedureName": "no-invalid-link-text",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -1543,7 +1544,7 @@
             {
               "procedureName": "no-invalid-link-text",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -1558,7 +1559,7 @@
             {
               "procedureName": "no-invalid-link-text",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -1573,7 +1574,7 @@
             {
               "procedureName": "no-invalid-link-text",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -1588,7 +1589,7 @@
             {
               "procedureName": "no-invalid-link-text",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -1618,7 +1619,7 @@
             {
               "procedureName": "no-invalid-link-text",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -1648,7 +1649,7 @@
             {
               "procedureName": "no-invalid-link-text",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -1693,7 +1694,7 @@
             {
               "procedureName": "no-invalid-link-text",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -1708,7 +1709,7 @@
             {
               "procedureName": "no-invalid-link-text",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -1738,7 +1739,7 @@
             {
               "procedureName": "no-invalid-link-text",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -1753,7 +1754,7 @@
             {
               "procedureName": "no-invalid-link-text",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -1794,9 +1795,9 @@
         "reported": []
       },
       "coverage": {
-        "covered": 3,
+        "covered": 6,
         "untested": 0,
-        "cantTell": 3,
+        "cantTell": 0,
         "testCaseTotal": 7
       },
       "testCaseResults": [
@@ -1810,7 +1811,7 @@
             {
               "procedureName": "no-nested-interactive",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -1825,7 +1826,7 @@
             {
               "procedureName": "no-nested-interactive",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -1900,7 +1901,7 @@
             {
               "procedureName": "no-nested-interactive",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -1954,9 +1955,9 @@
         ]
       },
       "coverage": {
-        "covered": 4,
+        "covered": 6,
         "untested": 0,
-        "cantTell": 2,
+        "cantTell": 0,
         "testCaseTotal": 15
       },
       "testCaseResults": [
@@ -1970,7 +1971,7 @@
             {
               "procedureName": "no-invalid-meta",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -2151,7 +2152,7 @@
             {
               "procedureName": "no-invalid-meta",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -2208,9 +2209,9 @@
         ]
       },
       "coverage": {
-        "covered": 4,
+        "covered": 8,
         "untested": 0,
-        "cantTell": 4,
+        "cantTell": 0,
         "testCaseTotal": 11
       },
       "testCaseResults": [
@@ -2224,7 +2225,7 @@
             {
               "procedureName": "no-invalid-meta",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -2329,7 +2330,7 @@
             {
               "procedureName": "no-invalid-meta",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -2359,7 +2360,7 @@
             {
               "procedureName": "no-invalid-meta",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -2374,7 +2375,7 @@
             {
               "procedureName": "no-invalid-meta",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -2397,16 +2398,16 @@
       "procedureNames": [
         "no-invalid-aria-attributes"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
         "reported": []
       },
       "coverage": {
-        "covered": 1,
-        "untested": 1,
-        "cantTell": 5,
+        "covered": 7,
+        "untested": 0,
+        "cantTell": 0,
         "testCaseTotal": 7
       },
       "testCaseResults": [
@@ -2420,7 +2421,7 @@
             {
               "procedureName": "no-invalid-aria-attributes",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -2435,7 +2436,7 @@
             {
               "procedureName": "no-invalid-aria-attributes",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -2450,7 +2451,7 @@
             {
               "procedureName": "no-invalid-aria-attributes",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -2465,7 +2466,7 @@
             {
               "procedureName": "no-invalid-aria-attributes",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -2480,7 +2481,7 @@
             {
               "procedureName": "no-invalid-aria-attributes",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -2510,7 +2511,7 @@
             {
               "procedureName": "no-invalid-aria-attributes",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -2533,9 +2534,9 @@
         "reported": []
       },
       "coverage": {
-        "covered": 3,
-        "untested": 1,
-        "cantTell": 7,
+        "covered": 7,
+        "untested": 0,
+        "cantTell": 3,
         "testCaseTotal": 15
       },
       "testCaseResults": [
@@ -2549,7 +2550,7 @@
             {
               "procedureName": "require-context-role",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -2612,7 +2613,8 @@
             {
               "procedureName": "require-context-role",
               "outcomes": [
-                "untested"
+                "failed",
+                "failed"
               ]
             }
           ]
@@ -2719,7 +2721,7 @@
             {
               "procedureName": "require-context-role",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -2734,7 +2736,7 @@
             {
               "procedureName": "require-context-role",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -2749,7 +2751,7 @@
             {
               "procedureName": "require-context-role",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -2794,9 +2796,9 @@
         "reported": []
       },
       "coverage": {
-        "covered": 1,
-        "untested": 1,
-        "cantTell": 14,
+        "covered": 13,
+        "untested": 0,
+        "cantTell": 2,
         "testCaseTotal": 16
       },
       "testCaseResults": [
@@ -2810,7 +2812,7 @@
             {
               "procedureName": "no-invalid-aria-attributes",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -2825,7 +2827,7 @@
             {
               "procedureName": "no-invalid-aria-attributes",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -2840,7 +2842,7 @@
             {
               "procedureName": "no-invalid-aria-attributes",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -2855,7 +2857,7 @@
             {
               "procedureName": "no-invalid-aria-attributes",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -2870,7 +2872,7 @@
             {
               "procedureName": "no-invalid-aria-attributes",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -2885,7 +2887,7 @@
             {
               "procedureName": "no-invalid-aria-attributes",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -2900,7 +2902,7 @@
             {
               "procedureName": "no-invalid-aria-attributes",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -2915,7 +2917,7 @@
             {
               "procedureName": "no-invalid-aria-attributes",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -2930,7 +2932,7 @@
             {
               "procedureName": "no-invalid-aria-attributes",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -2945,7 +2947,7 @@
             {
               "procedureName": "no-invalid-aria-attributes",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -2960,7 +2962,7 @@
             {
               "procedureName": "no-invalid-aria-attributes",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -3005,7 +3007,7 @@
             {
               "procedureName": "no-invalid-aria-attributes",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -3020,7 +3022,7 @@
             {
               "procedureName": "no-invalid-aria-attributes",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -3056,9 +3058,9 @@
         "reported": []
       },
       "coverage": {
-        "covered": 6,
-        "untested": 2,
-        "cantTell": 15,
+        "covered": 19,
+        "untested": 0,
+        "cantTell": 1,
         "testCaseTotal": 24
       },
       "testCaseResults": [
@@ -3072,7 +3074,7 @@
             {
               "procedureName": "no-invalid-aria-attributes",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -3087,7 +3089,7 @@
             {
               "procedureName": "no-invalid-aria-attributes",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -3102,7 +3104,7 @@
             {
               "procedureName": "no-invalid-aria-attributes",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -3117,7 +3119,7 @@
             {
               "procedureName": "no-invalid-aria-attributes",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -3132,7 +3134,7 @@
             {
               "procedureName": "no-invalid-aria-attributes",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -3147,7 +3149,7 @@
             {
               "procedureName": "no-invalid-aria-attributes",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -3162,7 +3164,7 @@
             {
               "procedureName": "no-invalid-aria-attributes",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -3177,7 +3179,7 @@
             {
               "procedureName": "no-invalid-aria-attributes",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -3192,7 +3194,7 @@
             {
               "procedureName": "no-invalid-aria-attributes",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -3207,7 +3209,7 @@
             {
               "procedureName": "no-invalid-aria-attributes",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -3267,7 +3269,7 @@
             {
               "procedureName": "no-invalid-aria-attributes",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -3282,7 +3284,7 @@
             {
               "procedureName": "no-invalid-aria-attributes",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -3329,7 +3331,7 @@
             {
               "procedureName": "no-invalid-aria-attributes",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -3359,7 +3361,7 @@
             {
               "procedureName": "no-invalid-aria-attributes",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -3374,7 +3376,7 @@
             {
               "procedureName": "no-invalid-aria-attributes",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -3389,7 +3391,7 @@
             {
               "procedureName": "no-invalid-aria-attributes",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -3444,9 +3446,9 @@
         ]
       },
       "coverage": {
-        "covered": 2,
+        "covered": 5,
         "untested": 0,
-        "cantTell": 8,
+        "cantTell": 5,
         "testCaseTotal": 10
       },
       "testCaseResults": [
@@ -3460,7 +3462,7 @@
             {
               "procedureName": "no-duplicate-attributes",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -3475,7 +3477,7 @@
             {
               "procedureName": "no-duplicate-attributes",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -3490,7 +3492,7 @@
             {
               "procedureName": "no-duplicate-attributes",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -3807,9 +3809,9 @@
         "reported": []
       },
       "coverage": {
-        "covered": 7,
+        "covered": 12,
         "untested": 0,
-        "cantTell": 7,
+        "cantTell": 2,
         "testCaseTotal": 15
       },
       "testCaseResults": [
@@ -3823,7 +3825,7 @@
             {
               "procedureName": "no-empty-headings",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -3838,7 +3840,7 @@
             {
               "procedureName": "no-empty-headings",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -3853,7 +3855,7 @@
             {
               "procedureName": "no-empty-headings",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -4018,7 +4020,7 @@
             {
               "procedureName": "no-empty-headings",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -4033,7 +4035,7 @@
             {
               "procedureName": "no-empty-headings",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -4074,9 +4076,9 @@
         "reported": []
       },
       "coverage": {
-        "covered": 2,
+        "covered": 6,
         "untested": 0,
-        "cantTell": 7,
+        "cantTell": 3,
         "testCaseTotal": 10
       },
       "testCaseResults": [
@@ -4090,7 +4092,7 @@
             {
               "procedureName": "no-duplicate-id",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -4105,7 +4107,7 @@
             {
               "procedureName": "no-duplicate-id",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -4195,7 +4197,7 @@
             {
               "procedureName": "no-duplicate-id",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -4210,7 +4212,7 @@
             {
               "procedureName": "no-duplicate-id",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -4257,9 +4259,9 @@
         "reported": []
       },
       "coverage": {
-        "covered": 4,
+        "covered": 6,
         "untested": 0,
-        "cantTell": 3,
+        "cantTell": 1,
         "testCaseTotal": 10
       },
       "testCaseResults": [
@@ -4273,7 +4275,7 @@
             {
               "procedureName": "require-iframe-title",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -4378,7 +4380,7 @@
             {
               "procedureName": "require-iframe-title",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -4442,9 +4444,9 @@
         ]
       },
       "coverage": {
-        "covered": 1,
-        "untested": 1,
-        "cantTell": 10,
+        "covered": 6,
+        "untested": 0,
+        "cantTell": 5,
         "testCaseTotal": 16
       },
       "testCaseResults": [
@@ -4473,7 +4475,7 @@
             {
               "procedureName": "require-valid-alt-text",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -4518,7 +4520,7 @@
             {
               "procedureName": "require-valid-alt-text",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -4578,7 +4580,7 @@
             {
               "procedureName": "require-valid-alt-text",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -4623,7 +4625,7 @@
             {
               "procedureName": "require-valid-alt-text",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -4638,7 +4640,7 @@
             {
               "procedureName": "require-valid-alt-text",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -4653,7 +4655,7 @@
             {
               "procedureName": "require-valid-alt-text",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -4735,9 +4737,9 @@
         ]
       },
       "coverage": {
-        "covered": 1,
+        "covered": 6,
         "untested": 0,
-        "cantTell": 11,
+        "cantTell": 2,
         "testCaseTotal": 12
       },
       "testCaseResults": [
@@ -4751,7 +4753,7 @@
             {
               "procedureName": "no-invalid-link-text",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -4766,7 +4768,7 @@
             {
               "procedureName": "no-invalid-link-text",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -4781,7 +4783,7 @@
             {
               "procedureName": "no-invalid-link-text",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -4826,7 +4828,7 @@
             {
               "procedureName": "no-invalid-link-text",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -4841,7 +4843,7 @@
             {
               "procedureName": "no-invalid-link-text",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -4856,7 +4858,7 @@
             {
               "procedureName": "no-invalid-link-text",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -4871,7 +4873,7 @@
             {
               "procedureName": "no-invalid-link-text",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -4886,7 +4888,7 @@
             {
               "procedureName": "no-invalid-link-text",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -4916,7 +4918,7 @@
             {
               "procedureName": "no-invalid-link-text",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -4941,9 +4943,9 @@
         ]
       },
       "coverage": {
-        "covered": 1,
-        "untested": 1,
-        "cantTell": 16,
+        "covered": 11,
+        "untested": 0,
+        "cantTell": 3,
         "testCaseTotal": 18
       },
       "testCaseResults": [
@@ -4957,7 +4959,7 @@
             {
               "procedureName": "no-invalid-link-text",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -4972,7 +4974,7 @@
             {
               "procedureName": "no-invalid-link-text",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -4987,7 +4989,7 @@
             {
               "procedureName": "no-invalid-link-text",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -5002,7 +5004,7 @@
             {
               "procedureName": "no-invalid-link-text",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -5017,7 +5019,7 @@
             {
               "procedureName": "no-invalid-link-text",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -5032,7 +5034,7 @@
             {
               "procedureName": "no-invalid-link-text",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -5062,7 +5064,7 @@
             {
               "procedureName": "no-invalid-link-text",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -5077,7 +5079,7 @@
             {
               "procedureName": "no-invalid-link-text",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -5107,7 +5109,7 @@
             {
               "procedureName": "no-invalid-link-text",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -5122,7 +5124,7 @@
             {
               "procedureName": "no-invalid-link-text",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -5137,7 +5139,7 @@
             {
               "procedureName": "no-invalid-link-text",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -5167,7 +5169,7 @@
             {
               "procedureName": "no-invalid-link-text",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -5182,7 +5184,7 @@
             {
               "procedureName": "no-invalid-link-text",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -5212,7 +5214,7 @@
             {
               "procedureName": "no-invalid-link-text",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -5267,9 +5269,9 @@
         ]
       },
       "coverage": {
-        "covered": 1,
-        "untested": 6,
-        "cantTell": 2,
+        "covered": 5,
+        "untested": 0,
+        "cantTell": 0,
         "testCaseTotal": 13
       },
       "testCaseResults": [
@@ -5283,7 +5285,7 @@
             {
               "procedureName": "no-invalid-meta",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -5298,7 +5300,7 @@
             {
               "procedureName": "no-invalid-meta",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -5328,7 +5330,7 @@
             {
               "procedureName": "no-invalid-meta",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -5343,7 +5345,8 @@
             {
               "procedureName": "no-invalid-meta",
               "outcomes": [
-                "untested"
+                "failed",
+                "failed"
               ]
             }
           ]
@@ -5373,7 +5376,7 @@
             {
               "procedureName": "no-invalid-meta",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -5418,7 +5421,7 @@
             {
               "procedureName": "no-invalid-meta",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -5433,7 +5436,7 @@
             {
               "procedureName": "no-invalid-meta",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -5448,7 +5451,7 @@
             {
               "procedureName": "no-invalid-meta",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -5502,9 +5505,9 @@
         "reported": []
       },
       "coverage": {
-        "covered": 0,
+        "covered": 3,
         "untested": 0,
-        "cantTell": 6,
+        "cantTell": 3,
         "testCaseTotal": 10
       },
       "testCaseResults": [
@@ -5518,7 +5521,7 @@
             {
               "procedureName": "no-invalid-role",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -5593,7 +5596,7 @@
             {
               "procedureName": "no-invalid-role",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -5653,7 +5656,7 @@
             {
               "procedureName": "no-invalid-role",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -5674,9 +5677,9 @@
         "reported": []
       },
       "coverage": {
-        "covered": 0,
-        "untested": 11,
-        "cantTell": 3,
+        "covered": 10,
+        "untested": 0,
+        "cantTell": 1,
         "testCaseTotal": 15
       },
       "testCaseResults": [
@@ -5690,7 +5693,7 @@
             {
               "procedureName": "require-mandatory-role-attributes",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -5705,7 +5708,7 @@
             {
               "procedureName": "require-mandatory-role-attributes",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -5720,7 +5723,7 @@
             {
               "procedureName": "require-mandatory-role-attributes",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -5735,7 +5738,8 @@
             {
               "procedureName": "require-mandatory-role-attributes",
               "outcomes": [
-                "untested"
+                "failed",
+                "failed"
               ]
             }
           ]
@@ -5750,7 +5754,7 @@
             {
               "procedureName": "require-mandatory-role-attributes",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -5765,7 +5769,8 @@
             {
               "procedureName": "require-mandatory-role-attributes",
               "outcomes": [
-                "untested"
+                "failed",
+                "failed"
               ]
             }
           ]
@@ -5780,7 +5785,7 @@
             {
               "procedureName": "require-mandatory-role-attributes",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -5795,7 +5800,7 @@
             {
               "procedureName": "require-mandatory-role-attributes",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -5810,7 +5815,7 @@
             {
               "procedureName": "require-mandatory-role-attributes",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -5825,7 +5830,7 @@
             {
               "procedureName": "require-mandatory-role-attributes",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -5840,7 +5845,9 @@
             {
               "procedureName": "require-mandatory-role-attributes",
               "outcomes": [
-                "untested"
+                "failed",
+                "failed",
+                "failed"
               ]
             }
           ]
@@ -5855,7 +5862,9 @@
             {
               "procedureName": "require-mandatory-role-attributes",
               "outcomes": [
-                "untested"
+                "failed",
+                "failed",
+                "failed"
               ]
             }
           ]
@@ -5870,7 +5879,7 @@
             {
               "procedureName": "require-mandatory-role-attributes",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
