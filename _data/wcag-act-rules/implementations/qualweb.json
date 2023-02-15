@@ -2,10 +2,10 @@
   "vendor": "LASIGE, Faculdade de Ciências da Universidade de Lisboa",
   "name": "QualWeb",
   "version": "3.0.0",
-  "lastModified": "7 February 2023",
+  "lastModified": "15 February 2023",
   "approvedRules": {
-    "complete": 20,
-    "partial": 2,
+    "complete": 19,
+    "partial": 3,
     "minimal": 0,
     "inconsistent": 0,
     "untested": 0
@@ -37,7 +37,7 @@
       },
       "coverage": {
         "covered": 20,
-        "untested": 1,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 21
       },
@@ -352,7 +352,7 @@
             {
               "procedureName": "autocomplete attribute has valid value",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -4439,7 +4439,7 @@
       "procedureNames": [
         "Line height in style attributes is not !important"
       ],
-      "consistency": "complete",
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -4450,8 +4450,8 @@
         ]
       },
       "coverage": {
-        "covered": 21,
-        "untested": 0,
+        "covered": 20,
+        "untested": 1,
         "cantTell": 0,
         "testCaseTotal": 21
       },
@@ -4571,7 +4571,7 @@
             {
               "procedureName": "Line height in style attributes is not !important",
               "outcomes": [
-                "passed"
+                "untested"
               ]
             }
           ]
@@ -12877,9 +12877,9 @@
         ]
       },
       "coverage": {
-        "covered": 26,
-        "untested": 2,
-        "cantTell": 2,
+        "covered": 27,
+        "untested": 0,
+        "cantTell": 3,
         "testCaseTotal": 32
       },
       "testCaseResults": [
@@ -12923,7 +12923,7 @@
             {
               "procedureName": "Text has minimum contrast",
               "outcomes": [
-                "untested"
+                "cantTell"
               ]
             }
           ]
@@ -13028,7 +13028,7 @@
             {
               "procedureName": "Text has minimum contrast",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -13383,8 +13383,8 @@
         ]
       },
       "coverage": {
-        "covered": 29,
-        "untested": 1,
+        "covered": 30,
+        "untested": 0,
         "cantTell": 2,
         "testCaseTotal": 34
       },
@@ -13519,7 +13519,7 @@
             {
               "procedureName": "Text has enhanced contrast",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
