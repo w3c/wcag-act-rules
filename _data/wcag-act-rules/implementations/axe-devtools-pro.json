@@ -2,7 +2,7 @@
   "vendor": "Deque Systems",
   "name": "Axe DevTools Pro",
   "version": "4.37.1",
-  "lastModified": "14 February 2023",
+  "lastModified": "17 February 2023",
   "approvedRules": {
     "complete": 22,
     "partial": 0,
@@ -1789,8 +1789,8 @@
         ]
       },
       "coverage": {
-        "covered": 7,
-        "untested": 7,
+        "covered": 14,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 14
       },
@@ -1910,7 +1910,7 @@
             {
               "procedureName": "html-has-lang",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -1925,7 +1925,7 @@
             {
               "procedureName": "html-has-lang",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -1940,7 +1940,7 @@
             {
               "procedureName": "html-has-lang",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -1955,7 +1955,7 @@
             {
               "procedureName": "html-has-lang",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -1970,7 +1970,7 @@
             {
               "procedureName": "html-has-lang",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -1985,7 +1985,7 @@
             {
               "procedureName": "html-has-lang",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -2000,7 +2000,7 @@
             {
               "procedureName": "html-has-lang",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
