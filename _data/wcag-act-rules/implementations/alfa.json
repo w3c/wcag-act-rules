@@ -11,8 +11,8 @@
     "untested": 0
   },
   "proposedRules": {
-    "complete": 11,
-    "partial": 2,
+    "complete": 10,
+    "partial": 3,
     "minimal": 3,
     "inconsistent": 8,
     "untested": 42
@@ -7028,12 +7028,12 @@
     },
     {
       "ruleId": "b33eff",
-      "ruleName": "Orientation of the page is not restricted using CSS transform property",
+      "ruleName": "Orientation of the page is not restricted using CSS transforms",
       "ruleApproved": false,
       "procedureNames": [
         "sia-r44"
       ],
-      "consistency": "complete",
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -7045,9 +7045,9 @@
       },
       "coverage": {
         "covered": 10,
-        "untested": 0,
+        "untested": 2,
         "cantTell": 0,
-        "testCaseTotal": 10
+        "testCaseTotal": 12
       },
       "testCaseResults": [
         {
@@ -7076,6 +7076,21 @@
               "procedureName": "sia-r44",
               "outcomes": [
                 "passed"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "4fa1ac6e6c6c65a3cc17e144823e45ff30f428bb",
+          "testCaseName": "Passed Example 3",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/4fa1ac6e6c6c65a3cc17e144823e45ff30f428bb.html",
+          "testCaseApproved": false,
+          "expected": "passed",
+          "procedureResults": [
+            {
+              "procedureName": "sia-r44",
+              "outcomes": [
+                "untested"
               ]
             }
           ]
@@ -7121,6 +7136,21 @@
               "procedureName": "sia-r44",
               "outcomes": [
                 "failed"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "0476fbeac29bee2ad56456947c57d488845d3e77",
+          "testCaseName": "Failed Example 4",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/0476fbeac29bee2ad56456947c57d488845d3e77.html",
+          "testCaseApproved": false,
+          "expected": "failed",
+          "procedureResults": [
+            {
+              "procedureName": "sia-r44",
+              "outcomes": [
+                "untested"
               ]
             }
           ]

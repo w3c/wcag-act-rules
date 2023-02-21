@@ -2,17 +2,17 @@
   "vendor": "LASIGE, Faculdade de Ciências da Universidade de Lisboa",
   "name": "QualWeb",
   "version": "3.0.0",
-  "lastModified": "15 February 2023",
+  "lastModified": "21 February 2023",
   "approvedRules": {
-    "complete": 19,
-    "partial": 3,
+    "complete": 20,
+    "partial": 2,
     "minimal": 0,
     "inconsistent": 0,
     "untested": 0
   },
   "proposedRules": {
-    "complete": 11,
-    "partial": 8,
+    "complete": 10,
+    "partial": 9,
     "minimal": 13,
     "inconsistent": 15,
     "untested": 19
@@ -4544,7 +4544,7 @@
       "procedureNames": [
         "Line height in style attributes is not !important"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -4555,8 +4555,8 @@
         ]
       },
       "coverage": {
-        "covered": 20,
-        "untested": 1,
+        "covered": 21,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 21
       },
@@ -4676,7 +4676,7 @@
             {
               "procedureName": "Line height in style attributes is not !important",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -8775,12 +8775,12 @@
     },
     {
       "ruleId": "b33eff",
-      "ruleName": "Orientation of the page is not restricted using CSS transform property",
+      "ruleName": "Orientation of the page is not restricted using CSS transforms",
       "ruleApproved": false,
       "procedureNames": [
         "Orientation of the page is not restricted using CSS transform property"
       ],
-      "consistency": "complete",
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -8792,9 +8792,9 @@
       },
       "coverage": {
         "covered": 10,
-        "untested": 0,
+        "untested": 2,
         "cantTell": 0,
-        "testCaseTotal": 10
+        "testCaseTotal": 12
       },
       "testCaseResults": [
         {
@@ -8823,6 +8823,21 @@
               "procedureName": "Orientation of the page is not restricted using CSS transform property",
               "outcomes": [
                 "passed"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "4fa1ac6e6c6c65a3cc17e144823e45ff30f428bb",
+          "testCaseName": "Passed Example 3",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/4fa1ac6e6c6c65a3cc17e144823e45ff30f428bb.html",
+          "testCaseApproved": false,
+          "expected": "passed",
+          "procedureResults": [
+            {
+              "procedureName": "Orientation of the page is not restricted using CSS transform property",
+              "outcomes": [
+                "untested"
               ]
             }
           ]
@@ -8868,6 +8883,21 @@
               "procedureName": "Orientation of the page is not restricted using CSS transform property",
               "outcomes": [
                 "failed"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "0476fbeac29bee2ad56456947c57d488845d3e77",
+          "testCaseName": "Failed Example 4",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/0476fbeac29bee2ad56456947c57d488845d3e77.html",
+          "testCaseApproved": false,
+          "expected": "failed",
+          "procedureResults": [
+            {
+              "procedureName": "Orientation of the page is not restricted using CSS transform property",
+              "outcomes": [
+                "untested"
               ]
             }
           ]
