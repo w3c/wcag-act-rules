@@ -2,7 +2,7 @@
   "vendor": "Deque Systems",
   "name": "Axe-core",
   "version": "4.6.0",
-  "lastModified": "21 February 2023",
+  "lastModified": "22 February 2023",
   "approvedRules": {
     "complete": 22,
     "partial": 0,
@@ -8562,8 +8562,8 @@
         ]
       },
       "coverage": {
-        "covered": 9,
-        "untested": 2,
+        "covered": 10,
+        "untested": 0,
         "cantTell": 1,
         "testCaseTotal": 12
       },
@@ -8608,7 +8608,7 @@
             {
               "procedureName": "css-orientation-lock",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -8668,7 +8668,7 @@
             {
               "procedureName": "css-orientation-lock",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]

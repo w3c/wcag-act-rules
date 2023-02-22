@@ -18807,6 +18807,29 @@
           "earl:TestSubject",
           "sch:WebPage"
         ],
+        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/b33eff/4fa1ac6e6c6c65a3cc17e144823e45ff30f428bb.html"
+      },
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:passed"
+      },
+      "test": {
+        "@type": "TestCase",
+        "title": "css-orientation-lock",
+        "@id": "https://dequeuniversity.com/rules/axe/4.6/css-orientation-lock?application=axeAPI",
+        "isPartOf": [
+          "WCAG2:orientation"
+        ]
+      }
+    },
+    {
+      "@type": "Assertion",
+      "mode": "earl:automatic",
+      "subject": {
+        "@type": [
+          "earl:TestSubject",
+          "sch:WebPage"
+        ],
         "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/b33eff/32ee0d96f92591c1e34db35754117daaf75a5005.html"
       },
       "result": {
@@ -18858,6 +18881,29 @@
       "result": {
         "@type": "TestResult",
         "outcome": "earl:failed"
+      },
+      "test": {
+        "@type": "TestCase",
+        "title": "css-orientation-lock",
+        "@id": "https://dequeuniversity.com/rules/axe/4.6/css-orientation-lock?application=axeAPI",
+        "isPartOf": [
+          "WCAG2:orientation"
+        ]
+      }
+    },
+    {
+      "@type": "Assertion",
+      "mode": "earl:automatic",
+      "subject": {
+        "@type": [
+          "earl:TestSubject",
+          "sch:WebPage"
+        ],
+        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/b33eff/0476fbeac29bee2ad56456947c57d488845d3e77.html"
+      },
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:passed"
       },
       "test": {
         "@type": "TestCase",
