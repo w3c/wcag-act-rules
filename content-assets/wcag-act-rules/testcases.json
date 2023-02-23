@@ -3,7 +3,7 @@
   "website": "https://www.w3.org/WAI/standards-guidelines/act/rules/",
   "license": "https://act-rules.github.io/pages/license/",
   "description": "Accessibility conformance testing rules for HTML",
-  "count": 1142,
+  "count": 1144,
   "testcases": [
     {
       "ruleId": "73f2c2",
@@ -11587,6 +11587,42 @@
       "testcaseTitle": "Passed Example 9",
       "relativePath": "testcases/73f2c2/efcd5df49b39506dac34a310f4b8bc0df71716d3.html",
       "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/73f2c2/efcd5df49b39506dac34a310f4b8bc0df71716d3.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/73f2c2/proposed/"
+    },
+    {
+      "ruleId": "73f2c2",
+      "ruleName": "Autocomplete attribute has valid value",
+      "ruleAccessibilityRequirements": {
+        "wcag21:1.3.5": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "inapplicable",
+      "testcaseId": "41c0b66bc0208aef009343935649f2bec3ae778d",
+      "testcaseTitle": "Inapplicable Example 8",
+      "relativePath": "testcases/73f2c2/41c0b66bc0208aef009343935649f2bec3ae778d.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/73f2c2/41c0b66bc0208aef009343935649f2bec3ae778d.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/73f2c2/proposed/"
+    },
+    {
+      "ruleId": "73f2c2",
+      "ruleName": "Autocomplete attribute has valid value",
+      "ruleAccessibilityRequirements": {
+        "wcag21:1.3.5": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "inapplicable",
+      "testcaseId": "631fc4f23b93e9486e5cc07aed11a99003d4f354",
+      "testcaseTitle": "Inapplicable Example 9",
+      "relativePath": "testcases/73f2c2/631fc4f23b93e9486e5cc07aed11a99003d4f354.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/73f2c2/631fc4f23b93e9486e5cc07aed11a99003d4f354.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/73f2c2/proposed/"
     },
     {
