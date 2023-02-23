@@ -37,9 +37,9 @@
       },
       "coverage": {
         "covered": 21,
-        "untested": 0,
+        "untested": 2,
         "cantTell": 0,
-        "testCaseTotal": 21
+        "testCaseTotal": 23
       },
       "testCaseResults": [
         {
@@ -353,6 +353,36 @@
               "procedureName": "autocomplete-valid",
               "outcomes": [
                 "passed"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "41c0b66bc0208aef009343935649f2bec3ae778d",
+          "testCaseName": "Inapplicable Example 8",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/73f2c2/41c0b66bc0208aef009343935649f2bec3ae778d.html",
+          "testCaseApproved": false,
+          "expected": "inapplicable",
+          "procedureResults": [
+            {
+              "procedureName": "autocomplete-valid",
+              "outcomes": [
+                "untested"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "631fc4f23b93e9486e5cc07aed11a99003d4f354",
+          "testCaseName": "Inapplicable Example 9",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/73f2c2/631fc4f23b93e9486e5cc07aed11a99003d4f354.html",
+          "testCaseApproved": false,
+          "expected": "inapplicable",
+          "procedureResults": [
+            {
+              "procedureName": "autocomplete-valid",
+              "outcomes": [
+                "untested"
               ]
             }
           ]
