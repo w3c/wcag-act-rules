@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> b4f0c3</p>
-  <p><strong>Date:</strong> Updated 11 July 2022</p>
+  <p><strong>Date:</strong> Updated 24 February 2023</p>
   <p><strong>Authors:</strong> <a href="https://github.com/audreymaniez">Audrey Maniez</a>, <a href="https://github.com/jkodu">Jey Nandakumar</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -19,7 +19,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that the `meta` element retains the user agent ability to zoom.
-  last_modified: 11 July 2022
+  last_modified: 24 February 2023
   scs_tested:
     - handle: Resize text
       num: 1.4.4
@@ -60,6 +60,7 @@ This rule is designed specifically for [1.4.4 Resize text][sc144], which require
 ### Bibliography
 
 - [Understanding Success Criterion 1.4.4: Resize text](https://www.w3.org/WAI/WCAG21/Understanding/resize-text)
+- [Understanding Success Criterion 1.4.10: Reflow](https://www.w3.org/WAI/WCAG21/Understanding/reflow)
 - [HTML Specification - The `meta` element][meta]
 - [The initial-scale, minimum-scale, and maximum-scale properties][maximum-scale]
 - [The user-scalable property][user-scalable]
@@ -76,6 +77,18 @@ This rule is designed specifically for [1.4.4 Resize text][sc144], which require
         <li>Any <code>failed</code> outcomes: success criterion is not satisfied</li>
         <li>All <code>passed</code> outcomes: success criterion needs further testing</li>
         <li>An <code>inapplicable</code> outcome: success criterion needs further testing</li>
+      </ul></li>
+    </ul>
+  </details></li>
+  <li><details>
+    <summary><span>1.4.10 Reflow (Level AA)</span></summary>
+    <ul>
+      <li><a href="https://www.w3.org/TR/WCAG21/#reflow">Learn more about 1.4.10 Reflow</a></li>
+      <li><strong>Required for conformance</strong> to WCAG 2.1 on level AA and higher.</li>
+      <li>Outcome mapping: <ul>
+        <li>Any <code>failed</code> outcomes: success criterion is not satisfied</li>
+        <li>All <code>passed</code> outcomes: success criterion </li>
+        <li>An <code>inapplicable</code> outcome: success criterion </li>
       </ul></li>
     </ul>
   </details></li>
