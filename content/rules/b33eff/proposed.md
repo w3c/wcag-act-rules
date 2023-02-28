@@ -1,5 +1,5 @@
 ---
-title: "Orientation of the page is not restricted using CSS transform property"
+title: "Orientation of the page is not restricted using CSS transforms"
 permalink: /standards-guidelines/act/rules/b33eff/proposed/
 ref: /standards-guidelines/act/rules/b33eff/proposed/
 lang: en
@@ -9,17 +9,17 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> b33eff</p>
-  <p><strong>Date:</strong> Updated 14 November 2022</p>
+  <p><strong>Date:</strong> Updated 21 February 2023</p>
   <p><strong>Authors:</strong> <a href="https://github.com/audreymaniez">Audrey Maniez</a>, <a href="https://github.com/jkodu">Jey Nandakumar</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
 rule_meta:
   id: b33eff
-  name: "Orientation of the page is not restricted using CSS transform property"
+  name: "Orientation of the page is not restricted using CSS transforms"
   rule_type: atomic
   description: |
-    This rule checks that page content is not restricted to either `landscape` or `portrait` orientation using CSS transform property.
-  last_modified: 14 November 2022
+    This rule checks that page content is not restricted to either `landscape` or `portrait` orientation using CSS transforms
+  last_modified: 21 February 2023
   scs_tested:
     - handle: Orientation
       num: 1.3.4
@@ -28,17 +28,20 @@ rule_meta:
 
 ## Applicability
 
-This rule applies to any [HTML element][] that is [visible](#visible) and has a CSS [transform](https://www.w3.org/TR/css-transforms/#propdef-transform) property that is applied conditionally on the [orientation](https://www.w3.org/TR/css3-mediaqueries/#orientation) [media feature](https://www.w3.org/TR/css3-mediaqueries/#media1) with a value of `landscape` or `portrait`, where the CSS [transform](https://www.w3.org/TR/css-transforms/#propdef-transform) property has any of the below [transformation functions](https://www.w3.org/TR/css-transforms/#transform-functions):
+This rule applies to any [HTML element][] that is [visible](#visible) and has one of the following CSS properties applied conditionally on the [orientation](https://www.w3.org/TR/css3-mediaqueries/#orientation) [media feature](https://www.w3.org/TR/css3-mediaqueries/#media1) with a value of `landscape` or `portrait`:
 
-- [rotate](https://www.w3.org/TR/css-transforms/#funcdef-transform-rotate)
-- [rotate3d](https://drafts.csswg.org/css-transforms-2/#funcdef-rotate3d)
-- [rotateZ](https://drafts.csswg.org/css-transforms-2/#funcdef-rotatez)
-- [matrix](https://www.w3.org/TR/css-transforms/#funcdef-transform-matrix)
-- [matrix3d](https://drafts.csswg.org/css-transforms-2/#funcdef-matrix3d)
+- the CSS [rotate](https://www.w3.org/TR/css-transforms-2/#individual-transforms) property; or
+- the CSS [transform](https://www.w3.org/TR/css-transforms/#propdef-transform) property with any of the below [transformation functions](https://www.w3.org/TR/css-transforms/#transform-functions):
 
-**Note:** These specific [transformation functions](https://www.w3.org/TR/css-transforms/#transform-functions) are of interest to this rule as they have the potential to affect the [rotation](https://drafts.csswg.org/css-transforms-2/#Rotate3dDefined) of a given element.
+	- [rotate](https://www.w3.org/TR/css-transforms/#funcdef-transform-rotate)
+	- [rotate3d](https://www.w3.org/TR/css-transforms-2/#funcdef-rotate3d)
+	- [rotateZ](https://www.w3.org/TR/css-transforms-2/#funcdef-rotatez)
+	- [matrix](https://www.w3.org/TR/css-transforms/#funcdef-transform-matrix)
+	- [matrix3d](https://www.w3.org/TR/css-transforms-2/#funcdef-matrix3d)
 
-**Note:** The [rotate3d](https://drafts.csswg.org/css-transforms-2/#funcdef-rotate3d), [rotateZ](https://drafts.csswg.org/css-transforms-2/#funcdef-rotatez) and [matrix3d](https://drafts.csswg.org/css-transforms-2/#funcdef-matrix3d) are currently part of a [W3C](https://www.w3.org/) Editor's Draft.
+**Note:** These specific [transformation functions](https://www.w3.org/TR/css-transforms/#transform-functions) are of interest to this rule as they have the potential to affect the [rotation](https://www.w3.org/TR/css-transforms-2/#Rotate3dDefined) of a given element.
+
+**Note:** The [rotate](https://www.w3.org/TR/css-transforms-2/#individual-transforms) property and the [rotate3d](https://www.w3.org/TR/css-transforms-2/#funcdef-rotate3d), [rotateZ](https://www.w3.org/TR/css-transforms-2/#funcdef-rotatez) and [matrix3d](https://www.w3.org/TR/css-transforms-2/#funcdef-matrix3d) transform functions are currently part of a [W3C](https://www.w3.org/) Working Draft and widely implemented in browsers.
 
 ## Expectation
 
@@ -64,7 +67,7 @@ There are no accessibility support issues known.
 
 - [Understanding Success Criterion 1.3.4: Orientation](https://www.w3.org/WAI/WCAG21/Understanding/orientation.html)
 - [CSS Transforms Module Level 1](https://www.w3.org/TR/css-transforms/#funcdef-transform-matrix)
-- [CSS Transforms Module Level 2](https://drafts.csswg.org/css-transforms-2)
+- [CSS Transforms Module Level 2](https://www.w3.org/TR/css-transforms-2)
 - [CSS3 Media Queries](https://www.w3.org/TR/css3-mediaqueries/)
 - [Managing screen orientation](https://developer.mozilla.org/en-US/docs/Web/API/CSS_Object_Model/Managing_screen_orientation)
 - [Orientation](https://www.w3.org/TR/css3-mediaqueries/#orientation)
@@ -102,7 +105,7 @@ The following aspects are required in using this rule.
 
 <a class="example-link" title="Passed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/0b392e6774d063a24241c3629113909e98c98607.html">Open in a new tab</a>
 
-A page where CSS [transform](https://www.w3.org/TR/css-transforms/#propdef-transform) property has [rotateZ](https://drafts.csswg.org/css-transforms-2/#funcdef-rotatez) [transform function](https://www.w3.org/TR/css-transforms/#transform-functions) conditionally applied on the [orientation](https://www.w3.org/TR/css3-mediaqueries/#orientation) [media feature](https://www.w3.org/TR/css3-mediaqueries/#media1) which does not restrict the element to either `portrait` or `landscape` orientation.
+A page where CSS [transform](https://www.w3.org/TR/css-transforms/#propdef-transform) property has [rotateZ](https://www.w3.org/TR/css-transforms-2/#funcdef-rotatez) [transform function](https://www.w3.org/TR/css-transforms/#transform-functions) conditionally applied on the [orientation](https://www.w3.org/TR/css3-mediaqueries/#orientation) [media feature](https://www.w3.org/TR/css3-mediaqueries/#media1) which does not restrict the element to either `portrait` or `landscape` orientation.
 
 ```html
 <html lang="en">
@@ -152,6 +155,32 @@ A page where CSS [transform](https://www.w3.org/TR/css-transforms/#propdef-trans
 </html>
 ```
 
+#### Passed Example 3
+
+<a class="example-link" title="Passed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/4fa1ac6e6c6c65a3cc17e144823e45ff30f428bb.html">Open in a new tab</a>
+
+A page where the CSS [rotate](https://www.w3.org/TR/css-transforms-2/#individual-transforms) property has a 0 degree rotation conditionally applied on the [orientation](https://www.w3.org/TR/css3-mediaqueries/#orientation) [media feature](https://www.w3.org/TR/css3-mediaqueries/#media1) which does not restrict the element to either `portrait` or `landscape` orientation.
+
+```html
+<html lang="en">
+	<head>
+		<title>Page with some content</title>
+		<style>
+			@media (orientation: portrait) {
+				html {
+					rotate: 0turn;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<main>
+			Page Content
+		</main>
+	</body>
+</html>
+```
+
 ### Failed
 
 #### Failed Example 1
@@ -182,7 +211,7 @@ A page where CSS [transform](https://www.w3.org/TR/css-transforms/#propdef-trans
 
 <a class="example-link" title="Failed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/388f97562ae3b7e3aec7ad6305df36a91b68cf77.html">Open in a new tab</a>
 
-A page where CSS [transform](https://www.w3.org/TR/css-transforms/#propdef-transform) property has [matrix3d](https://drafts.csswg.org/css-transforms-2/#funcdef-matrix3d) [transform function](https://www.w3.org/TR/css-transforms/#transform-functions) conditionally applied on the [orientation](https://www.w3.org/TR/css3-mediaqueries/#orientation) [media feature](https://www.w3.org/TR/css3-mediaqueries/#media1) which restricts the element to `portrait` orientation.
+A page where CSS [transform](https://www.w3.org/TR/css-transforms/#propdef-transform) property has [matrix3d](https://www.w3.org/TR/css-transforms-2/#funcdef-matrix3d) [transform function](https://www.w3.org/TR/css-transforms/#transform-functions) conditionally applied on the [orientation](https://www.w3.org/TR/css3-mediaqueries/#orientation) [media feature](https://www.w3.org/TR/css3-mediaqueries/#media1) which restricts the element to `portrait` orientation.
 
 ```html
 <html lang="en">
@@ -220,6 +249,30 @@ This page appears rotated at a slight angle of 2.5 degrees for stylistic purpose
 			@media (orientation: landscape) {
 				body {
 					transform: rotate(92.5deg);
+				}
+			}
+		</style>
+	</head>
+	<body>
+		Page Content
+	</body>
+</html>
+```
+
+#### Failed Example 4
+
+<a class="example-link" title="Failed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/0476fbeac29bee2ad56456947c57d488845d3e77.html">Open in a new tab</a>
+
+A page where the CSS [rotate](https://www.w3.org/TR/css-transforms-2/#individual-transforms) property has a 90 degree rotation conditionally applied on the [orientation](https://www.w3.org/TR/css3-mediaqueries/#orientation) [media feature](https://www.w3.org/TR/css3-mediaqueries/#media1) which restricts the element to `landscape` orientation.
+
+```html
+<html lang="en">
+	<head>
+		<title>Page with some content</title>
+		<style>
+			@media (orientation: portrait) {
+				html {
+					rotate: 90deg;
 				}
 			}
 		</style>

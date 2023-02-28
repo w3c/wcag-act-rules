@@ -57,7 +57,6 @@
 
 - name: Axe DevTools Pro
   homepage: https://www.deque.com/axe/devtools/
-  version: 4.37.1
   vendor: Deque Systems
   vendorHomepage: https://deque.com/
   uniqueKey: axe-devtools-pro
@@ -95,7 +94,6 @@
     `RuleId1:ReasonCode1,ReasonCode2|RuleId2:ReasonCode3,ReasonCode4`.
 
 - name: ember-template-lint
-  version: 4.16.1
   vendor: contributors in the Ember.js community
   uniqueKey: ember-template-lint
   type: Linter
@@ -133,7 +131,6 @@
   jsonReport: https://qa.powermapper.com/Tests/ACT-R/report.json
 
 - name: Trusted Tester
-  version: 5.1
   vendor: US federal government
   uniqueKey: trusted-tester
   type: Test methodology

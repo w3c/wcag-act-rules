@@ -2,20 +2,20 @@
   "vendor": "IBM Accessibility",
   "name": "Equal Access Accessibility Checker",
   "version": "3.1.42-rc.0",
-  "lastModified": "9 February 2023",
+  "lastModified": "28 February 2023",
   "approvedRules": {
-    "complete": 16,
-    "partial": 4,
+    "complete": 15,
+    "partial": 5,
     "minimal": 0,
     "inconsistent": 2,
     "untested": 0
   },
   "proposedRules": {
     "complete": 7,
-    "partial": 5,
+    "partial": 6,
     "minimal": 1,
     "inconsistent": 1,
-    "untested": 52
+    "untested": 51
   },
   "actRuleMapping": [
     {
@@ -37,9 +37,9 @@
       },
       "coverage": {
         "covered": 20,
-        "untested": 1,
+        "untested": 2,
         "cantTell": 0,
-        "testCaseTotal": 21
+        "testCaseTotal": 23
       },
       "testCaseResults": [
         {
@@ -348,6 +348,36 @@
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/73f2c2/efcd5df49b39506dac34a310f4b8bc0df71716d3.html",
           "testCaseApproved": false,
           "expected": "passed",
+          "procedureResults": [
+            {
+              "procedureName": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_2,Fail_attribute_incorrect",
+              "outcomes": [
+                "failed"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "41c0b66bc0208aef009343935649f2bec3ae778d",
+          "testCaseName": "Inapplicable Example 8",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/73f2c2/41c0b66bc0208aef009343935649f2bec3ae778d.html",
+          "testCaseApproved": false,
+          "expected": "inapplicable",
+          "procedureResults": [
+            {
+              "procedureName": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_2,Fail_attribute_incorrect",
+              "outcomes": [
+                "untested"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "631fc4f23b93e9486e5cc07aed11a99003d4f354",
+          "testCaseName": "Inapplicable Example 9",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/73f2c2/631fc4f23b93e9486e5cc07aed11a99003d4f354.html",
+          "testCaseApproved": false,
+          "expected": "inapplicable",
           "procedureResults": [
             {
               "procedureName": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_2,Fail_attribute_incorrect",
@@ -1444,7 +1474,7 @@
         "WCAG20_Html_HasLang:Pass_0,Fail_3",
         "html_lang_valid:Pass_0,Fail_1"
       ],
-      "consistency": "complete",
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -1456,9 +1486,9 @@
       },
       "coverage": {
         "covered": 7,
-        "untested": 0,
+        "untested": 7,
         "cantTell": 0,
-        "testCaseTotal": 7
+        "testCaseTotal": 14
       },
       "testCaseResults": [
         {
@@ -1604,6 +1634,153 @@
               "procedureName": "html_lang_valid:Pass_0,Fail_1",
               "outcomes": [
                 "inapplicable"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "0fac26928e2bf6b7db6c7f46a1e0ab50aaa8a7c1",
+          "testCaseName": "Passed Example 1",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b5c3f8/0fac26928e2bf6b7db6c7f46a1e0ab50aaa8a7c1.html",
+          "testCaseApproved": false,
+          "expected": "passed",
+          "procedureResults": [
+            {
+              "procedureName": "WCAG20_Html_HasLang:Pass_0,Fail_3",
+              "outcomes": [
+                "untested"
+              ]
+            },
+            {
+              "procedureName": "html_lang_valid:Pass_0,Fail_1",
+              "outcomes": [
+                "untested"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "473352935acf2463b14dbd8e38073e913eeb5c08",
+          "testCaseName": "Failed Example 1",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b5c3f8/473352935acf2463b14dbd8e38073e913eeb5c08.html",
+          "testCaseApproved": false,
+          "expected": "failed",
+          "procedureResults": [
+            {
+              "procedureName": "WCAG20_Html_HasLang:Pass_0,Fail_3",
+              "outcomes": [
+                "untested"
+              ]
+            },
+            {
+              "procedureName": "html_lang_valid:Pass_0,Fail_1",
+              "outcomes": [
+                "untested"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "98681b2a7949e49b2da1b353f70e688528fe7ddc",
+          "testCaseName": "Failed Example 2",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b5c3f8/98681b2a7949e49b2da1b353f70e688528fe7ddc.html",
+          "testCaseApproved": false,
+          "expected": "failed",
+          "procedureResults": [
+            {
+              "procedureName": "WCAG20_Html_HasLang:Pass_0,Fail_3",
+              "outcomes": [
+                "untested"
+              ]
+            },
+            {
+              "procedureName": "html_lang_valid:Pass_0,Fail_1",
+              "outcomes": [
+                "untested"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "4ea0280617a1b71dcc327356484f8767919b0f40",
+          "testCaseName": "Failed Example 3",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b5c3f8/4ea0280617a1b71dcc327356484f8767919b0f40.html",
+          "testCaseApproved": false,
+          "expected": "failed",
+          "procedureResults": [
+            {
+              "procedureName": "WCAG20_Html_HasLang:Pass_0,Fail_3",
+              "outcomes": [
+                "untested"
+              ]
+            },
+            {
+              "procedureName": "html_lang_valid:Pass_0,Fail_1",
+              "outcomes": [
+                "untested"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "4f94c3e26f43701d91db403fe26cd8894bdc8ccf",
+          "testCaseName": "Failed Example 4",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b5c3f8/4f94c3e26f43701d91db403fe26cd8894bdc8ccf.html",
+          "testCaseApproved": false,
+          "expected": "failed",
+          "procedureResults": [
+            {
+              "procedureName": "WCAG20_Html_HasLang:Pass_0,Fail_3",
+              "outcomes": [
+                "untested"
+              ]
+            },
+            {
+              "procedureName": "html_lang_valid:Pass_0,Fail_1",
+              "outcomes": [
+                "untested"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "b584aa8aeb33814a0ecb63fd9ed4d97f2211f837",
+          "testCaseName": "Inapplicable Example 1",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b5c3f8/b584aa8aeb33814a0ecb63fd9ed4d97f2211f837.svg",
+          "testCaseApproved": false,
+          "expected": "inapplicable",
+          "procedureResults": [
+            {
+              "procedureName": "WCAG20_Html_HasLang:Pass_0,Fail_3",
+              "outcomes": [
+                "untested"
+              ]
+            },
+            {
+              "procedureName": "html_lang_valid:Pass_0,Fail_1",
+              "outcomes": [
+                "untested"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "58847c387d3b2cfa7e57c6ed613a8f31569cfd30",
+          "testCaseName": "Inapplicable Example 2",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b5c3f8/58847c387d3b2cfa7e57c6ed613a8f31569cfd30.xml",
+          "testCaseApproved": false,
+          "expected": "inapplicable",
+          "procedureResults": [
+            {
+              "procedureName": "WCAG20_Html_HasLang:Pass_0,Fail_3",
+              "outcomes": [
+                "untested"
+              ]
+            },
+            {
+              "procedureName": "html_lang_valid:Pass_0,Fail_1",
+              "outcomes": [
+                "untested"
               ]
             }
           ]
@@ -7180,12 +7357,12 @@
     },
     {
       "ruleId": "b33eff",
-      "ruleName": "Orientation of the page is not restricted using CSS transform property",
+      "ruleName": "Orientation of the page is not restricted using CSS transforms",
       "ruleApproved": false,
       "procedureNames": [
         "element_orientation_unlocked:pass,fail_locked"
       ],
-      "consistency": "complete",
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -7197,9 +7374,9 @@
       },
       "coverage": {
         "covered": 10,
-        "untested": 0,
+        "untested": 2,
         "cantTell": 0,
-        "testCaseTotal": 10
+        "testCaseTotal": 12
       },
       "testCaseResults": [
         {
@@ -7228,6 +7405,21 @@
               "procedureName": "element_orientation_unlocked:pass,fail_locked",
               "outcomes": [
                 "passed"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "4fa1ac6e6c6c65a3cc17e144823e45ff30f428bb",
+          "testCaseName": "Passed Example 3",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/4fa1ac6e6c6c65a3cc17e144823e45ff30f428bb.html",
+          "testCaseApproved": false,
+          "expected": "passed",
+          "procedureResults": [
+            {
+              "procedureName": "element_orientation_unlocked:pass,fail_locked",
+              "outcomes": [
+                "untested"
               ]
             }
           ]
@@ -7273,6 +7465,21 @@
               "procedureName": "element_orientation_unlocked:pass,fail_locked",
               "outcomes": [
                 "failed"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "0476fbeac29bee2ad56456947c57d488845d3e77",
+          "testCaseName": "Failed Example 4",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/0476fbeac29bee2ad56456947c57d488845d3e77.html",
+          "testCaseApproved": false,
+          "expected": "failed",
+          "procedureResults": [
+            {
+              "procedureName": "element_orientation_unlocked:pass,fail_locked",
+              "outcomes": [
+                "untested"
               ]
             }
           ]
@@ -7845,10 +8052,132 @@
       "ruleId": "akn7bn",
       "ruleName": "Iframe with interactive elements is not excluded from tab-order",
       "ruleApproved": false,
-      "procedureNames": [],
-      "consistency": null,
-      "coverage": null,
-      "testCaseResults": []
+      "procedureNames": [
+        "iframe_interactive_tabbable:pass,fail_invalid"
+      ],
+      "consistency": "complete",
+      "accessibilityRequirements": {
+        "correct": true,
+        "expected": [
+          "WCAG2:keyboard"
+        ],
+        "reported": [
+          "WCAG2:keyboard"
+        ]
+      },
+      "coverage": {
+        "covered": 7,
+        "untested": 0,
+        "cantTell": 0,
+        "testCaseTotal": 7
+      },
+      "testCaseResults": [
+        {
+          "testcaseId": "1e3939d9f8e0f78f9c564ec6feb12cc5635c0acb",
+          "testCaseName": "Passed Example 1",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/akn7bn/1e3939d9f8e0f78f9c564ec6feb12cc5635c0acb.html",
+          "testCaseApproved": false,
+          "expected": "passed",
+          "procedureResults": [
+            {
+              "procedureName": "iframe_interactive_tabbable:pass,fail_invalid",
+              "outcomes": [
+                "passed"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "a16be608639d0976b9d044360695d853384f56f0",
+          "testCaseName": "Passed Example 2",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/akn7bn/a16be608639d0976b9d044360695d853384f56f0.html",
+          "testCaseApproved": false,
+          "expected": "passed",
+          "procedureResults": [
+            {
+              "procedureName": "iframe_interactive_tabbable:pass,fail_invalid",
+              "outcomes": [
+                "passed"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "62673162e22ee1e95e962522b1d1c3b549dbfc49",
+          "testCaseName": "Failed Example 1",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/akn7bn/62673162e22ee1e95e962522b1d1c3b549dbfc49.html",
+          "testCaseApproved": false,
+          "expected": "failed",
+          "procedureResults": [
+            {
+              "procedureName": "iframe_interactive_tabbable:pass,fail_invalid",
+              "outcomes": [
+                "failed"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "c90de6661c91b4449b96fb31e487c70d1e3350df",
+          "testCaseName": "Inapplicable Example 1",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/akn7bn/c90de6661c91b4449b96fb31e487c70d1e3350df.html",
+          "testCaseApproved": false,
+          "expected": "inapplicable",
+          "procedureResults": [
+            {
+              "procedureName": "iframe_interactive_tabbable:pass,fail_invalid",
+              "outcomes": [
+                "inapplicable"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "033e04cced5973596d9aa724feacb027d23b4c53",
+          "testCaseName": "Inapplicable Example 2",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/akn7bn/033e04cced5973596d9aa724feacb027d23b4c53.html",
+          "testCaseApproved": false,
+          "expected": "inapplicable",
+          "procedureResults": [
+            {
+              "procedureName": "iframe_interactive_tabbable:pass,fail_invalid",
+              "outcomes": [
+                "inapplicable"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "63cd20ec8886f4c59ff54f406a0e5933847bce75",
+          "testCaseName": "Inapplicable Example 3",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/akn7bn/63cd20ec8886f4c59ff54f406a0e5933847bce75.html",
+          "testCaseApproved": false,
+          "expected": "inapplicable",
+          "procedureResults": [
+            {
+              "procedureName": "iframe_interactive_tabbable:pass,fail_invalid",
+              "outcomes": [
+                "inapplicable"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "aa153f6799d28563054ce66bcf7dfcedf9b75288",
+          "testCaseName": "Inapplicable Example 4",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/akn7bn/aa153f6799d28563054ce66bcf7dfcedf9b75288.html",
+          "testCaseApproved": false,
+          "expected": "inapplicable",
+          "procedureResults": [
+            {
+              "procedureName": "iframe_interactive_tabbable:pass,fail_invalid",
+              "outcomes": [
+                "inapplicable"
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "ruleId": "qt1vmo",
@@ -8944,8 +9273,8 @@
         ]
       },
       "coverage": {
-        "covered": 19,
-        "untested": 2,
+        "covered": 21,
+        "untested": 0,
         "cantTell": 4,
         "testCaseTotal": 32
       },
@@ -8990,7 +9319,7 @@
             {
               "procedureName": "IBMA_Color_Contrast_WCAG2AA_PV:Pass_0,Potential_1",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -9095,7 +9424,7 @@
             {
               "procedureName": "IBMA_Color_Contrast_WCAG2AA_PV:Pass_0,Potential_1",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]

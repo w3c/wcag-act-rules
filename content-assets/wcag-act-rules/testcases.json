@@ -3,7 +3,7 @@
   "website": "https://www.w3.org/WAI/standards-guidelines/act/rules/",
   "license": "https://act-rules.github.io/pages/license/",
   "description": "Accessibility conformance testing rules for HTML",
-  "count": 1133,
+  "count": 1144,
   "testcases": [
     {
       "ruleId": "73f2c2",
@@ -11590,6 +11590,42 @@
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/73f2c2/proposed/"
     },
     {
+      "ruleId": "73f2c2",
+      "ruleName": "Autocomplete attribute has valid value",
+      "ruleAccessibilityRequirements": {
+        "wcag21:1.3.5": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "inapplicable",
+      "testcaseId": "41c0b66bc0208aef009343935649f2bec3ae778d",
+      "testcaseTitle": "Inapplicable Example 8",
+      "relativePath": "testcases/73f2c2/41c0b66bc0208aef009343935649f2bec3ae778d.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/73f2c2/41c0b66bc0208aef009343935649f2bec3ae778d.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/73f2c2/proposed/"
+    },
+    {
+      "ruleId": "73f2c2",
+      "ruleName": "Autocomplete attribute has valid value",
+      "ruleAccessibilityRequirements": {
+        "wcag21:1.3.5": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "inapplicable",
+      "testcaseId": "631fc4f23b93e9486e5cc07aed11a99003d4f354",
+      "testcaseTitle": "Inapplicable Example 9",
+      "relativePath": "testcases/73f2c2/631fc4f23b93e9486e5cc07aed11a99003d4f354.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/73f2c2/631fc4f23b93e9486e5cc07aed11a99003d4f354.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/73f2c2/proposed/"
+    },
+    {
       "ruleId": "3e12e1",
       "ruleName": "Block of repeated content is collapsible",
       "ruleAccessibilityRequirements": {
@@ -12407,7 +12443,7 @@
     },
     {
       "ruleId": "b33eff",
-      "ruleName": "Orientation of the page is not restricted using CSS transform property",
+      "ruleName": "Orientation of the page is not restricted using CSS transforms",
       "ruleAccessibilityRequirements": {
         "wcag21:1.3.4": {
           "forConformance": true,
@@ -12425,7 +12461,7 @@
     },
     {
       "ruleId": "b33eff",
-      "ruleName": "Orientation of the page is not restricted using CSS transform property",
+      "ruleName": "Orientation of the page is not restricted using CSS transforms",
       "ruleAccessibilityRequirements": {
         "wcag21:1.3.4": {
           "forConformance": true,
@@ -12443,7 +12479,25 @@
     },
     {
       "ruleId": "b33eff",
-      "ruleName": "Orientation of the page is not restricted using CSS transform property",
+      "ruleName": "Orientation of the page is not restricted using CSS transforms",
+      "ruleAccessibilityRequirements": {
+        "wcag21:1.3.4": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "4fa1ac6e6c6c65a3cc17e144823e45ff30f428bb",
+      "testcaseTitle": "Passed Example 3",
+      "relativePath": "testcases/b33eff/4fa1ac6e6c6c65a3cc17e144823e45ff30f428bb.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/4fa1ac6e6c6c65a3cc17e144823e45ff30f428bb.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/b33eff/proposed/"
+    },
+    {
+      "ruleId": "b33eff",
+      "ruleName": "Orientation of the page is not restricted using CSS transforms",
       "ruleAccessibilityRequirements": {
         "wcag21:1.3.4": {
           "forConformance": true,
@@ -12461,7 +12515,7 @@
     },
     {
       "ruleId": "b33eff",
-      "ruleName": "Orientation of the page is not restricted using CSS transform property",
+      "ruleName": "Orientation of the page is not restricted using CSS transforms",
       "ruleAccessibilityRequirements": {
         "wcag21:1.3.4": {
           "forConformance": true,
@@ -12479,7 +12533,7 @@
     },
     {
       "ruleId": "b33eff",
-      "ruleName": "Orientation of the page is not restricted using CSS transform property",
+      "ruleName": "Orientation of the page is not restricted using CSS transforms",
       "ruleAccessibilityRequirements": {
         "wcag21:1.3.4": {
           "forConformance": true,
@@ -12497,7 +12551,25 @@
     },
     {
       "ruleId": "b33eff",
-      "ruleName": "Orientation of the page is not restricted using CSS transform property",
+      "ruleName": "Orientation of the page is not restricted using CSS transforms",
+      "ruleAccessibilityRequirements": {
+        "wcag21:1.3.4": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "0476fbeac29bee2ad56456947c57d488845d3e77",
+      "testcaseTitle": "Failed Example 4",
+      "relativePath": "testcases/b33eff/0476fbeac29bee2ad56456947c57d488845d3e77.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/0476fbeac29bee2ad56456947c57d488845d3e77.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/b33eff/proposed/"
+    },
+    {
+      "ruleId": "b33eff",
+      "ruleName": "Orientation of the page is not restricted using CSS transforms",
       "ruleAccessibilityRequirements": {
         "wcag21:1.3.4": {
           "forConformance": true,
@@ -12515,7 +12587,7 @@
     },
     {
       "ruleId": "b33eff",
-      "ruleName": "Orientation of the page is not restricted using CSS transform property",
+      "ruleName": "Orientation of the page is not restricted using CSS transforms",
       "ruleAccessibilityRequirements": {
         "wcag21:1.3.4": {
           "forConformance": true,
@@ -12533,7 +12605,7 @@
     },
     {
       "ruleId": "b33eff",
-      "ruleName": "Orientation of the page is not restricted using CSS transform property",
+      "ruleName": "Orientation of the page is not restricted using CSS transforms",
       "ruleAccessibilityRequirements": {
         "wcag21:1.3.4": {
           "forConformance": true,
@@ -12551,7 +12623,7 @@
     },
     {
       "ruleId": "b33eff",
-      "ruleName": "Orientation of the page is not restricted using CSS transform property",
+      "ruleName": "Orientation of the page is not restricted using CSS transforms",
       "ruleAccessibilityRequirements": {
         "wcag21:1.3.4": {
           "forConformance": true,
@@ -12569,7 +12641,7 @@
     },
     {
       "ruleId": "b33eff",
-      "ruleName": "Orientation of the page is not restricted using CSS transform property",
+      "ruleName": "Orientation of the page is not restricted using CSS transforms",
       "ruleAccessibilityRequirements": {
         "wcag21:1.3.4": {
           "forConformance": true,
@@ -15563,6 +15635,174 @@
       "relativePath": "testcases/ffd0e9/ed1daf488ef94f266fdd2a4c6c4ed016024beb14.html",
       "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ffd0e9/ed1daf488ef94f266fdd2a4c6c4ed016024beb14.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/ffd0e9/proposed/"
+    },
+    {
+      "ruleId": "b5c3f8",
+      "ruleName": "HTML page has lang attribute",
+      "ruleAccessibilityRequirements": {
+        "wcag20:3.1.1": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:H57": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "0fac26928e2bf6b7db6c7f46a1e0ab50aaa8a7c1",
+      "testcaseTitle": "Passed Example 1",
+      "relativePath": "testcases/b5c3f8/0fac26928e2bf6b7db6c7f46a1e0ab50aaa8a7c1.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b5c3f8/0fac26928e2bf6b7db6c7f46a1e0ab50aaa8a7c1.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/b5c3f8/proposed/"
+    },
+    {
+      "ruleId": "b5c3f8",
+      "ruleName": "HTML page has lang attribute",
+      "ruleAccessibilityRequirements": {
+        "wcag20:3.1.1": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:H57": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "473352935acf2463b14dbd8e38073e913eeb5c08",
+      "testcaseTitle": "Failed Example 1",
+      "relativePath": "testcases/b5c3f8/473352935acf2463b14dbd8e38073e913eeb5c08.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b5c3f8/473352935acf2463b14dbd8e38073e913eeb5c08.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/b5c3f8/proposed/"
+    },
+    {
+      "ruleId": "b5c3f8",
+      "ruleName": "HTML page has lang attribute",
+      "ruleAccessibilityRequirements": {
+        "wcag20:3.1.1": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:H57": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "98681b2a7949e49b2da1b353f70e688528fe7ddc",
+      "testcaseTitle": "Failed Example 2",
+      "relativePath": "testcases/b5c3f8/98681b2a7949e49b2da1b353f70e688528fe7ddc.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b5c3f8/98681b2a7949e49b2da1b353f70e688528fe7ddc.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/b5c3f8/proposed/"
+    },
+    {
+      "ruleId": "b5c3f8",
+      "ruleName": "HTML page has lang attribute",
+      "ruleAccessibilityRequirements": {
+        "wcag20:3.1.1": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:H57": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "4ea0280617a1b71dcc327356484f8767919b0f40",
+      "testcaseTitle": "Failed Example 3",
+      "relativePath": "testcases/b5c3f8/4ea0280617a1b71dcc327356484f8767919b0f40.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b5c3f8/4ea0280617a1b71dcc327356484f8767919b0f40.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/b5c3f8/proposed/"
+    },
+    {
+      "ruleId": "b5c3f8",
+      "ruleName": "HTML page has lang attribute",
+      "ruleAccessibilityRequirements": {
+        "wcag20:3.1.1": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:H57": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "4f94c3e26f43701d91db403fe26cd8894bdc8ccf",
+      "testcaseTitle": "Failed Example 4",
+      "relativePath": "testcases/b5c3f8/4f94c3e26f43701d91db403fe26cd8894bdc8ccf.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b5c3f8/4f94c3e26f43701d91db403fe26cd8894bdc8ccf.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/b5c3f8/proposed/"
+    },
+    {
+      "ruleId": "b5c3f8",
+      "ruleName": "HTML page has lang attribute",
+      "ruleAccessibilityRequirements": {
+        "wcag20:3.1.1": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:H57": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "inapplicable",
+      "testcaseId": "b584aa8aeb33814a0ecb63fd9ed4d97f2211f837",
+      "testcaseTitle": "Inapplicable Example 1",
+      "relativePath": "testcases/b5c3f8/b584aa8aeb33814a0ecb63fd9ed4d97f2211f837.svg",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b5c3f8/b584aa8aeb33814a0ecb63fd9ed4d97f2211f837.svg",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/b5c3f8/proposed/"
+    },
+    {
+      "ruleId": "b5c3f8",
+      "ruleName": "HTML page has lang attribute",
+      "ruleAccessibilityRequirements": {
+        "wcag20:3.1.1": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:H57": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "inapplicable",
+      "testcaseId": "58847c387d3b2cfa7e57c6ed613a8f31569cfd30",
+      "testcaseTitle": "Inapplicable Example 2",
+      "relativePath": "testcases/b5c3f8/58847c387d3b2cfa7e57c6ed613a8f31569cfd30.xml",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b5c3f8/58847c387d3b2cfa7e57c6ed613a8f31569cfd30.xml",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/b5c3f8/proposed/"
     },
     {
       "ruleId": "ucwvc8",
