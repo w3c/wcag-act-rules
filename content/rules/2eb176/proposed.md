@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 2eb176</p>
-  <p><strong>Date:</strong> Updated 14 November 2022</p>
+  <p><strong>Date:</strong> Updated 6 March 2023</p>
   <p><strong>Authors:</strong> <a href="https://www.linkedin.com/in/brianbors/">Brian Bors</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
   
@@ -21,7 +21,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that `audio` elements have a transcript that includes all auditory information.
-  last_modified: 14 November 2022
+  last_modified: 6 March 2023
 ---
 
 ## Applicability
@@ -89,27 +89,27 @@ This `audio` element has native player controls and an internal transcript.
 
 #### Passed Example 2
 
-<a class="example-link" title="Passed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/2eb176/7e5bf06ee043bd223f348b4f2fd528586c268e69.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/2eb176/d24c583b4697496be0aba15c259714da93ac209c.html">Open in a new tab</a>
 
 This `audio` element has native player controls and an external transcript.
 
 ```html
 <html lang="en">
 	<audio src="/test-assets/moon-audio/moon-speech.mp3" controls></audio>
-	<a href="/test-assets/moon-audio/moon-speech-transcript.txt">Transcript</a>
+	<a href="/test-assets/moon-audio/moon-speech-transcript.html">Transcript</a>
 </html>
 ```
 
 #### Passed Example 3
 
-<a class="example-link" title="Passed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/2eb176/3910043a0a8d9aff05d926b7bf9757b8b2ee98da.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/2eb176/3d78bf5e3f2b717595db4df064b0ec542bae0d9b.html">Open in a new tab</a>
 
 This `audio` element has an `autoplay` attribute and an external transcript.
 
 ```html
 <html lang="en">
 	<audio src="/test-assets/moon-audio/moon-speech.mp3" autoplay></audio>
-	<a href="/test-assets/moon-audio/moon-speech-transcript.txt">Transcript</a>
+	<a href="/test-assets/moon-audio/moon-speech-transcript.html">Transcript</a>
 </html>
 ```
 
@@ -147,27 +147,27 @@ This `audio` element has native player controls and an incorrect internal transc
 
 #### Failed Example 3
 
-<a class="example-link" title="Failed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/2eb176/5fd7ae577f7dd55633c44b3ac7b6d70b486cff3d.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/2eb176/3a018f7d638bd2993d176f341edaee79fda3d55a.html">Open in a new tab</a>
 
 This `audio` element has native player controls and an incorrect external transcript.
 
 ```html
 <html lang="en">
 	<audio src="/test-assets/moon-audio/moon-speech.mp3" controls></audio>
-	<a href="/test-assets/moon-audio/moon-speech-incorrect-transcript.txt">Transcript</a>
+	<a href="/test-assets/moon-audio/moon-speech-incorrect-transcript.html">Transcript</a>
 </html>
 ```
 
 #### Failed Example 4
 
-<a class="example-link" title="Failed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/2eb176/f470186843fb28ba9b45dd1efc85b53c92b11c05.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/2eb176/ff5548c1341eb4edc32a87d9a018d425a5a065e3.html">Open in a new tab</a>
 
 This `audio` element has an `autoplay` attribute and an incorrect external transcript.
 
 ```html
 <html lang="en">
 	<audio src="/test-assets/moon-audio/moon-speech.mp3" autoplay></audio>
-	<a href="/test-assets/moon-audio/moon-speech-incorrect-transcript.txt">Transcript</a>
+	<a href="/test-assets/moon-audio/moon-speech-incorrect-transcript.html">Transcript</a>
 </html>
 ```
 
