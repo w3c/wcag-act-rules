@@ -2,7 +2,7 @@
   "vendor": "LASIGE, Faculdade de Ciências da Universidade de Lisboa",
   "name": "QualWeb",
   "version": "3.0.0",
-  "lastModified": "28 February 2023",
+  "lastModified": "7 March 2023",
   "approvedRules": {
     "complete": 20,
     "partial": 2,
@@ -36,8 +36,8 @@
         ]
       },
       "coverage": {
-        "covered": 20,
-        "untested": 2,
+        "covered": 22,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 23
       },
@@ -367,7 +367,7 @@
             {
               "procedureName": "autocomplete attribute has valid value",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -382,7 +382,7 @@
             {
               "procedureName": "autocomplete attribute has valid value",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -1482,8 +1482,8 @@
         ]
       },
       "coverage": {
-        "covered": 7,
-        "untested": 7,
+        "covered": 14,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 14
       },
@@ -1603,7 +1603,7 @@
             {
               "procedureName": "HTML has lang attribute",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -1618,7 +1618,7 @@
             {
               "procedureName": "HTML has lang attribute",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -1633,7 +1633,7 @@
             {
               "procedureName": "HTML has lang attribute",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -1648,7 +1648,7 @@
             {
               "procedureName": "HTML has lang attribute",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -1663,7 +1663,7 @@
             {
               "procedureName": "HTML has lang attribute",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -1678,7 +1678,7 @@
             {
               "procedureName": "HTML has lang attribute",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -1693,7 +1693,7 @@
             {
               "procedureName": "HTML has lang attribute",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -7589,8 +7589,8 @@
         "reported": []
       },
       "coverage": {
-        "covered": 5,
-        "untested": 0,
+        "covered": 3,
+        "untested": 4,
         "cantTell": 0,
         "testCaseTotal": 11
       },
@@ -7611,31 +7611,31 @@
           ]
         },
         {
-          "testcaseId": "7e5bf06ee043bd223f348b4f2fd528586c268e69",
+          "testcaseId": "d24c583b4697496be0aba15c259714da93ac209c",
           "testCaseName": "Passed Example 2",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2eb176/7e5bf06ee043bd223f348b4f2fd528586c268e69.html",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2eb176/d24c583b4697496be0aba15c259714da93ac209c.html",
           "testCaseApproved": false,
           "expected": "passed",
           "procedureResults": [
             {
               "procedureName": "audio element content has transcript",
               "outcomes": [
-                "inapplicable"
+                "untested"
               ]
             }
           ]
         },
         {
-          "testcaseId": "3910043a0a8d9aff05d926b7bf9757b8b2ee98da",
+          "testcaseId": "3d78bf5e3f2b717595db4df064b0ec542bae0d9b",
           "testCaseName": "Passed Example 3",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2eb176/3910043a0a8d9aff05d926b7bf9757b8b2ee98da.html",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2eb176/3d78bf5e3f2b717595db4df064b0ec542bae0d9b.html",
           "testCaseApproved": false,
           "expected": "passed",
           "procedureResults": [
             {
               "procedureName": "audio element content has transcript",
               "outcomes": [
-                "inapplicable"
+                "untested"
               ]
             }
           ]
@@ -7671,31 +7671,31 @@
           ]
         },
         {
-          "testcaseId": "5fd7ae577f7dd55633c44b3ac7b6d70b486cff3d",
+          "testcaseId": "3a018f7d638bd2993d176f341edaee79fda3d55a",
           "testCaseName": "Failed Example 3",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2eb176/5fd7ae577f7dd55633c44b3ac7b6d70b486cff3d.html",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2eb176/3a018f7d638bd2993d176f341edaee79fda3d55a.html",
           "testCaseApproved": false,
           "expected": "failed",
           "procedureResults": [
             {
               "procedureName": "audio element content has transcript",
               "outcomes": [
-                "inapplicable"
+                "untested"
               ]
             }
           ]
         },
         {
-          "testcaseId": "f470186843fb28ba9b45dd1efc85b53c92b11c05",
+          "testcaseId": "ff5548c1341eb4edc32a87d9a018d425a5a065e3",
           "testCaseName": "Failed Example 4",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2eb176/f470186843fb28ba9b45dd1efc85b53c92b11c05.html",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2eb176/ff5548c1341eb4edc32a87d9a018d425a5a065e3.html",
           "testCaseApproved": false,
           "expected": "failed",
           "procedureResults": [
             {
               "procedureName": "audio element content has transcript",
               "outcomes": [
-                "inapplicable"
+                "untested"
               ]
             }
           ]
@@ -8821,8 +8821,8 @@
         ]
       },
       "coverage": {
-        "covered": 10,
-        "untested": 2,
+        "covered": 11,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 12
       },
@@ -8867,7 +8867,7 @@
             {
               "procedureName": "Orientation of the page is not restricted using CSS transform property",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -8927,7 +8927,7 @@
             {
               "procedureName": "Orientation of the page is not restricted using CSS transform property",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
