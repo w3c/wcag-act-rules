@@ -2,7 +2,7 @@
   "vendor": "PowerMapper",
   "name": "SortSite",
   "version": 6.45,
-  "lastModified": "16 January 2023",
+  "lastModified": "8 March 2023",
   "approvedRules": {
     "complete": 22,
     "partial": 0,
@@ -11,8 +11,8 @@
     "untested": 0
   },
   "proposedRules": {
-    "complete": 13,
-    "partial": 6,
+    "complete": 18,
+    "partial": 1,
     "minimal": 0,
     "inconsistent": 0,
     "untested": 47
@@ -36,8 +36,8 @@
         ]
       },
       "coverage": {
-        "covered": 20,
-        "untested": 3,
+        "covered": 23,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 23
       },
@@ -352,7 +352,7 @@
             {
               "procedureName": "AccHtmlAutocompleteInvalid",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -367,7 +367,7 @@
             {
               "procedureName": "AccHtmlAutocompleteInvalid",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -382,7 +382,7 @@
             {
               "procedureName": "AccHtmlAutocompleteInvalid",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -1482,8 +1482,8 @@
         ]
       },
       "coverage": {
-        "covered": 7,
-        "untested": 7,
+        "covered": 14,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 14
       },
@@ -1603,7 +1603,7 @@
             {
               "procedureName": "AccPageLangMissing",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -1618,7 +1618,7 @@
             {
               "procedureName": "AccPageLangMissing",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -1633,7 +1633,7 @@
             {
               "procedureName": "AccPageLangMissing",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -1648,7 +1648,7 @@
             {
               "procedureName": "AccPageLangMissing",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -1663,7 +1663,7 @@
             {
               "procedureName": "AccPageLangMissing",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -1678,7 +1678,7 @@
             {
               "procedureName": "AccPageLangMissing",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -1693,7 +1693,7 @@
             {
               "procedureName": "AccPageLangMissing",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -5655,15 +5655,15 @@
       "procedureNames": [
         "W3cHtml5Error-RnvErAkey-aria-*"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
         "reported": []
       },
       "coverage": {
-        "covered": 6,
-        "untested": 1,
+        "covered": 7,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 7
       },
@@ -5738,7 +5738,7 @@
             {
               "procedureName": "W3cHtml5Error-RnvErAkey-aria-*",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -7185,7 +7185,7 @@
       "procedureNames": [
         "AccCssTransformOrientationLock"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -7196,8 +7196,8 @@
         ]
       },
       "coverage": {
-        "covered": 10,
-        "untested": 2,
+        "covered": 12,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 12
       },
@@ -7242,7 +7242,7 @@
             {
               "procedureName": "AccCssTransformOrientationLock",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -7302,7 +7302,7 @@
             {
               "procedureName": "AccCssTransformOrientationLock",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -8174,7 +8174,7 @@
       "procedureNames": [
         "AccHtmlLinkTextAmbiguousContext"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -8186,8 +8186,8 @@
         ]
       },
       "coverage": {
-        "covered": 17,
-        "untested": 1,
+        "covered": 18,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 18
       },
@@ -8322,7 +8322,7 @@
             {
               "procedureName": "AccHtmlLinkTextAmbiguousContext",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -8666,9 +8666,7 @@
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
-        "reported": [
-          "WCAG2:info-and-relationships"
-        ]
+        "reported": []
       },
       "coverage": {
         "covered": 10,
@@ -8840,9 +8838,7 @@
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
-        "reported": [
-          "WCAG2:name-role-value"
-        ]
+        "reported": []
       },
       "coverage": {
         "covered": 15,
@@ -9537,7 +9533,7 @@
       "procedureNames": [
         "AccHtmlContrastMinimum"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -9549,8 +9545,8 @@
         ]
       },
       "coverage": {
-        "covered": 30,
-        "untested": 2,
+        "covered": 32,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 32
       },
@@ -9595,7 +9591,7 @@
             {
               "procedureName": "AccHtmlContrastMinimum",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -9700,7 +9696,7 @@
             {
               "procedureName": "AccHtmlContrastMinimum",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -10044,7 +10040,7 @@
       "procedureNames": [
         "AccHtmlContrastEnhanced"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -10055,8 +10051,8 @@
         ]
       },
       "coverage": {
-        "covered": 31,
-        "untested": 3,
+        "covered": 34,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 34
       },
@@ -10101,7 +10097,7 @@
             {
               "procedureName": "AccHtmlContrastEnhanced",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -10191,7 +10187,7 @@
             {
               "procedureName": "AccHtmlContrastEnhanced",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -10266,7 +10262,7 @@
             {
               "procedureName": "AccHtmlContrastEnhanced",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
