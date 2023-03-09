@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> b49b2e</p>
-  <p><strong>Date:</strong> Updated 11 November 2022</p>
+  <p><strong>Date:</strong> Updated 9 March 2023</p>
   <p><strong>Authors:</strong> <a href="https://github.com/carlosapaduarte">Carlos Duarte</a>, <a href="https://github.com/DagfinnRomen">Dagfinn Rømen</a>, <a href="https://github.com/geirsf">Geir Sindre Fossøy</a>, <a href="https://github.com/Jym77">Jean-Yves Moyen</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -19,7 +19,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that headings describe the topic or purpose of the content.
-  last_modified: 11 November 2022
+  last_modified: 9 March 2023
   scs_tested:
     - handle: Headings and Labels
       num: 2.4.6
@@ -28,21 +28,13 @@ rule_meta:
 
 ## Applicability
 
-This rule applies to any [semantic][semantic role] `heading` element that is either [visible][] or [included in the accessibility tree][].
+This rule applies to any [semantic][semantic role] `heading` element that is [included in the accessibility tree][] and has a non-empty (`””`) [accessible name][].
 
-## Expectation 1
+## Expectation
 
-For each target element at least one of the following is true:
+Each target element describes the topic or purpose of the first [perceivable content][] after the test target that is not [decorative][].
 
-- the target element is not [visible][]; or
-- the target element describes the topic or purpose of the first [palpable content][] which is non-[decorative][], [visible][], and after the target element in tree order in the [flat tree][].
-
-## Expectation 2
-
-For each target element at least one of the following is true:
-
-- the target element is not [included in the accessibility tree][]; or
-- the target element describes the topic or purpose of the first [palpable content][] which is non-[decorative][], [included in the accessibility tree][], and after the target element in tree order in the [flat tree][].
+The order of elements is determined by the [flat tree][].
 
 **Note:** Headings do not need to be lengthy. A word, or even a single character, may suffice.
 
@@ -50,14 +42,19 @@ For each target element at least one of the following is true:
 
 This rule assumes that the [flat tree][] order is close to the reading order, as elements are rendered on the page. Due to positioning, it is possible to render a document in an order that greatly differs from the tree order, in which case the content which is visually associated with a heading might not be the content following it in tree order and this rule might fail while [Success Criterion 2.4.6 Headings and Label][sc246] is still satisfied.
 
+This rule also assumes that the content the heading is intended to describe is [visible][] and not hidden from AT. Otherwise, cases such as expandable content using a heading might fail this rule while [Success Criterion 2.4.6 Headings and Label][sc246] is still satisfied.
+
 ## Accessibility Support
 
 Implementation of [Presentational Roles Conflict Resolution][] varies from one browser or assistive technology to another. Depending on this, some [semantic][semantic role] `heading` elements can fail this rule with some technology but users of other technologies would not experience any accessibility issue.
 
 ## Background
 
+Headings that are visible but not in the accessibility tree are a failure of [Success Criterion 1.3.1 Info and Relationships][sc131]. These are not tested by this rule but they can still fail [Success Criterion 2.4.6 Headings and Labels][sc246]. 
+
 ### Bibliography
 
+- [Understanding Success Criterion 1.3.1: Info and Relationships](https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships.html)
 - [Understanding Success Criterion 2.4.6: Headings and Labels](https://www.w3.org/WAI/WCAG21/Understanding/headings-and-labels.html)
 - [G130: Providing descriptive headings](https://www.w3.org/WAI/WCAG21/Techniques/general/G130)
 - [H42: Using h1-h6 to identify headings](https://www.w3.org/WAI/WCAG21/Techniques/html/H42)
@@ -98,7 +95,7 @@ The following aspects are required in using this rule.
 
 <a class="example-link" title="Passed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b49b2e/25cb1d68473c174a3f3e464704de6826b7aabdd4.html">Open in a new tab</a>
 
-Heading marked up with `h1` element that describes the topic or purpose of the following [palpable content][].
+Heading marked up with `h1` element that describes the topic or purpose of the following [perceivable content][].
 
 ```html
 <html lang="en">
@@ -111,7 +108,7 @@ Heading marked up with `h1` element that describes the topic or purpose of the f
 
 <a class="example-link" title="Passed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b49b2e/8a83ca44601cb4ab173c388413df9649c8aac11f.html">Open in a new tab</a>
 
-Heading marked up with `role="heading"` that describes the topic or purpose of the following [palpable content][].
+Heading marked up with `role="heading"` that describes the topic or purpose of the following [perceivable content][].
 
 ```html
 <html lang="en">
@@ -122,22 +119,9 @@ Heading marked up with `role="heading"` that describes the topic or purpose of t
 
 #### Passed Example 3
 
-<a class="example-link" title="Passed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b49b2e/ba0b707c149d4eadacd2bab8ce1352f05e53542d.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b49b2e/14faa79c92b5e281d8694f8a18ec00ba0c11da6b.html">Open in a new tab</a>
 
-Heading marked up with `role="heading"` that describes the topic or purpose of the following [palpable content][], with a default aria-level assigned.
-
-```html
-<html lang="en">
-	<span role="heading">Opening Hours</span>
-	<p>We are open Monday through Friday from 10 to 16</p>
-</html>
-```
-
-#### Passed Example 4
-
-<a class="example-link" title="Passed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b49b2e/14faa79c92b5e281d8694f8a18ec00ba0c11da6b.html">Open in a new tab</a>
-
-Heading marked up with `h1` element with an image that describes the topic or purpose of the following [palpable content][].
+Heading marked up with `h1` element with an image that describes the topic or purpose of the following [perceivable content][].
 
 ```html
 <html lang="en">
@@ -148,11 +132,11 @@ Heading marked up with `h1` element with an image that describes the topic or pu
 </html>
 ```
 
-#### Passed Example 5
+#### Passed Example 4
 
-<a class="example-link" title="Passed Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b49b2e/14ecbd9d655c833f5f9c5ee9563c472faee663c4.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b49b2e/14ecbd9d655c833f5f9c5ee9563c472faee663c4.html">Open in a new tab</a>
 
-Heading marked up with `h1` element that is a single character that describes the topic or purpose of the following [palpable content][].
+Heading marked up with `h1` element that is a single character that describes the topic or purpose of the following [perceivable content][].
 
 ```html
 <html lang="en">
@@ -170,11 +154,11 @@ Heading marked up with `h1` element that is a single character that describes th
 </html>
 ```
 
-#### Passed Example 6
+#### Passed Example 5
 
-<a class="example-link" title="Passed Example 6" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b49b2e/910c8881245425846a502b38758fff7db5c213ef.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b49b2e/910c8881245425846a502b38758fff7db5c213ef.html">Open in a new tab</a>
 
-Heading marked up with `role="heading"` that describes the topic or purpose of the following [palpable content][]. The heading is positioned off screen but is [included in the accessibility tree][].
+Heading marked up with `role="heading"` that describes the topic or purpose of the following [perceivable content][]. The heading is positioned off screen but is [included in the accessibility tree][].
 
 ```html
 <html lang="en">
@@ -185,24 +169,11 @@ Heading marked up with `role="heading"` that describes the topic or purpose of t
 </html>
 ```
 
-#### Passed Example 7
+#### Passed Example 6
 
-<a class="example-link" title="Passed Example 7" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b49b2e/3ab7de594473cac4745adce5edac1b4143aff701.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 6" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b49b2e/fd12fb78f149251c49409189ee65a041c7d03ec5.html">Open in a new tab</a>
 
-Heading marked up with `h1` element that describes the topic or purpose of the following [palpable content][]. The heading is [visible][], but is not [included in the accessibility tree][].
-
-```html
-<html lang="en">
-	<h1 aria-hidden="true">Opening Hours</h1>
-	<p>We are open Monday through Friday from 10 to 16</p>
-</html>
-```
-
-#### Passed Example 8
-
-<a class="example-link" title="Passed Example 8" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b49b2e/fd12fb78f149251c49409189ee65a041c7d03ec5.html">Open in a new tab</a>
-
-This heading describes the first [palpable content][] after it (the first `p` element). The next [palpable content][] (the second `p` element) is not considered by this rule.
+This heading describes the first [perceivable content][] after it (the first `p` element). The next [perceivable content][] (the second `p` element) is not considered by this rule.
 
 ```html
 <html lang="en">
@@ -218,7 +189,7 @@ This heading describes the first [palpable content][] after it (the first `p` el
 
 <a class="example-link" title="Failed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b49b2e/79cce8d89309bea03e122d2917d340a525db4de0.html">Open in a new tab</a>
 
-Heading marked up with `h1` element that does not describe the topic or purpose of the following [palpable content][].
+Heading marked up with `h1` element that does not describe the topic or purpose of the following [perceivable content][].
 
 ```html
 <html lang="en">
@@ -231,7 +202,7 @@ Heading marked up with `h1` element that does not describe the topic or purpose 
 
 <a class="example-link" title="Failed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b49b2e/acae544ba63bf9c71988fb67d491c7d404164f52.html">Open in a new tab</a>
 
-Heading marked up with `role="heading"` that does not describe the topic or purpose of the following [palpable content][].
+Heading marked up with `role="heading"` that does not describe the topic or purpose of the following [perceivable content][].
 
 ```html
 <html lang="en">
@@ -242,13 +213,13 @@ Heading marked up with `role="heading"` that does not describe the topic or purp
 
 #### Failed Example 3
 
-<a class="example-link" title="Failed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b49b2e/ef219fca0c3c2558d18be113e628752c108e89c3.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b49b2e/6000a70ba2da9a828fa9c817ae6a0d2c092522fb.html">Open in a new tab</a>
 
-Heading marked up with `role="heading"` that does not describe the topic or purpose of the following [palpable content][]. The heading is positioned off screen and is [included in the accessibility tree][].
+Heading marked up with `role="heading"` that does not describe the topic or purpose of the following [perceivable content][]. The heading is positioned off screen but is [included in the accessibility tree][].
 
 ```html
 <html lang="en">
-	<span role="heading" style="position: absolute; top: -9999px; left: -9999px;">Weather</span>
+	<span role="heading" aria-level="1" style="position: absolute; top: -9999px; left: -9999px;">Weather</span>
 	<p>
 		We are open Monday through Friday from 10 to 16
 	</p>
@@ -257,22 +228,9 @@ Heading marked up with `role="heading"` that does not describe the topic or purp
 
 #### Failed Example 4
 
-<a class="example-link" title="Failed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b49b2e/00cf4d32e4f2a8443a16ba0a6eb1dee549a516a6.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b49b2e/d76e8834b616356b2803586a8fbd0825a84e3fc8.html">Open in a new tab</a>
 
-Heading marked up with `h1` element that does not describe the topic or purpose of the following [palpable content][]. The heading is [visible][], but is not [included in the accessibility tree][].
-
-```html
-<html lang="en">
-	<h1 aria-hidden="true">Weather</h1>
-	<p>We are open Monday through Friday from 10 to 16</p>
-</html>
-```
-
-#### Failed Example 5
-
-<a class="example-link" title="Failed Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b49b2e/d76e8834b616356b2803586a8fbd0825a84e3fc8.html">Open in a new tab</a>
-
-This heading does not describe the first [palpable content][] after it (the first `p` element). The next [palpable content][] (the second `p` element) is not considered by this rule.
+This heading does not describe the first [perceivable content][] after it (the first `p` element). The next [perceivable content][] (the second `p` element) is not considered by this rule.
 
 ```html
 <html lang="en">
@@ -288,7 +246,7 @@ This heading does not describe the first [palpable content][] after it (the firs
 
 <a class="example-link" title="Inapplicable Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b49b2e/69658c922aa926b0b8e4e1f113620c1dff5d64a9.html">Open in a new tab</a>
 
-No heading.
+There is no heading.
 
 ```html
 <html lang="en">
@@ -298,13 +256,13 @@ No heading.
 
 #### Inapplicable Example 2
 
-<a class="example-link" title="Inapplicable Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b49b2e/b410a7146d5f4f634ae1611cf2f3ed6d8f9c74ed.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b49b2e/6b63f3bcb8cfa7d388c35ebe82cedf6111e3c8f6.html">Open in a new tab</a>
 
-Heading that is neither [visible][] to users, nor [included in the accessibility tree][].
+Heading is not [included in the accessibility tree][].
 
 ```html
 <html lang="en">
-	<h1 style="display: none;">Opening hours</h1>
+	<h1 hidden>Opening Hours</h1>
 	<p>We are open Monday through Friday from 10 to 16</p>
 </html>
 ```
@@ -313,7 +271,7 @@ Heading that is neither [visible][] to users, nor [included in the accessibility
 
 <a class="example-link" title="Inapplicable Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b49b2e/b67b5eda7529c918280b442609e5b7d59c57317b.html">Open in a new tab</a>
 
-Empty heading marked up with `h1` is not [visible][].
+`h1` element has an empty [accessible name][].
 
 ```html
 <html lang="en">
@@ -325,7 +283,7 @@ Empty heading marked up with `h1` is not [visible][].
 
 <a class="example-link" title="Inapplicable Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b49b2e/26d71f03f10bc14b28212699eddafe17adafc6b8.html">Open in a new tab</a>
 
-Empty heading marked up with `role="heading"` is not [visible][].
+Semantic heading has an empty [accessible name][].
 
 ```html
 <html lang="en">
@@ -334,6 +292,20 @@ Empty heading marked up with `role="heading"` is not [visible][].
 ```
 
 ## Glossary
+
+### Accessible Name {#accessible-name}
+
+The _accessible name_ is the programmatically determined name of a user interface element that is [included in the accessibility tree](#included-in-the-accessibility-tree).
+
+The accessible name is calculated using the [accessible name and description computation][].
+
+For native markup languages, such as HTML and SVG, additional information on how to calculate the accessible name can be found in [HTML Accessibility API Mappings 1.0, Accessible Name and Description Computation (working draft)](https://www.w3.org/TR/html-aam/#accessible-name-and-description-computation) and [SVG Accessibility API Mappings, Name and Description (working draft)](https://www.w3.org/TR/svg-aam/#mapping_additional).
+
+For more details, see [examples of accessible name][].
+
+**Note:** As per the [accessible name and description computation][], each element always has an accessible name. When no accessible name is provided, the element will nonetheless be assigned an empty (`""`) one.
+
+**Note:** As per the [accessible name and description computation][], accessible names are [flat string](https://www.w3.org/TR/accname-1.1/#terminology) trimmed of leading and trailing whitespace. Notably, it is not possible for a non-empty accessible name to be composed only of whitespace since these must be trimmed.
 
 ### Explicit Semantic Role {#explicit-role}
 
@@ -396,6 +368,16 @@ An _outcome_ is a conclusion that comes from evaluating an ACT Rule on a [test s
 
 **Note:** Implementations using the [EARL10-Schema](https://www.w3.org/TR/EARL10-Schema/) can express the outcome with the [outcome property](https://www.w3.org/TR/EARL10-Schema/#outcome). In addition to `passed`, `failed` and `inapplicable`, EARL 1.0 also defined an `incomplete` outcome. While this cannot be the outcome of an ACT Rule when applied in its entirety, it often happens that rules are only partially evaluated. For example, when applicability was automated, but the expectations have to be evaluated manually. Such "interim" results can be expressed with the `incomplete` outcome.
 
+### Perceivable content {#perceivable-content}
+
+A node is _perceivable content_ if all the following are true:
+
+- the node is [palpable content][]; and
+- the node is either [visible][] or [included in the accessibility tree][]; and
+- if the node is an element, it does not have a [semantic role][] of `none` or `presentation`.
+
+Perceivable content corresponds to nodes that contain information and are perceived by some categories of users.
+
 ### Programmatically Hidden {#programmatically-hidden}
 
 An HTML element is _programmatically hidden_ if either it has a [computed][] CSS property `visibility` whose value is not `visible`; or at least one of the following is true for any of its [inclusive ancestors][] in the [flat tree][]:
@@ -438,8 +420,11 @@ The _WAI ARIA Specifications_ group both the WAI ARIA W3C Recommendation and ARI
 **Note:** depending on the type of content being evaluated, part of the specifications might be irrelevant and should be ignored.
 
 [accessibility support base line]: https://www.w3.org/TR/WCAG-EM/#step1c 'Definition of accessibility support base line'
+[accessible name and description computation]: https://www.w3.org/TR/accname 'Accessible Name and Description Computation'
+[accessible name]: #accessible-name 'Definition of accessible name'
 [computed]: https://www.w3.org/TR/css-cascade/#computed-value 'CSS definition of computed value'
 [decorative]: https://www.w3.org/TR/WCAG21/#dfn-pure-decoration 'WCAG definition of Pure decoration'
+[examples of accessible name]: https://act-rules.github.io/pages/examples/accessible-name/
 [examples of included in the accessibility tree]: https://act-rules.github.io/pages/examples/included-in-the-accessibility-tree/
 [explicit role]: #explicit-role 'Definition of Explicit Role'
 [flat tree]: https://drafts.csswg.org/css-scoping/#flat-tree 'Definition of flat tree'
@@ -448,12 +433,14 @@ The _WAI ARIA Specifications_ group both the WAI ARIA W3C Recommendation and ARI
 [included in the accessibility tree]: #included-in-the-accessibility-tree 'Definition of included in the accessibility tree'
 [inclusive ancestors]: https://dom.spec.whatwg.org/#concept-tree-inclusive-ancestor 'DOM Definition of Inclusive Ancestor'
 [marked as decorative]: #marked-as-decorative 'Definition of Marked as Decorative'
-[palpable content]: https://html.spec.whatwg.org/multipage/dom.html#palpable-content 'HTML definition of Palpable Content'
+[palpable content]: https://html.spec.whatwg.org/multipage/dom.html#palpable-content 'HTML specification of palpable content'
+[perceivable content]: #perceivable-content 'Definition of perceivable content'
 [presentational roles conflict resolution]: https://www.w3.org/TR/wai-aria-1.1/#conflict_resolution_presentation_none 'Presentational Roles Conflict Resolution'
 [programmatically hidden]: #programmatically-hidden 'Definition of Programmatically Hidden'
 [pure decoration]: https://www.w3.org/TR/WCAG21/#dfn-pure-decoration 'WCAG definition of Pure Decoration'
 [role attribute]: https://www.w3.org/TR/role-attribute/ 'Specification of the role attribute'
 [rules for parsing integers]: https://html.spec.whatwg.org/#rules-for-parsing-integers
+[sc131]: https://www.w3.org/TR/WCAG21/#info-and-relationships ' Success Criterion 1.3.1 Info and Relationships'
 [sc246]: https://www.w3.org/TR/WCAG21/#headings-and-labels 'Success Criterion 2.4.6 Headings and Labels'
 [semantic role]: #semantic-role 'Definition of semantic role'
 [sequential focus navigation]: https://html.spec.whatwg.org/multipage/interaction.html#sequential-focus-navigation
