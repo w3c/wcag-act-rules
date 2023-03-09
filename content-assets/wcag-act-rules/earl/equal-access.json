@@ -381,6 +381,42 @@
     },
     {
       "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/73f2c2/41c0b66bc0208aef009343935649f2bec3ae778d.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_2,Fail_attribute_incorrect",
+            "isPartOf": [
+              "WCAG2:identify-input-purpose"
+            ]
+          },
+          "result": {
+            "outcome": "earl:inapplicable"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/73f2c2/631fc4f23b93e9486e5cc07aed11a99003d4f354.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_2,Fail_attribute_incorrect",
+            "isPartOf": [
+              "WCAG2:identify-input-purpose"
+            ]
+          },
+          "result": {
+            "outcome": "earl:inapplicable"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
       "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/97a4e1/a4cc71b0434f71f4ea0069c409f73e0207dfb403.html",
       "assertions": [
         {
@@ -1732,6 +1768,216 @@
     {
       "@type": "TestSubject",
       "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b5c3f8/af7eaac588fa1a23884d30f93ed50c2f1779c2fa.xml",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "html_lang_valid:Pass_0,Fail_1",
+            "isPartOf": [
+              "WCAG2:language-of-page"
+            ]
+          },
+          "result": {
+            "outcome": "earl:inapplicable"
+          }
+        },
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "WCAG20_Html_HasLang:Pass_0,Fail_3",
+            "isPartOf": [
+              "WCAG2:language-of-page"
+            ]
+          },
+          "result": {
+            "outcome": "earl:inapplicable"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b5c3f8/0fac26928e2bf6b7db6c7f46a1e0ab50aaa8a7c1.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "html_lang_valid:Pass_0,Fail_1",
+            "isPartOf": [
+              "WCAG2:language-of-page"
+            ]
+          },
+          "result": {
+            "outcome": "earl:passed"
+          }
+        },
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "WCAG20_Html_HasLang:Pass_0,Fail_3",
+            "isPartOf": [
+              "WCAG2:language-of-page"
+            ]
+          },
+          "result": {
+            "outcome": "earl:passed"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b5c3f8/473352935acf2463b14dbd8e38073e913eeb5c08.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "html_lang_valid:Pass_0,Fail_1",
+            "isPartOf": [
+              "WCAG2:language-of-page"
+            ]
+          },
+          "result": {
+            "outcome": "earl:inapplicable"
+          }
+        },
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "WCAG20_Html_HasLang:Pass_0,Fail_3",
+            "isPartOf": [
+              "WCAG2:language-of-page"
+            ]
+          },
+          "result": {
+            "outcome": "earl:failed"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b5c3f8/98681b2a7949e49b2da1b353f70e688528fe7ddc.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "html_lang_valid:Pass_0,Fail_1",
+            "isPartOf": [
+              "WCAG2:language-of-page"
+            ]
+          },
+          "result": {
+            "outcome": "earl:failed"
+          }
+        },
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "WCAG20_Html_HasLang:Pass_0,Fail_3",
+            "isPartOf": [
+              "WCAG2:language-of-page"
+            ]
+          },
+          "result": {
+            "outcome": "earl:failed"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b5c3f8/4ea0280617a1b71dcc327356484f8767919b0f40.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "html_lang_valid:Pass_0,Fail_1",
+            "isPartOf": [
+              "WCAG2:language-of-page"
+            ]
+          },
+          "result": {
+            "outcome": "earl:failed"
+          }
+        },
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "WCAG20_Html_HasLang:Pass_0,Fail_3",
+            "isPartOf": [
+              "WCAG2:language-of-page"
+            ]
+          },
+          "result": {
+            "outcome": "earl:passed"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b5c3f8/4f94c3e26f43701d91db403fe26cd8894bdc8ccf.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "html_lang_valid:Pass_0,Fail_1",
+            "isPartOf": [
+              "WCAG2:language-of-page"
+            ]
+          },
+          "result": {
+            "outcome": "earl:passed"
+          }
+        },
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "WCAG20_Html_HasLang:Pass_0,Fail_3",
+            "isPartOf": [
+              "WCAG2:language-of-page"
+            ]
+          },
+          "result": {
+            "outcome": "earl:failed"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b5c3f8/b584aa8aeb33814a0ecb63fd9ed4d97f2211f837.svg",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "html_lang_valid:Pass_0,Fail_1",
+            "isPartOf": [
+              "WCAG2:language-of-page"
+            ]
+          },
+          "result": {
+            "outcome": "earl:inapplicable"
+          }
+        },
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "WCAG20_Html_HasLang:Pass_0,Fail_3",
+            "isPartOf": [
+              "WCAG2:language-of-page"
+            ]
+          },
+          "result": {
+            "outcome": "earl:inapplicable"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b5c3f8/58847c387d3b2cfa7e57c6ed613a8f31569cfd30.xml",
       "assertions": [
         {
           "@type": "Assertion",
@@ -3207,12 +3453,10 @@
           "@type": "Assertion",
           "test": {
             "title": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
-            "isPartOf": [
-              "WCAG2:text-spacing"
-            ]
+            "isPartOf": []
           },
           "result": {
-            "outcome": "earl:passed"
+            "outcome": "earl:inapplicable"
           }
         }
       ]
@@ -3225,12 +3469,10 @@
           "@type": "Assertion",
           "test": {
             "title": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
-            "isPartOf": [
-              "WCAG2:text-spacing"
-            ]
+            "isPartOf": []
           },
           "result": {
-            "outcome": "earl:passed"
+            "outcome": "earl:inapplicable"
           }
         }
       ]
@@ -3243,12 +3485,10 @@
           "@type": "Assertion",
           "test": {
             "title": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
-            "isPartOf": [
-              "WCAG2:text-spacing"
-            ]
+            "isPartOf": []
           },
           "result": {
-            "outcome": "earl:passed"
+            "outcome": "earl:inapplicable"
           }
         }
       ]
@@ -3261,12 +3501,10 @@
           "@type": "Assertion",
           "test": {
             "title": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
-            "isPartOf": [
-              "WCAG2:text-spacing"
-            ]
+            "isPartOf": []
           },
           "result": {
-            "outcome": "earl:passed"
+            "outcome": "earl:inapplicable"
           }
         }
       ]
@@ -3279,12 +3517,10 @@
           "@type": "Assertion",
           "test": {
             "title": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
-            "isPartOf": [
-              "WCAG2:text-spacing"
-            ]
+            "isPartOf": []
           },
           "result": {
-            "outcome": "earl:passed"
+            "outcome": "earl:inapplicable"
           }
         }
       ]
@@ -3297,12 +3533,10 @@
           "@type": "Assertion",
           "test": {
             "title": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
-            "isPartOf": [
-              "WCAG2:text-spacing"
-            ]
+            "isPartOf": []
           },
           "result": {
-            "outcome": "earl:passed"
+            "outcome": "earl:inapplicable"
           }
         }
       ]
@@ -3315,12 +3549,10 @@
           "@type": "Assertion",
           "test": {
             "title": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
-            "isPartOf": [
-              "WCAG2:text-spacing"
-            ]
+            "isPartOf": []
           },
           "result": {
-            "outcome": "earl:passed"
+            "outcome": "earl:inapplicable"
           }
         }
       ]
@@ -3333,12 +3565,10 @@
           "@type": "Assertion",
           "test": {
             "title": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
-            "isPartOf": [
-              "WCAG2:text-spacing"
-            ]
+            "isPartOf": []
           },
           "result": {
-            "outcome": "earl:passed"
+            "outcome": "earl:inapplicable"
           }
         }
       ]
@@ -3351,12 +3581,10 @@
           "@type": "Assertion",
           "test": {
             "title": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
-            "isPartOf": [
-              "WCAG2:text-spacing"
-            ]
+            "isPartOf": []
           },
           "result": {
-            "outcome": "earl:failed"
+            "outcome": "earl:inapplicable"
           }
         }
       ]
@@ -3369,12 +3597,10 @@
           "@type": "Assertion",
           "test": {
             "title": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
-            "isPartOf": [
-              "WCAG2:text-spacing"
-            ]
+            "isPartOf": []
           },
           "result": {
-            "outcome": "earl:failed"
+            "outcome": "earl:inapplicable"
           }
         }
       ]
@@ -3387,12 +3613,10 @@
           "@type": "Assertion",
           "test": {
             "title": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
-            "isPartOf": [
-              "WCAG2:text-spacing"
-            ]
+            "isPartOf": []
           },
           "result": {
-            "outcome": "earl:failed"
+            "outcome": "earl:inapplicable"
           }
         }
       ]
@@ -3405,12 +3629,10 @@
           "@type": "Assertion",
           "test": {
             "title": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
-            "isPartOf": [
-              "WCAG2:text-spacing"
-            ]
+            "isPartOf": []
           },
           "result": {
-            "outcome": "earl:failed"
+            "outcome": "earl:inapplicable"
           }
         }
       ]
@@ -3423,9 +3645,7 @@
           "@type": "Assertion",
           "test": {
             "title": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
-            "isPartOf": [
-              "WCAG2:text-spacing"
-            ]
+            "isPartOf": []
           },
           "result": {
             "outcome": "earl:inapplicable"
@@ -3441,9 +3661,7 @@
           "@type": "Assertion",
           "test": {
             "title": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
-            "isPartOf": [
-              "WCAG2:text-spacing"
-            ]
+            "isPartOf": []
           },
           "result": {
             "outcome": "earl:inapplicable"
@@ -3459,9 +3677,7 @@
           "@type": "Assertion",
           "test": {
             "title": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
-            "isPartOf": [
-              "WCAG2:text-spacing"
-            ]
+            "isPartOf": []
           },
           "result": {
             "outcome": "earl:inapplicable"
@@ -3477,9 +3693,7 @@
           "@type": "Assertion",
           "test": {
             "title": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
-            "isPartOf": [
-              "WCAG2:text-spacing"
-            ]
+            "isPartOf": []
           },
           "result": {
             "outcome": "earl:inapplicable"
@@ -3999,12 +4213,10 @@
           "@type": "Assertion",
           "test": {
             "title": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
-            "isPartOf": [
-              "WCAG2:text-spacing"
-            ]
+            "isPartOf": []
           },
           "result": {
-            "outcome": "earl:passed"
+            "outcome": "earl:inapplicable"
           }
         }
       ]
@@ -4017,12 +4229,10 @@
           "@type": "Assertion",
           "test": {
             "title": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
-            "isPartOf": [
-              "WCAG2:text-spacing"
-            ]
+            "isPartOf": []
           },
           "result": {
-            "outcome": "earl:passed"
+            "outcome": "earl:inapplicable"
           }
         }
       ]
@@ -4035,12 +4245,10 @@
           "@type": "Assertion",
           "test": {
             "title": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
-            "isPartOf": [
-              "WCAG2:text-spacing"
-            ]
+            "isPartOf": []
           },
           "result": {
-            "outcome": "earl:passed"
+            "outcome": "earl:inapplicable"
           }
         }
       ]
@@ -4053,12 +4261,10 @@
           "@type": "Assertion",
           "test": {
             "title": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
-            "isPartOf": [
-              "WCAG2:text-spacing"
-            ]
+            "isPartOf": []
           },
           "result": {
-            "outcome": "earl:passed"
+            "outcome": "earl:inapplicable"
           }
         }
       ]
@@ -4071,12 +4277,10 @@
           "@type": "Assertion",
           "test": {
             "title": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
-            "isPartOf": [
-              "WCAG2:text-spacing"
-            ]
+            "isPartOf": []
           },
           "result": {
-            "outcome": "earl:passed"
+            "outcome": "earl:inapplicable"
           }
         }
       ]
@@ -4089,12 +4293,10 @@
           "@type": "Assertion",
           "test": {
             "title": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
-            "isPartOf": [
-              "WCAG2:text-spacing"
-            ]
+            "isPartOf": []
           },
           "result": {
-            "outcome": "earl:passed"
+            "outcome": "earl:inapplicable"
           }
         }
       ]
@@ -4107,12 +4309,10 @@
           "@type": "Assertion",
           "test": {
             "title": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
-            "isPartOf": [
-              "WCAG2:text-spacing"
-            ]
+            "isPartOf": []
           },
           "result": {
-            "outcome": "earl:passed"
+            "outcome": "earl:inapplicable"
           }
         }
       ]
@@ -4125,12 +4325,10 @@
           "@type": "Assertion",
           "test": {
             "title": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
-            "isPartOf": [
-              "WCAG2:text-spacing"
-            ]
+            "isPartOf": []
           },
           "result": {
-            "outcome": "earl:passed"
+            "outcome": "earl:inapplicable"
           }
         }
       ]
@@ -4143,12 +4341,10 @@
           "@type": "Assertion",
           "test": {
             "title": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
-            "isPartOf": [
-              "WCAG2:text-spacing"
-            ]
+            "isPartOf": []
           },
           "result": {
-            "outcome": "earl:failed"
+            "outcome": "earl:inapplicable"
           }
         }
       ]
@@ -4161,12 +4357,10 @@
           "@type": "Assertion",
           "test": {
             "title": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
-            "isPartOf": [
-              "WCAG2:text-spacing"
-            ]
+            "isPartOf": []
           },
           "result": {
-            "outcome": "earl:failed"
+            "outcome": "earl:inapplicable"
           }
         }
       ]
@@ -4179,12 +4373,10 @@
           "@type": "Assertion",
           "test": {
             "title": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
-            "isPartOf": [
-              "WCAG2:text-spacing"
-            ]
+            "isPartOf": []
           },
           "result": {
-            "outcome": "earl:failed"
+            "outcome": "earl:inapplicable"
           }
         }
       ]
@@ -4197,12 +4389,10 @@
           "@type": "Assertion",
           "test": {
             "title": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
-            "isPartOf": [
-              "WCAG2:text-spacing"
-            ]
+            "isPartOf": []
           },
           "result": {
-            "outcome": "earl:failed"
+            "outcome": "earl:inapplicable"
           }
         }
       ]
@@ -4215,9 +4405,7 @@
           "@type": "Assertion",
           "test": {
             "title": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
-            "isPartOf": [
-              "WCAG2:text-spacing"
-            ]
+            "isPartOf": []
           },
           "result": {
             "outcome": "earl:inapplicable"
@@ -4233,9 +4421,7 @@
           "@type": "Assertion",
           "test": {
             "title": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
-            "isPartOf": [
-              "WCAG2:text-spacing"
-            ]
+            "isPartOf": []
           },
           "result": {
             "outcome": "earl:inapplicable"
@@ -4251,9 +4437,7 @@
           "@type": "Assertion",
           "test": {
             "title": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
-            "isPartOf": [
-              "WCAG2:text-spacing"
-            ]
+            "isPartOf": []
           },
           "result": {
             "outcome": "earl:inapplicable"
@@ -4269,9 +4453,7 @@
           "@type": "Assertion",
           "test": {
             "title": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
-            "isPartOf": [
-              "WCAG2:text-spacing"
-            ]
+            "isPartOf": []
           },
           "result": {
             "outcome": "earl:inapplicable"
@@ -5322,12 +5504,10 @@
           "@type": "Assertion",
           "test": {
             "title": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
-            "isPartOf": [
-              "WCAG2:text-spacing"
-            ]
+            "isPartOf": []
           },
           "result": {
-            "outcome": "earl:passed"
+            "outcome": "earl:inapplicable"
           }
         }
       ]
@@ -5340,12 +5520,10 @@
           "@type": "Assertion",
           "test": {
             "title": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
-            "isPartOf": [
-              "WCAG2:text-spacing"
-            ]
+            "isPartOf": []
           },
           "result": {
-            "outcome": "earl:passed"
+            "outcome": "earl:inapplicable"
           }
         }
       ]
@@ -5358,12 +5536,10 @@
           "@type": "Assertion",
           "test": {
             "title": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
-            "isPartOf": [
-              "WCAG2:text-spacing"
-            ]
+            "isPartOf": []
           },
           "result": {
-            "outcome": "earl:passed"
+            "outcome": "earl:inapplicable"
           }
         }
       ]
@@ -5376,12 +5552,10 @@
           "@type": "Assertion",
           "test": {
             "title": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
-            "isPartOf": [
-              "WCAG2:text-spacing"
-            ]
+            "isPartOf": []
           },
           "result": {
-            "outcome": "earl:passed"
+            "outcome": "earl:inapplicable"
           }
         }
       ]
@@ -5394,12 +5568,10 @@
           "@type": "Assertion",
           "test": {
             "title": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
-            "isPartOf": [
-              "WCAG2:text-spacing"
-            ]
+            "isPartOf": []
           },
           "result": {
-            "outcome": "earl:passed"
+            "outcome": "earl:inapplicable"
           }
         }
       ]
@@ -5412,12 +5584,10 @@
           "@type": "Assertion",
           "test": {
             "title": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
-            "isPartOf": [
-              "WCAG2:text-spacing"
-            ]
+            "isPartOf": []
           },
           "result": {
-            "outcome": "earl:passed"
+            "outcome": "earl:inapplicable"
           }
         }
       ]
@@ -5430,12 +5600,10 @@
           "@type": "Assertion",
           "test": {
             "title": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
-            "isPartOf": [
-              "WCAG2:text-spacing"
-            ]
+            "isPartOf": []
           },
           "result": {
-            "outcome": "earl:passed"
+            "outcome": "earl:inapplicable"
           }
         }
       ]
@@ -5448,12 +5616,10 @@
           "@type": "Assertion",
           "test": {
             "title": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
-            "isPartOf": [
-              "WCAG2:text-spacing"
-            ]
+            "isPartOf": []
           },
           "result": {
-            "outcome": "earl:passed"
+            "outcome": "earl:inapplicable"
           }
         }
       ]
@@ -5466,12 +5632,10 @@
           "@type": "Assertion",
           "test": {
             "title": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
-            "isPartOf": [
-              "WCAG2:text-spacing"
-            ]
+            "isPartOf": []
           },
           "result": {
-            "outcome": "earl:passed"
+            "outcome": "earl:inapplicable"
           }
         }
       ]
@@ -5484,12 +5648,10 @@
           "@type": "Assertion",
           "test": {
             "title": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
-            "isPartOf": [
-              "WCAG2:text-spacing"
-            ]
+            "isPartOf": []
           },
           "result": {
-            "outcome": "earl:passed"
+            "outcome": "earl:inapplicable"
           }
         }
       ]
@@ -5502,12 +5664,10 @@
           "@type": "Assertion",
           "test": {
             "title": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
-            "isPartOf": [
-              "WCAG2:text-spacing"
-            ]
+            "isPartOf": []
           },
           "result": {
-            "outcome": "earl:failed"
+            "outcome": "earl:inapplicable"
           }
         }
       ]
@@ -5520,12 +5680,10 @@
           "@type": "Assertion",
           "test": {
             "title": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
-            "isPartOf": [
-              "WCAG2:text-spacing"
-            ]
+            "isPartOf": []
           },
           "result": {
-            "outcome": "earl:failed"
+            "outcome": "earl:inapplicable"
           }
         }
       ]
@@ -5538,12 +5696,10 @@
           "@type": "Assertion",
           "test": {
             "title": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
-            "isPartOf": [
-              "WCAG2:text-spacing"
-            ]
+            "isPartOf": []
           },
           "result": {
-            "outcome": "earl:failed"
+            "outcome": "earl:inapplicable"
           }
         }
       ]
@@ -5556,12 +5712,10 @@
           "@type": "Assertion",
           "test": {
             "title": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
-            "isPartOf": [
-              "WCAG2:text-spacing"
-            ]
+            "isPartOf": []
           },
           "result": {
-            "outcome": "earl:failed"
+            "outcome": "earl:inapplicable"
           }
         }
       ]
@@ -5574,12 +5728,10 @@
           "@type": "Assertion",
           "test": {
             "title": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
-            "isPartOf": [
-              "WCAG2:text-spacing"
-            ]
+            "isPartOf": []
           },
           "result": {
-            "outcome": "earl:failed"
+            "outcome": "earl:inapplicable"
           }
         }
       ]
@@ -5592,12 +5744,10 @@
           "@type": "Assertion",
           "test": {
             "title": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
-            "isPartOf": [
-              "WCAG2:text-spacing"
-            ]
+            "isPartOf": []
           },
           "result": {
-            "outcome": "earl:failed"
+            "outcome": "earl:inapplicable"
           }
         }
       ]
@@ -5610,9 +5760,7 @@
           "@type": "Assertion",
           "test": {
             "title": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
-            "isPartOf": [
-              "WCAG2:text-spacing"
-            ]
+            "isPartOf": []
           },
           "result": {
             "outcome": "earl:inapplicable"
@@ -5628,9 +5776,7 @@
           "@type": "Assertion",
           "test": {
             "title": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
-            "isPartOf": [
-              "WCAG2:text-spacing"
-            ]
+            "isPartOf": []
           },
           "result": {
             "outcome": "earl:inapplicable"
@@ -5646,9 +5792,7 @@
           "@type": "Assertion",
           "test": {
             "title": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
-            "isPartOf": [
-              "WCAG2:text-spacing"
-            ]
+            "isPartOf": []
           },
           "result": {
             "outcome": "earl:inapplicable"
@@ -5664,9 +5808,7 @@
           "@type": "Assertion",
           "test": {
             "title": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
-            "isPartOf": [
-              "WCAG2:text-spacing"
-            ]
+            "isPartOf": []
           },
           "result": {
             "outcome": "earl:inapplicable"
@@ -5682,9 +5824,7 @@
           "@type": "Assertion",
           "test": {
             "title": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
-            "isPartOf": [
-              "WCAG2:text-spacing"
-            ]
+            "isPartOf": []
           },
           "result": {
             "outcome": "earl:inapplicable"
@@ -8711,6 +8851,24 @@
     },
     {
       "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/4fa1ac6e6c6c65a3cc17e144823e45ff30f428bb.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "element_orientation_unlocked:pass,fail_locked",
+            "isPartOf": [
+              "WCAG2:orientation"
+            ]
+          },
+          "result": {
+            "outcome": "earl:inapplicable"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
       "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/32ee0d96f92591c1e34db35754117daaf75a5005.html",
       "assertions": [
         {
@@ -8759,6 +8917,24 @@
           },
           "result": {
             "outcome": "earl:failed"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/0476fbeac29bee2ad56456947c57d488845d3e77.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "element_orientation_unlocked:pass,fail_locked",
+            "isPartOf": [
+              "WCAG2:orientation"
+            ]
+          },
+          "result": {
+            "outcome": "earl:inapplicable"
           }
         }
       ]
