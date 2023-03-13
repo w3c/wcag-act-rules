@@ -2,7 +2,7 @@
   "vendor": "LASIGE, Faculdade de Ciências da Universidade de Lisboa",
   "name": "QualWeb",
   "version": "3.0.0",
-  "lastModified": "7 March 2023",
+  "lastModified": "13 March 2023",
   "approvedRules": {
     "complete": 20,
     "partial": 2,
@@ -7589,8 +7589,8 @@
         "reported": []
       },
       "coverage": {
-        "covered": 3,
-        "untested": 4,
+        "covered": 5,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 11
       },
@@ -7620,7 +7620,7 @@
             {
               "procedureName": "audio element content has transcript",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -7635,7 +7635,7 @@
             {
               "procedureName": "audio element content has transcript",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -7680,7 +7680,7 @@
             {
               "procedureName": "audio element content has transcript",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -7695,7 +7695,7 @@
             {
               "procedureName": "audio element content has transcript",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
