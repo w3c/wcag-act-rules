@@ -2,7 +2,7 @@
   "vendor": "Siteimprove",
   "name": "Alfa (fully automated)",
   "version": "0.57.2",
-  "lastModified": "22 February 2023",
+  "lastModified": "20 March 2023",
   "approvedRules": {
     "complete": 20,
     "partial": 0,
@@ -36,8 +36,8 @@
         ]
       },
       "coverage": {
-        "covered": 20,
-        "untested": 3,
+        "covered": 23,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 23
       },
@@ -352,7 +352,7 @@
             {
               "procedureName": "sia-r10",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -367,7 +367,7 @@
             {
               "procedureName": "sia-r10",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -382,7 +382,7 @@
             {
               "procedureName": "sia-r10",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -1484,9 +1484,9 @@
         ]
       },
       "coverage": {
-        "covered": 6,
-        "untested": 7,
-        "cantTell": 1,
+        "covered": 12,
+        "untested": 0,
+        "cantTell": 2,
         "testCaseTotal": 14
       },
       "testCaseResults": [
@@ -1605,7 +1605,7 @@
             {
               "procedureName": "sia-r4",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -1620,7 +1620,7 @@
             {
               "procedureName": "sia-r4",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -1635,7 +1635,7 @@
             {
               "procedureName": "sia-r4",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -1650,7 +1650,7 @@
             {
               "procedureName": "sia-r4",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -1665,7 +1665,7 @@
             {
               "procedureName": "sia-r4",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -1680,7 +1680,7 @@
             {
               "procedureName": "sia-r4",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -1695,7 +1695,7 @@
             {
               "procedureName": "sia-r4",
               "outcomes": [
-                "untested"
+                "cantTell"
               ]
             }
           ]
@@ -7074,8 +7074,8 @@
         ]
       },
       "coverage": {
-        "covered": 10,
-        "untested": 2,
+        "covered": 11,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 12
       },
@@ -7120,7 +7120,7 @@
             {
               "procedureName": "sia-r44",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -7180,7 +7180,7 @@
             {
               "procedureName": "sia-r44",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -10604,9 +10604,9 @@
         ]
       },
       "coverage": {
-        "covered": 26,
-        "untested": 2,
-        "cantTell": 2,
+        "covered": 27,
+        "untested": 0,
+        "cantTell": 3,
         "testCaseTotal": 32
       },
       "testCaseResults": [
@@ -10650,7 +10650,7 @@
             {
               "procedureName": "sia-r69",
               "outcomes": [
-                "untested"
+                "cantTell"
               ]
             }
           ]
@@ -10755,7 +10755,7 @@
             {
               "procedureName": "sia-r69",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -11110,8 +11110,8 @@
         ]
       },
       "coverage": {
-        "covered": 29,
-        "untested": 1,
+        "covered": 30,
+        "untested": 0,
         "cantTell": 2,
         "testCaseTotal": 34
       },
@@ -11246,7 +11246,7 @@
             {
               "procedureName": "sia-r66",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
