@@ -1,0 +1,13 @@
+---
+layout: act_implementation
+title: "Total Validator (Browser) ACT Implementation"
+permalink: /standards-guidelines/act/implementations/total-validator-browser/
+ref: /standards-guidelines/act/implementations/total-validator-browser/
+implementation_key: total-validator-browser
+lang: en
+footer: ""
+type_of_guidance: ""
+github:
+  repository: w3c/wcag-act-rules
+  path: content/implementations/total-validator-browser.md
+---
