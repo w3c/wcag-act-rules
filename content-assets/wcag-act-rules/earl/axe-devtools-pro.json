@@ -3757,6 +3757,121 @@
           "earl:TestSubject",
           "sch:WebPage"
         ],
+        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/73f2c2/2512c24c9a793fa8a30958e203090f955a3fc262.html"
+      },
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:failed"
+      },
+      "test": {
+        "@type": "TestCase",
+        "title": "autocomplete-valid",
+        "@id": "https://dequeuniversity.com/rules/axe/4.6/autocomplete-valid?application=axeAPI",
+        "isPartOf": [
+          "WCAG2:identify-input-purpose"
+        ]
+      }
+    },
+    {
+      "@type": "Assertion",
+      "mode": "earl:automatic",
+      "subject": {
+        "@type": [
+          "earl:TestSubject",
+          "sch:WebPage"
+        ],
+        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/73f2c2/55ce632e85a0243abf196c59242b2af699e5c0d4.html"
+      },
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:failed"
+      },
+      "test": {
+        "@type": "TestCase",
+        "title": "autocomplete-valid",
+        "@id": "https://dequeuniversity.com/rules/axe/4.6/autocomplete-valid?application=axeAPI",
+        "isPartOf": [
+          "WCAG2:identify-input-purpose"
+        ]
+      }
+    },
+    {
+      "@type": "Assertion",
+      "mode": "earl:automatic",
+      "subject": {
+        "@type": [
+          "earl:TestSubject",
+          "sch:WebPage"
+        ],
+        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/73f2c2/130d7f761a6a43b896b2f1d0ded311da6a7aebf1.html"
+      },
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:failed"
+      },
+      "test": {
+        "@type": "TestCase",
+        "title": "autocomplete-valid",
+        "@id": "https://dequeuniversity.com/rules/axe/4.6/autocomplete-valid?application=axeAPI",
+        "isPartOf": [
+          "WCAG2:identify-input-purpose"
+        ]
+      }
+    },
+    {
+      "@type": "Assertion",
+      "mode": "earl:automatic",
+      "subject": {
+        "@type": [
+          "earl:TestSubject",
+          "sch:WebPage"
+        ],
+        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/73f2c2/3d79434f382323a20bc7dda8cd01e8d084a3c3bf.html"
+      },
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:failed"
+      },
+      "test": {
+        "@type": "TestCase",
+        "title": "autocomplete-valid",
+        "@id": "https://dequeuniversity.com/rules/axe/4.6/autocomplete-valid?application=axeAPI",
+        "isPartOf": [
+          "WCAG2:identify-input-purpose"
+        ]
+      }
+    },
+    {
+      "@type": "Assertion",
+      "mode": "earl:automatic",
+      "subject": {
+        "@type": [
+          "earl:TestSubject",
+          "sch:WebPage"
+        ],
+        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/73f2c2/92214e0008b9b2e7bd98d991d27c09bb33d4c92c.html"
+      },
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:failed"
+      },
+      "test": {
+        "@type": "TestCase",
+        "title": "autocomplete-valid",
+        "@id": "https://dequeuniversity.com/rules/axe/4.6/autocomplete-valid?application=axeAPI",
+        "isPartOf": [
+          "WCAG2:identify-input-purpose"
+        ]
+      }
+    },
+    {
+      "@type": "Assertion",
+      "mode": "earl:automatic",
+      "subject": {
+        "@type": [
+          "earl:TestSubject",
+          "sch:WebPage"
+        ],
         "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/73f2c2/41c0b66bc0208aef009343935649f2bec3ae778d.html"
       },
       "result": {
