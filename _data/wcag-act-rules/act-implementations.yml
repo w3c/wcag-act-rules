@@ -130,8 +130,7 @@
     - WAI-ARIA 1.2
   jsonReport: https://qa.powermapper.com/Tests/ACT-R/report.json
 
-
-- name:  Total Validator (Browser)
+- name: Total Validator (Browser)
   homepage: https://www.totalvalidator.com/
   version: 17.1.0
   vendor: Total Validator
@@ -139,7 +138,7 @@
   uniqueKey: total-validator-browser
   type: Automated tool
   standards:
-    - WCAG 2.1 Level A, AA
+    - WCAG 2.1 Level A, AA, AAA
     - WAI-ARIA 1.2
   jsonReport: https://www.totalvalidator.com/support/act/report_map.json
 
@@ -151,7 +150,7 @@
   uniqueKey: total-validator-linter
   type: Linter
   standards:
-    - WCAG 2.1 Level A, AA
+    - WCAG 2.1 Level A, AA, AAA
     - WAI-ARIA 1.2
   jsonReport: https://www.totalvalidator.com/support/act/report_src.json
 
