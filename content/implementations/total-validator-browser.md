@@ -1,6 +1,6 @@
 ---
 layout: act_implementation
-title: "Total Validator (Browser) ACT Implementation"
+title: "Total Validator (+Browser) ACT Implementation"
 permalink: /standards-guidelines/act/implementations/total-validator-browser/
 ref: /standards-guidelines/act/implementations/total-validator-browser/
 implementation_key: total-validator-browser
