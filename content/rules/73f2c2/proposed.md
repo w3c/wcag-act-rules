@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 73f2c2</p>
-  <p><strong>Date:</strong> Updated 23 February 2023</p>
+  <p><strong>Date:</strong> Updated 23 March 2023</p>
   <p><strong>Authors:</strong> <a href="https://github.com/ajanec01">Aron Janecki</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -19,7 +19,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that the HTML `autocomplete` attribute has a correct value.
-  last_modified: 23 February 2023
+  last_modified: 23 March 2023
   scs_tested:
     - handle: Identify Input Purpose
       num: 1.3.5
@@ -261,6 +261,56 @@ The `autocomplete` attribute value is on an `input` element that does not have a
 
 ```html
 <label>Username<input role="banner" tabindex="0" autocomplete="banner"/></label>
+```
+
+#### Failed Example 6
+
+<a class="example-link" title="Failed Example 6" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/73f2c2/2512c24c9a793fa8a30958e203090f955a3fc262.html">Open in a new tab</a>
+
+This `autocomplete` attribute does not contain any required token.
+
+```html
+<label>Address<input autocomplete="shipping"/></label>
+```
+
+#### Failed Example 7
+
+<a class="example-link" title="Failed Example 7" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/73f2c2/55ce632e85a0243abf196c59242b2af699e5c0d4.html">Open in a new tab</a>
+
+This `autocomplete` attribute contains two of the required tokens, but only one is allowed.
+
+```html
+<label>Address<input autocomplete="address-line1 address-line2"/></label>
+```
+
+#### Failed Example 8
+
+<a class="example-link" title="Failed Example 8" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/73f2c2/130d7f761a6a43b896b2f1d0ded311da6a7aebf1.html">Open in a new tab</a>
+
+This `autocomplete` attribute contains a `work` modifier but no required token afterwards.
+
+```html
+<label>Email<input autocomplete="work"/></label>
+```
+
+#### Failed Example 9
+
+<a class="example-link" title="Failed Example 9" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/73f2c2/3d79434f382323a20bc7dda8cd01e8d084a3c3bf.html">Open in a new tab</a>
+
+This `autocomplete` attribute contains an extra token after the allowed ones.
+
+```html
+<label>Password<input type="password" autocomplete="current-password webauthn invalid"/></label>
+```
+
+#### Failed Example 10
+
+<a class="example-link" title="Failed Example 10" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/73f2c2/92214e0008b9b2e7bd98d991d27c09bb33d4c92c.html">Open in a new tab</a>
+
+This `autocomplete` attribute contains an extra token after the allowed ones.
+
+```html
+<label>Email<input autocomplete="email invalid"/></label>
 ```
 
 ### Inapplicable

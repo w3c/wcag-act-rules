@@ -3,7 +3,7 @@
   "website": "https://www.w3.org/WAI/standards-guidelines/act/rules/",
   "license": "https://act-rules.github.io/pages/license/",
   "description": "Accessibility conformance testing rules for HTML",
-  "count": 1141,
+  "count": 1146,
   "testcases": [
     {
       "ruleId": "73f2c2",
@@ -11587,6 +11587,96 @@
       "testcaseTitle": "Passed Example 9",
       "relativePath": "testcases/73f2c2/efcd5df49b39506dac34a310f4b8bc0df71716d3.html",
       "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/73f2c2/efcd5df49b39506dac34a310f4b8bc0df71716d3.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/73f2c2/proposed/"
+    },
+    {
+      "ruleId": "73f2c2",
+      "ruleName": "Autocomplete attribute has valid value",
+      "ruleAccessibilityRequirements": {
+        "wcag21:1.3.5": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "2512c24c9a793fa8a30958e203090f955a3fc262",
+      "testcaseTitle": "Failed Example 6",
+      "relativePath": "testcases/73f2c2/2512c24c9a793fa8a30958e203090f955a3fc262.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/73f2c2/2512c24c9a793fa8a30958e203090f955a3fc262.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/73f2c2/proposed/"
+    },
+    {
+      "ruleId": "73f2c2",
+      "ruleName": "Autocomplete attribute has valid value",
+      "ruleAccessibilityRequirements": {
+        "wcag21:1.3.5": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "55ce632e85a0243abf196c59242b2af699e5c0d4",
+      "testcaseTitle": "Failed Example 7",
+      "relativePath": "testcases/73f2c2/55ce632e85a0243abf196c59242b2af699e5c0d4.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/73f2c2/55ce632e85a0243abf196c59242b2af699e5c0d4.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/73f2c2/proposed/"
+    },
+    {
+      "ruleId": "73f2c2",
+      "ruleName": "Autocomplete attribute has valid value",
+      "ruleAccessibilityRequirements": {
+        "wcag21:1.3.5": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "130d7f761a6a43b896b2f1d0ded311da6a7aebf1",
+      "testcaseTitle": "Failed Example 8",
+      "relativePath": "testcases/73f2c2/130d7f761a6a43b896b2f1d0ded311da6a7aebf1.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/73f2c2/130d7f761a6a43b896b2f1d0ded311da6a7aebf1.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/73f2c2/proposed/"
+    },
+    {
+      "ruleId": "73f2c2",
+      "ruleName": "Autocomplete attribute has valid value",
+      "ruleAccessibilityRequirements": {
+        "wcag21:1.3.5": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "3d79434f382323a20bc7dda8cd01e8d084a3c3bf",
+      "testcaseTitle": "Failed Example 9",
+      "relativePath": "testcases/73f2c2/3d79434f382323a20bc7dda8cd01e8d084a3c3bf.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/73f2c2/3d79434f382323a20bc7dda8cd01e8d084a3c3bf.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/73f2c2/proposed/"
+    },
+    {
+      "ruleId": "73f2c2",
+      "ruleName": "Autocomplete attribute has valid value",
+      "ruleAccessibilityRequirements": {
+        "wcag21:1.3.5": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "92214e0008b9b2e7bd98d991d27c09bb33d4c92c",
+      "testcaseTitle": "Failed Example 10",
+      "relativePath": "testcases/73f2c2/92214e0008b9b2e7bd98d991d27c09bb33d4c92c.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/73f2c2/92214e0008b9b2e7bd98d991d27c09bb33d4c92c.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/73f2c2/proposed/"
     },
     {
