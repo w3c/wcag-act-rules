@@ -1,5 +1,5 @@
 {
-  "@context": "https://act-rules.github.io/earl-context.json",
+  "@context": "https://www.w3.org/WAI/content-assets/wcag-act-rules/earl-context.json",
   "@graph": [
     {
       "@type": "TestSubject",
@@ -2901,7 +2901,7 @@
             "title": "P967",
             "isPartOf": ["WCAG2:language-of-page"]
            },
-          "result": { "outcome": "earl:cantTell" }
+          "result": { "outcome": "earl:passed" }
         }
       ]
     },
@@ -2923,7 +2923,7 @@
             "title": "P967",
             "isPartOf": ["WCAG2:language-of-page"]
            },
-          "result": { "outcome": "earl:cantTell" }
+          "result": { "outcome": "earl:passed" }
         }
       ]
     },
@@ -3077,7 +3077,7 @@
             "title": "E9661",
             "isPartOf": ["WCAG2:language-of-page"]
            },
-          "result": { "outcome": "earl:cantTell" }
+          "result": { "outcome": "earl:passed" }
         }
       ]
     },
@@ -3209,7 +3209,7 @@
             "title": "W8641",
             "isPartOf": ["WCAG2:language-of-page"]
            },
-          "result": { "outcome": "earl:cantTell" }
+          "result": { "outcome": "earl:passed" }
         }
       ]
     },
@@ -3231,7 +3231,7 @@
             "title": "W8641",
             "isPartOf": ["WCAG2:language-of-page"]
            },
-          "result": { "outcome": "earl:cantTell" }
+          "result": { "outcome": "earl:passed" }
         }
       ]
     },
@@ -3253,7 +3253,7 @@
             "title": "W8641",
             "isPartOf": ["WCAG2:language-of-page"]
            },
-          "result": { "outcome": "earl:cantTell" }
+          "result": { "outcome": "earl:passed" }
         }
       ]
     },
@@ -3803,7 +3803,7 @@
             "title": "E869",
             "isPartOf": ["WCAG2:page-titled"]
            },
-          "result": { "outcome": "earl:cantTell" }
+          "result": { "outcome": "earl:passed" }
         }
       ]
     },
@@ -3825,7 +3825,7 @@
             "title": "E870",
             "isPartOf": ["WCAG2:page-titled"]
            },
-          "result": { "outcome": "earl:cantTell" }
+          "result": { "outcome": "earl:passed" }
         }
       ]
     },
@@ -5035,7 +5035,7 @@
             "title": "W917",
             "isPartOf": ["WCAG2:text-spacing"]
            },
-          "result": { "outcome": "earl:cantTell" }
+          "result": { "outcome": "earl:passed" }
         }
       ]
     },
@@ -5057,7 +5057,7 @@
             "title": "P917",
             "isPartOf": ["WCAG2:text-spacing"]
            },
-          "result": { "outcome": "earl:cantTell" }
+          "result": { "outcome": "earl:passed" }
         }
       ]
     },
@@ -6883,7 +6883,7 @@
             "title": "W917",
             "isPartOf": ["WCAG2:text-spacing"]
            },
-          "result": { "outcome": "earl:cantTell" }
+          "result": { "outcome": "earl:passed" }
         }
       ]
     },
@@ -6905,7 +6905,7 @@
             "title": "P917",
             "isPartOf": ["WCAG2:text-spacing"]
            },
-          "result": { "outcome": "earl:cantTell" }
+          "result": { "outcome": "earl:passed" }
         }
       ]
     },
@@ -8137,7 +8137,7 @@
             "title": "E9602",
             "isPartOf": ["WCAG2:name-role-value"]
            },
-          "result": { "outcome": "earl:failed" }
+          "result": { "outcome": "earl:cantTell" }
         }
       ]
     },
@@ -8929,7 +8929,7 @@
             "title": "W917",
             "isPartOf": ["WCAG2:text-spacing"]
            },
-          "result": { "outcome": "earl:cantTell" }
+          "result": { "outcome": "earl:passed" }
         }
       ]
     },
@@ -8951,7 +8951,7 @@
             "title": "P917",
             "isPartOf": ["WCAG2:text-spacing"]
            },
-          "result": { "outcome": "earl:cantTell" }
+          "result": { "outcome": "earl:passed" }
         }
       ]
     },
@@ -12537,7 +12537,7 @@
             "title": "E9652",
             "isPartOf": ["WCAG2:info-and-relationships", "WCAG2:name-role-value"]
            },
-          "result": { "outcome": "earl:cantTell" }
+          "result": { "outcome": "earl:passed" }
         }
       ]
     },
@@ -12735,7 +12735,7 @@
             "title": "E16",
             "isPartOf": ["WCAG2:parsing"]
            },
-          "result": { "outcome": "earl:cantTell" }
+          "result": { "outcome": "earl:passed" }
         }
       ]
     },
@@ -12757,7 +12757,7 @@
             "title": "E16",
             "isPartOf": ["WCAG2:parsing"]
            },
-          "result": { "outcome": "earl:cantTell" }
+          "result": { "outcome": "earl:passed" }
         }
       ]
     },
@@ -12780,6 +12780,116 @@
             "isPartOf": ["WCAG2:identify-input-purpose"]
            },
           "result": { "outcome": "earl:passed" }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/73f2c2/2512c24c9a793fa8a30958e203090f955a3fc262.html",
+      "assertor": {
+        "@id": "Total Validator",
+        "@type": "Software",
+        "title": "Total Validator",
+        "description": "Total Validator checks websites are accessible, use valid HTML and CSS, have no broken links, and are free from spelling mistakes.",
+        "hasVersion": "17.1.0",
+        "homepage": "https://www.totalvalidator.com"
+      },
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "E9152",
+            "isPartOf": ["WCAG2:identify-input-purpose"]
+           },
+          "result": { "outcome": "earl:failed" }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/73f2c2/55ce632e85a0243abf196c59242b2af699e5c0d4.html",
+      "assertor": {
+        "@id": "Total Validator",
+        "@type": "Software",
+        "title": "Total Validator",
+        "description": "Total Validator checks websites are accessible, use valid HTML and CSS, have no broken links, and are free from spelling mistakes.",
+        "hasVersion": "17.1.0",
+        "homepage": "https://www.totalvalidator.com"
+      },
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "E9152",
+            "isPartOf": ["WCAG2:identify-input-purpose"]
+           },
+          "result": { "outcome": "earl:failed" }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/73f2c2/130d7f761a6a43b896b2f1d0ded311da6a7aebf1.html",
+      "assertor": {
+        "@id": "Total Validator",
+        "@type": "Software",
+        "title": "Total Validator",
+        "description": "Total Validator checks websites are accessible, use valid HTML and CSS, have no broken links, and are free from spelling mistakes.",
+        "hasVersion": "17.1.0",
+        "homepage": "https://www.totalvalidator.com"
+      },
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "E9152",
+            "isPartOf": ["WCAG2:identify-input-purpose"]
+           },
+          "result": { "outcome": "earl:failed" }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/73f2c2/3d79434f382323a20bc7dda8cd01e8d084a3c3bf.html",
+      "assertor": {
+        "@id": "Total Validator",
+        "@type": "Software",
+        "title": "Total Validator",
+        "description": "Total Validator checks websites are accessible, use valid HTML and CSS, have no broken links, and are free from spelling mistakes.",
+        "hasVersion": "17.1.0",
+        "homepage": "https://www.totalvalidator.com"
+      },
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "E9152",
+            "isPartOf": ["WCAG2:identify-input-purpose"]
+           },
+          "result": { "outcome": "earl:failed" }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/73f2c2/92214e0008b9b2e7bd98d991d27c09bb33d4c92c.html",
+      "assertor": {
+        "@id": "Total Validator",
+        "@type": "Software",
+        "title": "Total Validator",
+        "description": "Total Validator checks websites are accessible, use valid HTML and CSS, have no broken links, and are free from spelling mistakes.",
+        "hasVersion": "17.1.0",
+        "homepage": "https://www.totalvalidator.com"
+      },
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "E9152",
+            "isPartOf": ["WCAG2:identify-input-purpose"]
+           },
+          "result": { "outcome": "earl:failed" }
         }
       ]
     },
@@ -13725,7 +13835,7 @@
             "title": "P967",
             "isPartOf": ["WCAG2:language-of-page"]
            },
-          "result": { "outcome": "earl:cantTell" }
+          "result": { "outcome": "earl:passed" }
         }
       ]
     },
@@ -13747,7 +13857,7 @@
             "title": "P967",
             "isPartOf": ["WCAG2:language-of-page"]
            },
-          "result": { "outcome": "earl:cantTell" }
+          "result": { "outcome": "earl:passed" }
         }
       ]
     },
@@ -15968,160 +16078,6 @@
           "test": {
             "title": "E9652",
             "isPartOf": ["WCAG2:info-and-relationships", "WCAG2:name-role-value"]
-           },
-          "result": { "outcome": "earl:passed" }
-        }
-      ]
-    },
-    {
-      "@type": "TestSubject",
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/oj04fd/52be6331dc0978990a8b806a9a4a84bf738a43e1.html",
-      "assertor": {
-        "@id": "Total Validator",
-        "@type": "Software",
-        "title": "Total Validator",
-        "description": "Total Validator checks websites are accessible, use valid HTML and CSS, have no broken links, and are free from spelling mistakes.",
-        "hasVersion": "17.1.0",
-        "homepage": "https://www.totalvalidator.com"
-      },
-      "assertions": [
-        {
-          "@type": "Assertion",
-          "test": {
-            "title": "E914",
-            "isPartOf": ["WCAG2:focus-visible"]
-           },
-          "result": { "outcome": "earl:passed" }
-        }
-      ]
-    },
-    {
-      "@type": "TestSubject",
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/oj04fd/95cf4fdf26825900e91a30eaf6c2235516db79f9.html",
-      "assertor": {
-        "@id": "Total Validator",
-        "@type": "Software",
-        "title": "Total Validator",
-        "description": "Total Validator checks websites are accessible, use valid HTML and CSS, have no broken links, and are free from spelling mistakes.",
-        "hasVersion": "17.1.0",
-        "homepage": "https://www.totalvalidator.com"
-      },
-      "assertions": [
-        {
-          "@type": "Assertion",
-          "test": {
-            "title": "E914",
-            "isPartOf": ["WCAG2:focus-visible"]
-           },
-          "result": { "outcome": "earl:passed" }
-        }
-      ]
-    },
-    {
-      "@type": "TestSubject",
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/oj04fd/b44aa294df6f0de62f11f6ae732087d92c90b448.html",
-      "assertor": {
-        "@id": "Total Validator",
-        "@type": "Software",
-        "title": "Total Validator",
-        "description": "Total Validator checks websites are accessible, use valid HTML and CSS, have no broken links, and are free from spelling mistakes.",
-        "hasVersion": "17.1.0",
-        "homepage": "https://www.totalvalidator.com"
-      },
-      "assertions": [
-        {
-          "@type": "Assertion",
-          "test": {
-            "title": "E914",
-            "isPartOf": ["WCAG2:focus-visible"]
-           },
-          "result": { "outcome": "earl:passed" }
-        }
-      ]
-    },
-    {
-      "@type": "TestSubject",
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/oj04fd/dd9628d86628e285fe99ce98efdacbe441c20ca5.html",
-      "assertor": {
-        "@id": "Total Validator",
-        "@type": "Software",
-        "title": "Total Validator",
-        "description": "Total Validator checks websites are accessible, use valid HTML and CSS, have no broken links, and are free from spelling mistakes.",
-        "hasVersion": "17.1.0",
-        "homepage": "https://www.totalvalidator.com"
-      },
-      "assertions": [
-        {
-          "@type": "Assertion",
-          "test": {
-            "title": "E914",
-            "isPartOf": ["WCAG2:focus-visible"]
-           },
-          "result": { "outcome": "earl:passed" }
-        }
-      ]
-    },
-    {
-      "@type": "TestSubject",
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/oj04fd/f1c9efb4c8d1b5f7870c693bce2e6ca046dd768d.html",
-      "assertor": {
-        "@id": "Total Validator",
-        "@type": "Software",
-        "title": "Total Validator",
-        "description": "Total Validator checks websites are accessible, use valid HTML and CSS, have no broken links, and are free from spelling mistakes.",
-        "hasVersion": "17.1.0",
-        "homepage": "https://www.totalvalidator.com"
-      },
-      "assertions": [
-        {
-          "@type": "Assertion",
-          "test": {
-            "title": "E914",
-            "isPartOf": ["WCAG2:focus-visible"]
-           },
-          "result": { "outcome": "earl:cantTell" }
-        }
-      ]
-    },
-    {
-      "@type": "TestSubject",
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/oj04fd/90789ad82a761b7697418e8cb403db103f0925a2.html",
-      "assertor": {
-        "@id": "Total Validator",
-        "@type": "Software",
-        "title": "Total Validator",
-        "description": "Total Validator checks websites are accessible, use valid HTML and CSS, have no broken links, and are free from spelling mistakes.",
-        "hasVersion": "17.1.0",
-        "homepage": "https://www.totalvalidator.com"
-      },
-      "assertions": [
-        {
-          "@type": "Assertion",
-          "test": {
-            "title": "E914",
-            "isPartOf": ["WCAG2:focus-visible"]
-           },
-          "result": { "outcome": "earl:passed" }
-        }
-      ]
-    },
-    {
-      "@type": "TestSubject",
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/oj04fd/b12f1f45eef29c30197ca3bda79d793cd90eeadd.html",
-      "assertor": {
-        "@id": "Total Validator",
-        "@type": "Software",
-        "title": "Total Validator",
-        "description": "Total Validator checks websites are accessible, use valid HTML and CSS, have no broken links, and are free from spelling mistakes.",
-        "hasVersion": "17.1.0",
-        "homepage": "https://www.totalvalidator.com"
-      },
-      "assertions": [
-        {
-          "@type": "Assertion",
-          "test": {
-            "title": "E914",
-            "isPartOf": ["WCAG2:focus-visible"]
            },
           "result": { "outcome": "earl:passed" }
         }
