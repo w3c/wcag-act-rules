@@ -173,7 +173,7 @@
             "title": "E9152",
             "isPartOf": ["WCAG2:identify-input-purpose"]
            },
-          "result": { "outcome": "earl:failed" }
+          "result": { "outcome": "earl:passed" }
         }
       ]
     },

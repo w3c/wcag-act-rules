@@ -4,10 +4,10 @@
   "version": "17.1.0",
   "lastModified": "31 March 2023",
   "approvedRules": {
-    "complete": 21,
+    "complete": 22,
     "partial": 0,
     "minimal": 0,
-    "inconsistent": 1,
+    "inconsistent": 0,
     "untested": 0
   },
   "proposedRules": {
@@ -25,7 +25,7 @@
       "procedureNames": [
         "E9152"
       ],
-      "consistency": null,
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -36,7 +36,7 @@
         ]
       },
       "coverage": {
-        "covered": 27,
+        "covered": 28,
         "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 28
@@ -157,7 +157,7 @@
             {
               "procedureName": "E9152",
               "outcomes": [
-                "failed"
+                "passed"
               ]
             }
           ]
