@@ -2,7 +2,7 @@
   "vendor": "Total Validator",
   "name": "Total Validator",
   "version": "17.1.0",
-  "lastModified": "30 March 2023",
+  "lastModified": "31 March 2023",
   "approvedRules": {
     "complete": 18,
     "partial": 3,
@@ -7376,7 +7376,7 @@
         ]
       },
       "coverage": {
-        "covered": 22,
+        "covered": 23,
         "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 24
@@ -7662,7 +7662,7 @@
             {
               "procedureName": "E9652",
               "outcomes": [
-                "passed"
+                "failed"
               ]
             }
           ]
@@ -8487,9 +8487,9 @@
         ]
       },
       "coverage": {
-        "covered": 10,
+        "covered": 9,
         "untested": 0,
-        "cantTell": 0,
+        "cantTell": 1,
         "testCaseTotal": 10
       },
       "testCaseResults": [
@@ -8533,7 +8533,7 @@
             {
               "procedureName": "E894",
               "outcomes": [
-                "passed"
+                "cantTell"
               ]
             }
           ]

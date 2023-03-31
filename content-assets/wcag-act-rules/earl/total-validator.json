@@ -12427,7 +12427,7 @@
             "title": "E9652",
             "isPartOf": ["WCAG2:info-and-relationships", "WCAG2:name-role-value"]
            },
-          "result": { "outcome": "earl:passed" }
+          "result": { "outcome": "earl:failed" }
         }
       ]
     },
@@ -13923,7 +13923,7 @@
             "title": "E894",
             "isPartOf": ["WCAG2:parsing"]
            },
-          "result": { "outcome": "earl:passed" }
+          "result": { "outcome": "earl:cantTell" }
         }
       ]
     },

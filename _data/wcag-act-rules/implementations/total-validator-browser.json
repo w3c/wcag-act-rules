@@ -2,17 +2,17 @@
   "vendor": "Total Validator",
   "name": "Total Validator (+Browser)",
   "version": "17.1.0",
-  "lastModified": "30 March 2023",
+  "lastModified": "31 March 2023",
   "approvedRules": {
-    "complete": 20,
+    "complete": 21,
     "partial": 0,
     "minimal": 0,
-    "inconsistent": 2,
+    "inconsistent": 1,
     "untested": 0
   },
   "proposedRules": {
-    "complete": 13,
-    "partial": 2,
+    "complete": 14,
+    "partial": 1,
     "minimal": 0,
     "inconsistent": 0,
     "untested": 51
@@ -5107,7 +5107,7 @@
       "procedureNames": [
         "E9602"
       ],
-      "consistency": null,
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -5118,9 +5118,9 @@
         ]
       },
       "coverage": {
-        "covered": 14,
+        "covered": 13,
         "untested": 0,
-        "cantTell": 0,
+        "cantTell": 2,
         "testCaseTotal": 15
       },
       "testCaseResults": [
@@ -5179,7 +5179,7 @@
             {
               "procedureName": "E9602",
               "outcomes": [
-                "failed"
+                "cantTell"
               ]
             }
           ]
@@ -5299,7 +5299,7 @@
             {
               "procedureName": "E9602",
               "outcomes": [
-                "failed"
+                "cantTell"
               ]
             }
           ]
@@ -6787,7 +6787,7 @@
       "procedureNames": [
         "E962"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -6798,9 +6798,9 @@
         ]
       },
       "coverage": {
-        "covered": 14,
+        "covered": 13,
         "untested": 0,
-        "cantTell": 0,
+        "cantTell": 2,
         "testCaseTotal": 15
       },
       "testCaseResults": [
@@ -6889,7 +6889,7 @@
             {
               "procedureName": "E962",
               "outcomes": [
-                "passed"
+                "cantTell"
               ]
             }
           ]
@@ -6949,7 +6949,7 @@
             {
               "procedureName": "E962",
               "outcomes": [
-                "passed"
+                "cantTell"
               ]
             }
           ]
@@ -7697,7 +7697,7 @@
         ]
       },
       "coverage": {
-        "covered": 22,
+        "covered": 23,
         "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 24
@@ -7983,7 +7983,7 @@
             {
               "procedureName": "E9652",
               "outcomes": [
-                "passed"
+                "failed"
               ]
             }
           ]
@@ -8808,9 +8808,9 @@
         ]
       },
       "coverage": {
-        "covered": 10,
+        "covered": 9,
         "untested": 0,
-        "cantTell": 0,
+        "cantTell": 1,
         "testCaseTotal": 10
       },
       "testCaseResults": [
@@ -8854,7 +8854,7 @@
             {
               "procedureName": "E894",
               "outcomes": [
-                "passed"
+                "cantTell"
               ]
             }
           ]
