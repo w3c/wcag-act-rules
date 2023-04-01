@@ -2,17 +2,17 @@
   "vendor": "Deque Systems",
   "name": "Axe DevTools Pro",
   "version": "4.37.1",
-  "lastModified": "31 March 2023",
+  "lastModified": "1 April 2023",
   "approvedRules": {
-    "complete": 21,
-    "partial": 1,
+    "complete": 22,
+    "partial": 0,
     "minimal": 0,
     "inconsistent": 0,
     "untested": 0
   },
   "proposedRules": {
-    "complete": 18,
-    "partial": 5,
+    "complete": 19,
+    "partial": 4,
     "minimal": 8,
     "inconsistent": 9,
     "untested": 26
@@ -6059,7 +6059,7 @@
       "procedureNames": [
         "object-alt"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -6070,8 +6070,8 @@
         ]
       },
       "coverage": {
-        "covered": 14,
-        "untested": 4,
+        "covered": 18,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 18
       },
@@ -6086,7 +6086,7 @@
             {
               "procedureName": "object-alt",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -6191,7 +6191,7 @@
             {
               "procedureName": "object-alt",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -6266,7 +6266,7 @@
             {
               "procedureName": "object-alt",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -6311,7 +6311,7 @@
             {
               "procedureName": "object-alt",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -13971,7 +13971,7 @@
       "procedureNames": [
         "scrollable-region-focusable"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -13982,8 +13982,8 @@
         ]
       },
       "coverage": {
-        "covered": 9,
-        "untested": 1,
+        "covered": 10,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 10
       },
@@ -14133,7 +14133,7 @@
             {
               "procedureName": "scrollable-region-focusable",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
