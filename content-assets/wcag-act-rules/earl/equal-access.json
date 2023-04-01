@@ -381,6 +381,96 @@
     },
     {
       "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/73f2c2/2512c24c9a793fa8a30958e203090f955a3fc262.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_2,Fail_attribute_incorrect",
+            "isPartOf": [
+              "WCAG2:identify-input-purpose"
+            ]
+          },
+          "result": {
+            "outcome": "earl:passed"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/73f2c2/55ce632e85a0243abf196c59242b2af699e5c0d4.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_2,Fail_attribute_incorrect",
+            "isPartOf": [
+              "WCAG2:identify-input-purpose"
+            ]
+          },
+          "result": {
+            "outcome": "earl:failed"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/73f2c2/130d7f761a6a43b896b2f1d0ded311da6a7aebf1.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_2,Fail_attribute_incorrect",
+            "isPartOf": [
+              "WCAG2:identify-input-purpose"
+            ]
+          },
+          "result": {
+            "outcome": "earl:passed"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/73f2c2/3d79434f382323a20bc7dda8cd01e8d084a3c3bf.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_2,Fail_attribute_incorrect",
+            "isPartOf": [
+              "WCAG2:identify-input-purpose"
+            ]
+          },
+          "result": {
+            "outcome": "earl:failed"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/73f2c2/92214e0008b9b2e7bd98d991d27c09bb33d4c92c.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "WCAG21_Input_Autocomplete:Pass_0,Fail_1,Fail_2,Fail_attribute_incorrect",
+            "isPartOf": [
+              "WCAG2:identify-input-purpose"
+            ]
+          },
+          "result": {
+            "outcome": "earl:failed"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
       "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/73f2c2/41c0b66bc0208aef009343935649f2bec3ae778d.html",
       "assertions": [
         {
@@ -5845,7 +5935,7 @@
             ]
           },
           "result": {
-            "outcome": "earl:inapplicable"
+            "outcome": "earl:passed"
           }
         },
         {
@@ -5857,7 +5947,7 @@
             ]
           },
           "result": {
-            "outcome": "earl:inapplicable"
+            "outcome": "earl:passed"
           }
         }
       ]
@@ -5875,7 +5965,7 @@
             ]
           },
           "result": {
-            "outcome": "earl:inapplicable"
+            "outcome": "earl:passed"
           }
         },
         {
@@ -5887,7 +5977,7 @@
             ]
           },
           "result": {
-            "outcome": "earl:inapplicable"
+            "outcome": "earl:passed"
           }
         }
       ]
@@ -5905,7 +5995,7 @@
             ]
           },
           "result": {
-            "outcome": "earl:inapplicable"
+            "outcome": "earl:passed"
           }
         },
         {
@@ -5917,7 +6007,7 @@
             ]
           },
           "result": {
-            "outcome": "earl:inapplicable"
+            "outcome": "earl:passed"
           }
         }
       ]
@@ -5935,7 +6025,7 @@
             ]
           },
           "result": {
-            "outcome": "earl:inapplicable"
+            "outcome": "earl:cantTell"
           }
         },
         {
@@ -5947,7 +6037,7 @@
             ]
           },
           "result": {
-            "outcome": "earl:inapplicable"
+            "outcome": "earl:passed"
           }
         }
       ]
@@ -5965,7 +6055,7 @@
             ]
           },
           "result": {
-            "outcome": "earl:inapplicable"
+            "outcome": "earl:passed"
           }
         },
         {
@@ -5977,7 +6067,7 @@
             ]
           },
           "result": {
-            "outcome": "earl:inapplicable"
+            "outcome": "earl:failed"
           }
         }
       ]
@@ -5995,7 +6085,7 @@
             ]
           },
           "result": {
-            "outcome": "earl:inapplicable"
+            "outcome": "earl:passed"
           }
         },
         {
@@ -6007,7 +6097,7 @@
             ]
           },
           "result": {
-            "outcome": "earl:inapplicable"
+            "outcome": "earl:failed"
           }
         }
       ]
@@ -6025,7 +6115,7 @@
             ]
           },
           "result": {
-            "outcome": "earl:inapplicable"
+            "outcome": "earl:passed"
           }
         },
         {
@@ -6037,7 +6127,7 @@
             ]
           },
           "result": {
-            "outcome": "earl:inapplicable"
+            "outcome": "earl:failed"
           }
         }
       ]
@@ -7098,7 +7188,7 @@
             ]
           },
           "result": {
-            "outcome": "earl:passed"
+            "outcome": "earl:failed"
           }
         }
       ]
@@ -7764,7 +7854,7 @@
             ]
           },
           "result": {
-            "outcome": "earl:passed"
+            "outcome": "earl:failed"
           }
         }
       ]
@@ -9672,7 +9762,7 @@
             ]
           },
           "result": {
-            "outcome": "earl:inapplicable"
+            "outcome": "earl:passed"
           }
         },
         {
@@ -9684,7 +9774,7 @@
             ]
           },
           "result": {
-            "outcome": "earl:inapplicable"
+            "outcome": "earl:passed"
           }
         }
       ]
@@ -9702,7 +9792,7 @@
             ]
           },
           "result": {
-            "outcome": "earl:inapplicable"
+            "outcome": "earl:passed"
           }
         },
         {
@@ -9714,7 +9804,7 @@
             ]
           },
           "result": {
-            "outcome": "earl:inapplicable"
+            "outcome": "earl:passed"
           }
         }
       ]
@@ -9732,7 +9822,7 @@
             ]
           },
           "result": {
-            "outcome": "earl:inapplicable"
+            "outcome": "earl:cantTell"
           }
         },
         {
@@ -9744,7 +9834,7 @@
             ]
           },
           "result": {
-            "outcome": "earl:inapplicable"
+            "outcome": "earl:passed"
           }
         }
       ]
@@ -9762,7 +9852,7 @@
             ]
           },
           "result": {
-            "outcome": "earl:inapplicable"
+            "outcome": "earl:passed"
           }
         },
         {
@@ -9774,7 +9864,7 @@
             ]
           },
           "result": {
-            "outcome": "earl:inapplicable"
+            "outcome": "earl:failed"
           }
         }
       ]
@@ -9792,7 +9882,7 @@
             ]
           },
           "result": {
-            "outcome": "earl:inapplicable"
+            "outcome": "earl:passed"
           }
         },
         {
@@ -9804,7 +9894,7 @@
             ]
           },
           "result": {
-            "outcome": "earl:inapplicable"
+            "outcome": "earl:failed"
           }
         }
       ]
