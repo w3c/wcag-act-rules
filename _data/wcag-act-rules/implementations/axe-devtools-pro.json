@@ -2,7 +2,7 @@
   "vendor": "Deque Systems",
   "name": "Axe DevTools Pro",
   "version": "4.37.1",
-  "lastModified": "27 March 2023",
+  "lastModified": "4 April 2023",
   "approvedRules": {
     "complete": 22,
     "partial": 0,
@@ -12,9 +12,9 @@
   },
   "proposedRules": {
     "complete": 18,
-    "partial": 6,
+    "partial": 5,
     "minimal": 8,
-    "inconsistent": 8,
+    "inconsistent": 9,
     "untested": 26
   },
   "actRuleMapping": [
@@ -8656,7 +8656,7 @@
       "procedureNames": [
         "css-orientation-lock"
       ],
-      "consistency": "partial",
+      "consistency": null,
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -8667,7 +8667,7 @@
         ]
       },
       "coverage": {
-        "covered": 10,
+        "covered": 7,
         "untested": 0,
         "cantTell": 1,
         "testCaseTotal": 12
@@ -8683,7 +8683,7 @@
             {
               "procedureName": "css-orientation-lock",
               "outcomes": [
-                "passed"
+                "inapplicable"
               ]
             }
           ]
@@ -8698,7 +8698,7 @@
             {
               "procedureName": "css-orientation-lock",
               "outcomes": [
-                "passed"
+                "inapplicable"
               ]
             }
           ]
@@ -8728,7 +8728,7 @@
             {
               "procedureName": "css-orientation-lock",
               "outcomes": [
-                "failed"
+                "inapplicable"
               ]
             }
           ]
@@ -8743,7 +8743,7 @@
             {
               "procedureName": "css-orientation-lock",
               "outcomes": [
-                "failed"
+                "inapplicable"
               ]
             }
           ]
@@ -8758,7 +8758,7 @@
             {
               "procedureName": "css-orientation-lock",
               "outcomes": [
-                "failed"
+                "inapplicable"
               ]
             }
           ]
@@ -8848,7 +8848,7 @@
             {
               "procedureName": "css-orientation-lock",
               "outcomes": [
-                "passed"
+                "inapplicable"
               ]
             }
           ]

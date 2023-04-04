@@ -2,7 +2,7 @@
   "vendor": "Siteimprove",
   "name": "Alfa (semi-automated)",
   "version": "0.57.2",
-  "lastModified": "20 March 2023",
+  "lastModified": "30 March 2023",
   "approvedRules": {
     "complete": 20,
     "partial": 0,
@@ -11,10 +11,10 @@
     "untested": 0
   },
   "proposedRules": {
-    "complete": 28,
+    "complete": 29,
     "partial": 6,
     "minimal": 0,
-    "inconsistent": 9,
+    "inconsistent": 8,
     "untested": 23
   },
   "actRuleMapping": [
@@ -36,8 +36,8 @@
         ]
       },
       "coverage": {
-        "covered": 23,
-        "untested": 5,
+        "covered": 28,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 28
       },
@@ -367,7 +367,7 @@
             {
               "procedureName": "sia-r10",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -382,7 +382,7 @@
             {
               "procedureName": "sia-r10",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -397,7 +397,7 @@
             {
               "procedureName": "sia-r10",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -412,7 +412,7 @@
             {
               "procedureName": "sia-r10",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -427,7 +427,7 @@
             {
               "procedureName": "sia-r10",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -9378,7 +9378,7 @@
       "procedureNames": [
         "sia-r13"
       ],
-      "consistency": null,
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -9389,7 +9389,7 @@
         ]
       },
       "coverage": {
-        "covered": 9,
+        "covered": 10,
         "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 10
@@ -9540,7 +9540,7 @@
             {
               "procedureName": "sia-r13",
               "outcomes": [
-                "failed"
+                "inapplicable"
               ]
             }
           ]
