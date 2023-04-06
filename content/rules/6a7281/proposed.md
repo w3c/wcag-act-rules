@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 6a7281</p>
-  <p><strong>Date:</strong> Updated 7 February 2023</p>
+  <p><strong>Date:</strong> Updated 6 April 2023</p>
   <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -19,24 +19,22 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that each ARIA state or property has a valid value type.
-  last_modified: 7 February 2023
+  last_modified: 6 April 2023
 ---
 
 ## Applicability
 
-This rule applies to any [WAI-ARIA 1.2 state or property](https://www.w3.org/TR/wai-aria-1.2/#state_prop_def) that is not empty (""), and that is specified on an [HTML or SVG element][].
+This rule applies to any [WAI-ARIA state or property][] that has a non-empty ("") [attribute value][], and that is specified on an [HTML or SVG element][].
 
 ## Expectation
 
-Each test target has a valid value according to its [WAI-ARIA 1.2 value type](https://www.w3.org/TR/wai-aria-1.2/#propcharacteristic_value).
+Each test target has an [attribute value][] that is valid according to its [WAI-ARIA value type][value type].
 
-For value types `ID Reference` and `ID Reference List` for [WAI-ARIA required properties](https://www.w3.org/TR/wai-aria-1.2/#requiredState) at least one of the elements with the given ids exists in the same [document tree](https://dom.spec.whatwg.org/#document-trees) or in the same [shadow tree](https://dom.spec.whatwg.org/#shadow-trees) as the element that specifies the target attribute.
-
-For value type `URI` the value matches the [generic URI syntax](https://www.ietf.org/rfc/rfc3986.txt).
+**Exception**: For value types `ID Reference` and `ID Reference List` no ID referenced elements are required.
 
 ## Assumptions
 
-This rule catches values that are undefined in [WAI-ARIA Specifications][], and where the resulting behavior in user agents are also undefined in WAI-ARIA. This might lead to accessibility issues, if the intention was to use behavior defined in [WAI-ARIA Specifications][]. When values are used that do not have a defined behavior in [WAI-ARIA Specifications][], the HTML/SVG specification decides what default values should be used, since it is defined here what should happen when an invalid value is used for an attribute. If the default value for invalid attribute values happens to match the author's intention for the value, there will not be an accessibility issue.
+There are no assumptions.
 
 ## Accessibility Support
 
@@ -44,11 +42,9 @@ Some user agents treat the value of `aria-*` attribute as case-sensitive (even w
 
 ## Background
 
-Using invalid ARIA attribute values is often the result of a typo or other developer error. These attributes are then either ignored, or a default value is assumed by browsers and assistive technologies. This often means that a state or property which should exist is missing or has an unexpected value. This can cause issues under [success criterion 1.3.1 Info and Relationships][sc131] or [4.1.2 Name, Rule Value][sc412].
+Using invalid ARIA attribute values is often the result of a typo or other developer error. These attributes are then either ignored, or a default value is assumed by browsers and assistive technologies. This often means that a state or property which should exist is missing or has an unexpected value. This can cause issues under [success criterion 1.3.1 Info and Relationships][sc131] or [4.1.2 Name, Rule Value][sc412]. If the default value for invalid attribute values happens to match the author's intention for the value, there will not be an accessibility issue.
 
-Only for [WAI-ARIA required properties](https://www.w3.org/TR/wai-aria-1.2/#requiredState) with value types `ID Reference` and `ID Reference List` is there a requirement that the elements with the given ids actually exists. For non-required properties, this is not a requirement. For example, the value of the `aria-errormessage` attribute on an `input` does not need to reference an `id` that exists within the same document, because an [HTML element](https://html.spec.whatwg.org/#htmlelement) with such and `id` may be created in response to an [event](https://dom.spec.whatwg.org/#event) that may or may not happen.
-
-For value type `URI`, this rule does not require that the destination URI exists.
+This rule does not require the target of an `ID Reference` to exist. This is because referencing an element that does not exist, and not having the reference at all has the same end result. A common use case for using `ID Reference` for a non-existing ID is to use a static `aria-errormessage` on an `input` element, and to only insert the element with the error message if there is an actual error. There are some cases in which ID references are required. These are tested in a separate rule.
 
 ### Related rules
 
@@ -105,49 +101,59 @@ The following aspects are required in using this rule.
 
 #### Passed Example 1
 
-<a class="example-link" title="Passed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/ccae7f6929c086a776097aacd0336594da296b6a.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/e970b77c1137e5fd4627f70663da4d1fcda36b23.html">Open in a new tab</a>
 
-`aria-required` property with valid true/false value
+The `aria-label` [attribute value][] of `Family name` is allowed for the `string` [value type][].
 
 ```html
-<div role="textbox" aria-required="true" aria-label="A required textbox"></div>
+<div role="textbox" aria-label="Family name"></div>
 ```
 
 #### Passed Example 2
 
-<a class="example-link" title="Passed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/766a5eb6a54c5b83a882a0d78731d808480a1b3e.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/db10f30be20aebf661f0b81b2c0cfc698b1453eb.html">Open in a new tab</a>
 
-`aria-expanded` state with valid true/false/undefined value
+The `aria-required` [attribute value][] of `true` is allowed for the `true/false` [value type][].
+
+```html
+<div role="textbox" aria-required="true" aria-label="Family name"></div>
+```
+
+#### Passed Example 3
+
+<a class="example-link" title="Passed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/766a5eb6a54c5b83a882a0d78731d808480a1b3e.html">Open in a new tab</a>
+
+The `aria-expanded` [attribute value][] of `undefined` is allowed for the `true/false/undefined` [value type][].
 
 ```html
 <div role="button" aria-expanded="undefined">A button</div>
 ```
 
-#### Passed Example 3
-
-<a class="example-link" title="Passed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/96266c86acb686975024d26d020899162944728e.html">Open in a new tab</a>
-
-`aria-pressed` state with valid tristate value
-
-```html
-<div role="button" aria-pressed="mixed">An other button</div>
-```
-
 #### Passed Example 4
 
-<a class="example-link" title="Passed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/e4b47e094d44a9f3b5b3fd5c157f3ef6679bede0.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/38b0160bfc6c056fa0d02affbc02e49dce284467.html">Open in a new tab</a>
 
-`aria-errormessage` property with valid ID reference value
+The `aria-pressed` [attribute value][] of `mixed` is allowed for the `tristate` [value type][].
+
+```html
+<div role="button" aria-pressed="mixed">Partially pressed button</div>
+```
+
+#### Passed Example 5
+
+<a class="example-link" title="Passed Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/e4b47e094d44a9f3b5b3fd5c157f3ef6679bede0.html">Open in a new tab</a>
+
+The `aria-errormessage` [attribute value][] is an `ID Reference` [value type][]. The presence of an element with a matching ID is not required by this rule.
 
 ```html
 <div role="textbox" aria-errormessage="my-error" aria-label="A textbox"></div>
 ```
 
-#### Passed Example 5
+#### Passed Example 6
 
-<a class="example-link" title="Passed Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/c27e7f509d546fa6aff12ca7aeace662d3fb1c7b.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 6" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/c27e7f509d546fa6aff12ca7aeace662d3fb1c7b.html">Open in a new tab</a>
 
-`aria-owns` property with valid ID reference list value
+The `aria-owns` [attribute value][] is a valid `ID Reference List` [value type][]. Both tokens reference elements that exist in the same [DOM tree][].
 
 ```html
 <h1>Shopping list</h1>
@@ -156,64 +162,44 @@ The following aspects are required in using this rule.
 <div id="item2">Bananas</div>
 ```
 
-#### Passed Example 6
+#### Passed Example 7
 
-<a class="example-link" title="Passed Example 6" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/f78fb0548e68839232441636b6d8489ad17c50b5.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 7" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/f78fb0548e68839232441636b6d8489ad17c50b5.html">Open in a new tab</a>
 
-`aria-rowindex` property with valid integer value
+The `aria-rowindex` [attribute value][] of 2 is a valid `integer` [value type][].
 
 ```html
 <div role="gridcell" aria-rowindex="2">Fred</div>
 ```
 
-#### Passed Example 7
+#### Passed Example 8
 
-<a class="example-link" title="Passed Example 7" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/83f5e9df90e96c1af508ad8b4e2cda78c0dae7c4.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 8" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/83f5e9df90e96c1af508ad8b4e2cda78c0dae7c4.html">Open in a new tab</a>
 
-`aria-valuemin`, `aria-valuemax` and `aria-valuenow` properties with valid number values
+The `aria-valuemin`, `aria-valuemax` and `aria-valuenow` [attribute values][attribute value] are valid for a `number` [value type][].
 
 ```html
 <div role="spinbutton" aria-valuemin="1.0" aria-valuemax="2.0" aria-valuenow="1.5" aria-label="Select a value"></div>
 ```
 
-#### Passed Example 8
-
-<a class="example-link" title="Passed Example 8" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/54ea983936f7cdd43ebabc52f1eb132a06600f9a.html">Open in a new tab</a>
-
-`aria-placeholder` property with valid string value
-
-```html
-<div role="textbox" aria-placeholder="MM-DD-YYYY" aria-label="Your birthdate">
-	MM-DD-YYYY
-</div>
-```
-
 #### Passed Example 9
 
-<a class="example-link" title="Passed Example 9" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/ed053b32aa2b4453ddc225e45f7f1931f62c7f49.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 9" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/0496ff9d59d514f97c8739004b2b941dd7ca97bf.html">Open in a new tab</a>
 
-`aria-relevant` property with valid token list values
+The `aria-current` [attribute value][] of `page` is a valid `token` [value type][].
 
 ```html
-<div role="alert" aria-relevant="text removals"></div>
+<a href="/" aria-current="page">Home</a>
 ```
 
 #### Passed Example 10
 
-<a class="example-link" title="Passed Example 10" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/dacffd42fd4d7e05da9bed3974d600ea5bdc5bf0.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 10" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/ed053b32aa2b4453ddc225e45f7f1931f62c7f49.html">Open in a new tab</a>
 
-`aria-controls`, which is a required property for the role `scrollbar`, has `ID Reference list` that references at least one element existing in the same document tree.
+The `aria-relevant` [attribute value][] has a `text` and `removals` tokens. Both are valid tokens for a `aria-relevant` `token list` [value type][].
 
 ```html
-<div id="content1">Lorem ipsum...</div>
-<div
-	role="scrollbar"
-	aria-controls="content1 content2"
-	aria-orientation="vertical"
-	aria-valuemax="100"
-	aria-valuemin="0"
-	aria-valuenow="25"
-></div>
+<div role="alert" aria-relevant="text removals"></div>
 ```
 
 ### Failed
@@ -222,7 +208,7 @@ The following aspects are required in using this rule.
 
 <a class="example-link" title="Failed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/ce27fcdd85fbf37a953727cdc454f3e504041a31.html">Open in a new tab</a>
 
-`aria-required` property with invalid true/false value
+The `aria-required` [attribute value][] of `undefined` is not valid for a `true/false` [value type][].
 
 ```html
 <div role="textbox" aria-required="undefined" aria-label="A required textbox"></div>
@@ -230,19 +216,19 @@ The following aspects are required in using this rule.
 
 #### Failed Example 2
 
-<a class="example-link" title="Failed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/f56c0ae73185b14d5b942e29b4567ff65518c940.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/1f586827cecc5b1b4d9f60dcaba1e77f4a90c54a.html">Open in a new tab</a>
 
-`aria-expanded` state with invalid true/false/undefined value
+The `aria-expanded` [attribute value][] of `collapsed` is not valid for a `true/false/undefined` [value type][].
 
 ```html
-<div role="button" aria-expanded="mixed">A button</div>
+<div role="button" aria-expanded="collapsed">A button</div>
 ```
 
 #### Failed Example 3
 
 <a class="example-link" title="Failed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/0959137934bd17ea8c95b86120b1c7331e4facc2.html">Open in a new tab</a>
 
-`aria-pressed` state with invalid tristate value
+The `aria-pressed` [attribute value][] of `horizontal` is not valid for a `tristate` [value type][].
 
 ```html
 <div role="button" aria-pressed="horizontal">An other button</div>
@@ -250,79 +236,42 @@ The following aspects are required in using this rule.
 
 #### Failed Example 4
 
-<a class="example-link" title="Failed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/056dbb3bef1e6cc857db894a6ce46445a419fd38.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/e1bd70b33e2d53e3b9bc105a5cad59a76b4c54d5.html">Open in a new tab</a>
 
-`aria-errormessage` property with invalid ID reference value, since space is not allowed in a single ID
-
-```html
-<div role="textbox" aria-errormessage="error1 error2" aria-label="A textbox with an error"></div>
-```
-
-#### Failed Example 5
-
-<a class="example-link" title="Failed Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/e1bd70b33e2d53e3b9bc105a5cad59a76b4c54d5.html">Open in a new tab</a>
-
-`aria-rowindex` property with invalid integer value
+The `aria-rowindex` [attribute value][] of `2.5` is not valid for an `integer` [value type][] because it is a decimal number.
 
 ```html
 <div role="gridcell" aria-rowindex="2.5">Fred</div>
 ```
 
-#### Failed Example 6
+#### Failed Example 5
 
-<a class="example-link" title="Failed Example 6" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/4078701ed7982e75316b51adb59b6d05c1583aa5.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/4078701ed7982e75316b51adb59b6d05c1583aa5.html">Open in a new tab</a>
 
-`aria-valuemin`, `aria-valuemax` and `aria-valuenow` property with invalid number values
+The `aria-valuemin`, `aria-valuemax` and `aria-valuenow` [attribute values][attribute value] are `strings`. These should all be of the `number` [value type][] instead.
 
 ```html
 <div role="spinbutton" aria-valuemin="one" aria-valuemax="three" aria-valuenow="two" aria-label="Choose a value"></div>
 ```
 
+#### Failed Example 6
+
+<a class="example-link" title="Failed Example 6" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/88ff0942922e48b686413cf12cd0fd3510a8b29f.html">Open in a new tab</a>
+
+The `aria-live` [attribute value][] of `page` is not a valid `token`, because `page` is not a token for `aria-live`.
+
+```html
+<div role="main" aria-live="page"></div>
+```
+
 #### Failed Example 7
 
-<a class="example-link" title="Failed Example 7" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/da1afbf428a6b21dd698995bdd6b39a059e2a581.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 7" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/b78f507edd1866cc5b1a7fae8b530da964b470fb.html">Open in a new tab</a>
 
-`aria-live` property with invalid token value
-
-```html
-<div role="main" aria-live="nope"></div>
-```
-
-#### Failed Example 8
-
-<a class="example-link" title="Failed Example 8" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/79d12098309e131210ba01ae2eca31ac97c13123.html">Open in a new tab</a>
-
-Element with invalid token list value
+The `aria-relevant` [attribute value][] has the two tokens `text` and `always`. The `always` token is not valid for the `aria-relevant` `token list`. In order to be a valid value, all tokens must be valid.
 
 ```html
-<div role="alert" aria-relevant="always"></div>
-```
-
-#### Failed Example 9
-
-<a class="example-link" title="Failed Example 9" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/b936e8a11737c2c8650d3afc28f7d58dcf8635e7.html">Open in a new tab</a>
-
-`aria-expanded` state with invalid true/false/undefined value for custom element
-
-```html
-<my-button role="button" aria-expanded="collapsed">My button</my-button>
-```
-
-#### Failed Example 10
-
-<a class="example-link" title="Failed Example 10" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/b26c2d92cf2821d11db54f3f0e5d80d71df50bcb.html">Open in a new tab</a>
-
-`aria-controls`, which is a required property for the role `scrollbar`, references an element that does not exist in the same document tree.
-
-```html
-<div
-	role="scrollbar"
-	aria-controls="content1"
-	aria-orientation="vertical"
-	aria-valuemax="100"
-	aria-valuemin="0"
-	aria-valuenow="25"
-></div>
+<div role="alert" aria-relevant="text always"></div>
 ```
 
 ### Inapplicable
@@ -349,24 +298,22 @@ Element has ARIA role, but no ARIA states or properties
 
 #### Inapplicable Example 3
 
-<a class="example-link" title="Inapplicable Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/d82c477ac58becfda4233237a642b8ef70eb6c5f.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/0b90f166412e03fa01b460aa1c8e68f722a47434.html">Open in a new tab</a>
 
-`aria-checked` state with empty value
-
-**Note**: The HTML validator flags an `aria-checked` attribute with an empty value as an issue. However, since WAI-ARIA 1.1, `aria-checked` has a default value of `undefined`.
+The `aria-live` attribute does not have a value.
 
 ```html
-<div role="checkbox" aria-checked>Accept terms and conditions</div>
+<div role="alert" aria-live>Remember to be awesome!</div>
 ```
 
 #### Inapplicable Example 4
 
-<a class="example-link" title="Inapplicable Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/8d4a06e6a2d0df5ef4f834e38045e81a4d9467f9.xml">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/d5d5467bced8e0eb2174ee42184258634c03421b.xml">Open in a new tab</a>
 
-`aria-hidden` state on an element that is not an [HTML or SVG element][].
+The `aria-hidden` attribute is not on an [HTML or SVG element][].
 
 ```xml
-<math aria-hidden="true"></math>
+<math aria-hidden="false"></math>
 ```
 
 ## Glossary
@@ -389,20 +336,11 @@ An _outcome_ is a conclusion that comes from evaluating an ACT Rule on a [test s
 
 **Note:** Implementations using the [EARL10-Schema](https://www.w3.org/TR/EARL10-Schema/) can express the outcome with the [outcome property](https://www.w3.org/TR/EARL10-Schema/#outcome). In addition to `passed`, `failed` and `inapplicable`, EARL 1.0 also defined an `incomplete` outcome. While this cannot be the outcome of an ACT Rule when applied in its entirety, it often happens that rules are only partially evaluated. For example, when applicability was automated, but the expectations have to be evaluated manually. Such "interim" results can be expressed with the `incomplete` outcome.
 
-### WAI-ARIA specifications {#wai-aria-specifications}
-
-The _WAI ARIA Specifications_ group both the WAI ARIA W3C Recommendation and ARIA modules, namely:
-
-- [Accessible Rich Internet Applications (WAI-ARIA) 1.2](https://www.w3.org/TR/wai-aria-1.2/)
-- [WAI-ARIA Graphics Module 1.0](https://www.w3.org/TR/graphics-aria-1.0/)
-- [Digital Publishing WAI-ARIA Module 1.0](https://www.w3.org/TR/dpub-aria-1.0/)
-
-**Note:** depending on the type of content being evaluated, part of the specifications might be irrelevant and should be ignored.
-
 [element]: https://dom.spec.whatwg.org/#element 'DOM element, 2021/05/31'
 [html namespaces]: https://infra.spec.whatwg.org/#namespaces 'HTML namespace, 2021/05/31'
 [html or svg element]: #namespaced-element
 [namespaceuri]: https://dom.spec.whatwg.org/#dom-element-namespaceuri 'DOM Element namespaceURI, 2021/05/31'
 [sc131]: https://www.w3.org/TR/WCAG21/#info-and-relationships
 [sc412]: https://www.w3.org/TR/WCAG21/#name-role-value
-[wai-aria specifications]: #wai-aria-specifications 'List of WAI-ARIA Specifications'
+[value type]: https://www.w3.org/TR/wai-aria-1.2/#propcharacteristic_value
+[wai-aria state or property]: https://www.w3.org/TR/wai-aria-1.2/#state_prop_def
