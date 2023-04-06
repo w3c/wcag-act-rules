@@ -17,6 +17,7 @@ rule_meta:
   id: bisz58
   name: "Meta element has no refresh delay (no exception)"
   rule_type: atomic
+  original_file: meta-refresh-no-delay-no-exception-bisz58.md
   description: |
     This rule checks that the `meta` element is not used for delayed redirecting or refreshing.
   last_modified: 23 March 2023

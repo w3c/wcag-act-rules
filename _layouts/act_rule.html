@@ -148,12 +148,21 @@ layout: standalone_resource
   </div>
 {%- endif %}
 {%- endunless %}
-
-<h1>Useful Links</h1>
-
-- [Github issues related to this rule](https://github.com/act-rules/act-rules.github.io/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+{{ ruleId }}+)
-- [Open an issue](https://github.com/act-rules/act-rules.github.io/issues/new?title=%20[{{ ruleId }}])
-{%- if page.rule_meta.original_file %}
-- [Propose a change to the rule](https://github.com/act-rules/act-rules.github.io/edit/develop/_rules/{{ page.rule_meta.original_file }}.md)
 {%- endif %}
+
+{%- if ruleId and page.github.path contains "/proposed.md" %}
+<h1>Useful Links</h1>
+<ul>
+  <li><a href="https://github.com/act-rules/act-rules.github.io/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+{{ ruleId }}+">
+    Github issues related to this rule
+  </a></li>
+  <li><a href="https://github.com/act-rules/act-rules.github.io/issues/new?title=%20[{{ ruleId }}]">
+    Open a new issue
+  </a></li>
+  {%- if page.rule_meta.original_file %}
+  <li><a href="https://github.com/act-rules/act-rules.github.io/edit/develop/_rules/{{ page.rule_meta.original_file }}.md">
+    Propose a change to the rule
+  </a></li>
+  {%- endif %}
+</ul>
 {%- endif %}
