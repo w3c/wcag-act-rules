@@ -1,0 +1,4 @@
+---
+redirect: ./proposed/
+layout: redirect
+---
