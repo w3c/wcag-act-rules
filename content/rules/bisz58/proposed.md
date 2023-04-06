@@ -121,7 +121,7 @@ Because a refresh with a timing of 0 is effectively a redirect, it is exempt fro
 This rule is related to the following accessibility requirements, but was not designed to test this requirements directly. These [secondary requirements](https://w3c.github.io/wcag-act/act-rules-format.html#secondary-requirements) can either be stricter than the rule requires, or may be satisfied in ways not tested by the rule:
 
 <ul>
-  <li><a href="https://www.w3.org/TR/WCAG21/#timing-adjustable">2.2.1 Timing Adjustable (Level A)</a>: Because this rule is stricter, `meta` elements that pass this rule satisfy 2.1.1 Time Adjustable.</li>
+  <li><a href="https://www.w3.org/TR/WCAG21/#timing-adjustable">2.2.1 Timing Adjustable (Level A)</a>: Because this rule is stricter than the criterion, failing this rule often results in this criterion being <em>not satisfied</em>.</li>
 </ul>
 
 ## Input Aspects

@@ -151,7 +151,7 @@ layout: standalone_resource
 {%- endif %}
 
 {%- if ruleId and page.github.path contains "/proposed.md" %}
-<h1>Useful Links</h1>
+<h2>Useful Links</h2>
 <ul>
   <li><a href="https://github.com/act-rules/act-rules.github.io/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+{{ ruleId }}+">
     Github issues related to this rule
@@ -160,7 +160,7 @@ layout: standalone_resource
     Open a new issue
   </a></li>
   {%- if page.rule_meta.original_file %}
-  <li><a href="https://github.com/act-rules/act-rules.github.io/edit/develop/_rules/{{ page.rule_meta.original_file }}.md">
+  <li><a href="https://github.com/act-rules/act-rules.github.io/edit/develop/_rules/{{ page.rule_meta.original_file }}">
     Propose a change to the rule
   </a></li>
   {%- endif %}
