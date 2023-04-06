@@ -52,8 +52,6 @@ Not all major web browsers parse the value of the `content` attribute in the sam
 
 Because a refresh with a timing of 0 is effectively a redirect, it is exempt from this rule. Since refreshing the same page with a time of 0 can cause rapid screen flashes it is strongly recommended to avoid this.
 
-This rule is closely related to [success criterion 2.2.1 Time Adjustable][sc221]. Because this rule is stricter, `meta` elements that pass this rule satisfy 2.1.1 Time Adjustable.
-
 ### Bibliography
 
 - [Understanding Success Criterion 2.2.1: Timing Adjustable](https://www.w3.org/WAI/WCAG21/Understanding/timing-adjustable.html)
@@ -115,18 +113,14 @@ This rule is closely related to [success criterion 2.2.1 Time Adjustable][sc221]
       </ul></li>
     </ul>
   </details></li>
-  <li><details>
-    <summary><span>2.2.1 Timing Adjustable (Level A)</span></summary>
-    <ul>
-      <li><a href="https://www.w3.org/TR/WCAG21/#timing-adjustable">Learn more about 2.2.1 Timing Adjustable</a></li>
-      <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level A and higher.</li>
-      <li>Outcome mapping: <ul>
-        <li>Any <code>failed</code> outcomes: success criterion is not satisfied</li>
-        <li>All <code>passed</code> outcomes: success criterion </li>
-        <li>An <code>inapplicable</code> outcome: success criterion </li>
-      </ul></li>
-    </ul>
-  </details></li>
+</ul>
+
+### Secondary Requirements
+
+This rule is related to the following accessibility requirements, but was not designed to test this requirements directly. These [secondary requirements](https://w3c.github.io/wcag-act/act-rules-format.html#secondary-requirements) can either be stricter than the rule requires, or may be satisfied in ways not tested by the rule:
+
+<ul>
+  <li><a href="https://www.w3.org/TR/WCAG21/#timing-adjustable">2.2.1 Timing Adjustable (Level A)</a>: Because this rule is stricter, `meta` elements that pass this rule satisfy 2.1.1 Time Adjustable.</li>
 </ul>
 
 ## Input Aspects

@@ -94,11 +94,11 @@ layout: standalone_resource
     {%- endif %}
   {%- endfor %}
 {%- endcapture %}
-{% assign implementationKeys = implementationString | split: "," | compact %}
+{%- assign implementationKeys = implementationString | split: "," | compact %}
 
-{% unless page.deprecated %}
+{%- unless page.deprecated %}
 <h2>Implementations</h2>
-{% if implementationKeys.size == 0 %}
+{%- if implementationKeys.size == 0 %}
   <p>There are currently no known implementations for this rule.
     If you would like to contribute an implementation, please read the 
     <a href="{{ '/standards-guidelines/act/implementations/' | relative_url }}">
@@ -106,7 +106,7 @@ layout: standalone_resource
     </a> for details.
   </p>
 
-{% else %}
+{%- else %}
   <p>This section is not part of the official rule. It is populated dynamically and 
     not accounted for in the change history or the last modified date.</p>
   <div class="scroll-wrap">
@@ -146,6 +146,14 @@ layout: standalone_resource
       </tbody>
     </table>
   </div>
-{% endif %}
-{% endunless %}
-{% endif %}
+{%- endif %}
+{%- endunless %}
+
+<h1>Useful Links</h1>
+
+- [Github issues related to this rule](https://github.com/act-rules/act-rules.github.io/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+{{ ruleId }}+)
+- [Open an issue](https://github.com/act-rules/act-rules.github.io/issues/new?title=%20[{{ ruleId }}])
+{%- if page.rule_meta.original_file %}
+- [Propose a change to the rule](https://github.com/act-rules/act-rules.github.io/edit/develop/_rules/{{ page.rule_meta.original_file }}.md)
+{%- endif %}
+{%- endif %}
