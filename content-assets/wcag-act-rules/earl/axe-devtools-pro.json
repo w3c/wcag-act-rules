@@ -16570,7 +16570,30 @@
           "earl:TestSubject",
           "sch:WebPage"
         ],
-        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/6a7281/ccae7f6929c086a776097aacd0336594da296b6a.html"
+        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/6a7281/e970b77c1137e5fd4627f70663da4d1fcda36b23.html"
+      },
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:passed"
+      },
+      "test": {
+        "@type": "TestCase",
+        "title": "aria-valid-attr-value",
+        "@id": "https://dequeuniversity.com/rules/axe/4.6/aria-valid-attr-value?application=axeAPI",
+        "isPartOf": [
+          "WCAG2:name-role-value"
+        ]
+      }
+    },
+    {
+      "@type": "Assertion",
+      "mode": "earl:automatic",
+      "subject": {
+        "@type": [
+          "earl:TestSubject",
+          "sch:WebPage"
+        ],
+        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/6a7281/db10f30be20aebf661f0b81b2c0cfc698b1453eb.html"
       },
       "result": {
         "@type": "TestResult",
@@ -16616,7 +16639,7 @@
           "earl:TestSubject",
           "sch:WebPage"
         ],
-        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/6a7281/96266c86acb686975024d26d020899162944728e.html"
+        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/6a7281/38b0160bfc6c056fa0d02affbc02e49dce284467.html"
       },
       "result": {
         "@type": "TestResult",
@@ -16731,7 +16754,7 @@
           "earl:TestSubject",
           "sch:WebPage"
         ],
-        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/6a7281/54ea983936f7cdd43ebabc52f1eb132a06600f9a.html"
+        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/6a7281/0496ff9d59d514f97c8739004b2b941dd7ca97bf.html"
       },
       "result": {
         "@type": "TestResult",
@@ -16777,29 +16800,6 @@
           "earl:TestSubject",
           "sch:WebPage"
         ],
-        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/6a7281/dacffd42fd4d7e05da9bed3974d600ea5bdc5bf0.html"
-      },
-      "result": {
-        "@type": "TestResult",
-        "outcome": "earl:passed"
-      },
-      "test": {
-        "@type": "TestCase",
-        "title": "aria-valid-attr-value",
-        "@id": "https://dequeuniversity.com/rules/axe/4.6/aria-valid-attr-value?application=axeAPI",
-        "isPartOf": [
-          "WCAG2:name-role-value"
-        ]
-      }
-    },
-    {
-      "@type": "Assertion",
-      "mode": "earl:automatic",
-      "subject": {
-        "@type": [
-          "earl:TestSubject",
-          "sch:WebPage"
-        ],
         "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/6a7281/ce27fcdd85fbf37a953727cdc454f3e504041a31.html"
       },
       "result": {
@@ -16823,7 +16823,7 @@
           "earl:TestSubject",
           "sch:WebPage"
         ],
-        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/6a7281/f56c0ae73185b14d5b942e29b4567ff65518c940.html"
+        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/6a7281/1f586827cecc5b1b4d9f60dcaba1e77f4a90c54a.html"
       },
       "result": {
         "@type": "TestResult",
@@ -16851,29 +16851,6 @@
       "result": {
         "@type": "TestResult",
         "outcome": "earl:failed"
-      },
-      "test": {
-        "@type": "TestCase",
-        "title": "aria-valid-attr-value",
-        "@id": "https://dequeuniversity.com/rules/axe/4.6/aria-valid-attr-value?application=axeAPI",
-        "isPartOf": [
-          "WCAG2:name-role-value"
-        ]
-      }
-    },
-    {
-      "@type": "Assertion",
-      "mode": "earl:automatic",
-      "subject": {
-        "@type": [
-          "earl:TestSubject",
-          "sch:WebPage"
-        ],
-        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/6a7281/056dbb3bef1e6cc857db894a6ce46445a419fd38.html"
-      },
-      "result": {
-        "@type": "TestResult",
-        "outcome": "earl:passed"
       },
       "test": {
         "@type": "TestCase",
@@ -16938,7 +16915,7 @@
           "earl:TestSubject",
           "sch:WebPage"
         ],
-        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/6a7281/da1afbf428a6b21dd698995bdd6b39a059e2a581.html"
+        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/6a7281/88ff0942922e48b686413cf12cd0fd3510a8b29f.html"
       },
       "result": {
         "@type": "TestResult",
@@ -16961,53 +16938,7 @@
           "earl:TestSubject",
           "sch:WebPage"
         ],
-        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/6a7281/79d12098309e131210ba01ae2eca31ac97c13123.html"
-      },
-      "result": {
-        "@type": "TestResult",
-        "outcome": "earl:failed"
-      },
-      "test": {
-        "@type": "TestCase",
-        "title": "aria-valid-attr-value",
-        "@id": "https://dequeuniversity.com/rules/axe/4.6/aria-valid-attr-value?application=axeAPI",
-        "isPartOf": [
-          "WCAG2:name-role-value"
-        ]
-      }
-    },
-    {
-      "@type": "Assertion",
-      "mode": "earl:automatic",
-      "subject": {
-        "@type": [
-          "earl:TestSubject",
-          "sch:WebPage"
-        ],
-        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/6a7281/b936e8a11737c2c8650d3afc28f7d58dcf8635e7.html"
-      },
-      "result": {
-        "@type": "TestResult",
-        "outcome": "earl:failed"
-      },
-      "test": {
-        "@type": "TestCase",
-        "title": "aria-valid-attr-value",
-        "@id": "https://dequeuniversity.com/rules/axe/4.6/aria-valid-attr-value?application=axeAPI",
-        "isPartOf": [
-          "WCAG2:name-role-value"
-        ]
-      }
-    },
-    {
-      "@type": "Assertion",
-      "mode": "earl:automatic",
-      "subject": {
-        "@type": [
-          "earl:TestSubject",
-          "sch:WebPage"
-        ],
-        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/6a7281/b26c2d92cf2821d11db54f3f0e5d80d71df50bcb.html"
+        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/6a7281/b78f507edd1866cc5b1a7fae8b530da964b470fb.html"
       },
       "result": {
         "@type": "TestResult",
@@ -17076,7 +17007,7 @@
           "earl:TestSubject",
           "sch:WebPage"
         ],
-        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/6a7281/d82c477ac58becfda4233237a642b8ef70eb6c5f.html"
+        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/6a7281/0b90f166412e03fa01b460aa1c8e68f722a47434.html"
       },
       "result": {
         "@type": "TestResult",
@@ -17099,7 +17030,7 @@
           "earl:TestSubject",
           "sch:WebPage"
         ],
-        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/6a7281/8d4a06e6a2d0df5ef4f834e38045e81a4d9467f9.xml"
+        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/6a7281/d5d5467bced8e0eb2174ee42184258634c03421b.xml"
       },
       "result": {
         "@type": "TestResult",
@@ -28331,29 +28262,6 @@
           "sch:WebPage"
         ],
         "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/0ssw9k/8f9b5bf5fc8345b8e7aa016621fb5dee6c13c8f2.html"
-      },
-      "result": {
-        "@type": "TestResult",
-        "outcome": "earl:inapplicable"
-      },
-      "test": {
-        "@type": "TestCase",
-        "title": "scrollable-region-focusable",
-        "@id": "https://dequeuniversity.com/rules/axe/4.6/scrollable-region-focusable?application=axeAPI",
-        "isPartOf": [
-          "WCAG2:keyboard"
-        ]
-      }
-    },
-    {
-      "@type": "Assertion",
-      "mode": "earl:automatic",
-      "subject": {
-        "@type": [
-          "earl:TestSubject",
-          "sch:WebPage"
-        ],
-        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/0ssw9k/dd5ca5252dacc6d5e0fabb30e92633b284336832.html"
       },
       "result": {
         "@type": "TestResult",
