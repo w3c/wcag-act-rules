@@ -2,7 +2,7 @@
   "vendor": "Total Validator",
   "name": "Total Validator",
   "version": "17.1.0",
-  "lastModified": "31 March 2023",
+  "lastModified": "7 April 2023",
   "approvedRules": {
     "complete": 19,
     "partial": 3,
@@ -11,8 +11,8 @@
     "untested": 0
   },
   "proposedRules": {
-    "complete": 14,
-    "partial": 1,
+    "complete": 15,
+    "partial": 0,
     "minimal": 0,
     "inconsistent": 0,
     "untested": 51
@@ -7366,7 +7366,7 @@
       "procedureNames": [
         "E9652"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
@@ -7376,8 +7376,8 @@
         ]
       },
       "coverage": {
-        "covered": 12,
-        "untested": 9,
+        "covered": 21,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 21
       },
@@ -7392,7 +7392,7 @@
             {
               "procedureName": "E9652",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -7407,7 +7407,7 @@
             {
               "procedureName": "E9652",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -7437,7 +7437,7 @@
             {
               "procedureName": "E9652",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -7512,7 +7512,7 @@
             {
               "procedureName": "E9652",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -7557,7 +7557,7 @@
             {
               "procedureName": "E9652",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -7617,7 +7617,7 @@
             {
               "procedureName": "E9652",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -7632,7 +7632,7 @@
             {
               "procedureName": "E9652",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -7677,7 +7677,7 @@
             {
               "procedureName": "E9652",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -7692,7 +7692,7 @@
             {
               "procedureName": "E9652",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
