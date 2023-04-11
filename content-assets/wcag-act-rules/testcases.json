@@ -3,7 +3,7 @@
   "website": "https://www.w3.org/WAI/standards-guidelines/act/rules/",
   "license": "https://act-rules.github.io/pages/license/",
   "description": "Accessibility conformance testing rules for HTML",
-  "count": 1146,
+  "count": 1143,
   "testcases": [
     {
       "ruleId": "73f2c2",
@@ -9417,10 +9417,35 @@
         }
       },
       "expected": "passed",
-      "testcaseId": "ccae7f6929c086a776097aacd0336594da296b6a",
+      "testcaseId": "e970b77c1137e5fd4627f70663da4d1fcda36b23",
       "testcaseTitle": "Passed Example 1",
-      "relativePath": "testcases/6a7281/ccae7f6929c086a776097aacd0336594da296b6a.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/ccae7f6929c086a776097aacd0336594da296b6a.html",
+      "relativePath": "testcases/6a7281/e970b77c1137e5fd4627f70663da4d1fcda36b23.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/e970b77c1137e5fd4627f70663da4d1fcda36b23.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/6a7281/proposed/"
+    },
+    {
+      "ruleId": "6a7281",
+      "ruleName": "ARIA state or property has valid value",
+      "ruleAccessibilityRequirements": {
+        "aria12:propcharacteristic_value": {
+          "title": "ARIA 1.2, 6.2.4 Value (Characteristics of States and Properties)",
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "satisfied",
+          "inapplicable": "satisfied"
+        },
+        "wcag20:1.3.1": {
+          "secondary": true
+        },
+        "wcag20:4.1.2": {
+          "secondary": true
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "db10f30be20aebf661f0b81b2c0cfc698b1453eb",
+      "testcaseTitle": "Passed Example 2",
+      "relativePath": "testcases/6a7281/db10f30be20aebf661f0b81b2c0cfc698b1453eb.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/db10f30be20aebf661f0b81b2c0cfc698b1453eb.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/6a7281/proposed/"
     },
     {
@@ -9443,7 +9468,7 @@
       },
       "expected": "passed",
       "testcaseId": "766a5eb6a54c5b83a882a0d78731d808480a1b3e",
-      "testcaseTitle": "Passed Example 2",
+      "testcaseTitle": "Passed Example 3",
       "relativePath": "testcases/6a7281/766a5eb6a54c5b83a882a0d78731d808480a1b3e.html",
       "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/766a5eb6a54c5b83a882a0d78731d808480a1b3e.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/6a7281/proposed/"
@@ -9467,10 +9492,10 @@
         }
       },
       "expected": "passed",
-      "testcaseId": "96266c86acb686975024d26d020899162944728e",
-      "testcaseTitle": "Passed Example 3",
-      "relativePath": "testcases/6a7281/96266c86acb686975024d26d020899162944728e.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/96266c86acb686975024d26d020899162944728e.html",
+      "testcaseId": "38b0160bfc6c056fa0d02affbc02e49dce284467",
+      "testcaseTitle": "Passed Example 4",
+      "relativePath": "testcases/6a7281/38b0160bfc6c056fa0d02affbc02e49dce284467.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/38b0160bfc6c056fa0d02affbc02e49dce284467.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/6a7281/proposed/"
     },
     {
@@ -9493,7 +9518,7 @@
       },
       "expected": "passed",
       "testcaseId": "e4b47e094d44a9f3b5b3fd5c157f3ef6679bede0",
-      "testcaseTitle": "Passed Example 4",
+      "testcaseTitle": "Passed Example 5",
       "relativePath": "testcases/6a7281/e4b47e094d44a9f3b5b3fd5c157f3ef6679bede0.html",
       "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/e4b47e094d44a9f3b5b3fd5c157f3ef6679bede0.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/6a7281/proposed/"
@@ -9518,7 +9543,7 @@
       },
       "expected": "passed",
       "testcaseId": "c27e7f509d546fa6aff12ca7aeace662d3fb1c7b",
-      "testcaseTitle": "Passed Example 5",
+      "testcaseTitle": "Passed Example 6",
       "relativePath": "testcases/6a7281/c27e7f509d546fa6aff12ca7aeace662d3fb1c7b.html",
       "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/c27e7f509d546fa6aff12ca7aeace662d3fb1c7b.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/6a7281/proposed/"
@@ -9543,7 +9568,7 @@
       },
       "expected": "passed",
       "testcaseId": "f78fb0548e68839232441636b6d8489ad17c50b5",
-      "testcaseTitle": "Passed Example 6",
+      "testcaseTitle": "Passed Example 7",
       "relativePath": "testcases/6a7281/f78fb0548e68839232441636b6d8489ad17c50b5.html",
       "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/f78fb0548e68839232441636b6d8489ad17c50b5.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/6a7281/proposed/"
@@ -9568,7 +9593,7 @@
       },
       "expected": "passed",
       "testcaseId": "83f5e9df90e96c1af508ad8b4e2cda78c0dae7c4",
-      "testcaseTitle": "Passed Example 7",
+      "testcaseTitle": "Passed Example 8",
       "relativePath": "testcases/6a7281/83f5e9df90e96c1af508ad8b4e2cda78c0dae7c4.html",
       "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/83f5e9df90e96c1af508ad8b4e2cda78c0dae7c4.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/6a7281/proposed/"
@@ -9592,10 +9617,10 @@
         }
       },
       "expected": "passed",
-      "testcaseId": "54ea983936f7cdd43ebabc52f1eb132a06600f9a",
-      "testcaseTitle": "Passed Example 8",
-      "relativePath": "testcases/6a7281/54ea983936f7cdd43ebabc52f1eb132a06600f9a.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/54ea983936f7cdd43ebabc52f1eb132a06600f9a.html",
+      "testcaseId": "0496ff9d59d514f97c8739004b2b941dd7ca97bf",
+      "testcaseTitle": "Passed Example 9",
+      "relativePath": "testcases/6a7281/0496ff9d59d514f97c8739004b2b941dd7ca97bf.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/0496ff9d59d514f97c8739004b2b941dd7ca97bf.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/6a7281/proposed/"
     },
     {
@@ -9618,34 +9643,9 @@
       },
       "expected": "passed",
       "testcaseId": "ed053b32aa2b4453ddc225e45f7f1931f62c7f49",
-      "testcaseTitle": "Passed Example 9",
+      "testcaseTitle": "Passed Example 10",
       "relativePath": "testcases/6a7281/ed053b32aa2b4453ddc225e45f7f1931f62c7f49.html",
       "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/ed053b32aa2b4453ddc225e45f7f1931f62c7f49.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/6a7281/proposed/"
-    },
-    {
-      "ruleId": "6a7281",
-      "ruleName": "ARIA state or property has valid value",
-      "ruleAccessibilityRequirements": {
-        "aria12:propcharacteristic_value": {
-          "title": "ARIA 1.2, 6.2.4 Value (Characteristics of States and Properties)",
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "satisfied",
-          "inapplicable": "satisfied"
-        },
-        "wcag20:1.3.1": {
-          "secondary": true
-        },
-        "wcag20:4.1.2": {
-          "secondary": true
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "dacffd42fd4d7e05da9bed3974d600ea5bdc5bf0",
-      "testcaseTitle": "Passed Example 10",
-      "relativePath": "testcases/6a7281/dacffd42fd4d7e05da9bed3974d600ea5bdc5bf0.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/dacffd42fd4d7e05da9bed3974d600ea5bdc5bf0.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/6a7281/proposed/"
     },
     {
@@ -9692,10 +9692,10 @@
         }
       },
       "expected": "failed",
-      "testcaseId": "f56c0ae73185b14d5b942e29b4567ff65518c940",
+      "testcaseId": "1f586827cecc5b1b4d9f60dcaba1e77f4a90c54a",
       "testcaseTitle": "Failed Example 2",
-      "relativePath": "testcases/6a7281/f56c0ae73185b14d5b942e29b4567ff65518c940.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/f56c0ae73185b14d5b942e29b4567ff65518c940.html",
+      "relativePath": "testcases/6a7281/1f586827cecc5b1b4d9f60dcaba1e77f4a90c54a.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/1f586827cecc5b1b4d9f60dcaba1e77f4a90c54a.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/6a7281/proposed/"
     },
     {
@@ -9742,33 +9742,8 @@
         }
       },
       "expected": "failed",
-      "testcaseId": "056dbb3bef1e6cc857db894a6ce46445a419fd38",
-      "testcaseTitle": "Failed Example 4",
-      "relativePath": "testcases/6a7281/056dbb3bef1e6cc857db894a6ce46445a419fd38.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/056dbb3bef1e6cc857db894a6ce46445a419fd38.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/6a7281/proposed/"
-    },
-    {
-      "ruleId": "6a7281",
-      "ruleName": "ARIA state or property has valid value",
-      "ruleAccessibilityRequirements": {
-        "aria12:propcharacteristic_value": {
-          "title": "ARIA 1.2, 6.2.4 Value (Characteristics of States and Properties)",
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "satisfied",
-          "inapplicable": "satisfied"
-        },
-        "wcag20:1.3.1": {
-          "secondary": true
-        },
-        "wcag20:4.1.2": {
-          "secondary": true
-        }
-      },
-      "expected": "failed",
       "testcaseId": "e1bd70b33e2d53e3b9bc105a5cad59a76b4c54d5",
-      "testcaseTitle": "Failed Example 5",
+      "testcaseTitle": "Failed Example 4",
       "relativePath": "testcases/6a7281/e1bd70b33e2d53e3b9bc105a5cad59a76b4c54d5.html",
       "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/e1bd70b33e2d53e3b9bc105a5cad59a76b4c54d5.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/6a7281/proposed/"
@@ -9793,7 +9768,7 @@
       },
       "expected": "failed",
       "testcaseId": "4078701ed7982e75316b51adb59b6d05c1583aa5",
-      "testcaseTitle": "Failed Example 6",
+      "testcaseTitle": "Failed Example 5",
       "relativePath": "testcases/6a7281/4078701ed7982e75316b51adb59b6d05c1583aa5.html",
       "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/4078701ed7982e75316b51adb59b6d05c1583aa5.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/6a7281/proposed/"
@@ -9817,85 +9792,35 @@
         }
       },
       "expected": "failed",
-      "testcaseId": "da1afbf428a6b21dd698995bdd6b39a059e2a581",
+      "testcaseId": "88ff0942922e48b686413cf12cd0fd3510a8b29f",
+      "testcaseTitle": "Failed Example 6",
+      "relativePath": "testcases/6a7281/88ff0942922e48b686413cf12cd0fd3510a8b29f.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/88ff0942922e48b686413cf12cd0fd3510a8b29f.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/6a7281/proposed/"
+    },
+    {
+      "ruleId": "6a7281",
+      "ruleName": "ARIA state or property has valid value",
+      "ruleAccessibilityRequirements": {
+        "aria12:propcharacteristic_value": {
+          "title": "ARIA 1.2, 6.2.4 Value (Characteristics of States and Properties)",
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "satisfied",
+          "inapplicable": "satisfied"
+        },
+        "wcag20:1.3.1": {
+          "secondary": true
+        },
+        "wcag20:4.1.2": {
+          "secondary": true
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "b78f507edd1866cc5b1a7fae8b530da964b470fb",
       "testcaseTitle": "Failed Example 7",
-      "relativePath": "testcases/6a7281/da1afbf428a6b21dd698995bdd6b39a059e2a581.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/da1afbf428a6b21dd698995bdd6b39a059e2a581.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/6a7281/proposed/"
-    },
-    {
-      "ruleId": "6a7281",
-      "ruleName": "ARIA state or property has valid value",
-      "ruleAccessibilityRequirements": {
-        "aria12:propcharacteristic_value": {
-          "title": "ARIA 1.2, 6.2.4 Value (Characteristics of States and Properties)",
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "satisfied",
-          "inapplicable": "satisfied"
-        },
-        "wcag20:1.3.1": {
-          "secondary": true
-        },
-        "wcag20:4.1.2": {
-          "secondary": true
-        }
-      },
-      "expected": "failed",
-      "testcaseId": "79d12098309e131210ba01ae2eca31ac97c13123",
-      "testcaseTitle": "Failed Example 8",
-      "relativePath": "testcases/6a7281/79d12098309e131210ba01ae2eca31ac97c13123.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/79d12098309e131210ba01ae2eca31ac97c13123.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/6a7281/proposed/"
-    },
-    {
-      "ruleId": "6a7281",
-      "ruleName": "ARIA state or property has valid value",
-      "ruleAccessibilityRequirements": {
-        "aria12:propcharacteristic_value": {
-          "title": "ARIA 1.2, 6.2.4 Value (Characteristics of States and Properties)",
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "satisfied",
-          "inapplicable": "satisfied"
-        },
-        "wcag20:1.3.1": {
-          "secondary": true
-        },
-        "wcag20:4.1.2": {
-          "secondary": true
-        }
-      },
-      "expected": "failed",
-      "testcaseId": "b936e8a11737c2c8650d3afc28f7d58dcf8635e7",
-      "testcaseTitle": "Failed Example 9",
-      "relativePath": "testcases/6a7281/b936e8a11737c2c8650d3afc28f7d58dcf8635e7.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/b936e8a11737c2c8650d3afc28f7d58dcf8635e7.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/6a7281/proposed/"
-    },
-    {
-      "ruleId": "6a7281",
-      "ruleName": "ARIA state or property has valid value",
-      "ruleAccessibilityRequirements": {
-        "aria12:propcharacteristic_value": {
-          "title": "ARIA 1.2, 6.2.4 Value (Characteristics of States and Properties)",
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "satisfied",
-          "inapplicable": "satisfied"
-        },
-        "wcag20:1.3.1": {
-          "secondary": true
-        },
-        "wcag20:4.1.2": {
-          "secondary": true
-        }
-      },
-      "expected": "failed",
-      "testcaseId": "b26c2d92cf2821d11db54f3f0e5d80d71df50bcb",
-      "testcaseTitle": "Failed Example 10",
-      "relativePath": "testcases/6a7281/b26c2d92cf2821d11db54f3f0e5d80d71df50bcb.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/b26c2d92cf2821d11db54f3f0e5d80d71df50bcb.html",
+      "relativePath": "testcases/6a7281/b78f507edd1866cc5b1a7fae8b530da964b470fb.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/b78f507edd1866cc5b1a7fae8b530da964b470fb.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/6a7281/proposed/"
     },
     {
@@ -9967,10 +9892,10 @@
         }
       },
       "expected": "inapplicable",
-      "testcaseId": "d82c477ac58becfda4233237a642b8ef70eb6c5f",
+      "testcaseId": "0b90f166412e03fa01b460aa1c8e68f722a47434",
       "testcaseTitle": "Inapplicable Example 3",
-      "relativePath": "testcases/6a7281/d82c477ac58becfda4233237a642b8ef70eb6c5f.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/d82c477ac58becfda4233237a642b8ef70eb6c5f.html",
+      "relativePath": "testcases/6a7281/0b90f166412e03fa01b460aa1c8e68f722a47434.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/0b90f166412e03fa01b460aa1c8e68f722a47434.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/6a7281/proposed/"
     },
     {
@@ -9992,10 +9917,10 @@
         }
       },
       "expected": "inapplicable",
-      "testcaseId": "8d4a06e6a2d0df5ef4f834e38045e81a4d9467f9",
+      "testcaseId": "d5d5467bced8e0eb2174ee42184258634c03421b",
       "testcaseTitle": "Inapplicable Example 4",
-      "relativePath": "testcases/6a7281/8d4a06e6a2d0df5ef4f834e38045e81a4d9467f9.xml",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/8d4a06e6a2d0df5ef4f834e38045e81a4d9467f9.xml",
+      "relativePath": "testcases/6a7281/d5d5467bced8e0eb2174ee42184258634c03421b.xml",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/d5d5467bced8e0eb2174ee42184258634c03421b.xml",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/6a7281/proposed/"
     },
     {
