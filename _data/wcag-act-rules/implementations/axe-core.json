@@ -6,14 +6,12 @@
   "approvedRules": {
     "complete": 22,
     "partial": 0,
-    "minimal": 0,
     "inconsistent": 0,
     "untested": 0
   },
   "proposedRules": {
     "complete": 15,
-    "partial": 2,
-    "minimal": 8,
+    "partial": 10,
     "inconsistent": 5,
     "untested": 36
   },
@@ -8231,7 +8229,7 @@
       "procedureNames": [
         "bypass"
       ],
-      "consistency": "minimal",
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": false,
         "expected": [],
@@ -8375,7 +8373,7 @@
       "procedureNames": [
         "bypass"
       ],
-      "consistency": "minimal",
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -8835,7 +8833,7 @@
       "procedureNames": [
         "bypass"
       ],
-      "consistency": "minimal",
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": false,
         "expected": [],
@@ -9069,7 +9067,7 @@
       "procedureNames": [
         "bypass"
       ],
-      "consistency": "minimal",
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": false,
         "expected": [],
@@ -9273,7 +9271,7 @@
       "procedureNames": [
         "bypass"
       ],
-      "consistency": "minimal",
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": false,
         "expected": [],
@@ -9914,7 +9912,7 @@
       "procedureNames": [
         "frame-title-unique"
       ],
-      "consistency": "minimal",
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -10657,7 +10655,7 @@
       "procedureNames": [
         "identical-links-same-purpose"
       ],
-      "consistency": "minimal",
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -12098,7 +12096,7 @@
       "procedureNames": [
         "th-has-data-cells"
       ],
-      "consistency": "minimal",
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [

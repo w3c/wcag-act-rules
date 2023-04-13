@@ -4,16 +4,14 @@
   "version": "3.1.42-rc.0",
   "lastModified": "1 April 2023",
   "approvedRules": {
-    "complete": 13,
-    "partial": 5,
-    "minimal": 0,
+    "complete": 14,
+    "partial": 4,
     "inconsistent": 4,
     "untested": 0
   },
   "proposedRules": {
     "complete": 8,
-    "partial": 6,
-    "minimal": 1,
+    "partial": 7,
     "inconsistent": 0,
     "untested": 51
   },
@@ -5202,9 +5200,10 @@
       "ruleName": "Meta element has no refresh delay",
       "ruleApproved": true,
       "procedureNames": [
-        "WCAG20_Meta_RedirectZero:pass,fail,fail_longrefresh"
+        "WCAG20_Meta_RedirectZero:pass,fail,fail_longrefresh",
+        "RPT_Meta_Refresh:Pass_0,Potential_1"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -5217,7 +5216,7 @@
       "coverage": {
         "covered": 14,
         "untested": 0,
-        "cantTell": 0,
+        "cantTell": 1,
         "testCaseTotal": 15
       },
       "testCaseResults": [
@@ -5230,6 +5229,12 @@
           "procedureResults": [
             {
               "procedureName": "WCAG20_Meta_RedirectZero:pass,fail,fail_longrefresh",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
+              "procedureName": "RPT_Meta_Refresh:Pass_0,Potential_1",
               "outcomes": [
                 "passed"
               ]
@@ -5248,6 +5253,12 @@
               "outcomes": [
                 "passed"
               ]
+            },
+            {
+              "procedureName": "RPT_Meta_Refresh:Pass_0,Potential_1",
+              "outcomes": [
+                "passed"
+              ]
             }
           ]
         },
@@ -5260,6 +5271,12 @@
           "procedureResults": [
             {
               "procedureName": "WCAG20_Meta_RedirectZero:pass,fail,fail_longrefresh",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
+              "procedureName": "RPT_Meta_Refresh:Pass_0,Potential_1",
               "outcomes": [
                 "passed"
               ]
@@ -5278,6 +5295,12 @@
               "outcomes": [
                 "passed"
               ]
+            },
+            {
+              "procedureName": "RPT_Meta_Refresh:Pass_0,Potential_1",
+              "outcomes": [
+                "cantTell"
+              ]
             }
           ]
         },
@@ -5292,6 +5315,12 @@
               "procedureName": "WCAG20_Meta_RedirectZero:pass,fail,fail_longrefresh",
               "outcomes": [
                 "failed"
+              ]
+            },
+            {
+              "procedureName": "RPT_Meta_Refresh:Pass_0,Potential_1",
+              "outcomes": [
+                "passed"
               ]
             }
           ]
@@ -5308,6 +5337,12 @@
               "outcomes": [
                 "failed"
               ]
+            },
+            {
+              "procedureName": "RPT_Meta_Refresh:Pass_0,Potential_1",
+              "outcomes": [
+                "passed"
+              ]
             }
           ]
         },
@@ -5323,6 +5358,12 @@
               "outcomes": [
                 "failed"
               ]
+            },
+            {
+              "procedureName": "RPT_Meta_Refresh:Pass_0,Potential_1",
+              "outcomes": [
+                "passed"
+              ]
             }
           ]
         },
@@ -5335,6 +5376,12 @@
           "procedureResults": [
             {
               "procedureName": "WCAG20_Meta_RedirectZero:pass,fail,fail_longrefresh",
+              "outcomes": [
+                "inapplicable"
+              ]
+            },
+            {
+              "procedureName": "RPT_Meta_Refresh:Pass_0,Potential_1",
               "outcomes": [
                 "inapplicable"
               ]
@@ -5353,6 +5400,12 @@
               "outcomes": [
                 "inapplicable"
               ]
+            },
+            {
+              "procedureName": "RPT_Meta_Refresh:Pass_0,Potential_1",
+              "outcomes": [
+                "inapplicable"
+              ]
             }
           ]
         },
@@ -5365,6 +5418,12 @@
           "procedureResults": [
             {
               "procedureName": "WCAG20_Meta_RedirectZero:pass,fail,fail_longrefresh",
+              "outcomes": [
+                "inapplicable"
+              ]
+            },
+            {
+              "procedureName": "RPT_Meta_Refresh:Pass_0,Potential_1",
               "outcomes": [
                 "inapplicable"
               ]
@@ -5383,6 +5442,12 @@
               "outcomes": [
                 "inapplicable"
               ]
+            },
+            {
+              "procedureName": "RPT_Meta_Refresh:Pass_0,Potential_1",
+              "outcomes": [
+                "inapplicable"
+              ]
             }
           ]
         },
@@ -5395,6 +5460,12 @@
           "procedureResults": [
             {
               "procedureName": "WCAG20_Meta_RedirectZero:pass,fail,fail_longrefresh",
+              "outcomes": [
+                "inapplicable"
+              ]
+            },
+            {
+              "procedureName": "RPT_Meta_Refresh:Pass_0,Potential_1",
               "outcomes": [
                 "inapplicable"
               ]
@@ -5413,6 +5484,12 @@
               "outcomes": [
                 "inapplicable"
               ]
+            },
+            {
+              "procedureName": "RPT_Meta_Refresh:Pass_0,Potential_1",
+              "outcomes": [
+                "inapplicable"
+              ]
             }
           ]
         },
@@ -5428,6 +5505,12 @@
               "outcomes": [
                 "inapplicable"
               ]
+            },
+            {
+              "procedureName": "RPT_Meta_Refresh:Pass_0,Potential_1",
+              "outcomes": [
+                "inapplicable"
+              ]
             }
           ]
         },
@@ -5440,6 +5523,12 @@
           "procedureResults": [
             {
               "procedureName": "WCAG20_Meta_RedirectZero:pass,fail,fail_longrefresh",
+              "outcomes": [
+                "inapplicable"
+              ]
+            },
+            {
+              "procedureName": "RPT_Meta_Refresh:Pass_0,Potential_1",
               "outcomes": [
                 "inapplicable"
               ]
@@ -8337,7 +8426,8 @@
       "ruleName": "Meta element has no refresh delay (no exception)",
       "ruleApproved": false,
       "procedureNames": [
-        "WCAG20_Meta_RedirectZero:pass,fail,fail_longrefresh"
+        "WCAG20_Meta_RedirectZero:pass,fail,fail_longrefresh",
+        "RPT_Meta_Refresh:Pass_0,Potential_1"
       ],
       "consistency": "partial",
       "accessibilityRequirements": {
@@ -8353,7 +8443,7 @@
       "coverage": {
         "covered": 12,
         "untested": 0,
-        "cantTell": 0,
+        "cantTell": 1,
         "testCaseTotal": 13
       },
       "testCaseResults": [
@@ -8366,6 +8456,12 @@
           "procedureResults": [
             {
               "procedureName": "WCAG20_Meta_RedirectZero:pass,fail,fail_longrefresh",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
+              "procedureName": "RPT_Meta_Refresh:Pass_0,Potential_1",
               "outcomes": [
                 "passed"
               ]
@@ -8384,6 +8480,12 @@
               "outcomes": [
                 "passed"
               ]
+            },
+            {
+              "procedureName": "RPT_Meta_Refresh:Pass_0,Potential_1",
+              "outcomes": [
+                "passed"
+              ]
             }
           ]
         },
@@ -8398,6 +8500,12 @@
               "procedureName": "WCAG20_Meta_RedirectZero:pass,fail,fail_longrefresh",
               "outcomes": [
                 "passed"
+              ]
+            },
+            {
+              "procedureName": "RPT_Meta_Refresh:Pass_0,Potential_1",
+              "outcomes": [
+                "cantTell"
               ]
             }
           ]
@@ -8414,6 +8522,12 @@
               "outcomes": [
                 "failed"
               ]
+            },
+            {
+              "procedureName": "RPT_Meta_Refresh:Pass_0,Potential_1",
+              "outcomes": [
+                "passed"
+              ]
             }
           ]
         },
@@ -8429,6 +8543,12 @@
               "outcomes": [
                 "failed"
               ]
+            },
+            {
+              "procedureName": "RPT_Meta_Refresh:Pass_0,Potential_1",
+              "outcomes": [
+                "passed"
+              ]
             }
           ]
         },
@@ -8441,6 +8561,12 @@
           "procedureResults": [
             {
               "procedureName": "WCAG20_Meta_RedirectZero:pass,fail,fail_longrefresh",
+              "outcomes": [
+                "inapplicable"
+              ]
+            },
+            {
+              "procedureName": "RPT_Meta_Refresh:Pass_0,Potential_1",
               "outcomes": [
                 "inapplicable"
               ]
@@ -8459,6 +8585,12 @@
               "outcomes": [
                 "inapplicable"
               ]
+            },
+            {
+              "procedureName": "RPT_Meta_Refresh:Pass_0,Potential_1",
+              "outcomes": [
+                "inapplicable"
+              ]
             }
           ]
         },
@@ -8471,6 +8603,12 @@
           "procedureResults": [
             {
               "procedureName": "WCAG20_Meta_RedirectZero:pass,fail,fail_longrefresh",
+              "outcomes": [
+                "inapplicable"
+              ]
+            },
+            {
+              "procedureName": "RPT_Meta_Refresh:Pass_0,Potential_1",
               "outcomes": [
                 "inapplicable"
               ]
@@ -8489,6 +8627,12 @@
               "outcomes": [
                 "inapplicable"
               ]
+            },
+            {
+              "procedureName": "RPT_Meta_Refresh:Pass_0,Potential_1",
+              "outcomes": [
+                "inapplicable"
+              ]
             }
           ]
         },
@@ -8501,6 +8645,12 @@
           "procedureResults": [
             {
               "procedureName": "WCAG20_Meta_RedirectZero:pass,fail,fail_longrefresh",
+              "outcomes": [
+                "inapplicable"
+              ]
+            },
+            {
+              "procedureName": "RPT_Meta_Refresh:Pass_0,Potential_1",
               "outcomes": [
                 "inapplicable"
               ]
@@ -8519,6 +8669,12 @@
               "outcomes": [
                 "inapplicable"
               ]
+            },
+            {
+              "procedureName": "RPT_Meta_Refresh:Pass_0,Potential_1",
+              "outcomes": [
+                "inapplicable"
+              ]
             }
           ]
         },
@@ -8534,6 +8690,12 @@
               "outcomes": [
                 "inapplicable"
               ]
+            },
+            {
+              "procedureName": "RPT_Meta_Refresh:Pass_0,Potential_1",
+              "outcomes": [
+                "inapplicable"
+              ]
             }
           ]
         },
@@ -8546,6 +8708,12 @@
           "procedureResults": [
             {
               "procedureName": "WCAG20_Meta_RedirectZero:pass,fail,fail_longrefresh",
+              "outcomes": [
+                "inapplicable"
+              ]
+            },
+            {
+              "procedureName": "RPT_Meta_Refresh:Pass_0,Potential_1",
               "outcomes": [
                 "inapplicable"
               ]
@@ -9120,7 +9288,7 @@
       "procedureNames": [
         "IBMA_Color_Contrast_WCAG2AA_PV:Pass_0,Potential_1"
       ],
-      "consistency": "minimal",
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [

@@ -6,14 +6,12 @@
   "approvedRules": {
     "complete": 20,
     "partial": 0,
-    "minimal": 0,
     "inconsistent": 2,
     "untested": 0
   },
   "proposedRules": {
     "complete": 11,
-    "partial": 3,
-    "minimal": 3,
+    "partial": 6,
     "inconsistent": 7,
     "untested": 42
   },
@@ -7845,7 +7843,7 @@
       "procedureNames": [
         "sia-r15"
       ],
-      "consistency": "minimal",
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -8577,7 +8575,7 @@
       "procedureNames": [
         "sia-r41"
       ],
-      "consistency": "minimal",
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -10224,7 +10222,7 @@
       "procedureNames": [
         "sia-r65"
       ],
-      "consistency": "minimal",
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [

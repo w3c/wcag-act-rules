@@ -6,14 +6,12 @@
   "approvedRules": {
     "complete": 20,
     "partial": 2,
-    "minimal": 0,
     "inconsistent": 0,
     "untested": 0
   },
   "proposedRules": {
     "complete": 9,
-    "partial": 10,
-    "minimal": 13,
+    "partial": 23,
     "inconsistent": 15,
     "untested": 19
   },
@@ -7370,7 +7368,7 @@
         "audio element content is media alternative for text",
         "Audio element content has text alternative"
       ],
-      "consistency": "minimal",
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -8122,7 +8120,7 @@
       "procedureNames": [
         "Block of repeated content is collapsible"
       ],
-      "consistency": "minimal",
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
@@ -8268,7 +8266,7 @@
         "Document has an instrument to move focus to non-repeated content",
         "Bypass Blocks of Repeated Content"
       ],
-      "consistency": "minimal",
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -9064,7 +9062,7 @@
       "procedureNames": [
         "Document has heading for non-repeated content"
       ],
-      "consistency": "minimal",
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
@@ -9296,7 +9294,7 @@
       "procedureNames": [
         "Document has an instrument to move focus to non-repeated content"
       ],
-      "consistency": "minimal",
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
@@ -9498,7 +9496,7 @@
       "procedureNames": [
         "Document has a landmark with non-repeated content"
       ],
-      "consistency": "minimal",
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
@@ -10139,7 +10137,7 @@
       "procedureNames": [
         "`iframe` elements with identical accessible names have equivalent purpose"
       ],
-      "consistency": "minimal",
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -10844,7 +10842,7 @@
       "procedureNames": [
         "Error message describes invalid form field value"
       ],
-      "consistency": "minimal",
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -11023,7 +11021,7 @@
       "procedureNames": [
         "Links with identical accessible names have equivalent purpose"
       ],
-      "consistency": "minimal",
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -12663,7 +12661,7 @@
       "procedureNames": [
         "Element in sequential focus order has visible focus"
       ],
-      "consistency": "minimal",
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -15072,7 +15070,7 @@
       "procedureNames": [
         "video element visual-only content has description track"
       ],
-      "consistency": "minimal",
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": false,
         "expected": [
@@ -15857,7 +15855,7 @@
       "procedureNames": [
         "Audio and visuals of video element have transcript"
       ],
-      "consistency": "minimal",
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -16179,7 +16177,7 @@
       "procedureNames": [
         "Zoomed text node is not clipped with CSS overflow"
       ],
-      "consistency": "minimal",
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
