@@ -3127,7 +3127,7 @@
             "title": "W917",
             "isPartOf": ["WCAG2:text-spacing"]
            },
-          "result": { "outcome": "earl:failed" }
+          "result": { "outcome": "earl:passed" }
         }
       ]
     },
@@ -3141,7 +3141,7 @@
             "title": "P917",
             "isPartOf": ["WCAG2:text-spacing"]
            },
-          "result": { "outcome": "earl:passed" }
+          "result": { "outcome": "earl:failed" }
         }
       ]
     },
@@ -4303,7 +4303,7 @@
             "title": "W917",
             "isPartOf": ["WCAG2:text-spacing"]
            },
-          "result": { "outcome": "earl:failed" }
+          "result": { "outcome": "earl:passed" }
         }
       ]
     },
@@ -4317,7 +4317,7 @@
             "title": "P917",
             "isPartOf": ["WCAG2:text-spacing"]
            },
-          "result": { "outcome": "earl:passed" }
+          "result": { "outcome": "earl:failed" }
         }
       ]
     },
@@ -5549,7 +5549,7 @@
             "title": "W917",
             "isPartOf": ["WCAG2:text-spacing"]
            },
-          "result": { "outcome": "earl:failed" }
+          "result": { "outcome": "earl:passed" }
         }
       ]
     },
@@ -5563,7 +5563,7 @@
             "title": "P917",
             "isPartOf": ["WCAG2:text-spacing"]
            },
-          "result": { "outcome": "earl:passed" }
+          "result": { "outcome": "earl:failed" }
         }
       ]
     },

@@ -2,10 +2,10 @@
   "vendor": "Total Validator",
   "name": "Total Validator",
   "version": "17.1.0",
-  "lastModified": "11 April 2023",
+  "lastModified": "13 April 2023",
   "approvedRules": {
-    "complete": 19,
-    "partial": 3,
+    "complete": 22,
+    "partial": 0,
     "inconsistent": 0,
     "untested": 0
   },
@@ -3156,9 +3156,10 @@
       "ruleName": "Letter spacing in `style` attributes is not `!important`",
       "ruleApproved": true,
       "procedureNames": [
+        "W917",
         "P917"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -3171,7 +3172,7 @@
       "coverage": {
         "covered": 13,
         "untested": 0,
-        "cantTell": 0,
+        "cantTell": 3,
         "testCaseTotal": 16
       },
       "testCaseResults": [
@@ -3182,6 +3183,12 @@
           "testCaseApproved": true,
           "expected": "passed",
           "procedureResults": [
+            {
+              "procedureName": "W917",
+              "outcomes": [
+                "passed"
+              ]
+            },
             {
               "procedureName": "P917",
               "outcomes": [
@@ -3198,6 +3205,12 @@
           "expected": "passed",
           "procedureResults": [
             {
+              "procedureName": "W917",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
               "procedureName": "P917",
               "outcomes": [
                 "passed"
@@ -3213,9 +3226,15 @@
           "expected": "passed",
           "procedureResults": [
             {
+              "procedureName": "W917",
+              "outcomes": [
+                "cantTell"
+              ]
+            },
+            {
               "procedureName": "P917",
               "outcomes": [
-                "passed"
+                "cantTell"
               ]
             }
           ]
@@ -3227,6 +3246,12 @@
           "testCaseApproved": true,
           "expected": "passed",
           "procedureResults": [
+            {
+              "procedureName": "W917",
+              "outcomes": [
+                "passed"
+              ]
+            },
             {
               "procedureName": "P917",
               "outcomes": [
@@ -3243,6 +3268,12 @@
           "expected": "passed",
           "procedureResults": [
             {
+              "procedureName": "W917",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
               "procedureName": "P917",
               "outcomes": [
                 "passed"
@@ -3258,9 +3289,15 @@
           "expected": "passed",
           "procedureResults": [
             {
+              "procedureName": "W917",
+              "outcomes": [
+                "cantTell"
+              ]
+            },
+            {
               "procedureName": "P917",
               "outcomes": [
-                "passed"
+                "cantTell"
               ]
             }
           ]
@@ -3272,6 +3309,12 @@
           "testCaseApproved": true,
           "expected": "passed",
           "procedureResults": [
+            {
+              "procedureName": "W917",
+              "outcomes": [
+                "passed"
+              ]
+            },
             {
               "procedureName": "P917",
               "outcomes": [
@@ -3288,6 +3331,12 @@
           "expected": "passed",
           "procedureResults": [
             {
+              "procedureName": "W917",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
               "procedureName": "P917",
               "outcomes": [
                 "passed"
@@ -3302,6 +3351,12 @@
           "testCaseApproved": true,
           "expected": "failed",
           "procedureResults": [
+            {
+              "procedureName": "W917",
+              "outcomes": [
+                "passed"
+              ]
+            },
             {
               "procedureName": "P917",
               "outcomes": [
@@ -3318,9 +3373,15 @@
           "expected": "failed",
           "procedureResults": [
             {
+              "procedureName": "W917",
+              "outcomes": [
+                "cantTell"
+              ]
+            },
+            {
               "procedureName": "P917",
               "outcomes": [
-                "passed"
+                "cantTell"
               ]
             }
           ]
@@ -3332,6 +3393,12 @@
           "testCaseApproved": true,
           "expected": "failed",
           "procedureResults": [
+            {
+              "procedureName": "W917",
+              "outcomes": [
+                "failed"
+              ]
+            },
             {
               "procedureName": "P917",
               "outcomes": [
@@ -3348,6 +3415,12 @@
           "expected": "failed",
           "procedureResults": [
             {
+              "procedureName": "W917",
+              "outcomes": [
+                "failed"
+              ]
+            },
+            {
               "procedureName": "P917",
               "outcomes": [
                 "passed"
@@ -3362,6 +3435,12 @@
           "testCaseApproved": true,
           "expected": "inapplicable",
           "procedureResults": [
+            {
+              "procedureName": "W917",
+              "outcomes": [
+                "passed"
+              ]
+            },
             {
               "procedureName": "P917",
               "outcomes": [
@@ -3378,6 +3457,12 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
+              "procedureName": "W917",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
               "procedureName": "P917",
               "outcomes": [
                 "passed"
@@ -3393,6 +3478,12 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
+              "procedureName": "W917",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
               "procedureName": "P917",
               "outcomes": [
                 "passed"
@@ -3407,6 +3498,12 @@
           "testCaseApproved": true,
           "expected": "inapplicable",
           "procedureResults": [
+            {
+              "procedureName": "W917",
+              "outcomes": [
+                "passed"
+              ]
+            },
             {
               "procedureName": "P917",
               "outcomes": [
@@ -4040,9 +4137,10 @@
       "ruleName": "Word spacing in `style` attributes is not `!important`",
       "ruleApproved": true,
       "procedureNames": [
+        "W917",
         "P917"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -4055,7 +4153,7 @@
       "coverage": {
         "covered": 13,
         "untested": 0,
-        "cantTell": 0,
+        "cantTell": 3,
         "testCaseTotal": 16
       },
       "testCaseResults": [
@@ -4066,6 +4164,12 @@
           "testCaseApproved": true,
           "expected": "passed",
           "procedureResults": [
+            {
+              "procedureName": "W917",
+              "outcomes": [
+                "passed"
+              ]
+            },
             {
               "procedureName": "P917",
               "outcomes": [
@@ -4082,6 +4186,12 @@
           "expected": "passed",
           "procedureResults": [
             {
+              "procedureName": "W917",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
               "procedureName": "P917",
               "outcomes": [
                 "passed"
@@ -4097,9 +4207,15 @@
           "expected": "passed",
           "procedureResults": [
             {
+              "procedureName": "W917",
+              "outcomes": [
+                "cantTell"
+              ]
+            },
+            {
               "procedureName": "P917",
               "outcomes": [
-                "passed"
+                "cantTell"
               ]
             }
           ]
@@ -4111,6 +4227,12 @@
           "testCaseApproved": true,
           "expected": "passed",
           "procedureResults": [
+            {
+              "procedureName": "W917",
+              "outcomes": [
+                "passed"
+              ]
+            },
             {
               "procedureName": "P917",
               "outcomes": [
@@ -4127,6 +4249,12 @@
           "expected": "passed",
           "procedureResults": [
             {
+              "procedureName": "W917",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
               "procedureName": "P917",
               "outcomes": [
                 "passed"
@@ -4142,9 +4270,15 @@
           "expected": "passed",
           "procedureResults": [
             {
+              "procedureName": "W917",
+              "outcomes": [
+                "cantTell"
+              ]
+            },
+            {
               "procedureName": "P917",
               "outcomes": [
-                "passed"
+                "cantTell"
               ]
             }
           ]
@@ -4156,6 +4290,12 @@
           "testCaseApproved": true,
           "expected": "passed",
           "procedureResults": [
+            {
+              "procedureName": "W917",
+              "outcomes": [
+                "passed"
+              ]
+            },
             {
               "procedureName": "P917",
               "outcomes": [
@@ -4172,6 +4312,12 @@
           "expected": "passed",
           "procedureResults": [
             {
+              "procedureName": "W917",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
               "procedureName": "P917",
               "outcomes": [
                 "passed"
@@ -4186,6 +4332,12 @@
           "testCaseApproved": true,
           "expected": "failed",
           "procedureResults": [
+            {
+              "procedureName": "W917",
+              "outcomes": [
+                "passed"
+              ]
+            },
             {
               "procedureName": "P917",
               "outcomes": [
@@ -4202,9 +4354,15 @@
           "expected": "failed",
           "procedureResults": [
             {
+              "procedureName": "W917",
+              "outcomes": [
+                "cantTell"
+              ]
+            },
+            {
               "procedureName": "P917",
               "outcomes": [
-                "passed"
+                "cantTell"
               ]
             }
           ]
@@ -4216,6 +4374,12 @@
           "testCaseApproved": true,
           "expected": "failed",
           "procedureResults": [
+            {
+              "procedureName": "W917",
+              "outcomes": [
+                "failed"
+              ]
+            },
             {
               "procedureName": "P917",
               "outcomes": [
@@ -4232,6 +4396,12 @@
           "expected": "failed",
           "procedureResults": [
             {
+              "procedureName": "W917",
+              "outcomes": [
+                "failed"
+              ]
+            },
+            {
               "procedureName": "P917",
               "outcomes": [
                 "passed"
@@ -4246,6 +4416,12 @@
           "testCaseApproved": true,
           "expected": "inapplicable",
           "procedureResults": [
+            {
+              "procedureName": "W917",
+              "outcomes": [
+                "passed"
+              ]
+            },
             {
               "procedureName": "P917",
               "outcomes": [
@@ -4262,6 +4438,12 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
+              "procedureName": "W917",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
               "procedureName": "P917",
               "outcomes": [
                 "passed"
@@ -4277,6 +4459,12 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
+              "procedureName": "W917",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
               "procedureName": "P917",
               "outcomes": [
                 "passed"
@@ -4291,6 +4479,12 @@
           "testCaseApproved": true,
           "expected": "inapplicable",
           "procedureResults": [
+            {
+              "procedureName": "W917",
+              "outcomes": [
+                "passed"
+              ]
+            },
             {
               "procedureName": "P917",
               "outcomes": [
@@ -5160,9 +5354,10 @@
       "ruleName": "Line height in style attributes is not !important",
       "ruleApproved": true,
       "procedureNames": [
+        "W917",
         "P917"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -5173,9 +5368,9 @@
         ]
       },
       "coverage": {
-        "covered": 18,
+        "covered": 16,
         "untested": 0,
-        "cantTell": 0,
+        "cantTell": 5,
         "testCaseTotal": 21
       },
       "testCaseResults": [
@@ -5186,6 +5381,12 @@
           "testCaseApproved": true,
           "expected": "passed",
           "procedureResults": [
+            {
+              "procedureName": "W917",
+              "outcomes": [
+                "passed"
+              ]
+            },
             {
               "procedureName": "P917",
               "outcomes": [
@@ -5202,6 +5403,12 @@
           "expected": "passed",
           "procedureResults": [
             {
+              "procedureName": "W917",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
               "procedureName": "P917",
               "outcomes": [
                 "passed"
@@ -5217,9 +5424,15 @@
           "expected": "passed",
           "procedureResults": [
             {
+              "procedureName": "W917",
+              "outcomes": [
+                "cantTell"
+              ]
+            },
+            {
               "procedureName": "P917",
               "outcomes": [
-                "passed"
+                "cantTell"
               ]
             }
           ]
@@ -5232,9 +5445,15 @@
           "expected": "passed",
           "procedureResults": [
             {
+              "procedureName": "W917",
+              "outcomes": [
+                "cantTell"
+              ]
+            },
+            {
               "procedureName": "P917",
               "outcomes": [
-                "passed"
+                "cantTell"
               ]
             }
           ]
@@ -5246,6 +5465,12 @@
           "testCaseApproved": true,
           "expected": "passed",
           "procedureResults": [
+            {
+              "procedureName": "W917",
+              "outcomes": [
+                "passed"
+              ]
+            },
             {
               "procedureName": "P917",
               "outcomes": [
@@ -5262,6 +5487,12 @@
           "expected": "passed",
           "procedureResults": [
             {
+              "procedureName": "W917",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
               "procedureName": "P917",
               "outcomes": [
                 "passed"
@@ -5276,6 +5507,12 @@
           "testCaseApproved": true,
           "expected": "passed",
           "procedureResults": [
+            {
+              "procedureName": "W917",
+              "outcomes": [
+                "passed"
+              ]
+            },
             {
               "procedureName": "P917",
               "outcomes": [
@@ -5292,9 +5529,15 @@
           "expected": "passed",
           "procedureResults": [
             {
+              "procedureName": "W917",
+              "outcomes": [
+                "cantTell"
+              ]
+            },
+            {
               "procedureName": "P917",
               "outcomes": [
-                "passed"
+                "cantTell"
               ]
             }
           ]
@@ -5306,6 +5549,12 @@
           "testCaseApproved": true,
           "expected": "passed",
           "procedureResults": [
+            {
+              "procedureName": "W917",
+              "outcomes": [
+                "passed"
+              ]
+            },
             {
               "procedureName": "P917",
               "outcomes": [
@@ -5322,6 +5571,12 @@
           "expected": "passed",
           "procedureResults": [
             {
+              "procedureName": "W917",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
               "procedureName": "P917",
               "outcomes": [
                 "passed"
@@ -5336,6 +5591,12 @@
           "testCaseApproved": true,
           "expected": "failed",
           "procedureResults": [
+            {
+              "procedureName": "W917",
+              "outcomes": [
+                "passed"
+              ]
+            },
             {
               "procedureName": "P917",
               "outcomes": [
@@ -5352,9 +5613,15 @@
           "expected": "failed",
           "procedureResults": [
             {
+              "procedureName": "W917",
+              "outcomes": [
+                "cantTell"
+              ]
+            },
+            {
               "procedureName": "P917",
               "outcomes": [
-                "passed"
+                "cantTell"
               ]
             }
           ]
@@ -5367,9 +5634,15 @@
           "expected": "failed",
           "procedureResults": [
             {
+              "procedureName": "W917",
+              "outcomes": [
+                "cantTell"
+              ]
+            },
+            {
               "procedureName": "P917",
               "outcomes": [
-                "failed"
+                "cantTell"
               ]
             }
           ]
@@ -5381,6 +5654,12 @@
           "testCaseApproved": true,
           "expected": "failed",
           "procedureResults": [
+            {
+              "procedureName": "W917",
+              "outcomes": [
+                "passed"
+              ]
+            },
             {
               "procedureName": "P917",
               "outcomes": [
@@ -5397,6 +5676,12 @@
           "expected": "failed",
           "procedureResults": [
             {
+              "procedureName": "W917",
+              "outcomes": [
+                "failed"
+              ]
+            },
+            {
               "procedureName": "P917",
               "outcomes": [
                 "passed"
@@ -5411,6 +5696,12 @@
           "testCaseApproved": true,
           "expected": "failed",
           "procedureResults": [
+            {
+              "procedureName": "W917",
+              "outcomes": [
+                "failed"
+              ]
+            },
             {
               "procedureName": "P917",
               "outcomes": [
@@ -5427,6 +5718,12 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
+              "procedureName": "W917",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
               "procedureName": "P917",
               "outcomes": [
                 "passed"
@@ -5441,6 +5738,12 @@
           "testCaseApproved": true,
           "expected": "inapplicable",
           "procedureResults": [
+            {
+              "procedureName": "W917",
+              "outcomes": [
+                "passed"
+              ]
+            },
             {
               "procedureName": "P917",
               "outcomes": [
@@ -5457,6 +5760,12 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
+              "procedureName": "W917",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
               "procedureName": "P917",
               "outcomes": [
                 "passed"
@@ -5472,6 +5781,12 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
+              "procedureName": "W917",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
               "procedureName": "P917",
               "outcomes": [
                 "passed"
@@ -5486,6 +5801,12 @@
           "testCaseApproved": true,
           "expected": "inapplicable",
           "procedureResults": [
+            {
+              "procedureName": "W917",
+              "outcomes": [
+                "passed"
+              ]
+            },
             {
               "procedureName": "P917",
               "outcomes": [
