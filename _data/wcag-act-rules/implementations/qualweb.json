@@ -2,7 +2,7 @@
   "vendor": "LASIGE, Faculdade de Ciências da Universidade de Lisboa",
   "name": "QualWeb",
   "version": "3.0.0",
-  "lastModified": "10 April 2023",
+  "lastModified": "17 April 2023",
   "approvedRules": {
     "complete": 20,
     "partial": 2,
@@ -6656,8 +6656,8 @@
         "reported": []
       },
       "coverage": {
-        "covered": 12,
-        "untested": 9,
+        "covered": 20,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 21
       },
@@ -6672,7 +6672,7 @@
             {
               "procedureName": "ARIA state or property has valid value",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -6687,7 +6687,7 @@
             {
               "procedureName": "ARIA state or property has valid value",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -6717,7 +6717,7 @@
             {
               "procedureName": "ARIA state or property has valid value",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -6792,7 +6792,7 @@
             {
               "procedureName": "ARIA state or property has valid value",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -6837,7 +6837,7 @@
             {
               "procedureName": "ARIA state or property has valid value",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -6897,7 +6897,7 @@
             {
               "procedureName": "ARIA state or property has valid value",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -6912,7 +6912,7 @@
             {
               "procedureName": "ARIA state or property has valid value",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -6957,7 +6957,7 @@
             {
               "procedureName": "ARIA state or property has valid value",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -6972,7 +6972,7 @@
             {
               "procedureName": "ARIA state or property has valid value",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
