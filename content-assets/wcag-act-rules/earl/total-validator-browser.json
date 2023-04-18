@@ -9,7 +9,7 @@
         "@type": "Software",
         "title": "Total Validator CI (+Browser)",
         "description": "Total Validator checks websites are accessible, use valid HTML and CSS, have no broken links, and are free from spelling mistakes.",
-        "hasVersion": "17.1.1 (+5.6)",
+        "hasVersion": "17.1.1 (+5.7)",
         "homepage": "https://www.totalvalidator.com"
       },
       "assertions": [
@@ -10196,6 +10196,146 @@
           "test": {
             "title": "E9652",
             "isPartOf": ["WCAG2:info-and-relationships", "WCAG2:name-role-value"]
+           },
+          "result": { "outcome": "earl:passed" }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/0ssw9k/89302c4f9eaf142418751a45e6dd025d5d294591.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "W900",
+            "isPartOf": ["WCAG2:keyboard", "WCAG2:keyboard-no-exception"]
+           },
+          "result": { "outcome": "earl:passed" }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/0ssw9k/305891f137b5927d99e74aa1efe9997e4a8a2803.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "W900",
+            "isPartOf": ["WCAG2:keyboard", "WCAG2:keyboard-no-exception"]
+           },
+          "result": { "outcome": "earl:passed" }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/0ssw9k/5fa34d0a7eea03109cd12c0e7c21fce793c268db.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "W900",
+            "isPartOf": ["WCAG2:keyboard", "WCAG2:keyboard-no-exception"]
+           },
+          "result": { "outcome": "earl:failed" }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/0ssw9k/731acbc281943f3fef81aee32f6a553fc426e20f.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "W900",
+            "isPartOf": ["WCAG2:keyboard", "WCAG2:keyboard-no-exception"]
+           },
+          "result": { "outcome": "earl:failed" }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/0ssw9k/bb9ee4cc0b4779228701779090f461ecb2947b82.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "W900",
+            "isPartOf": ["WCAG2:keyboard", "WCAG2:keyboard-no-exception"]
+           },
+          "result": { "outcome": "earl:passed" }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/0ssw9k/997b49af2f0596bb505c7cbbfd501c0f2fa393a5.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "W900",
+            "isPartOf": ["WCAG2:keyboard", "WCAG2:keyboard-no-exception"]
+           },
+          "result": { "outcome": "earl:passed" }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/0ssw9k/d7f9b0ca63b41bfc560c867696744a14f8590394.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "W900",
+            "isPartOf": ["WCAG2:keyboard", "WCAG2:keyboard-no-exception"]
+           },
+          "result": { "outcome": "earl:passed" }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/0ssw9k/5d06e0832a2a97d6dd2e5657f00dcb93c584135b.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "W900",
+            "isPartOf": ["WCAG2:keyboard", "WCAG2:keyboard-no-exception"]
+           },
+          "result": { "outcome": "earl:passed" }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/0ssw9k/8f9b5bf5fc8345b8e7aa016621fb5dee6c13c8f2.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "W900",
+            "isPartOf": ["WCAG2:keyboard", "WCAG2:keyboard-no-exception"]
+           },
+          "result": { "outcome": "earl:passed" }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/0ssw9k/dd5ca5252dacc6d5e0fabb30e92633b284336832.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "W900",
+            "isPartOf": ["WCAG2:keyboard", "WCAG2:keyboard-no-exception"]
            },
           "result": { "outcome": "earl:passed" }
         }
