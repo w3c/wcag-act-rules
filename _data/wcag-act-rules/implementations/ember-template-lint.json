@@ -6,14 +6,12 @@
   "approvedRules": {
     "complete": 1,
     "partial": 0,
-    "minimal": 0,
     "inconsistent": 8,
     "untested": 13
   },
   "proposedRules": {
     "complete": 2,
     "partial": 4,
-    "minimal": 0,
     "inconsistent": 8,
     "untested": 52
   },
