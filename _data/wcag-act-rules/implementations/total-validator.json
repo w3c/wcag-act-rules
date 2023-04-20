@@ -2,7 +2,7 @@
   "vendor": "Total Validator",
   "name": "Total Validator",
   "version": "17.1.0",
-  "lastModified": "13 April 2023",
+  "lastModified": "20 April 2023",
   "approvedRules": {
     "complete": 22,
     "partial": 0,
@@ -8761,9 +8761,9 @@
         ]
       },
       "coverage": {
-        "covered": 9,
+        "covered": 10,
         "untested": 0,
-        "cantTell": 1,
+        "cantTell": 0,
         "testCaseTotal": 10
       },
       "testCaseResults": [
@@ -8807,7 +8807,7 @@
             {
               "procedureName": "E894",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
