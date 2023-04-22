@@ -6893,7 +6893,7 @@
             "title": "E962",
             "isPartOf": ["WCAG2:info-and-relationships"]
            },
-          "result": { "outcome": "earl:cantTell" }
+          "result": { "outcome": "earl:passed" }
         }
       ]
     },
@@ -6907,7 +6907,7 @@
             "title": "E963",
             "isPartOf": ["WCAG2:info-and-relationships"]
            },
-          "result": { "outcome": "earl:cantTell" }
+          "result": { "outcome": "earl:passed" }
         }
       ]
     },
@@ -10869,7 +10869,7 @@
             "title": "E908",
             "isPartOf": ["WCAG2:label-in-name"]
            },
-          "result": { "outcome": "earl:cantTell" }
+          "result": { "outcome": "earl:passed" }
         }
       ]
     },
