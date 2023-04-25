@@ -86,10 +86,8 @@ The following aspects are required in using this rule.
 
 ## Test Cases
 
-<details>
-<summary>
-This CSS file is used in several examples:
-</summary>
+<details markdown="block">
+<summary>This CSS file is used in several examples:</summary>
 
 File [`/test-assets/bypass-blocks-cf77f2/styles.css`](/WAI/content-assets/wcag-act-rules/test-assets/bypass-blocks-cf77f2/styles.css):
 
