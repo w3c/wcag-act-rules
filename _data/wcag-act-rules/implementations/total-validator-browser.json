@@ -2,7 +2,7 @@
   "vendor": "Total Validator",
   "name": "Total Validator (+Browser)",
   "version": "17.1.0",
-  "lastModified": "18 April 2023",
+  "lastModified": "22 April 2023",
   "approvedRules": {
     "complete": 22,
     "partial": 0,
@@ -6783,7 +6783,8 @@
       "ruleName": "ARIA required context role",
       "ruleApproved": false,
       "procedureNames": [
-        "E962"
+        "E962",
+        "E963"
       ],
       "consistency": "complete",
       "accessibilityRequirements": {
@@ -6796,9 +6797,9 @@
         ]
       },
       "coverage": {
-        "covered": 13,
+        "covered": 15,
         "untested": 0,
-        "cantTell": 2,
+        "cantTell": 0,
         "testCaseTotal": 15
       },
       "testCaseResults": [
@@ -6811,6 +6812,12 @@
           "procedureResults": [
             {
               "procedureName": "E962",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
+              "procedureName": "E963",
               "outcomes": [
                 "passed"
               ]
@@ -6829,6 +6836,12 @@
               "outcomes": [
                 "passed"
               ]
+            },
+            {
+              "procedureName": "E963",
+              "outcomes": [
+                "passed"
+              ]
             }
           ]
         },
@@ -6841,6 +6854,12 @@
           "procedureResults": [
             {
               "procedureName": "E962",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
+              "procedureName": "E963",
               "outcomes": [
                 "passed"
               ]
@@ -6859,6 +6878,12 @@
               "outcomes": [
                 "passed"
               ]
+            },
+            {
+              "procedureName": "E963",
+              "outcomes": [
+                "passed"
+              ]
             }
           ]
         },
@@ -6871,6 +6896,12 @@
           "procedureResults": [
             {
               "procedureName": "E962",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
+              "procedureName": "E963",
               "outcomes": [
                 "passed"
               ]
@@ -6887,7 +6918,13 @@
             {
               "procedureName": "E962",
               "outcomes": [
-                "cantTell"
+                "passed"
+              ]
+            },
+            {
+              "procedureName": "E963",
+              "outcomes": [
+                "passed"
               ]
             }
           ]
@@ -6904,6 +6941,12 @@
               "outcomes": [
                 "failed"
               ]
+            },
+            {
+              "procedureName": "E963",
+              "outcomes": [
+                "passed"
+              ]
             }
           ]
         },
@@ -6916,6 +6959,12 @@
           "procedureResults": [
             {
               "procedureName": "E962",
+              "outcomes": [
+                "failed"
+              ]
+            },
+            {
+              "procedureName": "E963",
               "outcomes": [
                 "failed"
               ]
@@ -6934,6 +6983,12 @@
               "outcomes": [
                 "failed"
               ]
+            },
+            {
+              "procedureName": "E963",
+              "outcomes": [
+                "failed"
+              ]
             }
           ]
         },
@@ -6947,7 +7002,13 @@
             {
               "procedureName": "E962",
               "outcomes": [
-                "cantTell"
+                "passed"
+              ]
+            },
+            {
+              "procedureName": "E963",
+              "outcomes": [
+                "failed"
               ]
             }
           ]
@@ -6961,6 +7022,12 @@
           "procedureResults": [
             {
               "procedureName": "E962",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
+              "procedureName": "E963",
               "outcomes": [
                 "passed"
               ]
@@ -6979,6 +7046,12 @@
               "outcomes": [
                 "passed"
               ]
+            },
+            {
+              "procedureName": "E963",
+              "outcomes": [
+                "passed"
+              ]
             }
           ]
         },
@@ -6991,6 +7064,12 @@
           "procedureResults": [
             {
               "procedureName": "E962",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
+              "procedureName": "E963",
               "outcomes": [
                 "passed"
               ]
@@ -7009,6 +7088,12 @@
               "outcomes": [
                 "passed"
               ]
+            },
+            {
+              "procedureName": "E963",
+              "outcomes": [
+                "passed"
+              ]
             }
           ]
         },
@@ -7021,6 +7106,12 @@
           "procedureResults": [
             {
               "procedureName": "E962",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
+              "procedureName": "E963",
               "outcomes": [
                 "passed"
               ]
@@ -8761,9 +8852,9 @@
         ]
       },
       "coverage": {
-        "covered": 9,
+        "covered": 10,
         "untested": 0,
-        "cantTell": 1,
+        "cantTell": 0,
         "testCaseTotal": 10
       },
       "testCaseResults": [
@@ -8807,7 +8898,7 @@
             {
               "procedureName": "E894",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -10786,9 +10877,9 @@
         ]
       },
       "coverage": {
-        "covered": 12,
+        "covered": 13,
         "untested": 0,
-        "cantTell": 1,
+        "cantTell": 0,
         "testCaseTotal": 13
       },
       "testCaseResults": [
@@ -10877,7 +10968,7 @@
             {
               "procedureName": "E908",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
