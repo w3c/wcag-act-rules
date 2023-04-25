@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 047fe0</p>
-  <p><strong>Date:</strong> Updated 11 November 2022</p>
+  <p><strong>Date:</strong> Updated 25 April 2023</p>
   <p><strong>Authors:</strong> <a href="https://github.com/Jym77">Jean-Yves Moyen</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
   
@@ -21,7 +21,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that the non-repeated content contains a heading
-  last_modified: 11 November 2022
+  last_modified: 25 April 2023
 ---
 
 ## Applicability
@@ -85,6 +85,31 @@ The following aspects are required in using this rule.
 - [DOM Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom)
 
 ## Test Cases
+
+<details>
+<summary>
+This CSS file is used in several examples:
+</summary>
+
+File [`/test-assets/bypass-blocks-cf77f2/styles.css`](/WAI/content-assets/wcag-act-rules/test-assets/bypass-blocks-cf77f2/styles.css):
+
+```css
+.off-screen {
+	position: absolute;
+	top: -999px;
+}
+
+.visible-on-focus {
+	position: absolute;
+	top: -100px;
+}
+.visible-on-focus:focus-within {
+	position: relative;
+	top: 0px;
+}
+```
+
+</details>
 
 ### Passed
 

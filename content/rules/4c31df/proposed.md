@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 4c31df</p>
-  <p><strong>Date:</strong> Updated 14 November 2022</p>
+  <p><strong>Date:</strong> Updated 25 April 2023</p>
   <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/brynanders">Bryn Anderson</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
   
@@ -21,7 +21,7 @@ rule_meta:
   rule_type: atomic
   description: |
     audio or video that plays automatically must have a control mechanism.
-  last_modified: 14 November 2022
+  last_modified: 25 April 2023
 ---
 
 ## Applicability
@@ -84,6 +84,60 @@ The following aspects are required in using this rule.
 - Visual output (no link available)
 
 ## Test Cases
+
+<details>
+<summary>
+This Javascript file is used in several examples:
+</summary>
+
+File [`/test-assets/80f0bf/no-autoplay.js`](/WAI/content-assets/wcag-act-rules/test-assets/80f0bf/no-autoplay.js):
+
+```javascript
+window.onload = function() {
+	// Video
+	var video = document.getElementById('video')
+
+	// Buttons
+	var playButton = document.getElementById('play-pause')
+	var muteButton = document.getElementById('mute')
+
+	// Event listener for the play/pause button
+	playButton.addEventListener('click', function() {
+		if (video.paused == true) {
+			// Play the video
+			video.play()
+
+			// Update the button text to 'Pause'
+			playButton.innerHTML = 'Pause'
+		} else {
+			// Pause the video
+			video.pause()
+
+			// Update the button text to 'Play'
+			playButton.innerHTML = 'Play'
+		}
+	})
+
+	// Event listener for the mute button
+	muteButton.addEventListener('click', function() {
+		if (video.muted == false) {
+			// Mute the video
+			video.muted = true
+
+			// Update the button text
+			muteButton.innerHTML = 'Unmute'
+		} else {
+			// Unmute the video
+			video.muted = false
+
+			// Update the button text
+			muteButton.innerHTML = 'Mute'
+		}
+	})
+}
+```
+
+</details>
 
 ### Passed
 

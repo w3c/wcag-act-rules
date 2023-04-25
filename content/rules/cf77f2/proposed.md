@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> cf77f2</p>
-  <p><strong>Date:</strong> Updated 16 January 2023</p>
+  <p><strong>Date:</strong> Updated 25 April 2023</p>
   <p><strong>Authors:</strong> <a href="https://github.com/Jym77">Jean-Yves Moyen</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
   
@@ -21,7 +21,7 @@ rule_meta:
   rule_type: composite
   description: |
     This rule checks that each page has a mechanism to bypass repeated blocks of content.
-  last_modified: 16 January 2023
+  last_modified: 25 April 2023
   scs_tested:
     - handle: Bypass Blocks
       num: 2.4.1
@@ -162,6 +162,44 @@ Outcomes of the following rules are required as input for this rule.
 - [Document has an instrument to move focus to non-repeated content](/standards-guidelines/act/rules/document-has-instrument-to-non-repeated-content-ye5d6e/)
 
 ## Test Cases
+
+<details>
+<summary>
+This Javascript file is used in several examples:
+</summary>
+
+File [`/test-assets/bypass-blocks-cf77f2/toggle-display.js`](/WAI/content-assets/wcag-act-rules/test-assets/bypass-blocks-cf77f2/toggle-display.js):
+
+```javascript
+function toggleHidden(...ids) {
+	ids.forEach(id => {
+		const element = document.getElementById(id)
+		element.style.display = element.style.display === 'none' ? '' : 'none'
+	})
+}
+
+function hide(id) {
+	const element = document.getElementById(id)
+	element.style.display = 'none'
+}
+
+function show(id) {
+	const element = document.getElementById(id)
+	element.style.display = ''
+}
+
+function toggleVisibility(id) {
+	const element = document.getElementById(id)
+	element.className = element.className === 'off-screen' ? '' : 'off-screen'
+}
+
+function toggleAriaHidden(id) {
+	const element = document.getElementById(id)
+	element.setAttribute('aria-hidden', (element.getAttribute('aria-hidden') !== 'true').toString())
+}
+```
+
+</details>
 
 ### Passed
 

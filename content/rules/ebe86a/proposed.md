@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> ebe86a</p>
-  <p><strong>Date:</strong> Updated 14 November 2022</p>
+  <p><strong>Date:</strong> Updated 25 April 2023</p>
   <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/carlosapaduarte">Carlos Duarte</a>, <a href="https://github.com/DagfinnRomen">Dagfinn Rømen</a>, <a href="https://github.com/geirsf">Geir Sindre Fossøy</a>, <a href="https: //github.com/MaliinO">Malin Øvrebø</a>, <a href="https://github.com/nitedog">Shadi Abou-Zahra</a>, <a href="https://github.com/skotkjerra">Stein Erik Skotkjerra</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -19,7 +19,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks if it is possible to use non-standard keyboard navigation to navigate through content where focus is trapped when using standard ways of keyboard navigation.
-  last_modified: 14 November 2022
+  last_modified: 25 April 2023
 ---
 
 ## Applicability
@@ -71,6 +71,42 @@ The following aspects are required in using this rule.
 - [CSS Styling](https://www.w3.org/TR/act-rules-aspects/#input-aspects-css)
 
 ## Test Cases
+
+<details>
+<summary>
+This Javascript file is used in several examples:
+</summary>
+
+File [`/test-assets/focusable-no-keyboard-trap/keyboard.js`](/WAI/content-assets/wcag-act-rules/test-assets/focusable-no-keyboard-trap/keyboard.js):
+
+```javascript
+var trapOn = false
+
+function moveFocusToButton(btn) {
+	if (trapOn) {
+		document.getElementById(btn).focus()
+	}
+}
+
+function escapeTrapOnCtrlM(e) {
+	if (e.keyCode === 77 && e.ctrlKey) {
+		trapOn = false
+		document.getElementById('link2').focus()
+	}
+}
+
+function moveFocusTo(elm) {
+	if (trapOn) {
+		document.getElementById(elm).focus()
+	}
+}
+
+function showHelpText() {
+	document.getElementById('helptext').innerHTML = '<p>Press Ctrl+M to Exit</p>'
+}
+```
+
+</details>
 
 ### Passed
 

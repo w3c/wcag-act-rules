@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 9bd38c</p>
-  <p><strong>Date:</strong> Updated 14 November 2022</p>
+  <p><strong>Date:</strong> Updated 25 April 2023</p>
   <p><strong>Authors:</strong> <a href="https://www.linkedin.com/in/brianbors/">Brian Bors</a>, <a href="https://github.com/danistr">Daniël Strik</a>, <a href="https://github.com/Jym77">Jean-Yves Moyen</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -19,7 +19,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that when content is identified through a visual reference, there are also non-visual references identifying the same content.
-  last_modified: 14 November 2022
+  last_modified: 25 April 2023
   scs_tested:
     - handle: Sensory Characteristics
       num: 1.3.3
@@ -102,6 +102,26 @@ The following aspects are required in using this rule.
 - [Language](https://www.w3.org/TR/act-rules-aspects/#input-aspects-text)
 
 ## Test Cases
+
+<details>
+<summary>
+This CSS file is used in several examples:
+</summary>
+
+File [`/test-assets/non-visual-reference-alternative-9bd38c/columns.css`](/WAI/content-assets/wcag-act-rules/test-assets/non-visual-reference-alternative-9bd38c/columns.css):
+
+```css
+.col-container {
+	display: table;
+	width: 100%;
+}
+.col {
+	display: table-cell;
+	padding: 16px;
+}
+```
+
+</details>
 
 ### Passed
 
