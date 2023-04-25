@@ -9,6 +9,8 @@ footer: ""
 github:
   repository: w3c/wcag-act-rules
   path: content/index.md
+footer:
+  <p>This work was supported by the EC-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a> and <a href="https://www.w3.org/WAI/about/projects/wai-guide/">WAI-Guide Project</a>.
 ---
 
 {::nomarkdown}
