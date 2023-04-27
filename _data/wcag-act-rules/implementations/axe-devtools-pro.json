@@ -12500,8 +12500,8 @@
         ]
       },
       "coverage": {
-        "covered": 8,
-        "untested": 0,
+        "covered": 7,
+        "untested": 1,
         "cantTell": 0,
         "testCaseTotal": 9
       },
@@ -12567,16 +12567,16 @@
           ]
         },
         {
-          "testcaseId": "e98a64b41d38cf3d64cdff5cb05e5ea4409d20f4",
+          "testcaseId": "a51e05dc7b64d927ff25bc493bb0aa069c963d29",
           "testCaseName": "Failed Example 2",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/e98a64b41d38cf3d64cdff5cb05e5ea4409d20f4.html",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/a51e05dc7b64d927ff25bc493bb0aa069c963d29.html",
           "testCaseApproved": false,
           "expected": "failed",
           "procedureResults": [
             {
               "procedureName": "form-error-required-unclear + instructions-not-included (forms)",
               "outcomes": [
-                "failed"
+                "untested"
               ]
             }
           ]
