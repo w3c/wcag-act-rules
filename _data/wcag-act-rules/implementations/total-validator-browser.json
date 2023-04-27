@@ -2,7 +2,7 @@
   "vendor": "Total Validator",
   "name": "Total Validator (+Browser)",
   "version": "17.1.0",
-  "lastModified": "26 April 2023",
+  "lastModified": "27 April 2023",
   "approvedRules": {
     "complete": 22,
     "partial": 0,
@@ -10747,7 +10747,9 @@
       "ruleName": "Text has minimum contrast",
       "ruleApproved": false,
       "procedureNames": [
-        "P9121"
+        "P9121",
+        "I864",
+        "I863"
       ],
       "consistency": "complete",
       "accessibilityRequirements": {
@@ -10779,6 +10781,18 @@
               "outcomes": [
                 "passed"
               ]
+            },
+            {
+              "procedureName": "I864",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
+              "procedureName": "I863",
+              "outcomes": [
+                "passed"
+              ]
             }
           ]
         },
@@ -10791,6 +10805,18 @@
           "procedureResults": [
             {
               "procedureName": "P9121",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
+              "procedureName": "I864",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
+              "procedureName": "I863",
               "outcomes": [
                 "cantTell"
               ]
@@ -10807,6 +10833,18 @@
             {
               "procedureName": "P9121",
               "outcomes": [
+                "passed"
+              ]
+            },
+            {
+              "procedureName": "I864",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
+              "procedureName": "I863",
+              "outcomes": [
                 "cantTell"
               ]
             }
@@ -10822,7 +10860,19 @@
             {
               "procedureName": "P9121",
               "outcomes": [
+                "passed"
+              ]
+            },
+            {
+              "procedureName": "I864",
+              "outcomes": [
                 "cantTell"
+              ]
+            },
+            {
+              "procedureName": "I863",
+              "outcomes": [
+                "passed"
               ]
             }
           ]
@@ -10836,6 +10886,18 @@
           "procedureResults": [
             {
               "procedureName": "P9121",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
+              "procedureName": "I864",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
+              "procedureName": "I863",
               "outcomes": [
                 "passed"
               ]
@@ -10854,6 +10916,18 @@
               "outcomes": [
                 "passed"
               ]
+            },
+            {
+              "procedureName": "I864",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
+              "procedureName": "I863",
+              "outcomes": [
+                "passed"
+              ]
             }
           ]
         },
@@ -10866,6 +10940,18 @@
           "procedureResults": [
             {
               "procedureName": "P9121",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
+              "procedureName": "I864",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
+              "procedureName": "I863",
               "outcomes": [
                 "passed"
               ]
@@ -10884,6 +10970,18 @@
               "outcomes": [
                 "passed"
               ]
+            },
+            {
+              "procedureName": "I864",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
+              "procedureName": "I863",
+              "outcomes": [
+                "passed"
+              ]
             }
           ]
         },
@@ -10896,6 +10994,18 @@
           "procedureResults": [
             {
               "procedureName": "P9121",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
+              "procedureName": "I864",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
+              "procedureName": "I863",
               "outcomes": [
                 "passed"
               ]
@@ -10914,6 +11024,18 @@
               "outcomes": [
                 "passed"
               ]
+            },
+            {
+              "procedureName": "I864",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
+              "procedureName": "I863",
+              "outcomes": [
+                "passed"
+              ]
             }
           ]
         },
@@ -10926,6 +11048,18 @@
           "procedureResults": [
             {
               "procedureName": "P9121",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
+              "procedureName": "I864",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
+              "procedureName": "I863",
               "outcomes": [
                 "passed"
               ]
@@ -10944,6 +11078,18 @@
               "outcomes": [
                 "failed"
               ]
+            },
+            {
+              "procedureName": "I864",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
+              "procedureName": "I863",
+              "outcomes": [
+                "passed"
+              ]
             }
           ]
         },
@@ -10956,6 +11102,18 @@
           "procedureResults": [
             {
               "procedureName": "P9121",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
+              "procedureName": "I864",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
+              "procedureName": "I863",
               "outcomes": [
                 "cantTell"
               ]
@@ -10971,6 +11129,18 @@
           "procedureResults": [
             {
               "procedureName": "P9121",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
+              "procedureName": "I864",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
+              "procedureName": "I863",
               "outcomes": [
                 "cantTell"
               ]
@@ -10989,6 +11159,18 @@
               "outcomes": [
                 "failed"
               ]
+            },
+            {
+              "procedureName": "I864",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
+              "procedureName": "I863",
+              "outcomes": [
+                "passed"
+              ]
             }
           ]
         },
@@ -11003,6 +11185,18 @@
               "procedureName": "P9121",
               "outcomes": [
                 "failed"
+              ]
+            },
+            {
+              "procedureName": "I864",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
+              "procedureName": "I863",
+              "outcomes": [
+                "passed"
               ]
             }
           ]
@@ -11019,6 +11213,18 @@
               "outcomes": [
                 "failed"
               ]
+            },
+            {
+              "procedureName": "I864",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
+              "procedureName": "I863",
+              "outcomes": [
+                "passed"
+              ]
             }
           ]
         },
@@ -11031,6 +11237,18 @@
           "procedureResults": [
             {
               "procedureName": "P9121",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
+              "procedureName": "I864",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
+              "procedureName": "I863",
               "outcomes": [
                 "cantTell"
               ]
@@ -11049,6 +11267,18 @@
               "outcomes": [
                 "failed"
               ]
+            },
+            {
+              "procedureName": "I864",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
+              "procedureName": "I863",
+              "outcomes": [
+                "passed"
+              ]
             }
           ]
         },
@@ -11063,6 +11293,18 @@
               "procedureName": "P9121",
               "outcomes": [
                 "failed"
+              ]
+            },
+            {
+              "procedureName": "I864",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
+              "procedureName": "I863",
+              "outcomes": [
+                "passed"
               ]
             }
           ]
@@ -11079,6 +11321,18 @@
               "outcomes": [
                 "failed"
               ]
+            },
+            {
+              "procedureName": "I864",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
+              "procedureName": "I863",
+              "outcomes": [
+                "passed"
+              ]
             }
           ]
         },
@@ -11091,6 +11345,18 @@
           "procedureResults": [
             {
               "procedureName": "P9121",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
+              "procedureName": "I864",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
+              "procedureName": "I863",
               "outcomes": [
                 "passed"
               ]
@@ -11109,6 +11375,18 @@
               "outcomes": [
                 "passed"
               ]
+            },
+            {
+              "procedureName": "I864",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
+              "procedureName": "I863",
+              "outcomes": [
+                "passed"
+              ]
             }
           ]
         },
@@ -11121,6 +11399,18 @@
           "procedureResults": [
             {
               "procedureName": "P9121",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
+              "procedureName": "I864",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
+              "procedureName": "I863",
               "outcomes": [
                 "passed"
               ]
@@ -11139,6 +11429,18 @@
               "outcomes": [
                 "passed"
               ]
+            },
+            {
+              "procedureName": "I864",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
+              "procedureName": "I863",
+              "outcomes": [
+                "passed"
+              ]
             }
           ]
         },
@@ -11151,6 +11453,18 @@
           "procedureResults": [
             {
               "procedureName": "P9121",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
+              "procedureName": "I864",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
+              "procedureName": "I863",
               "outcomes": [
                 "passed"
               ]
@@ -11169,6 +11483,18 @@
               "outcomes": [
                 "passed"
               ]
+            },
+            {
+              "procedureName": "I864",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
+              "procedureName": "I863",
+              "outcomes": [
+                "passed"
+              ]
             }
           ]
         },
@@ -11181,6 +11507,18 @@
           "procedureResults": [
             {
               "procedureName": "P9121",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
+              "procedureName": "I864",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
+              "procedureName": "I863",
               "outcomes": [
                 "passed"
               ]
@@ -11199,6 +11537,18 @@
               "outcomes": [
                 "passed"
               ]
+            },
+            {
+              "procedureName": "I864",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
+              "procedureName": "I863",
+              "outcomes": [
+                "passed"
+              ]
             }
           ]
         },
@@ -11211,6 +11561,18 @@
           "procedureResults": [
             {
               "procedureName": "P9121",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
+              "procedureName": "I864",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
+              "procedureName": "I863",
               "outcomes": [
                 "passed"
               ]
@@ -11229,6 +11591,18 @@
               "outcomes": [
                 "passed"
               ]
+            },
+            {
+              "procedureName": "I864",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
+              "procedureName": "I863",
+              "outcomes": [
+                "passed"
+              ]
             }
           ]
         },
@@ -11244,6 +11618,18 @@
               "outcomes": [
                 "passed"
               ]
+            },
+            {
+              "procedureName": "I864",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
+              "procedureName": "I863",
+              "outcomes": [
+                "passed"
+              ]
             }
           ]
         }
@@ -11256,7 +11642,8 @@
       "procedureNames": [
         "P9241",
         "P9231",
-        "P9121"
+        "P9121",
+        "I863"
       ],
       "consistency": "complete",
       "accessibilityRequirements": {
@@ -11300,6 +11687,12 @@
               "outcomes": [
                 "passed"
               ]
+            },
+            {
+              "procedureName": "I863",
+              "outcomes": [
+                "passed"
+              ]
             }
           ]
         },
@@ -11313,17 +11706,23 @@
             {
               "procedureName": "P9241",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             },
             {
               "procedureName": "P9231",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             },
             {
               "procedureName": "P9121",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
+              "procedureName": "I863",
               "outcomes": [
                 "cantTell"
               ]
@@ -11340,17 +11739,23 @@
             {
               "procedureName": "P9241",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             },
             {
               "procedureName": "P9231",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             },
             {
               "procedureName": "P9121",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
+              "procedureName": "I863",
               "outcomes": [
                 "cantTell"
               ]
@@ -11381,6 +11786,12 @@
               "outcomes": [
                 "passed"
               ]
+            },
+            {
+              "procedureName": "I863",
+              "outcomes": [
+                "passed"
+              ]
             }
           ]
         },
@@ -11405,6 +11816,12 @@
             },
             {
               "procedureName": "P9121",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
+              "procedureName": "I863",
               "outcomes": [
                 "passed"
               ]
@@ -11435,6 +11852,12 @@
               "outcomes": [
                 "passed"
               ]
+            },
+            {
+              "procedureName": "I863",
+              "outcomes": [
+                "passed"
+              ]
             }
           ]
         },
@@ -11459,6 +11882,12 @@
             },
             {
               "procedureName": "P9121",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
+              "procedureName": "I863",
               "outcomes": [
                 "passed"
               ]
@@ -11489,6 +11918,12 @@
               "outcomes": [
                 "passed"
               ]
+            },
+            {
+              "procedureName": "I863",
+              "outcomes": [
+                "passed"
+              ]
             }
           ]
         },
@@ -11513,6 +11948,12 @@
             },
             {
               "procedureName": "P9121",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
+              "procedureName": "I863",
               "outcomes": [
                 "passed"
               ]
@@ -11543,6 +11984,12 @@
               "outcomes": [
                 "passed"
               ]
+            },
+            {
+              "procedureName": "I863",
+              "outcomes": [
+                "passed"
+              ]
             }
           ]
         },
@@ -11570,6 +12017,12 @@
               "outcomes": [
                 "passed"
               ]
+            },
+            {
+              "procedureName": "I863",
+              "outcomes": [
+                "passed"
+              ]
             }
           ]
         },
@@ -11583,17 +12036,23 @@
             {
               "procedureName": "P9241",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             },
             {
               "procedureName": "P9231",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             },
             {
               "procedureName": "P9121",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
+              "procedureName": "I863",
               "outcomes": [
                 "cantTell"
               ]
@@ -11624,6 +12083,12 @@
               "outcomes": [
                 "passed"
               ]
+            },
+            {
+              "procedureName": "I863",
+              "outcomes": [
+                "passed"
+              ]
             }
           ]
         },
@@ -11650,6 +12115,12 @@
               "procedureName": "P9121",
               "outcomes": [
                 "failed"
+              ]
+            },
+            {
+              "procedureName": "I863",
+              "outcomes": [
+                "passed"
               ]
             }
           ]
@@ -11678,6 +12149,12 @@
               "outcomes": [
                 "passed"
               ]
+            },
+            {
+              "procedureName": "I863",
+              "outcomes": [
+                "passed"
+              ]
             }
           ]
         },
@@ -11691,17 +12168,23 @@
             {
               "procedureName": "P9241",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             },
             {
               "procedureName": "P9231",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             },
             {
               "procedureName": "P9121",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
+              "procedureName": "I863",
               "outcomes": [
                 "cantTell"
               ]
@@ -11732,6 +12215,12 @@
               "outcomes": [
                 "passed"
               ]
+            },
+            {
+              "procedureName": "I863",
+              "outcomes": [
+                "passed"
+              ]
             }
           ]
         },
@@ -11756,6 +12245,12 @@
             },
             {
               "procedureName": "P9121",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
+              "procedureName": "I863",
               "outcomes": [
                 "passed"
               ]
@@ -11786,6 +12281,12 @@
               "outcomes": [
                 "passed"
               ]
+            },
+            {
+              "procedureName": "I863",
+              "outcomes": [
+                "passed"
+              ]
             }
           ]
         },
@@ -11799,17 +12300,23 @@
             {
               "procedureName": "P9241",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             },
             {
               "procedureName": "P9231",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             },
             {
               "procedureName": "P9121",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
+              "procedureName": "I863",
               "outcomes": [
                 "cantTell"
               ]
@@ -11840,6 +12347,12 @@
               "outcomes": [
                 "passed"
               ]
+            },
+            {
+              "procedureName": "I863",
+              "outcomes": [
+                "passed"
+              ]
             }
           ]
         },
@@ -11864,6 +12377,12 @@
             },
             {
               "procedureName": "P9121",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
+              "procedureName": "I863",
               "outcomes": [
                 "passed"
               ]
@@ -11894,6 +12413,12 @@
               "outcomes": [
                 "passed"
               ]
+            },
+            {
+              "procedureName": "I863",
+              "outcomes": [
+                "passed"
+              ]
             }
           ]
         },
@@ -11918,6 +12443,12 @@
             },
             {
               "procedureName": "P9121",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
+              "procedureName": "I863",
               "outcomes": [
                 "passed"
               ]
@@ -11948,6 +12479,12 @@
               "outcomes": [
                 "passed"
               ]
+            },
+            {
+              "procedureName": "I863",
+              "outcomes": [
+                "passed"
+              ]
             }
           ]
         },
@@ -11972,6 +12509,12 @@
             },
             {
               "procedureName": "P9121",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
+              "procedureName": "I863",
               "outcomes": [
                 "passed"
               ]
@@ -12002,6 +12545,12 @@
               "outcomes": [
                 "passed"
               ]
+            },
+            {
+              "procedureName": "I863",
+              "outcomes": [
+                "passed"
+              ]
             }
           ]
         },
@@ -12026,6 +12575,12 @@
             },
             {
               "procedureName": "P9121",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
+              "procedureName": "I863",
               "outcomes": [
                 "passed"
               ]
@@ -12056,6 +12611,12 @@
               "outcomes": [
                 "passed"
               ]
+            },
+            {
+              "procedureName": "I863",
+              "outcomes": [
+                "passed"
+              ]
             }
           ]
         },
@@ -12080,6 +12641,12 @@
             },
             {
               "procedureName": "P9121",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
+              "procedureName": "I863",
               "outcomes": [
                 "passed"
               ]
@@ -12110,6 +12677,12 @@
               "outcomes": [
                 "passed"
               ]
+            },
+            {
+              "procedureName": "I863",
+              "outcomes": [
+                "passed"
+              ]
             }
           ]
         },
@@ -12134,6 +12707,12 @@
             },
             {
               "procedureName": "P9121",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
+              "procedureName": "I863",
               "outcomes": [
                 "passed"
               ]
@@ -12164,6 +12743,12 @@
               "outcomes": [
                 "passed"
               ]
+            },
+            {
+              "procedureName": "I863",
+              "outcomes": [
+                "passed"
+              ]
             }
           ]
         },
@@ -12188,6 +12773,12 @@
             },
             {
               "procedureName": "P9121",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
+              "procedureName": "I863",
               "outcomes": [
                 "passed"
               ]
