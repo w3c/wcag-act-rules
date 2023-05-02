@@ -9,7 +9,7 @@
         "@type": "Software",
         "title": "Total Validator CI",
         "description": "Total Validator checks websites are accessible, use valid HTML and CSS, have no broken links, and are free from spelling mistakes.",
-        "hasVersion": "17.1.1",
+        "hasVersion": "17.2.0",
         "homepage": "https://www.totalvalidator.com"
       },
       "assertions": [
@@ -9035,7 +9035,7 @@
             "title": "E894",
             "isPartOf": ["WCAG2:parsing"]
            },
-          "result": { "outcome": "earl:passed" }
+          "result": { "outcome": "earl:cantTell" }
         }
       ]
     },
