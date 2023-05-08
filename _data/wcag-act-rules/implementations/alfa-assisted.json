@@ -9676,9 +9676,9 @@
         ]
       },
       "coverage": {
-        "covered": 8,
+        "covered": 9,
         "untested": 0,
-        "cantTell": 1,
+        "cantTell": 0,
         "testCaseTotal": 9
       },
       "testCaseResults": [
@@ -9752,7 +9752,7 @@
             {
               "procedureName": "sia-r82",
               "outcomes": [
-                "cantTell"
+                "failed"
               ]
             }
           ]
