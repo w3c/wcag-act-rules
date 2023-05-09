@@ -22885,7 +22885,7 @@
       }
     },
     {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/e98a64b41d38cf3d64cdff5cb05e5ea4409d20f4.html",
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/a51e05dc7b64d927ff25bc493bb0aa069c963d29.html",
       "@type": "TestSubject",
       "dct:hasPart": [
         {
@@ -22905,7 +22905,7 @@
             "@list": []
           },
           "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/e98a64b41d38cf3d64cdff5cb05e5ea4409d20f4.html"
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/a51e05dc7b64d927ff25bc493bb0aa069c963d29.html"
         },
         {
           "@type": [
@@ -22918,7 +22918,7 @@
               "cnt:ContentAsText"
             ],
             "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Failed Example 2</title>\n</head>\n<body>\n\t<form>\n\t\t<label for=\"age\">Age (years)</label>\n\t\t<input type=\"number\" id=\"age\" />\n\t\t<span id=\"error\">Please enter the correct text.</span><br />\n\t\t<input type=\"button\" value=\"Submit\" />\n\t</form>\n</body>\n</html>"
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Failed Example 2</title>\n</head>\n<body>\n\t<form>\n\t\t<label for=\"age\">Age (years)</label>\n\t\t<input type=\"number\" id=\"age\" />\n\t\t<span id=\"error\">Invalid value for age.</span><br />\n\t\t<input type=\"button\" value=\"Submit\" />\n\t</form>\n</body>\n</html>"
           },
           "http-vocab:headers": {
             "@list": [
@@ -22932,7 +22932,7 @@
           "http-vocab:statusCodeValue": 200
         }
       ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/e98a64b41d38cf3d64cdff5cb05e5ea4409d20f4.html"
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/a51e05dc7b64d927ff25bc493bb0aa069c963d29.html"
     },
     {
       "@type": "Assertion",
@@ -22953,7 +22953,7 @@
         }
       },
       "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/e98a64b41d38cf3d64cdff5cb05e5ea4409d20f4.html"
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/a51e05dc7b64d927ff25bc493bb0aa069c963d29.html"
       },
       "test": {
         "@id": "https://alfa.siteimprove.com/rules/sia-r82"
