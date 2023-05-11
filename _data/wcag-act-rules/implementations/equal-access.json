@@ -11,8 +11,8 @@
   },
   "proposedRules": {
     "complete": 8,
-    "partial": 7,
-    "inconsistent": 0,
+    "partial": 6,
+    "inconsistent": 1,
     "untested": 51
   },
   "actRuleMapping": [
@@ -6172,8 +6172,8 @@
         ]
       },
       "coverage": {
-        "covered": 15,
-        "untested": 0,
+        "covered": 14,
+        "untested": 1,
         "cantTell": 0,
         "testCaseTotal": 15
       },
@@ -6374,16 +6374,16 @@
           ]
         },
         {
-          "testcaseId": "84dd1831c0682a800e6af2fe992fb3d69d4222eb",
+          "testcaseId": "3457868b79bad5b8cf2320c88cd5f542f9388cda",
           "testCaseName": "Inapplicable Example 4",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ff89c9/84dd1831c0682a800e6af2fe992fb3d69d4222eb.html",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ff89c9/3457868b79bad5b8cf2320c88cd5f542f9388cda.html",
           "testCaseApproved": false,
           "expected": "inapplicable",
           "procedureResults": [
             {
               "procedureName": "Rpt_Aria_RequiredParent_Native_Host_Sematics:Pass_0,Fail_1",
               "outcomes": [
-                "inapplicable"
+                "untested"
               ]
             }
           ]
@@ -9286,9 +9286,10 @@
       "ruleName": "Text has minimum contrast",
       "ruleApproved": false,
       "procedureNames": [
+        "IBMA_Color_Contrast_WCAG2AA:Pass_0,Fail_1,Potential_1",
         "IBMA_Color_Contrast_WCAG2AA_PV:Pass_0,Potential_1"
       ],
-      "consistency": "partial",
+      "consistency": null,
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -9299,9 +9300,9 @@
         ]
       },
       "coverage": {
-        "covered": 21,
-        "untested": 0,
-        "cantTell": 4,
+        "covered": 24,
+        "untested": 1,
+        "cantTell": 5,
         "testCaseTotal": 32
       },
       "testCaseResults": [
@@ -9312,6 +9313,12 @@
           "testCaseApproved": false,
           "expected": "passed",
           "procedureResults": [
+            {
+              "procedureName": "IBMA_Color_Contrast_WCAG2AA:Pass_0,Fail_1,Potential_1",
+              "outcomes": [
+                "passed"
+              ]
+            },
             {
               "procedureName": "IBMA_Color_Contrast_WCAG2AA_PV:Pass_0,Potential_1",
               "outcomes": [
@@ -9328,6 +9335,12 @@
           "expected": "passed",
           "procedureResults": [
             {
+              "procedureName": "IBMA_Color_Contrast_WCAG2AA:Pass_0,Fail_1,Potential_1",
+              "outcomes": [
+                "inapplicable"
+              ]
+            },
+            {
               "procedureName": "IBMA_Color_Contrast_WCAG2AA_PV:Pass_0,Potential_1",
               "outcomes": [
                 "cantTell"
@@ -9342,6 +9355,12 @@
           "testCaseApproved": false,
           "expected": "passed",
           "procedureResults": [
+            {
+              "procedureName": "IBMA_Color_Contrast_WCAG2AA:Pass_0,Fail_1,Potential_1",
+              "outcomes": [
+                "inapplicable"
+              ]
+            },
             {
               "procedureName": "IBMA_Color_Contrast_WCAG2AA_PV:Pass_0,Potential_1",
               "outcomes": [
@@ -9358,6 +9377,12 @@
           "expected": "passed",
           "procedureResults": [
             {
+              "procedureName": "IBMA_Color_Contrast_WCAG2AA:Pass_0,Fail_1,Potential_1",
+              "outcomes": [
+                "failed"
+              ]
+            },
+            {
               "procedureName": "IBMA_Color_Contrast_WCAG2AA_PV:Pass_0,Potential_1",
               "outcomes": [
                 "passed"
@@ -9372,6 +9397,12 @@
           "testCaseApproved": false,
           "expected": "passed",
           "procedureResults": [
+            {
+              "procedureName": "IBMA_Color_Contrast_WCAG2AA:Pass_0,Fail_1,Potential_1",
+              "outcomes": [
+                "passed"
+              ]
+            },
             {
               "procedureName": "IBMA_Color_Contrast_WCAG2AA_PV:Pass_0,Potential_1",
               "outcomes": [
@@ -9388,6 +9419,12 @@
           "expected": "passed",
           "procedureResults": [
             {
+              "procedureName": "IBMA_Color_Contrast_WCAG2AA:Pass_0,Fail_1,Potential_1",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
               "procedureName": "IBMA_Color_Contrast_WCAG2AA_PV:Pass_0,Potential_1",
               "outcomes": [
                 "passed"
@@ -9402,6 +9439,12 @@
           "testCaseApproved": false,
           "expected": "passed",
           "procedureResults": [
+            {
+              "procedureName": "IBMA_Color_Contrast_WCAG2AA:Pass_0,Fail_1,Potential_1",
+              "outcomes": [
+                "failed"
+              ]
+            },
             {
               "procedureName": "IBMA_Color_Contrast_WCAG2AA_PV:Pass_0,Potential_1",
               "outcomes": [
@@ -9418,6 +9461,12 @@
           "expected": "passed",
           "procedureResults": [
             {
+              "procedureName": "IBMA_Color_Contrast_WCAG2AA:Pass_0,Fail_1,Potential_1",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
               "procedureName": "IBMA_Color_Contrast_WCAG2AA_PV:Pass_0,Potential_1",
               "outcomes": [
                 "passed"
@@ -9432,6 +9481,12 @@
           "testCaseApproved": false,
           "expected": "passed",
           "procedureResults": [
+            {
+              "procedureName": "IBMA_Color_Contrast_WCAG2AA:Pass_0,Fail_1,Potential_1",
+              "outcomes": [
+                "passed"
+              ]
+            },
             {
               "procedureName": "IBMA_Color_Contrast_WCAG2AA_PV:Pass_0,Potential_1",
               "outcomes": [
@@ -9448,6 +9503,12 @@
           "expected": "passed",
           "procedureResults": [
             {
+              "procedureName": "IBMA_Color_Contrast_WCAG2AA:Pass_0,Fail_1,Potential_1",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
               "procedureName": "IBMA_Color_Contrast_WCAG2AA_PV:Pass_0,Potential_1",
               "outcomes": [
                 "passed"
@@ -9462,6 +9523,12 @@
           "testCaseApproved": false,
           "expected": "passed",
           "procedureResults": [
+            {
+              "procedureName": "IBMA_Color_Contrast_WCAG2AA:Pass_0,Fail_1,Potential_1",
+              "outcomes": [
+                "passed"
+              ]
+            },
             {
               "procedureName": "IBMA_Color_Contrast_WCAG2AA_PV:Pass_0,Potential_1",
               "outcomes": [
@@ -9478,6 +9545,12 @@
           "expected": "failed",
           "procedureResults": [
             {
+              "procedureName": "IBMA_Color_Contrast_WCAG2AA:Pass_0,Fail_1,Potential_1",
+              "outcomes": [
+                "failed"
+              ]
+            },
+            {
               "procedureName": "IBMA_Color_Contrast_WCAG2AA_PV:Pass_0,Potential_1",
               "outcomes": [
                 "passed"
@@ -9492,6 +9565,12 @@
           "testCaseApproved": false,
           "expected": "failed",
           "procedureResults": [
+            {
+              "procedureName": "IBMA_Color_Contrast_WCAG2AA:Pass_0,Fail_1,Potential_1",
+              "outcomes": [
+                "inapplicable"
+              ]
+            },
             {
               "procedureName": "IBMA_Color_Contrast_WCAG2AA_PV:Pass_0,Potential_1",
               "outcomes": [
@@ -9508,6 +9587,12 @@
           "expected": "failed",
           "procedureResults": [
             {
+              "procedureName": "IBMA_Color_Contrast_WCAG2AA:Pass_0,Fail_1,Potential_1",
+              "outcomes": [
+                "inapplicable"
+              ]
+            },
+            {
               "procedureName": "IBMA_Color_Contrast_WCAG2AA_PV:Pass_0,Potential_1",
               "outcomes": [
                 "cantTell"
@@ -9522,6 +9607,12 @@
           "testCaseApproved": false,
           "expected": "failed",
           "procedureResults": [
+            {
+              "procedureName": "IBMA_Color_Contrast_WCAG2AA:Pass_0,Fail_1,Potential_1",
+              "outcomes": [
+                "failed"
+              ]
+            },
             {
               "procedureName": "IBMA_Color_Contrast_WCAG2AA_PV:Pass_0,Potential_1",
               "outcomes": [
@@ -9538,6 +9629,12 @@
           "expected": "failed",
           "procedureResults": [
             {
+              "procedureName": "IBMA_Color_Contrast_WCAG2AA:Pass_0,Fail_1,Potential_1",
+              "outcomes": [
+                "failed"
+              ]
+            },
+            {
               "procedureName": "IBMA_Color_Contrast_WCAG2AA_PV:Pass_0,Potential_1",
               "outcomes": [
                 "passed"
@@ -9552,6 +9649,12 @@
           "testCaseApproved": false,
           "expected": "failed",
           "procedureResults": [
+            {
+              "procedureName": "IBMA_Color_Contrast_WCAG2AA:Pass_0,Fail_1,Potential_1",
+              "outcomes": [
+                "failed"
+              ]
+            },
             {
               "procedureName": "IBMA_Color_Contrast_WCAG2AA_PV:Pass_0,Potential_1",
               "outcomes": [
@@ -9568,6 +9671,12 @@
           "expected": "failed",
           "procedureResults": [
             {
+              "procedureName": "IBMA_Color_Contrast_WCAG2AA:Pass_0,Fail_1,Potential_1",
+              "outcomes": [
+                "inapplicable"
+              ]
+            },
+            {
               "procedureName": "IBMA_Color_Contrast_WCAG2AA_PV:Pass_0,Potential_1",
               "outcomes": [
                 "cantTell"
@@ -9582,6 +9691,12 @@
           "testCaseApproved": false,
           "expected": "failed",
           "procedureResults": [
+            {
+              "procedureName": "IBMA_Color_Contrast_WCAG2AA:Pass_0,Fail_1,Potential_1",
+              "outcomes": [
+                "failed"
+              ]
+            },
             {
               "procedureName": "IBMA_Color_Contrast_WCAG2AA_PV:Pass_0,Potential_1",
               "outcomes": [
@@ -9598,6 +9713,12 @@
           "expected": "failed",
           "procedureResults": [
             {
+              "procedureName": "IBMA_Color_Contrast_WCAG2AA:Pass_0,Fail_1,Potential_1",
+              "outcomes": [
+                "failed"
+              ]
+            },
+            {
               "procedureName": "IBMA_Color_Contrast_WCAG2AA_PV:Pass_0,Potential_1",
               "outcomes": [
                 "passed"
@@ -9612,6 +9733,12 @@
           "testCaseApproved": false,
           "expected": "failed",
           "procedureResults": [
+            {
+              "procedureName": "IBMA_Color_Contrast_WCAG2AA:Pass_0,Fail_1,Potential_1",
+              "outcomes": [
+                "failed"
+              ]
+            },
             {
               "procedureName": "IBMA_Color_Contrast_WCAG2AA_PV:Pass_0,Potential_1",
               "outcomes": [
@@ -9628,6 +9755,12 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
+              "procedureName": "IBMA_Color_Contrast_WCAG2AA:Pass_0,Fail_1,Potential_1",
+              "outcomes": [
+                "inapplicable"
+              ]
+            },
+            {
               "procedureName": "IBMA_Color_Contrast_WCAG2AA_PV:Pass_0,Potential_1",
               "outcomes": [
                 "passed"
@@ -9642,6 +9775,12 @@
           "testCaseApproved": false,
           "expected": "inapplicable",
           "procedureResults": [
+            {
+              "procedureName": "IBMA_Color_Contrast_WCAG2AA:Pass_0,Fail_1,Potential_1",
+              "outcomes": [
+                "inapplicable"
+              ]
+            },
             {
               "procedureName": "IBMA_Color_Contrast_WCAG2AA_PV:Pass_0,Potential_1",
               "outcomes": [
@@ -9658,6 +9797,12 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
+              "procedureName": "IBMA_Color_Contrast_WCAG2AA:Pass_0,Fail_1,Potential_1",
+              "outcomes": [
+                "cantTell"
+              ]
+            },
+            {
               "procedureName": "IBMA_Color_Contrast_WCAG2AA_PV:Pass_0,Potential_1",
               "outcomes": [
                 "passed"
@@ -9673,6 +9818,12 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
+              "procedureName": "IBMA_Color_Contrast_WCAG2AA:Pass_0,Fail_1,Potential_1",
+              "outcomes": [
+                "inapplicable"
+              ]
+            },
+            {
               "procedureName": "IBMA_Color_Contrast_WCAG2AA_PV:Pass_0,Potential_1",
               "outcomes": [
                 "passed"
@@ -9681,16 +9832,22 @@
           ]
         },
         {
-          "testcaseId": "8df570a7bb69487e5f3b5d07a7af45cc881dc449",
+          "testcaseId": "20f9cd78dd0fa87ee8d40ea3ed35a1fe3ff66508",
           "testCaseName": "Inapplicable Example 5",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/8df570a7bb69487e5f3b5d07a7af45cc881dc449.html",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/20f9cd78dd0fa87ee8d40ea3ed35a1fe3ff66508.html",
           "testCaseApproved": false,
           "expected": "inapplicable",
           "procedureResults": [
             {
+              "procedureName": "IBMA_Color_Contrast_WCAG2AA:Pass_0,Fail_1,Potential_1",
+              "outcomes": [
+                "untested"
+              ]
+            },
+            {
               "procedureName": "IBMA_Color_Contrast_WCAG2AA_PV:Pass_0,Potential_1",
               "outcomes": [
-                "passed"
+                "untested"
               ]
             }
           ]
@@ -9702,6 +9859,12 @@
           "testCaseApproved": false,
           "expected": "inapplicable",
           "procedureResults": [
+            {
+              "procedureName": "IBMA_Color_Contrast_WCAG2AA:Pass_0,Fail_1,Potential_1",
+              "outcomes": [
+                "passed"
+              ]
+            },
             {
               "procedureName": "IBMA_Color_Contrast_WCAG2AA_PV:Pass_0,Potential_1",
               "outcomes": [
@@ -9718,6 +9881,12 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
+              "procedureName": "IBMA_Color_Contrast_WCAG2AA:Pass_0,Fail_1,Potential_1",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
               "procedureName": "IBMA_Color_Contrast_WCAG2AA_PV:Pass_0,Potential_1",
               "outcomes": [
                 "passed"
@@ -9732,6 +9901,12 @@
           "testCaseApproved": false,
           "expected": "inapplicable",
           "procedureResults": [
+            {
+              "procedureName": "IBMA_Color_Contrast_WCAG2AA:Pass_0,Fail_1,Potential_1",
+              "outcomes": [
+                "inapplicable"
+              ]
+            },
             {
               "procedureName": "IBMA_Color_Contrast_WCAG2AA_PV:Pass_0,Potential_1",
               "outcomes": [
@@ -9748,6 +9923,12 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
+              "procedureName": "IBMA_Color_Contrast_WCAG2AA:Pass_0,Fail_1,Potential_1",
+              "outcomes": [
+                "inapplicable"
+              ]
+            },
+            {
               "procedureName": "IBMA_Color_Contrast_WCAG2AA_PV:Pass_0,Potential_1",
               "outcomes": [
                 "passed"
@@ -9763,6 +9944,12 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
+              "procedureName": "IBMA_Color_Contrast_WCAG2AA:Pass_0,Fail_1,Potential_1",
+              "outcomes": [
+                "inapplicable"
+              ]
+            },
+            {
               "procedureName": "IBMA_Color_Contrast_WCAG2AA_PV:Pass_0,Potential_1",
               "outcomes": [
                 "passed"
@@ -9777,6 +9964,12 @@
           "testCaseApproved": false,
           "expected": "inapplicable",
           "procedureResults": [
+            {
+              "procedureName": "IBMA_Color_Contrast_WCAG2AA:Pass_0,Fail_1,Potential_1",
+              "outcomes": [
+                "inapplicable"
+              ]
+            },
             {
               "procedureName": "IBMA_Color_Contrast_WCAG2AA_PV:Pass_0,Potential_1",
               "outcomes": [
