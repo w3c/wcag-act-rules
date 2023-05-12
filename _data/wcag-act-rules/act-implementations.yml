@@ -106,6 +106,14 @@
     Like all linters, Ember-template-lint does static code analysis, and so does
     not run scripts or render CSS.
 
+- name: Oracle Accessibility Guidelines
+  vendor: Oracle
+  uniqueKey: oracle
+  type: Test methodology
+  standards:
+    - WCAG 2.0 Level A, AA
+  jsonReport: "http://127.0.0.1:8080/oracle.json"
+
 - name: QualWeb
   homepage: http://qualweb.di.fc.ul.pt/evaluator/
   version: 3.0.0
