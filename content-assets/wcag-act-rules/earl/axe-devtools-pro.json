@@ -15470,7 +15470,7 @@
       },
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:failed"
+        "outcome": "earl:cantTell"
       },
       "test": {
         "@type": "TestCase",
@@ -22632,6 +22632,29 @@
       "result": {
         "@type": "TestResult",
         "outcome": "earl:passed"
+      },
+      "test": {
+        "@type": "TestCase",
+        "title": "frame-title-unique",
+        "@id": "https://dequeuniversity.com/rules/axe/4.7/frame-title-unique?application=axeAPI",
+        "isPartOf": [
+          "WCAG2:name-role-value"
+        ]
+      }
+    },
+    {
+      "@type": "Assertion",
+      "mode": "earl:automatic",
+      "subject": {
+        "@type": [
+          "earl:TestSubject",
+          "sch:WebPage"
+        ],
+        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/4b1c6c/f8d3c1afa946cf4fc97ef799aad6d9d090de6e8f.html"
+      },
+      "result": {
+        "@type": "TestResult",
+        "outcome": "earl:inapplicable"
       },
       "test": {
         "@type": "TestCase",

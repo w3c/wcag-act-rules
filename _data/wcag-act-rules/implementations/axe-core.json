@@ -2,7 +2,7 @@
   "vendor": "Deque Systems",
   "name": "Axe-core",
   "version": "4.6.0",
-  "lastModified": "12 May 2023",
+  "lastModified": "13 May 2023",
   "approvedRules": {
     "complete": 22,
     "partial": 0,
@@ -6480,8 +6480,8 @@
       "ruleName": "ARIA required context role",
       "ruleApproved": false,
       "procedureNames": [
-        "aria-required-children",
-        "aria-required-parent"
+        "aria-required-parent",
+        "aria-required-children"
       ],
       "consistency": "complete",
       "accessibilityRequirements": {
@@ -6494,9 +6494,9 @@
         ]
       },
       "coverage": {
-        "covered": 15,
+        "covered": 14,
         "untested": 0,
-        "cantTell": 0,
+        "cantTell": 1,
         "testCaseTotal": 15
       },
       "testCaseResults": [
@@ -6508,15 +6508,15 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "aria-required-children",
+              "procedureName": "aria-required-parent",
               "outcomes": [
+                "passed",
                 "passed"
               ]
             },
             {
-              "procedureName": "aria-required-parent",
+              "procedureName": "aria-required-children",
               "outcomes": [
-                "passed",
                 "passed"
               ]
             }
@@ -6530,16 +6530,16 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "aria-required-children",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
               "procedureName": "aria-required-parent",
               "outcomes": [
                 "passed",
                 "passed"
+              ]
+            },
+            {
+              "procedureName": "aria-required-children",
+              "outcomes": [
+                "inapplicable"
               ]
             }
           ]
@@ -6552,15 +6552,15 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "aria-required-children",
+              "procedureName": "aria-required-parent",
               "outcomes": [
+                "passed",
                 "passed"
               ]
             },
             {
-              "procedureName": "aria-required-parent",
+              "procedureName": "aria-required-children",
               "outcomes": [
-                "passed",
                 "passed"
               ]
             }
@@ -6574,15 +6574,15 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "aria-required-children",
+              "procedureName": "aria-required-parent",
               "outcomes": [
+                "passed",
                 "passed"
               ]
             },
             {
-              "procedureName": "aria-required-parent",
+              "procedureName": "aria-required-children",
               "outcomes": [
-                "passed",
                 "passed"
               ]
             }
@@ -6596,16 +6596,16 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "aria-required-children",
-              "outcomes": [
-                "passed"
-              ]
-            },
-            {
               "procedureName": "aria-required-parent",
               "outcomes": [
                 "passed",
                 "passed",
+                "passed"
+              ]
+            },
+            {
+              "procedureName": "aria-required-children",
+              "outcomes": [
                 "passed"
               ]
             }
@@ -6619,15 +6619,15 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "aria-required-children",
+              "procedureName": "aria-required-parent",
               "outcomes": [
+                "passed",
                 "passed"
               ]
             },
             {
-              "procedureName": "aria-required-parent",
+              "procedureName": "aria-required-children",
               "outcomes": [
-                "passed",
                 "passed"
               ]
             }
@@ -6641,15 +6641,15 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "aria-required-children",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
               "procedureName": "aria-required-parent",
               "outcomes": [
                 "failed"
+              ]
+            },
+            {
+              "procedureName": "aria-required-children",
+              "outcomes": [
+                "inapplicable"
               ]
             }
           ]
@@ -6662,15 +6662,15 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "aria-required-children",
+              "procedureName": "aria-required-parent",
               "outcomes": [
+                "failed",
                 "failed"
               ]
             },
             {
-              "procedureName": "aria-required-parent",
+              "procedureName": "aria-required-children",
               "outcomes": [
-                "failed",
                 "failed"
               ]
             }
@@ -6684,16 +6684,16 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "aria-required-children",
-              "outcomes": [
-                "failed"
-              ]
-            },
-            {
               "procedureName": "aria-required-parent",
               "outcomes": [
                 "passed",
                 "passed"
+              ]
+            },
+            {
+              "procedureName": "aria-required-children",
+              "outcomes": [
+                "failed"
               ]
             }
           ]
@@ -6706,16 +6706,16 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "aria-required-children",
-              "outcomes": [
-                "failed"
-              ]
-            },
-            {
               "procedureName": "aria-required-parent",
               "outcomes": [
                 "failed",
                 "failed"
+              ]
+            },
+            {
+              "procedureName": "aria-required-children",
+              "outcomes": [
+                "cantTell"
               ]
             }
           ]
@@ -6728,13 +6728,13 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "aria-required-children",
+              "procedureName": "aria-required-parent",
               "outcomes": [
                 "inapplicable"
               ]
             },
             {
-              "procedureName": "aria-required-parent",
+              "procedureName": "aria-required-children",
               "outcomes": [
                 "inapplicable"
               ]
@@ -6749,13 +6749,13 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "aria-required-children",
+              "procedureName": "aria-required-parent",
               "outcomes": [
                 "inapplicable"
               ]
             },
             {
-              "procedureName": "aria-required-parent",
+              "procedureName": "aria-required-children",
               "outcomes": [
                 "inapplicable"
               ]
@@ -6770,13 +6770,13 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "aria-required-children",
+              "procedureName": "aria-required-parent",
               "outcomes": [
                 "inapplicable"
               ]
             },
             {
-              "procedureName": "aria-required-parent",
+              "procedureName": "aria-required-children",
               "outcomes": [
                 "inapplicable"
               ]
@@ -6791,13 +6791,13 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "aria-required-children",
+              "procedureName": "aria-required-parent",
               "outcomes": [
                 "inapplicable"
               ]
             },
             {
-              "procedureName": "aria-required-parent",
+              "procedureName": "aria-required-children",
               "outcomes": [
                 "inapplicable"
               ]
@@ -6812,15 +6812,15 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "aria-required-children",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
               "procedureName": "aria-required-parent",
               "outcomes": [
                 "passed"
+              ]
+            },
+            {
+              "procedureName": "aria-required-children",
+              "outcomes": [
+                "inapplicable"
               ]
             }
           ]
@@ -9923,8 +9923,8 @@
         ]
       },
       "coverage": {
-        "covered": 10,
-        "untested": 1,
+        "covered": 11,
+        "untested": 0,
         "cantTell": 10,
         "testCaseTotal": 23
       },
@@ -9970,7 +9970,7 @@
             {
               "procedureName": "frame-title-unique",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
