@@ -10,8 +10,8 @@
     "untested": 0
   },
   "proposedRules": {
-    "complete": 12,
-    "partial": 5,
+    "complete": 11,
+    "partial": 6,
     "inconsistent": 7,
     "untested": 42
   },
@@ -5868,7 +5868,7 @@
       "procedureNames": [
         "sia-r42"
       ],
-      "consistency": "complete",
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -5879,8 +5879,8 @@
         ]
       },
       "coverage": {
-        "covered": 15,
-        "untested": 0,
+        "covered": 14,
+        "untested": 1,
         "cantTell": 0,
         "testCaseTotal": 15
       },
@@ -6081,16 +6081,16 @@
           ]
         },
         {
-          "testcaseId": "84dd1831c0682a800e6af2fe992fb3d69d4222eb",
+          "testcaseId": "3457868b79bad5b8cf2320c88cd5f542f9388cda",
           "testCaseName": "Inapplicable Example 4",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ff89c9/84dd1831c0682a800e6af2fe992fb3d69d4222eb.html",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ff89c9/3457868b79bad5b8cf2320c88cd5f542f9388cda.html",
           "testCaseApproved": false,
           "expected": "inapplicable",
           "procedureResults": [
             {
               "procedureName": "sia-r42",
               "outcomes": [
-                "inapplicable"
+                "untested"
               ]
             }
           ]
@@ -10632,8 +10632,8 @@
         ]
       },
       "coverage": {
-        "covered": 27,
-        "untested": 0,
+        "covered": 26,
+        "untested": 1,
         "cantTell": 3,
         "testCaseTotal": 32
       },
@@ -11014,16 +11014,16 @@
           ]
         },
         {
-          "testcaseId": "8df570a7bb69487e5f3b5d07a7af45cc881dc449",
+          "testcaseId": "20f9cd78dd0fa87ee8d40ea3ed35a1fe3ff66508",
           "testCaseName": "Inapplicable Example 5",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/8df570a7bb69487e5f3b5d07a7af45cc881dc449.html",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/20f9cd78dd0fa87ee8d40ea3ed35a1fe3ff66508.html",
           "testCaseApproved": false,
           "expected": "inapplicable",
           "procedureResults": [
             {
               "procedureName": "sia-r69",
               "outcomes": [
-                "inapplicable"
+                "untested"
               ]
             }
           ]
