@@ -18,7 +18,6 @@ jobs:
       DESTINATION_REPO: w3c/wai-evaluation-tools-list
       DESTINATION_BRANCH: act-tests
       DESTINATION_DIR: _data/wai-evaluation-tools-list/act-implementations
-      COMMIT_MESSAGE: ACT Implementation updates from https://github.com/${{ github.repository }}/commit/${{ github.sha }}
 
     steps:
       - name: Checkout
@@ -33,14 +32,16 @@ jobs:
           echo "Cloning $DESTINATION_REPO git repository"
           git clone --single-branch --branch $DESTINATION_BRANCH "https://$API_TOKEN_GITHUB@github.com/$DESTINATION_REPO.git" evaluation-tools
 
-      - name: Copy ${{ env.SOURCE_FILENAME }}
+      - name: Copy ${{ env.SOURCE_DIR }}
         # Cleanup first, we don't want to keep around old files
         run: |
-          rm -rf "evaluation-tools/$DESTINATION_PATH"
-          mkdir -p "evaluation-tools/$DESTINATION_PATH"
-          cp -R "act-rules/$SOURCE_PATH" "evaluation-tools/$DESTINATION_PATH"
+          rm -rf "evaluation-tools/$DESTINATION_DIR"
+          mkdir -p "evaluation-tools/$DESTINATION_DIR"
+          cp -R "act-rules/$SOURCE_DIR" "evaluation-tools/$DESTINATION_DIR"
        
       - name: Commit and push
+        env: 
+          COMMIT_MESSAGE: ACT updates from https://github.com/${{ github.repository }}/commit/${{ github.sha }}
         run: |
           echo "Commit"
           cd evaluation-tools
