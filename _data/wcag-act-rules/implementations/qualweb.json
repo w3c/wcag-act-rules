@@ -2,7 +2,7 @@
   "vendor": "LASIGE, Faculdade de Ciências da Universidade de Lisboa",
   "name": "QualWeb",
   "version": "3.0.0",
-  "lastModified": "8 May 2023",
+  "lastModified": "16 May 2023",
   "approvedRules": {
     "complete": 20,
     "partial": 2,
@@ -10854,8 +10854,8 @@
       },
       "coverage": {
         "covered": 1,
-        "untested": 2,
-        "cantTell": 6,
+        "untested": 0,
+        "cantTell": 8,
         "testCaseTotal": 9
       },
       "testCaseResults": [
@@ -10959,7 +10959,7 @@
             {
               "procedureName": "Error message describes invalid form field value",
               "outcomes": [
-                "untested"
+                "cantTell"
               ]
             }
           ]
@@ -10974,7 +10974,7 @@
             {
               "procedureName": "Error message describes invalid form field value",
               "outcomes": [
-                "untested"
+                "cantTell"
               ]
             }
           ]
