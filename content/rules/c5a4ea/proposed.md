@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> c5a4ea</p>
-  <p><strong>Date:</strong> Updated 16 January 2023</p>
+  <p><strong>Date:</strong> Updated 16 May 2023</p>
   <p><strong>Authors:</strong> <a href="https://www.linkedin.com/in/brianbors/">Brian Bors</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
   
@@ -21,7 +21,7 @@ rule_meta:
   rule_type: composite
   description: |
     This rule checks that `video` elements with audio have an alternative for the video content as audio or as text.
-  last_modified: 16 January 2023
+  last_modified: 16 May 2023
   scs_tested:
     - handle: Audio Description or Media Alternative (Prerecorded)
       num: 1.2.3
@@ -78,30 +78,6 @@ This rule is designed specifically for [1.2.3 Audio Description or Media Alterna
     </ul>
   </details></li>
   <li><details>
-    <summary><span>1.2.5 Audio Description (Prerecorded) (Level AA)</span></summary>
-    <ul>
-      <li><a href="https://www.w3.org/TR/WCAG21/#audio-description-prerecorded">Learn more about 1.2.5 Audio Description (Prerecorded)</a></li>
-      <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level AA and higher.</li>
-      <li>Outcome mapping: <ul>
-        <li>Any <code>failed</code> outcomes: success criterion is not satisfied</li>
-        <li>All <code>passed</code> outcomes: success criterion needs further testing</li>
-        <li>An <code>inapplicable</code> outcome: success criterion needs further testing</li>
-      </ul></li>
-    </ul>
-  </details></li>
-  <li><details>
-    <summary><span>1.2.8 Media Alternative (Prerecorded) (Level AAA)</span></summary>
-    <ul>
-      <li><a href="https://www.w3.org/TR/WCAG21/#media-alternative-prerecorded">Learn more about 1.2.8 Media Alternative (Prerecorded)</a></li>
-      <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level AAA.</li>
-      <li>Outcome mapping: <ul>
-        <li>Any <code>failed</code> outcomes: success criterion is not satisfied</li>
-        <li>All <code>passed</code> outcomes: success criterion needs further testing</li>
-        <li>An <code>inapplicable</code> outcome: success criterion needs further testing</li>
-      </ul></li>
-    </ul>
-  </details></li>
-  <li><details>
     <summary><span>G8: Providing a movie with extended audio descriptions</span></summary>
     <ul>
       <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G8">Learn more about technique G8</a></li>
@@ -149,6 +125,19 @@ This rule is designed specifically for [1.2.3 Audio Description or Media Alterna
       </ul></li>
     </ul>
   </details></li>
+</ul>
+
+### Secondary Requirements
+
+This rule is related to the following accessibility requirements, but was 
+not designed to test this requirements directly. These 
+[secondary requirements](https://w3c.github.io/wcag-act/act-rules-format.html#secondary-requirements)
+can either be stricter than the rule requires, or may be satisfied in ways 
+not tested by the rule:
+
+<ul>
+  <li><a href="https://www.w3.org/TR/WCAG21/#audio-description-prerecorded">1.2.5 Audio Description (Prerecorded) (Level AA)</a></li>
+  <li><a href="https://www.w3.org/TR/WCAG21/#media-alternative-prerecorded">1.2.8 Media Alternative (Prerecorded) (Level AAA)</a></li>
 </ul>
 
 ## Input Rules

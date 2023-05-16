@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 5c01ea</p>
-  <p><strong>Date:</strong> Updated 28 February 2023</p>
+  <p><strong>Date:</strong> Updated 16 May 2023</p>
   <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/Jym77">Jean-Yves Moyen</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
   
@@ -21,7 +21,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that WAI-ARIA states or properties are allowed for the element they are specified on.
-  last_modified: 28 February 2023
+  last_modified: 16 May 2023
 ---
 
 ## Applicability
@@ -85,30 +85,19 @@ Assessing the value of the attribute is out of scope for this rule.
     </ul>
   </details></li>
   <li>This rule is <strong>not required</strong> for conformance to WCAG 2.1 at any level.</li>
-  <li><details>
-    <summary><span>1.3.1 Info and Relationships (Level A)</span></summary>
-    <ul>
-      <li><a href="https://www.w3.org/TR/WCAG21/#info-and-relationships">Learn more about 1.3.1 Info and Relationships</a></li>
-      <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level A and higher.</li>
-      <li>Outcome mapping: <ul>
-        <li>Any <code>failed</code> outcomes: success criterion is not satisfied</li>
-        <li>All <code>passed</code> outcomes: success criterion </li>
-        <li>An <code>inapplicable</code> outcome: success criterion </li>
-      </ul></li>
-    </ul>
-  </details></li>
-  <li><details>
-    <summary><span>4.1.2 Name, Role, Value (Level A)</span></summary>
-    <ul>
-      <li><a href="https://www.w3.org/TR/WCAG21/#name-role-value">Learn more about 4.1.2 Name, Role, Value</a></li>
-      <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level A and higher.</li>
-      <li>Outcome mapping: <ul>
-        <li>Any <code>failed</code> outcomes: success criterion is not satisfied</li>
-        <li>All <code>passed</code> outcomes: success criterion </li>
-        <li>An <code>inapplicable</code> outcome: success criterion </li>
-      </ul></li>
-    </ul>
-  </details></li>
+</ul>
+
+### Secondary Requirements
+
+This rule is related to the following accessibility requirements, but was 
+not designed to test this requirements directly. These 
+[secondary requirements](https://w3c.github.io/wcag-act/act-rules-format.html#secondary-requirements)
+can either be stricter than the rule requires, or may be satisfied in ways 
+not tested by the rule:
+
+<ul>
+  <li><a href="https://www.w3.org/TR/WCAG21/#info-and-relationships">1.3.1 Info and Relationships (Level A)</a></li>
+  <li><a href="https://www.w3.org/TR/WCAG21/#name-role-value">4.1.2 Name, Role, Value (Level A)</a></li>
 </ul>
 
 ## Input Aspects

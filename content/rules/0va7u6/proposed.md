@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 0va7u6</p>
-  <p><strong>Date:</strong> Updated 16 January 2023</p>
+  <p><strong>Date:</strong> Updated 16 May 2023</p>
   <p><strong>Authors:</strong> <a href="https://github.com/carlosapaduarte">Carlos Duarte</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
   
@@ -21,7 +21,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that images of text are not used
-  last_modified: 16 January 2023
+  last_modified: 16 May 2023
   scs_tested:
     - handle: Images of Text
       num: 1.4.5
@@ -74,18 +74,18 @@ This rule is designed specifically for [SC 1.4.5 Images of Text][sc1.4.5] which 
       </ul></li>
     </ul>
   </details></li>
-  <li><details>
-    <summary><span>1.4.9 Images of Text (No Exception) (Level AAA)</span></summary>
-    <ul>
-      <li><a href="https://www.w3.org/TR/WCAG21/#images-of-text-no-exception">Learn more about 1.4.9 Images of Text (No Exception)</a></li>
-      <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level AAA.</li>
-      <li>Outcome mapping: <ul>
-        <li>Any <code>failed</code> outcomes: success criterion is not satisfied</li>
-        <li>All <code>passed</code> outcomes: success criterion needs further testing</li>
-        <li>An <code>inapplicable</code> outcome: success criterion needs further testing</li>
-      </ul></li>
-    </ul>
-  </details></li>
+</ul>
+
+### Secondary Requirements
+
+This rule is related to the following accessibility requirements, but was 
+not designed to test this requirements directly. These 
+[secondary requirements](https://w3c.github.io/wcag-act/act-rules-format.html#secondary-requirements)
+can either be stricter than the rule requires, or may be satisfied in ways 
+not tested by the rule:
+
+<ul>
+  <li><a href="https://www.w3.org/TR/WCAG21/#images-of-text-no-exception">1.4.9 Images of Text (No Exception) (Level AAA)</a></li>
 </ul>
 
 ## Input Aspects

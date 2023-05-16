@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 0ssw9k</p>
-  <p><strong>Date:</strong> Updated 16 January 2023</p>
+  <p><strong>Date:</strong> Updated 16 May 2023</p>
   <p><strong>Authors:</strong> <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -19,7 +19,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that scrollable elements can be scrolled by keyboard
-  last_modified: 16 January 2023
+  last_modified: 16 May 2023
   scs_tested:
     - handle: Keyboard
       num: 2.1.1
@@ -74,18 +74,6 @@ This rule only applies to elements who scroll content in the same document. Elem
     </ul>
   </details></li>
   <li><details>
-    <summary><span>2.1.3 Keyboard (No Exception) (Level AAA)</span></summary>
-    <ul>
-      <li><a href="https://www.w3.org/TR/WCAG21/#keyboard-no-exception">Learn more about 2.1.3 Keyboard (No Exception)</a></li>
-      <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level AAA.</li>
-      <li>Outcome mapping: <ul>
-        <li>Any <code>failed</code> outcomes: success criterion is not satisfied</li>
-        <li>All <code>passed</code> outcomes: success criterion needs further testing</li>
-        <li>An <code>inapplicable</code> outcome: success criterion needs further testing</li>
-      </ul></li>
-    </ul>
-  </details></li>
-  <li><details>
     <summary><span>G202: Ensuring keyboard control for all functionality</span></summary>
     <ul>
       <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G202">Learn more about technique G202</a></li>
@@ -97,6 +85,18 @@ This rule only applies to elements who scroll content in the same document. Elem
       </ul></li>
     </ul>
   </details></li>
+</ul>
+
+### Secondary Requirements
+
+This rule is related to the following accessibility requirements, but was 
+not designed to test this requirements directly. These 
+[secondary requirements](https://w3c.github.io/wcag-act/act-rules-format.html#secondary-requirements)
+can either be stricter than the rule requires, or may be satisfied in ways 
+not tested by the rule:
+
+<ul>
+  <li><a href="https://www.w3.org/TR/WCAG21/#keyboard-no-exception">2.1.3 Keyboard (No Exception) (Level AAA)</a></li>
 </ul>
 
 ## Input Aspects
