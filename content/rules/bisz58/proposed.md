@@ -124,7 +124,7 @@ can either be stricter than the rule requires, or may be satisfied in ways
 not tested by the rule:
 
 <ul>
-  <li><a href="https://www.w3.org/TR/WCAG21/#timing-adjustable">2.2.1 Timing Adjustable (Level A)</a>: Because this rule is stricter than this success criterion, failing this rule often results in this success criterion being not satisfied.</li>
+  <li><a href="https://www.w3.org/TR/WCAG21/#timing-adjustable">2.2.1 Timing Adjustable (Level A)</a>: Because it allows no exceptions, this rule is stricter than this success criterion. Failing this rule often results in this success criterion being not satisfied.</li>
 </ul>
 
 ## Input Aspects

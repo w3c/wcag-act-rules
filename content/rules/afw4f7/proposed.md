@@ -93,7 +93,7 @@ can either be stricter than the rule requires, or may be satisfied in ways
 not tested by the rule:
 
 <ul>
-  <li><a href="https://www.w3.org/TR/WCAG21/#contrast-enhanced">1.4.6 Contrast (Enhanced) (Level AAA)</a>: Because success criterion has a stricter minimum contrast than the rule, pages that fail this rule do not satisfy this success criterion. This is also why some passed examples do not satisfy this success criterion.</li>
+  <li><a href="https://www.w3.org/TR/WCAG21/#contrast-enhanced">1.4.6 Contrast (Enhanced) (Level AAA)</a>: Because it has a higher minimum contrast, this success criterion is stricter than the rule. This is also why some passed examples do not satisfy this success criterion.</li>
 </ul>
 
 ## Input Aspects
