@@ -13,22 +13,22 @@ layout: standalone_resource
     to test 
     {% for sc in page.rule_meta.scs_tested %}
     <strong>{{ sc.num }}: {{ sc.handle }} (Level {{ sc.level }})</strong>{% if forloop.last == false %}, {% endif %}
-    {% endfor %}
-    {% endif %}
-    {% if page.rule_meta.composite_rules.size > 0 %}
+    {%- endfor %}
+    {%- endif %}
+    {%- if page.rule_meta.composite_rules.size > 0 -%}
       . Its outcome is used in the following composite rule
       {%- if page.rule_meta.composite_rules.size > 1 -%} s {%- endif %}:
-    {% endif %}
+    {%- endif %}
   </p>
-  {% if page.rule_meta.composite_rules and page.rule_meta.composite_rules.size > 0 %}
+  {%- if page.rule_meta.composite_rules and page.rule_meta.composite_rules.size > 0 %}
   <ul>
-    {% for compositeRule in page.rule_meta.composite_rules %}
+    {%- for compositeRule in page.rule_meta.composite_rules %}
     <li><a href="{{
       '/standards-guidelines/act/rules/' | append: compositeRule[0] | append: '/proposed' | relative_url 
     }}">{{compositeRule[1] }}</a></li>
-    {% endfor %}
+    {%- endfor %}
   </ul>
-  {% endif %}
+  {%- endif %}
   </div>
  </aside>
 
