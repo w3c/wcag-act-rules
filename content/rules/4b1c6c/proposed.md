@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 4b1c6c</p>
-  <p><strong>Date:</strong> Updated 12 July 2022</p>
+  <p><strong>Date:</strong> Updated 18 May 2023</p>
   <p><strong>Authors:</strong> <a href="https://github.com/audreymaniez">Audrey Maniez</a>, <a href="https://github.com/Jym77">Jean-Yves Moyen</a>, <a href="https://github.com/jkodu">Jey Nandakumar</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -19,7 +19,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that `iframe` elements with identical accessible names embed the same resource or equivalent resources.
-  last_modified: 12 July 2022
+  last_modified: 18 May 2023
   scs_tested:
     - handle: Name, Role, Value
       num: 4.1.2
@@ -82,6 +82,161 @@ The following aspects are required in using this rule.
 - [Language](https://www.w3.org/TR/act-rules-aspects/#input-aspects-text)
 
 ## Test Cases
+
+<details class="act-inline-assets" markdown="block">
+<summary>These HTML files are used in several examples:</summary>
+
+File [`/test-assets/iframe-unique-name-4b1c6c/page-one.html`](https://w3.org/WAI/content-assets/wcag-act-rules/test-assets/iframe-unique-name-4b1c6c/page-one.html):
+
+```html
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>Page One</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+	</head>
+	<body>
+		<!-- Breadcrumb -->
+		Root > Page One
+		<nav>
+			<ul>
+				<li>Home</li>
+				<li>Contact</li>
+			</ul>
+		</nav>
+	</body>
+</html>
+```
+
+File [`/test-assets/iframe-unique-name-4b1c6c/sub-dir/page-one.html`](https://w3.org/WAI/content-assets/wcag-act-rules/test-assets/iframe-unique-name-4b1c6c/sub-dir/page-one.html):
+
+```html
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>Page One</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+	</head>
+	<body>
+		<!-- Breadcrumb -->
+		Root > Sub Dir > Page One
+		<nav>
+			<ul>
+				<li>Home</li>
+				<li>Contact</li>
+			</ul>
+		</nav>
+	</body>
+</html>
+```
+
+File [`/test-assets/iframe-unique-name-4b1c6c/page-one-copy.html`](https://w3.org/WAI/content-assets/wcag-act-rules/test-assets/iframe-unique-name-4b1c6c/page-one-copy.html):
+
+```html
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>Page One</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+	</head>
+	<body>
+		<!-- Breadcrumb -->
+		Root > Page One
+		<nav>
+			<ul>
+				<li>Home</li>
+				<li>Contact</li>
+			</ul>
+		</nav>
+	</body>
+</html>
+```
+
+File [`/test-assets/iframe-unique-name-4b1c6c/page-three-same-as-page-one.html`](https://w3.org/WAI/content-assets/wcag-act-rules/test-assets/iframe-unique-name-4b1c6c/page-three-same-as-page-one.html):
+
+```html
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>Page One</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+	</head>
+	<body>
+		<nav>
+			<ul>
+				<li>Home</li>
+				<li>Contact</li>
+			</ul>
+		</nav>
+	</body>
+</html>
+```
+
+File [`/test-assets/iframe-unique-name-4b1c6c/advertising-one.html`](https://w3.org/WAI/content-assets/wcag-act-rules/test-assets/iframe-unique-name-4b1c6c/advertising-one.html):
+
+```html
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>Advertising One</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+	</head>
+	<body>
+		<h1>This is my random advertising</h1>
+		<p>Please, buy things!</p>
+	</body>
+</html>
+```
+
+File [`/test-assets/iframe-unique-name-4b1c6c/advertising-two.html`](https://w3.org/WAI/content-assets/wcag-act-rules/test-assets/iframe-unique-name-4b1c6c/advertising-two.html):
+
+```html
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>Advertising Two</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+	</head>
+	<body>
+		<h1>This is an other random advertising</h1>
+		<p>Never know which content will appear because advertising are managed bu a third party.</p>
+		<p>But please, buy more things!</p>
+	</body>
+</html>
+```
+
+File [`/test-assets/iframe-unique-name-4b1c6c/page-two.html`](https://w3.org/WAI/content-assets/wcag-act-rules/test-assets/iframe-unique-name-4b1c6c/page-two.html):
+
+```html
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>Page Two</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+	</head>
+	<body>
+		<article>
+			Lorem Ipsum...
+		</article>
+	</body>
+</html>
+```
+
+</details>
 
 ### Passed
 

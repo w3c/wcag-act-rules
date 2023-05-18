@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> ee13b5</p>
-  <p><strong>Date:</strong> Updated 14 November 2022</p>
+  <p><strong>Date:</strong> Updated 18 May 2023</p>
   <p><strong>Authors:</strong> <a href="https://www.linkedin.com/in/brianbors/">Brian Bors</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
   
@@ -21,7 +21,7 @@ rule_meta:
   rule_type: atomic
   description: |
     Non-streaming `video` elements without audio must have all visual information available in a transcript.
-  last_modified: 14 November 2022
+  last_modified: 18 May 2023
 ---
 
 ## Applicability
@@ -77,6 +77,49 @@ The following aspects are required in using this rule.
 - [Language](https://www.w3.org/TR/act-rules-aspects/#input-aspects-text)
 
 ## Test Cases
+
+<details class="act-inline-assets" markdown="block">
+<summary>These HTML files are used in several examples:</summary>
+
+File [`/test-assets/rabbit-video/transcript.html`](https://w3.org/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/transcript.html):
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Description of the rabbit video</title>
+	</head>
+	<body>
+		<h1>Description of the rabbit video</h1>
+		<p>
+			The video shows a giant fat rabbit climbing out of a hole in the ground. He stretches, yawns, and then starts
+			walking. Then he stops to scratch his bottom.
+		</p>
+	</body>
+</html>
+```
+
+File [`/test-assets/rabbit-video/incorrect-transcript.html`](https://w3.org/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/incorrect-transcript.html):
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Description of the dog video</title>
+	</head>
+	<body>
+		<h1>Description of the dog video</h1>
+		<p>
+			The video shows a giant fat dog climbing out of a hole in the ground. He stretches, yawns, and then starts
+			walking. Then he stops to scratch his bottom.
+		</p>
+	</body>
+</html>
+```
+
+</details>
 
 ### Passed
 

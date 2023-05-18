@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> b40fd1</p>
-  <p><strong>Date:</strong> Updated 11 November 2022</p>
+  <p><strong>Date:</strong> Updated 18 May 2023</p>
   <p><strong>Authors:</strong> <a href="https://github.com/Jym77">Jean-Yves Moyen</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
   
@@ -21,7 +21,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that each page has an element with a landmark semantic role starting with non-repeated content
-  last_modified: 11 November 2022
+  last_modified: 18 May 2023
 ---
 
 ## Applicability
@@ -70,6 +70,46 @@ The following aspects are required in using this rule.
 - [DOM Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom)
 
 ## Test Cases
+
+<details class="act-inline-assets" markdown="block">
+<summary>This HTML file is used in several examples:</summary>
+
+File [`/test-assets/bypass-blocks-cf77f2/chapter2.html`](https://w3.org/WAI/content-assets/wcag-act-rules/test-assets/bypass-blocks-cf77f2/chapter2.html):
+
+```html
+<html>
+	<head>
+		<title>The Three Kingdoms, Chapter 2</title>
+	</head>
+	<body>
+		<nav id="chapters-navigation">
+			<h1>Content</h1>
+			<ol>
+				<li><a href="/test-assets/bypass-blocks-cf77f2/chapter1.html">Chapter 1</a></li>
+				<li><a>Chapter 2</a></li>
+			</ol>
+		</nav>
+
+		<aside id="bio-translator">
+			<h1>About the translator</h1>
+			<p>Yu Sumei is a professor of English at East China Normal University.</p>
+		</aside>
+		<aside id="about-book">
+			<h1>About the book</h1>
+			<p>The Romance of the Three Kingdoms is a 14th century historical novel.</p>
+		</aside>
+
+		<main>
+			<h1>Zhang Fei Trashes the Inspector in Wrath</h1>
+			<p>
+				Now this Dong Zhuo, also known as Dong Zhong-ying, was from Lintao in northwest China.
+			</p>
+		</main>
+	</body>
+</html>
+```
+
+</details>
 
 ### Passed
 

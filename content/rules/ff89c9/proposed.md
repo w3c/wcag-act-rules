@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> ff89c9</p>
-  <p><strong>Date:</strong> Updated 1 December 2022</p>
+  <p><strong>Date:</strong> Updated 18 May 2023</p>
   <p><strong>Authors:</strong> <a href="https://www.linkedin.com/in/brianbors/">Brian Bors</a>, <a href="https://github.com/Jym77">Jean-Yves Moyen</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Previous Authors: <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -19,7 +19,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that an element with an explicit semantic role exists inside its required context.
-  last_modified: 1 December 2022
+  last_modified: 18 May 2023
   scs_tested:
     - handle: Info and Relationships
       num: 1.3.1
@@ -274,12 +274,12 @@ This `section` element with an [explicit role][] of `doc-abstract` has a role fr
 
 #### Inapplicable Example 4
 
-<a class="example-link" title="Inapplicable Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ff89c9/84dd1831c0682a800e6af2fe992fb3d69d4222eb.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ff89c9/3457868b79bad5b8cf2320c88cd5f542f9388cda.html">Open in a new tab</a>
 
-There is no element whose role has [required context role][] because the `header` role does not have one.
+There is no element whose role has [required context role][] because the `heading` role does not have one.
 
 ```html
-<div role="header" aria-level="1">Hello!</div>
+<div role="heading" aria-level="1">Hello!</div>
 <p>Welcome to my homepage!</p>
 ```
 
