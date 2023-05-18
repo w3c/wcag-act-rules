@@ -7,11 +7,11 @@ layout: standalone_resource
     Rule Mapping 
   </header>
   <div class="box-i"> 
-   <p>This is {% if page.rule_meta.rule_type == "atomic" %}an {% else %}a {% endif %}
+   <p>This is {% if page.rule_meta.rule_type == "atomic" %}an {% else %}a {% endif -%}
     <strong>{{ page.rule_meta.rule_type | capitalize }} rule</strong> 
-    {% if page.rule_meta.scs_tested %}
+    {%- if page.rule_meta.scs_tested %}
     to test 
-    {% for sc in page.rule_meta.scs_tested %}
+    {%- for sc in page.rule_meta.scs_tested %}
     <strong>{{ sc.num }}: {{ sc.handle }} (Level {{ sc.level }})</strong>{% if forloop.last == false %}, {% endif %}
     {%- endfor %}
     {%- endif %}
