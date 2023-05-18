@@ -22,6 +22,8 @@ rule_meta:
   description: |
     This rule checks that `audio` elements have a transcript that includes all auditory information.
   last_modified: 6 March 2023
+  composite_rules:
+    e7aa44: Audio element content has text alternative
 ---
 
 ## Applicability

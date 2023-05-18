@@ -15,7 +15,20 @@ layout: standalone_resource
     <strong>{{ sc.num }}: {{ sc.handle }} (Level {{ sc.level }})</strong>{% if forloop.last == false %}, {% endif %}
     {% endfor %}
     {% endif %}
-  </p> 
+    {% if page.rule_meta.composite_rules.size > 0 %}
+      . Its outcome is used in the following composite rule
+      {%- if page.rule_meta.composite_rules.size > 1 -%} s {%- endif %}:
+    {% endif %}
+  </p>
+  {% if page.rule_meta.composite_rules and page.rule_meta.composite_rules.size > 0 %}
+  <ul>
+    {% for compositeRule in page.rule_meta.composite_rules %}
+    <li><a href="{{
+      '/standards-guidelines/act/rules/' | append: compositeRule[0] | append: '/proposed' | relative_url 
+    }}">{{compositeRule[1] }}</a></li>
+    {% endfor %}
+  </ul>
+  {% endif %}
   </div>
  </aside>
 
