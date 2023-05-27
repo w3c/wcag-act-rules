@@ -2,7 +2,7 @@
   "vendor": "IBM Accessibility",
   "name": "Equal Access Accessibility Checker",
   "version": "3.1.42-rc.0",
-  "lastModified": "16 May 2023",
+  "lastModified": "27 May 2023",
   "approvedRules": {
     "complete": 14,
     "partial": 4,
@@ -10,8 +10,8 @@
     "untested": 0
   },
   "proposedRules": {
-    "complete": 9,
-    "partial": 6,
+    "complete": 10,
+    "partial": 5,
     "inconsistent": 0,
     "untested": 51
   },
@@ -6172,8 +6172,8 @@
         ]
       },
       "coverage": {
-        "covered": 14,
-        "untested": 1,
+        "covered": 15,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 15
       },
@@ -6383,7 +6383,7 @@
             {
               "procedureName": "aria_parent_required:Pass_0,Fail_1",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -9288,7 +9288,7 @@
       "procedureNames": [
         "text_contrast_sufficient:Pass_0,Fail_1,Potential_same_color,Potential_graphic_background,Potential_text_shadow"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -9299,8 +9299,8 @@
         ]
       },
       "coverage": {
-        "covered": 25,
-        "untested": 1,
+        "covered": 26,
+        "untested": 0,
         "cantTell": 6,
         "testCaseTotal": 32
       },
@@ -9690,7 +9690,7 @@
             {
               "procedureName": "text_contrast_sufficient:Pass_0,Fail_1,Potential_same_color,Potential_graphic_background,Potential_text_shadow",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
