@@ -26232,30 +26232,6 @@
           "earl:TestSubject",
           "sch:WebPage"
         ],
-        "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/0ssw9k/dd5ca5252dacc6d5e0fabb30e92633b284336832.html"
-      },
-      "assertedBy": "https://github.com/dequelabs/axe-core/releases/tag/4.7.2-canary.6850af8",
-      "result": {
-        "@type": "TestResult",
-        "outcome": "earl:inapplicable"
-      },
-      "test": {
-        "@type": "TestCase",
-        "title": "scrollable-region-focusable",
-        "@id": "https://dequeuniversity.com/rules/axe/4.7/scrollable-region-focusable?application=axeAPI",
-        "isPartOf": [
-          "WCAG2:keyboard"
-        ]
-      }
-    },
-    {
-      "@type": "Assertion",
-      "mode": "earl:automatic",
-      "subject": {
-        "@type": [
-          "earl:TestSubject",
-          "sch:WebPage"
-        ],
         "source": "https://wai-wcag-act-rules.netlify.app/content-assets/wcag-act-rules/testcases/oj04fd/52be6331dc0978990a8b806a9a4a84bf738a43e1.html"
       },
       "assertedBy": "https://github.com/dequelabs/axe-core/releases/tag/4.7.2-canary.6850af8",
