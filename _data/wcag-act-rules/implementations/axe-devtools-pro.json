@@ -10,8 +10,8 @@
     "untested": 0
   },
   "proposedRules": {
-    "complete": 20,
-    "partial": 11,
+    "complete": 19,
+    "partial": 12,
     "inconsistent": 9,
     "untested": 26
   },
@@ -6353,7 +6353,7 @@
       "procedureNames": [
         "aria-valid-attr"
       ],
-      "consistency": "complete",
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
@@ -6362,8 +6362,8 @@
         ]
       },
       "coverage": {
-        "covered": 7,
-        "untested": 0,
+        "covered": 6,
+        "untested": 1,
         "cantTell": 0,
         "testCaseTotal": 7
       },
@@ -6414,16 +6414,16 @@
           ]
         },
         {
-          "testcaseId": "4373f9e70eb353c76d7e9d4c2cc4dcfd6c17ad70",
+          "testcaseId": "830f50dcf51acb0b97b948000d7c163e50858312",
           "testCaseName": "Passed Example 4",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/4373f9e70eb353c76d7e9d4c2cc4dcfd6c17ad70.html",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/830f50dcf51acb0b97b948000d7c163e50858312.html",
           "testCaseApproved": false,
           "expected": "passed",
           "procedureResults": [
             {
               "procedureName": "aria-valid-attr",
               "outcomes": [
-                "passed"
+                "untested"
               ]
             }
           ]
