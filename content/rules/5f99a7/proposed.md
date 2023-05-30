@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 5f99a7</p>
-  <p><strong>Date:</strong> Updated 24 January 2023</p>
+  <p><strong>Date:</strong> Updated 30 May 2023</p>
   <p><strong>Authors:</strong> <a href="https://github.com/jkodu">Jey Nandakumar</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -19,7 +19,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that each `aria-` attribute specified is defined in ARIA 1.2.
-  last_modified: 24 January 2023
+  last_modified: 30 May 2023
 ---
 
 ## Applicability
@@ -128,21 +128,13 @@ This `div` element with a role of `textbox` has multiple `aria-` attributes whic
 
 #### Passed Example 4
 
-<a class="example-link" title="Passed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/4373f9e70eb353c76d7e9d4c2cc4dcfd6c17ad70.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/830f50dcf51acb0b97b948000d7c163e50858312.html">Open in a new tab</a>
 
-This `input` element with a role of `spinbutton` has multiple `aria-` attributes specified which are all defined in [WAI-ARIA Specifications][].
+This `input` element with a type of `number` has multiple `aria-` attributes specified which are all defined in [WAI-ARIA Specifications][].
 
 ```html
 <label for="spinbutton">Enter a number between 0 and 100:</label>
-<input
-	id="spinbutton"
-	role="spinbutton"
-	aria-valuemax="100"
-	aria-valuemin="0"
-	aria-valuenow="25"
-	type="number"
-	value="25"
-/>
+<input id="spinbutton" aria-valuemax="100" aria-valuemin="0" aria-valuenow="25" type="number" value="25" />
 ```
 
 ### Failed
