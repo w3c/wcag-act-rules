@@ -2,17 +2,17 @@
   "vendor": "LASIGE, Faculdade de Ciências da Universidade de Lisboa",
   "name": "QualWeb",
   "version": "3.0.0",
-  "lastModified": "30 May 2023",
+  "lastModified": "5 June 2023",
   "approvedRules": {
-    "complete": 20,
-    "partial": 2,
-    "inconsistent": 0,
+    "complete": 16,
+    "partial": 1,
+    "inconsistent": 5,
     "untested": 0
   },
   "proposedRules": {
-    "complete": 8,
-    "partial": 24,
-    "inconsistent": 15,
+    "complete": 9,
+    "partial": 19,
+    "inconsistent": 19,
     "untested": 19
   },
   "actRuleMapping": [
@@ -1061,14 +1061,14 @@
       "procedureNames": [
         "Element marked as decorative is not exposed"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
         "reported": []
       },
       "coverage": {
-        "covered": 9,
+        "covered": 10,
         "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 10
@@ -1189,7 +1189,7 @@
             {
               "procedureName": "Element marked as decorative is not exposed",
               "outcomes": [
-                "passed"
+                "failed"
               ]
             }
           ]
@@ -1233,7 +1233,7 @@
       "procedureNames": [
         "Form control has accessible name"
       ],
-      "consistency": "complete",
+      "consistency": null,
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -1244,7 +1244,7 @@
         ]
       },
       "coverage": {
-        "covered": 19,
+        "covered": 17,
         "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 19
@@ -1305,7 +1305,7 @@
             {
               "procedureName": "Form control has accessible name",
               "outcomes": [
-                "passed"
+                "failed"
               ]
             }
           ]
@@ -1515,7 +1515,7 @@
             {
               "procedureName": "Form control has accessible name",
               "outcomes": [
-                "passed"
+                "failed"
               ]
             }
           ]
@@ -2308,7 +2308,7 @@
       "procedureNames": [
         "Image button has accessible name"
       ],
-      "consistency": "complete",
+      "consistency": null,
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -2321,7 +2321,7 @@
         ]
       },
       "coverage": {
-        "covered": 12,
+        "covered": 11,
         "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 12
@@ -2382,7 +2382,7 @@
             {
               "procedureName": "Image button has accessible name",
               "outcomes": [
-                "passed"
+                "failed"
               ]
             }
           ]
@@ -2516,7 +2516,7 @@
       "procedureNames": [
         "Image has accessible name"
       ],
-      "consistency": "complete",
+      "consistency": null,
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -2527,7 +2527,7 @@
         ]
       },
       "coverage": {
-        "covered": 18,
+        "covered": 17,
         "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 18
@@ -2573,7 +2573,7 @@
             {
               "procedureName": "Image has accessible name",
               "outcomes": [
-                "passed"
+                "failed"
               ]
             }
           ]
@@ -3078,7 +3078,7 @@
       "procedureNames": [
         "Link has accessible name"
       ],
-      "consistency": "complete",
+      "consistency": null,
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -3092,7 +3092,7 @@
         ]
       },
       "coverage": {
-        "covered": 28,
+        "covered": 26,
         "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 28
@@ -3213,7 +3213,7 @@
             {
               "procedureName": "Link has accessible name",
               "outcomes": [
-                "passed"
+                "failed"
               ]
             }
           ]
@@ -3243,7 +3243,7 @@
             {
               "procedureName": "Link has accessible name",
               "outcomes": [
-                "passed"
+                "inapplicable"
               ]
             }
           ]
@@ -3378,7 +3378,7 @@
             {
               "procedureName": "Link has accessible name",
               "outcomes": [
-                "failed"
+                "inapplicable"
               ]
             }
           ]
@@ -5432,7 +5432,7 @@
       "procedureNames": [
         "Object element has non-empty accessible name"
       ],
-      "consistency": "complete",
+      "consistency": null,
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -5443,7 +5443,7 @@
         ]
       },
       "coverage": {
-        "covered": 18,
+        "covered": 17,
         "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 18
@@ -5489,7 +5489,7 @@
             {
               "procedureName": "Object element has non-empty accessible name",
               "outcomes": [
-                "passed"
+                "failed"
               ]
             }
           ]
@@ -5728,15 +5728,15 @@
       "procedureNames": [
         "aria-* attribute is defined in WAI-ARIA"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
         "reported": []
       },
       "coverage": {
-        "covered": 6,
-        "untested": 1,
+        "covered": 7,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 7
       },
@@ -5796,7 +5796,7 @@
             {
               "procedureName": "aria-* attribute is defined in WAI-ARIA",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -5855,7 +5855,7 @@
       "procedureNames": [
         "ARIA required context role"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -5866,7 +5866,7 @@
         ]
       },
       "coverage": {
-        "covered": 14,
+        "covered": 15,
         "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 15
@@ -6002,7 +6002,7 @@
             {
               "procedureName": "ARIA required context role",
               "outcomes": [
-                "passed"
+                "failed"
               ]
             }
           ]
@@ -6106,7 +6106,7 @@
       "procedureNames": [
         "ARIA required owned elements"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -6117,7 +6117,7 @@
         ]
       },
       "coverage": {
-        "covered": 16,
+        "covered": 17,
         "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 17
@@ -6313,7 +6313,7 @@
             {
               "procedureName": "ARIA required owned elements",
               "outcomes": [
-                "passed"
+                "failed"
               ]
             }
           ]
@@ -9692,7 +9692,7 @@
       "procedureNames": [
         "Heading has accessible name"
       ],
-      "consistency": "complete",
+      "consistency": null,
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -9703,7 +9703,7 @@
         ]
       },
       "coverage": {
-        "covered": 15,
+        "covered": 14,
         "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 15
@@ -9749,7 +9749,7 @@
             {
               "procedureName": "Heading has accessible name",
               "outcomes": [
-                "passed"
+                "failed"
               ]
             }
           ]
@@ -10148,9 +10148,9 @@
         ]
       },
       "coverage": {
-        "covered": 9,
+        "covered": 10,
         "untested": 0,
-        "cantTell": 14,
+        "cantTell": 13,
         "testCaseTotal": 23
       },
       "testCaseResults": [
@@ -10194,7 +10194,7 @@
             {
               "procedureName": "`iframe` elements with identical accessible names have equivalent purpose",
               "outcomes": [
-                "cantTell"
+                "inapplicable"
               ]
             }
           ]
@@ -10508,7 +10508,7 @@
       "procedureNames": [
         "iframe element has accessible name"
       ],
-      "consistency": "partial",
+      "consistency": null,
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -10519,7 +10519,7 @@
         ]
       },
       "coverage": {
-        "covered": 9,
+        "covered": 8,
         "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 10
@@ -10565,7 +10565,7 @@
             {
               "procedureName": "iframe element has accessible name",
               "outcomes": [
-                "passed"
+                "failed"
               ]
             }
           ]
@@ -11674,7 +11674,7 @@
       "procedureNames": [
         "Menuitem has non-empty accessible name"
       ],
-      "consistency": "complete",
+      "consistency": null,
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -11685,7 +11685,7 @@
         ]
       },
       "coverage": {
-        "covered": 8,
+        "covered": 7,
         "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 8
@@ -11731,7 +11731,7 @@
             {
               "procedureName": "Menuitem has non-empty accessible name",
               "outcomes": [
-                "passed"
+                "failed"
               ]
             }
           ]
@@ -12235,7 +12235,7 @@
       "procedureNames": [
         "Element with role attribute has required states and properties"
       ],
-      "consistency": "partial",
+      "consistency": null,
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
@@ -12244,7 +12244,7 @@
         ]
       },
       "coverage": {
-        "covered": 10,
+        "covered": 12,
         "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 15
@@ -12320,7 +12320,7 @@
             {
               "procedureName": "Element with role attribute has required states and properties",
               "outcomes": [
-                "passed"
+                "failed"
               ]
             }
           ]
@@ -12365,7 +12365,7 @@
             {
               "procedureName": "Element with role attribute has required states and properties",
               "outcomes": [
-                "passed"
+                "failed"
               ]
             }
           ]
@@ -12395,7 +12395,7 @@
             {
               "procedureName": "Element with role attribute has required states and properties",
               "outcomes": [
-                "passed"
+                "failed"
               ]
             }
           ]
@@ -12410,7 +12410,7 @@
             {
               "procedureName": "Element with role attribute has required states and properties",
               "outcomes": [
-                "passed"
+                "failed"
               ]
             }
           ]
