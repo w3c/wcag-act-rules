@@ -10950,7 +10950,7 @@
       }
     },
     {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/31ac49fcb186ee2a233355494fc5e774212ca3d7.html",
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/830f50dcf51acb0b97b948000d7c163e50858312.html",
       "@type": "TestSubject",
       "dct:hasPart": [
         {
@@ -10970,7 +10970,7 @@
             "@list": []
           },
           "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/31ac49fcb186ee2a233355494fc5e774212ca3d7.html"
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/830f50dcf51acb0b97b948000d7c163e50858312.html"
         },
         {
           "@type": [
@@ -10983,7 +10983,7 @@
               "cnt:ContentAsText"
             ],
             "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Passed Example 2</title>\n</head>\n<body>\n\t<div role=\"dialog\" aria-modal=\"true\">Contains modal content...</div>\n</body>\n</html>"
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Passed Example 4</title>\n</head>\n<body>\n\t<label for=\"spinbutton\">Enter a number between 0 and 100:</label>\n\t<input id=\"spinbutton\" aria-valuemax=\"100\" aria-valuemin=\"0\" aria-valuenow=\"25\" type=\"number\" value=\"25\" />\n</body>\n</html>"
           },
           "http-vocab:headers": {
             "@list": [
@@ -10997,7 +10997,7 @@
           "http-vocab:statusCodeValue": 200
         }
       ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/31ac49fcb186ee2a233355494fc5e774212ca3d7.html"
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/830f50dcf51acb0b97b948000d7c163e50858312.html"
     },
     {
       "@type": "Assertion",
@@ -11014,11 +11014,11 @@
             "ptr:ExpressionPointer",
             "ptr:XPathPointer"
           ],
-          "ptr:expression": "/html[1]/body[1]/div[1]/@aria-modal"
+          "ptr:expression": "/html[1]/body[1]/input[1]/@aria-valuemax"
         }
       },
       "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/31ac49fcb186ee2a233355494fc5e774212ca3d7.html"
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/830f50dcf51acb0b97b948000d7c163e50858312.html"
       },
       "test": {
         "@id": "https://alfa.siteimprove.com/rules/sia-r20"
@@ -15785,7 +15785,7 @@
       }
     },
     {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/4373f9e70eb353c76d7e9d4c2cc4dcfd6c17ad70.html",
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/31ac49fcb186ee2a233355494fc5e774212ca3d7.html",
       "@type": "TestSubject",
       "dct:hasPart": [
         {
@@ -15805,7 +15805,7 @@
             "@list": []
           },
           "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/4373f9e70eb353c76d7e9d4c2cc4dcfd6c17ad70.html"
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/31ac49fcb186ee2a233355494fc5e774212ca3d7.html"
         },
         {
           "@type": [
@@ -15818,7 +15818,7 @@
               "cnt:ContentAsText"
             ],
             "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Passed Example 4</title>\n</head>\n<body>\n\t<label for=\"spinbutton\">Enter a number between 0 and 100:</label>\n\t<input\n\t\tid=\"spinbutton\"\n\t\trole=\"spinbutton\"\n\t\taria-valuemax=\"100\"\n\t\taria-valuemin=\"0\"\n\t\taria-valuenow=\"25\"\n\t\ttype=\"number\"\n\t\tvalue=\"25\"\n\t/>\n</body>\n</html>"
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Passed Example 2</title>\n</head>\n<body>\n\t<div role=\"dialog\" aria-modal=\"true\">Contains modal content...</div>\n</body>\n</html>"
           },
           "http-vocab:headers": {
             "@list": [
@@ -15832,7 +15832,7 @@
           "http-vocab:statusCodeValue": 200
         }
       ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/4373f9e70eb353c76d7e9d4c2cc4dcfd6c17ad70.html"
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/31ac49fcb186ee2a233355494fc5e774212ca3d7.html"
     },
     {
       "@type": "Assertion",
@@ -15849,11 +15849,11 @@
             "ptr:ExpressionPointer",
             "ptr:XPathPointer"
           ],
-          "ptr:expression": "/html[1]/body[1]/input[1]/@aria-valuemax"
+          "ptr:expression": "/html[1]/body[1]/div[1]/@aria-modal"
         }
       },
       "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/4373f9e70eb353c76d7e9d4c2cc4dcfd6c17ad70.html"
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/31ac49fcb186ee2a233355494fc5e774212ca3d7.html"
       },
       "test": {
         "@id": "https://alfa.siteimprove.com/rules/sia-r20"
