@@ -8,10 +8,10 @@ on:
 jobs:
   pr-to-publish:
     runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ secrets.API_TOKEN_GITHUB }}
     steps:
       - uses: actions/checkout@v3
-        env:
-          GH_TOKEN: ${{ secrets.API_TOKEN_GITHUB }}
     
       - name: Get current date
         id: date
