@@ -2,7 +2,7 @@
   "vendor": "Total Validator",
   "name": "Total Validator (+Browser)",
   "version": "17.1.0",
-  "lastModified": "31 May 2023",
+  "lastModified": "16 June 2023",
   "approvedRules": {
     "complete": 22,
     "partial": 0,
@@ -10,8 +10,8 @@
     "untested": 0
   },
   "proposedRules": {
-    "complete": 18,
-    "partial": 2,
+    "complete": 19,
+    "partial": 1,
     "inconsistent": 0,
     "untested": 46
   },
@@ -7329,7 +7329,7 @@
             {
               "procedureName": "E963",
               "outcomes": [
-                "passed"
+                "failed"
               ]
             }
           ]
@@ -9386,9 +9386,9 @@
       "ruleName": "Iframe element has non-empty accessible name",
       "ruleApproved": false,
       "procedureNames": [
-        "E878"
+        "E8781"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -9399,8 +9399,8 @@
         ]
       },
       "coverage": {
-        "covered": 8,
-        "untested": 3,
+        "covered": 11,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 11
       },
@@ -9413,7 +9413,7 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "E878",
+              "procedureName": "E8781",
               "outcomes": [
                 "passed"
               ]
@@ -9428,7 +9428,7 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "E878",
+              "procedureName": "E8781",
               "outcomes": [
                 "passed"
               ]
@@ -9443,7 +9443,7 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "E878",
+              "procedureName": "E8781",
               "outcomes": [
                 "passed"
               ]
@@ -9458,7 +9458,7 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "E878",
+              "procedureName": "E8781",
               "outcomes": [
                 "failed"
               ]
@@ -9473,7 +9473,7 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "E878",
+              "procedureName": "E8781",
               "outcomes": [
                 "failed"
               ]
@@ -9488,7 +9488,7 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "E878",
+              "procedureName": "E8781",
               "outcomes": [
                 "failed"
               ]
@@ -9503,9 +9503,9 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "E878",
+              "procedureName": "E8781",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -9518,7 +9518,7 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "E878",
+              "procedureName": "E8781",
               "outcomes": [
                 "passed"
               ]
@@ -9533,7 +9533,7 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "E878",
+              "procedureName": "E8781",
               "outcomes": [
                 "passed"
               ]
@@ -9548,9 +9548,9 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "E878",
+              "procedureName": "E8781",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -9563,9 +9563,9 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "E878",
+              "procedureName": "E8781",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
