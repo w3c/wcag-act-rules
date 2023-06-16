@@ -8,9 +8,8 @@ on:
 jobs:
   pr-to-publish:
     runs-on: ubuntu-latest
-    env:
-      GH_TOKEN: ${{ secrets.API_TOKEN_GITHUB }}
     permissions:
+      contents: read
       pull-requests: write
     steps:
       - uses: actions/checkout@v3
