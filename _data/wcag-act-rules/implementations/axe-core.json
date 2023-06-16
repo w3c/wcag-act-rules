@@ -2,7 +2,7 @@
   "vendor": "Deque Systems",
   "name": "Axe-core",
   "version": "4.6.0",
-  "lastModified": "15 June 2023",
+  "lastModified": "16 June 2023",
   "approvedRules": {
     "complete": 22,
     "partial": 0,
@@ -10,9 +10,9 @@
     "untested": 0
   },
   "proposedRules": {
-    "complete": 15,
-    "partial": 10,
-    "inconsistent": 5,
+    "complete": 16,
+    "partial": 8,
+    "inconsistent": 6,
     "untested": 36
   },
   "actRuleMapping": [
@@ -9912,7 +9912,7 @@
       "procedureNames": [
         "frame-title-unique"
       ],
-      "consistency": "partial",
+      "consistency": null,
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -9923,8 +9923,8 @@
         ]
       },
       "coverage": {
-        "covered": 11,
-        "untested": 0,
+        "covered": 10,
+        "untested": 1,
         "cantTell": 10,
         "testCaseTotal": 23
       },
@@ -10190,7 +10190,7 @@
             {
               "procedureName": "frame-title-unique",
               "outcomes": [
-                "inapplicable"
+                "untested"
               ]
             }
           ]
@@ -10294,7 +10294,7 @@
       "procedureNames": [
         "frame-title"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -10305,8 +10305,8 @@
         ]
       },
       "coverage": {
-        "covered": 8,
-        "untested": 3,
+        "covered": 11,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 11
       },
@@ -10411,7 +10411,7 @@
             {
               "procedureName": "frame-title",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -10456,7 +10456,7 @@
             {
               "procedureName": "frame-title",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -10471,7 +10471,7 @@
             {
               "procedureName": "frame-title",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
