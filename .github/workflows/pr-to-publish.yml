@@ -8,12 +8,13 @@ on:
 jobs:
   pr-to-publish:
     runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ github.token }}
     permissions:
       contents: read
       pull-requests: write
     steps:
       - uses: actions/checkout@v3
-    
       - name: Get current date
         id: date
         run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
