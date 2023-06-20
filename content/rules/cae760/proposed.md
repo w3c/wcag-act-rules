@@ -9,8 +9,8 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> cae760</p>
-  <p><strong>Date:</strong> Updated 16 February 2023</p>
-  <p><strong>Authors:</strong> <a href="https://github.com/jkodu">Jey Nandakumar</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
+  <p><strong>Date:</strong> Updated 15 June 2023</p>
+  <p><strong>Authors:</strong> <a href="https://github.com/jkodu">Jey Nandakumar</a>, Tom Brunet, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
 rule_meta:
@@ -19,7 +19,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that each `iframe` element has a non-empty accessible name.
-  last_modified: 16 February 2023
+  last_modified: 15 June 2023
   scs_tested:
     - handle: Name, Role, Value
       num: 4.1.2
@@ -28,9 +28,9 @@ rule_meta:
 
 ## Applicability
 
-This rule applies to `iframe` elements that are [included in the accessibility tree][] and do not have a negative `tabindex` [attribute value][].
-
-**Note:** `frame` element is deprecated, this rule does not consider `frame` or `frameset` elements.
+This rule applies to `iframe` elements that are [included in the accessibility tree][] and for which all of the following are true:
+- the `iframe` does not have a negative `tabindex` [attribute value][]; and
+- the `iframe` does not have an [explicit semantic role][] of `presentation` or `none`.
 
 ## Expectation
 
@@ -42,13 +42,17 @@ If an `iframe` is not perceived by the user as a single control, it does not qua
 
 ## Accessibility Support
 
-- Some browsers include `iframe` elements in the [sequential focus navigation][]. This ensures that the contents of `iframe` elements can be scrolled and accessed by using the keyboard. When an `iframe` is removed from the accessibility tree, this rule is still applicable for those browsers, unless the `iframe` is explicitly removed from [sequential focus navigation][] (by having the `tabindex` attribute set to a negative value).
-
 - Browser and assistive technology support for `iframe` elements is currently **inconsistent**. Some examples of inconsistencies include (but are not limited to):
   - There is a known combination of a popular browser and assistive technology that ignores `aria-label` and only announces `title` attribute as an [accessible name][]
   - Some assistive technologies ignore empty `iframe` elements, regardless of if they are focusable or if they have an accessible name.
+  - Some browsers instantly redirect focus from `iframe` elements  to the first focusable element inside that iframe. This redirect makes it appear as though the `iframe` never receives focus. This occurs even if the `iframe` has a non-negative `tabindex` [attribute value][].
+  - Not all browsers redirect focus on `iframe` elements. This ensures that the contents of `iframe` elements can be scrolled and accessed by using the keyboard. This must not be circumvented by using a negative tabindex, as this will make the `iframe` completely inaccessible for keyboard navigation.
 
 ## Background
+
+The `frame` element is deprecated, this rule does not consider `frame` or `frameset` elements.
+
+Due to inconsistencies in handling focus on `iframe`, this rule ignores `iframe` elements for which there is an attempt to hide them from assistive technologies.  Whether `iframe` elements that are inapplicable to this rule still require an accessible name varies between browsers.
 
 ### Bibliography
 
@@ -149,14 +153,12 @@ This `iframe` element has an empty (`""`) [accessible name][] because the `title
 
 #### Failed Example 4
 
-<a class="example-link" title="Failed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/cae760/8d7ed640412cd827b169ef4f465faed482feaa26.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/cae760/0a18c94e7b8bd8d0a54c14acbc56958918fcad2b.html">Open in a new tab</a>
 
 This `iframe` element has an empty (`""`) [accessible name][] because the `title` attribute value is trimmed of [whitespace][] by the [accessible name computation][accessible name and description computation].
 
-**Note:**: Because `iframe` elements are part of [sequential focus navigation][], the [explicit semantic role](#explicit-role) of `none` will be ignored, due to the [Presentational Roles Conflict Resolution](https://www.w3.org/TR/wai-aria-1.1/#presentational-roles-conflict-resolution).
-
 ```html
-<iframe title=" " src="/test-assets/SC4-1-2-frame-doc.html" role="none"> </iframe>
+<iframe title=" " src="/test-assets/SC4-1-2-frame-doc.html"> </iframe>
 ```
 
 ### Inapplicable
@@ -183,12 +185,22 @@ This `iframe` is not [included in the accessibility tree][] because of setting a
 
 #### Inapplicable Example 3
 
-<a class="example-link" title="Inapplicable Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/cae760/803b52f32a5d2193683f152aa5e00174d5f8416a.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/cae760/77075e0f50c9b77457d90450bc31c0fae372dbaf.html">Open in a new tab</a>
 
 This `iframe` element has a negative `tabindex` [attribute value][].
 
 ```html
-<iframe tabindex="-1" src="/test-assets/SC4-1-2-frame-doc.html"> </iframe>
+<iframe tabindex="-1" src="/test-assets/SC4-1-2-frame-doc.html" style="height: 250px"> </iframe>
+```
+
+#### Inapplicable Example 4
+
+<a class="example-link" title="Inapplicable Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/cae760/058668cee446d08989bf24d5ce3413dc2cda9975.html">Open in a new tab</a>
+
+This `iframe` element has an [explicit semantic role][] of `none`.
+
+```html
+<iframe src="/test-assets/SC4-1-2-frame-doc.html" role="none"> </iframe>
 ```
 
 ## Glossary
@@ -223,14 +235,6 @@ Some notable case of attribute value, among others:
 This list is not exhaustive, and only serves as an illustration for some of the most common cases.
 
 The <dfn id="attribute-value:idl">attribute value</dfn> of an [IDL attribute][] is the value returned on getting it. Note that when an [IDL attribute][] [reflects][reflect] a content attribute, they have the same attribute value.
-
-### Explicit Semantic Role {#explicit-role}
-
-The _explicit semantic role_ of an element is determined by its [role attribute][] (if any).
-
-The [role attribute][] takes a list of tokens. The explicit semantic role is the first valid role in this list. The valid roles are all non-abstract roles from [WAI-ARIA Specifications][]. If the element has no [role attribute][], or if it has one with no valid role, then this element has no explicit semantic role.
-
-Other roles may be added as they become available. Not all roles will be supported in all assistive technologies. Testers are encouraged to adjust which roles are allowed according to the [accessibility support base line][]. For the purposes of executing test cases in all rules, it should be assumed that all roles are supported by assistive technologies so that none of the roles fail due to lack of accessibility support.
 
 ### Focusable {#focusable}
 
@@ -279,16 +283,6 @@ An HTML element is _programmatically hidden_ if either it has a [computed][] CSS
 
 **Note**: The [HTML standard suggests](https://html.spec.whatwg.org/multipage/rendering.html#hidden-elements) setting the CSS `display` property to `none` for elements with the `hidden` attribute. While not required by HTML, all modern browsers follow this suggestion. Because of this the `hidden` attribute is not used in this definition. In browsers that use this suggestion, overriding the CSS `display` property can reveal elements with the `hidden` attribute.
 
-### WAI-ARIA specifications {#wai-aria-specifications}
-
-The _WAI ARIA Specifications_ group both the WAI ARIA W3C Recommendation and ARIA modules, namely:
-
-- [Accessible Rich Internet Applications (WAI-ARIA) 1.2](https://www.w3.org/TR/wai-aria-1.2/)
-- [WAI-ARIA Graphics Module 1.0](https://www.w3.org/TR/graphics-aria-1.0/)
-- [Digital Publishing WAI-ARIA Module 1.0](https://www.w3.org/TR/dpub-aria-1.0/)
-
-**Note:** depending on the type of content being evaluated, part of the specifications might be irrelevant and should be ignored.
-
 ### Whitespace {#whitespace}
 
 _Whitespace_ are characters that have the Unicode "White_Space" property in the [Unicode properties list](https://www.unicode.org/Public/UCD/latest/ucd/PropList.txt).
@@ -305,7 +299,6 @@ This includes:
   - Carriage Return (CR) (U+000D)
   - Next Line (NEL) (U+0085)
 
-[accessibility support base line]: https://www.w3.org/TR/WCAG-EM/#step1c 'Definition of accessibility support base line'
 [accessible name and description computation]: https://www.w3.org/TR/accname
 [accessible name]: #accessible-name 'Definition of accessible name'
 [attribute value]: #attribute-value 'Definition of Attribute value'
@@ -322,7 +315,6 @@ This includes:
 [inclusive ancestors]: https://dom.spec.whatwg.org/#concept-tree-inclusive-ancestor 'DOM Definition of Inclusive Ancestor'
 [numbers]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#numbers 'HTML Specification of Number Parsing'
 [reflect]: https://html.spec.whatwg.org/multipage/common-dom-interfaces.html#reflecting-content-attributes-in-idl-attributes 'HTML specification of Reflecting Content Attributes in IDL Attributes'
-[role attribute]: https://www.w3.org/TR/role-attribute/ 'Specification of the role attribute'
 [rules for parsing integers]: https://html.spec.whatwg.org/#rules-for-parsing-integers
 [sequential focus navigation]: https://html.spec.whatwg.org/multipage/interaction.html#sequential-focus-navigation
 [space separated]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#space-separated-tokens 'HTML Specification of Space Separated Tokens'
@@ -330,5 +322,4 @@ This includes:
 [tabindex value]: https://html.spec.whatwg.org/#tabindex-value
 [user interface component]: https://www.w3.org/TR/WCAG21/#dfn-user-interface-components
 [wai-aria specification]: https://www.w3.org/TR/wai-aria-1.1/#propcharacteristic_value 'WAI-ARIA Specification of States and Properties Value'
-[wai-aria specifications]: #wai-aria-specifications 'Definition of WAI-ARIA specifications'
 [whitespace]: #whitespace 'Definition of whitespace'

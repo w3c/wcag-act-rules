@@ -9,7 +9,7 @@
         "@type": "Software",
         "title": "Total Validator CI",
         "description": "Total Validator checks websites are accessible, use valid HTML and CSS, have no broken links, and are free from spelling mistakes.",
-        "hasVersion": "17.2.0",
+        "hasVersion": "17.2.1",
         "homepage": "https://www.totalvalidator.com"
       },
       "assertions": [
@@ -7397,7 +7397,7 @@
             "title": "E963",
             "isPartOf": ["WCAG2:info-and-relationships"]
            },
-          "result": { "outcome": "earl:passed" }
+          "result": { "outcome": "earl:failed" }
         }
       ]
     },
@@ -9466,7 +9466,7 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "E878",
+            "title": "E8781",
             "isPartOf": ["WCAG2:name-role-value"]
            },
           "result": { "outcome": "earl:passed" }
@@ -9480,7 +9480,7 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "E878",
+            "title": "E8781",
             "isPartOf": ["WCAG2:name-role-value"]
            },
           "result": { "outcome": "earl:passed" }
@@ -9494,7 +9494,7 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "E878",
+            "title": "E8781",
             "isPartOf": ["WCAG2:name-role-value"]
            },
           "result": { "outcome": "earl:passed" }
@@ -9508,7 +9508,7 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "E878",
+            "title": "E8781",
             "isPartOf": ["WCAG2:name-role-value"]
            },
           "result": { "outcome": "earl:failed" }
@@ -9522,7 +9522,7 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "E878",
+            "title": "E8781",
             "isPartOf": ["WCAG2:name-role-value"]
            },
           "result": { "outcome": "earl:failed" }
@@ -9536,7 +9536,7 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "E878",
+            "title": "E8781",
             "isPartOf": ["WCAG2:name-role-value"]
            },
           "result": { "outcome": "earl:failed" }
@@ -9545,12 +9545,12 @@
     },
     {
       "@type": "TestSubject",
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cae760/8d7ed640412cd827b169ef4f465faed482feaa26.html",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cae760/0a18c94e7b8bd8d0a54c14acbc56958918fcad2b.html",
       "assertions": [
         {
           "@type": "Assertion",
           "test": {
-            "title": "E878",
+            "title": "E8781",
             "isPartOf": ["WCAG2:name-role-value"]
            },
           "result": { "outcome": "earl:failed" }
@@ -9564,7 +9564,7 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "E878",
+            "title": "E8781",
             "isPartOf": ["WCAG2:name-role-value"]
            },
           "result": { "outcome": "earl:passed" }
@@ -9578,7 +9578,7 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "E878",
+            "title": "E8781",
             "isPartOf": ["WCAG2:name-role-value"]
            },
           "result": { "outcome": "earl:passed" }
@@ -9587,12 +9587,26 @@
     },
     {
       "@type": "TestSubject",
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cae760/803b52f32a5d2193683f152aa5e00174d5f8416a.html",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cae760/77075e0f50c9b77457d90450bc31c0fae372dbaf.html",
       "assertions": [
         {
           "@type": "Assertion",
           "test": {
-            "title": "E878",
+            "title": "E8781",
+            "isPartOf": ["WCAG2:name-role-value"]
+           },
+          "result": { "outcome": "earl:passed" }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cae760/058668cee446d08989bf24d5ce3413dc2cda9975.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "E8781",
             "isPartOf": ["WCAG2:name-role-value"]
            },
           "result": { "outcome": "earl:passed" }
