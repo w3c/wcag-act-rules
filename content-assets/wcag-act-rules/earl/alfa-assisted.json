@@ -70,7 +70,7 @@
       "name": "Alfa",
       "release": {
         "@type": "Version",
-        "revision": "0.63.3"
+        "revision": "0.64.0"
       },
       "doap:url": "https://alfa.siteimprove.com"
     },
@@ -935,7 +935,7 @@
       }
     },
     {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cae760/803b52f32a5d2193683f152aa5e00174d5f8416a.html",
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cae760/77075e0f50c9b77457d90450bc31c0fae372dbaf.html",
       "@type": "TestSubject",
       "dct:hasPart": [
         {
@@ -955,7 +955,7 @@
             "@list": []
           },
           "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cae760/803b52f32a5d2193683f152aa5e00174d5f8416a.html"
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cae760/77075e0f50c9b77457d90450bc31c0fae372dbaf.html"
         },
         {
           "@type": [
@@ -968,7 +968,7 @@
               "cnt:ContentAsText"
             ],
             "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Inapplicable Example 3</title>\n</head>\n<body>\n\t<iframe tabindex=\"-1\" src=\"/WAI/content-assets/wcag-act-rules/test-assets/SC4-1-2-frame-doc.html\"> </iframe>\n</body>\n</html>"
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Inapplicable Example 3</title>\n</head>\n<body>\n\t<iframe tabindex=\"-1\" src=\"/WAI/content-assets/wcag-act-rules/test-assets/SC4-1-2-frame-doc.html\" style=\"height: 250px\"> </iframe>\n</body>\n</html>"
           },
           "http-vocab:headers": {
             "@list": [
@@ -982,7 +982,7 @@
           "http-vocab:statusCodeValue": 200
         }
       ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cae760/803b52f32a5d2193683f152aa5e00174d5f8416a.html"
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cae760/77075e0f50c9b77457d90450bc31c0fae372dbaf.html"
     },
     {
       "@type": "Assertion",
@@ -993,7 +993,7 @@
         "outcome": "earl:inapplicable"
       },
       "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cae760/803b52f32a5d2193683f152aa5e00174d5f8416a.html"
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cae760/77075e0f50c9b77457d90450bc31c0fae372dbaf.html"
       },
       "test": {
         "@id": "https://alfa.siteimprove.com/rules/sia-r13"
@@ -2430,8 +2430,8 @@
       "earl:mode": "earl:semiAuto",
       "result": {
         "@type": "TestResult",
-        "info": "The `<video>` element has an alternative",
-        "outcome": "earl:passed",
+        "info": "The `<video>` element does not have an alternative",
+        "outcome": "earl:failed",
         "earl:pointer": {
           "@type": [
             "ptr:Pointer",
@@ -5630,7 +5630,7 @@
       }
     },
     {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cae760/8d7ed640412cd827b169ef4f465faed482feaa26.html",
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cae760/4075167ff3009336f6b8e87774a297de217a09b5.html",
       "@type": "TestSubject",
       "dct:hasPart": [
         {
@@ -5650,7 +5650,7 @@
             "@list": []
           },
           "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cae760/8d7ed640412cd827b169ef4f465faed482feaa26.html"
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cae760/4075167ff3009336f6b8e87774a297de217a09b5.html"
         },
         {
           "@type": [
@@ -5663,7 +5663,7 @@
               "cnt:ContentAsText"
             ],
             "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Failed Example 4</title>\n</head>\n<body>\n\t<iframe title=\" \" src=\"/WAI/content-assets/wcag-act-rules/test-assets/SC4-1-2-frame-doc.html\" role=\"none\"> </iframe>\n</body>\n</html>"
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Passed Example 2</title>\n</head>\n<body>\n\t<iframe aria-label=\"Grocery list\" src=\"/WAI/content-assets/wcag-act-rules/test-assets/SC4-1-2-frame-doc.html\"> </iframe>\n</body>\n</html>"
           },
           "http-vocab:headers": {
             "@list": [
@@ -5677,7 +5677,7 @@
           "http-vocab:statusCodeValue": 200
         }
       ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cae760/8d7ed640412cd827b169ef4f465faed482feaa26.html"
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cae760/4075167ff3009336f6b8e87774a297de217a09b5.html"
     },
     {
       "@type": "Assertion",
@@ -5685,8 +5685,8 @@
       "earl:mode": "earl:automatic",
       "result": {
         "@type": "TestResult",
-        "info": "The `<iframe>` does not have an accessible name",
-        "outcome": "earl:failed",
+        "info": "The `<iframe>` has an accessible name",
+        "outcome": "earl:passed",
         "earl:pointer": {
           "@type": [
             "ptr:Pointer",
@@ -5698,7 +5698,7 @@
         }
       },
       "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cae760/8d7ed640412cd827b169ef4f465faed482feaa26.html"
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cae760/4075167ff3009336f6b8e87774a297de217a09b5.html"
       },
       "test": {
         "@id": "https://alfa.siteimprove.com/rules/sia-r13"
@@ -10415,7 +10415,7 @@
       }
     },
     {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cae760/4075167ff3009336f6b8e87774a297de217a09b5.html",
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cae760/058668cee446d08989bf24d5ce3413dc2cda9975.html",
       "@type": "TestSubject",
       "dct:hasPart": [
         {
@@ -10435,7 +10435,7 @@
             "@list": []
           },
           "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cae760/4075167ff3009336f6b8e87774a297de217a09b5.html"
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cae760/058668cee446d08989bf24d5ce3413dc2cda9975.html"
         },
         {
           "@type": [
@@ -10448,7 +10448,7 @@
               "cnt:ContentAsText"
             ],
             "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Passed Example 2</title>\n</head>\n<body>\n\t<iframe aria-label=\"Grocery list\" src=\"/WAI/content-assets/wcag-act-rules/test-assets/SC4-1-2-frame-doc.html\"> </iframe>\n</body>\n</html>"
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Inapplicable Example 4</title>\n</head>\n<body>\n\t<iframe src=\"/WAI/content-assets/wcag-act-rules/test-assets/SC4-1-2-frame-doc.html\" role=\"none\"> </iframe>\n</body>\n</html>"
           },
           "http-vocab:headers": {
             "@list": [
@@ -10462,7 +10462,7 @@
           "http-vocab:statusCodeValue": 200
         }
       ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cae760/4075167ff3009336f6b8e87774a297de217a09b5.html"
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cae760/058668cee446d08989bf24d5ce3413dc2cda9975.html"
     },
     {
       "@type": "Assertion",
@@ -10470,8 +10470,8 @@
       "earl:mode": "earl:automatic",
       "result": {
         "@type": "TestResult",
-        "info": "The `<iframe>` has an accessible name",
-        "outcome": "earl:passed",
+        "info": "The `<iframe>` does not have an accessible name",
+        "outcome": "earl:failed",
         "earl:pointer": {
           "@type": [
             "ptr:Pointer",
@@ -10483,7 +10483,7 @@
         }
       },
       "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cae760/4075167ff3009336f6b8e87774a297de217a09b5.html"
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cae760/058668cee446d08989bf24d5ce3413dc2cda9975.html"
       },
       "test": {
         "@id": "https://alfa.siteimprove.com/rules/sia-r13"
@@ -21535,8 +21535,8 @@
       "earl:mode": "earl:semiAuto",
       "result": {
         "@type": "TestResult",
-        "info": "The `<video>` element has an audio description",
-        "outcome": "earl:passed",
+        "info": "The `<video>` element does not have an audio description",
+        "outcome": "earl:failed",
         "earl:pointer": {
           "@type": [
             "ptr:Pointer",
@@ -30665,8 +30665,8 @@
       "earl:mode": "earl:semiAuto",
       "result": {
         "@type": "TestResult",
-        "info": "The `<video>` element has an audio or text alternative",
-        "outcome": "earl:passed",
+        "info": "The `<video>` element does not have an audio or text alternative",
+        "outcome": "earl:failed",
         "earl:pointer": {
           "@type": [
             "ptr:Pointer",
@@ -43817,6 +43817,81 @@
       }
     },
     {
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cae760/0a18c94e7b8bd8d0a54c14acbc56958918fcad2b.html",
+      "@type": "TestSubject",
+      "dct:hasPart": [
+        {
+          "@type": [
+            "http-vocab:Message",
+            "http-vocab:Request"
+          ],
+          "http-vocab:body": {
+            "@type": [
+              "cnt:Content",
+              "cnt:ContentAsText"
+            ],
+            "cnt:characterEncoding": "utf-8",
+            "cnt:chars": ""
+          },
+          "http-vocab:headers": {
+            "@list": []
+          },
+          "http-vocab:methodName": "GET",
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cae760/0a18c94e7b8bd8d0a54c14acbc56958918fcad2b.html"
+        },
+        {
+          "@type": [
+            "http-vocab:Message",
+            "http-vocab:Response"
+          ],
+          "http-vocab:body": {
+            "@type": [
+              "cnt:Content",
+              "cnt:ContentAsText"
+            ],
+            "cnt:characterEncoding": "utf-8",
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Failed Example 4</title>\n</head>\n<body>\n\t<iframe title=\" \" src=\"/WAI/content-assets/wcag-act-rules/test-assets/SC4-1-2-frame-doc.html\"> </iframe>\n</body>\n</html>"
+          },
+          "http-vocab:headers": {
+            "@list": [
+              {
+                "@type": "http-vocab:MessageHeader",
+                "http-vocab:fieldName": "content-type",
+                "http-vocab:fieldValue": "text/html; charset=utf-8"
+              }
+            ]
+          },
+          "http-vocab:statusCodeValue": 200
+        }
+      ],
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cae760/0a18c94e7b8bd8d0a54c14acbc56958918fcad2b.html"
+    },
+    {
+      "@type": "Assertion",
+      "earl:assertedBy": "Alfa",
+      "earl:mode": "earl:automatic",
+      "result": {
+        "@type": "TestResult",
+        "info": "The `<iframe>` does not have an accessible name",
+        "outcome": "earl:failed",
+        "earl:pointer": {
+          "@type": [
+            "ptr:Pointer",
+            "ptr:SinglePointer",
+            "ptr:ExpressionPointer",
+            "ptr:XPathPointer"
+          ],
+          "ptr:expression": "/html[1]/body[1]/iframe[1]"
+        }
+      },
+      "subject": {
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cae760/0a18c94e7b8bd8d0a54c14acbc56958918fcad2b.html"
+      },
+      "test": {
+        "@id": "https://alfa.siteimprove.com/rules/sia-r13"
+      }
+    },
+    {
       "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2ee8b8/4ee91039726503da19c9bc58e08e800464d94d82.html",
       "@type": "TestSubject",
       "dct:hasPart": [
@@ -47206,7 +47281,7 @@
             "ptr:ExpressionPointer",
             "ptr:XPathPointer"
           ],
-          "ptr:expression": "/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[1]/@headers"
+          "ptr:expression": "/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[2]/@headers"
         }
       },
       "subject": {
@@ -55058,7 +55133,7 @@
             "ptr:ExpressionPointer",
             "ptr:XPathPointer"
           ],
-          "ptr:expression": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/th[2]/@headers"
+          "ptr:expression": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/th[1]/@headers"
         }
       },
       "subject": {
@@ -62940,15 +63015,6 @@
           ],
           "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
           "title": "Providing audio that describes the important video content and describing it as such"
-        },
-        {
-          "@id": "https://www.w3.org/WAI/WCAG21/Techniques/html/H96",
-          "@type": [
-            "TestCriterion",
-            "TestRequirement"
-          ],
-          "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
-          "title": "Using the track element to provide audio descriptions"
         }
       ]
     },
@@ -63082,15 +63148,6 @@
           ],
           "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
           "title": "Providing a version of a movie with audio descriptions"
-        },
-        {
-          "@id": "https://www.w3.org/WAI/WCAG21/Techniques/html/H96",
-          "@type": [
-            "TestCriterion",
-            "TestRequirement"
-          ],
-          "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
-          "title": "Using the track element to provide audio descriptions"
         }
       ]
     },
@@ -64298,15 +64355,6 @@
           ],
           "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
           "title": "Providing a version of a movie with audio descriptions"
-        },
-        {
-          "@id": "https://www.w3.org/WAI/WCAG21/Techniques/html/H96",
-          "@type": [
-            "TestCriterion",
-            "TestRequirement"
-          ],
-          "dct:isPartOf": "https://www.w3.org/WAI/WCAG21/Techniques/",
-          "title": "Using the track element to provide audio descriptions"
         }
       ]
     },
