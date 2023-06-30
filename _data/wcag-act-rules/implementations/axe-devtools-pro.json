@@ -2,7 +2,7 @@
   "vendor": "Deque Systems",
   "name": "Axe DevTools Pro",
   "version": "4.37.1",
-  "lastModified": "17 June 2023",
+  "lastModified": "30 June 2023",
   "approvedRules": {
     "complete": 22,
     "partial": 0,
@@ -3535,8 +3535,8 @@
           "WCAG2:link-purpose-in-context"
         ],
         "reported": [
-          "WCAG2:name-role-value",
-          "WCAG2:link-purpose-in-context"
+          "WCAG2:link-purpose-in-context",
+          "WCAG2:name-role-value"
         ]
       },
       "coverage": {
