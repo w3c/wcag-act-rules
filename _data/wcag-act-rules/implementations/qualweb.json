@@ -2,7 +2,7 @@
   "vendor": "LASIGE, Faculdade de Ciências da Universidade de Lisboa",
   "name": "QualWeb",
   "version": "3.0.0",
-  "lastModified": "19 June 2023",
+  "lastModified": "3 July 2023",
   "approvedRules": {
     "complete": 20,
     "partial": 2,
@@ -10,8 +10,8 @@
     "untested": 0
   },
   "proposedRules": {
-    "complete": 11,
-    "partial": 20,
+    "complete": 12,
+    "partial": 19,
     "inconsistent": 16,
     "untested": 19
   },
@@ -10508,7 +10508,7 @@
       "procedureNames": [
         "iframe element has accessible name"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -10519,8 +10519,8 @@
         ]
       },
       "coverage": {
-        "covered": 8,
-        "untested": 3,
+        "covered": 11,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 11
       },
@@ -10625,7 +10625,7 @@
             {
               "procedureName": "iframe element has accessible name",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -10670,7 +10670,7 @@
             {
               "procedureName": "iframe element has accessible name",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -10685,7 +10685,7 @@
             {
               "procedureName": "iframe element has accessible name",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
