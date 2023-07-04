@@ -21856,7 +21856,7 @@
         "title": "duplicate-id-aria",
         "@id": "https://dequeuniversity.com/rules/axe/4.7/duplicate-id-aria?application=axeAPI",
         "isPartOf": [
-          "WCAG2:parsing"
+          "WCAG2:name-role-value"
         ]
       }
     },
@@ -21925,7 +21925,7 @@
         "title": "duplicate-id-aria",
         "@id": "https://dequeuniversity.com/rules/axe/4.7/duplicate-id-aria?application=axeAPI",
         "isPartOf": [
-          "WCAG2:parsing"
+          "WCAG2:name-role-value"
         ]
       }
     },
@@ -22040,7 +22040,7 @@
         "title": "duplicate-id-aria",
         "@id": "https://dequeuniversity.com/rules/axe/4.7/duplicate-id-aria?application=axeAPI",
         "isPartOf": [
-          "WCAG2:parsing"
+          "WCAG2:name-role-value"
         ]
       }
     },
@@ -22132,7 +22132,7 @@
         "title": "duplicate-id-aria",
         "@id": "https://dequeuniversity.com/rules/axe/4.7/duplicate-id-aria?application=axeAPI",
         "isPartOf": [
-          "WCAG2:parsing"
+          "WCAG2:name-role-value"
         ]
       }
     },
@@ -22194,14 +22194,14 @@
       },
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:failed"
+        "outcome": "earl:cantTell"
       },
       "test": {
         "@type": "TestCase",
         "title": "duplicate-id-aria",
         "@id": "https://dequeuniversity.com/rules/axe/4.7/duplicate-id-aria?application=axeAPI",
         "isPartOf": [
-          "WCAG2:parsing"
+          "WCAG2:name-role-value"
         ]
       }
     },
@@ -22263,14 +22263,14 @@
       },
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:failed"
+        "outcome": "earl:cantTell"
       },
       "test": {
         "@type": "TestCase",
         "title": "duplicate-id-aria",
         "@id": "https://dequeuniversity.com/rules/axe/4.7/duplicate-id-aria?application=axeAPI",
         "isPartOf": [
-          "WCAG2:parsing"
+          "WCAG2:name-role-value"
         ]
       }
     },
@@ -22332,14 +22332,14 @@
       },
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:failed"
+        "outcome": "earl:cantTell"
       },
       "test": {
         "@type": "TestCase",
         "title": "duplicate-id-aria",
         "@id": "https://dequeuniversity.com/rules/axe/4.7/duplicate-id-aria?application=axeAPI",
         "isPartOf": [
-          "WCAG2:parsing"
+          "WCAG2:name-role-value"
         ]
       }
     },
@@ -22408,7 +22408,7 @@
         "title": "duplicate-id-aria",
         "@id": "https://dequeuniversity.com/rules/axe/4.7/duplicate-id-aria?application=axeAPI",
         "isPartOf": [
-          "WCAG2:parsing"
+          "WCAG2:name-role-value"
         ]
       }
     },
@@ -22477,7 +22477,7 @@
         "title": "duplicate-id-aria",
         "@id": "https://dequeuniversity.com/rules/axe/4.7/duplicate-id-aria?application=axeAPI",
         "isPartOf": [
-          "WCAG2:parsing"
+          "WCAG2:name-role-value"
         ]
       }
     },
@@ -22546,7 +22546,7 @@
         "title": "duplicate-id-aria",
         "@id": "https://dequeuniversity.com/rules/axe/4.7/duplicate-id-aria?application=axeAPI",
         "isPartOf": [
-          "WCAG2:parsing"
+          "WCAG2:name-role-value"
         ]
       }
     },
