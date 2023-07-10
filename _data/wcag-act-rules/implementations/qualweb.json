@@ -2,7 +2,7 @@
   "vendor": "LASIGE, Faculdade de Ciências da Universidade de Lisboa",
   "name": "QualWeb",
   "version": "3.0.0",
-  "lastModified": "19 June 2023",
+  "lastModified": "10 July 2023",
   "approvedRules": {
     "complete": 20,
     "partial": 2,
@@ -10,10 +10,10 @@
     "untested": 0
   },
   "proposedRules": {
-    "complete": 11,
-    "partial": 20,
+    "complete": 12,
+    "partial": 19,
     "inconsistent": 16,
-    "untested": 19
+    "untested": 20
   },
   "actRuleMapping": [
     {
@@ -6100,6 +6100,15 @@
       ]
     },
     {
+      "ruleId": "in6db8",
+      "ruleName": "ARIA required ID references exist",
+      "ruleApproved": false,
+      "procedureNames": [],
+      "consistency": null,
+      "coverage": null,
+      "testCaseResults": []
+    },
+    {
       "ruleId": "bc4a75",
       "ruleName": "ARIA required owned elements",
       "ruleApproved": false,
@@ -10508,7 +10517,7 @@
       "procedureNames": [
         "iframe element has accessible name"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -10519,8 +10528,8 @@
         ]
       },
       "coverage": {
-        "covered": 8,
-        "untested": 3,
+        "covered": 11,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 11
       },
@@ -10625,7 +10634,7 @@
             {
               "procedureName": "iframe element has accessible name",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -10670,7 +10679,7 @@
             {
               "procedureName": "iframe element has accessible name",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -10685,7 +10694,7 @@
             {
               "procedureName": "iframe element has accessible name",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -14951,8 +14960,8 @@
       },
       "coverage": {
         "covered": 1,
-        "untested": 0,
-        "cantTell": 7,
+        "untested": 1,
+        "cantTell": 6,
         "testCaseTotal": 8
       },
       "testCaseResults": [
@@ -14966,7 +14975,7 @@
             {
               "procedureName": "video element auditory content has captions",
               "outcomes": [
-                "cantTell"
+                "untested"
               ]
             }
           ]

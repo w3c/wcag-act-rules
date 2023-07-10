@@ -2,7 +2,7 @@
   "vendor": "Deque Systems",
   "name": "Axe-core",
   "version": "4.6.0",
-  "lastModified": "23 June 2023",
+  "lastModified": "4 July 2023",
   "approvedRules": {
     "complete": 22,
     "partial": 0,
@@ -10,10 +10,10 @@
     "untested": 0
   },
   "proposedRules": {
-    "complete": 16,
-    "partial": 9,
+    "complete": 15,
+    "partial": 10,
     "inconsistent": 5,
-    "untested": 36
+    "untested": 37
   },
   "actRuleMapping": [
     {
@@ -3535,8 +3535,8 @@
           "WCAG2:link-purpose-in-context"
         ],
         "reported": [
-          "WCAG2:name-role-value",
-          "WCAG2:link-purpose-in-context"
+          "WCAG2:link-purpose-in-context",
+          "WCAG2:name-role-value"
         ]
       },
       "coverage": {
@@ -6828,6 +6828,15 @@
       ]
     },
     {
+      "ruleId": "in6db8",
+      "ruleName": "ARIA required ID references exist",
+      "ruleApproved": false,
+      "procedureNames": [],
+      "consistency": null,
+      "coverage": null,
+      "testCaseResults": []
+    },
+    {
       "ruleId": "bc4a75",
       "ruleName": "ARIA required owned elements",
       "ruleApproved": false,
@@ -9736,20 +9745,20 @@
       "procedureNames": [
         "duplicate-id-aria"
       ],
-      "consistency": "complete",
+      "consistency": "partial",
       "accessibilityRequirements": {
-        "correct": true,
+        "correct": false,
         "expected": [
           "WCAG2:parsing"
         ],
         "reported": [
-          "WCAG2:parsing"
+          "WCAG2:name-role-value"
         ]
       },
       "coverage": {
-        "covered": 10,
+        "covered": 7,
         "untested": 0,
-        "cantTell": 0,
+        "cantTell": 3,
         "testCaseTotal": 10
       },
       "testCaseResults": [
@@ -9823,7 +9832,7 @@
             {
               "procedureName": "duplicate-id-aria",
               "outcomes": [
-                "failed"
+                "cantTell"
               ]
             }
           ]
@@ -9838,7 +9847,7 @@
             {
               "procedureName": "duplicate-id-aria",
               "outcomes": [
-                "failed"
+                "cantTell"
               ]
             }
           ]
@@ -9853,7 +9862,7 @@
             {
               "procedureName": "duplicate-id-aria",
               "outcomes": [
-                "failed"
+                "cantTell"
               ]
             }
           ]

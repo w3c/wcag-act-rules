@@ -2,7 +2,7 @@
   "vendor": "IBM Accessibility",
   "name": "Equal Access Accessibility Checker",
   "version": "3.1.42-rc.0",
-  "lastModified": "6 June 2023",
+  "lastModified": "8 July 2023",
   "approvedRules": {
     "complete": 14,
     "partial": 4,
@@ -11,9 +11,9 @@
   },
   "proposedRules": {
     "complete": 10,
-    "partial": 5,
-    "inconsistent": 0,
-    "untested": 51
+    "partial": 4,
+    "inconsistent": 1,
+    "untested": 52
   },
   "actRuleMapping": [
     {
@@ -6406,6 +6406,15 @@
       ]
     },
     {
+      "ruleId": "in6db8",
+      "ruleName": "ARIA required ID references exist",
+      "ruleApproved": false,
+      "procedureNames": [],
+      "consistency": null,
+      "coverage": null,
+      "testCaseResults": []
+    },
+    {
       "ruleId": "bc4a75",
       "ruleName": "ARIA required owned elements",
       "ruleApproved": false,
@@ -7903,7 +7912,7 @@
       "procedureNames": [
         "frame_title_exists:Pass_0,Fail_1"
       ],
-      "consistency": "partial",
+      "consistency": null,
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -7915,7 +7924,7 @@
       },
       "coverage": {
         "covered": 8,
-        "untested": 3,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 11
       },
@@ -7945,7 +7954,7 @@
             {
               "procedureName": "frame_title_exists:Pass_0,Fail_1",
               "outcomes": [
-                "passed"
+                "failed"
               ]
             }
           ]
@@ -7960,7 +7969,7 @@
             {
               "procedureName": "frame_title_exists:Pass_0,Fail_1",
               "outcomes": [
-                "passed"
+                "failed"
               ]
             }
           ]
@@ -8020,7 +8029,7 @@
             {
               "procedureName": "frame_title_exists:Pass_0,Fail_1",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -8065,7 +8074,7 @@
             {
               "procedureName": "frame_title_exists:Pass_0,Fail_1",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -8080,7 +8089,7 @@
             {
               "procedureName": "frame_title_exists:Pass_0,Fail_1",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
