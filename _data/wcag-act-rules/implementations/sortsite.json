@@ -13,7 +13,7 @@
     "complete": 14,
     "partial": 5,
     "inconsistent": 0,
-    "untested": 47
+    "untested": 48
   },
   "actRuleMapping": [
     {
@@ -6098,6 +6098,15 @@
           ]
         }
       ]
+    },
+    {
+      "ruleId": "in6db8",
+      "ruleName": "ARIA required ID references exist",
+      "ruleApproved": false,
+      "procedureNames": [],
+      "consistency": null,
+      "coverage": null,
+      "testCaseResults": []
     },
     {
       "ruleId": "bc4a75",
