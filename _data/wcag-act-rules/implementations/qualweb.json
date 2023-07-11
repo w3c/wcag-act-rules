@@ -12503,7 +12503,7 @@
     },
     {
       "ruleId": "0ssw9k",
-      "ruleName": "Scrollable element is keyboard accessible",
+      "ruleName": "Scrollable element is included in the sequential focus navigation",
       "ruleApproved": false,
       "procedureNames": [
         "Scrollable element is keyboard accessible"
