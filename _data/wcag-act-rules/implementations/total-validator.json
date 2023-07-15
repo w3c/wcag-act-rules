@@ -2,7 +2,7 @@
   "vendor": "Total Validator",
   "name": "Total Validator",
   "version": "17.1.0",
-  "lastModified": "12 July 2023",
+  "lastModified": "15 July 2023",
   "approvedRules": {
     "complete": 22,
     "partial": 0,
@@ -10,8 +10,8 @@
     "untested": 0
   },
   "proposedRules": {
-    "complete": 16,
-    "partial": 2,
+    "complete": 17,
+    "partial": 1,
     "inconsistent": 0,
     "untested": 49
   },
@@ -10852,7 +10852,7 @@
       "procedureNames": [
         "W887"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -10863,8 +10863,8 @@
         ]
       },
       "coverage": {
-        "covered": 15,
-        "untested": 1,
+        "covered": 16,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 16
       },
@@ -10924,7 +10924,7 @@
             {
               "procedureName": "W887",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
