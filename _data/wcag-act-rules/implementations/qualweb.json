@@ -2,7 +2,7 @@
   "vendor": "LASIGE, Faculdade de Ciências da Universidade de Lisboa",
   "name": "QualWeb",
   "version": "3.0.0",
-  "lastModified": "10 July 2023",
+  "lastModified": "17 July 2023",
   "approvedRules": {
     "complete": 20,
     "partial": 2,
@@ -14960,8 +14960,8 @@
       },
       "coverage": {
         "covered": 1,
-        "untested": 1,
-        "cantTell": 6,
+        "untested": 0,
+        "cantTell": 7,
         "testCaseTotal": 8
       },
       "testCaseResults": [
@@ -14975,7 +14975,7 @@
             {
               "procedureName": "video element auditory content has captions",
               "outcomes": [
-                "untested"
+                "cantTell"
               ]
             }
           ]
