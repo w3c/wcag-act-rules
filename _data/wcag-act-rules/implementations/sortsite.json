@@ -10,8 +10,8 @@
     "untested": 0
   },
   "proposedRules": {
-    "complete": 14,
-    "partial": 5,
+    "complete": 13,
+    "partial": 6,
     "inconsistent": 0,
     "untested": 48
   },
@@ -9128,7 +9128,7 @@
     },
     {
       "ruleId": "0ssw9k",
-      "ruleName": "Scrollable element is keyboard accessible",
+      "ruleName": "Scrollable element is included in the sequential focus navigation",
       "ruleApproved": false,
       "procedureNames": [
         "AccCssScrollableNoFocus"
@@ -9319,7 +9319,7 @@
       "procedureNames": [
         "AccHtmlTableMissingCells"
       ],
-      "consistency": "complete",
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -9330,8 +9330,8 @@
         ]
       },
       "coverage": {
-        "covered": 16,
-        "untested": 0,
+        "covered": 15,
+        "untested": 1,
         "cantTell": 0,
         "testCaseTotal": 16
       },
@@ -9382,16 +9382,16 @@
           ]
         },
         {
-          "testcaseId": "0f66b15e6d2430e9afbdd6dc579023ece171b278",
+          "testcaseId": "7240c687f37a56254b1847ae6d75e5d4090bd8a5",
           "testCaseName": "Passed Example 4",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/d0f69e/0f66b15e6d2430e9afbdd6dc579023ece171b278.html",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/d0f69e/7240c687f37a56254b1847ae6d75e5d4090bd8a5.html",
           "testCaseApproved": false,
           "expected": "passed",
           "procedureResults": [
             {
               "procedureName": "AccHtmlTableMissingCells",
               "outcomes": [
-                "passed"
+                "untested"
               ]
             }
           ]

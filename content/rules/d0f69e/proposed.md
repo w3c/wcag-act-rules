@@ -9,8 +9,8 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> d0f69e</p>
-  <p><strong>Date:</strong> Updated 11 November 2022</p>
-  <p><strong>Authors:</strong> <a href="https://github.com/audreymaniez">Audrey Maniez</a>, <a href="https://github.com/jkodu">Jey Nandakumar</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
+  <p><strong>Date:</strong> Updated 14 July 2023</p>
+  <p><strong>Authors:</strong> <a href="https://github.com/audreymaniez">Audrey Maniez</a>, Helen Burge, <a href="https://github.com/jkodu">Jey Nandakumar</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
 rule_meta:
@@ -19,7 +19,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that each table header has assigned cells in a table element.
-  last_modified: 11 November 2022
+  last_modified: 14 July 2023
   scs_tested:
     - handle: Info and Relationships
       num: 1.3.1
@@ -155,14 +155,14 @@ Each of the 2 `th` elements has an assigned `td` element because this `td` eleme
 
 #### Passed Example 4
 
-<a class="example-link" title="Passed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/d0f69e/0f66b15e6d2430e9afbdd6dc579023ece171b278.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/d0f69e/7240c687f37a56254b1847ae6d75e5d4090bd8a5.html">Open in a new tab</a>
 
 Each of the 4 `th` elements has an assigned `td` element, within the same `table` element having a [semantic role][] of `grid`.
 
 ```html
 <table role="grid">
 	<thead>
-		<tr role="row">
+		<tr>
 			<td></td>
 			<th scope="col" role="columnheader">Breakfast</th>
 			<th scope="col" role="columnheader">Lunch</th>
@@ -170,7 +170,7 @@ Each of the 4 `th` elements has an assigned `td` element, within the same `table
 		</tr>
 	</thead>
 	<tbody>
-		<tr role="row">
+		<tr>
 			<th scope="row" role="rowheader">Day 1</th>
 			<td>8:00</td>
 			<td>13:00</td>

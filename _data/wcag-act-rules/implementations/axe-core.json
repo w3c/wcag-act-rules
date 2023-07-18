@@ -2,7 +2,7 @@
   "vendor": "Deque Systems",
   "name": "Axe-core",
   "version": "4.6.0",
-  "lastModified": "4 July 2023",
+  "lastModified": "15 July 2023",
   "approvedRules": {
     "complete": 22,
     "partial": 0,
@@ -7124,7 +7124,8 @@
       "ruleName": "ARIA state or property is permitted",
       "ruleApproved": false,
       "procedureNames": [
-        "aria-allowed-attr"
+        "aria-allowed-attr",
+        "aria-prohibited-attr"
       ],
       "consistency": "complete",
       "accessibilityRequirements": {
@@ -7153,6 +7154,12 @@
               "outcomes": [
                 "passed"
               ]
+            },
+            {
+              "procedureName": "aria-prohibited-attr",
+              "outcomes": [
+                "passed"
+              ]
             }
           ]
         },
@@ -7165,6 +7172,12 @@
           "procedureResults": [
             {
               "procedureName": "aria-allowed-attr",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
+              "procedureName": "aria-prohibited-attr",
               "outcomes": [
                 "passed"
               ]
@@ -7183,6 +7196,12 @@
               "outcomes": [
                 "passed"
               ]
+            },
+            {
+              "procedureName": "aria-prohibited-attr",
+              "outcomes": [
+                "passed"
+              ]
             }
           ]
         },
@@ -7195,6 +7214,12 @@
           "procedureResults": [
             {
               "procedureName": "aria-allowed-attr",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
+              "procedureName": "aria-prohibited-attr",
               "outcomes": [
                 "passed"
               ]
@@ -7213,6 +7238,12 @@
               "outcomes": [
                 "passed"
               ]
+            },
+            {
+              "procedureName": "aria-prohibited-attr",
+              "outcomes": [
+                "passed"
+              ]
             }
           ]
         },
@@ -7225,6 +7256,12 @@
           "procedureResults": [
             {
               "procedureName": "aria-allowed-attr",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
+              "procedureName": "aria-prohibited-attr",
               "outcomes": [
                 "passed"
               ]
@@ -7243,6 +7280,12 @@
               "outcomes": [
                 "passed"
               ]
+            },
+            {
+              "procedureName": "aria-prohibited-attr",
+              "outcomes": [
+                "passed"
+              ]
             }
           ]
         },
@@ -7255,6 +7298,12 @@
           "procedureResults": [
             {
               "procedureName": "aria-allowed-attr",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
+              "procedureName": "aria-prohibited-attr",
               "outcomes": [
                 "passed"
               ]
@@ -7273,6 +7322,12 @@
               "outcomes": [
                 "passed"
               ]
+            },
+            {
+              "procedureName": "aria-prohibited-attr",
+              "outcomes": [
+                "passed"
+              ]
             }
           ]
         },
@@ -7285,6 +7340,12 @@
           "procedureResults": [
             {
               "procedureName": "aria-allowed-attr",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
+              "procedureName": "aria-prohibited-attr",
               "outcomes": [
                 "passed"
               ]
@@ -7303,6 +7364,12 @@
               "outcomes": [
                 "passed"
               ]
+            },
+            {
+              "procedureName": "aria-prohibited-attr",
+              "outcomes": [
+                "passed"
+              ]
             }
           ]
         },
@@ -7317,6 +7384,12 @@
               "procedureName": "aria-allowed-attr",
               "outcomes": [
                 "failed"
+              ]
+            },
+            {
+              "procedureName": "aria-prohibited-attr",
+              "outcomes": [
+                "passed"
               ]
             }
           ]
@@ -7333,6 +7406,12 @@
               "outcomes": [
                 "failed"
               ]
+            },
+            {
+              "procedureName": "aria-prohibited-attr",
+              "outcomes": [
+                "passed"
+              ]
             }
           ]
         },
@@ -7345,6 +7424,12 @@
           "procedureResults": [
             {
               "procedureName": "aria-allowed-attr",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
+              "procedureName": "aria-prohibited-attr",
               "outcomes": [
                 "failed"
               ]
@@ -7363,6 +7448,12 @@
               "outcomes": [
                 "inapplicable"
               ]
+            },
+            {
+              "procedureName": "aria-prohibited-attr",
+              "outcomes": [
+                "inapplicable"
+              ]
             }
           ]
         },
@@ -7375,6 +7466,12 @@
           "procedureResults": [
             {
               "procedureName": "aria-allowed-attr",
+              "outcomes": [
+                "inapplicable"
+              ]
+            },
+            {
+              "procedureName": "aria-prohibited-attr",
               "outcomes": [
                 "inapplicable"
               ]
@@ -11930,7 +12027,7 @@
     },
     {
       "ruleId": "0ssw9k",
-      "ruleName": "Scrollable element is keyboard accessible",
+      "ruleName": "Scrollable element is included in the sequential focus navigation",
       "ruleApproved": false,
       "procedureNames": [
         "scrollable-region-focusable"
@@ -12183,9 +12280,9 @@
           ]
         },
         {
-          "testcaseId": "0f66b15e6d2430e9afbdd6dc579023ece171b278",
+          "testcaseId": "7240c687f37a56254b1847ae6d75e5d4090bd8a5",
           "testCaseName": "Passed Example 4",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/d0f69e/0f66b15e6d2430e9afbdd6dc579023ece171b278.html",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/d0f69e/7240c687f37a56254b1847ae6d75e5d4090bd8a5.html",
           "testCaseApproved": false,
           "expected": "passed",
           "procedureResults": [
