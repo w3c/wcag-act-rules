@@ -53442,7 +53442,7 @@
       }
     },
     {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/d0f69e/0f66b15e6d2430e9afbdd6dc579023ece171b278.html",
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/d0f69e/7240c687f37a56254b1847ae6d75e5d4090bd8a5.html",
       "@type": "TestSubject",
       "dct:hasPart": [
         {
@@ -53462,7 +53462,7 @@
             "@list": []
           },
           "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/d0f69e/0f66b15e6d2430e9afbdd6dc579023ece171b278.html"
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/d0f69e/7240c687f37a56254b1847ae6d75e5d4090bd8a5.html"
         },
         {
           "@type": [
@@ -53475,7 +53475,7 @@
               "cnt:ContentAsText"
             ],
             "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Passed Example 4</title>\n</head>\n<body>\n\t<table role=\"grid\">\n\t\t<thead>\n\t\t\t<tr role=\"row\">\n\t\t\t\t<td></td>\n\t\t\t\t<th scope=\"col\" role=\"columnheader\">Breakfast</th>\n\t\t\t\t<th scope=\"col\" role=\"columnheader\">Lunch</th>\n\t\t\t\t<th scope=\"col\" role=\"columnheader\">Dinner</th>\n\t\t\t</tr>\n\t\t</thead>\n\t\t<tbody>\n\t\t\t<tr role=\"row\">\n\t\t\t\t<th scope=\"row\" role=\"rowheader\">Day 1</th>\n\t\t\t\t<td>8:00</td>\n\t\t\t\t<td>13:00</td>\n\t\t\t\t<td>18:00</td>\n\t\t\t</tr>\n\t\t</tbody>\n\t</table>\n</body>\n</html>"
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Passed Example 4</title>\n</head>\n<body>\n\t<table role=\"grid\">\n\t\t<thead>\n\t\t\t<tr>\n\t\t\t\t<td></td>\n\t\t\t\t<th scope=\"col\" role=\"columnheader\">Breakfast</th>\n\t\t\t\t<th scope=\"col\" role=\"columnheader\">Lunch</th>\n\t\t\t\t<th scope=\"col\" role=\"columnheader\">Dinner</th>\n\t\t\t</tr>\n\t\t</thead>\n\t\t<tbody>\n\t\t\t<tr>\n\t\t\t\t<th scope=\"row\" role=\"rowheader\">Day 1</th>\n\t\t\t\t<td>8:00</td>\n\t\t\t\t<td>13:00</td>\n\t\t\t\t<td>18:00</td>\n\t\t\t</tr>\n\t\t</tbody>\n\t</table>\n</body>\n</html>"
           },
           "http-vocab:headers": {
             "@list": [
@@ -53489,7 +53489,7 @@
           "http-vocab:statusCodeValue": 200
         }
       ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/d0f69e/0f66b15e6d2430e9afbdd6dc579023ece171b278.html"
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/d0f69e/7240c687f37a56254b1847ae6d75e5d4090bd8a5.html"
     },
     {
       "@type": "Assertion",
@@ -53510,7 +53510,7 @@
         }
       },
       "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/d0f69e/0f66b15e6d2430e9afbdd6dc579023ece171b278.html"
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/d0f69e/7240c687f37a56254b1847ae6d75e5d4090bd8a5.html"
       },
       "test": {
         "@id": "https://alfa.siteimprove.com/rules/sia-r46"
