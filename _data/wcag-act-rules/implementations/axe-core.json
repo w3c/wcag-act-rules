@@ -12027,7 +12027,7 @@
     },
     {
       "ruleId": "0ssw9k",
-      "ruleName": "Scrollable element is included in the sequential focus navigation",
+      "ruleName": "Scrollable content can be reached with sequential focus navigation",
       "ruleApproved": false,
       "procedureNames": [
         "scrollable-region-focusable"
