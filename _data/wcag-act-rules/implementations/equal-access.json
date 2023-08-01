@@ -2,11 +2,11 @@
   "vendor": "IBM Accessibility",
   "name": "Equal Access Accessibility Checker",
   "version": "3.1.42-rc.0",
-  "lastModified": "8 July 2023",
+  "lastModified": "26 July 2023",
   "approvedRules": {
-    "complete": 14,
+    "complete": 17,
     "partial": 4,
-    "inconsistent": 4,
+    "inconsistent": 1,
     "untested": 0
   },
   "proposedRules": {
@@ -2972,16 +2972,18 @@
       "procedureNames": [
         "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style"
       ],
-      "consistency": null,
+      "consistency": "complete",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:text-spacing"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:text-spacing"
+        ]
       },
       "coverage": {
-        "covered": 12,
+        "covered": 16,
         "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 16
@@ -2997,7 +2999,7 @@
             {
               "procedureName": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
               "outcomes": [
-                "inapplicable"
+                "passed"
               ]
             }
           ]
@@ -3012,7 +3014,7 @@
             {
               "procedureName": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
               "outcomes": [
-                "inapplicable"
+                "passed"
               ]
             }
           ]
@@ -3027,7 +3029,7 @@
             {
               "procedureName": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
               "outcomes": [
-                "inapplicable"
+                "passed"
               ]
             }
           ]
@@ -3042,7 +3044,7 @@
             {
               "procedureName": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
               "outcomes": [
-                "inapplicable"
+                "passed"
               ]
             }
           ]
@@ -3057,7 +3059,7 @@
             {
               "procedureName": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
               "outcomes": [
-                "inapplicable"
+                "passed"
               ]
             }
           ]
@@ -3072,7 +3074,7 @@
             {
               "procedureName": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
               "outcomes": [
-                "inapplicable"
+                "passed"
               ]
             }
           ]
@@ -3087,7 +3089,7 @@
             {
               "procedureName": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
               "outcomes": [
-                "inapplicable"
+                "passed"
               ]
             }
           ]
@@ -3102,7 +3104,7 @@
             {
               "procedureName": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
               "outcomes": [
-                "inapplicable"
+                "passed"
               ]
             }
           ]
@@ -3117,7 +3119,7 @@
             {
               "procedureName": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
               "outcomes": [
-                "inapplicable"
+                "failed"
               ]
             }
           ]
@@ -3132,7 +3134,7 @@
             {
               "procedureName": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
               "outcomes": [
-                "inapplicable"
+                "failed"
               ]
             }
           ]
@@ -3147,7 +3149,7 @@
             {
               "procedureName": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
               "outcomes": [
-                "inapplicable"
+                "failed"
               ]
             }
           ]
@@ -3162,7 +3164,7 @@
             {
               "procedureName": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
               "outcomes": [
-                "inapplicable"
+                "failed"
               ]
             }
           ]
@@ -3683,16 +3685,18 @@
       "procedureNames": [
         "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style"
       ],
-      "consistency": null,
+      "consistency": "complete",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:text-spacing"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:text-spacing"
+        ]
       },
       "coverage": {
-        "covered": 12,
+        "covered": 16,
         "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 16
@@ -3708,7 +3712,7 @@
             {
               "procedureName": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
               "outcomes": [
-                "inapplicable"
+                "passed"
               ]
             }
           ]
@@ -3723,7 +3727,7 @@
             {
               "procedureName": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
               "outcomes": [
-                "inapplicable"
+                "passed"
               ]
             }
           ]
@@ -3738,7 +3742,7 @@
             {
               "procedureName": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
               "outcomes": [
-                "inapplicable"
+                "passed"
               ]
             }
           ]
@@ -3753,7 +3757,7 @@
             {
               "procedureName": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
               "outcomes": [
-                "inapplicable"
+                "passed"
               ]
             }
           ]
@@ -3768,7 +3772,7 @@
             {
               "procedureName": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
               "outcomes": [
-                "inapplicable"
+                "passed"
               ]
             }
           ]
@@ -3783,7 +3787,7 @@
             {
               "procedureName": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
               "outcomes": [
-                "inapplicable"
+                "passed"
               ]
             }
           ]
@@ -3798,7 +3802,7 @@
             {
               "procedureName": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
               "outcomes": [
-                "inapplicable"
+                "passed"
               ]
             }
           ]
@@ -3813,7 +3817,7 @@
             {
               "procedureName": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
               "outcomes": [
-                "inapplicable"
+                "passed"
               ]
             }
           ]
@@ -3828,7 +3832,7 @@
             {
               "procedureName": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
               "outcomes": [
-                "inapplicable"
+                "failed"
               ]
             }
           ]
@@ -3843,7 +3847,7 @@
             {
               "procedureName": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
               "outcomes": [
-                "inapplicable"
+                "failed"
               ]
             }
           ]
@@ -3858,7 +3862,7 @@
             {
               "procedureName": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
               "outcomes": [
-                "inapplicable"
+                "failed"
               ]
             }
           ]
@@ -3873,7 +3877,7 @@
             {
               "procedureName": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
               "outcomes": [
-                "inapplicable"
+                "failed"
               ]
             }
           ]
@@ -4863,16 +4867,18 @@
       "procedureNames": [
         "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style"
       ],
-      "consistency": null,
+      "consistency": "complete",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:text-spacing"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:text-spacing"
+        ]
       },
       "coverage": {
-        "covered": 15,
+        "covered": 21,
         "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 21
@@ -4888,7 +4894,7 @@
             {
               "procedureName": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
               "outcomes": [
-                "inapplicable"
+                "passed"
               ]
             }
           ]
@@ -4903,7 +4909,7 @@
             {
               "procedureName": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
               "outcomes": [
-                "inapplicable"
+                "passed"
               ]
             }
           ]
@@ -4918,7 +4924,7 @@
             {
               "procedureName": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
               "outcomes": [
-                "inapplicable"
+                "passed"
               ]
             }
           ]
@@ -4933,7 +4939,7 @@
             {
               "procedureName": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
               "outcomes": [
-                "inapplicable"
+                "passed"
               ]
             }
           ]
@@ -4948,7 +4954,7 @@
             {
               "procedureName": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
               "outcomes": [
-                "inapplicable"
+                "passed"
               ]
             }
           ]
@@ -4963,7 +4969,7 @@
             {
               "procedureName": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
               "outcomes": [
-                "inapplicable"
+                "passed"
               ]
             }
           ]
@@ -4978,7 +4984,7 @@
             {
               "procedureName": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
               "outcomes": [
-                "inapplicable"
+                "passed"
               ]
             }
           ]
@@ -4993,7 +4999,7 @@
             {
               "procedureName": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
               "outcomes": [
-                "inapplicable"
+                "passed"
               ]
             }
           ]
@@ -5008,7 +5014,7 @@
             {
               "procedureName": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
               "outcomes": [
-                "inapplicable"
+                "passed"
               ]
             }
           ]
@@ -5023,7 +5029,7 @@
             {
               "procedureName": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
               "outcomes": [
-                "inapplicable"
+                "passed"
               ]
             }
           ]
@@ -5038,7 +5044,7 @@
             {
               "procedureName": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
               "outcomes": [
-                "inapplicable"
+                "failed"
               ]
             }
           ]
@@ -5053,7 +5059,7 @@
             {
               "procedureName": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
               "outcomes": [
-                "inapplicable"
+                "failed"
               ]
             }
           ]
@@ -5068,7 +5074,7 @@
             {
               "procedureName": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
               "outcomes": [
-                "inapplicable"
+                "failed"
               ]
             }
           ]
@@ -5083,7 +5089,7 @@
             {
               "procedureName": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
               "outcomes": [
-                "inapplicable"
+                "failed"
               ]
             }
           ]
@@ -5098,7 +5104,7 @@
             {
               "procedureName": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
               "outcomes": [
-                "inapplicable"
+                "failed"
               ]
             }
           ]
@@ -5113,7 +5119,7 @@
             {
               "procedureName": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
               "outcomes": [
-                "inapplicable"
+                "failed"
               ]
             }
           ]
