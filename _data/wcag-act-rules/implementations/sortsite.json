@@ -2,7 +2,7 @@
   "vendor": "PowerMapper",
   "name": "SortSite",
   "version": 6.45,
-  "lastModified": "8 March 2023",
+  "lastModified": "8 August 2023",
   "approvedRules": {
     "complete": 21,
     "partial": 0,
@@ -10,8 +10,8 @@
     "untested": 0
   },
   "proposedRules": {
-    "complete": 13,
-    "partial": 6,
+    "complete": 17,
+    "partial": 2,
     "inconsistent": 0,
     "untested": 48
   },
@@ -34,8 +34,8 @@
         ]
       },
       "coverage": {
-        "covered": 23,
-        "untested": 5,
+        "covered": 28,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 28
       },
@@ -365,7 +365,7 @@
             {
               "procedureName": "AccHtmlAutocompleteInvalid",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -380,7 +380,7 @@
             {
               "procedureName": "AccHtmlAutocompleteInvalid",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -395,7 +395,7 @@
             {
               "procedureName": "AccHtmlAutocompleteInvalid",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -410,7 +410,7 @@
             {
               "procedureName": "AccHtmlAutocompleteInvalid",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -425,7 +425,7 @@
             {
               "procedureName": "AccHtmlAutocompleteInvalid",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -5522,15 +5522,15 @@
       "procedureNames": [
         "W3cHtml5Error-RnvErAkey-aria-*"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
         "reported": []
       },
       "coverage": {
-        "covered": 6,
-        "untested": 1,
+        "covered": 7,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 7
       },
@@ -5590,7 +5590,7 @@
             {
               "procedureName": "W3cHtml5Error-RnvErAkey-aria-*",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -5660,8 +5660,8 @@
         ]
       },
       "coverage": {
-        "covered": 13,
-        "untested": 2,
+        "covered": 14,
+        "untested": 1,
         "cantTell": 0,
         "testCaseTotal": 15
       },
@@ -5871,7 +5871,7 @@
             {
               "procedureName": "W3cHtml5AriaRequiredParentRoles-*",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -6450,17 +6450,17 @@
       "ruleName": "ARIA state or property has valid value",
       "ruleApproved": false,
       "procedureNames": [
-        "W3cHtml5Error-RnvErAval-aria-*"
+        "AccAriaAttributeInvalid"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
         "reported": []
       },
       "coverage": {
-        "covered": 12,
-        "untested": 9,
+        "covered": 21,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 21
       },
@@ -6473,9 +6473,9 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "W3cHtml5Error-RnvErAval-aria-*",
+              "procedureName": "AccAriaAttributeInvalid",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -6488,9 +6488,9 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "W3cHtml5Error-RnvErAval-aria-*",
+              "procedureName": "AccAriaAttributeInvalid",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -6503,7 +6503,7 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "W3cHtml5Error-RnvErAval-aria-*",
+              "procedureName": "AccAriaAttributeInvalid",
               "outcomes": [
                 "passed"
               ]
@@ -6518,9 +6518,9 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "W3cHtml5Error-RnvErAval-aria-*",
+              "procedureName": "AccAriaAttributeInvalid",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -6533,7 +6533,7 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "W3cHtml5Error-RnvErAval-aria-*",
+              "procedureName": "AccAriaAttributeInvalid",
               "outcomes": [
                 "passed"
               ]
@@ -6548,7 +6548,7 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "W3cHtml5Error-RnvErAval-aria-*",
+              "procedureName": "AccAriaAttributeInvalid",
               "outcomes": [
                 "passed"
               ]
@@ -6563,7 +6563,7 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "W3cHtml5Error-RnvErAval-aria-*",
+              "procedureName": "AccAriaAttributeInvalid",
               "outcomes": [
                 "passed"
               ]
@@ -6578,7 +6578,7 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "W3cHtml5Error-RnvErAval-aria-*",
+              "procedureName": "AccAriaAttributeInvalid",
               "outcomes": [
                 "passed"
               ]
@@ -6593,9 +6593,9 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "W3cHtml5Error-RnvErAval-aria-*",
+              "procedureName": "AccAriaAttributeInvalid",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -6608,7 +6608,7 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "W3cHtml5Error-RnvErAval-aria-*",
+              "procedureName": "AccAriaAttributeInvalid",
               "outcomes": [
                 "passed"
               ]
@@ -6623,7 +6623,7 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "W3cHtml5Error-RnvErAval-aria-*",
+              "procedureName": "AccAriaAttributeInvalid",
               "outcomes": [
                 "failed"
               ]
@@ -6638,9 +6638,9 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "W3cHtml5Error-RnvErAval-aria-*",
+              "procedureName": "AccAriaAttributeInvalid",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -6653,7 +6653,7 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "W3cHtml5Error-RnvErAval-aria-*",
+              "procedureName": "AccAriaAttributeInvalid",
               "outcomes": [
                 "failed"
               ]
@@ -6668,7 +6668,7 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "W3cHtml5Error-RnvErAval-aria-*",
+              "procedureName": "AccAriaAttributeInvalid",
               "outcomes": [
                 "failed"
               ]
@@ -6683,7 +6683,7 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "W3cHtml5Error-RnvErAval-aria-*",
+              "procedureName": "AccAriaAttributeInvalid",
               "outcomes": [
                 "failed"
               ]
@@ -6698,9 +6698,9 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "W3cHtml5Error-RnvErAval-aria-*",
+              "procedureName": "AccAriaAttributeInvalid",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -6713,9 +6713,9 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "W3cHtml5Error-RnvErAval-aria-*",
+              "procedureName": "AccAriaAttributeInvalid",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -6728,7 +6728,7 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "W3cHtml5Error-RnvErAval-aria-*",
+              "procedureName": "AccAriaAttributeInvalid",
               "outcomes": [
                 "passed"
               ]
@@ -6743,7 +6743,7 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "W3cHtml5Error-RnvErAval-aria-*",
+              "procedureName": "AccAriaAttributeInvalid",
               "outcomes": [
                 "passed"
               ]
@@ -6758,9 +6758,9 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "W3cHtml5Error-RnvErAval-aria-*",
+              "procedureName": "AccAriaAttributeInvalid",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -6773,9 +6773,9 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "W3cHtml5Error-RnvErAval-aria-*",
+              "procedureName": "AccAriaAttributeInvalid",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -7786,8 +7786,8 @@
         ]
       },
       "coverage": {
-        "covered": 8,
-        "untested": 3,
+        "covered": 10,
+        "untested": 1,
         "cantTell": 0,
         "testCaseTotal": 11
       },
@@ -7892,7 +7892,7 @@
             {
               "procedureName": "AccHtmlFrameTitleMissing",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -7937,7 +7937,7 @@
             {
               "procedureName": "AccHtmlFrameTitleMissing",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -9113,7 +9113,7 @@
       "procedureNames": [
         "AccHtmlTableMissingCells"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -9124,8 +9124,8 @@
         ]
       },
       "coverage": {
-        "covered": 15,
-        "untested": 1,
+        "covered": 16,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 16
       },
@@ -9185,7 +9185,7 @@
             {
               "procedureName": "AccHtmlTableMissingCells",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -9379,7 +9379,7 @@
       "procedureNames": [
         "AccHtmlContrastMinimum"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -9391,8 +9391,8 @@
         ]
       },
       "coverage": {
-        "covered": 31,
-        "untested": 1,
+        "covered": 32,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 32
       },
@@ -9782,7 +9782,7 @@
             {
               "procedureName": "AccHtmlContrastMinimum",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
