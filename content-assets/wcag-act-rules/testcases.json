@@ -3,7 +3,7 @@
   "website": "https://www.w3.org/WAI/standards-guidelines/act/rules/",
   "license": "https://act-rules.github.io/pages/license/",
   "description": "Accessibility conformance testing rules for HTML",
-  "count": 1153,
+  "count": 1141,
   "testcases": [
     {
       "ruleId": "73f2c2",
@@ -2046,246 +2046,6 @@
       "relativePath": "testcases/bf051a/1b73557d29073ecd327790ca1a6e343b4395b2ab.svg",
       "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bf051a/1b73557d29073ecd327790ca1a6e343b4395b2ab.svg",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/bf051a/proposed/"
-    },
-    {
-      "ruleId": "5b7ae0",
-      "isApproved": true,
-      "approved": true,
-      "ruleName": "HTML page `lang` and `xml:lang` attributes have matching values",
-      "ruleAccessibilityRequirements": {
-        "wcag20:3.1.1": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "e41574526cdf4626016308c0f4185a5f91a0d29d",
-      "testcaseTitle": "Passed Example 1",
-      "relativePath": "testcases/5b7ae0/e41574526cdf4626016308c0f4185a5f91a0d29d.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5b7ae0/e41574526cdf4626016308c0f4185a5f91a0d29d.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/5b7ae0/proposed/"
-    },
-    {
-      "ruleId": "5b7ae0",
-      "isApproved": true,
-      "approved": true,
-      "ruleName": "HTML page `lang` and `xml:lang` attributes have matching values",
-      "ruleAccessibilityRequirements": {
-        "wcag20:3.1.1": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "dfc9d18aeb0f09f44646435fd37fcf63410c197b",
-      "testcaseTitle": "Passed Example 2",
-      "relativePath": "testcases/5b7ae0/dfc9d18aeb0f09f44646435fd37fcf63410c197b.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5b7ae0/dfc9d18aeb0f09f44646435fd37fcf63410c197b.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/5b7ae0/proposed/"
-    },
-    {
-      "ruleId": "5b7ae0",
-      "isApproved": true,
-      "approved": true,
-      "ruleName": "HTML page `lang` and `xml:lang` attributes have matching values",
-      "ruleAccessibilityRequirements": {
-        "wcag20:3.1.1": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "a203d146dcc0d1df9f246cdf3b3b860d87e91c1c",
-      "testcaseTitle": "Passed Example 3",
-      "relativePath": "testcases/5b7ae0/a203d146dcc0d1df9f246cdf3b3b860d87e91c1c.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5b7ae0/a203d146dcc0d1df9f246cdf3b3b860d87e91c1c.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/5b7ae0/proposed/"
-    },
-    {
-      "ruleId": "5b7ae0",
-      "isApproved": true,
-      "approved": true,
-      "ruleName": "HTML page `lang` and `xml:lang` attributes have matching values",
-      "ruleAccessibilityRequirements": {
-        "wcag20:3.1.1": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "failed",
-      "testcaseId": "82c5599492f32e1a90615f15548e79d254dd1b54",
-      "testcaseTitle": "Failed Example 1",
-      "relativePath": "testcases/5b7ae0/82c5599492f32e1a90615f15548e79d254dd1b54.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5b7ae0/82c5599492f32e1a90615f15548e79d254dd1b54.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/5b7ae0/proposed/"
-    },
-    {
-      "ruleId": "5b7ae0",
-      "isApproved": true,
-      "approved": true,
-      "ruleName": "HTML page `lang` and `xml:lang` attributes have matching values",
-      "ruleAccessibilityRequirements": {
-        "wcag20:3.1.1": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "failed",
-      "testcaseId": "943ccfe43d79c6eb8013e793440c49da63fa5d8a",
-      "testcaseTitle": "Failed Example 2",
-      "relativePath": "testcases/5b7ae0/943ccfe43d79c6eb8013e793440c49da63fa5d8a.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5b7ae0/943ccfe43d79c6eb8013e793440c49da63fa5d8a.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/5b7ae0/proposed/"
-    },
-    {
-      "ruleId": "5b7ae0",
-      "isApproved": true,
-      "approved": true,
-      "ruleName": "HTML page `lang` and `xml:lang` attributes have matching values",
-      "ruleAccessibilityRequirements": {
-        "wcag20:3.1.1": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "inapplicable",
-      "testcaseId": "d0f61fa9d6acd6759aaf5aec062a1e5026fcf4d5",
-      "testcaseTitle": "Inapplicable Example 1",
-      "relativePath": "testcases/5b7ae0/d0f61fa9d6acd6759aaf5aec062a1e5026fcf4d5.svg",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5b7ae0/d0f61fa9d6acd6759aaf5aec062a1e5026fcf4d5.svg",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/5b7ae0/proposed/"
-    },
-    {
-      "ruleId": "5b7ae0",
-      "isApproved": true,
-      "approved": true,
-      "ruleName": "HTML page `lang` and `xml:lang` attributes have matching values",
-      "ruleAccessibilityRequirements": {
-        "wcag20:3.1.1": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "inapplicable",
-      "testcaseId": "84aa25ef587640beb210c6de408f209021542593",
-      "testcaseTitle": "Inapplicable Example 2",
-      "relativePath": "testcases/5b7ae0/84aa25ef587640beb210c6de408f209021542593.svg",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5b7ae0/84aa25ef587640beb210c6de408f209021542593.svg",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/5b7ae0/proposed/"
-    },
-    {
-      "ruleId": "5b7ae0",
-      "isApproved": true,
-      "approved": true,
-      "ruleName": "HTML page `lang` and `xml:lang` attributes have matching values",
-      "ruleAccessibilityRequirements": {
-        "wcag20:3.1.1": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "inapplicable",
-      "testcaseId": "f766afdae47b656ab4dd08a3ae552506f3f1f820",
-      "testcaseTitle": "Inapplicable Example 3",
-      "relativePath": "testcases/5b7ae0/f766afdae47b656ab4dd08a3ae552506f3f1f820.xml",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5b7ae0/f766afdae47b656ab4dd08a3ae552506f3f1f820.xml",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/5b7ae0/proposed/"
-    },
-    {
-      "ruleId": "5b7ae0",
-      "isApproved": true,
-      "approved": true,
-      "ruleName": "HTML page `lang` and `xml:lang` attributes have matching values",
-      "ruleAccessibilityRequirements": {
-        "wcag20:3.1.1": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "inapplicable",
-      "testcaseId": "36d5b7fa707573676b64884e8aa2b42a730f38d7",
-      "testcaseTitle": "Inapplicable Example 4",
-      "relativePath": "testcases/5b7ae0/36d5b7fa707573676b64884e8aa2b42a730f38d7.xhtml",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5b7ae0/36d5b7fa707573676b64884e8aa2b42a730f38d7.xhtml",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/5b7ae0/proposed/"
-    },
-    {
-      "ruleId": "5b7ae0",
-      "isApproved": true,
-      "approved": true,
-      "ruleName": "HTML page `lang` and `xml:lang` attributes have matching values",
-      "ruleAccessibilityRequirements": {
-        "wcag20:3.1.1": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "inapplicable",
-      "testcaseId": "f8214944f374b25c3ce42bd92a4304d38a2309dc",
-      "testcaseTitle": "Inapplicable Example 5",
-      "relativePath": "testcases/5b7ae0/f8214944f374b25c3ce42bd92a4304d38a2309dc.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5b7ae0/f8214944f374b25c3ce42bd92a4304d38a2309dc.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/5b7ae0/proposed/"
-    },
-    {
-      "ruleId": "5b7ae0",
-      "isApproved": true,
-      "approved": true,
-      "ruleName": "HTML page `lang` and `xml:lang` attributes have matching values",
-      "ruleAccessibilityRequirements": {
-        "wcag20:3.1.1": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "inapplicable",
-      "testcaseId": "f4e4e57719f3adce548e04b1518156e23790d930",
-      "testcaseTitle": "Inapplicable Example 6",
-      "relativePath": "testcases/5b7ae0/f4e4e57719f3adce548e04b1518156e23790d930.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5b7ae0/f4e4e57719f3adce548e04b1518156e23790d930.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/5b7ae0/proposed/"
-    },
-    {
-      "ruleId": "5b7ae0",
-      "isApproved": true,
-      "approved": true,
-      "ruleName": "HTML page `lang` and `xml:lang` attributes have matching values",
-      "ruleAccessibilityRequirements": {
-        "wcag20:3.1.1": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "inapplicable",
-      "testcaseId": "a6034429b6f1e6a137fc972e0acee45e06a685d2",
-      "testcaseTitle": "Inapplicable Example 7",
-      "relativePath": "testcases/5b7ae0/a6034429b6f1e6a137fc972e0acee45e06a685d2.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5b7ae0/a6034429b6f1e6a137fc972e0acee45e06a685d2.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/5b7ae0/proposed/"
     },
     {
       "ruleId": "2779a5",
@@ -22563,7 +22323,7 @@
     },
     {
       "ruleId": "0ssw9k",
-      "ruleName": "Scrollable element is included in the sequential focus navigation",
+      "ruleName": "Scrollable content can be reached with sequential focus navigation",
       "ruleAccessibilityRequirements": {
         "wcag20:2.1.1": {
           "forConformance": true,
@@ -22594,7 +22354,7 @@
     },
     {
       "ruleId": "0ssw9k",
-      "ruleName": "Scrollable element is included in the sequential focus navigation",
+      "ruleName": "Scrollable content can be reached with sequential focus navigation",
       "ruleAccessibilityRequirements": {
         "wcag20:2.1.1": {
           "forConformance": true,
@@ -22625,7 +22385,7 @@
     },
     {
       "ruleId": "0ssw9k",
-      "ruleName": "Scrollable element is included in the sequential focus navigation",
+      "ruleName": "Scrollable content can be reached with sequential focus navigation",
       "ruleAccessibilityRequirements": {
         "wcag20:2.1.1": {
           "forConformance": true,
@@ -22656,7 +22416,7 @@
     },
     {
       "ruleId": "0ssw9k",
-      "ruleName": "Scrollable element is included in the sequential focus navigation",
+      "ruleName": "Scrollable content can be reached with sequential focus navigation",
       "ruleAccessibilityRequirements": {
         "wcag20:2.1.1": {
           "forConformance": true,
@@ -22687,7 +22447,7 @@
     },
     {
       "ruleId": "0ssw9k",
-      "ruleName": "Scrollable element is included in the sequential focus navigation",
+      "ruleName": "Scrollable content can be reached with sequential focus navigation",
       "ruleAccessibilityRequirements": {
         "wcag20:2.1.1": {
           "forConformance": true,
@@ -22718,7 +22478,7 @@
     },
     {
       "ruleId": "0ssw9k",
-      "ruleName": "Scrollable element is included in the sequential focus navigation",
+      "ruleName": "Scrollable content can be reached with sequential focus navigation",
       "ruleAccessibilityRequirements": {
         "wcag20:2.1.1": {
           "forConformance": true,
@@ -22749,7 +22509,7 @@
     },
     {
       "ruleId": "0ssw9k",
-      "ruleName": "Scrollable element is included in the sequential focus navigation",
+      "ruleName": "Scrollable content can be reached with sequential focus navigation",
       "ruleAccessibilityRequirements": {
         "wcag20:2.1.1": {
           "forConformance": true,
@@ -22780,7 +22540,7 @@
     },
     {
       "ruleId": "0ssw9k",
-      "ruleName": "Scrollable element is included in the sequential focus navigation",
+      "ruleName": "Scrollable content can be reached with sequential focus navigation",
       "ruleAccessibilityRequirements": {
         "wcag20:2.1.1": {
           "forConformance": true,
@@ -22811,7 +22571,7 @@
     },
     {
       "ruleId": "0ssw9k",
-      "ruleName": "Scrollable element is included in the sequential focus navigation",
+      "ruleName": "Scrollable content can be reached with sequential focus navigation",
       "ruleAccessibilityRequirements": {
         "wcag20:2.1.1": {
           "forConformance": true,
@@ -22842,7 +22602,7 @@
     },
     {
       "ruleId": "0ssw9k",
-      "ruleName": "Scrollable element is included in the sequential focus navigation",
+      "ruleName": "Scrollable content can be reached with sequential focus navigation",
       "ruleAccessibilityRequirements": {
         "wcag20:2.1.1": {
           "forConformance": true,

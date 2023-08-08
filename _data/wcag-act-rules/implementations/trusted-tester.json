@@ -7,7 +7,7 @@
     "complete": 2,
     "partial": 0,
     "inconsistent": 1,
-    "untested": 19
+    "untested": 18
   },
   "proposedRules": {
     "complete": 12,
@@ -425,15 +425,6 @@
           ]
         }
       ]
-    },
-    {
-      "ruleId": "5b7ae0",
-      "ruleName": "HTML page `lang` and `xml:lang` attributes have matching values",
-      "ruleApproved": true,
-      "procedureNames": [],
-      "consistency": null,
-      "coverage": null,
-      "testCaseResults": []
     },
     {
       "ruleId": "2779a5",
@@ -4196,7 +4187,7 @@
     },
     {
       "ruleId": "0ssw9k",
-      "ruleName": "Scrollable element is included in the sequential focus navigation",
+      "ruleName": "Scrollable content can be reached with sequential focus navigation",
       "ruleApproved": false,
       "procedureNames": [],
       "consistency": null,
