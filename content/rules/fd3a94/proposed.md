@@ -17,6 +17,7 @@ rule_meta:
   id: fd3a94
   name: "Links with identical accessible names and same context serve equivalent purpose"
   rule_type: atomic
+  original_file: links-with-identical-names-and-context-serve-equivalent-purpose-fd3a94.md
   description: |
     This rule checks that links with identical accessible names in the same context resolve to the same or equivalent resources.
   last_modified: 30 August 2023
@@ -78,19 +79,17 @@ There is a difference between two contexts being the _same_ and being _identical
       </ul></li>
     </ul>
   </details></li>
-  <li><details>
-    <summary><span>2.4.9 Link Purpose (Link Only) (Level AAA)</span></summary>
-    <ul>
-      <li><a href="https://www.w3.org/TR/WCAG21/#link-purpose-link-only">Learn more about 2.4.9 Link Purpose (Link Only)</a></li>
-      <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level AAA.</li>
-      <li>Outcome mapping: <ul>
-        <li>Any <code>failed</code> outcomes: success criterion is not satisfied</li>
-        <li>All <code>passed</code> outcomes: success criterion </li>
-        <li>An <code>inapplicable</code> outcome: success criterion </li>
-      </ul></li>
-    </ul>
-  </details></li>
 </ul>
+
+### Secondary Requirements
+
+This rule is related to the following accessibility requirements, but was 
+not designed to test this requirements directly. These 
+[secondary requirements](https://w3c.github.io/wcag-act/act-rules-format.html#secondary-requirements)
+can either be stricter than the rule requires, or may be satisfied in ways 
+not tested by the rule:
+
+- [2.4.9 Link Purpose (Link Only) (Level AAA)](https://www.w3.org/TR/WCAG21/#link-purpose-link-only): This success criterion is **more strict** than this rule. This is because the rule also considers the context of the link, in addition to the link text. Some of the passed examples do not satisfy this success criterion.
 
 ## Input Aspects
 
@@ -101,6 +100,222 @@ The following aspects are required in using this rule.
 - [Language](https://www.w3.org/TR/act-rules-aspects/#input-aspects-text)
 
 ## Test Cases
+
+<details class="act-inline-assets" markdown="block">
+<summary><span>These HTML files are used in several examples:</span></summary>
+
+File [`/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/index.html`](https://w3.org/WAI/content-assets/wcag-act-rules/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/index.html):
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>My University</title>
+	</head>
+	<body>
+		<h1>Welcome to My University</h1>
+		<p>We are currently working on getting our website up and running.</p>
+	</body>
+</html>
+```
+
+File [`/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/redirect.html`](https://w3.org/WAI/content-assets/wcag-act-rules/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/redirect.html):
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="refresh" content="0; URL='index.html'" />
+		<title>Redirecting to another page</title>
+	</head>
+	<body></body>
+</html>
+```
+
+File [`/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/index-copy.html`](https://w3.org/WAI/content-assets/wcag-act-rules/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/index-copy.html):
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>My University</title>
+	</head>
+	<body>
+		<h1>Welcome to My University</h1>
+		<p>We are currently working on getting our website up and running.</p>
+	</body>
+</html>
+```
+
+File [`/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/about/contact.html`](https://w3.org/WAI/content-assets/wcag-act-rules/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/about/contact.html):
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>About - Contact</title>
+	</head>
+	<body>
+		<nav label="main menu" style="text-align: right;">
+			<a href="../about.html">About</a>
+			<a href="../admissions.html">Admissions</a>
+			<a href="../careers.html">Careers</a>
+		</nav>
+		<nav label="breadcrumb">
+			<p>You are here: <a href="../about.html">About</a> / Contact us</p>
+		</nav>
+		<nav label="submenu" style="float:left">
+			<h2>About</h2>
+			<ul>
+				<li style="list-style-type: none;"><a href="history.html">History</a></li>
+				<li style="list-style-type: none;"><a href="employees.html">Employees</a></li>
+				<li style="list-style-type: none;"><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+		<main style="float:left; margin-left: 50px;">
+			<h1>Contact us</h1>
+			<p>Phone: (541) 754-3010</p>
+		</main>
+	</body>
+</html>
+```
+
+File [`/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/careers/contact.html`](https://w3.org/WAI/content-assets/wcag-act-rules/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/careers/contact.html):
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>About - Contact</title>
+	</head>
+	<body>
+		<nav label="main menu" style="text-align: right;">
+			<a href="../about.html">About</a>
+			<a href="../admissions.html">Admissions</a>
+			<a href="../careers.html">Careers</a>
+		</nav>
+		<nav label="breadcrumb">
+			<p>You are here: <a href="../careers.html">Careers</a> / Contact</p>
+		</nav>
+		<nav label="submenu" style="float:left">
+			<h2>Careers</h2>
+			<ul>
+				<li style="list-style-type: none;"><a href="positions.html">Open positions</a></li>
+				<li style="list-style-type: none;"><a href="benefits.html">Benefits</a></li>
+				<li style="list-style-type: none;"><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+		<main style="float:left; margin-left: 50px;">
+			<h1>Contact us</h1>
+			<p>Phone: (541) 754-3010</p>
+		</main>
+	</body>
+</html>
+```
+
+File [`/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/page1.html`](https://w3.org/WAI/content-assets/wcag-act-rules/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/page1.html):
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Get in touch</title>
+	</head>
+	<body>
+		<h1>Get in touch</h1>
+		<p>Call us: (541) 754-3010</p>
+	</body>
+</html>
+```
+
+File [`/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/page2.html`](https://w3.org/WAI/content-assets/wcag-act-rules/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/page2.html):
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Contact us</title>
+	</head>
+	<body>
+		<h1>Contact us</h1>
+		<p>Phone: (541) 754-3010</p>
+		<p>Email: email@university.com</p>
+		<p>Telefax: (541) 754-3011</p>
+	</body>
+</html>
+```
+
+File [`/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/page3.html`](https://w3.org/WAI/content-assets/wcag-act-rules/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/page3.html):
+
+```html
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Get in touch</title>
+	</head>
+	<body style="background-color: blue; color: yellow">
+		<h1 style="border: 1px solid yellow">Get in touch</h1>
+		<p>Call us: (541) 754-3010</p>
+	</body>
+</html>
+```
+
+File [`/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/admissions/contact.html`](https://w3.org/WAI/content-assets/wcag-act-rules/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/admissions/contact.html):
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>About - Contact</title>
+	</head>
+	<body>
+		<nav label="main menu" style="text-align: right;">
+			<a href="../about.html">About</a>
+			<a href="../admissions.html">Admissions</a>
+			<a href="../careers.html">Careers</a>
+		</nav>
+		<nav label="breadcrumb">
+			<p>You are here: <a href="../admissions.html">Admissions</a> / Contact</p>
+		</nav>
+		<nav label="submenu" style="float:left">
+			<h2>Admissions</h2>
+			<ul>
+				<li style="list-style-type: none;"><a href="positions.html">Visit</a></li>
+				<li style="list-style-type: none;"><a href="benefits.html">Dates</a></li>
+				<li style="list-style-type: none;"><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+		<main style="float:left; margin-left: 50px;">
+			<h1>Contact us</h1>
+			<p>Phone: (541) 754-3011</p>
+		</main>
+	</body>
+</html>
+```
+
+File [`/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/redirect1.html`](https://w3.org/WAI/content-assets/wcag-act-rules/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/redirect1.html):
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="refresh" content="30; URL='index.html'" />
+		<title>Redirecting to another page</title>
+	</head>
+	<body></body>
+</html>
+```
+
+</details>
 
 ### Passed
 

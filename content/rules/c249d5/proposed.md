@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> c249d5</p>
-  <p><strong>Date:</strong> Updated 14 November 2022</p>
+  <p><strong>Date:</strong> Updated 30 August 2023</p>
   <p><strong>Authors:</strong> <a href="https://github.com/carlosapaduarte">Carlos Duarte</a>, <a href="https://github.com/joao-vicente">João Vicente</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -17,9 +17,10 @@ rule_meta:
   id: c249d5
   name: "Device motion based changes to the content can be disabled"
   rule_type: atomic
+  original_file: device-motion-disabled-c249d5.md
   description: |
     This rule checks that it is possible to disable any changes to the content of the web page resulting from device motion based events.
-  last_modified: 14 November 2022
+  last_modified: 30 August 2023
   scs_tested:
     - handle: Motion Actuation
       num: 2.5.4
@@ -87,6 +88,58 @@ The following aspects are required in using this rule.
 - [Accessibility tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-accessibility)
 
 ## Test Cases
+
+<details class="act-inline-assets" markdown="block">
+<summary><span>This Javascript file is used in several examples:</span></summary>
+
+File [`/test-assets/7677a9/slider.js`](https://w3.org/WAI/content-assets/wcag-act-rules/test-assets/7677a9/slider.js):
+
+```javascript
+function changeSlider(amount) {
+	document.getElementById('motionSlider').value += amount
+	document.getElementById('output').innerHTML = document.getElementById('motionSlider').value
+}
+
+function increaseSlider() {
+	changeSlider(+1)
+}
+
+function decreaseSlider() {
+	changeSlider(-1)
+}
+
+function applyChange(gamma, threshold) {
+	if (gamma > threshold) {
+		increaseSlider()
+	} else if (gamma < -threshold) {
+		decreaseSlider()
+	}
+}
+
+function handleOrientation(event) {
+	applyChange(event.gamma, 20)
+}
+
+function handleOrientationCanBeDisabled(event) {
+	const disableMotion = document.getElementById('disableMotion')
+	if (!disableMotion.checked) {
+		applyChange(event.gamma, 20)
+	}
+}
+
+function handleMotion(event) {
+	applyChange(event.rotationRate.gamma, 5)
+}
+
+function handleMotionCanBeDisabled(event) {
+	const disableMotion = document.getElementById('disableMotion')
+	if (!disableMotion.checked) {
+		applyChange(event.rotationRate.gamma, 5)
+	}
+}
+```
+
+</details>
 
 ### Passed
 

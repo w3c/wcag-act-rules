@@ -17,6 +17,7 @@ rule_meta:
   id: b4f0c3
   name: "Meta viewport allows for zoom"
   rule_type: atomic
+  original_file: meta-viewport-b4f0c3.md
   description: |
     This rule checks that the `meta` element retains the user agent ability to zoom.
   last_modified: 30 August 2023
@@ -78,19 +79,17 @@ Desktop browsers ignore the viewport `meta` element, and most modern mobile brow
       </ul></li>
     </ul>
   </details></li>
-  <li><details>
-    <summary><span>1.4.10 Reflow (Level AA)</span></summary>
-    <ul>
-      <li><a href="https://www.w3.org/TR/WCAG21/#reflow">Learn more about 1.4.10 Reflow</a></li>
-      <li><strong>Required for conformance</strong> to WCAG 2.1 on level AA and higher.</li>
-      <li>Outcome mapping: <ul>
-        <li>Any <code>failed</code> outcomes: success criterion is not satisfied</li>
-        <li>All <code>passed</code> outcomes: success criterion </li>
-        <li>An <code>inapplicable</code> outcome: success criterion </li>
-      </ul></li>
-    </ul>
-  </details></li>
 </ul>
+
+### Secondary Requirements
+
+This rule is related to the following accessibility requirements, but was 
+not designed to test this requirements directly. These 
+[secondary requirements](https://w3c.github.io/wcag-act/act-rules-format.html#secondary-requirements)
+can either be stricter than the rule requires, or may be satisfied in ways 
+not tested by the rule:
+
+- [1.4.10 Reflow (Level AA)](https://www.w3.org/TR/WCAG21/#reflow): This success criterion is **related** to this rule. This is because a page that cannot be zoomed up to 200% often does not reflow sufficiently either. Most failed examples satisfy this success criterion.
 
 ## Input Aspects
 

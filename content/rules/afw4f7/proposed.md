@@ -17,6 +17,7 @@ rule_meta:
   id: afw4f7
   name: "Text has minimum contrast"
   rule_type: atomic
+  original_file: text-contrast-afw4f7.md
   description: |
     This rule checks that the highest possible contrast of every text character with its background meets the minimal contrast requirement.
   last_modified: 30 August 2023
@@ -82,19 +83,17 @@ When the text color or background color is not specified in the web page, colors
       </ul></li>
     </ul>
   </details></li>
-  <li><details>
-    <summary><span>1.4.6 Contrast (Enhanced) (Level AAA)</span></summary>
-    <ul>
-      <li><a href="https://www.w3.org/TR/WCAG21/#contrast-enhanced">Learn more about 1.4.6 Contrast (Enhanced)</a></li>
-      <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level AAA.</li>
-      <li>Outcome mapping: <ul>
-        <li>Any <code>failed</code> outcomes: success criterion is not satisfied</li>
-        <li>All <code>passed</code> outcomes: success criterion </li>
-        <li>An <code>inapplicable</code> outcome: success criterion </li>
-      </ul></li>
-    </ul>
-  </details></li>
 </ul>
+
+### Secondary Requirements
+
+This rule is related to the following accessibility requirements, but was 
+not designed to test this requirements directly. These 
+[secondary requirements](https://w3c.github.io/wcag-act/act-rules-format.html#secondary-requirements)
+can either be stricter than the rule requires, or may be satisfied in ways 
+not tested by the rule:
+
+- [1.4.6 Contrast (Enhanced) (Level AAA)](https://www.w3.org/TR/WCAG21/#contrast-enhanced): This success criterion is **more strict** than this rule. This is because this criterion has a higher minimum contrast. Some of the passed examples do not satisfy this success criterion.
 
 ## Input Aspects
 

@@ -19,6 +19,7 @@ rule_meta:
   id: c487ae
   name: "Link has non-empty accessible name"
   rule_type: atomic
+  original_file: link-non-empty-accessible-name-c487ae.md
   description: |
     This rule checks that each link has a non-empty accessible name.
   last_modified: 30 August 2023
@@ -117,19 +118,17 @@ The rule assumes that all links are [user interface components](https://www.w3.o
       </ul></li>
     </ul>
   </details></li>
-  <li><details>
-    <summary><span>1.1.1 Non-text Content (Level A)</span></summary>
-    <ul>
-      <li><a href="https://www.w3.org/TR/WCAG21/#non-text-content">Learn more about 1.1.1 Non-text Content</a></li>
-      <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level A and higher.</li>
-      <li>Outcome mapping: <ul>
-        <li>Any <code>failed</code> outcomes: success criterion is not satisfied</li>
-        <li>All <code>passed</code> outcomes: success criterion </li>
-        <li>An <code>inapplicable</code> outcome: success criterion </li>
-      </ul></li>
-    </ul>
-  </details></li>
 </ul>
+
+### Secondary Requirements
+
+This rule is related to the following accessibility requirements, but was 
+not designed to test this requirements directly. These 
+[secondary requirements](https://w3c.github.io/wcag-act/act-rules-format.html#secondary-requirements)
+can either be stricter than the rule requires, or may be satisfied in ways 
+not tested by the rule:
+
+- [1.1.1 Non-text Content (Level A)](https://www.w3.org/TR/WCAG21/#non-text-content): This success criterion is **related** to this rule. This is because HTML `area` elements are both links and non-text content. Most failed examples satisfy this success criterion.
 
 ## Input Aspects
 

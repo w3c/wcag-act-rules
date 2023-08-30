@@ -19,6 +19,7 @@ rule_meta:
   id: 0va7u6
   name: "HTML images contain no text"
   rule_type: atomic
+  original_file: image-no-text-0va7u6.md
   description: |
     This rule checks that images of text are not used
   last_modified: 30 August 2023

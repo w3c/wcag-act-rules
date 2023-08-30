@@ -17,6 +17,7 @@ rule_meta:
   id: bc659a
   name: "Meta element has no refresh delay"
   rule_type: atomic
+  original_file: meta-refresh-no-delay-bc659a.md
   description: |
     This rule checks that the `meta` element is not used for delayed redirecting or refreshing.
   last_modified: 30 August 2023
@@ -76,30 +77,6 @@ Because a refresh with a timing of 0 is a redirect, it is exempt from this rule.
     </ul>
   </details></li>
   <li><details>
-    <summary><span>2.2.4 Interruptions (Level AAA)</span></summary>
-    <ul>
-      <li><a href="https://www.w3.org/TR/WCAG21/#interruptions">Learn more about 2.2.4 Interruptions</a></li>
-      <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level AAA.</li>
-      <li>Outcome mapping: <ul>
-        <li>Any <code>failed</code> outcomes: success criterion is not satisfied</li>
-        <li>All <code>passed</code> outcomes: success criterion </li>
-        <li>An <code>inapplicable</code> outcome: success criterion </li>
-      </ul></li>
-    </ul>
-  </details></li>
-  <li><details>
-    <summary><span>3.2.5 Change on Request (Level AAA)</span></summary>
-    <ul>
-      <li><a href="https://www.w3.org/TR/WCAG21/#change-on-request">Learn more about 3.2.5 Change on Request</a></li>
-      <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level AAA.</li>
-      <li>Outcome mapping: <ul>
-        <li>Any <code>failed</code> outcomes: success criterion is not satisfied</li>
-        <li>All <code>passed</code> outcomes: success criterion </li>
-        <li>An <code>inapplicable</code> outcome: success criterion </li>
-      </ul></li>
-    </ul>
-  </details></li>
-  <li><details>
     <summary><span>G110: Using an instant client-side redirect</span></summary>
     <ul>
       <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G110">Learn more about technique G110</a></li>
@@ -124,6 +101,17 @@ Because a refresh with a timing of 0 is a redirect, it is exempt from this rule.
     </ul>
   </details></li>
 </ul>
+
+### Secondary Requirements
+
+This rule is related to the following accessibility requirements, but was 
+not designed to test this requirements directly. These 
+[secondary requirements](https://w3c.github.io/wcag-act/act-rules-format.html#secondary-requirements)
+can either be stricter than the rule requires, or may be satisfied in ways 
+not tested by the rule:
+
+- [2.2.4 Interruptions (Level AAA)](https://www.w3.org/TR/WCAG21/#interruptions): This success criterion is **more strict** than this rule. This is because the rule allows redirects longer than 20 hours. Some of the passed examples do not satisfy this success criterion.
+- [3.2.5 Change on Request (Level AAA)](https://www.w3.org/TR/WCAG21/#change-on-request): This success criterion is **more strict** than this rule. This is because the rule allows redirects longer than 20 hours. Some of the passed examples do not satisfy this success criterion.
 
 ## Input Aspects
 

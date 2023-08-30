@@ -17,6 +17,7 @@ rule_meta:
   id: 0ssw9k
   name: "Scrollable content can be reached with sequential focus navigation"
   rule_type: atomic
+  original_file: scrollable-element-keyboard-accessible-0ssw9k.md
   description: |
     This rule checks that scrollable elements or their descendants can be reached with sequential focus navigation so that they can be scrolled by keyboard
   last_modified: 30 August 2023

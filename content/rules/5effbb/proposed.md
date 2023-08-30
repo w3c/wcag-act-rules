@@ -17,6 +17,7 @@ rule_meta:
   id: 5effbb
   name: "Link in context is descriptive"
   rule_type: atomic
+  original_file: link-in-context-descriptive-5effbb.md
   description: |
     This rule checks that the accessible name of a link together with its context describes its purpose.
   last_modified: 30 August 2023
@@ -84,19 +85,17 @@ The [accessible name][] of each target element together with its [programmatical
       </ul></li>
     </ul>
   </details></li>
-  <li><details>
-    <summary><span>2.4.9 Link Purpose (Link Only) (Level AAA)</span></summary>
-    <ul>
-      <li><a href="https://www.w3.org/TR/WCAG21/#link-purpose-link-only">Learn more about 2.4.9 Link Purpose (Link Only)</a></li>
-      <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level AAA.</li>
-      <li>Outcome mapping: <ul>
-        <li>Any <code>failed</code> outcomes: success criterion is not satisfied</li>
-        <li>All <code>passed</code> outcomes: success criterion </li>
-        <li>An <code>inapplicable</code> outcome: success criterion </li>
-      </ul></li>
-    </ul>
-  </details></li>
 </ul>
+
+### Secondary Requirements
+
+This rule is related to the following accessibility requirements, but was 
+not designed to test this requirements directly. These 
+[secondary requirements](https://w3c.github.io/wcag-act/act-rules-format.html#secondary-requirements)
+can either be stricter than the rule requires, or may be satisfied in ways 
+not tested by the rule:
+
+- [2.4.9 Link Purpose (Link Only) (Level AAA)](https://www.w3.org/TR/WCAG21/#link-purpose-link-only): This success criterion is **more strict** than this rule. This is because the rule also considers the context of the link, in addition to the link text. Some of the passed examples do not satisfy this success criterion.
 
 ## Input Aspects
 
