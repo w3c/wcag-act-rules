@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 0va7u6</p>
-  <p><strong>Date:</strong> Updated 16 January 2023</p>
+  <p><strong>Date:</strong> Updated 30 August 2023</p>
   <p><strong>Authors:</strong> <a href="https://github.com/carlosapaduarte">Carlos Duarte</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
   
@@ -21,11 +21,14 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that images of text are not used
-  last_modified: 16 January 2023
+  last_modified: 30 August 2023
   scs_tested:
     - handle: Images of Text
       num: 1.4.5
       level: AA
+    - handle: Images of Text (No Exception)
+      num: 1.4.9
+      level: AAA
 ---
 
 ## Applicability
@@ -52,7 +55,7 @@ There are no accessibility support issues known.
 
 ## Background
 
-This rule is designed specifically for [SC 1.4.5 Images of Text][sc1.4.5] which includes exceptions to the images it applies to that are not part of [SC 1.4.9 Images of Text (No Exception)][sc1.4.9]. Therefore, some images that are inapplicable for this rule can be applicable to [SC 1.4.9 Images of Text (No Exception)][sc1.4.9].
+This rule is designed specifically for [SC 1.4.5 Images of Text][sc1.4.5]. There are however only minimal differences between this criterion and [SC 1.4.9 Images of Text (No Exception)][sc1.4.9]. The two differences are that customizable images of text are allowed, and that images of text are allowed when the presentation cannot otherwise be achieved. These scenarios are so rare the rule ignores them as part of the assumptions, and so the [accessibility requirements mapping](#accessibility-requirements-mapping) of these two criteria is the same.
 
 ### Bibliography
 
@@ -269,10 +272,13 @@ This image resource referenced by the `img` element contains text that provides 
 This `img` element loads an SVG with text as an image resource. Because the SVG is loaded as an image resource, instead of being embedded in HTML the text cannot be selected or customized.
 
 ```html
-<img alt="WCAG Rocks" src="data:image/svg+xml;utf8,
+<img
+	alt="WCAG Rocks"
+	src="data:image/svg+xml;utf8,
 <svg xmlns='http://www.w3.org/2000/svg' height='20px' width='80px'>
   <text x='0' y='15'>WCAG Rocks</text>
-</svg>" />
+</svg>"
+/>
 ```
 
 ### Inapplicable

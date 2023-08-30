@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> c487ae</p>
-  <p><strong>Date:</strong> Updated 16 January 2023</p>
+  <p><strong>Date:</strong> Updated 30 August 2023</p>
   <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
   
@@ -21,7 +21,7 @@ rule_meta:
   rule_type: atomic
   description: |
     This rule checks that each link has a non-empty accessible name.
-  last_modified: 16 January 2023
+  last_modified: 30 August 2023
   scs_tested:
     - handle: Name, Role, Value
       num: 4.1.2
@@ -29,6 +29,9 @@ rule_meta:
     - handle: Link Purpose (In Context)
       num: 2.4.4
       level: A
+    - handle: Link Purpose (Link Only)
+      num: 2.4.9
+      level: AAA
 ---
 
 ## Applicability
@@ -50,8 +53,6 @@ The rule assumes that all links are [user interface components](https://www.w3.o
 - Accessibility support for some elements inheriting the semantic role of `link` (e.g. elements with `doc-*` attributes) may vary depending on the assistive technology in use.
 
 ## Background
-
-The HTML `area` element is both a link and non-text content. When this rule fails on `area` elements [success criterion 1.1.1 Non-text content][sc111] is not satisfied.
 
 ### Related rules
 
@@ -641,7 +642,6 @@ The _WAI ARIA Specifications_ group both the WAI ARIA W3C Recommendation and ARI
 [reflect]: https://html.spec.whatwg.org/multipage/common-dom-interfaces.html#reflecting-content-attributes-in-idl-attributes 'HTML specification of Reflecting Content Attributes in IDL Attributes'
 [role attribute]: https://www.w3.org/TR/role-attribute/ 'Specification of the role attribute'
 [rules for parsing integers]: https://html.spec.whatwg.org/#rules-for-parsing-integers
-[sc111]: https://www.w3.org/TR/WCAG21/#non-text-content
 [semantic role]: #semantic-role 'Definition of Semantic Role'
 [sequential focus navigation]: https://html.spec.whatwg.org/multipage/interaction.html#sequential-focus-navigation
 [space separated]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#space-separated-tokens 'HTML Specification of Space Separated Tokens'
