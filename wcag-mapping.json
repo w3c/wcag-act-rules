@@ -140,6 +140,19 @@
       "proposed": false
     },
     {
+      "title": "HTML page title is descriptive",
+      "permalink": "/standards-guidelines/act/rules/c4a8a4/",
+      "successCriteria": [
+        "page-titled"
+      ],
+      "wcagTechniques": [
+        "G88",
+        "H25"
+      ],
+      "deprecated": false,
+      "proposed": false
+    },
+    {
       "title": "Iframe with interactive elements is not excluded from tab-order",
       "permalink": "/standards-guidelines/act/rules/akn7bn/",
       "successCriteria": [
@@ -720,19 +733,6 @@
       ],
       "wcagTechniques": [
         "H57"
-      ],
-      "deprecated": false,
-      "proposed": true
-    },
-    {
-      "title": "HTML page title is descriptive",
-      "permalink": "/standards-guidelines/act/rules/c4a8a4/proposed/",
-      "successCriteria": [
-        "page-titled"
-      ],
-      "wcagTechniques": [
-        "G88",
-        "H25"
       ],
       "deprecated": false,
       "proposed": true
