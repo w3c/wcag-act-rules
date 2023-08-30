@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 3e12e1</p>
-  <p><strong>Date:</strong> Updated 14 November 2022</p>
+  <p><strong>Date:</strong> Updated 30 August 2023</p>
   <p><strong>Authors:</strong> <a href="https://github.com/Jym77">Jean-Yves Moyen</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
   
@@ -19,9 +19,10 @@ rule_meta:
   id: 3e12e1
   name: "Block of repeated content is collapsible"
   rule_type: atomic
+  original_file: block-collapsible-3e12e1.md
   description: |
     This rule checks that repeated blocks of content are collapsible
-  last_modified: 14 November 2022
+  last_modified: 30 August 2023
 ---
 
 ## Applicability
@@ -79,6 +80,95 @@ The following aspects are required in using this rule.
 - [DOM Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom)
 
 ## Test Cases
+
+<details class="act-inline-assets" markdown="block">
+<summary><span>These HTML, Javascript, and CSS files are used in several examples:</span></summary>
+
+File [`/test-assets/bypass-blocks-cf77f2/chapter2.html`](https://w3.org/WAI/content-assets/wcag-act-rules/test-assets/bypass-blocks-cf77f2/chapter2.html):
+
+```html
+<html>
+	<head>
+		<title>The Three Kingdoms, Chapter 2</title>
+	</head>
+	<body>
+		<nav id="chapters-navigation">
+			<h1>Content</h1>
+			<ol>
+				<li><a href="/test-assets/bypass-blocks-cf77f2/chapter1.html">Chapter 1</a></li>
+				<li><a>Chapter 2</a></li>
+			</ol>
+		</nav>
+
+		<aside id="bio-translator">
+			<h1>About the translator</h1>
+			<p>Yu Sumei is a professor of English at East China Normal University.</p>
+		</aside>
+		<aside id="about-book">
+			<h1>About the book</h1>
+			<p>The Romance of the Three Kingdoms is a 14th century historical novel.</p>
+		</aside>
+
+		<main>
+			<h1>Zhang Fei Trashes the Inspector in Wrath</h1>
+			<p>
+				Now this Dong Zhuo, also known as Dong Zhong-ying, was from Lintao in northwest China.
+			</p>
+		</main>
+	</body>
+</html>
+```
+
+File [`/test-assets/bypass-blocks-cf77f2/toggle-display.js`](https://w3.org/WAI/content-assets/wcag-act-rules/test-assets/bypass-blocks-cf77f2/toggle-display.js):
+
+```javascript
+function toggleHidden(...ids) {
+	ids.forEach(id => {
+		const element = document.getElementById(id)
+		element.style.display = element.style.display === 'none' ? '' : 'none'
+	})
+}
+
+function hide(id) {
+	const element = document.getElementById(id)
+	element.style.display = 'none'
+}
+
+function show(id) {
+	const element = document.getElementById(id)
+	element.style.display = ''
+}
+
+function toggleVisibility(id) {
+	const element = document.getElementById(id)
+	element.className = element.className === 'off-screen' ? '' : 'off-screen'
+}
+
+function toggleAriaHidden(id) {
+	const element = document.getElementById(id)
+	element.setAttribute('aria-hidden', (element.getAttribute('aria-hidden') !== 'true').toString())
+}
+```
+
+File [`/test-assets/bypass-blocks-cf77f2/styles.css`](https://w3.org/WAI/content-assets/wcag-act-rules/test-assets/bypass-blocks-cf77f2/styles.css):
+
+```css
+.off-screen {
+	position: absolute;
+	top: -999px;
+}
+
+.visible-on-focus {
+	position: absolute;
+	top: -100px;
+}
+.visible-on-focus:focus-within {
+	position: relative;
+	top: 0px;
+}
+```
+
+</details>
 
 ### Passed
 

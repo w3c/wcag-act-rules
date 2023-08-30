@@ -1,5 +1,5 @@
 ---
-title: "HTML page lang and xml:lang attributes have matching values"
+title: "DEPRECATED — HTML page lang and xml:lang attributes have matching values"
 permalink: /standards-guidelines/act/rules/5b7ae0/proposed/
 ref: /standards-guidelines/act/rules/5b7ae0/proposed/
 lang: en
@@ -9,17 +9,21 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 5b7ae0</p>
-  <p><strong>Date:</strong> Updated 11 July 2022</p>
+  <p><strong>Date:</strong> Updated 30 August 2023</p>
   <p><strong>Authors:</strong> <a href="https://github.com/jkodu">Jey Nandakumar</a>. Previous Authors: <a href="https://github.com/annika-FTB">Annika Nietzio</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
+deprecated: |
+  This rule has been deprecated, as modern screen readers no longer use xml:lang when the lang attribute is given, regardless of which MIME type the page is served with. This rule is not maintained anymore and should not be used.
+  
 rule_meta:
   id: 5b7ae0
-  name: "HTML page lang and xml:lang attributes have matching values"
+  name: "DEPRECATED — HTML page lang and xml:lang attributes have matching values"
   rule_type: atomic
+  original_file: html-page-lang-xml-lang-match-5b7ae0.md
   description: |
     This rule checks that both `lang` and `xml:lang` attributes on the root element of a non-embedded HTML page, have the same primary language subtag.
-  last_modified: 11 July 2022
+  last_modified: 30 August 2023
   scs_tested:
     - handle: Language of Page
       num: 3.1.1

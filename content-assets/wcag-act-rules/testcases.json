@@ -3,7 +3,7 @@
   "website": "https://www.w3.org/WAI/standards-guidelines/act/rules/",
   "license": "https://act-rules.github.io/pages/license/",
   "description": "Accessibility conformance testing rules for HTML",
-  "count": 1146,
+  "count": 1141,
   "testcases": [
     {
       "ruleId": "73f2c2",
@@ -2046,246 +2046,6 @@
       "relativePath": "testcases/bf051a/1b73557d29073ecd327790ca1a6e343b4395b2ab.svg",
       "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bf051a/1b73557d29073ecd327790ca1a6e343b4395b2ab.svg",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/bf051a/proposed/"
-    },
-    {
-      "ruleId": "5b7ae0",
-      "isApproved": true,
-      "approved": true,
-      "ruleName": "HTML page `lang` and `xml:lang` attributes have matching values",
-      "ruleAccessibilityRequirements": {
-        "wcag20:3.1.1": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "e41574526cdf4626016308c0f4185a5f91a0d29d",
-      "testcaseTitle": "Passed Example 1",
-      "relativePath": "testcases/5b7ae0/e41574526cdf4626016308c0f4185a5f91a0d29d.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5b7ae0/e41574526cdf4626016308c0f4185a5f91a0d29d.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/5b7ae0/proposed/"
-    },
-    {
-      "ruleId": "5b7ae0",
-      "isApproved": true,
-      "approved": true,
-      "ruleName": "HTML page `lang` and `xml:lang` attributes have matching values",
-      "ruleAccessibilityRequirements": {
-        "wcag20:3.1.1": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "dfc9d18aeb0f09f44646435fd37fcf63410c197b",
-      "testcaseTitle": "Passed Example 2",
-      "relativePath": "testcases/5b7ae0/dfc9d18aeb0f09f44646435fd37fcf63410c197b.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5b7ae0/dfc9d18aeb0f09f44646435fd37fcf63410c197b.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/5b7ae0/proposed/"
-    },
-    {
-      "ruleId": "5b7ae0",
-      "isApproved": true,
-      "approved": true,
-      "ruleName": "HTML page `lang` and `xml:lang` attributes have matching values",
-      "ruleAccessibilityRequirements": {
-        "wcag20:3.1.1": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "a203d146dcc0d1df9f246cdf3b3b860d87e91c1c",
-      "testcaseTitle": "Passed Example 3",
-      "relativePath": "testcases/5b7ae0/a203d146dcc0d1df9f246cdf3b3b860d87e91c1c.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5b7ae0/a203d146dcc0d1df9f246cdf3b3b860d87e91c1c.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/5b7ae0/proposed/"
-    },
-    {
-      "ruleId": "5b7ae0",
-      "isApproved": true,
-      "approved": true,
-      "ruleName": "HTML page `lang` and `xml:lang` attributes have matching values",
-      "ruleAccessibilityRequirements": {
-        "wcag20:3.1.1": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "failed",
-      "testcaseId": "82c5599492f32e1a90615f15548e79d254dd1b54",
-      "testcaseTitle": "Failed Example 1",
-      "relativePath": "testcases/5b7ae0/82c5599492f32e1a90615f15548e79d254dd1b54.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5b7ae0/82c5599492f32e1a90615f15548e79d254dd1b54.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/5b7ae0/proposed/"
-    },
-    {
-      "ruleId": "5b7ae0",
-      "isApproved": true,
-      "approved": true,
-      "ruleName": "HTML page `lang` and `xml:lang` attributes have matching values",
-      "ruleAccessibilityRequirements": {
-        "wcag20:3.1.1": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "failed",
-      "testcaseId": "943ccfe43d79c6eb8013e793440c49da63fa5d8a",
-      "testcaseTitle": "Failed Example 2",
-      "relativePath": "testcases/5b7ae0/943ccfe43d79c6eb8013e793440c49da63fa5d8a.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5b7ae0/943ccfe43d79c6eb8013e793440c49da63fa5d8a.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/5b7ae0/proposed/"
-    },
-    {
-      "ruleId": "5b7ae0",
-      "isApproved": true,
-      "approved": true,
-      "ruleName": "HTML page `lang` and `xml:lang` attributes have matching values",
-      "ruleAccessibilityRequirements": {
-        "wcag20:3.1.1": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "inapplicable",
-      "testcaseId": "d0f61fa9d6acd6759aaf5aec062a1e5026fcf4d5",
-      "testcaseTitle": "Inapplicable Example 1",
-      "relativePath": "testcases/5b7ae0/d0f61fa9d6acd6759aaf5aec062a1e5026fcf4d5.svg",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5b7ae0/d0f61fa9d6acd6759aaf5aec062a1e5026fcf4d5.svg",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/5b7ae0/proposed/"
-    },
-    {
-      "ruleId": "5b7ae0",
-      "isApproved": true,
-      "approved": true,
-      "ruleName": "HTML page `lang` and `xml:lang` attributes have matching values",
-      "ruleAccessibilityRequirements": {
-        "wcag20:3.1.1": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "inapplicable",
-      "testcaseId": "84aa25ef587640beb210c6de408f209021542593",
-      "testcaseTitle": "Inapplicable Example 2",
-      "relativePath": "testcases/5b7ae0/84aa25ef587640beb210c6de408f209021542593.svg",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5b7ae0/84aa25ef587640beb210c6de408f209021542593.svg",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/5b7ae0/proposed/"
-    },
-    {
-      "ruleId": "5b7ae0",
-      "isApproved": true,
-      "approved": true,
-      "ruleName": "HTML page `lang` and `xml:lang` attributes have matching values",
-      "ruleAccessibilityRequirements": {
-        "wcag20:3.1.1": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "inapplicable",
-      "testcaseId": "f766afdae47b656ab4dd08a3ae552506f3f1f820",
-      "testcaseTitle": "Inapplicable Example 3",
-      "relativePath": "testcases/5b7ae0/f766afdae47b656ab4dd08a3ae552506f3f1f820.xml",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5b7ae0/f766afdae47b656ab4dd08a3ae552506f3f1f820.xml",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/5b7ae0/proposed/"
-    },
-    {
-      "ruleId": "5b7ae0",
-      "isApproved": true,
-      "approved": true,
-      "ruleName": "HTML page `lang` and `xml:lang` attributes have matching values",
-      "ruleAccessibilityRequirements": {
-        "wcag20:3.1.1": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "inapplicable",
-      "testcaseId": "36d5b7fa707573676b64884e8aa2b42a730f38d7",
-      "testcaseTitle": "Inapplicable Example 4",
-      "relativePath": "testcases/5b7ae0/36d5b7fa707573676b64884e8aa2b42a730f38d7.xhtml",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5b7ae0/36d5b7fa707573676b64884e8aa2b42a730f38d7.xhtml",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/5b7ae0/proposed/"
-    },
-    {
-      "ruleId": "5b7ae0",
-      "isApproved": true,
-      "approved": true,
-      "ruleName": "HTML page `lang` and `xml:lang` attributes have matching values",
-      "ruleAccessibilityRequirements": {
-        "wcag20:3.1.1": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "inapplicable",
-      "testcaseId": "f8214944f374b25c3ce42bd92a4304d38a2309dc",
-      "testcaseTitle": "Inapplicable Example 5",
-      "relativePath": "testcases/5b7ae0/f8214944f374b25c3ce42bd92a4304d38a2309dc.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5b7ae0/f8214944f374b25c3ce42bd92a4304d38a2309dc.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/5b7ae0/proposed/"
-    },
-    {
-      "ruleId": "5b7ae0",
-      "isApproved": true,
-      "approved": true,
-      "ruleName": "HTML page `lang` and `xml:lang` attributes have matching values",
-      "ruleAccessibilityRequirements": {
-        "wcag20:3.1.1": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "inapplicable",
-      "testcaseId": "f4e4e57719f3adce548e04b1518156e23790d930",
-      "testcaseTitle": "Inapplicable Example 6",
-      "relativePath": "testcases/5b7ae0/f4e4e57719f3adce548e04b1518156e23790d930.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5b7ae0/f4e4e57719f3adce548e04b1518156e23790d930.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/5b7ae0/proposed/"
-    },
-    {
-      "ruleId": "5b7ae0",
-      "isApproved": true,
-      "approved": true,
-      "ruleName": "HTML page `lang` and `xml:lang` attributes have matching values",
-      "ruleAccessibilityRequirements": {
-        "wcag20:3.1.1": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "inapplicable",
-      "testcaseId": "a6034429b6f1e6a137fc972e0acee45e06a685d2",
-      "testcaseTitle": "Inapplicable Example 7",
-      "relativePath": "testcases/5b7ae0/a6034429b6f1e6a137fc972e0acee45e06a685d2.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5b7ae0/a6034429b6f1e6a137fc972e0acee45e06a685d2.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/5b7ae0/proposed/"
     },
     {
       "ruleId": "2779a5",
@@ -8205,10 +7965,10 @@
       "ruleName": "ARIA attribute is defined in WAI-ARIA",
       "ruleAccessibilityRequirements": {
         "wcag20:1.3.1": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
         },
         "wcag20:4.1.2": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
         }
       },
       "expected": "passed",
@@ -8223,10 +7983,10 @@
       "ruleName": "ARIA attribute is defined in WAI-ARIA",
       "ruleAccessibilityRequirements": {
         "wcag20:1.3.1": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
         },
         "wcag20:4.1.2": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
         }
       },
       "expected": "passed",
@@ -8241,10 +8001,10 @@
       "ruleName": "ARIA attribute is defined in WAI-ARIA",
       "ruleAccessibilityRequirements": {
         "wcag20:1.3.1": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
         },
         "wcag20:4.1.2": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
         }
       },
       "expected": "passed",
@@ -8259,17 +8019,17 @@
       "ruleName": "ARIA attribute is defined in WAI-ARIA",
       "ruleAccessibilityRequirements": {
         "wcag20:1.3.1": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
         },
         "wcag20:4.1.2": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
         }
       },
       "expected": "passed",
-      "testcaseId": "4373f9e70eb353c76d7e9d4c2cc4dcfd6c17ad70",
+      "testcaseId": "830f50dcf51acb0b97b948000d7c163e50858312",
       "testcaseTitle": "Passed Example 4",
-      "relativePath": "testcases/5f99a7/4373f9e70eb353c76d7e9d4c2cc4dcfd6c17ad70.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/4373f9e70eb353c76d7e9d4c2cc4dcfd6c17ad70.html",
+      "relativePath": "testcases/5f99a7/830f50dcf51acb0b97b948000d7c163e50858312.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/830f50dcf51acb0b97b948000d7c163e50858312.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/5f99a7/proposed/"
     },
     {
@@ -8277,10 +8037,10 @@
       "ruleName": "ARIA attribute is defined in WAI-ARIA",
       "ruleAccessibilityRequirements": {
         "wcag20:1.3.1": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
         },
         "wcag20:4.1.2": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
         }
       },
       "expected": "failed",
@@ -8295,10 +8055,10 @@
       "ruleName": "ARIA attribute is defined in WAI-ARIA",
       "ruleAccessibilityRequirements": {
         "wcag20:1.3.1": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
         },
         "wcag20:4.1.2": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
         }
       },
       "expected": "failed",
@@ -8313,10 +8073,10 @@
       "ruleName": "ARIA attribute is defined in WAI-ARIA",
       "ruleAccessibilityRequirements": {
         "wcag20:1.3.1": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
         },
         "wcag20:4.1.2": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
         }
       },
       "expected": "inapplicable",
@@ -8572,10 +8332,10 @@
         }
       },
       "expected": "inapplicable",
-      "testcaseId": "84dd1831c0682a800e6af2fe992fb3d69d4222eb",
+      "testcaseId": "3457868b79bad5b8cf2320c88cd5f542f9388cda",
       "testcaseTitle": "Inapplicable Example 4",
-      "relativePath": "testcases/ff89c9/84dd1831c0682a800e6af2fe992fb3d69d4222eb.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ff89c9/84dd1831c0682a800e6af2fe992fb3d69d4222eb.html",
+      "relativePath": "testcases/ff89c9/3457868b79bad5b8cf2320c88cd5f542f9388cda.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ff89c9/3457868b79bad5b8cf2320c88cd5f542f9388cda.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/ff89c9/proposed/"
     },
     {
@@ -8595,6 +8355,231 @@
       "relativePath": "testcases/ff89c9/48dc663078fb5421332814b72bd0079f90aad09a.html",
       "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ff89c9/48dc663078fb5421332814b72bd0079f90aad09a.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/ff89c9/proposed/"
+    },
+    {
+      "ruleId": "in6db8",
+      "ruleName": "ARIA required ID references exist",
+      "ruleAccessibilityRequirements": {
+        "aria12:propcharacteristic_value": {
+          "title": "ARIA 1.2, 6.2.4 Value (Characteristics of States and Properties)",
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "satisfied",
+          "inapplicable": "satisfied"
+        },
+        "wcag20:1.3.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not check for alternatives which may be accessible. Some of the failed examples satisfy this success criterion."
+        },
+        "wcag20:4.1.2": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not check for alternatives which may be accessible. Some of the failed examples satisfy this success criterion."
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "ad53952b46a372bddc3d34d82427c9ccbc6ecaa6",
+      "testcaseTitle": "Passed Example 1",
+      "relativePath": "testcases/in6db8/ad53952b46a372bddc3d34d82427c9ccbc6ecaa6.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/in6db8/ad53952b46a372bddc3d34d82427c9ccbc6ecaa6.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/in6db8/proposed/"
+    },
+    {
+      "ruleId": "in6db8",
+      "ruleName": "ARIA required ID references exist",
+      "ruleAccessibilityRequirements": {
+        "aria12:propcharacteristic_value": {
+          "title": "ARIA 1.2, 6.2.4 Value (Characteristics of States and Properties)",
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "satisfied",
+          "inapplicable": "satisfied"
+        },
+        "wcag20:1.3.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not check for alternatives which may be accessible. Some of the failed examples satisfy this success criterion."
+        },
+        "wcag20:4.1.2": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not check for alternatives which may be accessible. Some of the failed examples satisfy this success criterion."
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "46d50c448266ba7f8434e92300d4c024537c055b",
+      "testcaseTitle": "Passed Example 2",
+      "relativePath": "testcases/in6db8/46d50c448266ba7f8434e92300d4c024537c055b.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/in6db8/46d50c448266ba7f8434e92300d4c024537c055b.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/in6db8/proposed/"
+    },
+    {
+      "ruleId": "in6db8",
+      "ruleName": "ARIA required ID references exist",
+      "ruleAccessibilityRequirements": {
+        "aria12:propcharacteristic_value": {
+          "title": "ARIA 1.2, 6.2.4 Value (Characteristics of States and Properties)",
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "satisfied",
+          "inapplicable": "satisfied"
+        },
+        "wcag20:1.3.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not check for alternatives which may be accessible. Some of the failed examples satisfy this success criterion."
+        },
+        "wcag20:4.1.2": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not check for alternatives which may be accessible. Some of the failed examples satisfy this success criterion."
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "49adaf491d168fa320ceec321e129ad8515e16fa",
+      "testcaseTitle": "Passed Example 3",
+      "relativePath": "testcases/in6db8/49adaf491d168fa320ceec321e129ad8515e16fa.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/in6db8/49adaf491d168fa320ceec321e129ad8515e16fa.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/in6db8/proposed/"
+    },
+    {
+      "ruleId": "in6db8",
+      "ruleName": "ARIA required ID references exist",
+      "ruleAccessibilityRequirements": {
+        "aria12:propcharacteristic_value": {
+          "title": "ARIA 1.2, 6.2.4 Value (Characteristics of States and Properties)",
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "satisfied",
+          "inapplicable": "satisfied"
+        },
+        "wcag20:1.3.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not check for alternatives which may be accessible. Some of the failed examples satisfy this success criterion."
+        },
+        "wcag20:4.1.2": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not check for alternatives which may be accessible. Some of the failed examples satisfy this success criterion."
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "0638090ec9e3e5bfaf95d8c38906f1bd600db7d0",
+      "testcaseTitle": "Failed Example 1",
+      "relativePath": "testcases/in6db8/0638090ec9e3e5bfaf95d8c38906f1bd600db7d0.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/in6db8/0638090ec9e3e5bfaf95d8c38906f1bd600db7d0.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/in6db8/proposed/"
+    },
+    {
+      "ruleId": "in6db8",
+      "ruleName": "ARIA required ID references exist",
+      "ruleAccessibilityRequirements": {
+        "aria12:propcharacteristic_value": {
+          "title": "ARIA 1.2, 6.2.4 Value (Characteristics of States and Properties)",
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "satisfied",
+          "inapplicable": "satisfied"
+        },
+        "wcag20:1.3.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not check for alternatives which may be accessible. Some of the failed examples satisfy this success criterion."
+        },
+        "wcag20:4.1.2": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not check for alternatives which may be accessible. Some of the failed examples satisfy this success criterion."
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "7cdf98178f57c1f64c1bfbe0801b7a5e2e73a89f",
+      "testcaseTitle": "Failed Example 2",
+      "relativePath": "testcases/in6db8/7cdf98178f57c1f64c1bfbe0801b7a5e2e73a89f.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/in6db8/7cdf98178f57c1f64c1bfbe0801b7a5e2e73a89f.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/in6db8/proposed/"
+    },
+    {
+      "ruleId": "in6db8",
+      "ruleName": "ARIA required ID references exist",
+      "ruleAccessibilityRequirements": {
+        "aria12:propcharacteristic_value": {
+          "title": "ARIA 1.2, 6.2.4 Value (Characteristics of States and Properties)",
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "satisfied",
+          "inapplicable": "satisfied"
+        },
+        "wcag20:1.3.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not check for alternatives which may be accessible. Some of the failed examples satisfy this success criterion."
+        },
+        "wcag20:4.1.2": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not check for alternatives which may be accessible. Some of the failed examples satisfy this success criterion."
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "ee9eeebf0a0b1a514df6202443345d999d2bd575",
+      "testcaseTitle": "Failed Example 3",
+      "relativePath": "testcases/in6db8/ee9eeebf0a0b1a514df6202443345d999d2bd575.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/in6db8/ee9eeebf0a0b1a514df6202443345d999d2bd575.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/in6db8/proposed/"
+    },
+    {
+      "ruleId": "in6db8",
+      "ruleName": "ARIA required ID references exist",
+      "ruleAccessibilityRequirements": {
+        "aria12:propcharacteristic_value": {
+          "title": "ARIA 1.2, 6.2.4 Value (Characteristics of States and Properties)",
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "satisfied",
+          "inapplicable": "satisfied"
+        },
+        "wcag20:1.3.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not check for alternatives which may be accessible. Some of the failed examples satisfy this success criterion."
+        },
+        "wcag20:4.1.2": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not check for alternatives which may be accessible. Some of the failed examples satisfy this success criterion."
+        }
+      },
+      "expected": "inapplicable",
+      "testcaseId": "ca835c48c5d554fbfaea6d022816e39cda25660a",
+      "testcaseTitle": "Inapplicable Example 1",
+      "relativePath": "testcases/in6db8/ca835c48c5d554fbfaea6d022816e39cda25660a.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/in6db8/ca835c48c5d554fbfaea6d022816e39cda25660a.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/in6db8/proposed/"
+    },
+    {
+      "ruleId": "in6db8",
+      "ruleName": "ARIA required ID references exist",
+      "ruleAccessibilityRequirements": {
+        "aria12:propcharacteristic_value": {
+          "title": "ARIA 1.2, 6.2.4 Value (Characteristics of States and Properties)",
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "satisfied",
+          "inapplicable": "satisfied"
+        },
+        "wcag20:1.3.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not check for alternatives which may be accessible. Some of the failed examples satisfy this success criterion."
+        },
+        "wcag20:4.1.2": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not check for alternatives which may be accessible. Some of the failed examples satisfy this success criterion."
+        }
+      },
+      "expected": "inapplicable",
+      "testcaseId": "97bd98302238b32e9131d042174502a83db2a4b2",
+      "testcaseTitle": "Inapplicable Example 2",
+      "relativePath": "testcases/in6db8/97bd98302238b32e9131d042174502a83db2a4b2.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/in6db8/97bd98302238b32e9131d042174502a83db2a4b2.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/in6db8/proposed/"
+    },
+    {
+      "ruleId": "in6db8",
+      "ruleName": "ARIA required ID references exist",
+      "ruleAccessibilityRequirements": {
+        "aria12:propcharacteristic_value": {
+          "title": "ARIA 1.2, 6.2.4 Value (Characteristics of States and Properties)",
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "satisfied",
+          "inapplicable": "satisfied"
+        },
+        "wcag20:1.3.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not check for alternatives which may be accessible. Some of the failed examples satisfy this success criterion."
+        },
+        "wcag20:4.1.2": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not check for alternatives which may be accessible. Some of the failed examples satisfy this success criterion."
+        }
+      },
+      "expected": "inapplicable",
+      "testcaseId": "341bc62ae116f74ee37f215b6272043f7f7706ee",
+      "testcaseTitle": "Inapplicable Example 3",
+      "relativePath": "testcases/in6db8/341bc62ae116f74ee37f215b6272043f7f7706ee.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/in6db8/341bc62ae116f74ee37f215b6272043f7f7706ee.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/in6db8/proposed/"
     },
     {
       "ruleId": "bc4a75",
@@ -8920,10 +8905,10 @@
           "inapplicable": "satisfied"
         },
         "wcag20:1.3.1": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
         },
         "wcag20:4.1.2": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
         }
       },
       "expected": "passed",
@@ -8951,10 +8936,10 @@
           "inapplicable": "satisfied"
         },
         "wcag20:1.3.1": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
         },
         "wcag20:4.1.2": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
         }
       },
       "expected": "passed",
@@ -8982,10 +8967,10 @@
           "inapplicable": "satisfied"
         },
         "wcag20:1.3.1": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
         },
         "wcag20:4.1.2": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
         }
       },
       "expected": "passed",
@@ -9013,10 +8998,10 @@
           "inapplicable": "satisfied"
         },
         "wcag20:1.3.1": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
         },
         "wcag20:4.1.2": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
         }
       },
       "expected": "passed",
@@ -9044,10 +9029,10 @@
           "inapplicable": "satisfied"
         },
         "wcag20:1.3.1": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
         },
         "wcag20:4.1.2": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
         }
       },
       "expected": "passed",
@@ -9075,10 +9060,10 @@
           "inapplicable": "satisfied"
         },
         "wcag20:1.3.1": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
         },
         "wcag20:4.1.2": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
         }
       },
       "expected": "passed",
@@ -9106,10 +9091,10 @@
           "inapplicable": "satisfied"
         },
         "wcag20:1.3.1": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
         },
         "wcag20:4.1.2": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
         }
       },
       "expected": "passed",
@@ -9137,10 +9122,10 @@
           "inapplicable": "satisfied"
         },
         "wcag20:1.3.1": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
         },
         "wcag20:4.1.2": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
         }
       },
       "expected": "passed",
@@ -9168,10 +9153,10 @@
           "inapplicable": "satisfied"
         },
         "wcag20:1.3.1": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
         },
         "wcag20:4.1.2": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
         }
       },
       "expected": "passed",
@@ -9199,10 +9184,10 @@
           "inapplicable": "satisfied"
         },
         "wcag20:1.3.1": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
         },
         "wcag20:4.1.2": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
         }
       },
       "expected": "passed",
@@ -9230,10 +9215,10 @@
           "inapplicable": "satisfied"
         },
         "wcag20:1.3.1": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
         },
         "wcag20:4.1.2": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
         }
       },
       "expected": "passed",
@@ -9261,10 +9246,10 @@
           "inapplicable": "satisfied"
         },
         "wcag20:1.3.1": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
         },
         "wcag20:4.1.2": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
         }
       },
       "expected": "failed",
@@ -9292,10 +9277,10 @@
           "inapplicable": "satisfied"
         },
         "wcag20:1.3.1": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
         },
         "wcag20:4.1.2": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
         }
       },
       "expected": "failed",
@@ -9323,10 +9308,10 @@
           "inapplicable": "satisfied"
         },
         "wcag20:1.3.1": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
         },
         "wcag20:4.1.2": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
         }
       },
       "expected": "failed",
@@ -9354,10 +9339,10 @@
           "inapplicable": "satisfied"
         },
         "wcag20:1.3.1": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
         },
         "wcag20:4.1.2": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
         }
       },
       "expected": "inapplicable",
@@ -9385,10 +9370,10 @@
           "inapplicable": "satisfied"
         },
         "wcag20:1.3.1": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
         },
         "wcag20:4.1.2": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
         }
       },
       "expected": "inapplicable",
@@ -9410,17 +9395,17 @@
           "inapplicable": "satisfied"
         },
         "wcag20:1.3.1": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
         },
         "wcag20:4.1.2": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
         }
       },
       "expected": "passed",
-      "testcaseId": "ccae7f6929c086a776097aacd0336594da296b6a",
+      "testcaseId": "e970b77c1137e5fd4627f70663da4d1fcda36b23",
       "testcaseTitle": "Passed Example 1",
-      "relativePath": "testcases/6a7281/ccae7f6929c086a776097aacd0336594da296b6a.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/ccae7f6929c086a776097aacd0336594da296b6a.html",
+      "relativePath": "testcases/6a7281/e970b77c1137e5fd4627f70663da4d1fcda36b23.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/e970b77c1137e5fd4627f70663da4d1fcda36b23.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/6a7281/proposed/"
     },
     {
@@ -9435,15 +9420,40 @@
           "inapplicable": "satisfied"
         },
         "wcag20:1.3.1": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
         },
         "wcag20:4.1.2": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "db10f30be20aebf661f0b81b2c0cfc698b1453eb",
+      "testcaseTitle": "Passed Example 2",
+      "relativePath": "testcases/6a7281/db10f30be20aebf661f0b81b2c0cfc698b1453eb.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/db10f30be20aebf661f0b81b2c0cfc698b1453eb.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/6a7281/proposed/"
+    },
+    {
+      "ruleId": "6a7281",
+      "ruleName": "ARIA state or property has valid value",
+      "ruleAccessibilityRequirements": {
+        "aria12:propcharacteristic_value": {
+          "title": "ARIA 1.2, 6.2.4 Value (Characteristics of States and Properties)",
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "satisfied",
+          "inapplicable": "satisfied"
+        },
+        "wcag20:1.3.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
+        },
+        "wcag20:4.1.2": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
         }
       },
       "expected": "passed",
       "testcaseId": "766a5eb6a54c5b83a882a0d78731d808480a1b3e",
-      "testcaseTitle": "Passed Example 2",
+      "testcaseTitle": "Passed Example 3",
       "relativePath": "testcases/6a7281/766a5eb6a54c5b83a882a0d78731d808480a1b3e.html",
       "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/766a5eb6a54c5b83a882a0d78731d808480a1b3e.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/6a7281/proposed/"
@@ -9460,17 +9470,17 @@
           "inapplicable": "satisfied"
         },
         "wcag20:1.3.1": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
         },
         "wcag20:4.1.2": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
         }
       },
       "expected": "passed",
-      "testcaseId": "96266c86acb686975024d26d020899162944728e",
-      "testcaseTitle": "Passed Example 3",
-      "relativePath": "testcases/6a7281/96266c86acb686975024d26d020899162944728e.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/96266c86acb686975024d26d020899162944728e.html",
+      "testcaseId": "38b0160bfc6c056fa0d02affbc02e49dce284467",
+      "testcaseTitle": "Passed Example 4",
+      "relativePath": "testcases/6a7281/38b0160bfc6c056fa0d02affbc02e49dce284467.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/38b0160bfc6c056fa0d02affbc02e49dce284467.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/6a7281/proposed/"
     },
     {
@@ -9485,15 +9495,15 @@
           "inapplicable": "satisfied"
         },
         "wcag20:1.3.1": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
         },
         "wcag20:4.1.2": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
         }
       },
       "expected": "passed",
       "testcaseId": "e4b47e094d44a9f3b5b3fd5c157f3ef6679bede0",
-      "testcaseTitle": "Passed Example 4",
+      "testcaseTitle": "Passed Example 5",
       "relativePath": "testcases/6a7281/e4b47e094d44a9f3b5b3fd5c157f3ef6679bede0.html",
       "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/e4b47e094d44a9f3b5b3fd5c157f3ef6679bede0.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/6a7281/proposed/"
@@ -9510,15 +9520,15 @@
           "inapplicable": "satisfied"
         },
         "wcag20:1.3.1": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
         },
         "wcag20:4.1.2": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
         }
       },
       "expected": "passed",
       "testcaseId": "c27e7f509d546fa6aff12ca7aeace662d3fb1c7b",
-      "testcaseTitle": "Passed Example 5",
+      "testcaseTitle": "Passed Example 6",
       "relativePath": "testcases/6a7281/c27e7f509d546fa6aff12ca7aeace662d3fb1c7b.html",
       "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/c27e7f509d546fa6aff12ca7aeace662d3fb1c7b.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/6a7281/proposed/"
@@ -9535,15 +9545,15 @@
           "inapplicable": "satisfied"
         },
         "wcag20:1.3.1": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
         },
         "wcag20:4.1.2": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
         }
       },
       "expected": "passed",
       "testcaseId": "f78fb0548e68839232441636b6d8489ad17c50b5",
-      "testcaseTitle": "Passed Example 6",
+      "testcaseTitle": "Passed Example 7",
       "relativePath": "testcases/6a7281/f78fb0548e68839232441636b6d8489ad17c50b5.html",
       "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/f78fb0548e68839232441636b6d8489ad17c50b5.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/6a7281/proposed/"
@@ -9560,15 +9570,15 @@
           "inapplicable": "satisfied"
         },
         "wcag20:1.3.1": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
         },
         "wcag20:4.1.2": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
         }
       },
       "expected": "passed",
       "testcaseId": "83f5e9df90e96c1af508ad8b4e2cda78c0dae7c4",
-      "testcaseTitle": "Passed Example 7",
+      "testcaseTitle": "Passed Example 8",
       "relativePath": "testcases/6a7281/83f5e9df90e96c1af508ad8b4e2cda78c0dae7c4.html",
       "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/83f5e9df90e96c1af508ad8b4e2cda78c0dae7c4.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/6a7281/proposed/"
@@ -9585,17 +9595,17 @@
           "inapplicable": "satisfied"
         },
         "wcag20:1.3.1": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
         },
         "wcag20:4.1.2": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
         }
       },
       "expected": "passed",
-      "testcaseId": "54ea983936f7cdd43ebabc52f1eb132a06600f9a",
-      "testcaseTitle": "Passed Example 8",
-      "relativePath": "testcases/6a7281/54ea983936f7cdd43ebabc52f1eb132a06600f9a.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/54ea983936f7cdd43ebabc52f1eb132a06600f9a.html",
+      "testcaseId": "0496ff9d59d514f97c8739004b2b941dd7ca97bf",
+      "testcaseTitle": "Passed Example 9",
+      "relativePath": "testcases/6a7281/0496ff9d59d514f97c8739004b2b941dd7ca97bf.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/0496ff9d59d514f97c8739004b2b941dd7ca97bf.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/6a7281/proposed/"
     },
     {
@@ -9610,15 +9620,15 @@
           "inapplicable": "satisfied"
         },
         "wcag20:1.3.1": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
         },
         "wcag20:4.1.2": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
         }
       },
       "expected": "passed",
       "testcaseId": "ed053b32aa2b4453ddc225e45f7f1931f62c7f49",
-      "testcaseTitle": "Passed Example 9",
+      "testcaseTitle": "Passed Example 10",
       "relativePath": "testcases/6a7281/ed053b32aa2b4453ddc225e45f7f1931f62c7f49.html",
       "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/ed053b32aa2b4453ddc225e45f7f1931f62c7f49.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/6a7281/proposed/"
@@ -9635,35 +9645,10 @@
           "inapplicable": "satisfied"
         },
         "wcag20:1.3.1": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
         },
         "wcag20:4.1.2": {
-          "secondary": true
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "dacffd42fd4d7e05da9bed3974d600ea5bdc5bf0",
-      "testcaseTitle": "Passed Example 10",
-      "relativePath": "testcases/6a7281/dacffd42fd4d7e05da9bed3974d600ea5bdc5bf0.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/dacffd42fd4d7e05da9bed3974d600ea5bdc5bf0.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/6a7281/proposed/"
-    },
-    {
-      "ruleId": "6a7281",
-      "ruleName": "ARIA state or property has valid value",
-      "ruleAccessibilityRequirements": {
-        "aria12:propcharacteristic_value": {
-          "title": "ARIA 1.2, 6.2.4 Value (Characteristics of States and Properties)",
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "satisfied",
-          "inapplicable": "satisfied"
-        },
-        "wcag20:1.3.1": {
-          "secondary": true
-        },
-        "wcag20:4.1.2": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
         }
       },
       "expected": "failed",
@@ -9685,17 +9670,17 @@
           "inapplicable": "satisfied"
         },
         "wcag20:1.3.1": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
         },
         "wcag20:4.1.2": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
         }
       },
       "expected": "failed",
-      "testcaseId": "f56c0ae73185b14d5b942e29b4567ff65518c940",
+      "testcaseId": "1f586827cecc5b1b4d9f60dcaba1e77f4a90c54a",
       "testcaseTitle": "Failed Example 2",
-      "relativePath": "testcases/6a7281/f56c0ae73185b14d5b942e29b4567ff65518c940.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/f56c0ae73185b14d5b942e29b4567ff65518c940.html",
+      "relativePath": "testcases/6a7281/1f586827cecc5b1b4d9f60dcaba1e77f4a90c54a.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/1f586827cecc5b1b4d9f60dcaba1e77f4a90c54a.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/6a7281/proposed/"
     },
     {
@@ -9710,10 +9695,10 @@
           "inapplicable": "satisfied"
         },
         "wcag20:1.3.1": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
         },
         "wcag20:4.1.2": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
         }
       },
       "expected": "failed",
@@ -9735,40 +9720,15 @@
           "inapplicable": "satisfied"
         },
         "wcag20:1.3.1": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
         },
         "wcag20:4.1.2": {
-          "secondary": true
-        }
-      },
-      "expected": "failed",
-      "testcaseId": "056dbb3bef1e6cc857db894a6ce46445a419fd38",
-      "testcaseTitle": "Failed Example 4",
-      "relativePath": "testcases/6a7281/056dbb3bef1e6cc857db894a6ce46445a419fd38.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/056dbb3bef1e6cc857db894a6ce46445a419fd38.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/6a7281/proposed/"
-    },
-    {
-      "ruleId": "6a7281",
-      "ruleName": "ARIA state or property has valid value",
-      "ruleAccessibilityRequirements": {
-        "aria12:propcharacteristic_value": {
-          "title": "ARIA 1.2, 6.2.4 Value (Characteristics of States and Properties)",
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "satisfied",
-          "inapplicable": "satisfied"
-        },
-        "wcag20:1.3.1": {
-          "secondary": true
-        },
-        "wcag20:4.1.2": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
         }
       },
       "expected": "failed",
       "testcaseId": "e1bd70b33e2d53e3b9bc105a5cad59a76b4c54d5",
-      "testcaseTitle": "Failed Example 5",
+      "testcaseTitle": "Failed Example 4",
       "relativePath": "testcases/6a7281/e1bd70b33e2d53e3b9bc105a5cad59a76b4c54d5.html",
       "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/e1bd70b33e2d53e3b9bc105a5cad59a76b4c54d5.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/6a7281/proposed/"
@@ -9785,15 +9745,15 @@
           "inapplicable": "satisfied"
         },
         "wcag20:1.3.1": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
         },
         "wcag20:4.1.2": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
         }
       },
       "expected": "failed",
       "testcaseId": "4078701ed7982e75316b51adb59b6d05c1583aa5",
-      "testcaseTitle": "Failed Example 6",
+      "testcaseTitle": "Failed Example 5",
       "relativePath": "testcases/6a7281/4078701ed7982e75316b51adb59b6d05c1583aa5.html",
       "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/4078701ed7982e75316b51adb59b6d05c1583aa5.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/6a7281/proposed/"
@@ -9810,17 +9770,42 @@
           "inapplicable": "satisfied"
         },
         "wcag20:1.3.1": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
         },
         "wcag20:4.1.2": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
         }
       },
       "expected": "failed",
-      "testcaseId": "da1afbf428a6b21dd698995bdd6b39a059e2a581",
+      "testcaseId": "88ff0942922e48b686413cf12cd0fd3510a8b29f",
+      "testcaseTitle": "Failed Example 6",
+      "relativePath": "testcases/6a7281/88ff0942922e48b686413cf12cd0fd3510a8b29f.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/88ff0942922e48b686413cf12cd0fd3510a8b29f.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/6a7281/proposed/"
+    },
+    {
+      "ruleId": "6a7281",
+      "ruleName": "ARIA state or property has valid value",
+      "ruleAccessibilityRequirements": {
+        "aria12:propcharacteristic_value": {
+          "title": "ARIA 1.2, 6.2.4 Value (Characteristics of States and Properties)",
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "satisfied",
+          "inapplicable": "satisfied"
+        },
+        "wcag20:1.3.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
+        },
+        "wcag20:4.1.2": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "b78f507edd1866cc5b1a7fae8b530da964b470fb",
       "testcaseTitle": "Failed Example 7",
-      "relativePath": "testcases/6a7281/da1afbf428a6b21dd698995bdd6b39a059e2a581.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/da1afbf428a6b21dd698995bdd6b39a059e2a581.html",
+      "relativePath": "testcases/6a7281/b78f507edd1866cc5b1a7fae8b530da964b470fb.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/b78f507edd1866cc5b1a7fae8b530da964b470fb.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/6a7281/proposed/"
     },
     {
@@ -9835,85 +9820,10 @@
           "inapplicable": "satisfied"
         },
         "wcag20:1.3.1": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
         },
         "wcag20:4.1.2": {
-          "secondary": true
-        }
-      },
-      "expected": "failed",
-      "testcaseId": "79d12098309e131210ba01ae2eca31ac97c13123",
-      "testcaseTitle": "Failed Example 8",
-      "relativePath": "testcases/6a7281/79d12098309e131210ba01ae2eca31ac97c13123.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/79d12098309e131210ba01ae2eca31ac97c13123.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/6a7281/proposed/"
-    },
-    {
-      "ruleId": "6a7281",
-      "ruleName": "ARIA state or property has valid value",
-      "ruleAccessibilityRequirements": {
-        "aria12:propcharacteristic_value": {
-          "title": "ARIA 1.2, 6.2.4 Value (Characteristics of States and Properties)",
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "satisfied",
-          "inapplicable": "satisfied"
-        },
-        "wcag20:1.3.1": {
-          "secondary": true
-        },
-        "wcag20:4.1.2": {
-          "secondary": true
-        }
-      },
-      "expected": "failed",
-      "testcaseId": "b936e8a11737c2c8650d3afc28f7d58dcf8635e7",
-      "testcaseTitle": "Failed Example 9",
-      "relativePath": "testcases/6a7281/b936e8a11737c2c8650d3afc28f7d58dcf8635e7.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/b936e8a11737c2c8650d3afc28f7d58dcf8635e7.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/6a7281/proposed/"
-    },
-    {
-      "ruleId": "6a7281",
-      "ruleName": "ARIA state or property has valid value",
-      "ruleAccessibilityRequirements": {
-        "aria12:propcharacteristic_value": {
-          "title": "ARIA 1.2, 6.2.4 Value (Characteristics of States and Properties)",
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "satisfied",
-          "inapplicable": "satisfied"
-        },
-        "wcag20:1.3.1": {
-          "secondary": true
-        },
-        "wcag20:4.1.2": {
-          "secondary": true
-        }
-      },
-      "expected": "failed",
-      "testcaseId": "b26c2d92cf2821d11db54f3f0e5d80d71df50bcb",
-      "testcaseTitle": "Failed Example 10",
-      "relativePath": "testcases/6a7281/b26c2d92cf2821d11db54f3f0e5d80d71df50bcb.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/b26c2d92cf2821d11db54f3f0e5d80d71df50bcb.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/6a7281/proposed/"
-    },
-    {
-      "ruleId": "6a7281",
-      "ruleName": "ARIA state or property has valid value",
-      "ruleAccessibilityRequirements": {
-        "aria12:propcharacteristic_value": {
-          "title": "ARIA 1.2, 6.2.4 Value (Characteristics of States and Properties)",
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "satisfied",
-          "inapplicable": "satisfied"
-        },
-        "wcag20:1.3.1": {
-          "secondary": true
-        },
-        "wcag20:4.1.2": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
         }
       },
       "expected": "inapplicable",
@@ -9935,10 +9845,10 @@
           "inapplicable": "satisfied"
         },
         "wcag20:1.3.1": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
         },
         "wcag20:4.1.2": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
         }
       },
       "expected": "inapplicable",
@@ -9960,17 +9870,17 @@
           "inapplicable": "satisfied"
         },
         "wcag20:1.3.1": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
         },
         "wcag20:4.1.2": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
         }
       },
       "expected": "inapplicable",
-      "testcaseId": "d82c477ac58becfda4233237a642b8ef70eb6c5f",
+      "testcaseId": "0b90f166412e03fa01b460aa1c8e68f722a47434",
       "testcaseTitle": "Inapplicable Example 3",
-      "relativePath": "testcases/6a7281/d82c477ac58becfda4233237a642b8ef70eb6c5f.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/d82c477ac58becfda4233237a642b8ef70eb6c5f.html",
+      "relativePath": "testcases/6a7281/0b90f166412e03fa01b460aa1c8e68f722a47434.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/0b90f166412e03fa01b460aa1c8e68f722a47434.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/6a7281/proposed/"
     },
     {
@@ -9985,17 +9895,17 @@
           "inapplicable": "satisfied"
         },
         "wcag20:1.3.1": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
         },
         "wcag20:4.1.2": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
         }
       },
       "expected": "inapplicable",
-      "testcaseId": "8d4a06e6a2d0df5ef4f834e38045e81a4d9467f9",
+      "testcaseId": "d5d5467bced8e0eb2174ee42184258634c03421b",
       "testcaseTitle": "Inapplicable Example 4",
-      "relativePath": "testcases/6a7281/8d4a06e6a2d0df5ef4f834e38045e81a4d9467f9.xml",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/8d4a06e6a2d0df5ef4f834e38045e81a4d9467f9.xml",
+      "relativePath": "testcases/6a7281/d5d5467bced8e0eb2174ee42184258634c03421b.xml",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6a7281/d5d5467bced8e0eb2174ee42184258634c03421b.xml",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/6a7281/proposed/"
     },
     {
@@ -17184,10 +17094,10 @@
         }
       },
       "expected": "failed",
-      "testcaseId": "8d7ed640412cd827b169ef4f465faed482feaa26",
+      "testcaseId": "0a18c94e7b8bd8d0a54c14acbc56958918fcad2b",
       "testcaseTitle": "Failed Example 4",
-      "relativePath": "testcases/cae760/8d7ed640412cd827b169ef4f465faed482feaa26.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cae760/8d7ed640412cd827b169ef4f465faed482feaa26.html",
+      "relativePath": "testcases/cae760/0a18c94e7b8bd8d0a54c14acbc56958918fcad2b.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cae760/0a18c94e7b8bd8d0a54c14acbc56958918fcad2b.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/cae760/proposed/"
     },
     {
@@ -17238,10 +17148,28 @@
         }
       },
       "expected": "inapplicable",
-      "testcaseId": "803b52f32a5d2193683f152aa5e00174d5f8416a",
+      "testcaseId": "77075e0f50c9b77457d90450bc31c0fae372dbaf",
       "testcaseTitle": "Inapplicable Example 3",
-      "relativePath": "testcases/cae760/803b52f32a5d2193683f152aa5e00174d5f8416a.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cae760/803b52f32a5d2193683f152aa5e00174d5f8416a.html",
+      "relativePath": "testcases/cae760/77075e0f50c9b77457d90450bc31c0fae372dbaf.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cae760/77075e0f50c9b77457d90450bc31c0fae372dbaf.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/cae760/proposed/"
+    },
+    {
+      "ruleId": "cae760",
+      "ruleName": "Iframe element has non-empty accessible name",
+      "ruleAccessibilityRequirements": {
+        "wcag20:4.1.2": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "inapplicable",
+      "testcaseId": "058668cee446d08989bf24d5ce3413dc2cda9975",
+      "testcaseTitle": "Inapplicable Example 4",
+      "relativePath": "testcases/cae760/058668cee446d08989bf24d5ce3413dc2cda9975.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cae760/058668cee446d08989bf24d5ce3413dc2cda9975.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/cae760/proposed/"
     },
     {
@@ -17904,7 +17832,6 @@
         },
         "wcag20:1.4.9": {
           "forConformance": true,
-          "secondary": true,
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
@@ -17929,7 +17856,6 @@
         },
         "wcag20:1.4.9": {
           "forConformance": true,
-          "secondary": true,
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
@@ -17954,7 +17880,6 @@
         },
         "wcag20:1.4.9": {
           "forConformance": true,
-          "secondary": true,
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
@@ -17979,7 +17904,6 @@
         },
         "wcag20:1.4.9": {
           "forConformance": true,
-          "secondary": true,
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
@@ -18004,7 +17928,6 @@
         },
         "wcag20:1.4.9": {
           "forConformance": true,
-          "secondary": true,
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
@@ -18029,7 +17952,6 @@
         },
         "wcag20:1.4.9": {
           "forConformance": true,
-          "secondary": true,
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
@@ -18054,7 +17976,6 @@
         },
         "wcag20:1.4.9": {
           "forConformance": true,
-          "secondary": true,
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
@@ -18079,7 +18000,6 @@
         },
         "wcag20:1.4.9": {
           "forConformance": true,
-          "secondary": true,
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
@@ -18104,7 +18024,6 @@
         },
         "wcag20:1.4.9": {
           "forConformance": true,
-          "secondary": true,
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
@@ -18129,7 +18048,6 @@
         },
         "wcag20:1.4.9": {
           "forConformance": true,
-          "secondary": true,
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
@@ -18154,7 +18072,6 @@
         },
         "wcag20:1.4.9": {
           "forConformance": true,
-          "secondary": true,
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
@@ -18179,7 +18096,6 @@
         },
         "wcag20:1.4.9": {
           "forConformance": true,
-          "secondary": true,
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
@@ -18204,7 +18120,6 @@
         },
         "wcag20:1.4.9": {
           "forConformance": true,
-          "secondary": true,
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
@@ -18229,7 +18144,6 @@
         },
         "wcag20:1.4.9": {
           "forConformance": true,
-          "secondary": true,
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
@@ -18254,7 +18168,6 @@
         },
         "wcag20:1.4.9": {
           "forConformance": true,
-          "secondary": true,
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
@@ -18711,10 +18624,10 @@
         }
       },
       "expected": "failed",
-      "testcaseId": "e98a64b41d38cf3d64cdff5cb05e5ea4409d20f4",
+      "testcaseId": "a51e05dc7b64d927ff25bc493bb0aa069c963d29",
       "testcaseTitle": "Failed Example 2",
-      "relativePath": "testcases/36b590/e98a64b41d38cf3d64cdff5cb05e5ea4409d20f4.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/e98a64b41d38cf3d64cdff5cb05e5ea4409d20f4.html",
+      "relativePath": "testcases/36b590/a51e05dc7b64d927ff25bc493bb0aa069c963d29.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/36b590/a51e05dc7b64d927ff25bc493bb0aa069c963d29.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/36b590/proposed/"
     },
     {
@@ -19016,11 +18929,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:2.4.9": {
-          "forConformance": true,
-          "secondary": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
+          "secondary": "This success criterion is **more strict** than this rule. This is because the rule also considers the context of the link, in addition to the link text. Some of the passed examples do not satisfy this success criterion."
         }
       },
       "expected": "passed",
@@ -19041,11 +18950,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:2.4.9": {
-          "forConformance": true,
-          "secondary": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
+          "secondary": "This success criterion is **more strict** than this rule. This is because the rule also considers the context of the link, in addition to the link text. Some of the passed examples do not satisfy this success criterion."
         }
       },
       "expected": "passed",
@@ -19066,11 +18971,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:2.4.9": {
-          "forConformance": true,
-          "secondary": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
+          "secondary": "This success criterion is **more strict** than this rule. This is because the rule also considers the context of the link, in addition to the link text. Some of the passed examples do not satisfy this success criterion."
         }
       },
       "expected": "passed",
@@ -19091,11 +18992,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:2.4.9": {
-          "forConformance": true,
-          "secondary": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
+          "secondary": "This success criterion is **more strict** than this rule. This is because the rule also considers the context of the link, in addition to the link text. Some of the passed examples do not satisfy this success criterion."
         }
       },
       "expected": "passed",
@@ -19116,11 +19013,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:2.4.9": {
-          "forConformance": true,
-          "secondary": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
+          "secondary": "This success criterion is **more strict** than this rule. This is because the rule also considers the context of the link, in addition to the link text. Some of the passed examples do not satisfy this success criterion."
         }
       },
       "expected": "passed",
@@ -19141,11 +19034,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:2.4.9": {
-          "forConformance": true,
-          "secondary": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
+          "secondary": "This success criterion is **more strict** than this rule. This is because the rule also considers the context of the link, in addition to the link text. Some of the passed examples do not satisfy this success criterion."
         }
       },
       "expected": "passed",
@@ -19166,11 +19055,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:2.4.9": {
-          "forConformance": true,
-          "secondary": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
+          "secondary": "This success criterion is **more strict** than this rule. This is because the rule also considers the context of the link, in addition to the link text. Some of the passed examples do not satisfy this success criterion."
         }
       },
       "expected": "passed",
@@ -19191,11 +19076,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:2.4.9": {
-          "forConformance": true,
-          "secondary": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
+          "secondary": "This success criterion is **more strict** than this rule. This is because the rule also considers the context of the link, in addition to the link text. Some of the passed examples do not satisfy this success criterion."
         }
       },
       "expected": "passed",
@@ -19216,11 +19097,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:2.4.9": {
-          "forConformance": true,
-          "secondary": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
+          "secondary": "This success criterion is **more strict** than this rule. This is because the rule also considers the context of the link, in addition to the link text. Some of the passed examples do not satisfy this success criterion."
         }
       },
       "expected": "passed",
@@ -19241,11 +19118,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:2.4.9": {
-          "forConformance": true,
-          "secondary": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
+          "secondary": "This success criterion is **more strict** than this rule. This is because the rule also considers the context of the link, in addition to the link text. Some of the passed examples do not satisfy this success criterion."
         }
       },
       "expected": "failed",
@@ -19266,11 +19139,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:2.4.9": {
-          "forConformance": true,
-          "secondary": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
+          "secondary": "This success criterion is **more strict** than this rule. This is because the rule also considers the context of the link, in addition to the link text. Some of the passed examples do not satisfy this success criterion."
         }
       },
       "expected": "failed",
@@ -19291,11 +19160,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:2.4.9": {
-          "forConformance": true,
-          "secondary": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
+          "secondary": "This success criterion is **more strict** than this rule. This is because the rule also considers the context of the link, in addition to the link text. Some of the passed examples do not satisfy this success criterion."
         }
       },
       "expected": "failed",
@@ -19316,11 +19181,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:2.4.9": {
-          "forConformance": true,
-          "secondary": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
+          "secondary": "This success criterion is **more strict** than this rule. This is because the rule also considers the context of the link, in addition to the link text. Some of the passed examples do not satisfy this success criterion."
         }
       },
       "expected": "failed",
@@ -19341,11 +19202,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:2.4.9": {
-          "forConformance": true,
-          "secondary": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
+          "secondary": "This success criterion is **more strict** than this rule. This is because the rule also considers the context of the link, in addition to the link text. Some of the passed examples do not satisfy this success criterion."
         }
       },
       "expected": "failed",
@@ -19366,11 +19223,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:2.4.9": {
-          "forConformance": true,
-          "secondary": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
+          "secondary": "This success criterion is **more strict** than this rule. This is because the rule also considers the context of the link, in addition to the link text. Some of the passed examples do not satisfy this success criterion."
         }
       },
       "expected": "failed",
@@ -19391,11 +19244,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:2.4.9": {
-          "forConformance": true,
-          "secondary": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
+          "secondary": "This success criterion is **more strict** than this rule. This is because the rule also considers the context of the link, in addition to the link text. Some of the passed examples do not satisfy this success criterion."
         }
       },
       "expected": "inapplicable",
@@ -19416,11 +19265,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:2.4.9": {
-          "forConformance": true,
-          "secondary": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
+          "secondary": "This success criterion is **more strict** than this rule. This is because the rule also considers the context of the link, in addition to the link text. Some of the passed examples do not satisfy this success criterion."
         }
       },
       "expected": "inapplicable",
@@ -19441,11 +19286,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:2.4.9": {
-          "forConformance": true,
-          "secondary": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
+          "secondary": "This success criterion is **more strict** than this rule. This is because the rule also considers the context of the link, in addition to the link text. Some of the passed examples do not satisfy this success criterion."
         }
       },
       "expected": "inapplicable",
@@ -19844,11 +19685,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:2.4.9": {
-          "forConformance": true,
-          "secondary": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
+          "secondary": "This success criterion is **more strict** than this rule. This is because the rule also considers the context of the link, in addition to the link text. Some of the passed examples do not satisfy this success criterion."
         }
       },
       "expected": "passed",
@@ -19869,11 +19706,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:2.4.9": {
-          "forConformance": true,
-          "secondary": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
+          "secondary": "This success criterion is **more strict** than this rule. This is because the rule also considers the context of the link, in addition to the link text. Some of the passed examples do not satisfy this success criterion."
         }
       },
       "expected": "passed",
@@ -19894,11 +19727,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:2.4.9": {
-          "forConformance": true,
-          "secondary": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
+          "secondary": "This success criterion is **more strict** than this rule. This is because the rule also considers the context of the link, in addition to the link text. Some of the passed examples do not satisfy this success criterion."
         }
       },
       "expected": "passed",
@@ -19919,11 +19748,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:2.4.9": {
-          "forConformance": true,
-          "secondary": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
+          "secondary": "This success criterion is **more strict** than this rule. This is because the rule also considers the context of the link, in addition to the link text. Some of the passed examples do not satisfy this success criterion."
         }
       },
       "expected": "passed",
@@ -19944,11 +19769,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:2.4.9": {
-          "forConformance": true,
-          "secondary": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
+          "secondary": "This success criterion is **more strict** than this rule. This is because the rule also considers the context of the link, in addition to the link text. Some of the passed examples do not satisfy this success criterion."
         }
       },
       "expected": "passed",
@@ -19969,11 +19790,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:2.4.9": {
-          "forConformance": true,
-          "secondary": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
+          "secondary": "This success criterion is **more strict** than this rule. This is because the rule also considers the context of the link, in addition to the link text. Some of the passed examples do not satisfy this success criterion."
         }
       },
       "expected": "passed",
@@ -19994,11 +19811,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:2.4.9": {
-          "forConformance": true,
-          "secondary": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
+          "secondary": "This success criterion is **more strict** than this rule. This is because the rule also considers the context of the link, in addition to the link text. Some of the passed examples do not satisfy this success criterion."
         }
       },
       "expected": "passed",
@@ -20019,11 +19832,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:2.4.9": {
-          "forConformance": true,
-          "secondary": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
+          "secondary": "This success criterion is **more strict** than this rule. This is because the rule also considers the context of the link, in addition to the link text. Some of the passed examples do not satisfy this success criterion."
         }
       },
       "expected": "passed",
@@ -20044,11 +19853,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:2.4.9": {
-          "forConformance": true,
-          "secondary": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
+          "secondary": "This success criterion is **more strict** than this rule. This is because the rule also considers the context of the link, in addition to the link text. Some of the passed examples do not satisfy this success criterion."
         }
       },
       "expected": "failed",
@@ -20069,11 +19874,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:2.4.9": {
-          "forConformance": true,
-          "secondary": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
+          "secondary": "This success criterion is **more strict** than this rule. This is because the rule also considers the context of the link, in addition to the link text. Some of the passed examples do not satisfy this success criterion."
         }
       },
       "expected": "failed",
@@ -20094,11 +19895,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:2.4.9": {
-          "forConformance": true,
-          "secondary": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
+          "secondary": "This success criterion is **more strict** than this rule. This is because the rule also considers the context of the link, in addition to the link text. Some of the passed examples do not satisfy this success criterion."
         }
       },
       "expected": "failed",
@@ -20119,11 +19916,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:2.4.9": {
-          "forConformance": true,
-          "secondary": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
+          "secondary": "This success criterion is **more strict** than this rule. This is because the rule also considers the context of the link, in addition to the link text. Some of the passed examples do not satisfy this success criterion."
         }
       },
       "expected": "failed",
@@ -20144,11 +19937,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:2.4.9": {
-          "forConformance": true,
-          "secondary": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
+          "secondary": "This success criterion is **more strict** than this rule. This is because the rule also considers the context of the link, in addition to the link text. Some of the passed examples do not satisfy this success criterion."
         }
       },
       "expected": "failed",
@@ -20169,11 +19958,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:2.4.9": {
-          "forConformance": true,
-          "secondary": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
+          "secondary": "This success criterion is **more strict** than this rule. This is because the rule also considers the context of the link, in addition to the link text. Some of the passed examples do not satisfy this success criterion."
         }
       },
       "expected": "inapplicable",
@@ -20194,11 +19979,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:2.4.9": {
-          "forConformance": true,
-          "secondary": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
+          "secondary": "This success criterion is **more strict** than this rule. This is because the rule also considers the context of the link, in addition to the link text. Some of the passed examples do not satisfy this success criterion."
         }
       },
       "expected": "inapplicable",
@@ -20219,11 +20000,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:2.4.9": {
-          "forConformance": true,
-          "secondary": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
+          "secondary": "This success criterion is **more strict** than this rule. This is because the rule also considers the context of the link, in addition to the link text. Some of the passed examples do not satisfy this success criterion."
         }
       },
       "expected": "inapplicable",
@@ -20244,11 +20021,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:2.4.9": {
-          "forConformance": true,
-          "secondary": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
+          "secondary": "This success criterion is **more strict** than this rule. This is because the rule also considers the context of the link, in addition to the link text. Some of the passed examples do not satisfy this success criterion."
         }
       },
       "expected": "inapplicable",
@@ -20269,11 +20042,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:2.4.9": {
-          "forConformance": true,
-          "secondary": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
+          "secondary": "This success criterion is **more strict** than this rule. This is because the rule also considers the context of the link, in addition to the link text. Some of the passed examples do not satisfy this success criterion."
         }
       },
       "expected": "inapplicable",
@@ -20294,11 +20063,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:2.4.9": {
-          "forConformance": true,
-          "secondary": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
+          "secondary": "This success criterion is **more strict** than this rule. This is because the rule also considers the context of the link, in addition to the link text. Some of the passed examples do not satisfy this success criterion."
         }
       },
       "expected": "inapplicable",
@@ -20481,7 +20246,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:2.2.1": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion allows redirects longer than 20 hours. Some of the failed examples satisfy this success criterion."
         }
       },
       "expected": "passed",
@@ -20520,7 +20285,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:2.2.1": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion allows redirects longer than 20 hours. Some of the failed examples satisfy this success criterion."
         }
       },
       "expected": "passed",
@@ -20559,7 +20324,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:2.2.1": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion allows redirects longer than 20 hours. Some of the failed examples satisfy this success criterion."
         }
       },
       "expected": "failed",
@@ -20598,7 +20363,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:2.2.1": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion allows redirects longer than 20 hours. Some of the failed examples satisfy this success criterion."
         }
       },
       "expected": "failed",
@@ -20637,7 +20402,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:2.2.1": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion allows redirects longer than 20 hours. Some of the failed examples satisfy this success criterion."
         }
       },
       "expected": "failed",
@@ -20676,7 +20441,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:2.2.1": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion allows redirects longer than 20 hours. Some of the failed examples satisfy this success criterion."
         }
       },
       "expected": "inapplicable",
@@ -20715,7 +20480,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:2.2.1": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion allows redirects longer than 20 hours. Some of the failed examples satisfy this success criterion."
         }
       },
       "expected": "inapplicable",
@@ -20754,7 +20519,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:2.2.1": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion allows redirects longer than 20 hours. Some of the failed examples satisfy this success criterion."
         }
       },
       "expected": "inapplicable",
@@ -20793,7 +20558,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:2.2.1": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion allows redirects longer than 20 hours. Some of the failed examples satisfy this success criterion."
         }
       },
       "expected": "inapplicable",
@@ -20832,7 +20597,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:2.2.1": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion allows redirects longer than 20 hours. Some of the failed examples satisfy this success criterion."
         }
       },
       "expected": "inapplicable",
@@ -20871,7 +20636,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:2.2.1": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion allows redirects longer than 20 hours. Some of the failed examples satisfy this success criterion."
         }
       },
       "expected": "inapplicable",
@@ -20910,7 +20675,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:2.2.1": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion allows redirects longer than 20 hours. Some of the failed examples satisfy this success criterion."
         }
       },
       "expected": "inapplicable",
@@ -20949,7 +20714,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:2.2.1": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion allows redirects longer than 20 hours. Some of the failed examples satisfy this success criterion."
         }
       },
       "expected": "inapplicable",
@@ -21660,10 +21425,10 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:1.3.1": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the success criterion can be satisfied by an element's implicit role when the explicit role is incorrect. Some of the failed examples may satisfy this success criterion."
         },
         "wcag20:4.1.2": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the success criterion can be satisfied by an element's implicit role when the explicit role is incorrect. Some of the failed examples may satisfy this success criterion."
         }
       },
       "expected": "passed",
@@ -21690,10 +21455,10 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:1.3.1": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the success criterion can be satisfied by an element's implicit role when the explicit role is incorrect. Some of the failed examples may satisfy this success criterion."
         },
         "wcag20:4.1.2": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the success criterion can be satisfied by an element's implicit role when the explicit role is incorrect. Some of the failed examples may satisfy this success criterion."
         }
       },
       "expected": "passed",
@@ -21720,10 +21485,10 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:1.3.1": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the success criterion can be satisfied by an element's implicit role when the explicit role is incorrect. Some of the failed examples may satisfy this success criterion."
         },
         "wcag20:4.1.2": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the success criterion can be satisfied by an element's implicit role when the explicit role is incorrect. Some of the failed examples may satisfy this success criterion."
         }
       },
       "expected": "passed",
@@ -21750,10 +21515,10 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:1.3.1": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the success criterion can be satisfied by an element's implicit role when the explicit role is incorrect. Some of the failed examples may satisfy this success criterion."
         },
         "wcag20:4.1.2": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the success criterion can be satisfied by an element's implicit role when the explicit role is incorrect. Some of the failed examples may satisfy this success criterion."
         }
       },
       "expected": "failed",
@@ -21780,10 +21545,10 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:1.3.1": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the success criterion can be satisfied by an element's implicit role when the explicit role is incorrect. Some of the failed examples may satisfy this success criterion."
         },
         "wcag20:4.1.2": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the success criterion can be satisfied by an element's implicit role when the explicit role is incorrect. Some of the failed examples may satisfy this success criterion."
         }
       },
       "expected": "failed",
@@ -21810,10 +21575,10 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:1.3.1": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the success criterion can be satisfied by an element's implicit role when the explicit role is incorrect. Some of the failed examples may satisfy this success criterion."
         },
         "wcag20:4.1.2": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the success criterion can be satisfied by an element's implicit role when the explicit role is incorrect. Some of the failed examples may satisfy this success criterion."
         }
       },
       "expected": "inapplicable",
@@ -21840,10 +21605,10 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:1.3.1": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the success criterion can be satisfied by an element's implicit role when the explicit role is incorrect. Some of the failed examples may satisfy this success criterion."
         },
         "wcag20:4.1.2": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the success criterion can be satisfied by an element's implicit role when the explicit role is incorrect. Some of the failed examples may satisfy this success criterion."
         }
       },
       "expected": "inapplicable",
@@ -21870,10 +21635,10 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:1.3.1": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the success criterion can be satisfied by an element's implicit role when the explicit role is incorrect. Some of the failed examples may satisfy this success criterion."
         },
         "wcag20:4.1.2": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the success criterion can be satisfied by an element's implicit role when the explicit role is incorrect. Some of the failed examples may satisfy this success criterion."
         }
       },
       "expected": "inapplicable",
@@ -21900,10 +21665,10 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:1.3.1": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the success criterion can be satisfied by an element's implicit role when the explicit role is incorrect. Some of the failed examples may satisfy this success criterion."
         },
         "wcag20:4.1.2": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the success criterion can be satisfied by an element's implicit role when the explicit role is incorrect. Some of the failed examples may satisfy this success criterion."
         }
       },
       "expected": "inapplicable",
@@ -21930,10 +21695,10 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:1.3.1": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the success criterion can be satisfied by an element's implicit role when the explicit role is incorrect. Some of the failed examples may satisfy this success criterion."
         },
         "wcag20:4.1.2": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because the success criterion can be satisfied by an element's implicit role when the explicit role is incorrect. Some of the failed examples may satisfy this success criterion."
         }
       },
       "expected": "inapplicable",
@@ -21960,10 +21725,10 @@
           "inapplicable": "satisfied"
         },
         "wcag20:1.3.1": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because browsers and assistive technologies will often fall back on a non-standard default value, which may be sufficient. Some of the failed examples may satisfy this success criterion."
         },
         "wcag20:4.1.2": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because browsers and assistive technologies will often fall back on a non-standard default value, which may be sufficient. Some of the failed examples may satisfy this success criterion."
         }
       },
       "expected": "passed",
@@ -21990,10 +21755,10 @@
           "inapplicable": "satisfied"
         },
         "wcag20:1.3.1": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because browsers and assistive technologies will often fall back on a non-standard default value, which may be sufficient. Some of the failed examples may satisfy this success criterion."
         },
         "wcag20:4.1.2": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because browsers and assistive technologies will often fall back on a non-standard default value, which may be sufficient. Some of the failed examples may satisfy this success criterion."
         }
       },
       "expected": "passed",
@@ -22020,10 +21785,10 @@
           "inapplicable": "satisfied"
         },
         "wcag20:1.3.1": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because browsers and assistive technologies will often fall back on a non-standard default value, which may be sufficient. Some of the failed examples may satisfy this success criterion."
         },
         "wcag20:4.1.2": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because browsers and assistive technologies will often fall back on a non-standard default value, which may be sufficient. Some of the failed examples may satisfy this success criterion."
         }
       },
       "expected": "passed",
@@ -22050,10 +21815,10 @@
           "inapplicable": "satisfied"
         },
         "wcag20:1.3.1": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because browsers and assistive technologies will often fall back on a non-standard default value, which may be sufficient. Some of the failed examples may satisfy this success criterion."
         },
         "wcag20:4.1.2": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because browsers and assistive technologies will often fall back on a non-standard default value, which may be sufficient. Some of the failed examples may satisfy this success criterion."
         }
       },
       "expected": "passed",
@@ -22080,10 +21845,10 @@
           "inapplicable": "satisfied"
         },
         "wcag20:1.3.1": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because browsers and assistive technologies will often fall back on a non-standard default value, which may be sufficient. Some of the failed examples may satisfy this success criterion."
         },
         "wcag20:4.1.2": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because browsers and assistive technologies will often fall back on a non-standard default value, which may be sufficient. Some of the failed examples may satisfy this success criterion."
         }
       },
       "expected": "passed",
@@ -22110,10 +21875,10 @@
           "inapplicable": "satisfied"
         },
         "wcag20:1.3.1": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because browsers and assistive technologies will often fall back on a non-standard default value, which may be sufficient. Some of the failed examples may satisfy this success criterion."
         },
         "wcag20:4.1.2": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because browsers and assistive technologies will often fall back on a non-standard default value, which may be sufficient. Some of the failed examples may satisfy this success criterion."
         }
       },
       "expected": "passed",
@@ -22140,10 +21905,10 @@
           "inapplicable": "satisfied"
         },
         "wcag20:1.3.1": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because browsers and assistive technologies will often fall back on a non-standard default value, which may be sufficient. Some of the failed examples may satisfy this success criterion."
         },
         "wcag20:4.1.2": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because browsers and assistive technologies will often fall back on a non-standard default value, which may be sufficient. Some of the failed examples may satisfy this success criterion."
         }
       },
       "expected": "failed",
@@ -22170,10 +21935,10 @@
           "inapplicable": "satisfied"
         },
         "wcag20:1.3.1": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because browsers and assistive technologies will often fall back on a non-standard default value, which may be sufficient. Some of the failed examples may satisfy this success criterion."
         },
         "wcag20:4.1.2": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because browsers and assistive technologies will often fall back on a non-standard default value, which may be sufficient. Some of the failed examples may satisfy this success criterion."
         }
       },
       "expected": "failed",
@@ -22200,10 +21965,10 @@
           "inapplicable": "satisfied"
         },
         "wcag20:1.3.1": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because browsers and assistive technologies will often fall back on a non-standard default value, which may be sufficient. Some of the failed examples may satisfy this success criterion."
         },
         "wcag20:4.1.2": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because browsers and assistive technologies will often fall back on a non-standard default value, which may be sufficient. Some of the failed examples may satisfy this success criterion."
         }
       },
       "expected": "failed",
@@ -22230,10 +21995,10 @@
           "inapplicable": "satisfied"
         },
         "wcag20:1.3.1": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because browsers and assistive technologies will often fall back on a non-standard default value, which may be sufficient. Some of the failed examples may satisfy this success criterion."
         },
         "wcag20:4.1.2": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because browsers and assistive technologies will often fall back on a non-standard default value, which may be sufficient. Some of the failed examples may satisfy this success criterion."
         }
       },
       "expected": "failed",
@@ -22260,10 +22025,10 @@
           "inapplicable": "satisfied"
         },
         "wcag20:1.3.1": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because browsers and assistive technologies will often fall back on a non-standard default value, which may be sufficient. Some of the failed examples may satisfy this success criterion."
         },
         "wcag20:4.1.2": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because browsers and assistive technologies will often fall back on a non-standard default value, which may be sufficient. Some of the failed examples may satisfy this success criterion."
         }
       },
       "expected": "failed",
@@ -22290,10 +22055,10 @@
           "inapplicable": "satisfied"
         },
         "wcag20:1.3.1": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because browsers and assistive technologies will often fall back on a non-standard default value, which may be sufficient. Some of the failed examples may satisfy this success criterion."
         },
         "wcag20:4.1.2": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because browsers and assistive technologies will often fall back on a non-standard default value, which may be sufficient. Some of the failed examples may satisfy this success criterion."
         }
       },
       "expected": "failed",
@@ -22320,10 +22085,10 @@
           "inapplicable": "satisfied"
         },
         "wcag20:1.3.1": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because browsers and assistive technologies will often fall back on a non-standard default value, which may be sufficient. Some of the failed examples may satisfy this success criterion."
         },
         "wcag20:4.1.2": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because browsers and assistive technologies will often fall back on a non-standard default value, which may be sufficient. Some of the failed examples may satisfy this success criterion."
         }
       },
       "expected": "inapplicable",
@@ -22350,10 +22115,10 @@
           "inapplicable": "satisfied"
         },
         "wcag20:1.3.1": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because browsers and assistive technologies will often fall back on a non-standard default value, which may be sufficient. Some of the failed examples may satisfy this success criterion."
         },
         "wcag20:4.1.2": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because browsers and assistive technologies will often fall back on a non-standard default value, which may be sufficient. Some of the failed examples may satisfy this success criterion."
         }
       },
       "expected": "inapplicable",
@@ -22380,10 +22145,10 @@
           "inapplicable": "satisfied"
         },
         "wcag20:1.3.1": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because browsers and assistive technologies will often fall back on a non-standard default value, which may be sufficient. Some of the failed examples may satisfy this success criterion."
         },
         "wcag20:4.1.2": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because browsers and assistive technologies will often fall back on a non-standard default value, which may be sufficient. Some of the failed examples may satisfy this success criterion."
         }
       },
       "expected": "inapplicable",
@@ -22395,7 +22160,7 @@
     },
     {
       "ruleId": "0ssw9k",
-      "ruleName": "Scrollable element is keyboard accessible",
+      "ruleName": "Scrollable content can be reached with sequential focus navigation",
       "ruleAccessibilityRequirements": {
         "wcag20:2.1.1": {
           "forConformance": true,
@@ -22405,7 +22170,6 @@
         },
         "wcag20:2.1.3": {
           "forConformance": true,
-          "secondary": true,
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
@@ -22426,7 +22190,7 @@
     },
     {
       "ruleId": "0ssw9k",
-      "ruleName": "Scrollable element is keyboard accessible",
+      "ruleName": "Scrollable content can be reached with sequential focus navigation",
       "ruleAccessibilityRequirements": {
         "wcag20:2.1.1": {
           "forConformance": true,
@@ -22436,7 +22200,6 @@
         },
         "wcag20:2.1.3": {
           "forConformance": true,
-          "secondary": true,
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
@@ -22457,7 +22220,7 @@
     },
     {
       "ruleId": "0ssw9k",
-      "ruleName": "Scrollable element is keyboard accessible",
+      "ruleName": "Scrollable content can be reached with sequential focus navigation",
       "ruleAccessibilityRequirements": {
         "wcag20:2.1.1": {
           "forConformance": true,
@@ -22467,7 +22230,6 @@
         },
         "wcag20:2.1.3": {
           "forConformance": true,
-          "secondary": true,
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
@@ -22488,7 +22250,7 @@
     },
     {
       "ruleId": "0ssw9k",
-      "ruleName": "Scrollable element is keyboard accessible",
+      "ruleName": "Scrollable content can be reached with sequential focus navigation",
       "ruleAccessibilityRequirements": {
         "wcag20:2.1.1": {
           "forConformance": true,
@@ -22498,7 +22260,6 @@
         },
         "wcag20:2.1.3": {
           "forConformance": true,
-          "secondary": true,
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
@@ -22519,7 +22280,7 @@
     },
     {
       "ruleId": "0ssw9k",
-      "ruleName": "Scrollable element is keyboard accessible",
+      "ruleName": "Scrollable content can be reached with sequential focus navigation",
       "ruleAccessibilityRequirements": {
         "wcag20:2.1.1": {
           "forConformance": true,
@@ -22529,7 +22290,6 @@
         },
         "wcag20:2.1.3": {
           "forConformance": true,
-          "secondary": true,
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
@@ -22550,7 +22310,7 @@
     },
     {
       "ruleId": "0ssw9k",
-      "ruleName": "Scrollable element is keyboard accessible",
+      "ruleName": "Scrollable content can be reached with sequential focus navigation",
       "ruleAccessibilityRequirements": {
         "wcag20:2.1.1": {
           "forConformance": true,
@@ -22560,7 +22320,6 @@
         },
         "wcag20:2.1.3": {
           "forConformance": true,
-          "secondary": true,
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
@@ -22581,7 +22340,7 @@
     },
     {
       "ruleId": "0ssw9k",
-      "ruleName": "Scrollable element is keyboard accessible",
+      "ruleName": "Scrollable content can be reached with sequential focus navigation",
       "ruleAccessibilityRequirements": {
         "wcag20:2.1.1": {
           "forConformance": true,
@@ -22591,7 +22350,6 @@
         },
         "wcag20:2.1.3": {
           "forConformance": true,
-          "secondary": true,
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
@@ -22612,7 +22370,7 @@
     },
     {
       "ruleId": "0ssw9k",
-      "ruleName": "Scrollable element is keyboard accessible",
+      "ruleName": "Scrollable content can be reached with sequential focus navigation",
       "ruleAccessibilityRequirements": {
         "wcag20:2.1.1": {
           "forConformance": true,
@@ -22622,7 +22380,6 @@
         },
         "wcag20:2.1.3": {
           "forConformance": true,
-          "secondary": true,
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
@@ -22643,7 +22400,7 @@
     },
     {
       "ruleId": "0ssw9k",
-      "ruleName": "Scrollable element is keyboard accessible",
+      "ruleName": "Scrollable content can be reached with sequential focus navigation",
       "ruleAccessibilityRequirements": {
         "wcag20:2.1.1": {
           "forConformance": true,
@@ -22653,7 +22410,6 @@
         },
         "wcag20:2.1.3": {
           "forConformance": true,
-          "secondary": true,
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
@@ -22674,7 +22430,7 @@
     },
     {
       "ruleId": "0ssw9k",
-      "ruleName": "Scrollable element is keyboard accessible",
+      "ruleName": "Scrollable content can be reached with sequential focus navigation",
       "ruleAccessibilityRequirements": {
         "wcag20:2.1.1": {
           "forConformance": true,
@@ -22684,7 +22440,6 @@
         },
         "wcag20:2.1.3": {
           "forConformance": true,
-          "secondary": true,
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
@@ -22895,10 +22650,10 @@
         }
       },
       "expected": "passed",
-      "testcaseId": "0f66b15e6d2430e9afbdd6dc579023ece171b278",
+      "testcaseId": "7240c687f37a56254b1847ae6d75e5d4090bd8a5",
       "testcaseTitle": "Passed Example 4",
-      "relativePath": "testcases/d0f69e/0f66b15e6d2430e9afbdd6dc579023ece171b278.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/d0f69e/0f66b15e6d2430e9afbdd6dc579023ece171b278.html",
+      "relativePath": "testcases/d0f69e/7240c687f37a56254b1847ae6d75e5d4090bd8a5.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/d0f69e/7240c687f37a56254b1847ae6d75e5d4090bd8a5.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/d0f69e/proposed/"
     },
     {
@@ -23152,11 +22907,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:1.4.6": {
-          "forConformance": true,
-          "secondary": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
+          "secondary": "This success criterion is **more strict** than this rule. This is because this criterion has a higher minimum contrast. Some of the passed examples do not satisfy this success criterion."
         }
       },
       "expected": "passed",
@@ -23177,11 +22928,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:1.4.6": {
-          "forConformance": true,
-          "secondary": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
+          "secondary": "This success criterion is **more strict** than this rule. This is because this criterion has a higher minimum contrast. Some of the passed examples do not satisfy this success criterion."
         }
       },
       "expected": "passed",
@@ -23202,11 +22949,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:1.4.6": {
-          "forConformance": true,
-          "secondary": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
+          "secondary": "This success criterion is **more strict** than this rule. This is because this criterion has a higher minimum contrast. Some of the passed examples do not satisfy this success criterion."
         }
       },
       "expected": "passed",
@@ -23227,11 +22970,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:1.4.6": {
-          "forConformance": true,
-          "secondary": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
+          "secondary": "This success criterion is **more strict** than this rule. This is because this criterion has a higher minimum contrast. Some of the passed examples do not satisfy this success criterion."
         }
       },
       "expected": "passed",
@@ -23252,11 +22991,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:1.4.6": {
-          "forConformance": true,
-          "secondary": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
+          "secondary": "This success criterion is **more strict** than this rule. This is because this criterion has a higher minimum contrast. Some of the passed examples do not satisfy this success criterion."
         }
       },
       "expected": "passed",
@@ -23277,11 +23012,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:1.4.6": {
-          "forConformance": true,
-          "secondary": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
+          "secondary": "This success criterion is **more strict** than this rule. This is because this criterion has a higher minimum contrast. Some of the passed examples do not satisfy this success criterion."
         }
       },
       "expected": "passed",
@@ -23302,11 +23033,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:1.4.6": {
-          "forConformance": true,
-          "secondary": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
+          "secondary": "This success criterion is **more strict** than this rule. This is because this criterion has a higher minimum contrast. Some of the passed examples do not satisfy this success criterion."
         }
       },
       "expected": "passed",
@@ -23327,11 +23054,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:1.4.6": {
-          "forConformance": true,
-          "secondary": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
+          "secondary": "This success criterion is **more strict** than this rule. This is because this criterion has a higher minimum contrast. Some of the passed examples do not satisfy this success criterion."
         }
       },
       "expected": "passed",
@@ -23352,11 +23075,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:1.4.6": {
-          "forConformance": true,
-          "secondary": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
+          "secondary": "This success criterion is **more strict** than this rule. This is because this criterion has a higher minimum contrast. Some of the passed examples do not satisfy this success criterion."
         }
       },
       "expected": "passed",
@@ -23377,11 +23096,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:1.4.6": {
-          "forConformance": true,
-          "secondary": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
+          "secondary": "This success criterion is **more strict** than this rule. This is because this criterion has a higher minimum contrast. Some of the passed examples do not satisfy this success criterion."
         }
       },
       "expected": "passed",
@@ -23402,11 +23117,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:1.4.6": {
-          "forConformance": true,
-          "secondary": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
+          "secondary": "This success criterion is **more strict** than this rule. This is because this criterion has a higher minimum contrast. Some of the passed examples do not satisfy this success criterion."
         }
       },
       "expected": "passed",
@@ -23427,11 +23138,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:1.4.6": {
-          "forConformance": true,
-          "secondary": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
+          "secondary": "This success criterion is **more strict** than this rule. This is because this criterion has a higher minimum contrast. Some of the passed examples do not satisfy this success criterion."
         }
       },
       "expected": "failed",
@@ -23452,11 +23159,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:1.4.6": {
-          "forConformance": true,
-          "secondary": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
+          "secondary": "This success criterion is **more strict** than this rule. This is because this criterion has a higher minimum contrast. Some of the passed examples do not satisfy this success criterion."
         }
       },
       "expected": "failed",
@@ -23477,11 +23180,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:1.4.6": {
-          "forConformance": true,
-          "secondary": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
+          "secondary": "This success criterion is **more strict** than this rule. This is because this criterion has a higher minimum contrast. Some of the passed examples do not satisfy this success criterion."
         }
       },
       "expected": "failed",
@@ -23502,11 +23201,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:1.4.6": {
-          "forConformance": true,
-          "secondary": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
+          "secondary": "This success criterion is **more strict** than this rule. This is because this criterion has a higher minimum contrast. Some of the passed examples do not satisfy this success criterion."
         }
       },
       "expected": "failed",
@@ -23527,11 +23222,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:1.4.6": {
-          "forConformance": true,
-          "secondary": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
+          "secondary": "This success criterion is **more strict** than this rule. This is because this criterion has a higher minimum contrast. Some of the passed examples do not satisfy this success criterion."
         }
       },
       "expected": "failed",
@@ -23552,11 +23243,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:1.4.6": {
-          "forConformance": true,
-          "secondary": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
+          "secondary": "This success criterion is **more strict** than this rule. This is because this criterion has a higher minimum contrast. Some of the passed examples do not satisfy this success criterion."
         }
       },
       "expected": "failed",
@@ -23577,11 +23264,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:1.4.6": {
-          "forConformance": true,
-          "secondary": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
+          "secondary": "This success criterion is **more strict** than this rule. This is because this criterion has a higher minimum contrast. Some of the passed examples do not satisfy this success criterion."
         }
       },
       "expected": "failed",
@@ -23602,11 +23285,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:1.4.6": {
-          "forConformance": true,
-          "secondary": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
+          "secondary": "This success criterion is **more strict** than this rule. This is because this criterion has a higher minimum contrast. Some of the passed examples do not satisfy this success criterion."
         }
       },
       "expected": "failed",
@@ -23627,11 +23306,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:1.4.6": {
-          "forConformance": true,
-          "secondary": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
+          "secondary": "This success criterion is **more strict** than this rule. This is because this criterion has a higher minimum contrast. Some of the passed examples do not satisfy this success criterion."
         }
       },
       "expected": "failed",
@@ -23652,11 +23327,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:1.4.6": {
-          "forConformance": true,
-          "secondary": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
+          "secondary": "This success criterion is **more strict** than this rule. This is because this criterion has a higher minimum contrast. Some of the passed examples do not satisfy this success criterion."
         }
       },
       "expected": "failed",
@@ -23677,11 +23348,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:1.4.6": {
-          "forConformance": true,
-          "secondary": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
+          "secondary": "This success criterion is **more strict** than this rule. This is because this criterion has a higher minimum contrast. Some of the passed examples do not satisfy this success criterion."
         }
       },
       "expected": "inapplicable",
@@ -23702,11 +23369,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:1.4.6": {
-          "forConformance": true,
-          "secondary": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
+          "secondary": "This success criterion is **more strict** than this rule. This is because this criterion has a higher minimum contrast. Some of the passed examples do not satisfy this success criterion."
         }
       },
       "expected": "inapplicable",
@@ -23727,11 +23390,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:1.4.6": {
-          "forConformance": true,
-          "secondary": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
+          "secondary": "This success criterion is **more strict** than this rule. This is because this criterion has a higher minimum contrast. Some of the passed examples do not satisfy this success criterion."
         }
       },
       "expected": "inapplicable",
@@ -23752,11 +23411,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:1.4.6": {
-          "forConformance": true,
-          "secondary": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
+          "secondary": "This success criterion is **more strict** than this rule. This is because this criterion has a higher minimum contrast. Some of the passed examples do not satisfy this success criterion."
         }
       },
       "expected": "inapplicable",
@@ -23777,18 +23432,14 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:1.4.6": {
-          "forConformance": true,
-          "secondary": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
+          "secondary": "This success criterion is **more strict** than this rule. This is because this criterion has a higher minimum contrast. Some of the passed examples do not satisfy this success criterion."
         }
       },
       "expected": "inapplicable",
-      "testcaseId": "8df570a7bb69487e5f3b5d07a7af45cc881dc449",
+      "testcaseId": "20f9cd78dd0fa87ee8d40ea3ed35a1fe3ff66508",
       "testcaseTitle": "Inapplicable Example 5",
-      "relativePath": "testcases/afw4f7/8df570a7bb69487e5f3b5d07a7af45cc881dc449.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/8df570a7bb69487e5f3b5d07a7af45cc881dc449.html",
+      "relativePath": "testcases/afw4f7/20f9cd78dd0fa87ee8d40ea3ed35a1fe3ff66508.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/20f9cd78dd0fa87ee8d40ea3ed35a1fe3ff66508.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/afw4f7/proposed/"
     },
     {
@@ -23802,11 +23453,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:1.4.6": {
-          "forConformance": true,
-          "secondary": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
+          "secondary": "This success criterion is **more strict** than this rule. This is because this criterion has a higher minimum contrast. Some of the passed examples do not satisfy this success criterion."
         }
       },
       "expected": "inapplicable",
@@ -23827,11 +23474,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:1.4.6": {
-          "forConformance": true,
-          "secondary": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
+          "secondary": "This success criterion is **more strict** than this rule. This is because this criterion has a higher minimum contrast. Some of the passed examples do not satisfy this success criterion."
         }
       },
       "expected": "inapplicable",
@@ -23852,11 +23495,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:1.4.6": {
-          "forConformance": true,
-          "secondary": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
+          "secondary": "This success criterion is **more strict** than this rule. This is because this criterion has a higher minimum contrast. Some of the passed examples do not satisfy this success criterion."
         }
       },
       "expected": "inapplicable",
@@ -23877,11 +23516,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:1.4.6": {
-          "forConformance": true,
-          "secondary": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
+          "secondary": "This success criterion is **more strict** than this rule. This is because this criterion has a higher minimum contrast. Some of the passed examples do not satisfy this success criterion."
         }
       },
       "expected": "inapplicable",
@@ -23902,11 +23537,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:1.4.6": {
-          "forConformance": true,
-          "secondary": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
+          "secondary": "This success criterion is **more strict** than this rule. This is because this criterion has a higher minimum contrast. Some of the passed examples do not satisfy this success criterion."
         }
       },
       "expected": "inapplicable",
@@ -23927,11 +23558,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:1.4.6": {
-          "forConformance": true,
-          "secondary": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
+          "secondary": "This success criterion is **more strict** than this rule. This is because this criterion has a higher minimum contrast. Some of the passed examples do not satisfy this success criterion."
         }
       },
       "expected": "inapplicable",
@@ -23964,7 +23591,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:1.4.3": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion has a lower minimum contrast. Some of the failed examples may satisfy this success criterion."
         }
       },
       "expected": "passed",
@@ -23997,7 +23624,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:1.4.3": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion has a lower minimum contrast. Some of the failed examples may satisfy this success criterion."
         }
       },
       "expected": "passed",
@@ -24030,7 +23657,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:1.4.3": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion has a lower minimum contrast. Some of the failed examples may satisfy this success criterion."
         }
       },
       "expected": "passed",
@@ -24063,7 +23690,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:1.4.3": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion has a lower minimum contrast. Some of the failed examples may satisfy this success criterion."
         }
       },
       "expected": "passed",
@@ -24096,7 +23723,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:1.4.3": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion has a lower minimum contrast. Some of the failed examples may satisfy this success criterion."
         }
       },
       "expected": "passed",
@@ -24129,7 +23756,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:1.4.3": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion has a lower minimum contrast. Some of the failed examples may satisfy this success criterion."
         }
       },
       "expected": "passed",
@@ -24162,7 +23789,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:1.4.3": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion has a lower minimum contrast. Some of the failed examples may satisfy this success criterion."
         }
       },
       "expected": "passed",
@@ -24195,7 +23822,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:1.4.3": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion has a lower minimum contrast. Some of the failed examples may satisfy this success criterion."
         }
       },
       "expected": "passed",
@@ -24228,7 +23855,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:1.4.3": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion has a lower minimum contrast. Some of the failed examples may satisfy this success criterion."
         }
       },
       "expected": "passed",
@@ -24261,7 +23888,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:1.4.3": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion has a lower minimum contrast. Some of the failed examples may satisfy this success criterion."
         }
       },
       "expected": "passed",
@@ -24294,7 +23921,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:1.4.3": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion has a lower minimum contrast. Some of the failed examples may satisfy this success criterion."
         }
       },
       "expected": "failed",
@@ -24327,7 +23954,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:1.4.3": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion has a lower minimum contrast. Some of the failed examples may satisfy this success criterion."
         }
       },
       "expected": "failed",
@@ -24360,7 +23987,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:1.4.3": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion has a lower minimum contrast. Some of the failed examples may satisfy this success criterion."
         }
       },
       "expected": "failed",
@@ -24393,7 +24020,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:1.4.3": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion has a lower minimum contrast. Some of the failed examples may satisfy this success criterion."
         }
       },
       "expected": "failed",
@@ -24426,7 +24053,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:1.4.3": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion has a lower minimum contrast. Some of the failed examples may satisfy this success criterion."
         }
       },
       "expected": "failed",
@@ -24459,7 +24086,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:1.4.3": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion has a lower minimum contrast. Some of the failed examples may satisfy this success criterion."
         }
       },
       "expected": "failed",
@@ -24492,7 +24119,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:1.4.3": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion has a lower minimum contrast. Some of the failed examples may satisfy this success criterion."
         }
       },
       "expected": "failed",
@@ -24525,7 +24152,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:1.4.3": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion has a lower minimum contrast. Some of the failed examples may satisfy this success criterion."
         }
       },
       "expected": "failed",
@@ -24558,7 +24185,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:1.4.3": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion has a lower minimum contrast. Some of the failed examples may satisfy this success criterion."
         }
       },
       "expected": "failed",
@@ -24591,7 +24218,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:1.4.3": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion has a lower minimum contrast. Some of the failed examples may satisfy this success criterion."
         }
       },
       "expected": "failed",
@@ -24624,7 +24251,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:1.4.3": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion has a lower minimum contrast. Some of the failed examples may satisfy this success criterion."
         }
       },
       "expected": "failed",
@@ -24657,7 +24284,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:1.4.3": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion has a lower minimum contrast. Some of the failed examples may satisfy this success criterion."
         }
       },
       "expected": "failed",
@@ -24690,7 +24317,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:1.4.3": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion has a lower minimum contrast. Some of the failed examples may satisfy this success criterion."
         }
       },
       "expected": "failed",
@@ -24723,7 +24350,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:1.4.3": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion has a lower minimum contrast. Some of the failed examples may satisfy this success criterion."
         }
       },
       "expected": "inapplicable",
@@ -24756,7 +24383,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:1.4.3": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion has a lower minimum contrast. Some of the failed examples may satisfy this success criterion."
         }
       },
       "expected": "inapplicable",
@@ -24789,7 +24416,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:1.4.3": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion has a lower minimum contrast. Some of the failed examples may satisfy this success criterion."
         }
       },
       "expected": "inapplicable",
@@ -24822,7 +24449,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:1.4.3": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion has a lower minimum contrast. Some of the failed examples may satisfy this success criterion."
         }
       },
       "expected": "inapplicable",
@@ -24855,7 +24482,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:1.4.3": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion has a lower minimum contrast. Some of the failed examples may satisfy this success criterion."
         }
       },
       "expected": "inapplicable",
@@ -24888,7 +24515,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:1.4.3": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion has a lower minimum contrast. Some of the failed examples may satisfy this success criterion."
         }
       },
       "expected": "inapplicable",
@@ -24921,7 +24548,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:1.4.3": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion has a lower minimum contrast. Some of the failed examples may satisfy this success criterion."
         }
       },
       "expected": "inapplicable",
@@ -24954,7 +24581,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:1.4.3": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion has a lower minimum contrast. Some of the failed examples may satisfy this success criterion."
         }
       },
       "expected": "inapplicable",
@@ -24987,7 +24614,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:1.4.3": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion has a lower minimum contrast. Some of the failed examples may satisfy this success criterion."
         }
       },
       "expected": "inapplicable",
@@ -25020,7 +24647,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:1.4.3": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion has a lower minimum contrast. Some of the failed examples may satisfy this success criterion."
         }
       },
       "expected": "inapplicable",
@@ -25053,7 +24680,7 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:1.4.3": {
-          "secondary": true
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion has a lower minimum contrast. Some of the failed examples may satisfy this success criterion."
         }
       },
       "expected": "inapplicable",
@@ -25290,18 +24917,10 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:1.2.5": {
-          "forConformance": true,
-          "secondary": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
+          "secondary": "This success criterion is **more strict** than this rule. This is because the rule allows a media alternative in place of audio description. Some of the passed examples do not satisfy this success criterion."
         },
         "wcag20:1.2.8": {
-          "forConformance": true,
-          "secondary": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
+          "secondary": "This success criterion is **more strict** than this rule. This is because the rule allows audio description in place of a media alternative. Some of the passed examples do not satisfy this success criterion."
         },
         "wcag-technique:G8": {
           "forConformance": false,
@@ -25346,18 +24965,10 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:1.2.5": {
-          "forConformance": true,
-          "secondary": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
+          "secondary": "This success criterion is **more strict** than this rule. This is because the rule allows a media alternative in place of audio description. Some of the passed examples do not satisfy this success criterion."
         },
         "wcag20:1.2.8": {
-          "forConformance": true,
-          "secondary": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
+          "secondary": "This success criterion is **more strict** than this rule. This is because the rule allows audio description in place of a media alternative. Some of the passed examples do not satisfy this success criterion."
         },
         "wcag-technique:G8": {
           "forConformance": false,
@@ -25402,18 +25013,10 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:1.2.5": {
-          "forConformance": true,
-          "secondary": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
+          "secondary": "This success criterion is **more strict** than this rule. This is because the rule allows a media alternative in place of audio description. Some of the passed examples do not satisfy this success criterion."
         },
         "wcag20:1.2.8": {
-          "forConformance": true,
-          "secondary": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
+          "secondary": "This success criterion is **more strict** than this rule. This is because the rule allows audio description in place of a media alternative. Some of the passed examples do not satisfy this success criterion."
         },
         "wcag-technique:G8": {
           "forConformance": false,
@@ -25458,18 +25061,10 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:1.2.5": {
-          "forConformance": true,
-          "secondary": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
+          "secondary": "This success criterion is **more strict** than this rule. This is because the rule allows a media alternative in place of audio description. Some of the passed examples do not satisfy this success criterion."
         },
         "wcag20:1.2.8": {
-          "forConformance": true,
-          "secondary": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
+          "secondary": "This success criterion is **more strict** than this rule. This is because the rule allows audio description in place of a media alternative. Some of the passed examples do not satisfy this success criterion."
         },
         "wcag-technique:G8": {
           "forConformance": false,
@@ -25514,18 +25109,10 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:1.2.5": {
-          "forConformance": true,
-          "secondary": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
+          "secondary": "This success criterion is **more strict** than this rule. This is because the rule allows a media alternative in place of audio description. Some of the passed examples do not satisfy this success criterion."
         },
         "wcag20:1.2.8": {
-          "forConformance": true,
-          "secondary": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
+          "secondary": "This success criterion is **more strict** than this rule. This is because the rule allows audio description in place of a media alternative. Some of the passed examples do not satisfy this success criterion."
         },
         "wcag-technique:G8": {
           "forConformance": false,
@@ -25570,18 +25157,10 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:1.2.5": {
-          "forConformance": true,
-          "secondary": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
+          "secondary": "This success criterion is **more strict** than this rule. This is because the rule allows a media alternative in place of audio description. Some of the passed examples do not satisfy this success criterion."
         },
         "wcag20:1.2.8": {
-          "forConformance": true,
-          "secondary": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
+          "secondary": "This success criterion is **more strict** than this rule. This is because the rule allows audio description in place of a media alternative. Some of the passed examples do not satisfy this success criterion."
         },
         "wcag-technique:G8": {
           "forConformance": false,
@@ -25626,18 +25205,10 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:1.2.5": {
-          "forConformance": true,
-          "secondary": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
+          "secondary": "This success criterion is **more strict** than this rule. This is because the rule allows a media alternative in place of audio description. Some of the passed examples do not satisfy this success criterion."
         },
         "wcag20:1.2.8": {
-          "forConformance": true,
-          "secondary": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
+          "secondary": "This success criterion is **more strict** than this rule. This is because the rule allows audio description in place of a media alternative. Some of the passed examples do not satisfy this success criterion."
         },
         "wcag-technique:G8": {
           "forConformance": false,
@@ -25682,18 +25253,10 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:1.2.5": {
-          "forConformance": true,
-          "secondary": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
+          "secondary": "This success criterion is **more strict** than this rule. This is because the rule allows a media alternative in place of audio description. Some of the passed examples do not satisfy this success criterion."
         },
         "wcag20:1.2.8": {
-          "forConformance": true,
-          "secondary": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
+          "secondary": "This success criterion is **more strict** than this rule. This is because the rule allows audio description in place of a media alternative. Some of the passed examples do not satisfy this success criterion."
         },
         "wcag-technique:G8": {
           "forConformance": false,
@@ -25738,18 +25301,10 @@
           "inapplicable": "further testing needed"
         },
         "wcag20:1.2.5": {
-          "forConformance": true,
-          "secondary": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
+          "secondary": "This success criterion is **more strict** than this rule. This is because the rule allows a media alternative in place of audio description. Some of the passed examples do not satisfy this success criterion."
         },
         "wcag20:1.2.8": {
-          "forConformance": true,
-          "secondary": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
+          "secondary": "This success criterion is **more strict** than this rule. This is because the rule allows audio description in place of a media alternative. Some of the passed examples do not satisfy this success criterion."
         },
         "wcag-technique:G8": {
           "forConformance": false,

@@ -1,0 +1,55 @@
+name: copy-to-evaluation-tools-list
+
+# Weekly, or on request, copy ACT implementation reports into the
+# Evaluation Tools List repository.
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Run “At 00:00 on Monday.”
+    - cron: '0 0 * * 1'
+
+jobs:
+  copy-rules:
+    name: Copy Implementation Data
+    runs-on: ubuntu-latest
+    env:
+      SOURCE_DIR: _data/wcag-act-rules/implementations
+      DESTINATION_REPO: w3c/wai-evaluation-tools-list
+      DESTINATION_BRANCH: master
+      DESTINATION_DIR: _data/wai-evaluation-tools-list/act-implementations
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          path: act-rules
+
+      - name: Clone ${{ env.DESTINATION_REPO }}
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }} # add as PAT (https://github.com/settings/tokens) as a secret
+        run: |
+          echo "Cloning $DESTINATION_REPO git repository"
+          git clone --single-branch --branch $DESTINATION_BRANCH "https://$API_TOKEN_GITHUB@github.com/$DESTINATION_REPO.git" evaluation-tools
+
+      - name: Copy ${{ env.SOURCE_DIR }}
+        # Cleanup first, we don't want to keep around old files
+        run: |
+          rm -rf "evaluation-tools/$DESTINATION_DIR"
+          mkdir -p "evaluation-tools/$DESTINATION_DIR"
+          cp -R "act-rules/$SOURCE_DIR" "evaluation-tools/$DESTINATION_DIR"
+       
+      - name: Commit and push
+        env: 
+          COMMIT_MESSAGE: ACT updates from https://github.com/${{ github.repository }}/commit/${{ github.sha }}
+        run: |
+          echo "Commit"
+          cd evaluation-tools
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add .
+          # check for changes with git diff-index to stop error
+          git diff-index --quiet HEAD || git commit -m "$COMMIT_MESSAGE"
+          
+          echo "Push"
+          git push origin --set-upstream "$DESTINATION_BRANCH"

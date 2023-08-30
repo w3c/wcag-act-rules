@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 09o5cg</p>
-  <p><strong>Date:</strong> Updated 9 February 2023</p>
+  <p><strong>Date:</strong> Updated 30 August 2023</p>
   <p><strong>Authors:</strong> <a href="https://github.com/Jym77">Jean-Yves Moyen</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -17,9 +17,10 @@ rule_meta:
   id: 09o5cg
   name: "Text has enhanced contrast"
   rule_type: atomic
+  original_file: text-contrast-enhanced-09o5cg.md
   description: |
     This rule checks that the highest possible contrast of every text character with its background meets the enhanced contrast requirement.
-  last_modified: 9 February 2023
+  last_modified: 30 August 2023
   scs_tested:
     - handle: Contrast (Enhanced)
       num: 1.4.6
@@ -35,7 +36,7 @@ This rule applies to any [visible][] character in a [text node][] that is a [chi
 
 ## Expectation
 
-For each test target, the [highest possible contrast][] between the [foreground colors][] and [background colors][] is at least 7:1 or 4.5:1 for [larger scale text][], except if the test target is part of a [text node][] that is [purely decorative][] or does not express anything in [human language][].
+For each test target, the [highest possible contrast][] between the [foreground colors][] and [background colors][] is at least 4.5:1 for [large scale text][] and 7.0:1 for other texts, except if the test target is part of a [text node][] that is [purely decorative][] or does not express anything in [human language][].
 
 ## Assumptions
 
@@ -54,7 +55,7 @@ For each test target, the [highest possible contrast][] between the [foreground 
 
 ## Background
 
-Passing this rule does not mean that the text has sufficient color contrast. If all background pixels have a low contrast with all foreground pixels, the success criterion is guaranteed to not be satisfied. When some pixels have sufficient contrast, and others do not, legibility should be considered. There is no clear method for determining legibility, which is why this is out of scope for this rule.
+Passing this rule does not mean that the text has sufficient color contrast. If all background pixels have a low contrast with all foreground pixels, the success criterion is guaranteed to not be satisfied. When some pixels have sufficient contrast, and others do not, legibility should be considered. There is no clear method for determining legibility when some but not all pixels have sufficient contrast, which is why passing this rule does not necessarily mean the corresponding success criterion is met.
 
 When the text color or background color is not specified in the web page, colors from other [origins][] will be used. Testers must ensure colors are not affected by styles from a [user origin][], such as a custom style sheet. Contrast issues caused by specifying the text color but not the background or vice versa, must be tested separately from this rule.
 
@@ -107,19 +108,17 @@ This rule is closely related to [success criterion 1.4.3 Contrast (Minimum)][sc1
       </ul></li>
     </ul>
   </details></li>
-  <li><details>
-    <summary><span>1.4.3 Contrast (Minimum) (Level AA)</span></summary>
-    <ul>
-      <li><a href="https://www.w3.org/TR/WCAG21/#contrast-minimum">Learn more about 1.4.3 Contrast (Minimum)</a></li>
-      <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level AA and higher.</li>
-      <li>Outcome mapping: <ul>
-        <li>Any <code>failed</code> outcomes: success criterion is not satisfied</li>
-        <li>All <code>passed</code> outcomes: success criterion </li>
-        <li>An <code>inapplicable</code> outcome: success criterion </li>
-      </ul></li>
-    </ul>
-  </details></li>
 </ul>
+
+### Secondary Requirements
+
+This rule is related to the following accessibility requirements, but was 
+not designed to test this requirements directly. These 
+[secondary requirements](https://w3c.github.io/wcag-act/act-rules-format.html#secondary-requirements)
+can either be stricter than the rule requires, or may be satisfied in ways 
+not tested by the rule:
+
+- [1.4.3 Contrast (Minimum) (Level AA)](https://www.w3.org/TR/WCAG21/#contrast-minimum): This success criterion is **less strict** than this rule. This is because this criterion has a lower minimum contrast. Some of the failed examples may satisfy this success criterion.
 
 ## Input Aspects
 
@@ -783,7 +782,7 @@ The _WAI ARIA Specifications_ group both the WAI ARIA W3C Recommendation and ARI
 [inclusive ancestors]: https://dom.spec.whatwg.org/#concept-tree-inclusive-ancestor 'DOM Definition of Inclusive Ancestor'
 [inheriting semantic]: #inheriting-semantic 'Definition of Inheriting Semantic Role'
 [inoperable]: https://www.w3.org/TR/wai-aria/#dfn-operable
-[larger scale text]: #large-scale-text 'Definition of Large scale text'
+[large scale text]: #large-scale-text 'Definition of Large scale text'
 [link]: https://www.w3.org/TR/wai-aria/#link 'ARIA Definition of the link Role'
 [marked as decorative]: #marked-as-decorative 'Definition of Marked as Decorative'
 [namespaceuri]: https://dom.spec.whatwg.org/#dom-element-namespaceuri 'DOM Element namespaceURI, 2021/05/31'

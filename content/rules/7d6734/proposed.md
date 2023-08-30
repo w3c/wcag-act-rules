@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 7d6734</p>
-  <p><strong>Date:</strong> Updated 11 November 2022</p>
+  <p><strong>Date:</strong> Updated 30 August 2023</p>
   <p><strong>Authors:</strong> <a href="https://github.com/brynanders">Bryn Anderson</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -17,9 +17,10 @@ rule_meta:
   id: 7d6734
   name: "SVG element with explicit role has non-empty accessible name"
   rule_type: atomic
+  original_file: explicit-SVG-image-non-empty-accessible-name-7d6734.md
   description: |
     This rule checks that each SVG image element that is explicitly included in the accessibility tree has a non-empty accessible name.
-  last_modified: 11 November 2022
+  last_modified: 30 August 2023
   scs_tested:
     - handle: Non-text Content
       num: 1.1.1
@@ -36,7 +37,7 @@ Each target element has an [accessible name][] that is not empty.
 
 ## Assumptions
 
-This rule assumes that the presence of one of the roles outlined in the applicability indicates the authors intent to include the element in the accessibility tree and thus convey information to the user about that element.
+This rule assumes that the presence of one of the roles outlined in the applicability indicates the author's intent to include the element in the accessibility tree and thus convey information to the user about that element.
 
 ## Accessibility Support
 

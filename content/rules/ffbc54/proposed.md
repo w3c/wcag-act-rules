@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> ffbc54</p>
-  <p><strong>Date:</strong> Updated 11 November 2022</p>
+  <p><strong>Date:</strong> Updated 30 August 2023</p>
   <p><strong>Authors:</strong> <a href="https://github.com/carlosapaduarte">Carlos Duarte</a>, <a href="https://github.com/joao-vicente">João Vicente</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -17,9 +17,10 @@ rule_meta:
   id: ffbc54
   name: "No keyboard shortcut uses only printable characters"
   rule_type: atomic
+  original_file: printable-characters-shortcut-ffbc54.md
   description: |
     This rule checks that if keyboard shortcuts are implemented using only printable characters, then there is a mechanism to disable the shortcut, or to remap the shortcut to use one or more non-printable character keys, or the shortcut for a user interface component is only available when that component has focus.
-  last_modified: 11 November 2022
+  last_modified: 30 August 2023
   scs_tested:
     - handle: Character Key Shortcuts
       num: 2.1.4
@@ -87,6 +88,83 @@ The following aspects are required in using this rule.
 - [DOM Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom)
 
 ## Test Cases
+
+<details class="act-inline-assets" markdown="block">
+<summary><span>These Javascript and CSS files are used in several examples:</span></summary>
+
+File [`/test-assets/ffbc54/shortcut.js`](https://w3.org/WAI/content-assets/wcag-act-rules/test-assets/ffbc54/shortcut.js):
+
+```javascript
+const defaultParams = {
+	target: 'target',
+	focusOnly: false,
+	shortcutKey: '',
+	ctrlKey: false,
+	disabled: false,
+}
+
+const shortcutDefinitions = new Array()
+
+function activateShortcuts() {
+	document.body.addEventListener('keydown', function(event) {
+		for (const settings of shortcutDefinitions) {
+			if (!settings.disabled) {
+				const target = document.getElementById(settings.target)
+
+				if (
+					event.key === settings.shortcutKey &&
+					(!settings.ctrlKey || event.getModifierState('Control')) &&
+					(!settings.focusOnly || document.activeElement === target)
+				) {
+					document.getElementById('list').innerHTML += '<li>' + target.value + '</li>'
+					target.value = ''
+					event.preventDefault()
+				}
+			}
+		}
+	})
+}
+
+function registerShortcut(params = {}) {
+	shortcutDefinitions.push({ ...defaultParams, ...params })
+}
+
+function changeShortcutParameter(id, param, value) {
+	shortcutDefinitions.find(shortcut => shortcut.id === id)[param] = value
+}
+
+function toggleDisabled(id, value) {
+	changeShortcutParameter(id, 'disabled', value)
+}
+
+function toggleModifier(id, value) {
+	changeShortcutParameter(id, 'ctrlKey', value)
+}
+
+function openModal() {
+	document.getElementById('overlay').style.display = 'block'
+}
+function closeModal() {
+	document.getElementById('overlay').style.display = 'none'
+}
+```
+
+File [`/test-assets/ffbc54/styles.css`](https://w3.org/WAI/content-assets/wcag-act-rules/test-assets/ffbc54/styles.css):
+
+```css
+#overlay {
+	display: none;
+	position: fixed;
+	top: 2em;
+	left: 10em;
+	background-color: #505050;
+	color: white;
+	padding: 1em;
+	padding-top: 0em;
+}
+```
+
+</details>
 
 ### Passed
 

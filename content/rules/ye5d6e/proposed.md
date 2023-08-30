@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> ye5d6e</p>
-  <p><strong>Date:</strong> Updated 14 November 2022</p>
+  <p><strong>Date:</strong> Updated 30 August 2023</p>
   <p><strong>Authors:</strong> <a href="https://github.com/Jym77">Jean-Yves Moyen</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
   
@@ -19,9 +19,10 @@ rule_meta:
   id: ye5d6e
   name: "Document has an instrument to move focus to non-repeated content"
   rule_type: atomic
+  original_file: document-has-instrument-to-non-repeated-content-ye5d6e.md
   description: |
     This rule checks that there is an instrument to move focus to non-repeated content in the page
-  last_modified: 14 November 2022
+  last_modified: 30 August 2023
 ---
 
 ## Applicability
@@ -103,6 +104,81 @@ The following aspects are required in using this rule.
 - [Language](https://www.w3.org/TR/act-rules-aspects/#input-aspects-text)
 
 ## Test Cases
+
+<details class="act-inline-assets" markdown="block">
+<summary><span>These HTML, Javascript, and CSS files are used in several examples:</span></summary>
+
+File [`/test-assets/bypass-blocks-cf77f2/chapter2.html`](https://w3.org/WAI/content-assets/wcag-act-rules/test-assets/bypass-blocks-cf77f2/chapter2.html):
+
+```html
+<html>
+	<head>
+		<title>The Three Kingdoms, Chapter 2</title>
+	</head>
+	<body>
+		<nav id="chapters-navigation">
+			<h1>Content</h1>
+			<ol>
+				<li><a href="/test-assets/bypass-blocks-cf77f2/chapter1.html">Chapter 1</a></li>
+				<li><a>Chapter 2</a></li>
+			</ol>
+		</nav>
+
+		<aside id="bio-translator">
+			<h1>About the translator</h1>
+			<p>Yu Sumei is a professor of English at East China Normal University.</p>
+		</aside>
+		<aside id="about-book">
+			<h1>About the book</h1>
+			<p>The Romance of the Three Kingdoms is a 14th century historical novel.</p>
+		</aside>
+
+		<main>
+			<h1>Zhang Fei Trashes the Inspector in Wrath</h1>
+			<p>
+				Now this Dong Zhuo, also known as Dong Zhong-ying, was from Lintao in northwest China.
+			</p>
+		</main>
+	</body>
+</html>
+```
+
+File [`/test-assets/bypass-blocks-cf77f2/click-on-enter.js`](https://w3.org/WAI/content-assets/wcag-act-rules/test-assets/bypass-blocks-cf77f2/click-on-enter.js):
+
+```javascript
+function ClickOnEnter(...ids) {
+	ids.forEach(id => {
+		const link = document.getElementById(id)
+
+		link.addEventListener('keyup', function(event) {
+			if (event.key === 'Enter') {
+				event.preventDefault()
+				link.click()
+			}
+		})
+	})
+}
+```
+
+File [`/test-assets/bypass-blocks-cf77f2/styles.css`](https://w3.org/WAI/content-assets/wcag-act-rules/test-assets/bypass-blocks-cf77f2/styles.css):
+
+```css
+.off-screen {
+	position: absolute;
+	top: -999px;
+}
+
+.visible-on-focus {
+	position: absolute;
+	top: -100px;
+}
+.visible-on-focus:focus-within {
+	position: relative;
+	top: 0px;
+}
+```
+
+</details>
 
 ### Passed
 

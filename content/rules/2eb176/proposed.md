@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 2eb176</p>
-  <p><strong>Date:</strong> Updated 6 March 2023</p>
+  <p><strong>Date:</strong> Updated 30 August 2023</p>
   <p><strong>Authors:</strong> <a href="https://www.linkedin.com/in/brianbors/">Brian Bors</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
   
@@ -19,9 +19,10 @@ rule_meta:
   id: 2eb176
   name: "Audio element content has transcript"
   rule_type: atomic
+  original_file: audio-transcript-2eb176.md
   description: |
     This rule checks that `audio` elements have a transcript that includes all auditory information.
-  last_modified: 6 March 2023
+  last_modified: 30 August 2023
 ---
 
 ## Applicability
@@ -62,10 +63,55 @@ The following aspects are required in using this rule.
 
 - [DOM Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom)
 - [CSS Styling](https://www.w3.org/TR/act-rules-aspects/#input-aspects-css)
-- Audio output (no link available)
+- [Audio output](https://www.w3.org/TR/act-rules-aspects/#input-aspects-audio-out)
 - [Language](https://www.w3.org/TR/act-rules-aspects/#input-aspects-text)
 
 ## Test Cases
+
+<details class="act-inline-assets" markdown="block">
+<summary><span>These HTML files are used in several examples:</span></summary>
+
+File [`/test-assets/moon-audio/moon-speech-transcript.html`](https://w3.org/WAI/content-assets/wcag-act-rules/test-assets/moon-audio/moon-speech-transcript.html):
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Transcript of the moon speech</title>
+	</head>
+	<body>
+		<p>
+			The above audio contains the following speech: We choose to go to the moon in this decade and do the other things,
+			not because they are easy, but because they are hard, because that goal will serve to organize and measure the
+			best of our energies and skills, because that challenge is one that we are willing to accept, one we are unwilling
+			to postpone, and one which we intend to win, and the others, too.
+		</p>
+	</body>
+</html>
+```
+
+File [`/test-assets/moon-audio/moon-speech-incorrect-transcript.html`](https://w3.org/WAI/content-assets/wcag-act-rules/test-assets/moon-audio/moon-speech-incorrect-transcript.html):
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Transcript of the moon speech</title>
+	</head>
+	<body>
+		<p>
+			The above audio contains the following speech: We choose to go to the cheese in this decade and do the other
+			things, not because they are easy, but because they are hard, because that goal will serve to organize and measure
+			the best of our energies and skills, because that challenge is one that we are willing to accept, one we are
+			unwilling to postpone, and one which we intend to win, and the others, too.
+		</p>
+	</body>
+</html>
+```
+
+</details>
 
 ### Passed
 
