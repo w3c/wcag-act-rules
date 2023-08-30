@@ -140,6 +140,18 @@
       "proposed": false
     },
     {
+      "title": "Iframe with interactive elements is not excluded from tab-order",
+      "permalink": "/standards-guidelines/act/rules/akn7bn/",
+      "successCriteria": [
+        "keyboard"
+      ],
+      "wcagTechniques": [
+        "G202"
+      ],
+      "deprecated": false,
+      "proposed": false
+    },
+    {
       "title": "Image button has non-empty accessible name",
       "permalink": "/standards-guidelines/act/rules/59796f/",
       "successCriteria": [
@@ -718,18 +730,6 @@
         "name-role-value"
       ],
       "wcagTechniques": [],
-      "deprecated": false,
-      "proposed": true
-    },
-    {
-      "title": "Iframe with interactive elements is not excluded from tab-order",
-      "permalink": "/standards-guidelines/act/rules/akn7bn/proposed/",
-      "successCriteria": [
-        "keyboard"
-      ],
-      "wcagTechniques": [
-        "G202"
-      ],
       "deprecated": false,
       "proposed": true
     },
