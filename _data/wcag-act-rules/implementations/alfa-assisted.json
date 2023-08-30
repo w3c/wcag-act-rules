@@ -11283,7 +11283,8 @@
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
-          "WCAG2:keyboard"
+          "WCAG2:keyboard",
+          "WCAG2:keyboard-no-exception"
         ],
         "reported": [
           "WCAG2:keyboard",

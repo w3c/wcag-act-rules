@@ -10,8 +10,8 @@
     "untested": 0
   },
   "proposedRules": {
-    "complete": 19,
-    "partial": 12,
+    "complete": 18,
+    "partial": 13,
     "inconsistent": 9,
     "untested": 27
   },
@@ -11829,9 +11829,10 @@
       ],
       "consistency": null,
       "accessibilityRequirements": {
-        "correct": true,
+        "correct": false,
         "expected": [
-          "WCAG2:images-of-text"
+          "WCAG2:images-of-text",
+          "WCAG2:images-of-text-no-exception"
         ],
         "reported": [
           "WCAG2:images-of-text"
@@ -13839,11 +13840,12 @@
       "procedureNames": [
         "scrollable-region-focusable"
       ],
-      "consistency": "complete",
+      "consistency": "partial",
       "accessibilityRequirements": {
-        "correct": true,
+        "correct": false,
         "expected": [
-          "WCAG2:keyboard"
+          "WCAG2:keyboard",
+          "WCAG2:keyboard-no-exception"
         ],
         "reported": [
           "WCAG2:keyboard"

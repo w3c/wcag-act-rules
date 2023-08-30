@@ -10,8 +10,8 @@
     "untested": 0
   },
   "proposedRules": {
-    "complete": 15,
-    "partial": 10,
+    "complete": 14,
+    "partial": 11,
     "inconsistent": 5,
     "untested": 37
   },
@@ -11826,11 +11826,12 @@
       "procedureNames": [
         "scrollable-region-focusable"
       ],
-      "consistency": "complete",
+      "consistency": "partial",
       "accessibilityRequirements": {
-        "correct": true,
+        "correct": false,
         "expected": [
-          "WCAG2:keyboard"
+          "WCAG2:keyboard",
+          "WCAG2:keyboard-no-exception"
         ],
         "reported": [
           "WCAG2:keyboard"

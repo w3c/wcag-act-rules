@@ -10,8 +10,8 @@
     "untested": 18
   },
   "proposedRules": {
-    "complete": 12,
-    "partial": 4,
+    "complete": 11,
+    "partial": 5,
     "inconsistent": 1,
     "untested": 50
   },
@@ -3408,11 +3408,12 @@
       "procedureNames": [
         "1.4.5-image-of-text"
       ],
-      "consistency": "complete",
+      "consistency": "partial",
       "accessibilityRequirements": {
-        "correct": true,
+        "correct": false,
         "expected": [
-          "WCAG2:images-of-text"
+          "WCAG2:images-of-text",
+          "WCAG2:images-of-text-no-exception"
         ],
         "reported": [
           "WCAG2:images-of-text"
