@@ -152,6 +152,19 @@
       "proposed": false
     },
     {
+      "title": "Image accessible name is descriptive",
+      "permalink": "/standards-guidelines/act/rules/qt1vmo/",
+      "successCriteria": [
+        "non-text-content"
+      ],
+      "wcagTechniques": [
+        "G94",
+        "G95"
+      ],
+      "deprecated": false,
+      "proposed": false
+    },
+    {
       "title": "Image button has non-empty accessible name",
       "permalink": "/standards-guidelines/act/rules/59796f/",
       "successCriteria": [
@@ -743,19 +756,6 @@
         "name-role-value"
       ],
       "wcagTechniques": [],
-      "deprecated": false,
-      "proposed": true
-    },
-    {
-      "title": "Image accessible name is descriptive",
-      "permalink": "/standards-guidelines/act/rules/qt1vmo/proposed/",
-      "successCriteria": [
-        "non-text-content"
-      ],
-      "wcagTechniques": [
-        "G94",
-        "G95"
-      ],
       "deprecated": false,
       "proposed": true
     },
