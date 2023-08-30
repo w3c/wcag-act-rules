@@ -250,6 +250,19 @@
       "proposed": false
     },
     {
+      "title": "Scrollable content can be reached with sequential focus navigation",
+      "permalink": "/standards-guidelines/act/rules/0ssw9k/",
+      "successCriteria": [
+        "keyboard",
+        "keyboard-no-exception"
+      ],
+      "wcagTechniques": [
+        "G202"
+      ],
+      "deprecated": false,
+      "proposed": false
+    },
+    {
       "title": "SVG element with explicit role has non-empty accessible name",
       "permalink": "/standards-guidelines/act/rules/7d6734/",
       "successCriteria": [
@@ -853,19 +866,6 @@
       "wcagTechniques": [
         "ARIA4",
         "G108"
-      ],
-      "deprecated": false,
-      "proposed": true
-    },
-    {
-      "title": "Scrollable content can be reached with sequential focus navigation",
-      "permalink": "/standards-guidelines/act/rules/0ssw9k/proposed/",
-      "successCriteria": [
-        "keyboard",
-        "keyboard-no-exception"
-      ],
-      "wcagTechniques": [
-        "G202"
       ],
       "deprecated": false,
       "proposed": true
