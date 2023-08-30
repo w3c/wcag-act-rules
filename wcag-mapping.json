@@ -252,6 +252,17 @@
       "proposed": false
     },
     {
+      "title": "Text has minimum contrast",
+      "permalink": "/standards-guidelines/act/rules/afw4f7/",
+      "successCriteria": [
+        "contrast-minimum",
+        "contrast-enhanced"
+      ],
+      "wcagTechniques": [],
+      "deprecated": false,
+      "proposed": false
+    },
+    {
       "title": "Word spacing in style attributes is not !important",
       "permalink": "/standards-guidelines/act/rules/9e45ec/",
       "successCriteria": [
@@ -874,17 +885,6 @@
       "permalink": "/standards-guidelines/act/rules/efbfc7/proposed/",
       "successCriteria": [
         "pause-stop-hide"
-      ],
-      "wcagTechniques": [],
-      "deprecated": false,
-      "proposed": true
-    },
-    {
-      "title": "Text has minimum contrast",
-      "permalink": "/standards-guidelines/act/rules/afw4f7/proposed/",
-      "successCriteria": [
-        "contrast-minimum",
-        "contrast-enhanced"
       ],
       "wcagTechniques": [],
       "deprecated": false,
