@@ -95,9 +95,7 @@ not designed to test this requirements directly. These
 can either be stricter than the rule requires, or may be satisfied in ways 
 not tested by the rule:
 
-<ul>
-  <li><a href="https://www.w3.org/TR/WCAG21/#keyboard-no-exception">2.1.3 Keyboard (No Exception) (Level AAA)</a></li>
-</ul>
+- [2.1.3 Keyboard (No Exception) (Level AAA)](https://www.w3.org/TR/WCAG21/#keyboard-no-exception): This rule is **less strict** than the criterion.
 
 ## Input Aspects
 

@@ -117,9 +117,7 @@ not designed to test this requirements directly. These
 can either be stricter than the rule requires, or may be satisfied in ways 
 not tested by the rule:
 
-<ul>
-  <li><a href="https://www.w3.org/TR/WCAG21/#contrast-minimum">1.4.3 Contrast (Minimum) (Level AA)</a></li>
-</ul>
+- [1.4.3 Contrast (Minimum) (Level AA)](https://www.w3.org/TR/WCAG21/#contrast-minimum): This rule is **stricter than** the criterion.
 
 ## Input Aspects
 
