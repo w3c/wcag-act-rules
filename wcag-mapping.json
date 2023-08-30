@@ -227,6 +227,16 @@
       "proposed": false
     },
     {
+      "title": "Menuitem has non-empty accessible name",
+      "permalink": "/standards-guidelines/act/rules/m6b1q3/",
+      "successCriteria": [
+        "name-role-value"
+      ],
+      "wcagTechniques": [],
+      "deprecated": false,
+      "proposed": false
+    },
+    {
       "title": "Meta element has no refresh delay",
       "permalink": "/standards-guidelines/act/rules/bc659a/",
       "successCriteria": [
@@ -806,16 +816,6 @@
       "permalink": "/standards-guidelines/act/rules/b20e66/proposed/",
       "successCriteria": [
         "link-purpose-link-only"
-      ],
-      "wcagTechniques": [],
-      "deprecated": false,
-      "proposed": true
-    },
-    {
-      "title": "Menuitem has non-empty accessible name",
-      "permalink": "/standards-guidelines/act/rules/m6b1q3/proposed/",
-      "successCriteria": [
-        "name-role-value"
       ],
       "wcagTechniques": [],
       "deprecated": false,
