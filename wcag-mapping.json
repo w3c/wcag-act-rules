@@ -31,6 +31,16 @@
       "proposed": false
     },
     {
+      "title": "Element in sequential focus order has visible focus",
+      "permalink": "/standards-guidelines/act/rules/oj04fd/",
+      "successCriteria": [
+        "focus-visible"
+      ],
+      "wcagTechniques": [],
+      "deprecated": false,
+      "proposed": false
+    },
+    {
       "title": "Element marked as decorative is not exposed",
       "permalink": "/standards-guidelines/act/rules/46ca7f/",
       "successCriteria": [],
@@ -543,16 +553,6 @@
       "wcagTechniques": [
         "H69"
       ],
-      "deprecated": false,
-      "proposed": true
-    },
-    {
-      "title": "Element in sequential focus order has visible focus",
-      "permalink": "/standards-guidelines/act/rules/oj04fd/proposed/",
-      "successCriteria": [
-        "focus-visible"
-      ],
-      "wcagTechniques": [],
       "deprecated": false,
       "proposed": true
     },
