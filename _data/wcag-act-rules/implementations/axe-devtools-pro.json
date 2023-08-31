@@ -4,14 +4,14 @@
   "version": "4.37.1",
   "lastModified": "17 August 2023",
   "approvedRules": {
-    "complete": 21,
-    "partial": 0,
+    "complete": 28,
+    "partial": 1,
     "inconsistent": 0,
     "untested": 0
   },
   "proposedRules": {
-    "complete": 18,
-    "partial": 13,
+    "complete": 11,
+    "partial": 12,
     "inconsistent": 9,
     "untested": 27
   },
@@ -344,7 +344,7 @@
           "testcaseId": "efcd5df49b39506dac34a310f4b8bc0df71716d3",
           "testCaseName": "Passed Example 9",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/73f2c2/efcd5df49b39506dac34a310f4b8bc0df71716d3.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "passed",
           "procedureResults": [
             {
@@ -359,7 +359,7 @@
           "testcaseId": "2512c24c9a793fa8a30958e203090f955a3fc262",
           "testCaseName": "Failed Example 6",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/73f2c2/2512c24c9a793fa8a30958e203090f955a3fc262.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "failed",
           "procedureResults": [
             {
@@ -374,7 +374,7 @@
           "testcaseId": "55ce632e85a0243abf196c59242b2af699e5c0d4",
           "testCaseName": "Failed Example 7",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/73f2c2/55ce632e85a0243abf196c59242b2af699e5c0d4.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "failed",
           "procedureResults": [
             {
@@ -389,7 +389,7 @@
           "testcaseId": "130d7f761a6a43b896b2f1d0ded311da6a7aebf1",
           "testCaseName": "Failed Example 8",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/73f2c2/130d7f761a6a43b896b2f1d0ded311da6a7aebf1.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "failed",
           "procedureResults": [
             {
@@ -404,7 +404,7 @@
           "testcaseId": "3d79434f382323a20bc7dda8cd01e8d084a3c3bf",
           "testCaseName": "Failed Example 9",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/73f2c2/3d79434f382323a20bc7dda8cd01e8d084a3c3bf.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "failed",
           "procedureResults": [
             {
@@ -419,7 +419,7 @@
           "testcaseId": "92214e0008b9b2e7bd98d991d27c09bb33d4c92c",
           "testCaseName": "Failed Example 10",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/73f2c2/92214e0008b9b2e7bd98d991d27c09bb33d4c92c.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "failed",
           "procedureResults": [
             {
@@ -434,7 +434,7 @@
           "testcaseId": "41c0b66bc0208aef009343935649f2bec3ae778d",
           "testCaseName": "Inapplicable Example 8",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/73f2c2/41c0b66bc0208aef009343935649f2bec3ae778d.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "inapplicable",
           "procedureResults": [
             {
@@ -449,7 +449,7 @@
           "testcaseId": "631fc4f23b93e9486e5cc07aed11a99003d4f354",
           "testCaseName": "Inapplicable Example 9",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/73f2c2/631fc4f23b93e9486e5cc07aed11a99003d4f354.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "inapplicable",
           "procedureResults": [
             {
@@ -1336,8 +1336,8 @@
       "ruleName": "Form field has non-empty accessible name",
       "ruleApproved": true,
       "procedureNames": [
-        "aria-input-field-name",
         "label",
+        "aria-input-field-name",
         "select-name"
       ],
       "consistency": "complete",
@@ -1365,15 +1365,15 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "aria-input-field-name",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
               "procedureName": "label",
               "outcomes": [
                 "passed"
+              ]
+            },
+            {
+              "procedureName": "aria-input-field-name",
+              "outcomes": [
+                "inapplicable"
               ]
             },
             {
@@ -1392,15 +1392,15 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "aria-input-field-name",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
               "procedureName": "label",
               "outcomes": [
                 "passed"
+              ]
+            },
+            {
+              "procedureName": "aria-input-field-name",
+              "outcomes": [
+                "inapplicable"
               ]
             },
             {
@@ -1419,13 +1419,13 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "aria-input-field-name",
+              "procedureName": "label",
               "outcomes": [
                 "inapplicable"
               ]
             },
             {
-              "procedureName": "label",
+              "procedureName": "aria-input-field-name",
               "outcomes": [
                 "inapplicable"
               ]
@@ -1446,15 +1446,15 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "aria-input-field-name",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
               "procedureName": "label",
               "outcomes": [
                 "passed"
+              ]
+            },
+            {
+              "procedureName": "aria-input-field-name",
+              "outcomes": [
+                "inapplicable"
               ]
             },
             {
@@ -1473,15 +1473,15 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "aria-input-field-name",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
               "procedureName": "label",
               "outcomes": [
                 "passed"
+              ]
+            },
+            {
+              "procedureName": "aria-input-field-name",
+              "outcomes": [
+                "inapplicable"
               ]
             },
             {
@@ -1500,15 +1500,15 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "aria-input-field-name",
-              "outcomes": [
-                "passed"
-              ]
-            },
-            {
               "procedureName": "label",
               "outcomes": [
                 "inapplicable"
+              ]
+            },
+            {
+              "procedureName": "aria-input-field-name",
+              "outcomes": [
+                "passed"
               ]
             },
             {
@@ -1527,13 +1527,13 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "aria-input-field-name",
+              "procedureName": "label",
               "outcomes": [
                 "inapplicable"
               ]
             },
             {
-              "procedureName": "label",
+              "procedureName": "aria-input-field-name",
               "outcomes": [
                 "inapplicable"
               ]
@@ -1554,15 +1554,15 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "aria-input-field-name",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
               "procedureName": "label",
               "outcomes": [
                 "failed"
+              ]
+            },
+            {
+              "procedureName": "aria-input-field-name",
+              "outcomes": [
+                "inapplicable"
               ]
             },
             {
@@ -1581,15 +1581,15 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "aria-input-field-name",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
               "procedureName": "label",
               "outcomes": [
                 "failed"
+              ]
+            },
+            {
+              "procedureName": "aria-input-field-name",
+              "outcomes": [
+                "inapplicable"
               ]
             },
             {
@@ -1608,15 +1608,15 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "aria-input-field-name",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
               "procedureName": "label",
               "outcomes": [
                 "failed"
+              ]
+            },
+            {
+              "procedureName": "aria-input-field-name",
+              "outcomes": [
+                "inapplicable"
               ]
             },
             {
@@ -1635,13 +1635,13 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "aria-input-field-name",
+              "procedureName": "label",
               "outcomes": [
                 "inapplicable"
               ]
             },
             {
-              "procedureName": "label",
+              "procedureName": "aria-input-field-name",
               "outcomes": [
                 "inapplicable"
               ]
@@ -1662,15 +1662,15 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "aria-input-field-name",
-              "outcomes": [
-                "failed"
-              ]
-            },
-            {
               "procedureName": "label",
               "outcomes": [
                 "inapplicable"
+              ]
+            },
+            {
+              "procedureName": "aria-input-field-name",
+              "outcomes": [
+                "failed"
               ]
             },
             {
@@ -1689,15 +1689,15 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "aria-input-field-name",
-              "outcomes": [
-                "failed"
-              ]
-            },
-            {
               "procedureName": "label",
               "outcomes": [
                 "inapplicable"
+              ]
+            },
+            {
+              "procedureName": "aria-input-field-name",
+              "outcomes": [
+                "failed"
               ]
             },
             {
@@ -1716,15 +1716,15 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "aria-input-field-name",
-              "outcomes": [
-                "failed"
-              ]
-            },
-            {
               "procedureName": "label",
               "outcomes": [
                 "inapplicable"
+              ]
+            },
+            {
+              "procedureName": "aria-input-field-name",
+              "outcomes": [
+                "failed"
               ]
             },
             {
@@ -1743,13 +1743,13 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "aria-input-field-name",
+              "procedureName": "label",
               "outcomes": [
                 "inapplicable"
               ]
             },
             {
-              "procedureName": "label",
+              "procedureName": "aria-input-field-name",
               "outcomes": [
                 "inapplicable"
               ]
@@ -1770,13 +1770,13 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "aria-input-field-name",
+              "procedureName": "label",
               "outcomes": [
                 "inapplicable"
               ]
             },
             {
-              "procedureName": "label",
+              "procedureName": "aria-input-field-name",
               "outcomes": [
                 "inapplicable"
               ]
@@ -1797,13 +1797,13 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "aria-input-field-name",
+              "procedureName": "label",
               "outcomes": [
                 "inapplicable"
               ]
             },
             {
-              "procedureName": "label",
+              "procedureName": "aria-input-field-name",
               "outcomes": [
                 "inapplicable"
               ]
@@ -1820,20 +1820,20 @@
           "testcaseId": "d9ee6c2ae6da41521bd4ba0bf25c4b6bcd253f37",
           "testCaseName": "Passed Example 8",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/e086e5/d9ee6c2ae6da41521bd4ba0bf25c4b6bcd253f37.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "passed",
           "procedureResults": [
-            {
-              "procedureName": "aria-input-field-name",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
             {
               "procedureName": "label",
               "outcomes": [
                 "passed",
                 "passed"
+              ]
+            },
+            {
+              "procedureName": "aria-input-field-name",
+              "outcomes": [
+                "inapplicable"
               ]
             },
             {
@@ -1848,15 +1848,9 @@
           "testcaseId": "bd816c3ef10b8982f18411e1623887d2444d7311",
           "testCaseName": "Failed Example 8",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/e086e5/bd816c3ef10b8982f18411e1623887d2444d7311.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "failed",
           "procedureResults": [
-            {
-              "procedureName": "aria-input-field-name",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
             {
               "procedureName": "label",
               "outcomes": [
@@ -1865,243 +1859,13 @@
               ]
             },
             {
+              "procedureName": "aria-input-field-name",
+              "outcomes": [
+                "inapplicable"
+              ]
+            },
+            {
               "procedureName": "select-name",
-              "outcomes": [
-                "inapplicable"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "ruleId": "b5c3f8",
-      "ruleName": "HTML page has `lang` attribute",
-      "ruleApproved": true,
-      "procedureNames": [
-        "html-has-lang"
-      ],
-      "consistency": "complete",
-      "accessibilityRequirements": {
-        "correct": true,
-        "expected": [
-          "WCAG2:language-of-page"
-        ],
-        "reported": [
-          "WCAG2:language-of-page"
-        ]
-      },
-      "coverage": {
-        "covered": 14,
-        "untested": 0,
-        "cantTell": 0,
-        "testCaseTotal": 14
-      },
-      "testCaseResults": [
-        {
-          "testcaseId": "f8214944f374b25c3ce42bd92a4304d38a2309dc",
-          "testCaseName": "Passed Example 1",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b5c3f8/f8214944f374b25c3ce42bd92a4304d38a2309dc.html",
-          "testCaseApproved": true,
-          "expected": "passed",
-          "procedureResults": [
-            {
-              "procedureName": "html-has-lang",
-              "outcomes": [
-                "passed"
-              ]
-            }
-          ]
-        },
-        {
-          "testcaseId": "941efb7368e46b27b937d34b07fc4d41da01b002",
-          "testCaseName": "Failed Example 1",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b5c3f8/941efb7368e46b27b937d34b07fc4d41da01b002.html",
-          "testCaseApproved": true,
-          "expected": "failed",
-          "procedureResults": [
-            {
-              "procedureName": "html-has-lang",
-              "outcomes": [
-                "failed"
-              ]
-            }
-          ]
-        },
-        {
-          "testcaseId": "36f0f321c8aa6e8c0a5ee08b15e8f1442ad762fd",
-          "testCaseName": "Failed Example 2",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b5c3f8/36f0f321c8aa6e8c0a5ee08b15e8f1442ad762fd.html",
-          "testCaseApproved": true,
-          "expected": "failed",
-          "procedureResults": [
-            {
-              "procedureName": "html-has-lang",
-              "outcomes": [
-                "failed"
-              ]
-            }
-          ]
-        },
-        {
-          "testcaseId": "5636ffbff7668ca38610e36905889df90a92f485",
-          "testCaseName": "Failed Example 3",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b5c3f8/5636ffbff7668ca38610e36905889df90a92f485.html",
-          "testCaseApproved": true,
-          "expected": "failed",
-          "procedureResults": [
-            {
-              "procedureName": "html-has-lang",
-              "outcomes": [
-                "failed"
-              ]
-            }
-          ]
-        },
-        {
-          "testcaseId": "4885abc44ca092b3d07a3f8e855dbcbf33f6c66b",
-          "testCaseName": "Failed Example 4",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b5c3f8/4885abc44ca092b3d07a3f8e855dbcbf33f6c66b.html",
-          "testCaseApproved": true,
-          "expected": "failed",
-          "procedureResults": [
-            {
-              "procedureName": "html-has-lang",
-              "outcomes": [
-                "failed"
-              ]
-            }
-          ]
-        },
-        {
-          "testcaseId": "297b27cc9c3500b77e72320d73ad8252aede9bb8",
-          "testCaseName": "Inapplicable Example 1",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b5c3f8/297b27cc9c3500b77e72320d73ad8252aede9bb8.svg",
-          "testCaseApproved": true,
-          "expected": "inapplicable",
-          "procedureResults": [
-            {
-              "procedureName": "html-has-lang",
-              "outcomes": [
-                "inapplicable"
-              ]
-            }
-          ]
-        },
-        {
-          "testcaseId": "af7eaac588fa1a23884d30f93ed50c2f1779c2fa",
-          "testCaseName": "Inapplicable Example 2",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b5c3f8/af7eaac588fa1a23884d30f93ed50c2f1779c2fa.xml",
-          "testCaseApproved": true,
-          "expected": "inapplicable",
-          "procedureResults": [
-            {
-              "procedureName": "html-has-lang",
-              "outcomes": [
-                "inapplicable"
-              ]
-            }
-          ]
-        },
-        {
-          "testcaseId": "0fac26928e2bf6b7db6c7f46a1e0ab50aaa8a7c1",
-          "testCaseName": "Passed Example 1",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b5c3f8/0fac26928e2bf6b7db6c7f46a1e0ab50aaa8a7c1.html",
-          "testCaseApproved": false,
-          "expected": "passed",
-          "procedureResults": [
-            {
-              "procedureName": "html-has-lang",
-              "outcomes": [
-                "passed"
-              ]
-            }
-          ]
-        },
-        {
-          "testcaseId": "473352935acf2463b14dbd8e38073e913eeb5c08",
-          "testCaseName": "Failed Example 1",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b5c3f8/473352935acf2463b14dbd8e38073e913eeb5c08.html",
-          "testCaseApproved": false,
-          "expected": "failed",
-          "procedureResults": [
-            {
-              "procedureName": "html-has-lang",
-              "outcomes": [
-                "failed"
-              ]
-            }
-          ]
-        },
-        {
-          "testcaseId": "98681b2a7949e49b2da1b353f70e688528fe7ddc",
-          "testCaseName": "Failed Example 2",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b5c3f8/98681b2a7949e49b2da1b353f70e688528fe7ddc.html",
-          "testCaseApproved": false,
-          "expected": "failed",
-          "procedureResults": [
-            {
-              "procedureName": "html-has-lang",
-              "outcomes": [
-                "failed"
-              ]
-            }
-          ]
-        },
-        {
-          "testcaseId": "4ea0280617a1b71dcc327356484f8767919b0f40",
-          "testCaseName": "Failed Example 3",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b5c3f8/4ea0280617a1b71dcc327356484f8767919b0f40.html",
-          "testCaseApproved": false,
-          "expected": "failed",
-          "procedureResults": [
-            {
-              "procedureName": "html-has-lang",
-              "outcomes": [
-                "failed"
-              ]
-            }
-          ]
-        },
-        {
-          "testcaseId": "4f94c3e26f43701d91db403fe26cd8894bdc8ccf",
-          "testCaseName": "Failed Example 4",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b5c3f8/4f94c3e26f43701d91db403fe26cd8894bdc8ccf.html",
-          "testCaseApproved": false,
-          "expected": "failed",
-          "procedureResults": [
-            {
-              "procedureName": "html-has-lang",
-              "outcomes": [
-                "failed"
-              ]
-            }
-          ]
-        },
-        {
-          "testcaseId": "b584aa8aeb33814a0ecb63fd9ed4d97f2211f837",
-          "testCaseName": "Inapplicable Example 1",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b5c3f8/b584aa8aeb33814a0ecb63fd9ed4d97f2211f837.svg",
-          "testCaseApproved": false,
-          "expected": "inapplicable",
-          "procedureResults": [
-            {
-              "procedureName": "html-has-lang",
-              "outcomes": [
-                "inapplicable"
-              ]
-            }
-          ]
-        },
-        {
-          "testcaseId": "58847c387d3b2cfa7e57c6ed613a8f31569cfd30",
-          "testCaseName": "Inapplicable Example 2",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b5c3f8/58847c387d3b2cfa7e57c6ed613a8f31569cfd30.xml",
-          "testCaseApproved": false,
-          "expected": "inapplicable",
-          "procedureResults": [
-            {
-              "procedureName": "html-has-lang",
               "outcomes": [
                 "inapplicable"
               ]
@@ -10293,6 +10057,137 @@
       ]
     },
     {
+      "ruleId": "b5c3f8",
+      "ruleName": "HTML page has lang attribute",
+      "ruleApproved": true,
+      "procedureNames": [
+        "html-has-lang"
+      ],
+      "consistency": "complete",
+      "accessibilityRequirements": {
+        "correct": true,
+        "expected": [
+          "WCAG2:language-of-page"
+        ],
+        "reported": [
+          "WCAG2:language-of-page"
+        ]
+      },
+      "coverage": {
+        "covered": 7,
+        "untested": 0,
+        "cantTell": 0,
+        "testCaseTotal": 7
+      },
+      "testCaseResults": [
+        {
+          "testcaseId": "0fac26928e2bf6b7db6c7f46a1e0ab50aaa8a7c1",
+          "testCaseName": "Passed Example 1",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b5c3f8/0fac26928e2bf6b7db6c7f46a1e0ab50aaa8a7c1.html",
+          "testCaseApproved": true,
+          "expected": "passed",
+          "procedureResults": [
+            {
+              "procedureName": "html-has-lang",
+              "outcomes": [
+                "passed"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "473352935acf2463b14dbd8e38073e913eeb5c08",
+          "testCaseName": "Failed Example 1",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b5c3f8/473352935acf2463b14dbd8e38073e913eeb5c08.html",
+          "testCaseApproved": true,
+          "expected": "failed",
+          "procedureResults": [
+            {
+              "procedureName": "html-has-lang",
+              "outcomes": [
+                "failed"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "98681b2a7949e49b2da1b353f70e688528fe7ddc",
+          "testCaseName": "Failed Example 2",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b5c3f8/98681b2a7949e49b2da1b353f70e688528fe7ddc.html",
+          "testCaseApproved": true,
+          "expected": "failed",
+          "procedureResults": [
+            {
+              "procedureName": "html-has-lang",
+              "outcomes": [
+                "failed"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "4ea0280617a1b71dcc327356484f8767919b0f40",
+          "testCaseName": "Failed Example 3",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b5c3f8/4ea0280617a1b71dcc327356484f8767919b0f40.html",
+          "testCaseApproved": true,
+          "expected": "failed",
+          "procedureResults": [
+            {
+              "procedureName": "html-has-lang",
+              "outcomes": [
+                "failed"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "4f94c3e26f43701d91db403fe26cd8894bdc8ccf",
+          "testCaseName": "Failed Example 4",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b5c3f8/4f94c3e26f43701d91db403fe26cd8894bdc8ccf.html",
+          "testCaseApproved": true,
+          "expected": "failed",
+          "procedureResults": [
+            {
+              "procedureName": "html-has-lang",
+              "outcomes": [
+                "failed"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "b584aa8aeb33814a0ecb63fd9ed4d97f2211f837",
+          "testCaseName": "Inapplicable Example 1",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b5c3f8/b584aa8aeb33814a0ecb63fd9ed4d97f2211f837.svg",
+          "testCaseApproved": true,
+          "expected": "inapplicable",
+          "procedureResults": [
+            {
+              "procedureName": "html-has-lang",
+              "outcomes": [
+                "inapplicable"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "58847c387d3b2cfa7e57c6ed613a8f31569cfd30",
+          "testCaseName": "Inapplicable Example 2",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b5c3f8/58847c387d3b2cfa7e57c6ed613a8f31569cfd30.xml",
+          "testCaseApproved": true,
+          "expected": "inapplicable",
+          "procedureResults": [
+            {
+              "procedureName": "html-has-lang",
+              "outcomes": [
+                "inapplicable"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "ruleId": "ucwvc8",
       "ruleName": "HTML page language subtag matches default language",
       "ruleApproved": false,
@@ -10546,7 +10441,7 @@
     {
       "ruleId": "c4a8a4",
       "ruleName": "HTML page title is descriptive",
-      "ruleApproved": false,
+      "ruleApproved": true,
       "procedureNames": [
         "title-not-meaningful (structure)"
       ],
@@ -10571,7 +10466,7 @@
           "testcaseId": "c19c231ab5175fb62b6a74b998aec0dd965c25c5",
           "testCaseName": "Passed Example 1",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/c4a8a4/c19c231ab5175fb62b6a74b998aec0dd965c25c5.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "passed",
           "procedureResults": [
             {
@@ -10586,7 +10481,7 @@
           "testcaseId": "107a5e462b4ad6dd297742a2a177e24d32d27c26",
           "testCaseName": "Passed Example 2",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/c4a8a4/107a5e462b4ad6dd297742a2a177e24d32d27c26.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "passed",
           "procedureResults": [
             {
@@ -10601,7 +10496,7 @@
           "testcaseId": "2f9709573bf080a0feccfb2fd4b4a657383ef235",
           "testCaseName": "Passed Example 3",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/c4a8a4/2f9709573bf080a0feccfb2fd4b4a657383ef235.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "passed",
           "procedureResults": [
             {
@@ -10616,7 +10511,7 @@
           "testcaseId": "2c1397032aad720fe43dee2be0d326be56957320",
           "testCaseName": "Failed Example 1",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/c4a8a4/2c1397032aad720fe43dee2be0d326be56957320.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "failed",
           "procedureResults": [
             {
@@ -10631,7 +10526,7 @@
           "testcaseId": "1844d7bce889d85a80b620468baa804eab3ff2c8",
           "testCaseName": "Failed Example 2",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/c4a8a4/1844d7bce889d85a80b620468baa804eab3ff2c8.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "failed",
           "procedureResults": [
             {
@@ -10646,7 +10541,7 @@
           "testcaseId": "4c72b3b9b06bf1edc3c959070731b65871ee0c8f",
           "testCaseName": "Failed Example 3",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/c4a8a4/4c72b3b9b06bf1edc3c959070731b65871ee0c8f.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "failed",
           "procedureResults": [
             {
@@ -10661,7 +10556,7 @@
           "testcaseId": "85469fd266d3e8706f551dcd65261709311123d0",
           "testCaseName": "Inapplicable Example 1",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/c4a8a4/85469fd266d3e8706f551dcd65261709311123d0.svg",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "inapplicable",
           "procedureResults": [
             {
@@ -11426,7 +11321,7 @@
     {
       "ruleId": "akn7bn",
       "ruleName": "Iframe with interactive elements is not excluded from tab-order",
-      "ruleApproved": false,
+      "ruleApproved": true,
       "procedureNames": [
         "frame-focusable-content"
       ],
@@ -11451,7 +11346,7 @@
           "testcaseId": "1e3939d9f8e0f78f9c564ec6feb12cc5635c0acb",
           "testCaseName": "Passed Example 1",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/akn7bn/1e3939d9f8e0f78f9c564ec6feb12cc5635c0acb.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "passed",
           "procedureResults": [
             {
@@ -11466,7 +11361,7 @@
           "testcaseId": "a16be608639d0976b9d044360695d853384f56f0",
           "testCaseName": "Passed Example 2",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/akn7bn/a16be608639d0976b9d044360695d853384f56f0.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "passed",
           "procedureResults": [
             {
@@ -11481,7 +11376,7 @@
           "testcaseId": "62673162e22ee1e95e962522b1d1c3b549dbfc49",
           "testCaseName": "Failed Example 1",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/akn7bn/62673162e22ee1e95e962522b1d1c3b549dbfc49.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "failed",
           "procedureResults": [
             {
@@ -11496,7 +11391,7 @@
           "testcaseId": "c90de6661c91b4449b96fb31e487c70d1e3350df",
           "testCaseName": "Inapplicable Example 1",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/akn7bn/c90de6661c91b4449b96fb31e487c70d1e3350df.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "inapplicable",
           "procedureResults": [
             {
@@ -11511,7 +11406,7 @@
           "testcaseId": "033e04cced5973596d9aa724feacb027d23b4c53",
           "testCaseName": "Inapplicable Example 2",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/akn7bn/033e04cced5973596d9aa724feacb027d23b4c53.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "inapplicable",
           "procedureResults": [
             {
@@ -11526,7 +11421,7 @@
           "testcaseId": "63cd20ec8886f4c59ff54f406a0e5933847bce75",
           "testCaseName": "Inapplicable Example 3",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/akn7bn/63cd20ec8886f4c59ff54f406a0e5933847bce75.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "inapplicable",
           "procedureResults": [
             {
@@ -11541,7 +11436,7 @@
           "testcaseId": "aa153f6799d28563054ce66bcf7dfcedf9b75288",
           "testCaseName": "Inapplicable Example 4",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/akn7bn/aa153f6799d28563054ce66bcf7dfcedf9b75288.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "inapplicable",
           "procedureResults": [
             {
@@ -11557,7 +11452,7 @@
     {
       "ruleId": "qt1vmo",
       "ruleName": "Image accessible name is descriptive",
-      "ruleApproved": false,
+      "ruleApproved": true,
       "procedureNames": [
         "alt-text-short-text-not-meaningful (Images)"
       ],
@@ -11582,7 +11477,7 @@
           "testcaseId": "af4423575333947073fa3729f502ff0a0c6c2fbf",
           "testCaseName": "Passed Example 1",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/qt1vmo/af4423575333947073fa3729f502ff0a0c6c2fbf.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "passed",
           "procedureResults": [
             {
@@ -11597,7 +11492,7 @@
           "testcaseId": "5d314574052bf16676abb0e9a67e48dd70116c2e",
           "testCaseName": "Passed Example 2",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/qt1vmo/5d314574052bf16676abb0e9a67e48dd70116c2e.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "passed",
           "procedureResults": [
             {
@@ -11612,7 +11507,7 @@
           "testcaseId": "2a66c7b8d8ef78d350b1c995e0ad232008f6564f",
           "testCaseName": "Passed Example 3",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/qt1vmo/2a66c7b8d8ef78d350b1c995e0ad232008f6564f.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "passed",
           "procedureResults": [
             {
@@ -11627,7 +11522,7 @@
           "testcaseId": "485f10faf222cd48fea2ab3ee79c2d354e51ea33",
           "testCaseName": "Failed Example 1",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/qt1vmo/485f10faf222cd48fea2ab3ee79c2d354e51ea33.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "failed",
           "procedureResults": [
             {
@@ -11642,7 +11537,7 @@
           "testcaseId": "2f7d82593e287df64b7459695e355a840254255c",
           "testCaseName": "Failed Example 2",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/qt1vmo/2f7d82593e287df64b7459695e355a840254255c.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "failed",
           "procedureResults": [
             {
@@ -11657,7 +11552,7 @@
           "testcaseId": "bac67a5a2ada971100bbec89961ad3e6c869f268",
           "testCaseName": "Failed Example 3",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/qt1vmo/bac67a5a2ada971100bbec89961ad3e6c869f268.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "failed",
           "procedureResults": [
             {
@@ -11672,7 +11567,7 @@
           "testcaseId": "0ab8d652533229aae98191a6a43c2168e1959963",
           "testCaseName": "Inapplicable Example 1",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/qt1vmo/0ab8d652533229aae98191a6a43c2168e1959963.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "inapplicable",
           "procedureResults": [
             {
@@ -11687,7 +11582,7 @@
           "testcaseId": "ce2c30787caebdf1d6adcd6aedfac8fa8842a9c4",
           "testCaseName": "Inapplicable Example 2",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/qt1vmo/ce2c30787caebdf1d6adcd6aedfac8fa8842a9c4.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "inapplicable",
           "procedureResults": [
             {
@@ -11702,7 +11597,7 @@
           "testcaseId": "4629221e66963f356b68f6e17dacea9a937fe7d3",
           "testCaseName": "Inapplicable Example 3",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/qt1vmo/4629221e66963f356b68f6e17dacea9a937fe7d3.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "inapplicable",
           "procedureResults": [
             {
@@ -11717,7 +11612,7 @@
           "testcaseId": "9f373a7eca6b3dc1089e76fa275cdb63c7a8d4b6",
           "testCaseName": "Inapplicable Example 4",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/qt1vmo/9f373a7eca6b3dc1089e76fa275cdb63c7a8d4b6.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "inapplicable",
           "procedureResults": [
             {
@@ -11732,7 +11627,7 @@
           "testcaseId": "2e1787fbc8a76fd8a2f8cae08d72097dab75abfd",
           "testCaseName": "Inapplicable Example 5",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/qt1vmo/2e1787fbc8a76fd8a2f8cae08d72097dab75abfd.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "inapplicable",
           "procedureResults": [
             {
@@ -11747,7 +11642,7 @@
           "testcaseId": "e3fa823fa9ba97ac106cc8d13f2ba7e771cb9c75",
           "testCaseName": "Inapplicable Example 6",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/qt1vmo/e3fa823fa9ba97ac106cc8d13f2ba7e771cb9c75.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "inapplicable",
           "procedureResults": [
             {
@@ -11762,7 +11657,7 @@
           "testcaseId": "4d04a4946e1f06834c89b91f0a765367f9d0d492",
           "testCaseName": "Inapplicable Example 7",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/qt1vmo/4d04a4946e1f06834c89b91f0a765367f9d0d492.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "inapplicable",
           "procedureResults": [
             {
@@ -11777,7 +11672,7 @@
           "testcaseId": "d5ce8939312a4c283084d0a7fdc7dd4cf6b35d4f",
           "testCaseName": "Inapplicable Example 8",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/qt1vmo/d5ce8939312a4c283084d0a7fdc7dd4cf6b35d4f.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "inapplicable",
           "procedureResults": [
             {
@@ -11792,7 +11687,7 @@
           "testcaseId": "8ff1c1f8ce6c58b66365fd70f6828a89527874e3",
           "testCaseName": "Inapplicable Example 9",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/qt1vmo/8ff1c1f8ce6c58b66365fd70f6828a89527874e3.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "inapplicable",
           "procedureResults": [
             {
@@ -11807,7 +11702,7 @@
           "testcaseId": "a09270ba161c0259b258844551e94c40cdd6b52e",
           "testCaseName": "Inapplicable Example 10",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/qt1vmo/a09270ba161c0259b258844551e94c40cdd6b52e.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "inapplicable",
           "procedureResults": [
             {
@@ -12931,7 +12826,7 @@
     {
       "ruleId": "m6b1q3",
       "ruleName": "Menuitem has non-empty accessible name",
-      "ruleApproved": false,
+      "ruleApproved": true,
       "procedureNames": [
         "button-name"
       ],
@@ -12956,7 +12851,7 @@
           "testcaseId": "895a5b0d06d892bc50351cfd2db426b31cfcc97f",
           "testCaseName": "Passed Example 1",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/m6b1q3/895a5b0d06d892bc50351cfd2db426b31cfcc97f.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "passed",
           "procedureResults": [
             {
@@ -12971,7 +12866,7 @@
           "testcaseId": "78c41b8461997477cb7b6a9d163ba8a387ad56b8",
           "testCaseName": "Passed Example 2",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/m6b1q3/78c41b8461997477cb7b6a9d163ba8a387ad56b8.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "passed",
           "procedureResults": [
             {
@@ -12986,7 +12881,7 @@
           "testcaseId": "83a0c030f9172c3d8d862d01138e75ec7aaf4f4e",
           "testCaseName": "Passed Example 3",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/m6b1q3/83a0c030f9172c3d8d862d01138e75ec7aaf4f4e.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "passed",
           "procedureResults": [
             {
@@ -13001,7 +12896,7 @@
           "testcaseId": "c05155744a79e6ff72f1b691b8bae15338e8146b",
           "testCaseName": "Passed Example 4",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/m6b1q3/c05155744a79e6ff72f1b691b8bae15338e8146b.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "passed",
           "procedureResults": [
             {
@@ -13016,7 +12911,7 @@
           "testcaseId": "f3a40579bcb3cab4f12a31639bc9dd0ca5c14d87",
           "testCaseName": "Failed Example 1",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/m6b1q3/f3a40579bcb3cab4f12a31639bc9dd0ca5c14d87.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "failed",
           "procedureResults": [
             {
@@ -13031,7 +12926,7 @@
           "testcaseId": "c261108b8bb62e118a47a52d0a157b4265a6e143",
           "testCaseName": "Failed Example 2",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/m6b1q3/c261108b8bb62e118a47a52d0a157b4265a6e143.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "failed",
           "procedureResults": [
             {
@@ -13046,7 +12941,7 @@
           "testcaseId": "4eec4a33bca54e6313e0af600af41797bb7c4213",
           "testCaseName": "Inapplicable Example 1",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/m6b1q3/4eec4a33bca54e6313e0af600af41797bb7c4213.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "inapplicable",
           "procedureResults": [
             {
@@ -13061,7 +12956,7 @@
           "testcaseId": "0edc121ac393fa9661fc1c18156e040775313779",
           "testCaseName": "Inapplicable Example 2",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/m6b1q3/0edc121ac393fa9661fc1c18156e040775313779.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "inapplicable",
           "procedureResults": [
             {
@@ -13836,7 +13731,7 @@
     {
       "ruleId": "0ssw9k",
       "ruleName": "Scrollable content can be reached with sequential focus navigation",
-      "ruleApproved": false,
+      "ruleApproved": true,
       "procedureNames": [
         "scrollable-region-focusable"
       ],
@@ -13862,7 +13757,7 @@
           "testcaseId": "89302c4f9eaf142418751a45e6dd025d5d294591",
           "testCaseName": "Passed Example 1",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/0ssw9k/89302c4f9eaf142418751a45e6dd025d5d294591.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "passed",
           "procedureResults": [
             {
@@ -13877,7 +13772,7 @@
           "testcaseId": "305891f137b5927d99e74aa1efe9997e4a8a2803",
           "testCaseName": "Passed Example 2",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/0ssw9k/305891f137b5927d99e74aa1efe9997e4a8a2803.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "passed",
           "procedureResults": [
             {
@@ -13892,7 +13787,7 @@
           "testcaseId": "5fa34d0a7eea03109cd12c0e7c21fce793c268db",
           "testCaseName": "Failed Example 1",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/0ssw9k/5fa34d0a7eea03109cd12c0e7c21fce793c268db.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "failed",
           "procedureResults": [
             {
@@ -13907,7 +13802,7 @@
           "testcaseId": "731acbc281943f3fef81aee32f6a553fc426e20f",
           "testCaseName": "Failed Example 2",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/0ssw9k/731acbc281943f3fef81aee32f6a553fc426e20f.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "failed",
           "procedureResults": [
             {
@@ -13922,7 +13817,7 @@
           "testcaseId": "bb9ee4cc0b4779228701779090f461ecb2947b82",
           "testCaseName": "Inapplicable Example 1",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/0ssw9k/bb9ee4cc0b4779228701779090f461ecb2947b82.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "inapplicable",
           "procedureResults": [
             {
@@ -13937,7 +13832,7 @@
           "testcaseId": "997b49af2f0596bb505c7cbbfd501c0f2fa393a5",
           "testCaseName": "Inapplicable Example 2",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/0ssw9k/997b49af2f0596bb505c7cbbfd501c0f2fa393a5.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "inapplicable",
           "procedureResults": [
             {
@@ -13952,7 +13847,7 @@
           "testcaseId": "d7f9b0ca63b41bfc560c867696744a14f8590394",
           "testCaseName": "Inapplicable Example 3",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/0ssw9k/d7f9b0ca63b41bfc560c867696744a14f8590394.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "inapplicable",
           "procedureResults": [
             {
@@ -13967,7 +13862,7 @@
           "testcaseId": "5d06e0832a2a97d6dd2e5657f00dcb93c584135b",
           "testCaseName": "Inapplicable Example 4",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/0ssw9k/5d06e0832a2a97d6dd2e5657f00dcb93c584135b.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "inapplicable",
           "procedureResults": [
             {
@@ -13982,7 +13877,7 @@
           "testcaseId": "8f9b5bf5fc8345b8e7aa016621fb5dee6c13c8f2",
           "testCaseName": "Inapplicable Example 5",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/0ssw9k/8f9b5bf5fc8345b8e7aa016621fb5dee6c13c8f2.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "inapplicable",
           "procedureResults": [
             {
@@ -13997,7 +13892,7 @@
           "testcaseId": "dd5ca5252dacc6d5e0fabb30e92633b284336832",
           "testCaseName": "Inapplicable Example 6",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/0ssw9k/dd5ca5252dacc6d5e0fabb30e92633b284336832.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "inapplicable",
           "procedureResults": [
             {
@@ -14013,7 +13908,7 @@
     {
       "ruleId": "oj04fd",
       "ruleName": "Element in sequential focus order has visible focus",
-      "ruleApproved": false,
+      "ruleApproved": true,
       "procedureNames": [
         "focus-indicator-missing (keyboard)"
       ],
@@ -14038,7 +13933,7 @@
           "testcaseId": "52be6331dc0978990a8b806a9a4a84bf738a43e1",
           "testCaseName": "Passed Example 1",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/oj04fd/52be6331dc0978990a8b806a9a4a84bf738a43e1.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "passed",
           "procedureResults": [
             {
@@ -14053,7 +13948,7 @@
           "testcaseId": "95cf4fdf26825900e91a30eaf6c2235516db79f9",
           "testCaseName": "Passed Example 2",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/oj04fd/95cf4fdf26825900e91a30eaf6c2235516db79f9.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "passed",
           "procedureResults": [
             {
@@ -14068,7 +13963,7 @@
           "testcaseId": "b44aa294df6f0de62f11f6ae732087d92c90b448",
           "testCaseName": "Passed Example 3",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/oj04fd/b44aa294df6f0de62f11f6ae732087d92c90b448.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "passed",
           "procedureResults": [
             {
@@ -14083,7 +13978,7 @@
           "testcaseId": "dd9628d86628e285fe99ce98efdacbe441c20ca5",
           "testCaseName": "Passed Example 4",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/oj04fd/dd9628d86628e285fe99ce98efdacbe441c20ca5.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "passed",
           "procedureResults": [
             {
@@ -14098,7 +13993,7 @@
           "testcaseId": "f1c9efb4c8d1b5f7870c693bce2e6ca046dd768d",
           "testCaseName": "Failed Example 1",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/oj04fd/f1c9efb4c8d1b5f7870c693bce2e6ca046dd768d.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "failed",
           "procedureResults": [
             {
@@ -14113,7 +14008,7 @@
           "testcaseId": "90789ad82a761b7697418e8cb403db103f0925a2",
           "testCaseName": "Inapplicable Example 1",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/oj04fd/90789ad82a761b7697418e8cb403db103f0925a2.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "inapplicable",
           "procedureResults": [
             {
@@ -14128,7 +14023,7 @@
           "testcaseId": "b12f1f45eef29c30197ca3bda79d793cd90eeadd",
           "testCaseName": "Inapplicable Example 2",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/oj04fd/b12f1f45eef29c30197ca3bda79d793cd90eeadd.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "inapplicable",
           "procedureResults": [
             {
@@ -14410,7 +14305,7 @@
     {
       "ruleId": "afw4f7",
       "ruleName": "Text has minimum contrast",
-      "ruleApproved": false,
+      "ruleApproved": true,
       "procedureNames": [
         "color-contrast"
       ],
@@ -14435,7 +14330,7 @@
           "testcaseId": "fd406bedf0bb3bdc4c2a718f49a3dd0f7aaa7556",
           "testCaseName": "Passed Example 1",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/fd406bedf0bb3bdc4c2a718f49a3dd0f7aaa7556.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "passed",
           "procedureResults": [
             {
@@ -14450,7 +14345,7 @@
           "testcaseId": "ab4691ef474d6263e9ceec824f07faa51a30112e",
           "testCaseName": "Passed Example 2",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/ab4691ef474d6263e9ceec824f07faa51a30112e.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "passed",
           "procedureResults": [
             {
@@ -14465,7 +14360,7 @@
           "testcaseId": "dc170fd015758b62d8e0141e086893a116ee724e",
           "testCaseName": "Passed Example 3",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/dc170fd015758b62d8e0141e086893a116ee724e.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "passed",
           "procedureResults": [
             {
@@ -14480,7 +14375,7 @@
           "testcaseId": "319a465113950b03502709ab573edf7deab59908",
           "testCaseName": "Passed Example 4",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/319a465113950b03502709ab573edf7deab59908.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "passed",
           "procedureResults": [
             {
@@ -14495,7 +14390,7 @@
           "testcaseId": "04344f745bd9bad51292748e7893f146c045aae4",
           "testCaseName": "Passed Example 5",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/04344f745bd9bad51292748e7893f146c045aae4.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "passed",
           "procedureResults": [
             {
@@ -14510,7 +14405,7 @@
           "testcaseId": "aed692e9f0a1be5c87ef1de56afa8e23e14cc3ba",
           "testCaseName": "Passed Example 6",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/aed692e9f0a1be5c87ef1de56afa8e23e14cc3ba.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "passed",
           "procedureResults": [
             {
@@ -14525,7 +14420,7 @@
           "testcaseId": "2845a8409b1c07caa856d1bfbf42ed244b0de9c2",
           "testCaseName": "Passed Example 7",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/2845a8409b1c07caa856d1bfbf42ed244b0de9c2.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "passed",
           "procedureResults": [
             {
@@ -14540,7 +14435,7 @@
           "testcaseId": "c7c09c1019dcf1d1c67183001b4d459dee7a87ff",
           "testCaseName": "Passed Example 8",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/c7c09c1019dcf1d1c67183001b4d459dee7a87ff.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "passed",
           "procedureResults": [
             {
@@ -14555,7 +14450,7 @@
           "testcaseId": "66a3ba7bc0027a9556596e3c378c926a537c1901",
           "testCaseName": "Passed Example 9",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/66a3ba7bc0027a9556596e3c378c926a537c1901.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "passed",
           "procedureResults": [
             {
@@ -14570,7 +14465,7 @@
           "testcaseId": "173cb00f20c52f35970c322dedf7bc11450b70c1",
           "testCaseName": "Passed Example 10",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/173cb00f20c52f35970c322dedf7bc11450b70c1.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "passed",
           "procedureResults": [
             {
@@ -14585,7 +14480,7 @@
           "testcaseId": "668856825e6d3b4e480005acf97723c7b1004ba3",
           "testCaseName": "Passed Example 11",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/668856825e6d3b4e480005acf97723c7b1004ba3.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "passed",
           "procedureResults": [
             {
@@ -14600,7 +14495,7 @@
           "testcaseId": "eaf0a926896f045a498073da42ea6263a4d6d36c",
           "testCaseName": "Failed Example 1",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/eaf0a926896f045a498073da42ea6263a4d6d36c.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "failed",
           "procedureResults": [
             {
@@ -14615,7 +14510,7 @@
           "testcaseId": "e8f3acb1dc814b8b815c69b7150cdea67d5bd98e",
           "testCaseName": "Failed Example 2",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/e8f3acb1dc814b8b815c69b7150cdea67d5bd98e.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "failed",
           "procedureResults": [
             {
@@ -14630,7 +14525,7 @@
           "testcaseId": "41afaa9b33287aba9c608c3466e2b164f57a02ed",
           "testCaseName": "Failed Example 3",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/41afaa9b33287aba9c608c3466e2b164f57a02ed.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "failed",
           "procedureResults": [
             {
@@ -14645,7 +14540,7 @@
           "testcaseId": "7b27adc8d5a8f07dca43b0f90806f40bc2a1b15b",
           "testCaseName": "Failed Example 4",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/7b27adc8d5a8f07dca43b0f90806f40bc2a1b15b.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "failed",
           "procedureResults": [
             {
@@ -14660,7 +14555,7 @@
           "testcaseId": "7507c8139cfda2c482c394fe00aaaf69e15acabb",
           "testCaseName": "Failed Example 5",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/7507c8139cfda2c482c394fe00aaaf69e15acabb.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "failed",
           "procedureResults": [
             {
@@ -14675,7 +14570,7 @@
           "testcaseId": "b1a65bd18381a1ea4ad3077fd98c50368947012c",
           "testCaseName": "Failed Example 6",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/b1a65bd18381a1ea4ad3077fd98c50368947012c.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "failed",
           "procedureResults": [
             {
@@ -14690,7 +14585,7 @@
           "testcaseId": "bf47c65f2854b6ac100a6f700d354b243b069231",
           "testCaseName": "Failed Example 7",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/bf47c65f2854b6ac100a6f700d354b243b069231.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "failed",
           "procedureResults": [
             {
@@ -14705,7 +14600,7 @@
           "testcaseId": "308839f424ef1d9dbb5aab0cd9079827ecb00895",
           "testCaseName": "Failed Example 8",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/308839f424ef1d9dbb5aab0cd9079827ecb00895.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "failed",
           "procedureResults": [
             {
@@ -14721,7 +14616,7 @@
           "testcaseId": "a7d34d6d1dad765c7e444d3c3f63b18ca4742e9e",
           "testCaseName": "Failed Example 9",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/a7d34d6d1dad765c7e444d3c3f63b18ca4742e9e.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "failed",
           "procedureResults": [
             {
@@ -14736,7 +14631,7 @@
           "testcaseId": "19123c99ec390011b87736827720d5e1e794bad2",
           "testCaseName": "Failed Example 10",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/19123c99ec390011b87736827720d5e1e794bad2.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "failed",
           "procedureResults": [
             {
@@ -14751,7 +14646,7 @@
           "testcaseId": "2347a45232c34aa309087ed099f4781cd70b5b1e",
           "testCaseName": "Inapplicable Example 1",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/2347a45232c34aa309087ed099f4781cd70b5b1e.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "inapplicable",
           "procedureResults": [
             {
@@ -14766,7 +14661,7 @@
           "testcaseId": "dbd2374952b96375369afe2a012bfbadd182bf6b",
           "testCaseName": "Inapplicable Example 2",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/dbd2374952b96375369afe2a012bfbadd182bf6b.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "inapplicable",
           "procedureResults": [
             {
@@ -14781,7 +14676,7 @@
           "testcaseId": "fc92e273e09ad225227f488e3a016fd8d4aad10c",
           "testCaseName": "Inapplicable Example 3",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/fc92e273e09ad225227f488e3a016fd8d4aad10c.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "inapplicable",
           "procedureResults": [
             {
@@ -14796,7 +14691,7 @@
           "testcaseId": "881897444deae644139c4b799b8eeb4b4b764c2a",
           "testCaseName": "Inapplicable Example 4",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/881897444deae644139c4b799b8eeb4b4b764c2a.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "inapplicable",
           "procedureResults": [
             {
@@ -14811,7 +14706,7 @@
           "testcaseId": "20f9cd78dd0fa87ee8d40ea3ed35a1fe3ff66508",
           "testCaseName": "Inapplicable Example 5",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/20f9cd78dd0fa87ee8d40ea3ed35a1fe3ff66508.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "inapplicable",
           "procedureResults": [
             {
@@ -14826,7 +14721,7 @@
           "testcaseId": "328b967c5b544b48f7acd8e42f2f05d355501f2a",
           "testCaseName": "Inapplicable Example 6",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/328b967c5b544b48f7acd8e42f2f05d355501f2a.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "inapplicable",
           "procedureResults": [
             {
@@ -14841,7 +14736,7 @@
           "testcaseId": "7c7d6412dae7381d90517a6f3c0a30104d63062a",
           "testCaseName": "Inapplicable Example 7",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/7c7d6412dae7381d90517a6f3c0a30104d63062a.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "inapplicable",
           "procedureResults": [
             {
@@ -14856,7 +14751,7 @@
           "testcaseId": "53386f68326a53798e776b48e81b32659424d6d3",
           "testCaseName": "Inapplicable Example 8",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/53386f68326a53798e776b48e81b32659424d6d3.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "inapplicable",
           "procedureResults": [
             {
@@ -14871,7 +14766,7 @@
           "testcaseId": "9e3383a60ab67d5988ac2144fec58a34677c52b2",
           "testCaseName": "Inapplicable Example 9",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/9e3383a60ab67d5988ac2144fec58a34677c52b2.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "inapplicable",
           "procedureResults": [
             {
@@ -14886,7 +14781,7 @@
           "testcaseId": "b4fcc1ea76d19ae86033ed687613f78297ee6069",
           "testCaseName": "Inapplicable Example 10",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/b4fcc1ea76d19ae86033ed687613f78297ee6069.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "inapplicable",
           "procedureResults": [
             {
@@ -14901,7 +14796,7 @@
           "testcaseId": "6b811d065fc243c2c94002f315891791e181d518",
           "testCaseName": "Inapplicable Example 11",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/6b811d065fc243c2c94002f315891791e181d518.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "inapplicable",
           "procedureResults": [
             {
@@ -14917,7 +14812,7 @@
     {
       "ruleId": "09o5cg",
       "ruleName": "Text has enhanced contrast",
-      "ruleApproved": false,
+      "ruleApproved": true,
       "procedureNames": [
         "color-contrast-enhanced",
         "color-contrast"
@@ -14944,7 +14839,7 @@
           "testcaseId": "fd406bedf0bb3bdc4c2a718f49a3dd0f7aaa7556",
           "testCaseName": "Passed Example 1",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/fd406bedf0bb3bdc4c2a718f49a3dd0f7aaa7556.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "passed",
           "procedureResults": [
             {
@@ -14965,7 +14860,7 @@
           "testcaseId": "2f0bb5467d45f7fabf95b3f85741a10af03dc7f6",
           "testCaseName": "Passed Example 2",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/2f0bb5467d45f7fabf95b3f85741a10af03dc7f6.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "passed",
           "procedureResults": [
             {
@@ -14986,7 +14881,7 @@
           "testcaseId": "d011f0ef2a8d94ccf3d3d393a50d7fd8c576d3c3",
           "testCaseName": "Passed Example 3",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/d011f0ef2a8d94ccf3d3d393a50d7fd8c576d3c3.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "passed",
           "procedureResults": [
             {
@@ -15007,7 +14902,7 @@
           "testcaseId": "e94522843ec1985d5c8b25e059e95c845e28b4fe",
           "testCaseName": "Passed Example 4",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/e94522843ec1985d5c8b25e059e95c845e28b4fe.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "passed",
           "procedureResults": [
             {
@@ -15028,7 +14923,7 @@
           "testcaseId": "7768acdf84efd498cc557368e73aa9da495727c9",
           "testCaseName": "Passed Example 5",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/7768acdf84efd498cc557368e73aa9da495727c9.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "passed",
           "procedureResults": [
             {
@@ -15049,7 +14944,7 @@
           "testcaseId": "2845a8409b1c07caa856d1bfbf42ed244b0de9c2",
           "testCaseName": "Passed Example 6",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/2845a8409b1c07caa856d1bfbf42ed244b0de9c2.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "passed",
           "procedureResults": [
             {
@@ -15070,7 +14965,7 @@
           "testcaseId": "c7c09c1019dcf1d1c67183001b4d459dee7a87ff",
           "testCaseName": "Passed Example 7",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/c7c09c1019dcf1d1c67183001b4d459dee7a87ff.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "passed",
           "procedureResults": [
             {
@@ -15091,7 +14986,7 @@
           "testcaseId": "66a3ba7bc0027a9556596e3c378c926a537c1901",
           "testCaseName": "Passed Example 8",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/66a3ba7bc0027a9556596e3c378c926a537c1901.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "passed",
           "procedureResults": [
             {
@@ -15112,7 +15007,7 @@
           "testcaseId": "173cb00f20c52f35970c322dedf7bc11450b70c1",
           "testCaseName": "Passed Example 9",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/173cb00f20c52f35970c322dedf7bc11450b70c1.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "passed",
           "procedureResults": [
             {
@@ -15133,7 +15028,7 @@
           "testcaseId": "668856825e6d3b4e480005acf97723c7b1004ba3",
           "testCaseName": "Passed Example 10",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/668856825e6d3b4e480005acf97723c7b1004ba3.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "passed",
           "procedureResults": [
             {
@@ -15154,7 +15049,7 @@
           "testcaseId": "67fe402a5de9743bf9882d7d52deb9749005d16c",
           "testCaseName": "Failed Example 1",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/67fe402a5de9743bf9882d7d52deb9749005d16c.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "failed",
           "procedureResults": [
             {
@@ -15175,7 +15070,7 @@
           "testcaseId": "c318e865be58b889fb35b875c76759928082b548",
           "testCaseName": "Failed Example 2",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/c318e865be58b889fb35b875c76759928082b548.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "failed",
           "procedureResults": [
             {
@@ -15196,7 +15091,7 @@
           "testcaseId": "04344f745bd9bad51292748e7893f146c045aae4",
           "testCaseName": "Failed Example 3",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/04344f745bd9bad51292748e7893f146c045aae4.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "failed",
           "procedureResults": [
             {
@@ -15217,7 +15112,7 @@
           "testcaseId": "eaf0a926896f045a498073da42ea6263a4d6d36c",
           "testCaseName": "Failed Example 4",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/eaf0a926896f045a498073da42ea6263a4d6d36c.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "failed",
           "procedureResults": [
             {
@@ -15238,7 +15133,7 @@
           "testcaseId": "aed692e9f0a1be5c87ef1de56afa8e23e14cc3ba",
           "testCaseName": "Failed Example 5",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/aed692e9f0a1be5c87ef1de56afa8e23e14cc3ba.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "failed",
           "procedureResults": [
             {
@@ -15259,7 +15154,7 @@
           "testcaseId": "6f14b150aab632c7656450b3a6dc44ad28cf6cce",
           "testCaseName": "Failed Example 6",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/6f14b150aab632c7656450b3a6dc44ad28cf6cce.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "failed",
           "procedureResults": [
             {
@@ -15280,7 +15175,7 @@
           "testcaseId": "4e1ec35a2908dbb52d9d50bb60b9110316584799",
           "testCaseName": "Failed Example 7",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/4e1ec35a2908dbb52d9d50bb60b9110316584799.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "failed",
           "procedureResults": [
             {
@@ -15301,7 +15196,7 @@
           "testcaseId": "d5e21eae8aa28290befa06cfe68b5032ed05b7a5",
           "testCaseName": "Failed Example 8",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/d5e21eae8aa28290befa06cfe68b5032ed05b7a5.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "failed",
           "procedureResults": [
             {
@@ -15322,7 +15217,7 @@
           "testcaseId": "4c47eeaeb5dd826b90c8a9efb081962f04f5d339",
           "testCaseName": "Failed Example 9",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/4c47eeaeb5dd826b90c8a9efb081962f04f5d339.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "failed",
           "procedureResults": [
             {
@@ -15343,7 +15238,7 @@
           "testcaseId": "1882d796de0dcb4b85924f3abfbf565eeef2d963",
           "testCaseName": "Failed Example 10",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/1882d796de0dcb4b85924f3abfbf565eeef2d963.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "failed",
           "procedureResults": [
             {
@@ -15364,7 +15259,7 @@
           "testcaseId": "a34d15d4bb754339339996802d1bc32d464643da",
           "testCaseName": "Failed Example 11",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/a34d15d4bb754339339996802d1bc32d464643da.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "failed",
           "procedureResults": [
             {
@@ -15387,7 +15282,7 @@
           "testcaseId": "316b0c7fccdbe8a47716447a9fe2ca197c8358af",
           "testCaseName": "Failed Example 12",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/316b0c7fccdbe8a47716447a9fe2ca197c8358af.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "failed",
           "procedureResults": [
             {
@@ -15408,7 +15303,7 @@
           "testcaseId": "2e81c3e60722202d2e92089a0695d74e8b49cdaa",
           "testCaseName": "Failed Example 13",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/2e81c3e60722202d2e92089a0695d74e8b49cdaa.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "failed",
           "procedureResults": [
             {
@@ -15429,7 +15324,7 @@
           "testcaseId": "2347a45232c34aa309087ed099f4781cd70b5b1e",
           "testCaseName": "Inapplicable Example 1",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/2347a45232c34aa309087ed099f4781cd70b5b1e.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "inapplicable",
           "procedureResults": [
             {
@@ -15450,7 +15345,7 @@
           "testcaseId": "dbd2374952b96375369afe2a012bfbadd182bf6b",
           "testCaseName": "Inapplicable Example 2",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/dbd2374952b96375369afe2a012bfbadd182bf6b.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "inapplicable",
           "procedureResults": [
             {
@@ -15471,7 +15366,7 @@
           "testcaseId": "fc92e273e09ad225227f488e3a016fd8d4aad10c",
           "testCaseName": "Inapplicable Example 3",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/fc92e273e09ad225227f488e3a016fd8d4aad10c.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "inapplicable",
           "procedureResults": [
             {
@@ -15492,7 +15387,7 @@
           "testcaseId": "881897444deae644139c4b799b8eeb4b4b764c2a",
           "testCaseName": "Inapplicable Example 4",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/881897444deae644139c4b799b8eeb4b4b764c2a.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "inapplicable",
           "procedureResults": [
             {
@@ -15513,7 +15408,7 @@
           "testcaseId": "8df570a7bb69487e5f3b5d07a7af45cc881dc449",
           "testCaseName": "Inapplicable Example 5",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/8df570a7bb69487e5f3b5d07a7af45cc881dc449.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "inapplicable",
           "procedureResults": [
             {
@@ -15534,7 +15429,7 @@
           "testcaseId": "328b967c5b544b48f7acd8e42f2f05d355501f2a",
           "testCaseName": "Inapplicable Example 6",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/328b967c5b544b48f7acd8e42f2f05d355501f2a.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "inapplicable",
           "procedureResults": [
             {
@@ -15555,7 +15450,7 @@
           "testcaseId": "7c7d6412dae7381d90517a6f3c0a30104d63062a",
           "testCaseName": "Inapplicable Example 7",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/7c7d6412dae7381d90517a6f3c0a30104d63062a.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "inapplicable",
           "procedureResults": [
             {
@@ -15576,7 +15471,7 @@
           "testcaseId": "53386f68326a53798e776b48e81b32659424d6d3",
           "testCaseName": "Inapplicable Example 8",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/53386f68326a53798e776b48e81b32659424d6d3.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "inapplicable",
           "procedureResults": [
             {
@@ -15597,7 +15492,7 @@
           "testcaseId": "9e3383a60ab67d5988ac2144fec58a34677c52b2",
           "testCaseName": "Inapplicable Example 9",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/9e3383a60ab67d5988ac2144fec58a34677c52b2.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "inapplicable",
           "procedureResults": [
             {
@@ -15618,7 +15513,7 @@
           "testcaseId": "b4fcc1ea76d19ae86033ed687613f78297ee6069",
           "testCaseName": "Inapplicable Example 10",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/b4fcc1ea76d19ae86033ed687613f78297ee6069.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "inapplicable",
           "procedureResults": [
             {
@@ -15639,7 +15534,7 @@
           "testcaseId": "6b811d065fc243c2c94002f315891791e181d518",
           "testCaseName": "Inapplicable Example 11",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/6b811d065fc243c2c94002f315891791e181d518.html",
-          "testCaseApproved": false,
+          "testCaseApproved": true,
           "expected": "inapplicable",
           "procedureResults": [
             {
