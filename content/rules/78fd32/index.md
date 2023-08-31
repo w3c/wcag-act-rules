@@ -17,6 +17,7 @@ rule_meta:
   id: 78fd32
   name: "Line height in style attributes is not !important"
   rule_type: atomic
+  original_file: line-height-not-important-78fd32.md
   description: |
     This rule checks that the `style` attribute is not used to prevent adjusting `line-height` by using `!important`, except if it's at least 1.5 times the font size.
   last_modified: 25 October 2022
