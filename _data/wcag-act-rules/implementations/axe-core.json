@@ -2,7 +2,7 @@
   "vendor": "Deque Systems",
   "name": "Axe-core",
   "version": "4.6.0",
-  "lastModified": "30 August 2023",
+  "lastModified": "1 September 2023",
   "approvedRules": {
     "complete": 25,
     "partial": 1,
@@ -864,8 +864,8 @@
         ]
       },
       "coverage": {
-        "covered": 19,
-        "untested": 12,
+        "covered": 31,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 31
       },
@@ -1152,7 +1152,7 @@
             {
               "procedureName": "valid-lang",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -1167,7 +1167,7 @@
             {
               "procedureName": "valid-lang",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -1182,7 +1182,7 @@
             {
               "procedureName": "valid-lang",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -1197,7 +1197,8 @@
             {
               "procedureName": "valid-lang",
               "outcomes": [
-                "untested"
+                "passed",
+                "passed"
               ]
             }
           ]
@@ -1212,7 +1213,7 @@
             {
               "procedureName": "valid-lang",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -1227,7 +1228,7 @@
             {
               "procedureName": "valid-lang",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -1242,7 +1243,7 @@
             {
               "procedureName": "valid-lang",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -1257,7 +1258,7 @@
             {
               "procedureName": "valid-lang",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -1272,7 +1273,7 @@
             {
               "procedureName": "valid-lang",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -1287,7 +1288,7 @@
             {
               "procedureName": "valid-lang",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -1302,7 +1303,8 @@
             {
               "procedureName": "valid-lang",
               "outcomes": [
-                "untested"
+                "passed",
+                "failed"
               ]
             }
           ]
@@ -1317,7 +1319,7 @@
             {
               "procedureName": "valid-lang",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
