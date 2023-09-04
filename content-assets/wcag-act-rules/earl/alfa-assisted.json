@@ -65,7 +65,7 @@
       "@id": "Alfa",
       "@type": [
         "Assertor",
-        "Software"
+        "@earl:Software"
       ],
       "name": "Alfa",
       "release": {
