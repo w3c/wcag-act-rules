@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 6a7281</p>
-  <p><strong>Date:</strong> Updated 6 April 2023</p>
+  <p><strong>Date:</strong> Updated 30 August 2023</p>
   <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -17,9 +17,10 @@ rule_meta:
   id: 6a7281
   name: "ARIA state or property has valid value"
   rule_type: atomic
+  original_file: aria-state-or-property-valid-value-6a7281.md
   description: |
     This rule checks that each ARIA state or property has a valid value type.
-  last_modified: 6 April 2023
+  last_modified: 30 August 2023
 ---
 
 ## Applicability
@@ -42,7 +43,7 @@ Some user agents treat the value of `aria-*` attribute as case-sensitive (even w
 
 ## Background
 
-Using invalid ARIA attribute values is often the result of a typo or other developer error. These attributes are then either ignored, or a default value is assumed by browsers and assistive technologies. This often means that a state or property which should exist is missing or has an unexpected value. This can cause issues under [success criterion 1.3.1 Info and Relationships][sc131] or [4.1.2 Name, Rule Value][sc412]. If the default value for invalid attribute values happens to match the author's intention for the value, there will not be an accessibility issue.
+Using invalid ARIA attribute values is often the result of a typo or other developer error. These attributes are then either ignored, or a default value is assumed by browsers and assistive technologies. This often means that a state or property which should exist is missing or has an unexpected value. If the default value for invalid attribute values happens to match the author's intention for the value, there will not be an accessibility issue.
 
 This rule does not require the target of an `ID Reference` to exist. This is because referencing an element that does not exist, and not having the reference at all has the same end result. A common use case for using `ID Reference` for a non-existing ID is to use a static `aria-errormessage` on an `input` element, and to only insert the element with the error message if there is an actual error. There are some cases in which ID references are required. These are tested in a separate rule.
 
@@ -62,31 +63,18 @@ This rule does not require the target of an `ID Reference` to exist. This is bec
 
 <ul class="act-requirements-list">
   <li>This rule is <strong>not required</strong> for conformance to WCAG 2.1 at any level.</li>
-  <li><details>
-    <summary><span>1.3.1 Info and Relationships (Level A)</span></summary>
-    <ul>
-      <li><a href="https://www.w3.org/TR/WCAG21/#info-and-relationships">Learn more about 1.3.1 Info and Relationships</a></li>
-      <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level A and higher.</li>
-      <li>Outcome mapping: <ul>
-        <li>Any <code>failed</code> outcomes: success criterion is not satisfied</li>
-        <li>All <code>passed</code> outcomes: success criterion </li>
-        <li>An <code>inapplicable</code> outcome: success criterion </li>
-      </ul></li>
-    </ul>
-  </details></li>
-  <li><details>
-    <summary><span>4.1.2 Name, Role, Value (Level A)</span></summary>
-    <ul>
-      <li><a href="https://www.w3.org/TR/WCAG21/#name-role-value">Learn more about 4.1.2 Name, Role, Value</a></li>
-      <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level A and higher.</li>
-      <li>Outcome mapping: <ul>
-        <li>Any <code>failed</code> outcomes: success criterion is not satisfied</li>
-        <li>All <code>passed</code> outcomes: success criterion </li>
-        <li>An <code>inapplicable</code> outcome: success criterion </li>
-      </ul></li>
-    </ul>
-  </details></li>
 </ul>
+
+### Secondary Requirements
+
+This rule is related to the following accessibility requirements, but was 
+not designed to test this requirements directly. These 
+[secondary requirements](https://w3c.github.io/wcag-act/act-rules-format.html#secondary-requirements)
+can either be stricter than the rule requires, or may be satisfied in ways 
+not tested by the rule:
+
+- [1.3.1 Info and Relationships (Level A)](https://www.w3.org/TR/WCAG21/#info-and-relationships): This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion.
+- [4.1.2 Name, Role, Value (Level A)](https://www.w3.org/TR/WCAG21/#name-role-value): This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion.
 
 ## Input Aspects
 
@@ -340,7 +328,5 @@ An _outcome_ is a conclusion that comes from evaluating an ACT Rule on a [test s
 [html namespaces]: https://infra.spec.whatwg.org/#namespaces 'HTML namespace, 2021/05/31'
 [html or svg element]: #namespaced-element
 [namespaceuri]: https://dom.spec.whatwg.org/#dom-element-namespaceuri 'DOM Element namespaceURI, 2021/05/31'
-[sc131]: https://www.w3.org/TR/WCAG21/#info-and-relationships
-[sc412]: https://www.w3.org/TR/WCAG21/#name-role-value
 [value type]: https://www.w3.org/TR/wai-aria-1.2/#propcharacteristic_value
 [wai-aria state or property]: https://www.w3.org/TR/wai-aria-1.2/#state_prop_def

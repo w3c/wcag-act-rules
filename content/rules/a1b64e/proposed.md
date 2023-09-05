@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> a1b64e</p>
-  <p><strong>Date:</strong> Updated 17 January 2023</p>
+  <p><strong>Date:</strong> Updated 30 August 2023</p>
   <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/carlosapaduarte">Carlos Duarte</a>, <a href="https://github.com/DagfinnRomen">Dagfinn Rømen</a>, <a href="https://github.com/geirsf">Geir Sindre Fossøy</a>, <a href="https: //github.com/MaliinO">Malin Øvrebø</a>, <a href="https://github.com/nitedog">Shadi Abou-Zahra</a>, <a href="https://github.com/skotkjerra">Stein Erik Skotkjerra</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -17,9 +17,10 @@ rule_meta:
   id: a1b64e
   name: "Focusable element has no keyboard trap via standard navigation"
   rule_type: atomic
+  original_file: focusable-no-keyboard-trap-standard-nav-a1b64e.md
   description: |
     This rule checks if it is possible to use standard keyboard navigation to navigate through all content on a web page without becoming trapped in any element.
-  last_modified: 17 January 2023
+  last_modified: 30 August 2023
 ---
 
 ## Applicability

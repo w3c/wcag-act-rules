@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 0ssw9k</p>
-  <p><strong>Date:</strong> Updated 1 August 2023</p>
+  <p><strong>Date:</strong> Updated 30 August 2023</p>
   <p><strong>Authors:</strong> <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -17,13 +17,17 @@ rule_meta:
   id: 0ssw9k
   name: "Scrollable content can be reached with sequential focus navigation"
   rule_type: atomic
+  original_file: scrollable-element-keyboard-accessible-0ssw9k.md
   description: |
     This rule checks that scrollable elements or their descendants can be reached with sequential focus navigation so that they can be scrolled by keyboard
-  last_modified: 1 August 2023
+  last_modified: 30 August 2023
   scs_tested:
     - handle: Keyboard
       num: 2.1.1
       level: A
+    - handle: Keyboard (No Exception)
+      num: 2.1.3
+      level: AAA
 ---
 
 ## Applicability

@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> a25f45</p>
-  <p><strong>Date:</strong> Updated 7 December 2022</p>
+  <p><strong>Date:</strong> Updated 30 August 2023</p>
   <p><strong>Authors:</strong> <a href="https://github.com/audreymaniez">Audrey Maniez</a>, <a href="https://github.com/jkodu">Jey Nandakumar</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -17,9 +17,10 @@ rule_meta:
   id: a25f45
   name: "Headers attribute specified on a cell refers to cells in the same table element"
   rule_type: atomic
+  original_file: table-headers-attribute-refer-to-data-cells-a25f45.md
   description: |
     This rule checks that the `headers` attribute on a cell refer to other cells in the same `table` element.
-  last_modified: 7 December 2022
+  last_modified: 30 August 2023
   scs_tested:
     - handle: Info and Relationships
       num: 1.3.1

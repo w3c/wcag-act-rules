@@ -22,6 +22,15 @@ e086e5:
     isoDate: 2022-06-21
   - file: index.md
     url: e086e5/
+    w3cDate: 31 August 2023
+    isoDate: 2023-08-31
+    changes:
+      - Update to reference ARIA 1.2
+      - Remove outdated accessibility support info
+      - Editorial clarifications of the background
+      - New examples using menuitemcheckbox role
+  - file: 2022-06-23.md
+    url: e086e5/2022-06-23/
     w3cDate: 23 June 2022
     isoDate: 2022-06-23
     changes:
@@ -39,6 +48,13 @@ e086e5:
     isoDate: 2022-06-21
   - file: index.md
     url: 73f2c2/
+    w3cDate: 31 August 2023
+    isoDate: 2023-08-31
+    changes:
+      - Update to allow webauthn token
+      - Add several more examples
+  - file: 2022-06-23.md
+    url: 73f2c2/2022-06-23/
     w3cDate: 23 June 2022
     isoDate: 2022-06-23
     changes:
@@ -56,6 +72,12 @@ e086e5:
     isoDate: 2022-06-21
   - file: index.md
     url: 46ca7f/
+    w3cDate: 31 August 2023
+    isoDate: 2023-08-31
+    changes:
+      - Update to reference ARIA 1.2 
+  - file: 2022-06-23.md
+    url: 46ca7f/2022-06-23/
     w3cDate: 23 June 2022
     isoDate: 2022-06-23
     changes:
@@ -103,6 +125,13 @@ e086e5:
     isoDate: 2022-06-21
   - file: index.md
     url: 2779a5/
+    w3cDate: 31 August 2023
+    isoDate: 2023-08-31
+    changes:
+      - Replace Web Page definition with HTML-specific definition
+      - Add higher-level protocol assumption
+  - file: 2022-01-28.md
+    url: 2779a5/2022-01-28/
     w3cDate: 28 January 2022
     isoDate: 2022-01-28
 23a2a8:
@@ -112,6 +141,13 @@ e086e5:
     isoDate: 2022-06-21
   - file: index.md
     url: 23a2a8/
+    w3cDate: 31 August 2023
+    isoDate: 2023-08-31
+    changes:
+      - Update to reference ARIA 1.2
+      - Clarifying accessibility support text
+  - file: 2022-06-23.md
+    url: 23a2a8/2022-06-23/
     w3cDate: 23 June 2022
     isoDate: 2022-06-23
     changes:
@@ -129,6 +165,12 @@ e086e5:
     isoDate: 2022-06-21
   - file: index.md
     url: 59796f/
+    w3cDate: 31 August 2023
+    isoDate: 2023-08-31
+    changes:
+      - Add clarification about empty attributes to Background and Accessibility support
+  - file: 2022-06-23.md
+    url: 59796f/2022-06-23/
     w3cDate: 23 June 2022
     isoDate: 2022-06-23
     changes:
@@ -146,6 +188,13 @@ c487ae:
     isoDate: 2022-06-21
   - file: index.md
     url: c487ae/
+    w3cDate: 31 August 2023
+    isoDate: 2023-08-31
+    changes:
+      - Update to reference ARIA 1.2
+      - Remove title attribute item from Accessibility Support
+  - file: 2022-06-23.md
+    url: c487ae/2022-06-23/
     w3cDate: 23 June 2022
     isoDate: 2022-06-23
     changes:
@@ -164,6 +213,12 @@ c487ae:
     isoDate: 2022-06-21
   - file: index.md
     url: 97a4e1/
+    w3cDate: 31 August 2023
+    isoDate: 2023-08-31
+    changes:
+      - Update to reference ARIA 1.2
+  - file: 2022-06-23.md
+    url: 97a4e1/2022-06-23/
     w3cDate: 23 June 2022
     isoDate: 2022-06-23
     changes:
@@ -181,6 +236,12 @@ b5c3f8:
     isoDate: 2022-06-21
   - file: index.md
     url: b5c3f8/
+    w3cDate: 31 August 2023
+    isoDate: 2023-08-31
+    changes: 
+      - Add text of the correct language to each example.
+  - file: 2022-01-28.md
+    url: b5c3f8/2022-01-28/
     w3cDate: 28 January 2022
     isoDate: 2022-01-28
 bf051a:
@@ -208,6 +269,12 @@ bf051a:
     isoDate: 2022-06-21
   - file: index.md
     url: 7d6734/
+    w3cDate: 31 August 2023
+    isoDate: 2023-08-31
+    changes:
+      - Update to reference ARIA 1.2
+  - file: 2022-06-23.md
+    url: 7d6734/2022-06-23/
     w3cDate: 23 June 2022
     isoDate: 2022-06-23
 307n5z:
@@ -217,6 +284,13 @@ bf051a:
     isoDate: 2022-06-21
   - file: index.md
     url: 307n5z/
+    w3cDate: 31 August 2023
+    isoDate: 2023-08-31
+    changes:
+      - Update to reference ARIA 1.2
+      - Editorial changes in Background and Accessibility support
+  - file: 2022-06-23.md
+    url: 307n5z/2022-06-23/
     w3cDate: 23 June 2022
     isoDate: 2022-06-23
 a25f45:
@@ -226,6 +300,12 @@ a25f45:
     isoDate: 2022-06-21
   - file: index.md
     url: a25f45/
+    w3cDate: 31 August 2023
+    isoDate: 2023-08-31
+    changes:
+      - Update applicability to account for tables with a role attribute
+  - file: 2022-06-23.md
+    url: a25f45/2022-06-23/
     w3cDate: 23 June 2022
     isoDate: 2022-06-23
 8fc3b6:
@@ -235,6 +315,12 @@ a25f45:
     isoDate: 2022-10-21
   - file: index.md
     url: 8fc3b6/
+    w3cDate: 31 August 2023
+    isoDate: 2023-08-31
+    changes:
+      - Update to reference ARIA 1.2
+  - file: 2022-10-25.md
+    url: 8fc3b6/2022-10-25/
     w3cDate: 25 October 2022
     isoDate: 2022-10-25
 78fd32:
@@ -273,3 +359,75 @@ b4f0c3:
     url: 6cfa84/
     w3cDate: 25 October 2022
     isoDate: 2022-10-25
+09o5cg:
+  - file: proposed.md
+    url: 09o5cg/proposed/
+    w3cDate: 30 August 2023
+    isoDate: 2023-08-30
+  - file: index.md
+    url: 09o5cg/
+    w3cDate: 30 August 2023
+    isoDate: 2023-08-30
+afw4f7:
+  - file: proposed.md
+    url: afw4f7/proposed/
+    w3cDate: 30 August 2023
+    isoDate: 2023-08-30
+  - file: index.md
+    url: afw4f7/
+    w3cDate: 30 August 2023
+    isoDate: 2023-08-30
+oj04fd:
+  - file: proposed.md
+    url: oj04fd/proposed/
+    w3cDate: 30 August 2023
+    isoDate: 2023-08-30
+  - file: index.md
+    url: oj04fd/
+    w3cDate: 30 August 2023
+    isoDate: 2023-08-30
+akn7bn:
+  - file: proposed.md
+    url: akn7bn/proposed/
+    w3cDate: 30 August 2023
+    isoDate: 2023-08-30
+  - file: index.md
+    url: akn7bn/
+    w3cDate: 30 August 2023
+    isoDate: 2023-08-30
+0ssw9k:
+  - file: proposed.md
+    url: 0ssw9k/proposed/
+    w3cDate: 30 August 2023
+    isoDate: 2023-08-30
+  - file: index.md
+    url: 0ssw9k/
+    w3cDate: 30 August 2023
+    isoDate: 2023-08-30
+qt1vmo:
+  - file: proposed.md
+    url: qt1vmo/proposed/
+    w3cDate: 30 August 2023
+    isoDate: 2023-08-30
+  - file: index.md
+    url: qt1vmo/
+    w3cDate: 30 August 2023
+    isoDate: 2023-08-30
+m6b1q3:
+  - file: proposed.md
+    url: m6b1q3/proposed/
+    w3cDate: 30 August 2023
+    isoDate: 2023-08-30
+  - file: index.md
+    url: m6b1q3/
+    w3cDate: 30 August 2023
+    isoDate: 2023-08-30
+c4a8a4:
+  - file: proposed.md
+    url: c4a8a4/proposed/
+    w3cDate: 30 August 2023
+    isoDate: 2023-08-30
+  - file: index.md
+    url: c4a8a4/
+    w3cDate: 30 August 2023
+    isoDate: 2023-08-30

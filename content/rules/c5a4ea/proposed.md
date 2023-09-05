@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> c5a4ea</p>
-  <p><strong>Date:</strong> Updated 16 January 2023</p>
+  <p><strong>Date:</strong> Updated 30 August 2023</p>
   <p><strong>Authors:</strong> <a href="https://www.linkedin.com/in/brianbors/">Brian Bors</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
   
@@ -19,9 +19,10 @@ rule_meta:
   id: c5a4ea
   name: "Video element visual content has accessible alternative"
   rule_type: composite
+  original_file: video-alternative-for-visual-c5a4ea.md
   description: |
     This rule checks that `video` elements with audio have an alternative for the video content as audio or as text.
-  last_modified: 16 January 2023
+  last_modified: 30 August 2023
   scs_tested:
     - handle: Audio Description or Media Alternative (Prerecorded)
       num: 1.2.3
@@ -53,8 +54,6 @@ The HTML `video` element can also have a `track` element that provides an audio 
 
 ## Background
 
-This rule is designed specifically for [1.2.3 Audio Description or Media Alternative (Prerecorded)][sc123], which expects either audio description or a media alternative. If a video has neither, by definition it also fails for both [1.2.5 Audio Description (Prerecorded)][sc125] and [1.2.8 Media Alternative (Prerecorded)][sc128]. In order to adequately test the [expectation](#expectation) of this rule, some of the passed examples do not satisfy [1.2.5 Audio Description (Prerecorded)][sc125] or [1.2.8 Media Alternative (Prerecorded)][sc128].
-
 ### Bibliography
 
 - [Understanding Success Criterion 1.2.5: Audio Description (Prerecorded)](https://www.w3.org/WAI/WCAG21/Understanding/audio-description-prerecorded.html)
@@ -70,30 +69,6 @@ This rule is designed specifically for [1.2.3 Audio Description or Media Alterna
     <ul>
       <li><a href="https://www.w3.org/TR/WCAG21/#audio-description-or-media-alternative-prerecorded">Learn more about 1.2.3 Audio Description or Media Alternative (Prerecorded)</a></li>
       <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level A and higher.</li>
-      <li>Outcome mapping: <ul>
-        <li>Any <code>failed</code> outcomes: success criterion is not satisfied</li>
-        <li>All <code>passed</code> outcomes: success criterion needs further testing</li>
-        <li>An <code>inapplicable</code> outcome: success criterion needs further testing</li>
-      </ul></li>
-    </ul>
-  </details></li>
-  <li><details>
-    <summary><span>1.2.5 Audio Description (Prerecorded) (Level AA)</span></summary>
-    <ul>
-      <li><a href="https://www.w3.org/TR/WCAG21/#audio-description-prerecorded">Learn more about 1.2.5 Audio Description (Prerecorded)</a></li>
-      <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level AA and higher.</li>
-      <li>Outcome mapping: <ul>
-        <li>Any <code>failed</code> outcomes: success criterion is not satisfied</li>
-        <li>All <code>passed</code> outcomes: success criterion needs further testing</li>
-        <li>An <code>inapplicable</code> outcome: success criterion needs further testing</li>
-      </ul></li>
-    </ul>
-  </details></li>
-  <li><details>
-    <summary><span>1.2.8 Media Alternative (Prerecorded) (Level AAA)</span></summary>
-    <ul>
-      <li><a href="https://www.w3.org/TR/WCAG21/#media-alternative-prerecorded">Learn more about 1.2.8 Media Alternative (Prerecorded)</a></li>
-      <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level AAA.</li>
       <li>Outcome mapping: <ul>
         <li>Any <code>failed</code> outcomes: success criterion is not satisfied</li>
         <li>All <code>passed</code> outcomes: success criterion needs further testing</li>
@@ -151,6 +126,17 @@ This rule is designed specifically for [1.2.3 Audio Description or Media Alterna
   </details></li>
 </ul>
 
+### Secondary Requirements
+
+This rule is related to the following accessibility requirements, but was 
+not designed to test this requirements directly. These 
+[secondary requirements](https://w3c.github.io/wcag-act/act-rules-format.html#secondary-requirements)
+can either be stricter than the rule requires, or may be satisfied in ways 
+not tested by the rule:
+
+- [1.2.5 Audio Description (Prerecorded) (Level AA)](https://www.w3.org/TR/WCAG21/#audio-description-prerecorded): This success criterion is **more strict** than this rule. This is because the rule allows a media alternative in place of audio description. Some of the passed examples do not satisfy this success criterion.
+- [1.2.8 Media Alternative (Prerecorded) (Level AAA)](https://www.w3.org/TR/WCAG21/#media-alternative-prerecorded): This success criterion is **more strict** than this rule. This is because the rule allows audio description in place of a media alternative. Some of the passed examples do not satisfy this success criterion.
+
 ## Input Rules
 
 Outcomes of the following rules are required as input for this rule.
@@ -160,6 +146,49 @@ Outcomes of the following rules are required as input for this rule.
 - [Video element content is media alternative for text](/standards-guidelines/act/rules/video-as-media-alternative-ab4d13/)
 
 ## Test Cases
+
+<details class="act-inline-assets" markdown="block">
+<summary><span>These HTML files are used in several examples:</span></summary>
+
+File [`/test-assets/rabbit-video/transcript.html`](https://w3.org/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/transcript.html):
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Description of the rabbit video</title>
+	</head>
+	<body>
+		<h1>Description of the rabbit video</h1>
+		<p>
+			The video shows a giant fat rabbit climbing out of a hole in the ground. He stretches, yawns, and then starts
+			walking. Then he stops to scratch his bottom.
+		</p>
+	</body>
+</html>
+```
+
+File [`/test-assets/rabbit-video/incorrect-transcript.html`](https://w3.org/WAI/content-assets/wcag-act-rules/test-assets/rabbit-video/incorrect-transcript.html):
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Description of the dog video</title>
+	</head>
+	<body>
+		<h1>Description of the dog video</h1>
+		<p>
+			The video shows a giant fat dog climbing out of a hole in the ground. He stretches, yawns, and then starts
+			walking. Then he stops to scratch his bottom.
+		</p>
+	</body>
+</html>
+```
+
+</details>
 
 ### Passed
 
@@ -338,6 +367,4 @@ Content is considered _visible_ if making it fully transparent would result in a
 For more details, see [examples of visible](https://act-rules.github.io/pages/examples/visible/).
 
 [sc123]: https://www.w3.org/TR/WCAG21/#audio-description-or-media-alternative-prerecorded 'WCAG 2.1, Success Criterion 1.2.3 Audio Description or Media Alternative (Prerecorded)'
-[sc125]: https://www.w3.org/TR/WCAG21/#audio-description-prerecorded 'WCAG 2.1, Success Criterion 1.2.5 Audio Description (Prerecorded)'
-[sc128]: https://www.w3.org/TR/WCAG21/#media-alternative-prerecorded 'WCAG 2.1, Success Criterion 1.2.8 Media Alternative (Prerecorded)'
 [visible]: #visible 'Definition of visible'

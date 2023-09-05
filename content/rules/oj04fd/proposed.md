@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> oj04fd</p>
-  <p><strong>Date:</strong> Updated 20 July 2023</p>
+  <p><strong>Date:</strong> Updated 30 August 2023</p>
   <p><strong>Authors:</strong> <a href="https://github.com/Jym77">Jean-Yves Moyen</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -17,9 +17,10 @@ rule_meta:
   id: oj04fd
   name: "Element in sequential focus order has visible focus"
   rule_type: atomic
+  original_file: sequentially-focusable-element-has-visible-focus-oj04fd.md
   description: |
     This rule checks that each element in sequential focus order has some visible focus indication.
-  last_modified: 20 July 2023
+  last_modified: 30 August 2023
   scs_tested:
     - handle: Focus Visible
       num: 2.4.7
@@ -84,6 +85,42 @@ The following aspects are required in using this rule.
 - [DOM tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom)
 
 ## Test Cases
+
+<details class="act-inline-assets" markdown="block">
+<summary><span>These Javascript and CSS files are used in several examples:</span></summary>
+
+File [`/test-assets/focus-visible-oj04fd/script.js`](https://w3.org/WAI/content-assets/wcag-act-rules/test-assets/focus-visible-oj04fd/script.js):
+
+```javascript
+function toggleActivation(id) {
+	document.getElementById(id).classList.toggle('active')
+}
+```
+
+File [`/test-assets/focus-visible-oj04fd/styles.css`](https://w3.org/WAI/content-assets/wcag-act-rules/test-assets/focus-visible-oj04fd/styles.css):
+
+```css
+.indicator {
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+}
+
+.solid.active {
+	background-color: navy;
+}
+
+.border.active {
+	border: medium solid navy;
+}
+
+.no-focus-default:focus {
+	/* Never do that without defining other focus indication! */
+	outline: none;
+}
+```
+
+</details>
 
 ### Passed
 
