@@ -2,7 +2,7 @@
   "vendor": "Siteimprove",
   "name": "Alfa (semi-automated)",
   "version": "0.57.2",
-  "lastModified": "4 September 2023",
+  "lastModified": "12 September 2023",
   "approvedRules": {
     "complete": 21,
     "partial": 0,
@@ -762,8 +762,8 @@
         ]
       },
       "coverage": {
-        "covered": 19,
-        "untested": 12,
+        "covered": 31,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 31
       },
@@ -1048,7 +1048,7 @@
             {
               "procedureName": "sia-r7",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -1063,7 +1063,7 @@
             {
               "procedureName": "sia-r7",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -1078,7 +1078,7 @@
             {
               "procedureName": "sia-r7",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -1093,7 +1093,7 @@
             {
               "procedureName": "sia-r7",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -1108,7 +1108,7 @@
             {
               "procedureName": "sia-r7",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -1123,7 +1123,7 @@
             {
               "procedureName": "sia-r7",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -1138,7 +1138,7 @@
             {
               "procedureName": "sia-r7",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -1153,7 +1153,7 @@
             {
               "procedureName": "sia-r7",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -1168,7 +1168,7 @@
             {
               "procedureName": "sia-r7",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -1183,7 +1183,7 @@
             {
               "procedureName": "sia-r7",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -1198,7 +1198,7 @@
             {
               "procedureName": "sia-r7",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -1213,7 +1213,7 @@
             {
               "procedureName": "sia-r7",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
