@@ -2,7 +2,7 @@
   "vendor": "LASIGE, Faculdade de Ciências da Universidade de Lisboa",
   "name": "QualWeb",
   "version": "3.0.0",
-  "lastModified": "4 September 2023",
+  "lastModified": "18 September 2023",
   "approvedRules": {
     "complete": 21,
     "partial": 5,
@@ -761,8 +761,8 @@
         ]
       },
       "coverage": {
-        "covered": 19,
-        "untested": 12,
+        "covered": 31,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 31
       },
@@ -1047,7 +1047,7 @@
             {
               "procedureName": "Element within body has valid lang attribute",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -1062,7 +1062,7 @@
             {
               "procedureName": "Element within body has valid lang attribute",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -1077,7 +1077,7 @@
             {
               "procedureName": "Element within body has valid lang attribute",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -1092,7 +1092,7 @@
             {
               "procedureName": "Element within body has valid lang attribute",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -1107,7 +1107,7 @@
             {
               "procedureName": "Element within body has valid lang attribute",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -1122,7 +1122,7 @@
             {
               "procedureName": "Element within body has valid lang attribute",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -1137,7 +1137,7 @@
             {
               "procedureName": "Element within body has valid lang attribute",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -1152,7 +1152,7 @@
             {
               "procedureName": "Element within body has valid lang attribute",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -1167,7 +1167,7 @@
             {
               "procedureName": "Element within body has valid lang attribute",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -1182,7 +1182,7 @@
             {
               "procedureName": "Element within body has valid lang attribute",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -1197,7 +1197,7 @@
             {
               "procedureName": "Element within body has valid lang attribute",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -1212,7 +1212,7 @@
             {
               "procedureName": "Element within body has valid lang attribute",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]

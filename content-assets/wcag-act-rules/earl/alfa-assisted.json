@@ -59021,7 +59021,7 @@
               "cnt:ContentAsText"
             ],
             "cnt:characterEncoding": "utf-8",
-            "cnt:chars": ""
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<body>\n\t\t<blockquote lang=\"fr-CH\">\n\t\t\tIls ont trouvé un étrange bar Tiki aux abords de la petite ville balnéaire.\n\t\t</blockquote>\n\t</body>\n</html>"
           },
           "http-vocab:headers": {
             "@list": [
@@ -59032,7 +59032,7 @@
               }
             ]
           },
-          "http-vocab:statusCodeValue": 503
+          "http-vocab:statusCodeValue": 200
         }
       ],
       "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/1583a11fb07127fb3315fa19f3baaf876aa42aa4.html"
@@ -59043,7 +59043,17 @@
       "earl:mode": "earl:automatic",
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:inapplicable"
+        "info": "The `lang` attribute has a valid primary language subtag",
+        "outcome": "earl:passed",
+        "earl:pointer": {
+          "@type": [
+            "ptr:Pointer",
+            "ptr:SinglePointer",
+            "ptr:ExpressionPointer",
+            "ptr:XPathPointer"
+          ],
+          "ptr:expression": "/html[1]/body[1]/blockquote[1]/@lang"
+        }
       },
       "subject": {
         "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/1583a11fb07127fb3315fa19f3baaf876aa42aa4.html"
