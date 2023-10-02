@@ -2,17 +2,17 @@
   "vendor": "LASIGE, Faculdade de Ciências da Universidade de Lisboa",
   "name": "QualWeb",
   "version": "3.0.0",
-  "lastModified": "25 September 2023",
+  "lastModified": "2 October 2023",
   "approvedRules": {
-    "complete": 21,
+    "complete": 22,
     "partial": 5,
-    "inconsistent": 1,
+    "inconsistent": 0,
     "untested": 2
   },
   "proposedRules": {
     "complete": 9,
-    "partial": 16,
-    "inconsistent": 16,
+    "partial": 17,
+    "inconsistent": 15,
     "untested": 18
   },
   "actRuleMapping": [
@@ -23,7 +23,7 @@
       "procedureNames": [
         "autocomplete attribute has valid value"
       ],
-      "consistency": null,
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -34,7 +34,7 @@
         ]
       },
       "coverage": {
-        "covered": 25,
+        "covered": 28,
         "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 28
@@ -350,7 +350,7 @@
             {
               "procedureName": "autocomplete attribute has valid value",
               "outcomes": [
-                "failed"
+                "passed"
               ]
             }
           ]
@@ -365,7 +365,7 @@
             {
               "procedureName": "autocomplete attribute has valid value",
               "outcomes": [
-                "passed"
+                "failed"
               ]
             }
           ]
@@ -380,7 +380,7 @@
             {
               "procedureName": "autocomplete attribute has valid value",
               "outcomes": [
-                "passed"
+                "failed"
               ]
             }
           ]
@@ -13480,7 +13480,7 @@
       "procedureNames": [
         "Element with role attribute has required states and properties"
       ],
-      "consistency": null,
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
@@ -13489,7 +13489,7 @@
         ]
       },
       "coverage": {
-        "covered": 12,
+        "covered": 13,
         "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 15
@@ -13565,7 +13565,7 @@
             {
               "procedureName": "Element with role attribute has required states and properties",
               "outcomes": [
-                "failed"
+                "passed"
               ]
             }
           ]
