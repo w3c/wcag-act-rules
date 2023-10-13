@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> c3232f</p>
-  <p><strong>Date:</strong> Updated 30 August 2023</p>
+  <p><strong>Date:</strong> Updated 13 October 2023</p>
   <p><strong>Authors:</strong> <a href="https://www.linkedin.com/in/brianbors/">Brian Bors</a>, <a href="https://github.com/john-urbilog">John Hicks</a>, <a href="https://github.com/Rafalchar">Rafal Charlampowicz</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
   
@@ -22,7 +22,7 @@ rule_meta:
   original_file: video-only-alternative-for-visual-c3232f.md
   description: |
     This rule checks that `video` elements without audio have an alternative available.
-  last_modified: 30 August 2023
+  last_modified: 13 October 2023
   scs_tested:
     - handle: Audio-only and Video-only (Prerecorded)
       num: 1.2.1
@@ -37,9 +37,9 @@ This rule applies to any [non-streaming](#non-streaming-media-element) `video` e
 
 For each test target, the [outcome](#outcome) of at least one of the following rules is passed:
 
-- [`Video` Element Visual-Only Content Is Media Alternative For Text](https://www.w3.org/WAI/standards-guidelines/act/rules/fd26cf/proposed/)
-- [`Video` Element Visual-Only Content Has Transcript](https://www.w3.org/WAI/standards-guidelines/act/rules/ee13b5/proposed/)
-- [`Video` Element Visual-Only Content Has Audio Track Alternative](https://www.w3.org/WAI/standards-guidelines/act/rules/d7ba54/proposed/)
+- [`Video` Element Visual-Only Content Is Media Alternative For Text](https://www.w3.org/WAI/standards-guidelines/act/rules/fd26cf/)
+- [`Video` Element Visual-Only Content Has Transcript](https://www.w3.org/WAI/standards-guidelines/act/rules/ee13b5/)
+- [`Video` Element Visual-Only Content Has Audio Track Alternative](https://www.w3.org/WAI/standards-guidelines/act/rules/d7ba54/)
 
 ## Assumptions
 
@@ -139,7 +139,7 @@ File [`/test-assets/rabbit-video/incorrect-transcript.html`](https://w3.org/WAI/
 
 <a class="example-link" title="Passed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/c3232f/ce350e33e78f587703aa35b78fa319b9efe9291d.html">Open in a new tab</a>
 
-This `video` element, which has no audio, has a text transcript available on the same page. Thus, it passes rule [`Video` Element Visual-Only Content Has Transcript](https://www.w3.org/WAI/standards-guidelines/act/rules/ee13b5/proposed/).
+This `video` element, which has no audio, has a text transcript available on the same page. Thus, it passes rule [`Video` Element Visual-Only Content Has Transcript](https://www.w3.org/WAI/standards-guidelines/act/rules/ee13b5/).
 
 ```html
 <html lang="en">
@@ -157,7 +157,7 @@ Then he stops to scratch his bottom.</p>
 
 <a class="example-link" title="Passed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/c3232f/634bb07611c5d126e49caf4bfce8b6d50c872fce.html">Open in a new tab</a>
 
-This `video` element, which has no audio, has a separate audio track that describes the visual information. Thus, it passes rule [`Video` Element Visual-Only Content Has Audio Track Alternative](https://www.w3.org/WAI/standards-guidelines/act/rules/d7ba54/proposed/).
+This `video` element, which has no audio, has a separate audio track that describes the visual information. Thus, it passes rule [`Video` Element Visual-Only Content Has Audio Track Alternative](https://www.w3.org/WAI/standards-guidelines/act/rules/d7ba54/).
 
 ```html
 <html lang="en">
@@ -176,7 +176,7 @@ This `video` element, which has no audio, has a separate audio track that descri
 
 <a class="example-link" title="Passed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/c3232f/481e55b81376491b363aab5c622e58fe6b63bace.html">Open in a new tab</a>
 
-This `video` element, which has no audio, is a media alternative for the text in the page and labeled as such. Thus, it passes rule [`Video` Element Visual-Only Content Is Media Alternative For Text](https://www.w3.org/WAI/standards-guidelines/act/rules/fd26cf/proposed/).
+This `video` element, which has no audio, is a media alternative for the text in the page and labeled as such. Thus, it passes rule [`Video` Element Visual-Only Content Is Media Alternative For Text](https://www.w3.org/WAI/standards-guidelines/act/rules/fd26cf/).
 
 ```html
 <html lang="en">
