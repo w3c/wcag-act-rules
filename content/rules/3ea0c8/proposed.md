@@ -9,10 +9,15 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 3ea0c8</p>
-  <p><strong>Date:</strong> Updated 30 August 2023</p>
+  <p><strong>Date:</strong> Updated 13 October 2023</p>
   <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/brynanders">Bryn Anderson</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
+deprecated: |
+  This rule has been deprecated because success criterion 4.1.1 has 
+  been removed in WCAG 2.2 and for WCAG 2.1 and 2.0 should be 
+  considered to always pass.
+  
 rule_meta:
   id: 3ea0c8
   name: "Id attribute value is unique"
@@ -20,7 +25,7 @@ rule_meta:
   original_file: id-value-unique-3ea0c8.md
   description: |
     This rule checks that all `id` attribute values on a single page are unique.
-  last_modified: 30 August 2023
+  last_modified: 13 October 2023
   scs_tested:
     - handle: Parsing
       num: 4.1.1
