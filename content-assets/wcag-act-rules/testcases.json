@@ -3,7 +3,7 @@
   "website": "https://www.w3.org/WAI/standards-guidelines/act/rules/",
   "license": "https://act-rules.github.io/pages/license/",
   "description": "Accessibility conformance testing rules for HTML",
-  "count": 1118,
+  "count": 1123,
   "testcases": [
     {
       "ruleId": "73f2c2",
@@ -22647,6 +22647,111 @@
       "relativePath": "testcases/bisz58/0dcdacefc963adfbb2d3493e5468f8f12f0ac6de.html",
       "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/0dcdacefc963adfbb2d3493e5468f8f12f0ac6de.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/bisz58/proposed/"
+    },
+    {
+      "ruleId": "b4f0c3",
+      "ruleName": "Meta viewport allows for zoom",
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.4.4": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag21:1.4.10": {
+          "secondary": "This success criterion is **related** to this rule. This is because a page that cannot be zoomed up to 200% often does not reflow sufficiently either. Most failed examples satisfy this success criterion."
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "08e8943b849762eb7f18654c7f9e479ad33b2840",
+      "testcaseTitle": "Passed Example 2",
+      "relativePath": "testcases/b4f0c3/08e8943b849762eb7f18654c7f9e479ad33b2840.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/08e8943b849762eb7f18654c7f9e479ad33b2840.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/b4f0c3/proposed/"
+    },
+    {
+      "ruleId": "b4f0c3",
+      "ruleName": "Meta viewport allows for zoom",
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.4.4": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag21:1.4.10": {
+          "secondary": "This success criterion is **related** to this rule. This is because a page that cannot be zoomed up to 200% often does not reflow sufficiently either. Most failed examples satisfy this success criterion."
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "30b40365b4e59aa103ff04c369f31658fa6e2790",
+      "testcaseTitle": "Passed Example 5",
+      "relativePath": "testcases/b4f0c3/30b40365b4e59aa103ff04c369f31658fa6e2790.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/30b40365b4e59aa103ff04c369f31658fa6e2790.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/b4f0c3/proposed/"
+    },
+    {
+      "ruleId": "b4f0c3",
+      "ruleName": "Meta viewport allows for zoom",
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.4.4": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag21:1.4.10": {
+          "secondary": "This success criterion is **related** to this rule. This is because a page that cannot be zoomed up to 200% often does not reflow sufficiently either. Most failed examples satisfy this success criterion."
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "8735b02e59dd802a5a9e9a7ea1934a106d2963eb",
+      "testcaseTitle": "Failed Example 2",
+      "relativePath": "testcases/b4f0c3/8735b02e59dd802a5a9e9a7ea1934a106d2963eb.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/8735b02e59dd802a5a9e9a7ea1934a106d2963eb.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/b4f0c3/proposed/"
+    },
+    {
+      "ruleId": "b4f0c3",
+      "ruleName": "Meta viewport allows for zoom",
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.4.4": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag21:1.4.10": {
+          "secondary": "This success criterion is **related** to this rule. This is because a page that cannot be zoomed up to 200% often does not reflow sufficiently either. Most failed examples satisfy this success criterion."
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "c94a59f8c3b17d722781af36da3556ff4b418776",
+      "testcaseTitle": "Failed Example 3",
+      "relativePath": "testcases/b4f0c3/c94a59f8c3b17d722781af36da3556ff4b418776.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/c94a59f8c3b17d722781af36da3556ff4b418776.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/b4f0c3/proposed/"
+    },
+    {
+      "ruleId": "b4f0c3",
+      "ruleName": "Meta viewport allows for zoom",
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.4.4": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag21:1.4.10": {
+          "secondary": "This success criterion is **related** to this rule. This is because a page that cannot be zoomed up to 200% often does not reflow sufficiently either. Most failed examples satisfy this success criterion."
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "9f288c284df9ade53aa33e50ec50c879d5aba4ef",
+      "testcaseTitle": "Failed Example 7",
+      "relativePath": "testcases/b4f0c3/9f288c284df9ade53aa33e50ec50c879d5aba4ef.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/9f288c284df9ade53aa33e50ec50c879d5aba4ef.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/b4f0c3/proposed/"
     },
     {
       "ruleId": "9bd38c",
