@@ -7,7 +7,7 @@
     "complete": 6,
     "partial": 0,
     "inconsistent": 1,
-    "untested": 22
+    "untested": 20
   },
   "proposedRules": {
     "complete": 7,
@@ -418,15 +418,6 @@
       "testCaseResults": []
     },
     {
-      "ruleId": "9e45ec",
-      "ruleName": "Word spacing in `style` attributes is not `!important`",
-      "ruleApproved": true,
-      "procedureNames": [],
-      "consistency": null,
-      "coverage": null,
-      "testCaseResults": []
-    },
-    {
       "ruleId": "7d6734",
       "ruleName": "SVG element with explicit role has non-empty accessible name",
       "ruleApproved": true,
@@ -456,15 +447,6 @@
     {
       "ruleId": "6cfa84",
       "ruleName": "Element with aria-hidden has no content in sequential focus navigation",
-      "ruleApproved": true,
-      "procedureNames": [],
-      "consistency": null,
-      "coverage": null,
-      "testCaseResults": []
-    },
-    {
-      "ruleId": "78fd32",
-      "ruleName": "Line height in style attributes is not !important",
       "ruleApproved": true,
       "procedureNames": [],
       "consistency": null,
@@ -1387,15 +1369,6 @@
     {
       "ruleId": "6a7281",
       "ruleName": "ARIA state or property has valid value",
-      "ruleApproved": false,
-      "procedureNames": [],
-      "consistency": null,
-      "coverage": null,
-      "testCaseResults": []
-    },
-    {
-      "ruleId": "e6952f",
-      "ruleName": "Attribute is not duplicated",
       "ruleApproved": false,
       "procedureNames": [],
       "consistency": null,
@@ -3574,15 +3547,6 @@
       ]
     },
     {
-      "ruleId": "3ea0c8",
-      "ruleName": "Id attribute value is unique",
-      "ruleApproved": false,
-      "procedureNames": [],
-      "consistency": null,
-      "coverage": null,
-      "testCaseResults": []
-    },
-    {
       "ruleId": "4b1c6c",
       "ruleName": "Iframe elements with identical accessible names have equivalent purpose",
       "ruleApproved": false,
@@ -3855,6 +3819,24 @@
     {
       "ruleId": "e88epe",
       "ruleName": "Image not in the accessibility tree is decorative",
+      "ruleApproved": false,
+      "procedureNames": [],
+      "consistency": null,
+      "coverage": null,
+      "testCaseResults": []
+    },
+    {
+      "ruleId": "78fd32",
+      "ruleName": "Important line height in style attributes is wide enough",
+      "ruleApproved": false,
+      "procedureNames": [],
+      "consistency": null,
+      "coverage": null,
+      "testCaseResults": []
+    },
+    {
+      "ruleId": "9e45ec",
+      "ruleName": "Important word spacing in style attributes is wide enough",
       "ruleApproved": false,
       "procedureNames": [],
       "consistency": null,
