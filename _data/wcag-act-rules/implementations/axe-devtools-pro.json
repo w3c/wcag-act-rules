@@ -2,7 +2,7 @@
   "vendor": "Deque Systems",
   "name": "Axe DevTools Pro",
   "version": "4.37.1",
-  "lastModified": "12 October 2023",
+  "lastModified": "14 October 2023",
   "approvedRules": {
     "complete": 26,
     "partial": 1,
@@ -12,8 +12,8 @@
   "proposedRules": {
     "complete": 12,
     "partial": 10,
-    "inconsistent": 9,
-    "untested": 28
+    "inconsistent": 11,
+    "untested": 26
   },
   "actRuleMapping": [
     {
@@ -3009,8 +3009,8 @@
         ]
       },
       "coverage": {
-        "covered": 16,
-        "untested": 3,
+        "covered": 17,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 19
       },
@@ -3267,7 +3267,8 @@
             {
               "procedureName": "avoid-inline-spacing",
               "outcomes": [
-                "untested"
+                "passed",
+                "passed"
               ]
             }
           ]
@@ -3282,7 +3283,8 @@
             {
               "procedureName": "avoid-inline-spacing",
               "outcomes": [
-                "untested"
+                "passed",
+                "failed"
               ]
             }
           ]
@@ -3297,7 +3299,7 @@
             {
               "procedureName": "avoid-inline-spacing",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -5050,8 +5052,8 @@
         ]
       },
       "coverage": {
-        "covered": 11,
-        "untested": 5,
+        "covered": 14,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 16
       },
@@ -5231,7 +5233,7 @@
             {
               "procedureName": "meta-viewport",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -5246,7 +5248,7 @@
             {
               "procedureName": "meta-viewport",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -5261,7 +5263,7 @@
             {
               "procedureName": "meta-viewport",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -5276,7 +5278,7 @@
             {
               "procedureName": "meta-viewport",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -5291,7 +5293,7 @@
             {
               "procedureName": "meta-viewport",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -13505,19 +13507,145 @@
       "ruleId": "78fd32",
       "ruleName": "Important line height in style attributes is wide enough",
       "ruleApproved": false,
-      "procedureNames": [],
+      "procedureNames": [
+        "avoid-inline-spacing"
+      ],
       "consistency": null,
-      "coverage": null,
-      "testCaseResults": []
+      "accessibilityRequirements": {
+        "correct": false,
+        "expected": [
+          "WCAG2:text-spacing"
+        ],
+        "reported": []
+      },
+      "coverage": {
+        "covered": 3,
+        "untested": 0,
+        "cantTell": 0,
+        "testCaseTotal": 3
+      },
+      "testCaseResults": [
+        {
+          "testcaseId": "78034759a1086c7ffa8037b6e6e2327ece4a19d7",
+          "testCaseName": "Passed Example 7",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/78fd32/78034759a1086c7ffa8037b6e6e2327ece4a19d7.html",
+          "testCaseApproved": false,
+          "expected": "passed",
+          "procedureResults": [
+            {
+              "procedureName": "avoid-inline-spacing",
+              "outcomes": [
+                "passed",
+                "passed"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "317de3cc2f864ebdae6e325c9fbc0dbf4947c5c9",
+          "testCaseName": "Passed Example 8",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/78fd32/317de3cc2f864ebdae6e325c9fbc0dbf4947c5c9.html",
+          "testCaseApproved": false,
+          "expected": "passed",
+          "procedureResults": [
+            {
+              "procedureName": "avoid-inline-spacing",
+              "outcomes": [
+                "passed",
+                "passed"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "0128de1beb7862298366680f6920bd3b3874d752",
+          "testCaseName": "Inapplicable Example 2",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/78fd32/0128de1beb7862298366680f6920bd3b3874d752.html",
+          "testCaseApproved": false,
+          "expected": "inapplicable",
+          "procedureResults": [
+            {
+              "procedureName": "avoid-inline-spacing",
+              "outcomes": [
+                "passed"
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "ruleId": "9e45ec",
       "ruleName": "Important word spacing in style attributes is wide enough",
       "ruleApproved": false,
-      "procedureNames": [],
+      "procedureNames": [
+        "avoid-inline-spacing"
+      ],
       "consistency": null,
-      "coverage": null,
-      "testCaseResults": []
+      "accessibilityRequirements": {
+        "correct": true,
+        "expected": [
+          "WCAG2:text-spacing"
+        ],
+        "reported": [
+          "WCAG2:text-spacing"
+        ]
+      },
+      "coverage": {
+        "covered": 0,
+        "untested": 0,
+        "cantTell": 0,
+        "testCaseTotal": 3
+      },
+      "testCaseResults": [
+        {
+          "testcaseId": "15905a239d6755102be6a60aa152ad963d5b1dbb",
+          "testCaseName": "Passed Example 5",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/15905a239d6755102be6a60aa152ad963d5b1dbb.html",
+          "testCaseApproved": false,
+          "expected": "passed",
+          "procedureResults": [
+            {
+              "procedureName": "avoid-inline-spacing",
+              "outcomes": [
+                "passed",
+                "failed"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "8d2baed183149375922c23a9a5f42b52b627d713",
+          "testCaseName": "Passed Example 6",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/8d2baed183149375922c23a9a5f42b52b627d713.html",
+          "testCaseApproved": false,
+          "expected": "passed",
+          "procedureResults": [
+            {
+              "procedureName": "avoid-inline-spacing",
+              "outcomes": [
+                "passed",
+                "failed"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "fdd3c30f28464b32eb8a1397f70a41dfd3b2cb1c",
+          "testCaseName": "Inapplicable Example 2",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/fdd3c30f28464b32eb8a1397f70a41dfd3b2cb1c.html",
+          "testCaseApproved": false,
+          "expected": "inapplicable",
+          "procedureResults": [
+            {
+              "procedureName": "avoid-inline-spacing",
+              "outcomes": [
+                "failed"
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "ruleId": "36b590",
