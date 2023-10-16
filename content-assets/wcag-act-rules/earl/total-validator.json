@@ -10503,7 +10503,7 @@
           "@type": "Assertion",
           "test": {
             "title": "E916",
-            "isPartOf": ["WCAG2:resize-text", "WCAG2:reflow"]
+            "isPartOf": ["WCAG2:resize-text"]
            },
           "result": { "outcome": "earl:passed" }
         }
@@ -10517,7 +10517,7 @@
           "@type": "Assertion",
           "test": {
             "title": "E916",
-            "isPartOf": ["WCAG2:resize-text", "WCAG2:reflow"]
+            "isPartOf": ["WCAG2:resize-text"]
            },
           "result": { "outcome": "earl:passed" }
         }
@@ -10531,7 +10531,7 @@
           "@type": "Assertion",
           "test": {
             "title": "E916",
-            "isPartOf": ["WCAG2:resize-text", "WCAG2:reflow"]
+            "isPartOf": ["WCAG2:resize-text"]
            },
           "result": { "outcome": "earl:failed" }
         }
@@ -10545,7 +10545,7 @@
           "@type": "Assertion",
           "test": {
             "title": "E916",
-            "isPartOf": ["WCAG2:resize-text", "WCAG2:reflow"]
+            "isPartOf": ["WCAG2:resize-text"]
            },
           "result": { "outcome": "earl:failed" }
         }
@@ -10559,7 +10559,7 @@
           "@type": "Assertion",
           "test": {
             "title": "E916",
-            "isPartOf": ["WCAG2:resize-text", "WCAG2:reflow"]
+            "isPartOf": ["WCAG2:resize-text"]
            },
           "result": { "outcome": "earl:failed" }
         }

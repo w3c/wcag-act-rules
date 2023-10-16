@@ -4,8 +4,8 @@
   "version": "17.1.0",
   "lastModified": "16 October 2023",
   "approvedRules": {
-    "complete": 20,
-    "partial": 1,
+    "complete": 21,
+    "partial": 0,
     "inconsistent": 0,
     "untested": 6
   },
@@ -5138,15 +5138,14 @@
       "procedureNames": [
         "E916"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:resize-text"
         ],
         "reported": [
-          "WCAG2:resize-text",
-          "WCAG2:reflow"
+          "WCAG2:resize-text"
         ]
       },
       "coverage": {
