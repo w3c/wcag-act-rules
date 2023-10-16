@@ -2,7 +2,7 @@
   "vendor": "Total Validator",
   "name": "Total Validator (+Browser)",
   "version": "17.3.0",
-  "lastModified": "1 September 2023",
+  "lastModified": "16 October 2023",
   "approvedRules": {
     "complete": 23,
     "partial": 1,
@@ -10,10 +10,10 @@
     "untested": 3
   },
   "proposedRules": {
-    "complete": 12,
-    "partial": 2,
-    "inconsistent": 0,
-    "untested": 45
+    "complete": 13,
+    "partial": 1,
+    "inconsistent": 2,
+    "untested": 43
   },
   "actRuleMapping": [
     {
@@ -2897,7 +2897,7 @@
         "W917",
         "P917"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -2908,8 +2908,8 @@
         ]
       },
       "coverage": {
-        "covered": 16,
-        "untested": 3,
+        "covered": 19,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 19
       },
@@ -3260,13 +3260,13 @@
             {
               "procedureName": "W917",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             },
             {
               "procedureName": "P917",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -3281,13 +3281,13 @@
             {
               "procedureName": "W917",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             },
             {
               "procedureName": "P917",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -3302,13 +3302,13 @@
             {
               "procedureName": "W917",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             },
             {
               "procedureName": "P917",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -5138,19 +5138,20 @@
       "procedureNames": [
         "E916"
       ],
-      "consistency": "complete",
+      "consistency": "partial",
       "accessibilityRequirements": {
-        "correct": true,
+        "correct": false,
         "expected": [
           "WCAG2:resize-text"
         ],
         "reported": [
-          "WCAG2:resize-text"
+          "WCAG2:resize-text",
+          "WCAG2:reflow"
         ]
       },
       "coverage": {
-        "covered": 11,
-        "untested": 5,
+        "covered": 16,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 16
       },
@@ -5330,7 +5331,7 @@
             {
               "procedureName": "E916",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -5345,7 +5346,7 @@
             {
               "procedureName": "E916",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -5360,7 +5361,7 @@
             {
               "procedureName": "E916",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -5375,7 +5376,7 @@
             {
               "procedureName": "E916",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -5390,7 +5391,7 @@
             {
               "procedureName": "E916",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -5851,10 +5852,10 @@
         ]
       },
       "coverage": {
-        "covered": 7,
+        "covered": 9,
         "untested": 0,
         "cantTell": 0,
-        "testCaseTotal": 7
+        "testCaseTotal": 9
       },
       "testCaseResults": [
         {
@@ -5952,6 +5953,36 @@
           "testCaseName": "Inapplicable Example 4",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/akn7bn/aa153f6799d28563054ce66bcf7dfcedf9b75288.html",
           "testCaseApproved": true,
+          "expected": "inapplicable",
+          "procedureResults": [
+            {
+              "procedureName": "E9603",
+              "outcomes": [
+                "passed"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "17a371c470316dc29e424101065ebfe9f7b2e990",
+          "testCaseName": "Inapplicable Example 5",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/akn7bn/17a371c470316dc29e424101065ebfe9f7b2e990.html",
+          "testCaseApproved": false,
+          "expected": "inapplicable",
+          "procedureResults": [
+            {
+              "procedureName": "E9603",
+              "outcomes": [
+                "passed"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "c88fcaf4d90e2156de75a1cdad8734a3d75c49e4",
+          "testCaseName": "Inapplicable Example 6",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/akn7bn/c88fcaf4d90e2156de75a1cdad8734a3d75c49e4.html",
+          "testCaseApproved": false,
           "expected": "inapplicable",
           "procedureResults": [
             {
@@ -10169,13 +10200,11 @@
         "E898",
         "E951"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [],
-        "reported": [
-          "WCAG2:info-and-relationships"
-        ]
+        "reported": []
       },
       "coverage": {
         "covered": 15,
@@ -11094,19 +11123,177 @@
       "ruleId": "78fd32",
       "ruleName": "Important line height in style attributes is wide enough",
       "ruleApproved": false,
-      "procedureNames": [],
+      "procedureNames": [
+        "W917",
+        "P917"
+      ],
       "consistency": null,
-      "coverage": null,
-      "testCaseResults": []
+      "accessibilityRequirements": {
+        "correct": false,
+        "expected": [
+          "WCAG2:text-spacing"
+        ],
+        "reported": []
+      },
+      "coverage": {
+        "covered": 3,
+        "untested": 0,
+        "cantTell": 0,
+        "testCaseTotal": 3
+      },
+      "testCaseResults": [
+        {
+          "testcaseId": "78034759a1086c7ffa8037b6e6e2327ece4a19d7",
+          "testCaseName": "Passed Example 7",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/78fd32/78034759a1086c7ffa8037b6e6e2327ece4a19d7.html",
+          "testCaseApproved": false,
+          "expected": "passed",
+          "procedureResults": [
+            {
+              "procedureName": "W917",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
+              "procedureName": "P917",
+              "outcomes": [
+                "passed"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "317de3cc2f864ebdae6e325c9fbc0dbf4947c5c9",
+          "testCaseName": "Passed Example 8",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/78fd32/317de3cc2f864ebdae6e325c9fbc0dbf4947c5c9.html",
+          "testCaseApproved": false,
+          "expected": "passed",
+          "procedureResults": [
+            {
+              "procedureName": "W917",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
+              "procedureName": "P917",
+              "outcomes": [
+                "passed"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "0128de1beb7862298366680f6920bd3b3874d752",
+          "testCaseName": "Inapplicable Example 2",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/78fd32/0128de1beb7862298366680f6920bd3b3874d752.html",
+          "testCaseApproved": false,
+          "expected": "inapplicable",
+          "procedureResults": [
+            {
+              "procedureName": "W917",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
+              "procedureName": "P917",
+              "outcomes": [
+                "passed"
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "ruleId": "9e45ec",
       "ruleName": "Important word spacing in style attributes is wide enough",
       "ruleApproved": false,
-      "procedureNames": [],
+      "procedureNames": [
+        "W917",
+        "P917"
+      ],
       "consistency": null,
-      "coverage": null,
-      "testCaseResults": []
+      "accessibilityRequirements": {
+        "correct": false,
+        "expected": [
+          "WCAG2:text-spacing"
+        ],
+        "reported": []
+      },
+      "coverage": {
+        "covered": 3,
+        "untested": 0,
+        "cantTell": 0,
+        "testCaseTotal": 3
+      },
+      "testCaseResults": [
+        {
+          "testcaseId": "15905a239d6755102be6a60aa152ad963d5b1dbb",
+          "testCaseName": "Passed Example 5",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/15905a239d6755102be6a60aa152ad963d5b1dbb.html",
+          "testCaseApproved": false,
+          "expected": "passed",
+          "procedureResults": [
+            {
+              "procedureName": "W917",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
+              "procedureName": "P917",
+              "outcomes": [
+                "passed"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "8d2baed183149375922c23a9a5f42b52b627d713",
+          "testCaseName": "Passed Example 6",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/8d2baed183149375922c23a9a5f42b52b627d713.html",
+          "testCaseApproved": false,
+          "expected": "passed",
+          "procedureResults": [
+            {
+              "procedureName": "W917",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
+              "procedureName": "P917",
+              "outcomes": [
+                "passed"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "fdd3c30f28464b32eb8a1397f70a41dfd3b2cb1c",
+          "testCaseName": "Inapplicable Example 2",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/fdd3c30f28464b32eb8a1397f70a41dfd3b2cb1c.html",
+          "testCaseApproved": false,
+          "expected": "inapplicable",
+          "procedureResults": [
+            {
+              "procedureName": "W917",
+              "outcomes": [
+                "passed"
+              ]
+            },
+            {
+              "procedureName": "P917",
+              "outcomes": [
+                "passed"
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "ruleId": "36b590",

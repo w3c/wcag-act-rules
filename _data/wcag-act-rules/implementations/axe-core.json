@@ -5755,9 +5755,9 @@
       },
       "coverage": {
         "covered": 7,
-        "untested": 0,
+        "untested": 2,
         "cantTell": 0,
-        "testCaseTotal": 7
+        "testCaseTotal": 9
       },
       "testCaseResults": [
         {
@@ -5861,6 +5861,36 @@
               "procedureName": "frame-focusable-content",
               "outcomes": [
                 "passed"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "17a371c470316dc29e424101065ebfe9f7b2e990",
+          "testCaseName": "Inapplicable Example 5",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/akn7bn/17a371c470316dc29e424101065ebfe9f7b2e990.html",
+          "testCaseApproved": false,
+          "expected": "inapplicable",
+          "procedureResults": [
+            {
+              "procedureName": "frame-focusable-content",
+              "outcomes": [
+                "untested"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "c88fcaf4d90e2156de75a1cdad8734a3d75c49e4",
+          "testCaseName": "Inapplicable Example 6",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/akn7bn/c88fcaf4d90e2156de75a1cdad8734a3d75c49e4.html",
+          "testCaseApproved": false,
+          "expected": "inapplicable",
+          "procedureResults": [
+            {
+              "procedureName": "frame-focusable-content",
+              "outcomes": [
+                "untested"
               ]
             }
           ]

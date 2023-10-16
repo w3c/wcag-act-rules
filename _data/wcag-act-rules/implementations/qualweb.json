@@ -2,7 +2,7 @@
   "vendor": "LASIGE, Faculdade de Ciências da Universidade de Lisboa",
   "name": "QualWeb",
   "version": "3.0.0",
-  "lastModified": "2 October 2023",
+  "lastModified": "16 October 2023",
   "approvedRules": {
     "complete": 20,
     "partial": 5,
@@ -5131,9 +5131,9 @@
       },
       "coverage": {
         "covered": 7,
-        "untested": 0,
+        "untested": 2,
         "cantTell": 0,
-        "testCaseTotal": 7
+        "testCaseTotal": 9
       },
       "testCaseResults": [
         {
@@ -5237,6 +5237,36 @@
               "procedureName": "iframe with negative tabindex has no interactive elements",
               "outcomes": [
                 "passed"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "17a371c470316dc29e424101065ebfe9f7b2e990",
+          "testCaseName": "Inapplicable Example 5",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/akn7bn/17a371c470316dc29e424101065ebfe9f7b2e990.html",
+          "testCaseApproved": false,
+          "expected": "inapplicable",
+          "procedureResults": [
+            {
+              "procedureName": "iframe with negative tabindex has no interactive elements",
+              "outcomes": [
+                "untested"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "c88fcaf4d90e2156de75a1cdad8734a3d75c49e4",
+          "testCaseName": "Inapplicable Example 6",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/akn7bn/c88fcaf4d90e2156de75a1cdad8734a3d75c49e4.html",
+          "testCaseApproved": false,
+          "expected": "inapplicable",
+          "procedureResults": [
+            {
+              "procedureName": "iframe with negative tabindex has no interactive elements",
+              "outcomes": [
+                "untested"
               ]
             }
           ]
