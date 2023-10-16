@@ -3,7 +3,7 @@
   "website": "https://www.w3.org/WAI/standards-guidelines/act/rules/",
   "license": "https://act-rules.github.io/pages/license/",
   "description": "Accessibility conformance testing rules for HTML",
-  "count": 1103,
+  "count": 1105,
   "testcases": [
     {
       "ruleId": "73f2c2",
@@ -19170,6 +19170,54 @@
       "relativePath": "testcases/cae760/058668cee446d08989bf24d5ce3413dc2cda9975.html",
       "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cae760/058668cee446d08989bf24d5ce3413dc2cda9975.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/cae760/proposed/"
+    },
+    {
+      "ruleId": "akn7bn",
+      "ruleName": "Iframe with interactive elements is not excluded from tab-order",
+      "ruleAccessibilityRequirements": {
+        "wcag20:2.1.1": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:G202": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "inapplicable",
+      "testcaseId": "17a371c470316dc29e424101065ebfe9f7b2e990",
+      "testcaseTitle": "Inapplicable Example 5",
+      "relativePath": "testcases/akn7bn/17a371c470316dc29e424101065ebfe9f7b2e990.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/akn7bn/17a371c470316dc29e424101065ebfe9f7b2e990.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/akn7bn/proposed/"
+    },
+    {
+      "ruleId": "akn7bn",
+      "ruleName": "Iframe with interactive elements is not excluded from tab-order",
+      "ruleAccessibilityRequirements": {
+        "wcag20:2.1.1": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:G202": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "inapplicable",
+      "testcaseId": "c88fcaf4d90e2156de75a1cdad8734a3d75c49e4",
+      "testcaseTitle": "Inapplicable Example 6",
+      "relativePath": "testcases/akn7bn/c88fcaf4d90e2156de75a1cdad8734a3d75c49e4.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/akn7bn/c88fcaf4d90e2156de75a1cdad8734a3d75c49e4.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/akn7bn/proposed/"
     },
     {
       "ruleId": "0va7u6",
