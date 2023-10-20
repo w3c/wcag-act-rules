@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> bf051a</p>
-  <p><strong>Date:</strong> Updated 30 August 2023</p>
+  <p><strong>Date:</strong> Updated 13 October 2023</p>
   <p><strong>Authors:</strong> <a href="https://github.com/jkodu">Jey Nandakumar</a>. Previous Authors: <a href="https://github.com/annika-FTB">Annika Nietzio</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -20,7 +20,7 @@ rule_meta:
   original_file: html-page-lang-valid-bf051a.md
   description: |
     This rule checks that the `lang` attribute of the root element of a non-embedded HTML page has a language tag with a known primary language subtag.
-  last_modified: 30 August 2023
+  last_modified: 13 October 2023
   scs_tested:
     - handle: Language of Page
       num: 3.1.1
@@ -58,7 +58,7 @@ This rule is only applicable to non-embedded HTML pages. HTML pages embedded int
 ### Related rules
 
 - [HTML page has `lang` attribute](https://www.w3.org/WAI/standards-guidelines/act/rules/b5c3f8/)
-- [HTML page language subtag matches default language](https://www.w3.org/WAI/standards-guidelines/act/rules/ucwvc8/proposed/)
+- [HTML page language subtag matches default language](https://www.w3.org/WAI/standards-guidelines/act/rules/ucwvc8/)
 
 ### Bibliography
 

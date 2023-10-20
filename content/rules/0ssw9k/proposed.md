@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 0ssw9k</p>
-  <p><strong>Date:</strong> Updated 30 August 2023</p>
+  <p><strong>Date:</strong> Updated 13 October 2023</p>
   <p><strong>Authors:</strong> <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -20,7 +20,7 @@ rule_meta:
   original_file: scrollable-element-keyboard-accessible-0ssw9k.md
   description: |
     This rule checks that scrollable elements or their descendants can be reached with sequential focus navigation so that they can be scrolled by keyboard
-  last_modified: 30 August 2023
+  last_modified: 13 October 2023
   scs_tested:
     - handle: Keyboard
       num: 2.1.1
@@ -55,7 +55,7 @@ Some browsers restrict scrolling to the [content box](https://drafts.csswg.org/c
 
 To ensure there is some element from which arrow keys can be used to control the scroll position, focus must be on or in a scrollable region. If scripts are used to prevent the keyboard events from reaching the scrollable region, this could still cause a keyboard accessibility issue. This must be tested separately.
 
-This rule only applies to elements who scroll content in the same document. Elements such as iframes that embed other documents may also be scrollable, but for them it is the embedded document that scrolls, not the content in the same document. Such scenarios are tested separately with rules such as [Iframe with negative tabindex has no interactive elements](https://www.w3.org/WAI/standards-guidelines/act/rules/akn7bn/proposed/).
+This rule only applies to elements who scroll content in the same document. Elements such as iframes that embed other documents may also be scrollable, but for them it is the embedded document that scrolls, not the content in the same document. Such scenarios are tested separately with rules such as [Iframe with negative tabindex has no interactive elements](https://www.w3.org/WAI/standards-guidelines/act/rules/akn7bn/).
 
 ### Bibliography
 

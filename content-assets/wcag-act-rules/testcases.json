@@ -3,7 +3,7 @@
   "website": "https://www.w3.org/WAI/standards-guidelines/act/rules/",
   "license": "https://act-rules.github.io/pages/license/",
   "description": "Accessibility conformance testing rules for HTML",
-  "count": 1146,
+  "count": 1105,
   "testcases": [
     {
       "ruleId": "73f2c2",
@@ -4584,326 +4584,6 @@
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/c487ae/proposed/"
     },
     {
-      "ruleId": "9e45ec",
-      "isApproved": true,
-      "approved": true,
-      "ruleName": "Word spacing in `style` attributes is not `!important`",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.4.12": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "d32bae2609b7c0c66a1df8dbfc182fb10c16805d",
-      "testcaseTitle": "Passed Example 1",
-      "relativePath": "testcases/9e45ec/d32bae2609b7c0c66a1df8dbfc182fb10c16805d.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/d32bae2609b7c0c66a1df8dbfc182fb10c16805d.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/9e45ec/proposed/"
-    },
-    {
-      "ruleId": "9e45ec",
-      "isApproved": true,
-      "approved": true,
-      "ruleName": "Word spacing in `style` attributes is not `!important`",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.4.12": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "45e5a588c3e8977fa0e83074d7f7c89738e8ec42",
-      "testcaseTitle": "Passed Example 2",
-      "relativePath": "testcases/9e45ec/45e5a588c3e8977fa0e83074d7f7c89738e8ec42.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/45e5a588c3e8977fa0e83074d7f7c89738e8ec42.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/9e45ec/proposed/"
-    },
-    {
-      "ruleId": "9e45ec",
-      "isApproved": true,
-      "approved": true,
-      "ruleName": "Word spacing in `style` attributes is not `!important`",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.4.12": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "2a2a14cc9bcb3fa7983e22f160ce9eeb6b832a8c",
-      "testcaseTitle": "Passed Example 3",
-      "relativePath": "testcases/9e45ec/2a2a14cc9bcb3fa7983e22f160ce9eeb6b832a8c.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/2a2a14cc9bcb3fa7983e22f160ce9eeb6b832a8c.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/9e45ec/proposed/"
-    },
-    {
-      "ruleId": "9e45ec",
-      "isApproved": true,
-      "approved": true,
-      "ruleName": "Word spacing in `style` attributes is not `!important`",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.4.12": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "6d5dde208ef91b6afceca022c7a2a12b99f042b7",
-      "testcaseTitle": "Passed Example 4",
-      "relativePath": "testcases/9e45ec/6d5dde208ef91b6afceca022c7a2a12b99f042b7.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/6d5dde208ef91b6afceca022c7a2a12b99f042b7.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/9e45ec/proposed/"
-    },
-    {
-      "ruleId": "9e45ec",
-      "isApproved": true,
-      "approved": true,
-      "ruleName": "Word spacing in `style` attributes is not `!important`",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.4.12": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "2d9b8cf0906f0e05e4d487c9682db7a7e022fab0",
-      "testcaseTitle": "Passed Example 5",
-      "relativePath": "testcases/9e45ec/2d9b8cf0906f0e05e4d487c9682db7a7e022fab0.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/2d9b8cf0906f0e05e4d487c9682db7a7e022fab0.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/9e45ec/proposed/"
-    },
-    {
-      "ruleId": "9e45ec",
-      "isApproved": true,
-      "approved": true,
-      "ruleName": "Word spacing in `style` attributes is not `!important`",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.4.12": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "51faee765656c7bfe86b959373e1df8679726779",
-      "testcaseTitle": "Passed Example 6",
-      "relativePath": "testcases/9e45ec/51faee765656c7bfe86b959373e1df8679726779.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/51faee765656c7bfe86b959373e1df8679726779.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/9e45ec/proposed/"
-    },
-    {
-      "ruleId": "9e45ec",
-      "isApproved": true,
-      "approved": true,
-      "ruleName": "Word spacing in `style` attributes is not `!important`",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.4.12": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "fa119442cf663c73bf332488f3965b427b024009",
-      "testcaseTitle": "Passed Example 7",
-      "relativePath": "testcases/9e45ec/fa119442cf663c73bf332488f3965b427b024009.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/fa119442cf663c73bf332488f3965b427b024009.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/9e45ec/proposed/"
-    },
-    {
-      "ruleId": "9e45ec",
-      "isApproved": true,
-      "approved": true,
-      "ruleName": "Word spacing in `style` attributes is not `!important`",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.4.12": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "edaf06132468eccf5fd90551151252a364b44b7b",
-      "testcaseTitle": "Passed Example 8",
-      "relativePath": "testcases/9e45ec/edaf06132468eccf5fd90551151252a364b44b7b.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/edaf06132468eccf5fd90551151252a364b44b7b.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/9e45ec/proposed/"
-    },
-    {
-      "ruleId": "9e45ec",
-      "isApproved": true,
-      "approved": true,
-      "ruleName": "Word spacing in `style` attributes is not `!important`",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.4.12": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "failed",
-      "testcaseId": "31d185e51a8be241f8a75d09deae69d3937f0329",
-      "testcaseTitle": "Failed Example 1",
-      "relativePath": "testcases/9e45ec/31d185e51a8be241f8a75d09deae69d3937f0329.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/31d185e51a8be241f8a75d09deae69d3937f0329.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/9e45ec/proposed/"
-    },
-    {
-      "ruleId": "9e45ec",
-      "isApproved": true,
-      "approved": true,
-      "ruleName": "Word spacing in `style` attributes is not `!important`",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.4.12": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "failed",
-      "testcaseId": "1134eadf72b2a40c03b8bbf486ebfd3bb34cf986",
-      "testcaseTitle": "Failed Example 2",
-      "relativePath": "testcases/9e45ec/1134eadf72b2a40c03b8bbf486ebfd3bb34cf986.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/1134eadf72b2a40c03b8bbf486ebfd3bb34cf986.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/9e45ec/proposed/"
-    },
-    {
-      "ruleId": "9e45ec",
-      "isApproved": true,
-      "approved": true,
-      "ruleName": "Word spacing in `style` attributes is not `!important`",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.4.12": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "failed",
-      "testcaseId": "830c047a178145d69fb7dd3fb21abae5a84f1830",
-      "testcaseTitle": "Failed Example 3",
-      "relativePath": "testcases/9e45ec/830c047a178145d69fb7dd3fb21abae5a84f1830.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/830c047a178145d69fb7dd3fb21abae5a84f1830.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/9e45ec/proposed/"
-    },
-    {
-      "ruleId": "9e45ec",
-      "isApproved": true,
-      "approved": true,
-      "ruleName": "Word spacing in `style` attributes is not `!important`",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.4.12": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "failed",
-      "testcaseId": "d9fe2bdf199d96c133830ded7907a28c4c33efcc",
-      "testcaseTitle": "Failed Example 4",
-      "relativePath": "testcases/9e45ec/d9fe2bdf199d96c133830ded7907a28c4c33efcc.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/d9fe2bdf199d96c133830ded7907a28c4c33efcc.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/9e45ec/proposed/"
-    },
-    {
-      "ruleId": "9e45ec",
-      "isApproved": true,
-      "approved": true,
-      "ruleName": "Word spacing in `style` attributes is not `!important`",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.4.12": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "inapplicable",
-      "testcaseId": "cc484992ddeab663aa5e490f3fd71806c9bd8528",
-      "testcaseTitle": "Inapplicable Example 1",
-      "relativePath": "testcases/9e45ec/cc484992ddeab663aa5e490f3fd71806c9bd8528.svg",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/cc484992ddeab663aa5e490f3fd71806c9bd8528.svg",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/9e45ec/proposed/"
-    },
-    {
-      "ruleId": "9e45ec",
-      "isApproved": true,
-      "approved": true,
-      "ruleName": "Word spacing in `style` attributes is not `!important`",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.4.12": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "inapplicable",
-      "testcaseId": "32f0d32619e3d22a8988256e0f3ebae3e0f801c9",
-      "testcaseTitle": "Inapplicable Example 2",
-      "relativePath": "testcases/9e45ec/32f0d32619e3d22a8988256e0f3ebae3e0f801c9.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/32f0d32619e3d22a8988256e0f3ebae3e0f801c9.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/9e45ec/proposed/"
-    },
-    {
-      "ruleId": "9e45ec",
-      "isApproved": true,
-      "approved": true,
-      "ruleName": "Word spacing in `style` attributes is not `!important`",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.4.12": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "inapplicable",
-      "testcaseId": "a8f0c6682763e4ca7db824dc145a23067a3eb889",
-      "testcaseTitle": "Inapplicable Example 3",
-      "relativePath": "testcases/9e45ec/a8f0c6682763e4ca7db824dc145a23067a3eb889.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/a8f0c6682763e4ca7db824dc145a23067a3eb889.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/9e45ec/proposed/"
-    },
-    {
-      "ruleId": "9e45ec",
-      "isApproved": true,
-      "approved": true,
-      "ruleName": "Word spacing in `style` attributes is not `!important`",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.4.12": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "inapplicable",
-      "testcaseId": "92e706402d8f8cb13d73ffb759ce35ec910d272c",
-      "testcaseTitle": "Inapplicable Example 4",
-      "relativePath": "testcases/9e45ec/92e706402d8f8cb13d73ffb759ce35ec910d272c.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/92e706402d8f8cb13d73ffb759ce35ec910d272c.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/9e45ec/proposed/"
-    },
-    {
       "ruleId": "7d6734",
       "approved": true,
       "isApproved": true,
@@ -6152,405 +5832,6 @@
       "relativePath": "testcases/6cfa84/4d71a1ad253efab083f05dc558656d94eb430ca7.html",
       "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/6cfa84/4d71a1ad253efab083f05dc558656d94eb430ca7.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/6cfa84/proposed/"
-    },
-    {
-      "ruleId": "78fd32",
-      "approved": true,
-      "ruleName": "Line height in style attributes is not !important",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.4.12": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "f6c53855436de3898c29ee685d5c1cf02be24c72",
-      "testcaseTitle": "Passed Example 1",
-      "relativePath": "testcases/78fd32/f6c53855436de3898c29ee685d5c1cf02be24c72.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/78fd32/f6c53855436de3898c29ee685d5c1cf02be24c72.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/78fd32/proposed/"
-    },
-    {
-      "ruleId": "78fd32",
-      "approved": true,
-      "ruleName": "Line height in style attributes is not !important",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.4.12": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "a4c9e1fbd1f25787a4906a79d5ab23c975120833",
-      "testcaseTitle": "Passed Example 2",
-      "relativePath": "testcases/78fd32/a4c9e1fbd1f25787a4906a79d5ab23c975120833.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/78fd32/a4c9e1fbd1f25787a4906a79d5ab23c975120833.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/78fd32/proposed/"
-    },
-    {
-      "ruleId": "78fd32",
-      "approved": true,
-      "ruleName": "Line height in style attributes is not !important",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.4.12": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "203a13b314695fc2abc6163b3ac7940ab1c4a9ed",
-      "testcaseTitle": "Passed Example 3",
-      "relativePath": "testcases/78fd32/203a13b314695fc2abc6163b3ac7940ab1c4a9ed.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/78fd32/203a13b314695fc2abc6163b3ac7940ab1c4a9ed.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/78fd32/proposed/"
-    },
-    {
-      "ruleId": "78fd32",
-      "approved": true,
-      "ruleName": "Line height in style attributes is not !important",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.4.12": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "82c89e74b17e53b55a8d56f23dddbfbe04bc163e",
-      "testcaseTitle": "Passed Example 4",
-      "relativePath": "testcases/78fd32/82c89e74b17e53b55a8d56f23dddbfbe04bc163e.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/78fd32/82c89e74b17e53b55a8d56f23dddbfbe04bc163e.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/78fd32/proposed/"
-    },
-    {
-      "ruleId": "78fd32",
-      "approved": true,
-      "ruleName": "Line height in style attributes is not !important",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.4.12": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "844c8f6a1100db804ee5b4d335098a74ff628238",
-      "testcaseTitle": "Passed Example 5",
-      "relativePath": "testcases/78fd32/844c8f6a1100db804ee5b4d335098a74ff628238.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/78fd32/844c8f6a1100db804ee5b4d335098a74ff628238.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/78fd32/proposed/"
-    },
-    {
-      "ruleId": "78fd32",
-      "approved": true,
-      "ruleName": "Line height in style attributes is not !important",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.4.12": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "639b3bdba21f19efaa8fc304a8f95e6e7105e3cb",
-      "testcaseTitle": "Passed Example 6",
-      "relativePath": "testcases/78fd32/639b3bdba21f19efaa8fc304a8f95e6e7105e3cb.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/78fd32/639b3bdba21f19efaa8fc304a8f95e6e7105e3cb.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/78fd32/proposed/"
-    },
-    {
-      "ruleId": "78fd32",
-      "approved": true,
-      "ruleName": "Line height in style attributes is not !important",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.4.12": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "0dcc810409a65f29f559c4826afbaa71bcba6ae0",
-      "testcaseTitle": "Passed Example 7",
-      "relativePath": "testcases/78fd32/0dcc810409a65f29f559c4826afbaa71bcba6ae0.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/78fd32/0dcc810409a65f29f559c4826afbaa71bcba6ae0.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/78fd32/proposed/"
-    },
-    {
-      "ruleId": "78fd32",
-      "approved": true,
-      "ruleName": "Line height in style attributes is not !important",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.4.12": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "a2bfcb630ad36d8f8e49fb02aa5b3d8db2aec2fc",
-      "testcaseTitle": "Passed Example 8",
-      "relativePath": "testcases/78fd32/a2bfcb630ad36d8f8e49fb02aa5b3d8db2aec2fc.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/78fd32/a2bfcb630ad36d8f8e49fb02aa5b3d8db2aec2fc.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/78fd32/proposed/"
-    },
-    {
-      "ruleId": "78fd32",
-      "approved": true,
-      "ruleName": "Line height in style attributes is not !important",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.4.12": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "b3ba5eaa37846b4b01ca04ae6e5f2d54c4813c1d",
-      "testcaseTitle": "Passed Example 9",
-      "relativePath": "testcases/78fd32/b3ba5eaa37846b4b01ca04ae6e5f2d54c4813c1d.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/78fd32/b3ba5eaa37846b4b01ca04ae6e5f2d54c4813c1d.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/78fd32/proposed/"
-    },
-    {
-      "ruleId": "78fd32",
-      "approved": true,
-      "ruleName": "Line height in style attributes is not !important",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.4.12": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "0f8063a09807c4bf8d5f7c796cbf0f2aa20e7e57",
-      "testcaseTitle": "Passed Example 10",
-      "relativePath": "testcases/78fd32/0f8063a09807c4bf8d5f7c796cbf0f2aa20e7e57.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/78fd32/0f8063a09807c4bf8d5f7c796cbf0f2aa20e7e57.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/78fd32/proposed/"
-    },
-    {
-      "ruleId": "78fd32",
-      "approved": true,
-      "ruleName": "Line height in style attributes is not !important",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.4.12": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "failed",
-      "testcaseId": "c8c447e4e9065a1f8676c78dd937486e074026f7",
-      "testcaseTitle": "Failed Example 1",
-      "relativePath": "testcases/78fd32/c8c447e4e9065a1f8676c78dd937486e074026f7.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/78fd32/c8c447e4e9065a1f8676c78dd937486e074026f7.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/78fd32/proposed/"
-    },
-    {
-      "ruleId": "78fd32",
-      "approved": true,
-      "ruleName": "Line height in style attributes is not !important",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.4.12": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "failed",
-      "testcaseId": "67159173d21bc9cf00d1bb5a7ec817696ccee05c",
-      "testcaseTitle": "Failed Example 2",
-      "relativePath": "testcases/78fd32/67159173d21bc9cf00d1bb5a7ec817696ccee05c.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/78fd32/67159173d21bc9cf00d1bb5a7ec817696ccee05c.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/78fd32/proposed/"
-    },
-    {
-      "ruleId": "78fd32",
-      "approved": true,
-      "ruleName": "Line height in style attributes is not !important",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.4.12": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "failed",
-      "testcaseId": "53e5a389ebf46db82a931674636809b95d2de74c",
-      "testcaseTitle": "Failed Example 3",
-      "relativePath": "testcases/78fd32/53e5a389ebf46db82a931674636809b95d2de74c.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/78fd32/53e5a389ebf46db82a931674636809b95d2de74c.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/78fd32/proposed/"
-    },
-    {
-      "ruleId": "78fd32",
-      "approved": true,
-      "ruleName": "Line height in style attributes is not !important",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.4.12": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "failed",
-      "testcaseId": "38a347130bce99ee98d09fbefa18adb372f4563f",
-      "testcaseTitle": "Failed Example 4",
-      "relativePath": "testcases/78fd32/38a347130bce99ee98d09fbefa18adb372f4563f.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/78fd32/38a347130bce99ee98d09fbefa18adb372f4563f.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/78fd32/proposed/"
-    },
-    {
-      "ruleId": "78fd32",
-      "approved": true,
-      "ruleName": "Line height in style attributes is not !important",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.4.12": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "failed",
-      "testcaseId": "712289cbcfbee5cd51a332265f44369f568712d3",
-      "testcaseTitle": "Failed Example 5",
-      "relativePath": "testcases/78fd32/712289cbcfbee5cd51a332265f44369f568712d3.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/78fd32/712289cbcfbee5cd51a332265f44369f568712d3.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/78fd32/proposed/"
-    },
-    {
-      "ruleId": "78fd32",
-      "approved": true,
-      "ruleName": "Line height in style attributes is not !important",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.4.12": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "failed",
-      "testcaseId": "bed4bc29cbcd1f681c4e0f0d7ff7e05c579fefec",
-      "testcaseTitle": "Failed Example 6",
-      "relativePath": "testcases/78fd32/bed4bc29cbcd1f681c4e0f0d7ff7e05c579fefec.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/78fd32/bed4bc29cbcd1f681c4e0f0d7ff7e05c579fefec.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/78fd32/proposed/"
-    },
-    {
-      "ruleId": "78fd32",
-      "approved": true,
-      "ruleName": "Line height in style attributes is not !important",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.4.12": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "inapplicable",
-      "testcaseId": "e998ec72eef90b46574b39d2657ef278b61b51eb",
-      "testcaseTitle": "Inapplicable Example 1",
-      "relativePath": "testcases/78fd32/e998ec72eef90b46574b39d2657ef278b61b51eb.svg",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/78fd32/e998ec72eef90b46574b39d2657ef278b61b51eb.svg",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/78fd32/proposed/"
-    },
-    {
-      "ruleId": "78fd32",
-      "approved": true,
-      "ruleName": "Line height in style attributes is not !important",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.4.12": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "inapplicable",
-      "testcaseId": "bc3e59c1292a265135ed7043d2cdcaa62cdfac66",
-      "testcaseTitle": "Inapplicable Example 2",
-      "relativePath": "testcases/78fd32/bc3e59c1292a265135ed7043d2cdcaa62cdfac66.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/78fd32/bc3e59c1292a265135ed7043d2cdcaa62cdfac66.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/78fd32/proposed/"
-    },
-    {
-      "ruleId": "78fd32",
-      "approved": true,
-      "ruleName": "Line height in style attributes is not !important",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.4.12": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "inapplicable",
-      "testcaseId": "6e034188bb709c8e0011612448b6244427bd8d4f",
-      "testcaseTitle": "Inapplicable Example 3",
-      "relativePath": "testcases/78fd32/6e034188bb709c8e0011612448b6244427bd8d4f.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/78fd32/6e034188bb709c8e0011612448b6244427bd8d4f.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/78fd32/proposed/"
-    },
-    {
-      "ruleId": "78fd32",
-      "approved": true,
-      "ruleName": "Line height in style attributes is not !important",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.4.12": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "inapplicable",
-      "testcaseId": "81be0f6c00496f3c2d70071c8f73b292ba282bfc",
-      "testcaseTitle": "Inapplicable Example 4",
-      "relativePath": "testcases/78fd32/81be0f6c00496f3c2d70071c8f73b292ba282bfc.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/78fd32/81be0f6c00496f3c2d70071c8f73b292ba282bfc.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/78fd32/proposed/"
-    },
-    {
-      "ruleId": "78fd32",
-      "approved": true,
-      "ruleName": "Line height in style attributes is not !important",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.4.12": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "inapplicable",
-      "testcaseId": "7f23d5ee7e2a51c9d0922493c542953680972bb6",
-      "testcaseTitle": "Inapplicable Example 5",
-      "relativePath": "testcases/78fd32/7f23d5ee7e2a51c9d0922493c542953680972bb6.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/78fd32/7f23d5ee7e2a51c9d0922493c542953680972bb6.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/78fd32/proposed/"
     },
     {
       "ruleId": "bc659a",
@@ -13452,246 +12733,6 @@
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/6a7281/proposed/"
     },
     {
-      "ruleId": "e6952f",
-      "ruleName": "Attribute is not duplicated",
-      "ruleAccessibilityRequirements": {
-        "wcag20:4.1.1": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:H94": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "satisfied",
-          "inapplicable": "satisfied"
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "ebd0080bacb8debc7ad069072240657df38c3e2c",
-      "testcaseTitle": "Passed Example 1",
-      "relativePath": "testcases/e6952f/ebd0080bacb8debc7ad069072240657df38c3e2c.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/e6952f/ebd0080bacb8debc7ad069072240657df38c3e2c.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/e6952f/proposed/"
-    },
-    {
-      "ruleId": "e6952f",
-      "ruleName": "Attribute is not duplicated",
-      "ruleAccessibilityRequirements": {
-        "wcag20:4.1.1": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:H94": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "satisfied",
-          "inapplicable": "satisfied"
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "3f5db5b7f88b5c55969fabecd926bb8f85624ce2",
-      "testcaseTitle": "Passed Example 2",
-      "relativePath": "testcases/e6952f/3f5db5b7f88b5c55969fabecd926bb8f85624ce2.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/e6952f/3f5db5b7f88b5c55969fabecd926bb8f85624ce2.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/e6952f/proposed/"
-    },
-    {
-      "ruleId": "e6952f",
-      "ruleName": "Attribute is not duplicated",
-      "ruleAccessibilityRequirements": {
-        "wcag20:4.1.1": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:H94": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "satisfied",
-          "inapplicable": "satisfied"
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "978d5521aa80f7f43f24d509fca705e64b4e9bd2",
-      "testcaseTitle": "Passed Example 3",
-      "relativePath": "testcases/e6952f/978d5521aa80f7f43f24d509fca705e64b4e9bd2.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/e6952f/978d5521aa80f7f43f24d509fca705e64b4e9bd2.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/e6952f/proposed/"
-    },
-    {
-      "ruleId": "e6952f",
-      "ruleName": "Attribute is not duplicated",
-      "ruleAccessibilityRequirements": {
-        "wcag20:4.1.1": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:H94": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "satisfied",
-          "inapplicable": "satisfied"
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "38ff8b79c35b965c29c704745794f7ab72dab3e6",
-      "testcaseTitle": "Passed Example 4",
-      "relativePath": "testcases/e6952f/38ff8b79c35b965c29c704745794f7ab72dab3e6.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/e6952f/38ff8b79c35b965c29c704745794f7ab72dab3e6.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/e6952f/proposed/"
-    },
-    {
-      "ruleId": "e6952f",
-      "ruleName": "Attribute is not duplicated",
-      "ruleAccessibilityRequirements": {
-        "wcag20:4.1.1": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:H94": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "satisfied",
-          "inapplicable": "satisfied"
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "eb695b7a176b9d8dc9d8100bbea326dda3b8ee06",
-      "testcaseTitle": "Passed Example 5",
-      "relativePath": "testcases/e6952f/eb695b7a176b9d8dc9d8100bbea326dda3b8ee06.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/e6952f/eb695b7a176b9d8dc9d8100bbea326dda3b8ee06.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/e6952f/proposed/"
-    },
-    {
-      "ruleId": "e6952f",
-      "ruleName": "Attribute is not duplicated",
-      "ruleAccessibilityRequirements": {
-        "wcag20:4.1.1": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:H94": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "satisfied",
-          "inapplicable": "satisfied"
-        }
-      },
-      "expected": "failed",
-      "testcaseId": "4af6d805f5945f5e7888da84b8b576ce825f5e3b",
-      "testcaseTitle": "Failed Example 1",
-      "relativePath": "testcases/e6952f/4af6d805f5945f5e7888da84b8b576ce825f5e3b.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/e6952f/4af6d805f5945f5e7888da84b8b576ce825f5e3b.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/e6952f/proposed/"
-    },
-    {
-      "ruleId": "e6952f",
-      "ruleName": "Attribute is not duplicated",
-      "ruleAccessibilityRequirements": {
-        "wcag20:4.1.1": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:H94": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "satisfied",
-          "inapplicable": "satisfied"
-        }
-      },
-      "expected": "failed",
-      "testcaseId": "9cd3b83c1fdab7da7a471837d79b087948ead61e",
-      "testcaseTitle": "Failed Example 2",
-      "relativePath": "testcases/e6952f/9cd3b83c1fdab7da7a471837d79b087948ead61e.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/e6952f/9cd3b83c1fdab7da7a471837d79b087948ead61e.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/e6952f/proposed/"
-    },
-    {
-      "ruleId": "e6952f",
-      "ruleName": "Attribute is not duplicated",
-      "ruleAccessibilityRequirements": {
-        "wcag20:4.1.1": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:H94": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "satisfied",
-          "inapplicable": "satisfied"
-        }
-      },
-      "expected": "failed",
-      "testcaseId": "41db73e68271070cff56b2d1da42bb45e5cb4722",
-      "testcaseTitle": "Failed Example 3",
-      "relativePath": "testcases/e6952f/41db73e68271070cff56b2d1da42bb45e5cb4722.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/e6952f/41db73e68271070cff56b2d1da42bb45e5cb4722.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/e6952f/proposed/"
-    },
-    {
-      "ruleId": "e6952f",
-      "ruleName": "Attribute is not duplicated",
-      "ruleAccessibilityRequirements": {
-        "wcag20:4.1.1": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:H94": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "satisfied",
-          "inapplicable": "satisfied"
-        }
-      },
-      "expected": "inapplicable",
-      "testcaseId": "d6c265ec8adf5af533f4cfe4b3c09416293c7b7a",
-      "testcaseTitle": "Inapplicable Example 1",
-      "relativePath": "testcases/e6952f/d6c265ec8adf5af533f4cfe4b3c09416293c7b7a.xml",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/e6952f/d6c265ec8adf5af533f4cfe4b3c09416293c7b7a.xml",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/e6952f/proposed/"
-    },
-    {
-      "ruleId": "e6952f",
-      "ruleName": "Attribute is not duplicated",
-      "ruleAccessibilityRequirements": {
-        "wcag20:4.1.1": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:H94": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "satisfied",
-          "inapplicable": "satisfied"
-        }
-      },
-      "expected": "inapplicable",
-      "testcaseId": "af5a9930957786829ada7dfc1be62df3e41b28e5",
-      "testcaseTitle": "Inapplicable Example 2",
-      "relativePath": "testcases/e6952f/af5a9930957786829ada7dfc1be62df3e41b28e5.js",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/e6952f/af5a9930957786829ada7dfc1be62df3e41b28e5.js",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/e6952f/proposed/"
-    },
-    {
       "ruleId": "afb423",
       "ruleName": "Audio element content is media alternative for text",
       "ruleAccessibilityRequirements": null,
@@ -18877,14 +17918,9 @@
       "ruleId": "ffd0e9",
       "ruleName": "Heading has non-empty accessible name",
       "ruleAccessibilityRequirements": {
-        "wcag20:1.3.1": {
+        "aria12:namecalculation": {
+          "title": "ARIA 1.2,5.2.8 Accessible Name Calculation",
           "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:H42": {
-          "forConformance": false,
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
@@ -18901,14 +17937,9 @@
       "ruleId": "ffd0e9",
       "ruleName": "Heading has non-empty accessible name",
       "ruleAccessibilityRequirements": {
-        "wcag20:1.3.1": {
+        "aria12:namecalculation": {
+          "title": "ARIA 1.2,5.2.8 Accessible Name Calculation",
           "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:H42": {
-          "forConformance": false,
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
@@ -18925,14 +17956,9 @@
       "ruleId": "ffd0e9",
       "ruleName": "Heading has non-empty accessible name",
       "ruleAccessibilityRequirements": {
-        "wcag20:1.3.1": {
+        "aria12:namecalculation": {
+          "title": "ARIA 1.2,5.2.8 Accessible Name Calculation",
           "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:H42": {
-          "forConformance": false,
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
@@ -18949,14 +17975,9 @@
       "ruleId": "ffd0e9",
       "ruleName": "Heading has non-empty accessible name",
       "ruleAccessibilityRequirements": {
-        "wcag20:1.3.1": {
+        "aria12:namecalculation": {
+          "title": "ARIA 1.2,5.2.8 Accessible Name Calculation",
           "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:H42": {
-          "forConformance": false,
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
@@ -18973,14 +17994,9 @@
       "ruleId": "ffd0e9",
       "ruleName": "Heading has non-empty accessible name",
       "ruleAccessibilityRequirements": {
-        "wcag20:1.3.1": {
+        "aria12:namecalculation": {
+          "title": "ARIA 1.2,5.2.8 Accessible Name Calculation",
           "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:H42": {
-          "forConformance": false,
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
@@ -18997,14 +18013,9 @@
       "ruleId": "ffd0e9",
       "ruleName": "Heading has non-empty accessible name",
       "ruleAccessibilityRequirements": {
-        "wcag20:1.3.1": {
+        "aria12:namecalculation": {
+          "title": "ARIA 1.2,5.2.8 Accessible Name Calculation",
           "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:H42": {
-          "forConformance": false,
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
@@ -19021,14 +18032,9 @@
       "ruleId": "ffd0e9",
       "ruleName": "Heading has non-empty accessible name",
       "ruleAccessibilityRequirements": {
-        "wcag20:1.3.1": {
+        "aria12:namecalculation": {
+          "title": "ARIA 1.2,5.2.8 Accessible Name Calculation",
           "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:H42": {
-          "forConformance": false,
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
@@ -19045,14 +18051,9 @@
       "ruleId": "ffd0e9",
       "ruleName": "Heading has non-empty accessible name",
       "ruleAccessibilityRequirements": {
-        "wcag20:1.3.1": {
+        "aria12:namecalculation": {
+          "title": "ARIA 1.2,5.2.8 Accessible Name Calculation",
           "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:H42": {
-          "forConformance": false,
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
@@ -19069,14 +18070,9 @@
       "ruleId": "ffd0e9",
       "ruleName": "Heading has non-empty accessible name",
       "ruleAccessibilityRequirements": {
-        "wcag20:1.3.1": {
+        "aria12:namecalculation": {
+          "title": "ARIA 1.2,5.2.8 Accessible Name Calculation",
           "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:H42": {
-          "forConformance": false,
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
@@ -19093,14 +18089,9 @@
       "ruleId": "ffd0e9",
       "ruleName": "Heading has non-empty accessible name",
       "ruleAccessibilityRequirements": {
-        "wcag20:1.3.1": {
+        "aria12:namecalculation": {
+          "title": "ARIA 1.2,5.2.8 Accessible Name Calculation",
           "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:H42": {
-          "forConformance": false,
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
@@ -19117,14 +18108,9 @@
       "ruleId": "ffd0e9",
       "ruleName": "Heading has non-empty accessible name",
       "ruleAccessibilityRequirements": {
-        "wcag20:1.3.1": {
+        "aria12:namecalculation": {
+          "title": "ARIA 1.2,5.2.8 Accessible Name Calculation",
           "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:H42": {
-          "forConformance": false,
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
@@ -19141,14 +18127,9 @@
       "ruleId": "ffd0e9",
       "ruleName": "Heading has non-empty accessible name",
       "ruleAccessibilityRequirements": {
-        "wcag20:1.3.1": {
+        "aria12:namecalculation": {
+          "title": "ARIA 1.2,5.2.8 Accessible Name Calculation",
           "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:H42": {
-          "forConformance": false,
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
@@ -19165,14 +18146,9 @@
       "ruleId": "ffd0e9",
       "ruleName": "Heading has non-empty accessible name",
       "ruleAccessibilityRequirements": {
-        "wcag20:1.3.1": {
+        "aria12:namecalculation": {
+          "title": "ARIA 1.2,5.2.8 Accessible Name Calculation",
           "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:H42": {
-          "forConformance": false,
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
@@ -19189,14 +18165,9 @@
       "ruleId": "ffd0e9",
       "ruleName": "Heading has non-empty accessible name",
       "ruleAccessibilityRequirements": {
-        "wcag20:1.3.1": {
+        "aria12:namecalculation": {
+          "title": "ARIA 1.2,5.2.8 Accessible Name Calculation",
           "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:H42": {
-          "forConformance": false,
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
@@ -19213,14 +18184,9 @@
       "ruleId": "ffd0e9",
       "ruleName": "Heading has non-empty accessible name",
       "ruleAccessibilityRequirements": {
-        "wcag20:1.3.1": {
+        "aria12:namecalculation": {
+          "title": "ARIA 1.2,5.2.8 Accessible Name Calculation",
           "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:H42": {
-          "forConformance": false,
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
@@ -19592,246 +18558,6 @@
       "relativePath": "testcases/ucwvc8/b64d767d873269ff00966630e34ab198fc24368f.html",
       "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ucwvc8/b64d767d873269ff00966630e34ab198fc24368f.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/ucwvc8/proposed/"
-    },
-    {
-      "ruleId": "3ea0c8",
-      "ruleName": "Id attribute value is unique",
-      "ruleAccessibilityRequirements": {
-        "wcag20:4.1.1": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:H93": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "satisfied",
-          "inapplicable": "satisfied"
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "4ef5ade1eef2acf1f18958afa7e30499c4d6a21e",
-      "testcaseTitle": "Passed Example 1",
-      "relativePath": "testcases/3ea0c8/4ef5ade1eef2acf1f18958afa7e30499c4d6a21e.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/3ea0c8/4ef5ade1eef2acf1f18958afa7e30499c4d6a21e.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/3ea0c8/proposed/"
-    },
-    {
-      "ruleId": "3ea0c8",
-      "ruleName": "Id attribute value is unique",
-      "ruleAccessibilityRequirements": {
-        "wcag20:4.1.1": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:H93": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "satisfied",
-          "inapplicable": "satisfied"
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "0dd7b6f5b1643b9445ac9d6cfe15a8a288c642d7",
-      "testcaseTitle": "Passed Example 2",
-      "relativePath": "testcases/3ea0c8/0dd7b6f5b1643b9445ac9d6cfe15a8a288c642d7.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/3ea0c8/0dd7b6f5b1643b9445ac9d6cfe15a8a288c642d7.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/3ea0c8/proposed/"
-    },
-    {
-      "ruleId": "3ea0c8",
-      "ruleName": "Id attribute value is unique",
-      "ruleAccessibilityRequirements": {
-        "wcag20:4.1.1": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:H93": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "satisfied",
-          "inapplicable": "satisfied"
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "506213ce24435d4548e742b4b37c3e133675d2fb",
-      "testcaseTitle": "Passed Example 3",
-      "relativePath": "testcases/3ea0c8/506213ce24435d4548e742b4b37c3e133675d2fb.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/3ea0c8/506213ce24435d4548e742b4b37c3e133675d2fb.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/3ea0c8/proposed/"
-    },
-    {
-      "ruleId": "3ea0c8",
-      "ruleName": "Id attribute value is unique",
-      "ruleAccessibilityRequirements": {
-        "wcag20:4.1.1": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:H93": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "satisfied",
-          "inapplicable": "satisfied"
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "4ff699b4bf035b12c5b89ce9369027d9b48bf5b2",
-      "testcaseTitle": "Passed Example 4",
-      "relativePath": "testcases/3ea0c8/4ff699b4bf035b12c5b89ce9369027d9b48bf5b2.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/3ea0c8/4ff699b4bf035b12c5b89ce9369027d9b48bf5b2.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/3ea0c8/proposed/"
-    },
-    {
-      "ruleId": "3ea0c8",
-      "ruleName": "Id attribute value is unique",
-      "ruleAccessibilityRequirements": {
-        "wcag20:4.1.1": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:H93": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "satisfied",
-          "inapplicable": "satisfied"
-        }
-      },
-      "expected": "failed",
-      "testcaseId": "fd85a9469f647cbe3587d80e41efb9cdf833bfb9",
-      "testcaseTitle": "Failed Example 1",
-      "relativePath": "testcases/3ea0c8/fd85a9469f647cbe3587d80e41efb9cdf833bfb9.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/3ea0c8/fd85a9469f647cbe3587d80e41efb9cdf833bfb9.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/3ea0c8/proposed/"
-    },
-    {
-      "ruleId": "3ea0c8",
-      "ruleName": "Id attribute value is unique",
-      "ruleAccessibilityRequirements": {
-        "wcag20:4.1.1": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:H93": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "satisfied",
-          "inapplicable": "satisfied"
-        }
-      },
-      "expected": "failed",
-      "testcaseId": "13fa2fe0f46cfd134956865e23e5120c30977666",
-      "testcaseTitle": "Failed Example 2",
-      "relativePath": "testcases/3ea0c8/13fa2fe0f46cfd134956865e23e5120c30977666.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/3ea0c8/13fa2fe0f46cfd134956865e23e5120c30977666.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/3ea0c8/proposed/"
-    },
-    {
-      "ruleId": "3ea0c8",
-      "ruleName": "Id attribute value is unique",
-      "ruleAccessibilityRequirements": {
-        "wcag20:4.1.1": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:H93": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "satisfied",
-          "inapplicable": "satisfied"
-        }
-      },
-      "expected": "failed",
-      "testcaseId": "b4aa56c42d630ec9d31acab94afc3c7fa88b8c1a",
-      "testcaseTitle": "Failed Example 3",
-      "relativePath": "testcases/3ea0c8/b4aa56c42d630ec9d31acab94afc3c7fa88b8c1a.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/3ea0c8/b4aa56c42d630ec9d31acab94afc3c7fa88b8c1a.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/3ea0c8/proposed/"
-    },
-    {
-      "ruleId": "3ea0c8",
-      "ruleName": "Id attribute value is unique",
-      "ruleAccessibilityRequirements": {
-        "wcag20:4.1.1": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:H93": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "satisfied",
-          "inapplicable": "satisfied"
-        }
-      },
-      "expected": "inapplicable",
-      "testcaseId": "1999e27d1ba312c320a1f9b457a34440edf4d190",
-      "testcaseTitle": "Inapplicable Example 1",
-      "relativePath": "testcases/3ea0c8/1999e27d1ba312c320a1f9b457a34440edf4d190.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/3ea0c8/1999e27d1ba312c320a1f9b457a34440edf4d190.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/3ea0c8/proposed/"
-    },
-    {
-      "ruleId": "3ea0c8",
-      "ruleName": "Id attribute value is unique",
-      "ruleAccessibilityRequirements": {
-        "wcag20:4.1.1": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:H93": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "satisfied",
-          "inapplicable": "satisfied"
-        }
-      },
-      "expected": "inapplicable",
-      "testcaseId": "bd30d0514cc294ca6604e7f0ef963ef7df386d64",
-      "testcaseTitle": "Inapplicable Example 2",
-      "relativePath": "testcases/3ea0c8/bd30d0514cc294ca6604e7f0ef963ef7df386d64.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/3ea0c8/bd30d0514cc294ca6604e7f0ef963ef7df386d64.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/3ea0c8/proposed/"
-    },
-    {
-      "ruleId": "3ea0c8",
-      "ruleName": "Id attribute value is unique",
-      "ruleAccessibilityRequirements": {
-        "wcag20:4.1.1": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:H93": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "satisfied",
-          "inapplicable": "satisfied"
-        }
-      },
-      "expected": "inapplicable",
-      "testcaseId": "2b2101d5ebab1b49c1b0293df1eb625bdbd6f934",
-      "testcaseTitle": "Inapplicable Example 3",
-      "relativePath": "testcases/3ea0c8/2b2101d5ebab1b49c1b0293df1eb625bdbd6f934.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/3ea0c8/2b2101d5ebab1b49c1b0293df1eb625bdbd6f934.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/3ea0c8/proposed/"
     },
     {
       "ruleId": "4b1c6c",
@@ -20444,6 +19170,54 @@
       "relativePath": "testcases/cae760/058668cee446d08989bf24d5ce3413dc2cda9975.html",
       "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cae760/058668cee446d08989bf24d5ce3413dc2cda9975.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/cae760/proposed/"
+    },
+    {
+      "ruleId": "akn7bn",
+      "ruleName": "Iframe with interactive elements is not excluded from tab-order",
+      "ruleAccessibilityRequirements": {
+        "wcag20:2.1.1": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:G202": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "inapplicable",
+      "testcaseId": "17a371c470316dc29e424101065ebfe9f7b2e990",
+      "testcaseTitle": "Inapplicable Example 5",
+      "relativePath": "testcases/akn7bn/17a371c470316dc29e424101065ebfe9f7b2e990.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/akn7bn/17a371c470316dc29e424101065ebfe9f7b2e990.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/akn7bn/proposed/"
+    },
+    {
+      "ruleId": "akn7bn",
+      "ruleName": "Iframe with interactive elements is not excluded from tab-order",
+      "ruleAccessibilityRequirements": {
+        "wcag20:2.1.1": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:G202": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "inapplicable",
+      "testcaseId": "c88fcaf4d90e2156de75a1cdad8734a3d75c49e4",
+      "testcaseTitle": "Inapplicable Example 6",
+      "relativePath": "testcases/akn7bn/c88fcaf4d90e2156de75a1cdad8734a3d75c49e4.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/akn7bn/c88fcaf4d90e2156de75a1cdad8734a3d75c49e4.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/akn7bn/proposed/"
     },
     {
       "ruleId": "0va7u6",
@@ -21164,6 +19938,168 @@
       "relativePath": "testcases/e88epe/8ff1c1f8ce6c58b66365fd70f6828a89527874e3.html",
       "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/e88epe/8ff1c1f8ce6c58b66365fd70f6828a89527874e3.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/e88epe/proposed/"
+    },
+    {
+      "ruleId": "24afc2",
+      "ruleName": "Important letter spacing in style attributes is wide enough",
+      "ruleAccessibilityRequirements": {
+        "wcag21:1.4.12": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "cabfcae45afac141b38fd9cac2e07a64fb6b9896",
+      "testcaseTitle": "Passed Example 5",
+      "relativePath": "testcases/24afc2/cabfcae45afac141b38fd9cac2e07a64fb6b9896.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/24afc2/cabfcae45afac141b38fd9cac2e07a64fb6b9896.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/24afc2/proposed/"
+    },
+    {
+      "ruleId": "24afc2",
+      "ruleName": "Important letter spacing in style attributes is wide enough",
+      "ruleAccessibilityRequirements": {
+        "wcag21:1.4.12": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "d6d5bf7c081939e64d10022dd29f5e31d2153d50",
+      "testcaseTitle": "Passed Example 6",
+      "relativePath": "testcases/24afc2/d6d5bf7c081939e64d10022dd29f5e31d2153d50.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/24afc2/d6d5bf7c081939e64d10022dd29f5e31d2153d50.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/24afc2/proposed/"
+    },
+    {
+      "ruleId": "24afc2",
+      "ruleName": "Important letter spacing in style attributes is wide enough",
+      "ruleAccessibilityRequirements": {
+        "wcag21:1.4.12": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "inapplicable",
+      "testcaseId": "9af5662e9957191c22c558a1a8511bae709a2b36",
+      "testcaseTitle": "Inapplicable Example 2",
+      "relativePath": "testcases/24afc2/9af5662e9957191c22c558a1a8511bae709a2b36.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/24afc2/9af5662e9957191c22c558a1a8511bae709a2b36.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/24afc2/proposed/"
+    },
+    {
+      "ruleId": "78fd32",
+      "ruleName": "Important line height in style attributes is wide enough",
+      "ruleAccessibilityRequirements": {
+        "wcag21:1.4.12": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "78034759a1086c7ffa8037b6e6e2327ece4a19d7",
+      "testcaseTitle": "Passed Example 7",
+      "relativePath": "testcases/78fd32/78034759a1086c7ffa8037b6e6e2327ece4a19d7.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/78fd32/78034759a1086c7ffa8037b6e6e2327ece4a19d7.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/78fd32/proposed/"
+    },
+    {
+      "ruleId": "78fd32",
+      "ruleName": "Important line height in style attributes is wide enough",
+      "ruleAccessibilityRequirements": {
+        "wcag21:1.4.12": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "317de3cc2f864ebdae6e325c9fbc0dbf4947c5c9",
+      "testcaseTitle": "Passed Example 8",
+      "relativePath": "testcases/78fd32/317de3cc2f864ebdae6e325c9fbc0dbf4947c5c9.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/78fd32/317de3cc2f864ebdae6e325c9fbc0dbf4947c5c9.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/78fd32/proposed/"
+    },
+    {
+      "ruleId": "78fd32",
+      "ruleName": "Important line height in style attributes is wide enough",
+      "ruleAccessibilityRequirements": {
+        "wcag21:1.4.12": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "inapplicable",
+      "testcaseId": "0128de1beb7862298366680f6920bd3b3874d752",
+      "testcaseTitle": "Inapplicable Example 2",
+      "relativePath": "testcases/78fd32/0128de1beb7862298366680f6920bd3b3874d752.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/78fd32/0128de1beb7862298366680f6920bd3b3874d752.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/78fd32/proposed/"
+    },
+    {
+      "ruleId": "9e45ec",
+      "ruleName": "Important word spacing in style attributes is wide enough",
+      "ruleAccessibilityRequirements": {
+        "wcag21:1.4.12": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "15905a239d6755102be6a60aa152ad963d5b1dbb",
+      "testcaseTitle": "Passed Example 5",
+      "relativePath": "testcases/9e45ec/15905a239d6755102be6a60aa152ad963d5b1dbb.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/15905a239d6755102be6a60aa152ad963d5b1dbb.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/9e45ec/proposed/"
+    },
+    {
+      "ruleId": "9e45ec",
+      "ruleName": "Important word spacing in style attributes is wide enough",
+      "ruleAccessibilityRequirements": {
+        "wcag21:1.4.12": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "8d2baed183149375922c23a9a5f42b52b627d713",
+      "testcaseTitle": "Passed Example 6",
+      "relativePath": "testcases/9e45ec/8d2baed183149375922c23a9a5f42b52b627d713.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/8d2baed183149375922c23a9a5f42b52b627d713.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/9e45ec/proposed/"
+    },
+    {
+      "ruleId": "9e45ec",
+      "ruleName": "Important word spacing in style attributes is wide enough",
+      "ruleAccessibilityRequirements": {
+        "wcag21:1.4.12": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "inapplicable",
+      "testcaseId": "fdd3c30f28464b32eb8a1397f70a41dfd3b2cb1c",
+      "testcaseTitle": "Inapplicable Example 2",
+      "relativePath": "testcases/9e45ec/fdd3c30f28464b32eb8a1397f70a41dfd3b2cb1c.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/fdd3c30f28464b32eb8a1397f70a41dfd3b2cb1c.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/9e45ec/proposed/"
     },
     {
       "ruleId": "36b590",
@@ -23204,6 +22140,111 @@
       "relativePath": "testcases/bisz58/0dcdacefc963adfbb2d3493e5468f8f12f0ac6de.html",
       "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/0dcdacefc963adfbb2d3493e5468f8f12f0ac6de.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/bisz58/proposed/"
+    },
+    {
+      "ruleId": "b4f0c3",
+      "ruleName": "Meta viewport allows for zoom",
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.4.4": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag21:1.4.10": {
+          "secondary": "This success criterion is **related** to this rule. This is because a page that cannot be zoomed up to 200% often does not reflow sufficiently either. Most failed examples satisfy this success criterion."
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "08e8943b849762eb7f18654c7f9e479ad33b2840",
+      "testcaseTitle": "Passed Example 2",
+      "relativePath": "testcases/b4f0c3/08e8943b849762eb7f18654c7f9e479ad33b2840.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/08e8943b849762eb7f18654c7f9e479ad33b2840.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/b4f0c3/proposed/"
+    },
+    {
+      "ruleId": "b4f0c3",
+      "ruleName": "Meta viewport allows for zoom",
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.4.4": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag21:1.4.10": {
+          "secondary": "This success criterion is **related** to this rule. This is because a page that cannot be zoomed up to 200% often does not reflow sufficiently either. Most failed examples satisfy this success criterion."
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "30b40365b4e59aa103ff04c369f31658fa6e2790",
+      "testcaseTitle": "Passed Example 5",
+      "relativePath": "testcases/b4f0c3/30b40365b4e59aa103ff04c369f31658fa6e2790.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/30b40365b4e59aa103ff04c369f31658fa6e2790.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/b4f0c3/proposed/"
+    },
+    {
+      "ruleId": "b4f0c3",
+      "ruleName": "Meta viewport allows for zoom",
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.4.4": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag21:1.4.10": {
+          "secondary": "This success criterion is **related** to this rule. This is because a page that cannot be zoomed up to 200% often does not reflow sufficiently either. Most failed examples satisfy this success criterion."
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "8735b02e59dd802a5a9e9a7ea1934a106d2963eb",
+      "testcaseTitle": "Failed Example 2",
+      "relativePath": "testcases/b4f0c3/8735b02e59dd802a5a9e9a7ea1934a106d2963eb.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/8735b02e59dd802a5a9e9a7ea1934a106d2963eb.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/b4f0c3/proposed/"
+    },
+    {
+      "ruleId": "b4f0c3",
+      "ruleName": "Meta viewport allows for zoom",
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.4.4": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag21:1.4.10": {
+          "secondary": "This success criterion is **related** to this rule. This is because a page that cannot be zoomed up to 200% often does not reflow sufficiently either. Most failed examples satisfy this success criterion."
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "c94a59f8c3b17d722781af36da3556ff4b418776",
+      "testcaseTitle": "Failed Example 3",
+      "relativePath": "testcases/b4f0c3/c94a59f8c3b17d722781af36da3556ff4b418776.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/c94a59f8c3b17d722781af36da3556ff4b418776.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/b4f0c3/proposed/"
+    },
+    {
+      "ruleId": "b4f0c3",
+      "ruleName": "Meta viewport allows for zoom",
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.4.4": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag21:1.4.10": {
+          "secondary": "This success criterion is **related** to this rule. This is because a page that cannot be zoomed up to 200% often does not reflow sufficiently either. Most failed examples satisfy this success criterion."
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "9f288c284df9ade53aa33e50ec50c879d5aba4ef",
+      "testcaseTitle": "Failed Example 7",
+      "relativePath": "testcases/b4f0c3/9f288c284df9ade53aa33e50ec50c879d5aba4ef.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/9f288c284df9ade53aa33e50ec50c879d5aba4ef.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/b4f0c3/proposed/"
     },
     {
       "ruleId": "9bd38c",
