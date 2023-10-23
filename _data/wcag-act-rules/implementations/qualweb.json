@@ -2,18 +2,18 @@
   "vendor": "LASIGE, Faculdade de Ciências da Universidade de Lisboa",
   "name": "QualWeb",
   "version": "3.0.0",
-  "lastModified": "16 October 2023",
+  "lastModified": "23 October 2023",
   "approvedRules": {
-    "complete": 20,
-    "partial": 5,
+    "complete": 9,
+    "partial": 16,
     "inconsistent": 0,
     "untested": 2
   },
   "proposedRules": {
-    "complete": 7,
-    "partial": 18,
-    "inconsistent": 15,
-    "untested": 19
+    "complete": 4,
+    "partial": 19,
+    "inconsistent": 19,
+    "untested": 17
   },
   "actRuleMapping": [
     {
@@ -23,7 +23,7 @@
       "procedureNames": [
         "autocomplete attribute has valid value"
       ],
-      "consistency": "complete",
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -34,8 +34,8 @@
         ]
       },
       "coverage": {
-        "covered": 28,
-        "untested": 0,
+        "covered": 25,
+        "untested": 3,
         "cantTell": 0,
         "testCaseTotal": 28
       },
@@ -260,7 +260,7 @@
             {
               "procedureName": "autocomplete attribute has valid value",
               "outcomes": [
-                "inapplicable"
+                "untested"
               ]
             }
           ]
@@ -410,7 +410,7 @@
             {
               "procedureName": "autocomplete attribute has valid value",
               "outcomes": [
-                "failed"
+                "untested"
               ]
             }
           ]
@@ -425,7 +425,7 @@
             {
               "procedureName": "autocomplete attribute has valid value",
               "outcomes": [
-                "failed"
+                "untested"
               ]
             }
           ]
@@ -469,7 +469,7 @@
       "procedureNames": [
         "Button has accessible name"
       ],
-      "consistency": "complete",
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -480,8 +480,8 @@
         ]
       },
       "coverage": {
-        "covered": 17,
-        "untested": 0,
+        "covered": 16,
+        "untested": 1,
         "cantTell": 0,
         "testCaseTotal": 17
       },
@@ -646,7 +646,7 @@
             {
               "procedureName": "Button has accessible name",
               "outcomes": [
-                "failed"
+                "untested"
               ]
             }
           ]
@@ -750,7 +750,7 @@
       "procedureNames": [
         "Element within body has valid lang attribute"
       ],
-      "consistency": "complete",
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -761,8 +761,8 @@
         ]
       },
       "coverage": {
-        "covered": 31,
-        "untested": 0,
+        "covered": 24,
+        "untested": 7,
         "cantTell": 0,
         "testCaseTotal": 31
       },
@@ -852,7 +852,7 @@
             {
               "procedureName": "Element within body has valid lang attribute",
               "outcomes": [
-                "failed"
+                "untested"
               ]
             }
           ]
@@ -867,7 +867,7 @@
             {
               "procedureName": "Element within body has valid lang attribute",
               "outcomes": [
-                "failed"
+                "untested"
               ]
             }
           ]
@@ -927,7 +927,7 @@
             {
               "procedureName": "Element within body has valid lang attribute",
               "outcomes": [
-                "failed"
+                "untested"
               ]
             }
           ]
@@ -1047,7 +1047,7 @@
             {
               "procedureName": "Element within body has valid lang attribute",
               "outcomes": [
-                "passed"
+                "untested"
               ]
             }
           ]
@@ -1062,7 +1062,7 @@
             {
               "procedureName": "Element within body has valid lang attribute",
               "outcomes": [
-                "passed"
+                "untested"
               ]
             }
           ]
@@ -1092,7 +1092,7 @@
             {
               "procedureName": "Element within body has valid lang attribute",
               "outcomes": [
-                "passed"
+                "untested"
               ]
             }
           ]
@@ -1137,7 +1137,7 @@
             {
               "procedureName": "Element within body has valid lang attribute",
               "outcomes": [
-                "failed"
+                "untested"
               ]
             }
           ]
@@ -1241,15 +1241,15 @@
       "procedureNames": [
         "Element marked as decorative is not exposed"
       ],
-      "consistency": "complete",
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
         "reported": []
       },
       "coverage": {
-        "covered": 10,
-        "untested": 0,
+        "covered": 9,
+        "untested": 1,
         "cantTell": 0,
         "testCaseTotal": 10
       },
@@ -1384,7 +1384,7 @@
             {
               "procedureName": "Element marked as decorative is not exposed",
               "outcomes": [
-                "failed"
+                "untested"
               ]
             }
           ]
@@ -1413,7 +1413,7 @@
       "procedureNames": [
         "Form control has accessible name"
       ],
-      "consistency": "complete",
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -1424,8 +1424,8 @@
         ]
       },
       "coverage": {
-        "covered": 19,
-        "untested": 0,
+        "covered": 18,
+        "untested": 1,
         "cantTell": 0,
         "testCaseTotal": 19
       },
@@ -1650,7 +1650,7 @@
             {
               "procedureName": "Form control has accessible name",
               "outcomes": [
-                "inapplicable"
+                "untested"
               ]
             }
           ]
@@ -1855,7 +1855,7 @@
       "procedureNames": [
         "HTML Page has a title"
       ],
-      "consistency": "complete",
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -1866,8 +1866,8 @@
         ]
       },
       "coverage": {
-        "covered": 11,
-        "untested": 0,
+        "covered": 9,
+        "untested": 2,
         "cantTell": 0,
         "testCaseTotal": 11
       },
@@ -1927,7 +1927,7 @@
             {
               "procedureName": "HTML Page has a title",
               "outcomes": [
-                "passed"
+                "untested"
               ]
             }
           ]
@@ -1972,7 +1972,7 @@
             {
               "procedureName": "HTML Page has a title",
               "outcomes": [
-                "failed"
+                "untested"
               ]
             }
           ]
@@ -2046,7 +2046,7 @@
       "procedureNames": [
         "Image button has accessible name"
       ],
-      "consistency": "complete",
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -2059,8 +2059,8 @@
         ]
       },
       "coverage": {
-        "covered": 12,
-        "untested": 0,
+        "covered": 10,
+        "untested": 2,
         "cantTell": 0,
         "testCaseTotal": 12
       },
@@ -2105,7 +2105,7 @@
             {
               "procedureName": "Image button has accessible name",
               "outcomes": [
-                "passed"
+                "untested"
               ]
             }
           ]
@@ -2120,7 +2120,7 @@
             {
               "procedureName": "Image button has accessible name",
               "outcomes": [
-                "passed"
+                "untested"
               ]
             }
           ]
@@ -2254,7 +2254,7 @@
       "procedureNames": [
         "Image has accessible name"
       ],
-      "consistency": "complete",
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -2265,8 +2265,8 @@
         ]
       },
       "coverage": {
-        "covered": 18,
-        "untested": 0,
+        "covered": 16,
+        "untested": 2,
         "cantTell": 0,
         "testCaseTotal": 18
       },
@@ -2356,7 +2356,7 @@
             {
               "procedureName": "Image has accessible name",
               "outcomes": [
-                "passed"
+                "untested"
               ]
             }
           ]
@@ -2506,7 +2506,7 @@
             {
               "procedureName": "Image has accessible name",
               "outcomes": [
-                "inapplicable"
+                "untested"
               ]
             }
           ]
@@ -2561,8 +2561,8 @@
         ]
       },
       "coverage": {
-        "covered": 16,
-        "untested": 3,
+        "covered": 17,
+        "untested": 1,
         "cantTell": 0,
         "testCaseTotal": 19
       },
@@ -2817,7 +2817,7 @@
             {
               "procedureName": "Letter spacing in style attributes is not !important",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -2847,7 +2847,7 @@
             {
               "procedureName": "Letter spacing in style attributes is not !important",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -3913,7 +3913,7 @@
       "procedureNames": [
         "Element with `aria-hidden` has no focusable content"
       ],
-      "consistency": "complete",
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -3924,8 +3924,8 @@
         ]
       },
       "coverage": {
-        "covered": 15,
-        "untested": 0,
+        "covered": 13,
+        "untested": 2,
         "cantTell": 0,
         "testCaseTotal": 15
       },
@@ -4015,7 +4015,7 @@
             {
               "procedureName": "Element with `aria-hidden` has no focusable content",
               "outcomes": [
-                "passed"
+                "untested"
               ]
             }
           ]
@@ -4105,7 +4105,7 @@
             {
               "procedureName": "Element with `aria-hidden` has no focusable content",
               "outcomes": [
-                "failed"
+                "untested"
               ]
             }
           ]
@@ -4417,7 +4417,7 @@
       "procedureNames": [
         "meta viewport does not prevent zoom"
       ],
-      "consistency": "complete",
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -4428,8 +4428,8 @@
         ]
       },
       "coverage": {
-        "covered": 11,
-        "untested": 5,
+        "covered": 12,
+        "untested": 1,
         "cantTell": 0,
         "testCaseTotal": 16
       },
@@ -4594,7 +4594,7 @@
             {
               "procedureName": "meta viewport does not prevent zoom",
               "outcomes": [
-                "passed"
+                "untested"
               ]
             }
           ]
@@ -4609,7 +4609,7 @@
             {
               "procedureName": "meta viewport does not prevent zoom",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -4624,7 +4624,7 @@
             {
               "procedureName": "meta viewport does not prevent zoom",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -4639,7 +4639,7 @@
             {
               "procedureName": "meta viewport does not prevent zoom",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -4654,7 +4654,7 @@
             {
               "procedureName": "meta viewport does not prevent zoom",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -4669,7 +4669,7 @@
             {
               "procedureName": "meta viewport does not prevent zoom",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -5131,7 +5131,7 @@
       },
       "coverage": {
         "covered": 7,
-        "untested": 2,
+        "untested": 1,
         "cantTell": 0,
         "testCaseTotal": 9
       },
@@ -5251,7 +5251,7 @@
             {
               "procedureName": "iframe with negative tabindex has no interactive elements",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -5289,7 +5289,7 @@
       "procedureNames": [
         "Menuitem has non-empty accessible name"
       ],
-      "consistency": "complete",
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -5300,8 +5300,8 @@
         ]
       },
       "coverage": {
-        "covered": 8,
-        "untested": 0,
+        "covered": 7,
+        "untested": 1,
         "cantTell": 0,
         "testCaseTotal": 8
       },
@@ -5316,7 +5316,7 @@
             {
               "procedureName": "Menuitem has non-empty accessible name",
               "outcomes": [
-                "passed"
+                "untested"
               ]
             }
           ]
@@ -5756,9 +5756,9 @@
         ]
       },
       "coverage": {
-        "covered": 27,
-        "untested": 0,
-        "cantTell": 3,
+        "covered": 24,
+        "untested": 2,
+        "cantTell": 6,
         "testCaseTotal": 32
       },
       "testCaseResults": [
@@ -5787,7 +5787,7 @@
             {
               "procedureName": "Text has minimum contrast",
               "outcomes": [
-                "passed"
+                "cantTell"
               ]
             }
           ]
@@ -5907,7 +5907,7 @@
             {
               "procedureName": "Text has minimum contrast",
               "outcomes": [
-                "inapplicable"
+                "passed"
               ]
             }
           ]
@@ -5922,7 +5922,7 @@
             {
               "procedureName": "Text has minimum contrast",
               "outcomes": [
-                "inapplicable"
+                "passed"
               ]
             }
           ]
@@ -5952,7 +5952,7 @@
             {
               "procedureName": "Text has minimum contrast",
               "outcomes": [
-                "failed"
+                "cantTell"
               ]
             }
           ]
@@ -6027,7 +6027,7 @@
             {
               "procedureName": "Text has minimum contrast",
               "outcomes": [
-                "failed"
+                "cantTell"
               ]
             }
           ]
@@ -6057,7 +6057,7 @@
             {
               "procedureName": "Text has minimum contrast",
               "outcomes": [
-                "inapplicable"
+                "untested"
               ]
             }
           ]
@@ -6072,7 +6072,7 @@
             {
               "procedureName": "Text has minimum contrast",
               "outcomes": [
-                "inapplicable"
+                "failed"
               ]
             }
           ]
@@ -6177,7 +6177,7 @@
             {
               "procedureName": "Text has minimum contrast",
               "outcomes": [
-                "inapplicable"
+                "untested"
               ]
             }
           ]
@@ -6262,8 +6262,8 @@
         ]
       },
       "coverage": {
-        "covered": 30,
-        "untested": 0,
+        "covered": 27,
+        "untested": 5,
         "cantTell": 2,
         "testCaseTotal": 34
       },
@@ -6398,7 +6398,7 @@
             {
               "procedureName": "Text has enhanced contrast",
               "outcomes": [
-                "inapplicable"
+                "passed"
               ]
             }
           ]
@@ -6413,7 +6413,7 @@
             {
               "procedureName": "Text has enhanced contrast",
               "outcomes": [
-                "inapplicable"
+                "passed"
               ]
             }
           ]
@@ -6458,7 +6458,7 @@
             {
               "procedureName": "Text has enhanced contrast",
               "outcomes": [
-                "failed"
+                "untested"
               ]
             }
           ]
@@ -6473,7 +6473,7 @@
             {
               "procedureName": "Text has enhanced contrast",
               "outcomes": [
-                "failed"
+                "untested"
               ]
             }
           ]
@@ -6488,7 +6488,7 @@
             {
               "procedureName": "Text has enhanced contrast",
               "outcomes": [
-                "failed"
+                "untested"
               ]
             }
           ]
@@ -6518,7 +6518,7 @@
             {
               "procedureName": "Text has enhanced contrast",
               "outcomes": [
-                "failed"
+                "untested"
               ]
             }
           ]
@@ -6593,7 +6593,7 @@
             {
               "procedureName": "Text has enhanced contrast",
               "outcomes": [
-                "inapplicable"
+                "failed"
               ]
             }
           ]
@@ -6608,7 +6608,7 @@
             {
               "procedureName": "Text has enhanced contrast",
               "outcomes": [
-                "inapplicable"
+                "failed"
               ]
             }
           ]
@@ -6758,7 +6758,7 @@
             {
               "procedureName": "Text has enhanced contrast",
               "outcomes": [
-                "inapplicable"
+                "untested"
               ]
             }
           ]
@@ -6787,15 +6787,15 @@
       "procedureNames": [
         "aria-* attribute is defined in WAI-ARIA"
       ],
-      "consistency": "complete",
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
         "reported": []
       },
       "coverage": {
-        "covered": 7,
-        "untested": 0,
+        "covered": 5,
+        "untested": 2,
         "cantTell": 0,
         "testCaseTotal": 7
       },
@@ -6810,7 +6810,7 @@
             {
               "procedureName": "aria-* attribute is defined in WAI-ARIA",
               "outcomes": [
-                "passed"
+                "untested"
               ]
             }
           ]
@@ -6900,7 +6900,7 @@
             {
               "procedureName": "aria-* attribute is defined in WAI-ARIA",
               "outcomes": [
-                "inapplicable"
+                "untested"
               ]
             }
           ]
@@ -8062,7 +8062,7 @@
       },
       "coverage": {
         "covered": 3,
-        "untested": 0,
+        "untested": 1,
         "cantTell": 0,
         "testCaseTotal": 7
       },
@@ -8122,7 +8122,7 @@
             {
               "procedureName": "audio element content is media alternative for text",
               "outcomes": [
-                "inapplicable"
+                "untested"
               ]
             }
           ]
@@ -9336,9 +9336,9 @@
         ]
       },
       "coverage": {
-        "covered": 1,
+        "covered": 2,
         "untested": 0,
-        "cantTell": 13,
+        "cantTell": 12,
         "testCaseTotal": 14
       },
       "testCaseResults": [
@@ -9430,31 +9430,31 @@
             {
               "procedureName": "Document has a landmark with non-repeated content",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             },
             {
               "procedureName": "Document has heading for non-repeated content",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             },
             {
               "procedureName": "Block of repeated content is collapsible",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             },
             {
               "procedureName": "Document has an instrument to move focus to non-repeated content",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             },
             {
               "procedureName": "Bypass Blocks of Repeated Content",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -9908,8 +9908,8 @@
         ]
       },
       "coverage": {
-        "covered": 11,
-        "untested": 0,
+        "covered": 10,
+        "untested": 1,
         "cantTell": 0,
         "testCaseTotal": 12
       },
@@ -10059,7 +10059,7 @@
             {
               "procedureName": "Orientation of the page is not restricted using CSS transform property",
               "outcomes": [
-                "inapplicable"
+                "untested"
               ]
             }
           ]
@@ -10361,8 +10361,8 @@
       },
       "coverage": {
         "covered": 1,
-        "untested": 0,
-        "cantTell": 11,
+        "untested": 2,
+        "cantTell": 9,
         "testCaseTotal": 12
       },
       "testCaseResults": [
@@ -10436,7 +10436,7 @@
             {
               "procedureName": "Document has an instrument to move focus to non-repeated content",
               "outcomes": [
-                "cantTell"
+                "untested"
               ]
             }
           ]
@@ -10451,7 +10451,7 @@
             {
               "procedureName": "Document has an instrument to move focus to non-repeated content",
               "outcomes": [
-                "cantTell"
+                "untested"
               ]
             }
           ]
@@ -10562,9 +10562,9 @@
         "reported": []
       },
       "coverage": {
-        "covered": 2,
-        "untested": 0,
-        "cantTell": 6,
+        "covered": 1,
+        "untested": 4,
+        "cantTell": 3,
         "testCaseTotal": 8
       },
       "testCaseResults": [
@@ -10593,7 +10593,7 @@
             {
               "procedureName": "Document has a landmark with non-repeated content",
               "outcomes": [
-                "cantTell"
+                "untested"
               ]
             }
           ]
@@ -10623,7 +10623,7 @@
             {
               "procedureName": "Document has a landmark with non-repeated content",
               "outcomes": [
-                "passed"
+                "untested"
               ]
             }
           ]
@@ -10638,7 +10638,7 @@
             {
               "procedureName": "Document has a landmark with non-repeated content",
               "outcomes": [
-                "cantTell"
+                "untested"
               ]
             }
           ]
@@ -10653,7 +10653,7 @@
             {
               "procedureName": "Document has a landmark with non-repeated content",
               "outcomes": [
-                "cantTell"
+                "untested"
               ]
             }
           ]
@@ -10760,8 +10760,8 @@
         ]
       },
       "coverage": {
-        "covered": 15,
-        "untested": 0,
+        "covered": 13,
+        "untested": 2,
         "cantTell": 0,
         "testCaseTotal": 15
       },
@@ -10851,7 +10851,7 @@
             {
               "procedureName": "Heading has accessible name",
               "outcomes": [
-                "failed"
+                "untested"
               ]
             }
           ]
@@ -10956,7 +10956,7 @@
             {
               "procedureName": "Heading has accessible name",
               "outcomes": [
-                "failed"
+                "untested"
               ]
             }
           ]
@@ -11021,8 +11021,8 @@
       },
       "coverage": {
         "covered": 9,
-        "untested": 0,
-        "cantTell": 14,
+        "untested": 4,
+        "cantTell": 10,
         "testCaseTotal": 23
       },
       "testCaseResults": [
@@ -11096,7 +11096,7 @@
             {
               "procedureName": "`iframe` elements with identical accessible names have equivalent purpose",
               "outcomes": [
-                "cantTell"
+                "untested"
               ]
             }
           ]
@@ -11126,7 +11126,7 @@
             {
               "procedureName": "`iframe` elements with identical accessible names have equivalent purpose",
               "outcomes": [
-                "cantTell"
+                "untested"
               ]
             }
           ]
@@ -11186,7 +11186,7 @@
             {
               "procedureName": "`iframe` elements with identical accessible names have equivalent purpose",
               "outcomes": [
-                "cantTell"
+                "untested"
               ]
             }
           ]
@@ -11216,7 +11216,7 @@
             {
               "procedureName": "`iframe` elements with identical accessible names have equivalent purpose",
               "outcomes": [
-                "cantTell"
+                "untested"
               ]
             }
           ]
@@ -11380,7 +11380,7 @@
       "procedureNames": [
         "iframe element has accessible name"
       ],
-      "consistency": "complete",
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -11391,8 +11391,8 @@
         ]
       },
       "coverage": {
-        "covered": 11,
-        "untested": 0,
+        "covered": 10,
+        "untested": 1,
         "cantTell": 0,
         "testCaseTotal": 11
       },
@@ -11407,7 +11407,7 @@
             {
               "procedureName": "iframe element has accessible name",
               "outcomes": [
-                "passed"
+                "untested"
               ]
             }
           ]
@@ -11586,19 +11586,143 @@
       "ruleId": "78fd32",
       "ruleName": "Important line height in style attributes is wide enough",
       "ruleApproved": false,
-      "procedureNames": [],
+      "procedureNames": [
+        "Line height in style attributes is not !important"
+      ],
       "consistency": null,
-      "coverage": null,
-      "testCaseResults": []
+      "accessibilityRequirements": {
+        "correct": true,
+        "expected": [
+          "WCAG2:text-spacing"
+        ],
+        "reported": [
+          "WCAG2:text-spacing"
+        ]
+      },
+      "coverage": {
+        "covered": 2,
+        "untested": 0,
+        "cantTell": 0,
+        "testCaseTotal": 3
+      },
+      "testCaseResults": [
+        {
+          "testcaseId": "78034759a1086c7ffa8037b6e6e2327ece4a19d7",
+          "testCaseName": "Passed Example 7",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/78fd32/78034759a1086c7ffa8037b6e6e2327ece4a19d7.html",
+          "testCaseApproved": false,
+          "expected": "passed",
+          "procedureResults": [
+            {
+              "procedureName": "Line height in style attributes is not !important",
+              "outcomes": [
+                "failed"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "317de3cc2f864ebdae6e325c9fbc0dbf4947c5c9",
+          "testCaseName": "Passed Example 8",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/78fd32/317de3cc2f864ebdae6e325c9fbc0dbf4947c5c9.html",
+          "testCaseApproved": false,
+          "expected": "passed",
+          "procedureResults": [
+            {
+              "procedureName": "Line height in style attributes is not !important",
+              "outcomes": [
+                "inapplicable"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "0128de1beb7862298366680f6920bd3b3874d752",
+          "testCaseName": "Inapplicable Example 2",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/78fd32/0128de1beb7862298366680f6920bd3b3874d752.html",
+          "testCaseApproved": false,
+          "expected": "inapplicable",
+          "procedureResults": [
+            {
+              "procedureName": "Line height in style attributes is not !important",
+              "outcomes": [
+                "inapplicable"
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "ruleId": "9e45ec",
       "ruleName": "Important word spacing in style attributes is wide enough",
       "ruleApproved": false,
-      "procedureNames": [],
+      "procedureNames": [
+        "Word spacing in style attributes is not !important"
+      ],
       "consistency": null,
-      "coverage": null,
-      "testCaseResults": []
+      "accessibilityRequirements": {
+        "correct": true,
+        "expected": [
+          "WCAG2:text-spacing"
+        ],
+        "reported": [
+          "WCAG2:text-spacing"
+        ]
+      },
+      "coverage": {
+        "covered": 0,
+        "untested": 1,
+        "cantTell": 0,
+        "testCaseTotal": 3
+      },
+      "testCaseResults": [
+        {
+          "testcaseId": "15905a239d6755102be6a60aa152ad963d5b1dbb",
+          "testCaseName": "Passed Example 5",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/15905a239d6755102be6a60aa152ad963d5b1dbb.html",
+          "testCaseApproved": false,
+          "expected": "passed",
+          "procedureResults": [
+            {
+              "procedureName": "Word spacing in style attributes is not !important",
+              "outcomes": [
+                "failed"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "8d2baed183149375922c23a9a5f42b52b627d713",
+          "testCaseName": "Passed Example 6",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/8d2baed183149375922c23a9a5f42b52b627d713.html",
+          "testCaseApproved": false,
+          "expected": "passed",
+          "procedureResults": [
+            {
+              "procedureName": "Word spacing in style attributes is not !important",
+              "outcomes": [
+                "failed"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "fdd3c30f28464b32eb8a1397f70a41dfd3b2cb1c",
+          "testCaseName": "Inapplicable Example 2",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/fdd3c30f28464b32eb8a1397f70a41dfd3b2cb1c.html",
+          "testCaseApproved": false,
+          "expected": "inapplicable",
+          "procedureResults": [
+            {
+              "procedureName": "Word spacing in style attributes is not !important",
+              "outcomes": [
+                "untested"
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "ruleId": "36b590",
@@ -11607,7 +11731,7 @@
       "procedureNames": [
         "Error message describes invalid form field value"
       ],
-      "consistency": "partial",
+      "consistency": null,
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -11618,9 +11742,9 @@
         ]
       },
       "coverage": {
-        "covered": 1,
-        "untested": 0,
-        "cantTell": 8,
+        "covered": 0,
+        "untested": 3,
+        "cantTell": 6,
         "testCaseTotal": 9
       },
       "testCaseResults": [
@@ -11664,7 +11788,7 @@
             {
               "procedureName": "Error message describes invalid form field value",
               "outcomes": [
-                "cantTell"
+                "untested"
               ]
             }
           ]
@@ -11679,7 +11803,7 @@
             {
               "procedureName": "Error message describes invalid form field value",
               "outcomes": [
-                "cantTell"
+                "untested"
               ]
             }
           ]
@@ -11754,7 +11878,7 @@
             {
               "procedureName": "Error message describes invalid form field value",
               "outcomes": [
-                "inapplicable"
+                "untested"
               ]
             }
           ]
@@ -11786,7 +11910,7 @@
       "procedureNames": [
         "Links with identical accessible names have equivalent purpose"
       ],
-      "consistency": "partial",
+      "consistency": null,
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -11797,9 +11921,9 @@
         ]
       },
       "coverage": {
-        "covered": 8,
-        "untested": 0,
-        "cantTell": 13,
+        "covered": 6,
+        "untested": 4,
+        "cantTell": 11,
         "testCaseTotal": 21
       },
       "testCaseResults": [
@@ -11903,7 +12027,7 @@
             {
               "procedureName": "Links with identical accessible names have equivalent purpose",
               "outcomes": [
-                "cantTell"
+                "untested"
               ]
             }
           ]
@@ -11978,7 +12102,7 @@
             {
               "procedureName": "Links with identical accessible names have equivalent purpose",
               "outcomes": [
-                "passed"
+                "untested"
               ]
             }
           ]
@@ -12038,7 +12162,7 @@
             {
               "procedureName": "Links with identical accessible names have equivalent purpose",
               "outcomes": [
-                "cantTell"
+                "untested"
               ]
             }
           ]
@@ -12098,7 +12222,7 @@
             {
               "procedureName": "Links with identical accessible names have equivalent purpose",
               "outcomes": [
-                "inapplicable"
+                "untested"
               ]
             }
           ]
@@ -12140,8 +12264,8 @@
       },
       "coverage": {
         "covered": 7,
-        "untested": 0,
-        "cantTell": 12,
+        "untested": 2,
+        "cantTell": 10,
         "testCaseTotal": 19
       },
       "testCaseResults": [
@@ -12245,7 +12369,7 @@
             {
               "procedureName": "Links with identical accessible names and context serve equivalent purpose",
               "outcomes": [
-                "cantTell"
+                "untested"
               ]
             }
           ]
@@ -12425,7 +12549,7 @@
             {
               "procedureName": "Links with identical accessible names and context serve equivalent purpose",
               "outcomes": [
-                "cantTell"
+                "untested"
               ]
             }
           ]
@@ -12680,7 +12804,7 @@
       "procedureNames": [
         "role attribute has valid value"
       ],
-      "consistency": "complete",
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
@@ -12689,8 +12813,8 @@
         ]
       },
       "coverage": {
-        "covered": 10,
-        "untested": 0,
+        "covered": 8,
+        "untested": 2,
         "cantTell": 0,
         "testCaseTotal": 10
       },
@@ -12705,7 +12829,7 @@
             {
               "procedureName": "role attribute has valid value",
               "outcomes": [
-                "passed"
+                "untested"
               ]
             }
           ]
@@ -12750,7 +12874,7 @@
             {
               "procedureName": "role attribute has valid value",
               "outcomes": [
-                "failed"
+                "untested"
               ]
             }
           ]
@@ -12864,7 +12988,7 @@
       },
       "coverage": {
         "covered": 13,
-        "untested": 0,
+        "untested": 2,
         "cantTell": 0,
         "testCaseTotal": 15
       },
@@ -12939,7 +13063,7 @@
             {
               "procedureName": "Element with role attribute has required states and properties",
               "outcomes": [
-                "passed"
+                "untested"
               ]
             }
           ]
@@ -12969,7 +13093,7 @@
             {
               "procedureName": "Element with role attribute has required states and properties",
               "outcomes": [
-                "passed"
+                "failed"
               ]
             }
           ]
@@ -12999,7 +13123,7 @@
             {
               "procedureName": "Element with role attribute has required states and properties",
               "outcomes": [
-                "passed"
+                "failed"
               ]
             }
           ]
@@ -13029,7 +13153,7 @@
             {
               "procedureName": "Element with role attribute has required states and properties",
               "outcomes": [
-                "failed"
+                "untested"
               ]
             }
           ]
@@ -13950,8 +14074,8 @@
       },
       "coverage": {
         "covered": 1,
-        "untested": 0,
-        "cantTell": 6,
+        "untested": 1,
+        "cantTell": 5,
         "testCaseTotal": 7
       },
       "testCaseResults": [
@@ -14010,7 +14134,7 @@
             {
               "procedureName": "video element content is media alternative for text",
               "outcomes": [
-                "cantTell"
+                "untested"
               ]
             }
           ]
@@ -14077,8 +14201,8 @@
       },
       "coverage": {
         "covered": 1,
-        "untested": 0,
-        "cantTell": 6,
+        "untested": 1,
+        "cantTell": 5,
         "testCaseTotal": 7
       },
       "testCaseResults": [
@@ -14137,7 +14261,7 @@
             {
               "procedureName": "video element visual content has audio description",
               "outcomes": [
-                "cantTell"
+                "untested"
               ]
             }
           ]
@@ -14347,8 +14471,8 @@
         "reported": []
       },
       "coverage": {
-        "covered": 5,
-        "untested": 0,
+        "covered": 4,
+        "untested": 3,
         "cantTell": 1,
         "testCaseTotal": 9
       },
@@ -14393,7 +14517,7 @@
             {
               "procedureName": "video element visual-only content has description track",
               "outcomes": [
-                "inapplicable"
+                "untested"
               ]
             }
           ]
@@ -14423,7 +14547,7 @@
             {
               "procedureName": "video element visual-only content has description track",
               "outcomes": [
-                "inapplicable"
+                "untested"
               ]
             }
           ]
@@ -14438,7 +14562,7 @@
             {
               "procedureName": "video element visual-only content has description track",
               "outcomes": [
-                "inapplicable"
+                "untested"
               ]
             }
           ]
@@ -14505,8 +14629,8 @@
       },
       "coverage": {
         "covered": 1,
-        "untested": 0,
-        "cantTell": 6,
+        "untested": 2,
+        "cantTell": 4,
         "testCaseTotal": 7
       },
       "testCaseResults": [
@@ -14520,7 +14644,7 @@
             {
               "procedureName": "video element visual-only content is media alternative for text",
               "outcomes": [
-                "cantTell"
+                "untested"
               ]
             }
           ]
@@ -14595,7 +14719,7 @@
             {
               "procedureName": "video element visual-only content is media alternative for text",
               "outcomes": [
-                "cantTell"
+                "untested"
               ]
             }
           ]
@@ -14632,8 +14756,8 @@
       },
       "coverage": {
         "covered": 1,
-        "untested": 0,
-        "cantTell": 4,
+        "untested": 1,
+        "cantTell": 3,
         "testCaseTotal": 5
       },
       "testCaseResults": [
@@ -14692,7 +14816,7 @@
             {
               "procedureName": "video element visual-only content has audio track alternative",
               "outcomes": [
-                "cantTell"
+                "untested"
               ]
             }
           ]
@@ -14729,8 +14853,8 @@
       },
       "coverage": {
         "covered": 1,
-        "untested": 0,
-        "cantTell": 7,
+        "untested": 1,
+        "cantTell": 6,
         "testCaseTotal": 8
       },
       "testCaseResults": [
@@ -14804,7 +14928,7 @@
             {
               "procedureName": "video element visual-only content has transcript",
               "outcomes": [
-                "cantTell"
+                "untested"
               ]
             }
           ]
@@ -15135,8 +15259,8 @@
       },
       "coverage": {
         "covered": 1,
-        "untested": 0,
-        "cantTell": 4,
+        "untested": 1,
+        "cantTell": 3,
         "testCaseTotal": 5
       },
       "testCaseResults": [
@@ -15150,7 +15274,7 @@
             {
               "procedureName": "Audio and visuals of video element have transcript",
               "outcomes": [
-                "cantTell"
+                "untested"
               ]
             }
           ]
@@ -15457,8 +15581,8 @@
       },
       "coverage": {
         "covered": 5,
-        "untested": 0,
-        "cantTell": 9,
+        "untested": 2,
+        "cantTell": 7,
         "testCaseTotal": 14
       },
       "testCaseResults": [
@@ -15472,7 +15596,7 @@
             {
               "procedureName": "Zoomed text node is not clipped with CSS overflow",
               "outcomes": [
-                "cantTell"
+                "untested"
               ]
             }
           ]
@@ -15517,7 +15641,7 @@
             {
               "procedureName": "Zoomed text node is not clipped with CSS overflow",
               "outcomes": [
-                "cantTell"
+                "untested"
               ]
             }
           ]
