@@ -1,5 +1,5 @@
 ---
-title: "DEPRECATED — Video element visual content has description track"
+title: "Video element visual content has description track"
 permalink: /standards-guidelines/act/rules/f196ce/proposed/
 ref: /standards-guidelines/act/rules/f196ce/proposed/
 lang: en
@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> f196ce</p>
-  <p><strong>Date:</strong> Updated 30 August 2023</p>
+  <p><strong>Date:</strong> Updated 24 October 2023</p>
   <p><strong>Authors:</strong> <a href="https://www.linkedin.com/in/brianbors/">Brian Bors</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
   
@@ -20,12 +20,12 @@ deprecated: |
   
 rule_meta:
   id: f196ce
-  name: "DEPRECATED — Video element visual content has description track"
+  name: "Video element visual content has description track"
   rule_type: atomic
   original_file: video-description-track-f196ce.md
   description: |
     This rule checks that description tracks that come with non-streaming `video` elements are descriptive.
-  last_modified: 30 August 2023
+  last_modified: 24 October 2023
 ---
 
 ## Applicability
