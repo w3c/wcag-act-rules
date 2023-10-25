@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> b49b2e</p>
-  <p><strong>Date:</strong> Updated 30 August 2023</p>
+  <p><strong>Date:</strong> Updated 25 October 2023</p>
   <p><strong>Authors:</strong> <a href="https://github.com/carlosapaduarte">Carlos Duarte</a>, <a href="https://github.com/DagfinnRomen">Dagfinn Rømen</a>, <a href="https://github.com/geirsf">Geir Sindre Fossøy</a>, <a href="https://github.com/Jym77">Jean-Yves Moyen</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -20,7 +20,7 @@ rule_meta:
   original_file: heading-descriptive-b49b2e.md
   description: |
     This rule checks that headings describe the topic or purpose of the content.
-  last_modified: 30 August 2023
+  last_modified: 25 October 2023
   scs_tested:
     - handle: Headings and Labels
       num: 2.4.6
@@ -33,17 +33,15 @@ This rule applies to any [semantic][semantic role] `heading` element that is [in
 
 ## Expectation
 
-Each target element describes the topic or purpose of the first [perceivable content][] after the test target that is not [decorative][].
+Each target element describes the topic or purpose of the first [perceivable content][] after the test target that is not [decorative][]. The order of elements is determined by the [flat tree][].
 
-The order of elements is determined by the [flat tree][].
-
-**Note:** Headings do not need to be lengthy. A word, or even a single character, may suffice.
+**Note:** Headings do not need to be lengthy. A word, or even a single character, may be sufficient.
 
 ## Assumptions
 
-This rule assumes that the [flat tree][] order is close to the reading order, as elements are rendered on the page. Due to positioning, it is possible to render a document in an order that greatly differs from the tree order, in which case the content which is visually associated with a heading might not be the content following it in tree order and this rule might fail while [Success Criterion 2.4.6 Headings and Label][sc246] is still satisfied.
+This rule assumes that the [flat tree][] order is close to the reading order as elements are rendered on the page. Due to positioning, it is possible to render a document in an order that greatly differs from the tree order, in which case the content which is visually associated with a heading might not be the content following it in tree order and this rule might fail while [Success Criterion 2.4.6 Headings and Label][sc246] is still satisfied.
 
-This rule also assumes that the content the heading is intended to describe is [visible][] and not hidden from AT. Otherwise, cases such as expandable content using a heading might fail this rule while [Success Criterion 2.4.6 Headings and Label][sc246] is still satisfied.
+This rule also assumes that the content the heading is intended to describe is [visible][] and not hidden from assistive technologies. Otherwise, cases such as expandable content using a heading might fail this rule while [Success Criterion 2.4.6 Headings and Label][sc246] is still satisfied.
 
 ## Accessibility Support
 
@@ -96,7 +94,7 @@ The following aspects are required in using this rule.
 
 <a class="example-link" title="Passed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b49b2e/25cb1d68473c174a3f3e464704de6826b7aabdd4.html">Open in a new tab</a>
 
-Heading marked up with `h1` element that describes the topic or purpose of the following [perceivable content][].
+This `h1` heading element describes the topic of the following paragraph.
 
 ```html
 <html lang="en">
@@ -109,7 +107,7 @@ Heading marked up with `h1` element that describes the topic or purpose of the f
 
 <a class="example-link" title="Passed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b49b2e/8a83ca44601cb4ab173c388413df9649c8aac11f.html">Open in a new tab</a>
 
-Heading marked up with `role="heading"` that describes the topic or purpose of the following [perceivable content][].
+This heading marked up with an [explicit role][] of `heading` describes the topic of the following paragraph.
 
 ```html
 <html lang="en">
@@ -122,7 +120,7 @@ Heading marked up with `role="heading"` that describes the topic or purpose of t
 
 <a class="example-link" title="Passed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b49b2e/14faa79c92b5e281d8694f8a18ec00ba0c11da6b.html">Open in a new tab</a>
 
-Heading marked up with `h1` element with an image that describes the topic or purpose of the following [perceivable content][].
+This `h1` heading element with an image describes the topic of the following paragraph.
 
 ```html
 <html lang="en">
@@ -137,7 +135,7 @@ Heading marked up with `h1` element with an image that describes the topic or pu
 
 <a class="example-link" title="Passed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b49b2e/14ecbd9d655c833f5f9c5ee9563c472faee663c4.html">Open in a new tab</a>
 
-Heading marked up with `h1` element that is a single character that describes the topic or purpose of the following [perceivable content][].
+This `h1` heading element has a single character text that describes the topic of the following description list.
 
 ```html
 <html lang="en">
@@ -159,7 +157,7 @@ Heading marked up with `h1` element that is a single character that describes th
 
 <a class="example-link" title="Passed Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b49b2e/910c8881245425846a502b38758fff7db5c213ef.html">Open in a new tab</a>
 
-Heading marked up with `role="heading"` that describes the topic or purpose of the following [perceivable content][]. The heading is positioned off screen but is [included in the accessibility tree][].
+This heading marked up with an [explicit role][] of `heading` describes the topic of the following paragraph. The heading is positioned off screen but is [included in the accessibility tree][].
 
 ```html
 <html lang="en">
@@ -190,7 +188,7 @@ This heading describes the first [perceivable content][] after it (the first `p`
 
 <a class="example-link" title="Failed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b49b2e/79cce8d89309bea03e122d2917d340a525db4de0.html">Open in a new tab</a>
 
-Heading marked up with `h1` element that does not describe the topic or purpose of the following [perceivable content][].
+This `h1` heading element does not describes the topic of the following paragraph.
 
 ```html
 <html lang="en">
@@ -203,7 +201,7 @@ Heading marked up with `h1` element that does not describe the topic or purpose 
 
 <a class="example-link" title="Failed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b49b2e/acae544ba63bf9c71988fb67d491c7d404164f52.html">Open in a new tab</a>
 
-Heading marked up with `role="heading"` that does not describe the topic or purpose of the following [perceivable content][].
+This heading marked up with an [explicit role][] of `heading` does not describe the topic of the following paragraph.
 
 ```html
 <html lang="en">
@@ -216,7 +214,7 @@ Heading marked up with `role="heading"` that does not describe the topic or purp
 
 <a class="example-link" title="Failed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b49b2e/6000a70ba2da9a828fa9c817ae6a0d2c092522fb.html">Open in a new tab</a>
 
-Heading marked up with `role="heading"` that does not describe the topic or purpose of the following [perceivable content][]. The heading is positioned off screen but is [included in the accessibility tree][].
+This heading marked up with an [explicit role][] of `heading` does not describe the topic of the following paragraph. The heading is positioned off screen but is [included in the accessibility tree][].
 
 ```html
 <html lang="en">
@@ -231,7 +229,7 @@ Heading marked up with `role="heading"` that does not describe the topic or purp
 
 <a class="example-link" title="Failed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b49b2e/d76e8834b616356b2803586a8fbd0825a84e3fc8.html">Open in a new tab</a>
 
-This heading does not describe the first [perceivable content][] after it (the first `p` element). The next [perceivable content][] (the second `p` element) is not considered by this rule.
+This `h1` heading element does not describe the first [perceivable content][] after it (the first `p` element). The next [perceivable content][] (the second `p` element) is not considered by this rule.
 
 ```html
 <html lang="en">
@@ -259,7 +257,7 @@ There is no heading.
 
 <a class="example-link" title="Inapplicable Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b49b2e/6b63f3bcb8cfa7d388c35ebe82cedf6111e3c8f6.html">Open in a new tab</a>
 
-Heading is not [included in the accessibility tree][].
+This `h1` heading element is not [included in the accessibility tree][].
 
 ```html
 <html lang="en">
@@ -272,7 +270,7 @@ Heading is not [included in the accessibility tree][].
 
 <a class="example-link" title="Inapplicable Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b49b2e/b67b5eda7529c918280b442609e5b7d59c57317b.html">Open in a new tab</a>
 
-`h1` element has an empty [accessible name][].
+This `h1` heading element has an empty [accessible name][].
 
 ```html
 <html lang="en">
