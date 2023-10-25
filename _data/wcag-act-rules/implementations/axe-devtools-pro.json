@@ -2,10 +2,10 @@
   "vendor": "Deque Systems",
   "name": "Axe DevTools Pro",
   "version": "4.37.1",
-  "lastModified": "23 October 2023",
+  "lastModified": "25 October 2023",
   "approvedRules": {
-    "complete": 26,
-    "partial": 1,
+    "complete": 27,
+    "partial": 0,
     "inconsistent": 0,
     "untested": 0
   },
@@ -6438,15 +6438,16 @@
       "procedureNames": [
         "scrollable-region-focusable"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:keyboard",
           "WCAG2:keyboard-no-exception"
         ],
         "reported": [
-          "WCAG2:keyboard"
+          "WCAG2:keyboard",
+          "WCAG2:keyboard-no-exception"
         ]
       },
       "coverage": {
