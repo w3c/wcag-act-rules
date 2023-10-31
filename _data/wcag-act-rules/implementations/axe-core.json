@@ -2,10 +2,10 @@
   "vendor": "Deque Systems",
   "name": "Axe-core",
   "version": "4.8.1",
-  "lastModified": "23 October 2023",
+  "lastModified": "30 October 2023",
   "approvedRules": {
-    "complete": 23,
-    "partial": 1,
+    "complete": 24,
+    "partial": 0,
     "inconsistent": 0,
     "untested": 3
   },
@@ -6059,15 +6059,16 @@
       "procedureNames": [
         "scrollable-region-focusable"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:keyboard",
           "WCAG2:keyboard-no-exception"
         ],
         "reported": [
-          "WCAG2:keyboard"
+          "WCAG2:keyboard",
+          "WCAG2:keyboard-no-exception"
         ]
       },
       "coverage": {
