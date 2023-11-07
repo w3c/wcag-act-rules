@@ -26,7 +26,7 @@ ACT Rules describe how to test conformance of accessibility standards such as [W
 
 ## What are ACT Rules
 
-ACT Rules are designed to harmonize how edge cases for WCAG and other accessibility guidance are tested. Each ACT Rule describes in technology specific language how to test one particular aspect of a WCAG success criterion or other requirement. Rules have passed, failed, and inapplicable examples which can be used as test cases to determine the consistency of [test tools and methodologies](../implementations/).
+ACT Rules are designed to harmonize how edge cases for WCAG and other accessibility guidance are tested. Each ACT Rule describes in technology specific language how to test one particular aspect of a WCAG success criterion or other requirement. Rules have passed, failed, and inapplicable examples which can be used as test cases to determine the consistency of [test tools and methodologies]({{ '/standards-guidelines/act/implementations/' | relative_url }}).
 
 ### ACT Rules are Informative
 
