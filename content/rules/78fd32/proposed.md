@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 78fd32</p>
-  <p><strong>Date:</strong> Updated 26 October 2023</p>
+  <p><strong>Date:</strong> Updated 14 November 2023</p>
   <p><strong>Authors:</strong> <a href="https://github.com/Jym77">Jean-Yves Moyen</a>. Previous Authors: <a href="https://github.com/jkodu">Jey Nandakumar</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -20,7 +20,7 @@ rule_meta:
   original_file: important-line-height-wide-enough-78fd32.md
   description: |
     This rule checks that the `style` attribute is not used to prevent adjusting `line-height` by using `!important`, except if it's at least 1.5 times the font size.
-  last_modified: 26 October 2023
+  last_modified: 14 November 2023
   scs_tested:
     - handle: Text Spacing
       num: 1.4.12
@@ -198,13 +198,13 @@ This `p` element has a [computed][] `line-height` of `15px`, 1.5 times its [comp
 
 #### Passed Example 8
 
-<a class="example-link" title="Passed Example 8" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/78fd32/317de3cc2f864ebdae6e325c9fbc0dbf4947c5c9.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 8" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/78fd32/9280b9961f4e24943080fabb67c041b65036f69c.html">Open in a new tab</a>
 
 This `p` element has a [computed][] `line-height` of 1.5 times its `font-size`; the `div` element has no [visible][] text node children.
 
 ```html
-<div style="letter-spacing: 1em !important">
-	<p style="letter-spacing: 1.5em !important; max-width: 200px;">
+<div style="line-height: 1em !important">
+	<p style="line-height: 1.5em !important; max-width: 200px;">
 		The toy brought back fond memories of being lost in the rain forest.
 	</p>
 </div>
