@@ -10,8 +10,8 @@
     "untested": 6
   },
   "proposedRules": {
-    "complete": 15,
-    "partial": 1,
+    "complete": 14,
+    "partial": 2,
     "inconsistent": 0,
     "untested": 43
   },
@@ -8930,7 +8930,7 @@
         "W917",
         "P917"
       ],
-      "consistency": "complete",
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -8942,8 +8942,8 @@
       },
       "coverage": {
         "covered": 18,
-        "untested": 0,
-        "cantTell": 6,
+        "untested": 1,
+        "cantTell": 5,
         "testCaseTotal": 24
       },
       "testCaseResults": [
@@ -9095,22 +9095,22 @@
           ]
         },
         {
-          "testcaseId": "317de3cc2f864ebdae6e325c9fbc0dbf4947c5c9",
+          "testcaseId": "9280b9961f4e24943080fabb67c041b65036f69c",
           "testCaseName": "Passed Example 8",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/78fd32/317de3cc2f864ebdae6e325c9fbc0dbf4947c5c9.html",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/78fd32/9280b9961f4e24943080fabb67c041b65036f69c.html",
           "testCaseApproved": false,
           "expected": "passed",
           "procedureResults": [
             {
               "procedureName": "W917",
               "outcomes": [
-                "cantTell"
+                "untested"
               ]
             },
             {
               "procedureName": "P917",
               "outcomes": [
-                "cantTell"
+                "untested"
               ]
             }
           ]

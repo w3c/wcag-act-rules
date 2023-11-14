@@ -10,8 +10,8 @@
     "untested": 5
   },
   "proposedRules": {
-    "complete": 8,
-    "partial": 4,
+    "complete": 7,
+    "partial": 5,
     "inconsistent": 1,
     "untested": 46
   },
@@ -8131,7 +8131,7 @@
       "procedureNames": [
         "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style"
       ],
-      "consistency": "complete",
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -8142,8 +8142,8 @@
         ]
       },
       "coverage": {
-        "covered": 24,
-        "untested": 0,
+        "covered": 23,
+        "untested": 1,
         "cantTell": 0,
         "testCaseTotal": 24
       },
@@ -8254,16 +8254,16 @@
           ]
         },
         {
-          "testcaseId": "317de3cc2f864ebdae6e325c9fbc0dbf4947c5c9",
+          "testcaseId": "9280b9961f4e24943080fabb67c041b65036f69c",
           "testCaseName": "Passed Example 8",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/78fd32/317de3cc2f864ebdae6e325c9fbc0dbf4947c5c9.html",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/78fd32/9280b9961f4e24943080fabb67c041b65036f69c.html",
           "testCaseApproved": false,
           "expected": "passed",
           "procedureResults": [
             {
               "procedureName": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
               "outcomes": [
-                "passed"
+                "untested"
               ]
             }
           ]
