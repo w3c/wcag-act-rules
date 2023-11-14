@@ -2,16 +2,16 @@
   "vendor": "IBM Accessibility",
   "name": "Equal Access Accessibility Checker",
   "version": "3.1.42-rc.0",
-  "lastModified": "19 October 2023",
+  "lastModified": "11 November 2023",
   "approvedRules": {
     "complete": 16,
-    "partial": 4,
-    "inconsistent": 2,
+    "partial": 3,
+    "inconsistent": 3,
     "untested": 5
   },
   "proposedRules": {
-    "complete": 6,
-    "partial": 6,
+    "complete": 7,
+    "partial": 5,
     "inconsistent": 1,
     "untested": 46
   },
@@ -2636,8 +2636,8 @@
         ]
       },
       "coverage": {
-        "covered": 16,
-        "untested": 3,
+        "covered": 19,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 19
       },
@@ -2892,7 +2892,7 @@
             {
               "procedureName": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -2907,7 +2907,7 @@
             {
               "procedureName": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -2922,7 +2922,7 @@
             {
               "procedureName": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -4641,7 +4641,7 @@
       "procedureNames": [
         "meta_viewport_zoomable:Pass_0,Potential_1"
       ],
-      "consistency": "partial",
+      "consistency": null,
       "accessibilityRequirements": {
         "correct": false,
         "expected": [
@@ -4653,8 +4653,8 @@
         ]
       },
       "coverage": {
-        "covered": 11,
-        "untested": 5,
+        "covered": 15,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 16
       },
@@ -4834,7 +4834,7 @@
             {
               "procedureName": "meta_viewport_zoomable:Pass_0,Potential_1",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -4849,7 +4849,7 @@
             {
               "procedureName": "meta_viewport_zoomable:Pass_0,Potential_1",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -4864,7 +4864,7 @@
             {
               "procedureName": "meta_viewport_zoomable:Pass_0,Potential_1",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -4879,7 +4879,7 @@
             {
               "procedureName": "meta_viewport_zoomable:Pass_0,Potential_1",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -4894,7 +4894,7 @@
             {
               "procedureName": "meta_viewport_zoomable:Pass_0,Potential_1",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -5399,7 +5399,7 @@
       },
       "coverage": {
         "covered": 7,
-        "untested": 2,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 9
       },
@@ -5519,7 +5519,7 @@
             {
               "procedureName": "iframe_interactive_tabbable:pass,fail_invalid",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -5534,7 +5534,7 @@
             {
               "procedureName": "iframe_interactive_tabbable:pass,fail_invalid",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -8142,8 +8142,8 @@
         ]
       },
       "coverage": {
-        "covered": 21,
-        "untested": 3,
+        "covered": 23,
+        "untested": 1,
         "cantTell": 0,
         "testCaseTotal": 24
       },
@@ -8248,15 +8248,15 @@
             {
               "procedureName": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
         },
         {
-          "testcaseId": "317de3cc2f864ebdae6e325c9fbc0dbf4947c5c9",
+          "testcaseId": "9280b9961f4e24943080fabb67c041b65036f69c",
           "testCaseName": "Passed Example 8",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/78fd32/317de3cc2f864ebdae6e325c9fbc0dbf4947c5c9.html",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/78fd32/9280b9961f4e24943080fabb67c041b65036f69c.html",
           "testCaseApproved": false,
           "expected": "passed",
           "procedureResults": [
@@ -8383,7 +8383,7 @@
             {
               "procedureName": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -8517,7 +8517,7 @@
       "procedureNames": [
         "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -8528,8 +8528,8 @@
         ]
       },
       "coverage": {
-        "covered": 16,
-        "untested": 3,
+        "covered": 19,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 19
       },
@@ -8604,7 +8604,7 @@
             {
               "procedureName": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -8619,7 +8619,7 @@
             {
               "procedureName": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -8709,7 +8709,7 @@
             {
               "procedureName": "text_spacing_valid:pass,fail_letter_spacing_style,fail_word_spacing_style,fail_line_height_style",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
