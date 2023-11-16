@@ -2,7 +2,7 @@
   "vendor": "Total Validator",
   "name": "Total Validator (+Browser)",
   "version": "17.3.0",
-  "lastModified": "3 November 2023",
+  "lastModified": "16 November 2023",
   "approvedRules": {
     "complete": 24,
     "partial": 0,
@@ -10,8 +10,8 @@
     "untested": 3
   },
   "proposedRules": {
-    "complete": 14,
-    "partial": 2,
+    "complete": 15,
+    "partial": 1,
     "inconsistent": 0,
     "untested": 43
   },
@@ -11126,7 +11126,7 @@
         "P917",
         "W917"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -11137,8 +11137,8 @@
         ]
       },
       "coverage": {
-        "covered": 23,
-        "untested": 1,
+        "covered": 24,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 24
       },
@@ -11300,13 +11300,13 @@
             {
               "procedureName": "P917",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             },
             {
               "procedureName": "W917",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
