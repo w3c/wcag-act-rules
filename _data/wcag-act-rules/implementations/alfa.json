@@ -2,7 +2,7 @@
   "vendor": "Siteimprove",
   "name": "Alfa (fully automated)",
   "version": "0.57.2",
-  "lastModified": "13 November 2023",
+  "lastModified": "20 November 2023",
   "approvedRules": {
     "complete": 19,
     "partial": 1,
@@ -9454,8 +9454,8 @@
         ]
       },
       "coverage": {
-        "covered": 22,
-        "untested": 1,
+        "covered": 23,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 24
       },
@@ -9575,7 +9575,7 @@
             {
               "procedureName": "sia-r93",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
