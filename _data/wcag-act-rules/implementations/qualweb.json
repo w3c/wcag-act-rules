@@ -2,17 +2,17 @@
   "vendor": "LASIGE, Faculdade de Ciências da Universidade de Lisboa",
   "name": "QualWeb",
   "version": "3.0.0",
-  "lastModified": "31 October 2023",
+  "lastModified": "27 November 2023",
   "approvedRules": {
     "complete": 22,
-    "partial": 3,
-    "inconsistent": 0,
+    "partial": 2,
+    "inconsistent": 1,
     "untested": 2
   },
   "proposedRules": {
-    "complete": 8,
-    "partial": 17,
-    "inconsistent": 17,
+    "complete": 10,
+    "partial": 14,
+    "inconsistent": 18,
     "untested": 17
   },
   "actRuleMapping": [
@@ -4164,20 +4164,16 @@
       "procedureNames": [
         "Meta-refresh no delay"
       ],
-      "consistency": "partial",
+      "consistency": null,
       "accessibilityRequirements": {
-        "correct": true,
+        "correct": false,
         "expected": [
           "WCAG2:timing-adjustable"
         ],
-        "reported": [
-          "WCAG2:timing-adjustable",
-          "WCAG2:interruptions",
-          "WCAG2:change-on-request"
-        ]
+        "reported": []
       },
       "coverage": {
-        "covered": 13,
+        "covered": 9,
         "untested": 2,
         "cantTell": 0,
         "testCaseTotal": 15
@@ -4223,7 +4219,7 @@
             {
               "procedureName": "Meta-refresh no delay",
               "outcomes": [
-                "passed"
+                "inapplicable"
               ]
             }
           ]
@@ -4238,7 +4234,7 @@
             {
               "procedureName": "Meta-refresh no delay",
               "outcomes": [
-                "failed"
+                "inapplicable"
               ]
             }
           ]
@@ -4253,7 +4249,7 @@
             {
               "procedureName": "Meta-refresh no delay",
               "outcomes": [
-                "failed"
+                "inapplicable"
               ]
             }
           ]
@@ -4268,7 +4264,7 @@
             {
               "procedureName": "Meta-refresh no delay",
               "outcomes": [
-                "failed"
+                "inapplicable"
               ]
             }
           ]
@@ -4283,7 +4279,7 @@
             {
               "procedureName": "Meta-refresh no delay",
               "outcomes": [
-                "failed"
+                "inapplicable"
               ]
             }
           ]
@@ -5751,8 +5747,7 @@
           "WCAG2:contrast-minimum"
         ],
         "reported": [
-          "WCAG2:contrast-minimum",
-          "WCAG2:contrast-enhanced"
+          "WCAG2:contrast-minimum"
         ]
       },
       "coverage": {
@@ -7455,14 +7450,14 @@
       "procedureNames": [
         "ARIA state or property is permitted"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
         "reported": []
       },
       "coverage": {
-        "covered": 15,
+        "covered": 16,
         "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 16
@@ -7673,7 +7668,7 @@
             {
               "procedureName": "ARIA state or property is permitted",
               "outcomes": [
-                "passed"
+                "failed"
               ]
             }
           ]
@@ -10751,13 +10746,11 @@
       "procedureNames": [
         "Heading has accessible name"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [],
-        "reported": [
-          "WCAG2:info-and-relationships"
-        ]
+        "reported": []
       },
       "coverage": {
         "covered": 15,
@@ -11600,8 +11593,8 @@
         ]
       },
       "coverage": {
-        "covered": 1,
-        "untested": 22,
+        "covered": 22,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 24
       },
@@ -11616,7 +11609,7 @@
             {
               "procedureName": "Line height in style attributes is not !important",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -11631,7 +11624,7 @@
             {
               "procedureName": "Line height in style attributes is not !important",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -11646,7 +11639,7 @@
             {
               "procedureName": "Line height in style attributes is not !important",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -11661,7 +11654,7 @@
             {
               "procedureName": "Line height in style attributes is not !important",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -11676,7 +11669,7 @@
             {
               "procedureName": "Line height in style attributes is not !important",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -11691,7 +11684,7 @@
             {
               "procedureName": "Line height in style attributes is not !important",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -11721,7 +11714,7 @@
             {
               "procedureName": "Line height in style attributes is not !important",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -11736,7 +11729,7 @@
             {
               "procedureName": "Line height in style attributes is not !important",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -11751,7 +11744,7 @@
             {
               "procedureName": "Line height in style attributes is not !important",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -11766,7 +11759,7 @@
             {
               "procedureName": "Line height in style attributes is not !important",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -11781,7 +11774,7 @@
             {
               "procedureName": "Line height in style attributes is not !important",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -11796,7 +11789,7 @@
             {
               "procedureName": "Line height in style attributes is not !important",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -11811,7 +11804,7 @@
             {
               "procedureName": "Line height in style attributes is not !important",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -11826,7 +11819,7 @@
             {
               "procedureName": "Line height in style attributes is not !important",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -11856,7 +11849,7 @@
             {
               "procedureName": "Line height in style attributes is not !important",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -11871,7 +11864,7 @@
             {
               "procedureName": "Line height in style attributes is not !important",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -11886,7 +11879,7 @@
             {
               "procedureName": "Line height in style attributes is not !important",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -11901,7 +11894,7 @@
             {
               "procedureName": "Line height in style attributes is not !important",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -11916,7 +11909,7 @@
             {
               "procedureName": "Line height in style attributes is not !important",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -11931,7 +11924,7 @@
             {
               "procedureName": "Line height in style attributes is not !important",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -11946,7 +11939,7 @@
             {
               "procedureName": "Line height in style attributes is not !important",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -11961,7 +11954,7 @@
             {
               "procedureName": "Line height in style attributes is not !important",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -11986,8 +11979,8 @@
         ]
       },
       "coverage": {
-        "covered": 0,
-        "untested": 16,
+        "covered": 16,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 19
       },
@@ -12002,7 +11995,7 @@
             {
               "procedureName": "Word spacing in style attributes is not !important",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -12017,7 +12010,7 @@
             {
               "procedureName": "Word spacing in style attributes is not !important",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -12032,7 +12025,7 @@
             {
               "procedureName": "Word spacing in style attributes is not !important",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -12047,7 +12040,7 @@
             {
               "procedureName": "Word spacing in style attributes is not !important",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -12092,7 +12085,7 @@
             {
               "procedureName": "Word spacing in style attributes is not !important",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -12107,7 +12100,7 @@
             {
               "procedureName": "Word spacing in style attributes is not !important",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -12122,7 +12115,7 @@
             {
               "procedureName": "Word spacing in style attributes is not !important",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -12137,7 +12130,7 @@
             {
               "procedureName": "Word spacing in style attributes is not !important",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -12152,7 +12145,7 @@
             {
               "procedureName": "Word spacing in style attributes is not !important",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -12182,7 +12175,7 @@
             {
               "procedureName": "Word spacing in style attributes is not !important",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -12197,7 +12190,7 @@
             {
               "procedureName": "Word spacing in style attributes is not !important",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -12212,7 +12205,7 @@
             {
               "procedureName": "Word spacing in style attributes is not !important",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -12227,7 +12220,7 @@
             {
               "procedureName": "Word spacing in style attributes is not !important",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -12242,7 +12235,7 @@
             {
               "procedureName": "Word spacing in style attributes is not !important",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -12257,7 +12250,7 @@
             {
               "procedureName": "Word spacing in style attributes is not !important",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -12272,7 +12265,7 @@
             {
               "procedureName": "Word spacing in style attributes is not !important",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -12813,8 +12806,7 @@
           "WCAG2:link-purpose-in-context"
         ],
         "reported": [
-          "WCAG2:link-purpose-in-context",
-          "WCAG2:link-purpose-link-only"
+          "WCAG2:link-purpose-in-context"
         ]
       },
       "coverage": {
@@ -13118,20 +13110,17 @@
       "procedureNames": [
         "`meta` element has no refresh delay (no exception)"
       ],
-      "consistency": "partial",
+      "consistency": null,
       "accessibilityRequirements": {
-        "correct": true,
+        "correct": false,
         "expected": [
           "WCAG2:interruptions",
           "WCAG2:change-on-request"
         ],
-        "reported": [
-          "WCAG2:interruptions",
-          "WCAG2:change-on-request"
-        ]
+        "reported": []
       },
       "coverage": {
-        "covered": 11,
+        "covered": 8,
         "untested": 2,
         "cantTell": 0,
         "testCaseTotal": 13
@@ -13177,7 +13166,7 @@
             {
               "procedureName": "`meta` element has no refresh delay (no exception)",
               "outcomes": [
-                "failed"
+                "inapplicable"
               ]
             }
           ]
@@ -13192,7 +13181,7 @@
             {
               "procedureName": "`meta` element has no refresh delay (no exception)",
               "outcomes": [
-                "failed"
+                "inapplicable"
               ]
             }
           ]
@@ -13207,7 +13196,7 @@
             {
               "procedureName": "`meta` element has no refresh delay (no exception)",
               "outcomes": [
-                "failed"
+                "inapplicable"
               ]
             }
           ]
@@ -13363,9 +13352,7 @@
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
-        "reported": [
-          "WCAG2:info-and-relationships"
-        ]
+        "reported": []
       },
       "coverage": {
         "covered": 10,
@@ -13537,9 +13524,7 @@
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
-        "reported": [
-          "WCAG2:name-role-value"
-        ]
+        "reported": []
       },
       "coverage": {
         "covered": 15,
@@ -14250,8 +14235,7 @@
         ],
         "reported": [
           "WCAG2:media-alternative-prerecorded",
-          "WCAG2:audio-description-or-media-alternative-prerecorded",
-          "WCAG2:audio-description-prerecorded"
+          "WCAG2:audio-description-or-media-alternative-prerecorded"
         ]
       },
       "coverage": {
