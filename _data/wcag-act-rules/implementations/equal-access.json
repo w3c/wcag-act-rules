@@ -5,8 +5,8 @@
   "lastModified": "11 November 2023",
   "approvedRules": {
     "complete": 16,
-    "partial": 3,
-    "inconsistent": 3,
+    "partial": 4,
+    "inconsistent": 2,
     "untested": 5
   },
   "proposedRules": {
@@ -761,10 +761,10 @@
         ]
       },
       "coverage": {
-        "covered": 31,
+        "covered": 18,
         "untested": 0,
         "cantTell": 0,
-        "testCaseTotal": 31
+        "testCaseTotal": 18
       },
       "testCaseResults": [
         {
@@ -2636,10 +2636,10 @@
         ]
       },
       "coverage": {
-        "covered": 19,
+        "covered": 16,
         "untested": 0,
         "cantTell": 0,
-        "testCaseTotal": 19
+        "testCaseTotal": 16
       },
       "testCaseResults": [
         {
@@ -3762,10 +3762,10 @@
         ]
       },
       "coverage": {
-        "covered": 18,
+        "covered": 17,
         "untested": 0,
         "cantTell": 0,
-        "testCaseTotal": 18
+        "testCaseTotal": 17
       },
       "testCaseResults": [
         {
@@ -4641,7 +4641,7 @@
       "procedureNames": [
         "meta_viewport_zoomable:Pass_0,Potential_1"
       ],
-      "consistency": null,
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": false,
         "expected": [
@@ -4653,10 +4653,10 @@
         ]
       },
       "coverage": {
-        "covered": 15,
+        "covered": 11,
         "untested": 0,
         "cantTell": 0,
-        "testCaseTotal": 16
+        "testCaseTotal": 11
       },
       "testCaseResults": [
         {
@@ -5401,7 +5401,7 @@
         "covered": 7,
         "untested": 0,
         "cantTell": 0,
-        "testCaseTotal": 9
+        "testCaseTotal": 7
       },
       "testCaseResults": [
         {
