@@ -9,8 +9,8 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 4e8ab6</p>
-  <p><strong>Date:</strong> Updated 30 August 2023</p>
-  <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
+  <p><strong>Date:</strong> Updated 14 December 2023</p>
+  <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, Tom Brunet. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
 rule_meta:
@@ -20,7 +20,7 @@ rule_meta:
   original_file: role-required-states-and-properties-4e8ab6.md
   description: |
     This rule checks that elements that have an explicit role also specify all required states and properties.
-  last_modified: 30 August 2023
+  last_modified: 14 December 2023
 ---
 
 ## Applicability
@@ -33,21 +33,19 @@ For each test target, the [WAI-ARIA required states and properties][] for the ro
 
 ## Assumptions
 
-- The applicability of this rule is limited to [explicit semantic roles][explicit semantic role] based on an assumption that all native HTML and SVG elements have native attributes that are mapped to all of the [WAI-ARIA required states and properties](https://www.w3.org/TR/wai-aria/#requiredState) for the [implicit semantic role][] of the element.
-
-- The ARIA `role` is being used to comply to WCAG.
+- The ARIA `role` is being used to conform to WCAG.
 
 ## Accessibility Support
 
-This rule relies on browsers and assistive technologies to support leaving out [WAI-ARIA required states and properties][] when a [WAI-ARIA implicit value for role][] is specified in [WAI-ARIA Specifications](#wai-aria-specifications).
+This rule relies on browsers and assistive technologies to support leaving out [WAI-ARIA required states and properties][] when a [WAI-ARIA implicit value for role][] is specified in [WAI-ARIA Specifications][].
 
 **Note:** The required states and properties with implicit values can be found in the Core Accessibility API Mappings 1.1 [Overview of default values for missing required attributes](https://www.w3.org/TR/core-aam-1.1/#authorErrorDefaultValuesTable).
 
 ## Background
 
-Omitting required ARIA properties is often the result of a developer error. When required properties are missing some browsers and assistive technologies will guess the property, or leave the element inaccessible.
+Omitting [WAI-ARIA required states and properties][] is often the result of a developer error. When required properties are missing and a default value is not specified by [WAI-ARIA Specifications][], the behavior is not defined. For [WAI-ARIA 1.2][], the only [explicit semantic roles][explicit semantic role] with a required property with a default value are the `option` and `tabs roles` for the `aria-selected` property.
 
-This rule is testing author built components, not user-agent built ones. Elements that keep their [implicit semantic role][] are mapped into conforming accessible objects, with all required properties, by user agents and are therefore not tested by this rule. Most of these mappings are defined in the [HTML Accessibility API Mappings, Attribute State and Property Mappings](https://www.w3.org/TR/html-aam-1.0/#html-attribute-state-and-property-mappings).
+This rule is testing author built components that specify [explicit semantic roles][explicit semantic role] and not components that keep their [implicit semantic role][]. For components that keep their [implicit semantic role][], all native HTML and SVG elements have native attributes that are mapped to all of the [WAI-ARIA required states and properties](https://www.w3.org/TR/wai-aria/#requiredState). Most of these mappings are defined in the [HTML Accessibility API Mappings, Attribute State and Property Mappings][html aam].
 
 ### Bibliography
 
@@ -388,6 +386,7 @@ The _WAI ARIA Specifications_ group both the WAI ARIA W3C Recommendation and ARI
 [explicit semantic role]: #explicit-role 'Definition of explicit semantic role'
 [flat tree]: https://drafts.csswg.org/css-scoping/#flat-tree 'Definition of flat tree'
 [focusable]: #focusable
+[html aam]: https://www.w3.org/TR/html-aam-1.0/#html-attribute-state-and-property-mappings 'Specification of HTML attributes value mapping to ARIA states and properties'
 [html namespaces]: https://infra.spec.whatwg.org/#namespaces 'HTML namespace, 2021/05/31'
 [html or svg element]: #namespaced-element
 [implicit role]: #implicit-role 'Definition of Implicit Role'
@@ -407,4 +406,4 @@ The _WAI ARIA Specifications_ group both the WAI ARIA W3C Recommendation and ARI
 [wai-aria 1.2]: https://www.w3.org/TR/wai-aria-1.2/
 [wai-aria implicit value for role]: https://www.w3.org/TR/wai-aria-1.2/#implictValueForRole
 [wai-aria required states and properties]: https://www.w3.org/TR/wai-aria-1.2/#requiredState
-[wai-aria specifications]: #wai-aria-specifications 'Definition of WAI-ARIA specifications'
+[wai-aria specifications]: #wai-aria-specifications 'Definition of WAI-ARIA Specifications'
