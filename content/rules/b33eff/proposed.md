@@ -9,8 +9,8 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> b33eff</p>
-  <p><strong>Date:</strong> Updated 30 August 2023</p>
-  <p><strong>Authors:</strong> <a href="https://github.com/audreymaniez">Audrey Maniez</a>, <a href="https://github.com/jkodu">Jey Nandakumar</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
+  <p><strong>Date:</strong> Updated 14 December 2023</p>
+  <p><strong>Authors:</strong> <a href="https://github.com/audreymaniez">Audrey Maniez</a>, <a href="https://github.com/jkodu">Jey Nandakumar</a>, Tom Brunet. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
 rule_meta:
@@ -20,7 +20,7 @@ rule_meta:
   original_file: css-restrict-orientation-b33eff.md
   description: |
     This rule checks that page content is not restricted to either `landscape` or `portrait` orientation using CSS transforms
-  last_modified: 30 August 2023
+  last_modified: 14 December 2023
   scs_tested:
     - handle: Orientation
       num: 1.3.4
@@ -186,7 +186,7 @@ A page where the CSS [rotate](https://www.w3.org/TR/css-transforms-2/#individual
 
 #### Failed Example 1
 
-<a class="example-link" title="Failed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/32ee0d96f92591c1e34db35754117daaf75a5005.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/3b2f386c66ccb9c1a9a848017dab9b074afbf858.html">Open in a new tab</a>
 
 A page where CSS [transform](https://www.w3.org/TR/css-transforms/#propdef-transform) property has [rotate](https://www.w3.org/TR/css-transforms/#funcdef-transform-rotate) [transform function](https://www.w3.org/TR/css-transforms/#transform-functions) conditionally applied on the [orientation](https://www.w3.org/TR/css3-mediaqueries/#orientation) [media feature](https://www.w3.org/TR/css3-mediaqueries/#media1) which restricts the element to `landscape` orientation.
 
@@ -198,6 +198,8 @@ A page where CSS [transform](https://www.w3.org/TR/css-transforms/#propdef-trans
 			@media (orientation: portrait) {
 				html {
 					transform: rotate(1.5708rad);
+					width: min(100vw, 100vh);
+					height: min(100vw, 100vh);
 				}
 			}
 		</style>
@@ -234,7 +236,7 @@ A page where CSS [transform](https://www.w3.org/TR/css-transforms/#propdef-trans
 
 #### Failed Example 3
 
-<a class="example-link" title="Failed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/146e4d5a7a70d4e426724a42fac369fb0a321a0b.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/93ad10ce32325be5b7c8cbaec7254d55e8fb577c.html">Open in a new tab</a>
 
 This page appears rotated at a slight angle of 2.5 degrees for stylistic purposes, but is locked in portrait orientation by applying a 92.5 degree rotation when in landscape orientation:
 
@@ -245,11 +247,16 @@ This page appears rotated at a slight angle of 2.5 degrees for stylistic purpose
 		<style>
 			body {
 				transform: rotate(2.5deg);
+				padding: 2rem;
+				width: min(100vw, 100vh);
+				height: min(100vw, 100vh);
 			}
 
 			@media (orientation: landscape) {
 				body {
 					transform: rotate(92.5deg);
+					position: absolute;
+					right: 0px;
 				}
 			}
 		</style>
@@ -262,7 +269,7 @@ This page appears rotated at a slight angle of 2.5 degrees for stylistic purpose
 
 #### Failed Example 4
 
-<a class="example-link" title="Failed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/0476fbeac29bee2ad56456947c57d488845d3e77.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/8f341a73c698daf157613c32a521878ed5aa7310.html">Open in a new tab</a>
 
 A page where the CSS [rotate](https://www.w3.org/TR/css-transforms-2/#individual-transforms) property has a 90 degree rotation conditionally applied on the [orientation](https://www.w3.org/TR/css3-mediaqueries/#orientation) [media feature](https://www.w3.org/TR/css3-mediaqueries/#media1) which restricts the element to `landscape` orientation.
 
@@ -274,6 +281,8 @@ A page where the CSS [rotate](https://www.w3.org/TR/css-transforms-2/#individual
 			@media (orientation: portrait) {
 				html {
 					rotate: 90deg;
+					width: min(100vw, 100vh);
+					height: min(100vw, 100vh);
 				}
 			}
 		</style>
@@ -356,7 +365,7 @@ A page where CSS [transform](https://www.w3.org/TR/css-transforms/#propdef-trans
 
 #### Inapplicable Example 4
 
-<a class="example-link" title="Inapplicable Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/65f069d9d7d5a75562917c80ab7334b2914f42f4.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/4c34705d8d866194fd8fe96a0bd1abaf267b11f0.html">Open in a new tab</a>
 
 A page where CSS [transform](https://www.w3.org/TR/css-transforms/#propdef-transform) property is not applied conditionally on the [orientation](https://www.w3.org/TR/css3-mediaqueries/#orientation) [media feature](https://www.w3.org/TR/css3-mediaqueries/#media1).
 
@@ -367,6 +376,9 @@ A page where CSS [transform](https://www.w3.org/TR/css-transforms/#propdef-trans
 		<style>
 			body {
 				transform: rotate(90deg);
+				width: calc(min(100vw, 100vh) - 2rem);
+				height: calc(min(100vw, 100vh) - 2rem);
+				padding: 1rem;
 			}
 		</style>
 	</head>
