@@ -2,7 +2,7 @@
   "vendor": "PowerMapper",
   "name": "SortSite",
   "version": 6.45,
-  "lastModified": "14 December 2023",
+  "lastModified": "16 December 2023",
   "approvedRules": {
     "complete": 25,
     "partial": 0,
@@ -10,8 +10,8 @@
     "untested": 2
   },
   "proposedRules": {
-    "complete": 13,
-    "partial": 4,
+    "complete": 16,
+    "partial": 1,
     "inconsistent": 0,
     "untested": 42
   },
@@ -6913,7 +6913,7 @@
       "procedureNames": [
         "W3cHtml5AriaRequiredParentRoles-*"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -6924,8 +6924,8 @@
         ]
       },
       "coverage": {
-        "covered": 14,
-        "untested": 1,
+        "covered": 15,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 15
       },
@@ -7060,7 +7060,7 @@
             {
               "procedureName": "W3cHtml5AriaRequiredParentRoles-*",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -7164,15 +7164,15 @@
       "procedureNames": [
         "W3cHtml5AriaControls"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
         "reported": []
       },
       "coverage": {
-        "covered": 8,
-        "untested": 1,
+        "covered": 9,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 9
       },
@@ -7262,7 +7262,7 @@
             {
               "procedureName": "W3cHtml5AriaControls",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -8989,7 +8989,7 @@
       "procedureNames": [
         "AccHtmlFrameTitleMissing"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -9000,8 +9000,8 @@
         ]
       },
       "coverage": {
-        "covered": 10,
-        "untested": 1,
+        "covered": 11,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 11
       },
@@ -9166,7 +9166,7 @@
             {
               "procedureName": "AccHtmlFrameTitleMissing",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
