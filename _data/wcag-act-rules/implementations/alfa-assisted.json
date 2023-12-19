@@ -2,7 +2,7 @@
   "vendor": "Siteimprove",
   "name": "Alfa (semi-automated)",
   "version": "0.57.2",
-  "lastModified": "20 November 2023",
+  "lastModified": "14 December 2023",
   "approvedRules": {
     "complete": 20,
     "partial": 0,
@@ -10,8 +10,8 @@
     "untested": 2
   },
   "proposedRules": {
-    "complete": 31,
-    "partial": 3,
+    "complete": 30,
+    "partial": 4,
     "inconsistent": 5,
     "untested": 20
   },
@@ -9173,7 +9173,7 @@
       "procedureNames": [
         "sia-r44"
       ],
-      "consistency": "complete",
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -9184,8 +9184,8 @@
         ]
       },
       "coverage": {
-        "covered": 12,
-        "untested": 0,
+        "covered": 8,
+        "untested": 4,
         "cantTell": 0,
         "testCaseTotal": 12
       },
@@ -9236,16 +9236,16 @@
           ]
         },
         {
-          "testcaseId": "32ee0d96f92591c1e34db35754117daaf75a5005",
+          "testcaseId": "3b2f386c66ccb9c1a9a848017dab9b074afbf858",
           "testCaseName": "Failed Example 1",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/32ee0d96f92591c1e34db35754117daaf75a5005.html",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/3b2f386c66ccb9c1a9a848017dab9b074afbf858.html",
           "testCaseApproved": false,
           "expected": "failed",
           "procedureResults": [
             {
               "procedureName": "sia-r44",
               "outcomes": [
-                "failed"
+                "untested"
               ]
             }
           ]
@@ -9266,31 +9266,31 @@
           ]
         },
         {
-          "testcaseId": "146e4d5a7a70d4e426724a42fac369fb0a321a0b",
+          "testcaseId": "93ad10ce32325be5b7c8cbaec7254d55e8fb577c",
           "testCaseName": "Failed Example 3",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/146e4d5a7a70d4e426724a42fac369fb0a321a0b.html",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/93ad10ce32325be5b7c8cbaec7254d55e8fb577c.html",
           "testCaseApproved": false,
           "expected": "failed",
           "procedureResults": [
             {
               "procedureName": "sia-r44",
               "outcomes": [
-                "failed"
+                "untested"
               ]
             }
           ]
         },
         {
-          "testcaseId": "0476fbeac29bee2ad56456947c57d488845d3e77",
+          "testcaseId": "8f341a73c698daf157613c32a521878ed5aa7310",
           "testCaseName": "Failed Example 4",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/0476fbeac29bee2ad56456947c57d488845d3e77.html",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/8f341a73c698daf157613c32a521878ed5aa7310.html",
           "testCaseApproved": false,
           "expected": "failed",
           "procedureResults": [
             {
               "procedureName": "sia-r44",
               "outcomes": [
-                "failed"
+                "untested"
               ]
             }
           ]
@@ -9341,16 +9341,16 @@
           ]
         },
         {
-          "testcaseId": "65f069d9d7d5a75562917c80ab7334b2914f42f4",
+          "testcaseId": "4c34705d8d866194fd8fe96a0bd1abaf267b11f0",
           "testCaseName": "Inapplicable Example 4",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/65f069d9d7d5a75562917c80ab7334b2914f42f4.html",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/4c34705d8d866194fd8fe96a0bd1abaf267b11f0.html",
           "testCaseApproved": false,
           "expected": "inapplicable",
           "procedureResults": [
             {
               "procedureName": "sia-r44",
               "outcomes": [
-                "inapplicable"
+                "untested"
               ]
             }
           ]

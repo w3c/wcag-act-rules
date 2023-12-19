@@ -2,16 +2,16 @@
   "vendor": "PowerMapper",
   "name": "SortSite",
   "version": 6.45,
-  "lastModified": "6 October 2023",
+  "lastModified": "16 December 2023",
   "approvedRules": {
-    "complete": 24,
+    "complete": 25,
     "partial": 0,
     "inconsistent": 0,
-    "untested": 3
+    "untested": 2
   },
   "proposedRules": {
-    "complete": 11,
-    "partial": 6,
+    "complete": 16,
+    "partial": 1,
     "inconsistent": 0,
     "untested": 42
   },
@@ -2817,7 +2817,7 @@
             {
               "procedureName": "AccCssLetterSpacingImportant",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -2832,7 +2832,7 @@
             {
               "procedureName": "AccCssLetterSpacingImportant",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -2847,7 +2847,7 @@
             {
               "procedureName": "AccCssLetterSpacingImportant",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -4609,7 +4609,7 @@
             {
               "procedureName": "AccHtmlMetaViewportNoZoom",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -4624,7 +4624,7 @@
             {
               "procedureName": "AccHtmlMetaViewportNoZoom",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -4639,7 +4639,7 @@
             {
               "procedureName": "AccHtmlMetaViewportNoZoom",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -4654,7 +4654,7 @@
             {
               "procedureName": "AccHtmlMetaViewportNoZoom",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -4669,7 +4669,7 @@
             {
               "procedureName": "AccHtmlMetaViewportNoZoom",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -5116,10 +5116,162 @@
       "ruleId": "akn7bn",
       "ruleName": "Iframe with interactive elements is not excluded from tab-order",
       "ruleApproved": true,
-      "procedureNames": [],
-      "consistency": null,
-      "coverage": null,
-      "testCaseResults": []
+      "procedureNames": [
+        "AccHtmlIframeTabindexInteractive"
+      ],
+      "consistency": "complete",
+      "accessibilityRequirements": {
+        "correct": true,
+        "expected": [
+          "WCAG2:keyboard"
+        ],
+        "reported": [
+          "WCAG2:keyboard"
+        ]
+      },
+      "coverage": {
+        "covered": 7,
+        "untested": 0,
+        "cantTell": 0,
+        "testCaseTotal": 7
+      },
+      "testCaseResults": [
+        {
+          "testcaseId": "1e3939d9f8e0f78f9c564ec6feb12cc5635c0acb",
+          "testCaseName": "Passed Example 1",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/akn7bn/1e3939d9f8e0f78f9c564ec6feb12cc5635c0acb.html",
+          "testCaseApproved": true,
+          "expected": "passed",
+          "procedureResults": [
+            {
+              "procedureName": "AccHtmlIframeTabindexInteractive",
+              "outcomes": [
+                "passed"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "a16be608639d0976b9d044360695d853384f56f0",
+          "testCaseName": "Passed Example 2",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/akn7bn/a16be608639d0976b9d044360695d853384f56f0.html",
+          "testCaseApproved": true,
+          "expected": "passed",
+          "procedureResults": [
+            {
+              "procedureName": "AccHtmlIframeTabindexInteractive",
+              "outcomes": [
+                "passed"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "62673162e22ee1e95e962522b1d1c3b549dbfc49",
+          "testCaseName": "Failed Example 1",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/akn7bn/62673162e22ee1e95e962522b1d1c3b549dbfc49.html",
+          "testCaseApproved": true,
+          "expected": "failed",
+          "procedureResults": [
+            {
+              "procedureName": "AccHtmlIframeTabindexInteractive",
+              "outcomes": [
+                "failed"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "c90de6661c91b4449b96fb31e487c70d1e3350df",
+          "testCaseName": "Inapplicable Example 1",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/akn7bn/c90de6661c91b4449b96fb31e487c70d1e3350df.html",
+          "testCaseApproved": true,
+          "expected": "inapplicable",
+          "procedureResults": [
+            {
+              "procedureName": "AccHtmlIframeTabindexInteractive",
+              "outcomes": [
+                "passed"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "033e04cced5973596d9aa724feacb027d23b4c53",
+          "testCaseName": "Inapplicable Example 2",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/akn7bn/033e04cced5973596d9aa724feacb027d23b4c53.html",
+          "testCaseApproved": true,
+          "expected": "inapplicable",
+          "procedureResults": [
+            {
+              "procedureName": "AccHtmlIframeTabindexInteractive",
+              "outcomes": [
+                "passed"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "63cd20ec8886f4c59ff54f406a0e5933847bce75",
+          "testCaseName": "Inapplicable Example 3",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/akn7bn/63cd20ec8886f4c59ff54f406a0e5933847bce75.html",
+          "testCaseApproved": true,
+          "expected": "inapplicable",
+          "procedureResults": [
+            {
+              "procedureName": "AccHtmlIframeTabindexInteractive",
+              "outcomes": [
+                "passed"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "aa153f6799d28563054ce66bcf7dfcedf9b75288",
+          "testCaseName": "Inapplicable Example 4",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/akn7bn/aa153f6799d28563054ce66bcf7dfcedf9b75288.html",
+          "testCaseApproved": true,
+          "expected": "inapplicable",
+          "procedureResults": [
+            {
+              "procedureName": "AccHtmlIframeTabindexInteractive",
+              "outcomes": [
+                "passed"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "17a371c470316dc29e424101065ebfe9f7b2e990",
+          "testCaseName": "Inapplicable Example 5",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/akn7bn/17a371c470316dc29e424101065ebfe9f7b2e990.html",
+          "testCaseApproved": false,
+          "expected": "inapplicable",
+          "procedureResults": [
+            {
+              "procedureName": "AccHtmlIframeTabindexInteractive",
+              "outcomes": [
+                "passed"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "c88fcaf4d90e2156de75a1cdad8734a3d75c49e4",
+          "testCaseName": "Inapplicable Example 6",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/akn7bn/c88fcaf4d90e2156de75a1cdad8734a3d75c49e4.html",
+          "testCaseApproved": false,
+          "expected": "inapplicable",
+          "procedureResults": [
+            {
+              "procedureName": "AccHtmlIframeTabindexInteractive",
+              "outcomes": [
+                "passed"
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "ruleId": "qt1vmo",
@@ -6761,7 +6913,7 @@
       "procedureNames": [
         "W3cHtml5AriaRequiredParentRoles-*"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -6772,8 +6924,8 @@
         ]
       },
       "coverage": {
-        "covered": 14,
-        "untested": 1,
+        "covered": 15,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 15
       },
@@ -6908,7 +7060,7 @@
             {
               "procedureName": "W3cHtml5AriaRequiredParentRoles-*",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -7012,15 +7164,15 @@
       "procedureNames": [
         "W3cHtml5AriaControls"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
         "reported": []
       },
       "coverage": {
-        "covered": 8,
-        "untested": 1,
+        "covered": 9,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 9
       },
@@ -7110,7 +7262,7 @@
             {
               "procedureName": "W3cHtml5AriaControls",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -8267,7 +8419,7 @@
       "procedureNames": [
         "AccCssTransformOrientationLock"
       ],
-      "consistency": "complete",
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -8278,8 +8430,8 @@
         ]
       },
       "coverage": {
-        "covered": 12,
-        "untested": 0,
+        "covered": 8,
+        "untested": 4,
         "cantTell": 0,
         "testCaseTotal": 12
       },
@@ -8330,16 +8482,16 @@
           ]
         },
         {
-          "testcaseId": "32ee0d96f92591c1e34db35754117daaf75a5005",
+          "testcaseId": "3b2f386c66ccb9c1a9a848017dab9b074afbf858",
           "testCaseName": "Failed Example 1",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/32ee0d96f92591c1e34db35754117daaf75a5005.html",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/3b2f386c66ccb9c1a9a848017dab9b074afbf858.html",
           "testCaseApproved": false,
           "expected": "failed",
           "procedureResults": [
             {
               "procedureName": "AccCssTransformOrientationLock",
               "outcomes": [
-                "failed"
+                "untested"
               ]
             }
           ]
@@ -8360,31 +8512,31 @@
           ]
         },
         {
-          "testcaseId": "146e4d5a7a70d4e426724a42fac369fb0a321a0b",
+          "testcaseId": "93ad10ce32325be5b7c8cbaec7254d55e8fb577c",
           "testCaseName": "Failed Example 3",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/146e4d5a7a70d4e426724a42fac369fb0a321a0b.html",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/93ad10ce32325be5b7c8cbaec7254d55e8fb577c.html",
           "testCaseApproved": false,
           "expected": "failed",
           "procedureResults": [
             {
               "procedureName": "AccCssTransformOrientationLock",
               "outcomes": [
-                "failed"
+                "untested"
               ]
             }
           ]
         },
         {
-          "testcaseId": "0476fbeac29bee2ad56456947c57d488845d3e77",
+          "testcaseId": "8f341a73c698daf157613c32a521878ed5aa7310",
           "testCaseName": "Failed Example 4",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/0476fbeac29bee2ad56456947c57d488845d3e77.html",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/8f341a73c698daf157613c32a521878ed5aa7310.html",
           "testCaseApproved": false,
           "expected": "failed",
           "procedureResults": [
             {
               "procedureName": "AccCssTransformOrientationLock",
               "outcomes": [
-                "failed"
+                "untested"
               ]
             }
           ]
@@ -8435,16 +8587,16 @@
           ]
         },
         {
-          "testcaseId": "65f069d9d7d5a75562917c80ab7334b2914f42f4",
+          "testcaseId": "4c34705d8d866194fd8fe96a0bd1abaf267b11f0",
           "testCaseName": "Inapplicable Example 4",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/65f069d9d7d5a75562917c80ab7334b2914f42f4.html",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/4c34705d8d866194fd8fe96a0bd1abaf267b11f0.html",
           "testCaseApproved": false,
           "expected": "inapplicable",
           "procedureResults": [
             {
               "procedureName": "AccCssTransformOrientationLock",
               "outcomes": [
-                "passed"
+                "untested"
               ]
             }
           ]
@@ -8572,13 +8724,11 @@
       "procedureNames": [
         "AccHtmlHeadingEmpty"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [],
-        "reported": [
-          "WCAG2:info-and-relationships"
-        ]
+        "reported": []
       },
       "coverage": {
         "covered": 15,
@@ -8839,7 +8989,7 @@
       "procedureNames": [
         "AccHtmlFrameTitleMissing"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -8850,8 +9000,8 @@
         ]
       },
       "coverage": {
-        "covered": 10,
-        "untested": 1,
+        "covered": 11,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 11
       },
@@ -9016,7 +9166,7 @@
             {
               "procedureName": "AccHtmlFrameTitleMissing",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -9048,7 +9198,7 @@
       "procedureNames": [
         "AccCssLineHeightImportant"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -9059,8 +9209,8 @@
         ]
       },
       "coverage": {
-        "covered": 21,
-        "untested": 3,
+        "covered": 24,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 24
       },
@@ -9165,7 +9315,7 @@
             {
               "procedureName": "AccCssLineHeightImportant",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -9180,7 +9330,7 @@
             {
               "procedureName": "AccCssLineHeightImportant",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -9300,7 +9450,7 @@
             {
               "procedureName": "AccCssLineHeightImportant",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -9434,7 +9584,7 @@
       "procedureNames": [
         "AccCssWordSpacingImportant"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -9445,8 +9595,8 @@
         ]
       },
       "coverage": {
-        "covered": 16,
-        "untested": 3,
+        "covered": 19,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 19
       },
@@ -9521,7 +9671,7 @@
             {
               "procedureName": "AccCssWordSpacingImportant",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -9536,7 +9686,7 @@
             {
               "procedureName": "AccCssWordSpacingImportant",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -9626,7 +9776,7 @@
             {
               "procedureName": "AccCssWordSpacingImportant",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
