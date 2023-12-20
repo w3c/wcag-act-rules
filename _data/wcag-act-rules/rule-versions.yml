@@ -5,6 +5,12 @@ de46e4:
     isoDate: 2022-06-21
   - file: index.md
     url: de46e4/
+    w3cDate: 20 December 2023
+    isoDate: 2023-12-20
+    changes:
+      - Update example descriptions of failed example 4 and 5
+  - file: 2022-06-23.md
+    url: de46e4/2022-06-23/
     w3cDate: 23 June 2022
     isoDate: 2022-06-23
     changes:
