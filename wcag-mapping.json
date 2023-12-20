@@ -12,6 +12,17 @@
       "proposed": false
     },
     {
+      "title": "ARIA state or property has valid value",
+      "permalink": "/standards-guidelines/act/rules/6a7281/",
+      "successCriteria": [
+        "info-and-relationships",
+        "name-role-value"
+      ],
+      "wcagTechniques": [],
+      "deprecated": false,
+      "proposed": false
+    },
+    {
       "title": "Autocomplete attribute has valid value",
       "permalink": "/standards-guidelines/act/rules/73f2c2/",
       "successCriteria": [
@@ -396,17 +407,6 @@
       "permalink": "/standards-guidelines/act/rules/bc4a75/proposed/",
       "successCriteria": [
         "info-and-relationships"
-      ],
-      "wcagTechniques": [],
-      "deprecated": false,
-      "proposed": true
-    },
-    {
-      "title": "ARIA state or property has valid value",
-      "permalink": "/standards-guidelines/act/rules/6a7281/proposed/",
-      "successCriteria": [
-        "info-and-relationships",
-        "name-role-value"
       ],
       "wcagTechniques": [],
       "deprecated": false,
