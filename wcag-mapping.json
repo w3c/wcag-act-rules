@@ -275,6 +275,21 @@
       "proposed": false
     },
     {
+      "title": "Meta element has no refresh delay (no exception)",
+      "permalink": "/standards-guidelines/act/rules/bisz58/",
+      "successCriteria": [
+        "interruptions",
+        "change-on-request",
+        "timing-adjustable"
+      ],
+      "wcagTechniques": [
+        "G110",
+        "H76"
+      ],
+      "deprecated": false,
+      "proposed": false
+    },
+    {
       "title": "Meta viewport allows for zoom",
       "permalink": "/standards-guidelines/act/rules/b4f0c3/",
       "successCriteria": [
@@ -793,21 +808,6 @@
         "link-purpose-link-only"
       ],
       "wcagTechniques": [],
-      "deprecated": false,
-      "proposed": true
-    },
-    {
-      "title": "Meta element has no refresh delay (no exception)",
-      "permalink": "/standards-guidelines/act/rules/bisz58/proposed/",
-      "successCriteria": [
-        "interruptions",
-        "change-on-request",
-        "timing-adjustable"
-      ],
-      "wcagTechniques": [
-        "G110",
-        "H76"
-      ],
       "deprecated": false,
       "proposed": true
     },
