@@ -118,6 +118,14 @@ e086e5:
     isoDate: 2022-06-21
   - file: index.md
     url: 24afc2/
+    w3cDate: 20 December 2023
+    isoDate: 2023-12-20
+    changes:
+      - Update the rule's description
+      - Ignore style attributes which do not actually impact text
+      - Add assumption on text nodes being human language
+  - file: 2022-06-23.md
+    url: 24afc2/2022-06-23/
     w3cDate: 23 June 2022
     isoDate: 2022-06-23
     changes:

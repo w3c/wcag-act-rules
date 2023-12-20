@@ -6,6 +6,367 @@
   "count": 1142,
   "testcases": [
     {
+      "ruleId": "24afc2",
+      "ruleName": "Important letter spacing in style attributes is wide enough",
+      "ruleAccessibilityRequirements": {
+        "wcag21:1.4.12": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "9e9382901f59c7dd476717a55bf5c5a37ed76bbc",
+      "testcaseTitle": "Passed Example 1",
+      "relativePath": "testcases/24afc2/9e9382901f59c7dd476717a55bf5c5a37ed76bbc.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/24afc2/9e9382901f59c7dd476717a55bf5c5a37ed76bbc.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/24afc2/",
+      "approved": true
+    },
+    {
+      "ruleId": "24afc2",
+      "ruleName": "Important letter spacing in style attributes is wide enough",
+      "ruleAccessibilityRequirements": {
+        "wcag21:1.4.12": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "43f8fe88b8e7365db7aa251b263b5d00c7a47ae9",
+      "testcaseTitle": "Passed Example 2",
+      "relativePath": "testcases/24afc2/43f8fe88b8e7365db7aa251b263b5d00c7a47ae9.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/24afc2/43f8fe88b8e7365db7aa251b263b5d00c7a47ae9.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/24afc2/",
+      "approved": true
+    },
+    {
+      "ruleId": "24afc2",
+      "ruleName": "Important letter spacing in style attributes is wide enough",
+      "ruleAccessibilityRequirements": {
+        "wcag21:1.4.12": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "787f24a573fa422e24ab72312f7306253bb83a4f",
+      "testcaseTitle": "Passed Example 3",
+      "relativePath": "testcases/24afc2/787f24a573fa422e24ab72312f7306253bb83a4f.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/24afc2/787f24a573fa422e24ab72312f7306253bb83a4f.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/24afc2/",
+      "approved": true
+    },
+    {
+      "ruleId": "24afc2",
+      "ruleName": "Important letter spacing in style attributes is wide enough",
+      "ruleAccessibilityRequirements": {
+        "wcag21:1.4.12": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "f000a9c495f11a4a11a4314871b91f4173e4589a",
+      "testcaseTitle": "Passed Example 4",
+      "relativePath": "testcases/24afc2/f000a9c495f11a4a11a4314871b91f4173e4589a.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/24afc2/f000a9c495f11a4a11a4314871b91f4173e4589a.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/24afc2/",
+      "approved": true
+    },
+    {
+      "ruleId": "24afc2",
+      "ruleName": "Important letter spacing in style attributes is wide enough",
+      "ruleAccessibilityRequirements": {
+        "wcag21:1.4.12": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "cabfcae45afac141b38fd9cac2e07a64fb6b9896",
+      "testcaseTitle": "Passed Example 5",
+      "relativePath": "testcases/24afc2/cabfcae45afac141b38fd9cac2e07a64fb6b9896.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/24afc2/cabfcae45afac141b38fd9cac2e07a64fb6b9896.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/24afc2/",
+      "approved": true
+    },
+    {
+      "ruleId": "24afc2",
+      "ruleName": "Important letter spacing in style attributes is wide enough",
+      "ruleAccessibilityRequirements": {
+        "wcag21:1.4.12": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "d6d5bf7c081939e64d10022dd29f5e31d2153d50",
+      "testcaseTitle": "Passed Example 6",
+      "relativePath": "testcases/24afc2/d6d5bf7c081939e64d10022dd29f5e31d2153d50.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/24afc2/d6d5bf7c081939e64d10022dd29f5e31d2153d50.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/24afc2/",
+      "approved": true
+    },
+    {
+      "ruleId": "24afc2",
+      "ruleName": "Important letter spacing in style attributes is wide enough",
+      "ruleAccessibilityRequirements": {
+        "wcag21:1.4.12": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "8383685465c6a417cb86e192d1e9157bd5feee99",
+      "testcaseTitle": "Failed Example 1",
+      "relativePath": "testcases/24afc2/8383685465c6a417cb86e192d1e9157bd5feee99.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/24afc2/8383685465c6a417cb86e192d1e9157bd5feee99.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/24afc2/",
+      "approved": true
+    },
+    {
+      "ruleId": "24afc2",
+      "ruleName": "Important letter spacing in style attributes is wide enough",
+      "ruleAccessibilityRequirements": {
+        "wcag21:1.4.12": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "b5a8fe74fbbea40e8bbee407f167ae808e14ea49",
+      "testcaseTitle": "Failed Example 2",
+      "relativePath": "testcases/24afc2/b5a8fe74fbbea40e8bbee407f167ae808e14ea49.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/24afc2/b5a8fe74fbbea40e8bbee407f167ae808e14ea49.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/24afc2/",
+      "approved": true
+    },
+    {
+      "ruleId": "24afc2",
+      "ruleName": "Important letter spacing in style attributes is wide enough",
+      "ruleAccessibilityRequirements": {
+        "wcag21:1.4.12": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "d8e379c210cdb651d28985c883fea21a4529ed59",
+      "testcaseTitle": "Failed Example 3",
+      "relativePath": "testcases/24afc2/d8e379c210cdb651d28985c883fea21a4529ed59.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/24afc2/d8e379c210cdb651d28985c883fea21a4529ed59.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/24afc2/",
+      "approved": true
+    },
+    {
+      "ruleId": "24afc2",
+      "ruleName": "Important letter spacing in style attributes is wide enough",
+      "ruleAccessibilityRequirements": {
+        "wcag21:1.4.12": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "9788de86b8a4e7a685d356347cc4059874ae6a38",
+      "testcaseTitle": "Failed Example 4",
+      "relativePath": "testcases/24afc2/9788de86b8a4e7a685d356347cc4059874ae6a38.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/24afc2/9788de86b8a4e7a685d356347cc4059874ae6a38.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/24afc2/",
+      "approved": true
+    },
+    {
+      "ruleId": "24afc2",
+      "ruleName": "Important letter spacing in style attributes is wide enough",
+      "ruleAccessibilityRequirements": {
+        "wcag21:1.4.12": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "inapplicable",
+      "testcaseId": "eeca04eb6d00ab0aca01d460f0861f3328d4992d",
+      "testcaseTitle": "Inapplicable Example 1",
+      "relativePath": "testcases/24afc2/eeca04eb6d00ab0aca01d460f0861f3328d4992d.svg",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/24afc2/eeca04eb6d00ab0aca01d460f0861f3328d4992d.svg",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/24afc2/",
+      "approved": true
+    },
+    {
+      "ruleId": "24afc2",
+      "ruleName": "Important letter spacing in style attributes is wide enough",
+      "ruleAccessibilityRequirements": {
+        "wcag21:1.4.12": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "inapplicable",
+      "testcaseId": "9af5662e9957191c22c558a1a8511bae709a2b36",
+      "testcaseTitle": "Inapplicable Example 2",
+      "relativePath": "testcases/24afc2/9af5662e9957191c22c558a1a8511bae709a2b36.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/24afc2/9af5662e9957191c22c558a1a8511bae709a2b36.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/24afc2/",
+      "approved": true
+    },
+    {
+      "ruleId": "24afc2",
+      "ruleName": "Important letter spacing in style attributes is wide enough",
+      "ruleAccessibilityRequirements": {
+        "wcag21:1.4.12": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "inapplicable",
+      "testcaseId": "be174e053a61ece650873a6a44f8e4be356e4193",
+      "testcaseTitle": "Inapplicable Example 3",
+      "relativePath": "testcases/24afc2/be174e053a61ece650873a6a44f8e4be356e4193.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/24afc2/be174e053a61ece650873a6a44f8e4be356e4193.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/24afc2/",
+      "approved": true
+    },
+    {
+      "ruleId": "24afc2",
+      "ruleName": "Important letter spacing in style attributes is wide enough",
+      "ruleAccessibilityRequirements": {
+        "wcag21:1.4.12": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "inapplicable",
+      "testcaseId": "88d6ea5706ed8ae188caa166879c381e64e5077a",
+      "testcaseTitle": "Inapplicable Example 4",
+      "relativePath": "testcases/24afc2/88d6ea5706ed8ae188caa166879c381e64e5077a.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/24afc2/88d6ea5706ed8ae188caa166879c381e64e5077a.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/24afc2/",
+      "approved": true
+    },
+    {
+      "ruleId": "24afc2",
+      "ruleName": "Important letter spacing in style attributes is wide enough",
+      "ruleAccessibilityRequirements": {
+        "wcag21:1.4.12": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "inapplicable",
+      "testcaseId": "92e706402d8f8cb13d73ffb759ce35ec910d272c",
+      "testcaseTitle": "Inapplicable Example 5",
+      "relativePath": "testcases/24afc2/92e706402d8f8cb13d73ffb759ce35ec910d272c.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/24afc2/92e706402d8f8cb13d73ffb759ce35ec910d272c.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/24afc2/",
+      "approved": true
+    },
+    {
+      "ruleId": "24afc2",
+      "ruleName": "Important letter spacing in style attributes is wide enough",
+      "ruleAccessibilityRequirements": {
+        "wcag21:1.4.12": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "inapplicable",
+      "testcaseId": "9608b535262c655f523314958f8ca3019a0968fe",
+      "testcaseTitle": "Inapplicable Example 6",
+      "relativePath": "testcases/24afc2/9608b535262c655f523314958f8ca3019a0968fe.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/24afc2/9608b535262c655f523314958f8ca3019a0968fe.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/24afc2/",
+      "approved": true
+    },
+    {
+      "ruleId": "24afc2",
+      "ruleName": "Important letter spacing in style attributes is wide enough",
+      "ruleAccessibilityRequirements": {
+        "wcag21:1.4.12": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "inapplicable",
+      "testcaseId": "1877242970bb7a92b5c8ee7bc5c5e5ec87877890",
+      "testcaseTitle": "Inapplicable Example 7",
+      "relativePath": "testcases/24afc2/1877242970bb7a92b5c8ee7bc5c5e5ec87877890.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/24afc2/1877242970bb7a92b5c8ee7bc5c5e5ec87877890.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/24afc2/",
+      "approved": true
+    },
+    {
+      "ruleId": "24afc2",
+      "ruleName": "Important letter spacing in style attributes is wide enough",
+      "ruleAccessibilityRequirements": {
+        "wcag21:1.4.12": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "inapplicable",
+      "testcaseId": "6aa2034507dc16e6ae0d16f1b6f2a14d3dfadc18",
+      "testcaseTitle": "Inapplicable Example 8",
+      "relativePath": "testcases/24afc2/6aa2034507dc16e6ae0d16f1b6f2a14d3dfadc18.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/24afc2/6aa2034507dc16e6ae0d16f1b6f2a14d3dfadc18.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/24afc2/",
+      "approved": true
+    },
+    {
+      "ruleId": "24afc2",
+      "ruleName": "Important letter spacing in style attributes is wide enough",
+      "ruleAccessibilityRequirements": {
+        "wcag21:1.4.12": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "inapplicable",
+      "testcaseId": "64b25817b3d3909ab7f4acaee061875ebac1cee3",
+      "testcaseTitle": "Inapplicable Example 9",
+      "relativePath": "testcases/24afc2/64b25817b3d3909ab7f4acaee061875ebac1cee3.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/24afc2/64b25817b3d3909ab7f4acaee061875ebac1cee3.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/24afc2/",
+      "approved": true
+    },
+    {
       "ruleId": "9e45ec",
       "ruleName": "Important word spacing in style attributes is wide enough",
       "ruleAccessibilityRequirements": {
@@ -4065,326 +4426,6 @@
       "relativePath": "testcases/23a2a8/f7692caf5f8c788d58e1aeb8d4f1f240fafdfa91.html",
       "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/23a2a8/f7692caf5f8c788d58e1aeb8d4f1f240fafdfa91.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/23a2a8/proposed/"
-    },
-    {
-      "ruleId": "24afc2",
-      "isApproved": true,
-      "approved": true,
-      "ruleName": "Letter spacing in `style` attributes is not `!important`",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.4.12": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "1877242970bb7a92b5c8ee7bc5c5e5ec87877890",
-      "testcaseTitle": "Passed Example 1",
-      "relativePath": "testcases/24afc2/1877242970bb7a92b5c8ee7bc5c5e5ec87877890.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/24afc2/1877242970bb7a92b5c8ee7bc5c5e5ec87877890.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/24afc2/proposed/"
-    },
-    {
-      "ruleId": "24afc2",
-      "isApproved": true,
-      "approved": true,
-      "ruleName": "Letter spacing in `style` attributes is not `!important`",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.4.12": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "9e9382901f59c7dd476717a55bf5c5a37ed76bbc",
-      "testcaseTitle": "Passed Example 2",
-      "relativePath": "testcases/24afc2/9e9382901f59c7dd476717a55bf5c5a37ed76bbc.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/24afc2/9e9382901f59c7dd476717a55bf5c5a37ed76bbc.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/24afc2/proposed/"
-    },
-    {
-      "ruleId": "24afc2",
-      "isApproved": true,
-      "approved": true,
-      "ruleName": "Letter spacing in `style` attributes is not `!important`",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.4.12": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "43f8fe88b8e7365db7aa251b263b5d00c7a47ae9",
-      "testcaseTitle": "Passed Example 3",
-      "relativePath": "testcases/24afc2/43f8fe88b8e7365db7aa251b263b5d00c7a47ae9.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/24afc2/43f8fe88b8e7365db7aa251b263b5d00c7a47ae9.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/24afc2/proposed/"
-    },
-    {
-      "ruleId": "24afc2",
-      "isApproved": true,
-      "approved": true,
-      "ruleName": "Letter spacing in `style` attributes is not `!important`",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.4.12": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "787f24a573fa422e24ab72312f7306253bb83a4f",
-      "testcaseTitle": "Passed Example 4",
-      "relativePath": "testcases/24afc2/787f24a573fa422e24ab72312f7306253bb83a4f.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/24afc2/787f24a573fa422e24ab72312f7306253bb83a4f.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/24afc2/proposed/"
-    },
-    {
-      "ruleId": "24afc2",
-      "isApproved": true,
-      "approved": true,
-      "ruleName": "Letter spacing in `style` attributes is not `!important`",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.4.12": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "f000a9c495f11a4a11a4314871b91f4173e4589a",
-      "testcaseTitle": "Passed Example 5",
-      "relativePath": "testcases/24afc2/f000a9c495f11a4a11a4314871b91f4173e4589a.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/24afc2/f000a9c495f11a4a11a4314871b91f4173e4589a.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/24afc2/proposed/"
-    },
-    {
-      "ruleId": "24afc2",
-      "isApproved": true,
-      "approved": true,
-      "ruleName": "Letter spacing in `style` attributes is not `!important`",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.4.12": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "9608b535262c655f523314958f8ca3019a0968fe",
-      "testcaseTitle": "Passed Example 6",
-      "relativePath": "testcases/24afc2/9608b535262c655f523314958f8ca3019a0968fe.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/24afc2/9608b535262c655f523314958f8ca3019a0968fe.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/24afc2/proposed/"
-    },
-    {
-      "ruleId": "24afc2",
-      "isApproved": true,
-      "approved": true,
-      "ruleName": "Letter spacing in `style` attributes is not `!important`",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.4.12": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "6aa2034507dc16e6ae0d16f1b6f2a14d3dfadc18",
-      "testcaseTitle": "Passed Example 7",
-      "relativePath": "testcases/24afc2/6aa2034507dc16e6ae0d16f1b6f2a14d3dfadc18.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/24afc2/6aa2034507dc16e6ae0d16f1b6f2a14d3dfadc18.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/24afc2/proposed/"
-    },
-    {
-      "ruleId": "24afc2",
-      "isApproved": true,
-      "approved": true,
-      "ruleName": "Letter spacing in `style` attributes is not `!important`",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.4.12": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "64b25817b3d3909ab7f4acaee061875ebac1cee3",
-      "testcaseTitle": "Passed Example 8",
-      "relativePath": "testcases/24afc2/64b25817b3d3909ab7f4acaee061875ebac1cee3.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/24afc2/64b25817b3d3909ab7f4acaee061875ebac1cee3.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/24afc2/proposed/"
-    },
-    {
-      "ruleId": "24afc2",
-      "isApproved": true,
-      "approved": true,
-      "ruleName": "Letter spacing in `style` attributes is not `!important`",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.4.12": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "failed",
-      "testcaseId": "8383685465c6a417cb86e192d1e9157bd5feee99",
-      "testcaseTitle": "Failed Example 1",
-      "relativePath": "testcases/24afc2/8383685465c6a417cb86e192d1e9157bd5feee99.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/24afc2/8383685465c6a417cb86e192d1e9157bd5feee99.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/24afc2/proposed/"
-    },
-    {
-      "ruleId": "24afc2",
-      "isApproved": true,
-      "approved": true,
-      "ruleName": "Letter spacing in `style` attributes is not `!important`",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.4.12": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "failed",
-      "testcaseId": "b5a8fe74fbbea40e8bbee407f167ae808e14ea49",
-      "testcaseTitle": "Failed Example 2",
-      "relativePath": "testcases/24afc2/b5a8fe74fbbea40e8bbee407f167ae808e14ea49.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/24afc2/b5a8fe74fbbea40e8bbee407f167ae808e14ea49.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/24afc2/proposed/"
-    },
-    {
-      "ruleId": "24afc2",
-      "isApproved": true,
-      "approved": true,
-      "ruleName": "Letter spacing in `style` attributes is not `!important`",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.4.12": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "failed",
-      "testcaseId": "d8e379c210cdb651d28985c883fea21a4529ed59",
-      "testcaseTitle": "Failed Example 3",
-      "relativePath": "testcases/24afc2/d8e379c210cdb651d28985c883fea21a4529ed59.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/24afc2/d8e379c210cdb651d28985c883fea21a4529ed59.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/24afc2/proposed/"
-    },
-    {
-      "ruleId": "24afc2",
-      "isApproved": true,
-      "approved": true,
-      "ruleName": "Letter spacing in `style` attributes is not `!important`",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.4.12": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "failed",
-      "testcaseId": "9788de86b8a4e7a685d356347cc4059874ae6a38",
-      "testcaseTitle": "Failed Example 4",
-      "relativePath": "testcases/24afc2/9788de86b8a4e7a685d356347cc4059874ae6a38.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/24afc2/9788de86b8a4e7a685d356347cc4059874ae6a38.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/24afc2/proposed/"
-    },
-    {
-      "ruleId": "24afc2",
-      "isApproved": true,
-      "approved": true,
-      "ruleName": "Letter spacing in `style` attributes is not `!important`",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.4.12": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "inapplicable",
-      "testcaseId": "eeca04eb6d00ab0aca01d460f0861f3328d4992d",
-      "testcaseTitle": "Inapplicable Example 1",
-      "relativePath": "testcases/24afc2/eeca04eb6d00ab0aca01d460f0861f3328d4992d.svg",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/24afc2/eeca04eb6d00ab0aca01d460f0861f3328d4992d.svg",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/24afc2/proposed/"
-    },
-    {
-      "ruleId": "24afc2",
-      "isApproved": true,
-      "approved": true,
-      "ruleName": "Letter spacing in `style` attributes is not `!important`",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.4.12": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "inapplicable",
-      "testcaseId": "be174e053a61ece650873a6a44f8e4be356e4193",
-      "testcaseTitle": "Inapplicable Example 2",
-      "relativePath": "testcases/24afc2/be174e053a61ece650873a6a44f8e4be356e4193.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/24afc2/be174e053a61ece650873a6a44f8e4be356e4193.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/24afc2/proposed/"
-    },
-    {
-      "ruleId": "24afc2",
-      "isApproved": true,
-      "approved": true,
-      "ruleName": "Letter spacing in `style` attributes is not `!important`",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.4.12": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "inapplicable",
-      "testcaseId": "88d6ea5706ed8ae188caa166879c381e64e5077a",
-      "testcaseTitle": "Inapplicable Example 3",
-      "relativePath": "testcases/24afc2/88d6ea5706ed8ae188caa166879c381e64e5077a.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/24afc2/88d6ea5706ed8ae188caa166879c381e64e5077a.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/24afc2/proposed/"
-    },
-    {
-      "ruleId": "24afc2",
-      "isApproved": true,
-      "approved": true,
-      "ruleName": "Letter spacing in `style` attributes is not `!important`",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.4.12": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "inapplicable",
-      "testcaseId": "92e706402d8f8cb13d73ffb759ce35ec910d272c",
-      "testcaseTitle": "Inapplicable Example 4",
-      "relativePath": "testcases/24afc2/92e706402d8f8cb13d73ffb759ce35ec910d272c.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/24afc2/92e706402d8f8cb13d73ffb759ce35ec910d272c.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/24afc2/proposed/"
     },
     {
       "ruleId": "c487ae",
@@ -20770,60 +20811,6 @@
       "relativePath": "testcases/e88epe/8ff1c1f8ce6c58b66365fd70f6828a89527874e3.html",
       "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/e88epe/8ff1c1f8ce6c58b66365fd70f6828a89527874e3.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/e88epe/proposed/"
-    },
-    {
-      "ruleId": "24afc2",
-      "ruleName": "Important letter spacing in style attributes is wide enough",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.4.12": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "cabfcae45afac141b38fd9cac2e07a64fb6b9896",
-      "testcaseTitle": "Passed Example 5",
-      "relativePath": "testcases/24afc2/cabfcae45afac141b38fd9cac2e07a64fb6b9896.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/24afc2/cabfcae45afac141b38fd9cac2e07a64fb6b9896.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/24afc2/proposed/"
-    },
-    {
-      "ruleId": "24afc2",
-      "ruleName": "Important letter spacing in style attributes is wide enough",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.4.12": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "d6d5bf7c081939e64d10022dd29f5e31d2153d50",
-      "testcaseTitle": "Passed Example 6",
-      "relativePath": "testcases/24afc2/d6d5bf7c081939e64d10022dd29f5e31d2153d50.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/24afc2/d6d5bf7c081939e64d10022dd29f5e31d2153d50.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/24afc2/proposed/"
-    },
-    {
-      "ruleId": "24afc2",
-      "ruleName": "Important letter spacing in style attributes is wide enough",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.4.12": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "inapplicable",
-      "testcaseId": "9af5662e9957191c22c558a1a8511bae709a2b36",
-      "testcaseTitle": "Inapplicable Example 2",
-      "relativePath": "testcases/24afc2/9af5662e9957191c22c558a1a8511bae709a2b36.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/24afc2/9af5662e9957191c22c558a1a8511bae709a2b36.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/24afc2/proposed/"
     },
     {
       "ruleId": "36b590",
