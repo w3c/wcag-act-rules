@@ -1,6 +1,17 @@
 {
   "act-rules": [
     {
+      "title": "ARIA attribute is defined in WAI-ARIA",
+      "permalink": "/standards-guidelines/act/rules/5f99a7/",
+      "successCriteria": [
+        "info-and-relationships",
+        "name-role-value"
+      ],
+      "wcagTechniques": [],
+      "deprecated": false,
+      "proposed": false
+    },
+    {
       "title": "Autocomplete attribute has valid value",
       "permalink": "/standards-guidelines/act/rules/73f2c2/",
       "successCriteria": [
@@ -127,16 +138,6 @@
       ],
       "deprecated": false,
       "proposed": false
-    },
-    {
-      "title": "HTML page lang and xml:lang attributes have matching values",
-      "permalink": "/standards-guidelines/act/rules/5b7ae0/",
-      "successCriteria": [
-        "language-of-page"
-      ],
-      "wcagTechniques": [],
-      "deprecated": true,
-      "proposed": true
     },
     {
       "title": "HTML page lang attribute has valid language tag",
@@ -368,17 +369,6 @@
       "wcagTechniques": [],
       "deprecated": false,
       "proposed": false
-    },
-    {
-      "title": "ARIA attribute is defined in WAI-ARIA",
-      "permalink": "/standards-guidelines/act/rules/5f99a7/proposed/",
-      "successCriteria": [
-        "info-and-relationships",
-        "name-role-value"
-      ],
-      "wcagTechniques": [],
-      "deprecated": false,
-      "proposed": true
     },
     {
       "title": "ARIA required context role",
@@ -700,6 +690,16 @@
         "H58"
       ],
       "deprecated": false,
+      "proposed": true
+    },
+    {
+      "title": "HTML page lang and xml:lang attributes have matching values",
+      "permalink": "/standards-guidelines/act/rules/5b7ae0/",
+      "successCriteria": [
+        "language-of-page"
+      ],
+      "wcagTechniques": [],
+      "deprecated": true,
       "proposed": true
     },
     {

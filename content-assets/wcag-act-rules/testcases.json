@@ -6,6 +6,139 @@
   "count": 1142,
   "testcases": [
     {
+      "ruleId": "5f99a7",
+      "ruleName": "ARIA attribute is defined in WAI-ARIA",
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.3.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
+        },
+        "wcag20:4.1.2": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "261dcd3214e87532fc2f9c8db7fdce05de9e07f0",
+      "testcaseTitle": "Passed Example 1",
+      "relativePath": "testcases/5f99a7/261dcd3214e87532fc2f9c8db7fdce05de9e07f0.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/261dcd3214e87532fc2f9c8db7fdce05de9e07f0.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/5f99a7/",
+      "approved": true
+    },
+    {
+      "ruleId": "5f99a7",
+      "ruleName": "ARIA attribute is defined in WAI-ARIA",
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.3.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
+        },
+        "wcag20:4.1.2": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "31ac49fcb186ee2a233355494fc5e774212ca3d7",
+      "testcaseTitle": "Passed Example 2",
+      "relativePath": "testcases/5f99a7/31ac49fcb186ee2a233355494fc5e774212ca3d7.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/31ac49fcb186ee2a233355494fc5e774212ca3d7.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/5f99a7/",
+      "approved": true
+    },
+    {
+      "ruleId": "5f99a7",
+      "ruleName": "ARIA attribute is defined in WAI-ARIA",
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.3.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
+        },
+        "wcag20:4.1.2": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "3314945d4bbec5b34f9a3c2d90da7cb9f8e7ce5a",
+      "testcaseTitle": "Passed Example 3",
+      "relativePath": "testcases/5f99a7/3314945d4bbec5b34f9a3c2d90da7cb9f8e7ce5a.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/3314945d4bbec5b34f9a3c2d90da7cb9f8e7ce5a.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/5f99a7/",
+      "approved": true
+    },
+    {
+      "ruleId": "5f99a7",
+      "ruleName": "ARIA attribute is defined in WAI-ARIA",
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.3.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
+        },
+        "wcag20:4.1.2": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "830f50dcf51acb0b97b948000d7c163e50858312",
+      "testcaseTitle": "Passed Example 4",
+      "relativePath": "testcases/5f99a7/830f50dcf51acb0b97b948000d7c163e50858312.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/830f50dcf51acb0b97b948000d7c163e50858312.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/5f99a7/",
+      "approved": true
+    },
+    {
+      "ruleId": "5f99a7",
+      "ruleName": "ARIA attribute is defined in WAI-ARIA",
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.3.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
+        },
+        "wcag20:4.1.2": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "e145aafac5f00cabc7cb3d65a32f7fdb5ec1484d",
+      "testcaseTitle": "Failed Example 1",
+      "relativePath": "testcases/5f99a7/e145aafac5f00cabc7cb3d65a32f7fdb5ec1484d.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/e145aafac5f00cabc7cb3d65a32f7fdb5ec1484d.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/5f99a7/",
+      "approved": true
+    },
+    {
+      "ruleId": "5f99a7",
+      "ruleName": "ARIA attribute is defined in WAI-ARIA",
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.3.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
+        },
+        "wcag20:4.1.2": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "b6acf7c4aab0cfdc9f996abc7961790cbc97f39e",
+      "testcaseTitle": "Failed Example 2",
+      "relativePath": "testcases/5f99a7/b6acf7c4aab0cfdc9f996abc7961790cbc97f39e.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/b6acf7c4aab0cfdc9f996abc7961790cbc97f39e.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/5f99a7/",
+      "approved": true
+    },
+    {
+      "ruleId": "5f99a7",
+      "ruleName": "ARIA attribute is defined in WAI-ARIA",
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.3.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
+        },
+        "wcag20:4.1.2": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
+        }
+      },
+      "expected": "inapplicable",
+      "testcaseId": "d528a33258103014c0a03cf1e418ee0620f7b4f6",
+      "testcaseTitle": "Inapplicable Example 1",
+      "relativePath": "testcases/5f99a7/d528a33258103014c0a03cf1e418ee0620f7b4f6.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/d528a33258103014c0a03cf1e418ee0620f7b4f6.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/5f99a7/",
+      "approved": true
+    },
+    {
       "ruleId": "de46e4",
       "ruleName": "Element with lang attribute has valid language tag",
       "ruleAccessibilityRequirements": {
@@ -11698,132 +11831,6 @@
       "relativePath": "testcases/09o5cg/6b811d065fc243c2c94002f315891791e181d518.html",
       "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/6b811d065fc243c2c94002f315891791e181d518.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/09o5cg/proposed/"
-    },
-    {
-      "ruleId": "5f99a7",
-      "ruleName": "ARIA attribute is defined in WAI-ARIA",
-      "ruleAccessibilityRequirements": {
-        "wcag20:1.3.1": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
-        },
-        "wcag20:4.1.2": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "261dcd3214e87532fc2f9c8db7fdce05de9e07f0",
-      "testcaseTitle": "Passed Example 1",
-      "relativePath": "testcases/5f99a7/261dcd3214e87532fc2f9c8db7fdce05de9e07f0.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/261dcd3214e87532fc2f9c8db7fdce05de9e07f0.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/5f99a7/proposed/"
-    },
-    {
-      "ruleId": "5f99a7",
-      "ruleName": "ARIA attribute is defined in WAI-ARIA",
-      "ruleAccessibilityRequirements": {
-        "wcag20:1.3.1": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
-        },
-        "wcag20:4.1.2": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "31ac49fcb186ee2a233355494fc5e774212ca3d7",
-      "testcaseTitle": "Passed Example 2",
-      "relativePath": "testcases/5f99a7/31ac49fcb186ee2a233355494fc5e774212ca3d7.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/31ac49fcb186ee2a233355494fc5e774212ca3d7.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/5f99a7/proposed/"
-    },
-    {
-      "ruleId": "5f99a7",
-      "ruleName": "ARIA attribute is defined in WAI-ARIA",
-      "ruleAccessibilityRequirements": {
-        "wcag20:1.3.1": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
-        },
-        "wcag20:4.1.2": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "3314945d4bbec5b34f9a3c2d90da7cb9f8e7ce5a",
-      "testcaseTitle": "Passed Example 3",
-      "relativePath": "testcases/5f99a7/3314945d4bbec5b34f9a3c2d90da7cb9f8e7ce5a.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/3314945d4bbec5b34f9a3c2d90da7cb9f8e7ce5a.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/5f99a7/proposed/"
-    },
-    {
-      "ruleId": "5f99a7",
-      "ruleName": "ARIA attribute is defined in WAI-ARIA",
-      "ruleAccessibilityRequirements": {
-        "wcag20:1.3.1": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
-        },
-        "wcag20:4.1.2": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "830f50dcf51acb0b97b948000d7c163e50858312",
-      "testcaseTitle": "Passed Example 4",
-      "relativePath": "testcases/5f99a7/830f50dcf51acb0b97b948000d7c163e50858312.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/830f50dcf51acb0b97b948000d7c163e50858312.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/5f99a7/proposed/"
-    },
-    {
-      "ruleId": "5f99a7",
-      "ruleName": "ARIA attribute is defined in WAI-ARIA",
-      "ruleAccessibilityRequirements": {
-        "wcag20:1.3.1": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
-        },
-        "wcag20:4.1.2": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
-        }
-      },
-      "expected": "failed",
-      "testcaseId": "e145aafac5f00cabc7cb3d65a32f7fdb5ec1484d",
-      "testcaseTitle": "Failed Example 1",
-      "relativePath": "testcases/5f99a7/e145aafac5f00cabc7cb3d65a32f7fdb5ec1484d.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/e145aafac5f00cabc7cb3d65a32f7fdb5ec1484d.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/5f99a7/proposed/"
-    },
-    {
-      "ruleId": "5f99a7",
-      "ruleName": "ARIA attribute is defined in WAI-ARIA",
-      "ruleAccessibilityRequirements": {
-        "wcag20:1.3.1": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
-        },
-        "wcag20:4.1.2": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
-        }
-      },
-      "expected": "failed",
-      "testcaseId": "b6acf7c4aab0cfdc9f996abc7961790cbc97f39e",
-      "testcaseTitle": "Failed Example 2",
-      "relativePath": "testcases/5f99a7/b6acf7c4aab0cfdc9f996abc7961790cbc97f39e.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/b6acf7c4aab0cfdc9f996abc7961790cbc97f39e.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/5f99a7/proposed/"
-    },
-    {
-      "ruleId": "5f99a7",
-      "ruleName": "ARIA attribute is defined in WAI-ARIA",
-      "ruleAccessibilityRequirements": {
-        "wcag20:1.3.1": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
-        },
-        "wcag20:4.1.2": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
-        }
-      },
-      "expected": "inapplicable",
-      "testcaseId": "d528a33258103014c0a03cf1e418ee0620f7b4f6",
-      "testcaseTitle": "Inapplicable Example 1",
-      "relativePath": "testcases/5f99a7/d528a33258103014c0a03cf1e418ee0620f7b4f6.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/d528a33258103014c0a03cf1e418ee0620f7b4f6.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/5f99a7/proposed/"
     },
     {
       "ruleId": "ff89c9",
