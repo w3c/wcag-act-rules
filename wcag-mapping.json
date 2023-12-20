@@ -93,6 +93,17 @@
       "proposed": false
     },
     {
+      "title": "HTML images contain no text",
+      "permalink": "/standards-guidelines/act/rules/0va7u6/",
+      "successCriteria": [
+        "images-of-text",
+        "images-of-text-no-exception"
+      ],
+      "wcagTechniques": [],
+      "deprecated": false,
+      "proposed": false
+    },
+    {
       "title": "HTML page has lang attribute",
       "permalink": "/standards-guidelines/act/rules/b5c3f8/",
       "successCriteria": [
@@ -688,17 +699,6 @@
       "wcagTechniques": [
         "H58"
       ],
-      "deprecated": false,
-      "proposed": true
-    },
-    {
-      "title": "HTML images contain no text",
-      "permalink": "/standards-guidelines/act/rules/0va7u6/proposed/",
-      "successCriteria": [
-        "images-of-text",
-        "images-of-text-no-exception"
-      ],
-      "wcagTechniques": [],
       "deprecated": false,
       "proposed": true
     },
