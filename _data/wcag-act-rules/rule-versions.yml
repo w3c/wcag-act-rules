@@ -331,6 +331,14 @@ a25f45:
     isoDate: 2022-08-11
   - file: index.md
     url: 78fd32/
+    w3cDate: 20 December 2023
+    isoDate: 2023-12-20
+    changes:
+      - Update the rule's description
+      - Ignore style attributes which do not actually impact text
+      - Add assumption on text nodes being human language
+  - file: 2022-10-25.md
+    url: 78fd32/2022-10-25/
     w3cDate: 25 October 2022
     isoDate: 2022-10-25
 bc659a:
