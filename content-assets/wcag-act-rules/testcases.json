@@ -6,6 +6,367 @@
   "count": 1142,
   "testcases": [
     {
+      "ruleId": "9e45ec",
+      "ruleName": "Important word spacing in style attributes is wide enough",
+      "ruleAccessibilityRequirements": {
+        "wcag21:1.4.12": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "45e5a588c3e8977fa0e83074d7f7c89738e8ec42",
+      "testcaseTitle": "Passed Example 1",
+      "relativePath": "testcases/9e45ec/45e5a588c3e8977fa0e83074d7f7c89738e8ec42.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/45e5a588c3e8977fa0e83074d7f7c89738e8ec42.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/9e45ec/",
+      "approved": true
+    },
+    {
+      "ruleId": "9e45ec",
+      "ruleName": "Important word spacing in style attributes is wide enough",
+      "ruleAccessibilityRequirements": {
+        "wcag21:1.4.12": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "2a2a14cc9bcb3fa7983e22f160ce9eeb6b832a8c",
+      "testcaseTitle": "Passed Example 2",
+      "relativePath": "testcases/9e45ec/2a2a14cc9bcb3fa7983e22f160ce9eeb6b832a8c.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/2a2a14cc9bcb3fa7983e22f160ce9eeb6b832a8c.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/9e45ec/",
+      "approved": true
+    },
+    {
+      "ruleId": "9e45ec",
+      "ruleName": "Important word spacing in style attributes is wide enough",
+      "ruleAccessibilityRequirements": {
+        "wcag21:1.4.12": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "6d5dde208ef91b6afceca022c7a2a12b99f042b7",
+      "testcaseTitle": "Passed Example 3",
+      "relativePath": "testcases/9e45ec/6d5dde208ef91b6afceca022c7a2a12b99f042b7.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/6d5dde208ef91b6afceca022c7a2a12b99f042b7.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/9e45ec/",
+      "approved": true
+    },
+    {
+      "ruleId": "9e45ec",
+      "ruleName": "Important word spacing in style attributes is wide enough",
+      "ruleAccessibilityRequirements": {
+        "wcag21:1.4.12": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "2d9b8cf0906f0e05e4d487c9682db7a7e022fab0",
+      "testcaseTitle": "Passed Example 4",
+      "relativePath": "testcases/9e45ec/2d9b8cf0906f0e05e4d487c9682db7a7e022fab0.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/2d9b8cf0906f0e05e4d487c9682db7a7e022fab0.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/9e45ec/",
+      "approved": true
+    },
+    {
+      "ruleId": "9e45ec",
+      "ruleName": "Important word spacing in style attributes is wide enough",
+      "ruleAccessibilityRequirements": {
+        "wcag21:1.4.12": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "15905a239d6755102be6a60aa152ad963d5b1dbb",
+      "testcaseTitle": "Passed Example 5",
+      "relativePath": "testcases/9e45ec/15905a239d6755102be6a60aa152ad963d5b1dbb.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/15905a239d6755102be6a60aa152ad963d5b1dbb.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/9e45ec/",
+      "approved": true
+    },
+    {
+      "ruleId": "9e45ec",
+      "ruleName": "Important word spacing in style attributes is wide enough",
+      "ruleAccessibilityRequirements": {
+        "wcag21:1.4.12": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "8d2baed183149375922c23a9a5f42b52b627d713",
+      "testcaseTitle": "Passed Example 6",
+      "relativePath": "testcases/9e45ec/8d2baed183149375922c23a9a5f42b52b627d713.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/8d2baed183149375922c23a9a5f42b52b627d713.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/9e45ec/",
+      "approved": true
+    },
+    {
+      "ruleId": "9e45ec",
+      "ruleName": "Important word spacing in style attributes is wide enough",
+      "ruleAccessibilityRequirements": {
+        "wcag21:1.4.12": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "31d185e51a8be241f8a75d09deae69d3937f0329",
+      "testcaseTitle": "Failed Example 1",
+      "relativePath": "testcases/9e45ec/31d185e51a8be241f8a75d09deae69d3937f0329.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/31d185e51a8be241f8a75d09deae69d3937f0329.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/9e45ec/",
+      "approved": true
+    },
+    {
+      "ruleId": "9e45ec",
+      "ruleName": "Important word spacing in style attributes is wide enough",
+      "ruleAccessibilityRequirements": {
+        "wcag21:1.4.12": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "1134eadf72b2a40c03b8bbf486ebfd3bb34cf986",
+      "testcaseTitle": "Failed Example 2",
+      "relativePath": "testcases/9e45ec/1134eadf72b2a40c03b8bbf486ebfd3bb34cf986.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/1134eadf72b2a40c03b8bbf486ebfd3bb34cf986.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/9e45ec/",
+      "approved": true
+    },
+    {
+      "ruleId": "9e45ec",
+      "ruleName": "Important word spacing in style attributes is wide enough",
+      "ruleAccessibilityRequirements": {
+        "wcag21:1.4.12": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "830c047a178145d69fb7dd3fb21abae5a84f1830",
+      "testcaseTitle": "Failed Example 3",
+      "relativePath": "testcases/9e45ec/830c047a178145d69fb7dd3fb21abae5a84f1830.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/830c047a178145d69fb7dd3fb21abae5a84f1830.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/9e45ec/",
+      "approved": true
+    },
+    {
+      "ruleId": "9e45ec",
+      "ruleName": "Important word spacing in style attributes is wide enough",
+      "ruleAccessibilityRequirements": {
+        "wcag21:1.4.12": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "d9fe2bdf199d96c133830ded7907a28c4c33efcc",
+      "testcaseTitle": "Failed Example 4",
+      "relativePath": "testcases/9e45ec/d9fe2bdf199d96c133830ded7907a28c4c33efcc.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/d9fe2bdf199d96c133830ded7907a28c4c33efcc.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/9e45ec/",
+      "approved": true
+    },
+    {
+      "ruleId": "9e45ec",
+      "ruleName": "Important word spacing in style attributes is wide enough",
+      "ruleAccessibilityRequirements": {
+        "wcag21:1.4.12": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "inapplicable",
+      "testcaseId": "cc484992ddeab663aa5e490f3fd71806c9bd8528",
+      "testcaseTitle": "Inapplicable Example 1",
+      "relativePath": "testcases/9e45ec/cc484992ddeab663aa5e490f3fd71806c9bd8528.svg",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/cc484992ddeab663aa5e490f3fd71806c9bd8528.svg",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/9e45ec/",
+      "approved": true
+    },
+    {
+      "ruleId": "9e45ec",
+      "ruleName": "Important word spacing in style attributes is wide enough",
+      "ruleAccessibilityRequirements": {
+        "wcag21:1.4.12": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "inapplicable",
+      "testcaseId": "fdd3c30f28464b32eb8a1397f70a41dfd3b2cb1c",
+      "testcaseTitle": "Inapplicable Example 2",
+      "relativePath": "testcases/9e45ec/fdd3c30f28464b32eb8a1397f70a41dfd3b2cb1c.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/fdd3c30f28464b32eb8a1397f70a41dfd3b2cb1c.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/9e45ec/",
+      "approved": true
+    },
+    {
+      "ruleId": "9e45ec",
+      "ruleName": "Important word spacing in style attributes is wide enough",
+      "ruleAccessibilityRequirements": {
+        "wcag21:1.4.12": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "inapplicable",
+      "testcaseId": "32f0d32619e3d22a8988256e0f3ebae3e0f801c9",
+      "testcaseTitle": "Inapplicable Example 3",
+      "relativePath": "testcases/9e45ec/32f0d32619e3d22a8988256e0f3ebae3e0f801c9.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/32f0d32619e3d22a8988256e0f3ebae3e0f801c9.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/9e45ec/",
+      "approved": true
+    },
+    {
+      "ruleId": "9e45ec",
+      "ruleName": "Important word spacing in style attributes is wide enough",
+      "ruleAccessibilityRequirements": {
+        "wcag21:1.4.12": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "inapplicable",
+      "testcaseId": "a8f0c6682763e4ca7db824dc145a23067a3eb889",
+      "testcaseTitle": "Inapplicable Example 4",
+      "relativePath": "testcases/9e45ec/a8f0c6682763e4ca7db824dc145a23067a3eb889.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/a8f0c6682763e4ca7db824dc145a23067a3eb889.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/9e45ec/",
+      "approved": true
+    },
+    {
+      "ruleId": "9e45ec",
+      "ruleName": "Important word spacing in style attributes is wide enough",
+      "ruleAccessibilityRequirements": {
+        "wcag21:1.4.12": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "inapplicable",
+      "testcaseId": "92e706402d8f8cb13d73ffb759ce35ec910d272c",
+      "testcaseTitle": "Inapplicable Example 5",
+      "relativePath": "testcases/9e45ec/92e706402d8f8cb13d73ffb759ce35ec910d272c.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/92e706402d8f8cb13d73ffb759ce35ec910d272c.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/9e45ec/",
+      "approved": true
+    },
+    {
+      "ruleId": "9e45ec",
+      "ruleName": "Important word spacing in style attributes is wide enough",
+      "ruleAccessibilityRequirements": {
+        "wcag21:1.4.12": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "inapplicable",
+      "testcaseId": "51faee765656c7bfe86b959373e1df8679726779",
+      "testcaseTitle": "Inapplicable Example 6",
+      "relativePath": "testcases/9e45ec/51faee765656c7bfe86b959373e1df8679726779.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/51faee765656c7bfe86b959373e1df8679726779.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/9e45ec/",
+      "approved": true
+    },
+    {
+      "ruleId": "9e45ec",
+      "ruleName": "Important word spacing in style attributes is wide enough",
+      "ruleAccessibilityRequirements": {
+        "wcag21:1.4.12": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "inapplicable",
+      "testcaseId": "d32bae2609b7c0c66a1df8dbfc182fb10c16805d",
+      "testcaseTitle": "Inapplicable Example 7",
+      "relativePath": "testcases/9e45ec/d32bae2609b7c0c66a1df8dbfc182fb10c16805d.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/d32bae2609b7c0c66a1df8dbfc182fb10c16805d.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/9e45ec/",
+      "approved": true
+    },
+    {
+      "ruleId": "9e45ec",
+      "ruleName": "Important word spacing in style attributes is wide enough",
+      "ruleAccessibilityRequirements": {
+        "wcag21:1.4.12": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "inapplicable",
+      "testcaseId": "fa119442cf663c73bf332488f3965b427b024009",
+      "testcaseTitle": "Inapplicable Example 8",
+      "relativePath": "testcases/9e45ec/fa119442cf663c73bf332488f3965b427b024009.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/fa119442cf663c73bf332488f3965b427b024009.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/9e45ec/",
+      "approved": true
+    },
+    {
+      "ruleId": "9e45ec",
+      "ruleName": "Important word spacing in style attributes is wide enough",
+      "ruleAccessibilityRequirements": {
+        "wcag21:1.4.12": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "inapplicable",
+      "testcaseId": "edaf06132468eccf5fd90551151252a364b44b7b",
+      "testcaseTitle": "Inapplicable Example 9",
+      "relativePath": "testcases/9e45ec/edaf06132468eccf5fd90551151252a364b44b7b.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/edaf06132468eccf5fd90551151252a364b44b7b.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/9e45ec/",
+      "approved": true
+    },
+    {
       "ruleId": "78fd32",
       "ruleName": "Important line height in style attributes is wide enough",
       "ruleAccessibilityRequirements": {
@@ -20463,348 +20824,6 @@
       "relativePath": "testcases/24afc2/9af5662e9957191c22c558a1a8511bae709a2b36.html",
       "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/24afc2/9af5662e9957191c22c558a1a8511bae709a2b36.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/24afc2/proposed/"
-    },
-    {
-      "ruleId": "9e45ec",
-      "ruleName": "Important word spacing in style attributes is wide enough",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.4.12": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "45e5a588c3e8977fa0e83074d7f7c89738e8ec42",
-      "testcaseTitle": "Passed Example 1",
-      "relativePath": "testcases/9e45ec/45e5a588c3e8977fa0e83074d7f7c89738e8ec42.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/45e5a588c3e8977fa0e83074d7f7c89738e8ec42.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/9e45ec/proposed/"
-    },
-    {
-      "ruleId": "9e45ec",
-      "ruleName": "Important word spacing in style attributes is wide enough",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.4.12": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "2a2a14cc9bcb3fa7983e22f160ce9eeb6b832a8c",
-      "testcaseTitle": "Passed Example 2",
-      "relativePath": "testcases/9e45ec/2a2a14cc9bcb3fa7983e22f160ce9eeb6b832a8c.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/2a2a14cc9bcb3fa7983e22f160ce9eeb6b832a8c.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/9e45ec/proposed/"
-    },
-    {
-      "ruleId": "9e45ec",
-      "ruleName": "Important word spacing in style attributes is wide enough",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.4.12": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "6d5dde208ef91b6afceca022c7a2a12b99f042b7",
-      "testcaseTitle": "Passed Example 3",
-      "relativePath": "testcases/9e45ec/6d5dde208ef91b6afceca022c7a2a12b99f042b7.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/6d5dde208ef91b6afceca022c7a2a12b99f042b7.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/9e45ec/proposed/"
-    },
-    {
-      "ruleId": "9e45ec",
-      "ruleName": "Important word spacing in style attributes is wide enough",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.4.12": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "2d9b8cf0906f0e05e4d487c9682db7a7e022fab0",
-      "testcaseTitle": "Passed Example 4",
-      "relativePath": "testcases/9e45ec/2d9b8cf0906f0e05e4d487c9682db7a7e022fab0.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/2d9b8cf0906f0e05e4d487c9682db7a7e022fab0.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/9e45ec/proposed/"
-    },
-    {
-      "ruleId": "9e45ec",
-      "ruleName": "Important word spacing in style attributes is wide enough",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.4.12": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "15905a239d6755102be6a60aa152ad963d5b1dbb",
-      "testcaseTitle": "Passed Example 5",
-      "relativePath": "testcases/9e45ec/15905a239d6755102be6a60aa152ad963d5b1dbb.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/15905a239d6755102be6a60aa152ad963d5b1dbb.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/9e45ec/proposed/"
-    },
-    {
-      "ruleId": "9e45ec",
-      "ruleName": "Important word spacing in style attributes is wide enough",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.4.12": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "8d2baed183149375922c23a9a5f42b52b627d713",
-      "testcaseTitle": "Passed Example 6",
-      "relativePath": "testcases/9e45ec/8d2baed183149375922c23a9a5f42b52b627d713.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/8d2baed183149375922c23a9a5f42b52b627d713.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/9e45ec/proposed/"
-    },
-    {
-      "ruleId": "9e45ec",
-      "ruleName": "Important word spacing in style attributes is wide enough",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.4.12": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "failed",
-      "testcaseId": "31d185e51a8be241f8a75d09deae69d3937f0329",
-      "testcaseTitle": "Failed Example 1",
-      "relativePath": "testcases/9e45ec/31d185e51a8be241f8a75d09deae69d3937f0329.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/31d185e51a8be241f8a75d09deae69d3937f0329.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/9e45ec/proposed/"
-    },
-    {
-      "ruleId": "9e45ec",
-      "ruleName": "Important word spacing in style attributes is wide enough",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.4.12": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "failed",
-      "testcaseId": "1134eadf72b2a40c03b8bbf486ebfd3bb34cf986",
-      "testcaseTitle": "Failed Example 2",
-      "relativePath": "testcases/9e45ec/1134eadf72b2a40c03b8bbf486ebfd3bb34cf986.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/1134eadf72b2a40c03b8bbf486ebfd3bb34cf986.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/9e45ec/proposed/"
-    },
-    {
-      "ruleId": "9e45ec",
-      "ruleName": "Important word spacing in style attributes is wide enough",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.4.12": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "failed",
-      "testcaseId": "830c047a178145d69fb7dd3fb21abae5a84f1830",
-      "testcaseTitle": "Failed Example 3",
-      "relativePath": "testcases/9e45ec/830c047a178145d69fb7dd3fb21abae5a84f1830.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/830c047a178145d69fb7dd3fb21abae5a84f1830.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/9e45ec/proposed/"
-    },
-    {
-      "ruleId": "9e45ec",
-      "ruleName": "Important word spacing in style attributes is wide enough",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.4.12": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "failed",
-      "testcaseId": "d9fe2bdf199d96c133830ded7907a28c4c33efcc",
-      "testcaseTitle": "Failed Example 4",
-      "relativePath": "testcases/9e45ec/d9fe2bdf199d96c133830ded7907a28c4c33efcc.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/d9fe2bdf199d96c133830ded7907a28c4c33efcc.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/9e45ec/proposed/"
-    },
-    {
-      "ruleId": "9e45ec",
-      "ruleName": "Important word spacing in style attributes is wide enough",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.4.12": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "inapplicable",
-      "testcaseId": "cc484992ddeab663aa5e490f3fd71806c9bd8528",
-      "testcaseTitle": "Inapplicable Example 1",
-      "relativePath": "testcases/9e45ec/cc484992ddeab663aa5e490f3fd71806c9bd8528.svg",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/cc484992ddeab663aa5e490f3fd71806c9bd8528.svg",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/9e45ec/proposed/"
-    },
-    {
-      "ruleId": "9e45ec",
-      "ruleName": "Important word spacing in style attributes is wide enough",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.4.12": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "inapplicable",
-      "testcaseId": "fdd3c30f28464b32eb8a1397f70a41dfd3b2cb1c",
-      "testcaseTitle": "Inapplicable Example 2",
-      "relativePath": "testcases/9e45ec/fdd3c30f28464b32eb8a1397f70a41dfd3b2cb1c.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/fdd3c30f28464b32eb8a1397f70a41dfd3b2cb1c.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/9e45ec/proposed/"
-    },
-    {
-      "ruleId": "9e45ec",
-      "ruleName": "Important word spacing in style attributes is wide enough",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.4.12": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "inapplicable",
-      "testcaseId": "32f0d32619e3d22a8988256e0f3ebae3e0f801c9",
-      "testcaseTitle": "Inapplicable Example 3",
-      "relativePath": "testcases/9e45ec/32f0d32619e3d22a8988256e0f3ebae3e0f801c9.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/32f0d32619e3d22a8988256e0f3ebae3e0f801c9.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/9e45ec/proposed/"
-    },
-    {
-      "ruleId": "9e45ec",
-      "ruleName": "Important word spacing in style attributes is wide enough",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.4.12": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "inapplicable",
-      "testcaseId": "a8f0c6682763e4ca7db824dc145a23067a3eb889",
-      "testcaseTitle": "Inapplicable Example 4",
-      "relativePath": "testcases/9e45ec/a8f0c6682763e4ca7db824dc145a23067a3eb889.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/a8f0c6682763e4ca7db824dc145a23067a3eb889.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/9e45ec/proposed/"
-    },
-    {
-      "ruleId": "9e45ec",
-      "ruleName": "Important word spacing in style attributes is wide enough",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.4.12": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "inapplicable",
-      "testcaseId": "92e706402d8f8cb13d73ffb759ce35ec910d272c",
-      "testcaseTitle": "Inapplicable Example 5",
-      "relativePath": "testcases/9e45ec/92e706402d8f8cb13d73ffb759ce35ec910d272c.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/92e706402d8f8cb13d73ffb759ce35ec910d272c.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/9e45ec/proposed/"
-    },
-    {
-      "ruleId": "9e45ec",
-      "ruleName": "Important word spacing in style attributes is wide enough",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.4.12": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "inapplicable",
-      "testcaseId": "51faee765656c7bfe86b959373e1df8679726779",
-      "testcaseTitle": "Inapplicable Example 6",
-      "relativePath": "testcases/9e45ec/51faee765656c7bfe86b959373e1df8679726779.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/51faee765656c7bfe86b959373e1df8679726779.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/9e45ec/proposed/"
-    },
-    {
-      "ruleId": "9e45ec",
-      "ruleName": "Important word spacing in style attributes is wide enough",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.4.12": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "inapplicable",
-      "testcaseId": "d32bae2609b7c0c66a1df8dbfc182fb10c16805d",
-      "testcaseTitle": "Inapplicable Example 7",
-      "relativePath": "testcases/9e45ec/d32bae2609b7c0c66a1df8dbfc182fb10c16805d.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/d32bae2609b7c0c66a1df8dbfc182fb10c16805d.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/9e45ec/proposed/"
-    },
-    {
-      "ruleId": "9e45ec",
-      "ruleName": "Important word spacing in style attributes is wide enough",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.4.12": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "inapplicable",
-      "testcaseId": "fa119442cf663c73bf332488f3965b427b024009",
-      "testcaseTitle": "Inapplicable Example 8",
-      "relativePath": "testcases/9e45ec/fa119442cf663c73bf332488f3965b427b024009.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/fa119442cf663c73bf332488f3965b427b024009.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/9e45ec/proposed/"
-    },
-    {
-      "ruleId": "9e45ec",
-      "ruleName": "Important word spacing in style attributes is wide enough",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.4.12": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "inapplicable",
-      "testcaseId": "edaf06132468eccf5fd90551151252a364b44b7b",
-      "testcaseTitle": "Inapplicable Example 9",
-      "relativePath": "testcases/9e45ec/edaf06132468eccf5fd90551151252a364b44b7b.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9e45ec/edaf06132468eccf5fd90551151252a364b44b7b.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/9e45ec/proposed/"
     },
     {
       "ruleId": "36b590",
