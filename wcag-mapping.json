@@ -334,6 +334,20 @@
       "proposed": false
     },
     {
+      "title": "Role attribute has valid value",
+      "permalink": "/standards-guidelines/act/rules/674b10/",
+      "successCriteria": [
+        "info-and-relationships",
+        "name-role-value"
+      ],
+      "wcagTechniques": [
+        "ARIA4",
+        "G108"
+      ],
+      "deprecated": false,
+      "proposed": false
+    },
+    {
       "title": "Scrollable content can be reached with sequential focus navigation",
       "permalink": "/standards-guidelines/act/rules/0ssw9k/",
       "successCriteria": [
@@ -828,20 +842,6 @@
         "orientation"
       ],
       "wcagTechniques": [],
-      "deprecated": false,
-      "proposed": true
-    },
-    {
-      "title": "Role attribute has valid value",
-      "permalink": "/standards-guidelines/act/rules/674b10/proposed/",
-      "successCriteria": [
-        "info-and-relationships",
-        "name-role-value"
-      ],
-      "wcagTechniques": [
-        "ARIA4",
-        "G108"
-      ],
       "deprecated": false,
       "proposed": true
     },

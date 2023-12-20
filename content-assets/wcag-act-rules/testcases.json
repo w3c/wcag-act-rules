@@ -6,6 +6,316 @@
   "count": 1142,
   "testcases": [
     {
+      "ruleId": "674b10",
+      "ruleName": "Role attribute has valid value",
+      "ruleAccessibilityRequirements": {
+        "wcag-technique:ARIA4": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:G108": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:1.3.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because the success criterion can be satisfied by an element's implicit role when the explicit role is incorrect. Some of the failed examples may satisfy this success criterion."
+        },
+        "wcag20:4.1.2": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because the success criterion can be satisfied by an element's implicit role when the explicit role is incorrect. Some of the failed examples may satisfy this success criterion."
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "c181f7267bf9f4fc0f9ad9e2a69c1ad7da504f4d",
+      "testcaseTitle": "Passed Example 1",
+      "relativePath": "testcases/674b10/c181f7267bf9f4fc0f9ad9e2a69c1ad7da504f4d.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/c181f7267bf9f4fc0f9ad9e2a69c1ad7da504f4d.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/674b10/",
+      "approved": true
+    },
+    {
+      "ruleId": "674b10",
+      "ruleName": "Role attribute has valid value",
+      "ruleAccessibilityRequirements": {
+        "wcag-technique:ARIA4": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:G108": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:1.3.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because the success criterion can be satisfied by an element's implicit role when the explicit role is incorrect. Some of the failed examples may satisfy this success criterion."
+        },
+        "wcag20:4.1.2": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because the success criterion can be satisfied by an element's implicit role when the explicit role is incorrect. Some of the failed examples may satisfy this success criterion."
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "9980fd3a6f30b20069618708b2c8fa79d444e0a4",
+      "testcaseTitle": "Passed Example 2",
+      "relativePath": "testcases/674b10/9980fd3a6f30b20069618708b2c8fa79d444e0a4.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/9980fd3a6f30b20069618708b2c8fa79d444e0a4.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/674b10/",
+      "approved": true
+    },
+    {
+      "ruleId": "674b10",
+      "ruleName": "Role attribute has valid value",
+      "ruleAccessibilityRequirements": {
+        "wcag-technique:ARIA4": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:G108": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:1.3.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because the success criterion can be satisfied by an element's implicit role when the explicit role is incorrect. Some of the failed examples may satisfy this success criterion."
+        },
+        "wcag20:4.1.2": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because the success criterion can be satisfied by an element's implicit role when the explicit role is incorrect. Some of the failed examples may satisfy this success criterion."
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "8ee31c22ec3fa0bccf46e3f44e9a5d8e752bc776",
+      "testcaseTitle": "Passed Example 3",
+      "relativePath": "testcases/674b10/8ee31c22ec3fa0bccf46e3f44e9a5d8e752bc776.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/8ee31c22ec3fa0bccf46e3f44e9a5d8e752bc776.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/674b10/",
+      "approved": true
+    },
+    {
+      "ruleId": "674b10",
+      "ruleName": "Role attribute has valid value",
+      "ruleAccessibilityRequirements": {
+        "wcag-technique:ARIA4": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:G108": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:1.3.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because the success criterion can be satisfied by an element's implicit role when the explicit role is incorrect. Some of the failed examples may satisfy this success criterion."
+        },
+        "wcag20:4.1.2": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because the success criterion can be satisfied by an element's implicit role when the explicit role is incorrect. Some of the failed examples may satisfy this success criterion."
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "4b0aaf07c6e9fb6ea3495dd9cecf55d47b9539b8",
+      "testcaseTitle": "Failed Example 1",
+      "relativePath": "testcases/674b10/4b0aaf07c6e9fb6ea3495dd9cecf55d47b9539b8.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/4b0aaf07c6e9fb6ea3495dd9cecf55d47b9539b8.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/674b10/",
+      "approved": true
+    },
+    {
+      "ruleId": "674b10",
+      "ruleName": "Role attribute has valid value",
+      "ruleAccessibilityRequirements": {
+        "wcag-technique:ARIA4": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:G108": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:1.3.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because the success criterion can be satisfied by an element's implicit role when the explicit role is incorrect. Some of the failed examples may satisfy this success criterion."
+        },
+        "wcag20:4.1.2": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because the success criterion can be satisfied by an element's implicit role when the explicit role is incorrect. Some of the failed examples may satisfy this success criterion."
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "527c265ba570f0131dddef3687981b66f6dd156f",
+      "testcaseTitle": "Failed Example 2",
+      "relativePath": "testcases/674b10/527c265ba570f0131dddef3687981b66f6dd156f.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/527c265ba570f0131dddef3687981b66f6dd156f.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/674b10/",
+      "approved": true
+    },
+    {
+      "ruleId": "674b10",
+      "ruleName": "Role attribute has valid value",
+      "ruleAccessibilityRequirements": {
+        "wcag-technique:ARIA4": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:G108": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:1.3.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because the success criterion can be satisfied by an element's implicit role when the explicit role is incorrect. Some of the failed examples may satisfy this success criterion."
+        },
+        "wcag20:4.1.2": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because the success criterion can be satisfied by an element's implicit role when the explicit role is incorrect. Some of the failed examples may satisfy this success criterion."
+        }
+      },
+      "expected": "inapplicable",
+      "testcaseId": "ebd0080bacb8debc7ad069072240657df38c3e2c",
+      "testcaseTitle": "Inapplicable Example 1",
+      "relativePath": "testcases/674b10/ebd0080bacb8debc7ad069072240657df38c3e2c.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/ebd0080bacb8debc7ad069072240657df38c3e2c.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/674b10/",
+      "approved": true
+    },
+    {
+      "ruleId": "674b10",
+      "ruleName": "Role attribute has valid value",
+      "ruleAccessibilityRequirements": {
+        "wcag-technique:ARIA4": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:G108": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:1.3.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because the success criterion can be satisfied by an element's implicit role when the explicit role is incorrect. Some of the failed examples may satisfy this success criterion."
+        },
+        "wcag20:4.1.2": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because the success criterion can be satisfied by an element's implicit role when the explicit role is incorrect. Some of the failed examples may satisfy this success criterion."
+        }
+      },
+      "expected": "inapplicable",
+      "testcaseId": "98f200a9611571fd8db46027c8d28616d94083c8",
+      "testcaseTitle": "Inapplicable Example 2",
+      "relativePath": "testcases/674b10/98f200a9611571fd8db46027c8d28616d94083c8.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/98f200a9611571fd8db46027c8d28616d94083c8.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/674b10/",
+      "approved": true
+    },
+    {
+      "ruleId": "674b10",
+      "ruleName": "Role attribute has valid value",
+      "ruleAccessibilityRequirements": {
+        "wcag-technique:ARIA4": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:G108": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:1.3.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because the success criterion can be satisfied by an element's implicit role when the explicit role is incorrect. Some of the failed examples may satisfy this success criterion."
+        },
+        "wcag20:4.1.2": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because the success criterion can be satisfied by an element's implicit role when the explicit role is incorrect. Some of the failed examples may satisfy this success criterion."
+        }
+      },
+      "expected": "inapplicable",
+      "testcaseId": "8f409b57b31bce96b6f256d0fa9cfabcd0b984ca",
+      "testcaseTitle": "Inapplicable Example 3",
+      "relativePath": "testcases/674b10/8f409b57b31bce96b6f256d0fa9cfabcd0b984ca.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/8f409b57b31bce96b6f256d0fa9cfabcd0b984ca.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/674b10/",
+      "approved": true
+    },
+    {
+      "ruleId": "674b10",
+      "ruleName": "Role attribute has valid value",
+      "ruleAccessibilityRequirements": {
+        "wcag-technique:ARIA4": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:G108": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:1.3.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because the success criterion can be satisfied by an element's implicit role when the explicit role is incorrect. Some of the failed examples may satisfy this success criterion."
+        },
+        "wcag20:4.1.2": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because the success criterion can be satisfied by an element's implicit role when the explicit role is incorrect. Some of the failed examples may satisfy this success criterion."
+        }
+      },
+      "expected": "inapplicable",
+      "testcaseId": "0b8e3a6fb2bfd495683f686cf99ea1e46f2074ed",
+      "testcaseTitle": "Inapplicable Example 4",
+      "relativePath": "testcases/674b10/0b8e3a6fb2bfd495683f686cf99ea1e46f2074ed.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/0b8e3a6fb2bfd495683f686cf99ea1e46f2074ed.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/674b10/",
+      "approved": true
+    },
+    {
+      "ruleId": "674b10",
+      "ruleName": "Role attribute has valid value",
+      "ruleAccessibilityRequirements": {
+        "wcag-technique:ARIA4": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:G108": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:1.3.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because the success criterion can be satisfied by an element's implicit role when the explicit role is incorrect. Some of the failed examples may satisfy this success criterion."
+        },
+        "wcag20:4.1.2": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because the success criterion can be satisfied by an element's implicit role when the explicit role is incorrect. Some of the failed examples may satisfy this success criterion."
+        }
+      },
+      "expected": "inapplicable",
+      "testcaseId": "575a5e323abe810450d5ff443a5fd614dae12257",
+      "testcaseTitle": "Inapplicable Example 5",
+      "relativePath": "testcases/674b10/575a5e323abe810450d5ff443a5fd614dae12257.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/575a5e323abe810450d5ff443a5fd614dae12257.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/674b10/",
+      "approved": true
+    },
+    {
       "ruleId": "6a7281",
       "ruleName": "ARIA state or property has valid value",
       "ruleAccessibilityRequirements": {
@@ -23378,306 +23688,6 @@
       "relativePath": "testcases/ffbc54/25d6f835f76fe661574145391bb1286b063a5c84.html",
       "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ffbc54/25d6f835f76fe661574145391bb1286b063a5c84.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/ffbc54/proposed/"
-    },
-    {
-      "ruleId": "674b10",
-      "ruleName": "Role attribute has valid value",
-      "ruleAccessibilityRequirements": {
-        "wcag-technique:ARIA4": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:G108": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag20:1.3.1": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because the success criterion can be satisfied by an element's implicit role when the explicit role is incorrect. Some of the failed examples may satisfy this success criterion."
-        },
-        "wcag20:4.1.2": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because the success criterion can be satisfied by an element's implicit role when the explicit role is incorrect. Some of the failed examples may satisfy this success criterion."
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "c181f7267bf9f4fc0f9ad9e2a69c1ad7da504f4d",
-      "testcaseTitle": "Passed Example 1",
-      "relativePath": "testcases/674b10/c181f7267bf9f4fc0f9ad9e2a69c1ad7da504f4d.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/c181f7267bf9f4fc0f9ad9e2a69c1ad7da504f4d.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/674b10/proposed/"
-    },
-    {
-      "ruleId": "674b10",
-      "ruleName": "Role attribute has valid value",
-      "ruleAccessibilityRequirements": {
-        "wcag-technique:ARIA4": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:G108": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag20:1.3.1": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because the success criterion can be satisfied by an element's implicit role when the explicit role is incorrect. Some of the failed examples may satisfy this success criterion."
-        },
-        "wcag20:4.1.2": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because the success criterion can be satisfied by an element's implicit role when the explicit role is incorrect. Some of the failed examples may satisfy this success criterion."
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "9980fd3a6f30b20069618708b2c8fa79d444e0a4",
-      "testcaseTitle": "Passed Example 2",
-      "relativePath": "testcases/674b10/9980fd3a6f30b20069618708b2c8fa79d444e0a4.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/9980fd3a6f30b20069618708b2c8fa79d444e0a4.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/674b10/proposed/"
-    },
-    {
-      "ruleId": "674b10",
-      "ruleName": "Role attribute has valid value",
-      "ruleAccessibilityRequirements": {
-        "wcag-technique:ARIA4": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:G108": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag20:1.3.1": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because the success criterion can be satisfied by an element's implicit role when the explicit role is incorrect. Some of the failed examples may satisfy this success criterion."
-        },
-        "wcag20:4.1.2": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because the success criterion can be satisfied by an element's implicit role when the explicit role is incorrect. Some of the failed examples may satisfy this success criterion."
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "8ee31c22ec3fa0bccf46e3f44e9a5d8e752bc776",
-      "testcaseTitle": "Passed Example 3",
-      "relativePath": "testcases/674b10/8ee31c22ec3fa0bccf46e3f44e9a5d8e752bc776.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/8ee31c22ec3fa0bccf46e3f44e9a5d8e752bc776.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/674b10/proposed/"
-    },
-    {
-      "ruleId": "674b10",
-      "ruleName": "Role attribute has valid value",
-      "ruleAccessibilityRequirements": {
-        "wcag-technique:ARIA4": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:G108": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag20:1.3.1": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because the success criterion can be satisfied by an element's implicit role when the explicit role is incorrect. Some of the failed examples may satisfy this success criterion."
-        },
-        "wcag20:4.1.2": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because the success criterion can be satisfied by an element's implicit role when the explicit role is incorrect. Some of the failed examples may satisfy this success criterion."
-        }
-      },
-      "expected": "failed",
-      "testcaseId": "4b0aaf07c6e9fb6ea3495dd9cecf55d47b9539b8",
-      "testcaseTitle": "Failed Example 1",
-      "relativePath": "testcases/674b10/4b0aaf07c6e9fb6ea3495dd9cecf55d47b9539b8.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/4b0aaf07c6e9fb6ea3495dd9cecf55d47b9539b8.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/674b10/proposed/"
-    },
-    {
-      "ruleId": "674b10",
-      "ruleName": "Role attribute has valid value",
-      "ruleAccessibilityRequirements": {
-        "wcag-technique:ARIA4": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:G108": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag20:1.3.1": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because the success criterion can be satisfied by an element's implicit role when the explicit role is incorrect. Some of the failed examples may satisfy this success criterion."
-        },
-        "wcag20:4.1.2": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because the success criterion can be satisfied by an element's implicit role when the explicit role is incorrect. Some of the failed examples may satisfy this success criterion."
-        }
-      },
-      "expected": "failed",
-      "testcaseId": "527c265ba570f0131dddef3687981b66f6dd156f",
-      "testcaseTitle": "Failed Example 2",
-      "relativePath": "testcases/674b10/527c265ba570f0131dddef3687981b66f6dd156f.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/527c265ba570f0131dddef3687981b66f6dd156f.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/674b10/proposed/"
-    },
-    {
-      "ruleId": "674b10",
-      "ruleName": "Role attribute has valid value",
-      "ruleAccessibilityRequirements": {
-        "wcag-technique:ARIA4": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:G108": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag20:1.3.1": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because the success criterion can be satisfied by an element's implicit role when the explicit role is incorrect. Some of the failed examples may satisfy this success criterion."
-        },
-        "wcag20:4.1.2": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because the success criterion can be satisfied by an element's implicit role when the explicit role is incorrect. Some of the failed examples may satisfy this success criterion."
-        }
-      },
-      "expected": "inapplicable",
-      "testcaseId": "ebd0080bacb8debc7ad069072240657df38c3e2c",
-      "testcaseTitle": "Inapplicable Example 1",
-      "relativePath": "testcases/674b10/ebd0080bacb8debc7ad069072240657df38c3e2c.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/ebd0080bacb8debc7ad069072240657df38c3e2c.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/674b10/proposed/"
-    },
-    {
-      "ruleId": "674b10",
-      "ruleName": "Role attribute has valid value",
-      "ruleAccessibilityRequirements": {
-        "wcag-technique:ARIA4": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:G108": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag20:1.3.1": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because the success criterion can be satisfied by an element's implicit role when the explicit role is incorrect. Some of the failed examples may satisfy this success criterion."
-        },
-        "wcag20:4.1.2": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because the success criterion can be satisfied by an element's implicit role when the explicit role is incorrect. Some of the failed examples may satisfy this success criterion."
-        }
-      },
-      "expected": "inapplicable",
-      "testcaseId": "98f200a9611571fd8db46027c8d28616d94083c8",
-      "testcaseTitle": "Inapplicable Example 2",
-      "relativePath": "testcases/674b10/98f200a9611571fd8db46027c8d28616d94083c8.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/98f200a9611571fd8db46027c8d28616d94083c8.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/674b10/proposed/"
-    },
-    {
-      "ruleId": "674b10",
-      "ruleName": "Role attribute has valid value",
-      "ruleAccessibilityRequirements": {
-        "wcag-technique:ARIA4": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:G108": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag20:1.3.1": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because the success criterion can be satisfied by an element's implicit role when the explicit role is incorrect. Some of the failed examples may satisfy this success criterion."
-        },
-        "wcag20:4.1.2": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because the success criterion can be satisfied by an element's implicit role when the explicit role is incorrect. Some of the failed examples may satisfy this success criterion."
-        }
-      },
-      "expected": "inapplicable",
-      "testcaseId": "8f409b57b31bce96b6f256d0fa9cfabcd0b984ca",
-      "testcaseTitle": "Inapplicable Example 3",
-      "relativePath": "testcases/674b10/8f409b57b31bce96b6f256d0fa9cfabcd0b984ca.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/8f409b57b31bce96b6f256d0fa9cfabcd0b984ca.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/674b10/proposed/"
-    },
-    {
-      "ruleId": "674b10",
-      "ruleName": "Role attribute has valid value",
-      "ruleAccessibilityRequirements": {
-        "wcag-technique:ARIA4": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:G108": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag20:1.3.1": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because the success criterion can be satisfied by an element's implicit role when the explicit role is incorrect. Some of the failed examples may satisfy this success criterion."
-        },
-        "wcag20:4.1.2": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because the success criterion can be satisfied by an element's implicit role when the explicit role is incorrect. Some of the failed examples may satisfy this success criterion."
-        }
-      },
-      "expected": "inapplicable",
-      "testcaseId": "0b8e3a6fb2bfd495683f686cf99ea1e46f2074ed",
-      "testcaseTitle": "Inapplicable Example 4",
-      "relativePath": "testcases/674b10/0b8e3a6fb2bfd495683f686cf99ea1e46f2074ed.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/0b8e3a6fb2bfd495683f686cf99ea1e46f2074ed.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/674b10/proposed/"
-    },
-    {
-      "ruleId": "674b10",
-      "ruleName": "Role attribute has valid value",
-      "ruleAccessibilityRequirements": {
-        "wcag-technique:ARIA4": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:G108": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag20:1.3.1": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because the success criterion can be satisfied by an element's implicit role when the explicit role is incorrect. Some of the failed examples may satisfy this success criterion."
-        },
-        "wcag20:4.1.2": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because the success criterion can be satisfied by an element's implicit role when the explicit role is incorrect. Some of the failed examples may satisfy this success criterion."
-        }
-      },
-      "expected": "inapplicable",
-      "testcaseId": "575a5e323abe810450d5ff443a5fd614dae12257",
-      "testcaseTitle": "Inapplicable Example 5",
-      "relativePath": "testcases/674b10/575a5e323abe810450d5ff443a5fd614dae12257.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/575a5e323abe810450d5ff443a5fd614dae12257.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/674b10/proposed/"
     },
     {
       "ruleId": "4e8ab6",
