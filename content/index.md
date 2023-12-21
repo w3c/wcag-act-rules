@@ -29,9 +29,11 @@ The ACT Rules in this section directly relate to WCAG 2 success criteria. These 
 
 <ul>
 {%- for rule in site.data.wcag-act-rules.rules["act-rules"] %}
-  {%- if rule.proposed == false and rule.successCriteria.size > 0 and rule.deprecated != true and rule.ruleId != '5f99a7' and rule.ruleId != '6a7281' and rule.ruleId != '674b10' %}
+  {%- unless rule.permalink contains '/5f99a7' or rule.permalink contains '/6a7281' or rule.permalink contains '/674b10' %}
+  {%- if rule.proposed == false and rule.deprecated != true %}
     <li><a href="{{ rule.permalink | relative_url }}">{{ rule.title }}</a></li>
   {%- endif %}
+  {%- endunless %}
 {%- endfor %}
 </ul>
 
@@ -41,7 +43,7 @@ The ACT Rules in this section directly relate to WAI-ARIA Requirements. These ru
 
 <ul>
 {%- for rule in site.data.wcag-act-rules.rules["act-rules"] %}
-  {%- if rule.ruleId == '5f99a7' or rule.ruleId == '6a7281' or rule.ruleId == '674b10' %}
+  {%- if rule.permalink contains '/5f99a7' or rule.permalink contains '/6a7281' or rule.permalink contains '/674b10' %}
     <li><a href="{{ rule.permalink | relative_url }}">{{ rule.title }}</a></li>
   {%- endif %}
 {%- endfor %}
