@@ -39,7 +39,7 @@ The ACT Rules in this section directly relate to WCAG 2 success criteria. These 
 
 ## Rules for WAI-ARIA
 
-The ACT Rules in this section directly relate to WAI-ARIA Requirements. These rules have been approved by the WAI-ARIA Working Group. They are fully implemented in at least one [test tool or methodology](../implementations/).
+The ACT Rules in this section directly relate to WAI-ARIA requirements. These rules have been approved by the WAI-ARIA Working Group. They are fully implemented in at least one [test tool or methodology](../implementations/).
 
 <ul>
 {%- for rule in site.data.wcag-act-rules.rules["act-rules"] %}
