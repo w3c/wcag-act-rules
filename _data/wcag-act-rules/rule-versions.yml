@@ -5,6 +5,12 @@ de46e4:
     isoDate: 2022-06-21
   - file: index.md
     url: de46e4/
+    w3cDate: 20 December 2023
+    isoDate: 2023-12-20
+    changes:
+      - Update example descriptions of failed example 4 and 5
+  - file: 2022-06-23.md
+    url: de46e4/2022-06-23/
     w3cDate: 23 June 2022
     isoDate: 2022-06-23
     changes:
@@ -75,7 +81,7 @@ e086e5:
     w3cDate: 31 August 2023
     isoDate: 2023-08-31
     changes:
-      - Update to reference ARIA 1.2 
+      - Update to reference ARIA 1.2
   - file: 2022-06-23.md
     url: 46ca7f/2022-06-23/
     w3cDate: 23 June 2022
@@ -95,6 +101,14 @@ e086e5:
     isoDate: 2022-06-21
   - file: index.md
     url: 9e45ec/
+    w3cDate: 20 December 2023
+    isoDate: 2023-12-20
+    changes:
+      - Update the rule's description
+      - Ignore style attributes which do not actually impact text
+      - Add assumption on text nodes being human language
+  - file: 2022-06-23.md
+    url: 9e45ec/2022-06-23/
     w3cDate: 23 June 2022
     isoDate: 2022-06-23
     changes:
@@ -110,6 +124,14 @@ e086e5:
     isoDate: 2022-06-21
   - file: index.md
     url: 24afc2/
+    w3cDate: 20 December 2023
+    isoDate: 2023-12-20
+    changes:
+      - Update the rule's description
+      - Ignore style attributes which do not actually impact text
+      - Add assumption on text nodes being human language
+  - file: 2022-06-23.md
+    url: 24afc2/2022-06-23/
     w3cDate: 23 June 2022
     isoDate: 2022-06-23
     changes:
@@ -168,7 +190,8 @@ e086e5:
     w3cDate: 31 August 2023
     isoDate: 2023-08-31
     changes:
-      - Add clarification about empty attributes to Background and Accessibility support
+      - Add clarification about empty attributes to Background and Accessibility
+        support
   - file: 2022-06-23.md
     url: 59796f/2022-06-23/
     w3cDate: 23 June 2022
@@ -238,7 +261,7 @@ b5c3f8:
     url: b5c3f8/
     w3cDate: 31 August 2023
     isoDate: 2023-08-31
-    changes: 
+    changes:
       - Add text of the correct language to each example.
   - file: 2022-01-28.md
     url: b5c3f8/2022-01-28/
@@ -251,15 +274,6 @@ bf051a:
     isoDate: 2022-06-21
   - file: index.md
     url: bf051a/
-    w3cDate: 28 January 2022
-    isoDate: 2022-01-28
-5b7ae0:
-  - file: proposed.md
-    url: 5b7ae0/proposed/
-    w3cDate: 21 June 2022
-    isoDate: 2022-06-21
-  - file: index.md
-    url: 5b7ae0/
     w3cDate: 28 January 2022
     isoDate: 2022-01-28
 7d6734:
@@ -330,6 +344,14 @@ a25f45:
     isoDate: 2022-08-11
   - file: index.md
     url: 78fd32/
+    w3cDate: 20 December 2023
+    isoDate: 2023-12-20
+    changes:
+      - Update the rule's description
+      - Ignore style attributes which do not actually impact text
+      - Add assumption on text nodes being human language
+  - file: 2022-10-25.md
+    url: 78fd32/2022-10-25/
     w3cDate: 25 October 2022
     isoDate: 2022-10-25
 bc659a:
@@ -393,6 +415,12 @@ akn7bn:
     isoDate: 2023-08-30
   - file: index.md
     url: akn7bn/
+    w3cDate: 20 December 2023
+    isoDate: 2023-12-20
+    changes:
+      - Added inapplicable example 5 and 6
+  - file: 2023-08-30.md
+    url: akn7bn/2023-08-30/
     w3cDate: 30 August 2023
     isoDate: 2023-08-30
 0ssw9k:
@@ -420,6 +448,12 @@ m6b1q3:
     isoDate: 2023-08-30
   - file: index.md
     url: m6b1q3/
+    w3cDate: 20 December 2023
+    isoDate: 2023-12-20
+    changes:
+      - Updated accessibility support section
+  - file: 2023-08-30.md
+    url: m6b1q3/2023-08-30/
     w3cDate: 30 August 2023
     isoDate: 2023-08-30
 c4a8a4:
@@ -431,3 +465,48 @@ c4a8a4:
     url: c4a8a4/
     w3cDate: 30 August 2023
     isoDate: 2023-08-30
+bisz58:
+  - file: proposed.md
+    url: bisz58/proposed/
+    w3cDate: 30 August 2023
+    isoDate: 2023-08-30
+  - file: index.md
+    url: bisz58/
+    w3cDate: 20 December 2023
+    isoDate: 2023-12-20
+0va7u6:
+  - file: proposed.md
+    url: 0va7u6/proposed/
+    w3cDate: 18 December 2023
+    isoDate: 2023-12-18
+  - file: index.md
+    url: 0va7u6/
+    w3cDate: 20 December 2023
+    isoDate: 2023-12-20
+5f99a7:
+  - file: proposed.md
+    url: 5f99a7/proposed/
+    w3cDate: 30 August 2023
+    isoDate: 2023-08-30
+  - file: index.md
+    url: 5f99a7/
+    w3cDate: 20 December 2023
+    isoDate: 2023-12-20
+6a7281:
+  - file: proposed.md
+    url: 6a7281/proposed/
+    w3cDate: 26 October 2023
+    isoDate: 2023-10-26
+  - file: index.md
+    url: 6a7281/
+    w3cDate: 20 December 2023
+    isoDate: 2023-12-20
+674b10:
+  - file: proposed.md
+    url: 674b10/proposed/
+    w3cDate: 25 October 2023
+    isoDate: 2023-10-25
+  - file: index.md
+    url: 674b10/
+    w3cDate: 20 December 2023
+    isoDate: 2023-12-20

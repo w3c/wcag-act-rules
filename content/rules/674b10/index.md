@@ -1,82 +1,110 @@
 ---
-title: "Menuitem has non-empty accessible name"
-permalink: /standards-guidelines/act/rules/m6b1q3/
-ref: /standards-guidelines/act/rules/m6b1q3/
+title: "Role attribute has valid value"
+permalink: /standards-guidelines/act/rules/674b10/
+ref: /standards-guidelines/act/rules/674b10/
 lang: en
 github:
   repository: w3c/wcag-act-rules
-  path: content/rules/m6b1q3/index.md
+  path: content/rules/674b10/index.md
 feedbackmail: public-wcag-act@w3.org
 footer: |
-  <p><strong>Rule Identifier:</strong> m6b1q3</p>
+  <p><strong>Rule Identifier:</strong> 674b10</p>
   <p><strong>Date:</strong> Updated 20 December 2023</p>
-  <p><strong>Authors:</strong> <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
+  <p><strong>Authors:</strong> <a href="https://github.com/jkodu">Jey Nandakumar</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It was approved and published by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
-  
-  <p><strong>Assets:</strong> Test cases use assets from the following sources: The "file.svg" icon is part of the Feather Icons package, which uses the <a href="https://github.com/feathericons/feather/blob/master/LICENSE">MIT license</a>.</p>
 proposed: false
 rule_meta:
-  id: m6b1q3
-  name: "Menuitem has non-empty accessible name"
+  id: 674b10
+  name: "Role attribute has valid value"
   rule_type: atomic
-  original_file: menuitem-non-empty-name-m6b1q3.md
+  original_file: role-attribute-valid-value-674b10.md
   description: |
-    This rule checks that each element with a `menuitem` role has a non-empty accessible name.
+    This rule checks that each `role` attribute has a valid value.
   last_modified: 20 December 2023
-  scs_tested:
-    - handle: Name, Role, Value
-      num: 4.1.2
-      level: A
 ---
 
 ## Applicability
 
-This rule applies to [HTML elements][] that is a [semantic][semantic role] `menuitem` [included in the accessibility tree][].
+This rule applies to any `role` attribute for which all the following are true:
+
+- the attribute has a value that is neither empty ("") nor only [ASCII whitespace][]; and
+- the attribute is specified on an [HTML or SVG element][] which is not [programmatically hidden][].
 
 ## Expectation
 
-Each target element has an [accessible name][] that is not empty (`""`).
+Each test target has at least one token which is a valid value corresponding to a non-abstract role from [WAI-ARIA Specifications][].
 
 ## Assumptions
 
-This rule assumes that all menuitems are [user interface components as defined by WCAG 2](https://www.w3.org/TR/WCAG21/#dfn-user-interface-components). If an element has a role of `menuitem` that would not be perceived as a single control by users, [4.1.2 Name, Role, Value](https://www.w3.org/TR/WCAG21/#name-role-value) would not apply and so failing this rule would not result in a conformance issue.
+There are no assumptions.
 
 ## Accessibility Support
 
-Implementation of [Presentational Roles Conflict Resolution][] varies from one browser or assistive technology to another. Depending on this, some [semantic][semantic role] `menuitem` elements can fail this rule with some technology but users of other technologies would not experience any accessibility issue.
+Older browsers do not support more than one token in the value for a role attribute. If multiple values are used in the role attribute, the attribute is ignored in these browsers.
 
 ## Background
 
+Using an invalid role is often the result of a typo or other developer error. Unknown roles are ignored by browsers and assistive technologies, and the element's [implicit role][] is used. This often means that a role that should exist is missing.
+
+The `role` attribute is a set of [space separated tokens][]. Having a [whitespace](#whitespace) separated list of more than one token in the value of the role attribute is used for what is known as _fallback roles_. If the first token is not accessibility supported (or valid), the next one will be used for determining the [semantic role][] of the element, and so forth. The rule applies to attributes containing at least one non-[ASCII whitespace][] character so that there is at least one token in the set.
+
+Not every role can be used on every element. Which ARIA roles may be used on which HTML elements is defined in [ARIA in HTML](https://www.w3.org/TR/html-aria/). Testing this is not part of this rule.
+
 ### Bibliography
 
-- [Understanding Success Criterion 4.1.2: Name, Role, Value](https://www.w3.org/WAI/WCAG21/Understanding/name-role-value)
-- [ARIA14: Using aria-label to provide an invisible label where a visible label cannot be used](https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA14)
-- [ARIA16: Using aria-labelledby to provide a name for user interface controls](https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA16)
+- [List of WAI-ARIA Roles][wai-aria role]
+- [List of Graphics ARIA Roles](https://www.w3.org/TR/graphics-aria-1.0/#role_definitions)
+- [List of DPUB ARIA Roles](https://www.w3.org/TR/dpub-aria-1.1/#role_definitions)
+- [Specification of the `role` attribute][role attribute]
+- [WAI-ARIA 1.2 Categorization of Roles](https://www.w3.org/TR/wai-aria-1.2/#roles_categorization)
+- [WAI-ARIA Roles](https://www.w3.org/TR/wai-aria-1.2/#introroles)
 
 ## Accessibility Requirements Mapping
 
 <ul class="act-requirements-list">
   <li><details>
-    <summary><span>4.1.2 Name, Role, Value (Level A)</span></summary>
+    <summary><span>ARIA4: Using a WAI-ARIA role to expose the role of a user interface component</span></summary>
     <ul>
-      <li><a href="https://www.w3.org/TR/WCAG21/#name-role-value">Learn more about 4.1.2 Name, Role, Value</a></li>
-      <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level A and higher.</li>
+      <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA4">Learn more about technique ARIA4</a></li>
+      <li>Not required for conformance to any W3C accessibility recommendation.</li>
       <li>Outcome mapping: <ul>
-        <li>Any <code>failed</code> outcomes: success criterion is not satisfied</li>
-        <li>All <code>passed</code> outcomes: success criterion needs further testing</li>
-        <li>An <code>inapplicable</code> outcome: success criterion needs further testing</li>
+        <li>Any <code>failed</code> outcomes: technique is not satisfied</li>
+        <li>All <code>passed</code> outcomes: technique needs further testing</li>
+        <li>An <code>inapplicable</code> outcome: technique needs further testing</li>
+      </ul></li>
+    </ul>
+  </details></li>
+  <li><details>
+    <summary><span>G108: Using markup features to expose the name and role, allow user-settable properties to be directly set, and provide notification of changes</span></summary>
+    <ul>
+      <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G108">Learn more about technique G108</a></li>
+      <li>Not required for conformance to any W3C accessibility recommendation.</li>
+      <li>Outcome mapping: <ul>
+        <li>Any <code>failed</code> outcomes: technique is not satisfied</li>
+        <li>All <code>passed</code> outcomes: technique needs further testing</li>
+        <li>An <code>inapplicable</code> outcome: technique needs further testing</li>
       </ul></li>
     </ul>
   </details></li>
 </ul>
 
+### Secondary Requirements
+
+This rule is related to the following accessibility requirements, but was 
+not designed to test this requirements directly. These 
+[secondary requirements](https://w3c.github.io/wcag-act/act-rules-format.html#secondary-requirements)
+can either be stricter than the rule requires, or may be satisfied in ways 
+not tested by the rule:
+
+- [1.3.1 Info and Relationships (Level A)](https://www.w3.org/TR/WCAG21/#info-and-relationships): This success criterion is **less strict** than this rule. This is because the success criterion can be satisfied by an element's implicit role when the explicit role is incorrect. Some of the failed examples may satisfy this success criterion.
+- [4.1.2 Name, Role, Value (Level A)](https://www.w3.org/TR/WCAG21/#name-role-value): This success criterion is **less strict** than this rule. This is because the success criterion can be satisfied by an element's implicit role when the explicit role is incorrect. Some of the failed examples may satisfy this success criterion.
+
 ## Input Aspects
 
 The following aspects are required in using this rule.
 
-- [Accessibility Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-accessibility)
-- [CSS Styling](https://www.w3.org/TR/act-rules-aspects/#input-aspects-css)
 - [DOM Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom)
+- [CSS Styling](https://www.w3.org/TR/act-rules-aspects/#input-aspects-css)
 
 ## Test Cases
 
@@ -84,143 +112,133 @@ The following aspects are required in using this rule.
 
 #### Passed Example 1
 
-<a class="example-link" title="Passed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/m6b1q3/895a5b0d06d892bc50351cfd2db426b31cfcc97f.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/c181f7267bf9f4fc0f9ad9e2a69c1ad7da504f4d.html">Open in a new tab</a>
 
-This element with the `menuitem` role has an [accessible name][] because of its text content.
+This `role` attribute contains one `searchbox` token which is a valid [WAI-ARIA role][].
 
 ```html
-<div role="menu">
-	<button role="menuitem">New file</button>
-</div>
+<label>Search: <input type="text" role="searchbox" placeholder="Enter 3 or more characters"/></label>
 ```
 
 #### Passed Example 2
 
-<a class="example-link" title="Passed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/m6b1q3/78c41b8461997477cb7b6a9d163ba8a387ad56b8.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/9980fd3a6f30b20069618708b2c8fa79d444e0a4.html">Open in a new tab</a>
 
-This element with the `menuitem` role has an [accessible name][] because of its `aria-label` attribute.
+This `role` attribute contains two tokens which are both valid [WAI-ARIA roles][wai-aria role].
 
 ```html
-<div role="menu">
-	<button role="menuitem" aria-label="New file">
-		<img src="/test-assets/shared/file.svg" alt="" />
-	</button>
-</div>
+<style>
+	.ref {
+		color: #0000ee;
+		text-decoration: underline;
+		cursor: pointer;
+	}
+</style>
+See [<span class="ref" onclick="location.href='https://act-rules.github.io/'" role="doc-biblioref link">ACT rules</span
+>].
 ```
 
 #### Passed Example 3
 
-<a class="example-link" title="Passed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/m6b1q3/83a0c030f9172c3d8d862d01138e75ec7aaf4f4e.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/8ee31c22ec3fa0bccf46e3f44e9a5d8e752bc776.html">Open in a new tab</a>
 
-This element with the `menuitem` role has an [accessible name][] because its `aria-labelledby` attribute references an element with text content.
-
-```html
-<div role="menu">
-	<button role="menuitem" aria-labelledby="newfile">
-		<img src="/test-assets/shared/file.svg" alt="" />
-		<span id="newfile" hidden>New file</span>
-	</button>
-</div>
-```
-
-#### Passed Example 4
-
-<a class="example-link" title="Passed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/m6b1q3/c05155744a79e6ff72f1b691b8bae15338e8146b.html">Open in a new tab</a>
-
-This element with the `menuitem` role has an [accessible name][] because of its `title` attribute.
+This `role` attribute contains two tokens, and one of these tokens (`searchbox`) is a valid [WAI-ARIA role][].
 
 ```html
-<div role="menu">
-	<button role="menuitem" title="New file">
-		<img src="/test-assets/shared/file.svg" alt="" />
-	</button>
-</div>
+<label>Search: <input type="text" role="searchfield searchbox" placeholder="Enter 3 or more characters"/></label>
 ```
 
 ### Failed
 
 #### Failed Example 1
 
-<a class="example-link" title="Failed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/m6b1q3/f3a40579bcb3cab4f12a31639bc9dd0ca5c14d87.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/4b0aaf07c6e9fb6ea3495dd9cecf55d47b9539b8.html">Open in a new tab</a>
 
-This element with the `menuitem` role has no [accessible name][] because it has no content or attribute that can provide it.
+This `role` attribute contains one `lnik` token, but this token is not a valid role in any of the [WAI-ARIA specifications][].
 
 ```html
-<div role="menu">
-	<button role="menuitem">
-		<img src="/test-assets/shared/file.svg" alt="" />
-	</button>
-</div>
+<style>
+	.link {
+		color: #0000ee;
+		text-decoration: underline;
+		cursor: pointer;
+	}
+</style>
+I love <span class="link" onclick="location.href='https://act-rules.github.io/'" role="lnik">ACT rules</span>.
 ```
 
 #### Failed Example 2
 
-<a class="example-link" title="Failed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/m6b1q3/c261108b8bb62e118a47a52d0a157b4265a6e143.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/527c265ba570f0131dddef3687981b66f6dd156f.html">Open in a new tab</a>
 
-This off-screen element with the `menuitem` role has no [accessible name][] because it has no content or attribute that can provide it.
+This `role` attribute contains two tokens, but neither of these tokens is a valid role in any of the [WAI-ARIA specifications][].
 
 ```html
-<html lang="en">
-	<style>
-		.offscreen {
-			position: absolute;
-			left: -9999px;
-			top: -9999px;
-		}
-	</style>
-	<div role="menu" class="offscreen">
-		<button role="menuitem">
-			<img src="/test-assets/shared/file.svg" alt="" />
-		</button>
-	</div>
-</html>
+<style>
+	.ref {
+		color: #0000ee;
+		text-decoration: underline;
+		cursor: pointer;
+	}
+</style>
+See [<span class="ref" onclick="location.href='https://act-rules.github.io/'" role="bibliographic-reference lnik"
+	>ACT rules</span
+>].
 ```
 
 ### Inapplicable
 
 #### Inapplicable Example 1
 
-<a class="example-link" title="Inapplicable Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/m6b1q3/4eec4a33bca54e6313e0af600af41797bb7c4213.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/ebd0080bacb8debc7ad069072240657df38c3e2c.html">Open in a new tab</a>
 
-The `li` element has a `listitem` [semantic role][], even as a child of a `menu` element.
+There is no `role` attribute.
 
 ```html
-<menu>
-	<li>
-		<a href="#">New file</a>
-	</li>
-</menu>
+<img src="/test-assets/shared/w3c-logo.png" alt="W3C logo" />
 ```
 
 #### Inapplicable Example 2
 
-<a class="example-link" title="Inapplicable Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/m6b1q3/0edc121ac393fa9661fc1c18156e040775313779.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/98f200a9611571fd8db46027c8d28616d94083c8.html">Open in a new tab</a>
 
-This element with the `menuitem` role does not need an [accessible name][] because it is not [included in the accessibility tree][].
+This `role` attribute has no value.
 
 ```html
-<div role="menu" hidden>
-	<button role="menuitem">
-		<img src="/test-assets/shared/file.svg" alt="" />
-	</button>
-</div>
+<div role>Some Content</div>
+```
+
+#### Inapplicable Example 3
+
+<a class="example-link" title="Inapplicable Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/8f409b57b31bce96b6f256d0fa9cfabcd0b984ca.html">Open in a new tab</a>
+
+This `role` attribute is empty ("").
+
+```html
+<div role="">Some Content</div>
+```
+
+#### Inapplicable Example 4
+
+<a class="example-link" title="Inapplicable Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/0b8e3a6fb2bfd495683f686cf99ea1e46f2074ed.html">Open in a new tab</a>
+
+This `role` attribute is only [ASCII whitespace][].
+
+```html
+<input type="text" role=" " />
+```
+
+#### Inapplicable Example 5
+
+<a class="example-link" title="Inapplicable Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/575a5e323abe810450d5ff443a5fd614dae12257.html">Open in a new tab</a>
+
+This `role` attribute is specified on an element which is [programmatically hidden][].
+
+```html
+<div aria-hidden="true" role="banner">Some Content</div>
 ```
 
 ## Glossary
-
-### Accessible Name {#accessible-name}
-
-The _accessible name_ is the programmatically determined name of a user interface element that is [included in the accessibility tree](#included-in-the-accessibility-tree).
-
-The accessible name is calculated using the [accessible name and description computation][].
-
-For native markup languages, such as HTML and SVG, additional information on how to calculate the accessible name can be found in [HTML Accessibility API Mappings 1.0, Accessible Name and Description Computation (working draft)](https://www.w3.org/TR/html-aam/#accessible-name-and-description-computation) and [SVG Accessibility API Mappings, Name and Description (working draft)](https://www.w3.org/TR/svg-aam/#mapping_additional).
-
-For more details, see [examples of accessible name][].
-
-**Note:** As per the [accessible name and description computation][], each element always has an accessible name. When no accessible name is provided, the element will nonetheless be assigned an empty (`""`) one.
-
-**Note:** As per the [accessible name and description computation][], accessible names are [flat string](https://www.w3.org/TR/accname-1.1/#terminology) trimmed of leading and trailing whitespace. Notably, it is not possible for a non-empty accessible name to be composed only of whitespace since these must be trimmed.
 
 ### Explicit Semantic Role {#explicit-role}
 
@@ -320,30 +338,46 @@ The _WAI ARIA Specifications_ group both the WAI ARIA W3C Recommendation and ARI
 
 **Note:** depending on the type of content being evaluated, part of the specifications might be irrelevant and should be ignored.
 
+### Whitespace {#whitespace}
+
+_Whitespace_ are characters that have the Unicode "White_Space" property in the [Unicode properties list](https://www.unicode.org/Public/UCD/latest/ucd/PropList.txt).
+
+This includes:
+
+- all characters in the [Unicode Separator categories](https://www.unicode.org/versions/Unicode11.0.0/ch04.pdf#G134153), and
+- the following characters in the [Other, Control](https://www.unicode.org/versions/Unicode11.0.0/ch04.pdf#G134153) category:
+
+  - Character tabulation (U+0009)
+  - Line Feed (LF) (U+000A)
+  - Line Tabulation (U+000B)
+  - Form Feed (FF) (U+000C)
+  - Carriage Return (CR) (U+000D)
+  - Next Line (NEL) (U+0085)
+
 [accessibility support base line]: https://www.w3.org/TR/WCAG-EM/#step1c 'Definition of accessibility support base line'
-[accessible name and description computation]: https://www.w3.org/TR/accname 'Accessible Name and Description Computation'
-[accessible name]: #accessible-name 'Definition of accessible name'
+[ascii whitespace]: https://infra.spec.whatwg.org/#ascii-whitespace 'Definition of ASCII whitespace'
 [computed]: https://www.w3.org/TR/css-cascade/#computed-value 'CSS definition of computed value'
 [element]: https://dom.spec.whatwg.org/#element 'DOM element, 2021/05/31'
-[examples of accessible name]: https://act-rules.github.io/pages/examples/accessible-name/
 [examples of included in the accessibility tree]: https://act-rules.github.io/pages/examples/included-in-the-accessibility-tree/
 [explicit role]: #explicit-role 'Definition of Explicit Role'
 [flat tree]: https://drafts.csswg.org/css-scoping/#flat-tree 'Definition of flat tree'
 [focusable]: #focusable 'Definition of Focusable'
-[html elements]: #namespaced-element
 [html namespaces]: https://infra.spec.whatwg.org/#namespaces 'HTML namespace, 2021/05/31'
+[html or svg element]: #namespaced-element
 [implicit role]: #implicit-role 'Definition of Implicit Role'
-[included in the accessibility tree]: #included-in-the-accessibility-tree 'Definition of included in the accessibility tree'
+[included in the accessibility tree]: #included-in-the-accessibility-tree 'Definition of Included in the Accessibility Tree'
 [inclusive ancestors]: https://dom.spec.whatwg.org/#concept-tree-inclusive-ancestor 'DOM Definition of Inclusive Ancestor'
 [marked as decorative]: #marked-as-decorative 'Definition of Marked as Decorative'
 [namespaceuri]: https://dom.spec.whatwg.org/#dom-element-namespaceuri 'DOM Element namespaceURI, 2021/05/31'
 [presentational roles conflict resolution]: https://www.w3.org/TR/wai-aria-1.1/#conflict_resolution_presentation_none 'Presentational Roles Conflict Resolution'
 [programmatically hidden]: #programmatically-hidden 'Definition of Programmatically Hidden'
 [pure decoration]: https://www.w3.org/TR/WCAG21/#dfn-pure-decoration 'WCAG definition of Pure Decoration'
-[role attribute]: https://www.w3.org/TR/role-attribute/ 'Specification of the role attribute'
+[role attribute]: https://www.w3.org/TR/role-attribute/ 'Specification of the Role attribute'
 [rules for parsing integers]: https://html.spec.whatwg.org/#rules-for-parsing-integers
 [semantic role]: #semantic-role 'Definition of Semantic Role'
 [sequential focus navigation]: https://html.spec.whatwg.org/multipage/interaction.html#sequential-focus-navigation
+[space separated tokens]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#space-separated-tokens 'Definition of space separated tokens'
 [tabindex attribute]: https://html.spec.whatwg.org/#attr-tabindex
 [tabindex value]: https://html.spec.whatwg.org/#tabindex-value
-[wai-aria specifications]: #wai-aria-specifications 'Definition of WAI-ARIA specifications'
+[wai-aria role]: https://www.w3.org/TR/wai-aria-1.2/#role_definitions 'List of WAI-ARIA roles'
+[wai-aria specifications]: #wai-aria-specifications 'Definition of WAI-ARIA Specifications'
