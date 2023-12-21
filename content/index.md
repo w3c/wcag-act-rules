@@ -41,7 +41,7 @@ The ACT Rules in this section directly relate to WAI-ARIA Requirements. These ru
 
 <ul>
 {%- for rule in site.data.wcag-act-rules.rules["act-rules"] %}
-  {%- if rule.ruleId == '5f99a7' or rule.ruleId == '6a7281' or rule.ruleId != '674b10' %}
+  {%- if rule.ruleId == '5f99a7' or rule.ruleId == '6a7281' or rule.ruleId == '674b10' %}
     <li><a href="{{ rule.permalink | relative_url }}">{{ rule.title }}</a></li>
   {%- endif %}
 {%- endfor %}
