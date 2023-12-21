@@ -11,7 +11,6 @@ github:
   path: content/index.md
 footer:
   <p>ACT Rules are developed by the <a href="https://www.w3.org/community/act-r/">ACT Rules Community Group</a> and the <a href="https://www.w3.org/groups/tf/wcag-act">Accessibility Conformance Testing (ACT) Task Force</a> of the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>). ACT Rules work was part of the <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>, <a href="https://www.w3.org/WAI/about/projects/wai-guide/">WAI-Guide Project</a>, and <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>, co-funded by the European Commission.</p>
-  
 ---
 
 {::nomarkdown}
@@ -30,7 +29,21 @@ The ACT Rules in this section directly relate to WCAG 2 success criteria. These 
 
 <ul>
 {%- for rule in site.data.wcag-act-rules.rules["act-rules"] %}
+  {%- unless rule.permalink contains '/5f99a7' or rule.permalink contains '/6a7281' or rule.permalink contains '/674b10' %}
   {%- if rule.proposed == false and rule.deprecated != true %}
+    <li><a href="{{ rule.permalink | relative_url }}">{{ rule.title }}</a></li>
+  {%- endif %}
+  {%- endunless %}
+{%- endfor %}
+</ul>
+
+## Rules for WAI-ARIA
+
+The ACT Rules in this section directly relate to WAI-ARIA requirements. These rules have been approved by the WAI-ARIA Working Group. They are fully implemented in at least one [test tool or methodology](../implementations/).
+
+<ul>
+{%- for rule in site.data.wcag-act-rules.rules["act-rules"] %}
+  {%- if rule.permalink contains '/5f99a7' or rule.permalink contains '/6a7281' or rule.permalink contains '/674b10' %}
     <li><a href="{{ rule.permalink | relative_url }}">{{ rule.title }}</a></li>
   {%- endif %}
 {%- endfor %}
