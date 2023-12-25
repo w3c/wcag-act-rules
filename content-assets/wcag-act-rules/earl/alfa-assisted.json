@@ -12140,7 +12140,7 @@
       }
     },
     {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/65f069d9d7d5a75562917c80ab7334b2914f42f4.html",
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/388f97562ae3b7e3aec7ad6305df36a91b68cf77.html",
       "@type": "TestSubject",
       "dct:hasPart": [
         {
@@ -12160,7 +12160,7 @@
             "@list": []
           },
           "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/65f069d9d7d5a75562917c80ab7334b2914f42f4.html"
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/388f97562ae3b7e3aec7ad6305df36a91b68cf77.html"
         },
         {
           "@type": [
@@ -12173,7 +12173,7 @@
               "cnt:ContentAsText"
             ],
             "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<head>\n\t\t<title>Page with some content</title>\n\t\t<style>\n\t\t\tbody {\n\t\t\t\ttransform: rotate(90deg);\n\t\t\t}\n\t\t</style>\n\t</head>\n\t<body>\n\t\t<main>\n\t\t\tPage Content\n\t\t</main>\n\t</body>\n</html>"
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<head>\n\t\t<title>Page with some content</title>\n\t\t<style>\n\t\t\t@media (orientation: landscape) {\n\t\t\t\tbody {\n\t\t\t\t\ttransform: matrix3d(0, -1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);\n\t\t\t\t}\n\t\t\t}\n\t\t</style>\n\t</head>\n\t<body>\n\t\tPage Content\n\t</body>\n</html>"
           },
           "http-vocab:headers": {
             "@list": [
@@ -12187,7 +12187,7 @@
           "http-vocab:statusCodeValue": 200
         }
       ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/65f069d9d7d5a75562917c80ab7334b2914f42f4.html"
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/388f97562ae3b7e3aec7ad6305df36a91b68cf77.html"
     },
     {
       "@type": "Assertion",
@@ -12195,10 +12195,20 @@
       "earl:mode": "earl:automatic",
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:inapplicable"
+        "info": "The element is locked in orientation",
+        "outcome": "earl:failed",
+        "earl:pointer": {
+          "@type": [
+            "ptr:Pointer",
+            "ptr:SinglePointer",
+            "ptr:ExpressionPointer",
+            "ptr:XPathPointer"
+          ],
+          "ptr:expression": "/html[1]/body[1]"
+        }
       },
       "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/65f069d9d7d5a75562917c80ab7334b2914f42f4.html"
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/388f97562ae3b7e3aec7ad6305df36a91b68cf77.html"
       },
       "test": {
         "@id": "https://alfa.siteimprove.com/rules/sia-r44"
@@ -14405,7 +14415,7 @@
       }
     },
     {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/53a78bad6e92791991df42c50d2e763a9f9d772c.html",
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/49b66676ed867c75368e31c1e06b28255df8089e.html",
       "@type": "TestSubject",
       "dct:hasPart": [
         {
@@ -14425,7 +14435,7 @@
             "@list": []
           },
           "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/53a78bad6e92791991df42c50d2e763a9f9d772c.html"
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/49b66676ed867c75368e31c1e06b28255df8089e.html"
         },
         {
           "@type": [
@@ -14438,7 +14448,7 @@
               "cnt:ContentAsText"
             ],
             "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html>\n\t<body>\n\t\t<article lang=\"en\">\n\t\t\tThey wandered into a strange Tiki bar on the edge of the small beach town.\n\t\t</article>\n\t</body>\n</html>"
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<body>\n\t\t<article lang=\"#!\">\n\t\t\tThey wandered into a strange Tiki bar on the edge of the small beach town.\n\t\t</article>\n\t</body>\n</html>"
           },
           "http-vocab:headers": {
             "@list": [
@@ -14452,7 +14462,7 @@
           "http-vocab:statusCodeValue": 200
         }
       ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/53a78bad6e92791991df42c50d2e763a9f9d772c.html"
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/49b66676ed867c75368e31c1e06b28255df8089e.html"
     },
     {
       "@type": "Assertion",
@@ -14460,8 +14470,8 @@
       "earl:mode": "earl:automatic",
       "result": {
         "@type": "TestResult",
-        "info": "The `lang` attribute has a valid primary language subtag",
-        "outcome": "earl:passed",
+        "info": "The `lang` attribute does not have a valid primary language subtag",
+        "outcome": "earl:failed",
         "earl:pointer": {
           "@type": [
             "ptr:Pointer",
@@ -14473,7 +14483,7 @@
         }
       },
       "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/53a78bad6e92791991df42c50d2e763a9f9d772c.html"
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/49b66676ed867c75368e31c1e06b28255df8089e.html"
       },
       "test": {
         "@id": "https://alfa.siteimprove.com/rules/sia-r7"
@@ -16830,7 +16840,7 @@
       }
     },
     {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/388f97562ae3b7e3aec7ad6305df36a91b68cf77.html",
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/5cde20e2acab8991c299a317825201af48bf5736.html",
       "@type": "TestSubject",
       "dct:hasPart": [
         {
@@ -16850,7 +16860,7 @@
             "@list": []
           },
           "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/388f97562ae3b7e3aec7ad6305df36a91b68cf77.html"
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/5cde20e2acab8991c299a317825201af48bf5736.html"
         },
         {
           "@type": [
@@ -16863,7 +16873,7 @@
               "cnt:ContentAsText"
             ],
             "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<head>\n\t\t<title>Page with some content</title>\n\t\t<style>\n\t\t\t@media (orientation: landscape) {\n\t\t\t\tbody {\n\t\t\t\t\ttransform: matrix3d(0, -1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);\n\t\t\t\t}\n\t\t\t}\n\t\t</style>\n\t</head>\n\t<body>\n\t\tPage Content\n\t</body>\n</html>"
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<head>\n\t\t<title>Page with some content</title>\n\t\t<style>\n\t\t\t@media (orientation: lanscape) {\n\t\t\t\tbody {\n\t\t\t\t\ttransform: rotateZ(0, 0, 1, 270deg);\n\t\t\t\t}\n\t\t\t}\n\t\t</style>\n\t</head>\n\t<body style=\"display:none;\">\n\t\t<main>\n\t\t\tPage Content\n\t\t</main>\n\t</body>\n</html>"
           },
           "http-vocab:headers": {
             "@list": [
@@ -16877,7 +16887,7 @@
           "http-vocab:statusCodeValue": 200
         }
       ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/388f97562ae3b7e3aec7ad6305df36a91b68cf77.html"
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/5cde20e2acab8991c299a317825201af48bf5736.html"
     },
     {
       "@type": "Assertion",
@@ -16885,20 +16895,10 @@
       "earl:mode": "earl:automatic",
       "result": {
         "@type": "TestResult",
-        "info": "The element is locked in orientation",
-        "outcome": "earl:failed",
-        "earl:pointer": {
-          "@type": [
-            "ptr:Pointer",
-            "ptr:SinglePointer",
-            "ptr:ExpressionPointer",
-            "ptr:XPathPointer"
-          ],
-          "ptr:expression": "/html[1]/body[1]"
-        }
+        "outcome": "earl:inapplicable"
       },
       "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/388f97562ae3b7e3aec7ad6305df36a91b68cf77.html"
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/5cde20e2acab8991c299a317825201af48bf5736.html"
       },
       "test": {
         "@id": "https://alfa.siteimprove.com/rules/sia-r44"
@@ -19096,7 +19096,7 @@
       }
     },
     {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/207782d0d8899521e2b51b5c384f83d7f4516358.html",
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/78de8b1ca470302aebb53065c32eddf08da008b5.html",
       "@type": "TestSubject",
       "dct:hasPart": [
         {
@@ -19116,7 +19116,7 @@
             "@list": []
           },
           "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/207782d0d8899521e2b51b5c384f83d7f4516358.html"
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/78de8b1ca470302aebb53065c32eddf08da008b5.html"
         },
         {
           "@type": [
@@ -19129,7 +19129,7 @@
               "cnt:ContentAsText"
             ],
             "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html>\n\t<body>\n\t\t<p lang=\"en-US-GB\">\n\t\t\tThey wandered into a strange Tiki bar on the edge of the small beach town.\n\t\t</p>\n\t</body>\n</html>"
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"fr\">\n\t<body>\n\t\t<article lang=\"  \">\n\t\t\tThey wandered into a strange Tiki bar on the edge of the small beach town.\n\t\t</article>\n\t</body>\n</html>"
           },
           "http-vocab:headers": {
             "@list": [
@@ -19143,7 +19143,7 @@
           "http-vocab:statusCodeValue": 200
         }
       ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/207782d0d8899521e2b51b5c384f83d7f4516358.html"
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/78de8b1ca470302aebb53065c32eddf08da008b5.html"
     },
     {
       "@type": "Assertion",
@@ -19151,8 +19151,8 @@
       "earl:mode": "earl:automatic",
       "result": {
         "@type": "TestResult",
-        "info": "The `lang` attribute has a valid primary language subtag",
-        "outcome": "earl:passed",
+        "info": "The `lang` attribute does not have a valid primary language subtag",
+        "outcome": "earl:failed",
         "earl:pointer": {
           "@type": [
             "ptr:Pointer",
@@ -19160,11 +19160,11 @@
             "ptr:ExpressionPointer",
             "ptr:XPathPointer"
           ],
-          "ptr:expression": "/html[1]/body[1]/p[1]/@lang"
+          "ptr:expression": "/html[1]/body[1]/article[1]/@lang"
         }
       },
       "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/207782d0d8899521e2b51b5c384f83d7f4516358.html"
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/78de8b1ca470302aebb53065c32eddf08da008b5.html"
       },
       "test": {
         "@id": "https://alfa.siteimprove.com/rules/sia-r7"
@@ -21511,7 +21511,7 @@
       }
     },
     {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/5cde20e2acab8991c299a317825201af48bf5736.html",
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/0b392e6774d063a24241c3629113909e98c98607.html",
       "@type": "TestSubject",
       "dct:hasPart": [
         {
@@ -21531,7 +21531,7 @@
             "@list": []
           },
           "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/5cde20e2acab8991c299a317825201af48bf5736.html"
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/0b392e6774d063a24241c3629113909e98c98607.html"
         },
         {
           "@type": [
@@ -21544,7 +21544,7 @@
               "cnt:ContentAsText"
             ],
             "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<head>\n\t\t<title>Page with some content</title>\n\t\t<style>\n\t\t\t@media (orientation: lanscape) {\n\t\t\t\tbody {\n\t\t\t\t\ttransform: rotateZ(0, 0, 1, 270deg);\n\t\t\t\t}\n\t\t\t}\n\t\t</style>\n\t</head>\n\t<body style=\"display:none;\">\n\t\t<main>\n\t\t\tPage Content\n\t\t</main>\n\t</body>\n</html>"
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<head>\n\t\t<title>Page with some content</title>\n\t\t<style>\n\t\t\t@media (orientation: portrait) {\n\t\t\t\thtml {\n\t\t\t\t\ttransform: rotateZ(1turn);\n\t\t\t\t}\n\t\t\t}\n\t\t</style>\n\t</head>\n\t<body>\n\t\t<main>\n\t\t\tPage Content\n\t\t</main>\n\t</body>\n</html>"
           },
           "http-vocab:headers": {
             "@list": [
@@ -21558,7 +21558,7 @@
           "http-vocab:statusCodeValue": 200
         }
       ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/5cde20e2acab8991c299a317825201af48bf5736.html"
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/0b392e6774d063a24241c3629113909e98c98607.html"
     },
     {
       "@type": "Assertion",
@@ -21566,10 +21566,20 @@
       "earl:mode": "earl:automatic",
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:inapplicable"
+        "info": "The element is not locked in orientation",
+        "outcome": "earl:passed",
+        "earl:pointer": {
+          "@type": [
+            "ptr:Pointer",
+            "ptr:SinglePointer",
+            "ptr:ExpressionPointer",
+            "ptr:XPathPointer"
+          ],
+          "ptr:expression": "/html[1]"
+        }
       },
       "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/5cde20e2acab8991c299a317825201af48bf5736.html"
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/0b392e6774d063a24241c3629113909e98c98607.html"
       },
       "test": {
         "@id": "https://alfa.siteimprove.com/rules/sia-r44"
@@ -23786,7 +23796,7 @@
       }
     },
     {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/35a083bacf80a64deb81069ec7db0229520c9a6c.html",
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/a44f5e11d20feec4ae39e2db0336ddef0a8e04ec.html",
       "@type": "TestSubject",
       "dct:hasPart": [
         {
@@ -23806,7 +23816,7 @@
             "@list": []
           },
           "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/35a083bacf80a64deb81069ec7db0229520c9a6c.html"
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/a44f5e11d20feec4ae39e2db0336ddef0a8e04ec.html"
         },
         {
           "@type": [
@@ -23819,7 +23829,7 @@
               "cnt:ContentAsText"
             ],
             "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html>\n\t<body>\n\t\t<article lang=\"  \">\n\t\t\tThey wandered into a strange Tiki bar on the edge of the small beach town.\n\t\t</article>\n\t</body>\n</html>"
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<body>\n\t\t<p lang=\"hidden\">\n\t\t\t<span style=\"display: none;\">\n\t\t\t\tThey wandered into a strange Tiki bar on the edge of the small beach town.\n\t\t\t</span>\n\t\t</p>\n\t</body>\n</html>"
           },
           "http-vocab:headers": {
             "@list": [
@@ -23833,7 +23843,7 @@
           "http-vocab:statusCodeValue": 200
         }
       ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/35a083bacf80a64deb81069ec7db0229520c9a6c.html"
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/a44f5e11d20feec4ae39e2db0336ddef0a8e04ec.html"
     },
     {
       "@type": "Assertion",
@@ -23841,20 +23851,10 @@
       "earl:mode": "earl:automatic",
       "result": {
         "@type": "TestResult",
-        "info": "The `lang` attribute does not have a valid primary language subtag",
-        "outcome": "earl:failed",
-        "earl:pointer": {
-          "@type": [
-            "ptr:Pointer",
-            "ptr:SinglePointer",
-            "ptr:ExpressionPointer",
-            "ptr:XPathPointer"
-          ],
-          "ptr:expression": "/html[1]/body[1]/article[1]/@lang"
-        }
+        "outcome": "earl:inapplicable"
       },
       "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/35a083bacf80a64deb81069ec7db0229520c9a6c.html"
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/a44f5e11d20feec4ae39e2db0336ddef0a8e04ec.html"
       },
       "test": {
         "@id": "https://alfa.siteimprove.com/rules/sia-r7"
@@ -26021,7 +26021,7 @@
       }
     },
     {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/0b392e6774d063a24241c3629113909e98c98607.html",
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/4fa1ac6e6c6c65a3cc17e144823e45ff30f428bb.html",
       "@type": "TestSubject",
       "dct:hasPart": [
         {
@@ -26041,7 +26041,7 @@
             "@list": []
           },
           "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/0b392e6774d063a24241c3629113909e98c98607.html"
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/4fa1ac6e6c6c65a3cc17e144823e45ff30f428bb.html"
         },
         {
           "@type": [
@@ -26054,7 +26054,7 @@
               "cnt:ContentAsText"
             ],
             "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<head>\n\t\t<title>Page with some content</title>\n\t\t<style>\n\t\t\t@media (orientation: portrait) {\n\t\t\t\thtml {\n\t\t\t\t\ttransform: rotateZ(1turn);\n\t\t\t\t}\n\t\t\t}\n\t\t</style>\n\t</head>\n\t<body>\n\t\t<main>\n\t\t\tPage Content\n\t\t</main>\n\t</body>\n</html>"
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<head>\n\t\t<title>Page with some content</title>\n\t\t<style>\n\t\t\t@media (orientation: portrait) {\n\t\t\t\thtml {\n\t\t\t\t\trotate: 0turn;\n\t\t\t\t}\n\t\t\t}\n\t\t</style>\n\t</head>\n\t<body>\n\t\t<main>\n\t\t\tPage Content\n\t\t</main>\n\t</body>\n</html>"
           },
           "http-vocab:headers": {
             "@list": [
@@ -26068,7 +26068,7 @@
           "http-vocab:statusCodeValue": 200
         }
       ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/0b392e6774d063a24241c3629113909e98c98607.html"
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/4fa1ac6e6c6c65a3cc17e144823e45ff30f428bb.html"
     },
     {
       "@type": "Assertion",
@@ -26089,7 +26089,7 @@
         }
       },
       "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/0b392e6774d063a24241c3629113909e98c98607.html"
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/4fa1ac6e6c6c65a3cc17e144823e45ff30f428bb.html"
       },
       "test": {
         "@id": "https://alfa.siteimprove.com/rules/sia-r44"
@@ -26160,7 +26160,7 @@
             "ptr:ExpressionPointer",
             "ptr:XPathPointer"
           ],
-          "ptr:expression": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/@headers"
+          "ptr:expression": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/@headers"
         }
       },
       "subject": {
@@ -28181,7 +28181,7 @@
       }
     },
     {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/49b66676ed867c75368e31c1e06b28255df8089e.html",
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/915cdae554a817caa4792101fde1adf14563227d.html",
       "@type": "TestSubject",
       "dct:hasPart": [
         {
@@ -28201,7 +28201,7 @@
             "@list": []
           },
           "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/49b66676ed867c75368e31c1e06b28255df8089e.html"
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/915cdae554a817caa4792101fde1adf14563227d.html"
         },
         {
           "@type": [
@@ -28214,7 +28214,7 @@
               "cnt:ContentAsText"
             ],
             "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<body>\n\t\t<article lang=\"#!\">\n\t\t\tThey wandered into a strange Tiki bar on the edge of the small beach town.\n\t\t</article>\n\t</body>\n</html>"
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<body>\n\t\t<p lang=\"eng\">I love ACT rules!</p>\n\t</body>\n</html>"
           },
           "http-vocab:headers": {
             "@list": [
@@ -28228,7 +28228,7 @@
           "http-vocab:statusCodeValue": 200
         }
       ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/49b66676ed867c75368e31c1e06b28255df8089e.html"
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/915cdae554a817caa4792101fde1adf14563227d.html"
     },
     {
       "@type": "Assertion",
@@ -28245,11 +28245,11 @@
             "ptr:ExpressionPointer",
             "ptr:XPathPointer"
           ],
-          "ptr:expression": "/html[1]/body[1]/article[1]/@lang"
+          "ptr:expression": "/html[1]/body[1]/p[1]/@lang"
         }
       },
       "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/49b66676ed867c75368e31c1e06b28255df8089e.html"
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/915cdae554a817caa4792101fde1adf14563227d.html"
       },
       "test": {
         "@id": "https://alfa.siteimprove.com/rules/sia-r7"
@@ -30371,7 +30371,7 @@
       }
     },
     {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/4fa1ac6e6c6c65a3cc17e144823e45ff30f428bb.html",
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/8f341a73c698daf157613c32a521878ed5aa7310.html",
       "@type": "TestSubject",
       "dct:hasPart": [
         {
@@ -30391,7 +30391,7 @@
             "@list": []
           },
           "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/4fa1ac6e6c6c65a3cc17e144823e45ff30f428bb.html"
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/8f341a73c698daf157613c32a521878ed5aa7310.html"
         },
         {
           "@type": [
@@ -30404,7 +30404,7 @@
               "cnt:ContentAsText"
             ],
             "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<head>\n\t\t<title>Page with some content</title>\n\t\t<style>\n\t\t\t@media (orientation: portrait) {\n\t\t\t\thtml {\n\t\t\t\t\trotate: 0turn;\n\t\t\t\t}\n\t\t\t}\n\t\t</style>\n\t</head>\n\t<body>\n\t\t<main>\n\t\t\tPage Content\n\t\t</main>\n\t</body>\n</html>"
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<head>\n\t\t<title>Page with some content</title>\n\t\t<style>\n\t\t\t@media (orientation: portrait) {\n\t\t\t\thtml {\n\t\t\t\t\trotate: 90deg;\n\t\t\t\t\twidth: min(100vw, 100vh);\n\t\t\t\t\theight: min(100vw, 100vh);\n\t\t\t\t}\n\t\t\t}\n\t\t</style>\n\t</head>\n\t<body>\n\t\tPage Content\n\t</body>\n</html>"
           },
           "http-vocab:headers": {
             "@list": [
@@ -30418,7 +30418,7 @@
           "http-vocab:statusCodeValue": 200
         }
       ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/4fa1ac6e6c6c65a3cc17e144823e45ff30f428bb.html"
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/8f341a73c698daf157613c32a521878ed5aa7310.html"
     },
     {
       "@type": "Assertion",
@@ -30426,8 +30426,8 @@
       "earl:mode": "earl:automatic",
       "result": {
         "@type": "TestResult",
-        "info": "The element is not locked in orientation",
-        "outcome": "earl:passed",
+        "info": "The element is locked in orientation",
+        "outcome": "earl:failed",
         "earl:pointer": {
           "@type": [
             "ptr:Pointer",
@@ -30439,7 +30439,7 @@
         }
       },
       "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/4fa1ac6e6c6c65a3cc17e144823e45ff30f428bb.html"
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/8f341a73c698daf157613c32a521878ed5aa7310.html"
       },
       "test": {
         "@id": "https://alfa.siteimprove.com/rules/sia-r44"
@@ -32446,7 +32446,7 @@
       }
     },
     {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/8df22e9421c652e9849f7bfb4dbd28a24518c0fb.html",
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/5b58b483fa53a6ff228c89a7fe57997664845663.html",
       "@type": "TestSubject",
       "dct:hasPart": [
         {
@@ -32466,7 +32466,7 @@
             "@list": []
           },
           "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/8df22e9421c652e9849f7bfb4dbd28a24518c0fb.html"
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/5b58b483fa53a6ff228c89a7fe57997664845663.html"
         },
         {
           "@type": [
@@ -32479,7 +32479,7 @@
               "cnt:ContentAsText"
             ],
             "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html>\n\t<body>\n\t\t<article lang=\"English\">\n\t\t\t<p style=\"position: absolute; top: -9999px\">\n\t\t\t\tThey wandered into a strange Tiki bar on the edge of the small beach town.\n\t\t\t</p>\n\t\t</article>\n\t</body>\n</html>"
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<body>\n\t\tThey wandered into a strange Tiki bar on the edge of the small beach town.\n\t</body>\n</html>"
           },
           "http-vocab:headers": {
             "@list": [
@@ -32493,7 +32493,7 @@
           "http-vocab:statusCodeValue": 200
         }
       ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/8df22e9421c652e9849f7bfb4dbd28a24518c0fb.html"
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/5b58b483fa53a6ff228c89a7fe57997664845663.html"
     },
     {
       "@type": "Assertion",
@@ -32501,20 +32501,10 @@
       "earl:mode": "earl:automatic",
       "result": {
         "@type": "TestResult",
-        "info": "The `lang` attribute does not have a valid primary language subtag",
-        "outcome": "earl:failed",
-        "earl:pointer": {
-          "@type": [
-            "ptr:Pointer",
-            "ptr:SinglePointer",
-            "ptr:ExpressionPointer",
-            "ptr:XPathPointer"
-          ],
-          "ptr:expression": "/html[1]/body[1]/article[1]/@lang"
-        }
+        "outcome": "earl:inapplicable"
       },
       "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/8df22e9421c652e9849f7bfb4dbd28a24518c0fb.html"
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/5b58b483fa53a6ff228c89a7fe57997664845663.html"
       },
       "test": {
         "@id": "https://alfa.siteimprove.com/rules/sia-r7"
@@ -34196,7 +34186,7 @@
       }
     },
     {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/32ee0d96f92591c1e34db35754117daaf75a5005.html",
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/4c34705d8d866194fd8fe96a0bd1abaf267b11f0.html",
       "@type": "TestSubject",
       "dct:hasPart": [
         {
@@ -34216,7 +34206,7 @@
             "@list": []
           },
           "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/32ee0d96f92591c1e34db35754117daaf75a5005.html"
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/4c34705d8d866194fd8fe96a0bd1abaf267b11f0.html"
         },
         {
           "@type": [
@@ -34229,7 +34219,7 @@
               "cnt:ContentAsText"
             ],
             "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<head>\n\t\t<title>Page with some content</title>\n\t\t<style>\n\t\t\t@media (orientation: portrait) {\n\t\t\t\thtml {\n\t\t\t\t\ttransform: rotate(1.5708rad);\n\t\t\t\t}\n\t\t\t}\n\t\t</style>\n\t</head>\n\t<body>\n\t\tPage Content\n\t</body>\n</html>"
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<head>\n\t\t<title>Page with some content</title>\n\t\t<style>\n\t\t\tbody {\n\t\t\t\ttransform: rotate(90deg);\n\t\t\t\twidth: calc(min(100vw, 100vh) - 2rem);\n\t\t\t\theight: calc(min(100vw, 100vh) - 2rem);\n\t\t\t\tpadding: 1rem;\n\t\t\t}\n\t\t</style>\n\t</head>\n\t<body>\n\t\t<main>\n\t\t\tPage Content\n\t\t</main>\n\t</body>\n</html>"
           },
           "http-vocab:headers": {
             "@list": [
@@ -34243,7 +34233,7 @@
           "http-vocab:statusCodeValue": 200
         }
       ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/32ee0d96f92591c1e34db35754117daaf75a5005.html"
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/4c34705d8d866194fd8fe96a0bd1abaf267b11f0.html"
     },
     {
       "@type": "Assertion",
@@ -34251,20 +34241,10 @@
       "earl:mode": "earl:automatic",
       "result": {
         "@type": "TestResult",
-        "info": "The element is locked in orientation",
-        "outcome": "earl:failed",
-        "earl:pointer": {
-          "@type": [
-            "ptr:Pointer",
-            "ptr:SinglePointer",
-            "ptr:ExpressionPointer",
-            "ptr:XPathPointer"
-          ],
-          "ptr:expression": "/html[1]"
-        }
+        "outcome": "earl:inapplicable"
       },
       "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/32ee0d96f92591c1e34db35754117daaf75a5005.html"
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/4c34705d8d866194fd8fe96a0bd1abaf267b11f0.html"
       },
       "test": {
         "@id": "https://alfa.siteimprove.com/rules/sia-r44"
@@ -34335,7 +34315,7 @@
             "ptr:ExpressionPointer",
             "ptr:XPathPointer"
           ],
-          "ptr:expression": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/@headers"
+          "ptr:expression": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[2]/@headers"
         }
       },
       "subject": {
@@ -36046,7 +36026,7 @@
       }
     },
     {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/78de8b1ca470302aebb53065c32eddf08da008b5.html",
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/a746b387d13dc61266d1fcde19b91b89441b1be7.html",
       "@type": "TestSubject",
       "dct:hasPart": [
         {
@@ -36066,7 +36046,7 @@
             "@list": []
           },
           "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/78de8b1ca470302aebb53065c32eddf08da008b5.html"
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/a746b387d13dc61266d1fcde19b91b89441b1be7.html"
         },
         {
           "@type": [
@@ -36079,7 +36059,7 @@
               "cnt:ContentAsText"
             ],
             "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"fr\">\n\t<body>\n\t\t<article lang=\"  \">\n\t\t\tThey wandered into a strange Tiki bar on the edge of the small beach town.\n\t\t</article>\n\t</body>\n</html>"
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"es\">\n\t<body>\n\t\t<article lang=\"en\">\n\t\t\tThey wandered into a strange Tiki bar on the edge of the small beach town.\n\t\t</article>\n\t</body>\n</html>"
           },
           "http-vocab:headers": {
             "@list": [
@@ -36093,7 +36073,7 @@
           "http-vocab:statusCodeValue": 200
         }
       ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/78de8b1ca470302aebb53065c32eddf08da008b5.html"
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/a746b387d13dc61266d1fcde19b91b89441b1be7.html"
     },
     {
       "@type": "Assertion",
@@ -36101,8 +36081,8 @@
       "earl:mode": "earl:automatic",
       "result": {
         "@type": "TestResult",
-        "info": "The `lang` attribute does not have a valid primary language subtag",
-        "outcome": "earl:failed",
+        "info": "The `lang` attribute has a valid primary language subtag",
+        "outcome": "earl:passed",
         "earl:pointer": {
           "@type": [
             "ptr:Pointer",
@@ -36114,7 +36094,7 @@
         }
       },
       "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/78de8b1ca470302aebb53065c32eddf08da008b5.html"
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/a746b387d13dc61266d1fcde19b91b89441b1be7.html"
       },
       "test": {
         "@id": "https://alfa.siteimprove.com/rules/sia-r7"
@@ -37621,7 +37601,7 @@
       }
     },
     {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/c59f09b11f0743c523cc63ae3c827996889fa32d.html",
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/93ad10ce32325be5b7c8cbaec7254d55e8fb577c.html",
       "@type": "TestSubject",
       "dct:hasPart": [
         {
@@ -37641,7 +37621,7 @@
             "@list": []
           },
           "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/c59f09b11f0743c523cc63ae3c827996889fa32d.html"
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/93ad10ce32325be5b7c8cbaec7254d55e8fb577c.html"
         },
         {
           "@type": [
@@ -37654,7 +37634,7 @@
               "cnt:ContentAsText"
             ],
             "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<head>\n\t\t<title>Page with some content</title>\n\t</head>\n\t<body>\n\t\tI am a page with no styles\n\t</body>\n</html>"
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<head>\n\t\t<title>Page with some content</title>\n\t\t<style>\n\t\t\tbody {\n\t\t\t\ttransform: rotate(2.5deg);\n\t\t\t\tpadding: 2rem;\n\t\t\t\twidth: min(100vw, 100vh);\n\t\t\t\theight: min(100vw, 100vh);\n\t\t\t}\n\n\t\t\t@media (orientation: landscape) {\n\t\t\t\tbody {\n\t\t\t\t\ttransform: rotate(92.5deg);\n\t\t\t\t\tposition: absolute;\n\t\t\t\t\tright: 0px;\n\t\t\t\t}\n\t\t\t}\n\t\t</style>\n\t</head>\n\t<body>\n\t\tPage Content\n\t</body>\n</html>"
           },
           "http-vocab:headers": {
             "@list": [
@@ -37668,7 +37648,7 @@
           "http-vocab:statusCodeValue": 200
         }
       ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/c59f09b11f0743c523cc63ae3c827996889fa32d.html"
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/93ad10ce32325be5b7c8cbaec7254d55e8fb577c.html"
     },
     {
       "@type": "Assertion",
@@ -37676,10 +37656,20 @@
       "earl:mode": "earl:automatic",
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:inapplicable"
+        "info": "The element is locked in orientation",
+        "outcome": "earl:failed",
+        "earl:pointer": {
+          "@type": [
+            "ptr:Pointer",
+            "ptr:SinglePointer",
+            "ptr:ExpressionPointer",
+            "ptr:XPathPointer"
+          ],
+          "ptr:expression": "/html[1]/body[1]"
+        }
       },
       "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/c59f09b11f0743c523cc63ae3c827996889fa32d.html"
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/93ad10ce32325be5b7c8cbaec7254d55e8fb577c.html"
       },
       "test": {
         "@id": "https://alfa.siteimprove.com/rules/sia-r44"
@@ -39351,7 +39341,7 @@
       }
     },
     {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/8376f95166a75a8541217b77ae6a235f1aac6c3d.html",
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/cecfce83c949d20c816a0e43cbc4c26a3468754b.html",
       "@type": "TestSubject",
       "dct:hasPart": [
         {
@@ -39371,7 +39361,7 @@
             "@list": []
           },
           "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/8376f95166a75a8541217b77ae6a235f1aac6c3d.html"
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/cecfce83c949d20c816a0e43cbc4c26a3468754b.html"
         },
         {
           "@type": [
@@ -39384,7 +39374,7 @@
               "cnt:ContentAsText"
             ],
             "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html>\n\t<body>\n\t\t<article lang=\"invalid\">\n\t\t\t<div lang=\"en\">\n\t\t\t\tThey wandered into a strange Tiki bar on the edge of the small beach town.\n\t\t\t</div>\n\t\t</article>\n\t</body>\n</html>"
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"es\">\n\t<body>\n\t\t<div lang=\"EN\">\n\t\t\t<img src=\"/WAI/content-assets/wcag-act-rules/test-assets/shared/fireworks.jpg\" alt=\"Fireworks over Paris\" />\n\t\t</div>\n\t</body>\n</html>"
           },
           "http-vocab:headers": {
             "@list": [
@@ -39398,7 +39388,7 @@
           "http-vocab:statusCodeValue": 200
         }
       ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/8376f95166a75a8541217b77ae6a235f1aac6c3d.html"
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/cecfce83c949d20c816a0e43cbc4c26a3468754b.html"
     },
     {
       "@type": "Assertion",
@@ -39415,11 +39405,11 @@
             "ptr:ExpressionPointer",
             "ptr:XPathPointer"
           ],
-          "ptr:expression": "/html[1]/body[1]/article[1]/div[1]/@lang"
+          "ptr:expression": "/html[1]/body[1]/div[1]/@lang"
         }
       },
       "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/8376f95166a75a8541217b77ae6a235f1aac6c3d.html"
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/cecfce83c949d20c816a0e43cbc4c26a3468754b.html"
       },
       "test": {
         "@id": "https://alfa.siteimprove.com/rules/sia-r7"
@@ -40691,7 +40681,7 @@
       }
     },
     {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/146e4d5a7a70d4e426724a42fac369fb0a321a0b.html",
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/c59f09b11f0743c523cc63ae3c827996889fa32d.html",
       "@type": "TestSubject",
       "dct:hasPart": [
         {
@@ -40711,7 +40701,7 @@
             "@list": []
           },
           "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/146e4d5a7a70d4e426724a42fac369fb0a321a0b.html"
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/c59f09b11f0743c523cc63ae3c827996889fa32d.html"
         },
         {
           "@type": [
@@ -40724,7 +40714,7 @@
               "cnt:ContentAsText"
             ],
             "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<head>\n\t\t<title>Page with some content</title>\n\t\t<style>\n\t\t\tbody {\n\t\t\t\ttransform: rotate(2.5deg);\n\t\t\t}\n\n\t\t\t@media (orientation: landscape) {\n\t\t\t\tbody {\n\t\t\t\t\ttransform: rotate(92.5deg);\n\t\t\t\t}\n\t\t\t}\n\t\t</style>\n\t</head>\n\t<body>\n\t\tPage Content\n\t</body>\n</html>"
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<head>\n\t\t<title>Page with some content</title>\n\t</head>\n\t<body>\n\t\tI am a page with no styles\n\t</body>\n</html>"
           },
           "http-vocab:headers": {
             "@list": [
@@ -40738,7 +40728,7 @@
           "http-vocab:statusCodeValue": 200
         }
       ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/146e4d5a7a70d4e426724a42fac369fb0a321a0b.html"
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/c59f09b11f0743c523cc63ae3c827996889fa32d.html"
     },
     {
       "@type": "Assertion",
@@ -40746,20 +40736,10 @@
       "earl:mode": "earl:automatic",
       "result": {
         "@type": "TestResult",
-        "info": "The element is locked in orientation",
-        "outcome": "earl:failed",
-        "earl:pointer": {
-          "@type": [
-            "ptr:Pointer",
-            "ptr:SinglePointer",
-            "ptr:ExpressionPointer",
-            "ptr:XPathPointer"
-          ],
-          "ptr:expression": "/html[1]/body[1]"
-        }
+        "outcome": "earl:inapplicable"
       },
       "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/146e4d5a7a70d4e426724a42fac369fb0a321a0b.html"
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/c59f09b11f0743c523cc63ae3c827996889fa32d.html"
       },
       "test": {
         "@id": "https://alfa.siteimprove.com/rules/sia-r44"
@@ -40830,7 +40810,7 @@
             "ptr:ExpressionPointer",
             "ptr:XPathPointer"
           ],
-          "ptr:expression": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[2]/@headers"
+          "ptr:expression": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/@headers"
         }
       },
       "subject": {
@@ -42301,7 +42281,7 @@
       }
     },
     {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/a44f5e11d20feec4ae39e2db0336ddef0a8e04ec.html",
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/471e3f82cdd9122e2886d2d7bcfc8cda1397a51d.html",
       "@type": "TestSubject",
       "dct:hasPart": [
         {
@@ -42321,7 +42301,7 @@
             "@list": []
           },
           "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/a44f5e11d20feec4ae39e2db0336ddef0a8e04ec.html"
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/471e3f82cdd9122e2886d2d7bcfc8cda1397a51d.html"
         },
         {
           "@type": [
@@ -42334,7 +42314,7 @@
               "cnt:ContentAsText"
             ],
             "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<body>\n\t\t<p lang=\"hidden\">\n\t\t\t<span style=\"display: none;\">\n\t\t\t\tThey wandered into a strange Tiki bar on the edge of the small beach town.\n\t\t\t</span>\n\t\t</p>\n\t</body>\n</html>"
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<body>\n\t\t<div lang=\"invalid\">\n\t\t\t<img src=\"/WAI/content-assets/wcag-act-rules/test-assets/shared/fireworks.jpg\" alt=\"\" />\n\t\t</div>\n\t</body>\n</html>"
           },
           "http-vocab:headers": {
             "@list": [
@@ -42348,7 +42328,7 @@
           "http-vocab:statusCodeValue": 200
         }
       ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/a44f5e11d20feec4ae39e2db0336ddef0a8e04ec.html"
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/471e3f82cdd9122e2886d2d7bcfc8cda1397a51d.html"
     },
     {
       "@type": "Assertion",
@@ -42359,7 +42339,7 @@
         "outcome": "earl:inapplicable"
       },
       "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/a44f5e11d20feec4ae39e2db0336ddef0a8e04ec.html"
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/471e3f82cdd9122e2886d2d7bcfc8cda1397a51d.html"
       },
       "test": {
         "@id": "https://alfa.siteimprove.com/rules/sia-r7"
@@ -43596,7 +43576,7 @@
       }
     },
     {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/0476fbeac29bee2ad56456947c57d488845d3e77.html",
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/3b2f386c66ccb9c1a9a848017dab9b074afbf858.html",
       "@type": "TestSubject",
       "dct:hasPart": [
         {
@@ -43616,7 +43596,7 @@
             "@list": []
           },
           "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/0476fbeac29bee2ad56456947c57d488845d3e77.html"
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/3b2f386c66ccb9c1a9a848017dab9b074afbf858.html"
         },
         {
           "@type": [
@@ -43629,7 +43609,7 @@
               "cnt:ContentAsText"
             ],
             "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<head>\n\t\t<title>Page with some content</title>\n\t\t<style>\n\t\t\t@media (orientation: portrait) {\n\t\t\t\thtml {\n\t\t\t\t\trotate: 90deg;\n\t\t\t\t}\n\t\t\t}\n\t\t</style>\n\t</head>\n\t<body>\n\t\tPage Content\n\t</body>\n</html>"
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<head>\n\t\t<title>Page with some content</title>\n\t\t<style>\n\t\t\t@media (orientation: portrait) {\n\t\t\t\thtml {\n\t\t\t\t\ttransform: rotate(1.5708rad);\n\t\t\t\t\twidth: min(100vw, 100vh);\n\t\t\t\t\theight: min(100vw, 100vh);\n\t\t\t\t}\n\t\t\t}\n\t\t</style>\n\t</head>\n\t<body>\n\t\tPage Content\n\t</body>\n</html>"
           },
           "http-vocab:headers": {
             "@list": [
@@ -43643,7 +43623,7 @@
           "http-vocab:statusCodeValue": 200
         }
       ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/0476fbeac29bee2ad56456947c57d488845d3e77.html"
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/3b2f386c66ccb9c1a9a848017dab9b074afbf858.html"
     },
     {
       "@type": "Assertion",
@@ -43664,7 +43644,7 @@
         }
       },
       "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/0476fbeac29bee2ad56456947c57d488845d3e77.html"
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/3b2f386c66ccb9c1a9a848017dab9b074afbf858.html"
       },
       "test": {
         "@id": "https://alfa.siteimprove.com/rules/sia-r44"
@@ -44886,7 +44866,7 @@
       }
     },
     {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/915cdae554a817caa4792101fde1adf14563227d.html",
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/1583a11fb07127fb3315fa19f3baaf876aa42aa4.html",
       "@type": "TestSubject",
       "dct:hasPart": [
         {
@@ -44906,7 +44886,7 @@
             "@list": []
           },
           "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/915cdae554a817caa4792101fde1adf14563227d.html"
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/1583a11fb07127fb3315fa19f3baaf876aa42aa4.html"
         },
         {
           "@type": [
@@ -44919,7 +44899,7 @@
               "cnt:ContentAsText"
             ],
             "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<body>\n\t\t<p lang=\"eng\">I love ACT rules!</p>\n\t</body>\n</html>"
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<body>\n\t\t<blockquote lang=\"fr-CH\">\n\t\t\tIls ont trouvé un étrange bar Tiki aux abords de la petite ville balnéaire.\n\t\t</blockquote>\n\t</body>\n</html>"
           },
           "http-vocab:headers": {
             "@list": [
@@ -44933,7 +44913,7 @@
           "http-vocab:statusCodeValue": 200
         }
       ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/915cdae554a817caa4792101fde1adf14563227d.html"
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/1583a11fb07127fb3315fa19f3baaf876aa42aa4.html"
     },
     {
       "@type": "Assertion",
@@ -44941,8 +44921,8 @@
       "earl:mode": "earl:automatic",
       "result": {
         "@type": "TestResult",
-        "info": "The `lang` attribute does not have a valid primary language subtag",
-        "outcome": "earl:failed",
+        "info": "The `lang` attribute has a valid primary language subtag",
+        "outcome": "earl:passed",
         "earl:pointer": {
           "@type": [
             "ptr:Pointer",
@@ -44950,11 +44930,11 @@
             "ptr:ExpressionPointer",
             "ptr:XPathPointer"
           ],
-          "ptr:expression": "/html[1]/body[1]/p[1]/@lang"
+          "ptr:expression": "/html[1]/body[1]/blockquote[1]/@lang"
         }
       },
       "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/915cdae554a817caa4792101fde1adf14563227d.html"
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/1583a11fb07127fb3315fa19f3baaf876aa42aa4.html"
       },
       "test": {
         "@id": "https://alfa.siteimprove.com/rules/sia-r7"
@@ -47216,7 +47196,7 @@
       }
     },
     {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/5b58b483fa53a6ff228c89a7fe57997664845663.html",
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/795698c08fc5d404b649d0c367bedc3e83462d43.html",
       "@type": "TestSubject",
       "dct:hasPart": [
         {
@@ -47236,7 +47216,7 @@
             "@list": []
           },
           "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/5b58b483fa53a6ff228c89a7fe57997664845663.html"
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/795698c08fc5d404b649d0c367bedc3e83462d43.html"
         },
         {
           "@type": [
@@ -47249,7 +47229,7 @@
               "cnt:ContentAsText"
             ],
             "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<body>\n\t\tThey wandered into a strange Tiki bar on the edge of the small beach town.\n\t</body>\n</html>"
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"es\">\n\t<body>\n\t\t<article lang=\"english\">\n\t\t\t<p aria-hidden=\"true\">\n\t\t\t\tThey wandered into a strange Tiki bar on the edge of the small beach town.\n\t\t\t</p>\n\t\t</article>\n\t</body>\n</html>"
           },
           "http-vocab:headers": {
             "@list": [
@@ -47263,7 +47243,7 @@
           "http-vocab:statusCodeValue": 200
         }
       ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/5b58b483fa53a6ff228c89a7fe57997664845663.html"
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/795698c08fc5d404b649d0c367bedc3e83462d43.html"
     },
     {
       "@type": "Assertion",
@@ -47271,10 +47251,20 @@
       "earl:mode": "earl:automatic",
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:inapplicable"
+        "info": "The `lang` attribute does not have a valid primary language subtag",
+        "outcome": "earl:failed",
+        "earl:pointer": {
+          "@type": [
+            "ptr:Pointer",
+            "ptr:SinglePointer",
+            "ptr:ExpressionPointer",
+            "ptr:XPathPointer"
+          ],
+          "ptr:expression": "/html[1]/body[1]/article[1]/@lang"
+        }
       },
       "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/5b58b483fa53a6ff228c89a7fe57997664845663.html"
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/795698c08fc5d404b649d0c367bedc3e83462d43.html"
       },
       "test": {
         "@id": "https://alfa.siteimprove.com/rules/sia-r7"
@@ -48330,7 +48320,7 @@
             "ptr:ExpressionPointer",
             "ptr:XPathPointer"
           ],
-          "ptr:expression": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[2]/@headers"
+          "ptr:expression": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/@headers"
         }
       },
       "subject": {
@@ -49426,7 +49416,7 @@
       }
     },
     {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/984a5b424d118046dfa2529398056fbd52d4e5ea.html",
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/b1765660b28464b5a73e502ef30b7370ba294ff5.html",
       "@type": "TestSubject",
       "dct:hasPart": [
         {
@@ -49446,7 +49436,7 @@
             "@list": []
           },
           "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/984a5b424d118046dfa2529398056fbd52d4e5ea.html"
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/b1765660b28464b5a73e502ef30b7370ba294ff5.html"
         },
         {
           "@type": [
@@ -49459,7 +49449,7 @@
               "cnt:ContentAsText"
             ],
             "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html>\n\t<body>\n\t\t<article lang=\"en\">\n\t\t\t<div lang=\"invalid\">\n\t\t\t\tThey wandered into a strange Tiki bar on the edge of the small beach town.\n\t\t\t</div>\n\t\t</article>\n\t</body>\n</html>"
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"es\">\n\t<body>\n\t\t<article lang=\"dutch\">\n\t\t\tZij liepen een vreemde Tiki bar binnen, aan de rand van een dorpje aan het strand.\n\t\t</article>\n\t</body>\n</html>"
           },
           "http-vocab:headers": {
             "@list": [
@@ -49473,7 +49463,7 @@
           "http-vocab:statusCodeValue": 200
         }
       ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/984a5b424d118046dfa2529398056fbd52d4e5ea.html"
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/b1765660b28464b5a73e502ef30b7370ba294ff5.html"
     },
     {
       "@type": "Assertion",
@@ -49490,11 +49480,11 @@
             "ptr:ExpressionPointer",
             "ptr:XPathPointer"
           ],
-          "ptr:expression": "/html[1]/body[1]/article[1]/div[1]/@lang"
+          "ptr:expression": "/html[1]/body[1]/article[1]/@lang"
         }
       },
       "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/984a5b424d118046dfa2529398056fbd52d4e5ea.html"
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/b1765660b28464b5a73e502ef30b7370ba294ff5.html"
       },
       "test": {
         "@id": "https://alfa.siteimprove.com/rules/sia-r7"
@@ -50425,7 +50415,7 @@
             "ptr:ExpressionPointer",
             "ptr:XPathPointer"
           ],
-          "ptr:expression": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/th[1]/@headers"
+          "ptr:expression": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/th[2]/@headers"
         }
       },
       "subject": {
@@ -51426,7 +51416,7 @@
       }
     },
     {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/a746b387d13dc61266d1fcde19b91b89441b1be7.html",
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/5ba0306adadd581e4331b9415c2ef9f8ecccc0f2.html",
       "@type": "TestSubject",
       "dct:hasPart": [
         {
@@ -51446,7 +51436,7 @@
             "@list": []
           },
           "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/a746b387d13dc61266d1fcde19b91b89441b1be7.html"
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/5ba0306adadd581e4331b9415c2ef9f8ecccc0f2.html"
         },
         {
           "@type": [
@@ -51459,7 +51449,7 @@
               "cnt:ContentAsText"
             ],
             "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"es\">\n\t<body>\n\t\t<article lang=\"en\">\n\t\t\tThey wandered into a strange Tiki bar on the edge of the small beach town.\n\t\t</article>\n\t</body>\n</html>"
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<body>\n\t\t<div lang=\"invalid\">\n\t\t\t<img src=\"/WAI/content-assets/wcag-act-rules/test-assets/shared/fireworks.jpg\" alt=\"Fireworks over Paris\" />\n\t\t</div>\n\t</body>\n</html>"
           },
           "http-vocab:headers": {
             "@list": [
@@ -51473,7 +51463,7 @@
           "http-vocab:statusCodeValue": 200
         }
       ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/a746b387d13dc61266d1fcde19b91b89441b1be7.html"
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/5ba0306adadd581e4331b9415c2ef9f8ecccc0f2.html"
     },
     {
       "@type": "Assertion",
@@ -51481,8 +51471,8 @@
       "earl:mode": "earl:automatic",
       "result": {
         "@type": "TestResult",
-        "info": "The `lang` attribute has a valid primary language subtag",
-        "outcome": "earl:passed",
+        "info": "The `lang` attribute does not have a valid primary language subtag",
+        "outcome": "earl:failed",
         "earl:pointer": {
           "@type": [
             "ptr:Pointer",
@@ -51490,11 +51480,11 @@
             "ptr:ExpressionPointer",
             "ptr:XPathPointer"
           ],
-          "ptr:expression": "/html[1]/body[1]/article[1]/@lang"
+          "ptr:expression": "/html[1]/body[1]/div[1]/@lang"
         }
       },
       "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/a746b387d13dc61266d1fcde19b91b89441b1be7.html"
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/5ba0306adadd581e4331b9415c2ef9f8ecccc0f2.html"
       },
       "test": {
         "@id": "https://alfa.siteimprove.com/rules/sia-r7"
@@ -53461,7 +53451,7 @@
       }
     },
     {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/e0fe6824b5571e0552ab2955697c5ff0776abf79.html",
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/61f81c57325a77a89481f036e4e2116399fb6714.html",
       "@type": "TestSubject",
       "dct:hasPart": [
         {
@@ -53481,7 +53471,7 @@
             "@list": []
           },
           "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/e0fe6824b5571e0552ab2955697c5ff0776abf79.html"
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/61f81c57325a77a89481f036e4e2116399fb6714.html"
         },
         {
           "@type": [
@@ -53494,7 +53484,7 @@
               "cnt:ContentAsText"
             ],
             "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html>\n\t<body>\n\t\t<blockquote lang=\"fr-CH\">\n\t\t\tIls ont trouvé un étrange bar Tiki aux abords de la petite ville balnéaire.\n\t\t</blockquote>\n\t</body>\n</html>"
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"es\">\n\t<body>\n\t\t<article lang=\"en\">\n\t\t\t<div lang=\"invalid\">\n\t\t\t\tThey wandered into a strange Tiki bar on the edge of the small beach town.\n\t\t\t</div>\n\t\t</article>\n\t</body>\n</html>"
           },
           "http-vocab:headers": {
             "@list": [
@@ -53508,7 +53498,7 @@
           "http-vocab:statusCodeValue": 200
         }
       ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/e0fe6824b5571e0552ab2955697c5ff0776abf79.html"
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/61f81c57325a77a89481f036e4e2116399fb6714.html"
     },
     {
       "@type": "Assertion",
@@ -53516,8 +53506,8 @@
       "earl:mode": "earl:automatic",
       "result": {
         "@type": "TestResult",
-        "info": "The `lang` attribute has a valid primary language subtag",
-        "outcome": "earl:passed",
+        "info": "The `lang` attribute does not have a valid primary language subtag",
+        "outcome": "earl:failed",
         "earl:pointer": {
           "@type": [
             "ptr:Pointer",
@@ -53525,11 +53515,11 @@
             "ptr:ExpressionPointer",
             "ptr:XPathPointer"
           ],
-          "ptr:expression": "/html[1]/body[1]/blockquote[1]/@lang"
+          "ptr:expression": "/html[1]/body[1]/article[1]/div[1]/@lang"
         }
       },
       "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/e0fe6824b5571e0552ab2955697c5ff0776abf79.html"
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/61f81c57325a77a89481f036e4e2116399fb6714.html"
       },
       "test": {
         "@id": "https://alfa.siteimprove.com/rules/sia-r7"
@@ -54262,7 +54252,7 @@
             "ptr:ExpressionPointer",
             "ptr:XPathPointer"
           ],
-          "ptr:expression": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/th[2]/@headers"
+          "ptr:expression": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[3]/@headers"
         }
       },
       "subject": {
@@ -55058,7 +55048,7 @@
       }
     },
     {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/0d2ac2a60f6b99de02537945ac61366e1562403d.html",
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/4fa5219cf39dc536c51d67f6c4f9f54271a8dcfa.html",
       "@type": "TestSubject",
       "dct:hasPart": [
         {
@@ -55078,7 +55068,7 @@
             "@list": []
           },
           "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/0d2ac2a60f6b99de02537945ac61366e1562403d.html"
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/4fa5219cf39dc536c51d67f6c4f9f54271a8dcfa.html"
         },
         {
           "@type": [
@@ -55091,7 +55081,7 @@
               "cnt:ContentAsText"
             ],
             "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html>\n\t<body>\n\t\t<article lang=\"english\">\n\t\t\t<p aria-hidden=\"true\">\n\t\t\t\tThey wandered into a strange Tiki bar on the edge of the small beach town.\n\t\t\t</p>\n\t\t</article>\n\t</body>\n</html>"
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<body>\n\t\t<div lang=\"invalid\"></div>\n\t</body>\n</html>"
           },
           "http-vocab:headers": {
             "@list": [
@@ -55105,7 +55095,7 @@
           "http-vocab:statusCodeValue": 200
         }
       ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/0d2ac2a60f6b99de02537945ac61366e1562403d.html"
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/4fa5219cf39dc536c51d67f6c4f9f54271a8dcfa.html"
     },
     {
       "@type": "Assertion",
@@ -55113,20 +55103,10 @@
       "earl:mode": "earl:automatic",
       "result": {
         "@type": "TestResult",
-        "info": "The `lang` attribute does not have a valid primary language subtag",
-        "outcome": "earl:failed",
-        "earl:pointer": {
-          "@type": [
-            "ptr:Pointer",
-            "ptr:SinglePointer",
-            "ptr:ExpressionPointer",
-            "ptr:XPathPointer"
-          ],
-          "ptr:expression": "/html[1]/body[1]/article[1]/@lang"
-        }
+        "outcome": "earl:inapplicable"
       },
       "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/0d2ac2a60f6b99de02537945ac61366e1562403d.html"
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/4fa5219cf39dc536c51d67f6c4f9f54271a8dcfa.html"
       },
       "test": {
         "@id": "https://alfa.siteimprove.com/rules/sia-r7"
@@ -56428,7 +56408,7 @@
       }
     },
     {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/2febb4d398ed0d788f9ac054ff14cfbd68c0c1f1.html",
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/d8c5a59532ae0624edd875aea31ef39086873b7a.html",
       "@type": "TestSubject",
       "dct:hasPart": [
         {
@@ -56448,7 +56428,7 @@
             "@list": []
           },
           "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/2febb4d398ed0d788f9ac054ff14cfbd68c0c1f1.html"
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/d8c5a59532ae0624edd875aea31ef39086873b7a.html"
         },
         {
           "@type": [
@@ -56461,7 +56441,7 @@
               "cnt:ContentAsText"
             ],
             "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html>\n\t<body>\n\t\t<div lang=\"EN\">\n\t\t\t<img src=\"/WAI/content-assets/wcag-act-rules/test-assets/shared/fireworks.jpg\" alt=\"Fireworks over Paris\" />\n\t\t</div>\n\t</body>\n</html>"
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"fr\">\n\t<body>\n\t\t<article lang=\"invalid\">\n\t\t\t<div lang=\"en\">\n\t\t\t\tThey wandered into a strange Tiki bar on the edge of the small beach town.\n\t\t\t</div>\n\t\t</article>\n\t</body>\n</html>"
           },
           "http-vocab:headers": {
             "@list": [
@@ -56475,7 +56455,7 @@
           "http-vocab:statusCodeValue": 200
         }
       ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/2febb4d398ed0d788f9ac054ff14cfbd68c0c1f1.html"
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/d8c5a59532ae0624edd875aea31ef39086873b7a.html"
     },
     {
       "@type": "Assertion",
@@ -56492,11 +56472,11 @@
             "ptr:ExpressionPointer",
             "ptr:XPathPointer"
           ],
-          "ptr:expression": "/html[1]/body[1]/div[1]/@lang"
+          "ptr:expression": "/html[1]/body[1]/article[1]/div[1]/@lang"
         }
       },
       "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/2febb4d398ed0d788f9ac054ff14cfbd68c0c1f1.html"
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/d8c5a59532ae0624edd875aea31ef39086873b7a.html"
       },
       "test": {
         "@id": "https://alfa.siteimprove.com/rules/sia-r7"
@@ -57503,7 +57483,7 @@
       }
     },
     {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/cecfce83c949d20c816a0e43cbc4c26a3468754b.html",
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/50e733e0c505a556fc53e6265eb5b432823570f7.html",
       "@type": "TestSubject",
       "dct:hasPart": [
         {
@@ -57523,7 +57503,7 @@
             "@list": []
           },
           "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/cecfce83c949d20c816a0e43cbc4c26a3468754b.html"
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/50e733e0c505a556fc53e6265eb5b432823570f7.html"
         },
         {
           "@type": [
@@ -57536,7 +57516,7 @@
               "cnt:ContentAsText"
             ],
             "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"es\">\n\t<body>\n\t\t<div lang=\"EN\">\n\t\t\t<img src=\"/WAI/content-assets/wcag-act-rules/test-assets/shared/fireworks.jpg\" alt=\"Fireworks over Paris\" />\n\t\t</div>\n\t</body>\n</html>"
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"lb\">\n\t<body>\n\t\t<p lang=\"i-lux\">Lëtzebuerg ass e Land an Europa.</p>\n\t</body>\n</html>"
           },
           "http-vocab:headers": {
             "@list": [
@@ -57550,7 +57530,7 @@
           "http-vocab:statusCodeValue": 200
         }
       ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/cecfce83c949d20c816a0e43cbc4c26a3468754b.html"
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/50e733e0c505a556fc53e6265eb5b432823570f7.html"
     },
     {
       "@type": "Assertion",
@@ -57558,8 +57538,8 @@
       "earl:mode": "earl:automatic",
       "result": {
         "@type": "TestResult",
-        "info": "The `lang` attribute has a valid primary language subtag",
-        "outcome": "earl:passed",
+        "info": "The `lang` attribute does not have a valid primary language subtag",
+        "outcome": "earl:failed",
         "earl:pointer": {
           "@type": [
             "ptr:Pointer",
@@ -57567,11 +57547,11 @@
             "ptr:ExpressionPointer",
             "ptr:XPathPointer"
           ],
-          "ptr:expression": "/html[1]/body[1]/div[1]/@lang"
+          "ptr:expression": "/html[1]/body[1]/p[1]/@lang"
         }
       },
       "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/cecfce83c949d20c816a0e43cbc4c26a3468754b.html"
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/50e733e0c505a556fc53e6265eb5b432823570f7.html"
       },
       "test": {
         "@id": "https://alfa.siteimprove.com/rules/sia-r7"
@@ -58538,71 +58518,6 @@
       }
     },
     {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/471e3f82cdd9122e2886d2d7bcfc8cda1397a51d.html",
-      "@type": "TestSubject",
-      "dct:hasPart": [
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Request"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": ""
-          },
-          "http-vocab:headers": {
-            "@list": []
-          },
-          "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/471e3f82cdd9122e2886d2d7bcfc8cda1397a51d.html"
-        },
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Response"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<body>\n\t\t<div lang=\"invalid\">\n\t\t\t<img src=\"/WAI/content-assets/wcag-act-rules/test-assets/shared/fireworks.jpg\" alt=\"\" />\n\t\t</div>\n\t</body>\n</html>"
-          },
-          "http-vocab:headers": {
-            "@list": [
-              {
-                "@type": "http-vocab:MessageHeader",
-                "http-vocab:fieldName": "content-type",
-                "http-vocab:fieldValue": "text/html; charset=utf-8"
-              }
-            ]
-          },
-          "http-vocab:statusCodeValue": 200
-        }
-      ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/471e3f82cdd9122e2886d2d7bcfc8cda1397a51d.html"
-    },
-    {
-      "@type": "Assertion",
-      "earl:assertedBy": "Alfa",
-      "earl:mode": "earl:automatic",
-      "result": {
-        "@type": "TestResult",
-        "outcome": "earl:inapplicable"
-      },
-      "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/471e3f82cdd9122e2886d2d7bcfc8cda1397a51d.html"
-      },
-      "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r7"
-      }
-    },
-    {
       "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/73f2c2/7f282d49777b1261a3907ca35c6549b2210b18df.html",
       "@type": "TestSubject",
       "dct:hasPart": [
@@ -59213,81 +59128,6 @@
       }
     },
     {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/1583a11fb07127fb3315fa19f3baaf876aa42aa4.html",
-      "@type": "TestSubject",
-      "dct:hasPart": [
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Request"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": ""
-          },
-          "http-vocab:headers": {
-            "@list": []
-          },
-          "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/1583a11fb07127fb3315fa19f3baaf876aa42aa4.html"
-        },
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Response"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<body>\n\t\t<blockquote lang=\"fr-CH\">\n\t\t\tIls ont trouvé un étrange bar Tiki aux abords de la petite ville balnéaire.\n\t\t</blockquote>\n\t</body>\n</html>"
-          },
-          "http-vocab:headers": {
-            "@list": [
-              {
-                "@type": "http-vocab:MessageHeader",
-                "http-vocab:fieldName": "content-type",
-                "http-vocab:fieldValue": "text/html; charset=utf-8"
-              }
-            ]
-          },
-          "http-vocab:statusCodeValue": 200
-        }
-      ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/1583a11fb07127fb3315fa19f3baaf876aa42aa4.html"
-    },
-    {
-      "@type": "Assertion",
-      "earl:assertedBy": "Alfa",
-      "earl:mode": "earl:automatic",
-      "result": {
-        "@type": "TestResult",
-        "info": "The `lang` attribute has a valid primary language subtag",
-        "outcome": "earl:passed",
-        "earl:pointer": {
-          "@type": [
-            "ptr:Pointer",
-            "ptr:SinglePointer",
-            "ptr:ExpressionPointer",
-            "ptr:XPathPointer"
-          ],
-          "ptr:expression": "/html[1]/body[1]/blockquote[1]/@lang"
-        }
-      },
-      "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/1583a11fb07127fb3315fa19f3baaf876aa42aa4.html"
-      },
-      "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r7"
-      }
-    },
-    {
       "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/73f2c2/512d17179ce05f1d10bccf46b7e294864bfa308d.html",
       "@type": "TestSubject",
       "dct:hasPart": [
@@ -59773,81 +59613,6 @@
       }
     },
     {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/0545e4efa0d7897b357f0396e7e30d5f3b5921dd.html",
-      "@type": "TestSubject",
-      "dct:hasPart": [
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Request"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": ""
-          },
-          "http-vocab:headers": {
-            "@list": []
-          },
-          "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/0545e4efa0d7897b357f0396e7e30d5f3b5921dd.html"
-        },
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Response"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html>\n\t<body>\n\t\t<article lang=\"dutch\">\n\t\t\tZij liepen een vreemde Tiki bar binnen, aan de rand van een dorpje aan het strand.\n\t\t</article>\n\t</body>\n</html>"
-          },
-          "http-vocab:headers": {
-            "@list": [
-              {
-                "@type": "http-vocab:MessageHeader",
-                "http-vocab:fieldName": "content-type",
-                "http-vocab:fieldValue": "text/html; charset=utf-8"
-              }
-            ]
-          },
-          "http-vocab:statusCodeValue": 200
-        }
-      ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/0545e4efa0d7897b357f0396e7e30d5f3b5921dd.html"
-    },
-    {
-      "@type": "Assertion",
-      "earl:assertedBy": "Alfa",
-      "earl:mode": "earl:automatic",
-      "result": {
-        "@type": "TestResult",
-        "info": "The `lang` attribute does not have a valid primary language subtag",
-        "outcome": "earl:failed",
-        "earl:pointer": {
-          "@type": [
-            "ptr:Pointer",
-            "ptr:SinglePointer",
-            "ptr:ExpressionPointer",
-            "ptr:XPathPointer"
-          ],
-          "ptr:expression": "/html[1]/body[1]/article[1]/@lang"
-        }
-      },
-      "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/0545e4efa0d7897b357f0396e7e30d5f3b5921dd.html"
-      },
-      "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r7"
-      }
-    },
-    {
       "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/73f2c2/efcd5df49b39506dac34a310f4b8bc0df71716d3.html",
       "@type": "TestSubject",
       "dct:hasPart": [
@@ -60308,81 +60073,6 @@
       }
     },
     {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/3087d6c373b09b1f4fc70a5c3ae221cce54b626c.html",
-      "@type": "TestSubject",
-      "dct:hasPart": [
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Request"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": ""
-          },
-          "http-vocab:headers": {
-            "@list": []
-          },
-          "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/3087d6c373b09b1f4fc70a5c3ae221cce54b626c.html"
-        },
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Response"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html>\n\t<body>\n\t\t<div lang=\"invalid\">\n\t\t\t<img src=\"/WAI/content-assets/wcag-act-rules/test-assets/shared/fireworks.jpg\" alt=\"Fireworks over Paris\" />\n\t\t</div>\n\t</body>\n</html>"
-          },
-          "http-vocab:headers": {
-            "@list": [
-              {
-                "@type": "http-vocab:MessageHeader",
-                "http-vocab:fieldName": "content-type",
-                "http-vocab:fieldValue": "text/html; charset=utf-8"
-              }
-            ]
-          },
-          "http-vocab:statusCodeValue": 200
-        }
-      ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/3087d6c373b09b1f4fc70a5c3ae221cce54b626c.html"
-    },
-    {
-      "@type": "Assertion",
-      "earl:assertedBy": "Alfa",
-      "earl:mode": "earl:automatic",
-      "result": {
-        "@type": "TestResult",
-        "info": "The `lang` attribute does not have a valid primary language subtag",
-        "outcome": "earl:failed",
-        "earl:pointer": {
-          "@type": [
-            "ptr:Pointer",
-            "ptr:SinglePointer",
-            "ptr:ExpressionPointer",
-            "ptr:XPathPointer"
-          ],
-          "ptr:expression": "/html[1]/body[1]/div[1]/@lang"
-        }
-      },
-      "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/3087d6c373b09b1f4fc70a5c3ae221cce54b626c.html"
-      },
-      "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r7"
-      }
-    },
-    {
       "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/73f2c2/2512c24c9a793fa8a30958e203090f955a3fc262.html",
       "@type": "TestSubject",
       "dct:hasPart": [
@@ -60823,81 +60513,6 @@
       }
     },
     {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/795698c08fc5d404b649d0c367bedc3e83462d43.html",
-      "@type": "TestSubject",
-      "dct:hasPart": [
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Request"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": ""
-          },
-          "http-vocab:headers": {
-            "@list": []
-          },
-          "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/795698c08fc5d404b649d0c367bedc3e83462d43.html"
-        },
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Response"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"es\">\n\t<body>\n\t\t<article lang=\"english\">\n\t\t\t<p aria-hidden=\"true\">\n\t\t\t\tThey wandered into a strange Tiki bar on the edge of the small beach town.\n\t\t\t</p>\n\t\t</article>\n\t</body>\n</html>"
-          },
-          "http-vocab:headers": {
-            "@list": [
-              {
-                "@type": "http-vocab:MessageHeader",
-                "http-vocab:fieldName": "content-type",
-                "http-vocab:fieldValue": "text/html; charset=utf-8"
-              }
-            ]
-          },
-          "http-vocab:statusCodeValue": 200
-        }
-      ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/795698c08fc5d404b649d0c367bedc3e83462d43.html"
-    },
-    {
-      "@type": "Assertion",
-      "earl:assertedBy": "Alfa",
-      "earl:mode": "earl:automatic",
-      "result": {
-        "@type": "TestResult",
-        "info": "The `lang` attribute does not have a valid primary language subtag",
-        "outcome": "earl:failed",
-        "earl:pointer": {
-          "@type": [
-            "ptr:Pointer",
-            "ptr:SinglePointer",
-            "ptr:ExpressionPointer",
-            "ptr:XPathPointer"
-          ],
-          "ptr:expression": "/html[1]/body[1]/article[1]/@lang"
-        }
-      },
-      "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/795698c08fc5d404b649d0c367bedc3e83462d43.html"
-      },
-      "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r7"
-      }
-    },
-    {
       "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/73f2c2/631fc4f23b93e9486e5cc07aed11a99003d4f354.html",
       "@type": "TestSubject",
       "dct:hasPart": [
@@ -61243,81 +60858,6 @@
       }
     },
     {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/b1765660b28464b5a73e502ef30b7370ba294ff5.html",
-      "@type": "TestSubject",
-      "dct:hasPart": [
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Request"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": ""
-          },
-          "http-vocab:headers": {
-            "@list": []
-          },
-          "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/b1765660b28464b5a73e502ef30b7370ba294ff5.html"
-        },
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Response"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"es\">\n\t<body>\n\t\t<article lang=\"dutch\">\n\t\t\tZij liepen een vreemde Tiki bar binnen, aan de rand van een dorpje aan het strand.\n\t\t</article>\n\t</body>\n</html>"
-          },
-          "http-vocab:headers": {
-            "@list": [
-              {
-                "@type": "http-vocab:MessageHeader",
-                "http-vocab:fieldName": "content-type",
-                "http-vocab:fieldValue": "text/html; charset=utf-8"
-              }
-            ]
-          },
-          "http-vocab:statusCodeValue": 200
-        }
-      ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/b1765660b28464b5a73e502ef30b7370ba294ff5.html"
-    },
-    {
-      "@type": "Assertion",
-      "earl:assertedBy": "Alfa",
-      "earl:mode": "earl:automatic",
-      "result": {
-        "@type": "TestResult",
-        "info": "The `lang` attribute does not have a valid primary language subtag",
-        "outcome": "earl:failed",
-        "earl:pointer": {
-          "@type": [
-            "ptr:Pointer",
-            "ptr:SinglePointer",
-            "ptr:ExpressionPointer",
-            "ptr:XPathPointer"
-          ],
-          "ptr:expression": "/html[1]/body[1]/article[1]/@lang"
-        }
-      },
-      "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/b1765660b28464b5a73e502ef30b7370ba294ff5.html"
-      },
-      "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r7"
-      }
-    },
-    {
       "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/73f2c2/d64a0231dbcc95b21aafe3b554b9fdcbc9855301.html",
       "@type": "TestSubject",
       "dct:hasPart": [
@@ -61595,81 +61135,6 @@
       },
       "test": {
         "@id": "https://alfa.siteimprove.com/rules/sia-r69"
-      }
-    },
-    {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/5ba0306adadd581e4331b9415c2ef9f8ecccc0f2.html",
-      "@type": "TestSubject",
-      "dct:hasPart": [
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Request"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": ""
-          },
-          "http-vocab:headers": {
-            "@list": []
-          },
-          "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/5ba0306adadd581e4331b9415c2ef9f8ecccc0f2.html"
-        },
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Response"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<body>\n\t\t<div lang=\"invalid\">\n\t\t\t<img src=\"/WAI/content-assets/wcag-act-rules/test-assets/shared/fireworks.jpg\" alt=\"Fireworks over Paris\" />\n\t\t</div>\n\t</body>\n</html>"
-          },
-          "http-vocab:headers": {
-            "@list": [
-              {
-                "@type": "http-vocab:MessageHeader",
-                "http-vocab:fieldName": "content-type",
-                "http-vocab:fieldValue": "text/html; charset=utf-8"
-              }
-            ]
-          },
-          "http-vocab:statusCodeValue": 200
-        }
-      ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/5ba0306adadd581e4331b9415c2ef9f8ecccc0f2.html"
-    },
-    {
-      "@type": "Assertion",
-      "earl:assertedBy": "Alfa",
-      "earl:mode": "earl:automatic",
-      "result": {
-        "@type": "TestResult",
-        "info": "The `lang` attribute does not have a valid primary language subtag",
-        "outcome": "earl:failed",
-        "earl:pointer": {
-          "@type": [
-            "ptr:Pointer",
-            "ptr:SinglePointer",
-            "ptr:ExpressionPointer",
-            "ptr:XPathPointer"
-          ],
-          "ptr:expression": "/html[1]/body[1]/div[1]/@lang"
-        }
-      },
-      "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/5ba0306adadd581e4331b9415c2ef9f8ecccc0f2.html"
-      },
-      "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r7"
       }
     },
     {
@@ -61973,81 +61438,6 @@
       }
     },
     {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/61f81c57325a77a89481f036e4e2116399fb6714.html",
-      "@type": "TestSubject",
-      "dct:hasPart": [
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Request"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": ""
-          },
-          "http-vocab:headers": {
-            "@list": []
-          },
-          "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/61f81c57325a77a89481f036e4e2116399fb6714.html"
-        },
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Response"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"es\">\n\t<body>\n\t\t<article lang=\"en\">\n\t\t\t<div lang=\"invalid\">\n\t\t\t\tThey wandered into a strange Tiki bar on the edge of the small beach town.\n\t\t\t</div>\n\t\t</article>\n\t</body>\n</html>"
-          },
-          "http-vocab:headers": {
-            "@list": [
-              {
-                "@type": "http-vocab:MessageHeader",
-                "http-vocab:fieldName": "content-type",
-                "http-vocab:fieldValue": "text/html; charset=utf-8"
-              }
-            ]
-          },
-          "http-vocab:statusCodeValue": 200
-        }
-      ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/61f81c57325a77a89481f036e4e2116399fb6714.html"
-    },
-    {
-      "@type": "Assertion",
-      "earl:assertedBy": "Alfa",
-      "earl:mode": "earl:automatic",
-      "result": {
-        "@type": "TestResult",
-        "info": "The `lang` attribute does not have a valid primary language subtag",
-        "outcome": "earl:failed",
-        "earl:pointer": {
-          "@type": [
-            "ptr:Pointer",
-            "ptr:SinglePointer",
-            "ptr:ExpressionPointer",
-            "ptr:XPathPointer"
-          ],
-          "ptr:expression": "/html[1]/body[1]/article[1]/div[1]/@lang"
-        }
-      },
-      "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/61f81c57325a77a89481f036e4e2116399fb6714.html"
-      },
-      "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r7"
-      }
-    },
-    {
       "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/73f2c2/8ffedb82ca905c0cd8851d924884d9c1cdcb8d08.html",
       "@type": "TestSubject",
       "dct:hasPart": [
@@ -62325,81 +61715,6 @@
       },
       "test": {
         "@id": "https://alfa.siteimprove.com/rules/sia-r69"
-      }
-    },
-    {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/e7f2916927e758969cbfe270ad4b6ed6c07faa72.html",
-      "@type": "TestSubject",
-      "dct:hasPart": [
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Request"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": ""
-          },
-          "http-vocab:headers": {
-            "@list": []
-          },
-          "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/e7f2916927e758969cbfe270ad4b6ed6c07faa72.html"
-        },
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Response"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html>\n\t<body>\n\t\t<article lang=\"#!\">\n\t\t\tThey wandered into a strange Tiki bar on the edge of the small beach town.\n\t\t</article>\n\t</body>\n</html>"
-          },
-          "http-vocab:headers": {
-            "@list": [
-              {
-                "@type": "http-vocab:MessageHeader",
-                "http-vocab:fieldName": "content-type",
-                "http-vocab:fieldValue": "text/html; charset=utf-8"
-              }
-            ]
-          },
-          "http-vocab:statusCodeValue": 200
-        }
-      ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/e7f2916927e758969cbfe270ad4b6ed6c07faa72.html"
-    },
-    {
-      "@type": "Assertion",
-      "earl:assertedBy": "Alfa",
-      "earl:mode": "earl:automatic",
-      "result": {
-        "@type": "TestResult",
-        "info": "The `lang` attribute does not have a valid primary language subtag",
-        "outcome": "earl:failed",
-        "earl:pointer": {
-          "@type": [
-            "ptr:Pointer",
-            "ptr:SinglePointer",
-            "ptr:ExpressionPointer",
-            "ptr:XPathPointer"
-          ],
-          "ptr:expression": "/html[1]/body[1]/article[1]/@lang"
-        }
-      },
-      "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/e7f2916927e758969cbfe270ad4b6ed6c07faa72.html"
-      },
-      "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r7"
       }
     },
     {
@@ -62693,71 +62008,6 @@
       }
     },
     {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/4fa5219cf39dc536c51d67f6c4f9f54271a8dcfa.html",
-      "@type": "TestSubject",
-      "dct:hasPart": [
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Request"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": ""
-          },
-          "http-vocab:headers": {
-            "@list": []
-          },
-          "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/4fa5219cf39dc536c51d67f6c4f9f54271a8dcfa.html"
-        },
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Response"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n\t<body>\n\t\t<div lang=\"invalid\"></div>\n\t</body>\n</html>"
-          },
-          "http-vocab:headers": {
-            "@list": [
-              {
-                "@type": "http-vocab:MessageHeader",
-                "http-vocab:fieldName": "content-type",
-                "http-vocab:fieldValue": "text/html; charset=utf-8"
-              }
-            ]
-          },
-          "http-vocab:statusCodeValue": 200
-        }
-      ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/4fa5219cf39dc536c51d67f6c4f9f54271a8dcfa.html"
-    },
-    {
-      "@type": "Assertion",
-      "earl:assertedBy": "Alfa",
-      "earl:mode": "earl:automatic",
-      "result": {
-        "@type": "TestResult",
-        "outcome": "earl:inapplicable"
-      },
-      "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/4fa5219cf39dc536c51d67f6c4f9f54271a8dcfa.html"
-      },
-      "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r7"
-      }
-    },
-    {
       "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/2e81c3e60722202d2e92089a0695d74e8b49cdaa.html",
       "@type": "TestSubject",
       "dct:hasPart": [
@@ -62908,81 +62158,6 @@
       }
     },
     {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/d8c5a59532ae0624edd875aea31ef39086873b7a.html",
-      "@type": "TestSubject",
-      "dct:hasPart": [
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Request"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": ""
-          },
-          "http-vocab:headers": {
-            "@list": []
-          },
-          "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/d8c5a59532ae0624edd875aea31ef39086873b7a.html"
-        },
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Response"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"fr\">\n\t<body>\n\t\t<article lang=\"invalid\">\n\t\t\t<div lang=\"en\">\n\t\t\t\tThey wandered into a strange Tiki bar on the edge of the small beach town.\n\t\t\t</div>\n\t\t</article>\n\t</body>\n</html>"
-          },
-          "http-vocab:headers": {
-            "@list": [
-              {
-                "@type": "http-vocab:MessageHeader",
-                "http-vocab:fieldName": "content-type",
-                "http-vocab:fieldValue": "text/html; charset=utf-8"
-              }
-            ]
-          },
-          "http-vocab:statusCodeValue": 200
-        }
-      ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/d8c5a59532ae0624edd875aea31ef39086873b7a.html"
-    },
-    {
-      "@type": "Assertion",
-      "earl:assertedBy": "Alfa",
-      "earl:mode": "earl:automatic",
-      "result": {
-        "@type": "TestResult",
-        "info": "The `lang` attribute has a valid primary language subtag",
-        "outcome": "earl:passed",
-        "earl:pointer": {
-          "@type": [
-            "ptr:Pointer",
-            "ptr:SinglePointer",
-            "ptr:ExpressionPointer",
-            "ptr:XPathPointer"
-          ],
-          "ptr:expression": "/html[1]/body[1]/article[1]/div[1]/@lang"
-        }
-      },
-      "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/d8c5a59532ae0624edd875aea31ef39086873b7a.html"
-      },
-      "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r7"
-      }
-    },
-    {
       "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/328b967c5b544b48f7acd8e42f2f05d355501f2a.html",
       "@type": "TestSubject",
       "dct:hasPart": [
@@ -63120,81 +62295,6 @@
       },
       "test": {
         "@id": "https://alfa.siteimprove.com/rules/sia-r69"
-      }
-    },
-    {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/50e733e0c505a556fc53e6265eb5b432823570f7.html",
-      "@type": "TestSubject",
-      "dct:hasPart": [
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Request"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": ""
-          },
-          "http-vocab:headers": {
-            "@list": []
-          },
-          "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/50e733e0c505a556fc53e6265eb5b432823570f7.html"
-        },
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Response"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"lb\">\n\t<body>\n\t\t<p lang=\"i-lux\">Lëtzebuerg ass e Land an Europa.</p>\n\t</body>\n</html>"
-          },
-          "http-vocab:headers": {
-            "@list": [
-              {
-                "@type": "http-vocab:MessageHeader",
-                "http-vocab:fieldName": "content-type",
-                "http-vocab:fieldValue": "text/html; charset=utf-8"
-              }
-            ]
-          },
-          "http-vocab:statusCodeValue": 200
-        }
-      ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/50e733e0c505a556fc53e6265eb5b432823570f7.html"
-    },
-    {
-      "@type": "Assertion",
-      "earl:assertedBy": "Alfa",
-      "earl:mode": "earl:automatic",
-      "result": {
-        "@type": "TestResult",
-        "info": "The `lang` attribute does not have a valid primary language subtag",
-        "outcome": "earl:failed",
-        "earl:pointer": {
-          "@type": [
-            "ptr:Pointer",
-            "ptr:SinglePointer",
-            "ptr:ExpressionPointer",
-            "ptr:XPathPointer"
-          ],
-          "ptr:expression": "/html[1]/body[1]/p[1]/@lang"
-        }
-      },
-      "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/de46e4/50e733e0c505a556fc53e6265eb5b432823570f7.html"
-      },
-      "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r7"
       }
     },
     {
