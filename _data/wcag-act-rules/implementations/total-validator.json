@@ -2,7 +2,7 @@
   "vendor": "Total Validator",
   "name": "Total Validator",
   "version": "17.1.0",
-  "lastModified": "16 November 2023",
+  "lastModified": "23 December 2023",
   "approvedRules": {
     "complete": 27,
     "partial": 0,
@@ -1298,9 +1298,9 @@
         ]
       },
       "coverage": {
-        "covered": 15,
+        "covered": 16,
         "untested": 0,
-        "cantTell": 4,
+        "cantTell": 3,
         "testCaseTotal": 19
       },
       "testCaseResults": [
@@ -1419,13 +1419,13 @@
             {
               "procedureName": "W917",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             },
             {
               "procedureName": "P917",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]

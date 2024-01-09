@@ -2,10 +2,10 @@
   "vendor": "LASIGE, Faculdade de Ciências da Universidade de Lisboa",
   "name": "QualWeb",
   "version": "3.0.0",
-  "lastModified": "4 December 2023",
+  "lastModified": "8 January 2024",
   "approvedRules": {
-    "complete": 22,
-    "partial": 3,
+    "complete": 23,
+    "partial": 2,
     "inconsistent": 6,
     "untested": 3
   },
@@ -4321,7 +4321,7 @@
       "procedureNames": [
         "Link has accessible name"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -4335,7 +4335,7 @@
         ]
       },
       "coverage": {
-        "covered": 27,
+        "covered": 28,
         "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 28
@@ -4486,7 +4486,7 @@
             {
               "procedureName": "Link has accessible name",
               "outcomes": [
-                "inapplicable"
+                "passed"
               ]
             }
           ]
@@ -4621,7 +4621,7 @@
             {
               "procedureName": "Link has accessible name",
               "outcomes": [
-                "inapplicable"
+                "failed"
               ]
             }
           ]
@@ -10592,8 +10592,8 @@
         ]
       },
       "coverage": {
-        "covered": 8,
-        "untested": 4,
+        "covered": 11,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 12
       },
@@ -10653,7 +10653,7 @@
             {
               "procedureName": "Orientation of the page is not restricted using CSS transform property",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -10683,7 +10683,7 @@
             {
               "procedureName": "Orientation of the page is not restricted using CSS transform property",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -10698,7 +10698,7 @@
             {
               "procedureName": "Orientation of the page is not restricted using CSS transform property",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -10758,7 +10758,7 @@
             {
               "procedureName": "Orientation of the page is not restricted using CSS transform property",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
