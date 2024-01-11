@@ -10,8 +10,8 @@
     "untested": 4
   },
   "proposedRules": {
-    "complete": 7,
-    "partial": 8,
+    "complete": 6,
+    "partial": 9,
     "inconsistent": 5,
     "untested": 32
   },
@@ -13682,7 +13682,7 @@
       "procedureNames": [
         "label-content-name-mismatch"
       ],
-      "consistency": "complete",
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -13694,9 +13694,9 @@
       },
       "coverage": {
         "covered": 12,
-        "untested": 0,
-        "cantTell": 1,
-        "testCaseTotal": 13
+        "untested": 3,
+        "cantTell": 0,
+        "testCaseTotal": 15
       },
       "testCaseResults": [
         {
@@ -13760,16 +13760,16 @@
           ]
         },
         {
-          "testcaseId": "c7f6c637f82c017db4e3cd035b29cc2522043021",
+          "testcaseId": "79af5d3e531aecd27961f0b9ed260d95f39440c0",
           "testCaseName": "Passed Example 5",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2ee8b8/c7f6c637f82c017db4e3cd035b29cc2522043021.html",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2ee8b8/79af5d3e531aecd27961f0b9ed260d95f39440c0.html",
           "testCaseApproved": false,
           "expected": "passed",
           "procedureResults": [
             {
               "procedureName": "label-content-name-mismatch",
               "outcomes": [
-                "cantTell"
+                "untested"
               ]
             }
           ]
@@ -13830,6 +13830,36 @@
               "procedureName": "label-content-name-mismatch",
               "outcomes": [
                 "failed"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "e9bbdbec137223e2973c6d2896050770c84c26e5",
+          "testCaseName": "Failed Example 4",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2ee8b8/e9bbdbec137223e2973c6d2896050770c84c26e5.html",
+          "testCaseApproved": false,
+          "expected": "failed",
+          "procedureResults": [
+            {
+              "procedureName": "label-content-name-mismatch",
+              "outcomes": [
+                "untested"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "fd0c075f565b6f42be0ded6a959bea82ebff15e5",
+          "testCaseName": "Failed Example 5",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2ee8b8/fd0c075f565b6f42be0ded6a959bea82ebff15e5.html",
+          "testCaseApproved": false,
+          "expected": "failed",
+          "procedureResults": [
+            {
+              "procedureName": "label-content-name-mismatch",
+              "outcomes": [
+                "untested"
               ]
             }
           ]
