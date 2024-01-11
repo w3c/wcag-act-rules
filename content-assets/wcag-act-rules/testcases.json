@@ -3,7 +3,7 @@
   "website": "https://www.w3.org/WAI/standards-guidelines/act/rules/",
   "license": "https://act-rules.github.io/pages/license/",
   "description": "Accessibility conformance testing rules for HTML",
-  "count": 1130,
+  "count": 1132,
   "testcases": [
     {
       "ruleId": "674b10",
@@ -26717,10 +26717,10 @@
         }
       },
       "expected": "passed",
-      "testcaseId": "c7f6c637f82c017db4e3cd035b29cc2522043021",
+      "testcaseId": "79af5d3e531aecd27961f0b9ed260d95f39440c0",
       "testcaseTitle": "Passed Example 5",
-      "relativePath": "testcases/2ee8b8/c7f6c637f82c017db4e3cd035b29cc2522043021.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2ee8b8/c7f6c637f82c017db4e3cd035b29cc2522043021.html",
+      "relativePath": "testcases/2ee8b8/79af5d3e531aecd27961f0b9ed260d95f39440c0.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2ee8b8/79af5d3e531aecd27961f0b9ed260d95f39440c0.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/2ee8b8/proposed/"
     },
     {
@@ -26817,6 +26817,54 @@
       "testcaseTitle": "Failed Example 3",
       "relativePath": "testcases/2ee8b8/20a5e321fc6a5cb2bfcd520acb8cda21e6925254.html",
       "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2ee8b8/20a5e321fc6a5cb2bfcd520acb8cda21e6925254.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/2ee8b8/proposed/"
+    },
+    {
+      "ruleId": "2ee8b8",
+      "ruleName": "Visible label is part of accessible name",
+      "ruleAccessibilityRequirements": {
+        "wcag21:2.5.3": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:G208": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "e9bbdbec137223e2973c6d2896050770c84c26e5",
+      "testcaseTitle": "Failed Example 4",
+      "relativePath": "testcases/2ee8b8/e9bbdbec137223e2973c6d2896050770c84c26e5.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2ee8b8/e9bbdbec137223e2973c6d2896050770c84c26e5.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/2ee8b8/proposed/"
+    },
+    {
+      "ruleId": "2ee8b8",
+      "ruleName": "Visible label is part of accessible name",
+      "ruleAccessibilityRequirements": {
+        "wcag21:2.5.3": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:G208": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "fd0c075f565b6f42be0ded6a959bea82ebff15e5",
+      "testcaseTitle": "Failed Example 5",
+      "relativePath": "testcases/2ee8b8/fd0c075f565b6f42be0ded6a959bea82ebff15e5.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2ee8b8/fd0c075f565b6f42be0ded6a959bea82ebff15e5.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/2ee8b8/proposed/"
     },
     {
