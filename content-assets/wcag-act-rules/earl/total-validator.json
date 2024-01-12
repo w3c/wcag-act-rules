@@ -7683,6 +7683,370 @@
     },
     {
       "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/6a414a1455a58e4505d7c550486d628f0fd80fdd.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "E8821",
+            "isPartOf": ["WCAG2:interruptions", "WCAG2:change-on-request", "WCAG2:timing-adjustable"]
+           },
+          "result": { "outcome": "earl:passed" }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/6a414a1455a58e4505d7c550486d628f0fd80fdd.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "E9012",
+            "isPartOf": ["WCAG2:interruptions", "WCAG2:change-on-request", "WCAG2:timing-adjustable"]
+           },
+          "result": { "outcome": "earl:passed" }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/24a98a3ff6a69e073f768bb198671ea6a1c4568a.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "E8821",
+            "isPartOf": ["WCAG2:interruptions", "WCAG2:change-on-request", "WCAG2:timing-adjustable"]
+           },
+          "result": { "outcome": "earl:passed" }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/24a98a3ff6a69e073f768bb198671ea6a1c4568a.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "E9012",
+            "isPartOf": ["WCAG2:interruptions", "WCAG2:change-on-request", "WCAG2:timing-adjustable"]
+           },
+          "result": { "outcome": "earl:passed" }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/ecc787569c06640f3748ae90e2b57fb51c1e22d8.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "E8821",
+            "isPartOf": ["WCAG2:interruptions", "WCAG2:change-on-request", "WCAG2:timing-adjustable"]
+           },
+          "result": { "outcome": "earl:failed" }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/ecc787569c06640f3748ae90e2b57fb51c1e22d8.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "E9012",
+            "isPartOf": ["WCAG2:interruptions", "WCAG2:change-on-request", "WCAG2:timing-adjustable"]
+           },
+          "result": { "outcome": "earl:passed" }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/d0672e81d17313f7ef156f3bc6e43c68143a5f45.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "E8821",
+            "isPartOf": ["WCAG2:interruptions", "WCAG2:change-on-request", "WCAG2:timing-adjustable"]
+           },
+          "result": { "outcome": "earl:passed" }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/d0672e81d17313f7ef156f3bc6e43c68143a5f45.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "E9012",
+            "isPartOf": ["WCAG2:interruptions", "WCAG2:change-on-request", "WCAG2:timing-adjustable"]
+           },
+          "result": { "outcome": "earl:failed" }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/b8aad77e3ff2fa8d0272fac5362566ff79afad7f.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "E8821",
+            "isPartOf": ["WCAG2:interruptions", "WCAG2:change-on-request", "WCAG2:timing-adjustable"]
+           },
+          "result": { "outcome": "earl:passed" }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/b8aad77e3ff2fa8d0272fac5362566ff79afad7f.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "E9012",
+            "isPartOf": ["WCAG2:interruptions", "WCAG2:change-on-request", "WCAG2:timing-adjustable"]
+           },
+          "result": { "outcome": "earl:failed" }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/3761ce87e64549073f62df26071fbde9850e649e.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "E8821",
+            "isPartOf": ["WCAG2:interruptions", "WCAG2:change-on-request", "WCAG2:timing-adjustable"]
+           },
+          "result": { "outcome": "earl:passed" }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/3761ce87e64549073f62df26071fbde9850e649e.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "E9012",
+            "isPartOf": ["WCAG2:interruptions", "WCAG2:change-on-request", "WCAG2:timing-adjustable"]
+           },
+          "result": { "outcome": "earl:passed" }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/c73e036ba88dbbedf6b6a90b69328208eb1e14d0.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "E8821",
+            "isPartOf": ["WCAG2:interruptions", "WCAG2:change-on-request", "WCAG2:timing-adjustable"]
+           },
+          "result": { "outcome": "earl:passed" }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/c73e036ba88dbbedf6b6a90b69328208eb1e14d0.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "E9012",
+            "isPartOf": ["WCAG2:interruptions", "WCAG2:change-on-request", "WCAG2:timing-adjustable"]
+           },
+          "result": { "outcome": "earl:passed" }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/31864b9243c7565e802c6b4f36faed5861a631d3.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "E8821",
+            "isPartOf": ["WCAG2:interruptions", "WCAG2:change-on-request", "WCAG2:timing-adjustable"]
+           },
+          "result": { "outcome": "earl:passed" }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/31864b9243c7565e802c6b4f36faed5861a631d3.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "E9012",
+            "isPartOf": ["WCAG2:interruptions", "WCAG2:change-on-request", "WCAG2:timing-adjustable"]
+           },
+          "result": { "outcome": "earl:passed" }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/e6e51895cab42ee6adf2ade5b654808d830e673b.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "E8821",
+            "isPartOf": ["WCAG2:interruptions", "WCAG2:change-on-request", "WCAG2:timing-adjustable"]
+           },
+          "result": { "outcome": "earl:passed" }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/e6e51895cab42ee6adf2ade5b654808d830e673b.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "E9012",
+            "isPartOf": ["WCAG2:interruptions", "WCAG2:change-on-request", "WCAG2:timing-adjustable"]
+           },
+          "result": { "outcome": "earl:passed" }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/a32834c94a9dd1869e22ccfb0b7b753648c8d469.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "E8821",
+            "isPartOf": ["WCAG2:interruptions", "WCAG2:change-on-request", "WCAG2:timing-adjustable"]
+           },
+          "result": { "outcome": "earl:passed" }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/a32834c94a9dd1869e22ccfb0b7b753648c8d469.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "E9012",
+            "isPartOf": ["WCAG2:interruptions", "WCAG2:change-on-request", "WCAG2:timing-adjustable"]
+           },
+          "result": { "outcome": "earl:passed" }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/c3cc2e9d19259f7a7ffa99818ac44d034127f01f.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "E8821",
+            "isPartOf": ["WCAG2:interruptions", "WCAG2:change-on-request", "WCAG2:timing-adjustable"]
+           },
+          "result": { "outcome": "earl:passed" }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/c3cc2e9d19259f7a7ffa99818ac44d034127f01f.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "E9012",
+            "isPartOf": ["WCAG2:interruptions", "WCAG2:change-on-request", "WCAG2:timing-adjustable"]
+           },
+          "result": { "outcome": "earl:passed" }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/1846b9116a8563e653cee40753b4c904696851f9.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "E8821",
+            "isPartOf": ["WCAG2:interruptions", "WCAG2:change-on-request", "WCAG2:timing-adjustable"]
+           },
+          "result": { "outcome": "earl:passed" }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/1846b9116a8563e653cee40753b4c904696851f9.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "E9012",
+            "isPartOf": ["WCAG2:interruptions", "WCAG2:change-on-request", "WCAG2:timing-adjustable"]
+           },
+          "result": { "outcome": "earl:passed" }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/0dcdacefc963adfbb2d3493e5468f8f12f0ac6de.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "E8821",
+            "isPartOf": ["WCAG2:interruptions", "WCAG2:change-on-request", "WCAG2:timing-adjustable"]
+           },
+          "result": { "outcome": "earl:passed" }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/0dcdacefc963adfbb2d3493e5468f8f12f0ac6de.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "E9012",
+            "isPartOf": ["WCAG2:interruptions", "WCAG2:change-on-request", "WCAG2:timing-adjustable"]
+           },
+          "result": { "outcome": "earl:passed" }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
       "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ff89c9/3ae3bc1c993acb6baaad2811cbd6139a8093361c.html",
       "assertions": [
         {
@@ -9825,370 +10189,6 @@
     },
     {
       "@type": "TestSubject",
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/6a414a1455a58e4505d7c550486d628f0fd80fdd.html",
-      "assertions": [
-        {
-          "@type": "Assertion",
-          "test": {
-            "title": "E8821",
-            "isPartOf": ["WCAG2:interruptions", "WCAG2:change-on-request", "WCAG2:timing-adjustable"]
-           },
-          "result": { "outcome": "earl:passed" }
-        }
-      ]
-    },
-    {
-      "@type": "TestSubject",
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/6a414a1455a58e4505d7c550486d628f0fd80fdd.html",
-      "assertions": [
-        {
-          "@type": "Assertion",
-          "test": {
-            "title": "E9012",
-            "isPartOf": ["WCAG2:interruptions", "WCAG2:change-on-request", "WCAG2:timing-adjustable"]
-           },
-          "result": { "outcome": "earl:passed" }
-        }
-      ]
-    },
-    {
-      "@type": "TestSubject",
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/24a98a3ff6a69e073f768bb198671ea6a1c4568a.html",
-      "assertions": [
-        {
-          "@type": "Assertion",
-          "test": {
-            "title": "E8821",
-            "isPartOf": ["WCAG2:interruptions", "WCAG2:change-on-request", "WCAG2:timing-adjustable"]
-           },
-          "result": { "outcome": "earl:passed" }
-        }
-      ]
-    },
-    {
-      "@type": "TestSubject",
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/24a98a3ff6a69e073f768bb198671ea6a1c4568a.html",
-      "assertions": [
-        {
-          "@type": "Assertion",
-          "test": {
-            "title": "E9012",
-            "isPartOf": ["WCAG2:interruptions", "WCAG2:change-on-request", "WCAG2:timing-adjustable"]
-           },
-          "result": { "outcome": "earl:passed" }
-        }
-      ]
-    },
-    {
-      "@type": "TestSubject",
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/ecc787569c06640f3748ae90e2b57fb51c1e22d8.html",
-      "assertions": [
-        {
-          "@type": "Assertion",
-          "test": {
-            "title": "E8821",
-            "isPartOf": ["WCAG2:interruptions", "WCAG2:change-on-request", "WCAG2:timing-adjustable"]
-           },
-          "result": { "outcome": "earl:failed" }
-        }
-      ]
-    },
-    {
-      "@type": "TestSubject",
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/ecc787569c06640f3748ae90e2b57fb51c1e22d8.html",
-      "assertions": [
-        {
-          "@type": "Assertion",
-          "test": {
-            "title": "E9012",
-            "isPartOf": ["WCAG2:interruptions", "WCAG2:change-on-request", "WCAG2:timing-adjustable"]
-           },
-          "result": { "outcome": "earl:passed" }
-        }
-      ]
-    },
-    {
-      "@type": "TestSubject",
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/d0672e81d17313f7ef156f3bc6e43c68143a5f45.html",
-      "assertions": [
-        {
-          "@type": "Assertion",
-          "test": {
-            "title": "E8821",
-            "isPartOf": ["WCAG2:interruptions", "WCAG2:change-on-request", "WCAG2:timing-adjustable"]
-           },
-          "result": { "outcome": "earl:passed" }
-        }
-      ]
-    },
-    {
-      "@type": "TestSubject",
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/d0672e81d17313f7ef156f3bc6e43c68143a5f45.html",
-      "assertions": [
-        {
-          "@type": "Assertion",
-          "test": {
-            "title": "E9012",
-            "isPartOf": ["WCAG2:interruptions", "WCAG2:change-on-request", "WCAG2:timing-adjustable"]
-           },
-          "result": { "outcome": "earl:failed" }
-        }
-      ]
-    },
-    {
-      "@type": "TestSubject",
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/b8aad77e3ff2fa8d0272fac5362566ff79afad7f.html",
-      "assertions": [
-        {
-          "@type": "Assertion",
-          "test": {
-            "title": "E8821",
-            "isPartOf": ["WCAG2:interruptions", "WCAG2:change-on-request", "WCAG2:timing-adjustable"]
-           },
-          "result": { "outcome": "earl:passed" }
-        }
-      ]
-    },
-    {
-      "@type": "TestSubject",
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/b8aad77e3ff2fa8d0272fac5362566ff79afad7f.html",
-      "assertions": [
-        {
-          "@type": "Assertion",
-          "test": {
-            "title": "E9012",
-            "isPartOf": ["WCAG2:interruptions", "WCAG2:change-on-request", "WCAG2:timing-adjustable"]
-           },
-          "result": { "outcome": "earl:failed" }
-        }
-      ]
-    },
-    {
-      "@type": "TestSubject",
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/3761ce87e64549073f62df26071fbde9850e649e.html",
-      "assertions": [
-        {
-          "@type": "Assertion",
-          "test": {
-            "title": "E8821",
-            "isPartOf": ["WCAG2:interruptions", "WCAG2:change-on-request", "WCAG2:timing-adjustable"]
-           },
-          "result": { "outcome": "earl:passed" }
-        }
-      ]
-    },
-    {
-      "@type": "TestSubject",
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/3761ce87e64549073f62df26071fbde9850e649e.html",
-      "assertions": [
-        {
-          "@type": "Assertion",
-          "test": {
-            "title": "E9012",
-            "isPartOf": ["WCAG2:interruptions", "WCAG2:change-on-request", "WCAG2:timing-adjustable"]
-           },
-          "result": { "outcome": "earl:passed" }
-        }
-      ]
-    },
-    {
-      "@type": "TestSubject",
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/c73e036ba88dbbedf6b6a90b69328208eb1e14d0.html",
-      "assertions": [
-        {
-          "@type": "Assertion",
-          "test": {
-            "title": "E8821",
-            "isPartOf": ["WCAG2:interruptions", "WCAG2:change-on-request", "WCAG2:timing-adjustable"]
-           },
-          "result": { "outcome": "earl:passed" }
-        }
-      ]
-    },
-    {
-      "@type": "TestSubject",
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/c73e036ba88dbbedf6b6a90b69328208eb1e14d0.html",
-      "assertions": [
-        {
-          "@type": "Assertion",
-          "test": {
-            "title": "E9012",
-            "isPartOf": ["WCAG2:interruptions", "WCAG2:change-on-request", "WCAG2:timing-adjustable"]
-           },
-          "result": { "outcome": "earl:passed" }
-        }
-      ]
-    },
-    {
-      "@type": "TestSubject",
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/31864b9243c7565e802c6b4f36faed5861a631d3.html",
-      "assertions": [
-        {
-          "@type": "Assertion",
-          "test": {
-            "title": "E8821",
-            "isPartOf": ["WCAG2:interruptions", "WCAG2:change-on-request", "WCAG2:timing-adjustable"]
-           },
-          "result": { "outcome": "earl:passed" }
-        }
-      ]
-    },
-    {
-      "@type": "TestSubject",
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/31864b9243c7565e802c6b4f36faed5861a631d3.html",
-      "assertions": [
-        {
-          "@type": "Assertion",
-          "test": {
-            "title": "E9012",
-            "isPartOf": ["WCAG2:interruptions", "WCAG2:change-on-request", "WCAG2:timing-adjustable"]
-           },
-          "result": { "outcome": "earl:passed" }
-        }
-      ]
-    },
-    {
-      "@type": "TestSubject",
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/e6e51895cab42ee6adf2ade5b654808d830e673b.html",
-      "assertions": [
-        {
-          "@type": "Assertion",
-          "test": {
-            "title": "E8821",
-            "isPartOf": ["WCAG2:interruptions", "WCAG2:change-on-request", "WCAG2:timing-adjustable"]
-           },
-          "result": { "outcome": "earl:passed" }
-        }
-      ]
-    },
-    {
-      "@type": "TestSubject",
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/e6e51895cab42ee6adf2ade5b654808d830e673b.html",
-      "assertions": [
-        {
-          "@type": "Assertion",
-          "test": {
-            "title": "E9012",
-            "isPartOf": ["WCAG2:interruptions", "WCAG2:change-on-request", "WCAG2:timing-adjustable"]
-           },
-          "result": { "outcome": "earl:passed" }
-        }
-      ]
-    },
-    {
-      "@type": "TestSubject",
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/a32834c94a9dd1869e22ccfb0b7b753648c8d469.html",
-      "assertions": [
-        {
-          "@type": "Assertion",
-          "test": {
-            "title": "E8821",
-            "isPartOf": ["WCAG2:interruptions", "WCAG2:change-on-request", "WCAG2:timing-adjustable"]
-           },
-          "result": { "outcome": "earl:passed" }
-        }
-      ]
-    },
-    {
-      "@type": "TestSubject",
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/a32834c94a9dd1869e22ccfb0b7b753648c8d469.html",
-      "assertions": [
-        {
-          "@type": "Assertion",
-          "test": {
-            "title": "E9012",
-            "isPartOf": ["WCAG2:interruptions", "WCAG2:change-on-request", "WCAG2:timing-adjustable"]
-           },
-          "result": { "outcome": "earl:passed" }
-        }
-      ]
-    },
-    {
-      "@type": "TestSubject",
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/c3cc2e9d19259f7a7ffa99818ac44d034127f01f.html",
-      "assertions": [
-        {
-          "@type": "Assertion",
-          "test": {
-            "title": "E8821",
-            "isPartOf": ["WCAG2:interruptions", "WCAG2:change-on-request", "WCAG2:timing-adjustable"]
-           },
-          "result": { "outcome": "earl:passed" }
-        }
-      ]
-    },
-    {
-      "@type": "TestSubject",
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/c3cc2e9d19259f7a7ffa99818ac44d034127f01f.html",
-      "assertions": [
-        {
-          "@type": "Assertion",
-          "test": {
-            "title": "E9012",
-            "isPartOf": ["WCAG2:interruptions", "WCAG2:change-on-request", "WCAG2:timing-adjustable"]
-           },
-          "result": { "outcome": "earl:passed" }
-        }
-      ]
-    },
-    {
-      "@type": "TestSubject",
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/1846b9116a8563e653cee40753b4c904696851f9.html",
-      "assertions": [
-        {
-          "@type": "Assertion",
-          "test": {
-            "title": "E8821",
-            "isPartOf": ["WCAG2:interruptions", "WCAG2:change-on-request", "WCAG2:timing-adjustable"]
-           },
-          "result": { "outcome": "earl:passed" }
-        }
-      ]
-    },
-    {
-      "@type": "TestSubject",
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/1846b9116a8563e653cee40753b4c904696851f9.html",
-      "assertions": [
-        {
-          "@type": "Assertion",
-          "test": {
-            "title": "E9012",
-            "isPartOf": ["WCAG2:interruptions", "WCAG2:change-on-request", "WCAG2:timing-adjustable"]
-           },
-          "result": { "outcome": "earl:passed" }
-        }
-      ]
-    },
-    {
-      "@type": "TestSubject",
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/0dcdacefc963adfbb2d3493e5468f8f12f0ac6de.html",
-      "assertions": [
-        {
-          "@type": "Assertion",
-          "test": {
-            "title": "E8821",
-            "isPartOf": ["WCAG2:interruptions", "WCAG2:change-on-request", "WCAG2:timing-adjustable"]
-           },
-          "result": { "outcome": "earl:passed" }
-        }
-      ]
-    },
-    {
-      "@type": "TestSubject",
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/0dcdacefc963adfbb2d3493e5468f8f12f0ac6de.html",
-      "assertions": [
-        {
-          "@type": "Assertion",
-          "test": {
-            "title": "E9012",
-            "isPartOf": ["WCAG2:interruptions", "WCAG2:change-on-request", "WCAG2:timing-adjustable"]
-           },
-          "result": { "outcome": "earl:passed" }
-        }
-      ]
-    },
-    {
-      "@type": "TestSubject",
       "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b4f0c3/08e8943b849762eb7f18654c7f9e479ad33b2840.html",
       "assertions": [
         {
@@ -10973,7 +10973,7 @@
     },
     {
       "@type": "TestSubject",
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2ee8b8/c7f6c637f82c017db4e3cd035b29cc2522043021.html",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2ee8b8/79af5d3e531aecd27961f0b9ed260d95f39440c0.html",
       "assertions": [
         {
           "@type": "Assertion",
@@ -11030,6 +11030,34 @@
     {
       "@type": "TestSubject",
       "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2ee8b8/20a5e321fc6a5cb2bfcd520acb8cda21e6925254.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "E908",
+            "isPartOf": ["WCAG2:label-in-name"]
+           },
+          "result": { "outcome": "earl:failed" }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2ee8b8/e9bbdbec137223e2973c6d2896050770c84c26e5.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "E908",
+            "isPartOf": ["WCAG2:label-in-name"]
+           },
+          "result": { "outcome": "earl:failed" }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2ee8b8/fd0c075f565b6f42be0ded6a959bea82ebff15e5.html",
       "assertions": [
         {
           "@type": "Assertion",
