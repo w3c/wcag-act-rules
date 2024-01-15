@@ -2,11 +2,11 @@
   "vendor": "LASIGE, Faculdade de Ciências da Universidade de Lisboa",
   "name": "QualWeb",
   "version": "3.0.0",
-  "lastModified": "8 January 2024",
+  "lastModified": "15 January 2024",
   "approvedRules": {
-    "complete": 23,
-    "partial": 2,
-    "inconsistent": 6,
+    "complete": 27,
+    "partial": 1,
+    "inconsistent": 3,
     "untested": 3
   },
   "proposedRules": {
@@ -195,14 +195,14 @@
       "procedureNames": [
         "ARIA state or property has valid value"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
         "reported": []
       },
       "coverage": {
-        "covered": 20,
+        "covered": 21,
         "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 21
@@ -458,7 +458,7 @@
             {
               "procedureName": "ARIA state or property has valid value",
               "outcomes": [
-                "passed"
+                "failed"
               ]
             }
           ]
@@ -1277,7 +1277,7 @@
       "procedureNames": [
         "Letter spacing in style attributes is not !important"
       ],
-      "consistency": null,
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -1288,7 +1288,7 @@
         ]
       },
       "coverage": {
-        "covered": 17,
+        "covered": 19,
         "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 19
@@ -1379,7 +1379,7 @@
             {
               "procedureName": "Letter spacing in style attributes is not !important",
               "outcomes": [
-                "failed"
+                "passed"
               ]
             }
           ]
@@ -1469,7 +1469,7 @@
             {
               "procedureName": "Letter spacing in style attributes is not !important",
               "outcomes": [
-                "failed"
+                "inapplicable"
               ]
             }
           ]
@@ -1588,7 +1588,7 @@
       "procedureNames": [
         "Word spacing in style attributes is not !important"
       ],
-      "consistency": null,
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -1599,7 +1599,7 @@
         ]
       },
       "coverage": {
-        "covered": 16,
+        "covered": 19,
         "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 19
@@ -1675,7 +1675,7 @@
             {
               "procedureName": "Word spacing in style attributes is not !important",
               "outcomes": [
-                "failed"
+                "passed"
               ]
             }
           ]
@@ -1690,7 +1690,7 @@
             {
               "procedureName": "Word spacing in style attributes is not !important",
               "outcomes": [
-                "failed"
+                "passed"
               ]
             }
           ]
@@ -1780,7 +1780,7 @@
             {
               "procedureName": "Word spacing in style attributes is not !important",
               "outcomes": [
-                "failed"
+                "inapplicable"
               ]
             }
           ]
@@ -1899,7 +1899,7 @@
       "procedureNames": [
         "Line height in style attributes is not !important"
       ],
-      "consistency": null,
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -1910,7 +1910,7 @@
         ]
       },
       "coverage": {
-        "covered": 22,
+        "covered": 24,
         "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 24
@@ -2016,7 +2016,7 @@
             {
               "procedureName": "Line height in style attributes is not !important",
               "outcomes": [
-                "failed"
+                "passed"
               ]
             }
           ]
@@ -2031,7 +2031,7 @@
             {
               "procedureName": "Line height in style attributes is not !important",
               "outcomes": [
-                "failed"
+                "passed"
               ]
             }
           ]
@@ -6773,9 +6773,9 @@
         ]
       },
       "coverage": {
-        "covered": 5,
+        "covered": 2,
         "untested": 0,
-        "cantTell": 1,
+        "cantTell": 5,
         "testCaseTotal": 7
       },
       "testCaseResults": [
@@ -6789,7 +6789,7 @@
             {
               "procedureName": "Element in sequential focus order has visible focus",
               "outcomes": [
-                "inapplicable"
+                "cantTell"
               ]
             }
           ]
@@ -6804,7 +6804,7 @@
             {
               "procedureName": "Element in sequential focus order has visible focus",
               "outcomes": [
-                "inapplicable"
+                "cantTell"
               ]
             }
           ]
@@ -6819,7 +6819,7 @@
             {
               "procedureName": "Element in sequential focus order has visible focus",
               "outcomes": [
-                "inapplicable"
+                "cantTell"
               ]
             }
           ]
@@ -6849,7 +6849,7 @@
             {
               "procedureName": "Element in sequential focus order has visible focus",
               "outcomes": [
-                "inapplicable"
+                "cantTell"
               ]
             }
           ]
