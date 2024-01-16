@@ -3,7 +3,7 @@
   "website": "https://www.w3.org/WAI/standards-guidelines/act/rules/",
   "license": "https://act-rules.github.io/pages/license/",
   "description": "Accessibility conformance testing rules for HTML",
-  "count": 1142,
+  "count": 1132,
   "testcases": [
     {
       "ruleId": "674b10",
@@ -12689,6 +12689,901 @@
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/09o5cg/proposed/"
     },
     {
+      "ruleId": "0va7u6",
+      "approved": true,
+      "ruleName": "HTML images contain no text",
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.4.5": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:1.4.9": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "6e6a506352542f40f4fe08a805ce736e89b46b06",
+      "testcaseTitle": "Passed Example 1",
+      "relativePath": "testcases/0va7u6/6e6a506352542f40f4fe08a805ce736e89b46b06.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/0va7u6/6e6a506352542f40f4fe08a805ce736e89b46b06.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/0va7u6/proposed/"
+    },
+    {
+      "ruleId": "0va7u6",
+      "approved": true,
+      "ruleName": "HTML images contain no text",
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.4.5": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:1.4.9": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "48f02a3a361b09761b70fe85571ce0fe55b62e18",
+      "testcaseTitle": "Passed Example 2",
+      "relativePath": "testcases/0va7u6/48f02a3a361b09761b70fe85571ce0fe55b62e18.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/0va7u6/48f02a3a361b09761b70fe85571ce0fe55b62e18.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/0va7u6/proposed/"
+    },
+    {
+      "ruleId": "0va7u6",
+      "approved": true,
+      "ruleName": "HTML images contain no text",
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.4.5": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:1.4.9": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "e5e36c1efa1c7d7f350ee94c220b58944a62c1d2",
+      "testcaseTitle": "Passed Example 3",
+      "relativePath": "testcases/0va7u6/e5e36c1efa1c7d7f350ee94c220b58944a62c1d2.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/0va7u6/e5e36c1efa1c7d7f350ee94c220b58944a62c1d2.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/0va7u6/proposed/"
+    },
+    {
+      "ruleId": "0va7u6",
+      "approved": true,
+      "ruleName": "HTML images contain no text",
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.4.5": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:1.4.9": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "372b4acc620b897e8fa5e22607121407399f5e07",
+      "testcaseTitle": "Passed Example 4",
+      "relativePath": "testcases/0va7u6/372b4acc620b897e8fa5e22607121407399f5e07.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/0va7u6/372b4acc620b897e8fa5e22607121407399f5e07.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/0va7u6/proposed/"
+    },
+    {
+      "ruleId": "0va7u6",
+      "approved": true,
+      "ruleName": "HTML images contain no text",
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.4.5": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:1.4.9": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "28b2597a08ca7a6fd85a273b484b599c04a03f1a",
+      "testcaseTitle": "Passed Example 5",
+      "relativePath": "testcases/0va7u6/28b2597a08ca7a6fd85a273b484b599c04a03f1a.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/0va7u6/28b2597a08ca7a6fd85a273b484b599c04a03f1a.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/0va7u6/proposed/"
+    },
+    {
+      "ruleId": "0va7u6",
+      "approved": true,
+      "ruleName": "HTML images contain no text",
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.4.5": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:1.4.9": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "74e69f0f02fd050e3b3bde3d1e81ca7fbc04670a",
+      "testcaseTitle": "Passed Example 6",
+      "relativePath": "testcases/0va7u6/74e69f0f02fd050e3b3bde3d1e81ca7fbc04670a.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/0va7u6/74e69f0f02fd050e3b3bde3d1e81ca7fbc04670a.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/0va7u6/proposed/"
+    },
+    {
+      "ruleId": "0va7u6",
+      "approved": true,
+      "ruleName": "HTML images contain no text",
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.4.5": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:1.4.9": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "00a1b04016513662a754e5114d0efbbd98ba58c8",
+      "testcaseTitle": "Passed Example 7",
+      "relativePath": "testcases/0va7u6/00a1b04016513662a754e5114d0efbbd98ba58c8.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/0va7u6/00a1b04016513662a754e5114d0efbbd98ba58c8.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/0va7u6/proposed/"
+    },
+    {
+      "ruleId": "0va7u6",
+      "approved": true,
+      "ruleName": "HTML images contain no text",
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.4.5": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:1.4.9": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "671c8b76af94397191ae1ed8b6fdeacb3658509b",
+      "testcaseTitle": "Passed Example 8",
+      "relativePath": "testcases/0va7u6/671c8b76af94397191ae1ed8b6fdeacb3658509b.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/0va7u6/671c8b76af94397191ae1ed8b6fdeacb3658509b.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/0va7u6/proposed/"
+    },
+    {
+      "ruleId": "0va7u6",
+      "approved": true,
+      "ruleName": "HTML images contain no text",
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.4.5": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:1.4.9": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "80ff3d6a9f2de0b2b9f179a13d91d47ce8c9ab26",
+      "testcaseTitle": "Failed Example 1",
+      "relativePath": "testcases/0va7u6/80ff3d6a9f2de0b2b9f179a13d91d47ce8c9ab26.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/0va7u6/80ff3d6a9f2de0b2b9f179a13d91d47ce8c9ab26.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/0va7u6/proposed/"
+    },
+    {
+      "ruleId": "0va7u6",
+      "approved": true,
+      "ruleName": "HTML images contain no text",
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.4.5": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:1.4.9": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "45041ac39ebf8f9d8ff642ea0bb56e947f0ac76e",
+      "testcaseTitle": "Failed Example 2",
+      "relativePath": "testcases/0va7u6/45041ac39ebf8f9d8ff642ea0bb56e947f0ac76e.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/0va7u6/45041ac39ebf8f9d8ff642ea0bb56e947f0ac76e.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/0va7u6/proposed/"
+    },
+    {
+      "ruleId": "0va7u6",
+      "approved": true,
+      "ruleName": "HTML images contain no text",
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.4.5": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:1.4.9": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "bf023941401d04f61ce739ee10fcc15f87d298a7",
+      "testcaseTitle": "Failed Example 3",
+      "relativePath": "testcases/0va7u6/bf023941401d04f61ce739ee10fcc15f87d298a7.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/0va7u6/bf023941401d04f61ce739ee10fcc15f87d298a7.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/0va7u6/proposed/"
+    },
+    {
+      "ruleId": "0va7u6",
+      "approved": true,
+      "ruleName": "HTML images contain no text",
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.4.5": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:1.4.9": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "e1d4ed7556dabfcfde47aaf4cd0861e0fdf585d9",
+      "testcaseTitle": "Failed Example 4",
+      "relativePath": "testcases/0va7u6/e1d4ed7556dabfcfde47aaf4cd0861e0fdf585d9.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/0va7u6/e1d4ed7556dabfcfde47aaf4cd0861e0fdf585d9.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/0va7u6/proposed/"
+    },
+    {
+      "ruleId": "0va7u6",
+      "approved": true,
+      "ruleName": "HTML images contain no text",
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.4.5": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:1.4.9": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "6a7f199a37309ccab08941b0bc64e182770c29ac",
+      "testcaseTitle": "Failed Example 5",
+      "relativePath": "testcases/0va7u6/6a7f199a37309ccab08941b0bc64e182770c29ac.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/0va7u6/6a7f199a37309ccab08941b0bc64e182770c29ac.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/0va7u6/proposed/"
+    },
+    {
+      "ruleId": "0va7u6",
+      "approved": true,
+      "ruleName": "HTML images contain no text",
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.4.5": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:1.4.9": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "inapplicable",
+      "testcaseId": "68dc6c98d514826f67cf700d1a5c7d449061b9ee",
+      "testcaseTitle": "Inapplicable Example 1",
+      "relativePath": "testcases/0va7u6/68dc6c98d514826f67cf700d1a5c7d449061b9ee.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/0va7u6/68dc6c98d514826f67cf700d1a5c7d449061b9ee.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/0va7u6/proposed/"
+    },
+    {
+      "ruleId": "0va7u6",
+      "approved": true,
+      "ruleName": "HTML images contain no text",
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.4.5": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:1.4.9": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "inapplicable",
+      "testcaseId": "5b1f5cf021116b02ca9a1846b18fa3e48860646b",
+      "testcaseTitle": "Inapplicable Example 2",
+      "relativePath": "testcases/0va7u6/5b1f5cf021116b02ca9a1846b18fa3e48860646b.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/0va7u6/5b1f5cf021116b02ca9a1846b18fa3e48860646b.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/0va7u6/proposed/"
+    },
+    {
+      "ruleId": "bisz58",
+      "approved": true,
+      "ruleName": "Meta element has no refresh delay (no exception)",
+      "ruleAccessibilityRequirements": {
+        "wcag20:2.2.4": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:3.2.5": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:G110": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:H76": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:2.2.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion allows redirects longer than 20 hours. Some of the failed examples satisfy this success criterion."
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "6a414a1455a58e4505d7c550486d628f0fd80fdd",
+      "testcaseTitle": "Passed Example 1",
+      "relativePath": "testcases/bisz58/6a414a1455a58e4505d7c550486d628f0fd80fdd.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/6a414a1455a58e4505d7c550486d628f0fd80fdd.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/bisz58/proposed/"
+    },
+    {
+      "ruleId": "bisz58",
+      "approved": true,
+      "ruleName": "Meta element has no refresh delay (no exception)",
+      "ruleAccessibilityRequirements": {
+        "wcag20:2.2.4": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:3.2.5": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:G110": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:H76": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:2.2.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion allows redirects longer than 20 hours. Some of the failed examples satisfy this success criterion."
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "24a98a3ff6a69e073f768bb198671ea6a1c4568a",
+      "testcaseTitle": "Passed Example 2",
+      "relativePath": "testcases/bisz58/24a98a3ff6a69e073f768bb198671ea6a1c4568a.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/24a98a3ff6a69e073f768bb198671ea6a1c4568a.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/bisz58/proposed/"
+    },
+    {
+      "ruleId": "bisz58",
+      "approved": true,
+      "ruleName": "Meta element has no refresh delay (no exception)",
+      "ruleAccessibilityRequirements": {
+        "wcag20:2.2.4": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:3.2.5": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:G110": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:H76": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:2.2.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion allows redirects longer than 20 hours. Some of the failed examples satisfy this success criterion."
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "ecc787569c06640f3748ae90e2b57fb51c1e22d8",
+      "testcaseTitle": "Failed Example 1",
+      "relativePath": "testcases/bisz58/ecc787569c06640f3748ae90e2b57fb51c1e22d8.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/ecc787569c06640f3748ae90e2b57fb51c1e22d8.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/bisz58/proposed/"
+    },
+    {
+      "ruleId": "bisz58",
+      "approved": true,
+      "ruleName": "Meta element has no refresh delay (no exception)",
+      "ruleAccessibilityRequirements": {
+        "wcag20:2.2.4": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:3.2.5": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:G110": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:H76": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:2.2.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion allows redirects longer than 20 hours. Some of the failed examples satisfy this success criterion."
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "d0672e81d17313f7ef156f3bc6e43c68143a5f45",
+      "testcaseTitle": "Failed Example 2",
+      "relativePath": "testcases/bisz58/d0672e81d17313f7ef156f3bc6e43c68143a5f45.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/d0672e81d17313f7ef156f3bc6e43c68143a5f45.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/bisz58/proposed/"
+    },
+    {
+      "ruleId": "bisz58",
+      "approved": true,
+      "ruleName": "Meta element has no refresh delay (no exception)",
+      "ruleAccessibilityRequirements": {
+        "wcag20:2.2.4": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:3.2.5": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:G110": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:H76": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:2.2.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion allows redirects longer than 20 hours. Some of the failed examples satisfy this success criterion."
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "b8aad77e3ff2fa8d0272fac5362566ff79afad7f",
+      "testcaseTitle": "Failed Example 3",
+      "relativePath": "testcases/bisz58/b8aad77e3ff2fa8d0272fac5362566ff79afad7f.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/b8aad77e3ff2fa8d0272fac5362566ff79afad7f.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/bisz58/proposed/"
+    },
+    {
+      "ruleId": "bisz58",
+      "approved": true,
+      "ruleName": "Meta element has no refresh delay (no exception)",
+      "ruleAccessibilityRequirements": {
+        "wcag20:2.2.4": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:3.2.5": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:G110": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:H76": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:2.2.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion allows redirects longer than 20 hours. Some of the failed examples satisfy this success criterion."
+        }
+      },
+      "expected": "inapplicable",
+      "testcaseId": "3761ce87e64549073f62df26071fbde9850e649e",
+      "testcaseTitle": "Inapplicable Example 1",
+      "relativePath": "testcases/bisz58/3761ce87e64549073f62df26071fbde9850e649e.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/3761ce87e64549073f62df26071fbde9850e649e.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/bisz58/proposed/"
+    },
+    {
+      "ruleId": "bisz58",
+      "approved": true,
+      "ruleName": "Meta element has no refresh delay (no exception)",
+      "ruleAccessibilityRequirements": {
+        "wcag20:2.2.4": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:3.2.5": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:G110": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:H76": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:2.2.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion allows redirects longer than 20 hours. Some of the failed examples satisfy this success criterion."
+        }
+      },
+      "expected": "inapplicable",
+      "testcaseId": "c73e036ba88dbbedf6b6a90b69328208eb1e14d0",
+      "testcaseTitle": "Inapplicable Example 2",
+      "relativePath": "testcases/bisz58/c73e036ba88dbbedf6b6a90b69328208eb1e14d0.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/c73e036ba88dbbedf6b6a90b69328208eb1e14d0.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/bisz58/proposed/"
+    },
+    {
+      "ruleId": "bisz58",
+      "approved": true,
+      "ruleName": "Meta element has no refresh delay (no exception)",
+      "ruleAccessibilityRequirements": {
+        "wcag20:2.2.4": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:3.2.5": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:G110": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:H76": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:2.2.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion allows redirects longer than 20 hours. Some of the failed examples satisfy this success criterion."
+        }
+      },
+      "expected": "inapplicable",
+      "testcaseId": "31864b9243c7565e802c6b4f36faed5861a631d3",
+      "testcaseTitle": "Inapplicable Example 3",
+      "relativePath": "testcases/bisz58/31864b9243c7565e802c6b4f36faed5861a631d3.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/31864b9243c7565e802c6b4f36faed5861a631d3.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/bisz58/proposed/"
+    },
+    {
+      "ruleId": "bisz58",
+      "approved": true,
+      "ruleName": "Meta element has no refresh delay (no exception)",
+      "ruleAccessibilityRequirements": {
+        "wcag20:2.2.4": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:3.2.5": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:G110": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:H76": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:2.2.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion allows redirects longer than 20 hours. Some of the failed examples satisfy this success criterion."
+        }
+      },
+      "expected": "inapplicable",
+      "testcaseId": "e6e51895cab42ee6adf2ade5b654808d830e673b",
+      "testcaseTitle": "Inapplicable Example 4",
+      "relativePath": "testcases/bisz58/e6e51895cab42ee6adf2ade5b654808d830e673b.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/e6e51895cab42ee6adf2ade5b654808d830e673b.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/bisz58/proposed/"
+    },
+    {
+      "ruleId": "bisz58",
+      "approved": true,
+      "ruleName": "Meta element has no refresh delay (no exception)",
+      "ruleAccessibilityRequirements": {
+        "wcag20:2.2.4": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:3.2.5": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:G110": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:H76": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:2.2.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion allows redirects longer than 20 hours. Some of the failed examples satisfy this success criterion."
+        }
+      },
+      "expected": "inapplicable",
+      "testcaseId": "a32834c94a9dd1869e22ccfb0b7b753648c8d469",
+      "testcaseTitle": "Inapplicable Example 5",
+      "relativePath": "testcases/bisz58/a32834c94a9dd1869e22ccfb0b7b753648c8d469.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/a32834c94a9dd1869e22ccfb0b7b753648c8d469.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/bisz58/proposed/"
+    },
+    {
+      "ruleId": "bisz58",
+      "approved": true,
+      "ruleName": "Meta element has no refresh delay (no exception)",
+      "ruleAccessibilityRequirements": {
+        "wcag20:2.2.4": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:3.2.5": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:G110": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:H76": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:2.2.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion allows redirects longer than 20 hours. Some of the failed examples satisfy this success criterion."
+        }
+      },
+      "expected": "inapplicable",
+      "testcaseId": "c3cc2e9d19259f7a7ffa99818ac44d034127f01f",
+      "testcaseTitle": "Inapplicable Example 6",
+      "relativePath": "testcases/bisz58/c3cc2e9d19259f7a7ffa99818ac44d034127f01f.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/c3cc2e9d19259f7a7ffa99818ac44d034127f01f.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/bisz58/proposed/"
+    },
+    {
+      "ruleId": "bisz58",
+      "approved": true,
+      "ruleName": "Meta element has no refresh delay (no exception)",
+      "ruleAccessibilityRequirements": {
+        "wcag20:2.2.4": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:3.2.5": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:G110": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:H76": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:2.2.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion allows redirects longer than 20 hours. Some of the failed examples satisfy this success criterion."
+        }
+      },
+      "expected": "inapplicable",
+      "testcaseId": "1846b9116a8563e653cee40753b4c904696851f9",
+      "testcaseTitle": "Inapplicable Example 7",
+      "relativePath": "testcases/bisz58/1846b9116a8563e653cee40753b4c904696851f9.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/1846b9116a8563e653cee40753b4c904696851f9.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/bisz58/proposed/"
+    },
+    {
+      "ruleId": "bisz58",
+      "approved": true,
+      "ruleName": "Meta element has no refresh delay (no exception)",
+      "ruleAccessibilityRequirements": {
+        "wcag20:2.2.4": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:3.2.5": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:G110": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:H76": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:2.2.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion allows redirects longer than 20 hours. Some of the failed examples satisfy this success criterion."
+        }
+      },
+      "expected": "inapplicable",
+      "testcaseId": "0dcdacefc963adfbb2d3493e5468f8f12f0ac6de",
+      "testcaseTitle": "Inapplicable Example 8",
+      "relativePath": "testcases/bisz58/0dcdacefc963adfbb2d3493e5468f8f12f0ac6de.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/0dcdacefc963adfbb2d3493e5468f8f12f0ac6de.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/bisz58/proposed/"
+    },
+    {
       "ruleId": "ff89c9",
       "ruleName": "ARIA required context role",
       "ruleAccessibilityRequirements": {
@@ -20113,381 +21008,6 @@
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/cae760/proposed/"
     },
     {
-      "ruleId": "0va7u6",
-      "approved": true,
-      "ruleName": "HTML images contain no text",
-      "ruleAccessibilityRequirements": {
-        "wcag20:1.4.5": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag20:1.4.9": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "6e6a506352542f40f4fe08a805ce736e89b46b06",
-      "testcaseTitle": "Passed Example 1",
-      "relativePath": "testcases/0va7u6/6e6a506352542f40f4fe08a805ce736e89b46b06.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/0va7u6/6e6a506352542f40f4fe08a805ce736e89b46b06.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/0va7u6/proposed/"
-    },
-    {
-      "ruleId": "0va7u6",
-      "approved": true,
-      "ruleName": "HTML images contain no text",
-      "ruleAccessibilityRequirements": {
-        "wcag20:1.4.5": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag20:1.4.9": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "48f02a3a361b09761b70fe85571ce0fe55b62e18",
-      "testcaseTitle": "Passed Example 2",
-      "relativePath": "testcases/0va7u6/48f02a3a361b09761b70fe85571ce0fe55b62e18.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/0va7u6/48f02a3a361b09761b70fe85571ce0fe55b62e18.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/0va7u6/proposed/"
-    },
-    {
-      "ruleId": "0va7u6",
-      "approved": true,
-      "ruleName": "HTML images contain no text",
-      "ruleAccessibilityRequirements": {
-        "wcag20:1.4.5": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag20:1.4.9": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "e5e36c1efa1c7d7f350ee94c220b58944a62c1d2",
-      "testcaseTitle": "Passed Example 3",
-      "relativePath": "testcases/0va7u6/e5e36c1efa1c7d7f350ee94c220b58944a62c1d2.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/0va7u6/e5e36c1efa1c7d7f350ee94c220b58944a62c1d2.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/0va7u6/proposed/"
-    },
-    {
-      "ruleId": "0va7u6",
-      "approved": true,
-      "ruleName": "HTML images contain no text",
-      "ruleAccessibilityRequirements": {
-        "wcag20:1.4.5": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag20:1.4.9": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "372b4acc620b897e8fa5e22607121407399f5e07",
-      "testcaseTitle": "Passed Example 4",
-      "relativePath": "testcases/0va7u6/372b4acc620b897e8fa5e22607121407399f5e07.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/0va7u6/372b4acc620b897e8fa5e22607121407399f5e07.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/0va7u6/proposed/"
-    },
-    {
-      "ruleId": "0va7u6",
-      "approved": true,
-      "ruleName": "HTML images contain no text",
-      "ruleAccessibilityRequirements": {
-        "wcag20:1.4.5": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag20:1.4.9": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "28b2597a08ca7a6fd85a273b484b599c04a03f1a",
-      "testcaseTitle": "Passed Example 5",
-      "relativePath": "testcases/0va7u6/28b2597a08ca7a6fd85a273b484b599c04a03f1a.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/0va7u6/28b2597a08ca7a6fd85a273b484b599c04a03f1a.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/0va7u6/proposed/"
-    },
-    {
-      "ruleId": "0va7u6",
-      "approved": true,
-      "ruleName": "HTML images contain no text",
-      "ruleAccessibilityRequirements": {
-        "wcag20:1.4.5": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag20:1.4.9": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "74e69f0f02fd050e3b3bde3d1e81ca7fbc04670a",
-      "testcaseTitle": "Passed Example 6",
-      "relativePath": "testcases/0va7u6/74e69f0f02fd050e3b3bde3d1e81ca7fbc04670a.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/0va7u6/74e69f0f02fd050e3b3bde3d1e81ca7fbc04670a.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/0va7u6/proposed/"
-    },
-    {
-      "ruleId": "0va7u6",
-      "approved": true,
-      "ruleName": "HTML images contain no text",
-      "ruleAccessibilityRequirements": {
-        "wcag20:1.4.5": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag20:1.4.9": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "00a1b04016513662a754e5114d0efbbd98ba58c8",
-      "testcaseTitle": "Passed Example 7",
-      "relativePath": "testcases/0va7u6/00a1b04016513662a754e5114d0efbbd98ba58c8.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/0va7u6/00a1b04016513662a754e5114d0efbbd98ba58c8.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/0va7u6/proposed/"
-    },
-    {
-      "ruleId": "0va7u6",
-      "approved": true,
-      "ruleName": "HTML images contain no text",
-      "ruleAccessibilityRequirements": {
-        "wcag20:1.4.5": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag20:1.4.9": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "671c8b76af94397191ae1ed8b6fdeacb3658509b",
-      "testcaseTitle": "Passed Example 8",
-      "relativePath": "testcases/0va7u6/671c8b76af94397191ae1ed8b6fdeacb3658509b.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/0va7u6/671c8b76af94397191ae1ed8b6fdeacb3658509b.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/0va7u6/proposed/"
-    },
-    {
-      "ruleId": "0va7u6",
-      "approved": true,
-      "ruleName": "HTML images contain no text",
-      "ruleAccessibilityRequirements": {
-        "wcag20:1.4.5": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag20:1.4.9": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "failed",
-      "testcaseId": "80ff3d6a9f2de0b2b9f179a13d91d47ce8c9ab26",
-      "testcaseTitle": "Failed Example 1",
-      "relativePath": "testcases/0va7u6/80ff3d6a9f2de0b2b9f179a13d91d47ce8c9ab26.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/0va7u6/80ff3d6a9f2de0b2b9f179a13d91d47ce8c9ab26.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/0va7u6/proposed/"
-    },
-    {
-      "ruleId": "0va7u6",
-      "approved": true,
-      "ruleName": "HTML images contain no text",
-      "ruleAccessibilityRequirements": {
-        "wcag20:1.4.5": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag20:1.4.9": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "failed",
-      "testcaseId": "45041ac39ebf8f9d8ff642ea0bb56e947f0ac76e",
-      "testcaseTitle": "Failed Example 2",
-      "relativePath": "testcases/0va7u6/45041ac39ebf8f9d8ff642ea0bb56e947f0ac76e.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/0va7u6/45041ac39ebf8f9d8ff642ea0bb56e947f0ac76e.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/0va7u6/proposed/"
-    },
-    {
-      "ruleId": "0va7u6",
-      "approved": true,
-      "ruleName": "HTML images contain no text",
-      "ruleAccessibilityRequirements": {
-        "wcag20:1.4.5": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag20:1.4.9": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "failed",
-      "testcaseId": "bf023941401d04f61ce739ee10fcc15f87d298a7",
-      "testcaseTitle": "Failed Example 3",
-      "relativePath": "testcases/0va7u6/bf023941401d04f61ce739ee10fcc15f87d298a7.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/0va7u6/bf023941401d04f61ce739ee10fcc15f87d298a7.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/0va7u6/proposed/"
-    },
-    {
-      "ruleId": "0va7u6",
-      "approved": true,
-      "ruleName": "HTML images contain no text",
-      "ruleAccessibilityRequirements": {
-        "wcag20:1.4.5": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag20:1.4.9": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "failed",
-      "testcaseId": "e1d4ed7556dabfcfde47aaf4cd0861e0fdf585d9",
-      "testcaseTitle": "Failed Example 4",
-      "relativePath": "testcases/0va7u6/e1d4ed7556dabfcfde47aaf4cd0861e0fdf585d9.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/0va7u6/e1d4ed7556dabfcfde47aaf4cd0861e0fdf585d9.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/0va7u6/proposed/"
-    },
-    {
-      "ruleId": "0va7u6",
-      "approved": true,
-      "ruleName": "HTML images contain no text",
-      "ruleAccessibilityRequirements": {
-        "wcag20:1.4.5": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag20:1.4.9": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "failed",
-      "testcaseId": "6a7f199a37309ccab08941b0bc64e182770c29ac",
-      "testcaseTitle": "Failed Example 5",
-      "relativePath": "testcases/0va7u6/6a7f199a37309ccab08941b0bc64e182770c29ac.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/0va7u6/6a7f199a37309ccab08941b0bc64e182770c29ac.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/0va7u6/proposed/"
-    },
-    {
-      "ruleId": "0va7u6",
-      "approved": true,
-      "ruleName": "HTML images contain no text",
-      "ruleAccessibilityRequirements": {
-        "wcag20:1.4.5": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag20:1.4.9": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "inapplicable",
-      "testcaseId": "68dc6c98d514826f67cf700d1a5c7d449061b9ee",
-      "testcaseTitle": "Inapplicable Example 1",
-      "relativePath": "testcases/0va7u6/68dc6c98d514826f67cf700d1a5c7d449061b9ee.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/0va7u6/68dc6c98d514826f67cf700d1a5c7d449061b9ee.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/0va7u6/proposed/"
-    },
-    {
-      "ruleId": "0va7u6",
-      "approved": true,
-      "ruleName": "HTML images contain no text",
-      "ruleAccessibilityRequirements": {
-        "wcag20:1.4.5": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag20:1.4.9": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "inapplicable",
-      "testcaseId": "5b1f5cf021116b02ca9a1846b18fa3e48860646b",
-      "testcaseTitle": "Inapplicable Example 2",
-      "relativePath": "testcases/0va7u6/5b1f5cf021116b02ca9a1846b18fa3e48860646b.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/0va7u6/5b1f5cf021116b02ca9a1846b18fa3e48860646b.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/0va7u6/proposed/"
-    },
-    {
       "ruleId": "e88epe",
       "ruleName": "Image not in the accessibility tree is decorative",
       "ruleAccessibilityRequirements": {
@@ -22379,526 +22899,6 @@
       "relativePath": "testcases/fd3a94/58087cbeb108ebf723ffc232c9996123a6eb168b.html",
       "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/58087cbeb108ebf723ffc232c9996123a6eb168b.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/fd3a94/proposed/"
-    },
-    {
-      "ruleId": "bisz58",
-      "approved": true,
-      "ruleName": "Meta element has no refresh delay (no exception)",
-      "ruleAccessibilityRequirements": {
-        "wcag20:2.2.4": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag20:3.2.5": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:G110": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:H76": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag20:2.2.1": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion allows redirects longer than 20 hours. Some of the failed examples satisfy this success criterion."
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "6a414a1455a58e4505d7c550486d628f0fd80fdd",
-      "testcaseTitle": "Passed Example 1",
-      "relativePath": "testcases/bisz58/6a414a1455a58e4505d7c550486d628f0fd80fdd.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/6a414a1455a58e4505d7c550486d628f0fd80fdd.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/bisz58/proposed/"
-    },
-    {
-      "ruleId": "bisz58",
-      "approved": true,
-      "ruleName": "Meta element has no refresh delay (no exception)",
-      "ruleAccessibilityRequirements": {
-        "wcag20:2.2.4": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag20:3.2.5": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:G110": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:H76": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag20:2.2.1": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion allows redirects longer than 20 hours. Some of the failed examples satisfy this success criterion."
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "24a98a3ff6a69e073f768bb198671ea6a1c4568a",
-      "testcaseTitle": "Passed Example 2",
-      "relativePath": "testcases/bisz58/24a98a3ff6a69e073f768bb198671ea6a1c4568a.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/24a98a3ff6a69e073f768bb198671ea6a1c4568a.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/bisz58/proposed/"
-    },
-    {
-      "ruleId": "bisz58",
-      "approved": true,
-      "ruleName": "Meta element has no refresh delay (no exception)",
-      "ruleAccessibilityRequirements": {
-        "wcag20:2.2.4": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag20:3.2.5": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:G110": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:H76": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag20:2.2.1": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion allows redirects longer than 20 hours. Some of the failed examples satisfy this success criterion."
-        }
-      },
-      "expected": "failed",
-      "testcaseId": "ecc787569c06640f3748ae90e2b57fb51c1e22d8",
-      "testcaseTitle": "Failed Example 1",
-      "relativePath": "testcases/bisz58/ecc787569c06640f3748ae90e2b57fb51c1e22d8.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/ecc787569c06640f3748ae90e2b57fb51c1e22d8.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/bisz58/proposed/"
-    },
-    {
-      "ruleId": "bisz58",
-      "approved": true,
-      "ruleName": "Meta element has no refresh delay (no exception)",
-      "ruleAccessibilityRequirements": {
-        "wcag20:2.2.4": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag20:3.2.5": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:G110": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:H76": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag20:2.2.1": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion allows redirects longer than 20 hours. Some of the failed examples satisfy this success criterion."
-        }
-      },
-      "expected": "failed",
-      "testcaseId": "d0672e81d17313f7ef156f3bc6e43c68143a5f45",
-      "testcaseTitle": "Failed Example 2",
-      "relativePath": "testcases/bisz58/d0672e81d17313f7ef156f3bc6e43c68143a5f45.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/d0672e81d17313f7ef156f3bc6e43c68143a5f45.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/bisz58/proposed/"
-    },
-    {
-      "ruleId": "bisz58",
-      "approved": true,
-      "ruleName": "Meta element has no refresh delay (no exception)",
-      "ruleAccessibilityRequirements": {
-        "wcag20:2.2.4": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag20:3.2.5": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:G110": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:H76": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag20:2.2.1": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion allows redirects longer than 20 hours. Some of the failed examples satisfy this success criterion."
-        }
-      },
-      "expected": "failed",
-      "testcaseId": "b8aad77e3ff2fa8d0272fac5362566ff79afad7f",
-      "testcaseTitle": "Failed Example 3",
-      "relativePath": "testcases/bisz58/b8aad77e3ff2fa8d0272fac5362566ff79afad7f.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/b8aad77e3ff2fa8d0272fac5362566ff79afad7f.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/bisz58/proposed/"
-    },
-    {
-      "ruleId": "bisz58",
-      "approved": true,
-      "ruleName": "Meta element has no refresh delay (no exception)",
-      "ruleAccessibilityRequirements": {
-        "wcag20:2.2.4": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag20:3.2.5": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:G110": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:H76": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag20:2.2.1": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion allows redirects longer than 20 hours. Some of the failed examples satisfy this success criterion."
-        }
-      },
-      "expected": "inapplicable",
-      "testcaseId": "3761ce87e64549073f62df26071fbde9850e649e",
-      "testcaseTitle": "Inapplicable Example 1",
-      "relativePath": "testcases/bisz58/3761ce87e64549073f62df26071fbde9850e649e.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/3761ce87e64549073f62df26071fbde9850e649e.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/bisz58/proposed/"
-    },
-    {
-      "ruleId": "bisz58",
-      "approved": true,
-      "ruleName": "Meta element has no refresh delay (no exception)",
-      "ruleAccessibilityRequirements": {
-        "wcag20:2.2.4": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag20:3.2.5": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:G110": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:H76": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag20:2.2.1": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion allows redirects longer than 20 hours. Some of the failed examples satisfy this success criterion."
-        }
-      },
-      "expected": "inapplicable",
-      "testcaseId": "c73e036ba88dbbedf6b6a90b69328208eb1e14d0",
-      "testcaseTitle": "Inapplicable Example 2",
-      "relativePath": "testcases/bisz58/c73e036ba88dbbedf6b6a90b69328208eb1e14d0.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/c73e036ba88dbbedf6b6a90b69328208eb1e14d0.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/bisz58/proposed/"
-    },
-    {
-      "ruleId": "bisz58",
-      "approved": true,
-      "ruleName": "Meta element has no refresh delay (no exception)",
-      "ruleAccessibilityRequirements": {
-        "wcag20:2.2.4": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag20:3.2.5": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:G110": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:H76": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag20:2.2.1": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion allows redirects longer than 20 hours. Some of the failed examples satisfy this success criterion."
-        }
-      },
-      "expected": "inapplicable",
-      "testcaseId": "31864b9243c7565e802c6b4f36faed5861a631d3",
-      "testcaseTitle": "Inapplicable Example 3",
-      "relativePath": "testcases/bisz58/31864b9243c7565e802c6b4f36faed5861a631d3.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/31864b9243c7565e802c6b4f36faed5861a631d3.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/bisz58/proposed/"
-    },
-    {
-      "ruleId": "bisz58",
-      "approved": true,
-      "ruleName": "Meta element has no refresh delay (no exception)",
-      "ruleAccessibilityRequirements": {
-        "wcag20:2.2.4": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag20:3.2.5": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:G110": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:H76": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag20:2.2.1": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion allows redirects longer than 20 hours. Some of the failed examples satisfy this success criterion."
-        }
-      },
-      "expected": "inapplicable",
-      "testcaseId": "e6e51895cab42ee6adf2ade5b654808d830e673b",
-      "testcaseTitle": "Inapplicable Example 4",
-      "relativePath": "testcases/bisz58/e6e51895cab42ee6adf2ade5b654808d830e673b.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/e6e51895cab42ee6adf2ade5b654808d830e673b.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/bisz58/proposed/"
-    },
-    {
-      "ruleId": "bisz58",
-      "approved": true,
-      "ruleName": "Meta element has no refresh delay (no exception)",
-      "ruleAccessibilityRequirements": {
-        "wcag20:2.2.4": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag20:3.2.5": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:G110": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:H76": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag20:2.2.1": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion allows redirects longer than 20 hours. Some of the failed examples satisfy this success criterion."
-        }
-      },
-      "expected": "inapplicable",
-      "testcaseId": "a32834c94a9dd1869e22ccfb0b7b753648c8d469",
-      "testcaseTitle": "Inapplicable Example 5",
-      "relativePath": "testcases/bisz58/a32834c94a9dd1869e22ccfb0b7b753648c8d469.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/a32834c94a9dd1869e22ccfb0b7b753648c8d469.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/bisz58/proposed/"
-    },
-    {
-      "ruleId": "bisz58",
-      "approved": true,
-      "ruleName": "Meta element has no refresh delay (no exception)",
-      "ruleAccessibilityRequirements": {
-        "wcag20:2.2.4": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag20:3.2.5": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:G110": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:H76": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag20:2.2.1": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion allows redirects longer than 20 hours. Some of the failed examples satisfy this success criterion."
-        }
-      },
-      "expected": "inapplicable",
-      "testcaseId": "c3cc2e9d19259f7a7ffa99818ac44d034127f01f",
-      "testcaseTitle": "Inapplicable Example 6",
-      "relativePath": "testcases/bisz58/c3cc2e9d19259f7a7ffa99818ac44d034127f01f.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/c3cc2e9d19259f7a7ffa99818ac44d034127f01f.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/bisz58/proposed/"
-    },
-    {
-      "ruleId": "bisz58",
-      "approved": true,
-      "ruleName": "Meta element has no refresh delay (no exception)",
-      "ruleAccessibilityRequirements": {
-        "wcag20:2.2.4": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag20:3.2.5": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:G110": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:H76": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag20:2.2.1": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion allows redirects longer than 20 hours. Some of the failed examples satisfy this success criterion."
-        }
-      },
-      "expected": "inapplicable",
-      "testcaseId": "1846b9116a8563e653cee40753b4c904696851f9",
-      "testcaseTitle": "Inapplicable Example 7",
-      "relativePath": "testcases/bisz58/1846b9116a8563e653cee40753b4c904696851f9.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/1846b9116a8563e653cee40753b4c904696851f9.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/bisz58/proposed/"
-    },
-    {
-      "ruleId": "bisz58",
-      "approved": true,
-      "ruleName": "Meta element has no refresh delay (no exception)",
-      "ruleAccessibilityRequirements": {
-        "wcag20:2.2.4": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag20:3.2.5": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:G110": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:H76": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag20:2.2.1": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion allows redirects longer than 20 hours. Some of the failed examples satisfy this success criterion."
-        }
-      },
-      "expected": "inapplicable",
-      "testcaseId": "0dcdacefc963adfbb2d3493e5468f8f12f0ac6de",
-      "testcaseTitle": "Inapplicable Example 8",
-      "relativePath": "testcases/bisz58/0dcdacefc963adfbb2d3493e5468f8f12f0ac6de.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/0dcdacefc963adfbb2d3493e5468f8f12f0ac6de.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/bisz58/proposed/"
     },
     {
       "ruleId": "b4f0c3",
@@ -26717,10 +26717,10 @@
         }
       },
       "expected": "passed",
-      "testcaseId": "c7f6c637f82c017db4e3cd035b29cc2522043021",
+      "testcaseId": "79af5d3e531aecd27961f0b9ed260d95f39440c0",
       "testcaseTitle": "Passed Example 5",
-      "relativePath": "testcases/2ee8b8/c7f6c637f82c017db4e3cd035b29cc2522043021.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2ee8b8/c7f6c637f82c017db4e3cd035b29cc2522043021.html",
+      "relativePath": "testcases/2ee8b8/79af5d3e531aecd27961f0b9ed260d95f39440c0.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2ee8b8/79af5d3e531aecd27961f0b9ed260d95f39440c0.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/2ee8b8/proposed/"
     },
     {
@@ -26817,6 +26817,54 @@
       "testcaseTitle": "Failed Example 3",
       "relativePath": "testcases/2ee8b8/20a5e321fc6a5cb2bfcd520acb8cda21e6925254.html",
       "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2ee8b8/20a5e321fc6a5cb2bfcd520acb8cda21e6925254.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/2ee8b8/proposed/"
+    },
+    {
+      "ruleId": "2ee8b8",
+      "ruleName": "Visible label is part of accessible name",
+      "ruleAccessibilityRequirements": {
+        "wcag21:2.5.3": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:G208": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "e9bbdbec137223e2973c6d2896050770c84c26e5",
+      "testcaseTitle": "Failed Example 4",
+      "relativePath": "testcases/2ee8b8/e9bbdbec137223e2973c6d2896050770c84c26e5.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2ee8b8/e9bbdbec137223e2973c6d2896050770c84c26e5.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/2ee8b8/proposed/"
+    },
+    {
+      "ruleId": "2ee8b8",
+      "ruleName": "Visible label is part of accessible name",
+      "ruleAccessibilityRequirements": {
+        "wcag21:2.5.3": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:G208": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "fd0c075f565b6f42be0ded6a959bea82ebff15e5",
+      "testcaseTitle": "Failed Example 5",
+      "relativePath": "testcases/2ee8b8/fd0c075f565b6f42be0ded6a959bea82ebff15e5.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2ee8b8/fd0c075f565b6f42be0ded6a959bea82ebff15e5.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/2ee8b8/proposed/"
     },
     {

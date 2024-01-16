@@ -10,8 +10,8 @@
     "untested": 4
   },
   "proposedRules": {
-    "complete": 11,
-    "partial": 1,
+    "complete": 10,
+    "partial": 2,
     "inconsistent": 0,
     "untested": 40
   },
@@ -7933,6 +7933,24 @@
       ]
     },
     {
+      "ruleId": "0va7u6",
+      "ruleName": "HTML images contain no text",
+      "ruleApproved": true,
+      "procedureNames": [],
+      "consistency": null,
+      "coverage": null,
+      "testCaseResults": []
+    },
+    {
+      "ruleId": "bisz58",
+      "ruleName": "Meta element has no refresh delay (no exception)",
+      "ruleApproved": true,
+      "procedureNames": [],
+      "consistency": null,
+      "coverage": null,
+      "testCaseResults": []
+    },
+    {
       "ruleId": "ff89c9",
       "ruleName": "ARIA required context role",
       "ruleApproved": false,
@@ -9863,15 +9881,6 @@
       ]
     },
     {
-      "ruleId": "0va7u6",
-      "ruleName": "HTML images contain no text",
-      "ruleApproved": true,
-      "procedureNames": [],
-      "consistency": null,
-      "coverage": null,
-      "testCaseResults": []
-    },
-    {
       "ruleId": "e88epe",
       "ruleName": "Image not in the accessibility tree is decorative",
       "ruleApproved": false,
@@ -10207,15 +10216,6 @@
       "ruleId": "fd3a94",
       "ruleName": "Links with identical accessible names and same context serve equivalent purpose",
       "ruleApproved": false,
-      "procedureNames": [],
-      "consistency": null,
-      "coverage": null,
-      "testCaseResults": []
-    },
-    {
-      "ruleId": "bisz58",
-      "ruleName": "Meta element has no refresh delay (no exception)",
-      "ruleApproved": true,
       "procedureNames": [],
       "consistency": null,
       "coverage": null,
@@ -10858,7 +10858,7 @@
       "procedureNames": [
         "AccHtmlControlLabelInAccName"
       ],
-      "consistency": "complete",
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -10869,10 +10869,10 @@
         ]
       },
       "coverage": {
-        "covered": 13,
-        "untested": 0,
+        "covered": 12,
+        "untested": 3,
         "cantTell": 0,
-        "testCaseTotal": 13
+        "testCaseTotal": 15
       },
       "testCaseResults": [
         {
@@ -10936,16 +10936,16 @@
           ]
         },
         {
-          "testcaseId": "c7f6c637f82c017db4e3cd035b29cc2522043021",
+          "testcaseId": "79af5d3e531aecd27961f0b9ed260d95f39440c0",
           "testCaseName": "Passed Example 5",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2ee8b8/c7f6c637f82c017db4e3cd035b29cc2522043021.html",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2ee8b8/79af5d3e531aecd27961f0b9ed260d95f39440c0.html",
           "testCaseApproved": false,
           "expected": "passed",
           "procedureResults": [
             {
               "procedureName": "AccHtmlControlLabelInAccName",
               "outcomes": [
-                "passed"
+                "untested"
               ]
             }
           ]
@@ -11006,6 +11006,36 @@
               "procedureName": "AccHtmlControlLabelInAccName",
               "outcomes": [
                 "failed"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "e9bbdbec137223e2973c6d2896050770c84c26e5",
+          "testCaseName": "Failed Example 4",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2ee8b8/e9bbdbec137223e2973c6d2896050770c84c26e5.html",
+          "testCaseApproved": false,
+          "expected": "failed",
+          "procedureResults": [
+            {
+              "procedureName": "AccHtmlControlLabelInAccName",
+              "outcomes": [
+                "untested"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "fd0c075f565b6f42be0ded6a959bea82ebff15e5",
+          "testCaseName": "Failed Example 5",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2ee8b8/fd0c075f565b6f42be0ded6a959bea82ebff15e5.html",
+          "testCaseApproved": false,
+          "expected": "failed",
+          "procedureResults": [
+            {
+              "procedureName": "AccHtmlControlLabelInAccName",
+              "outcomes": [
+                "untested"
               ]
             }
           ]
