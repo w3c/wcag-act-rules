@@ -2,17 +2,17 @@
   "vendor": "LASIGE, Faculdade de Ciências da Universidade de Lisboa",
   "name": "QualWeb",
   "version": "3.0.0",
-  "lastModified": "15 January 2024",
+  "lastModified": "22 January 2024",
   "approvedRules": {
-    "complete": 27,
+    "complete": 28,
     "partial": 1,
-    "inconsistent": 3,
+    "inconsistent": 2,
     "untested": 3
   },
   "proposedRules": {
-    "complete": 7,
-    "partial": 14,
-    "inconsistent": 15,
+    "complete": 9,
+    "partial": 13,
+    "inconsistent": 14,
     "untested": 16
   },
   "actRuleMapping": [
@@ -1116,7 +1116,7 @@
       "procedureNames": [
         "iframe with negative tabindex has no interactive elements"
       ],
-      "consistency": null,
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -1127,7 +1127,7 @@
         ]
       },
       "coverage": {
-        "covered": 7,
+        "covered": 9,
         "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 9
@@ -1143,7 +1143,7 @@
             {
               "procedureName": "iframe with negative tabindex has no interactive elements",
               "outcomes": [
-                "inapplicable"
+                "passed"
               ]
             }
           ]
@@ -1158,7 +1158,7 @@
             {
               "procedureName": "iframe with negative tabindex has no interactive elements",
               "outcomes": [
-                "inapplicable"
+                "passed"
               ]
             }
           ]
@@ -1188,7 +1188,7 @@
             {
               "procedureName": "iframe with negative tabindex has no interactive elements",
               "outcomes": [
-                "passed"
+                "inapplicable"
               ]
             }
           ]
@@ -1203,7 +1203,7 @@
             {
               "procedureName": "iframe with negative tabindex has no interactive elements",
               "outcomes": [
-                "passed"
+                "inapplicable"
               ]
             }
           ]
@@ -1218,7 +1218,7 @@
             {
               "procedureName": "iframe with negative tabindex has no interactive elements",
               "outcomes": [
-                "passed"
+                "inapplicable"
               ]
             }
           ]
@@ -1233,7 +1233,7 @@
             {
               "procedureName": "iframe with negative tabindex has no interactive elements",
               "outcomes": [
-                "passed"
+                "inapplicable"
               ]
             }
           ]
@@ -1248,7 +1248,7 @@
             {
               "procedureName": "iframe with negative tabindex has no interactive elements",
               "outcomes": [
-                "failed"
+                "inapplicable"
               ]
             }
           ]
@@ -1263,7 +1263,7 @@
             {
               "procedureName": "iframe with negative tabindex has no interactive elements",
               "outcomes": [
-                "failed"
+                "inapplicable"
               ]
             }
           ]
@@ -5359,7 +5359,7 @@
             {
               "procedureName": "Headers attribute specified on a cell refers to cells in the same table element",
               "outcomes": [
-                "failed"
+                "inapplicable"
               ]
             }
           ]
@@ -6035,7 +6035,7 @@
             {
               "procedureName": "meta viewport does not prevent zoom",
               "outcomes": [
-                "passed"
+                "inapplicable"
               ]
             }
           ]
@@ -6050,7 +6050,7 @@
             {
               "procedureName": "meta viewport does not prevent zoom",
               "outcomes": [
-                "passed"
+                "inapplicable"
               ]
             }
           ]
@@ -6095,7 +6095,7 @@
             {
               "procedureName": "meta viewport does not prevent zoom",
               "outcomes": [
-                "passed"
+                "failed"
               ]
             }
           ]
@@ -6110,7 +6110,7 @@
             {
               "procedureName": "meta viewport does not prevent zoom",
               "outcomes": [
-                "passed"
+                "failed"
               ]
             }
           ]
@@ -6125,7 +6125,7 @@
             {
               "procedureName": "meta viewport does not prevent zoom",
               "outcomes": [
-                "passed"
+                "failed"
               ]
             }
           ]
@@ -8967,16 +8967,16 @@
       "procedureNames": [
         "audio element content is media alternative for text"
       ],
-      "consistency": null,
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
         "reported": []
       },
       "coverage": {
-        "covered": 3,
+        "covered": 2,
         "untested": 0,
-        "cantTell": 0,
+        "cantTell": 5,
         "testCaseTotal": 7
       },
       "testCaseResults": [
@@ -8990,7 +8990,7 @@
             {
               "procedureName": "audio element content is media alternative for text",
               "outcomes": [
-                "inapplicable"
+                "cantTell"
               ]
             }
           ]
@@ -9005,7 +9005,7 @@
             {
               "procedureName": "audio element content is media alternative for text",
               "outcomes": [
-                "inapplicable"
+                "cantTell"
               ]
             }
           ]
@@ -9020,7 +9020,7 @@
             {
               "procedureName": "audio element content is media alternative for text",
               "outcomes": [
-                "inapplicable"
+                "cantTell"
               ]
             }
           ]
@@ -9035,7 +9035,7 @@
             {
               "procedureName": "audio element content is media alternative for text",
               "outcomes": [
-                "inapplicable"
+                "cantTell"
               ]
             }
           ]
@@ -9050,7 +9050,7 @@
             {
               "procedureName": "audio element content is media alternative for text",
               "outcomes": [
-                "inapplicable"
+                "cantTell"
               ]
             }
           ]
@@ -9351,9 +9351,9 @@
         ]
       },
       "coverage": {
-        "covered": 5,
+        "covered": 3,
         "untested": 0,
-        "cantTell": 2,
+        "cantTell": 5,
         "testCaseTotal": 8
       },
       "testCaseResults": [
@@ -9367,19 +9367,19 @@
             {
               "procedureName": "audio element content has transcript",
               "outcomes": [
-                "inapplicable"
+                "cantTell"
               ]
             },
             {
               "procedureName": "audio element content is media alternative for text",
               "outcomes": [
-                "inapplicable"
+                "cantTell"
               ]
             },
             {
               "procedureName": "Audio element content has text alternative",
               "outcomes": [
-                "inapplicable"
+                "cantTell"
               ]
             }
           ]
@@ -9394,19 +9394,19 @@
             {
               "procedureName": "audio element content has transcript",
               "outcomes": [
-                "inapplicable"
+                "cantTell"
               ]
             },
             {
               "procedureName": "audio element content is media alternative for text",
               "outcomes": [
-                "inapplicable"
+                "cantTell"
               ]
             },
             {
               "procedureName": "Audio element content has text alternative",
               "outcomes": [
-                "inapplicable"
+                "cantTell"
               ]
             }
           ]
@@ -9448,19 +9448,19 @@
             {
               "procedureName": "audio element content has transcript",
               "outcomes": [
-                "inapplicable"
+                "cantTell"
               ]
             },
             {
               "procedureName": "audio element content is media alternative for text",
               "outcomes": [
-                "inapplicable"
+                "cantTell"
               ]
             },
             {
               "procedureName": "Audio element content has text alternative",
               "outcomes": [
-                "inapplicable"
+                "cantTell"
               ]
             }
           ]
@@ -9582,16 +9582,16 @@
       "procedureNames": [
         "audio element content has transcript"
       ],
-      "consistency": null,
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
         "reported": []
       },
       "coverage": {
-        "covered": 5,
+        "covered": 2,
         "untested": 0,
-        "cantTell": 0,
+        "cantTell": 9,
         "testCaseTotal": 11
       },
       "testCaseResults": [
@@ -9605,7 +9605,7 @@
             {
               "procedureName": "audio element content has transcript",
               "outcomes": [
-                "inapplicable"
+                "cantTell"
               ]
             }
           ]
@@ -9620,7 +9620,7 @@
             {
               "procedureName": "audio element content has transcript",
               "outcomes": [
-                "inapplicable"
+                "cantTell"
               ]
             }
           ]
@@ -9635,7 +9635,7 @@
             {
               "procedureName": "audio element content has transcript",
               "outcomes": [
-                "inapplicable"
+                "cantTell"
               ]
             }
           ]
@@ -9650,7 +9650,7 @@
             {
               "procedureName": "audio element content has transcript",
               "outcomes": [
-                "inapplicable"
+                "cantTell"
               ]
             }
           ]
@@ -9665,7 +9665,7 @@
             {
               "procedureName": "audio element content has transcript",
               "outcomes": [
-                "inapplicable"
+                "cantTell"
               ]
             }
           ]
@@ -9680,7 +9680,7 @@
             {
               "procedureName": "audio element content has transcript",
               "outcomes": [
-                "inapplicable"
+                "cantTell"
               ]
             }
           ]
@@ -9695,7 +9695,7 @@
             {
               "procedureName": "audio element content has transcript",
               "outcomes": [
-                "inapplicable"
+                "cantTell"
               ]
             }
           ]
@@ -9710,7 +9710,7 @@
             {
               "procedureName": "audio element content has transcript",
               "outcomes": [
-                "inapplicable"
+                "cantTell"
               ]
             }
           ]
@@ -9725,7 +9725,7 @@
             {
               "procedureName": "audio element content has transcript",
               "outcomes": [
-                "inapplicable"
+                "cantTell"
               ]
             }
           ]
@@ -10810,7 +10810,7 @@
       "procedureNames": [
         "Orientation of the page is not restricted using CSS transform property"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -10821,7 +10821,7 @@
         ]
       },
       "coverage": {
-        "covered": 11,
+        "covered": 12,
         "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 12
@@ -10867,7 +10867,7 @@
             {
               "procedureName": "Orientation of the page is not restricted using CSS transform property",
               "outcomes": [
-                "inapplicable"
+                "passed"
               ]
             }
           ]
@@ -10927,7 +10927,7 @@
             {
               "procedureName": "Orientation of the page is not restricted using CSS transform property",
               "outcomes": [
-                "inapplicable"
+                "failed"
               ]
             }
           ]
@@ -14043,7 +14043,6 @@
       "procedureNames": [
         "video element visual content has audio description",
         "video element content is media alternative for text",
-        "video element visual content has description track",
         "Audio and visuals of video element have transcript",
         "video element visual content has accessible alternative"
       ],
@@ -14085,12 +14084,6 @@
               ]
             },
             {
-              "procedureName": "video element visual content has description track",
-              "outcomes": [
-                "cantTell"
-              ]
-            },
-            {
               "procedureName": "Audio and visuals of video element have transcript",
               "outcomes": [
                 "cantTell"
@@ -14119,12 +14112,6 @@
             },
             {
               "procedureName": "video element content is media alternative for text",
-              "outcomes": [
-                "cantTell"
-              ]
-            },
-            {
-              "procedureName": "video element visual content has description track",
               "outcomes": [
                 "cantTell"
               ]
@@ -14163,12 +14150,6 @@
               ]
             },
             {
-              "procedureName": "video element visual content has description track",
-              "outcomes": [
-                "cantTell"
-              ]
-            },
-            {
               "procedureName": "Audio and visuals of video element have transcript",
               "outcomes": [
                 "cantTell"
@@ -14197,12 +14178,6 @@
             },
             {
               "procedureName": "video element content is media alternative for text",
-              "outcomes": [
-                "cantTell"
-              ]
-            },
-            {
-              "procedureName": "video element visual content has description track",
               "outcomes": [
                 "cantTell"
               ]
@@ -14241,12 +14216,6 @@
               ]
             },
             {
-              "procedureName": "video element visual content has description track",
-              "outcomes": [
-                "cantTell"
-              ]
-            },
-            {
               "procedureName": "Audio and visuals of video element have transcript",
               "outcomes": [
                 "cantTell"
@@ -14275,12 +14244,6 @@
             },
             {
               "procedureName": "video element content is media alternative for text",
-              "outcomes": [
-                "cantTell"
-              ]
-            },
-            {
-              "procedureName": "video element visual content has description track",
               "outcomes": [
                 "cantTell"
               ]
@@ -14319,12 +14282,6 @@
               ]
             },
             {
-              "procedureName": "video element visual content has description track",
-              "outcomes": [
-                "cantTell"
-              ]
-            },
-            {
               "procedureName": "Audio and visuals of video element have transcript",
               "outcomes": [
                 "cantTell"
@@ -14358,12 +14315,6 @@
               ]
             },
             {
-              "procedureName": "video element visual content has description track",
-              "outcomes": [
-                "cantTell"
-              ]
-            },
-            {
               "procedureName": "Audio and visuals of video element have transcript",
               "outcomes": [
                 "cantTell"
@@ -14392,12 +14343,6 @@
             },
             {
               "procedureName": "video element content is media alternative for text",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
-              "procedureName": "video element visual content has description track",
               "outcomes": [
                 "inapplicable"
               ]
@@ -14819,20 +14764,25 @@
       "ruleName": "Video element visual-only content has accessible alternative",
       "ruleApproved": false,
       "procedureNames": [
-        "video element visual-only content has description track"
+        "video element visual-only content is media alternative for text",
+        "video element visual-only content has transcript",
+        "video element visual-only content has audio track alternative",
+        "Video element visual-only content has accessible alternative"
       ],
-      "consistency": "partial",
+      "consistency": null,
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:audio-only-and-video-only-prerecorded"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:audio-only-and-video-only-prerecorded"
+        ]
       },
       "coverage": {
-        "covered": 5,
+        "covered": 1,
         "untested": 0,
-        "cantTell": 1,
+        "cantTell": 8,
         "testCaseTotal": 9
       },
       "testCaseResults": [
@@ -14844,9 +14794,27 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "video element visual-only content has description track",
+              "procedureName": "video element visual-only content is media alternative for text",
               "outcomes": [
-                "inapplicable"
+                "cantTell"
+              ]
+            },
+            {
+              "procedureName": "video element visual-only content has transcript",
+              "outcomes": [
+                "cantTell"
+              ]
+            },
+            {
+              "procedureName": "video element visual-only content has audio track alternative",
+              "outcomes": [
+                "cantTell"
+              ]
+            },
+            {
+              "procedureName": "Video element visual-only content has accessible alternative",
+              "outcomes": [
+                "cantTell"
               ]
             }
           ]
@@ -14859,9 +14827,27 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "video element visual-only content has description track",
+              "procedureName": "video element visual-only content is media alternative for text",
               "outcomes": [
-                "inapplicable"
+                "cantTell"
+              ]
+            },
+            {
+              "procedureName": "video element visual-only content has transcript",
+              "outcomes": [
+                "cantTell"
+              ]
+            },
+            {
+              "procedureName": "video element visual-only content has audio track alternative",
+              "outcomes": [
+                "cantTell"
+              ]
+            },
+            {
+              "procedureName": "Video element visual-only content has accessible alternative",
+              "outcomes": [
+                "cantTell"
               ]
             }
           ]
@@ -14874,9 +14860,27 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "video element visual-only content has description track",
+              "procedureName": "video element visual-only content is media alternative for text",
               "outcomes": [
-                "inapplicable"
+                "cantTell"
+              ]
+            },
+            {
+              "procedureName": "video element visual-only content has transcript",
+              "outcomes": [
+                "cantTell"
+              ]
+            },
+            {
+              "procedureName": "video element visual-only content has audio track alternative",
+              "outcomes": [
+                "cantTell"
+              ]
+            },
+            {
+              "procedureName": "Video element visual-only content has accessible alternative",
+              "outcomes": [
+                "cantTell"
               ]
             }
           ]
@@ -14889,9 +14893,27 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "video element visual-only content has description track",
+              "procedureName": "video element visual-only content is media alternative for text",
               "outcomes": [
-                "inapplicable"
+                "cantTell"
+              ]
+            },
+            {
+              "procedureName": "video element visual-only content has transcript",
+              "outcomes": [
+                "cantTell"
+              ]
+            },
+            {
+              "procedureName": "video element visual-only content has audio track alternative",
+              "outcomes": [
+                "cantTell"
+              ]
+            },
+            {
+              "procedureName": "Video element visual-only content has accessible alternative",
+              "outcomes": [
+                "cantTell"
               ]
             }
           ]
@@ -14904,9 +14926,27 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "video element visual-only content has description track",
+              "procedureName": "video element visual-only content is media alternative for text",
               "outcomes": [
-                "inapplicable"
+                "cantTell"
+              ]
+            },
+            {
+              "procedureName": "video element visual-only content has transcript",
+              "outcomes": [
+                "cantTell"
+              ]
+            },
+            {
+              "procedureName": "video element visual-only content has audio track alternative",
+              "outcomes": [
+                "cantTell"
+              ]
+            },
+            {
+              "procedureName": "Video element visual-only content has accessible alternative",
+              "outcomes": [
+                "cantTell"
               ]
             }
           ]
@@ -14919,9 +14959,27 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "video element visual-only content has description track",
+              "procedureName": "video element visual-only content is media alternative for text",
               "outcomes": [
-                "inapplicable"
+                "cantTell"
+              ]
+            },
+            {
+              "procedureName": "video element visual-only content has transcript",
+              "outcomes": [
+                "cantTell"
+              ]
+            },
+            {
+              "procedureName": "video element visual-only content has audio track alternative",
+              "outcomes": [
+                "cantTell"
+              ]
+            },
+            {
+              "procedureName": "Video element visual-only content has accessible alternative",
+              "outcomes": [
+                "cantTell"
               ]
             }
           ]
@@ -14934,7 +14992,25 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "video element visual-only content has description track",
+              "procedureName": "video element visual-only content is media alternative for text",
+              "outcomes": [
+                "cantTell"
+              ]
+            },
+            {
+              "procedureName": "video element visual-only content has transcript",
+              "outcomes": [
+                "cantTell"
+              ]
+            },
+            {
+              "procedureName": "video element visual-only content has audio track alternative",
+              "outcomes": [
+                "cantTell"
+              ]
+            },
+            {
+              "procedureName": "Video element visual-only content has accessible alternative",
               "outcomes": [
                 "cantTell"
               ]
@@ -14949,9 +15025,27 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "video element visual-only content has description track",
+              "procedureName": "video element visual-only content is media alternative for text",
               "outcomes": [
-                "inapplicable"
+                "cantTell"
+              ]
+            },
+            {
+              "procedureName": "video element visual-only content has transcript",
+              "outcomes": [
+                "cantTell"
+              ]
+            },
+            {
+              "procedureName": "video element visual-only content has audio track alternative",
+              "outcomes": [
+                "cantTell"
+              ]
+            },
+            {
+              "procedureName": "Video element visual-only content has accessible alternative",
+              "outcomes": [
+                "cantTell"
               ]
             }
           ]
@@ -14964,7 +15058,25 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "video element visual-only content has description track",
+              "procedureName": "video element visual-only content is media alternative for text",
+              "outcomes": [
+                "inapplicable"
+              ]
+            },
+            {
+              "procedureName": "video element visual-only content has transcript",
+              "outcomes": [
+                "inapplicable"
+              ]
+            },
+            {
+              "procedureName": "video element visual-only content has audio track alternative",
+              "outcomes": [
+                "inapplicable"
+              ]
+            },
+            {
+              "procedureName": "Video element visual-only content has accessible alternative",
               "outcomes": [
                 "inapplicable"
               ]
@@ -15346,7 +15458,6 @@
       "procedureNames": [
         "video element visual content has audio description",
         "video element content is media alternative for text",
-        "video element visual content has description track",
         "video element visual content has strict accessible alternative"
       ],
       "consistency": null,
@@ -15386,12 +15497,6 @@
               ]
             },
             {
-              "procedureName": "video element visual content has description track",
-              "outcomes": [
-                "cantTell"
-              ]
-            },
-            {
               "procedureName": "video element visual content has strict accessible alternative",
               "outcomes": [
                 "cantTell"
@@ -15414,12 +15519,6 @@
             },
             {
               "procedureName": "video element content is media alternative for text",
-              "outcomes": [
-                "cantTell"
-              ]
-            },
-            {
-              "procedureName": "video element visual content has description track",
               "outcomes": [
                 "cantTell"
               ]
@@ -15452,12 +15551,6 @@
               ]
             },
             {
-              "procedureName": "video element visual content has description track",
-              "outcomes": [
-                "cantTell"
-              ]
-            },
-            {
               "procedureName": "video element visual content has strict accessible alternative",
               "outcomes": [
                 "cantTell"
@@ -15480,12 +15573,6 @@
             },
             {
               "procedureName": "video element content is media alternative for text",
-              "outcomes": [
-                "cantTell"
-              ]
-            },
-            {
-              "procedureName": "video element visual content has description track",
               "outcomes": [
                 "cantTell"
               ]
@@ -15518,12 +15605,6 @@
               ]
             },
             {
-              "procedureName": "video element visual content has description track",
-              "outcomes": [
-                "cantTell"
-              ]
-            },
-            {
               "procedureName": "video element visual content has strict accessible alternative",
               "outcomes": [
                 "cantTell"
@@ -15551,12 +15632,6 @@
               ]
             },
             {
-              "procedureName": "video element visual content has description track",
-              "outcomes": [
-                "cantTell"
-              ]
-            },
-            {
               "procedureName": "video element visual content has strict accessible alternative",
               "outcomes": [
                 "cantTell"
@@ -15579,12 +15654,6 @@
             },
             {
               "procedureName": "video element content is media alternative for text",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
-              "procedureName": "video element visual content has description track",
               "outcomes": [
                 "inapplicable"
               ]
@@ -15707,7 +15776,7 @@
       "procedureNames": [
         "Visible label is part of accessible name"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -15718,8 +15787,8 @@
         ]
       },
       "coverage": {
-        "covered": 12,
-        "untested": 3,
+        "covered": 15,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 15
       },
@@ -15794,7 +15863,7 @@
             {
               "procedureName": "Visible label is part of accessible name",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -15869,7 +15938,7 @@
             {
               "procedureName": "Visible label is part of accessible name",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -15884,7 +15953,7 @@
             {
               "procedureName": "Visible label is part of accessible name",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
