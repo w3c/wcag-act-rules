@@ -106,12 +106,12 @@ This `heading` has the required `aria-level` property.
 
 #### Passed Example 2
 
-<a class="example-link" title="Passed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/f3c5ba4e097be5eee694024808a962972f037670.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/5b39aa37000933c7b9a766970b829ce5fada62d6.html">Open in a new tab</a>
 
 This `checkbox` has the required `aria-checked` property.
 
 ```html
-<div role="checkbox" aria-checked="false"></div>
+<div role="checkbox" aria-checked="false" aria-labelledby="label"></div>
 <div id="label">Check me</div>
 ```
 
