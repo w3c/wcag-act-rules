@@ -2,7 +2,7 @@
   "vendor": "Total Validator",
   "name": "Total Validator (+Browser)",
   "version": "17.4.0",
-  "lastModified": "12 January 2024",
+  "lastModified": "26 January 2024",
   "approvedRules": {
     "complete": 30,
     "partial": 0,
@@ -10,8 +10,8 @@
     "untested": 4
   },
   "proposedRules": {
-    "complete": 8,
-    "partial": 2,
+    "complete": 9,
+    "partial": 1,
     "inconsistent": 0,
     "untested": 42
   },
@@ -1287,7 +1287,7 @@
             {
               "procedureName": "E9603",
               "outcomes": [
-                "untested"
+                "cantTell"
               ]
             }
           ]
@@ -3131,7 +3131,7 @@
             {
               "procedureName": "E9152",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -3146,7 +3146,7 @@
             {
               "procedureName": "E9152",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -4204,13 +4204,13 @@
             {
               "procedureName": "E885",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             },
             {
               "procedureName": "E950",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -7823,7 +7823,7 @@
             {
               "procedureName": "W900",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -7838,7 +7838,7 @@
             {
               "procedureName": "W900",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -7853,7 +7853,7 @@
             {
               "procedureName": "W900",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -7868,7 +7868,7 @@
             {
               "procedureName": "W900",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -12569,7 +12569,7 @@
       "procedureNames": [
         "E957"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
@@ -12579,8 +12579,8 @@
         ]
       },
       "coverage": {
-        "covered": 14,
-        "untested": 1,
+        "covered": 15,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 15
       },
@@ -12610,7 +12610,7 @@
             {
               "procedureName": "E957",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
