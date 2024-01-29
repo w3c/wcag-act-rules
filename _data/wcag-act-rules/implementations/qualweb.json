@@ -2,11 +2,11 @@
   "vendor": "LASIGE, Faculdade de Ciências da Universidade de Lisboa",
   "name": "QualWeb",
   "version": "3.0.0",
-  "lastModified": "22 January 2024",
+  "lastModified": "29 January 2024",
   "approvedRules": {
     "complete": 28,
-    "partial": 1,
-    "inconsistent": 2,
+    "partial": 3,
+    "inconsistent": 0,
     "untested": 3
   },
   "proposedRules": {
@@ -5684,16 +5684,20 @@
       "procedureNames": [
         "Meta-refresh no delay"
       ],
-      "consistency": null,
+      "consistency": "partial",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:timing-adjustable"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:timing-adjustable",
+          "WCAG2:interruptions",
+          "WCAG2:change-on-request"
+        ]
       },
       "coverage": {
-        "covered": 9,
+        "covered": 13,
         "untested": 2,
         "cantTell": 0,
         "testCaseTotal": 15
@@ -5739,7 +5743,7 @@
             {
               "procedureName": "Meta-refresh no delay",
               "outcomes": [
-                "inapplicable"
+                "passed"
               ]
             }
           ]
@@ -5754,7 +5758,7 @@
             {
               "procedureName": "Meta-refresh no delay",
               "outcomes": [
-                "inapplicable"
+                "failed"
               ]
             }
           ]
@@ -5769,7 +5773,7 @@
             {
               "procedureName": "Meta-refresh no delay",
               "outcomes": [
-                "inapplicable"
+                "failed"
               ]
             }
           ]
@@ -5784,7 +5788,7 @@
             {
               "procedureName": "Meta-refresh no delay",
               "outcomes": [
-                "inapplicable"
+                "failed"
               ]
             }
           ]
@@ -5799,7 +5803,7 @@
             {
               "procedureName": "Meta-refresh no delay",
               "outcomes": [
-                "inapplicable"
+                "failed"
               ]
             }
           ]
@@ -8094,17 +8098,20 @@
       "procedureNames": [
         "`meta` element has no refresh delay (no exception)"
       ],
-      "consistency": null,
+      "consistency": "partial",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:interruptions",
           "WCAG2:change-on-request"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:interruptions",
+          "WCAG2:change-on-request"
+        ]
       },
       "coverage": {
-        "covered": 8,
+        "covered": 11,
         "untested": 2,
         "cantTell": 0,
         "testCaseTotal": 13
@@ -8150,7 +8157,7 @@
             {
               "procedureName": "`meta` element has no refresh delay (no exception)",
               "outcomes": [
-                "inapplicable"
+                "failed"
               ]
             }
           ]
@@ -8165,7 +8172,7 @@
             {
               "procedureName": "`meta` element has no refresh delay (no exception)",
               "outcomes": [
-                "inapplicable"
+                "failed"
               ]
             }
           ]
@@ -8180,7 +8187,7 @@
             {
               "procedureName": "`meta` element has no refresh delay (no exception)",
               "outcomes": [
-                "inapplicable"
+                "failed"
               ]
             }
           ]
