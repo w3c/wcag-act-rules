@@ -2,7 +2,7 @@
   "vendor": "LASIGE, Faculdade de Ciências da Universidade de Lisboa",
   "name": "QualWeb",
   "version": "3.0.0",
-  "lastModified": "29 January 2024",
+  "lastModified": "5 February 2024",
   "approvedRules": {
     "complete": 28,
     "partial": 3,
@@ -10,9 +10,9 @@
     "untested": 3
   },
   "proposedRules": {
-    "complete": 8,
-    "partial": 14,
-    "inconsistent": 14,
+    "complete": 10,
+    "partial": 18,
+    "inconsistent": 8,
     "untested": 16
   },
   "actRuleMapping": [
@@ -9249,11 +9249,9 @@
       "ruleName": "Audio or video element avoids automatically playing audio",
       "ruleApproved": false,
       "procedureNames": [
-        "Audio or video that plays automatically has no audio that lasts more than 3 seconds",
-        "audio or video that plays automatically has a control mechanism",
         "audio or video has no audio that plays automatically"
       ],
-      "consistency": null,
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -9264,9 +9262,9 @@
         ]
       },
       "coverage": {
-        "covered": 2,
+        "covered": 8,
         "untested": 0,
-        "cantTell": 6,
+        "cantTell": 0,
         "testCaseTotal": 8
       },
       "testCaseResults": [
@@ -9278,21 +9276,9 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "Audio or video that plays automatically has no audio that lasts more than 3 seconds",
-              "outcomes": [
-                "cantTell"
-              ]
-            },
-            {
-              "procedureName": "audio or video that plays automatically has a control mechanism",
-              "outcomes": [
-                "cantTell"
-              ]
-            },
-            {
               "procedureName": "audio or video has no audio that plays automatically",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -9305,21 +9291,9 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "Audio or video that plays automatically has no audio that lasts more than 3 seconds",
-              "outcomes": [
-                "cantTell"
-              ]
-            },
-            {
-              "procedureName": "audio or video that plays automatically has a control mechanism",
-              "outcomes": [
-                "cantTell"
-              ]
-            },
-            {
               "procedureName": "audio or video has no audio that plays automatically",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -9332,21 +9306,9 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "Audio or video that plays automatically has no audio that lasts more than 3 seconds",
-              "outcomes": [
-                "cantTell"
-              ]
-            },
-            {
-              "procedureName": "audio or video that plays automatically has a control mechanism",
-              "outcomes": [
-                "cantTell"
-              ]
-            },
-            {
               "procedureName": "audio or video has no audio that plays automatically",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -9359,21 +9321,9 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "Audio or video that plays automatically has no audio that lasts more than 3 seconds",
-              "outcomes": [
-                "cantTell"
-              ]
-            },
-            {
-              "procedureName": "audio or video that plays automatically has a control mechanism",
-              "outcomes": [
-                "cantTell"
-              ]
-            },
-            {
               "procedureName": "audio or video has no audio that plays automatically",
               "outcomes": [
-                "cantTell"
+                "failed"
               ]
             }
           ]
@@ -9386,21 +9336,9 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "Audio or video that plays automatically has no audio that lasts more than 3 seconds",
-              "outcomes": [
-                "cantTell"
-              ]
-            },
-            {
-              "procedureName": "audio or video that plays automatically has a control mechanism",
-              "outcomes": [
-                "cantTell"
-              ]
-            },
-            {
               "procedureName": "audio or video has no audio that plays automatically",
               "outcomes": [
-                "cantTell"
+                "failed"
               ]
             }
           ]
@@ -9412,18 +9350,6 @@
           "testCaseApproved": false,
           "expected": "inapplicable",
           "procedureResults": [
-            {
-              "procedureName": "Audio or video that plays automatically has no audio that lasts more than 3 seconds",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
-              "procedureName": "audio or video that plays automatically has a control mechanism",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
             {
               "procedureName": "audio or video has no audio that plays automatically",
               "outcomes": [
@@ -9440,21 +9366,9 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "Audio or video that plays automatically has no audio that lasts more than 3 seconds",
-              "outcomes": [
-                "cantTell"
-              ]
-            },
-            {
-              "procedureName": "audio or video that plays automatically has a control mechanism",
-              "outcomes": [
-                "cantTell"
-              ]
-            },
-            {
               "procedureName": "audio or video has no audio that plays automatically",
               "outcomes": [
-                "cantTell"
+                "inapplicable"
               ]
             }
           ]
@@ -9466,18 +9380,6 @@
           "testCaseApproved": false,
           "expected": "inapplicable",
           "procedureResults": [
-            {
-              "procedureName": "Audio or video that plays automatically has no audio that lasts more than 3 seconds",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
-              "procedureName": "audio or video that plays automatically has a control mechanism",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
             {
               "procedureName": "audio or video has no audio that plays automatically",
               "outcomes": [
@@ -9926,16 +9828,16 @@
       "procedureNames": [
         "Audio or video that plays automatically has no audio that lasts more than 3 seconds"
       ],
-      "consistency": null,
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
         "reported": []
       },
       "coverage": {
-        "covered": 2,
+        "covered": 7,
         "untested": 0,
-        "cantTell": 5,
+        "cantTell": 0,
         "testCaseTotal": 7
       },
       "testCaseResults": [
@@ -9949,7 +9851,7 @@
             {
               "procedureName": "Audio or video that plays automatically has no audio that lasts more than 3 seconds",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -9964,7 +9866,7 @@
             {
               "procedureName": "Audio or video that plays automatically has no audio that lasts more than 3 seconds",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -9979,7 +9881,7 @@
             {
               "procedureName": "Audio or video that plays automatically has no audio that lasts more than 3 seconds",
               "outcomes": [
-                "cantTell"
+                "failed"
               ]
             }
           ]
@@ -9994,7 +9896,7 @@
             {
               "procedureName": "Audio or video that plays automatically has no audio that lasts more than 3 seconds",
               "outcomes": [
-                "cantTell"
+                "failed"
               ]
             }
           ]
@@ -10024,7 +9926,7 @@
             {
               "procedureName": "Audio or video that plays automatically has no audio that lasts more than 3 seconds",
               "outcomes": [
-                "cantTell"
+                "inapplicable"
               ]
             }
           ]
@@ -10060,9 +9962,9 @@
         "reported": []
       },
       "coverage": {
-        "covered": 2,
+        "covered": 10,
         "untested": 0,
-        "cantTell": 9,
+        "cantTell": 0,
         "testCaseTotal": 11
       },
       "testCaseResults": [
@@ -10076,7 +9978,7 @@
             {
               "procedureName": "audio or video that plays automatically has a control mechanism",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -10091,7 +9993,7 @@
             {
               "procedureName": "audio or video that plays automatically has a control mechanism",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -10106,7 +10008,7 @@
             {
               "procedureName": "audio or video that plays automatically has a control mechanism",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -10121,7 +10023,7 @@
             {
               "procedureName": "audio or video that plays automatically has a control mechanism",
               "outcomes": [
-                "cantTell"
+                "failed"
               ]
             }
           ]
@@ -10136,7 +10038,7 @@
             {
               "procedureName": "audio or video that plays automatically has a control mechanism",
               "outcomes": [
-                "cantTell"
+                "failed"
               ]
             }
           ]
@@ -10151,7 +10053,7 @@
             {
               "procedureName": "audio or video that plays automatically has a control mechanism",
               "outcomes": [
-                "cantTell"
+                "failed"
               ]
             }
           ]
@@ -10166,7 +10068,7 @@
             {
               "procedureName": "audio or video that plays automatically has a control mechanism",
               "outcomes": [
-                "cantTell"
+                "failed"
               ]
             }
           ]
@@ -10181,7 +10083,7 @@
             {
               "procedureName": "audio or video that plays automatically has a control mechanism",
               "outcomes": [
-                "cantTell"
+                "failed"
               ]
             }
           ]
@@ -10211,7 +10113,7 @@
             {
               "procedureName": "audio or video that plays automatically has a control mechanism",
               "outcomes": [
-                "cantTell"
+                "failed"
               ]
             }
           ]
@@ -14926,7 +14828,7 @@
         "video element visual-only content has audio track alternative",
         "Video element visual-only content has accessible alternative"
       ],
-      "consistency": null,
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -14937,9 +14839,9 @@
         ]
       },
       "coverage": {
-        "covered": 1,
+        "covered": 2,
         "untested": 0,
-        "cantTell": 8,
+        "cantTell": 7,
         "testCaseTotal": 9
       },
       "testCaseResults": [
@@ -15184,25 +15086,25 @@
             {
               "procedureName": "video element visual-only content is media alternative for text",
               "outcomes": [
-                "cantTell"
+                "inapplicable"
               ]
             },
             {
               "procedureName": "video element visual-only content has transcript",
               "outcomes": [
-                "cantTell"
+                "inapplicable"
               ]
             },
             {
               "procedureName": "video element visual-only content has audio track alternative",
               "outcomes": [
-                "cantTell"
+                "inapplicable"
               ]
             },
             {
               "procedureName": "Video element visual-only content has accessible alternative",
               "outcomes": [
-                "cantTell"
+                "inapplicable"
               ]
             }
           ]
@@ -15249,16 +15151,16 @@
       "procedureNames": [
         "video element visual-only content is media alternative for text"
       ],
-      "consistency": null,
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
         "reported": []
       },
       "coverage": {
-        "covered": 1,
+        "covered": 2,
         "untested": 0,
-        "cantTell": 6,
+        "cantTell": 5,
         "testCaseTotal": 7
       },
       "testCaseResults": [
@@ -15347,7 +15249,7 @@
             {
               "procedureName": "video element visual-only content is media alternative for text",
               "outcomes": [
-                "cantTell"
+                "inapplicable"
               ]
             }
           ]
@@ -15376,16 +15278,16 @@
       "procedureNames": [
         "video element visual-only content has audio track alternative"
       ],
-      "consistency": null,
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
         "reported": []
       },
       "coverage": {
-        "covered": 1,
+        "covered": 2,
         "untested": 0,
-        "cantTell": 4,
+        "cantTell": 3,
         "testCaseTotal": 5
       },
       "testCaseResults": [
@@ -15444,7 +15346,7 @@
             {
               "procedureName": "video element visual-only content has audio track alternative",
               "outcomes": [
-                "cantTell"
+                "inapplicable"
               ]
             }
           ]
@@ -15473,16 +15375,16 @@
       "procedureNames": [
         "video element visual-only content has transcript"
       ],
-      "consistency": null,
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
         "reported": []
       },
       "coverage": {
-        "covered": 1,
+        "covered": 2,
         "untested": 0,
-        "cantTell": 7,
+        "cantTell": 6,
         "testCaseTotal": 8
       },
       "testCaseResults": [
@@ -15586,7 +15488,7 @@
             {
               "procedureName": "video element visual-only content has transcript",
               "outcomes": [
-                "cantTell"
+                "inapplicable"
               ]
             }
           ]
