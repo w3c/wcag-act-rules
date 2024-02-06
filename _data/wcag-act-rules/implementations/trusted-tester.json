@@ -1345,6 +1345,36 @@
               ]
             }
           ]
+        },
+        {
+          "testcaseId": "8f296b7a417523e9c769761dd41b703c75d90019",
+          "testCaseName": "Passed Example 4",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/oj04fd/8f296b7a417523e9c769761dd41b703c75d90019.html",
+          "testCaseApproved": false,
+          "expected": "passed",
+          "procedureResults": [
+            {
+              "procedureName": "2.4.7-focus-visible",
+              "outcomes": [
+                "untested"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "eb4f387bfa2459fb12dc5b0cbda478238b3eeeda",
+          "testCaseName": "Inapplicable Example 2",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/oj04fd/eb4f387bfa2459fb12dc5b0cbda478238b3eeeda.html",
+          "testCaseApproved": false,
+          "expected": "inapplicable",
+          "procedureResults": [
+            {
+              "procedureName": "2.4.7-focus-visible",
+              "outcomes": [
+                "untested"
+              ]
+            }
+          ]
         }
       ]
     },

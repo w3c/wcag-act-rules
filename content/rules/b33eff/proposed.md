@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> b33eff</p>
-  <p><strong>Date:</strong> Updated 14 December 2023</p>
+  <p><strong>Date:</strong> Updated 25 January 2024</p>
   <p><strong>Authors:</strong> <a href="https://github.com/audreymaniez">Audrey Maniez</a>, <a href="https://github.com/jkodu">Jey Nandakumar</a>, Tom Brunet. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -20,7 +20,7 @@ rule_meta:
   original_file: css-restrict-orientation-b33eff.md
   description: |
     This rule checks that page content is not restricted to either `landscape` or `portrait` orientation using CSS transforms
-  last_modified: 14 December 2023
+  last_modified: 25 January 2024
   scs_tested:
     - handle: Orientation
       num: 1.3.4
@@ -34,11 +34,11 @@ This rule applies to any [HTML element][] that is [visible](#visible) and has on
 - the CSS [rotate](https://www.w3.org/TR/css-transforms-2/#individual-transforms) property; or
 - the CSS [transform](https://www.w3.org/TR/css-transforms/#propdef-transform) property with any of the below [transformation functions](https://www.w3.org/TR/css-transforms/#transform-functions):
 
-	- [rotate](https://www.w3.org/TR/css-transforms/#funcdef-transform-rotate)
-	- [rotate3d](https://www.w3.org/TR/css-transforms-2/#funcdef-rotate3d)
-	- [rotateZ](https://www.w3.org/TR/css-transforms-2/#funcdef-rotatez)
-	- [matrix](https://www.w3.org/TR/css-transforms/#funcdef-transform-matrix)
-	- [matrix3d](https://www.w3.org/TR/css-transforms-2/#funcdef-matrix3d)
+  - [rotate](https://www.w3.org/TR/css-transforms/#funcdef-transform-rotate)
+  - [rotate3d](https://www.w3.org/TR/css-transforms-2/#funcdef-rotate3d)
+  - [rotateZ](https://www.w3.org/TR/css-transforms-2/#funcdef-rotatez)
+  - [matrix](https://www.w3.org/TR/css-transforms/#funcdef-transform-matrix)
+  - [matrix3d](https://www.w3.org/TR/css-transforms-2/#funcdef-matrix3d)
 
 **Note:** These specific [transformation functions](https://www.w3.org/TR/css-transforms/#transform-functions) are of interest to this rule as they have the potential to affect the [rotation](https://www.w3.org/TR/css-transforms-2/#Rotate3dDefined) of a given element.
 
@@ -54,7 +54,7 @@ The target element is neither rotated clockwise nor counter clockwise around the
 
 This rule does not consider and may produce incorrect results for:
 
-- Elements for which a particular display orientation is [essential](https://www.w3.org/TR/WCAG21/#dfn-essential).
+- Elements for which a particular display orientation is [essential](https://www.w3.org/TR/WCAG22/#dfn-essential).
 - The existence of any control on the page that can change the orientation on demand.
 - Scripts are not used to adjust the CSS orientation lock.
 
@@ -66,7 +66,7 @@ There are no accessibility support issues known.
 
 ### Bibliography
 
-- [Understanding Success Criterion 1.3.4: Orientation](https://www.w3.org/WAI/WCAG21/Understanding/orientation.html)
+- [Understanding Success Criterion 1.3.4: Orientation](https://www.w3.org/WAI/WCAG22/Understanding/orientation.html)
 - [CSS Transforms Module Level 1](https://www.w3.org/TR/css-transforms/#funcdef-transform-matrix)
 - [CSS Transforms Module Level 2](https://www.w3.org/TR/css-transforms-2)
 - [CSS3 Media Queries](https://www.w3.org/TR/css3-mediaqueries/)
@@ -442,7 +442,7 @@ Content perceivable through sight.
 
 Content is considered _visible_ if making it fully transparent would result in a difference in the pixels rendered for any part of the document that is currently within the viewport or can be brought into the viewport via scrolling.
 
-[Content is defined in WCAG](https://www.w3.org/TR/WCAG21/#dfn-content).
+[Content is defined in WCAG](https://www.w3.org/TR/WCAG22/#dfn-content).
 
 For more details, see [examples of visible](https://act-rules.github.io/pages/examples/visible/).
 
