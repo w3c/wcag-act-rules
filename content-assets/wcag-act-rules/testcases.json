@@ -3,7 +3,7 @@
   "website": "https://www.w3.org/WAI/standards-guidelines/act/rules/",
   "license": "https://act-rules.github.io/pages/license/",
   "description": "Accessibility conformance testing rules for HTML",
-  "count": 1142,
+  "count": 1144,
   "testcases": [
     {
       "ruleId": "674b10",
@@ -24684,6 +24684,60 @@
       "relativePath": "testcases/a25f45/17e68991f57cd20cd5c9fcf564d5a23ebb08c0f0.html",
       "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/17e68991f57cd20cd5c9fcf564d5a23ebb08c0f0.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/a25f45/proposed/"
+    },
+    {
+      "ruleId": "afw4f7",
+      "ruleName": "Text has minimum contrast",
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.4.3": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:1.4.6": {
+          "secondary": "This success criterion is **more strict** than this rule. This is because this criterion has a higher minimum contrast. Some of the passed examples do not satisfy this success criterion."
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "eb4bfbbeba4e803fef10ebad17427f32e306ae82",
+      "testcaseTitle": "Passed Example 7",
+      "relativePath": "testcases/afw4f7/eb4bfbbeba4e803fef10ebad17427f32e306ae82.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/eb4bfbbeba4e803fef10ebad17427f32e306ae82.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/afw4f7/proposed/"
+    },
+    {
+      "ruleId": "09o5cg",
+      "ruleName": "Text has enhanced contrast",
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.4.6": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:G17": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:G18": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:1.4.3": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion has a lower minimum contrast. Some of the failed examples may satisfy this success criterion."
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "5cd71d7ee71bddaed9ff5fbd349ce0809141e425",
+      "testcaseTitle": "Passed Example 6",
+      "relativePath": "testcases/09o5cg/5cd71d7ee71bddaed9ff5fbd349ce0809141e425.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/5cd71d7ee71bddaed9ff5fbd349ce0809141e425.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/09o5cg/proposed/"
     },
     {
       "ruleId": "eac66b",
