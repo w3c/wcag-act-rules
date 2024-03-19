@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 2ee8b8</p>
-  <p><strong>Date:</strong> Updated 11 November 2022</p>
+  <p><strong>Date:</strong> Updated 25 January 2024</p>
   <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/brynanders">Bryn Anderson</a>, <a href="https://github.com/jkodu">Jey Nandakumar</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -17,9 +17,10 @@ rule_meta:
   id: 2ee8b8
   name: "Visible label is part of accessible name"
   rule_type: atomic
+  original_file: visible-label-in-accessible-name-2ee8b8.md
   description: |
     This rule checks that interactive elements labeled through content have their visible label as part of their accessible name.
-  last_modified: 11 November 2022
+  last_modified: 25 January 2024
   scs_tested:
     - handle: Label in Name
       num: 2.5.3
@@ -36,7 +37,7 @@ This rule applies to any element for which all the following is true:
 
 ## Expectation
 
-For each target element, all [text nodes][] in the [visible text content][] either match or are contained within the [accessible name][] of this target element, except for characters in the [text nodes][] used to express [non-text content][]. Leading and trailing [whitespace][] and difference in case sensitivity should be ignored.
+For each target element, all [text nodes][] in the [visible text content][] [match characters][] and are contained within the [accessible name][] of this target element, except for characters in the [text nodes][] used to express [non-text content][]. Leading and trailing [whitespace][] and difference in case sensitivity should be ignored.
 
 ## Assumptions
 
@@ -55,7 +56,7 @@ The understanding document of [2.5.3 Label in Name][understand253] use the term 
 ### Bibliography
 
 - [Understanding Success Criterion 2.5.3: Label in Name][understand253]
-- [G208: Including the text of the visible label as part of the accessible name](https://www.w3.org/WAI/WCAG21/Techniques/general/G208)
+- [G208: Including the text of the visible label as part of the accessible name](https://www.w3.org/WAI/WCAG22/Techniques/general/G208)
 
 ## Accessibility Requirements Mapping
 
@@ -140,12 +141,12 @@ This button has [visible][] text that is contained within the [accessible name][
 
 #### Passed Example 5
 
-<a class="example-link" title="Passed Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/2ee8b8/c7f6c637f82c017db4e3cd035b29cc2522043021.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/2ee8b8/79af5d3e531aecd27961f0b9ed260d95f39440c0.html">Open in a new tab</a>
 
-This button has [visible][] text that does not need to be contained within the [accessible name][], because the "x" text node is [non-text content][].
+This button has [visible][] text that does not need to be contained within the [accessible name][], because the "x" text node is [non-text content][]. Note: this would need to meet SC 1.1.1 Non text content.
 
 ```html
-<button aria-label="close">X</button>
+<button aria-label="anything">X</button>
 ```
 
 #### Passed Example 6
@@ -190,10 +191,30 @@ This button has [visible][] text that is only partially contained within the [ac
 
 <a class="example-link" title="Failed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/2ee8b8/20a5e321fc6a5cb2bfcd520acb8cda21e6925254.html">Open in a new tab</a>
 
-This link has [visible][] text with mathematical symbols, that does not match the [accessible name][] because the mathematical symbols were written out in the accessible name. This is [explicitly mentioned in WCAG](https://www.w3.org/WAI/WCAG21/Understanding/label-in-name#mathematical-expressions-and-formulae).
+This link has [visible][] text with mathematical symbols, that does not match the [accessible name][] because the mathematical symbols were written out in the accessible name. This is [explicitly mentioned in WCAG](https://www.w3.org/WAI/WCAG22/Understanding/label-in-name#mathematical-expressions-and-formulae).
 
 ```html
 <a href="/" aria-label="Proof of two multiplied by two is four">Proof of 2&times;2=4</a>
+```
+
+#### Failed Example 4
+
+<a class="example-link" title="Failed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/2ee8b8/e9bbdbec137223e2973c6d2896050770c84c26e5.html">Open in a new tab</a>
+
+This link has [visible][] text does not match the [accessible name][] because there is a hyphen in the accessible name.
+
+```html
+<a href="#" aria-label="non-standard">nonstandard</a>
+```
+
+#### Failed Example 5
+
+<a class="example-link" title="Failed Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/2ee8b8/fd0c075f565b6f42be0ded6a959bea82ebff15e5.html">Open in a new tab</a>
+
+This link has [visible][] text does not match the [accessible name][] because there are extra spaces in the accessible name.
+
+```html
+<a aria-label="1 2 3. 4 5 6. 7 8 9 0" href="tel:1234567890">123.456.7890</a>
 ```
 
 ### Inapplicable
@@ -306,6 +327,10 @@ Elements are marked as decorative as a way to convey the intention of the author
 
 Elements can also be ignored by assistive technologies if they are [programmatically hidden][]. This is different from marking the element as decorative and does not convey the same intention. Notably, being [programmatically hidden][] may change as users interact with the page (showing and hiding elements) while being marked as decorative should stay the same through all states of the page.
 
+### Matching characters {#matching-characters}
+
+A sequence of characters is considered to _match_ another if, after removing leading and trailing [whitespace characters][] and replacing remaining occurrences of one or more whitespace characters with a single space, the two sequences of characters are equal character-by-character, ignoring any differences in letter casing.
+
 ### Outcome {#outcome}
 
 An _outcome_ is a conclusion that comes from evaluating an ACT Rule on a [test subject](https://www.w3.org/TR/act-rules-format/#test-subject) or one of its constituent [test target](https://www.w3.org/TR/act-rules-format/#test-target). An outcome can be one of the three following types:
@@ -345,7 +370,7 @@ Content perceivable through sight.
 
 Content is considered _visible_ if making it fully transparent would result in a difference in the pixels rendered for any part of the document that is currently within the viewport or can be brought into the viewport via scrolling.
 
-[Content is defined in WCAG](https://www.w3.org/TR/WCAG21/#dfn-content).
+[Content is defined in WCAG](https://www.w3.org/TR/WCAG22/#dfn-content).
 
 For more details, see [examples of visible](https://act-rules.github.io/pages/examples/visible/).
 
@@ -394,21 +419,23 @@ This includes:
 [included in the accessibility tree]: #included-in-the-accessibility-tree 'Definition of Included in the Accessibility Tree'
 [inclusive ancestors]: https://dom.spec.whatwg.org/#concept-tree-inclusive-ancestor 'DOM Definition of Inclusive Ancestor'
 [marked as decorative]: #marked-as-decorative 'Definition of Marked as Decorative'
-[non-text content]: https://www.w3.org/TR/WCAG21/#dfn-non-text-content 'WCAG Definition of Non-text content'
-[presentational roles conflict resolution]: https://www.w3.org/TR/wai-aria-1.1/#conflict_resolution_presentation_none 'Presentational Roles Conflict Resolution'
+[match characters]: #matching-characters 'Definition of matching characters'
+[non-text content]: https://www.w3.org/TR/WCAG22/#dfn-non-text-content 'WCAG Definition of Non-text content'
+[presentational roles conflict resolution]: https://www.w3.org/TR/wai-aria-1.2/#conflict_resolution_presentation_none 'Presentational Roles Conflict Resolution'
 [programmatically hidden]: #programmatically-hidden 'Definition of Programmatically Hidden'
-[pure decoration]: https://www.w3.org/TR/WCAG21/#dfn-pure-decoration 'WCAG definition of Pure Decoration'
+[pure decoration]: https://www.w3.org/TR/WCAG22/#dfn-pure-decoration 'WCAG definition of Pure Decoration'
 [role attribute]: https://www.w3.org/TR/role-attribute/ 'Specification of the role attribute'
 [rules for parsing integers]: https://html.spec.whatwg.org/#rules-for-parsing-integers
 [semantic role]: #semantic-role 'Definition of Semantic role'
 [sequential focus navigation]: https://html.spec.whatwg.org/multipage/interaction.html#sequential-focus-navigation
-[supports name from content]: https://www.w3.org/TR/wai-aria-1.1/#namefromcontent 'Definition of Supports name from contents'
+[supports name from content]: https://www.w3.org/TR/wai-aria-1.2/#namefromcontent 'Definition of Supports name from contents'
 [tabindex attribute]: https://html.spec.whatwg.org/#attr-tabindex
 [tabindex value]: https://html.spec.whatwg.org/#tabindex-value
 [text nodes]: https://dom.spec.whatwg.org/#text 'DOM text, 2020/08/18'
-[understand253]: https://www.w3.org/WAI/WCAG21/Understanding/label-in-name.html
+[understand253]: https://www.w3.org/WAI/WCAG22/Understanding/label-in-name.html
 [visible text content]: #visible-text-content 'Definition of Visible text content'
 [visible]: #visible 'Definition of visible'
 [wai-aria specifications]: #wai-aria-specifications 'Definition of WAI-ARIA specifications'
+[whitespace characters]: #whitespace 'Definition of Whitespace'
 [whitespace]: #whitespace 'Definition of Whitespace'
-[widget role]: https://www.w3.org/TR/wai-aria-1.1/#widget_roles 'Definition of Widget role'
+[widget role]: https://www.w3.org/TR/wai-aria-1.2/#widget_roles 'Definition of Widget role'

@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> afw4f7</p>
-  <p><strong>Date:</strong> Updated 11 May 2023</p>
+  <p><strong>Date:</strong> Updated 1 March 2024</p>
   <p><strong>Authors:</strong> <a href="https://www.linkedin.com/in/brianbors/">Brian Bors</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -17,9 +17,10 @@ rule_meta:
   id: afw4f7
   name: "Text has minimum contrast"
   rule_type: atomic
+  original_file: text-contrast-afw4f7.md
   description: |
     This rule checks that the highest possible contrast of every text character with its background meets the minimal contrast requirement.
-  last_modified: 11 May 2023
+  last_modified: 1 March 2024
   scs_tested:
     - handle: Contrast (Minimum)
       num: 1.4.3
@@ -35,7 +36,7 @@ This rule applies to any [visible][] character in a [text node][] that is a [chi
 
 ## Expectation
 
-For each test target, the [highest possible contrast][] between the [foreground colors][] and [background colors][] is at least 4.5:1 or 3.0:1 for [larger scale text][], except if the test target is part of a [text node][] that is [purely decorative][] or does not express anything in [human language][].
+For each test target, the [highest possible contrast][] between the [foreground colors][] and [background colors][] is at least 3.0:1 for [large scale text][] and 4.5:1 for other texts, except if the test target is part of a [text node][] that is [purely decorative][] or does not express anything in [human language][].
 
 ## Assumptions
 
@@ -54,19 +55,17 @@ For each test target, the [highest possible contrast][] between the [foreground 
 
 ## Background
 
-Passing this rule does not mean that the text has sufficient color contrast. If all background pixels have a low contrast with all foreground pixels, the success criterion is guaranteed to not be satisfied. When some pixels have sufficient contrast, and others do not, legibility should be considered. There is no clear method for determining legibility, which is why this is out of scope for this rule.
-
-This rule is designed specifically for [1.4.3 Contrast (Minimum)][sc143], which has the expected contrast ratio of 4.5:1 (or 3:1 for large text). Because text that fails a contrast ratio of 4.5:1 also fails a contrast ratio of 7:1, this rule maps to [1.4.6 Contrast (Enhanced)][sc146] as well. In order to adequately test the [expectation](#expectation), some of the passed examples do not satisfy [1.4.6 Contrast (Enhanced)][sc146].
+Passing this rule does not mean that the text has sufficient color contrast. If all background pixels have a low contrast with all foreground pixels, the success criterion is guaranteed to not be satisfied. When some pixels have sufficient contrast, and others do not, legibility should be considered. There is no clear method for determining legibility when some but not all pixels have sufficient contrast, which is why passing this rule does not necessarily mean the corresponding success criterion is met.
 
 When the text color or background color is not specified in the web page, colors from other [origins][] will be used. Testers must ensure colors are not affected by styles from a [user origin][], such as a custom style sheet. Contrast issues caused by specifying the text color but not the background or vice versa, must be tested separately from this rule.
 
 ### Bibliography
 
-- [Understanding Success Criterion 1.4.3: Contrast (Minimum)](https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html)
-- [Understanding Success Criterion 1.4.6: Contrast (Enhanced)](https://www.w3.org/WAI/WCAG21/Understanding/contrast-enhanced.html)
-- [G18: Ensuring that a contrast ratio of at least 4.5:1 exists between text (and images of text) and background behind the text](https://www.w3.org/WAI/WCAG21/Techniques/general/G18)
-- [G145: Ensuring that a contrast ratio of at least 3:1 exists between text (and images of text) and background behind the text](https://www.w3.org/WAI/WCAG21/Techniques/general/G145)
-- [F83: Failure of Success Criterion 1.4.3 and 1.4.6 due to using background images that do not provide sufficient contrast with foreground text (or images of text)](https://www.w3.org/WAI/WCAG21/Techniques/failures/F83)
+- [Understanding Success Criterion 1.4.3: Contrast (Minimum)](https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html)
+- [Understanding Success Criterion 1.4.6: Contrast (Enhanced)](https://www.w3.org/WAI/WCAG22/Understanding/contrast-enhanced.html)
+- [G18: Ensuring that a contrast ratio of at least 4.5:1 exists between text (and images of text) and background behind the text](https://www.w3.org/WAI/WCAG22/Techniques/general/G18)
+- [G145: Ensuring that a contrast ratio of at least 3:1 exists between text (and images of text) and background behind the text](https://www.w3.org/WAI/WCAG22/Techniques/general/G145)
+- [F83: Failure of Success Criterion 1.4.3 and 1.4.6 due to using background images that do not provide sufficient contrast with foreground text (or images of text)](https://www.w3.org/WAI/WCAG22/Techniques/failures/F83)
 - [CSS Scoping Module Level 1 (Editor's Draft)](https://drafts.csswg.org/css-scoping/)
 
 ## Accessibility Requirements Mapping
@@ -84,19 +83,17 @@ When the text color or background color is not specified in the web page, colors
       </ul></li>
     </ul>
   </details></li>
-  <li><details>
-    <summary><span>1.4.6 Contrast (Enhanced) (Level AAA)</span></summary>
-    <ul>
-      <li><a href="https://www.w3.org/TR/WCAG21/#contrast-enhanced">Learn more about 1.4.6 Contrast (Enhanced)</a></li>
-      <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level AAA.</li>
-      <li>Outcome mapping: <ul>
-        <li>Any <code>failed</code> outcomes: success criterion is not satisfied</li>
-        <li>All <code>passed</code> outcomes: success criterion needs further testing</li>
-        <li>An <code>inapplicable</code> outcome: success criterion needs further testing</li>
-      </ul></li>
-    </ul>
-  </details></li>
 </ul>
+
+### Secondary Requirements
+
+This rule is related to the following accessibility requirements, but was 
+not designed to test this requirements directly. These 
+[secondary requirements](https://w3c.github.io/wcag-act/act-rules-format.html#secondary-requirements)
+can either be stricter than the rule requires, or may be satisfied in ways 
+not tested by the rule:
+
+- [1.4.6 Contrast (Enhanced) (Level AAA)](https://www.w3.org/TR/WCAG21/#contrast-enhanced): This success criterion is **more strict** than this rule. This is because this criterion has a higher minimum contrast. Some of the passed examples do not satisfy this success criterion.
 
 ## Input Aspects
 
@@ -192,14 +189,12 @@ This 14pt bold black text has a contrast ratio of 3.6:1 on the gray background.
 
 #### Passed Example 7
 
-<a class="example-link" title="Passed Example 7" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/2845a8409b1c07caa856d1bfbf42ed244b0de9c2.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 7" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/eb4bfbbeba4e803fef10ebad17427f32e306ae82.html">Open in a new tab</a>
 
-This text does not convey anything in human language.
+The content of this button ("X") does not convey anything in human language; therefore, it passes the rule regardless of its contrast ratio. However, [Success Criterion 1.4.11 Non-Text Content][sc1411] should be examined for this non-text element.
 
 ```html
-<p style="color: #000; background: #666;">
-	----=====++++++++___________***********%%%%%%%%%%%±±±±@@@@@@@@
-</p>
+<button style="color: #666; background-color: #000" aria-label="Close">X</button>
 ```
 
 #### Passed Example 8
@@ -686,7 +681,7 @@ Content perceivable through sight.
 
 Content is considered _visible_ if making it fully transparent would result in a difference in the pixels rendered for any part of the document that is currently within the viewport or can be brought into the viewport via scrolling.
 
-[Content is defined in WCAG](https://www.w3.org/TR/WCAG21/#dfn-content).
+[Content is defined in WCAG](https://www.w3.org/TR/WCAG22/#dfn-content).
 
 For more details, see [examples of visible](https://act-rules.github.io/pages/examples/visible/).
 
@@ -700,20 +695,20 @@ The _WAI ARIA Specifications_ group both the WAI ARIA W3C Recommendation and ARI
 
 **Note:** depending on the type of content being evaluated, part of the specifications might be irrelevant and should be ignored.
 
-[abstract]: https://www.w3.org/TR/wai-aria-1.1/#isAbstract 'ARIA Definition for Abstract Roles'
+[abstract]: https://www.w3.org/TR/wai-aria-1.2/#isAbstract 'ARIA Definition for Abstract Roles'
 [accessibility support base line]: https://www.w3.org/TR/WCAG-EM/#step1c 'Definition of accessibility support base line'
 [accessible name and description computation]: https://www.w3.org/TR/accname 'Accessible Name and Description Computation'
 [accessible name]: #accessible-name 'Definition of Accessible Name'
 [actually disabled]: https://html.spec.whatwg.org/multipage/semantics-other.html#concept-element-disabled 'HTML definition of Actually Disabled'
 [ancestor]: https://dom.spec.whatwg.org/#concept-shadow-including-ancestor 'DOM, ancestor, 2020/07/23'
-[assistive technology]: https://www.w3.org/TR/WCAG21/#dfn-assistive-technologies 'WCAG definition of Assistive Technologies'
+[assistive technology]: https://www.w3.org/TR/WCAG22/#dfn-assistive-technologies 'WCAG definition of Assistive Technologies'
 [attribute value]: #attribute-value 'Definition of Attribute Value'
 [background colors]: #background-colors-of-text 'Definition of Background color of text'
 [boolean attributes]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attributes 'HTML Specification of Boolean Attribute'
 [child]: https://dom.spec.whatwg.org/#concept-tree-child 'DOM, child, 2020/07/23'
 [comma separated]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#comma-separated-tokens 'HTML Specification of Comma Separated Tokens'
 [computed]: https://www.w3.org/TR/css-cascade/#computed-value 'CSS definition of computed value'
-[contrast ratio]: https://www.w3.org/TR/WCAG21/#dfn-contrast-ratio 'WCAG definition of Contrast Ratio'
+[contrast ratio]: https://www.w3.org/TR/WCAG22/#dfn-contrast-ratio 'WCAG definition of Contrast Ratio'
 [disabled pseudo-class]: https://drafts.csswg.org/selectors/#disabled-pseudo "CSS Selectors Level 4 (Editor's Draft), definition of the :disabled pseudo-class"
 [disabled]: #disabled-element 'Definition of Disabled'
 [doc-biblioref]: https://www.w3.org/TR/dpub-aria-1.0/#doc-biblioref 'DPUB ARIA Definition of doc-biblioref'
@@ -729,28 +724,28 @@ The _WAI ARIA Specifications_ group both the WAI ARIA W3C Recommendation and ARI
 [html aam]: https://www.w3.org/TR/html-aam-1.0/#html-attribute-state-and-property-mappings 'Specification of HTML attributes value mapping to ARIA states and properties'
 [html element]: #namespaced-element
 [html namespaces]: https://infra.spec.whatwg.org/#namespaces 'HTML namespace, 2021/05/31'
-[human language]: https://www.w3.org/TR/WCAG21/#dfn-human-language-s 'WCAG 2.1, Human language'
+[human language]: https://www.w3.org/TR/WCAG22/#dfn-human-language-s 'WCAG 2.2, Human language'
 [idl attribute]: https://heycam.github.io/webidl/#idl-attributes "Definition of Web IDL Attribute (Editor's Draft)"
 [implicit role]: #implicit-role 'Definition of Implicit Role'
 [included in the accessibility tree]: #included-in-the-accessibility-tree 'Definition of Included in the Accessibility Tree'
 [inclusive ancestors]: https://dom.spec.whatwg.org/#concept-tree-inclusive-ancestor 'DOM Definition of Inclusive Ancestor'
 [inheriting semantic]: #inheriting-semantic 'Definition of Inheriting Semantic Role'
 [inoperable]: https://www.w3.org/TR/wai-aria/#dfn-operable
-[larger scale text]: #large-scale-text 'Definition of Large scale text'
+[large scale text]: #large-scale-text 'Definition of Large scale text'
 [link]: https://www.w3.org/TR/wai-aria/#link 'ARIA Definition of the link Role'
 [marked as decorative]: #marked-as-decorative 'Definition of Marked as Decorative'
 [namespaceuri]: https://dom.spec.whatwg.org/#dom-element-namespaceuri 'DOM Element namespaceURI, 2021/05/31'
 [numbers]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#numbers 'HTML Specification of Number Parsing'
 [origins]: https://www.w3.org/TR/css3-cascade/#cascading-origins 'CSS 3, origin'
-[presentational roles conflict resolution]: https://www.w3.org/TR/wai-aria-1.1/#conflict_resolution_presentation_none 'WAI-ARIA, Presentational Roles Conflict Resolution'
+[presentational roles conflict resolution]: https://www.w3.org/TR/wai-aria-1.2/#conflict_resolution_presentation_none 'WAI-ARIA, Presentational Roles Conflict Resolution'
 [programmatically hidden]: #programmatically-hidden 'Definition of Programmatically Hidden'
-[pure decoration]: https://www.w3.org/TR/WCAG21/#dfn-pure-decoration 'WCAG definition of Pure Decoration'
-[purely decorative]: https://www.w3.org/TR/WCAG21/#dfn-pure-decoration 'WCAG 2.1, Purely decorative'
+[pure decoration]: https://www.w3.org/TR/WCAG22/#dfn-pure-decoration 'WCAG definition of Pure Decoration'
+[purely decorative]: https://www.w3.org/TR/WCAG22/#dfn-pure-decoration 'WCAG 2.2, Purely decorative'
 [reflect]: https://html.spec.whatwg.org/multipage/common-dom-interfaces.html#reflecting-content-attributes-in-idl-attributes 'HTML specification of Reflecting Content Attributes in IDL Attributes'
 [role attribute]: https://www.w3.org/TR/role-attribute/ 'Specification of the role attribute'
 [rules for parsing integers]: https://html.spec.whatwg.org/#rules-for-parsing-integers
-[sc143]: https://www.w3.org/TR/WCAG21/#contrast-minimum 'WCAG 2.1, Success criterion 1.4.3 Contrast (Minimum)'
-[sc146]: https://www.w3.org/TR/WCAG21/#contrast-enhanced 'WCAG 2.1, Success criterion 1.4.6 Contrast (Enhanced)'
+[sc1411]: https://www.w3.org/TR/WCAG22/#non-text-contrast
+[sc143]: https://www.w3.org/TR/WCAG22/#contrast-minimum 'WCAG 2.2, Success criterion 1.4.3 Contrast (Minimum)'
 [semantic role]: #semantic-role 'Definition of Semantic Role'
 [sequential focus navigation]: https://html.spec.whatwg.org/multipage/interaction.html#sequential-focus-navigation
 [shadow-including ancestor]: https://dom.spec.whatwg.org/#concept-shadow-including-ancestor
@@ -760,5 +755,5 @@ The _WAI ARIA Specifications_ group both the WAI ARIA W3C Recommendation and ARI
 [text node]: https://dom.spec.whatwg.org/#text 'DOM, text node, 2020/07/23'
 [user origin]: https://www.w3.org/TR/css3-cascade/#cascade-origin-user 'CSS 3, user origin'
 [visible]: #visible 'Definition of Visible'
-[wai-aria specification]: https://www.w3.org/TR/wai-aria-1.1/#propcharacteristic_value 'WAI-ARIA Specification of States and Properties Value'
+[wai-aria specification]: https://www.w3.org/TR/wai-aria-1.2/#propcharacteristic_value 'WAI-ARIA Specification of States and Properties Value'
 [wai-aria specifications]: #wai-aria-specifications 'Definition of WAI-ARIA specifications'

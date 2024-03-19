@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> e88epe</p>
-  <p><strong>Date:</strong> Updated 14 November 2022</p>
+  <p><strong>Date:</strong> Updated 25 January 2024</p>
   <p><strong>Authors:</strong> <a href="https://www.linkedin.com/in/brianbors/">Brian Bors</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
   
@@ -19,9 +19,10 @@ rule_meta:
   id: e88epe
   name: "Image not in the accessibility tree is decorative"
   rule_type: atomic
+  original_file: image-not-in-acc-tree-is-decorative-e88epe.md
   description: |
     This rule checks that visible `img`, `svg` and `canvas` elements that are ignored by assistive technologies are decorative.
-  last_modified: 14 November 2022
+  last_modified: 25 January 2024
   scs_tested:
     - handle: Non-text Content
       num: 1.1.1
@@ -47,13 +48,13 @@ This rule applies to any `img`, `canvas` or `svg` element that is [visible][] an
 
 Each test target is [purely decorative][].
 
-**Note**: It is relatively common for an informative image such as an icon to be marked up as decorative, if the text alternative is adjacent to the image. This is a [conforming alternative version][] for the image. This fails the rule but meets [conformance requirement 1 of WCAG 2.1](https://www.w3.org/TR/WCAG21/#cc1).
+**Note**: It is relatively common for an informative image such as an icon to be marked up as decorative, if the text alternative is adjacent to the image. This is a [conforming alternative version][] for the image. This fails the rule but meets [conformance requirement 1 of WCAG 2.2](https://www.w3.org/TR/WCAG22/#cc1).
 
 ## Assumptions
 
 - `svg` elements with a [semantic role][] of `graphics-document` and with an empty (`""`) [accessible name][] are ignored by assistive technologies tested for this rule. If some assistive technology does not ignore these elements, and that assistive technology is required for conformance, passing this rule does not ensure all decorative `svg` elements can be ignored, and the [success criterion 1.1.1 Non-text content][] may still not be satisfied. The same is true for `canvas` elements with no [semantic role][] and an empty (`""`) [accessible name][].
 
-- A web page with informative images without an [accessible name][] may conform to WCAG 2.1 Level A when the information provided by that image is available elsewhere on the web page itself. For example if an equivalent text is adjacent to the image, or if the text alternative is included in the [accessible name][] of a parent element.
+- A web page with informative images without an [accessible name][] may conform to WCAG 2.2 Level A when the information provided by that image is available elsewhere on the web page itself. For example if an equivalent text is adjacent to the image, or if the text alternative is included in the [accessible name][] of a parent element.
 
 ## Accessibility Support
 
@@ -63,8 +64,8 @@ There are no accessibility support issues known.
 
 ### Bibliography
 
-- [H67: Using null alt text and no title attribute on img elements for images that AT should ignore](https://www.w3.org/WAI/WCAG21/Techniques/html/H67.html)
-- [Understanding Success Criterion 1.1.1: Non-text Content](https://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html)
+- [H67: Using null alt text and no title attribute on img elements for images that AT should ignore](https://www.w3.org/WAI/WCAG22/Techniques/html/H67.html)
+- [Understanding Success Criterion 1.1.1: Non-text Content](https://www.w3.org/WAI/WCAG22/Understanding/non-text-content.html)
 
 ## Accessibility Requirements Mapping
 
@@ -473,7 +474,7 @@ Content perceivable through sight.
 
 Content is considered _visible_ if making it fully transparent would result in a difference in the pixels rendered for any part of the document that is currently within the viewport or can be brought into the viewport via scrolling.
 
-[Content is defined in WCAG](https://www.w3.org/TR/WCAG21/#dfn-content).
+[Content is defined in WCAG](https://www.w3.org/TR/WCAG22/#dfn-content).
 
 For more details, see [examples of visible](https://act-rules.github.io/pages/examples/visible/).
 
@@ -493,7 +494,7 @@ The _WAI ARIA Specifications_ group both the WAI ARIA W3C Recommendation and ARI
 [ancestor]: https://dom.spec.whatwg.org/#concept-tree-ancestor 'DOM definition of ancestor, 2020/03/06'
 [completely available]: https://html.spec.whatwg.org/#img-all 'HTML definition of Completely available, 2020/03/06'
 [computed]: https://www.w3.org/TR/css-cascade/#computed-value 'CSS definition of computed value'
-[conforming alternative version]: https://www.w3.org/TR/WCAG21/#dfn-conforming-alternate-version 'WCAG definition of Conforming alternative version'
+[conforming alternative version]: https://www.w3.org/TR/WCAG22/#dfn-conforming-alternate-version 'WCAG definition of Conforming alternative version'
 [current request]: https://html.spec.whatwg.org/#current-request 'HTML definition of Current request, 2020/03/06'
 [examples of accessible name]: https://act-rules.github.io/pages/examples/accessible-name/
 [examples of included in the accessibility tree]: https://act-rules.github.io/pages/examples/included-in-the-accessibility-tree/
@@ -506,16 +507,16 @@ The _WAI ARIA Specifications_ group both the WAI ARIA W3C Recommendation and ARI
 [included in the accessibility tree]: #included-in-the-accessibility-tree 'Definition of Included in the accessibility tree'
 [inclusive ancestors]: https://dom.spec.whatwg.org/#concept-tree-inclusive-ancestor 'DOM Definition of Inclusive Ancestor'
 [marked as decorative]: #marked-as-decorative 'Definition of Marked as Decorative'
-[named from author]: https://www.w3.org/TR/wai-aria-1.1/#namecalculation 'WAI-ARIA definition of Named from author'
-[presentational roles conflict resolution]: https://www.w3.org/TR/wai-aria-1.1/#conflict_resolution_presentation_none 'Presentational Roles Conflict Resolution'
+[named from author]: https://www.w3.org/TR/wai-aria-1.2/#namecalculation 'WAI-ARIA definition of Named from author'
+[presentational roles conflict resolution]: https://www.w3.org/TR/wai-aria-1.2/#conflict_resolution_presentation_none 'Presentational Roles Conflict Resolution'
 [programmatically hidden]: #programmatically-hidden 'Definition of Programmatically Hidden'
-[pure decoration]: https://www.w3.org/TR/WCAG21/#dfn-pure-decoration 'WCAG definition of Pure Decoration'
-[purely decorative]: https://www.w3.org/TR/WCAG21/#dfn-pure-decoration 'WCAG definition of Pure decoration'
+[pure decoration]: https://www.w3.org/TR/WCAG22/#dfn-pure-decoration 'WCAG definition of Pure Decoration'
+[purely decorative]: https://www.w3.org/TR/WCAG22/#dfn-pure-decoration 'WCAG definition of Pure decoration'
 [role attribute]: https://www.w3.org/TR/role-attribute/ 'Specification of the role attribute'
 [rules for parsing integers]: https://html.spec.whatwg.org/#rules-for-parsing-integers
 [semantic role]: #semantic-role 'Definition of Semantic Role'
 [sequential focus navigation]: https://html.spec.whatwg.org/multipage/interaction.html#sequential-focus-navigation
-[success criterion 1.1.1 non-text content]: https://www.w3.org/TR/WCAG21/#non-text-content
+[success criterion 1.1.1 non-text content]: https://www.w3.org/TR/WCAG22/#non-text-content
 [tabindex attribute]: https://html.spec.whatwg.org/#attr-tabindex
 [tabindex value]: https://html.spec.whatwg.org/#tabindex-value
 [visible]: #visible 'Definition of Visible'

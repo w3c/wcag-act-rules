@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 2779a5</p>
-  <p><strong>Date:</strong> Updated 9 February 2023</p>
+  <p><strong>Date:</strong> Updated 25 January 2024</p>
   <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/brynanders">Bryn Anderson</a>, <a href="https://github.com/jkodu">Jey Nandakumar</a>, <a href="https://github.com/skotkjerra">Stein Erik Skotkjerra</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -17,9 +17,10 @@ rule_meta:
   id: 2779a5
   name: "HTML page has non-empty title"
   rule_type: atomic
+  original_file: html-page-non-empty-title-2779a5.md
   description: |
     This rule checks that a non-embedded HTML page has a non-empty title.
-  last_modified: 9 February 2023
+  last_modified: 25 January 2024
   scs_tested:
     - handle: Page Titled
       num: 2.4.2
@@ -40,9 +41,9 @@ For each target element, the first [HTML][] `title` element that is a [descendan
 
 ## Assumptions
 
-This rule assumes that [Success Criterion 2.4.2 Page Titled](https://www.w3.org/TR/WCAG21/#page-titled) does not require that a document only has one `title` element, nor that it is a child of the `head` element of a document. While this is invalid in HTML, the HTML 5.2 specification describes what should happen in case of multiple titles, and titles outside the `head` element. Because of this, neither of these validation issues causes a conformance problem for WCAG. Regardless of whether this is required by 2.4.2 Page Titled, failing this rule means the success criterion is not satisfied.
+This rule assumes that [Success Criterion 2.4.2 Page Titled](https://www.w3.org/TR/WCAG22/#page-titled) does not require that a document only has one `title` element, nor that it is a child of the `head` element of a document. While this is invalid in HTML, the HTML 5.2 specification describes what should happen in case of multiple titles, and titles outside the `head` element. Because of this, neither of these validation issues causes a conformance problem for WCAG. Regardless of whether this is required by 2.4.2 Page Titled, failing this rule means the success criterion is not satisfied.
 
-This rule assumes that the title of the page is not provided by a higher-level protocol. For example, the subject field of an email authored in HTML can provide a title without requiring a `title` element. In such a case, this rule will fail while [Success Criterion 2.4.2 Page Titled](https://www.w3.org/TR/WCAG21/#page-titled) may still be satisfied.
+This rule assumes that the title of the page is not provided by a higher-level protocol. For example, the subject field of an email authored in HTML can provide a title without requiring a `title` element. In such a case, this rule will fail while [Success Criterion 2.4.2 Page Titled](https://www.w3.org/TR/WCAG22/#page-titled) may still be satisfied.
 
 ## Accessibility Support
 
@@ -50,17 +51,17 @@ There are no accessibility support issues known.
 
 ## Background
 
-This rule is only applicable to non-embedded HTML pages. HTML pages embedded into other documents, such as through `iframe` or `object` elements are not applicable because they are not [web pages](https://www.w3.org/TR/WCAG21/#dfn-web-page-s) according to the definition in WCAG.
+This rule is only applicable to non-embedded HTML pages. HTML pages embedded into other documents, such as through `iframe` or `object` elements are not applicable because they are not [web pages](https://www.w3.org/TR/WCAG22/#dfn-web-page-s) according to the definition in WCAG.
 
 ### Related rules
 
-- [HTML page title is descriptive](https://www.w3.org/WAI/standards-guidelines/act/rules/c4a8a4/proposed/)
+- [HTML page title is descriptive](https://www.w3.org/WAI/standards-guidelines/act/rules/c4a8a4/)
 
 ### Bibliography
 
-- [Understanding Success Criterion 2.4.2: Page Titled](https://www.w3.org/WAI/WCAG21/Understanding/page-titled)
-- [G88: Providing descriptive titles for Web pages](https://www.w3.org/WAI/WCAG21/Techniques/general/G88)
-- [H25: Providing a title using the title element](https://www.w3.org/WAI/WCAG21/Techniques/html/H25)
+- [Understanding Success Criterion 2.4.2: Page Titled](https://www.w3.org/WAI/WCAG22/Understanding/page-titled)
+- [G88: Providing descriptive titles for Web pages](https://www.w3.org/WAI/WCAG22/Techniques/general/G88)
+- [H25: Providing a title using the title element](https://www.w3.org/WAI/WCAG22/Techniques/html/H25)
 - [HTML Specification - The `title` element](https://html.spec.whatwg.org/#the-title-element)
 
 ## Accessibility Requirements Mapping
@@ -111,6 +112,34 @@ The following aspects are required in using this rule.
 - [DOM Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom)
 
 ## Test Cases
+
+<details class="act-inline-assets" markdown="block">
+<summary><span>These HTML files are used in several examples:</span></summary>
+
+File [`/test-assets/sc2-4-2-title-page-without-title.html`](https://w3.org/WAI/content-assets/wcag-act-rules/test-assets/sc2-4-2-title-page-without-title.html):
+
+```html
+<html>
+	<body>
+		Content
+	</body>
+</html>
+```
+
+File [`/test-assets/sc2-4-2-title-page-with-title.html`](https://w3.org/WAI/content-assets/wcag-act-rules/test-assets/sc2-4-2-title-page-with-title.html):
+
+```html
+<html>
+	<head>
+		<title>Title</title>
+	</head>
+	<body>
+		Content
+	</body>
+</html>
+```
+
+</details>
 
 ### Passed
 
@@ -290,11 +319,11 @@ An _outcome_ is a conclusion that comes from evaluating an ACT Rule on a [test s
 
 ### Web page (HTML) {#web-page-html}
 
-An _HTML [web page](https://www.w3.org/TR/WCAG21/#dfn-web-page-s)_ is the set of all [fully active](https://html.spec.whatwg.org/#fully-active) [documents](https://dom.spec.whatwg.org/#concept-document) which share the same [top-level browsing context](https://html.spec.whatwg.org/#top-level-browsing-context).
+An _HTML [web page](https://www.w3.org/TR/WCAG22/#dfn-web-page-s)_ is the set of all [fully active](https://html.spec.whatwg.org/#fully-active) [documents](https://dom.spec.whatwg.org/#concept-document) which share the same [top-level browsing context](https://html.spec.whatwg.org/#top-level-browsing-context).
 
 **Note:** Nesting of browsing context mostly happens with `iframe` and `object`. Thus a web page will most of the time be a "top-level" document and all its `iframe` and `object` (recursively).
 
-**Note:** [Web pages](https://www.w3.org/TR/WCAG21/#dfn-web-page-s) as defined by WCAG are not restricted to the HTML technology but can also include, _e.g._, PDF or DOCX documents.
+**Note:** [Web pages](https://www.w3.org/TR/WCAG22/#dfn-web-page-s) as defined by WCAG are not restricted to the HTML technology but can also include, _e.g._, PDF or DOCX documents.
 
 **Note:** Although web pages as defined here are sets of [documents](https://dom.spec.whatwg.org/#concept-document) (and do not contain other kind of nodes), one can abusively write that any node is "in a web page" if it is a [shadow-including descendant](https://dom.spec.whatwg.org/#concept-shadow-including-descendant) of a [document](https://dom.spec.whatwg.org/#concept-document) that is part of that web page.
 

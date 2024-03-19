@@ -9,17 +9,18 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 4e8ab6</p>
-  <p><strong>Date:</strong> Updated 7 February 2023</p>
-  <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
+  <p><strong>Date:</strong> Updated 25 January 2024</p>
+  <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, Tom Brunet. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
 rule_meta:
   id: 4e8ab6
   name: "Element with role attribute has required states and properties"
   rule_type: atomic
+  original_file: role-required-states-and-properties-4e8ab6.md
   description: |
     This rule checks that elements that have an explicit role also specify all required states and properties.
-  last_modified: 7 February 2023
+  last_modified: 25 January 2024
 ---
 
 ## Applicability
@@ -32,25 +33,23 @@ For each test target, the [WAI-ARIA required states and properties][] for the ro
 
 ## Assumptions
 
-- The applicability of this rule is limited to [explicit semantic roles][explicit semantic role] based on an assumption that all native HTML and SVG elements have native attributes that are mapped to all of the [WAI-ARIA required states and properties](https://www.w3.org/TR/wai-aria/#requiredState) for the [implicit semantic role][] of the element.
-
-- The ARIA `role` is being used to comply to WCAG.
+- The ARIA `role` is being used to conform to WCAG.
 
 ## Accessibility Support
 
-This rule relies on browsers and assistive technologies to support leaving out [WAI-ARIA required states and properties][] when a [WAI-ARIA implicit value for role][] is specified in [WAI-ARIA Specifications](#wai-aria-specifications).
+This rule relies on browsers and assistive technologies to support leaving out [WAI-ARIA required states and properties][] when a [WAI-ARIA implicit value for role][] is specified in [WAI-ARIA Specifications][].
 
 **Note:** The required states and properties with implicit values can be found in the Core Accessibility API Mappings 1.1 [Overview of default values for missing required attributes](https://www.w3.org/TR/core-aam-1.1/#authorErrorDefaultValuesTable).
 
 ## Background
 
-Omitting required ARIA properties is often the result of a developer error. When required properties are missing some browsers and assistive technologies will guess the property, or leave the element inaccessible. This can cause issues under [success criterion 1.3.1 Info and Relationships][sc131] or [4.1.2 Name, Rule Value][sc412].
+Omitting [WAI-ARIA required states and properties][] is often the result of a developer error. When required properties are missing and a default value is not specified by [WAI-ARIA Specifications][], the behavior is not defined. For [WAI-ARIA 1.2][], the only [explicit semantic roles][explicit semantic role] with a required property with a default value are the `option` and `tabs roles` for the `aria-selected` property.
 
-This rule is testing author built components, not user-agent built ones. Elements that keep their [implicit semantic role][] are mapped into conforming accessible objects, with all required properties, by user agents and are therefore not tested by this rule. Most of these mappings are defined in the [HTML Accessibility API Mappings, Attribute State and Property Mappings](https://www.w3.org/TR/html-aam-1.0/#html-attribute-state-and-property-mappings).
+This rule is testing author built components that specify [explicit semantic roles][explicit semantic role] and not components that keep their [implicit semantic role][]. For components that keep their [implicit semantic role][], all native HTML and SVG elements have native attributes that are mapped to all of the [WAI-ARIA required states and properties](https://www.w3.org/TR/wai-aria/#requiredState). Most of these mappings are defined in the [HTML Accessibility API Mappings, Attribute State and Property Mappings][html aam].
 
 ### Bibliography
 
-- [ARIA5: Using WAI-ARIA state and property attributes to expose the state of a user interface component](https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA5)
+- [ARIA5: Using WAI-ARIA state and property attributes to expose the state of a user interface component](https://www.w3.org/WAI/WCAG22/Techniques/aria/ARIA5)
 - [WAI-ARIA required states and properties](https://www.w3.org/TR/wai-aria-1.2/#requiredState)
 - [RFC 3986](https://www.ietf.org/rfc/rfc3986.txt)
 
@@ -70,31 +69,18 @@ This rule is testing author built components, not user-agent built ones. Element
     </ul>
   </details></li>
   <li>This rule is <strong>not required</strong> for conformance to WCAG 2.1 at any level.</li>
-  <li><details>
-    <summary><span>1.3.1 Info and Relationships (Level A)</span></summary>
-    <ul>
-      <li><a href="https://www.w3.org/TR/WCAG21/#info-and-relationships">Learn more about 1.3.1 Info and Relationships</a></li>
-      <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level A and higher.</li>
-      <li>Outcome mapping: <ul>
-        <li>Any <code>failed</code> outcomes: success criterion is not satisfied</li>
-        <li>All <code>passed</code> outcomes: success criterion </li>
-        <li>An <code>inapplicable</code> outcome: success criterion </li>
-      </ul></li>
-    </ul>
-  </details></li>
-  <li><details>
-    <summary><span>4.1.2 Name, Role, Value (Level A)</span></summary>
-    <ul>
-      <li><a href="https://www.w3.org/TR/WCAG21/#name-role-value">Learn more about 4.1.2 Name, Role, Value</a></li>
-      <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level A and higher.</li>
-      <li>Outcome mapping: <ul>
-        <li>Any <code>failed</code> outcomes: success criterion is not satisfied</li>
-        <li>All <code>passed</code> outcomes: success criterion </li>
-        <li>An <code>inapplicable</code> outcome: success criterion </li>
-      </ul></li>
-    </ul>
-  </details></li>
 </ul>
+
+### Secondary Requirements
+
+This rule is related to the following accessibility requirements, but was 
+not designed to test this requirements directly. These 
+[secondary requirements](https://w3c.github.io/wcag-act/act-rules-format.html#secondary-requirements)
+can either be stricter than the rule requires, or may be satisfied in ways 
+not tested by the rule:
+
+- [1.3.1 Info and Relationships (Level A)](https://www.w3.org/TR/WCAG21/#info-and-relationships): This success criterion is **less strict** than this rule. This is because browsers and assistive technologies will often fall back on a non-standard default value, which may be sufficient. Some of the failed examples may satisfy this success criterion.
+- [4.1.2 Name, Role, Value (Level A)](https://www.w3.org/TR/WCAG21/#name-role-value): This success criterion is **less strict** than this rule. This is because browsers and assistive technologies will often fall back on a non-standard default value, which may be sufficient. Some of the failed examples may satisfy this success criterion.
 
 ## Input Aspects
 
@@ -120,12 +106,12 @@ This `heading` has the required `aria-level` property.
 
 #### Passed Example 2
 
-<a class="example-link" title="Passed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/f3c5ba4e097be5eee694024808a962972f037670.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/5b39aa37000933c7b9a766970b829ce5fada62d6.html">Open in a new tab</a>
 
 This `checkbox` has the required `aria-checked` property.
 
 ```html
-<div role="checkbox" aria-checked="false"></div>
+<div role="checkbox" aria-checked="false" aria-labelledby="label"></div>
 <div id="label">Check me</div>
 ```
 
@@ -400,6 +386,7 @@ The _WAI ARIA Specifications_ group both the WAI ARIA W3C Recommendation and ARI
 [explicit semantic role]: #explicit-role 'Definition of explicit semantic role'
 [flat tree]: https://drafts.csswg.org/css-scoping/#flat-tree 'Definition of flat tree'
 [focusable]: #focusable
+[html aam]: https://www.w3.org/TR/html-aam-1.0/#html-attribute-state-and-property-mappings 'Specification of HTML attributes value mapping to ARIA states and properties'
 [html namespaces]: https://infra.spec.whatwg.org/#namespaces 'HTML namespace, 2021/05/31'
 [html or svg element]: #namespaced-element
 [implicit role]: #implicit-role 'Definition of Implicit Role'
@@ -408,17 +395,15 @@ The _WAI ARIA Specifications_ group both the WAI ARIA W3C Recommendation and ARI
 [inclusive ancestors]: https://dom.spec.whatwg.org/#concept-tree-inclusive-ancestor 'DOM Definition of Inclusive Ancestor'
 [marked as decorative]: #marked-as-decorative 'Definition of Marked as Decorative'
 [namespaceuri]: https://dom.spec.whatwg.org/#dom-element-namespaceuri 'DOM Element namespaceURI, 2021/05/31'
-[presentational roles conflict resolution]: https://www.w3.org/TR/wai-aria-1.1/#conflict_resolution_presentation_none 'Presentational Roles Conflict Resolution'
+[presentational roles conflict resolution]: https://www.w3.org/TR/wai-aria-1.2/#conflict_resolution_presentation_none 'Presentational Roles Conflict Resolution'
 [programmatically hidden]: #programmatically-hidden 'Definition of Programmatically Hidden'
-[pure decoration]: https://www.w3.org/TR/WCAG21/#dfn-pure-decoration 'WCAG definition of Pure Decoration'
+[pure decoration]: https://www.w3.org/TR/WCAG22/#dfn-pure-decoration 'WCAG definition of Pure Decoration'
 [role attribute]: https://www.w3.org/TR/role-attribute/ 'Specification of the role attribute'
 [rules for parsing integers]: https://html.spec.whatwg.org/#rules-for-parsing-integers
-[sc131]: https://www.w3.org/TR/WCAG21/#info-and-relationships
-[sc412]: https://www.w3.org/TR/WCAG21/#name-role-value
 [sequential focus navigation]: https://html.spec.whatwg.org/multipage/interaction.html#sequential-focus-navigation
 [tabindex attribute]: https://html.spec.whatwg.org/#attr-tabindex
 [tabindex value]: https://html.spec.whatwg.org/#tabindex-value
 [wai-aria 1.2]: https://www.w3.org/TR/wai-aria-1.2/
 [wai-aria implicit value for role]: https://www.w3.org/TR/wai-aria-1.2/#implictValueForRole
 [wai-aria required states and properties]: https://www.w3.org/TR/wai-aria-1.2/#requiredState
-[wai-aria specifications]: #wai-aria-specifications 'Definition of WAI-ARIA specifications'
+[wai-aria specifications]: #wai-aria-specifications 'Definition of WAI-ARIA Specifications'

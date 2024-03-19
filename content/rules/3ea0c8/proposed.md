@@ -9,17 +9,23 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 3ea0c8</p>
-  <p><strong>Date:</strong> Updated 14 November 2022</p>
+  <p><strong>Date:</strong> Updated 25 January 2024</p>
   <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/brynanders">Bryn Anderson</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
+deprecated: |
+  This rule has been deprecated because success criterion 4.1.1 has 
+  been removed in WCAG 2.2 and for WCAG 2.1 and 2.0 should be 
+  considered to always pass.
+  
 rule_meta:
   id: 3ea0c8
   name: "Id attribute value is unique"
   rule_type: atomic
+  original_file: id-value-unique-3ea0c8.md
   description: |
     This rule checks that all `id` attribute values on a single page are unique.
-  last_modified: 14 November 2022
+  last_modified: 25 January 2024
   scs_tested:
     - handle: Parsing
       num: 4.1.1
@@ -48,8 +54,8 @@ There are no accessibility support issues known.
 
 ### Bibliography
 
-- [Understanding Success Criterion 4.1.1: Parsing](https://www.w3.org/WAI/WCAG21/Understanding/parsing)
-- [H93: Ensuring that id attributes are unique on a Web page](https://www.w3.org/WAI/WCAG21/Techniques/html/H93)
+- [Understanding Success Criterion 4.1.1: Parsing](https://www.w3.org/WAI/WCAG22/Understanding/parsing)
+- [H93: Ensuring that id attributes are unique on a Web page](https://www.w3.org/WAI/WCAG22/Techniques/html/H93)
 
 ## Accessibility Requirements Mapping
 
@@ -286,7 +292,7 @@ Content perceivable through sight.
 
 Content is considered _visible_ if making it fully transparent would result in a difference in the pixels rendered for any part of the document that is currently within the viewport or can be brought into the viewport via scrolling.
 
-[Content is defined in WCAG](https://www.w3.org/TR/WCAG21/#dfn-content).
+[Content is defined in WCAG](https://www.w3.org/TR/WCAG22/#dfn-content).
 
 For more details, see [examples of visible](https://act-rules.github.io/pages/examples/visible/).
 

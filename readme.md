@@ -6,22 +6,18 @@ Preview: https://wai-wcag-act-rules.netlify.app/
 WAI Website Manual: https://wai-website-theme.netlify.com/overview/
 WAI Website issue tracker: https://github.com/w3c/wai-wcag-supporting-documents-redesign/issues/
 
-## Adding New Approved Rules
+## Set a rule to approved
 
-1. Using [act-tools](https://github.com/act-rules/act-tools), run rule-transform with the ruleId, without the --proposed flag
-2. Update `_data/wcag-act-rules/rule-versions.yml`
-    - Add the proposed.md and index.md files for the rule
-3. Update `content-assets/wcag-act-rules/testcases.json`
-    - On each test case for the rule, add `"approved": true`
+1. Go to the [Set a rule to approved](https://github.com/act-rules/act-rules.github.io/actions/workflows/approve-rule.yml) GitHub Action.
+2. Open "Run workflow", fill in the Rule ID, and optionally a branch. WHen updating a rule that has been approved before, fill in a list of one or more changes from the previously approves rule version. 
+3. Click "Run Workflow" and wait until it complets
+4. Go to [wcag-act-rules Pull Requests](https://github.com/w3c/wcag-act-rules/pulls) and open a pull request from the branch that was created by the GitHub action.
 
-## Updating An Approved Rule
+The branch can be appended to, so you can run the same action more than once with the same branch to add multiple approvals to the same pull request.
 
-1. Rename `index.md` to `{yyyy-mm-dd}.md` with the date from `last_modified`
-    - Update its `permalink`, `ref`, and `github.path` fields
-2. Using [act-tools](https://github.com/act-rules/act-tools), run rule-transform with the ruleId, without the --proposed flag
-3. Update `_data/wcag-act-rules/rule-versions.yml`
-    - Rename the `index.md` item to `{yyyy-mm-dd}.md` for the rule
-    - Add a new `index.md` for the rule, including a new `changes` property
-4. Update `content-assets/wcag-act-rules/testcases.json`
-    - Delete existing approved test cases
-    - Add test cases of updated rule as "approved"
+## Deprecating an approved rule
+
+1. Remove the index.md file
+2. Remove the rule from `rule-versions.yml`
+3. Remove test cases from testcases.json (if any)
+4. Set the rule to "proposed" in wcag-mapping.json

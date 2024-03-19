@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 8fc3b6</p>
-  <p><strong>Date:</strong> Updated 11 November 2022</p>
+  <p><strong>Date:</strong> Updated 25 January 2024</p>
   <p><strong>Authors:</strong> <a href="https://github.com/AntonioEstriga">António Estriga</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
   
@@ -19,9 +19,10 @@ rule_meta:
   id: 8fc3b6
   name: "Object element rendering non-text content has non-empty accessible name"
   rule_type: atomic
+  original_file: object-has-accessible-name-8fc3b6.md
   description: |
     This rule checks that each `object` element rendering non-text content has a non-empty accessible name.
-  last_modified: 11 November 2022
+  last_modified: 25 January 2024
   scs_tested:
     - handle: Non-text Content
       num: 1.1.1
@@ -62,7 +63,7 @@ When the object resource is not loaded, the fallback content is rendered as show
 
 ### Bibliography
 
-- [Understanding Success Criterion 1.1.1: Non-text Content](https://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html)
+- [Understanding Success Criterion 1.1.1: Non-text Content](https://www.w3.org/WAI/WCAG22/Understanding/non-text-content.html)
 
 ## Accessibility Requirements Mapping
 
@@ -90,6 +91,27 @@ The following aspects are required in using this rule.
 - [Accessibility Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-accessibility)
 
 ## Test Cases
+
+<details class="act-inline-assets" markdown="block">
+<summary><span>This HTML file is used in several examples:</span></summary>
+
+File [`/test-assets/shared/index.html`](https://w3.org/WAI/content-assets/wcag-act-rules/test-assets/shared/index.html):
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>My University</title>
+	</head>
+	<body>
+		<h1>Welcome to My University</h1>
+		<p>We are currently working on getting our website up and running.</p>
+	</body>
+</html>
+```
+
+</details>
 
 ### Passed
 
@@ -400,9 +422,9 @@ The _WAI ARIA Specifications_ group both the WAI ARIA W3C Recommendation and ARI
 [inclusive ancestors]: https://dom.spec.whatwg.org/#concept-tree-inclusive-ancestor 'DOM Definition of Inclusive Ancestor'
 [marked as decorative]: #marked-as-decorative 'Definition of Marked as decorative'
 [mime type]: https://mimesniff.spec.whatwg.org/#mime-type-groups 'MIME Sniffing - Living Standard, 2022/01/17'
-[presentational roles conflict resolution]: https://www.w3.org/TR/wai-aria-1.1/#conflict_resolution_presentation_none 'Presentational Roles Conflict Resolution'
+[presentational roles conflict resolution]: https://www.w3.org/TR/wai-aria-1.2/#conflict_resolution_presentation_none 'Presentational Roles Conflict Resolution'
 [programmatically hidden]: #programmatically-hidden 'Definition of Programmatically Hidden'
-[pure decoration]: https://www.w3.org/TR/WCAG21/#dfn-pure-decoration 'WCAG definition of Pure Decoration'
+[pure decoration]: https://www.w3.org/TR/WCAG22/#dfn-pure-decoration 'WCAG definition of Pure Decoration'
 [role attribute]: https://www.w3.org/TR/role-attribute/ 'Specification of the role attribute'
 [rules for parsing integers]: https://html.spec.whatwg.org/#rules-for-parsing-integers
 [sequential focus navigation]: https://html.spec.whatwg.org/multipage/interaction.html#sequential-focus-navigation

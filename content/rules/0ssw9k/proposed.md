@@ -1,5 +1,5 @@
 ---
-title: "Scrollable element is keyboard accessible"
+title: "Scrollable content can be reached with sequential focus navigation"
 permalink: /standards-guidelines/act/rules/0ssw9k/proposed/
 ref: /standards-guidelines/act/rules/0ssw9k/proposed/
 lang: en
@@ -9,21 +9,25 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 0ssw9k</p>
-  <p><strong>Date:</strong> Updated 16 January 2023</p>
+  <p><strong>Date:</strong> Updated 25 January 2024</p>
   <p><strong>Authors:</strong> <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
 rule_meta:
   id: 0ssw9k
-  name: "Scrollable element is keyboard accessible"
+  name: "Scrollable content can be reached with sequential focus navigation"
   rule_type: atomic
+  original_file: scrollable-element-keyboard-accessible-0ssw9k.md
   description: |
-    This rule checks that scrollable elements can be scrolled by keyboard
-  last_modified: 16 January 2023
+    This rule checks that scrollable elements or their descendants can be reached with sequential focus navigation so that they can be scrolled by keyboard
+  last_modified: 25 January 2024
   scs_tested:
     - handle: Keyboard
       num: 2.1.1
       level: A
+    - handle: Keyboard (No Exception)
+      num: 2.1.3
+      level: AAA
 ---
 
 ## Applicability
@@ -51,12 +55,12 @@ Some browsers restrict scrolling to the [content box](https://drafts.csswg.org/c
 
 To ensure there is some element from which arrow keys can be used to control the scroll position, focus must be on or in a scrollable region. If scripts are used to prevent the keyboard events from reaching the scrollable region, this could still cause a keyboard accessibility issue. This must be tested separately.
 
-This rule only applies to elements who scroll content in the same document. Elements such as iframes that embed other documents may also be scrollable, but for them it is the embedded document that scrolls, not the content in the same document. Such scenarios are tested separately with rules such as [Iframe with negative tabindex has no interactive elements](https://www.w3.org/WAI/standards-guidelines/act/rules/akn7bn/proposed/).
+This rule only applies to elements who scroll content in the same document. Elements such as iframes that embed other documents may also be scrollable, but for them it is the embedded document that scrolls, not the content in the same document. Such scenarios are tested separately with rules such as [Iframe with negative tabindex has no interactive elements](https://www.w3.org/WAI/standards-guidelines/act/rules/akn7bn/).
 
 ### Bibliography
 
-- [Understanding Success Criterion 2.1.1: Keyboard](https://www.w3.org/WAI/WCAG21/Understanding/keyboard.html)
-- [G202: Ensuring keyboard control for all functionality](https://www.w3.org/WAI/WCAG21/Techniques/general/G202)
+- [Understanding Success Criterion 2.1.1: Keyboard](https://www.w3.org/WAI/WCAG22/Understanding/keyboard.html)
+- [G202: Ensuring keyboard control for all functionality](https://www.w3.org/WAI/WCAG22/Techniques/general/G202)
 
 ## Accessibility Requirements Mapping
 
@@ -133,14 +137,14 @@ This [scrollable][] `section` element is included in [sequential focus navigatio
 
 #### Passed Example 2
 
-<a class="example-link" title="Passed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/0ssw9k/305891f137b5927d99e74aa1efe9997e4a8a2803.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/0ssw9k/270a22a8e4ce4d9f073e1484a0d807705207a1d7.html">Open in a new tab</a>
 
 This [scrollable][] `section` element contains a link that is included in [sequential focus navigation][].
 
 ```html
 <section style="height: 100px; width: 500px; overflow: scroll;">
 	<h1>
-		<a href="https://www.w3.org/TR/WCAG21/#abstract">
+		<a href="https://www.w3.org/TR/WCAG22/#abstract">
 			WCAG 2.1 Abstract
 		</a>
 	</h1>
@@ -235,14 +239,14 @@ This `section` element has a [computed][] [overflow][] of `visible`. Because of 
 
 #### Inapplicable Example 2
 
-<a class="example-link" title="Inapplicable Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/0ssw9k/997b49af2f0596bb505c7cbbfd501c0f2fa393a5.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/0ssw9k/a7da5f9dbc260d633787386b6041c70cb9fbdc32.html">Open in a new tab</a>
 
 This `section` element has a [scroll distance][scrollable] of 0 in both directions.
 
 ```html
 <section style="height: 95px; width: 500px; overflow: auto;">
 	<p>
-		<a href="https://www.w3.org/TR/WCAG21/#abstract">
+		<a href="https://www.w3.org/TR/WCAG22/#abstract">
 			WCAG 2.1 Abstract
 		</a>
 	</p>
@@ -251,13 +255,13 @@ This `section` element has a [scroll distance][scrollable] of 0 in both directio
 
 #### Inapplicable Example 3
 
-<a class="example-link" title="Inapplicable Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/0ssw9k/d7f9b0ca63b41bfc560c867696744a14f8590394.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/0ssw9k/345fec9a44fb17add404996fe985e87d884f55d0.html">Open in a new tab</a>
 
 This `section` element is not [scrollable][] because it has a [computed][] [overflow][] of `hidden`.
 
 ```html
 <h1>
-	<a href="https://www.w3.org/TR/WCAG21/#abstract">
+	<a href="https://www.w3.org/TR/WCAG22/#abstract">
 		WCAG 2.1 Abstract
 	</a>
 </h1>
@@ -310,12 +314,12 @@ This `section` element has a [horizontal scroll distance][scrollable] that is le
 
 #### Inapplicable Example 6
 
-<a class="example-link" title="Inapplicable Example 6" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/0ssw9k/dd5ca5252dacc6d5e0fabb30e92633b284336832.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 6" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/0ssw9k/349a8b4b881ab5380ed63e4e0d8e26d8bd1ad025.html">Open in a new tab</a>
 
 This `iframe` element is not a scrollable element, but instead contains a nested browsing context that is scrollable. These must be tested separately.
 
 ```html
-<iframe src="https://www.w3.org/TR/WCAG21/#abstract" width="500" height="200"></iframe>
+<iframe src="https://www.w3.org/TR/WCAG22/#abstract" width="500" height="200"></iframe>
 ```
 
 ## Glossary
@@ -371,7 +375,7 @@ Content perceivable through sight.
 
 Content is considered _visible_ if making it fully transparent would result in a difference in the pixels rendered for any part of the document that is currently within the viewport or can be brought into the viewport via scrolling.
 
-[Content is defined in WCAG](https://www.w3.org/TR/WCAG21/#dfn-content).
+[Content is defined in WCAG](https://www.w3.org/TR/WCAG22/#dfn-content).
 
 For more details, see [examples of visible](https://act-rules.github.io/pages/examples/visible/).
 
@@ -401,13 +405,13 @@ For more details, see [examples of visible](https://act-rules.github.io/pages/ex
 [padding-right]: https://www.w3.org/TR/CSS22/box.html#propdef-padding-right
 [padding-top]: https://www.w3.org/TR/CSS22/box.html#propdef-padding-top
 [padding]: https://www.w3.org/TR/CSS22/box.html#propdef-padding
-[purely decorative]: https://www.w3.org/TR/WCAG21/#dfn-pure-decoration
+[purely decorative]: https://www.w3.org/TR/WCAG22/#dfn-pure-decoration
 [reflect]: https://html.spec.whatwg.org/multipage/common-dom-interfaces.html#reflecting-content-attributes-in-idl-attributes 'HTML specification of Reflecting Content Attributes in IDL Attributes'
 [scrollable]: #scrollable-element
 [scrollheight]: https://www.w3.org/TR/cssom-view/#dom-element-scrollheight 'CSS working draft, Element.clientHeight, 2020/04/03'
 [scrollwidth]: https://www.w3.org/TR/cssom-view/#dom-element-scrollwidth 'CSS working draft, Element.scrollHeight, 2020/04/03'
 [sequential focus navigation]: https://html.spec.whatwg.org/multipage/interaction.html#sequential-focus-navigation 'HTML sequential focus navigation, 2020/04/03'
 [space separated]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#space-separated-tokens 'HTML Specification of Space Separated Tokens'
-[success criterion 2.1.1 keyboard]: https://www.w3.org/TR/WCAG21/#keyboard
+[success criterion 2.1.1 keyboard]: https://www.w3.org/TR/WCAG22/#keyboard
 [visible]: #visible
-[wai-aria specification]: https://www.w3.org/TR/wai-aria-1.1/#propcharacteristic_value 'WAI-ARIA Specification of States and Properties Value'
+[wai-aria specification]: https://www.w3.org/TR/wai-aria-1.2/#propcharacteristic_value 'WAI-ARIA Specification of States and Properties Value'

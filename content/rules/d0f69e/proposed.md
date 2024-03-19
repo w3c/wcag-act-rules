@@ -9,17 +9,18 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> d0f69e</p>
-  <p><strong>Date:</strong> Updated 11 November 2022</p>
-  <p><strong>Authors:</strong> <a href="https://github.com/audreymaniez">Audrey Maniez</a>, <a href="https://github.com/jkodu">Jey Nandakumar</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
+  <p><strong>Date:</strong> Updated 25 January 2024</p>
+  <p><strong>Authors:</strong> <a href="https://github.com/audreymaniez">Audrey Maniez</a>, Helen Burge, <a href="https://github.com/jkodu">Jey Nandakumar</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
 rule_meta:
   id: d0f69e
   name: "Table header cell has assigned cells"
   rule_type: atomic
+  original_file: table-header-cell-has-assigned-cells-d0f69e.md
   description: |
     This rule checks that each table header has assigned cells in a table element.
-  last_modified: 11 November 2022
+  last_modified: 25 January 2024
   scs_tested:
     - handle: Info and Relationships
       num: 1.3.1
@@ -55,7 +56,7 @@ The roles inheriting from `cell` are `columnheader`, `gridcell`, and `rowheader`
 ### Bibliography
 
 - [Understanding Success Criterion 1.3.1: Information and relationships][sc1.3.1]
-- [H43: Using id and headers attributes to associate data cells with header cells in data tables](https://www.w3.org/WAI/WCAG21/Techniques/html/H43)
+- [H43: Using id and headers attributes to associate data cells with header cells in data tables](https://www.w3.org/WAI/WCAG22/Techniques/html/H43)
 - [Forming relationships between data cells and header cells][assigned]
 
 ## Accessibility Requirements Mapping
@@ -155,14 +156,14 @@ Each of the 2 `th` elements has an assigned `td` element because this `td` eleme
 
 #### Passed Example 4
 
-<a class="example-link" title="Passed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/d0f69e/0f66b15e6d2430e9afbdd6dc579023ece171b278.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/d0f69e/7240c687f37a56254b1847ae6d75e5d4090bd8a5.html">Open in a new tab</a>
 
 Each of the 4 `th` elements has an assigned `td` element, within the same `table` element having a [semantic role][] of `grid`.
 
 ```html
 <table role="grid">
 	<thead>
-		<tr role="row">
+		<tr>
 			<td></td>
 			<th scope="col" role="columnheader">Breakfast</th>
 			<th scope="col" role="columnheader">Lunch</th>
@@ -170,7 +171,7 @@ Each of the 4 `th` elements has an assigned `td` element, within the same `table
 		</tr>
 	</thead>
 	<tbody>
-		<tr role="row">
+		<tr>
 			<th scope="row" role="rowheader">Day 1</th>
 			<td>8:00</td>
 			<td>13:00</td>
@@ -504,7 +505,7 @@ Content perceivable through sight.
 
 Content is considered _visible_ if making it fully transparent would result in a difference in the pixels rendered for any part of the document that is currently within the viewport or can be brought into the viewport via scrolling.
 
-[Content is defined in WCAG](https://www.w3.org/TR/WCAG21/#dfn-content).
+[Content is defined in WCAG](https://www.w3.org/TR/WCAG22/#dfn-content).
 
 For more details, see [examples of visible](https://act-rules.github.io/pages/examples/visible/).
 
@@ -518,11 +519,11 @@ The _WAI ARIA Specifications_ group both the WAI ARIA W3C Recommendation and ARI
 
 **Note:** depending on the type of content being evaluated, part of the specifications might be irrelevant and should be ignored.
 
-[abstract]: https://www.w3.org/TR/wai-aria-1.1/#isAbstract 'ARIA Definition for Abstract Roles'
+[abstract]: https://www.w3.org/TR/wai-aria-1.2/#isAbstract 'ARIA Definition for Abstract Roles'
 [accessibility support base line]: https://www.w3.org/TR/WCAG-EM/#step1c 'Definition of accessibility support base line'
 [assigned]: https://html.spec.whatwg.org/multipage/tables.html#header-and-data-cell-semantics 'Forming relationships between data cells and header cells'
-[cell]: https://www.w3.org/TR/wai-aria-1.1/#cell 'ARIA cell role'
-[columnheader]: https://www.w3.org/TR/wai-aria-1.1/#columnheader 'ARIA columnheader role'
+[cell]: https://www.w3.org/TR/wai-aria-1.2/#cell 'ARIA cell role'
+[columnheader]: https://www.w3.org/TR/wai-aria-1.2/#columnheader 'ARIA columnheader role'
 [computed]: https://www.w3.org/TR/css-cascade/#computed-value 'CSS definition of computed value'
 [doc-biblioref]: https://www.w3.org/TR/dpub-aria-1.0/#doc-biblioref 'DPUB ARIA Definition of doc-biblioref'
 [element]: https://dom.spec.whatwg.org/#element 'DOM element, 2021/05/31'
@@ -530,7 +531,7 @@ The _WAI ARIA Specifications_ group both the WAI ARIA W3C Recommendation and ARI
 [explicit role]: #explicit-role 'Definition of Explicit Role'
 [flat tree]: https://drafts.csswg.org/css-scoping/#flat-tree 'Definition of flat tree'
 [focusable]: #focusable 'Definition of Focusable'
-[grid]: https://www.w3.org/TR/wai-aria-1.1/#grid 'ARIA grid role'
+[grid]: https://www.w3.org/TR/wai-aria-1.2/#grid 'ARIA grid role'
 [html element]: #namespaced-element
 [html namespaces]: https://infra.spec.whatwg.org/#namespaces 'HTML namespace, 2021/05/31'
 [implicit role]: #implicit-role 'Definition of Implicit Role'
@@ -540,17 +541,17 @@ The _WAI ARIA Specifications_ group both the WAI ARIA W3C Recommendation and ARI
 [link]: https://www.w3.org/TR/wai-aria/#link 'ARIA Definition of the link Role'
 [marked as decorative]: #marked-as-decorative 'Definition of Marked as Decorative'
 [namespaceuri]: https://dom.spec.whatwg.org/#dom-element-namespaceuri 'DOM Element namespaceURI, 2021/05/31'
-[presentational roles conflict resolution]: https://www.w3.org/TR/wai-aria-1.1/#conflict_resolution_presentation_none 'Presentational Roles Conflict Resolution'
+[presentational roles conflict resolution]: https://www.w3.org/TR/wai-aria-1.2/#conflict_resolution_presentation_none 'Presentational Roles Conflict Resolution'
 [programmatically hidden]: #programmatically-hidden 'Definition of Programmatically Hidden'
-[pure decoration]: https://www.w3.org/TR/WCAG21/#dfn-pure-decoration 'WCAG definition of Pure Decoration'
+[pure decoration]: https://www.w3.org/TR/WCAG22/#dfn-pure-decoration 'WCAG definition of Pure Decoration'
 [role attribute]: https://www.w3.org/TR/role-attribute/ 'Specification of the role attribute'
-[rowheader]: https://www.w3.org/TR/wai-aria-1.1/#rowheader 'ARIA rowheader role'
+[rowheader]: https://www.w3.org/TR/wai-aria-1.2/#rowheader 'ARIA rowheader role'
 [rules for parsing integers]: https://html.spec.whatwg.org/#rules-for-parsing-integers
-[sc1.3.1]: https://www.w3.org/WAI/WCAG21/Understanding/info-and-relationships.html 'Understanding Success Criterion 1.3.1: Info and Relationships'
+[sc1.3.1]: https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships.html 'Understanding Success Criterion 1.3.1: Info and Relationships'
 [semantic role]: #semantic-role 'Definition of semantic role'
 [sequential focus navigation]: https://html.spec.whatwg.org/multipage/interaction.html#sequential-focus-navigation
 [tabindex attribute]: https://html.spec.whatwg.org/#attr-tabindex
 [tabindex value]: https://html.spec.whatwg.org/#tabindex-value
-[table]: https://www.w3.org/TR/wai-aria-1.1/#table 'ARIA table role'
+[table]: https://www.w3.org/TR/wai-aria-1.2/#table 'ARIA table role'
 [visible]: #visible 'Definition of visible'
 [wai-aria specifications]: #wai-aria-specifications 'Definition of WAI-ARIA specifications'

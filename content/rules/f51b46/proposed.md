@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> f51b46</p>
-  <p><strong>Date:</strong> Updated 2 February 2023</p>
+  <p><strong>Date:</strong> Updated 25 January 2024</p>
   <p><strong>Authors:</strong> <a href="https://www.linkedin.com/in/brianbors/">Brian Bors</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
   
@@ -19,9 +19,10 @@ rule_meta:
   id: f51b46
   name: "Video element auditory content has captions"
   rule_type: atomic
+  original_file: video-captions-f51b46.md
   description: |
     This rule checks that captions are available for audio information in non-streaming `video` elements.
-  last_modified: 2 February 2023
+  last_modified: 25 January 2024
 ---
 
 ## Applicability
@@ -30,7 +31,7 @@ This rule applies to every [non-streaming](#non-streaming-media-element) `video`
 
 ## Expectation
 
-For each test target, audio information that is not conveyed visually in the video, is available through [captions](https://www.w3.org/TR/WCAG21/#dfn-captions).
+For each test target, audio information that is not conveyed visually in the video, is available through [captions](https://www.w3.org/TR/WCAG22/#dfn-captions).
 
 **Note:** Captions can be either embedded in the video file itself or can be made available trough a separate track.
 
@@ -46,10 +47,10 @@ There are no accessibility support issues known.
 
 ### Bibliography
 
-- [Understanding Success Criterion 1.2.2: Captions (Prerecorded)](https://www.w3.org/WAI/WCAG21/Understanding/captions-prerecorded)
-- [G93: Providing open (always visible) captions](https://www.w3.org/WAI/WCAG21/Techniques/general/G93)
-- [G87: Providing closed captions](https://www.w3.org/WAI/WCAG21/Techniques/general/G87)
-- [H95: Using the track element to provide captions](https://www.w3.org/WAI/WCAG21/Techniques/html/H95)
+- [Understanding Success Criterion 1.2.2: Captions (Prerecorded)](https://www.w3.org/WAI/WCAG22/Understanding/captions-prerecorded)
+- [G93: Providing open (always visible) captions](https://www.w3.org/WAI/WCAG22/Techniques/general/G93)
+- [G87: Providing closed captions](https://www.w3.org/WAI/WCAG22/Techniques/general/G87)
+- [H95: Using the track element to provide captions](https://www.w3.org/WAI/WCAG22/Techniques/html/H95)
 
 ## Accessibility Requirements Mapping
 
@@ -92,13 +93,23 @@ There are no accessibility support issues known.
   </details></li>
 </ul>
 
+### Secondary Requirements
+
+This rule is related to the following accessibility requirements, but was 
+not designed to test this requirements directly. These 
+[secondary requirements](https://w3c.github.io/wcag-act/act-rules-format.html#secondary-requirements)
+can either be stricter than the rule requires, or may be satisfied in ways 
+not tested by the rule:
+
+- [1.2.1 Audio-only and Video-only (Prerecorded) (Level A)](https://www.w3.org/TR/WCAG21/#audio-only-and-video-only-prerecorded): This success criterion is **less strict** than this rule. This is because the rule does not consider that the video may be a media alternative for text. Some of the failed examples satisfy this success criterion.
+
 ## Input Aspects
 
 The following aspects are required in using this rule.
 
 - [DOM Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom)
 - [CSS Styling](https://www.w3.org/TR/act-rules-aspects/#input-aspects-css)
-- Audio output (no link available)
+- [Audio output](https://www.w3.org/TR/act-rules-aspects/#input-aspects-audio-out)
 - Visual output (no link available)
 
 ## Test Cases
@@ -231,7 +242,7 @@ Content perceivable through sight.
 
 Content is considered _visible_ if making it fully transparent would result in a difference in the pixels rendered for any part of the document that is currently within the viewport or can be brought into the viewport via scrolling.
 
-[Content is defined in WCAG](https://www.w3.org/TR/WCAG21/#dfn-content).
+[Content is defined in WCAG](https://www.w3.org/TR/WCAG22/#dfn-content).
 
 For more details, see [examples of visible](https://act-rules.github.io/pages/examples/visible/).
 

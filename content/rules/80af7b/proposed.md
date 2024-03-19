@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 80af7b</p>
-  <p><strong>Date:</strong> Updated 31 January 2023</p>
+  <p><strong>Date:</strong> Updated 25 January 2024</p>
   <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/DagfinnRomen">Dagfinn Rømen</a>, <a href="https://github.com/geirsf">Geir Sindre Fossøy</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -17,9 +17,10 @@ rule_meta:
   id: 80af7b
   name: "Focusable element has no keyboard trap"
   rule_type: composite
+  original_file: focusable-no-keyboard-trap-80af7b.md
   description: |
     This rule checks for keyboard traps. This includes use of both standard and non-standard keyboard navigation to navigate through all content without becoming trapped.
-  last_modified: 31 January 2023
+  last_modified: 25 January 2024
   scs_tested:
     - handle: No Keyboard Trap
       num: 2.1.2
@@ -34,8 +35,8 @@ This rule applies to any [HTML or SVG element][] that is [focusable][].
 
 For each test target, the [outcome](#outcome) of at least one of the following rules is "passed":
 
-- [Focusable Element Has No Keyboard Trap Via Standard Navigation](https://www.w3.org/WAI/standards-guidelines/act/rules/a1b64e/proposed/)
-- [Focusable Element Has No Keyboard Trap Via Non-Standard Navigation](https://www.w3.org/WAI/standards-guidelines/act/rules/ebe86a/proposed/)
+- [Focusable Element Has No Keyboard Trap Via Standard Navigation](https://www.w3.org/WAI/standards-guidelines/act/rules/a1b64e/)
+- [Focusable Element Has No Keyboard Trap Via Non-Standard Navigation](https://www.w3.org/WAI/standards-guidelines/act/rules/ebe86a/)
 
 ## Assumptions
 
@@ -51,9 +52,9 @@ This rule only requires navigation in one direction (either forward or backward)
 
 ### Bibliography
 
-- [Understanding Success Criterion 2.1.2: No Keyboard Trap](https://www.w3.org/WAI/WCAG21/Understanding/no-keyboard-trap.html)
-- [G21: Ensuring that users are not trapped in content](https://www.w3.org/WAI/WCAG21/Techniques/general/G21)
-- [F10: Failure of Success Criterion 2.1.2 and Conformance Requirement 5 due to combining multiple content formats in a way that traps users inside one format type](https://www.w3.org/WAI/WCAG21/Techniques/failures/F10)
+- [Understanding Success Criterion 2.1.2: No Keyboard Trap](https://www.w3.org/WAI/WCAG22/Understanding/no-keyboard-trap.html)
+- [G21: Ensuring that users are not trapped in content](https://www.w3.org/WAI/WCAG22/Techniques/general/G21)
+- [F10: Failure of Success Criterion 2.1.2 and Conformance Requirement 5 due to combining multiple content formats in a way that traps users inside one format type](https://www.w3.org/WAI/WCAG22/Techniques/failures/F10)
 
 ## Accessibility Requirements Mapping
 
@@ -104,6 +105,40 @@ Outcomes of the following rules are required as input for this rule.
 - [Focusable element has no keyboard trap via non-standard navigation](/standards-guidelines/act/rules/focusable-no-keyboard-trap-non-standard-nav-ebe86a/)
 
 ## Test Cases
+
+<details class="act-inline-assets" markdown="block">
+<summary><span>This Javascript file is used in several examples:</span></summary>
+
+File [`/test-assets/focusable-no-keyboard-trap/keyboard.js`](https://w3.org/WAI/content-assets/wcag-act-rules/test-assets/focusable-no-keyboard-trap/keyboard.js):
+
+```javascript
+var trapOn = false
+
+function moveFocusToButton(btn) {
+	if (trapOn) {
+		document.getElementById(btn).focus()
+	}
+}
+
+function escapeTrapOnCtrlM(e) {
+	if (e.keyCode === 77 && e.ctrlKey) {
+		trapOn = false
+		document.getElementById('link2').focus()
+	}
+}
+
+function moveFocusTo(elm) {
+	if (trapOn) {
+		document.getElementById(elm).focus()
+	}
+}
+
+function showHelpText() {
+	document.getElementById('helptext').innerHTML = '<p>Press Ctrl+M to Exit</p>'
+}
+```
+
+</details>
 
 ### Passed
 
@@ -407,7 +442,7 @@ Expected behavior of standard keyboard navigation keys:
 [html or svg element]: #namespaced-element
 [namespaceuri]: https://dom.spec.whatwg.org/#dom-element-namespaceuri 'DOM Element namespaceURI, 2021/05/31'
 [rules for parsing integers]: https://html.spec.whatwg.org/#rules-for-parsing-integers
-[sc212]: https://www.w3.org/TR/WCAG21/#no-keyboard-trap 'Success Criterion 2.1.2 No Keyboard Trap'
+[sc212]: https://www.w3.org/TR/WCAG22/#no-keyboard-trap 'Success Criterion 2.1.2 No Keyboard Trap'
 [sequential focus navigation]: https://html.spec.whatwg.org/multipage/interaction.html#sequential-focus-navigation
 [tabindex attribute]: https://html.spec.whatwg.org/#attr-tabindex
 [tabindex value]: https://html.spec.whatwg.org/#tabindex-value

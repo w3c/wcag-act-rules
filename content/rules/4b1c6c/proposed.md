@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 4b1c6c</p>
-  <p><strong>Date:</strong> Updated 12 July 2022</p>
+  <p><strong>Date:</strong> Updated 25 January 2024</p>
   <p><strong>Authors:</strong> <a href="https://github.com/audreymaniez">Audrey Maniez</a>, <a href="https://github.com/Jym77">Jean-Yves Moyen</a>, <a href="https://github.com/jkodu">Jey Nandakumar</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -17,9 +17,10 @@ rule_meta:
   id: 4b1c6c
   name: "Iframe elements with identical accessible names have equivalent purpose"
   rule_type: atomic
+  original_file: iframe-identical-name-equivalent-purpose-4b1c6c.md
   description: |
     This rule checks that `iframe` elements with identical accessible names embed the same resource or equivalent resources.
-  last_modified: 12 July 2022
+  last_modified: 25 January 2024
   scs_tested:
     - handle: Name, Role, Value
       num: 4.1.2
@@ -53,7 +54,7 @@ When determining if target elements embed the same resource, resolving the embed
 ### Bibliography
 
 - [CSS Scoping Module Level 1 (editor's draft)](https://drafts.csswg.org/css-scoping/)
-- [H64: Using the title attribute of the frame and iframe elements](https://www.w3.org/WAI/WCAG21/Techniques/html/H64)
+- [H64: Using the title attribute of the frame and iframe elements](https://www.w3.org/WAI/WCAG22/Techniques/html/H64)
 - [Understanding Success Criterion 4.1.2: Name, Role, Value][usc412]
 
 ## Accessibility Requirements Mapping
@@ -82,6 +83,161 @@ The following aspects are required in using this rule.
 - [Language](https://www.w3.org/TR/act-rules-aspects/#input-aspects-text)
 
 ## Test Cases
+
+<details class="act-inline-assets" markdown="block">
+<summary><span>These HTML files are used in several examples:</span></summary>
+
+File [`/test-assets/iframe-unique-name-4b1c6c/page-one.html`](https://w3.org/WAI/content-assets/wcag-act-rules/test-assets/iframe-unique-name-4b1c6c/page-one.html):
+
+```html
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>Page One</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+	</head>
+	<body>
+		<!-- Breadcrumb -->
+		Root > Page One
+		<nav>
+			<ul>
+				<li>Home</li>
+				<li>Contact</li>
+			</ul>
+		</nav>
+	</body>
+</html>
+```
+
+File [`/test-assets/iframe-unique-name-4b1c6c/sub-dir/page-one.html`](https://w3.org/WAI/content-assets/wcag-act-rules/test-assets/iframe-unique-name-4b1c6c/sub-dir/page-one.html):
+
+```html
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>Page One</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+	</head>
+	<body>
+		<!-- Breadcrumb -->
+		Root > Sub Dir > Page One
+		<nav>
+			<ul>
+				<li>Home</li>
+				<li>Contact</li>
+			</ul>
+		</nav>
+	</body>
+</html>
+```
+
+File [`/test-assets/iframe-unique-name-4b1c6c/page-one-copy.html`](https://w3.org/WAI/content-assets/wcag-act-rules/test-assets/iframe-unique-name-4b1c6c/page-one-copy.html):
+
+```html
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>Page One</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+	</head>
+	<body>
+		<!-- Breadcrumb -->
+		Root > Page One
+		<nav>
+			<ul>
+				<li>Home</li>
+				<li>Contact</li>
+			</ul>
+		</nav>
+	</body>
+</html>
+```
+
+File [`/test-assets/iframe-unique-name-4b1c6c/page-three-same-as-page-one.html`](https://w3.org/WAI/content-assets/wcag-act-rules/test-assets/iframe-unique-name-4b1c6c/page-three-same-as-page-one.html):
+
+```html
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>Page One</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+	</head>
+	<body>
+		<nav>
+			<ul>
+				<li>Home</li>
+				<li>Contact</li>
+			</ul>
+		</nav>
+	</body>
+</html>
+```
+
+File [`/test-assets/iframe-unique-name-4b1c6c/advertising-one.html`](https://w3.org/WAI/content-assets/wcag-act-rules/test-assets/iframe-unique-name-4b1c6c/advertising-one.html):
+
+```html
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>Advertising One</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+	</head>
+	<body>
+		<h1>This is my random advertising</h1>
+		<p>Please, buy things!</p>
+	</body>
+</html>
+```
+
+File [`/test-assets/iframe-unique-name-4b1c6c/advertising-two.html`](https://w3.org/WAI/content-assets/wcag-act-rules/test-assets/iframe-unique-name-4b1c6c/advertising-two.html):
+
+```html
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>Advertising Two</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+	</head>
+	<body>
+		<h1>This is an other random advertising</h1>
+		<p>Never know which content will appear because advertising are managed bu a third party.</p>
+		<p>But please, buy more things!</p>
+	</body>
+</html>
+```
+
+File [`/test-assets/iframe-unique-name-4b1c6c/page-two.html`](https://w3.org/WAI/content-assets/wcag-act-rules/test-assets/iframe-unique-name-4b1c6c/page-two.html):
+
+```html
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>Page Two</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+	</head>
+	<body>
+		<article>
+			Lorem Ipsum...
+		</article>
+	</body>
+</html>
+```
+
+</details>
 
 ### Passed
 
@@ -490,7 +646,7 @@ For more details, see [examples of included in the accessibility tree][].
 
 ### Matching characters {#matching-characters}
 
-A sequence of characters is considered to _match_ another if, after removing leading and trailing [space characters](https://html.spec.whatwg.org/#white_space) and replacing remaining occurrences of one or more space characters with a single space, the two sequences of characters are equal character-by-character, ignoring any differences in letter casing.
+A sequence of characters is considered to _match_ another if, after removing leading and trailing [whitespace characters][] and replacing remaining occurrences of one or more whitespace characters with a single space, the two sequences of characters are equal character-by-character, ignoring any differences in letter casing.
 
 ### Outcome {#outcome}
 
@@ -531,13 +687,29 @@ On the other hand, identical relative URLs do not necessarily resolve to the sam
 
 ### Web page (HTML) {#web-page-html}
 
-An _HTML [web page](https://www.w3.org/TR/WCAG21/#dfn-web-page-s)_ is the set of all [fully active](https://html.spec.whatwg.org/#fully-active) [documents](https://dom.spec.whatwg.org/#concept-document) which share the same [top-level browsing context](https://html.spec.whatwg.org/#top-level-browsing-context).
+An _HTML [web page](https://www.w3.org/TR/WCAG22/#dfn-web-page-s)_ is the set of all [fully active](https://html.spec.whatwg.org/#fully-active) [documents](https://dom.spec.whatwg.org/#concept-document) which share the same [top-level browsing context](https://html.spec.whatwg.org/#top-level-browsing-context).
 
 **Note:** Nesting of browsing context mostly happens with `iframe` and `object`. Thus a web page will most of the time be a "top-level" document and all its `iframe` and `object` (recursively).
 
-**Note:** [Web pages](https://www.w3.org/TR/WCAG21/#dfn-web-page-s) as defined by WCAG are not restricted to the HTML technology but can also include, _e.g._, PDF or DOCX documents.
+**Note:** [Web pages](https://www.w3.org/TR/WCAG22/#dfn-web-page-s) as defined by WCAG are not restricted to the HTML technology but can also include, _e.g._, PDF or DOCX documents.
 
 **Note:** Although web pages as defined here are sets of [documents](https://dom.spec.whatwg.org/#concept-document) (and do not contain other kind of nodes), one can abusively write that any node is "in a web page" if it is a [shadow-including descendant](https://dom.spec.whatwg.org/#concept-shadow-including-descendant) of a [document](https://dom.spec.whatwg.org/#concept-document) that is part of that web page.
+
+### Whitespace {#whitespace}
+
+_Whitespace_ are characters that have the Unicode "White_Space" property in the [Unicode properties list](https://www.unicode.org/Public/UCD/latest/ucd/PropList.txt).
+
+This includes:
+
+- all characters in the [Unicode Separator categories](https://www.unicode.org/versions/Unicode11.0.0/ch04.pdf#G134153), and
+- the following characters in the [Other, Control](https://www.unicode.org/versions/Unicode11.0.0/ch04.pdf#G134153) category:
+
+  - Character tabulation (U+0009)
+  - Line Feed (LF) (U+000A)
+  - Line Tabulation (U+000B)
+  - Form Feed (FF) (U+000C)
+  - Carriage Return (CR) (U+000D)
+  - Next Line (NEL) (U+0085)
 
 [accessible name and description computation]: https://www.w3.org/TR/accname 'Accessible Name and Description Computation'
 [accessible name]: #accessible-name 'Definition of accessible name'
@@ -555,11 +727,12 @@ An _HTML [web page](https://www.w3.org/TR/WCAG21/#dfn-web-page-s)_ is the set of
 [matching]: #matching-characters 'Definition of matching characters'
 [rules for parsing integers]: https://html.spec.whatwg.org/#rules-for-parsing-integers
 [same resource]: #same-resource 'Definition of same resource'
-[sc412]: https://www.w3.org/TR/WCAG21/#name-role-value 'Success Criterion 4.1.2: Name, Role, Value'
+[sc412]: https://www.w3.org/TR/WCAG22/#name-role-value 'Success Criterion 4.1.2: Name, Role, Value'
 [sequential focus navigation]: https://html.spec.whatwg.org/multipage/interaction.html#sequential-focus-navigation
 [shadow tree]: https://dom.spec.whatwg.org/#shadow-tree 'Definition of shadow tree'
 [tabindex attribute]: https://html.spec.whatwg.org/#attr-tabindex
 [tabindex value]: https://html.spec.whatwg.org/#tabindex-value
 [top-level browsing context]: https://html.spec.whatwg.org/#top-level-browsing-context 'Definition of top level browsing context'
-[usc412]: https://www.w3.org/WAI/WCAG21/Understanding/name-role-value.html 'Understanding Success Criterion 4.1.2: Name, Role, Value'
+[usc412]: https://www.w3.org/WAI/WCAG22/Understanding/name-role-value.html 'Understanding Success Criterion 4.1.2: Name, Role, Value'
 [web page (html)]: #web-page-html 'Definition of web page (HTML)'
+[whitespace characters]: #whitespace 'Definition of Whitespace'

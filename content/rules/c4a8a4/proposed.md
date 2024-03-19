@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> c4a8a4</p>
-  <p><strong>Date:</strong> Updated 16 January 2023</p>
+  <p><strong>Date:</strong> Updated 25 January 2024</p>
   <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/corbb">Corbb O'Connor</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -17,9 +17,10 @@ rule_meta:
   id: c4a8a4
   name: "HTML page title is descriptive"
   rule_type: atomic
+  original_file: html-page-title-descriptive-c4a8a4.md
   description: |
     This rule checks that the first title in an HTML web page describes the topic or purpose of that page.
-  last_modified: 16 January 2023
+  last_modified: 25 January 2024
   scs_tested:
     - handle: Page Titled
       num: 2.4.2
@@ -28,7 +29,10 @@ rule_meta:
 
 ## Applicability
 
-This rule applies to the [document title][] of each [html web page][] if this [document title][] contains not only [whitespace](#whitespace) [text nodes](https://dom.spec.whatwg.org/#text).
+This rule applies to the [document title][] of each [html web page][], except if one of the following is true:
+
+- The [html web page][] has no [document title][]; or
+- The [document title][] contains only [whitespace](#whitespace) [text nodes](https://dom.spec.whatwg.org/#text).
 
 ## Expectation
 
@@ -54,9 +58,9 @@ The [HTML specification - The `title` element](https://html.spec.whatwg.org/#the
 
 ### Bibliography
 
-- [Understanding Success Criterion 2.4.2: Page titled](https://www.w3.org/WAI/WCAG21/Understanding/page-titled.html)
-- [Technique G88: Providing descriptive titles for Web pages](https://www.w3.org/WAI/WCAG21/Techniques/general/G88)
-- [Technique H25: Providing a title using the title element](https://www.w3.org/WAI/WCAG21/Techniques/html/H25)
+- [Understanding Success Criterion 2.4.2: Page titled](https://www.w3.org/WAI/WCAG22/Understanding/page-titled.html)
+- [Technique G88: Providing descriptive titles for Web pages](https://www.w3.org/WAI/WCAG22/Techniques/general/G88)
+- [Technique H25: Providing a title using the title element](https://www.w3.org/WAI/WCAG22/Techniques/html/H25)
 
 ## Accessibility Requirements Mapping
 
@@ -173,7 +177,7 @@ This `title` element, which is within the `body`, describes the content of the d
 
 <a class="example-link" title="Failed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/c4a8a4/2c1397032aad720fe43dee2be0d326be56957320.html">Open in a new tab</a>
 
-This `<title>` element does not describe the content of the document.
+This `title` element does not describe the content of the document.
 
 ```html
 <html lang="en">
@@ -257,11 +261,11 @@ An _outcome_ is a conclusion that comes from evaluating an ACT Rule on a [test s
 
 ### Web page (HTML) {#web-page-html}
 
-An _HTML [web page](https://www.w3.org/TR/WCAG21/#dfn-web-page-s)_ is the set of all [fully active](https://html.spec.whatwg.org/#fully-active) [documents](https://dom.spec.whatwg.org/#concept-document) which share the same [top-level browsing context](https://html.spec.whatwg.org/#top-level-browsing-context).
+An _HTML [web page](https://www.w3.org/TR/WCAG22/#dfn-web-page-s)_ is the set of all [fully active](https://html.spec.whatwg.org/#fully-active) [documents](https://dom.spec.whatwg.org/#concept-document) which share the same [top-level browsing context](https://html.spec.whatwg.org/#top-level-browsing-context).
 
 **Note:** Nesting of browsing context mostly happens with `iframe` and `object`. Thus a web page will most of the time be a "top-level" document and all its `iframe` and `object` (recursively).
 
-**Note:** [Web pages](https://www.w3.org/TR/WCAG21/#dfn-web-page-s) as defined by WCAG are not restricted to the HTML technology but can also include, _e.g._, PDF or DOCX documents.
+**Note:** [Web pages](https://www.w3.org/TR/WCAG22/#dfn-web-page-s) as defined by WCAG are not restricted to the HTML technology but can also include, _e.g._, PDF or DOCX documents.
 
 **Note:** Although web pages as defined here are sets of [documents](https://dom.spec.whatwg.org/#concept-document) (and do not contain other kind of nodes), one can abusively write that any node is "in a web page" if it is a [shadow-including descendant](https://dom.spec.whatwg.org/#concept-shadow-including-descendant) of a [document](https://dom.spec.whatwg.org/#concept-document) that is part of that web page.
 

@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> c249d5</p>
-  <p><strong>Date:</strong> Updated 14 November 2022</p>
+  <p><strong>Date:</strong> Updated 25 January 2024</p>
   <p><strong>Authors:</strong> <a href="https://github.com/carlosapaduarte">Carlos Duarte</a>, <a href="https://github.com/joao-vicente">João Vicente</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -17,9 +17,10 @@ rule_meta:
   id: c249d5
   name: "Device motion based changes to the content can be disabled"
   rule_type: atomic
+  original_file: device-motion-disabled-c249d5.md
   description: |
     This rule checks that it is possible to disable any changes to the content of the web page resulting from device motion based events.
-  last_modified: 14 November 2022
+  last_modified: 25 January 2024
   scs_tested:
     - handle: Motion Actuation
       num: 2.5.4
@@ -58,7 +59,7 @@ The [instruments][instrument] used to pass this rule (if any), must meet all lev
 ### Bibliography
 
 - [Understanding Success Criterion 2.5.4: Motion Actuation][sc2.5.4]
-- [G213: Provide conventional controls and an application setting for motion activated input](https://www.w3.org/WAI/WCAG21/Techniques/general/G213.html)
+- [G213: Provide conventional controls and an application setting for motion activated input](https://www.w3.org/WAI/WCAG22/Techniques/general/G213.html)
 - [DeviceOrientation Event Specification](https://www.w3.org/TR/orientation-event/)
 
 ## Accessibility Requirements Mapping
@@ -87,6 +88,58 @@ The following aspects are required in using this rule.
 - [Accessibility tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-accessibility)
 
 ## Test Cases
+
+<details class="act-inline-assets" markdown="block">
+<summary><span>This Javascript file is used in several examples:</span></summary>
+
+File [`/test-assets/7677a9/slider.js`](https://w3.org/WAI/content-assets/wcag-act-rules/test-assets/7677a9/slider.js):
+
+```javascript
+function changeSlider(amount) {
+	document.getElementById('motionSlider').value += amount
+	document.getElementById('output').innerHTML = document.getElementById('motionSlider').value
+}
+
+function increaseSlider() {
+	changeSlider(+1)
+}
+
+function decreaseSlider() {
+	changeSlider(-1)
+}
+
+function applyChange(gamma, threshold) {
+	if (gamma > threshold) {
+		increaseSlider()
+	} else if (gamma < -threshold) {
+		decreaseSlider()
+	}
+}
+
+function handleOrientation(event) {
+	applyChange(event.gamma, 20)
+}
+
+function handleOrientationCanBeDisabled(event) {
+	const disableMotion = document.getElementById('disableMotion')
+	if (!disableMotion.checked) {
+		applyChange(event.gamma, 20)
+	}
+}
+
+function handleMotion(event) {
+	applyChange(event.rotationRate.gamma, 5)
+}
+
+function handleMotionCanBeDisabled(event) {
+	const disableMotion = document.getElementById('disableMotion')
+	if (!disableMotion.checked) {
+		applyChange(event.rotationRate.gamma, 5)
+	}
+}
+```
+
+</details>
 
 ### Passed
 
@@ -384,16 +437,16 @@ The _WAI ARIA Specifications_ group both the WAI ARIA W3C Recommendation and ARI
 
 ### Web page (HTML) {#web-page-html}
 
-An _HTML [web page](https://www.w3.org/TR/WCAG21/#dfn-web-page-s)_ is the set of all [fully active](https://html.spec.whatwg.org/#fully-active) [documents](https://dom.spec.whatwg.org/#concept-document) which share the same [top-level browsing context](https://html.spec.whatwg.org/#top-level-browsing-context).
+An _HTML [web page](https://www.w3.org/TR/WCAG22/#dfn-web-page-s)_ is the set of all [fully active](https://html.spec.whatwg.org/#fully-active) [documents](https://dom.spec.whatwg.org/#concept-document) which share the same [top-level browsing context](https://html.spec.whatwg.org/#top-level-browsing-context).
 
 **Note:** Nesting of browsing context mostly happens with `iframe` and `object`. Thus a web page will most of the time be a "top-level" document and all its `iframe` and `object` (recursively).
 
-**Note:** [Web pages](https://www.w3.org/TR/WCAG21/#dfn-web-page-s) as defined by WCAG are not restricted to the HTML technology but can also include, _e.g._, PDF or DOCX documents.
+**Note:** [Web pages](https://www.w3.org/TR/WCAG22/#dfn-web-page-s) as defined by WCAG are not restricted to the HTML technology but can also include, _e.g._, PDF or DOCX documents.
 
 **Note:** Although web pages as defined here are sets of [documents](https://dom.spec.whatwg.org/#concept-document) (and do not contain other kind of nodes), one can abusively write that any node is "in a web page" if it is a [shadow-including descendant](https://dom.spec.whatwg.org/#concept-shadow-including-descendant) of a [document](https://dom.spec.whatwg.org/#concept-document) that is part of that web page.
 
 [accessibility support base line]: https://www.w3.org/TR/WCAG-EM/#step1c 'Definition of accessibility support base line'
-[accessibility supported]: https://www.w3.org/WAI/WCAG21/Understanding/motion-actuation#dfn-accessibility-supported
+[accessibility supported]: https://www.w3.org/WAI/WCAG22/Understanding/motion-actuation#dfn-accessibility-supported
 [accessibility tree]: https://www.w3.org/TR/accname-1.1/#dfn-accessibility-tree 'Definition of accessibility tree'
 [accessible object]: https://www.w3.org/TR/accname-1.1/#dfn-accessible-object 'Definition of accessible object'
 [activated]: https://html.spec.whatwg.org/#activation
@@ -404,7 +457,7 @@ An _HTML [web page](https://www.w3.org/TR/WCAG21/#dfn-web-page-s)_ is the set of
 [computed]: https://www.w3.org/TR/css-cascade/#computed-value 'CSS definition of computed value'
 [device motion]: https://www.w3.org/TR/orientation-event/#devicemotion 'Definition of device motion event'
 [device orientation]: https://www.w3.org/TR/orientation-event/#deviceorientation 'Definition of device orientation event'
-[essential]: https://www.w3.org/WAI/WCAG21/Understanding/motion-actuation.html#dfn-essential
+[essential]: https://www.w3.org/WAI/WCAG22/Understanding/motion-actuation.html#dfn-essential
 [event firing]: https://dom.spec.whatwg.org/#concept-event-fire
 [event listener list]: https://dom.spec.whatwg.org/#eventtarget-event-listener-list
 [event listener]: https://dom.spec.whatwg.org/#concept-event-listener
@@ -421,21 +474,21 @@ An _HTML [web page](https://www.w3.org/TR/WCAG21/#dfn-web-page-s)_ is the set of
 [inclusive ancestors]: https://dom.spec.whatwg.org/#concept-tree-inclusive-ancestor 'DOM Definition of Inclusive Ancestor'
 [instrument]: #instrument-to-achieve-an-objective 'Definition of Instrument to Achieve an Objective'
 [marked as decorative]: #marked-as-decorative 'Definition of Marked as Decorative'
-[mechanism]: https://www.w3.org/TR/WCAG21/#dfn-mechanism 'WCAG Definition of Mechanism'
-[presentational roles conflict resolution]: https://www.w3.org/TR/wai-aria-1.1/#conflict_resolution_presentation_none 'Presentational Roles Conflict Resolution'
+[mechanism]: https://www.w3.org/TR/WCAG22/#dfn-mechanism 'WCAG Definition of Mechanism'
+[presentational roles conflict resolution]: https://www.w3.org/TR/wai-aria-1.2/#conflict_resolution_presentation_none 'Presentational Roles Conflict Resolution'
 [programmatically hidden]: #programmatically-hidden 'Definition of Programmatically Hidden'
-[pure decoration]: https://www.w3.org/TR/WCAG21/#dfn-pure-decoration 'WCAG definition of Pure Decoration'
+[pure decoration]: https://www.w3.org/TR/WCAG22/#dfn-pure-decoration 'WCAG definition of Pure Decoration'
 [role attribute]: https://www.w3.org/TR/role-attribute/ 'Specification of the role attribute'
 [rules for parsing integers]: https://html.spec.whatwg.org/#rules-for-parsing-integers
-[sc2.5.4]: https://www.w3.org/WAI/WCAG21/Understanding/motion-actuation.html
-[sc211]: https://www.w3.org/TR/WCAG21/#keyboard 'Success Criterion 2.1.1 Keyboard'
-[sc412]: https://www.w3.org/TR/WCAG21/#name-role-value 'Success Criterion 4.1.2 Name, Role, Value'
+[sc2.5.4]: https://www.w3.org/WAI/WCAG22/Understanding/motion-actuation.html
+[sc211]: https://www.w3.org/TR/WCAG22/#keyboard 'Success Criterion 2.1.1 Keyboard'
+[sc412]: https://www.w3.org/TR/WCAG22/#name-role-value 'Success Criterion 4.1.2 Name, Role, Value'
 [semantic role]: #semantic-role 'Definition of semantic role'
 [sequential focus navigation]: https://html.spec.whatwg.org/multipage/interaction.html#sequential-focus-navigation
 [set of clearly labeled instruments]: #set-of-clearly-labeled-instruments 'Definition of set of clearly labeled instruments'
 [tabindex attribute]: https://html.spec.whatwg.org/#attr-tabindex
 [tabindex value]: https://html.spec.whatwg.org/#tabindex-value
-[text alternative]: https://www.w3.org/TR/WCAG21/#dfn-text-alternative 'Definition of text alternative'
+[text alternative]: https://www.w3.org/TR/WCAG22/#dfn-text-alternative 'Definition of text alternative'
 [url]: https://url.spec.whatwg.org/#concept-url
 [viewport]: https://drafts.csswg.org/css2/visuren.html#viewport 'Definition of viewport'
 [wai-aria specifications]: #wai-aria-specifications 'Definition of WAI-ARIA specifications'

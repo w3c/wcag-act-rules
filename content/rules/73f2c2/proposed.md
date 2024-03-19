@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 73f2c2</p>
-  <p><strong>Date:</strong> Updated 23 March 2023</p>
+  <p><strong>Date:</strong> Updated 25 January 2024</p>
   <p><strong>Authors:</strong> <a href="https://github.com/ajanec01">Aron Janecki</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -17,9 +17,10 @@ rule_meta:
   id: 73f2c2
   name: "Autocomplete attribute has valid value"
   rule_type: atomic
+  original_file: autocomplete-valid-value-73f2c2.md
   description: |
     This rule checks that the HTML `autocomplete` attribute has a correct value.
-  last_modified: 23 March 2023
+  last_modified: 25 January 2024
   scs_tested:
     - handle: Identify Input Purpose
       num: 1.3.5
@@ -48,7 +49,7 @@ Each test target's `autocomplete` [attribute value][] is a [space separated][] l
 
 ## Assumptions
 
-The `autocomplete` attribute is used on form fields that correspond to [Input Purposes for User Interface Components](https://www.w3.org/TR/WCAG21/#input-purposes) and collect information about the user.
+The `autocomplete` attribute is used on form fields that correspond to [Input Purposes for User Interface Components](https://www.w3.org/TR/WCAG22/#input-purposes) and collect information about the user.
 
 If the `autocomplete` attribute is used to describe "custom" taxonomy, for example using the custom autocomplete value "banner" (`<input type="text" autocomplete="banner" />`), success Criterion [1.3.5 Identify Input Purpose][sc135] may be satisfied even if this rule failed.
 
@@ -77,8 +78,8 @@ On an `input` element with a `type` [attribute value][] of `hidden`, the autocom
 
 ### Bibliography
 
-- [Understanding Success Criterion 1.3.5: Identify Input Purpose](https://www.w3.org/WAI/WCAG21/Understanding/identify-input-purpose.html)
-- [Definition: programmatically determined (programmatically determinable)](https://www.w3.org/TR/WCAG21/#dfn-programmatically-determinable)
+- [Understanding Success Criterion 1.3.5: Identify Input Purpose](https://www.w3.org/WAI/WCAG22/Understanding/identify-input-purpose.html)
+- [Definition: programmatically determined (programmatically determinable)](https://www.w3.org/TR/WCAG22/#dfn-programmatically-determinable)
 - [Autofill](https://html.spec.whatwg.org/#autofill)
 
 ## Accessibility Requirements Mapping
@@ -387,22 +388,22 @@ This `autocomplete` attribute is inapplicable because it has the `off` value.
 
 #### Inapplicable Example 8
 
-<a class="example-link" title="Inapplicable Example 8" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/73f2c2/41c0b66bc0208aef009343935649f2bec3ae778d.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 8" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/73f2c2/cd80cea25465f393871872ab3cc202d765e5d11d.html">Open in a new tab</a>
 
 This `input` element has a [fixed value](#73f2c2:fixed-value) due to its `type` [attribute value][] of `submit`. `autocomplete` does not apply to Submit buttons.
 
 ```html
-<input type="submit" autocomplete="email"/>
+<input type="submit" autocomplete="email" />
 ```
 
 #### Inapplicable Example 9
 
-<a class="example-link" title="Inapplicable Example 9" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/73f2c2/631fc4f23b93e9486e5cc07aed11a99003d4f354.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 9" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/73f2c2/87773383afa97f86ca5a0811cbe77c4f14ec1524.html">Open in a new tab</a>
 
 This `input` element is [hidden](#73f2c2:hidden) because of its `type` [attribute value][] of `hidden` (following standard [User Agent style sheet recommendations](https://html.spec.whatwg.org/multipage/rendering.html#hidden-elements). Knowing the transaction amount may still be used in other fields, e.g. to suggest a card with sufficient balance; this is not tested by this rule.
 
 ```html
-<input type="hidden" autocomplete="transaction-amount" value="100.00">
+<input type="hidden" autocomplete="transaction-amount" value="100.00" />
 ```
 
 ## Glossary
@@ -535,7 +536,7 @@ Content perceivable through sight.
 
 Content is considered _visible_ if making it fully transparent would result in a difference in the pixels rendered for any part of the document that is currently within the viewport or can be brought into the viewport via scrolling.
 
-[Content is defined in WCAG](https://www.w3.org/TR/WCAG21/#dfn-content).
+[Content is defined in WCAG](https://www.w3.org/TR/WCAG22/#dfn-content).
 
 For more details, see [examples of visible](https://act-rules.github.io/pages/examples/visible/).
 
@@ -554,7 +555,7 @@ The _WAI ARIA Specifications_ group both the WAI ARIA W3C Recommendation and ARI
 [appropriate field name for the form control]: #appropriate-field-for-the-form-control 'Definition of Appropriate field for the form control'
 [ascii case-insensitive]: https://infra.spec.whatwg.org/#ascii-case-insensitive 'definition of ASCII case-insensitive'
 [ascii whitespace]: https://infra.spec.whatwg.org/#ascii-whitespace 'HTML ASCII whitespace 2020/08/12'
-[assistive technology]: https://www.w3.org/TR/WCAG21/#dfn-assistive-technologies 'WCAG definition of Assistive Technologies'
+[assistive technology]: https://www.w3.org/TR/WCAG22/#dfn-assistive-technologies 'WCAG definition of Assistive Technologies'
 [attribute value]: #attribute-value 'Definition of Attribute Value'
 [boolean attributes]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attributes 'HTML Specification of Boolean Attribute'
 [comma separated]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#comma-separated-tokens 'HTML Specification of Comma Separated Tokens'
@@ -580,13 +581,13 @@ The _WAI ARIA Specifications_ group both the WAI ARIA W3C Recommendation and ARI
 [marked as decorative]: #marked-as-decorative 'Definition of Marked as Decorative'
 [namespaceuri]: https://dom.spec.whatwg.org/#dom-element-namespaceuri 'DOM Element namespaceURI, 2021/05/31'
 [numbers]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#numbers 'HTML Specification of Number Parsing'
-[presentational roles conflict resolution]: https://www.w3.org/TR/wai-aria-1.1/#conflict_resolution_presentation_none 'Presentational Roles Conflict Resolution'
+[presentational roles conflict resolution]: https://www.w3.org/TR/wai-aria-1.2/#conflict_resolution_presentation_none 'Presentational Roles Conflict Resolution'
 [programmatically hidden]: #programmatically-hidden 'Definition of Programmatically Hidden'
-[pure decoration]: https://www.w3.org/TR/WCAG21/#dfn-pure-decoration 'WCAG definition of Pure Decoration'
+[pure decoration]: https://www.w3.org/TR/WCAG22/#dfn-pure-decoration 'WCAG definition of Pure Decoration'
 [reflect]: https://html.spec.whatwg.org/multipage/common-dom-interfaces.html#reflecting-content-attributes-in-idl-attributes 'HTML specification of Reflecting Content Attributes in IDL Attributes'
 [role attribute]: https://www.w3.org/TR/role-attribute/ 'Specification of the role attribute'
 [rules for parsing integers]: https://html.spec.whatwg.org/#rules-for-parsing-integers
-[sc135]: https://www.w3.org/TR/WCAG21/#identify-input-purpose 'WCAG 2.1 success criterion 1.3.5 Identify Input Purpose'
+[sc135]: https://www.w3.org/TR/WCAG22/#identify-input-purpose 'WCAG 2.2 success criterion 1.3.5 Identify Input Purpose'
 [semantic role]: #semantic-role 'Definition of Semantic Role'
 [sequential focus navigation]: https://html.spec.whatwg.org/#sequential-focus-navigation 'HTML sequential focus navigation, 2020/08/12'
 [shadow-including ancestor]: https://dom.spec.whatwg.org/#concept-shadow-including-ancestor
@@ -594,6 +595,6 @@ The _WAI ARIA Specifications_ group both the WAI ARIA W3C Recommendation and ARI
 [tabindex attribute]: https://html.spec.whatwg.org/#attr-tabindex
 [tabindex value]: https://html.spec.whatwg.org/#tabindex-value
 [visible]: #visible 'Definition of Visible'
-[wai-aria specification]: https://www.w3.org/TR/wai-aria-1.1/#propcharacteristic_value 'WAI-ARIA Specification of States and Properties Value'
+[wai-aria specification]: https://www.w3.org/TR/wai-aria-1.2/#propcharacteristic_value 'WAI-ARIA Specification of States and Properties Value'
 [wai-aria specifications]: #wai-aria-specifications 'Definition of WAI-ARIA specifications'
-[widget role]: https://www.w3.org/TR/wai-aria-1.1/#widget_roles 'WAI-ARIA widget roles'
+[widget role]: https://www.w3.org/TR/wai-aria-1.2/#widget_roles 'WAI-ARIA widget roles'

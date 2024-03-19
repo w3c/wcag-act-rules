@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 9bd38c</p>
-  <p><strong>Date:</strong> Updated 14 November 2022</p>
+  <p><strong>Date:</strong> Updated 25 January 2024</p>
   <p><strong>Authors:</strong> <a href="https://www.linkedin.com/in/brianbors/">Brian Bors</a>, <a href="https://github.com/danistr">Daniël Strik</a>, <a href="https://github.com/Jym77">Jean-Yves Moyen</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -17,9 +17,10 @@ rule_meta:
   id: 9bd38c
   name: "Content has alternative for visual reference"
   rule_type: atomic
+  original_file: non-visual-reference-alternative-9bd38c.md
   description: |
     This rule checks that when content is identified through a visual reference, there are also non-visual references identifying the same content.
-  last_modified: 14 November 2022
+  last_modified: 25 January 2024
   scs_tested:
     - handle: Sensory Characteristics
       num: 1.3.3
@@ -58,10 +59,10 @@ The identified web content does not have to be positioned on the same web page a
 
 ### Bibliography
 
-- [WCAG 2.1 - Understanding Success Criterion 1.3.3: Sensory Characteristics](https://www.w3.org/WAI/WCAG21/Understanding/sensory-characteristics.html)
-- [G96: Providing textual identification of items that otherwise rely only on sensory information to be understood](https://www.w3.org/WAI/WCAG21/Techniques/general/G96)
-- [F14: Failure of Success Criterion 1.3.3 due to identifying content only by its shape or location](https://www.w3.org/WAI/WCAG21/Techniques/failures/F14)
-- [F26: Failure of Success Criterion 1.3.3 due to using a graphical symbol alone to convey information](https://www.w3.org/WAI/WCAG21/Techniques/failures/F26)
+- [WCAG 2.2 - Understanding Success Criterion 1.3.3: Sensory Characteristics](https://www.w3.org/WAI/WCAG22/Understanding/sensory-characteristics.html)
+- [G96: Providing textual identification of items that otherwise rely only on sensory information to be understood](https://www.w3.org/WAI/WCAG22/Techniques/general/G96)
+- [F14: Failure of Success Criterion 1.3.3 due to identifying content only by its shape or location](https://www.w3.org/WAI/WCAG22/Techniques/failures/F14)
+- [F26: Failure of Success Criterion 1.3.3 due to using a graphical symbol alone to convey information](https://www.w3.org/WAI/WCAG22/Techniques/failures/F26)
 
 ## Accessibility Requirements Mapping
 
@@ -102,6 +103,109 @@ The following aspects are required in using this rule.
 - [Language](https://www.w3.org/TR/act-rules-aspects/#input-aspects-text)
 
 ## Test Cases
+
+<details class="act-inline-assets" markdown="block">
+<summary><span>These HTML and CSS files are used in several examples:</span></summary>
+
+File [`/test-assets/non-visual-reference-alternative-9bd38c/triangle-menu-with-heading.html`](https://w3.org/WAI/content-assets/wcag-act-rules/test-assets/non-visual-reference-alternative-9bd38c/triangle-menu-with-heading.html):
+
+```html
+<html>
+	<body>
+		<div>
+			<h1>Triangle Menu</h1>
+			<ul>
+				<li>
+					<a href="https://www.w3.org/Consortium/contact">Contact</a>
+				</li>
+				<li>
+					<a href="https://www.w3.org/Help/">Help and FAQ</a>
+				</li>
+				<li>
+					<a href="https://www.w3.org/Consortium/sponsor/">Donate</a>
+				</li>
+				<li>
+					<a href="https://www.w3.org/Consortium/siteindex">Sitemap</a>
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>
+```
+
+File [`/test-assets/non-visual-reference-alternative-9bd38c/star-with-heading.html`](https://w3.org/WAI/content-assets/wcag-act-rules/test-assets/non-visual-reference-alternative-9bd38c/star-with-heading.html):
+
+```html
+<html>
+	<body>
+		<p>★</p>
+		<h1>Examples</h1>
+		<ul>
+			<li>Example 1</li>
+			<li>Example 2</li>
+			<li>Example 3</li>
+			<li>Example 4</li>
+		</ul>
+	</body>
+</html>
+```
+
+File [`/test-assets/non-visual-reference-alternative-9bd38c/triangle-menu-without-heading.html`](https://w3.org/WAI/content-assets/wcag-act-rules/test-assets/non-visual-reference-alternative-9bd38c/triangle-menu-without-heading.html):
+
+```html
+<html>
+	<body>
+		<div>
+			<h1>▲</h1>
+			<ul>
+				<li>
+					<a href="https://www.w3.org/Consortium/contact">Contact</a>
+				</li>
+				<li>
+					<a href="https://www.w3.org/Help/">Help and FAQ</a>
+				</li>
+				<li>
+					<a href="https://www.w3.org/Consortium/sponsor/">Donate</a>
+				</li>
+				<li>
+					<a href="https://www.w3.org/Consortium/siteindex">Sitemap</a>
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>
+```
+
+File [`/test-assets/non-visual-reference-alternative-9bd38c/star-without-heading.html`](https://w3.org/WAI/content-assets/wcag-act-rules/test-assets/non-visual-reference-alternative-9bd38c/star-without-heading.html):
+
+```html
+<html>
+	<body>
+		<p>★</p>
+		<ul>
+			<li>Example 1</li>
+			<li>Example 2</li>
+			<li>Example 3</li>
+			<li>Example 4</li>
+		</ul>
+	</body>
+</html>
+```
+
+File [`/test-assets/non-visual-reference-alternative-9bd38c/columns.css`](https://w3.org/WAI/content-assets/wcag-act-rules/test-assets/non-visual-reference-alternative-9bd38c/columns.css):
+
+```css
+.col-container {
+	display: table;
+	width: 100%;
+}
+.col {
+	display: table-cell;
+	padding: 16px;
+}
+```
+
+</details>
 
 ### Passed
 
@@ -635,7 +739,7 @@ Content perceivable through sight.
 
 Content is considered _visible_ if making it fully transparent would result in a difference in the pixels rendered for any part of the document that is currently within the viewport or can be brought into the viewport via scrolling.
 
-[Content is defined in WCAG](https://www.w3.org/TR/WCAG21/#dfn-content).
+[Content is defined in WCAG](https://www.w3.org/TR/WCAG22/#dfn-content).
 
 For more details, see [examples of visible](https://act-rules.github.io/pages/examples/visible/).
 
@@ -794,17 +898,17 @@ Color
 [included in the accessibility tree]: #included-in-the-accessibility-tree 'Definition of Included in the Accessibility Tree'
 [inclusive ancestors]: https://dom.spec.whatwg.org/#concept-tree-inclusive-ancestor 'DOM Definition of Inclusive Ancestor'
 [rules for parsing integers]: https://html.spec.whatwg.org/#rules-for-parsing-integers
-[sc131]: https://www.w3.org/TR/WCAG21/#info-and-relationships 'Success Criterion 1.3.1 Info and Relationships'
-[sc133]: https://www.w3.org/TR/WCAG21/#sensory-characteristics 'Success Criterion 1.3.3 Sensory Characteristics'
+[sc131]: https://www.w3.org/TR/WCAG22/#info-and-relationships 'Success Criterion 1.3.1 Info and Relationships'
+[sc133]: https://www.w3.org/TR/WCAG22/#sensory-characteristics 'Success Criterion 1.3.3 Sensory Characteristics'
 [sequential focus navigation]: https://html.spec.whatwg.org/multipage/interaction.html#sequential-focus-navigation
 [tabindex attribute]: https://html.spec.whatwg.org/#attr-tabindex
 [tabindex value]: https://html.spec.whatwg.org/#tabindex-value
 [text node]: https://dom.spec.whatwg.org/#text 'Specification of Text Node'
 [text nodes]: https://dom.spec.whatwg.org/#text 'DOM text, 2020/08/18'
-[text]: https://www.w3.org/TR/WCAG21/#dfn-text 'WCAG definition of Text'
+[text]: https://www.w3.org/TR/WCAG22/#dfn-text 'WCAG definition of Text'
 [visible text content]: #visible-text-content 'Definition of Visible Text Content'
 [visible]: #visible 'Definition of Visible'
 [visual reference word]: #visual-reference-words 'Definition of Visual Reference Words'
 [visual reference words]: #visual-reference-words 'Definition of Visual Reference Words'
-[web content]: https://www.w3.org/TR/WCAG21/#dfn-content 'WCAG definition of Web Content'
-[web page]: https://www.w3.org/TR/WCAG21/#dfn-web-page-s 'WCAG definition of Web Page'
+[web content]: https://www.w3.org/TR/WCAG22/#dfn-content 'WCAG definition of Web Content'
+[web page]: https://www.w3.org/TR/WCAG22/#dfn-web-page-s 'WCAG definition of Web Page'

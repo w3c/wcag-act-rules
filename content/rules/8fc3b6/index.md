@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 8fc3b6</p>
-  <p><strong>Date:</strong> Updated 25 October 2022</p>
+  <p><strong>Date:</strong> Updated 31 August 2023</p>
   <p><strong>Authors:</strong> <a href="https://github.com/AntonioEstriga">António Estriga</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It was approved and published by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
   
@@ -19,9 +19,10 @@ rule_meta:
   id: 8fc3b6
   name: "Object element rendering non-text content has non-empty accessible name"
   rule_type: atomic
+  original_file: object-has-accessible-name-8fc3b6.md
   description: |
     This rule checks that each `object` element rendering non-text content has a non-empty accessible name.
-  last_modified: 25 October 2022
+  last_modified: 31 August 2023
   scs_tested:
     - handle: Non-text Content
       num: 1.1.1
@@ -90,6 +91,27 @@ The following aspects are required in using this rule.
 - [Accessibility Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-accessibility)
 
 ## Test Cases
+
+<details class="act-inline-assets" markdown="block">
+<summary><span>This HTML file is used in several examples:</span></summary>
+
+File [`/test-assets/shared/index.html`](https://w3.org/WAI/content-assets/wcag-act-rules/test-assets/shared/index.html):
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>My University</title>
+	</head>
+	<body>
+		<h1>Welcome to My University</h1>
+		<p>We are currently working on getting our website up and running.</p>
+	</body>
+</html>
+```
+
+</details>
 
 ### Passed
 
@@ -380,7 +402,7 @@ An HTML element is _programmatically hidden_ if either it has a [computed][] CSS
 
 The _WAI ARIA Specifications_ group both the WAI ARIA W3C Recommendation and ARIA modules, namely:
 
-- [Accessible Rich Internet Applications (WAI-ARIA) 1.1](https://www.w3.org/TR/wai-aria-1.1/)
+- [Accessible Rich Internet Applications (WAI-ARIA) 1.2](https://www.w3.org/TR/wai-aria-1.2/)
 - [WAI-ARIA Graphics Module 1.0](https://www.w3.org/TR/graphics-aria-1.0/)
 - [Digital Publishing WAI-ARIA Module 1.0](https://www.w3.org/TR/dpub-aria-1.0/)
 
