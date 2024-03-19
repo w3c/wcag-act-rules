@@ -27,6 +27,8 @@ rule_meta:
     - handle: Media Alternative (Prerecorded)
       num: 1.2.8
       level: AAA
+  composite_rules:
+    c5a4ea: Video Element Visual Content Has Accessible Alternative
 ---
 
 ## Applicability
