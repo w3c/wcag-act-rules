@@ -3,7 +3,7 @@
   "website": "https://www.w3.org/WAI/standards-guidelines/act/rules/",
   "license": "https://act-rules.github.io/pages/license/",
   "description": "Accessibility conformance testing rules for HTML",
-  "count": 1144,
+  "count": 1149,
   "testcases": [
     {
       "ruleId": "674b10",
@@ -22761,9 +22761,9 @@
           "secondary": "This success criterion is **more strict** than this rule. This is because the rule also considers the context of the link, in addition to the link text. Some of the passed examples do not satisfy this success criterion."
         }
       },
-      "expected": "failed",
+      "expected": "passed",
       "testcaseId": "228c0a3d78557fb48a855d6733d50848a86f0d62",
-      "testcaseTitle": "Failed Example 1",
+      "testcaseTitle": "Passed Example 9",
       "relativePath": "testcases/fd3a94/228c0a3d78557fb48a855d6733d50848a86f0d62.html",
       "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/228c0a3d78557fb48a855d6733d50848a86f0d62.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/fd3a94/proposed/"
@@ -22783,10 +22783,31 @@
         }
       },
       "expected": "failed",
-      "testcaseId": "8d14f906398220f1ba52ef34b7f8e40d654312bd",
+      "testcaseId": "35fffc5189dce0022ebb0795bf3fa5a26735b5c2",
+      "testcaseTitle": "Failed Example 1",
+      "relativePath": "testcases/fd3a94/35fffc5189dce0022ebb0795bf3fa5a26735b5c2.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/35fffc5189dce0022ebb0795bf3fa5a26735b5c2.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/fd3a94/proposed/"
+    },
+    {
+      "ruleId": "fd3a94",
+      "ruleName": "Links with identical accessible names and same context serve equivalent purpose",
+      "ruleAccessibilityRequirements": {
+        "wcag20:2.4.4": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:2.4.9": {
+          "secondary": "This success criterion is **more strict** than this rule. This is because the rule also considers the context of the link, in addition to the link text. Some of the passed examples do not satisfy this success criterion."
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "8dc58c481c594488a331cd267974a324b97c9c98",
       "testcaseTitle": "Failed Example 2",
-      "relativePath": "testcases/fd3a94/8d14f906398220f1ba52ef34b7f8e40d654312bd.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/8d14f906398220f1ba52ef34b7f8e40d654312bd.html",
+      "relativePath": "testcases/fd3a94/8dc58c481c594488a331cd267974a324b97c9c98.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/8dc58c481c594488a331cd267974a324b97c9c98.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/fd3a94/proposed/"
     },
     {
@@ -22804,10 +22825,10 @@
         }
       },
       "expected": "failed",
-      "testcaseId": "109577c05513f09ec5360d02ef463d7f5350578c",
+      "testcaseId": "ef75d42424140b163d7939aacc6a80c8dbc8816a",
       "testcaseTitle": "Failed Example 3",
-      "relativePath": "testcases/fd3a94/109577c05513f09ec5360d02ef463d7f5350578c.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/109577c05513f09ec5360d02ef463d7f5350578c.html",
+      "relativePath": "testcases/fd3a94/ef75d42424140b163d7939aacc6a80c8dbc8816a.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/ef75d42424140b163d7939aacc6a80c8dbc8816a.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/fd3a94/proposed/"
     },
     {
@@ -22825,10 +22846,10 @@
         }
       },
       "expected": "failed",
-      "testcaseId": "fdc1c4461c1b874a94df693c72a8483cb39a8aab",
+      "testcaseId": "ea34f740055ca12e4363bdd3046536a0016b6f1d",
       "testcaseTitle": "Failed Example 4",
-      "relativePath": "testcases/fd3a94/fdc1c4461c1b874a94df693c72a8483cb39a8aab.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/fdc1c4461c1b874a94df693c72a8483cb39a8aab.html",
+      "relativePath": "testcases/fd3a94/ea34f740055ca12e4363bdd3046536a0016b6f1d.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/ea34f740055ca12e4363bdd3046536a0016b6f1d.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/fd3a94/proposed/"
     },
     {
@@ -22846,10 +22867,73 @@
         }
       },
       "expected": "failed",
-      "testcaseId": "0a465c71c47198030c8212fdd1122e35e06c4ee0",
+      "testcaseId": "b54ab4d7e7e33c3224ea0a94ab1d77a9cbc5b719",
       "testcaseTitle": "Failed Example 5",
-      "relativePath": "testcases/fd3a94/0a465c71c47198030c8212fdd1122e35e06c4ee0.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/0a465c71c47198030c8212fdd1122e35e06c4ee0.html",
+      "relativePath": "testcases/fd3a94/b54ab4d7e7e33c3224ea0a94ab1d77a9cbc5b719.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/b54ab4d7e7e33c3224ea0a94ab1d77a9cbc5b719.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/fd3a94/proposed/"
+    },
+    {
+      "ruleId": "fd3a94",
+      "ruleName": "Links with identical accessible names and same context serve equivalent purpose",
+      "ruleAccessibilityRequirements": {
+        "wcag20:2.4.4": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:2.4.9": {
+          "secondary": "This success criterion is **more strict** than this rule. This is because the rule also considers the context of the link, in addition to the link text. Some of the passed examples do not satisfy this success criterion."
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "d6722285d2064d636b867302b2cf5177f29283d0",
+      "testcaseTitle": "Failed Example 6",
+      "relativePath": "testcases/fd3a94/d6722285d2064d636b867302b2cf5177f29283d0.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/d6722285d2064d636b867302b2cf5177f29283d0.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/fd3a94/proposed/"
+    },
+    {
+      "ruleId": "fd3a94",
+      "ruleName": "Links with identical accessible names and same context serve equivalent purpose",
+      "ruleAccessibilityRequirements": {
+        "wcag20:2.4.4": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:2.4.9": {
+          "secondary": "This success criterion is **more strict** than this rule. This is because the rule also considers the context of the link, in addition to the link text. Some of the passed examples do not satisfy this success criterion."
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "e46aa0c92537c59e62c17ea1a66085ab04add68f",
+      "testcaseTitle": "Failed Example 7",
+      "relativePath": "testcases/fd3a94/e46aa0c92537c59e62c17ea1a66085ab04add68f.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/e46aa0c92537c59e62c17ea1a66085ab04add68f.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/fd3a94/proposed/"
+    },
+    {
+      "ruleId": "fd3a94",
+      "ruleName": "Links with identical accessible names and same context serve equivalent purpose",
+      "ruleAccessibilityRequirements": {
+        "wcag20:2.4.4": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:2.4.9": {
+          "secondary": "This success criterion is **more strict** than this rule. This is because the rule also considers the context of the link, in addition to the link text. Some of the passed examples do not satisfy this success criterion."
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "0747261988867c23323b93f2c2a3f48db0f38f7e",
+      "testcaseTitle": "Failed Example 8",
+      "relativePath": "testcases/fd3a94/0747261988867c23323b93f2c2a3f48db0f38f7e.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/0747261988867c23323b93f2c2a3f48db0f38f7e.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/fd3a94/proposed/"
     },
     {
@@ -22976,6 +23060,27 @@
       "testcaseTitle": "Inapplicable Example 6",
       "relativePath": "testcases/fd3a94/58087cbeb108ebf723ffc232c9996123a6eb168b.html",
       "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/58087cbeb108ebf723ffc232c9996123a6eb168b.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/fd3a94/proposed/"
+    },
+    {
+      "ruleId": "fd3a94",
+      "ruleName": "Links with identical accessible names and same context serve equivalent purpose",
+      "ruleAccessibilityRequirements": {
+        "wcag20:2.4.4": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:2.4.9": {
+          "secondary": "This success criterion is **more strict** than this rule. This is because the rule also considers the context of the link, in addition to the link text. Some of the passed examples do not satisfy this success criterion."
+        }
+      },
+      "expected": "inapplicable",
+      "testcaseId": "9abd9bcfa7c5eb5000df1bd7e72440c6233566a5",
+      "testcaseTitle": "Inapplicable Example 7",
+      "relativePath": "testcases/fd3a94/9abd9bcfa7c5eb5000df1bd7e72440c6233566a5.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/9abd9bcfa7c5eb5000df1bd7e72440c6233566a5.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/fd3a94/proposed/"
     },
     {
