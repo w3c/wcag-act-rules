@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> akn7bn</p>
-  <p><strong>Date:</strong> Updated 25 January 2024</p>
+  <p><strong>Date:</strong> Updated 3 April 2024</p>
   <p><strong>Authors:</strong> <a href="https://www.linkedin.com/in/brianbors/">Brian Bors</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -20,7 +20,7 @@ rule_meta:
   original_file: iframe-with-interactive-content-in-tab-order-akn7bn.md
   description: |
     This rule checks that `iframe` elements which contain an interactive (tabbable) element are not excluded from sequential focus navigation.
-  last_modified: 25 January 2024
+  last_modified: 3 April 2024
   scs_tested:
     - handle: Keyboard
       num: 2.1.1
@@ -231,6 +231,7 @@ The <dfn id="attribute-value:idl">attribute value</dfn> of an [IDL attribute][] 
 ### Inert {#inert}
 
 An [HTML or SVG element][] is inert if:
+
 - it has an `inert` [attribute value][] of true; or
 - one of its ancestor elements in the [flat tree][] has an `inert` [attribute value][] of true; or
 - it is [blocked by a modal][].
