@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> fd3a94</p>
-  <p><strong>Date:</strong> Updated 22 March 2024</p>
+  <p><strong>Date:</strong> Updated 3 April 2024</p>
   <p><strong>Authors:</strong> <a href="https://github.com/carlosapaduarte">Carlos Duarte</a>, Giacomo Petri. Previous Authors: <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -20,7 +20,7 @@ rule_meta:
   original_file: links-with-identical-names-and-context-serve-equivalent-purpose-fd3a94.md
   description: |
     This rule checks that links with identical accessible names in the same context resolve to the same or equivalent resources.
-  last_modified: 22 March 2024
+  last_modified: 3 April 2024
   scs_tested:
     - handle: Link Purpose (In Context)
       num: 2.4.4
@@ -43,7 +43,7 @@ This rule applies to any set of two or more [HTML or SVG elements][] for which a
 
 For each pair of links in each target set, one of the following is true:
 
-- both links resolve to the [same resource][]; or 
+- both links resolve to the [same resource][]; or
 - both links resolve to [equivalent resources][equivalent resource]; or
 - there is no visual information within the [web page][] to let users know that both links resolve to [non-equivalent resources][equivalent resource].
 
@@ -466,14 +466,22 @@ These two HTML `a` elements have the same [accessible name][] and [context][prog
 
 #### Failed Example 1
 
-<a class="example-link" title="Failed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/35fffc5189dce0022ebb0795bf3fa5a26735b5c2.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/9ceacbea5df44a14dc17df2089edb134f22decd3.html">Open in a new tab</a>
 
 These two HTML `a` elements have the same [accessible name][] and are nested within the same [context][programmatically determined link context], but go to different resources.
 
 ```html
 <html lang="en">
 	<p>
-		To get in touch with us, you can either <a href="/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/contact-us.html?page=1">contact us</a> via chat or <a href="/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/contact-us.html?page=2">contact us</a> by phone.
+		To get in touch with us, you can either
+		<a href="/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/contact-us.html?page=1"
+			>contact us</a
+		>
+		via chat or
+		<a href="/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/contact-us.html?page=2"
+			>contact us</a
+		>
+		by phone.
 	</p>
 </html>
 ```
@@ -511,7 +519,7 @@ These two HTML `a` elements have the same [accessible name][] and [context][prog
 
 #### Failed Example 4
 
-<a class="example-link" title="Failed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/ea34f740055ca12e4363bdd3046536a0016b6f1d.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/7f585ec08b99c103759f23ea36fe0ee263a7a1b4.html">Open in a new tab</a>
 
 These two HTML `a` elements have the same [accessible name][] and [context][programmatically determined link context], but go to different resources. Their purpose is disambiguated for sighted users by the alignment of the links with the images above.
 
@@ -520,12 +528,18 @@ These two HTML `a` elements have the same [accessible name][] and [context][prog
 	<div>
 		<span style="text-align:center;">Contact us</span>
 		<span style="display:flex; justify-content:space-around;">
-			<img src="/test-assets/shared/chat.png" alt="Chat" style="width:50%;">
-			<img src="/test-assets/shared/phone.png" alt="Phone" style="width:50%;">
+			<img src="/test-assets/shared/chat.png" alt="Chat" style="width:50%;" />
+			<img src="/test-assets/shared/phone.png" alt="Phone" style="width:50%;" />
 		</span>
 		<span style="display:flex; justify-content:space-around;">
-			<a href="/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/contact-us.html?page=60e950cff70bf1ec60a702086748ab4dec361514">Contact Us</a>
-			<a href="/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/contact-us.html?page=c1d4e0f067462f4b28716f028d9213a25eb82f28">Contact Us</a>
+			<a
+				href="/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/contact-us.html?page=60e950cff70bf1ec60a702086748ab4dec361514"
+				>Contact Us</a
+			>
+			<a
+				href="/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/contact-us.html?page=c1d4e0f067462f4b28716f028d9213a25eb82f28"
+				>Contact Us</a
+			>
 		</span>
 	</div>
 </html>
@@ -533,7 +547,7 @@ These two HTML `a` elements have the same [accessible name][] and [context][prog
 
 #### Failed Example 5
 
-<a class="example-link" title="Failed Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/b54ab4d7e7e33c3224ea0a94ab1d77a9cbc5b719.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/9c4840c9caed7d6f2d8f585d6fe36ea2218998b0.html">Open in a new tab</a>
 
 These two HTML `a` elements have the same [accessible name][] and [context][programmatically determined link context]. They link to web pages that are similar, but have different information in their content. Their purpose is disambiguated for sighted users by the alignment of the links with the images above.
 
@@ -542,12 +556,16 @@ These two HTML `a` elements have the same [accessible name][] and [context][prog
 	<div>
 		<span style="text-align:center;">Contact us</span>
 		<span style="display:flex; justify-content:space-around;">
-			<img src="/test-assets/shared/chat.png" alt="Chat" style="width:50%;">
-			<img src="/test-assets/shared/phone.png" alt="Phone" style="width:50%;">
+			<img src="/test-assets/shared/chat.png" alt="Chat" style="width:50%;" />
+			<img src="/test-assets/shared/phone.png" alt="Phone" style="width:50%;" />
 		</span>
 		<span style="display:flex; justify-content:space-around;">
-			<a href="/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/contact-us.html?page=3">Contact Us</a>
-			<a href="/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/contact-us.html?page=4">Contact Us</a>
+			<a href="/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/contact-us.html?page=3"
+				>Contact Us</a
+			>
+			<a href="/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/contact-us.html?page=4"
+				>Contact Us</a
+			>
 		</span>
 	</div>
 </html>
@@ -555,7 +573,7 @@ These two HTML `a` elements have the same [accessible name][] and [context][prog
 
 #### Failed Example 6
 
-<a class="example-link" title="Failed Example 6" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/d6722285d2064d636b867302b2cf5177f29283d0.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 6" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/07d22448c8eee64414dd9444263ae4039a0a2d79.html">Open in a new tab</a>
 
 These two HTML `span` elements have an [explicit role][] of link, same [accessible name][] and [context][programmatically determined link context], but link to resources that offer different content. Their purpose is disambiguated for sighted users by the alignment of the links with the images above.
 
@@ -564,18 +582,22 @@ These two HTML `span` elements have an [explicit role][] of link, same [accessib
 	<div>
 		<span style="text-align:center;">Contact us</span>
 		<span style="display:flex; justify-content:space-around;">
-			<img src="/test-assets/shared/chat.png" alt="Chat" style="width:50%;">
-			<img src="/test-assets/shared/phone.png" alt="Phone" style="width:50%;">
+			<img src="/test-assets/shared/chat.png" alt="Chat" style="width:50%;" />
+			<img src="/test-assets/shared/phone.png" alt="Phone" style="width:50%;" />
 		</span>
 		<span style="display:flex; justify-content:space-around;">
 			<span
-			role="link"
-			tabindex="0"
-			onclick="location='/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/contact-us.html?page=1'">Contact Us</span>
+				role="link"
+				tabindex="0"
+				onclick="location='/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/contact-us.html?page=1'"
+				>Contact Us</span
+			>
 			<span
-			role="link"
-			tabindex="0"
-			onclick="location='/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/contact-us.html?page=2'">Contact Us</span>
+				role="link"
+				tabindex="0"
+				onclick="location='/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/contact-us.html?page=2'"
+				>Contact Us</span
+			>
 		</span>
 	</div>
 </html>
@@ -583,7 +605,7 @@ These two HTML `span` elements have an [explicit role][] of link, same [accessib
 
 #### Failed Example 7
 
-<a class="example-link" title="Failed Example 7" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/e46aa0c92537c59e62c17ea1a66085ab04add68f.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 7" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/f4ba39778eac51bcbf787a9f173a11504abbfb71.html">Open in a new tab</a>
 
 These two SVG `a` elements have the same [accessible name][] and [context][programmatically determined link context] but link to different resources.
 
@@ -592,11 +614,21 @@ These two SVG `a` elements have the same [accessible name][] and [context][progr
 	<p>
 		<svg enable-background="new 0 0 264 120" viewBox="0 -20 264 140" xmlns="http://www.w3.org/2000/svg">
 			<text>Contact us</text>
-			<a href="/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/contact-us.html?page=1" aria-label="Contact Us">
-				<path d="m212.0806 68.0717c-10.3917 10.3852-22.4311 20.3239-27.1905 15.5646-6.8075-6.8075-11.0088-12.7418-26.0285-.6696-15.0132 12.0657-3.4792 20.1139 3.1182 26.7047 7.6149 7.6149 36.0001.407 64.0571-27.6434 28.0504-28.057 35.2386-56.4422 27.6172-64.0571-6.5974-6.604-14.6062-18.1314-26.6719-3.1182-12.0723 15.0132-6.1444 19.2145.6761 26.0285 4.7397 4.7593-5.1925 16.7988-15.5777 27.1905z"/>
+			<a
+				href="/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/contact-us.html?page=1"
+				aria-label="Contact Us"
+			>
+				<path
+					d="m212.0806 68.0717c-10.3917 10.3852-22.4311 20.3239-27.1905 15.5646-6.8075-6.8075-11.0088-12.7418-26.0285-.6696-15.0132 12.0657-3.4792 20.1139 3.1182 26.7047 7.6149 7.6149 36.0001.407 64.0571-27.6434 28.0504-28.057 35.2386-56.4422 27.6172-64.0571-6.5974-6.604-14.6062-18.1314-26.6719-3.1182-12.0723 15.0132-6.1444 19.2145.6761 26.0285 4.7397 4.7593-5.1925 16.7988-15.5777 27.1905z"
+				/>
 			</a>
-			<a href="/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/contact-us.html?page=2" aria-label="Contact Us">
-				<path d="m105 7.5h-90c-8.2576 0-15 6.7497-15 15v52.5c0 8.2498 6.7424 15 15 15h30l30 22.5v-22.5h30c8.2498 0 15-6.7502 15-15v-52.5c0-8.2503-6.7502-15-15-15zm-80.7903 52.5c-6.2132 0-11.255-5.0372-11.255-11.25 0-6.2132 5.0418-11.25 11.255-11.25 6.2128 0 11.245 5.0418 11.245 11.25 0 6.2077-5.0322 11.25-11.245 11.25zm35.7953 0c-6.2128 0-11.255-5.0372-11.255-11.25 0-6.2132 5.0423-11.25 11.255-11.25 6.2132 0 11.245 5.0368 11.245 11.25 0 6.2128-5.0317 11.25-11.245 11.25zm35.7958 0c-6.2132 0-11.2555-5.0372-11.2555-11.25 0-6.2132 5.0423-11.25 11.2555-11.25 6.2128 0 11.2445 5.0368 11.2445 11.25 0 6.2128-5.0318 11.25-11.2445 11.25z"/>
+			<a
+				href="/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/contact-us.html?page=2"
+				aria-label="Contact Us"
+			>
+				<path
+					d="m105 7.5h-90c-8.2576 0-15 6.7497-15 15v52.5c0 8.2498 6.7424 15 15 15h30l30 22.5v-22.5h30c8.2498 0 15-6.7502 15-15v-52.5c0-8.2503-6.7502-15-15-15zm-80.7903 52.5c-6.2132 0-11.255-5.0372-11.255-11.25 0-6.2132 5.0418-11.25 11.255-11.25 6.2128 0 11.245 5.0418 11.245 11.25 0 6.2077-5.0322 11.25-11.245 11.25zm35.7953 0c-6.2128 0-11.255-5.0372-11.255-11.25 0-6.2132 5.0423-11.25 11.255-11.25 6.2132 0 11.245 5.0368 11.245 11.25 0 6.2128-5.0317 11.25-11.245 11.25zm35.7958 0c-6.2132 0-11.2555-5.0372-11.2555-11.25 0-6.2132 5.0423-11.25 11.2555-11.25 6.2128 0 11.2445 5.0368 11.2445 11.25 0 6.2128-5.0318 11.25-11.2445 11.25z"
+				/>
 			</a>
 		</svg>
 	</p>
@@ -605,7 +637,7 @@ These two SVG `a` elements have the same [accessible name][] and [context][progr
 
 #### Failed Example 8
 
-<a class="example-link" title="Failed Example 8" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/0747261988867c23323b93f2c2a3f48db0f38f7e.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 8" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/b016056025da8b4c5a08c0b72adc7cd2ab65a545.html">Open in a new tab</a>
 
 These two HTML `a` elements with the same [accessible name][] and [context][programmatically determined link context] resolve to the [same resource][] after redirect, but the redirect is not instant.
 
@@ -614,8 +646,8 @@ These two HTML `a` elements with the same [accessible name][] and [context][prog
 	<p>
 		<span style="text-align:center;">Contact us</span>
 		<span style="display:flex; justify-content:space-around;">
-			<img src="/test-assets/shared/chat.png" alt="Chat" style="width:50%;">
-			<img src="/test-assets/shared/phone.png" alt="Phone" style="width:50%;">
+			<img src="/test-assets/shared/chat.png" alt="Chat" style="width:50%;" />
+			<img src="/test-assets/shared/phone.png" alt="Phone" style="width:50%;" />
 		</span>
 		<span style="display:flex; justify-content:space-around;">
 			<a href="/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/index.html">Contact Us</a>
