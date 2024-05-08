@@ -17,25 +17,25 @@
 
 - name: Alfa (fully automated)
   homepage: https://alfa.siteimprove.com/
-  version: 0.57.2
+  version: 0.80.0
   vendor: Siteimprove
   vendorHomepage: https://www.siteimprove.com/
   uniqueKey: alfa
   type: Automated tool
   standards:
-    - WCAG 2.1 Level A, AA, AAA
+    - WCAG 2.2 Level A, AA, AAA
     - WAI-ARIA 1.2
   jsonReport: https://raw.githubusercontent.com/Siteimprove/alfa-act-r/main/reports/alfa-automated-report.json
 
 - name: Alfa (semi-automated)
   homepage: https://alfa.siteimprove.com/
-  version: 0.57.2
+  version: 0.80.0
   vendor: Siteimprove
   vendorHomepage: https://www.siteimprove.com/
   uniqueKey: alfa-assisted
   type: Semi-automated tool
   standards:
-    - WCAG 2.1 Level A, AA, AAA
+    - WCAG 2.2 Level A, AA, AAA
     - WAI-ARIA 1.2
   jsonReport: https://raw.githubusercontent.com/Siteimprove/alfa-act-r/main/reports/alfa-assisted-report.json
 
