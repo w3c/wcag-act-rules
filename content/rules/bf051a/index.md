@@ -131,7 +131,7 @@ This `html` element has a `lang` attribute with a [known primary language tag][]
 
 <a class="example-link" title="Failed Example 1" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bf051a/b7a35f8080e756776877bca013a910dafde8ef73.html">Open in a new tab</a>
 
-This `html` element has a `lang` attribute with a [known primary language tag][].
+This `html` element has a `lang` attribute, but it is not a [known primary language tag][].
 
 ```html
 <html lang="em-US"></html>
@@ -141,7 +141,7 @@ This `html` element has a `lang` attribute with a [known primary language tag][]
 
 <a class="example-link" title="Failed Example 2" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bf051a/5c998eef8cb13a8f577dade1a3b9fe591bc69204.html">Open in a new tab</a>
 
-This `html` element has a `lang` attribute with a [known primary language tag][].
+This `html` element has a `lang` attribute, but it is not a [known primary language tag][].
 
 ```html
 <html lang="#1"></html>
@@ -151,7 +151,7 @@ This `html` element has a `lang` attribute with a [known primary language tag][]
 
 <a class="example-link" title="Failed Example 3" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bf051a/0f73e7179e17f050380f0ea350d2551611820fd5.html">Open in a new tab</a>
 
-The `lang` attribute of this page is an [iso 639.2][] three letters code, which has no [known primary language tag][].
+The `lang` attribute of this page is an [iso 639.2][] three-letter code, which has no [known primary language tag][].
 
 ```html
 <html lang="eng">
