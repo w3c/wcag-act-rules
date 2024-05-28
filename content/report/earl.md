@@ -154,3 +154,24 @@ Alternatively, it is possible to specify WCAG 2 success criteria by number inste
 The format of the `title` property in the `isPartOf` array is fairly permissive. To be recognized as a success criterion, the string `WCAG 2` or `WCAG2`, and the success criterion number (separated with dots) must be included. For example `WCAG 2.1 criterion 1.1.1 Non-text content` would be recognized. To explicitly add the success criterion ID the `@id` property can be used.
 
 **Advanced**: All required properties map to [EARL](http://www.w3.org/ns/earl#), except for `isPartOf`, `title`, and `source` which are properties of [Dublin Core](http://purl.org/dc/terms/). Property names can be anything, as long as they can be expanded to the correct URL.
+
+## Assertor
+
+An `Assertor` object can be used to provide information about the tool or test methodology which produced the results. While EARL supports different assertions having different assertors, for the ACT format only the **first assertor** in an EARL report will be used. Declaring the `Assertor` is particularly useful for dynamic information such as a version number. The `Assertor` takes the following format:
+
+```json
+{
+	"@context": "https://www.w3.org/WAI/content-assets/wcag-act-rules/earl-context.json",
+	"@graph": [
+		/// ... other data
+		{
+			"@type": "Assertor",
+			"name": "My Accessibility Solution",
+			"release": {
+				"@type": "Version",
+				"revision": "1.0"
+			},
+		}
+	]
+}
+```
