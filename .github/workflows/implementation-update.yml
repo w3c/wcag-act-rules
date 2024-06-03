@@ -17,7 +17,7 @@ jobs:
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
       - run: npm ci
       ## Make sure we have the latest act-tools
-      - run: npm install act-rules/act-tools --also=dev
+      - run: npm install act-rules/act-tools --include=dev
       - run: node ./.github/scripts/implementation-update.mjs
       - name: Commit and push
         env:
