@@ -1,8 +1,8 @@
 {
   "vendor": "Siteimprove",
   "name": "Alfa (semi-automated)",
-  "version": "0.57.2",
-  "lastModified": "22 January 2024",
+  "version": "0.80.0",
+  "lastModified": "4 June 2024",
   "approvedRules": {
     "complete": 25,
     "partial": 0,
@@ -10,9 +10,9 @@
     "untested": 3
   },
   "proposedRules": {
-    "complete": 25,
-    "partial": 4,
-    "inconsistent": 4,
+    "complete": 27,
+    "partial": 3,
+    "inconsistent": 3,
     "untested": 19
   },
   "actRuleMapping": [
@@ -29,8 +29,8 @@
         "expected": [],
         "reported": [
           "WCAG2:info-and-relationships",
-          "https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA4",
-          "https://www.w3.org/WAI/WCAG21/Techniques/general/G108"
+          "https://www.w3.org/WAI/WCAG22/Techniques/aria/ARIA4",
+          "https://www.w3.org/WAI/WCAG22/Techniques/general/G108"
         ]
       },
       "coverage": {
@@ -671,7 +671,7 @@
         ],
         "reported": [
           "WCAG2:language-of-parts",
-          "https://www.w3.org/WAI/WCAG21/Techniques/html/H58"
+          "https://www.w3.org/WAI/WCAG22/Techniques/html/H58"
         ]
       },
       "coverage": {
@@ -1283,7 +1283,7 @@
             {
               "procedureName": "sia-r95",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -2752,7 +2752,7 @@
             {
               "procedureName": "sia-r10",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -2767,7 +2767,7 @@
             {
               "procedureName": "sia-r10",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -3546,7 +3546,7 @@
             {
               "procedureName": "sia-r8",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -3568,7 +3568,7 @@
         ],
         "reported": [
           "WCAG2:language-of-page",
-          "https://www.w3.org/WAI/WCAG21/Techniques/html/H57"
+          "https://www.w3.org/WAI/WCAG22/Techniques/html/H57"
         ]
       },
       "coverage": {
@@ -3700,8 +3700,8 @@
         ],
         "reported": [
           "WCAG2:page-titled",
-          "https://www.w3.org/WAI/WCAG21/Techniques/general/G88",
-          "https://www.w3.org/WAI/WCAG21/Techniques/html/H25"
+          "https://www.w3.org/WAI/WCAG22/Techniques/general/G88",
+          "https://www.w3.org/WAI/WCAG22/Techniques/html/H25"
         ]
       },
       "coverage": {
@@ -3895,8 +3895,8 @@
         "reported": [
           "WCAG2:non-text-content",
           "WCAG2:name-role-value",
-          "https://www.w3.org/WAI/WCAG21/Techniques/general/G94",
-          "https://www.w3.org/WAI/WCAG21/Techniques/general/G95"
+          "https://www.w3.org/WAI/WCAG22/Techniques/general/G94",
+          "https://www.w3.org/WAI/WCAG22/Techniques/general/G95"
         ]
       },
       "coverage": {
@@ -4103,8 +4103,8 @@
         ],
         "reported": [
           "WCAG2:non-text-content",
-          "https://www.w3.org/WAI/WCAG21/Techniques/general/G94",
-          "https://www.w3.org/WAI/WCAG21/Techniques/general/G95"
+          "https://www.w3.org/WAI/WCAG22/Techniques/general/G94",
+          "https://www.w3.org/WAI/WCAG22/Techniques/general/G95"
         ]
       },
       "coverage": {
@@ -4404,7 +4404,7 @@
           "WCAG2:link-purpose-in-context",
           "WCAG2:link-purpose-link-only",
           "WCAG2:name-role-value",
-          "https://www.w3.org/WAI/WCAG21/Techniques/general/G91"
+          "https://www.w3.org/WAI/WCAG22/Techniques/general/G91"
         ]
       },
       "coverage": {
@@ -5158,7 +5158,7 @@
         ],
         "reported": [
           "WCAG2:info-and-relationships",
-          "https://www.w3.org/WAI/WCAG21/Techniques/html/H43"
+          "https://www.w3.org/WAI/WCAG22/Techniques/html/H43"
         ]
       },
       "coverage": {
@@ -5708,8 +5708,8 @@
           "WCAG2:timing-adjustable",
           "WCAG2:interruptions",
           "WCAG2:change-on-request",
-          "https://www.w3.org/WAI/WCAG21/Techniques/general/G110",
-          "https://www.w3.org/WAI/WCAG21/Techniques/html/H76"
+          "https://www.w3.org/WAI/WCAG22/Techniques/general/G110",
+          "https://www.w3.org/WAI/WCAG22/Techniques/html/H76"
         ]
       },
       "coverage": {
@@ -6523,7 +6523,7 @@
         ],
         "reported": [
           "WCAG2:language-of-page",
-          "https://www.w3.org/WAI/WCAG21/Techniques/html/H57"
+          "https://www.w3.org/WAI/WCAG22/Techniques/html/H57"
         ]
       },
       "coverage": {
@@ -6675,7 +6675,7 @@
         "reported": [
           "WCAG2:keyboard",
           "WCAG2:keyboard-no-exception",
-          "https://www.w3.org/WAI/WCAG21/Techniques/general/G202"
+          "https://www.w3.org/WAI/WCAG22/Techniques/general/G202"
         ]
       },
       "coverage": {
@@ -6845,7 +6845,7 @@
             {
               "procedureName": "sia-r84",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -6860,7 +6860,7 @@
             {
               "procedureName": "sia-r84",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -6875,7 +6875,7 @@
             {
               "procedureName": "sia-r84",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -6890,7 +6890,7 @@
             {
               "procedureName": "sia-r84",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -7036,7 +7036,7 @@
             {
               "procedureName": "sia-r65",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -7051,7 +7051,7 @@
             {
               "procedureName": "sia-r65",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -7559,6 +7559,21 @@
               "procedureName": "sia-r69",
               "outcomes": [
                 "inapplicable"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "eb4bfbbeba4e803fef10ebad17427f32e306ae82",
+          "testCaseName": "Passed Example 7",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/eb4bfbbeba4e803fef10ebad17427f32e306ae82.html",
+          "testCaseApproved": false,
+          "expected": "passed",
+          "procedureResults": [
+            {
+              "procedureName": "sia-r69",
+              "outcomes": [
+                "failed"
               ]
             }
           ]
@@ -8098,6 +8113,21 @@
               ]
             }
           ]
+        },
+        {
+          "testcaseId": "5cd71d7ee71bddaed9ff5fbd349ce0809141e425",
+          "testCaseName": "Passed Example 6",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/09o5cg/5cd71d7ee71bddaed9ff5fbd349ce0809141e425.html",
+          "testCaseApproved": false,
+          "expected": "passed",
+          "procedureResults": [
+            {
+              "procedureName": "sia-r66",
+              "outcomes": [
+                "failed"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -8127,8 +8157,8 @@
         "reported": [
           "WCAG2:interruptions",
           "WCAG2:change-on-request",
-          "https://www.w3.org/WAI/WCAG21/Techniques/general/G110",
-          "https://www.w3.org/WAI/WCAG21/Techniques/html/H76"
+          "https://www.w3.org/WAI/WCAG22/Techniques/general/G110",
+          "https://www.w3.org/WAI/WCAG22/Techniques/html/H76"
         ]
       },
       "coverage": {
@@ -8783,9 +8813,9 @@
           ]
         },
         {
-          "testcaseId": "d05f912754cdcfbf5f79b346d1418275e31fb8d5",
+          "testcaseId": "854ec3db8780fe5be957fc1c29f279a3e5fc7969",
           "testCaseName": "Passed Example 2",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/d05f912754cdcfbf5f79b346d1418275e31fb8d5.html",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/854ec3db8780fe5be957fc1c29f279a3e5fc7969.html",
           "testCaseApproved": false,
           "expected": "passed",
           "procedureResults": [
@@ -9036,7 +9066,7 @@
         "correct": true,
         "expected": [],
         "reported": [
-          "https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA5"
+          "https://www.w3.org/WAI/WCAG22/Techniques/aria/ARIA5"
         ]
       },
       "coverage": {
@@ -9430,9 +9460,9 @@
         ],
         "reported": [
           "WCAG2:audio-control",
-          "https://www.w3.org/WAI/WCAG21/Techniques/general/G60",
-          "https://www.w3.org/WAI/WCAG21/Techniques/general/G170",
-          "https://www.w3.org/WAI/WCAG21/Techniques/general/G171"
+          "https://www.w3.org/WAI/WCAG22/Techniques/general/G60",
+          "https://www.w3.org/WAI/WCAG22/Techniques/general/G170",
+          "https://www.w3.org/WAI/WCAG22/Techniques/general/G171"
         ]
       },
       "coverage": {
@@ -9579,7 +9609,7 @@
         ],
         "reported": [
           "WCAG2:audio-only-and-video-only-prerecorded",
-          "https://www.w3.org/WAI/WCAG21/Techniques/general/G158"
+          "https://www.w3.org/WAI/WCAG22/Techniques/general/G158"
         ]
       },
       "coverage": {
@@ -9910,7 +9940,7 @@
         "correct": true,
         "expected": [],
         "reported": [
-          "https://www.w3.org/WAI/WCAG21/Techniques/general/G60"
+          "https://www.w3.org/WAI/WCAG22/Techniques/general/G60"
         ]
       },
       "coverage": {
@@ -10034,16 +10064,16 @@
       "procedureNames": [
         "sia-r49"
       ],
-      "consistency": null,
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
         "reported": [
-          "https://www.w3.org/WAI/WCAG21/Techniques/general/G170"
+          "https://www.w3.org/WAI/WCAG22/Techniques/general/G170"
         ]
       },
       "coverage": {
-        "covered": 10,
+        "covered": 11,
         "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 11
@@ -10185,16 +10215,16 @@
           ]
         },
         {
-          "testcaseId": "ac8baf8eb7fe7a8a6cd88e956797e438257a6d96",
+          "testcaseId": "7d3d7214d9fca81a8a09a819665871a474f85548",
           "testCaseName": "Inapplicable Example 2",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/ac8baf8eb7fe7a8a6cd88e956797e438257a6d96.html",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4c31df/7d3d7214d9fca81a8a09a819665871a474f85548.html",
           "testCaseApproved": false,
           "expected": "inapplicable",
           "procedureResults": [
             {
               "procedureName": "sia-r49",
               "outcomes": [
-                "failed"
+                "inapplicable"
               ]
             }
           ]
@@ -10561,7 +10591,7 @@
         "expected": [],
         "reported": [
           "WCAG2:info-and-relationships",
-          "https://www.w3.org/WAI/WCAG21/Techniques/html/H42"
+          "https://www.w3.org/WAI/WCAG22/Techniques/html/H42"
         ]
       },
       "coverage": {
@@ -10813,7 +10843,7 @@
         ],
         "reported": [
           "WCAG2:language-of-page",
-          "https://www.w3.org/WAI/WCAG21/Techniques/html/H57"
+          "https://www.w3.org/WAI/WCAG22/Techniques/html/H57"
         ]
       },
       "coverage": {
@@ -12160,10 +12190,10 @@
         ]
       },
       "coverage": {
-        "covered": 18,
+        "covered": 21,
         "untested": 0,
         "cantTell": 0,
-        "testCaseTotal": 19
+        "testCaseTotal": 24
       },
       "testCaseResults": [
         {
@@ -12288,9 +12318,24 @@
         },
         {
           "testcaseId": "228c0a3d78557fb48a855d6733d50848a86f0d62",
-          "testCaseName": "Failed Example 1",
+          "testCaseName": "Passed Example 9",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/228c0a3d78557fb48a855d6733d50848a86f0d62.html",
           "testCaseApproved": false,
+          "expected": "passed",
+          "procedureResults": [
+            {
+              "procedureName": "sia-r81",
+              "outcomes": [
+                "failed"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "9ceacbea5df44a14dc17df2089edb134f22decd3",
+          "testCaseName": "Failed Example 1",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/9ceacbea5df44a14dc17df2089edb134f22decd3.html",
+          "testCaseApproved": false,
           "expected": "failed",
           "procedureResults": [
             {
@@ -12302,24 +12347,24 @@
           ]
         },
         {
-          "testcaseId": "8d14f906398220f1ba52ef34b7f8e40d654312bd",
+          "testcaseId": "8dc58c481c594488a331cd267974a324b97c9c98",
           "testCaseName": "Failed Example 2",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/8d14f906398220f1ba52ef34b7f8e40d654312bd.html",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/8dc58c481c594488a331cd267974a324b97c9c98.html",
           "testCaseApproved": false,
           "expected": "failed",
           "procedureResults": [
             {
               "procedureName": "sia-r81",
               "outcomes": [
-                "failed"
+                "inapplicable"
               ]
             }
           ]
         },
         {
-          "testcaseId": "109577c05513f09ec5360d02ef463d7f5350578c",
+          "testcaseId": "ef75d42424140b163d7939aacc6a80c8dbc8816a",
           "testCaseName": "Failed Example 3",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/109577c05513f09ec5360d02ef463d7f5350578c.html",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/ef75d42424140b163d7939aacc6a80c8dbc8816a.html",
           "testCaseApproved": false,
           "expected": "failed",
           "procedureResults": [
@@ -12332,9 +12377,9 @@
           ]
         },
         {
-          "testcaseId": "fdc1c4461c1b874a94df693c72a8483cb39a8aab",
+          "testcaseId": "7f585ec08b99c103759f23ea36fe0ee263a7a1b4",
           "testCaseName": "Failed Example 4",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/fdc1c4461c1b874a94df693c72a8483cb39a8aab.html",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/7f585ec08b99c103759f23ea36fe0ee263a7a1b4.html",
           "testCaseApproved": false,
           "expected": "failed",
           "procedureResults": [
@@ -12347,9 +12392,54 @@
           ]
         },
         {
-          "testcaseId": "0a465c71c47198030c8212fdd1122e35e06c4ee0",
+          "testcaseId": "9c4840c9caed7d6f2d8f585d6fe36ea2218998b0",
           "testCaseName": "Failed Example 5",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/0a465c71c47198030c8212fdd1122e35e06c4ee0.html",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/9c4840c9caed7d6f2d8f585d6fe36ea2218998b0.html",
+          "testCaseApproved": false,
+          "expected": "failed",
+          "procedureResults": [
+            {
+              "procedureName": "sia-r81",
+              "outcomes": [
+                "failed"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "07d22448c8eee64414dd9444263ae4039a0a2d79",
+          "testCaseName": "Failed Example 6",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/07d22448c8eee64414dd9444263ae4039a0a2d79.html",
+          "testCaseApproved": false,
+          "expected": "failed",
+          "procedureResults": [
+            {
+              "procedureName": "sia-r81",
+              "outcomes": [
+                "failed"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "f4ba39778eac51bcbf787a9f173a11504abbfb71",
+          "testCaseName": "Failed Example 7",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/f4ba39778eac51bcbf787a9f173a11504abbfb71.html",
+          "testCaseApproved": false,
+          "expected": "failed",
+          "procedureResults": [
+            {
+              "procedureName": "sia-r81",
+              "outcomes": [
+                "failed"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "b016056025da8b4c5a08c0b72adc7cd2ab65a545",
+          "testCaseName": "Failed Example 8",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/b016056025da8b4c5a08c0b72adc7cd2ab65a545.html",
           "testCaseApproved": false,
           "expected": "failed",
           "procedureResults": [
@@ -12450,6 +12540,21 @@
               ]
             }
           ]
+        },
+        {
+          "testcaseId": "9abd9bcfa7c5eb5000df1bd7e72440c6233566a5",
+          "testCaseName": "Inapplicable Example 7",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/9abd9bcfa7c5eb5000df1bd7e72440c6233566a5.html",
+          "testCaseApproved": false,
+          "expected": "inapplicable",
+          "procedureResults": [
+            {
+              "procedureName": "sia-r81",
+              "outcomes": [
+                "inapplicable"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -12478,19 +12583,19 @@
       "procedureNames": [
         "sia-r16"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
         "reported": [
           "WCAG2:info-and-relationships",
           "WCAG2:name-role-value",
-          "https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA5"
+          "https://www.w3.org/WAI/WCAG22/Techniques/aria/ARIA5"
         ]
       },
       "coverage": {
-        "covered": 14,
-        "untested": 1,
+        "covered": 15,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 15
       },
@@ -12520,7 +12625,7 @@
             {
               "procedureName": "sia-r16",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -12737,7 +12842,7 @@
         ],
         "reported": [
           "WCAG2:info-and-relationships",
-          "https://www.w3.org/WAI/WCAG21/Techniques/html/H43"
+          "https://www.w3.org/WAI/WCAG22/Techniques/html/H43"
         ]
       },
       "coverage": {
@@ -13004,9 +13109,9 @@
         ],
         "reported": [
           "WCAG2:captions-prerecorded",
-          "https://www.w3.org/WAI/WCAG21/Techniques/general/G87",
-          "https://www.w3.org/WAI/WCAG21/Techniques/general/G93",
-          "https://www.w3.org/WAI/WCAG21/Techniques/html/H95"
+          "https://www.w3.org/WAI/WCAG22/Techniques/general/G87",
+          "https://www.w3.org/WAI/WCAG22/Techniques/general/G93",
+          "https://www.w3.org/WAI/WCAG22/Techniques/html/H95"
         ]
       },
       "coverage": {
@@ -13125,10 +13230,10 @@
           "WCAG2:audio-description-or-media-alternative-prerecorded",
           "WCAG2:audio-description-prerecorded",
           "WCAG2:media-alternative-prerecorded",
-          "https://www.w3.org/WAI/WCAG21/Techniques/general/G8",
-          "https://www.w3.org/WAI/WCAG21/Techniques/general/G69",
-          "https://www.w3.org/WAI/WCAG21/Techniques/general/G78",
-          "https://www.w3.org/WAI/WCAG21/Techniques/general/G173"
+          "https://www.w3.org/WAI/WCAG22/Techniques/general/G8",
+          "https://www.w3.org/WAI/WCAG22/Techniques/general/G69",
+          "https://www.w3.org/WAI/WCAG22/Techniques/general/G78",
+          "https://www.w3.org/WAI/WCAG22/Techniques/general/G173"
         ]
       },
       "coverage": {
@@ -13414,9 +13519,9 @@
         "correct": true,
         "expected": [],
         "reported": [
-          "https://www.w3.org/WAI/WCAG21/Techniques/general/G8",
-          "https://www.w3.org/WAI/WCAG21/Techniques/general/G78",
-          "https://www.w3.org/WAI/WCAG21/Techniques/general/G173"
+          "https://www.w3.org/WAI/WCAG22/Techniques/general/G8",
+          "https://www.w3.org/WAI/WCAG22/Techniques/general/G78",
+          "https://www.w3.org/WAI/WCAG22/Techniques/general/G173"
         ]
       },
       "coverage": {
@@ -13545,9 +13650,9 @@
         "correct": true,
         "expected": [],
         "reported": [
-          "https://www.w3.org/WAI/WCAG21/Techniques/general/G87",
-          "https://www.w3.org/WAI/WCAG21/Techniques/general/G93",
-          "https://www.w3.org/WAI/WCAG21/Techniques/html/H95"
+          "https://www.w3.org/WAI/WCAG22/Techniques/general/G87",
+          "https://www.w3.org/WAI/WCAG22/Techniques/general/G93",
+          "https://www.w3.org/WAI/WCAG22/Techniques/html/H95"
         ]
       },
       "coverage": {
@@ -13694,8 +13799,8 @@
         ],
         "reported": [
           "WCAG2:audio-only-and-video-only-prerecorded",
-          "https://www.w3.org/WAI/WCAG21/Techniques/general/G159",
-          "https://www.w3.org/WAI/WCAG21/Techniques/general/G166"
+          "https://www.w3.org/WAI/WCAG22/Techniques/general/G159",
+          "https://www.w3.org/WAI/WCAG22/Techniques/general/G166"
         ]
       },
       "coverage": {
@@ -13981,7 +14086,7 @@
         "correct": true,
         "expected": [],
         "reported": [
-          "https://www.w3.org/WAI/WCAG21/Techniques/general/G166"
+          "https://www.w3.org/WAI/WCAG22/Techniques/general/G166"
         ]
       },
       "coverage": {
@@ -14080,7 +14185,7 @@
         "correct": true,
         "expected": [],
         "reported": [
-          "https://www.w3.org/WAI/WCAG21/Techniques/general/G159"
+          "https://www.w3.org/WAI/WCAG22/Techniques/general/G159"
         ]
       },
       "coverage": {
@@ -14227,9 +14332,9 @@
         ],
         "reported": [
           "WCAG2:audio-description-prerecorded",
-          "https://www.w3.org/WAI/WCAG21/Techniques/general/G8",
-          "https://www.w3.org/WAI/WCAG21/Techniques/general/G78",
-          "https://www.w3.org/WAI/WCAG21/Techniques/general/G173"
+          "https://www.w3.org/WAI/WCAG22/Techniques/general/G8",
+          "https://www.w3.org/WAI/WCAG22/Techniques/general/G78",
+          "https://www.w3.org/WAI/WCAG22/Techniques/general/G173"
         ]
       },
       "coverage": {
@@ -14361,7 +14466,7 @@
         ],
         "reported": [
           "WCAG2:media-alternative-prerecorded",
-          "https://www.w3.org/WAI/WCAG21/Techniques/general/G69"
+          "https://www.w3.org/WAI/WCAG22/Techniques/general/G69"
         ]
       },
       "coverage": {
@@ -14463,7 +14568,7 @@
         ],
         "reported": [
           "WCAG2:label-in-name",
-          "https://www.w3.org/WAI/WCAG21/Techniques/general/G208"
+          "https://www.w3.org/WAI/WCAG22/Techniques/general/G208"
         ]
       },
       "coverage": {
