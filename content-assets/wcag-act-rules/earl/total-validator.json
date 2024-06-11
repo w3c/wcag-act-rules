@@ -9,7 +9,7 @@
         "@type": "Software",
         "title": "Total Validator CI",
         "description": "Total Validator checks websites are accessible, use valid HTML and CSS, have no broken links, and are free from spelling mistakes.",
-        "hasVersion": "17.4.1",
+        "hasVersion": "18.0.1",
         "homepage": "https://www.totalvalidator.com"
       },
       "assertions": [
