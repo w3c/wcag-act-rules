@@ -70,7 +70,7 @@
       "name": "Alfa",
       "release": {
         "@type": "Version",
-        "revision": "0.81.0"
+        "revision": "0.82.0"
       },
       "doap:url": "https://alfa.siteimprove.com"
     },
@@ -50393,7 +50393,7 @@
               "cnt:ContentAsText"
             ],
             "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Passed Example 9</title>\n</head>\n<body>\n\t<label>\n\t\tPassword\n\t\t<input type=\"password\" autocomplete=\"current-password webauthn\" />\n\t</label>\n</body>\n</html>"
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Passed Example 8</title>\n</head>\n<body>\n\t<label>\n\t\tPassword\n\t\t<input type=\"password\" autocomplete=\"current-password webauthn\" />\n\t</label>\n</body>\n</html>"
           },
           "http-vocab:headers": {
             "@list": [
