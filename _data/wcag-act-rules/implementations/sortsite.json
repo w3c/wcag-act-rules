@@ -2,11 +2,11 @@
   "vendor": "PowerMapper",
   "name": "SortSite",
   "version": 6.45,
-  "lastModified": "4 June 2024",
+  "lastModified": "22 July 2024",
   "approvedRules": {
-    "complete": 30,
+    "complete": 29,
     "partial": 0,
-    "inconsistent": 0,
+    "inconsistent": 1,
     "untested": 4
   },
   "proposedRules": {
@@ -1116,19 +1116,17 @@
       "procedureNames": [
         "AccHtmlIframeTabindexInteractive"
       ],
-      "consistency": "complete",
+      "consistency": null,
       "accessibilityRequirements": {
-        "correct": true,
+        "correct": false,
         "expected": [
           "WCAG2:keyboard"
         ],
-        "reported": [
-          "WCAG2:keyboard"
-        ]
+        "reported": []
       },
       "coverage": {
-        "covered": 9,
-        "untested": 0,
+        "covered": 8,
+        "untested": 1,
         "cantTell": 0,
         "testCaseTotal": 9
       },
@@ -1173,7 +1171,7 @@
             {
               "procedureName": "AccHtmlIframeTabindexInteractive",
               "outcomes": [
-                "failed"
+                "untested"
               ]
             }
           ]
