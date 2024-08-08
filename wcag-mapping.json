@@ -96,7 +96,9 @@
       "title": "Form field has non-empty accessible name",
       "permalink": "/standards-guidelines/act/rules/e086e5/",
       "successCriteria": [
-        "name-role-value"
+        "name-role-value",
+        "info-and-relationships",
+        "label-in-name"
       ],
       "wcagTechniques": [],
       "deprecated": false,

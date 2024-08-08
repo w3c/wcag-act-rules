@@ -13260,8 +13260,8 @@
       },
       "coverage": {
         "covered": 8,
-        "untested": 0,
-        "cantTell": 15,
+        "untested": 5,
+        "cantTell": 10,
         "testCaseTotal": 24
       },
       "testCaseResults": [
@@ -13446,76 +13446,76 @@
           ]
         },
         {
-          "testcaseId": "7f585ec08b99c103759f23ea36fe0ee263a7a1b4",
+          "testcaseId": "f92350be3a294ad1a41de6d7202f09bdd4e5d6c0",
           "testCaseName": "Failed Example 4",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/7f585ec08b99c103759f23ea36fe0ee263a7a1b4.html",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/f92350be3a294ad1a41de6d7202f09bdd4e5d6c0.html",
           "testCaseApproved": false,
           "expected": "failed",
           "procedureResults": [
             {
               "procedureName": "Links with identical accessible names and context serve equivalent purpose",
               "outcomes": [
-                "cantTell"
+                "untested"
               ]
             }
           ]
         },
         {
-          "testcaseId": "9c4840c9caed7d6f2d8f585d6fe36ea2218998b0",
+          "testcaseId": "0b01e772dff47d4fd971ca4cfda2a9810843c10a",
           "testCaseName": "Failed Example 5",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/9c4840c9caed7d6f2d8f585d6fe36ea2218998b0.html",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/0b01e772dff47d4fd971ca4cfda2a9810843c10a.html",
           "testCaseApproved": false,
           "expected": "failed",
           "procedureResults": [
             {
               "procedureName": "Links with identical accessible names and context serve equivalent purpose",
               "outcomes": [
-                "cantTell"
+                "untested"
               ]
             }
           ]
         },
         {
-          "testcaseId": "07d22448c8eee64414dd9444263ae4039a0a2d79",
+          "testcaseId": "dddcd76a61f61fa6652f847b66cd77fdcf7724cf",
           "testCaseName": "Failed Example 6",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/07d22448c8eee64414dd9444263ae4039a0a2d79.html",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/dddcd76a61f61fa6652f847b66cd77fdcf7724cf.html",
           "testCaseApproved": false,
           "expected": "failed",
           "procedureResults": [
             {
               "procedureName": "Links with identical accessible names and context serve equivalent purpose",
               "outcomes": [
-                "cantTell"
+                "untested"
               ]
             }
           ]
         },
         {
-          "testcaseId": "f4ba39778eac51bcbf787a9f173a11504abbfb71",
+          "testcaseId": "1286cd0804868cc0f1a5f42a269240100dbdbf2c",
           "testCaseName": "Failed Example 7",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/f4ba39778eac51bcbf787a9f173a11504abbfb71.html",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/1286cd0804868cc0f1a5f42a269240100dbdbf2c.html",
           "testCaseApproved": false,
           "expected": "failed",
           "procedureResults": [
             {
               "procedureName": "Links with identical accessible names and context serve equivalent purpose",
               "outcomes": [
-                "cantTell"
+                "untested"
               ]
             }
           ]
         },
         {
-          "testcaseId": "b016056025da8b4c5a08c0b72adc7cd2ab65a545",
+          "testcaseId": "1379913f0770843f89d37ceaad3a63e36f07924e",
           "testCaseName": "Failed Example 8",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/b016056025da8b4c5a08c0b72adc7cd2ab65a545.html",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/1379913f0770843f89d37ceaad3a63e36f07924e.html",
           "testCaseApproved": false,
           "expected": "failed",
           "procedureResults": [
             {
               "procedureName": "Links with identical accessible names and context serve equivalent purpose",
               "outcomes": [
-                "cantTell"
+                "untested"
               ]
             }
           ]
