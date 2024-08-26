@@ -13,7 +13,7 @@
     "complete": 13,
     "partial": 17,
     "inconsistent": 7,
-    "untested": 15
+    "untested": 16
   },
   "actRuleMapping": [
     {
@@ -13891,6 +13891,15 @@
           ]
         }
       ]
+    },
+    {
+      "ruleId": "2t702h",
+      "ruleName": "Summary element has non-empty accessible name",
+      "ruleApproved": false,
+      "procedureNames": [],
+      "consistency": null,
+      "coverage": null,
+      "testCaseResults": []
     },
     {
       "ruleId": "d0f69e",
