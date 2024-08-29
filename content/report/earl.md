@@ -10,6 +10,7 @@ footer: ""
 github:
   repository: w3c/wcag-act-rules
   path: content/report/earl.md
+
 ---
 
 ## Contribute An Implementation
