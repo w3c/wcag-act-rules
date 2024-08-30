@@ -4603,6 +4603,27 @@
               ]
             }
           ]
+        },
+        {
+          "testcaseId": "94ff40484422832c2910086d4387163aa2d9dd7d",
+          "testCaseName": "Passed Example 2",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2779a5/94ff40484422832c2910086d4387163aa2d9dd7d.html",
+          "testCaseApproved": false,
+          "expected": "passed",
+          "procedureResults": [
+            {
+              "procedureName": "E870",
+              "outcomes": [
+                "untested"
+              ]
+            },
+            {
+              "procedureName": "E869",
+              "outcomes": [
+                "untested"
+              ]
+            }
+          ]
         }
       ]
     },

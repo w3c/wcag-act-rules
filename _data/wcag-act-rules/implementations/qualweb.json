@@ -3867,6 +3867,21 @@
               ]
             }
           ]
+        },
+        {
+          "testcaseId": "94ff40484422832c2910086d4387163aa2d9dd7d",
+          "testCaseName": "Passed Example 2",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2779a5/94ff40484422832c2910086d4387163aa2d9dd7d.html",
+          "testCaseApproved": false,
+          "expected": "passed",
+          "procedureResults": [
+            {
+              "procedureName": "HTML Page has a title",
+              "outcomes": [
+                "untested"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -7555,6 +7570,21 @@
               "procedureName": "Text has minimum contrast",
               "outcomes": [
                 "passed"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "b1e912183f72caaea7523d00b6762d220e3616f0",
+          "testCaseName": "Failed Example 11",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/b1e912183f72caaea7523d00b6762d220e3616f0.html",
+          "testCaseApproved": false,
+          "expected": "failed",
+          "procedureResults": [
+            {
+              "procedureName": "Text has minimum contrast",
+              "outcomes": [
+                "untested"
               ]
             }
           ]
