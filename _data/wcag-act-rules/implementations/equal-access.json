@@ -2,7 +2,7 @@
   "vendor": "IBM Accessibility",
   "name": "Equal Access Accessibility Checker",
   "version": "3.1.42-rc.0",
-  "lastModified": "7 August 2024",
+  "lastModified": "31 August 2024",
   "approvedRules": {
     "complete": 20,
     "partial": 4,
@@ -3061,16 +3061,19 @@
       "ruleName": "Element marked as decorative is not exposed",
       "ruleApproved": true,
       "procedureNames": [
-        "aria_attribute_valid:Pass,Fail_invalid_role_attr,Fail_invalid_implicit_role_attr"
+        "aria_attribute_valid:Pass,Fail_invalid_role_attr,Fail_invalid_implicit_role_attr",
+        "img_alt_null:potential_aria_override"
       ],
       "consistency": "partial",
       "accessibilityRequirements": {
-        "correct": true,
+        "correct": false,
         "expected": [],
-        "reported": []
+        "reported": [
+          "WCAG2:non-text-content"
+        ]
       },
       "coverage": {
-        "covered": 9,
+        "covered": 10,
         "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 10
@@ -3085,6 +3088,12 @@
           "procedureResults": [
             {
               "procedureName": "aria_attribute_valid:Pass,Fail_invalid_role_attr,Fail_invalid_implicit_role_attr",
+              "outcomes": [
+                "inapplicable"
+              ]
+            },
+            {
+              "procedureName": "img_alt_null:potential_aria_override",
               "outcomes": [
                 "inapplicable"
               ]
@@ -3103,6 +3112,12 @@
               "outcomes": [
                 "passed"
               ]
+            },
+            {
+              "procedureName": "img_alt_null:potential_aria_override",
+              "outcomes": [
+                "inapplicable"
+              ]
             }
           ]
         },
@@ -3115,6 +3130,12 @@
           "procedureResults": [
             {
               "procedureName": "aria_attribute_valid:Pass,Fail_invalid_role_attr,Fail_invalid_implicit_role_attr",
+              "outcomes": [
+                "inapplicable"
+              ]
+            },
+            {
+              "procedureName": "img_alt_null:potential_aria_override",
               "outcomes": [
                 "inapplicable"
               ]
@@ -3133,6 +3154,12 @@
               "outcomes": [
                 "passed"
               ]
+            },
+            {
+              "procedureName": "img_alt_null:potential_aria_override",
+              "outcomes": [
+                "inapplicable"
+              ]
             }
           ]
         },
@@ -3145,6 +3172,12 @@
           "procedureResults": [
             {
               "procedureName": "aria_attribute_valid:Pass,Fail_invalid_role_attr,Fail_invalid_implicit_role_attr",
+              "outcomes": [
+                "inapplicable"
+              ]
+            },
+            {
+              "procedureName": "img_alt_null:potential_aria_override",
               "outcomes": [
                 "inapplicable"
               ]
@@ -3163,6 +3196,12 @@
               "outcomes": [
                 "inapplicable"
               ]
+            },
+            {
+              "procedureName": "img_alt_null:potential_aria_override",
+              "outcomes": [
+                "inapplicable"
+              ]
             }
           ]
         },
@@ -3177,6 +3216,12 @@
               "procedureName": "aria_attribute_valid:Pass,Fail_invalid_role_attr,Fail_invalid_implicit_role_attr",
               "outcomes": [
                 "failed"
+              ]
+            },
+            {
+              "procedureName": "img_alt_null:potential_aria_override",
+              "outcomes": [
+                "inapplicable"
               ]
             }
           ]
@@ -3193,6 +3238,12 @@
               "outcomes": [
                 "passed"
               ]
+            },
+            {
+              "procedureName": "img_alt_null:potential_aria_override",
+              "outcomes": [
+                "failed"
+              ]
             }
           ]
         },
@@ -3208,6 +3259,12 @@
               "outcomes": [
                 "failed"
               ]
+            },
+            {
+              "procedureName": "img_alt_null:potential_aria_override",
+              "outcomes": [
+                "inapplicable"
+              ]
             }
           ]
         },
@@ -3222,6 +3279,12 @@
               "procedureName": "aria_attribute_valid:Pass,Fail_invalid_role_attr,Fail_invalid_implicit_role_attr",
               "outcomes": [
                 "passed"
+              ]
+            },
+            {
+              "procedureName": "img_alt_null:potential_aria_override",
+              "outcomes": [
+                "inapplicable"
               ]
             }
           ]
