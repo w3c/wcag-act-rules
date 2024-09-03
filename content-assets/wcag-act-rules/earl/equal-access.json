@@ -3832,6 +3832,18 @@
           "result": {
             "outcome": "earl:inapplicable"
           }
+        },
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "img_alt_null:potential_aria_override",
+            "isPartOf": [
+              "WCAG2:non-text-content"
+            ]
+          },
+          "result": {
+            "outcome": "earl:inapplicable"
+          }
         }
       ]
     },
@@ -3850,6 +3862,18 @@
           "result": {
             "outcome": "earl:passed"
           }
+        },
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "img_alt_null:potential_aria_override",
+            "isPartOf": [
+              "WCAG2:non-text-content"
+            ]
+          },
+          "result": {
+            "outcome": "earl:inapplicable"
+          }
         }
       ]
     },
@@ -3863,6 +3887,18 @@
             "title": "aria_attribute_valid:Pass,Fail_invalid_role_attr,Fail_invalid_implicit_role_attr",
             "isPartOf": [
               []
+            ]
+          },
+          "result": {
+            "outcome": "earl:inapplicable"
+          }
+        },
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "img_alt_null:potential_aria_override",
+            "isPartOf": [
+              "WCAG2:non-text-content"
             ]
           },
           "result": {
@@ -3886,6 +3922,18 @@
           "result": {
             "outcome": "earl:passed"
           }
+        },
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "img_alt_null:potential_aria_override",
+            "isPartOf": [
+              "WCAG2:non-text-content"
+            ]
+          },
+          "result": {
+            "outcome": "earl:inapplicable"
+          }
         }
       ]
     },
@@ -3899,6 +3947,18 @@
             "title": "aria_attribute_valid:Pass,Fail_invalid_role_attr,Fail_invalid_implicit_role_attr",
             "isPartOf": [
               []
+            ]
+          },
+          "result": {
+            "outcome": "earl:inapplicable"
+          }
+        },
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "img_alt_null:potential_aria_override",
+            "isPartOf": [
+              "WCAG2:non-text-content"
             ]
           },
           "result": {
@@ -3922,6 +3982,18 @@
           "result": {
             "outcome": "earl:inapplicable"
           }
+        },
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "img_alt_null:potential_aria_override",
+            "isPartOf": [
+              "WCAG2:non-text-content"
+            ]
+          },
+          "result": {
+            "outcome": "earl:inapplicable"
+          }
         }
       ]
     },
@@ -3939,6 +4011,18 @@
           },
           "result": {
             "outcome": "earl:failed"
+          }
+        },
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "img_alt_null:potential_aria_override",
+            "isPartOf": [
+              "WCAG2:non-text-content"
+            ]
+          },
+          "result": {
+            "outcome": "earl:inapplicable"
           }
         }
       ]
@@ -3958,6 +4042,18 @@
           "result": {
             "outcome": "earl:passed"
           }
+        },
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "img_alt_null:potential_aria_override",
+            "isPartOf": [
+              "WCAG2:non-text-content"
+            ]
+          },
+          "result": {
+            "outcome": "earl:failed"
+          }
         }
       ]
     },
@@ -3976,6 +4072,18 @@
           "result": {
             "outcome": "earl:failed"
           }
+        },
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "img_alt_null:potential_aria_override",
+            "isPartOf": [
+              "WCAG2:non-text-content"
+            ]
+          },
+          "result": {
+            "outcome": "earl:inapplicable"
+          }
         }
       ]
     },
@@ -3993,6 +4101,18 @@
           },
           "result": {
             "outcome": "earl:passed"
+          }
+        },
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "img_alt_null:potential_aria_override",
+            "isPartOf": [
+              "WCAG2:non-text-content"
+            ]
+          },
+          "result": {
+            "outcome": "earl:inapplicable"
           }
         }
       ]

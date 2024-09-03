@@ -848,6 +848,16 @@
       "proposed": true
     },
     {
+      "title": "Summary element has non-empty accessible name",
+      "permalink": "/standards-guidelines/act/rules/2t702h/proposed/",
+      "successCriteria": [
+        "name-role-value"
+      ],
+      "wcagTechniques": [],
+      "deprecated": false,
+      "proposed": true
+    },
+    {
       "title": "Table header cell has assigned cells",
       "permalink": "/standards-guidelines/act/rules/d0f69e/proposed/",
       "successCriteria": [

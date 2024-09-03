@@ -13,7 +13,7 @@
     "complete": 7,
     "partial": 4,
     "inconsistent": 1,
-    "untested": 40
+    "untested": 41
   },
   "actRuleMapping": [
     {
@@ -584,6 +584,21 @@
               "procedureName": "2.4.2-page-title-defined",
               "outcomes": [
                 "inapplicable"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "94ff40484422832c2910086d4387163aa2d9dd7d",
+          "testCaseName": "Passed Example 2",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2779a5/94ff40484422832c2910086d4387163aa2d9dd7d.html",
+          "testCaseApproved": false,
+          "expected": "passed",
+          "procedureResults": [
+            {
+              "procedureName": "2.4.2-page-title-defined",
+              "outcomes": [
+                "untested"
               ]
             }
           ]
@@ -4245,6 +4260,15 @@
     {
       "ruleId": "4e8ab6",
       "ruleName": "Element with role attribute has required states and properties",
+      "ruleApproved": false,
+      "procedureNames": [],
+      "consistency": null,
+      "coverage": null,
+      "testCaseResults": []
+    },
+    {
+      "ruleId": "2t702h",
+      "ruleName": "Summary element has non-empty accessible name",
       "ruleApproved": false,
       "procedureNames": [],
       "consistency": null,

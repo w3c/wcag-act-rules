@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> afw4f7</p>
-  <p><strong>Date:</strong> Updated 25 April 2024</p>
+  <p><strong>Date:</strong> Updated 30 August 2024</p>
   <p><strong>Authors:</strong> <a href="https://www.linkedin.com/in/brianbors/">Brian Bors</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -20,7 +20,7 @@ rule_meta:
   original_file: text-contrast-afw4f7.md
   description: |
     This rule checks that the highest possible contrast of every text character with its background meets the minimal contrast requirement.
-  last_modified: 25 April 2024
+  last_modified: 30 August 2024
   scs_tested:
     - handle: Contrast (Minimum)
       num: 1.4.3
@@ -374,6 +374,18 @@ This text in a [semantic button][semantic role] has a contrast ratio of 3.85:1.
 
 ```html
 <div role="button" style="color: #777; background: #EEE;">My button!</div>
+```
+
+#### Failed Example 11
+
+<a class="example-link" title="Failed Example 11" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/b1e912183f72caaea7523d00b6762d220e3616f0.html">Open in a new tab</a>
+
+The grey text has a contrast between 2.7:1 and 2.9:1 against the grey text shadow.
+
+```html
+<p style="background: #fff; color: #666; text-shadow: #aaa 2px 2px 4px, #aaa -2px 2px 4px, #aaa 2px -2px 4px, #aaa -2px -2px 4px;">
+    Some text in a human language
+  </p>
 ```
 
 ### Inapplicable

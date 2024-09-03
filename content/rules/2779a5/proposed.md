@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 2779a5</p>
-  <p><strong>Date:</strong> Updated 1 August 2024</p>
+  <p><strong>Date:</strong> Updated 30 August 2024</p>
   <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/brynanders">Bryn Anderson</a>, <a href="https://github.com/jkodu">Jey Nandakumar</a>, <a href="https://github.com/skotkjerra">Stein Erik Skotkjerra</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -20,7 +20,7 @@ rule_meta:
   original_file: html-page-non-empty-title-2779a5.md
   description: |
     This rule checks that a non-embedded HTML page has a non-empty title.
-  last_modified: 1 August 2024
+  last_modified: 30 August 2024
   scs_tested:
     - handle: Page Titled
       num: 2.4.2
@@ -157,14 +157,18 @@ This page has a `title` element with content.
 
 #### Passed Example 2
 
-<a class="example-link" title="Passed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/2779a5/64771c390e57375a822a7223362ea7bb859c0a96.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/2779a5/94ff40484422832c2910086d4387163aa2d9dd7d.html">Open in a new tab</a>
 
-This page has a `title` element that serves as the title for the page and the `iframe` since the `iframe` does not have its own.
+This page has a `title` element that serves as the title for the page. This rule doesn't take into account HTML pages embedded into the target document.
 
 ```html
 <html>
-	<title>This page gives a title to an iframe</title>
-	<iframe src="/test-assets/sc2-4-2-title-page-without-title.html"></iframe>
+	<head>
+		<title>This page gives a title to an iframe</title>
+	</head>
+	<body>
+		<iframe src="/test-assets/sc2-4-2-title-page-without-title.html"></iframe>
+	</body>
 </html>
 ```
 
