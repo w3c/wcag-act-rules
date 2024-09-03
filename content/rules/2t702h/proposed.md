@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 2t702h</p>
-  <p><strong>Date:</strong> Updated 26 August 2024</p>
+  <p><strong>Date:</strong> Updated 3 September 2024</p>
   <p><strong>Authors:</strong> <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -20,7 +20,7 @@ rule_meta:
   original_file: summary-non-empty-accessible-name-2t702h.md
   description: |
     This rule checks that each `summary` element has a non-empty accessible name.
-  last_modified: 26 August 2024
+  last_modified: 3 September 2024
   scs_tested:
     - handle: Name, Role, Value
       num: 4.1.2
@@ -29,11 +29,11 @@ rule_meta:
 
 ## Applicability
 
-This rule applies to HTML `summary` elements for which all the following is true:
+This rule applies to HTML `summary` elements for which all the following are true:
 
 - the element is [included in the accessibility tree][]; and
 - the element works as the [summary button for its parent `details` element][details summary]; and
-- the element has no [explicit role][], or the [explicit role][] is ignored due to a [presentational role conflict][].
+- the element has no [explicit role][], or the [explicit role][] is ignored due to a [presentational role conflict][presentational roles conflict].
 
 ## Expectation
 
@@ -177,7 +177,7 @@ This `summary` element has no [accessible name][], or an accessible name with ju
 
 <a class="example-link" title="Failed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/2t702h/a7fd233a404e737baaee10e34c35e40bbe7f14bb.html">Open in a new tab</a>
 
-This `summary` element has an [explicit role][] of `none`. However, it is [focusable][] (by default) which causes [Presentational Roles Conflict Resolution][]. It fails because it has an empty [accessible name][].
+This `summary` element has an [explicit role][] of `none`. However, it is [focusable][] (by default) which causes [Presentational Roles Conflict Resolution][presentational roles conflict]. It fails because it has an empty [accessible name][].
 
 ```html
 <details>
@@ -348,7 +348,7 @@ The _WAI ARIA Specifications_ group both the WAI ARIA W3C Recommendation and ARI
 [focusable]: #focusable 'Definition of focusable'
 [included in the accessibility tree]: #included-in-the-accessibility-tree 'Definition of included in the accessibility tree'
 [inclusive ancestors]: https://dom.spec.whatwg.org/#concept-tree-inclusive-ancestor 'DOM Definition of Inclusive Ancestor'
-[presentational roles conflict resolution]: https://www.w3.org/TR/wai-aria-1.2/#conflict_resolution_presentation_none 'Presentational Roles Conflict Resolution'
+[presentational roles conflict]: https://www.w3.org/TR/wai-aria-1.2/#conflict_resolution_presentation_none 'Presentational Roles Conflict Resolution'
 [role attribute]: https://www.w3.org/TR/role-attribute/ 'Specification of the role attribute'
 [rules for parsing integers]: https://html.spec.whatwg.org/#rules-for-parsing-integers
 [sequential focus navigation]: https://html.spec.whatwg.org/multipage/interaction.html#sequential-focus-navigation
