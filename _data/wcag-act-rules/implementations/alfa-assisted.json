@@ -7603,7 +7603,7 @@
             {
               "procedureName": "sia-r69",
               "outcomes": [
-                "cantTell"
+                "failed"
               ]
             }
           ]
@@ -12220,9 +12220,9 @@
         ]
       },
       "coverage": {
-        "covered": 16,
+        "covered": 21,
         "untested": 0,
-        "cantTell": 5,
+        "cantTell": 0,
         "testCaseTotal": 24
       },
       "testCaseResults": [
@@ -12416,7 +12416,7 @@
             {
               "procedureName": "sia-r81",
               "outcomes": [
-                "cantTell"
+                "failed"
               ]
             }
           ]
@@ -12431,7 +12431,7 @@
             {
               "procedureName": "sia-r81",
               "outcomes": [
-                "cantTell"
+                "failed"
               ]
             }
           ]
@@ -12446,7 +12446,7 @@
             {
               "procedureName": "sia-r81",
               "outcomes": [
-                "cantTell"
+                "failed"
               ]
             }
           ]
@@ -12461,7 +12461,7 @@
             {
               "procedureName": "sia-r81",
               "outcomes": [
-                "cantTell"
+                "failed"
               ]
             }
           ]
@@ -12476,7 +12476,7 @@
             {
               "procedureName": "sia-r81",
               "outcomes": [
-                "cantTell"
+                "failed"
               ]
             }
           ]

@@ -70,7 +70,7 @@
       "name": "Alfa",
       "release": {
         "@type": "Version",
-        "revision": "0.89.0"
+        "revision": "0.90.1"
       },
       "doap:url": "https://alfa.siteimprove.com"
     },
@@ -17817,10 +17817,11 @@
     {
       "@type": "Assertion",
       "earl:assertedBy": "Alfa",
-      "earl:mode": "earl:automatic",
+      "earl:mode": "earl:semiAuto",
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:cantTell",
+        "info": "The links do not resolve to the same or equivalent resources",
+        "outcome": "earl:failed",
         "earl:pointer": {
           "@type": [
             "ptr:Pointer",
@@ -35012,10 +35013,11 @@
     {
       "@type": "Assertion",
       "earl:assertedBy": "Alfa",
-      "earl:mode": "earl:automatic",
+      "earl:mode": "earl:semiAuto",
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:cantTell",
+        "info": "The highest possible contrast of the text is 2.47:1 which is\n        below the required contrast of 4.5:1",
+        "outcome": "earl:failed",
         "earl:pointer": {
           "@type": [
             "ptr:Pointer",
@@ -35086,10 +35088,11 @@
     {
       "@type": "Assertion",
       "earl:assertedBy": "Alfa",
-      "earl:mode": "earl:automatic",
+      "earl:mode": "earl:semiAuto",
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:cantTell",
+        "info": "The links do not resolve to the same or equivalent resources",
+        "outcome": "earl:failed",
         "earl:pointer": {
           "@type": [
             "ptr:Pointer",
@@ -55382,10 +55385,11 @@
     {
       "@type": "Assertion",
       "earl:assertedBy": "Alfa",
-      "earl:mode": "earl:automatic",
+      "earl:mode": "earl:semiAuto",
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:cantTell",
+        "info": "The links do not resolve to the same or equivalent resources",
+        "outcome": "earl:failed",
         "earl:pointer": {
           "@type": [
             "ptr:Pointer",
@@ -58886,10 +58890,11 @@
     {
       "@type": "Assertion",
       "earl:assertedBy": "Alfa",
-      "earl:mode": "earl:automatic",
+      "earl:mode": "earl:semiAuto",
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:cantTell",
+        "info": "The links do not resolve to the same or equivalent resources",
+        "outcome": "earl:failed",
         "earl:pointer": {
           "@type": [
             "ptr:Pointer",
@@ -61935,10 +61940,11 @@
     {
       "@type": "Assertion",
       "earl:assertedBy": "Alfa",
-      "earl:mode": "earl:automatic",
+      "earl:mode": "earl:semiAuto",
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:cantTell",
+        "info": "The links do not resolve to the same or equivalent resources",
+        "outcome": "earl:failed",
         "earl:pointer": {
           "@type": [
             "ptr:Pointer",
