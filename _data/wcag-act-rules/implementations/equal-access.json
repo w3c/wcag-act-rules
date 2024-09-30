@@ -3951,6 +3951,21 @@
               ]
             }
           ]
+        },
+        {
+          "testcaseId": "60574540bb0248b7670f5c04df10983520878860",
+          "testCaseName": "Failed Example 6",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2779a5/60574540bb0248b7670f5c04df10983520878860.html",
+          "testCaseApproved": false,
+          "expected": "failed",
+          "procedureResults": [
+            {
+              "procedureName": "page_title_exists:Pass_0,Fail_1,Fail_2,Fail_3",
+              "outcomes": [
+                "untested"
+              ]
+            }
+          ]
         }
       ]
     },
