@@ -4803,6 +4803,24 @@
     },
     {
       "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2779a5/94ff40484422832c2910086d4387163aa2d9dd7d.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "page_title_exists:Pass_0,Fail_1,Fail_2,Fail_3",
+            "isPartOf": [
+              "WCAG2:page-titled"
+            ]
+          },
+          "result": {
+            "outcome": "earl:passed"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
       "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59796f/8c29bcb24ac0f448846a2ffdad4c9693d5aef8c6.html",
       "assertions": [
         {
@@ -9426,6 +9444,24 @@
           },
           "result": {
             "outcome": "earl:failed"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/b1e912183f72caaea7523d00b6762d220e3616f0.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "text_contrast_sufficient:pass,fail_contrast,potential_same_color,potential_graphic_background,potential_text_shadow",
+            "isPartOf": [
+              "WCAG2:contrast-minimum"
+            ]
+          },
+          "result": {
+            "outcome": "earl:passed"
           }
         }
       ]
