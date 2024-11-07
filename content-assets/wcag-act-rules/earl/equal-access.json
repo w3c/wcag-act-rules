@@ -4821,6 +4821,24 @@
     },
     {
       "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2779a5/60574540bb0248b7670f5c04df10983520878860.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "page_title_exists:Pass_0,Fail_1,Fail_2,Fail_3",
+            "isPartOf": [
+              "WCAG2:page-titled"
+            ]
+          },
+          "result": {
+            "outcome": "earl:failed"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
       "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59796f/8c29bcb24ac0f448846a2ffdad4c9693d5aef8c6.html",
       "assertions": [
         {
@@ -5538,7 +5556,7 @@
             ]
           },
           "result": {
-            "outcome": "earl:passed"
+            "outcome": "earl:failed"
           }
         }
       ]
@@ -10811,7 +10829,7 @@
             ]
           },
           "result": {
-            "outcome": "earl:failed"
+            "outcome": "earl:passed"
           }
         }
       ]
@@ -10829,7 +10847,7 @@
             ]
           },
           "result": {
-            "outcome": "earl:failed"
+            "outcome": "earl:passed"
           }
         }
       ]
@@ -11081,7 +11099,7 @@
             ]
           },
           "result": {
-            "outcome": "earl:inapplicable"
+            "outcome": "earl:passed"
           }
         },
         {
@@ -11111,7 +11129,7 @@
             ]
           },
           "result": {
-            "outcome": "earl:inapplicable"
+            "outcome": "earl:passed"
           }
         },
         {
@@ -11381,7 +11399,7 @@
             ]
           },
           "result": {
-            "outcome": "earl:inapplicable"
+            "outcome": "earl:passed"
           }
         },
         {
