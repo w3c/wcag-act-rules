@@ -2,7 +2,7 @@
   "vendor": "IBM Accessibility",
   "name": "Equal Access Accessibility Checker",
   "version": "3.1.42-rc.0",
-  "lastModified": "2 October 2024",
+  "lastModified": "7 November 2024",
   "approvedRules": {
     "complete": 20,
     "partial": 4,
@@ -3962,7 +3962,7 @@
             {
               "procedureName": "page_title_exists:Pass_0,Fail_1,Fail_2,Fail_3",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -4268,7 +4268,7 @@
         ]
       },
       "coverage": {
-        "covered": 16,
+        "covered": 17,
         "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 18
@@ -4464,7 +4464,7 @@
             {
               "procedureName": "img_alt_valid:pass,fail_blank_alt,fail_no_alt,fail_blank_title",
               "outcomes": [
-                "passed"
+                "failed"
               ]
             }
           ]
@@ -9321,7 +9321,7 @@
         ]
       },
       "coverage": {
-        "covered": 8,
+        "covered": 10,
         "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 11
@@ -9352,7 +9352,7 @@
             {
               "procedureName": "frame_title_exists:Pass_0,Fail_1",
               "outcomes": [
-                "failed"
+                "passed"
               ]
             }
           ]
@@ -9367,7 +9367,7 @@
             {
               "procedureName": "frame_title_exists:Pass_0,Fail_1",
               "outcomes": [
-                "failed"
+                "passed"
               ]
             }
           ]
@@ -9662,7 +9662,7 @@
             {
               "procedureName": "aria_attribute_required:pass,fail_missing",
               "outcomes": [
-                "inapplicable"
+                "passed"
               ]
             },
             {
@@ -9683,7 +9683,7 @@
             {
               "procedureName": "aria_attribute_required:pass,fail_missing",
               "outcomes": [
-                "inapplicable"
+                "passed"
               ]
             },
             {
@@ -9872,7 +9872,7 @@
             {
               "procedureName": "aria_attribute_required:pass,fail_missing",
               "outcomes": [
-                "inapplicable"
+                "passed"
               ]
             },
             {
