@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> e88epe</p>
-  <p><strong>Date:</strong> Updated 25 January 2024</p>
+  <p><strong>Date:</strong> Updated 21 November 2024</p>
   <p><strong>Authors:</strong> <a href="https://www.linkedin.com/in/brianbors/">Brian Bors</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
   
@@ -22,7 +22,7 @@ rule_meta:
   original_file: image-not-in-acc-tree-is-decorative-e88epe.md
   description: |
     This rule checks that visible `img`, `svg` and `canvas` elements that are ignored by assistive technologies are decorative.
-  last_modified: 25 January 2024
+  last_modified: 21 November 2024
   scs_tested:
     - handle: Non-text Content
       num: 1.1.1
@@ -401,7 +401,7 @@ An element is _focusable_ if one or both of the following are true:
 - the element is part of [sequential focus navigation][]; or
 - the element has a [tabindex value][] that is not null.
 
-**Exception**: Elements that lose focus during a period of up to 1 second after gaining focus, without the user interacting with the page the element is on, are not considered _focusable_.
+**Exception**: Elements that lose focus and do not regain focus during a period of up to 1 second after gaining focus, without the user interacting with the page the element is on, are not considered _focusable_.
 
 Notes:
 
