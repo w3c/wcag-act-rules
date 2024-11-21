@@ -47,23 +47,6 @@ Each test target's `autocomplete` [attribute value][] is a [space separated][] l
 4. A required token from the [correct autocomplete field][]; then
 5. An optional "webauthn" token.
 
-## Assumptions
-
-The `autocomplete` attribute is used on form fields that correspond to [Input Purposes for User Interface Components](https://www.w3.org/TR/WCAG22/#input-purposes) and collect information about the user.
-
-If the `autocomplete` attribute is used to describe "custom" taxonomy, for example using the custom autocomplete value "banner" (`<input type="text" autocomplete="banner" />`), success criterion [1.3.5 Identify Input Purpose][sc135] may be satisfied even if this rule failed.
-
-The `aria-disabled` state is used on `input` elements which are not part of [sequential focus navigation][] and are not otherwise [operable](https://www.w3.org/TR/wai-aria-1.2/#dfn-operable). If this is not the case, this rule may be inapplicable on elements that are still operable and require a valid `autocomplete` attribute to satisfy success criterion [1.3.5 Identify Input Purpose][sc135].
-
-The purpose of a control is programmatically identifiable even when its `autocomplete` [attribute value][] is not an [appropriate field name for the form control][].
-
-## Accessibility Support
-
-- While `autocomplete` is a promising technique for supporting personalization in HTML, support for this in assistive technologies is fairly limited.
-- Implementation of [Presentational Roles Conflict Resolution][] varies from one browser or assistive technology to another. Depending on this, some elements can have a [semantic role][] of `none` and fail this rule with some technology but users of other technologies would not experience any accessibility issue.
-- In some user agents, querying the value of the `autocomplete` property returns an empty string ("") even when the attribute was set according to the rule's expectations. It affects assistive technologies which rely on this property to personalize input fields collecting information about the user.
-- Authors may assign inappropriate `autocomplete` attribute values. Moreover, HTML specifications restrict certain `autocomplete` attribute values to specific form controls. Mismatches between `autocomplete` attribute values and form control types may or may not lead to a failure of [success criterion 1.3.5 Identify Input Purpose](https://www.w3.org/TR/WCAG22/#identify-input-purpose). However, this rule focuses exclusively on validating valid `autocomplete` attribute values, disregarding their contextual appropriateness.
-
 ## Background
 
 The intent of this rule is to ensure that the `autocomplete` attribute can be used to support personalization. Many users may find it easier to fill out forms if those can be styled or laid out in a way that is familiar to them. Assistive technologies can do this when a form control is marked up in such a way that its purpose can be understood. For instance, assistive technologies could add familiar icons and colors to different fields, making it easier for the user to understand what the form does.
@@ -75,6 +58,23 @@ The auto-completing feature of the `autocomplete` attribute benefits many users,
 The [fixed value](#73f2c2:fixed-value) condition in the Applicability is excluding `input` elements that do not consider the `autocomplete` attribute, based on their `type` [attribute value][]; `input` elements with a `type` [attribute value][] of `hidden` are excluded by the [hidden](#73f2c2:hidden) condition.
 
 On an `input` element with a `type` [attribute value][] of `hidden`, the autocomplete attribute wears the [autofill anchor mantle](https://html.spec.whatwg.org/#autofill-anchor-mantle), describing the meaning of the given value. In all other cases, it wears the [autofill expectation mantle](https://html.spec.whatwg.org/#autofill-expectation-mantle).
+
+### Assumptions
+
+The `autocomplete` attribute is used on form fields that correspond to [Input Purposes for User Interface Components](https://www.w3.org/TR/WCAG22/#input-purposes) and collect information about the user.
+
+If the `autocomplete` attribute is used to describe "custom" taxonomy, for example using the custom autocomplete value "banner" (`<input type="text" autocomplete="banner" />`), success criterion [1.3.5 Identify Input Purpose][sc135] may be satisfied even if this rule failed.
+
+The `aria-disabled` state is used on `input` elements which are not part of [sequential focus navigation][] and are not otherwise [operable](https://www.w3.org/TR/wai-aria-1.2/#dfn-operable). If this is not the case, this rule may be inapplicable on elements that are still operable and require a valid `autocomplete` attribute to satisfy success criterion [1.3.5 Identify Input Purpose][sc135].
+
+The purpose of a control is programmatically identifiable even when its `autocomplete` [attribute value][] is not an [appropriate field name for the form control][].
+
+### Accessibility Support
+
+- While `autocomplete` is a promising technique for supporting personalization in HTML, support for this in assistive technologies is fairly limited.
+- Implementation of [Presentational Roles Conflict Resolution][] varies from one browser or assistive technology to another. Depending on this, some elements can have a [semantic role][] of `none` and fail this rule with some technology but users of other technologies would not experience any accessibility issue.
+- In some user agents, querying the value of the `autocomplete` property returns an empty string ("") even when the attribute was set according to the rule's expectations. It affects assistive technologies which rely on this property to personalize input fields collecting information about the user.
+- Authors may assign inappropriate `autocomplete` attribute values. Moreover, HTML specifications restrict certain `autocomplete` attribute values to specific form controls. Mismatches between `autocomplete` attribute values and form control types may or may not lead to a failure of [success criterion 1.3.5 Identify Input Purpose](https://www.w3.org/TR/WCAG22/#identify-input-purpose). However, this rule focuses exclusively on validating valid `autocomplete` attribute values, disregarding their contextual appropriateness.
 
 ### Bibliography
 
@@ -489,15 +489,19 @@ Namespaced elements are not limited to elements described in a specification. Th
 
 ### Outcome {#outcome}
 
-An _outcome_ is a conclusion that comes from evaluating an ACT Rule on a [test subject](https://www.w3.org/TR/act-rules-format/#test-subject) or one of its constituent [test target](https://www.w3.org/TR/act-rules-format/#test-target). An outcome can be one of the three following types:
+A conclusion that comes from evaluating an ACT Rule on a [test subject][] or one of its constituent test target. An outcome can be one of the five following types:
 
 - **Inapplicable:** No part of the test subject matches the applicability
-- **Passed:** A [test target](https://www.w3.org/TR/act-rules-format/#test-target) meets all expectations
-- **Failed:** A [test target](https://www.w3.org/TR/act-rules-format/#test-target) does not meet all expectations
+- **Passed:** A [test target][] meets all expectations
+- **Failed:** A [test target][] does not meet all expectations
+- **cantTell:** Whether the rule is applicable, or not all expectations were met could not be fully determined by the tester.
+- **Untested**: The tester has not attempted to evaluate the test subject.
 
-**Note:** A rule has one `passed` or `failed` outcome for every [test target](https://www.w3.org/TR/act-rules-format/#test-target). When there are no test targets the rule has one `inapplicable` outcome. This means that each [test subject](https://www.w3.org/TR/act-rules-format/#test-subject) will have one or more outcomes.
+**Note**: A rule has one `passed` or `failed` outcome for every [test target][]. When a tester evaluates a test target it can also be reported as `cantTell` if the rule cannot be tested in its entirety. For example, when applicability was automated, but the expectations have to be evaluated manually.
 
-**Note:** Implementations using the [EARL10-Schema](https://www.w3.org/TR/EARL10-Schema/) can express the outcome with the [outcome property](https://www.w3.org/TR/EARL10-Schema/#outcome). In addition to `passed`, `failed` and `inapplicable`, EARL 1.0 also defined an `incomplete` outcome. While this cannot be the outcome of an ACT Rule when applied in its entirety, it often happens that rules are only partially evaluated. For example, when applicability was automated, but the expectations have to be evaluated manually. Such "interim" results can be expressed with the `incomplete` outcome.
+When there are no test targets the rule has one `inapplicable` outcome. If the tester is unable to determine whether there are test targets there will be one `cantTell` outcome. And when no evaluation has occurred the test target has one untested outcome. This means that each [test subject][] always has one or more outcomes.
+
+Outcomes used in ACT Rules can be expressed using the [outcome property][] of the [[EARL10-Schema]][].
 
 ### Programmatically Hidden {#programmatically-hidden}
 
@@ -553,6 +557,7 @@ The _WAI ARIA Specifications_ group both the WAI ARIA W3C Recommendation and ARI
 [correct autocomplete field]: #correct-autocomplete-field 'Definition of Correct autocomplete field'
 [disabled element]: #disabled-element 'Definition of Disabled Element'
 [disabled pseudo-class]: https://drafts.csswg.org/selectors/#disabled-pseudo "CSS Selectors Level 4 (Editor's Draft), definition of the :disabled pseudo-class"
+[earl10-schema]: https://www.w3.org/TR/act-rules-format-1.1/#biblio-earl10-schema
 [element]: https://dom.spec.whatwg.org/#element 'DOM element, 2021/05/31'
 [enumerated attributes]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#enumerated-attribute 'HTML Specification of Enumerated Attribute'
 [examples of included in the accessibility tree]: https://act-rules.github.io/pages/examples/included-in-the-accessibility-tree/
@@ -571,6 +576,7 @@ The _WAI ARIA Specifications_ group both the WAI ARIA W3C Recommendation and ARI
 [marked as decorative]: #marked-as-decorative 'Definition of Marked as Decorative'
 [namespaceuri]: https://dom.spec.whatwg.org/#dom-element-namespaceuri 'DOM Element namespaceURI, 2021/05/31'
 [numbers]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#numbers 'HTML Specification of Number Parsing'
+[outcome property]: https://www.w3.org/TR/EARL10-Schema/#outcome
 [presentational roles conflict resolution]: https://www.w3.org/TR/wai-aria-1.2/#conflict_resolution_presentation_none 'Presentational Roles Conflict Resolution'
 [programmatically hidden]: #programmatically-hidden 'Definition of Programmatically Hidden'
 [pure decoration]: https://www.w3.org/TR/WCAG22/#dfn-pure-decoration 'WCAG definition of Pure Decoration'
@@ -584,6 +590,8 @@ The _WAI ARIA Specifications_ group both the WAI ARIA W3C Recommendation and ARI
 [space separated]: https://html.spec.whatwg.org/#set-of-space-separated-tokens 'HTML Set of space separated tokens 2020/08/12'
 [tabindex attribute]: https://html.spec.whatwg.org/#attr-tabindex
 [tabindex value]: https://html.spec.whatwg.org/#tabindex-value
+[test subject]: https://www.w3.org/TR/act-rules-format-1.1/#test-subject
+[test target]: https://www.w3.org/TR/act-rules-format/#test-target
 [visible]: #visible 'Definition of Visible'
 [wai-aria specification]: https://www.w3.org/TR/wai-aria-1.2/#propcharacteristic_value 'WAI-ARIA Specification of States and Properties Value'
 [wai-aria specifications]: #wai-aria-specifications 'Definition of WAI-ARIA specifications'

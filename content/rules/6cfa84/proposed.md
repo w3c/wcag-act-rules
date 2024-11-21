@@ -35,14 +35,6 @@ This rule applies to any element with an `aria-hidden` [attribute value][] of `t
 
 None of the target elements has an [inclusive descendant][] in the [flat tree][] that are [focusable][] and part of the [sequential focus navigation][].
 
-## Assumptions
-
-Interacting with the page does not result in changing the `aria-hidden` [attribute value][] of target elements. An example of such a situation would be when closing a modal dialog makes previously hidden elements that were not [focusable][] or part of the [sequential focus navigation][] become [focusable][] and part of the [sequential focus navigation][].
-
-## Accessibility Support
-
-Some user agents treat the value of `aria-hidden` attribute as case-sensitive.
-
 ## Background
 
 Using `aria-hidden="false"` on a descendant of an element with `aria-hidden="true"` [**does not** expose that element](https://www.w3.org/TR/wai-aria-1.2/#aria-hidden). `aria-hidden="true"` hides itself and all its content from assistive technologies.
@@ -52,6 +44,14 @@ By adding `aria-hidden="true"` to an element, content authors ensure that assist
 An element with an `aria-hidden` attribute set to `true` that is also part of the [sequential focus navigation][] may cause confusion for users of assistive technologies because the element can be reached via [sequential focus navigation][], but it should be hidden and not [included in the accessibility tree][].
 
 The 1 second time span introduced in the exception of the definition of [focusable][] is an arbitrary limit which is not included in WCAG. Given that scripts can manage the focus state of elements, testing the focused state of an element consistently would be impractical without a time limit.
+
+### Assumptions
+
+Interacting with the page does not result in changing the `aria-hidden` [attribute value][] of target elements. An example of such a situation would be when closing a modal dialog makes previously hidden elements that were not [focusable][] or part of the [sequential focus navigation][] become [focusable][] and part of the [sequential focus navigation][].
+
+### Accessibility Support
+
+Some user agents treat the value of `aria-hidden` attribute as case-sensitive.
 
 ### Related rules
 
@@ -374,15 +374,19 @@ For more details, see [examples of included in the accessibility tree][].
 
 ### Outcome {#outcome}
 
-An _outcome_ is a conclusion that comes from evaluating an ACT Rule on a [test subject](https://www.w3.org/TR/act-rules-format/#test-subject) or one of its constituent [test target](https://www.w3.org/TR/act-rules-format/#test-target). An outcome can be one of the three following types:
+A conclusion that comes from evaluating an ACT Rule on a [test subject][] or one of its constituent test target. An outcome can be one of the five following types:
 
 - **Inapplicable:** No part of the test subject matches the applicability
-- **Passed:** A [test target](https://www.w3.org/TR/act-rules-format/#test-target) meets all expectations
-- **Failed:** A [test target](https://www.w3.org/TR/act-rules-format/#test-target) does not meet all expectations
+- **Passed:** A [test target][] meets all expectations
+- **Failed:** A [test target][] does not meet all expectations
+- **cantTell:** Whether the rule is applicable, or not all expectations were met could not be fully determined by the tester.
+- **Untested**: The tester has not attempted to evaluate the test subject.
 
-**Note:** A rule has one `passed` or `failed` outcome for every [test target](https://www.w3.org/TR/act-rules-format/#test-target). When there are no test targets the rule has one `inapplicable` outcome. This means that each [test subject](https://www.w3.org/TR/act-rules-format/#test-subject) will have one or more outcomes.
+**Note**: A rule has one `passed` or `failed` outcome for every [test target][]. When a tester evaluates a test target it can also be reported as `cantTell` if the rule cannot be tested in its entirety. For example, when applicability was automated, but the expectations have to be evaluated manually.
 
-**Note:** Implementations using the [EARL10-Schema](https://www.w3.org/TR/EARL10-Schema/) can express the outcome with the [outcome property](https://www.w3.org/TR/EARL10-Schema/#outcome). In addition to `passed`, `failed` and `inapplicable`, EARL 1.0 also defined an `incomplete` outcome. While this cannot be the outcome of an ACT Rule when applied in its entirety, it often happens that rules are only partially evaluated. For example, when applicability was automated, but the expectations have to be evaluated manually. Such "interim" results can be expressed with the `incomplete` outcome.
+When there are no test targets the rule has one `inapplicable` outcome. If the tester is unable to determine whether there are test targets there will be one `cantTell` outcome. And when no evaluation has occurred the test target has one untested outcome. This means that each [test subject][] always has one or more outcomes.
+
+Outcomes used in ACT Rules can be expressed using the [outcome property][] of the [[EARL10-Schema]][].
 
 ### Programmatically Hidden {#programmatically-hidden}
 
@@ -399,6 +403,7 @@ An HTML element is _programmatically hidden_ if either it has a [computed][] CSS
 [boolean attributes]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attributes 'HTML Specification of Boolean Attribute'
 [comma separated]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#comma-separated-tokens 'HTML Specification of Comma Separated Tokens'
 [computed]: https://www.w3.org/TR/css-cascade/#computed-value 'CSS definition of computed value'
+[earl10-schema]: https://www.w3.org/TR/act-rules-format-1.1/#biblio-earl10-schema
 [enumerated attributes]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#enumerated-attribute 'HTML Specification of Enumerated Attribute'
 [examples of included in the accessibility tree]: https://act-rules.github.io/pages/examples/included-in-the-accessibility-tree/
 [flat tree]: https://drafts.csswg.org/css-scoping/#flat-tree 'Definition of flat tree'
@@ -409,10 +414,13 @@ An HTML element is _programmatically hidden_ if either it has a [computed][] CSS
 [inclusive ancestors]: https://dom.spec.whatwg.org/#concept-tree-inclusive-ancestor 'DOM Definition of Inclusive Ancestor'
 [inclusive descendant]: https://dom.spec.whatwg.org/#concept-tree-inclusive-descendant 'DOM definition of Inclusive Descendant'
 [numbers]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#numbers 'HTML Specification of Number Parsing'
+[outcome property]: https://www.w3.org/TR/EARL10-Schema/#outcome
 [reflect]: https://html.spec.whatwg.org/multipage/common-dom-interfaces.html#reflecting-content-attributes-in-idl-attributes 'HTML specification of Reflecting Content Attributes in IDL Attributes'
 [rules for parsing integers]: https://html.spec.whatwg.org/#rules-for-parsing-integers
 [sequential focus navigation]: https://html.spec.whatwg.org/multipage/interaction.html#sequential-focus-navigation
 [space separated]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#space-separated-tokens 'HTML Specification of Space Separated Tokens'
 [tabindex attribute]: https://html.spec.whatwg.org/#attr-tabindex
 [tabindex value]: https://html.spec.whatwg.org/#tabindex-value
+[test subject]: https://www.w3.org/TR/act-rules-format-1.1/#test-subject
+[test target]: https://www.w3.org/TR/act-rules-format/#test-target
 [wai-aria specification]: https://www.w3.org/TR/wai-aria-1.2/#propcharacteristic_value 'WAI-ARIA Specification of States and Properties Value'

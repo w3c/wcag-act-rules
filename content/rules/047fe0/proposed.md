@@ -38,21 +38,21 @@ In each test target, either there is no [non-repeated content after repeated con
 - the element is [visible][]; and
 - the element is [included in the accessibility tree][].
 
-## Assumptions
-
-- This rule assumes that headings used to pass [Technique H69: Providing heading elements at the beginning of each section of content][h69] have to be [included in the accessibility tree][] in order to be beneficial to users of assistive technologies.
-- This rule assumes that the first non-repeated content is starting a new section of content. If this is not the case, it is possible to fail the rule while still passing [Technique H69: Providing heading elements at the beginning of each section of content][h69].
-
-## Accessibility Support
-
-- Having a heading for the non-repeated content is sufficient to pass [Success Criterion 2.4.1 Bypass blocks][sc241]. However, if headings are used for that goal, they will only benefit users who can actually navigate from heading to heading (such a functionality can be provided by browsers, browsers plugins, screen readers or other assistive technologies). Users without any possibility for headings navigation will be left without way of bypassing blocks of repeated content and will still experience accessibility issues. Therefore, it is recommended to provide other ways of bypassing blocks.
-- When headings are rendered without sufficient visual cues, they are not perceived as headings by sighted users. In this case, passing this rule might still fail [Technique H69: Providing heading elements at the beginning of each section of content][h69] and [Success Criterion 2.4.1 Bypass blocks][sc241]. Additionally, this is likely a failure of [Success Criterion 1.3.1 Info and Relationships][sc131].
-
 ## Background
 
 The intention of this rule is that the heading is at (or near) the start of the main area of content of a document. However, defining the main area of content in a non-ambiguous way is not really doable. Therefore, the rule takes a more lenient position and only requires the heading to be some non-repeated content. Additional conditions on this heading were considered and rejected when writing the rule since it might be acceptable, for example, to have non-repeated content such as breadcrumb before any heading. Therefore, it is possible to pass this rule but still fail [H69: Providing heading elements at the beginning of each section of content][h69] and violate [Success Criterion 2.4.1 Bypass blocks][sc241].
 
 Neither this rule, nor technique [H69: Providing heading elements at the beginning of each section of content][h69], expects the heading to accurately describe its corresponding section. However, having non descriptive headings fails [Success Criterion 2.4.6: Headings and Labels](https://www.w3.org/TR/WCAG22/#headings-and-labels)
+
+### Assumptions
+
+- This rule assumes that headings used to pass [Technique H69: Providing heading elements at the beginning of each section of content][h69] have to be [included in the accessibility tree][] in order to be beneficial to users of assistive technologies.
+- This rule assumes that the first non-repeated content is starting a new section of content. If this is not the case, it is possible to fail the rule while still passing [Technique H69: Providing heading elements at the beginning of each section of content][h69].
+
+### Accessibility Support
+
+- Having a heading for the non-repeated content is sufficient to pass [Success Criterion 2.4.1 Bypass blocks][sc241]. However, if headings are used for that goal, they will only benefit users who can actually navigate from heading to heading (such a functionality can be provided by browsers, browsers plugins, screen readers or other assistive technologies). Users without any possibility for headings navigation will be left without way of bypassing blocks of repeated content and will still experience accessibility issues. Therefore, it is recommended to provide other ways of bypassing blocks.
+- When headings are rendered without sufficient visual cues, they are not perceived as headings by sighted users. In this case, passing this rule might still fail [Technique H69: Providing heading elements at the beginning of each section of content][h69] and [Success Criterion 2.4.1 Bypass blocks][sc241]. Additionally, this is likely a failure of [Success Criterion 1.3.1 Info and Relationships][sc131].
 
 ### Bibliography
 
@@ -664,15 +664,19 @@ A node is _non-repeated content after repeated content_ if all the following are
 
 ### Outcome {#outcome}
 
-An _outcome_ is a conclusion that comes from evaluating an ACT Rule on a [test subject](https://www.w3.org/TR/act-rules-format/#test-subject) or one of its constituent [test target](https://www.w3.org/TR/act-rules-format/#test-target). An outcome can be one of the three following types:
+A conclusion that comes from evaluating an ACT Rule on a [test subject][] or one of its constituent test target. An outcome can be one of the five following types:
 
 - **Inapplicable:** No part of the test subject matches the applicability
-- **Passed:** A [test target](https://www.w3.org/TR/act-rules-format/#test-target) meets all expectations
-- **Failed:** A [test target](https://www.w3.org/TR/act-rules-format/#test-target) does not meet all expectations
+- **Passed:** A [test target][] meets all expectations
+- **Failed:** A [test target][] does not meet all expectations
+- **cantTell:** Whether the rule is applicable, or not all expectations were met could not be fully determined by the tester.
+- **Untested**: The tester has not attempted to evaluate the test subject.
 
-**Note:** A rule has one `passed` or `failed` outcome for every [test target](https://www.w3.org/TR/act-rules-format/#test-target). When there are no test targets the rule has one `inapplicable` outcome. This means that each [test subject](https://www.w3.org/TR/act-rules-format/#test-subject) will have one or more outcomes.
+**Note**: A rule has one `passed` or `failed` outcome for every [test target][]. When a tester evaluates a test target it can also be reported as `cantTell` if the rule cannot be tested in its entirety. For example, when applicability was automated, but the expectations have to be evaluated manually.
 
-**Note:** Implementations using the [EARL10-Schema](https://www.w3.org/TR/EARL10-Schema/) can express the outcome with the [outcome property](https://www.w3.org/TR/EARL10-Schema/#outcome). In addition to `passed`, `failed` and `inapplicable`, EARL 1.0 also defined an `incomplete` outcome. While this cannot be the outcome of an ACT Rule when applied in its entirety, it often happens that rules are only partially evaluated. For example, when applicability was automated, but the expectations have to be evaluated manually. Such "interim" results can be expressed with the `incomplete` outcome.
+When there are no test targets the rule has one `inapplicable` outcome. If the tester is unable to determine whether there are test targets there will be one `cantTell` outcome. And when no evaluation has occurred the test target has one untested outcome. This means that each [test subject][] always has one or more outcomes.
+
+Outcomes used in ACT Rules can be expressed using the [outcome property][] of the [[EARL10-Schema]][].
 
 ### Perceivable content {#perceivable-content}
 
@@ -742,6 +746,7 @@ An _HTML [web page](https://www.w3.org/TR/WCAG22/#dfn-web-page-s)_ is the set of
 [computed]: https://www.w3.org/TR/css-cascade/#computed-value 'CSS definition of computed value'
 [default port]: https://url.spec.whatwg.org/#default-port 'URL specification of Default Port'
 [document]: https://dom.spec.whatwg.org/#concept-document 'DOM definition of Document'
+[earl10-schema]: https://www.w3.org/TR/act-rules-format-1.1/#biblio-earl10-schema
 [equivalent resource]: #equivalent-resource 'Definition of Equivalent Resource'
 [examples of included in the accessibility tree]: https://act-rules.github.io/pages/examples/included-in-the-accessibility-tree/
 [explicit role]: #explicit-role 'Definition of Explicit Role'
@@ -758,6 +763,7 @@ An _HTML [web page](https://www.w3.org/TR/WCAG22/#dfn-web-page-s)_ is the set of
 [marked as decorative]: #marked-as-decorative 'Definition of Marked as Decorative'
 [mechanism]: https://www.w3.org/TR/WCAG22/#dfn-mechanism 'WCAG Definition of Mechanism'
 [non-repeated content after repeated content]: #non-repeated-content 'Definition of Non-Repeated Content after Repeated Content'
+[outcome property]: https://www.w3.org/TR/EARL10-Schema/#outcome
 [palpable content]: https://html.spec.whatwg.org/multipage/dom.html#palpable-content 'HTML specification of palpable content'
 [path]: https://url.spec.whatwg.org/#concept-url-path 'URL specification of Path'
 [perceivable content]: #perceivable-content 'Definition of Perceivable Content'
@@ -777,6 +783,8 @@ An _HTML [web page](https://www.w3.org/TR/WCAG22/#dfn-web-page-s)_ is the set of
 [special url]: https://url.spec.whatwg.org/#is-special 'URL specification of Special URL'
 [tabindex attribute]: https://html.spec.whatwg.org/#attr-tabindex
 [tabindex value]: https://html.spec.whatwg.org/#tabindex-value
+[test subject]: https://www.w3.org/TR/act-rules-format-1.1/#test-subject
+[test target]: https://www.w3.org/TR/act-rules-format/#test-target
 [tree order]: https://dom.spec.whatwg.org/#concept-tree-order 'DOM specification of Tree Order'
 [usc241]: https://www.w3.org/WAI/WCAG22/Understanding/bypass-blocks.html 'Understanding Success Criterion 2.4.1: Bypass Blocks'
 [visible]: #visible 'Definition of Visible'

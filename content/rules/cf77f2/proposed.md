@@ -42,7 +42,11 @@ For each test target, the outcome of at least one of the following rules is pass
 - [_Document has a landmark with non-repeated content_][document has landmark]; or
 - [_Document has an instrument to move focus to non-repeated content_][document has instrument to main].
 
-## Assumptions
+## Background
+
+The [instruments][instrument] used to pass this rule (if any), must meet all level A Success Criteria in order to fully satisfy [Success Criterion 2.4.1 Bypass Block][sc241]. These extra requirements are left out of this rule, and should be tested separately.
+
+### Assumptions
 
 - This rule assumes that the mean to bypass blocks is included in the content of the [HTML web page][]. For example, server-side scripting, or a global "settings" page, can provide a functionality similar to [_Block of repeated content is collapsible_][block collapsible] by serving a modified version of the page; in which case this rule would fail but [Success Criterion 2.4.1 Bypass blocks][sc241] could nonetheless be satisfied.
 - This rule assumes that `frame` and `frameset` elements are not used, given that they are deprecated in HTML5. They can be used to organize content as per [H70: Using frame elements to group blocks of repeated material](https://www.w3.org/WAI/WCAG22/Techniques/html/H70) and [H64: Using the title attribute of the frame and iframe elements](https://www.w3.org/WAI/WCAG22/Techniques/html/H64), in that case, this rule would fail but [Success Criterion 2.4.1 Bypass blocks][sc241] could nonetheless be satisfied.
@@ -50,17 +54,13 @@ For each test target, the outcome of at least one of the following rules is pass
 - This rule assumes that repeated content that is at the end of the page (and not followed any non-repeated content) can be bypassed by means provided by user agents (such as pressing the "End" key to scroll to the bottom of the page). Therefore, they do not need any other way of being bypassed and are ignored by this rule. If there isn't a way to bypass them, this rule may pass while [Success Criterion 2.4.1 Bypass blocks][sc241] is not satisfied.
 - This rule assumes that the language of each test target can be correctly determined (either programmatically or by analyzing the content), and sufficiently understood.
 
-## Accessibility Support
+### Accessibility Support
 
 Techniques and solutions that identify blocks of content are sufficient ways of passing [Success Criterion 2.4.1 Bypass blocks][sc241]. They are, however, only beneficial for users who have ways of navigating with this information. For example, adding headings to a document will only help users who can "jump" from heading to heading (such a possibility can be provided by browsers, browsers plugins, screen readers, or other assistive technologies). Techniques and solutions based on links will benefit all users (for example, sighted keyboard users with no other assistive technology) and are therefore recommended.
 
 If the [instruments][instrument] used to pass some of the atomic rules are not keyboard accessible, or not [included in the accessibility tree][], passing this rule can still leave many users without a way to bypass blocks of repeated content. WCAG's definition of [mechanism][] has a note saying that it "needs to meet all success criteria for the conformance level claimed". This includes [Success Criterion 2.1.1 Keyboard](https://www.w3.org/TR/WCAG22/#keyboard-accessible) and [Success Criterion 4.1.2 Name, Role, Value](https://www.w3.org/TR/WCAG22/#name-role-value) which are both at level A.
 
 This rule only checks if there is a way to bypass at least one section of repeated content. On pages with several interleaved repeated and non-repeated content, this is not sufficient to satisfy [Success Criterion 2.4.1 Bypass blocks][sc241]. Checking for more sections to bypass was considered but rejected due to both the added complexity it would create, and the risk of failing on pages that might be correct.
-
-## Background
-
-The [instruments][instrument] used to pass this rule (if any), must meet all level A Success Criteria in order to fully satisfy [Success Criterion 2.4.1 Bypass Block][sc241]. These extra requirements are left out of this rule, and should be tested separately.
 
 ### Bibliography
 
@@ -777,15 +777,19 @@ A node is _non-repeated content after repeated content_ if all the following are
 
 ### Outcome {#outcome}
 
-An _outcome_ is a conclusion that comes from evaluating an ACT Rule on a [test subject](https://www.w3.org/TR/act-rules-format/#test-subject) or one of its constituent [test target](https://www.w3.org/TR/act-rules-format/#test-target). An outcome can be one of the three following types:
+A conclusion that comes from evaluating an ACT Rule on a [test subject][] or one of its constituent test target. An outcome can be one of the five following types:
 
 - **Inapplicable:** No part of the test subject matches the applicability
-- **Passed:** A [test target](https://www.w3.org/TR/act-rules-format/#test-target) meets all expectations
-- **Failed:** A [test target](https://www.w3.org/TR/act-rules-format/#test-target) does not meet all expectations
+- **Passed:** A [test target][] meets all expectations
+- **Failed:** A [test target][] does not meet all expectations
+- **cantTell:** Whether the rule is applicable, or not all expectations were met could not be fully determined by the tester.
+- **Untested**: The tester has not attempted to evaluate the test subject.
 
-**Note:** A rule has one `passed` or `failed` outcome for every [test target](https://www.w3.org/TR/act-rules-format/#test-target). When there are no test targets the rule has one `inapplicable` outcome. This means that each [test subject](https://www.w3.org/TR/act-rules-format/#test-subject) will have one or more outcomes.
+**Note**: A rule has one `passed` or `failed` outcome for every [test target][]. When a tester evaluates a test target it can also be reported as `cantTell` if the rule cannot be tested in its entirety. For example, when applicability was automated, but the expectations have to be evaluated manually.
 
-**Note:** Implementations using the [EARL10-Schema](https://www.w3.org/TR/EARL10-Schema/) can express the outcome with the [outcome property](https://www.w3.org/TR/EARL10-Schema/#outcome). In addition to `passed`, `failed` and `inapplicable`, EARL 1.0 also defined an `incomplete` outcome. While this cannot be the outcome of an ACT Rule when applied in its entirety, it often happens that rules are only partially evaluated. For example, when applicability was automated, but the expectations have to be evaluated manually. Such "interim" results can be expressed with the `incomplete` outcome.
+When there are no test targets the rule has one `inapplicable` outcome. If the tester is unable to determine whether there are test targets there will be one `cantTell` outcome. And when no evaluation has occurred the test target has one untested outcome. This means that each [test subject][] always has one or more outcomes.
+
+Outcomes used in ACT Rules can be expressed using the [outcome property][] of the [[EARL10-Schema]][].
 
 ### Perceivable content {#perceivable-content}
 
@@ -859,6 +863,7 @@ An _HTML [web page](https://www.w3.org/TR/WCAG22/#dfn-web-page-s)_ is the set of
 [document has instrument to main]: https://www.w3.org/WAI/standards-guidelines/act/rules/ye5d6e/ 'Rule Document Has an Instrument to Move Focus to Non-Repeated Content'
 [document has landmark]: https://www.w3.org/WAI/standards-guidelines/act/rules/b40fd1/ 'Rule Document Has a Landmark with Non-Repeated Content'
 [document]: https://dom.spec.whatwg.org/#concept-document 'DOM definition of Document'
+[earl10-schema]: https://www.w3.org/TR/act-rules-format-1.1/#biblio-earl10-schema
 [equivalent resource]: #equivalent-resource 'Definition of Equivalent Resource'
 [examples of included in the accessibility tree]: https://act-rules.github.io/pages/examples/included-in-the-accessibility-tree/
 [explicit role]: #explicit-role 'Definition of Explicit Role'
@@ -875,6 +880,7 @@ An _HTML [web page](https://www.w3.org/TR/WCAG22/#dfn-web-page-s)_ is the set of
 [marked as decorative]: #marked-as-decorative 'Definition of Marked as Decorative'
 [mechanism]: https://www.w3.org/TR/WCAG22/#dfn-mechanism 'WCAG definition of Mechanism'
 [non-repeated content after repeated content]: #non-repeated-content 'Definition of Non-Repeated Content after repeated content'
+[outcome property]: https://www.w3.org/TR/EARL10-Schema/#outcome
 [palpable content]: https://html.spec.whatwg.org/multipage/dom.html#palpable-content 'HTML specification of palpable content'
 [path]: https://url.spec.whatwg.org/#concept-url-path 'URL specification of Path'
 [perceivable content]: #perceivable-content 'Definition of Perceivable Content'
@@ -899,6 +905,8 @@ An _HTML [web page](https://www.w3.org/TR/WCAG22/#dfn-web-page-s)_ is the set of
 [tech g1]: https://www.w3.org/WAI/WCAG22/Techniques/general/G1 'Technique G1: Adding a Link at the Top of each Page that Goes Directly to the Main Content Area'
 [tech h69]: https://www.w3.org/WAI/WCAG22/Techniques/html/H69 'Technique H69: Providing Heading Elements at the Beginning of each Section of Content'
 [tech scr28]: https://www.w3.org/WAI/WCAG22/Techniques/client-side-script/SCR28 'Technique SCR28: Using an Expandable and Collapsible Menu to Bypass Block of Content'
+[test subject]: https://www.w3.org/TR/act-rules-format-1.1/#test-subject
+[test target]: https://www.w3.org/TR/act-rules-format/#test-target
 [tree order]: https://dom.spec.whatwg.org/#concept-tree-order 'DOM specification of Tree Order'
 [usc241]: https://www.w3.org/WAI/WCAG22/Understanding/bypass-blocks.html 'Understanding Success Criterion 2.4.1: Bypass Blocks'
 [visible]: #visible 'Definition of visible'
