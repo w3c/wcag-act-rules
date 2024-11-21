@@ -3884,9 +3884,9 @@
           ]
         },
         {
-          "testcaseId": "60574540bb0248b7670f5c04df10983520878860",
+          "testcaseId": "9c5eeb535181f3709e13b548a04b9d0054532cdd",
           "testCaseName": "Failed Example 6",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2779a5/60574540bb0248b7670f5c04df10983520878860.html",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2779a5/9c5eeb535181f3709e13b548a04b9d0054532cdd.html",
           "testCaseApproved": false,
           "expected": "failed",
           "procedureResults": [
@@ -6863,6 +6863,21 @@
           ]
         },
         {
+          "testcaseId": "c5f649f91ebe4979270972db7c42279a74efc6c5",
+          "testCaseName": "Passed Example 3",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/0ssw9k/c5f649f91ebe4979270972db7c42279a74efc6c5.html",
+          "testCaseApproved": false,
+          "expected": "passed",
+          "procedureResults": [
+            {
+              "procedureName": "Scrollable element is keyboard accessible",
+              "outcomes": [
+                "untested"
+              ]
+            }
+          ]
+        },
+        {
           "testcaseId": "a7da5f9dbc260d633787386b6041c70cb9fbdc32",
           "testCaseName": "Inapplicable Example 2",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/0ssw9k/a7da5f9dbc260d633787386b6041c70cb9fbdc32.html",
@@ -7590,9 +7605,9 @@
           ]
         },
         {
-          "testcaseId": "b1e912183f72caaea7523d00b6762d220e3616f0",
+          "testcaseId": "8c33a0af471cc3c1abbb9f709afa6629b13daf3a",
           "testCaseName": "Failed Example 11",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/b1e912183f72caaea7523d00b6762d220e3616f0.html",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/8c33a0af471cc3c1abbb9f709afa6629b13daf3a.html",
           "testCaseApproved": false,
           "expected": "failed",
           "procedureResults": [
@@ -13536,9 +13551,9 @@
           ]
         },
         {
-          "testcaseId": "1286cd0804868cc0f1a5f42a269240100dbdbf2c",
+          "testcaseId": "7ebe961dbb4fb0e259fc3bc98a8f048170b063af",
           "testCaseName": "Failed Example 7",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/1286cd0804868cc0f1a5f42a269240100dbdbf2c.html",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/7ebe961dbb4fb0e259fc3bc98a8f048170b063af.html",
           "testCaseApproved": false,
           "expected": "failed",
           "procedureResults": [
