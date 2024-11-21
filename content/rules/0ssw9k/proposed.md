@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 0ssw9k</p>
-  <p><strong>Date:</strong> Updated 25 January 2024</p>
+  <p><strong>Date:</strong> Updated 21 November 2024</p>
   <p><strong>Authors:</strong> <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -20,7 +20,7 @@ rule_meta:
   original_file: scrollable-element-keyboard-accessible-0ssw9k.md
   description: |
     This rule checks that scrollable elements or their descendants can be reached with sequential focus navigation so that they can be scrolled by keyboard
-  last_modified: 25 January 2024
+  last_modified: 21 November 2024
   scs_tested:
     - handle: Keyboard
       num: 2.1.1
@@ -39,7 +39,10 @@ This rule applies to any [HTML element][] that has [visible][] [children][] in t
 
 ## Expectation
 
-Each test target is either included in [sequential focus navigation][] or has a [descendant][] in the [flat tree][] that is included in [sequential focus navigation][].
+For each target element, at least one of the following is true: 
+- the element is included in [sequential focus navigation][]; or 
+- the element has a [descendant][] in the [flat tree][] that is included in [sequential focus navigation][]; or
+- the element is [inert][].
 
 ## Assumptions
 
@@ -158,6 +161,48 @@ This [scrollable][] `section` element contains a link that is included in [seque
 		will also often make Web content more usable to users in general.
 	</p>
 </section>
+```
+
+#### Passed Example 3
+
+<a class="example-link" title="Passed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/0ssw9k/c5f649f91ebe4979270972db7c42279a74efc6c5.html">Open in a new tab</a>
+
+This [scrollable][] `section` element is [inert][] because of the modal dialog, so neither the `section` nor its [descendant][] elements are included in [sequential focus navigation][].
+
+```html
+<style>
+	dialog:-internal-dialog-in-top-layer::backdrop {
+    		background: rgba(1, 1, 1, 0.8);
+	}
+</style>
+<section style="height: 100px; width: 500px; overflow: scroll;" tabindex="0">
+	<h1>WCAG 2.1 Abstract</h1>
+	<p>
+		Web Content Accessibility Guidelines (WCAG) 2.1 covers a wide range of recommendations for making Web content more
+		accessible. Following these guidelines will make content more accessible to a wider range of people with
+		disabilities, including accommodations for blindness and low vision, deafness and hearing loss, limited movement,
+		speech disabilities, photosensitivity, and combinations of these, and some accommodation for learning disabilities
+		and cognitive limitations; but will not address every user need for people with these disabilities. These guidelines
+		address accessibility of web content on desktops, laptops, tablets, and mobile devices. Following these guidelines
+		will also often make Web content more usable to users in general.
+		<button id="ppButton" onclick="openDialog()">Read more about WCAG 2.2</button>
+	</p>
+</section>
+<dialog id="ppDialog" aria-labelledby="dialogLabel">
+	<h2 id="dialogLabel">WCAG 2.2</h2>
+	<p>
+		<a href="https://www.w3.org/TR/WCAG22/">WCAG 2.2</a>
+	</p>
+	<button id="cancel" onclick="ppDialog.close()">Cancel</button>
+</dialog>
+<script>
+	const openDialog = () => {
+		ppDialog.showModal();
+		myFrame.tabIndex = '-1'
+	}
+	ppDialog.addEventListener('close', () => myFrame.tabIndex = 0)
+	window.addEventListener('DOMContentLoaded', openDialog);
+</script>
 ```
 
 ### Failed
@@ -341,6 +386,14 @@ This list is not exhaustive, and only serves as an illustration for some of the 
 
 The <dfn id="attribute-value:idl">attribute value</dfn> of an [IDL attribute][] is the value returned on getting it. Note that when an [IDL attribute][] [reflects][reflect] a content attribute, they have the same attribute value.
 
+### Inert {#inert}
+
+An [HTML or SVG element][] is inert if:
+
+- it has an `inert` [attribute value][] of true; or
+- one of its ancestor elements in the [flat tree][] has an `inert` [attribute value][] of true; or
+- it is [blocked by a modal][].
+
 ### Namespaced Element {#namespaced-element}
 
 An [element][] with a specific [namespaceURI][] value from [HTML namespaces][]. For example an "SVG element" is any element with the "SVG namespace", which is `http://www.w3.org/2000/svg`.
@@ -380,6 +433,7 @@ Content is considered _visible_ if making it fully transparent would result in a
 For more details, see [examples of visible](https://act-rules.github.io/pages/examples/visible/).
 
 [attribute value]: #attribute-value
+[blocked by a modal]: https://html.spec.whatwg.org/multipage/interaction.html#blocked-by-a-modal-dialog
 [boolean attributes]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attributes 'HTML Specification of Boolean Attribute'
 [children]: https://dom.spec.whatwg.org/#concept-tree-child 'DOM child, 2020/04/03'
 [clientheight]: https://www.w3.org/TR/cssom-view/#dom-element-clientheight 'CSSOM working draft, Element.clientHeight, 2020/04/03'
@@ -393,7 +447,9 @@ For more details, see [examples of visible](https://act-rules.github.io/pages/ex
 [html aam]: https://www.w3.org/TR/html-aam-1.0/#html-attribute-state-and-property-mappings 'Specification of HTML attributes value mapping to ARIA states and properties'
 [html element]: #namespaced-element
 [html namespaces]: https://infra.spec.whatwg.org/#namespaces 'HTML namespace, 2021/05/31'
+[html or svg element]: #namespaced-element 'Definition of HTML or SVG element'
 [idl attribute]: https://heycam.github.io/webidl/#idl-attributes "Definition of Web IDL Attribute (Editor's Draft)"
+[inert]: #inert 'Definition of Inert'
 [namespaceuri]: https://dom.spec.whatwg.org/#dom-element-namespaceuri 'DOM Element namespaceURI, 2021/05/31'
 [nested browsing context]: https://html.spec.whatwg.org/#nested-browsing-context 'HTML nested browsing context, 2020/04/03'
 [numbers]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#numbers 'HTML Specification of Number Parsing'
