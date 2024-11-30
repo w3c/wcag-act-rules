@@ -9,7 +9,7 @@
         "@type": "Software",
         "title": "Total Validator CI",
         "description": "Total Validator checks websites are accessible, use valid HTML and CSS, have no broken links, and are free from spelling mistakes.",
-        "hasVersion": "18.1.0",
+        "hasVersion": "18.2.0",
         "homepage": "https://www.totalvalidator.com"
       },
       "assertions": [
@@ -9762,6 +9762,62 @@
           "test": {
             "title": "E951",
             "isPartOf": []
+           },
+          "result": { "outcome": "earl:passed" }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2779a5/94ff40484422832c2910086d4387163aa2d9dd7d.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "E869",
+            "isPartOf": ["WCAG2:page-titled"]
+           },
+          "result": { "outcome": "earl:passed" }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2779a5/94ff40484422832c2910086d4387163aa2d9dd7d.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "E870",
+            "isPartOf": ["WCAG2:page-titled"]
+           },
+          "result": { "outcome": "earl:passed" }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2779a5/9c5eeb535181f3709e13b548a04b9d0054532cdd.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "E869",
+            "isPartOf": ["WCAG2:page-titled"]
+           },
+          "result": { "outcome": "earl:failed" }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2779a5/9c5eeb535181f3709e13b548a04b9d0054532cdd.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "E870",
+            "isPartOf": ["WCAG2:page-titled"]
            },
           "result": { "outcome": "earl:passed" }
         }
