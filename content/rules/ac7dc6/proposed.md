@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> ac7dc6</p>
-  <p><strong>Date:</strong> Updated 21 November 2024</p>
+  <p><strong>Date:</strong> Updated 2 December 2024</p>
   <p><strong>Authors:</strong> <a href="https://www.linkedin.com/in/brianbors/">Brian Bors</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
   
@@ -25,7 +25,7 @@ rule_meta:
   original_file: video-only-description-track-ac7dc6.md
   description: |
     This rule checks that description tracks that come with non-streaming `video` elements, without audio, are descriptive.
-  last_modified: 21 November 2024
+  last_modified: 2 December 2024
 ---
 
 ## Applicability
@@ -59,7 +59,7 @@ Currently the description track is not supported by most assistive technologies.
   <li><details>
     <summary><span>H96: Using the track element to provide audio descriptions</span></summary>
     <ul>
-      <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/html/H96">Learn more about technique H96</a></li>
+      <li><a href="https://www.w3.org/WAI/WCAG22/Techniques/html/H96">Learn more about technique H96</a></li>
       <li>Not required for conformance to any W3C accessibility recommendation.</li>
       <li>Outcome mapping: <ul>
         <li>Any <code>failed</code> outcomes: technique is not satisfied</li>

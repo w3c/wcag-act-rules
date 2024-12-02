@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> in6db8</p>
-  <p><strong>Date:</strong> Updated 21 November 2024</p>
+  <p><strong>Date:</strong> Updated 2 December 2024</p>
   <p><strong>Authors:</strong> <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -20,7 +20,7 @@ rule_meta:
   original_file: aria-required-id-references-in6db8.md
   description: |
     This rule checks that every ID reference required by WAI-ARIA exists
-  last_modified: 21 November 2024
+  last_modified: 2 December 2024
 ---
 
 ## Applicability
@@ -55,7 +55,18 @@ Some user agents treat the value of `aria-*` attribute as case-sensitive (even w
 ## Accessibility Requirements Mapping
 
 <ul class="act-requirements-list">
-  <li>This rule is <strong>not required</strong> for conformance to WCAG 2.1 at any level.</li>
+  <li><details>
+    <summary><span>ARIA 1.2, 6.2.4 Value (Characteristics of States and Properties)</span></summary>
+    <ul>
+      <li><a href="https://www.w3.org/TR/wai-aria-1.2/#propcharacteristic_value">Learn more about ARIA 1.2, 6.2.4 Value (Characteristics of States and Properties)</a></li>
+      <li><strong>Required for conformance</strong> to WAI-ARIA 1.2 author requirements.</li>
+      <li>Outcome mapping: <ul>
+        <li>Any <code>failed</code> outcomes: WAI-ARIA requirement is not satisfied</li>
+        <li>All <code>passed</code> outcomes: WAI-ARIA requirement is satisfied</li>
+        <li>An <code>inapplicable</code> outcome: WAI-ARIA requirement is satisfied</li>
+      </ul></li>
+    </ul>
+  </details></li>
 </ul>
 
 ### Secondary Requirements
@@ -66,8 +77,8 @@ not designed to test this requirements directly. These
 can either be stricter than the rule requires, or may be satisfied in ways 
 not tested by the rule:
 
-- [1.3.1 Info and Relationships (Level A)](https://www.w3.org/TR/WCAG21/#info-and-relationships): This success criterion is **less strict** than this rule. This is because the rule does not check for alternatives which may be accessible. Some of the failed examples satisfy this success criterion.
-- [4.1.2 Name, Role, Value (Level A)](https://www.w3.org/TR/WCAG21/#name-role-value): This success criterion is **less strict** than this rule. This is because the rule does not check for alternatives which may be accessible. Some of the failed examples satisfy this success criterion.
+- [1.3.1 Info and Relationships (Level A)](https://www.w3.org/TR/WCAG22/#info-and-relationships): This success criterion is **less strict** than this rule. This is because the rule does not check for alternatives which may be accessible. Some of the failed examples satisfy this success criterion.
+- [4.1.2 Name, Role, Value (Level A)](https://www.w3.org/TR/WCAG22/#name-role-value): This success criterion is **less strict** than this rule. This is because the rule does not check for alternatives which may be accessible. Some of the failed examples satisfy this success criterion.
 
 ## Input Aspects
 

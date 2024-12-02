@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 80af7b</p>
-  <p><strong>Date:</strong> Updated 21 November 2024</p>
+  <p><strong>Date:</strong> Updated 2 December 2024</p>
   <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/DagfinnRomen">Dagfinn Rømen</a>, <a href="https://github.com/geirsf">Geir Sindre Fossøy</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -20,7 +20,7 @@ rule_meta:
   original_file: focusable-no-keyboard-trap-80af7b.md
   description: |
     This rule checks for keyboard traps. This includes use of both standard and non-standard keyboard navigation to navigate through all content without becoming trapped.
-  last_modified: 21 November 2024
+  last_modified: 2 December 2024
   scs_tested:
     - handle: No Keyboard Trap
       num: 2.1.2
@@ -62,7 +62,7 @@ There are no accessibility support issues known.
   <li><details>
     <summary><span>2.1.2 No Keyboard Trap (Level A)</span></summary>
     <ul>
-      <li><a href="https://www.w3.org/TR/WCAG21/#no-keyboard-trap">Learn more about 2.1.2 No Keyboard Trap</a></li>
+      <li><a href="https://www.w3.org/TR/WCAG22/#no-keyboard-trap">Learn more about 2.1.2 No Keyboard Trap</a></li>
       <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level A and higher.</li>
       <li>Outcome mapping: <ul>
         <li>Any <code>failed</code> outcomes: success criterion is not satisfied</li>
@@ -74,8 +74,8 @@ There are no accessibility support issues known.
   <li><details>
     <summary><span>WCAG Non-Interference</span></summary>
     <ul>
-      <li><a href="https://www.w3.org/TR/WCAG21/#cc5">Learn more about WCAG Non-Interference</a></li>
-      <li><strong>Required for conformance</strong> to WCAG 2.1.</li>
+      <li><a href="https://www.w3.org/TR/WCAG22/#cc5">Learn more about WCAG Non-Interference</a></li>
+      <li><strong>Required for conformance</strong> to WCAG 2.2.</li>
       <li>Outcome mapping: <ul>
         <li>Any <code>failed</code> outcomes: WCAG 2 conformance requirement is not satisfied</li>
         <li>All <code>passed</code> outcomes: WCAG 2 conformance requirement needs further testing</li>
@@ -86,7 +86,7 @@ There are no accessibility support issues known.
   <li><details>
     <summary><span>G21: Ensuring that users are not trapped in content</span></summary>
     <ul>
-      <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G21">Learn more about technique G21</a></li>
+      <li><a href="https://www.w3.org/WAI/WCAG22/Techniques/general/G21">Learn more about technique G21</a></li>
       <li>Not required for conformance to any W3C accessibility recommendation.</li>
       <li>Outcome mapping: <ul>
         <li>Any <code>failed</code> outcomes: technique is not satisfied</li>

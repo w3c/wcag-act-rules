@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 59br37</p>
-  <p><strong>Date:</strong> Updated 21 November 2024</p>
+  <p><strong>Date:</strong> Updated 2 December 2024</p>
   <p><strong>Authors:</strong> <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
   
@@ -22,7 +22,7 @@ rule_meta:
   original_file: zoom-text-no-overflow-clipping-59br37.md
   description: |
     This rule checks that text nodes are not unintentionally clipped by overflow, when a page is zoomed to 200% on 1280 by 1024 viewport;
-  last_modified: 21 November 2024
+  last_modified: 2 December 2024
   scs_tested:
     - handle: Resize text
       num: 1.4.4
@@ -77,7 +77,7 @@ Some user agents treat the value of the `aria-hidden` attribute as case-sensitiv
   <li><details>
     <summary><span>1.4.4 Resize text (Level AA)</span></summary>
     <ul>
-      <li><a href="https://www.w3.org/TR/WCAG21/#resize-text">Learn more about 1.4.4 Resize text</a></li>
+      <li><a href="https://www.w3.org/TR/WCAG22/#resize-text">Learn more about 1.4.4 Resize text</a></li>
       <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level AA and higher.</li>
       <li>Outcome mapping: <ul>
         <li>Any <code>failed</code> outcomes: success criterion is not satisfied</li>

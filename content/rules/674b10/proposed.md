@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 674b10</p>
-  <p><strong>Date:</strong> Updated 21 November 2024</p>
+  <p><strong>Date:</strong> Updated 2 December 2024</p>
   <p><strong>Authors:</strong> <a href="https://github.com/jkodu">Jey Nandakumar</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -20,7 +20,7 @@ rule_meta:
   original_file: role-attribute-valid-value-674b10.md
   description: |
     This rule checks that each `role` attribute has a valid value.
-  last_modified: 21 November 2024
+  last_modified: 2 December 2024
 ---
 
 ## Applicability
@@ -65,7 +65,7 @@ Older browsers do not support more than one token in the value for a role attrib
   <li><details>
     <summary><span>ARIA4: Using a WAI-ARIA role to expose the role of a user interface component</span></summary>
     <ul>
-      <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA4">Learn more about technique ARIA4</a></li>
+      <li><a href="https://www.w3.org/WAI/WCAG22/Techniques/aria/ARIA4">Learn more about technique ARIA4</a></li>
       <li>Not required for conformance to any W3C accessibility recommendation.</li>
       <li>Outcome mapping: <ul>
         <li>Any <code>failed</code> outcomes: technique is not satisfied</li>
@@ -77,7 +77,7 @@ Older browsers do not support more than one token in the value for a role attrib
   <li><details>
     <summary><span>G108: Using markup features to expose the name and role, allow user-settable properties to be directly set, and provide notification of changes</span></summary>
     <ul>
-      <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G108">Learn more about technique G108</a></li>
+      <li><a href="https://www.w3.org/WAI/WCAG22/Techniques/general/G108">Learn more about technique G108</a></li>
       <li>Not required for conformance to any W3C accessibility recommendation.</li>
       <li>Outcome mapping: <ul>
         <li>Any <code>failed</code> outcomes: technique is not satisfied</li>
@@ -96,8 +96,8 @@ not designed to test this requirements directly. These
 can either be stricter than the rule requires, or may be satisfied in ways 
 not tested by the rule:
 
-- [1.3.1 Info and Relationships (Level A)](https://www.w3.org/TR/WCAG21/#info-and-relationships): This success criterion is **less strict** than this rule. This is because the success criterion can be satisfied by an element's implicit role when the explicit role is incorrect. Some of the failed examples may satisfy this success criterion.
-- [4.1.2 Name, Role, Value (Level A)](https://www.w3.org/TR/WCAG21/#name-role-value): This success criterion is **less strict** than this rule. This is because the success criterion can be satisfied by an element's implicit role when the explicit role is incorrect. Some of the failed examples may satisfy this success criterion.
+- [1.3.1 Info and Relationships (Level A)](https://www.w3.org/TR/WCAG22/#info-and-relationships): This success criterion is **less strict** than this rule. This is because the success criterion can be satisfied by an element's implicit role when the explicit role is incorrect. Some of the failed examples may satisfy this success criterion.
+- [4.1.2 Name, Role, Value (Level A)](https://www.w3.org/TR/WCAG22/#name-role-value): This success criterion is **less strict** than this rule. This is because the success criterion can be satisfied by an element's implicit role when the explicit role is incorrect. Some of the failed examples may satisfy this success criterion.
 
 ## Input Aspects
 
