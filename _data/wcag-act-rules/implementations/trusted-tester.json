@@ -3004,10 +3004,10 @@
         ]
       },
       "coverage": {
-        "covered": 10,
-        "untested": 0,
+        "covered": 9,
+        "untested": 2,
         "cantTell": 0,
-        "testCaseTotal": 10
+        "testCaseTotal": 11
       },
       "testCaseResults": [
         {
@@ -3026,16 +3026,16 @@
           ]
         },
         {
-          "testcaseId": "fb76f71a94bf95f5cfef22f3db6655e7b0a57b0c",
+          "testcaseId": "d26e3cbd39acb781e77c93ea99cc37b4c886c0c5",
           "testCaseName": "Passed Example 2",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a1b64e/fb76f71a94bf95f5cfef22f3db6655e7b0a57b0c.html",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a1b64e/d26e3cbd39acb781e77c93ea99cc37b4c886c0c5.html",
           "testCaseApproved": false,
           "expected": "passed",
           "procedureResults": [
             {
               "procedureName": "2.1.2-no-keyboard-trap",
               "outcomes": [
-                "passed"
+                "untested"
               ]
             }
           ]
@@ -3051,6 +3051,21 @@
               "procedureName": "2.1.2-no-keyboard-trap",
               "outcomes": [
                 "passed"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "6ee6cdfc0ae79ec72379b9ee4df9c1920b09ba15",
+          "testCaseName": "Passed Example 4",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a1b64e/6ee6cdfc0ae79ec72379b9ee4df9c1920b09ba15.html",
+          "testCaseApproved": false,
+          "expected": "passed",
+          "procedureResults": [
+            {
+              "procedureName": "2.1.2-no-keyboard-trap",
+              "outcomes": [
+                "untested"
               ]
             }
           ]
