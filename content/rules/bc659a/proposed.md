@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> bc659a</p>
-  <p><strong>Date:</strong> Updated 21 November 2024</p>
+  <p><strong>Date:</strong> Updated 2 December 2024</p>
   <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/Jym77">Jean-Yves Moyen</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -20,7 +20,7 @@ rule_meta:
   original_file: meta-refresh-no-delay-bc659a.md
   description: |
     This rule checks that the `meta` element is not used for delayed redirecting or refreshing.
-  last_modified: 21 November 2024
+  last_modified: 2 December 2024
   scs_tested:
     - handle: Timing Adjustable
       num: 2.2.1
@@ -71,7 +71,7 @@ Not all major web browsers parse the value of the `content` attribute in the sam
   <li><details>
     <summary><span>2.2.1 Timing Adjustable (Level A)</span></summary>
     <ul>
-      <li><a href="https://www.w3.org/TR/WCAG21/#timing-adjustable">Learn more about 2.2.1 Timing Adjustable</a></li>
+      <li><a href="https://www.w3.org/TR/WCAG22/#timing-adjustable">Learn more about 2.2.1 Timing Adjustable</a></li>
       <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level A and higher.</li>
       <li>Outcome mapping: <ul>
         <li>Any <code>failed</code> outcomes: success criterion is not satisfied</li>
@@ -83,7 +83,7 @@ Not all major web browsers parse the value of the `content` attribute in the sam
   <li><details>
     <summary><span>G110: Using an instant client-side redirect</span></summary>
     <ul>
-      <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G110">Learn more about technique G110</a></li>
+      <li><a href="https://www.w3.org/WAI/WCAG22/Techniques/general/G110">Learn more about technique G110</a></li>
       <li>Not required for conformance to any W3C accessibility recommendation.</li>
       <li>Outcome mapping: <ul>
         <li>Any <code>failed</code> outcomes: technique is not satisfied</li>
@@ -95,7 +95,7 @@ Not all major web browsers parse the value of the `content` attribute in the sam
   <li><details>
     <summary><span>H76: Using meta refresh to create an instant client-side redirect</span></summary>
     <ul>
-      <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/html/H76">Learn more about technique H76</a></li>
+      <li><a href="https://www.w3.org/WAI/WCAG22/Techniques/html/H76">Learn more about technique H76</a></li>
       <li>Not required for conformance to any W3C accessibility recommendation.</li>
       <li>Outcome mapping: <ul>
         <li>Any <code>failed</code> outcomes: technique is not satisfied</li>
@@ -114,8 +114,8 @@ not designed to test this requirements directly. These
 can either be stricter than the rule requires, or may be satisfied in ways 
 not tested by the rule:
 
-- [2.2.4 Interruptions (Level AAA)](https://www.w3.org/TR/WCAG21/#interruptions): This success criterion is **more strict** than this rule. This is because the rule allows redirects longer than 20 hours. Some of the passed examples do not satisfy this success criterion.
-- [3.2.5 Change on Request (Level AAA)](https://www.w3.org/TR/WCAG21/#change-on-request): This success criterion is **more strict** than this rule. This is because the rule allows redirects longer than 20 hours. Some of the passed examples do not satisfy this success criterion.
+- [2.2.4 Interruptions (Level AAA)](https://www.w3.org/TR/WCAG22/#interruptions): This success criterion is **more strict** than this rule. This is because the rule allows redirects longer than 20 hours. Some of the passed examples do not satisfy this success criterion.
+- [3.2.5 Change on Request (Level AAA)](https://www.w3.org/TR/WCAG22/#change-on-request): This success criterion is **more strict** than this rule. This is because the rule allows redirects longer than 20 hours. Some of the passed examples do not satisfy this success criterion.
 
 ## Input Aspects
 

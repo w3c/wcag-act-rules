@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> c5a4ea</p>
-  <p><strong>Date:</strong> Updated 21 November 2024</p>
+  <p><strong>Date:</strong> Updated 2 December 2024</p>
   <p><strong>Authors:</strong> <a href="https://www.linkedin.com/in/brianbors/">Brian Bors</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
   
@@ -22,7 +22,7 @@ rule_meta:
   original_file: video-alternative-for-visual-c5a4ea.md
   description: |
     This rule checks that `video` elements with audio have an alternative for the video content as audio or as text.
-  last_modified: 21 November 2024
+  last_modified: 2 December 2024
   scs_tested:
     - handle: Audio Description or Media Alternative (Prerecorded)
       num: 1.2.3
@@ -65,7 +65,7 @@ The HTML `video` element can also have a `track` element that provides an audio 
   <li><details>
     <summary><span>1.2.3 Audio Description or Media Alternative (Prerecorded) (Level A)</span></summary>
     <ul>
-      <li><a href="https://www.w3.org/TR/WCAG21/#audio-description-or-media-alternative-prerecorded">Learn more about 1.2.3 Audio Description or Media Alternative (Prerecorded)</a></li>
+      <li><a href="https://www.w3.org/TR/WCAG22/#audio-description-or-media-alternative-prerecorded">Learn more about 1.2.3 Audio Description or Media Alternative (Prerecorded)</a></li>
       <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level A and higher.</li>
       <li>Outcome mapping: <ul>
         <li>Any <code>failed</code> outcomes: success criterion is not satisfied</li>
@@ -77,7 +77,7 @@ The HTML `video` element can also have a `track` element that provides an audio 
   <li><details>
     <summary><span>G8: Providing a movie with extended audio descriptions</span></summary>
     <ul>
-      <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G8">Learn more about technique G8</a></li>
+      <li><a href="https://www.w3.org/WAI/WCAG22/Techniques/general/G8">Learn more about technique G8</a></li>
       <li>Not required for conformance to any W3C accessibility recommendation.</li>
       <li>Outcome mapping: <ul>
         <li>Any <code>failed</code> outcomes: technique is not satisfied</li>
@@ -89,7 +89,7 @@ The HTML `video` element can also have a `track` element that provides an audio 
   <li><details>
     <summary><span>G69: Providing an alternative for time based media</span></summary>
     <ul>
-      <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G69">Learn more about technique G69</a></li>
+      <li><a href="https://www.w3.org/WAI/WCAG22/Techniques/general/G69">Learn more about technique G69</a></li>
       <li>Not required for conformance to any W3C accessibility recommendation.</li>
       <li>Outcome mapping: <ul>
         <li>Any <code>failed</code> outcomes: technique is not satisfied</li>
@@ -101,7 +101,7 @@ The HTML `video` element can also have a `track` element that provides an audio 
   <li><details>
     <summary><span>G78: Providing a second, user-selectable, audio track that includes audio descriptions</span></summary>
     <ul>
-      <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G78">Learn more about technique G78</a></li>
+      <li><a href="https://www.w3.org/WAI/WCAG22/Techniques/general/G78">Learn more about technique G78</a></li>
       <li>Not required for conformance to any W3C accessibility recommendation.</li>
       <li>Outcome mapping: <ul>
         <li>Any <code>failed</code> outcomes: technique is not satisfied</li>
@@ -113,7 +113,7 @@ The HTML `video` element can also have a `track` element that provides an audio 
   <li><details>
     <summary><span>G173: Providing a version of a movie with audio descriptions</span></summary>
     <ul>
-      <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G173">Learn more about technique G173</a></li>
+      <li><a href="https://www.w3.org/WAI/WCAG22/Techniques/general/G173">Learn more about technique G173</a></li>
       <li>Not required for conformance to any W3C accessibility recommendation.</li>
       <li>Outcome mapping: <ul>
         <li>Any <code>failed</code> outcomes: technique is not satisfied</li>
@@ -132,8 +132,8 @@ not designed to test this requirements directly. These
 can either be stricter than the rule requires, or may be satisfied in ways 
 not tested by the rule:
 
-- [1.2.5 Audio Description (Prerecorded) (Level AA)](https://www.w3.org/TR/WCAG21/#audio-description-prerecorded): This success criterion is **more strict** than this rule. This is because the rule allows a media alternative in place of audio description. Some of the passed examples do not satisfy this success criterion.
-- [1.2.8 Media Alternative (Prerecorded) (Level AAA)](https://www.w3.org/TR/WCAG21/#media-alternative-prerecorded): This success criterion is **more strict** than this rule. This is because the rule allows audio description in place of a media alternative. Some of the passed examples do not satisfy this success criterion.
+- [1.2.5 Audio Description (Prerecorded) (Level AA)](https://www.w3.org/TR/WCAG22/#audio-description-prerecorded): This success criterion is **more strict** than this rule. This is because the rule allows a media alternative in place of audio description. Some of the passed examples do not satisfy this success criterion.
+- [1.2.8 Media Alternative (Prerecorded) (Level AAA)](https://www.w3.org/TR/WCAG22/#media-alternative-prerecorded): This success criterion is **more strict** than this rule. This is because the rule allows audio description in place of a media alternative. Some of the passed examples do not satisfy this success criterion.
 
 ## Input Rules
 

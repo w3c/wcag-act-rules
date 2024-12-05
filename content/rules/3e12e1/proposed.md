@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 3e12e1</p>
-  <p><strong>Date:</strong> Updated 21 November 2024</p>
+  <p><strong>Date:</strong> Updated 2 December 2024</p>
   <p><strong>Authors:</strong> <a href="https://github.com/Jym77">Jean-Yves Moyen</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
   
@@ -22,7 +22,7 @@ rule_meta:
   original_file: block-collapsible-3e12e1.md
   description: |
     This rule checks that repeated blocks of content are collapsible
-  last_modified: 21 November 2024
+  last_modified: 2 December 2024
 ---
 
 ## Applicability
@@ -60,7 +60,7 @@ Usually the same [instrument][] removes both [visibility][visible] and [inclusio
   <li><details>
     <summary><span>SCR28: Using an expandable and collapsible menu to bypass block of content</span></summary>
     <ul>
-      <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/client-side-script/SCR28">Learn more about technique SCR28</a></li>
+      <li><a href="https://www.w3.org/WAI/WCAG22/Techniques/client-side-script/SCR28">Learn more about technique SCR28</a></li>
       <li>Not required for conformance to any W3C accessibility recommendation.</li>
       <li>Outcome mapping: <ul>
         <li>Any <code>failed</code> outcomes: technique is not satisfied</li>

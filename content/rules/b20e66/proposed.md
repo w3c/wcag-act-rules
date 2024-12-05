@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> b20e66</p>
-  <p><strong>Date:</strong> Updated 21 November 2024</p>
+  <p><strong>Date:</strong> Updated 2 December 2024</p>
   <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/Jym77">Jean-Yves Moyen</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -20,7 +20,7 @@ rule_meta:
   original_file: links-identical-name-equivalent-purpose-b20e66.md
   description: |
     This rule checks that links with identical accessible names resolve to the same resource or equivalent resources.
-  last_modified: 21 November 2024
+  last_modified: 2 December 2024
   scs_tested:
     - handle: Link Purpose (Link Only)
       num: 2.4.9
@@ -66,7 +66,7 @@ When followed, the links in each set of target elements resolve to the [same res
   <li><details>
     <summary><span>2.4.9 Link Purpose (Link Only) (Level AAA)</span></summary>
     <ul>
-      <li><a href="https://www.w3.org/TR/WCAG21/#link-purpose-link-only">Learn more about 2.4.9 Link Purpose (Link Only)</a></li>
+      <li><a href="https://www.w3.org/TR/WCAG22/#link-purpose-link-only">Learn more about 2.4.9 Link Purpose (Link Only)</a></li>
       <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level AAA.</li>
       <li>Outcome mapping: <ul>
         <li>Any <code>failed</code> outcomes: success criterion is not satisfied</li>

@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> c4a8a4</p>
-  <p><strong>Date:</strong> Updated 21 November 2024</p>
+  <p><strong>Date:</strong> Updated 2 December 2024</p>
   <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/corbb">Corbb O'Connor</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -20,7 +20,7 @@ rule_meta:
   original_file: html-page-title-descriptive-c4a8a4.md
   description: |
     This rule checks that the first title in an HTML web page describes the topic or purpose of that page.
-  last_modified: 21 November 2024
+  last_modified: 2 December 2024
   scs_tested:
     - handle: Page Titled
       num: 2.4.2
@@ -68,7 +68,7 @@ There are currently no assumptions.
   <li><details>
     <summary><span>2.4.2 Page Titled (Level A)</span></summary>
     <ul>
-      <li><a href="https://www.w3.org/TR/WCAG21/#page-titled">Learn more about 2.4.2 Page Titled</a></li>
+      <li><a href="https://www.w3.org/TR/WCAG22/#page-titled">Learn more about 2.4.2 Page Titled</a></li>
       <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level A and higher.</li>
       <li>Outcome mapping: <ul>
         <li>Any <code>failed</code> outcomes: success criterion is not satisfied</li>
@@ -80,7 +80,7 @@ There are currently no assumptions.
   <li><details>
     <summary><span>G88: Providing descriptive titles for Web pages</span></summary>
     <ul>
-      <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G88">Learn more about technique G88</a></li>
+      <li><a href="https://www.w3.org/WAI/WCAG22/Techniques/general/G88">Learn more about technique G88</a></li>
       <li>Not required for conformance to any W3C accessibility recommendation.</li>
       <li>Outcome mapping: <ul>
         <li>Any <code>failed</code> outcomes: technique is not satisfied</li>
@@ -92,7 +92,7 @@ There are currently no assumptions.
   <li><details>
     <summary><span>H25: Providing a title using the title element</span></summary>
     <ul>
-      <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/html/H25">Learn more about technique H25</a></li>
+      <li><a href="https://www.w3.org/WAI/WCAG22/Techniques/html/H25">Learn more about technique H25</a></li>
       <li>Not required for conformance to any W3C accessibility recommendation.</li>
       <li>Outcome mapping: <ul>
         <li>Any <code>failed</code> outcomes: technique is not satisfied</li>

@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> afw4f7</p>
-  <p><strong>Date:</strong> Updated 21 November 2024</p>
+  <p><strong>Date:</strong> Updated 2 December 2024</p>
   <p><strong>Authors:</strong> <a href="https://www.linkedin.com/in/brianbors/">Brian Bors</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -20,7 +20,7 @@ rule_meta:
   original_file: text-contrast-afw4f7.md
   description: |
     This rule checks that the highest possible contrast of every text character with its background meets the minimal contrast requirement.
-  last_modified: 21 November 2024
+  last_modified: 2 December 2024
   scs_tested:
     - handle: Contrast (Minimum)
       num: 1.4.3
@@ -74,7 +74,7 @@ When the text color or background color is not specified in the web page, colors
   <li><details>
     <summary><span>1.4.3 Contrast (Minimum) (Level AA)</span></summary>
     <ul>
-      <li><a href="https://www.w3.org/TR/WCAG21/#contrast-minimum">Learn more about 1.4.3 Contrast (Minimum)</a></li>
+      <li><a href="https://www.w3.org/TR/WCAG22/#contrast-minimum">Learn more about 1.4.3 Contrast (Minimum)</a></li>
       <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level AA and higher.</li>
       <li>Outcome mapping: <ul>
         <li>Any <code>failed</code> outcomes: success criterion is not satisfied</li>
@@ -93,7 +93,7 @@ not designed to test this requirements directly. These
 can either be stricter than the rule requires, or may be satisfied in ways 
 not tested by the rule:
 
-- [1.4.6 Contrast (Enhanced) (Level AAA)](https://www.w3.org/TR/WCAG21/#contrast-enhanced): This success criterion is **more strict** than this rule. This is because this criterion has a higher minimum contrast. Some of the passed examples do not satisfy this success criterion.
+- [1.4.6 Contrast (Enhanced) (Level AAA)](https://www.w3.org/TR/WCAG22/#contrast-enhanced): This success criterion is **more strict** than this rule. This is because this criterion has a higher minimum contrast. Some of the passed examples do not satisfy this success criterion.
 
 ## Input Aspects
 

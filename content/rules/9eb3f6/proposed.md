@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 9eb3f6</p>
-  <p><strong>Date:</strong> Updated 21 November 2024</p>
+  <p><strong>Date:</strong> Updated 2 December 2024</p>
   <p><strong>Authors:</strong> <a href="https://github.com/Jym77">Jean-Yves Moyen</a>. Previous Authors: <a href="https://github.com/brynanders">Bryn Anderson</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -23,7 +23,7 @@ rule_meta:
   original_file: image-filename-as-accessible-name-9eb3f6.md
   description: |
     This rule checks that image elements that use their source filename as their accessible name do so without loss of information to the user.
-  last_modified: 21 November 2024
+  last_modified: 2 December 2024
   scs_tested:
     - handle: Non-text Content
       num: 1.1.1
@@ -68,7 +68,7 @@ There are no accessibility support issues known.
   <li><details>
     <summary><span>1.1.1 Non-text Content (Level A)</span></summary>
     <ul>
-      <li><a href="https://www.w3.org/TR/WCAG21/#non-text-content">Learn more about 1.1.1 Non-text Content</a></li>
+      <li><a href="https://www.w3.org/TR/WCAG22/#non-text-content">Learn more about 1.1.1 Non-text Content</a></li>
       <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level A and higher.</li>
       <li>Outcome mapping: <ul>
         <li>Any <code>failed</code> outcomes: success criterion is not satisfied</li>
@@ -80,7 +80,7 @@ There are no accessibility support issues known.
   <li><details>
     <summary><span>G94: Providing short text alternative for non-text content that serves the same purpose and presents the same information as the non-text content</span></summary>
     <ul>
-      <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G94">Learn more about technique G94</a></li>
+      <li><a href="https://www.w3.org/WAI/WCAG22/Techniques/general/G94">Learn more about technique G94</a></li>
       <li>Not required for conformance to any W3C accessibility recommendation.</li>
       <li>Outcome mapping: <ul>
         <li>Any <code>failed</code> outcomes: technique is not satisfied</li>
@@ -92,7 +92,7 @@ There are no accessibility support issues known.
   <li><details>
     <summary><span>G95: Providing short text alternatives that provide a brief description of the non-text content</span></summary>
     <ul>
-      <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G95">Learn more about technique G95</a></li>
+      <li><a href="https://www.w3.org/WAI/WCAG22/Techniques/general/G95">Learn more about technique G95</a></li>
       <li>Not required for conformance to any W3C accessibility recommendation.</li>
       <li>Outcome mapping: <ul>
         <li>Any <code>failed</code> outcomes: technique is not satisfied</li>
