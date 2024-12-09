@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 80f0bf</p>
-  <p><strong>Date:</strong> Updated 21 November 2024</p>
+  <p><strong>Date:</strong> Updated 2 December 2024</p>
   <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/brynanders">Bryn Anderson</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
   
@@ -22,7 +22,7 @@ rule_meta:
   original_file: audio-or-video-avoids-automatically-playing-audio-80f0bf.md
   description: |
     This rule checks that audio or video that plays automatically does not have audio that lasts for more than 3 seconds or has an audio control mechanism to stop or mute it.
-  last_modified: 21 November 2024
+  last_modified: 2 December 2024
   scs_tested:
     - handle: Audio Control
       num: 1.4.2
@@ -72,7 +72,7 @@ User agents do not always automatically play media, even when an `autoplay` attr
   <li><details>
     <summary><span>1.4.2 Audio Control (Level A)</span></summary>
     <ul>
-      <li><a href="https://www.w3.org/TR/WCAG21/#audio-control">Learn more about 1.4.2 Audio Control</a></li>
+      <li><a href="https://www.w3.org/TR/WCAG22/#audio-control">Learn more about 1.4.2 Audio Control</a></li>
       <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level A and higher.</li>
       <li>Outcome mapping: <ul>
         <li>Any <code>failed</code> outcomes: success criterion is not satisfied</li>
@@ -84,8 +84,8 @@ User agents do not always automatically play media, even when an `autoplay` attr
   <li><details>
     <summary><span>WCAG Non-Interference</span></summary>
     <ul>
-      <li><a href="https://www.w3.org/TR/WCAG21/#cc5">Learn more about WCAG Non-Interference</a></li>
-      <li><strong>Required for conformance</strong> to WCAG 2.1.</li>
+      <li><a href="https://www.w3.org/TR/WCAG22/#cc5">Learn more about WCAG Non-Interference</a></li>
+      <li><strong>Required for conformance</strong> to WCAG 2.2.</li>
       <li>Outcome mapping: <ul>
         <li>Any <code>failed</code> outcomes: WCAG 2 conformance requirement is not satisfied</li>
         <li>All <code>passed</code> outcomes: WCAG 2 conformance requirement needs further testing</li>
@@ -96,7 +96,7 @@ User agents do not always automatically play media, even when an `autoplay` attr
   <li><details>
     <summary><span>G60: Playing a sound that turns off automatically within three seconds</span></summary>
     <ul>
-      <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G60">Learn more about technique G60</a></li>
+      <li><a href="https://www.w3.org/WAI/WCAG22/Techniques/general/G60">Learn more about technique G60</a></li>
       <li>Not required for conformance to any W3C accessibility recommendation.</li>
       <li>Outcome mapping: <ul>
         <li>Any <code>failed</code> outcomes: technique is not satisfied</li>
@@ -108,7 +108,7 @@ User agents do not always automatically play media, even when an `autoplay` attr
   <li><details>
     <summary><span>G170: Providing a control near the beginning of the Web page that turns off sounds that play automatically</span></summary>
     <ul>
-      <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G170">Learn more about technique G170</a></li>
+      <li><a href="https://www.w3.org/WAI/WCAG22/Techniques/general/G170">Learn more about technique G170</a></li>
       <li>Not required for conformance to any W3C accessibility recommendation.</li>
       <li>Outcome mapping: <ul>
         <li>Any <code>failed</code> outcomes: technique is not satisfied</li>
@@ -120,7 +120,7 @@ User agents do not always automatically play media, even when an `autoplay` attr
   <li><details>
     <summary><span>G171: Playing sounds only on user request</span></summary>
     <ul>
-      <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G171">Learn more about technique G171</a></li>
+      <li><a href="https://www.w3.org/WAI/WCAG22/Techniques/general/G171">Learn more about technique G171</a></li>
       <li>Not required for conformance to any W3C accessibility recommendation.</li>
       <li>Outcome mapping: <ul>
         <li>Any <code>failed</code> outcomes: technique is not satisfied</li>

@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> de46e4</p>
-  <p><strong>Date:</strong> Updated 21 November 2024</p>
+  <p><strong>Date:</strong> Updated 2 December 2024</p>
   <p><strong>Authors:</strong> <a href="https://github.com/brynanders">Bryn Anderson</a>, <a href="https://github.com/jkodu">Jey Nandakumar</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -20,7 +20,7 @@ rule_meta:
   original_file: element-lang-valid-de46e4.md
   description: |
     This rule checks that a non-empty `lang` attribute of an element in the page has a language tag with a known primary language subtag.
-  last_modified: 21 November 2024
+  last_modified: 2 December 2024
   scs_tested:
     - handle: Language of Parts
       num: 3.1.2
@@ -68,7 +68,7 @@ There are differences in how assistive technologies handle unknown and invalid l
   <li><details>
     <summary><span>3.1.2 Language of Parts (Level AA)</span></summary>
     <ul>
-      <li><a href="https://www.w3.org/TR/WCAG21/#language-of-parts">Learn more about 3.1.2 Language of Parts</a></li>
+      <li><a href="https://www.w3.org/TR/WCAG22/#language-of-parts">Learn more about 3.1.2 Language of Parts</a></li>
       <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level AA and higher.</li>
       <li>Outcome mapping: <ul>
         <li>Any <code>failed</code> outcomes: success criterion is not satisfied</li>
@@ -80,7 +80,7 @@ There are differences in how assistive technologies handle unknown and invalid l
   <li><details>
     <summary><span>H58: Using language attributes to identify changes in the human language</span></summary>
     <ul>
-      <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/html/H58">Learn more about technique H58</a></li>
+      <li><a href="https://www.w3.org/WAI/WCAG22/Techniques/html/H58">Learn more about technique H58</a></li>
       <li>Not required for conformance to any W3C accessibility recommendation.</li>
       <li>Outcome mapping: <ul>
         <li>Any <code>failed</code> outcomes: technique is not satisfied</li>

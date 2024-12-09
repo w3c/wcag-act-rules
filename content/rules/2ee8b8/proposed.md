@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 2ee8b8</p>
-  <p><strong>Date:</strong> Updated 21 November 2024</p>
+  <p><strong>Date:</strong> Updated 2 December 2024</p>
   <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/brynanders">Bryn Anderson</a>, <a href="https://github.com/jkodu">Jey Nandakumar</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -20,7 +20,7 @@ rule_meta:
   original_file: visible-label-in-accessible-name-2ee8b8.md
   description: |
     This rule checks that interactive elements labeled through content have their visible label as part of their accessible name.
-  last_modified: 21 November 2024
+  last_modified: 2 December 2024
   scs_tested:
     - handle: Label in Name
       num: 2.5.3
@@ -64,8 +64,8 @@ Implementation of [Presentational Roles Conflict Resolution][] varies from one b
   <li><details>
     <summary><span>2.5.3 Label in Name (Level A)</span></summary>
     <ul>
-      <li><a href="https://www.w3.org/TR/WCAG21/#label-in-name">Learn more about 2.5.3 Label in Name</a></li>
-      <li><strong>Required for conformance</strong> to WCAG 2.1 on level A and higher.</li>
+      <li><a href="https://www.w3.org/TR/WCAG22/#label-in-name">Learn more about 2.5.3 Label in Name</a></li>
+      <li><strong>Required for conformance</strong> to WCAG 2.1 and later on level A and higher.</li>
       <li>Outcome mapping: <ul>
         <li>Any <code>failed</code> outcomes: success criterion is not satisfied</li>
         <li>All <code>passed</code> outcomes: success criterion needs further testing</li>
@@ -76,7 +76,7 @@ Implementation of [Presentational Roles Conflict Resolution][] varies from one b
   <li><details>
     <summary><span>G208: Including the text of the visible label as part of the accessible name</span></summary>
     <ul>
-      <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G208">Learn more about technique G208</a></li>
+      <li><a href="https://www.w3.org/WAI/WCAG22/Techniques/general/G208">Learn more about technique G208</a></li>
       <li>Not required for conformance to any W3C accessibility recommendation.</li>
       <li>Outcome mapping: <ul>
         <li>Any <code>failed</code> outcomes: technique is not satisfied</li>
