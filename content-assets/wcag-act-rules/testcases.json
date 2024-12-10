@@ -3,7 +3,7 @@
   "website": "https://www.w3.org/WAI/standards-guidelines/act/rules/",
   "license": "https://act-rules.github.io/pages/license/",
   "description": "Accessibility conformance testing rules for HTML",
-  "count": 1165,
+  "count": 1166,
   "testcases": [
     {
       "ruleId": "674b10",
@@ -19104,10 +19104,10 @@
       "ruleName": "Focusable element has no keyboard trap via standard navigation",
       "ruleAccessibilityRequirements": null,
       "expected": "passed",
-      "testcaseId": "fb76f71a94bf95f5cfef22f3db6655e7b0a57b0c",
+      "testcaseId": "d26e3cbd39acb781e77c93ea99cc37b4c886c0c5",
       "testcaseTitle": "Passed Example 2",
-      "relativePath": "testcases/a1b64e/fb76f71a94bf95f5cfef22f3db6655e7b0a57b0c.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a1b64e/fb76f71a94bf95f5cfef22f3db6655e7b0a57b0c.html",
+      "relativePath": "testcases/a1b64e/d26e3cbd39acb781e77c93ea99cc37b4c886c0c5.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a1b64e/d26e3cbd39acb781e77c93ea99cc37b4c886c0c5.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/a1b64e/proposed/"
     },
     {
@@ -19119,6 +19119,17 @@
       "testcaseTitle": "Passed Example 3",
       "relativePath": "testcases/a1b64e/4b93a866e14ad4c9ed8efa13c080a1e05350fa2f.html",
       "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a1b64e/4b93a866e14ad4c9ed8efa13c080a1e05350fa2f.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/a1b64e/proposed/"
+    },
+    {
+      "ruleId": "a1b64e",
+      "ruleName": "Focusable element has no keyboard trap via standard navigation",
+      "ruleAccessibilityRequirements": null,
+      "expected": "passed",
+      "testcaseId": "6ee6cdfc0ae79ec72379b9ee4df9c1920b09ba15",
+      "testcaseTitle": "Passed Example 4",
+      "relativePath": "testcases/a1b64e/6ee6cdfc0ae79ec72379b9ee4df9c1920b09ba15.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a1b64e/6ee6cdfc0ae79ec72379b9ee4df9c1920b09ba15.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/a1b64e/proposed/"
     },
     {

@@ -9,8 +9,8 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> a1b64e</p>
-  <p><strong>Date:</strong> Updated 21 November 2024</p>
-  <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/carlosapaduarte">Carlos Duarte</a>, <a href="https://github.com/DagfinnRomen">Dagfinn Rømen</a>, <a href="https://github.com/geirsf">Geir Sindre Fossøy</a>, <a href="https: //github.com/MaliinO">Malin Øvrebø</a>, <a href="https://github.com/nitedog">Shadi Abou-Zahra</a>, <a href="https://github.com/skotkjerra">Stein Erik Skotkjerra</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
+  <p><strong>Date:</strong> Updated 5 December 2024</p>
+  <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/carlosapaduarte">Carlos Duarte</a>, <a href="https://github.com/DagfinnRomen">Dagfinn Rømen</a>, <a href="https://github.com/geirsf">Geir Sindre Fossøy</a>, <a href="https: //github.com/MaliinO">Malin Øvrebø</a>, <a href="https://github.com/nitedog">Shadi Abou-Zahra</a>, <a href="https://github.com/skotkjerra">Stein Erik Skotkjerra</a>, Tom Brunet. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
 rule_meta:
@@ -20,7 +20,7 @@ rule_meta:
   original_file: focusable-no-keyboard-trap-standard-nav-a1b64e.md
   description: |
     This rule checks if it is possible to use standard keyboard navigation to navigate through all content on a web page without becoming trapped in any element.
-  last_modified: 21 November 2024
+  last_modified: 5 December 2024
 ---
 
 ## Applicability
@@ -44,7 +44,7 @@ This rule only requires navigation in one direction (either forward or backward)
 
 ### Accessibility Support
 
-There are no accessibility support issues known.
+Some browsers have settings that will immediately cycle focus back to the web document. This fulfills the expectation because focus can cycle to the browser UI and the browser UI cycles focus back to the web document.
 
 ### Bibliography
 
@@ -79,12 +79,12 @@ These [focusable][] elements do not create a trap for keyboard navigation.
 
 #### Passed Example 2
 
-<a class="example-link" title="Passed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/a1b64e/fb76f71a94bf95f5cfef22f3db6655e7b0a57b0c.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/a1b64e/d26e3cbd39acb781e77c93ea99cc37b4c886c0c5.html">Open in a new tab</a>
 
 This element is made [focusable][] by the `tabindex` attribute. It does not create a trap for keyboard navigation.
 
 ```html
-<div tabindex="1">Text</div>
+<div role="button" tabindex="1">Text</div>
 ```
 
 #### Passed Example 3
@@ -95,6 +95,56 @@ This element is made [focusable][] by the `tabindex` attribute, even if it is no
 
 ```html
 <div tabindex="-1">Text</div>
+```
+
+#### Passed Example 4
+
+<a class="example-link" title="Passed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/a1b64e/6ee6cdfc0ae79ec72379b9ee4df9c1920b09ba15.html">Open in a new tab</a>
+
+While the elements with id "sentinelBefore" and "sentinelAfter" contain focus to the contents of the div with name "Sample Modal", focus is not trapped since the user can
+use [standard keyboard navigation](#standard-keyboard-navigation) using the Escape key or by activating the "Close button" to dismiss the modal
+
+```html
+<div>Main page content with <a href="#">some link</a></div>
+<div aria-hidden="true">
+    <a href="#" id="sentinelBefore" style="position:absolute; top:-999em"
+        >Upon receiving focus, this focus sentinel should wrap focus to the bottom of the modal</a
+    >
+</div>
+<div
+    id="sampleModal"
+    role="dialog"
+    aria-label="Sample Modal"
+    aria-modal="true"
+    style="border: solid black 1px; padding: 1rem;"
+>
+    <label>First and last name <input id="dialogFirst"/></label><br />
+    <button id="closeButton">Close button</button>
+</div>
+<div aria-hidden="true">
+    <a href="#" id="sentinelAfter" style="position:absolute; top:-999em"
+        >Upon receiving focus, this focus sentinel should wrap focus to the top of the modal</a
+    >
+</div>
+<script>
+    window.addEventListener('load', () => {
+        document.getElementById('dialogFirst').focus();
+    })
+    document.getElementById('sentinelBefore').addEventListener('focus', () => {
+        document.getElementById('closeButton').focus()
+    })
+    document.getElementById('sentinelAfter').addEventListener('focus', () => {
+        document.getElementById('dialogFirst').focus()
+    })
+    document.getElementById('closeButton').addEventListener('click', () => {
+        document.getElementById('sampleModal').style.display = 'none'
+    })
+    document.getElementById('sampleModal').addEventListener('keydown', (evt) => {
+        if (evt.key === "Escape") {
+            document.getElementById('sampleModal').style.display = 'none';    
+        }
+    })
+</script>
 ```
 
 ### Failed

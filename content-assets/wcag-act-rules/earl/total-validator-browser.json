@@ -9,7 +9,7 @@
         "@type": "Software",
         "title": "Total Validator CI (+Browser)",
         "description": "Total Validator checks websites are accessible, use valid HTML and CSS, have no broken links, and are free from spelling mistakes.",
-        "hasVersion": "18.1.0 (+6.1)",
+        "hasVersion": "18.2.0 (+6.2)",
         "homepage": "https://www.totalvalidator.com"
       },
       "assertions": [
@@ -7823,6 +7823,104 @@
     },
     {
       "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/oj04fd/52be6331dc0978990a8b806a9a4a84bf738a43e1.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "E914",
+            "isPartOf": ["WCAG2:focus-visible"]
+           },
+          "result": { "outcome": "earl:passed" }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/oj04fd/95cf4fdf26825900e91a30eaf6c2235516db79f9.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "E914",
+            "isPartOf": ["WCAG2:focus-visible"]
+           },
+          "result": { "outcome": "earl:passed" }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/oj04fd/b44aa294df6f0de62f11f6ae732087d92c90b448.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "E914",
+            "isPartOf": ["WCAG2:focus-visible"]
+           },
+          "result": { "outcome": "earl:cantTell" }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/oj04fd/dd9628d86628e285fe99ce98efdacbe441c20ca5.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "E914",
+            "isPartOf": ["WCAG2:focus-visible"]
+           },
+          "result": { "outcome": "earl:cantTell" }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/oj04fd/f1c9efb4c8d1b5f7870c693bce2e6ca046dd768d.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "E914",
+            "isPartOf": ["WCAG2:focus-visible"]
+           },
+          "result": { "outcome": "earl:failed" }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/oj04fd/90789ad82a761b7697418e8cb403db103f0925a2.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "E914",
+            "isPartOf": ["WCAG2:focus-visible"]
+           },
+          "result": { "outcome": "earl:passed" }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/oj04fd/b12f1f45eef29c30197ca3bda79d793cd90eeadd.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "E914",
+            "isPartOf": ["WCAG2:focus-visible"]
+           },
+          "result": { "outcome": "earl:passed" }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
       "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/fd406bedf0bb3bdc4c2a718f49a3dd0f7aaa7556.html",
       "assertions": [
         {
@@ -13157,6 +13255,62 @@
     },
     {
       "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2779a5/94ff40484422832c2910086d4387163aa2d9dd7d.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "E869",
+            "isPartOf": ["WCAG2:page-titled"]
+           },
+          "result": { "outcome": "earl:passed" }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2779a5/94ff40484422832c2910086d4387163aa2d9dd7d.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "E870",
+            "isPartOf": ["WCAG2:page-titled"]
+           },
+          "result": { "outcome": "earl:passed" }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2779a5/9c5eeb535181f3709e13b548a04b9d0054532cdd.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "E869",
+            "isPartOf": ["WCAG2:page-titled"]
+           },
+          "result": { "outcome": "earl:failed" }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2779a5/9c5eeb535181f3709e13b548a04b9d0054532cdd.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "E870",
+            "isPartOf": ["WCAG2:page-titled"]
+           },
+          "result": { "outcome": "earl:passed" }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
       "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4b1c6c/08c5575023e8bf16caabcf01a1c8d40fe6ecaf94.html",
       "assertions": [
         {
@@ -14151,6 +14305,20 @@
     },
     {
       "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/0ssw9k/c5f649f91ebe4979270972db7c42279a74efc6c5.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "W900",
+            "isPartOf": ["WCAG2:keyboard", "WCAG2:keyboard-no-exception"]
+           },
+          "result": { "outcome": "earl:passed" }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
       "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/0ssw9k/a7da5f9dbc260d633787386b6041c70cb9fbdc32.html",
       "assertions": [
         {
@@ -14186,6 +14354,34 @@
           "test": {
             "title": "W900",
             "isPartOf": ["WCAG2:keyboard", "WCAG2:keyboard-no-exception"]
+           },
+          "result": { "outcome": "earl:passed" }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/oj04fd/8f296b7a417523e9c769761dd41b703c75d90019.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "E914",
+            "isPartOf": ["WCAG2:focus-visible"]
+           },
+          "result": { "outcome": "earl:cantTell" }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/oj04fd/eb4f387bfa2459fb12dc5b0cbda478238b3eeeda.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "E914",
+            "isPartOf": ["WCAG2:focus-visible"]
            },
           "result": { "outcome": "earl:passed" }
         }
@@ -14636,6 +14832,48 @@
             "isPartOf": ["WCAG2:contrast-minimum", "WCAG2:contrast-enhanced"]
            },
           "result": { "outcome": "earl:passed" }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/8c33a0af471cc3c1abbb9f709afa6629b13daf3a.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "P9121",
+            "isPartOf": ["WCAG2:contrast-minimum", "WCAG2:contrast-enhanced"]
+           },
+          "result": { "outcome": "earl:passed" }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/8c33a0af471cc3c1abbb9f709afa6629b13daf3a.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "I863",
+            "isPartOf": ["WCAG2:contrast-minimum", "WCAG2:contrast-enhanced"]
+           },
+          "result": { "outcome": "earl:passed" }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/8c33a0af471cc3c1abbb9f709afa6629b13daf3a.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "I864",
+            "isPartOf": ["WCAG2:contrast-minimum", "WCAG2:contrast-enhanced"]
+           },
+          "result": { "outcome": "earl:cantTell" }
         }
       ]
     },

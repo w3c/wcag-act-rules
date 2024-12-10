@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 73f2c2</p>
-  <p><strong>Date:</strong> Updated 21 November 2024</p>
+  <p><strong>Date:</strong> Updated 2 December 2024</p>
   <p><strong>Authors:</strong> <a href="https://github.com/ajanec01">Aron Janecki</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -20,7 +20,7 @@ rule_meta:
   original_file: autocomplete-valid-value-73f2c2.md
   description: |
     This rule checks that the HTML `autocomplete` attribute has a correct value.
-  last_modified: 21 November 2024
+  last_modified: 2 December 2024
   scs_tested:
     - handle: Identify Input Purpose
       num: 1.3.5
@@ -88,8 +88,8 @@ The purpose of a control is programmatically identifiable even when its `autocom
   <li><details>
     <summary><span>1.3.5 Identify Input Purpose (Level AA)</span></summary>
     <ul>
-      <li><a href="https://www.w3.org/TR/WCAG21/#identify-input-purpose">Learn more about 1.3.5 Identify Input Purpose</a></li>
-      <li><strong>Required for conformance</strong> to WCAG 2.1 on level AA and higher.</li>
+      <li><a href="https://www.w3.org/TR/WCAG22/#identify-input-purpose">Learn more about 1.3.5 Identify Input Purpose</a></li>
+      <li><strong>Required for conformance</strong> to WCAG 2.1 and later on level AA and higher.</li>
       <li>Outcome mapping: <ul>
         <li>Any <code>failed</code> outcomes: success criterion is not satisfied</li>
         <li>All <code>passed</code> outcomes: success criterion needs further testing</li>
