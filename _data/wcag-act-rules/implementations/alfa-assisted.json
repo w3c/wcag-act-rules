@@ -2,7 +2,7 @@
   "vendor": "Siteimprove",
   "name": "Alfa (semi-automated)",
   "version": "0.80.0",
-  "lastModified": "9 December 2024",
+  "lastModified": "13 December 2024",
   "approvedRules": {
     "complete": 25,
     "partial": 0,
@@ -203,9 +203,7 @@
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
-        "reported": [
-          "https://www.w3.org/TR/wai-aria-1.2/#propcharacteristic_value"
-        ]
+        "reported": []
       },
       "coverage": {
         "covered": 20,
@@ -542,9 +540,7 @@
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
-        "reported": [
-          "https://www.w3.org/TR/wai-aria-1.2/#state_prop_def"
-        ]
+        "reported": []
       },
       "coverage": {
         "covered": 7,
@@ -3070,9 +3066,7 @@
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
-        "reported": [
-          "element-marked-as-decorative-is-not-exposed"
-        ]
+        "reported": []
       },
       "coverage": {
         "covered": 10,
@@ -7639,7 +7633,7 @@
             {
               "procedureName": "sia-r69",
               "outcomes": [
-                "cantTell"
+                "failed"
               ]
             }
           ]
@@ -8693,9 +8687,7 @@
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
-        "reported": [
-          "https://www.w3.org/TR/wai-aria-1.2/#propcharacteristic_value"
-        ]
+        "reported": []
       },
       "coverage": {
         "covered": 9,
@@ -9134,7 +9126,6 @@
         "correct": true,
         "expected": [],
         "reported": [
-          "https://www.w3.org/TR/wai-aria-1.2/#state_property_processing",
           "https://www.w3.org/WAI/WCAG22/Techniques/aria/ARIA5"
         ]
       },
@@ -12259,9 +12250,9 @@
         ]
       },
       "coverage": {
-        "covered": 20,
+        "covered": 21,
         "untested": 0,
-        "cantTell": 1,
+        "cantTell": 0,
         "testCaseTotal": 24
       },
       "testCaseResults": [
@@ -12500,7 +12491,7 @@
             {
               "procedureName": "sia-r81",
               "outcomes": [
-                "cantTell"
+                "failed"
               ]
             }
           ]
