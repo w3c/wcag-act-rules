@@ -2,7 +2,7 @@
   "vendor": "Siteimprove",
   "name": "Alfa (fully automated)",
   "version": "0.80.0",
-  "lastModified": "13 December 2024",
+  "lastModified": "16 December 2024",
   "approvedRules": {
     "complete": 24,
     "partial": 1,
@@ -203,7 +203,9 @@
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
-        "reported": []
+        "reported": [
+          "https://www.w3.org/TR/wai-aria-1.2/#propcharacteristic_value"
+        ]
       },
       "coverage": {
         "covered": 20,
@@ -540,7 +542,9 @@
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
-        "reported": []
+        "reported": [
+          "https://www.w3.org/TR/wai-aria-1.2/#state_prop_def"
+        ]
       },
       "coverage": {
         "covered": 7,
@@ -3066,7 +3070,9 @@
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
-        "reported": []
+        "reported": [
+          "element-marked-as-decorative-is-not-exposed"
+        ]
       },
       "coverage": {
         "covered": 10,
@@ -8687,7 +8693,9 @@
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
-        "reported": []
+        "reported": [
+          "https://www.w3.org/TR/wai-aria-1.2/#propcharacteristic_value"
+        ]
       },
       "coverage": {
         "covered": 9,
@@ -9126,6 +9134,7 @@
         "correct": true,
         "expected": [],
         "reported": [
+          "https://www.w3.org/TR/wai-aria-1.2/#state_property_processing",
           "https://www.w3.org/WAI/WCAG22/Techniques/aria/ARIA5"
         ]
       },
