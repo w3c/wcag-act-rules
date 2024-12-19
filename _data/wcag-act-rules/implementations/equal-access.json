@@ -2,7 +2,7 @@
   "vendor": "IBM Accessibility",
   "name": "Equal Access Accessibility Checker",
   "version": "3.1.42-rc.0",
-  "lastModified": "7 November 2024",
+  "lastModified": "13 December 2024",
   "approvedRules": {
     "complete": 20,
     "partial": 4,
@@ -3962,7 +3962,7 @@
             {
               "procedureName": "page_title_exists:Pass_0,Fail_1,Fail_2,Fail_3",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -4255,20 +4255,22 @@
       "ruleName": "Image has non-empty accessible name",
       "ruleApproved": true,
       "procedureNames": [
-        "img_alt_valid:pass,fail_blank_alt,fail_no_alt,fail_blank_title"
+        "img_alt_valid:pass,fail_blank_alt,fail_no_alt,fail_blank_title",
+        "aria_accessiblename_exists:fail_no_accessible_name_image"
       ],
       "consistency": "partial",
       "accessibilityRequirements": {
-        "correct": true,
+        "correct": false,
         "expected": [
           "WCAG2:non-text-content"
         ],
         "reported": [
-          "WCAG2:non-text-content"
+          "WCAG2:non-text-content",
+          "WCAG2:name-role-value"
         ]
       },
       "coverage": {
-        "covered": 17,
+        "covered": 18,
         "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 18
@@ -4286,6 +4288,12 @@
               "outcomes": [
                 "passed"
               ]
+            },
+            {
+              "procedureName": "aria_accessiblename_exists:fail_no_accessible_name_image",
+              "outcomes": [
+                "inapplicable"
+              ]
             }
           ]
         },
@@ -4298,6 +4306,12 @@
           "procedureResults": [
             {
               "procedureName": "img_alt_valid:pass,fail_blank_alt,fail_no_alt,fail_blank_title",
+              "outcomes": [
+                "inapplicable"
+              ]
+            },
+            {
+              "procedureName": "aria_accessiblename_exists:fail_no_accessible_name_image",
               "outcomes": [
                 "inapplicable"
               ]
@@ -4316,6 +4330,12 @@
               "outcomes": [
                 "inapplicable"
               ]
+            },
+            {
+              "procedureName": "aria_accessiblename_exists:fail_no_accessible_name_image",
+              "outcomes": [
+                "inapplicable"
+              ]
             }
           ]
         },
@@ -4330,6 +4350,12 @@
               "procedureName": "img_alt_valid:pass,fail_blank_alt,fail_no_alt,fail_blank_title",
               "outcomes": [
                 "passed"
+              ]
+            },
+            {
+              "procedureName": "aria_accessiblename_exists:fail_no_accessible_name_image",
+              "outcomes": [
+                "inapplicable"
               ]
             }
           ]
@@ -4346,6 +4372,12 @@
               "outcomes": [
                 "passed"
               ]
+            },
+            {
+              "procedureName": "aria_accessiblename_exists:fail_no_accessible_name_image",
+              "outcomes": [
+                "inapplicable"
+              ]
             }
           ]
         },
@@ -4360,6 +4392,12 @@
               "procedureName": "img_alt_valid:pass,fail_blank_alt,fail_no_alt,fail_blank_title",
               "outcomes": [
                 "passed"
+              ]
+            },
+            {
+              "procedureName": "aria_accessiblename_exists:fail_no_accessible_name_image",
+              "outcomes": [
+                "inapplicable"
               ]
             }
           ]
@@ -4376,6 +4414,12 @@
               "outcomes": [
                 "passed"
               ]
+            },
+            {
+              "procedureName": "aria_accessiblename_exists:fail_no_accessible_name_image",
+              "outcomes": [
+                "inapplicable"
+              ]
             }
           ]
         },
@@ -4390,6 +4434,12 @@
               "procedureName": "img_alt_valid:pass,fail_blank_alt,fail_no_alt,fail_blank_title",
               "outcomes": [
                 "passed"
+              ]
+            },
+            {
+              "procedureName": "aria_accessiblename_exists:fail_no_accessible_name_image",
+              "outcomes": [
+                "inapplicable"
               ]
             }
           ]
@@ -4406,6 +4456,12 @@
               "outcomes": [
                 "failed"
               ]
+            },
+            {
+              "procedureName": "aria_accessiblename_exists:fail_no_accessible_name_image",
+              "outcomes": [
+                "inapplicable"
+              ]
             }
           ]
         },
@@ -4420,6 +4476,12 @@
               "procedureName": "img_alt_valid:pass,fail_blank_alt,fail_no_alt,fail_blank_title",
               "outcomes": [
                 "inapplicable"
+              ]
+            },
+            {
+              "procedureName": "aria_accessiblename_exists:fail_no_accessible_name_image",
+              "outcomes": [
+                "failed"
               ]
             }
           ]
@@ -4436,6 +4498,12 @@
               "outcomes": [
                 "failed"
               ]
+            },
+            {
+              "procedureName": "aria_accessiblename_exists:fail_no_accessible_name_image",
+              "outcomes": [
+                "inapplicable"
+              ]
             }
           ]
         },
@@ -4450,6 +4518,12 @@
               "procedureName": "img_alt_valid:pass,fail_blank_alt,fail_no_alt,fail_blank_title",
               "outcomes": [
                 "failed"
+              ]
+            },
+            {
+              "procedureName": "aria_accessiblename_exists:fail_no_accessible_name_image",
+              "outcomes": [
+                "inapplicable"
               ]
             }
           ]
@@ -4466,6 +4540,12 @@
               "outcomes": [
                 "failed"
               ]
+            },
+            {
+              "procedureName": "aria_accessiblename_exists:fail_no_accessible_name_image",
+              "outcomes": [
+                "inapplicable"
+              ]
             }
           ]
         },
@@ -4478,6 +4558,12 @@
           "procedureResults": [
             {
               "procedureName": "img_alt_valid:pass,fail_blank_alt,fail_no_alt,fail_blank_title",
+              "outcomes": [
+                "inapplicable"
+              ]
+            },
+            {
+              "procedureName": "aria_accessiblename_exists:fail_no_accessible_name_image",
               "outcomes": [
                 "inapplicable"
               ]
@@ -4496,6 +4582,12 @@
               "outcomes": [
                 "inapplicable"
               ]
+            },
+            {
+              "procedureName": "aria_accessiblename_exists:fail_no_accessible_name_image",
+              "outcomes": [
+                "inapplicable"
+              ]
             }
           ]
         },
@@ -4508,6 +4600,12 @@
           "procedureResults": [
             {
               "procedureName": "img_alt_valid:pass,fail_blank_alt,fail_no_alt,fail_blank_title",
+              "outcomes": [
+                "inapplicable"
+              ]
+            },
+            {
+              "procedureName": "aria_accessiblename_exists:fail_no_accessible_name_image",
               "outcomes": [
                 "inapplicable"
               ]
@@ -4526,6 +4624,12 @@
               "outcomes": [
                 "inapplicable"
               ]
+            },
+            {
+              "procedureName": "aria_accessiblename_exists:fail_no_accessible_name_image",
+              "outcomes": [
+                "inapplicable"
+              ]
             }
           ]
         },
@@ -4538,6 +4642,12 @@
           "procedureResults": [
             {
               "procedureName": "img_alt_valid:pass,fail_blank_alt,fail_no_alt,fail_blank_title",
+              "outcomes": [
+                "inapplicable"
+              ]
+            },
+            {
+              "procedureName": "aria_accessiblename_exists:fail_no_accessible_name_image",
               "outcomes": [
                 "inapplicable"
               ]
@@ -7265,7 +7375,7 @@
             {
               "procedureName": "element_scrollable_tabbable:pass_tabbable,pass_interactive,fail_scrollable",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -7855,7 +7965,7 @@
             {
               "procedureName": "text_contrast_sufficient:pass,fail_contrast,potential_same_color,potential_graphic_background,potential_text_shadow",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
