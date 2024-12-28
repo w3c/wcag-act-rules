@@ -9315,7 +9315,7 @@
             "title": "P8812",
             "isPartOf": ["WCAG2:audio-control"]
            },
-          "result": { "outcome": "earl:cantTell" }
+          "result": { "outcome": "earl:passed" }
         }
       ]
     },
@@ -9483,7 +9483,7 @@
             "title": "P8811",
             "isPartOf": []
            },
-          "result": { "outcome": "earl:failed" }
+          "result": { "outcome": "earl:cantTell" }
         }
       ]
     },
@@ -9497,7 +9497,7 @@
             "title": "P8811",
             "isPartOf": []
            },
-          "result": { "outcome": "earl:failed" }
+          "result": { "outcome": "earl:cantTell" }
         }
       ]
     },
@@ -9511,7 +9511,7 @@
             "title": "P8811",
             "isPartOf": []
            },
-          "result": { "outcome": "earl:failed" }
+          "result": { "outcome": "earl:cantTell" }
         }
       ]
     },

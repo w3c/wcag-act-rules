@@ -2,7 +2,7 @@
   "vendor": "Total Validator",
   "name": "Total Validator",
   "version": "17.4.0",
-  "lastModified": "15 December 2024",
+  "lastModified": "28 December 2024",
   "approvedRules": {
     "complete": 27,
     "partial": 0,
@@ -9205,9 +9205,9 @@
         ]
       },
       "coverage": {
-        "covered": 5,
+        "covered": 6,
         "untested": 0,
-        "cantTell": 3,
+        "cantTell": 2,
         "testCaseTotal": 8
       },
       "testCaseResults": [
@@ -9236,7 +9236,7 @@
             {
               "procedureName": "P8812",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -9374,9 +9374,9 @@
         "reported": []
       },
       "coverage": {
-        "covered": 9,
+        "covered": 6,
         "untested": 0,
-        "cantTell": 2,
+        "cantTell": 5,
         "testCaseTotal": 11
       },
       "testCaseResults": [
@@ -9465,7 +9465,7 @@
             {
               "procedureName": "P8811",
               "outcomes": [
-                "failed"
+                "cantTell"
               ]
             }
           ]
@@ -9480,7 +9480,7 @@
             {
               "procedureName": "P8811",
               "outcomes": [
-                "failed"
+                "cantTell"
               ]
             }
           ]
@@ -9495,7 +9495,7 @@
             {
               "procedureName": "P8811",
               "outcomes": [
-                "failed"
+                "cantTell"
               ]
             }
           ]

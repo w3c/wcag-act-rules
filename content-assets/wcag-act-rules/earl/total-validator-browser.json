@@ -12801,7 +12801,7 @@
             "title": "P8812",
             "isPartOf": ["WCAG2:audio-control"]
            },
-          "result": { "outcome": "earl:cantTell" }
+          "result": { "outcome": "earl:passed" }
         }
       ]
     },
@@ -12896,7 +12896,35 @@
         {
           "@type": "Assertion",
           "test": {
+            "title": "P8812",
+            "isPartOf": []
+           },
+          "result": { "outcome": "earl:passed" }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/aaa1bf/2b0af09bd403a24ec65f43c1483c1ecee7107d60.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
             "title": "P8813",
+            "isPartOf": []
+           },
+          "result": { "outcome": "earl:passed" }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/aaa1bf/e4d78b5074773ab0cbd8c72732e948c4608f5c9d.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "P8812",
             "isPartOf": []
            },
           "result": { "outcome": "earl:passed" }
@@ -12913,7 +12941,21 @@
             "title": "P8813",
             "isPartOf": []
            },
-          "result": { "outcome": "earl:cantTell" }
+          "result": { "outcome": "earl:passed" }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/aaa1bf/0d2dcde8931a9083e590034768ae2e0af747491c.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "P8812",
+            "isPartOf": []
+           },
+          "result": { "outcome": "earl:passed" }
         }
       ]
     },
@@ -12938,10 +12980,38 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "P8813",
+            "title": "P8812",
             "isPartOf": []
            },
           "result": { "outcome": "earl:failed" }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/aaa1bf/b712209d068fff2878cceadf40efe21a3ec4f6d8.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "P8813",
+            "isPartOf": []
+           },
+          "result": { "outcome": "earl:passed" }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/aaa1bf/ffa08bb05064fdf4005d0e3baff46b9f7de21336.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "P8812",
+            "isPartOf": []
+           },
+          "result": { "outcome": "earl:passed" }
         }
       ]
     },
@@ -12966,10 +13036,38 @@
         {
           "@type": "Assertion",
           "test": {
+            "title": "P8812",
+            "isPartOf": []
+           },
+          "result": { "outcome": "earl:cantTell" }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/aaa1bf/7d3d7214d9fca81a8a09a819665871a474f85548.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
             "title": "P8813",
             "isPartOf": []
            },
           "result": { "outcome": "earl:cantTell" }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/aaa1bf/b5c74f9ddba668623e33e33e3b8f773776f3177f.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "P8812",
+            "isPartOf": []
+           },
+          "result": { "outcome": "earl:passed" }
         }
       ]
     },
@@ -13067,7 +13165,7 @@
             "title": "P8811",
             "isPartOf": []
            },
-          "result": { "outcome": "earl:failed" }
+          "result": { "outcome": "earl:cantTell" }
         }
       ]
     },
@@ -13081,7 +13179,7 @@
             "title": "P8811",
             "isPartOf": []
            },
-          "result": { "outcome": "earl:failed" }
+          "result": { "outcome": "earl:cantTell" }
         }
       ]
     },
@@ -13095,7 +13193,7 @@
             "title": "P8811",
             "isPartOf": []
            },
-          "result": { "outcome": "earl:failed" }
+          "result": { "outcome": "earl:cantTell" }
         }
       ]
     },
