@@ -2,7 +2,7 @@
   "vendor": "Total Validator",
   "name": "Total Validator (+Browser)",
   "version": "17.4.0",
-  "lastModified": "28 December 2024",
+  "lastModified": "31 December 2024",
   "approvedRules": {
     "complete": 31,
     "partial": 0,
@@ -11702,7 +11702,7 @@
       "ruleName": "Audio or video element avoids automatically playing audio",
       "ruleApproved": false,
       "procedureNames": [
-        "P8812"
+        "P8811"
       ],
       "consistency": "complete",
       "accessibilityRequirements": {
@@ -11729,7 +11729,7 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "P8812",
+              "procedureName": "P8811",
               "outcomes": [
                 "passed"
               ]
@@ -11744,7 +11744,7 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "P8812",
+              "procedureName": "P8811",
               "outcomes": [
                 "passed"
               ]
@@ -11759,7 +11759,7 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "P8812",
+              "procedureName": "P8811",
               "outcomes": [
                 "cantTell"
               ]
@@ -11774,7 +11774,7 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "P8812",
+              "procedureName": "P8811",
               "outcomes": [
                 "failed"
               ]
@@ -11789,7 +11789,7 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "P8812",
+              "procedureName": "P8811",
               "outcomes": [
                 "failed"
               ]
@@ -11804,7 +11804,7 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "P8812",
+              "procedureName": "P8811",
               "outcomes": [
                 "passed"
               ]
@@ -11819,7 +11819,7 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "P8812",
+              "procedureName": "P8811",
               "outcomes": [
                 "cantTell"
               ]
@@ -11834,7 +11834,7 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "P8812",
+              "procedureName": "P8811",
               "outcomes": [
                 "passed"
               ]
@@ -11866,8 +11866,7 @@
       "ruleName": "Audio or video element that plays automatically has no audio that lasts more than 3 seconds",
       "ruleApproved": false,
       "procedureNames": [
-        "P8812",
-        "P8813"
+        "P8812"
       ],
       "consistency": "complete",
       "accessibilityRequirements": {
@@ -11894,12 +11893,6 @@
               "outcomes": [
                 "passed"
               ]
-            },
-            {
-              "procedureName": "P8813",
-              "outcomes": [
-                "passed"
-              ]
             }
           ]
         },
@@ -11915,12 +11908,6 @@
               "outcomes": [
                 "passed"
               ]
-            },
-            {
-              "procedureName": "P8813",
-              "outcomes": [
-                "passed"
-              ]
             }
           ]
         },
@@ -11933,12 +11920,6 @@
           "procedureResults": [
             {
               "procedureName": "P8812",
-              "outcomes": [
-                "passed"
-              ]
-            },
-            {
-              "procedureName": "P8813",
               "outcomes": [
                 "failed"
               ]
@@ -11957,12 +11938,6 @@
               "outcomes": [
                 "failed"
               ]
-            },
-            {
-              "procedureName": "P8813",
-              "outcomes": [
-                "passed"
-              ]
             }
           ]
         },
@@ -11975,12 +11950,6 @@
           "procedureResults": [
             {
               "procedureName": "P8812",
-              "outcomes": [
-                "passed"
-              ]
-            },
-            {
-              "procedureName": "P8813",
               "outcomes": [
                 "passed"
               ]
@@ -11999,12 +11968,6 @@
               "outcomes": [
                 "cantTell"
               ]
-            },
-            {
-              "procedureName": "P8813",
-              "outcomes": [
-                "cantTell"
-              ]
             }
           ]
         },
@@ -12017,12 +11980,6 @@
           "procedureResults": [
             {
               "procedureName": "P8812",
-              "outcomes": [
-                "passed"
-              ]
-            },
-            {
-              "procedureName": "P8813",
               "outcomes": [
                 "passed"
               ]
