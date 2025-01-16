@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> bf051a</p>
-  <p><strong>Date:</strong> Updated 2 December 2024</p>
+  <p><strong>Date:</strong> Updated 20 December 2024</p>
   <p><strong>Authors:</strong> <a href="https://github.com/jkodu">Jey Nandakumar</a>. Previous Authors: <a href="https://github.com/annika-FTB">Annika Nietzio</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -20,7 +20,7 @@ rule_meta:
   original_file: html-page-lang-valid-bf051a.md
   description: |
     This rule checks that the `lang` attribute of the root element of a non-embedded HTML page has a language tag with a known primary language subtag.
-  last_modified: 2 December 2024
+  last_modified: 20 December 2024
   scs_tested:
     - handle: Language of Page
       num: 3.1.1
@@ -132,7 +132,7 @@ This `html` element has a `lang` attribute with a [known primary language tag][]
 
 <a class="example-link" title="Failed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bf051a/b7a35f8080e756776877bca013a910dafde8ef73.html">Open in a new tab</a>
 
-This `html` element has a `lang` attribute with a [known primary language tag][].
+This `html` element has a `lang` attribute, with no [known primary language tag][].
 
 ```html
 <html lang="em-US"></html>
@@ -142,7 +142,7 @@ This `html` element has a `lang` attribute with a [known primary language tag][]
 
 <a class="example-link" title="Failed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bf051a/5c998eef8cb13a8f577dade1a3b9fe591bc69204.html">Open in a new tab</a>
 
-This `html` element has a `lang` attribute with a [known primary language tag][].
+This `html` element has a `lang` attribute, with no [known primary language tag][].
 
 ```html
 <html lang="#1"></html>
@@ -152,7 +152,7 @@ This `html` element has a `lang` attribute with a [known primary language tag][]
 
 <a class="example-link" title="Failed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bf051a/0f73e7179e17f050380f0ea350d2551611820fd5.html">Open in a new tab</a>
 
-The `lang` attribute of this page is an [iso 639.2][] three letters code, which has no [known primary language tag][].
+The `lang` attribute of this page is an [iso 639.2][] three-letter code, which has no [known primary language tag][].
 
 ```html
 <html lang="eng">

@@ -9298,7 +9298,7 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "P8812",
+            "title": "P8811",
             "isPartOf": ["WCAG2:audio-control"]
            },
           "result": { "outcome": "earl:passed" }
@@ -9312,10 +9312,10 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "P8812",
+            "title": "P8811",
             "isPartOf": ["WCAG2:audio-control"]
            },
-          "result": { "outcome": "earl:cantTell" }
+          "result": { "outcome": "earl:passed" }
         }
       ]
     },
@@ -9326,7 +9326,7 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "P8812",
+            "title": "P8811",
             "isPartOf": ["WCAG2:audio-control"]
            },
           "result": { "outcome": "earl:cantTell" }
@@ -9340,7 +9340,7 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "P8812",
+            "title": "P8811",
             "isPartOf": ["WCAG2:audio-control"]
            },
           "result": { "outcome": "earl:failed" }
@@ -9354,7 +9354,7 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "P8812",
+            "title": "P8811",
             "isPartOf": ["WCAG2:audio-control"]
            },
           "result": { "outcome": "earl:failed" }
@@ -9368,7 +9368,7 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "P8812",
+            "title": "P8811",
             "isPartOf": ["WCAG2:audio-control"]
            },
           "result": { "outcome": "earl:passed" }
@@ -9382,7 +9382,7 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "P8812",
+            "title": "P8811",
             "isPartOf": ["WCAG2:audio-control"]
            },
           "result": { "outcome": "earl:cantTell" }
@@ -9396,7 +9396,7 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "P8812",
+            "title": "P8811",
             "isPartOf": ["WCAG2:audio-control"]
            },
           "result": { "outcome": "earl:passed" }
@@ -9483,7 +9483,7 @@
             "title": "P8811",
             "isPartOf": []
            },
-          "result": { "outcome": "earl:failed" }
+          "result": { "outcome": "earl:cantTell" }
         }
       ]
     },
@@ -9497,7 +9497,7 @@
             "title": "P8811",
             "isPartOf": []
            },
-          "result": { "outcome": "earl:failed" }
+          "result": { "outcome": "earl:cantTell" }
         }
       ]
     },
@@ -9511,7 +9511,7 @@
             "title": "P8811",
             "isPartOf": []
            },
-          "result": { "outcome": "earl:failed" }
+          "result": { "outcome": "earl:cantTell" }
         }
       ]
     },

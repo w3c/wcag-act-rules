@@ -2,7 +2,7 @@
   "vendor": "Total Validator",
   "name": "Total Validator (+Browser)",
   "version": "17.4.0",
-  "lastModified": "15 December 2024",
+  "lastModified": "31 December 2024",
   "approvedRules": {
     "complete": 31,
     "partial": 0,
@@ -11702,7 +11702,7 @@
       "ruleName": "Audio or video element avoids automatically playing audio",
       "ruleApproved": false,
       "procedureNames": [
-        "P8812"
+        "P8811"
       ],
       "consistency": "complete",
       "accessibilityRequirements": {
@@ -11715,9 +11715,9 @@
         ]
       },
       "coverage": {
-        "covered": 5,
+        "covered": 6,
         "untested": 0,
-        "cantTell": 3,
+        "cantTell": 2,
         "testCaseTotal": 8
       },
       "testCaseResults": [
@@ -11729,7 +11729,7 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "P8812",
+              "procedureName": "P8811",
               "outcomes": [
                 "passed"
               ]
@@ -11744,9 +11744,9 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "P8812",
+              "procedureName": "P8811",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -11759,7 +11759,7 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "P8812",
+              "procedureName": "P8811",
               "outcomes": [
                 "cantTell"
               ]
@@ -11774,7 +11774,7 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "P8812",
+              "procedureName": "P8811",
               "outcomes": [
                 "failed"
               ]
@@ -11789,7 +11789,7 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "P8812",
+              "procedureName": "P8811",
               "outcomes": [
                 "failed"
               ]
@@ -11804,7 +11804,7 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "P8812",
+              "procedureName": "P8811",
               "outcomes": [
                 "passed"
               ]
@@ -11819,7 +11819,7 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "P8812",
+              "procedureName": "P8811",
               "outcomes": [
                 "cantTell"
               ]
@@ -11834,7 +11834,7 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "P8812",
+              "procedureName": "P8811",
               "outcomes": [
                 "passed"
               ]
@@ -11866,7 +11866,7 @@
       "ruleName": "Audio or video element that plays automatically has no audio that lasts more than 3 seconds",
       "ruleApproved": false,
       "procedureNames": [
-        "P8813"
+        "P8812"
       ],
       "consistency": "complete",
       "accessibilityRequirements": {
@@ -11875,9 +11875,9 @@
         "reported": []
       },
       "coverage": {
-        "covered": 5,
+        "covered": 6,
         "untested": 0,
-        "cantTell": 2,
+        "cantTell": 1,
         "testCaseTotal": 7
       },
       "testCaseResults": [
@@ -11889,7 +11889,7 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "P8813",
+              "procedureName": "P8812",
               "outcomes": [
                 "passed"
               ]
@@ -11904,9 +11904,9 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "P8813",
+              "procedureName": "P8812",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -11919,7 +11919,7 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "P8813",
+              "procedureName": "P8812",
               "outcomes": [
                 "failed"
               ]
@@ -11934,7 +11934,7 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "P8813",
+              "procedureName": "P8812",
               "outcomes": [
                 "failed"
               ]
@@ -11949,7 +11949,7 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "P8813",
+              "procedureName": "P8812",
               "outcomes": [
                 "passed"
               ]
@@ -11964,7 +11964,7 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "P8813",
+              "procedureName": "P8812",
               "outcomes": [
                 "cantTell"
               ]
@@ -11979,7 +11979,7 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "P8813",
+              "procedureName": "P8812",
               "outcomes": [
                 "passed"
               ]
@@ -12002,9 +12002,9 @@
         "reported": []
       },
       "coverage": {
-        "covered": 9,
+        "covered": 6,
         "untested": 0,
-        "cantTell": 2,
+        "cantTell": 5,
         "testCaseTotal": 11
       },
       "testCaseResults": [
@@ -12093,7 +12093,7 @@
             {
               "procedureName": "P8811",
               "outcomes": [
-                "failed"
+                "cantTell"
               ]
             }
           ]
@@ -12108,7 +12108,7 @@
             {
               "procedureName": "P8811",
               "outcomes": [
-                "failed"
+                "cantTell"
               ]
             }
           ]
@@ -12123,7 +12123,7 @@
             {
               "procedureName": "P8811",
               "outcomes": [
-                "failed"
+                "cantTell"
               ]
             }
           ]
