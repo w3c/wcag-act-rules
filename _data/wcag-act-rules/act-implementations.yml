@@ -17,7 +17,6 @@
 
 - name: Alfa (fully automated)
   homepage: https://alfa.siteimprove.com/
-  version: 0.98.0
   vendor: Siteimprove
   vendorHomepage: https://www.siteimprove.com/
   uniqueKey: alfa
@@ -29,7 +28,6 @@
 
 - name: Alfa (semi-automated)
   homepage: https://alfa.siteimprove.com/
-  version: 0.98.0
   vendor: Siteimprove
   vendorHomepage: https://www.siteimprove.com/
   uniqueKey: alfa-assisted
