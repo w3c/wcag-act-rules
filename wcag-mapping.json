@@ -55,7 +55,9 @@
     {
       "title": "Element marked as decorative is not exposed",
       "permalink": "/standards-guidelines/act/rules/46ca7f/",
-      "successCriteria": [],
+      "successCriteria": [
+        "non-text-content"
+      ],
       "wcagTechniques": [],
       "deprecated": false,
       "proposed": false

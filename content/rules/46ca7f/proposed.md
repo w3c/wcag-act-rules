@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 46ca7f</p>
-  <p><strong>Date:</strong> Updated 21 November 2024</p>
+  <p><strong>Date:</strong> Updated 7 February 2025</p>
   <p><strong>Authors:</strong> <a href="https://github.com/Jym77">Jean-Yves Moyen</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -20,7 +20,7 @@ rule_meta:
   original_file: element-marked-decorative-is-not-exposed-46ca7f.md
   description: |
     This rule checks that elements marked as decorative either are not included in the accessibility tree, or have a presentational role.
-  last_modified: 21 November 2024
+  last_modified: 7 February 2025
 ---
 
 ## Applicability
@@ -37,7 +37,7 @@ Elements are normally [marked as decorative][] to convey the intention of the au
 
 Whenever such a conflict occurs, this indicates at the very least mismatching intentions. Such a conflict should be avoided.
 
-When these conflicts arise on [decorative][] [non-text content][], this is also a failure of [Success Criterion 1.1.1: Non-text Content][sc111] because [decorative][] [non-text content][] must be implemented in a way that allows assistive technologies to ignore it. When these conflicts arise on text content, or on content which is not [decorative][], this is not a failure of WCAG. Therefore this rule is not mapping to any specific WCAG Success Criterion, and is not an accessibility requirement for WCAG.
+When these conflicts arise on [decorative][] [non-text content][], this is also a failure of [Success Criterion 1.1.1: Non-text Content][sc111] because [decorative][] [non-text content][] must be implemented in a way that allows assistive technologies to ignore it. When these conflicts arise on text content, or on content which is not [decorative][], this is not a failure of WCAG. Therefore this rule maps to Non-text Content as a secondary requirement.
 
 ### Assumptions
 
@@ -49,7 +49,15 @@ Implementation of the [Presentational Roles Conflict Resolution][] differs sligh
 
 ## Accessibility Requirements Mapping
 
-This rule is not required for conformance.
+### Secondary Requirements
+
+This rule is related to the following accessibility requirements, but was 
+not designed to test this requirements directly. These 
+[secondary requirements](https://w3c.github.io/wcag-act/act-rules-format.html#secondary-requirements)
+can either be stricter than the rule requires, or may be satisfied in ways 
+not tested by the rule:
+
+- [1.1.1 Non-text Content (Level A)](https://www.w3.org/TR/WCAG22/#non-text-content): This success criterion is **less strict** than this rule. Only when this rule is applied to decorative content does a failure of 1.1.1 occur.
 
 ## Input Aspects
 
