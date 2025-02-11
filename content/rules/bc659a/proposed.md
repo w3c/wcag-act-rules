@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> bc659a</p>
-  <p><strong>Date:</strong> Updated 2 December 2024</p>
+  <p><strong>Date:</strong> Updated 7 February 2025</p>
   <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/Jym77">Jean-Yves Moyen</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -20,7 +20,7 @@ rule_meta:
   original_file: meta-refresh-no-delay-bc659a.md
   description: |
     This rule checks that the `meta` element is not used for delayed redirecting or refreshing.
-  last_modified: 2 December 2024
+  last_modified: 7 February 2025
   scs_tested:
     - handle: Timing Adjustable
       num: 2.2.1
@@ -263,7 +263,7 @@ This page will not refresh because it lacks a `http-equiv` attribute.
 
 <a class="example-link" title="Inapplicable Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/a05aeffa53890c3ed9fd9cefa544eb1071497de5.html">Open in a new tab</a>
 
-This 'meta' element contains an invalid `content` attribute and will not refresh the page.
+This `meta` element contains an invalid `content` attribute and will not refresh the page.
 
 ```html
 <head>
@@ -278,7 +278,7 @@ This 'meta' element contains an invalid `content` attribute and will not refresh
 
 <a class="example-link" title="Inapplicable Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/a8c47bb26867342e83342645507fb766648799d7.html">Open in a new tab</a>
 
-This 'meta' element contains an invalid `content` attribute and will not refresh the page.
+This `meta` element contains an invalid `content` attribute and will not refresh the page.
 
 ```html
 <head>
@@ -293,7 +293,7 @@ This 'meta' element contains an invalid `content` attribute and will not refresh
 
 <a class="example-link" title="Inapplicable Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/ca4a053f47b6e322ad6de680fdabd05f651bf49b.html">Open in a new tab</a>
 
-This 'meta' element contains an invalid `content` attribute and will not refresh the page.
+This `meta` element contains an invalid `content` attribute and will not refresh the page.
 
 ```html
 <head>
@@ -308,7 +308,7 @@ This 'meta' element contains an invalid `content` attribute and will not refresh
 
 <a class="example-link" title="Inapplicable Example 6" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/b42a3a108d5d0f65258cd8157eb0011b78ce9253.html">Open in a new tab</a>
 
-This 'meta' element contains an invalid `content` attribute and will not refresh the page.
+This `meta` element contains an invalid `content` attribute and will not refresh the page.
 
 ```html
 <head>
@@ -323,7 +323,7 @@ This 'meta' element contains an invalid `content` attribute and will not refresh
 
 <a class="example-link" title="Inapplicable Example 7" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/0bf30cdf02ff26dfca5aa705b7023227da221e05.html">Open in a new tab</a>
 
-This 'meta' element contains an invalid `content` attribute and will not refresh the page.
+This `meta` element contains an invalid `content` attribute and will not refresh the page.
 
 ```html
 <head>
@@ -338,7 +338,7 @@ This 'meta' element contains an invalid `content` attribute and will not refresh
 
 <a class="example-link" title="Inapplicable Example 8" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc659a/8ce8198a1e6907ae25eb957eb0a5a99e719131a1.html">Open in a new tab</a>
 
-This 'meta' element contains an invalid `content` attribute and will not refresh the page.
+This `meta` element contains an invalid `content` attribute and will not refresh the page.
 
 ```html
 <head>

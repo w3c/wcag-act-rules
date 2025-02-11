@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 5c01ea</p>
-  <p><strong>Date:</strong> Updated 2 December 2024</p>
+  <p><strong>Date:</strong> Updated 7 February 2025</p>
   <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/Jym77">Jean-Yves Moyen</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
   
@@ -22,7 +22,7 @@ rule_meta:
   original_file: aria-state-or-property-permitted-5c01ea.md
   description: |
     This rule checks that WAI-ARIA states or properties are allowed for the element they are specified on.
-  last_modified: 2 December 2024
+  last_modified: 7 February 2025
 ---
 
 ## Applicability
@@ -156,7 +156,7 @@ The `aria-busy` [state][] is a [global][] [state][] that is [supported][] by all
 
 <a class="example-link" title="Passed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/655b73c1435335a6a16852210787dc3621e73cef.html">Open in a new tab</a>
 
-The `aria-label` [property][] is a [global][] [property][]. It is allowed on any [semantic role][].
+The `aria-label` [property][] is a [global][] [property][]. It is allowed on any [semantic role][], except where specifically prohibited.
 
 ```html
 <div role="button" aria-label="OK">✓</div>
@@ -206,7 +206,7 @@ The `aria-controls` [property][] is [required][] for the [semantic][semantic rol
 
 <a class="example-link" title="Passed Example 9" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/6c0718872b1d915b49c48fe135b9fc251bcff561.html">Open in a new tab</a>
 
-The `aria-label` [property][] is [global][]. It is allowed on any [semantic role][], including roles from the [WAI-ARIA Graphics Module](https://www.w3.org/TR/graphics-aria-1.0). This rule is applicable to SVG elements.
+The `aria-label` [property][] is [global][]. It is allowed on any [semantic role][], except where specifically prohibited, including roles from the [WAI-ARIA Graphics Module](https://www.w3.org/TR/graphics-aria-1.0). This rule is applicable to SVG elements.
 
 ```html
 <svg xmlns="http://www.w3.org/2000/svg" role="graphics-object" width="100" height="100" aria-label="yellow circle">
@@ -232,6 +232,33 @@ This `input` element does not have an [explicit role][] of `textbox`, but the `a
 
 ```html
 <label>Password<input type="password" aria-required="true"/></label>
+```
+
+#### Passed Example 12
+
+<a class="example-link" title="Passed Example 12" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/da2d6c53dd58121d0182d2498a104776da424e21.html">Open in a new tab</a>
+
+This `div` element has an [explicit role][] of `switch`; the `aria-required` [property][] is [inherited][] from the `checkbox` [superclass role](https://www.w3.org/TR/wai-aria-1.2/#superclassrole).
+
+```html
+<div role="switch" aria-checked="false" tabindex="0" aria-required="true">
+	<span class="label">Notifications</span>
+	<span class="switch" style="position: relative; display: inline-block; top: 6px; border: 2px solid black; border-radius: 12px; height: 20px; width: 40px;">
+		<span style="position: absolute; top: 2px; left: 2px; display: inline-block; border: 2px solid black; border-radius: 8px; height: 12px; width: 12px; background: black;"></span>
+	</span>
+	<span class="on" aria-hidden="true" style="display: none;">On</span>
+	<span class="off" aria-hidden="true">Off</span>
+</div>
+```
+
+#### Passed Example 13
+
+<a class="example-link" title="Passed Example 13" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/2c80908133ee63545a20ea45952de6f7d6cf845b.html">Open in a new tab</a>
+
+This `div` element has an [explicit role][] of `separator`. The `aria-valuemin`, `aria-valuemax` and `aria-valuenow` [properties][property] are [supported][] for the `separator` role when the element is [focusable][].
+
+```html
+<div role="separator" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" tabindex="0">My separator</div>
 ```
 
 ### Failed
@@ -264,6 +291,16 @@ The `aria-label` property is [prohibited][] for an element with a `generic` role
 
 ```html
 <div aria-label="Bananas"></div>
+```
+
+#### Failed Example 4
+
+<a class="example-link" title="Failed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/eedabccf6e01bca36ee87a2af00e9d7a63a7d615.html">Open in a new tab</a>
+
+The `aria-label` property is [prohibited][] for an element with a `paragraph` role.
+
+```html
+<div role="paragraph" aria-label="Bananas"></div>
 ```
 
 ### Inapplicable

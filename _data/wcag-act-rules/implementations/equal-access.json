@@ -2,16 +2,16 @@
   "vendor": "IBM Accessibility",
   "name": "Equal Access Accessibility Checker",
   "version": "3.1.42-rc.0",
-  "lastModified": "13 December 2024",
+  "lastModified": "11 February 2025",
   "approvedRules": {
     "complete": 20,
-    "partial": 4,
-    "inconsistent": 5,
+    "partial": 5,
+    "inconsistent": 4,
     "untested": 5
   },
   "proposedRules": {
-    "complete": 5,
-    "partial": 1,
+    "complete": 4,
+    "partial": 2,
     "inconsistent": 1,
     "untested": 46
   },
@@ -6086,10 +6086,9 @@
       "ruleName": "Meta element has no refresh delay",
       "ruleApproved": true,
       "procedureNames": [
-        "meta_redirect_optional:pass,fail,fail_longrefresh",
-        "meta_refresh_delay:Pass_0,Potential_1"
+        "meta_refresh_delay:pass,potential_refresh"
       ],
-      "consistency": "complete",
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -6100,9 +6099,9 @@
         ]
       },
       "coverage": {
-        "covered": 14,
+        "covered": 10,
         "untested": 0,
-        "cantTell": 1,
+        "cantTell": 5,
         "testCaseTotal": 15
       },
       "testCaseResults": [
@@ -6114,13 +6113,7 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "meta_redirect_optional:pass,fail,fail_longrefresh",
-              "outcomes": [
-                "passed"
-              ]
-            },
-            {
-              "procedureName": "meta_refresh_delay:Pass_0,Potential_1",
+              "procedureName": "meta_refresh_delay:pass,potential_refresh",
               "outcomes": [
                 "passed"
               ]
@@ -6135,13 +6128,7 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "meta_redirect_optional:pass,fail,fail_longrefresh",
-              "outcomes": [
-                "passed"
-              ]
-            },
-            {
-              "procedureName": "meta_refresh_delay:Pass_0,Potential_1",
+              "procedureName": "meta_refresh_delay:pass,potential_refresh",
               "outcomes": [
                 "passed"
               ]
@@ -6156,15 +6143,9 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "meta_redirect_optional:pass,fail,fail_longrefresh",
+              "procedureName": "meta_refresh_delay:pass,potential_refresh",
               "outcomes": [
-                "passed"
-              ]
-            },
-            {
-              "procedureName": "meta_refresh_delay:Pass_0,Potential_1",
-              "outcomes": [
-                "passed"
+                "cantTell"
               ]
             }
           ]
@@ -6177,13 +6158,7 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "meta_redirect_optional:pass,fail,fail_longrefresh",
-              "outcomes": [
-                "passed"
-              ]
-            },
-            {
-              "procedureName": "meta_refresh_delay:Pass_0,Potential_1",
+              "procedureName": "meta_refresh_delay:pass,potential_refresh",
               "outcomes": [
                 "cantTell"
               ]
@@ -6198,15 +6173,9 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "meta_redirect_optional:pass,fail,fail_longrefresh",
+              "procedureName": "meta_refresh_delay:pass,potential_refresh",
               "outcomes": [
-                "failed"
-              ]
-            },
-            {
-              "procedureName": "meta_refresh_delay:Pass_0,Potential_1",
-              "outcomes": [
-                "passed"
+                "cantTell"
               ]
             }
           ]
@@ -6219,15 +6188,9 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "meta_redirect_optional:pass,fail,fail_longrefresh",
+              "procedureName": "meta_refresh_delay:pass,potential_refresh",
               "outcomes": [
-                "failed"
-              ]
-            },
-            {
-              "procedureName": "meta_refresh_delay:Pass_0,Potential_1",
-              "outcomes": [
-                "passed"
+                "cantTell"
               ]
             }
           ]
@@ -6240,15 +6203,9 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "meta_redirect_optional:pass,fail,fail_longrefresh",
+              "procedureName": "meta_refresh_delay:pass,potential_refresh",
               "outcomes": [
-                "failed"
-              ]
-            },
-            {
-              "procedureName": "meta_refresh_delay:Pass_0,Potential_1",
-              "outcomes": [
-                "passed"
+                "cantTell"
               ]
             }
           ]
@@ -6261,13 +6218,7 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "meta_redirect_optional:pass,fail,fail_longrefresh",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
-              "procedureName": "meta_refresh_delay:Pass_0,Potential_1",
+              "procedureName": "meta_refresh_delay:pass,potential_refresh",
               "outcomes": [
                 "inapplicable"
               ]
@@ -6282,13 +6233,7 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "meta_redirect_optional:pass,fail,fail_longrefresh",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
-              "procedureName": "meta_refresh_delay:Pass_0,Potential_1",
+              "procedureName": "meta_refresh_delay:pass,potential_refresh",
               "outcomes": [
                 "inapplicable"
               ]
@@ -6303,13 +6248,7 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "meta_redirect_optional:pass,fail,fail_longrefresh",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
-              "procedureName": "meta_refresh_delay:Pass_0,Potential_1",
+              "procedureName": "meta_refresh_delay:pass,potential_refresh",
               "outcomes": [
                 "inapplicable"
               ]
@@ -6324,13 +6263,7 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "meta_redirect_optional:pass,fail,fail_longrefresh",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
-              "procedureName": "meta_refresh_delay:Pass_0,Potential_1",
+              "procedureName": "meta_refresh_delay:pass,potential_refresh",
               "outcomes": [
                 "inapplicable"
               ]
@@ -6345,13 +6278,7 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "meta_redirect_optional:pass,fail,fail_longrefresh",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
-              "procedureName": "meta_refresh_delay:Pass_0,Potential_1",
+              "procedureName": "meta_refresh_delay:pass,potential_refresh",
               "outcomes": [
                 "inapplicable"
               ]
@@ -6366,13 +6293,7 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "meta_redirect_optional:pass,fail,fail_longrefresh",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
-              "procedureName": "meta_refresh_delay:Pass_0,Potential_1",
+              "procedureName": "meta_refresh_delay:pass,potential_refresh",
               "outcomes": [
                 "inapplicable"
               ]
@@ -6387,13 +6308,7 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "meta_redirect_optional:pass,fail,fail_longrefresh",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
-              "procedureName": "meta_refresh_delay:Pass_0,Potential_1",
+              "procedureName": "meta_refresh_delay:pass,potential_refresh",
               "outcomes": [
                 "inapplicable"
               ]
@@ -6408,13 +6323,7 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "meta_redirect_optional:pass,fail,fail_longrefresh",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
-              "procedureName": "meta_refresh_delay:Pass_0,Potential_1",
+              "procedureName": "meta_refresh_delay:pass,potential_refresh",
               "outcomes": [
                 "inapplicable"
               ]
@@ -6428,18 +6337,20 @@
       "ruleName": "Meta viewport allows for zoom",
       "ruleApproved": true,
       "procedureNames": [
-        "meta_viewport_zoomable:Pass_0,Potential_1"
+        "meta_viewport_zoomable:pass,potential_zoomable"
       ],
-      "consistency": null,
+      "consistency": "complete",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:resize-text"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:resize-text"
+        ]
       },
       "coverage": {
-        "covered": 7,
+        "covered": 11,
         "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 11
@@ -6453,9 +6364,9 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "meta_viewport_zoomable:Pass_0,Potential_1",
+              "procedureName": "meta_viewport_zoomable:pass,potential_zoomable",
               "outcomes": [
-                "inapplicable"
+                "passed"
               ]
             }
           ]
@@ -6468,9 +6379,9 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "meta_viewport_zoomable:Pass_0,Potential_1",
+              "procedureName": "meta_viewport_zoomable:pass,potential_zoomable",
               "outcomes": [
-                "inapplicable"
+                "passed"
               ]
             }
           ]
@@ -6483,9 +6394,9 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "meta_viewport_zoomable:Pass_0,Potential_1",
+              "procedureName": "meta_viewport_zoomable:pass,potential_zoomable",
               "outcomes": [
-                "inapplicable"
+                "passed"
               ]
             }
           ]
@@ -6498,9 +6409,9 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "meta_viewport_zoomable:Pass_0,Potential_1",
+              "procedureName": "meta_viewport_zoomable:pass,potential_zoomable",
               "outcomes": [
-                "inapplicable"
+                "failed"
               ]
             }
           ]
@@ -6513,9 +6424,9 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "meta_viewport_zoomable:Pass_0,Potential_1",
+              "procedureName": "meta_viewport_zoomable:pass,potential_zoomable",
               "outcomes": [
-                "inapplicable"
+                "failed"
               ]
             }
           ]
@@ -6528,9 +6439,9 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "meta_viewport_zoomable:Pass_0,Potential_1",
+              "procedureName": "meta_viewport_zoomable:pass,potential_zoomable",
               "outcomes": [
-                "inapplicable"
+                "failed"
               ]
             }
           ]
@@ -6543,9 +6454,9 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "meta_viewport_zoomable:Pass_0,Potential_1",
+              "procedureName": "meta_viewport_zoomable:pass,potential_zoomable",
               "outcomes": [
-                "inapplicable"
+                "failed"
               ]
             }
           ]
@@ -6558,7 +6469,7 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "meta_viewport_zoomable:Pass_0,Potential_1",
+              "procedureName": "meta_viewport_zoomable:pass,potential_zoomable",
               "outcomes": [
                 "inapplicable"
               ]
@@ -6573,7 +6484,7 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "meta_viewport_zoomable:Pass_0,Potential_1",
+              "procedureName": "meta_viewport_zoomable:pass,potential_zoomable",
               "outcomes": [
                 "inapplicable"
               ]
@@ -6588,7 +6499,7 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "meta_viewport_zoomable:Pass_0,Potential_1",
+              "procedureName": "meta_viewport_zoomable:pass,potential_zoomable",
               "outcomes": [
                 "inapplicable"
               ]
@@ -6603,7 +6514,7 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "meta_viewport_zoomable:Pass_0,Potential_1",
+              "procedureName": "meta_viewport_zoomable:pass,potential_zoomable",
               "outcomes": [
                 "inapplicable"
               ]
@@ -6618,9 +6529,9 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "meta_viewport_zoomable:Pass_0,Potential_1",
+              "procedureName": "meta_viewport_zoomable:pass,potential_zoomable",
               "outcomes": [
-                "inapplicable"
+                "passed"
               ]
             }
           ]
@@ -6633,9 +6544,9 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "meta_viewport_zoomable:Pass_0,Potential_1",
+              "procedureName": "meta_viewport_zoomable:pass,potential_zoomable",
               "outcomes": [
-                "inapplicable"
+                "failed"
               ]
             }
           ]
@@ -6648,9 +6559,9 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "meta_viewport_zoomable:Pass_0,Potential_1",
+              "procedureName": "meta_viewport_zoomable:pass,potential_zoomable",
               "outcomes": [
-                "inapplicable"
+                "failed"
               ]
             }
           ]
@@ -6663,9 +6574,9 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "meta_viewport_zoomable:Pass_0,Potential_1",
+              "procedureName": "meta_viewport_zoomable:pass,potential_zoomable",
               "outcomes": [
-                "inapplicable"
+                "failed"
               ]
             }
           ]
@@ -6678,9 +6589,9 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "meta_viewport_zoomable:Pass_0,Potential_1",
+              "procedureName": "meta_viewport_zoomable:pass,potential_zoomable",
               "outcomes": [
-                "inapplicable"
+                "failed"
               ]
             }
           ]
@@ -7995,7 +7906,7 @@
       "ruleName": "Meta element has no refresh delay (no exception)",
       "ruleApproved": true,
       "procedureNames": [
-        "meta_refresh_delay:Pass_0,Potential_1"
+        "meta_redirect_optional:pass,fail,fail_longrefresh"
       ],
       "consistency": "partial",
       "accessibilityRequirements": {
@@ -8009,9 +7920,9 @@
         ]
       },
       "coverage": {
-        "covered": 10,
+        "covered": 13,
         "untested": 0,
-        "cantTell": 1,
+        "cantTell": 0,
         "testCaseTotal": 13
       },
       "testCaseResults": [
@@ -8023,7 +7934,7 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "meta_refresh_delay:Pass_0,Potential_1",
+              "procedureName": "meta_redirect_optional:pass,fail,fail_longrefresh",
               "outcomes": [
                 "passed"
               ]
@@ -8038,7 +7949,7 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "meta_refresh_delay:Pass_0,Potential_1",
+              "procedureName": "meta_redirect_optional:pass,fail,fail_longrefresh",
               "outcomes": [
                 "passed"
               ]
@@ -8053,9 +7964,9 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "meta_refresh_delay:Pass_0,Potential_1",
+              "procedureName": "meta_redirect_optional:pass,fail,fail_longrefresh",
               "outcomes": [
-                "cantTell"
+                "failed"
               ]
             }
           ]
@@ -8068,9 +7979,9 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "meta_refresh_delay:Pass_0,Potential_1",
+              "procedureName": "meta_redirect_optional:pass,fail,fail_longrefresh",
               "outcomes": [
-                "passed"
+                "failed"
               ]
             }
           ]
@@ -8083,9 +7994,9 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "meta_refresh_delay:Pass_0,Potential_1",
+              "procedureName": "meta_redirect_optional:pass,fail,fail_longrefresh",
               "outcomes": [
-                "passed"
+                "failed"
               ]
             }
           ]
@@ -8098,7 +8009,7 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "meta_refresh_delay:Pass_0,Potential_1",
+              "procedureName": "meta_redirect_optional:pass,fail,fail_longrefresh",
               "outcomes": [
                 "inapplicable"
               ]
@@ -8113,7 +8024,7 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "meta_refresh_delay:Pass_0,Potential_1",
+              "procedureName": "meta_redirect_optional:pass,fail,fail_longrefresh",
               "outcomes": [
                 "inapplicable"
               ]
@@ -8128,7 +8039,7 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "meta_refresh_delay:Pass_0,Potential_1",
+              "procedureName": "meta_redirect_optional:pass,fail,fail_longrefresh",
               "outcomes": [
                 "inapplicable"
               ]
@@ -8143,7 +8054,7 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "meta_refresh_delay:Pass_0,Potential_1",
+              "procedureName": "meta_redirect_optional:pass,fail,fail_longrefresh",
               "outcomes": [
                 "inapplicable"
               ]
@@ -8158,7 +8069,7 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "meta_refresh_delay:Pass_0,Potential_1",
+              "procedureName": "meta_redirect_optional:pass,fail,fail_longrefresh",
               "outcomes": [
                 "inapplicable"
               ]
@@ -8173,7 +8084,7 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "meta_refresh_delay:Pass_0,Potential_1",
+              "procedureName": "meta_redirect_optional:pass,fail,fail_longrefresh",
               "outcomes": [
                 "inapplicable"
               ]
@@ -8188,7 +8099,7 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "meta_refresh_delay:Pass_0,Potential_1",
+              "procedureName": "meta_redirect_optional:pass,fail,fail_longrefresh",
               "outcomes": [
                 "inapplicable"
               ]
@@ -8203,7 +8114,7 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "meta_refresh_delay:Pass_0,Potential_1",
+              "procedureName": "meta_redirect_optional:pass,fail,fail_longrefresh",
               "outcomes": [
                 "inapplicable"
               ]
@@ -8760,7 +8671,7 @@
       "procedureNames": [
         "aria_attribute_valid:Pass,Fail_invalid_role_attr,Fail_invalid_implicit_role_attr"
       ],
-      "consistency": "complete",
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
@@ -8768,9 +8679,9 @@
       },
       "coverage": {
         "covered": 16,
-        "untested": 0,
+        "untested": 3,
         "cantTell": 0,
-        "testCaseTotal": 16
+        "testCaseTotal": 19
       },
       "testCaseResults": [
         {
@@ -8939,6 +8850,36 @@
           ]
         },
         {
+          "testcaseId": "da2d6c53dd58121d0182d2498a104776da424e21",
+          "testCaseName": "Passed Example 12",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/da2d6c53dd58121d0182d2498a104776da424e21.html",
+          "testCaseApproved": false,
+          "expected": "passed",
+          "procedureResults": [
+            {
+              "procedureName": "aria_attribute_valid:Pass,Fail_invalid_role_attr,Fail_invalid_implicit_role_attr",
+              "outcomes": [
+                "untested"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "2c80908133ee63545a20ea45952de6f7d6cf845b",
+          "testCaseName": "Passed Example 13",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/2c80908133ee63545a20ea45952de6f7d6cf845b.html",
+          "testCaseApproved": false,
+          "expected": "passed",
+          "procedureResults": [
+            {
+              "procedureName": "aria_attribute_valid:Pass,Fail_invalid_role_attr,Fail_invalid_implicit_role_attr",
+              "outcomes": [
+                "untested"
+              ]
+            }
+          ]
+        },
+        {
           "testcaseId": "5e4eedbbef33766005c6f92c3dede1b1b40a2dac",
           "testCaseName": "Failed Example 1",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/5e4eedbbef33766005c6f92c3dede1b1b40a2dac.html",
@@ -8979,6 +8920,21 @@
               "procedureName": "aria_attribute_valid:Pass,Fail_invalid_role_attr,Fail_invalid_implicit_role_attr",
               "outcomes": [
                 "failed"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "eedabccf6e01bca36ee87a2af00e9d7a63a7d615",
+          "testCaseName": "Failed Example 4",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/eedabccf6e01bca36ee87a2af00e9d7a63a7d615.html",
+          "testCaseApproved": false,
+          "expected": "failed",
+          "procedureResults": [
+            {
+              "procedureName": "aria_attribute_valid:Pass,Fail_invalid_role_attr,Fail_invalid_implicit_role_attr",
+              "outcomes": [
+                "untested"
               ]
             }
           ]

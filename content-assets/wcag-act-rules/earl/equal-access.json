@@ -3825,9 +3825,7 @@
           "@type": "Assertion",
           "test": {
             "title": "aria_attribute_valid:Pass,Fail_invalid_role_attr,Fail_invalid_implicit_role_attr",
-            "isPartOf": [
-              []
-            ]
+            "isPartOf": []
           },
           "result": {
             "outcome": "earl:inapplicable"
@@ -3838,8 +3836,7 @@
           "test": {
             "title": "img_alt_null:potential_aria_override",
             "isPartOf": [
-              "WCAG2:non-text-content",
-              []
+              "WCAG2:non-text-content"
             ]
           },
           "result": {
@@ -3856,9 +3853,7 @@
           "@type": "Assertion",
           "test": {
             "title": "aria_attribute_valid:Pass,Fail_invalid_role_attr,Fail_invalid_implicit_role_attr",
-            "isPartOf": [
-              []
-            ]
+            "isPartOf": []
           },
           "result": {
             "outcome": "earl:passed"
@@ -3869,8 +3864,7 @@
           "test": {
             "title": "img_alt_null:potential_aria_override",
             "isPartOf": [
-              "WCAG2:non-text-content",
-              []
+              "WCAG2:non-text-content"
             ]
           },
           "result": {
@@ -3887,9 +3881,7 @@
           "@type": "Assertion",
           "test": {
             "title": "aria_attribute_valid:Pass,Fail_invalid_role_attr,Fail_invalid_implicit_role_attr",
-            "isPartOf": [
-              []
-            ]
+            "isPartOf": []
           },
           "result": {
             "outcome": "earl:inapplicable"
@@ -3900,8 +3892,7 @@
           "test": {
             "title": "img_alt_null:potential_aria_override",
             "isPartOf": [
-              "WCAG2:non-text-content",
-              []
+              "WCAG2:non-text-content"
             ]
           },
           "result": {
@@ -3918,9 +3909,7 @@
           "@type": "Assertion",
           "test": {
             "title": "aria_attribute_valid:Pass,Fail_invalid_role_attr,Fail_invalid_implicit_role_attr",
-            "isPartOf": [
-              []
-            ]
+            "isPartOf": []
           },
           "result": {
             "outcome": "earl:passed"
@@ -3931,8 +3920,7 @@
           "test": {
             "title": "img_alt_null:potential_aria_override",
             "isPartOf": [
-              "WCAG2:non-text-content",
-              []
+              "WCAG2:non-text-content"
             ]
           },
           "result": {
@@ -3949,9 +3937,7 @@
           "@type": "Assertion",
           "test": {
             "title": "aria_attribute_valid:Pass,Fail_invalid_role_attr,Fail_invalid_implicit_role_attr",
-            "isPartOf": [
-              []
-            ]
+            "isPartOf": []
           },
           "result": {
             "outcome": "earl:inapplicable"
@@ -3962,8 +3948,7 @@
           "test": {
             "title": "img_alt_null:potential_aria_override",
             "isPartOf": [
-              "WCAG2:non-text-content",
-              []
+              "WCAG2:non-text-content"
             ]
           },
           "result": {
@@ -3980,9 +3965,7 @@
           "@type": "Assertion",
           "test": {
             "title": "aria_attribute_valid:Pass,Fail_invalid_role_attr,Fail_invalid_implicit_role_attr",
-            "isPartOf": [
-              []
-            ]
+            "isPartOf": []
           },
           "result": {
             "outcome": "earl:inapplicable"
@@ -3993,8 +3976,7 @@
           "test": {
             "title": "img_alt_null:potential_aria_override",
             "isPartOf": [
-              "WCAG2:non-text-content",
-              []
+              "WCAG2:non-text-content"
             ]
           },
           "result": {
@@ -4011,9 +3993,7 @@
           "@type": "Assertion",
           "test": {
             "title": "aria_attribute_valid:Pass,Fail_invalid_role_attr,Fail_invalid_implicit_role_attr",
-            "isPartOf": [
-              []
-            ]
+            "isPartOf": []
           },
           "result": {
             "outcome": "earl:failed"
@@ -4024,8 +4004,7 @@
           "test": {
             "title": "img_alt_null:potential_aria_override",
             "isPartOf": [
-              "WCAG2:non-text-content",
-              []
+              "WCAG2:non-text-content"
             ]
           },
           "result": {
@@ -4042,9 +4021,7 @@
           "@type": "Assertion",
           "test": {
             "title": "aria_attribute_valid:Pass,Fail_invalid_role_attr,Fail_invalid_implicit_role_attr",
-            "isPartOf": [
-              []
-            ]
+            "isPartOf": []
           },
           "result": {
             "outcome": "earl:passed"
@@ -4055,8 +4032,7 @@
           "test": {
             "title": "img_alt_null:potential_aria_override",
             "isPartOf": [
-              "WCAG2:non-text-content",
-              []
+              "WCAG2:non-text-content"
             ]
           },
           "result": {
@@ -4073,9 +4049,7 @@
           "@type": "Assertion",
           "test": {
             "title": "aria_attribute_valid:Pass,Fail_invalid_role_attr,Fail_invalid_implicit_role_attr",
-            "isPartOf": [
-              []
-            ]
+            "isPartOf": []
           },
           "result": {
             "outcome": "earl:failed"
@@ -4086,8 +4060,7 @@
           "test": {
             "title": "img_alt_null:potential_aria_override",
             "isPartOf": [
-              "WCAG2:non-text-content",
-              []
+              "WCAG2:non-text-content"
             ]
           },
           "result": {
@@ -4104,9 +4077,7 @@
           "@type": "Assertion",
           "test": {
             "title": "aria_attribute_valid:Pass,Fail_invalid_role_attr,Fail_invalid_implicit_role_attr",
-            "isPartOf": [
-              []
-            ]
+            "isPartOf": []
           },
           "result": {
             "outcome": "earl:passed"
@@ -4117,8 +4088,7 @@
           "test": {
             "title": "img_alt_null:potential_aria_override",
             "isPartOf": [
-              "WCAG2:non-text-content",
-              []
+              "WCAG2:non-text-content"
             ]
           },
           "result": {
@@ -5216,8 +5186,7 @@
           "test": {
             "title": "aria_accessiblename_exists:fail_no_accessible_name_image",
             "isPartOf": [
-              "WCAG2:name-role-value",
-              []
+              "WCAG2:name-role-value"
             ]
           },
           "result": {
@@ -5257,8 +5226,7 @@
           "test": {
             "title": "aria_accessiblename_exists:fail_no_accessible_name_image",
             "isPartOf": [
-              "WCAG2:name-role-value",
-              []
+              "WCAG2:name-role-value"
             ]
           },
           "result": {
@@ -5298,8 +5266,7 @@
           "test": {
             "title": "aria_accessiblename_exists:fail_no_accessible_name_image",
             "isPartOf": [
-              "WCAG2:name-role-value",
-              []
+              "WCAG2:name-role-value"
             ]
           },
           "result": {
@@ -5339,8 +5306,7 @@
           "test": {
             "title": "aria_accessiblename_exists:fail_no_accessible_name_image",
             "isPartOf": [
-              "WCAG2:name-role-value",
-              []
+              "WCAG2:name-role-value"
             ]
           },
           "result": {
@@ -5380,8 +5346,7 @@
           "test": {
             "title": "aria_accessiblename_exists:fail_no_accessible_name_image",
             "isPartOf": [
-              "WCAG2:name-role-value",
-              []
+              "WCAG2:name-role-value"
             ]
           },
           "result": {
@@ -5421,8 +5386,7 @@
           "test": {
             "title": "aria_accessiblename_exists:fail_no_accessible_name_image",
             "isPartOf": [
-              "WCAG2:name-role-value",
-              []
+              "WCAG2:name-role-value"
             ]
           },
           "result": {
@@ -5462,8 +5426,7 @@
           "test": {
             "title": "aria_accessiblename_exists:fail_no_accessible_name_image",
             "isPartOf": [
-              "WCAG2:name-role-value",
-              []
+              "WCAG2:name-role-value"
             ]
           },
           "result": {
@@ -5503,8 +5466,7 @@
           "test": {
             "title": "aria_accessiblename_exists:fail_no_accessible_name_image",
             "isPartOf": [
-              "WCAG2:name-role-value",
-              []
+              "WCAG2:name-role-value"
             ]
           },
           "result": {
@@ -5544,8 +5506,7 @@
           "test": {
             "title": "aria_accessiblename_exists:fail_no_accessible_name_image",
             "isPartOf": [
-              "WCAG2:name-role-value",
-              []
+              "WCAG2:name-role-value"
             ]
           },
           "result": {
@@ -5585,8 +5546,7 @@
           "test": {
             "title": "aria_accessiblename_exists:fail_no_accessible_name_image",
             "isPartOf": [
-              "WCAG2:name-role-value",
-              []
+              "WCAG2:name-role-value"
             ]
           },
           "result": {
@@ -5626,8 +5586,7 @@
           "test": {
             "title": "aria_accessiblename_exists:fail_no_accessible_name_image",
             "isPartOf": [
-              "WCAG2:name-role-value",
-              []
+              "WCAG2:name-role-value"
             ]
           },
           "result": {
@@ -5667,8 +5626,7 @@
           "test": {
             "title": "aria_accessiblename_exists:fail_no_accessible_name_image",
             "isPartOf": [
-              "WCAG2:name-role-value",
-              []
+              "WCAG2:name-role-value"
             ]
           },
           "result": {
@@ -5708,8 +5666,7 @@
           "test": {
             "title": "aria_accessiblename_exists:fail_no_accessible_name_image",
             "isPartOf": [
-              "WCAG2:name-role-value",
-              []
+              "WCAG2:name-role-value"
             ]
           },
           "result": {
@@ -5749,8 +5706,7 @@
           "test": {
             "title": "aria_accessiblename_exists:fail_no_accessible_name_image",
             "isPartOf": [
-              "WCAG2:name-role-value",
-              []
+              "WCAG2:name-role-value"
             ]
           },
           "result": {
@@ -5790,8 +5746,7 @@
           "test": {
             "title": "aria_accessiblename_exists:fail_no_accessible_name_image",
             "isPartOf": [
-              "WCAG2:name-role-value",
-              []
+              "WCAG2:name-role-value"
             ]
           },
           "result": {
@@ -5831,8 +5786,7 @@
           "test": {
             "title": "aria_accessiblename_exists:fail_no_accessible_name_image",
             "isPartOf": [
-              "WCAG2:name-role-value",
-              []
+              "WCAG2:name-role-value"
             ]
           },
           "result": {
@@ -5872,8 +5826,7 @@
           "test": {
             "title": "aria_accessiblename_exists:fail_no_accessible_name_image",
             "isPartOf": [
-              "WCAG2:name-role-value",
-              []
+              "WCAG2:name-role-value"
             ]
           },
           "result": {
@@ -5913,8 +5866,7 @@
           "test": {
             "title": "aria_accessiblename_exists:fail_no_accessible_name_image",
             "isPartOf": [
-              "WCAG2:name-role-value",
-              []
+              "WCAG2:name-role-value"
             ]
           },
           "result": {
@@ -7599,19 +7551,7 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "meta_redirect_optional:pass,fail,fail_longrefresh",
-            "isPartOf": [
-              "WCAG2:timing-adjustable"
-            ]
-          },
-          "result": {
-            "outcome": "earl:passed"
-          }
-        },
-        {
-          "@type": "Assertion",
-          "test": {
-            "title": "meta_refresh_delay:Pass_0,Potential_1",
+            "title": "meta_refresh_delay:pass,potential_refresh",
             "isPartOf": [
               "WCAG2:timing-adjustable"
             ]
@@ -7629,19 +7569,7 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "meta_redirect_optional:pass,fail,fail_longrefresh",
-            "isPartOf": [
-              "WCAG2:timing-adjustable"
-            ]
-          },
-          "result": {
-            "outcome": "earl:passed"
-          }
-        },
-        {
-          "@type": "Assertion",
-          "test": {
-            "title": "meta_refresh_delay:Pass_0,Potential_1",
+            "title": "meta_refresh_delay:pass,potential_refresh",
             "isPartOf": [
               "WCAG2:timing-adjustable"
             ]
@@ -7659,25 +7587,13 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "meta_redirect_optional:pass,fail,fail_longrefresh",
+            "title": "meta_refresh_delay:pass,potential_refresh",
             "isPartOf": [
               "WCAG2:timing-adjustable"
             ]
           },
           "result": {
-            "outcome": "earl:passed"
-          }
-        },
-        {
-          "@type": "Assertion",
-          "test": {
-            "title": "meta_refresh_delay:Pass_0,Potential_1",
-            "isPartOf": [
-              "WCAG2:timing-adjustable"
-            ]
-          },
-          "result": {
-            "outcome": "earl:passed"
+            "outcome": "earl:cantTell"
           }
         }
       ]
@@ -7689,19 +7605,7 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "meta_redirect_optional:pass,fail,fail_longrefresh",
-            "isPartOf": [
-              "WCAG2:timing-adjustable"
-            ]
-          },
-          "result": {
-            "outcome": "earl:passed"
-          }
-        },
-        {
-          "@type": "Assertion",
-          "test": {
-            "title": "meta_refresh_delay:Pass_0,Potential_1",
+            "title": "meta_refresh_delay:pass,potential_refresh",
             "isPartOf": [
               "WCAG2:timing-adjustable"
             ]
@@ -7719,25 +7623,13 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "meta_redirect_optional:pass,fail,fail_longrefresh",
+            "title": "meta_refresh_delay:pass,potential_refresh",
             "isPartOf": [
               "WCAG2:timing-adjustable"
             ]
           },
           "result": {
-            "outcome": "earl:failed"
-          }
-        },
-        {
-          "@type": "Assertion",
-          "test": {
-            "title": "meta_refresh_delay:Pass_0,Potential_1",
-            "isPartOf": [
-              "WCAG2:timing-adjustable"
-            ]
-          },
-          "result": {
-            "outcome": "earl:passed"
+            "outcome": "earl:cantTell"
           }
         }
       ]
@@ -7749,25 +7641,13 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "meta_redirect_optional:pass,fail,fail_longrefresh",
+            "title": "meta_refresh_delay:pass,potential_refresh",
             "isPartOf": [
               "WCAG2:timing-adjustable"
             ]
           },
           "result": {
-            "outcome": "earl:failed"
-          }
-        },
-        {
-          "@type": "Assertion",
-          "test": {
-            "title": "meta_refresh_delay:Pass_0,Potential_1",
-            "isPartOf": [
-              "WCAG2:timing-adjustable"
-            ]
-          },
-          "result": {
-            "outcome": "earl:passed"
+            "outcome": "earl:cantTell"
           }
         }
       ]
@@ -7779,25 +7659,13 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "meta_redirect_optional:pass,fail,fail_longrefresh",
+            "title": "meta_refresh_delay:pass,potential_refresh",
             "isPartOf": [
               "WCAG2:timing-adjustable"
             ]
           },
           "result": {
-            "outcome": "earl:failed"
-          }
-        },
-        {
-          "@type": "Assertion",
-          "test": {
-            "title": "meta_refresh_delay:Pass_0,Potential_1",
-            "isPartOf": [
-              "WCAG2:timing-adjustable"
-            ]
-          },
-          "result": {
-            "outcome": "earl:passed"
+            "outcome": "earl:cantTell"
           }
         }
       ]
@@ -7809,19 +7677,7 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "meta_redirect_optional:pass,fail,fail_longrefresh",
-            "isPartOf": [
-              "WCAG2:timing-adjustable"
-            ]
-          },
-          "result": {
-            "outcome": "earl:inapplicable"
-          }
-        },
-        {
-          "@type": "Assertion",
-          "test": {
-            "title": "meta_refresh_delay:Pass_0,Potential_1",
+            "title": "meta_refresh_delay:pass,potential_refresh",
             "isPartOf": [
               "WCAG2:timing-adjustable"
             ]
@@ -7839,19 +7695,7 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "meta_redirect_optional:pass,fail,fail_longrefresh",
-            "isPartOf": [
-              "WCAG2:timing-adjustable"
-            ]
-          },
-          "result": {
-            "outcome": "earl:inapplicable"
-          }
-        },
-        {
-          "@type": "Assertion",
-          "test": {
-            "title": "meta_refresh_delay:Pass_0,Potential_1",
+            "title": "meta_refresh_delay:pass,potential_refresh",
             "isPartOf": [
               "WCAG2:timing-adjustable"
             ]
@@ -7869,19 +7713,7 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "meta_redirect_optional:pass,fail,fail_longrefresh",
-            "isPartOf": [
-              "WCAG2:timing-adjustable"
-            ]
-          },
-          "result": {
-            "outcome": "earl:inapplicable"
-          }
-        },
-        {
-          "@type": "Assertion",
-          "test": {
-            "title": "meta_refresh_delay:Pass_0,Potential_1",
+            "title": "meta_refresh_delay:pass,potential_refresh",
             "isPartOf": [
               "WCAG2:timing-adjustable"
             ]
@@ -7899,19 +7731,7 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "meta_redirect_optional:pass,fail,fail_longrefresh",
-            "isPartOf": [
-              "WCAG2:timing-adjustable"
-            ]
-          },
-          "result": {
-            "outcome": "earl:inapplicable"
-          }
-        },
-        {
-          "@type": "Assertion",
-          "test": {
-            "title": "meta_refresh_delay:Pass_0,Potential_1",
+            "title": "meta_refresh_delay:pass,potential_refresh",
             "isPartOf": [
               "WCAG2:timing-adjustable"
             ]
@@ -7929,19 +7749,7 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "meta_redirect_optional:pass,fail,fail_longrefresh",
-            "isPartOf": [
-              "WCAG2:timing-adjustable"
-            ]
-          },
-          "result": {
-            "outcome": "earl:inapplicable"
-          }
-        },
-        {
-          "@type": "Assertion",
-          "test": {
-            "title": "meta_refresh_delay:Pass_0,Potential_1",
+            "title": "meta_refresh_delay:pass,potential_refresh",
             "isPartOf": [
               "WCAG2:timing-adjustable"
             ]
@@ -7959,19 +7767,7 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "meta_redirect_optional:pass,fail,fail_longrefresh",
-            "isPartOf": [
-              "WCAG2:timing-adjustable"
-            ]
-          },
-          "result": {
-            "outcome": "earl:inapplicable"
-          }
-        },
-        {
-          "@type": "Assertion",
-          "test": {
-            "title": "meta_refresh_delay:Pass_0,Potential_1",
+            "title": "meta_refresh_delay:pass,potential_refresh",
             "isPartOf": [
               "WCAG2:timing-adjustable"
             ]
@@ -7989,19 +7785,7 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "meta_redirect_optional:pass,fail,fail_longrefresh",
-            "isPartOf": [
-              "WCAG2:timing-adjustable"
-            ]
-          },
-          "result": {
-            "outcome": "earl:inapplicable"
-          }
-        },
-        {
-          "@type": "Assertion",
-          "test": {
-            "title": "meta_refresh_delay:Pass_0,Potential_1",
+            "title": "meta_refresh_delay:pass,potential_refresh",
             "isPartOf": [
               "WCAG2:timing-adjustable"
             ]
@@ -8019,19 +7803,7 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "meta_redirect_optional:pass,fail,fail_longrefresh",
-            "isPartOf": [
-              "WCAG2:timing-adjustable"
-            ]
-          },
-          "result": {
-            "outcome": "earl:inapplicable"
-          }
-        },
-        {
-          "@type": "Assertion",
-          "test": {
-            "title": "meta_refresh_delay:Pass_0,Potential_1",
+            "title": "meta_refresh_delay:pass,potential_refresh",
             "isPartOf": [
               "WCAG2:timing-adjustable"
             ]
@@ -8049,13 +7821,13 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "meta_viewport_zoomable:Pass_0,Potential_1",
+            "title": "meta_viewport_zoomable:pass,potential_zoomable",
             "isPartOf": [
               "WCAG2:resize-text"
             ]
           },
           "result": {
-            "outcome": "earl:inapplicable"
+            "outcome": "earl:passed"
           }
         }
       ]
@@ -8067,13 +7839,13 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "meta_viewport_zoomable:Pass_0,Potential_1",
+            "title": "meta_viewport_zoomable:pass,potential_zoomable",
             "isPartOf": [
               "WCAG2:resize-text"
             ]
           },
           "result": {
-            "outcome": "earl:inapplicable"
+            "outcome": "earl:passed"
           }
         }
       ]
@@ -8085,13 +7857,13 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "meta_viewport_zoomable:Pass_0,Potential_1",
+            "title": "meta_viewport_zoomable:pass,potential_zoomable",
             "isPartOf": [
               "WCAG2:resize-text"
             ]
           },
           "result": {
-            "outcome": "earl:inapplicable"
+            "outcome": "earl:passed"
           }
         }
       ]
@@ -8103,13 +7875,13 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "meta_viewport_zoomable:Pass_0,Potential_1",
+            "title": "meta_viewport_zoomable:pass,potential_zoomable",
             "isPartOf": [
               "WCAG2:resize-text"
             ]
           },
           "result": {
-            "outcome": "earl:inapplicable"
+            "outcome": "earl:failed"
           }
         }
       ]
@@ -8121,13 +7893,13 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "meta_viewport_zoomable:Pass_0,Potential_1",
+            "title": "meta_viewport_zoomable:pass,potential_zoomable",
             "isPartOf": [
               "WCAG2:resize-text"
             ]
           },
           "result": {
-            "outcome": "earl:inapplicable"
+            "outcome": "earl:failed"
           }
         }
       ]
@@ -8139,13 +7911,13 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "meta_viewport_zoomable:Pass_0,Potential_1",
+            "title": "meta_viewport_zoomable:pass,potential_zoomable",
             "isPartOf": [
               "WCAG2:resize-text"
             ]
           },
           "result": {
-            "outcome": "earl:inapplicable"
+            "outcome": "earl:failed"
           }
         }
       ]
@@ -8157,13 +7929,13 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "meta_viewport_zoomable:Pass_0,Potential_1",
+            "title": "meta_viewport_zoomable:pass,potential_zoomable",
             "isPartOf": [
               "WCAG2:resize-text"
             ]
           },
           "result": {
-            "outcome": "earl:inapplicable"
+            "outcome": "earl:failed"
           }
         }
       ]
@@ -8175,7 +7947,7 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "meta_viewport_zoomable:Pass_0,Potential_1",
+            "title": "meta_viewport_zoomable:pass,potential_zoomable",
             "isPartOf": [
               "WCAG2:resize-text"
             ]
@@ -8193,7 +7965,7 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "meta_viewport_zoomable:Pass_0,Potential_1",
+            "title": "meta_viewport_zoomable:pass,potential_zoomable",
             "isPartOf": [
               "WCAG2:resize-text"
             ]
@@ -8211,7 +7983,7 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "meta_viewport_zoomable:Pass_0,Potential_1",
+            "title": "meta_viewport_zoomable:pass,potential_zoomable",
             "isPartOf": [
               "WCAG2:resize-text"
             ]
@@ -8229,7 +8001,7 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "meta_viewport_zoomable:Pass_0,Potential_1",
+            "title": "meta_viewport_zoomable:pass,potential_zoomable",
             "isPartOf": [
               "WCAG2:resize-text"
             ]
@@ -8247,13 +8019,13 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "meta_viewport_zoomable:Pass_0,Potential_1",
+            "title": "meta_viewport_zoomable:pass,potential_zoomable",
             "isPartOf": [
               "WCAG2:resize-text"
             ]
           },
           "result": {
-            "outcome": "earl:inapplicable"
+            "outcome": "earl:passed"
           }
         }
       ]
@@ -8265,13 +8037,13 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "meta_viewport_zoomable:Pass_0,Potential_1",
+            "title": "meta_viewport_zoomable:pass,potential_zoomable",
             "isPartOf": [
               "WCAG2:resize-text"
             ]
           },
           "result": {
-            "outcome": "earl:inapplicable"
+            "outcome": "earl:failed"
           }
         }
       ]
@@ -8283,13 +8055,13 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "meta_viewport_zoomable:Pass_0,Potential_1",
+            "title": "meta_viewport_zoomable:pass,potential_zoomable",
             "isPartOf": [
               "WCAG2:resize-text"
             ]
           },
           "result": {
-            "outcome": "earl:inapplicable"
+            "outcome": "earl:failed"
           }
         }
       ]
@@ -8301,13 +8073,13 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "meta_viewport_zoomable:Pass_0,Potential_1",
+            "title": "meta_viewport_zoomable:pass,potential_zoomable",
             "isPartOf": [
               "WCAG2:resize-text"
             ]
           },
           "result": {
-            "outcome": "earl:inapplicable"
+            "outcome": "earl:failed"
           }
         }
       ]
@@ -8319,13 +8091,13 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "meta_viewport_zoomable:Pass_0,Potential_1",
+            "title": "meta_viewport_zoomable:pass,potential_zoomable",
             "isPartOf": [
               "WCAG2:resize-text"
             ]
           },
           "result": {
-            "outcome": "earl:inapplicable"
+            "outcome": "earl:failed"
           }
         }
       ]
@@ -9753,7 +9525,7 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "meta_refresh_delay:Pass_0,Potential_1",
+            "title": "meta_redirect_optional:pass,fail,fail_longrefresh",
             "isPartOf": [
               "WCAG2:timing-adjustable"
             ]
@@ -9771,7 +9543,7 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "meta_refresh_delay:Pass_0,Potential_1",
+            "title": "meta_redirect_optional:pass,fail,fail_longrefresh",
             "isPartOf": [
               "WCAG2:timing-adjustable"
             ]
@@ -9789,13 +9561,13 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "meta_refresh_delay:Pass_0,Potential_1",
+            "title": "meta_redirect_optional:pass,fail,fail_longrefresh",
             "isPartOf": [
               "WCAG2:timing-adjustable"
             ]
           },
           "result": {
-            "outcome": "earl:cantTell"
+            "outcome": "earl:failed"
           }
         }
       ]
@@ -9807,13 +9579,13 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "meta_refresh_delay:Pass_0,Potential_1",
+            "title": "meta_redirect_optional:pass,fail,fail_longrefresh",
             "isPartOf": [
               "WCAG2:timing-adjustable"
             ]
           },
           "result": {
-            "outcome": "earl:passed"
+            "outcome": "earl:failed"
           }
         }
       ]
@@ -9825,13 +9597,13 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "meta_refresh_delay:Pass_0,Potential_1",
+            "title": "meta_redirect_optional:pass,fail,fail_longrefresh",
             "isPartOf": [
               "WCAG2:timing-adjustable"
             ]
           },
           "result": {
-            "outcome": "earl:passed"
+            "outcome": "earl:failed"
           }
         }
       ]
@@ -9843,7 +9615,7 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "meta_refresh_delay:Pass_0,Potential_1",
+            "title": "meta_redirect_optional:pass,fail,fail_longrefresh",
             "isPartOf": [
               "WCAG2:timing-adjustable"
             ]
@@ -9861,7 +9633,7 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "meta_refresh_delay:Pass_0,Potential_1",
+            "title": "meta_redirect_optional:pass,fail,fail_longrefresh",
             "isPartOf": [
               "WCAG2:timing-adjustable"
             ]
@@ -9879,7 +9651,7 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "meta_refresh_delay:Pass_0,Potential_1",
+            "title": "meta_redirect_optional:pass,fail,fail_longrefresh",
             "isPartOf": [
               "WCAG2:timing-adjustable"
             ]
@@ -9897,7 +9669,7 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "meta_refresh_delay:Pass_0,Potential_1",
+            "title": "meta_redirect_optional:pass,fail,fail_longrefresh",
             "isPartOf": [
               "WCAG2:timing-adjustable"
             ]
@@ -9915,7 +9687,7 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "meta_refresh_delay:Pass_0,Potential_1",
+            "title": "meta_redirect_optional:pass,fail,fail_longrefresh",
             "isPartOf": [
               "WCAG2:timing-adjustable"
             ]
@@ -9933,7 +9705,7 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "meta_refresh_delay:Pass_0,Potential_1",
+            "title": "meta_redirect_optional:pass,fail,fail_longrefresh",
             "isPartOf": [
               "WCAG2:timing-adjustable"
             ]
@@ -9951,7 +9723,7 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "meta_refresh_delay:Pass_0,Potential_1",
+            "title": "meta_redirect_optional:pass,fail,fail_longrefresh",
             "isPartOf": [
               "WCAG2:timing-adjustable"
             ]
@@ -9969,7 +9741,7 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "meta_refresh_delay:Pass_0,Potential_1",
+            "title": "meta_redirect_optional:pass,fail,fail_longrefresh",
             "isPartOf": [
               "WCAG2:timing-adjustable"
             ]
@@ -10564,9 +10336,7 @@
           "@type": "Assertion",
           "test": {
             "title": "aria_attribute_valid:Pass,Fail_invalid_role_attr,Fail_invalid_implicit_role_attr",
-            "isPartOf": [
-              []
-            ]
+            "isPartOf": []
           },
           "result": {
             "outcome": "earl:passed"
@@ -10582,9 +10352,7 @@
           "@type": "Assertion",
           "test": {
             "title": "aria_attribute_valid:Pass,Fail_invalid_role_attr,Fail_invalid_implicit_role_attr",
-            "isPartOf": [
-              []
-            ]
+            "isPartOf": []
           },
           "result": {
             "outcome": "earl:passed"
@@ -10600,9 +10368,7 @@
           "@type": "Assertion",
           "test": {
             "title": "aria_attribute_valid:Pass,Fail_invalid_role_attr,Fail_invalid_implicit_role_attr",
-            "isPartOf": [
-              []
-            ]
+            "isPartOf": []
           },
           "result": {
             "outcome": "earl:passed"
@@ -10618,9 +10384,7 @@
           "@type": "Assertion",
           "test": {
             "title": "aria_attribute_valid:Pass,Fail_invalid_role_attr,Fail_invalid_implicit_role_attr",
-            "isPartOf": [
-              []
-            ]
+            "isPartOf": []
           },
           "result": {
             "outcome": "earl:passed"
@@ -10636,9 +10400,7 @@
           "@type": "Assertion",
           "test": {
             "title": "aria_attribute_valid:Pass,Fail_invalid_role_attr,Fail_invalid_implicit_role_attr",
-            "isPartOf": [
-              []
-            ]
+            "isPartOf": []
           },
           "result": {
             "outcome": "earl:passed"
@@ -10654,9 +10416,7 @@
           "@type": "Assertion",
           "test": {
             "title": "aria_attribute_valid:Pass,Fail_invalid_role_attr,Fail_invalid_implicit_role_attr",
-            "isPartOf": [
-              []
-            ]
+            "isPartOf": []
           },
           "result": {
             "outcome": "earl:passed"
@@ -10672,9 +10432,7 @@
           "@type": "Assertion",
           "test": {
             "title": "aria_attribute_valid:Pass,Fail_invalid_role_attr,Fail_invalid_implicit_role_attr",
-            "isPartOf": [
-              []
-            ]
+            "isPartOf": []
           },
           "result": {
             "outcome": "earl:passed"
@@ -10690,9 +10448,7 @@
           "@type": "Assertion",
           "test": {
             "title": "aria_attribute_valid:Pass,Fail_invalid_role_attr,Fail_invalid_implicit_role_attr",
-            "isPartOf": [
-              []
-            ]
+            "isPartOf": []
           },
           "result": {
             "outcome": "earl:passed"
@@ -10708,9 +10464,7 @@
           "@type": "Assertion",
           "test": {
             "title": "aria_attribute_valid:Pass,Fail_invalid_role_attr,Fail_invalid_implicit_role_attr",
-            "isPartOf": [
-              []
-            ]
+            "isPartOf": []
           },
           "result": {
             "outcome": "earl:passed"
@@ -10726,9 +10480,7 @@
           "@type": "Assertion",
           "test": {
             "title": "aria_attribute_valid:Pass,Fail_invalid_role_attr,Fail_invalid_implicit_role_attr",
-            "isPartOf": [
-              []
-            ]
+            "isPartOf": []
           },
           "result": {
             "outcome": "earl:inapplicable"
@@ -10744,9 +10496,7 @@
           "@type": "Assertion",
           "test": {
             "title": "aria_attribute_valid:Pass,Fail_invalid_role_attr,Fail_invalid_implicit_role_attr",
-            "isPartOf": [
-              []
-            ]
+            "isPartOf": []
           },
           "result": {
             "outcome": "earl:passed"
@@ -10762,9 +10512,7 @@
           "@type": "Assertion",
           "test": {
             "title": "aria_attribute_valid:Pass,Fail_invalid_role_attr,Fail_invalid_implicit_role_attr",
-            "isPartOf": [
-              []
-            ]
+            "isPartOf": []
           },
           "result": {
             "outcome": "earl:failed"
@@ -10780,9 +10528,7 @@
           "@type": "Assertion",
           "test": {
             "title": "aria_attribute_valid:Pass,Fail_invalid_role_attr,Fail_invalid_implicit_role_attr",
-            "isPartOf": [
-              []
-            ]
+            "isPartOf": []
           },
           "result": {
             "outcome": "earl:failed"
@@ -10798,9 +10544,7 @@
           "@type": "Assertion",
           "test": {
             "title": "aria_attribute_valid:Pass,Fail_invalid_role_attr,Fail_invalid_implicit_role_attr",
-            "isPartOf": [
-              []
-            ]
+            "isPartOf": []
           },
           "result": {
             "outcome": "earl:failed"
@@ -10816,9 +10560,7 @@
           "@type": "Assertion",
           "test": {
             "title": "aria_attribute_valid:Pass,Fail_invalid_role_attr,Fail_invalid_implicit_role_attr",
-            "isPartOf": [
-              []
-            ]
+            "isPartOf": []
           },
           "result": {
             "outcome": "earl:inapplicable"
@@ -10834,9 +10576,7 @@
           "@type": "Assertion",
           "test": {
             "title": "aria_attribute_valid:Pass,Fail_invalid_role_attr,Fail_invalid_implicit_role_attr",
-            "isPartOf": [
-              []
-            ]
+            "isPartOf": []
           },
           "result": {
             "outcome": "earl:inapplicable"

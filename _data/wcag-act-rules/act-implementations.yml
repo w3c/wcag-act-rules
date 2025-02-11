@@ -17,7 +17,6 @@
 
 - name: Alfa (fully automated)
   homepage: https://alfa.siteimprove.com/
-  version: 0.80.0
   vendor: Siteimprove
   vendorHomepage: https://www.siteimprove.com/
   uniqueKey: alfa
@@ -29,7 +28,6 @@
 
 - name: Alfa (semi-automated)
   homepage: https://alfa.siteimprove.com/
-  version: 0.80.0
   vendor: Siteimprove
   vendorHomepage: https://www.siteimprove.com/
   uniqueKey: alfa-assisted
@@ -41,7 +39,7 @@
 
 - name: Axe-core
   homepage: https://www.npmjs.com/package/axe-core/
-  version: "4.8.3"
+  version: "4.10.2"
   vendor: Deque Systems
   vendorHomepage: https://deque.com/
   uniqueKey: axe-core
@@ -120,7 +118,7 @@
 
 - name: SortSite
   homepage: https://www.powermapper.com/products/sortsite/
-  version: 6.45
+  version: 6.55
   vendor: PowerMapper
   vendorHomepage: https://www.powermapper.com/
   uniqueKey: sortsite

@@ -1,7 +1,7 @@
 {
   "vendor": "PowerMapper",
   "name": "SortSite",
-  "version": 6.45,
+  "version": 6.55,
   "lastModified": "2 January 2025",
   "approvedRules": {
     "complete": 31,
@@ -10,8 +10,8 @@
     "untested": 3
   },
   "proposedRules": {
-    "complete": 13,
-    "partial": 0,
+    "complete": 12,
+    "partial": 1,
     "inconsistent": 0,
     "untested": 40
   },
@@ -9100,7 +9100,7 @@
       "procedureNames": [
         "W3cHtml5Error-RnvErAkey-aria-*"
       ],
-      "consistency": "complete",
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
@@ -9108,9 +9108,9 @@
       },
       "coverage": {
         "covered": 16,
-        "untested": 0,
+        "untested": 3,
         "cantTell": 0,
-        "testCaseTotal": 16
+        "testCaseTotal": 19
       },
       "testCaseResults": [
         {
@@ -9279,6 +9279,36 @@
           ]
         },
         {
+          "testcaseId": "da2d6c53dd58121d0182d2498a104776da424e21",
+          "testCaseName": "Passed Example 12",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/da2d6c53dd58121d0182d2498a104776da424e21.html",
+          "testCaseApproved": false,
+          "expected": "passed",
+          "procedureResults": [
+            {
+              "procedureName": "W3cHtml5Error-RnvErAkey-aria-*",
+              "outcomes": [
+                "untested"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "2c80908133ee63545a20ea45952de6f7d6cf845b",
+          "testCaseName": "Passed Example 13",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/2c80908133ee63545a20ea45952de6f7d6cf845b.html",
+          "testCaseApproved": false,
+          "expected": "passed",
+          "procedureResults": [
+            {
+              "procedureName": "W3cHtml5Error-RnvErAkey-aria-*",
+              "outcomes": [
+                "untested"
+              ]
+            }
+          ]
+        },
+        {
           "testcaseId": "5e4eedbbef33766005c6f92c3dede1b1b40a2dac",
           "testCaseName": "Failed Example 1",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/5e4eedbbef33766005c6f92c3dede1b1b40a2dac.html",
@@ -9319,6 +9349,21 @@
               "procedureName": "W3cHtml5Error-RnvErAkey-aria-*",
               "outcomes": [
                 "failed"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "eedabccf6e01bca36ee87a2af00e9d7a63a7d615",
+          "testCaseName": "Failed Example 4",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/eedabccf6e01bca36ee87a2af00e9d7a63a7d615.html",
+          "testCaseApproved": false,
+          "expected": "failed",
+          "procedureResults": [
+            {
+              "procedureName": "W3cHtml5Error-RnvErAkey-aria-*",
+              "outcomes": [
+                "untested"
               ]
             }
           ]
