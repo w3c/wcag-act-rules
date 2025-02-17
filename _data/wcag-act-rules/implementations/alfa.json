@@ -10,8 +10,8 @@
     "untested": 2
   },
   "proposedRules": {
-    "complete": 7,
-    "partial": 6,
+    "complete": 6,
+    "partial": 7,
     "inconsistent": 4,
     "untested": 36
   },
@@ -9253,7 +9253,7 @@
       "procedureNames": [
         "sia-r18"
       ],
-      "consistency": "complete",
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
