@@ -9,7 +9,7 @@
         "@type": "Software",
         "title": "Total Validator CI (+Browser)",
         "description": "Total Validator checks websites are accessible, use valid HTML and CSS, have no broken links, and are free from spelling mistakes.",
-        "hasVersion": "18.2.0 (+6.2)",
+        "hasVersion": "18.3.0 (+6.3)",
         "homepage": "https://www.totalvalidator.com"
       },
       "assertions": [
@@ -13218,7 +13218,7 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "W918",
+            "title": "I918",
             "isPartOf": ["WCAG2:orientation"]
            },
           "result": { "outcome": "earl:cantTell" }
@@ -13232,7 +13232,7 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "W918",
+            "title": "I918",
             "isPartOf": ["WCAG2:orientation"]
            },
           "result": { "outcome": "earl:cantTell" }
@@ -13246,7 +13246,7 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "W918",
+            "title": "I918",
             "isPartOf": ["WCAG2:orientation"]
            },
           "result": { "outcome": "earl:passed" }
@@ -13260,10 +13260,10 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "W918",
+            "title": "I918",
             "isPartOf": ["WCAG2:orientation"]
            },
-          "result": { "outcome": "earl:failed" }
+          "result": { "outcome": "earl:cantTell" }
         }
       ]
     },
@@ -13274,10 +13274,10 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "W918",
+            "title": "I918",
             "isPartOf": ["WCAG2:orientation"]
            },
-          "result": { "outcome": "earl:failed" }
+          "result": { "outcome": "earl:cantTell" }
         }
       ]
     },
@@ -13288,10 +13288,10 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "W918",
+            "title": "I918",
             "isPartOf": ["WCAG2:orientation"]
            },
-          "result": { "outcome": "earl:failed" }
+          "result": { "outcome": "earl:cantTell" }
         }
       ]
     },
@@ -13302,10 +13302,10 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "W918",
+            "title": "I918",
             "isPartOf": ["WCAG2:orientation"]
            },
-          "result": { "outcome": "earl:failed" }
+          "result": { "outcome": "earl:cantTell" }
         }
       ]
     },
@@ -13316,7 +13316,7 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "W918",
+            "title": "I918",
             "isPartOf": ["WCAG2:orientation"]
            },
           "result": { "outcome": "earl:passed" }
@@ -13330,7 +13330,7 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "W918",
+            "title": "I918",
             "isPartOf": ["WCAG2:orientation"]
            },
           "result": { "outcome": "earl:passed" }
@@ -13344,7 +13344,7 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "W918",
+            "title": "I918",
             "isPartOf": ["WCAG2:orientation"]
            },
           "result": { "outcome": "earl:passed" }
@@ -13358,7 +13358,7 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "W918",
+            "title": "I918",
             "isPartOf": ["WCAG2:orientation"]
            },
           "result": { "outcome": "earl:passed" }
@@ -13372,7 +13372,7 @@
         {
           "@type": "Assertion",
           "test": {
-            "title": "W918",
+            "title": "I918",
             "isPartOf": ["WCAG2:orientation"]
            },
           "result": { "outcome": "earl:passed" }

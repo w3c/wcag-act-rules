@@ -10,8 +10,8 @@
     "untested": 7
   },
   "proposedRules": {
-    "complete": 13,
-    "partial": 2,
+    "complete": 12,
+    "partial": 3,
     "inconsistent": 0,
     "untested": 38
   },
@@ -9624,9 +9624,9 @@
       "ruleName": "Orientation of the page is not restricted using CSS transforms",
       "ruleApproved": false,
       "procedureNames": [
-        "W918"
+        "I918"
       ],
-      "consistency": "complete",
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -9637,9 +9637,9 @@
         ]
       },
       "coverage": {
-        "covered": 10,
+        "covered": 6,
         "untested": 0,
-        "cantTell": 2,
+        "cantTell": 6,
         "testCaseTotal": 12
       },
       "testCaseResults": [
@@ -9651,7 +9651,7 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "W918",
+              "procedureName": "I918",
               "outcomes": [
                 "cantTell"
               ]
@@ -9666,7 +9666,7 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "W918",
+              "procedureName": "I918",
               "outcomes": [
                 "cantTell"
               ]
@@ -9681,7 +9681,7 @@
           "expected": "passed",
           "procedureResults": [
             {
-              "procedureName": "W918",
+              "procedureName": "I918",
               "outcomes": [
                 "passed"
               ]
@@ -9696,9 +9696,9 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "W918",
+              "procedureName": "I918",
               "outcomes": [
-                "failed"
+                "cantTell"
               ]
             }
           ]
@@ -9711,9 +9711,9 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "W918",
+              "procedureName": "I918",
               "outcomes": [
-                "failed"
+                "cantTell"
               ]
             }
           ]
@@ -9726,9 +9726,9 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "W918",
+              "procedureName": "I918",
               "outcomes": [
-                "failed"
+                "cantTell"
               ]
             }
           ]
@@ -9741,9 +9741,9 @@
           "expected": "failed",
           "procedureResults": [
             {
-              "procedureName": "W918",
+              "procedureName": "I918",
               "outcomes": [
-                "failed"
+                "cantTell"
               ]
             }
           ]
@@ -9756,7 +9756,7 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "W918",
+              "procedureName": "I918",
               "outcomes": [
                 "passed"
               ]
@@ -9771,7 +9771,7 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "W918",
+              "procedureName": "I918",
               "outcomes": [
                 "passed"
               ]
@@ -9786,7 +9786,7 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "W918",
+              "procedureName": "I918",
               "outcomes": [
                 "passed"
               ]
@@ -9801,7 +9801,7 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "W918",
+              "procedureName": "I918",
               "outcomes": [
                 "passed"
               ]
@@ -9816,7 +9816,7 @@
           "expected": "inapplicable",
           "procedureResults": [
             {
-              "procedureName": "W918",
+              "procedureName": "I918",
               "outcomes": [
                 "passed"
               ]
