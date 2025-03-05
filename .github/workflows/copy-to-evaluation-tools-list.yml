@@ -21,16 +21,16 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
           path: act-rules
 
       - name: Clone ${{ env.DESTINATION_REPO }}
         env:
-          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }} # add as PAT (https://github.com/settings/tokens) as a secret
+          W3CGRUNTBOT_TOKEN: ${{ secrets.W3CGRUNTBOT_TOKEN }} # add as PAT (https://github.com/settings/tokens) as a secret
         run: |
           echo "Cloning $DESTINATION_REPO git repository"
-          git clone --single-branch --branch $DESTINATION_BRANCH "https://$API_TOKEN_GITHUB@github.com/$DESTINATION_REPO.git" evaluation-tools
+          git clone --single-branch --branch $DESTINATION_BRANCH "https://$W3CGRUNTBOT_TOKEN@github.com/$DESTINATION_REPO.git" evaluation-tools
 
       - name: Copy ${{ env.SOURCE_DIR }}
         # Cleanup first, we don't want to keep around old files
