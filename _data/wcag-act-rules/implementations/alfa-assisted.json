@@ -1,8 +1,8 @@
 {
   "vendor": "Siteimprove",
   "name": "Alfa (semi-automated)",
-  "version": "0.99.0",
-  "lastModified": "10 March 2025",
+  "version": "0.101.0",
+  "lastModified": "24 March 2025",
   "approvedRules": {
     "complete": 26,
     "partial": 0,
@@ -15495,7 +15495,7 @@
         ]
       },
       "coverage": {
-        "covered": 8,
+        "covered": 9,
         "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 14
@@ -15511,7 +15511,7 @@
             {
               "procedureName": "sia-r83",
               "outcomes": [
-                "failed"
+                "passed"
               ]
             }
           ]

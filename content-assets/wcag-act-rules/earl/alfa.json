@@ -70,7 +70,7 @@
       "name": "Alfa",
       "release": {
         "@type": "Version",
-        "revision": "0.99.0"
+        "revision": "0.101.0"
       },
       "doap:url": "https://alfa.siteimprove.com"
     },
@@ -13401,8 +13401,8 @@
       "earl:mode": "earl:automatic",
       "result": {
         "@type": "TestResult",
-        "info": "The text is clipped",
-        "outcome": "earl:failed",
+        "info": "The text is wrapped without being clipped",
+        "outcome": "earl:passed",
         "earl:pointer": {
           "@type": [
             "ptr:Pointer",
