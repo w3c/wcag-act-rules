@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 23a2a8</p>
-  <p><strong>Date:</strong> Updated 2 December 2024</p>
+  <p><strong>Date:</strong> Updated 17 March 2025</p>
   <p><strong>Authors:</strong> <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Previous Authors: <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/skotkjerra">Stein Erik Skotkjerra</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -20,7 +20,7 @@ rule_meta:
   original_file: image-non-empty-accessible-name-23a2a8.md
   description: |
     This rule checks that each image either has a non-empty accessible name or is marked up as decorative.
-  last_modified: 2 December 2024
+  last_modified: 17 March 2025
   scs_tested:
     - handle: Non-text Content
       num: 1.1.1
@@ -46,6 +46,7 @@ There are no assumptions.
 - There are several popular browsers that do not treat images with an empty `alt` attribute (`alt=""`) as having a role of `presentation` but instead add the `img` element to the accessibility tree with a [semantic role][] of either `img` or `graphic`.
 - Implementation of [Presentational Roles Conflict Resolution][] varies from one browser or assistive technology to another. Depending on this, some [semantic][semantic role] `img` elements can fail this rule with some technology but users of other technologies would not experience any accessibility issue.
 - Images can have their role set to `presentation` through an empty `alt` attribute. [Presentational Roles Conflict Resolution][] does not specify what to do if such an image is [focusable][] (it only specifies what to do in case of explicit `role="none"` or `role="presentation"`). Some browsers expose these images and some don't. Thus, this rule may fail for technologies that expose these without creating an accessibility issue for users of other technologies.
+- `svg` elements have an [implicit role][] of `graphics-document` in [svg-aam](https://www.w3.org/TR/svg-aam-1.0/#details-id-66). There are popular browsers that do not follow [svg-aam](https://www.w3.org/TR/svg-aam-1.0/#details-id-66) and instead expose SVG elements with a different [semantic role][], such as `image`, `generic` or `SvgRoot`.
 
 ### Bibliography
 
@@ -259,19 +260,7 @@ This `img` element has an [explicit role][] of `none`. However, it is [focusable
 
 #### Inapplicable Example 1
 
-<a class="example-link" title="Inapplicable Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/23a2a8/cd3b3a4046451da9b9cc3e166c09d27583a2c30b.html">Open in a new tab</a>
-
-This `svg` element has an [implicit role][] of `graphics-document`.
-
-```html
-<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100">
-	<circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
-</svg>
-```
-
-#### Inapplicable Example 2
-
-<a class="example-link" title="Inapplicable Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/23a2a8/25e5364c0a1320a08e2742fa59a0f8627591bc61.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/23a2a8/25e5364c0a1320a08e2742fa59a0f8627591bc61.html">Open in a new tab</a>
 
 This [semantic][semantic role] `img` element is hidden with `aria-hidden` set to "true".
 
@@ -283,9 +272,9 @@ This [semantic][semantic role] `img` element is hidden with `aria-hidden` set to
 ></div>
 ```
 
-#### Inapplicable Example 3
+#### Inapplicable Example 2
 
-<a class="example-link" title="Inapplicable Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/23a2a8/e15b9aca4aaa53cb3a96ae48e78e1af064b9a01d.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/23a2a8/e15b9aca4aaa53cb3a96ae48e78e1af064b9a01d.html">Open in a new tab</a>
 
 This `img` element is hidden with `aria-hidden` set to "true".
 
@@ -293,9 +282,9 @@ This `img` element is hidden with `aria-hidden` set to "true".
 <img src="/test-assets/shared/w3c-logo.png" aria-hidden="true" />
 ```
 
-#### Inapplicable Example 4
+#### Inapplicable Example 3
 
-<a class="example-link" title="Inapplicable Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/23a2a8/7d696551efaafa0da33bb6e56b8b43707c7c7de9.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/23a2a8/7d696551efaafa0da33bb6e56b8b43707c7c7de9.html">Open in a new tab</a>
 
 This `img` element is hidden because its parent has `display: none`.
 
@@ -305,9 +294,9 @@ This `img` element is hidden because its parent has `display: none`.
 </div>
 ```
 
-#### Inapplicable Example 5
+#### Inapplicable Example 4
 
-<a class="example-link" title="Inapplicable Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/23a2a8/f7692caf5f8c788d58e1aeb8d4f1f240fafdfa91.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/23a2a8/f7692caf5f8c788d58e1aeb8d4f1f240fafdfa91.html">Open in a new tab</a>
 
 This `img` element is hidden with `visibility: hidden`.
 
