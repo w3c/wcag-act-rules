@@ -66,6 +66,8 @@ defaults:
       standalone_resource_nav_links:
         - name: All Rules
           ref: /standards-guidelines/act/rules/
+        - name: Rules for WCAG
+          ref: /standards-guidelines/act/rules/wcag/
         - name: About
           ref: /standards-guidelines/act/rules/about/
         - name: Implementations

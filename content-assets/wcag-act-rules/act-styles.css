@@ -35,6 +35,44 @@ table.act-implementations ul {
   height: 2px;
 }
 
+/* Pill indicator for status labels */
+.act-pill {
+  display: inline-block;
+  background-color: var(--wai-green);
+  color: #fff;
+  font-size: 0.75em;
+  padding: 0.2em 0.6em;
+  border-radius: 1em;
+  margin-left: 0.5em;
+  font-weight: 500;
+  text-transform: lowercase;
+}
+
+.act-pill.proposed {
+  background-color: #f8c55f;
+  color: #333;
+}
+
+.act-pill.secondary {
+  background-color: var(--line-grey);
+  color: #333;
+}
+
+.act-pill.composite {
+  background-color: #8278da;
+  color: #fff;
+}
+
+/* Add spacing between success criteria for better scannability */
+/* We use a spacing for all SC items except those that immediately follow a heading */
+.sc-item {
+  margin-top: 2em;
+}
+
+h2 + .sc-item {
+  margin-top: 0;
+}
+
 @media (min-width: 480px) { 
   a.example-link {
     float: right;
@@ -92,4 +130,81 @@ ul.act-requirements-list {
 
 .act-requirements-list > li {
   list-style: none;
+}
+
+/* Filter controls styling */
+.filter-controls {
+  margin: 2em 0;
+  background-color: #f8f9fa;
+  padding: 1.5em;
+  border-radius: 5px;
+  border: 1px solid #e9ecef;
+}
+
+.filter-controls fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.filter-controls legend {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+  color: var(--wai-green);
+}
+
+.filter-description {
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.filter-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5em;
+}
+
+.filter-group {
+  margin-bottom: 0.5em;
+}
+
+.filter-group-label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.checkbox-option {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-option input[type="checkbox"] {
+  margin-right: 0.3em;
+}
+
+/* Focus styles for accessibility */
+input[type="checkbox"]:focus + label {
+  outline: 2px solid #005a9c;
+  outline-offset: 2px;
+}
+
+/* Responsive adjustments for filters */
+@media (max-width: 767px) {
+  .filter-options {
+    flex-direction: column;
+  }
+  
+  .checkbox-group {
+    flex-direction: column;
+    gap: 0.5em;
+  }
 }
