@@ -2,16 +2,16 @@
   "vendor": "PowerMapper",
   "name": "SortSite",
   "version": 6.55,
-  "lastModified": "2 January 2025",
+  "lastModified": "28 March 2025",
   "approvedRules": {
-    "complete": 31,
+    "complete": 30,
     "partial": 0,
-    "inconsistent": 0,
+    "inconsistent": 1,
     "untested": 3
   },
   "proposedRules": {
-    "complete": 12,
-    "partial": 1,
+    "complete": 13,
+    "partial": 0,
     "inconsistent": 0,
     "untested": 40
   },
@@ -1116,19 +1116,17 @@
       "procedureNames": [
         "AccHtmlIframeTabindexInteractive"
       ],
-      "consistency": "complete",
+      "consistency": null,
       "accessibilityRequirements": {
-        "correct": true,
+        "correct": false,
         "expected": [
           "WCAG2:keyboard"
         ],
-        "reported": [
-          "WCAG2:keyboard"
-        ]
+        "reported": []
       },
       "coverage": {
-        "covered": 9,
-        "untested": 0,
+        "covered": 8,
+        "untested": 1,
         "cantTell": 0,
         "testCaseTotal": 9
       },
@@ -1173,7 +1171,7 @@
             {
               "procedureName": "AccHtmlIframeTabindexInteractive",
               "outcomes": [
-                "failed"
+                "untested"
               ]
             }
           ]
@@ -9100,15 +9098,15 @@
       "procedureNames": [
         "W3cHtml5Error-RnvErAkey-aria-*"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
         "reported": []
       },
       "coverage": {
-        "covered": 16,
-        "untested": 3,
+        "covered": 19,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 19
       },
@@ -9288,7 +9286,7 @@
             {
               "procedureName": "W3cHtml5Error-RnvErAkey-aria-*",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -9303,7 +9301,7 @@
             {
               "procedureName": "W3cHtml5Error-RnvErAkey-aria-*",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -9363,7 +9361,7 @@
             {
               "procedureName": "W3cHtml5Error-RnvErAkey-aria-*",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
