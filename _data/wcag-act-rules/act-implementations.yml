@@ -162,7 +162,7 @@
 - name: Webmate Accessibility Workbench
   vendor: Testfabrik Consulting + Solutions AG
   uniqueKey: webmate-accessibility-workbench
-  type: Automated tool
+  type: Automated Tool
   standards:
     - WCAG 2.2 Level A, AA
   jsonReport: https://webmedia.testfabrik.com/act_implementation_report/webmate_accessibility_workbench_2024_11_26.json
