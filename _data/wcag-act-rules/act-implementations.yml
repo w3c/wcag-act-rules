@@ -159,3 +159,10 @@
   standards:
     - WCAG 2.0 Level A, AA
   jsonReport: https://raw.githubusercontent.com/Section508Coordinators/act-tt/main/act-trusted-tester.json
+- name: Webmate Accessibility Workbench
+  vendor: Testfabrik Consulting + Solutions AG
+  uniqueKey: webmate-accessibility-workbench
+  type: automated tool
+  standards:
+    - WCAG 2.2 Level A, AA
+  jsonReport: https://webmedia.testfabrik.com/act_implementation_report/webmate_accessibility_workbench_2024_11_26.json
