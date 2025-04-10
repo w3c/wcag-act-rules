@@ -10,8 +10,8 @@
     "untested": 7
   },
   "proposedRules": {
-    "complete": 12,
-    "partial": 5,
+    "complete": 11,
+    "partial": 6,
     "inconsistent": 0,
     "untested": 36
   },
@@ -8920,7 +8920,7 @@
       "procedureNames": [
         "E958"
       ],
-      "consistency": "complete",
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
@@ -8930,8 +8930,8 @@
         ]
       },
       "coverage": {
-        "covered": 19,
-        "untested": 0,
+        "covered": 18,
+        "untested": 1,
         "cantTell": 0,
         "testCaseTotal": 19
       },
@@ -9192,16 +9192,16 @@
           ]
         },
         {
-          "testcaseId": "a7aac71114d641a7bbeb7c959779d34321a57213",
+          "testcaseId": "2d40412f73292f3e93ce605ad5329f3ffed78ed3",
           "testCaseName": "Inapplicable Example 1",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/a7aac71114d641a7bbeb7c959779d34321a57213.html",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/2d40412f73292f3e93ce605ad5329f3ffed78ed3.html",
           "testCaseApproved": false,
           "expected": "inapplicable",
           "procedureResults": [
             {
               "procedureName": "E958",
               "outcomes": [
-                "passed"
+                "untested"
               ]
             }
           ]
