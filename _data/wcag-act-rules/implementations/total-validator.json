@@ -2,7 +2,7 @@
   "vendor": "Total Validator",
   "name": "Total Validator",
   "version": "17.4.0",
-  "lastModified": "23 February 2025",
+  "lastModified": "14 April 2025",
   "approvedRules": {
     "complete": 27,
     "partial": 0,
@@ -10,8 +10,8 @@
     "untested": 7
   },
   "proposedRules": {
-    "complete": 11,
-    "partial": 6,
+    "complete": 12,
+    "partial": 5,
     "inconsistent": 0,
     "untested": 36
   },
@@ -8920,7 +8920,7 @@
       "procedureNames": [
         "E958"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
@@ -8930,8 +8930,8 @@
         ]
       },
       "coverage": {
-        "covered": 18,
-        "untested": 1,
+        "covered": 19,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 19
       },
@@ -9201,7 +9201,7 @@
             {
               "procedureName": "E958",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
