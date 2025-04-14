@@ -11,6 +11,28 @@ footer: |
   <p>WCAG 2.2 Success Criteria as defined by the Web Content Accessibility Guidelines (WCAG) 2.2, a W3C Recommendation.</p>
 ---
 
+{% comment %}Build a list of automated rule IDs{% endcomment %}
+{% assign automated_rule_ids = "" | split: "," %}
+
+{% comment %}Look through implementations for automated tools{% endcomment %}
+{% for implementation in site.data.wcag-act-rules.act-implementations %}
+  {% if implementation.type contains "Automated" or implementation.type contains "Linter" %}
+    {% assign impl_key = implementation.uniqueKey %}
+    {% assign impl_mapping_file = site.data.wcag-act-rules.implementations[impl_key] %}
+    
+    {% if impl_mapping_file.actRuleMapping %}
+      {% for rule_mapping in impl_mapping_file.actRuleMapping %}
+        {% if rule_mapping.ruleId and rule_mapping.consistency == "complete" %}
+          {% assign automated_rule_ids = automated_rule_ids | push: rule_mapping.ruleId %}
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+  {% endif %}
+{% endfor %}
+
+{% comment %}Remove duplicates from the rule IDs{% endcomment %}
+{% assign automated_rule_ids = automated_rule_ids | uniq %}
+
 {::nomarkdown}
 {% include box.html type="start" title="Summary" class="" %}
 {:/}
@@ -92,11 +114,18 @@ This page contains all success criteria from the Web Content Accessibility Guide
     {% assign is_secondary = true %}
   {% endif %}
   
+  {% comment %}Determine if this rule has been automated{% endcomment %}
+  {% assign is_automated = false %}
+  {% if automated_rule_ids contains rule_id %}
+    {% assign is_automated = true %}
+  {% endif %}
+  
   <li>
     <a href="/standards-guidelines/act/rules/{{ rule_id }}/proposed/">{{ rule.title }}</a>
     {% if rule.proposed == true %} <span class="act-pill proposed">proposed</span>{% endif %}
     {% if is_secondary %} <span class="act-pill secondary">secondary</span>{% endif %}
     {% if is_composite %} <span class="act-pill composite">composite</span>{% endif %}
+    {% if is_automated %} <span class="act-pill automated">automated</span>{% endif %}
   </li>
   {% endfor %}
 </ul>

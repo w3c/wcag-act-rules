@@ -63,6 +63,11 @@ table.act-implementations ul {
   color: #fff;
 }
 
+.act-pill.automated {
+  background-color: #28a745;
+  color: #fff;
+}
+
 /* Add spacing between success criteria for better scannability */
 /* We use a spacing for all SC items except those that immediately follow a heading */
 .sc-item {

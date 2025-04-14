@@ -18,6 +18,7 @@
     // Get rule status filter checkboxes
     const showProposedCheckbox = document.getElementById('show-proposed');
     const showSecondaryCheckbox = document.getElementById('show-secondary');
+    const showAutomatedCheckbox = document.getElementById('show-automated');
 
     // Check if we have any filter checkboxes
     if ((!levelACheckbox && !levelAACheckbox && !levelAAACheckbox) && 
@@ -41,7 +42,8 @@
       'Level AA': levelAACheckbox ? 'Found' : 'Not found',
       'Level AAA': levelAAACheckbox ? 'Found' : 'Not found',
       'Proposed Rules': showProposedCheckbox ? 'Found' : 'Not found',
-      'Secondary Rules': showSecondaryCheckbox ? 'Found' : 'Not found'
+      'Secondary Rules': showSecondaryCheckbox ? 'Found' : 'Not found',
+      'Automated Rules': showAutomatedCheckbox ? 'Found' : 'Not found'
     });
 
     // Get all success criteria elements
@@ -66,6 +68,9 @@
     }
     if (showSecondaryCheckbox) {
       showSecondaryCheckbox.addEventListener('change', updateVisibility);
+    }
+    if (showAutomatedCheckbox) {
+      showAutomatedCheckbox.addEventListener('change', updateVisibility);
     }
     
     /**
@@ -95,13 +100,15 @@
       // Get current checkbox states for rule status
       const showProposed = showProposedCheckbox ? showProposedCheckbox.checked : true; // Default to true
       const showSecondary = showSecondaryCheckbox ? showSecondaryCheckbox.checked : false; // Default to false
+      const showAutomated = showAutomatedCheckbox ? showAutomatedCheckbox.checked : true; // Default to true
       
       console.log('Filter states:', {
         'Level A': showLevelA ? 'Show' : 'Hide',
         'Level AA': showLevelAA ? 'Show' : 'Hide',
         'Level AAA': showLevelAAA ? 'Show' : 'Hide',
         'Proposed Rules': showProposed ? 'Show' : 'Hide',
-        'Secondary Rules': showSecondary ? 'Show' : 'Hide'
+        'Secondary Rules': showSecondary ? 'Show' : 'Hide',
+        'Automated Rules': showAutomated ? 'Show' : 'Hide'
       });
       
       // First, filter criteria by conformance level
@@ -125,7 +132,7 @@
           visibleCount++;
           
           // Now filter rules within this criterion
-          filterRules(criterion, showProposed, showSecondary);
+          filterRules(criterion, showProposed, showSecondary, showAutomated);
         }
       });
       
@@ -138,7 +145,7 @@
     /**
      * Filter rules within a criterion based on their status
      */
-    function filterRules(criterion, showProposed, showSecondary) {
+    function filterRules(criterion, showProposed, showSecondary, showAutomated) {
       // Get all rule items within this criterion
       const ruleItems = criterion.querySelectorAll('li');
       let visibleRuleCount = 0;
@@ -146,6 +153,7 @@
       ruleItems.forEach(function(rule) {
         const isProposed = rule.querySelector('.act-pill.proposed') !== null;
         const isSecondary = rule.querySelector('.act-pill.secondary') !== null;
+        const isAutomated = rule.querySelector('.act-pill.automated') !== null;
         
         // Determine if the rule should be shown based on its status
         let shouldShow = true;
@@ -155,6 +163,10 @@
         }
         
         if (isSecondary && !showSecondary) {
+          shouldShow = false;
+        }
+        
+        if (isAutomated && !showAutomated) {
           shouldShow = false;
         }
         
