@@ -9107,8 +9107,8 @@
         "reported": []
       },
       "coverage": {
-        "covered": 16,
-        "untested": 3,
+        "covered": 15,
+        "untested": 4,
         "cantTell": 0,
         "testCaseTotal": 19
       },
@@ -9369,16 +9369,16 @@
           ]
         },
         {
-          "testcaseId": "a7aac71114d641a7bbeb7c959779d34321a57213",
+          "testcaseId": "2d40412f73292f3e93ce605ad5329f3ffed78ed3",
           "testCaseName": "Inapplicable Example 1",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/a7aac71114d641a7bbeb7c959779d34321a57213.html",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/2d40412f73292f3e93ce605ad5329f3ffed78ed3.html",
           "testCaseApproved": false,
           "expected": "inapplicable",
           "procedureResults": [
             {
               "procedureName": "ARIA state or property is permitted",
               "outcomes": [
-                "inapplicable"
+                "untested"
               ]
             }
           ]

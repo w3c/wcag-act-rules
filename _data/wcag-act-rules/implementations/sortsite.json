@@ -10,8 +10,8 @@
     "untested": 3
   },
   "proposedRules": {
-    "complete": 13,
-    "partial": 0,
+    "complete": 12,
+    "partial": 1,
     "inconsistent": 0,
     "untested": 40
   },
@@ -9098,15 +9098,15 @@
       "procedureNames": [
         "W3cHtml5Error-RnvErAkey-aria-*"
       ],
-      "consistency": "complete",
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
         "reported": []
       },
       "coverage": {
-        "covered": 19,
-        "untested": 0,
+        "covered": 18,
+        "untested": 1,
         "cantTell": 0,
         "testCaseTotal": 19
       },
@@ -9367,16 +9367,16 @@
           ]
         },
         {
-          "testcaseId": "a7aac71114d641a7bbeb7c959779d34321a57213",
+          "testcaseId": "2d40412f73292f3e93ce605ad5329f3ffed78ed3",
           "testCaseName": "Inapplicable Example 1",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/a7aac71114d641a7bbeb7c959779d34321a57213.html",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/2d40412f73292f3e93ce605ad5329f3ffed78ed3.html",
           "testCaseApproved": false,
           "expected": "inapplicable",
           "procedureResults": [
             {
               "procedureName": "W3cHtml5Error-RnvErAkey-aria-*",
               "outcomes": [
-                "passed"
+                "untested"
               ]
             }
           ]
