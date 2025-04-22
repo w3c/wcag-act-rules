@@ -3,7 +3,7 @@
   "website": "https://www.w3.org/WAI/standards-guidelines/act/rules/",
   "license": "https://act-rules.github.io/pages/license/",
   "description": "Accessibility conformance testing rules for HTML",
-  "count": 1170,
+  "count": 1169,
   "testcases": [
     {
       "ruleId": "674b10",
@@ -24388,36 +24388,6 @@
       "testcaseTitle": "Failed Example 5",
       "relativePath": "testcases/4e8ab6/7a1942d2d52f50c5df458877a0ee18dc5a22b0c3.html",
       "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/7a1942d2d52f50c5df458877a0ee18dc5a22b0c3.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/4e8ab6/proposed/"
-    },
-    {
-      "ruleId": "4e8ab6",
-      "ruleName": "Element with role attribute has required states and properties",
-      "ruleAccessibilityRequirements": {
-        "wcag-technique:ARIA5": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "aria12:requiredState": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "satisfied",
-          "inapplicable": "satisfied"
-        },
-        "wcag20:1.3.1": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because browsers and assistive technologies will often fall back on a non-standard default value, which may be sufficient. Some of the failed examples may satisfy this success criterion."
-        },
-        "wcag20:4.1.2": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because browsers and assistive technologies will often fall back on a non-standard default value, which may be sufficient. Some of the failed examples may satisfy this success criterion."
-        }
-      },
-      "expected": "failed",
-      "testcaseId": "30c746dee25dde33aef4bb61d5b054e2821e4564",
-      "testcaseTitle": "Failed Example 6",
-      "relativePath": "testcases/4e8ab6/30c746dee25dde33aef4bb61d5b054e2821e4564.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/30c746dee25dde33aef4bb61d5b054e2821e4564.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/4e8ab6/proposed/"
     },
     {

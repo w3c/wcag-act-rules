@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 4e8ab6</p>
-  <p><strong>Date:</strong> Updated 2 December 2024</p>
+  <p><strong>Date:</strong> Updated 22 April 2025</p>
   <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, Tom Brunet. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -20,7 +20,7 @@ rule_meta:
   original_file: role-required-states-and-properties-4e8ab6.md
   description: |
     This rule checks that elements that have an explicit role also specify all required states and properties.
-  last_modified: 2 December 2024
+  last_modified: 22 April 2025
 ---
 
 ## Applicability
@@ -236,21 +236,6 @@ This `combobox` does not have the required `aria-expanded` property. Prior to [W
 ```html
 <label for="tag_combo">Tag</label>
 <input type="text" id="tag_combo" role="combobox" aria-controls="popup_listbox" />
-<ul role="listbox" id="popup_listbox">
-	<li role="option">Zebra</li>
-	<li role="option" id="selected_option">Zoom</li>
-</ul>
-```
-
-#### Failed Example 6
-
-<a class="example-link" title="Failed Example 6" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/30c746dee25dde33aef4bb61d5b054e2821e4564.html">Open in a new tab</a>
-
-This `combobox` uses `aria-owns` instead of using the required `aria-controls` property.
-
-```html
-<label for="tag_combo">Tag</label>
-<input type="text" id="tag_combo" role="combobox" aria-expanded="true" aria-owns="popup_listbox" />
 <ul role="listbox" id="popup_listbox">
 	<li role="option">Zebra</li>
 	<li role="option" id="selected_option">Zoom</li>
