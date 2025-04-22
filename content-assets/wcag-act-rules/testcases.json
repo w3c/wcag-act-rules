@@ -3,7 +3,7 @@
   "website": "https://www.w3.org/WAI/standards-guidelines/act/rules/",
   "license": "https://act-rules.github.io/pages/license/",
   "description": "Accessibility conformance testing rules for HTML",
-  "count": 1169,
+  "count": 1170,
   "testcases": [
     {
       "ruleId": "674b10",
@@ -13582,6 +13582,24 @@
       "relativePath": "testcases/bisz58/0dcdacefc963adfbb2d3493e5468f8f12f0ac6de.html",
       "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bisz58/0dcdacefc963adfbb2d3493e5468f8f12f0ac6de.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/bisz58/proposed/"
+    },
+    {
+      "ruleId": "5f99a7",
+      "ruleName": "ARIA attribute is defined in WAI-ARIA",
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.3.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
+        },
+        "wcag20:4.1.2": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "287a72860814f903d561dc3e7765f507ca041624",
+      "testcaseTitle": "Passed Example 2",
+      "relativePath": "testcases/5f99a7/287a72860814f903d561dc3e7765f507ca041624.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/287a72860814f903d561dc3e7765f507ca041624.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/5f99a7/proposed/"
     },
     {
       "ruleId": "ff89c9",
