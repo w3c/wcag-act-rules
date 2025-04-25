@@ -2,7 +2,7 @@
   "vendor": "IBM Accessibility",
   "name": "Equal Access Accessibility Checker",
   "version": "3.1.42-rc.0",
-  "lastModified": "27 February 2025",
+  "lastModified": "25 April 2025",
   "approvedRules": {
     "complete": 19,
     "partial": 5,
@@ -10,8 +10,8 @@
     "untested": 5
   },
   "proposedRules": {
-    "complete": 4,
-    "partial": 1,
+    "complete": 5,
+    "partial": 0,
     "inconsistent": 2,
     "untested": 46
   },
@@ -8572,15 +8572,15 @@
       "procedureNames": [
         "aria_attribute_valid:Pass,Fail_invalid_role_attr,Fail_invalid_implicit_role_attr"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
         "reported": []
       },
       "coverage": {
-        "covered": 18,
-        "untested": 1,
+        "covered": 19,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 19
       },
@@ -8850,7 +8850,7 @@
             {
               "procedureName": "aria_attribute_valid:Pass,Fail_invalid_role_attr,Fail_invalid_implicit_role_attr",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
