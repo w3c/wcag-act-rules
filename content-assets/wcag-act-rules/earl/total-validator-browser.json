@@ -11533,6 +11533,20 @@
     },
     {
       "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/287a72860814f903d561dc3e7765f507ca041624.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "E964",
+            "isPartOf": ["WCAG2:info-and-relationships", "WCAG2:name-role-value"]
+           },
+          "result": { "outcome": "earl:passed" }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
       "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ff89c9/3ae3bc1c993acb6baaad2811cbd6139a8093361c.html",
       "assertions": [
         {
@@ -15061,40 +15075,12 @@
     },
     {
       "@type": "TestSubject",
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/eadf2a087a82575bcdf9f9158e698a576e9627c8.html",
-      "assertions": [
-        {
-          "@type": "Assertion",
-          "test": {
-            "title": "E9652",
-            "isPartOf": ["WCAG2:info-and-relationships", "WCAG2:name-role-value"]
-           },
-          "result": { "outcome": "earl:passed" }
-        }
-      ]
-    },
-    {
-      "@type": "TestSubject",
       "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/5b39aa37000933c7b9a766970b829ce5fada62d6.html",
       "assertions": [
         {
           "@type": "Assertion",
           "test": {
             "title": "E957",
-            "isPartOf": ["WCAG2:info-and-relationships", "WCAG2:name-role-value"]
-           },
-          "result": { "outcome": "earl:passed" }
-        }
-      ]
-    },
-    {
-      "@type": "TestSubject",
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/5b39aa37000933c7b9a766970b829ce5fada62d6.html",
-      "assertions": [
-        {
-          "@type": "Assertion",
-          "test": {
-            "title": "E9652",
             "isPartOf": ["WCAG2:info-and-relationships", "WCAG2:name-role-value"]
            },
           "result": { "outcome": "earl:passed" }
@@ -15117,40 +15103,12 @@
     },
     {
       "@type": "TestSubject",
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/11c5321c05c7b83b8707eee76574a94bd44033fe.html",
-      "assertions": [
-        {
-          "@type": "Assertion",
-          "test": {
-            "title": "E9652",
-            "isPartOf": ["WCAG2:info-and-relationships", "WCAG2:name-role-value"]
-           },
-          "result": { "outcome": "earl:passed" }
-        }
-      ]
-    },
-    {
-      "@type": "TestSubject",
       "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/3da0918b07e5736d55b4b405a22860d889931c15.html",
       "assertions": [
         {
           "@type": "Assertion",
           "test": {
             "title": "E957",
-            "isPartOf": ["WCAG2:info-and-relationships", "WCAG2:name-role-value"]
-           },
-          "result": { "outcome": "earl:passed" }
-        }
-      ]
-    },
-    {
-      "@type": "TestSubject",
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/3da0918b07e5736d55b4b405a22860d889931c15.html",
-      "assertions": [
-        {
-          "@type": "Assertion",
-          "test": {
-            "title": "E9652",
             "isPartOf": ["WCAG2:info-and-relationships", "WCAG2:name-role-value"]
            },
           "result": { "outcome": "earl:passed" }
@@ -15173,40 +15131,12 @@
     },
     {
       "@type": "TestSubject",
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/58a35afd2998bb6f9c670cb74fa7b550e80897b4.html",
-      "assertions": [
-        {
-          "@type": "Assertion",
-          "test": {
-            "title": "E9652",
-            "isPartOf": ["WCAG2:info-and-relationships", "WCAG2:name-role-value"]
-           },
-          "result": { "outcome": "earl:passed" }
-        }
-      ]
-    },
-    {
-      "@type": "TestSubject",
       "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/352ec575eab8846938e2dced0802d0c2f5611344.html",
       "assertions": [
         {
           "@type": "Assertion",
           "test": {
             "title": "E957",
-            "isPartOf": ["WCAG2:info-and-relationships", "WCAG2:name-role-value"]
-           },
-          "result": { "outcome": "earl:passed" }
-        }
-      ]
-    },
-    {
-      "@type": "TestSubject",
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/352ec575eab8846938e2dced0802d0c2f5611344.html",
-      "assertions": [
-        {
-          "@type": "Assertion",
-          "test": {
-            "title": "E9652",
             "isPartOf": ["WCAG2:info-and-relationships", "WCAG2:name-role-value"]
            },
           "result": { "outcome": "earl:passed" }
@@ -15229,20 +15159,6 @@
     },
     {
       "@type": "TestSubject",
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/80462b7b8c490305d1de7e3136c0bcfaef31789f.html",
-      "assertions": [
-        {
-          "@type": "Assertion",
-          "test": {
-            "title": "E9652",
-            "isPartOf": ["WCAG2:info-and-relationships", "WCAG2:name-role-value"]
-           },
-          "result": { "outcome": "earl:passed" }
-        }
-      ]
-    },
-    {
-      "@type": "TestSubject",
       "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/907f05aed287f7407d5f95e7d39bfc1435ec0812.html",
       "assertions": [
         {
@@ -15252,20 +15168,6 @@
             "isPartOf": ["WCAG2:info-and-relationships", "WCAG2:name-role-value"]
            },
           "result": { "outcome": "earl:failed" }
-        }
-      ]
-    },
-    {
-      "@type": "TestSubject",
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/907f05aed287f7407d5f95e7d39bfc1435ec0812.html",
-      "assertions": [
-        {
-          "@type": "Assertion",
-          "test": {
-            "title": "E9652",
-            "isPartOf": ["WCAG2:info-and-relationships", "WCAG2:name-role-value"]
-           },
-          "result": { "outcome": "earl:passed" }
         }
       ]
     },
@@ -15285,20 +15187,6 @@
     },
     {
       "@type": "TestSubject",
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/9bb1bdb3e95aa9b895fc4f32b0c2cfc917a07a72.html",
-      "assertions": [
-        {
-          "@type": "Assertion",
-          "test": {
-            "title": "E9652",
-            "isPartOf": ["WCAG2:info-and-relationships", "WCAG2:name-role-value"]
-           },
-          "result": { "outcome": "earl:passed" }
-        }
-      ]
-    },
-    {
-      "@type": "TestSubject",
       "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/43af91df529613e51429e18d43ce3df99b189c0f.html",
       "assertions": [
         {
@@ -15308,20 +15196,6 @@
             "isPartOf": ["WCAG2:info-and-relationships", "WCAG2:name-role-value"]
            },
           "result": { "outcome": "earl:failed" }
-        }
-      ]
-    },
-    {
-      "@type": "TestSubject",
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/43af91df529613e51429e18d43ce3df99b189c0f.html",
-      "assertions": [
-        {
-          "@type": "Assertion",
-          "test": {
-            "title": "E9652",
-            "isPartOf": ["WCAG2:info-and-relationships", "WCAG2:name-role-value"]
-           },
-          "result": { "outcome": "earl:passed" }
         }
       ]
     },
@@ -15341,20 +15215,6 @@
     },
     {
       "@type": "TestSubject",
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/7a1942d2d52f50c5df458877a0ee18dc5a22b0c3.html",
-      "assertions": [
-        {
-          "@type": "Assertion",
-          "test": {
-            "title": "E9652",
-            "isPartOf": ["WCAG2:info-and-relationships", "WCAG2:name-role-value"]
-           },
-          "result": { "outcome": "earl:passed" }
-        }
-      ]
-    },
-    {
-      "@type": "TestSubject",
       "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/30c746dee25dde33aef4bb61d5b054e2821e4564.html",
       "assertions": [
         {
@@ -15369,40 +15229,12 @@
     },
     {
       "@type": "TestSubject",
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/30c746dee25dde33aef4bb61d5b054e2821e4564.html",
-      "assertions": [
-        {
-          "@type": "Assertion",
-          "test": {
-            "title": "E9652",
-            "isPartOf": ["WCAG2:info-and-relationships", "WCAG2:name-role-value"]
-           },
-          "result": { "outcome": "earl:passed" }
-        }
-      ]
-    },
-    {
-      "@type": "TestSubject",
       "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/9d80b71ad39b258fb75db804867f189d76ecdab8.html",
       "assertions": [
         {
           "@type": "Assertion",
           "test": {
             "title": "E957",
-            "isPartOf": ["WCAG2:info-and-relationships", "WCAG2:name-role-value"]
-           },
-          "result": { "outcome": "earl:passed" }
-        }
-      ]
-    },
-    {
-      "@type": "TestSubject",
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/9d80b71ad39b258fb75db804867f189d76ecdab8.html",
-      "assertions": [
-        {
-          "@type": "Assertion",
-          "test": {
-            "title": "E9652",
             "isPartOf": ["WCAG2:info-and-relationships", "WCAG2:name-role-value"]
            },
           "result": { "outcome": "earl:passed" }
@@ -15425,40 +15257,12 @@
     },
     {
       "@type": "TestSubject",
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/a384e79d59f806b9403f207a29223541048716ac.html",
-      "assertions": [
-        {
-          "@type": "Assertion",
-          "test": {
-            "title": "E9652",
-            "isPartOf": ["WCAG2:info-and-relationships", "WCAG2:name-role-value"]
-           },
-          "result": { "outcome": "earl:passed" }
-        }
-      ]
-    },
-    {
-      "@type": "TestSubject",
       "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/f473186fa351637a3c034b2df567239a39a8139c.html",
       "assertions": [
         {
           "@type": "Assertion",
           "test": {
             "title": "E957",
-            "isPartOf": ["WCAG2:info-and-relationships", "WCAG2:name-role-value"]
-           },
-          "result": { "outcome": "earl:passed" }
-        }
-      ]
-    },
-    {
-      "@type": "TestSubject",
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/f473186fa351637a3c034b2df567239a39a8139c.html",
-      "assertions": [
-        {
-          "@type": "Assertion",
-          "test": {
-            "title": "E9652",
             "isPartOf": ["WCAG2:info-and-relationships", "WCAG2:name-role-value"]
            },
           "result": { "outcome": "earl:passed" }
@@ -15957,7 +15761,7 @@
     },
     {
       "@type": "TestSubject",
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/17e68991f57cd20cd5c9fcf564d5a23ebb08c0f0.html",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/add6f67d15c10ce6195ff5488ae7f5dab8bc3632.html",
       "assertions": [
         {
           "@type": "Assertion",

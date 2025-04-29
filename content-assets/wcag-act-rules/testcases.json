@@ -13584,6 +13584,24 @@
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/bisz58/proposed/"
     },
     {
+      "ruleId": "5f99a7",
+      "ruleName": "ARIA attribute is defined in WAI-ARIA",
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.3.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
+        },
+        "wcag20:4.1.2": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "287a72860814f903d561dc3e7765f507ca041624",
+      "testcaseTitle": "Passed Example 2",
+      "relativePath": "testcases/5f99a7/287a72860814f903d561dc3e7765f507ca041624.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/287a72860814f903d561dc3e7765f507ca041624.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/5f99a7/proposed/"
+    },
+    {
       "ruleId": "ff89c9",
       "ruleName": "ARIA required context role",
       "ruleAccessibilityRequirements": {
@@ -24395,36 +24413,6 @@
           "secondary": "This success criterion is **less strict** than this rule. This is because browsers and assistive technologies will often fall back on a non-standard default value, which may be sufficient. Some of the failed examples may satisfy this success criterion."
         }
       },
-      "expected": "failed",
-      "testcaseId": "30c746dee25dde33aef4bb61d5b054e2821e4564",
-      "testcaseTitle": "Failed Example 6",
-      "relativePath": "testcases/4e8ab6/30c746dee25dde33aef4bb61d5b054e2821e4564.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/30c746dee25dde33aef4bb61d5b054e2821e4564.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/4e8ab6/proposed/"
-    },
-    {
-      "ruleId": "4e8ab6",
-      "ruleName": "Element with role attribute has required states and properties",
-      "ruleAccessibilityRequirements": {
-        "wcag-technique:ARIA5": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "aria12:requiredState": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "satisfied",
-          "inapplicable": "satisfied"
-        },
-        "wcag20:1.3.1": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because browsers and assistive technologies will often fall back on a non-standard default value, which may be sufficient. Some of the failed examples may satisfy this success criterion."
-        },
-        "wcag20:4.1.2": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because browsers and assistive technologies will often fall back on a non-standard default value, which may be sufficient. Some of the failed examples may satisfy this success criterion."
-        }
-      },
       "expected": "inapplicable",
       "testcaseId": "9d80b71ad39b258fb75db804867f189d76ecdab8",
       "testcaseTitle": "Inapplicable Example 1",
@@ -25200,10 +25188,10 @@
         }
       },
       "expected": "inapplicable",
-      "testcaseId": "17e68991f57cd20cd5c9fcf564d5a23ebb08c0f0",
+      "testcaseId": "add6f67d15c10ce6195ff5488ae7f5dab8bc3632",
       "testcaseTitle": "Inapplicable Example 6",
-      "relativePath": "testcases/a25f45/17e68991f57cd20cd5c9fcf564d5a23ebb08c0f0.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/17e68991f57cd20cd5c9fcf564d5a23ebb08c0f0.html",
+      "relativePath": "testcases/a25f45/add6f67d15c10ce6195ff5488ae7f5dab8bc3632.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/add6f67d15c10ce6195ff5488ae7f5dab8bc3632.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/a25f45/proposed/"
     },
     {
