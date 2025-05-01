@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> in6db8</p>
-  <p><strong>Date:</strong> Updated 2 December 2024</p>
+  <p><strong>Date:</strong> Updated 1 May 2025</p>
   <p><strong>Authors:</strong> <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -20,7 +20,7 @@ rule_meta:
   original_file: aria-required-id-references-in6db8.md
   description: |
     This rule checks that every ID reference required by WAI-ARIA exists
-  last_modified: 2 December 2024
+  last_modified: 1 May 2025
 ---
 
 ## Applicability
@@ -111,12 +111,12 @@ The `aria-controls` [attribute value][] of this `scrollbar` matches the `id` of 
 
 #### Passed Example 2
 
-<a class="example-link" title="Passed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/in6db8/46d50c448266ba7f8434e92300d4c024537c055b.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/in6db8/2f505db707edd40237682c62199bf47c27678e07.html">Open in a new tab</a>
 
 The `aria-controls` [attribute value][] of this expanded `combobox` matches the `id` of the `ul` element in the same document.
 
 ```html
-<label for="tag_combo">Tag</label>
+<label for="tag_combo" id="tag_label">Tag</label>
 <input
 	type="text"
 	id="tag_combo"
@@ -125,7 +125,7 @@ The `aria-controls` [attribute value][] of this expanded `combobox` matches the 
 	aria-controls="popup_listbox"
 	aria-activedescendant="selected_option"
 />
-<ul role="listbox" id="popup_listbox">
+<ul role="listbox" id="popup_listbox" aria-labelledby="tag_label">
 	<li role="option">Zebra</li>
 	<li role="option" id="selected_option">Zoom</li>
 </ul>
