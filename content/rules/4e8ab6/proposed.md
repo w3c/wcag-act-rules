@@ -165,14 +165,14 @@ This `separator` is not a `widget` because it is not [focusable][]. The `separat
 
 #### Passed Example 6
 
-<a class="example-link" title="Passed Example 6" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/352ec575eab8846938e2dced0802d0c2f5611344.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 6" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/986038d85467255cef4ed7d72c231442427ece23.html">Open in a new tab</a>
 
 This `combobox` has the required properties `aria-controls` and `aria-expanded`.
 
 ```html
-<label for="tag_combo">Tag</label>
-<input type="text" id="tag_combo" role="combobox" aria-expanded="true" aria-controls="popup_listbox" />
-<ul role="listbox" id="popup_listbox">
+<label for="tag_combo" id="tag_label">Tag</label>
+<input type="text" id="tag_combo" role="combobox" aria-expanded="true" aria-controls="popup_listbox"/>
+<ul role="listbox" id="popup_listbox" aria-labelledby="tag_label">
 	<li role="option">Zebra</li>
 	<li role="option" id="selected_option">Zoom</li>
 </ul>
