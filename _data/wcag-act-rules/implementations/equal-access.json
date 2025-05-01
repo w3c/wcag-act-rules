@@ -2,7 +2,7 @@
   "vendor": "IBM Accessibility",
   "name": "Equal Access Accessibility Checker",
   "version": "3.1.42-rc.0",
-  "lastModified": "27 February 2025",
+  "lastModified": "25 April 2025",
   "approvedRules": {
     "complete": 19,
     "partial": 5,
@@ -10,8 +10,8 @@
     "untested": 5
   },
   "proposedRules": {
-    "complete": 4,
-    "partial": 1,
+    "complete": 5,
+    "partial": 0,
     "inconsistent": 2,
     "untested": 46
   },
@@ -652,6 +652,21 @@
               "procedureName": "aria_attribute_allowed:Pass_0,Fail_1",
               "outcomes": [
                 "inapplicable"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "287a72860814f903d561dc3e7765f507ca041624",
+          "testCaseName": "Passed Example 2",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/287a72860814f903d561dc3e7765f507ca041624.html",
+          "testCaseApproved": false,
+          "expected": "passed",
+          "procedureResults": [
+            {
+              "procedureName": "aria_attribute_allowed:Pass_0,Fail_1",
+              "outcomes": [
+                "untested"
               ]
             }
           ]
@@ -5703,16 +5718,16 @@
           ]
         },
         {
-          "testcaseId": "17e68991f57cd20cd5c9fcf564d5a23ebb08c0f0",
+          "testcaseId": "add6f67d15c10ce6195ff5488ae7f5dab8bc3632",
           "testCaseName": "Inapplicable Example 6",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/17e68991f57cd20cd5c9fcf564d5a23ebb08c0f0.html",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/add6f67d15c10ce6195ff5488ae7f5dab8bc3632.html",
           "testCaseApproved": false,
           "expected": "inapplicable",
           "procedureResults": [
             {
               "procedureName": "table_headers_ref_valid:Pass_0,Fail_1,Fail_2,Fail_3,Fail_4",
               "outcomes": [
-                "inapplicable"
+                "untested"
               ]
             }
           ]
@@ -8826,9 +8841,9 @@
           ]
         },
         {
-          "testcaseId": "a7aac71114d641a7bbeb7c959779d34321a57213",
+          "testcaseId": "2d40412f73292f3e93ce605ad5329f3ffed78ed3",
           "testCaseName": "Inapplicable Example 1",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/a7aac71114d641a7bbeb7c959779d34321a57213.html",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/2d40412f73292f3e93ce605ad5329f3ffed78ed3.html",
           "testCaseApproved": false,
           "expected": "inapplicable",
           "procedureResults": [
@@ -9540,7 +9555,7 @@
       "procedureNames": [
         "aria_attribute_required:pass,fail_missing"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
@@ -9552,7 +9567,7 @@
         "covered": 14,
         "untested": 0,
         "cantTell": 0,
-        "testCaseTotal": 15
+        "testCaseTotal": 14
       },
       "testCaseResults": [
         {
@@ -9716,21 +9731,6 @@
               "procedureName": "aria_attribute_required:pass,fail_missing",
               "outcomes": [
                 "failed"
-              ]
-            }
-          ]
-        },
-        {
-          "testcaseId": "30c746dee25dde33aef4bb61d5b054e2821e4564",
-          "testCaseName": "Failed Example 6",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/30c746dee25dde33aef4bb61d5b054e2821e4564.html",
-          "testCaseApproved": false,
-          "expected": "failed",
-          "procedureResults": [
-            {
-              "procedureName": "aria_attribute_required:pass,fail_missing",
-              "outcomes": [
-                "inapplicable"
               ]
             }
           ]

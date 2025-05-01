@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 5f99a7</p>
-  <p><strong>Date:</strong> Updated 2 December 2024</p>
+  <p><strong>Date:</strong> Updated 22 April 2025</p>
   <p><strong>Authors:</strong> <a href="https://github.com/jkodu">Jey Nandakumar</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -20,7 +20,7 @@ rule_meta:
   original_file: aria-attr-defined-5f99a7.md
   description: |
     This rule checks that each `aria-` attribute specified is defined in ARIA 1.2.
-  last_modified: 2 December 2024
+  last_modified: 22 April 2025
 ---
 
 ## Applicability
@@ -87,12 +87,12 @@ This `article` element has an `aria-atomic` attribute which is defined in [WAI-A
 
 #### Passed Example 2
 
-<a class="example-link" title="Passed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/31ac49fcb186ee2a233355494fc5e774212ca3d7.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/287a72860814f903d561dc3e7765f507ca041624.html">Open in a new tab</a>
 
 This `div` element with a role of `dialog` has an `aria-modal` attribute which is defined in [WAI-ARIA Specifications][].
 
 ```html
-<div role="dialog" aria-modal="true">Contains modal content...</div>
+<div role="dialog" aria-modal="true" aria-label="Modal title">Contains modal content...</div>
 ```
 
 #### Passed Example 3

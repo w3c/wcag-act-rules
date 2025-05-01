@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 5c01ea</p>
-  <p><strong>Date:</strong> Updated 7 February 2025</p>
+  <p><strong>Date:</strong> Updated 1 May 2025</p>
   <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/Jym77">Jean-Yves Moyen</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
   
@@ -22,7 +22,7 @@ rule_meta:
   original_file: aria-state-or-property-permitted-5c01ea.md
   description: |
     This rule checks that WAI-ARIA states or properties are allowed for the element they are specified on.
-  last_modified: 7 February 2025
+  last_modified: 1 May 2025
 ---
 
 ## Applicability
@@ -174,32 +174,32 @@ The `aria-checked` [state][] is [required][] for the [semantic][semantic role] `
 
 #### Passed Example 6
 
-<a class="example-link" title="Passed Example 6" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/edd0f2ba6aa31bc4dac2f057090eec3334e62c6d.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 6" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/d5503ef9eb5b1a3144451f5c3a680548343c9981.html">Open in a new tab</a>
 
 The `aria-controls` [property][] is [required][] for the [semantic][semantic role] `combobox`.
 
 ```html
-<div role="combobox" aria-controls="id1" aria-expanded="false">My combobox</div>
+<div role="combobox" aria-controls="id1" aria-expanded="false" aria-label="My combobox">My combobox</div>
 ```
 
 #### Passed Example 7
 
-<a class="example-link" title="Passed Example 7" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/e81a1a6206e030af2cba2ebf4b3a7c86e1225b5b.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 7" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/34f5126e4a87269f583d2c2963ed31b4e852f041.html">Open in a new tab</a>
 
 The `aria-controls` [property][] is [required][] for the [semantic][semantic role] `combobox`. [WAI-ARIA states and properties][wai-aria state or property] with empty value are still applicable to this rule.
 
 ```html
-<div role="combobox" aria-expanded="false" aria-controls>My combobox</div>
+<div role="combobox" aria-expanded="false" aria-controls aria-label="My combobox">My combobox</div>
 ```
 
 #### Passed Example 8
 
-<a class="example-link" title="Passed Example 8" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/2b5e0b61e7317a251c5d0d74ac0d0cad202adacc.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 8" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/5d1719662b77567eec3b9c37510f76a38f769deb.html">Open in a new tab</a>
 
 The `aria-controls` [property][] is [required][] for the [semantic][semantic role] `combobox`. [WAI-ARIA states and properties][wai-aria state or property] with empty value (specified as an empty string) are still applicable to this rule.
 
 ```html
-<div role="combobox" aria-expanded="false" aria-controls="">My combobox</div>
+<div role="combobox" aria-expanded="false" aria-controls="" aria-label="My combobox">My combobox</div>
 ```
 
 #### Passed Example 9
@@ -307,12 +307,12 @@ The `aria-label` property is [prohibited][] for an element with a `paragraph` ro
 
 #### Inapplicable Example 1
 
-<a class="example-link" title="Inapplicable Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/a7aac71114d641a7bbeb7c959779d34321a57213.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/2d40412f73292f3e93ce605ad5329f3ffed78ed3.html">Open in a new tab</a>
 
 This `div` element has no [WAI-ARIA state or property][].
 
 ```html
-<div role="region">A region of content</div>
+<div role="group">A group of content</div>
 ```
 
 #### Inapplicable Example 2
