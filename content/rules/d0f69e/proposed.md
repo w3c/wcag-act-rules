@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> d0f69e</p>
-  <p><strong>Date:</strong> Updated 2 December 2024</p>
+  <p><strong>Date:</strong> Updated 1 May 2025</p>
   <p><strong>Authors:</strong> <a href="https://github.com/audreymaniez">Audrey Maniez</a>, Helen Burge, <a href="https://github.com/jkodu">Jey Nandakumar</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -20,7 +20,7 @@ rule_meta:
   original_file: table-header-cell-has-assigned-cells-d0f69e.md
   description: |
     This rule checks that each table header has assigned cells in a table element.
-  last_modified: 2 December 2024
+  last_modified: 1 May 2025
   scs_tested:
     - handle: Info and Relationships
       num: 1.3.1
@@ -107,12 +107,12 @@ This `th` element has an assigned `td` element.
 
 #### Passed Example 2
 
-<a class="example-link" title="Passed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/d0f69e/b04d95d8e4e0fb2ade127363a6906792698cdea7.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/d0f69e/be8acb4fa0dd3057dd28f7cc43e64a95eff15ac6.html">Open in a new tab</a>
 
 Each of the 2 `span` elements with role of `columnheader` has assigned `span` elements with a role of `cell`.
 
 ```html
-<div role="table">
+<div role="table" aria-label="Temperatures">
 	<div role="rowgroup">
 		<div role="row">
 			<span role="columnheader">Month</span>
@@ -156,12 +156,12 @@ Each of the 2 `th` elements has an assigned `td` element because this `td` eleme
 
 #### Passed Example 4
 
-<a class="example-link" title="Passed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/d0f69e/7240c687f37a56254b1847ae6d75e5d4090bd8a5.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/d0f69e/4dba1a02d3852eecca6f2f50e1812bce802a42de.html">Open in a new tab</a>
 
 Each of the 4 `th` elements has an assigned `td` element, within the same `table` element having a [semantic role][] of `grid`.
 
 ```html
-<table role="grid">
+<table role="grid" aria-label="Meal times">
 	<thead>
 		<tr>
 			<td></td>

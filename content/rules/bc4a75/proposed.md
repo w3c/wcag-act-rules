@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> bc4a75</p>
-  <p><strong>Date:</strong> Updated 2 December 2024</p>
+  <p><strong>Date:</strong> Updated 1 May 2025</p>
   <p><strong>Authors:</strong> <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Previous Authors: <a href="https://github.com/audreymaniez">Audrey Maniez</a>, <a href="https://github.com/jkodu">Jey Nandakumar</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -19,8 +19,8 @@ rule_meta:
   rule_type: atomic
   original_file: aria-required-owned-element-bc4a75.md
   description: |
-    This rule checks that an element with an explicit semantic role has at least one of its required owned elements.
-  last_modified: 2 December 2024
+    This rule checks that an element with an explicit role that restricts which elements it can own only owns such elements.
+  last_modified: 1 May 2025
   scs_tested:
     - handle: Info and Relationships
       num: 1.3.1
@@ -106,12 +106,12 @@ This element with the `list` role only owns elements with the `listitem` role. T
 
 #### Passed Example 2
 
-<a class="example-link" title="Passed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/854ec3db8780fe5be957fc1c29f279a3e5fc7969.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/e83381f51c9fa832439c3a98e9d23c307db365a5.html">Open in a new tab</a>
 
 This element with the `grid` role only owns elements with the `row` role, and the element with the `row` role only owns elements with the `gridcell` role. The `row` role is one of the [required owned elements][] for `grid`, and `gridcell` is one of the [required owned elements][] for `row`.
 
 ```html
-<table role="grid">
+<table role="grid" aria-label="grid name">
 	<tr role="row">
 		<td role="gridcell">Item 1</td>
 	</tr>
@@ -304,12 +304,12 @@ This `ul` element does not have an [explicit semantic role][].
 
 #### Inapplicable Example 3
 
-<a class="example-link" title="Inapplicable Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/a700af25effa2ba2bfad2429705e634fcd0142d6.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/a05da944dee221701e4190cdff8318c015932ff2.html">Open in a new tab</a>
 
 This element with the `progressbar` role does not need [required owned elements][].
 
 ```html
-<div role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">20 %</div>
+<div role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" aria-label="Completion">20 %</div>
 ```
 
 #### Inapplicable Example 4

@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> akn7bn</p>
-  <p><strong>Date:</strong> Updated 2 December 2024</p>
+  <p><strong>Date:</strong> Updated 1 May 2025</p>
   <p><strong>Authors:</strong> <a href="https://www.linkedin.com/in/brianbors/">Brian Bors</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -19,12 +19,15 @@ rule_meta:
   rule_type: atomic
   original_file: iframe-with-interactive-content-in-tab-order-akn7bn.md
   description: |
-    This rule checks that `iframe` elements which contain an interactive (tabbable) element are not excluded from sequential focus navigation.
-  last_modified: 2 December 2024
+    This rule checks that `iframe` elements which contain keyboard focusable elements are not excluded from sequential focus navigation.
+  last_modified: 1 May 2025
   scs_tested:
     - handle: Keyboard
       num: 2.1.1
       level: A
+    - handle: Keyboard (No Exception)
+      num: 2.1.3
+      level: AAA
 ---
 
 ## Applicability
@@ -67,6 +70,18 @@ There are no accessibility support issues known.
     <ul>
       <li><a href="https://www.w3.org/TR/WCAG22/#keyboard">Learn more about 2.1.1 Keyboard</a></li>
       <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level A and higher.</li>
+      <li>Outcome mapping: <ul>
+        <li>Any <code>failed</code> outcomes: success criterion is not satisfied</li>
+        <li>All <code>passed</code> outcomes: success criterion needs further testing</li>
+        <li>An <code>inapplicable</code> outcome: success criterion needs further testing</li>
+      </ul></li>
+    </ul>
+  </details></li>
+  <li><details>
+    <summary><span>2.1.3 Keyboard (No Exception) (Level AAA)</span></summary>
+    <ul>
+      <li><a href="https://www.w3.org/TR/WCAG22/#keyboard-no-exception">Learn more about 2.1.3 Keyboard (No Exception)</a></li>
+      <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level AAA.</li>
       <li>Outcome mapping: <ul>
         <li>Any <code>failed</code> outcomes: success criterion is not satisfied</li>
         <li>All <code>passed</code> outcomes: success criterion needs further testing</li>
