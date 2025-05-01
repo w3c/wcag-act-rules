@@ -53,16 +53,6 @@ table.act-implementations ul {
   color: #333;
 }
 
-.act-pill.secondary {
-  background-color: var(--line-grey);
-  color: #333;
-}
-
-.act-pill.composite {
-  background-color: #8278da;
-  color: #fff;
-}
-
 .act-pill.automated {
   background-color: #28a745;
   color: #fff;
@@ -183,8 +173,8 @@ ul.act-requirements-list {
 
 .checkbox-group {
   display: flex;
-  flex-wrap: wrap;
-  gap: 1em;
+  flex-direction: column;
+  gap: 0.5em;
 }
 
 .checkbox-option {
@@ -207,9 +197,26 @@ input[type="checkbox"]:focus + label {
   .filter-options {
     flex-direction: column;
   }
-  
-  .checkbox-group {
-    flex-direction: column;
-    gap: 0.5em;
-  }
+}
+
+/* Style for nested atomic rules list */
+.atomic-rules-list {
+  padding-top: 0.5em;
+  /* Optional: Add some left padding for indentation */
+  /* padding-left: 1.5em; */ 
+}
+
+/* Filter Status Bar Styling */
+#filter-status {
+  margin: 1.5em 0; /* Add some space around the bar */
+  padding: 0.75em 1.25em;
+  background-color: #e9ecef; /* Light grey background */
+  border: 1px solid #ced4da; /* Subtle border */
+  border-radius: 4px;
+  font-size: 0.9em;
+  text-align: center; /* Center the text */
+}
+
+#filter-status span {
+  font-weight: bold; /* Make counts stand out */
 }

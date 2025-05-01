@@ -98,6 +98,8 @@ This page contains all success criteria from the Web Content Accessibility Guide
 
 {% if related_rules.size > 0 %}
 <p>Related ACT Rules:</p>
+{% comment %} Add placeholder for filtered message {% endcomment %}
+<p class="filtered-rules-message" hidden><em>All related ACT Rules are currently hidden by filters.</em></p>
 <ul>
   {% for rule in related_rules %}
   {% assign rule_id = rule.frontmatter.id %}
@@ -106,12 +108,6 @@ This page contains all success criteria from the Web Content Accessibility Guide
   {% assign is_composite = false %}
   {% if rule.frontmatter.rule_type == "composite" %}
     {% assign is_composite = true %}
-  {% endif %}
-  
-  {% comment %}Determine if this is a secondary criterion for the rule{% endcomment %}
-  {% assign is_secondary = false %}
-  {% if rule.frontmatter.accessibility_requirements[current_sc_key].secondary or rule.frontmatter.accessibility_requirements[current_sc_key21].secondary %}
-    {% assign is_secondary = true %}
   {% endif %}
   
   {% comment %}Determine if this rule has been automated{% endcomment %}
@@ -123,9 +119,34 @@ This page contains all success criteria from the Web Content Accessibility Guide
   <li>
     <a href="/standards-guidelines/act/rules/{{ rule_id }}/proposed/">{{ rule.title }}</a>
     {% if rule.proposed == true %} <span class="act-pill proposed">proposed</span>{% endif %}
-    {% if is_secondary %} <span class="act-pill secondary">secondary</span>{% endif %}
-    {% if is_composite %} <span class="act-pill composite">composite</span>{% endif %}
+    
     {% if is_automated %} <span class="act-pill automated">automated</span>{% endif %}
+
+    {% comment %} Display atomic rules if this is a composite rule {% endcomment %}
+    {% if is_composite %}
+      {% assign atomic_rule_ids = rule.frontmatter.input_rules %}
+      {% if atomic_rule_ids and atomic_rule_ids.size > 0 %}
+        <ul class="atomic-rules-list">
+          {% for atomic_id in atomic_rule_ids %}
+            {% assign atomic_rule = site.data.wcag-act-rules.rules["act-rules"] | where: "frontmatter.id", atomic_id | first %}
+            {% if atomic_rule %}
+              <li>
+                <a href="/standards-guidelines/act/rules/{{ atomic_id }}/proposed/">{{ atomic_rule.title }}</a>
+                
+                {% assign is_atomic_proposed = atomic_rule.proposed %}
+                {% assign is_atomic_automated = false %}
+                {% if automated_rule_ids contains atomic_id %}
+                  {% assign is_atomic_automated = true %}
+                {% endif %}
+                
+                {% if is_atomic_proposed == true %} <span class="act-pill proposed">proposed</span>{% endif %}
+                {% if is_atomic_automated %} <span class="act-pill automated">automated</span>{% endif %}
+              </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      {% endif %}
+    {% endif %}
   </li>
   {% endfor %}
 </ul>
@@ -137,5 +158,44 @@ This page contains all success criteria from the Web Content Accessibility Guide
 {% endfor %}
 {% endfor %}
 {% endfor %}
+
+<h2>WAI-ARIA Related Rules</h2>
+
+{% assign found_aria_rule = false %}
+<ul class="aria-rules-list-container">
+  {% for rule in site.data.wcag-act-rules.rules["act-rules"] %}
+    {% assign is_aria_related = false %}
+    {% if rule.frontmatter.accessibility_requirements and rule.frontmatter.accessibility_requirements != empty %}
+      {% for req in rule.frontmatter.accessibility_requirements %}
+        {% assign req_key = req[0] %}
+        {% assign prefix = req_key | slice: 0, 7 %}
+        {% if prefix == "aria12:" %}
+          {% assign is_aria_related = true %}
+          {% break %}
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+
+    {% if is_aria_related and rule.deprecated != true %}
+      {% assign found_aria_rule = true %}
+      {% assign rule_id = rule.frontmatter.id %}
+      <li>
+        <a href="/standards-guidelines/act/rules/{{ rule_id }}/proposed/">{{ rule.title }}</a>
+        {% if rule.proposed == true %} <span class="act-pill proposed">proposed</span>{% endif %}
+        {% if automated_rule_ids contains rule_id %} <span class="act-pill automated">automated</span>{% endif %}
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>
+
+{% comment %} Message shown when no ARIA rules match the initial query {% endcomment %}
+<p class="no-aria-rules-message" {% if found_aria_rule %}hidden{% endif %}>
+  <em>No rules found with WAI-ARIA 1.2 accessibility requirements.</em>
+</p>
+
+{% comment %} Message shown when ARIA rules exist but are all filtered out {% endcomment %}
+<p class="filtered-aria-rules-message" hidden>
+  <em>All WAI-ARIA related rules are currently hidden by filters.</em>
+</p>
 
 <script src="/content-assets/wcag-act-rules/filter-scripts.js"></script>

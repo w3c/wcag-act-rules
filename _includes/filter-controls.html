@@ -2,6 +2,7 @@
   <fieldset>
     <legend>Filter this page</legend>
     <div class="filter-options">
+      
       <div class="filter-group">
         <span class="filter-group-label">Conformance Level:</span>
         <div class="checkbox-group">
@@ -27,16 +28,23 @@
             <input type="checkbox" id="show-proposed" name="status" value="proposed" checked>
             <label for="show-proposed">Proposed Rules</label>
           </div>
-          <div class="checkbox-option">
-            <input type="checkbox" id="show-secondary" name="status" value="secondary">
-            <label for="show-secondary">Secondary Rules</label>
-          </div>
+        </div>
+      </div>
+      
+      <div class="filter-group">
+        <span class="filter-group-label">Test Type:</span>
+        <div class="checkbox-group">
           <div class="checkbox-option">
             <input type="checkbox" id="show-automated" name="status" value="automated" checked>
             <label for="show-automated">Automated Rules</label>
           </div>
         </div>
       </div>
+
     </div>
   </fieldset>
+</div> 
+{% comment %} Status Bar {% endcomment %}
+<div id="filter-status" role="status" aria-live="polite">
+  Showing <span id="visible-rule-count">-</span> rules in <span id="criteria-with-rules-count">-</span> of <span id="total-selected-criteria-count">-</span> selected Success Criteria.
 </div> 

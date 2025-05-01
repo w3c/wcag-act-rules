@@ -4,12 +4,8 @@
  * Default: Level AAA criteria and secondary rules are hidden, proposed rules are shown
  */
 (function() {
-  console.log('WCAG filter script loaded and executing');
-
   // Wait for DOM to be fully loaded
   document.addEventListener('DOMContentLoaded', function() {
-    console.log('DOM loaded, initializing filter functionality');
-    
     // Get all filter checkboxes for conformance levels
     const levelACheckbox = document.getElementById('level-a');
     const levelAACheckbox = document.getElementById('level-aa');
@@ -17,14 +13,12 @@
 
     // Get rule status filter checkboxes
     const showProposedCheckbox = document.getElementById('show-proposed');
-    const showSecondaryCheckbox = document.getElementById('show-secondary');
     const showAutomatedCheckbox = document.getElementById('show-automated');
 
     // Check if we have any filter checkboxes
     if ((!levelACheckbox && !levelAACheckbox && !levelAAACheckbox) && 
-        (!showProposedCheckbox && !showSecondaryCheckbox)) {
-      console.warn('No filter checkboxes found on the page.');
-      return; // Exit early if no checkboxes are found
+        (!showProposedCheckbox && !showAutomatedCheckbox)) { 
+       return; // Exit early if no checkboxes are found
     }
     
     // Set default states
@@ -32,26 +26,17 @@
       levelAAACheckbox.checked = false; // AAA criteria hidden by default
     }
     
-    if (showSecondaryCheckbox) {
-      showSecondaryCheckbox.checked = false; // Secondary rules hidden by default
-    }
-    
-    // Log the found checkboxes
-    console.log('Found filter checkboxes:', {
-      'Level A': levelACheckbox ? 'Found' : 'Not found',
-      'Level AA': levelAACheckbox ? 'Found' : 'Not found',
-      'Level AAA': levelAAACheckbox ? 'Found' : 'Not found',
-      'Proposed Rules': showProposedCheckbox ? 'Found' : 'Not found',
-      'Secondary Rules': showSecondaryCheckbox ? 'Found' : 'Not found',
-      'Automated Rules': showAutomatedCheckbox ? 'Found' : 'Not found'
-    });
-
     // Get all success criteria elements
     const allCriteria = document.querySelectorAll('.sc-item');
-    console.log(`Found ${allCriteria.length} success criteria elements`);
+    
+    // Get status bar elements
+    const ruleCountSpan = document.getElementById('visible-rule-count');
+    const criteriaWithRulesCountSpan = document.getElementById('criteria-with-rules-count');
+    const totalSelectedCriteriaCountSpan = document.getElementById('total-selected-criteria-count');
     
     // Apply initial state
     updateVisibility();
+    updateStatusBar(); // Initial count update
     
     // Add event listeners to checkboxes
     if (levelACheckbox) {
@@ -65,9 +50,6 @@
     }
     if (showProposedCheckbox) {
       showProposedCheckbox.addEventListener('change', updateVisibility);
-    }
-    if (showSecondaryCheckbox) {
-      showSecondaryCheckbox.addEventListener('change', updateVisibility);
     }
     if (showAutomatedCheckbox) {
       showAutomatedCheckbox.addEventListener('change', updateVisibility);
@@ -90,30 +72,19 @@
      * Updates the visibility of criteria based on checkbox states
      */
     function updateVisibility() {
-      console.log('Updating visibility based on checkbox states');
-      
       // Get current checkbox states for conformance levels
       const showLevelA = levelACheckbox ? levelACheckbox.checked : true;
       const showLevelAA = levelAACheckbox ? levelAACheckbox.checked : true;
-      const showLevelAAA = levelAAACheckbox ? levelAAACheckbox.checked : false; // Default to false
+      const showLevelAAA = levelAAACheckbox ? levelAAACheckbox.checked : false;
       
       // Get current checkbox states for rule status
-      const showProposed = showProposedCheckbox ? showProposedCheckbox.checked : true; // Default to true
-      const showSecondary = showSecondaryCheckbox ? showSecondaryCheckbox.checked : false; // Default to false
-      const showAutomated = showAutomatedCheckbox ? showAutomatedCheckbox.checked : true; // Default to true
+      const showProposed = showProposedCheckbox ? showProposedCheckbox.checked : true; 
+      const showAutomated = showAutomatedCheckbox ? showAutomatedCheckbox.checked : true; 
       
-      console.log('Filter states:', {
-        'Level A': showLevelA ? 'Show' : 'Hide',
-        'Level AA': showLevelAA ? 'Show' : 'Hide',
-        'Level AAA': showLevelAAA ? 'Show' : 'Hide',
-        'Proposed Rules': showProposed ? 'Show' : 'Hide',
-        'Secondary Rules': showSecondary ? 'Show' : 'Hide',
-        'Automated Rules': showAutomated ? 'Show' : 'Hide'
-      });
-      
-      // First, filter criteria by conformance level
+      // Filter criteria (now just based on rules)
       let visibleCount = 0;
       allCriteria.forEach(function(criterion) {
+        // Show all criteria initially, filtering happens at the rule level
         // Check the class of the criterion
         let shouldShow = false;
         
@@ -132,37 +103,36 @@
           visibleCount++;
           
           // Now filter rules within this criterion
-          filterRules(criterion, showProposed, showSecondary, showAutomated);
+          filterRules(criterion, showProposed, showAutomated);
         }
       });
       
-      console.log(`${visibleCount} of ${allCriteria.length} criteria are now visible`);
-      
       // Update the visibility of empty guidelines
       updateGuidelinesVisibility();
+
+      // Update the status bar counts after visibility changes
+      updateStatusBar();
+
+      // ---- Filter WAI-ARIA Rules Section ----
+      filterAriaRules(showProposed, showAutomated);
     }
     
     /**
      * Filter rules within a criterion based on their status
      */
-    function filterRules(criterion, showProposed, showSecondary, showAutomated) {
-      // Get all rule items within this criterion
+    function filterRules(criterion, showProposed, showAutomated) {
       const ruleItems = criterion.querySelectorAll('li');
       let visibleRuleCount = 0;
-      
+      const totalRuleCount = ruleItems.length; 
+
       ruleItems.forEach(function(rule) {
         const isProposed = rule.querySelector('.act-pill.proposed') !== null;
-        const isSecondary = rule.querySelector('.act-pill.secondary') !== null;
         const isAutomated = rule.querySelector('.act-pill.automated') !== null;
         
         // Determine if the rule should be shown based on its status
         let shouldShow = true;
         
         if (isProposed && !showProposed) {
-          shouldShow = false;
-        }
-        
-        if (isSecondary && !showSecondary) {
           shouldShow = false;
         }
         
@@ -177,27 +147,35 @@
           visibleRuleCount++;
         }
       });
-      
+
       // Handle "No ACT Rules available" message and rule list
       const noRulesMessage = criterion.querySelector('p > em');
       const ruleList = criterion.querySelector('ul');
-      
-      if (ruleList) {
-        // If we have a rule list, show it if there are visible rules, hide otherwise
-        toggleVisibility(ruleList, visibleRuleCount > 0);
-        
-        // Handle the "Related ACT Rules:" paragraph
-        const relatedRulesPara = ruleList.previousElementSibling;
-        if (relatedRulesPara && relatedRulesPara.tagName === 'P') {
-          toggleVisibility(relatedRulesPara, visibleRuleCount > 0);
-        }
-        
-        // Handle "No ACT Rules available" message if it exists
-        if (noRulesMessage && noRulesMessage.parentElement) {
-          toggleVisibility(noRulesMessage.parentElement, visibleRuleCount === 0);
+      const filteredMessage = criterion.querySelector('.filtered-rules-message'); 
+      const relatedRulesPara = ruleList ? ruleList.previousElementSibling?.previousElementSibling : null; // Safer selection
+
+      if (ruleList && relatedRulesPara && filteredMessage) {
+        if (totalRuleCount > 0 && visibleRuleCount === 0) {
+          // Rules exist but are all filtered out
+          toggleVisibility(ruleList, false);
+          toggleVisibility(relatedRulesPara, false);
+          toggleVisibility(filteredMessage, true);
+        } else if (visibleRuleCount > 0) {
+          // Some rules are visible
+          toggleVisibility(ruleList, true);
+          toggleVisibility(relatedRulesPara, true);
+          toggleVisibility(filteredMessage, false);
+        } else {
+          // No rules exist for this criterion (totalRuleCount === 0)
+          toggleVisibility(ruleList, false);
+          toggleVisibility(relatedRulesPara, false);
+          toggleVisibility(filteredMessage, false);
+          if (noRulesMessage && noRulesMessage.parentElement) {
+            toggleVisibility(noRulesMessage.parentElement, true);
+          }
         }
       } else if (noRulesMessage && noRulesMessage.parentElement) {
-        // No rule list exists, make sure "No ACT Rules available" message is visible
+        // Original case: No rule list exists, ensure 'No rules' message is visible
         toggleVisibility(noRulesMessage.parentElement, true);
       }
     }
@@ -208,11 +186,16 @@
     function updateGuidelinesVisibility() {
       // Get all guidelines (h2 elements)
       const guidelines = document.querySelectorAll('h2');
-      console.log(`Checking visibility for ${guidelines.length} guidelines`);
       
       let visibleGuidelineCount = 0;
       
       guidelines.forEach(function(guideline) {
+        // Skip the special WAI-ARIA heading
+        if (guideline.textContent.includes('WAI-ARIA Related Rules')) {
+          toggleVisibility(guideline, true); // Ensure it's always visible
+          return; // Move to the next guideline
+        }
+
         // Get the next criteria until the next guideline
         let nextElement = guideline.nextElementSibling;
         let hasVisibleCriteria = false;
@@ -234,8 +217,136 @@
           visibleGuidelineCount++;
         }
       });
+    }
+
+    /**
+     * Extracts the rule ID from a rule link's href.
+     * Expected format: /standards-guidelines/act/rules/RULE_ID/proposed/
+     * @param {string} href - The href attribute of the rule link.
+     * @returns {string|null} The rule ID or null if not found.
+     */
+    function getRuleIdFromHref(href) {
+      if (!href) return null;
+      const parts = href.split('/');
+      // Example: ['', 'standards-guidelines', 'act', 'rules', 'RULE_ID', 'proposed', '']
+      if (parts.length > 4) {
+        return parts[4];
+      }
+      return null;
+    }
+
+    /**
+     * Updates the status bar with counts of visible criteria and unique rules.
+     */
+    function updateStatusBar() {
+      if (!ruleCountSpan || !criteriaWithRulesCountSpan || !totalSelectedCriteriaCountSpan) {
+        return;
+      }
+
+      let totalSelectedCriteriaCount = 0; // Reset Z calculation
+      let criteriaWithVisibleRulesCount = 0;
+      const visibleRuleIds = new Set();
+
+      allCriteria.forEach(function(criterion, index) {
+        const criterionId = criterion.querySelector('p strong')?.textContent || `Criterion ${index + 1}`;
+
+        // Determine if criterion matches selected level filters
+        let matchesLevelFilter = false;
+        if (criterion.classList.contains('level-a') && levelACheckbox && levelACheckbox.checked) matchesLevelFilter = true;
+        if (criterion.classList.contains('level-aa') && levelAACheckbox && levelAACheckbox.checked) matchesLevelFilter = true;
+        if (criterion.classList.contains('level-aaa') && levelAAACheckbox && levelAAACheckbox.checked) matchesLevelFilter = true;
+
+        if (matchesLevelFilter) {
+          totalSelectedCriteriaCount++; // Count if it matches the selected levels
+
+          const isCriterionVisible = !criterion.hasAttribute('hidden');
+
+          // Only count rules and criteria-with-rules if the criterion is ACTUALLY visible
+          if (isCriterionVisible) {
+            let hasVisibleRules = false;
+            let visibleRulesInCriterion = 0; // Debug count per criterion
+            const visibleRules = criterion.querySelectorAll('li:not([hidden]) a'); 
+            
+            visibleRules.forEach(function(link) {
+              hasVisibleRules = true; 
+              visibleRulesInCriterion++; // Debug
+              const ruleId = getRuleIdFromHref(link.getAttribute('href'));
+              if (ruleId) {
+                const added = !visibleRuleIds.has(ruleId);
+                visibleRuleIds.add(ruleId);
+              }
+            });
+            
+            if (hasVisibleRules) {
+              criteriaWithVisibleRulesCount++;
+            }
+          }
+        }
+      });
+
+      // Update the text content
+      ruleCountSpan.textContent = visibleRuleIds.size;
+      criteriaWithRulesCountSpan.textContent = criteriaWithVisibleRulesCount;
+      totalSelectedCriteriaCountSpan.textContent = totalSelectedCriteriaCount;
+    }
+
+    /**
+     * Filters the dedicated WAI-ARIA rules list based on status filters.
+     */
+    function filterAriaRules(showProposed, showAutomated) {
+      const ariaListContainer = document.querySelector('.aria-rules-list-container');
+      const noAriaRulesMessage = document.querySelector('.no-aria-rules-message');
+      const filteredAriaMessage = document.querySelector('.filtered-aria-rules-message');
       
-      console.log(`${visibleGuidelineCount} of ${guidelines.length} guidelines are now visible`);
+      if (!ariaListContainer) {
+        // If the list container isn't found, do nothing (it might not exist if found_aria_rule was false)
+        return; 
+      }
+
+      const ariaRuleItems = ariaListContainer.querySelectorAll('li');
+      let visibleAriaRuleCount = 0;
+      const totalAriaRuleCount = ariaRuleItems.length;
+
+      ariaRuleItems.forEach(function(rule) {
+         const isProposed = rule.querySelector('.act-pill.proposed') !== null;
+         const isAutomated = rule.querySelector('.act-pill.automated') !== null;
+         
+         let shouldShow = true;
+         if (isProposed && !showProposed) {
+            shouldShow = false;
+         }
+         if (isAutomated && !showAutomated) {
+            shouldShow = false;
+         }
+         
+         toggleVisibility(rule, shouldShow);
+         
+         if (shouldShow) {
+            visibleAriaRuleCount++;
+         }
+      });
+
+      // Handle visibility of the list and messages
+      const initiallyHadRules = !noAriaRulesMessage || noAriaRulesMessage.hasAttribute('hidden');
+      
+      if (initiallyHadRules) {
+        if (visibleAriaRuleCount > 0) {
+          // Show list, hide messages
+          toggleVisibility(ariaListContainer, true);
+          if (noAriaRulesMessage) toggleVisibility(noAriaRulesMessage, false);
+          if (filteredAriaMessage) toggleVisibility(filteredAriaMessage, false);
+        } else {
+          // Hide list, show filtered message
+          toggleVisibility(ariaListContainer, false);
+          if (noAriaRulesMessage) toggleVisibility(noAriaRulesMessage, false);
+          if (filteredAriaMessage) toggleVisibility(filteredAriaMessage, true);
+        }
+      } else {
+        // No rules initially, keep list hidden, ensure no-rules message is shown
+        toggleVisibility(ariaListContainer, false);
+        if (noAriaRulesMessage) toggleVisibility(noAriaRulesMessage, true);
+        if (filteredAriaMessage) toggleVisibility(filteredAriaMessage, false);
+      }
     }
   });
 })(); 
