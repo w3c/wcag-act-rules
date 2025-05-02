@@ -38,11 +38,6 @@
     // Get all success criteria elements
     const allCriteria = document.querySelectorAll('.sc-item');
     
-    // Get status bar elements
-    const ruleCountSpan = document.getElementById('visible-rule-count');
-    const criteriaWithRulesCountSpan = document.getElementById('criteria-with-rules-count');
-    const totalSelectedCriteriaCountSpan = document.getElementById('total-selected-criteria-count');
-    
     // Apply initial state
     updateVisibility();
     updateStatusBar(); // Initial count update
@@ -170,9 +165,6 @@
       // Update the visibility of empty guidelines
       updateGuidelinesVisibility();
 
-      // Update the status bar counts after visibility changes
-      updateStatusBar();
-
       // ---- Filter WAI-ARIA Rules Section ----
       const ariaSectionHasVisibleRules = filterAriaRules(
         showProposed, showApproved, showDeprecated, 
@@ -200,6 +192,9 @@
               toggleVisibility(ariaListContainer, false);
           }
       }
+
+       // Update the status bar counts *after* all filtering
+       updateStatusBar(); 
     }
     
     /**
@@ -333,9 +328,10 @@
       const wcagRuleCountSpan = document.getElementById('wcag-rule-count');
       const criteriaWithRulesCountSpan = document.getElementById('criteria-with-rules-count');
       const totalSelectedCriteriaCountSpan = document.getElementById('total-selected-criteria-count');
-      const ariaRuleCountSpan = document.getElementById('aria-rule-count');
+      const ariaRuleCountSpan = document.getElementById('aria-rule-count'); 
+      const ariaStatusPartSpan = document.getElementById('aria-status-part');
 
-      if (!wcagRuleCountSpan || !criteriaWithRulesCountSpan || !totalSelectedCriteriaCountSpan || !ariaRuleCountSpan) {
+      if (!wcagRuleCountSpan || !criteriaWithRulesCountSpan || !totalSelectedCriteriaCountSpan || !ariaRuleCountSpan || !ariaStatusPartSpan) {
         return;
       }
 
@@ -395,6 +391,11 @@
       criteriaWithRulesCountSpan.textContent = criteriaWithVisibleRulesCount;
       totalSelectedCriteriaCountSpan.textContent = totalSelectedCriteriaCount;
       ariaRuleCountSpan.textContent = visibleAriaRuleIds.size;
+
+      // Show/hide the ARIA part of the status text
+      const showAriaCheckbox = document.getElementById('show-aria'); // Get checkbox inside this function
+      const showAria = showAriaCheckbox ? showAriaCheckbox.checked : true; // Determine state inside this function
+      toggleVisibility(ariaStatusPartSpan, showAria);
     }
 
     /**

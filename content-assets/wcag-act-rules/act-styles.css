@@ -217,6 +217,10 @@ input[type="checkbox"]:focus + label {
   text-align: center; /* Center the text */
 }
 
-#filter-status span {
-  font-weight: bold; /* Make counts stand out */
+/* Bold only the count numbers in the status bar */
+#filter-status #wcag-rule-count,
+#filter-status #criteria-with-rules-count,
+#filter-status #total-selected-criteria-count,
+#filter-status #aria-rule-count {
+  font-weight: bold; 
 }
