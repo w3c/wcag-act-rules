@@ -4,19 +4,23 @@
     <div class="filter-options">
       
       <div class="filter-group">
-        <span class="filter-group-label">Conformance Level:</span>
+        <span class="filter-group-label">Accessibility requirements:</span>
         <div class="checkbox-group">
           <div class="checkbox-option">
             <input type="checkbox" id="level-a" name="level" value="A" checked>
-            <label for="level-a">Level A</label>
+            <label for="level-a">WCAG 2 Level A</label>
           </div>
           <div class="checkbox-option">
             <input type="checkbox" id="level-aa" name="level" value="AA" checked>
-            <label for="level-aa">Level AA</label>
+            <label for="level-aa">WCAG 2 Level AA</label>
           </div>
           <div class="checkbox-option">
             <input type="checkbox" id="level-aaa" name="level" value="AAA">
-            <label for="level-aaa">Level AAA</label>
+            <label for="level-aaa">WCAG 2 Level AAA</label>
+          </div>
+          <div class="checkbox-option">
+            <input type="checkbox" id="show-aria" name="level" value="aria" checked>
+            <label for="show-aria">WAI-ARIA</label>
           </div>
         </div>
       </div>
@@ -25,8 +29,16 @@
         <span class="filter-group-label">Rule Status:</span>
         <div class="checkbox-group">
           <div class="checkbox-option">
+            <input type="checkbox" id="show-approved" name="status" value="approved" checked>
+            <label for="show-approved">Approved Rules</label>
+          </div>
+          <div class="checkbox-option">
             <input type="checkbox" id="show-proposed" name="status" value="proposed" checked>
             <label for="show-proposed">Proposed Rules</label>
+          </div>
+          <div class="checkbox-option">
+            <input type="checkbox" id="show-deprecated" name="status" value="deprecated">
+            <label for="show-deprecated">Deprecated Rules</label>
           </div>
         </div>
       </div>
@@ -35,8 +47,34 @@
         <span class="filter-group-label">Test Type:</span>
         <div class="checkbox-group">
           <div class="checkbox-option">
-            <input type="checkbox" id="show-automated" name="status" value="automated" checked>
-            <label for="show-automated">Automated Rules</label>
+            <input type="checkbox" id="show-automated" name="test-type" value="automated" checked>
+            <label for="show-automated">Automated</label>
+          </div>
+          <div class="checkbox-option">
+            <input type="checkbox" id="show-semiauto" name="test-type" value="semiauto" checked>
+            <label for="show-semiauto">Semi-Automatic</label>
+          </div>
+          <div class="checkbox-option">
+            <input type="checkbox" id="show-manual" name="test-type" value="manual" checked>
+            <label for="show-manual">Manual</label>
+          </div>
+          <div class="checkbox-option">
+            <input type="checkbox" id="show-linter" name="test-type" value="linter" checked>
+            <label for="show-linter">Linter</label>
+          </div>
+          <div class="checkbox-option">
+            <input type="checkbox" id="show-unimplemented" name="test-type" value="unimplemented" checked>
+            <label for="show-unimplemented">Unimplemented</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="filter-group">
+        <span class="filter-group-label">Display Options:</span>
+        <div class="checkbox-group">
+          <div class="checkbox-option">
+            <input type="checkbox" id="show-empty-sc" name="display" value="empty-sc" checked>
+            <label for="show-empty-sc">Show empty requirements</label>
           </div>
         </div>
       </div>
@@ -46,5 +84,6 @@
 </div> 
 {% comment %} Status Bar {% endcomment %}
 <div id="filter-status" role="status" aria-live="polite">
-  Showing <span id="visible-rule-count">-</span> rules in <span id="criteria-with-rules-count">-</span> of <span id="total-selected-criteria-count">-</span> selected Success Criteria.
+  Showing <span id="wcag-rule-count">-</span> WCAG rules in <span id="criteria-with-rules-count">-</span> of <span id="total-selected-criteria-count">-</span> selected Success Criteria. 
+  Additionally showing <span id="aria-rule-count">-</span> WAI-ARIA rules.
 </div> 

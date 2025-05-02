@@ -11,27 +11,47 @@ footer: |
   <p>WCAG 2.2 Success Criteria as defined by the Web Content Accessibility Guidelines (WCAG) 2.2, a W3C Recommendation.</p>
 ---
 
-{% comment %}Build a list of automated rule IDs{% endcomment %}
+{% comment %}Build lists of rule IDs by test type{% endcomment %}
 {% assign automated_rule_ids = "" | split: "," %}
+{% assign manual_rule_ids = "" | split: "," %}
+{% assign semiauto_rule_ids = "" | split: "," %}
+{% assign linter_rule_ids = "" | split: "," %}
+{% assign all_implemented_ids = "" | split: "," %}
 
-{% comment %}Look through implementations for automated tools{% endcomment %}
+{% comment %}Look through implementations for tools and their types{% endcomment %}
 {% for implementation in site.data.wcag-act-rules.act-implementations %}
-  {% if implementation.type contains "Automated" or implementation.type contains "Linter" %}
-    {% assign impl_key = implementation.uniqueKey %}
-    {% assign impl_mapping_file = site.data.wcag-act-rules.implementations[impl_key] %}
-    
-    {% if impl_mapping_file.actRuleMapping %}
-      {% for rule_mapping in impl_mapping_file.actRuleMapping %}
-        {% if rule_mapping.ruleId and rule_mapping.consistency == "complete" %}
-          {% assign automated_rule_ids = automated_rule_ids | push: rule_mapping.ruleId %}
+  {% assign impl_key = implementation.uniqueKey %}
+  {% assign impl_mapping_file = site.data.wcag-act-rules.implementations[impl_key] %}
+  
+  {% if impl_mapping_file.actRuleMapping %}
+    {% for rule_mapping in impl_mapping_file.actRuleMapping %}
+      {% if rule_mapping.ruleId and rule_mapping.consistency == "complete" %}
+        {% assign current_rule_id = rule_mapping.ruleId %}
+        {% assign all_implemented_ids = all_implemented_ids | push: current_rule_id %}
+        
+        {% if implementation.type == "Automated tool" %}
+          {% assign automated_rule_ids = automated_rule_ids | push: current_rule_id %}
         {% endif %}
-      {% endfor %}
-    {% endif %}
+        {% if implementation.type == "Test methodology" %}
+          {% assign manual_rule_ids = manual_rule_ids | push: current_rule_id %}
+        {% endif %}
+        {% if implementation.type == "Semi-automated tool" %}
+          {% assign semiauto_rule_ids = semiauto_rule_ids | push: current_rule_id %}
+        {% endif %}
+        {% if implementation.type == "Linter" %}
+          {% assign linter_rule_ids = linter_rule_ids | push: current_rule_id %}
+        {% endif %}
+      {% endif %}
+    {% endfor %}
   {% endif %}
 {% endfor %}
 
 {% comment %}Remove duplicates from the rule IDs{% endcomment %}
 {% assign automated_rule_ids = automated_rule_ids | uniq %}
+{% assign manual_rule_ids = manual_rule_ids | uniq %}
+{% assign semiauto_rule_ids = semiauto_rule_ids | uniq %}
+{% assign linter_rule_ids = linter_rule_ids | uniq %}
+{% assign all_implemented_ids = all_implemented_ids | uniq %}
 
 {::nomarkdown}
 {% include box.html type="start" title="Summary" class="" %}
@@ -86,8 +106,8 @@ This page contains all success criteria from the Web Content Accessibility Guide
         {% endfor %}
       {% endif %}
       
-      {% comment %}Add matched rule that isn't deprecated{% endcomment %}
-      {% if matches and rule.deprecated != true %}
+      {% comment %}Add matched rule{% endcomment %}
+      {% if matches %}
         {% assign related_rules = related_rules | push: rule %}
       {% endif %}
     {% endfor %}
@@ -104,6 +124,15 @@ This page contains all success criteria from the Web Content Accessibility Guide
   {% for rule in related_rules %}
   {% assign rule_id = rule.frontmatter.id %}
   
+  {% comment %}Determine rule types{% endcomment %}
+  {% assign test_types = "" | split: "," %}
+  {% if automated_rule_ids contains rule_id %}{% assign test_types = test_types | push: "automated" %}{% endif %}
+  {% if manual_rule_ids contains rule_id %}{% assign test_types = test_types | push: "manual" %}{% endif %}
+  {% if semiauto_rule_ids contains rule_id %}{% assign test_types = test_types | push: "semiauto" %}{% endif %}
+  {% if linter_rule_ids contains rule_id %}{% assign test_types = test_types | push: "linter" %}{% endif %}
+  {% unless all_implemented_ids contains rule_id %}{% assign test_types = test_types | push: "unimplemented" %}{% endunless %}
+  {% assign test_types_str = test_types | join: " " %}
+
   {% comment %}Determine if rule is a composite rule{% endcomment %}
   {% assign is_composite = false %}
   {% if rule.frontmatter.rule_type == "composite" %}
@@ -116,11 +145,10 @@ This page contains all success criteria from the Web Content Accessibility Guide
     {% assign is_automated = true %}
   {% endif %}
   
-  <li>
+  <li data-test-types="{{ test_types_str }}">
     <a href="/standards-guidelines/act/rules/{{ rule_id }}/proposed/">{{ rule.title }}</a>
-    {% if rule.proposed == true %} <span class="act-pill proposed">proposed</span>{% endif %}
-    
-    {% if is_automated %} <span class="act-pill automated">automated</span>{% endif %}
+    {% if rule.proposed == true and rule.deprecated != true %} <span class="act-pill proposed">proposed</span>{% endif %}
+    {% if rule.deprecated == true %} <span class="act-pill deprecated">deprecated</span>{% endif %}
 
     {% comment %} Display atomic rules if this is a composite rule {% endcomment %}
     {% if is_composite %}
@@ -130,17 +158,26 @@ This page contains all success criteria from the Web Content Accessibility Guide
           {% for atomic_id in atomic_rule_ids %}
             {% assign atomic_rule = site.data.wcag-act-rules.rules["act-rules"] | where: "frontmatter.id", atomic_id | first %}
             {% if atomic_rule %}
-              <li>
+              {% assign atomic_id = atomic_rule.frontmatter.id %}
+              {% comment %}Determine atomic rule types{% endcomment %}
+              {% assign atomic_test_types = "" | split: "," %}
+              {% if automated_rule_ids contains atomic_id %}{% assign atomic_test_types = atomic_test_types | push: "automated" %}{% endif %}
+              {% if manual_rule_ids contains atomic_id %}{% assign atomic_test_types = atomic_test_types | push: "manual" %}{% endif %}
+              {% if semiauto_rule_ids contains atomic_id %}{% assign atomic_test_types = atomic_test_types | push: "semiauto" %}{% endif %}
+              {% if linter_rule_ids contains atomic_id %}{% assign atomic_test_types = atomic_test_types | push: "linter" %}{% endif %}
+              {% unless all_implemented_ids contains atomic_id %}{% assign atomic_test_types = atomic_test_types | push: "unimplemented" %}{% endunless %}
+              {% assign atomic_test_types_str = atomic_test_types | join: " " %}
+
+              <li data-test-types="{{ atomic_test_types_str }}">
                 <a href="/standards-guidelines/act/rules/{{ atomic_id }}/proposed/">{{ atomic_rule.title }}</a>
                 
                 {% assign is_atomic_proposed = atomic_rule.proposed %}
                 {% assign is_atomic_automated = false %}
-                {% if automated_rule_ids contains atomic_id %}
-                  {% assign is_atomic_automated = true %}
-                {% endif %}
+                {% assign is_atomic_deprecated = atomic_rule.deprecated %}
                 
-                {% if is_atomic_proposed == true %} <span class="act-pill proposed">proposed</span>{% endif %}
+                {% if is_atomic_proposed == true and is_atomic_deprecated != true %} <span class="act-pill proposed">proposed</span>{% endif %}
                 {% if is_atomic_automated %} <span class="act-pill automated">automated</span>{% endif %}
+                {% if is_atomic_deprecated == true %} <span class="act-pill deprecated">deprecated</span>{% endif %}
               </li>
             {% endif %}
           {% endfor %}
@@ -176,13 +213,14 @@ This page contains all success criteria from the Web Content Accessibility Guide
       {% endfor %}
     {% endif %}
 
-    {% if is_aria_related and rule.deprecated != true %}
+    {% if is_aria_related %}
       {% assign found_aria_rule = true %}
       {% assign rule_id = rule.frontmatter.id %}
       <li>
         <a href="/standards-guidelines/act/rules/{{ rule_id }}/proposed/">{{ rule.title }}</a>
-        {% if rule.proposed == true %} <span class="act-pill proposed">proposed</span>{% endif %}
+        {% if rule.proposed == true and rule.deprecated != true %} <span class="act-pill proposed">proposed</span>{% endif %}
         {% if automated_rule_ids contains rule_id %} <span class="act-pill automated">automated</span>{% endif %}
+        {% if rule.deprecated == true %} <span class="act-pill deprecated">deprecated</span>{% endif %}
       </li>
     {% endif %}
   {% endfor %}

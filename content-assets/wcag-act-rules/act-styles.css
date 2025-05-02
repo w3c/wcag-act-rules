@@ -53,8 +53,8 @@ table.act-implementations ul {
   color: #333;
 }
 
-.act-pill.automated {
-  background-color: #28a745;
+.act-pill.deprecated {
+  background-color: #6c757d;
   color: #fff;
 }
 

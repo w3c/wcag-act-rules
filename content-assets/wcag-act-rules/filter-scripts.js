@@ -10,14 +10,23 @@
     const levelACheckbox = document.getElementById('level-a');
     const levelAACheckbox = document.getElementById('level-aa');
     const levelAAACheckbox = document.getElementById('level-aaa');
+    const showAriaCheckbox = document.getElementById('show-aria');
 
     // Get rule status filter checkboxes
     const showProposedCheckbox = document.getElementById('show-proposed');
+    const showApprovedCheckbox = document.getElementById('show-approved');
+    const showDeprecatedCheckbox = document.getElementById('show-deprecated');
     const showAutomatedCheckbox = document.getElementById('show-automated');
+    const showSemiautoCheckbox = document.getElementById('show-semiauto');
+    const showManualCheckbox = document.getElementById('show-manual');
+    const showLinterCheckbox = document.getElementById('show-linter');
+    const showUnimplementedCheckbox = document.getElementById('show-unimplemented');
+    const showEmptyScCheckbox = document.getElementById('show-empty-sc');
 
     // Check if we have any filter checkboxes
-    if ((!levelACheckbox && !levelAACheckbox && !levelAAACheckbox) && 
-        (!showProposedCheckbox && !showAutomatedCheckbox)) { 
+    if ((!levelACheckbox && !levelAACheckbox && !levelAAACheckbox && !showAriaCheckbox) && 
+        (!showProposedCheckbox && !showApprovedCheckbox && !showDeprecatedCheckbox && !showAutomatedCheckbox && !showSemiautoCheckbox && !showManualCheckbox && !showLinterCheckbox && !showUnimplementedCheckbox) &&
+        !showEmptyScCheckbox) {
        return; // Exit early if no checkboxes are found
     }
     
@@ -51,8 +60,32 @@
     if (showProposedCheckbox) {
       showProposedCheckbox.addEventListener('change', updateVisibility);
     }
+    if (showApprovedCheckbox) {
+      showApprovedCheckbox.addEventListener('change', updateVisibility);
+    }
+    if (showDeprecatedCheckbox) {
+      showDeprecatedCheckbox.addEventListener('change', updateVisibility);
+    }
     if (showAutomatedCheckbox) {
       showAutomatedCheckbox.addEventListener('change', updateVisibility);
+    }
+    if (showSemiautoCheckbox) {
+      showSemiautoCheckbox.addEventListener('change', updateVisibility);
+    }
+    if (showManualCheckbox) {
+      showManualCheckbox.addEventListener('change', updateVisibility);
+    }
+    if (showLinterCheckbox) {
+      showLinterCheckbox.addEventListener('change', updateVisibility);
+    }
+    if (showUnimplementedCheckbox) {
+      showUnimplementedCheckbox.addEventListener('change', updateVisibility);
+    }
+    if (showEmptyScCheckbox) {
+      showEmptyScCheckbox.addEventListener('change', updateVisibility);
+    }
+    if (showAriaCheckbox) {
+      showAriaCheckbox.addEventListener('change', updateVisibility);
     }
     
     /**
@@ -76,34 +109,61 @@
       const showLevelA = levelACheckbox ? levelACheckbox.checked : true;
       const showLevelAA = levelAACheckbox ? levelAACheckbox.checked : true;
       const showLevelAAA = levelAAACheckbox ? levelAAACheckbox.checked : false;
+      const showAria = showAriaCheckbox ? showAriaCheckbox.checked : true;
       
       // Get current checkbox states for rule status
       const showProposed = showProposedCheckbox ? showProposedCheckbox.checked : true; 
+      const showApproved = showApprovedCheckbox ? showApprovedCheckbox.checked : true;
+      const showDeprecated = showDeprecatedCheckbox ? showDeprecatedCheckbox.checked : false;
       const showAutomated = showAutomatedCheckbox ? showAutomatedCheckbox.checked : true; 
+      const showSemiauto = showSemiautoCheckbox ? showSemiautoCheckbox.checked : true;
+      const showManual = showManualCheckbox ? showManualCheckbox.checked : true;
+      const showLinter = showLinterCheckbox ? showLinterCheckbox.checked : true;
+      const showUnimplemented = showUnimplementedCheckbox ? showUnimplementedCheckbox.checked : true;
+      const showEmptySc = showEmptyScCheckbox ? showEmptyScCheckbox.checked : true;
       
-      // Filter criteria (now just based on rules)
+      // Filter criteria
       let visibleCount = 0;
       allCriteria.forEach(function(criterion) {
-        // Show all criteria initially, filtering happens at the rule level
-        // Check the class of the criterion
-        let shouldShow = false;
-        
+        // 1. Check level filters
+        let showBasedOnLevel = false;
         if (criterion.classList.contains('level-a') && showLevelA) {
-          shouldShow = true;
+          showBasedOnLevel = true;
         } else if (criterion.classList.contains('level-aa') && showLevelAA) {
-          shouldShow = true;
+          showBasedOnLevel = true;
         } else if (criterion.classList.contains('level-aaa') && showLevelAAA) {
-          shouldShow = true;
+          showBasedOnLevel = true;
+        }
+
+        // 2. Filter rules within this criterion (if it passed level check)
+        let hasVisibleRules = false;
+        if (showBasedOnLevel) {
+            hasVisibleRules = filterRules(
+              criterion, 
+              showProposed, showApproved, showDeprecated, 
+              showAutomated, showSemiauto, showManual, showLinter, showUnimplemented
+            );
+        }
+
+        // 3. Determine final visibility based on level, rules, and the showEmptySc filter
+        let shouldShowCriterion = showBasedOnLevel;
+        if (!showEmptySc && !hasVisibleRules) {
+            // If the filter is off AND it has no visible rules, hide it
+            shouldShowCriterion = false;
         }
         
-        // Update visibility
-        toggleVisibility(criterion, shouldShow);
+        // Update visibility for the criterion itself
+        toggleVisibility(criterion, shouldShowCriterion);
         
-        if (shouldShow) {
+        if (shouldShowCriterion) {
           visibleCount++;
           
           // Now filter rules within this criterion
-          filterRules(criterion, showProposed, showAutomated);
+          hasVisibleRules = filterRules(
+            criterion, 
+            showProposed, showApproved, showDeprecated, 
+            showAutomated, showSemiauto, showManual, showLinter, showUnimplemented
+          );
         }
       });
       
@@ -114,33 +174,67 @@
       updateStatusBar();
 
       // ---- Filter WAI-ARIA Rules Section ----
-      filterAriaRules(showProposed, showAutomated);
+      const ariaSectionHasVisibleRules = filterAriaRules(
+        showProposed, showApproved, showDeprecated, 
+        showAutomated, showSemiauto, showManual, showLinter, showUnimplemented
+      );
+
+      // ---- Hide Empty Sections Based on Display Option ----
+      const showEmptySections = showEmptyScCheckbox ? showEmptyScCheckbox.checked : true;
+
+      // Hide WCAG criteria if needed (already handled in the loop above)
+
+      // Hide ARIA section if needed
+      const ariaHeading = document.querySelector('h2:has(+.aria-rules-list-container)');
+      const ariaListContainer = document.querySelector('.aria-rules-list-container');
+      
+      let shouldShowAriaSection = showAria && (showEmptySections || ariaSectionHasVisibleRules);
+
+      if (ariaHeading) {
+        toggleVisibility(ariaHeading, shouldShowAriaSection);
+      }
+      if (ariaListContainer) {
+          // Visibility of the list itself is handled by filterAriaRules based on visible rule count,
+          // but we ensure it's hidden if the whole section should be hidden.
+          if (!shouldShowAriaSection) {
+              toggleVisibility(ariaListContainer, false);
+          }
+      }
     }
     
     /**
-     * Filter rules within a criterion based on their status
+     * Filter rules within a criterion based on their status and test type
+     * @returns {boolean} - True if any rules are visible after filtering, false otherwise.
      */
-    function filterRules(criterion, showProposed, showAutomated) {
+    function filterRules(criterion, 
+                         showProposed, showApproved, showDeprecated, 
+                         showAutomated, showSemiauto, showManual, showLinter, showUnimplemented) {
+      
       const ruleItems = criterion.querySelectorAll('li');
       let visibleRuleCount = 0;
-      const totalRuleCount = ruleItems.length; 
 
       ruleItems.forEach(function(rule) {
-        const isProposed = rule.querySelector('.act-pill.proposed') !== null;
-        const isAutomated = rule.querySelector('.act-pill.automated') !== null;
+        const hasProposedPill = rule.querySelector('.act-pill.proposed') !== null;
+        const isDeprecated = rule.querySelector('.act-pill.deprecated') !== null; 
         
-        // Determine if the rule should be shown based on its status
-        let shouldShow = true;
+        // Status Logic:
+        const isProposed = hasProposedPill && !isDeprecated;
+        const isApproved = !hasProposedPill && !isDeprecated;
+
+        let shouldShowByStatus = (isProposed && showProposed) || (isApproved && showApproved) || (isDeprecated && showDeprecated);
+
+        // Test Type Logic:
+        const ruleTypes = rule.dataset.testTypes ? rule.dataset.testTypes.split(' ') : [];
+        let shouldShowByTestType = false;
+        if (ruleTypes.includes('automated') && showAutomated) shouldShowByTestType = true;
+        if (ruleTypes.includes('semiauto') && showSemiauto) shouldShowByTestType = true;
+        if (ruleTypes.includes('manual') && showManual) shouldShowByTestType = true;
+        if (ruleTypes.includes('linter') && showLinter) shouldShowByTestType = true;
+        if (ruleTypes.includes('unimplemented') && showUnimplemented) shouldShowByTestType = true;
+        if (ruleTypes.length === 0 && showUnimplemented) shouldShowByTestType = true; // Handle cases where attribute might be empty if unimplemented
         
-        if (isProposed && !showProposed) {
-          shouldShow = false;
-        }
-        
-        if (isAutomated && !showAutomated) {
-          shouldShow = false;
-        }
-        
-        // Update visibility of the rule
+        let shouldShow = shouldShowByStatus && shouldShowByTestType;
+
         toggleVisibility(rule, shouldShow);
         
         if (shouldShow) {
@@ -155,18 +249,13 @@
       const relatedRulesPara = ruleList ? ruleList.previousElementSibling?.previousElementSibling : null; // Safer selection
 
       if (ruleList && relatedRulesPara && filteredMessage) {
-        if (totalRuleCount > 0 && visibleRuleCount === 0) {
-          // Rules exist but are all filtered out
-          toggleVisibility(ruleList, false);
-          toggleVisibility(relatedRulesPara, false);
-          toggleVisibility(filteredMessage, true);
-        } else if (visibleRuleCount > 0) {
+        if (visibleRuleCount > 0) {
           // Some rules are visible
           toggleVisibility(ruleList, true);
           toggleVisibility(relatedRulesPara, true);
           toggleVisibility(filteredMessage, false);
         } else {
-          // No rules exist for this criterion (totalRuleCount === 0)
+          // No rules exist for this criterion (visibleRuleCount === 0)
           toggleVisibility(ruleList, false);
           toggleVisibility(relatedRulesPara, false);
           toggleVisibility(filteredMessage, false);
@@ -178,6 +267,8 @@
         // Original case: No rule list exists, ensure 'No rules' message is visible
         toggleVisibility(noRulesMessage.parentElement, true);
       }
+
+      return visibleRuleCount > 0; // Return whether rules are visible
     }
     
     /**
@@ -239,14 +330,20 @@
      * Updates the status bar with counts of visible criteria and unique rules.
      */
     function updateStatusBar() {
-      if (!ruleCountSpan || !criteriaWithRulesCountSpan || !totalSelectedCriteriaCountSpan) {
+      const wcagRuleCountSpan = document.getElementById('wcag-rule-count');
+      const criteriaWithRulesCountSpan = document.getElementById('criteria-with-rules-count');
+      const totalSelectedCriteriaCountSpan = document.getElementById('total-selected-criteria-count');
+      const ariaRuleCountSpan = document.getElementById('aria-rule-count');
+
+      if (!wcagRuleCountSpan || !criteriaWithRulesCountSpan || !totalSelectedCriteriaCountSpan || !ariaRuleCountSpan) {
         return;
       }
 
-      let totalSelectedCriteriaCount = 0; // Reset Z calculation
-      let criteriaWithVisibleRulesCount = 0;
-      const visibleRuleIds = new Set();
+      let totalSelectedCriteriaCount = 0; // Z: Matches Level Filters
+      let criteriaWithVisibleRulesCount = 0; // Y: Matches Level Filters AND has visible rules
+      const visibleWcagRuleIds = new Set(); // X: WCAG Rules within criteria counted for Y
 
+      // --- Calculate WCAG Counts --- 
       allCriteria.forEach(function(criterion, index) {
         const criterionId = criterion.querySelector('p strong')?.textContent || `Criterion ${index + 1}`;
 
@@ -257,50 +354,63 @@
         if (criterion.classList.contains('level-aaa') && levelAAACheckbox && levelAAACheckbox.checked) matchesLevelFilter = true;
 
         if (matchesLevelFilter) {
-          totalSelectedCriteriaCount++; // Count if it matches the selected levels
+            totalSelectedCriteriaCount++; // Count all matching level criteria for Z
 
-          const isCriterionVisible = !criterion.hasAttribute('hidden');
-
-          // Only count rules and criteria-with-rules if the criterion is ACTUALLY visible
-          if (isCriterionVisible) {
+            // Check if criterion has any visible rules *after* rule filtering
+            // We look directly at the DOM state here as filterRules has already run
             let hasVisibleRules = false;
-            let visibleRulesInCriterion = 0; // Debug count per criterion
-            const visibleRules = criterion.querySelectorAll('li:not([hidden]) a'); 
-            
-            visibleRules.forEach(function(link) {
-              hasVisibleRules = true; 
-              visibleRulesInCriterion++; // Debug
-              const ruleId = getRuleIdFromHref(link.getAttribute('href'));
-              if (ruleId) {
-                const added = !visibleRuleIds.has(ruleId);
-                visibleRuleIds.add(ruleId);
-              }
-            });
-            
-            if (hasVisibleRules) {
-              criteriaWithVisibleRulesCount++;
+            const visibleRules = criterion.querySelectorAll('li:not([hidden]) a');
+            if (visibleRules.length > 0) {
+                hasVisibleRules = true;
             }
-          }
+
+            if (hasVisibleRules) {
+                criteriaWithVisibleRulesCount++; // Count for Y only if rules are visible
+                // Add rules to the Set ONLY if they are in a criterion counted for Y
+                visibleRules.forEach(function(link) {
+                    const ruleId = getRuleIdFromHref(link.getAttribute('href'));
+                    if (ruleId) {
+                        visibleWcagRuleIds.add(ruleId);
+                    }
+                });
+            }
         }
       });
 
+      // --- Calculate ARIA Count --- 
+      const visibleAriaRuleIds = new Set();
+      const ariaListContainer = document.querySelector('.aria-rules-list-container');
+      if (ariaListContainer) {
+          const visibleAriaLinks = ariaListContainer.querySelectorAll('li:not([hidden]) a');
+          visibleAriaLinks.forEach(function(link) {
+              const ruleId = getRuleIdFromHref(link.getAttribute('href'));
+              if (ruleId) {
+                  visibleAriaRuleIds.add(ruleId);
+              }
+          });
+      }
+
       // Update the text content
-      ruleCountSpan.textContent = visibleRuleIds.size;
+      wcagRuleCountSpan.textContent = visibleWcagRuleIds.size;
       criteriaWithRulesCountSpan.textContent = criteriaWithVisibleRulesCount;
       totalSelectedCriteriaCountSpan.textContent = totalSelectedCriteriaCount;
+      ariaRuleCountSpan.textContent = visibleAriaRuleIds.size;
     }
 
     /**
-     * Filters the dedicated WAI-ARIA rules list based on status filters.
+     * Filters the dedicated WAI-ARIA rules list based on status and test type filters.
+     * @returns {boolean} - True if any ARIA rules are visible after filtering, false otherwise.
      */
-    function filterAriaRules(showProposed, showAutomated) {
+    function filterAriaRules(showProposed, showApproved, showDeprecated, 
+                             showAutomated, showSemiauto, showManual, showLinter, showUnimplemented) {
+      
       const ariaListContainer = document.querySelector('.aria-rules-list-container');
       const noAriaRulesMessage = document.querySelector('.no-aria-rules-message');
       const filteredAriaMessage = document.querySelector('.filtered-aria-rules-message');
       
       if (!ariaListContainer) {
         // If the list container isn't found, do nothing (it might not exist if found_aria_rule was false)
-        return; 
+        return false; 
       }
 
       const ariaRuleItems = ariaListContainer.querySelectorAll('li');
@@ -308,16 +418,26 @@
       const totalAriaRuleCount = ariaRuleItems.length;
 
       ariaRuleItems.forEach(function(rule) {
-         const isProposed = rule.querySelector('.act-pill.proposed') !== null;
-         const isAutomated = rule.querySelector('.act-pill.automated') !== null;
+         const hasProposedPill = rule.querySelector('.act-pill.proposed') !== null;
+         const isDeprecated = rule.querySelector('.act-pill.deprecated') !== null; 
          
-         let shouldShow = true;
-         if (isProposed && !showProposed) {
-            shouldShow = false;
-         }
-         if (isAutomated && !showAutomated) {
-            shouldShow = false;
-         }
+         // Status Logic:
+         const isProposed = hasProposedPill && !isDeprecated; 
+         const isApproved = !hasProposedPill && !isDeprecated; 
+
+         let shouldShowByStatus = (isProposed && showProposed) || (isApproved && showApproved) || (isDeprecated && showDeprecated);
+
+         // Test Type Logic:
+         const ruleTypes = rule.dataset.testTypes ? rule.dataset.testTypes.split(' ') : [];
+         let shouldShowByTestType = false;
+         if (ruleTypes.includes('automated') && showAutomated) shouldShowByTestType = true;
+         if (ruleTypes.includes('semiauto') && showSemiauto) shouldShowByTestType = true;
+         if (ruleTypes.includes('manual') && showManual) shouldShowByTestType = true;
+         if (ruleTypes.includes('linter') && showLinter) shouldShowByTestType = true;
+         if (ruleTypes.includes('unimplemented') && showUnimplemented) shouldShowByTestType = true;
+         if (ruleTypes.length === 0 && showUnimplemented) shouldShowByTestType = true; // Handle cases where attribute might be empty if unimplemented
+
+         let shouldShow = shouldShowByStatus && shouldShowByTestType;
          
          toggleVisibility(rule, shouldShow);
          
@@ -347,6 +467,8 @@
         if (noAriaRulesMessage) toggleVisibility(noAriaRulesMessage, true);
         if (filteredAriaMessage) toggleVisibility(filteredAriaMessage, false);
       }
+
+      return visibleAriaRuleCount > 0; // Return boolean
     }
   });
 })(); 
