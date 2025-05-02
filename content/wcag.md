@@ -192,8 +192,9 @@ This page contains all success criteria from the Web Content Accessibility Guide
 {% endif %}
 </div>
 {% endif %}
-{% endfor %}
-{% endfor %}
+{% comment %}End Principles, guidelines, and criteria{% endcomment %}
+    {% endfor %}
+  {% endfor %}
 {% endfor %}
 
 <h2>WAI-ARIA Related Rules</h2>
@@ -216,10 +217,19 @@ This page contains all success criteria from the Web Content Accessibility Guide
     {% if is_aria_related %}
       {% assign found_aria_rule = true %}
       {% assign rule_id = rule.frontmatter.id %}
-      <li>
+
+      {% comment %}Determine rule types{% endcomment %}
+      {% assign test_types = "" | split: "," %}
+      {% if automated_rule_ids contains rule_id %}{% assign test_types = test_types | push: "automated" %}{% endif %}
+      {% if manual_rule_ids contains rule_id %}{% assign test_types = test_types | push: "manual" %}{% endif %}
+      {% if semiauto_rule_ids contains rule_id %}{% assign test_types = test_types | push: "semiauto" %}{% endif %}
+      {% if linter_rule_ids contains rule_id %}{% assign test_types = test_types | push: "linter" %}{% endif %}
+      {% unless all_implemented_ids contains rule_id %}{% assign test_types = test_types | push: "unimplemented" %}{% endunless %}
+      {% assign test_types_str = test_types | join: " " %}
+
+      <li data-test-types="{{ test_types_str }}">
         <a href="/standards-guidelines/act/rules/{{ rule_id }}/proposed/">{{ rule.title }}</a>
         {% if rule.proposed == true and rule.deprecated != true %} <span class="act-pill proposed">proposed</span>{% endif %}
-        {% if automated_rule_ids contains rule_id %} <span class="act-pill automated">automated</span>{% endif %}
         {% if rule.deprecated == true %} <span class="act-pill deprecated">deprecated</span>{% endif %}
       </li>
     {% endif %}
