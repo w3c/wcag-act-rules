@@ -2,7 +2,7 @@
   "vendor": "Total Validator",
   "name": "Total Validator (+Browser)",
   "version": "17.4.0",
-  "lastModified": "26 April 2025",
+  "lastModified": "4 May 2025",
   "approvedRules": {
     "complete": 31,
     "partial": 0,
@@ -10,8 +10,8 @@
     "untested": 3
   },
   "proposedRules": {
-    "complete": 8,
-    "partial": 10,
+    "complete": 13,
+    "partial": 5,
     "inconsistent": 0,
     "untested": 35
   },
@@ -199,7 +199,7 @@
             {
               "procedureName": "E9651",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -6396,7 +6396,7 @@
             {
               "procedureName": "E8952",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -10931,7 +10931,7 @@
       "procedureNames": [
         "E9592"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
@@ -10941,8 +10941,8 @@
         ]
       },
       "coverage": {
-        "covered": 8,
-        "untested": 1,
+        "covered": 9,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 9
       },
@@ -10972,7 +10972,7 @@
             {
               "procedureName": "E9592",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -11092,7 +11092,7 @@
         "E963",
         "P963"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -11103,8 +11103,8 @@
         ]
       },
       "coverage": {
-        "covered": 15,
-        "untested": 2,
+        "covered": 17,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 17
       },
@@ -11140,13 +11140,13 @@
             {
               "procedureName": "E963",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             },
             {
               "procedureName": "P963",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -11434,13 +11434,13 @@
             {
               "procedureName": "E963",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             },
             {
               "procedureName": "P963",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -11475,7 +11475,7 @@
       "procedureNames": [
         "E958"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
@@ -11485,8 +11485,8 @@
         ]
       },
       "coverage": {
-        "covered": 16,
-        "untested": 3,
+        "covered": 19,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 19
       },
@@ -11576,7 +11576,7 @@
             {
               "procedureName": "E958",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -11591,7 +11591,7 @@
             {
               "procedureName": "E958",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -11606,7 +11606,7 @@
             {
               "procedureName": "E958",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -14273,7 +14273,7 @@
       "procedureNames": [
         "E957"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
@@ -14283,8 +14283,8 @@
         ]
       },
       "coverage": {
-        "covered": 12,
-        "untested": 2,
+        "covered": 14,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 14
       },
@@ -14374,7 +14374,7 @@
             {
               "procedureName": "E957",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -14479,7 +14479,7 @@
             {
               "procedureName": "E957",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -14714,7 +14714,7 @@
       "procedureNames": [
         "W887"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -14725,8 +14725,8 @@
         ]
       },
       "coverage": {
-        "covered": 14,
-        "untested": 2,
+        "covered": 16,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 16
       },
@@ -14756,7 +14756,7 @@
             {
               "procedureName": "W887",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -14786,7 +14786,7 @@
             {
               "procedureName": "W887",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
