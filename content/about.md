@@ -65,7 +65,7 @@ Opportunities for contributing to ACT and other WAI work are introduced in [Part
 - [Accessibility Conformance Testing (ACT) Rules Format 1.0 {% include_cached icon.html name="different-view" %}](https://www.w3.org/WAI/standards-guidelines/act/)
 - [The WCAG 2 Documents {% include_cached icon.html name="different-view" %}](https://www.w3.org/WAI/standards-guidelines/wcag/docs/)
 - [Understanding WCAG 2 Conformance](https://www.w3.org/WAI/WCAG22/Understanding/conformance)
-- [understanding accessibility support](https://www.w3.org/WAI/WCAG22/Understanding/conformance#accessibility-support)
+- [Understanding accessibility support](https://www.w3.org/WAI/WCAG22/Understanding/conformance#accessibility-support)
 - [ARIA Authoring Practices {% include_cached icon.html name="different-view" %}](https://www.w3.org/WAI/ARIA/apg/)
 - [Web Accessibility Evaluation Tools List](https://www.w3.org/WAI/ER/tools/)
 
