@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 59br37</p>
-  <p><strong>Date:</strong> Updated 2 December 2024</p>
+  <p><strong>Date:</strong> Updated 5 May 2025</p>
   <p><strong>Authors:</strong> <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
   
@@ -22,7 +22,7 @@ rule_meta:
   original_file: zoom-text-no-overflow-clipping-59br37.md
   description: |
     This rule checks that text nodes are not unintentionally clipped by overflow, when a page is zoomed to 200% on 1280 by 1024 viewport;
-  last_modified: 2 December 2024
+  last_modified: 5 May 2025
   scs_tested:
     - handle: Resize text
       num: 1.4.4
@@ -279,7 +279,7 @@ This [text node][] is fully [visible][] at a [viewport size][] of 640 by 512.
 
 <a class="example-link" title="Passed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/59br37/47d2a65e7d1fcc2ac9457a6283e35e82d68aa3ce.html">Open in a new tab</a>
 
-This [text node][] is [horizontally clipped][] using `text-overflow: ellipsis` at a [viewport size][] of 640 by 512. A link to a full version of the poem is also provided.
+This [text node][] is [horizontally clipped][] using `text-overflow: ellipsis` at a [viewport size][] of 640 by 512. This fulfills expectation 1. A link to a full version of the poem is also provided. The link to the full version is not required by this rule, but is necessary to satisfy [success criterion 1.4.4 Resize text][sc144].
 
 ```html
 <div style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 16px;">
@@ -293,7 +293,7 @@ This [text node][] is [horizontally clipped][] using `text-overflow: ellipsis` a
 
 <a class="example-link" title="Passed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/59br37/f6c5d3bf4a33699dfa4d53d1949c262df1021735.html">Open in a new tab</a>
 
-This [text node][] is restricted to a single line, by setting a `line-height` that is the same as the `height`. A link to a full version of the poem is also provided.
+This [text node][] is restricted to a single line, by setting a `line-height` that is the same as the `height`. This fulfills expectation 2. A link to a full version of the poem is also provided. The link to the full version is not required by this rule, but is necessary to satisfy [success criterion 1.4.4 Resize text][sc144].
 
 ```html
 <style>
@@ -584,6 +584,7 @@ For more details, see [examples of visible](https://act-rules.github.io/pages/ex
 [overflow]: https://drafts.csswg.org/css-overflow/#overflow-properties
 [parent]: https://dom.spec.whatwg.org/#concept-tree-parent 'DOM parent, as of 2020/02/14'
 [reflect]: https://html.spec.whatwg.org/multipage/common-dom-interfaces.html#reflecting-content-attributes-in-idl-attributes 'HTML specification of Reflecting Content Attributes in IDL Attributes'
+[sc144]: https://www.w3.org/TR/WCAG22/#resize-text
 [space separated]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#space-separated-tokens 'HTML Specification of Space Separated Tokens'
 [test subject]: https://www.w3.org/TR/act-rules-format-1.1/#test-subject
 [test target]: https://www.w3.org/TR/act-rules-format/#test-target

@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> a25f45</p>
-  <p><strong>Date:</strong> Updated 22 April 2025</p>
+  <p><strong>Date:</strong> Updated 1 May 2025</p>
   <p><strong>Authors:</strong> <a href="https://github.com/audreymaniez">Audrey Maniez</a>, <a href="https://github.com/jkodu">Jey Nandakumar</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -20,7 +20,7 @@ rule_meta:
   original_file: table-headers-attribute-refer-to-data-cells-a25f45.md
   description: |
     This rule checks that the `headers` attribute on a cell refer to other cells in the same `table` element.
-  last_modified: 22 April 2025
+  last_modified: 1 May 2025
   scs_tested:
     - handle: Info and Relationships
       num: 1.3.1
@@ -434,12 +434,12 @@ The `table` is not [visible][] in page.
 
 #### Inapplicable Example 4
 
-<a class="example-link" title="Inapplicable Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/57382c6bd42af05f3b9836a95bee672d1b9330d7.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/cb36dcc6ce2d1787e287ff967559b186eb77d6bd.html">Open in a new tab</a>
 
 The rule applies only to `headers` attribute within a `table` element.
 
 ```html
-<div role="table">
+<div role="table" aria-label="Grades">
 	<div role="row">
 		<div role="columnheader" id="header1">Projects</div>
 		<div role="columnheader" id="header2">Exams</div>
