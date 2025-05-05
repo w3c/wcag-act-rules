@@ -22466,7 +22466,7 @@
       }
     },
     {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/17e68991f57cd20cd5c9fcf564d5a23ebb08c0f0.html",
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/d935494fdcd2c1fef14d14842c0a19c8f8c54c78.html",
       "@type": "TestSubject",
       "dct:hasPart": [
         {
@@ -22486,7 +22486,7 @@
             "@list": []
           },
           "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/17e68991f57cd20cd5c9fcf564d5a23ebb08c0f0.html"
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/d935494fdcd2c1fef14d14842c0a19c8f8c54c78.html"
         },
         {
           "@type": [
@@ -22499,7 +22499,7 @@
               "cnt:ContentAsText"
             ],
             "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Inapplicable Example 6</title>\n</head>\n<body>\n\t<table role=\"region\">\n\t\t<td id=\"self\" headers=\"self\">World</td>\n\t</table>\n</body>\n</html>"
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Passed Example 5</title>\n</head>\n<body>\n\t<table>\n\t\t<tbody>\n\t\t\t<tr>\n\t\t\t\t<th role=\"rowheader\" id=\"headerAge\">Age</th>\n\t\t\t\t<td headers=\"headerAge\">65</td>\n\t\t\t</tr>\n\t\t\t<tr>\n\t\t\t\t<th role=\"rowheader\" id=\"headerObjective\">Objective</th>\n\t\t\t\t<td headers=\"headerObjective\">40%</td>\n\t\t\t</tr>\n\t\t</tbody>\n\t</table>\n</body>\n</html>"
           },
           "http-vocab:headers": {
             "@list": [
@@ -22513,7 +22513,7 @@
           "http-vocab:statusCodeValue": 200
         }
       ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/17e68991f57cd20cd5c9fcf564d5a23ebb08c0f0.html"
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/d935494fdcd2c1fef14d14842c0a19c8f8c54c78.html"
     },
     {
       "@type": "Assertion",
@@ -22521,10 +22521,20 @@
       "earl:mode": "earl:automatic",
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:inapplicable"
+        "info": "The `headers` attribute refers to cells in the same `<table>`\nThe `headers` attribute does not refer to the cell defining it",
+        "outcome": "earl:passed",
+        "earl:pointer": {
+          "@type": [
+            "ptr:Pointer",
+            "ptr:SinglePointer",
+            "ptr:ExpressionPointer",
+            "ptr:XPathPointer"
+          ],
+          "ptr:expression": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/@headers"
+        }
       },
       "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/17e68991f57cd20cd5c9fcf564d5a23ebb08c0f0.html"
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/d935494fdcd2c1fef14d14842c0a19c8f8c54c78.html"
       },
       "test": {
         "@id": "https://alfa.siteimprove.com/rules/sia-r45"
@@ -25871,7 +25881,7 @@
       }
     },
     {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/3314945d4bbec5b34f9a3c2d90da7cb9f8e7ce5a.html",
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/287a72860814f903d561dc3e7765f507ca041624.html",
       "@type": "TestSubject",
       "dct:hasPart": [
         {
@@ -25891,7 +25901,7 @@
             "@list": []
           },
           "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/3314945d4bbec5b34f9a3c2d90da7cb9f8e7ce5a.html"
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/287a72860814f903d561dc3e7765f507ca041624.html"
         },
         {
           "@type": [
@@ -25904,7 +25914,7 @@
               "cnt:ContentAsText"
             ],
             "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Passed Example 3</title>\n</head>\n<body>\n\t<div\n\t\trole=\"textbox\"\n\t\tcontenteditable=\"true\"\n\t\taria-multiline=\"true\"\n\t\taria-label=\"Enter your hobbies\"\n\t\taria-required=\"true\"\n\t></div>\n</body>\n</html>"
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Passed Example 2</title>\n</head>\n<body>\n\t<div role=\"dialog\" aria-modal=\"true\" aria-label=\"Modal title\">Contains modal content...</div>\n</body>\n</html>"
           },
           "http-vocab:headers": {
             "@list": [
@@ -25918,7 +25928,7 @@
           "http-vocab:statusCodeValue": 200
         }
       ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/3314945d4bbec5b34f9a3c2d90da7cb9f8e7ce5a.html"
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/287a72860814f903d561dc3e7765f507ca041624.html"
     },
     {
       "@type": "Assertion",
@@ -25935,11 +25945,11 @@
             "ptr:ExpressionPointer",
             "ptr:XPathPointer"
           ],
-          "ptr:expression": "/html[1]/body[1]/div[1]/@aria-multiline"
+          "ptr:expression": "/html[1]/body[1]/div[1]/@aria-modal"
         }
       },
       "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/3314945d4bbec5b34f9a3c2d90da7cb9f8e7ce5a.html"
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/287a72860814f903d561dc3e7765f507ca041624.html"
       },
       "test": {
         "@id": "https://alfa.siteimprove.com/rules/sia-r20"
@@ -27191,7 +27201,7 @@
       }
     },
     {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/d935494fdcd2c1fef14d14842c0a19c8f8c54c78.html",
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/9f7979f4854efa0b1ac299f920229d20246710b9.html",
       "@type": "TestSubject",
       "dct:hasPart": [
         {
@@ -27211,7 +27221,7 @@
             "@list": []
           },
           "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/d935494fdcd2c1fef14d14842c0a19c8f8c54c78.html"
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/9f7979f4854efa0b1ac299f920229d20246710b9.html"
         },
         {
           "@type": [
@@ -27224,7 +27234,7 @@
               "cnt:ContentAsText"
             ],
             "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Passed Example 5</title>\n</head>\n<body>\n\t<table>\n\t\t<tbody>\n\t\t\t<tr>\n\t\t\t\t<th role=\"rowheader\" id=\"headerAge\">Age</th>\n\t\t\t\t<td headers=\"headerAge\">65</td>\n\t\t\t</tr>\n\t\t\t<tr>\n\t\t\t\t<th role=\"rowheader\" id=\"headerObjective\">Objective</th>\n\t\t\t\t<td headers=\"headerObjective\">40%</td>\n\t\t\t</tr>\n\t\t</tbody>\n\t</table>\n</body>\n</html>"
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Inapplicable Example 1</title>\n</head>\n<body>\n\t<table>\n\t\t<tr>\n\t\t\t<th scope=\"col\">Projects</th>\n\t\t\t<th scope=\"col\">Exams</th>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>15%</td>\n\t\t\t<td>45%</td>\n\t\t</tr>\n\t</table>\n</body>\n</html>"
           },
           "http-vocab:headers": {
             "@list": [
@@ -27238,7 +27248,7 @@
           "http-vocab:statusCodeValue": 200
         }
       ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/d935494fdcd2c1fef14d14842c0a19c8f8c54c78.html"
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/9f7979f4854efa0b1ac299f920229d20246710b9.html"
     },
     {
       "@type": "Assertion",
@@ -27246,20 +27256,10 @@
       "earl:mode": "earl:automatic",
       "result": {
         "@type": "TestResult",
-        "info": "The `headers` attribute refers to cells in the same `<table>`\nThe `headers` attribute does not refer to the cell defining it",
-        "outcome": "earl:passed",
-        "earl:pointer": {
-          "@type": [
-            "ptr:Pointer",
-            "ptr:SinglePointer",
-            "ptr:ExpressionPointer",
-            "ptr:XPathPointer"
-          ],
-          "ptr:expression": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/@headers"
-        }
+        "outcome": "earl:inapplicable"
       },
       "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/d935494fdcd2c1fef14d14842c0a19c8f8c54c78.html"
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/9f7979f4854efa0b1ac299f920229d20246710b9.html"
       },
       "test": {
         "@id": "https://alfa.siteimprove.com/rules/sia-r45"
@@ -30521,7 +30521,7 @@
       }
     },
     {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/b6acf7c4aab0cfdc9f996abc7961790cbc97f39e.html",
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/3314945d4bbec5b34f9a3c2d90da7cb9f8e7ce5a.html",
       "@type": "TestSubject",
       "dct:hasPart": [
         {
@@ -30541,7 +30541,7 @@
             "@list": []
           },
           "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/b6acf7c4aab0cfdc9f996abc7961790cbc97f39e.html"
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/3314945d4bbec5b34f9a3c2d90da7cb9f8e7ce5a.html"
         },
         {
           "@type": [
@@ -30554,7 +30554,7 @@
               "cnt:ContentAsText"
             ],
             "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Failed Example 2</title>\n</head>\n<body>\n\t<span id=\"label\">Birthday:</span>\n\t<div contenteditable role=\"searchbox\" aria-labelled=\"label\" aria-placeholder=\"MM-DD-YYYY\">\n\t\t01-01-2019\n\t</div>\n</body>\n</html>"
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Passed Example 3</title>\n</head>\n<body>\n\t<div\n\t\trole=\"textbox\"\n\t\tcontenteditable=\"true\"\n\t\taria-multiline=\"true\"\n\t\taria-label=\"Enter your hobbies\"\n\t\taria-required=\"true\"\n\t></div>\n</body>\n</html>"
           },
           "http-vocab:headers": {
             "@list": [
@@ -30568,7 +30568,7 @@
           "http-vocab:statusCodeValue": 200
         }
       ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/b6acf7c4aab0cfdc9f996abc7961790cbc97f39e.html"
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/3314945d4bbec5b34f9a3c2d90da7cb9f8e7ce5a.html"
     },
     {
       "@type": "Assertion",
@@ -30576,8 +30576,8 @@
       "earl:mode": "earl:automatic",
       "result": {
         "@type": "TestResult",
-        "info": "The attribute is not defined",
-        "outcome": "earl:failed",
+        "info": "The attribute is defined",
+        "outcome": "earl:passed",
         "earl:pointer": {
           "@type": [
             "ptr:Pointer",
@@ -30585,11 +30585,11 @@
             "ptr:ExpressionPointer",
             "ptr:XPathPointer"
           ],
-          "ptr:expression": "/html[1]/body[1]/div[1]/@aria-labelled"
+          "ptr:expression": "/html[1]/body[1]/div[1]/@aria-multiline"
         }
       },
       "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/b6acf7c4aab0cfdc9f996abc7961790cbc97f39e.html"
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/3314945d4bbec5b34f9a3c2d90da7cb9f8e7ce5a.html"
       },
       "test": {
         "@id": "https://alfa.siteimprove.com/rules/sia-r20"
@@ -31746,7 +31746,7 @@
       }
     },
     {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/9f7979f4854efa0b1ac299f920229d20246710b9.html",
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/8391fee07d35c11cfb3fecd19ddaad0fb8c68871.html",
       "@type": "TestSubject",
       "dct:hasPart": [
         {
@@ -31766,7 +31766,7 @@
             "@list": []
           },
           "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/9f7979f4854efa0b1ac299f920229d20246710b9.html"
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/8391fee07d35c11cfb3fecd19ddaad0fb8c68871.html"
         },
         {
           "@type": [
@@ -31779,7 +31779,7 @@
               "cnt:ContentAsText"
             ],
             "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Inapplicable Example 1</title>\n</head>\n<body>\n\t<table>\n\t\t<tr>\n\t\t\t<th scope=\"col\">Projects</th>\n\t\t\t<th scope=\"col\">Exams</th>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>15%</td>\n\t\t\t<td>45%</td>\n\t\t</tr>\n\t</table>\n</body>\n</html>"
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Passed Example 3</title>\n</head>\n<body>\n\t<table>\n\t\t<thead>\n\t\t\t<tr>\n\t\t\t\t<td role=\"columnheader\" id=\"header1\">Projects</td>\n\t\t\t\t<td role=\"columnheader\" id=\"header2\">Objective</td>\n\t\t\t</tr>\n\t\t</thead>\n\t\t<tbody>\n\t\t\t<tr>\n\t\t\t\t<td headers=\"header1\">15%</td>\n\t\t\t\t<td headers=\"header2\">10%</td>\n\t\t\t</tr>\n\t\t</tbody>\n\t</table>\n</body>\n</html>"
           },
           "http-vocab:headers": {
             "@list": [
@@ -31793,7 +31793,7 @@
           "http-vocab:statusCodeValue": 200
         }
       ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/9f7979f4854efa0b1ac299f920229d20246710b9.html"
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/8391fee07d35c11cfb3fecd19ddaad0fb8c68871.html"
     },
     {
       "@type": "Assertion",
@@ -31801,10 +31801,20 @@
       "earl:mode": "earl:automatic",
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:inapplicable"
+        "info": "The `headers` attribute refers to cells in the same `<table>`\nThe `headers` attribute does not refer to the cell defining it",
+        "outcome": "earl:passed",
+        "earl:pointer": {
+          "@type": [
+            "ptr:Pointer",
+            "ptr:SinglePointer",
+            "ptr:ExpressionPointer",
+            "ptr:XPathPointer"
+          ],
+          "ptr:expression": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/@headers"
+        }
       },
       "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/9f7979f4854efa0b1ac299f920229d20246710b9.html"
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/8391fee07d35c11cfb3fecd19ddaad0fb8c68871.html"
       },
       "test": {
         "@id": "https://alfa.siteimprove.com/rules/sia-r45"
@@ -34961,6 +34971,81 @@
       }
     },
     {
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/b6acf7c4aab0cfdc9f996abc7961790cbc97f39e.html",
+      "@type": "TestSubject",
+      "dct:hasPart": [
+        {
+          "@type": [
+            "http-vocab:Message",
+            "http-vocab:Request"
+          ],
+          "http-vocab:body": {
+            "@type": [
+              "cnt:Content",
+              "cnt:ContentAsText"
+            ],
+            "cnt:characterEncoding": "utf-8",
+            "cnt:chars": ""
+          },
+          "http-vocab:headers": {
+            "@list": []
+          },
+          "http-vocab:methodName": "GET",
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/b6acf7c4aab0cfdc9f996abc7961790cbc97f39e.html"
+        },
+        {
+          "@type": [
+            "http-vocab:Message",
+            "http-vocab:Response"
+          ],
+          "http-vocab:body": {
+            "@type": [
+              "cnt:Content",
+              "cnt:ContentAsText"
+            ],
+            "cnt:characterEncoding": "utf-8",
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Failed Example 2</title>\n</head>\n<body>\n\t<span id=\"label\">Birthday:</span>\n\t<div contenteditable role=\"searchbox\" aria-labelled=\"label\" aria-placeholder=\"MM-DD-YYYY\">\n\t\t01-01-2019\n\t</div>\n</body>\n</html>"
+          },
+          "http-vocab:headers": {
+            "@list": [
+              {
+                "@type": "http-vocab:MessageHeader",
+                "http-vocab:fieldName": "content-type",
+                "http-vocab:fieldValue": "text/html; charset=utf-8"
+              }
+            ]
+          },
+          "http-vocab:statusCodeValue": 200
+        }
+      ],
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/b6acf7c4aab0cfdc9f996abc7961790cbc97f39e.html"
+    },
+    {
+      "@type": "Assertion",
+      "earl:assertedBy": "Alfa",
+      "earl:mode": "earl:automatic",
+      "result": {
+        "@type": "TestResult",
+        "info": "The attribute is not defined",
+        "outcome": "earl:failed",
+        "earl:pointer": {
+          "@type": [
+            "ptr:Pointer",
+            "ptr:SinglePointer",
+            "ptr:ExpressionPointer",
+            "ptr:XPathPointer"
+          ],
+          "ptr:expression": "/html[1]/body[1]/div[1]/@aria-labelled"
+        }
+      },
+      "subject": {
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/b6acf7c4aab0cfdc9f996abc7961790cbc97f39e.html"
+      },
+      "test": {
+        "@id": "https://alfa.siteimprove.com/rules/sia-r20"
+      }
+    },
+    {
       "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/f51b46/a4bf1f36113b22a1c9d34d7155269b72cf5721fc.html",
       "@type": "TestSubject",
       "dct:hasPart": [
@@ -35766,7 +35851,7 @@
       }
     },
     {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/8391fee07d35c11cfb3fecd19ddaad0fb8c68871.html",
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/7f2be26b42fa5846a09019bb949c44be95586e0d.html",
       "@type": "TestSubject",
       "dct:hasPart": [
         {
@@ -35786,7 +35871,7 @@
             "@list": []
           },
           "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/8391fee07d35c11cfb3fecd19ddaad0fb8c68871.html"
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/7f2be26b42fa5846a09019bb949c44be95586e0d.html"
         },
         {
           "@type": [
@@ -35799,7 +35884,7 @@
               "cnt:ContentAsText"
             ],
             "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Passed Example 3</title>\n</head>\n<body>\n\t<table>\n\t\t<thead>\n\t\t\t<tr>\n\t\t\t\t<td role=\"columnheader\" id=\"header1\">Projects</td>\n\t\t\t\t<td role=\"columnheader\" id=\"header2\">Objective</td>\n\t\t\t</tr>\n\t\t</thead>\n\t\t<tbody>\n\t\t\t<tr>\n\t\t\t\t<td headers=\"header1\">15%</td>\n\t\t\t\t<td headers=\"header2\">10%</td>\n\t\t\t</tr>\n\t\t</tbody>\n\t</table>\n</body>\n</html>"
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Failed Example 1</title>\n</head>\n<body>\n\t<table>\n\t\t<tr>\n\t\t\t<th id=\"headerOfColumn1\">Projects</th>\n\t\t\t<th id=\"headerOfColumn2\">Objective</th>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td headers=\"headOfColumn1\">15%</td>\n\t\t\t<td headers=\"headOfColumn2\">10%</td>\n\t\t</tr>\n\t</table>\n</body>\n</html>"
           },
           "http-vocab:headers": {
             "@list": [
@@ -35813,7 +35898,7 @@
           "http-vocab:statusCodeValue": 200
         }
       ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/8391fee07d35c11cfb3fecd19ddaad0fb8c68871.html"
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/7f2be26b42fa5846a09019bb949c44be95586e0d.html"
     },
     {
       "@type": "Assertion",
@@ -35821,8 +35906,8 @@
       "earl:mode": "earl:automatic",
       "result": {
         "@type": "TestResult",
-        "info": "The `headers` attribute refers to cells in the same `<table>`\nThe `headers` attribute does not refer to the cell defining it",
-        "outcome": "earl:passed",
+        "info": "The `headers` attribute refers to cells not present in the same `<table>`",
+        "outcome": "earl:failed",
         "earl:pointer": {
           "@type": [
             "ptr:Pointer",
@@ -35830,11 +35915,11 @@
             "ptr:ExpressionPointer",
             "ptr:XPathPointer"
           ],
-          "ptr:expression": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[2]/@headers"
+          "ptr:expression": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/@headers"
         }
       },
       "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/8391fee07d35c11cfb3fecd19ddaad0fb8c68871.html"
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/7f2be26b42fa5846a09019bb949c44be95586e0d.html"
       },
       "test": {
         "@id": "https://alfa.siteimprove.com/rules/sia-r45"
@@ -39456,7 +39541,7 @@
       }
     },
     {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/7f2be26b42fa5846a09019bb949c44be95586e0d.html",
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/f99c8bd6aa53c3b2f4d63fee994333453df410c6.html",
       "@type": "TestSubject",
       "dct:hasPart": [
         {
@@ -39476,7 +39561,7 @@
             "@list": []
           },
           "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/7f2be26b42fa5846a09019bb949c44be95586e0d.html"
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/f99c8bd6aa53c3b2f4d63fee994333453df410c6.html"
         },
         {
           "@type": [
@@ -39489,7 +39574,7 @@
               "cnt:ContentAsText"
             ],
             "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Failed Example 1</title>\n</head>\n<body>\n\t<table>\n\t\t<tr>\n\t\t\t<th id=\"headerOfColumn1\">Projects</th>\n\t\t\t<th id=\"headerOfColumn2\">Objective</th>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td headers=\"headOfColumn1\">15%</td>\n\t\t\t<td headers=\"headOfColumn2\">10%</td>\n\t\t</tr>\n\t</table>\n</body>\n</html>"
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Passed Example 1</title>\n</head>\n<body>\n\t<table>\n\t\t<thead>\n\t\t\t<tr>\n\t\t\t\t<th id=\"header1\">Projects</th>\n\t\t\t\t<th id=\"header2\">Objective</th>\n\t\t\t</tr>\n\t\t</thead>\n\t\t<tbody>\n\t\t\t<tr>\n\t\t\t\t<td headers=\"header1\">15%</td>\n\t\t\t\t<td headers=\"header2\">10%</td>\n\t\t\t</tr>\n\t\t</tbody>\n\t</table>\n</body>\n</html>"
           },
           "http-vocab:headers": {
             "@list": [
@@ -39503,7 +39588,7 @@
           "http-vocab:statusCodeValue": 200
         }
       ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/7f2be26b42fa5846a09019bb949c44be95586e0d.html"
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/f99c8bd6aa53c3b2f4d63fee994333453df410c6.html"
     },
     {
       "@type": "Assertion",
@@ -39511,8 +39596,8 @@
       "earl:mode": "earl:automatic",
       "result": {
         "@type": "TestResult",
-        "info": "The `headers` attribute refers to cells not present in the same `<table>`",
-        "outcome": "earl:failed",
+        "info": "The `headers` attribute refers to cells in the same `<table>`\nThe `headers` attribute does not refer to the cell defining it",
+        "outcome": "earl:passed",
         "earl:pointer": {
           "@type": [
             "ptr:Pointer",
@@ -39520,11 +39605,11 @@
             "ptr:ExpressionPointer",
             "ptr:XPathPointer"
           ],
-          "ptr:expression": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/@headers"
+          "ptr:expression": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/@headers"
         }
       },
       "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/7f2be26b42fa5846a09019bb949c44be95586e0d.html"
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/f99c8bd6aa53c3b2f4d63fee994333453df410c6.html"
       },
       "test": {
         "@id": "https://alfa.siteimprove.com/rules/sia-r45"
@@ -42731,7 +42816,7 @@
       }
     },
     {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/f99c8bd6aa53c3b2f4d63fee994333453df410c6.html",
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/76b79146e3be6b8ea6920df93b68352b8b9d3c8b.html",
       "@type": "TestSubject",
       "dct:hasPart": [
         {
@@ -42751,7 +42836,7 @@
             "@list": []
           },
           "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/f99c8bd6aa53c3b2f4d63fee994333453df410c6.html"
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/76b79146e3be6b8ea6920df93b68352b8b9d3c8b.html"
         },
         {
           "@type": [
@@ -42764,7 +42849,7 @@
               "cnt:ContentAsText"
             ],
             "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Passed Example 1</title>\n</head>\n<body>\n\t<table>\n\t\t<thead>\n\t\t\t<tr>\n\t\t\t\t<th id=\"header1\">Projects</th>\n\t\t\t\t<th id=\"header2\">Objective</th>\n\t\t\t</tr>\n\t\t</thead>\n\t\t<tbody>\n\t\t\t<tr>\n\t\t\t\t<td headers=\"header1\">15%</td>\n\t\t\t\t<td headers=\"header2\">10%</td>\n\t\t\t</tr>\n\t\t</tbody>\n\t</table>\n</body>\n</html>"
+            "cnt:chars": "<!DOCTYPE html>\n<html>\n\t<style>\n\t\t.notInPage {\n\t\t\tposition: absolute;\n\t\t\tleft: -9999px;\n\t\t\ttop: -9999px;\n\t\t}\n\t</style>\n\t<table class=\"notInPage\">\n\t\t<tr>\n\t\t\t<th id=\"header1\">Project Status</th>\n\t\t\t<th id=\"header2\">Objective</th>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td headers=\"header1\">15%</td>\n\t\t\t<td headers=\"header2\">10%</td>\n\t\t</tr>\n\t</table>\n</html>"
           },
           "http-vocab:headers": {
             "@list": [
@@ -42778,7 +42863,7 @@
           "http-vocab:statusCodeValue": 200
         }
       ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/f99c8bd6aa53c3b2f4d63fee994333453df410c6.html"
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/76b79146e3be6b8ea6920df93b68352b8b9d3c8b.html"
     },
     {
       "@type": "Assertion",
@@ -42786,20 +42871,10 @@
       "earl:mode": "earl:automatic",
       "result": {
         "@type": "TestResult",
-        "info": "The `headers` attribute refers to cells in the same `<table>`\nThe `headers` attribute does not refer to the cell defining it",
-        "outcome": "earl:passed",
-        "earl:pointer": {
-          "@type": [
-            "ptr:Pointer",
-            "ptr:SinglePointer",
-            "ptr:ExpressionPointer",
-            "ptr:XPathPointer"
-          ],
-          "ptr:expression": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/@headers"
-        }
+        "outcome": "earl:inapplicable"
       },
       "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/f99c8bd6aa53c3b2f4d63fee994333453df410c6.html"
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/76b79146e3be6b8ea6920df93b68352b8b9d3c8b.html"
       },
       "test": {
         "@id": "https://alfa.siteimprove.com/rules/sia-r45"
@@ -45801,7 +45876,7 @@
       }
     },
     {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/76b79146e3be6b8ea6920df93b68352b8b9d3c8b.html",
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/cd25fd6cc4fde1734fc90c2f11e71886e3458007.html",
       "@type": "TestSubject",
       "dct:hasPart": [
         {
@@ -45821,7 +45896,7 @@
             "@list": []
           },
           "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/76b79146e3be6b8ea6920df93b68352b8b9d3c8b.html"
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/cd25fd6cc4fde1734fc90c2f11e71886e3458007.html"
         },
         {
           "@type": [
@@ -45834,7 +45909,7 @@
               "cnt:ContentAsText"
             ],
             "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html>\n\t<style>\n\t\t.notInPage {\n\t\t\tposition: absolute;\n\t\t\tleft: -9999px;\n\t\t\ttop: -9999px;\n\t\t}\n\t</style>\n\t<table class=\"notInPage\">\n\t\t<tr>\n\t\t\t<th id=\"header1\">Project Status</th>\n\t\t\t<th id=\"header2\">Objective</th>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td headers=\"header1\">15%</td>\n\t\t\t<td headers=\"header2\">10%</td>\n\t\t</tr>\n\t</table>\n</html>"
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Failed Example 2</title>\n</head>\n<body>\n\t<table>\n\t\t<tr>\n\t\t\t<th id=\"headOfColumn1\">Projects</th>\n\t\t\t<th id=\"headOfColumn2\">Objective</th>\n\t\t</tr>\n\t</table>\n\t\n\t<table>\n\t\t<tr>\n\t\t\t<td headers=\"headOfColumn1\">15%</td>\n\t\t\t<td headers=\"headOfColumn2\">10%</td>\n\t\t</tr>\n\t</table>\n</body>\n</html>"
           },
           "http-vocab:headers": {
             "@list": [
@@ -45848,7 +45923,7 @@
           "http-vocab:statusCodeValue": 200
         }
       ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/76b79146e3be6b8ea6920df93b68352b8b9d3c8b.html"
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/cd25fd6cc4fde1734fc90c2f11e71886e3458007.html"
     },
     {
       "@type": "Assertion",
@@ -45856,10 +45931,20 @@
       "earl:mode": "earl:automatic",
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:inapplicable"
+        "info": "The `headers` attribute refers to cells not present in the same `<table>`",
+        "outcome": "earl:failed",
+        "earl:pointer": {
+          "@type": [
+            "ptr:Pointer",
+            "ptr:SinglePointer",
+            "ptr:ExpressionPointer",
+            "ptr:XPathPointer"
+          ],
+          "ptr:expression": "/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[1]/@headers"
+        }
       },
       "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/76b79146e3be6b8ea6920df93b68352b8b9d3c8b.html"
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/cd25fd6cc4fde1734fc90c2f11e71886e3458007.html"
       },
       "test": {
         "@id": "https://alfa.siteimprove.com/rules/sia-r45"
@@ -48466,7 +48551,7 @@
       }
     },
     {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/cd25fd6cc4fde1734fc90c2f11e71886e3458007.html",
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/b1b17ab86ee2ebce350af1c41d2e6ff8911a33f1.html",
       "@type": "TestSubject",
       "dct:hasPart": [
         {
@@ -48486,7 +48571,7 @@
             "@list": []
           },
           "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/cd25fd6cc4fde1734fc90c2f11e71886e3458007.html"
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/b1b17ab86ee2ebce350af1c41d2e6ff8911a33f1.html"
         },
         {
           "@type": [
@@ -48499,7 +48584,7 @@
               "cnt:ContentAsText"
             ],
             "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Failed Example 2</title>\n</head>\n<body>\n\t<table>\n\t\t<tr>\n\t\t\t<th id=\"headOfColumn1\">Projects</th>\n\t\t\t<th id=\"headOfColumn2\">Objective</th>\n\t\t</tr>\n\t</table>\n\t\n\t<table>\n\t\t<tr>\n\t\t\t<td headers=\"headOfColumn1\">15%</td>\n\t\t\t<td headers=\"headOfColumn2\">10%</td>\n\t\t</tr>\n\t</table>\n</body>\n</html>"
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Passed Example 7</title>\n</head>\n<body>\n\t<table>\n\t\t<tr>\n\t\t\t<th id=\"projects1\" scope=\"row\">Projects</th>\n\t\t\t<th id=\"progress1\" scope=\"row\">Progress</th>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td headers=\"projects1\">My Project</td>\n\t\t\t<td headers=\"progress1\">15%</td>\n\t\t</tr>\n\t</table>\n</body>\n</html>"
           },
           "http-vocab:headers": {
             "@list": [
@@ -48513,7 +48598,7 @@
           "http-vocab:statusCodeValue": 200
         }
       ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/cd25fd6cc4fde1734fc90c2f11e71886e3458007.html"
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/b1b17ab86ee2ebce350af1c41d2e6ff8911a33f1.html"
     },
     {
       "@type": "Assertion",
@@ -48521,8 +48606,8 @@
       "earl:mode": "earl:automatic",
       "result": {
         "@type": "TestResult",
-        "info": "The `headers` attribute refers to cells not present in the same `<table>`",
-        "outcome": "earl:failed",
+        "info": "The `headers` attribute refers to cells in the same `<table>`\nThe `headers` attribute does not refer to the cell defining it",
+        "outcome": "earl:passed",
         "earl:pointer": {
           "@type": [
             "ptr:Pointer",
@@ -48530,11 +48615,11 @@
             "ptr:ExpressionPointer",
             "ptr:XPathPointer"
           ],
-          "ptr:expression": "/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[1]/@headers"
+          "ptr:expression": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[2]/@headers"
         }
       },
       "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/cd25fd6cc4fde1734fc90c2f11e71886e3458007.html"
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/b1b17ab86ee2ebce350af1c41d2e6ff8911a33f1.html"
       },
       "test": {
         "@id": "https://alfa.siteimprove.com/rules/sia-r45"
@@ -50946,7 +51031,7 @@
       }
     },
     {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/b1b17ab86ee2ebce350af1c41d2e6ff8911a33f1.html",
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/ba5019010a6e0cfbcb46b2f7e9e63a6117e06f97.html",
       "@type": "TestSubject",
       "dct:hasPart": [
         {
@@ -50966,7 +51051,7 @@
             "@list": []
           },
           "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/b1b17ab86ee2ebce350af1c41d2e6ff8911a33f1.html"
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/ba5019010a6e0cfbcb46b2f7e9e63a6117e06f97.html"
         },
         {
           "@type": [
@@ -50979,7 +51064,7 @@
               "cnt:ContentAsText"
             ],
             "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Passed Example 7</title>\n</head>\n<body>\n\t<table>\n\t\t<tr>\n\t\t\t<th id=\"projects1\" scope=\"row\">Projects</th>\n\t\t\t<th id=\"progress1\" scope=\"row\">Progress</th>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td headers=\"projects1\">My Project</td>\n\t\t\t<td headers=\"progress1\">15%</td>\n\t\t</tr>\n\t</table>\n</body>\n</html>"
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Passed Example 6</title>\n</head>\n<body>\n\t<table>\n\t\t<tr>\n\t\t\t<th id=\"name\" colspan=\"2\">Name</th>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<th headers=\"name\">Firstname</th>\n\t\t\t<th headers=\"name\">Lastname</th>\n\t\t</tr>\n\t</table>\n</body>\n</html>"
           },
           "http-vocab:headers": {
             "@list": [
@@ -50993,7 +51078,7 @@
           "http-vocab:statusCodeValue": 200
         }
       ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/b1b17ab86ee2ebce350af1c41d2e6ff8911a33f1.html"
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/ba5019010a6e0cfbcb46b2f7e9e63a6117e06f97.html"
     },
     {
       "@type": "Assertion",
@@ -51010,11 +51095,11 @@
             "ptr:ExpressionPointer",
             "ptr:XPathPointer"
           ],
-          "ptr:expression": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[2]/@headers"
+          "ptr:expression": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/th[1]/@headers"
         }
       },
       "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/b1b17ab86ee2ebce350af1c41d2e6ff8911a33f1.html"
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/ba5019010a6e0cfbcb46b2f7e9e63a6117e06f97.html"
       },
       "test": {
         "@id": "https://alfa.siteimprove.com/rules/sia-r45"
@@ -52826,7 +52911,7 @@
       }
     },
     {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/30c746dee25dde33aef4bb61d5b054e2821e4564.html",
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/5b39aa37000933c7b9a766970b829ce5fada62d6.html",
       "@type": "TestSubject",
       "dct:hasPart": [
         {
@@ -52846,7 +52931,7 @@
             "@list": []
           },
           "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/30c746dee25dde33aef4bb61d5b054e2821e4564.html"
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/5b39aa37000933c7b9a766970b829ce5fada62d6.html"
         },
         {
           "@type": [
@@ -52859,7 +52944,7 @@
               "cnt:ContentAsText"
             ],
             "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Failed Example 6</title>\n</head>\n<body>\n\t<label for=\"tag_combo\">Tag</label>\n\t<input type=\"text\" id=\"tag_combo\" role=\"combobox\" aria-expanded=\"true\" aria-owns=\"popup_listbox\" />\n\t<ul role=\"listbox\" id=\"popup_listbox\">\n\t\t<li role=\"option\">Zebra</li>\n\t\t<li role=\"option\" id=\"selected_option\">Zoom</li>\n\t</ul>\n</body>\n</html>"
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Passed Example 2</title>\n</head>\n<body>\n\t<div role=\"checkbox\" aria-checked=\"false\" aria-labelledby=\"label\"></div>\n\t<div id=\"label\">Check me</div>\n</body>\n</html>"
           },
           "http-vocab:headers": {
             "@list": [
@@ -52873,7 +52958,7 @@
           "http-vocab:statusCodeValue": 200
         }
       ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/30c746dee25dde33aef4bb61d5b054e2821e4564.html"
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/5b39aa37000933c7b9a766970b829ce5fada62d6.html"
     },
     {
       "@type": "Assertion",
@@ -52881,8 +52966,8 @@
       "earl:mode": "earl:automatic",
       "result": {
         "@type": "TestResult",
-        "info": "The element does not have all required states and properties",
-        "outcome": "earl:failed",
+        "info": "The element has all required states and properties",
+        "outcome": "earl:passed",
         "earl:pointer": {
           "@type": [
             "ptr:Pointer",
@@ -52890,11 +52975,11 @@
             "ptr:ExpressionPointer",
             "ptr:XPathPointer"
           ],
-          "ptr:expression": "/html[1]/body[1]/input[1]"
+          "ptr:expression": "/html[1]/body[1]/div[1]"
         }
       },
       "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/30c746dee25dde33aef4bb61d5b054e2821e4564.html"
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/5b39aa37000933c7b9a766970b829ce5fada62d6.html"
       },
       "test": {
         "@id": "https://alfa.siteimprove.com/rules/sia-r16"
@@ -53266,7 +53351,7 @@
       }
     },
     {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/ba5019010a6e0cfbcb46b2f7e9e63a6117e06f97.html",
+      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/add6f67d15c10ce6195ff5488ae7f5dab8bc3632.html",
       "@type": "TestSubject",
       "dct:hasPart": [
         {
@@ -53286,7 +53371,7 @@
             "@list": []
           },
           "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/ba5019010a6e0cfbcb46b2f7e9e63a6117e06f97.html"
+          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/add6f67d15c10ce6195ff5488ae7f5dab8bc3632.html"
         },
         {
           "@type": [
@@ -53299,7 +53384,7 @@
               "cnt:ContentAsText"
             ],
             "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Passed Example 6</title>\n</head>\n<body>\n\t<table>\n\t\t<tr>\n\t\t\t<th id=\"name\" colspan=\"2\">Name</th>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<th headers=\"name\">Firstname</th>\n\t\t\t<th headers=\"name\">Lastname</th>\n\t\t</tr>\n\t</table>\n</body>\n</html>"
+            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Inapplicable Example 6</title>\n</head>\n<body>\n\t<table role=\"heading\" aria-level=\"1\">\n\t\t<td id=\"self\" headers=\"self\">World</td>\n\t</table>\n</body>\n</html>"
           },
           "http-vocab:headers": {
             "@list": [
@@ -53313,7 +53398,7 @@
           "http-vocab:statusCodeValue": 200
         }
       ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/ba5019010a6e0cfbcb46b2f7e9e63a6117e06f97.html"
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/add6f67d15c10ce6195ff5488ae7f5dab8bc3632.html"
     },
     {
       "@type": "Assertion",
@@ -53321,20 +53406,10 @@
       "earl:mode": "earl:automatic",
       "result": {
         "@type": "TestResult",
-        "info": "The `headers` attribute refers to cells in the same `<table>`\nThe `headers` attribute does not refer to the cell defining it",
-        "outcome": "earl:passed",
-        "earl:pointer": {
-          "@type": [
-            "ptr:Pointer",
-            "ptr:SinglePointer",
-            "ptr:ExpressionPointer",
-            "ptr:XPathPointer"
-          ],
-          "ptr:expression": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/th[1]/@headers"
-        }
+        "outcome": "earl:inapplicable"
       },
       "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/ba5019010a6e0cfbcb46b2f7e9e63a6117e06f97.html"
+        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/add6f67d15c10ce6195ff5488ae7f5dab8bc3632.html"
       },
       "test": {
         "@id": "https://alfa.siteimprove.com/rules/sia-r45"
@@ -55068,81 +55143,6 @@
       },
       "test": {
         "@id": "https://alfa.siteimprove.com/rules/sia-r15"
-      }
-    },
-    {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/5b39aa37000933c7b9a766970b829ce5fada62d6.html",
-      "@type": "TestSubject",
-      "dct:hasPart": [
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Request"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": ""
-          },
-          "http-vocab:headers": {
-            "@list": []
-          },
-          "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/5b39aa37000933c7b9a766970b829ce5fada62d6.html"
-        },
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Response"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Passed Example 2</title>\n</head>\n<body>\n\t<div role=\"checkbox\" aria-checked=\"false\" aria-labelledby=\"label\"></div>\n\t<div id=\"label\">Check me</div>\n</body>\n</html>"
-          },
-          "http-vocab:headers": {
-            "@list": [
-              {
-                "@type": "http-vocab:MessageHeader",
-                "http-vocab:fieldName": "content-type",
-                "http-vocab:fieldValue": "text/html; charset=utf-8"
-              }
-            ]
-          },
-          "http-vocab:statusCodeValue": 200
-        }
-      ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/5b39aa37000933c7b9a766970b829ce5fada62d6.html"
-    },
-    {
-      "@type": "Assertion",
-      "earl:assertedBy": "Alfa",
-      "earl:mode": "earl:automatic",
-      "result": {
-        "@type": "TestResult",
-        "info": "The element has all required states and properties",
-        "outcome": "earl:passed",
-        "earl:pointer": {
-          "@type": [
-            "ptr:Pointer",
-            "ptr:SinglePointer",
-            "ptr:ExpressionPointer",
-            "ptr:XPathPointer"
-          ],
-          "ptr:expression": "/html[1]/body[1]/div[1]"
-        }
-      },
-      "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/5b39aa37000933c7b9a766970b829ce5fada62d6.html"
-      },
-      "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r16"
       }
     },
     {
@@ -57433,7 +57433,7 @@
             "ptr:ExpressionPointer",
             "ptr:XPathPointer"
           ],
-          "ptr:expression": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/th[2]/@headers"
+          "ptr:expression": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/th[1]/@headers"
         }
       },
       "subject": {

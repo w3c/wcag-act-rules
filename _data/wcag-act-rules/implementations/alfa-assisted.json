@@ -2,7 +2,7 @@
   "vendor": "Siteimprove",
   "name": "Alfa (semi-automated)",
   "version": "0.103.1",
-  "lastModified": "21 April 2025",
+  "lastModified": "5 May 2025",
   "approvedRules": {
     "complete": 26,
     "partial": 0,
@@ -683,7 +683,7 @@
             {
               "procedureName": "sia-r20",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -5514,7 +5514,7 @@
             {
               "procedureName": "sia-r45",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
