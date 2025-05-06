@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 59796f</p>
-  <p><strong>Date:</strong> Updated 23 June 2022</p>
+  <p><strong>Date:</strong> Updated 31 August 2023</p>
   <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It was approved and published by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: false
@@ -17,9 +17,10 @@ rule_meta:
   id: 59796f
   name: "Image button has non-empty accessible name"
   rule_type: atomic
+  original_file: image-button-non-empty-accessible-name-59796f.md
   description: |
     This rule checks that each image button element has a non-empty accessible name.
-  last_modified: 23 June 2022
+  last_modified: 31 August 2023
   scs_tested:
     - handle: Non-text Content
       num: 1.1.1
@@ -44,13 +45,15 @@ Each target element has an [accessible name][] that is neither empty (`""`), nor
 
 ## Accessibility Support
 
-There is a known combination of a popular browser and assistive technology that does not by default support `title` as an [accessible name][].
+The [input type="image" Accessible Name Computation algorithm](https://www.w3.org/TR/html-aam/#input-type-image-accessible-name-computation) uses the first non-empty name, but some user agents and assistive technologies combinations stop at the first existing one, even if empty.
 
 ## Background
 
+Contrarily to `img` elements, an empty `alt` attribute (`alt=""`) does not make an image button decorative; image buttons have a button role and are therefore exposed as interactive elements. Consequently, an empty `alt` attribute does not provide a "usable string" for image buttons and the computation defaults to other means of providing a name, as defined in [input type="image" Accessible Name Computation algorithm](https://www.w3.org/TR/html-aam/#input-type-image-accessible-name-computation).
+
 ### Related rules
 
-- [Button has non-empty accessible name](https://act-rules.github.io/rules/97a4e1)
+- [Button has non-empty accessible name](https://www.w3.org/WAI/standards-guidelines/act/rules/97a4e1/)
 
 ### Bibliography
 
@@ -148,8 +151,6 @@ The image button has an [accessible name][] through the `aria-label` attribute.
 <a class="example-link" title="Passed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/59796f/cab9b2d06e5a44e2056ccbdbb7096f55ab42859c.html">Open in a new tab</a>
 
 The image button has an [accessible name][] through the `title` attribute.
-
-**note**: The `title` attribute may not always be [accessibility supported](#accessibility-support).
 
 ```html
 <input type="image" src="/test-assets/shared/search-icon.svg" title="Search" />
@@ -312,8 +313,6 @@ An HTML element is _programmatically hidden_ if either it has a [computed][] CSS
 **Note**: Contrary to the other conditions, the `visibility` CSS property may be reverted by descendants.
 
 **Note**: The [HTML standard suggests](https://html.spec.whatwg.org/multipage/rendering.html#hidden-elements) setting the CSS `display` property to `none` for elements with the `hidden` attribute. While not required by HTML, all modern browsers follow this suggestion. Because of this the `hidden` attribute is not used in this definition. In browsers that use this suggestion, overriding the CSS `display` property can reveal elements with the `hidden` attribute.
-
-{% include_relative _versions.md %}
 
 [accessible name and description computation]: https://www.w3.org/TR/accname 'Accessible Name and Description Computation'
 [accessible name]: #accessible-name 'Definition of Accessible Name'

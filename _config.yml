@@ -31,8 +31,6 @@ kramwdown:
 highlighter: rouge
 repository: w3c/wcag-act-rules
 
-ytkey: AIzaSyCiZ9uToWu9jb7BTx47NtzCvmGGXKXp8nI
-
 remote_theme: w3c/wai-website-theme
 
 collections:
@@ -58,6 +56,8 @@ defaults:
       rule_meta:
         rule_type: "Atomic rule"
       sidebar: true
+      github:
+        hide: true
       ## @@@ IMPORTANT @@@: Change to the config file need to be manually copied over to the WAI website
       standalone_resource_header:
         title: ACT Rules

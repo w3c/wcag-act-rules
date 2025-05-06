@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 0va7u6</p>
-  <p><strong>Date:</strong> Updated 16 January 2023</p>
+  <p><strong>Date:</strong> Updated 2 December 2024</p>
   <p><strong>Authors:</strong> <a href="https://github.com/carlosapaduarte">Carlos Duarte</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
   
@@ -19,13 +19,17 @@ rule_meta:
   id: 0va7u6
   name: "HTML images contain no text"
   rule_type: atomic
+  original_file: image-no-text-0va7u6.md
   description: |
     This rule checks that images of text are not used
-  last_modified: 16 January 2023
+  last_modified: 2 December 2024
   scs_tested:
     - handle: Images of Text
       num: 1.4.5
       level: AA
+    - handle: Images of Text (No Exception)
+      num: 1.4.9
+      level: AAA
 ---
 
 ## Applicability
@@ -38,21 +42,20 @@ Each test target has no [visible][] [text][human language], except if at least o
 
 - <dfn id="0va7u6:decorative">decorative</dfn>: The image with text is [purely decorative][]; or
 - <dfn id="0va7u6:incidental">incidental</dfn>: The text is not a [significant][insignificant] part of the image; or
-- <dfn id="0va7u6:essential">essential</dfn>: Ensuring presentation of the text is [essential][].
-
-## Assumptions
-
-- There is no mechanism to change the rendered text in the image resource. Otherwise, the rule might fail while [SC 1.4.5 Images of Text][sc1.4.5] and [SC 1.4.9 Images of Text (No Exception)][sc1.4.9] might be satisfied.
-- The specific presentation of the text rendered in the image resource can be achieved through formatted text. Otherwise, the rule might fail while [SC 1.4.5 Images of Text][sc1.4.5] and [SC 1.4.9 Images of Text (No Exception)][sc1.4.9] might be satisfied.
-- When used in HTML, the SVG `<text>` element is not considered to be an image of text. This is because like any other element in HTML, SVG `<text>` can be adjusted through custom style sheets. This does not apply for SVG text that is in a separate file, and displayed through, for example, the `img` element.
-
-## Accessibility Support
-
-There are no accessibility support issues known.
+- <dfn id="0va7u6:essential">essential</dfn>: The presentation of the text is [essential][].
 
 ## Background
 
-This rule is designed specifically for [SC 1.4.5 Images of Text][sc1.4.5] which includes exceptions to the images it applies to that are not part of [SC 1.4.9 Images of Text (No Exception)][sc1.4.9]. Therefore, some images that are inapplicable for this rule can be applicable to [SC 1.4.9 Images of Text (No Exception)][sc1.4.9].
+This rule is designed specifically for [SC 1.4.5 Images of Text][sc1.4.5]. There are however only minimal differences between this criterion and [SC 1.4.9 Images of Text (No Exception)][sc1.4.9]. The two differences are that customizable images of text are allowed, and that images of text are allowed when the presentation cannot otherwise be achieved. These scenarios are so rare the rule ignores them as part of the assumptions, and so the [accessibility requirements mapping](#accessibility-requirements-mapping) of these two criteria is the same.
+
+### Assumptions
+
+- This rule assumes that there is no mechanism to change the rendering of text within image resources on the page. For pages that _do_ provide such a mechanism, this rule might fail even if [SC 1.4.5 Images of Text][sc1.4.5] is satisfied.
+- When used in HTML, the SVG `<text>` element is not considered to be an image of text. This is because like any other element in HTML, SVG `<text>` can be adjusted through custom style sheets. This does not apply for SVG text that is in a separate file, and displayed through, for example, the `img` element.
+
+### Accessibility Support
+
+There are no accessibility support issues known.
 
 ### Bibliography
 
@@ -65,7 +68,7 @@ This rule is designed specifically for [SC 1.4.5 Images of Text][sc1.4.5] which 
   <li><details>
     <summary><span>1.4.5 Images of Text (Level AA)</span></summary>
     <ul>
-      <li><a href="https://www.w3.org/TR/WCAG21/#images-of-text">Learn more about 1.4.5 Images of Text</a></li>
+      <li><a href="https://www.w3.org/TR/WCAG22/#images-of-text">Learn more about 1.4.5 Images of Text</a></li>
       <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level AA and higher.</li>
       <li>Outcome mapping: <ul>
         <li>Any <code>failed</code> outcomes: success criterion is not satisfied</li>
@@ -77,7 +80,7 @@ This rule is designed specifically for [SC 1.4.5 Images of Text][sc1.4.5] which 
   <li><details>
     <summary><span>1.4.9 Images of Text (No Exception) (Level AAA)</span></summary>
     <ul>
-      <li><a href="https://www.w3.org/TR/WCAG21/#images-of-text-no-exception">Learn more about 1.4.9 Images of Text (No Exception)</a></li>
+      <li><a href="https://www.w3.org/TR/WCAG22/#images-of-text-no-exception">Learn more about 1.4.9 Images of Text (No Exception)</a></li>
       <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level AAA.</li>
       <li>Outcome mapping: <ul>
         <li>Any <code>failed</code> outcomes: success criterion is not satisfied</li>
@@ -269,10 +272,13 @@ This image resource referenced by the `img` element contains text that provides 
 This `img` element loads an SVG with text as an image resource. Because the SVG is loaded as an image resource, instead of being embedded in HTML the text cannot be selected or customized.
 
 ```html
-<img alt="WCAG Rocks" src="data:image/svg+xml;utf8,
+<img
+	alt="WCAG Rocks"
+	src="data:image/svg+xml;utf8,
 <svg xmlns='http://www.w3.org/2000/svg' height='20px' width='80px'>
   <text x='0' y='15'>WCAG Rocks</text>
-</svg>" />
+</svg>"
+/>
 ```
 
 ### Inapplicable
@@ -349,7 +355,7 @@ Examples of text for which the presentation is essential include:
 4. A bar chart, diagram, or maps with place names
 5. An image showing a font, or showing the difference between font-weights
 
-**Note:** WCAG includes a generic definition of "[essential](https://www.w3.org/WAI/WCAG21/Understanding/images-of-text.html#dfn-essential)".
+**Note:** WCAG includes a generic definition of "[essential](https://www.w3.org/WAI/WCAG22/Understanding/images-of-text.html#dfn-essential)".
 
 ### Insignificant {#insignificant}
 
@@ -359,15 +365,19 @@ Content that is neither [purely decorative][], nor required for understanding th
 
 ### Outcome {#outcome}
 
-An _outcome_ is a conclusion that comes from evaluating an ACT Rule on a [test subject](https://www.w3.org/TR/act-rules-format/#test-subject) or one of its constituent [test target](https://www.w3.org/TR/act-rules-format/#test-target). An outcome can be one of the three following types:
+A conclusion that comes from evaluating an ACT Rule on a [test subject][] or one of its constituent test target. An outcome can be one of the five following types:
 
 - **Inapplicable:** No part of the test subject matches the applicability
-- **Passed:** A [test target](https://www.w3.org/TR/act-rules-format/#test-target) meets all expectations
-- **Failed:** A [test target](https://www.w3.org/TR/act-rules-format/#test-target) does not meet all expectations
+- **Passed:** A [test target][] meets all expectations
+- **Failed:** A [test target][] does not meet all expectations
+- **cantTell:** Whether the rule is applicable, or not all expectations were met could not be fully determined by the tester.
+- **Untested**: The tester has not attempted to evaluate the test subject.
 
-**Note:** A rule has one `passed` or `failed` outcome for every [test target](https://www.w3.org/TR/act-rules-format/#test-target). When there are no test targets the rule has one `inapplicable` outcome. This means that each [test subject](https://www.w3.org/TR/act-rules-format/#test-subject) will have one or more outcomes.
+**Note**: A rule has one `passed` or `failed` outcome for every [test target][]. When a tester evaluates a test target it can also be reported as `cantTell` if the rule cannot be tested in its entirety. For example, when applicability was automated, but the expectations have to be evaluated manually.
 
-**Note:** Implementations using the [EARL10-Schema](https://www.w3.org/TR/EARL10-Schema/) can express the outcome with the [outcome property](https://www.w3.org/TR/EARL10-Schema/#outcome). In addition to `passed`, `failed` and `inapplicable`, EARL 1.0 also defined an `incomplete` outcome. While this cannot be the outcome of an ACT Rule when applied in its entirety, it often happens that rules are only partially evaluated. For example, when applicability was automated, but the expectations have to be evaluated manually. Such "interim" results can be expressed with the `incomplete` outcome.
+When there are no test targets the rule has one `inapplicable` outcome. If the tester is unable to determine whether there are test targets there will be one `cantTell` outcome. And when no evaluation has occurred the test target has one untested outcome. This means that each [test subject][] always has one or more outcomes.
+
+Outcomes used in ACT Rules can be expressed using the [outcome property][] of the [[EARL10-Schema]][].
 
 ### Rendered Image Resource {#rendered-image-resource}
 
@@ -379,17 +389,17 @@ Content perceivable through sight.
 
 Content is considered _visible_ if making it fully transparent would result in a difference in the pixels rendered for any part of the document that is currently within the viewport or can be brought into the viewport via scrolling.
 
-[Content is defined in WCAG](https://www.w3.org/TR/WCAG21/#dfn-content).
+[Content is defined in WCAG](https://www.w3.org/TR/WCAG22/#dfn-content).
 
 For more details, see [examples of visible](https://act-rules.github.io/pages/examples/visible/).
 
 ### Web page (HTML) {#web-page-html}
 
-An _HTML [web page](https://www.w3.org/TR/WCAG21/#dfn-web-page-s)_ is the set of all [fully active](https://html.spec.whatwg.org/#fully-active) [documents](https://dom.spec.whatwg.org/#concept-document) which share the same [top-level browsing context](https://html.spec.whatwg.org/#top-level-browsing-context).
+An _HTML [web page](https://www.w3.org/TR/WCAG22/#dfn-web-page-s)_ is the set of all [fully active](https://html.spec.whatwg.org/#fully-active) [documents](https://dom.spec.whatwg.org/#concept-document) which share the same [top-level browsing context](https://html.spec.whatwg.org/#top-level-browsing-context).
 
 **Note:** Nesting of browsing context mostly happens with `iframe` and `object`. Thus a web page will most of the time be a "top-level" document and all its `iframe` and `object` (recursively).
 
-**Note:** [Web pages](https://www.w3.org/TR/WCAG21/#dfn-web-page-s) as defined by WCAG are not restricted to the HTML technology but can also include, _e.g._, PDF or DOCX documents.
+**Note:** [Web pages](https://www.w3.org/TR/WCAG22/#dfn-web-page-s) as defined by WCAG are not restricted to the HTML technology but can also include, _e.g._, PDF or DOCX documents.
 
 **Note:** Although web pages as defined here are sets of [documents](https://dom.spec.whatwg.org/#concept-document) (and do not contain other kind of nodes), one can abusively write that any node is "in a web page" if it is a [shadow-including descendant](https://dom.spec.whatwg.org/#concept-shadow-including-descendant) of a [document](https://dom.spec.whatwg.org/#concept-document) that is part of that web page.
 
@@ -400,25 +410,29 @@ An _HTML [web page](https://www.w3.org/TR/WCAG21/#dfn-web-page-s)_ is the set of
 [computed]: https://www.w3.org/TR/css-cascade-4/#computed 'CSS Cascading and Inheritance Level 4 (Working draft) - Computed Values'
 [css-image]: https://www.w3.org/TR/css-images-3/#typedef-image
 [descendants]: https://dom.spec.whatwg.org/#concept-tree-descendant
+[earl10-schema]: https://www.w3.org/TR/act-rules-format-1.1/#biblio-earl10-schema
 [embedded image]: #embedded-image 'Definition of Embedded Image'
 [enumerated attributes]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#enumerated-attribute 'HTML Specification of Enumerated Attribute'
 [essential]: #essential-text-presentation 'Definition of Essential (Text Presentation)'
 [html aam]: https://www.w3.org/TR/html-aam-1.0/#html-attribute-state-and-property-mappings 'Specification of HTML attributes value mapping to ARIA states and properties'
-[human language]: https://www.w3.org/WAI/WCAG21/Understanding/images-of-text.html#dfn-human-language 'WCAG 2.1, Definition of human language'
+[human language]: https://www.w3.org/WAI/WCAG22/Understanding/images-of-text.html#dfn-human-language 'WCAG 2.2, Definition of human language'
 [idl attribute]: https://heycam.github.io/webidl/#idl-attributes "Definition of Web IDL Attribute (Editor's Draft)"
 [image button]: https://html.spec.whatwg.org/multipage/input.html#image-button-state-(type=image)
 [image sources]: https://html.spec.whatwg.org/multipage/images.html#image-source
 [insignificant]: #insignificant 'Definition of Insignificant'
 [numbers]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#numbers 'HTML Specification of Number Parsing'
-[purely decorative]: https://www.w3.org/TR/WCAG21/#dfn-pure-decoration 'WCAG 2.1, Purely decorative'
+[outcome property]: https://www.w3.org/TR/EARL10-Schema/#outcome
+[purely decorative]: https://www.w3.org/TR/WCAG22/#dfn-pure-decoration 'WCAG 2.2, Purely decorative'
 [reflect]: https://html.spec.whatwg.org/multipage/common-dom-interfaces.html#reflecting-content-attributes-in-idl-attributes 'HTML specification of Reflecting Content Attributes in IDL Attributes'
 [rendered image resources]: #rendered-image-resource 'Definition of rendered image resource'
-[sc1.4.5]: https://www.w3.org/WAI/WCAG21/Understanding/images-of-text
-[sc1.4.9]: https://www.w3.org/WAI/WCAG21/Understanding/images-of-text-no-exception
+[sc1.4.5]: https://www.w3.org/WAI/WCAG22/Understanding/images-of-text
+[sc1.4.9]: https://www.w3.org/WAI/WCAG22/Understanding/images-of-text-no-exception
 [source set]: https://html.spec.whatwg.org/multipage/images.html#source-set
 [space separated]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#space-separated-tokens 'HTML Specification of Space Separated Tokens'
+[test subject]: https://www.w3.org/TR/act-rules-format-1.1/#test-subject
+[test target]: https://www.w3.org/TR/act-rules-format/#test-target
 [url-reference]: https://www.w3.org/TR/css-images-3/#url-notation
 [visible pixels]: #visible 'Definition of visible'
 [visible]: #visible 'Definition of visible'
-[wai-aria specification]: https://www.w3.org/TR/wai-aria-1.1/#propcharacteristic_value 'WAI-ARIA Specification of States and Properties Value'
+[wai-aria specification]: https://www.w3.org/TR/wai-aria-1.2/#propcharacteristic_value 'WAI-ARIA Specification of States and Properties Value'
 [web page]: #web-page-html 'Definition of web page (HTML)'

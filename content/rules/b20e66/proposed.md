@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> b20e66</p>
-  <p><strong>Date:</strong> Updated 7 February 2023</p>
+  <p><strong>Date:</strong> Updated 2 December 2024</p>
   <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/Jym77">Jean-Yves Moyen</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -17,9 +17,10 @@ rule_meta:
   id: b20e66
   name: "Links with identical accessible names have equivalent purpose"
   rule_type: atomic
+  original_file: links-identical-name-equivalent-purpose-b20e66.md
   description: |
     This rule checks that links with identical accessible names resolve to the same resource or equivalent resources.
-  last_modified: 7 February 2023
+  last_modified: 2 December 2024
   scs_tested:
     - handle: Link Purpose (Link Only)
       num: 2.4.9
@@ -41,24 +42,22 @@ This rule applies to any set of any two or more [HTML or SVG elements][] for whi
 
 When followed, the links in each set of target elements resolve to the [same resource][] or to [equivalent resources](#equivalent-resource). Resolving the links includes potential redirects, if the redirects happen instantly.
 
-## Assumptions
+## Background
+
+### Assumptions
 
 - This rule assumes that the purpose of the links with identical [accessible names][accessible name] would not be ambiguous to users in general when seen in context on the web page, which is the exception mentioned in [Success Criterion 2.4.9 Link Purpose (Link Only)][sc249]. If the links are ambiguous to users in general, users of assistive technologies are not at a disadvantage when viewing the links out of context, e.g. on a list of links in a screen reader, which makes it more of a general user experience concern than an accessibility issue.
 - This rule assumes that, within the context of the test subject, the description provided by the [accessible name][] of a link can only accurately describe one resource (notably, homonyms alone are not used as link names). Thus, if two or more links have the same [accessible name][] but resolve to different resources, at least one of them does not describe its purpose.
 
-## Accessibility Support
+### Accessibility Support
 
 - This rule assumes that assistive technologies are exposing all links on the page in the same way no matter which [document tree](https://dom.spec.whatwg.org/#document-trees) they are in. If an assistive technology requires the user to "enter" an `iframe` or a [shadow tree][] before exposing its links, then it is possible for two links to have identical name but resolve to different resources without failing [Success Criterion 2.4.9 Link Purpose (Link Only)][sc249] (if said links are in separate [documents][document] or [shadow trees][shadow tree]).
 - Implementation of [Presentational Roles Conflict Resolution][] varies from one browser or assistive technology to another. Depending on this, some [inheriting semantic][] `link` elements can fail this rule with some technology but users of other technologies would not experience any accessibility issue.
 
-## Background
-
-This rule is closely related to [success criterion 2.4.4 Link Purpose (In Context)][sc244]. Because this rule is stricter, links that pass this rule satisfy 2.4.4 Link Purpose (In Context).
-
 ### Bibliography
 
 - [CSS Scoping Module Level 1 (editor's draft)](https://drafts.csswg.org/css-scoping/)
-- [Understanding Success Criterion 2.4.9: Link Purpose (Link Only)](https://www.w3.org/WAI/WCAG21/Understanding/link-purpose-link-only.html)
+- [Understanding Success Criterion 2.4.9: Link Purpose (Link Only)](https://www.w3.org/WAI/WCAG22/Understanding/link-purpose-link-only.html)
 - [HTML Specification - URL parsing](https://html.spec.whatwg.org/#resolving-urls)
 
 ## Accessibility Requirements Mapping
@@ -67,7 +66,7 @@ This rule is closely related to [success criterion 2.4.4 Link Purpose (In Contex
   <li><details>
     <summary><span>2.4.9 Link Purpose (Link Only) (Level AAA)</span></summary>
     <ul>
-      <li><a href="https://www.w3.org/TR/WCAG21/#link-purpose-link-only">Learn more about 2.4.9 Link Purpose (Link Only)</a></li>
+      <li><a href="https://www.w3.org/TR/WCAG22/#link-purpose-link-only">Learn more about 2.4.9 Link Purpose (Link Only)</a></li>
       <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level AAA.</li>
       <li>Outcome mapping: <ul>
         <li>Any <code>failed</code> outcomes: success criterion is not satisfied</li>
@@ -88,6 +87,222 @@ The following aspects are required in using this rule.
 - [Language](https://www.w3.org/TR/act-rules-aspects/#input-aspects-text)
 
 ## Test Cases
+
+<details class="act-inline-assets" markdown="block">
+<summary><span>These HTML files are used in several examples:</span></summary>
+
+File [`/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/index.html`](https://w3.org/WAI/content-assets/wcag-act-rules/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/index.html):
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>My University</title>
+	</head>
+	<body>
+		<h1>Welcome to My University</h1>
+		<p>We are currently working on getting our website up and running.</p>
+	</body>
+</html>
+```
+
+File [`/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/redirect.html`](https://w3.org/WAI/content-assets/wcag-act-rules/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/redirect.html):
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="refresh" content="0; URL='index.html'" />
+		<title>Redirecting to another page</title>
+	</head>
+	<body></body>
+</html>
+```
+
+File [`/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/index-copy.html`](https://w3.org/WAI/content-assets/wcag-act-rules/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/index-copy.html):
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>My University</title>
+	</head>
+	<body>
+		<h1>Welcome to My University</h1>
+		<p>We are currently working on getting our website up and running.</p>
+	</body>
+</html>
+```
+
+File [`/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/about/contact.html`](https://w3.org/WAI/content-assets/wcag-act-rules/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/about/contact.html):
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>About - Contact</title>
+	</head>
+	<body>
+		<nav label="main menu" style="text-align: right;">
+			<a href="../about.html">About</a>
+			<a href="../admissions.html">Admissions</a>
+			<a href="../careers.html">Careers</a>
+		</nav>
+		<nav label="breadcrumb">
+			<p>You are here: <a href="../about.html">About</a> / Contact us</p>
+		</nav>
+		<nav label="submenu" style="float:left">
+			<h2>About</h2>
+			<ul>
+				<li style="list-style-type: none;"><a href="history.html">History</a></li>
+				<li style="list-style-type: none;"><a href="employees.html">Employees</a></li>
+				<li style="list-style-type: none;"><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+		<main style="float:left; margin-left: 50px;">
+			<h1>Contact us</h1>
+			<p>Phone: (541) 754-3010</p>
+		</main>
+	</body>
+</html>
+```
+
+File [`/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/careers/contact.html`](https://w3.org/WAI/content-assets/wcag-act-rules/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/careers/contact.html):
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>About - Contact</title>
+	</head>
+	<body>
+		<nav label="main menu" style="text-align: right;">
+			<a href="../about.html">About</a>
+			<a href="../admissions.html">Admissions</a>
+			<a href="../careers.html">Careers</a>
+		</nav>
+		<nav label="breadcrumb">
+			<p>You are here: <a href="../careers.html">Careers</a> / Contact</p>
+		</nav>
+		<nav label="submenu" style="float:left">
+			<h2>Careers</h2>
+			<ul>
+				<li style="list-style-type: none;"><a href="positions.html">Open positions</a></li>
+				<li style="list-style-type: none;"><a href="benefits.html">Benefits</a></li>
+				<li style="list-style-type: none;"><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+		<main style="float:left; margin-left: 50px;">
+			<h1>Contact us</h1>
+			<p>Phone: (541) 754-3010</p>
+		</main>
+	</body>
+</html>
+```
+
+File [`/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/page1.html`](https://w3.org/WAI/content-assets/wcag-act-rules/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/page1.html):
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Get in touch</title>
+	</head>
+	<body>
+		<h1>Get in touch</h1>
+		<p>Call us: (541) 754-3010</p>
+	</body>
+</html>
+```
+
+File [`/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/page2.html`](https://w3.org/WAI/content-assets/wcag-act-rules/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/page2.html):
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Contact us</title>
+	</head>
+	<body>
+		<h1>Contact us</h1>
+		<p>Phone: (541) 754-3010</p>
+		<p>Email: email@university.com</p>
+		<p>Telefax: (541) 754-3011</p>
+	</body>
+</html>
+```
+
+File [`/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/page3.html`](https://w3.org/WAI/content-assets/wcag-act-rules/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/page3.html):
+
+```html
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Get in touch</title>
+	</head>
+	<body style="background-color: blue; color: yellow">
+		<h1 style="border: 1px solid yellow">Get in touch</h1>
+		<p>Call us: (541) 754-3010</p>
+	</body>
+</html>
+```
+
+File [`/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/admissions/contact.html`](https://w3.org/WAI/content-assets/wcag-act-rules/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/admissions/contact.html):
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>About - Contact</title>
+	</head>
+	<body>
+		<nav label="main menu" style="text-align: right;">
+			<a href="../about.html">About</a>
+			<a href="../admissions.html">Admissions</a>
+			<a href="../careers.html">Careers</a>
+		</nav>
+		<nav label="breadcrumb">
+			<p>You are here: <a href="../admissions.html">Admissions</a> / Contact</p>
+		</nav>
+		<nav label="submenu" style="float:left">
+			<h2>Admissions</h2>
+			<ul>
+				<li style="list-style-type: none;"><a href="positions.html">Visit</a></li>
+				<li style="list-style-type: none;"><a href="benefits.html">Dates</a></li>
+				<li style="list-style-type: none;"><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+		<main style="float:left; margin-left: 50px;">
+			<h1>Contact us</h1>
+			<p>Phone: (541) 754-3011</p>
+		</main>
+	</body>
+</html>
+```
+
+File [`/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/redirect1.html`](https://w3.org/WAI/content-assets/wcag-act-rules/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/redirect1.html):
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="refresh" content="30; URL='index.html'" />
+		<title>Redirecting to another page</title>
+	</head>
+	<body></body>
+</html>
+```
+
+</details>
 
 ### Passed
 
@@ -414,7 +629,7 @@ These `a` and `area` elements have no `href` attribute. Thus they are not links 
 
 These links have different [accessible names][accessible name]. The rule only applies to identical [accessible names][accessible name], not to identical link destinations.
 
-**Note:** It is a best practice for [Success Criterion 2.4.9: Link Purpose (Link Only)](https://www.w3.org/WAI/WCAG21/Understanding/link-purpose-link-only.html) that identical links have identical [accessible names][accessible name]. This is however not a requirement.
+**Note:** It is a best practice for [Success Criterion 2.4.9: Link Purpose (Link Only)](https://www.w3.org/WAI/WCAG22/Understanding/link-purpose-link-only.html) that identical links have identical [accessible names][accessible name]. This is however not a requirement.
 
 ```html
 <html lang="en">
@@ -489,7 +704,7 @@ An element is _focusable_ if one or both of the following are true:
 - the element is part of [sequential focus navigation][]; or
 - the element has a [tabindex value][] that is not null.
 
-**Exception**: Elements that lose focus during a period of up to 1 second after gaining focus, without the user interacting with the page the element is on, are not considered _focusable_.
+**Exception**: Elements that lose focus and do not regain focus during a period of up to 1 second after gaining focus, without the user interacting with the page the element is on, are not considered _focusable_.
 
 Notes:
 
@@ -531,7 +746,7 @@ Elements can also be ignored by assistive technologies if they are [programmatic
 
 ### Matching characters {#matching-characters}
 
-A sequence of characters is considered to _match_ another if, after removing leading and trailing [space characters](https://html.spec.whatwg.org/#white_space) and replacing remaining occurrences of one or more space characters with a single space, the two sequences of characters are equal character-by-character, ignoring any differences in letter casing.
+A sequence of characters is considered to _match_ another if, after removing leading and trailing [whitespace characters][] and replacing remaining occurrences of one or more whitespace characters with a single space, the two sequences of characters are equal character-by-character, ignoring any differences in letter casing.
 
 ### Namespaced Element {#namespaced-element}
 
@@ -541,15 +756,19 @@ Namespaced elements are not limited to elements described in a specification. Th
 
 ### Outcome {#outcome}
 
-An _outcome_ is a conclusion that comes from evaluating an ACT Rule on a [test subject](https://www.w3.org/TR/act-rules-format/#test-subject) or one of its constituent [test target](https://www.w3.org/TR/act-rules-format/#test-target). An outcome can be one of the three following types:
+A conclusion that comes from evaluating an ACT Rule on a [test subject][] or one of its constituent test target. An outcome can be one of the five following types:
 
 - **Inapplicable:** No part of the test subject matches the applicability
-- **Passed:** A [test target](https://www.w3.org/TR/act-rules-format/#test-target) meets all expectations
-- **Failed:** A [test target](https://www.w3.org/TR/act-rules-format/#test-target) does not meet all expectations
+- **Passed:** A [test target][] meets all expectations
+- **Failed:** A [test target][] does not meet all expectations
+- **cantTell:** Whether the rule is applicable, or not all expectations were met could not be fully determined by the tester.
+- **Untested**: The tester has not attempted to evaluate the test subject.
 
-**Note:** A rule has one `passed` or `failed` outcome for every [test target](https://www.w3.org/TR/act-rules-format/#test-target). When there are no test targets the rule has one `inapplicable` outcome. This means that each [test subject](https://www.w3.org/TR/act-rules-format/#test-subject) will have one or more outcomes.
+**Note**: A rule has one `passed` or `failed` outcome for every [test target][]. When a tester evaluates a test target it can also be reported as `cantTell` if the rule cannot be tested in its entirety. For example, when applicability was automated, but the expectations have to be evaluated manually.
 
-**Note:** Implementations using the [EARL10-Schema](https://www.w3.org/TR/EARL10-Schema/) can express the outcome with the [outcome property](https://www.w3.org/TR/EARL10-Schema/#outcome). In addition to `passed`, `failed` and `inapplicable`, EARL 1.0 also defined an `incomplete` outcome. While this cannot be the outcome of an ACT Rule when applied in its entirety, it often happens that rules are only partially evaluated. For example, when applicability was automated, but the expectations have to be evaluated manually. Such "interim" results can be expressed with the `incomplete` outcome.
+When there are no test targets the rule has one `inapplicable` outcome. If the tester is unable to determine whether there are test targets there will be one `cantTell` outcome. And when no evaluation has occurred the test target has one untested outcome. This means that each [test subject][] always has one or more outcomes.
+
+Outcomes used in ACT Rules can be expressed using the [outcome property][] of the [[EARL10-Schema]][].
 
 ### Programmatically Hidden {#programmatically-hidden}
 
@@ -598,15 +817,31 @@ The _WAI ARIA Specifications_ group both the WAI ARIA W3C Recommendation and ARI
 
 ### Web page (HTML) {#web-page-html}
 
-An _HTML [web page](https://www.w3.org/TR/WCAG21/#dfn-web-page-s)_ is the set of all [fully active](https://html.spec.whatwg.org/#fully-active) [documents](https://dom.spec.whatwg.org/#concept-document) which share the same [top-level browsing context](https://html.spec.whatwg.org/#top-level-browsing-context).
+An _HTML [web page](https://www.w3.org/TR/WCAG22/#dfn-web-page-s)_ is the set of all [fully active](https://html.spec.whatwg.org/#fully-active) [documents](https://dom.spec.whatwg.org/#concept-document) which share the same [top-level browsing context](https://html.spec.whatwg.org/#top-level-browsing-context).
 
 **Note:** Nesting of browsing context mostly happens with `iframe` and `object`. Thus a web page will most of the time be a "top-level" document and all its `iframe` and `object` (recursively).
 
-**Note:** [Web pages](https://www.w3.org/TR/WCAG21/#dfn-web-page-s) as defined by WCAG are not restricted to the HTML technology but can also include, _e.g._, PDF or DOCX documents.
+**Note:** [Web pages](https://www.w3.org/TR/WCAG22/#dfn-web-page-s) as defined by WCAG are not restricted to the HTML technology but can also include, _e.g._, PDF or DOCX documents.
 
 **Note:** Although web pages as defined here are sets of [documents](https://dom.spec.whatwg.org/#concept-document) (and do not contain other kind of nodes), one can abusively write that any node is "in a web page" if it is a [shadow-including descendant](https://dom.spec.whatwg.org/#concept-shadow-including-descendant) of a [document](https://dom.spec.whatwg.org/#concept-document) that is part of that web page.
 
-[abstract]: https://www.w3.org/TR/wai-aria-1.1/#isAbstract 'ARIA Definition for Abstract Roles'
+### Whitespace {#whitespace}
+
+_Whitespace_ are characters that have the Unicode "White_Space" property in the [Unicode properties list](https://www.unicode.org/Public/UCD/latest/ucd/PropList.txt).
+
+This includes:
+
+- all characters in the [Unicode Separator categories](https://www.unicode.org/versions/Unicode11.0.0/ch04.pdf#G134153), and
+- the following characters in the [Other, Control](https://www.unicode.org/versions/Unicode11.0.0/ch04.pdf#G134153) category:
+
+  - Character tabulation (U+0009)
+  - Line Feed (LF) (U+000A)
+  - Line Tabulation (U+000B)
+  - Form Feed (FF) (U+000C)
+  - Carriage Return (CR) (U+000D)
+  - Next Line (NEL) (U+0085)
+
+[abstract]: https://www.w3.org/TR/wai-aria-1.2/#isAbstract 'ARIA Definition for Abstract Roles'
 [accessibility support base line]: https://www.w3.org/TR/WCAG-EM/#step1c 'Definition of accessibility support base line'
 [accessible name and description computation]: https://www.w3.org/TR/accname 'Accessible Name and Description Computation'
 [accessible name]: #accessible-name 'Definition of accessible name'
@@ -614,6 +849,7 @@ An _HTML [web page](https://www.w3.org/TR/WCAG21/#dfn-web-page-s)_ is the set of
 [computed]: https://www.w3.org/TR/css-cascade/#computed-value 'CSS definition of computed value'
 [doc-biblioref]: https://www.w3.org/TR/dpub-aria-1.0/#doc-biblioref 'DPUB ARIA Definition of doc-biblioref'
 [document]: https://dom.spec.whatwg.org/#concept-document 'Definition of document'
+[earl10-schema]: https://www.w3.org/TR/act-rules-format-1.1/#biblio-earl10-schema
 [element]: https://dom.spec.whatwg.org/#element 'DOM element, 2021/05/31'
 [examples of accessible name]: https://act-rules.github.io/pages/examples/accessible-name/
 [examples of included in the accessibility tree]: https://act-rules.github.io/pages/examples/included-in-the-accessibility-tree/
@@ -631,18 +867,21 @@ An _HTML [web page](https://www.w3.org/TR/WCAG21/#dfn-web-page-s)_ is the set of
 [marked as decorative]: #marked-as-decorative 'Definition of Marked as Decorative'
 [matching]: #matching-characters 'Definition of matching characters'
 [namespaceuri]: https://dom.spec.whatwg.org/#dom-element-namespaceuri 'DOM Element namespaceURI, 2021/05/31'
-[presentational roles conflict resolution]: https://www.w3.org/TR/wai-aria-1.1/#conflict_resolution_presentation_none 'Presentational Roles Conflict Resolution'
+[outcome property]: https://www.w3.org/TR/EARL10-Schema/#outcome
+[presentational roles conflict resolution]: https://www.w3.org/TR/wai-aria-1.2/#conflict_resolution_presentation_none 'Presentational Roles Conflict Resolution'
 [programmatically hidden]: #programmatically-hidden 'Definition of Programmatically Hidden'
-[pure decoration]: https://www.w3.org/TR/WCAG21/#dfn-pure-decoration 'WCAG definition of Pure Decoration'
+[pure decoration]: https://www.w3.org/TR/WCAG22/#dfn-pure-decoration 'WCAG definition of Pure Decoration'
 [role attribute]: https://www.w3.org/TR/role-attribute/ 'Specification of the role attribute'
 [rules for parsing integers]: https://html.spec.whatwg.org/#rules-for-parsing-integers
 [same resource]: #same-resource 'Definition of same resource'
-[sc244]: https://www.w3.org/TR/WCAG21/#link-purpose-in-context 'Success Criterion 2.4.4: Link Purpose (In Context)'
-[sc249]: https://www.w3.org/TR/WCAG21/#link-purpose-link-only 'Success Criterion 2.4.9: Link Purpose (Link Only)'
+[sc249]: https://www.w3.org/TR/WCAG22/#link-purpose-link-only 'Success Criterion 2.4.9: Link Purpose (Link Only)'
 [semantic role]: #semantic-role 'Definition of semantic role'
 [sequential focus navigation]: https://html.spec.whatwg.org/multipage/interaction.html#sequential-focus-navigation
 [shadow tree]: https://dom.spec.whatwg.org/#shadow-tree 'Definition of shadow tree'
 [tabindex attribute]: https://html.spec.whatwg.org/#attr-tabindex
 [tabindex value]: https://html.spec.whatwg.org/#tabindex-value
+[test subject]: https://www.w3.org/TR/act-rules-format-1.1/#test-subject
+[test target]: https://www.w3.org/TR/act-rules-format/#test-target
 [wai-aria specifications]: #wai-aria-specifications 'Definition of WAI-ARIA specifications'
 [web page (html)]: #web-page-html 'Definition of web page (HTML)'
+[whitespace characters]: #whitespace 'Definition of Whitespace'

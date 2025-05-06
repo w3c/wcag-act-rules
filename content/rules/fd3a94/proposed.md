@@ -9,17 +9,18 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> fd3a94</p>
-  <p><strong>Date:</strong> Updated 28 February 2023</p>
-  <p><strong>Authors:</strong> <a href="https://github.com/carlosapaduarte">Carlos Duarte</a>. Previous Authors: <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
+  <p><strong>Date:</strong> Updated 2 December 2024</p>
+  <p><strong>Authors:</strong> <a href="https://github.com/carlosapaduarte">Carlos Duarte</a>, Giacomo Petri. Previous Authors: <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
 rule_meta:
   id: fd3a94
   name: "Links with identical accessible names and same context serve equivalent purpose"
   rule_type: atomic
+  original_file: links-with-identical-names-and-context-serve-equivalent-purpose-fd3a94.md
   description: |
     This rule checks that links with identical accessible names in the same context resolve to the same or equivalent resources.
-  last_modified: 28 February 2023
+  last_modified: 2 December 2024
   scs_tested:
     - handle: Link Purpose (In Context)
       num: 2.4.4
@@ -34,36 +35,43 @@ This rule applies to any set of two or more [HTML or SVG elements][] for which a
 - the elements are in the same [web page (HTML)][]; and
 - the elements are [included in the accessibility tree][included in the accessibility tree]; and
 - the elements have [matching][] [accessible names][accessible name] that are not empty (`""`); and
-- have the same [programmatically determined link context][].
+- the elements have the same [programmatically determined link context][].
 
 **Note:** The test target for this rule is the full set of link elements that share the same [matching][] [accessible name][] and [programmatically determined link context][].
 
 ## Expectation
 
-When followed, the links in each set of target elements resolve to the [same resource][] or to [equivalent resources](#equivalent-resource).
+For each pair of links in each target set, one of the following is true:
+
+- both links resolve to the [same resource][]; or
+- both links resolve to [equivalent resources][equivalent resource]; or
+- there is no visual information within the [web page][] to let users know that both links resolve to [non-equivalent resources][equivalent resource].
 
 **Note**: Resolving the links includes potential redirects, if the redirects happen instantly.
 
-## Assumptions
+## Background
 
-- This rule assumes that the purpose of the links with identical [accessible names][accessible name] and [context][programmatically determined link context] would not be ambiguous to users in general, which is the exception mentioned in [Success Criterion 2.4.4 Link Purpose (In Context)][sc244]. If the links are ambiguous to users in general, users of assistive technologies are not at a disadvantage when viewing the links, which makes it more of a general user experience concern than an accessibility issue.
-- This rule assumes that, within the context of the test subject, the description provided by the [accessible name][] of a link can only accurately describe one resource (notably, homonyms alone are not used as link names). Thus, if two or more links have the same [accessible name][] but resolve to different resources, at least one of them does not describe its purpose.
-- This rule assumes that assistive technologies are exposing all links on the page in the same way no matter which [document tree](https://dom.spec.whatwg.org/#document-trees) they are in. If an assistive technology requires the user to "enter" an `iframe` or a [shadow tree][] before exposing its links, then it is possible for two links to have identical name and same context but resolve to different resources without failing [Success Criterion 2.4.4 Link Purpose (In Context)][sc244] (if said links are in separate [documents][document] or [shadow trees][shadow tree])
+There is a difference between two contexts being the _same_ and being _identical_. This rule specifically targets links within the _same_ context. The same context means exactly the same set of DOM nodes. Identical (but not the same) contexts might have a different set of DOM nodes, but those DOM nodes have equivalent content - such as text content, attribute values, and so on. This difference is similar to the difference in some programming languages between pointer equivalence and deep object equivalence. Links with identical name that are in identical (but not the same) contexts also fail [2.4.4 Link Purpose (In Context)][sc244]. However, defining "identical context" unambiguously has been deemed infeasible at this time, and so has been left out of this rule.
 
-## Accessibility Support
+Links that are [ambiguous to users in general](https://www.w3.org/TR/WCAG22/#dfn-ambiguous-to-users-in-general) are covered by the exception mentioned in Success Criterion 2.4.4 Link Purpose (In Context). If the links are ambiguous to users in general, users of assistive technologies are not at a disadvantage when viewing the links, which makes it more of a general user experience concern than an accessibility issue.
+
+Pages with links that are not [ambiguous to users in general][], but are ambiguous to some users are likely to fail [success criterion 1.3.1 Info and Relationships][sc131] if the disambiguation information is conveyed through presentation, but not semantically. Moreover, when this information is non-text content, such a page is likely to fail [success criterion 1.1.1 Non-text Content][sc111].
+
+### Assumptions
+
+- This rule assumes that, within the context of the test subject, the description provided by the [accessible name][] of a link can only accurately describe one resource (notably, homonyms alone are not used as link names). Thus, if two or more links have the same [accessible name][] but resolve to different resources, at least one of them does not accurately describe its purpose.
+- This rule assumes that assistive technologies are exposing all links on the page in the same way no matter which [document tree](https://dom.spec.whatwg.org/#document-trees) they are in. If an assistive technology requires the user to "enter" an `iframe` or a [shadow tree][] before exposing its links, then it is possible for two links to have identical name and context but resolve to different resources without failing [Success Criterion 2.4.4 Link Purpose (In Context)][sc244] (if said links are in separate [documents][document] or [shadow trees][shadow tree]).
+- This rule assumes that reading the URL, such as from the status bar when the link is focused, is not considered part of the context, and therefore, it does not disambiguate links.
+
+### Accessibility Support
 
 There are no accessibility support issues known.
 
-## Background
-
-This rule is designed specifically for [2.4.4 Link Purpose (In Context)][sc244], which requires the purpose to be clear within the context of a link. Because links that do not have this, also are not clear without that context, this rule maps to [2.4.9 Link Purpose (Link only)][sc249] as well. In order to adequately test the [expectation](#expectation), some of the passed examples do not satisfy [2.4.9 Link Purpose (Link only)][sc249].
-
-There is a difference between two contexts being the *same* and being *identical*. This rule specifically targets links within the *same* context. The same context means exactly the same set of DOM nodes. Identical (but not the same) contexts might have a different set of DOM nodes, but those DOM nodes have equivalent content - such as text content, attribute values, and so on. This difference is similar to the difference in some programming languages between pointer equivalence and deep object equivalence. Links with identical name that are in identical (but not the same) contexts also fail [2.4.4 Link Purpose (In Context)][sc244]. However, defining "identical context" unambiguously has been deemed infeasible at this time, and so has been left out of this rule.
-
 ### Bibliography
 
-- [Understanding Success Criterion 2.4.4: Link Purpose (In Context)](https://www.w3.org/WAI/WCAG21/Understanding/link-purpose-in-context.html)
+- [Understanding Success Criterion 2.4.4: Link Purpose (In Context)](https://www.w3.org/WAI/WCAG22/Understanding/link-purpose-in-context.html)
 - [HTML Specification - URL parsing](https://html.spec.whatwg.org/#resolving-urls)
+- [Ambiguous to users in general](https://www.w3.org/TR/WCAG22/#dfn-ambiguous-to-users-in-general)
 
 ## Accessibility Requirements Mapping
 
@@ -71,7 +79,7 @@ There is a difference between two contexts being the *same* and being *identical
   <li><details>
     <summary><span>2.4.4 Link Purpose (In Context) (Level A)</span></summary>
     <ul>
-      <li><a href="https://www.w3.org/TR/WCAG21/#link-purpose-in-context">Learn more about 2.4.4 Link Purpose (In Context)</a></li>
+      <li><a href="https://www.w3.org/TR/WCAG22/#link-purpose-in-context">Learn more about 2.4.4 Link Purpose (In Context)</a></li>
       <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level A and higher.</li>
       <li>Outcome mapping: <ul>
         <li>Any <code>failed</code> outcomes: success criterion is not satisfied</li>
@@ -80,19 +88,17 @@ There is a difference between two contexts being the *same* and being *identical
       </ul></li>
     </ul>
   </details></li>
-  <li><details>
-    <summary><span>2.4.9 Link Purpose (Link Only) (Level AAA)</span></summary>
-    <ul>
-      <li><a href="https://www.w3.org/TR/WCAG21/#link-purpose-link-only">Learn more about 2.4.9 Link Purpose (Link Only)</a></li>
-      <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level AAA.</li>
-      <li>Outcome mapping: <ul>
-        <li>Any <code>failed</code> outcomes: success criterion is not satisfied</li>
-        <li>All <code>passed</code> outcomes: success criterion needs further testing</li>
-        <li>An <code>inapplicable</code> outcome: success criterion needs further testing</li>
-      </ul></li>
-    </ul>
-  </details></li>
 </ul>
+
+### Secondary Requirements
+
+This rule is related to the following accessibility requirements, but was 
+not designed to test this requirements directly. These 
+[secondary requirements](https://w3c.github.io/wcag-act/act-rules-format.html#secondary-requirements)
+can either be stricter than the rule requires, or may be satisfied in ways 
+not tested by the rule:
+
+- [2.4.9 Link Purpose (Link Only) (Level AAA)](https://www.w3.org/TR/WCAG22/#link-purpose-link-only): This success criterion is **more strict** than this rule. This is because the rule also considers the context of the link, in addition to the link text. Some of the passed examples do not satisfy this success criterion.
 
 ## Input Aspects
 
@@ -103,6 +109,188 @@ The following aspects are required in using this rule.
 - [Language](https://www.w3.org/TR/act-rules-aspects/#input-aspects-text)
 
 ## Test Cases
+
+<details class="act-inline-assets" markdown="block">
+<summary><span>These HTML files are used in several examples:</span></summary>
+
+File [`/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/index.html`](https://w3.org/WAI/content-assets/wcag-act-rules/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/index.html):
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>My University</title>
+	</head>
+	<body>
+		<h1>Welcome to My University</h1>
+		<p>We are currently working on getting our website up and running.</p>
+	</body>
+</html>
+```
+
+File [`/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/redirect.html`](https://w3.org/WAI/content-assets/wcag-act-rules/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/redirect.html):
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="refresh" content="0; URL='index.html'" />
+		<title>Redirecting to another page</title>
+	</head>
+	<body></body>
+</html>
+```
+
+File [`/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/index-copy.html`](https://w3.org/WAI/content-assets/wcag-act-rules/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/index-copy.html):
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>My University</title>
+	</head>
+	<body>
+		<h1>Welcome to My University</h1>
+		<p>We are currently working on getting our website up and running.</p>
+	</body>
+</html>
+```
+
+File [`/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/about/contact.html`](https://w3.org/WAI/content-assets/wcag-act-rules/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/about/contact.html):
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>About - Contact</title>
+	</head>
+	<body>
+		<nav label="main menu" style="text-align: right;">
+			<a href="../about.html">About</a>
+			<a href="../admissions.html">Admissions</a>
+			<a href="../careers.html">Careers</a>
+		</nav>
+		<nav label="breadcrumb">
+			<p>You are here: <a href="../about.html">About</a> / Contact us</p>
+		</nav>
+		<nav label="submenu" style="float:left">
+			<h2>About</h2>
+			<ul>
+				<li style="list-style-type: none;"><a href="history.html">History</a></li>
+				<li style="list-style-type: none;"><a href="employees.html">Employees</a></li>
+				<li style="list-style-type: none;"><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+		<main style="float:left; margin-left: 50px;">
+			<h1>Contact us</h1>
+			<p>Phone: (541) 754-3010</p>
+		</main>
+	</body>
+</html>
+```
+
+File [`/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/careers/contact.html`](https://w3.org/WAI/content-assets/wcag-act-rules/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/careers/contact.html):
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>About - Contact</title>
+	</head>
+	<body>
+		<nav label="main menu" style="text-align: right;">
+			<a href="../about.html">About</a>
+			<a href="../admissions.html">Admissions</a>
+			<a href="../careers.html">Careers</a>
+		</nav>
+		<nav label="breadcrumb">
+			<p>You are here: <a href="../careers.html">Careers</a> / Contact</p>
+		</nav>
+		<nav label="submenu" style="float:left">
+			<h2>Careers</h2>
+			<ul>
+				<li style="list-style-type: none;"><a href="positions.html">Open positions</a></li>
+				<li style="list-style-type: none;"><a href="benefits.html">Benefits</a></li>
+				<li style="list-style-type: none;"><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+		<main style="float:left; margin-left: 50px;">
+			<h1>Contact us</h1>
+			<p>Phone: (541) 754-3010</p>
+		</main>
+	</body>
+</html>
+```
+
+File [`/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/page1.html`](https://w3.org/WAI/content-assets/wcag-act-rules/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/page1.html):
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Get in touch</title>
+	</head>
+	<body>
+		<h1>Get in touch</h1>
+		<p>Call us: (541) 754-3010</p>
+	</body>
+</html>
+```
+
+File [`/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/page2.html`](https://w3.org/WAI/content-assets/wcag-act-rules/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/page2.html):
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Contact us</title>
+	</head>
+	<body>
+		<h1>Contact us</h1>
+		<p>Phone: (541) 754-3010</p>
+		<p>Email: email@university.com</p>
+		<p>Telefax: (541) 754-3011</p>
+	</body>
+</html>
+```
+
+File [`/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/page3.html`](https://w3.org/WAI/content-assets/wcag-act-rules/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/page3.html):
+
+```html
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Get in touch</title>
+	</head>
+	<body style="background-color: blue; color: yellow">
+		<h1 style="border: 1px solid yellow">Get in touch</h1>
+		<p>Call us: (541) 754-3010</p>
+	</body>
+</html>
+```
+
+File [`/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/redirect1.html`](https://w3.org/WAI/content-assets/wcag-act-rules/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/redirect1.html):
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="refresh" content="30; URL='index.html'" />
+		<title>Redirecting to another page</title>
+	</head>
+	<body></body>
+</html>
+```
+
+</details>
 
 ### Passed
 
@@ -258,13 +446,11 @@ These two SVG `a` and HTML `a` elements have the same [accessible name][], same 
 </html>
 ```
 
-### Failed
+#### Passed Example 9
 
-#### Failed Example 1
+<a class="example-link" title="Passed Example 9" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/228c0a3d78557fb48a855d6733d50848a86f0d62.html">Open in a new tab</a>
 
-<a class="example-link" title="Failed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/228c0a3d78557fb48a855d6733d50848a86f0d62.html">Open in a new tab</a>
-
-These two HTML `a` elements have the same [accessible name][] and [context][programmatically determined link context] but go to different resources.
+These two HTML `a` elements have the same [accessible name][] and [context][programmatically determined link context], but resolve to different resources. However, the purpose of these links is [ambiguous to users in general](https://www.w3.org/TR/WCAG22/#dfn-ambiguous-to-users-in-general). Thus all readers are unsure about the destination and the person with a disability is not at any disadvantage.
 
 ```html
 <html lang="en">
@@ -276,88 +462,204 @@ These two HTML `a` elements have the same [accessible name][] and [context][prog
 </html>
 ```
 
-#### Failed Example 2
+### Failed
 
-<a class="example-link" title="Failed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/8d14f906398220f1ba52ef34b7f8e40d654312bd.html">Open in a new tab</a>
+#### Failed Example 1
 
-These two HTML `a` elements have the same [accessible name][] and [context][programmatically determined link context]. They link to web pages that are similar, but have different information in their content.
+<a class="example-link" title="Failed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/9ceacbea5df44a14dc17df2089edb134f22decd3.html">Open in a new tab</a>
+
+These two HTML `a` elements have the same [accessible name][] and are nested within the same [context][programmatically determined link context], but go to different resources.
 
 ```html
 <html lang="en">
-	<div>
-		Learn more (<a href="/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/about/contact.html"
-			>Contact us</a
-		>) and get in touch (
-		<a href="/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/admissions/contact.html"
-			>Contact us</a
-		>)
-	</div>
+	<p>
+		To get in touch with us, you can either
+		<a href="/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/contact-us.html?page=1"
+			>contact us</a
+		>
+		via chat or
+		<a href="/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/contact-us.html?page=2"
+			>contact us</a
+		>
+		by phone.
+	</p>
+</html>
+```
+
+#### Failed Example 2
+
+<a class="example-link" title="Failed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/8dc58c481c594488a331cd267974a324b97c9c98.html">Open in a new tab</a>
+
+These two HTML `a` elements have the same [accessible name][] and [context][programmatically determined link context], but go to different resources.
+
+```html
+<html lang="en">
+	<p>W3C pages for ACT:</p>
+	<p><a href="https://act-rules.github.io/">ACT rules</a></p>
+	<p>Community group for ACT:</p>
+	<p><a href="https://www.w3.org/community/act-r/">ACT rules</a></p>
 </html>
 ```
 
 #### Failed Example 3
 
-<a class="example-link" title="Failed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/109577c05513f09ec5360d02ef463d7f5350578c.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/ef75d42424140b163d7939aacc6a80c8dbc8816a.html">Open in a new tab</a>
 
-These two HTML `span` elements have an [explicit role][] of link, same [accessible name][] and [context][programmatically determined link context], but link to resources that offer different content.
+These two HTML `a` elements have the same [accessible name][] and [context][programmatically determined link context]. They are visually distinguishable thanks to the relationships conveyed through CSS, but go to different resources.
 
 ```html
 <html lang="en">
 	<p>
-		Learn more (<span
-			role="link"
-			tabindex="0"
-			onclick="location='/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/about/contact.html'"
-			>Contact us</span
-		>) and get in touch (<span
-			role="link"
-			tabindex="0"
-			onclick="location='/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/admissions/contact.html'"
-			>Contact us</span
-		>)
+		<h2>Contact us:</h2>
+		<a href="/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/contact-us.html?page=1" style="display:inline-block; background: url(/test-assets/shared/chat.png) 0 / 40px no-repeat; padding: 20px 0 20px 50px;">Contact Us</a>
+		<a href="/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/contact-us.html?page=2" style="display:inline-block; background: url(/test-assets/shared/phone.png) 0 / 40px no-repeat; padding: 20px 0 20px 50px; margin-left: 40px;">Contact Us</a>
 	</p>
 </html>
 ```
 
 #### Failed Example 4
 
-<a class="example-link" title="Failed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/fdc1c4461c1b874a94df693c72a8483cb39a8aab.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/f92350be3a294ad1a41de6d7202f09bdd4e5d6c0.html">Open in a new tab</a>
+
+These two HTML `a` elements have the same [accessible name][] and [context][programmatically determined link context], but go to different resources. Their purpose is disambiguated for sighted users by the alignment of the links with the images above.
+
+```html
+<html lang="en">
+	<div>
+		<span style="text-align:center;">Contact us</span>
+		<span style="display:flex; justify-content:space-around;">
+			<img src="/test-assets/shared/chat.png" alt="Chat" style="max-width:50px;" />
+			<img src="/test-assets/shared/phone.png" alt="Phone" style="max-width:50px;" />
+		</span>
+		<span style="display:flex; justify-content:space-around;">
+			<a
+				href="/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/contact-us.html?page=60e950cff70bf1ec60a702086748ab4dec361514"
+				>Contact Us</a
+			>
+			<a
+				href="/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/contact-us.html?page=c1d4e0f067462f4b28716f028d9213a25eb82f28"
+				>Contact Us</a
+			>
+		</span>
+	</div>
+</html>
+```
+
+#### Failed Example 5
+
+<a class="example-link" title="Failed Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/0b01e772dff47d4fd971ca4cfda2a9810843c10a.html">Open in a new tab</a>
+
+These two HTML `a` elements have the same [accessible name][] and [context][programmatically determined link context]. They link to web pages that are similar, but have different information in their content. Their purpose is disambiguated for sighted users by the alignment of the links with the images above.
+
+```html
+<html lang="en">
+	<div>
+		<span style="text-align:center;">Contact us</span>
+		<span style="display:flex; justify-content:space-around;">
+			<img src="/test-assets/shared/chat.png" alt="Chat" style="max-width:50px;" />
+			<img src="/test-assets/shared/phone.png" alt="Phone" style="max-width:50px;" />
+		</span>
+		<span style="display:flex; justify-content:space-around;">
+			<a href="/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/contact-us.html?page=3"
+				>Contact Us</a
+			>
+			<a href="/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/contact-us.html?page=4"
+				>Contact Us</a
+			>
+		</span>
+	</div>
+</html>
+```
+
+#### Failed Example 6
+
+<a class="example-link" title="Failed Example 6" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/dddcd76a61f61fa6652f847b66cd77fdcf7724cf.html">Open in a new tab</a>
+
+These two HTML `span` elements have an [explicit role][] of link, same [accessible name][] and [context][programmatically determined link context], but link to resources that offer different content. Their purpose is disambiguated for sighted users by the alignment of the links with the images above.
+
+```html
+<html lang="en">
+	<div>
+		<span style="text-align:center;">Contact us</span>
+		<span style="display:flex; justify-content:space-around;">
+			<img src="/test-assets/shared/chat.png" alt="Chat" style="max-width:50px;" />
+			<img src="/test-assets/shared/phone.png" alt="Phone" style="max-width:50px;" />
+		</span>
+		<span style="display:flex; justify-content:space-around;">
+			<span
+				role="link"
+				tabindex="0"
+				onclick="location='/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/contact-us.html?page=1'"
+				>Contact Us</span
+			>
+			<span
+				role="link"
+				tabindex="0"
+				onclick="location='/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/contact-us.html?page=2'"
+				>Contact Us</span
+			>
+		</span>
+	</div>
+</html>
+```
+
+#### Failed Example 7
+
+<a class="example-link" title="Failed Example 7" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/7ebe961dbb4fb0e259fc3bc98a8f048170b063af.html">Open in a new tab</a>
 
 These two SVG `a` elements have the same [accessible name][] and [context][programmatically determined link context] but link to different resources.
 
 ```html
 <html lang="en">
 	<p>
-		<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-			<a href="https://act-rules.github.io/" aria-label="ACT rules">
-				<circle cx="50" cy="40" r="35" />
+		<svg
+			enable-background="new 0 0 264 120"
+			viewBox="-5 -20 80 50"
+			xmlns="http://www.w3.org/2000/svg"
+			style="max-width: 300px"
+		>
+			<text>Contact us</text>
+			<a
+				href="/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/contact-us.html?page=1"
+				aria-label="Contact Us"
+				style="scale: 0.2"
+			>
+				<path
+					d="m212.0806 68.0717c-10.3917 10.3852-22.4311 20.3239-27.1905 15.5646-6.8075-6.8075-11.0088-12.7418-26.0285-.6696-15.0132 12.0657-3.4792 20.1139 3.1182 26.7047 7.6149 7.6149 36.0001.407 64.0571-27.6434 28.0504-28.057 35.2386-56.4422 27.6172-64.0571-6.5974-6.604-14.6062-18.1314-26.6719-3.1182-12.0723 15.0132-6.1444 19.2145.6761 26.0285 4.7397 4.7593-5.1925 16.7988-15.5777 27.1905z"
+				/>
 			</a>
-
-			<a href="https://www.w3.org/community/act-r/">
-				<text x="50" y="90" text-anchor="middle">
-					ACT rules
-				</text>
+			<a
+				href="/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/contact-us.html?page=2"
+				aria-label="Contact Us"
+				style="scale: 0.2"
+			>
+				<path
+					d="m105 7.5h-90c-8.2576 0-15 6.7497-15 15v52.5c0 8.2498 6.7424 15 15 15h30l30 22.5v-22.5h30c8.2498 0 15-6.7502 15-15v-52.5c0-8.2503-6.7502-15-15-15zm-80.7903 52.5c-6.2132 0-11.255-5.0372-11.255-11.25 0-6.2132 5.0418-11.25 11.255-11.25 6.2128 0 11.245 5.0418 11.245 11.25 0 6.2077-5.0322 11.25-11.245 11.25zm35.7953 0c-6.2128 0-11.255-5.0372-11.255-11.25 0-6.2132 5.0423-11.25 11.255-11.25 6.2132 0 11.245 5.0368 11.245 11.25 0 6.2128-5.0317 11.25-11.245 11.25zm35.7958 0c-6.2132 0-11.2555-5.0372-11.2555-11.25 0-6.2132 5.0423-11.25 11.2555-11.25 6.2128 0 11.2445 5.0368 11.2445 11.25 0 6.2128-5.0318 11.25-11.2445 11.25z"
+				/>
 			</a>
 		</svg>
 	</p>
 </html>
 ```
 
-#### Failed Example 5
+#### Failed Example 8
 
-<a class="example-link" title="Failed Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/0a465c71c47198030c8212fdd1122e35e06c4ee0.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 8" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/1379913f0770843f89d37ceaad3a63e36f07924e.html">Open in a new tab</a>
 
 These two HTML `a` elements with the same [accessible name][] and [context][programmatically determined link context] resolve to the [same resource][] after redirect, but the redirect is not instant.
 
 ```html
 <html lang="en">
 	<p>
-		Learn more (<a href="/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/index.html"
-			>Contact us</a
-		>) and get in touch (<a
-			href="/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/redirect1.html"
-			>Contact us</a
-		>)
+		<span style="text-align:center;">Contact us</span>
+		<span style="display:flex; justify-content:space-around;">
+			<img src="/test-assets/shared/chat.png" alt="Chat" style="max-width:50px;" />
+			<img src="/test-assets/shared/phone.png" alt="Phone" style="max-width:50px;" />
+		</span>
+		<span style="display:flex; justify-content:space-around;">
+			<a href="/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/index.html">Contact Us</a>
+			<a href="/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/redirect1.html">Contact Us</a>
+		</span>
 	</p>
 </html>
 ```
@@ -439,7 +741,7 @@ These two `span` elements do not have a [semantic role][] of link.
 
 <a class="example-link" title="Inapplicable Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/a799c111fc2dd2b2e6dade9bf227790d8cb33f68.html">Open in a new tab</a>
 
-These two HTML `a` elements have the same [accessible name][] and link to the [same resource][] but different [programmatically determined link contexts][programmatically determined link context]. Even though the two contexts in this example are *identical*, they are not the *same*. That is: even though they have equivalent content, they do not consist of the same DOM elements.
+These two HTML `a` elements have the same [accessible name][] and link to the [same resource][] but different [programmatically determined link contexts][programmatically determined link context]. Even though the two contexts in this example are _identical_, they are not the _same_. That is: even though they have equivalent content, they do not consist of the same DOM elements.
 
 ```html
 <html lang="en">
@@ -463,6 +765,22 @@ These two HTML `a` elements have the same [accessible name][] but different [pro
 ```html
 <div><a href="https://www.w3.org/WAI/">Read more</a> about the W3C WAI</div>
 <div><a href="https://www.w3.org/International/">Read more</a> about the W3C internationalization</div>
+```
+
+#### Inapplicable Example 7
+
+<a class="example-link" title="Inapplicable Example 7" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/9abd9bcfa7c5eb5000df1bd7e72440c6233566a5.html">Open in a new tab</a>
+
+These two HTML `a` elements have the same [accessible name][] and [context][programmatically determined link context], but the second one is not [included in the accessibility tree][included in the accessibility tree].
+
+```html
+<html lang="en">
+	<p>
+		We are on social media:
+		<a href="https://act-rules.github.io/">ACT rules</a>
+		<a aria-hidden="true" href="https://www.w3.org/community/act-r/">ACT rules</a>
+	</p>
+</html>
 ```
 
 ## Glossary
@@ -513,7 +831,7 @@ An element is _focusable_ if one or both of the following are true:
 - the element is part of [sequential focus navigation][]; or
 - the element has a [tabindex value][] that is not null.
 
-**Exception**: Elements that lose focus during a period of up to 1 second after gaining focus, without the user interacting with the page the element is on, are not considered _focusable_.
+**Exception**: Elements that lose focus and do not regain focus during a period of up to 1 second after gaining focus, without the user interacting with the page the element is on, are not considered _focusable_.
 
 Notes:
 
@@ -555,7 +873,7 @@ Elements can also be ignored by assistive technologies if they are [programmatic
 
 ### Matching characters {#matching-characters}
 
-A sequence of characters is considered to _match_ another if, after removing leading and trailing [space characters](https://html.spec.whatwg.org/#white_space) and replacing remaining occurrences of one or more space characters with a single space, the two sequences of characters are equal character-by-character, ignoring any differences in letter casing.
+A sequence of characters is considered to _match_ another if, after removing leading and trailing [whitespace characters][] and replacing remaining occurrences of one or more whitespace characters with a single space, the two sequences of characters are equal character-by-character, ignoring any differences in letter casing.
 
 ### Namespaced Element {#namespaced-element}
 
@@ -565,15 +883,19 @@ Namespaced elements are not limited to elements described in a specification. Th
 
 ### Outcome {#outcome}
 
-An _outcome_ is a conclusion that comes from evaluating an ACT Rule on a [test subject](https://www.w3.org/TR/act-rules-format/#test-subject) or one of its constituent [test target](https://www.w3.org/TR/act-rules-format/#test-target). An outcome can be one of the three following types:
+A conclusion that comes from evaluating an ACT Rule on a [test subject][] or one of its constituent test target. An outcome can be one of the five following types:
 
 - **Inapplicable:** No part of the test subject matches the applicability
-- **Passed:** A [test target](https://www.w3.org/TR/act-rules-format/#test-target) meets all expectations
-- **Failed:** A [test target](https://www.w3.org/TR/act-rules-format/#test-target) does not meet all expectations
+- **Passed:** A [test target][] meets all expectations
+- **Failed:** A [test target][] does not meet all expectations
+- **cantTell:** Whether the rule is applicable, or not all expectations were met could not be fully determined by the tester.
+- **Untested**: The tester has not attempted to evaluate the test subject.
 
-**Note:** A rule has one `passed` or `failed` outcome for every [test target](https://www.w3.org/TR/act-rules-format/#test-target). When there are no test targets the rule has one `inapplicable` outcome. This means that each [test subject](https://www.w3.org/TR/act-rules-format/#test-subject) will have one or more outcomes.
+**Note**: A rule has one `passed` or `failed` outcome for every [test target][]. When a tester evaluates a test target it can also be reported as `cantTell` if the rule cannot be tested in its entirety. For example, when applicability was automated, but the expectations have to be evaluated manually.
 
-**Note:** Implementations using the [EARL10-Schema](https://www.w3.org/TR/EARL10-Schema/) can express the outcome with the [outcome property](https://www.w3.org/TR/EARL10-Schema/#outcome). In addition to `passed`, `failed` and `inapplicable`, EARL 1.0 also defined an `incomplete` outcome. While this cannot be the outcome of an ACT Rule when applied in its entirety, it often happens that rules are only partially evaluated. For example, when applicability was automated, but the expectations have to be evaluated manually. Such "interim" results can be expressed with the `incomplete` outcome.
+When there are no test targets the rule has one `inapplicable` outcome. If the tester is unable to determine whether there are test targets there will be one `cantTell` outcome. And when no evaluation has occurred the test target has one untested outcome. This means that each [test subject][] always has one or more outcomes.
+
+Outcomes used in ACT Rules can be expressed using the [outcome property][] of the [[EARL10-Schema]][].
 
 ### Programmatically Determined Link Context {#programmatically-determined-link-context}
 
@@ -585,7 +907,7 @@ The _programmatically determined context_ of a link (or _programmatically determ
 - being a header cell [assigned][] to the closest [ancestor][] of the link in the [flat tree][] that has a [semantic role][] of `cell` or `gridcell`; or
 - being referenced by an `aria-describedby` attribute of the link.
 
-This definition is based on (but not equivalent to) the [WCAG definition of programmatically determined link context](https://www.w3.org/TR/WCAG21/#dfn-programmatically-determined-link-context).
+This definition is based on (but not equivalent to) the [WCAG definition of programmatically determined link context](https://www.w3.org/TR/WCAG22/#dfn-programmatically-determined-link-context).
 
 This definition assumes that the HTML document with the link is a document using HTML according to the specification.
 
@@ -636,15 +958,31 @@ The _WAI ARIA Specifications_ group both the WAI ARIA W3C Recommendation and ARI
 
 ### Web page (HTML) {#web-page-html}
 
-An _HTML [web page](https://www.w3.org/TR/WCAG21/#dfn-web-page-s)_ is the set of all [fully active](https://html.spec.whatwg.org/#fully-active) [documents](https://dom.spec.whatwg.org/#concept-document) which share the same [top-level browsing context](https://html.spec.whatwg.org/#top-level-browsing-context).
+An _HTML [web page](https://www.w3.org/TR/WCAG22/#dfn-web-page-s)_ is the set of all [fully active](https://html.spec.whatwg.org/#fully-active) [documents](https://dom.spec.whatwg.org/#concept-document) which share the same [top-level browsing context](https://html.spec.whatwg.org/#top-level-browsing-context).
 
 **Note:** Nesting of browsing context mostly happens with `iframe` and `object`. Thus a web page will most of the time be a "top-level" document and all its `iframe` and `object` (recursively).
 
-**Note:** [Web pages](https://www.w3.org/TR/WCAG21/#dfn-web-page-s) as defined by WCAG are not restricted to the HTML technology but can also include, _e.g._, PDF or DOCX documents.
+**Note:** [Web pages](https://www.w3.org/TR/WCAG22/#dfn-web-page-s) as defined by WCAG are not restricted to the HTML technology but can also include, _e.g._, PDF or DOCX documents.
 
 **Note:** Although web pages as defined here are sets of [documents](https://dom.spec.whatwg.org/#concept-document) (and do not contain other kind of nodes), one can abusively write that any node is "in a web page" if it is a [shadow-including descendant](https://dom.spec.whatwg.org/#concept-shadow-including-descendant) of a [document](https://dom.spec.whatwg.org/#concept-document) that is part of that web page.
 
-[abstract]: https://www.w3.org/TR/wai-aria-1.1/#isAbstract 'ARIA Definition for Abstract Roles'
+### Whitespace {#whitespace}
+
+_Whitespace_ are characters that have the Unicode "White_Space" property in the [Unicode properties list](https://www.unicode.org/Public/UCD/latest/ucd/PropList.txt).
+
+This includes:
+
+- all characters in the [Unicode Separator categories](https://www.unicode.org/versions/Unicode11.0.0/ch04.pdf#G134153), and
+- the following characters in the [Other, Control](https://www.unicode.org/versions/Unicode11.0.0/ch04.pdf#G134153) category:
+
+  - Character tabulation (U+0009)
+  - Line Feed (LF) (U+000A)
+  - Line Tabulation (U+000B)
+  - Form Feed (FF) (U+000C)
+  - Carriage Return (CR) (U+000D)
+  - Next Line (NEL) (U+0085)
+
+[abstract]: https://www.w3.org/TR/wai-aria-1.2/#isAbstract 'ARIA Definition for Abstract Roles'
 [accessibility support base line]: https://www.w3.org/TR/WCAG-EM/#step1c 'Definition of accessibility support base line'
 [accessible name and description computation]: https://www.w3.org/TR/accname 'Accessible Name and Description Computation'
 [accessible name]: #accessible-name 'Definition of accessible name'
@@ -654,7 +992,9 @@ An _HTML [web page](https://www.w3.org/TR/WCAG21/#dfn-web-page-s)_ is the set of
 [computed]: https://www.w3.org/TR/css-cascade/#computed-value 'CSS definition of computed value'
 [doc-biblioref]: https://www.w3.org/TR/dpub-aria-1.0/#doc-biblioref 'DPUB ARIA Definition of doc-biblioref'
 [document]: https://dom.spec.whatwg.org/#concept-document 'Definition of document'
+[earl10-schema]: https://www.w3.org/TR/act-rules-format-1.1/#biblio-earl10-schema
 [element]: https://dom.spec.whatwg.org/#element 'DOM element, 2021/05/31'
+[equivalent resource]: #equivalent-resource 'Definition of Equivalent Resource'
 [examples of accessible name]: https://act-rules.github.io/pages/examples/accessible-name/
 [examples of included in the accessibility tree]: https://act-rules.github.io/pages/examples/included-in-the-accessibility-tree/
 [explicit role]: #explicit-role 'Definition of explicit role'
@@ -670,19 +1010,23 @@ An _HTML [web page](https://www.w3.org/TR/WCAG21/#dfn-web-page-s)_ is the set of
 [marked as decorative]: #marked-as-decorative 'Definition of Marked as Decorative'
 [matching]: #matching-characters 'Definition of matching characters'
 [namespaceuri]: https://dom.spec.whatwg.org/#dom-element-namespaceuri 'DOM Element namespaceURI, 2021/05/31'
-[presentational roles conflict resolution]: https://www.w3.org/TR/wai-aria-1.1/#conflict_resolution_presentation_none 'Presentational Roles Conflict Resolution'
+[outcome property]: https://www.w3.org/TR/EARL10-Schema/#outcome
+[presentational roles conflict resolution]: https://www.w3.org/TR/wai-aria-1.2/#conflict_resolution_presentation_none 'Presentational Roles Conflict Resolution'
 [programmatically determined link context]: #programmatically-determined-link-context 'Definition of programmatically determined link context'
 [programmatically hidden]: #programmatically-hidden 'Definition of Programmatically Hidden'
-[pure decoration]: https://www.w3.org/TR/WCAG21/#dfn-pure-decoration 'WCAG definition of Pure Decoration'
+[pure decoration]: https://www.w3.org/TR/WCAG22/#dfn-pure-decoration 'WCAG definition of Pure Decoration'
 [role attribute]: https://www.w3.org/TR/role-attribute/ 'Specification of the role attribute'
 [rules for parsing integers]: https://html.spec.whatwg.org/#rules-for-parsing-integers
 [same resource]: #same-resource 'Definition of same resource'
-[sc244]: https://www.w3.org/TR/WCAG21/#link-purpose-in-context 'Success Criterion 2.4.4: Link Purpose (In Context)'
-[sc249]: https://www.w3.org/TR/WCAG21/#link-purpose-link-only 'Success Criterion 2.4.9: Link Purpose (Link Only)'
+[sc244]: https://www.w3.org/TR/WCAG22/#link-purpose-in-context 'Success Criterion 2.4.4: Link Purpose (In Context)'
 [semantic role]: #semantic-role 'Definition of semantic role'
 [sequential focus navigation]: https://html.spec.whatwg.org/multipage/interaction.html#sequential-focus-navigation
 [shadow tree]: https://dom.spec.whatwg.org/#shadow-tree 'Definition of shadow tree'
 [tabindex attribute]: https://html.spec.whatwg.org/#attr-tabindex
 [tabindex value]: https://html.spec.whatwg.org/#tabindex-value
+[test subject]: https://www.w3.org/TR/act-rules-format-1.1/#test-subject
+[test target]: https://www.w3.org/TR/act-rules-format/#test-target
 [wai-aria specifications]: #wai-aria-specifications 'Definition of WAI-ARIA specifications'
 [web page (html)]: #web-page-html 'Definition of web page (HTML)'
+[web page]: #web-page-html 'Definition of HTML web page'
+[whitespace characters]: #whitespace 'Definition of Whitespace'

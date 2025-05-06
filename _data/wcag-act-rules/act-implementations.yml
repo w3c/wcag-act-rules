@@ -17,31 +17,29 @@
 
 - name: Alfa (fully automated)
   homepage: https://alfa.siteimprove.com/
-  version: 0.57.2
   vendor: Siteimprove
   vendorHomepage: https://www.siteimprove.com/
   uniqueKey: alfa
   type: Automated tool
   standards:
-    - WCAG 2.1 Level A, AA, AAA
+    - WCAG 2.2 Level A, AA, AAA
     - WAI-ARIA 1.2
   jsonReport: https://raw.githubusercontent.com/Siteimprove/alfa-act-r/main/reports/alfa-automated-report.json
 
 - name: Alfa (semi-automated)
   homepage: https://alfa.siteimprove.com/
-  version: 0.57.2
   vendor: Siteimprove
   vendorHomepage: https://www.siteimprove.com/
   uniqueKey: alfa-assisted
   type: Semi-automated tool
   standards:
-    - WCAG 2.1 Level A, AA, AAA
+    - WCAG 2.2 Level A, AA, AAA
     - WAI-ARIA 1.2
   jsonReport: https://raw.githubusercontent.com/Siteimprove/alfa-act-r/main/reports/alfa-assisted-report.json
 
 - name: Axe-core
   homepage: https://www.npmjs.com/package/axe-core/
-  version: "4.6.0"
+  version: "4.10.2"
   vendor: Deque Systems
   vendorHomepage: https://deque.com/
   uniqueKey: axe-core
@@ -128,7 +126,7 @@
 
 - name: SortSite
   homepage: https://www.powermapper.com/products/sortsite/
-  version: 6.45
+  version: 6.55
   vendor: PowerMapper
   vendorHomepage: https://www.powermapper.com/
   uniqueKey: sortsite
@@ -140,7 +138,7 @@
 
 - name: Total Validator (+Browser)
   homepage: https://www.totalvalidator.com/
-  version: 17.1.0
+  version: 17.4.0
   vendor: Total Validator
   vendorHomepage: https://www.totalvalidator.com/
   uniqueKey: total-validator-browser
@@ -152,7 +150,7 @@
 
 - name: Total Validator
   homepage: https://www.totalvalidator.com/
-  version: 17.1.0
+  version: 17.4.0
   vendor: Total Validator
   vendorHomepage: https://www.totalvalidator.com/
   uniqueKey: total-validator
@@ -169,3 +167,13 @@
   standards:
     - WCAG 2.0 Level A, AA
   jsonReport: https://raw.githubusercontent.com/Section508Coordinators/act-tt/main/act-trusted-tester.json
+
+- name: Webmate Accessibility Workbench
+  vendor: Testfabrik Consulting + Solutions AG
+  homepage: https://barrierefr.ai/
+  vendorHomepage: https://testfabrik.com/
+  uniqueKey: webmate-accessibility-workbench
+  type: Automated tool
+  standards:
+    - WCAG 2.2 Level A, AA, AAA
+  jsonReport: https://webmedia.testfabrik.com/act_implementation_report/webmate_accessibility_workbench.json
