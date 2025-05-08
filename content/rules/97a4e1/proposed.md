@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 97a4e1</p>
-  <p><strong>Date:</strong> Updated 2 December 2024</p>
+  <p><strong>Date:</strong> Updated 8 May 2025</p>
   <p><strong>Authors:</strong> <a href="https://github.com/skotkjerra">Stein Erik Skotkjerra</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -20,7 +20,7 @@ rule_meta:
   original_file: button-non-empty-accessible-name-97a4e1.md
   description: |
     This rule checks that each `button` element has a non-empty accessible name.
-  last_modified: 2 December 2024
+  last_modified: 8 May 2025
   scs_tested:
     - handle: Name, Role, Value
       num: 4.1.2
@@ -43,11 +43,11 @@ This rule considers an exception for "image buttons" (i.e., `input` elements wit
 
 - The rule assumes that all buttons are [user interface components as defined by WCAG 2](https://www.w3.org/TR/WCAG22/#dfn-user-interface-components).
 
+- Some elements have a role of `button` and a default accessible name defined by the [HTML Accessibility API Mapping][html aam input button], for example `input` elements whose `type` [attribute value][] is either `submit` or `reset`. This rule considers that these default names can be descriptive and therefore does not fail them.
+
 ### Accessibility Support
 
 - Implementation of [Presentational Roles Conflict Resolution][] varies from one browser or assistive technology to another. Depending on this, some elements can have a [semantic role][] of `button` and fail this rule with some technology but users of other technologies would not experience any accessibility issue.
-
-- Some elements have a role of `button` and a default accessible name defined by the [HTML Accessibility API Mapping][html aam input button], for example `input` elements whose `type` [attribute value][] is either `submit` or `reset`. This rule considers that these default names can be descriptive and therefore does not fail them.
 
 ### Related rules
 
@@ -428,7 +428,7 @@ The _WAI ARIA Specifications_ group both the WAI ARIA W3C Recommendation and ARI
 [explicit role]: #explicit-role 'Definition of explicit role'
 [flat tree]: https://drafts.csswg.org/css-scoping/#flat-tree 'Definition of flat tree'
 [focusable]: #focusable 'Definition of focusable'
-[html aam input button]: https://www.w3.org/TR/html-aam-1.0/#input-type-button-input-type-submit-and-input-type-reset 'HTML Accessibility API Mapping, reset and submit buttons'
+[html aam input button]: https://www.w3.org/TR/html-aam-1.0/#input-type-button-input-type-submit-and-input-type-reset-accessible-name-computation 'HTML Accessibility API Mapping, input button, input, and reset accessible name'
 [html aam]: https://www.w3.org/TR/html-aam-1.0/#html-attribute-state-and-property-mappings 'Specification of HTML attributes value mapping to ARIA states and properties'
 [idl attribute]: https://heycam.github.io/webidl/#idl-attributes "Definition of Web IDL Attribute (Editor's Draft)"
 [implicit role]: #implicit-role 'Definition of Implicit Role'
