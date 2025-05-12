@@ -2,7 +2,7 @@
   "vendor": "Siteimprove",
   "name": "Alfa (fully automated)",
   "version": "0.103.1",
-  "lastModified": "5 May 2025",
+  "lastModified": "12 May 2025",
   "approvedRules": {
     "complete": 24,
     "partial": 2,
@@ -10,8 +10,8 @@
     "untested": 2
   },
   "proposedRules": {
-    "complete": 4,
-    "partial": 9,
+    "complete": 7,
+    "partial": 6,
     "inconsistent": 4,
     "untested": 36
   },
@@ -200,7 +200,7 @@
             {
               "procedureName": "sia-r110",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -5499,7 +5499,7 @@
             {
               "procedureName": "sia-r45",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -8858,7 +8858,7 @@
       "procedureNames": [
         "sia-r19"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
@@ -8867,8 +8867,8 @@
         ]
       },
       "coverage": {
-        "covered": 8,
-        "untested": 1,
+        "covered": 9,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 9
       },
@@ -8898,7 +8898,7 @@
             {
               "procedureName": "sia-r19",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -9028,8 +9028,8 @@
         ]
       },
       "coverage": {
-        "covered": 13,
-        "untested": 2,
+        "covered": 15,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 17
       },
@@ -9059,7 +9059,7 @@
             {
               "procedureName": "sia-r68",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -9269,7 +9269,7 @@
             {
               "procedureName": "sia-r68",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -9298,7 +9298,7 @@
       "procedureNames": [
         "sia-r18"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
@@ -9308,8 +9308,8 @@
         ]
       },
       "coverage": {
-        "covered": 16,
-        "untested": 3,
+        "covered": 19,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 19
       },
@@ -9399,7 +9399,7 @@
             {
               "procedureName": "sia-r18",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -9414,7 +9414,7 @@
             {
               "procedureName": "sia-r18",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -9429,7 +9429,7 @@
             {
               "procedureName": "sia-r18",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -12068,7 +12068,7 @@
       "procedureNames": [
         "sia-r16"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
@@ -12079,8 +12079,8 @@
         ]
       },
       "coverage": {
-        "covered": 12,
-        "untested": 2,
+        "covered": 14,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 14
       },
@@ -12170,7 +12170,7 @@
             {
               "procedureName": "sia-r16",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -12275,7 +12275,7 @@
             {
               "procedureName": "sia-r16",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -12522,8 +12522,8 @@
         ]
       },
       "coverage": {
-        "covered": 13,
-        "untested": 2,
+        "covered": 15,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 16
       },
@@ -12553,7 +12553,7 @@
             {
               "procedureName": "sia-r46",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -12583,7 +12583,7 @@
             {
               "procedureName": "sia-r46",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
