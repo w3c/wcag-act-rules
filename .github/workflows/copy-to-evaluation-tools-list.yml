@@ -23,6 +23,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
+          ref: publication
           path: act-rules
 
       - name: Clone ${{ env.DESTINATION_REPO }}
