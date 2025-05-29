@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> e88epe</p>
-  <p><strong>Date:</strong> Updated 2 December 2024</p>
+  <p><strong>Date:</strong> Updated 29 May 2025</p>
   <p><strong>Authors:</strong> <a href="https://www.linkedin.com/in/brianbors/">Brian Bors</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
   
@@ -22,7 +22,7 @@ rule_meta:
   original_file: image-not-in-acc-tree-is-decorative-e88epe.md
   description: |
     This rule checks that visible `img`, `svg` and `canvas` elements that are ignored by assistive technologies are decorative.
-  last_modified: 2 December 2024
+  last_modified: 29 May 2025
   scs_tested:
     - handle: Non-text Content
       num: 1.1.1
@@ -60,7 +60,9 @@ Each test target is [purely decorative][].
 
 ### Accessibility Support
 
-There are no accessibility support issues known.
+According to the [WAI-ARIA Graphics Module](https://www.w3.org/TR/graphics-aria-1.0/) specification, the `role="graphics-document"` requires an accessible name. Additionally, the [SVG Accessibility API Mappings](https://www.w3.org/TR/svg-aam-1.0/) set the default ARIA role for SVG elements to `graphics-document`, and [ARIA in HTML](https://www.w3.org/TR/html-aria/) maps the `<svg>` element to the same role.
+
+However, browser implementations vary. Some browsers expose `<svg>` elements without accessible names as images without alternative text. To address this, in the passed and inapplicable examples where the `<svg>` element is intended to be purely decorative, the `role="none"` attribute has been added.
 
 ### Bibliography
 
@@ -131,13 +133,13 @@ This `img` element that is ignored by assistive technologies because it has an [
 
 #### Passed Example 4
 
-<a class="example-link" title="Passed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/e88epe/736b18e695a44e19b8acc1a858262b4b9309c2fc.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/e88epe/395965215132ccf7f66c0c464c12bd48f416b1ca.html">Open in a new tab</a>
 
-This `svg` element that is ignored by assistive technologies because it has no attribute that would give it an [accessible name][] is [purely decorative][].
+This `svg` element that is ignored by assistive technologies because it has no attribute that would give it an [accessible name][] is [purely decorative][]. Because some browsers expose the `svg` element with the `image` role, the `role="none"` attribute has been added to guarantee its presentational role.
 
 ```html
 <p>Happy new year!</p>
-<svg height="200" xmlns="http://www.w3.org/2000/svg">
+<svg height="200" xmlns="http://www.w3.org/2000/svg" role="none">
 	<polygon points="100,10 40,180 190,60 10,60 160,180" fill="yellow" />
 </svg>
 ```
@@ -273,13 +275,13 @@ This `img` element is not [visible][] because it is positioned off screen.
 
 #### Inapplicable Example 4
 
-<a class="example-link" title="Inapplicable Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/e88epe/921e2bffbdced6b00801da02f7dc674b9ee6203c.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/e88epe/9f5f3718830124266a4866dc42f539a5a03e37e5.html">Open in a new tab</a>
 
-This `svg` element is ignored because it is a child of a link that provides its [accessible name][].
+This `svg` element is ignored because it is a child of a link that provides its [accessible name][]. Because some browsers expose the `svg` element with the `image` role, the `role="none"` attribute has been added to guarantee its presentational role.
 
 ```html
 <a href="https://example.org" aria-label="SVG star">
-	<svg height="200" xmlns="http://www.w3.org/2000/svg">
+	<svg height="200" xmlns="http://www.w3.org/2000/svg" role="none">
 		<polygon points="100,10 40,180 190,60 10,60 160,180" fill="yellow" />
 	</svg>
 </a>
