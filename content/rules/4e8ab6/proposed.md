@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 4e8ab6</p>
-  <p><strong>Date:</strong> Updated 1 May 2025</p>
+  <p><strong>Date:</strong> Updated 15 May 2025</p>
   <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, Tom Brunet. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -20,7 +20,7 @@ rule_meta:
   original_file: role-required-states-and-properties-4e8ab6.md
   description: |
     This rule checks that elements that have an explicit role also specify all required states and properties.
-  last_modified: 1 May 2025
+  last_modified: 15 May 2025
 ---
 
 ## Applicability
@@ -69,9 +69,9 @@ This rule relies on browsers and assistive technologies to support leaving out [
     </ul>
   </details></li>
   <li><details>
-    <summary><span>undefined</span></summary>
+    <summary><span>ARIA 1.2, 5.2.2 Required States and Properties</span></summary>
     <ul>
-      <li><a href="https://www.w3.org/TR/wai-aria-1.2/#requiredstate">Learn more about undefined</a></li>
+      <li><a href="https://www.w3.org/TR/wai-aria-1.2/#requiredstate">Learn more about ARIA 1.2, 5.2.2 Required States and Properties</a></li>
       <li><strong>Required for conformance</strong> to WAI-ARIA 1.2 author requirements.</li>
       <li>Outcome mapping: <ul>
         <li>Any <code>failed</code> outcomes: WAI-ARIA requirement is not satisfied</li>

@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 3e12e1</p>
-  <p><strong>Date:</strong> Updated 2 December 2024</p>
+  <p><strong>Date:</strong> Updated 2 May 2025</p>
   <p><strong>Authors:</strong> <a href="https://github.com/Jym77">Jean-Yves Moyen</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
   
@@ -22,7 +22,7 @@ rule_meta:
   original_file: block-collapsible-3e12e1.md
   description: |
     This rule checks that repeated blocks of content are collapsible
-  last_modified: 2 December 2024
+  last_modified: 2 May 2025
 ---
 
 ## Applicability
@@ -40,15 +40,13 @@ For each [block of repeated content][] in each test target, which is before (in 
 
 ### Assumptions
 
-There are no assumptions.
+Usually the same [instrument][] removes both [visibility][visible] and [inclusion in the accessibility tree][included in the accessibility tree] of a [block of repeated content][]. That [instrument][] may remove all [blocks of repeated content][block of repeated content]. If there is no [block of repeated content][] before the non-repeated content the rule passes.
+
+[Technique SCR28: Using an expandable and collapsible menu to bypass block of content][tech scr28] does not have any requirements concerning the location of the [instruments][instrument] in relation to the [block of repeated content][] they control, hence this rule doesn't. It is likely a good idea to either keep each [instrument][] close to the start of the [block of repeated content][] it controls; or to group them all in one place near the start of the document. Notably, [instruments][instrument] located after (in reading order) the block they collapse are likely not satisfying [Success Criterion 2.4.1 Bypass blocks][sc241], which this rule is designed for. Thus, it is possible to pass this rule without satisfying [Success Criterion 2.4.1 Bypass blocks][sc241].
 
 ### Accessibility Support
 
 There are no accessibility support issues known.
-
-Usually the same [instrument][] removes both [visibility][visible] and [inclusion in the accessibility tree][included in the accessibility tree] of a [block of repeated content][]. That [instrument][] may remove all [blocks of repeated content][block of repeated content]. If there is no [block of repeated content][] before the non-repeated content the rule passes.
-
-[Technique SCR28: Using an expandable and collapsible menu to bypass block of content][tech scr28] does not have any requirements concerning the location of the [instruments][instrument] in relation to the [block of repeated content][] they control, hence this rule doesn't. It is likely a good idea to either keep each [instrument][] close to the start of the [block of repeated content][] it controls; or to group them all in one place near the start of the document. Notably, [instruments][instrument] located after (in reading order) the block they collapse are likely not satisfying [Success Criterion 2.4.1 Bypass blocks][sc241], which this rule is designed for. Thus, it is possible to pass this rule without satisfying [Success Criterion 2.4.1 Bypass blocks][sc241].
 
 ### Bibliography
 
