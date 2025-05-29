@@ -404,72 +404,94 @@
      */
     function filterAriaRules(showProposed, showApproved, showDeprecated, 
                              showAutomated, showSemiauto, showManual, showLinter, showUnimplemented) {
-      
       const ariaListContainer = document.querySelector('.aria-rules-list-container');
       const noAriaRulesMessage = document.querySelector('.no-aria-rules-message');
       const filteredAriaMessage = document.querySelector('.filtered-aria-rules-message');
+      const showEmptyScCheckbox = document.getElementById('show-empty-sc');
+      const showEmptySections = showEmptyScCheckbox ? showEmptyScCheckbox.checked : true;
       
       if (!ariaListContainer) {
         // If the list container isn't found, do nothing (it might not exist if found_aria_rule was false)
         return false; 
       }
 
-      const ariaRuleItems = ariaListContainer.querySelectorAll('li');
-      let visibleAriaRuleCount = 0;
-      const totalAriaRuleCount = ariaRuleItems.length;
-
-      ariaRuleItems.forEach(function(rule) {
-         const hasProposedPill = rule.querySelector('.act-pill.proposed') !== null;
-         const isDeprecated = rule.querySelector('.act-pill.deprecated') !== null; 
-         
-         // Status Logic:
-         const isProposed = hasProposedPill && !isDeprecated; 
-         const isApproved = !hasProposedPill && !isDeprecated; 
-
-         let shouldShowByStatus = (isProposed && showProposed) || (isApproved && showApproved) || (isDeprecated && showDeprecated);
-
-         // Test Type Logic:
-         const ruleTypes = rule.dataset.testTypes ? rule.dataset.testTypes.split(' ') : [];
-         let shouldShowByTestType = false;
-         if (ruleTypes.includes('automated') && showAutomated) shouldShowByTestType = true;
-         if (ruleTypes.includes('semiauto') && showSemiauto) shouldShowByTestType = true;
-         if (ruleTypes.includes('manual') && showManual) shouldShowByTestType = true;
-         if (ruleTypes.includes('linter') && showLinter) shouldShowByTestType = true;
-         if (ruleTypes.includes('unimplemented') && showUnimplemented) shouldShowByTestType = true;
-         if (ruleTypes.length === 0 && showUnimplemented) shouldShowByTestType = true; // Handle cases where attribute might be empty if unimplemented
-
-         let shouldShow = shouldShowByStatus && shouldShowByTestType;
-         
-         toggleVisibility(rule, shouldShow);
-         
-         if (shouldShow) {
-            visibleAriaRuleCount++;
-         }
+      // For each ARIA requirement group, toggle its <ul> and .no-act-rules-message
+      // The structure is: <p>title</p><ul>rules</ul><p class="no-act-rules-message">...</p>
+      let anyVisibleAriaRule = false;
+      let ariaGroups = [];
+      // Find all <ul> that are direct children of .aria-rules-list-container (or after a <p>)
+      let child = ariaListContainer.firstElementChild;
+      while (child) {
+        if (child.tagName === 'UL') {
+          ariaGroups.push(child);
+        }
+        child = child.nextElementSibling;
+      }
+      ariaGroups.forEach(function(ul) {
+        const liRules = ul.querySelectorAll('li');
+        let visibleCount = 0;
+        liRules.forEach(function(rule) {
+          const hasProposedPill = rule.querySelector('.act-pill.proposed') !== null;
+          const isDeprecated = rule.querySelector('.act-pill.deprecated') !== null; 
+          // Status Logic:
+          const isProposed = hasProposedPill && !isDeprecated; 
+          const isApproved = !hasProposedPill && !isDeprecated; 
+          let shouldShowByStatus = (isProposed && showProposed) || (isApproved && showApproved) || (isDeprecated && showDeprecated);
+          // Test Type Logic:
+          const ruleTypes = rule.dataset.testTypes ? rule.dataset.testTypes.split(' ') : [];
+          let shouldShowByTestType = false;
+          if (ruleTypes.includes('automated') && showAutomated) shouldShowByTestType = true;
+          if (ruleTypes.includes('semiauto') && showSemiauto) shouldShowByTestType = true;
+          if (ruleTypes.includes('manual') && showManual) shouldShowByTestType = true;
+          if (ruleTypes.includes('linter') && showLinter) shouldShowByTestType = true;
+          if (ruleTypes.includes('unimplemented') && showUnimplemented) shouldShowByTestType = true;
+          if (ruleTypes.length === 0 && showUnimplemented) shouldShowByTestType = true;
+          let shouldShow = shouldShowByStatus && shouldShowByTestType;
+          toggleVisibility(rule, shouldShow);
+          if (shouldShow) visibleCount++;
+        });
+        // Find the .no-act-rules-message sibling after the <ul>
+        const noRulesMsg = ul.nextElementSibling && ul.nextElementSibling.classList.contains('no-act-rules-message') ? ul.nextElementSibling : null;
+        // Find the <p> or <strong> title before the <ul>
+        let titlePara = ul.previousElementSibling;
+        // If the previous sibling is a <p> or <strong>, that's the title
+        // (If you use a <div> or other wrapper, adjust this logic)
+        // Hide the whole group (title, ul, no-msg) if no visible rules and showEmptySections is false
+        if (visibleCount === 0 && !showEmptySections) {
+          if (ul) toggleVisibility(ul, false);
+          if (noRulesMsg) toggleVisibility(noRulesMsg, false);
+          if (titlePara && (titlePara.tagName === 'P' || titlePara.tagName === 'STRONG')) toggleVisibility(titlePara, false);
+        } else {
+          if (ul) toggleVisibility(ul, visibleCount > 0);
+          if (noRulesMsg) toggleVisibility(noRulesMsg, visibleCount === 0);
+          if (titlePara && (titlePara.tagName === 'P' || titlePara.tagName === 'STRONG')) toggleVisibility(titlePara, true);
+        }
+        if (visibleCount > 0) anyVisibleAriaRule = true;
       });
 
-      // Handle visibility of the list and messages
+      // Handle overall ARIA section messages as before
+      const ariaRuleItems = ariaListContainer.querySelectorAll('li');
+      let visibleAriaRuleCount = 0;
+      ariaRuleItems.forEach(function(rule) {
+         if (!rule.hasAttribute('hidden')) visibleAriaRuleCount++;
+      });
       const initiallyHadRules = !noAriaRulesMessage || noAriaRulesMessage.hasAttribute('hidden');
-      
       if (initiallyHadRules) {
         if (visibleAriaRuleCount > 0) {
-          // Show list, hide messages
           toggleVisibility(ariaListContainer, true);
           if (noAriaRulesMessage) toggleVisibility(noAriaRulesMessage, false);
           if (filteredAriaMessage) toggleVisibility(filteredAriaMessage, false);
         } else {
-          // Hide list, show filtered message
           toggleVisibility(ariaListContainer, false);
           if (noAriaRulesMessage) toggleVisibility(noAriaRulesMessage, false);
           if (filteredAriaMessage) toggleVisibility(filteredAriaMessage, true);
         }
       } else {
-        // No rules initially, keep list hidden, ensure no-rules message is shown
         toggleVisibility(ariaListContainer, false);
         if (noAriaRulesMessage) toggleVisibility(noAriaRulesMessage, true);
         if (filteredAriaMessage) toggleVisibility(filteredAriaMessage, false);
       }
-
-      return visibleAriaRuleCount > 0; // Return boolean
+      return visibleAriaRuleCount > 0;
     }
   });
 })(); 

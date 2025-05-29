@@ -198,39 +198,33 @@ This page contains all success criteria from the Web Content Accessibility Guide
 {% endfor %}
 
 {%- comment -%}
-  Collect all unique non-WCAG, non-technique requirement keys from rules
+  Collect all unique non-WCAG requirement titles and keys, and sort by title
 {%- endcomment -%}
-{% assign aria_req_keys = "" | split: "," %}
+{% assign aria_req_objs = "" | split: "," %}
 {% for rule in site.data.wcag-act-rules.rules["act-rules"] %}
   {% if rule.frontmatter.accessibility_requirements %}
     {% for req in rule.frontmatter.accessibility_requirements %}
       {% assign req_key = req[0] %}
-      {% unless req_key contains "wcag2" or req_key contains "wcag-technique" %}
-        {% unless aria_req_keys contains req_key %}
-          {% assign aria_req_keys = aria_req_keys | push: req_key %}
+      {% assign req_title = req[1].title | default: req_key %}
+      {% assign req_key_prefix = req_key | slice: 0, 4 %}
+      {% unless req_key_prefix == "wcag" %}
+        {% assign obj = req_title | append: '|||' | append: req_key %}
+        {% unless aria_req_objs contains obj %}
+          {% assign aria_req_objs = aria_req_objs | push: obj %}
         {% endunless %}
       {% endunless %}
     {% endfor %}
   {% endif %}
 {% endfor %}
+{% assign aria_req_objs = aria_req_objs | sort %}
 
 <h2>WAI-ARIA Related Rules</h2>
 <div class="aria-rules-list-container">
 {% assign found_aria_rule = false %}
-{% for req_key in aria_req_keys %}
-  {%- comment -%} Find the title for this requirement key {%- endcomment -%}
-  {% assign req_title = req_key %}
-  {% for rule in site.data.wcag-act-rules.rules["act-rules"] %}
-    {% if rule.frontmatter.accessibility_requirements %}
-      {% for req in rule.frontmatter.accessibility_requirements %}
-        {% if req[0] == req_key and req[1].title %}
-          {% assign req_title = req[1].title %}
-          {% break %}
-        {% endif %}
-      {% endfor %}
-    {% endif %}
-    {% if req_title != req_key %}{% break %}{% endif %}
-  {% endfor %}
+{% for aria_req_obj in aria_req_objs %}
+  {% assign pair = aria_req_obj | split: '|||' %}
+  {% assign req_title = pair[0] %}
+  {% assign req_key = pair[1] %}
   {%- comment -%} Now, list all rules for this requirement key {%- endcomment -%}
   {% assign rules_for_req = "" | split: "," %}
   {% for rule in site.data.wcag-act-rules.rules["act-rules"] %}
@@ -247,7 +241,12 @@ This page contains all success criteria from the Web Content Accessibility Guide
     {% endif %}
   {% endfor %}
   {% if rules_for_req.size > 0 %}
-    <p><strong>{{ req_title }}</strong></p>
+    {% assign comma_index = req_title | split: ',' %}
+    {% if comma_index.size > 1 %}
+      <p><strong>{{ comma_index[0] }}</strong>{{ req_title | remove_first: comma_index[0] }}</p>
+    {% else %}
+      <p><strong>{{ req_title }}</strong></p>
+    {% endif %}
     <ul>
       {% for rule in rules_for_req %}
         {% assign found_aria_rule = true %}
@@ -266,6 +265,15 @@ This page contains all success criteria from the Web Content Accessibility Guide
         </li>
       {% endfor %}
     </ul>
+    <p class="no-act-rules-message"{% if rules_for_req.size > 0 %} hidden{% endif %}><em>No ACT Rules available for this requirement yet.</em></p>
+  {% else %}
+    {% assign comma_index = req_title | split: ',' %}
+    {% if comma_index.size > 1 %}
+      <p><strong>{{ comma_index[0] }}</strong>{{ req_title | remove_first: comma_index[0] }}</p>
+    {% else %}
+      <p><strong>{{ req_title }}</strong></p>
+    {% endif %}
+    <p class="no-act-rules-message"><em>No ACT Rules available for this requirement yet.</em></p>
   {% endif %}
 {% endfor %}
 </div>
