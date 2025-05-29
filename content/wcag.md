@@ -197,51 +197,81 @@ This page contains all success criteria from the Web Content Accessibility Guide
   {% endfor %}
 {% endfor %}
 
-<h2>WAI-ARIA Related Rules</h2>
+{%- comment -%}
+  Collect all unique non-WCAG, non-technique requirement keys from rules
+{%- endcomment -%}
+{% assign aria_req_keys = "" | split: "," %}
+{% for rule in site.data.wcag-act-rules.rules["act-rules"] %}
+  {% if rule.frontmatter.accessibility_requirements %}
+    {% for req in rule.frontmatter.accessibility_requirements %}
+      {% assign req_key = req[0] %}
+      {% unless req_key contains "wcag2" or req_key contains "wcag-technique" %}
+        {% unless aria_req_keys contains req_key %}
+          {% assign aria_req_keys = aria_req_keys | push: req_key %}
+        {% endunless %}
+      {% endunless %}
+    {% endfor %}
+  {% endif %}
+{% endfor %}
 
+<h2>WAI-ARIA Related Rules</h2>
+<div class="aria-rules-list-container">
 {% assign found_aria_rule = false %}
-<ul class="aria-rules-list-container">
+{% for req_key in aria_req_keys %}
+  {%- comment -%} Find the title for this requirement key {%- endcomment -%}
+  {% assign req_title = req_key %}
   {% for rule in site.data.wcag-act-rules.rules["act-rules"] %}
-    {% assign is_aria_related = false %}
-    {% if rule.frontmatter.accessibility_requirements and rule.frontmatter.accessibility_requirements != empty %}
+    {% if rule.frontmatter.accessibility_requirements %}
       {% for req in rule.frontmatter.accessibility_requirements %}
-        {% assign req_key = req[0] %}
-        {% assign prefix = req_key | slice: 0, 7 %}
-        {% if prefix == "aria12:" %}
-          {% assign is_aria_related = true %}
+        {% if req[0] == req_key and req[1].title %}
+          {% assign req_title = req[1].title %}
           {% break %}
         {% endif %}
       {% endfor %}
     {% endif %}
-
-    {% if is_aria_related %}
-      {% assign found_aria_rule = true %}
-      {% assign rule_id = rule.frontmatter.id %}
-
-      {% comment %}Determine rule types{% endcomment %}
-      {% assign test_types = "" | split: "," %}
-      {% if automated_rule_ids contains rule_id %}{% assign test_types = test_types | push: "automated" %}{% endif %}
-      {% if manual_rule_ids contains rule_id %}{% assign test_types = test_types | push: "manual" %}{% endif %}
-      {% if semiauto_rule_ids contains rule_id %}{% assign test_types = test_types | push: "semiauto" %}{% endif %}
-      {% if linter_rule_ids contains rule_id %}{% assign test_types = test_types | push: "linter" %}{% endif %}
-      {% unless all_implemented_ids contains rule_id %}{% assign test_types = test_types | push: "unimplemented" %}{% endunless %}
-      {% assign test_types_str = test_types | join: " " %}
-
-      <li data-test-types="{{ test_types_str }}">
-        <a href="/standards-guidelines/act/rules/{{ rule_id }}/proposed/">{{ rule.title }}</a>
-        {% if rule.proposed == true and rule.deprecated != true %} <span class="act-pill proposed">proposed</span>{% endif %}
-        {% if rule.deprecated == true %} <span class="act-pill deprecated">deprecated</span>{% endif %}
-      </li>
+    {% if req_title != req_key %}{% break %}{% endif %}
+  {% endfor %}
+  {%- comment -%} Now, list all rules for this requirement key {%- endcomment -%}
+  {% assign rules_for_req = "" | split: "," %}
+  {% for rule in site.data.wcag-act-rules.rules["act-rules"] %}
+    {% assign has_req = false %}
+    {% if rule.frontmatter.accessibility_requirements %}
+      {% for req in rule.frontmatter.accessibility_requirements %}
+        {% if req[0] == req_key %}
+          {% assign has_req = true %}
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+    {% if has_req %}
+      {% assign rules_for_req = rules_for_req | push: rule %}
     {% endif %}
   {% endfor %}
-</ul>
-
-{% comment %} Message shown when no ARIA rules match the initial query {% endcomment %}
+  {% if rules_for_req.size > 0 %}
+    <p><strong>{{ req_title }}</strong></p>
+    <ul>
+      {% for rule in rules_for_req %}
+        {% assign found_aria_rule = true %}
+        {% assign rule_id = rule.frontmatter.id %}
+        {% assign test_types = "" | split: "," %}
+        {% if automated_rule_ids contains rule_id %}{% assign test_types = test_types | push: "automated" %}{% endif %}
+        {% if manual_rule_ids contains rule_id %}{% assign test_types = test_types | push: "manual" %}{% endif %}
+        {% if semiauto_rule_ids contains rule_id %}{% assign test_types = test_types | push: "semiauto" %}{% endif %}
+        {% if linter_rule_ids contains rule_id %}{% assign test_types = test_types | push: "linter" %}{% endif %}
+        {% unless all_implemented_ids contains rule_id %}{% assign test_types = test_types | push: "unimplemented" %}{% endunless %}
+        {% assign test_types_str = test_types | join: " " %}
+        <li data-test-types="{{ test_types_str }}">
+          <a href="/standards-guidelines/act/rules/{{ rule_id }}/proposed/">{{ rule.title }}</a>
+          {% if rule.proposed == true and rule.deprecated != true %} <span class="act-pill proposed">proposed</span>{% endif %}
+          {% if rule.deprecated == true %} <span class="act-pill deprecated">deprecated</span>{% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+{% endfor %}
+</div>
 <p class="no-aria-rules-message" {% if found_aria_rule %}hidden{% endif %}>
   <em>No rules found with WAI-ARIA 1.2 accessibility requirements.</em>
 </p>
-
-{% comment %} Message shown when ARIA rules exist but are all filtered out {% endcomment %}
 <p class="filtered-aria-rules-message" hidden>
   <em>All WAI-ARIA related rules are currently hidden by filters.</em>
 </p>
