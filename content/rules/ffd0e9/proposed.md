@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> ffd0e9</p>
-  <p><strong>Date:</strong> Updated 2 December 2024</p>
+  <p><strong>Date:</strong> Updated 29 May 2025</p>
   <p><strong>Authors:</strong> <a href="https://github.com/Jym77">Jean-Yves Moyen</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -20,7 +20,7 @@ rule_meta:
   original_file: heading-non-empty-accessible-name-ffd0e9.md
   description: |
     This rule checks that each heading has a non-empty accessible name.
-  last_modified: 2 December 2024
+  last_modified: 29 May 2025
 ---
 
 ## Applicability
@@ -56,9 +56,9 @@ There are no assumptions.
 
 <ul class="act-requirements-list">
   <li><details>
-    <summary><span>ARIA 1.2,5.2.8 Accessible Name Calculation</span></summary>
+    <summary><span>ARIA 1.2, 5.2.8 Accessible Name Calculation</span></summary>
     <ul>
-      <li><a href="https://www.w3.org/TR/wai-aria-1.2/#namecalculation">Learn more about ARIA 1.2,5.2.8 Accessible Name Calculation</a></li>
+      <li><a href="https://www.w3.org/TR/wai-aria-1.2/#namecalculation">Learn more about ARIA 1.2, 5.2.8 Accessible Name Calculation</a></li>
       <li><strong>Required for conformance</strong> to WAI-ARIA 1.2 author requirements.</li>
       <li>Outcome mapping: <ul>
         <li>Any <code>failed</code> outcomes: WAI-ARIA requirement is not satisfied</li>

@@ -2,16 +2,16 @@
   "vendor": "IBM Accessibility",
   "name": "Equal Access Accessibility Checker",
   "version": "3.1.42-rc.0",
-  "lastModified": "25 April 2025",
+  "lastModified": "3 June 2025",
   "approvedRules": {
     "complete": 19,
-    "partial": 5,
-    "inconsistent": 5,
+    "partial": 4,
+    "inconsistent": 6,
     "untested": 5
   },
   "proposedRules": {
-    "complete": 3,
-    "partial": 2,
+    "complete": 5,
+    "partial": 0,
     "inconsistent": 2,
     "untested": 46
   },
@@ -198,7 +198,7 @@
             {
               "procedureName": "aria_role_allowed:Pass_0,Fail_2,Potential_1",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -681,7 +681,7 @@
             {
               "procedureName": "aria_attribute_allowed:Pass_0,Fail_1",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -5742,7 +5742,7 @@
             {
               "procedureName": "table_headers_ref_valid:Pass_0,Fail_1,Fail_2,Fail_3,Fail_4",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -5757,7 +5757,7 @@
             {
               "procedureName": "table_headers_ref_valid:Pass_0,Fail_1,Fail_2,Fail_3,Fail_4",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -7841,19 +7841,17 @@
       "procedureNames": [
         "meta_redirect_optional:pass,fail,fail_longrefresh"
       ],
-      "consistency": "partial",
+      "consistency": null,
       "accessibilityRequirements": {
         "correct": false,
         "expected": [
           "WCAG2:interruptions",
           "WCAG2:change-on-request"
         ],
-        "reported": [
-          "WCAG2:timing-adjustable"
-        ]
+        "reported": []
       },
       "coverage": {
-        "covered": 13,
+        "covered": 10,
         "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 13
@@ -7899,7 +7897,7 @@
             {
               "procedureName": "meta_redirect_optional:pass,fail,fail_longrefresh",
               "outcomes": [
-                "failed"
+                "inapplicable"
               ]
             }
           ]
@@ -7914,7 +7912,7 @@
             {
               "procedureName": "meta_redirect_optional:pass,fail,fail_longrefresh",
               "outcomes": [
-                "failed"
+                "inapplicable"
               ]
             }
           ]
@@ -7929,7 +7927,7 @@
             {
               "procedureName": "meta_redirect_optional:pass,fail,fail_longrefresh",
               "outcomes": [
-                "failed"
+                "inapplicable"
               ]
             }
           ]
@@ -8332,8 +8330,8 @@
         "reported": []
       },
       "coverage": {
-        "covered": 8,
-        "untested": 2,
+        "covered": 10,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 17
       },
@@ -8363,7 +8361,7 @@
             {
               "procedureName": "aria_child_valid:Pass,Fail_no_child,Fail_invalid_child",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -8573,7 +8571,7 @@
             {
               "procedureName": "aria_child_valid:Pass,Fail_no_child,Fail_invalid_child",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -8602,15 +8600,15 @@
       "procedureNames": [
         "aria_attribute_valid:Pass,Fail_invalid_role_attr,Fail_invalid_implicit_role_attr"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
         "reported": []
       },
       "coverage": {
-        "covered": 16,
-        "untested": 3,
+        "covered": 19,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 19
       },
@@ -8700,7 +8698,7 @@
             {
               "procedureName": "aria_attribute_valid:Pass,Fail_invalid_role_attr,Fail_invalid_implicit_role_attr",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -8715,7 +8713,7 @@
             {
               "procedureName": "aria_attribute_valid:Pass,Fail_invalid_role_attr,Fail_invalid_implicit_role_attr",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -8730,7 +8728,7 @@
             {
               "procedureName": "aria_attribute_valid:Pass,Fail_invalid_role_attr,Fail_invalid_implicit_role_attr",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -9585,7 +9583,7 @@
       "procedureNames": [
         "aria_attribute_required:pass,fail_missing"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
@@ -9594,8 +9592,8 @@
         ]
       },
       "coverage": {
-        "covered": 12,
-        "untested": 2,
+        "covered": 14,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 14
       },
@@ -9685,7 +9683,7 @@
             {
               "procedureName": "aria_attribute_required:pass,fail_missing",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -9790,7 +9788,7 @@
             {
               "procedureName": "aria_attribute_required:pass,fail_missing",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
