@@ -3,7 +3,7 @@
   "website": "https://www.w3.org/WAI/standards-guidelines/act/rules/",
   "license": "https://act-rules.github.io/pages/license/",
   "description": "Accessibility conformance testing rules for HTML",
-  "count": 1171,
+  "count": 1176,
   "testcases": [
     {
       "ruleId": "674b10",
@@ -23885,6 +23885,96 @@
       "relativePath": "testcases/9bd38c/547eb8bf40d515cb7e8f35259af350bd7a92019c.html",
       "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/9bd38c/547eb8bf40d515cb7e8f35259af350bd7a92019c.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/9bd38c/proposed/"
+    },
+    {
+      "ruleId": "307n5z",
+      "ruleName": "Element with presentational children has no focusable content",
+      "ruleAccessibilityRequirements": {
+        "wcag20:4.1.2": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "ede992d9573d350db7cd0cb8685de5b96460fbc1",
+      "testcaseTitle": "Passed Example 4",
+      "relativePath": "testcases/307n5z/ede992d9573d350db7cd0cb8685de5b96460fbc1.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/307n5z/ede992d9573d350db7cd0cb8685de5b96460fbc1.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/307n5z/proposed/"
+    },
+    {
+      "ruleId": "307n5z",
+      "ruleName": "Element with presentational children has no focusable content",
+      "ruleAccessibilityRequirements": {
+        "wcag20:4.1.2": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "7bfb3a2d5783ade108f4f9fee10597a2343f8665",
+      "testcaseTitle": "Failed Example 4",
+      "relativePath": "testcases/307n5z/7bfb3a2d5783ade108f4f9fee10597a2343f8665.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/307n5z/7bfb3a2d5783ade108f4f9fee10597a2343f8665.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/307n5z/proposed/"
+    },
+    {
+      "ruleId": "307n5z",
+      "ruleName": "Element with presentational children has no focusable content",
+      "ruleAccessibilityRequirements": {
+        "wcag20:4.1.2": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "ad7e2441b992318debdeec5a07f92b0241f80a14",
+      "testcaseTitle": "Failed Example 5",
+      "relativePath": "testcases/307n5z/ad7e2441b992318debdeec5a07f92b0241f80a14.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/307n5z/ad7e2441b992318debdeec5a07f92b0241f80a14.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/307n5z/proposed/"
+    },
+    {
+      "ruleId": "307n5z",
+      "ruleName": "Element with presentational children has no focusable content",
+      "ruleAccessibilityRequirements": {
+        "wcag20:4.1.2": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "inapplicable",
+      "testcaseId": "837f998533e07e309d5f9a587b7a5ff013a73c7a",
+      "testcaseTitle": "Inapplicable Example 1",
+      "relativePath": "testcases/307n5z/837f998533e07e309d5f9a587b7a5ff013a73c7a.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/307n5z/837f998533e07e309d5f9a587b7a5ff013a73c7a.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/307n5z/proposed/"
+    },
+    {
+      "ruleId": "307n5z",
+      "ruleName": "Element with presentational children has no focusable content",
+      "ruleAccessibilityRequirements": {
+        "wcag20:4.1.2": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "inapplicable",
+      "testcaseId": "e687f56e16c718c737b2ebc096ab768bd9d87d50",
+      "testcaseTitle": "Inapplicable Example 2",
+      "relativePath": "testcases/307n5z/e687f56e16c718c737b2ebc096ab768bd9d87d50.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/307n5z/e687f56e16c718c737b2ebc096ab768bd9d87d50.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/307n5z/proposed/"
     },
     {
       "ruleId": "ffbc54",
