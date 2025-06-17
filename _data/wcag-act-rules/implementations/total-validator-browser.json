@@ -2,7 +2,7 @@
   "vendor": "Total Validator",
   "name": "Total Validator (+Browser)",
   "version": "17.4.0",
-  "lastModified": "4 May 2025",
+  "lastModified": "17 June 2025",
   "approvedRules": {
     "complete": 31,
     "partial": 0,
@@ -6115,7 +6115,7 @@
             {
               "procedureName": "E9542",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -6130,7 +6130,7 @@
             {
               "procedureName": "E9542",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -6145,7 +6145,7 @@
             {
               "procedureName": "E9542",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -6160,7 +6160,7 @@
             {
               "procedureName": "E9542",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -6175,7 +6175,7 @@
             {
               "procedureName": "E9542",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
