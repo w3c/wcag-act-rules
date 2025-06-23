@@ -169,3 +169,13 @@
   standards:
     - WCAG 2.2 Level A, AA, AAA
   jsonReport: https://webmedia.testfabrik.com/act_implementation_report/webmate_accessibility_workbench.json
+
+- name: UsableNet AQA - WCAG 2.2 AA Auto
+  vendor: UsableNet
+  homepage: https://usablenet.com
+  vendorHomepage: https://usablenet.com
+  uniqueKey: usablenet-aqa
+  type: Automated tool
+  standards:
+    - WCAG 2.2 Level A, AA, AAA
+  jsonReport: https://help.usablenet.com/aqa-act-r/reports/UsableNet-AQA-WCAG2.2AA-auto.json
