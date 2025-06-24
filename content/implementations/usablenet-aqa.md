@@ -9,5 +9,5 @@ footer: ""
 type_of_guidance: ""
 github:
   repository: w3c/wcag-act-rules
-  path: content/implementations/webmate-accessibility-workbench.md
+  path: content/implementations/usablenet-aqa.md
 ---
