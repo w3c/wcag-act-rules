@@ -1,10 +1,10 @@
-<div class="filter-controls">
+<div id="filter-controls">
   <fieldset>
     <legend>Filter this page</legend>
     <div class="filter-options">
       
-      <div class="filter-group">
-        <span class="filter-group-label">Accessibility requirements:</span>
+      <fieldset class="filter-group">
+        <legend class="filter-group-label">Accessibility requirements:</legend>
         <div class="checkbox-group">
           <div class="checkbox-option">
             <input type="checkbox" id="level-a" name="level" value="A" checked>
@@ -23,10 +23,10 @@
             <label for="show-aria">WAI-ARIA</label>
           </div>
         </div>
-      </div>
+      </fieldset>
       
-      <div class="filter-group">
-        <span class="filter-group-label">Rule Status:</span>
+      <fieldset class="filter-group">
+        <legend class="filter-group-label">Rule Status:</legend>
         <div class="checkbox-group">
           <div class="checkbox-option">
             <input type="checkbox" id="show-approved" name="status" value="approved" checked>
@@ -41,22 +41,25 @@
             <label for="show-deprecated">Deprecated Rules</label>
           </div>
         </div>
-      </div>
+      </fieldset>
       
-      <div class="filter-group">
-        <span class="filter-group-label">Implementation:</span>
+      <fieldset class="filter-group">
+        <legend class="filter-group-label">
+          Implementation:
+          <a href="#about-implementations" aria-label="About implementations" class="question">?</a>
+        </legend>
         <div class="checkbox-group">
           <div class="checkbox-option">
-            <input type="checkbox" id="show-automated" name="test-type" value="automated" checked>
-            <label for="show-automated">Automated</label>
+            <input type="checkbox" id="show-manual" name="test-type" value="manual" checked>
+            <label for="show-manual">Manual</label>
           </div>
           <div class="checkbox-option">
             <input type="checkbox" id="show-semiauto" name="test-type" value="semiauto" checked>
             <label for="show-semiauto">Semi-Automatic</label>
           </div>
           <div class="checkbox-option">
-            <input type="checkbox" id="show-manual" name="test-type" value="manual" checked>
-            <label for="show-manual">Manual</label>
+            <input type="checkbox" id="show-automated" name="test-type" value="automated" checked>
+            <label for="show-automated">Automated</label>
           </div>
           <div class="checkbox-option">
             <input type="checkbox" id="show-linter" name="test-type" value="linter" checked>
@@ -64,20 +67,20 @@
           </div>
           <div class="checkbox-option">
             <input type="checkbox" id="show-unimplemented" name="test-type" value="unimplemented" checked>
-            <label for="show-unimplemented">Unimplemented</label>
+            <label for="show-unimplemented">none</label>
           </div>
         </div>
-      </div>
+      </fieldset>
 
-      <div class="filter-group">
-        <span class="filter-group-label">Display Options:</span>
+      <fieldset class="filter-group">
+        <legend class="filter-group-label">Display Options:</legend>
         <div class="checkbox-group">
           <div class="checkbox-option">
             <input type="checkbox" id="show-empty-sc" name="display" value="empty-sc" checked>
             <label for="show-empty-sc">Requirements without rules</label>
           </div>
         </div>
-      </div>
+      </fieldset>
 
     </div>
   </fieldset>

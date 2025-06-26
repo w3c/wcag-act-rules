@@ -128,7 +128,7 @@ ul.act-requirements-list {
 }
 
 /* Filter controls styling */
-.filter-controls {
+#filter-controls {
   margin: 2em 0;
   background-color: #f8f9fa;
   padding: 1.5em;
@@ -136,13 +136,13 @@ ul.act-requirements-list {
   border: 1px solid #e9ecef;
 }
 
-.filter-controls fieldset {
+#filter-controls fieldset {
   border: none;
   padding: 0;
   margin: 0;
 }
 
-.filter-controls legend {
+#filter-controls legend {
   font-weight: bold;
   font-size: 1.2em;
   margin-bottom: 0.5em;
@@ -165,10 +165,12 @@ ul.act-requirements-list {
   margin-bottom: 0.5em;
 }
 
-.filter-group-label {
+#filter-controls .filter-group-label {
   display: block;
   font-weight: bold;
   margin-bottom: 0.5em;
+  font-size: 1rem;
+  color: black;
 }
 
 .checkbox-group {
@@ -223,4 +225,31 @@ input[type="checkbox"]:focus + label {
 #filter-status #total-selected-criteria-count,
 #filter-status #aria-rule-count {
   font-weight: bold; 
+}
+
+
+.back-to-top-link {
+  position: relative;
+}
+.back-to-top-link > a {
+  position: absolute;
+  right: 0;
+  display: inline-block;
+  height: 0;
+  overflow: hidden;
+}
+.back-to-top-link > a:focus {
+  height: auto;
+}
+
+a.question {
+  text-decoration: none;
+  display: inline-block;
+  border: 2px solid currentColor;
+  width: 1.1em;
+  border-radius: 100%;
+  text-align: center;
+  height: 1.1em;
+  line-height: 1.1em;
+  font-size: 0.9rem;
 }
