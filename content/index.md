@@ -23,64 +23,266 @@ This page contains list of ACT Rules to test conformance [Web Content Accessibil
 {% include box.html type="end" %}
 {:/}
 
-## Rules for WCAG 2
 
-The ACT Rules in this section directly relate to WCAG 2 success criteria. These rules have been approved by the Accessibility Guidelines Working Group. They are fully implemented in at least one [test tool or methodology](../implementations/).
+{% comment %}Build lists of rule IDs by test type{% endcomment %}
+{% assign automated_rule_ids = "" | split: "," %}
+{% assign manual_rule_ids = "" | split: "," %}
+{% assign semiauto_rule_ids = "" | split: "," %}
+{% assign linter_rule_ids = "" | split: "," %}
+{% assign all_implemented_ids = "" | split: "," %}
 
-<ul>
-{%- for rule in site.data.wcag-act-rules.rules["act-rules"] %}
-  {%- unless rule.permalink contains '/5f99a7' or rule.permalink contains '/6a7281' or rule.permalink contains '/674b10' %}
-  {%- if rule.proposed == false and rule.deprecated != true %}
-    <li><a href="{{ rule.permalink | relative_url }}">{{ rule.title }}</a></li>
-  {%- endif %}
-  {%- endunless %}
-{%- endfor %}
+{% comment %}Look through implementations for tools and their types{% endcomment %}
+{% for implementation in site.data.wcag-act-rules.act-implementations %}
+  {% assign impl_key = implementation.uniqueKey %}
+  {% assign impl_mapping_file = site.data.wcag-act-rules.implementations[impl_key] %}
+  
+  {% if impl_mapping_file.actRuleMapping %}
+    {% for rule_mapping in impl_mapping_file.actRuleMapping %}
+      {% if rule_mapping.ruleId and rule_mapping.consistency == "complete" %}
+        {% assign current_rule_id = rule_mapping.ruleId %}
+        {% assign all_implemented_ids = all_implemented_ids | push: current_rule_id %}
+        
+        {% if implementation.type == "Automated tool" %}
+          {% assign automated_rule_ids = automated_rule_ids | push: current_rule_id %}
+        {% endif %}
+        {% if implementation.type == "Test methodology" %}
+          {% assign manual_rule_ids = manual_rule_ids | push: current_rule_id %}
+        {% endif %}
+        {% if implementation.type == "Semi-automated tool" %}
+          {% assign semiauto_rule_ids = semiauto_rule_ids | push: current_rule_id %}
+        {% endif %}
+        {% if implementation.type == "Linter" %}
+          {% assign linter_rule_ids = linter_rule_ids | push: current_rule_id %}
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+{% endfor %}
+
+{% comment %}Remove duplicates from the rule IDs{% endcomment %}
+{% assign automated_rule_ids = automated_rule_ids | uniq %}
+{% assign manual_rule_ids = manual_rule_ids | uniq %}
+{% assign semiauto_rule_ids = semiauto_rule_ids | uniq %}
+{% assign linter_rule_ids = linter_rule_ids | uniq %}
+{% assign all_implemented_ids = all_implemented_ids | uniq %}
+
+
+{% include filter-controls.html %}
+
+{% for principle in site.data.wcag-complete.principles %}
+{% for guideline in principle.guidelines %}
+<h2 class="guideline-section">Guideline {{ guideline.num }} - {{ guideline.handle }}</h2>
+
+{% for sc in guideline.successcriteria %}
+{% if sc.versions contains "2.2" %}
+<div class="sc-item level-{{sc.level | downcase}}{% if forloop.first %} first{% endif %}">
+<p><strong>{{ sc.num }} {{ sc.handle }}</strong>: {{ sc.title }} (Level {{ sc.level }})</p>
+
+{% comment %}Find related ACT rules for this criterion{% endcomment %}
+{% assign related_rules = "" | split: "," %}
+{% assign current_sc_num = sc.num %}
+{% assign current_sc_key = "wcag20:" | append: current_sc_num %}
+{% assign current_sc_key21 = "wcag21:" | append: current_sc_num %}
+{% assign current_sc_id = current_sc_num | downcase | replace: ".", "-" %}
+
+{% comment %}First, try to find the requirement entry for this criterion{% endcomment %}
+{% for req in site.data.wcag-act-rules.requirements %}
+  {% assign req_key = req[0] %}
+  {% assign req_data = req[1] %}
+  {% if req_data.num == sc.num %}
+    {% comment %}Find all rules that reference this SC by any of its altIds{% endcomment %}
+    {% assign sc_slug = req_key | remove: "WCAG2:" | slugify %}
+    {% for rule in site.data.wcag-act-rules.rules["act-rules"] %}
+      {% assign matches = false %}
+      
+      {% comment %}Check for match by the main slug (e.g., "info-and-relationships"){% endcomment %}
+      {% if rule.successCriteria contains sc_slug %}
+        {% assign matches = true %}
+      {% endif %}
+      
+      {% comment %}Also check for matches by alternative IDs{% endcomment %}
+      {% if req_data.scAltId %}
+        {% for alt_id in req_data.scAltId %}
+          {% if rule.successCriteria contains alt_id %}
+            {% assign matches = true %}
+            {% break %}
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+      
+      {% comment %}Add matched rule{% endcomment %}
+      {% if matches %}
+        {% assign related_rules = related_rules | push: rule %}
+      {% endif %}
+    {% endfor %}
+    
+    {% break %}
+  {% endif %}
+{% endfor %}
+
+{% if related_rules.size > 0 %}
+<p>Related ACT Rules:</p>
+{% comment %} Add placeholder for filtered message {% endcomment %}
+<p class="filtered-rules-message" hidden><em>All related ACT Rules are currently hidden by filters.</em></p>
+<ul class="act-rule-list">
+  {% for rule in related_rules %}
+  {% assign rule_id = rule.frontmatter.id %}
+  
+  {% comment %}Determine rule types{% endcomment %}
+  {% assign test_types = "" | split: "," %}
+  {% if automated_rule_ids contains rule_id %}{% assign test_types = test_types | push: "automated" %}{% endif %}
+  {% if manual_rule_ids contains rule_id %}{% assign test_types = test_types | push: "manual" %}{% endif %}
+  {% if semiauto_rule_ids contains rule_id %}{% assign test_types = test_types | push: "semiauto" %}{% endif %}
+  {% if linter_rule_ids contains rule_id %}{% assign test_types = test_types | push: "linter" %}{% endif %}
+  {% unless all_implemented_ids contains rule_id %}{% assign test_types = test_types | push: "unimplemented" %}{% endunless %}
+  {% assign test_types_str = test_types | join: " " %}
+
+  {% comment %}Determine if rule is a composite rule{% endcomment %}
+  {% assign is_composite = false %}
+  {% if rule.frontmatter.rule_type == "composite" %}
+    {% assign is_composite = true %}
+  {% endif %}
+  
+  {% comment %}Determine if this rule has been automated{% endcomment %}
+  {% assign is_automated = false %}
+  {% if automated_rule_ids contains rule_id %}
+    {% assign is_automated = true %}
+  {% endif %}
+  
+  <li data-status="{% if rule.deprecated == true %}deprecated{% elsif rule.proposed == true %}proposed{% else %}approved{% endif %}" data-test-types="{{ test_types_str }}">
+    <a href="/standards-guidelines/act/rules/{{ rule_id }}/proposed/">{{ rule.title }}</a>
+    {% if rule.deprecated == true %} <span class="act-pill deprecated">deprecated</span>{% elsif rule.proposed == true %} <span class="act-pill proposed">proposed</span>{% endif %}
+
+    {% comment %} Display atomic rules if this is a composite rule {% endcomment %}
+    {% if is_composite %}
+      {% assign atomic_rule_ids = rule.frontmatter.input_rules %}
+      {% if atomic_rule_ids and atomic_rule_ids.size > 0 %}
+        <ul class="atomic-rules-list act-rule-list">
+          {% for atomic_id in atomic_rule_ids %}
+            {% assign atomic_rule = site.data.wcag-act-rules.rules["act-rules"] | where: "frontmatter.id", atomic_id | first %}
+            {% if atomic_rule %}
+              {% assign atomic_id = atomic_rule.frontmatter.id %}
+              {% comment %}Determine atomic rule types{% endcomment %}
+              {% assign atomic_test_types = "" | split: "," %}
+              {% if automated_rule_ids contains atomic_id %}{% assign atomic_test_types = atomic_test_types | push: "automated" %}{% endif %}
+              {% if manual_rule_ids contains atomic_id %}{% assign atomic_test_types = atomic_test_types | push: "manual" %}{% endif %}
+              {% if semiauto_rule_ids contains atomic_id %}{% assign atomic_test_types = atomic_test_types | push: "semiauto" %}{% endif %}
+              {% if linter_rule_ids contains atomic_id %}{% assign atomic_test_types = atomic_test_types | push: "linter" %}{% endif %}
+              {% unless all_implemented_ids contains atomic_id %}{% assign atomic_test_types = atomic_test_types | push: "unimplemented" %}{% endunless %}
+              {% assign atomic_test_types_str = atomic_test_types | join: " " %}
+
+              <li data-status="{% if atomic_rule.deprecated == true %}deprecated{% elsif atomic_rule.proposed == true %}proposed{% else %}approved{% endif %}" data-test-types="{{ atomic_test_types_str }}">
+                <a href="/standards-guidelines/act/rules/{{ atomic_id }}/proposed/">{{ atomic_rule.title }}</a>
+                {% if atomic_rule.deprecated == true %} <span class="act-pill deprecated">deprecated</span>{% elsif atomic_rule.proposed == true %} <span class="act-pill proposed">proposed</span>{% endif %}
+              </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      {% endif %}
+    {% endif %}
+  </li>
+  {% endfor %}
 </ul>
+{% else %}
+<p><em>No ACT Rules available for this criterion yet.</em></p>
+{% endif %}
+</div>
+{% endif %}
+{% comment %}End Principles, guidelines, and criteria{% endcomment %}
+    {% endfor %}
+<p class="back-to-top-link"><a href="#top">Back to top</a></p> 
+  {% endfor %}
+{% endfor %}
 
-## Rules for WAI-ARIA
 
-The ACT Rules in this section directly relate to WAI-ARIA requirements. These rules have been approved by the WAI-ARIA Working Group. They are fully implemented in at least one [test tool or methodology](../implementations/).
+{%- comment -%}
+  Collect all unique non-WCAG requirement titles and keys, and sort by title
+{%- endcomment -%}
+{% assign aria_req_objs = "" | split: "," %}
+{% for rule in site.data.wcag-act-rules.rules["act-rules"] %}
+  {% if rule.frontmatter.accessibility_requirements %}
+    {% for req in rule.frontmatter.accessibility_requirements %}
+      {% assign req_key = req[0] %}
+      {% assign req_title = req[1].title | default: req_key %}
+      {% assign req_key_prefix = req_key | slice: 0, 4 %}
+      {% unless req_key_prefix == "wcag" %}
+        {% assign obj = req_title | append: '|||' | append: req_key %}
+        {% unless aria_req_objs contains obj %}
+          {% assign aria_req_objs = aria_req_objs | push: obj %}
+        {% endunless %}
+      {% endunless %}
+    {% endfor %}
+  {% endif %}
+{% endfor %}
+{% assign aria_req_objs = aria_req_objs | sort %}
 
-<ul>
-{%- for rule in site.data.wcag-act-rules.rules["act-rules"] %}
-  {%- if rule.permalink contains '/5f99a7' or rule.permalink contains '/6a7281' or rule.permalink contains '/674b10' %}
-    <li><a href="{{ rule.permalink | relative_url }}">{{ rule.title }}</a></li>
-  {%- endif %}
-{%- endfor %}
-</ul>
+<h2 data-aria-section="true">WAI-ARIA Related Rules</h2>
+<div class="aria-rules-list-container">
+{% assign found_aria_rule = false %}
+{% for aria_req_obj in aria_req_objs %}
+  {% assign pair = aria_req_obj | split: '|||' %}
+  {% assign req_title = pair[0] %}
+  {% assign req_key = pair[1] %}
+  {%- comment -%} Now, list all rules for this requirement key {%- endcomment -%}
+  {% assign rules_for_req = "" | split: "," %}
+  {% for rule in site.data.wcag-act-rules.rules["act-rules"] %}
+    {% assign has_req = false %}
+    {% if rule.frontmatter.accessibility_requirements %}
+      {% for req in rule.frontmatter.accessibility_requirements %}
+        {% if req[0] == req_key %}
+          {% assign has_req = true %}
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+    {% if has_req %}
+      {% assign rules_for_req = rules_for_req | push: rule %}
+    {% endif %}
+  {% endfor %}
+  {% if rules_for_req.size > 0 %}
+    {% assign comma_index = req_title | split: ',' %}
+    {% if comma_index.size > 1 %}
+      <p><strong>{{ comma_index[0] }}</strong>{{ req_title | remove_first: comma_index[0] }}</p>
+    {% else %}
+      <p><strong>{{ req_title }}</strong></p>
+    {% endif %}
+    <ul class="act-rule-list">
+      {% for rule in rules_for_req %}
+        {% assign found_aria_rule = true %}
+        {% assign rule_id = rule.frontmatter.id %}
+        {% assign test_types = "" | split: "," %}
+        {% if automated_rule_ids contains rule_id %}{% assign test_types = test_types | push: "automated" %}{% endif %}
+        {% if manual_rule_ids contains rule_id %}{% assign test_types = test_types | push: "manual" %}{% endif %}
+        {% if semiauto_rule_ids contains rule_id %}{% assign test_types = test_types | push: "semiauto" %}{% endif %}
+        {% if linter_rule_ids contains rule_id %}{% assign test_types = test_types | push: "linter" %}{% endif %}
+        {% unless all_implemented_ids contains rule_id %}{% assign test_types = test_types | push: "unimplemented" %}{% endunless %}
+        {% assign test_types_str = test_types | join: " " %}
+        <li data-status="{% if rule.deprecated == true %}deprecated{% elsif rule.proposed == true %}proposed{% else %}approved{% endif %}" data-test-types="{{ test_types_str }}">
+          <a href="/standards-guidelines/act/rules/{{ rule_id }}/proposed/">{{ rule.title }}</a>
+          {% if rule.deprecated == true %} <span class="act-pill deprecated">deprecated</span>{% elsif rule.proposed == true %} <span class="act-pill proposed">proposed</span>{% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+    <p class="no-act-rules-message"{% if rules_for_req.size > 0 %} hidden{% endif %}><em>No ACT Rules available for this requirement yet.</em></p>
+  {% else %}
+    {% assign comma_index = req_title | split: ',' %}
+    {% if comma_index.size > 1 %}
+      <p><strong>{{ comma_index[0] }}</strong>{{ req_title | remove_first: comma_index[0] }}</p>
+    {% else %}
+      <p><strong>{{ req_title }}</strong></p>
+    {% endif %}
+    <p class="no-act-rules-message"><em>No ACT Rules available for this requirement yet.</em></p>
+  {% endif %}
+{% endfor %}
+</div>
+<p class="no-aria-rules-message" {% if found_aria_rule %}hidden{% endif %}>
+  <em>No rules found with WAI-ARIA 1.2 accessibility requirements.</em>
+</p>
+<p class="filtered-aria-rules-message" hidden>
+  <em>All WAI-ARIA related rules are currently hidden by filters.</em>
+</p>
 
-## Proposed Rules for WCAG 2
+## About implementations
 
-The ACT Rules in this section directly relate to WCAG 2 success criteria. These rules will be considered for approval once they are fully implemented in at least one test tool or methodology.
+An ACT implementation is an tool or methodology for testing accessibility, that is consistent with ACT Rules. An implementation can be manual, semi-automatic, automatic, or a linter. Implementations are tested against examples of the rules, and shared by vendors with W3C. See the [implementations page](../implementations/) for details and a list of all implementations.
 
-<ul>
-{%- for rule in site.data.wcag-act-rules.rules["act-rules"] %}
-  {%- if rule.proposed == true and rule.successCriteria.size > 0 and rule.deprecated != true %}
-    <li><a href="{{ rule.permalink | relative_url }}">{{ rule.title }}</a></li>
-  {%- endif %}
-{%- endfor %}
-</ul>
-
-## Rules beyond WCAG
-
-The ACT Rules below do not directly relate to WCAG success criteria. They relate to other accessibility guidance such as [WAI-ARIA {% include_cached icon.html name="different-view" %}](https://www.w3.org/TR/wai-aria/) or [Techniques for WCAG 2 {% include_cached icon.html name="different-view" %}](https://www.w3.org/WAI/WCAG21/Techniques/). These rules will be considered for approval once they are fully implemented in at least one test tool or methodology.
-
-<ul>
-{%- for rule in site.data.wcag-act-rules.rules["act-rules"] %}
-  {%- if rule.successCriteria.size == 0 and rule.deprecated != true %}
-    <li><a href="{{ rule.permalink | relative_url }}">{{ rule.title }}</a></li>
-  {%- endif %}
-{%- endfor %}
-</ul>
-
-## Deprecated ACT Rules
-
-The ACT Rules below are deprecated and are no longer maintained. For details on why a rule was deprecated see the "Deprecated" section at the top of the rule.
-
-<ul>
-{%- for rule in site.data.wcag-act-rules.rules["act-rules"] %}
-  {%- if rule.deprecated == true %}
-    <li><a href="{{ rule.permalink | relative_url }}">{{ rule.title | replace: 'DEPRECATED — ', '' }}</a></li>
-  {%- endif %}
-{%- endfor %}
-</ul>
+<script src="/content-assets/wcag-act-rules/filter-scripts.js"></script>
