@@ -6973,6 +6973,96 @@
     },
     {
       "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/307n5z/ede992d9573d350db7cd0cb8685de5b96460fbc1.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "aria_descendant_valid:pass,potential_child_implicit_role,fail_child_explicit_role",
+            "isPartOf": [
+              "WCAG2:name-role-value"
+            ]
+          },
+          "result": {
+            "outcome": "earl:inapplicable"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/307n5z/7bfb3a2d5783ade108f4f9fee10597a2343f8665.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "aria_descendant_valid:pass,potential_child_implicit_role,fail_child_explicit_role",
+            "isPartOf": [
+              "WCAG2:name-role-value"
+            ]
+          },
+          "result": {
+            "outcome": "earl:cantTell"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/307n5z/ad7e2441b992318debdeec5a07f92b0241f80a14.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "aria_descendant_valid:pass,potential_child_implicit_role,fail_child_explicit_role",
+            "isPartOf": [
+              "WCAG2:name-role-value"
+            ]
+          },
+          "result": {
+            "outcome": "earl:cantTell"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/307n5z/837f998533e07e309d5f9a587b7a5ff013a73c7a.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "aria_descendant_valid:pass,potential_child_implicit_role,fail_child_explicit_role",
+            "isPartOf": [
+              "WCAG2:name-role-value"
+            ]
+          },
+          "result": {
+            "outcome": "earl:inapplicable"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/307n5z/e687f56e16c718c737b2ebc096ab768bd9d87d50.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "aria_descendant_valid:pass,potential_child_implicit_role,fail_child_explicit_role",
+            "isPartOf": [
+              "WCAG2:name-role-value"
+            ]
+          },
+          "result": {
+            "outcome": "earl:inapplicable"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
       "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/a25f45/f99c8bd6aa53c3b2f4d63fee994333453df410c6.html",
       "assertions": [
         {
