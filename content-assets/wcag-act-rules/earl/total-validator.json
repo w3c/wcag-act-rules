@@ -8663,7 +8663,7 @@
     },
     {
       "@type": "TestSubject",
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/12a2da38812d7bf356f0092674c1c21802faf30d.html",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/9b8254ecd2ab2ecca6bdc6e050f87f0f42f16c38.html",
       "assertions": [
         {
           "@type": "Assertion",
@@ -8677,7 +8677,7 @@
     },
     {
       "@type": "TestSubject",
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/12a2da38812d7bf356f0092674c1c21802faf30d.html",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/9b8254ecd2ab2ecca6bdc6e050f87f0f42f16c38.html",
       "assertions": [
         {
           "@type": "Assertion",
@@ -8762,6 +8762,118 @@
     {
       "@type": "TestSubject",
       "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/51307c16b15d283b9f6ba7e4edc1bb99449f3f37.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "P963",
+            "isPartOf": ["WCAG2:info-and-relationships"]
+           },
+          "result": { "outcome": "earl:passed" }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/9ed4f5f7c0a9b8377e7652022430cbd5b1eddccf.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "E963",
+            "isPartOf": ["WCAG2:info-and-relationships"]
+           },
+          "result": { "outcome": "earl:passed" }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/9ed4f5f7c0a9b8377e7652022430cbd5b1eddccf.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "P963",
+            "isPartOf": ["WCAG2:info-and-relationships"]
+           },
+          "result": { "outcome": "earl:passed" }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/a25a181de38e32b880188d4279d02e8589d7a283.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "E963",
+            "isPartOf": ["WCAG2:info-and-relationships"]
+           },
+          "result": { "outcome": "earl:passed" }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/a25a181de38e32b880188d4279d02e8589d7a283.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "P963",
+            "isPartOf": ["WCAG2:info-and-relationships"]
+           },
+          "result": { "outcome": "earl:passed" }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/faa124300ae3b5ccdce631d2c79a461946066902.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "E963",
+            "isPartOf": ["WCAG2:info-and-relationships"]
+           },
+          "result": { "outcome": "earl:passed" }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/faa124300ae3b5ccdce631d2c79a461946066902.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "P963",
+            "isPartOf": ["WCAG2:info-and-relationships"]
+           },
+          "result": { "outcome": "earl:passed" }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/81104ca788ec9b7f87446a4665932812471952fa.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "E963",
+            "isPartOf": ["WCAG2:info-and-relationships"]
+           },
+          "result": { "outcome": "earl:passed" }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/81104ca788ec9b7f87446a4665932812471952fa.html",
       "assertions": [
         {
           "@type": "Assertion",
@@ -8971,6 +9083,90 @@
     },
     {
       "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/a50706ecd9b49e0f16b022668895c5e12cb2eeb5.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "E963",
+            "isPartOf": ["WCAG2:info-and-relationships"]
+           },
+          "result": { "outcome": "earl:failed" }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/a50706ecd9b49e0f16b022668895c5e12cb2eeb5.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "P963",
+            "isPartOf": ["WCAG2:info-and-relationships"]
+           },
+          "result": { "outcome": "earl:failed" }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/497cd2bb724541d56e49a57e38d5a7e2fabffc6a.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "E963",
+            "isPartOf": ["WCAG2:info-and-relationships"]
+           },
+          "result": { "outcome": "earl:failed" }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/497cd2bb724541d56e49a57e38d5a7e2fabffc6a.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "P963",
+            "isPartOf": ["WCAG2:info-and-relationships"]
+           },
+          "result": { "outcome": "earl:failed" }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/8b65672c9aefc4957b09a338eb85ad7dff6e53de.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "E963",
+            "isPartOf": ["WCAG2:info-and-relationships"]
+           },
+          "result": { "outcome": "earl:failed" }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/8b65672c9aefc4957b09a338eb85ad7dff6e53de.html",
+      "assertions": [
+        {
+          "@type": "Assertion",
+          "test": {
+            "title": "P963",
+            "isPartOf": ["WCAG2:info-and-relationships"]
+           },
+          "result": { "outcome": "earl:passed" }
+        }
+      ]
+    },
+    {
+      "@type": "TestSubject",
       "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/83d80bc34891ae13f05150c8c677028591f1d199.html",
       "assertions": [
         {
@@ -8999,7 +9195,7 @@
     },
     {
       "@type": "TestSubject",
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/9ed4f5f7c0a9b8377e7652022430cbd5b1eddccf.html",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/4c7f05a0c2de670e047b18857e91ebddeaebcf90.html",
       "assertions": [
         {
           "@type": "Assertion",
@@ -9013,7 +9209,7 @@
     },
     {
       "@type": "TestSubject",
-      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/9ed4f5f7c0a9b8377e7652022430cbd5b1eddccf.html",
+      "source": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/4c7f05a0c2de670e047b18857e91ebddeaebcf90.html",
       "assertions": [
         {
           "@type": "Assertion",
