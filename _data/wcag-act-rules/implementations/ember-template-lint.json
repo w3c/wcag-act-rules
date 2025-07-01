@@ -7,13 +7,13 @@
     "complete": 0,
     "partial": 2,
     "inconsistent": 11,
-    "untested": 21
+    "untested": 22
   },
   "proposedRules": {
     "complete": 0,
     "partial": 3,
     "inconsistent": 4,
-    "untested": 46
+    "untested": 45
   },
   "actRuleMapping": [
     {
@@ -4318,7 +4318,7 @@
     {
       "ruleId": "b33eff",
       "ruleName": "Orientation of the page is not restricted using CSS transforms",
-      "ruleApproved": false,
+      "ruleApproved": true,
       "procedureNames": [],
       "consistency": null,
       "coverage": null,
