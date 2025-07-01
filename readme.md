@@ -1,6 +1,6 @@
 # ACT Rules
 
-## Continous Deployment
+## Continuous Deployment
 
 [Preview](https://wai-wcag-act-rules.netlify.app/)
 

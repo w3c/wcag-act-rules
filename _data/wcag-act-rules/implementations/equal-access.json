@@ -2,16 +2,16 @@
   "vendor": "IBM Accessibility",
   "name": "Equal Access Accessibility Checker",
   "version": "3.1.42-rc.0",
-  "lastModified": "25 April 2025",
+  "lastModified": "27 June 2025",
   "approvedRules": {
     "complete": 19,
-    "partial": 5,
-    "inconsistent": 5,
+    "partial": 4,
+    "inconsistent": 6,
     "untested": 5
   },
   "proposedRules": {
-    "complete": 3,
-    "partial": 2,
+    "complete": 5,
+    "partial": 0,
     "inconsistent": 2,
     "untested": 46
   },
@@ -198,7 +198,7 @@
             {
               "procedureName": "aria_role_allowed:Pass_0,Fail_2,Potential_1",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -681,7 +681,7 @@
             {
               "procedureName": "aria_attribute_allowed:Pass_0,Fail_1",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -5450,6 +5450,81 @@
               ]
             }
           ]
+        },
+        {
+          "testcaseId": "ede992d9573d350db7cd0cb8685de5b96460fbc1",
+          "testCaseName": "Passed Example 4",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/307n5z/ede992d9573d350db7cd0cb8685de5b96460fbc1.html",
+          "testCaseApproved": false,
+          "expected": "passed",
+          "procedureResults": [
+            {
+              "procedureName": "aria_descendant_valid:pass,potential_child_implicit_role,fail_child_explicit_role",
+              "outcomes": [
+                "inapplicable"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "7bfb3a2d5783ade108f4f9fee10597a2343f8665",
+          "testCaseName": "Failed Example 4",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/307n5z/7bfb3a2d5783ade108f4f9fee10597a2343f8665.html",
+          "testCaseApproved": false,
+          "expected": "failed",
+          "procedureResults": [
+            {
+              "procedureName": "aria_descendant_valid:pass,potential_child_implicit_role,fail_child_explicit_role",
+              "outcomes": [
+                "cantTell"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "ad7e2441b992318debdeec5a07f92b0241f80a14",
+          "testCaseName": "Failed Example 5",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/307n5z/ad7e2441b992318debdeec5a07f92b0241f80a14.html",
+          "testCaseApproved": false,
+          "expected": "failed",
+          "procedureResults": [
+            {
+              "procedureName": "aria_descendant_valid:pass,potential_child_implicit_role,fail_child_explicit_role",
+              "outcomes": [
+                "cantTell"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "837f998533e07e309d5f9a587b7a5ff013a73c7a",
+          "testCaseName": "Inapplicable Example 1",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/307n5z/837f998533e07e309d5f9a587b7a5ff013a73c7a.html",
+          "testCaseApproved": false,
+          "expected": "inapplicable",
+          "procedureResults": [
+            {
+              "procedureName": "aria_descendant_valid:pass,potential_child_implicit_role,fail_child_explicit_role",
+              "outcomes": [
+                "inapplicable"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "e687f56e16c718c737b2ebc096ab768bd9d87d50",
+          "testCaseName": "Inapplicable Example 2",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/307n5z/e687f56e16c718c737b2ebc096ab768bd9d87d50.html",
+          "testCaseApproved": false,
+          "expected": "inapplicable",
+          "procedureResults": [
+            {
+              "procedureName": "aria_descendant_valid:pass,potential_child_implicit_role,fail_child_explicit_role",
+              "outcomes": [
+                "inapplicable"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -5742,7 +5817,7 @@
             {
               "procedureName": "table_headers_ref_valid:Pass_0,Fail_1,Fail_2,Fail_3,Fail_4",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -5757,7 +5832,7 @@
             {
               "procedureName": "table_headers_ref_valid:Pass_0,Fail_1,Fail_2,Fail_3,Fail_4",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -7841,19 +7916,17 @@
       "procedureNames": [
         "meta_redirect_optional:pass,fail,fail_longrefresh"
       ],
-      "consistency": "partial",
+      "consistency": null,
       "accessibilityRequirements": {
         "correct": false,
         "expected": [
           "WCAG2:interruptions",
           "WCAG2:change-on-request"
         ],
-        "reported": [
-          "WCAG2:timing-adjustable"
-        ]
+        "reported": []
       },
       "coverage": {
-        "covered": 13,
+        "covered": 10,
         "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 13
@@ -7899,7 +7972,7 @@
             {
               "procedureName": "meta_redirect_optional:pass,fail,fail_longrefresh",
               "outcomes": [
-                "failed"
+                "inapplicable"
               ]
             }
           ]
@@ -7914,7 +7987,7 @@
             {
               "procedureName": "meta_redirect_optional:pass,fail,fail_longrefresh",
               "outcomes": [
-                "failed"
+                "inapplicable"
               ]
             }
           ]
@@ -7929,7 +8002,7 @@
             {
               "procedureName": "meta_redirect_optional:pass,fail,fail_longrefresh",
               "outcomes": [
-                "failed"
+                "inapplicable"
               ]
             }
           ]
@@ -8332,10 +8405,10 @@
         "reported": []
       },
       "coverage": {
-        "covered": 8,
-        "untested": 2,
+        "covered": 9,
+        "untested": 8,
         "cantTell": 0,
-        "testCaseTotal": 17
+        "testCaseTotal": 24
       },
       "testCaseResults": [
         {
@@ -8363,22 +8436,22 @@
             {
               "procedureName": "aria_child_valid:Pass,Fail_no_child,Fail_invalid_child",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
         },
         {
-          "testcaseId": "12a2da38812d7bf356f0092674c1c21802faf30d",
+          "testcaseId": "9b8254ecd2ab2ecca6bdc6e050f87f0f42f16c38",
           "testCaseName": "Passed Example 3",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/12a2da38812d7bf356f0092674c1c21802faf30d.html",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/9b8254ecd2ab2ecca6bdc6e050f87f0f42f16c38.html",
           "testCaseApproved": false,
           "expected": "passed",
           "procedureResults": [
             {
               "procedureName": "aria_child_valid:Pass,Fail_no_child,Fail_invalid_child",
               "outcomes": [
-                "inapplicable"
+                "untested"
               ]
             }
           ]
@@ -8424,6 +8497,66 @@
               "procedureName": "aria_child_valid:Pass,Fail_no_child,Fail_invalid_child",
               "outcomes": [
                 "inapplicable"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "9ed4f5f7c0a9b8377e7652022430cbd5b1eddccf",
+          "testCaseName": "Passed Example 7",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/9ed4f5f7c0a9b8377e7652022430cbd5b1eddccf.html",
+          "testCaseApproved": false,
+          "expected": "passed",
+          "procedureResults": [
+            {
+              "procedureName": "aria_child_valid:Pass,Fail_no_child,Fail_invalid_child",
+              "outcomes": [
+                "inapplicable"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "a25a181de38e32b880188d4279d02e8589d7a283",
+          "testCaseName": "Passed Example 8",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/a25a181de38e32b880188d4279d02e8589d7a283.html",
+          "testCaseApproved": false,
+          "expected": "passed",
+          "procedureResults": [
+            {
+              "procedureName": "aria_child_valid:Pass,Fail_no_child,Fail_invalid_child",
+              "outcomes": [
+                "untested"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "faa124300ae3b5ccdce631d2c79a461946066902",
+          "testCaseName": "Passed Example 9",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/faa124300ae3b5ccdce631d2c79a461946066902.html",
+          "testCaseApproved": false,
+          "expected": "passed",
+          "procedureResults": [
+            {
+              "procedureName": "aria_child_valid:Pass,Fail_no_child,Fail_invalid_child",
+              "outcomes": [
+                "untested"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "81104ca788ec9b7f87446a4665932812471952fa",
+          "testCaseName": "Passed Example 10",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/81104ca788ec9b7f87446a4665932812471952fa.html",
+          "testCaseApproved": false,
+          "expected": "passed",
+          "procedureResults": [
+            {
+              "procedureName": "aria_child_valid:Pass,Fail_no_child,Fail_invalid_child",
+              "outcomes": [
+                "untested"
               ]
             }
           ]
@@ -8534,6 +8667,51 @@
           ]
         },
         {
+          "testcaseId": "a50706ecd9b49e0f16b022668895c5e12cb2eeb5",
+          "testCaseName": "Failed Example 8",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/a50706ecd9b49e0f16b022668895c5e12cb2eeb5.html",
+          "testCaseApproved": false,
+          "expected": "failed",
+          "procedureResults": [
+            {
+              "procedureName": "aria_child_valid:Pass,Fail_no_child,Fail_invalid_child",
+              "outcomes": [
+                "untested"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "497cd2bb724541d56e49a57e38d5a7e2fabffc6a",
+          "testCaseName": "Failed Example 9",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/497cd2bb724541d56e49a57e38d5a7e2fabffc6a.html",
+          "testCaseApproved": false,
+          "expected": "failed",
+          "procedureResults": [
+            {
+              "procedureName": "aria_child_valid:Pass,Fail_no_child,Fail_invalid_child",
+              "outcomes": [
+                "untested"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "8b65672c9aefc4957b09a338eb85ad7dff6e53de",
+          "testCaseName": "Failed Example 10",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/8b65672c9aefc4957b09a338eb85ad7dff6e53de.html",
+          "testCaseApproved": false,
+          "expected": "failed",
+          "procedureResults": [
+            {
+              "procedureName": "aria_child_valid:Pass,Fail_no_child,Fail_invalid_child",
+              "outcomes": [
+                "untested"
+              ]
+            }
+          ]
+        },
+        {
           "testcaseId": "83d80bc34891ae13f05150c8c677028591f1d199",
           "testCaseName": "Inapplicable Example 1",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/83d80bc34891ae13f05150c8c677028591f1d199.html",
@@ -8549,16 +8727,16 @@
           ]
         },
         {
-          "testcaseId": "9ed4f5f7c0a9b8377e7652022430cbd5b1eddccf",
+          "testcaseId": "4c7f05a0c2de670e047b18857e91ebddeaebcf90",
           "testCaseName": "Inapplicable Example 2",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/9ed4f5f7c0a9b8377e7652022430cbd5b1eddccf.html",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/4c7f05a0c2de670e047b18857e91ebddeaebcf90.html",
           "testCaseApproved": false,
           "expected": "inapplicable",
           "procedureResults": [
             {
               "procedureName": "aria_child_valid:Pass,Fail_no_child,Fail_invalid_child",
               "outcomes": [
-                "inapplicable"
+                "untested"
               ]
             }
           ]
@@ -8573,7 +8751,7 @@
             {
               "procedureName": "aria_child_valid:Pass,Fail_no_child,Fail_invalid_child",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -8602,15 +8780,15 @@
       "procedureNames": [
         "aria_attribute_valid:Pass,Fail_invalid_role_attr,Fail_invalid_implicit_role_attr"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
         "reported": []
       },
       "coverage": {
-        "covered": 16,
-        "untested": 3,
+        "covered": 19,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 19
       },
@@ -8700,7 +8878,7 @@
             {
               "procedureName": "aria_attribute_valid:Pass,Fail_invalid_role_attr,Fail_invalid_implicit_role_attr",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -8715,7 +8893,7 @@
             {
               "procedureName": "aria_attribute_valid:Pass,Fail_invalid_role_attr,Fail_invalid_implicit_role_attr",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -8730,7 +8908,7 @@
             {
               "procedureName": "aria_attribute_valid:Pass,Fail_invalid_role_attr,Fail_invalid_implicit_role_attr",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -9585,7 +9763,7 @@
       "procedureNames": [
         "aria_attribute_required:pass,fail_missing"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
@@ -9594,8 +9772,8 @@
         ]
       },
       "coverage": {
-        "covered": 12,
-        "untested": 2,
+        "covered": 14,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 14
       },
@@ -9685,7 +9863,7 @@
             {
               "procedureName": "aria_attribute_required:pass,fail_missing",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -9790,7 +9968,7 @@
             {
               "procedureName": "aria_attribute_required:pass,fail_missing",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
