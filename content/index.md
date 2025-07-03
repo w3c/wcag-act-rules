@@ -17,12 +17,11 @@ footer:
 {% include box.html type="start" title="Summary" class="" %}
 {:/}
 
-This page contains list of ACT Rules to test conformance [Web Content Accessibility Guidelines (WCAG) {% include_cached icon.html name="different-view" %}](https://www.w3.org/WAI/standards-guidelines/wcag/), [WAI-ARIA {% include_cached icon.html name="different-view" %}](https://www.w3.org/WAI/ARIA/) and other accessibility practices.  ACT Rules for WCAG 2 are formally approved by the Accessibility Guidelines Working Group. Proposed rules have not yet completed the approval process. ACT Rules are informative — that means they are not required for determining conformance to WCAG or ARIA. Learn more from [About ACT Rules](/standards-guidelines/act/rules/about/).
+This page contains list of ACT Rules to test conformance [Web Content Accessibility Guidelines (WCAG) 2.2 {% include_cached icon.html name="different-view" %}](https://www.w3.org/WAI/standards-guidelines/wcag/), [WAI-ARIA {% include_cached icon.html name="different-view" %}](https://www.w3.org/WAI/ARIA/) and other accessibility practices.  ACT Rules are formally approved by the relevant Working Group. Proposed rules have not yet completed the approval process. ACT Rules are informative — that means they are not required for determining conformance to WCAG or ARIA. Learn more from [About ACT Rules](/standards-guidelines/act/rules/about/).
 
 {::nomarkdown}
 {% include box.html type="end" %}
 {:/}
-
 
 {% comment %}Build lists of rule IDs by test type{% endcomment %}
 {% assign automated_rule_ids = "" | split: "," %}
@@ -280,6 +279,10 @@ This page contains list of ACT Rules to test conformance [Web Content Accessibil
 <p class="filtered-aria-rules-message" hidden>
   <em>All WAI-ARIA related rules are currently hidden by filters.</em>
 </p>
+
+## About Rule Status
+
+The ACT Rules are **proposed** by the ACT Task Force and Community Group. Once a fule is fully implemented by at least one test tool or methodology, the rule is **approved** by a W3C working group. The Accessibility Guidelines Working Group approves rules for WCAG, the ARIA Working Group approves rules for ARIA. A rule can be **deprecated** if it is no longer necessary, or superseded by other rules.
 
 ## About implementations
 
