@@ -3,14 +3,14 @@
   "name": "UsableNet AQA - WCAG 2.2 AA auto",
   "version": "2.5.1",
   "approvedRules": {
-    "complete": 24,
-    "partial": 4,
+    "complete": 27,
+    "partial": 1,
     "inconsistent": 0,
     "untested": 6
   },
   "proposedRules": {
-    "complete": 2,
-    "partial": 3,
+    "complete": 5,
+    "partial": 0,
     "inconsistent": 0,
     "untested": 48
   },
@@ -197,7 +197,7 @@
             {
               "procedureName": "aria_role_not_valid",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -3092,13 +3092,11 @@
       "procedureNames": [
         "invalid_aria_attr"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [],
-        "reported": [
-          "WCAG2:info-and-relationships"
-        ]
+        "reported": []
       },
       "coverage": {
         "covered": 9,
@@ -3944,14 +3942,15 @@
       "procedureNames": [
         "image_button_without_computed_name"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:non-text-content",
           "WCAG2:name-role-value"
         ],
         "reported": [
+          "WCAG2:non-text-content",
           "WCAG2:name-role-value"
         ]
       },
@@ -4447,14 +4446,15 @@
       "procedureNames": [
         "link_without_computed_name"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:name-role-value",
           "WCAG2:link-purpose-in-context"
         ],
         "reported": [
+          "WCAG2:link-purpose-in-context",
           "WCAG2:name-role-value"
         ]
       },
@@ -5483,7 +5483,7 @@
             {
               "procedureName": "td_headers_check",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -7567,7 +7567,7 @@
       "procedureNames": [
         "aria_child_wrong"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -7578,8 +7578,8 @@
         ]
       },
       "coverage": {
-        "covered": 15,
-        "untested": 2,
+        "covered": 17,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 17
       },
@@ -7609,7 +7609,7 @@
             {
               "procedureName": "aria_child_wrong",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -7819,7 +7819,7 @@
             {
               "procedureName": "aria_child_wrong",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -7848,17 +7848,15 @@
       "procedureNames": [
         "invalid_aria_attr"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
-        "reported": [
-          "WCAG2:info-and-relationships"
-        ]
+        "reported": []
       },
       "coverage": {
-        "covered": 16,
-        "untested": 3,
+        "covered": 19,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 19
       },
@@ -7948,7 +7946,7 @@
             {
               "procedureName": "invalid_aria_attr",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -7963,7 +7961,7 @@
             {
               "procedureName": "invalid_aria_attr",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -7978,7 +7976,7 @@
             {
               "procedureName": "invalid_aria_attr",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -8636,17 +8634,15 @@
       "procedureNames": [
         "aria_required_attr"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
-        "reported": [
-          "WCAG2:info-and-relationships"
-        ]
+        "reported": []
       },
       "coverage": {
-        "covered": 12,
-        "untested": 2,
+        "covered": 14,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 14
       },
@@ -8736,7 +8732,7 @@
             {
               "procedureName": "aria_required_attr",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -8841,7 +8837,7 @@
             {
               "procedureName": "aria_required_attr",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
