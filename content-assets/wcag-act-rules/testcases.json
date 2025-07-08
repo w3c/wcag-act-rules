@@ -3,7 +3,7 @@
   "website": "https://www.w3.org/WAI/standards-guidelines/act/rules/",
   "license": "https://act-rules.github.io/pages/license/",
   "description": "Accessibility conformance testing rules for HTML",
-  "count": 1183,
+  "count": 1184,
   "testcases": [
     {
       "ruleId": "674b10",
@@ -13584,6 +13584,234 @@
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/bisz58/proposed/"
     },
     {
+      "ruleId": "b33eff",
+      "approved": true,
+      "ruleName": "Orientation of the page is not restricted using CSS transforms",
+      "ruleAccessibilityRequirements": {
+        "wcag21:1.3.4": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "0b392e6774d063a24241c3629113909e98c98607",
+      "testcaseTitle": "Passed Example 1",
+      "relativePath": "testcases/b33eff/0b392e6774d063a24241c3629113909e98c98607.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/0b392e6774d063a24241c3629113909e98c98607.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/b33eff/proposed/"
+    },
+    {
+      "ruleId": "b33eff",
+      "approved": true,
+      "ruleName": "Orientation of the page is not restricted using CSS transforms",
+      "ruleAccessibilityRequirements": {
+        "wcag21:1.3.4": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "405d1e8fb50b36ae53c655c228126a078e591d3b",
+      "testcaseTitle": "Passed Example 2",
+      "relativePath": "testcases/b33eff/405d1e8fb50b36ae53c655c228126a078e591d3b.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/405d1e8fb50b36ae53c655c228126a078e591d3b.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/b33eff/proposed/"
+    },
+    {
+      "ruleId": "b33eff",
+      "approved": true,
+      "ruleName": "Orientation of the page is not restricted using CSS transforms",
+      "ruleAccessibilityRequirements": {
+        "wcag21:1.3.4": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "4fa1ac6e6c6c65a3cc17e144823e45ff30f428bb",
+      "testcaseTitle": "Passed Example 3",
+      "relativePath": "testcases/b33eff/4fa1ac6e6c6c65a3cc17e144823e45ff30f428bb.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/4fa1ac6e6c6c65a3cc17e144823e45ff30f428bb.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/b33eff/proposed/"
+    },
+    {
+      "ruleId": "b33eff",
+      "approved": true,
+      "ruleName": "Orientation of the page is not restricted using CSS transforms",
+      "ruleAccessibilityRequirements": {
+        "wcag21:1.3.4": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "3b2f386c66ccb9c1a9a848017dab9b074afbf858",
+      "testcaseTitle": "Failed Example 1",
+      "relativePath": "testcases/b33eff/3b2f386c66ccb9c1a9a848017dab9b074afbf858.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/3b2f386c66ccb9c1a9a848017dab9b074afbf858.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/b33eff/proposed/"
+    },
+    {
+      "ruleId": "b33eff",
+      "approved": true,
+      "ruleName": "Orientation of the page is not restricted using CSS transforms",
+      "ruleAccessibilityRequirements": {
+        "wcag21:1.3.4": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "388f97562ae3b7e3aec7ad6305df36a91b68cf77",
+      "testcaseTitle": "Failed Example 2",
+      "relativePath": "testcases/b33eff/388f97562ae3b7e3aec7ad6305df36a91b68cf77.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/388f97562ae3b7e3aec7ad6305df36a91b68cf77.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/b33eff/proposed/"
+    },
+    {
+      "ruleId": "b33eff",
+      "approved": true,
+      "ruleName": "Orientation of the page is not restricted using CSS transforms",
+      "ruleAccessibilityRequirements": {
+        "wcag21:1.3.4": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "93ad10ce32325be5b7c8cbaec7254d55e8fb577c",
+      "testcaseTitle": "Failed Example 3",
+      "relativePath": "testcases/b33eff/93ad10ce32325be5b7c8cbaec7254d55e8fb577c.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/93ad10ce32325be5b7c8cbaec7254d55e8fb577c.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/b33eff/proposed/"
+    },
+    {
+      "ruleId": "b33eff",
+      "approved": true,
+      "ruleName": "Orientation of the page is not restricted using CSS transforms",
+      "ruleAccessibilityRequirements": {
+        "wcag21:1.3.4": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "8f341a73c698daf157613c32a521878ed5aa7310",
+      "testcaseTitle": "Failed Example 4",
+      "relativePath": "testcases/b33eff/8f341a73c698daf157613c32a521878ed5aa7310.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/8f341a73c698daf157613c32a521878ed5aa7310.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/b33eff/proposed/"
+    },
+    {
+      "ruleId": "b33eff",
+      "approved": true,
+      "ruleName": "Orientation of the page is not restricted using CSS transforms",
+      "ruleAccessibilityRequirements": {
+        "wcag21:1.3.4": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "inapplicable",
+      "testcaseId": "c59f09b11f0743c523cc63ae3c827996889fa32d",
+      "testcaseTitle": "Inapplicable Example 1",
+      "relativePath": "testcases/b33eff/c59f09b11f0743c523cc63ae3c827996889fa32d.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/c59f09b11f0743c523cc63ae3c827996889fa32d.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/b33eff/proposed/"
+    },
+    {
+      "ruleId": "b33eff",
+      "approved": true,
+      "ruleName": "Orientation of the page is not restricted using CSS transforms",
+      "ruleAccessibilityRequirements": {
+        "wcag21:1.3.4": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "inapplicable",
+      "testcaseId": "b8d71ae629b704bd374b0a2dcde569bd108c848e",
+      "testcaseTitle": "Inapplicable Example 2",
+      "relativePath": "testcases/b33eff/b8d71ae629b704bd374b0a2dcde569bd108c848e.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/b8d71ae629b704bd374b0a2dcde569bd108c848e.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/b33eff/proposed/"
+    },
+    {
+      "ruleId": "b33eff",
+      "approved": true,
+      "ruleName": "Orientation of the page is not restricted using CSS transforms",
+      "ruleAccessibilityRequirements": {
+        "wcag21:1.3.4": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "inapplicable",
+      "testcaseId": "5cde20e2acab8991c299a317825201af48bf5736",
+      "testcaseTitle": "Inapplicable Example 3",
+      "relativePath": "testcases/b33eff/5cde20e2acab8991c299a317825201af48bf5736.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/5cde20e2acab8991c299a317825201af48bf5736.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/b33eff/proposed/"
+    },
+    {
+      "ruleId": "b33eff",
+      "approved": true,
+      "ruleName": "Orientation of the page is not restricted using CSS transforms",
+      "ruleAccessibilityRequirements": {
+        "wcag21:1.3.4": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "inapplicable",
+      "testcaseId": "4c34705d8d866194fd8fe96a0bd1abaf267b11f0",
+      "testcaseTitle": "Inapplicable Example 4",
+      "relativePath": "testcases/b33eff/4c34705d8d866194fd8fe96a0bd1abaf267b11f0.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/4c34705d8d866194fd8fe96a0bd1abaf267b11f0.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/b33eff/proposed/"
+    },
+    {
+      "ruleId": "b33eff",
+      "approved": true,
+      "ruleName": "Orientation of the page is not restricted using CSS transforms",
+      "ruleAccessibilityRequirements": {
+        "wcag21:1.3.4": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "inapplicable",
+      "testcaseId": "e228ac70387fe286917bce3028ae311269ae2f35",
+      "testcaseTitle": "Inapplicable Example 5",
+      "relativePath": "testcases/b33eff/e228ac70387fe286917bce3028ae311269ae2f35.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/e228ac70387fe286917bce3028ae311269ae2f35.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/b33eff/proposed/"
+    },
+    {
       "ruleId": "5f99a7",
       "ruleName": "ARIA attribute is defined in WAI-ARIA",
       "ruleAccessibilityRequirements": {
@@ -17304,140 +17532,6 @@
     },
     {
       "ruleId": "b33eff",
-      "approved": true,
-      "ruleName": "Orientation of the page is not restricted using CSS transforms",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.3.4": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "0b392e6774d063a24241c3629113909e98c98607",
-      "testcaseTitle": "Passed Example 1",
-      "relativePath": "testcases/b33eff/0b392e6774d063a24241c3629113909e98c98607.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/0b392e6774d063a24241c3629113909e98c98607.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/b33eff/proposed/"
-    },
-    {
-      "ruleId": "b33eff",
-      "approved": true,
-      "ruleName": "Orientation of the page is not restricted using CSS transforms",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.3.4": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "405d1e8fb50b36ae53c655c228126a078e591d3b",
-      "testcaseTitle": "Passed Example 2",
-      "relativePath": "testcases/b33eff/405d1e8fb50b36ae53c655c228126a078e591d3b.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/405d1e8fb50b36ae53c655c228126a078e591d3b.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/b33eff/proposed/"
-    },
-    {
-      "ruleId": "b33eff",
-      "approved": true,
-      "ruleName": "Orientation of the page is not restricted using CSS transforms",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.3.4": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "4fa1ac6e6c6c65a3cc17e144823e45ff30f428bb",
-      "testcaseTitle": "Passed Example 3",
-      "relativePath": "testcases/b33eff/4fa1ac6e6c6c65a3cc17e144823e45ff30f428bb.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/4fa1ac6e6c6c65a3cc17e144823e45ff30f428bb.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/b33eff/proposed/"
-    },
-    {
-      "ruleId": "b33eff",
-      "approved": true,
-      "ruleName": "Orientation of the page is not restricted using CSS transforms",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.3.4": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "failed",
-      "testcaseId": "3b2f386c66ccb9c1a9a848017dab9b074afbf858",
-      "testcaseTitle": "Failed Example 1",
-      "relativePath": "testcases/b33eff/3b2f386c66ccb9c1a9a848017dab9b074afbf858.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/3b2f386c66ccb9c1a9a848017dab9b074afbf858.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/b33eff/proposed/"
-    },
-    {
-      "ruleId": "b33eff",
-      "approved": true,
-      "ruleName": "Orientation of the page is not restricted using CSS transforms",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.3.4": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "failed",
-      "testcaseId": "388f97562ae3b7e3aec7ad6305df36a91b68cf77",
-      "testcaseTitle": "Failed Example 2",
-      "relativePath": "testcases/b33eff/388f97562ae3b7e3aec7ad6305df36a91b68cf77.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/388f97562ae3b7e3aec7ad6305df36a91b68cf77.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/b33eff/proposed/"
-    },
-    {
-      "ruleId": "b33eff",
-      "approved": true,
-      "ruleName": "Orientation of the page is not restricted using CSS transforms",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.3.4": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "failed",
-      "testcaseId": "93ad10ce32325be5b7c8cbaec7254d55e8fb577c",
-      "testcaseTitle": "Failed Example 3",
-      "relativePath": "testcases/b33eff/93ad10ce32325be5b7c8cbaec7254d55e8fb577c.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/93ad10ce32325be5b7c8cbaec7254d55e8fb577c.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/b33eff/proposed/"
-    },
-    {
-      "ruleId": "b33eff",
-      "approved": true,
-      "ruleName": "Orientation of the page is not restricted using CSS transforms",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.3.4": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "failed",
-      "testcaseId": "8f341a73c698daf157613c32a521878ed5aa7310",
-      "testcaseTitle": "Failed Example 4",
-      "relativePath": "testcases/b33eff/8f341a73c698daf157613c32a521878ed5aa7310.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/8f341a73c698daf157613c32a521878ed5aa7310.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/b33eff/proposed/"
-    },
-    {
-      "ruleId": "b33eff",
-      "approved": true,
       "ruleName": "Orientation of the page is not restricted using CSS transforms",
       "ruleAccessibilityRequirements": {
         "wcag21:1.3.4": {
@@ -17448,86 +17542,10 @@
         }
       },
       "expected": "inapplicable",
-      "testcaseId": "c59f09b11f0743c523cc63ae3c827996889fa32d",
-      "testcaseTitle": "Inapplicable Example 1",
-      "relativePath": "testcases/b33eff/c59f09b11f0743c523cc63ae3c827996889fa32d.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/c59f09b11f0743c523cc63ae3c827996889fa32d.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/b33eff/proposed/"
-    },
-    {
-      "ruleId": "b33eff",
-      "approved": true,
-      "ruleName": "Orientation of the page is not restricted using CSS transforms",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.3.4": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "inapplicable",
-      "testcaseId": "b8d71ae629b704bd374b0a2dcde569bd108c848e",
-      "testcaseTitle": "Inapplicable Example 2",
-      "relativePath": "testcases/b33eff/b8d71ae629b704bd374b0a2dcde569bd108c848e.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/b8d71ae629b704bd374b0a2dcde569bd108c848e.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/b33eff/proposed/"
-    },
-    {
-      "ruleId": "b33eff",
-      "approved": true,
-      "ruleName": "Orientation of the page is not restricted using CSS transforms",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.3.4": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "inapplicable",
-      "testcaseId": "5cde20e2acab8991c299a317825201af48bf5736",
+      "testcaseId": "3600a3d783678e384fec62211e854cb8a4d3d2d0",
       "testcaseTitle": "Inapplicable Example 3",
-      "relativePath": "testcases/b33eff/5cde20e2acab8991c299a317825201af48bf5736.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/5cde20e2acab8991c299a317825201af48bf5736.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/b33eff/proposed/"
-    },
-    {
-      "ruleId": "b33eff",
-      "approved": true,
-      "ruleName": "Orientation of the page is not restricted using CSS transforms",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.3.4": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "inapplicable",
-      "testcaseId": "4c34705d8d866194fd8fe96a0bd1abaf267b11f0",
-      "testcaseTitle": "Inapplicable Example 4",
-      "relativePath": "testcases/b33eff/4c34705d8d866194fd8fe96a0bd1abaf267b11f0.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/4c34705d8d866194fd8fe96a0bd1abaf267b11f0.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/b33eff/proposed/"
-    },
-    {
-      "ruleId": "b33eff",
-      "approved": true,
-      "ruleName": "Orientation of the page is not restricted using CSS transforms",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.3.4": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "inapplicable",
-      "testcaseId": "e228ac70387fe286917bce3028ae311269ae2f35",
-      "testcaseTitle": "Inapplicable Example 5",
-      "relativePath": "testcases/b33eff/e228ac70387fe286917bce3028ae311269ae2f35.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/e228ac70387fe286917bce3028ae311269ae2f35.html",
+      "relativePath": "testcases/b33eff/3600a3d783678e384fec62211e854cb8a4d3d2d0.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/3600a3d783678e384fec62211e854cb8a4d3d2d0.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/b33eff/proposed/"
     },
     {

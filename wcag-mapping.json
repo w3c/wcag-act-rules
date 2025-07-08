@@ -1415,7 +1415,7 @@
         "name": "Orientation of the page is not restricted using CSS transforms",
         "rules_format": 1.1,
         "rule_type": "atomic",
-        "description": "This rule checks that page content is not restricted to either `landscape` or `portrait` orientation using CSS transforms\n",
+        "description": "This rule checks that page content is not restricted to either `landscape` or `portrait` orientation using CSS transforms.\n",
         "accessibility_requirements": {
           "wcag21:1.3.4": {
             "forConformance": true,
