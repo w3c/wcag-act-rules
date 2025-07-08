@@ -8500,6 +8500,15 @@
       ]
     },
     {
+      "ruleId": "b33eff",
+      "ruleName": "Orientation of the page is not restricted using CSS transforms",
+      "ruleApproved": true,
+      "procedureNames": [],
+      "consistency": null,
+      "coverage": null,
+      "testCaseResults": []
+    },
+    {
       "ruleId": "ff89c9",
       "ruleName": "ARIA required context role",
       "ruleApproved": false,
@@ -10046,15 +10055,6 @@
           ]
         }
       ]
-    },
-    {
-      "ruleId": "b33eff",
-      "ruleName": "Orientation of the page is not restricted using CSS transforms",
-      "ruleApproved": true,
-      "procedureNames": [],
-      "consistency": null,
-      "coverage": null,
-      "testCaseResults": []
     },
     {
       "ruleId": "c249d5",
