@@ -1,18 +1,18 @@
 ---
 title: "Orientation of the page is not restricted using CSS transforms"
-permalink: /standards-guidelines/act/rules/b33eff/proposed/
-ref: /standards-guidelines/act/rules/b33eff/proposed/
+permalink: /standards-guidelines/act/rules/b33eff/
+ref: /standards-guidelines/act/rules/b33eff/
 lang: en
 github:
   repository: w3c/wcag-act-rules
-  path: content/rules/b33eff/proposed.md
+  path: content/rules/b33eff/index.md
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> b33eff</p>
   <p><strong>Date:</strong> Updated 8 July 2025</p>
   <p><strong>Authors:</strong> <a href="https://github.com/audreymaniez">Audrey Maniez</a>, <a href="https://github.com/jkodu">Jey Nandakumar</a>, Tom Brunet. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
-  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
-proposed: true
+  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It was approved and published by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
+proposed: false
 rule_meta:
   id: b33eff
   name: "Orientation of the page is not restricted using CSS transforms"

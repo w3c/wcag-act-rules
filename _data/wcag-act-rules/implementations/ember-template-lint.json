@@ -7,13 +7,13 @@
     "complete": 0,
     "partial": 2,
     "inconsistent": 11,
-    "untested": 21
+    "untested": 22
   },
   "proposedRules": {
     "complete": 0,
     "partial": 3,
     "inconsistent": 4,
-    "untested": 46
+    "untested": 45
   },
   "actRuleMapping": [
     {
@@ -3655,6 +3655,15 @@
       ]
     },
     {
+      "ruleId": "b33eff",
+      "ruleName": "Orientation of the page is not restricted using CSS transforms",
+      "ruleApproved": true,
+      "procedureNames": [],
+      "consistency": null,
+      "coverage": null,
+      "testCaseResults": []
+    },
+    {
       "ruleId": "ff89c9",
       "ruleName": "ARIA required context role",
       "ruleApproved": false,
@@ -4309,15 +4318,6 @@
     {
       "ruleId": "cf77f2",
       "ruleName": "Bypass Blocks of Repeated Content",
-      "ruleApproved": false,
-      "procedureNames": [],
-      "consistency": null,
-      "coverage": null,
-      "testCaseResults": []
-    },
-    {
-      "ruleId": "b33eff",
-      "ruleName": "Orientation of the page is not restricted using CSS transforms",
       "ruleApproved": false,
       "procedureNames": [],
       "consistency": null,
