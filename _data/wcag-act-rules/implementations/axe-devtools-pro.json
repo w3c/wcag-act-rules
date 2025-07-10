@@ -6,13 +6,13 @@
   "approvedRules": {
     "complete": 29,
     "partial": 0,
-    "inconsistent": 5,
+    "inconsistent": 6,
     "untested": 0
   },
   "proposedRules": {
     "complete": 4,
     "partial": 14,
-    "inconsistent": 8,
+    "inconsistent": 7,
     "untested": 27
   },
   "actRuleMapping": [
@@ -10087,6 +10087,227 @@
       ]
     },
     {
+      "ruleId": "b33eff",
+      "ruleName": "Orientation of the page is not restricted using CSS transforms",
+      "ruleApproved": true,
+      "procedureNames": [
+        "css-orientation-lock"
+      ],
+      "consistency": null,
+      "accessibilityRequirements": {
+        "correct": true,
+        "expected": [
+          "WCAG2:orientation"
+        ],
+        "reported": [
+          "WCAG2:orientation"
+        ]
+      },
+      "coverage": {
+        "covered": 6,
+        "untested": 4,
+        "cantTell": 1,
+        "testCaseTotal": 12
+      },
+      "testCaseResults": [
+        {
+          "testcaseId": "0b392e6774d063a24241c3629113909e98c98607",
+          "testCaseName": "Passed Example 1",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/0b392e6774d063a24241c3629113909e98c98607.html",
+          "testCaseApproved": true,
+          "expected": "passed",
+          "procedureResults": [
+            {
+              "procedureName": "css-orientation-lock",
+              "outcomes": [
+                "inapplicable"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "405d1e8fb50b36ae53c655c228126a078e591d3b",
+          "testCaseName": "Passed Example 2",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/405d1e8fb50b36ae53c655c228126a078e591d3b.html",
+          "testCaseApproved": true,
+          "expected": "passed",
+          "procedureResults": [
+            {
+              "procedureName": "css-orientation-lock",
+              "outcomes": [
+                "inapplicable"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "4fa1ac6e6c6c65a3cc17e144823e45ff30f428bb",
+          "testCaseName": "Passed Example 3",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/4fa1ac6e6c6c65a3cc17e144823e45ff30f428bb.html",
+          "testCaseApproved": true,
+          "expected": "passed",
+          "procedureResults": [
+            {
+              "procedureName": "css-orientation-lock",
+              "outcomes": [
+                "passed"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "3b2f386c66ccb9c1a9a848017dab9b074afbf858",
+          "testCaseName": "Failed Example 1",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/3b2f386c66ccb9c1a9a848017dab9b074afbf858.html",
+          "testCaseApproved": true,
+          "expected": "failed",
+          "procedureResults": [
+            {
+              "procedureName": "css-orientation-lock",
+              "outcomes": [
+                "untested"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "388f97562ae3b7e3aec7ad6305df36a91b68cf77",
+          "testCaseName": "Failed Example 2",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/388f97562ae3b7e3aec7ad6305df36a91b68cf77.html",
+          "testCaseApproved": true,
+          "expected": "failed",
+          "procedureResults": [
+            {
+              "procedureName": "css-orientation-lock",
+              "outcomes": [
+                "inapplicable"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "93ad10ce32325be5b7c8cbaec7254d55e8fb577c",
+          "testCaseName": "Failed Example 3",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/93ad10ce32325be5b7c8cbaec7254d55e8fb577c.html",
+          "testCaseApproved": true,
+          "expected": "failed",
+          "procedureResults": [
+            {
+              "procedureName": "css-orientation-lock",
+              "outcomes": [
+                "untested"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "8f341a73c698daf157613c32a521878ed5aa7310",
+          "testCaseName": "Failed Example 4",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/8f341a73c698daf157613c32a521878ed5aa7310.html",
+          "testCaseApproved": true,
+          "expected": "failed",
+          "procedureResults": [
+            {
+              "procedureName": "css-orientation-lock",
+              "outcomes": [
+                "untested"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "c59f09b11f0743c523cc63ae3c827996889fa32d",
+          "testCaseName": "Inapplicable Example 1",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/c59f09b11f0743c523cc63ae3c827996889fa32d.html",
+          "testCaseApproved": true,
+          "expected": "inapplicable",
+          "procedureResults": [
+            {
+              "procedureName": "css-orientation-lock",
+              "outcomes": [
+                "cantTell"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "b8d71ae629b704bd374b0a2dcde569bd108c848e",
+          "testCaseName": "Inapplicable Example 2",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/b8d71ae629b704bd374b0a2dcde569bd108c848e.html",
+          "testCaseApproved": true,
+          "expected": "inapplicable",
+          "procedureResults": [
+            {
+              "procedureName": "css-orientation-lock",
+              "outcomes": [
+                "passed"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "5cde20e2acab8991c299a317825201af48bf5736",
+          "testCaseName": "Inapplicable Example 3",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/5cde20e2acab8991c299a317825201af48bf5736.html",
+          "testCaseApproved": true,
+          "expected": "inapplicable",
+          "procedureResults": [
+            {
+              "procedureName": "css-orientation-lock",
+              "outcomes": [
+                "passed"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "4c34705d8d866194fd8fe96a0bd1abaf267b11f0",
+          "testCaseName": "Inapplicable Example 4",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/4c34705d8d866194fd8fe96a0bd1abaf267b11f0.html",
+          "testCaseApproved": true,
+          "expected": "inapplicable",
+          "procedureResults": [
+            {
+              "procedureName": "css-orientation-lock",
+              "outcomes": [
+                "untested"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "e228ac70387fe286917bce3028ae311269ae2f35",
+          "testCaseName": "Inapplicable Example 5",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/e228ac70387fe286917bce3028ae311269ae2f35.html",
+          "testCaseApproved": true,
+          "expected": "inapplicable",
+          "procedureResults": [
+            {
+              "procedureName": "css-orientation-lock",
+              "outcomes": [
+                "inapplicable"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "3600a3d783678e384fec62211e854cb8a4d3d2d0",
+          "testCaseName": "Inapplicable Example 3",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/3600a3d783678e384fec62211e854cb8a4d3d2d0.html",
+          "testCaseApproved": false,
+          "expected": "inapplicable",
+          "procedureResults": [
+            {
+              "procedureName": "css-orientation-lock",
+              "outcomes": [
+                "untested"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "ruleId": "ff89c9",
       "ruleName": "ARIA required context role",
       "ruleApproved": false,
@@ -10465,10 +10686,10 @@
         ]
       },
       "coverage": {
-        "covered": 15,
-        "untested": 2,
+        "covered": 14,
+        "untested": 10,
         "cantTell": 0,
-        "testCaseTotal": 17
+        "testCaseTotal": 24
       },
       "testCaseResults": [
         {
@@ -10502,16 +10723,16 @@
           ]
         },
         {
-          "testcaseId": "12a2da38812d7bf356f0092674c1c21802faf30d",
+          "testcaseId": "9b8254ecd2ab2ecca6bdc6e050f87f0f42f16c38",
           "testCaseName": "Passed Example 3",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/12a2da38812d7bf356f0092674c1c21802faf30d.html",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/9b8254ecd2ab2ecca6bdc6e050f87f0f42f16c38.html",
           "testCaseApproved": false,
           "expected": "passed",
           "procedureResults": [
             {
               "procedureName": "aria-required-children",
               "outcomes": [
-                "passed"
+                "untested"
               ]
             }
           ]
@@ -10557,6 +10778,66 @@
               "procedureName": "aria-required-children",
               "outcomes": [
                 "passed"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "9ed4f5f7c0a9b8377e7652022430cbd5b1eddccf",
+          "testCaseName": "Passed Example 7",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/9ed4f5f7c0a9b8377e7652022430cbd5b1eddccf.html",
+          "testCaseApproved": false,
+          "expected": "passed",
+          "procedureResults": [
+            {
+              "procedureName": "aria-required-children",
+              "outcomes": [
+                "inapplicable"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "a25a181de38e32b880188d4279d02e8589d7a283",
+          "testCaseName": "Passed Example 8",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/a25a181de38e32b880188d4279d02e8589d7a283.html",
+          "testCaseApproved": false,
+          "expected": "passed",
+          "procedureResults": [
+            {
+              "procedureName": "aria-required-children",
+              "outcomes": [
+                "untested"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "faa124300ae3b5ccdce631d2c79a461946066902",
+          "testCaseName": "Passed Example 9",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/faa124300ae3b5ccdce631d2c79a461946066902.html",
+          "testCaseApproved": false,
+          "expected": "passed",
+          "procedureResults": [
+            {
+              "procedureName": "aria-required-children",
+              "outcomes": [
+                "untested"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "81104ca788ec9b7f87446a4665932812471952fa",
+          "testCaseName": "Passed Example 10",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/81104ca788ec9b7f87446a4665932812471952fa.html",
+          "testCaseApproved": false,
+          "expected": "passed",
+          "procedureResults": [
+            {
+              "procedureName": "aria-required-children",
+              "outcomes": [
+                "untested"
               ]
             }
           ]
@@ -10668,6 +10949,51 @@
           ]
         },
         {
+          "testcaseId": "a50706ecd9b49e0f16b022668895c5e12cb2eeb5",
+          "testCaseName": "Failed Example 8",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/a50706ecd9b49e0f16b022668895c5e12cb2eeb5.html",
+          "testCaseApproved": false,
+          "expected": "failed",
+          "procedureResults": [
+            {
+              "procedureName": "aria-required-children",
+              "outcomes": [
+                "untested"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "497cd2bb724541d56e49a57e38d5a7e2fabffc6a",
+          "testCaseName": "Failed Example 9",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/497cd2bb724541d56e49a57e38d5a7e2fabffc6a.html",
+          "testCaseApproved": false,
+          "expected": "failed",
+          "procedureResults": [
+            {
+              "procedureName": "aria-required-children",
+              "outcomes": [
+                "untested"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "8b65672c9aefc4957b09a338eb85ad7dff6e53de",
+          "testCaseName": "Failed Example 10",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/8b65672c9aefc4957b09a338eb85ad7dff6e53de.html",
+          "testCaseApproved": false,
+          "expected": "failed",
+          "procedureResults": [
+            {
+              "procedureName": "aria-required-children",
+              "outcomes": [
+                "untested"
+              ]
+            }
+          ]
+        },
+        {
           "testcaseId": "83d80bc34891ae13f05150c8c677028591f1d199",
           "testCaseName": "Inapplicable Example 1",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/83d80bc34891ae13f05150c8c677028591f1d199.html",
@@ -10683,16 +11009,16 @@
           ]
         },
         {
-          "testcaseId": "9ed4f5f7c0a9b8377e7652022430cbd5b1eddccf",
+          "testcaseId": "4c7f05a0c2de670e047b18857e91ebddeaebcf90",
           "testCaseName": "Inapplicable Example 2",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/9ed4f5f7c0a9b8377e7652022430cbd5b1eddccf.html",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/4c7f05a0c2de670e047b18857e91ebddeaebcf90.html",
           "testCaseApproved": false,
           "expected": "inapplicable",
           "procedureResults": [
             {
               "procedureName": "aria-required-children",
               "outcomes": [
-                "inapplicable"
+                "untested"
               ]
             }
           ]
@@ -12025,212 +12351,6 @@
           "procedureResults": [
             {
               "procedureName": "bypass",
-              "outcomes": [
-                "inapplicable"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "ruleId": "b33eff",
-      "ruleName": "Orientation of the page is not restricted using CSS transforms",
-      "ruleApproved": false,
-      "procedureNames": [
-        "css-orientation-lock"
-      ],
-      "consistency": null,
-      "accessibilityRequirements": {
-        "correct": true,
-        "expected": [
-          "WCAG2:orientation"
-        ],
-        "reported": [
-          "WCAG2:orientation"
-        ]
-      },
-      "coverage": {
-        "covered": 6,
-        "untested": 4,
-        "cantTell": 1,
-        "testCaseTotal": 12
-      },
-      "testCaseResults": [
-        {
-          "testcaseId": "0b392e6774d063a24241c3629113909e98c98607",
-          "testCaseName": "Passed Example 1",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/0b392e6774d063a24241c3629113909e98c98607.html",
-          "testCaseApproved": false,
-          "expected": "passed",
-          "procedureResults": [
-            {
-              "procedureName": "css-orientation-lock",
-              "outcomes": [
-                "inapplicable"
-              ]
-            }
-          ]
-        },
-        {
-          "testcaseId": "405d1e8fb50b36ae53c655c228126a078e591d3b",
-          "testCaseName": "Passed Example 2",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/405d1e8fb50b36ae53c655c228126a078e591d3b.html",
-          "testCaseApproved": false,
-          "expected": "passed",
-          "procedureResults": [
-            {
-              "procedureName": "css-orientation-lock",
-              "outcomes": [
-                "inapplicable"
-              ]
-            }
-          ]
-        },
-        {
-          "testcaseId": "4fa1ac6e6c6c65a3cc17e144823e45ff30f428bb",
-          "testCaseName": "Passed Example 3",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/4fa1ac6e6c6c65a3cc17e144823e45ff30f428bb.html",
-          "testCaseApproved": false,
-          "expected": "passed",
-          "procedureResults": [
-            {
-              "procedureName": "css-orientation-lock",
-              "outcomes": [
-                "passed"
-              ]
-            }
-          ]
-        },
-        {
-          "testcaseId": "3b2f386c66ccb9c1a9a848017dab9b074afbf858",
-          "testCaseName": "Failed Example 1",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/3b2f386c66ccb9c1a9a848017dab9b074afbf858.html",
-          "testCaseApproved": false,
-          "expected": "failed",
-          "procedureResults": [
-            {
-              "procedureName": "css-orientation-lock",
-              "outcomes": [
-                "untested"
-              ]
-            }
-          ]
-        },
-        {
-          "testcaseId": "388f97562ae3b7e3aec7ad6305df36a91b68cf77",
-          "testCaseName": "Failed Example 2",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/388f97562ae3b7e3aec7ad6305df36a91b68cf77.html",
-          "testCaseApproved": false,
-          "expected": "failed",
-          "procedureResults": [
-            {
-              "procedureName": "css-orientation-lock",
-              "outcomes": [
-                "inapplicable"
-              ]
-            }
-          ]
-        },
-        {
-          "testcaseId": "93ad10ce32325be5b7c8cbaec7254d55e8fb577c",
-          "testCaseName": "Failed Example 3",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/93ad10ce32325be5b7c8cbaec7254d55e8fb577c.html",
-          "testCaseApproved": false,
-          "expected": "failed",
-          "procedureResults": [
-            {
-              "procedureName": "css-orientation-lock",
-              "outcomes": [
-                "untested"
-              ]
-            }
-          ]
-        },
-        {
-          "testcaseId": "8f341a73c698daf157613c32a521878ed5aa7310",
-          "testCaseName": "Failed Example 4",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/8f341a73c698daf157613c32a521878ed5aa7310.html",
-          "testCaseApproved": false,
-          "expected": "failed",
-          "procedureResults": [
-            {
-              "procedureName": "css-orientation-lock",
-              "outcomes": [
-                "untested"
-              ]
-            }
-          ]
-        },
-        {
-          "testcaseId": "c59f09b11f0743c523cc63ae3c827996889fa32d",
-          "testCaseName": "Inapplicable Example 1",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/c59f09b11f0743c523cc63ae3c827996889fa32d.html",
-          "testCaseApproved": false,
-          "expected": "inapplicable",
-          "procedureResults": [
-            {
-              "procedureName": "css-orientation-lock",
-              "outcomes": [
-                "cantTell"
-              ]
-            }
-          ]
-        },
-        {
-          "testcaseId": "b8d71ae629b704bd374b0a2dcde569bd108c848e",
-          "testCaseName": "Inapplicable Example 2",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/b8d71ae629b704bd374b0a2dcde569bd108c848e.html",
-          "testCaseApproved": false,
-          "expected": "inapplicable",
-          "procedureResults": [
-            {
-              "procedureName": "css-orientation-lock",
-              "outcomes": [
-                "passed"
-              ]
-            }
-          ]
-        },
-        {
-          "testcaseId": "5cde20e2acab8991c299a317825201af48bf5736",
-          "testCaseName": "Inapplicable Example 3",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/5cde20e2acab8991c299a317825201af48bf5736.html",
-          "testCaseApproved": false,
-          "expected": "inapplicable",
-          "procedureResults": [
-            {
-              "procedureName": "css-orientation-lock",
-              "outcomes": [
-                "passed"
-              ]
-            }
-          ]
-        },
-        {
-          "testcaseId": "4c34705d8d866194fd8fe96a0bd1abaf267b11f0",
-          "testCaseName": "Inapplicable Example 4",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/4c34705d8d866194fd8fe96a0bd1abaf267b11f0.html",
-          "testCaseApproved": false,
-          "expected": "inapplicable",
-          "procedureResults": [
-            {
-              "procedureName": "css-orientation-lock",
-              "outcomes": [
-                "untested"
-              ]
-            }
-          ]
-        },
-        {
-          "testcaseId": "e228ac70387fe286917bce3028ae311269ae2f35",
-          "testCaseName": "Inapplicable Example 5",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/e228ac70387fe286917bce3028ae311269ae2f35.html",
-          "testCaseApproved": false,
-          "expected": "inapplicable",
-          "procedureResults": [
-            {
-              "procedureName": "css-orientation-lock",
               "outcomes": [
                 "inapplicable"
               ]
