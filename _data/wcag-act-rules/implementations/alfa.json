@@ -2,7 +2,7 @@
   "vendor": "Siteimprove",
   "name": "Alfa (fully automated)",
   "version": "0.103.1",
-  "lastModified": "30 June 2025",
+  "lastModified": "14 July 2025",
   "approvedRules": {
     "complete": 25,
     "partial": 2,
@@ -8889,7 +8889,7 @@
             {
               "procedureName": "sia-r44",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -9324,8 +9324,8 @@
         ]
       },
       "coverage": {
-        "covered": 14,
-        "untested": 8,
+        "covered": 22,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 24
       },
@@ -9370,7 +9370,7 @@
             {
               "procedureName": "sia-r68",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -9445,7 +9445,7 @@
             {
               "procedureName": "sia-r68",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -9460,7 +9460,7 @@
             {
               "procedureName": "sia-r68",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -9475,7 +9475,7 @@
             {
               "procedureName": "sia-r68",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -9595,7 +9595,7 @@
             {
               "procedureName": "sia-r68",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -9610,7 +9610,7 @@
             {
               "procedureName": "sia-r68",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -9625,7 +9625,7 @@
             {
               "procedureName": "sia-r68",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -9655,7 +9655,7 @@
             {
               "procedureName": "sia-r68",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
