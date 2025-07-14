@@ -7,13 +7,13 @@
     "complete": 6,
     "partial": 1,
     "inconsistent": 1,
-    "untested": 27
+    "untested": 28
   },
   "proposedRules": {
     "complete": 7,
     "partial": 4,
     "inconsistent": 1,
-    "untested": 40
+    "untested": 39
   },
   "actRuleMapping": [
     {
@@ -4290,7 +4290,7 @@
     {
       "ruleId": "4e8ab6",
       "ruleName": "Element with role attribute has required states and properties",
-      "ruleApproved": false,
+      "ruleApproved": true,
       "procedureNames": [],
       "consistency": null,
       "coverage": null,
