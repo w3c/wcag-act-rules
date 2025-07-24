@@ -75,7 +75,10 @@ This page contains Accessibility Conformance Testing (ACT) Rules to test conform
 {% for sc in guideline.successcriteria %}
 {% if sc.versions contains "2.2" %}
 <div class="sc-item level-{{sc.level | downcase}}{% if forloop.first %} first{% endif %}">
-<p><strong>{{ sc.num }} {{ sc.handle }}</strong>: {{ sc.title }} (Level {{ sc.level }})</p>
+<div class="sc-text">
+  <h3 class="sc-handle">{{ sc.num }} {{ sc.handle }}:</h3>
+  <p class="sc-title">{{ sc.title }} (Level {{ sc.level }})</p>
+</div>
 
 {% comment %}Find related ACT rules for this criterion{% endcomment %}
 {% assign related_rules = "" | split: "," %}
@@ -149,8 +152,14 @@ This page contains Accessibility Conformance Testing (ACT) Rules to test conform
   {% endif %}
   
   <li data-status="{% if rule.deprecated == true %}deprecated{% elsif rule.proposed == true %}proposed{% else %}approved{% endif %}" data-test-types="{{ test_types_str }}">
-    <a href="/standards-guidelines/act/rules/{{ rule_id }}/proposed/">{{ rule.title }}</a>
-    {% if rule.deprecated == true %} <span class="act-pill deprecated">deprecated</span>{% elsif rule.proposed == true %} <span class="act-pill proposed">proposed</span>{% endif %}
+    <a href="/standards-guidelines/act/rules/{{ rule_id }}/proposed/">
+      {{ rule.title }}
+      {% if rule.deprecated == true %}
+        <span class="act-pill deprecated">deprecated</span>
+      {% elsif rule.proposed == true %} 
+        <span class="act-pill proposed">proposed</span>
+      {% endif %}
+    </a>
 
     {% comment %} Display atomic rules if this is a composite rule {% endcomment %}
     {% if is_composite %}
@@ -171,8 +180,14 @@ This page contains Accessibility Conformance Testing (ACT) Rules to test conform
               {% assign atomic_test_types_str = atomic_test_types | join: " " %}
 
               <li data-status="{% if atomic_rule.deprecated == true %}deprecated{% elsif atomic_rule.proposed == true %}proposed{% else %}approved{% endif %}" data-test-types="{{ atomic_test_types_str }}">
-                <a href="/standards-guidelines/act/rules/{{ atomic_id }}/proposed/">{{ atomic_rule.title }}</a>
-                {% if atomic_rule.deprecated == true %} <span class="act-pill deprecated">deprecated</span>{% elsif atomic_rule.proposed == true %} <span class="act-pill proposed">proposed</span>{% endif %}
+                <a href="/standards-guidelines/act/rules/{{ atomic_id }}/proposed/">
+                  {{ atomic_rule.title }}
+                  {% if atomic_rule.deprecated == true %}
+                    <span class="act-pill deprecated">deprecated</span>
+                  {% elsif atomic_rule.proposed == true %}
+                    <span class="act-pill proposed">proposed</span>
+                  {% endif %}
+                </a>
               </li>
             {% endif %}
           {% endfor %}
@@ -215,7 +230,7 @@ This page contains Accessibility Conformance Testing (ACT) Rules to test conform
 {% endfor %}
 {% assign aria_req_objs = aria_req_objs | sort %}
 
-<h2 data-aria-section="true">WAI-ARIA Related Rules</h2>
+<h2 data-aria-section="true">ARIA Rules</h2>
 <div class="aria-rules-list-container">
 {% assign found_aria_rule = false %}
 {% for aria_req_obj in aria_req_objs %}
@@ -256,8 +271,14 @@ This page contains Accessibility Conformance Testing (ACT) Rules to test conform
         {% unless all_implemented_ids contains rule_id %}{% assign test_types = test_types | push: "unimplemented" %}{% endunless %}
         {% assign test_types_str = test_types | join: " " %}
         <li data-status="{% if rule.deprecated == true %}deprecated{% elsif rule.proposed == true %}proposed{% else %}approved{% endif %}" data-test-types="{{ test_types_str }}">
-          <a href="/standards-guidelines/act/rules/{{ rule_id }}/proposed/">{{ rule.title }}</a>
-          {% if rule.deprecated == true %} <span class="act-pill deprecated">deprecated</span>{% elsif rule.proposed == true %} <span class="act-pill proposed">proposed</span>{% endif %}
+          <a href="/standards-guidelines/act/rules/{{ rule_id }}/proposed/">
+            {{ rule.title }}
+            {% if rule.deprecated == true %}
+              <span class="act-pill deprecated">deprecated</span>
+            {% elsif rule.proposed == true %}
+              <span class="act-pill proposed">proposed</span>
+            {% endif %}
+          </a>
         </li>
       {% endfor %}
     </ul>
@@ -274,10 +295,10 @@ This page contains Accessibility Conformance Testing (ACT) Rules to test conform
 {% endfor %}
 </div>
 <p class="no-aria-rules-message" {% if found_aria_rule %}hidden{% endif %}>
-  <em>No rules found with WAI-ARIA 1.2 accessibility requirements.</em>
+  <em>No rules found with ARIA accessibility requirements.</em>
 </p>
 <p class="filtered-aria-rules-message" hidden>
-  <em>All WAI-ARIA related rules are currently hidden by filters.</em>
+  <em>All ARIA related rules are currently hidden by filters.</em>
 </p>
 
 ## About Rule Status

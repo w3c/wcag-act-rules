@@ -2,7 +2,6 @@ nav.nav li:last-of-type {
   display: none;
 }
 
-/* For tables wider than the viewport */
 .scroll-wrap {
   width: 100%;
   overflow-x: auto;
@@ -35,7 +34,6 @@ table.act-implementations ul {
   height: 2px;
 }
 
-/* Pill indicator for status labels */
 .act-pill {
   display: inline-block;
   background-color: var(--wai-green);
@@ -58,14 +56,19 @@ table.act-implementations ul {
   color: #fff;
 }
 
-/* Add spacing between success criteria for better scannability */
-/* We use a spacing for all SC items except those that immediately follow a heading */
 .sc-item {
   margin-top: 2em;
 }
 
 h2 + .sc-item {
   margin-top: 0;
+}
+
+.sc-text > .sc-handle,
+.sc-text > .sc-title {
+  display: inline;
+  font-size: 1em;
+  color: var(--off-black);
 }
 
 @media (min-width: 480px) { 
@@ -113,7 +116,6 @@ table.act-rules-summary {
   }
 }
 
-/* Override WAI default, to avoid captions having the same look as h2 */
 table caption {
   color: var(--dk-grey);
   font-size: 1.05rem;
@@ -127,7 +129,6 @@ ul.act-requirements-list {
   list-style: none;
 }
 
-/* Filter controls styling */
 #filter-controls {
   margin: 2em 0;
   background-color: #f8f9fa;
@@ -188,7 +189,6 @@ ul.act-requirements-list {
   margin-right: 0.3em;
 }
 
-/* Focus styles for accessibility */
 input[type="checkbox"]:focus + label {
   outline: 2px solid #005a9c;
   outline-offset: 2px;
@@ -201,33 +201,23 @@ input[type="checkbox"]:focus + label {
   }
 }
 
-/* Style for nested atomic rules list */
 .atomic-rules-list {
   padding-top: 0.5em;
-  /* Optional: Add some left padding for indentation */
-  /* padding-left: 1.5em; */ 
 }
 
-/* Filter Status Bar Styling */
 #filter-status {
-  margin: 1.5em 0; /* Add some space around the bar */
+  margin: 1.5em 0;
   padding: 0.75em 1.25em;
-  background-color: #e9ecef; /* Light grey background */
-  border: 1px solid #ced4da; /* Subtle border */
+  background-color: #e9ecef;
+  border: 1px solid #ced4da;
   border-radius: 4px;
   font-size: 0.9em;
-  text-align: center; /* Center the text */
+  text-align: center;
 }
 
-/* Bold only the count numbers in the status bar */
-#filter-status #wcag-rule-count,
-#filter-status #criteria-with-rules-count,
-#filter-status #total-selected-criteria-count,
-#filter-status #aria-rule-count {
+#filter-status > span {
   font-weight: bold; 
 }
-
-
 .back-to-top-link {
   position: relative;
 }
