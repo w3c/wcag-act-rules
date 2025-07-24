@@ -17,7 +17,7 @@ footer:
 {% include box.html type="start" title="Summary" class="" %}
 {:/}
 
-This page contains list of ACT Rules to test conformance [Web Content Accessibility Guidelines (WCAG) 2.2 {% include_cached icon.html name="different-view" %}](https://www.w3.org/WAI/standards-guidelines/wcag/), [WAI-ARIA {% include_cached icon.html name="different-view" %}](https://www.w3.org/WAI/ARIA/) and other accessibility practices.  ACT Rules are formally approved by the relevant Working Group. Proposed rules have not yet completed the approval process. ACT Rules are informative — that means they are not required for determining conformance to WCAG or ARIA. Learn more from [About ACT Rules](/standards-guidelines/act/rules/about/).
+This page contains Accessibility Conformance Testing (ACT) Rules to test conformance with [Web Content Accessibility Guidelines (WCAG) 2.2 {% include_cached icon.html name="different-view" %}](https://www.w3.org/WAI/standards-guidelines/wcag/), [Accessible Rich Internet Applications (ARIA) {% include_cached icon.html name="different-view" %}](https://www.w3.org/WAI/ARIA/) and other accessibility practices. ACT Rules are formally approved by the relevant Working Group. Proposed rules have been consensed by the ACT Task Force participants but have not yet been approved by the relevant Working Groups. ACT Rules are informative — that means they are not required for determining conformance to WCAG or ARIA. Learn more from [About ACT Rules](/standards-guidelines/act/rules/about/).
 
 {::nomarkdown}
 {% include box.html type="end" %}
