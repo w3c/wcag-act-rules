@@ -2,11 +2,11 @@
   "vendor": "IBM Accessibility",
   "name": "Equal Access Accessibility Checker",
   "version": "3.1.42-rc.0",
-  "lastModified": "27 June 2025",
+  "lastModified": "25 July 2025",
   "approvedRules": {
     "complete": 21,
-    "partial": 4,
-    "inconsistent": 6,
+    "partial": 3,
+    "inconsistent": 7,
     "untested": 5
   },
   "proposedRules": {
@@ -7101,19 +7101,17 @@
       "procedureNames": [
         "element_scrollable_tabbable:pass_tabbable,pass_interactive,fail_scrollable"
       ],
-      "consistency": "partial",
+      "consistency": null,
       "accessibilityRequirements": {
         "correct": false,
         "expected": [
           "WCAG2:keyboard",
           "WCAG2:keyboard-no-exception"
         ],
-        "reported": [
-          "WCAG2:keyboard"
-        ]
+        "reported": []
       },
       "coverage": {
-        "covered": 10,
+        "covered": 8,
         "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 10
@@ -7159,7 +7157,7 @@
             {
               "procedureName": "element_scrollable_tabbable:pass_tabbable,pass_interactive,fail_scrollable",
               "outcomes": [
-                "failed"
+                "inapplicable"
               ]
             }
           ]
@@ -7174,7 +7172,7 @@
             {
               "procedureName": "element_scrollable_tabbable:pass_tabbable,pass_interactive,fail_scrollable",
               "outcomes": [
-                "failed"
+                "inapplicable"
               ]
             }
           ]
@@ -8343,7 +8341,7 @@
             {
               "procedureName": "element_orientation_unlocked:pass,fail_locked",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -8860,8 +8858,8 @@
         "reported": []
       },
       "coverage": {
-        "covered": 9,
-        "untested": 8,
+        "covered": 14,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 24
       },
@@ -8906,7 +8904,7 @@
             {
               "procedureName": "aria_child_valid:Pass,Fail_no_child,Fail_invalid_child",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -8981,7 +8979,7 @@
             {
               "procedureName": "aria_child_valid:Pass,Fail_no_child,Fail_invalid_child",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -8996,7 +8994,7 @@
             {
               "procedureName": "aria_child_valid:Pass,Fail_no_child,Fail_invalid_child",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -9011,7 +9009,7 @@
             {
               "procedureName": "aria_child_valid:Pass,Fail_no_child,Fail_invalid_child",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -9131,7 +9129,7 @@
             {
               "procedureName": "aria_child_valid:Pass,Fail_no_child,Fail_invalid_child",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -9146,7 +9144,7 @@
             {
               "procedureName": "aria_child_valid:Pass,Fail_no_child,Fail_invalid_child",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -9161,7 +9159,7 @@
             {
               "procedureName": "aria_child_valid:Pass,Fail_no_child,Fail_invalid_child",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -9191,7 +9189,7 @@
             {
               "procedureName": "aria_child_valid:Pass,Fail_no_child,Fail_invalid_child",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
