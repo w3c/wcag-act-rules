@@ -2,7 +2,7 @@
   "vendor": "Total Validator",
   "name": "Total Validator (+Browser)",
   "version": "17.4.0",
-  "lastModified": "28 June 2025",
+  "lastModified": "26 July 2025",
   "approvedRules": {
     "complete": 32,
     "partial": 1,
@@ -10871,7 +10871,7 @@
             {
               "procedureName": "I918",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
