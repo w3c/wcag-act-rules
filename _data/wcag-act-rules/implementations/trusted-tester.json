@@ -1697,6 +1697,15 @@
       "testCaseResults": []
     },
     {
+      "ruleId": "4e8ab6",
+      "ruleName": "Element with role attribute has required states and properties",
+      "ruleApproved": true,
+      "procedureNames": [],
+      "consistency": null,
+      "coverage": null,
+      "testCaseResults": []
+    },
+    {
       "ruleId": "ff89c9",
       "ruleName": "ARIA required context role",
       "ruleApproved": false,
@@ -4282,15 +4291,6 @@
       "ruleId": "ffbc54",
       "ruleName": "No keyboard shortcut uses only printable characters",
       "ruleApproved": false,
-      "procedureNames": [],
-      "consistency": null,
-      "coverage": null,
-      "testCaseResults": []
-    },
-    {
-      "ruleId": "4e8ab6",
-      "ruleName": "Element with role attribute has required states and properties",
-      "ruleApproved": true,
       "procedureNames": [],
       "consistency": null,
       "coverage": null,
