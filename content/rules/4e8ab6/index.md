@@ -1,71 +1,65 @@
 ---
-title: "Role attribute has valid value"
-permalink: /standards-guidelines/act/rules/674b10/proposed/
-ref: /standards-guidelines/act/rules/674b10/proposed/
+title: "Element with role attribute has required states and properties"
+permalink: /standards-guidelines/act/rules/4e8ab6/
+ref: /standards-guidelines/act/rules/4e8ab6/
 lang: en
 github:
   repository: w3c/wcag-act-rules
-  path: content/rules/674b10/proposed.md
+  path: content/rules/4e8ab6/index.md
 feedbackmail: public-wcag-act@w3.org
 footer: |
-  <p><strong>Rule Identifier:</strong> 674b10</p>
+  <p><strong>Rule Identifier:</strong> 4e8ab6</p>
   <p><strong>Date:</strong> Updated 8 July 2025</p>
-  <p><strong>Authors:</strong> <a href="https://github.com/jkodu">Jey Nandakumar</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
-  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
-proposed: true
+  <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, Tom Brunet. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
+  <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It was approved and published by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
+proposed: false
 rule_meta:
-  id: 674b10
-  name: "Role attribute has valid value"
+  id: 4e8ab6
+  name: "Element with role attribute has required states and properties"
   rule_type: atomic
-  original_file: role-attribute-valid-value-674b10.md
+  original_file: role-required-states-and-properties-4e8ab6.md
   description: |
-    This rule checks that each `role` attribute has a valid value.
+    This rule checks that elements that have an explicit role also specify all required states and properties.
   last_modified: 8 July 2025
 ---
 
 ## Applicability
 
-This rule applies to any `role` attribute for which all the following are true:
-
-- the attribute has a value that is neither empty ("") nor only [ASCII whitespace][]; and
-- the attribute is specified on an [HTML or SVG element][] which is not [programmatically hidden][].
+This rule applies to any [HTML or SVG element][] that is [included in the accessibility tree][] and has an [explicit semantic role][], except if the element has an [implicit semantic role][] that is identical to the [explicit semantic role][].
 
 ## Expectation
 
-Each test target has at least one token which is a valid value corresponding to a non-abstract role from [WAI-ARIA Specifications][].
+For each test target, the [WAI-ARIA required states and properties][] for the role are set and not empty (`""`), unless the state or property has a default value listed under [WAI-ARIA implicit value for role][].
 
 ## Background
 
-Using an invalid role is often the result of a typo or other developer error. Unknown roles are ignored by browsers and assistive technologies, and the element's [implicit role][] is used. This often means that a role that should exist is missing.
+Omitting [WAI-ARIA required states and properties][] is often the result of a developer error. When required properties are missing and a default value is not specified by [WAI-ARIA Specifications][], the behavior is not defined. For [WAI-ARIA 1.2][], the only [explicit semantic roles][explicit semantic role] with a required property with a default value are the `option` and `tabs roles` for the `aria-selected` property.
 
-The `role` attribute is a set of [space separated tokens][]. Having a [whitespace](#whitespace) separated list of more than one token in the value of the role attribute is used for what is known as _fallback roles_. If the first token is not accessibility supported (or valid), the next one will be used for determining the [semantic role][] of the element, and so forth. The rule applies to attributes containing at least one non-[ASCII whitespace][] character so that there is at least one token in the set.
-
-Not every role can be used on every element. Which ARIA roles may be used on which HTML elements is defined in [ARIA in HTML](https://www.w3.org/TR/html-aria/). Testing this is not part of this rule.
+This rule is testing author built components that specify [explicit semantic roles][explicit semantic role] and not components that keep their [implicit semantic role][]. For components that keep their [implicit semantic role][], all native HTML and SVG elements have native attributes that are mapped to all of the [WAI-ARIA required states and properties](https://www.w3.org/TR/wai-aria/#requiredState). Most of these mappings are defined in the [HTML Accessibility API Mappings, Attribute State and Property Mappings][html aam].
 
 ### Assumptions
 
-There are no assumptions.
+- The ARIA `role` is being used to conform to WCAG.
 
 ### Accessibility Support
 
-There are no accessibility support issues known.
+This rule relies on browsers and assistive technologies to support leaving out [WAI-ARIA required states and properties][] when a [WAI-ARIA implicit value for role][] is specified in [WAI-ARIA Specifications][].
+
+**Note:** The required states and properties with implicit values can be found in the Core Accessibility API Mappings 1.1 [Overview of default values for missing required attributes](https://www.w3.org/TR/core-aam-1.1/#authorErrorDefaultValuesTable).
 
 ### Bibliography
 
-- [List of WAI-ARIA Roles][wai-aria role]
-- [List of Graphics ARIA Roles](https://www.w3.org/TR/graphics-aria-1.0/#role_definitions)
-- [List of DPUB ARIA Roles](https://www.w3.org/TR/dpub-aria-1.1/#role_definitions)
-- [Specification of the `role` attribute][role attribute]
-- [WAI-ARIA 1.2 Categorization of Roles](https://www.w3.org/TR/wai-aria-1.2/#roles_categorization)
-- [WAI-ARIA Roles](https://www.w3.org/TR/wai-aria-1.2/#introroles)
+- [ARIA5: Using WAI-ARIA state and property attributes to expose the state of a user interface component](https://www.w3.org/WAI/WCAG22/Techniques/aria/ARIA5)
+- [WAI-ARIA required states and properties](https://www.w3.org/TR/wai-aria-1.2/#requiredState)
+- [RFC 3986](https://www.ietf.org/rfc/rfc3986.txt)
 
 ## Accessibility Requirements Mapping
 
 <ul class="act-requirements-list">
   <li><details>
-    <summary><span>ARIA4: Using a WAI-ARIA role to expose the role of a user interface component</span></summary>
+    <summary><span>ARIA5: Using WAI-ARIA state and property attributes to expose the state of a user interface component</span></summary>
     <ul>
-      <li><a href="https://www.w3.org/WAI/WCAG22/Techniques/aria/ARIA4">Learn more about technique ARIA4</a></li>
+      <li><a href="https://www.w3.org/WAI/WCAG22/Techniques/aria/ARIA5">Learn more about technique ARIA5</a></li>
       <li>Not required for conformance to any W3C accessibility recommendation.</li>
       <li>Outcome mapping: <ul>
         <li>Any <code>failed</code> outcomes: technique is not satisfied</li>
@@ -75,14 +69,14 @@ There are no accessibility support issues known.
     </ul>
   </details></li>
   <li><details>
-    <summary><span>G108: Using markup features to expose the name and role, allow user-settable properties to be directly set, and provide notification of changes</span></summary>
+    <summary><span>ARIA 1.2, 5.2.2 Required States and Properties</span></summary>
     <ul>
-      <li><a href="https://www.w3.org/WAI/WCAG22/Techniques/general/G108">Learn more about technique G108</a></li>
-      <li>Not required for conformance to any W3C accessibility recommendation.</li>
+      <li><a href="https://www.w3.org/TR/wai-aria-1.2/#requiredstate">Learn more about ARIA 1.2, 5.2.2 Required States and Properties</a></li>
+      <li><strong>Required for conformance</strong> to WAI-ARIA 1.2 author requirements.</li>
       <li>Outcome mapping: <ul>
-        <li>Any <code>failed</code> outcomes: technique is not satisfied</li>
-        <li>All <code>passed</code> outcomes: technique needs further testing</li>
-        <li>An <code>inapplicable</code> outcome: technique needs further testing</li>
+        <li>Any <code>failed</code> outcomes: WAI-ARIA requirement is not satisfied</li>
+        <li>All <code>passed</code> outcomes: WAI-ARIA requirement is satisfied</li>
+        <li>An <code>inapplicable</code> outcome: WAI-ARIA requirement is satisfied</li>
       </ul></li>
     </ul>
   </details></li>
@@ -96,15 +90,14 @@ not designed to test this requirements directly. These
 can either be stricter than the rule requires, or may be satisfied in ways 
 not tested by the rule:
 
-- [1.3.1 Info and Relationships (Level A)](https://www.w3.org/TR/WCAG22/#info-and-relationships): This success criterion is **less strict** than this rule. This is because the success criterion can be satisfied by an element's implicit role when the explicit role is incorrect. Some of the failed examples may satisfy this success criterion.
-- [4.1.2 Name, Role, Value (Level A)](https://www.w3.org/TR/WCAG22/#name-role-value): This success criterion is **less strict** than this rule. This is because the success criterion can be satisfied by an element's implicit role when the explicit role is incorrect. Some of the failed examples may satisfy this success criterion.
+- [1.3.1 Info and Relationships (Level A)](https://www.w3.org/TR/WCAG22/#info-and-relationships): This success criterion is **less strict** than this rule. This is because browsers and assistive technologies will often fall back on a non-standard default value, which may be sufficient. Some of the failed examples may satisfy this success criterion.
+- [4.1.2 Name, Role, Value (Level A)](https://www.w3.org/TR/WCAG22/#name-role-value): This success criterion is **less strict** than this rule. This is because browsers and assistive technologies will often fall back on a non-standard default value, which may be sufficient. Some of the failed examples may satisfy this success criterion.
 
 ## Input Aspects
 
 The following aspects are required in using this rule.
 
 - [DOM Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom)
-- [CSS Styling](https://www.w3.org/TR/act-rules-aspects/#input-aspects-css)
 
 ## Test Cases
 
@@ -112,130 +105,173 @@ The following aspects are required in using this rule.
 
 #### Passed Example 1
 
-<a class="example-link" title="Passed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/c181f7267bf9f4fc0f9ad9e2a69c1ad7da504f4d.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/eadf2a087a82575bcdf9f9158e698a576e9627c8.html">Open in a new tab</a>
 
-This `role` attribute contains one `searchbox` token which is a valid [WAI-ARIA role][].
+This `heading` has the required `aria-level` property.
 
 ```html
-<label>Search: <input type="text" role="searchbox" placeholder="Enter 3 or more characters"/></label>
+<div role="heading" aria-level="1">
+	My First Heading
+</div>
 ```
 
 #### Passed Example 2
 
-<a class="example-link" title="Passed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/9980fd3a6f30b20069618708b2c8fa79d444e0a4.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/5b39aa37000933c7b9a766970b829ce5fada62d6.html">Open in a new tab</a>
 
-This `role` attribute contains two tokens which are both valid [WAI-ARIA roles][wai-aria role].
+This `checkbox` has the required `aria-checked` property.
 
 ```html
-<style>
-	.ref {
-		color: #0000ee;
-		text-decoration: underline;
-		cursor: pointer;
-	}
-</style>
-See [<span class="ref" onclick="location.href='https://act-rules.github.io/'" role="doc-biblioref link">ACT rules</span
->].
+<div role="checkbox" aria-checked="false" aria-labelledby="label"></div>
+<div id="label">Check me</div>
 ```
 
 #### Passed Example 3
 
-<a class="example-link" title="Passed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/8ee31c22ec3fa0bccf46e3f44e9a5d8e752bc776.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/11c5321c05c7b83b8707eee76574a94bd44033fe.html">Open in a new tab</a>
 
-This `role` attribute contains two tokens, and one of these tokens (`searchbox`) is a valid [WAI-ARIA role][].
+This `scrollbar` has the required properties `aria-controls` and `aria-valuenow`. `aria-valuemin` has a default value of 0 and `aria-valuemax` of 100.
 
 ```html
-<label>Search: <input type="text" role="searchfield searchbox" placeholder="Enter 3 or more characters"/></label>
+<div role="scrollbar" aria-controls="content" aria-valuenow="0"></div>
+<main id="content"></main>
+```
+
+#### Passed Example 4
+
+<a class="example-link" title="Passed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/3da0918b07e5736d55b4b405a22860d889931c15.html">Open in a new tab</a>
+
+These `option` nodes do not need the required `aria-selected` property because it has a default value of `false`.
+
+```html
+<div id="label">Tags</div>
+<ul role="listbox" aria-labelledby="label">
+	<li role="option">Zebra</li>
+	<li role="option">Zoom</li>
+</ul>
+```
+
+#### Passed Example 5
+
+<a class="example-link" title="Passed Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/58a35afd2998bb6f9c670cb74fa7b550e80897b4.html">Open in a new tab</a>
+
+This `separator` is not a `widget` because it is not [focusable][]. The `separator` role only requires the `aria-valuenow` property when the element is focusable.
+
+```html
+<p>My first HTML</p>
+<div role="separator"></div>
+<p>My last HTML</p>
+```
+
+#### Passed Example 6
+
+<a class="example-link" title="Passed Example 6" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/986038d85467255cef4ed7d72c231442427ece23.html">Open in a new tab</a>
+
+This `combobox` has the required properties `aria-controls` and `aria-expanded`.
+
+```html
+<label for="tag_combo" id="tag_label">Tag</label>
+<input type="text" id="tag_combo" role="combobox" aria-expanded="true" aria-controls="popup_listbox"/>
+<ul role="listbox" id="popup_listbox" aria-labelledby="tag_label">
+	<li role="option">Zebra</li>
+	<li role="option" id="selected_option">Zoom</li>
+</ul>
 ```
 
 ### Failed
 
 #### Failed Example 1
 
-<a class="example-link" title="Failed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/4b0aaf07c6e9fb6ea3495dd9cecf55d47b9539b8.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/80462b7b8c490305d1de7e3136c0bcfaef31789f.html">Open in a new tab</a>
 
-This `role` attribute contains one `lnik` token, but this token is not a valid role in any of the [WAI-ARIA specifications][].
+This `heading` does not have the required `aria-level` property. Prior to [WAI-ARIA 1.2][] the `heading` role had an implicit default `aria-level` value of `2`. As of WAI-ARIA 1.2 this property must be explicitly set.
 
 ```html
-<style>
-	.link {
-		color: #0000ee;
-		text-decoration: underline;
-		cursor: pointer;
-	}
-</style>
-I love <span class="link" onclick="location.href='https://act-rules.github.io/'" role="lnik">ACT rules</span>.
+<div role="heading">
+	My First Heading
+</div>
 ```
 
 #### Failed Example 2
 
-<a class="example-link" title="Failed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/527c265ba570f0131dddef3687981b66f6dd156f.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/907f05aed287f7407d5f95e7d39bfc1435ec0812.html">Open in a new tab</a>
 
-This `role` attribute contains two tokens, but neither of these tokens is a valid role in any of the [WAI-ARIA specifications][].
+This `switch` does not have the required `aria-checked` property. Prior to [WAI-ARIA 1.2][] the `switch` role had an implicit default `aria-checked` value of `false`. As of WAI-ARIA 1.2 this property must be explicitly set.
 
 ```html
-<style>
-	.ref {
-		color: #0000ee;
-		text-decoration: underline;
-		cursor: pointer;
-	}
-</style>
-See [<span class="ref" onclick="location.href='https://act-rules.github.io/'" role="bibliographic-reference lnik"
-	>ACT rules</span
->].
+<div role="switch">
+	Toggle me
+</div>
+```
+
+#### Failed Example 3
+
+<a class="example-link" title="Failed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/9bb1bdb3e95aa9b895fc4f32b0c2cfc917a07a72.html">Open in a new tab</a>
+
+This `checkbox` does not have the required property `aria-checked`. Prior to [WAI-ARIA 1.2][] the `checkbox` had an implicit default `aria-checked` value of `false`. As of WAI-ARIA 1.2 this property must be explicitly set.
+
+```html
+<div role="checkbox" aria-labelledby="label"></div>
+<div id="label">Check me</div>
+```
+
+#### Failed Example 4
+
+<a class="example-link" title="Failed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/43af91df529613e51429e18d43ce3df99b189c0f.html">Open in a new tab</a>
+
+This `separator` does not have the required `aria-valuenow` property. This is required because the `separator` is [focusable][], which makes it a `widget`.
+
+```html
+<p>My first HTML</p>
+<div role="separator" tabindex="0"></div>
+<p>My last HTML</p>
+```
+
+#### Failed Example 5
+
+<a class="example-link" title="Failed Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/7a1942d2d52f50c5df458877a0ee18dc5a22b0c3.html">Open in a new tab</a>
+
+This `combobox` does not have the required `aria-expanded` property. Prior to [WAI-ARIA 1.2][] the `combobox` had an implicit default `aria-expanded` value of `false`. As of WAI-ARIA 1.2 this property must be explicitly set.
+
+```html
+<label for="tag_combo">Tag</label>
+<input type="text" id="tag_combo" role="combobox" aria-controls="popup_listbox" />
+<ul role="listbox" id="popup_listbox">
+	<li role="option">Zebra</li>
+	<li role="option" id="selected_option">Zoom</li>
+</ul>
 ```
 
 ### Inapplicable
 
 #### Inapplicable Example 1
 
-<a class="example-link" title="Inapplicable Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/ebd0080bacb8debc7ad069072240657df38c3e2c.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/9d80b71ad39b258fb75db804867f189d76ecdab8.html">Open in a new tab</a>
 
-There is no `role` attribute.
+This `div` does not have a [semantic role](#semantic-role).
 
 ```html
-<img src="/test-assets/shared/w3c-logo.png" alt="W3C logo" />
+<div>Some Content</div>
 ```
 
 #### Inapplicable Example 2
 
-<a class="example-link" title="Inapplicable Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/98f200a9611571fd8db46027c8d28616d94083c8.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/c43c9679072e95ce85f8a7cb7581e991e73124c7.html">Open in a new tab</a>
 
-This `role` attribute has no value.
+This `checkbox` has an [implicit semantic role](#implicit-role) that is identical to the [explicit semantic role](#explicit-role). This allows native HTML `checked` attribute to apply.
 
 ```html
-<div role>Some Content</div>
+<input type="checkbox" role="checkbox" aria-label="Checkbox name"/>
 ```
 
 #### Inapplicable Example 3
 
-<a class="example-link" title="Inapplicable Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/8f409b57b31bce96b6f256d0fa9cfabcd0b984ca.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/f473186fa351637a3c034b2df567239a39a8139c.html">Open in a new tab</a>
 
-This `role` attribute is empty ("").
-
-```html
-<div role="">Some Content</div>
-```
-
-#### Inapplicable Example 4
-
-<a class="example-link" title="Inapplicable Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/351e4bd097e4e1217d64a6c32ae09987c8d4db4a.html">Open in a new tab</a>
-
-This `role` attribute is only [ASCII whitespace][].
+This `combobox` is not [included in the accessibility tree][] due to its styling, hiding it from everybody.
 
 ```html
-<input type="text" role=" " aria-label="field name"/>
-```
-
-#### Inapplicable Example 5
-
-<a class="example-link" title="Inapplicable Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/575a5e323abe810450d5ff443a5fd614dae12257.html">Open in a new tab</a>
-
-This `role` attribute is specified on an element which is [programmatically hidden][].
-
-```html
-<div aria-hidden="true" role="banner">Some Content</div>
+<div role="combobox" style="display:none;"></div>
 ```
 
 ## Glossary
@@ -342,35 +378,21 @@ The _WAI ARIA Specifications_ group both the WAI ARIA W3C Recommendation and ARI
 
 **Note:** depending on the type of content being evaluated, part of the specifications might be irrelevant and should be ignored.
 
-### Whitespace {#whitespace}
-
-_Whitespace_ are characters that have the Unicode "White_Space" property in the [Unicode properties list](https://www.unicode.org/Public/UCD/latest/ucd/PropList.txt).
-
-This includes:
-
-- all characters in the [Unicode Separator categories](https://www.unicode.org/versions/Unicode11.0.0/ch04.pdf#G134153), and
-- the following characters in the [Other, Control](https://www.unicode.org/versions/Unicode11.0.0/ch04.pdf#G134153) category:
-
-  - Character tabulation (U+0009)
-  - Line Feed (LF) (U+000A)
-  - Line Tabulation (U+000B)
-  - Form Feed (FF) (U+000C)
-  - Carriage Return (CR) (U+000D)
-  - Next Line (NEL) (U+0085)
-
 [accessibility support base line]: https://www.w3.org/TR/WCAG-EM/#step1c 'Definition of accessibility support base line'
-[ascii whitespace]: https://infra.spec.whatwg.org/#ascii-whitespace 'Definition of ASCII whitespace'
 [computed]: https://www.w3.org/TR/css-cascade/#computed-value 'CSS definition of computed value'
 [earl10-schema]: https://www.w3.org/TR/act-rules-format-1.1/#biblio-earl10-schema
 [element]: https://dom.spec.whatwg.org/#element 'DOM element, 2021/05/31'
 [examples of included in the accessibility tree]: https://act-rules.github.io/pages/examples/included-in-the-accessibility-tree/
 [explicit role]: #explicit-role 'Definition of Explicit Role'
+[explicit semantic role]: #explicit-role 'Definition of explicit semantic role'
 [flat tree]: https://drafts.csswg.org/css-scoping/#flat-tree 'Definition of flat tree'
-[focusable]: #focusable 'Definition of Focusable'
+[focusable]: #focusable
+[html aam]: https://www.w3.org/TR/html-aam-1.0/#html-attribute-state-and-property-mappings 'Specification of HTML attributes value mapping to ARIA states and properties'
 [html namespaces]: https://infra.spec.whatwg.org/#namespaces 'HTML namespace, 2021/05/31'
 [html or svg element]: #namespaced-element
 [implicit role]: #implicit-role 'Definition of Implicit Role'
-[included in the accessibility tree]: #included-in-the-accessibility-tree 'Definition of Included in the Accessibility Tree'
+[implicit semantic role]: #implicit-role 'Definition of implicit semantic role'
+[included in the accessibility tree]: #included-in-the-accessibility-tree 'Definition of Included in The Accessibility Tree'
 [inclusive ancestors]: https://dom.spec.whatwg.org/#concept-tree-inclusive-ancestor 'DOM Definition of Inclusive Ancestor'
 [marked as decorative]: #marked-as-decorative 'Definition of Marked as Decorative'
 [namespaceuri]: https://dom.spec.whatwg.org/#dom-element-namespaceuri 'DOM Element namespaceURI, 2021/05/31'
@@ -378,14 +400,14 @@ This includes:
 [presentational roles conflict resolution]: https://www.w3.org/TR/wai-aria-1.2/#conflict_resolution_presentation_none 'Presentational Roles Conflict Resolution'
 [programmatically hidden]: #programmatically-hidden 'Definition of Programmatically Hidden'
 [pure decoration]: https://www.w3.org/TR/WCAG22/#dfn-pure-decoration 'WCAG definition of Pure Decoration'
-[role attribute]: https://www.w3.org/TR/role-attribute/ 'Specification of the Role attribute'
+[role attribute]: https://www.w3.org/TR/role-attribute/ 'Specification of the role attribute'
 [rules for parsing integers]: https://html.spec.whatwg.org/#rules-for-parsing-integers
-[semantic role]: #semantic-role 'Definition of Semantic Role'
 [sequential focus navigation]: https://html.spec.whatwg.org/multipage/interaction.html#sequential-focus-navigation
-[space separated tokens]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#space-separated-tokens 'Definition of space separated tokens'
 [tabindex attribute]: https://html.spec.whatwg.org/#attr-tabindex
 [tabindex value]: https://html.spec.whatwg.org/#tabindex-value
 [test subject]: https://www.w3.org/TR/act-rules-format-1.1/#test-subject
 [test target]: https://www.w3.org/TR/act-rules-format/#test-target
-[wai-aria role]: https://www.w3.org/TR/wai-aria-1.2/#role_definitions 'List of WAI-ARIA roles'
+[wai-aria 1.2]: https://www.w3.org/TR/wai-aria-1.2/
+[wai-aria implicit value for role]: https://www.w3.org/TR/wai-aria-1.2/#implictValueForRole
+[wai-aria required states and properties]: https://www.w3.org/TR/wai-aria-1.2/#requiredState
 [wai-aria specifications]: #wai-aria-specifications 'Definition of WAI-ARIA Specifications'
