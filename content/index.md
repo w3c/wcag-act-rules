@@ -252,13 +252,13 @@ This page contains Accessibility Conformance Testing (ACT) Rules to test conform
       {% assign rules_for_req = rules_for_req | push: rule %}
     {% endif %}
   {% endfor %}
+  {% assign comma_index = req_title | split: ',' %}
+  {% if comma_index.size > 1 %}
+    <h3 class="aria-req"><strong>{{ comma_index[0] }}</strong>{{ req_title | remove_first: comma_index[0] }}</h3>
+  {% else %}
+    <h3 class="aria-req"><strong>{{ req_title }}</strong></h3>
+  {% endif %}
   {% if rules_for_req.size > 0 %}
-    {% assign comma_index = req_title | split: ',' %}
-    {% if comma_index.size > 1 %}
-      <p><strong>{{ comma_index[0] }}</strong>{{ req_title | remove_first: comma_index[0] }}</p>
-    {% else %}
-      <p><strong>{{ req_title }}</strong></p>
-    {% endif %}
     <ul class="act-rule-list">
       {% for rule in rules_for_req %}
         {% assign found_aria_rule = true %}
@@ -284,12 +284,6 @@ This page contains Accessibility Conformance Testing (ACT) Rules to test conform
     </ul>
     <p class="no-act-rules-message"{% if rules_for_req.size > 0 %} hidden{% endif %}><em>No ACT Rules available for this requirement yet.</em></p>
   {% else %}
-    {% assign comma_index = req_title | split: ',' %}
-    {% if comma_index.size > 1 %}
-      <p><strong>{{ comma_index[0] }}</strong>{{ req_title | remove_first: comma_index[0] }}</p>
-    {% else %}
-      <p><strong>{{ req_title }}</strong></p>
-    {% endif %}
     <p class="no-act-rules-message"><em>No ACT Rules available for this requirement yet.</em></p>
   {% endif %}
 {% endfor %}
