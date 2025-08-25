@@ -2,7 +2,7 @@
   "vendor": "Total Validator",
   "name": "Total Validator",
   "version": "17.4.0",
-  "lastModified": "26 July 2025",
+  "lastModified": "25 August 2025",
   "approvedRules": {
     "complete": 28,
     "partial": 1,
@@ -9750,9 +9750,9 @@
           ]
         },
         {
-          "testcaseId": "34f5126e4a87269f583d2c2963ed31b4e852f041",
+          "testcaseId": "556a7ba560d3d3ab0b78fabb46037ac4dc192fd9",
           "testCaseName": "Passed Example 7",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/34f5126e4a87269f583d2c2963ed31b4e852f041.html",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/556a7ba560d3d3ab0b78fabb46037ac4dc192fd9.html",
           "testCaseApproved": false,
           "expected": "passed",
           "procedureResults": [
@@ -9765,9 +9765,9 @@
           ]
         },
         {
-          "testcaseId": "5d1719662b77567eec3b9c37510f76a38f769deb",
+          "testcaseId": "b7736b7dffe6fc6924374d4542b0c5ce3b9456cf",
           "testCaseName": "Passed Example 8",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/5d1719662b77567eec3b9c37510f76a38f769deb.html",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/b7736b7dffe6fc6924374d4542b0c5ce3b9456cf.html",
           "testCaseApproved": false,
           "expected": "passed",
           "procedureResults": [
@@ -9825,9 +9825,9 @@
           ]
         },
         {
-          "testcaseId": "da2d6c53dd58121d0182d2498a104776da424e21",
+          "testcaseId": "5f9eefc34edefab96f156894ecbd1c0b5781045d",
           "testCaseName": "Passed Example 12",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/da2d6c53dd58121d0182d2498a104776da424e21.html",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/5f9eefc34edefab96f156894ecbd1c0b5781045d.html",
           "testCaseApproved": false,
           "expected": "passed",
           "procedureResults": [
