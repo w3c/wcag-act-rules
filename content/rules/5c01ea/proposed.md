@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 5c01ea</p>
-  <p><strong>Date:</strong> Updated 8 July 2025</p>
+  <p><strong>Date:</strong> Updated 21 August 2025</p>
   <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/Jym77">Jean-Yves Moyen</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
   
@@ -22,7 +22,7 @@ rule_meta:
   original_file: aria-state-or-property-permitted-5c01ea.md
   description: |
     This rule checks that WAI-ARIA states or properties are allowed for the element they are specified on.
-  last_modified: 8 July 2025
+  last_modified: 21 August 2025
 ---
 
 ## Applicability
@@ -46,6 +46,8 @@ No test target is [prohibited][] on the [semantic role][] of the element on whic
 The presence of prohibited ARIA attributes is often the result of a developer using an incorrect role, or a misunderstanding of the attribute. These attributes are ignored by browsers and other assistive technologies. This often means that a state or property which should exist is missing.
 
 In HTML, there are language features that do not have corresponding implicit WAI-ARIA semantics. As per [ARIA in HTML](https://www.w3.org/TR/html-aria/), those elements can have [global states or properties][global]. Some of those elements can also have [inherited][], [supported][], or [required][] [states][state] or [properties][property] that correspond to a [WAI-ARIA role](https://www.w3.org/TR/wai-aria-1.2/#introroles). For example, the `audio` element has no corresponding ARIA semantics but it can have [inherited][], [supported][], or [required][] [states][state] or [properties][property] of the [`application` role](https://www.w3.org/TR/wai-aria-1.2/#application).
+
+Note that required WAI-ARIA states or properties for a role may change with the advance of the WAI-ARIA specifications. For example, both aria-expanded and aria-controls were required in [ARIA 1.2](https://www.w3.org/TR/wai-aria-1.2/#combobox) for combobox role, but the aria-controls was removed from required states or properties in [ARIA 1.3](https://www.w3.org/TR/wai-aria-1.3/#combobox). The examples in this rule follow [ARIA 1.3](https://www.w3.org/TR/wai-aria-1.3/#combobox).
 
 Assessing the value of the attribute is out of scope for this rule.
 
@@ -176,7 +178,7 @@ The `aria-checked` [state][] is [required][] for the [semantic][semantic role] `
 
 <a class="example-link" title="Passed Example 6" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/d5503ef9eb5b1a3144451f5c3a680548343c9981.html">Open in a new tab</a>
 
-The `aria-controls` [property][] is [required][] for the [semantic][semantic role] `combobox`.
+The `aria-expanded` [property][] is [required][] for the [semantic][semantic role] `combobox`.
 
 ```html
 <div role="combobox" aria-controls="id1" aria-expanded="false" aria-label="My combobox">My combobox</div>
@@ -184,22 +186,22 @@ The `aria-controls` [property][] is [required][] for the [semantic][semantic rol
 
 #### Passed Example 7
 
-<a class="example-link" title="Passed Example 7" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/34f5126e4a87269f583d2c2963ed31b4e852f041.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 7" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/556a7ba560d3d3ab0b78fabb46037ac4dc192fd9.html">Open in a new tab</a>
 
-The `aria-controls` [property][] is [required][] for the [semantic][semantic role] `combobox`. [WAI-ARIA states and properties][wai-aria state or property] with empty value are still applicable to this rule.
+The `aria-expanded` [property][] is [required][] for the [semantic][semantic role] `combobox`.
 
 ```html
-<div role="combobox" aria-expanded="false" aria-controls aria-label="My combobox">My combobox</div>
+<div role="combobox" aria-expanded="false" aria-controls="id1" aria-label="My combobox">My combobox</div>
 ```
 
 #### Passed Example 8
 
-<a class="example-link" title="Passed Example 8" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/5d1719662b77567eec3b9c37510f76a38f769deb.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 8" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/b7736b7dffe6fc6924374d4542b0c5ce3b9456cf.html">Open in a new tab</a>
 
-The `aria-controls` [property][] is [required][] for the [semantic][semantic role] `combobox`. [WAI-ARIA states and properties][wai-aria state or property] with empty value (specified as an empty string) are still applicable to this rule.
+The `aria-expanded` [property][] is [required][] for the [semantic][semantic role] `combobox`. [WAI-ARIA states and properties][wai-aria state or property] with `undefined` value are still applicable to this rule.
 
 ```html
-<div role="combobox" aria-expanded="false" aria-controls="" aria-label="My combobox">My combobox</div>
+<div role="combobox" aria-expanded="undefined" aria-controls="id1" aria-label="My combobox">My combobox</div>
 ```
 
 #### Passed Example 9
@@ -236,15 +238,20 @@ This `input` element does not have an [explicit role][] of `textbox`, but the `a
 
 #### Passed Example 12
 
-<a class="example-link" title="Passed Example 12" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/da2d6c53dd58121d0182d2498a104776da424e21.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 12" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/5f9eefc34edefab96f156894ecbd1c0b5781045d.html">Open in a new tab</a>
 
 This `div` element has an [explicit role][] of `switch`; the `aria-required` [property][] is [inherited][] from the `checkbox` [superclass role](https://www.w3.org/TR/wai-aria-1.2/#superclassrole).
 
 ```html
 <div role="switch" aria-checked="false" tabindex="0" aria-required="true">
 	<span class="label">Notifications</span>
-	<span class="switch" style="position: relative; display: inline-block; top: 6px; border: 2px solid black; border-radius: 12px; height: 20px; width: 40px;">
-		<span style="position: absolute; top: 2px; left: 2px; display: inline-block; border: 2px solid black; border-radius: 8px; height: 12px; width: 12px; background: black;"></span>
+	<span
+		class="switch"
+		style="position: relative; display: inline-block; top: 6px; border: 2px solid black; border-radius: 12px; height: 20px; width: 40px;"
+	>
+		<span
+			style="position: absolute; top: 2px; left: 2px; display: inline-block; border: 2px solid black; border-radius: 8px; height: 12px; width: 12px; background: black;"
+		></span>
 	</span>
 	<span class="on" aria-hidden="true" style="display: none;">On</span>
 	<span class="off" aria-hidden="true">Off</span>

@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 80af7b</p>
-  <p><strong>Date:</strong> Updated 8 July 2025</p>
+  <p><strong>Date:</strong> Updated 21 August 2025</p>
   <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/DagfinnRomen">Dagfinn Rømen</a>, <a href="https://github.com/geirsf">Geir Sindre Fossøy</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -20,7 +20,7 @@ rule_meta:
   original_file: focusable-no-keyboard-trap-80af7b.md
   description: |
     This rule checks for keyboard traps. This includes use of both standard and non-standard keyboard navigation to navigate through all content without becoming trapped.
-  last_modified: 8 July 2025
+  last_modified: 21 August 2025
   scs_tested:
     - handle: No Keyboard Trap
       num: 2.1.2
@@ -235,6 +235,24 @@ These focusable `button` elements have scripts that create a keyboard trap. The 
 <a id="link2" href="#">Link 2</a>
 ```
 
+#### Passed Example 7
+
+<a class="example-link" title="Passed Example 7" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/80af7b/d2f5325f3fd5ddde38cd677a5ca36ba0d762fb84.html">Open in a new tab</a>
+
+The [focusable][] `button` labeled "Button3" creates a keyboard trap when navigating forward, as it moves focus back to "Button1" preventing users to focus "Button3". However, when navigating backward, all focusable elements receive focus as expected. Therefore, according to the background notes, this behavior is considered compliant with the rule, despite being recognized as a poor practice in terms of keyboard accessibility.
+
+```html
+<button onblur="setTimeout(() => this.nextElementSibling.focus(), 10)">
+	Button1
+</button>
+<button onblur="setTimeout(() => this.previousElementSibling.focus(), 10)">
+	Button2
+</button>
+<button>
+	Button3
+</button>
+```
+
 ### Failed
 
 #### Failed Example 1
@@ -253,25 +271,7 @@ This [focusable][] element creates a keyboard trap bringing focus to the `button
 
 #### Failed Example 2
 
-<a class="example-link" title="Failed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/80af7b/d2f5325f3fd5ddde38cd677a5ca36ba0d762fb84.html">Open in a new tab</a>
-
-These [focusable][] `button` elements create a keyboard trap preventing the last `button` to be reached using the keyboard.
-
-```html
-<button onblur="setTimeout(() => this.nextElementSibling.focus(), 10)">
-	Button1
-</button>
-<button onblur="setTimeout(() => this.previousElementSibling.focus(), 10)">
-	Button2
-</button>
-<button>
-	Button3
-</button>
-```
-
-#### Failed Example 3
-
-<a class="example-link" title="Failed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/80af7b/0ec0e93e7f8ffca39e1eb58a4a8503f1bd4cb145.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/80af7b/0ec0e93e7f8ffca39e1eb58a4a8503f1bd4cb145.html">Open in a new tab</a>
 
 This `button` element is between other `button` elements creating a keyboard trap.
 
@@ -281,9 +281,9 @@ This `button` element is between other `button` elements creating a keyboard tra
 <button onblur="setTimeout(() => this.focus(), 10)">Button 3</button>
 ```
 
-#### Failed Example 4
+#### Failed Example 3
 
-<a class="example-link" title="Failed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/80af7b/7dcc4ae00712889d448ecbcba200e032dca59bf0.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/80af7b/7dcc4ae00712889d448ecbcba200e032dca59bf0.html">Open in a new tab</a>
 
 These focusable `button` elements create a keyboard trap with no instructions.
 
@@ -300,9 +300,9 @@ These focusable `button` elements create a keyboard trap with no instructions.
 <a id="link2" href="#">Link 2</a>
 ```
 
-#### Failed Example 5
+#### Failed Example 4
 
-<a class="example-link" title="Failed Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/80af7b/8fba3918b361f251dab4c19bec8eddc5624218ee.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/80af7b/8fba3918b361f251dab4c19bec8eddc5624218ee.html">Open in a new tab</a>
 
 These focusable `button` elements create a keyboard trap with instructions that don't give advice on the method for proceeding.
 
@@ -320,9 +320,9 @@ These focusable `button` elements create a keyboard trap with instructions that 
 <a id="link2" href="#">Link 2</a>
 ```
 
-#### Failed Example 6
+#### Failed Example 5
 
-<a class="example-link" title="Failed Example 6" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/80af7b/62fd24e73ea55f55ad45de392128a816a6f03526.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/80af7b/62fd24e73ea55f55ad45de392128a816a6f03526.html">Open in a new tab</a>
 
 These focusable `button` elements create a keyboard trap with help text, where the method advised doesn't work.
 
