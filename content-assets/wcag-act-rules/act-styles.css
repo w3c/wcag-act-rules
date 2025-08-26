@@ -2,7 +2,6 @@ nav.nav li:last-of-type {
   display: none;
 }
 
-/* For tables wider than the viewport */
 .scroll-wrap {
   width: 100%;
   overflow-x: auto;
@@ -33,6 +32,55 @@ table.act-implementations ul {
 }
 .act-proposed .progress-bar {
   height: 2px;
+}
+
+.act-pill {
+  display: inline-block;
+  background-color: var(--wai-green);
+  color: #fff;
+  font-size: 0.75em;
+  padding: 0.2em 0.6em;
+  border-radius: 1em;
+  margin-left: 0.5em;
+  font-weight: 500;
+  text-transform: lowercase;
+}
+
+.act-pill::before {
+  content: ",";
+  position: absolute;
+  opacity: 0;
+}
+
+.act-pill.proposed {
+  background-color: #f8c55f;
+  color: #333;
+}
+
+.act-pill.deprecated {
+  background-color: #6c757d;
+  color: #fff;
+}
+
+.sc-item {
+  margin-top: 2em;
+}
+
+h2 + .sc-item {
+  margin-top: 0;
+}
+
+.sc-text > .sc-handle,
+.sc-text > .sc-title {
+  display: inline;
+  font-size: 1em;
+  color: var(--off-black);
+}
+
+.aria-req {
+  font-size: 1em;
+  color: var(--off-black);
+  font-weight: 400;
 }
 
 @media (min-width: 480px) { 
@@ -80,7 +128,6 @@ table.act-rules-summary {
   }
 }
 
-/* Override WAI default, to avoid captions having the same look as h2 */
 table caption {
   color: var(--dk-grey);
   font-size: 1.05rem;
@@ -92,4 +139,119 @@ ul.act-requirements-list {
 
 .act-requirements-list > li {
   list-style: none;
+}
+
+#filter-controls {
+  margin: 2em 0;
+  background-color: #f8f9fa;
+  padding: 1.5em;
+  border-radius: 5px;
+  border: 1px solid #e9ecef;
+}
+
+#filter-controls fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+#filter-controls legend {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+  color: var(--wai-green);
+}
+
+.filter-description {
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.filter-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5em;
+}
+
+.filter-group {
+  margin-bottom: 0.5em;
+}
+
+#filter-controls .filter-group-label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  font-size: 1rem;
+  color: black;
+}
+
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.checkbox-option {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-option input[type="checkbox"] {
+  margin-right: 0.3em;
+}
+
+input[type="checkbox"]:focus + label {
+  outline: 2px solid #005a9c;
+  outline-offset: 2px;
+}
+
+/* Responsive adjustments for filters */
+@media (max-width: 767px) {
+  .filter-options {
+    flex-direction: column;
+  }
+}
+
+.atomic-rules-list {
+  padding-top: 0.5em;
+}
+
+#filter-status {
+  margin: 1.5em 0;
+  padding: 0.75em 1.25em;
+  background-color: #e9ecef;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 0.9em;
+  text-align: center;
+}
+
+#filter-status > span {
+  font-weight: bold; 
+}
+.back-to-top-link {
+  position: relative;
+}
+.back-to-top-link > a {
+  position: absolute;
+  right: 0;
+  display: inline-block;
+  height: 0;
+  overflow: hidden;
+}
+.back-to-top-link > a:focus {
+  height: auto;
+}
+
+a.question {
+  text-decoration: none;
+  display: inline-block;
+  border: 2px solid currentColor;
+  width: 1.1em;
+  border-radius: 100%;
+  text-align: center;
+  height: 1.1em;
+  line-height: 1.1em;
+  font-size: 0.9rem;
 }
