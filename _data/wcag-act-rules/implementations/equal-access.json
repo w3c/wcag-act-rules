@@ -2,7 +2,7 @@
   "vendor": "IBM Accessibility",
   "name": "Equal Access Accessibility Checker",
   "version": "3.1.42-rc.0",
-  "lastModified": "25 July 2025",
+  "lastModified": "4 September 2025",
   "approvedRules": {
     "complete": 21,
     "partial": 3,
@@ -10,8 +10,8 @@
     "untested": 5
   },
   "proposedRules": {
-    "complete": 2,
-    "partial": 1,
+    "complete": 3,
+    "partial": 0,
     "inconsistent": 2,
     "untested": 46
   },
@@ -9233,15 +9233,15 @@
       "procedureNames": [
         "aria_attribute_valid:Pass,Fail_invalid_role_attr,Fail_invalid_implicit_role_attr"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
         "reported": []
       },
       "coverage": {
-        "covered": 16,
-        "untested": 3,
+        "covered": 19,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 19
       },
@@ -9346,7 +9346,7 @@
             {
               "procedureName": "aria_attribute_valid:Pass,Fail_invalid_role_attr,Fail_invalid_implicit_role_attr",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -9361,7 +9361,7 @@
             {
               "procedureName": "aria_attribute_valid:Pass,Fail_invalid_role_attr,Fail_invalid_implicit_role_attr",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -9421,7 +9421,7 @@
             {
               "procedureName": "aria_attribute_valid:Pass,Fail_invalid_role_attr,Fail_invalid_implicit_role_attr",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
