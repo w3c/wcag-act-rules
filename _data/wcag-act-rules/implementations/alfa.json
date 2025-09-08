@@ -2,7 +2,7 @@
   "vendor": "Siteimprove",
   "name": "Alfa (fully automated)",
   "version": "0.103.1",
-  "lastModified": "14 July 2025",
+  "lastModified": "1 September 2025",
   "approvedRules": {
     "complete": 26,
     "partial": 2,
@@ -10,8 +10,8 @@
     "untested": 2
   },
   "proposedRules": {
-    "complete": 4,
-    "partial": 7,
+    "complete": 5,
+    "partial": 6,
     "inconsistent": 4,
     "untested": 36
   },
@@ -9935,7 +9935,7 @@
       "procedureNames": [
         "sia-r18"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
@@ -9945,8 +9945,8 @@
         ]
       },
       "coverage": {
-        "covered": 16,
-        "untested": 3,
+        "covered": 19,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 19
       },
@@ -10051,7 +10051,7 @@
             {
               "procedureName": "sia-r18",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -10066,7 +10066,7 @@
             {
               "procedureName": "sia-r18",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -10126,7 +10126,7 @@
             {
               "procedureName": "sia-r18",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
