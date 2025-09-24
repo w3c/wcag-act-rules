@@ -2,7 +2,7 @@
   "name": "wcag-act-rules",
   "devDependencies": {
     "act-tools": "github:act-rules/act-tools",
-    "axios": "^0.28.0",
+    "axios": "^0.30.0",
     "moment": "^2.29.3",
     "yaml": "^2.1.1",
     "zx": "^6.2.4"
