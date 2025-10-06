@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> cf77f2</p>
-  <p><strong>Date:</strong> Updated 8 July 2025</p>
+  <p><strong>Date:</strong> Updated 6 October 2025</p>
   <p><strong>Authors:</strong> <a href="https://github.com/Jym77">Jean-Yves Moyen</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
   
@@ -22,7 +22,7 @@ rule_meta:
   original_file: bypass-blocks-cf77f2.md
   description: |
     This rule checks that each page has a mechanism to bypass repeated blocks of content.
-  last_modified: 8 July 2025
+  last_modified: 6 October 2025
   scs_tested:
     - handle: Bypass Blocks
       num: 2.4.1
@@ -62,7 +62,7 @@ If the [instruments][instrument] used to pass some of the atomic rules are not k
 
 This rule only checks if there is a way to bypass at least one section of repeated content. On pages with several interleaved repeated and non-repeated content, this is not sufficient to satisfy [Success Criterion 2.4.1 Bypass blocks][sc241]. Checking for more sections to bypass was considered but rejected due to both the added complexity it would create, and the risk of failing on pages that might be correct.
 
-### Bibliography
+### Other Resources
 
 - [Understanding Success Criterion 2.4.1: Bypass Blocks][usc241]
 - Creating links to skip blocks of content:
@@ -162,7 +162,7 @@ Outcomes of the following rules are required as input for this rule.
 - [Block of repeated content is collapsible](/standards-guidelines/act/rules/block-collapsible-3e12e1/)
 - [Document has an instrument to move focus to non-repeated content](/standards-guidelines/act/rules/document-has-instrument-to-non-repeated-content-ye5d6e/)
 
-## Test Cases
+## Examples
 
 <details class="act-inline-assets" markdown="block">
 <summary><span>These HTML and Javascript files are used in several examples:</span></summary>

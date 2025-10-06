@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> ee13b5</p>
-  <p><strong>Date:</strong> Updated 8 July 2025</p>
+  <p><strong>Date:</strong> Updated 6 October 2025</p>
   <p><strong>Authors:</strong> <a href="https://www.linkedin.com/in/brianbors/">Brian Bors</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
   
@@ -22,7 +22,7 @@ rule_meta:
   original_file: video-only-transcript-ee13b5.md
   description: |
     Non-streaming `video` elements without audio must have all visual information available in a transcript.
-  last_modified: 8 July 2025
+  last_modified: 6 October 2025
 ---
 
 ## Applicability
@@ -45,7 +45,7 @@ A mechanism is available to start the video and that the video element is not si
 
 There are no accessibility support issues known.
 
-### Bibliography
+### Other Resources
 
 - [Understanding Success Criterion 1.2.1: Audio-only and Video-only (Prerecorded)](https://www.w3.org/WAI/WCAG22/Understanding/audio-only-and-video-only-prerecorded)
 - [G159: Providing an alternative for time-based media for video-only content](https://www.w3.org/WAI/WCAG22/Techniques/general/G159)
@@ -77,7 +77,7 @@ The following aspects are required in using this rule.
 - Visual output (no link available)
 - [Language](https://www.w3.org/TR/act-rules-aspects/#input-aspects-text)
 
-## Test Cases
+## Examples
 
 <details class="act-inline-assets" markdown="block">
 <summary><span>These HTML files are used in several examples:</span></summary>

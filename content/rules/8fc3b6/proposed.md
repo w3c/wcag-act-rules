@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 8fc3b6</p>
-  <p><strong>Date:</strong> Updated 8 July 2025</p>
+  <p><strong>Date:</strong> Updated 6 October 2025</p>
   <p><strong>Authors:</strong> <a href="https://github.com/AntonioEstriga">António Estriga</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
   
@@ -22,7 +22,7 @@ rule_meta:
   original_file: object-has-accessible-name-8fc3b6.md
   description: |
     This rule checks that each `object` element rendering non-text content has a non-empty accessible name.
-  last_modified: 8 July 2025
+  last_modified: 6 October 2025
   scs_tested:
     - handle: Non-text Content
       num: 1.1.1
@@ -57,7 +57,7 @@ Some screen readers announce `object` elements even if they do not have an acces
 
 The [MIME type][] of the resource embedded in the `data` attribute impacts how the [accessible name][] of the `object` is computed. For example, `object` embedding [image MIME type][] may use their `alt` attribute to compute their [accessible name][], but `object` embedding [audio or video MIME types][] may not. An `object` does not officially support the use of an `alt` so this may behave differently according to the browser used.
 
-### Bibliography
+### Other Resources
 
 - [Understanding Success Criterion 1.1.1: Non-text Content](https://www.w3.org/WAI/WCAG22/Understanding/non-text-content.html)
 
@@ -86,7 +86,7 @@ The following aspects are required in using this rule.
 - [CSS Styling](https://www.w3.org/TR/act-rules-aspects/#input-aspects-css)
 - [Accessibility Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-accessibility)
 
-## Test Cases
+## Examples
 
 <details class="act-inline-assets" markdown="block">
 <summary><span>This HTML file is used in several examples:</span></summary>

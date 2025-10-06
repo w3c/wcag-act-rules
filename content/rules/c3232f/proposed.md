@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> c3232f</p>
-  <p><strong>Date:</strong> Updated 8 July 2025</p>
+  <p><strong>Date:</strong> Updated 6 October 2025</p>
   <p><strong>Authors:</strong> <a href="https://www.linkedin.com/in/brianbors/">Brian Bors</a>, <a href="https://github.com/john-urbilog">John Hicks</a>, <a href="https://github.com/Rafalchar">Rafal Charlampowicz</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
   
@@ -22,7 +22,7 @@ rule_meta:
   original_file: video-only-alternative-for-visual-c3232f.md
   description: |
     This rule checks that `video` elements without audio have an alternative available.
-  last_modified: 8 July 2025
+  last_modified: 6 October 2025
   scs_tested:
     - handle: Audio-only and Video-only (Prerecorded)
       num: 1.2.1
@@ -52,7 +52,7 @@ For each test target, the [outcome](#outcome) of at least one of the following r
 
 The HTML `video` element can also have a `track` element that provides an audio description. This should provide assistive technologies with a timed text description of visual information in a video. However, there is no native support in any major browser for this technique. Technique [H96: Using the track element to provide audio descriptions](https://www.w3.org/WAI/WCAG22/Techniques/html/H96) can not be relied upon to conform to [1.2.1: Audio-only and Video-only (Prerecorded)](https://www.w3.org/TR/WCAG22/#audio-only-and-video-only-prerecorded).
 
-### Bibliography
+### Other Resources
 
 - [Understanding Success Criterion 1.2.1: Audio-only and Video-only (Prerecorded)](https://www.w3.org/WAI/WCAG22/Understanding/audio-only-and-video-only-prerecorded)
 - [G159: Providing an alternative for time-based media for video-only content](https://www.w3.org/WAI/WCAG22/Techniques/general/G159.html)
@@ -107,7 +107,7 @@ Outcomes of the following rules are required as input for this rule.
 - [Video element visual-only content has transcript](/standards-guidelines/act/rules/video-only-transcript-ee13b5/)
 - [Video element visual-only content has audio track alternative](/standards-guidelines/act/rules/video-only-audio-track-d7ba54/)
 
-## Test Cases
+## Examples
 
 <details class="act-inline-assets" markdown="block">
 <summary><span>This HTML file is used in several examples:</span></summary>

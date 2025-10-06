@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 5effbb</p>
-  <p><strong>Date:</strong> Updated 8 July 2025</p>
+  <p><strong>Date:</strong> Updated 6 October 2025</p>
   <p><strong>Authors:</strong> <a href="https://github.com/carlosapaduarte">Carlos Duarte</a>, <a href="https://github.com/marietrudelle">Marie Trudelle</a>, <a href="https://github.com/ramitgarg">Ramit Garg</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -20,7 +20,7 @@ rule_meta:
   original_file: link-in-context-descriptive-5effbb.md
   description: |
     This rule checks that the accessible name of a link together with its context describes its purpose.
-  last_modified: 8 July 2025
+  last_modified: 6 October 2025
   scs_tested:
     - handle: Link Purpose (In Context)
       num: 2.4.4
@@ -55,7 +55,7 @@ The [accessible name][] of each target element together with its [programmatical
 - [Link has non-empty accessible name](https://www.w3.org/WAI/standards-guidelines/act/rules/c487ae/)
 - [Link is descriptive](https://www.w3.org/WAI/standards-guidelines/act/rules/aizyf1/)
 
-### Bibliography
+### Other Resources
 
 - [Understanding Success Criterion 2.4.4: Link Purpose (In Context)](https://www.w3.org/WAI/WCAG22/Understanding/link-purpose-in-context.html)
 - [Understanding Success Criterion 2.4.9: Link Purpose (Link Only)](https://www.w3.org/WAI/WCAG22/Understanding/link-purpose-link-only.html)
@@ -106,7 +106,7 @@ The following aspects are required in using this rule.
 - [CSS Styling](https://www.w3.org/TR/act-rules-aspects/#input-aspects-css)
 - [Language](https://www.w3.org/TR/act-rules-aspects/#input-aspects-text)
 
-## Test Cases
+## Examples
 
 ### Passed
 

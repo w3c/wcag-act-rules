@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> fd3a94</p>
-  <p><strong>Date:</strong> Updated 8 July 2025</p>
+  <p><strong>Date:</strong> Updated 6 October 2025</p>
   <p><strong>Authors:</strong> <a href="https://github.com/carlosapaduarte">Carlos Duarte</a>, Giacomo Petri. Previous Authors: <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -20,7 +20,7 @@ rule_meta:
   original_file: links-with-identical-names-and-context-serve-equivalent-purpose-fd3a94.md
   description: |
     This rule checks that links with identical accessible names in the same context resolve to the same or equivalent resources.
-  last_modified: 8 July 2025
+  last_modified: 6 October 2025
   scs_tested:
     - handle: Link Purpose (In Context)
       num: 2.4.4
@@ -67,7 +67,7 @@ Pages with links that are not [ambiguous to users in general][], but are ambiguo
 
 There are no accessibility support issues known.
 
-### Bibliography
+### Other Resources
 
 - [Understanding Success Criterion 2.4.4: Link Purpose (In Context)](https://www.w3.org/WAI/WCAG22/Understanding/link-purpose-in-context.html)
 - [HTML Specification - URL parsing](https://html.spec.whatwg.org/#resolving-urls)
@@ -108,7 +108,7 @@ The following aspects are required in using this rule.
 - [CSS Styling](https://www.w3.org/TR/act-rules-aspects/#input-aspects-css)
 - [Language](https://www.w3.org/TR/act-rules-aspects/#input-aspects-text)
 
-## Test Cases
+## Examples
 
 <details class="act-inline-assets" markdown="block">
 <summary><span>These HTML files are used in several examples:</span></summary>

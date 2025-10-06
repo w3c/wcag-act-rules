@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 80af7b</p>
-  <p><strong>Date:</strong> Updated 21 August 2025</p>
+  <p><strong>Date:</strong> Updated 6 October 2025</p>
   <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/DagfinnRomen">Dagfinn Rømen</a>, <a href="https://github.com/geirsf">Geir Sindre Fossøy</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -20,7 +20,7 @@ rule_meta:
   original_file: focusable-no-keyboard-trap-80af7b.md
   description: |
     This rule checks for keyboard traps. This includes use of both standard and non-standard keyboard navigation to navigate through all content without becoming trapped.
-  last_modified: 21 August 2025
+  last_modified: 6 October 2025
   scs_tested:
     - handle: No Keyboard Trap
       num: 2.1.2
@@ -50,7 +50,7 @@ There are no assumptions.
 
 There are no accessibility support issues known.
 
-### Bibliography
+### Other Resources
 
 - [Understanding Success Criterion 2.1.2: No Keyboard Trap](https://www.w3.org/WAI/WCAG22/Understanding/no-keyboard-trap.html)
 - [G21: Ensuring that users are not trapped in content](https://www.w3.org/WAI/WCAG22/Techniques/general/G21)
@@ -104,7 +104,7 @@ Outcomes of the following rules are required as input for this rule.
 - [Focusable element has no keyboard trap via standard navigation](/standards-guidelines/act/rules/focusable-no-keyboard-trap-standard-nav-a1b64e/)
 - [Focusable element has no keyboard trap via non-standard navigation](/standards-guidelines/act/rules/focusable-no-keyboard-trap-non-standard-nav-ebe86a/)
 
-## Test Cases
+## Examples
 
 <details class="act-inline-assets" markdown="block">
 <summary><span>This Javascript file is used in several examples:</span></summary>
