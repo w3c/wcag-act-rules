@@ -2,16 +2,16 @@
   "vendor": "IBM Accessibility",
   "name": "Equal Access Accessibility Checker",
   "version": "3.1.42-rc.0",
-  "lastModified": "3 June 2025",
+  "lastModified": "6 October 2025",
   "approvedRules": {
     "complete": 19,
-    "partial": 4,
-    "inconsistent": 6,
+    "partial": 3,
+    "inconsistent": 7,
     "untested": 5
   },
   "proposedRules": {
-    "complete": 5,
-    "partial": 0,
+    "complete": 4,
+    "partial": 1,
     "inconsistent": 2,
     "untested": 46
   },
@@ -7026,19 +7026,17 @@
       "procedureNames": [
         "element_scrollable_tabbable:pass_tabbable,pass_interactive,fail_scrollable"
       ],
-      "consistency": "partial",
+      "consistency": null,
       "accessibilityRequirements": {
         "correct": false,
         "expected": [
           "WCAG2:keyboard",
           "WCAG2:keyboard-no-exception"
         ],
-        "reported": [
-          "WCAG2:keyboard"
-        ]
+        "reported": []
       },
       "coverage": {
-        "covered": 10,
+        "covered": 8,
         "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 10
@@ -7084,7 +7082,7 @@
             {
               "procedureName": "element_scrollable_tabbable:pass_tabbable,pass_interactive,fail_scrollable",
               "outcomes": [
-                "failed"
+                "inapplicable"
               ]
             }
           ]
@@ -7099,7 +7097,7 @@
             {
               "procedureName": "element_scrollable_tabbable:pass_tabbable,pass_interactive,fail_scrollable",
               "outcomes": [
-                "failed"
+                "inapplicable"
               ]
             }
           ]
@@ -8330,8 +8328,8 @@
         "reported": []
       },
       "coverage": {
-        "covered": 10,
-        "untested": 0,
+        "covered": 9,
+        "untested": 1,
         "cantTell": 0,
         "testCaseTotal": 17
       },
@@ -8376,7 +8374,7 @@
             {
               "procedureName": "aria_child_valid:Pass,Fail_no_child,Fail_invalid_child",
               "outcomes": [
-                "inapplicable"
+                "untested"
               ]
             }
           ]
@@ -8600,15 +8598,15 @@
       "procedureNames": [
         "aria_attribute_valid:Pass,Fail_invalid_role_attr,Fail_invalid_implicit_role_attr"
       ],
-      "consistency": "complete",
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
         "reported": []
       },
       "coverage": {
-        "covered": 19,
-        "untested": 0,
+        "covered": 16,
+        "untested": 3,
         "cantTell": 0,
         "testCaseTotal": 19
       },
@@ -8713,7 +8711,7 @@
             {
               "procedureName": "aria_attribute_valid:Pass,Fail_invalid_role_attr,Fail_invalid_implicit_role_attr",
               "outcomes": [
-                "inapplicable"
+                "untested"
               ]
             }
           ]
@@ -8728,7 +8726,7 @@
             {
               "procedureName": "aria_attribute_valid:Pass,Fail_invalid_role_attr,Fail_invalid_implicit_role_attr",
               "outcomes": [
-                "inapplicable"
+                "untested"
               ]
             }
           ]
@@ -8788,7 +8786,7 @@
             {
               "procedureName": "aria_attribute_valid:Pass,Fail_invalid_role_attr,Fail_invalid_implicit_role_attr",
               "outcomes": [
-                "inapplicable"
+                "untested"
               ]
             }
           ]

@@ -2,16 +2,16 @@
   "vendor": "PowerMapper",
   "name": "SortSite",
   "version": 6.55,
-  "lastModified": "28 March 2025",
+  "lastModified": "6 October 2025",
   "approvedRules": {
     "complete": 30,
-    "partial": 0,
-    "inconsistent": 1,
+    "partial": 1,
+    "inconsistent": 0,
     "untested": 3
   },
   "proposedRules": {
-    "complete": 8,
-    "partial": 5,
+    "complete": 13,
+    "partial": 0,
     "inconsistent": 0,
     "untested": 40
   },
@@ -196,7 +196,7 @@
             {
               "procedureName": "W3cHtml5Error-RnvErAval-role",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -675,7 +675,7 @@
             {
               "procedureName": "W3cHtml5Error-RnvErAkey-aria-*",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -1146,17 +1146,20 @@
       "procedureNames": [
         "AccHtmlIframeTabindexInteractive"
       ],
-      "consistency": null,
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": false,
         "expected": [
           "WCAG2:keyboard"
         ],
-        "reported": []
+        "reported": [
+          "WCAG2:keyboard",
+          "WCAG2:keyboard-no-exception"
+        ]
       },
       "coverage": {
-        "covered": 8,
-        "untested": 1,
+        "covered": 9,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 9
       },
@@ -1201,7 +1204,7 @@
             {
               "procedureName": "AccHtmlIframeTabindexInteractive",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -5477,7 +5480,7 @@
             {
               "procedureName": "AccWcag2-F90-1",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -5492,7 +5495,7 @@
             {
               "procedureName": "AccWcag2-F90-1",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -8705,15 +8708,15 @@
       "procedureNames": [
         "W3cHtml5AriaControls"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
         "reported": []
       },
       "coverage": {
-        "covered": 8,
-        "untested": 1,
+        "covered": 9,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 9
       },
@@ -8743,7 +8746,7 @@
             {
               "procedureName": "W3cHtml5AriaControls",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -8862,7 +8865,7 @@
       "procedureNames": [
         "W3cHtml5AriaRequiredChildRole-*"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -8873,8 +8876,8 @@
         ]
       },
       "coverage": {
-        "covered": 15,
-        "untested": 2,
+        "covered": 17,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 17
       },
@@ -8904,7 +8907,7 @@
             {
               "procedureName": "W3cHtml5AriaRequiredChildRole-*",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -9114,7 +9117,7 @@
             {
               "procedureName": "W3cHtml5AriaRequiredChildRole-*",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -9143,15 +9146,15 @@
       "procedureNames": [
         "W3cHtml5Error-RnvErAkey-aria-*"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
         "reported": []
       },
       "coverage": {
-        "covered": 15,
-        "untested": 4,
+        "covered": 19,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 19
       },
@@ -9241,7 +9244,7 @@
             {
               "procedureName": "W3cHtml5Error-RnvErAkey-aria-*",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -9256,7 +9259,7 @@
             {
               "procedureName": "W3cHtml5Error-RnvErAkey-aria-*",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -9271,7 +9274,7 @@
             {
               "procedureName": "W3cHtml5Error-RnvErAkey-aria-*",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -9421,7 +9424,7 @@
             {
               "procedureName": "W3cHtml5Error-RnvErAkey-aria-*",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -10788,15 +10791,15 @@
       "procedureNames": [
         "W3cHtml5Error-RnvErAmis-*"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
         "reported": []
       },
       "coverage": {
-        "covered": 12,
-        "untested": 2,
+        "covered": 14,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 14
       },
@@ -10886,7 +10889,7 @@
             {
               "procedureName": "W3cHtml5Error-RnvErAmis-*",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -10991,7 +10994,7 @@
             {
               "procedureName": "W3cHtml5Error-RnvErAmis-*",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -11226,7 +11229,7 @@
       "procedureNames": [
         "AccHtmlTableMissingCells"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -11237,8 +11240,8 @@
         ]
       },
       "coverage": {
-        "covered": 14,
-        "untested": 2,
+        "covered": 16,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 16
       },
@@ -11268,7 +11271,7 @@
             {
               "procedureName": "AccHtmlTableMissingCells",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -11298,7 +11301,7 @@
             {
               "procedureName": "AccHtmlTableMissingCells",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]

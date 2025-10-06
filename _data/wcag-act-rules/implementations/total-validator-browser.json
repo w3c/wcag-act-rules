@@ -2,7 +2,7 @@
   "vendor": "Total Validator",
   "name": "Total Validator (+Browser)",
   "version": "17.4.0",
-  "lastModified": "4 May 2025",
+  "lastModified": "6 October 2025",
   "approvedRules": {
     "complete": 31,
     "partial": 0,
@@ -10,8 +10,8 @@
     "untested": 3
   },
   "proposedRules": {
-    "complete": 13,
-    "partial": 5,
+    "complete": 11,
+    "partial": 7,
     "inconsistent": 0,
     "untested": 35
   },
@@ -11092,7 +11092,7 @@
         "E963",
         "P963"
       ],
-      "consistency": "complete",
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -11103,8 +11103,8 @@
         ]
       },
       "coverage": {
-        "covered": 17,
-        "untested": 0,
+        "covered": 16,
+        "untested": 1,
         "cantTell": 0,
         "testCaseTotal": 17
       },
@@ -11161,13 +11161,13 @@
             {
               "procedureName": "E963",
               "outcomes": [
-                "passed"
+                "untested"
               ]
             },
             {
               "procedureName": "P963",
               "outcomes": [
-                "passed"
+                "untested"
               ]
             }
           ]
@@ -11475,7 +11475,7 @@
       "procedureNames": [
         "E958"
       ],
-      "consistency": "complete",
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
@@ -11485,8 +11485,8 @@
         ]
       },
       "coverage": {
-        "covered": 19,
-        "untested": 0,
+        "covered": 16,
+        "untested": 3,
         "cantTell": 0,
         "testCaseTotal": 19
       },
@@ -11591,7 +11591,7 @@
             {
               "procedureName": "E958",
               "outcomes": [
-                "passed"
+                "untested"
               ]
             }
           ]
@@ -11606,7 +11606,7 @@
             {
               "procedureName": "E958",
               "outcomes": [
-                "passed"
+                "untested"
               ]
             }
           ]
@@ -11666,7 +11666,7 @@
             {
               "procedureName": "E958",
               "outcomes": [
-                "passed"
+                "untested"
               ]
             }
           ]
