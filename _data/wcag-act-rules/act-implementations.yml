@@ -174,8 +174,18 @@
   vendor: UsableNet
   homepage: https://usablenet.com
   vendorHomepage: https://usablenet.com
-  uniqueKey: usablenet-aqa
+  uniqueKey: usablenet-aqa-auto
   type: Automated tool
   standards:
     - WCAG 2.2 Level A, AA
   jsonReport: https://help.usablenet.com/aqa-act-r/reports/UsableNet-AQA-WCAG2.2AA-auto.json
+
+- name: UsableNet AQA - WCAG 2.2 AA Semi-auto
+  vendor: UsableNet
+  homepage: https://usablenet.com
+  vendorHomepage: https://usablenet.com
+  uniqueKey: usablenet-aqa-semi-auto
+  type: Semi-automated tool
+  standards:
+    - WCAG 2.2 Level A, AA
+  jsonReport: http://help.usablenet.com/aqa-act-r/reports/UsableNet-AQA-WCAG2.2-semi-auto.json
