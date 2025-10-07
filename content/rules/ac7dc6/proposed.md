@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> ac7dc6</p>
-  <p><strong>Date:</strong> Updated 6 October 2025</p>
+  <p><strong>Date:</strong> Updated 7 October 2025</p>
   <p><strong>Authors:</strong> <a href="https://www.linkedin.com/in/brianbors/">Brian Bors</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
   
@@ -25,7 +25,7 @@ rule_meta:
   original_file: video-only-description-track-ac7dc6.md
   description: |
     This rule checks that description tracks that come with non-streaming `video` elements, without audio, are descriptive.
-  last_modified: 6 October 2025
+  last_modified: 7 October 2025
 ---
 
 ## Applicability
@@ -48,7 +48,7 @@ This rule assumes that a mechanism is available to start the video and that the 
 
 Currently the description track is not supported by most assistive technologies. Video players may be able to work around the lack of support for the description track by using aria-live but few do this today.
 
-### Other Resources
+### Bibliography
 
 - [Understanding Success Criterion 1.2.1: Audio-only and Video-only (Prerecorded)](https://www.w3.org/WAI/WCAG22/Understanding/audio-only-and-video-only-prerecorded)
 - [H96: Using the track element to provide audio descriptions](https://www.w3.org/WAI/WCAG22/Techniques/html/H96)

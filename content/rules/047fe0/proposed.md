@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 047fe0</p>
-  <p><strong>Date:</strong> Updated 6 October 2025</p>
+  <p><strong>Date:</strong> Updated 7 October 2025</p>
   <p><strong>Authors:</strong> <a href="https://github.com/Jym77">Jean-Yves Moyen</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
   
@@ -22,7 +22,7 @@ rule_meta:
   original_file: document-has-headings-for-non-repeated-content-047fe0.md
   description: |
     This rule checks that the non-repeated content contains a heading
-  last_modified: 6 October 2025
+  last_modified: 7 October 2025
 ---
 
 ## Applicability
@@ -54,7 +54,7 @@ Neither this rule, nor technique [H69: Providing heading elements at the beginni
 - Having a heading for the non-repeated content is sufficient to pass [Success Criterion 2.4.1 Bypass blocks][sc241]. However, if headings are used for that goal, they will only benefit users who can actually navigate from heading to heading (such a functionality can be provided by browsers, browsers plugins, screen readers or other assistive technologies). Users without any possibility for headings navigation will be left without way of bypassing blocks of repeated content and will still experience accessibility issues. Therefore, it is recommended to provide other ways of bypassing blocks.
 - When headings are rendered without sufficient visual cues, they are not perceived as headings by sighted users. In this case, passing this rule might still fail [Technique H69: Providing heading elements at the beginning of each section of content][h69] and [Success Criterion 2.4.1 Bypass blocks][sc241]. Additionally, this is likely a failure of [Success Criterion 1.3.1 Info and Relationships][sc131].
 
-### Other Resources
+### Bibliography
 
 - [Understanding Success Criterion 2.4.1: Bypass Blocks][usc241]
 - [H69: Providing heading elements at the beginning of each section of content][h69]
