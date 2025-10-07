@@ -47,7 +47,7 @@ This rule relies on browsers and assistive technologies to support leaving out [
 
 **Note:** The required states and properties with implicit values can be found in the Core Accessibility API Mappings 1.1 [Overview of default values for missing required attributes](https://www.w3.org/TR/core-aam-1.1/#authorErrorDefaultValuesTable).
 
-### Bibliography
+### Other Resources
 
 - [ARIA5: Using WAI-ARIA state and property attributes to expose the state of a user interface component](https://www.w3.org/WAI/WCAG22/Techniques/aria/ARIA5)
 - [WAI-ARIA required states and properties](https://www.w3.org/TR/wai-aria-1.2/#requiredState)
@@ -165,13 +165,13 @@ This `separator` is not a `widget` because it is not [focusable][]. The `separat
 
 #### Passed Example 6
 
-<a class="example-link" title="Passed Example 6" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/986038d85467255cef4ed7d72c231442427ece23.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 6" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/8122ef64b86fcd30dadeea664029af028382d1b4.html">Open in a new tab</a>
 
 This `combobox` has the required properties `aria-controls` and `aria-expanded`.
 
 ```html
 <label for="tag_combo" id="tag_label">Tag</label>
-<input type="text" id="tag_combo" role="combobox" aria-expanded="true" aria-controls="popup_listbox"/>
+<input type="text" id="tag_combo" role="combobox" aria-expanded="true" aria-controls="popup_listbox" />
 <ul role="listbox" id="popup_listbox" aria-labelledby="tag_label">
 	<li role="option">Zebra</li>
 	<li role="option" id="selected_option">Zoom</li>
@@ -256,12 +256,12 @@ This `div` does not have a [semantic role](#semantic-role).
 
 #### Inapplicable Example 2
 
-<a class="example-link" title="Inapplicable Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/c43c9679072e95ce85f8a7cb7581e991e73124c7.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/cde160492f9d0a309b4f8624e51d3380b318b046.html">Open in a new tab</a>
 
 This `checkbox` has an [implicit semantic role](#implicit-role) that is identical to the [explicit semantic role](#explicit-role). This allows native HTML `checked` attribute to apply.
 
 ```html
-<input type="checkbox" role="checkbox" aria-label="Checkbox name"/>
+<input type="checkbox" role="checkbox" aria-label="Checkbox name" />
 ```
 
 #### Inapplicable Example 3

@@ -39,8 +39,9 @@ This rule applies to any [HTML element][] that has [visible][] [children][] in t
 
 ## Expectation
 
-For each target element, at least one of the following is true: 
-- the element is included in [sequential focus navigation][]; or 
+For each target element, at least one of the following is true:
+
+- the element is included in [sequential focus navigation][]; or
 - the element has a [descendant][] in the [flat tree][] that is included in [sequential focus navigation][]; or
 - the element is [inert][].
 
@@ -60,7 +61,7 @@ Some browsers will automatically make any [scrollable element][scrollable] focus
 
 Some browsers restrict scrolling to the [content box](https://drafts.csswg.org/css-box-4/#content-box) of elements; while others allow to scroll the full [border box](https://drafts.csswg.org/css-box-4/#border-box), hence including the element's padding. This results in some elements being scrollable with a browser but not with another.
 
-### Bibliography
+### Other Resources
 
 - [Understanding Success Criterion 2.1.1: Keyboard](https://www.w3.org/WAI/WCAG22/Understanding/keyboard.html)
 - [G202: Ensuring keyboard control for all functionality](https://www.w3.org/WAI/WCAG22/Techniques/general/G202)
@@ -165,14 +166,14 @@ This [scrollable][] `section` element contains a link that is included in [seque
 
 #### Passed Example 3
 
-<a class="example-link" title="Passed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/0ssw9k/c5f649f91ebe4979270972db7c42279a74efc6c5.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/0ssw9k/fa27b58829c18976ac66f3874f40c5be712fe64b.html">Open in a new tab</a>
 
 This [scrollable][] `section` element is [inert][] because of the modal dialog, so neither the `section` nor its [descendant][] elements are included in [sequential focus navigation][].
 
 ```html
 <style>
 	dialog:-internal-dialog-in-top-layer::backdrop {
-    		background: rgba(1, 1, 1, 0.8);
+		background: rgba(1, 1, 1, 0.8);
 	}
 </style>
 <section style="height: 100px; width: 500px; overflow: scroll;" tabindex="0">
@@ -197,11 +198,11 @@ This [scrollable][] `section` element is [inert][] because of the modal dialog, 
 </dialog>
 <script>
 	const openDialog = () => {
-		ppDialog.showModal();
+		ppDialog.showModal()
 		myFrame.tabIndex = '-1'
 	}
-	ppDialog.addEventListener('close', () => myFrame.tabIndex = 0)
-	window.addEventListener('DOMContentLoaded', openDialog);
+	ppDialog.addEventListener('close', () => (myFrame.tabIndex = 0))
+	window.addEventListener('DOMContentLoaded', openDialog)
 </script>
 ```
 

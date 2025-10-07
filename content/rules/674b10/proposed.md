@@ -50,7 +50,7 @@ There are no assumptions.
 
 There are no accessibility support issues known.
 
-### Bibliography
+### Other Resources
 
 - [List of WAI-ARIA Roles][wai-aria role]
 - [List of Graphics ARIA Roles](https://www.w3.org/TR/graphics-aria-1.0/#role_definitions)
@@ -220,12 +220,12 @@ This `role` attribute is empty ("").
 
 #### Inapplicable Example 4
 
-<a class="example-link" title="Inapplicable Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/351e4bd097e4e1217d64a6c32ae09987c8d4db4a.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/bd56be0bc987f29ac92355ed781fe06ae8e57176.html">Open in a new tab</a>
 
 This `role` attribute is only [ASCII whitespace][].
 
 ```html
-<input type="text" role=" " aria-label="field name"/>
+<input type="text" role=" " aria-label="field name" />
 ```
 
 #### Inapplicable Example 5
