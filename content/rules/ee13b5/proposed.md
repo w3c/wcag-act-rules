@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> ee13b5</p>
-  <p><strong>Date:</strong> Updated 7 October 2025</p>
+  <p><strong>Date:</strong> Updated 9 October 2025</p>
   <p><strong>Authors:</strong> <a href="https://www.linkedin.com/in/brianbors/">Brian Bors</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
   
@@ -22,7 +22,7 @@ rule_meta:
   original_file: video-only-transcript-ee13b5.md
   description: |
     Non-streaming `video` elements without audio must have all visual information available in a transcript.
-  last_modified: 7 October 2025
+  last_modified: 9 October 2025
 ---
 
 ## Applicability
@@ -31,7 +31,7 @@ This rule applies to any [non-streaming](#non-streaming-media-element) `video` e
 
 ## Expectation
 
-The visual information of each test target is available through a text transcript that is [visible][], [included in the accessibility tree][], and is either on the page or linked.
+The visual information of each test target is available through a text transcript that is [included in the accessibility tree][], and is either on the page or linked.
 
 ## Background
 
@@ -39,7 +39,8 @@ A "text transcript" in the context of this rule is defined in WCAG 2 as an [alte
 
 ### Assumptions
 
-A mechanism is available to start the video and that the video element is not simply used to display the [poster](https://www.w3.org/TR/html5/semantics-embedded-content.html#element-attrdef-video-poster).
+- A mechanism is available to start the video and that the video element is not simply used to display the [poster](https://www.w3.org/TR/html5/semantics-embedded-content.html#element-attrdef-video-poster).
+- Users who are not visually impaired can comprehend the contents of the video through visual cues and information presented visually.
 
 ### Accessibility Support
 
@@ -66,6 +67,17 @@ There are no accessibility support issues known.
     </ul>
   </details></li>
 </ul>
+
+### Secondary Requirements
+
+This rule is related to the following accessibility requirements, but was 
+not designed to test this requirements directly. These 
+[secondary requirements](https://w3c.github.io/wcag-act/act-rules-format.html#secondary-requirements)
+can either be stricter than the rule requires, or may be satisfied in ways 
+not tested by the rule:
+
+- [1.3.1 Info and Relationships (Level A)](https://www.w3.org/TR/WCAG22/#info-and-relationships): This success criterion is **related** to this rule. This is because this criterion applies to a visible transcript.
+- [1.2.1 Audio-only and Video-only (Prerecorded) (Level A)](https://www.w3.org/TR/WCAG22/#audio-only-and-video-only-prerecorded): This success criterion is **less strict** than this rule. This is because this criterion does not require a transcript when the audio-only or video-only is a media alternative for text and is clearly labeled as such. Some of the failed examples may satisfy this success criterion.
 
 ## Input Aspects
 
@@ -128,7 +140,7 @@ File [`/test-assets/rabbit-video/incorrect-transcript.html`](https://w3.org/WAI/
 
 <a class="example-link" title="Passed Example 1" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ee13b5/ce350e33e78f587703aa35b78fa319b9efe9291d.html">Open in a new tab</a>
 
-This `video` element, which has no audio, has a text transcript available on the same page.
+This `video` element, which has no audio, has a visible text transcript available on the same page.
 
 ```html
 <html lang="en">
@@ -155,6 +167,24 @@ This `video` element, which has no audio, has a transcript which conveys informa
   <source src="/test-assets/rabbit-video/silent.webm" type="video/webm"></source>
 </video>
 <a href="/test-assets/rabbit-video/transcript.html">Transcript</a>
+</html>
+```
+
+#### Passed Example 3
+
+<a class="example-link" title="Passed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ee13b5/ac32b9e640afcba4c833f893eeff61de9ca9b4a5.html">Open in a new tab</a>
+
+This `video` element, which has no audio, has a non-visible text transcript available on the same page.
+
+```html
+<html lang="en">
+<video controls>
+  <source src="/test-assets/rabbit-video/silent.mp4" type="video/mp4"></source>
+  <source src="/test-assets/rabbit-video/silent.webm" type="video/webm"></source>
+</video>
+<p style="position:absolute; left:-9999px; top:auto; width:1px; height:1px; overflow:hidden;">This video shows a giant fat rabbit climbing out of a hole in the ground.
+He stretches, yawns, and then starts walking.
+Then he stops to scratch his bottom.</p>
 </html>
 ```
 
@@ -196,7 +226,7 @@ This `video` element, which has no audio, has an incorrect text transcript avail
 
 #### Failed Example 3
 
-<a class="example-link" title="Failed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ee13b5/2c65fa349cb946546f44966db62c0664cf94fffd.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ee13b5/e6ef6ab47c239fc0abcd3ccb7ac8ddbfa6aa6d53.html">Open in a new tab</a>
 
 This `video` element, which has no audio, has a text transcript available on the same page, but the transcript is not [visible][].
 
@@ -206,7 +236,7 @@ This `video` element, which has no audio, has a text transcript available on the
   <source src="/test-assets/rabbit-video/silent.mp4" type="video/mp4"></source>
   <source src="/test-assets/rabbit-video/silent.webm" type="video/webm"></source>
 </video>
-<p style="text-indent: -9999px;">The above video shows a giant fat rabbit climbing out of a hole in the ground.
+<p style="text-indent: -9999px;">This video shows a giant fat rabbit climbing out of a hole in the ground.
 He stretches, yawns, and then starts walking.
 Then he stops to scratch his bottom.</p>
 </html>
@@ -214,7 +244,7 @@ Then he stops to scratch his bottom.</p>
 
 #### Failed Example 4
 
-<a class="example-link" title="Failed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ee13b5/2f30ed0681d28bdd6f5535c844b7747880beb5e7.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ee13b5/75a78f5206ea6052ad6a133920c50d7ac7cd05d4.html">Open in a new tab</a>
 
 This `video` element, which has no audio, has a text transcript available on the same page, but the transcript is not [included in the accessibility tree][].
 
@@ -224,7 +254,7 @@ This `video` element, which has no audio, has a text transcript available on the
   <source src="/test-assets/rabbit-video/silent.mp4" type="video/mp4"></source>
   <source src="/test-assets/rabbit-video/silent.webm" type="video/webm"></source>
 </video>
-<p aria-hidden="true">The above video shows a giant fat rabbit climbing out of a hole in the ground.
+<p aria-hidden="true">This video shows a giant fat rabbit climbing out of a hole in the ground.
 He stretches, yawns, and then starts walking.
 Then he stops to scratch his bottom.</p>
 </html>
