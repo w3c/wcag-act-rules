@@ -188,9 +188,9 @@
           ]
         },
         {
-          "testcaseId": "bd56be0bc987f29ac92355ed781fe06ae8e57176",
+          "testcaseId": "351e4bd097e4e1217d64a6c32ae09987c8d4db4a",
           "testCaseName": "Inapplicable Example 4",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/bd56be0bc987f29ac92355ed781fe06ae8e57176.html",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/674b10/351e4bd097e4e1217d64a6c32ae09987c8d4db4a.html",
           "testCaseApproved": false,
           "expected": "inapplicable",
           "procedureResults": [
@@ -7108,16 +7108,16 @@
           ]
         },
         {
-          "testcaseId": "fa27b58829c18976ac66f3874f40c5be712fe64b",
+          "testcaseId": "c5f649f91ebe4979270972db7c42279a74efc6c5",
           "testCaseName": "Passed Example 3",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/0ssw9k/fa27b58829c18976ac66f3874f40c5be712fe64b.html",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/0ssw9k/c5f649f91ebe4979270972db7c42279a74efc6c5.html",
           "testCaseApproved": false,
           "expected": "passed",
           "procedureResults": [
             {
               "procedureName": "0ssw9k-test",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -8736,36 +8736,6 @@
               "procedureName": "4e8ab6-test",
               "outcomes": [
                 "inapplicable"
-              ]
-            }
-          ]
-        },
-        {
-          "testcaseId": "8122ef64b86fcd30dadeea664029af028382d1b4",
-          "testCaseName": "Passed Example 6",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/8122ef64b86fcd30dadeea664029af028382d1b4.html",
-          "testCaseApproved": false,
-          "expected": "passed",
-          "procedureResults": [
-            {
-              "procedureName": "4e8ab6-test",
-              "outcomes": [
-                "untested"
-              ]
-            }
-          ]
-        },
-        {
-          "testcaseId": "cde160492f9d0a309b4f8624e51d3380b318b046",
-          "testCaseName": "Inapplicable Example 2",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/cde160492f9d0a309b4f8624e51d3380b318b046.html",
-          "testCaseApproved": false,
-          "expected": "inapplicable",
-          "procedureResults": [
-            {
-              "procedureName": "4e8ab6-test",
-              "outcomes": [
-                "untested"
               ]
             }
           ]
