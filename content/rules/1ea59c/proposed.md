@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 1ea59c</p>
-  <p><strong>Date:</strong> Updated 8 July 2025</p>
+  <p><strong>Date:</strong> Updated 7 October 2025</p>
   <p><strong>Authors:</strong> <a href="https://www.linkedin.com/in/brianbors/">Brian Bors</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
   
@@ -22,7 +22,7 @@ rule_meta:
   original_file: video-audio-description-1ea59c.md
   description: |
     This rule checks that non-streaming `video` elements have all visual information also contained in the audio.
-  last_modified: 8 July 2025
+  last_modified: 7 October 2025
 ---
 
 ## Applicability
@@ -43,7 +43,7 @@ This rule assumes that a mechanism is available to start the video and that the 
 
 There are only a few implementations of video players (without third party technologies) that support audio description tracks at the time of writing.
 
-### Bibliography
+### Other Resources
 
 - [Understanding Success Criterion 1.2.3: Audio Description or Media Alternative (Prerecorded)](https://www.w3.org/WAI/WCAG22/Understanding/audio-description-or-media-alternative-prerecorded)
 - [G78: Providing a second, user-selectable, audio track that includes audio descriptions](https://www.w3.org/WAI/WCAG22/Techniques/general/G78)
@@ -101,7 +101,7 @@ The following aspects are required in using this rule.
 - Visual output (no link available)
 - [Language](https://www.w3.org/TR/act-rules-aspects/#input-aspects-text)
 
-## Test Cases
+## Examples
 
 ### Passed
 

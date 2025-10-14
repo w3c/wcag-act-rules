@@ -3,7 +3,7 @@
   "website": "https://www.w3.org/WAI/standards-guidelines/act/rules/",
   "license": "https://act-rules.github.io/pages/license/",
   "description": "Accessibility conformance testing rules for HTML",
-  "count": 1184,
+  "count": 1189,
   "testcases": [
     {
       "ruleId": "674b10",
@@ -27260,6 +27260,12 @@
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
+        },
+        "wcag20:1.3.1": {
+          "secondary": "This success criterion is **related** to this rule. This is because this criterion applies to a visible transcript."
+        },
+        "wcag20:1.2.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion does not require a transcript when the audio-only or video-only is a media alternative for text and is clearly labeled as such. Some of the failed examples may satisfy this success criterion."
         }
       },
       "expected": "passed",
@@ -27278,6 +27284,12 @@
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
+        },
+        "wcag20:1.3.1": {
+          "secondary": "This success criterion is **related** to this rule. This is because this criterion applies to a visible transcript."
+        },
+        "wcag20:1.2.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion does not require a transcript when the audio-only or video-only is a media alternative for text and is clearly labeled as such. Some of the failed examples may satisfy this success criterion."
         }
       },
       "expected": "passed",
@@ -27296,6 +27308,36 @@
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
+        },
+        "wcag20:1.3.1": {
+          "secondary": "This success criterion is **related** to this rule. This is because this criterion applies to a visible transcript."
+        },
+        "wcag20:1.2.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion does not require a transcript when the audio-only or video-only is a media alternative for text and is clearly labeled as such. Some of the failed examples may satisfy this success criterion."
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "ac32b9e640afcba4c833f893eeff61de9ca9b4a5",
+      "testcaseTitle": "Passed Example 3",
+      "relativePath": "testcases/ee13b5/ac32b9e640afcba4c833f893eeff61de9ca9b4a5.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ee13b5/ac32b9e640afcba4c833f893eeff61de9ca9b4a5.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/ee13b5/proposed/"
+    },
+    {
+      "ruleId": "ee13b5",
+      "ruleName": "Video element visual-only content has transcript",
+      "ruleAccessibilityRequirements": {
+        "wcag-technique:G159": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:1.3.1": {
+          "secondary": "This success criterion is **related** to this rule. This is because this criterion applies to a visible transcript."
+        },
+        "wcag20:1.2.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion does not require a transcript when the audio-only or video-only is a media alternative for text and is clearly labeled as such. Some of the failed examples may satisfy this success criterion."
         }
       },
       "expected": "failed",
@@ -27314,6 +27356,12 @@
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
+        },
+        "wcag20:1.3.1": {
+          "secondary": "This success criterion is **related** to this rule. This is because this criterion applies to a visible transcript."
+        },
+        "wcag20:1.2.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion does not require a transcript when the audio-only or video-only is a media alternative for text and is clearly labeled as such. Some of the failed examples may satisfy this success criterion."
         }
       },
       "expected": "failed",
@@ -27332,13 +27380,19 @@
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
+        },
+        "wcag20:1.3.1": {
+          "secondary": "This success criterion is **related** to this rule. This is because this criterion applies to a visible transcript."
+        },
+        "wcag20:1.2.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion does not require a transcript when the audio-only or video-only is a media alternative for text and is clearly labeled as such. Some of the failed examples may satisfy this success criterion."
         }
       },
       "expected": "failed",
-      "testcaseId": "2c65fa349cb946546f44966db62c0664cf94fffd",
+      "testcaseId": "e6ef6ab47c239fc0abcd3ccb7ac8ddbfa6aa6d53",
       "testcaseTitle": "Failed Example 3",
-      "relativePath": "testcases/ee13b5/2c65fa349cb946546f44966db62c0664cf94fffd.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ee13b5/2c65fa349cb946546f44966db62c0664cf94fffd.html",
+      "relativePath": "testcases/ee13b5/e6ef6ab47c239fc0abcd3ccb7ac8ddbfa6aa6d53.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ee13b5/e6ef6ab47c239fc0abcd3ccb7ac8ddbfa6aa6d53.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/ee13b5/proposed/"
     },
     {
@@ -27350,13 +27404,19 @@
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
+        },
+        "wcag20:1.3.1": {
+          "secondary": "This success criterion is **related** to this rule. This is because this criterion applies to a visible transcript."
+        },
+        "wcag20:1.2.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion does not require a transcript when the audio-only or video-only is a media alternative for text and is clearly labeled as such. Some of the failed examples may satisfy this success criterion."
         }
       },
       "expected": "failed",
-      "testcaseId": "2f30ed0681d28bdd6f5535c844b7747880beb5e7",
+      "testcaseId": "75a78f5206ea6052ad6a133920c50d7ac7cd05d4",
       "testcaseTitle": "Failed Example 4",
-      "relativePath": "testcases/ee13b5/2f30ed0681d28bdd6f5535c844b7747880beb5e7.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ee13b5/2f30ed0681d28bdd6f5535c844b7747880beb5e7.html",
+      "relativePath": "testcases/ee13b5/75a78f5206ea6052ad6a133920c50d7ac7cd05d4.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ee13b5/75a78f5206ea6052ad6a133920c50d7ac7cd05d4.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/ee13b5/proposed/"
     },
     {
@@ -27368,6 +27428,12 @@
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
+        },
+        "wcag20:1.3.1": {
+          "secondary": "This success criterion is **related** to this rule. This is because this criterion applies to a visible transcript."
+        },
+        "wcag20:1.2.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion does not require a transcript when the audio-only or video-only is a media alternative for text and is clearly labeled as such. Some of the failed examples may satisfy this success criterion."
         }
       },
       "expected": "inapplicable",
@@ -27386,6 +27452,12 @@
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
+        },
+        "wcag20:1.3.1": {
+          "secondary": "This success criterion is **related** to this rule. This is because this criterion applies to a visible transcript."
+        },
+        "wcag20:1.2.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion does not require a transcript when the audio-only or video-only is a media alternative for text and is clearly labeled as such. Some of the failed examples may satisfy this success criterion."
         }
       },
       "expected": "inapplicable",
@@ -27662,6 +27734,12 @@
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
+        },
+        "wcag20:1.3.1": {
+          "secondary": "This success criterion is **related** to this rule. This is because this criterion applies to a visible transcript."
+        },
+        "wcag20:1.2.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion does not require a transcript when the audio-only or video-only is a media alternative for text and is clearly labeled as such. Some of the failed examples may satisfy this success criterion."
         }
       },
       "expected": "passed",
@@ -27686,6 +27764,12 @@
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
+        },
+        "wcag20:1.3.1": {
+          "secondary": "This success criterion is **related** to this rule. This is because this criterion applies to a visible transcript."
+        },
+        "wcag20:1.2.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion does not require a transcript when the audio-only or video-only is a media alternative for text and is clearly labeled as such. Some of the failed examples may satisfy this success criterion."
         }
       },
       "expected": "passed",
@@ -27710,6 +27794,72 @@
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
+        },
+        "wcag20:1.3.1": {
+          "secondary": "This success criterion is **related** to this rule. This is because this criterion applies to a visible transcript."
+        },
+        "wcag20:1.2.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion does not require a transcript when the audio-only or video-only is a media alternative for text and is clearly labeled as such. Some of the failed examples may satisfy this success criterion."
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "a96a4eb928454e8fbf06f6e7c6ef1269f30c77df",
+      "testcaseTitle": "Passed Example 3",
+      "relativePath": "testcases/1a02b0/a96a4eb928454e8fbf06f6e7c6ef1269f30c77df.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/1a02b0/a96a4eb928454e8fbf06f6e7c6ef1269f30c77df.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/1a02b0/proposed/"
+    },
+    {
+      "ruleId": "1a02b0",
+      "ruleName": "Audio and visuals of video element have transcript",
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.2.8": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:G69": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:1.3.1": {
+          "secondary": "This success criterion is **related** to this rule. This is because this criterion applies to a visible transcript."
+        },
+        "wcag20:1.2.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion does not require a transcript when the audio-only or video-only is a media alternative for text and is clearly labeled as such. Some of the failed examples may satisfy this success criterion."
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "a4db5d80848f49290a026e2ee5c0fa7416f14dc6",
+      "testcaseTitle": "Passed Example 4",
+      "relativePath": "testcases/1a02b0/a4db5d80848f49290a026e2ee5c0fa7416f14dc6.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/1a02b0/a4db5d80848f49290a026e2ee5c0fa7416f14dc6.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/1a02b0/proposed/"
+    },
+    {
+      "ruleId": "1a02b0",
+      "ruleName": "Audio and visuals of video element have transcript",
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.2.8": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:G69": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:1.3.1": {
+          "secondary": "This success criterion is **related** to this rule. This is because this criterion applies to a visible transcript."
+        },
+        "wcag20:1.2.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion does not require a transcript when the audio-only or video-only is a media alternative for text and is clearly labeled as such. Some of the failed examples may satisfy this success criterion."
         }
       },
       "expected": "failed",
@@ -27734,6 +27884,12 @@
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
+        },
+        "wcag20:1.3.1": {
+          "secondary": "This success criterion is **related** to this rule. This is because this criterion applies to a visible transcript."
+        },
+        "wcag20:1.2.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion does not require a transcript when the audio-only or video-only is a media alternative for text and is clearly labeled as such. Some of the failed examples may satisfy this success criterion."
         }
       },
       "expected": "failed",
@@ -27758,6 +27914,72 @@
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
+        },
+        "wcag20:1.3.1": {
+          "secondary": "This success criterion is **related** to this rule. This is because this criterion applies to a visible transcript."
+        },
+        "wcag20:1.2.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion does not require a transcript when the audio-only or video-only is a media alternative for text and is clearly labeled as such. Some of the failed examples may satisfy this success criterion."
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "58833c5284a944298827df756cc31d10cea1f58f",
+      "testcaseTitle": "Failed Example 3",
+      "relativePath": "testcases/1a02b0/58833c5284a944298827df756cc31d10cea1f58f.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/1a02b0/58833c5284a944298827df756cc31d10cea1f58f.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/1a02b0/proposed/"
+    },
+    {
+      "ruleId": "1a02b0",
+      "ruleName": "Audio and visuals of video element have transcript",
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.2.8": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:G69": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:1.3.1": {
+          "secondary": "This success criterion is **related** to this rule. This is because this criterion applies to a visible transcript."
+        },
+        "wcag20:1.2.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion does not require a transcript when the audio-only or video-only is a media alternative for text and is clearly labeled as such. Some of the failed examples may satisfy this success criterion."
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "9f640c8743b6ebee3942fc833f106984b5ee49bb",
+      "testcaseTitle": "Failed Example 4",
+      "relativePath": "testcases/1a02b0/9f640c8743b6ebee3942fc833f106984b5ee49bb.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/1a02b0/9f640c8743b6ebee3942fc833f106984b5ee49bb.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/1a02b0/proposed/"
+    },
+    {
+      "ruleId": "1a02b0",
+      "ruleName": "Audio and visuals of video element have transcript",
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.2.8": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:G69": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:1.3.1": {
+          "secondary": "This success criterion is **related** to this rule. This is because this criterion applies to a visible transcript."
+        },
+        "wcag20:1.2.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion does not require a transcript when the audio-only or video-only is a media alternative for text and is clearly labeled as such. Some of the failed examples may satisfy this success criterion."
         }
       },
       "expected": "inapplicable",
