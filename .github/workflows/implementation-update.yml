@@ -1,9 +1,9 @@
 name: Implementation update
 on:
   workflow_dispatch:
-  schedule:
-    # Run every 6 hours, starting UTC midnight
-    - cron:  '0 0,6,12,18 * * *'
+  push:
+    branches:
+      - main
 
 jobs:
   implementation-update:
