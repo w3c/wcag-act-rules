@@ -230,17 +230,17 @@ input[type="checkbox"]:focus + label {
 #filter-status > span {
   font-weight: bold; 
 }
-.back-to-top-link {
+.sneaky-skiplink {
   position: relative;
 }
-.back-to-top-link > a {
+.sneaky-skiplink > a {
   position: absolute;
   right: 0;
   display: inline-block;
   height: 0;
   overflow: hidden;
 }
-.back-to-top-link > a:focus {
+.sneaky-skiplink > a:focus {
   height: auto;
 }
 

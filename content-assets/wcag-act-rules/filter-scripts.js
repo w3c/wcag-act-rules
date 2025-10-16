@@ -209,27 +209,20 @@
     
     /**
      * Updates the visibility of guideline sections based on whether they have any visible criteria.
-     * Assumes each <h2 class="guideline-section"> is followed by its .sc-item elements.
-     * Hides the guideline if none of its .sc-item children are visible.
+     * Assumes each <section class="guideline-section"> contains its .sc-item elements.
+     * Hides the guideline section if none of its .sc-item children are visible.
      */
     function updateSectionVisibility() {
-      const guidelines = document.querySelectorAll('h2.guideline-section, h2[data-aria-section]');
+      const guidelines = document.querySelectorAll('section.guideline-section, h2[data-aria-section]');
       guidelines.forEach(function(guideline) {
         // Skip the special WAI-ARIA heading using data-aria-section
         if (guideline.hasAttribute('data-aria-section')) {
           toggleVisibility(guideline, true);
           return;
         }
-        // Get the next criteria until the next guideline
-        let nextElement = guideline.nextElementSibling;
-        let hasVisibleCriteria = false;
-        while (nextElement && !(nextElement.tagName === 'H2' && nextElement.classList.contains('guideline-section'))) {
-          if (nextElement.classList && nextElement.classList.contains('sc-item') && !nextElement.hasAttribute('hidden')) {
-            hasVisibleCriteria = true;
-            break;
-          }
-          nextElement = nextElement.nextElementSibling;
-        }
+        // Check for visible criteria within this section
+        const visibleCriteria = guideline.querySelectorAll('.sc-item:not([hidden])');
+        const hasVisibleCriteria = visibleCriteria.length > 0;
         toggleVisibility(guideline, hasVisibleCriteria);
       });
     }

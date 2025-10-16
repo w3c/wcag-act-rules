@@ -66,11 +66,15 @@ This page contains Accessibility Conformance Testing (ACT) Rules to test conform
 {% assign all_implemented_ids = all_implemented_ids | uniq %}
 
 
+<p class="sneaky-skiplink"><a href="#guidelines-start">Skip to guidelines</a></p>
+
 {% include filter-controls.html %}
 
+<div id="guidelines-start" tabindex="-1"></div>
 {% for principle in site.data.wcag-complete.principles %}
 {% for guideline in principle.guidelines %}
-<h2 class="guideline-section">Guideline {{ guideline.num }} - {{ guideline.handle }}</h2>
+<section class="guideline-section">
+<h2>Guideline {{ guideline.num }} - {{ guideline.handle }}</h2>
 
 {% for sc in guideline.successcriteria %}
 {% if sc.versions contains "2.2" %}
@@ -204,7 +208,8 @@ This page contains Accessibility Conformance Testing (ACT) Rules to test conform
 {% endif %}
 {% comment %}End Principles, guidelines, and criteria{% endcomment %}
     {% endfor %}
-<p class="back-to-top-link"><a href="#top">Back to top</a></p> 
+<p class="sneaky-skiplink"><a href="#top">Back to top</a></p>
+</section>
   {% endfor %}
 {% endfor %}
 
