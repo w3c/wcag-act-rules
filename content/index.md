@@ -311,6 +311,6 @@ The ACT Rules are **proposed** by the ACT Task Force and Community Group. Once a
 
 ## About implementations
 
-An ACT implementation is an tool or methodology for testing accessibility, that is consistent with ACT Rules. An implementation can be manual, semi-automatic, automatic, or a linter. Implementations are tested against examples of the rules, and shared by vendors with W3C. See the [implementations page](../implementations/) for details and a list of all implementations.
+Filter this page to show rules with specific types of implementations. ACT implementations demonstrate how tools or methodologies rely on ACT rules for testing accessibility. Implementation types can be manual, semi-automated, automated, or linter. For more details and a list of all implementations, see [implementations page](../implementations/).
 
 <script src="/content-assets/wcag-act-rules/filter-scripts.js"></script>
