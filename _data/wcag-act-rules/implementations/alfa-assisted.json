@@ -9196,7 +9196,7 @@
             {
               "procedureName": "sia-r116",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -9345,7 +9345,7 @@
       "procedureNames": [
         "sia-r42"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -9537,7 +9537,7 @@
             {
               "procedureName": "sia-r42",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]

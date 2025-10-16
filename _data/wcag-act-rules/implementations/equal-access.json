@@ -8913,7 +8913,7 @@
             {
               "procedureName": "aria_child_valid:Pass,Fail_no_child,Fail_invalid_child",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -9242,15 +9242,15 @@
       "procedureNames": [
         "aria_attribute_valid:Pass,Fail_invalid_role_attr,Fail_invalid_implicit_role_attr"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
         "reported": []
       },
       "coverage": {
-        "covered": 16,
-        "untested": 3,
+        "covered": 19,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 19
       },
@@ -9355,7 +9355,7 @@
             {
               "procedureName": "aria_attribute_valid:Pass,Fail_invalid_role_attr,Fail_invalid_implicit_role_attr",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -9370,7 +9370,7 @@
             {
               "procedureName": "aria_attribute_valid:Pass,Fail_invalid_role_attr,Fail_invalid_implicit_role_attr",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -9430,7 +9430,7 @@
             {
               "procedureName": "aria_attribute_valid:Pass,Fail_invalid_role_attr,Fail_invalid_implicit_role_attr",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]

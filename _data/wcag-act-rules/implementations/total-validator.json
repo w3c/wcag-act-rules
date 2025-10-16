@@ -8610,7 +8610,7 @@
       "procedureNames": [
         "E953"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -8697,7 +8697,7 @@
             {
               "procedureName": "E953",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -9158,7 +9158,7 @@
       "procedureNames": [
         "E9592"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
@@ -9274,7 +9274,7 @@
             {
               "procedureName": "E9592",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -9289,7 +9289,7 @@
             {
               "procedureName": "E9592",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -9373,7 +9373,7 @@
             {
               "procedureName": "P963",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
