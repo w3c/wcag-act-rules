@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 4e8ab6</p>
-  <p><strong>Date:</strong> Updated 15 May 2025</p>
+  <p><strong>Date:</strong> Updated 14 October 2025</p>
   <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, Tom Brunet. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -20,7 +20,7 @@ rule_meta:
   original_file: role-required-states-and-properties-4e8ab6.md
   description: |
     This rule checks that elements that have an explicit role also specify all required states and properties.
-  last_modified: 15 May 2025
+  last_modified: 14 October 2025
 ---
 
 ## Applicability
@@ -47,7 +47,7 @@ This rule relies on browsers and assistive technologies to support leaving out [
 
 **Note:** The required states and properties with implicit values can be found in the Core Accessibility API Mappings 1.1 [Overview of default values for missing required attributes](https://www.w3.org/TR/core-aam-1.1/#authorErrorDefaultValuesTable).
 
-### Bibliography
+### Other Resources
 
 - [ARIA5: Using WAI-ARIA state and property attributes to expose the state of a user interface component](https://www.w3.org/WAI/WCAG22/Techniques/aria/ARIA5)
 - [WAI-ARIA required states and properties](https://www.w3.org/TR/wai-aria-1.2/#requiredState)
@@ -99,7 +99,7 @@ The following aspects are required in using this rule.
 
 - [DOM Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom)
 
-## Test Cases
+## Examples
 
 ### Passed
 
@@ -282,7 +282,7 @@ The _explicit semantic role_ of an element is determined by its [role attribute]
 
 The [role attribute][] takes a list of tokens. The explicit semantic role is the first valid role in this list. The valid roles are all non-abstract roles from [WAI-ARIA Specifications][]. If the element has no [role attribute][], or if it has one with no valid role, then this element has no explicit semantic role.
 
-Other roles may be added as they become available. Not all roles will be supported in all assistive technologies. Testers are encouraged to adjust which roles are allowed according to the [accessibility support base line][]. For the purposes of executing test cases in all rules, it should be assumed that all roles are supported by assistive technologies so that none of the roles fail due to lack of accessibility support.
+Other roles may be added as they become available. Not all roles will be supported in all assistive technologies. Testers are encouraged to adjust which roles are allowed according to the [accessibility support base line][]. For the purposes of executing examples in all rules, it should be assumed that all roles are supported by assistive technologies so that none of the roles fail due to lack of accessibility support.
 
 ### Focusable {#focusable}
 
@@ -345,7 +345,7 @@ A conclusion that comes from evaluating an ACT Rule on a [test subject][] or one
 
 When there are no test targets the rule has one `inapplicable` outcome. If the tester is unable to determine whether there are test targets there will be one `cantTell` outcome. And when no evaluation has occurred the test target has one untested outcome. This means that each [test subject][] always has one or more outcomes.
 
-Outcomes used in ACT Rules can be expressed using the [outcome property][] of the [[EARL10-Schema]][].
+Outcomes used in ACT Rules can be expressed using the [outcome property][] of the [EARL10-Schema][earl10-schema].
 
 ### Programmatically Hidden {#programmatically-hidden}
 

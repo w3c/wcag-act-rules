@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 2t702h</p>
-  <p><strong>Date:</strong> Updated 8 May 2025</p>
+  <p><strong>Date:</strong> Updated 7 October 2025</p>
   <p><strong>Authors:</strong> <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -20,7 +20,7 @@ rule_meta:
   original_file: summary-non-empty-accessible-name-2t702h.md
   description: |
     This rule checks that each `summary` element has a non-empty accessible name.
-  last_modified: 8 May 2025
+  last_modified: 7 October 2025
   scs_tested:
     - handle: Name, Role, Value
       num: 4.1.2
@@ -55,7 +55,7 @@ The rule assumes that all `summary` elements are [user interface components as d
 
 There is a difference in how user agents expose the triangle indicating the control's expand state. As a result, some user agents include the triangle in the accessible name of the summary element.
 
-### Bibliography
+### Other Resources
 
 - [Understanding Success Criterion 4.1.2: Name, Role, Value](https://www.w3.org/WAI/WCAG22/Understanding/name-role-value)
 - [ARIA14: Using aria-label to provide an invisible label where a visible label cannot be used](https://www.w3.org/WAI/WCAG22/Techniques/aria/ARIA14)
@@ -87,7 +87,7 @@ The following aspects are required in using this rule.
 - [DOM Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom)
 - [CSS Styling](https://www.w3.org/TR/act-rules-aspects/#input-aspects-css)
 
-## Test Cases
+## Examples
 
 ### Passed
 
@@ -275,7 +275,7 @@ The _explicit semantic role_ of an element is determined by its [role attribute]
 
 The [role attribute][] takes a list of tokens. The explicit semantic role is the first valid role in this list. The valid roles are all non-abstract roles from [WAI-ARIA Specifications][]. If the element has no [role attribute][], or if it has one with no valid role, then this element has no explicit semantic role.
 
-Other roles may be added as they become available. Not all roles will be supported in all assistive technologies. Testers are encouraged to adjust which roles are allowed according to the [accessibility support base line][]. For the purposes of executing test cases in all rules, it should be assumed that all roles are supported by assistive technologies so that none of the roles fail due to lack of accessibility support.
+Other roles may be added as they become available. Not all roles will be supported in all assistive technologies. Testers are encouraged to adjust which roles are allowed according to the [accessibility support base line][]. For the purposes of executing examples in all rules, it should be assumed that all roles are supported by assistive technologies so that none of the roles fail due to lack of accessibility support.
 
 ### Focusable {#focusable}
 
@@ -315,7 +315,7 @@ A conclusion that comes from evaluating an ACT Rule on a [test subject][] or one
 
 When there are no test targets the rule has one `inapplicable` outcome. If the tester is unable to determine whether there are test targets there will be one `cantTell` outcome. And when no evaluation has occurred the test target has one untested outcome. This means that each [test subject][] always has one or more outcomes.
 
-Outcomes used in ACT Rules can be expressed using the [outcome property][] of the [[EARL10-Schema]][].
+Outcomes used in ACT Rules can be expressed using the [outcome property][] of the [EARL10-Schema][earl10-schema].
 
 ### Programmatically Hidden {#programmatically-hidden}
 

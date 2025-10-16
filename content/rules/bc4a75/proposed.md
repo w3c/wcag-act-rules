@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> bc4a75</p>
-  <p><strong>Date:</strong> Updated 1 May 2025</p>
+  <p><strong>Date:</strong> Updated 7 October 2025</p>
   <p><strong>Authors:</strong> <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Previous Authors: <a href="https://github.com/audreymaniez">Audrey Maniez</a>, <a href="https://github.com/jkodu">Jey Nandakumar</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -19,8 +19,8 @@ rule_meta:
   rule_type: atomic
   original_file: aria-required-owned-element-bc4a75.md
   description: |
-    This rule checks that an element with an explicit role that restricts which elements it can own only owns such elements.
-  last_modified: 1 May 2025
+    This rule checks that an element with a semantic role that restricts which elements it can own only owns such elements.
+  last_modified: 7 October 2025
   scs_tested:
     - handle: Info and Relationships
       num: 1.3.1
@@ -29,7 +29,7 @@ rule_meta:
 
 ## Applicability
 
-This rule applies to any [HTML or SVG element][] that is [included in the accessibility tree][] and has a [WAI-ARIA 1.2][] [explicit semantic role][] with [required owned elements][], except if the element has an [inclusive ancestor][] in the accessibility tree with an `aria-busy` [attribute value][] of `true`.
+This rule applies to any [HTML or SVG element][] that is [included in the accessibility tree][] and has a [WAI-ARIA 1.2][] [semantic role][] with [required owned elements][], except if the element has an [inclusive ancestor][] in the accessibility tree with an `aria-busy` [attribute value][] of `true`.
 
 ## Expectation
 
@@ -47,7 +47,7 @@ The applicability of this rule is limited to the [WAI-ARIA 1.2 Recommendation][w
 
 ### Assumptions
 
-If the [explicit semantic role][] on the target element is incorrectly used, and any relationships between elements are already programmatically determinable, failing this rule may not result in accessibility issues for users of assistive technologies, and it should then not be considered a failure under [WCAG success criterion 1.3.1 Info and Relationships](https://www.w3.org/TR/WCAG22/#info-and-relationships).
+If the [semantic role][] on the target element is incorrectly used, and any relationships between elements are already programmatically determinable, failing this rule may not result in accessibility issues for users of assistive technologies, and it should then not be considered a failure under [WCAG success criterion 1.3.1 Info and Relationships](https://www.w3.org/TR/WCAG22/#info-and-relationships).
 
 ### Accessibility Support
 
@@ -56,7 +56,7 @@ If the [explicit semantic role][] on the target element is incorrectly used, and
 - Assistive technologies are not consistent in how they handle situations where a [required owned element][] has a missing or incorrect role. This can lead to situations where inaccurate owned elements behave as expected in one assistive technology, but not in another.
 - Some user agents treat the value of `aria-busy` as case-sensitive.
 
-### Bibliography
+### Other Resources
 
 - [Understanding Success Criterion 1.3.1: Info and Relationships](https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships.html)
 - [Required Owned Element](https://www.w3.org/TR/wai-aria-1.2/#mustContain)
@@ -87,7 +87,7 @@ The following aspects are required in using this rule.
 - [CSS styling](https://www.w3.org/TR/act-rules-aspects/#input-aspects-css)
 - [DOM Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom)
 
-## Test Cases
+## Examples
 
 ### Passed
 
@@ -120,14 +120,14 @@ This element with the `grid` role only owns elements with the `row` role, and th
 
 #### Passed Example 3
 
-<a class="example-link" title="Passed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/12a2da38812d7bf356f0092674c1c21802faf30d.html">Open in a new tab</a>
+<a class="example-link" title="Passed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/9b8254ecd2ab2ecca6bdc6e050f87f0f42f16c38.html">Open in a new tab</a>
 
 This element with the `menu` role only owns elements with the `menuitem`, `menuitemradio` and `menuitemcheckbox` role. These roles are all [required owned elements][] for `menu`. The element with the `none` role is not [owned by][] the `menu` because it is not [included in the accessibility tree][].
 
 ```html
 <div role="menu">
-	<li role="none"></li>
-	<li role="menuitem">Item 1</li>
+	<div role="none"></div>
+	<div role="menuitem">Item 1</div>
 	<div role="menuitemradio" aria-checked="false">Item 2</div>
 	<div role="menuitemcheckbox" aria-checked="false">Item 3</div>
 </div>
@@ -137,7 +137,7 @@ This element with the `menu` role only owns elements with the `menuitem`, `menui
 
 <a class="example-link" title="Passed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/e74d875a66842a61c1667ec316b9d455e7e3a331.html">Open in a new tab</a>
 
-This element with the `tablist` role only owns elements with the `tab` role. The `tab` role is one of the [required owned elements][] for `tablist`. The `li` element is ignored because it has an [explicit semantic role][] of `none`.
+This element with the `tablist` role only owns elements with the `tab` role. The `tab` role is one of the [required owned elements][] for `tablist`. The `li` element is ignored because it has an [semantic role][] of `none`.
 
 ```html
 <ul role="tablist">
@@ -153,7 +153,7 @@ This element with the `tablist` role only owns elements with the `tab` role. The
 
 This element with the `list` role only owns elements with the `listitem` role through the `aria-owns` attribute. The `listitem` role is one of the [required owned elements][] for `list`.
 
-**Note:** This test case follows the definition of [owned by][]. If implemented differently, this definition could cause differences in outcome of this test case.
+**Note:** This example follows the definition of [owned by][]. If implemented differently, this definition could cause differences in outcome of this example.
 
 ```html
 <div role="list" aria-owns="id1"></div>
@@ -176,6 +176,64 @@ This element with the `menu` role only owns an element with a `group` role. The 
 		</div>
 	</div>
 </div>
+```
+
+#### Passed Example 7
+
+<a class="example-link" title="Passed Example 7" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/9ed4f5f7c0a9b8377e7652022430cbd5b1eddccf.html">Open in a new tab</a>
+
+The element `ul` with an implicit `list` role owns an element `li` with an implicit `listitem` role.
+
+```html
+<ul>
+	<li>Item 1</li>
+</ul>
+```
+
+#### Passed Example 8
+
+<a class="example-link" title="Passed Example 8" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/a25a181de38e32b880188d4279d02e8589d7a283.html">Open in a new tab</a>
+
+The element `select` with an implicit `listbox` role owns elements `option` with implicit `option` roles.
+
+```html
+<select multiple>
+	<option>Item 1</option>
+	<option>Item 2</option>
+	<option>Item 3</option>
+</select>
+```
+
+#### Passed Example 9
+
+<a class="example-link" title="Passed Example 9" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/faa124300ae3b5ccdce631d2c79a461946066902.html">Open in a new tab</a>
+
+The element `table` with an implicit `table` role owns an element `tr` with implicit `row` role that in turn owns elements `td` with implicit `cell` roles.
+
+```html
+<table>
+	<tr>
+		<td>Item 1</td>
+		<td>Item 2</td>
+		<td>Item 3</td>
+	</tr>
+</table>
+```
+
+#### Passed Example 10
+
+<a class="example-link" title="Passed Example 10" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/81104ca788ec9b7f87446a4665932812471952fa.html">Open in a new tab</a>
+
+The element `table` with an explicit `treegrid` role owns an element `tr` with implicit `row` role that in turn owns elements `td` with implicit `gridcell` roles.
+
+```html
+<table role="treegrid" aria-label="a test grid">
+	<tr>
+		<td>Item 1</td>
+		<td>Item 2</td>
+		<td>Item 3</td>
+	</tr>
+</table>
 ```
 
 ### Failed
@@ -237,7 +295,7 @@ This element with the `grid` role only owns elements with the `row` role, but th
 
 This element with the `list` role owns an element with the `tab` role through the `aria-owns` attribute. The `tab` role is not one of the [required owned elements][] for `list`.
 
-**Note:** This test case follows the definition of [owned by][]. If implemented differently, this definition could cause differences in outcome of this test case.
+**Note:** This example follows the definition of [owned by][]. If implemented differently, this definition could cause differences in outcome of this example.
 
 ```html
 <div role="list" aria-owns="id2"></div>
@@ -278,6 +336,49 @@ This element with the `list` role owns an element with the `listitem` role and a
 </div>
 ```
 
+#### Failed Example 8
+
+<a class="example-link" title="Failed Example 8" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/a50706ecd9b49e0f16b022668895c5e12cb2eeb5.html">Open in a new tab</a>
+
+This element with the `menu` role owns `option` elements with implicit `option` role. The `option` role is not one of the [required owned elements][] for `menu`.
+
+```html
+<select role="menu" aria-label="a test menu">
+	<option>Item 1</option>
+	<option>Item 2</option>
+	<option>Item 3</option>
+</select>
+```
+
+#### Failed Example 9
+
+<a class="example-link" title="Failed Example 9" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/497cd2bb724541d56e49a57e38d5a7e2fabffc6a.html">Open in a new tab</a>
+
+This element with the `menu` role owns `tr` elements with an explicit `list` role. The `list` role is not one of the [required owned elements][] for `menu`. In addition, the `tr` element with the explicit `list` role owns `td` elements with explicit `menuitem` roles. The `menuitem` role is not one of the [required owned elements][] for `list`.
+
+```html
+<table role="menu" aria-label="a test table" aria-activedescendant="item1" tabindex="0">
+	<tr role="list">
+		<td id="item1" role="menuitem">Item 1</td>
+		<td id="item2" role="menuitem">Item 2</td>
+		<td id="item3" role="menuitem">Item 3</td>
+	</tr>
+</table>
+```
+
+#### Failed Example 10
+
+<a class="example-link" title="Failed Example 10" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/8b65672c9aefc4957b09a338eb85ad7dff6e53de.html">Open in a new tab</a>
+
+This element with the implicit `list` role owns an element with the implicit `generic` role. The `generic` role is not one of the [required owned elements][] for `list`. Note that this example is for demonstration purpose only because it's not a valid HTML 5 structure.
+
+```html
+<ul>
+	<div></div>
+	<div></div>
+</ul>
+```
+
 ### Inapplicable
 
 #### Inapplicable Example 1
@@ -292,14 +393,14 @@ This element with the `list` role is not included in the accessibility tree beca
 
 #### Inapplicable Example 2
 
-<a class="example-link" title="Inapplicable Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/9ed4f5f7c0a9b8377e7652022430cbd5b1eddccf.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/bc4a75/4c7f05a0c2de670e047b18857e91ebddeaebcf90.html">Open in a new tab</a>
 
-This `ul` element does not have an [explicit semantic role][].
+This `div` element with the `list` role is not included in the accessibility tree because it is hidden .
 
 ```html
-<ul>
-	<li>Item 1</li>
-</ul>
+<div role="list" hidden>
+	<div role="listitem">Item 1</div>
+</div>
 ```
 
 #### Inapplicable Example 3
@@ -349,7 +450,7 @@ The _explicit semantic role_ of an element is determined by its [role attribute]
 
 The [role attribute][] takes a list of tokens. The explicit semantic role is the first valid role in this list. The valid roles are all non-abstract roles from [WAI-ARIA Specifications][]. If the element has no [role attribute][], or if it has one with no valid role, then this element has no explicit semantic role.
 
-Other roles may be added as they become available. Not all roles will be supported in all assistive technologies. Testers are encouraged to adjust which roles are allowed according to the [accessibility support base line][]. For the purposes of executing test cases in all rules, it should be assumed that all roles are supported by assistive technologies so that none of the roles fail due to lack of accessibility support.
+Other roles may be added as they become available. Not all roles will be supported in all assistive technologies. Testers are encouraged to adjust which roles are allowed according to the [accessibility support base line][]. For the purposes of executing examples in all rules, it should be assumed that all roles are supported by assistive technologies so that none of the roles fail due to lack of accessibility support.
 
 ### Focusable {#focusable}
 
@@ -412,7 +513,7 @@ A conclusion that comes from evaluating an ACT Rule on a [test subject][] or one
 
 When there are no test targets the rule has one `inapplicable` outcome. If the tester is unable to determine whether there are test targets there will be one `cantTell` outcome. And when no evaluation has occurred the test target has one untested outcome. This means that each [test subject][] always has one or more outcomes.
 
-Outcomes used in ACT Rules can be expressed using the [outcome property][] of the [[EARL10-Schema]][].
+Outcomes used in ACT Rules can be expressed using the [outcome property][] of the [EARL10-Schema][earl10-schema].
 
 ### Owned by {#owned-by}
 
@@ -465,7 +566,6 @@ The _WAI ARIA Specifications_ group both the WAI ARIA W3C Recommendation and ARI
 [enumerated attributes]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#enumerated-attribute 'HTML Specification of Enumerated Attribute'
 [examples of included in the accessibility tree]: https://act-rules.github.io/pages/examples/included-in-the-accessibility-tree/
 [explicit role]: #explicit-role 'Definition of Explicit Role'
-[explicit semantic role]: #explicit-role
 [flat tree]: https://drafts.csswg.org/css-scoping/#flat-tree 'Definition of flat tree'
 [focusable]: #focusable 'Definition of Focusable'
 [html aam]: https://www.w3.org/TR/html-aam-1.0/#html-attribute-state-and-property-mappings 'Specification of HTML attributes value mapping to ARIA states and properties'

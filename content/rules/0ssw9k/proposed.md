@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 0ssw9k</p>
-  <p><strong>Date:</strong> Updated 2 December 2024</p>
+  <p><strong>Date:</strong> Updated 14 October 2025</p>
   <p><strong>Authors:</strong> <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -20,7 +20,7 @@ rule_meta:
   original_file: scrollable-element-keyboard-accessible-0ssw9k.md
   description: |
     This rule checks that scrollable elements or their descendants can be reached with sequential focus navigation so that they can be scrolled by keyboard
-  last_modified: 2 December 2024
+  last_modified: 14 October 2025
   scs_tested:
     - handle: Keyboard
       num: 2.1.1
@@ -60,7 +60,7 @@ Some browsers will automatically make any [scrollable element][scrollable] focus
 
 Some browsers restrict scrolling to the [content box](https://drafts.csswg.org/css-box-4/#content-box) of elements; while others allow to scroll the full [border box](https://drafts.csswg.org/css-box-4/#border-box), hence including the element's padding. This results in some elements being scrollable with a browser but not with another.
 
-### Bibliography
+### Other Resources
 
 - [Understanding Success Criterion 2.1.1: Keyboard](https://www.w3.org/WAI/WCAG22/Understanding/keyboard.html)
 - [G202: Ensuring keyboard control for all functionality](https://www.w3.org/WAI/WCAG22/Techniques/general/G202)
@@ -113,7 +113,7 @@ The following aspects are required in using this rule.
 - [DOM Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom)
 - [CSS Styling](https://www.w3.org/TR/act-rules-aspects/#input-aspects-css)
 
-## Test Cases
+## Examples
 
 ### Passed
 
@@ -414,7 +414,7 @@ A conclusion that comes from evaluating an ACT Rule on a [test subject][] or one
 
 When there are no test targets the rule has one `inapplicable` outcome. If the tester is unable to determine whether there are test targets there will be one `cantTell` outcome. And when no evaluation has occurred the test target has one untested outcome. This means that each [test subject][] always has one or more outcomes.
 
-Outcomes used in ACT Rules can be expressed using the [outcome property][] of the [[EARL10-Schema]][].
+Outcomes used in ACT Rules can be expressed using the [outcome property][] of the [EARL10-Schema][earl10-schema].
 
 ### Scrollable Elements {#scrollable-element}
 

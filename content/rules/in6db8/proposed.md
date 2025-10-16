@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> in6db8</p>
-  <p><strong>Date:</strong> Updated 1 May 2025</p>
+  <p><strong>Date:</strong> Updated 7 October 2025</p>
   <p><strong>Authors:</strong> <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -20,7 +20,7 @@ rule_meta:
   original_file: aria-required-id-references-in6db8.md
   description: |
     This rule checks that every ID reference required by WAI-ARIA exists
-  last_modified: 1 May 2025
+  last_modified: 7 October 2025
 ---
 
 ## Applicability
@@ -46,7 +46,7 @@ There are no assumptions.
 
 Some user agents treat the value of `aria-*` attribute as case-sensitive (even when these are not IDs) while some treat them as case-insensitive.
 
-### Bibliography
+### Other Resources
 
 - [ARIA5: Using WAI-ARIA state and property attributes to expose the state of a user interface component](https://www.w3.org/WAI/WCAG22/Techniques/aria/ARIA5)
 - [WAI-ARIA required states and properties](https://www.w3.org/TR/wai-aria-1.2/#requiredState)
@@ -87,7 +87,7 @@ The following aspects are required in using this rule.
 - [DOM Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom)
 - [CSS Styling](https://www.w3.org/TR/act-rules-aspects/#input-aspects-css)
 
-## Test Cases
+## Examples
 
 ### Passed
 
@@ -271,7 +271,7 @@ The _explicit semantic role_ of an element is determined by its [role attribute]
 
 The [role attribute][] takes a list of tokens. The explicit semantic role is the first valid role in this list. The valid roles are all non-abstract roles from [WAI-ARIA Specifications][]. If the element has no [role attribute][], or if it has one with no valid role, then this element has no explicit semantic role.
 
-Other roles may be added as they become available. Not all roles will be supported in all assistive technologies. Testers are encouraged to adjust which roles are allowed according to the [accessibility support base line][]. For the purposes of executing test cases in all rules, it should be assumed that all roles are supported by assistive technologies so that none of the roles fail due to lack of accessibility support.
+Other roles may be added as they become available. Not all roles will be supported in all assistive technologies. Testers are encouraged to adjust which roles are allowed according to the [accessibility support base line][]. For the purposes of executing examples in all rules, it should be assumed that all roles are supported by assistive technologies so that none of the roles fail due to lack of accessibility support.
 
 ### Focusable {#focusable}
 
@@ -314,6 +314,12 @@ Elements are marked as decorative as a way to convey the intention of the author
 
 Elements can also be ignored by assistive technologies if they are [programmatically hidden][]. This is different from marking the element as decorative and does not convey the same intention. Notably, being [programmatically hidden][] may change as users interact with the page (showing and hiding elements) while being marked as decorative should stay the same through all states of the page.
 
+### Namespaced Element {#namespaced-element}
+
+An [element][] with a specific [namespaceURI][] value from [HTML namespaces][]. For example an "SVG element" is any element with the "SVG namespace", which is `http://www.w3.org/2000/svg`.
+
+Namespaced elements are not limited to elements described in a specification. They also include custom elements. Elements such as `a` and `title` have a different namespace depending on where they are used. For example a `title` in an HTML page usually has the HTML namespace. When used in an `svg` element, a `title` element has the SVG namespace instead.
+
 ### Outcome {#outcome}
 
 A conclusion that comes from evaluating an ACT Rule on a [test subject][] or one of its constituent test target. An outcome can be one of the five following types:
@@ -328,7 +334,7 @@ A conclusion that comes from evaluating an ACT Rule on a [test subject][] or one
 
 When there are no test targets the rule has one `inapplicable` outcome. If the tester is unable to determine whether there are test targets there will be one `cantTell` outcome. And when no evaluation has occurred the test target has one untested outcome. This means that each [test subject][] always has one or more outcomes.
 
-Outcomes used in ACT Rules can be expressed using the [outcome property][] of the [[EARL10-Schema]][].
+Outcomes used in ACT Rules can be expressed using the [outcome property][] of the [EARL10-Schema][earl10-schema].
 
 ### Programmatically Hidden {#programmatically-hidden}
 
@@ -368,12 +374,14 @@ The _WAI ARIA Specifications_ group both the WAI ARIA W3C Recommendation and ARI
 [computed]: https://www.w3.org/TR/css-cascade/#computed-value 'CSS definition of computed value'
 [document tree]: https://dom.spec.whatwg.org/#document-trees 'DOM Definition of Document tree'
 [earl10-schema]: https://www.w3.org/TR/act-rules-format-1.1/#biblio-earl10-schema
+[element]: https://dom.spec.whatwg.org/#element 'DOM element, 2021/05/31'
 [enumerated attributes]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#enumerated-attribute 'HTML Specification of Enumerated Attribute'
 [examples of included in the accessibility tree]: https://act-rules.github.io/pages/examples/included-in-the-accessibility-tree/
 [explicit role]: #explicit-role 'Definition of Explicit Role'
 [flat tree]: https://drafts.csswg.org/css-scoping/#flat-tree 'Definition of flat tree'
 [focusable]: #focusable 'Definition of Focusable'
 [html aam]: https://www.w3.org/TR/html-aam-1.0/#html-attribute-state-and-property-mappings 'Specification of HTML attributes value mapping to ARIA states and properties'
+[html namespaces]: https://infra.spec.whatwg.org/#namespaces 'HTML namespace, 2021/05/31'
 [id reference list]: https://www.w3.org/TR/wai-aria-1.2/#valuetype_idref_list 'WAI-ARIA definition of ID Reference List'
 [id reference]: https://www.w3.org/TR/wai-aria-1.2/#valuetype_idref 'WAI-ARIA definition of ID Reference'
 [idl attribute]: https://heycam.github.io/webidl/#idl-attributes "Definition of Web IDL Attribute (Editor's Draft)"
@@ -381,6 +389,8 @@ The _WAI ARIA Specifications_ group both the WAI ARIA W3C Recommendation and ARI
 [included in the accessibility tree]: #included-in-the-accessibility-tree 'Definition of Included in the Accessibility Tree'
 [inclusive ancestors]: https://dom.spec.whatwg.org/#concept-tree-inclusive-ancestor 'DOM Definition of Inclusive Ancestor'
 [marked as decorative]: #marked-as-decorative 'Definition of Marked as Decorative'
+[namespaced element]: #namespaced-element 'Definition of namespaced element'
+[namespaceuri]: https://dom.spec.whatwg.org/#dom-element-namespaceuri 'DOM Element namespaceURI, 2021/05/31'
 [numbers]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#numbers 'HTML Specification of Number Parsing'
 [outcome property]: https://www.w3.org/TR/EARL10-Schema/#outcome
 [presentational roles conflict resolution]: https://www.w3.org/TR/wai-aria-1.2/#conflict_resolution_presentation_none 'Presentational Roles Conflict Resolution'

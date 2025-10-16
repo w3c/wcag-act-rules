@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> b33eff</p>
-  <p><strong>Date:</strong> Updated 2 December 2024</p>
+  <p><strong>Date:</strong> Updated 7 October 2025</p>
   <p><strong>Authors:</strong> <a href="https://github.com/audreymaniez">Audrey Maniez</a>, <a href="https://github.com/jkodu">Jey Nandakumar</a>, Tom Brunet. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -19,8 +19,8 @@ rule_meta:
   rule_type: atomic
   original_file: css-restrict-orientation-b33eff.md
   description: |
-    This rule checks that page content is not restricted to either `landscape` or `portrait` orientation using CSS transforms
-  last_modified: 2 December 2024
+    This rule checks that page content is not restricted to either `landscape` or `portrait` orientation using CSS transforms.
+  last_modified: 7 October 2025
   scs_tested:
     - handle: Orientation
       num: 1.3.4
@@ -64,7 +64,7 @@ This rule does not consider and may produce incorrect results for:
 
 There are no accessibility support issues known.
 
-### Bibliography
+### Other Resources
 
 - [Understanding Success Criterion 1.3.4: Orientation](https://www.w3.org/WAI/WCAG22/Understanding/orientation.html)
 - [CSS Transforms Module Level 1](https://www.w3.org/TR/css-transforms/#funcdef-transform-matrix)
@@ -98,7 +98,7 @@ The following aspects are required in using this rule.
 - [DOM Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom)
 - [CSS Styling](https://www.w3.org/TR/act-rules-aspects/#input-aspects-css)
 
-## Test Cases
+## Examples
 
 ### Passed
 
@@ -238,7 +238,7 @@ A page where CSS [transform](https://www.w3.org/TR/css-transforms/#propdef-trans
 
 <a class="example-link" title="Failed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/93ad10ce32325be5b7c8cbaec7254d55e8fb577c.html">Open in a new tab</a>
 
-This page appears rotated at a slight angle of 2.5 degrees for stylistic purposes, but is locked in portrait orientation by applying a 92.5 degree rotation when in landscape orientation:
+This page appears rotated at a slight angle of 2.5 degrees for stylistic purposes, but is locked in `portrait` orientation by applying a 92.5 degree rotation when in `landscape` orientation:
 
 ```html
 <html lang="en">
@@ -339,7 +339,7 @@ A page that has no CSS [transform](https://www.w3.org/TR/css-transforms/#propdef
 
 #### Inapplicable Example 3
 
-<a class="example-link" title="Inapplicable Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/5cde20e2acab8991c299a317825201af48bf5736.html">Open in a new tab</a>
+<a class="example-link" title="Inapplicable Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/3600a3d783678e384fec62211e854cb8a4d3d2d0.html">Open in a new tab</a>
 
 A page where CSS [transform](https://www.w3.org/TR/css-transforms/#propdef-transform) property is applied to an element that is not [visible](#visible).
 
@@ -348,7 +348,7 @@ A page where CSS [transform](https://www.w3.org/TR/css-transforms/#propdef-trans
 	<head>
 		<title>Page with some content</title>
 		<style>
-			@media (orientation: lanscape) {
+			@media (orientation: landscape) {
 				body {
 					transform: rotateZ(0, 0, 1, 270deg);
 				}
@@ -438,7 +438,7 @@ A conclusion that comes from evaluating an ACT Rule on a [test subject][] or one
 
 When there are no test targets the rule has one `inapplicable` outcome. If the tester is unable to determine whether there are test targets there will be one `cantTell` outcome. And when no evaluation has occurred the test target has one untested outcome. This means that each [test subject][] always has one or more outcomes.
 
-Outcomes used in ACT Rules can be expressed using the [outcome property][] of the [[EARL10-Schema]][].
+Outcomes used in ACT Rules can be expressed using the [outcome property][] of the [EARL10-Schema][earl10-schema].
 
 ### Visible {#visible}
 

@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> f51b46</p>
-  <p><strong>Date:</strong> Updated 2 December 2024</p>
+  <p><strong>Date:</strong> Updated 7 October 2025</p>
   <p><strong>Authors:</strong> <a href="https://www.linkedin.com/in/brianbors/">Brian Bors</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
   
@@ -22,7 +22,7 @@ rule_meta:
   original_file: video-captions-f51b46.md
   description: |
     This rule checks that captions are available for audio information in non-streaming `video` elements.
-  last_modified: 2 December 2024
+  last_modified: 7 October 2025
 ---
 
 ## Applicability
@@ -45,7 +45,7 @@ This rule assumes that the video element is used to play a video (for example, n
 
 There are no accessibility support issues known.
 
-### Bibliography
+### Other Resources
 
 - [Understanding Success Criterion 1.2.2: Captions (Prerecorded)](https://www.w3.org/WAI/WCAG22/Understanding/captions-prerecorded)
 - [G93: Providing open (always visible) captions](https://www.w3.org/WAI/WCAG22/Techniques/general/G93)
@@ -112,7 +112,7 @@ The following aspects are required in using this rule.
 - [Audio output](https://www.w3.org/TR/act-rules-aspects/#input-aspects-audio-out)
 - Visual output (no link available)
 
-## Test Cases
+## Examples
 
 ### Passed
 
@@ -238,7 +238,7 @@ A conclusion that comes from evaluating an ACT Rule on a [test subject][] or one
 
 When there are no test targets the rule has one `inapplicable` outcome. If the tester is unable to determine whether there are test targets there will be one `cantTell` outcome. And when no evaluation has occurred the test target has one untested outcome. This means that each [test subject][] always has one or more outcomes.
 
-Outcomes used in ACT Rules can be expressed using the [outcome property][] of the [[EARL10-Schema]][].
+Outcomes used in ACT Rules can be expressed using the [outcome property][] of the [EARL10-Schema][earl10-schema].
 
 ### Visible {#visible}
 

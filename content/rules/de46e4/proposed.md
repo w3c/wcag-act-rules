@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> de46e4</p>
-  <p><strong>Date:</strong> Updated 2 December 2024</p>
+  <p><strong>Date:</strong> Updated 7 October 2025</p>
   <p><strong>Authors:</strong> <a href="https://github.com/brynanders">Bryn Anderson</a>, <a href="https://github.com/jkodu">Jey Nandakumar</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -20,7 +20,7 @@ rule_meta:
   original_file: element-lang-valid-de46e4.md
   description: |
     This rule checks that a non-empty `lang` attribute of an element in the page has a language tag with a known primary language subtag.
-  last_modified: 2 December 2024
+  last_modified: 7 October 2025
   scs_tested:
     - handle: Language of Parts
       num: 3.1.2
@@ -55,7 +55,7 @@ For each test target, the `lang` [attribute value][] has a [known primary langua
 
 There are differences in how assistive technologies handle unknown and invalid language tags. Some will default to the language of the page, whereas others will default to the closest ancestor with a valid lang attribute.
 
-### Bibliography
+### Other Resources
 
 - [CSS Scoping Module Level 1 (editor's draft)](https://drafts.csswg.org/css-scoping/)
 - [H58: Using language attributes to identify changes in the human language](https://www.w3.org/WAI/WCAG22/Techniques/html/H58)
@@ -99,7 +99,7 @@ The following aspects are required in using this rule.
 - [CSS Styling](https://www.w3.org/TR/act-rules-aspects/#input-aspects-css)
 - [DOM Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom)
 
-## Test Cases
+## Examples
 
 ### Passed
 
@@ -502,7 +502,7 @@ A conclusion that comes from evaluating an ACT Rule on a [test subject][] or one
 
 When there are no test targets the rule has one `inapplicable` outcome. If the tester is unable to determine whether there are test targets there will be one `cantTell` outcome. And when no evaluation has occurred the test target has one untested outcome. This means that each [test subject][] always has one or more outcomes.
 
-Outcomes used in ACT Rules can be expressed using the [outcome property][] of the [[EARL10-Schema]][].
+Outcomes used in ACT Rules can be expressed using the [outcome property][] of the [EARL10-Schema][earl10-schema].
 
 ### Programmatically Hidden {#programmatically-hidden}
 

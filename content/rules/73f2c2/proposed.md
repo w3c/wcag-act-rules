@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 73f2c2</p>
-  <p><strong>Date:</strong> Updated 2 May 2025</p>
+  <p><strong>Date:</strong> Updated 7 October 2025</p>
   <p><strong>Authors:</strong> <a href="https://github.com/ajanec01">Aron Janecki</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
@@ -20,7 +20,7 @@ rule_meta:
   original_file: autocomplete-valid-value-73f2c2.md
   description: |
     This rule checks that the HTML `autocomplete` attribute has a correct value.
-  last_modified: 2 May 2025
+  last_modified: 7 October 2025
   scs_tested:
     - handle: Identify Input Purpose
       num: 1.3.5
@@ -75,7 +75,7 @@ The purpose of a control is programmatically identifiable even when its `autocom
 - Implementation of [Presentational Roles Conflict Resolution][] varies from one browser or assistive technology to another. Depending on this, some elements can have a [semantic role][] of `none` and fail this rule with some technology but users of other technologies would not experience any accessibility issue.
 - Authors may assign inappropriate `autocomplete` attribute values. Moreover, HTML specifications restrict certain `autocomplete` attribute values to specific form controls. Mismatches between `autocomplete` attribute values and form control types may or may not lead to a failure of [success criterion 1.3.5 Identify Input Purpose](https://www.w3.org/TR/WCAG22/#identify-input-purpose). However, this rule focuses exclusively on validating valid `autocomplete` attribute values, disregarding their contextual appropriateness.
 
-### Bibliography
+### Other Resources
 
 - [Understanding Success Criterion 1.3.5: Identify Input Purpose](https://www.w3.org/WAI/WCAG22/Understanding/identify-input-purpose.html)
 - [Definition: programmatically determined (programmatically determinable)](https://www.w3.org/TR/WCAG22/#dfn-programmatically-determinable)
@@ -106,7 +106,7 @@ The following aspects are required in using this rule.
 - [DOM Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom)
 - [CSS Styling](https://www.w3.org/TR/act-rules-aspects/#input-aspects-css)
 
-## Test Cases
+## Examples
 
 ### Passed
 
@@ -437,7 +437,7 @@ The _explicit semantic role_ of an element is determined by its [role attribute]
 
 The [role attribute][] takes a list of tokens. The explicit semantic role is the first valid role in this list. The valid roles are all non-abstract roles from [WAI-ARIA Specifications][]. If the element has no [role attribute][], or if it has one with no valid role, then this element has no explicit semantic role.
 
-Other roles may be added as they become available. Not all roles will be supported in all assistive technologies. Testers are encouraged to adjust which roles are allowed according to the [accessibility support base line][]. For the purposes of executing test cases in all rules, it should be assumed that all roles are supported by assistive technologies so that none of the roles fail due to lack of accessibility support.
+Other roles may be added as they become available. Not all roles will be supported in all assistive technologies. Testers are encouraged to adjust which roles are allowed according to the [accessibility support base line][]. For the purposes of executing examples in all rules, it should be assumed that all roles are supported by assistive technologies so that none of the roles fail due to lack of accessibility support.
 
 ### Focusable {#focusable}
 
@@ -500,7 +500,7 @@ A conclusion that comes from evaluating an ACT Rule on a [test subject][] or one
 
 When there are no test targets the rule has one `inapplicable` outcome. If the tester is unable to determine whether there are test targets there will be one `cantTell` outcome. And when no evaluation has occurred the test target has one untested outcome. This means that each [test subject][] always has one or more outcomes.
 
-Outcomes used in ACT Rules can be expressed using the [outcome property][] of the [[EARL10-Schema]][].
+Outcomes used in ACT Rules can be expressed using the [outcome property][] of the [EARL10-Schema][earl10-schema].
 
 ### Programmatically Hidden {#programmatically-hidden}
 

@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> c5a4ea</p>
-  <p><strong>Date:</strong> Updated 2 December 2024</p>
+  <p><strong>Date:</strong> Updated 7 October 2025</p>
   <p><strong>Authors:</strong> <a href="https://www.linkedin.com/in/brianbors/">Brian Bors</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
   
@@ -22,7 +22,7 @@ rule_meta:
   original_file: video-alternative-for-visual-c5a4ea.md
   description: |
     This rule checks that `video` elements with audio have an alternative for the video content as audio or as text.
-  last_modified: 2 December 2024
+  last_modified: 7 October 2025
   scs_tested:
     - handle: Audio Description or Media Alternative (Prerecorded)
       num: 1.2.3
@@ -52,7 +52,7 @@ For each test target, the [outcome](#outcome) of at least one of the following r
 
 The HTML `video` element can also have a `track` element that provides an audio description. This should provide assistive technologies with a timed text description of visual information in a video. However, there is no native support in any major browser for this technique. Technique [H96: Using the track element to provide audio descriptions](https://www.w3.org/WAI/WCAG22/Techniques/html/H96) can not be relied upon to conform to [1.2.3: Audio Description or Media Alternative (Prerecorded)][sc123].
 
-### Bibliography
+### Other Resources
 
 - [Understanding Success Criterion 1.2.5: Audio Description (Prerecorded)](https://www.w3.org/WAI/WCAG22/Understanding/audio-description-prerecorded.html)
 - [G78: Providing a second, user-selectable, audio track that includes audio descriptions](https://www.w3.org/WAI/WCAG22/Techniques/general/G78)
@@ -143,7 +143,7 @@ Outcomes of the following rules are required as input for this rule.
 - [Audio and visuals of video element have transcript](/standards-guidelines/act/rules/video-transcript-1a02b0/)
 - [Video element content is media alternative for text](/standards-guidelines/act/rules/video-as-media-alternative-ab4d13/)
 
-## Test Cases
+## Examples
 
 <details class="act-inline-assets" markdown="block">
 <summary><span>These HTML files are used in several examples:</span></summary>
@@ -356,7 +356,7 @@ A conclusion that comes from evaluating an ACT Rule on a [test subject][] or one
 
 When there are no test targets the rule has one `inapplicable` outcome. If the tester is unable to determine whether there are test targets there will be one `cantTell` outcome. And when no evaluation has occurred the test target has one untested outcome. This means that each [test subject][] always has one or more outcomes.
 
-Outcomes used in ACT Rules can be expressed using the [outcome property][] of the [[EARL10-Schema]][].
+Outcomes used in ACT Rules can be expressed using the [outcome property][] of the [EARL10-Schema][earl10-schema].
 
 ### Visible {#visible}
 
