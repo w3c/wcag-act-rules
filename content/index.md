@@ -80,8 +80,13 @@ This page contains Accessibility Conformance Testing (ACT) Rules to test conform
 {% if sc.versions contains "2.2" %}
 <div class="sc-item level-{{sc.level | downcase}}{% if forloop.first %} first{% endif %}">
 <div class="sc-text">
-  <h3 class="sc-handle">{{ sc.num }} {{ sc.handle }}:</h3>
-  <p class="sc-title">{{ sc.title }} (Level {{ sc.level }})</p>
+  {% assign understanding_url = "https://www.w3.org/WAI/WCAG22/Understanding/" | append: sc.id | append: ".html" %}
+  <h3 class="sc-handle"><a href="{{ understanding_url }}">{{ sc.num }} {{ sc.handle }}:</a></h3>
+  <p class="sc-title">
+    {{ sc.title }}
+    {% if sc.details.size > 0 %}[...]{% endif %} 
+    (Level {{ sc.level }})
+  </p>
 </div>
 
 {% comment %}Find related ACT rules for this criterion{% endcomment %}
