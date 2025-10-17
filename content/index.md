@@ -313,4 +313,4 @@ The ACT Rules are **proposed** by the ACT Task Force and Community Group. Once a
 
 Filter this page to show rules with specific types of implementations. ACT implementations demonstrate how tools or methodologies rely on ACT rules for testing accessibility. Implementation types can be manual, semi-automated, automated, or linter. For more details and a list of all implementations, see [implementations page](../implementations/).
 
-<script src="/content-assets/wcag-act-rules/filter-scripts.js"></script>
+<script src="{{ '/content-assets/wcag-act-rules/filter-scripts.js' | relative_url }}"></script>
