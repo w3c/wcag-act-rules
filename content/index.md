@@ -71,12 +71,13 @@ This page contains Accessibility Conformance Testing (ACT) Rules to test conform
 {% include filter-controls.html %}
 
 <div id="guidelines-start" tabindex="-1"></div>
-{% for principle in site.data.wcag-complete.principles %}
-{% for guideline in principle.guidelines %}
+{% for guideline in site.data.wcag22.guidelines %}
 <section class="guideline-section">
 <h2>Guideline {{ guideline.num }} - {{ guideline.handle }}</h2>
 
-{% for sc in guideline.successcriteria %}
+{%- assign sc_num_prefix = guideline.num | append: "." -%}
+{%- assign successcriteria = site.data.wcag22.successcriteria | where_exp: "item", "item.num contains sc_num_prefix" %}
+{% for sc in successcriteria %}
 {% if sc.versions contains "2.2" %}
 <div class="sc-item level-{{sc.level | downcase}}{% if forloop.first %} first{% endif %}">
 <div class="sc-text">
@@ -211,11 +212,10 @@ This page contains Accessibility Conformance Testing (ACT) Rules to test conform
 {% endif %}
 </div>
 {% endif %}
-{% comment %}End Principles, guidelines, and criteria{% endcomment %}
-    {% endfor %}
+{% comment %}End Criteria and Guidelines{% endcomment %}
+  {% endfor %}
 <p class="sneaky-skiplink"><a href="#top">Back to top</a></p>
 </section>
-  {% endfor %}
 {% endfor %}
 
 
