@@ -37,7 +37,7 @@ table.act-implementations ul {
 .act-pill {
   display: inline-block;
   background-color: var(--wai-green);
-  color: #fff;
+  color: var(--pure-white);
   font-size: 0.75em;
   padding: 0.2em 0.6em;
   border-radius: 1em;
@@ -53,13 +53,14 @@ table.act-implementations ul {
 }
 
 .act-pill.proposed {
-  background-color: #f8c55f;
-  color: #333;
+  background-color: var(--cloudy-subtle);
+  color: var(--off-black);
+  border: 1px solid var(--cloudy);
 }
 
 .act-pill.deprecated {
-  background-color: #6c757d;
-  color: #fff;
+  background-color: var(--grey);
+  color: var(--pure-white);
 }
 
 .sc-item {
@@ -141,27 +142,6 @@ ul.act-requirements-list {
   list-style: none;
 }
 
-#filter-controls {
-  margin: 2em 0;
-  background-color: #f8f9fa;
-  padding: 1.5em;
-  border-radius: 5px;
-  border: 1px solid #e9ecef;
-}
-
-#filter-controls fieldset {
-  border: none;
-  padding: 0;
-  margin: 0;
-}
-
-#filter-controls legend {
-  font-weight: bold;
-  font-size: 1.2em;
-  margin-bottom: 0.5em;
-  color: var(--wai-green);
-}
-
 .filter-description {
   margin-bottom: 1rem;
   font-size: 0.9rem;
@@ -171,11 +151,16 @@ ul.act-requirements-list {
 .filter-options {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.5em;
+  gap: 0 1.5em;
+}
+.filter-options:before {
+  display: none;
 }
 
 .filter-group {
   margin-bottom: 0.5em;
+  margin-left: 0;
+  flex-grow: 1;
 }
 
 #filter-controls .filter-group-label {
@@ -183,27 +168,27 @@ ul.act-requirements-list {
   font-weight: bold;
   margin-bottom: 0.5em;
   font-size: 1rem;
-  color: black;
+  color: var(--off-black);
 }
 
 .checkbox-group {
   display: flex;
   flex-direction: column;
-  gap: 0.5em;
 }
 
 .checkbox-option {
-  display: flex;
+  display: block;
   align-items: center;
+  padding: 0.2em;
 }
-
 .checkbox-option input[type="checkbox"] {
   margin-right: 0.3em;
 }
-
-input[type="checkbox"]:focus + label {
-  outline: 2px solid #005a9c;
-  outline-offset: 2px;
+.checkbox-option:focus-within {
+  outline: 2px solid var(--wai-green);
+}
+.checkbox-option:focus-within input {
+  outline: none; /* Turn outline off, only if focus-within is supported */
 }
 
 /* Responsive adjustments for filters */
@@ -220,8 +205,8 @@ input[type="checkbox"]:focus + label {
 #filter-status {
   margin: 1.5em 0;
   padding: 0.75em 1.25em;
-  background-color: #e9ecef;
-  border: 1px solid #ced4da;
+  background-color: var(--off-white);
+  border: 1px solid var(--line-grey);
   border-radius: 4px;
   font-size: 0.9em;
   text-align: center;
