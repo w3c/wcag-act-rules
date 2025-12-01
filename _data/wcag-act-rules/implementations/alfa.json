@@ -1,8 +1,8 @@
 {
   "vendor": "Siteimprove",
   "name": "Alfa (fully automated)",
-  "version": "0.104.0",
-  "lastModified": "13 October 2025",
+  "version": "0.107.0",
+  "lastModified": "1 December 2025",
   "approvedRules": {
     "complete": 27,
     "partial": 2,
@@ -29,6 +29,7 @@
         "expected": [],
         "reported": [
           "WCAG2:info-and-relationships",
+          "/",
           "https://www.w3.org/WAI/WCAG22/Techniques/aria/ARIA4",
           "https://www.w3.org/WAI/WCAG22/Techniques/general/G108"
         ]
@@ -705,6 +706,7 @@
         ],
         "reported": [
           "WCAG2:language-of-parts",
+          "/",
           "https://www.w3.org/WAI/WCAG22/Techniques/html/H58"
         ]
       },
@@ -1016,7 +1018,8 @@
           "WCAG2:name-role-value"
         ],
         "reported": [
-          "WCAG2:name-role-value"
+          "WCAG2:name-role-value",
+          "/"
         ]
       },
       "coverage": {
@@ -1162,7 +1165,8 @@
           "WCAG2:keyboard"
         ],
         "reported": [
-          "WCAG2:keyboard"
+          "WCAG2:keyboard",
+          "/"
         ]
       },
       "coverage": {
@@ -1338,7 +1342,8 @@
           "WCAG2:text-spacing"
         ],
         "reported": [
-          "WCAG2:text-spacing"
+          "WCAG2:text-spacing",
+          "/"
         ]
       },
       "coverage": {
@@ -1649,7 +1654,8 @@
           "WCAG2:text-spacing"
         ],
         "reported": [
-          "WCAG2:text-spacing"
+          "WCAG2:text-spacing",
+          "/"
         ]
       },
       "coverage": {
@@ -1960,7 +1966,8 @@
           "WCAG2:text-spacing"
         ],
         "reported": [
-          "WCAG2:text-spacing"
+          "WCAG2:text-spacing",
+          "/"
         ]
       },
       "coverage": {
@@ -2346,7 +2353,8 @@
           "WCAG2:identify-input-purpose"
         ],
         "reported": [
-          "WCAG2:identify-input-purpose"
+          "WCAG2:identify-input-purpose",
+          "/"
         ]
       },
       "coverage": {
@@ -2822,7 +2830,8 @@
           "WCAG2:name-role-value"
         ],
         "reported": [
-          "WCAG2:name-role-value"
+          "WCAG2:name-role-value",
+          "/"
         ]
       },
       "coverage": {
@@ -3277,7 +3286,8 @@
           "WCAG2:name-role-value"
         ],
         "reported": [
-          "WCAG2:name-role-value"
+          "WCAG2:name-role-value",
+          "/"
         ]
       },
       "coverage": {
@@ -3604,6 +3614,7 @@
         ],
         "reported": [
           "WCAG2:language-of-page",
+          "/",
           "https://www.w3.org/WAI/WCAG22/Techniques/html/H57"
         ]
       },
@@ -3736,6 +3747,7 @@
         ],
         "reported": [
           "WCAG2:page-titled",
+          "/",
           "https://www.w3.org/WAI/WCAG22/Techniques/general/G88",
           "https://www.w3.org/WAI/WCAG22/Techniques/html/H25"
         ]
@@ -3961,6 +3973,7 @@
         "reported": [
           "WCAG2:non-text-content",
           "WCAG2:name-role-value",
+          "/",
           "https://www.w3.org/WAI/WCAG22/Techniques/general/G94",
           "https://www.w3.org/WAI/WCAG22/Techniques/general/G95"
         ]
@@ -4169,6 +4182,7 @@
         ],
         "reported": [
           "WCAG2:non-text-content",
+          "/",
           "https://www.w3.org/WAI/WCAG22/Techniques/general/G94",
           "https://www.w3.org/WAI/WCAG22/Techniques/general/G95"
         ]
@@ -4470,6 +4484,7 @@
           "WCAG2:link-purpose-in-context",
           "WCAG2:link-purpose-link-only",
           "WCAG2:name-role-value",
+          "/",
           "https://www.w3.org/WAI/WCAG22/Techniques/general/G91"
         ]
       },
@@ -4916,7 +4931,8 @@
           "WCAG2:non-text-content"
         ],
         "reported": [
-          "WCAG2:non-text-content"
+          "WCAG2:non-text-content",
+          "/"
         ]
       },
       "coverage": {
@@ -5092,7 +5108,8 @@
           "WCAG2:name-role-value"
         ],
         "reported": [
-          "WCAG2:name-role-value"
+          "WCAG2:name-role-value",
+          "/"
         ]
       },
       "coverage": {
@@ -5299,6 +5316,7 @@
         ],
         "reported": [
           "WCAG2:info-and-relationships",
+          "/",
           "https://www.w3.org/WAI/WCAG22/Techniques/html/H43"
         ]
       },
@@ -5610,7 +5628,8 @@
           "WCAG2:name-role-value"
         ],
         "reported": [
-          "WCAG2:name-role-value"
+          "WCAG2:name-role-value",
+          "/"
         ]
       },
       "coverage": {
@@ -5864,6 +5883,7 @@
           "WCAG2:timing-adjustable",
           "WCAG2:interruptions",
           "WCAG2:change-on-request",
+          "/",
           "https://www.w3.org/WAI/WCAG22/Techniques/general/G110",
           "https://www.w3.org/WAI/WCAG22/Techniques/html/H76"
         ]
@@ -6116,7 +6136,8 @@
           "WCAG2:resize-text"
         ],
         "reported": [
-          "WCAG2:resize-text"
+          "WCAG2:resize-text",
+          "/"
         ]
       },
       "coverage": {
@@ -6382,7 +6403,8 @@
           "WCAG2:non-text-content"
         ],
         "reported": [
-          "WCAG2:non-text-content"
+          "WCAG2:non-text-content",
+          "/"
         ]
       },
       "coverage": {
@@ -6679,6 +6701,7 @@
         ],
         "reported": [
           "WCAG2:language-of-page",
+          "/",
           "https://www.w3.org/WAI/WCAG22/Techniques/html/H57"
         ]
       },
@@ -6811,6 +6834,7 @@
         ],
         "reported": [
           "WCAG2:page-titled",
+          "/",
           "https://www.w3.org/WAI/WCAG22/Techniques/general/G88",
           "https://www.w3.org/WAI/WCAG22/Techniques/html/H25"
         ]
@@ -6955,6 +6979,7 @@
         "reported": [
           "WCAG2:keyboard",
           "WCAG2:keyboard-no-exception",
+          "/",
           "https://www.w3.org/WAI/WCAG22/Techniques/general/G202"
         ]
       },
@@ -7206,7 +7231,8 @@
           "WCAG2:focus-visible"
         ],
         "reported": [
-          "WCAG2:focus-visible"
+          "WCAG2:focus-visible",
+          "/"
         ]
       },
       "coverage": {
@@ -7368,7 +7394,8 @@
         ],
         "reported": [
           "WCAG2:contrast-minimum",
-          "WCAG2:contrast-enhanced"
+          "WCAG2:contrast-enhanced",
+          "/"
         ]
       },
       "coverage": {
@@ -8689,7 +8716,8 @@
           "WCAG2:orientation"
         ],
         "reported": [
-          "WCAG2:orientation"
+          "WCAG2:orientation",
+          "/"
         ]
       },
       "coverage": {
@@ -8910,6 +8938,7 @@
         "reported": [
           "WCAG2:info-and-relationships",
           "WCAG2:name-role-value",
+          "/",
           "https://www.w3.org/WAI/WCAG22/Techniques/aria/ARIA5"
         ]
       },
@@ -9146,7 +9175,8 @@
           "WCAG2:name-role-value"
         ],
         "reported": [
-          "WCAG2:name-role-value"
+          "WCAG2:name-role-value",
+          "/"
         ]
       },
       "coverage": {
@@ -9352,7 +9382,8 @@
           "WCAG2:info-and-relationships"
         ],
         "reported": [
-          "WCAG2:info-and-relationships"
+          "WCAG2:info-and-relationships",
+          "/"
         ]
       },
       "coverage": {
@@ -9762,7 +9793,8 @@
           "WCAG2:info-and-relationships"
         ],
         "reported": [
-          "WCAG2:info-and-relationships"
+          "WCAG2:info-and-relationships",
+          "/"
         ]
       },
       "coverage": {
@@ -10630,6 +10662,7 @@
         ],
         "reported": [
           "WCAG2:headings-and-labels",
+          "/",
           "https://www.w3.org/WAI/WCAG22/Techniques/general/G130"
         ]
       },
@@ -10865,6 +10898,7 @@
         "expected": [],
         "reported": [
           "WCAG2:info-and-relationships",
+          "/",
           "https://www.w3.org/WAI/WCAG22/Techniques/html/H42"
         ]
       },
@@ -11117,6 +11151,7 @@
         ],
         "reported": [
           "WCAG2:language-of-page",
+          "/",
           "https://www.w3.org/WAI/WCAG22/Techniques/html/H57"
         ]
       },
@@ -11368,7 +11403,8 @@
           "WCAG2:name-role-value"
         ],
         "reported": [
-          "WCAG2:name-role-value"
+          "WCAG2:name-role-value",
+          "/"
         ]
       },
       "coverage": {
@@ -11739,7 +11775,8 @@
           "WCAG2:name-role-value"
         ],
         "reported": [
-          "WCAG2:name-role-value"
+          "WCAG2:name-role-value",
+          "/"
         ]
       },
       "coverage": {
@@ -12308,7 +12345,8 @@
         ],
         "reported": [
           "WCAG2:link-purpose-in-context",
-          "WCAG2:link-purpose-link-only"
+          "WCAG2:link-purpose-link-only",
+          "/"
         ]
       },
       "coverage": {
@@ -12713,6 +12751,7 @@
         ],
         "reported": [
           "WCAG2:info-and-relationships",
+          "/",
           "https://www.w3.org/WAI/WCAG22/Techniques/html/H43"
         ]
       },
@@ -13079,6 +13118,7 @@
         ],
         "reported": [
           "WCAG2:label-in-name",
+          "/",
           "https://www.w3.org/WAI/WCAG22/Techniques/general/G208"
         ]
       },
