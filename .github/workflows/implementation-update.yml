@@ -10,6 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
+        with:
+          token: '${{ secrets.W3CGRUNTBOT_TOKEN }}'
       - uses: actions/setup-node@v2
       - uses: actions/cache@v3
         with:
@@ -20,8 +22,6 @@ jobs:
       - run: npm install act-tools
       - run: node ./.github/scripts/implementation-update.mjs
       - name: Commit and push
-        env:
-          API_TOKEN_GITHUB: ${{ secrets.W3CGRUNTBOT_TOKEN }} # add as PAT (https://github.com/settings/tokens) as a secret
         run: |
           git config user.name w3c-grunt-bot
           git config user.email w3c-grunt-bot@users.noreply.github.com
