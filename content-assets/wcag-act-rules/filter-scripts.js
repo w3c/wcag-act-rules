@@ -1,7 +1,7 @@
 /**
  * WCAG Success Criteria filtering script
  * Provides functionality to filter criteria based on conformance level and rule status
- * Default: Level AAA criteria and secondary rules are hidden, proposed rules are shown
+ * Default: Level AAA criteria and deprecated rules are hidden, proposed rules are shown
  */
 (function() {
   const FILTERS = {
