@@ -9,8 +9,9 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 5c01ea</p>
-  <p><strong>Date:</strong> Updated 7 October 2025</p>
+  <p><strong>Date:</strong> Updated 8 December 2025</p>
   <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/Jym77">Jean-Yves Moyen</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
+  <p>This rule conforms to <a href="https://www.w3.org/TR/act-rules-format-1.1/">ACT Rules Format 1.1</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
   
   <p><strong>Assets:</strong> Test cases use assets from the following sources: JFK's "We Choose the Moon" speech excerpt is courtesy of NASA.</p>
@@ -22,14 +23,14 @@ rule_meta:
   original_file: aria-state-or-property-permitted-5c01ea.md
   description: |
     This rule checks that WAI-ARIA states or properties are allowed for the element they are specified on.
-  last_modified: 7 October 2025
+  last_modified: 8 December 2025
 ---
 
 ## Applicability
 
 This rule applies to any [WAI-ARIA state or property][] that is specified on an [HTML or SVG element][namespaced element] that is [included in the accessibility tree][].
 
-## Expectation 1
+## Expectation
 
 For each test target, one of the following is true:
 
@@ -37,13 +38,9 @@ For each test target, one of the following is true:
 - **semantic role**: the test target is an [inherited][], [supported][], or [required][] [state][] or [property][] of the [semantic role][] of the element on which the test target is specified; or
 - **language feature**: the test target is specified on an [HTML element][namespaced element] and is allowed on that element. Which ARIA states or properties may be used on which element is described in [ARIA in HTML](https://w3c.github.io/html-aria/).
 
-## Expectation 2
-
-No test target is [prohibited][] on the [semantic role][] of the element on which it is specified.
-
 ## Background
 
-The presence of prohibited ARIA attributes is often the result of a developer using an incorrect role, or a misunderstanding of the attribute. These attributes are ignored by browsers and other assistive technologies. This often means that a state or property which should exist is missing.
+The use of ARIA attributes that are not supported by a role is often the result of a developer using either an incorrect role, or misunderstanding the attribute. These attributes are ignored by browsers and other assistive technologies. This often means that information that should exist is missing to assistive technology users.
 
 In HTML, there are language features that do not have corresponding implicit WAI-ARIA semantics. As per [ARIA in HTML](https://www.w3.org/TR/html-aria/), those elements can have [global states or properties][global]. Some of those elements can also have [inherited][], [supported][], or [required][] [states][state] or [properties][property] that correspond to a [WAI-ARIA role](https://www.w3.org/TR/wai-aria-1.2/#introroles). For example, the `audio` element has no corresponding ARIA semantics but it can have [inherited][], [supported][], or [required][] [states][state] or [properties][property] of the [`application` role](https://www.w3.org/TR/wai-aria-1.2/#application).
 
@@ -61,6 +58,7 @@ Implementation of [Presentational Roles Conflict Resolution][] varies from one b
 
 ### Related rules
 
+- [ARIA global properties not used where prohibited](https://www.w3.org/WAI/standards-guidelines/act/rules/kb1m8s/)
 - [ARIA state or property has valid value](https://www.w3.org/WAI/standards-guidelines/act/rules/6a7281/)
 
 ### Other Resources
@@ -158,7 +156,7 @@ The `aria-busy` [state][] is a [global][] [state][] that is [supported][] by all
 
 <a class="example-link" title="Passed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/655b73c1435335a6a16852210787dc3621e73cef.html">Open in a new tab</a>
 
-The `aria-label` [property][] is a [global][] [property][]. It is allowed on any [semantic role][], except where specifically prohibited.
+The `aria-label` [property][] is a [global][] [property][].
 
 ```html
 <div role="button" aria-label="OK">✓</div>
@@ -208,7 +206,7 @@ The `aria-expanded` [property][] is [required][] for the [semantic][semantic rol
 
 <a class="example-link" title="Passed Example 9" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/6c0718872b1d915b49c48fe135b9fc251bcff561.html">Open in a new tab</a>
 
-The `aria-label` [property][] is [global][]. It is allowed on any [semantic role][], except where specifically prohibited, including roles from the [WAI-ARIA Graphics Module](https://www.w3.org/TR/graphics-aria-1.0). This rule is applicable to SVG elements.
+The `aria-label` [property][] is [global][]. It is allowed on any [semantic role][], including roles from the [WAI-ARIA Graphics Module](https://www.w3.org/TR/graphics-aria-1.0). This rule is applicable to SVG elements.
 
 ```html
 <svg xmlns="http://www.w3.org/2000/svg" role="graphics-object" width="100" height="100" aria-label="yellow circle">
@@ -288,26 +286,6 @@ The `aria-orientation` property may not be used on `audio` element, nor can it b
 
 ```html
 <audio src="/test-assets/moon-audio/moon-speech.mp3" controls aria-orientation="horizontal"></audio>
-```
-
-#### Failed Example 3
-
-<a class="example-link" title="Failed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/d7efe21b64461052aef8d3e0fc96049dda787039.html">Open in a new tab</a>
-
-The `aria-label` property is [prohibited][] for an element with a `generic` role.
-
-```html
-<div aria-label="Bananas"></div>
-```
-
-#### Failed Example 4
-
-<a class="example-link" title="Failed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/eedabccf6e01bca36ee87a2af00e9d7a63a7d615.html">Open in a new tab</a>
-
-The `aria-label` property is [prohibited][] for an element with a `paragraph` role.
-
-```html
-<div role="paragraph" aria-label="Bananas"></div>
 ```
 
 ### Inapplicable
@@ -480,7 +458,6 @@ The _WAI ARIA Specifications_ group both the WAI ARIA W3C Recommendation and ARI
 [outcome property]: https://www.w3.org/TR/EARL10-Schema/#outcome
 [presentational roles conflict resolution]: https://www.w3.org/TR/wai-aria-1.2/#conflict_resolution_presentation_none 'Presentational Roles Conflict Resolution'
 [programmatically hidden]: #programmatically-hidden 'Definition of Programmatically Hidden'
-[prohibited]: https://www.w3.org/TR/wai-aria-1.2/#prohibitedattributes 'WAI-ARIA 1.2 Definition of Prohibited States and Properties'
 [property]: https://www.w3.org/TR/wai-aria-1.2/#dfn-property 'Definition of ARIA Property'
 [pure decoration]: https://www.w3.org/TR/WCAG22/#dfn-pure-decoration 'WCAG definition of Pure Decoration'
 [reflect]: https://html.spec.whatwg.org/multipage/common-dom-interfaces.html#reflecting-content-attributes-in-idl-attributes 'HTML specification of Reflecting Content Attributes in IDL Attributes'
