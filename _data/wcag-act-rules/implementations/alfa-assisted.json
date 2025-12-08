@@ -10,10 +10,10 @@
     "untested": 2
   },
   "proposedRules": {
-    "complete": 25,
-    "partial": 4,
+    "complete": 26,
+    "partial": 3,
     "inconsistent": 3,
-    "untested": 18
+    "untested": 19
   },
   "actRuleMapping": [
     {
@@ -9369,6 +9369,15 @@
       ]
     },
     {
+      "ruleId": "kb1m8s",
+      "ruleName": "ARIA global properties not used where prohibited",
+      "ruleApproved": false,
+      "procedureNames": [],
+      "consistency": null,
+      "coverage": null,
+      "testCaseResults": []
+    },
+    {
       "ruleId": "ff89c9",
       "ruleName": "ARIA required context role",
       "ruleApproved": false,
@@ -10183,10 +10192,10 @@
         ]
       },
       "coverage": {
-        "covered": 19,
+        "covered": 17,
         "untested": 0,
         "cantTell": 0,
-        "testCaseTotal": 19
+        "testCaseTotal": 17
       },
       "testCaseResults": [
         {
@@ -10403,36 +10412,6 @@
           "testcaseId": "1449cc0526959d274a89345e9b479846577aac5c",
           "testCaseName": "Failed Example 2",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/1449cc0526959d274a89345e9b479846577aac5c.html",
-          "testCaseApproved": false,
-          "expected": "failed",
-          "procedureResults": [
-            {
-              "procedureName": "sia-r18",
-              "outcomes": [
-                "failed"
-              ]
-            }
-          ]
-        },
-        {
-          "testcaseId": "d7efe21b64461052aef8d3e0fc96049dda787039",
-          "testCaseName": "Failed Example 3",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/d7efe21b64461052aef8d3e0fc96049dda787039.html",
-          "testCaseApproved": false,
-          "expected": "failed",
-          "procedureResults": [
-            {
-              "procedureName": "sia-r18",
-              "outcomes": [
-                "failed"
-              ]
-            }
-          ]
-        },
-        {
-          "testcaseId": "eedabccf6e01bca36ee87a2af00e9d7a63a7d615",
-          "testCaseName": "Failed Example 4",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/eedabccf6e01bca36ee87a2af00e9d7a63a7d615.html",
           "testCaseApproved": false,
           "expected": "failed",
           "procedureResults": [
@@ -15122,7 +15101,7 @@
       "procedureNames": [
         "sia-r33"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
@@ -15134,7 +15113,7 @@
         "covered": 8,
         "untested": 0,
         "cantTell": 0,
-        "testCaseTotal": 9
+        "testCaseTotal": 8
       },
       "testCaseResults": [
         {
@@ -15213,23 +15192,8 @@
           ]
         },
         {
-          "testcaseId": "e6ef6ab47c239fc0abcd3ccb7ac8ddbfa6aa6d53",
-          "testCaseName": "Failed Example 3",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ee13b5/e6ef6ab47c239fc0abcd3ccb7ac8ddbfa6aa6d53.html",
-          "testCaseApproved": false,
-          "expected": "failed",
-          "procedureResults": [
-            {
-              "procedureName": "sia-r33",
-              "outcomes": [
-                "passed"
-              ]
-            }
-          ]
-        },
-        {
           "testcaseId": "75a78f5206ea6052ad6a133920c50d7ac7cd05d4",
-          "testCaseName": "Failed Example 4",
+          "testCaseName": "Failed Example 3",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ee13b5/75a78f5206ea6052ad6a133920c50d7ac7cd05d4.html",
           "testCaseApproved": false,
           "expected": "failed",
