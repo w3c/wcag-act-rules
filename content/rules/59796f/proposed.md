@@ -9,8 +9,9 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 59796f</p>
-  <p><strong>Date:</strong> Updated 7 October 2025</p>
+  <p><strong>Date:</strong> Updated 8 December 2025</p>
   <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
+  <p>This rule conforms to <a href="https://www.w3.org/TR/act-rules-format-1.1/">ACT Rules Format 1.1</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
 rule_meta:
@@ -20,7 +21,7 @@ rule_meta:
   original_file: image-button-non-empty-accessible-name-59796f.md
   description: |
     This rule checks that each image button element has a non-empty accessible name.
-  last_modified: 7 October 2025
+  last_modified: 8 December 2025
   scs_tested:
     - handle: Non-text Content
       num: 1.1.1
