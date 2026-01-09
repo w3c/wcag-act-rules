@@ -9,8 +9,9 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> ee13b5</p>
-  <p><strong>Date:</strong> Updated 9 October 2025</p>
+  <p><strong>Date:</strong> Updated 8 December 2025</p>
   <p><strong>Authors:</strong> <a href="https://www.linkedin.com/in/brianbors/">Brian Bors</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
+  <p>This rule conforms to <a href="https://www.w3.org/TR/act-rules-format-1.1/">ACT Rules Format 1.1</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
   
   <p><strong>Assets:</strong> Test cases use assets from the following sources: Rabbit video is © copyright 2008, Blender Foundation / <a href="https://www.bigbuckbunny.org">www.bigbuckbunny.org</a></p>
@@ -22,7 +23,7 @@ rule_meta:
   original_file: video-only-transcript-ee13b5.md
   description: |
     Non-streaming `video` elements without audio must have all visual information available in a transcript.
-  last_modified: 9 October 2025
+  last_modified: 8 December 2025
 ---
 
 ## Applicability
@@ -226,25 +227,7 @@ This `video` element, which has no audio, has an incorrect text transcript avail
 
 #### Failed Example 3
 
-<a class="example-link" title="Failed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ee13b5/e6ef6ab47c239fc0abcd3ccb7ac8ddbfa6aa6d53.html">Open in a new tab</a>
-
-This `video` element, which has no audio, has a text transcript available on the same page, but the transcript is not [visible][].
-
-```html
-<html lang="en">
-<video controls>
-  <source src="/test-assets/rabbit-video/silent.mp4" type="video/mp4"></source>
-  <source src="/test-assets/rabbit-video/silent.webm" type="video/webm"></source>
-</video>
-<p style="text-indent: -9999px;">This video shows a giant fat rabbit climbing out of a hole in the ground.
-He stretches, yawns, and then starts walking.
-Then he stops to scratch his bottom.</p>
-</html>
-```
-
-#### Failed Example 4
-
-<a class="example-link" title="Failed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ee13b5/75a78f5206ea6052ad6a133920c50d7ac7cd05d4.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/ee13b5/75a78f5206ea6052ad6a133920c50d7ac7cd05d4.html">Open in a new tab</a>
 
 This `video` element, which has no audio, has a text transcript available on the same page, but the transcript is not [included in the accessibility tree][].
 
