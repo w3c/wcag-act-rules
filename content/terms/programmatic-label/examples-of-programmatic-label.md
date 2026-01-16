@@ -87,6 +87,6 @@ Element L is a _programmatic label_ of target element T if either:
 
 **Note**: a given element may have more than one programmatic label.
 
-[programmatic label]: /glossary/#programmatic-label
+[programmatic label]: #programmatic-label
 [labelable]: https://html.spec.whatwg.org/multipage/forms.html#category-label 'Definition of labelable elements'
 [labeled control]: https://html.spec.whatwg.org/multipage/forms.html#labeled-control 'Definition of labeled control'

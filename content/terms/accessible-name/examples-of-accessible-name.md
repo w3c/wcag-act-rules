@@ -66,7 +66,7 @@ The `button` element has an accessible name of "Share ACT rules" given by the as
 
 ## Using text content
 
-This `a` element has an accessible name of "ACT rules" given from its content. Note that not all [semantic roles](#semantic-role) allow [name from content](https://www.w3.org/TR/wai-aria/#namefromcontent).
+This `a` element has an accessible name of "ACT rules" given from its content. Note that not all [semantic roles][] allow [name from content](https://www.w3.org/TR/wai-aria/#namefromcontent).
 
 ```html
 <a href="https://act-rules.github.io/">ACT rules</a>
@@ -96,7 +96,7 @@ This `span` element has an empty accessible name (`""`) because `span` is not a 
 
 ### Accessible name {#accessible-name}
 
-The _accessible name_ is the programmatically determined name of a user interface element that is [included in the accessibility tree](#included-in-the-accessibility-tree).
+The _accessible name_ is the programmatically determined name of a user interface element that is [included in the accessibility tree][].
 
 The accessible name is calculated using the [accessible name and description computation][].
 
@@ -106,5 +106,8 @@ For native markup languages, such as HTML and SVG, additional information on how
 
 **Note:** As per the [accessible name and description computation][], accessible names are [flat string](https://www.w3.org/TR/accname-1.1/#terminology) trimmed of leading and trailing whitespace. Notably, it is not possible for a non-empty accessible name to be composed only of whitespace since these must be trimmed.
 
+[accessible name]: #accessible-name
 [accessible name and description computation]: https://www.w3.org/TR/accname 'Accessible Name and Description Computation'
 [examples of accessible name]: https://act-rules.github.io/pages/examples/accessible-name/
+[included in the accessibility tree]: https://act-rules.github.io/glossary/#included-in-the-accessibility-tree
+[semantic roles]: https://act-rules.github.io/glossary/#semantic-role
