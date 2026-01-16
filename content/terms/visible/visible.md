@@ -136,4 +136,4 @@ Content perceivable through sight.
 
 Content is considered _visible_ if making it fully transparent would result in a difference in the pixels rendered for any part of the document that is currently within the viewport or can be brought into the viewport via scrolling.
 
-[visible]: /glossary/#visible
+[visible]: #visible

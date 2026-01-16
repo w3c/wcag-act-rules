@@ -100,10 +100,9 @@ Content perceivable through sight.
 
 Content is considered _visible_ if making it fully transparent would result in a difference in the pixels rendered for any part of the document that is currently within the viewport or can be brought into the viewport via scrolling.
 
-
 [accessible name]: #accessible-name
 [focusable]: #focusable
-[included in the accessibility tree]: /glossary/#included-in-the-accessibility-tree
+[included in the accessibility tree]: https://act-rules.github.io/glossary/#included-in-the-accessibility-tree
 [visible]: #visible
 [sequential focus navigation]: https://html.spec.whatwg.org/multipage/interaction.html#sequential-focus-navigation
 [tabindex value]: https://html.spec.whatwg.org/#tabindex-value

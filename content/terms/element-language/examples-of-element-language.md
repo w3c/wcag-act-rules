@@ -295,16 +295,15 @@ For more details, see [examples of visible](https://act-rules.github.io/pages/ex
 [tabindex value]: https://html.spec.whatwg.org/#tabindex-value
 [test subject]: https://www.w3.org/TR/act-rules-format-1.1/#test-subject
 [test target]: https://www.w3.org/TR/act-rules-format/#test-target
-[text inheriting its programmatic language]: #text-inheriting-language:text 'Definition of Text Inheriting its Programmatic Language from an Element'
+[text inheriting its programmatic language]: #text-inheriting-language 'Definition of Text Inheriting its Programmatic Language from an Element'
 [text nodes]: https://dom.spec.whatwg.org/#text 'DOM text, as of 2020/06/05'
 [top-level browsing context]: https://html.spec.whatwg.org/#top-level-browsing-context 'HTML top-level browsing context, as of 2020/06/05'
 [type field]: https://www.rfc-editor.org/rfc/rfc5646.html#section-3.1.3
 [usc312]: https://www.w3.org/WAI/WCAG22/Understanding/language-of-parts.html 'Understanding Success Criterion 3.1.2: Language of Parts'
 [visible]: #visible 'Definition of Visible'
 [wai-aria specification]: https://www.w3.org/TR/wai-aria-1.2/#propcharacteristic_value 'WAI-ARIA Specification of States and Properties Value'
-[most common language]: /glossary/#most-common-element-language 'Definition of Common Language of an Element'
-[default language]: /glossary/#default-page-language 'Definition of Default Page Language'
+[default language]: https://act-rules.github.io/glossary/#default-page-language 'Definition of Default Page Language'
 [document element]: https://dom.spec.whatwg.org/#document-element 'DOM definition of Document Element'
-[element inheriting its programmatic language]: /glossary/#text-inheriting-language 'Definition of Element Inheriting its Programmatic Language From an Element'
-[elements inheriting their programmatic language]: /glossary/#text-inheriting-language 'Definition of Elements Inheriting their Programmatic Language from an Element'
-[text inheriting its programmatic language]: /glossary/#text-inheriting-language 'Definition of Text Inheriting its Programmatic Language from an Element'
+[element inheriting its programmatic language]: #text-inheriting-language 'Definition of Element Inheriting its Programmatic Language From an Element'
+[elements inheriting their programmatic language]: #text-inheriting-language 'Definition of Elements Inheriting their Programmatic Language from an Element'
+[text inheriting its programmatic language]: #text-inheriting-language 'Definition of Text Inheriting its Programmatic Language from an Element'
