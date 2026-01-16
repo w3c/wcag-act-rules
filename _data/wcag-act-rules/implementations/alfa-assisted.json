@@ -1,8 +1,8 @@
 {
   "vendor": "Siteimprove",
   "name": "Alfa (semi-automated)",
-  "version": "0.104.0",
-  "lastModified": "13 October 2025",
+  "version": "0.108.2",
+  "lastModified": "22 December 2025",
   "approvedRules": {
     "complete": 29,
     "partial": 0,
@@ -10,10 +10,10 @@
     "untested": 2
   },
   "proposedRules": {
-    "complete": 24,
-    "partial": 5,
+    "complete": 26,
+    "partial": 3,
     "inconsistent": 3,
-    "untested": 18
+    "untested": 19
   },
   "actRuleMapping": [
     {
@@ -29,6 +29,7 @@
         "expected": [],
         "reported": [
           "WCAG2:info-and-relationships",
+          "/",
           "https://www.w3.org/WAI/WCAG22/Techniques/aria/ARIA4",
           "https://www.w3.org/WAI/WCAG22/Techniques/general/G108"
         ]
@@ -705,6 +706,7 @@
         ],
         "reported": [
           "WCAG2:language-of-parts",
+          "/",
           "https://www.w3.org/WAI/WCAG22/Techniques/html/H58"
         ]
       },
@@ -1016,7 +1018,8 @@
           "WCAG2:name-role-value"
         ],
         "reported": [
-          "WCAG2:name-role-value"
+          "WCAG2:name-role-value",
+          "/"
         ]
       },
       "coverage": {
@@ -1162,7 +1165,8 @@
           "WCAG2:keyboard"
         ],
         "reported": [
-          "WCAG2:keyboard"
+          "WCAG2:keyboard",
+          "/"
         ]
       },
       "coverage": {
@@ -1338,7 +1342,8 @@
           "WCAG2:text-spacing"
         ],
         "reported": [
-          "WCAG2:text-spacing"
+          "WCAG2:text-spacing",
+          "/"
         ]
       },
       "coverage": {
@@ -1649,7 +1654,8 @@
           "WCAG2:text-spacing"
         ],
         "reported": [
-          "WCAG2:text-spacing"
+          "WCAG2:text-spacing",
+          "/"
         ]
       },
       "coverage": {
@@ -1960,7 +1966,8 @@
           "WCAG2:text-spacing"
         ],
         "reported": [
-          "WCAG2:text-spacing"
+          "WCAG2:text-spacing",
+          "/"
         ]
       },
       "coverage": {
@@ -2346,7 +2353,8 @@
           "WCAG2:identify-input-purpose"
         ],
         "reported": [
-          "WCAG2:identify-input-purpose"
+          "WCAG2:identify-input-purpose",
+          "/"
         ]
       },
       "coverage": {
@@ -2822,7 +2830,8 @@
           "WCAG2:name-role-value"
         ],
         "reported": [
-          "WCAG2:name-role-value"
+          "WCAG2:name-role-value",
+          "/"
         ]
       },
       "coverage": {
@@ -3277,7 +3286,8 @@
           "WCAG2:name-role-value"
         ],
         "reported": [
-          "WCAG2:name-role-value"
+          "WCAG2:name-role-value",
+          "/"
         ]
       },
       "coverage": {
@@ -3604,6 +3614,7 @@
         ],
         "reported": [
           "WCAG2:language-of-page",
+          "/",
           "https://www.w3.org/WAI/WCAG22/Techniques/html/H57"
         ]
       },
@@ -3736,6 +3747,7 @@
         ],
         "reported": [
           "WCAG2:page-titled",
+          "/",
           "https://www.w3.org/WAI/WCAG22/Techniques/general/G88",
           "https://www.w3.org/WAI/WCAG22/Techniques/html/H25"
         ]
@@ -3961,6 +3973,7 @@
         "reported": [
           "WCAG2:non-text-content",
           "WCAG2:name-role-value",
+          "/",
           "https://www.w3.org/WAI/WCAG22/Techniques/general/G94",
           "https://www.w3.org/WAI/WCAG22/Techniques/general/G95"
         ]
@@ -4169,6 +4182,7 @@
         ],
         "reported": [
           "WCAG2:non-text-content",
+          "/",
           "https://www.w3.org/WAI/WCAG22/Techniques/general/G94",
           "https://www.w3.org/WAI/WCAG22/Techniques/general/G95"
         ]
@@ -4470,6 +4484,7 @@
           "WCAG2:link-purpose-in-context",
           "WCAG2:link-purpose-link-only",
           "WCAG2:name-role-value",
+          "/",
           "https://www.w3.org/WAI/WCAG22/Techniques/general/G91"
         ]
       },
@@ -4916,7 +4931,8 @@
           "WCAG2:non-text-content"
         ],
         "reported": [
-          "WCAG2:non-text-content"
+          "WCAG2:non-text-content",
+          "/"
         ]
       },
       "coverage": {
@@ -5092,7 +5108,8 @@
           "WCAG2:name-role-value"
         ],
         "reported": [
-          "WCAG2:name-role-value"
+          "WCAG2:name-role-value",
+          "/"
         ]
       },
       "coverage": {
@@ -5299,6 +5316,7 @@
         ],
         "reported": [
           "WCAG2:info-and-relationships",
+          "/",
           "https://www.w3.org/WAI/WCAG22/Techniques/html/H43"
         ]
       },
@@ -5610,7 +5628,8 @@
           "WCAG2:name-role-value"
         ],
         "reported": [
-          "WCAG2:name-role-value"
+          "WCAG2:name-role-value",
+          "/"
         ]
       },
       "coverage": {
@@ -5864,6 +5883,7 @@
           "WCAG2:timing-adjustable",
           "WCAG2:interruptions",
           "WCAG2:change-on-request",
+          "/",
           "https://www.w3.org/WAI/WCAG22/Techniques/general/G110",
           "https://www.w3.org/WAI/WCAG22/Techniques/html/H76"
         ]
@@ -6116,7 +6136,8 @@
           "WCAG2:resize-text"
         ],
         "reported": [
-          "WCAG2:resize-text"
+          "WCAG2:resize-text",
+          "/"
         ]
       },
       "coverage": {
@@ -6382,7 +6403,8 @@
           "WCAG2:non-text-content"
         ],
         "reported": [
-          "WCAG2:non-text-content"
+          "WCAG2:non-text-content",
+          "/"
         ]
       },
       "coverage": {
@@ -6679,6 +6701,7 @@
         ],
         "reported": [
           "WCAG2:language-of-page",
+          "/",
           "https://www.w3.org/WAI/WCAG22/Techniques/html/H57"
         ]
       },
@@ -6811,6 +6834,7 @@
         ],
         "reported": [
           "WCAG2:page-titled",
+          "/",
           "https://www.w3.org/WAI/WCAG22/Techniques/general/G88",
           "https://www.w3.org/WAI/WCAG22/Techniques/html/H25"
         ]
@@ -6955,6 +6979,7 @@
         "reported": [
           "WCAG2:keyboard",
           "WCAG2:keyboard-no-exception",
+          "/",
           "https://www.w3.org/WAI/WCAG22/Techniques/general/G202"
         ]
       },
@@ -7206,7 +7231,8 @@
           "WCAG2:focus-visible"
         ],
         "reported": [
-          "WCAG2:focus-visible"
+          "WCAG2:focus-visible",
+          "/"
         ]
       },
       "coverage": {
@@ -7368,7 +7394,8 @@
         ],
         "reported": [
           "WCAG2:contrast-minimum",
-          "WCAG2:contrast-enhanced"
+          "WCAG2:contrast-enhanced",
+          "/"
         ]
       },
       "coverage": {
@@ -8689,7 +8716,8 @@
           "WCAG2:orientation"
         ],
         "reported": [
-          "WCAG2:orientation"
+          "WCAG2:orientation",
+          "/"
         ]
       },
       "coverage": {
@@ -8910,6 +8938,7 @@
         "reported": [
           "WCAG2:info-and-relationships",
           "WCAG2:name-role-value",
+          "/",
           "https://www.w3.org/WAI/WCAG22/Techniques/aria/ARIA5"
         ]
       },
@@ -9146,7 +9175,8 @@
           "WCAG2:name-role-value"
         ],
         "reported": [
-          "WCAG2:name-role-value"
+          "WCAG2:name-role-value",
+          "/"
         ]
       },
       "coverage": {
@@ -9339,6 +9369,15 @@
       ]
     },
     {
+      "ruleId": "kb1m8s",
+      "ruleName": "ARIA global properties not used where prohibited",
+      "ruleApproved": false,
+      "procedureNames": [],
+      "consistency": null,
+      "coverage": null,
+      "testCaseResults": []
+    },
+    {
       "ruleId": "ff89c9",
       "ruleName": "ARIA required context role",
       "ruleApproved": false,
@@ -9352,7 +9391,8 @@
           "WCAG2:info-and-relationships"
         ],
         "reported": [
-          "WCAG2:info-and-relationships"
+          "WCAG2:info-and-relationships",
+          "/"
         ]
       },
       "coverage": {
@@ -9762,7 +9802,8 @@
           "WCAG2:info-and-relationships"
         ],
         "reported": [
-          "WCAG2:info-and-relationships"
+          "WCAG2:info-and-relationships",
+          "/"
         ]
       },
       "coverage": {
@@ -10151,10 +10192,10 @@
         ]
       },
       "coverage": {
-        "covered": 19,
+        "covered": 17,
         "untested": 0,
         "cantTell": 0,
-        "testCaseTotal": 19
+        "testCaseTotal": 17
       },
       "testCaseResults": [
         {
@@ -10383,36 +10424,6 @@
           ]
         },
         {
-          "testcaseId": "d7efe21b64461052aef8d3e0fc96049dda787039",
-          "testCaseName": "Failed Example 3",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/d7efe21b64461052aef8d3e0fc96049dda787039.html",
-          "testCaseApproved": false,
-          "expected": "failed",
-          "procedureResults": [
-            {
-              "procedureName": "sia-r18",
-              "outcomes": [
-                "failed"
-              ]
-            }
-          ]
-        },
-        {
-          "testcaseId": "eedabccf6e01bca36ee87a2af00e9d7a63a7d615",
-          "testCaseName": "Failed Example 4",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/eedabccf6e01bca36ee87a2af00e9d7a63a7d615.html",
-          "testCaseApproved": false,
-          "expected": "failed",
-          "procedureResults": [
-            {
-              "procedureName": "sia-r18",
-              "outcomes": [
-                "failed"
-              ]
-            }
-          ]
-        },
-        {
           "testcaseId": "2d40412f73292f3e93ce605ad5329f3ffed78ed3",
           "testCaseName": "Inapplicable Example 1",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/2d40412f73292f3e93ce605ad5329f3ffed78ed3.html",
@@ -10586,6 +10597,7 @@
         ],
         "reported": [
           "WCAG2:audio-control",
+          "/",
           "https://www.w3.org/WAI/WCAG22/Techniques/general/G60",
           "https://www.w3.org/WAI/WCAG22/Techniques/general/G170",
           "https://www.w3.org/WAI/WCAG22/Techniques/general/G171"
@@ -10735,6 +10747,7 @@
         ],
         "reported": [
           "WCAG2:audio-only-and-video-only-prerecorded",
+          "/",
           "https://www.w3.org/WAI/WCAG22/Techniques/general/G158"
         ]
       },
@@ -11504,6 +11517,7 @@
         ],
         "reported": [
           "WCAG2:headings-and-labels",
+          "/",
           "https://www.w3.org/WAI/WCAG22/Techniques/general/G130"
         ]
       },
@@ -11739,6 +11753,7 @@
         "expected": [],
         "reported": [
           "WCAG2:info-and-relationships",
+          "/",
           "https://www.w3.org/WAI/WCAG22/Techniques/html/H42"
         ]
       },
@@ -11991,6 +12006,7 @@
         ],
         "reported": [
           "WCAG2:language-of-page",
+          "/",
           "https://www.w3.org/WAI/WCAG22/Techniques/html/H57"
         ]
       },
@@ -12242,7 +12258,8 @@
           "WCAG2:name-role-value"
         ],
         "reported": [
-          "WCAG2:name-role-value"
+          "WCAG2:name-role-value",
+          "/"
         ]
       },
       "coverage": {
@@ -12613,7 +12630,8 @@
           "WCAG2:name-role-value"
         ],
         "reported": [
-          "WCAG2:name-role-value"
+          "WCAG2:name-role-value",
+          "/"
         ]
       },
       "coverage": {
@@ -12813,7 +12831,8 @@
           "WCAG2:error-identification"
         ],
         "reported": [
-          "WCAG2:error-identification"
+          "WCAG2:error-identification",
+          "/"
         ]
       },
       "coverage": {
@@ -13334,7 +13353,8 @@
         ],
         "reported": [
           "WCAG2:link-purpose-in-context",
-          "WCAG2:link-purpose-link-only"
+          "WCAG2:link-purpose-link-only",
+          "/"
         ]
       },
       "coverage": {
@@ -13739,6 +13759,7 @@
         ],
         "reported": [
           "WCAG2:info-and-relationships",
+          "/",
           "https://www.w3.org/WAI/WCAG22/Techniques/html/H43"
         ]
       },
@@ -14006,6 +14027,7 @@
         ],
         "reported": [
           "WCAG2:captions-prerecorded",
+          "/",
           "https://www.w3.org/WAI/WCAG22/Techniques/general/G87",
           "https://www.w3.org/WAI/WCAG22/Techniques/general/G93",
           "https://www.w3.org/WAI/WCAG22/Techniques/html/H95"
@@ -14127,6 +14149,7 @@
           "WCAG2:audio-description-or-media-alternative-prerecorded",
           "WCAG2:audio-description-prerecorded",
           "WCAG2:media-alternative-prerecorded",
+          "/",
           "https://www.w3.org/WAI/WCAG22/Techniques/general/G8",
           "https://www.w3.org/WAI/WCAG22/Techniques/general/G69",
           "https://www.w3.org/WAI/WCAG22/Techniques/general/G78",
@@ -14696,6 +14719,7 @@
         ],
         "reported": [
           "WCAG2:audio-only-and-video-only-prerecorded",
+          "/",
           "https://www.w3.org/WAI/WCAG22/Techniques/general/G159",
           "https://www.w3.org/WAI/WCAG22/Techniques/general/G166"
         ]
@@ -15077,7 +15101,7 @@
       "procedureNames": [
         "sia-r33"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
@@ -15086,10 +15110,10 @@
         ]
       },
       "coverage": {
-        "covered": 6,
-        "untested": 3,
+        "covered": 8,
+        "untested": 0,
         "cantTell": 0,
-        "testCaseTotal": 9
+        "testCaseTotal": 8
       },
       "testCaseResults": [
         {
@@ -15132,7 +15156,7 @@
             {
               "procedureName": "sia-r33",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -15168,23 +15192,8 @@
           ]
         },
         {
-          "testcaseId": "e6ef6ab47c239fc0abcd3ccb7ac8ddbfa6aa6d53",
-          "testCaseName": "Failed Example 3",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ee13b5/e6ef6ab47c239fc0abcd3ccb7ac8ddbfa6aa6d53.html",
-          "testCaseApproved": false,
-          "expected": "failed",
-          "procedureResults": [
-            {
-              "procedureName": "sia-r33",
-              "outcomes": [
-                "untested"
-              ]
-            }
-          ]
-        },
-        {
           "testcaseId": "75a78f5206ea6052ad6a133920c50d7ac7cd05d4",
-          "testCaseName": "Failed Example 4",
+          "testCaseName": "Failed Example 3",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ee13b5/75a78f5206ea6052ad6a133920c50d7ac7cd05d4.html",
           "testCaseApproved": false,
           "expected": "failed",
@@ -15192,7 +15201,7 @@
             {
               "procedureName": "sia-r33",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -15244,6 +15253,7 @@
         ],
         "reported": [
           "WCAG2:audio-description-prerecorded",
+          "/",
           "https://www.w3.org/WAI/WCAG22/Techniques/general/G8",
           "https://www.w3.org/WAI/WCAG22/Techniques/general/G78",
           "https://www.w3.org/WAI/WCAG22/Techniques/general/G173"
@@ -15370,7 +15380,7 @@
       "procedureNames": [
         "sia-r24"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -15382,8 +15392,8 @@
         ]
       },
       "coverage": {
-        "covered": 5,
-        "untested": 4,
+        "covered": 9,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 9
       },
@@ -15428,7 +15438,7 @@
             {
               "procedureName": "sia-r24",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -15443,7 +15453,7 @@
             {
               "procedureName": "sia-r24",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -15488,7 +15498,7 @@
             {
               "procedureName": "sia-r24",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -15503,7 +15513,7 @@
             {
               "procedureName": "sia-r24",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -15540,6 +15550,7 @@
         ],
         "reported": [
           "WCAG2:label-in-name",
+          "/",
           "https://www.w3.org/WAI/WCAG22/Techniques/general/G208"
         ]
       },

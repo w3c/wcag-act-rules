@@ -12,7 +12,7 @@
     "complete": 12,
     "partial": 10,
     "inconsistent": 0,
-    "untested": 28
+    "untested": 29
   },
   "actRuleMapping": [
     {
@@ -8949,6 +8949,15 @@
       ]
     },
     {
+      "ruleId": "kb1m8s",
+      "ruleName": "ARIA global properties not used where prohibited",
+      "ruleApproved": false,
+      "procedureNames": [],
+      "consistency": null,
+      "coverage": null,
+      "testCaseResults": []
+    },
+    {
       "ruleId": "ff89c9",
       "ruleName": "ARIA required context role",
       "ruleApproved": false,
@@ -9760,10 +9769,10 @@
         ]
       },
       "coverage": {
-        "covered": 15,
+        "covered": 13,
         "untested": 4,
         "cantTell": 0,
-        "testCaseTotal": 19
+        "testCaseTotal": 17
       },
       "testCaseResults": [
         {
@@ -9980,36 +9989,6 @@
           "testcaseId": "1449cc0526959d274a89345e9b479846577aac5c",
           "testCaseName": "Failed Example 2",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/1449cc0526959d274a89345e9b479846577aac5c.html",
-          "testCaseApproved": false,
-          "expected": "failed",
-          "procedureResults": [
-            {
-              "procedureName": "5c01ea-test",
-              "outcomes": [
-                "failed"
-              ]
-            }
-          ]
-        },
-        {
-          "testcaseId": "d7efe21b64461052aef8d3e0fc96049dda787039",
-          "testCaseName": "Failed Example 3",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/d7efe21b64461052aef8d3e0fc96049dda787039.html",
-          "testCaseApproved": false,
-          "expected": "failed",
-          "procedureResults": [
-            {
-              "procedureName": "5c01ea-test",
-              "outcomes": [
-                "failed"
-              ]
-            }
-          ]
-        },
-        {
-          "testcaseId": "eedabccf6e01bca36ee87a2af00e9d7a63a7d615",
-          "testCaseName": "Failed Example 4",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/eedabccf6e01bca36ee87a2af00e9d7a63a7d615.html",
           "testCaseApproved": false,
           "expected": "failed",
           "procedureResults": [

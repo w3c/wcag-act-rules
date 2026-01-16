@@ -13,7 +13,7 @@
     "complete": 7,
     "partial": 21,
     "inconsistent": 7,
-    "untested": 15
+    "untested": 16
   },
   "actRuleMapping": [
     {
@@ -8987,6 +8987,15 @@
       "testCaseResults": []
     },
     {
+      "ruleId": "kb1m8s",
+      "ruleName": "ARIA global properties not used where prohibited",
+      "ruleApproved": false,
+      "procedureNames": [],
+      "consistency": null,
+      "coverage": null,
+      "testCaseResults": []
+    },
+    {
       "ruleId": "ff89c9",
       "ruleName": "ARIA required context role",
       "ruleApproved": false,
@@ -9794,10 +9803,10 @@
         "reported": []
       },
       "coverage": {
-        "covered": 12,
-        "untested": 7,
+        "covered": 11,
+        "untested": 6,
         "cantTell": 0,
-        "testCaseTotal": 19
+        "testCaseTotal": 17
       },
       "testCaseResults": [
         {
@@ -10021,36 +10030,6 @@
               "procedureName": "ARIA state or property is permitted",
               "outcomes": [
                 "failed"
-              ]
-            }
-          ]
-        },
-        {
-          "testcaseId": "d7efe21b64461052aef8d3e0fc96049dda787039",
-          "testCaseName": "Failed Example 3",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/d7efe21b64461052aef8d3e0fc96049dda787039.html",
-          "testCaseApproved": false,
-          "expected": "failed",
-          "procedureResults": [
-            {
-              "procedureName": "ARIA state or property is permitted",
-              "outcomes": [
-                "failed"
-              ]
-            }
-          ]
-        },
-        {
-          "testcaseId": "eedabccf6e01bca36ee87a2af00e9d7a63a7d615",
-          "testCaseName": "Failed Example 4",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/eedabccf6e01bca36ee87a2af00e9d7a63a7d615.html",
-          "testCaseApproved": false,
-          "expected": "failed",
-          "procedureResults": [
-            {
-              "procedureName": "ARIA state or property is permitted",
-              "outcomes": [
-                "untested"
               ]
             }
           ]
@@ -15975,9 +15954,9 @@
       },
       "coverage": {
         "covered": 2,
-        "untested": 3,
+        "untested": 2,
         "cantTell": 4,
-        "testCaseTotal": 9
+        "testCaseTotal": 8
       },
       "testCaseResults": [
         {
@@ -16056,23 +16035,8 @@
           ]
         },
         {
-          "testcaseId": "e6ef6ab47c239fc0abcd3ccb7ac8ddbfa6aa6d53",
-          "testCaseName": "Failed Example 3",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ee13b5/e6ef6ab47c239fc0abcd3ccb7ac8ddbfa6aa6d53.html",
-          "testCaseApproved": false,
-          "expected": "failed",
-          "procedureResults": [
-            {
-              "procedureName": "video element visual-only content has transcript",
-              "outcomes": [
-                "untested"
-              ]
-            }
-          ]
-        },
-        {
           "testcaseId": "75a78f5206ea6052ad6a133920c50d7ac7cd05d4",
-          "testCaseName": "Failed Example 4",
+          "testCaseName": "Failed Example 3",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ee13b5/75a78f5206ea6052ad6a133920c50d7ac7cd05d4.html",
           "testCaseApproved": false,
           "expected": "failed",

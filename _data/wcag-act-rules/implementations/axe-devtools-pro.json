@@ -13,7 +13,7 @@
     "complete": 4,
     "partial": 13,
     "inconsistent": 7,
-    "untested": 26
+    "untested": 27
   },
   "actRuleMapping": [
     {
@@ -10556,6 +10556,15 @@
       "testCaseResults": []
     },
     {
+      "ruleId": "kb1m8s",
+      "ruleName": "ARIA global properties not used where prohibited",
+      "ruleApproved": false,
+      "procedureNames": [],
+      "consistency": null,
+      "coverage": null,
+      "testCaseResults": []
+    },
+    {
       "ruleId": "ff89c9",
       "ruleName": "ARIA required context role",
       "ruleApproved": false,
@@ -11308,8 +11317,7 @@
       "ruleName": "ARIA state or property is permitted",
       "ruleApproved": false,
       "procedureNames": [
-        "aria-allowed-attr",
-        "aria-prohibited-attr"
+        "aria-allowed-attr"
       ],
       "consistency": "partial",
       "accessibilityRequirements": {
@@ -11320,10 +11328,10 @@
         ]
       },
       "coverage": {
-        "covered": 12,
-        "untested": 7,
+        "covered": 11,
+        "untested": 6,
         "cantTell": 0,
-        "testCaseTotal": 19
+        "testCaseTotal": 17
       },
       "testCaseResults": [
         {
@@ -11335,12 +11343,6 @@
           "procedureResults": [
             {
               "procedureName": "aria-allowed-attr",
-              "outcomes": [
-                "passed"
-              ]
-            },
-            {
-              "procedureName": "aria-prohibited-attr",
               "outcomes": [
                 "passed"
               ]
@@ -11359,12 +11361,6 @@
               "outcomes": [
                 "passed"
               ]
-            },
-            {
-              "procedureName": "aria-prohibited-attr",
-              "outcomes": [
-                "passed"
-              ]
             }
           ]
         },
@@ -11377,12 +11373,6 @@
           "procedureResults": [
             {
               "procedureName": "aria-allowed-attr",
-              "outcomes": [
-                "passed"
-              ]
-            },
-            {
-              "procedureName": "aria-prohibited-attr",
               "outcomes": [
                 "passed"
               ]
@@ -11401,12 +11391,6 @@
               "outcomes": [
                 "passed"
               ]
-            },
-            {
-              "procedureName": "aria-prohibited-attr",
-              "outcomes": [
-                "passed"
-              ]
             }
           ]
         },
@@ -11419,12 +11403,6 @@
           "procedureResults": [
             {
               "procedureName": "aria-allowed-attr",
-              "outcomes": [
-                "passed"
-              ]
-            },
-            {
-              "procedureName": "aria-prohibited-attr",
               "outcomes": [
                 "passed"
               ]
@@ -11443,12 +11421,6 @@
               "outcomes": [
                 "untested"
               ]
-            },
-            {
-              "procedureName": "aria-prohibited-attr",
-              "outcomes": [
-                "untested"
-              ]
             }
           ]
         },
@@ -11461,12 +11433,6 @@
           "procedureResults": [
             {
               "procedureName": "aria-allowed-attr",
-              "outcomes": [
-                "untested"
-              ]
-            },
-            {
-              "procedureName": "aria-prohibited-attr",
               "outcomes": [
                 "untested"
               ]
@@ -11485,12 +11451,6 @@
               "outcomes": [
                 "untested"
               ]
-            },
-            {
-              "procedureName": "aria-prohibited-attr",
-              "outcomes": [
-                "untested"
-              ]
             }
           ]
         },
@@ -11503,12 +11463,6 @@
           "procedureResults": [
             {
               "procedureName": "aria-allowed-attr",
-              "outcomes": [
-                "passed"
-              ]
-            },
-            {
-              "procedureName": "aria-prohibited-attr",
               "outcomes": [
                 "passed"
               ]
@@ -11527,12 +11481,6 @@
               "outcomes": [
                 "passed"
               ]
-            },
-            {
-              "procedureName": "aria-prohibited-attr",
-              "outcomes": [
-                "passed"
-              ]
             }
           ]
         },
@@ -11545,12 +11493,6 @@
           "procedureResults": [
             {
               "procedureName": "aria-allowed-attr",
-              "outcomes": [
-                "passed"
-              ]
-            },
-            {
-              "procedureName": "aria-prohibited-attr",
               "outcomes": [
                 "passed"
               ]
@@ -11569,12 +11511,6 @@
               "outcomes": [
                 "untested"
               ]
-            },
-            {
-              "procedureName": "aria-prohibited-attr",
-              "outcomes": [
-                "untested"
-              ]
             }
           ]
         },
@@ -11587,12 +11523,6 @@
           "procedureResults": [
             {
               "procedureName": "aria-allowed-attr",
-              "outcomes": [
-                "untested"
-              ]
-            },
-            {
-              "procedureName": "aria-prohibited-attr",
               "outcomes": [
                 "untested"
               ]
@@ -11611,12 +11541,6 @@
               "outcomes": [
                 "failed"
               ]
-            },
-            {
-              "procedureName": "aria-prohibited-attr",
-              "outcomes": [
-                "passed"
-              ]
             }
           ]
         },
@@ -11631,54 +11555,6 @@
               "procedureName": "aria-allowed-attr",
               "outcomes": [
                 "failed"
-              ]
-            },
-            {
-              "procedureName": "aria-prohibited-attr",
-              "outcomes": [
-                "passed"
-              ]
-            }
-          ]
-        },
-        {
-          "testcaseId": "d7efe21b64461052aef8d3e0fc96049dda787039",
-          "testCaseName": "Failed Example 3",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/d7efe21b64461052aef8d3e0fc96049dda787039.html",
-          "testCaseApproved": false,
-          "expected": "failed",
-          "procedureResults": [
-            {
-              "procedureName": "aria-allowed-attr",
-              "outcomes": [
-                "passed"
-              ]
-            },
-            {
-              "procedureName": "aria-prohibited-attr",
-              "outcomes": [
-                "failed"
-              ]
-            }
-          ]
-        },
-        {
-          "testcaseId": "eedabccf6e01bca36ee87a2af00e9d7a63a7d615",
-          "testCaseName": "Failed Example 4",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/eedabccf6e01bca36ee87a2af00e9d7a63a7d615.html",
-          "testCaseApproved": false,
-          "expected": "failed",
-          "procedureResults": [
-            {
-              "procedureName": "aria-allowed-attr",
-              "outcomes": [
-                "untested"
-              ]
-            },
-            {
-              "procedureName": "aria-prohibited-attr",
-              "outcomes": [
-                "untested"
               ]
             }
           ]
@@ -11695,12 +11571,6 @@
               "outcomes": [
                 "untested"
               ]
-            },
-            {
-              "procedureName": "aria-prohibited-attr",
-              "outcomes": [
-                "untested"
-              ]
             }
           ]
         },
@@ -11713,12 +11583,6 @@
           "procedureResults": [
             {
               "procedureName": "aria-allowed-attr",
-              "outcomes": [
-                "inapplicable"
-              ]
-            },
-            {
-              "procedureName": "aria-prohibited-attr",
               "outcomes": [
                 "inapplicable"
               ]

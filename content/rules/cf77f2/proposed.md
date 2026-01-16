@@ -9,8 +9,9 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> cf77f2</p>
-  <p><strong>Date:</strong> Updated 7 October 2025</p>
+  <p><strong>Date:</strong> Updated 8 December 2025</p>
   <p><strong>Authors:</strong> <a href="https://github.com/Jym77">Jean-Yves Moyen</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
+  <p>This rule conforms to <a href="https://www.w3.org/TR/act-rules-format-1.1/">ACT Rules Format 1.1</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
   
   <p><strong>Assets:</strong> Test cases use assets from the following sources: <em>Romance of the Three Kingdoms</em> by Luo Guanzhong, translation by Charles Henry Brewitt-Taylor (Tuttle Publishing, 1925, ISBN 9780804834674); <em>Three Kingdoms</em> by Luo Guanzhong, translation by Moss Roberts (Foreign Language Press, 1976, ISBN 7-119-00590-1); <em>The Three Kingdoms</em> by Luo Guanzhong, translation by Yu Sumei (Tuttle publishing, 2014, ISBN 9780804843935)</p>
@@ -22,7 +23,7 @@ rule_meta:
   original_file: bypass-blocks-cf77f2.md
   description: |
     This rule checks that each page has a mechanism to bypass repeated blocks of content.
-  last_modified: 7 October 2025
+  last_modified: 8 December 2025
   scs_tested:
     - handle: Bypass Blocks
       num: 2.4.1

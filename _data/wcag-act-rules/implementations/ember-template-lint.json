@@ -13,7 +13,7 @@
     "complete": 0,
     "partial": 3,
     "inconsistent": 3,
-    "untested": 44
+    "untested": 45
   },
   "actRuleMapping": [
     {
@@ -3908,6 +3908,15 @@
       "testCaseResults": []
     },
     {
+      "ruleId": "kb1m8s",
+      "ruleName": "ARIA global properties not used where prohibited",
+      "ruleApproved": false,
+      "procedureNames": [],
+      "consistency": null,
+      "coverage": null,
+      "testCaseResults": []
+    },
+    {
       "ruleId": "ff89c9",
       "ruleName": "ARIA required context role",
       "ruleApproved": false,
@@ -4195,9 +4204,9 @@
       },
       "coverage": {
         "covered": 9,
-        "untested": 7,
+        "untested": 6,
         "cantTell": 2,
-        "testCaseTotal": 19
+        "testCaseTotal": 17
       },
       "testCaseResults": [
         {
@@ -4421,36 +4430,6 @@
               "procedureName": "no-invalid-aria-attributes",
               "outcomes": [
                 "cantTell"
-              ]
-            }
-          ]
-        },
-        {
-          "testcaseId": "d7efe21b64461052aef8d3e0fc96049dda787039",
-          "testCaseName": "Failed Example 3",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/d7efe21b64461052aef8d3e0fc96049dda787039.html",
-          "testCaseApproved": false,
-          "expected": "failed",
-          "procedureResults": [
-            {
-              "procedureName": "no-invalid-aria-attributes",
-              "outcomes": [
-                "passed"
-              ]
-            }
-          ]
-        },
-        {
-          "testcaseId": "eedabccf6e01bca36ee87a2af00e9d7a63a7d615",
-          "testCaseName": "Failed Example 4",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/eedabccf6e01bca36ee87a2af00e9d7a63a7d615.html",
-          "testCaseApproved": false,
-          "expected": "failed",
-          "procedureResults": [
-            {
-              "procedureName": "no-invalid-aria-attributes",
-              "outcomes": [
-                "untested"
               ]
             }
           ]
