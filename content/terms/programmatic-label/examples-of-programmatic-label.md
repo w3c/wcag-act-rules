@@ -1,14 +1,14 @@
 ---
 layout: standalone_resource
 title: Examples of Programmatic label
-permalink: /standards-guidelines/act/rules/examples/programmatic-label/
-ref: /standards-guidelines/act/rules/examples/programmatic-label/
+permalink: /standards-guidelines/act/rules/terms/programmatic-label/examples/
+ref: /standards-guidelines/act/rules/terms/programmatic-label/examples/
 lang: en
 type_of_guidance: ""
 footer: ""
 github:
   repository: w3c/wcag-act-rules
-  path: content/examples/programmatic-label.md
+  path: content/terms/programmatic-label/examples-of-programmatic-label.md
 footer:
   <p>ACT Rules are developed by the <a href="https://www.w3.org/community/act-r/">ACT Rules Community Group</a> and the <a href="https://www.w3.org/groups/tf/wcag-act">Accessibility Conformance Testing (ACT) Task Force</a> of the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>). ACT Rules work was part of the <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>, <a href="https://www.w3.org/WAI/about/projects/wai-guide/">WAI-Guide Project</a>, and <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>, co-funded by the European Commission.</p>  
 ---
