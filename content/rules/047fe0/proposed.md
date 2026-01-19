@@ -749,7 +749,7 @@ An _HTML [web page](https://www.w3.org/TR/WCAG22/#dfn-web-page-s)_ is the set of
 [document]: https://dom.spec.whatwg.org/#concept-document 'DOM definition of Document'
 [earl10-schema]: https://www.w3.org/TR/act-rules-format-1.1/#biblio-earl10-schema
 [equivalent resource]: #equivalent-resource 'Definition of Equivalent Resource'
-[examples of included in the accessibility tree]: https://www.w3.org/WAI/standards-guidelines/act/rules/terms/included-in-the-accesibility-tree/examples/
+[examples of included in the accessibility tree]: https://www.w3.org/WAI/standards-guidelines/act/rules/terms/included-in-the-accessibility-ree/examples/
 [explicit role]: #explicit-role 'Definition of Explicit Role'
 [flat tree]: https://drafts.csswg.org/css-scoping/#flat-tree 'CSS Definition of Flat Tree'
 [focusable]: #focusable 'Definition of Focusable'
