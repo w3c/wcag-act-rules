@@ -19,6 +19,37 @@ This repo receives Rules content and assets from the [ACT-Rules](https://github.
 - Setting a rule as "approved", or "proposed" is handled via GitHub actions on the [ACT-Rules](https://github.com/act-rules/act-rules.github.io/) repository.
 - Implementation data is handled by additional scripts on the [ACT-Tools](https://github.com/act-rules/act-tools/).
 
+## Build locally
+
+Before you begin, make sure you have the following installed:
+
+- [Ruby](https://www.ruby-lang.org/en/documentation/installation/) version 3.4.8 or higher\
+    Check your Ruby version using `ruby -v`
+- [Bundler](https://bundler.io/)
+
+1. Install  Ruby dependencies
+
+    ```bash
+    bundle install
+    ```
+
+2. Use the latest version of the `wai-website-theme` and `wai-website-plugin` dependencies (optional)
+
+    By default, the project will use the versions of the theme and plugin set in the `Gemfile.lock` file. To use the latest versions, run:
+    
+    ```bash
+    bundle update wai-website-theme --conservative
+    bundle update wai-website-plugin --conservative
+    ```
+
+    **Note:** Make sure to include the `--conservative` flag to avoid updating the gems the theme and plugin depend on.
+
+3. Serve and preview
+
+    ```bash
+    bundle exec jekyll serve
+    ```
+
 ## Set a rule to "approved"
 
 1. On the ACT-rules CG repo, go to the [Set a rule to approved](https://github.com/act-rules/act-rules.github.io/actions/workflows/approve-rule.yml) GitHub Action.
