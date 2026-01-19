@@ -345,7 +345,7 @@ An HTML element is _programmatically hidden_ if either it has a [computed][] CSS
 [earl10-schema]: https://www.w3.org/TR/act-rules-format-1.1/#biblio-earl10-schema
 [enumerated attributes]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#enumerated-attribute 'HTML Specification of Enumerated Attribute'
 [examples of accessible name]: https://www.w3.org/WAI/standards-guidelines/act/rules/terms/accessible-name/examples/
-[examples of included in the accessibility tree]: https://www.w3.org/WAI/standards-guidelines/act/rules/terms/included-in-the-accessibility-ree/examples/
+[examples of included in the accessibility tree]: https://www.w3.org/WAI/standards-guidelines/act/rules/terms/included-in-the-accessibility-tree/examples/
 [flat tree]: https://drafts.csswg.org/css-scoping/#flat-tree 'Definition of flat tree'
 [html aam image button]: https://www.w3.org/TR/html-aam-1.0/#input-type-image 'HTML Accessibility API Mapping, image button'
 [html aam]: https://www.w3.org/TR/html-aam-1.0/#html-attribute-state-and-property-mappings 'Specification of HTML attributes value mapping to ARIA states and properties'

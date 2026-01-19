@@ -997,7 +997,7 @@ This includes:
 [element]: https://dom.spec.whatwg.org/#element 'DOM element, 2021/05/31'
 [equivalent resource]: #equivalent-resource 'Definition of Equivalent Resource'
 [examples of accessible name]: https://www.w3.org/WAI/standards-guidelines/act/rules/terms/accessible-name/examples/
-[examples of included in the accessibility tree]: https://www.w3.org/WAI/standards-guidelines/act/rules/terms/included-in-the-accessibility-ree/examples/
+[examples of included in the accessibility tree]: https://www.w3.org/WAI/standards-guidelines/act/rules/terms/included-in-the-accessibility-tree/examples/
 [explicit role]: #explicit-role 'Definition of explicit role'
 [flat tree]: https://drafts.csswg.org/css-scoping/#flat-tree 'CSS Scoping Module Level 1, flat tree, 2021/11/29'
 [focusable]: #focusable 'Definition of Focusable'

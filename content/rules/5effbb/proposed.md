@@ -554,7 +554,7 @@ The _WAI ARIA Specifications_ group both the WAI ARIA W3C Recommendation and ARI
 [doc-biblioref]: https://www.w3.org/TR/dpub-aria-1.0/#doc-biblioref 'DPUB ARIA Definition of doc-biblioref'
 [earl10-schema]: https://www.w3.org/TR/act-rules-format-1.1/#biblio-earl10-schema
 [examples of accessible name]: https://www.w3.org/WAI/standards-guidelines/act/rules/terms/accessible-name/examples/
-[examples of included in the accessibility tree]: https://www.w3.org/WAI/standards-guidelines/act/rules/terms/included-in-the-accessibility-ree/examples/
+[examples of included in the accessibility tree]: https://www.w3.org/WAI/standards-guidelines/act/rules/terms/included-in-the-accessibility-tree/examples/
 [explicit role]: #explicit-role 'Definition of Explicit Role'
 [flat tree]: https://drafts.csswg.org/css-scoping/#flat-tree 'CSS Scoping Module Level 1, flat tree, 2021/11/29'
 [focusable]: #focusable 'Definition of Focusable'

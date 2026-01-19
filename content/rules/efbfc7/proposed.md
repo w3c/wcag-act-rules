@@ -600,7 +600,7 @@ An _HTML [web page](https://www.w3.org/TR/WCAG22/#dfn-web-page-s)_ is the set of
 [element]: https://dom.spec.whatwg.org/#element 'DOM element, 2021/05/31'
 [essential]: https://www.w3.org/WAI/WCAG22/Understanding/pause-stop-hide.html#dfn-essential
 [event]: https://dom.spec.whatwg.org/#concept-event
-[examples of included in the accessibility tree]: https://www.w3.org/WAI/standards-guidelines/act/rules/terms/included-in-the-accessibility-ree/examples/
+[examples of included in the accessibility tree]: https://www.w3.org/WAI/standards-guidelines/act/rules/terms/included-in-the-accessibility-tree/examples/
 [explicit role]: #explicit-role 'Definition of Explicit Role'
 [f16]: https://www.w3.org/WAI/WCAG22/Techniques/failures/F16
 [flat tree]: https://drafts.csswg.org/css-scoping/#flat-tree 'Definition of flat tree'

@@ -620,7 +620,7 @@ The _WAI ARIA Specifications_ group both the WAI ARIA W3C Recommendation and ARI
 [computes an adequate fallback header]: https://html.spec.whatwg.org/multipage/tables.html#header-and-data-cell-semantics 'Forming relationships between data cells and header cells'
 [earl10-schema]: https://www.w3.org/TR/act-rules-format-1.1/#biblio-earl10-schema
 [enumerated attributes]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#enumerated-attribute 'HTML Specification of Enumerated Attribute'
-[examples of included in the accessibility tree]: https://www.w3.org/WAI/standards-guidelines/act/rules/terms/included-in-the-accessibility-ree/examples/
+[examples of included in the accessibility tree]: https://www.w3.org/WAI/standards-guidelines/act/rules/terms/included-in-the-accessibility-tree/examples/
 [explicit role]: #explicit-role 'Definition of Explicit Role'
 [flat tree]: https://drafts.csswg.org/css-scoping/#flat-tree 'Definition of flat tree'
 [focusable]: #focusable 'Definition of Focusable'

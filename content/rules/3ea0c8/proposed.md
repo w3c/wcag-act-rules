@@ -304,7 +304,7 @@ For more details, see [examples of visible](https://www.w3.org/WAI/standards-gui
 [computed]: https://www.w3.org/TR/css-cascade/#computed-value 'CSS definition of computed value'
 [earl10-schema]: https://www.w3.org/TR/act-rules-format-1.1/#biblio-earl10-schema
 [element]: https://dom.spec.whatwg.org/#element 'DOM element, 2021/05/31'
-[examples of included in the accessibility tree]: https://www.w3.org/WAI/standards-guidelines/act/rules/terms/included-in-the-accessibility-ree/examples/
+[examples of included in the accessibility tree]: https://www.w3.org/WAI/standards-guidelines/act/rules/terms/included-in-the-accessibility-tree/examples/
 [examples of programmatic label]: https://www.w3.org/WAI/standards-guidelines/act/rules/terms/programmatic-label/examples/
 [flat tree]: https://drafts.csswg.org/css-scoping/#flat-tree 'Definition of flat tree'
 [html namespaces]: https://infra.spec.whatwg.org/#namespaces 'HTML namespace, 2021/05/31'

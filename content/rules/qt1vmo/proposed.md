@@ -469,7 +469,7 @@ The _WAI ARIA Specifications_ group both the WAI ARIA W3C Recommendation and ARI
 [current request]: https://html.spec.whatwg.org/#current-request 'HTML definition of Current request, 2020/03/06'
 [earl10-schema]: https://www.w3.org/TR/act-rules-format-1.1/#biblio-earl10-schema
 [examples of accessible name]: https://www.w3.org/WAI/standards-guidelines/act/rules/terms/accessible-name/examples/
-[examples of included in the accessibility tree]: https://www.w3.org/WAI/standards-guidelines/act/rules/terms/included-in-the-accessibility-ree/examples/
+[examples of included in the accessibility tree]: https://www.w3.org/WAI/standards-guidelines/act/rules/terms/included-in-the-accessibility-tree/examples/
 [explicit semantic role]: #explicit-role
 [flat tree]: https://drafts.csswg.org/css-scoping/#flat-tree 'CSS Scoping definition of Flat tree, working draft'
 [image request state]: https://html.spec.whatwg.org/#img-req-state 'HTML definition of Image request state, 2020/03/06'

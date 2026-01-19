@@ -573,7 +573,7 @@ This includes:
 [element]: https://dom.spec.whatwg.org/#element 'DOM element, 2021/05/31'
 [enumerated attributes]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#enumerated-attribute 'HTML Specification of Enumerated Attribute'
 [examples of accessible name]: https://www.w3.org/WAI/standards-guidelines/act/rules/terms/accessible-name/examples/
-[examples of included in the accessibility tree]: https://www.w3.org/WAI/standards-guidelines/act/rules/terms/included-in-the-accessibility-ree/examples/
+[examples of included in the accessibility tree]: https://www.w3.org/WAI/standards-guidelines/act/rules/terms/included-in-the-accessibility-tree/examples/
 [flat tree]: https://drafts.csswg.org/css-scoping/#flat-tree
 [fully active]: https://html.spec.whatwg.org/#fully-active 'HTML definition of Fully Active Document'
 [grandfathered tags]: https://www.rfc-editor.org/rfc/rfc5646.html#section-2.2.8
