@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 9eb3f6</p>
-  <p><strong>Date:</strong> Updated 8 December 2025</p>
+  <p><strong>Date:</strong> Updated 19 January 2026</p>
   <p><strong>Authors:</strong> <a href="https://github.com/Jym77">Jean-Yves Moyen</a>. Previous Authors: <a href="https://github.com/brynanders">Bryn Anderson</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule conforms to <a href="https://www.w3.org/TR/act-rules-format-1.1/">ACT Rules Format 1.1</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
@@ -24,7 +24,7 @@ rule_meta:
   original_file: image-filename-as-accessible-name-9eb3f6.md
   description: |
     This rule checks that image elements that use their source filename as their accessible name do so without loss of information to the user.
-  last_modified: 8 December 2025
+  last_modified: 19 January 2026
   scs_tested:
     - handle: Non-text Content
       num: 1.1.1
@@ -471,8 +471,8 @@ This includes:
 [device-pixel-ratio]: https://html.spec.whatwg.org/multipage/images.html#device-pixel-ratio 'Illustration of device-pixel-ratio'
 [earl10-schema]: https://www.w3.org/TR/act-rules-format-1.1/#biblio-earl10-schema
 [element]: https://dom.spec.whatwg.org/#element 'DOM element, 2021/05/31'
-[examples of accessible name]: https://act-rules.github.io/pages/examples/accessible-name/
-[examples of included in the accessibility tree]: https://act-rules.github.io/pages/examples/included-in-the-accessibility-tree/
+[examples of accessible name]: https://www.w3.org/WAI/standards-guidelines/act/rules/terms/accessible-name/examples/
+[examples of included in the accessibility tree]: https://www.w3.org/WAI/standards-guidelines/act/rules/terms/included-in-the-accessibility-tree/examples/
 [explicit role]: #explicit-role 'Definition of Explicit Role'
 [filename]: #filename 'Definition of filename'
 [flat tree]: https://drafts.csswg.org/css-scoping/#flat-tree 'Definition of flat tree'

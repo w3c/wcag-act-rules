@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> off6ek</p>
-  <p><strong>Date:</strong> Updated 8 December 2025</p>
+  <p><strong>Date:</strong> Updated 19 January 2026</p>
   <p><strong>Authors:</strong> <a href="https://github.com/Jym77">Jean-Yves Moyen</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule conforms to <a href="https://www.w3.org/TR/act-rules-format-1.1/">ACT Rules Format 1.1</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
@@ -21,7 +21,7 @@ rule_meta:
   original_file: element-lang-matches-default-language-off6ek.md
   description: |
     This rule checks that the primary language subtag of an element matches its default language
-  last_modified: 8 December 2025
+  last_modified: 19 January 2026
   scs_tested:
     - handle: Language of Parts
       num: 3.1.2
@@ -499,7 +499,7 @@ Content is considered _visible_ if making it fully transparent would result in a
 
 [Content is defined in WCAG](https://www.w3.org/TR/WCAG22/#dfn-content).
 
-For more details, see [examples of visible](https://act-rules.github.io/pages/examples/visible/).
+For more details, see [examples of visible](https://www.w3.org/WAI/standards-guidelines/act/rules/terms/visible/examples/).
 
 ### Whitespace {#whitespace}
 
@@ -533,9 +533,9 @@ This includes:
 [element inheriting its programmatic language]: #text-inheriting-language:element 'Definition of Element Inheriting its Programmatic Language from an Element'
 [element]: https://dom.spec.whatwg.org/#element 'DOM element, 2021/05/31'
 [enumerated attributes]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#enumerated-attribute 'HTML Specification of Enumerated Attribute'
-[examples of accessible name]: https://act-rules.github.io/pages/examples/accessible-name/
-[examples of included in the accessibility tree]: https://act-rules.github.io/pages/examples/included-in-the-accessibility-tree/
-[examples of most common language]: https://act-rules.github.io/pages/examples/element-language/
+[examples of accessible name]: https://www.w3.org/WAI/standards-guidelines/act/rules/terms/accessible-name/examples/
+[examples of included in the accessibility tree]: https://www.w3.org/WAI/standards-guidelines/act/rules/terms/included-in-the-accessibility-tree/examples/
+[examples of most common language]: https://www.w3.org/WAI/standards-guidelines/act/rules/terms/element-language/examples/
 [flat tree]: https://drafts.csswg.org/css-scoping/#flat-tree 'CSS Scoping definition of Flat tree, working draft'
 [fully active]: https://html.spec.whatwg.org/#fully-active 'HTML definition of Fully Active Document'
 [grandfathered tags]: https://www.rfc-editor.org/rfc/rfc5646.html#section-2.2.8

@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> b4f0c3</p>
-  <p><strong>Date:</strong> Updated 8 December 2025</p>
+  <p><strong>Date:</strong> Updated 19 January 2026</p>
   <p><strong>Authors:</strong> <a href="https://github.com/Jym77">Jean-Yves Moyen</a>. Previous Authors: <a href="https://github.com/audreymaniez">Audrey Maniez</a>, <a href="https://github.com/jkodu">Jey Nandakumar</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule conforms to <a href="https://www.w3.org/TR/act-rules-format-1.1/">ACT Rules Format 1.1</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
@@ -21,7 +21,7 @@ rule_meta:
   original_file: meta-viewport-b4f0c3.md
   description: |
     This rule checks that the `meta` element retains the user agent ability to zoom.
-  last_modified: 8 December 2025
+  last_modified: 19 January 2026
   scs_tested:
     - handle: Resize text
       num: 1.4.4
@@ -486,7 +486,7 @@ Content is considered _visible_ if making it fully transparent would result in a
 
 [Content is defined in WCAG](https://www.w3.org/TR/WCAG22/#dfn-content).
 
-For more details, see [examples of visible](https://act-rules.github.io/pages/examples/visible/).
+For more details, see [examples of visible](https://www.w3.org/WAI/standards-guidelines/act/rules/terms/visible/examples/).
 
 [attribute value]: #attribute-value 'Definition of attribute value'
 [boolean attributes]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attributes 'HTML Specification of Boolean Attribute'

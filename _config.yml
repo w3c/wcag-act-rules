@@ -10,8 +10,8 @@ title: "Web Accessibility Initiative (WAI)"
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
   The Website of the World Wide Web Consortium’s Web Accessibility Initiative.
-baseurl: "/wcag-act-rules" # the subpath of your site, e.g. /blog
-url: "https://w3c.github.io" # the base hostname & protocol for your site
+baseurl: "/wcag-act-rules" # the subpath of your site (for GitHub Pages)
+url: "https://w3c.github.io" # the base hostname & protocol for your site (for GitHub Pages)
 twitter:
   username: w3c_wai
 author: w3c_wai
@@ -21,17 +21,19 @@ exclude:
   - "Gemfile.lock"
   - "README.md"
   - "w3c.json"
+  - "node_modules"
+repository: w3c/wcag-act-rules
+branch: main
 
 # Build settings
 markdown: kramdown
-kramwdown:
+kramdown:
   toc_levels: 2..3
   input: GFM
   syntax_highlighter: rouge
 highlighter: rouge
-repository: w3c/wcag-act-rules
 
-remote_theme: w3c/wai-website-theme
+theme: wai-website-theme
 
 collections:
   wai-wcag-act-rules-patterns:
@@ -47,7 +49,7 @@ defaults:
       class: tight-page
       layout: act_rule
       external_css: /content-assets/wcag-act-rules/act-styles.css
-      feedbackmail: group-act-rules@w3.org # NEW: delete this line if it’s an EOWG resource (the default is wai-eo-editors@w3.org)
+      feedbackmail: group-act-rules@w3.org
       footer: >   # Translate words below, including "Date:" and "Editor:" Translate the Working Group name. Leave the Working Group acronym in English. Do *not* change the dates in the footer below.
         <p><strong>Date:</strong> Updated @@ Month 2021. First published Month 20@@.</p>
         <p><strong>Editors:</strong> @@name, @@name. <strong>Contributors:</strong> @@name, @@name, and <a href="https://www.w3.org/groups/wg/@@wg/participants">participants of the @@WG</a>. ACKNOWLEDGEMENTS lists contributors and credits.</p>
@@ -70,12 +72,3 @@ defaults:
           ref: /standards-guidelines/act/rules/about/
         - name: Implementations
           ref: /standards-guidelines/act/implementations/
-
-plugins:
-  - jekyll-seo-tag
-  - jekyll-sitemap
-  - jekyll-redirect-from
-  - jekyll-include-cache
-  - jekyll-paginate
-  - jekyll-remote-theme
-  - wai-website-plugin
