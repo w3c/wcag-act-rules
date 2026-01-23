@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> cc0f0a</p>
-  <p><strong>Date:</strong> Updated 19 January 2026</p>
+  <p><strong>Date:</strong> Updated 23 January 2026</p>
   <p><strong>Authors:</strong> <a href="https://github.com/Jym77">Jean-Yves Moyen</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Previous Authors: <a href="https://github.com/DagfinnRomen">Dagfinn Rømen</a>, <a href="https://github.com/geirsf">Geir Sindre Fossøy</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule conforms to <a href="https://www.w3.org/TR/act-rules-format-1.1/">ACT Rules Format 1.1</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
@@ -21,7 +21,7 @@ rule_meta:
   original_file: form-field-label-descriptive-cc0f0a.md
   description: |
     This rule checks that labels describe the purpose of form field elements.
-  last_modified: 19 January 2026
+  last_modified: 23 January 2026
   scs_tested:
     - handle: Headings and Labels
       num: 2.4.6
@@ -30,21 +30,12 @@ rule_meta:
 
 ## Applicability
 
-This rule applies to any [programmatic label][] of an element which has one of the following [semantic roles][semantic role]:
+This rule applies to any [programmatic label][] of an element for which one of the following is true:
 
-- `checkbox`
-- `combobox`
-- `listbox`
-- `menuitemcheckbox`
-- `menuitemradio`
-- `radio`
-- `searchbox`
-- `slider`
-- `spinbutton`
-- `switch`
-- `textbox`
+- the element has one of the following [semantic roles][semantic role]: `checkbox`, `combobox`, `listbox`, `menuitemcheckbox`, `menuitemradio`, `radio`, `searchbox`, `slider`, `spinbutton`, `switch`, `textbox`; or
+- the element is an `input` with no [semantic role][] and a `type` [attribute value][] of `color`, `date`, `datetime-local`, `file`, `month`, `password`, `time`, or `week`.
 
-and where both the element and the [programmatic label][] are [visible][].
+In addition, both the element and the [programmatic label][] must be [visible][].
 
 ## Expectation
 
@@ -54,8 +45,10 @@ Each test target, together with its [visual context][], describes the purpose of
 
 The list of applicable [semantic roles][semantic role] is derived by taking all the [ARIA 1.2][aria12] roles that:
 
-- inherit from the `input`, `menuitem` or `select` role, and
+- inherit from the `input`, `menuitem` or `select` role; and
 - are form field controls (this notably excludes `menu`, `option` or `tree`).
+
+This rule also applies to `input` elements whose `type` [attribute value][] is `color`, `date`, `datetime-local`, `file`, `month`, `password`, `time`, or `week`. These input types have no semantic role but still require a descriptive [programmatic label][] so users can understand their purpose.
 
 [Labels][label] in WCAG are not restricted to the `label` element of HTML and can be any element. This rule is only concerned about actual `label` elements, and elements that are programmatically marked as [labels][label] via the `aria-labelledby` attribute.
 
@@ -206,6 +199,18 @@ Both the `div` and the `span` elements are [programmatic labels][programmatic la
 </html>
 ```
 
+#### Passed Example 7
+
+<a class="example-link" title="Passed Example 7" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/cc0f0a/081e784ed9c1c5f96f02cf04c07b7d861cf3f9af.html">Open in a new tab</a>
+
+The `label` element is a [programmatic label][] of the `input` element whose `type` attribute value is `date` and describes its purpose.
+
+```html
+<html lang="en">
+	<label>Date of birth:<input id="dob" type="date" name="dob"/></label>
+</html>
+```
+
 ### Failed
 
 #### Failed Example 1
@@ -278,6 +283,18 @@ These `button` and `span` elements are both [programmatic labels][programmatic l
 	<span id="search" style="display: none">Search</span>
 	<input type="text" name="search" aria-labelledby="submit search" />
 	<button id="submit">Go</button>
+</html>
+```
+
+#### Failed Example 6
+
+<a class="example-link" title="Failed Example 6" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/cc0f0a/3ee841b7513a315f4f5161893d1333386f0f1d21.html">Open in a new tab</a>
+
+The `label` element is a [programmatic label][] of the `input` element whose `type` attribute value is `date`, but the label text "Info" does not describe the purpose of the form field.
+
+```html
+<html lang="en">
+	<label>Info:<input id="dob" type="date" name="dob"/></label>
 </html>
 ```
 

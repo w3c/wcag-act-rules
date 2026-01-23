@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> e086e5</p>
-  <p><strong>Date:</strong> Updated 19 January 2026</p>
+  <p><strong>Date:</strong> Updated 23 January 2026</p>
   <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/brynanders">Bryn Anderson</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule conforms to <a href="https://www.w3.org/TR/act-rules-format-1.1/">ACT Rules Format 1.1</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
@@ -21,7 +21,7 @@ rule_meta:
   original_file: form-field-non-empty-accessible-name-e086e5.md
   description: |
     This rule checks that each form field element has a non-empty accessible name.
-  last_modified: 19 January 2026
+  last_modified: 23 January 2026
   scs_tested:
     - handle: Name, Role, Value
       num: 4.1.2
@@ -30,7 +30,10 @@ rule_meta:
 
 ## Applicability
 
-This rule applies to any element that is [included in the accessibility tree](#included-in-the-accessibility-tree), and that has one of the following [semantic roles][]: `checkbox`, `combobox` (`select` elements), `listbox`, `menuitemcheckbox`, `menuitemradio`, `radio`, `searchbox`, `slider`, `spinbutton`, `switch`, `textbox`.
+This rule applies to any element that is [included in the accessibility tree](#included-in-the-accessibility-tree) and for which one of the following is true:
+
+- the element has one of the following [semantic roles][]: `checkbox`, `combobox` (`select` elements), `listbox`, `menuitemcheckbox`, `menuitemradio`, `radio`, `searchbox`, `slider`, `spinbutton`, `switch`, `textbox`; or
+- the element is an `input` with no [semantic role][] and a `type` [attribute value][] of `color`, `date`, `datetime-local`, `file`, `month`, `password`, `time`, or `week`.
 
 ## Expectation
 
@@ -43,7 +46,7 @@ The list of roles in the applicability is derived by taking all the roles from [
 - have [semantic roles][] that inherit from the `input`, `menuitem` or `select` role; and
 - are form field controls (this notably excludes `menu`, `option` or `tree`).
 
-This rule does not test other control-like roles such as `button` and `menuitem`, because these do not inherit from `input` or `select`. These should be tested separately.
+This rule does not test other control-like roles such as `button` and `menuitem`, because these do not inherit from `input` or `select`; these should be tested separately. This rule tests explicitly input types such as date and color because they have no semantic role, but still require an accessible name.
 
 This rule does not map to [3.3.2 Labels or Instructions](https://www.w3.org/TR/WCAG22/#labels-or-instructions) as there are sufficient techniques within 3.3.2 that don't need the elements to have an [accessible name][]. For example "[G131: Providing descriptive labels](https://www.w3.org/WAI/WCAG22/Techniques/general/G131)" **AND** "[G162: Positioning labels to maximize predictability of relationships](https://www.w3.org/WAI/WCAG22/Techniques/general/G162)" would be sufficient.
 
@@ -205,6 +208,19 @@ These `menuitemcheckbox` elements have an [accessible name][] because its aria-l
 </div>
 ```
 
+#### Passed Example 9
+
+<a class="example-link" title="Passed Example 9" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/e086e5/2243d6e9d1eb6938aff03536125ebc582440fbe7.html">Open in a new tab</a>
+
+This `input` element with a `type` [attribute value][] of `color` has an [accessible name][] because of its [programmatic label](#programmatic-label).
+
+```html
+<label>
+	Favorite color
+	<input type="color" />
+</label>
+```
+
 ### Failed
 
 #### Failed Example 1
@@ -297,6 +313,16 @@ These `menuitemcheckbox` elements do not have an [accessible name][].
 	<input type="checkbox" role="menuitemcheckbox" /><span aria-hidden="true">Ketchup</span><br />
 	<input type="checkbox" role="menuitemcheckbox" /><span aria-hidden="true">Mayonnaise</span>
 </div>
+```
+
+#### Failed Example 9
+
+<a class="example-link" title="Failed Example 9" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/e086e5/1d9a4d0eba21c8bb02580c46142ec75842bd3557.html">Open in a new tab</a>
+
+This `input` element with a `type` [attribute value][] of `date` has an empty (`""`) [accessible name][].
+
+```html
+<label>Date of birth</label> <input type="date" />
 ```
 
 ### Inapplicable

@@ -3,7 +3,7 @@
   "website": "https://www.w3.org/WAI/standards-guidelines/act/rules/",
   "license": "https://act-rules.github.io/pages/license/",
   "description": "Accessibility conformance testing rules for HTML",
-  "count": 1195,
+  "count": 1199,
   "testcases": [
     {
       "ruleId": "674b10",
@@ -20503,6 +20503,30 @@
           "inapplicable": "further testing needed"
         }
       },
+      "expected": "passed",
+      "testcaseId": "081e784ed9c1c5f96f02cf04c07b7d861cf3f9af",
+      "testcaseTitle": "Passed Example 7",
+      "relativePath": "testcases/cc0f0a/081e784ed9c1c5f96f02cf04c07b7d861cf3f9af.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cc0f0a/081e784ed9c1c5f96f02cf04c07b7d861cf3f9af.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/cc0f0a/proposed/"
+    },
+    {
+      "ruleId": "cc0f0a",
+      "ruleName": "Form field label is descriptive",
+      "ruleAccessibilityRequirements": {
+        "wcag20:2.4.6": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:G131": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
       "expected": "failed",
       "testcaseId": "9b967559ff2691dc30436766f53feea55447b348",
       "testcaseTitle": "Failed Example 1",
@@ -20623,6 +20647,30 @@
           "inapplicable": "further testing needed"
         }
       },
+      "expected": "failed",
+      "testcaseId": "3ee841b7513a315f4f5161893d1333386f0f1d21",
+      "testcaseTitle": "Failed Example 6",
+      "relativePath": "testcases/cc0f0a/3ee841b7513a315f4f5161893d1333386f0f1d21.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cc0f0a/3ee841b7513a315f4f5161893d1333386f0f1d21.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/cc0f0a/proposed/"
+    },
+    {
+      "ruleId": "cc0f0a",
+      "ruleName": "Form field label is descriptive",
+      "ruleAccessibilityRequirements": {
+        "wcag20:2.4.6": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:G131": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
       "expected": "inapplicable",
       "testcaseId": "1d7c2f68ba65c3d81cb8a858f52be30d48a296c3",
       "testcaseTitle": "Inapplicable Example 1",
@@ -20700,6 +20748,54 @@
       "testcaseTitle": "Passed Example 8",
       "relativePath": "testcases/e086e5/cfb1790405bb1ff793ed15a73372d53e79d2d7e0.html",
       "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/e086e5/cfb1790405bb1ff793ed15a73372d53e79d2d7e0.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/e086e5/proposed/"
+    },
+    {
+      "ruleId": "e086e5",
+      "ruleName": "Form field has non-empty accessible name",
+      "ruleAccessibilityRequirements": {
+        "wcag20:4.1.2": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:1.3.1": {
+          "secondary": "This success criterion is **more strict** than this rule. This is because 1.3.1 Info and Relationship requires that information, structure, and relationships conveyed through presentation can be programmatically determined or are available in text, while 4.1.2 Name, Role, Value only requires an accessible name."
+        },
+        "wcag20:2.5.3": {
+          "secondary": "This success criterion is **more strict** than this rule. This is because 2.5.3 Label in Name requires that if a label is visible, the accessible name contains the label that is presented visually, while 4.1.2 Name, Role, Value only requires an accessible name."
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "2243d6e9d1eb6938aff03536125ebc582440fbe7",
+      "testcaseTitle": "Passed Example 9",
+      "relativePath": "testcases/e086e5/2243d6e9d1eb6938aff03536125ebc582440fbe7.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/e086e5/2243d6e9d1eb6938aff03536125ebc582440fbe7.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/e086e5/proposed/"
+    },
+    {
+      "ruleId": "e086e5",
+      "ruleName": "Form field has non-empty accessible name",
+      "ruleAccessibilityRequirements": {
+        "wcag20:4.1.2": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:1.3.1": {
+          "secondary": "This success criterion is **more strict** than this rule. This is because 1.3.1 Info and Relationship requires that information, structure, and relationships conveyed through presentation can be programmatically determined or are available in text, while 4.1.2 Name, Role, Value only requires an accessible name."
+        },
+        "wcag20:2.5.3": {
+          "secondary": "This success criterion is **more strict** than this rule. This is because 2.5.3 Label in Name requires that if a label is visible, the accessible name contains the label that is presented visually, while 4.1.2 Name, Role, Value only requires an accessible name."
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "1d9a4d0eba21c8bb02580c46142ec75842bd3557",
+      "testcaseTitle": "Failed Example 9",
+      "relativePath": "testcases/e086e5/1d9a4d0eba21c8bb02580c46142ec75842bd3557.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/e086e5/1d9a4d0eba21c8bb02580c46142ec75842bd3557.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/e086e5/proposed/"
     },
     {
