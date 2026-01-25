@@ -2,7 +2,7 @@
   "vendor": "Total Validator",
   "name": "Total Validator",
   "version": "17.4.0",
-  "lastModified": "10 December 2025",
+  "lastModified": "25 January 2026",
   "approvedRules": {
     "complete": 29,
     "partial": 1,
@@ -4255,13 +4255,13 @@
             {
               "procedureName": "E885",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             },
             {
               "procedureName": "E950",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -4276,13 +4276,13 @@
             {
               "procedureName": "E885",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             },
             {
               "procedureName": "E950",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
