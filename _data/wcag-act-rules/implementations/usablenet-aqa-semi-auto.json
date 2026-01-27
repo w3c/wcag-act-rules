@@ -13,7 +13,7 @@
     "complete": 19,
     "partial": 2,
     "inconsistent": 0,
-    "untested": 30
+    "untested": 29
   },
   "actRuleMapping": [
     {
@@ -9638,15 +9638,6 @@
     {
       "ruleId": "ff89c9",
       "ruleName": "ARIA required context role",
-      "ruleApproved": false,
-      "procedureNames": [],
-      "consistency": null,
-      "coverage": null,
-      "testCaseResults": []
-    },
-    {
-      "ruleId": "in6db8",
-      "ruleName": "ARIA required ID references exist",
       "ruleApproved": false,
       "procedureNames": [],
       "consistency": null,
