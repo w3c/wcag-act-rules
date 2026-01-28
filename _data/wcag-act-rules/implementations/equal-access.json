@@ -13,7 +13,7 @@
     "complete": 3,
     "partial": 0,
     "inconsistent": 2,
-    "untested": 46
+    "untested": 45
   },
   "actRuleMapping": [
     {
@@ -3641,6 +3641,36 @@
               "procedureName": "input_label_exists:Pass_0,Fail_1,Fail_2",
               "outcomes": [
                 "inapplicable"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "2243d6e9d1eb6938aff03536125ebc582440fbe7",
+          "testCaseName": "Passed Example 9",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/e086e5/2243d6e9d1eb6938aff03536125ebc582440fbe7.html",
+          "testCaseApproved": false,
+          "expected": "passed",
+          "procedureResults": [
+            {
+              "procedureName": "input_label_exists:Pass_0,Fail_1,Fail_2",
+              "outcomes": [
+                "untested"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "1d9a4d0eba21c8bb02580c46142ec75842bd3557",
+          "testCaseName": "Failed Example 9",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/e086e5/1d9a4d0eba21c8bb02580c46142ec75842bd3557.html",
+          "testCaseApproved": false,
+          "expected": "failed",
+          "procedureResults": [
+            {
+              "procedureName": "input_label_exists:Pass_0,Fail_1,Fail_2",
+              "outcomes": [
+                "untested"
               ]
             }
           ]
@@ -8850,15 +8880,6 @@
           ]
         }
       ]
-    },
-    {
-      "ruleId": "in6db8",
-      "ruleName": "ARIA required ID references exist",
-      "ruleApproved": false,
-      "procedureNames": [],
-      "consistency": null,
-      "coverage": null,
-      "testCaseResults": []
     },
     {
       "ruleId": "bc4a75",
