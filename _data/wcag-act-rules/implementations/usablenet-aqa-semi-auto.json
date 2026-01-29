@@ -10,10 +10,10 @@
     "untested": 1
   },
   "proposedRules": {
-    "complete": 20,
-    "partial": 1,
+    "complete": 19,
+    "partial": 2,
     "inconsistent": 0,
-    "untested": 30
+    "untested": 29
   },
   "actRuleMapping": [
     {
@@ -3578,6 +3578,36 @@
               "procedureName": "input_without_computed_name",
               "outcomes": [
                 "passed"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "2243d6e9d1eb6938aff03536125ebc582440fbe7",
+          "testCaseName": "Passed Example 9",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/e086e5/2243d6e9d1eb6938aff03536125ebc582440fbe7.html",
+          "testCaseApproved": false,
+          "expected": "passed",
+          "procedureResults": [
+            {
+              "procedureName": "input_without_computed_name",
+              "outcomes": [
+                "untested"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "1d9a4d0eba21c8bb02580c46142ec75842bd3557",
+          "testCaseName": "Failed Example 9",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/e086e5/1d9a4d0eba21c8bb02580c46142ec75842bd3557.html",
+          "testCaseApproved": false,
+          "expected": "failed",
+          "procedureResults": [
+            {
+              "procedureName": "input_without_computed_name",
+              "outcomes": [
+                "untested"
               ]
             }
           ]
@@ -9615,15 +9645,6 @@
       "testCaseResults": []
     },
     {
-      "ruleId": "in6db8",
-      "ruleName": "ARIA required ID references exist",
-      "ruleApproved": false,
-      "procedureNames": [],
-      "consistency": null,
-      "coverage": null,
-      "testCaseResults": []
-    },
-    {
       "ruleId": "bc4a75",
       "ruleName": "ARIA required owned elements",
       "ruleApproved": false,
@@ -11502,7 +11523,7 @@
       "procedureNames": [
         "input_without_visible_label"
       ],
-      "consistency": "complete",
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -11514,9 +11535,9 @@
       },
       "coverage": {
         "covered": 14,
-        "untested": 0,
+        "untested": 2,
         "cantTell": 0,
-        "testCaseTotal": 14
+        "testCaseTotal": 16
       },
       "testCaseResults": [
         {
@@ -11610,6 +11631,21 @@
           ]
         },
         {
+          "testcaseId": "081e784ed9c1c5f96f02cf04c07b7d861cf3f9af",
+          "testCaseName": "Passed Example 7",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cc0f0a/081e784ed9c1c5f96f02cf04c07b7d861cf3f9af.html",
+          "testCaseApproved": false,
+          "expected": "passed",
+          "procedureResults": [
+            {
+              "procedureName": "input_without_visible_label",
+              "outcomes": [
+                "untested"
+              ]
+            }
+          ]
+        },
+        {
           "testcaseId": "9b967559ff2691dc30436766f53feea55447b348",
           "testCaseName": "Failed Example 1",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cc0f0a/9b967559ff2691dc30436766f53feea55447b348.html",
@@ -11680,6 +11716,21 @@
               "procedureName": "input_without_visible_label",
               "outcomes": [
                 "failed"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "3ee841b7513a315f4f5161893d1333386f0f1d21",
+          "testCaseName": "Failed Example 6",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cc0f0a/3ee841b7513a315f4f5161893d1333386f0f1d21.html",
+          "testCaseApproved": false,
+          "expected": "failed",
+          "procedureResults": [
+            {
+              "procedureName": "input_without_visible_label",
+              "outcomes": [
+                "untested"
               ]
             }
           ]

@@ -13,7 +13,7 @@
     "complete": 3,
     "partial": 11,
     "inconsistent": 4,
-    "untested": 33
+    "untested": 32
   },
   "actRuleMapping": [
     {
@@ -3915,6 +3915,60 @@
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/e086e5/cfb1790405bb1ff793ed15a73372d53e79d2d7e0.html",
           "testCaseApproved": false,
           "expected": "passed",
+          "procedureResults": [
+            {
+              "procedureName": "label",
+              "outcomes": [
+                "untested"
+              ]
+            },
+            {
+              "procedureName": "aria-input-field-name",
+              "outcomes": [
+                "untested"
+              ]
+            },
+            {
+              "procedureName": "select-name",
+              "outcomes": [
+                "untested"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "2243d6e9d1eb6938aff03536125ebc582440fbe7",
+          "testCaseName": "Passed Example 9",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/e086e5/2243d6e9d1eb6938aff03536125ebc582440fbe7.html",
+          "testCaseApproved": false,
+          "expected": "passed",
+          "procedureResults": [
+            {
+              "procedureName": "label",
+              "outcomes": [
+                "untested"
+              ]
+            },
+            {
+              "procedureName": "aria-input-field-name",
+              "outcomes": [
+                "untested"
+              ]
+            },
+            {
+              "procedureName": "select-name",
+              "outcomes": [
+                "untested"
+              ]
+            }
+          ]
+        },
+        {
+          "testcaseId": "1d9a4d0eba21c8bb02580c46142ec75842bd3557",
+          "testCaseName": "Failed Example 9",
+          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/e086e5/1d9a4d0eba21c8bb02580c46142ec75842bd3557.html",
+          "testCaseApproved": false,
+          "expected": "failed",
           "procedureResults": [
             {
               "procedureName": "label",
@@ -10141,15 +10195,6 @@
           ]
         }
       ]
-    },
-    {
-      "ruleId": "in6db8",
-      "ruleName": "ARIA required ID references exist",
-      "ruleApproved": false,
-      "procedureNames": [],
-      "consistency": null,
-      "coverage": null,
-      "testCaseResults": []
     },
     {
       "ruleId": "bc4a75",
