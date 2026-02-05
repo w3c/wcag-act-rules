@@ -11,7 +11,7 @@ jobs:
     env:
       GITHUB_TOKEN: ${{ github.token }}
     permissions:
-      contents: read
+      contents: write
       pull-requests: write
     steps:
       - uses: actions/checkout@v6
@@ -19,10 +19,30 @@ jobs:
         id: date
         run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
 
+      - name: Remove existing staging branch if it exists
+        run: |
+          # Check if local staging branch exists and delete it
+          if git show-ref --verify --quiet refs/heads/staging; then
+            git branch -D staging
+          fi
+          
+          # Check if remote staging branch exists and delete it
+          if git ls-remote --exit-code --heads origin staging; then
+            git push origin --delete staging
+          fi
+      
+      - name: Checkout staging branch
+        run: |
+          git checkout -b staging
+      
+      - name: Push staging branch
+        run: |
+          git push origin staging
+      
       - name: Create pull request
         run: |
-          gh pr create --base publication --head main \
+          gh pr create --base publication --head staging \
             --reviewer remibetin \
             --reviewer daniel-montalvo \
             --title "WAI website update ${{ steps.date.outputs.date }}" \
-            --body "This is an automated pull request to publish ACT content to the WAI website."
+            --body "This is a release candidate batch  to be published to the WAI website after review and approval by WAI Staff."
