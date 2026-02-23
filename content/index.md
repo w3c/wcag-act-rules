@@ -93,8 +93,6 @@ This page contains Accessibility Conformance Testing (ACT) Rules to test conform
 {%- comment %}Find related ACT rules for this criterion{% endcomment -%}
 {%- assign related_rules = "" | split: "," -%}
 {%- assign current_sc_num = sc.num -%}
-{%- assign current_sc_key = "wcag20:" | append: current_sc_num -%}
-{%- assign current_sc_key21 = "wcag21:" | append: current_sc_num -%}
 {%- assign current_sc_id = current_sc_num | downcase | replace: ".", "-" -%}
 
 {%- comment %}First, try to find the requirement entry for this criterion{% endcomment -%}
@@ -292,18 +290,12 @@ This page contains Accessibility Conformance Testing (ACT) Rules to test conform
         </li>
       {% endfor %}
     </ul>
-    <p class="no-act-rules-message"{% if rules_for_req.size > 0 %} hidden{% endif %}><em>No ACT Rules available for this requirement yet.</em></p>
+    <p class="filtered-rules-message" hidden><em>All related ACT Rules are currently hidden by filters.</em></p>
   {% else %}
-    <p class="no-act-rules-message"><em>No ACT Rules available for this requirement yet.</em></p>
+    <p><em>No ACT Rules available for this requirement yet.</em></p>
   {% endif %}
 {% endfor %}
 </div>
-<p class="no-aria-rules-message" {% if found_aria_rule %}hidden{% endif %}>
-  <em>No rules found with ARIA accessibility requirements.</em>
-</p>
-<p class="filtered-aria-rules-message" hidden>
-  <em>All ARIA related rules are currently hidden by filters.</em>
-</p>
 
 ## About Rule Status
 

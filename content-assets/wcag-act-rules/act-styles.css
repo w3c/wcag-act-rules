@@ -142,11 +142,6 @@ ul.act-requirements-list {
   list-style: none;
 }
 
-.filter-description {
-  margin-bottom: 1rem;
-  font-size: 0.9rem;
-  line-height: 1.4;
-}
 
 .filter-options {
   display: flex;
@@ -227,16 +222,4 @@ ul.act-requirements-list {
 }
 .sneaky-skiplink > a:focus {
   height: auto;
-}
-
-a.question {
-  text-decoration: none;
-  display: inline-block;
-  border: 2px solid currentColor;
-  width: 1.1em;
-  border-radius: 100%;
-  text-align: center;
-  height: 1.1em;
-  line-height: 1.1em;
-  font-size: 0.9rem;
 }

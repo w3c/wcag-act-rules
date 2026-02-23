@@ -331,15 +331,13 @@
     function filterAriaRules(filters) {
       const { showProposed, showApproved, showDeprecated, showAutomated, showSemiauto, showManual, showLinter, showUnimplemented } = filters;
       const ariaListContainer = document.querySelector('.aria-rules-list-container');
-      const noAriaRulesMessage = document.querySelector('.no-aria-rules-message');
-      const filteredAriaMessage = document.querySelector('.filtered-aria-rules-message');
       const showEmptyScCheckbox = document.getElementById('show-empty-sc');
       const showEmptySections = showEmptyScCheckbox ? showEmptyScCheckbox.checked : true;
       if (!ariaListContainer) {
         // If the list container isn't found, do nothing (it might not exist if found_aria_rule was false)
         return false; 
       }
-      // For each ARIA requirement group, toggle its <ul> and .no-act-rules-message
+      // For each ARIA requirement group, toggle its <ul> and .filtered-rules-message
       let ariaGroups = [];
       let child = ariaListContainer.firstElementChild;
       while (child) {
@@ -353,14 +351,17 @@
         const visibleCount = filterRuleList(ul, {
           showProposed, showApproved, showDeprecated, showAutomated, showSemiauto, showManual, showLinter, showUnimplemented
         });
-        // Find the .no-act-rules-message sibling after the <ul>
-        const noRulesMsg = ul.nextElementSibling && ul.nextElementSibling.classList.contains('no-act-rules-message') ? ul.nextElementSibling : null;
+        // Find the .filtered-rules-message sibling after the <ul>
+        const heading = ul.previousElementSibling && ul.previousElementSibling.tagName === 'H3' ? ul.previousElementSibling : null;
+        const noRulesMsg = ul.nextElementSibling && ul.nextElementSibling.classList.contains('filtered-rules-message') ? ul.nextElementSibling : null;
         let titlePara = ul.previousElementSibling;
         if (visibleCount === 0 && !showEmptySections) {
+          if (heading) toggleVisibility(heading, false);
           if (ul) toggleVisibility(ul, false);
           if (noRulesMsg) toggleVisibility(noRulesMsg, false);
           if (titlePara && (titlePara.tagName === 'P' || titlePara.tagName === 'STRONG')) toggleVisibility(titlePara, false);
         } else {
+          if (heading) toggleVisibility(heading, true);
           if (ul) toggleVisibility(ul, visibleCount > 0);
           if (noRulesMsg) toggleVisibility(noRulesMsg, visibleCount === 0);
           if (titlePara && (titlePara.tagName === 'P' || titlePara.tagName === 'STRONG')) toggleVisibility(titlePara, true);
@@ -374,22 +375,6 @@
       ariaRuleItems.forEach(function(rule) {
          if (!rule.hasAttribute('hidden')) visibleAriaRuleCount++;
       });
-      const initiallyHadRules = !noAriaRulesMessage || noAriaRulesMessage.hasAttribute('hidden');
-      if (initiallyHadRules) {
-        if (visibleAriaRuleCount > 0) {
-          toggleVisibility(ariaListContainer, true);
-          if (noAriaRulesMessage) toggleVisibility(noAriaRulesMessage, false);
-          if (filteredAriaMessage) toggleVisibility(filteredAriaMessage, false);
-        } else {
-          toggleVisibility(ariaListContainer, false);
-          if (noAriaRulesMessage) toggleVisibility(noAriaRulesMessage, false);
-          if (filteredAriaMessage) toggleVisibility(filteredAriaMessage, true);
-        }
-      } else {
-        toggleVisibility(ariaListContainer, false);
-        if (noAriaRulesMessage) toggleVisibility(noAriaRulesMessage, true);
-        if (filteredAriaMessage) toggleVisibility(filteredAriaMessage, false);
-      }
       return visibleAriaRuleCount > 0;
     }
 
