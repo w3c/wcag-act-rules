@@ -52,7 +52,6 @@ Before you begin, make sure you have the following installed:
 
 ## Set a rule to "approved"
 
-
 1. On the ACT-rules CG repo, go to the [Set a rule to approved](https://github.com/act-rules/act-rules.github.io/actions/workflows/approve-rule.yml) GitHub Action.
 2. Open "Run workflow", fill in the Rule ID, and optionally a branch name. When updating a rule that has been approved before, fill in a list of one or more changes from the previously approved rule version. 
 3. Click "Run Workflow" and wait until it completes
