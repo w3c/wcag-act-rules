@@ -19,39 +19,36 @@ This repo receives Rules content and assets from the [ACT-Rules](https://github.
 - Setting a rule as "approved", or "proposed" is handled via GitHub actions on the [ACT-Rules](https://github.com/act-rules/act-rules.github.io/) repository.
 - Implementation data is handled by additional scripts on the [ACT-Tools](https://github.com/act-rules/act-tools/).
 
-## Running locally
+## Build locally
 
-1. **Prerequisites:**
-   - [Ruby](https://www.ruby-lang.org/en/documentation/installation/) (version 3.3.3 recommended)
-   - [Git](https://git-scm.com/downloads)
-   - [Node.js and npm](https://nodejs.org/)
+Before you begin, make sure you have the following installed:
 
-2. **Clone the repository with submodules:**
-   ```
-   git clone https://github.com/w3c/wcag-act-rules.git
-   cd wcag-act-rules
-   git submodule update --init --remote
-   ```
+- [Ruby](https://www.ruby-lang.org/en/documentation/installation/) version 3.4.8 or higher\
+    Check your Ruby version using `ruby -v`
+- [Bundler](https://bundler.io/)
 
-3. **Install dependencies:**
-   ```
-   bundle install
-   ```
+1. Install  Ruby dependencies
 
-4. **Run the Jekyll server:**
-   ```
-   bundle exec jekyll serve -w --livereload --config _config.yml,_config_staging.yml
-   ```
+    ```bash
+    bundle install
+    ```
 
-5. **View the site:**
-   Open your browser to `http://localhost:4000/standards-guidelines/act/rules/`
+2. Use the latest version of the `wai-website-theme` and `wai-website-plugin` dependencies (optional)
 
-## Set a rule to approved
+    By default, the project will use the versions of the theme and plugin set in the `Gemfile.lock` file. To use the latest versions, run:
+    
+    ```bash
+    bundle update wai-website-theme --conservative
+    bundle update wai-website-plugin --conservative
+    ```
 
-1. Go to the [Set a rule to approved](https://github.com/act-rules/act-rules.github.io/actions/workflows/approve-rule.yml) GitHub Action.
-2. Open "Run workflow", fill in the Rule ID, and optionally a branch. When updating a rule that has been approved before, fill in a list of one or more changes from the previously approved rule version. 
-3. Click "Run Workflow" and wait until it completes
-4. Go to [wcag-act-rules Pull Requests](https://github.com/w3c/wcag-act-rules/pulls) and open a pull request from the branch that was created by the GitHub action.
+    **Note:** Make sure to include the `--conservative` flag to avoid updating the gems the theme and plugin depend on.
+
+3. Serve and preview
+
+    ```bash
+    bundle exec jekyll serve
+    ```
 
 ## Set a rule to "approved"
 

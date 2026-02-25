@@ -3,7 +3,7 @@
   "website": "https://www.w3.org/WAI/standards-guidelines/act/rules/",
   "license": "https://act-rules.github.io/pages/license/",
   "description": "Accessibility conformance testing rules for HTML",
-  "count": 1183,
+  "count": 1190,
   "testcases": [
     {
       "ruleId": "674b10",
@@ -13584,6 +13584,910 @@
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/bisz58/proposed/"
     },
     {
+      "ruleId": "b33eff",
+      "approved": true,
+      "ruleName": "Orientation of the page is not restricted using CSS transforms",
+      "ruleAccessibilityRequirements": {
+        "wcag21:1.3.4": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "0b392e6774d063a24241c3629113909e98c98607",
+      "testcaseTitle": "Passed Example 1",
+      "relativePath": "testcases/b33eff/0b392e6774d063a24241c3629113909e98c98607.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/0b392e6774d063a24241c3629113909e98c98607.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/b33eff/proposed/"
+    },
+    {
+      "ruleId": "b33eff",
+      "approved": true,
+      "ruleName": "Orientation of the page is not restricted using CSS transforms",
+      "ruleAccessibilityRequirements": {
+        "wcag21:1.3.4": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "405d1e8fb50b36ae53c655c228126a078e591d3b",
+      "testcaseTitle": "Passed Example 2",
+      "relativePath": "testcases/b33eff/405d1e8fb50b36ae53c655c228126a078e591d3b.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/405d1e8fb50b36ae53c655c228126a078e591d3b.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/b33eff/proposed/"
+    },
+    {
+      "ruleId": "b33eff",
+      "approved": true,
+      "ruleName": "Orientation of the page is not restricted using CSS transforms",
+      "ruleAccessibilityRequirements": {
+        "wcag21:1.3.4": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "4fa1ac6e6c6c65a3cc17e144823e45ff30f428bb",
+      "testcaseTitle": "Passed Example 3",
+      "relativePath": "testcases/b33eff/4fa1ac6e6c6c65a3cc17e144823e45ff30f428bb.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/4fa1ac6e6c6c65a3cc17e144823e45ff30f428bb.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/b33eff/proposed/"
+    },
+    {
+      "ruleId": "b33eff",
+      "approved": true,
+      "ruleName": "Orientation of the page is not restricted using CSS transforms",
+      "ruleAccessibilityRequirements": {
+        "wcag21:1.3.4": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "3b2f386c66ccb9c1a9a848017dab9b074afbf858",
+      "testcaseTitle": "Failed Example 1",
+      "relativePath": "testcases/b33eff/3b2f386c66ccb9c1a9a848017dab9b074afbf858.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/3b2f386c66ccb9c1a9a848017dab9b074afbf858.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/b33eff/proposed/"
+    },
+    {
+      "ruleId": "b33eff",
+      "approved": true,
+      "ruleName": "Orientation of the page is not restricted using CSS transforms",
+      "ruleAccessibilityRequirements": {
+        "wcag21:1.3.4": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "388f97562ae3b7e3aec7ad6305df36a91b68cf77",
+      "testcaseTitle": "Failed Example 2",
+      "relativePath": "testcases/b33eff/388f97562ae3b7e3aec7ad6305df36a91b68cf77.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/388f97562ae3b7e3aec7ad6305df36a91b68cf77.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/b33eff/proposed/"
+    },
+    {
+      "ruleId": "b33eff",
+      "approved": true,
+      "ruleName": "Orientation of the page is not restricted using CSS transforms",
+      "ruleAccessibilityRequirements": {
+        "wcag21:1.3.4": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "93ad10ce32325be5b7c8cbaec7254d55e8fb577c",
+      "testcaseTitle": "Failed Example 3",
+      "relativePath": "testcases/b33eff/93ad10ce32325be5b7c8cbaec7254d55e8fb577c.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/93ad10ce32325be5b7c8cbaec7254d55e8fb577c.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/b33eff/proposed/"
+    },
+    {
+      "ruleId": "b33eff",
+      "approved": true,
+      "ruleName": "Orientation of the page is not restricted using CSS transforms",
+      "ruleAccessibilityRequirements": {
+        "wcag21:1.3.4": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "8f341a73c698daf157613c32a521878ed5aa7310",
+      "testcaseTitle": "Failed Example 4",
+      "relativePath": "testcases/b33eff/8f341a73c698daf157613c32a521878ed5aa7310.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/8f341a73c698daf157613c32a521878ed5aa7310.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/b33eff/proposed/"
+    },
+    {
+      "ruleId": "b33eff",
+      "approved": true,
+      "ruleName": "Orientation of the page is not restricted using CSS transforms",
+      "ruleAccessibilityRequirements": {
+        "wcag21:1.3.4": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "inapplicable",
+      "testcaseId": "c59f09b11f0743c523cc63ae3c827996889fa32d",
+      "testcaseTitle": "Inapplicable Example 1",
+      "relativePath": "testcases/b33eff/c59f09b11f0743c523cc63ae3c827996889fa32d.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/c59f09b11f0743c523cc63ae3c827996889fa32d.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/b33eff/proposed/"
+    },
+    {
+      "ruleId": "b33eff",
+      "approved": true,
+      "ruleName": "Orientation of the page is not restricted using CSS transforms",
+      "ruleAccessibilityRequirements": {
+        "wcag21:1.3.4": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "inapplicable",
+      "testcaseId": "b8d71ae629b704bd374b0a2dcde569bd108c848e",
+      "testcaseTitle": "Inapplicable Example 2",
+      "relativePath": "testcases/b33eff/b8d71ae629b704bd374b0a2dcde569bd108c848e.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/b8d71ae629b704bd374b0a2dcde569bd108c848e.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/b33eff/proposed/"
+    },
+    {
+      "ruleId": "b33eff",
+      "approved": true,
+      "ruleName": "Orientation of the page is not restricted using CSS transforms",
+      "ruleAccessibilityRequirements": {
+        "wcag21:1.3.4": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "inapplicable",
+      "testcaseId": "5cde20e2acab8991c299a317825201af48bf5736",
+      "testcaseTitle": "Inapplicable Example 3",
+      "relativePath": "testcases/b33eff/5cde20e2acab8991c299a317825201af48bf5736.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/5cde20e2acab8991c299a317825201af48bf5736.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/b33eff/proposed/"
+    },
+    {
+      "ruleId": "b33eff",
+      "approved": true,
+      "ruleName": "Orientation of the page is not restricted using CSS transforms",
+      "ruleAccessibilityRequirements": {
+        "wcag21:1.3.4": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "inapplicable",
+      "testcaseId": "4c34705d8d866194fd8fe96a0bd1abaf267b11f0",
+      "testcaseTitle": "Inapplicable Example 4",
+      "relativePath": "testcases/b33eff/4c34705d8d866194fd8fe96a0bd1abaf267b11f0.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/4c34705d8d866194fd8fe96a0bd1abaf267b11f0.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/b33eff/proposed/"
+    },
+    {
+      "ruleId": "b33eff",
+      "approved": true,
+      "ruleName": "Orientation of the page is not restricted using CSS transforms",
+      "ruleAccessibilityRequirements": {
+        "wcag21:1.3.4": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "inapplicable",
+      "testcaseId": "e228ac70387fe286917bce3028ae311269ae2f35",
+      "testcaseTitle": "Inapplicable Example 5",
+      "relativePath": "testcases/b33eff/e228ac70387fe286917bce3028ae311269ae2f35.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/e228ac70387fe286917bce3028ae311269ae2f35.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/b33eff/proposed/"
+    },
+    {
+      "ruleId": "4e8ab6",
+      "approved": true,
+      "ruleName": "Element with role attribute has required states and properties",
+      "ruleAccessibilityRequirements": {
+        "wcag-technique:ARIA5": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "aria12:requiredState": {
+          "title": "ARIA 1.2, 5.2.2 Required States and Properties",
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "satisfied",
+          "inapplicable": "satisfied"
+        },
+        "wcag20:1.3.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because browsers and assistive technologies will often fall back on a non-standard default value, which may be sufficient. Some of the failed examples may satisfy this success criterion."
+        },
+        "wcag20:4.1.2": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because browsers and assistive technologies will often fall back on a non-standard default value, which may be sufficient. Some of the failed examples may satisfy this success criterion."
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "eadf2a087a82575bcdf9f9158e698a576e9627c8",
+      "testcaseTitle": "Passed Example 1",
+      "relativePath": "testcases/4e8ab6/eadf2a087a82575bcdf9f9158e698a576e9627c8.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/eadf2a087a82575bcdf9f9158e698a576e9627c8.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/4e8ab6/proposed/"
+    },
+    {
+      "ruleId": "4e8ab6",
+      "approved": true,
+      "ruleName": "Element with role attribute has required states and properties",
+      "ruleAccessibilityRequirements": {
+        "wcag-technique:ARIA5": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "aria12:requiredState": {
+          "title": "ARIA 1.2, 5.2.2 Required States and Properties",
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "satisfied",
+          "inapplicable": "satisfied"
+        },
+        "wcag20:1.3.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because browsers and assistive technologies will often fall back on a non-standard default value, which may be sufficient. Some of the failed examples may satisfy this success criterion."
+        },
+        "wcag20:4.1.2": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because browsers and assistive technologies will often fall back on a non-standard default value, which may be sufficient. Some of the failed examples may satisfy this success criterion."
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "5b39aa37000933c7b9a766970b829ce5fada62d6",
+      "testcaseTitle": "Passed Example 2",
+      "relativePath": "testcases/4e8ab6/5b39aa37000933c7b9a766970b829ce5fada62d6.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/5b39aa37000933c7b9a766970b829ce5fada62d6.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/4e8ab6/proposed/"
+    },
+    {
+      "ruleId": "4e8ab6",
+      "approved": true,
+      "ruleName": "Element with role attribute has required states and properties",
+      "ruleAccessibilityRequirements": {
+        "wcag-technique:ARIA5": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "aria12:requiredState": {
+          "title": "ARIA 1.2, 5.2.2 Required States and Properties",
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "satisfied",
+          "inapplicable": "satisfied"
+        },
+        "wcag20:1.3.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because browsers and assistive technologies will often fall back on a non-standard default value, which may be sufficient. Some of the failed examples may satisfy this success criterion."
+        },
+        "wcag20:4.1.2": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because browsers and assistive technologies will often fall back on a non-standard default value, which may be sufficient. Some of the failed examples may satisfy this success criterion."
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "11c5321c05c7b83b8707eee76574a94bd44033fe",
+      "testcaseTitle": "Passed Example 3",
+      "relativePath": "testcases/4e8ab6/11c5321c05c7b83b8707eee76574a94bd44033fe.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/11c5321c05c7b83b8707eee76574a94bd44033fe.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/4e8ab6/proposed/"
+    },
+    {
+      "ruleId": "4e8ab6",
+      "approved": true,
+      "ruleName": "Element with role attribute has required states and properties",
+      "ruleAccessibilityRequirements": {
+        "wcag-technique:ARIA5": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "aria12:requiredState": {
+          "title": "ARIA 1.2, 5.2.2 Required States and Properties",
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "satisfied",
+          "inapplicable": "satisfied"
+        },
+        "wcag20:1.3.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because browsers and assistive technologies will often fall back on a non-standard default value, which may be sufficient. Some of the failed examples may satisfy this success criterion."
+        },
+        "wcag20:4.1.2": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because browsers and assistive technologies will often fall back on a non-standard default value, which may be sufficient. Some of the failed examples may satisfy this success criterion."
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "3da0918b07e5736d55b4b405a22860d889931c15",
+      "testcaseTitle": "Passed Example 4",
+      "relativePath": "testcases/4e8ab6/3da0918b07e5736d55b4b405a22860d889931c15.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/3da0918b07e5736d55b4b405a22860d889931c15.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/4e8ab6/proposed/"
+    },
+    {
+      "ruleId": "4e8ab6",
+      "approved": true,
+      "ruleName": "Element with role attribute has required states and properties",
+      "ruleAccessibilityRequirements": {
+        "wcag-technique:ARIA5": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "aria12:requiredState": {
+          "title": "ARIA 1.2, 5.2.2 Required States and Properties",
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "satisfied",
+          "inapplicable": "satisfied"
+        },
+        "wcag20:1.3.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because browsers and assistive technologies will often fall back on a non-standard default value, which may be sufficient. Some of the failed examples may satisfy this success criterion."
+        },
+        "wcag20:4.1.2": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because browsers and assistive technologies will often fall back on a non-standard default value, which may be sufficient. Some of the failed examples may satisfy this success criterion."
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "58a35afd2998bb6f9c670cb74fa7b550e80897b4",
+      "testcaseTitle": "Passed Example 5",
+      "relativePath": "testcases/4e8ab6/58a35afd2998bb6f9c670cb74fa7b550e80897b4.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/58a35afd2998bb6f9c670cb74fa7b550e80897b4.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/4e8ab6/proposed/"
+    },
+    {
+      "ruleId": "4e8ab6",
+      "approved": true,
+      "ruleName": "Element with role attribute has required states and properties",
+      "ruleAccessibilityRequirements": {
+        "wcag-technique:ARIA5": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "aria12:requiredState": {
+          "title": "ARIA 1.2, 5.2.2 Required States and Properties",
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "satisfied",
+          "inapplicable": "satisfied"
+        },
+        "wcag20:1.3.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because browsers and assistive technologies will often fall back on a non-standard default value, which may be sufficient. Some of the failed examples may satisfy this success criterion."
+        },
+        "wcag20:4.1.2": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because browsers and assistive technologies will often fall back on a non-standard default value, which may be sufficient. Some of the failed examples may satisfy this success criterion."
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "986038d85467255cef4ed7d72c231442427ece23",
+      "testcaseTitle": "Passed Example 6",
+      "relativePath": "testcases/4e8ab6/986038d85467255cef4ed7d72c231442427ece23.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/986038d85467255cef4ed7d72c231442427ece23.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/4e8ab6/proposed/"
+    },
+    {
+      "ruleId": "4e8ab6",
+      "approved": true,
+      "ruleName": "Element with role attribute has required states and properties",
+      "ruleAccessibilityRequirements": {
+        "wcag-technique:ARIA5": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "aria12:requiredState": {
+          "title": "ARIA 1.2, 5.2.2 Required States and Properties",
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "satisfied",
+          "inapplicable": "satisfied"
+        },
+        "wcag20:1.3.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because browsers and assistive technologies will often fall back on a non-standard default value, which may be sufficient. Some of the failed examples may satisfy this success criterion."
+        },
+        "wcag20:4.1.2": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because browsers and assistive technologies will often fall back on a non-standard default value, which may be sufficient. Some of the failed examples may satisfy this success criterion."
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "80462b7b8c490305d1de7e3136c0bcfaef31789f",
+      "testcaseTitle": "Failed Example 1",
+      "relativePath": "testcases/4e8ab6/80462b7b8c490305d1de7e3136c0bcfaef31789f.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/80462b7b8c490305d1de7e3136c0bcfaef31789f.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/4e8ab6/proposed/"
+    },
+    {
+      "ruleId": "4e8ab6",
+      "approved": true,
+      "ruleName": "Element with role attribute has required states and properties",
+      "ruleAccessibilityRequirements": {
+        "wcag-technique:ARIA5": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "aria12:requiredState": {
+          "title": "ARIA 1.2, 5.2.2 Required States and Properties",
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "satisfied",
+          "inapplicable": "satisfied"
+        },
+        "wcag20:1.3.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because browsers and assistive technologies will often fall back on a non-standard default value, which may be sufficient. Some of the failed examples may satisfy this success criterion."
+        },
+        "wcag20:4.1.2": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because browsers and assistive technologies will often fall back on a non-standard default value, which may be sufficient. Some of the failed examples may satisfy this success criterion."
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "907f05aed287f7407d5f95e7d39bfc1435ec0812",
+      "testcaseTitle": "Failed Example 2",
+      "relativePath": "testcases/4e8ab6/907f05aed287f7407d5f95e7d39bfc1435ec0812.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/907f05aed287f7407d5f95e7d39bfc1435ec0812.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/4e8ab6/proposed/"
+    },
+    {
+      "ruleId": "4e8ab6",
+      "approved": true,
+      "ruleName": "Element with role attribute has required states and properties",
+      "ruleAccessibilityRequirements": {
+        "wcag-technique:ARIA5": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "aria12:requiredState": {
+          "title": "ARIA 1.2, 5.2.2 Required States and Properties",
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "satisfied",
+          "inapplicable": "satisfied"
+        },
+        "wcag20:1.3.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because browsers and assistive technologies will often fall back on a non-standard default value, which may be sufficient. Some of the failed examples may satisfy this success criterion."
+        },
+        "wcag20:4.1.2": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because browsers and assistive technologies will often fall back on a non-standard default value, which may be sufficient. Some of the failed examples may satisfy this success criterion."
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "9bb1bdb3e95aa9b895fc4f32b0c2cfc917a07a72",
+      "testcaseTitle": "Failed Example 3",
+      "relativePath": "testcases/4e8ab6/9bb1bdb3e95aa9b895fc4f32b0c2cfc917a07a72.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/9bb1bdb3e95aa9b895fc4f32b0c2cfc917a07a72.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/4e8ab6/proposed/"
+    },
+    {
+      "ruleId": "4e8ab6",
+      "approved": true,
+      "ruleName": "Element with role attribute has required states and properties",
+      "ruleAccessibilityRequirements": {
+        "wcag-technique:ARIA5": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "aria12:requiredState": {
+          "title": "ARIA 1.2, 5.2.2 Required States and Properties",
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "satisfied",
+          "inapplicable": "satisfied"
+        },
+        "wcag20:1.3.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because browsers and assistive technologies will often fall back on a non-standard default value, which may be sufficient. Some of the failed examples may satisfy this success criterion."
+        },
+        "wcag20:4.1.2": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because browsers and assistive technologies will often fall back on a non-standard default value, which may be sufficient. Some of the failed examples may satisfy this success criterion."
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "43af91df529613e51429e18d43ce3df99b189c0f",
+      "testcaseTitle": "Failed Example 4",
+      "relativePath": "testcases/4e8ab6/43af91df529613e51429e18d43ce3df99b189c0f.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/43af91df529613e51429e18d43ce3df99b189c0f.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/4e8ab6/proposed/"
+    },
+    {
+      "ruleId": "4e8ab6",
+      "approved": true,
+      "ruleName": "Element with role attribute has required states and properties",
+      "ruleAccessibilityRequirements": {
+        "wcag-technique:ARIA5": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "aria12:requiredState": {
+          "title": "ARIA 1.2, 5.2.2 Required States and Properties",
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "satisfied",
+          "inapplicable": "satisfied"
+        },
+        "wcag20:1.3.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because browsers and assistive technologies will often fall back on a non-standard default value, which may be sufficient. Some of the failed examples may satisfy this success criterion."
+        },
+        "wcag20:4.1.2": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because browsers and assistive technologies will often fall back on a non-standard default value, which may be sufficient. Some of the failed examples may satisfy this success criterion."
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "7a1942d2d52f50c5df458877a0ee18dc5a22b0c3",
+      "testcaseTitle": "Failed Example 5",
+      "relativePath": "testcases/4e8ab6/7a1942d2d52f50c5df458877a0ee18dc5a22b0c3.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/7a1942d2d52f50c5df458877a0ee18dc5a22b0c3.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/4e8ab6/proposed/"
+    },
+    {
+      "ruleId": "4e8ab6",
+      "approved": true,
+      "ruleName": "Element with role attribute has required states and properties",
+      "ruleAccessibilityRequirements": {
+        "wcag-technique:ARIA5": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "aria12:requiredState": {
+          "title": "ARIA 1.2, 5.2.2 Required States and Properties",
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "satisfied",
+          "inapplicable": "satisfied"
+        },
+        "wcag20:1.3.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because browsers and assistive technologies will often fall back on a non-standard default value, which may be sufficient. Some of the failed examples may satisfy this success criterion."
+        },
+        "wcag20:4.1.2": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because browsers and assistive technologies will often fall back on a non-standard default value, which may be sufficient. Some of the failed examples may satisfy this success criterion."
+        }
+      },
+      "expected": "inapplicable",
+      "testcaseId": "9d80b71ad39b258fb75db804867f189d76ecdab8",
+      "testcaseTitle": "Inapplicable Example 1",
+      "relativePath": "testcases/4e8ab6/9d80b71ad39b258fb75db804867f189d76ecdab8.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/9d80b71ad39b258fb75db804867f189d76ecdab8.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/4e8ab6/proposed/"
+    },
+    {
+      "ruleId": "4e8ab6",
+      "approved": true,
+      "ruleName": "Element with role attribute has required states and properties",
+      "ruleAccessibilityRequirements": {
+        "wcag-technique:ARIA5": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "aria12:requiredState": {
+          "title": "ARIA 1.2, 5.2.2 Required States and Properties",
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "satisfied",
+          "inapplicable": "satisfied"
+        },
+        "wcag20:1.3.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because browsers and assistive technologies will often fall back on a non-standard default value, which may be sufficient. Some of the failed examples may satisfy this success criterion."
+        },
+        "wcag20:4.1.2": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because browsers and assistive technologies will often fall back on a non-standard default value, which may be sufficient. Some of the failed examples may satisfy this success criterion."
+        }
+      },
+      "expected": "inapplicable",
+      "testcaseId": "c43c9679072e95ce85f8a7cb7581e991e73124c7",
+      "testcaseTitle": "Inapplicable Example 2",
+      "relativePath": "testcases/4e8ab6/c43c9679072e95ce85f8a7cb7581e991e73124c7.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/c43c9679072e95ce85f8a7cb7581e991e73124c7.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/4e8ab6/proposed/"
+    },
+    {
+      "ruleId": "4e8ab6",
+      "approved": true,
+      "ruleName": "Element with role attribute has required states and properties",
+      "ruleAccessibilityRequirements": {
+        "wcag-technique:ARIA5": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "aria12:requiredState": {
+          "title": "ARIA 1.2, 5.2.2 Required States and Properties",
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "satisfied",
+          "inapplicable": "satisfied"
+        },
+        "wcag20:1.3.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because browsers and assistive technologies will often fall back on a non-standard default value, which may be sufficient. Some of the failed examples may satisfy this success criterion."
+        },
+        "wcag20:4.1.2": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because browsers and assistive technologies will often fall back on a non-standard default value, which may be sufficient. Some of the failed examples may satisfy this success criterion."
+        }
+      },
+      "expected": "inapplicable",
+      "testcaseId": "f473186fa351637a3c034b2df567239a39a8139c",
+      "testcaseTitle": "Inapplicable Example 3",
+      "relativePath": "testcases/4e8ab6/f473186fa351637a3c034b2df567239a39a8139c.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/f473186fa351637a3c034b2df567239a39a8139c.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/4e8ab6/proposed/"
+    },
+    {
+      "ruleId": "2t702h",
+      "approved": true,
+      "ruleName": "Summary element has non-empty accessible name",
+      "ruleAccessibilityRequirements": {
+        "wcag20:4.1.2": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "174322a2ade5e022c611bdb8389419ce299e3267",
+      "testcaseTitle": "Passed Example 1",
+      "relativePath": "testcases/2t702h/174322a2ade5e022c611bdb8389419ce299e3267.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2t702h/174322a2ade5e022c611bdb8389419ce299e3267.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/2t702h/proposed/"
+    },
+    {
+      "ruleId": "2t702h",
+      "approved": true,
+      "ruleName": "Summary element has non-empty accessible name",
+      "ruleAccessibilityRequirements": {
+        "wcag20:4.1.2": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "83d39ed6bf5538f6d251150530112b9f66fca6fa",
+      "testcaseTitle": "Passed Example 2",
+      "relativePath": "testcases/2t702h/83d39ed6bf5538f6d251150530112b9f66fca6fa.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2t702h/83d39ed6bf5538f6d251150530112b9f66fca6fa.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/2t702h/proposed/"
+    },
+    {
+      "ruleId": "2t702h",
+      "approved": true,
+      "ruleName": "Summary element has non-empty accessible name",
+      "ruleAccessibilityRequirements": {
+        "wcag20:4.1.2": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "61d7129d076b8cc168168d92734e1ae6ec72cf59",
+      "testcaseTitle": "Passed Example 3",
+      "relativePath": "testcases/2t702h/61d7129d076b8cc168168d92734e1ae6ec72cf59.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2t702h/61d7129d076b8cc168168d92734e1ae6ec72cf59.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/2t702h/proposed/"
+    },
+    {
+      "ruleId": "2t702h",
+      "approved": true,
+      "ruleName": "Summary element has non-empty accessible name",
+      "ruleAccessibilityRequirements": {
+        "wcag20:4.1.2": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "b1c41028fa588755e96a256917da173183aafeca",
+      "testcaseTitle": "Passed Example 4",
+      "relativePath": "testcases/2t702h/b1c41028fa588755e96a256917da173183aafeca.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2t702h/b1c41028fa588755e96a256917da173183aafeca.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/2t702h/proposed/"
+    },
+    {
+      "ruleId": "2t702h",
+      "approved": true,
+      "ruleName": "Summary element has non-empty accessible name",
+      "ruleAccessibilityRequirements": {
+        "wcag20:4.1.2": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "d165641d4faa4b52b97ef661f94b9f7d039c63f7",
+      "testcaseTitle": "Passed Example 5",
+      "relativePath": "testcases/2t702h/d165641d4faa4b52b97ef661f94b9f7d039c63f7.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2t702h/d165641d4faa4b52b97ef661f94b9f7d039c63f7.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/2t702h/proposed/"
+    },
+    {
+      "ruleId": "2t702h",
+      "approved": true,
+      "ruleName": "Summary element has non-empty accessible name",
+      "ruleAccessibilityRequirements": {
+        "wcag20:4.1.2": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "f0f5f9e727e46e257e5d6420a8ab11b760c75617",
+      "testcaseTitle": "Failed Example 1",
+      "relativePath": "testcases/2t702h/f0f5f9e727e46e257e5d6420a8ab11b760c75617.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2t702h/f0f5f9e727e46e257e5d6420a8ab11b760c75617.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/2t702h/proposed/"
+    },
+    {
+      "ruleId": "2t702h",
+      "approved": true,
+      "ruleName": "Summary element has non-empty accessible name",
+      "ruleAccessibilityRequirements": {
+        "wcag20:4.1.2": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "a7fd233a404e737baaee10e34c35e40bbe7f14bb",
+      "testcaseTitle": "Failed Example 2",
+      "relativePath": "testcases/2t702h/a7fd233a404e737baaee10e34c35e40bbe7f14bb.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2t702h/a7fd233a404e737baaee10e34c35e40bbe7f14bb.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/2t702h/proposed/"
+    },
+    {
+      "ruleId": "2t702h",
+      "approved": true,
+      "ruleName": "Summary element has non-empty accessible name",
+      "ruleAccessibilityRequirements": {
+        "wcag20:4.1.2": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "f76f484c92eec764dbd1ee3e5ee3421f230a56d7",
+      "testcaseTitle": "Failed Example 3",
+      "relativePath": "testcases/2t702h/f76f484c92eec764dbd1ee3e5ee3421f230a56d7.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2t702h/f76f484c92eec764dbd1ee3e5ee3421f230a56d7.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/2t702h/proposed/"
+    },
+    {
+      "ruleId": "2t702h",
+      "approved": true,
+      "ruleName": "Summary element has non-empty accessible name",
+      "ruleAccessibilityRequirements": {
+        "wcag20:4.1.2": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "inapplicable",
+      "testcaseId": "d0f1dd469c5e48feec2db9ef84a98e143212f574",
+      "testcaseTitle": "Inapplicable Example 1",
+      "relativePath": "testcases/2t702h/d0f1dd469c5e48feec2db9ef84a98e143212f574.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2t702h/d0f1dd469c5e48feec2db9ef84a98e143212f574.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/2t702h/proposed/"
+    },
+    {
+      "ruleId": "2t702h",
+      "approved": true,
+      "ruleName": "Summary element has non-empty accessible name",
+      "ruleAccessibilityRequirements": {
+        "wcag20:4.1.2": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "inapplicable",
+      "testcaseId": "eb98ae3dbf17cb6ca91f27b0ae8d9d05f81cbb4d",
+      "testcaseTitle": "Inapplicable Example 2",
+      "relativePath": "testcases/2t702h/eb98ae3dbf17cb6ca91f27b0ae8d9d05f81cbb4d.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2t702h/eb98ae3dbf17cb6ca91f27b0ae8d9d05f81cbb4d.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/2t702h/proposed/"
+    },
+    {
+      "ruleId": "2t702h",
+      "approved": true,
+      "ruleName": "Summary element has non-empty accessible name",
+      "ruleAccessibilityRequirements": {
+        "wcag20:4.1.2": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "inapplicable",
+      "testcaseId": "8d8611c7fdca07f6aa3bf3df3850921b9a35356b",
+      "testcaseTitle": "Inapplicable Example 3",
+      "relativePath": "testcases/2t702h/8d8611c7fdca07f6aa3bf3df3850921b9a35356b.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2t702h/8d8611c7fdca07f6aa3bf3df3850921b9a35356b.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/2t702h/proposed/"
+    },
+    {
+      "ruleId": "2t702h",
+      "approved": true,
+      "ruleName": "Summary element has non-empty accessible name",
+      "ruleAccessibilityRequirements": {
+        "wcag20:4.1.2": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
+      "expected": "inapplicable",
+      "testcaseId": "2fb5a6c2e2e4f6c70ac9e26f2d0617892972cd56",
+      "testcaseTitle": "Inapplicable Example 4",
+      "relativePath": "testcases/2t702h/2fb5a6c2e2e4f6c70ac9e26f2d0617892972cd56.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2t702h/2fb5a6c2e2e4f6c70ac9e26f2d0617892972cd56.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/2t702h/proposed/"
+    },
+    {
       "ruleId": "5f99a7",
       "ruleName": "ARIA attribute is defined in WAI-ARIA",
       "ruleAccessibilityRequirements": {
@@ -13600,6 +14504,258 @@
       "relativePath": "testcases/5f99a7/287a72860814f903d561dc3e7765f507ca041624.html",
       "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5f99a7/287a72860814f903d561dc3e7765f507ca041624.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/5f99a7/proposed/"
+    },
+    {
+      "ruleId": "kb1m8s",
+      "ruleName": "ARIA global properties not used where prohibited",
+      "ruleAccessibilityRequirements": {
+        "aria12:prohibitedattributes": {
+          "title": "ARIA 1.2, 5.2.5 Prohibited States and Properties",
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "satisfied",
+          "inapplicable": "satisfied"
+        },
+        "wcag-technique:ARIA5": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:1.3.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "f5ec91369a85c8873996b82a4c5151c65a7d2204",
+      "testcaseTitle": "Passed Example 1",
+      "relativePath": "testcases/kb1m8s/f5ec91369a85c8873996b82a4c5151c65a7d2204.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/kb1m8s/f5ec91369a85c8873996b82a4c5151c65a7d2204.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/kb1m8s/proposed/"
+    },
+    {
+      "ruleId": "kb1m8s",
+      "ruleName": "ARIA global properties not used where prohibited",
+      "ruleAccessibilityRequirements": {
+        "aria12:prohibitedattributes": {
+          "title": "ARIA 1.2, 5.2.5 Prohibited States and Properties",
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "satisfied",
+          "inapplicable": "satisfied"
+        },
+        "wcag-technique:ARIA5": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:1.3.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "ae9e9709911eaa328189f8ab354cba0bb840a6c9",
+      "testcaseTitle": "Passed Example 2",
+      "relativePath": "testcases/kb1m8s/ae9e9709911eaa328189f8ab354cba0bb840a6c9.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/kb1m8s/ae9e9709911eaa328189f8ab354cba0bb840a6c9.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/kb1m8s/proposed/"
+    },
+    {
+      "ruleId": "kb1m8s",
+      "ruleName": "ARIA global properties not used where prohibited",
+      "ruleAccessibilityRequirements": {
+        "aria12:prohibitedattributes": {
+          "title": "ARIA 1.2, 5.2.5 Prohibited States and Properties",
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "satisfied",
+          "inapplicable": "satisfied"
+        },
+        "wcag-technique:ARIA5": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:1.3.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "8cf721f0f9490be4e2909caaa944cf3a32a43fc0",
+      "testcaseTitle": "Passed Example 3",
+      "relativePath": "testcases/kb1m8s/8cf721f0f9490be4e2909caaa944cf3a32a43fc0.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/kb1m8s/8cf721f0f9490be4e2909caaa944cf3a32a43fc0.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/kb1m8s/proposed/"
+    },
+    {
+      "ruleId": "kb1m8s",
+      "ruleName": "ARIA global properties not used where prohibited",
+      "ruleAccessibilityRequirements": {
+        "aria12:prohibitedattributes": {
+          "title": "ARIA 1.2, 5.2.5 Prohibited States and Properties",
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "satisfied",
+          "inapplicable": "satisfied"
+        },
+        "wcag-technique:ARIA5": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:1.3.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "17a785ed25669522866f98997f76d69150243c8b",
+      "testcaseTitle": "Failed Example 1",
+      "relativePath": "testcases/kb1m8s/17a785ed25669522866f98997f76d69150243c8b.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/kb1m8s/17a785ed25669522866f98997f76d69150243c8b.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/kb1m8s/proposed/"
+    },
+    {
+      "ruleId": "kb1m8s",
+      "ruleName": "ARIA global properties not used where prohibited",
+      "ruleAccessibilityRequirements": {
+        "aria12:prohibitedattributes": {
+          "title": "ARIA 1.2, 5.2.5 Prohibited States and Properties",
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "satisfied",
+          "inapplicable": "satisfied"
+        },
+        "wcag-technique:ARIA5": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:1.3.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "358fa0b821c3118de63adfbe37bd0e85a3bd6f8c",
+      "testcaseTitle": "Failed Example 2",
+      "relativePath": "testcases/kb1m8s/358fa0b821c3118de63adfbe37bd0e85a3bd6f8c.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/kb1m8s/358fa0b821c3118de63adfbe37bd0e85a3bd6f8c.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/kb1m8s/proposed/"
+    },
+    {
+      "ruleId": "kb1m8s",
+      "ruleName": "ARIA global properties not used where prohibited",
+      "ruleAccessibilityRequirements": {
+        "aria12:prohibitedattributes": {
+          "title": "ARIA 1.2, 5.2.5 Prohibited States and Properties",
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "satisfied",
+          "inapplicable": "satisfied"
+        },
+        "wcag-technique:ARIA5": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:1.3.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "1345bf067f66f2ee893f75e43d72121a0119d6b1",
+      "testcaseTitle": "Failed Example 3",
+      "relativePath": "testcases/kb1m8s/1345bf067f66f2ee893f75e43d72121a0119d6b1.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/kb1m8s/1345bf067f66f2ee893f75e43d72121a0119d6b1.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/kb1m8s/proposed/"
+    },
+    {
+      "ruleId": "kb1m8s",
+      "ruleName": "ARIA global properties not used where prohibited",
+      "ruleAccessibilityRequirements": {
+        "aria12:prohibitedattributes": {
+          "title": "ARIA 1.2, 5.2.5 Prohibited States and Properties",
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "satisfied",
+          "inapplicable": "satisfied"
+        },
+        "wcag-technique:ARIA5": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:1.3.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "7cddc927da518cc9b170051a9010e256068c875b",
+      "testcaseTitle": "Failed Example 4",
+      "relativePath": "testcases/kb1m8s/7cddc927da518cc9b170051a9010e256068c875b.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/kb1m8s/7cddc927da518cc9b170051a9010e256068c875b.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/kb1m8s/proposed/"
+    },
+    {
+      "ruleId": "kb1m8s",
+      "ruleName": "ARIA global properties not used where prohibited",
+      "ruleAccessibilityRequirements": {
+        "aria12:prohibitedattributes": {
+          "title": "ARIA 1.2, 5.2.5 Prohibited States and Properties",
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "satisfied",
+          "inapplicable": "satisfied"
+        },
+        "wcag-technique:ARIA5": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:1.3.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "c4a2fe12d5a48f7ace66475d3791e051ddefa807",
+      "testcaseTitle": "Failed Example 5",
+      "relativePath": "testcases/kb1m8s/c4a2fe12d5a48f7ace66475d3791e051ddefa807.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/kb1m8s/c4a2fe12d5a48f7ace66475d3791e051ddefa807.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/kb1m8s/proposed/"
+    },
+    {
+      "ruleId": "kb1m8s",
+      "ruleName": "ARIA global properties not used where prohibited",
+      "ruleAccessibilityRequirements": {
+        "aria12:prohibitedattributes": {
+          "title": "ARIA 1.2, 5.2.5 Prohibited States and Properties",
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "satisfied",
+          "inapplicable": "satisfied"
+        },
+        "wcag-technique:ARIA5": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:1.3.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
+        }
+      },
+      "expected": "inapplicable",
+      "testcaseId": "c33e521a7914c6dc8bde272dcc8e090b7463473c",
+      "testcaseTitle": "Inapplicable Example 1",
+      "relativePath": "testcases/kb1m8s/c33e521a7914c6dc8bde272dcc8e090b7463473c.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/kb1m8s/c33e521a7914c6dc8bde272dcc8e090b7463473c.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/kb1m8s/proposed/"
     },
     {
       "ruleId": "ff89c9",
@@ -13870,231 +15026,6 @@
       "relativePath": "testcases/ff89c9/48dc663078fb5421332814b72bd0079f90aad09a.html",
       "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ff89c9/48dc663078fb5421332814b72bd0079f90aad09a.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/ff89c9/proposed/"
-    },
-    {
-      "ruleId": "in6db8",
-      "ruleName": "ARIA required ID references exist",
-      "ruleAccessibilityRequirements": {
-        "aria12:propcharacteristic_value": {
-          "title": "ARIA 1.2, 6.2.4 Value (Characteristics of States and Properties)",
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "satisfied",
-          "inapplicable": "satisfied"
-        },
-        "wcag20:1.3.1": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not check for alternatives which may be accessible. Some of the failed examples satisfy this success criterion."
-        },
-        "wcag20:4.1.2": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not check for alternatives which may be accessible. Some of the failed examples satisfy this success criterion."
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "ad53952b46a372bddc3d34d82427c9ccbc6ecaa6",
-      "testcaseTitle": "Passed Example 1",
-      "relativePath": "testcases/in6db8/ad53952b46a372bddc3d34d82427c9ccbc6ecaa6.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/in6db8/ad53952b46a372bddc3d34d82427c9ccbc6ecaa6.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/in6db8/proposed/"
-    },
-    {
-      "ruleId": "in6db8",
-      "ruleName": "ARIA required ID references exist",
-      "ruleAccessibilityRequirements": {
-        "aria12:propcharacteristic_value": {
-          "title": "ARIA 1.2, 6.2.4 Value (Characteristics of States and Properties)",
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "satisfied",
-          "inapplicable": "satisfied"
-        },
-        "wcag20:1.3.1": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not check for alternatives which may be accessible. Some of the failed examples satisfy this success criterion."
-        },
-        "wcag20:4.1.2": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not check for alternatives which may be accessible. Some of the failed examples satisfy this success criterion."
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "2f505db707edd40237682c62199bf47c27678e07",
-      "testcaseTitle": "Passed Example 2",
-      "relativePath": "testcases/in6db8/2f505db707edd40237682c62199bf47c27678e07.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/in6db8/2f505db707edd40237682c62199bf47c27678e07.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/in6db8/proposed/"
-    },
-    {
-      "ruleId": "in6db8",
-      "ruleName": "ARIA required ID references exist",
-      "ruleAccessibilityRequirements": {
-        "aria12:propcharacteristic_value": {
-          "title": "ARIA 1.2, 6.2.4 Value (Characteristics of States and Properties)",
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "satisfied",
-          "inapplicable": "satisfied"
-        },
-        "wcag20:1.3.1": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not check for alternatives which may be accessible. Some of the failed examples satisfy this success criterion."
-        },
-        "wcag20:4.1.2": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not check for alternatives which may be accessible. Some of the failed examples satisfy this success criterion."
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "49adaf491d168fa320ceec321e129ad8515e16fa",
-      "testcaseTitle": "Passed Example 3",
-      "relativePath": "testcases/in6db8/49adaf491d168fa320ceec321e129ad8515e16fa.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/in6db8/49adaf491d168fa320ceec321e129ad8515e16fa.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/in6db8/proposed/"
-    },
-    {
-      "ruleId": "in6db8",
-      "ruleName": "ARIA required ID references exist",
-      "ruleAccessibilityRequirements": {
-        "aria12:propcharacteristic_value": {
-          "title": "ARIA 1.2, 6.2.4 Value (Characteristics of States and Properties)",
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "satisfied",
-          "inapplicable": "satisfied"
-        },
-        "wcag20:1.3.1": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not check for alternatives which may be accessible. Some of the failed examples satisfy this success criterion."
-        },
-        "wcag20:4.1.2": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not check for alternatives which may be accessible. Some of the failed examples satisfy this success criterion."
-        }
-      },
-      "expected": "failed",
-      "testcaseId": "0638090ec9e3e5bfaf95d8c38906f1bd600db7d0",
-      "testcaseTitle": "Failed Example 1",
-      "relativePath": "testcases/in6db8/0638090ec9e3e5bfaf95d8c38906f1bd600db7d0.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/in6db8/0638090ec9e3e5bfaf95d8c38906f1bd600db7d0.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/in6db8/proposed/"
-    },
-    {
-      "ruleId": "in6db8",
-      "ruleName": "ARIA required ID references exist",
-      "ruleAccessibilityRequirements": {
-        "aria12:propcharacteristic_value": {
-          "title": "ARIA 1.2, 6.2.4 Value (Characteristics of States and Properties)",
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "satisfied",
-          "inapplicable": "satisfied"
-        },
-        "wcag20:1.3.1": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not check for alternatives which may be accessible. Some of the failed examples satisfy this success criterion."
-        },
-        "wcag20:4.1.2": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not check for alternatives which may be accessible. Some of the failed examples satisfy this success criterion."
-        }
-      },
-      "expected": "failed",
-      "testcaseId": "7cdf98178f57c1f64c1bfbe0801b7a5e2e73a89f",
-      "testcaseTitle": "Failed Example 2",
-      "relativePath": "testcases/in6db8/7cdf98178f57c1f64c1bfbe0801b7a5e2e73a89f.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/in6db8/7cdf98178f57c1f64c1bfbe0801b7a5e2e73a89f.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/in6db8/proposed/"
-    },
-    {
-      "ruleId": "in6db8",
-      "ruleName": "ARIA required ID references exist",
-      "ruleAccessibilityRequirements": {
-        "aria12:propcharacteristic_value": {
-          "title": "ARIA 1.2, 6.2.4 Value (Characteristics of States and Properties)",
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "satisfied",
-          "inapplicable": "satisfied"
-        },
-        "wcag20:1.3.1": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not check for alternatives which may be accessible. Some of the failed examples satisfy this success criterion."
-        },
-        "wcag20:4.1.2": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not check for alternatives which may be accessible. Some of the failed examples satisfy this success criterion."
-        }
-      },
-      "expected": "failed",
-      "testcaseId": "ee9eeebf0a0b1a514df6202443345d999d2bd575",
-      "testcaseTitle": "Failed Example 3",
-      "relativePath": "testcases/in6db8/ee9eeebf0a0b1a514df6202443345d999d2bd575.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/in6db8/ee9eeebf0a0b1a514df6202443345d999d2bd575.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/in6db8/proposed/"
-    },
-    {
-      "ruleId": "in6db8",
-      "ruleName": "ARIA required ID references exist",
-      "ruleAccessibilityRequirements": {
-        "aria12:propcharacteristic_value": {
-          "title": "ARIA 1.2, 6.2.4 Value (Characteristics of States and Properties)",
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "satisfied",
-          "inapplicable": "satisfied"
-        },
-        "wcag20:1.3.1": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not check for alternatives which may be accessible. Some of the failed examples satisfy this success criterion."
-        },
-        "wcag20:4.1.2": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not check for alternatives which may be accessible. Some of the failed examples satisfy this success criterion."
-        }
-      },
-      "expected": "inapplicable",
-      "testcaseId": "ca835c48c5d554fbfaea6d022816e39cda25660a",
-      "testcaseTitle": "Inapplicable Example 1",
-      "relativePath": "testcases/in6db8/ca835c48c5d554fbfaea6d022816e39cda25660a.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/in6db8/ca835c48c5d554fbfaea6d022816e39cda25660a.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/in6db8/proposed/"
-    },
-    {
-      "ruleId": "in6db8",
-      "ruleName": "ARIA required ID references exist",
-      "ruleAccessibilityRequirements": {
-        "aria12:propcharacteristic_value": {
-          "title": "ARIA 1.2, 6.2.4 Value (Characteristics of States and Properties)",
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "satisfied",
-          "inapplicable": "satisfied"
-        },
-        "wcag20:1.3.1": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not check for alternatives which may be accessible. Some of the failed examples satisfy this success criterion."
-        },
-        "wcag20:4.1.2": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not check for alternatives which may be accessible. Some of the failed examples satisfy this success criterion."
-        }
-      },
-      "expected": "inapplicable",
-      "testcaseId": "97bd98302238b32e9131d042174502a83db2a4b2",
-      "testcaseTitle": "Inapplicable Example 2",
-      "relativePath": "testcases/in6db8/97bd98302238b32e9131d042174502a83db2a4b2.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/in6db8/97bd98302238b32e9131d042174502a83db2a4b2.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/in6db8/proposed/"
-    },
-    {
-      "ruleId": "in6db8",
-      "ruleName": "ARIA required ID references exist",
-      "ruleAccessibilityRequirements": {
-        "aria12:propcharacteristic_value": {
-          "title": "ARIA 1.2, 6.2.4 Value (Characteristics of States and Properties)",
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "satisfied",
-          "inapplicable": "satisfied"
-        },
-        "wcag20:1.3.1": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not check for alternatives which may be accessible. Some of the failed examples satisfy this success criterion."
-        },
-        "wcag20:4.1.2": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not check for alternatives which may be accessible. Some of the failed examples satisfy this success criterion."
-        }
-      },
-      "expected": "inapplicable",
-      "testcaseId": "341bc62ae116f74ee37f215b6272043f7f7706ee",
-      "testcaseTitle": "Inapplicable Example 3",
-      "relativePath": "testcases/in6db8/341bc62ae116f74ee37f215b6272043f7f7706ee.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/in6db8/341bc62ae116f74ee37f215b6272043f7f7706ee.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/in6db8/proposed/"
     },
     {
       "ruleId": "bc4a75",
@@ -14739,10 +15670,10 @@
         }
       },
       "expected": "passed",
-      "testcaseId": "34f5126e4a87269f583d2c2963ed31b4e852f041",
+      "testcaseId": "556a7ba560d3d3ab0b78fabb46037ac4dc192fd9",
       "testcaseTitle": "Passed Example 7",
-      "relativePath": "testcases/5c01ea/34f5126e4a87269f583d2c2963ed31b4e852f041.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/34f5126e4a87269f583d2c2963ed31b4e852f041.html",
+      "relativePath": "testcases/5c01ea/556a7ba560d3d3ab0b78fabb46037ac4dc192fd9.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/556a7ba560d3d3ab0b78fabb46037ac4dc192fd9.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/5c01ea/proposed/"
     },
     {
@@ -14770,10 +15701,10 @@
         }
       },
       "expected": "passed",
-      "testcaseId": "5d1719662b77567eec3b9c37510f76a38f769deb",
+      "testcaseId": "b7736b7dffe6fc6924374d4542b0c5ce3b9456cf",
       "testcaseTitle": "Passed Example 8",
-      "relativePath": "testcases/5c01ea/5d1719662b77567eec3b9c37510f76a38f769deb.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/5d1719662b77567eec3b9c37510f76a38f769deb.html",
+      "relativePath": "testcases/5c01ea/b7736b7dffe6fc6924374d4542b0c5ce3b9456cf.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/b7736b7dffe6fc6924374d4542b0c5ce3b9456cf.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/5c01ea/proposed/"
     },
     {
@@ -14894,10 +15825,10 @@
         }
       },
       "expected": "passed",
-      "testcaseId": "da2d6c53dd58121d0182d2498a104776da424e21",
+      "testcaseId": "5f9eefc34edefab96f156894ecbd1c0b5781045d",
       "testcaseTitle": "Passed Example 12",
-      "relativePath": "testcases/5c01ea/da2d6c53dd58121d0182d2498a104776da424e21.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/da2d6c53dd58121d0182d2498a104776da424e21.html",
+      "relativePath": "testcases/5c01ea/5f9eefc34edefab96f156894ecbd1c0b5781045d.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/5f9eefc34edefab96f156894ecbd1c0b5781045d.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/5c01ea/proposed/"
     },
     {
@@ -14991,68 +15922,6 @@
       "testcaseTitle": "Failed Example 2",
       "relativePath": "testcases/5c01ea/1449cc0526959d274a89345e9b479846577aac5c.html",
       "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/1449cc0526959d274a89345e9b479846577aac5c.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/5c01ea/proposed/"
-    },
-    {
-      "ruleId": "5c01ea",
-      "ruleName": "ARIA state or property is permitted",
-      "ruleAccessibilityRequirements": {
-        "wcag-technique:ARIA5": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "aria12:state_property_processing": {
-          "title": "ARIA 1.2, 8.6 State and Property Attribute Processing",
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "satisfied",
-          "inapplicable": "satisfied"
-        },
-        "wcag20:1.3.1": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
-        },
-        "wcag20:4.1.2": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
-        }
-      },
-      "expected": "failed",
-      "testcaseId": "d7efe21b64461052aef8d3e0fc96049dda787039",
-      "testcaseTitle": "Failed Example 3",
-      "relativePath": "testcases/5c01ea/d7efe21b64461052aef8d3e0fc96049dda787039.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/d7efe21b64461052aef8d3e0fc96049dda787039.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/5c01ea/proposed/"
-    },
-    {
-      "ruleId": "5c01ea",
-      "ruleName": "ARIA state or property is permitted",
-      "ruleAccessibilityRequirements": {
-        "wcag-technique:ARIA5": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "aria12:state_property_processing": {
-          "title": "ARIA 1.2, 8.6 State and Property Attribute Processing",
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "satisfied",
-          "inapplicable": "satisfied"
-        },
-        "wcag20:1.3.1": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
-        },
-        "wcag20:4.1.2": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because the rule does not ignore irrelevant ARIA properties. Some of the failed examples satisfy this success criterion."
-        }
-      },
-      "expected": "failed",
-      "testcaseId": "eedabccf6e01bca36ee87a2af00e9d7a63a7d615",
-      "testcaseTitle": "Failed Example 4",
-      "relativePath": "testcases/5c01ea/eedabccf6e01bca36ee87a2af00e9d7a63a7d615.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/5c01ea/eedabccf6e01bca36ee87a2af00e9d7a63a7d615.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/5c01ea/proposed/"
     },
     {
@@ -17313,209 +18182,11 @@
           "inapplicable": "further testing needed"
         }
       },
-      "expected": "passed",
-      "testcaseId": "0b392e6774d063a24241c3629113909e98c98607",
-      "testcaseTitle": "Passed Example 1",
-      "relativePath": "testcases/b33eff/0b392e6774d063a24241c3629113909e98c98607.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/0b392e6774d063a24241c3629113909e98c98607.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/b33eff/proposed/"
-    },
-    {
-      "ruleId": "b33eff",
-      "ruleName": "Orientation of the page is not restricted using CSS transforms",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.3.4": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "405d1e8fb50b36ae53c655c228126a078e591d3b",
-      "testcaseTitle": "Passed Example 2",
-      "relativePath": "testcases/b33eff/405d1e8fb50b36ae53c655c228126a078e591d3b.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/405d1e8fb50b36ae53c655c228126a078e591d3b.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/b33eff/proposed/"
-    },
-    {
-      "ruleId": "b33eff",
-      "ruleName": "Orientation of the page is not restricted using CSS transforms",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.3.4": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "4fa1ac6e6c6c65a3cc17e144823e45ff30f428bb",
-      "testcaseTitle": "Passed Example 3",
-      "relativePath": "testcases/b33eff/4fa1ac6e6c6c65a3cc17e144823e45ff30f428bb.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/4fa1ac6e6c6c65a3cc17e144823e45ff30f428bb.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/b33eff/proposed/"
-    },
-    {
-      "ruleId": "b33eff",
-      "ruleName": "Orientation of the page is not restricted using CSS transforms",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.3.4": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "failed",
-      "testcaseId": "3b2f386c66ccb9c1a9a848017dab9b074afbf858",
-      "testcaseTitle": "Failed Example 1",
-      "relativePath": "testcases/b33eff/3b2f386c66ccb9c1a9a848017dab9b074afbf858.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/3b2f386c66ccb9c1a9a848017dab9b074afbf858.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/b33eff/proposed/"
-    },
-    {
-      "ruleId": "b33eff",
-      "ruleName": "Orientation of the page is not restricted using CSS transforms",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.3.4": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "failed",
-      "testcaseId": "388f97562ae3b7e3aec7ad6305df36a91b68cf77",
-      "testcaseTitle": "Failed Example 2",
-      "relativePath": "testcases/b33eff/388f97562ae3b7e3aec7ad6305df36a91b68cf77.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/388f97562ae3b7e3aec7ad6305df36a91b68cf77.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/b33eff/proposed/"
-    },
-    {
-      "ruleId": "b33eff",
-      "ruleName": "Orientation of the page is not restricted using CSS transforms",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.3.4": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "failed",
-      "testcaseId": "93ad10ce32325be5b7c8cbaec7254d55e8fb577c",
-      "testcaseTitle": "Failed Example 3",
-      "relativePath": "testcases/b33eff/93ad10ce32325be5b7c8cbaec7254d55e8fb577c.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/93ad10ce32325be5b7c8cbaec7254d55e8fb577c.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/b33eff/proposed/"
-    },
-    {
-      "ruleId": "b33eff",
-      "ruleName": "Orientation of the page is not restricted using CSS transforms",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.3.4": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "failed",
-      "testcaseId": "8f341a73c698daf157613c32a521878ed5aa7310",
-      "testcaseTitle": "Failed Example 4",
-      "relativePath": "testcases/b33eff/8f341a73c698daf157613c32a521878ed5aa7310.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/8f341a73c698daf157613c32a521878ed5aa7310.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/b33eff/proposed/"
-    },
-    {
-      "ruleId": "b33eff",
-      "ruleName": "Orientation of the page is not restricted using CSS transforms",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.3.4": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
       "expected": "inapplicable",
-      "testcaseId": "c59f09b11f0743c523cc63ae3c827996889fa32d",
-      "testcaseTitle": "Inapplicable Example 1",
-      "relativePath": "testcases/b33eff/c59f09b11f0743c523cc63ae3c827996889fa32d.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/c59f09b11f0743c523cc63ae3c827996889fa32d.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/b33eff/proposed/"
-    },
-    {
-      "ruleId": "b33eff",
-      "ruleName": "Orientation of the page is not restricted using CSS transforms",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.3.4": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "inapplicable",
-      "testcaseId": "b8d71ae629b704bd374b0a2dcde569bd108c848e",
-      "testcaseTitle": "Inapplicable Example 2",
-      "relativePath": "testcases/b33eff/b8d71ae629b704bd374b0a2dcde569bd108c848e.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/b8d71ae629b704bd374b0a2dcde569bd108c848e.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/b33eff/proposed/"
-    },
-    {
-      "ruleId": "b33eff",
-      "ruleName": "Orientation of the page is not restricted using CSS transforms",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.3.4": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "inapplicable",
-      "testcaseId": "5cde20e2acab8991c299a317825201af48bf5736",
+      "testcaseId": "3600a3d783678e384fec62211e854cb8a4d3d2d0",
       "testcaseTitle": "Inapplicable Example 3",
-      "relativePath": "testcases/b33eff/5cde20e2acab8991c299a317825201af48bf5736.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/5cde20e2acab8991c299a317825201af48bf5736.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/b33eff/proposed/"
-    },
-    {
-      "ruleId": "b33eff",
-      "ruleName": "Orientation of the page is not restricted using CSS transforms",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.3.4": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "inapplicable",
-      "testcaseId": "4c34705d8d866194fd8fe96a0bd1abaf267b11f0",
-      "testcaseTitle": "Inapplicable Example 4",
-      "relativePath": "testcases/b33eff/4c34705d8d866194fd8fe96a0bd1abaf267b11f0.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/4c34705d8d866194fd8fe96a0bd1abaf267b11f0.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/b33eff/proposed/"
-    },
-    {
-      "ruleId": "b33eff",
-      "ruleName": "Orientation of the page is not restricted using CSS transforms",
-      "ruleAccessibilityRequirements": {
-        "wcag21:1.3.4": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "inapplicable",
-      "testcaseId": "e228ac70387fe286917bce3028ae311269ae2f35",
-      "testcaseTitle": "Inapplicable Example 5",
-      "relativePath": "testcases/b33eff/e228ac70387fe286917bce3028ae311269ae2f35.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/e228ac70387fe286917bce3028ae311269ae2f35.html",
+      "relativePath": "testcases/b33eff/3600a3d783678e384fec62211e854cb8a4d3d2d0.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/b33eff/3600a3d783678e384fec62211e854cb8a4d3d2d0.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/b33eff/proposed/"
     },
     {
@@ -18962,6 +19633,37 @@
           "inapplicable": "further testing needed"
         }
       },
+      "expected": "passed",
+      "testcaseId": "d2f5325f3fd5ddde38cd677a5ca36ba0d762fb84",
+      "testcaseTitle": "Passed Example 7",
+      "relativePath": "testcases/80af7b/d2f5325f3fd5ddde38cd677a5ca36ba0d762fb84.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/80af7b/d2f5325f3fd5ddde38cd677a5ca36ba0d762fb84.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/80af7b/proposed/"
+    },
+    {
+      "ruleId": "80af7b",
+      "ruleName": "Focusable element has no keyboard trap",
+      "ruleAccessibilityRequirements": {
+        "wcag20:2.1.2": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-text:cc5": {
+          "title": "WCAG Non-Interference",
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:G21": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
       "expected": "failed",
       "testcaseId": "f5ea9fd3b681971b2af4953fae9bb2d319a203c6",
       "testcaseTitle": "Failed Example 1",
@@ -18994,39 +19696,8 @@
         }
       },
       "expected": "failed",
-      "testcaseId": "d2f5325f3fd5ddde38cd677a5ca36ba0d762fb84",
-      "testcaseTitle": "Failed Example 2",
-      "relativePath": "testcases/80af7b/d2f5325f3fd5ddde38cd677a5ca36ba0d762fb84.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/80af7b/d2f5325f3fd5ddde38cd677a5ca36ba0d762fb84.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/80af7b/proposed/"
-    },
-    {
-      "ruleId": "80af7b",
-      "ruleName": "Focusable element has no keyboard trap",
-      "ruleAccessibilityRequirements": {
-        "wcag20:2.1.2": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-text:cc5": {
-          "title": "WCAG Non-Interference",
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "wcag-technique:G21": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "failed",
       "testcaseId": "0ec0e93e7f8ffca39e1eb58a4a8503f1bd4cb145",
-      "testcaseTitle": "Failed Example 3",
+      "testcaseTitle": "Failed Example 2",
       "relativePath": "testcases/80af7b/0ec0e93e7f8ffca39e1eb58a4a8503f1bd4cb145.html",
       "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/80af7b/0ec0e93e7f8ffca39e1eb58a4a8503f1bd4cb145.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/80af7b/proposed/"
@@ -19057,7 +19728,7 @@
       },
       "expected": "failed",
       "testcaseId": "7dcc4ae00712889d448ecbcba200e032dca59bf0",
-      "testcaseTitle": "Failed Example 4",
+      "testcaseTitle": "Failed Example 3",
       "relativePath": "testcases/80af7b/7dcc4ae00712889d448ecbcba200e032dca59bf0.html",
       "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/80af7b/7dcc4ae00712889d448ecbcba200e032dca59bf0.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/80af7b/proposed/"
@@ -19088,7 +19759,7 @@
       },
       "expected": "failed",
       "testcaseId": "8fba3918b361f251dab4c19bec8eddc5624218ee",
-      "testcaseTitle": "Failed Example 5",
+      "testcaseTitle": "Failed Example 4",
       "relativePath": "testcases/80af7b/8fba3918b361f251dab4c19bec8eddc5624218ee.html",
       "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/80af7b/8fba3918b361f251dab4c19bec8eddc5624218ee.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/80af7b/proposed/"
@@ -19119,7 +19790,7 @@
       },
       "expected": "failed",
       "testcaseId": "62fd24e73ea55f55ad45de392128a816a6f03526",
-      "testcaseTitle": "Failed Example 6",
+      "testcaseTitle": "Failed Example 5",
       "relativePath": "testcases/80af7b/62fd24e73ea55f55ad45de392128a816a6f03526.html",
       "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/80af7b/62fd24e73ea55f55ad45de392128a816a6f03526.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/80af7b/proposed/"
@@ -19607,6 +20278,30 @@
           "inapplicable": "further testing needed"
         }
       },
+      "expected": "passed",
+      "testcaseId": "081e784ed9c1c5f96f02cf04c07b7d861cf3f9af",
+      "testcaseTitle": "Passed Example 7",
+      "relativePath": "testcases/cc0f0a/081e784ed9c1c5f96f02cf04c07b7d861cf3f9af.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cc0f0a/081e784ed9c1c5f96f02cf04c07b7d861cf3f9af.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/cc0f0a/proposed/"
+    },
+    {
+      "ruleId": "cc0f0a",
+      "ruleName": "Form field label is descriptive",
+      "ruleAccessibilityRequirements": {
+        "wcag20:2.4.6": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:G131": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
       "expected": "failed",
       "testcaseId": "9b967559ff2691dc30436766f53feea55447b348",
       "testcaseTitle": "Failed Example 1",
@@ -19727,6 +20422,30 @@
           "inapplicable": "further testing needed"
         }
       },
+      "expected": "failed",
+      "testcaseId": "3ee841b7513a315f4f5161893d1333386f0f1d21",
+      "testcaseTitle": "Failed Example 6",
+      "relativePath": "testcases/cc0f0a/3ee841b7513a315f4f5161893d1333386f0f1d21.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/cc0f0a/3ee841b7513a315f4f5161893d1333386f0f1d21.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/cc0f0a/proposed/"
+    },
+    {
+      "ruleId": "cc0f0a",
+      "ruleName": "Form field label is descriptive",
+      "ruleAccessibilityRequirements": {
+        "wcag20:2.4.6": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:G131": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        }
+      },
       "expected": "inapplicable",
       "testcaseId": "1d7c2f68ba65c3d81cb8a858f52be30d48a296c3",
       "testcaseTitle": "Inapplicable Example 1",
@@ -19804,6 +20523,54 @@
       "testcaseTitle": "Passed Example 8",
       "relativePath": "testcases/e086e5/cfb1790405bb1ff793ed15a73372d53e79d2d7e0.html",
       "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/e086e5/cfb1790405bb1ff793ed15a73372d53e79d2d7e0.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/e086e5/proposed/"
+    },
+    {
+      "ruleId": "e086e5",
+      "ruleName": "Form field has non-empty accessible name",
+      "ruleAccessibilityRequirements": {
+        "wcag20:4.1.2": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:1.3.1": {
+          "secondary": "This success criterion is **more strict** than this rule. This is because 1.3.1 Info and Relationship requires that information, structure, and relationships conveyed through presentation can be programmatically determined or are available in text, while 4.1.2 Name, Role, Value only requires an accessible name."
+        },
+        "wcag20:2.5.3": {
+          "secondary": "This success criterion is **more strict** than this rule. This is because 2.5.3 Label in Name requires that if a label is visible, the accessible name contains the label that is presented visually, while 4.1.2 Name, Role, Value only requires an accessible name."
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "2243d6e9d1eb6938aff03536125ebc582440fbe7",
+      "testcaseTitle": "Passed Example 9",
+      "relativePath": "testcases/e086e5/2243d6e9d1eb6938aff03536125ebc582440fbe7.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/e086e5/2243d6e9d1eb6938aff03536125ebc582440fbe7.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/e086e5/proposed/"
+    },
+    {
+      "ruleId": "e086e5",
+      "ruleName": "Form field has non-empty accessible name",
+      "ruleAccessibilityRequirements": {
+        "wcag20:4.1.2": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:1.3.1": {
+          "secondary": "This success criterion is **more strict** than this rule. This is because 1.3.1 Info and Relationship requires that information, structure, and relationships conveyed through presentation can be programmatically determined or are available in text, while 4.1.2 Name, Role, Value only requires an accessible name."
+        },
+        "wcag20:2.5.3": {
+          "secondary": "This success criterion is **more strict** than this rule. This is because 2.5.3 Label in Name requires that if a label is visible, the accessible name contains the label that is presented visually, while 4.1.2 Name, Role, Value only requires an accessible name."
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "1d9a4d0eba21c8bb02580c46142ec75842bd3557",
+      "testcaseTitle": "Failed Example 9",
+      "relativePath": "testcases/e086e5/1d9a4d0eba21c8bb02580c46142ec75842bd3557.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/e086e5/1d9a4d0eba21c8bb02580c46142ec75842bd3557.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/e086e5/proposed/"
     },
     {
@@ -24313,440 +25080,6 @@
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/674b10/proposed/"
     },
     {
-      "ruleId": "4e8ab6",
-      "ruleName": "Element with role attribute has required states and properties",
-      "ruleAccessibilityRequirements": {
-        "wcag-technique:ARIA5": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "aria12:requiredState": {
-          "title": "ARIA 1.2, 5.2.2 Required States and Properties",
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "satisfied",
-          "inapplicable": "satisfied"
-        },
-        "wcag20:1.3.1": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because browsers and assistive technologies will often fall back on a non-standard default value, which may be sufficient. Some of the failed examples may satisfy this success criterion."
-        },
-        "wcag20:4.1.2": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because browsers and assistive technologies will often fall back on a non-standard default value, which may be sufficient. Some of the failed examples may satisfy this success criterion."
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "eadf2a087a82575bcdf9f9158e698a576e9627c8",
-      "testcaseTitle": "Passed Example 1",
-      "relativePath": "testcases/4e8ab6/eadf2a087a82575bcdf9f9158e698a576e9627c8.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/eadf2a087a82575bcdf9f9158e698a576e9627c8.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/4e8ab6/proposed/"
-    },
-    {
-      "ruleId": "4e8ab6",
-      "ruleName": "Element with role attribute has required states and properties",
-      "ruleAccessibilityRequirements": {
-        "wcag-technique:ARIA5": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "aria12:requiredState": {
-          "title": "ARIA 1.2, 5.2.2 Required States and Properties",
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "satisfied",
-          "inapplicable": "satisfied"
-        },
-        "wcag20:1.3.1": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because browsers and assistive technologies will often fall back on a non-standard default value, which may be sufficient. Some of the failed examples may satisfy this success criterion."
-        },
-        "wcag20:4.1.2": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because browsers and assistive technologies will often fall back on a non-standard default value, which may be sufficient. Some of the failed examples may satisfy this success criterion."
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "5b39aa37000933c7b9a766970b829ce5fada62d6",
-      "testcaseTitle": "Passed Example 2",
-      "relativePath": "testcases/4e8ab6/5b39aa37000933c7b9a766970b829ce5fada62d6.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/5b39aa37000933c7b9a766970b829ce5fada62d6.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/4e8ab6/proposed/"
-    },
-    {
-      "ruleId": "4e8ab6",
-      "ruleName": "Element with role attribute has required states and properties",
-      "ruleAccessibilityRequirements": {
-        "wcag-technique:ARIA5": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "aria12:requiredState": {
-          "title": "ARIA 1.2, 5.2.2 Required States and Properties",
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "satisfied",
-          "inapplicable": "satisfied"
-        },
-        "wcag20:1.3.1": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because browsers and assistive technologies will often fall back on a non-standard default value, which may be sufficient. Some of the failed examples may satisfy this success criterion."
-        },
-        "wcag20:4.1.2": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because browsers and assistive technologies will often fall back on a non-standard default value, which may be sufficient. Some of the failed examples may satisfy this success criterion."
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "11c5321c05c7b83b8707eee76574a94bd44033fe",
-      "testcaseTitle": "Passed Example 3",
-      "relativePath": "testcases/4e8ab6/11c5321c05c7b83b8707eee76574a94bd44033fe.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/11c5321c05c7b83b8707eee76574a94bd44033fe.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/4e8ab6/proposed/"
-    },
-    {
-      "ruleId": "4e8ab6",
-      "ruleName": "Element with role attribute has required states and properties",
-      "ruleAccessibilityRequirements": {
-        "wcag-technique:ARIA5": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "aria12:requiredState": {
-          "title": "ARIA 1.2, 5.2.2 Required States and Properties",
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "satisfied",
-          "inapplicable": "satisfied"
-        },
-        "wcag20:1.3.1": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because browsers and assistive technologies will often fall back on a non-standard default value, which may be sufficient. Some of the failed examples may satisfy this success criterion."
-        },
-        "wcag20:4.1.2": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because browsers and assistive technologies will often fall back on a non-standard default value, which may be sufficient. Some of the failed examples may satisfy this success criterion."
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "3da0918b07e5736d55b4b405a22860d889931c15",
-      "testcaseTitle": "Passed Example 4",
-      "relativePath": "testcases/4e8ab6/3da0918b07e5736d55b4b405a22860d889931c15.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/3da0918b07e5736d55b4b405a22860d889931c15.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/4e8ab6/proposed/"
-    },
-    {
-      "ruleId": "4e8ab6",
-      "ruleName": "Element with role attribute has required states and properties",
-      "ruleAccessibilityRequirements": {
-        "wcag-technique:ARIA5": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "aria12:requiredState": {
-          "title": "ARIA 1.2, 5.2.2 Required States and Properties",
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "satisfied",
-          "inapplicable": "satisfied"
-        },
-        "wcag20:1.3.1": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because browsers and assistive technologies will often fall back on a non-standard default value, which may be sufficient. Some of the failed examples may satisfy this success criterion."
-        },
-        "wcag20:4.1.2": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because browsers and assistive technologies will often fall back on a non-standard default value, which may be sufficient. Some of the failed examples may satisfy this success criterion."
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "58a35afd2998bb6f9c670cb74fa7b550e80897b4",
-      "testcaseTitle": "Passed Example 5",
-      "relativePath": "testcases/4e8ab6/58a35afd2998bb6f9c670cb74fa7b550e80897b4.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/58a35afd2998bb6f9c670cb74fa7b550e80897b4.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/4e8ab6/proposed/"
-    },
-    {
-      "ruleId": "4e8ab6",
-      "ruleName": "Element with role attribute has required states and properties",
-      "ruleAccessibilityRequirements": {
-        "wcag-technique:ARIA5": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "aria12:requiredState": {
-          "title": "ARIA 1.2, 5.2.2 Required States and Properties",
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "satisfied",
-          "inapplicable": "satisfied"
-        },
-        "wcag20:1.3.1": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because browsers and assistive technologies will often fall back on a non-standard default value, which may be sufficient. Some of the failed examples may satisfy this success criterion."
-        },
-        "wcag20:4.1.2": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because browsers and assistive technologies will often fall back on a non-standard default value, which may be sufficient. Some of the failed examples may satisfy this success criterion."
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "986038d85467255cef4ed7d72c231442427ece23",
-      "testcaseTitle": "Passed Example 6",
-      "relativePath": "testcases/4e8ab6/986038d85467255cef4ed7d72c231442427ece23.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/986038d85467255cef4ed7d72c231442427ece23.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/4e8ab6/proposed/"
-    },
-    {
-      "ruleId": "4e8ab6",
-      "ruleName": "Element with role attribute has required states and properties",
-      "ruleAccessibilityRequirements": {
-        "wcag-technique:ARIA5": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "aria12:requiredState": {
-          "title": "ARIA 1.2, 5.2.2 Required States and Properties",
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "satisfied",
-          "inapplicable": "satisfied"
-        },
-        "wcag20:1.3.1": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because browsers and assistive technologies will often fall back on a non-standard default value, which may be sufficient. Some of the failed examples may satisfy this success criterion."
-        },
-        "wcag20:4.1.2": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because browsers and assistive technologies will often fall back on a non-standard default value, which may be sufficient. Some of the failed examples may satisfy this success criterion."
-        }
-      },
-      "expected": "failed",
-      "testcaseId": "80462b7b8c490305d1de7e3136c0bcfaef31789f",
-      "testcaseTitle": "Failed Example 1",
-      "relativePath": "testcases/4e8ab6/80462b7b8c490305d1de7e3136c0bcfaef31789f.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/80462b7b8c490305d1de7e3136c0bcfaef31789f.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/4e8ab6/proposed/"
-    },
-    {
-      "ruleId": "4e8ab6",
-      "ruleName": "Element with role attribute has required states and properties",
-      "ruleAccessibilityRequirements": {
-        "wcag-technique:ARIA5": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "aria12:requiredState": {
-          "title": "ARIA 1.2, 5.2.2 Required States and Properties",
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "satisfied",
-          "inapplicable": "satisfied"
-        },
-        "wcag20:1.3.1": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because browsers and assistive technologies will often fall back on a non-standard default value, which may be sufficient. Some of the failed examples may satisfy this success criterion."
-        },
-        "wcag20:4.1.2": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because browsers and assistive technologies will often fall back on a non-standard default value, which may be sufficient. Some of the failed examples may satisfy this success criterion."
-        }
-      },
-      "expected": "failed",
-      "testcaseId": "907f05aed287f7407d5f95e7d39bfc1435ec0812",
-      "testcaseTitle": "Failed Example 2",
-      "relativePath": "testcases/4e8ab6/907f05aed287f7407d5f95e7d39bfc1435ec0812.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/907f05aed287f7407d5f95e7d39bfc1435ec0812.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/4e8ab6/proposed/"
-    },
-    {
-      "ruleId": "4e8ab6",
-      "ruleName": "Element with role attribute has required states and properties",
-      "ruleAccessibilityRequirements": {
-        "wcag-technique:ARIA5": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "aria12:requiredState": {
-          "title": "ARIA 1.2, 5.2.2 Required States and Properties",
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "satisfied",
-          "inapplicable": "satisfied"
-        },
-        "wcag20:1.3.1": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because browsers and assistive technologies will often fall back on a non-standard default value, which may be sufficient. Some of the failed examples may satisfy this success criterion."
-        },
-        "wcag20:4.1.2": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because browsers and assistive technologies will often fall back on a non-standard default value, which may be sufficient. Some of the failed examples may satisfy this success criterion."
-        }
-      },
-      "expected": "failed",
-      "testcaseId": "9bb1bdb3e95aa9b895fc4f32b0c2cfc917a07a72",
-      "testcaseTitle": "Failed Example 3",
-      "relativePath": "testcases/4e8ab6/9bb1bdb3e95aa9b895fc4f32b0c2cfc917a07a72.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/9bb1bdb3e95aa9b895fc4f32b0c2cfc917a07a72.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/4e8ab6/proposed/"
-    },
-    {
-      "ruleId": "4e8ab6",
-      "ruleName": "Element with role attribute has required states and properties",
-      "ruleAccessibilityRequirements": {
-        "wcag-technique:ARIA5": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "aria12:requiredState": {
-          "title": "ARIA 1.2, 5.2.2 Required States and Properties",
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "satisfied",
-          "inapplicable": "satisfied"
-        },
-        "wcag20:1.3.1": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because browsers and assistive technologies will often fall back on a non-standard default value, which may be sufficient. Some of the failed examples may satisfy this success criterion."
-        },
-        "wcag20:4.1.2": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because browsers and assistive technologies will often fall back on a non-standard default value, which may be sufficient. Some of the failed examples may satisfy this success criterion."
-        }
-      },
-      "expected": "failed",
-      "testcaseId": "43af91df529613e51429e18d43ce3df99b189c0f",
-      "testcaseTitle": "Failed Example 4",
-      "relativePath": "testcases/4e8ab6/43af91df529613e51429e18d43ce3df99b189c0f.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/43af91df529613e51429e18d43ce3df99b189c0f.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/4e8ab6/proposed/"
-    },
-    {
-      "ruleId": "4e8ab6",
-      "ruleName": "Element with role attribute has required states and properties",
-      "ruleAccessibilityRequirements": {
-        "wcag-technique:ARIA5": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "aria12:requiredState": {
-          "title": "ARIA 1.2, 5.2.2 Required States and Properties",
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "satisfied",
-          "inapplicable": "satisfied"
-        },
-        "wcag20:1.3.1": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because browsers and assistive technologies will often fall back on a non-standard default value, which may be sufficient. Some of the failed examples may satisfy this success criterion."
-        },
-        "wcag20:4.1.2": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because browsers and assistive technologies will often fall back on a non-standard default value, which may be sufficient. Some of the failed examples may satisfy this success criterion."
-        }
-      },
-      "expected": "failed",
-      "testcaseId": "7a1942d2d52f50c5df458877a0ee18dc5a22b0c3",
-      "testcaseTitle": "Failed Example 5",
-      "relativePath": "testcases/4e8ab6/7a1942d2d52f50c5df458877a0ee18dc5a22b0c3.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/7a1942d2d52f50c5df458877a0ee18dc5a22b0c3.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/4e8ab6/proposed/"
-    },
-    {
-      "ruleId": "4e8ab6",
-      "ruleName": "Element with role attribute has required states and properties",
-      "ruleAccessibilityRequirements": {
-        "wcag-technique:ARIA5": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "aria12:requiredState": {
-          "title": "ARIA 1.2, 5.2.2 Required States and Properties",
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "satisfied",
-          "inapplicable": "satisfied"
-        },
-        "wcag20:1.3.1": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because browsers and assistive technologies will often fall back on a non-standard default value, which may be sufficient. Some of the failed examples may satisfy this success criterion."
-        },
-        "wcag20:4.1.2": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because browsers and assistive technologies will often fall back on a non-standard default value, which may be sufficient. Some of the failed examples may satisfy this success criterion."
-        }
-      },
-      "expected": "inapplicable",
-      "testcaseId": "9d80b71ad39b258fb75db804867f189d76ecdab8",
-      "testcaseTitle": "Inapplicable Example 1",
-      "relativePath": "testcases/4e8ab6/9d80b71ad39b258fb75db804867f189d76ecdab8.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/9d80b71ad39b258fb75db804867f189d76ecdab8.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/4e8ab6/proposed/"
-    },
-    {
-      "ruleId": "4e8ab6",
-      "ruleName": "Element with role attribute has required states and properties",
-      "ruleAccessibilityRequirements": {
-        "wcag-technique:ARIA5": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "aria12:requiredState": {
-          "title": "ARIA 1.2, 5.2.2 Required States and Properties",
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "satisfied",
-          "inapplicable": "satisfied"
-        },
-        "wcag20:1.3.1": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because browsers and assistive technologies will often fall back on a non-standard default value, which may be sufficient. Some of the failed examples may satisfy this success criterion."
-        },
-        "wcag20:4.1.2": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because browsers and assistive technologies will often fall back on a non-standard default value, which may be sufficient. Some of the failed examples may satisfy this success criterion."
-        }
-      },
-      "expected": "inapplicable",
-      "testcaseId": "c43c9679072e95ce85f8a7cb7581e991e73124c7",
-      "testcaseTitle": "Inapplicable Example 2",
-      "relativePath": "testcases/4e8ab6/c43c9679072e95ce85f8a7cb7581e991e73124c7.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/c43c9679072e95ce85f8a7cb7581e991e73124c7.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/4e8ab6/proposed/"
-    },
-    {
-      "ruleId": "4e8ab6",
-      "ruleName": "Element with role attribute has required states and properties",
-      "ruleAccessibilityRequirements": {
-        "wcag-technique:ARIA5": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        },
-        "aria12:requiredState": {
-          "title": "ARIA 1.2, 5.2.2 Required States and Properties",
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "satisfied",
-          "inapplicable": "satisfied"
-        },
-        "wcag20:1.3.1": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because browsers and assistive technologies will often fall back on a non-standard default value, which may be sufficient. Some of the failed examples may satisfy this success criterion."
-        },
-        "wcag20:4.1.2": {
-          "secondary": "This success criterion is **less strict** than this rule. This is because browsers and assistive technologies will often fall back on a non-standard default value, which may be sufficient. Some of the failed examples may satisfy this success criterion."
-        }
-      },
-      "expected": "inapplicable",
-      "testcaseId": "f473186fa351637a3c034b2df567239a39a8139c",
-      "testcaseTitle": "Inapplicable Example 3",
-      "relativePath": "testcases/4e8ab6/f473186fa351637a3c034b2df567239a39a8139c.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/4e8ab6/f473186fa351637a3c034b2df567239a39a8139c.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/4e8ab6/proposed/"
-    },
-    {
       "ruleId": "0ssw9k",
       "ruleName": "Scrollable content can be reached with sequential focus navigation",
       "ruleAccessibilityRequirements": {
@@ -24931,222 +25264,6 @@
       "relativePath": "testcases/oj04fd/eb4f387bfa2459fb12dc5b0cbda478238b3eeeda.html",
       "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/oj04fd/eb4f387bfa2459fb12dc5b0cbda478238b3eeeda.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/oj04fd/proposed/"
-    },
-    {
-      "ruleId": "2t702h",
-      "ruleName": "Summary element has non-empty accessible name",
-      "ruleAccessibilityRequirements": {
-        "wcag20:4.1.2": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "174322a2ade5e022c611bdb8389419ce299e3267",
-      "testcaseTitle": "Passed Example 1",
-      "relativePath": "testcases/2t702h/174322a2ade5e022c611bdb8389419ce299e3267.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2t702h/174322a2ade5e022c611bdb8389419ce299e3267.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/2t702h/proposed/"
-    },
-    {
-      "ruleId": "2t702h",
-      "ruleName": "Summary element has non-empty accessible name",
-      "ruleAccessibilityRequirements": {
-        "wcag20:4.1.2": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "83d39ed6bf5538f6d251150530112b9f66fca6fa",
-      "testcaseTitle": "Passed Example 2",
-      "relativePath": "testcases/2t702h/83d39ed6bf5538f6d251150530112b9f66fca6fa.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2t702h/83d39ed6bf5538f6d251150530112b9f66fca6fa.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/2t702h/proposed/"
-    },
-    {
-      "ruleId": "2t702h",
-      "ruleName": "Summary element has non-empty accessible name",
-      "ruleAccessibilityRequirements": {
-        "wcag20:4.1.2": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "61d7129d076b8cc168168d92734e1ae6ec72cf59",
-      "testcaseTitle": "Passed Example 3",
-      "relativePath": "testcases/2t702h/61d7129d076b8cc168168d92734e1ae6ec72cf59.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2t702h/61d7129d076b8cc168168d92734e1ae6ec72cf59.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/2t702h/proposed/"
-    },
-    {
-      "ruleId": "2t702h",
-      "ruleName": "Summary element has non-empty accessible name",
-      "ruleAccessibilityRequirements": {
-        "wcag20:4.1.2": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "b1c41028fa588755e96a256917da173183aafeca",
-      "testcaseTitle": "Passed Example 4",
-      "relativePath": "testcases/2t702h/b1c41028fa588755e96a256917da173183aafeca.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2t702h/b1c41028fa588755e96a256917da173183aafeca.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/2t702h/proposed/"
-    },
-    {
-      "ruleId": "2t702h",
-      "ruleName": "Summary element has non-empty accessible name",
-      "ruleAccessibilityRequirements": {
-        "wcag20:4.1.2": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "passed",
-      "testcaseId": "d165641d4faa4b52b97ef661f94b9f7d039c63f7",
-      "testcaseTitle": "Passed Example 5",
-      "relativePath": "testcases/2t702h/d165641d4faa4b52b97ef661f94b9f7d039c63f7.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2t702h/d165641d4faa4b52b97ef661f94b9f7d039c63f7.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/2t702h/proposed/"
-    },
-    {
-      "ruleId": "2t702h",
-      "ruleName": "Summary element has non-empty accessible name",
-      "ruleAccessibilityRequirements": {
-        "wcag20:4.1.2": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "failed",
-      "testcaseId": "f0f5f9e727e46e257e5d6420a8ab11b760c75617",
-      "testcaseTitle": "Failed Example 1",
-      "relativePath": "testcases/2t702h/f0f5f9e727e46e257e5d6420a8ab11b760c75617.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2t702h/f0f5f9e727e46e257e5d6420a8ab11b760c75617.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/2t702h/proposed/"
-    },
-    {
-      "ruleId": "2t702h",
-      "ruleName": "Summary element has non-empty accessible name",
-      "ruleAccessibilityRequirements": {
-        "wcag20:4.1.2": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "failed",
-      "testcaseId": "a7fd233a404e737baaee10e34c35e40bbe7f14bb",
-      "testcaseTitle": "Failed Example 2",
-      "relativePath": "testcases/2t702h/a7fd233a404e737baaee10e34c35e40bbe7f14bb.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2t702h/a7fd233a404e737baaee10e34c35e40bbe7f14bb.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/2t702h/proposed/"
-    },
-    {
-      "ruleId": "2t702h",
-      "ruleName": "Summary element has non-empty accessible name",
-      "ruleAccessibilityRequirements": {
-        "wcag20:4.1.2": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "failed",
-      "testcaseId": "f76f484c92eec764dbd1ee3e5ee3421f230a56d7",
-      "testcaseTitle": "Failed Example 3",
-      "relativePath": "testcases/2t702h/f76f484c92eec764dbd1ee3e5ee3421f230a56d7.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2t702h/f76f484c92eec764dbd1ee3e5ee3421f230a56d7.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/2t702h/proposed/"
-    },
-    {
-      "ruleId": "2t702h",
-      "ruleName": "Summary element has non-empty accessible name",
-      "ruleAccessibilityRequirements": {
-        "wcag20:4.1.2": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "inapplicable",
-      "testcaseId": "d0f1dd469c5e48feec2db9ef84a98e143212f574",
-      "testcaseTitle": "Inapplicable Example 1",
-      "relativePath": "testcases/2t702h/d0f1dd469c5e48feec2db9ef84a98e143212f574.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2t702h/d0f1dd469c5e48feec2db9ef84a98e143212f574.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/2t702h/proposed/"
-    },
-    {
-      "ruleId": "2t702h",
-      "ruleName": "Summary element has non-empty accessible name",
-      "ruleAccessibilityRequirements": {
-        "wcag20:4.1.2": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "inapplicable",
-      "testcaseId": "eb98ae3dbf17cb6ca91f27b0ae8d9d05f81cbb4d",
-      "testcaseTitle": "Inapplicable Example 2",
-      "relativePath": "testcases/2t702h/eb98ae3dbf17cb6ca91f27b0ae8d9d05f81cbb4d.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2t702h/eb98ae3dbf17cb6ca91f27b0ae8d9d05f81cbb4d.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/2t702h/proposed/"
-    },
-    {
-      "ruleId": "2t702h",
-      "ruleName": "Summary element has non-empty accessible name",
-      "ruleAccessibilityRequirements": {
-        "wcag20:4.1.2": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "inapplicable",
-      "testcaseId": "8d8611c7fdca07f6aa3bf3df3850921b9a35356b",
-      "testcaseTitle": "Inapplicable Example 3",
-      "relativePath": "testcases/2t702h/8d8611c7fdca07f6aa3bf3df3850921b9a35356b.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2t702h/8d8611c7fdca07f6aa3bf3df3850921b9a35356b.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/2t702h/proposed/"
-    },
-    {
-      "ruleId": "2t702h",
-      "ruleName": "Summary element has non-empty accessible name",
-      "ruleAccessibilityRequirements": {
-        "wcag20:4.1.2": {
-          "forConformance": true,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "inapplicable",
-      "testcaseId": "2fb5a6c2e2e4f6c70ac9e26f2d0617892972cd56",
-      "testcaseTitle": "Inapplicable Example 4",
-      "relativePath": "testcases/2t702h/2fb5a6c2e2e4f6c70ac9e26f2d0617892972cd56.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2t702h/2fb5a6c2e2e4f6c70ac9e26f2d0617892972cd56.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/2t702h/proposed/"
     },
     {
       "ruleId": "d0f69e",
@@ -27204,6 +27321,12 @@
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
+        },
+        "wcag20:1.3.1": {
+          "secondary": "This success criterion is **related** to this rule. This is because this criterion applies to a visible transcript."
+        },
+        "wcag20:1.2.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion does not require a transcript when the audio-only or video-only is a media alternative for text and is clearly labeled as such. Some of the failed examples may satisfy this success criterion."
         }
       },
       "expected": "passed",
@@ -27222,6 +27345,12 @@
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
+        },
+        "wcag20:1.3.1": {
+          "secondary": "This success criterion is **related** to this rule. This is because this criterion applies to a visible transcript."
+        },
+        "wcag20:1.2.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion does not require a transcript when the audio-only or video-only is a media alternative for text and is clearly labeled as such. Some of the failed examples may satisfy this success criterion."
         }
       },
       "expected": "passed",
@@ -27240,6 +27369,36 @@
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
+        },
+        "wcag20:1.3.1": {
+          "secondary": "This success criterion is **related** to this rule. This is because this criterion applies to a visible transcript."
+        },
+        "wcag20:1.2.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion does not require a transcript when the audio-only or video-only is a media alternative for text and is clearly labeled as such. Some of the failed examples may satisfy this success criterion."
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "ac32b9e640afcba4c833f893eeff61de9ca9b4a5",
+      "testcaseTitle": "Passed Example 3",
+      "relativePath": "testcases/ee13b5/ac32b9e640afcba4c833f893eeff61de9ca9b4a5.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ee13b5/ac32b9e640afcba4c833f893eeff61de9ca9b4a5.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/ee13b5/proposed/"
+    },
+    {
+      "ruleId": "ee13b5",
+      "ruleName": "Video element visual-only content has transcript",
+      "ruleAccessibilityRequirements": {
+        "wcag-technique:G159": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:1.3.1": {
+          "secondary": "This success criterion is **related** to this rule. This is because this criterion applies to a visible transcript."
+        },
+        "wcag20:1.2.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion does not require a transcript when the audio-only or video-only is a media alternative for text and is clearly labeled as such. Some of the failed examples may satisfy this success criterion."
         }
       },
       "expected": "failed",
@@ -27258,6 +27417,12 @@
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
+        },
+        "wcag20:1.3.1": {
+          "secondary": "This success criterion is **related** to this rule. This is because this criterion applies to a visible transcript."
+        },
+        "wcag20:1.2.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion does not require a transcript when the audio-only or video-only is a media alternative for text and is clearly labeled as such. Some of the failed examples may satisfy this success criterion."
         }
       },
       "expected": "failed",
@@ -27276,13 +27441,19 @@
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
+        },
+        "wcag20:1.3.1": {
+          "secondary": "This success criterion is **related** to this rule. This is because this criterion applies to a visible transcript."
+        },
+        "wcag20:1.2.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion does not require a transcript when the audio-only or video-only is a media alternative for text and is clearly labeled as such. Some of the failed examples may satisfy this success criterion."
         }
       },
       "expected": "failed",
-      "testcaseId": "2c65fa349cb946546f44966db62c0664cf94fffd",
+      "testcaseId": "75a78f5206ea6052ad6a133920c50d7ac7cd05d4",
       "testcaseTitle": "Failed Example 3",
-      "relativePath": "testcases/ee13b5/2c65fa349cb946546f44966db62c0664cf94fffd.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ee13b5/2c65fa349cb946546f44966db62c0664cf94fffd.html",
+      "relativePath": "testcases/ee13b5/75a78f5206ea6052ad6a133920c50d7ac7cd05d4.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ee13b5/75a78f5206ea6052ad6a133920c50d7ac7cd05d4.html",
       "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/ee13b5/proposed/"
     },
     {
@@ -27294,24 +27465,12 @@
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
-        }
-      },
-      "expected": "failed",
-      "testcaseId": "2f30ed0681d28bdd6f5535c844b7747880beb5e7",
-      "testcaseTitle": "Failed Example 4",
-      "relativePath": "testcases/ee13b5/2f30ed0681d28bdd6f5535c844b7747880beb5e7.html",
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/ee13b5/2f30ed0681d28bdd6f5535c844b7747880beb5e7.html",
-      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/ee13b5/proposed/"
-    },
-    {
-      "ruleId": "ee13b5",
-      "ruleName": "Video element visual-only content has transcript",
-      "ruleAccessibilityRequirements": {
-        "wcag-technique:G159": {
-          "forConformance": false,
-          "failed": "not satisfied",
-          "passed": "further testing needed",
-          "inapplicable": "further testing needed"
+        },
+        "wcag20:1.3.1": {
+          "secondary": "This success criterion is **related** to this rule. This is because this criterion applies to a visible transcript."
+        },
+        "wcag20:1.2.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion does not require a transcript when the audio-only or video-only is a media alternative for text and is clearly labeled as such. Some of the failed examples may satisfy this success criterion."
         }
       },
       "expected": "inapplicable",
@@ -27330,6 +27489,12 @@
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
+        },
+        "wcag20:1.3.1": {
+          "secondary": "This success criterion is **related** to this rule. This is because this criterion applies to a visible transcript."
+        },
+        "wcag20:1.2.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion does not require a transcript when the audio-only or video-only is a media alternative for text and is clearly labeled as such. Some of the failed examples may satisfy this success criterion."
         }
       },
       "expected": "inapplicable",
@@ -27606,6 +27771,12 @@
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
+        },
+        "wcag20:1.3.1": {
+          "secondary": "This success criterion is **related** to this rule. This is because this criterion applies to a visible transcript."
+        },
+        "wcag20:1.2.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion does not require a transcript when the audio-only or video-only is a media alternative for text and is clearly labeled as such. Some of the failed examples may satisfy this success criterion."
         }
       },
       "expected": "passed",
@@ -27630,6 +27801,12 @@
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
+        },
+        "wcag20:1.3.1": {
+          "secondary": "This success criterion is **related** to this rule. This is because this criterion applies to a visible transcript."
+        },
+        "wcag20:1.2.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion does not require a transcript when the audio-only or video-only is a media alternative for text and is clearly labeled as such. Some of the failed examples may satisfy this success criterion."
         }
       },
       "expected": "passed",
@@ -27654,6 +27831,72 @@
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
+        },
+        "wcag20:1.3.1": {
+          "secondary": "This success criterion is **related** to this rule. This is because this criterion applies to a visible transcript."
+        },
+        "wcag20:1.2.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion does not require a transcript when the audio-only or video-only is a media alternative for text and is clearly labeled as such. Some of the failed examples may satisfy this success criterion."
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "a96a4eb928454e8fbf06f6e7c6ef1269f30c77df",
+      "testcaseTitle": "Passed Example 3",
+      "relativePath": "testcases/1a02b0/a96a4eb928454e8fbf06f6e7c6ef1269f30c77df.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/1a02b0/a96a4eb928454e8fbf06f6e7c6ef1269f30c77df.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/1a02b0/proposed/"
+    },
+    {
+      "ruleId": "1a02b0",
+      "ruleName": "Audio and visuals of video element have transcript",
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.2.8": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:G69": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:1.3.1": {
+          "secondary": "This success criterion is **related** to this rule. This is because this criterion applies to a visible transcript."
+        },
+        "wcag20:1.2.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion does not require a transcript when the audio-only or video-only is a media alternative for text and is clearly labeled as such. Some of the failed examples may satisfy this success criterion."
+        }
+      },
+      "expected": "passed",
+      "testcaseId": "a4db5d80848f49290a026e2ee5c0fa7416f14dc6",
+      "testcaseTitle": "Passed Example 4",
+      "relativePath": "testcases/1a02b0/a4db5d80848f49290a026e2ee5c0fa7416f14dc6.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/1a02b0/a4db5d80848f49290a026e2ee5c0fa7416f14dc6.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/1a02b0/proposed/"
+    },
+    {
+      "ruleId": "1a02b0",
+      "ruleName": "Audio and visuals of video element have transcript",
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.2.8": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:G69": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:1.3.1": {
+          "secondary": "This success criterion is **related** to this rule. This is because this criterion applies to a visible transcript."
+        },
+        "wcag20:1.2.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion does not require a transcript when the audio-only or video-only is a media alternative for text and is clearly labeled as such. Some of the failed examples may satisfy this success criterion."
         }
       },
       "expected": "failed",
@@ -27678,6 +27921,12 @@
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
+        },
+        "wcag20:1.3.1": {
+          "secondary": "This success criterion is **related** to this rule. This is because this criterion applies to a visible transcript."
+        },
+        "wcag20:1.2.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion does not require a transcript when the audio-only or video-only is a media alternative for text and is clearly labeled as such. Some of the failed examples may satisfy this success criterion."
         }
       },
       "expected": "failed",
@@ -27702,6 +27951,72 @@
           "failed": "not satisfied",
           "passed": "further testing needed",
           "inapplicable": "further testing needed"
+        },
+        "wcag20:1.3.1": {
+          "secondary": "This success criterion is **related** to this rule. This is because this criterion applies to a visible transcript."
+        },
+        "wcag20:1.2.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion does not require a transcript when the audio-only or video-only is a media alternative for text and is clearly labeled as such. Some of the failed examples may satisfy this success criterion."
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "58833c5284a944298827df756cc31d10cea1f58f",
+      "testcaseTitle": "Failed Example 3",
+      "relativePath": "testcases/1a02b0/58833c5284a944298827df756cc31d10cea1f58f.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/1a02b0/58833c5284a944298827df756cc31d10cea1f58f.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/1a02b0/proposed/"
+    },
+    {
+      "ruleId": "1a02b0",
+      "ruleName": "Audio and visuals of video element have transcript",
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.2.8": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:G69": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:1.3.1": {
+          "secondary": "This success criterion is **related** to this rule. This is because this criterion applies to a visible transcript."
+        },
+        "wcag20:1.2.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion does not require a transcript when the audio-only or video-only is a media alternative for text and is clearly labeled as such. Some of the failed examples may satisfy this success criterion."
+        }
+      },
+      "expected": "failed",
+      "testcaseId": "9f640c8743b6ebee3942fc833f106984b5ee49bb",
+      "testcaseTitle": "Failed Example 4",
+      "relativePath": "testcases/1a02b0/9f640c8743b6ebee3942fc833f106984b5ee49bb.html",
+      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/1a02b0/9f640c8743b6ebee3942fc833f106984b5ee49bb.html",
+      "rulePage": "https://www.w3.org/WAI/standards-guidelines/act/rules/1a02b0/proposed/"
+    },
+    {
+      "ruleId": "1a02b0",
+      "ruleName": "Audio and visuals of video element have transcript",
+      "ruleAccessibilityRequirements": {
+        "wcag20:1.2.8": {
+          "forConformance": true,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag-technique:G69": {
+          "forConformance": false,
+          "failed": "not satisfied",
+          "passed": "further testing needed",
+          "inapplicable": "further testing needed"
+        },
+        "wcag20:1.3.1": {
+          "secondary": "This success criterion is **related** to this rule. This is because this criterion applies to a visible transcript."
+        },
+        "wcag20:1.2.1": {
+          "secondary": "This success criterion is **less strict** than this rule. This is because this criterion does not require a transcript when the audio-only or video-only is a media alternative for text and is clearly labeled as such. Some of the failed examples may satisfy this success criterion."
         }
       },
       "expected": "inapplicable",
