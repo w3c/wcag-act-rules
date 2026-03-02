@@ -2,7 +2,7 @@
   "vendor": "IBM Accessibility",
   "name": "Equal Access Accessibility Checker",
   "version": "3.1.42-rc.0",
-  "lastModified": "4 September 2025",
+  "lastModified": "2 March 2026",
   "approvedRules": {
     "complete": 21,
     "partial": 3,
@@ -1163,7 +1163,7 @@
         ]
       },
       "coverage": {
-        "covered": 7,
+        "covered": 8,
         "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 9
@@ -1284,7 +1284,7 @@
             {
               "procedureName": "iframe_interactive_tabbable:pass,fail_invalid",
               "outcomes": [
-                "failed"
+                "inapplicable"
               ]
             }
           ]
@@ -3655,7 +3655,7 @@
             {
               "procedureName": "input_label_exists:Pass_0,Fail_1,Fail_2",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -3670,7 +3670,7 @@
             {
               "procedureName": "input_label_exists:Pass_0,Fail_1,Fail_2",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
