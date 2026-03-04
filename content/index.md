@@ -72,148 +72,149 @@ This page contains Accessibility Conformance Testing (ACT) Rules to test conform
 
 <div id="guidelines-start" tabindex="-1"></div>
 {% for guideline in site.data.wcag22.guidelines %}
-<section class="guideline-section">
-<h2>Guideline {{ guideline.num }} - {{ guideline.handle }}</h2>
+  <section class="guideline-section rules-container">
+    <h2>Guideline {{ guideline.num }} - {{ guideline.handle }}</h2>
 
-{%- assign sc_num_prefix = guideline.num | append: "." -%}
-{%- assign successcriteria = site.data.wcag22.successcriteria | where_exp: "item", "item.num contains sc_num_prefix" %}
-{% for sc in successcriteria %}
-{% if sc.versions contains "2.2" %}
-<div class="sc-item level-{{sc.level | downcase}}{% if forloop.first %} first{% endif %}">
-<div class="sc-text">
-  {% assign understanding_url = "https://www.w3.org/WAI/WCAG22/Understanding/" | append: sc.id | append: ".html" %}
-  <h3 class="sc-handle"><a href="{{ understanding_url }}">{{ sc.num }} {{ sc.handle }}:</a></h3>
-  <p class="sc-title">
-    {{ sc.title }}
-    {% if sc.details.size > 0 %}[...]{% endif %} 
-    (Level {{ sc.level }})
-  </p>
-</div>
+    {%- assign sc_num_prefix = guideline.num | append: "." -%}
+    {%- assign successcriteria = site.data.wcag22.successcriteria | where_exp: "item", "item.num contains sc_num_prefix" %}
+    {% for sc in successcriteria %}
+      {% if sc.versions contains "2.2" %}
+        <div class="sc-item rules-item{% if forloop.first %} first{% endif %}" data-level="{{sc.level | downcase}}">
+        <div class="sc-text">
+          {% assign understanding_url = "https://www.w3.org/WAI/WCAG22/Understanding/" | append: sc.id | append: ".html" %}
+          <h3 class="sc-handle"><a href="{{ understanding_url }}">{{ sc.num }} {{ sc.handle }}:</a></h3>
+          <p class="sc-title">
+            {{ sc.title }}
+            {% if sc.details.size > 0 %}[...]{% endif %} 
+            (Level {{ sc.level }})
+          </p>
+        </div>
 
-{%- comment %}Find related ACT rules for this criterion{% endcomment -%}
-{%- assign related_rules = "" | split: "," -%}
-{%- assign current_sc_num = sc.num -%}
-{%- assign current_sc_id = current_sc_num | downcase | replace: ".", "-" -%}
+        {%- comment %}Find related ACT rules for this criterion{% endcomment -%}
+        {%- assign related_rules = "" | split: "," -%}
+        {%- assign current_sc_num = sc.num -%}
+        {%- assign current_sc_id = current_sc_num | downcase | replace: ".", "-" -%}
 
-{%- comment %}First, try to find the requirement entry for this criterion{% endcomment -%}
-{%- for req in site.data.wcag-act-rules.requirements -%}
-  {%- assign req_key = req[0] -%}
-  {%- assign req_data = req[1] -%}
-  {%- if req_data.num == sc.num -%}
-    {%- comment %}Find all rules that reference this SC by any of its altIds{% endcomment -%}
-    {%- assign sc_slug = req_key | remove: "WCAG2:" | slugify -%}
-    {% for rule in site.data.wcag-act-rules.rules["act-rules"] %}
-      {%- assign matches = false -%}
-      
-      {%- comment %}Check for match by the main slug (e.g., "info-and-relationships"){% endcomment -%}
-      {%- if rule.successCriteria contains sc_slug -%}
-        {%- assign matches = true -%}
-      {%- endif -%}
-      
-      {%- comment %}Also check for matches by alternative IDs{% endcomment -%}
-      {%- if req_data.scAltId -%}
-        {%- for alt_id in req_data.scAltId -%}
-          {%- if rule.successCriteria contains alt_id -%}
-            {%- assign matches = true -%}
+        {%- comment %}First, try to find the requirement entry for this criterion{% endcomment -%}
+        {%- for req in site.data.wcag-act-rules.requirements -%}
+          {%- assign req_key = req[0] -%}
+          {%- assign req_data = req[1] -%}
+          {%- if req_data.num == sc.num -%}
+            {%- comment %}Find all rules that reference this SC by any of its altIds{% endcomment -%}
+            {%- assign sc_slug = req_key | remove: "WCAG2:" | slugify -%}
+            {% for rule in site.data.wcag-act-rules.rules["act-rules"] %}
+              {%- assign matches = false -%}
+              
+              {%- comment %}Check for match by the main slug (e.g., "info-and-relationships"){% endcomment -%}
+              {%- if rule.successCriteria contains sc_slug -%}
+                {%- assign matches = true -%}
+              {%- endif -%}
+              
+              {%- comment %}Also check for matches by alternative IDs{% endcomment -%}
+              {%- if req_data.scAltId -%}
+                {%- for alt_id in req_data.scAltId -%}
+                  {%- if rule.successCriteria contains alt_id -%}
+                    {%- assign matches = true -%}
+                    {%- break -%}
+                  {%- endif -%}
+                {%- endfor -%}
+              {%- endif -%}
+              
+              {%- comment %}Add matched rule{% endcomment -%}
+              {%- if matches -%}
+                {%- assign related_rules = related_rules | push: rule -%}
+              {%- endif -%}
+            {%- endfor -%}
+            
             {%- break -%}
           {%- endif -%}
         {%- endfor -%}
-      {%- endif -%}
-      
-      {%- comment %}Add matched rule{% endcomment -%}
-      {%- if matches -%}
-        {%- assign related_rules = related_rules | push: rule -%}
-      {%- endif -%}
-    {%- endfor -%}
-    
-    {%- break -%}
-  {%- endif -%}
-{%- endfor -%}
 
-{% if related_rules.size > 0 %}
-<p>Related ACT Rules:</p>
-{% comment %} Add placeholder for filtered message {% endcomment %}
-<p class="filtered-rules-message" hidden><em>All related ACT Rules are currently hidden by filters.</em></p>
-<ul class="act-rule-list">
-  {% for rule in related_rules %}
-  {%- assign rule_id = rule.frontmatter.id -%}
-  
-  {%- comment %}Determine rule types{% endcomment -%}
-  {%- assign test_types = "" | split: "," -%}
-  {%- if automated_rule_ids contains rule_id %}{% assign test_types = test_types | push: "automated" %}{% endif -%}
-  {%- if manual_rule_ids contains rule_id %}{% assign test_types = test_types | push: "manual" %}{% endif -%}
-  {%- if semiauto_rule_ids contains rule_id %}{% assign test_types = test_types | push: "semiauto" %}{% endif -%}
-  {%- if linter_rule_ids contains rule_id %}{% assign test_types = test_types | push: "linter" %}{% endif -%}
-  {%- unless all_implemented_ids contains rule_id %}{% assign test_types = test_types | push: "unimplemented" %}{% endunless -%}
-  {%- assign test_types_str = test_types | join: " " -%}
+        {% if related_rules.size > 0 %}
+          {% include box.html type="start" title="Related ACT Rules" class="linklist" %}
+            {% comment %} Add placeholder for filtered message {% endcomment %}
+            <ul class="act-rule-list top-level-list linklist">
+              {% for rule in related_rules %}
+                {%- assign rule_id = rule.frontmatter.id -%}
+                
+                {%- comment %}Determine rule types{% endcomment -%}
+                {%- assign test_types = "" | split: "," -%}
+                {%- if automated_rule_ids contains rule_id %}{% assign test_types = test_types | push: "automated" %}{% endif -%}
+                {%- if manual_rule_ids contains rule_id %}{% assign test_types = test_types | push: "manual" %}{% endif -%}
+                {%- if semiauto_rule_ids contains rule_id %}{% assign test_types = test_types | push: "semiauto" %}{% endif -%}
+                {%- if linter_rule_ids contains rule_id %}{% assign test_types = test_types | push: "linter" %}{% endif -%}
+                {%- unless all_implemented_ids contains rule_id %}{% assign test_types = test_types | push: "unimplemented" %}{% endunless -%}
+                {%- assign test_types_str = test_types | join: " " -%}
 
-  {%- comment %}Determine if rule is a composite rule{% endcomment -%}
-  {%- assign is_composite = false -%}
-  {%- if rule.frontmatter.rule_type == "composite" -%}
-    {%- assign is_composite = true -%}
-  {%- endif -%}
-  
-  {%- comment %}Determine if this rule has been automated{% endcomment -%}
-  {%- assign is_automated = false -%}
-  {%- if automated_rule_ids contains rule_id -%}
-    {%- assign is_automated = true -%}
-  {%- endif -%}
-  
-  <li data-status="{% if rule.deprecated == true %}deprecated{% elsif rule.proposed == true %}proposed{% else %}approved{% endif %}" data-test-types="{{ test_types_str }}">
-    <a href="/standards-guidelines/act/rules/{{ rule_id }}/proposed/">
-      {{ rule.title }}
-      {% if rule.deprecated == true %}
-        <span class="act-pill deprecated">deprecated</span>
-      {% elsif rule.proposed == true %} 
-        <span class="act-pill proposed">proposed</span>
-      {% endif %}
-    </a>
+                {%- comment %}Determine if rule is a composite rule{% endcomment -%}
+                {%- assign is_composite = false -%}
+                {%- if rule.frontmatter.rule_type == "composite" -%}
+                  {%- assign is_composite = true -%}
+                {%- endif -%}
+                
+                {%- comment %}Determine if this rule has been automated{% endcomment -%}
+                {%- assign is_automated = false -%}
+                {%- if automated_rule_ids contains rule_id -%}
+                  {%- assign is_automated = true -%}
+                {%- endif -%}
+                
+                <li class="act-rule" data-status="{% if rule.deprecated == true %}deprecated{% elsif rule.proposed == true %}proposed{% else %}approved{% endif %}" data-implement="{{ test_types_str }}">
+                  <a href="/standards-guidelines/act/rules/{{ rule_id }}/proposed/">
+                    {{ rule.title }}
+                    {% if rule.deprecated == true %}
+                      <span class="act-pill deprecated">deprecated</span>
+                    {% elsif rule.proposed == true %} 
+                      <span class="act-pill proposed">proposed</span>
+                    {% endif %}
+                  </a>
 
-    {%- comment %} Display atomic rules if this is a composite rule {% endcomment -%}
-    {% if is_composite %}
-      {%- assign atomic_rule_ids = rule.frontmatter.input_rules -%}
-      {% if atomic_rule_ids and atomic_rule_ids.size > 0 %}
-        <ul class="atomic-rules-list act-rule-list">
-          {% for atomic_id in atomic_rule_ids %}
-            {%- assign atomic_rule = site.data.wcag-act-rules.rules["act-rules"] | where: "frontmatter.id", atomic_id | first -%}
-            {% if atomic_rule %}
-              {%- assign atomic_id = atomic_rule.frontmatter.id -%}
-              {%- comment %}Determine atomic rule types{% endcomment -%}
-              {%- assign atomic_test_types = "" | split: "," -%}
-              {%- if automated_rule_ids contains atomic_id %}{% assign atomic_test_types = atomic_test_types | push: "automated" -%}{% endif -%}
-              {%- if manual_rule_ids contains atomic_id %}{% assign atomic_test_types = atomic_test_types | push: "manual" -%}{% endif -%}
-              {%- if semiauto_rule_ids contains atomic_id %}{% assign atomic_test_types = atomic_test_types | push: "semiauto" -%}{% endif -%}
-              {%- if linter_rule_ids contains atomic_id %}{% assign atomic_test_types = atomic_test_types | push: "linter" -%}{% endif -%}
-              {%- unless all_implemented_ids contains atomic_id %}{% assign atomic_test_types = atomic_test_types | push: "unimplemented" -%}{% endunless -%}
-              {%- assign atomic_test_types_str = atomic_test_types | join: " " -%}
+                  {%- comment %} Display atomic rules if this is a composite rule {% endcomment -%}
+                  {% if is_composite %}
+                    {%- assign atomic_rule_ids = rule.frontmatter.input_rules -%}
+                    {% if atomic_rule_ids and atomic_rule_ids.size > 0 %}
+                      <ul class="atomic-rules-list act-rule-list">
+                        {% for atomic_id in atomic_rule_ids %}
+                          {%- assign atomic_rule = site.data.wcag-act-rules.rules["act-rules"] | where: "frontmatter.id", atomic_id | first -%}
+                          {% if atomic_rule %}
+                            {%- assign atomic_id = atomic_rule.frontmatter.id -%}
+                            {%- comment %}Determine atomic rule types{% endcomment -%}
+                            {%- assign atomic_test_types = "" | split: "," -%}
+                            {%- if automated_rule_ids contains atomic_id %}{% assign atomic_test_types = atomic_test_types | push: "automated" -%}{% endif -%}
+                            {%- if manual_rule_ids contains atomic_id %}{% assign atomic_test_types = atomic_test_types | push: "manual" -%}{% endif -%}
+                            {%- if semiauto_rule_ids contains atomic_id %}{% assign atomic_test_types = atomic_test_types | push: "semiauto" -%}{% endif -%}
+                            {%- if linter_rule_ids contains atomic_id %}{% assign atomic_test_types = atomic_test_types | push: "linter" -%}{% endif -%}
+                            {%- unless all_implemented_ids contains atomic_id %}{% assign atomic_test_types = atomic_test_types | push: "unimplemented" -%}{% endunless -%}
+                            {%- assign atomic_test_types_str = atomic_test_types | join: " " -%}
 
-              <li data-status="{% if atomic_rule.deprecated == true %}deprecated{% elsif atomic_rule.proposed == true %}proposed{% else %}approved{% endif %}" data-test-types="{{ atomic_test_types_str }}">
-                <a href="/standards-guidelines/act/rules/{{ atomic_id }}/proposed/">
-                  {{ atomic_rule.title }}
-                  {% if atomic_rule.deprecated == true %}
-                    <span class="act-pill deprecated">deprecated</span>
-                  {% elsif atomic_rule.proposed == true %}
-                    <span class="act-pill proposed">proposed</span>
+                            <li class="act-rule" data-status="{% if atomic_rule.deprecated == true %}deprecated{% elsif atomic_rule.proposed == true %}proposed{% else %}approved{% endif %}" data-implement="{{ atomic_test_types_str }}">
+                              <a href="/standards-guidelines/act/rules/{{ atomic_id }}/proposed/">
+                                {{ atomic_rule.title }}
+                                {% if atomic_rule.deprecated == true %}
+                                  <span class="act-pill deprecated">deprecated</span>
+                                {% elsif atomic_rule.proposed == true %}
+                                  <span class="act-pill proposed">proposed</span>
+                                {% endif %}
+                              </a>
+                            </li>
+                          {% endif %}
+                        {% endfor %}
+                      </ul>
+                    {% endif %}
                   {% endif %}
-                </a>
-              </li>
-            {% endif %}
-          {% endfor %}
-        </ul>
+                </li>
+              {% endfor %}
+            </ul>
+            <p class="filtered-rules-message doc-note-box"><em>All related ACT Rules are currently hidden by filters.</em></p>
+          {% include box.html type="end" %}
+        {% else %}
+          <p class="doc-note-box"><em>No ACT Rules available for this criterion yet.</em></p>
+        {% endif %}
+        </div>
       {% endif %}
-    {% endif %}
-  </li>
-  {% endfor %}
-</ul>
-{% else %}
-<p><em>No ACT Rules available for this criterion yet.</em></p>
-{% endif %}
-</div>
-{% endif %}
-{%- comment %}End Criteria and Guidelines{% endcomment -%}
-  {% endfor %}
-<p class="sneaky-skiplink"><a href="#top">Back to top</a></p>
-</section>
+      {%- comment %}End Criteria and Guidelines{% endcomment -%}
+    {% endfor %}
+    <p class="sneaky-skiplink"><a href="#top">Back to top</a></p>
+  </section>
 {% endfor %}
 
 
@@ -238,64 +239,72 @@ This page contains Accessibility Conformance Testing (ACT) Rules to test conform
 {%- endfor -%}
 {%- assign aria_req_objs = aria_req_objs | sort -%}
 
-<h2 data-aria-section="true">ARIA Rules</h2>
-<div class="aria-rules-list-container">
-{%- assign found_aria_rule = false -%}
-{% for aria_req_obj in aria_req_objs %}
-  {%- assign pair = aria_req_obj | split: '|||' -%}
-  {%- assign req_title = pair[0] -%}
-  {%- assign req_key = pair[1] -%}
-  {%- comment -%} Now, list all rules for this requirement key {%- endcomment -%}
-  {%- assign rules_for_req = "" | split: "," -%}
-  {%- for rule in site.data.wcag-act-rules.rules["act-rules"] -%}
-    {%- assign has_req = false -%}
-    {%- if rule.frontmatter.accessibility_requirements -%}
-      {%- for req in rule.frontmatter.accessibility_requirements -%}
-        {% if req[0] == req_key %}
-          {%- assign has_req = true -%}
-        {%- endif -%}
-      {%- endfor -%}
-    {%- endif -%}
-    {%- if has_req -%}
-      {%- assign rules_for_req = rules_for_req | push: rule -%}
-    {%- endif -%}
-  {%- endfor -%}
-  {%- assign comma_index = req_title | split: ',' -%}
-  {% if comma_index.size > 1 %}
-    <h3 class="aria-req"><strong>{{ comma_index[0] }}</strong>{{ req_title | remove_first: comma_index[0] }}</h3>
-  {% else %}
-    <h3 class="aria-req"><strong>{{ req_title }}</strong></h3>
-  {% endif %}
-  {% if rules_for_req.size > 0 %}
-    <ul class="act-rule-list">
-      {% for rule in rules_for_req %}
-        {%- assign found_aria_rule = true -%}
-        {%- assign rule_id = rule.frontmatter.id -%}
-        {%- assign test_types = "" | split: "," -%}
-        {%- if automated_rule_ids contains rule_id %}{% assign test_types = test_types | push: "automated" %}{% endif -%}
-        {%- if manual_rule_ids contains rule_id %}{% assign test_types = test_types | push: "manual" %}{% endif -%}
-        {%- if semiauto_rule_ids contains rule_id %}{% assign test_types = test_types | push: "semiauto" %}{% endif -%}
-        {%- if linter_rule_ids contains rule_id %}{% assign test_types = test_types | push: "linter" %}{% endif -%}
-        {%- unless all_implemented_ids contains rule_id %}{% assign test_types = test_types | push: "unimplemented" %}{% endunless -%}
-        {% assign test_types_str = test_types | join: " " %}
-        <li data-status="{% if rule.deprecated == true %}deprecated{% elsif rule.proposed == true %}proposed{% else %}approved{% endif %}" data-test-types="{{ test_types_str }}">
-          <a href="/standards-guidelines/act/rules/{{ rule_id }}/proposed/">
-            {{ rule.title }}
-            {% if rule.deprecated == true %}
-              <span class="act-pill deprecated">deprecated</span>
-            {% elsif rule.proposed == true %}
-              <span class="act-pill proposed">proposed</span>
-            {% endif %}
-          </a>
-        </li>
-      {% endfor %}
-    </ul>
-    <p class="filtered-rules-message" hidden><em>All related ACT Rules are currently hidden by filters.</em></p>
-  {% else %}
-    <p><em>No ACT Rules available for this requirement yet.</em></p>
-  {% endif %}
-{% endfor %}
-</div>
+<section class="aria-rules-list-container rules-container">
+  <h2>ARIA Rules</h2>
+  {% for aria_req_obj in aria_req_objs %}
+    {%- assign pair = aria_req_obj | split: '|||' -%}
+    {%- assign req_title = pair[0] -%}
+    {%- assign req_key = pair[1] -%}
+    {%- comment -%} Now, list all rules for this requirement key {%- endcomment -%}
+    {%- assign rules_for_req = "" | split: "," -%}
+    {%- for rule in site.data.wcag-act-rules.rules["act-rules"] -%}
+      {%- assign has_req = false -%}
+      {%- if rule.frontmatter.accessibility_requirements -%}
+        {%- for req in rule.frontmatter.accessibility_requirements -%}
+          {% if req[0] == req_key %}
+            {%- assign has_req = true -%}
+          {%- endif -%}
+        {%- endfor -%}
+      {%- endif -%}
+      {%- if has_req -%}
+        {%- assign rules_for_req = rules_for_req | push: rule -%}
+      {%- endif -%}
+    {%- endfor -%}
+    {%- assign comma_index = req_title | split: ',' -%}
+    {%- assign req_version_and_id = req_key | split: ':' -%}
+    {%- assign url = "https://www.w3.org/TR/wai-aria-1.2/" -%}
+    {% if req_version_and_id[0] == "using-aria" %}
+      {%- assign url = "https://www.w3.org/TR/using-aria/" -%}
+    {% endif %}
+    <div class="ar-item rules-item" data-level="aria">
+      {% if comma_index.size > 1 %}
+        <h3 class="aria-req"><strong>{{ comma_index[0] }}</strong>, <a href="{{ url }}#{{ req_version_and_id[1] }}">{{ comma_index[1] }}</a></h3>
+      {% else %}
+        <h3 class="aria-req"><strong>{{ req_title }}</strong></h3>
+      {% endif %}
+      {% if rules_for_req.size > 0 %}
+        {% include box.html type="start" title="Related ACT Rules" class="linklist" %}
+          <ul class="act-rule-list linklist">
+            {% for rule in rules_for_req %}
+              {%- assign rule_id = rule.frontmatter.id -%}
+              {%- assign test_types = "" | split: "," -%}
+              {%- if automated_rule_ids contains rule_id %}{% assign test_types = test_types | push: "auto" %}{% endif -%}
+              {%- if manual_rule_ids contains rule_id %}{% assign test_types = test_types | push: "manual" %}{% endif -%}
+              {%- if semiauto_rule_ids contains rule_id %}{% assign test_types = test_types | push: "semi-auto" %}{% endif -%}
+              {%- if linter_rule_ids contains rule_id %}{% assign test_types = test_types | push: "lint" %}{% endif -%}
+              {%- unless all_implemented_ids contains rule_id %}{% assign test_types = test_types | push: "none" %}{% endunless -%}
+              {% assign test_types_str = test_types | join: " " %}
+              <li class="act-rule" data-status="{% if rule.deprecated == true %}deprecated{% elsif rule.proposed == true %}proposed{% else %}approved{% endif %}" data-implement="{{ test_types_str }}">
+                <a href="/standards-guidelines/act/rules/{{ rule_id }}/proposed/">
+                  {{ rule.title }}
+                  {% if rule.deprecated == true %}
+                    <span class="act-pill deprecated">deprecated</span>
+                  {% elsif rule.proposed == true %}
+                    <span class="act-pill proposed">proposed</span>
+                  {% endif %}
+                </a>
+              </li>
+            {% endfor %}
+          </ul>
+          <p class="filtered-rules-message doc-note-box"><em>All related ACT Rules are currently hidden by filters.</em></p>
+        {% include box.html type="end" %}
+      {% else %}
+        <p class="doc-note-box"><em>No ACT Rules available for this requirement yet.</em></p>
+      {% endif %}
+    </div>
+  {% endfor %}
+</section>
+<p class="filtered-rules-message doc-note-box" id="all-requirements-hidden"><em>All requirements are currently hidden by filters.</em></p>
 
 ## About Rule Status
 

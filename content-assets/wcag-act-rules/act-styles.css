@@ -142,7 +142,6 @@ ul.act-requirements-list {
   list-style: none;
 }
 
-
 .filter-options {
   display: flex;
   flex-wrap: wrap;
@@ -193,10 +192,6 @@ ul.act-requirements-list {
   }
 }
 
-.atomic-rules-list {
-  padding-top: 0.5em;
-}
-
 #filter-status {
   margin: 1.5em 0;
   padding: 0.75em 1.25em;
@@ -222,4 +217,86 @@ ul.act-requirements-list {
 }
 .sneaky-skiplink > a:focus {
   height: auto;
+}
+
+/* border fixes for atomic lists and hidden rules */
+.atomic-rules-list {
+  border-bottom: 1px solid var(--line-grey);
+}
+
+.linklist li:last-child li a {
+  border-bottom: 1px solid var(--line-grey);
+}
+
+.linklist li:last-child ul {
+  border-bottom: 1px solid var(--line-grey);
+}
+
+.atomic-rules-list li {
+  border-left: 1px solid var(--line-grey);
+}
+
+.rules-item > .box {
+  border-bottom-width: 0;
+}
+
+.rules-item > .box:has(.no-rules) {
+  border-bottom-width: 1px;
+}
+
+.linklist li:last-child a {
+  border-bottom: 1px solid var(--line-grey);
+}
+
+.linklist li li:last-child a {
+    border-bottom: 0;
+}
+
+.filtered-rules-message {
+  margin: 0;
+  display: none
+}
+
+.act-rule-list[hidden] + .filtered-rules-message {
+  display: block;
+}
+
+/* Page contents styles for disabled menu items */
+.nav-hack.sidebar a[aria-disabled] {
+  color: var(--w3c-storm-gray);
+}
+
+.nav-hack.sidebar a[aria-disabled]:hover, .nav-hack.sidebar a[aria-disabled]:active {
+  color: var(--w3c-storm-gray);
+  text-decoration: none;
+  cursor: text;
+}
+
+/* Filter logic */
+.act-rule.filtered-out {
+  display: none;
+}
+
+.act-rule-list.no-rules {
+  display: none;
+}
+
+.act-rule-list.no-rules + .filtered-rules-message {
+  display: block;
+}
+
+.rules-item.filtered-out {
+    display: none;
+}
+
+.rules-container.filtered-out {
+    display: none;
+}
+
+#all-requirements-hidden {
+  display: none;
+}
+
+main.all-requirements-hidden #all-requirements-hidden {
+  display: block;
 }
