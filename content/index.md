@@ -139,11 +139,11 @@ This page contains Accessibility Conformance Testing (ACT) Rules to test conform
                 
                 {%- comment %}Determine rule types{% endcomment -%}
                 {%- assign test_types = "" | split: "," -%}
-                {%- if automated_rule_ids contains rule_id %}{% assign test_types = test_types | push: "automated" %}{% endif -%}
+                {%- if automated_rule_ids contains rule_id %}{% assign test_types = test_types | push: "auto" %}{% endif -%}
                 {%- if manual_rule_ids contains rule_id %}{% assign test_types = test_types | push: "manual" %}{% endif -%}
-                {%- if semiauto_rule_ids contains rule_id %}{% assign test_types = test_types | push: "semiauto" %}{% endif -%}
-                {%- if linter_rule_ids contains rule_id %}{% assign test_types = test_types | push: "linter" %}{% endif -%}
-                {%- unless all_implemented_ids contains rule_id %}{% assign test_types = test_types | push: "unimplemented" %}{% endunless -%}
+                {%- if semiauto_rule_ids contains rule_id %}{% assign test_types = test_types | push: "semi-auto" %}{% endif -%}
+                {%- if linter_rule_ids contains rule_id %}{% assign test_types = test_types | push: "lint" %}{% endif -%}
+                {%- unless all_implemented_ids contains rule_id %}{% assign test_types = test_types | push: "none" %}{% endunless -%}
                 {%- assign test_types_str = test_types | join: " " -%}
 
                 {%- comment %}Determine if rule is a composite rule{% endcomment -%}
