@@ -222,18 +222,19 @@ ul.act-requirements-list {
 /* border fixes for atomic lists and hidden rules */
 .atomic-rules-list {
   border-bottom: 1px solid var(--line-grey);
-}
-
-.linklist li:last-child li a {
-  border-bottom: 1px solid var(--line-grey);
-}
-
-.linklist li:last-child ul {
-  border-bottom: 1px solid var(--line-grey);
+  padding-bottom: 0.5em;
 }
 
 .atomic-rules-list li {
-  border-left: 1px solid var(--line-grey);
+  list-style: disc;
+}
+
+.atomic-rules-list a {
+    padding-left: 0.5em;
+}
+
+.act-rule-list .has-atomic-rules a {
+  border-bottom: 0;
 }
 
 .rules-item > .box {
@@ -244,11 +245,11 @@ ul.act-requirements-list {
   border-bottom-width: 1px;
 }
 
-.linklist li:last-child a {
+.linklist > li:last-child > a:last-child {
   border-bottom: 1px solid var(--line-grey);
 }
 
-.linklist li li:last-child a {
+.linklist li li:last-child > a {
     border-bottom: 0;
 }
 

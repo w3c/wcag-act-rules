@@ -158,7 +158,7 @@ This page contains Accessibility Conformance Testing (ACT) Rules to test conform
                   {%- assign is_automated = true -%}
                 {%- endif -%}
                 
-                <li class="act-rule" data-status="{% if rule.deprecated == true %}deprecated{% elsif rule.proposed == true %}proposed{% else %}approved{% endif %}" data-implement="{{ test_types_str }}">
+                <li class="act-rule{% if is_composite and rule.frontmatter.input_rules and rule.frontmatter.input_rules.size > 0 %} has-atomic-rules{% endif %}" data-status="{% if rule.deprecated == true %}deprecated{% elsif rule.proposed == true %}proposed{% else %}approved{% endif %}" data-implement="{{ test_types_str }}">
                   <a href="/standards-guidelines/act/rules/{{ rule_id }}/proposed/">
                     {{ rule.title }}
                     {% if rule.deprecated == true %}
@@ -179,11 +179,11 @@ This page contains Accessibility Conformance Testing (ACT) Rules to test conform
                             {%- assign atomic_id = atomic_rule.frontmatter.id -%}
                             {%- comment %}Determine atomic rule types{% endcomment -%}
                             {%- assign atomic_test_types = "" | split: "," -%}
-                            {%- if automated_rule_ids contains atomic_id %}{% assign atomic_test_types = atomic_test_types | push: "automated" -%}{% endif -%}
+                            {%- if automated_rule_ids contains atomic_id %}{% assign atomic_test_types = atomic_test_types | push: "auto" -%}{% endif -%}
                             {%- if manual_rule_ids contains atomic_id %}{% assign atomic_test_types = atomic_test_types | push: "manual" -%}{% endif -%}
-                            {%- if semiauto_rule_ids contains atomic_id %}{% assign atomic_test_types = atomic_test_types | push: "semiauto" -%}{% endif -%}
-                            {%- if linter_rule_ids contains atomic_id %}{% assign atomic_test_types = atomic_test_types | push: "linter" -%}{% endif -%}
-                            {%- unless all_implemented_ids contains atomic_id %}{% assign atomic_test_types = atomic_test_types | push: "unimplemented" -%}{% endunless -%}
+                            {%- if semiauto_rule_ids contains atomic_id %}{% assign atomic_test_types = atomic_test_types | push: "semi-auto" -%}{% endif -%}
+                            {%- if linter_rule_ids contains atomic_id %}{% assign atomic_test_types = atomic_test_types | push: "lint" -%}{% endif -%}
+                            {%- unless all_implemented_ids contains atomic_id %}{% assign atomic_test_types = atomic_test_types | push: "none" -%}{% endunless -%}
                             {%- assign atomic_test_types_str = atomic_test_types | join: " " -%}
 
                             <li class="act-rule" data-status="{% if atomic_rule.deprecated == true %}deprecated{% elsif atomic_rule.proposed == true %}proposed{% else %}approved{% endif %}" data-implement="{{ atomic_test_types_str }}">
