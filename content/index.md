@@ -278,7 +278,7 @@ This page contains Accessibility Conformance Testing (ACT) Rules to test conform
               {%- unless all_implemented_ids contains rule_id %}{% assign test_types = test_types | push: "none" %}{% endunless -%}
               {% assign test_types_str = test_types | join: " " %}
               <li class="act-rule" data-status="{% if rule.deprecated == true %}deprecated{% elsif rule.proposed == true %}proposed{% else %}approved{% endif %}" data-implement="{{ test_types_str }}">
-                <a href="/standards-guidelines/act/rules/{{ rule_id }}/proposed/">
+                <a href="{{ '/standards-guidelines/act/rules/' | append: rule_id | append: '/proposed/' | relative_url">
                   {{ rule.title }}
                   {% if rule.deprecated == true %}
                     <span class="act-pill deprecated">deprecated</span>
