@@ -152,7 +152,7 @@ This page contains Accessibility Conformance Testing (ACT) Rules to test conform
                 {%- endif -%}
                 
                 <li class="act-rule{% if is_composite and rule.frontmatter.input_rules and rule.frontmatter.input_rules.size > 0 %} has-atomic-rules{% endif %}" data-status="{% if rule.deprecated == true %}deprecated{% elsif rule.proposed == true %}proposed{% else %}approved{% endif %}" data-implement="{{ test_types_str }}">
-                  <a href="/standards-guidelines/act/rules/{{ rule_id }}/proposed/">
+                  <a href="{{ '/standards-guidelines/act/rules/' | append: rule_id | append: '/proposed/' | relative_url }}">
                     {{ rule.title }}
                     {% if rule.deprecated == true %}
                       <span class="act-pill deprecated">deprecated</span>
