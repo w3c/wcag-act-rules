@@ -65,7 +65,6 @@ This page contains Accessibility Conformance Testing (ACT) Rules to test conform
 {%- assign linter_rule_ids = linter_rule_ids | uniq -%}
 {%- assign all_implemented_ids = all_implemented_ids | uniq -%}
 
-
 <p class="sneaky-skiplink"><a href="#guidelines-start">Skip to guidelines</a></p>
 
 {% include filter-controls.html %}
@@ -150,12 +149,6 @@ This page contains Accessibility Conformance Testing (ACT) Rules to test conform
                 {%- assign is_composite = false -%}
                 {%- if rule.frontmatter.rule_type == "composite" -%}
                   {%- assign is_composite = true -%}
-                {%- endif -%}
-                
-                {%- comment %}Determine if this rule has been automated{% endcomment -%}
-                {%- assign is_automated = false -%}
-                {%- if automated_rule_ids contains rule_id -%}
-                  {%- assign is_automated = true -%}
                 {%- endif -%}
                 
                 <li class="act-rule{% if is_composite and rule.frontmatter.input_rules and rule.frontmatter.input_rules.size > 0 %} has-atomic-rules{% endif %}" data-status="{% if rule.deprecated == true %}deprecated{% elsif rule.proposed == true %}proposed{% else %}approved{% endif %}" data-implement="{{ test_types_str }}">
