@@ -180,7 +180,7 @@ This page contains Accessibility Conformance Testing (ACT) Rules to test conform
                             {%- assign atomic_test_types_str = atomic_test_types | join: " " -%}
 
                             <li class="act-rule" data-status="{% if atomic_rule.deprecated == true %}deprecated{% elsif atomic_rule.proposed == true %}proposed{% else %}approved{% endif %}" data-implement="{{ atomic_test_types_str }}">
-                              <a href="/standards-guidelines/act/rules/{{ atomic_id }}/proposed/">
+                              <a href="{{ '/standards-guidelines/act/rules/' | append: atomic_id | append: '/proposed/' | relative_url }}">
                                 {{ atomic_rule.title }}
                                 {% if atomic_rule.deprecated == true %}
                                   <span class="act-pill deprecated">deprecated</span>
