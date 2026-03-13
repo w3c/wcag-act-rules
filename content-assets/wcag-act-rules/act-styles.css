@@ -47,7 +47,13 @@ table.act-implementations ul {
 }
 
 .act-pill::before {
-  content: ",";
+  content: "[";
+  position: absolute;
+  opacity: 0;
+}
+
+.act-pill::after {
+  content: "]";
   position: absolute;
   opacity: 0;
 }
