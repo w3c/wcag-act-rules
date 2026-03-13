@@ -189,3 +189,13 @@
   standards:
     - WCAG 2.2 Level A, AA, AAA
   jsonReport: http://help.usablenet.com/aqa-act-r/reports/UsableNet-AQA-WCAG2.2-semi-auto.json
+
+- name: "@accesslint/Core"
+  vendor: accesslint
+  homepage: https://github.com/AccessLint/core
+  vendorHomepage: https://github.com/AccessLint/
+  uniqueKey: accesslint-core
+  type: Linter
+  standards:
+    - WCAG 2.2 Level A, AA, AAA
+  jsonReport: https://github.com/AccessLint/core
