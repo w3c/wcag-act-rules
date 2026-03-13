@@ -301,7 +301,7 @@ This page contains Accessibility Conformance Testing (ACT) Rules to test conform
 
 ## About Rule Status
 
-The ACT Rules are **proposed** by the ACT Task Force and Community Group. Once a rule is fully implemented by at least one test tool or methodology, the rule is **approved** by a W3C working group. The Accessibility Guidelines Working Group approves rules for WCAG, the ARIA Working Group approves rules for ARIA. A rule can be **deprecated** if it is no longer necessary, or superseded by other rules.
+The ACT Rules are **proposed** by ACT. Once a rule is fully implemented by at least one test tool or methodology, the rule is **reviewed and approved** by a W3C Working Group. The Accessibility Guidelines Working Group approves rules for WCAG, the ARIA Working Group approves rules for ARIA. A rule can be **deprecated** if it is no longer necessary, or superseded by other rules.
 
 ## About implementations
 
