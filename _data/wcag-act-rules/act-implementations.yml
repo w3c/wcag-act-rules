@@ -198,4 +198,4 @@
   type: Linter
   standards:
     - WCAG 2.2 Level A, AA, AAA
-  jsonReport: https://github.com/AccessLint/core
+  jsonReport: https://raw.githubusercontent.com/AccessLint/core/gh-pages/earl-report-browser.json
