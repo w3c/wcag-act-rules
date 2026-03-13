@@ -67,7 +67,7 @@ This page contains Accessibility Conformance Testing (ACT) Rules to test conform
 
 <p class="sneaky-skiplink"><a href="#guidelines-start">Skip to guidelines</a></p>
 
-{% include filter-controls.html %}
+{% include wcag-act-rules/filter-controls.html %}
 
 <div id="guidelines-start" tabindex="-1"></div>
 {% for guideline in site.data.wcag22.guidelines %}
