@@ -16,8 +16,7 @@ github:
 {% include box.html type="start" title="Glossary" class="" %}
 {:/}
 
-## Accessible Name
-{#accessible-name}
+## Accessible Name {#accessible-name}
 
 The _accessible name_ is the programmatically determined name of a user interface element that is [included in the accessibility tree](#included-in-the-accessibility-tree).
 
@@ -43,62 +42,45 @@ For more details, see [examples of accessible name][].
 
 ### Used in rules
 - [Text has enhanced contrast](/standards-guidelines/act/rules/09o5cg/proposed/)
-- [Text has enhanced contrast](/standards-guidelines/act/rules/09o5cg/proposed/)
-- [Image has non-empty accessible name](/standards-guidelines/act/rules/23a2a8/proposed/)
 - [Image has non-empty accessible name](/standards-guidelines/act/rules/23a2a8/proposed/)
 - [Visible label is part of accessible name](/standards-guidelines/act/rules/2ee8b8/proposed/)
 - [Summary element has non-empty accessible name](/standards-guidelines/act/rules/2t702h/proposed/)
-- [Summary element has non-empty accessible name](/standards-guidelines/act/rules/2t702h/proposed/)
-- [Element with presentational children has no focusable content](/standards-guidelines/act/rules/307n5z/proposed/)
 - [Element with presentational children has no focusable content](/standards-guidelines/act/rules/307n5z/proposed/)
 - [Error message describes invalid form field value](/standards-guidelines/act/rules/36b590/proposed/)
 - [Iframe elements with identical accessible names have equivalent purpose](/standards-guidelines/act/rules/4b1c6c/proposed/)
 - [Audio or video element that plays automatically has a control mechanism](/standards-guidelines/act/rules/4c31df/proposed/)
 - [Image button has non-empty accessible name](/standards-guidelines/act/rules/59796f/proposed/)
-- [Image button has non-empty accessible name](/standards-guidelines/act/rules/59796f/proposed/)
 - [Link in context is descriptive](/standards-guidelines/act/rules/5effbb/proposed/)
 - [SVG element with explicit role has non-empty accessible name](/standards-guidelines/act/rules/7d6734/proposed/)
-- [SVG element with explicit role has non-empty accessible name](/standards-guidelines/act/rules/7d6734/proposed/)
 - [Object element rendering non-text content has non-empty accessible name](/standards-guidelines/act/rules/8fc3b6/proposed/)
-- [Object element rendering non-text content has non-empty accessible name](/standards-guidelines/act/rules/8fc3b6/proposed/)
-- [Button has non-empty accessible name](/standards-guidelines/act/rules/97a4e1/proposed/)
 - [Button has non-empty accessible name](/standards-guidelines/act/rules/97a4e1/proposed/)
 - [Content has alternative for visual reference](/standards-guidelines/act/rules/9bd38c/proposed/)
 - [Image filename is accessible name for image](/standards-guidelines/act/rules/9eb3f6/proposed/)
-- [Text has minimum contrast](/standards-guidelines/act/rules/afw4f7/proposed/)
 - [Text has minimum contrast](/standards-guidelines/act/rules/afw4f7/proposed/)
 - [Link is descriptive](/standards-guidelines/act/rules/aizyf1/proposed/)
 - [Links with identical accessible names have equivalent purpose](/standards-guidelines/act/rules/b20e66/proposed/)
 - [Heading is descriptive](/standards-guidelines/act/rules/b49b2e/proposed/)
 - [Link has non-empty accessible name](/standards-guidelines/act/rules/c487ae/proposed/)
-- [Link has non-empty accessible name](/standards-guidelines/act/rules/c487ae/proposed/)
 - [Iframe element has non-empty accessible name](/standards-guidelines/act/rules/cae760/proposed/)
 - [Form field label is descriptive](/standards-guidelines/act/rules/cc0f0a/proposed/)
 - [Element with lang attribute has valid language tag](/standards-guidelines/act/rules/de46e4/proposed/)
-- [Element with lang attribute has valid language tag](/standards-guidelines/act/rules/de46e4/proposed/)
-- [Form field has non-empty accessible name](/standards-guidelines/act/rules/e086e5/proposed/)
 - [Form field has non-empty accessible name](/standards-guidelines/act/rules/e086e5/proposed/)
 - [Image not in the accessibility tree is decorative](/standards-guidelines/act/rules/e88epe/proposed/)
 - [Links with identical accessible names and same context serve equivalent purpose](/standards-guidelines/act/rules/fd3a94/proposed/)
 - [Heading has non-empty accessible name](/standards-guidelines/act/rules/ffd0e9/proposed/)
 - [Menuitem has non-empty accessible name](/standards-guidelines/act/rules/m6b1q3/proposed/)
-- [Menuitem has non-empty accessible name](/standards-guidelines/act/rules/m6b1q3/proposed/)
 - [HTML element language subtag matches language](/standards-guidelines/act/rules/off6ek/proposed/)
-- [Image accessible name is descriptive](/standards-guidelines/act/rules/qt1vmo/proposed/)
 - [Image accessible name is descriptive](/standards-guidelines/act/rules/qt1vmo/proposed/)
 - [HTML page language subtag matches default language](/standards-guidelines/act/rules/ucwvc8/proposed/)
 
-## Appropriate field for the form control
-{#appropriate-field-for-the-form-control}
+## Appropriate field for the form control {#appropriate-field-for-the-form-control}
 
 The field name of the form control is _appropriate_ if it is listed in the autocomplete fields table from the HTML 5.2 specification as applying to the specified control group. [https://html.spec.whatwg.org/#inappropriate-for-the-control](https://html.spec.whatwg.org/#inappropriate-for-the-control).
 
 ### Used in rules
 - [Autocomplete attribute has valid value](/standards-guidelines/act/rules/73f2c2/proposed/)
-- [Autocomplete attribute has valid value](/standards-guidelines/act/rules/73f2c2/proposed/)
 
-## Attribute value
-{#attribute-value}
+## Attribute value {#attribute-value}
 
 The <dfn id="attribute-value:attribute">attribute value</dfn> of a content attribute set on an HTML element is the value that the attribute gets after being parsed and computed according to specifications. It may differ from the value that is actually written in the HTML code due to trimming whitespace or non-digits characters, default values, or case-insensitivity.
 
@@ -127,50 +109,32 @@ The <dfn id="attribute-value:idl">attribute value</dfn> of an [IDL attribute][] 
 
 ### Used in rules
 - [Text has enhanced contrast](/standards-guidelines/act/rules/09o5cg/proposed/)
-- [Text has enhanced contrast](/standards-guidelines/act/rules/09o5cg/proposed/)
-- [Scrollable content can be reached with sequential focus navigation](/standards-guidelines/act/rules/0ssw9k/proposed/)
 - [Scrollable content can be reached with sequential focus navigation](/standards-guidelines/act/rules/0ssw9k/proposed/)
 - [HTML images contain no text](/standards-guidelines/act/rules/0va7u6/proposed/)
-- [HTML images contain no text](/standards-guidelines/act/rules/0va7u6/proposed/)
-- [Element with presentational children has no focusable content](/standards-guidelines/act/rules/307n5z/proposed/)
 - [Element with presentational children has no focusable content](/standards-guidelines/act/rules/307n5z/proposed/)
 - [Audio or video element that plays automatically has a control mechanism](/standards-guidelines/act/rules/4c31df/proposed/)
 - [Image button has non-empty accessible name](/standards-guidelines/act/rules/59796f/proposed/)
 - [Zoomed text node is not clipped with CSS overflow](/standards-guidelines/act/rules/59br37/proposed/)
 - [ARIA state or property is permitted](/standards-guidelines/act/rules/5c01ea/proposed/)
 - [ARIA state or property has valid value](/standards-guidelines/act/rules/6a7281/proposed/)
-- [ARIA state or property has valid value](/standards-guidelines/act/rules/6a7281/proposed/)
 - [Element with aria-hidden has no content in sequential focus navigation](/standards-guidelines/act/rules/6cfa84/proposed/)
-- [Element with aria-hidden has no content in sequential focus navigation](/standards-guidelines/act/rules/6cfa84/proposed/)
-- [Autocomplete attribute has valid value](/standards-guidelines/act/rules/73f2c2/proposed/)
 - [Autocomplete attribute has valid value](/standards-guidelines/act/rules/73f2c2/proposed/)
 - [Audio or video element avoids automatically playing audio](/standards-guidelines/act/rules/80f0bf/proposed/)
 - [Button has non-empty accessible name](/standards-guidelines/act/rules/97a4e1/proposed/)
-- [Button has non-empty accessible name](/standards-guidelines/act/rules/97a4e1/proposed/)
-- [Headers attribute specified on a cell refers to cells in the same table element](/standards-guidelines/act/rules/a25f45/proposed/)
 - [Headers attribute specified on a cell refers to cells in the same table element](/standards-guidelines/act/rules/a25f45/proposed/)
 - [Audio or video element that plays automatically has no audio that lasts more than 3 seconds](/standards-guidelines/act/rules/aaa1bf/proposed/)
 - [Video element visual-only content has description track](/standards-guidelines/act/rules/ac7dc6/proposed/)
 - [Text has minimum contrast](/standards-guidelines/act/rules/afw4f7/proposed/)
-- [Text has minimum contrast](/standards-guidelines/act/rules/afw4f7/proposed/)
-- [Iframe with interactive elements is not excluded from tab-order](/standards-guidelines/act/rules/akn7bn/proposed/)
 - [Iframe with interactive elements is not excluded from tab-order](/standards-guidelines/act/rules/akn7bn/proposed/)
 - [Meta viewport allows for zoom](/standards-guidelines/act/rules/b4f0c3/proposed/)
-- [Meta viewport allows for zoom](/standards-guidelines/act/rules/b4f0c3/proposed/)
-- [HTML page has lang attribute](/standards-guidelines/act/rules/b5c3f8/proposed/)
 - [HTML page has lang attribute](/standards-guidelines/act/rules/b5c3f8/proposed/)
 - [ARIA required owned elements](/standards-guidelines/act/rules/bc4a75/proposed/)
 - [Meta element has no refresh delay](/standards-guidelines/act/rules/bc659a/proposed/)
-- [Meta element has no refresh delay](/standards-guidelines/act/rules/bc659a/proposed/)
 - [Meta element has no refresh delay (no exception)](/standards-guidelines/act/rules/bisz58/proposed/)
-- [Meta element has no refresh delay (no exception)](/standards-guidelines/act/rules/bisz58/proposed/)
-- [Link has non-empty accessible name](/standards-guidelines/act/rules/c487ae/proposed/)
 - [Link has non-empty accessible name](/standards-guidelines/act/rules/c487ae/proposed/)
 - [Iframe element has non-empty accessible name](/standards-guidelines/act/rules/cae760/proposed/)
 - [Form field label is descriptive](/standards-guidelines/act/rules/cc0f0a/proposed/)
 - [Element with lang attribute has valid language tag](/standards-guidelines/act/rules/de46e4/proposed/)
-- [Element with lang attribute has valid language tag](/standards-guidelines/act/rules/de46e4/proposed/)
-- [Form field has non-empty accessible name](/standards-guidelines/act/rules/e086e5/proposed/)
 - [Form field has non-empty accessible name](/standards-guidelines/act/rules/e086e5/proposed/)
 - [Audio element content has text alternative](/standards-guidelines/act/rules/e7aa44/proposed/)
 - [Video element visual content has description track](/standards-guidelines/act/rules/f196ce/proposed/)
@@ -178,27 +142,22 @@ The <dfn id="attribute-value:idl">attribute value</dfn> of an [IDL attribute][] 
 - [HTML element language subtag matches language](/standards-guidelines/act/rules/off6ek/proposed/)
 - [HTML page language subtag matches default language](/standards-guidelines/act/rules/ucwvc8/proposed/)
 
-## Audio output
-{#audio-output}
+## Audio output {#audio-output}
 
 This [test aspect](https://www.w3.org/TR/act-rules-format/#input-aspects) includes all auditory data output from the web page into an audio channel.
 
 ### Used in rules
 - [Video element auditory content has captions](/standards-guidelines/act/rules/f51b46/proposed/)
 
-## Background Colors Of Text
-{#background-colors-of-text}
+## Background Colors Of Text {#background-colors-of-text}
 
 The colors of all pixels, excluding the [foreground colors](#foreground-colors-of-text) pixels, in the [bounding box](#bounding-box-around-text) around a [visible](#visible) character in a [text node](https://dom.spec.whatwg.org/#text).
 
 ### Used in rules
 - [Text has enhanced contrast](/standards-guidelines/act/rules/09o5cg/proposed/)
-- [Text has enhanced contrast](/standards-guidelines/act/rules/09o5cg/proposed/)
-- [Text has minimum contrast](/standards-guidelines/act/rules/afw4f7/proposed/)
 - [Text has minimum contrast](/standards-guidelines/act/rules/afw4f7/proposed/)
 
-## Blocked event
-{#blocked-event}
+## Blocked event {#blocked-event}
 
 A _blocked event_ makes no [changes to the content][changes in content] of the [web page][].
 
@@ -209,8 +168,7 @@ A _blocked event_ makes no [changes to the content][changes in content] of the [
 - [Device motion based changes to the content can be disabled](/standards-guidelines/act/rules/c249d5/proposed/)
 - [No keyboard shortcut uses only printable characters](/standards-guidelines/act/rules/ffbc54/proposed/)
 
-## Block of content
-{#block-of-content}
+## Block of content {#block-of-content}
 
 A _block of content_ in an [HTML web page][] is a set of nodes from that page for which all the following are true:
 
@@ -233,8 +191,7 @@ This definition assumes that the rendering order of nodes on a page does not gre
 - [Bypass Blocks of Repeated Content](/standards-guidelines/act/rules/cf77f2/proposed/)
 - [Document has an instrument to move focus to non-repeated content](/standards-guidelines/act/rules/ye5d6e/proposed/)
 
-## Block of repeated content
-{#block-of-repeated-content}
+## Block of repeated content {#block-of-repeated-content}
 
 A [block of content][] B, inside an [HTML web page][] P, is a _block of repeated content_ if both the following are true:
 
@@ -264,19 +221,15 @@ The blocks of repeated content are not uniquely defined. For example `<div><span
 - [Bypass Blocks of Repeated Content](/standards-guidelines/act/rules/cf77f2/proposed/)
 - [Document has an instrument to move focus to non-repeated content](/standards-guidelines/act/rules/ye5d6e/proposed/)
 
-## Bounding Box around Text
-{#bounding-box-around-text}
+## Bounding Box around Text {#bounding-box-around-text}
 
 The smallest rectangle that encloses all the [visible](#visible) pixels of a character (including anti-aliased pixels), plus one pixel on every edge (top, right, bottom, left), aligned on the horizontal and vertical axis.
 
 ### Used in rules
 - [Text has enhanced contrast](/standards-guidelines/act/rules/09o5cg/proposed/)
-- [Text has enhanced contrast](/standards-guidelines/act/rules/09o5cg/proposed/)
-- [Text has minimum contrast](/standards-guidelines/act/rules/afw4f7/proposed/)
 - [Text has minimum contrast](/standards-guidelines/act/rules/afw4f7/proposed/)
 
-## Changes in content
-{#changes-in-content}
+## Changes in content {#changes-in-content}
 
 A _[event][] originated change in the content_ of a [web page][] occurs when, by comparing the [web page][] before and 1 minute after the event [firing][], at least one of the following occurs:
 
@@ -303,8 +256,7 @@ A _[event][] originated change in the content_ of a [web page][] occurs when, by
 - [Device motion based changes to the content can be disabled](/standards-guidelines/act/rules/c249d5/proposed/)
 - [No keyboard shortcut uses only printable characters](/standards-guidelines/act/rules/ffbc54/proposed/)
 
-## Clearly labeled location
-{#clearly-labeled-location}
+## Clearly labeled location {#clearly-labeled-location}
 
 Secondary information and alternative controls of functionality are often not displayed together with primary information or functionality. For example, an option to change a web page to dark mode may be placed on an options page instead of being available on every page and page state of a website. Another example is a maps application, where, instead of using GPS, an option is available in a dropdown menu to set the current location of the device. Such content should be placed in a clearly labeled location.
 
@@ -329,18 +281,15 @@ A [web page][] changes state when the [document's body][body] changes without a 
 - [Text content that changes automatically can be paused, stopped or hidden](/standards-guidelines/act/rules/efbfc7/proposed/)
 - [No keyboard shortcut uses only printable characters](/standards-guidelines/act/rules/ffbc54/proposed/)
 
-## Correct autocomplete field
-{#correct-autocomplete-field}
+## Correct autocomplete field {#correct-autocomplete-field}
 
 Any field name listed in the autocomplete fields table from the HTML 5.2 specification:
 [https://html.spec.whatwg.org/#autofill-field](https://html.spec.whatwg.org/#autofill-field)
 
 ### Used in rules
 - [Autocomplete attribute has valid value](/standards-guidelines/act/rules/73f2c2/proposed/)
-- [Autocomplete attribute has valid value](/standards-guidelines/act/rules/73f2c2/proposed/)
 
-## Default Page Language
-{#default-page-language}
+## Default Page Language {#default-page-language}
 
 The _default language of a [web page][]_ is the [most common language][] of its [top-level browsing context](https://html.spec.whatwg.org/#top-level-browsing-context) [document][], if it is unique. If this [document][] has either no or several [most common languages][most common language], then it has no default language.
 
@@ -354,8 +303,7 @@ For more details, see [examples of default language][].
 ### Used in rules
 - [HTML page language subtag matches default language](/standards-guidelines/act/rules/ucwvc8/proposed/)
 
-## Disabled Element
-{#disabled-element}
+## Disabled Element {#disabled-element}
 
 An element is _disabled_ when it has been rendered [inoperable][] in one or more of the following ways:
 
@@ -376,14 +324,10 @@ This definition assumes that when the `aria-disabled` attribute is specified on 
 
 ### Used in rules
 - [Text has enhanced contrast](/standards-guidelines/act/rules/09o5cg/proposed/)
-- [Text has enhanced contrast](/standards-guidelines/act/rules/09o5cg/proposed/)
 - [Autocomplete attribute has valid value](/standards-guidelines/act/rules/73f2c2/proposed/)
-- [Autocomplete attribute has valid value](/standards-guidelines/act/rules/73f2c2/proposed/)
-- [Text has minimum contrast](/standards-guidelines/act/rules/afw4f7/proposed/)
 - [Text has minimum contrast](/standards-guidelines/act/rules/afw4f7/proposed/)
 
-## Embedded Image
-{#embedded-image}
+## Embedded Image {#embedded-image}
 
 An element presents an _embedded image_ when any of the following is true:
 
@@ -403,10 +347,8 @@ An element presents an _embedded image_ when any of the following is true:
 
 ### Used in rules
 - [HTML images contain no text](/standards-guidelines/act/rules/0va7u6/proposed/)
-- [HTML images contain no text](/standards-guidelines/act/rules/0va7u6/proposed/)
 
-## Equivalent resource
-{#equivalent-resource}
+## Equivalent resource {#equivalent-resource}
 
 Non-identical resources can still be _equivalent resources_ by equally complying to the expectation formed by the user when navigating to them, thus serving an equivalent purpose. This would usually involve that the advertised key content is the same.
 
@@ -433,8 +375,7 @@ If all resources cover the user's expectations equally well, the resources are c
 - [Links with identical accessible names and same context serve equivalent purpose](/standards-guidelines/act/rules/fd3a94/proposed/)
 - [Document has an instrument to move focus to non-repeated content](/standards-guidelines/act/rules/ye5d6e/proposed/)
 
-## Essential text presentation
-{#essential-text-presentation}
+## Essential text presentation {#essential-text-presentation}
 
 The presentation of text is considered essential in one of more of the following scenarios:
 
@@ -456,10 +397,8 @@ Examples of text for which the presentation is essential include:
 
 ### Used in rules
 - [HTML images contain no text](/standards-guidelines/act/rules/0va7u6/proposed/)
-- [HTML images contain no text](/standards-guidelines/act/rules/0va7u6/proposed/)
 
-## Explicit Semantic Role
-{#explicit-role}
+## Explicit Semantic Role {#explicit-role}
 
 The _explicit semantic role_ of an element is determined by its [role attribute][] (if any).
 
@@ -478,37 +417,24 @@ Some browsers and assistive technologies treat the tokens of the `role` attribut
 ### Used in rules
 - [Document has heading for non-repeated content](/standards-guidelines/act/rules/047fe0/proposed/)
 - [Text has enhanced contrast](/standards-guidelines/act/rules/09o5cg/proposed/)
-- [Text has enhanced contrast](/standards-guidelines/act/rules/09o5cg/proposed/)
-- [Image has non-empty accessible name](/standards-guidelines/act/rules/23a2a8/proposed/)
 - [Image has non-empty accessible name](/standards-guidelines/act/rules/23a2a8/proposed/)
 - [Visible label is part of accessible name](/standards-guidelines/act/rules/2ee8b8/proposed/)
 - [Summary element has non-empty accessible name](/standards-guidelines/act/rules/2t702h/proposed/)
-- [Summary element has non-empty accessible name](/standards-guidelines/act/rules/2t702h/proposed/)
-- [Element with presentational children has no focusable content](/standards-guidelines/act/rules/307n5z/proposed/)
 - [Element with presentational children has no focusable content](/standards-guidelines/act/rules/307n5z/proposed/)
 - [Error message describes invalid form field value](/standards-guidelines/act/rules/36b590/proposed/)
 - [Block of repeated content is collapsible](/standards-guidelines/act/rules/3e12e1/proposed/)
 - [Element marked as decorative is not exposed](/standards-guidelines/act/rules/46ca7f/proposed/)
-- [Element marked as decorative is not exposed](/standards-guidelines/act/rules/46ca7f/proposed/)
-- [Element with role attribute has required states and properties](/standards-guidelines/act/rules/4e8ab6/proposed/)
 - [Element with role attribute has required states and properties](/standards-guidelines/act/rules/4e8ab6/proposed/)
 - [ARIA state or property is permitted](/standards-guidelines/act/rules/5c01ea/proposed/)
 - [Link in context is descriptive](/standards-guidelines/act/rules/5effbb/proposed/)
 - [Role attribute has valid value](/standards-guidelines/act/rules/674b10/proposed/)
-- [Role attribute has valid value](/standards-guidelines/act/rules/674b10/proposed/)
-- [Autocomplete attribute has valid value](/standards-guidelines/act/rules/73f2c2/proposed/)
 - [Autocomplete attribute has valid value](/standards-guidelines/act/rules/73f2c2/proposed/)
 - [Device motion based changes to the content can also be created from the user interface](/standards-guidelines/act/rules/7677a9/proposed/)
 - [SVG element with explicit role has non-empty accessible name](/standards-guidelines/act/rules/7d6734/proposed/)
-- [SVG element with explicit role has non-empty accessible name](/standards-guidelines/act/rules/7d6734/proposed/)
 - [Object element rendering non-text content has non-empty accessible name](/standards-guidelines/act/rules/8fc3b6/proposed/)
-- [Object element rendering non-text content has non-empty accessible name](/standards-guidelines/act/rules/8fc3b6/proposed/)
-- [Button has non-empty accessible name](/standards-guidelines/act/rules/97a4e1/proposed/)
 - [Button has non-empty accessible name](/standards-guidelines/act/rules/97a4e1/proposed/)
 - [Image filename is accessible name for image](/standards-guidelines/act/rules/9eb3f6/proposed/)
 - [Headers attribute specified on a cell refers to cells in the same table element](/standards-guidelines/act/rules/a25f45/proposed/)
-- [Headers attribute specified on a cell refers to cells in the same table element](/standards-guidelines/act/rules/a25f45/proposed/)
-- [Text has minimum contrast](/standards-guidelines/act/rules/afw4f7/proposed/)
 - [Text has minimum contrast](/standards-guidelines/act/rules/afw4f7/proposed/)
 - [Link is descriptive](/standards-guidelines/act/rules/aizyf1/proposed/)
 - [Links with identical accessible names have equivalent purpose](/standards-guidelines/act/rules/b20e66/proposed/)
@@ -517,12 +443,10 @@ Some browsers and assistive technologies treat the tokens of the `role` attribut
 - [ARIA required owned elements](/standards-guidelines/act/rules/bc4a75/proposed/)
 - [Device motion based changes to the content can be disabled](/standards-guidelines/act/rules/c249d5/proposed/)
 - [Link has non-empty accessible name](/standards-guidelines/act/rules/c487ae/proposed/)
-- [Link has non-empty accessible name](/standards-guidelines/act/rules/c487ae/proposed/)
 - [Iframe element has non-empty accessible name](/standards-guidelines/act/rules/cae760/proposed/)
 - [Form field label is descriptive](/standards-guidelines/act/rules/cc0f0a/proposed/)
 - [Bypass Blocks of Repeated Content](/standards-guidelines/act/rules/cf77f2/proposed/)
 - [Table header cell has assigned cells](/standards-guidelines/act/rules/d0f69e/proposed/)
-- [Form field has non-empty accessible name](/standards-guidelines/act/rules/e086e5/proposed/)
 - [Form field has non-empty accessible name](/standards-guidelines/act/rules/e086e5/proposed/)
 - [Image not in the accessibility tree is decorative](/standards-guidelines/act/rules/e88epe/proposed/)
 - [Text content that changes automatically can be paused, stopped or hidden](/standards-guidelines/act/rules/efbfc7/proposed/)
@@ -533,21 +457,17 @@ Some browsers and assistive technologies treat the tokens of the `role` attribut
 - [ARIA required ID references exist](/standards-guidelines/act/rules/in6db8/proposed/)
 - [ARIA global properties not used where prohibited](/standards-guidelines/act/rules/kb1m8s/proposed/)
 - [Menuitem has non-empty accessible name](/standards-guidelines/act/rules/m6b1q3/proposed/)
-- [Menuitem has non-empty accessible name](/standards-guidelines/act/rules/m6b1q3/proposed/)
-- [Image accessible name is descriptive](/standards-guidelines/act/rules/qt1vmo/proposed/)
 - [Image accessible name is descriptive](/standards-guidelines/act/rules/qt1vmo/proposed/)
 - [Document has an instrument to move focus to non-repeated content](/standards-guidelines/act/rules/ye5d6e/proposed/)
 
-## Filename
-{#filename}
+## Filename {#filename}
 
 A _filename_ is a text string that identifies an electronically stored file. In a URL it is located at the end of the path, after the last slash and before any query strings. For example the `src` attribute specifies a URL path of `src="/foo/bar.jpg?baz "` which contains the filename `bar.jpg`.
 
 ### Used in rules
 - [Image filename is accessible name for image](/standards-guidelines/act/rules/9eb3f6/proposed/)
 
-## Focusable
-{#focusable}
+## Focusable {#focusable}
 
 An element is _focusable_ if one or both of the following are true:
 
@@ -569,51 +489,36 @@ Notes:
 ### Used in rules
 - [Document has heading for non-repeated content](/standards-guidelines/act/rules/047fe0/proposed/)
 - [Text has enhanced contrast](/standards-guidelines/act/rules/09o5cg/proposed/)
-- [Text has enhanced contrast](/standards-guidelines/act/rules/09o5cg/proposed/)
 - [Audio and visuals of video element have transcript](/standards-guidelines/act/rules/1a02b0/proposed/)
-- [Image has non-empty accessible name](/standards-guidelines/act/rules/23a2a8/proposed/)
 - [Image has non-empty accessible name](/standards-guidelines/act/rules/23a2a8/proposed/)
 - [Audio element content has transcript](/standards-guidelines/act/rules/2eb176/proposed/)
 - [Visible label is part of accessible name](/standards-guidelines/act/rules/2ee8b8/proposed/)
 - [Summary element has non-empty accessible name](/standards-guidelines/act/rules/2t702h/proposed/)
-- [Summary element has non-empty accessible name](/standards-guidelines/act/rules/2t702h/proposed/)
-- [Element with presentational children has no focusable content](/standards-guidelines/act/rules/307n5z/proposed/)
 - [Element with presentational children has no focusable content](/standards-guidelines/act/rules/307n5z/proposed/)
 - [Error message describes invalid form field value](/standards-guidelines/act/rules/36b590/proposed/)
 - [Block of repeated content is collapsible](/standards-guidelines/act/rules/3e12e1/proposed/)
 - [Id attribute value is unique](/standards-guidelines/act/rules/3ea0c8/proposed/)
 - [Element marked as decorative is not exposed](/standards-guidelines/act/rules/46ca7f/proposed/)
-- [Element marked as decorative is not exposed](/standards-guidelines/act/rules/46ca7f/proposed/)
 - [Iframe elements with identical accessible names have equivalent purpose](/standards-guidelines/act/rules/4b1c6c/proposed/)
 - [Audio or video element that plays automatically has a control mechanism](/standards-guidelines/act/rules/4c31df/proposed/)
 - [Element with role attribute has required states and properties](/standards-guidelines/act/rules/4e8ab6/proposed/)
-- [Element with role attribute has required states and properties](/standards-guidelines/act/rules/4e8ab6/proposed/)
-- [Image button has non-empty accessible name](/standards-guidelines/act/rules/59796f/proposed/)
 - [Image button has non-empty accessible name](/standards-guidelines/act/rules/59796f/proposed/)
 - [ARIA state or property is permitted](/standards-guidelines/act/rules/5c01ea/proposed/)
 - [Link in context is descriptive](/standards-guidelines/act/rules/5effbb/proposed/)
 - [Role attribute has valid value](/standards-guidelines/act/rules/674b10/proposed/)
-- [Role attribute has valid value](/standards-guidelines/act/rules/674b10/proposed/)
 - [Element with aria-hidden has no content in sequential focus navigation](/standards-guidelines/act/rules/6cfa84/proposed/)
-- [Element with aria-hidden has no content in sequential focus navigation](/standards-guidelines/act/rules/6cfa84/proposed/)
-- [Autocomplete attribute has valid value](/standards-guidelines/act/rules/73f2c2/proposed/)
 - [Autocomplete attribute has valid value](/standards-guidelines/act/rules/73f2c2/proposed/)
 - [Device motion based changes to the content can also be created from the user interface](/standards-guidelines/act/rules/7677a9/proposed/)
 - [SVG element with explicit role has non-empty accessible name](/standards-guidelines/act/rules/7d6734/proposed/)
-- [SVG element with explicit role has non-empty accessible name](/standards-guidelines/act/rules/7d6734/proposed/)
 - [Focusable element has no keyboard trap](/standards-guidelines/act/rules/80af7b/proposed/)
 - [Object element rendering non-text content has non-empty accessible name](/standards-guidelines/act/rules/8fc3b6/proposed/)
-- [Object element rendering non-text content has non-empty accessible name](/standards-guidelines/act/rules/8fc3b6/proposed/)
-- [Button has non-empty accessible name](/standards-guidelines/act/rules/97a4e1/proposed/)
 - [Button has non-empty accessible name](/standards-guidelines/act/rules/97a4e1/proposed/)
 - [Content has alternative for visual reference](/standards-guidelines/act/rules/9bd38c/proposed/)
 - [Image filename is accessible name for image](/standards-guidelines/act/rules/9eb3f6/proposed/)
 - [Focusable element has no keyboard trap via standard navigation](/standards-guidelines/act/rules/a1b64e/proposed/)
 - [Headers attribute specified on a cell refers to cells in the same table element](/standards-guidelines/act/rules/a25f45/proposed/)
-- [Headers attribute specified on a cell refers to cells in the same table element](/standards-guidelines/act/rules/a25f45/proposed/)
 - [Video element content is media alternative for text](/standards-guidelines/act/rules/ab4d13/proposed/)
 - [Audio element content is media alternative for text](/standards-guidelines/act/rules/afb423/proposed/)
-- [Text has minimum contrast](/standards-guidelines/act/rules/afw4f7/proposed/)
 - [Text has minimum contrast](/standards-guidelines/act/rules/afw4f7/proposed/)
 - [Link is descriptive](/standards-guidelines/act/rules/aizyf1/proposed/)
 - [Links with identical accessible names have equivalent purpose](/standards-guidelines/act/rules/b20e66/proposed/)
@@ -622,14 +527,11 @@ Notes:
 - [ARIA required owned elements](/standards-guidelines/act/rules/bc4a75/proposed/)
 - [Device motion based changes to the content can be disabled](/standards-guidelines/act/rules/c249d5/proposed/)
 - [Link has non-empty accessible name](/standards-guidelines/act/rules/c487ae/proposed/)
-- [Link has non-empty accessible name](/standards-guidelines/act/rules/c487ae/proposed/)
 - [Iframe element has non-empty accessible name](/standards-guidelines/act/rules/cae760/proposed/)
 - [Form field label is descriptive](/standards-guidelines/act/rules/cc0f0a/proposed/)
 - [Bypass Blocks of Repeated Content](/standards-guidelines/act/rules/cf77f2/proposed/)
 - [Table header cell has assigned cells](/standards-guidelines/act/rules/d0f69e/proposed/)
 - [Element with lang attribute has valid language tag](/standards-guidelines/act/rules/de46e4/proposed/)
-- [Element with lang attribute has valid language tag](/standards-guidelines/act/rules/de46e4/proposed/)
-- [Form field has non-empty accessible name](/standards-guidelines/act/rules/e086e5/proposed/)
 - [Form field has non-empty accessible name](/standards-guidelines/act/rules/e086e5/proposed/)
 - [Audio element content has text alternative](/standards-guidelines/act/rules/e7aa44/proposed/)
 - [Image not in the accessibility tree is decorative](/standards-guidelines/act/rules/e88epe/proposed/)
@@ -644,17 +546,13 @@ Notes:
 - [ARIA required ID references exist](/standards-guidelines/act/rules/in6db8/proposed/)
 - [ARIA global properties not used where prohibited](/standards-guidelines/act/rules/kb1m8s/proposed/)
 - [Menuitem has non-empty accessible name](/standards-guidelines/act/rules/m6b1q3/proposed/)
-- [Menuitem has non-empty accessible name](/standards-guidelines/act/rules/m6b1q3/proposed/)
 - [HTML element language subtag matches language](/standards-guidelines/act/rules/off6ek/proposed/)
 - [Element in sequential focus order has visible focus](/standards-guidelines/act/rules/oj04fd/proposed/)
-- [Element in sequential focus order has visible focus](/standards-guidelines/act/rules/oj04fd/proposed/)
-- [Image accessible name is descriptive](/standards-guidelines/act/rules/qt1vmo/proposed/)
 - [Image accessible name is descriptive](/standards-guidelines/act/rules/qt1vmo/proposed/)
 - [HTML page language subtag matches default language](/standards-guidelines/act/rules/ucwvc8/proposed/)
 - [Document has an instrument to move focus to non-repeated content](/standards-guidelines/act/rules/ye5d6e/proposed/)
 
-## Focused
-{#focused}
+## Focused {#focused}
 
 An element is said to be _focused_ when the element matches the [`:focus` pseudo-class](https://drafts.csswg.org/selectors-4/#focus-pseudo) uninterruptedly for a period of 1 second after a user stopped interacting with the page.
 
@@ -662,10 +560,8 @@ The 1 second time span is an arbitrary limit which is not included in WCAG. Give
 
 ### Used in rules
 - [Element in sequential focus order has visible focus](/standards-guidelines/act/rules/oj04fd/proposed/)
-- [Element in sequential focus order has visible focus](/standards-guidelines/act/rules/oj04fd/proposed/)
 
-## Foreground Colors Of Text
-{#foreground-colors-of-text}
+## Foreground Colors Of Text {#foreground-colors-of-text}
 
 The colors of all the pixels of a [visible](#visible) character in a [text node](https://dom.spec.whatwg.org/#text) that change color when the CSS `color` property is changed. This includes anti-aliased pixels.
 
@@ -673,12 +569,9 @@ The colors of all the pixels of a [visible](#visible) character in a [text node]
 
 ### Used in rules
 - [Text has enhanced contrast](/standards-guidelines/act/rules/09o5cg/proposed/)
-- [Text has enhanced contrast](/standards-guidelines/act/rules/09o5cg/proposed/)
-- [Text has minimum contrast](/standards-guidelines/act/rules/afw4f7/proposed/)
 - [Text has minimum contrast](/standards-guidelines/act/rules/afw4f7/proposed/)
 
-## Form Field Error Indicator
-{#form-field-error-indicator}
+## Form Field Error Indicator {#form-field-error-indicator}
 
 Any [text][], or [non-text content][], or an element that has [presentation][] indicating that an error was identified which appears to be related to some user input into, or the lack of user input into some element. These could be different types of errors, for example:
 
@@ -697,8 +590,7 @@ Any [text][], or [non-text content][], or an element that has [presentation][] i
 ### Used in rules
 - [Error message describes invalid form field value](/standards-guidelines/act/rules/36b590/proposed/)
 
-## Highest Possible Contrast
-{#highest-possible-contrast}
+## Highest Possible Contrast {#highest-possible-contrast}
 
 The highest value of the [contrast ratios][contrast ratio] between two sets of colors (A and B). That is, the highest [contrast ratio][] between either the darkest color in A and the brightest color in B, or the brightest color in A and the darkest color in B.
 
@@ -706,12 +598,9 @@ The highest value of the [contrast ratios][contrast ratio] between two sets of c
 
 ### Used in rules
 - [Text has enhanced contrast](/standards-guidelines/act/rules/09o5cg/proposed/)
-- [Text has enhanced contrast](/standards-guidelines/act/rules/09o5cg/proposed/)
-- [Text has minimum contrast](/standards-guidelines/act/rules/afw4f7/proposed/)
 - [Text has minimum contrast](/standards-guidelines/act/rules/afw4f7/proposed/)
 
-## Horizontally Clipped by Overflow
-{#horizontally-clipped-by-overflow}
+## Horizontally Clipped by Overflow {#horizontally-clipped-by-overflow}
 
 A [node][] is <dfn>Horizontally Clipped by Overflow</dfn> if it has an [ancestor][] in the [flat tree][] with a [computed][] [overflow-x][] of `hidden` or `clip`, where changing the [overflow-x][] of all such [ancestors][ancestor] to `visible` would cause more of the [node][] to become [visible][].
 
@@ -735,8 +624,7 @@ This `img` element has an [ancestor][] `div` element with an `overflow-x` of `hi
 ### Used in rules
 - [Zoomed text node is not clipped with CSS overflow](/standards-guidelines/act/rules/59br37/proposed/)
 
-## Implicit Semantic Role
-{#implicit-role}
+## Implicit Semantic Role {#implicit-role}
 
 The _implicit semantic role_ of an element is a pre-defined value given by the host language which depends on the element and its ancestors.
 
@@ -749,31 +637,21 @@ Implicit roles for HTML and SVG, are documented in the [HTML accessibility API m
 ### Used in rules
 - [Document has heading for non-repeated content](/standards-guidelines/act/rules/047fe0/proposed/)
 - [Text has enhanced contrast](/standards-guidelines/act/rules/09o5cg/proposed/)
-- [Text has enhanced contrast](/standards-guidelines/act/rules/09o5cg/proposed/)
-- [Image has non-empty accessible name](/standards-guidelines/act/rules/23a2a8/proposed/)
 - [Image has non-empty accessible name](/standards-guidelines/act/rules/23a2a8/proposed/)
 - [Visible label is part of accessible name](/standards-guidelines/act/rules/2ee8b8/proposed/)
-- [Element with presentational children has no focusable content](/standards-guidelines/act/rules/307n5z/proposed/)
 - [Element with presentational children has no focusable content](/standards-guidelines/act/rules/307n5z/proposed/)
 - [Error message describes invalid form field value](/standards-guidelines/act/rules/36b590/proposed/)
 - [Block of repeated content is collapsible](/standards-guidelines/act/rules/3e12e1/proposed/)
 - [Element marked as decorative is not exposed](/standards-guidelines/act/rules/46ca7f/proposed/)
-- [Element marked as decorative is not exposed](/standards-guidelines/act/rules/46ca7f/proposed/)
-- [Element with role attribute has required states and properties](/standards-guidelines/act/rules/4e8ab6/proposed/)
 - [Element with role attribute has required states and properties](/standards-guidelines/act/rules/4e8ab6/proposed/)
 - [ARIA state or property is permitted](/standards-guidelines/act/rules/5c01ea/proposed/)
 - [Link in context is descriptive](/standards-guidelines/act/rules/5effbb/proposed/)
 - [Role attribute has valid value](/standards-guidelines/act/rules/674b10/proposed/)
-- [Role attribute has valid value](/standards-guidelines/act/rules/674b10/proposed/)
-- [Autocomplete attribute has valid value](/standards-guidelines/act/rules/73f2c2/proposed/)
 - [Autocomplete attribute has valid value](/standards-guidelines/act/rules/73f2c2/proposed/)
 - [Device motion based changes to the content can also be created from the user interface](/standards-guidelines/act/rules/7677a9/proposed/)
 - [Button has non-empty accessible name](/standards-guidelines/act/rules/97a4e1/proposed/)
-- [Button has non-empty accessible name](/standards-guidelines/act/rules/97a4e1/proposed/)
 - [Image filename is accessible name for image](/standards-guidelines/act/rules/9eb3f6/proposed/)
 - [Headers attribute specified on a cell refers to cells in the same table element](/standards-guidelines/act/rules/a25f45/proposed/)
-- [Headers attribute specified on a cell refers to cells in the same table element](/standards-guidelines/act/rules/a25f45/proposed/)
-- [Text has minimum contrast](/standards-guidelines/act/rules/afw4f7/proposed/)
 - [Text has minimum contrast](/standards-guidelines/act/rules/afw4f7/proposed/)
 - [Link is descriptive](/standards-guidelines/act/rules/aizyf1/proposed/)
 - [Links with identical accessible names have equivalent purpose](/standards-guidelines/act/rules/b20e66/proposed/)
@@ -782,11 +660,9 @@ Implicit roles for HTML and SVG, are documented in the [HTML accessibility API m
 - [ARIA required owned elements](/standards-guidelines/act/rules/bc4a75/proposed/)
 - [Device motion based changes to the content can be disabled](/standards-guidelines/act/rules/c249d5/proposed/)
 - [Link has non-empty accessible name](/standards-guidelines/act/rules/c487ae/proposed/)
-- [Link has non-empty accessible name](/standards-guidelines/act/rules/c487ae/proposed/)
 - [Form field label is descriptive](/standards-guidelines/act/rules/cc0f0a/proposed/)
 - [Bypass Blocks of Repeated Content](/standards-guidelines/act/rules/cf77f2/proposed/)
 - [Table header cell has assigned cells](/standards-guidelines/act/rules/d0f69e/proposed/)
-- [Form field has non-empty accessible name](/standards-guidelines/act/rules/e086e5/proposed/)
 - [Form field has non-empty accessible name](/standards-guidelines/act/rules/e086e5/proposed/)
 - [Image not in the accessibility tree is decorative](/standards-guidelines/act/rules/e88epe/proposed/)
 - [Text content that changes automatically can be paused, stopped or hidden](/standards-guidelines/act/rules/efbfc7/proposed/)
@@ -797,11 +673,9 @@ Implicit roles for HTML and SVG, are documented in the [HTML accessibility API m
 - [ARIA required ID references exist](/standards-guidelines/act/rules/in6db8/proposed/)
 - [ARIA global properties not used where prohibited](/standards-guidelines/act/rules/kb1m8s/proposed/)
 - [Menuitem has non-empty accessible name](/standards-guidelines/act/rules/m6b1q3/proposed/)
-- [Menuitem has non-empty accessible name](/standards-guidelines/act/rules/m6b1q3/proposed/)
 - [Document has an instrument to move focus to non-repeated content](/standards-guidelines/act/rules/ye5d6e/proposed/)
 
-## Included in the accessibility tree
-{#included-in-the-accessibility-tree}
+## Included in the accessibility tree {#included-in-the-accessibility-tree}
 
 Elements included in the accessibility tree of platform specific accessibility APIs are exposed to assistive technologies. This allows users of assistive technology to access the elements in a way that meets the requirements of the individual user.
 
@@ -816,49 +690,34 @@ For more details, see [examples of included in the accessibility tree][].
 ### Used in rules
 - [Document has heading for non-repeated content](/standards-guidelines/act/rules/047fe0/proposed/)
 - [Text has enhanced contrast](/standards-guidelines/act/rules/09o5cg/proposed/)
-- [Text has enhanced contrast](/standards-guidelines/act/rules/09o5cg/proposed/)
 - [Audio and visuals of video element have transcript](/standards-guidelines/act/rules/1a02b0/proposed/)
-- [Image has non-empty accessible name](/standards-guidelines/act/rules/23a2a8/proposed/)
 - [Image has non-empty accessible name](/standards-guidelines/act/rules/23a2a8/proposed/)
 - [Audio element content has transcript](/standards-guidelines/act/rules/2eb176/proposed/)
 - [Visible label is part of accessible name](/standards-guidelines/act/rules/2ee8b8/proposed/)
 - [Summary element has non-empty accessible name](/standards-guidelines/act/rules/2t702h/proposed/)
-- [Summary element has non-empty accessible name](/standards-guidelines/act/rules/2t702h/proposed/)
-- [Element with presentational children has no focusable content](/standards-guidelines/act/rules/307n5z/proposed/)
 - [Element with presentational children has no focusable content](/standards-guidelines/act/rules/307n5z/proposed/)
 - [Error message describes invalid form field value](/standards-guidelines/act/rules/36b590/proposed/)
 - [Block of repeated content is collapsible](/standards-guidelines/act/rules/3e12e1/proposed/)
 - [Id attribute value is unique](/standards-guidelines/act/rules/3ea0c8/proposed/)
 - [Element marked as decorative is not exposed](/standards-guidelines/act/rules/46ca7f/proposed/)
-- [Element marked as decorative is not exposed](/standards-guidelines/act/rules/46ca7f/proposed/)
 - [Iframe elements with identical accessible names have equivalent purpose](/standards-guidelines/act/rules/4b1c6c/proposed/)
 - [Audio or video element that plays automatically has a control mechanism](/standards-guidelines/act/rules/4c31df/proposed/)
 - [Element with role attribute has required states and properties](/standards-guidelines/act/rules/4e8ab6/proposed/)
-- [Element with role attribute has required states and properties](/standards-guidelines/act/rules/4e8ab6/proposed/)
-- [Image button has non-empty accessible name](/standards-guidelines/act/rules/59796f/proposed/)
 - [Image button has non-empty accessible name](/standards-guidelines/act/rules/59796f/proposed/)
 - [ARIA state or property is permitted](/standards-guidelines/act/rules/5c01ea/proposed/)
 - [Link in context is descriptive](/standards-guidelines/act/rules/5effbb/proposed/)
 - [Role attribute has valid value](/standards-guidelines/act/rules/674b10/proposed/)
-- [Role attribute has valid value](/standards-guidelines/act/rules/674b10/proposed/)
 - [Element with aria-hidden has no content in sequential focus navigation](/standards-guidelines/act/rules/6cfa84/proposed/)
-- [Element with aria-hidden has no content in sequential focus navigation](/standards-guidelines/act/rules/6cfa84/proposed/)
-- [Autocomplete attribute has valid value](/standards-guidelines/act/rules/73f2c2/proposed/)
 - [Autocomplete attribute has valid value](/standards-guidelines/act/rules/73f2c2/proposed/)
 - [Device motion based changes to the content can also be created from the user interface](/standards-guidelines/act/rules/7677a9/proposed/)
 - [SVG element with explicit role has non-empty accessible name](/standards-guidelines/act/rules/7d6734/proposed/)
-- [SVG element with explicit role has non-empty accessible name](/standards-guidelines/act/rules/7d6734/proposed/)
 - [Object element rendering non-text content has non-empty accessible name](/standards-guidelines/act/rules/8fc3b6/proposed/)
-- [Object element rendering non-text content has non-empty accessible name](/standards-guidelines/act/rules/8fc3b6/proposed/)
-- [Button has non-empty accessible name](/standards-guidelines/act/rules/97a4e1/proposed/)
 - [Button has non-empty accessible name](/standards-guidelines/act/rules/97a4e1/proposed/)
 - [Content has alternative for visual reference](/standards-guidelines/act/rules/9bd38c/proposed/)
 - [Image filename is accessible name for image](/standards-guidelines/act/rules/9eb3f6/proposed/)
 - [Headers attribute specified on a cell refers to cells in the same table element](/standards-guidelines/act/rules/a25f45/proposed/)
-- [Headers attribute specified on a cell refers to cells in the same table element](/standards-guidelines/act/rules/a25f45/proposed/)
 - [Video element content is media alternative for text](/standards-guidelines/act/rules/ab4d13/proposed/)
 - [Audio element content is media alternative for text](/standards-guidelines/act/rules/afb423/proposed/)
-- [Text has minimum contrast](/standards-guidelines/act/rules/afw4f7/proposed/)
 - [Text has minimum contrast](/standards-guidelines/act/rules/afw4f7/proposed/)
 - [Link is descriptive](/standards-guidelines/act/rules/aizyf1/proposed/)
 - [Links with identical accessible names have equivalent purpose](/standards-guidelines/act/rules/b20e66/proposed/)
@@ -867,14 +726,11 @@ For more details, see [examples of included in the accessibility tree][].
 - [ARIA required owned elements](/standards-guidelines/act/rules/bc4a75/proposed/)
 - [Device motion based changes to the content can be disabled](/standards-guidelines/act/rules/c249d5/proposed/)
 - [Link has non-empty accessible name](/standards-guidelines/act/rules/c487ae/proposed/)
-- [Link has non-empty accessible name](/standards-guidelines/act/rules/c487ae/proposed/)
 - [Iframe element has non-empty accessible name](/standards-guidelines/act/rules/cae760/proposed/)
 - [Form field label is descriptive](/standards-guidelines/act/rules/cc0f0a/proposed/)
 - [Bypass Blocks of Repeated Content](/standards-guidelines/act/rules/cf77f2/proposed/)
 - [Table header cell has assigned cells](/standards-guidelines/act/rules/d0f69e/proposed/)
 - [Element with lang attribute has valid language tag](/standards-guidelines/act/rules/de46e4/proposed/)
-- [Element with lang attribute has valid language tag](/standards-guidelines/act/rules/de46e4/proposed/)
-- [Form field has non-empty accessible name](/standards-guidelines/act/rules/e086e5/proposed/)
 - [Form field has non-empty accessible name](/standards-guidelines/act/rules/e086e5/proposed/)
 - [Audio element content has text alternative](/standards-guidelines/act/rules/e7aa44/proposed/)
 - [Image not in the accessibility tree is decorative](/standards-guidelines/act/rules/e88epe/proposed/)
@@ -889,15 +745,12 @@ For more details, see [examples of included in the accessibility tree][].
 - [ARIA required ID references exist](/standards-guidelines/act/rules/in6db8/proposed/)
 - [ARIA global properties not used where prohibited](/standards-guidelines/act/rules/kb1m8s/proposed/)
 - [Menuitem has non-empty accessible name](/standards-guidelines/act/rules/m6b1q3/proposed/)
-- [Menuitem has non-empty accessible name](/standards-guidelines/act/rules/m6b1q3/proposed/)
 - [HTML element language subtag matches language](/standards-guidelines/act/rules/off6ek/proposed/)
-- [Image accessible name is descriptive](/standards-guidelines/act/rules/qt1vmo/proposed/)
 - [Image accessible name is descriptive](/standards-guidelines/act/rules/qt1vmo/proposed/)
 - [HTML page language subtag matches default language](/standards-guidelines/act/rules/ucwvc8/proposed/)
 - [Document has an instrument to move focus to non-repeated content](/standards-guidelines/act/rules/ye5d6e/proposed/)
 
-## Inert
-{#inert}
+## Inert {#inert}
 
 An [HTML or SVG element][] is inert if:
 
@@ -913,10 +766,8 @@ An [HTML or SVG element][] is inert if:
 ### Used in rules
 - [Scrollable content can be reached with sequential focus navigation](/standards-guidelines/act/rules/0ssw9k/proposed/)
 - [Iframe with interactive elements is not excluded from tab-order](/standards-guidelines/act/rules/akn7bn/proposed/)
-- [Iframe with interactive elements is not excluded from tab-order](/standards-guidelines/act/rules/akn7bn/proposed/)
 
-## Inheriting Semantic Role
-{#inheriting-semantic}
+## Inheriting Semantic Role {#inheriting-semantic}
 
 An element with an _inheriting semantic role_ of X is any element with a non-[abstract][] [semantic role][] that inherits from X, or is the same as X.
 
@@ -929,21 +780,17 @@ An element with an _inheriting semantic role_ of X is any element with a non-[ab
 
 ### Used in rules
 - [Text has enhanced contrast](/standards-guidelines/act/rules/09o5cg/proposed/)
-- [Text has enhanced contrast](/standards-guidelines/act/rules/09o5cg/proposed/)
 - [Link in context is descriptive](/standards-guidelines/act/rules/5effbb/proposed/)
-- [Text has minimum contrast](/standards-guidelines/act/rules/afw4f7/proposed/)
 - [Text has minimum contrast](/standards-guidelines/act/rules/afw4f7/proposed/)
 - [Link is descriptive](/standards-guidelines/act/rules/aizyf1/proposed/)
 - [Links with identical accessible names have equivalent purpose](/standards-guidelines/act/rules/b20e66/proposed/)
 - [Document has a landmark with non-repeated content](/standards-guidelines/act/rules/b40fd1/proposed/)
 - [Link has non-empty accessible name](/standards-guidelines/act/rules/c487ae/proposed/)
-- [Link has non-empty accessible name](/standards-guidelines/act/rules/c487ae/proposed/)
 - [Table header cell has assigned cells](/standards-guidelines/act/rules/d0f69e/proposed/)
 - [Links with identical accessible names and same context serve equivalent purpose](/standards-guidelines/act/rules/fd3a94/proposed/)
 - [No keyboard shortcut uses only printable characters](/standards-guidelines/act/rules/ffbc54/proposed/)
 
-## Insignificant
-{#insignificant}
+## Insignificant {#insignificant}
 
 Content that is neither [purely decorative][], nor required for understanding the purpose of certain pieces of information or functionality. Insignificant content is often used to provide context.
 
@@ -953,10 +800,8 @@ Content that is neither [purely decorative][], nor required for understanding th
 
 ### Used in rules
 - [HTML images contain no text](/standards-guidelines/act/rules/0va7u6/proposed/)
-- [HTML images contain no text](/standards-guidelines/act/rules/0va7u6/proposed/)
 
-## Instrument to achieve an objective
-{#instrument-to-achieve-an-objective}
+## Instrument to achieve an objective {#instrument-to-achieve-an-objective}
 
 An [HTML element][] that when [activated][] allows an end-user to achieve an objective.
 
@@ -988,8 +833,7 @@ This definition is a more restrictive version of WCAG's definition of [mechanism
 - [No keyboard shortcut uses only printable characters](/standards-guidelines/act/rules/ffbc54/proposed/)
 - [Document has an instrument to move focus to non-repeated content](/standards-guidelines/act/rules/ye5d6e/proposed/)
 
-## Just before a node
-{#just-before}
+## Just before a node {#just-before}
 
 A node N is _just before_ a node of [perceivable content][] P if one of the following is true:
 
@@ -1006,8 +850,7 @@ Several nodes may be just before a given node, especially if there are several n
 - [Bypass Blocks of Repeated Content](/standards-guidelines/act/rules/cf77f2/proposed/)
 - [Document has an instrument to move focus to non-repeated content](/standards-guidelines/act/rules/ye5d6e/proposed/)
 
-## Large Scale Text
-{#large-scale-text}
+## Large Scale Text {#large-scale-text}
 
 A text node is large scale text if at least one of the following is true:
 
@@ -1032,12 +875,9 @@ Whether CJK characters in these ranges should be considered as "large scale" dep
 
 ### Used in rules
 - [Text has enhanced contrast](/standards-guidelines/act/rules/09o5cg/proposed/)
-- [Text has enhanced contrast](/standards-guidelines/act/rules/09o5cg/proposed/)
-- [Text has minimum contrast](/standards-guidelines/act/rules/afw4f7/proposed/)
 - [Text has minimum contrast](/standards-guidelines/act/rules/afw4f7/proposed/)
 
-## Marked as decorative
-{#marked-as-decorative}
+## Marked as decorative {#marked-as-decorative}
 
 An element is _marked as decorative_ if one or more of the following conditions is true:
 
@@ -1056,33 +896,22 @@ Elements can also be ignored by assistive technologies if they are [programmatic
 ### Used in rules
 - [Document has heading for non-repeated content](/standards-guidelines/act/rules/047fe0/proposed/)
 - [Text has enhanced contrast](/standards-guidelines/act/rules/09o5cg/proposed/)
-- [Text has enhanced contrast](/standards-guidelines/act/rules/09o5cg/proposed/)
-- [Image has non-empty accessible name](/standards-guidelines/act/rules/23a2a8/proposed/)
 - [Image has non-empty accessible name](/standards-guidelines/act/rules/23a2a8/proposed/)
 - [Visible label is part of accessible name](/standards-guidelines/act/rules/2ee8b8/proposed/)
-- [Element with presentational children has no focusable content](/standards-guidelines/act/rules/307n5z/proposed/)
 - [Element with presentational children has no focusable content](/standards-guidelines/act/rules/307n5z/proposed/)
 - [Error message describes invalid form field value](/standards-guidelines/act/rules/36b590/proposed/)
 - [Block of repeated content is collapsible](/standards-guidelines/act/rules/3e12e1/proposed/)
 - [Element marked as decorative is not exposed](/standards-guidelines/act/rules/46ca7f/proposed/)
-- [Element marked as decorative is not exposed](/standards-guidelines/act/rules/46ca7f/proposed/)
-- [Element with role attribute has required states and properties](/standards-guidelines/act/rules/4e8ab6/proposed/)
 - [Element with role attribute has required states and properties](/standards-guidelines/act/rules/4e8ab6/proposed/)
 - [ARIA state or property is permitted](/standards-guidelines/act/rules/5c01ea/proposed/)
 - [Link in context is descriptive](/standards-guidelines/act/rules/5effbb/proposed/)
 - [Role attribute has valid value](/standards-guidelines/act/rules/674b10/proposed/)
-- [Role attribute has valid value](/standards-guidelines/act/rules/674b10/proposed/)
-- [Autocomplete attribute has valid value](/standards-guidelines/act/rules/73f2c2/proposed/)
 - [Autocomplete attribute has valid value](/standards-guidelines/act/rules/73f2c2/proposed/)
 - [Device motion based changes to the content can also be created from the user interface](/standards-guidelines/act/rules/7677a9/proposed/)
 - [Object element rendering non-text content has non-empty accessible name](/standards-guidelines/act/rules/8fc3b6/proposed/)
-- [Object element rendering non-text content has non-empty accessible name](/standards-guidelines/act/rules/8fc3b6/proposed/)
-- [Button has non-empty accessible name](/standards-guidelines/act/rules/97a4e1/proposed/)
 - [Button has non-empty accessible name](/standards-guidelines/act/rules/97a4e1/proposed/)
 - [Image filename is accessible name for image](/standards-guidelines/act/rules/9eb3f6/proposed/)
 - [Headers attribute specified on a cell refers to cells in the same table element](/standards-guidelines/act/rules/a25f45/proposed/)
-- [Headers attribute specified on a cell refers to cells in the same table element](/standards-guidelines/act/rules/a25f45/proposed/)
-- [Text has minimum contrast](/standards-guidelines/act/rules/afw4f7/proposed/)
 - [Text has minimum contrast](/standards-guidelines/act/rules/afw4f7/proposed/)
 - [Link is descriptive](/standards-guidelines/act/rules/aizyf1/proposed/)
 - [Links with identical accessible names have equivalent purpose](/standards-guidelines/act/rules/b20e66/proposed/)
@@ -1091,12 +920,10 @@ Elements can also be ignored by assistive technologies if they are [programmatic
 - [ARIA required owned elements](/standards-guidelines/act/rules/bc4a75/proposed/)
 - [Device motion based changes to the content can be disabled](/standards-guidelines/act/rules/c249d5/proposed/)
 - [Link has non-empty accessible name](/standards-guidelines/act/rules/c487ae/proposed/)
-- [Link has non-empty accessible name](/standards-guidelines/act/rules/c487ae/proposed/)
 - [Iframe element has non-empty accessible name](/standards-guidelines/act/rules/cae760/proposed/)
 - [Form field label is descriptive](/standards-guidelines/act/rules/cc0f0a/proposed/)
 - [Bypass Blocks of Repeated Content](/standards-guidelines/act/rules/cf77f2/proposed/)
 - [Table header cell has assigned cells](/standards-guidelines/act/rules/d0f69e/proposed/)
-- [Form field has non-empty accessible name](/standards-guidelines/act/rules/e086e5/proposed/)
 - [Form field has non-empty accessible name](/standards-guidelines/act/rules/e086e5/proposed/)
 - [Image not in the accessibility tree is decorative](/standards-guidelines/act/rules/e88epe/proposed/)
 - [Text content that changes automatically can be paused, stopped or hidden](/standards-guidelines/act/rules/efbfc7/proposed/)
@@ -1107,11 +934,9 @@ Elements can also be ignored by assistive technologies if they are [programmatic
 - [ARIA required ID references exist](/standards-guidelines/act/rules/in6db8/proposed/)
 - [ARIA global properties not used where prohibited](/standards-guidelines/act/rules/kb1m8s/proposed/)
 - [Menuitem has non-empty accessible name](/standards-guidelines/act/rules/m6b1q3/proposed/)
-- [Menuitem has non-empty accessible name](/standards-guidelines/act/rules/m6b1q3/proposed/)
 - [Document has an instrument to move focus to non-repeated content](/standards-guidelines/act/rules/ye5d6e/proposed/)
 
-## Matching characters
-{#matching-characters}
+## Matching characters {#matching-characters}
 
 A sequence of characters is considered to _match_ another if, after removing leading and trailing [whitespace characters][] and replacing remaining occurrences of one or more whitespace characters with a single space, the two sequences of characters are equal character-by-character, ignoring any differences in letter casing.
 
@@ -1123,8 +948,7 @@ A sequence of characters is considered to _match_ another if, after removing lea
 - [Links with identical accessible names have equivalent purpose](/standards-guidelines/act/rules/b20e66/proposed/)
 - [Links with identical accessible names and same context serve equivalent purpose](/standards-guidelines/act/rules/fd3a94/proposed/)
 
-## Most Common Language of an Element
-{#most-common-element-language}
+## Most Common Language of an Element {#most-common-element-language}
 
 The _most common language of an element_ is determined by counting the number of _words_ in the [text inheriting its programmatic language][] from this element that are part of any of the languages in the [language subtag registry][]. The same word can be part of multiple languages. In case of ties, the element has several most common languages. If there are no words in the [text inheriting its programmatic language][] from the element, then it has no most common language.
 
@@ -1138,8 +962,7 @@ For more details, see [examples of most common language][].
 - [HTML element language subtag matches language](/standards-guidelines/act/rules/off6ek/proposed/)
 - [HTML page language subtag matches default language](/standards-guidelines/act/rules/ucwvc8/proposed/)
 
-## Namespaced Element
-{#namespaced-element}
+## Namespaced Element {#namespaced-element}
 
 An [element][] with a specific [namespaceURI][] value from [HTML namespaces][]. For example an "SVG element" is any element with the "SVG namespace", which is `http://www.w3.org/2000/svg`.
 
@@ -1151,50 +974,32 @@ Namespaced elements are not limited to elements described in a specification. Th
 
 ### Used in rules
 - [Text has enhanced contrast](/standards-guidelines/act/rules/09o5cg/proposed/)
-- [Text has enhanced contrast](/standards-guidelines/act/rules/09o5cg/proposed/)
-- [Scrollable content can be reached with sequential focus navigation](/standards-guidelines/act/rules/0ssw9k/proposed/)
 - [Scrollable content can be reached with sequential focus navigation](/standards-guidelines/act/rules/0ssw9k/proposed/)
 - [Image has non-empty accessible name](/standards-guidelines/act/rules/23a2a8/proposed/)
-- [Image has non-empty accessible name](/standards-guidelines/act/rules/23a2a8/proposed/)
-- [Important letter spacing in style attributes is wide enough](/standards-guidelines/act/rules/24afc2/proposed/)
 - [Important letter spacing in style attributes is wide enough](/standards-guidelines/act/rules/24afc2/proposed/)
 - [HTML page has non-empty title](/standards-guidelines/act/rules/2779a5/proposed/)
-- [HTML page has non-empty title](/standards-guidelines/act/rules/2779a5/proposed/)
-- [Element with presentational children has no focusable content](/standards-guidelines/act/rules/307n5z/proposed/)
 - [Element with presentational children has no focusable content](/standards-guidelines/act/rules/307n5z/proposed/)
 - [Error message describes invalid form field value](/standards-guidelines/act/rules/36b590/proposed/)
 - [Id attribute value is unique](/standards-guidelines/act/rules/3ea0c8/proposed/)
 - [Element with role attribute has required states and properties](/standards-guidelines/act/rules/4e8ab6/proposed/)
-- [Element with role attribute has required states and properties](/standards-guidelines/act/rules/4e8ab6/proposed/)
 - [Zoomed text node is not clipped with CSS overflow](/standards-guidelines/act/rules/59br37/proposed/)
 - [ARIA state or property is permitted](/standards-guidelines/act/rules/5c01ea/proposed/)
 - [Role attribute has valid value](/standards-guidelines/act/rules/674b10/proposed/)
-- [Role attribute has valid value](/standards-guidelines/act/rules/674b10/proposed/)
-- [ARIA state or property has valid value](/standards-guidelines/act/rules/6a7281/proposed/)
 - [ARIA state or property has valid value](/standards-guidelines/act/rules/6a7281/proposed/)
 - [Autocomplete attribute has valid value](/standards-guidelines/act/rules/73f2c2/proposed/)
-- [Autocomplete attribute has valid value](/standards-guidelines/act/rules/73f2c2/proposed/)
 - [Important line height in style attributes is wide enough](/standards-guidelines/act/rules/78fd32/proposed/)
-- [Important line height in style attributes is wide enough](/standards-guidelines/act/rules/78fd32/proposed/)
-- [SVG element with explicit role has non-empty accessible name](/standards-guidelines/act/rules/7d6734/proposed/)
 - [SVG element with explicit role has non-empty accessible name](/standards-guidelines/act/rules/7d6734/proposed/)
 - [Focusable element has no keyboard trap](/standards-guidelines/act/rules/80af7b/proposed/)
-- [Important word spacing in style attributes is wide enough](/standards-guidelines/act/rules/9e45ec/proposed/)
 - [Important word spacing in style attributes is wide enough](/standards-guidelines/act/rules/9e45ec/proposed/)
 - [Image filename is accessible name for image](/standards-guidelines/act/rules/9eb3f6/proposed/)
 - [Focusable element has no keyboard trap via standard navigation](/standards-guidelines/act/rules/a1b64e/proposed/)
 - [Text has minimum contrast](/standards-guidelines/act/rules/afw4f7/proposed/)
-- [Text has minimum contrast](/standards-guidelines/act/rules/afw4f7/proposed/)
-- [Iframe with interactive elements is not excluded from tab-order](/standards-guidelines/act/rules/akn7bn/proposed/)
 - [Iframe with interactive elements is not excluded from tab-order](/standards-guidelines/act/rules/akn7bn/proposed/)
 - [Links with identical accessible names have equivalent purpose](/standards-guidelines/act/rules/b20e66/proposed/)
 - [Orientation of the page is not restricted using CSS transforms](/standards-guidelines/act/rules/b33eff/proposed/)
-- [Orientation of the page is not restricted using CSS transforms](/standards-guidelines/act/rules/b33eff/proposed/)
 - [ARIA required owned elements](/standards-guidelines/act/rules/bc4a75/proposed/)
 - [Link has non-empty accessible name](/standards-guidelines/act/rules/c487ae/proposed/)
-- [Link has non-empty accessible name](/standards-guidelines/act/rules/c487ae/proposed/)
 - [Table header cell has assigned cells](/standards-guidelines/act/rules/d0f69e/proposed/)
-- [Element with lang attribute has valid language tag](/standards-guidelines/act/rules/de46e4/proposed/)
 - [Element with lang attribute has valid language tag](/standards-guidelines/act/rules/de46e4/proposed/)
 - [Focusable element has no keyboard trap via non-standard navigation](/standards-guidelines/act/rules/ebe86a/proposed/)
 - [Text content that changes automatically can be paused, stopped or hidden](/standards-guidelines/act/rules/efbfc7/proposed/)
@@ -1204,11 +1009,9 @@ Namespaced elements are not limited to elements described in a specification. Th
 - [ARIA required ID references exist](/standards-guidelines/act/rules/in6db8/proposed/)
 - [ARIA global properties not used where prohibited](/standards-guidelines/act/rules/kb1m8s/proposed/)
 - [Menuitem has non-empty accessible name](/standards-guidelines/act/rules/m6b1q3/proposed/)
-- [Menuitem has non-empty accessible name](/standards-guidelines/act/rules/m6b1q3/proposed/)
 - [HTML element language subtag matches language](/standards-guidelines/act/rules/off6ek/proposed/)
 
-## Non-repeated content after repeated content
-{#non-repeated-content}
+## Non-repeated content after repeated content {#non-repeated-content}
 
 A node is _non-repeated content after repeated content_ if all the following are true:
 
@@ -1228,8 +1031,7 @@ A node is _non-repeated content after repeated content_ if all the following are
 - [Bypass Blocks of Repeated Content](/standards-guidelines/act/rules/cf77f2/proposed/)
 - [Document has an instrument to move focus to non-repeated content](/standards-guidelines/act/rules/ye5d6e/proposed/)
 
-## Non-streaming media element
-{#non-streaming-media-element}
+## Non-streaming media element {#non-streaming-media-element}
 
 A _non-streaming media element_ is an [HTML Media Element](https://html.spec.whatwg.org/multipage/media.html#htmlmediaelement) for which the `duration` property is not 0.
 
@@ -1251,8 +1053,7 @@ A _non-streaming media element_ is an [HTML Media Element](https://html.spec.wha
 - [Video element auditory content has captions](/standards-guidelines/act/rules/f51b46/proposed/)
 - [Video element visual-only content is media alternative for text](/standards-guidelines/act/rules/fd26cf/proposed/)
 
-## Outcome
-{#outcome}
+## Outcome {#outcome}
 
 A conclusion that comes from evaluating an ACT Rule on a [test subject][] or one of its constituent test target. An outcome can be one of the five following types:
 
@@ -1276,99 +1077,67 @@ Outcomes used in ACT Rules can be expressed using the [outcome property][] of th
 ### Used in rules
 - [Document has heading for non-repeated content](/standards-guidelines/act/rules/047fe0/proposed/)
 - [Text has enhanced contrast](/standards-guidelines/act/rules/09o5cg/proposed/)
-- [Text has enhanced contrast](/standards-guidelines/act/rules/09o5cg/proposed/)
 - [Scrollable content can be reached with sequential focus navigation](/standards-guidelines/act/rules/0ssw9k/proposed/)
-- [Scrollable content can be reached with sequential focus navigation](/standards-guidelines/act/rules/0ssw9k/proposed/)
-- [HTML images contain no text](/standards-guidelines/act/rules/0va7u6/proposed/)
 - [HTML images contain no text](/standards-guidelines/act/rules/0va7u6/proposed/)
 - [Audio and visuals of video element have transcript](/standards-guidelines/act/rules/1a02b0/proposed/)
 - [Video element visual content has audio description](/standards-guidelines/act/rules/1ea59c/proposed/)
 - [Video element visual content has strict accessible alternative](/standards-guidelines/act/rules/1ec09b/proposed/)
 - [Image has non-empty accessible name](/standards-guidelines/act/rules/23a2a8/proposed/)
-- [Image has non-empty accessible name](/standards-guidelines/act/rules/23a2a8/proposed/)
 - [Important letter spacing in style attributes is wide enough](/standards-guidelines/act/rules/24afc2/proposed/)
-- [Important letter spacing in style attributes is wide enough](/standards-guidelines/act/rules/24afc2/proposed/)
-- [HTML page has non-empty title](/standards-guidelines/act/rules/2779a5/proposed/)
 - [HTML page has non-empty title](/standards-guidelines/act/rules/2779a5/proposed/)
 - [Audio element content has transcript](/standards-guidelines/act/rules/2eb176/proposed/)
 - [Visible label is part of accessible name](/standards-guidelines/act/rules/2ee8b8/proposed/)
 - [Summary element has non-empty accessible name](/standards-guidelines/act/rules/2t702h/proposed/)
-- [Summary element has non-empty accessible name](/standards-guidelines/act/rules/2t702h/proposed/)
-- [Element with presentational children has no focusable content](/standards-guidelines/act/rules/307n5z/proposed/)
 - [Element with presentational children has no focusable content](/standards-guidelines/act/rules/307n5z/proposed/)
 - [Error message describes invalid form field value](/standards-guidelines/act/rules/36b590/proposed/)
 - [Block of repeated content is collapsible](/standards-guidelines/act/rules/3e12e1/proposed/)
 - [Id attribute value is unique](/standards-guidelines/act/rules/3ea0c8/proposed/)
 - [Element marked as decorative is not exposed](/standards-guidelines/act/rules/46ca7f/proposed/)
-- [Element marked as decorative is not exposed](/standards-guidelines/act/rules/46ca7f/proposed/)
 - [Iframe elements with identical accessible names have equivalent purpose](/standards-guidelines/act/rules/4b1c6c/proposed/)
 - [Audio or video element that plays automatically has a control mechanism](/standards-guidelines/act/rules/4c31df/proposed/)
 - [Element with role attribute has required states and properties](/standards-guidelines/act/rules/4e8ab6/proposed/)
-- [Element with role attribute has required states and properties](/standards-guidelines/act/rules/4e8ab6/proposed/)
-- [Image button has non-empty accessible name](/standards-guidelines/act/rules/59796f/proposed/)
 - [Image button has non-empty accessible name](/standards-guidelines/act/rules/59796f/proposed/)
 - [Zoomed text node is not clipped with CSS overflow](/standards-guidelines/act/rules/59br37/proposed/)
 - [HTML page lang and xml:lang attributes have matching values](/standards-guidelines/act/rules/5b7ae0/proposed/)
 - [ARIA state or property is permitted](/standards-guidelines/act/rules/5c01ea/proposed/)
 - [Link in context is descriptive](/standards-guidelines/act/rules/5effbb/proposed/)
 - [ARIA attribute is defined in WAI-ARIA](/standards-guidelines/act/rules/5f99a7/proposed/)
-- [ARIA attribute is defined in WAI-ARIA](/standards-guidelines/act/rules/5f99a7/proposed/)
-- [Role attribute has valid value](/standards-guidelines/act/rules/674b10/proposed/)
 - [Role attribute has valid value](/standards-guidelines/act/rules/674b10/proposed/)
 - [ARIA state or property has valid value](/standards-guidelines/act/rules/6a7281/proposed/)
-- [ARIA state or property has valid value](/standards-guidelines/act/rules/6a7281/proposed/)
 - [Element with aria-hidden has no content in sequential focus navigation](/standards-guidelines/act/rules/6cfa84/proposed/)
-- [Element with aria-hidden has no content in sequential focus navigation](/standards-guidelines/act/rules/6cfa84/proposed/)
-- [Autocomplete attribute has valid value](/standards-guidelines/act/rules/73f2c2/proposed/)
 - [Autocomplete attribute has valid value](/standards-guidelines/act/rules/73f2c2/proposed/)
 - [Device motion based changes to the content can also be created from the user interface](/standards-guidelines/act/rules/7677a9/proposed/)
 - [Important line height in style attributes is wide enough](/standards-guidelines/act/rules/78fd32/proposed/)
-- [Important line height in style attributes is wide enough](/standards-guidelines/act/rules/78fd32/proposed/)
-- [SVG element with explicit role has non-empty accessible name](/standards-guidelines/act/rules/7d6734/proposed/)
 - [SVG element with explicit role has non-empty accessible name](/standards-guidelines/act/rules/7d6734/proposed/)
 - [Focusable element has no keyboard trap](/standards-guidelines/act/rules/80af7b/proposed/)
 - [Audio or video element avoids automatically playing audio](/standards-guidelines/act/rules/80f0bf/proposed/)
 - [Object element rendering non-text content has non-empty accessible name](/standards-guidelines/act/rules/8fc3b6/proposed/)
-- [Object element rendering non-text content has non-empty accessible name](/standards-guidelines/act/rules/8fc3b6/proposed/)
-- [Button has non-empty accessible name](/standards-guidelines/act/rules/97a4e1/proposed/)
 - [Button has non-empty accessible name](/standards-guidelines/act/rules/97a4e1/proposed/)
 - [Content has alternative for visual reference](/standards-guidelines/act/rules/9bd38c/proposed/)
 - [Important word spacing in style attributes is wide enough](/standards-guidelines/act/rules/9e45ec/proposed/)
-- [Important word spacing in style attributes is wide enough](/standards-guidelines/act/rules/9e45ec/proposed/)
 - [Image filename is accessible name for image](/standards-guidelines/act/rules/9eb3f6/proposed/)
 - [Focusable element has no keyboard trap via standard navigation](/standards-guidelines/act/rules/a1b64e/proposed/)
-- [Headers attribute specified on a cell refers to cells in the same table element](/standards-guidelines/act/rules/a25f45/proposed/)
 - [Headers attribute specified on a cell refers to cells in the same table element](/standards-guidelines/act/rules/a25f45/proposed/)
 - [Audio or video element that plays automatically has no audio that lasts more than 3 seconds](/standards-guidelines/act/rules/aaa1bf/proposed/)
 - [Video element content is media alternative for text](/standards-guidelines/act/rules/ab4d13/proposed/)
 - [Video element visual-only content has description track](/standards-guidelines/act/rules/ac7dc6/proposed/)
 - [Audio element content is media alternative for text](/standards-guidelines/act/rules/afb423/proposed/)
 - [Text has minimum contrast](/standards-guidelines/act/rules/afw4f7/proposed/)
-- [Text has minimum contrast](/standards-guidelines/act/rules/afw4f7/proposed/)
 - [Link is descriptive](/standards-guidelines/act/rules/aizyf1/proposed/)
 - [Iframe with interactive elements is not excluded from tab-order](/standards-guidelines/act/rules/akn7bn/proposed/)
-- [Iframe with interactive elements is not excluded from tab-order](/standards-guidelines/act/rules/akn7bn/proposed/)
 - [Links with identical accessible names have equivalent purpose](/standards-guidelines/act/rules/b20e66/proposed/)
-- [Orientation of the page is not restricted using CSS transforms](/standards-guidelines/act/rules/b33eff/proposed/)
 - [Orientation of the page is not restricted using CSS transforms](/standards-guidelines/act/rules/b33eff/proposed/)
 - [Document has a landmark with non-repeated content](/standards-guidelines/act/rules/b40fd1/proposed/)
 - [Heading is descriptive](/standards-guidelines/act/rules/b49b2e/proposed/)
 - [Meta viewport allows for zoom](/standards-guidelines/act/rules/b4f0c3/proposed/)
-- [Meta viewport allows for zoom](/standards-guidelines/act/rules/b4f0c3/proposed/)
-- [HTML page has lang attribute](/standards-guidelines/act/rules/b5c3f8/proposed/)
 - [HTML page has lang attribute](/standards-guidelines/act/rules/b5c3f8/proposed/)
 - [ARIA required owned elements](/standards-guidelines/act/rules/bc4a75/proposed/)
 - [Meta element has no refresh delay](/standards-guidelines/act/rules/bc659a/proposed/)
-- [Meta element has no refresh delay](/standards-guidelines/act/rules/bc659a/proposed/)
-- [HTML page `lang` attribute has valid language tag](/standards-guidelines/act/rules/bf051a/proposed/)
 - [HTML page lang attribute has valid language tag](/standards-guidelines/act/rules/bf051a/proposed/)
-- [Meta element has no refresh delay (no exception)](/standards-guidelines/act/rules/bisz58/proposed/)
 - [Meta element has no refresh delay (no exception)](/standards-guidelines/act/rules/bisz58/proposed/)
 - [Device motion based changes to the content can be disabled](/standards-guidelines/act/rules/c249d5/proposed/)
 - [Video element visual-only content has accessible alternative](/standards-guidelines/act/rules/c3232f/proposed/)
 - [Link has non-empty accessible name](/standards-guidelines/act/rules/c487ae/proposed/)
-- [Link has non-empty accessible name](/standards-guidelines/act/rules/c487ae/proposed/)
-- [HTML page title is descriptive](/standards-guidelines/act/rules/c4a8a4/proposed/)
 - [HTML page title is descriptive](/standards-guidelines/act/rules/c4a8a4/proposed/)
 - [Video element visual content has accessible alternative](/standards-guidelines/act/rules/c5a4ea/proposed/)
 - [Iframe element has non-empty accessible name](/standards-guidelines/act/rules/cae760/proposed/)
@@ -1377,8 +1146,6 @@ Outcomes used in ACT Rules can be expressed using the [outcome property][] of th
 - [Table header cell has assigned cells](/standards-guidelines/act/rules/d0f69e/proposed/)
 - [Video element visual-only content has audio track alternative](/standards-guidelines/act/rules/d7ba54/proposed/)
 - [Element with lang attribute has valid language tag](/standards-guidelines/act/rules/de46e4/proposed/)
-- [Element with lang attribute has valid language tag](/standards-guidelines/act/rules/de46e4/proposed/)
-- [Form field has non-empty accessible name](/standards-guidelines/act/rules/e086e5/proposed/)
 - [Form field has non-empty accessible name](/standards-guidelines/act/rules/e086e5/proposed/)
 - [Attribute is not duplicated](/standards-guidelines/act/rules/e6952f/proposed/)
 - [Audio element content has text alternative](/standards-guidelines/act/rules/e7aa44/proposed/)
@@ -1397,17 +1164,13 @@ Outcomes used in ACT Rules can be expressed using the [outcome property][] of th
 - [ARIA required ID references exist](/standards-guidelines/act/rules/in6db8/proposed/)
 - [ARIA global properties not used where prohibited](/standards-guidelines/act/rules/kb1m8s/proposed/)
 - [Menuitem has non-empty accessible name](/standards-guidelines/act/rules/m6b1q3/proposed/)
-- [Menuitem has non-empty accessible name](/standards-guidelines/act/rules/m6b1q3/proposed/)
 - [HTML element language subtag matches language](/standards-guidelines/act/rules/off6ek/proposed/)
 - [Element in sequential focus order has visible focus](/standards-guidelines/act/rules/oj04fd/proposed/)
-- [Element in sequential focus order has visible focus](/standards-guidelines/act/rules/oj04fd/proposed/)
-- [Image accessible name is descriptive](/standards-guidelines/act/rules/qt1vmo/proposed/)
 - [Image accessible name is descriptive](/standards-guidelines/act/rules/qt1vmo/proposed/)
 - [HTML page language subtag matches default language](/standards-guidelines/act/rules/ucwvc8/proposed/)
 - [Document has an instrument to move focus to non-repeated content](/standards-guidelines/act/rules/ye5d6e/proposed/)
 
-## Owned by
-{#owned-by}
+## Owned by {#owned-by}
 
 An element A is _owned by_ element B if element A is a child of element B in the [accessibility tree][].
 
@@ -1420,8 +1183,7 @@ This definition is different from the definition of ["owned element" in WAI-ARIA
 ### Used in rules
 - [ARIA required owned elements](/standards-guidelines/act/rules/bc4a75/proposed/)
 
-## Perceivable content
-{#perceivable-content}
+## Perceivable content {#perceivable-content}
 
 A node is _perceivable content_ if all the following are true:
 
@@ -1450,8 +1212,7 @@ This definition assumes that elements with a [semantic role][] of `none` or `pre
 - [Bypass Blocks of Repeated Content](/standards-guidelines/act/rules/cf77f2/proposed/)
 - [Document has an instrument to move focus to non-repeated content](/standards-guidelines/act/rules/ye5d6e/proposed/)
 
-## Play button
-{#play-button}
+## Play button {#play-button}
 
 A play button is an [instrument][] that when [activated][] plays a [media resource][].
 
@@ -1464,8 +1225,7 @@ A play button is an [instrument][] that when [activated][] plays a [media resour
 - [Audio element content is media alternative for text](/standards-guidelines/act/rules/afb423/proposed/)
 - [Audio element content has text alternative](/standards-guidelines/act/rules/e7aa44/proposed/)
 
-## Known Primary Language Tag
-{#known-primary-language-tag}
+## Known Primary Language Tag {#known-primary-language-tag}
 
 A language tag has a _known primary language tag_ if its [primary language subtag][] exists in the [language subtag registry][] with a [Type field][] whose field-body value is `language`.
 
@@ -1487,15 +1247,12 @@ Subtags, notably the [primary language subtag][], are [case insensitive][]. Comp
 
 ### Used in rules
 - [HTML page lang and xml:lang attributes have matching values](/standards-guidelines/act/rules/5b7ae0/proposed/)
-- [HTML page `lang` attribute has valid language tag](/standards-guidelines/act/rules/bf051a/proposed/)
 - [HTML page lang attribute has valid language tag](/standards-guidelines/act/rules/bf051a/proposed/)
-- [Element with lang attribute has valid language tag](/standards-guidelines/act/rules/de46e4/proposed/)
 - [Element with lang attribute has valid language tag](/standards-guidelines/act/rules/de46e4/proposed/)
 - [HTML element language subtag matches language](/standards-guidelines/act/rules/off6ek/proposed/)
 - [HTML page language subtag matches default language](/standards-guidelines/act/rules/ucwvc8/proposed/)
 
-## Printable characters
-{#printable-characters}
+## Printable characters {#printable-characters}
 
 A _printable character_ is a character that occupies a printing position on a display.
 
@@ -1511,8 +1268,7 @@ These characters correspond to the following [Unicode categories](https://www.un
 ### Used in rules
 - [No keyboard shortcut uses only printable characters](/standards-guidelines/act/rules/ffbc54/proposed/)
 
-## Programmatic Label
-{#programmatic-label}
+## Programmatic Label {#programmatic-label}
 
 Element L is a _programmatic label_ of target element T if either:
 
@@ -1530,10 +1286,8 @@ For more details, see [examples of programmatic label][].
 - [Id attribute value is unique](/standards-guidelines/act/rules/3ea0c8/proposed/)
 - [Form field label is descriptive](/standards-guidelines/act/rules/cc0f0a/proposed/)
 - [Form field has non-empty accessible name](/standards-guidelines/act/rules/e086e5/proposed/)
-- [Form field has non-empty accessible name](/standards-guidelines/act/rules/e086e5/proposed/)
 
-## Programmatically Determined Link Context
-{#programmatically-determined-link-context}
+## Programmatically Determined Link Context {#programmatically-determined-link-context}
 
 The _programmatically determined context_ of a link (or _programmatically determined link context_) is the set of all elements that are [included in the accessibility tree][], and have one or more of the following relationships to the link:
 
@@ -1558,8 +1312,7 @@ This definition assumes that the HTML document with the link is a document using
 - [Link in context is descriptive](/standards-guidelines/act/rules/5effbb/proposed/)
 - [Links with identical accessible names and same context serve equivalent purpose](/standards-guidelines/act/rules/fd3a94/proposed/)
 
-## Programmatically Hidden
-{#programmatically-hidden}
+## Programmatically Hidden {#programmatically-hidden}
 
 An HTML element is _programmatically hidden_ if either it has a [computed][] CSS property `visibility` whose value is not `visible`; or at least one of the following is true for any of its [inclusive ancestors][] in the [flat tree][]:
 
@@ -1577,49 +1330,34 @@ An HTML element is _programmatically hidden_ if either it has a [computed][] CSS
 ### Used in rules
 - [Document has heading for non-repeated content](/standards-guidelines/act/rules/047fe0/proposed/)
 - [Text has enhanced contrast](/standards-guidelines/act/rules/09o5cg/proposed/)
-- [Text has enhanced contrast](/standards-guidelines/act/rules/09o5cg/proposed/)
 - [Audio and visuals of video element have transcript](/standards-guidelines/act/rules/1a02b0/proposed/)
-- [Image has non-empty accessible name](/standards-guidelines/act/rules/23a2a8/proposed/)
 - [Image has non-empty accessible name](/standards-guidelines/act/rules/23a2a8/proposed/)
 - [Audio element content has transcript](/standards-guidelines/act/rules/2eb176/proposed/)
 - [Visible label is part of accessible name](/standards-guidelines/act/rules/2ee8b8/proposed/)
 - [Summary element has non-empty accessible name](/standards-guidelines/act/rules/2t702h/proposed/)
-- [Summary element has non-empty accessible name](/standards-guidelines/act/rules/2t702h/proposed/)
-- [Element with presentational children has no focusable content](/standards-guidelines/act/rules/307n5z/proposed/)
 - [Element with presentational children has no focusable content](/standards-guidelines/act/rules/307n5z/proposed/)
 - [Error message describes invalid form field value](/standards-guidelines/act/rules/36b590/proposed/)
 - [Block of repeated content is collapsible](/standards-guidelines/act/rules/3e12e1/proposed/)
 - [Id attribute value is unique](/standards-guidelines/act/rules/3ea0c8/proposed/)
 - [Element marked as decorative is not exposed](/standards-guidelines/act/rules/46ca7f/proposed/)
-- [Element marked as decorative is not exposed](/standards-guidelines/act/rules/46ca7f/proposed/)
 - [Iframe elements with identical accessible names have equivalent purpose](/standards-guidelines/act/rules/4b1c6c/proposed/)
 - [Audio or video element that plays automatically has a control mechanism](/standards-guidelines/act/rules/4c31df/proposed/)
 - [Element with role attribute has required states and properties](/standards-guidelines/act/rules/4e8ab6/proposed/)
-- [Element with role attribute has required states and properties](/standards-guidelines/act/rules/4e8ab6/proposed/)
-- [Image button has non-empty accessible name](/standards-guidelines/act/rules/59796f/proposed/)
 - [Image button has non-empty accessible name](/standards-guidelines/act/rules/59796f/proposed/)
 - [ARIA state or property is permitted](/standards-guidelines/act/rules/5c01ea/proposed/)
 - [Link in context is descriptive](/standards-guidelines/act/rules/5effbb/proposed/)
 - [Role attribute has valid value](/standards-guidelines/act/rules/674b10/proposed/)
-- [Role attribute has valid value](/standards-guidelines/act/rules/674b10/proposed/)
 - [Element with aria-hidden has no content in sequential focus navigation](/standards-guidelines/act/rules/6cfa84/proposed/)
-- [Element with aria-hidden has no content in sequential focus navigation](/standards-guidelines/act/rules/6cfa84/proposed/)
-- [Autocomplete attribute has valid value](/standards-guidelines/act/rules/73f2c2/proposed/)
 - [Autocomplete attribute has valid value](/standards-guidelines/act/rules/73f2c2/proposed/)
 - [Device motion based changes to the content can also be created from the user interface](/standards-guidelines/act/rules/7677a9/proposed/)
 - [SVG element with explicit role has non-empty accessible name](/standards-guidelines/act/rules/7d6734/proposed/)
-- [SVG element with explicit role has non-empty accessible name](/standards-guidelines/act/rules/7d6734/proposed/)
 - [Object element rendering non-text content has non-empty accessible name](/standards-guidelines/act/rules/8fc3b6/proposed/)
-- [Object element rendering non-text content has non-empty accessible name](/standards-guidelines/act/rules/8fc3b6/proposed/)
-- [Button has non-empty accessible name](/standards-guidelines/act/rules/97a4e1/proposed/)
 - [Button has non-empty accessible name](/standards-guidelines/act/rules/97a4e1/proposed/)
 - [Content has alternative for visual reference](/standards-guidelines/act/rules/9bd38c/proposed/)
 - [Image filename is accessible name for image](/standards-guidelines/act/rules/9eb3f6/proposed/)
 - [Headers attribute specified on a cell refers to cells in the same table element](/standards-guidelines/act/rules/a25f45/proposed/)
-- [Headers attribute specified on a cell refers to cells in the same table element](/standards-guidelines/act/rules/a25f45/proposed/)
 - [Video element content is media alternative for text](/standards-guidelines/act/rules/ab4d13/proposed/)
 - [Audio element content is media alternative for text](/standards-guidelines/act/rules/afb423/proposed/)
-- [Text has minimum contrast](/standards-guidelines/act/rules/afw4f7/proposed/)
 - [Text has minimum contrast](/standards-guidelines/act/rules/afw4f7/proposed/)
 - [Link is descriptive](/standards-guidelines/act/rules/aizyf1/proposed/)
 - [Links with identical accessible names have equivalent purpose](/standards-guidelines/act/rules/b20e66/proposed/)
@@ -1628,14 +1366,11 @@ An HTML element is _programmatically hidden_ if either it has a [computed][] CSS
 - [ARIA required owned elements](/standards-guidelines/act/rules/bc4a75/proposed/)
 - [Device motion based changes to the content can be disabled](/standards-guidelines/act/rules/c249d5/proposed/)
 - [Link has non-empty accessible name](/standards-guidelines/act/rules/c487ae/proposed/)
-- [Link has non-empty accessible name](/standards-guidelines/act/rules/c487ae/proposed/)
 - [Iframe element has non-empty accessible name](/standards-guidelines/act/rules/cae760/proposed/)
 - [Form field label is descriptive](/standards-guidelines/act/rules/cc0f0a/proposed/)
 - [Bypass Blocks of Repeated Content](/standards-guidelines/act/rules/cf77f2/proposed/)
 - [Table header cell has assigned cells](/standards-guidelines/act/rules/d0f69e/proposed/)
 - [Element with lang attribute has valid language tag](/standards-guidelines/act/rules/de46e4/proposed/)
-- [Element with lang attribute has valid language tag](/standards-guidelines/act/rules/de46e4/proposed/)
-- [Form field has non-empty accessible name](/standards-guidelines/act/rules/e086e5/proposed/)
 - [Form field has non-empty accessible name](/standards-guidelines/act/rules/e086e5/proposed/)
 - [Audio element content has text alternative](/standards-guidelines/act/rules/e7aa44/proposed/)
 - [Image not in the accessibility tree is decorative](/standards-guidelines/act/rules/e88epe/proposed/)
@@ -1650,15 +1385,12 @@ An HTML element is _programmatically hidden_ if either it has a [computed][] CSS
 - [ARIA required ID references exist](/standards-guidelines/act/rules/in6db8/proposed/)
 - [ARIA global properties not used where prohibited](/standards-guidelines/act/rules/kb1m8s/proposed/)
 - [Menuitem has non-empty accessible name](/standards-guidelines/act/rules/m6b1q3/proposed/)
-- [Menuitem has non-empty accessible name](/standards-guidelines/act/rules/m6b1q3/proposed/)
 - [HTML element language subtag matches language](/standards-guidelines/act/rules/off6ek/proposed/)
-- [Image accessible name is descriptive](/standards-guidelines/act/rules/qt1vmo/proposed/)
 - [Image accessible name is descriptive](/standards-guidelines/act/rules/qt1vmo/proposed/)
 - [HTML page language subtag matches default language](/standards-guidelines/act/rules/ucwvc8/proposed/)
 - [Document has an instrument to move focus to non-repeated content](/standards-guidelines/act/rules/ye5d6e/proposed/)
 
-## Rendered Image Resource
-{#rendered-image-resource}
+## Rendered Image Resource {#rendered-image-resource}
 
 A _rendered image resource_ in a [web page][] is any resource with [visible pixels][] that has been specified in the list of [image sources][] of an [embedded image][].
 
@@ -1669,10 +1401,8 @@ A _rendered image resource_ in a [web page][] is any resource with [visible pixe
 
 ### Used in rules
 - [HTML images contain no text](/standards-guidelines/act/rules/0va7u6/proposed/)
-- [HTML images contain no text](/standards-guidelines/act/rules/0va7u6/proposed/)
 
-## Same key events
-{#same-key-events}
+## Same key events {#same-key-events}
 
 Two [keyboard events][] are _same key events_ if they have the same value for all the following attributes:
 
@@ -1687,8 +1417,7 @@ Two [keyboard events][] are _same key events_ if they have the same value for al
 ### Used in rules
 - [No keyboard shortcut uses only printable characters](/standards-guidelines/act/rules/ffbc54/proposed/)
 
-## Same resource
-{#same-resource}
+## Same resource {#same-resource}
 
 Two or more resources can be the _same resource_ even though the URLs for them are different. This can be due to URL parsing, server settings, redirects and DNS aliasing.
 
@@ -1707,8 +1436,7 @@ On the other hand, identical relative URLs do not necessarily resolve to the sam
 - [Links with identical accessible names have equivalent purpose](/standards-guidelines/act/rules/b20e66/proposed/)
 - [Links with identical accessible names and same context serve equivalent purpose](/standards-guidelines/act/rules/fd3a94/proposed/)
 
-## Scrollable Elements
-{#scrollable-element}
+## Scrollable Elements {#scrollable-element}
 
 A scrollable element is an [element][] with a _horizontal scroll distance_ or a _vertical scroll distance_ greater than 0.
 
@@ -1730,10 +1458,8 @@ A scrollable element is an [element][] with a _horizontal scroll distance_ or a 
 
 ### Used in rules
 - [Scrollable content can be reached with sequential focus navigation](/standards-guidelines/act/rules/0ssw9k/proposed/)
-- [Scrollable content can be reached with sequential focus navigation](/standards-guidelines/act/rules/0ssw9k/proposed/)
 
-## Semantic Role
-{#semantic-role}
+## Semantic Role {#semantic-role}
 
 The _semantic role_ of an element is determined by the first of these cases that applies:
 
@@ -1759,31 +1485,21 @@ This definition can be used in expressions such as "semantic `button`" meaning a
 ### Used in rules
 - [Document has heading for non-repeated content](/standards-guidelines/act/rules/047fe0/proposed/)
 - [Text has enhanced contrast](/standards-guidelines/act/rules/09o5cg/proposed/)
-- [Text has enhanced contrast](/standards-guidelines/act/rules/09o5cg/proposed/)
-- [Image has non-empty accessible name](/standards-guidelines/act/rules/23a2a8/proposed/)
 - [Image has non-empty accessible name](/standards-guidelines/act/rules/23a2a8/proposed/)
 - [Visible label is part of accessible name](/standards-guidelines/act/rules/2ee8b8/proposed/)
-- [Element with presentational children has no focusable content](/standards-guidelines/act/rules/307n5z/proposed/)
 - [Element with presentational children has no focusable content](/standards-guidelines/act/rules/307n5z/proposed/)
 - [Error message describes invalid form field value](/standards-guidelines/act/rules/36b590/proposed/)
 - [Block of repeated content is collapsible](/standards-guidelines/act/rules/3e12e1/proposed/)
 - [Element marked as decorative is not exposed](/standards-guidelines/act/rules/46ca7f/proposed/)
-- [Element marked as decorative is not exposed](/standards-guidelines/act/rules/46ca7f/proposed/)
-- [Element with role attribute has required states and properties](/standards-guidelines/act/rules/4e8ab6/proposed/)
 - [Element with role attribute has required states and properties](/standards-guidelines/act/rules/4e8ab6/proposed/)
 - [ARIA state or property is permitted](/standards-guidelines/act/rules/5c01ea/proposed/)
 - [Link in context is descriptive](/standards-guidelines/act/rules/5effbb/proposed/)
 - [Role attribute has valid value](/standards-guidelines/act/rules/674b10/proposed/)
-- [Role attribute has valid value](/standards-guidelines/act/rules/674b10/proposed/)
-- [Autocomplete attribute has valid value](/standards-guidelines/act/rules/73f2c2/proposed/)
 - [Autocomplete attribute has valid value](/standards-guidelines/act/rules/73f2c2/proposed/)
 - [Device motion based changes to the content can also be created from the user interface](/standards-guidelines/act/rules/7677a9/proposed/)
 - [Button has non-empty accessible name](/standards-guidelines/act/rules/97a4e1/proposed/)
-- [Button has non-empty accessible name](/standards-guidelines/act/rules/97a4e1/proposed/)
 - [Image filename is accessible name for image](/standards-guidelines/act/rules/9eb3f6/proposed/)
 - [Headers attribute specified on a cell refers to cells in the same table element](/standards-guidelines/act/rules/a25f45/proposed/)
-- [Headers attribute specified on a cell refers to cells in the same table element](/standards-guidelines/act/rules/a25f45/proposed/)
-- [Text has minimum contrast](/standards-guidelines/act/rules/afw4f7/proposed/)
 - [Text has minimum contrast](/standards-guidelines/act/rules/afw4f7/proposed/)
 - [Link is descriptive](/standards-guidelines/act/rules/aizyf1/proposed/)
 - [Links with identical accessible names have equivalent purpose](/standards-guidelines/act/rules/b20e66/proposed/)
@@ -1792,11 +1508,9 @@ This definition can be used in expressions such as "semantic `button`" meaning a
 - [ARIA required owned elements](/standards-guidelines/act/rules/bc4a75/proposed/)
 - [Device motion based changes to the content can be disabled](/standards-guidelines/act/rules/c249d5/proposed/)
 - [Link has non-empty accessible name](/standards-guidelines/act/rules/c487ae/proposed/)
-- [Link has non-empty accessible name](/standards-guidelines/act/rules/c487ae/proposed/)
 - [Form field label is descriptive](/standards-guidelines/act/rules/cc0f0a/proposed/)
 - [Bypass Blocks of Repeated Content](/standards-guidelines/act/rules/cf77f2/proposed/)
 - [Table header cell has assigned cells](/standards-guidelines/act/rules/d0f69e/proposed/)
-- [Form field has non-empty accessible name](/standards-guidelines/act/rules/e086e5/proposed/)
 - [Form field has non-empty accessible name](/standards-guidelines/act/rules/e086e5/proposed/)
 - [Image not in the accessibility tree is decorative](/standards-guidelines/act/rules/e88epe/proposed/)
 - [Text content that changes automatically can be paused, stopped or hidden](/standards-guidelines/act/rules/efbfc7/proposed/)
@@ -1807,11 +1521,9 @@ This definition can be used in expressions such as "semantic `button`" meaning a
 - [ARIA required ID references exist](/standards-guidelines/act/rules/in6db8/proposed/)
 - [ARIA global properties not used where prohibited](/standards-guidelines/act/rules/kb1m8s/proposed/)
 - [Menuitem has non-empty accessible name](/standards-guidelines/act/rules/m6b1q3/proposed/)
-- [Menuitem has non-empty accessible name](/standards-guidelines/act/rules/m6b1q3/proposed/)
 - [Document has an instrument to move focus to non-repeated content](/standards-guidelines/act/rules/ye5d6e/proposed/)
 
-## Set of clearly labeled instruments
-{#set-of-clearly-labeled-instruments}
+## Set of clearly labeled instruments {#set-of-clearly-labeled-instruments}
 
 A _set of clearly labeled instruments_ is a set of [instruments][instrument], where each [instrument][] is in the same [web page][] as the test target or can be found in a [clearly labeled location][] from that [web page][].
 
@@ -1823,8 +1535,7 @@ A _set of clearly labeled instruments_ is a set of [instruments][instrument], wh
 - [Device motion based changes to the content can be disabled](/standards-guidelines/act/rules/c249d5/proposed/)
 - [No keyboard shortcut uses only printable characters](/standards-guidelines/act/rules/ffbc54/proposed/)
 
-## Standard keyboard navigation
-{#standard-keyboard-navigation}
+## Standard keyboard navigation {#standard-keyboard-navigation}
 
 _Standard keyboard navigation_ entails using one or more of the following:
 
@@ -1851,8 +1562,7 @@ Expected behavior of standard keyboard navigation keys:
 - [Focusable element has no keyboard trap via standard navigation](/standards-guidelines/act/rules/a1b64e/proposed/)
 - [Focusable element has no keyboard trap via non-standard navigation](/standards-guidelines/act/rules/ebe86a/proposed/)
 
-## Text Inheriting its Programmatic Language from an Element
-{#text-inheriting-language}
+## Text Inheriting its Programmatic Language from an Element {#text-inheriting-language}
 
 The <dfn id="text-inheriting-language:text">text inheriting its programmatic language</dfn> from an element E is composed of all the following texts:
 
@@ -1880,12 +1590,10 @@ An element F is an <dfn id="text-inheriting-language:element">element inheriting
 
 ### Used in rules
 - [Element with lang attribute has valid language tag](/standards-guidelines/act/rules/de46e4/proposed/)
-- [Element with lang attribute has valid language tag](/standards-guidelines/act/rules/de46e4/proposed/)
 - [HTML element language subtag matches language](/standards-guidelines/act/rules/off6ek/proposed/)
 - [HTML page language subtag matches default language](/standards-guidelines/act/rules/ucwvc8/proposed/)
 
-## User interaction
-{#user-interaction}
+## User interaction {#user-interaction}
 
 A user interaction is any action that causes the user agent to fire one of the following [DOM events][event]:
 
@@ -1915,8 +1623,7 @@ This list comprises the [User Interface event][uievents] that are generated by t
 ### Used in rules
 - [Text content that changes automatically can be paused, stopped or hidden](/standards-guidelines/act/rules/efbfc7/proposed/)
 
-## Vertically Clipped by Overflow
-{#vertically-clipped-by-overflow}
+## Vertically Clipped by Overflow {#vertically-clipped-by-overflow}
 
 A [node][] is <dfn>Vertically Clipped by Overflow</dfn> if it has an [ancestor][] in the [flat tree][] with a [computed][] [overflow-y][] of `hidden` or `clip`, where changing the [overflow-y][] of all such [ancestors][ancestor] to `visible` would cause more of the [node][] to become [visible][].
 
@@ -1940,8 +1647,7 @@ This `img` element has an [ancestor][] `div` element with an `overflow-y` of `hi
 ### Used in rules
 - [Zoomed text node is not clipped with CSS overflow](/standards-guidelines/act/rules/59br37/proposed/)
 
-## viewport size
-{#viewport-size}
+## viewport size {#viewport-size}
 
 The viewport size is the width and height at which a page is rendered. The viewport size is equal to the [innerWidth][] and [innerHeight][] of the [window][] of the [top-level browsing context][].
 
@@ -1957,8 +1663,7 @@ The viewport size is the width and height at which a page is rendered. The viewp
 ### Used in rules
 - [Zoomed text node is not clipped with CSS overflow](/standards-guidelines/act/rules/59br37/proposed/)
 
-## Visible Text Content
-{#visible-text-content}
+## Visible Text Content {#visible-text-content}
 
 The _visible text content_ of an [element][] is a set of all [visible][] [text nodes][] that are [descendants][] in the [flat tree][] of this element
 
@@ -1973,8 +1678,7 @@ The _visible text content_ of an [element][] is a set of all [visible][] [text n
 - [Content has alternative for visual reference](/standards-guidelines/act/rules/9bd38c/proposed/)
 - [Text content that changes automatically can be paused, stopped or hidden](/standards-guidelines/act/rules/efbfc7/proposed/)
 
-## Visible
-{#visible}
+## Visible {#visible}
 
 Content perceivable through sight.
 
@@ -1987,15 +1691,11 @@ For more details, see [examples of visible](https://www.w3.org/WAI/standards-gui
 ### Used in rules
 - [Document has heading for non-repeated content](/standards-guidelines/act/rules/047fe0/proposed/)
 - [Text has enhanced contrast](/standards-guidelines/act/rules/09o5cg/proposed/)
-- [Text has enhanced contrast](/standards-guidelines/act/rules/09o5cg/proposed/)
 - [Scrollable content can be reached with sequential focus navigation](/standards-guidelines/act/rules/0ssw9k/proposed/)
-- [Scrollable content can be reached with sequential focus navigation](/standards-guidelines/act/rules/0ssw9k/proposed/)
-- [HTML images contain no text](/standards-guidelines/act/rules/0va7u6/proposed/)
 - [HTML images contain no text](/standards-guidelines/act/rules/0va7u6/proposed/)
 - [Audio and visuals of video element have transcript](/standards-guidelines/act/rules/1a02b0/proposed/)
 - [Video element visual content has audio description](/standards-guidelines/act/rules/1ea59c/proposed/)
 - [Video element visual content has strict accessible alternative](/standards-guidelines/act/rules/1ec09b/proposed/)
-- [Important letter spacing in style attributes is wide enough](/standards-guidelines/act/rules/24afc2/proposed/)
 - [Important letter spacing in style attributes is wide enough](/standards-guidelines/act/rules/24afc2/proposed/)
 - [Audio element content has transcript](/standards-guidelines/act/rules/2eb176/proposed/)
 - [Visible label is part of accessible name](/standards-guidelines/act/rules/2ee8b8/proposed/)
@@ -2005,26 +1705,18 @@ For more details, see [examples of visible](https://www.w3.org/WAI/standards-gui
 - [Audio or video element that plays automatically has a control mechanism](/standards-guidelines/act/rules/4c31df/proposed/)
 - [Zoomed text node is not clipped with CSS overflow](/standards-guidelines/act/rules/59br37/proposed/)
 - [Autocomplete attribute has valid value](/standards-guidelines/act/rules/73f2c2/proposed/)
-- [Autocomplete attribute has valid value](/standards-guidelines/act/rules/73f2c2/proposed/)
-- [Important line height in style attributes is wide enough](/standards-guidelines/act/rules/78fd32/proposed/)
 - [Important line height in style attributes is wide enough](/standards-guidelines/act/rules/78fd32/proposed/)
 - [Content has alternative for visual reference](/standards-guidelines/act/rules/9bd38c/proposed/)
 - [Important word spacing in style attributes is wide enough](/standards-guidelines/act/rules/9e45ec/proposed/)
-- [Important word spacing in style attributes is wide enough](/standards-guidelines/act/rules/9e45ec/proposed/)
-- [Headers attribute specified on a cell refers to cells in the same table element](/standards-guidelines/act/rules/a25f45/proposed/)
 - [Headers attribute specified on a cell refers to cells in the same table element](/standards-guidelines/act/rules/a25f45/proposed/)
 - [Video element content is media alternative for text](/standards-guidelines/act/rules/ab4d13/proposed/)
 - [Video element visual-only content has description track](/standards-guidelines/act/rules/ac7dc6/proposed/)
 - [Audio element content is media alternative for text](/standards-guidelines/act/rules/afb423/proposed/)
 - [Text has minimum contrast](/standards-guidelines/act/rules/afw4f7/proposed/)
-- [Text has minimum contrast](/standards-guidelines/act/rules/afw4f7/proposed/)
 - [Iframe with interactive elements is not excluded from tab-order](/standards-guidelines/act/rules/akn7bn/proposed/)
-- [Iframe with interactive elements is not excluded from tab-order](/standards-guidelines/act/rules/akn7bn/proposed/)
-- [Orientation of the page is not restricted using CSS transforms](/standards-guidelines/act/rules/b33eff/proposed/)
 - [Orientation of the page is not restricted using CSS transforms](/standards-guidelines/act/rules/b33eff/proposed/)
 - [Document has a landmark with non-repeated content](/standards-guidelines/act/rules/b40fd1/proposed/)
 - [Heading is descriptive](/standards-guidelines/act/rules/b49b2e/proposed/)
-- [Meta viewport allows for zoom](/standards-guidelines/act/rules/b4f0c3/proposed/)
 - [Meta viewport allows for zoom](/standards-guidelines/act/rules/b4f0c3/proposed/)
 - [Video element visual-only content has accessible alternative](/standards-guidelines/act/rules/c3232f/proposed/)
 - [Video element visual content has accessible alternative](/standards-guidelines/act/rules/c5a4ea/proposed/)
@@ -2033,8 +1725,6 @@ For more details, see [examples of visible](https://www.w3.org/WAI/standards-gui
 - [Table header cell has assigned cells](/standards-guidelines/act/rules/d0f69e/proposed/)
 - [Video element visual-only content has audio track alternative](/standards-guidelines/act/rules/d7ba54/proposed/)
 - [Element with lang attribute has valid language tag](/standards-guidelines/act/rules/de46e4/proposed/)
-- [Element with lang attribute has valid language tag](/standards-guidelines/act/rules/de46e4/proposed/)
-- [Form field has non-empty accessible name](/standards-guidelines/act/rules/e086e5/proposed/)
 - [Form field has non-empty accessible name](/standards-guidelines/act/rules/e086e5/proposed/)
 - [Audio element content has text alternative](/standards-guidelines/act/rules/e7aa44/proposed/)
 - [Image not in the accessibility tree is decorative](/standards-guidelines/act/rules/e88epe/proposed/)
@@ -2048,12 +1738,10 @@ For more details, see [examples of visible](https://www.w3.org/WAI/standards-gui
 - [Heading has non-empty accessible name](/standards-guidelines/act/rules/ffd0e9/proposed/)
 - [HTML element language subtag matches language](/standards-guidelines/act/rules/off6ek/proposed/)
 - [Image accessible name is descriptive](/standards-guidelines/act/rules/qt1vmo/proposed/)
-- [Image accessible name is descriptive](/standards-guidelines/act/rules/qt1vmo/proposed/)
 - [HTML page language subtag matches default language](/standards-guidelines/act/rules/ucwvc8/proposed/)
 - [Document has an instrument to move focus to non-repeated content](/standards-guidelines/act/rules/ye5d6e/proposed/)
 
-## Visual Context
-{#visual-context}
+## Visual Context {#visual-context}
 
 The _visual context_ of a node is everything that is visually or logically located near it when the [document](https://dom.spec.whatwg.org/#concept-document) containing it is rendered. Only [visible](#visible) information may be part of the visual context.
 
@@ -2068,8 +1756,7 @@ The visual context may include, but is not limited to, headings, text in the sam
 ### Used in rules
 - [Form field label is descriptive](/standards-guidelines/act/rules/cc0f0a/proposed/)
 
-## Visual Reference Words
-{#visual-reference-words}
+## Visual Reference Words {#visual-reference-words}
 
 Any word in a text node that is included in the translated version of the following lists, where the language of the translation is the programmatically determinable language of the text node. Some words can be translated in multiple ways or have plural forms. In such cases each translation or form must be included. Some words can be spelled in multiple ways (For example: sometimes the word is capitalized and sometimes it isn't). In such cases each spelling must be included.
 
@@ -2212,8 +1899,7 @@ Color
 ### Used in rules
 - [Content has alternative for visual reference](/standards-guidelines/act/rules/9bd38c/proposed/)
 
-## WAI-ARIA specifications
-{#wai-aria-specifications}
+## WAI-ARIA specifications {#wai-aria-specifications}
 
 The _WAI ARIA Specifications_ group both the WAI ARIA W3C Recommendation and ARIA modules, namely:
 
@@ -2226,39 +1912,25 @@ The _WAI ARIA Specifications_ group both the WAI ARIA W3C Recommendation and ARI
 ### Used in rules
 - [Document has heading for non-repeated content](/standards-guidelines/act/rules/047fe0/proposed/)
 - [Text has enhanced contrast](/standards-guidelines/act/rules/09o5cg/proposed/)
-- [Text has enhanced contrast](/standards-guidelines/act/rules/09o5cg/proposed/)
-- [Image has non-empty accessible name](/standards-guidelines/act/rules/23a2a8/proposed/)
 - [Image has non-empty accessible name](/standards-guidelines/act/rules/23a2a8/proposed/)
 - [Visible label is part of accessible name](/standards-guidelines/act/rules/2ee8b8/proposed/)
 - [Summary element has non-empty accessible name](/standards-guidelines/act/rules/2t702h/proposed/)
-- [Summary element has non-empty accessible name](/standards-guidelines/act/rules/2t702h/proposed/)
-- [Element with presentational children has no focusable content](/standards-guidelines/act/rules/307n5z/proposed/)
 - [Element with presentational children has no focusable content](/standards-guidelines/act/rules/307n5z/proposed/)
 - [Error message describes invalid form field value](/standards-guidelines/act/rules/36b590/proposed/)
 - [Block of repeated content is collapsible](/standards-guidelines/act/rules/3e12e1/proposed/)
 - [Element marked as decorative is not exposed](/standards-guidelines/act/rules/46ca7f/proposed/)
-- [Element marked as decorative is not exposed](/standards-guidelines/act/rules/46ca7f/proposed/)
-- [Element with role attribute has required states and properties](/standards-guidelines/act/rules/4e8ab6/proposed/)
 - [Element with role attribute has required states and properties](/standards-guidelines/act/rules/4e8ab6/proposed/)
 - [ARIA state or property is permitted](/standards-guidelines/act/rules/5c01ea/proposed/)
 - [Link in context is descriptive](/standards-guidelines/act/rules/5effbb/proposed/)
 - [ARIA attribute is defined in WAI-ARIA](/standards-guidelines/act/rules/5f99a7/proposed/)
-- [ARIA attribute is defined in WAI-ARIA](/standards-guidelines/act/rules/5f99a7/proposed/)
 - [Role attribute has valid value](/standards-guidelines/act/rules/674b10/proposed/)
-- [Role attribute has valid value](/standards-guidelines/act/rules/674b10/proposed/)
-- [Autocomplete attribute has valid value](/standards-guidelines/act/rules/73f2c2/proposed/)
 - [Autocomplete attribute has valid value](/standards-guidelines/act/rules/73f2c2/proposed/)
 - [Device motion based changes to the content can also be created from the user interface](/standards-guidelines/act/rules/7677a9/proposed/)
 - [SVG element with explicit role has non-empty accessible name](/standards-guidelines/act/rules/7d6734/proposed/)
-- [SVG element with explicit role has non-empty accessible name](/standards-guidelines/act/rules/7d6734/proposed/)
 - [Object element rendering non-text content has non-empty accessible name](/standards-guidelines/act/rules/8fc3b6/proposed/)
-- [Object element rendering non-text content has non-empty accessible name](/standards-guidelines/act/rules/8fc3b6/proposed/)
-- [Button has non-empty accessible name](/standards-guidelines/act/rules/97a4e1/proposed/)
 - [Button has non-empty accessible name](/standards-guidelines/act/rules/97a4e1/proposed/)
 - [Image filename is accessible name for image](/standards-guidelines/act/rules/9eb3f6/proposed/)
 - [Headers attribute specified on a cell refers to cells in the same table element](/standards-guidelines/act/rules/a25f45/proposed/)
-- [Headers attribute specified on a cell refers to cells in the same table element](/standards-guidelines/act/rules/a25f45/proposed/)
-- [Text has minimum contrast](/standards-guidelines/act/rules/afw4f7/proposed/)
 - [Text has minimum contrast](/standards-guidelines/act/rules/afw4f7/proposed/)
 - [Link is descriptive](/standards-guidelines/act/rules/aizyf1/proposed/)
 - [Links with identical accessible names have equivalent purpose](/standards-guidelines/act/rules/b20e66/proposed/)
@@ -2267,12 +1939,10 @@ The _WAI ARIA Specifications_ group both the WAI ARIA W3C Recommendation and ARI
 - [ARIA required owned elements](/standards-guidelines/act/rules/bc4a75/proposed/)
 - [Device motion based changes to the content can be disabled](/standards-guidelines/act/rules/c249d5/proposed/)
 - [Link has non-empty accessible name](/standards-guidelines/act/rules/c487ae/proposed/)
-- [Link has non-empty accessible name](/standards-guidelines/act/rules/c487ae/proposed/)
 - [Iframe element has non-empty accessible name](/standards-guidelines/act/rules/cae760/proposed/)
 - [Form field label is descriptive](/standards-guidelines/act/rules/cc0f0a/proposed/)
 - [Bypass Blocks of Repeated Content](/standards-guidelines/act/rules/cf77f2/proposed/)
 - [Table header cell has assigned cells](/standards-guidelines/act/rules/d0f69e/proposed/)
-- [Form field has non-empty accessible name](/standards-guidelines/act/rules/e086e5/proposed/)
 - [Form field has non-empty accessible name](/standards-guidelines/act/rules/e086e5/proposed/)
 - [Image not in the accessibility tree is decorative](/standards-guidelines/act/rules/e88epe/proposed/)
 - [Text content that changes automatically can be paused, stopped or hidden](/standards-guidelines/act/rules/efbfc7/proposed/)
@@ -2283,13 +1953,10 @@ The _WAI ARIA Specifications_ group both the WAI ARIA W3C Recommendation and ARI
 - [ARIA required ID references exist](/standards-guidelines/act/rules/in6db8/proposed/)
 - [ARIA global properties not used where prohibited](/standards-guidelines/act/rules/kb1m8s/proposed/)
 - [Menuitem has non-empty accessible name](/standards-guidelines/act/rules/m6b1q3/proposed/)
-- [Menuitem has non-empty accessible name](/standards-guidelines/act/rules/m6b1q3/proposed/)
-- [Image accessible name is descriptive](/standards-guidelines/act/rules/qt1vmo/proposed/)
 - [Image accessible name is descriptive](/standards-guidelines/act/rules/qt1vmo/proposed/)
 - [Document has an instrument to move focus to non-repeated content](/standards-guidelines/act/rules/ye5d6e/proposed/)
 
-## Web page (HTML)
-{#web-page-html}
+## Web page (HTML) {#web-page-html}
 
 An _HTML [web page](https://www.w3.org/TR/WCAG22/#dfn-web-page-s)_ is the set of all [fully active](https://html.spec.whatwg.org/#fully-active) [documents](https://dom.spec.whatwg.org/#concept-document) which share the same [top-level browsing context](https://html.spec.whatwg.org/#top-level-browsing-context).
 
@@ -2302,8 +1969,6 @@ An _HTML [web page](https://www.w3.org/TR/WCAG22/#dfn-web-page-s)_ is the set of
 ### Used in rules
 - [Document has heading for non-repeated content](/standards-guidelines/act/rules/047fe0/proposed/)
 - [HTML images contain no text](/standards-guidelines/act/rules/0va7u6/proposed/)
-- [HTML images contain no text](/standards-guidelines/act/rules/0va7u6/proposed/)
-- [HTML page has non-empty title](/standards-guidelines/act/rules/2779a5/proposed/)
 - [HTML page has non-empty title](/standards-guidelines/act/rules/2779a5/proposed/)
 - [Block of repeated content is collapsible](/standards-guidelines/act/rules/3e12e1/proposed/)
 - [Iframe elements with identical accessible names have equivalent purpose](/standards-guidelines/act/rules/4b1c6c/proposed/)
@@ -2314,7 +1979,6 @@ An _HTML [web page](https://www.w3.org/TR/WCAG22/#dfn-web-page-s)_ is the set of
 - [Document has a landmark with non-repeated content](/standards-guidelines/act/rules/b40fd1/proposed/)
 - [Device motion based changes to the content can be disabled](/standards-guidelines/act/rules/c249d5/proposed/)
 - [HTML page title is descriptive](/standards-guidelines/act/rules/c4a8a4/proposed/)
-- [HTML page title is descriptive](/standards-guidelines/act/rules/c4a8a4/proposed/)
 - [Bypass Blocks of Repeated Content](/standards-guidelines/act/rules/cf77f2/proposed/)
 - [Text content that changes automatically can be paused, stopped or hidden](/standards-guidelines/act/rules/efbfc7/proposed/)
 - [Links with identical accessible names and same context serve equivalent purpose](/standards-guidelines/act/rules/fd3a94/proposed/)
@@ -2322,8 +1986,7 @@ An _HTML [web page](https://www.w3.org/TR/WCAG22/#dfn-web-page-s)_ is the set of
 - [HTML page language subtag matches default language](/standards-guidelines/act/rules/ucwvc8/proposed/)
 - [Document has an instrument to move focus to non-repeated content](/standards-guidelines/act/rules/ye5d6e/proposed/)
 
-## Whitespace
-{#whitespace}
+## Whitespace {#whitespace}
 
 _Whitespace_ are characters that have the Unicode "White_Space" property in the [Unicode properties list](https://www.unicode.org/Public/UCD/latest/ucd/PropList.txt).
 
@@ -2341,18 +2004,14 @@ This includes:
 
 ### Used in rules
 - [HTML page has non-empty title](/standards-guidelines/act/rules/2779a5/proposed/)
-- [HTML page has non-empty title](/standards-guidelines/act/rules/2779a5/proposed/)
 - [Visible label is part of accessible name](/standards-guidelines/act/rules/2ee8b8/proposed/)
 - [Iframe elements with identical accessible names have equivalent purpose](/standards-guidelines/act/rules/4b1c6c/proposed/)
 - [Audio or video element that plays automatically has a control mechanism](/standards-guidelines/act/rules/4c31df/proposed/)
 - [Role attribute has valid value](/standards-guidelines/act/rules/674b10/proposed/)
-- [Role attribute has valid value](/standards-guidelines/act/rules/674b10/proposed/)
 - [Image filename is accessible name for image](/standards-guidelines/act/rules/9eb3f6/proposed/)
 - [Links with identical accessible names have equivalent purpose](/standards-guidelines/act/rules/b20e66/proposed/)
 - [HTML page title is descriptive](/standards-guidelines/act/rules/c4a8a4/proposed/)
-- [HTML page title is descriptive](/standards-guidelines/act/rules/c4a8a4/proposed/)
 - [Iframe element has non-empty accessible name](/standards-guidelines/act/rules/cae760/proposed/)
-- [Element with lang attribute has valid language tag](/standards-guidelines/act/rules/de46e4/proposed/)
 - [Element with lang attribute has valid language tag](/standards-guidelines/act/rules/de46e4/proposed/)
 - [Links with identical accessible names and same context serve equivalent purpose](/standards-guidelines/act/rules/fd3a94/proposed/)
 - [HTML element language subtag matches language](/standards-guidelines/act/rules/off6ek/proposed/)
