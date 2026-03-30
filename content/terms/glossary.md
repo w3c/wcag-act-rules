@@ -30,7 +30,7 @@ For more details, see [examples of accessible name][].
 
 **Note:** As per the [accessible name and description computation][], accessible names are [flat string](https://www.w3.org/TR/accname-1.1/#terminology) trimmed of leading and trailing whitespace. Notably, it is not possible for a non-empty accessible name to be composed only of whitespace since these must be trimmed.
 
-#### Accessibility Support
+### Accessibility Support
 
 - Because the [accessible name and description computation][] is not clear about which whitespace are considered, browsers behave differently when trimming and flattening the accessible name. For example, some browsers completely trim non-breaking spaces while some keep them in the accessible name.
 - There exists a popular browser which does not perform the same trimming and flattening depending whether the accessible name comes from content, an `aria-label` attribute, or an `alt` attribute.
@@ -177,7 +177,7 @@ A _block of content_ in an [HTML web page][] is a set of nodes from that page fo
 - **downward closure**: if a node is in the block, then all its descendants are also in the block; and
 - **parent closure**: if all children of a node are in the block, then this node is also in the block.
 
-#### Assumptions
+### Assumptions
 
 This definition assumes that the rendering order of nodes on a page does not greatly differ from the DOM tree order. Otherwise, blocks of content as defined here may be different from what is visually perceived as "content in a close relationship".
 
@@ -198,7 +198,7 @@ A [block of content][] B, inside an [HTML web page][] P, is a _block of repeated
 - **distance 1**: there exist an [instrument][] in P which leads the user to another [HTML web page][] P' whose URL has a different [host][], [port][] (including [default port][] for [special URL][]), or [path][]; and
 - **repeated**: there exist a [block of content][] in P' which is [equivalent][equivalent resource] to B.
 
-#### Background
+### Background
 
 This definition only considers pages at "distance 1" from the current page. The instrument leading there is usually a link, sometimes a button. In addition, P' can be any page and is not restricted, for example, to pages of the same website.
 
@@ -311,7 +311,7 @@ An element is _disabled_ when it has been rendered [inoperable][] in one or more
 
 2. The element has a [shadow-including ancestor][] whose `aria-disabled` [attribute value][] is "true".
 
-#### Assumptions
+### Assumptions
 
 This definition assumes that when the `aria-disabled` attribute is specified on an element, this element has also been disabled for users that do not rely on [assistive technology][]. For example, this can be done by disabling pointer events using the `pointer-events` property and by disabling keyboard interactions using the `tabindex` attribute. If this is not the case, the definition will produce incorrect results.
 
@@ -406,7 +406,7 @@ The [role attribute][] takes a list of tokens. The explicit semantic role is the
 
 Other roles may be added as they become available. Not all roles will be supported in all assistive technologies. Testers are encouraged to adjust which roles are allowed according to the [accessibility support base line][]. For the purposes of executing examples in all rules, it should be assumed that all roles are supported by assistive technologies so that none of the roles fail due to lack of accessibility support.
 
-#### Accessibility Support
+### Accessibility Support
 
 Some browsers and assistive technologies treat the tokens of the `role` attribute as case-sensitive. Unless lowercase letters are used for the value of the `role` attribute, not all user agents will be able to interpret the tokens correctly. [ARIA in HTML](https://www.w3.org/TR/html-aria/) also specifies that [authors must use lowercase letters for the `role` and `aria-*` attributes](https://www.w3.org/TR/html-aria/#case-sensitivity).
 
@@ -604,7 +604,7 @@ The highest value of the [contrast ratios][contrast ratio] between two sets of c
 
 A [node][] is <dfn>Horizontally Clipped by Overflow</dfn> if it has an [ancestor][] in the [flat tree][] with a [computed][] [overflow-x][] of `hidden` or `clip`, where changing the [overflow-x][] of all such [ancestors][ancestor] to `visible` would cause more of the [node][] to become [visible][].
 
-#### Example of Horizontally Clipped by Overflow
+### Example of Horizontally Clipped by Overflow
 
 This `img` element has an [ancestor][] `div` element with an `overflow-x` of `hidden`. The width of the `img` is greater than that of the [ancestor][] `div`, and so is clipped by the `overflow-x` property of the `div`.
 
@@ -630,7 +630,7 @@ The _implicit semantic role_ of an element is a pre-defined value given by the h
 
 Implicit roles for HTML and SVG, are documented in the [HTML accessibility API mappings (working draft)](https://www.w3.org/TR/html-aam/#html-element-role-mappings) and the [SVG accessibility API mappings (working draft)](https://www.w3.org/TR/svg-aam/#mapping_role_table).
 
-#### Accessibility Support
+### Accessibility Support
 
 - Images with an empty `alt` attribute (`alt=""`) should have an implicit role of `presentation`, according to the [HTML Accessibility API Mapping (work in progress)](https://www.w3.org/TR/html-aam-1.0/#html-element-role-mappings). However, there are several popular browsers that do not treat images with empty `alt` attribute as having a role of `presentation`. Instead, they add the `img` element to the accessibility tree with a role of either `img` or `graphic`.
 
@@ -807,7 +807,7 @@ An [HTML element][] that when [activated][] allows an end-user to achieve an obj
 
 **Note**: Any rule that uses this definition must provide an unambiguous description of the objective the instrument is used to achieve.
 
-#### Background About Instrument
+### Background About Instrument
 
 This definition is a more restrictive version of WCAG's definition of [mechanism][], notably restricting it to the current document. WCAG has a note that "The mechanism needs to meet all success criteria for the conformance level claimed." This includes all the level A criteria such as [Success Criterion 2.1.1 Keyboard][sc211] (the mechanism must be keyboard accessible) or [Success Criterion 4.1.2 Name, Role, Value][sc412] (the mechanism must be exposed to assistive technologies and have an accessible name). This definition, and the rules using it, leaves these extra requirements out. This avoids reporting the same component twice for the same reason (e.g., missing an accessible name) under two different rules and Success Criteria, and helps pinpoint the error related to each Success Criterion. Instruments should nonetheless be fully accessible at the correct conformance level (depending on the rule using them).
 
@@ -858,7 +858,7 @@ A text node is large scale text if at least one of the following is true:
 - the text node [computed][] [font-size][] is at least 14 [points][] and has a [computed][] [font weight][] of 700 or higher.
 
 
-#### Background
+### Background
 In the domain of languages such as Chinese, Japanese, and Korean (CJK languages), encompassing the Unicode character range from 4E00 to 9FFF ([CJK Unified Ideographs](https://unicode.org/charts/PDF/U4E00.pdf)), it becomes crucial to acknowledge the intricate nuances in their typographic requirements. Despite sharing a common Unicode spectrum, each CJK language and its corresponding country may exhibit distinct typographic preferences and standards.
 
 Particularly noteworthy is the lack of uniformity in defining text sizes as either large or small within the following ranges:
@@ -1193,7 +1193,7 @@ A node is _perceivable content_ if all the following are true:
 
 Perceivable content corresponds to nodes that contain information and are perceived by some categories of users.
 
-#### Assumptions
+### Assumptions
 
 This definition assumes that elements with a [semantic role][] of `none` or `presentation` are [pure decoration][] and that elements which are [pure decoration][] either are not [included in the accessibility tree][] or have a [semantic role][] of `none` or `presentation`. Note that if this is not the case, then [Success Criterion 1.3.1: Info and Relationship][sc131] is likely not satisfied.
 
@@ -1469,7 +1469,7 @@ The _semantic role_ of an element is determined by the first of these cases that
 
 This definition can be used in expressions such as "semantic `button`" meaning any element with a semantic role of `button`.
 
-#### Accessibility Support for Definition of Semantic Role
+### Accessibility Support for Definition of Semantic Role
 
 - There exist popular web browsers and assistive technologies which do not correctly implement [Presentational Roles Conflict Resolution][]. These technologies will not [include in the accessibility tree][included in the accessibility tree] elements that should be, according to Specifications. Thus, some elements that should have their _semantic role_ fixed by case **Conflict** above are instead falling into case **Explicit** and are hidden for users of assistive technologies.
 - A similar conflict exists for [focusable][] elements with a `aria-hidden="true"` attribute. The WAI ARIA specification does not explain how to solve it. Some browsers give precedence to the element being focusable (and expose it in the accessibility tree) while some give precedence to the `aria-hidden` attribute (and hide the element).
@@ -1627,7 +1627,7 @@ This list comprises the [User Interface event][uievents] that are generated by t
 
 A [node][] is <dfn>Vertically Clipped by Overflow</dfn> if it has an [ancestor][] in the [flat tree][] with a [computed][] [overflow-y][] of `hidden` or `clip`, where changing the [overflow-y][] of all such [ancestors][ancestor] to `visible` would cause more of the [node][] to become [visible][].
 
-#### Example of Vertically Clipped by Overflow
+### Example of Vertically Clipped by Overflow
 
 This `img` element has an [ancestor][] `div` element with an `overflow-y` of `hidden`. The height of the `img` is greater than that of the [ancestor][] `div`, and so is clipped by the `overflow-y` property of the `div`.
 
