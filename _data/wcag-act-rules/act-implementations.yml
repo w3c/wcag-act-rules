@@ -195,7 +195,7 @@
   homepage: https://github.com/AccessLint/core
   vendorHomepage: https://github.com/AccessLint/
   uniqueKey: accesslint-core
-  type: Linter
+  type: Automated tool
   standards:
     - WCAG 2.2 Level A, AA, AAA
   jsonReport: https://raw.githubusercontent.com/AccessLint/core/gh-pages/earl-report-browser.json
