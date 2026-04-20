@@ -1,7 +1,8 @@
 {
   "vendor": "accesslint",
-  "name": "@accesslint/core",
+  "name": "@accesslint/Core",
   "version": "0.8.8",
+  "lastModified": "20 April 2026",
   "approvedRules": {
     "complete": 4,
     "partial": 28,
