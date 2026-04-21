@@ -192,7 +192,7 @@
 
 - name: "@accesslint/Core"
   vendor: accesslint
-  homepage: https://github.com/AccessLint/core
+  homepage: https://github.com/AccessLint/accesslint
   vendorHomepage: https://github.com/AccessLint/
   uniqueKey: accesslint-core
   type: Automated tool
