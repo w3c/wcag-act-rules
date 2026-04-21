@@ -1,6 +1,6 @@
 ---
 layout: act_implementation
-title: "UsableNet AQA ACT Semi-autoamted Implementation"
+title: "UsableNet AQA ACT Semi-automated Implementation"
 permalink: /standards-guidelines/act/implementations/usablenet-aqa-semi-auto/
 ref: /standards-guidelines/act/implementations/usablenet-aqa-semi-auto/
 implementation_key: usablenet-aqa-semi-auto
