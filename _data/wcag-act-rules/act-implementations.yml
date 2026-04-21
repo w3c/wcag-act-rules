@@ -190,7 +190,7 @@
     - WCAG 2.2 Level A, AA, AAA
   jsonReport: http://help.usablenet.com/aqa-act-r/reports/UsableNet-AQA-WCAG2.2-semi-auto.json
 
-- name: "@accesslint/Core"
+- name: "@accesslint/core"
   vendor: accesslint
   homepage: https://github.com/AccessLint/accesslint
   vendorHomepage: https://github.com/AccessLint/
