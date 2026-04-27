@@ -5,15 +5,15 @@
     "Assertor"
   ],
   "name": "@accesslint/core",
-  "shortdesc": "WCAG 2.1 accessibility testing engine for browsers and DOM environments",
-  "description": "Automated accessibility testing engine covering WCAG 2.1 Level A, AA, and AAA. Runs in any browser or DOM environment with zero dependencies.",
-  "homepage": "https://github.com/AccessLint/core",
-  "license": "https://raw.githubusercontent.com/AccessLint/core/main/LICENSE",
+  "shortdesc": "Pure accessibility rule engine with zero browser dependencies",
+  "description": "Automated WCAG 2.2 accessibility testing engine covering Level A and AA, with best-practice rules included. Runs in any browser or DOM environment with zero dependencies.",
+  "homepage": "https://github.com/AccessLint/accesslint/tree/main/core",
+  "license": "https://raw.githubusercontent.com/AccessLint/accesslint/main/core/LICENSE",
   "vendor": "AccessLint",
   "release": {
     "@type": "Version",
-    "revision": "0.8.8",
-    "created": "2026-04-17"
+    "revision": "0.11.1",
+    "created": "2026-04-26"
   },
   "assertedThat": [
     {
