@@ -9,9 +9,8 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> efbfc7</p>
-  <p><strong>Date:</strong> Updated 19 January 2026</p>
+  <p><strong>Date:</strong> Updated 7 May 2026</p>
   <p><strong>Authors:</strong> <a href="https://github.com/carlosapaduarte">Carlos Duarte</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
-  <p>This rule conforms to <a href="https://www.w3.org/TR/act-rules-format-1.1/">ACT Rules Format 1.1</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
 rule_meta:
@@ -21,7 +20,7 @@ rule_meta:
   original_file: auto-update-text-efbfc7.md
   description: |
     This rule checks that for any text content that regularly changes automatically, there are instruments to pause, stop, or hide it or to control its changing frequency.
-  last_modified: 19 January 2026
+  last_modified: 7 May 2026
   scs_tested:
     - handle: Pause, Stop, Hide
       num: 2.2.2
@@ -109,7 +108,7 @@ The following aspects are required in using this rule.
 - [DOM Tree](https://www.w3.org/TR/act-rules-aspects/#input-aspects-dom)
 - [CSS Styling](https://www.w3.org/TR/act-rules-aspects/#input-aspects-css)
 
-## Examples
+## Test Cases
 
 <details class="act-inline-assets" markdown="block">
 <summary><span>This Javascript file is used in several examples:</span></summary>

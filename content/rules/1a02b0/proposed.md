@@ -9,9 +9,8 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 1a02b0</p>
-  <p><strong>Date:</strong> Updated 19 January 2026</p>
+  <p><strong>Date:</strong> Updated 7 May 2026</p>
   <p><strong>Authors:</strong> <a href="https://www.linkedin.com/in/brianbors/">Brian Bors</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
-  <p>This rule conforms to <a href="https://www.w3.org/TR/act-rules-format-1.1/">ACT Rules Format 1.1</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
   
   <p><strong>Assets:</strong> Test cases use assets from the following sources: Rabbit video is © copyright 2008, Blender Foundation / <a href="https://www.bigbuckbunny.org">www.bigbuckbunny.org</a></p>
@@ -23,7 +22,7 @@ rule_meta:
   original_file: video-transcript-1a02b0.md
   description: |
     This rule checks that non-streaming `video` elements have all audio and visual information available in a transcript.
-  last_modified: 19 January 2026
+  last_modified: 7 May 2026
   scs_tested:
     - handle: Media Alternative (Prerecorded)
       num: 1.2.8
@@ -109,7 +108,7 @@ The following aspects are required in using this rule.
 - Visual output (no link available)
 - [Language](https://www.w3.org/TR/act-rules-aspects/#input-aspects-text)
 
-## Examples
+## Test Cases
 
 <details class="act-inline-assets" markdown="block">
 <summary><span>These HTML files are used in several examples:</span></summary>
@@ -219,7 +218,12 @@ A video element with an associated track element that contains captions for all 
 	<video src="/test-assets/perspective-video/perspective-video.mp4" controls>
 		<track src="/test-assets/perspective-video/perspective-caption.vtt" kind="captions" />
 	</video>
-	<p>	Web Accessibility Perspectives: Keyboard Accessibility. Not being able to use your computer because your mouse doesn't work, is frustrating. (A computer user's mouse breaks when it falls off the desk.) Many people use only the keyboard to navigate websites. Either through preference or 		circumstance. (A person wearing a sling on her arm typing with one hand.) </p>
+	<p>
+		Web Accessibility Perspectives: Keyboard Accessibility. Not being able to use your computer because your mouse
+		doesn't work, is frustrating. (A computer user's mouse breaks when it falls off the desk.) Many people use only the
+		keyboard to navigate websites. Either through preference or circumstance. (A person wearing a sling on her arm
+		typing with one hand.)
+	</p>
 </html>
 ```
 

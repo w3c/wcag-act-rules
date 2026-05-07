@@ -9,9 +9,8 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> b49b2e</p>
-  <p><strong>Date:</strong> Updated 19 January 2026</p>
+  <p><strong>Date:</strong> Updated 7 May 2026</p>
   <p><strong>Authors:</strong> <a href="https://github.com/carlosapaduarte">Carlos Duarte</a>, <a href="https://github.com/DagfinnRomen">Dagfinn Rømen</a>, <a href="https://github.com/geirsf">Geir Sindre Fossøy</a>, <a href="https://github.com/Jym77">Jean-Yves Moyen</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
-  <p>This rule conforms to <a href="https://www.w3.org/TR/act-rules-format-1.1/">ACT Rules Format 1.1</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 proposed: true
 rule_meta:
@@ -21,7 +20,7 @@ rule_meta:
   original_file: heading-descriptive-b49b2e.md
   description: |
     This rule checks that headings describe the topic or purpose of the content.
-  last_modified: 19 January 2026
+  last_modified: 7 May 2026
   scs_tested:
     - handle: Headings and Labels
       num: 2.4.6
@@ -44,9 +43,9 @@ Headings that are visible but not in the accessibility tree are a failure of [Su
 
 ### Assumptions
 
-This rule assumes that the [flat tree][] order is close to the reading order as elements are rendered on the page. Due to positioning, it is possible to render a document in an order that greatly differs from the tree order, in which case the content which is visually associated with a heading might not be the content following it in tree order and this rule might fail while [Success Criterion 2.4.6 Headings and Label][sc246] is still satisfied.
+This rule assumes that the [flat tree][] order is close to the reading order as elements are rendered on the page. Due to positioning, it is possible to render a document in an order that greatly differs from the tree order, in which case the content which is visually associated with a heading might not be the content following it in tree order and this rule might fail while [Success Criterion 2.4.6 Headings and Labels][sc246] is still satisfied.
 
-This rule also assumes that the content the heading is intended to describe is [visible][] and not hidden from assistive technologies. Otherwise, cases such as expandable content using a heading might fail this rule while [Success Criterion 2.4.6 Headings and Label][sc246] is still satisfied.
+This rule also assumes that the content the heading is intended to describe is [visible][] and not hidden from assistive technologies. Otherwise, cases such as expandable content using a heading might fail this rule while [Success Criterion 2.4.6 Headings and Labels][sc246] is still satisfied.
 
 ### Accessibility Support
 
@@ -87,7 +86,7 @@ The following aspects are required in using this rule.
 - [CSS Styling](https://www.w3.org/TR/act-rules-aspects/#input-aspects-css)
 - [Language](https://www.w3.org/TR/act-rules-aspects/#input-aspects-text)
 
-## Examples
+## Test Cases
 
 ### Passed
 
