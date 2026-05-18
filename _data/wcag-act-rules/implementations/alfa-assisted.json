@@ -2,10 +2,10 @@
   "vendor": "Siteimprove",
   "name": "Alfa (semi-automated)",
   "version": "0.114.3",
-  "lastModified": "12 May 2026",
+  "lastModified": "18 May 2026",
   "approvedRules": {
-    "complete": 28,
-    "partial": 1,
+    "complete": 29,
+    "partial": 0,
     "inconsistent": 6,
     "untested": 2
   },
@@ -6159,16 +6159,15 @@
       "procedureNames": [
         "sia-r47"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:resize-text"
         ],
         "reported": [
           "WCAG2:resize-text",
-          "/",
-          "WCAG2:reflow"
+          "/"
         ]
       },
       "coverage": {

@@ -58615,15 +58615,6 @@
             "TestCriterion",
             "TestRequirement"
           ]
-        },
-        {
-          "@id": "WCAG2:reflow",
-          "@type": [
-            "TestCriterion",
-            "TestRequirement"
-          ],
-          "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-          "title": "Reflow"
         }
       ]
     },
