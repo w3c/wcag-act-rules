@@ -70,7 +70,7 @@
       "name": "Alfa",
       "release": {
         "@type": "Version",
-        "revision": "0.114.3"
+        "revision": "0.115.1"
       },
       "doap:url": "https://alfa.siteimprove.com"
     },
@@ -2531,81 +2531,6 @@
       },
       "test": {
         "@id": "https://alfa.siteimprove.com/rules/sia-r81"
-      }
-    },
-    {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59br37/c5cd793a4f7c929182a1302f1bb8c1e43508de1b.html",
-      "@type": "TestSubject",
-      "dct:hasPart": [
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Request"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": ""
-          },
-          "http-vocab:headers": {
-            "@list": []
-          },
-          "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59br37/c5cd793a4f7c929182a1302f1bb8c1e43508de1b.html"
-        },
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Response"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Failed Example 1</title>\n</head>\n<body>\n\t<div style=\"overflow: hidden; height: 1.5em; font-size: 16px;\">\n\t\tOnce upon a midnight dreary, while I pondered, weak and weary, Over many a quaint and curious volume of forgotten\n\t\tlore. While I nodded, nearly napping, suddenly there came a tapping.\n\t</div>\n</body>\n</html>"
-          },
-          "http-vocab:headers": {
-            "@list": [
-              {
-                "@type": "http-vocab:MessageHeader",
-                "http-vocab:fieldName": "content-type",
-                "http-vocab:fieldValue": "text/html; charset=utf-8"
-              }
-            ]
-          },
-          "http-vocab:statusCodeValue": 200
-        }
-      ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59br37/c5cd793a4f7c929182a1302f1bb8c1e43508de1b.html"
-    },
-    {
-      "@type": "Assertion",
-      "earl:assertedBy": "Alfa",
-      "earl:mode": "earl:automatic",
-      "result": {
-        "@type": "TestResult",
-        "info": "The text is wrapped without being clipped",
-        "outcome": "earl:passed",
-        "earl:pointer": {
-          "@type": [
-            "ptr:Pointer",
-            "ptr:SinglePointer",
-            "ptr:ExpressionPointer",
-            "ptr:XPathPointer"
-          ],
-          "ptr:expression": "/html[1]/body[1]/div[1]/text()[1]"
-        }
-      },
-      "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59br37/c5cd793a4f7c929182a1302f1bb8c1e43508de1b.html"
-      },
-      "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r83"
       }
     },
     {
@@ -6072,81 +5997,6 @@
       },
       "test": {
         "@id": "https://alfa.siteimprove.com/rules/sia-r81"
-      }
-    },
-    {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59br37/f6c5d3bf4a33699dfa4d53d1949c262df1021735.html",
-      "@type": "TestSubject",
-      "dct:hasPart": [
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Request"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": ""
-          },
-          "http-vocab:headers": {
-            "@list": []
-          },
-          "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59br37/f6c5d3bf4a33699dfa4d53d1949c262df1021735.html"
-        },
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Response"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Passed Example 3</title>\n</head>\n<body>\n\t<style>\n\t\t.wordClip {\n\t\t\toverflow: hidden;\n\t\t\tword-wrap: break-word;\n\t\t\theight: 16px;\n\t\t\tline-height: 16px;\n\t\t\tfont-size: 16px;\n\t\t}\n\t</style>\n\t<div class=\"wordClip\">\n\t\tOnce upon a midnight dreary, while I pondered, weak and weary, Over many a quaint and curious volume of forgotten\n\t\tlore. While I nodded, nearly napping, suddenly there came a tapping.\n\t</div>\n\t<a href=\"/WAI/content-assets/wcag-act-rules/test-assets/59br37/poem.html\">Full text of the poem</a>\n</body>\n</html>"
-          },
-          "http-vocab:headers": {
-            "@list": [
-              {
-                "@type": "http-vocab:MessageHeader",
-                "http-vocab:fieldName": "content-type",
-                "http-vocab:fieldValue": "text/html; charset=utf-8"
-              }
-            ]
-          },
-          "http-vocab:statusCodeValue": 200
-        }
-      ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59br37/f6c5d3bf4a33699dfa4d53d1949c262df1021735.html"
-    },
-    {
-      "@type": "Assertion",
-      "earl:assertedBy": "Alfa",
-      "earl:mode": "earl:automatic",
-      "result": {
-        "@type": "TestResult",
-        "info": "The text is clipped",
-        "outcome": "earl:failed",
-        "earl:pointer": {
-          "@type": [
-            "ptr:Pointer",
-            "ptr:SinglePointer",
-            "ptr:ExpressionPointer",
-            "ptr:XPathPointer"
-          ],
-          "ptr:expression": "/html[1]/body[1]/div[1]/text()[1]"
-        }
-      },
-      "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59br37/f6c5d3bf4a33699dfa4d53d1949c262df1021735.html"
-      },
-      "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r83"
       }
     },
     {
@@ -9672,81 +9522,6 @@
       },
       "test": {
         "@id": "https://alfa.siteimprove.com/rules/sia-r81"
-      }
-    },
-    {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59br37/47d2a65e7d1fcc2ac9457a6283e35e82d68aa3ce.html",
-      "@type": "TestSubject",
-      "dct:hasPart": [
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Request"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": ""
-          },
-          "http-vocab:headers": {
-            "@list": []
-          },
-          "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59br37/47d2a65e7d1fcc2ac9457a6283e35e82d68aa3ce.html"
-        },
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Response"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Passed Example 2</title>\n</head>\n<body>\n\t<div style=\"white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 16px;\">\n\t\tOnce upon a midnight dreary, while I pondered, weak and weary, Over many a quaint and curious volume of forgotten\n\t\tlore. While I nodded, nearly napping, suddenly there came a tapping.\n\t</div>\n\t<a href=\"/WAI/content-assets/wcag-act-rules/test-assets/59br37/poem.html\">Full text of the poem</a>\n</body>\n</html>"
-          },
-          "http-vocab:headers": {
-            "@list": [
-              {
-                "@type": "http-vocab:MessageHeader",
-                "http-vocab:fieldName": "content-type",
-                "http-vocab:fieldValue": "text/html; charset=utf-8"
-              }
-            ]
-          },
-          "http-vocab:statusCodeValue": 200
-        }
-      ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59br37/47d2a65e7d1fcc2ac9457a6283e35e82d68aa3ce.html"
-    },
-    {
-      "@type": "Assertion",
-      "earl:assertedBy": "Alfa",
-      "earl:mode": "earl:automatic",
-      "result": {
-        "@type": "TestResult",
-        "info": "The text is wrapped without being clipped",
-        "outcome": "earl:passed",
-        "earl:pointer": {
-          "@type": [
-            "ptr:Pointer",
-            "ptr:SinglePointer",
-            "ptr:ExpressionPointer",
-            "ptr:XPathPointer"
-          ],
-          "ptr:expression": "/html[1]/body[1]/div[1]/text()[1]"
-        }
-      },
-      "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59br37/47d2a65e7d1fcc2ac9457a6283e35e82d68aa3ce.html"
-      },
-      "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r83"
       }
     },
     {
@@ -13306,81 +13081,6 @@
       }
     },
     {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59br37/bf6c2877d53f69c82720898bfe0417e37a01cd53.html",
-      "@type": "TestSubject",
-      "dct:hasPart": [
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Request"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": ""
-          },
-          "http-vocab:headers": {
-            "@list": []
-          },
-          "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59br37/bf6c2877d53f69c82720898bfe0417e37a01cd53.html"
-        },
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Response"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Passed Example 1</title>\n</head>\n<body>\n\t<div style=\"white-space: nowrap; overflow: hidden; font-size: 16px;\">\n\t\tOnce upon a midnight dreary, while I pondered, weak and weary,<br />\n\t\tOver many a quaint and curious volume of forgotten lore.<br />\n\t\tWhile I nodded, nearly napping, suddenly there came a tapping,<br />\n\t\tAs of some one gently rapping, rapping at my chamber door.<br />\n\t\t“’Tis some visitor,” I muttered, “tapping at my chamber door.<br />\n\t\tOnly this and nothing more.”\n\t</div>\n</body>\n</html>"
-          },
-          "http-vocab:headers": {
-            "@list": [
-              {
-                "@type": "http-vocab:MessageHeader",
-                "http-vocab:fieldName": "content-type",
-                "http-vocab:fieldValue": "text/html; charset=utf-8"
-              }
-            ]
-          },
-          "http-vocab:statusCodeValue": 200
-        }
-      ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59br37/bf6c2877d53f69c82720898bfe0417e37a01cd53.html"
-    },
-    {
-      "@type": "Assertion",
-      "earl:assertedBy": "Alfa",
-      "earl:mode": "earl:automatic",
-      "result": {
-        "@type": "TestResult",
-        "info": "The text is wrapped without being clipped",
-        "outcome": "earl:passed",
-        "earl:pointer": {
-          "@type": [
-            "ptr:Pointer",
-            "ptr:SinglePointer",
-            "ptr:ExpressionPointer",
-            "ptr:XPathPointer"
-          ],
-          "ptr:expression": "/html[1]/body[1]/div[1]/text()[1]"
-        }
-      },
-      "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59br37/bf6c2877d53f69c82720898bfe0417e37a01cd53.html"
-      },
-      "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r83"
-      }
-    },
-    {
       "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/0ssw9k/270a22a8e4ce4d9f073e1484a0d807705207a1d7.html",
       "@type": "TestSubject",
       "dct:hasPart": [
@@ -16251,7 +15951,7 @@
             "ptr:ExpressionPointer",
             "ptr:XPathPointer"
           ],
-          "ptr:expression": "/html[1]/body[1]/table[1]/tbody[1]/tr[1]/td[1]/@headers"
+          "ptr:expression": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/@headers"
         }
       },
       "subject": {
@@ -16952,71 +16652,6 @@
       },
       "test": {
         "@id": "https://alfa.siteimprove.com/rules/sia-r81"
-      }
-    },
-    {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59br37/6331217170b53156f0e8e17d771a1bdf4edb329d.html",
-      "@type": "TestSubject",
-      "dct:hasPart": [
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Request"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": ""
-          },
-          "http-vocab:headers": {
-            "@list": []
-          },
-          "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59br37/6331217170b53156f0e8e17d771a1bdf4edb329d.html"
-        },
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Response"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Inapplicable Example 1</title>\n</head>\n<body>\n\t<p style=\"display:none;\">Last updated 2020/03/27 10:52pm</p>\n</body>\n</html>"
-          },
-          "http-vocab:headers": {
-            "@list": [
-              {
-                "@type": "http-vocab:MessageHeader",
-                "http-vocab:fieldName": "content-type",
-                "http-vocab:fieldValue": "text/html; charset=utf-8"
-              }
-            ]
-          },
-          "http-vocab:statusCodeValue": 200
-        }
-      ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59br37/6331217170b53156f0e8e17d771a1bdf4edb329d.html"
-    },
-    {
-      "@type": "Assertion",
-      "earl:assertedBy": "Alfa",
-      "earl:mode": "earl:automatic",
-      "result": {
-        "@type": "TestResult",
-        "outcome": "earl:inapplicable"
-      },
-      "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59br37/6331217170b53156f0e8e17d771a1bdf4edb329d.html"
-      },
-      "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r83"
       }
     },
     {
@@ -20457,71 +20092,6 @@
       }
     },
     {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59br37/914f51f7683a69d3055aab93f9b8d4a9c018158c.html",
-      "@type": "TestSubject",
-      "dct:hasPart": [
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Request"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": ""
-          },
-          "http-vocab:headers": {
-            "@list": []
-          },
-          "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59br37/914f51f7683a69d3055aab93f9b8d4a9c018158c.html"
-        },
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Response"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Inapplicable Example 4</title>\n</head>\n<body>\n\t<img src=\"/WAI/content-assets/wcag-act-rules/test-assets/shared/w3c-logo.png\" alt=\"W3C logo\" /> <span aria-hidden=\"true\">(W3C Logo)</span>\n</body>\n</html>"
-          },
-          "http-vocab:headers": {
-            "@list": [
-              {
-                "@type": "http-vocab:MessageHeader",
-                "http-vocab:fieldName": "content-type",
-                "http-vocab:fieldValue": "text/html; charset=utf-8"
-              }
-            ]
-          },
-          "http-vocab:statusCodeValue": 200
-        }
-      ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59br37/914f51f7683a69d3055aab93f9b8d4a9c018158c.html"
-    },
-    {
-      "@type": "Assertion",
-      "earl:assertedBy": "Alfa",
-      "earl:mode": "earl:automatic",
-      "result": {
-        "@type": "TestResult",
-        "outcome": "earl:inapplicable"
-      },
-      "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59br37/914f51f7683a69d3055aab93f9b8d4a9c018158c.html"
-      },
-      "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r83"
-      }
-    },
-    {
       "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/0ssw9k/5d06e0832a2a97d6dd2e5657f00dcb93c584135b.html",
       "@type": "TestSubject",
       "dct:hasPart": [
@@ -21092,17 +20662,7 @@
       "earl:mode": "earl:automatic",
       "result": {
         "@type": "TestResult",
-        "info": "The iframe has a negative tabindex",
-        "outcome": "earl:failed",
-        "earl:pointer": {
-          "@type": [
-            "ptr:Pointer",
-            "ptr:SinglePointer",
-            "ptr:ExpressionPointer",
-            "ptr:XPathPointer"
-          ],
-          "ptr:expression": "/html[1]/body[1]/iframe[1]"
-        }
+        "outcome": "earl:inapplicable"
       },
       "subject": {
         "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/akn7bn/17a371c470316dc29e424101065ebfe9f7b2e990.html"
@@ -23949,71 +23509,6 @@
       },
       "test": {
         "@id": "https://alfa.siteimprove.com/rules/sia-r81"
-      }
-    },
-    {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59br37/ef39fe61d9b0093a3a886c3482d69adc7aeabd52.html",
-      "@type": "TestSubject",
-      "dct:hasPart": [
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Request"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": ""
-          },
-          "http-vocab:headers": {
-            "@list": []
-          },
-          "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59br37/ef39fe61d9b0093a3a886c3482d69adc7aeabd52.html"
-        },
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Response"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Failed Example 3</title>\n</head>\n<body>\n\t<style>\n\t\t@media screen and (max-width: 640px) {\n\t\t\t.myContainer {\n\t\t\t\theight: 1.5em;\n\t\t\t\twidth: 50%;\n\t\t\t\toverflow: hidden;\n\t\t\t\tfont-size: 16px;\n\t\t\t}\n\t\t}\n\t</style>\n\t<div class=\"myContainer\">\n\t\tOnce upon a midnight dreary, while I pondered, weak and weary, Over many a quaint and curious volume of forgotten\n\t\tlore. While I nodded, nearly napping, suddenly there came a tapping, As of some one gently rapping, rapping at my\n\t\tchamber door. “’Tis some visitor,” I muttered, “tapping at my chamber door. Only this and nothing more.”\n\t</div>\n</body>\n</html>"
-          },
-          "http-vocab:headers": {
-            "@list": [
-              {
-                "@type": "http-vocab:MessageHeader",
-                "http-vocab:fieldName": "content-type",
-                "http-vocab:fieldValue": "text/html; charset=utf-8"
-              }
-            ]
-          },
-          "http-vocab:statusCodeValue": 200
-        }
-      ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59br37/ef39fe61d9b0093a3a886c3482d69adc7aeabd52.html"
-    },
-    {
-      "@type": "Assertion",
-      "earl:assertedBy": "Alfa",
-      "earl:mode": "earl:automatic",
-      "result": {
-        "@type": "TestResult",
-        "outcome": "earl:inapplicable"
-      },
-      "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59br37/ef39fe61d9b0093a3a886c3482d69adc7aeabd52.html"
-      },
-      "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r83"
       }
     },
     {
@@ -27353,71 +26848,6 @@
       }
     },
     {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59br37/881897444deae644139c4b799b8eeb4b4b764c2a.html",
-      "@type": "TestSubject",
-      "dct:hasPart": [
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Request"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": ""
-          },
-          "http-vocab:headers": {
-            "@list": []
-          },
-          "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59br37/881897444deae644139c4b799b8eeb4b4b764c2a.html"
-        },
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Response"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Inapplicable Example 2</title>\n</head>\n<body>\n\t<svg>\n\t\t<text x=\"0\" y=\"15\">I love SVG!</text>\n\t</svg>\n</body>\n</html>"
-          },
-          "http-vocab:headers": {
-            "@list": [
-              {
-                "@type": "http-vocab:MessageHeader",
-                "http-vocab:fieldName": "content-type",
-                "http-vocab:fieldValue": "text/html; charset=utf-8"
-              }
-            ]
-          },
-          "http-vocab:statusCodeValue": 200
-        }
-      ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59br37/881897444deae644139c4b799b8eeb4b4b764c2a.html"
-    },
-    {
-      "@type": "Assertion",
-      "earl:assertedBy": "Alfa",
-      "earl:mode": "earl:automatic",
-      "result": {
-        "@type": "TestResult",
-        "outcome": "earl:inapplicable"
-      },
-      "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59br37/881897444deae644139c4b799b8eeb4b4b764c2a.html"
-      },
-      "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r83"
-      }
-    },
-    {
       "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/0ssw9k/89302c4f9eaf142418751a45e6dd025d5d294591.html",
       "@type": "TestSubject",
       "dct:hasPart": [
@@ -30674,71 +30104,6 @@
       }
     },
     {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59br37/ef943b4ae6afe659dfb257688f942099ed46907f.html",
-      "@type": "TestSubject",
-      "dct:hasPart": [
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Request"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": ""
-          },
-          "http-vocab:headers": {
-            "@list": []
-          },
-          "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59br37/ef943b4ae6afe659dfb257688f942099ed46907f.html"
-        },
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Response"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Inapplicable Example 3</title>\n</head>\n<body>\n\t<div style=\"overflow: auto; height: 1.5em; font-size: 16px;\">\n\t\tOnce upon a midnight dreary, while I pondered, weak and weary, Over many a quaint and curious volume of forgotten\n\t\tlore. While I nodded, nearly napping, suddenly there came a tapping.\n\t</div>\n</body>\n</html>"
-          },
-          "http-vocab:headers": {
-            "@list": [
-              {
-                "@type": "http-vocab:MessageHeader",
-                "http-vocab:fieldName": "content-type",
-                "http-vocab:fieldValue": "text/html; charset=utf-8"
-              }
-            ]
-          },
-          "http-vocab:statusCodeValue": 200
-        }
-      ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59br37/ef943b4ae6afe659dfb257688f942099ed46907f.html"
-    },
-    {
-      "@type": "Assertion",
-      "earl:assertedBy": "Alfa",
-      "earl:mode": "earl:automatic",
-      "result": {
-        "@type": "TestResult",
-        "outcome": "earl:inapplicable"
-      },
-      "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59br37/ef943b4ae6afe659dfb257688f942099ed46907f.html"
-      },
-      "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r83"
-      }
-    },
-    {
       "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/0ssw9k/997b49af2f0596bb505c7cbbfd501c0f2fa393a5.html",
       "@type": "TestSubject",
       "dct:hasPart": [
@@ -33731,81 +33096,6 @@
       }
     },
     {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59br37/758faeb173a6796691843ae93839928b23ae6378.html",
-      "@type": "TestSubject",
-      "dct:hasPart": [
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Request"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": ""
-          },
-          "http-vocab:headers": {
-            "@list": []
-          },
-          "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59br37/758faeb173a6796691843ae93839928b23ae6378.html"
-        },
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Response"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Failed Example 2</title>\n</head>\n<body>\n\t<div style=\"overflow: hidden; height: 16vh; font-size: 16px;\">\n\t\tOnce upon a midnight dreary, while I pondered, weak and weary,<br />\n\t\tOver many a quaint and curious volume of forgotten lore.<br />\n\t\tWhile I nodded, nearly napping, suddenly there came a tapping,<br />\n\t\tAs of some one gently rapping, rapping at my chamber door.<br />\n\t\t“’Tis some visitor,” I muttered, “tapping at my chamber door.<br />\n\t\tOnly this and nothing more.”\n\t</div>\n</body>\n</html>"
-          },
-          "http-vocab:headers": {
-            "@list": [
-              {
-                "@type": "http-vocab:MessageHeader",
-                "http-vocab:fieldName": "content-type",
-                "http-vocab:fieldValue": "text/html; charset=utf-8"
-              }
-            ]
-          },
-          "http-vocab:statusCodeValue": 200
-        }
-      ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59br37/758faeb173a6796691843ae93839928b23ae6378.html"
-    },
-    {
-      "@type": "Assertion",
-      "earl:assertedBy": "Alfa",
-      "earl:mode": "earl:automatic",
-      "result": {
-        "@type": "TestResult",
-        "info": "The text is wrapped without being clipped",
-        "outcome": "earl:passed",
-        "earl:pointer": {
-          "@type": [
-            "ptr:Pointer",
-            "ptr:SinglePointer",
-            "ptr:ExpressionPointer",
-            "ptr:XPathPointer"
-          ],
-          "ptr:expression": "/html[1]/body[1]/div[1]/text()[1]"
-        }
-      },
-      "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59br37/758faeb173a6796691843ae93839928b23ae6378.html"
-      },
-      "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r83"
-      }
-    },
-    {
       "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/0ssw9k/c5f649f91ebe4979270972db7c42279a74efc6c5.html",
       "@type": "TestSubject",
       "dct:hasPart": [
@@ -36122,7 +35412,7 @@
             "ptr:ExpressionPointer",
             "ptr:XPathPointer"
           ],
-          "ptr:expression": "/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[2]/@headers"
+          "ptr:expression": "/html[1]/body[1]/table[2]/tbody[1]/tr[1]/td[1]/@headers"
         }
       },
       "subject": {
@@ -36690,81 +35980,6 @@
       },
       "test": {
         "@id": "https://alfa.siteimprove.com/rules/sia-r81"
-      }
-    },
-    {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59br37/fc598e8d60950941aae5070b17eb4ca1d4bd3bdf.html",
-      "@type": "TestSubject",
-      "dct:hasPart": [
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Request"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": ""
-          },
-          "http-vocab:headers": {
-            "@list": []
-          },
-          "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59br37/fc598e8d60950941aae5070b17eb4ca1d4bd3bdf.html"
-        },
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Response"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Failed Example 4</title>\n</head>\n<body>\n\t<div style=\"overflow-y: hidden; height: 10px; white-space: nowrap; text-overflow: ellipsis; font-size: 16px;\">\n\t\tOnce upon a midnight dreary, while I pondered, weak and weary, Over many a quaint and curious volume of forgotten\n\t\tlore. While I nodded, nearly napping, suddenly there came a tapping.\n\t</div>\n</body>\n</html>"
-          },
-          "http-vocab:headers": {
-            "@list": [
-              {
-                "@type": "http-vocab:MessageHeader",
-                "http-vocab:fieldName": "content-type",
-                "http-vocab:fieldValue": "text/html; charset=utf-8"
-              }
-            ]
-          },
-          "http-vocab:statusCodeValue": 200
-        }
-      ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59br37/fc598e8d60950941aae5070b17eb4ca1d4bd3bdf.html"
-    },
-    {
-      "@type": "Assertion",
-      "earl:assertedBy": "Alfa",
-      "earl:mode": "earl:automatic",
-      "result": {
-        "@type": "TestResult",
-        "info": "The text is wrapped without being clipped",
-        "outcome": "earl:passed",
-        "earl:pointer": {
-          "@type": [
-            "ptr:Pointer",
-            "ptr:SinglePointer",
-            "ptr:ExpressionPointer",
-            "ptr:XPathPointer"
-          ],
-          "ptr:expression": "/html[1]/body[1]/div[1]/text()[1]"
-        }
-      },
-      "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59br37/fc598e8d60950941aae5070b17eb4ca1d4bd3bdf.html"
-      },
-      "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r83"
       }
     },
     {
@@ -39390,71 +38605,6 @@
       }
     },
     {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59br37/61c21364304e588dd3f30317bcee4224c31a61fb.html",
-      "@type": "TestSubject",
-      "dct:hasPart": [
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Request"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": ""
-          },
-          "http-vocab:headers": {
-            "@list": []
-          },
-          "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59br37/61c21364304e588dd3f30317bcee4224c31a61fb.html"
-        },
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Response"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Inapplicable Example 5</title>\n</head>\n<body>\n\t<style>\n\t\t@media screen and (max-width: 640px) {\n\t\t\t.mobile-hidden {\n\t\t\t\tposition: absolute;\n\t\t\t\twidth: 1px;\n\t\t\t\theight: 1px;\n\t\t\t\toverflow: hidden;\n\t\t\t\tfont-size: 16px;\n\t\t\t}\n\t\t}\n\t</style>\n\t<a href=\"/\"> Next<span class=\"mobile-hidden\">: Web Content Accessibility Guidelines 2.1</span> </a>\n</body>\n</html>"
-          },
-          "http-vocab:headers": {
-            "@list": [
-              {
-                "@type": "http-vocab:MessageHeader",
-                "http-vocab:fieldName": "content-type",
-                "http-vocab:fieldValue": "text/html; charset=utf-8"
-              }
-            ]
-          },
-          "http-vocab:statusCodeValue": 200
-        }
-      ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59br37/61c21364304e588dd3f30317bcee4224c31a61fb.html"
-    },
-    {
-      "@type": "Assertion",
-      "earl:assertedBy": "Alfa",
-      "earl:mode": "earl:automatic",
-      "result": {
-        "@type": "TestResult",
-        "outcome": "earl:inapplicable"
-      },
-      "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59br37/61c21364304e588dd3f30317bcee4224c31a61fb.html"
-      },
-      "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r83"
-      }
-    },
-    {
       "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/0ssw9k/bb9ee4cc0b4779228701779090f461ecb2947b82.html",
       "@type": "TestSubject",
       "dct:hasPart": [
@@ -41436,7 +40586,7 @@
             "ptr:ExpressionPointer",
             "ptr:XPathPointer"
           ],
-          "ptr:expression": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[2]/@headers"
+          "ptr:expression": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/@headers"
         }
       },
       "subject": {
@@ -42033,81 +41183,6 @@
       },
       "test": {
         "@id": "https://alfa.siteimprove.com/rules/sia-r81"
-      }
-    },
-    {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59br37/b17a15385fc63a75363c56ea30ff402056c1da8f.html",
-      "@type": "TestSubject",
-      "dct:hasPart": [
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Request"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": ""
-          },
-          "http-vocab:headers": {
-            "@list": []
-          },
-          "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59br37/b17a15385fc63a75363c56ea30ff402056c1da8f.html"
-        },
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Response"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Passed Example 4</title>\n</head>\n<body>\n\t<div style=\"overflow: hidden; height: 2em; font-size: 16px;\">\n\t\t<div style=\"overflow: auto; height: 2em;\">\n\t\t\tOnce upon a midnight dreary, while I pondered, weak and weary, Over many a quaint and curious volume of forgotten\n\t\t\tlore. While I nodded, nearly napping, suddenly there came a tapping.\n\t\t</div>\n\t</div>\n</body>\n</html>"
-          },
-          "http-vocab:headers": {
-            "@list": [
-              {
-                "@type": "http-vocab:MessageHeader",
-                "http-vocab:fieldName": "content-type",
-                "http-vocab:fieldValue": "text/html; charset=utf-8"
-              }
-            ]
-          },
-          "http-vocab:statusCodeValue": 200
-        }
-      ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59br37/b17a15385fc63a75363c56ea30ff402056c1da8f.html"
-    },
-    {
-      "@type": "Assertion",
-      "earl:assertedBy": "Alfa",
-      "earl:mode": "earl:automatic",
-      "result": {
-        "@type": "TestResult",
-        "info": "The text is wrapped without being clipped",
-        "outcome": "earl:passed",
-        "earl:pointer": {
-          "@type": [
-            "ptr:Pointer",
-            "ptr:SinglePointer",
-            "ptr:ExpressionPointer",
-            "ptr:XPathPointer"
-          ],
-          "ptr:expression": "/html[1]/body[1]/div[1]/div[1]/text()[1]"
-        }
-      },
-      "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59br37/b17a15385fc63a75363c56ea30ff402056c1da8f.html"
-      },
-      "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r83"
       }
     },
     {
@@ -44367,81 +43442,6 @@
       },
       "test": {
         "@id": "https://alfa.siteimprove.com/rules/sia-r81"
-      }
-    },
-    {
-      "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59br37/3665c0599c286b1b3060aee795009ab5b8942a14.html",
-      "@type": "TestSubject",
-      "dct:hasPart": [
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Request"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": ""
-          },
-          "http-vocab:headers": {
-            "@list": []
-          },
-          "http-vocab:methodName": "GET",
-          "http-vocab:requestURI": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59br37/3665c0599c286b1b3060aee795009ab5b8942a14.html"
-        },
-        {
-          "@type": [
-            "http-vocab:Message",
-            "http-vocab:Response"
-          ],
-          "http-vocab:body": {
-            "@type": [
-              "cnt:Content",
-              "cnt:ContentAsText"
-            ],
-            "cnt:characterEncoding": "utf-8",
-            "cnt:chars": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<title>Failed Example 5</title>\n</head>\n<body>\n\t<style>\n\t\t.wordClip {\n\t\t\toverflow-x: hidden;\n\t\t\twhite-space: nowrap;\n\t\t\ttext-overflow: clip;\n\t\t\twidth: 50px;\n\t\t\theight: 16px;\n\t\t\tline-height: 16px;\n\t\t\tfont-size: 16px;\n\t\t}\n\t</style>\n\t<div class=\"wordClip\">\n\t\tOnce upon a midnight dreary, while I pondered, weak and weary, Over many a quaint and curious volume of forgotten\n\t\tlore. While I nodded, nearly napping, suddenly there came a tapping.\n\t</div>\n</body>\n</html>"
-          },
-          "http-vocab:headers": {
-            "@list": [
-              {
-                "@type": "http-vocab:MessageHeader",
-                "http-vocab:fieldName": "content-type",
-                "http-vocab:fieldValue": "text/html; charset=utf-8"
-              }
-            ]
-          },
-          "http-vocab:statusCodeValue": 200
-        }
-      ],
-      "url": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59br37/3665c0599c286b1b3060aee795009ab5b8942a14.html"
-    },
-    {
-      "@type": "Assertion",
-      "earl:assertedBy": "Alfa",
-      "earl:mode": "earl:automatic",
-      "result": {
-        "@type": "TestResult",
-        "info": "The text is clipped",
-        "outcome": "earl:failed",
-        "earl:pointer": {
-          "@type": [
-            "ptr:Pointer",
-            "ptr:SinglePointer",
-            "ptr:ExpressionPointer",
-            "ptr:XPathPointer"
-          ],
-          "ptr:expression": "/html[1]/body[1]/div[1]/text()[1]"
-        }
-      },
-      "subject": {
-        "@id": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59br37/3665c0599c286b1b3060aee795009ab5b8942a14.html"
-      },
-      "test": {
-        "@id": "https://alfa.siteimprove.com/rules/sia-r83"
       }
     },
     {
@@ -47794,7 +46794,7 @@
             "ptr:ExpressionPointer",
             "ptr:XPathPointer"
           ],
-          "ptr:expression": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[2]/@headers"
+          "ptr:expression": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/td[1]/@headers"
         }
       },
       "subject": {
@@ -49317,7 +48317,7 @@
             "ptr:ExpressionPointer",
             "ptr:XPathPointer"
           ],
-          "ptr:expression": "/html[1]/body[1]/table[1]/tbody[1]/tr[2]/th[2]/@headers"
+          "ptr:expression": "/html[1]/body[1]/table[1]/tbody[1]/tr[3]/td[1]/@headers"
         }
       },
       "subject": {
@@ -58617,22 +57617,6 @@
           ]
         }
       ]
-    },
-    {
-      "@id": "https://alfa.siteimprove.com/rules/sia-r83",
-      "@type": [
-        "TestCriterion",
-        "TestCase"
-      ],
-      "isPartOf": {
-        "@id": "WCAG2:resize-text",
-        "@type": [
-          "TestCriterion",
-          "TestRequirement"
-        ],
-        "dct:isPartOf": "https://www.w3.org/TR/WCAG/",
-        "title": "Resize Text"
-      }
     },
     {
       "@id": "https://alfa.siteimprove.com/rules/sia-r9",
