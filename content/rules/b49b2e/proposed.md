@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> b49b2e</p>
-  <p><strong>Date:</strong> Updated 9 June 2026</p>
+  <p><strong>Date:</strong> Updated 18 May 2026</p>
   <p><strong>Authors:</strong> <a href="https://github.com/carlosapaduarte">Carlos Duarte</a>, <a href="https://github.com/DagfinnRomen">Dagfinn Rømen</a>, <a href="https://github.com/geirsf">Geir Sindre Fossøy</a>, <a href="https://github.com/Jym77">Jean-Yves Moyen</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule conforms to <a href="https://www.w3.org/TR/act-rules-format-1.1/">ACT Rules Format 1.1</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
@@ -21,7 +21,7 @@ rule_meta:
   original_file: heading-descriptive-b49b2e.md
   description: |
     This rule checks that headings describe the topic or purpose of the content.
-  last_modified: 9 June 2026
+  last_modified: 18 May 2026
   scs_tested:
     - handle: Headings and Labels
       num: 2.4.6
@@ -42,7 +42,7 @@ Each target element describes the topic or purpose of the first [perceivable con
 
 Headings that are visible but not in the accessibility tree are a failure of [Success Criterion 1.3.1 Info and Relationships][sc131]. These are not tested by this rule but they can still fail [Success Criterion 2.4.6 Headings and Labels][sc246].
 
-Testing tools treat empty headings `<h1></h1>` or `div role="heading" aria-level="1"></div>` differently. Some report that empty headings fail under 1.3.1 Info and Relationships or 2.4.6 Labels or Instructions. Other tools report that these headings pass because they are ignored by most assistive technologies and cause no accessibility barriers at all. This rule does not include examples of empty headings because there is currently no harmonized approach for testing them.
+Testing tools treat empty headings `<h1></h1>` or `div role="heading" aria-level="1"></div>` differently. Some fail empty headings under 1.3.1, others under 2.4.6, while others pass these headings because they are ignored by most assistive technologies causing no accessibility barriers at all. This rule doesn't include examples of empty headings because there is currently no harmonized approach for testing them.
 
 ### Assumptions
 
@@ -101,8 +101,8 @@ This `h1` heading element describes the topic of the following paragraph.
 
 ```html
 <html lang="en">
-	<h1>Opening Hours</h1>
-	<p>We are open Monday through Friday from 10 to 16</p>
+ <h1>Opening Hours</h1>
+ <p>We are open Monday through Friday from 10 to 16</p>
 </html>
 ```
 
@@ -114,8 +114,8 @@ This heading marked up with an [explicit role][] of `heading` describes the topi
 
 ```html
 <html lang="en">
-	<span role="heading" aria-level="1">Opening Hours</span>
-	<p>We are open Monday through Friday from 10 to 16</p>
+ <span role="heading" aria-level="1">Opening Hours</span>
+ <p>We are open Monday through Friday from 10 to 16</p>
 </html>
 ```
 
@@ -127,10 +127,10 @@ This `h1` heading element with an image describes the topic of the following par
 
 ```html
 <html lang="en">
-	<h1>
-		<img src="/test-assets/descriptive-heading-b49b2e/opening_hours_icon.png" alt="Opening hours" />
-	</h1>
-	<p>We are open Monday through Friday from 10 to 16</p>
+ <h1>
+  <img src="/test-assets/descriptive-heading-b49b2e/opening_hours_icon.png" alt="Opening hours" />
+ </h1>
+ <p>We are open Monday through Friday from 10 to 16</p>
 </html>
 ```
 
@@ -142,17 +142,17 @@ This `h1` heading element has a single character text that describes the topic o
 
 ```html
 <html lang="en">
-	<h1>A</h1>
-	<dl>
-		<dt>airplane</dt>
-		<dd>
-			a powered flying vehicle with fixed wings and a weight greater than that of the air it displaces.
-		</dd>
-		<dt>apple</dt>
-		<dd>
-			the round fruit of a tree of the rose family, which typically has thin green or red skin and crisp flesh.
-		</dd>
-	</dl>
+ <h1>A</h1>
+ <dl>
+  <dt>airplane</dt>
+  <dd>
+   a powered flying vehicle with fixed wings and a weight greater than that of the air it displaces.
+  </dd>
+  <dt>apple</dt>
+  <dd>
+   the round fruit of a tree of the rose family, which typically has thin green or red skin and crisp flesh.
+  </dd>
+ </dl>
 </html>
 ```
 
@@ -164,10 +164,10 @@ This heading marked up with an [explicit role][] of `heading` describes the topi
 
 ```html
 <html lang="en">
-	<span role="heading" aria-level="1" style="position: absolute; top: -9999px; left: -9999px;">Opening Hours</span>
-	<p>
-		We are open Monday through Friday from 10 to 16
-	</p>
+ <span role="heading" aria-level="1" style="position: absolute; top: -9999px; left: -9999px;">Opening Hours</span>
+ <p>
+  We are open Monday through Friday from 10 to 16
+ </p>
 </html>
 ```
 
@@ -179,9 +179,9 @@ This heading describes the first [perceivable content][] after it (the first `p`
 
 ```html
 <html lang="en">
-	<h1>Opening Hours</h1>
-	<p>We are open Monday through Friday from 10 to 16</p>
-	<p>We are open Saturday from 10 to 13</p>
+ <h1>Opening Hours</h1>
+ <p>We are open Monday through Friday from 10 to 16</p>
+ <p>We are open Saturday from 10 to 13</p>
 </html>
 ```
 
@@ -195,8 +195,8 @@ This `h1` heading element does not describes the topic of the following paragrap
 
 ```html
 <html lang="en">
-	<h1>Weather</h1>
-	<p>We are open Monday through Friday from 10 to 16</p>
+ <h1>Weather</h1>
+ <p>We are open Monday through Friday from 10 to 16</p>
 </html>
 ```
 
@@ -208,8 +208,8 @@ This heading marked up with an [explicit role][] of `heading` does not describe 
 
 ```html
 <html lang="en">
-	<span role="heading" aria-level="1">Weather</span>
-	<p>We are open Monday through Friday from 10 to 16</p>
+ <span role="heading" aria-level="1">Weather</span>
+ <p>We are open Monday through Friday from 10 to 16</p>
 </html>
 ```
 
@@ -221,10 +221,10 @@ This heading marked up with an [explicit role][] of `heading` does not describe 
 
 ```html
 <html lang="en">
-	<span role="heading" aria-level="1" style="position: absolute; top: -9999px; left: -9999px;">Weather</span>
-	<p>
-		We are open Monday through Friday from 10 to 16
-	</p>
+ <span role="heading" aria-level="1" style="position: absolute; top: -9999px; left: -9999px;">Weather</span>
+ <p>
+  We are open Monday through Friday from 10 to 16
+ </p>
 </html>
 ```
 
@@ -236,9 +236,9 @@ This `h1` heading element does not describe the first [perceivable content][] af
 
 ```html
 <html lang="en">
-	<h1>Weather</h1>
-	<p>We are open Monday through Friday from 10 to 16</p>
-	<p>It is going to rain tomorrow</p>
+ <h1>Weather</h1>
+ <p>We are open Monday through Friday from 10 to 16</p>
+ <p>It is going to rain tomorrow</p>
 </html>
 ```
 
@@ -252,7 +252,7 @@ There is no heading.
 
 ```html
 <html lang="en">
-	<p>We are open Monday through Friday from 10 to 16</p>
+ <p>We are open Monday through Friday from 10 to 16</p>
 </html>
 ```
 
@@ -264,8 +264,8 @@ This `h1` heading element is not [included in the accessibility tree][].
 
 ```html
 <html lang="en">
-	<h1 hidden>Opening Hours</h1>
-	<p>We are open Monday through Friday from 10 to 16</p>
+ <h1 hidden>Opening Hours</h1>
+ <p>We are open Monday through Friday from 10 to 16</p>
 </html>
 ```
 
@@ -411,7 +411,6 @@ The _WAI ARIA Specifications_ group both the WAI ARIA W3C Recommendation and ARI
 [examples of included in the accessibility tree]: https://www.w3.org/WAI/standards-guidelines/act/rules/terms/included-in-the-accessibility-tree/examples/
 [explicit role]: #explicit-role 'Definition of Explicit Role'
 [flat tree]: https://drafts.csswg.org/css-scoping/#flat-tree 'Definition of flat tree'
-[focusable]: #focusable 'Definition of Focusable'
 [implicit role]: #implicit-role 'Definition of Implicit Role'
 [included in the accessibility tree]: #included-in-the-accessibility-tree 'Definition of included in the accessibility tree'
 [inclusive ancestors]: https://dom.spec.whatwg.org/#concept-tree-inclusive-ancestor 'DOM Definition of Inclusive Ancestor'
