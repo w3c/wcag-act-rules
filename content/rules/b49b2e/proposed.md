@@ -42,7 +42,7 @@ Each target element describes the topic or purpose of the first [perceivable con
 
 Headings that are visible but not in the accessibility tree are a failure of [Success Criterion 1.3.1 Info and Relationships][sc131]. These are not tested by this rule but they can still fail [Success Criterion 2.4.6 Headings and Labels][sc246].
 
-Testing tools treat empty headings `<h1></h1>` or `div role="heading" aria-level="1"></div>` differently. Some fail empty headings under 1.3.1, others under 2.4.6, while others pass these headings because they are ignored by most assistive technologies causing no accessibility barriers at all. This rule doesn't include examples of empty headings because there is currently no harmonized approach for testing them.
+Testing tools treat empty headings `<h1></h1>` or `div role="heading" aria-level="1"></div>` differently. Some report that empty headings fail under 1.3.1 Info and Relationships or 2.4.6 Labels or Instructions. Other tools report that these headings pass because they are ignored by most assistive technologies and cause no accessibility barriers at all. This rule does not include examples of empty headings because there is currently no harmonized approach for testing them.
 
 ### Assumptions
 
@@ -411,6 +411,7 @@ The _WAI ARIA Specifications_ group both the WAI ARIA W3C Recommendation and ARI
 [examples of included in the accessibility tree]: https://www.w3.org/WAI/standards-guidelines/act/rules/terms/included-in-the-accessibility-tree/examples/
 [explicit role]: #explicit-role 'Definition of Explicit Role'
 [flat tree]: https://drafts.csswg.org/css-scoping/#flat-tree 'Definition of flat tree'
+[focusable]: #focusable 'Definition of Focusable'
 [implicit role]: #implicit-role 'Definition of Implicit Role'
 [included in the accessibility tree]: #included-in-the-accessibility-tree 'Definition of included in the accessibility tree'
 [inclusive ancestors]: https://dom.spec.whatwg.org/#concept-tree-inclusive-ancestor 'DOM Definition of Inclusive Ancestor'
