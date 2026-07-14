@@ -2,18 +2,18 @@
   "vendor": "LASIGE, Faculdade de Ciências da Universidade de Lisboa",
   "name": "QualWeb",
   "version": "3.0.0",
-  "lastModified": "4 June 2024",
+  "lastModified": "14 July 2026",
   "approvedRules": {
-    "complete": 29,
-    "partial": 4,
+    "complete": 23,
+    "partial": 10,
     "inconsistent": 0,
     "untested": 4
   },
   "proposedRules": {
-    "complete": 6,
-    "partial": 20,
-    "inconsistent": 8,
-    "untested": 16
+    "complete": 9,
+    "partial": 8,
+    "inconsistent": 16,
+    "untested": 17
   },
   "actRuleMapping": [
     {
@@ -210,15 +210,15 @@
       "procedureNames": [
         "ARIA state or property has valid value"
       ],
-      "consistency": "complete",
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
         "reported": []
       },
       "coverage": {
-        "covered": 21,
-        "untested": 0,
+        "covered": 20,
+        "untested": 1,
         "cantTell": 0,
         "testCaseTotal": 21
       },
@@ -533,7 +533,7 @@
             {
               "procedureName": "ARIA state or property has valid value",
               "outcomes": [
-                "inapplicable"
+                "untested"
               ]
             }
           ]
@@ -675,7 +675,7 @@
             {
               "procedureName": "aria-* attribute is defined in WAI-ARIA",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -1322,7 +1322,7 @@
       "procedureNames": [
         "Letter spacing in style attributes is not !important"
       ],
-      "consistency": "complete",
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -1333,8 +1333,8 @@
         ]
       },
       "coverage": {
-        "covered": 19,
-        "untested": 0,
+        "covered": 18,
+        "untested": 1,
         "cantTell": 0,
         "testCaseTotal": 19
       },
@@ -1499,7 +1499,7 @@
             {
               "procedureName": "Letter spacing in style attributes is not !important",
               "outcomes": [
-                "inapplicable"
+                "untested"
               ]
             }
           ]
@@ -1633,7 +1633,7 @@
       "procedureNames": [
         "Word spacing in style attributes is not !important"
       ],
-      "consistency": "complete",
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -1644,8 +1644,8 @@
         ]
       },
       "coverage": {
-        "covered": 19,
-        "untested": 0,
+        "covered": 18,
+        "untested": 1,
         "cantTell": 0,
         "testCaseTotal": 19
       },
@@ -1810,7 +1810,7 @@
             {
               "procedureName": "Word spacing in style attributes is not !important",
               "outcomes": [
-                "inapplicable"
+                "untested"
               ]
             }
           ]
@@ -1944,7 +1944,7 @@
       "procedureNames": [
         "Line height in style attributes is not !important"
       ],
-      "consistency": "complete",
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -1955,8 +1955,8 @@
         ]
       },
       "coverage": {
-        "covered": 24,
-        "untested": 0,
+        "covered": 23,
+        "untested": 1,
         "cantTell": 0,
         "testCaseTotal": 24
       },
@@ -2181,7 +2181,7 @@
             {
               "procedureName": "Line height in style attributes is not !important",
               "outcomes": [
-                "inapplicable"
+                "untested"
               ]
             }
           ]
@@ -3586,7 +3586,7 @@
             {
               "procedureName": "Form control has accessible name",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -3601,7 +3601,7 @@
             {
               "procedureName": "Form control has accessible name",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -3615,7 +3615,7 @@
       "procedureNames": [
         "Validity of HTML Lang attribute"
       ],
-      "consistency": "complete",
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -3626,8 +3626,8 @@
         ]
       },
       "coverage": {
-        "covered": 7,
-        "untested": 0,
+        "covered": 6,
+        "untested": 1,
         "cantTell": 0,
         "testCaseTotal": 7
       },
@@ -3732,7 +3732,7 @@
             {
               "procedureName": "Validity of HTML Lang attribute",
               "outcomes": [
-                "inapplicable"
+                "untested"
               ]
             }
           ]
@@ -3746,7 +3746,7 @@
       "procedureNames": [
         "HTML Page has a title"
       ],
-      "consistency": "complete",
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -3757,8 +3757,8 @@
         ]
       },
       "coverage": {
-        "covered": 11,
-        "untested": 0,
+        "covered": 10,
+        "untested": 1,
         "cantTell": 0,
         "testCaseTotal": 11
       },
@@ -3923,7 +3923,7 @@
             {
               "procedureName": "HTML Page has a title",
               "outcomes": [
-                "inapplicable"
+                "untested"
               ]
             }
           ]
@@ -3938,7 +3938,7 @@
             {
               "procedureName": "HTML Page has a title",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -3953,7 +3953,7 @@
             {
               "procedureName": "HTML Page has a title",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -5228,7 +5228,7 @@
             {
               "procedureName": "Element with presentational children has no focusable content",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -5243,7 +5243,7 @@
             {
               "procedureName": "Element with presentational children has no focusable content",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -5258,7 +5258,7 @@
             {
               "procedureName": "Element with presentational children has no focusable content",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -5273,7 +5273,7 @@
             {
               "procedureName": "Element with presentational children has no focusable content",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -5288,7 +5288,7 @@
             {
               "procedureName": "Element with presentational children has no focusable content",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -5584,7 +5584,7 @@
             {
               "procedureName": "Headers attribute specified on a cell refers to cells in the same table element",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -5599,7 +5599,7 @@
             {
               "procedureName": "Headers attribute specified on a cell refers to cells in the same table element",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -6679,7 +6679,7 @@
       "procedureNames": [
         "HTML has lang attribute"
       ],
-      "consistency": "complete",
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -6690,8 +6690,8 @@
         ]
       },
       "coverage": {
-        "covered": 7,
-        "untested": 0,
+        "covered": 5,
+        "untested": 2,
         "cantTell": 0,
         "testCaseTotal": 7
       },
@@ -6781,7 +6781,7 @@
             {
               "procedureName": "HTML has lang attribute",
               "outcomes": [
-                "inapplicable"
+                "untested"
               ]
             }
           ]
@@ -6796,7 +6796,7 @@
             {
               "procedureName": "HTML has lang attribute",
               "outcomes": [
-                "inapplicable"
+                "untested"
               ]
             }
           ]
@@ -7253,9 +7253,9 @@
         ]
       },
       "coverage": {
-        "covered": 26,
+        "covered": 29,
         "untested": 0,
-        "cantTell": 6,
+        "cantTell": 3,
         "testCaseTotal": 32
       },
       "testCaseResults": [
@@ -7284,7 +7284,7 @@
             {
               "procedureName": "Text has minimum contrast",
               "outcomes": [
-                "cantTell"
+                "passed"
               ]
             }
           ]
@@ -7449,7 +7449,7 @@
             {
               "procedureName": "Text has minimum contrast",
               "outcomes": [
-                "cantTell"
+                "failed"
               ]
             }
           ]
@@ -7524,7 +7524,7 @@
             {
               "procedureName": "Text has minimum contrast",
               "outcomes": [
-                "cantTell"
+                "failed"
               ]
             }
           ]
@@ -7764,7 +7764,7 @@
             {
               "procedureName": "Text has minimum contrast",
               "outcomes": [
-                "untested"
+                "cantTell"
               ]
             }
           ]
@@ -8768,7 +8768,7 @@
             {
               "procedureName": "Orientation of the page is not restricted using CSS transform property",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -8782,15 +8782,15 @@
       "procedureNames": [
         "Element with role attribute has required states and properties"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
         "reported": []
       },
       "coverage": {
-        "covered": 12,
-        "untested": 2,
+        "covered": 14,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 14
       },
@@ -8880,7 +8880,7 @@
             {
               "procedureName": "Element with role attribute has required states and properties",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -8985,7 +8985,7 @@
             {
               "procedureName": "Element with role attribute has required states and properties",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -9313,7 +9313,7 @@
       "procedureNames": [
         "ARIA required owned elements"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -9324,8 +9324,8 @@
         ]
       },
       "coverage": {
-        "covered": 14,
-        "untested": 10,
+        "covered": 24,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 24
       },
@@ -9355,7 +9355,7 @@
             {
               "procedureName": "ARIA required owned elements",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -9370,7 +9370,7 @@
             {
               "procedureName": "ARIA required owned elements",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -9430,7 +9430,7 @@
             {
               "procedureName": "ARIA required owned elements",
               "outcomes": [
-                "inapplicable"
+                "passed"
               ]
             }
           ]
@@ -9445,7 +9445,7 @@
             {
               "procedureName": "ARIA required owned elements",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -9460,7 +9460,7 @@
             {
               "procedureName": "ARIA required owned elements",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -9475,7 +9475,7 @@
             {
               "procedureName": "ARIA required owned elements",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -9595,7 +9595,7 @@
             {
               "procedureName": "ARIA required owned elements",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -9610,7 +9610,7 @@
             {
               "procedureName": "ARIA required owned elements",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -9625,7 +9625,7 @@
             {
               "procedureName": "ARIA required owned elements",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -9655,7 +9655,7 @@
             {
               "procedureName": "ARIA required owned elements",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -9670,7 +9670,7 @@
             {
               "procedureName": "ARIA required owned elements",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -9699,15 +9699,15 @@
       "procedureNames": [
         "ARIA state or property is permitted"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
         "reported": []
       },
       "coverage": {
-        "covered": 11,
-        "untested": 6,
+        "covered": 17,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 17
       },
@@ -9797,7 +9797,7 @@
             {
               "procedureName": "ARIA state or property is permitted",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -9812,7 +9812,7 @@
             {
               "procedureName": "ARIA state or property is permitted",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -9827,7 +9827,7 @@
             {
               "procedureName": "ARIA state or property is permitted",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -9887,7 +9887,7 @@
             {
               "procedureName": "ARIA state or property is permitted",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -9902,7 +9902,7 @@
             {
               "procedureName": "ARIA state or property is permitted",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -9947,7 +9947,7 @@
             {
               "procedureName": "ARIA state or property is permitted",
               "outcomes": [
-                "untested"
+                "inapplicable"
               ]
             }
           ]
@@ -9976,16 +9976,16 @@
       "procedureNames": [
         "audio element content is media alternative for text"
       ],
-      "consistency": "partial",
+      "consistency": null,
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
         "reported": []
       },
       "coverage": {
-        "covered": 2,
+        "covered": 0,
         "untested": 0,
-        "cantTell": 5,
+        "cantTell": 7,
         "testCaseTotal": 7
       },
       "testCaseResults": [
@@ -10074,7 +10074,7 @@
             {
               "procedureName": "audio element content is media alternative for text",
               "outcomes": [
-                "inapplicable"
+                "cantTell"
               ]
             }
           ]
@@ -10089,7 +10089,7 @@
             {
               "procedureName": "audio element content is media alternative for text",
               "outcomes": [
-                "inapplicable"
+                "cantTell"
               ]
             }
           ]
@@ -10251,7 +10251,7 @@
         "audio element content is media alternative for text",
         "Audio element content has text alternative"
       ],
-      "consistency": "partial",
+      "consistency": null,
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -10262,9 +10262,9 @@
         ]
       },
       "coverage": {
-        "covered": 3,
+        "covered": 1,
         "untested": 0,
-        "cantTell": 5,
+        "cantTell": 7,
         "testCaseTotal": 8
       },
       "testCaseResults": [
@@ -10413,19 +10413,19 @@
             {
               "procedureName": "audio element content has transcript",
               "outcomes": [
-                "inapplicable"
+                "cantTell"
               ]
             },
             {
               "procedureName": "audio element content is media alternative for text",
               "outcomes": [
-                "inapplicable"
+                "cantTell"
               ]
             },
             {
               "procedureName": "Audio element content has text alternative",
               "outcomes": [
-                "inapplicable"
+                "cantTell"
               ]
             }
           ]
@@ -10440,19 +10440,19 @@
             {
               "procedureName": "audio element content has transcript",
               "outcomes": [
-                "inapplicable"
+                "cantTell"
               ]
             },
             {
               "procedureName": "audio element content is media alternative for text",
               "outcomes": [
-                "inapplicable"
+                "cantTell"
               ]
             },
             {
               "procedureName": "Audio element content has text alternative",
               "outcomes": [
-                "inapplicable"
+                "cantTell"
               ]
             }
           ]
@@ -10493,16 +10493,16 @@
       "procedureNames": [
         "audio element content has transcript"
       ],
-      "consistency": "partial",
+      "consistency": null,
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
         "reported": []
       },
       "coverage": {
-        "covered": 2,
+        "covered": 0,
         "untested": 0,
-        "cantTell": 9,
+        "cantTell": 11,
         "testCaseTotal": 11
       },
       "testCaseResults": [
@@ -10651,7 +10651,7 @@
             {
               "procedureName": "audio element content has transcript",
               "outcomes": [
-                "inapplicable"
+                "cantTell"
               ]
             }
           ]
@@ -10666,7 +10666,7 @@
             {
               "procedureName": "audio element content has transcript",
               "outcomes": [
-                "inapplicable"
+                "cantTell"
               ]
             }
           ]
@@ -11003,15 +11003,15 @@
       "procedureNames": [
         "Block of repeated content is collapsible"
       ],
-      "consistency": "partial",
+      "consistency": null,
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
         "reported": []
       },
       "coverage": {
-        "covered": 1,
-        "untested": 0,
+        "covered": 0,
+        "untested": 1,
         "cantTell": 7,
         "testCaseTotal": 8
       },
@@ -11131,7 +11131,7 @@
             {
               "procedureName": "Block of repeated content is collapsible",
               "outcomes": [
-                "inapplicable"
+                "untested"
               ]
             }
           ]
@@ -11149,7 +11149,7 @@
         "Document has an instrument to move focus to non-repeated content",
         "Bypass Blocks of Repeated Content"
       ],
-      "consistency": "partial",
+      "consistency": null,
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -11160,8 +11160,8 @@
         ]
       },
       "coverage": {
-        "covered": 1,
-        "untested": 0,
+        "covered": 0,
+        "untested": 1,
         "cantTell": 13,
         "testCaseTotal": 14
       },
@@ -11683,31 +11683,31 @@
             {
               "procedureName": "Document has a landmark with non-repeated content",
               "outcomes": [
-                "inapplicable"
+                "untested"
               ]
             },
             {
               "procedureName": "Document has heading for non-repeated content",
               "outcomes": [
-                "inapplicable"
+                "untested"
               ]
             },
             {
               "procedureName": "Block of repeated content is collapsible",
               "outcomes": [
-                "inapplicable"
+                "untested"
               ]
             },
             {
               "procedureName": "Document has an instrument to move focus to non-repeated content",
               "outcomes": [
-                "inapplicable"
+                "untested"
               ]
             },
             {
               "procedureName": "Bypass Blocks of Repeated Content",
               "outcomes": [
-                "inapplicable"
+                "untested"
               ]
             }
           ]
@@ -11739,15 +11739,15 @@
       "procedureNames": [
         "Document has heading for non-repeated content"
       ],
-      "consistency": "partial",
+      "consistency": null,
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
         "reported": []
       },
       "coverage": {
-        "covered": 2,
-        "untested": 0,
+        "covered": 1,
+        "untested": 1,
         "cantTell": 12,
         "testCaseTotal": 14
       },
@@ -11957,7 +11957,7 @@
             {
               "procedureName": "Document has heading for non-repeated content",
               "outcomes": [
-                "inapplicable"
+                "untested"
               ]
             }
           ]
@@ -11971,15 +11971,15 @@
       "procedureNames": [
         "Document has an instrument to move focus to non-repeated content"
       ],
-      "consistency": "partial",
+      "consistency": null,
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
         "reported": []
       },
       "coverage": {
-        "covered": 1,
-        "untested": 0,
+        "covered": 0,
+        "untested": 1,
         "cantTell": 11,
         "testCaseTotal": 12
       },
@@ -12159,7 +12159,7 @@
             {
               "procedureName": "Document has an instrument to move focus to non-repeated content",
               "outcomes": [
-                "inapplicable"
+                "untested"
               ]
             }
           ]
@@ -12173,15 +12173,15 @@
       "procedureNames": [
         "Document has a landmark with non-repeated content"
       ],
-      "consistency": "partial",
+      "consistency": null,
       "accessibilityRequirements": {
         "correct": true,
         "expected": [],
         "reported": []
       },
       "coverage": {
-        "covered": 2,
-        "untested": 0,
+        "covered": 1,
+        "untested": 1,
         "cantTell": 6,
         "testCaseTotal": 8
       },
@@ -12301,7 +12301,7 @@
             {
               "procedureName": "Document has a landmark with non-repeated content",
               "outcomes": [
-                "inapplicable"
+                "untested"
               ]
             }
           ]
@@ -13728,8 +13728,8 @@
       },
       "coverage": {
         "covered": 8,
-        "untested": 5,
-        "cantTell": 10,
+        "untested": 0,
+        "cantTell": 16,
         "testCaseTotal": 24
       },
       "testCaseResults": [
@@ -13893,7 +13893,7 @@
             {
               "procedureName": "Links with identical accessible names and context serve equivalent purpose",
               "outcomes": [
-                "inapplicable"
+                "cantTell"
               ]
             }
           ]
@@ -13923,7 +13923,7 @@
             {
               "procedureName": "Links with identical accessible names and context serve equivalent purpose",
               "outcomes": [
-                "untested"
+                "cantTell"
               ]
             }
           ]
@@ -13938,7 +13938,7 @@
             {
               "procedureName": "Links with identical accessible names and context serve equivalent purpose",
               "outcomes": [
-                "untested"
+                "cantTell"
               ]
             }
           ]
@@ -13953,7 +13953,7 @@
             {
               "procedureName": "Links with identical accessible names and context serve equivalent purpose",
               "outcomes": [
-                "untested"
+                "cantTell"
               ]
             }
           ]
@@ -13968,7 +13968,7 @@
             {
               "procedureName": "Links with identical accessible names and context serve equivalent purpose",
               "outcomes": [
-                "untested"
+                "cantTell"
               ]
             }
           ]
@@ -13983,7 +13983,7 @@
             {
               "procedureName": "Links with identical accessible names and context serve equivalent purpose",
               "outcomes": [
-                "untested"
+                "cantTell"
               ]
             }
           ]
@@ -14120,7 +14120,7 @@
       "procedureNames": [
         "All table header cells have assigned data cells"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -14131,8 +14131,8 @@
         ]
       },
       "coverage": {
-        "covered": 14,
-        "untested": 2,
+        "covered": 16,
+        "untested": 0,
         "cantTell": 0,
         "testCaseTotal": 16
       },
@@ -14162,7 +14162,7 @@
             {
               "procedureName": "All table header cells have assigned data cells",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -14192,7 +14192,7 @@
             {
               "procedureName": "All table header cells have assigned data cells",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -15857,8 +15857,8 @@
       },
       "coverage": {
         "covered": 2,
-        "untested": 2,
-        "cantTell": 4,
+        "untested": 0,
+        "cantTell": 6,
         "testCaseTotal": 8
       },
       "testCaseResults": [
@@ -15902,7 +15902,7 @@
             {
               "procedureName": "video element visual-only content has transcript",
               "outcomes": [
-                "untested"
+                "cantTell"
               ]
             }
           ]
@@ -15947,7 +15947,7 @@
             {
               "procedureName": "video element visual-only content has transcript",
               "outcomes": [
-                "untested"
+                "cantTell"
               ]
             }
           ]
@@ -16220,8 +16220,8 @@
       },
       "coverage": {
         "covered": 1,
-        "untested": 4,
-        "cantTell": 4,
+        "untested": 0,
+        "cantTell": 8,
         "testCaseTotal": 9
       },
       "testCaseResults": [
@@ -16265,7 +16265,7 @@
             {
               "procedureName": "Audio and visuals of video element have transcript",
               "outcomes": [
-                "untested"
+                "cantTell"
               ]
             }
           ]
@@ -16280,7 +16280,7 @@
             {
               "procedureName": "Audio and visuals of video element have transcript",
               "outcomes": [
-                "untested"
+                "cantTell"
               ]
             }
           ]
@@ -16325,7 +16325,7 @@
             {
               "procedureName": "Audio and visuals of video element have transcript",
               "outcomes": [
-                "untested"
+                "cantTell"
               ]
             }
           ]
@@ -16340,7 +16340,7 @@
             {
               "procedureName": "Audio and visuals of video element have transcript",
               "outcomes": [
-                "untested"
+                "cantTell"
               ]
             }
           ]
@@ -16962,237 +16962,10 @@
       "ruleId": "59br37",
       "ruleName": "Zoomed text node is not clipped with CSS overflow",
       "ruleApproved": false,
-      "procedureNames": [
-        "Zoomed text node is not clipped with CSS overflow"
-      ],
-      "consistency": "partial",
-      "accessibilityRequirements": {
-        "correct": true,
-        "expected": [
-          "WCAG2:resize-text"
-        ],
-        "reported": [
-          "WCAG2:resize-text"
-        ]
-      },
-      "coverage": {
-        "covered": 5,
-        "untested": 0,
-        "cantTell": 9,
-        "testCaseTotal": 14
-      },
-      "testCaseResults": [
-        {
-          "testcaseId": "bf6c2877d53f69c82720898bfe0417e37a01cd53",
-          "testCaseName": "Passed Example 1",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59br37/bf6c2877d53f69c82720898bfe0417e37a01cd53.html",
-          "testCaseApproved": false,
-          "expected": "passed",
-          "procedureResults": [
-            {
-              "procedureName": "Zoomed text node is not clipped with CSS overflow",
-              "outcomes": [
-                "cantTell"
-              ]
-            }
-          ]
-        },
-        {
-          "testcaseId": "47d2a65e7d1fcc2ac9457a6283e35e82d68aa3ce",
-          "testCaseName": "Passed Example 2",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59br37/47d2a65e7d1fcc2ac9457a6283e35e82d68aa3ce.html",
-          "testCaseApproved": false,
-          "expected": "passed",
-          "procedureResults": [
-            {
-              "procedureName": "Zoomed text node is not clipped with CSS overflow",
-              "outcomes": [
-                "cantTell"
-              ]
-            }
-          ]
-        },
-        {
-          "testcaseId": "f6c5d3bf4a33699dfa4d53d1949c262df1021735",
-          "testCaseName": "Passed Example 3",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59br37/f6c5d3bf4a33699dfa4d53d1949c262df1021735.html",
-          "testCaseApproved": false,
-          "expected": "passed",
-          "procedureResults": [
-            {
-              "procedureName": "Zoomed text node is not clipped with CSS overflow",
-              "outcomes": [
-                "cantTell"
-              ]
-            }
-          ]
-        },
-        {
-          "testcaseId": "b17a15385fc63a75363c56ea30ff402056c1da8f",
-          "testCaseName": "Passed Example 4",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59br37/b17a15385fc63a75363c56ea30ff402056c1da8f.html",
-          "testCaseApproved": false,
-          "expected": "passed",
-          "procedureResults": [
-            {
-              "procedureName": "Zoomed text node is not clipped with CSS overflow",
-              "outcomes": [
-                "cantTell"
-              ]
-            }
-          ]
-        },
-        {
-          "testcaseId": "c5cd793a4f7c929182a1302f1bb8c1e43508de1b",
-          "testCaseName": "Failed Example 1",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59br37/c5cd793a4f7c929182a1302f1bb8c1e43508de1b.html",
-          "testCaseApproved": false,
-          "expected": "failed",
-          "procedureResults": [
-            {
-              "procedureName": "Zoomed text node is not clipped with CSS overflow",
-              "outcomes": [
-                "cantTell"
-              ]
-            }
-          ]
-        },
-        {
-          "testcaseId": "758faeb173a6796691843ae93839928b23ae6378",
-          "testCaseName": "Failed Example 2",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59br37/758faeb173a6796691843ae93839928b23ae6378.html",
-          "testCaseApproved": false,
-          "expected": "failed",
-          "procedureResults": [
-            {
-              "procedureName": "Zoomed text node is not clipped with CSS overflow",
-              "outcomes": [
-                "cantTell"
-              ]
-            }
-          ]
-        },
-        {
-          "testcaseId": "ef39fe61d9b0093a3a886c3482d69adc7aeabd52",
-          "testCaseName": "Failed Example 3",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59br37/ef39fe61d9b0093a3a886c3482d69adc7aeabd52.html",
-          "testCaseApproved": false,
-          "expected": "failed",
-          "procedureResults": [
-            {
-              "procedureName": "Zoomed text node is not clipped with CSS overflow",
-              "outcomes": [
-                "cantTell"
-              ]
-            }
-          ]
-        },
-        {
-          "testcaseId": "fc598e8d60950941aae5070b17eb4ca1d4bd3bdf",
-          "testCaseName": "Failed Example 4",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59br37/fc598e8d60950941aae5070b17eb4ca1d4bd3bdf.html",
-          "testCaseApproved": false,
-          "expected": "failed",
-          "procedureResults": [
-            {
-              "procedureName": "Zoomed text node is not clipped with CSS overflow",
-              "outcomes": [
-                "cantTell"
-              ]
-            }
-          ]
-        },
-        {
-          "testcaseId": "3665c0599c286b1b3060aee795009ab5b8942a14",
-          "testCaseName": "Failed Example 5",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59br37/3665c0599c286b1b3060aee795009ab5b8942a14.html",
-          "testCaseApproved": false,
-          "expected": "failed",
-          "procedureResults": [
-            {
-              "procedureName": "Zoomed text node is not clipped with CSS overflow",
-              "outcomes": [
-                "cantTell"
-              ]
-            }
-          ]
-        },
-        {
-          "testcaseId": "6331217170b53156f0e8e17d771a1bdf4edb329d",
-          "testCaseName": "Inapplicable Example 1",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59br37/6331217170b53156f0e8e17d771a1bdf4edb329d.html",
-          "testCaseApproved": false,
-          "expected": "inapplicable",
-          "procedureResults": [
-            {
-              "procedureName": "Zoomed text node is not clipped with CSS overflow",
-              "outcomes": [
-                "inapplicable"
-              ]
-            }
-          ]
-        },
-        {
-          "testcaseId": "881897444deae644139c4b799b8eeb4b4b764c2a",
-          "testCaseName": "Inapplicable Example 2",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59br37/881897444deae644139c4b799b8eeb4b4b764c2a.html",
-          "testCaseApproved": false,
-          "expected": "inapplicable",
-          "procedureResults": [
-            {
-              "procedureName": "Zoomed text node is not clipped with CSS overflow",
-              "outcomes": [
-                "inapplicable"
-              ]
-            }
-          ]
-        },
-        {
-          "testcaseId": "ef943b4ae6afe659dfb257688f942099ed46907f",
-          "testCaseName": "Inapplicable Example 3",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59br37/ef943b4ae6afe659dfb257688f942099ed46907f.html",
-          "testCaseApproved": false,
-          "expected": "inapplicable",
-          "procedureResults": [
-            {
-              "procedureName": "Zoomed text node is not clipped with CSS overflow",
-              "outcomes": [
-                "inapplicable"
-              ]
-            }
-          ]
-        },
-        {
-          "testcaseId": "914f51f7683a69d3055aab93f9b8d4a9c018158c",
-          "testCaseName": "Inapplicable Example 4",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59br37/914f51f7683a69d3055aab93f9b8d4a9c018158c.html",
-          "testCaseApproved": false,
-          "expected": "inapplicable",
-          "procedureResults": [
-            {
-              "procedureName": "Zoomed text node is not clipped with CSS overflow",
-              "outcomes": [
-                "inapplicable"
-              ]
-            }
-          ]
-        },
-        {
-          "testcaseId": "61c21364304e588dd3f30317bcee4224c31a61fb",
-          "testCaseName": "Inapplicable Example 5",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/59br37/61c21364304e588dd3f30317bcee4224c31a61fb.html",
-          "testCaseApproved": false,
-          "expected": "inapplicable",
-          "procedureResults": [
-            {
-              "procedureName": "Zoomed text node is not clipped with CSS overflow",
-              "outcomes": [
-                "inapplicable"
-              ]
-            }
-          ]
-        }
-      ]
+      "procedureNames": [],
+      "consistency": null,
+      "coverage": null,
+      "testCaseResults": []
     }
   ]
 }
