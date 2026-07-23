@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 9bd38c</p>
-  <p><strong>Date:</strong> Updated 19 January 2026</p>
+  <p><strong>Date:</strong> Updated 9 July 2026</p>
   <p><strong>Authors:</strong> <a href="https://www.linkedin.com/in/brianbors/">Brian Bors</a>, <a href="https://github.com/danistr">Daniël Strik</a>, <a href="https://github.com/Jym77">Jean-Yves Moyen</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule conforms to <a href="https://www.w3.org/TR/act-rules-format-1.1/">ACT Rules Format 1.1</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
@@ -21,7 +21,7 @@ rule_meta:
   original_file: non-visual-reference-alternative-9bd38c.md
   description: |
     This rule checks that when content is identified through a visual reference, there are also non-visual references identifying the same content.
-  last_modified: 19 January 2026
+  last_modified: 9 July 2026
   scs_tested:
     - handle: Sensory Characteristics
       num: 1.3.3
@@ -748,9 +748,33 @@ Content is considered _visible_ if making it fully transparent would result in a
 
 For more details, see [examples of visible](https://www.w3.org/WAI/standards-guidelines/act/rules/terms/visible/examples/).
 
+### Visible Inner Text {#visible-inner-text}
+
+The "visible inner text" defined here is similar to, but not the same as, [visible text content][] and [innerText](https://html.spec.whatwg.org/multipage/dom.html#the-innertext-idl-attribute).
+
+The <dfn>visible inner text of a node</dfn> depends on the kind of node. 
+
+The <dfn id="visible-inner-text:for-text">visible inner text of a [text node][]</dfn> is:
+1.   if the [text node][] is [visible][], its visible inner text is its [data][] with whitespace normalized by replacing contiguous [whitespace][] with `" "` (U+0020 SPACE);
+1.   <dfn id="visible-inner-text:for-text-whitespace">if the [text node][] is not [visible][], is [rendered][], and contains only [whitespace][], its visible inner text is `" "` (U+0020 SPACE);</dfn>
+1.   otherwise, the visible inner text of the [text node][] is `""` (the empty string).
+
+
+The <dfn id="visible-inner-text:for-element">visible inner text of an [element][]</dfn> is:
+1.   if the [element][] is not [rendered][], its visible inner text is `""` (the empty string);
+1.   if the [element][] is [rendered][] and not [visible][] and has a [bounding box][] which has width greater than 0, its visible inner text is `" "` (U+0020 SPACE);
+1.   if the [element][] is [rendered][] and not [visible][] and has a [bounding box][] which has width of 0, its visible inner text is `""` (the empty string);
+1.   if the [element][] is a [`<br>`][<br>] element, its visible inner text is `"\n"` (U+000A END OF LINE).
+1.   if the [computed][] [`display`][display] property of the [element][] has an [outer display type][] of `block`, or an [inner display type][] of `table-caption`, the visible inner text of the [element][] is the concatenation of `"\n"` (U+000A END OF LINE) plus the visible inner text of its children (in [tree order][] in the [flat tree][]) plus another `"\n"` (U+000A END OF LINE);
+1.   if the [computed][] [`display`][display] property of the [element][] has an [inner display type][] of `table-cell` or `table-row`, the visible inner text of the [element][] is the concatenation of `" "` (U+0020 SPACE) plus the visible inner text of its children (in [tree order][] in the [flat tree][]) plus another `" "` (U+0020 SPACE);
+1.   otherwise, the visible inner text of the [element][] is the concatenation of the visible inner text of its children (in [tree order][] in the [flat tree][]).
+
+
+The <dfn>visible inner text</dfn> of any other node is the concatenation of the visible inner text of its children (in [tree order][] in the [flat tree][]).
+
 ### Visible Text Content {#visible-text-content}
 
-The _visible text content_ of an [element][] is a set of all [visible][] [text nodes][] that are [descendants][] in the [flat tree][] of this element
+The _visible text content_ of an [element][] is a set of all [visible][] [text nodes][] that are [descendants][] in the [flat tree][] of this element.  (This is similar to, but not the same as, [visible inner text][].)
 
 ### Visual Reference Words {#visual-reference-words}
 
@@ -892,18 +916,41 @@ Color
   - White
   - Yellow
 
+### Whitespace {#whitespace}
+
+_Whitespace_ are characters that have the Unicode "White_Space" property in the [Unicode properties list](https://www.unicode.org/Public/UCD/latest/ucd/PropList.txt).
+
+This includes:
+
+- all characters in the [Unicode Separator categories](https://www.unicode.org/versions/Unicode11.0.0/ch04.pdf#G134153), and
+- the following characters in the [Other, Control](https://www.unicode.org/versions/Unicode11.0.0/ch04.pdf#G134153) category:
+
+  - Character tabulation (U+0009)
+  - Line Feed (LF) (U+000A)
+  - Line Tabulation (U+000B)
+  - Form Feed (FF) (U+000C)
+  - Carriage Return (CR) (U+000D)
+  - Next Line (NEL) (U+0085)
+
+[<br>]: https://html.spec.whatwg.org/#the-br-element
 [accessible name and description computation]: https://www.w3.org/TR/accname 'Accessible Name and Description Computation'
 [accessible name]: #accessible-name 'Definition of Accessible Name'
+[bounding box]: https://www.w3.org/TR/css-ui-3/#valdef-box-sizing-border-box
 [computed]: https://www.w3.org/TR/css-cascade/#computed-value 'CSS definition of computed value'
+[data]: https://dom.spec.whatwg.org/#concept-cd-data
 [descendants]: https://dom.spec.whatwg.org/#concept-tree-descendant 'DOM tree descendant, 2020/08/18'
+[display]: https://drafts.csswg.org/css2/#propdef-display
 [earl10-schema]: https://www.w3.org/TR/act-rules-format-1.1/#biblio-earl10-schema
-[element]: https://dom.spec.whatwg.org/#element 'DOM element, 2020/08/18'
+[element]: https://dom.spec.whatwg.org/#element
 [examples of accessible name]: https://www.w3.org/WAI/standards-guidelines/act/rules/terms/accessible-name/examples/
 [examples of included in the accessibility tree]: https://www.w3.org/WAI/standards-guidelines/act/rules/terms/included-in-the-accessibility-tree/examples/
 [flat tree]: https://drafts.csswg.org/css-scoping/#flat-tree 'Definition of flat tree'
 [included in the accessibility tree]: #included-in-the-accessibility-tree 'Definition of Included in the Accessibility Tree'
 [inclusive ancestors]: https://dom.spec.whatwg.org/#concept-tree-inclusive-ancestor 'DOM Definition of Inclusive Ancestor'
+[inner display type]: https://drafts.csswg.org/css-display/#inner-display-type
 [outcome property]: https://www.w3.org/TR/EARL10-Schema/#outcome
+[outer display type]: https://drafts.csswg.org/css-display/#outer-display-type
+[rendered]: https://html.spec.whatwg.org/#being-rendered
 [rules for parsing integers]: https://html.spec.whatwg.org/#rules-for-parsing-integers
 [sc131]: https://www.w3.org/TR/WCAG22/#info-and-relationships 'Success Criterion 1.3.1 Info and Relationships'
 [sc133]: https://www.w3.org/TR/WCAG22/#sensory-characteristics 'Success Criterion 1.3.3 Sensory Characteristics'
@@ -915,9 +962,12 @@ Color
 [text node]: https://dom.spec.whatwg.org/#text 'Specification of Text Node'
 [text nodes]: https://dom.spec.whatwg.org/#text 'DOM text, 2020/08/18'
 [text]: https://www.w3.org/TR/WCAG22/#dfn-text 'WCAG definition of Text'
+[tree order]: https://dom.spec.whatwg.org/#concept-tree-order
+[visible inner text]: #visible-inner-text
 [visible text content]: #visible-text-content 'Definition of Visible Text Content'
 [visible]: #visible 'Definition of Visible'
 [visual reference word]: #visual-reference-words 'Definition of Visual Reference Words'
 [visual reference words]: #visual-reference-words 'Definition of Visual Reference Words'
 [web content]: https://www.w3.org/TR/WCAG22/#dfn-content 'WCAG definition of Web Content'
 [web page]: https://www.w3.org/TR/WCAG22/#dfn-web-page-s 'WCAG definition of Web Page'
+[whitespace]: #whitespace
