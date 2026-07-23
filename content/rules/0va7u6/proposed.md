@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 0va7u6</p>
-  <p><strong>Date:</strong> Updated 19 January 2026</p>
+  <p><strong>Date:</strong> Updated 23 July 2026</p>
   <p><strong>Authors:</strong> <a href="https://github.com/carlosapaduarte">Carlos Duarte</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule conforms to <a href="https://www.w3.org/TR/act-rules-format-1.1/">ACT Rules Format 1.1</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
@@ -23,14 +23,11 @@ rule_meta:
   original_file: image-no-text-0va7u6.md
   description: |
     This rule checks that images of text are not used
-  last_modified: 19 January 2026
+  last_modified: 23 July 2026
   scs_tested:
     - handle: Images of Text
       num: 1.4.5
       level: AA
-    - handle: Images of Text (No Exception)
-      num: 1.4.9
-      level: AAA
 ---
 
 ## Applicability
@@ -43,11 +40,14 @@ Each test target has no [visible][] [text][human language], except if at least o
 
 - <dfn id="0va7u6:decorative">decorative</dfn>: The image with text is [purely decorative][]; or
 - <dfn id="0va7u6:incidental">incidental</dfn>: The text is not a [significant][insignificant] part of the image; or
-- <dfn id="0va7u6:essential">essential</dfn>: The presentation of the text is [essential][].
+- <dfn id="0va7u6:essential">essential</dfn>: The presentation of the text is [essential][]; or
+- <dfn id="0va7u6:redundant">redundant</dfn>: The same information conveyed by the image of text is also available as real text.
 
 ## Background
 
 This rule is designed specifically for [SC 1.4.5 Images of Text][sc1.4.5]. There are however only minimal differences between this criterion and [SC 1.4.9 Images of Text (No Exception)][sc1.4.9]. The two differences are that customizable images of text are allowed, and that images of text are allowed when the presentation cannot otherwise be achieved. These scenarios are so rare the rule ignores them as part of the assumptions, and so the [accessibility requirements mapping](#accessibility-requirements-mapping) of these two criteria is the same.
+
+[Understanding SC 1.4.5 Images of Text][understanding sc1.4.5] explicitly clarifies in its note that the success criterion is meant to address cases where images of text are used instead of actual text. If images of text are used in addition to real text to convey the same information, then the success criterion is satisfied.
 
 ### Assumptions
 
@@ -78,19 +78,17 @@ There are no accessibility support issues known.
       </ul></li>
     </ul>
   </details></li>
-  <li><details>
-    <summary><span>1.4.9 Images of Text (No Exception) (Level AAA)</span></summary>
-    <ul>
-      <li><a href="https://www.w3.org/TR/WCAG22/#images-of-text-no-exception">Learn more about 1.4.9 Images of Text (No Exception)</a></li>
-      <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level AAA.</li>
-      <li>Outcome mapping: <ul>
-        <li>Any <code>failed</code> outcomes: success criterion is not satisfied</li>
-        <li>All <code>passed</code> outcomes: success criterion needs further testing</li>
-        <li>An <code>inapplicable</code> outcome: success criterion needs further testing</li>
-      </ul></li>
-    </ul>
-  </details></li>
 </ul>
+
+### Secondary Requirements
+
+This rule is related to the following accessibility requirements, but was 
+not designed to test this requirements directly. These 
+[secondary requirements](https://w3c.github.io/wcag-act/act-rules-format.html#secondary-requirements)
+can either be stricter than the rule requires, or may be satisfied in ways 
+not tested by the rule:
+
+- [1.4.9 Images of Text (No Exception) (Level AAA)](https://www.w3.org/TR/WCAG22/#images-of-text-no-exception): This success criterion is **more strict** than this rule. This is because the rule considers redundancy when information presented as an image of text is also conveyed in text. Some of the passed examples do not satisfy this success criterion.
 
 ## Input Aspects
 
@@ -220,6 +218,17 @@ These image resources referenced by the `input` elements are images of text (the
 />
 ```
 
+#### Passed Example 9
+
+<a class="example-link" title="Passed Example 9" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/0va7u6/e1d4ed7556dabfcfde47aaf4cd0861e0fdf585d9.html">Open in a new tab</a>
+
+This image resource referenced by the `img` element contains text that provides [redundant](#0va7u6:redundant) information. In fact, the same information conveyed by the image of text is also available as real text.
+
+```html
+<img src="/test-assets/0va7u6/welcome.png" alt="" />
+<p>Welcome to our website</p>
+```
+
 ### Failed
 
 #### Failed Example 1
@@ -257,18 +266,7 @@ This image resource referenced by the `background-image` property of the `div` e
 
 #### Failed Example 4
 
-<a class="example-link" title="Failed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/0va7u6/e1d4ed7556dabfcfde47aaf4cd0861e0fdf585d9.html">Open in a new tab</a>
-
-This image resource referenced by the `img` element contains text that provides redundant information, but it still is information, therefore it is not [decorative](#0va7u6:decorative).
-
-```html
-<img src="/test-assets/0va7u6/welcome.png" alt="" />
-<p>Welcome to our website</p>
-```
-
-#### Failed Example 5
-
-<a class="example-link" title="Failed Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/0va7u6/6a7f199a37309ccab08941b0bc64e182770c29ac.html">Open in a new tab</a>
+<a class="example-link" title="Failed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/0va7u6/6a7f199a37309ccab08941b0bc64e182770c29ac.html">Open in a new tab</a>
 
 This `img` element loads an SVG with text as an image resource. Because the SVG is loaded as an image resource, instead of being embedded in HTML the text cannot be selected or customized.
 
@@ -426,12 +424,13 @@ An _HTML [web page](https://www.w3.org/TR/WCAG22/#dfn-web-page-s)_ is the set of
 [purely decorative]: https://www.w3.org/TR/WCAG22/#dfn-pure-decoration 'WCAG 2.2, Purely decorative'
 [reflect]: https://html.spec.whatwg.org/multipage/common-dom-interfaces.html#reflecting-content-attributes-in-idl-attributes 'HTML specification of Reflecting Content Attributes in IDL Attributes'
 [rendered image resources]: #rendered-image-resource 'Definition of rendered image resource'
-[sc1.4.5]: https://www.w3.org/WAI/WCAG22/Understanding/images-of-text
-[sc1.4.9]: https://www.w3.org/WAI/WCAG22/Understanding/images-of-text-no-exception
+[sc1.4.5]: https://www.w3.org/TR/WCAG22/#images-of-text
+[sc1.4.9]: https://www.w3.org/TR/WCAG22/#images-of-text-no-exception
 [source set]: https://html.spec.whatwg.org/multipage/images.html#source-set
 [space separated]: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#space-separated-tokens 'HTML Specification of Space Separated Tokens'
 [test subject]: https://www.w3.org/TR/act-rules-format-1.1/#test-subject
 [test target]: https://www.w3.org/TR/act-rules-format/#test-target
+[understanding sc1.4.5]: https://www.w3.org/WAI/WCAG22/Understanding/images-of-text
 [url-reference]: https://www.w3.org/TR/css-images-3/#url-notation
 [visible pixels]: #visible 'Definition of visible'
 [visible]: #visible 'Definition of visible'
