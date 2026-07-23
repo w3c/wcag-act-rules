@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 2ee8b8</p>
-  <p><strong>Date:</strong> Updated 22 July 2026</p>
+  <p><strong>Date:</strong> Updated 23 July 2026</p>
   <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/brynanders">Bryn Anderson</a>, Dan Tripp, <a href="https://github.com/jkodu">Jey Nandakumar</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule conforms to <a href="https://www.w3.org/TR/act-rules-format-1.1/">ACT Rules Format 1.1</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
@@ -21,7 +21,7 @@ rule_meta:
   original_file: visible-label-in-accessible-name-2ee8b8.md
   description: |
     This rule checks that interactive elements labeled through content have their visible label as part of their accessible name.
-  last_modified: 22 July 2026
+  last_modified: 23 July 2026
   scs_tested:
     - handle: Label in Name
       num: 2.5.3
@@ -595,8 +595,8 @@ Sub-algorithm to tokenize a string:
 1. Do Unicode [case folding][] on the string then convert it to [normalization form KD][].
 1. For each character that either a) represents non-text content, or b) isn't a letter or a digit: replace that character with a space character.
     - For a) Determination of what "non-text" is often requires a judgment call.  Non-text includes, but is not limited to, emoji, and the use of the letter 'X' as a symbol which means 'close this modal dialog'.
-    - For b) Use the [Unicode general categories "L" (Letter) and "N" (Number)][https://www.unicode.org/versions/Unicode17.0.0/core-spec/chapter-4/#G134153].  (This will exclude hyphens, punctuation, emoji, and more.)
-1. Split the string into a list of strings, one string per word, according to the word segmentation rules for the [language of the element][https://html.spec.whatwg.org/multipage/dom.html#language].
+    - For b) Use the [Unicode general categories "L" (Letter) and "N" (Number)](https://www.unicode.org/versions/Unicode17.0.0/core-spec/chapter-4/#G134153).  (This will exclude hyphens, punctuation, emoji, and more.)
+1. Split the string into a list of strings, one string per word, according to the word segmentation rules for the [language of the element](https://html.spec.whatwg.org/multipage/dom.html#language).
     - This 'split' operation must:
         - Effectively remove leading and trailing [whitespace][].
         - If the input string contains nothing but [whitespace][] before this operation: return an empty list.
