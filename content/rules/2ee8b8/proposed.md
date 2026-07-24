@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 2ee8b8</p>
-  <p><strong>Date:</strong> Updated 23 July 2026</p>
+  <p><strong>Date:</strong> Updated 24 July 2026</p>
   <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/brynanders">Bryn Anderson</a>, Dan Tripp, <a href="https://github.com/jkodu">Jey Nandakumar</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule conforms to <a href="https://www.w3.org/TR/act-rules-format-1.1/">ACT Rules Format 1.1</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
@@ -21,7 +21,7 @@ rule_meta:
   original_file: visible-label-in-accessible-name-2ee8b8.md
   description: |
     This rule checks that interactive elements labeled through content have their visible label as part of their accessible name.
-  last_modified: 23 July 2026
+  last_modified: 24 July 2026
   scs_tested:
     - handle: Label in Name
       num: 2.5.3
@@ -327,7 +327,7 @@ This button has [visible inner text][] that is only partially contained within t
 
 <a class="example-link" title="Failed Example 3" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/2ee8b8/e117393d6711d6bdf32821005219c9d9474dfeb8.html">Open in a new tab</a>
 
-This button has [visible inner text][] that is fully contained within the [accessible name][] when viewed as a character-by-character substring. But that does not satisfy the [label in name algorithm][], which works on full words. So this fails the rule.
+This button has [visible inner text][] that is fully contained within the [accessible name][] when viewed as a character-by-character substring. But that does not satisfy the [label in name algorithm][], which works on full words.
 
 ```html
 <a href="#" aria-label="Discover Italy">Discover It</a>
@@ -337,7 +337,7 @@ This button has [visible inner text][] that is fully contained within the [acces
 
 <a class="example-link" title="Failed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/2ee8b8/b6d8143aab885efb58369d4b86b2e32be5a66cfb.html">Open in a new tab</a>
 
-This link's [accessible name][] contains two tokens (according to the[label in name algorithm][]) and the [visible inner text][] contains one token. So it fails the rule.
+This link's [accessible name][] contains two tokens (according to the[label in name algorithm][]) and the [visible inner text][] contains one token.
 
 ```html
 <a aria-label="just ice" href="#">justice</a>
@@ -377,7 +377,7 @@ This rule has no special handling for converting mathematical symbols into words
 
 <a class="example-link" title="Failed Example 8" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/2ee8b8/76f13f1f281ce75a9ec30edf1729462ac3e0ac57.html">Open in a new tab</a>
 
-This button's accessible name contains the same tokens that are in the visible label. But they aren't in the same order, so it fails the [contiguous subsequence][] check part of the [label in name algorithm][], and so it fails the rule.
+This button's accessible name contains the same tokens that are in the visible label. But they aren't in the same order, so it fails the [contiguous subsequence][] check part of the [label in name algorithm][].
 
 ```html
 <button aria-label="how are you"><span>you</span><span>how</span><span>are</span></button>
@@ -387,7 +387,7 @@ This button's accessible name contains the same tokens that are in the visible l
 
 <a class="example-link" title="Failed Example 9" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/2ee8b8/9bc0a53c1621afedb8621a4c36c01c9a5e809ea3.html">Open in a new tab</a>
 
-This button's accessible name contains the word "the" in the middle of it, which causes the [contiguous subsequence][] check of the [label in name algorithm][] (in particular: the "contiguous" requirement) to fail. So it fails the rule.
+This button's accessible name contains the word "the" in the middle of it, which causes the [contiguous subsequence][] check of the [label in name algorithm][] (in particular: the "contiguous" requirement) to fail.
 
 ```html
 <button aria-label="Download the specification">Download specification</button>
@@ -397,7 +397,7 @@ This button's accessible name contains the word "the" in the middle of it, which
 
 <a class="example-link" title="Failed Example 10" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/2ee8b8/48561a6e709e2f866c9d365f930c7055d620549f.html">Open in a new tab</a>
 
-This link's accessible name contains the same digits that are in the visible label, and in the same order. But they have different spaces and punctuation between them, so they are considered separate tokens. So this fails the rule.
+This link's accessible name contains the same digits that are in the visible label, and in the same order. But they have different spaces and punctuation between them, so they are considered separate tokens.
 
 ```html
 <a aria-label="1 2 3. 5 5 5. 0 1 2 3" href="tel:1235550123">123.555.0123</a>
@@ -447,7 +447,7 @@ This rule has no special handling for converting digits into words, or vice vers
 
 <a class="example-link" title="Failed Example 15" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/2ee8b8/f5c9811c984987443476760a1c5b91b1067f7e19.html">Open in a new tab</a>
 
-The [label in name algorithm][] works on full words. That is: it requires that each full word in the visible label ("1" in this case) is equal to a full word in the accessible name ("1a" in this case). Those two words - "1" and "1a" - are not equal, so this element fails the rule.
+The [label in name algorithm][] works on full words. That is: it requires that each full word in the visible label ("1" in this case) is equal to a full word in the accessible name ("1a" in this case). Those two words - "1" and "1a" - are not equal.
 
 ```html
 <a aria-label="1a" href="#">1</a>
@@ -457,7 +457,7 @@ The [label in name algorithm][] works on full words. That is: it requires that e
 
 <a class="example-link" title="Failed Example 16" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/2ee8b8/40838e577307be46e8de7e090faf04da7787f8b0.html">Open in a new tab</a>
 
-The definition of [visible inner text][] doesn't treat text any differently if it's excluded from the accessibility tree with aria-hidden. So this rule effectively ignores aria-hidden. So this element fails the rule.
+The definition of [visible inner text][] doesn't treat text any differently if it's excluded from the accessibility tree with aria-hidden. This rule effectively ignores aria-hidden.
 
 ```html
 <a aria-label="Download specification" href="#">Download <span aria-hidden="true">gizmo</span> specification</a>
@@ -512,7 +512,7 @@ This link has no [visible text content][].
 
 <a class="example-link" title="Inapplicable Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/2ee8b8/4c8c38022d15c92158ecaaa647fe8ca2c330f485.html">Open in a new tab</a>
 
-This link's label contains an abbreviation, so it is not applicable.
+This link's label contains an abbreviation.
 
 ```html
 <a aria-label="University Avenue" href="#">University Ave.</a>
@@ -522,7 +522,7 @@ This link's label contains an abbreviation, so it is not applicable.
 
 <a class="example-link" title="Inapplicable Example 6" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/2ee8b8/e9bbdbec137223e2973c6d2896050770c84c26e5.html">Open in a new tab</a>
 
-This word - non-standard / nonstandard - appears in both the element's accessible name and its visible label, using different hyphenation. So it's not applicable.
+This word - non-standard / nonstandard - appears in both the element's accessible name and its visible label, using different hyphenation.
 
 ```html
 <a href="#" aria-label="non-standard">nonstandard</a>
