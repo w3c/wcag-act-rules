@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> efbfc7</p>
-  <p><strong>Date:</strong> Updated 19 January 2026</p>
+  <p><strong>Date:</strong> Updated 9 July 2026</p>
   <p><strong>Authors:</strong> <a href="https://github.com/carlosapaduarte">Carlos Duarte</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule conforms to <a href="https://www.w3.org/TR/act-rules-format-1.1/">ACT Rules Format 1.1</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
@@ -21,7 +21,7 @@ rule_meta:
   original_file: auto-update-text-efbfc7.md
   description: |
     This rule checks that for any text content that regularly changes automatically, there are instruments to pause, stop, or hide it or to control its changing frequency.
-  last_modified: 19 January 2026
+  last_modified: 9 July 2026
   scs_tested:
     - handle: Pause, Stop, Hide
       num: 2.2.2
@@ -561,9 +561,33 @@ Content is considered _visible_ if making it fully transparent would result in a
 
 For more details, see [examples of visible](https://www.w3.org/WAI/standards-guidelines/act/rules/terms/visible/examples/).
 
+### Visible Inner Text {#visible-inner-text}
+
+The "visible inner text" defined here is similar to, but not the same as, [visible text content][] and [innerText](https://html.spec.whatwg.org/multipage/dom.html#the-innertext-idl-attribute).
+
+The <dfn>visible inner text of a node</dfn> depends on the kind of node. 
+
+The <dfn id="visible-inner-text:for-text">visible inner text of a [text node][]</dfn> is:
+1.   if the [text node][] is [visible][], its visible inner text is its [data][] with whitespace normalized by replacing contiguous [whitespace][] with `" "` (U+0020 SPACE);
+1.   <dfn id="visible-inner-text:for-text-whitespace">if the [text node][] is not [visible][], is [rendered][], and contains only [whitespace][], its visible inner text is `" "` (U+0020 SPACE);</dfn>
+1.   otherwise, the visible inner text of the [text node][] is `""` (the empty string).
+
+
+The <dfn id="visible-inner-text:for-element">visible inner text of an [element][]</dfn> is:
+1.   if the [element][] is not [rendered][], its visible inner text is `""` (the empty string);
+1.   if the [element][] is [rendered][] and not [visible][] and has a [bounding box][] which has width greater than 0, its visible inner text is `" "` (U+0020 SPACE);
+1.   if the [element][] is [rendered][] and not [visible][] and has a [bounding box][] which has width of 0, its visible inner text is `""` (the empty string);
+1.   if the [element][] is a [`<br>`][<br>] element, its visible inner text is `"\n"` (U+000A END OF LINE).
+1.   if the [computed][] [`display`][display] property of the [element][] has an [outer display type][] of `block`, or an [inner display type][] of `table-caption`, the visible inner text of the [element][] is the concatenation of `"\n"` (U+000A END OF LINE) plus the visible inner text of its children (in [tree order][] in the [flat tree][]) plus another `"\n"` (U+000A END OF LINE);
+1.   if the [computed][] [`display`][display] property of the [element][] has an [inner display type][] of `table-cell` or `table-row`, the visible inner text of the [element][] is the concatenation of `" "` (U+0020 SPACE) plus the visible inner text of its children (in [tree order][] in the [flat tree][]) plus another `" "` (U+0020 SPACE);
+1.   otherwise, the visible inner text of the [element][] is the concatenation of the visible inner text of its children (in [tree order][] in the [flat tree][]).
+
+
+The <dfn>visible inner text</dfn> of any other node is the concatenation of the visible inner text of its children (in [tree order][] in the [flat tree][]).
+
 ### Visible Text Content {#visible-text-content}
 
-The _visible text content_ of an [element][] is a set of all [visible][] [text nodes][] that are [descendants][] in the [flat tree][] of this element
+The _visible text content_ of an [element][] is a set of all [visible][] [text nodes][] that are [descendants][] in the [flat tree][] of this element.  (This is similar to, but not the same as, [visible inner text][].)
 
 ### WAI-ARIA specifications {#wai-aria-specifications}
 
@@ -585,17 +609,37 @@ An _HTML [web page](https://www.w3.org/TR/WCAG22/#dfn-web-page-s)_ is the set of
 
 **Note:** Although web pages as defined here are sets of [documents](https://dom.spec.whatwg.org/#concept-document) (and do not contain other kind of nodes), one can abusively write that any node is "in a web page" if it is a [shadow-including descendant](https://dom.spec.whatwg.org/#concept-shadow-including-descendant) of a [document](https://dom.spec.whatwg.org/#concept-document) that is part of that web page.
 
+### Whitespace {#whitespace}
+
+_Whitespace_ are characters that have the Unicode "White_Space" property in the [Unicode properties list](https://www.unicode.org/Public/UCD/latest/ucd/PropList.txt).
+
+This includes:
+
+- all characters in the [Unicode Separator categories](https://www.unicode.org/versions/Unicode11.0.0/ch04.pdf#G134153), and
+- the following characters in the [Other, Control](https://www.unicode.org/versions/Unicode11.0.0/ch04.pdf#G134153) category:
+
+  - Character tabulation (U+0009)
+  - Line Feed (LF) (U+000A)
+  - Line Tabulation (U+000B)
+  - Form Feed (FF) (U+000C)
+  - Carriage Return (CR) (U+000D)
+  - Next Line (NEL) (U+0085)
+
+[<br>]: https://html.spec.whatwg.org/#the-br-element
 [accessibility support base line]: https://www.w3.org/TR/WCAG-EM/#step1c 'Definition of accessibility support base line'
 [activated]: https://html.spec.whatwg.org/#activation
 [activation]: https://html.spec.whatwg.org/#activation
 [ancestor]: https://dom.spec.whatwg.org/#concept-tree-ancestor
 [body]: https://html.spec.whatwg.org/#dom-document-body
+[bounding box]: https://www.w3.org/TR/css-ui-3/#valdef-box-sizing-border-box
 [child]: https://dom.spec.whatwg.org/#concept-tree-child
 [clearly labeled location]: #clearly-labeled-location 'Definition of clearly labeled location'
 [computed]: https://www.w3.org/TR/css-cascade/#computed-value 'CSS definition of computed value'
 [content]: https://www.w3.org/TR/WCAG22/#dfn-content
+[data]: https://dom.spec.whatwg.org/#concept-cd-data
 [descendant]: https://dom.spec.whatwg.org/#concept-tree-descendant
 [descendants]: https://dom.spec.whatwg.org/#concept-tree-descendant 'DOM tree descendant, 2020/08/18'
+[display]: https://drafts.csswg.org/css2/#propdef-display
 [earl10-schema]: https://www.w3.org/TR/act-rules-format-1.1/#biblio-earl10-schema
 [element]: https://dom.spec.whatwg.org/#element 'DOM element, 2021/05/31'
 [essential]: https://www.w3.org/WAI/WCAG22/Understanding/pause-stop-hide.html#dfn-essential
@@ -612,14 +656,17 @@ An _HTML [web page](https://www.w3.org/TR/WCAG22/#dfn-web-page-s)_ is the set of
 [implicit role]: #implicit-role 'Definition of Implicit Role'
 [included in the accessibility tree]: #included-in-the-accessibility-tree 'Definition of Included in the Accessibility Tree'
 [inclusive ancestors]: https://dom.spec.whatwg.org/#concept-tree-inclusive-ancestor 'DOM Definition of Inclusive Ancestor'
+[inner display type]: https://drafts.csswg.org/css-display/#inner-display-type
 [instrument]: #instrument-to-achieve-an-objective 'Definition of instrument to achieve an objective'
 [marked as decorative]: #marked-as-decorative 'Definition of Marked as Decorative'
 [mechanism]: https://www.w3.org/TR/WCAG22/#dfn-mechanism 'WCAG Definition of Mechanism'
 [namespaceuri]: https://dom.spec.whatwg.org/#dom-element-namespaceuri 'DOM Element namespaceURI, 2021/05/31'
 [outcome property]: https://www.w3.org/TR/EARL10-Schema/#outcome
+[outer display type]: https://drafts.csswg.org/css-display/#outer-display-type
 [presentational roles conflict resolution]: https://www.w3.org/TR/wai-aria-1.2/#conflict_resolution_presentation_none 'Presentational Roles Conflict Resolution'
 [programmatically hidden]: #programmatically-hidden 'Definition of Programmatically Hidden'
 [pure decoration]: https://www.w3.org/TR/WCAG22/#dfn-pure-decoration 'WCAG definition of Pure Decoration'
+[rendered]: https://html.spec.whatwg.org/#being-rendered
 [role attribute]: https://www.w3.org/TR/role-attribute/ 'Specification of the role attribute'
 [rules for parsing integers]: https://html.spec.whatwg.org/#rules-for-parsing-integers
 [sc 2.2.2]: https://www.w3.org/WAI/WCAG22/Understanding/pause-stop-hide
@@ -634,10 +681,13 @@ An _HTML [web page](https://www.w3.org/TR/WCAG22/#dfn-web-page-s)_ is the set of
 [text alternative]: https://www.w3.org/TR/WCAG22/#dfn-text-alternative 'Definition of text alternative'
 [text node]: https://dom.spec.whatwg.org/#text
 [text nodes]: https://dom.spec.whatwg.org/#text 'DOM text, 2020/08/18'
+[tree order]: https://dom.spec.whatwg.org/#concept-tree-order
 [uievents]: https://www.w3.org/TR/uievents/
 [url]: https://url.spec.whatwg.org/#concept-url
 [user interaction]: #user-interaction 'Definition of user interaction'
+[visible inner text]: #visible-inner-text
 [visible text content]: #visible-text-content 'Definition of visible text content'
 [visible]: #visible 'Definition of visible'
 [wai-aria specifications]: #wai-aria-specifications 'Definition of WAI-ARIA specifications'
 [web page]: #web-page-html 'Definition of web page'
+[whitespace]: #whitespace
