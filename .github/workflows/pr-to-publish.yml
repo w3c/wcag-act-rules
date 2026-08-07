@@ -24,5 +24,6 @@ jobs:
           gh pr create --base publication --head main \
             --reviewer remibetin \
             --reviewer daniel-montalvo \
+            --reviewer kfranqueiro \
             --title "WAI website update ${{ steps.date.outputs.date }}" \
             --body "This is an automated pull request to publish ACT content to the WAI website."
