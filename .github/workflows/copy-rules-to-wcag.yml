@@ -22,6 +22,8 @@ jobs:
   copy-rules:
     name: Copy rules
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     env:
       SOURCE_FILENAME: wcag-mapping.json
       DESTINATION_REPO: w3c/wcag
@@ -30,7 +32,7 @@ jobs:
       COMMIT_MESSAGE: ACT rules update from https://github.com/${{ github.repository }}/commit/${{ github.sha }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 #v7.0.1
         with:
           path: this
           
