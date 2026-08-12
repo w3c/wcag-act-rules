@@ -13,6 +13,8 @@ jobs:
   copy-rules:
     name: Copy Implementation Data
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     env:
       SOURCE_DIR: _data/wcag-act-rules/implementations
       DESTINATION_REPO: w3c/wai-evaluation-tools-list
@@ -21,14 +23,14 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 #v7.0.1
         with:
           ref: publication
           path: act-rules
 
       - name: Clone ${{ env.DESTINATION_REPO }}
         env:
-          W3CGRUNTBOT_TOKEN: ${{ secrets.W3CGRUNTBOT_TOKEN }} # add as PAT (https://github.com/settings/tokens) as a secret
+          W3CGRUNTBOT_TOKEN: ${{ secrets.W3CGRUNTBOT_TOKEN }}
         run: |
           echo "Cloning $DESTINATION_REPO git repository"
           git clone --single-branch --branch $DESTINATION_BRANCH "https://$W3CGRUNTBOT_TOKEN@github.com/$DESTINATION_REPO.git" evaluation-tools
