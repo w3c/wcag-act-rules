@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 46ca7f</p>
-  <p><strong>Date:</strong> Updated 19 January 2026</p>
+  <p><strong>Date:</strong> Updated 20 August 2026</p>
   <p><strong>Authors:</strong> <a href="https://github.com/Jym77">Jean-Yves Moyen</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule conforms to <a href="https://www.w3.org/TR/act-rules-format-1.1/">ACT Rules Format 1.1</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
@@ -21,7 +21,7 @@ rule_meta:
   original_file: element-marked-decorative-is-not-exposed-46ca7f.md
   description: |
     This rule checks that elements marked as decorative either are not included in the accessibility tree, or have a presentational role.
-  last_modified: 19 January 2026
+  last_modified: 20 August 2026
 ---
 
 ## Applicability
@@ -54,7 +54,7 @@ Implementation of the [Presentational Roles Conflict Resolution][] differs sligh
 
 This rule is related to the following accessibility requirements, but was 
 not designed to test this requirements directly. These 
-[secondary requirements](https://w3c.github.io/wcag-act/act-rules-format.html#secondary-requirements)
+[secondary requirements](https://www.w3.org/TR/act-rules-format/#secondary-requirements)
 can either be stricter than the rule requires, or may be satisfied in ways 
 not tested by the rule:
 
