@@ -11,8 +11,8 @@
   },
   "proposedRules": {
     "complete": 23,
-    "partial": 1,
-    "inconsistent": 1,
+    "partial": 2,
+    "inconsistent": 0,
     "untested": 25
   },
   "actRuleMapping": [
@@ -15100,7 +15100,7 @@
       "procedureNames": [
         "accessible_name_not_contains_visible_label"
       ],
-      "consistency": null,
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -15112,9 +15112,9 @@
       },
       "coverage": {
         "covered": 12,
-        "untested": 25,
+        "untested": 24,
         "cantTell": 0,
-        "testCaseTotal": 38
+        "testCaseTotal": 36
       },
       "testCaseResults": [
         {
@@ -15653,36 +15653,6 @@
               "procedureName": "accessible_name_not_contains_visible_label",
               "outcomes": [
                 "passed"
-              ]
-            }
-          ]
-        },
-        {
-          "testcaseId": "4c8c38022d15c92158ecaaa647fe8ca2c330f485",
-          "testCaseName": "Inapplicable Example 5",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2ee8b8/4c8c38022d15c92158ecaaa647fe8ca2c330f485.html",
-          "testCaseApproved": false,
-          "expected": "inapplicable",
-          "procedureResults": [
-            {
-              "procedureName": "accessible_name_not_contains_visible_label",
-              "outcomes": [
-                "untested"
-              ]
-            }
-          ]
-        },
-        {
-          "testcaseId": "e9bbdbec137223e2973c6d2896050770c84c26e5",
-          "testCaseName": "Inapplicable Example 6",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2ee8b8/e9bbdbec137223e2973c6d2896050770c84c26e5.html",
-          "testCaseApproved": false,
-          "expected": "inapplicable",
-          "procedureResults": [
-            {
-              "procedureName": "accessible_name_not_contains_visible_label",
-              "outcomes": [
-                "failed"
               ]
             }
           ]

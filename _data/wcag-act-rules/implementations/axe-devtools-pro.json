@@ -16317,9 +16317,9 @@
       },
       "coverage": {
         "covered": 11,
-        "untested": 27,
+        "untested": 25,
         "cantTell": 0,
-        "testCaseTotal": 38
+        "testCaseTotal": 36
       },
       "testCaseResults": [
         {
@@ -16858,36 +16858,6 @@
               "procedureName": "label-content-name-mismatch",
               "outcomes": [
                 "inapplicable"
-              ]
-            }
-          ]
-        },
-        {
-          "testcaseId": "4c8c38022d15c92158ecaaa647fe8ca2c330f485",
-          "testCaseName": "Inapplicable Example 5",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2ee8b8/4c8c38022d15c92158ecaaa647fe8ca2c330f485.html",
-          "testCaseApproved": false,
-          "expected": "inapplicable",
-          "procedureResults": [
-            {
-              "procedureName": "label-content-name-mismatch",
-              "outcomes": [
-                "untested"
-              ]
-            }
-          ]
-        },
-        {
-          "testcaseId": "e9bbdbec137223e2973c6d2896050770c84c26e5",
-          "testCaseName": "Inapplicable Example 6",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2ee8b8/e9bbdbec137223e2973c6d2896050770c84c26e5.html",
-          "testCaseApproved": false,
-          "expected": "inapplicable",
-          "procedureResults": [
-            {
-              "procedureName": "label-content-name-mismatch",
-              "outcomes": [
-                "untested"
               ]
             }
           ]
