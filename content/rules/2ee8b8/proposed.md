@@ -9,7 +9,7 @@ github:
 feedbackmail: public-wcag-act@w3.org
 footer: |
   <p><strong>Rule Identifier:</strong> 2ee8b8</p>
-  <p><strong>Date:</strong> Updated 24 July 2026</p>
+  <p><strong>Date:</strong> Updated 8 October 2026</p>
   <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/brynanders">Bryn Anderson</a>, Dan Tripp, <a href="https://github.com/jkodu">Jey Nandakumar</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
   <p>This rule conforms to <a href="https://www.w3.org/TR/act-rules-format-1.1/">ACT Rules Format 1.1</a>.</p>
   <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
@@ -21,7 +21,7 @@ rule_meta:
   original_file: visible-label-in-accessible-name-2ee8b8.md
   description: |
     This rule checks that interactive elements labeled through content have their visible label as part of their accessible name.
-  last_modified: 24 July 2026
+  last_modified: 8 October 2026
   scs_tested:
     - handle: Label in Name
       num: 2.5.3
@@ -44,11 +44,13 @@ For each target element, the [visible inner text][] is contained within the [acc
 
 ## Background
 
-This rule applies to elements with a [widget role][] that [support name from content][supports name from content]. This includes the following: `button`, `checkbox`, `gridcell`, `link`, `menuitem`, `menuitemcheckbox`, `menuitemradio`, `option`, `radio`, `searchbox`, `switch`, `tab`, `treeitem`.
+This rule applies to elements with a [widget role][] that [support name from content][supports name from content]. This includes the following: `button`, `checkbox`, `gridcell`, `link`, `menuitem`, `menuitemcheckbox`, `menuitemradio`, `option`, `radio`, `switch`, `tab`, `treeitem`.
 
 The understanding document of [2.5.3 Label in Name][understand253] use the term "symbolic text characters" to refer to a type of [non-text content][] that uses text characters as symbols, such as using "x" to mean "close". This rule considers them as "characters expressing non-text content". Unicode emojis are another example of characters expressing non-text content, although these are not "symbolic text characters".
 
 If the target element contains an [image of text](https://www.w3.org/TR/WCAG22/#dfn-images-of-text), it may pass this rule but fail [2.5.3 Label in Name][understand253] (because the accessible name should then match the text inside the image, which is not taken into account by this rule). So further testing is needed. This case might be handled by a different rule in the future.
+
+This rule does not include examples of abbreviations or differently hyphenated text because the label in name algorithm should not be used. While such examples are not covered by this rule, [Success Criterion 2.5.3 Label in Name][sc253] could apply.
 
 ### Assumptions
 
@@ -508,26 +510,6 @@ This link has no [visible text content][].
 </a>
 ```
 
-#### Inapplicable Example 5
-
-<a class="example-link" title="Inapplicable Example 5" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/2ee8b8/4c8c38022d15c92158ecaaa647fe8ca2c330f485.html">Open in a new tab</a>
-
-This link's label contains an abbreviation.
-
-```html
-<a aria-label="University Avenue" href="#">University Ave.</a>
-```
-
-#### Inapplicable Example 6
-
-<a class="example-link" title="Inapplicable Example 6" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/2ee8b8/e9bbdbec137223e2973c6d2896050770c84c26e5.html">Open in a new tab</a>
-
-This word - non-standard / nonstandard - appears in both the element's accessible name and its visible label, using different hyphenation.
-
-```html
-<a href="#" aria-label="non-standard">nonstandard</a>
-```
-
 ## Glossary
 
 ### Accessible Name {#accessible-name}
@@ -758,6 +740,7 @@ This includes:
 [rendered]: https://html.spec.whatwg.org/#being-rendered
 [role attribute]: https://www.w3.org/TR/role-attribute/ 'Specification of the role attribute'
 [rules for parsing integers]: https://html.spec.whatwg.org/#rules-for-parsing-integers
+[sc253]: https://www.w3.org/TR/wcag22/#label-in-name
 [semantic role]: #semantic-role 'Definition of Semantic role'
 [sequential focus navigation]: https://html.spec.whatwg.org/multipage/interaction.html#sequential-focus-navigation
 [supports name from content]: https://www.w3.org/TR/wai-aria-1.2/#namefromcontent 'Definition of Supports name from content'

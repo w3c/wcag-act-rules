@@ -11,8 +11,8 @@
   },
   "proposedRules": {
     "complete": 10,
-    "partial": 4,
-    "inconsistent": 1,
+    "partial": 5,
+    "inconsistent": 0,
     "untested": 35
   },
   "actRuleMapping": [
@@ -15412,7 +15412,7 @@
       "procedureNames": [
         "E908"
       ],
-      "consistency": null,
+      "consistency": "partial",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -15424,9 +15424,9 @@
       },
       "coverage": {
         "covered": 12,
-        "untested": 25,
+        "untested": 24,
         "cantTell": 0,
-        "testCaseTotal": 38
+        "testCaseTotal": 36
       },
       "testCaseResults": [
         {
@@ -15965,36 +15965,6 @@
               "procedureName": "E908",
               "outcomes": [
                 "passed"
-              ]
-            }
-          ]
-        },
-        {
-          "testcaseId": "4c8c38022d15c92158ecaaa647fe8ca2c330f485",
-          "testCaseName": "Inapplicable Example 5",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2ee8b8/4c8c38022d15c92158ecaaa647fe8ca2c330f485.html",
-          "testCaseApproved": false,
-          "expected": "inapplicable",
-          "procedureResults": [
-            {
-              "procedureName": "E908",
-              "outcomes": [
-                "untested"
-              ]
-            }
-          ]
-        },
-        {
-          "testcaseId": "e9bbdbec137223e2973c6d2896050770c84c26e5",
-          "testCaseName": "Inapplicable Example 6",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2ee8b8/e9bbdbec137223e2973c6d2896050770c84c26e5.html",
-          "testCaseApproved": false,
-          "expected": "inapplicable",
-          "procedureResults": [
-            {
-              "procedureName": "E908",
-              "outcomes": [
-                "failed"
               ]
             }
           ]

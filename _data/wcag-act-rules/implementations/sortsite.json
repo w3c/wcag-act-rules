@@ -2,7 +2,7 @@
   "vendor": "PowerMapper",
   "name": "SortSite",
   "version": 6.55,
-  "lastModified": "22 September 2026",
+  "lastModified": "7 October 2026",
   "approvedRules": {
     "complete": 33,
     "partial": 1,
@@ -11830,10 +11830,10 @@
         ]
       },
       "coverage": {
-        "covered": 38,
+        "covered": 36,
         "untested": 0,
         "cantTell": 0,
-        "testCaseTotal": 38
+        "testCaseTotal": 36
       },
       "testCaseResults": [
         {
@@ -12365,36 +12365,6 @@
           "testcaseId": "8c26a3506e424766019341f3b86d2f758ca1aced",
           "testCaseName": "Inapplicable Example 4",
           "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2ee8b8/8c26a3506e424766019341f3b86d2f758ca1aced.html",
-          "testCaseApproved": false,
-          "expected": "inapplicable",
-          "procedureResults": [
-            {
-              "procedureName": "AccHtmlControlLabelInAccName",
-              "outcomes": [
-                "passed"
-              ]
-            }
-          ]
-        },
-        {
-          "testcaseId": "4c8c38022d15c92158ecaaa647fe8ca2c330f485",
-          "testCaseName": "Inapplicable Example 5",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2ee8b8/4c8c38022d15c92158ecaaa647fe8ca2c330f485.html",
-          "testCaseApproved": false,
-          "expected": "inapplicable",
-          "procedureResults": [
-            {
-              "procedureName": "AccHtmlControlLabelInAccName",
-              "outcomes": [
-                "passed"
-              ]
-            }
-          ]
-        },
-        {
-          "testcaseId": "e9bbdbec137223e2973c6d2896050770c84c26e5",
-          "testCaseName": "Inapplicable Example 6",
-          "testCaseUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2ee8b8/e9bbdbec137223e2973c6d2896050770c84c26e5.html",
           "testCaseApproved": false,
           "expected": "inapplicable",
           "procedureResults": [
