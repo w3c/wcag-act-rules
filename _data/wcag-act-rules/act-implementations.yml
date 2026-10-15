@@ -39,7 +39,6 @@
 
 - name: Axe-core
   homepage: https://www.npmjs.com/package/axe-core/
-  version: "4.10.2"
   vendor: Deque Systems
   vendorHomepage: https://deque.com/
   uniqueKey: axe-core
@@ -47,9 +46,9 @@
   standards:
     - WCAG 2.1 Level A, AA, AAA
     - WAI-ARIA 1.2
-  jsonReport: https://raw.githubusercontent.com/dequelabs/act-reports-axe/main/reports/axe-core.json
+  jsonReport: https://raw.githubusercontent.com/dequelabs/act-reports-axe/act-reports-axe/reports/axe-core.json
   description: |
-    ACT Rules are tested using a canary version of axe-core, which can be accessed by installing <code>axe-core@next</code> from NPM. 
+    ACT Rules are tested using the latest stable version of axe-core from NPM.
     For these results, all rules including “experimental” rules are enabled. 
     Checks with “unsupported” in its ID are disabled, which deal with issues of accessibility support issues which ACT Rules do not account for, often by design.
 
@@ -62,7 +61,7 @@
   standards:
     - WCAG 2.1 Level A, AA, AAA
     - WAI-ARIA 1.2
-  jsonReport: https://raw.githubusercontent.com/dequelabs/act-reports-axe/main/reports/axe-devtools-combined.json
+  jsonReport: https://raw.githubusercontent.com/dequelabs/act-reports-axe/act-reports-axe/reports/axe-devtools-combined.json
   description: |
     Axe DevTools Pro combines the automated results of axe-core, and results from
     axe Intelligent Guided Test (IGT) tools. Tools can produced multiple issue types.
