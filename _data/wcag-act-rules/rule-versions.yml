@@ -526,6 +526,13 @@ b33eff:
     isoDate: 2024-12-02
   - file: index.md
     url: b33eff/
+    w3cDate: 15 October 2026
+    isoDate: 2026-10-15
+    changes:
+      - Rename the bibliography heading to "Other Resources"
+      - Update the examples link in the "visible" definition
+  - file: 2025-04-14.md
+    url: b33eff/2025-04-14/
     w3cDate: 14 April 2025
     isoDate: 2025-04-14
 2t702h:
