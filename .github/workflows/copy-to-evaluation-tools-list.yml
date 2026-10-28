@@ -28,6 +28,13 @@ jobs:
           ref: publication
           path: act-rules
 
+      - name: Get latest commit SHA
+        id: sha-retrieval
+        run: |
+          cd act-rules/
+          echo "$(git rev-parse --short HEAD)"
+          echo "SHA=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
+
       - name: Clone ${{ env.DESTINATION_REPO }}
         env:
           W3CGRUNTBOT_TOKEN: ${{ secrets.W3CGRUNTBOT_TOKEN }}
@@ -43,8 +50,8 @@ jobs:
           cp -R "act-rules/$SOURCE_DIR" "evaluation-tools/$DESTINATION_DIR"
        
       - name: Commit and push
-        env: 
-          COMMIT_MESSAGE: ACT updates from https://github.com/${{ github.repository }}/commit/${{ github.sha }}
+        env:
+          COMMIT_MESSAGE: ACT updates from https://github.com/${{ github.repository }}/commit/${{ steps.sha-retrieval.outputs.SHA }}
         run: |
           echo "Commit"
           cd evaluation-tools
