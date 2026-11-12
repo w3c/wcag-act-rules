@@ -2,7 +2,7 @@
   "vendor": "Total Validator",
   "name": "Total Validator (+Browser)",
   "version": "17.4.0",
-  "lastModified": "5 November 2026",
+  "lastModified": "12 November 2026",
   "approvedRules": {
     "complete": 33,
     "partial": 1,
@@ -10,8 +10,8 @@
     "untested": 3
   },
   "proposedRules": {
-    "complete": 10,
-    "partial": 5,
+    "complete": 11,
+    "partial": 4,
     "inconsistent": 0,
     "untested": 35
   },
@@ -15412,7 +15412,7 @@
       "procedureNames": [
         "E908"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
         "correct": true,
         "expected": [
@@ -15423,9 +15423,9 @@
         ]
       },
       "coverage": {
-        "covered": 12,
-        "untested": 24,
-        "cantTell": 0,
+        "covered": 34,
+        "untested": 0,
+        "cantTell": 2,
         "testCaseTotal": 36
       },
       "testCaseResults": [
@@ -15469,7 +15469,7 @@
             {
               "procedureName": "E908",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -15529,7 +15529,7 @@
             {
               "procedureName": "E908",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -15544,7 +15544,7 @@
             {
               "procedureName": "E908",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -15559,7 +15559,7 @@
             {
               "procedureName": "E908",
               "outcomes": [
-                "untested"
+                "cantTell"
               ]
             }
           ]
@@ -15574,7 +15574,7 @@
             {
               "procedureName": "E908",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -15589,7 +15589,7 @@
             {
               "procedureName": "E908",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -15604,7 +15604,7 @@
             {
               "procedureName": "E908",
               "outcomes": [
-                "untested"
+                "cantTell"
               ]
             }
           ]
@@ -15619,7 +15619,7 @@
             {
               "procedureName": "E908",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -15634,7 +15634,7 @@
             {
               "procedureName": "E908",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -15649,7 +15649,7 @@
             {
               "procedureName": "E908",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -15664,7 +15664,7 @@
             {
               "procedureName": "E908",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -15709,7 +15709,7 @@
             {
               "procedureName": "E908",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -15724,7 +15724,7 @@
             {
               "procedureName": "E908",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -15739,7 +15739,7 @@
             {
               "procedureName": "E908",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -15769,7 +15769,7 @@
             {
               "procedureName": "E908",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -15784,7 +15784,7 @@
             {
               "procedureName": "E908",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -15799,7 +15799,7 @@
             {
               "procedureName": "E908",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -15814,7 +15814,7 @@
             {
               "procedureName": "E908",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -15829,7 +15829,7 @@
             {
               "procedureName": "E908",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -15844,7 +15844,7 @@
             {
               "procedureName": "E908",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -15859,7 +15859,7 @@
             {
               "procedureName": "E908",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -15874,7 +15874,7 @@
             {
               "procedureName": "E908",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -15889,7 +15889,7 @@
             {
               "procedureName": "E908",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
@@ -15904,7 +15904,7 @@
             {
               "procedureName": "E908",
               "outcomes": [
-                "untested"
+                "failed"
               ]
             }
           ]
