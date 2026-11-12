@@ -2,7 +2,7 @@
   "vendor": "Total Validator",
   "name": "Total Validator",
   "version": "17.4.0",
-  "lastModified": "16 May 2026",
+  "lastModified": "5 November 2026",
   "approvedRules": {
     "complete": 29,
     "partial": 1,
@@ -199,7 +199,7 @@
             {
               "procedureName": "E9651",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -8653,7 +8653,7 @@
             {
               "procedureName": "E957",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]
@@ -8668,7 +8668,7 @@
             {
               "procedureName": "E957",
               "outcomes": [
-                "untested"
+                "passed"
               ]
             }
           ]

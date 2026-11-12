@@ -1,11 +1,11 @@
 {
   "vendor": "PowerMapper",
   "name": "SortSite",
-  "version": 6.55,
-  "lastModified": "7 October 2026",
+  "version": "2026.62",
+  "lastModified": "8 November 2026",
   "approvedRules": {
-    "complete": 33,
-    "partial": 1,
+    "complete": 34,
+    "partial": 0,
     "inconsistent": 0,
     "untested": 3
   },
@@ -1146,15 +1146,14 @@
       "procedureNames": [
         "AccHtmlIframeTabindexInteractive"
       ],
-      "consistency": "partial",
+      "consistency": "complete",
       "accessibilityRequirements": {
-        "correct": false,
+        "correct": true,
         "expected": [
           "WCAG2:keyboard"
         ],
         "reported": [
-          "WCAG2:keyboard",
-          "WCAG2:keyboard-no-exception"
+          "WCAG2:keyboard"
         ]
       },
       "coverage": {
