@@ -2,7 +2,7 @@
   "vendor": "Deque Systems",
   "name": "Axe DevTools Pro",
   "version": "4.37.1",
-  "lastModified": "31 October 2026",
+  "lastModified": "21 November 2026",
   "approvedRules": {
     "complete": 33,
     "partial": 0,
@@ -7028,7 +7028,7 @@
             {
               "procedureName": "meta-viewport",
               "outcomes": [
-                "passed"
+                "failed"
               ]
             }
           ]
@@ -7043,7 +7043,7 @@
             {
               "procedureName": "meta-viewport",
               "outcomes": [
-                "passed"
+                "failed"
               ]
             }
           ]

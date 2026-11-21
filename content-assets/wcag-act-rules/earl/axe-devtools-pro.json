@@ -16224,7 +16224,7 @@
       },
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:passed"
+        "outcome": "earl:failed"
       },
       "test": {
         "@type": "TestCase",
@@ -16247,7 +16247,7 @@
       },
       "result": {
         "@type": "TestResult",
-        "outcome": "earl:passed"
+        "outcome": "earl:failed"
       },
       "test": {
         "@type": "TestCase",
