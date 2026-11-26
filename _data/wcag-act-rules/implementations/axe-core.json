@@ -1,8 +1,8 @@
 {
   "vendor": "Deque Systems",
   "name": "Axe-core",
-  "version": "4.14.0",
-  "lastModified": "31 October 2026",
+  "version": "4.14.1",
+  "lastModified": "21 November 2026",
   "approvedRules": {
     "complete": 30,
     "partial": 0,
@@ -7028,7 +7028,7 @@
             {
               "procedureName": "meta-viewport",
               "outcomes": [
-                "passed"
+                "failed"
               ]
             }
           ]
@@ -7043,7 +7043,7 @@
             {
               "procedureName": "meta-viewport",
               "outcomes": [
-                "passed"
+                "failed"
               ]
             }
           ]
